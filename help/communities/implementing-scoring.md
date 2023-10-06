@@ -44,7 +44,7 @@ Badges are differentiated in UGC whether they were assigned or were earned accor
 
 ### Badge Management UI {#badge-management-ui}
 
-The Communities [Badges console](/help/communities/badges.md) lets you to add custom badges which can be displayed for a member when earned (awarded) or when they take on a specific role in the community (assigned).
+The Communities [Badges console](/help/communities/badges.md) lets you add custom badges which can be displayed for a member when earned (awarded) or when they take on a specific role in the community (assigned).
 
 ### Assigned Badges {#assigned-badges}
 

@@ -1,14 +1,10 @@
 ---
 title: Invoking AEM Forms using Web Services
-seo-title: Invoking AEM Forms using Web Services
 description: Invoke AEM Forms processes using web services with full support for WSDL generation.
-seo-description:  Invoke AEM Forms processes using web services with full support for WSDL generation.
-uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
 ---
@@ -642,7 +638,7 @@ You can invoke the `MyApplication/EncryptDocument` service (which was built in W
 1. Create a Microsoft .NET client assembly that consumes the `MyApplication/EncryptDocument` service WSDL.
 1. Create a client Microsoft .NET project. Reference the Microsoft .NET client assembly in the client project. Also reference `System.Web.Services`.
 1. Using the Microsoft .NET client assembly, create a `MyApplication_EncryptDocumentService` object by invoking its default constructor.
-1. Set the `MyApplication_EncryptDocumentService` object's `Credentials` property with a `System.Net.NetworkCredential` object. Within the `System.Net.NetworkCredential` constructor, specify a AEM forms user name and the corresponding password. Set authentication values to enable your .NET client application to successfully exchange SOAP messages with AEM Forms.
+1. Set the `MyApplication_EncryptDocumentService` object's `Credentials` property with a `System.Net.NetworkCredential` object. Within the `System.Net.NetworkCredential` constructor, specify an AEM forms user name and the corresponding password. Set authentication values to enable your .NET client application to successfully exchange SOAP messages with AEM Forms.
 1. Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document pass to the `MyApplication/EncryptDocument` process.
 1. Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the PDF document and the mode in which to open the file.
 1. Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
@@ -958,7 +954,7 @@ You can invoke the `MyApplication/EncryptDocument` service (which was built in W
 1. Create the .NET client assembly.
 1. Reference the Microsoft .NET client assembly. Create a client Microsoft .NET project. Reference the Microsoft .NET client assembly in the client project. Also reference `System.Web.Services`.
 1. Using the Microsoft .NET client assembly, create a `MyApplication_EncryptDocumentService` object by invoking its default constructor.
-1. Set the `MyApplication_EncryptDocumentService` object's `Credentials` property with a `System.Net.NetworkCredential` object. Within the `System.Net.NetworkCredential` constructor, specify a AEM forms user name and the corresponding password. Set authentication values to enable your .NET client application to successfully exchange SOAP messages with AEM Forms.
+1. Set the `MyApplication_EncryptDocumentService` object's `Credentials` property with a `System.Net.NetworkCredential` object. Within the `System.Net.NetworkCredential` constructor, specify an AEM forms user name and the corresponding password. Set authentication values to enable your .NET client application to successfully exchange SOAP messages with AEM Forms.
 1. Create a `BLOB` object by using its constructor. The `BLOB` object is used to pass data to the `MyApplication/EncryptDocument` process.
 1. Assign a string value to the `BLOB` object's `remoteURL` data member that specifies the URI location of a PDF document to pass to the `MyApplication/EncryptDocument`service.
 1. Invoke the `MyApplication/EncryptDocument` process by invoking the `MyApplication_EncryptDocumentService` object's `invoke` method and passing the `BLOB` object. This process returns an encrypted PDF document within a `BLOB` object.
@@ -1225,7 +1221,7 @@ A client application can retrieve the assertion from any AEM Forms Authenticatio
 * Authenticating the user using any of the authenticate methods exposed by AuthenticationManager API. Typically, one would use the user name and password; however, you can also use the certificate authentication.
 * Using the `AuthenticationManager.getAuthResultOnBehalfOfUser` method. This method lets a client application get an `AuthResult` object for any AEM forms user.
 
-a AEM forms user can be authenticated using a SAML token that is obtained. This SAML assertion (xml fragment) can be send as part of the WS-Security header with the web service call for user authentication. Typically, a client application has authenticated a user but has not stored the user credentials. (Or the user has logged on to that client through a mechanism other than using a user name and password.) In this situation, the client application has to invoke AEM Forms and impersonate a specific user which is allowed to invoke AEM Forms.
+An AEM forms user can be authenticated using a SAML token that is obtained. This SAML assertion (xml fragment) can be send as part of the WS-Security header with the web service call for user authentication. Typically, a client application has authenticated a user but has not stored the user credentials. (Or the user has logged on to that client through a mechanism other than using a user name and password.) In this situation, the client application has to invoke AEM Forms and impersonate a specific user which is allowed to invoke AEM Forms.
 
 To impersonate a specific user, invoke the `AuthenticationManager.getAuthResultOnBehalfOfUser` method using a web service. This method returns an `AuthResult` instance which contains the SAML assertion for that user.
 

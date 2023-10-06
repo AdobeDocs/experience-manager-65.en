@@ -1,12 +1,8 @@
 ---
 title: Best practices for working with adaptive forms
-seo-title: Best practices for working with adaptive forms
 description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
-seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
-uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 ---
@@ -290,7 +286,7 @@ Some best practices when localizing adaptive forms are as follows:
 
 * Use adaptive form fragments for common elements across forms and localize fragments. It ensures that you localize a fragment once and it reflects in all forms where the localized fragment is used.
 * Any modifications like adding a new component or applying a script in a localized form are not localized automatically. Therefore, you must finalize a form before localizing it to avoid multiple localization cycles.
-* Use `afAcceptLang` request parameter to override the browser locale and render the form in the specified locale. For example, the following URL will force to render the form in Japanese locale, irrespective of the locale specified in the browser setting:
+* Use `afAcceptLang` request parameter to override the browser locale and render the form in the specified locale. For example, the following URL is forced to render the form in Japanese locale, irrespective of the locale specified in the browser setting:
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 

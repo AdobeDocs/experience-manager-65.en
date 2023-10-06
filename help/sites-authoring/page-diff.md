@@ -92,7 +92,7 @@ There are some situations in which the page diff may not detect a difference as 
 
 >[!NOTE]
 >
->Versions can not be compared to each other. Only the current version can be compared with other versions of the page. The current version is always the version that is highlighted with changes.
+>Versions cannot be compared to each other. Only the current version can be compared with other versions of the page. The current version is always the version that is highlighted with changes.
 
 >[!NOTE]
 >

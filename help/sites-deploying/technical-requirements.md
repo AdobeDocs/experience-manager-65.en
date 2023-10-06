@@ -126,6 +126,9 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 1. MongoDB Sharding is not supported in AEM.
 1. MongoDB Storage Engine WiredTiger is supported only.
 1. Supported for AEM Forms upgrade customers. Not supported for new installations.
+1. Applicable AEM Forms only:
+    * Removed support for Oracle Database 12c and added support for Oracle Database 19c.
+    * Removed support for Microsoft&reg; SQL Server 2016 and added support for Microsoft&reg; SQL Server 2019.
 
 >[!NOTE]
 >
@@ -172,6 +175,8 @@ The minimum Servlet API Version required is Servlet 3.1
 
 1. Recommended for deployments with AEM Forms.
 1. Starting AEM 6.5 deployments on application servers moves to Restricted Support. Existing customers can upgrade to AEM 6.5 and keep using application servers. For new customers, it comes with support criteria and a support program as stated in the Level-R description above.
+1. Applicable AEM Forms only:
+    * Removed support for JBoss&reg; EAP 7.1.4 and added support for JBoss&reg; EAP 7.4.10. 
 
 ### Server Operating Systems {#server-operating-systems}
 
@@ -193,6 +198,7 @@ Adobe Experience Manager works with the following server platforms for productio
 1. Linux&reg; distribution supported by Adobe Managed Services.
 1. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
 1. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
+1. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
 
 >[!NOTE]
 >

@@ -1,9 +1,9 @@
 ---
 title: Create or add an Adaptive Form to AEM Sites page
 description: Discover how to effortlessly create or seamlessly add an Adaptive Form to your AEM Sites page. Learn step-by-step techniques and best practices for integrating dynamic and customizable forms into your website, optimizing your digital experiences for maximum impact.
-Keywords:  AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
-exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
+exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 ---
 # Create or add an Adaptive Form to AEM Sites page {#create-or-add-an-adaptive-form-to-aem-sites-page}
 

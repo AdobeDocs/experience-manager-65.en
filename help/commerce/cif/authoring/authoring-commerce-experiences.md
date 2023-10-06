@@ -15,7 +15,7 @@ Product and category pickers are modal UI dialogs that offer a comfortable way f
 
 ### Product Picker {#product-picker}
 
-This picker offers browsing through the catalog structure or full-text search to find the product. Products with variation offer a folder icon in the column 'Type'. Clicking on the folder icon opens the variations of the selected product.
+This picker can offer browsing through the catalog structure or full-text search to find the product. Products with variation offer a folder icon in the column 'Type'. Clicking on the folder icon opens the variations of the selected product.
 
 ![Product picker](/help/commerce/cif/assets/authoring/product-picker.png)
 
@@ -33,7 +33,7 @@ The configuration dialog of this component requires a product. CIF uses the SKU 
 
 ### Category Picker {#category-picker}
 
-This picker offers browsing through the catalog structure to find the category.
+This picker can offer browsing through the catalog structure to find the category.
 
 ![Category picker](/help/commerce/cif/assets/authoring/category-picker.png)
 

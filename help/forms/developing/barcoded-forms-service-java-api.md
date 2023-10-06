@@ -1,13 +1,10 @@
 ---
 title: Barcoded Forms Service Java APIQuick Start(SOAP)
-seo-title: Barcoded Forms Service Java APIQuick Start(SOAP)
 description: Barcoded Forms Service Java APIQuick Start(SOAP)
-uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
 ---
@@ -108,7 +105,7 @@ The following Java code decodes form data that is located in a PDF form that is 
          ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps);
          BarcodedFormsServiceClient barClient = new BarcodedFormsServiceClient(myFactory);
  
-         //Specify a PDF document to convert to a XDP file
+         //Specify a PDF document to convert to an XDP file
          FileInputStream fileInputStream = new FileInputStream("C:\\Adobe\LoanBarForms.pdf");
          Document inDoc = new Document (fileInputStream);
  

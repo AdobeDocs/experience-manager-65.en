@@ -1,12 +1,10 @@
 ---
 title: Integrating AEM 6.5 with Adobe Campaign Classic
 description: Learn how to integrate AEM 6.5 with Adobe Campaign Classic
-uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
 ---
 
@@ -146,7 +144,7 @@ AEM can now communicate with Adobe Campaign.
 
 >[!NOTE]
 >
->Make sure that your Adobe Campaign server is reachable via the internet. AEM can not access private networks.
+>Make sure that your Adobe Campaign server is reachable via the internet. AEM cannot access private networks.
 
 ## Configure Replication to AEM Publish Instance {#replication}
 
@@ -184,7 +182,7 @@ You have configured replication to the AEM publish instance so your campaign rec
 
 1. Sign into the AEM authoring instance as an administrator.
 1. From the global navigation side rail, select **Tools** &gt; **Operations** &gt; **Web Console** &gt; **OSGi Configuration** and search for **Day CQ link Externalizer**.
-1. By default the last entry in the **Domains** field is intended for the publish instance. Change the URL from the default `http://localhost:4503` to your publicly-available publish instance.
+1. By default the last entry in the **Domains** field is intended for the publish instance. Change the URL from the default `http://localhost:4503` to your publicly available publish instance.
 
    ![Configuring the Externalizer](assets/acc-externalizer-config.png)
 

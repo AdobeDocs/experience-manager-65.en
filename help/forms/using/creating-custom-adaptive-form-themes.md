@@ -53,13 +53,13 @@ You create an **adaptive template** and apply the theme to the template. You can
 
     * `less` folder: Contains the `less` variable files in which you define the `less` variables and `less mixins` that are used to manage the .css styles.
 
-      This folder consists of `less` variable files, `less` mixin files, `less` files defining styles using mixins, and variables. And all these less files are then imported in styles.less.
+      This folder consists of `less` variable files, `less` mixin files, `less` files defining styles using mixins, and variables. And all these `less` files are then imported in styles.less.
 
     * `css`folder: Contains the .css files in which you define the static styles to be used in the theme.
 
    **Less variables files**: These are the files where you define or override the variables that are used in defining CSS styles.
 
-   Adaptive forms provide OOTB variables defined in the following .less files:
+   Adaptive forms provide OOTB variables defined in the following `.less` files:
 
     * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
     * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -68,7 +68,7 @@ You create an **adaptive template** and apply the theme to the template. You can
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   You can use the less variables provided with adaptive forms, you can override these variables, or you can create new less variables.
+   You can use the `less` variables provided with adaptive forms, you can override these variables, or you can create new `less` variables.
 
    >[!NOTE]
    >
@@ -125,11 +125,11 @@ You create an **adaptive template** and apply the theme to the template. You can
    }
    ```
 
-   **Styles.less File:** Use this file to include all the less files (variables, mixins, styles) that you must use in the client library.
+   **Styles.less File:** Use this file to include all the `less` files (variables, mixins, styles) that you must use in the client library.
 
    In the following sample `styles.less` file, the import statement can be placed in any order.
 
-   The statements to import the following .less files are mandatory:
+   The statements to import the following `.less` files are mandatory:
 
     * `globalvariables.less`
     * `layoutvariables.less`

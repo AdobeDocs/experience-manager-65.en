@@ -1,15 +1,10 @@
 ---
 title: Supporting new locales for adaptive forms localization
-seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms lets you add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
-seo-description: AEM Forms lets you add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
-uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
-
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
@@ -38,7 +33,7 @@ There are two methods to identify the locale of the adaptive form. When an adapt
 * looking at the following parameters in the specified order:
 
   * Request parameter `afAcceptLang`
-  To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL will force to render the form in Japanese locale:
+  To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL forced to render the form in Japanese locale:
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
   * The browser locale set for the user, which is specified in the request using the `Accept-Language` header.

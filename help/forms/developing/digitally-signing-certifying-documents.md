@@ -1,14 +1,10 @@
 ---
 title: Digitally Signing and Certifying Documents
-seo-title: Digitally Signing and Certifying Documents
 description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields located in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures located in a PDF document, validate all digital signatures located in a PDF document, and remove a digital signature from a signature field.
-seo-description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields located in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures located in a PDF document, validate all digital signatures located in a PDF document, and remove a digital signature from a signature field.
-uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 ---
@@ -71,7 +67,7 @@ To add a signature field to a PDF document, perform the following tasks:
 
 Include necessary files into your development project. If you are creating a client application using Java, include the necessary JAR files. If you are using web services, ensure that you include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -109,7 +105,7 @@ Add a signature field by using the Signature API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-signatures-client.jar, in your Java project’s classpath.
+   Include client JAR files, such as adobe-signatures-client.jar, in your Java project's classpath.
 
 1. Create a Signature client
 
@@ -125,7 +121,7 @@ Add a signature field by using the Signature API (Java):
 
     * Create a `PositionRectangle` object that specifies the signature field location by using its constructor. Within the constructor, specify coordinate values.
     * If desired, create a `FieldMDPOptions` object that specifies the fields that are locked when a digital signature is applied to the signature field.
-    * Add a signature field to a PDF document by invoking the `SignatureServiceClient` object’s `addSignatureField` method and passing the following values:
+    * Add a signature field to a PDF document by invoking the `SignatureServiceClient` object's `addSignatureField` method and passing the following values:
 
         * A `com.adobe.idp`. `Document` object that represents the PDF document to which a signature field is added.
         * A string value that specifies the name of the signature field.
@@ -139,12 +135,12 @@ Add a signature field by using the Signature API (Java):
 
    >[!NOTE]
    >
-   >You can invoke the `SignatureServiceClient` object’s `addInvisibleSignatureField` method to add an invisible signature field.
+   >You can invoke the `SignatureServiceClient` object's `addInvisibleSignatureField` method to add an invisible signature field.
 
 1. Save the PDF document as a PDF file
 
     * Create a `java.io.File` object and ensure that the file extension is .pdf.
-    * Invoke the `com.adobe.idp`. `Document` object’s `copyToFile` method to copy the contents of the `Document` object to the file. Ensure that you use the `com.adobe.idp`. `Document` object that was returned by the `addSignatureField` method.
+    * Invoke the `com.adobe.idp`. `Document` object's `copyToFile` method to copy the contents of the `Document` object to the file. Ensure that you use the `com.adobe.idp`. `Document` object that was returned by the `addSignatureField` method.
 
 **See also**
 
@@ -167,7 +163,7 @@ To add a signature field by using the Signature API (web service):
     * Create a `SignatureServiceClient` object by using its default constructor.
     * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/SignatureService?WSDL`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `SignatureServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -179,13 +175,13 @@ To add a signature field by using the Signature API (web service):
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the PDF document that will contain a signature field.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
 
 1. Add a signature field
 
-   Add a signature field to the PDF document by invoking the `SignatureServiceClient` object’s `addSignatureField` method and passing the following values:
+   Add a signature field to the PDF document by invoking the `SignatureServiceClient` object's `addSignatureField` method and passing the following values:
 
     * A `BLOB` object that represents the PDF document to which a signature field is added.
     * A string value that specifies the signature field name.
@@ -199,9 +195,9 @@ To add a signature field by using the Signature API (web service):
 1. Save the PDF document as a PDF file
 
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document that will contain the signature field and the mode in which to open the file.
-    * Create a byte array that stores the content of the `BLOB` object that was returned by the `addSignatureField` method. Populate the byte array by getting the value of the `BLOB` object’s `binaryData` data member.
+    * Create a byte array that stores the content of the `BLOB` object that was returned by the `addSignatureField` method. Populate the byte array by getting the value of the `BLOB` object's `binaryData` data member.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 
@@ -230,7 +226,7 @@ To retrieve signature field names, perform the following tasks:
 
 Include necessary files into your development project. If you are creating a client application using Java, include the necessary JAR files. If you are using web services, ensure that you include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -270,7 +266,7 @@ Retrieve signature field names by using the Signature API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as the adobe-signatures-client.jar, in your Java project’s classpath.
+   Include client JAR files, such as the adobe-signatures-client.jar, in your Java project's classpath.
 
 1. Create a Signature client
 
@@ -284,8 +280,8 @@ Retrieve signature field names by using the Signature API (Java):
 
 1. Retrieve the signature field names
 
-    * Retrieve the signature field names by invoking the `SignatureServiceClient` object’s `getSignatureFieldList` method and passing the `com.adobe.idp.Document` object that contains the PDF document that contains signature fields. This method returns a `java.util.List` object, in which each element contains a `PDFSignatureField` object. Using this object, you can obtain additional information about a signature field, such as whether it is visible.
-    * Iterate through the `java.util.List` object to determine if there are signature field names. For each signature field in the PDF document, you can obtain a separate `PDFSignatureField` object. To obtain the name of the signature field, invoke the `PDFSignatureField` object’s `getName` method. This method returns a string value that specifies the signature field name.
+    * Retrieve the signature field names by invoking the `SignatureServiceClient` object's `getSignatureFieldList` method and passing the `com.adobe.idp.Document` object that contains the PDF document that contains signature fields. This method returns a `java.util.List` object, in which each element contains a `PDFSignatureField` object. Using this object, you can obtain additional information about a signature field, such as whether it is visible.
+    * Iterate through the `java.util.List` object to determine if there are signature field names. For each signature field in the PDF document, you can obtain a separate `PDFSignatureField` object. To obtain the name of the signature field, invoke the `PDFSignatureField` object's `getName` method. This method returns a string value that specifies the signature field name.
 
 **See also**
 
@@ -314,7 +310,7 @@ Retrieve signature field names using the Signature API (web service):
     * Create a `SignatureServiceClient` object by using its default constructor.
     * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/SignatureService?WSDL`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `SignatureServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -326,14 +322,14 @@ Retrieve signature field names using the Signature API (web service):
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the PDF document that contains signature fields.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field the byte array contents.
 
 1. Retrieve the signature field names
 
-    * Retrieve the signature field names by invoking `SignatureServiceClient` object’s `getSignatureFieldList` method and passing the `BLOB` object that contains the PDF document that contains signature fields. This method returns a `MyArrayOfPDFSignatureField` collection object where each element contains a `PDFSignatureField` object.
-    * Iterate through the `MyArrayOfPDFSignatureField` object to determine whether there are signature field names. For each signature field in the PDF document, you can obtain a `PDFSignatureField` object. To obtain the name of the signature field, invoke the `PDFSignatureField` object’s `getName` method. This method returns a string value that specifies the signature field name.
+    * Retrieve the signature field names by invoking `SignatureServiceClient` object's `getSignatureFieldList` method and passing the `BLOB` object that contains the PDF document that contains signature fields. This method returns a `MyArrayOfPDFSignatureField` collection object where each element contains a `PDFSignatureField` object.
+    * Iterate through the `MyArrayOfPDFSignatureField` object to determine whether there are signature field names. For each signature field in the PDF document, you can obtain a `PDFSignatureField` object. To obtain the name of the signature field, invoke the `PDFSignatureField` object's `getName` method. This method returns a string value that specifies the signature field name.
 
 **See also**
 
@@ -372,7 +368,7 @@ To modify signature fields located in a PDF document, perform the following task
 
 Include necessary files in your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, ensure that you include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -438,7 +434,7 @@ Modify a signature field by using the Signature API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as the adobe-signatures-client.jar, in your Java project’s class path.
+   Include client JAR files, such as the adobe-signatures-client.jar, in your Java project's class path.
 
 1. Create a Signature client
 
@@ -454,11 +450,11 @@ Modify a signature field by using the Signature API (Java):
 
     * Create a `PDFSignatureFieldProperties` object by using its constructor. A `PDFSignatureFieldProperties` object stores signature field lock dictionary and seed value dictionary information.
     * Create a `PDFSeedValueOptionSpec` object by using its constructor. This object lets you set seed value dictionary values.
-    * Disallow changes to the PDF document by invoking the `PDFSeedValueOptionSpec` object’s `setMdpValue` method and passing the `MDPPermissions.NoChanges` enumeration value.
+    * Disallow changes to the PDF document by invoking the `PDFSeedValueOptionSpec` object's `setMdpValue` method and passing the `MDPPermissions.NoChanges` enumeration value.
     * Create a `FieldMDPOptionSpec` object by using its constructor. This object lets you set signature field lock dictionary values.
-    * Lock all fields in the PDF document by invoking the `FieldMDPOptionSpec` object’s `setMdpValue` method and passing the `FieldMDPAction.ALL` enumeration value.
-    * Set seed value dictionary information by invoking the `PDFSignatureFieldProperties` object’s `setSeedValue` method and passing the `PDFSeedValueOptionSpec` object.
-    * Set signature field lock dictionary information by invoking the `PDFSignatureFieldProperties`object’s `setFieldMDP` method and passing the `FieldMDPOptionSpec` object.
+    * Lock all fields in the PDF document by invoking the `FieldMDPOptionSpec` object's `setMdpValue` method and passing the `FieldMDPAction.ALL` enumeration value.
+    * Set seed value dictionary information by invoking the `PDFSignatureFieldProperties` object's `setSeedValue` method and passing the `PDFSeedValueOptionSpec` object.
+    * Set signature field lock dictionary information by invoking the `PDFSignatureFieldProperties`object's `setFieldMDP` method and passing the `FieldMDPOptionSpec` object.
 
    >[!NOTE]
    >
@@ -466,7 +462,7 @@ Modify a signature field by using the Signature API (Java):
 
 1. Modify the signature field
 
-   Modify the signature field by invoking the `SignatureServiceClient` object’s `modifySignatureField` method and passing the following values:
+   Modify the signature field by invoking the `SignatureServiceClient` object's `modifySignatureField` method and passing the following values:
 
     * The `com.adobe.idp.Document` object that stores the PDF document that contains the signature field to modify
     * A string value that specifies the name of the signature field
@@ -477,7 +473,7 @@ Modify a signature field by using the Signature API (Java):
 1. Save the PDF document as a PDF file
 
     * Create a `java.io.File` object and ensure that the file name extension is .pdf.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file. Ensure that you use the `com.adobe.idp.Document` object that the `modifySignatureField` method returned.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file. Ensure that you use the `com.adobe.idp.Document` object that the `modifySignatureField` method returned.
 
 ### Modify signature fields using the web service API {#modify-signature-fields-using-the-web-service-api}
 
@@ -496,7 +492,7 @@ Modify a signature field by using the Signature API (web service):
     * Create a `SignatureServiceClient` object by using its default constructor.
     * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/SignatureService?WSDL`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `SignatureServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -508,19 +504,19 @@ Modify a signature field by using the Signature API (web service):
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the PDF document that contains the signature field to modify.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property the contents of the byte array.
 
 1. Set dictionary values
 
     * Create a `PDFSignatureFieldProperties` object by using its constructor. This object stores signature field lock dictionary and seed value dictionary information.
     * Create a `PDFSeedValueOptionSpec` object by using its constructor. This object lets you set seed value dictionary values.
-    * Disallow changes to the PDF document by assigning the `MDPPermissions.NoChanges` enumeration value to the `PDFSeedValueOptionSpec` object’s `mdpValue` data member.
+    * Disallow changes to the PDF document by assigning the `MDPPermissions.NoChanges` enumeration value to the `PDFSeedValueOptionSpec` object's `mdpValue` data member.
     * Create a `FieldMDPOptionSpec` object by using its constructor. This object lets you set signature field lock dictionary values.
-    * Lock all fields in the PDF document by assigning the `FieldMDPAction.ALL` enumeration value to the `FieldMDPOptionSpec` object’s `mdpValue` data member.
-    * Set seed value dictionary information by assigning the `PDFSeedValueOptionSpec` object to the `PDFSignatureFieldProperties` object’s `seedValue` data member.
-    * Set signature field lock dictionary information by assigning the `FieldMDPOptionSpec` object to the `PDFSignatureFieldProperties` object’s `fieldMDP` data member.
+    * Lock all fields in the PDF document by assigning the `FieldMDPAction.ALL` enumeration value to the `FieldMDPOptionSpec` object's `mdpValue` data member.
+    * Set seed value dictionary information by assigning the `PDFSeedValueOptionSpec` object to the `PDFSignatureFieldProperties` object's `seedValue` data member.
+    * Set signature field lock dictionary information by assigning the `FieldMDPOptionSpec` object to the `PDFSignatureFieldProperties` object's `fieldMDP` data member.
 
    >[!NOTE]
    >
@@ -528,7 +524,7 @@ Modify a signature field by using the Signature API (web service):
 
 1. Modify the signature field
 
-   Modify the signature field by invoking the `SignatureServiceClient` object’s `modifySignatureField` method and passing the following values:
+   Modify the signature field by invoking the `SignatureServiceClient` object's `modifySignatureField` method and passing the following values:
 
     * The `BLOB` object that stores the PDF document that contains the signature field to modify
     * A string value that specifies the name of the signature field
@@ -539,9 +535,9 @@ Modify a signature field by using the Signature API (web service):
 1. Save the PDF document as a PDF file
 
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document that will contain the signature field, and the mode in which to open the file.
-    * Create a byte array that stores the content of the `BLOB` object that the `addSignatureField` method returns. Populate the byte array by getting the value of the `BLOB` object’s `MTOM` data member.
+    * Create a byte array that stores the content of the `BLOB` object that the `addSignatureField` method returns. Populate the byte array by getting the value of the `BLOB` object's `MTOM` data member.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 
@@ -553,7 +549,7 @@ Modify a signature field by using the Signature API (web service):
 
 Digital signatures can be applied to PDF documents to provide a level of security. Digital signatures, like handwritten signatures, provide a means by which signers identify themselves and make statements about a document. The technology used to digitally sign documents helps to ensure that both the signer and recipients are clear about what was signed and confident that the document was not altered since it was signed.
 
-PDF documents are signed by means of public-key technology. A signer has two keys: a public key and a private key. The private key is stored in a user’s credential that must be available at the time of signing. The public key is stored in the user’s certificate that must be available to recipients to validate the signature. Information about revoked certificates is found in certificate revocation lists (CRLs) and Online Certificate Status Protocol (OCSP) responses distributed by Certificate Authorities (CAs). The time of signing can be obtained from a trusted source known as a Timestamping Authority.
+PDF documents are signed by means of public-key technology. A signer has two keys: a public key and a private key. The private key is stored in a user's credential that must be available at the time of signing. The public key is stored in the user's certificate that must be available to recipients to validate the signature. Information about revoked certificates is found in certificate revocation lists (CRLs) and Online Certificate Status Protocol (OCSP) responses distributed by Certificate Authorities (CAs). The time of signing can be obtained from a trusted source known as a Timestamping Authority.
 
 >[!NOTE]
 >
@@ -618,7 +614,7 @@ To digitally sign a PDF document, perform the following tasks:
 
 Include necessary files into your development project. If you are creating a client application using Java, include the necessary JAR files. If you are using web services, ensure that you include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -642,7 +638,7 @@ When signing a PDF document, you can set run-time options that are used by the S
 * Revocation checking
 * Time stamping values
 
-You set appearance options by using a `PDFSignatureAppearanceOptionSpec` object. For example, you can display the date within a signature by invoking the `PDFSignatureAppearanceOptionSpec` object’s `setShowDate` method and passing `true`.
+You set appearance options by using a `PDFSignatureAppearanceOptionSpec` object. For example, you can display the date within a signature by invoking the `PDFSignatureAppearanceOptionSpec` object's `setShowDate` method and passing `true`.
 
 You can also specify whether or not to perform a revocation check that determines whether the certificate that is used to digitally sign a PDF document has been revoked. To performing revocation checking, you can specify one of the following values:
 
@@ -661,7 +657,7 @@ If you specify not to perform revocation checking, then the Signature service do
 
 >[!NOTE]
 >
->Although a CRL or an OCSP server may be specified in the certificate, you can override the URL specified in the certificate by using a `CRLOptionSpec` and an `OCSPOptionSpec` object. For example, to override the CRL server, you can invoke the `CRLOptionSpec` object’s `setLocalURI` method.
+>Although a CRL or an OCSP server may be specified in the certificate, you can override the URL specified in the certificate by using a `CRLOptionSpec` and an `OCSPOptionSpec` object. For example, to override the CRL server, you can invoke the `CRLOptionSpec` object's `setLocalURI` method.
 
 Time stamping refers to the process of tracking the time when a signed or certified document was modified. Once a document is signed, it should not be modified, even by the document owner. Time stamping helps enforce the validity of a signed or certified document. You can set time stamping options using a `TSPOptionSpec` object. For example, you can specify the URL of a time stamping provider (TSP) server.
 
@@ -697,7 +693,7 @@ Digitally sign a PDF document by using the Signature API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-signatures-client.jar, in your Java project’s classpath.
+   Include client JAR files, such as adobe-signatures-client.jar, in your Java project's classpath.
 
 1. Create a Signatures client
 
@@ -711,14 +707,14 @@ Digitally sign a PDF document by using the Signature API (Java):
 
 1. Sign the PDF document
 
-   Sign the PDF document by invoking the `SignatureServiceClient` object’s `sign` method and passing the following values:
+   Sign the PDF document by invoking the `SignatureServiceClient` object's `sign` method and passing the following values:
 
     * A `com.adobe.idp.Document` object that represents the PDF document to sign.
     * A string value that represents the name of the signature field that will contain the digital signature.
-    * A `Credential` object that represents the credential that is used to digitally sign the PDF document. Create a `Credential` object by invoking the `Credential` object’s static `getInstance` method and passing a string value that specifies the alias value that corresponds to the security credential.
+    * A `Credential` object that represents the credential that is used to digitally sign the PDF document. Create a `Credential` object by invoking the `Credential` object's static `getInstance` method and passing a string value that specifies the alias value that corresponds to the security credential.
     * A `HashAlgorithm` object that specifies a static data member that represents the hash algorithm to use to digest the PDF document. For example, you can specify `HashAlgorithm.SHA1` to use the SHA1 algorithm.
     * A string value that represents the reason why the PDF document was digitally signed.
-    * A string value that represents the signer’s contact information.
+    * A string value that represents the signer's contact information.
     * A `PDFSignatureAppearanceOptions` object that controls the appearance of the digital signature. For example, you can use this object to add a custom logo to a digital signature.
     * A `java.lang.Boolean` object that specifies whether to perform revocation checking on the signer's certificate.
     * An `OCSPOptionSpec` object that stores preferences for Online Certificate Status Protocol (OCSP) support. If revocation checking is not done, this parameter is not used and you can specify `null`.
@@ -730,7 +726,7 @@ Digitally sign a PDF document by using the Signature API (Java):
 1. Save the signed PDF document
 
     * Create a `java.io.File` object and ensure that the file extension is .pdf.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method and pass `java.io.File`to copy the contents of the `Document` object to the file. Ensure that you use the `com.adobe.idp.Document` object that was returned by the `sign` method.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method and pass `java.io.File`to copy the contents of the `Document` object to the file. Ensure that you use the `com.adobe.idp.Document` object that was returned by the `sign` method.
 
 **See also**
 
@@ -759,7 +755,7 @@ To digitally sign a PDF document by using the Signature API (web service):
     * Create a `SignatureServiceClient` object by using its default constructor.
     * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/SignatureService?WSDL`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `SignatureServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -771,22 +767,22 @@ To digitally sign a PDF document by using the Signature API (web service):
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that is signed.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to sign, and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property the contents of the byte array.
 
 1. Sign the PDF document
 
-   Sign the PDF document by invoking the `SignatureServiceClient` object’s `sign` method and passing the following values:
+   Sign the PDF document by invoking the `SignatureServiceClient` object's `sign` method and passing the following values:
 
     * A `BLOB` object that represents the PDF document to sign.
     * A string value that represents the name of the signature field that will contain the digital signature.
-    * A `Credential` object that represents the credential that is used to digitally sign the PDF document. Create a `Credential` object by using its constructor and specify the alias by assigning a value to the `Credential` object’s `alias` property.
+    * A `Credential` object that represents the credential that is used to digitally sign the PDF document. Create a `Credential` object by using its constructor and specify the alias by assigning a value to the `Credential` object's `alias` property.
     * A `HashAlgorithm` object that specifies a static data member that represents the hash algorithm to use to digest the PDF document. For example, you can specify `HashAlgorithm.SHA1` to use the SHA1 algorithm.
     * A Boolean value that specifies whether the hash algorithm is used.
     * A string value that represents the reason why the PDF document was digitally signed.
-    * A string value that represents the signer’s location.
-    * A string value that represents the signer’s contact information.
+    * A string value that represents the signer's location.
+    * A string value that represents the signer's contact information.
     * A `PDFSignatureAppearanceOptions` object that controls the appearance of the digital signature. For example, you can use this object to add a custom logo to a digital signature.
     * A `System.Boolean` object that specifies whether to perform revocation checking on the signer's certificate. If this revocation checking is done, it is embedded in the signature. The default is `false`.
     * An `OCSPOptionSpec` object that stores preferences for Online Certificate Status Protocol (OCSP) support. If revocation checking is not done, this parameter is not used and you can specify `null`. For information about this object, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
@@ -798,9 +794,9 @@ To digitally sign a PDF document by using the Signature API (web service):
 1. Save the signed PDF document
 
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the signed PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `BLOB` object that was returned by the `sign` method. Populate the byte array by getting the value of the `BLOB` object’s `MTOM` data member.
+    * Create a byte array that stores the content of the `BLOB` object that was returned by the `sign` method. Populate the byte array by getting the value of the `BLOB` object's `MTOM` data member.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 
@@ -843,7 +839,7 @@ To digitally sign an interactive form the Forms service returns, perform the fol
 
 Include necessary files into your development project. If you are creating a client application using Java, include the necessary JAR files. If you are using web services, ensure that you include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -876,7 +872,7 @@ When signing a PDF document, you can set run-time options that the Signature ser
 * Revocation checking
 * Time stamping values
 
-You set appearance options by using a `PDFSignatureAppearanceOptionSpec` object. For example, you can display the date within a signature by invoking the `PDFSignatureAppearanceOptionSpec` object’s `setShowDate` method and passing `true`.
+You set appearance options by using a `PDFSignatureAppearanceOptionSpec` object. For example, you can display the date within a signature by invoking the `PDFSignatureAppearanceOptionSpec` object's `setShowDate` method and passing `true`.
 
 **Save the signed PDF document**
 
@@ -902,7 +898,7 @@ Digitally sign an interactive form by using the Forms and Signature API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-signatures-client.jar and adobe-forms-client.jar, in your Java project’s classpath.
+   Include client JAR files, such as adobe-signatures-client.jar and adobe-forms-client.jar, in your Java project's classpath.
 
 1. Create a Forms and Signatures client
 
@@ -916,8 +912,8 @@ Digitally sign an interactive form by using the Forms and Signature API (Java):
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
     * Create a `java.io.FileInputStream` object that represents the XML document that contains form data to pass to the Forms service by using its constructor. Pass a string value that specifies the location of the XML file.
     * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
-    * Create a `PDFFormRenderSpec` object that is used to set run-time options. Invoke the `PDFFormRenderSpec` object’s `setGenerateServerAppearance` method and pass `true`.
-    * Invoke the `FormsServiceClient` object’s `renderPDFForm2` method and pass the following values:
+    * Create a `PDFFormRenderSpec` object that is used to set run-time options. Invoke the `PDFFormRenderSpec` object's `setGenerateServerAppearance` method and pass `true`.
+    * Invoke the `FormsServiceClient` object's `renderPDFForm2` method and pass the following values:
 
         * A `com.adobe.idp.Document` object that contains the PDF form to render.
         * A `com.adobe.idp.Document` object that contains data to merge with the form.
@@ -927,18 +923,18 @@ Digitally sign an interactive form by using the Forms and Signature API (Java):
 
       The `renderPDFForm2` method returns a `FormsResult` object that contains a form data stream
 
-    * Retrieve the PDF form by invoking the `FormsResult` object’s `getOutputContent` method. This method returns a `com.adobe.idp.Document` object that represents the interactive form.
+    * Retrieve the PDF form by invoking the `FormsResult` object's `getOutputContent` method. This method returns a `com.adobe.idp.Document` object that represents the interactive form.
 
 1. Sign the interactive form
 
-   Sign the PDF document by invoking the `SignatureServiceClient` object’s `sign` method and passing the following values:
+   Sign the PDF document by invoking the `SignatureServiceClient` object's `sign` method and passing the following values:
 
     * A `com.adobe.idp.Document` object that represents the PDF document to sign. Ensure that this object is the `com.adobe.idp.Document` object obtained from the Forms service.
     * A string value that represents the name of the signature field that is signed.
-    * A `Credential` object that represents the credential that is used to digitally sign the PDF document. Create a `Credential` object by invoking the `Credential` object’s static `getInstance` method. Pass a string value that specifies the alias value that corresponds to the security credential.
+    * A `Credential` object that represents the credential that is used to digitally sign the PDF document. Create a `Credential` object by invoking the `Credential` object's static `getInstance` method. Pass a string value that specifies the alias value that corresponds to the security credential.
     * A `HashAlgorithm` object that specifies a static data member that represents the hash algorithm to use to digest the PDF document. For example, you can specify `HashAlgorithm.SHA1` to use the SHA1 algorithm.
     * A string value that represents the reason why the PDF document was digitally signed.
-    * A string value that represents the signer’s contact information.
+    * A string value that represents the signer's contact information.
     * A `PDFSignatureAppearanceOptions` object that controls the appearance of the digital signature. For example, you can use this object to add a custom logo to a digital signature.
     * A `java.lang.Boolean` object that specifies whether to perform revocation checking on the signer's certificate.
     * An `OCSPPreferences` object that stores preferences for Online Certificate Status Protocol (OCSP) support. If revocation checking is not done, this parameter is not used and you can specify `null`.
@@ -950,7 +946,7 @@ Digitally sign an interactive form by using the Forms and Signature API (Java):
 1. Save the signed PDF document
 
     * Create a `java.io.File` object and ensure that the filename extension is .pdf.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method and pass `java.io.File`to copy the contents of the `Document` object to the file. Ensure that you use the `com.adobe.idp.Document` object that the `sign` method returned.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method and pass `java.io.File`to copy the contents of the `Document` object to the file. Ensure that you use the `com.adobe.idp.Document` object that the `sign` method returned.
 
 **See also**
 
@@ -983,7 +979,7 @@ Digitally sign an interactive form by using the Forms and Signature API (web ser
     * Create a `SignatureServiceClient` object by using its default constructor.
     * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/SignatureService?WSDL`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `SignatureServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1000,16 +996,16 @@ Digitally sign an interactive form by using the Forms and Signature API (web ser
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that is signed.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to sign, and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property the contents of the byte array.
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store form data.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the XML file that contains form data, and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property the contents of the byte array.
-    * Create a `PDFFormRenderSpec` object that is used to set run-time options. Assign the value `true` to the `PDFFormRenderSpec` object’s `generateServerAppearance` field.
-    * Invoke the `FormsServiceClient` object’s `renderPDFForm2` method and pass the following values:
+    * Create a `PDFFormRenderSpec` object that is used to set run-time options. Assign the value `true` to the `PDFFormRenderSpec` object's `generateServerAppearance` field.
+    * Invoke the `FormsServiceClient` object's `renderPDFForm2` method and pass the following values:
 
         * A `BLOB` object that contains the PDF form to render.
         * A `BLOB` object that contains data to merge with the form.
@@ -1020,20 +1016,20 @@ Digitally sign an interactive form by using the Forms and Signature API (web ser
         * A string output parameter that is used for the locale value.
         * A `FormResult` value that is an output parameter that is used to store the interactive form.
 
-    * Retieve the PDF form by invoking the `FormsResult` object’s `outputContent` field. This field stores a `BLOB` object that represents the interactive form.
+    * Retieve the PDF form by invoking the `FormsResult` object's `outputContent` field. This field stores a `BLOB` object that represents the interactive form.
 
 1. Sign the interactive form
 
-   Sign the PDF document by invoking the `SignatureServiceClient` object’s `sign` method and passing the following values:
+   Sign the PDF document by invoking the `SignatureServiceClient` object's `sign` method and passing the following values:
 
     * A `BLOB` object that represents the PDF document to sign. Use the `BLOB` instance returned by the Forms service.
     * A string value that represents the name of the signature field that is signed.
-    * A `Credential` object that represents the credential that is used to digitally sign the PDF document. Create a `Credential` object by using its constructor and specify the alias by assigning a value to the `Credential` object’s `alias` property.
+    * A `Credential` object that represents the credential that is used to digitally sign the PDF document. Create a `Credential` object by using its constructor and specify the alias by assigning a value to the `Credential` object's `alias` property.
     * A `HashAlgorithm` object that specifies a static data member that represents the hash algorithm to use to digest the PDF document. For example, you can specify `HashAlgorithm.SHA1` to use the SHA1 algorithm.
     * A Boolean value that specifies whether the hash algorithm is used.
     * A string value that represents the reason why the PDF document was digitally signed.
-    * A string value that represents the signer’s location.
-    * A string value that represents the signer’s contact information.
+    * A string value that represents the signer's location.
+    * A string value that represents the signer's contact information.
     * A `PDFSignatureAppearanceOptions` object that controls the appearance of the digital signature. For example, you can use this object to add a custom logo to a digital signature.
     * A `System.Boolean` object that specifies whether to perform revocation checking on the signer's certificate. If this revocation checking is done, it is embedded in the signature. The default is `false`.
     * An `OCSPPreferences` object that stores preferences for Online Certificate Status Protocol (OCSP) support. If revocation checking is not done, this parameter is not used and you can specify `null`. For information about this object, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
@@ -1045,9 +1041,9 @@ Digitally sign an interactive form by using the Forms and Signature API (web ser
 1. Save the signed PDF document
 
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the signed PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `BLOB` object that was returned by the `sign` method. Populate the byte array by getting the value of the `BLOB` object’s `MTOM` data member.
+    * Create a byte array that stores the content of the `BLOB` object that was returned by the `sign` method. Populate the byte array by getting the value of the `BLOB` object's `MTOM` data member.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 
@@ -1099,7 +1095,7 @@ To certify a PDF document, perform the following tasks:
 
 Include necessary files into your development project. If you are creating a client application using Java, include the necessary JAR files. If you are using web services, ensure that you include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1122,7 +1118,7 @@ To certify a PDF document, you must obtain a PDF document that contains a signat
 To successfully certify a PDF document, you require the following input values that are used by the Signature service to certify a PDF document:
 
 * **PDF document**: A PDF document that contains a signature field, which is a form field that contains a graphic representation of the certified signature. A PDF document must contain a signature field before it can be certified. A signature field can be added by using Designer or programmatically. (See [Adding Signature Fields](digitally-signing-certifying-documents.md#adding-signature-fields).)
-* **Signature field name**: The fully-qualified name of the signature field that is certified. The following value is an example: `form1[0].#subform[1].SignatureField3[3]`. When using an XFA form field, the partial name of the signature field can also be used: `SignatureField3[3]`. If a null value is passed for the field name, an invisible signature field is dynamically created and certified.
+* **Signature field name**: The fully qualified name of the signature field that is certified. The following value is an example: `form1[0].#subform[1].SignatureField3[3]`. When using an XFA form field, the partial name of the signature field can also be used: `SignatureField3[3]`. If a null value is passed for the field name, an invisible signature field is dynamically created and certified.
 * **Security credential**: A credential that is used to certify the PDF document. This security credential contains a password and an alias, which must match an alias that appears in the credential that is located within the Credential service. The alias is a reference to an actual credential that may be in a PKCS#12 file (with a .pfx extension) or a hardware security module (HSM).
 * **Hash algorithm**: A hash algorithm to use to digest the PDF document.
 * **Reason for signing**: A value that is displayed in Acrobat or Adobe Reader so that other users know the reason why the PDF document was certified.
@@ -1158,7 +1154,7 @@ Certify a PDF document by using the Signature API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-signatures-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-signatures-client.jar, in your Java project's class path.
 
 1. Create a Signature client
 
@@ -1172,14 +1168,14 @@ Certify a PDF document by using the Signature API (Java):
 
 1. Certify the PDF document
 
-   Certify the PDF document by invoking the `SignatureServiceClient` object’s `certify` method and passing the following values:
+   Certify the PDF document by invoking the `SignatureServiceClient` object's `certify` method and passing the following values:
 
     * The `com.adobe.idp.Document` object that represents the PDF document to certify.
     * A string value that represents the name of the signature field that will contain the signature.
-    * A `Credential` object that represents the credential that is used to certify the PDF document. Create a `Credential` object by invoking the `Credential` object’s static `getInstance` method and passing a string value that specifies the alias value that corresponds to the security credential.
+    * A `Credential` object that represents the credential that is used to certify the PDF document. Create a `Credential` object by invoking the `Credential` object's static `getInstance` method and passing a string value that specifies the alias value that corresponds to the security credential.
     * A `HashAlgorithm` object that specifies a static data member that represents the hash algorithm used to digest the PDF document. For example, you can specify `HashAlgorithm.SHA1` to use the SHA1 algorithm.
     * A string value that represents the reason why the PDF document was certified.
-    * A string value that represents the signer’s contact information.
+    * A string value that represents the signer's contact information.
     * A `MDPPermissions` object that specifies actions that can be performed on the PDF document that invalidates the signature.
     * A `PDFSignatureAppearanceOptions` object that controls the appearance of the certified signature. If desired, modify the appearance of the signature by invoking a method, such as `setShowDate`.
     * A string value that provides an explanation of what actions invalidate the signature.
@@ -1187,14 +1183,14 @@ Certify a PDF document by using the Signature API (Java):
     * A `java.lang.Boolean` object that specifies whether the signature field being certified is locked. If the field is locked, the signature field is marked as read only, its properties cannot be modified, and it cannot be cleared by anyone who does not have the required permissions. The default is `false`.
     * An `OCSPPreferences` object that stores preferences for Online Certificate Status Protocol (OCSP) support. If revocation checking is not done, this parameter is not used and you can specify `null`. For information about this object, See [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
     * A `CRLPreferences` object that stores certificate revocation list (CRL) preferences. If revocation checking is not done, this parameter is not used and you can specify `null`.
-    * A `TSPPreferences` object that stores preferences for time stamp provider (TSP) support. For example, after you create a `TSPPreferences` object, you can set the URL of the TSP server by invoking the `TSPPreferences` object’s `setTspServerURL` method. This parameter is optional and can be `null`. For more information, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+    * A `TSPPreferences` object that stores preferences for time stamp provider (TSP) support. For example, after you create a `TSPPreferences` object, you can set the URL of the TSP server by invoking the `TSPPreferences` object's `setTspServerURL` method. This parameter is optional and can be `null`. For more information, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
    The `certify` method returns a `com.adobe.idp.Document` object that represents the certified PDF document.
 
 1. Save the certified PDF document as a PDF file
 
     * Create a `java.io.File` object and ensure that the file extension is .pdf.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file.
 
 **See also**
 
@@ -1223,7 +1219,7 @@ Certify a PDF document by using the Signature API (web service):
     * Create a `SignatureServiceClient` object by using its default constructor.
     * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/SignatureService?WSDL`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `SignatureServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1235,23 +1231,23 @@ Certify a PDF document by using the Signature API (web service):
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that is certified.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document to certify and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` data member the contents of the byte array.
 
 1. Certify the PDF document
 
-   Certify the PDF document by invoking the `SignatureServiceClient` object’s `certify` method and passing the following values:
+   Certify the PDF document by invoking the `SignatureServiceClient` object's `certify` method and passing the following values:
 
     * The `BLOB` object that represents the PDF document to certify.
     * A string value that represents the name of the signature field that will contain the signature.
-    * A `Credential` object that represents the credential that is used to certify the PDF document. Create a `Credential` object by using its constructor, and specify the alias by assigning a value to the `Credential` object’s `alias` property.
+    * A `Credential` object that represents the credential that is used to certify the PDF document. Create a `Credential` object by using its constructor, and specify the alias by assigning a value to the `Credential` object's `alias` property.
     * A `HashAlgorithm` object that specifies a static data member that represents the hash algorithm used to digest the PDF document. For example, you can specify `HashAlgorithm.SHA1` to use the SHA1 algorithm.
     * A Boolean value that specifies whether the hash algorithm is used.
     * A string value that represents the reason why the PDF document was certified.
-    * A string value that represents the signer’s location.
-    * A string value that represents the signer’s contact information.
-    * An `MDPPermissions` object’s static data member that specifies actions that can be performed on the PDF document that invalidate the signature.
+    * A string value that represents the signer's location.
+    * A string value that represents the signer's contact information.
+    * An `MDPPermissions` object's static data member that specifies actions that can be performed on the PDF document that invalidate the signature.
     * A Boolean value that specifies whether to use the `MDPPermissions` object that was passed as the previous parameter value.
     * A string value that explains what actions invalidate the signature.
     * A `PDFSignatureAppearanceOptions` object that controls the appearance of the certified signature. Create a `PDFSignatureAppearanceOptions` object by using its constructor. You can modify the appearance of the signature by setting one of its data members.
@@ -1260,16 +1256,16 @@ Certify a PDF document by using the Signature API (web service):
     * A `System.Boolean` object that specifies whether the signature field is locked. That is, if you pass `true` to the previous parameter, then pass `true` to this parameter.
     * An `OCSPPreferences` object that stores preferences for Online Certificate Status Protocol (OCSP) support, which provides information about the status of the credential that is used to certify the PDF document. If revocation checking is not done, this parameter is not used and you can specify `null`.
     * A `CRLPreferences` object that stores certificate revocation list (CRL) preferences. If revocation checking is not done, this parameter is not used and you can specify `null`.
-    * A `TSPPreferences` object that stores preferences for time stamp provider (TSP) support. For example, after you create a `TSPPreferences` object, you can set the URL of the TSP by setting the `TSPPreferences` object’s `tspServerURL` data member. This parameter is optional and can be `null`.
+    * A `TSPPreferences` object that stores preferences for time stamp provider (TSP) support. For example, after you create a `TSPPreferences` object, you can set the URL of the TSP by setting the `TSPPreferences` object's `tspServerURL` data member. This parameter is optional and can be `null`.
 
    The `certify` method returns a `BLOB` object that represents the certified PDF document.
 
 1. Save the certified PDF document as a PDF file
 
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document that will contain the certified PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `BLOB` object that was returned by the `certify` method. Populate the byte array by getting the value of the `BLOB` object’s `binaryData` data member.
+    * Create a byte array that stores the content of the `BLOB` object that was returned by the `certify` method. Populate the byte array by getting the value of the `BLOB` object's `binaryData` data member.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 
@@ -1281,13 +1277,13 @@ Certify a PDF document by using the Signature API (web service):
 
 ## Verifying Digital Signatures {#verifying-digital-signatures}
 
-Digital signatures can be verified to ensure that a signed PDF document was not modified and that the digital signature is valid. When verifying a digital signature, you can check the signature’s status and the signature’s properties, such as the signer’s identity. Before trusting a digital signature, it is recommended that you verify it. When verifying a digital signature, reference a PDF document that contains a digital signature.
+Digital signatures can be verified to ensure that a signed PDF document was not modified and that the digital signature is valid. When verifying a digital signature, you can check the signature's status and the signature's properties, such as the signer's identity. Before trusting a digital signature, it is recommended that you verify it. When verifying a digital signature, reference a PDF document that contains a digital signature.
 
-Assume that the identity of the signer is unknown. When you open the PDF document in Acrobat, a warning message states that the signer’s identity is unknown, as shown in the following illustration.
+Assume that the identity of the signer is unknown. When you open the PDF document in Acrobat, a warning message states that the signer's identity is unknown, as shown in the following illustration.
 
 ![vd_vd_verifysig](assets/vd_vd_verifysig.png)
 
-Likewise, when you programmatically verify a digital signature, you can determine the status of the signer’s identity. For example, if you verify the digital signature in the document shown in the previous illustration, the result would be that the signer’s identity is unknown.
+Likewise, when you programmatically verify a digital signature, you can determine the status of the signer's identity. For example, if you verify the digital signature in the document shown in the previous illustration, the result would be that the signer's identity is unknown.
 
 >[!NOTE]
 >
@@ -1309,7 +1305,7 @@ To verify a digital signature, perform the following tasks:
 
 Include the necessary files in your development project. If you are creating a client application using Java, include the necessary JAR files. If you are using web services, include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1335,7 +1331,7 @@ Set these PKI run-time options that the Signature service uses when verifying si
 * Revocation checking
 * Time-stamping values
 
-As part of setting these options, you can specify verification time. For example, you can select current time (the time on the validator’s computer), which indicates to use the current time. For information about the different time values, see the `VerificationTime` enumeration value in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+As part of setting these options, you can specify verification time. For example, you can select current time (the time on the validator's computer), which indicates to use the current time. For information about the different time values, see the `VerificationTime` enumeration value in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 You can also specify whether to perform revocation checking as part of the verification process. For example, you can perform a revocation check to determine whether the certificate is revoked. For information about the revocation-checking options, see the `RevocationCheckStyle` enumeration value in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
@@ -1349,7 +1345,7 @@ If you do not perform revocation checking, the Signature service does not check 
 
 >[!NOTE]
 >
->You can override the URL specified in the certificate by using a `CRLOptionSpec` and an `OCSPOptionSpec` object. For example, to override the CRL server, you can invoke the `CRLOptionSpec` object’s `setLocalURI` method.
+>You can override the URL specified in the certificate by using a `CRLOptionSpec` and an `OCSPOptionSpec` object. For example, to override the CRL server, you can invoke the `CRLOptionSpec` object's `setLocalURI` method.
 
 Time stamping is the process of tracking the time when a signed or certified document was modified. After a document is signed, no one can modify it. Time stamping helps enforce the validity of a signed or certified document. You can set time stamping options using a `TSPOptionSpec` object. For example, you can specify the URL of a time stamping provider (TSP) server.
 
@@ -1395,7 +1391,7 @@ Verify a digital signature by using the Signature Service API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-signatures-client.jar, in your Java project’s classpath.
+   Include client JAR files, such as adobe-signatures-client.jar, in your Java project's classpath.
 
 1. Create a Signature client
 
@@ -1410,12 +1406,12 @@ Verify a digital signature by using the Signature Service API (Java):
 1. Set PKI run-time options
 
     * Create a `PKIOptions` object by using its constructor.
-    * Set the verification time by invoking the `PKIOptions` object’s `setVerificationTime` method and passing a `VerificationTime` enumeration value that specifies the verification time.
-    * Set the revocation-checking option by invoking `PKIOptions` object’s `setRevocationCheckStyle` method and passing a `RevocationCheckStyle` enumeration value that specifies whether to perform revocation checking.
+    * Set the verification time by invoking the `PKIOptions` object's `setVerificationTime` method and passing a `VerificationTime` enumeration value that specifies the verification time.
+    * Set the revocation-checking option by invoking `PKIOptions` object's `setRevocationCheckStyle` method and passing a `RevocationCheckStyle` enumeration value that specifies whether to perform revocation checking.
 
 1. Verify the digital signature
 
-   Verify the signature by invoking the `SignatureServiceClient` object’s `verify2` method and passing the following values:
+   Verify the signature by invoking the `SignatureServiceClient` object's `verify2` method and passing the following values:
 
     * A `com.adobe.idp.Document` object that contains a digitally signed or certified PDF document.
     * A string value that represents the signature field name that contains the signature to verify.
@@ -1426,12 +1422,12 @@ Verify a digital signature by using the Signature Service API (Java):
 
 1. Determine the status of the signature
 
-    * Determine the signature’s status by invoking the `PDFSignatureVerificationInfo` object’s `getStatus` method. This method returns a `SignatureStatus` object that specifies the signature status. For example, if a signed PDF document is not modified, this method returns `SignatureStatus.DocumentSigNoChanges`.
+    * Determine the signature's status by invoking the `PDFSignatureVerificationInfo` object's `getStatus` method. This method returns a `SignatureStatus` object that specifies the signature status. For example, if a signed PDF document is not modified, this method returns `SignatureStatus.DocumentSigNoChanges`.
 
 1. Determine the identity of the signer
 
-    * Determine the signer’s identity by invoking the `PDFSignatureVerificationInfo` object’s `getSigner` method. This method returns an `IdentityInformation` object.
-    * Invoke the `IdentityInformation` object’s `getStatus` method to determine the signer’s identity. This method returns an `IdentityStatus` enumeration value that specifies the identity. For example, if the signer is trusted, this method returns `IdentityStatus.TRUSTED`.
+    * Determine the signer's identity by invoking the `PDFSignatureVerificationInfo` object's `getSigner` method. This method returns an `IdentityInformation` object.
+    * Invoke the `IdentityInformation` object's `getStatus` method to determine the signer's identity. This method returns an `IdentityStatus` enumeration value that specifies the identity. For example, if the signer is trusted, this method returns `IdentityStatus.TRUSTED`.
 
 **See also**
 
@@ -1460,7 +1456,7 @@ Verify a digital signature by using the Signature Service API (web service):
     * Create a `SignatureServiceClient` object by using its default constructor.
     * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/SignatureService?WSDL`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `SignatureServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1472,19 +1468,19 @@ Verify a digital signature by using the Signature Service API (web service):
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that contains a digital or certified signature to verify.
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the signed PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property the contents of the byte array.
 
 1. Set PKI run-time options
 
     * Create a `PKIOptions` object by using its constructor.
-    * Set the verification time by assigning the `PKIOptions` object’s `verificationTime` data member a `VerificationTime` enumeration value that specifies the verification time.
-    * Set the revocation-checking option by assigning the `PKIOptions` object’s `revocationCheckStyle` data member a `RevocationCheckStyle` enumeration value that specifies whether to perform revocation checking.
+    * Set the verification time by assigning the `PKIOptions` object's `verificationTime` data member a `VerificationTime` enumeration value that specifies the verification time.
+    * Set the revocation-checking option by assigning the `PKIOptions` object's `revocationCheckStyle` data member a `RevocationCheckStyle` enumeration value that specifies whether to perform revocation checking.
 
 1. Verify the digital signature
 
-   Verify the signature by invoking the `SignatureServiceClient` object’s `verify2` method and passing the following values:
+   Verify the signature by invoking the `SignatureServiceClient` object's `verify2` method and passing the following values:
 
     * The `BLOB` object that contains a digitally signed or certified PDF document.
     * A string value that represents the signature field name that contains the signature to verify.
@@ -1495,12 +1491,12 @@ Verify a digital signature by using the Signature Service API (web service):
 
 1. Determine the status of the signature
 
-   Determine the signature’s status by getting the value of the `PDFSignatureVerificationInfo` object’s `status` data member. This data member stores a `SignatureStatus` object that specifies the signature’s status. For example, if a signed PDF document is modified, the `status` data member stores the value `SignatureStatus.DocumentSigNoChanges`.
+   Determine the signature's status by getting the value of the `PDFSignatureVerificationInfo` object's `status` data member. This data member stores a `SignatureStatus` object that specifies the signature's status. For example, if a signed PDF document is modified, the `status` data member stores the value `SignatureStatus.DocumentSigNoChanges`.
 
 1. Determine the identity of the signer
 
-    * Determine the signer’s identity by retrieving the value of the `PDFSignatureVerificationInfo` object’s `signer` data member. This member returns an `IdentityInformation` object.
-    * Retrieve the `IdentityInformation` object’s `status` data member to determine the signer’s identity. This data member returns an `IdentityStatus` enumeration value that specifies the identity. For example, if the signer is trusted, this member returns `IdentityStatus.TRUSTED`.
+    * Determine the signer's identity by retrieving the value of the `PDFSignatureVerificationInfo` object's `signer` data member. This member returns an `IdentityInformation` object.
+    * Retrieve the `IdentityInformation` object's `status` data member to determine the signer's identity. This data member returns an `IdentityStatus` enumeration value that specifies the identity. For example, if the signer is trusted, this member returns `IdentityStatus.TRUSTED`.
 
 **See also**
 
@@ -1512,7 +1508,7 @@ Verify a digital signature by using the Signature Service API (web service):
 
 ## Verifying Multiple Digital Signatures {#verifying-multiple-digital-signatures}
 
-AEM Forms provides the means to verify all digital signatures that are located in a PDF document. Assume that a PDF document contains multiple digital signatures as a result of a business process that requires signatures from multiple signers. For example, consider a financial transaction that requires both a loan officer’s and a manager’s signature. You can use the Signature service Java API or web service API to verify all signatures within the PDF document. When verifying multiple digital signatures, you can check the status and properties of each signature. Before you trust a digital signature, it is recommended that you verify it. It is recommended that you are familiar with verifying a single digital signature.
+AEM Forms provides the means to verify all digital signatures that are located in a PDF document. Assume that a PDF document contains multiple digital signatures as a result of a business process that requires signatures from multiple signers. For example, consider a financial transaction that requires both a loan officer's and a manager's signature. You can use the Signature service Java API or web service API to verify all signatures within the PDF document. When verifying multiple digital signatures, you can check the status and properties of each signature. Before you trust a digital signature, it is recommended that you verify it. It is recommended that you are familiar with verifying a single digital signature.
 
 >[!NOTE]
 >
@@ -1533,7 +1529,7 @@ To verify multiple digital signature, perform the following tasks:
 
 Include the necessary files in your development project. If you are creating a client application using Java, include the necessary JAR files. If you are using web services, include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1559,7 +1555,7 @@ Set these PKI run-time options that the Signature service uses when verifying al
 * Revocation checking
 * Time-stamping values
 
-As part of setting these options, you can specify verification time. For example, you can select current time (the time on the validator’s computer), which indicates to use the current time. For information about the different time values, see the `VerificationTime` enumeration value in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+As part of setting these options, you can specify verification time. For example, you can select current time (the time on the validator's computer), which indicates to use the current time. For information about the different time values, see the `VerificationTime` enumeration value in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 You can also specify whether to perform revocation checking as part of the verification process. For example, you can perform a revocation check to determine whether the certificate is revoked. For information about the revocation-checking options, see the `RevocationCheckStyle` enumeration value in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
@@ -1573,7 +1569,7 @@ If you do not perform revocation checking, the Signature service does not check 
 
 >[!NOTE]
 >
->You can override the URL specified in the certificate by using a `CRLOptionSpec` and an `OCSPOptionSpec` object. For example, to override the CRL server, you can invoke the `CRLOptionSpec` object’s `setLocalURI` method.
+>You can override the URL specified in the certificate by using a `CRLOptionSpec` and an `OCSPOptionSpec` object. For example, to override the CRL server, you can invoke the `CRLOptionSpec` object's `setLocalURI` method.
 
 Time stamping is the process of tracking the time when a signed or certified document was modified. After a document is signed, no one can modify it. Time stamping helps enforce the validity of a signed or certified document. You can set time stamping options by using a `TSPOptionSpec` object. For example, you can specify the URL of a time stamping provider (TSP) server.
 
@@ -1591,7 +1587,7 @@ To verify all digital signatures located in a PDF document, retrieve the digital
 
 **Iterate through all signatures**
 
-Iterate through each signature. That is, for each signature, verify the digital signature, and check the signer’s identity and the status of each signature. (See [Verifying Digital Signatures](#verify-digital-signatures-using-the-java-api).)
+Iterate through each signature. That is, for each signature, verify the digital signature, and check the signer's identity and the status of each signature. (See [Verifying Digital Signatures](#verify-digital-signatures-using-the-java-api).)
 
 >[!NOTE]
 >
@@ -1613,7 +1609,7 @@ Verify multiple digital signatures by using the Signature Service API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-signatures-client.jar, in your Java project’s classpath.
+   Include client JAR files, such as adobe-signatures-client.jar, in your Java project's classpath.
 
 1. Create a Signature client
 
@@ -1628,12 +1624,12 @@ Verify multiple digital signatures by using the Signature Service API (Java):
 1. Set PKI runtime options
 
     * Create a `PKIOptions` object by using its constructor.
-    * Set the verification time by invoking the `PKIOptions` object’s `setVerificationTime` method and passing a `VerificationTime` enumeration value that specifies the verification time.
-    * Set the revocation checking option by invoking `PKIOptions` object’s `setRevocationCheckStyle` method and passing a `RevocationCheckStyle` enumeration value that specifies whether to perform revocation checking.
+    * Set the verification time by invoking the `PKIOptions` object's `setVerificationTime` method and passing a `VerificationTime` enumeration value that specifies the verification time.
+    * Set the revocation checking option by invoking `PKIOptions` object's `setRevocationCheckStyle` method and passing a `RevocationCheckStyle` enumeration value that specifies whether to perform revocation checking.
 
 1. Retrieve all digital signatures
 
-   Invoke the `SignatureServiceClient` object’s `verifyPDFDocument` method and pass the following values:
+   Invoke the `SignatureServiceClient` object's `verifyPDFDocument` method and pass the following values:
 
     * A `com.adobe.idp.Document` object that contains a PDF document that contains multiple digital signatures.
     * A `PKIOptions` object that contains PKI run-time options.
@@ -1643,8 +1639,8 @@ Verify multiple digital signatures by using the Signature Service API (Java):
 
 1. Iterate through all signatures
 
-    * Iterate through all signatures by invoking the `PDFDocumentVerificationInfo` object’s `getVerificationInfos` method. This method returns a `java.util.List` object where each element is a `PDFSignatureVerificationInfo` object. Use a `java.util.Iterator` object to iterate through the list of signatures.
-    * Using the `PDFSignatureVerificationInfo` object, you can perform tasks such as determining the status of the signature by invoking the `PDFSignatureVerificationInfo` object’s `getStatus` method. This method returns a `SignatureStatus` object whose static data member informs you about the status of the signature. For example, if the signature is unknown, this method returns `SignatureStatus.DocumentSignatureUnknown`.
+    * Iterate through all signatures by invoking the `PDFDocumentVerificationInfo` object's `getVerificationInfos` method. This method returns a `java.util.List` object where each element is a `PDFSignatureVerificationInfo` object. Use a `java.util.Iterator` object to iterate through the list of signatures.
+    * Using the `PDFSignatureVerificationInfo` object, you can perform tasks such as determining the status of the signature by invoking the `PDFSignatureVerificationInfo` object's `getStatus` method. This method returns a `SignatureStatus` object whose static data member informs you about the status of the signature. For example, if the signature is unknown, this method returns `SignatureStatus.DocumentSignatureUnknown`.
 
 **See also**
 
@@ -1675,7 +1671,7 @@ Verify multiple digital signatures by using the Signature Service API (web servi
     * Create a `SignatureServiceClient` object by using its default constructor.
     * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/SignatureService?WSDL`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `SignatureServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1687,19 +1683,19 @@ Verify multiple digital signatures by using the Signature Service API (web servi
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object stores a PDF document that contains multiple digital signatures to verify.
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property the contents of the byte array.
 
 1. Set PKI runtime options
 
     * Create a `PKIOptions` object by using its constructor.
-    * Set the verification time by assigning the `PKIOptions` object’s `verificationTime` data member a `VerificationTime` enumeration value that specifies the verification time.
-    * Set the revocation checking option by assigning the `PKIOptions` object’s `revocationCheckStyle` data member a `RevocationCheckStyle` enumeration value that specifies whether to perform revocation checking.
+    * Set the verification time by assigning the `PKIOptions` object's `verificationTime` data member a `VerificationTime` enumeration value that specifies the verification time.
+    * Set the revocation checking option by assigning the `PKIOptions` object's `revocationCheckStyle` data member a `RevocationCheckStyle` enumeration value that specifies whether to perform revocation checking.
 
 1. Retrieve all digital signatures
 
-   Invoke the `SignatureServiceClient` object’s `verifyPDFDocument` method and pass the following values:
+   Invoke the `SignatureServiceClient` object's `verifyPDFDocument` method and pass the following values:
 
     * A `BLOB` object that contains a PDF document that contains multiple digital signatures.
     * A `PKIOptions` object that contains PKI run-time options.
@@ -1709,8 +1705,8 @@ Verify multiple digital signatures by using the Signature Service API (web servi
 
 1. Iterate through all signatures
 
-    * Iterate through all signatures by getting the `PDFDocumentVerificationInfo` object’s `verificationInfos` data member. This data member returns an `Object` array where each element is a `PDFSignatureVerificationInfo` object.
-    * Using the `PDFSignatureVerificationInfo` object, you can perform tasks like determining the status of the signature by getting the `PDFSignatureVerificationInfo` object’s `status` data member. This data member returns a `SignatureStatus` object whose static data member informs you about the status of the signature. For example, if the signature is unknown, this method returns `SignatureStatus.DocumentSignatureUnknown`.
+    * Iterate through all signatures by getting the `PDFDocumentVerificationInfo` object's `verificationInfos` data member. This data member returns an `Object` array where each element is a `PDFSignatureVerificationInfo` object.
+    * Using the `PDFSignatureVerificationInfo` object, you can perform tasks like determining the status of the signature by getting the `PDFSignatureVerificationInfo` object's `status` data member. This data member returns a `SignatureStatus` object whose static data member informs you about the status of the signature. For example, if the signature is unknown, this method returns `SignatureStatus.DocumentSignatureUnknown`.
 
 **See also**
 
@@ -1742,7 +1738,7 @@ To remove a digital signature from a signature field, perform the following task
 
 Include necessary files into your development project. If you are creating a client application using Java, then include the necessary JAR files. If you are using web services, then make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1786,7 +1782,7 @@ Remove a digital signature by using the Signature API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-signatures-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-signatures-client.jar, in your Java project's class path.
 
 1. Create a Signature client.
 
@@ -1800,7 +1796,7 @@ Remove a digital signature by using the Signature API (Java):
 
 1. Remove the digital signature from the signature field
 
-   Remove a digital signature from a signature field by invoking the `SignatureServiceClient` object’s `clearSignatureField` method and passing the following values:
+   Remove a digital signature from a signature field by invoking the `SignatureServiceClient` object's `clearSignatureField` method and passing the following values:
 
     * A `com.adobe.idp.Document` object that represents the PDF document that contains the signature to remove.
     * A string value that specifies the name of the signature field that contains the digital signature.
@@ -1810,7 +1806,7 @@ Remove a digital signature by using the Signature API (Java):
 1. Save the PDF document as a PDF file
 
     * Create a `java.io.File` object and ensure that the file extension is .pdf.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method. Pass the `java.io.File` object to copy the contents of the `com.adobe.idp.Document` object to the file. Ensure that you use the `Document` object that was returned by the `clearSignatureField` method.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method. Pass the `java.io.File` object to copy the contents of the `com.adobe.idp.Document` object to the file. Ensure that you use the `Document` object that was returned by the `clearSignatureField` method.
 
 **See also**
 
@@ -1839,7 +1835,7 @@ Remove a digital signature by using the Signature API (web service):
     * Create a `SignatureServiceClient` object by using its default constructor.
     * Create a `SignatureServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/SignatureService?WSDL`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.)
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `SignatureServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `SignatureServiceClient.ClientCredentials.UserName.UserName`.
@@ -1851,13 +1847,13 @@ Remove a digital signature by using the Signature API (web service):
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that contains a digital signature to remove.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the signed PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
 
 1. Remove the digital signature from the signature field
 
-   Remove the digital signature by invoking the `SignatureServiceClient` object’s `clearSignatureField` method and passing the following values:
+   Remove the digital signature by invoking the `SignatureServiceClient` object's `clearSignatureField` method and passing the following values:
 
     * A `BLOB` object that contains the signed PDF document.
     * A string value that represents the name of the signature field that contains the digital signature to remove.
@@ -1867,9 +1863,9 @@ Remove a digital signature by using the Signature API (web service):
 1. Save the PDF document as a PDF file
 
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document that contains an empty signature field and the mode in which to open the file.
-    * Create a byte array that stores the content of the `BLOB` object that was returned by the `sign` method. Populate the byte array by getting the value of the `BLOB` object’s `MTOM` data member.
+    * Create a byte array that stores the content of the `BLOB` object that was returned by the `sign` method. Populate the byte array by getting the value of the `BLOB` object's `MTOM` data member.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to the PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to the PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 
