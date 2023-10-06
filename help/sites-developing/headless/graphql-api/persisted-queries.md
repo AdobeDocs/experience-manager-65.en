@@ -409,5 +409,5 @@ After the package has been built you can:
    1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
 * Using a workflow (via workflow launcher configuration):
-  1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
+  1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, among others).
 -->

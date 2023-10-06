@@ -106,7 +106,7 @@ Before starting on your detailed Test Cases and Test Plan you can:
 * Test the functionality according to the Detailed Requirement Specification.
 * Test Performance according to the [Target Metrics](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
 
-amongst others.
+among others.
 
 **Collect traffic statistics from the existing website** - This information can be extracted from the log files - see Performance Monitoring for more details.
 

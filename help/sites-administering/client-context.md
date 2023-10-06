@@ -94,7 +94,7 @@ The JSONP Store is like any other store, but it loads information that comes fro
 >
 >The JSONP Store does not cache the information in the cookie, but retrieves that data on each page load.
 
-**Profile Data** Shows information collected in the user profile. For example, gender, age, email address, amongst others.
+**Profile Data** Shows information collected in the user profile. For example, gender, age, email address, among others.
 
 **Resolved segments** Shows which segments currently resolve (often dependent on other information shown in the client context). This is of interest when configuring a campaign.
 
