@@ -457,6 +457,15 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### Installation 
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
+* After upgrading to AEM Forms 6.5.18.0 JBoss Turnkey full installer environment on Windows Server 2022, when compiling the source code using the Java 11, the compilation error occurs:
+`C:\Adobe\OutputPDF>javac OutputPDF.java
+error` (CQDOC-20878)
+To resolve the issue, perform the following steps:
+  1. Navigate to `C:\Adobe\Adobe_Experience_Manager_Forms\sdk\client-libs\common\adobe-output-client.jar`.
+  1. Extract the `adobe-output-client.jar` file, so you can obtain an `Manifest.mf` file.
+  1. Open the `Manifest.mf` file and remove the entry `${clover.jar.name}` from the class-path attribute.
+  1. Re-run the setup.
+
 * After installing AEM Service Pack 6.5.18.0 full installer, the EAR deployment fails on JEE using JBoss&reg; Turnkey (CQDOC-20803). 
 To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager.
 
