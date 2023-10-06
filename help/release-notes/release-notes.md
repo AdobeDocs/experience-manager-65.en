@@ -457,15 +457,17 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### Installation 
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
-* After upgrading to AEM Forms 6.5.18.0 JBoss Turnkey full installer environment on Windows Server 2022, when compiling the source code using the Java 11, the compilation error occurs: ` C:\Adobe\Adobe_Experience_Manager_Forms\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: Illegal character in path at index 70: file:/C:/Adobe/Adobe_Experience_Manager_Forms/sdk/client-libs/common/${clover.jar.name}`
+* After upgrading to AEM Forms 6.5.18.0 JBoss Turnkey full installer environment on Windows Server 2022, when compiling the Output client application code using Java 11, the following compilation error occurs: 
+`<AEM_Forms_Installation_dir>\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: Illegal character in path at index 70: file:<AEM_Forms_Installation_dir>/sdk/client-libs/common/${clover.jar.name}`
 To resolve the issue, perform the following steps:
-  1. Navigate to `C:\Adobe\Adobe_Experience_Manager_Forms\sdk\client-libs\common\adobe-output-client.jar` and unzip it to extract the `Manifest.mf` file.
+  1. Navigate to `<AEM_Forms_Installation_dir>\sdk\client-libs\common\adobe-output-client.jar` and unzip it to extract the `Manifest.mf` file.
   1. Update the `Manifest.mf` file by removing the entry `${clover.jar.name}` from the class-path attribute. 
 
-    >[!NOTE]
-    >
-    > You can also use an in-place editing tool, for example 7-zip, to update the `Manifest.mf` file.  
+      >[!NOTE]
+      >
+      > You can also use an in-place editing tool, for example 7-zip, to update the `Manifest.mf` file.  
 
+  1. Save the updated the `Manifest.mf` in the `adobe-output-client.jar` archive. 
   1. Save the modified `adobe-output-client.jar` file and re-run the setup.  (CQDOC-20878)
 
 * After installing AEM Service Pack 6.5.18.0 full installer, the EAR deployment fails on JEE using JBoss&reg; Turnkey. 
