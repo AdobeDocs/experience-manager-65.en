@@ -464,7 +464,7 @@ To resolve the issue, perform the following steps:
 
     >[!NOTE]
     >
-    > You can also use an in-place editing tool, for eaxmple 7-zip, to edit the `Manifest.mf` file. 
+    > You can also use an in-place editing tool, for example 7-zip, to update the `Manifest.mf` file.  
 
   1. Save the modified `adobe-output-client.jar` file and re-run the setup.  (CQDOC-20878)
 
