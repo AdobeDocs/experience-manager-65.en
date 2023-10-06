@@ -68,6 +68,8 @@ The following image depicts senarios for using full and patch installer.
 
 ![Full Installer and Patch Installer](/help/forms/using/assets/full-and-patch-installer.png) 
 
+Refer to the [AEM 6.5 Forms Service Pack installation instructions](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) article to install the latest Service Pack for JEE environment.
+
 <!--
 [Work in Progress]
 
@@ -99,3 +101,5 @@ Migration involves moving only assets (PDF, XDP, images, adaptive forms, corresp
       Methods to calculate average fill time for forms and average read time for have changed. So, when you upgrade to AEM 6.3 forms, older data (data from previous AEM Forms release) for these metrics is available only in Adobe Analytics. It is not visible in AEM Forms analytics reports. For these metrics, AEM Forms analytics reports display data which is captured after performing the upgrade.
       
       -->
+
+
