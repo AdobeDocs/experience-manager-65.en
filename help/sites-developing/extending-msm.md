@@ -620,7 +620,7 @@ MSM uses a stored list of language and country codes to determine the name of th
 
 * Language titles
 * Country names
-* Default countries for languges (for codes such as `en`, `de`, amongst others)
+* Default countries for languges (for codes such as `en`, `de`, among others)
 
 The language list is stored below the `/libs/wcm/core/resources/languages` node. Each child node represents a language or a language-country:
 

@@ -174,7 +174,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## Assets HTTP API and Content Fragments {#assets-http-api-content-fragments}
 
-Content Fragments are used for headless delivery, and a Content Fragment is a special type of asset. They are used to access structured data, such as texts, numbers, dates, amongst others.
+Content Fragments are used for headless delivery, and a Content Fragment is a special type of asset. They are used to access structured data, such as texts, numbers, dates, among others.
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.

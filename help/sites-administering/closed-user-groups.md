@@ -75,7 +75,7 @@ Permission evaluation for CUG policies and the interaction with the default or a
 The following characteristics apply for the permission evaluation associated with the authorization model designed to handle and evaluate CUG policies:
 
 * It only handles read permissions for regular nodes and properties, but not reading access control content
-* It does not handle write permissions nor any kind of permissions required for modification of protected JCR content (access control, node type information, versioning, locking, or user management amongst others); These permissions are not affected by a CUG policy and will not be evaluated by the associated authorization model. Whether or not these permissions are granted depends on the other models configured in the security setup.
+* It does not handle write permissions nor any kind of permissions required for modification of protected JCR content (access control, node type information, versioning, locking, or user management among others); These permissions are not affected by a CUG policy and will not be evaluated by the associated authorization model. Whether or not these permissions are granted depends on the other models configured in the security setup.
 
 The effect of a single CUG policy upon permission evaluation can be summarized as follows:
 
