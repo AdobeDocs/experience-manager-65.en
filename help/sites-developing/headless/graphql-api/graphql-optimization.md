@@ -38,7 +38,7 @@ See:
 
 Customers using GraphQL *must* install the Experience Manager Content Fragment with GraphQL Index Package. Doing so lets you add the required index definition based on the features they actually use. Failure to install this package may result in slow or failed GraphQL queries.
 
-See the [Release Notes - Install GraphQL Index Package for Experience Manager Content Fragments](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) for the version appropriate to your Service Pack.
+See the Release Notes for the version appropriate to your Service Pack. For example, for the latest Service Pack, see [Install GraphQL Index Package for Experience Manager Content Fragments](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) .
 
 >[!NOTE]
 >
