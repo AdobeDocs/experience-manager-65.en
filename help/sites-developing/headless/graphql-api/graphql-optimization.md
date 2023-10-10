@@ -83,7 +83,10 @@ See:
 
 When using persisted GraphQL queries with a CDN, it is recommended to set appropriate HTTP cache control headers. 
 
-Each persisted query can have its own specific set of cache control headers. The headers can be set over the [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md). 
+Each persisted query can have its own specific set of cache control headers. The headers can be set over the [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+
+<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+-->
 
 **Further Reference**
 
