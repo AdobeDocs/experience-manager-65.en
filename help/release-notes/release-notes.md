@@ -458,7 +458,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
 * After upgrading to AEM Forms 6.5.18.0 JBoss Turnkey full installer environment on Windows Server 2022, when compiling Output client application code using Java 11, the following compilation error may occur:
- `error: error reading <AEM_Forms_Installation_dir>\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
+`error: error reading <AEM_Forms_Installation_dir>\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
 Illegal character in path at index 70: file:/<AEM_Forms_Installation_dir>/sdk/client-libs/common/${clover.jar.name}
 1 error
 `
