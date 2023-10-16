@@ -1,6 +1,6 @@
 ---
 title: Creating Translation Projects for Content Fragments
-description: Learn how to translate content fragments.
+description: Learn how to translate content fragments in Adobe Experience Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
