@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Adobe Experience Manager
 
-description: Learn about troubleshooting issues with AEM.
+description: Learn about troubleshooting some issues that might arise with Adobe Experience Manager.
 
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino

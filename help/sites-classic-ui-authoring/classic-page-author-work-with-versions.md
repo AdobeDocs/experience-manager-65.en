@@ -1,6 +1,6 @@
 ---
 title: Working with page versions
-description: Learn about versioning and how you can create a "snapshot" of a page at a specific point in time.
+description: Learn about versioning and how you can create a snapshot of a page at a specific point in time.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring

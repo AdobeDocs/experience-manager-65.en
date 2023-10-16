@@ -1,7 +1,7 @@
 ---
 title: Target offers
 seo-title: Target offers
-description: Create target offers
+description: Create target offers in Adobe Experience Manager for use in Adobe Target.
 seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
