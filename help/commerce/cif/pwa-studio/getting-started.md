@@ -3,7 +3,6 @@ title: Getting started with AEM Extension for PWA Studio
 description: Learn how to deploy an AEM headless Content and Commerce project with PWA Studio.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
 ---
 # Getting started with AEM Extension for PWA Studio {#getting-started-pwa}

@@ -1,8 +1,6 @@
 ---
 title: Troubleshooting AEM
-
-description: Troubleshooting AEM
-
+description: Troubleshooting Adobe Experience Manager 6.5 performance and issues.
 exl-id: f7a220bf-0b0c-4d16-824d-dad7d86c01c9
 ---
 # Troubleshooting AEM {#troubleshooting-aem}

@@ -1,6 +1,6 @@
 ---
 title: Managing Translation Projects
-description: Learn how to manage translation projects in AEM.
+description: Learn how to manage translation projects in Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 ---
 # Managing Translation Projects{#managing-translation-projects}

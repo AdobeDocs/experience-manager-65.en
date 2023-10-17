@@ -1,13 +1,6 @@
 ---
 title: Publishing content pages
-description: Learn how to publish content pages.
-uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
-docset: aem65
+description: Learn how to publish content pages in Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 ---
 # Publishing Pages {#publishing-pages}

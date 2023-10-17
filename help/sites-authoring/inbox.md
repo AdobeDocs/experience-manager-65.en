@@ -1,12 +1,6 @@
 ---
 title: Your Inbox to manage tasks
-description: Managing your tasks with the inbox.
-uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
+description: Managing your tasks with the inbox in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 ---
 # Your Inbox{#your-inbox}
