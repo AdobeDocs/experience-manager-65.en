@@ -1,6 +1,6 @@
 ---
 title: Video renditions
-description: Video renditions
+description: Learn how to use Adobe Experience Manager Assets to generate video renditions for video assets of various formats including OGG, FLV, and so on.
 uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -35,6 +35,6 @@ After you configure the proxy server and create video profiles, you can include 
 
 >[!NOTE]
 >
->Audio playback does not work for OGG and WAV files on Microsoft® Internet Explorer 11. An error `Invalid Source` displays up on the asset details page for assets with extension OGG or WAV.
+>Audio playback does not work for OGG and WAV files on Microsoft&reg; Internet Explorer 11. An error `Invalid Source` displays up on the asset details page for assets with extension OGG or WAV.
 >
->On MS® Edge and iPad, OGG files do not play and raise an unsupported format error.
+>On MS&reg; Edge and iPad, OGG files do not play and raise an unsupported format error.
