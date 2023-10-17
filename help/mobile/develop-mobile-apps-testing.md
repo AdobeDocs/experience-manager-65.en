@@ -1,6 +1,6 @@
 ---
 title: Testing Mobile Apps
-description: Testing Mobile Apps
+description: Learn how to automate or manually test your mobile apps using various tools.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing

@@ -1,6 +1,6 @@
 ---
 title: Rendering and Delivery
-description: Rendering and Delivery
+description: Learn how to render Adobe Experience Manager content by way of Sling Default Servlets to render JSON and other formats.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -14,7 +14,7 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 
 Adobe Experience Manager (AEM) content can easily be rendered by way of [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) to render [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) and other formats.
 
-Those out-of-the-box renders typically walk the repository and return content as is.
+Those out-of-the-box renderings typically walk the repository and return content as is.
 
 AEM, by way of Sling, also supports developing and deploying custom sling renderers to take full control of the rendered schema and content.
 
@@ -36,7 +36,7 @@ Use **<RESOURCE.caas[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;].json** to request JSON
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>OPTIONAL</strong><br /> </p> <p>an export configuration found under /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> If omitted the default export configuration will be applied </p> </td>
+   <td><p><strong>OPTIONAL</strong><br /> </p> <p>an export configuration found under /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> If omitted the default export configuration is applied </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
