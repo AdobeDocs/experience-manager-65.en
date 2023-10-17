@@ -1,16 +1,11 @@
 ---
 title: Advanced Scoring and Badges
-seo-title: Advanced Scoring and Badges
-description: Setting up advanced scoring
-seo-description: Setting up advanced scoring
-uuid: 48caca57-43d3-4f2f-adf3-257428ba54d5
+description: Learn how to set up advanced scoring so you can allow awarding of badges to identify members as experts.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
-
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
 ---
@@ -18,13 +13,13 @@ exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
 
 ## Overview {#overview}
 
-Advanced scoring allows awarding of badges to identify members as experts. Advanced scoring assigns points based on the quantity *and* quality of content created by a member, whereas basic scoring assigns points simply based on the quantity of content created.
+Advanced scoring allows awarding of badges to identify members as experts. Advanced scoring assigns points based on the quantity *and* quality of content created by a member, whereas basic scoring assigns points based on the quantity of content created.
 
 This difference is due to the scoring engine used to calculate the scores. The basic scoring engine applies simple math. The advanced scoring engine is an adaptive algorithm that rewards active members who contribute valued and relevant content, deduced through natural language processing (NLP) of a topic.
 
-In addition to content relevance, the scoring algorithms take into account member activities, such as voting and percentage of answers. While basic scoring includes them quantitatively, advanced scoring uses them algorithmically.
+In addition to content relevance, the scoring algorithms account for member activities, such as voting and percentage of answers. While basic scoring includes them quantitatively, advanced scoring uses them algorithmically.
 
-Therefore, the advanced scoring engine requires enough data to make analysis meaningful. The achievement threshold for becoming an expert is constantly re-evaluated as the algorithm continually adjusts to the volume and quality of content created. There is also a concept of *decay* of a member's older posts. If an expert member stops participating in the subject matter where they gained expert status, at some pre-determined point (see [scoring engine configuration](#configurable-scoring-engine)) they could lose their status as an expert.
+Therefore, the advanced scoring engine requires enough data to make analysis meaningful. The achievement threshold for becoming an expert is constantly reevaluated as the algorithm continually adjusts to the volume and quality of content created. There is also a concept of *decay* of a member's older posts. If an expert member stops participating in the subject matter where they gained expert status, at some pre-determined point (see [scoring engine configuration](#configurable-scoring-engine)) they could lose their status as an expert.
 
 Setting up advanced scoring is virtually the same as basic scoring:
 
@@ -46,7 +41,7 @@ The differences in setting up the scoring and badging rules are:
 
     * `badgingType` set to `advanced`
     * `badgingLevels` set to **number of expert levels to award**
-    * Requires `badgingPaths` array of badges instead of thresholds array mapping points to badges.
+    * Requires `badgingPaths` array of badges instead of thresholds array-mapping points to badges.
 
 >[!NOTE]
 >
@@ -67,7 +62,7 @@ The advanced scoring engine provides an OSGi configuration with parameters that 
 
 * **Scoring range**
   
-  The range for advanced scores is defined by this value (maximum possible score) and 0 (lowest possible score).
+  The range for advanced scores is defined by this value (maximum score) and 0 (lowest possible score).
   
   Default value is 100 so that scoring range is 0-100.
 
@@ -92,7 +87,7 @@ If a member earned an expert badge on a topic which is no longer active, there i
 
 ### scoringType {#scoringtype}
 
-A scoring rule is a set of scoring sub-rules, each of which declares the `scoringType`.
+A scoring rule is a set of scoring subrules, each of which declares the `scoringType`.
 
 To invoke the advanced scoring engine, the `scoringType`should be set to `advanced`.
 
@@ -110,7 +105,7 @@ The advanced scoring algorithm uses the list of words contained in the stopwords
 
 There is no expectation that this file would be modified.
 
-If the stopwords file is missing, the advanced scoring engine will throw an error.
+If the stopwords file is missing, the advanced scoring engine gives an error.
 
 ## Advanced Badging Rules {#advanced-badging-rules}
 
@@ -130,7 +125,7 @@ Instead of associating points with a badge image, it is only necessary to identi
   <tr>
    <td>badgingPath</td>
    <td>String[]</td>
-   <td><em>(Required)</em> A multi-value string of badge images up to the number of badgingLevels. The badge image paths must be ordered so the first is awarded to the highest expert. If there are less badges than indicated by badgingLevels, the last badge in the array fills out the rest of the array. Example entry:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Required)</em> A multi-value string of badge images up to the number of badgingLevels. The badge image paths must be ordered so the first is awarded to the highest expert. If there are fewer badges than indicated by badgingLevels, the last badge in the array fills out the rest of the array. Example entry:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -145,7 +140,7 @@ Instead of associating points with a badge image, it is only necessary to identi
   <tr>
    <td>scoringRules</td>
    <td>String[]</td>
-   <td><em>(Optional)</em> A multi-value string to restrict the badging rule to scoring events identified by the scoring rule(s) listed.<br /> Example entry:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Default is no restriction.</td>
+   <td><em>(Optional)</em> A multi-value string to restrict the badging rule to scoring events identified by one or more scoring rules listed.<br /> Example entry:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Default is no restriction.</td>
   </tr>
  </tbody>
 </table>
@@ -200,7 +195,7 @@ Included in the beta release are two advanced scoring rules for the [forum funct
 * Both `rules` and `sub-rules` nodes are of type `cq:Page`.
 * `subRules` is an attribute of type String`[]` on the rule's `jcr:content` node.
 * `sub-rules` may be shared among various scoring rules.
-* `rules` should be located in a repository location with read permission for everyone.
+* `rules` should be in a repository location with read permission for everyone.
 * Rule names must be unique regardless of location.
 
 ### Included Badging Rules {#included-badging-rules}
@@ -213,5 +208,5 @@ Included in the release are two advanced badging rules that correspond to the [a
 **Notes:**
 
 * `rules` nodes are of type cq:Page.
-* `rules` should be located in a repository location with read permission for everyone.
+* `rules` should be in a repository location with read permission for everyone.
 * Rule names must be unique regardless of location.
