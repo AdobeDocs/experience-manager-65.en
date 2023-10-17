@@ -1,11 +1,6 @@
 ---
 title: Selecting your user interface in AEM
-description: Configure which interface you use to work in AEM.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Configure which interface you use to work in Adobe Experience Manager 6.5.
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 ---
 # Selecting your UI{#selecting-your-ui}

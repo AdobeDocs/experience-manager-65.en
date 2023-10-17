@@ -1,12 +1,6 @@
 ---
 title: Configuring default components in Design Mode
-description: Configuring Components in Design Mode
-uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
+description: Configuring Adobe Experience Manager Components in Design Mode.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 ---
 # Configuring default components in Design Mode{#configuring-components-in-design-mode}

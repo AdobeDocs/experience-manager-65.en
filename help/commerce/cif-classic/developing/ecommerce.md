@@ -1,14 +1,6 @@
 ---
 title: eCommerce integration layer with an API
-
-description: The integration framework includes an integration layer with an API.
-
-uuid: 48e01bbb-8f9e-489c-bbe4-24563e84ff35
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: platform
-docset: aem65
+description: The integration framework allows you to pull product data into AEM and build AEM components for commerce capabilities.
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
 ---
 # eCommerce{#ecommerce}

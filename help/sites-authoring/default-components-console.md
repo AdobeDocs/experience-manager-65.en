@@ -1,15 +1,6 @@
 ---
 title: Components Console
-seo-title: Components Console
-description: Components Console
-seo-description: null
-uuid: a4e34d81-7875-4e26-8b48-4473e2905c37
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
-docset: aem65
+description: The Components console lets you browse through all components defined for your instance and view key information for each component.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 ---
 # Components Console{#components-console}
