@@ -1,14 +1,10 @@
 ---
 title: Ideation Feature
-seo-title: Ideation Feature
-description: Adding and configuring the Ideation feature
-seo-description: Adding and configuring the Ideation feature
-uuid: 38468290-6d00-4ee4-91d8-7c2e8ae32712
+description: Learn how to add and configure the Ideation feature that lets community members create, view, follow, vote, and comment on ideas shared with the community.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
 ---
@@ -16,7 +12,7 @@ exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
 
 ## Introduction {#introduction}
 
-The ideation feature provides an area for signed-in site visitors (community members) in the publish environment to:
+The ideation feature provides an area for signed-in site visitors (community members) in the Publish environment to:
 
 * Create ideas to share with the community.
 * View and comment on ideas.
@@ -28,23 +24,23 @@ This section of the documentation describes:
 * Adding the ideation feature to an AEM site.
 * Configuration settings for the Ideation component.
 
-### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
+### Adding an Ideation to a Page {#adding-a-ideation-to-a-page}
 
 To add a `Ideation` component to a page in author mode, use the component browser to locate
 
 * `Communities / Ideation`
 
-and drag it into place on a page where the idea should appear.
+And drag it into place on a page where the idea should appear.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/ideation.md#essentials-for-client-side) are included, this is how the `Ideation` component will appear:
+When the [required client-side libraries](/help/communities/ideation.md#essentials-for-client-side) are included, this is how the `Ideation` component appears:
 
 ![ideation](assets/ideation.png)
 
 ### Configuring an Ideation {#configuring-an-ideation}
 
-Select the placed `Ideation` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Ideation` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure-new](assets/configure-new.png) 
 
@@ -66,7 +62,7 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 * The display title for the idea. Default is `Ideation`.
 * **Ideation Description**
 
-  A description to display as a sub-title for the idea. Default is no description.
+  A description to display as a subtitle for the idea. Default is no description.
 
 * **Topics Per Page**
 
@@ -74,7 +70,7 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Moderated**
 
-  If checked, posting of ideas and comments must be approved before they will appear on a publish site. Default is unchecked.
+  If checked, posting of ideas and comments must be approved before they can appear on a publish site. Default is unchecked.
 
 * **Closed**
 
@@ -86,7 +82,7 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Allow Tagging**
 
-  If checked, allow members to add tag labels to their post (see **[!UICONTROL Tag field]** tab). Default is unchecked.
+  If checked, allow members to add tag labels to their posts (see **[!UICONTROL Tag field]** tab). Default is unchecked.
 
 * **Allow File Uploads**
 
@@ -94,11 +90,11 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Max File Size**
 
-  Relevant only if `Allow File Uploads` is checked. This field will limit the size (in bytes) of an uploaded file. Default is 104857600 (10 Mb).
+  Relevant only if `Allow File Uploads` is checked. This field limits the size (in bytes) of an uploaded file. Default is 104857600 (10 Mb).
 
 * **Allowed File Types**
 
-  Relevant only if `Allow File Uploads` is checked. A comma separated list of file extensions with the "dot" separater. For example : .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed to be uploaded. Default is none specified such that all file types are allowed.
+  Relevant only if `Allow File Uploads` is checked. A comma-separated list of file extensions with the "dot" separator. For example : .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified cannot be uploaded. Default is none specified such that all file types are allowed.
 
 * **Max Attach Image File Size**
 
@@ -114,7 +110,7 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Allow Users to Delete Comments and Topics**
 
-  If checked, allow members to delete the comments and ideas they posted. Default is unchecked.
+  If checked, allow members to delete the comments and ideas that they posted. Default is unchecked.
 
 * **Allow Following**
 
@@ -136,7 +132,7 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Allow Featured Content**
 
-  If checked, the idea is able to be identified as [featured content](/help/communities/featured.md). Default is unchecked.
+  If checked, the idea is identifiable as [featured content](/help/communities/featured.md). Default is unchecked.
 
 * **Enable Mention**
 * **Max Mentions**
@@ -148,7 +144,7 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted ideas and
 
 * **Deny Posts**
 
-  If checked, trusted member moderators will be allowed to deny posts and prevent the post from appearing on the public forum. Default is unchecked.
+  If checked, trusted member moderators can deny posts and prevent the post from appearing on the public forum. Default is unchecked.
 
 * **Close/Reopen Topics**
 
@@ -180,7 +176,7 @@ Under the **[!UICONTROL Tag field]** tab, the tags which may be applied, if allo
 
 * **Allowed Namespaces**
 
-  Relevant if `Allow Tagging` is checked under the **[!UICONTROL Settings]** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
+  Relevant if `Allow Tagging` is checked under the **[!UICONTROL Settings]** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) and "Include All Tags". Default is none checked, which means all namespaces are allowed.
 
 * **Suggestion Limit**
 
@@ -208,7 +204,7 @@ Under the **[!UICONTROL Sort Settings]** tab, specify how the posted comments ar
 
 As with all Communities features, if not signed in, a site visitor may only read ideas and view others opinions (through comments and voting/liking).
 
-Once signed in, a member may create a new idea.
+Once signed in, a member may create an idea.
 
 ![create-new-idea](assets/create-new-idea.png)
 
@@ -218,7 +214,7 @@ By selecting the `Save as Draft` button, a draft is saved.
 
 ![save-idea](assets/save-idea.png)
 
-When viewing saved drafts in the `My Drafts` tab, select `Read More` to re-enter edit mode:
+When viewing saved drafts in the `My Drafts` tab, select `Read More` to reenter edit mode:
 
 ![edit-idea](assets/edit-idea.png)
 

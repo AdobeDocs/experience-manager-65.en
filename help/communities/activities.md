@@ -1,14 +1,10 @@
 ---
 title: Activity Streams Feature
-seo-title: Activity Streams Feature
-description: Activities of a signed-in community member
-seo-description: Activities of a signed-in community member
-uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
+description: Learn how the activities of a signed in community member are collected into a stream that you can filter and display through the Activity Streams component.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
 ---
@@ -31,17 +27,17 @@ If it is desired to add an `Activity Streams` component to a page in author mode
 
 * `Communities / Activity Streams`
 
-and drag it into place on a page where activity streams should appear.
+And drag it into place on a page where activity streams should appear.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear :
+When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component appears:
 
 ![activity-streams](assets/activity-component.png)
 
 ### Configuring Activity Streams {#configuring-activity-streams}
 
-Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Activity Streams` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure](assets/configure-new.png)
 
@@ -59,19 +55,19 @@ Under the **User Activities** tab, specify which activities to display :
 
 * **Display User Activities View**
   
-  If checked, the activities page will include a tab which filters activities based on those generated within the community by the current member. Default is checked.
+  If checked, the activities page includes a tab which filters activities based on those generated within the community by the current member. Default is checked.
 
 * **Display All Activities View**
   
-  If checked, the activities page will include a tab which includes all activities generated within the community to which the current member has access. Default is checked.
+  If checked, the activities page includes a tab which includes all activities generated within the community to which the current member has access. Default is checked.
 
 * **Display Following View**
   
-  If checked, the activities page will include a tab which filters activities based on those the current member is following. Default is checked.
+  If checked, the activities page includes a tab which filters activities based on those the current member is following. Default is checked.
 
 ### Following View {#following-view}
 
-Components must be configured to enable following. Features that allow following are [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md), and [comments](/help/communities/comments.md).
+Components must be configured to enable following. Features that allow following are [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [file library](/help/communities/file-library.md), and [comments](/help/communities/comments.md).
 
 ![following-view](assets/following-activities.png)
 
@@ -79,7 +75,7 @@ The **Follow** button provides a means to follow entries as activities, [notific
 
 If any method of following is selected, the text of the button changes to **Following**. For convenience, it is possible to select `Unfollow All` to toggle off all methods.
 
-The **Follow** button will appear:
+The **Follow** button appears:
 
 * On viewing another member's profile.
 * On a main feature page, such as forums, QnA, and blogs.
