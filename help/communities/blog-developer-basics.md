@@ -1,14 +1,10 @@
 ---
 title: Blog Essentials
-seo-title: Blog Essentials
-description: Blog overview
-seo-description: Blog overview
-uuid: 714cf70c-76a0-4be6-9163-a31ac6bd1643
+description: Learn how to add the Blog feature to a page so that signed-in community members can post blog articles.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 ---
@@ -26,7 +22,7 @@ This page provides the essential information for working with the blog feature.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-The blog feature is comprised of two main components that are available by adding the [Blog function](/help/communities/functions.md#blog-function) or by adding the components to a page in author edit mode.
+The blog feature is composed of two main components that are available by adding the [Blog function](/help/communities/functions.md#blog-function) or by adding the components to a page in author edit mode.
 
 ### Blog {#blog}
 
@@ -73,22 +69,22 @@ The blog feature is comprised of two main components that are available by addin
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Blog API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [Blog API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Blog Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Blog Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](/help/communities/server-customize.md)
 
 ### Blog Function {#blog-function}
 
-A community site structure that includes the [Blog function](/help/communities/functions.md#blog-function) will have configured `Blog` and `Blog Sidebar` components. The Blog function supports identifying a [privileged member user group](/help/communities/users.md#privileged-members-group).
+A community site structure that includes the [Blog function](/help/communities/functions.md#blog-function) has `Blog` and `Blog Sidebar` components configured. The Blog function supports identifying a [privileged member user group](/help/communities/users.md#privileged-members-group).
 
 ### Accessing Blog Entries (UGC) {#accessing-blog-entries-ugc}
 
 UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](/help/communities/moderate-ugc.md).
 
-As of AEM 6.1 Communities, use of a [common store](/help/communities/working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).
+As of AEM 6.1 Communities, use of a [common store](/help/communities/working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP, or JSRP).
 
 **The location and format of the UGC in the repository is subject to change without warning**.
 
@@ -101,7 +97,7 @@ See :
 
 ## Primary Publisher {#primary-publisher}
 
-When the deployment is a publish farm, it is necessary to identify a primary publisher that will poll for articles scheduled to be published.
+When the deployment is a publish farm, it is necessary to identify a primary publisher that polls for articles scheduled to be published.
 
 See [Primary Publisher](/help/communities/deploy-communities.md#primary-publisher) for more details.
 
@@ -113,6 +109,6 @@ The AEM platform blocks links from other websites to prevent XSS attacks as desc
 
 As of AEM 6.2, the modifications previously required to be made manually are included in the default AntiSamy config file.
 
-Rich media is embeded in a blog article by selecting the `Embed Media from External Sites` icon :
+Rich media is embedded in a blog article by selecting the `Embed Media from External Sites` icon :
 
 ![media](assets/media-icon.png)

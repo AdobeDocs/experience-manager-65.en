@@ -31,7 +31,7 @@ A workflow step component defines the appearance and behavior of the step when c
 * The edit dialog for configuring component properties.
 * The service or script that is executed at runtime.
 
-As with [all components](/help/sites-developing/components.md), workflow step components inherit from the component that is specifed for the `sling:resourceSuperType` property. The following diagram shows the hierarchy of `cq:component` nodes that form the basis of all workflow step components. The diagram also includes the **Process Step**, **Participant Step**, and **Dynamic Participant Step** components, as these are the most common (and basic) starting points for developing custom step components.
+As with [all components](/help/sites-developing/components.md), workflow step components inherit from the component that is specified for the `sling:resourceSuperType` property. The following diagram shows the hierarchy of `cq:component` nodes that form the basis of all workflow step components. The diagram also includes the **Process Step**, **Participant Step**, and **Dynamic Participant Step** components, as these are the most common (and basic) starting points for developing custom step components.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 

@@ -1,19 +1,15 @@
 ---
 title: File Library Essentials
-seo-title: File Library Essentials
-description: Working with the file library feature
-seo-description: Working with the file library feature
-uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
+description: Learn about the fundamentals of working with the file Library feature in Adobe Experience Manager Communities.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
 ---
 # File Library Essentials {#file-library-essentials}
 
-This page provides the essential information for working with the file library feature.
+This page provides the fundamental information for working with the file library feature.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -50,9 +46,9 @@ This page provides the essential information for working with the file library f
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [File Library API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [File Library API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [File Library Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [File Library Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](server-customize.md)
 
@@ -65,7 +61,7 @@ A community site structure that includes the [File Library function](functions.m
 UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
-As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).
+As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP, or JSRP).
 
 **The location and format of the UGC in the repository is subject to change without warning**.
 

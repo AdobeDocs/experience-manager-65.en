@@ -1,6 +1,6 @@
 ---
 title: Forum Essentials
-description: Forum overview
+description: Learn about the fundamentals of working with the Forum feature in Adobe Experience Manager Communities.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
