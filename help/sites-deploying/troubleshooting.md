@@ -100,11 +100,11 @@ If this issue occurs, do the following:
 1. Open the `sling.properties` file under the `crx-quickstart/conf/` folder
 1. Locate the following line:
   
-   `org.osgi.framework.bootdelegation=sun.,com.sun.`
+   `org.osgi.framework.bootdelegation=sun.*,com.sun.*`
 
 1. Replace it with the following:
 
-   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
+   `org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*`
 
 1. Restart the instance.
 
