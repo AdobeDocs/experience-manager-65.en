@@ -44,7 +44,7 @@ There are a number of requirements before you begin translating your headless AE
 
 * Sandbox access for testing translating your content
 * Credentials to connect to your preferred translation service
-* Be a member of the `project-administrators` group in AEM
+* Be a member of the `projects-administrators` group in AEM
 
 ## Structure is Key {#content-structure}
 

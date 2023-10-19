@@ -1,12 +1,6 @@
 ---
 title: AEM FAQs
-seo-title: AEM 6.4 frequently asked questions
 description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
-seo-description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
-uuid: 17d34923-f1ce-463b-8e9d-a713edcce51b
-contentOwner: jsyal
-discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
-docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
 ---
 # AEM FAQs {#aem-faqs}
@@ -36,7 +30,7 @@ View the `Initiator` column to determine what the initiator of a request was. It
 
 To create language copy feature, content-authors need permissions at `/content/projects` location.
 
-If one requires the authors to manage projects as well, then the workaround is to add the author to `project-administrators` group.
+If one requires the authors to manage projects as well, then the workaround is to add the author to `projects-administrators` group.
 
 #### How to change the format while creating Language Copy for a project? {#how-to-change-the-format-while-creating-language-copy-for-a-project}
 
