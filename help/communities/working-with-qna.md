@@ -1,14 +1,10 @@
 ---
 title: Q&A Forum Feature
-seo-title: Q&A Forum Feature
-description: Adding the QnA forum feature to a page
-seo-description: Adding the QnA forum feature to a page
-uuid: e0d95009-0d04-4fa7-8d05-5948c4e37f08
+description: Learn how to add the QnA forum feature to a page that lets signed-in community members ask and answer questions.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
 ---
@@ -18,7 +14,7 @@ exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
 
 The QnA (questions and answers) forum feature provides an area for community members to ask and answer questions. It allows members to:
 
-* Create new questions
+* Create questions
 * Add inline images (with support for drag-and-drop)
 * View and answer questions
 * Search for a question
@@ -43,7 +39,7 @@ When the [required client-side libraries](/help/communities/qna-essentials.md#es
 
 ### Configuring QnA {#configuring-qna}
 
-Select the placed `QnA` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `QnA` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure](assets/configure-new.png) 
 
@@ -67,7 +63,7 @@ Under the **Settings** tab, specify settings for topics (questions) and replies 
 
 * **Max Thumbnail Size**
 
-  Maximum size (in pixels) of the thumbnail image for inline imag. The default value is 800 x 800.
+  Maximum size (in pixels) of the thumbnail image for inline image. The default value is 800 x 800.
 
 * **Topics Per Page**
 
@@ -87,7 +83,7 @@ Under the **Settings** tab, specify settings for topics (questions) and replies 
 
 * **Allow Tagging**
 
-  If checked, allow members to add tag labels to their post (see **Tag field** tab). Default is deselected.
+  If checked, allow members to add tag labels to their posts (see **Tag field** tab). Default is deselected.
 
 * **Allow File Uploads**
 
@@ -111,7 +107,7 @@ Under the **Settings** tab, specify settings for topics (questions) and replies 
 
 * **Allowed File Types**
 
-  Relevant only if `Allow File Uploads` is checked. A comma-separated list of file extensions with the "dot" separator. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified are not allowed to be uploaded. Default is none specified such that** **all file types are allowed.
+  Relevant only if `Allow File Uploads` is checked. A comma-separated list of file extensions with the "dot" separator. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified cannot be uploaded. Default is none specified such that **all** file types are allowed.
 
 * **Max Attach Image File Size**
 
@@ -127,7 +123,7 @@ Under the **Settings** tab, specify settings for topics (questions) and replies 
 
 * **Allow Users to Delete Comments and Topics**
 
-  If checked, allow members to delete the comments and questions they posted. Default is deselected.
+  If checked, allow members to delete the comments and questions that they posted. Default is deselected.
 
 * **Allow Privileged Members**
 
@@ -146,7 +142,7 @@ Under the **Settings** tab, specify settings for topics (questions) and replies 
 
 * **Allow Featured Content**
 
-  if checked, the idea is able to be identified as [featured content](/help/communities/featured.md). Default is deselected.
+  If checked, the idea is identifiable as [featured content](/help/communities/featured.md). Default is deselected.
 
 * **Enable Mention**
 
@@ -166,7 +162,7 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
 * **Deny Answers**
 
-  If checked, trusted member moderators are allowed to deny posted answers and prevent the answer from appearing on the public Q&A forum. Default is deselected.
+  If checked, trusted member moderators are allowed to deny posted answers and prevent the answers from appearing on the public Q&A forum. Default is deselected.
 
 * **Close / Reopen Topics**
 

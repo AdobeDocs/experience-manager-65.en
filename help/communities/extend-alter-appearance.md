@@ -1,20 +1,16 @@
 ---
 title: Alter the Appearance (HBS)
-seo-title: Alter the Appearance
-description: Modify the HBS scripts
-seo-description: Modify the HBS scripts
-uuid: cff24505-dbb3-4312-9b1b-c1693b8d1c98
+description: Learn how to change the appearance (HBS) by editing the HBS scripts.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
 ---
 # Alter the Appearance (HBS) {#alter-the-appearance-hbs}
 
-Now that the components for the custom comment system in the application directory (/apps) are in place, with a resourceSuperType referencing the default comment system and the custom Model/View registered, it is possible to modify the implementation.
+Now that the components for the custom comment system in the application directory (/apps) are in place, with a resourceSuperType referencing the default comment system, and the custom Model/View registered, you can edit the implementation.
 
 For a simple demonstration, a visual feature, the avatar shown of the signed-in user who posts a comment, is removed.
 

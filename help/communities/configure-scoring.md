@@ -1,14 +1,10 @@
 ---
 title: Scoring and Badges Essentials
-seo-title: Scoring and Badges Essentials
-description: Scoring and Badges feature overview
-seo-description: Scoring and Badges feature overview
-uuid: 6e3af071-04e8-4dc1-977a-0da711b72961
+description: Learn about how the Adobe Experience Manager Communities scoring and badges feature identifies and rewards community members.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
 ---
@@ -62,19 +58,19 @@ For example, search for `this.isAssigned` in `/libs/social/forum/components/hbs/
 {{/each}}
 ```
 
-If true, isAssigned indicates that the badge was assigned for a role and the badge should be displayed as text.
+If true, `isAssigned` indicates that the badge was assigned for a role, and the badge should be displayed as text.
 
-If false, isAssigned indicates that the badge was awarded for an earned score and the badge should be displayed as an image.
+If false, `isAssigned` indicates that the badge was awarded for an earned score and the badge should be displayed as an image.
 
 Any changes to this behavior should be made in a customized script (either override or overlay). See [Client-side Customization](/help/communities/client-customize.md).
 
 ## Debug Log for Scoring and Badging {#debug-log-for-scoring-and-badging}
 
-To help debug scoring and badging, a custom log file can be setup. The contents of this log file may then be provided to customer support if problems are encountered with the feature.
+To help debug scoring and badging, a custom log file can be set up. The contents of this log file may then be provided to customer support if problems are encountered with the feature.
 
 For detailed instructions, visit [Create a Custom Log File](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
-To quickly setup a slinglog file :
+To quickly set up a slinglog file :
 
 1. Access the **Adobe Experience Manager Web Console Log Support**, for example
 
@@ -121,7 +117,7 @@ The descriptions for accessing scoring and badging data use JSRP, as the UGC is 
 
 **JSRP on author**: experimenting in the author environment results in UGC that is only visible from the author environment.
 
-**JSRP on publish**: similarly, if testing on the publish environment, it is necessary to access CRXDE Lite with administrative privileges on a publish instance. If the publish instance is running in [production mode](/help/sites-administering/production-ready.md) (nosamplecontent runmode), it is necessary to [enable CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP on publish**: similarly, if testing on the publish environment, it is necessary to access CRXDE Lite with administrative privileges on a publish instance. If the publish instance is running in [production mode](/help/sites-administering/production-ready.md) (nosamplecontent run mode), it is necessary to [enable CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 The base location of UGC on JSRP is `/content/usergenerated/asi/jcr/`.
 
@@ -138,7 +134,7 @@ The latest Javadocs for the installed feature pack are available to developers f
 
 ### Example Setup {#example-setup}
 
-The screen shots of repository data come from setting up scoring and badging for a forum on two different AEM sites :
+The screenshots of repository data come from setting up scoring and badging for a forum on two different AEM sites :
 
 1. An AEM site *with* a unique id (community site created using wizard) :
 

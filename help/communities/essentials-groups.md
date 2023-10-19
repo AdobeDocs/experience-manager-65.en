@@ -1,6 +1,6 @@
 ---
 title: Community Group Essentials
-description: Creating community sites dynamically
+description: Learn how authorized users can use the Community Groups feature to dynamically create a subcommunity within a community site.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -11,7 +11,7 @@ exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
 
 The community groups feature is the ability for a subcommunity to be dynamically created within a community site by authorized users from the publish and author environments.
 
-As of Communities [feature pack 1](deploy-communities.md#latestfeaturepack), it is possible for groups to be nested within other groups
+As of Communities [feature pack 1](deploy-communities.md#latestfeaturepack), it is possible for groups to be nested within other groups.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -79,9 +79,9 @@ As of Communities [feature pack 1](deploy-communities.md#latestfeaturepack), it 
 
 A community site structure that includes a [Groups function](functions.md#groups-function) supports the creation of new `community groups` from the publish and author environments. The community group created includes a `community groups member list` component that lists the members of the group.
 
-One or more [community group templates](tools-groups.md), which provide the design of the community group pages, may be configured for the Groups function when the function is being added to a [community site template](sites.md) or nested within a community group template.
+One or more [community group templates](tools-groups.md), which provide the design of the community group pages, can be configured for the Groups function. This is true when the function is being added to a [community site template](sites.md) or nested within a community group template.
 
-The inclusion of multiple community group templates results in a choice of design being presented to the authorized user at the time a new community group is created for the community site, as shown in the section on [community groups](creating-groups.md) for authors.
+The inclusion of multiple community group templates results in a choice. That is, the choice of design being presented to the authorized user at the time that a community group is created for the community site. See the section on [community groups](creating-groups.md) for authors.
 
 ### Nested Groups {#nested-groups}
 

@@ -1,6 +1,6 @@
 ---
 title: Deploying Communities
-description: How to deploy AEM Communities
+description: Learn how to deploy Communities and community features in Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
@@ -78,7 +78,7 @@ AEM 6.5 Communities GA includes Communities package. To know more about updates 
 
 Starting in AEM 6.4, updates to Communities are delivered as part of AEM Cumulative Fix Packs and Service Packs.
 
-For the latest updates to AEM 6.5, see [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+For the latest updates to AEM 6.5, see [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en).
 
 ### Version History {#version-history}
 
@@ -126,7 +126,7 @@ Further information on installing bundles is found on the [Web Console](/help/si
 
 For the SRP collection (MSRP or DSRP) to support advanced multilingual search (MLS), new Solr plug-ins are required in addition to a custom schema and Solr configuration. All required items are packaged into a downloadable zip file.
 
-The advanced MLS download (also known as 'phasetwo') is available from the Adobe repository :
+The advanced MLS download (also known as `phasetwo`) is available from the Adobe repository :
 
 * AEM-SOLR-MLS-phasetwo
   
@@ -296,13 +296,11 @@ To copy the key material from Author to all other instances, it is necessary to 
 
 #### Repository Replication {#repository-replication}
 
-Having the key material stored in the repository, as was the case for AEM 6.2 and earlier, can be preserved. Specify the following system property on the first startup of each AEM instance (which creates the initial repository) :
-
-* `-Dcom.adobe.granite.crypto.file.disable=true`
+Having the key material stored in the repository, as was the case for AEM 6.2 and earlier, can be preserved. Specify the system property `-Dcom.adobe.granite.crypto.file.disable=true` on the first startup of each AEM instance (which creates the initial repository).
 
 >[!NOTE]
 >
->It is important to verify that the [replication agent on Author](#replication-agents-on-author) is correctly configured.
+>Verify that the [replication agent on Author](#replication-agents-on-author) is correctly configured.
 
 With the key material stored in the repository, the manner for replicating the crypto key from author to other instances is as follows:
 
