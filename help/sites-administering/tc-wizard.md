@@ -10,7 +10,7 @@ The Language Copy wizard is a guided experience for creating and instrumenting m
 
 >[!NOTE]
 >
->The user needs to be a member of project-administrators group to create the Language Copy of a site.
+>The user needs to be a member of projects-administrators group to create the Language Copy of a site.
 
 To access this wizard:
 
