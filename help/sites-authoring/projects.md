@@ -1,14 +1,6 @@
 ---
 title: Projects
-seo-title: Projects
 description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects.
-seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
-uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: projects
-content-type: reference
-discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
-docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 ---
 
@@ -217,7 +209,7 @@ All projects support the following default roles to let you administer security 
 |---|---|---|---|
 |Observer|A user in this role can view project details, including the project status.|Read-only permissions on a project|`workflow-users` group|
 |Editor|A user in this role can upload and edit the contents of a project.|Read and write access on a project, associated metadata, and related assets<br>Privileges to upload a shot list, photo shoot, and review and approve assets<br>Write permission on `/etc/commerce`<br>Modify permission on a specific project|`workflow-users` group|
-|Owner|A user in this role can create a project, initiate work in a project, and  move approved assets to the production folder. All other tasks in the project can also be viewed and performed by the owner.|Write permission on `/etc/commerce`|`dam-users` group to be able to create a project<br>`project-administrators` group to be able to create a project and move assets|
+|Owner|A user in this role can create a project, initiate work in a project, and  move approved assets to the production folder. All other tasks in the project can also be viewed and performed by the owner.|Write permission on `/etc/commerce`|`dam-users` group to be able to create a project<br>`projects-administrators` group to be able to create a project and move assets|
 
 For creative projects, additional roles such as photographers are also provided. You can use these roles to derive custom roles for a specific project.
 
