@@ -1,6 +1,6 @@
 ---
 title: Storage Resource Provider Overview
-description: Common storage for Communities
+description: Learn how community content, known as user-generated content (UGC), is stored in a simple, common store provided by a storage resource provider (SRP).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -43,11 +43,11 @@ One implementation of JCR is the AEM repository, Oak.
 
 Both JCR and Oak are typically used to refer to the AEM repository.
 
-After developing site content in the private author environment, it must be copied to the public publish environment. This is often done through an operation called *[replication](deploy-communities.md#replication-agents-on-author)*. This happens under control of the author/developer/administrator.
+After developing site content in the private Author environment, it must be copied to the public publish environment. This is often done through an operation called *[replication](deploy-communities.md#replication-agents-on-author)*. This happens under control of the author/developer/administrator.
 
 For UGC, the content is entered by registered site visitors (community members) in the public publish environment. This happens randomly.
 
-For purposes of management and reporting, it is useful to have access to UGC from the private author environment. With SRP, access to UGC from author is more consistent and performant as reverse replication from publish to author is not necessary.
+For purposes of management and reporting, it is useful to have access to UGC from the private Author environment. With SRP, access to UGC from Author is more consistent and performant as reverse replication from Publish to Author is not necessary.
 
 ## About SRP {#about-srp}
 
@@ -85,9 +85,9 @@ JSRP is the default provider for accessing all UGC on a single AEM instance. It 
 
 See [JSRP - JCR Storage Resource Provider](jsrp.md).
 
-If there is JSRP, while UGC is stored in JCR, and accessible by way of both CRXDE Lite and JCR API, it is recommended that you never use JCR API to do so, or else future changes may affect custom code.
+If there is JSRP while UGC is stored in JCR, and it is accessible in CRXDE Lite and JCR API, Adobe recommends that you never use JCR API to do so. If you do, future changes may affect custom code.
 
-Further, the repository for the author and publish environments is not shared. While a cluster of publish instances results in a shared publish repository, UGC entered on publish will not be visible on author, hence no ability to manage UGC from author. UGC is only persisted in the AEM repository (JCR) of the instance on which it was entered.
+Further, the repository for the Author and Publish environments is not shared. While a cluster of publish instances results in a shared publish repository, UGC entered on Publish is not visible on Author, hence no ability to manage UGC from author. UGC is only persisted in the AEM repository (JCR) of the instance on which it was entered.
 
 JSRP uses the Oak indexes for queries.
 
@@ -98,13 +98,13 @@ Shadow nodes, which mimic the path to UGC, exist in the local repository to serv
 1. [Access Control (ACLs](#for-access-control-acls)
 1. [Non-Existing Resources (NERs)](#for-non-existing-resources-ners)
 
-Regardless of SRP implementation, the actual UGC will *not *be visible at the same location as the shadow node.
+Regardless of SRP implementation, the actual UGC is *not* visible at the same location as the shadow node.
 
 ### For Access Control (ACLs) {#for-access-control-acls}
 
 Some SRP implementations, such as ASRP and MSRP, store community content in databases which provide no ACL verification. Shadow nodes provide a location in the local repository to which ACLs can be applied.
 
-Using the SRP API, all SRP options perform the same check of the shadow location prior to all CRUD operations.
+Using the SRP API, all SRP options perform the same check of the shadow location before all CRUD operations.
 
 The ACL check uses a utility method that returns a path suitable for checking the permissions applied to the resource's UGC.
 
