@@ -9,12 +9,12 @@ Learn how to define translation rules to identify content for translation.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless translation journey, [Configure translation connector](configure-connector.md) you learned how to install and configure your translation connector and should now:
+In the previous document of the AEM headless translation journey, [Configure translation integration](configure-connector.md) you learned how to install and configure your translation integration and should now:
 
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
+Now that your integration is set up, this article takes you through the next step of identifying what content you need to translate.
 
 ## Objective {#objective}
 
@@ -86,7 +86,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand what the translation rules do.
 * Be able to define your own translation rules.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content](translate-content.md) where you will learn how your connector and rules work together to translate headless content.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content](translate-content.md) where you will learn how your integration and rules work together to translate headless content.
 
 ## Additional Resources {#additional-resources}
 
