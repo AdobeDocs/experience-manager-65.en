@@ -2,7 +2,7 @@
 title: Creating a Closed User Group
 seo-title: Creating a Closed User Group
 description: Learn how to create a Closed User Group.
-seo-description: Learn how to create a Closed User Group.
+seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
 uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES

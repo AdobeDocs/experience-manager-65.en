@@ -1,7 +1,7 @@
 ---
 title: Upgrading Code and Customizations
 seo-title: Upgrading Code and Customizations
-description: Learn more about upgrading custom code in AEM.
+description: Learn more about upgrading code and customizations in AEM.
 seo-description: Learn more about upgrading custom code in AEM.
 uuid: dec11ef0-bf85-4e4e-80ac-dcb94cc3c256
 contentOwner: sarchiz
