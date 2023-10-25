@@ -1,6 +1,6 @@
 ---
 title: Running AEM in Production Ready Mode
-description: Learn how to run AEM in Production Ready Mode.
+description: Learn how to run AEM in the Production Ready Mode.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security

@@ -1,7 +1,7 @@
 ---
 title: Enabling CRXDE Lite in AEM
 seo-title: Enabling CRXDE Lite in AEM
-description: Learn how to enable CRXDE Lite in AEM.
+description: Learn how to enable CRXDE Lite in Adobe Experience Manager.
 seo-description: Learn how to enable CRXDE Lite in AEM.
 uuid: d7a3db67-6384-463b-9aa9-f08ecc6c99c6
 contentOwner: Guillaume Carlino
