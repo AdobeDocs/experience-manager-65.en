@@ -1,6 +1,6 @@
 ---
 title: Authoring for Adobe PhoneGap Enterprise in Adobe Experience Manager
-description: PhoneGap
+description: Learn about authoring for Adobe PhoneGap Enterprise using templates and components to add and edit pages, drag and drop components, and add media.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -22,9 +22,9 @@ Starting a new AEM Mobile app experience requires a cohesion of roles before it 
 
 ## Authoring PhoneGap Applications {#authoring-phonegap-applications}
 
-An ***AEM Author* (or *Marketer*)** is able to use the out-of-the-box templates and components to add and edit pages, drag and drop components and add media of all types from the DAM including images, videos, and text fragments (content fragments).
+An ***AEM Author* (or *Marketer*)** is able to use the out-of-the-box templates and components to add and edit pages. You can drag and drop components, and add media of all types from the DAM including images, videos, and text fragments (content fragments).
 
-See the following resources to get started:
+See the following resources:
 
 * [Authoring Mobile Applications](/help/mobile/phonegap-authoring-apps.md)
 * [Creating and Managing App Content](/help/mobile/phonegap-manage-app-content.md)

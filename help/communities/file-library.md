@@ -1,12 +1,10 @@
 ---
 title: File Library Feature
-description: The File Library feature lets signed-in site visitors upload, manage, and download files
-uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
+description: The File Library feature lets signed-in site visitors upload, manage, and download files.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
 ---

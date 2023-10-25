@@ -1,14 +1,10 @@
 ---
 title: Configure the Video component
-seo-title: Configure the Video component
-description: Learn how to configure the Video Component.
-seo-description: Learn how to configure the Video Component.
-uuid: f4755a13-08ea-4096-a951-46a590f8d766
+description: Learn how to use the Video component in Adobe Experience Manager to place a predefined, out-of-the-box video asset on your page.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
 ---
 # Configure the Video component {#configure-the-video-component}
@@ -19,7 +15,7 @@ For proper transcoding to occur, an administrator installs FFmpeg separately. Se
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components Embed Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends using the [Core Components Embed Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html) instead.
 
 >[!CAUTION]
 >
@@ -27,7 +23,7 @@ For proper transcoding to occur, an administrator installs FFmpeg separately. Se
 
 ## Configure video profiles {#configure-video-profiles}
 
-For use of HTML5 elements, define define video profiles. Those chosen here are used in order. To access, use [Design Mode](/help/sites-authoring/default-components-designmode.md) (Classic UI only) and select the **[!UICONTROL Profiles]** tab:
+For use of HTML5 elements, define video profiles. Those chosen here are used in order. To access, use [Design Mode](/help/sites-authoring/default-components-designmode.md) (Classic UI only) and select the **[!UICONTROL Profiles]** tab:
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
@@ -44,18 +40,18 @@ To install FFmpeg on **Windows**, follow these steps:
 1. Set the system environment variable `PATH` to <*your-ffmpeg-location*>`\bin`.
 1. Restart AEM.
 
-To install FFmpeg on **Mac OS X**, follow these steps:
+To install FFmpeg on **macOS X**, follow these steps:
 
 1. Install Xcode available at [developer.apple.com/xcode](https://developer.apple.com/xcode/).
-1. Install available at [XQuartz](https://www.xquartz.org) to get [X11](https://support.apple.com/en-us/HT201341).
+1. Install available at [XQuartz](https://www.xquartz.org) to get [X11](https://support.apple.com/en-us/100724).
 1. Install MacPorts available at [www.macports.org](https://www.macports.org/).
-1. In the console execute `sudo port install ffmpeg` command and follow the on-screen instructions. Ensure that the path of the `FFmpeg` executable is added to the `PATH` system variable.
+1. In the console, run `sudo port install ffmpeg` command and follow the on-screen instructions. Ensure that the path of the `FFmpeg` executable is added to the `PATH` system variable.
 
-To install FFmpeg on **Mac OS X 10.6**, using the pre-compiled version, follow these steps:
+To install FFmpeg on **macOS X 10.6**, using the pre-compiled version, follow these steps:
 
 1. Download the precompiled version.
 1. Unarchive it to the `/usr/local` directory.
-1. In the console, execute `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Change the paths as appropriate.
+1. In the console, run `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Change the path as appropriate.
 
 To **configure AEM**, follow these steps:
 

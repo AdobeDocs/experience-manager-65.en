@@ -1,6 +1,6 @@
 ---
 title: Migration to the Touch UI
-description: Migration to the Touch UI
+description: Learn about Adobe Experience Manager's migration to the Touch UI and how it affects you.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference

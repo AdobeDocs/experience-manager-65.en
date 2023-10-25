@@ -1,7 +1,7 @@
 ---
 title: Enabling Access to Classic UI
 seo-title: Enabling Access to Classic UI
-description: Lear how to enable access to Classic UI.
+description: Learn how to enable access to Classic UI in Adobe Experience Manager.
 seo-description: Lear how to enable access to Classic UI.
 uuid: 08698023-6e0d-4160-8c4d-d282e74182bc
 contentOwner: Chris Bohnert

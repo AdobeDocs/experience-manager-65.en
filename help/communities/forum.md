@@ -1,14 +1,10 @@
 ---
 title: Forum Feature
-seo-title: Forum Feature
-description: How to add and configure the forum feature
-seo-description: How to add and configure the forum feature
-uuid: e69be4e1-c9d5-4d51-8e7e-609e5460e378
+description: Learn how to add and configure the forum feature that provides an area for signed-in community members to create, view, follow, search, or reply to topics.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
 ---
@@ -16,9 +12,9 @@ exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
 
 ## Introduction {#introduction}
 
-The forum feature provides an area for signed-in site visitors (community members) in the publish environment to:
+The forum feature provides an area for signed-in site visitors (community members) in the Publish environment to:
 
-* Create new topics
+* Create topics
 * View and reply to topics
 * Follow a topic
 * Search a forum
@@ -36,17 +32,17 @@ To add a `Forum` component to a page in author mode, use the component browser t
 
 * `Communities / Forum`
 
-and drag it into place on a page where the forum should appear.
+And drag it into place on a page where the forum should appear.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum` component will appear:
+When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum` component appears:
 
 ![forum-component](assets/forum-component.png)
 
 ### Configuring a Forum {#configuring-a-forum}
 
-Select the placed `Forum` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Forum` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure-new](assets/configure-new.png) 
 
@@ -75,7 +71,7 @@ Under the **Settings** tab, specify settings for topics and replies:
 
 * **Moderated**
   
-  If checked, posting of topics and comments must be approved before they will appear on a publish site. Default is unchecked.
+  If checked, posting of topics and comments must be approved before they can appear on a publish site. Default is unchecked.
 
 * **Closed**
   
@@ -87,7 +83,7 @@ Under the **Settings** tab, specify settings for topics and replies:
 
 * **Allow Tagging**
   
-  If checked, allow members to add tag labels to their post (see **Tag field** tab). Default is unchecked.
+  If checked, allow members to add tag labels to their posts (see **Tag field** tab). Default is unchecked.
 
 * **Allow File Uploads**
   
@@ -103,7 +99,7 @@ Under the **Settings** tab, specify settings for topics and replies:
 
 * **Allow Featured Content**
   
-  If checked, the idea is able to be identified as [featured content](/help/communities/featured.md). Default is unchecked.
+  If checked, the idea is identifiable as [featured content](/help/communities/featured.md). Default is unchecked.
 
 * **Allow Email Subscriptions**
   
@@ -111,11 +107,11 @@ Under the **Settings** tab, specify settings for topics and replies:
 
 * **Max File Size**
   
-  Relevant only if `Allow File Uploads` is checked. This field will limit the size (in bytes) of an uploaded file. Default is 104857600 (10 Mb).
+  Relevant only if `Allow File Uploads` is checked. This field limits the size (in bytes) of an uploaded file. Default is 104857600 (10 Mb).
 
 * **Allowed File Types**
   
-  Relevant only if `Allow File Uploads` is checked. A comma separated list of file extensions with the "dot" separater. For example : .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed to be uploaded. Default is none specified such that all file types are allowed.
+  Relevant only if `Allow File Uploads` is checked. A comma-separated list of file extensions with the "dot" separator. For example : .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified cannot be uploaded. Default is none specified such that all file types are allowed.
 
 * **Max Attach Image File Size**
   Relevant only if Allow File Uploads is checked. Maximum number of bytes an uploaded image file may have. Default is 2097152 (2 Mb).
@@ -130,7 +126,7 @@ Under the **Settings** tab, specify settings for topics and replies:
 
 * **Allow Users to Delete Comments and Topics**
   
-  If checked, allow members to delete the comments and topics they posted. Default is unchecked.
+  If checked, allow members to delete the comments and topics that they posted. Default is unchecked.
 
 * **Show Breadcrumbs**
   
@@ -148,13 +144,13 @@ Under the **Settings** tab, specify settings for topics and replies:
   
   Add the privileged members allowed to create content.
 
-* **Block User Generated Content in Author Edit Mode**
+* **Block User-Generated Content in Author Edit Mode**
   
-  If enabled, blocks User Generated Content while editing in Author Mode.
+  If enabled, blocks User-Generated Content while editing in Author Mode.
 
 * **Enable Mention**
   
-  If enabled, allows registered community users to identify other registered members (using first name, last name, user name) and tag them using the common @user-name syntax. The tagged users recieve notifications about their mentions.
+  If enabled, allows registered community users to identify other registered members (using first name, last name, user name) and tag them using the common @user-name syntax. The tagged users receive notifications about their mentions.
 
 * **Max Mentions**
   
@@ -162,7 +158,7 @@ Under the **Settings** tab, specify settings for topics and replies:
 
 * **UI Mention Pattern**
   
-  Specify the alowed pattern string to tag (@mention) the registered user in a post. For example `~{{familyName}}{{givenName}}`.
+  Specify the allowed pattern string to tag (@mention) the registered user in a post. For example, `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >
@@ -170,11 +166,11 @@ Under the **Settings** tab, specify settings for topics and replies:
 
 #### User Moderation tab {#user-moderation-tab}
 
-Under the **User Moderation** tab, specify how the posted topics and replies (user generated content) are managed. For more information, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
+Under the **User Moderation** tab, specify how the posted topics and replies (user-generated content) are managed. For more information, see [Moderating User-Generated Content](/help/communities/moderate-ugc.md).
 
 * **Deny Posts**
   
-  If checked, trusted member moderators will be allowed to deny posts and prevent the post from appearing on the public forum. Default is unchecked.
+  If checked, trusted member moderators are allowed to deny posts and prevent the post from appearing on the public forum. Default is unchecked.
 
 * **Close / Reopen Topics**
   
@@ -182,7 +178,7 @@ Under the **User Moderation** tab, specify how the posted topics and replies (us
 
 * **Move Topics**
   
-  If checked, allow publish-side moderators to move topics. Default is checked.
+  If checked, allow moderators on the publish side to move topics. Default is checked.
 
 * **Flag Posts**
   
@@ -210,7 +206,7 @@ Under the **Tag field** tab, the tags which may be applied, if allowed under the
 
 * **Allowed Namespaces**
   
-  Relevant if `Allow Tagging` is checked under the **Settings** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
+  Relevant if `Allow Tagging` is checked under the **Settings** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) and "Include All Tags". Default is none checked, which means all namespaces are allowed.
 
 * **Suggestion Limit**
   
@@ -246,8 +242,8 @@ Under the **Sort Settings** tab, specify how the posted comments are sorted when
 
 More information may be found on the [Forum Essentials](/help/communities/essentials-forum.md) page for developers.
 
-For moderation of posted topics and comments, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
+For moderation of posted topics and comments, see [Moderating User-Generated Content](/help/communities/moderate-ugc.md).
 
-For tagging posted topics and comments, see [Tagging User Generated Content](/help/communities/tag-ugc.md).
+For tagging posted topics and comments, see [Tagging User-Generated Content](/help/communities/tag-ugc.md).
 
-For translation of posted topics and comments, see [Translating User Generated Content](/help/communities/translate-ugc.md).
+For translation of posted topics and comments, see [Translating User-Generated Content](/help/communities/translate-ugc.md).

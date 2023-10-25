@@ -1,6 +1,6 @@
 ---
 title: Initial Sandbox Content
-description: Create content
+description: Learn how to use the Page template in the Sandbox to create a main page for an English version of a website, and a child page off the main page.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -17,7 +17,7 @@ In this section, you create the following pages which all use the [page template
 
   * SCF Play - Child of the main page on which to play.
 
-Although this tutorial does not delve into [language copies](../../help/sites-administering/tc-prep.md), it is designed so the root page may implement detection of the preferred language for the user through the HTML header, and redirect to the appropriate main page for the language. The convention is to use the two-letter country code for the node name of the page, for example, "en" for English, and "fr" for French.
+This tutorial does not delve into [language copies](../../help/sites-administering/tc-prep.md). Instead, it is designed so the root page may implement detection of the preferred language for the user through the HTML header, and redirect to the appropriate main page for the language. The convention is to use the two-letter country code for the node name of the page, for example, "en" for English, and "fr" for French.
 
 ## Create First Pages {#create-first-pages}
 

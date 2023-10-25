@@ -1,6 +1,6 @@
 ---
 title: Resources for New Adobe Experience Manager Users
-description: Questions, answers, and resources for users new to Adobe Experience Manager
+description: Questions, answers, and resources for users new to Adobe Experience Manager 6.5.
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
 ---
 # Resources for New AEM Users {#resources-for-new-aem-users}

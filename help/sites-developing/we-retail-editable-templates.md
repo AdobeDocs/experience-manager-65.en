@@ -1,7 +1,7 @@
 ---
 title: Trying out Editable Templates in We.Retail
 seo-title: Trying out Editable Templates in We.Retail
-description: Trying out Editable Templates in We.Retail
+description: Learn how to try out Editable Templates in Adobe Experience Manager using We.Retail.
 seo-description: null
 uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User

@@ -1,14 +1,10 @@
 ---
 title: Communities Components
-seo-title: Communities Components
-description: Adding community features to any AEM site
-seo-description: Adding community features to any AEM site
-uuid: 76824820-81e9-4192-8df3-dff55eaf144e
+description: Learn about when AEM Communities is licensed, it is possible to add Communities features to any AEM site using standard AEM authoring tools.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
 ---
@@ -74,8 +70,8 @@ See also the interactive [Community Components guide](/help/communities/componen
 
 ## Related Communities Documentation {#related-communities-documentation}
 
-* Visit [Deploying Communities](/help/communities/deploy-communities.md) to learn about recommended deployments.
+* Visit [Deploying Communities](/help/communities/deploy-communities.md) where you can learn about recommended deployments.
 
 * Visit [Administering Communities Sites](/help/communities/administer-landing.md) to learn about creating a community site, configuring community site templates, moderating community content, managing members, and configuring messaging.
 
-* Visit [Developing Communities](/help/communities/communities.md) to learn about the social component framework (SCF) and customizing Communities components and features.
+* Visit [Developing Communities](/help/communities/communities.md) where you can learn about the social component framework (SCF) and customizing Communities components and features.

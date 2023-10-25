@@ -1,6 +1,6 @@
 ---
 title: Mobile-Apps
-seo-title: Mobile-Apps
+seo-title: Learn about how Adobe Experience Manager Mobile offers deployment flexibility, using various content sources.
 description: "Mobile-Apps"
 seo-description: null
 uuid: 4a91241e-8c78-42fe-a5d3-732a6c34cbfd
@@ -16,7 +16,7 @@ exl-id: 0a98881d-08f3-47e7-bae1-5500d1fe6514
 >
 >Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile is part of the Adobe Experience Manager multi-channel digital platform that also leverages AEM Assets, Sites, Screens, Workflow, User Manager, Commerce and Forms. AEM Mobile offers remarkable deployment flexibility, enabling enterprises to use a variety of content sources.
+Adobe Experience Manager (AEM) Mobile is part of the Adobe Experience Manager multi-channel digital platform that also uses AEM Assets, Sites, Screens, Workflow, User Manager, Commerce, and Forms. AEM Mobile offers remarkable deployment flexibility, enabling enterprises to use various content sources.
 
 AEM Mobile offers multiple methods for creating apps. The different ways that you can use to create apps are:
 

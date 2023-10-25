@@ -1,21 +1,17 @@
 ---
 title: Rating Essentials
-seo-title: Rating Essentials
-description: Rating component overview
-seo-description: Rating component overview
-uuid: 48ef61ad-be7a-4a6b-a284-23e5bb4f1671
+description: Learn how the Rating component, a Tally subclass, lets signed-in community members rate a feature on the website.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 exl-id: 49456944-ff0d-4507-b3b8-143c90067573
 ---
 # Rating Essentials {#rating-essentials}
 
-The rating component, a [tally](tally.md) subclass, allows signed in community members to rate a feature on the website.
+The rating component, a [tally](tally.md) subclass, allows signed-in community members to rate a feature on the website.
 
-Placing multiple instances of a voting component on the same page is allowed; each instance must be configured with an unique `tally name` property.
+Placing multiple instances of a voting component on the same page is allowed; each instance must be configured with a unique `tally name` property.
 
 Anonymous posting of a rating is not supported. Site visitors must register and sign in to participate in a rating only once. The signed in visitor (member) may change their rating at any time.
 
@@ -54,9 +50,9 @@ Anonymous posting of a rating is not supported. Site visitors must register and 
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Tally APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](server-customize.md)
 
@@ -65,7 +61,7 @@ Anonymous posting of a rating is not supported. Site visitors must register and 
 UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
-As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).
+As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP, or JSRP).
 
 **The location and format of the UGC in the repository is subject to change without warning**.
 

@@ -1,16 +1,11 @@
 ---
 title: Configure Messaging
-seo-title: Configuring Messaging
-description: Communities messaging
-seo-description: Communities messaging
-uuid: 159dcf9d-7948-4a3d-9f51-a5b4d03e172b
+description: Learn how about the messaging feature in AEM Communities that provides the ability for signed-in site visitors (members) to send messages to one another. 
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
-
 role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
 ---
@@ -28,9 +23,9 @@ For additional information for developers, see [Messaging Essentials](/help/comm
 
 ## Messaging Operations Service {#messaging-operations-service}
 
-The configuration [AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifies the endpoint which handles messaging related requests, the folders the service should use for storing messages, and if messages may include file attachments, what file types are allowed.
+The configuration [AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifies the endpoint which handles messaging-related requests, the folders the service should use for storing messages, and if messages may include file attachments, what file types are allowed.
 
-For community sites created using the `Communities Sites console`, an instance of the service already exists, with the inbox set to `/mail/inbox`.
+For community sites that were created using the `Communities Sites console`, an instance of the service exists, with the inbox set to `/mail/inbox`.
 
 ### Community Messaging Operations Service {#community-messaging-operations-service}
 
@@ -40,11 +35,11 @@ As shown below, a configuration of the service exists for sites created with the
 
 ### Add new configuration {#add-new-configuration}
 
-To add a new configuration, select the plus '**+**' icon next to the service's name :
+To add a configuration, select the plus '**+**' icon next to the service's name :
 
 * **Message Fields Allowlist**
   
-  Specifies the properties of the Compose Message component users can edit and persist. If new form elements are added, then the element id would need to be added if desired to be stored in SRP. Default is two entries: *subject* and *content*.
+  Specifies the properties of the Compose Message component users can edit and persist. If new form elements are added, then the element id must be added if desired to be stored in SRP. Default is two entries: *subject* and *content*.
 
 * **Message box size limit**
   
@@ -52,7 +47,7 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
 
 * **Message count limit**
   
-  The total number of messages allowed per user. A value of -1 indicates an unlimited number of messages is allowed, subject to the message box size limit. Default is *10000* (10k).
+  The total number of messages allowed per user. A value of -1 indicates that an unlimited number of messages is allowed, subject to the message box size limit. Default is *10000* (10k).
 
 * **Notify delivery failure**
   
@@ -108,7 +103,7 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
 
 * **Attachment type blocklist**
   
-  A blocklist of filename extensions, prefixed with '**.**', that will be rejected by the system. If not blocklisted, then the extension is allowed. Extensions may be added or removed using the '**+**' and '**-**' icons.
+  A blocklist of filename extensions, prefixed with '**.**', that is rejected by the system. If not blocklisted, then the extension is allowed. Extensions may be added or removed using the '**+**' and '**-**' icons.
 
 * **Allowed attachment types**
   
@@ -126,7 +121,7 @@ To add a new configuration, select the plus '**+**' icon next to the service's n
 
 >[!CAUTION]
 >
->Each time a `Messaging Operations Service` configuration is opened for edit, if `allowedAttachmentTypes.name` had been removed, an empty entry is re-added to make the property configurable. A single empty entry effectively disables file attachments.
+>Each time a `Messaging Operations Service` configuration is opened for edit, if `allowedAttachmentTypes.name` had been removed, an empty entry is readded to make the property configurable. A single empty entry effectively disables file attachments.
 >
 >To allow all filename extensions, except for those blocklisted, use the '**-**' icon to (again) remove the single empty entry before clicking **Save**.
 

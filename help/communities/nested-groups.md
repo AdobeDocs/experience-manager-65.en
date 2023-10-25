@@ -1,6 +1,6 @@
 ---
 title: Authoring Nested Groups
-description: Create nested groups
+description: Learn how to create nested group's for an Adobe Experience Manager Communities site.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
@@ -31,7 +31,7 @@ The groups function displays as a folder in which instances of groups are create
 
 ## Create Main Arts Group {#create-main-arts-group}
 
-This group can be created because the site structure for engaging includes a groups function. The configuration of the function in the site's `Reference Template` defaults to allowing the selection of any enabled group template. Thus, the template chosen for this new group is the `Reference Group`.
+This group can be created because the site structure for engaging includes a group's function. The configuration of the function in the site's `Reference Template` defaults to allowing the selection of any enabled group template. Thus, the template chosen for this new group is the `Reference Group`.
 
 These consoles are similar to the Communities Sites console.
 
@@ -112,7 +112,7 @@ The `arts` group should also contain a `groups` folder, but one that is empty an
    * Template: `Reference Group`
    * Membership: select `Restricted Membership`, a secret group, visible only to invited members. As an example, invite [demo user](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
-Refresh the page so you can see all three nested groups (sub-communities).
+Refresh the page so you can see all three nested groups (subcommunities).
 
 To navigate to the nested groups from the Communities Sites console:
 

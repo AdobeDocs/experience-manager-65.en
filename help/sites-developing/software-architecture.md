@@ -1,6 +1,6 @@
 ---
 title: Software Architecture
-description: Best practices for architecting your software
+description: Learn some best practices for architecting your software for Adobe Experience Manager.
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES

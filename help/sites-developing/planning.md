@@ -1,7 +1,7 @@
 ---
 title: Planning
 seo-title: Planning
-description: What you need to know to plan for your test
+description: Learn what you need to know to plan for your testing of Adobe Experience Manager.
 seo-description: What you need to know to plan for your test
 uuid: 29b1127a-da85-46ed-98e7-1c983eb40cfe
 contentOwner: Guillaume Carlino

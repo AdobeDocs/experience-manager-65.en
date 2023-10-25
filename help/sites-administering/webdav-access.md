@@ -1,7 +1,7 @@
 ---
 title: WebDAV Access
 seo-title: WebDAV Access
-description: Learn about WebDAV access in AEM.
+description: Learn about how to access Adobe Experience manager using WebDAV.
 seo-description: Learn about WebDAV access in AEM.
 uuid: b0ecaa5d-5454-42df-8453-404ece734c32
 contentOwner: Chiradeep Majumdar

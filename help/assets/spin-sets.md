@@ -1,6 +1,6 @@
 ---
 title: Spin Sets
-description: Learn how to work with spin sets in Dynamic Media
+description: Learn how to create a spin set in Dynamic Media to simulate the real-world act of turning an object to view it from any angle so you can see details.
 uuid: 379a20a3-6a17-499a-b0f1-3a835b97aa7b
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -16,7 +16,7 @@ exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
 
 A Spin Set simulates the real-world act of turning an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from any angle.
 
-A Spin Set simulates a 360° viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can "free-form" zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
+A Spin Set simulates a 360-degree viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can "free-form" zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
 
 Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
@@ -26,7 +26,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 >
 >For information on the Assets user interface, see [Manage assets](/help/assets/manage-assets.md).
 
-When you create a Spin Set, Adobe recommends the following best practice and enforces the following limit:
+When you create a Spin Set, Adobe recommends the following best practice and enforces the following limits:
 
 | Limit type | Best practice | Limit imposed |
 | --- | --- | --- |
@@ -115,9 +115,9 @@ This section describes how to create a Spin Set in Experience Manager.
 
 >[!NOTE]
 >
->The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360° view.
+>The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360-degree view.
 
-When you create a Spin Set, Adobe recommends the following best practice and enforces the following limit:
+When you create a Spin Set, Adobe recommends the following best practice and enforces the following limits:
 
 | Limit type | Best practice | Limited imposed |
 | --- | --- | --- |
@@ -155,7 +155,7 @@ See also [Dynamic Media limitations](/help/assets/limitations.md).
 
 1. When you add assets to your set, they are automatically added in alphanumeric order. You can manually reorder or sort assets after you add them.
 
-   If necessary, drag an asset's Reorder icon to the right of the asset's file name to reorder images up or down the set list.
+   If necessary, drag an asset's Reorder icon to the right of the asset's file name to reorder images up the set list, or down.
 
    ![Reorder Frame 11 in the spin set by dragging it to a new location](assets/6_5_spinset-reorderassets.png).
 

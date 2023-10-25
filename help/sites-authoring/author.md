@@ -1,11 +1,6 @@
 ---
 title: Authoring
-description: Concepts of authoring in Adobe Experience Manager
-contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Concepts of authoring and publishing in Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 ---
 # Authoring{#authoring}

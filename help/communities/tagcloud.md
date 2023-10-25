@@ -1,14 +1,10 @@
 ---
 title: Using Social Tag Cloud
-seo-title: Using Social Tag Cloud
-description: Adding a Social Tag Cloud component to a page
-seo-description: Adding a Social Tag Cloud component to a page
-uuid: 8c400030-976c-457a-bb5f-e473909647a9
+description: Learn how to add a Social Tag Cloud component to a page that lets signed-in community members quickly identify trending topics and locate tagged content.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
 ---
 # Using Social Tag Cloud {#using-social-tag-cloud}
@@ -21,9 +17,9 @@ For another means of identifying current trends, visit [Activity Trends](trends.
 
 This page documents the `Social Tag Cloud` component dialog settings and describes the user experience.
 
-For detailed information for developers see [Tag Essentials](tag.md).
+For detailed information for developers, see [Tag Essentials](tag.md).
 
-See [Administering Tags](../../help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
+See [Administering Tags](../../help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.
 
 ## Adding a Social Tag Cloud {#adding-a-social-tag-cloud}
 
@@ -31,13 +27,13 @@ To add a `Social Tag Cloud` component to a page in author mode, use the componen
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](tag.md#essentials-for-client-side) are included, this is how the `Social Tag Cloud` component will appear:
+When the [required client-side libraries](tag.md#essentials-for-client-side) are included, this is how the `Social Tag Cloud` component appears:
 
 ![social-tag](assets/social-tag.png)
 
 ## Configuring Social Tag Cloud {#configuring-social-tag-cloud}
 
-Select the placed `Social Tag Cloud` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Social Tag Cloud` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure](assets/configure-new.png)
 
@@ -67,7 +63,7 @@ Under the **[!UICONTROL Social Tag Cloud]** tab, specify which tags to display a
 
 ## Change Display of Social Tag Cloud {#change-display-of-social-tag-cloud}
 
-To edit the display of the **Social Tag Cloud**, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double-click on the placed `Social Tag Cloud` component to open a dialog with an additional tab.
+To edit the display of the **Social Tag Cloud**, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double-click the placed `Social Tag Cloud` component to open a dialog with an additional tab.
 
 Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. A tag may be a simple tag, a single word in the default namespace, or a hierarchical taxonomy:
 
@@ -94,12 +90,12 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
   `Geometrixx Media: Gadgets / Cars`
 
-  There are 3 tags which can be applied: 
+  There are three tags which can be applied: 
   
   `Geometrixx Media (the namespace)`, `Gadgets`, and `Cars`
 
-  * Checked: Only `Cars` will display, if applied.
-  * Unchecked: `Geometrixx Media` and `Gadgets`as well as `Cars` will display, if applied.
+  * Checked: Only `Cars` are displayed, if applied.
+  * Unchecked: `Geometrixx Media`, `Gadgets`, and `Cars` are display, if applied.
 
   A simple tag is a leaf tag.
 

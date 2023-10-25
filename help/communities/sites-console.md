@@ -1,6 +1,6 @@
 ---
 title: Communities Sites Console
-description: How to access the Communities Sites console
+description: Learn how to access the Communities Sites console for site creation, editing, and management.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -16,7 +16,7 @@ The Communities Sites console provides access to:
 * Site creation
 * Site editing
 * Site management
-* [Creating and editing nested groups](/help/communities/groups.md) (sub-communities)
+* [Creating and editing nested groups](/help/communities/groups.md) (subcommunities)
 
 See [Getting Started with AEM Communities](/help/communities/getting-started.md) where you can experience how quickly a community site can be created in the author environment, and how to create community groups from the author and publish environments.
 
@@ -28,7 +28,7 @@ See [Getting Started with AEM Communities](/help/communities/getting-started.md)
 
 Before creating a community site, it is *required* to:
 
-* Ensure one or more publish instances are running.
+* Ensure one or more Publish instances are running.
 * Enable the [tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author) to manage members and member groups.
 * Identify the [primary publisher](/help/communities/deploy-communities.md#primary-publisher).
 * [Configure replication](/help/communities/deploy-communities.md#replication-agents-on-author) when the primary publisher port is not the default (4503).
@@ -43,7 +43,7 @@ Best practice, to ensure the site is prepared to support many features, is to ta
 
 ## Accessing Communities Sites Console {#accessing-communities-sites-console}
 
-In the author environment, to reach the Communities Sites console:
+In the Author environment, to reach the Communities Sites console:
 
 * From global navigation: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**
 
@@ -61,7 +61,7 @@ Every site created includes a login feature as site visitors are required to sig
 
 The process is launched by selecting the `Create` button at the top of the Communities Sites console.
 
-The creation process is a series of steps presented as panels containing a set of features to be configured (presented as sub-panels). It is possible to move forward to the **Next** step or **Back** to the previous step before committing the site in the final step.
+The creation process is a series of steps presented as panels containing a set of features to be configured (presented as subpanels). It is possible to move forward to the **Next** step or **Back** to the previous step before committing the site in the final step.
 
 ### Step 1 : Site Template {#step-site-template}
 
@@ -110,7 +110,7 @@ On the Site Template panel, the Title, Description, Site Root, Base Language, Na
 
 ### Step 2 : Design {#step-design}
 
-The Design panel contains two sub-panels for selecting the theme and branding banner:
+The Design panel contains two subpanels for selecting the theme and branding banner:
 
 #### COMMUNITY SITE THEME {#community-site-theme}
 
@@ -143,7 +143,7 @@ When creating or selecting an image, keep in mind:
 
 ### Step 3 : Settings {#step-settings}
 
-The Settings panel contains several sub-panels presenting features to configure before moving to the last step to create the site.
+The Settings panel contains several subpanels presenting features to configure before moving to the last step to create the site.
 
 * [USER MANAGEMENT](#user-management)
 * [TAGGING](#tagging)
@@ -156,7 +156,7 @@ The Settings panel contains several sub-panels presenting features to configure 
 >
 >**Enable Tunnel Service**
 >
->Several of the Settings sub-panels allow assignment of a trusted member to moderate UGC, manage groups, or be contacts for enablement resources in the publish environment.
+>Several of the Settings subpanels allow assignment of a trusted member to moderate UGC, manage groups, or be contacts for enablement resources in the publish environment.
 >
 >The convention is for publish-side [users and user groups](/help/communities/users.md) (members and member groups) to not be duplicated in the author environment.
 >
@@ -444,7 +444,7 @@ The DESIGN panel allows a new theme to be applied:
 
 ### Modify Settings {#modify-settings}
 
-The SETTINGS panel allows access to most of the settings under the sub-panels of for Step 3 of community site creation:
+The SETTINGS panel allows access to most of the settings under the subpanels of for Step 3 of community site creation:
 
 * [User Management](#user-management)
 * [Tags](#tagging)
@@ -469,7 +469,7 @@ There is an indication after the site is successfully published.
 
 ### Publishing with Nested Groups {#publishing-with-nested-groups}
 
-After publishing a community site, it is necessary to individually publish each sub-community (nested group) created using the [Groups console](/help/communities/groups.md).
+After publishing a community site, it is necessary to individually publish each subcommunity (nested group) created using the [Groups console](/help/communities/groups.md).
 
 ## Exporting the Site {#exporting-the-site}
 

@@ -1,14 +1,10 @@
 ---
 title: Featured Content Essentials
-seo-title: Featured Content Essentials
-description: Working with feature content
-seo-description: Working with feature content
-uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
+description: Learn about the fundamentals of working with featured content that you want highlighted anywhere within the community site.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 exl-id: 70b0ad6a-c891-4588-8515-449aed206805
 ---
 # Featured Content Essentials  {#featured-content-essentials}

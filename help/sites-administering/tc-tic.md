@@ -1,14 +1,7 @@
 ---
 title: Configuring the Translation Integration Framework
-seo-title: Configuring the Translation Integration Framework
-description: Learn how to configure the Translation Integration Framework.
-seo-description: Learn how to configure the Translation Integration Framework.
-uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
+description: Learn how to configure the Translation Integration Framework in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 ---

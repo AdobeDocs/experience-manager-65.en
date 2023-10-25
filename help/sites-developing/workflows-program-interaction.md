@@ -1,7 +1,7 @@
 ---
 title: Interacting with Workflows Programmatically
 seo-title: Interacting with Workflows Programmatically
-description: Interacting with Workflows Programmatically
+description: Learn how to interact with workflows programmatically in Adobe Experience Manager.
 seo-description: null
 uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
