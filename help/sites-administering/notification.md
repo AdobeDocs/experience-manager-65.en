@@ -1,7 +1,7 @@
 ---
 title: Configuring Email Notification
 seo-title: Configuring Email Notification
-description: Learn how to configure Email Notification in AEM.
+description: Learn how to configure email notification in Adobe Experience Manager.
 seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino

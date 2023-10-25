@@ -1,6 +1,6 @@
 ---
 title: Trying out the Globalized Site Structure in We.Retail
-description: Trying out the Globalized Site Structure in We.Retail
+description: Learn how to try out a globalized site structure in Adobe Experience Manager using We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference

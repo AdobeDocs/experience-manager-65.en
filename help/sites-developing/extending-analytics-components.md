@@ -1,6 +1,6 @@
 ---
 title: Adding Adobe Analytics Tracking to Components
-description: Adding Adobe Analytics Tracking to Components
+description: Learn how to add Adobe Analytics Tracking to components in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem

@@ -1,6 +1,6 @@
 ---
 title: Trying out Core Components in We.Retail
-description: Trying out Core Components in We.Retail
+description: Learn how to try out Core Components in Adobe Experience Manager using We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference

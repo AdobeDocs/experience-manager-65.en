@@ -1,6 +1,6 @@
 ---
 title: Adaptive Template Rendering
-description: Adaptive Template Rendering
+description: Learn about adaptive template rendering in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
