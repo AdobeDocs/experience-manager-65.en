@@ -1,6 +1,6 @@
 ---
 title: Web console in AEM
-description: Learn how to use the web console in Adobe Experience Manager.
+description: Learn how to use the Web Console in Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference

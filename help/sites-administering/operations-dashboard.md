@@ -1,7 +1,7 @@
 ---
 title: Operations Dashboard
 seo-title: Operations Dashboard
-description: Learn how to use the Operations Dashboard.
+description: Learn how to use the Operations Dashboard in Adobe Experience Manager.
 seo-description: Learn how to use the Operations Dashboard.
 uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
