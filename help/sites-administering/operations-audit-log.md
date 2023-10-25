@@ -1,8 +1,8 @@
 ---
 title: Audit Log Maintenance in AEM 6
 seo-title: Audit Log Maintenance in AEM 6
-description: Lear about Audit Log Maintenance in AEM.
-seo-description: Lear about Audit Log Maintenance in AEM.
+description: Learn about Audit Log Maintenance in Adobe Experience Manager (AEM).
+seo-description: Learn about Audit Log Maintenance in Adobe Experience Manager (AEM).
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES

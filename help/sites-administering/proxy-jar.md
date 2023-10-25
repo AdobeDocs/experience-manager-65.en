@@ -1,6 +1,6 @@
 ---
 title: Proxy Server Tool (proxy.jar)
-description: Learn about the Proxy Server Tool in AEM.
+description: Learn about the Proxy Server Tool (proxy.jar) in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations

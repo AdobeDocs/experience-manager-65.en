@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Oak Indexes
 seo-title: Troubleshooting Oak Indexes
-description: How to detect and fix slow reindexing.
+description: Learn how to identify if indexing is slow, find the cause, and resolve the issue.
 uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES

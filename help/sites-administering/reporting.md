@@ -1,6 +1,6 @@
 ---
 title: Reporting
-description: Learn how to work with Reporting in Adobe Experience Manager.
+description: Learn how to work with Reporting in Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
