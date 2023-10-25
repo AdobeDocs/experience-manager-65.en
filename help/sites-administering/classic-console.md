@@ -1,7 +1,7 @@
 ---
 title: Classic UI Tagging Console
 seo-title: Classic UI Tagging Console
-description: Learn about the Classic UI Tagging Console.
+description: Learn about the Adobe Experience Manager Classic UI Tagging Console.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar

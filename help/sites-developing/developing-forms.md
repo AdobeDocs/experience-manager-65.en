@@ -1,7 +1,7 @@
 ---
 title: Developing Forms (Classic UI)
 seo-title: Developing Forms (Classic UI)
-description: Learn how to develop forms
+description: Learn how to develop forms for Adobe Experience Manager's classic UI
 seo-description: Learn how to develop forms
 uuid: 33859f29-edc5-4bd5-a634-35549f3b5ccf
 contentOwner: Guillaume Carlino

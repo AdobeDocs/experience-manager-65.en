@@ -1,6 +1,6 @@
 ---
 title: Configuring ContextHub
-description: Learn how to configure Context Hub.
+description: Learn how to configure Adobe Experience Manager's Context Hub to personalize your experiences.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization

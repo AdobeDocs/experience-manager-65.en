@@ -1,13 +1,13 @@
 ---
-title: OSGI Bundles
-description: Tips for managing your OSGi bundles
+title: OSGi Bundles
+description: Learn some tips for managing your OSGi bundles in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
 ---
-# OSGI Bundles{#osgi-bundles}
+# OSGi Bundles{#osgi-bundles}
 
 ## Use semantic versioning {#use-semantic-versioning}
 
@@ -15,7 +15,7 @@ Agreed upon best practices for semantic version numbering can be found at [https
 
 ## Do not embed more classes and jars than strictly needed in OSGi bundles {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Common libraries should be factored out into separate bundles. This allows them to be reused across your bundles. When wrapping a *JAR* in an OSGI bundle, make sure to check online sources to see if someone has already done this before. Some common places to find existing bundle wrappers are: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes, and the SpringSource Enterprise Bundle Repository.
+Common libraries should be factored out into separate bundles. This allows them to be reused across your bundles. When wrapping a *JAR* in an OSGi bundle, make sure to check online sources to see if someone has already done this before. Some common places to find existing bundle wrappers are: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes, and the SpringSource Enterprise Bundle Repository.
 
 ## Depend on the lowest needed bundle versions {#depend-on-the-lowest-needed-bundle-versions}
 

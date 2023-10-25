@@ -1,7 +1,7 @@
 ---
 title: Administering Tags
 seo-title: Administering Tags
-description: Learn how to administer Tags in AEM.
+description: Learn how to manage and administer tags in Adobe Experience Manager.
 seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar

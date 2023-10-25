@@ -1,6 +1,6 @@
 ---
 title: Developing and Page Diff
-description: Developing and Page Diff
+description: Learn how to developing and utilize the page diff feature in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction

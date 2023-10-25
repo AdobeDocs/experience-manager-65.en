@@ -1,6 +1,6 @@
 ---
 title: Experience Fragments in Adobe Experience Manager Sites development
-description: Learn about customizing Experience Fragments.
+description: Learn how to customize Experience Fragments for Adobe Experience Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem

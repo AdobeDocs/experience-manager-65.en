@@ -1,7 +1,7 @@
 ---
 title: Trying out Responsive Layout in We.Retail
 seo-title: Trying out Responsive Layout in We.Retail
-description: Trying out Responsive Layout in We.Retail
+description: Learn how to try out Responsive Layout in Adobe Experience Manager using We.Retail.
 seo-description: null
 uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
