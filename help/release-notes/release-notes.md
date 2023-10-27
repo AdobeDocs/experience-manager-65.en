@@ -64,23 +64,70 @@ Some of the key features and enhancements in this release include the following:
 
 #### Admin User Interface{#sites-adminui-6519}
 
-* I
+* AEM Screens Channel **[!UICONTROL Preview]** functionality does not work or display on the Dashboard. (SITES-15730) CRITICAL
+* During a page move operation, if the user interface cannot display the references but states that these will be automatically republished, they are actually *not* republished. (SITES-16435) MAJOR
+* In AEM 6.5 with Service Pack 16 or Service Pack 17, when in the List view of sites with the "Workflow" column enabled, you are unable to sort the list based on the items in that column; no sorting occurs. (SITES-15385) MAJOR
+* For a redirect page template, the redirect field has been made mandatory. However, the validation for the required field is not getting applied nor working in these two scenarios: when a page is created without a mandatory redirect value; cannot create a redirect page. The validation does not work when navigating using keyboard shortcuts and when the field is marked as invalid, it does not proceed. (SITES-15903) NORMAL
+* Some **Incoming Links** were not getting included in the displayed count in the **References** panel. For example, the panel was showing **Incoming Links (6)** but there were actually nine incoming links. (SITES-14816) NORMAL
+
+
+
+#### Classic UI{#sites-classicui-6519}
+
+* After installing hotfix in SITES-15827, dialog box titles that had whitespace between words were getting replaced with `" "`. Line breaks were also being removed. (SITES-16089) MAJOR
+* Encoded dialog box titles are now resulting in a double encoding of the title. (SITES-15841) NORMAL
+* Update of AEM servers from service pack 6.5.16 to 6.5.17 resulted in a double encoding of Classic UI dialog box titles. (SITES-15634) NORMAL
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6519}
 
-* A
+* The update of the `org.json` library by way of NPR-41291 caused data error conversions in the `DefaultDataTypeConverter` of the `cfm-impl` bundle. Data type conversion must be more flexible. (SITES-16473) NORMAL
+* Getting the error pop-up message, "This content fragment version cannot be compared to the current version because of incompatible content." Content fragments should be comparable but it is not. (SITES-16317) NORMAL
+* Changed the asset selector JS URL from 
+`https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js` 
+to 
+`https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js` (SITES-16068) NORMAL
+* Adapt new Polaris metadata API response schema for CFM-Polaris integration. (SITES-15166) NORMAL
+* All content fragments should be listed where the selected content fragment is referenced. Instead, asset references in the content fragment reference panel show 0(zero) references. (SITES-15036) NORMAL
+
+#### Core Backend{#sites-core-backend-6519}
+
+* Improve `StyleImpl`. (SITES-15164) NORMAL
 
 #### Core Components{#sites-core-components-6519}
 
 * A
 
-<!-- #### [!DNL Experience Fragments]{#sites-experiencefragments-6519}
+#### Campaign integration{#sites-campaign-integration-6519}
 
-* A -->
+* On the signature component (`/apps/fpl/components/campaign/signature`), the link externalizer was not working. The domain was not getting appended to the image source, if the HTML comment above the image tag was removed. This issue was found only with the signature component in the production environment, not the staging environment. (SITES-16120) NORMAL
+
+#### Experience Fragments{#sites-experiencefragments-6519}
+
+* A
+
+#### Foundation Components (Legacy){#sites-foundation-components-legacy-6519}
+
+* Adobe Experience Manager (AEM) Sites Search component breaks the user interface. (SITES-15087) NORMAL
+
+#### GraphQL Query Editor{#sites-graphql-query-editor-6519}
+
+* GraphQL Editor user interface does not let you scroll through all the persisted queries when there is a high number of queries (for example, more than 25). (SITES-16008) MAJOR
+* The GraphQL Editor is not saving the publish status of persisted queries. The unpublish button appears in the GraphQL Editor, but the icon that indicates that the persisted query is published does not appear. Refreshing the page shows that the persisted query is not even published. (SITES-15858) MAJOR
+
+#### Launches{#sites-launches-6519}
+
+* Changes in the repository are not save due to `Oak0001` conflicts when multiple pages are being edited or content is being authored. It is normal to perform a retry in such an event but this does not occur. (SITES-14840) MAJOR
+
+#### MSM - Live Copies{#sites-msm-live-copies-6519}
+
+* Link Reference does not get updated inside experience fragment when creating a live copy or rollout an experience fragment.(SITES-15460) NORMAL
 
 #### Page Editor{#sites-pageeditor-6519}
 
-* W 
+* After upgrading an instance from AEM 6.5.17 and AEM 6.5.18, from inside the Page Editor, if you click **[!UICONTROL Publish Page]**, you are redirected to a URL that does not exist. The user should be redirected to the Publish wizard. (SITES-15856) NORMAL
+* (SITES-15704) NORMAL
+* Redundant copy from AEM's Clipboard during a paste from the operating system's Clipboard. (SITES-15704) NORMAL
+* In Assets, selecting **[!UICONTROL Documents]**, then under **[!UICONTROL Filtertype]**, selecting **[!UICONTROL Microsoft Word]** or **[!UICONTROL Microsoft Excel]** shows no results even though files of both types exist. (SITES-14837) NORMAL
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -92,7 +139,7 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Forms]{#forms-6519}
 
-<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release. -->
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
 
 * **Document Services**
   * W
@@ -105,23 +152,25 @@ Some of the key features and enhancements in this release include the following:
   * I
 
 
-<!-- ### [!DNL Commerce]{#commerce-6519}
+### Commerce{#commerce-6519}
 
-* A -->
+* A
 
 ### Foundation{#foundation-6519}
+
+* A
 
 #### Content distribution{#foundation-content-distribution-6519}
 
 * T
 
-<!-- #### Integrations{#integrations-6519}
+#### Integrations{#integrations-6519}
 
-* A -->
+* A
 
-<!-- #### Oak{#oak-6519}
+#### Oak{#oak-6519}
 
-* A -->
+* A
 
 #### Platform{#foundation-platform-6519}
 
@@ -143,9 +192,9 @@ Some of the key features and enhancements in this release include the following:
 
 * A
 
-<!-- #### WCM{#wcm-6519}
+#### WCM{#wcm-6519}
 
-* A -->
+* A
 
 #### Workflow{#foundation-workflow-6519}
 
