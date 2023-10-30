@@ -1,6 +1,6 @@
 ---
 title: Converting files using PDF Generator
-description: Learn how to convert files using PDF Generator for converting web pages to PDF. You can convert a ZIP file to PDF or export a PDF file to another file format. 
+description: The PDF Generator service converts native file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
