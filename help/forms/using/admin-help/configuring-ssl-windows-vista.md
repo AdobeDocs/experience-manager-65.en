@@ -1,8 +1,6 @@
 ---
 title: Configuring SSL on Windows Vista
-seo-title: Configuring SSL on Windows Vista
-description: Learn how to configure SSL on Windows Vista.
-seo-description: Learn how to configure SSL on Windows Vista.
+description: Learn how to configure SSL on Windows Vista. This document explains how to use and run the Java Keytool to generate the SSL certificate with RSA keys for the authentication.
 uuid: 20bfcefb-ec84-4c55-bceb-6af106d883d7
 contentOwner: admin
 content-type: reference

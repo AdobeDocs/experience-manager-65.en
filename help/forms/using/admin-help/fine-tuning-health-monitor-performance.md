@@ -1,8 +1,7 @@
 ---
 title: Fine-tuning Health Monitor performance
 seo-title: Fine-tuning Health Monitor performance
-description: Learn how to fine-tune Health Monitor performance
-seo-description: Learn how to fine-tune Health Monitor performance
+description: Learn how to fine-tune Health Monitor performance. It explains how to control the system statistics which impact the performance of your AEM forms environment using the JAVA setting options.
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference

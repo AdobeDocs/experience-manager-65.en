@@ -1,6 +1,6 @@
 ---
 title: Managing certificate revocation lists
-description: Learn how to manage certificate revocation lists.
+description: Learn how to manage certificate revocation lists. You can import, edit, and delete certificate revocation lists (CRLs) using Trust Store Management. Base64 and DER-encoded certificate revocation lists are supported.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials

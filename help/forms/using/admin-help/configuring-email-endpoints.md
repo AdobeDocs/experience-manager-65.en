@@ -1,8 +1,6 @@
 ---
 title: Configuring email endpoints
-seo-title: Configuring email endpoints
-description: Learn how to configure email endpoints.
-seo-description: Learn how to configure email endpoints.
+description: Learn how to configure email endpoints. Email endpoints enable you to invoke a service by sending one or more documents (as email attachments) to a specified email account.
 uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference

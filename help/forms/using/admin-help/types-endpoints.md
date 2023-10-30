@@ -1,6 +1,6 @@
 ---
 title: Types of endpoints
-description: Learn about the different types of endpoints.
+description: Learn about the different types of endpoints. This document lists the different types of endpoints such as Email, Watched folder and many more, that can be added to services.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints

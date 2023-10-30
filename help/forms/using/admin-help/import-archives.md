@@ -1,8 +1,6 @@
 ---
 title: Import and manage archives
-seo-title: Import and manage archives
-description: Learn how to import and manage archives.
-seo-description: Learn how to import and manage archives.
+description: Learn how to import and manage archives. The archives are used to import and manage LCAs that were created in the workbench. You can import, configure, use and delete an archive. 
 uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference

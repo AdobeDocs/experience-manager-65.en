@@ -1,8 +1,6 @@
 ---
 title: Configuring fallback fonts
-seo-title: Configuring fallback fonts
-description: Learn how to configure fallback fonts.
-seo-description: Learn how to configure fallback fonts.
+description: Learn how to configure fallback fonts. This document explains how to configure the FontManagerResources.properties file to map the default AEM forms fonts to fallback manually. 
 uuid: 2745541c-8c6d-4bb4-aa14-ec19afd6bc35
 contentOwner: admin
 content-type: reference

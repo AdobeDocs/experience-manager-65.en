@@ -1,6 +1,6 @@
 ---
 title: Import and manage applications
-description: Learn how to import and manage applications.
+description: Learn how to import and manage applications. In AEM Adaptive Forms, an application is a container for storing assets that are required for implementing an AEM forms solution. 
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
@@ -13,7 +13,7 @@ In AEM forms, an *application* is a container for storing assets that are requir
 
 When an application is complete and ready for deployment to a production server, the Workbench user packages the application into a *AEM forms application file* (.lca). Then an administrator uses administration console to import and deploy the application file, using the Applications tab on the Application Management page.
 
-You can also use thearchives tab on the Application Management page to import LCAs that were created using workbench 8.x.
+You can also use the archives tab on the Application Management page to import LCAs that were created using workbench 8.x.
 
 >[!NOTE]
 >

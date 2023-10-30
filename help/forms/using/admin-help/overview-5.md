@@ -1,8 +1,6 @@
 ---
 title: Introduction to working with PDF Generator
-seo-title: Introduction to working with PDF Generator
-description: Learn how to convert various file formats to PDF.
-seo-description: Learn how to convert various file formats to PDF.
+description: Learn how to convert various file formats to PDF. PDF Generator converts various file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: 1942bf9f-99cc-48b6-89f4-e78c1957a300
 contentOwner: admin
 content-type: reference

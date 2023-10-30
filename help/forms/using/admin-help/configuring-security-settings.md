@@ -1,8 +1,6 @@
 ---
 title: Configuring security settings
-seo-title: Configuring security settings
-description: Learn how to configure security settings.
-seo-description: Learn how to configure security settings.
+description: Learn how to configure security settings. This document explains how you can protect your PDF documents by limiting the access. You can also encrypt, certify or password-protect the document. 
 uuid: 9747f268-3551-4064-8dba-e1de4a577843
 contentOwner: admin
 content-type: reference

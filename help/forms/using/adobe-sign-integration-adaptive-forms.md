@@ -1,8 +1,7 @@
 ---
 title: Integrate Adobe Sign with AEM Forms
-seo-title: Integrate Adobe Sign with AEM Forms
-description: Learn how to configure Adobe Sign for AEM Forms
-seo-description: Learn how to configure Adobe Sign for AEM Forms
+seo-title: Integrate Adobe Sign with AEM Adaptive Forms
+description: Learn to configure Adobe Sign for your AEM Adaptive Forms. Adobe Sign component improves workflows and process the documents for legal, sales, payroll, human resource management, and many more areas.
 uuid: e5049775-fb6c-4228-9823-e6a2811460da
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
