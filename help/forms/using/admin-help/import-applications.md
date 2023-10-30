@@ -1,6 +1,6 @@
 ---
 title: Import and manage applications
-description: Learn how to import and manage applications. In AEM Adaptive Forms, an application is a container for storing assets that are required for implementing an AEM forms solution. 
+description: Learn how to import and manage applications. An application is a container for storing assets that are required for implementing an AEM forms solution. 
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives

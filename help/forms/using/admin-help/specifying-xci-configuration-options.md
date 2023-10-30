@@ -1,6 +1,6 @@
 ---
 title: Specifying XCI configuration options
-description: Learn how to specify the XCI configuration options. This document explains how you can specify a custom XCI file values for your AEM Adaptive Form, so that it can be used while form rendering.
+description: Learn how to specify the XCI configuration options. You can specify a custom XCI file values for Adaptive Form, so that it can be used while form rendering.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms

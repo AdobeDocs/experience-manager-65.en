@@ -1,6 +1,6 @@
 ---
 title: Specify file locations for Output
-description: Learn how you can specify file locations for Output for certain types of files. Different location settings are Content Root URI, XCI Configuration File, Cache Location and Default Location.
+description: Learn how to specify file locations for Output for certain types of files, for example Content Root URI, XCI Configuration File, Cache and Default.
 uuid: 3287274f-85b5-4811-8abb-d347a9b80947
 contentOwner: admin
 content-type: reference

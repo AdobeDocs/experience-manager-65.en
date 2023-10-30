@@ -1,6 +1,6 @@
 ---
 title: PDF Generator backup limitations
-description: Learn about PDF Generator backup limitations. This document explains that the temporary directory that PDF Generator uses to convert files cannot be backed up as it clears the contents of the temporary directory at set intervals.
+description: Learn about PDF Generator backup limitations. The temporary directory that PDF Generator uses cannot be backed up as it clears the contents at set intervals.
 uuid: 9537ffde-4396-46d1-81ea-edcd25923ffb
 contentOwner: admin
 content-type: reference

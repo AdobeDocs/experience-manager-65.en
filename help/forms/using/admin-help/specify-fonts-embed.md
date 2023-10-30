@@ -1,6 +1,6 @@
 ---
 title: Specify fonts to embed
-description: Learn how to specify fonts to embed in an AEM Adaptive Form. You can specify which fonts are always embedded or never embedded with the forms that the Forms service generates.
+description: Learn how to specify fonts to embed in an Adaptive Form. You can specify which fonts are embedded or never embedded with forms that Forms service generates.
 uuid: 02da5c00-0467-4633-a076-c36725cbfbad
 contentOwner: admin
 content-type: reference

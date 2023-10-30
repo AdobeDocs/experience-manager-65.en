@@ -1,6 +1,6 @@
 ---
 title: Managing HSM credentials
-description: Learn how to manage HSM credentials. You can manage Hardware Security Module (HSM) credentials from the Trust Store Management page. This document explains how to view, check, update, reset and delete HSM components.  
+description: Learn how to manage HSM credentials. You can manage HSM from the Trust Store Management page. You can view, check, update, reset and delete HSM components.  
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials

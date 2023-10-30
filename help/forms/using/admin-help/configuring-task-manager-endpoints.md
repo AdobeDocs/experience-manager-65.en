@@ -1,6 +1,6 @@
 ---
 title: Configuring Task Manager endpoints
-description: Learn how to configure Task Manager endpoints which enable Workspace users to invoke the service. This document lists the settings required for configuring Task Manager endpoints.
+description: Learn how to configure Task Manager endpoints to invoke the service. Different settings are required for configuring Task Manager endpoints.
 uuid: 07604b10-0bd7-4bce-9624-7ebac4754f56
 contentOwner: admin
 content-type: reference
