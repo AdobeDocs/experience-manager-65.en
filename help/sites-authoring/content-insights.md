@@ -40,7 +40,7 @@ Reports show data for a period of time that you control. When you adjust the rep
 
 >[!NOTE]
 >
->The timeline fo the Content Insight dashboard is in `GMT`.
+>The timeline for the Content Insight dashboard is in `GMT`.
 
 You can also specify the granularity of the reported data, for example you can see daily, weekly, monthly, or yearly data.
 
