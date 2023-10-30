@@ -1,8 +1,6 @@
 ---
 title: Specify security settings
-seo-title: Specify security settings
-description: Learn how to specify security settings.
-seo-description: Learn how to specify security settings.
+description: Learn how to specify security settings to protect XML data files. The security setting feature controls the external entities in XML inputs.
 uuid: c86ba195-010d-40d6-9f9d-4cb4c364d104
 contentOwner: admin
 content-type: reference

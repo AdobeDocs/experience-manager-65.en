@@ -1,6 +1,6 @@
 ---
 title: Configuring watched folder endpoints
-description: Learn how to configure watched folder endpoints.
+description: Learn how to configure watched folder endpoints. If a document is placed in watched folder, a configured service operation is invoked and manipulates the file.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
