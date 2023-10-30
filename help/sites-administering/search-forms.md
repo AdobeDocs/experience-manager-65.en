@@ -1,6 +1,6 @@
 ---
 title: Configuring Search Forms
-description: Learn how to configure Search Forms.
+description: Learn how to use Search Forms to customize the selection of search predicates used in the search panels available in AEM consoles and panels of the author environment.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -12,7 +12,7 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 
 Use **Search Forms** to customize the selection of search predicates used in the search panels available in various AEM consoles and/or panels of the author environment. Customizing these panels makes the search functionality versatile according your specific needs.
 
-A [range of predicate](#predicates-and-their-settings)s are available out-of-the-box. You can add multiple predicates, including (among others) the Property predicate to search for assets that match a single property specified by you, or the Options predicate to search assets that match one or more values that you specify for a particular property.
+A [range of predicate](#predicates-and-their-settings)s are available out-of-the-box. You can add multiple predicates, including (among others) the Property predicate, to search for assets that match a single property specified by you. Or, the Options predicate to search assets that match one or more values that you specify for a particular property.
 
 You can [configure the search forms](#configuring-your-search-forms) used within various consoles and the asset browser (when editing pages). The [dialogs for configuring these forms](#configuring-your-search-forms) can be accessed via:
 
@@ -22,7 +22,7 @@ You can [configure the search forms](#configuring-your-search-forms) used within
 
     * **Search Forms**
 
-When you first access this console you can see that all the configurations have a padlock symbol. This indicates that the appropriate configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized the configuration the lock will disappear - unless you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) will be reinstated.
+When you first access this console, you can see that all the configurations have a padlock symbol. This indicates that the appropriate configuration is the default (out-of-the-box) configuration - and cannot be deleted. After you have customized the configuration, the lock disappears unless you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default). In such case, the default (and the padlock indicator) is reinstated.
 
 ![Search forms window](assets/chlimage_1-374.png)
 
@@ -119,7 +119,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Components </td>
-   <td>Allows an author to search/filter for pages that have a specific component on it. For example an image gallery.<br /> </td>
+   <td>Allows an author to search/filter for pages that have a specific component on it. For example, an image gallery.<br /> </td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -256,7 +256,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Range Options </td>
-   <td>A specific search predicate for Assets and the same as common Slider Predicate. Is still available due to backward compatibilty issues.</td>
+   <td>A specific search predicate for Assets and the same as common Slider Predicate. Is still available due to backward compatibility issues.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -289,7 +289,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Slider Range </td>
-   <td>A common search predicate extending the range predicate with the slider capability. The value of the property searched on must be between the slider limits.</td>
+   <td>A common search predicate that extends the range predicate with the slider capability. The value of the property searched on must be between the slider limits.</td>
    <td>
     <ul>
      <li>Field Label</li>
@@ -330,7 +330,7 @@ The following predicates are available, dependent on the configuration:
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
+>This information is for reference only. Do not change `/libs`.
 
 ### Predicate Settings {#predicate-settings}
 
@@ -338,7 +338,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **Field Label**
 
-  The label that will appear as the collapsible header or as the field label of the predicate.
+  The label that appears as the collapsible header or as the field label of the predicate.
 
 * **Description**
 
@@ -352,7 +352,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
   The property to be searched on. It uses a relative path and the wildcards `*/*/*` specify the depth of the property relative to the `jcr:content` node (each asterisk represents one node level).
 
-  If you want to search only on a first level child node of the resource that has the `x` property on the `jcr:content` node use `*/jcr:content/x`
+  If you want to search only on a first-level child node of the resource that has the `x` property on the `jcr:content` node use `*/jcr:content/x`
 
 * **Property Depth**
 
@@ -370,7 +370,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **Option Path**
 
-  The user can select the path using the Path Browser in the predicate setting tab. After selecting the **+** icon is used to add the selection to the list of valid options (then the **-** icon to remove if required).
+  The user can select the path using the Path Browser in the predicate setting tab. After selecting **+**, icon is used to add the selection to the list of valid options (then the **-** icon to remove, if necessary).
 
   The options are content nodes created by the user, having the following structure:
 
@@ -382,10 +382,10 @@ Dependent on the predicate a selection of settings are available for configurati
 * **Single Select**
   If checked, the options are rendered as checkboxes that allow for only a single selection. If mistakenly selected, a checkbox can be deselected.
 
-* **Publish and Live Copy Property Name(s)**
+* **Publish and Live Copy Property Names**
   The labels for the publish and live copy checkboxes for the Sites specific predicate.
 
-* The &ast; on the field labels in the **Settings** tab means the fields are required and if left blank an error message will appear
+* The &ast; on the field labels in the **Settings** tab mean that the fields are required and if left blank an error message appears.
 
 ## Configuring Your Search Forms {#configuring-your-search-forms}
 
@@ -395,7 +395,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 1. Select the configuration that you want to customize.
 1. Use the **Edit** icon to open the configuration for updating.
-1. If a new customization you will probably want to [add new predicate fields and define the settings](#add-edit-a-predicate-field-and-define-field-settings) as required. If an existing customization you can select an existing field and [update the settings](#add-edit-a-predicate-field-and-define-field-settings).
+1. If a new customization, you likely want to [add new predicate fields and define the settings](#add-edit-a-predicate-field-and-define-field-settings) as required. If an existing customization, you can select an existing field and [update the settings](#add-edit-a-predicate-field-and-define-field-settings).
 1. Select **Done** to save the configuration.
 
    >[!NOTE]
@@ -410,15 +410,15 @@ Dependent on the predicate a selection of settings are available for configurati
 You can add or edit fields and define/update their settings:
 
 1. [Open the customized configuration](#creating-opening-a-customized-configuration) for updating.
-1. If you want to add a new field, open the **Select Predicate** tab and drag the required predicate to the required location. For example, the **Date Range Predicate**:
+1. If you want to add a field, open the **Select Predicate** tab and drag the required predicate to the required location. For example, the **Date Range Predicate**:
 
    ![Editing a search form](assets/chlimage_1-375.png)
 
 1. Depending on whether:
 
-    * You are adding a new field:
+    * You are adding a field:
 
-      After adding the predicate the **Settings** tab will open and show the properties that can be defined.
+      After adding the predicate, the **Settings** tab opens and shows the properties that can be defined.
 
     * You want to update an existing predicate:
 
@@ -436,11 +436,11 @@ You can add or edit fields and define/update their settings:
 
    ![Preview search forms](do-not-localize/chlimage_1-31.png)
 
-1. This will display the search forms as they will be shown (fully expanded) in the Search column of the appropriate console.
+1. This displays the search forms as they are shown (fully expanded) in the Search column of the appropriate console.
 
    ![Previewing the search form](assets/chlimage_1-377.png)
 
-1. **Close** the preview to return and finish the configuration.
+1. **Close** the preview so you can return and finish the configuration.
 
 ### Deleting a Predicate Field {#deleting-a-predicate-field}
 
@@ -449,13 +449,13 @@ You can add or edit fields and define/update their settings:
 
    ![Delete icon](do-not-localize/chlimage_1-32.png)
 
-1. A dialog will request confirmation of the delete action.
+1. A dialog box requests confirmation of the delete action.
 
 1. Confirm this and any other changes with **Done**.
 
 ### Deleting a Configuration (to Reinstate the Default) {#deleting-a-configuration-to-reinstate-the-default}
 
-Once you have customized a configuration this will override the defaults. You can resinstate the default configuration by deleting your customized configuration.
+After you have customized a configuration, this overrides the defaults. You can reinstate the default configuration by deleting your customized configuration.
 
 >[!NOTE]
 >
@@ -467,17 +467,17 @@ Deleting a customized configuration is done from the console:
 
    ![Deleting a form](assets/chlimage_1-378.png)
 
-1. The customized configuration will be deleted and the default reinstated (this is indicated by the reappearance of the padlock symbol in the console).
+1. The customized configuration is deleted and the default reinstated (this is indicated by the reappearance of the padlock symbol in the console).
 
 ### Adding Options Predicates {#adding-options-predicates}
 
-Option predicates (Options, Options Property) let you configure an item to be searched for. They are usually used to search for something directly under the page; for example, a property on the page node.
+Option predicates (Options, Options Property) let you configure an item to be searched for. They are used to search for something directly under the page; for example, a property on the page node.
 
 The following example (to search according to the template used to create a page), illustrates the steps involved:
 
 1. Create the node defining the property to be searched on.
 
-   You will need a root node holding definitions of the individual options to be available to the user.
+   You need a root node holding definitions of the individual options to be available to the user.
 
    The nodes for the individual options need the properties:
 
@@ -488,7 +488,7 @@ The following example (to search according to the template used to create a page
 
    >[!NOTE]
    >
-   >You ***must*** not change anything in the `/libs` path.
+   >Do ***not*** change anything in the `/libs` path.
    >
    >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
    >
@@ -502,7 +502,7 @@ The following example (to search according to the template used to create a page
 
    Then click/tap the **Edit search forms** icon.
 
-1. Depending on the configuration add an **Options** or **Options Property** to the configuration.
+1. Depending on the configuration, add an **Options** or **Options Property** to the configuration.
 1. Update the fields, in particular:
 
     * **Property Name**
@@ -520,7 +520,7 @@ The following example (to search according to the template used to create a page
    ![Adding property path](assets/chlimage_1-380.png)
 
 1. Select **Done** to save your configuration.
-1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results:
+1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search** rail. The newly defined search forms, together with the various options are visible. Select the required option so you can see the search results:
 
    ![The final results](assets/chlimage_1-381.png)
 

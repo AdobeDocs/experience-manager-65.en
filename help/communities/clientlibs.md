@@ -1,6 +1,6 @@
 ---
 title: Clientlibs for Communities Components
-description: Client-side libraries for Communities
+description: Learn how to add client-side libraries (clientlibs) to a page so you can gather usage details and use debugging tools for Communities components.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -14,7 +14,7 @@ exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
 
 This section of the documentation describes how to add client-side libraries (clientlibs) to a page for Communities components.
 
-For basic information, visit :
+For basic information, see the following:
 
 * [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) which provides usage details and debugging tools
 * [Clientlibs for SCF](/help/communities/client-customize.md#clientlibs) which provides useful information when customizing SCF components
@@ -24,7 +24,7 @@ For basic information, visit :
 
 Clientlibs are required for the proper functioning (JavaScript) and styling (CSS) of a component.
 
-When there exists a [community function](/help/communities/functions.md) for a feature, all necessary components and configurations, including the required clientlibs, are present in the community site. Only if additional components are to be available to authors would additional clientlibs need to be added.
+When there exists a [community function](/help/communities/functions.md) for a feature, all necessary components and configurations, including the required clientlibs, are present in the community site. Only if additional components are to be available to authors must additional clientlibs be added.
 
 When the required clientlibs are missing, [adding a Communities component to a page](/help/communities/author-communities.md) could result in JavaScript errors and an unexpected appearance.
 
@@ -55,7 +55,7 @@ When it is desired to add a Communities component to a page, it is necessary to 
 
 Use [CRXDE|Lite](#using-crxde-lite) to modify an existing clientlibslist for a community site page.
 
-To add a clientlib for a community site using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+To add a clientlib for a community site by using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Browse to [https://&lt;server&gt;:&lt;port&gt;/crx/de](https://localhost:4502/crx/de).
 * Locate the `clientlibslist` node for the page on which you wish to add the component:
@@ -65,7 +65,7 @@ To add a clientlib for a community site using [CRXDE Lite](/help/sites-developin
 * With `clientlibslist` node selected:
 
   * Locate the String[] property `scg:requiredClientLibs`.
-  * Select its `Value` to access the String array dialog.
+  * Select its `Value` so you can access the String array dialog box.
 
     * Scroll down if necessary.
     * Select + to enter a new client library.

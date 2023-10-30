@@ -1,14 +1,10 @@
 ---
 title: Messaging Feature
-seo-title: Messaging Feature
-description: Configuring Messaging components
-seo-description: Configuring Messaging components
-uuid: 8b99ded1-aec2-40c9-82d5-e2e404f614ca
+description: Learn how to configure the Messaging feature of AEM Communities to allow community members to interact with one another more privately.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
 ---
@@ -18,7 +14,7 @@ In addition to the publicly visible interactions which occur in forums and comme
 
 This feature can be included when a [community site](/help/communities/overview.md#communitiessites) is created.
 
-The messaging feature provides the ability to:
+The messaging feature lets you do the following:
 
 **A** - send a message to one or more community members
 
@@ -79,7 +75,7 @@ To modify the configuration of the list of messages for **Inbox**, **Sent Items*
 
 * **Reply/View as Resource**
   
-  If checked, the Reply URL and View URL will reference a resource, else data is passed as query parameters in the URL.
+  If checked, the Reply URL and View URL reference a resource, or else data is passed as query parameters in the URL.
 
 * **Profile Display Form**
   
@@ -107,11 +103,11 @@ To modify the configuration of the list of messages for **Inbox**, **Sent Items*
 
 * **Delete Button**
   
-  If checked, displays a `Delete` button allowing a message to be marked as read. Will duplicate the delete functionality if **`Message Options`** is also checked.
+  If checked, displays a `Delete` button allowing a message to be marked as read. Duplicates the delete functionality if **`Message Options`** is also checked.
 
 * **Message Options**
   
-  If checked, displays **`Reply`**, **`Reply All`**, **`Forward`** and **`Delete`** buttons allowing a message to be resent or deleted. Will duplicate the delete functionality if **`Delete Button`** is also checked.
+  If checked, displays **`Reply`**, **`Reply All`**, **`Forward`**, and **`Delete`** buttons allowing a message to be resent or deleted. Duplicates the delete functionality if **`Delete Button`** is also checked.
 
 * **Messages Per Page**
   
@@ -123,13 +119,13 @@ To modify the configuration of the list of messages for **Inbox**, **Sent Items*
 
 * **Display User**
   
-  Choose either **`Sender`** or **`Recipients`** to determine whether to display the Sender or Recipients.
+  Choose either **`Sender`** or **`Recipients`** so you can determine whether to display the Sender or Recipients.
 
 ### Configure Compose Message {#configure-compose-message}
 
 To modify the configuration of the compose message page, open the site in [author edit mode](/help/communities/sites-console.md#authoring-site-content).
 
-* In `Preview` mode, select the **Messages** link to open the main messaging page. Then select the New Message button to open the `Compose Message` page.
+* In `Preview` mode, select the **Messages** link to open the main messaging page. Then select the New Message button so you can open the `Compose Message` page.
 
 * In `Edit` mode, select the main component on the page containing the Message body.
 * To access the configuraiton dialog, cancel inheritance by selecting the `link` icon.
@@ -173,7 +169,7 @@ To modify the configuration of the compose message page, open the site in [autho
 
 * **Subject Label**
   
-  Enter the text to display next to the `Subject` field. Default is `Subject`.
+  Enter the text that you want displayed next to the `Subject` field. Default is `Subject`.
 
 * **Show Attach File Field**
   
@@ -181,7 +177,7 @@ To modify the configuration of the compose message page, open the site in [autho
 
 * **Attach File Label**
   
-  Enter the text to display next to the `Attachment` field. Default is **`Attach File`**.
+  Enter the text that you want displayed next to the `Attachment` field. Default is **`Attach File`**.
 
 * **Show Content Field**
   
@@ -189,7 +185,7 @@ To modify the configuration of the compose message page, open the site in [autho
 
 * **Content Label**
   
-  Enter the text to display next to the `Content` field. Default is **`Body`**.
+  Enter the text that you want displayed next to the `Content` field. Default is **`Body`**.
 
 * **With Rich Text Editor**
   

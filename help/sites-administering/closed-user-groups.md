@@ -1,6 +1,6 @@
 ---
 title: Closed User Groups in AEM
-description: Learn about Closed User Groups in AEM.
+description: Learn about Closed User Groups and the beneifts they bring to scalability and security in AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security

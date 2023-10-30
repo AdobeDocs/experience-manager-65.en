@@ -1,7 +1,7 @@
 ---
 title: Trying out Experience Fragments in We.Retail
 seo-title: Trying out Experience Fragments in We.Retail
-description: Trying out Experience Fragments in We.Retail
+description: Learn how to try out Experience Fragments in Adobe Experience Manager using We.Retail.
 seo-description: Trying out Experience Fragments in We.Retail
 uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
 contentOwner: AEM Docs

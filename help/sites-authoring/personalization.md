@@ -1,14 +1,6 @@
 ---
 title: Personalization and Content Targeting
-seo-title: Personalization and Content Targeting
-description: Learn how AEM can create personalized content
-seo-description: Learn how AEM can create personalized content
-uuid: 3a1aaa3d-5f57-4fb7-a4be-523f0d274b79
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
-discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
+description: Learn how Adobe Experience Manager 6.5 can create personalized content.
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 ---
 # Personalization and Content Targeting {#personalization}

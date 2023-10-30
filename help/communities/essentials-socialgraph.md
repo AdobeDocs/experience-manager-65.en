@@ -1,6 +1,6 @@
 ---
 title: Social Graph Essentials
-description: Learn about the Following component and the Follow component.
+description: Learn about the fundamentals of Social Graph by using the Following and Follow components on a community site.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -56,7 +56,7 @@ The `following` component lists the members that are either following the curren
        <li><i>True </i>- The <code>following</code> component lists the members who the signed-in member <code>follows</code></li>
        <li><i>False </i>- The <code>following</code> component lists the members who <code>follow </code>the signed-in member</li>
       </ul> </li>
-    </ul> <p>Defaults to <i>true</i> if the property is missing. It is not possible to set this property using the edit dialog in Author mode. The property must be added to an instance of the <code>following</code> node using <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>Defaults to <i>true</i> if the property is missing. It is not possible to set this property using the edit dialog in Author mode. The property must be added to an instance of the <code>following</code> node by using <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>

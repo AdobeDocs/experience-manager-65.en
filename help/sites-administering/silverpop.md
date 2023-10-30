@@ -1,7 +1,7 @@
 ---
 title: Integrating with Silverpop Engage
 seo-title: Integrating with Silverpop Engage
-description: Learn how to integrate AEM with Silverpop Engage
+description: Learn how to integrate Adobe Experience Manager with Silverpop Engage.
 seo-description: Learn how to integrate AEM with Silverpop Engage
 uuid: e17deeb6-5339-4ead-9086-cbe2167cdec6
 contentOwner: Guillaume Carlino

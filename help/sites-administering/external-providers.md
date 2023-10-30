@@ -1,6 +1,6 @@
 ---
 title: Analytics with External Providers
-description: Learn about Analytics with External Providers.
+description: Learn how to configure your own instance of Generic Analytics Snippets to define a new service configuration.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration

@@ -1,18 +1,14 @@
 ---
-title: Author a New Community Site
-seo-title: Author a New Community Site
-description: How to author a new AEM Communities site
-seo-description: How to author a new AEM Communities site
-uuid: 4f609f5f-ef07-44fc-aeb3-1c616e120d46
+title: Author a Community Site
+description: Learn how to author an Adobe Experience Manager Communities site.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
 ---
-# Author a New Community Site{#author-a-new-community-site}
+# Author a Community Site{#author-a-new-community-site}
 
 ## Create a Community Site {#create-a-community-site}
 
@@ -23,7 +19,7 @@ Use the author instance to create a community site. On AEM Author instance:
 
 The Communities Sites console provides a wizard to guide one through the steps of creating a community site. It is possible to move forward to the `Next` step or `Back` to the previous step before committing the site in the final step.
 
-To begin creating a new community site:
+To begin creating a community site:
 
 * Select the `Create` button.
 
@@ -39,12 +35,12 @@ On the [Site Template step](/help/communities/sites-console.md#step2013asitetemp
 * **Community Site Description**: `A site for engaging with the community.`
 * **Community Site Root**: (leave blank for default root `/content/sites`)
 * **Cloud Configurations**: (leave blank if no cloud configurations are specified) provide path to the specified cloud configurations.
-* **Community Site Base Language**: (leave untouched for single language: English) use the drop-down list to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site will be created for each language added, and will exist within the same site folder following the best practice described in [Translating Content for Multilingual Sites](/help/sites-administering/translation.md). The root page of each site will contain a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.
+* **Community Site Base Language**: (leave untouched for single language: English) use the drop-down list to choose one *or more* base languages from the available languages&ndash;German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site is created for each language added, and exists within the same site folder following the best practice described in [Translating Content for Multilingual Sites](/help/sites-administering/translation.md). The root page of each site contains a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.
 
 * **Community Site Name**: engage
 
     * Double-check the name as it is not easily changed after the site is created
-    * The initial URL will be displayed underneath the Community Site Name
+    * The initial URL is displayed underneath the Community Site Name
     * For a valid URL, append a base language code + ".html"
     * *For example*, https://localhost:4502/content/sites/ `engage/en.html`
 
@@ -58,7 +54,7 @@ The Design step is presented in two sections for selecting the theme and brandin
 
 #### COMMUNITY SITE THEME {#community-site-theme}
 
-Select the desired style to apply to the template. When selected, the theme will be overlaid with a check mark.
+Select the desired style that you want applied to the template. When selected, the theme is overlaid with a check mark.
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
@@ -72,7 +68,7 @@ Select **Next**.
 
 ### Step 3: Settings {#step-settings}
 
-On the Settings step, before selecting `Next`, note that there are seven sections providing access to configurations involving user management, tagging, moderation, group management, analytics, and translation.
+On the Settings step, before selecting `Next`, there are seven sections providing access to configurations involving user management, tagging, moderation, group management, analytics, and translation.
 
 #### User Management {#user-management}
 
@@ -92,7 +88,7 @@ Check all checkboxes for [User Management](/help/communities/sites-console.md#us
 
 #### TAGGING {#tagging}
 
-The tags which may be applied to community content are controlled by selecting AEM namespaces previously defined through the [Tagging Console](/help/sites-administering/tags.md#tagging-console) (such as the [Tutorial namespace](/help/communities/setup.md#create-tutorial-tags)).
+The tags applied to community content are controlled by selecting AEM namespaces previously defined through the [Tagging Console](/help/sites-administering/tags.md#tagging-console) (such as the [Tutorial namespace](/help/communities/setup.md#create-tutorial-tags)).
 
 Finding namespaces is easy using type-ahead search. For example,
 
@@ -126,7 +122,7 @@ Accept the default global settings for [moderating](/help/communities/sites-cons
 
 #### ANALYTICS {#analytics}
 
-If Adobe Analytics is licensed and an Analytics cloud service and framework have been configured, then it is possible to enable Analytics and select the framework.
+If Adobe Analytics is licensed and an Analytics Cloud service and framework have been configured, then it is possible to enable Analytics and select the framework.
 
 See [Analytics Configuration for Communities Features](/help/communities/analytics.md).
 
@@ -134,7 +130,7 @@ See [Analytics Configuration for Communities Features](/help/communities/analyti
 
 #### TRANSLATION {#translation}
 
-The [Translation settings](/help/communities/sites-console.md#translation) specify the base language for the site as well as whether or not UGC may be translated and into which language, if so.
+The [Translation settings](/help/communities/sites-console.md#translation) specify the base language for the site and whether UGC may be translated and into which language, if so.
 
 * Check **Allow Machine Translation**
 * Leave default languages selected for translation by the default Machine Translation service
@@ -171,24 +167,23 @@ From left to right they are:
 
 * **Open Site**
   
-  Select the pencil icon to open the community site in author edit mode, to add and/or configure page components
+  Selecting the pencil icon opens the community site in Author edit mode, where you can add or configure page components.
 
 * **Edit Site**
   
-  Select the properties icon to open the community site for modification of properties, such as the title or to change the theme
+  Selecting the properties icon opens the community site for modification of properties, such as the title or to change the theme.
 
 * **Publish Site**
   
-  Select the world icon to publish the community site (for example if your publish server is running on your local machine, then to localhost:4503 by default)
+  Selecting the world icon publishes the community site (for example, if your publish server is running on your local machine, then to localhost:4503 by default).
 
 * **Export Site**
   
-  Select the export icon to create a package of the community site that is both stored in [package manager](/help/sites-administering/package-manager.md) and downloaded.
-  Note that UGC is not included in the site package.
+  Selecting the export icon creates a package of the community site that is both stored in [Package Manager](/help/sites-administering/package-manager.md) and downloaded. UGC is not included in the site package.
 
 * **Delete Site** 
   
-  Select the delete icon to delete the community site from within **[!UICONTROL Communities > Sites console]**. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
+  Selecting the delete icon deletes the community site from within **[!UICONTROL Communities > Sites console]**. This action removes all the items associated with the site, such as UGC, user groups, assets, and database records.
 
 ![siteactions](assets/siteactions.png)
 
@@ -228,7 +223,7 @@ For this new community site, given the site name "engage" in Step 1, the four ne
 * Community Engage Privileged members
 * Community Engage Site content manager
 
-Note that [Aaron McDonald](/help/communities/tutorials.md#demo-users) is a member of
+[Aaron McDonald](/help/communities/tutorials.md#demo-users) is a member of
 
 * Community Engage Community managers
 * Community Engage Moderators
@@ -242,7 +237,7 @@ Note that [Aaron McDonald](/help/communities/tutorials.md#demo-users) is a membe
 
 ## Configure for Authentication Error {#configure-for-authentication-error}
 
-Once a site has been configured and pushed to publish, [configure login mapping](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) on the publish instance. The benefit is that when login credentials are not entered correctly, the authentication error will redisplay the community site's login page with an error message.
+Once a site has been configured and pushed to publish, [configure log in mapping](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) on the publish instance. The benefit is that when login credentials are not entered correctly, the authentication error redisplays the community site's login page with an error message.
 
 Add a `Login Page Mapping` as
 
@@ -305,7 +300,7 @@ If unable to save changes, be sure that the node name is `localhost.4503`, with 
 
 #### Troubleshooting: Fail to Redirect {#troubleshooting-fail-to-redirect}
 
-The '**$**' at the end of the regular expression `sling:match`string is crucial, so that only exactly `https://localhost:4503/` is mapped, else the redirect value is prefixed to any path that might exist after the server:port in the URL. Thus, when AEM tries to redirect to the login page, it fails.
+The '**$**' at the end of the regular expression `sling:match`string is crucial, so that only `https://localhost:4503/` is mapped, else the redirect value is prefixed to any path that might exist after the server:port in the URL. Therefore, when AEM tries to redirect to the login page, it fails.
 
 ### Modify the Site {#modify-the-site}
 

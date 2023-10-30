@@ -1,19 +1,15 @@
 ---
 title: Using Liking
-seo-title: Using Liking
-description: Adding and configuring the Liking component
-seo-description: Adding and configuring the Liking component
-uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
+description: Learn how to add and configure the Liking component so that users can express an opinion about a particular piece of content, such as a comment.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 exl-id: 226fa91c-4a12-4586-b694-1a52fa2ba358
 ---
 # Using Liking {#using-liking}
 
-The `Liking` component is a useful tool that allows users to express an opinion about a particular piece of content, such as an comment within a forum. With the `Liking` component, members select the heart icon to indicate a positive opinion.
+The `Liking` component is a useful tool that allows users to express an opinion about a particular piece of content, such as a comment within a forum. With the `Liking` component, members select the heart icon to indicate a positive opinion.
 
 ## Adding Liking to a Page {#adding-liking-to-a-page}
 
@@ -21,17 +17,17 @@ To add a `Liking` component to a page in author mode, use the component browser 
 
 * `Communities / Liking`
 
-and drag it into place on a page, such as a position relative to the feature for users to like.
+And drag it into place on a page, such as a position relative to the feature for users to like.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-liking.md#essentials-for-client-side) are included, this is how the `Liking` component will appear.
+When the [required client-side libraries](essentials-liking.md#essentials-for-client-side) are included, this is how the `Liking` component appears.
 
 ![liking-component](assets/liking-component.png)
 
 ## Configuring Liking {#configuring-liking}
 
-Select the placed `Liking` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Liking` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure-new](assets/configure-new.png)
 
@@ -55,7 +51,7 @@ Under the **[!UICONTROL Texts & Labels]** tab, specify the properties used to re
 
 ### Members {#members}
 
-Members may change their like at any time.
+Members may change their likes at any time.
 
 ### Anonymous {#anonymous}
 

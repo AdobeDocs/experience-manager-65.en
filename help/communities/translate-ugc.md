@@ -1,20 +1,16 @@
 ---
-title: Translating User Generated Content
-seo-title: Translating User Generated Content
-description: How the translation feature works
-seo-description: How the translation feature works
-uuid: 7ee3242c-2aca-4787-a60d-b807161401ad
+title: Translating User-Generated Content
+description: Learn how the translation of UGC content allows site visitors and members to experience a global community by removing language barriers.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
 ---
-# Translating User Generated Content {#translating-user-generated-content}
+# Translating User-Generated Content {#translating-user-generated-content}
 
-The translation feature for AEM Communities extends the concept of [translating page content](../../help/sites-administering/translation.md) to the user generated content (UGC) posted to community sites using [social component framework (SCF) components](scf.md).
+The translation feature for Adobe Experience Manager (AEM) Communities extends the concept of [translating page content](../../help/sites-administering/translation.md) to the user-generated content (UGC) posted to community sites using [social component framework (SCF) components](scf.md).
 
 The translation of UGC enables site visitors and members to experience a global community by removing language barriers.
 
@@ -28,17 +24,17 @@ As an example, suppose:
 
 ## Overview {#overview}
 
-This seciton of the documentation specifically discusses how the translation service works with UGC while assuming an understanding of how to connect AEM to a [translation service provider](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) and integrate that service into a website by configuring a [translation integration framework](../../help/sites-administering/tc-tic.md).
+This section specifically discusses how the translation service works with UGC. It also assumes that you have an understanding of how to connect AEM to a [translation service provider](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) and integrate that service into a website by configuring a [translation integration framework](../../help/sites-administering/tc-tic.md).
 
 When a translation service provider is associated with the site, each language copy of the site maintains its own threads of UGC posted through SCF components such as comments.
 
-When a translation integration framework is configured in addition to the translation service provider, it is possible for each language copy of the site to share a single thread of UGC, thus providing global communication across language copies. Instead of a discussion thread segregated by language, the configured [global shared store](#global-translation-of-ugc) enables the entire thread to be visible regardless from which language copy it is being viewed. Further, multiple translation integration configurations can be configured specifying different global shared stores for a logical grouping of global participants, such as by regions.
+When a translation integration is configured in addition to the translation service provider, it is possible for each language copy of the site to share a single thread of UGC, providing global communication across language copies. Instead of a discussion thread segregated by language, the configured [global shared store](#global-translation-of-ugc) enables the entire thread to be visible regardless from which language copy it is being viewed. Further, multiple translation integration configurations can be configured specifying different global shared stores for a logical grouping of global participants, such as by regions.
 
 ## The Default Translation Service {#the-default-translation-service}
 
 AEM Communities includes a [trial license](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) for a [default translation service](../../help/sites-administering/tc-msconf.md) enabled for several languages.
 
-When [creating a community site](sites-console.md), the default translation service is enabled when `Allow Machine Translation` is checked from the [TRANSLATION](sites-console.md#translation) sub-panel.
+When [creating a community site](sites-console.md), the default translation service is enabled when `Allow Machine Translation` is checked from the [TRANSLATION](sites-console.md#translation) subpanel.
 
 >[!CAUTION]
 >
@@ -48,17 +44,17 @@ When [creating a community site](sites-console.md), the default translation serv
 
 ## Global Translation of UGC {#global-translation-of-ugc}
 
-When a website has multiple [language copies](../../help/sites-administering/tc-prep.md), the default translation service does not recognize that UGC entered on one site may be related to UGC entered on another, as when the UGC is, essentially, generated by the same component (the language copy of the page containing the component).
+When a website has multiple [language copies](../../help/sites-administering/tc-prep.md), the default translation service does not recognize that UGC entered on one site may be related to UGC entered on another. This is true when the UGC is generated by the same component (the language copy of the page containing the component).
 
-It is similar to groups of people discussing a topic unaware of comments being made in groups other than their own, as compared to eveyrone in one large group participating in one conversation.
+It is similar to groups of people discussing a topic. They are unaware of comments that are made in groups other than their own, as compared to everyone in a large group participating in one conversation.
 
 If "one group conversation" is desired, it is possible to enable global translation across a website with multiple language copies, such that the entire thread is visible regardless from which language copy it is being viewed.
 
-For example, if a forum was established on the base site, language copies created, and global translation was enabled, then a topic posted to the forum made in one language copy would appear in all language copies. The same would be true for any replies, regardless of from which language copy the reply was entered. The result would be that the topic and its entire thread of replies would be visible regardless of from which language copy the topic is being viewed.
+For example, if a forum was established on the base site, language copies created, and global translation was enabled, a topic posted to the forum made in one language copy would appear in all language copies. The same would be true for any replies, regardless of from which language copy the reply was entered. The result would be that the topic and its entire thread of replies would be visible regardless of from which language copy the topic is being viewed.
 
 >[!CAUTION]
 >
->Any UGC which existed prior to global translation is no longer visible.
+>Any UGC that existed before global translation is no longer visible.
 >
 >While the UGC is still in the [common store](working-with-srp.md), it is located under the language-specific UGC location, while new content, added after global translation was configured, is being retrieved from the global shared store location.
 >
@@ -66,7 +62,7 @@ For example, if a forum was established on the base site, language copies create
 
 ### Translation Integration Configuration {#translation-integration-configuration}
 
-To create a new Translation Integration, which integrates a Translation Service connector with the web site on the author instance:
+To create a Translation Integration, which integrates a Translation Service connector with the web site on the author instance:
 
 * Sign in as an administrator
 * From the [main menu](http://localhost:4502/)
@@ -82,7 +78,7 @@ To create a new Translation Integration, which integrates a Translation Service 
 
   ![show-configuration](assets/translation-integration1.png)
 
-* Select `[+]` icon next to **[!UICONTROL Available Configurations]** to create a new configuration
+* Select `[+]` icon next to **[!UICONTROL Available Configurations]** so you can create a configuration.
 
 #### Create Configuration Dialog {#create-configuration-dialog}
 
@@ -106,26 +102,26 @@ To create a new Translation Integration, which integrates a Translation Service 
 
 ![configuration-dialog](assets/translation-integration3.png)
 
-For detailed instructions visit [Creating a Translation Integration Configuration](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
+For detailed instructions, see [Creating a Translation Integration Configuration](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration).
 
 * **[!UICONTROL Sites]** tab: can leave as defaults.
 
 * **[!UICONTROL Communities]** tab:
   * **[!UICONTROL Translation Provider]**
-    Select the translation provider from the drop down list. Default is `microsoft`, the trial service.
+    Select the translation provider from the drop-down list. Default is `microsoft`, the trial service.
 
   * **[!UICONTROL Content Category]**
     Select a category that describes the content being translated. Default is `General.`
 
   * **[!UICONTROL Choose A Locale...]**
-    (Optional) By selecting a locale for storing UGC, posts from all language copies will appear in one global conversation. By convention, choose the locale for the [base language](sites-console.md#translation) for the website. Choosing `No Common Store` will disable global translation. By default, global translation is disabled.
+    (Optional) By selecting a locale for storing UGC, posts from all language copies appear in one global conversation. By convention, choose the locale for the [base language](sites-console.md#translation) for the website. Choosing `No Common Store` disables global translation. By default, global translation is disabled.
 
 * **[!UICONTROL Assets]** tab: can leave as defaults.
 * Select **[!UICONTROL OK]**
 
 #### Activation {#activation}
 
-The new translation integration cloud service will need to be activated to the publish environment. When associated with a web site, if not yet activated, the activation workflow will prompt to publish this cloud service configuration when the page with which it is associated is published.
+The new translation integration cloud service must be activated to the Publish environment. When associated with a web site, if not yet activated, the activation workflow prompts to publish this cloud service configuration when the page with which it is associated is published.
 
 ## Managing Translation Settings {#managing-translation-settings}
 
@@ -133,7 +129,7 @@ The new translation integration cloud service will need to be activated to the p
 >
 >**Preferred Language**
 >
->For the purpose of detecting whether the post is in a language different from the preferred language, the preferred language of the site visitor must be established.
+>When detecting whether the post is in a language different from the preferred language, the preferred language of the site visitor must be established.
 >
 >The preferred language is the language preference set in a user's profile, when the site visitor is signed in and has specified a language preference.
 >
@@ -143,9 +139,9 @@ The new translation integration cloud service will need to be activated to the p
 
 #### User Profile {#user-profile}
 
-All Communities Sites provide a user profile that signed in members can edit to identify themselves to the community and to set their preferences.
+All Communities Sites provide a user profile that signed-in members can edit to identify themselves to the community and to set their preferences.
 
-One such setting is whether or not to always display community content in their preferred language. By default, the setting is not set and will default to the system setting. The user can change the setting to either On or Off, thereby overriding the system setting.
+One such setting is whether to always display community content in their preferred language. By default, the setting is not set and defaults to the system setting. The user can change the setting to either On or Off to override the system setting.
 
 When pages are automatically translated into the user's preferred language, the UI for showing the original text and improving the translation are still made available.
 

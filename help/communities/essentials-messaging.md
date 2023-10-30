@@ -1,14 +1,10 @@
 ---
 title: Messaging Essentials
-seo-title: Messaging Essentials
-description: Messaging component overview
-seo-description: Messaging component overview
-uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
+description: Learn about the details of working with and using the Messaging component to include a messaging feature on a website.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
 ---
@@ -51,7 +47,7 @@ This page documents the details of working with using the Messaging component to
 
 **Message List** 
 
-(for Inbox, Sent, and Trash)
+(For Inbox, Sent, and Trash)
 
 <table>
  <tbody>
@@ -87,9 +83,9 @@ See also [Client-side Customizations](/help/communities/client-customize.md)
 ## Essentials for Server-Side {#essentials-for-server-side}
 
 * [Configuring Messaging](/help/communities/configure-messaging.md)
-* [Messaging client APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) for SCF components
-* [Messaging APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) for the service
-* [Messaging Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [Messaging client APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) for SCF components
+* [Messaging APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) for the service
+* [Messaging Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Server-side Customizations](/help/communities/server-customize.md)
 
 >[!CAUTION]

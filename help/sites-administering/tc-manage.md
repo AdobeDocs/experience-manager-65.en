@@ -1,6 +1,6 @@
 ---
 title: Managing Translation Projects
-description: Learn how to manage translation projects in AEM.
+description: Learn how to manage translation projects in Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 ---
 # Managing Translation Projects{#managing-translation-projects}
@@ -427,7 +427,7 @@ You can manually create a translation project if you prefer to use the Projects 
 
 >[!NOTE]
 >
->To create a project, your account must be a member of the `project-administrators` group.
+>To create a project, your account must be a member of the `projects-administrators` group.
 
 When you manually create a translation project, you must provide values for the following translation-related properties in addition to the [basic properties](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
 

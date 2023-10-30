@@ -166,7 +166,7 @@ An Adobe Analytics framework is a set of mappings between Adobe Analytics variab
 
    >[!NOTE]
    >
-   >It can take up to 10 seconds more to timeout report fetch operation then the specifed number of seconds.
+   >It can take up to 10 seconds more to timeout report fetch operation then the specified number of seconds.
 
 1. Repeat step 1-3 on publish instance to configure analytics.
 

@@ -1,14 +1,10 @@
 ---
 title: Communities Sites
-seo-title: Communities Sites
-description: Overview of the AEM Communities documentation
-seo-description: Overview of the AEM Communities documentation
-uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
+description: Learn about the fundamentals of Adobe Experience Manager (AEM) Communities for administer's who are already familiar with its basic features.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
 ---
@@ -31,7 +27,7 @@ For an overview and getting started tutorials, visit:
 
     * [Sites](sites-console.md)
 
-        * [Groups (sub-communities)](groups.md)
+        * [Groups (subcommunities)](groups.md)
 
     * [Moderation](moderation.md)
     * [Members and Groups Management](members.md)
@@ -64,8 +60,8 @@ A major feature of AEM Communities is the generation of user generated content (
 * [Tunnel Service](deploy-communities.md#tunnel-service-on-author): allows publish-side members and member groups to be accessed from the author environment.
 * [Members and Groups consoles](members.md): allows publish-side members and member groups to be created and managed from the author environment.
 * [User Synchronization](sync.md): for synchronizing members and member groups across multiple publish instances.
-* [Social Login with Facebook and Twitter](social-login.md): ability for site visitors to become a community member using their Facebook or Twitter credentials.
-* [Scoring and Badges](implementing-scoring.md): ability for badges to be assigned to identify role(s) of a member and for members to earn badges through their participation in the community.
+* [Social Log in with Facebook and Twitter](social-login.md): ability for site visitors to become a community member using their Facebook or Twitter credentials.
+* [Scoring and Badges](implementing-scoring.md): ability for badges to be assigned to identify roles of a member and for members to earn badges through their participation in the community.
 * [Notifications](notifications.md): ability for members to be notified of activity they follow.
 * [Subscriptions](subscriptions.md): ability for members to interact with the community using external email.
 * [Messaging](messaging.md): ability for members to interact with the community using internal messages.
@@ -82,12 +78,12 @@ It is important to install the most recent Communities release on the AEM platfo
 
 * [Latest Communities Feature Pack](deploy-communities.md#latestfeaturepack)
 
-See the deployment page for other Communities specific information, such as for [Upgrading](upgrade.md), [Dispatcher](dispatcher.md) and [Replication](deploy-communities.md#replication-agents-on-author).
+See the deployment page for other Communities-specific information, such as for [Upgrading](upgrade.md), [Dispatcher](dispatcher.md), and [Replication](deploy-communities.md#replication-agents-on-author).
 
 ## Related Communities Documentation {#related-communities-documentation}
 
-* Visit [Deploying Communities](deploy-communities.md) to learn about recommended deployments.
+* Visit [Deploying Communities](deploy-communities.md) where you can learn about recommended deployments.
 
-* Visit [Developing Communities](communities.md) to learn about the social component framework (SCF) and customizing Communities components and features.
+* Visit [Developing Communities](communities.md) where you can learn about the social component framework (SCF) and customizing Communities components and features.
 
-* Visit [Authoring Communities Components](author-communities.md) to learn how to author with and configure Communities components.
+* Visit [Authoring Communities Components](author-communities.md) where you can learn how to author with and configure Communities components.

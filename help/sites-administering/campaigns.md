@@ -1,7 +1,7 @@
 ---
 title: Campaigns
 seo-title: Campaigns
-description: Learn the basics of using AEM Campaigns.
+description: Learn the basics of using Adobe Experience Manager (AEM) Campaigns.
 seo-description: Learn the basics of using AEM Campaigns.
 uuid: f4be814f-8b0f-4089-88bb-0141227bce02
 contentOwner: Guillaume Carlino

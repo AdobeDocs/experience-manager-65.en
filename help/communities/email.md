@@ -1,6 +1,6 @@
 ---
 title: Configuring Email
-description: Email configuration for Communities
+description: Learn how to configure email notifications and subscriptions for Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering

@@ -1,14 +1,10 @@
 ---
 title: Add Comment to Sample Page
-seo-title: Add Comment to Sample Page
-description: Add Custom Comments to a page
-seo-description: Add Custom Comments to a page
-uuid: ab258960-6de2-4943-80a7-e72904c0fd8e
+description: Learn how an instance of a website's comment system must set its resourceType to be the custom comment system and include all necessary client libraries.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
 ---
@@ -24,17 +20,17 @@ The [Community Components Guide](/help/communities/components-guide.md) identifi
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
-Note the three client libraries required for Comments to render and function properly. These will need to be included where the extended Comments are referenced, and the [extended Comments' client library](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
+Note the three client libraries required for Comments to render and function properly. These must be included where the extended Comments are referenced, and the [extended Comments' client library](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
 ![comments-component1](assets/comments-component1.png)
 
 ### Add Custom Comments to a Page {#add-custom-comments-to-a-page}
 
-As there can be only one Comment system per page, it is simpler to create a sample page as described in the short [Create a Sample Page](/help/communities/create-sample-page.md) tutorial.
+As there can be only one Comment system per page, it is simpler to create a sample page as described in the brief [create a sample page](/help/communities/create-sample-page.md) tutorial.
 
 Once created, enter Design mode and make available the Custom component group to allow the `Alt Comments` component to be added to the page.
 
-In order for the Comment to appear and function properly, the client libraries for Comments must be added to the clientlibslist for the page (see [Clientlibs for Communities Components](/help/communities/clientlibs.md)).
+For the Comment to appear and function properly, the client libraries for Comments must be added to the clientlibslist for the page (see [Clientlibs for Communities Components](/help/communities/clientlibs.md)).
 
 #### Comments Clientlibs on Sample Page {#comments-clientlibs-on-sample-page}
 

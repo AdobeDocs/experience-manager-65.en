@@ -85,6 +85,17 @@ When using persisted GraphQL queries with a CDN, it is recommended to set approp
 
 Each persisted query can have its own specific set of cache control headers. The headers can be set over the [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
+They can also be set using the **cURL** command line tool. For example, using a `PUT` request to create a wrapped plain query with cache control.
+
+```shell
+$ curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
 <!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
 -->
 
@@ -93,6 +104,7 @@ Each persisted query can have its own specific set of cache control headers. The
 See:
 
 * [Caching your persisted queries](/help/sites-developing/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [How to persist a GraphQL query](/help/sites-developing/headless/graphql-api/persisted-queries.md#how-to-persist-query)
 <!--
 * [Managing cache for your persisted queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache)
 -->

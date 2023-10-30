@@ -1,6 +1,6 @@
 ---
 title: Workflow Process Reference
-description: Workflow Process Reference
+description: Refer to this process reference for workflows in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem

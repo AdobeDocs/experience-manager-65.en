@@ -1,7 +1,7 @@
 ---
 title: Client Context
 seo-title: Client Context
-description: Learn how to use the Client Context in AEM.
+description: Learn how to use the Client Context to see information about the current page and visitor in Adobe Experience Manager.
 seo-description: Learn how to use the Client Context in AEM.
 uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service

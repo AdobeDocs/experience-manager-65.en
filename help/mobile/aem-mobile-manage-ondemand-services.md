@@ -1,14 +1,10 @@
 ---
 title: Previewing with Preflight
-seo-title: Previewing with Preflight
-description: This page explains Previewing with Preflight app.
-seo-description: With the Mobile On Demand Preflight app, you can view all projects to which you have access. Follow this page to learn more about this.
-uuid: bea83055-8172-4634-88ec-5d3f163ad8e0
+description: Learn how to use the Mobile On-Demand Preflight app so you can view all projects to which you have access.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
 ---
 # Previewing with Preflight {#previewing-with-preflight}
@@ -21,7 +17,7 @@ This page explains Previewing with Preflight app.
 
 The following actions are performed on the application as a whole.
 
-With the Mobile On Demand Preflight app, you can view all projects to which you have access. Once you select a project, you can then preview the app contents, including browse pages and articles to get a sense of how the app looks and performs on various devices.
+With the Mobile On-Demand Preflight app, you can view all projects to which you have access. Once you select a project, you can then preview the app contents, including browsing pages and articles to get a sense of how the app looks and performs on various devices.
 
 >[!NOTE]
 >
@@ -33,13 +29,13 @@ With the Mobile On Demand Preflight app, you can view all projects to which you 
 1. Click the ellipsis (...) from the **Manage Articles** (or Banners/Collections) tile.
 1. Select **Preflight** from the action bar.
 1. Click **Activate Preflight** from the dialog.
-1. You app will now be ready for preview on the Mobile On-Demand Preflight app.
+1. Your app is now ready for preview on the Mobile On-Demand Preflight app.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->The AEM Preflight app is used for previewing content and browse pages. To learn in-depth about Preflight App, click [here](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>The AEM Preflight app is used for previewing content and browsing pages. To learn in-depth about Preflight App, click [here](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Getting Ahead {#getting-ahead}

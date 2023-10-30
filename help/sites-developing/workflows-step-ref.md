@@ -1,7 +1,7 @@
 ---
 title: Workflow Step Reference
 seo-title: Workflow Step Reference
-description: Workflow Step Reference
+description: Refer to this step reference for workflows in Adobe Experience Manager.
 seo-description: null
 uuid: 88bf6997-73a1-4639-82aa-5dff08d3ef86
 contentOwner: User

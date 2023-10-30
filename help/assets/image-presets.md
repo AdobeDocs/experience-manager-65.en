@@ -1,6 +1,6 @@
 ---
 title: Apply Dynamic Media Image Presets
-description: Learn how to apply image presets in Dynamic Media
+description: Learn how you can enable assets to dynamically deliver images at different sizes, in different formats, or with other image properties that are generated dynamically.
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -13,7 +13,7 @@ exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
 ---
 # Apply Dynamic Media image presets {#applying-image-presets}
 
-Image presets enable assets to dynamically deliver images at different sizes, in different formats, or with other image properties there are generated dynamically. You can choose a preset when you export images. The preset reformats images to the specifications that your administrator has specified.
+Image presets enable assets to dynamically deliver images at different sizes, in different formats, or with other image properties that are generated dynamically. You can choose a preset when you export images. The preset reformats images to the specifications that your administrator has specified.
 
 In addition, you can choose an image preset that is responsive (designated by the **[!UICONTROL RESS]** button after you select it).
 

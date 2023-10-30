@@ -1,12 +1,10 @@
 ---
 title: Blog Feature
-description: Community information in a journaling format
-uuid: 7323063f-81e8-45c3-9035-bf7df6124830
+description: Learn how the blog feature supports providing community information in a journaling format. Entries are made in the Publish environment by authorized users.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 ---
@@ -14,9 +12,9 @@ exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 
 ## Introduction {#introduction}
 
-The blog feature for AEM Communities has transformed from an authoring activity to a true community activity that takes place in the publish environment.
+The blog feature for AEM Communities has transformed from an authoring activity to a true community activity that takes place in the Publish environment.
 
-The blog feature supports providing community information in a journaling format. Blog entries are made in the publish environment by authorized members (registered, signed-in users).
+The blog feature supports providing community information in a journaling format. Blog entries are made in the Publish environment by authorized members (registered, signed-in users).
 
 The blog feature provides :
 
@@ -77,7 +75,7 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **Min Image Size for Thumbnail**
   
-  Minimum size (in bytes) of image for generating thumbnail for inline images. The default value is 100000bytes (100 kb).
+  Minimum size (in bytes) of image for generating thumbnail for inline images. The default value is 100000 bytes (100 kb).
 
 * **Max Thumbnail Size**
   
@@ -127,7 +125,7 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **Allow Tagging**
   
-  If checked, allow members to add tag labels to their post (see **Tag field** tab). Default is unchecked.
+  If checked, allow members to add tag labels to their posts (see **Tag field** tab). Default is unchecked.
 
 * **Allow File Uploads**
   
@@ -139,7 +137,7 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **Allowed File Types**
   
-  Relevant only if `Allow File Uploads` is checked. A comma-separated list of file extensions with the "dot" separator. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those file types that are not specified, cannot be uploaded. Default is none specified such that all file types are allowed.
+  Relevant only if `Allow File Uploads` is checked. A comma-separated list of file extensions with the "dot" separator. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those file types that are not specified cannot be uploaded. Default is none specified such that all file types are allowed.
 
 * **Max Attach Image File Size**
   
@@ -155,7 +153,7 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **Allow Users to Delete Comments and Topics**
   
-  If checked, allow members to delete the comments and blog entries they posted. Default is unchecked.
+  If checked, allow members to delete the comments and blog entries that they posted. Default is unchecked.
 
 * **Allow Following**
   
@@ -221,7 +219,7 @@ Under the **User Moderation** tab, specify the moderation settings :
 
 #### Tag field tab {#tag-field-tab}
 
-Under the **Tag field** tab, specify which tags can be applied if **Allow Tagging** is check on the **Settings** tab :
+Under the **Tag field** tab, specify which tags can be applied if **Allow Tagging** is checked on the **Settings** tab :
 
 * **Allowed Namespaces**
   

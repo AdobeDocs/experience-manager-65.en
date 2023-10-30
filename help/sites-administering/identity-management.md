@@ -1,7 +1,7 @@
 ---
 title: Identity Management
 seo-title: Identity Management
-description: Learn about identity management in AEM.
+description: Learn about the inner workings of identity management in AEM.
 seo-description: Learn about identity management in AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
 contentOwner: Guillaume Carlino

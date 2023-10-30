@@ -1,11 +1,6 @@
 ---
 title: Editing content page properties
-description: Define the required properties for a page.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: Define the required properties for a page in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 ---
 # Editing Page Properties{#editing-page-properties}

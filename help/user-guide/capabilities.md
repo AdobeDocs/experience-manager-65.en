@@ -1,8 +1,6 @@
 ---
 title: AEM 6.5 Capabilities User Guide
-seo-title: AEM 6.5 Capabilities User Guide
-description: An overview of the essential capabilities of AEM 6.5
-seo-description: An overview of the essential capabilities of AEM 6.5
+description: An overview of the essential capabilities of Adobe Experience Manager 6.5.
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
 ---
 # AEM 6.5 Capabilities User Guides {#aem-65-capabilities-user-guides}

@@ -1,16 +1,7 @@
 ---
 title: Translating Content for Multilingual Sites
-seo-title: Translating Content for Multilingual Sites
 description: Learn how to translate content for multilingual sites.
-seo-description: Learn how to translate content for multilingual sites.
-uuid: 69b3e3a9-6773-4759-8178-aaa612e4c170
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 1e0a68c5-1583-4103-9dbb-7a53faa03c06
-docset: aem65
-legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
 feature: Language Copy
 exl-id: 6ccfe612-8cfd-4ca2-ad01-8e4af36d44fa
 ---
@@ -34,7 +25,7 @@ If your translation service provider does not provide a connector to integration
 
 >[!NOTE]
 >
->Your user needs to be a member of the project-administrators group to use the Language Copy features.
+>Your user needs to be a member of the projects-administrators group to use the Language Copy features.
 
 ## Best Practices {#best-practices}
 

@@ -1,12 +1,10 @@
 ---
 title: QnA Essentials
-description: Questions and answers forum feature
-uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
+description: Learn the fundamentals of working with the questions and answers (QnA) Forum feature in Adobe Experience Manager Communities.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
 ---
 # QnA Essentials {#qna-essentials}

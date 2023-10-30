@@ -1,6 +1,6 @@
 ---
 title: User Synchronization
-description: Learn about user synchronization in AEM.
+description: Learn about the inner workings of user synchronization in AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security

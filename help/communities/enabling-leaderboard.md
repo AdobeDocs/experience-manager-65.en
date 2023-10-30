@@ -1,14 +1,10 @@
 ---
 title: Leaderboard Feature
-seo-title: Leaderboard Feature
-description: Adding a Leaderboard component to a page
-seo-description: Adding a Leaderboard component to a page
-uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
+description: Learn how the Leaderboard component lets you see how members interact within the community by ranking members based on points earned and expertise.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
 ---
@@ -16,9 +12,9 @@ exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
 
 ## Introduction {#introduction}
 
-The `Leaderboard` component provides the ability to obtain a sense of how members are interacting within the community by ranking members according to points earned (basic scoring) or their expertise (advanced scoring).
+The `Leaderboard` component helps you get a sense of how members are interacting within the community by ranking members according to points earned (basic scoring) or their expertise (advanced scoring).
 
-Prior to including the leaderboard component on a page, it is necessary to configure [Communities Scoring and Badges](/help/communities/implementing-scoring.md).
+Before including the leaderboard component on a page, it is necessary to configure [Communities Scoring and Badges](/help/communities/implementing-scoring.md).
 
 This section of the documentation describes:
 
@@ -31,7 +27,7 @@ To add a `Leaderboard` component to a page in author mode, locate the component
 
 * `Communities / Leaderboard`
 
-and drag it into place on a page.
+And drag it into place on a page.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
@@ -41,7 +37,7 @@ When first placed on a page of a community site, this is how the component appea
 
 ### Configuring Leaderboard {#configuring-leaderboard}
 
-Select the placed `Leaderboard` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Leaderboard` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure-new](assets/configure-new.png) 
 
@@ -54,7 +50,7 @@ Under the **[!UICONTROL Settings]** tab, specify what information related to the
 * **Display Name**
 
   A descriptive name to display for the board, reflecting the rules selected for displaying badges and scores.
-  Default is `Leaderboard`, if nothing entered.
+  Default is `Leaderboard` if nothing is entered.
 
 * **Badge**
 
@@ -89,7 +85,7 @@ Under the **Rules** tab, the community site, and its scoring and badging rules
 
 * **Display Limit**
 
-  Number of members to display per page.Default is 10.
+  Number of members to display per page. Default is 10.
 
 ### Example: Participants Leaderboard {#example-participants-leaderboard}
 

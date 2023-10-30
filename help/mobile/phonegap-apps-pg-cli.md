@@ -1,12 +1,10 @@
 ---
 title: Developing Apps with PhoneGap CLI
-description: Learn about developing apps with PhoneGap CLI.
-uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
+description: Learn how to develop apps for mobile with PhoneGap CLI using a bootstrapped development environment.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
 ---
 # Developing Apps with PhoneGap CLI{#developing-apps-with-phonegap-cli}
@@ -17,7 +15,7 @@ exl-id: fbeceb70-b199-478b-907b-253ed212ff99
 
 At any given time, as a developer you can run your app on a device or within an emulator, provided you've configured your development environment.
 
-To run the following examples, you need a system that runs OS X (Mac) with Xcode, or a Mac/Win/Linux system with the Android&trade; SDK installed.
+To run the following examples, you need a system that runs macOS X with Xcode, or a Mac/Win/Linux system with the Android&trade; SDK installed.
 
 ## Bootstrap your development environment {#bootstrap-your-development-environment}
 
@@ -35,7 +33,7 @@ For Android&trade;: To develop for iPhones and iPads, you need Google's Android&
 
 ## Download the Source {#download-the-source}
 
-Once you've successfully bootstrapped your development environment, download the source from the AEM App Build Tile:
+When you have successfully bootstrapped your development environment, download the source from the AEM App Build Tile:
 
 * Click the PhoneGap Build tile dropdown chevron.
 
@@ -125,7 +123,7 @@ phonegap run <platform> --emulator
 
 * Open Safari
 * Click Develop in the menu bar
-* Select iOS Simulator sub menu
+* Select iOS Simulator submenu
 * Click home.html
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
@@ -147,7 +145,7 @@ You can set breakpoints anywhere in your source. When you interact with your emu
 
 >[!NOTE]
 >
->To see the values of variables, in the current method, hover your mouse.
+>To see the values of variables in the current method, hover your mouse.
 
 ## The Next Steps {#the-next-steps}
 

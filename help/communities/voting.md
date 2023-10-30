@@ -1,14 +1,10 @@
 ---
 title: Using Voting
-seo-title: Using Voting
-description: Adding the Voting component to a page
-seo-description: Adding the Voting component to a page
-uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
+description: Learn how to add the Voting component to a page that lets signed-in community members rate a particular piece of content, such as an answer.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 exl-id: aa90bf1b-6053-4949-b061-232d72b80682
 ---
 # Using Voting {#using-voting}
@@ -17,17 +13,17 @@ The `Voting` component is a useful tool that allows community members to rate a 
 
 ## Adding Voting to a Page {#adding-voting-to-a-page}
 
-To add a `Voting` component to a page in author mode, use the component browser to locate `Communities / Voting` and drag it into place on a page, such as a position relative to the feature for users to vote on.
+To add a `Voting` component to a page in Author mode, use the component browser. Locate `Communities / Voting` and drag it into place on a page, such as a position relative to the feature for users to vote on.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-voting.md#essentials-for-client-side) are included, this is how the `Voting` component will appear.
+When the [required client-side libraries](essentials-voting.md#essentials-for-client-side) are included, this is how the `Voting` component appears.
 
 ![voting-component](assets/voting-component.png)
 
 ## Configuring Voting {#configuring-voting}
 
-Select the placed `Voting` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Voting` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure](assets/configure-new.png)
 

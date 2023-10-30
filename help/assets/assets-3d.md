@@ -1,6 +1,6 @@
 ---
 title: Working with 3D assets in Dynamic Media
-description: Learn how to work with 3D assets in Dynamic Media
+description: Learn how you can upload, manage, view, and deliver 3D assets in Dynamic Media as an immersive experience.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -123,7 +123,7 @@ See also [Preview assets using the software interface](/help/assets/previewing-a
     | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
     | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
     | **Reset**  | Near the lower-right corner of the page, select the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
-    | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, select the Fullscreen icon.  |   |   |
+    | **Full screen mode**  | To enter full-screen mode, in the lower-right corner of the page, select the Fullscreen icon.  |   |   |
 
 1. In the upper-right corner of the page, select **[!UICONTROL Close]** to return to the Assets page.
 
@@ -156,7 +156,7 @@ See also [Preview assets using the software interface](/help/assets/previewing-a
     | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
     | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
     | **Reset**  | Near the lower-right corner of the page, select the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
-    | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, select the Fullscreen icon.  |   |   |
+    | **Full screen mode**  | To enter full-screen mode, in the lower-right corner of the page, select the Fullscreen icon.  |   |   |
 
 ## About working with the 3D Media component {#working-with-three-d-media-component}
 

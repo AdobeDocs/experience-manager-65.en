@@ -1,6 +1,6 @@
 ---
 title: SPA and Server-Side Rendering
-description: "SPA and Server-Side Rendering"
+description: Learn about SPA and server-side rendering in Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa

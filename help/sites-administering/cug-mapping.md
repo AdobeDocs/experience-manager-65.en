@@ -1,7 +1,7 @@
 ---
 title: Custom User Group Mapping in AEM 6.5
 seo-title: Custom User Group Mapping in AEM 6.5
-description: Lear how Custom User Group Mapping works in AEM.
+description: Lear how Custom User Group Mapping works in Adobe Experience Manager.
 seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User

@@ -1,13 +1,6 @@
 ---
 title: Using the Rich Text Editor to Author Content
-seo-title: Using the Rich Text Editor to Author Content
-description: Using the Rich Text Editor to Author Content
-seo-description: Using the Rich Text Editor to Author Content
-uuid: 70f4d4b2-cbc6-4fef-9262-1696804008d8
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
-docset: aem65
+description: Using the Rich Text Editor to Author Content in Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 ---
 # Using the Rich Text Editor to Author Content {#use-rich-text-editor-to-author-content}

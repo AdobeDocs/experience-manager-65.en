@@ -1,6 +1,6 @@
 ---
 title: Basic Configuration Concepts
-description: Learn how to configure Adobe Experience Manager.
+description: Learn how to configure Adobe Experience Manager for your own specific requirements.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring

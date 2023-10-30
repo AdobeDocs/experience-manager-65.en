@@ -1,10 +1,7 @@
 ---
 title: Concepts
-description: General Concepts of eCommerce with Adobe Experience Manager.
+description: Learn the general Concepts of eCommerce with Adobe Experience Manager.
 contentOwner: Guillaume Carlino
-topic-tags: e-commerce
-content-type: reference
-docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 ---
 # Concepts{#concepts}

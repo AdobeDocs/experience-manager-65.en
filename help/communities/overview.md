@@ -1,6 +1,6 @@
 ---
 title: AEM Communities Overview
-description: An overview of AEM Communities features and setup
+description: Learn about the fundamentals of Adobe Experience Manager Communities features and setup.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -10,7 +10,7 @@ exl-id: d6243dff-a067-455c-a326-5f451f225efd
 ---
 # AEM Communities Overview {#aem-communities-overview}
 
-Adobe Experience Manager (AEM) Communities provide the ability to quickly create an on-premise community site that has improved performance, improved site management, and encourages the conversion of site visitors to valuable community members.
+Adobe Experience Manager (AEM) Communities let you quickly create an on-premise community site that has improved performance, improved site management, and encourages the conversion of site visitors to valuable community members.
 
 ## Communities Features {#communities-features}
 
@@ -18,7 +18,7 @@ AEM Communities enables the development of a relationship with site visitors, wh
 
 * **Informs** through blogs, Q&A, and event calendars,
 * While **gaining insights** through forums, comments, and other community content, often referred to as user-generated content (UGC).
-* It allows **moderation** by trusted members in the publish environment,
+* It allows **moderation** by trusted members in the Publish environment,
 * **Social login** with Twitter and Facebook,
 * **Inline translation** of community content,
 * **Community groups creation** from the published community site,
@@ -27,7 +27,7 @@ AEM Communities enables the development of a relationship with site visitors, wh
 * **Notifications** and **activity streams**,
 * Allows **tagging** (@mention) other registered members in User-Generated Content, to elicit their attention.
 
-Communities features can be demonstrated using the [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) available publicly on GitHub.com or with the new We.Retail reference implementation.
+Communities features can be demonstrated using the [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) available publicly on GitHub.com or with the new `We.Retail` reference implementation.
 
 ## Community Sites {#community-sites}
 
@@ -93,18 +93,18 @@ In the author environment, the global navigation console provides access to the 
 
 * [Moderation](/help/communities/moderation.md) console
 
-  * Common bulk moderation UI for author and publish environments.
+  * Common bulk moderation UI for Author and Publish environments.
   * New filtering criteria.
 
 * [Members and Groups](/help/communities/members.md) management consoles
 
-  * Provides the ability to create and manage publish-side users (members) from the author environment.
-  * Provides ability to ban members.
-  * Provides the ability to create and manage publish-side user groups (member groups) from the author environment.
+  * Lets you create and manage publish-side users (members) from the Author environment.
+  * Lets you ban members.
+  * Lets you create and manage publish-side user groups (member groups) from the author environment.
 
 * [Reports](/help/communities/reports.md) console
 
-  * Provides the ability to generate reports on assignments, posts and views.
+  * Lets you generate reports on assignments, posts, and views.
 
 The global tools console provides access to the following Communities tools:
 
@@ -132,7 +132,7 @@ The global tools console provides access to the following Communities tools:
 
 Community site creation is based on selection of a community site template to quickly set up a community site that is independent of any sample site.
 
-A community site template, composed of community functions and community group templates, provides the structure for a community site including login, user profiles, messaging, site menu, search, theming, and branding features.
+A community site template, composed of community functions and community group templates, provides the structure for a community site. It includes login, user profiles, messaging, site menu, search, theming, and branding features.
 
 See the [Site Templates console](/help/communities/sites.md).
 
@@ -155,7 +155,7 @@ Creating a community group requires the selection of a community group template 
 See also:
 
 * [Site Groups console](/help/communities/groups.md) for creating subcommunities in the author environment.
-* [Group Templates console](/help/communities/tools-groups.md) for creating site structure for groups.
+* [Group Templates console](/help/communities/tools-groups.md) for creating site structures for groups.
 * [Getting Started with AEM Communities](/help/communities/getting-started.md) for tutorial for quickly creating a community site including nested groups.
 
 ## Community Components {#community-components}
@@ -190,7 +190,7 @@ To experience the ease of quickly creating an engagement community, visit [Getti
 
 ## AEM Demo Machine {#aem-demo-machine}
 
-The [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) manages and runs demos for AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) and [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), which often require more setup than simply launching a QuickStart instance. The AEM Demo Machine will set up additional [infrastructure](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) such as MongoDB, Solr, MySQL, FFmpeg, and email servers.
+The [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) manages and runs demos for AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) and [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), which often require more setup than simply launching a QuickStart instance. The AEM Demo Machine sets up additional [infrastructure](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) such as MongoDB, Solr, MySQL, FFmpeg, and email servers.
 
 The AEM Demo Machine includes:
 
@@ -199,7 +199,7 @@ The AEM Demo Machine includes:
 
 * Packages to install.
 
-The AEM Demo Machine was tested successfully with CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3, and AEM 6.4 on Windows, MacOS, and Linux&reg;.
+The AEM Demo Machine was tested successfully with CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3, and AEM 6.4 on Windows, macOS, and Linux&reg;.
 
 The AEM Demo Machine requires a valid AEM license.
 
@@ -209,7 +209,7 @@ The AEM Demo Machine requires a valid AEM license.
 
 ## AEM Communities Documentation {#aem-communities-documentation}
 
-* Visit [Deploying Communities](deploy-communities.md) to learn about recommended deployments.
-* Visit [Administering Communities Sites](administer-landing.md) to learn about creating a community site, adding community groups, configuring community site templates, moderating community content, managing members, tagging, notifications, scoring, and badges.
-* Visit [Developing Communities](communities.md) to learn about the social component framework (SCF) and customizing Communities components and features.
-* Visit [Authoring Communities Components](author-communities.md) to learn how to author with and configure Communities components.
+* Visit [Deploying Communities](deploy-communities.md) where you can learn about recommended deployments.
+* Visit [Administering Communities Sites](administer-landing.md) where you can learn about creating a community site, adding community groups, configuring community site templates, moderating community content, managing members, tagging, notifications, scoring, and badges.
+* Visit [Developing Communities](communities.md) where you can learn about the social component framework (SCF) and customizing Communities components and features.
+* Visit [Authoring Communities Components](author-communities.md) where you can learn how to author with and configure Communities components.

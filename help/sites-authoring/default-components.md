@@ -1,10 +1,6 @@
 ---
 title: Default components
 description: Adobe Experience Manager comes with various out-of-the-box components that provide comprehensive functionality for website authors.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 ---
 # Components{#components}

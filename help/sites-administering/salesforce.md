@@ -1,6 +1,6 @@
 ---
 title: Integrating with Salesforce
-description: Learn about integrating Adobe Experience Manager with Salesforce.
+description: Learn about integrating Adobe Experience Manager (AEM) with Salesforce.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
