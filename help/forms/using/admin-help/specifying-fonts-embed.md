@@ -1,8 +1,6 @@
 ---
 title: Specifying fonts to embed
-seo-title: Specifying fonts to embed
-description: Learn how to specify fonts to embed.
-seo-description: Learn how to specify fonts to embed.
+description: Learn how to specify fonts to embed in an Adaptive Form. You can specify which fonts are embedded or never embedded with forms that Forms service generates.
 uuid: 97de6f98-ed3b-4a93-854a-193a967b4672
 contentOwner: admin
 content-type: reference
