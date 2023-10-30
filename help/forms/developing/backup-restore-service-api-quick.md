@@ -1,6 +1,6 @@
 ---
 title: Backup and Restore Service APIQuick Starts
-description: AEM Forms operations like Backup and Restore can be performed using the AEM Forms strongly typed API with connection mode as SOAP.
+description: AEM Forms Backup & Restore API Quick Starts enables efficient backup creation and restoration processes.
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
