@@ -1,7 +1,6 @@
 ---
 title: Correspondence Management | Handling user data
-seo-title: Correspondence Management | Handling user data
-description: Correspondence Management | Handling user data
+description: AEM Forms Correspondence Management enables secure and personalized customer correspondence creation and management.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

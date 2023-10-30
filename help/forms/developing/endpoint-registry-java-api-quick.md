@@ -1,7 +1,6 @@
 ---
 title: Endpoint Registry Java API QuickStart(SOAP)
-seo-title: Endpoint Registry Java API QuickStart(SOAP)
-description: Endpoint Registry Java API QuickStart(SOAP)
+description: The Endpoint Registry Java API Quick Start (SOAP) in AEM Forms simplifies endpoint management for seamless integration.
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference

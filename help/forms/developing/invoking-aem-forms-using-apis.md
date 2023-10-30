@@ -1,7 +1,6 @@
 ---
-title: Invoking AEM Forms using APIs
-seo-title: Invoking AEM Forms using APIs
-description: Invoking AEM Forms using APIs
+title: How to invoke AEM Forms using APIs?
+description: Invoke AEM Forms via APIs for seamless automation, data handling, validation, workflow, integration, and document generation.
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference

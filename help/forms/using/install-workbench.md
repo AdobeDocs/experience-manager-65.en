@@ -1,7 +1,6 @@
 ---
 title: Install workbench
-seo-title: Install workbench
-description: Install workbench.
+description: Installing, uninstall, configure, administer, or deploy AEM Forms Workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin

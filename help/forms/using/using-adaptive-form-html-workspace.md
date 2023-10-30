@@ -1,8 +1,6 @@
 ---
 title: Using an adaptive form in HTML Workspace
-seo-title: Using an adaptive form in HTML Workspace
-description: Using an adaptive form in HTML Workspace
-seo-description: Using an adaptive form in HTML Workspace
+description: Use an Adaptive Form in HTML Workspace.
 uuid: 473d5daf-a3ed-449f-9136-585755b59922
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

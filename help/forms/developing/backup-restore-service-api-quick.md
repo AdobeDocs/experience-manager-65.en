@@ -1,6 +1,6 @@
 ---
 title: Backup and Restore Service APIQuick Starts
-description: Backup and Restore Service APIQuick Starts
+description: AEM Forms Backup & Restore API Quick Starts streamline data security, enabling efficient backup creation and restoration processes.
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference

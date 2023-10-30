@@ -1,8 +1,6 @@
 ---
 title: Forms Service API Quick Starts
-seo-title: Forms Service API Quick Starts
-description: Use the Quick Starts for the Forms Service API.
-seo-description: Use the Quick Starts for the Forms Service API.
+description: The Forms Service API Quick Starts for AEM Forms streamline the integration and management of forms.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference

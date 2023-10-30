@@ -1,6 +1,6 @@
 ---
 title: Customize create correspondence UI
-description: Learn how to customize create correspondence user interface.
+description: Learn how to customize a "create correspondence user interface(UI)".
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management

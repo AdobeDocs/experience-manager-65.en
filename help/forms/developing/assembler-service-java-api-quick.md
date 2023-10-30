@@ -1,6 +1,6 @@
 ---
 title: Assembler Service Java API QuickStart(SOAP)
-description: Assembler Service Java API QuickStart(SOAP)
+description: Assembler Service Java API QuickStart enables SOAP-based integration for AEM Forms, streamlining document assembly and processing.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

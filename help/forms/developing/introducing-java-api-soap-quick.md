@@ -1,7 +1,6 @@
 ---
 title: Introducing Java API QuickStart
-seo-title: Introducing Java API QuickStart
-description: Introducing Java API QuickStart
+description: The Java API QuickStart for AEM Forms facilitates seamless integration of AEM Form services with Java applications.
 uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
