@@ -38,6 +38,10 @@ See [Opening Analytics and Recommendations for a Page](/help/sites-authoring/ci-
 
 Reports show data for a period of time that you control. When you adjust the reporting period, the reports automatically refresh with data for that period. Visual cues indicate the time when page versions changed, so that you can compare the performance of each version.
 
+>[!NOTE]
+>
+>The timeline for the Content Insight dashboard is in `GMT`.
+
 You can also specify the granularity of the reported data, for example you can see daily, weekly, monthly, or yearly data.
 
 See [Changing the Reporting Period](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
