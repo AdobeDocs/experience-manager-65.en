@@ -1,6 +1,6 @@
 ---
-title: Convert PDF Service Java API QuickStart(SOAP)
-description: The Convert PDF Service Java API Quick Start (SOAP) in AEM Forms streamlines document processing by enhancing PDF conversion.
+title: Convert PDF Service Java API QuickStart (SOAP)
+description: Convert a PDF document to PostScript, JPEG using the Java API Quick Start (SOAP).
 uuid: 97253ac7-f0c1-4766-a7bd-c19af52adf51
 contentOwner: admin
 content-type: reference

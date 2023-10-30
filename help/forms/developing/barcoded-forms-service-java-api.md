@@ -1,6 +1,6 @@
 ---
 title: Barcoded Forms Service Java APIQuick Start(SOAP)
-description: The Barcoded Forms Service Java API Quick Start (SOAP) in AEM Forms enables seamless integration for processing barcoded forms efficiently.
+description: Decode barcoded form data using the Java API Quick Start (SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

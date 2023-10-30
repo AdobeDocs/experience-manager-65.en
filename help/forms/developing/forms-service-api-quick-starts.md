@@ -1,6 +1,6 @@
 ---
 title: Forms Service API Quick Starts
-description: The Forms Service API Quick Starts for AEM Forms streamline the integration and management of forms.
+description: Render interactive PDF, HTML Forms, Fragments using JAVA API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference

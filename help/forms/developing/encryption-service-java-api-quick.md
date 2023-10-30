@@ -1,6 +1,6 @@
 ---
 title: Encryption Service Java API QuickStart(SOAP)
-description: The Encryption Service Java API Quick Start (SOAP) in AEM Forms enables robust data protection through streamlined encryption processes.
+description: Encrypt, remove password/certificate-based encryption, unlock, and determine encryption type for PDF documents using Java API in SOAP mode.
 uuid: 3e29b3e9-340b-4b35-80cc-f0aff4180892
 contentOwner: admin
 content-type: reference

@@ -1,6 +1,6 @@
 ---
 title: "Correspondence Management: Troubleshooting"
-description: Manage errors while saving a letter in AEM Forms environment.
+description: Handle errors that may arise during the process of saving a letter in the AEM Forms environment.
 uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

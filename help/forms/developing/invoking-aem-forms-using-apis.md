@@ -1,6 +1,6 @@
 ---
 title: How to invoke AEM Forms using APIs?
-description: Invoke AEM Forms via APIs for seamless automation, data handling, validation, workflow, integration, and document generation.
+description: Invoke AEM Forms services using a Java API, web services, Remoting, and REST.
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference

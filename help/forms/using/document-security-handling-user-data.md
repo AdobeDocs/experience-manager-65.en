@@ -1,6 +1,6 @@
 ---
 title: Document Security | Handling user data
-description: AEM Forms document security enables creation, storage, and application of predefined settings, ensuring authorized access to documents.
+description: AEM Forms Document Security lets you manage user data and data stores, as well as access, delete, and export user data.
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

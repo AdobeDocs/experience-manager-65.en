@@ -1,6 +1,6 @@
 ---
 title: Forms Portal | Handling user data
-description: AEM Forms portal displays adaptive and HTML5 forms on AEM Sites. It also shows drafts and submissions for logged-in users.
+description: Managing user data such as access and delete, data store on AEM Forms portal.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

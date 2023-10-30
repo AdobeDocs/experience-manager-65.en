@@ -1,6 +1,6 @@
 ---
 title: Feature differentiation between HTML5 forms and PDF forms
-description: Differences between HTML5 forms and PDF forms
+description: Learn about the differences between HTML5 forms and PDF forms.
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference

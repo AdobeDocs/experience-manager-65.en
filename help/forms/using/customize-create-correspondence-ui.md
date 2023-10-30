@@ -1,6 +1,6 @@
 ---
 title: Customize create correspondence UI
-description: Learn how to customize a "create correspondence user interface(UI)".
+description: Learn how to customize a correspondence user interface(UI) such as logo in AEM Forms environment.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management

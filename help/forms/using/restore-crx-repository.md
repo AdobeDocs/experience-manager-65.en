@@ -1,6 +1,6 @@
 ---
 title: Unable to restore corrupt CRX repository applicable to JEE cluster server
-description: Steps to restore corrupted CRX repository
+description: Steps to restore corrupted CRX repository.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
 ---
 # Unable to restore corrupt CRX repository {#unable-to-restore-corrupt-crx-repository}
