@@ -1,19 +1,15 @@
 ---
 title: Using Ratings
-seo-title: Using Ratings
-description: Adding a Rating component to a page
-seo-description: Adding a Rating component to a page
-uuid: a986970b-1221-4648-9a69-410f4480e0ae
+description: Learn how to add a Rating component to a page that lets signed-in community members express their opinions by rating content.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 exl-id: 7534ad5d-b408-4b09-bd3d-da7ab009d55b
 ---
 # Using Ratings {#using-ratings}
 
-The `Rating` component is used standalone or in conjunction with other Communities features. This component allows signed-in community members to express their opinions by rating content.
+The `Rating` component is used standalone or with other Communities features. This component allows signed-in community members to express their opinions by rating content.
 
 ## Adding a Rating to a Page {#adding-a-rating-to-a-page}
 
@@ -21,17 +17,17 @@ To add a `Rating` component to a page in author mode, locate the component `Comm
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](rating-basics.md#essentials-for-client-side) are included, this is how the `Rating` component will appear.
+When the [required client-side libraries](rating-basics.md#essentials-for-client-side) are included, this is how the `Rating` component appears.
 
 ![rating](assets/rating.png)
 
 ## Configuring Rating {#configuring-rating}
 
-Select the placed `Rating` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Rating` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure-new](assets/configure-new.png)
 
-Under the **[!UICONTROL Texts & Labels]** tab you specify the internal identifier for the Rating.
+Under the **[!UICONTROL Texts & Labels]** tab, you specify the internal identifier for the Rating.
 
 ![tallyname](assets/tallyname.png)
 

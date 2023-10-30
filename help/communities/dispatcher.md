@@ -1,6 +1,6 @@
 ---
 title: Configuring Dispatcher for Communities
-description: Configure the Dispatcher for AEM Communities
+description: Learn how to configure Dispatcher for AEM Communities to ensure proper functioning of community sites.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
@@ -64,7 +64,7 @@ The /filter section of the `dispatcher.any` file is documented in [Configuring A
 
 This section describes entries that are likely necessary for proper functioning of Communities features.
 
-The filter property names follow the convention of using a four-digit number to indicate the order in which to apply filter patterns. When multiple filters patterns apply to a request, the last filter pattern that is applied, is effective. Therefore, the first filter pattern is often used to deny everything, such that the following patterns serve to restore access in a controlled manner.
+The filter property names follow the convention of using a four-digit number to indicate the order in which to apply filter patterns. When multiple filter patterns apply to a request, the last filter pattern that is applied is effective. Therefore, the first filter pattern is often used to deny everything, such that the following patterns serve to restore access in a controlled manner.
 
 The following samples use property names that likely must be modified to fit into any particular `dispatcher.any` file.
 
@@ -83,7 +83,7 @@ See also:
 >See the [Dispatcher Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) for further considerations when restricting access using Dispatcher. Also, read the [AEM Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) for additional security details regarding your AEM installation.
 >
 
-The following entries should be added to the end of the /filter section, especially after all deny entries.
+The following entries should be added to the end of the /filter section, especially after all denied entries.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -266,7 +266,7 @@ The rules section of `dispatcher.any` defines what responses should be cached ba
 
 A major source of problems is inserting filter rules without paying attention to the effect on earlier rules, especially when adding a rule to deny access.
 
-The first filter pattern is often used to deny everything so that following filters restore access in a controlled manner. When multiple filters apply to a request, the last filter that is applied, is the one in effect.
+The first filter pattern is often used to deny everything so that following filters restore access in a controlled manner. When multiple filters apply to a request, the last filter that is applied is the one in effect.
 
 ## Sample dispatcher.any {#sample-dispatcher-any}
 

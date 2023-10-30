@@ -1,6 +1,6 @@
 ---
 title: Oak Queries and Indexing
-description: Learn how to configure indexes in Adobe Experience Manager.
+description: Learn how to configure indexes in Adobe Experience Manager (AEM) 6.5.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference

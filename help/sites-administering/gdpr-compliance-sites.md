@@ -1,7 +1,7 @@
 ---
-title: AEM Sites - GDPR Readiness
+title: AEM Sites - GDPR Readiness 
 seo-title: AEM Sites - GDPR Readiness
-description: Learn about the details of GDPR Readiness for AEM Sites.
+description: Learn about the procedures to handle GDPR requests in AEM Sites and how to use them.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs

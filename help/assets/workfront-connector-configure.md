@@ -71,6 +71,7 @@ Metadata mapping between Workfront Projects and AEM Folders is defined within AE
 
 To configure the mappings, follow these steps:
 
+1. Add `jcr:read` permissions to `/conf/global/settings/dam/adminui-extension/foldermetadataschema` for `wf-workfront-users` group.
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Select the folder metadata schema form you wish to edit and click Edit.
 1. Select the folder metadata schema form field you wish to edit and select Settings tab on the right panel.

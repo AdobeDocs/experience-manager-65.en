@@ -1,6 +1,6 @@
 ---
 title: Deploy eCommerce with SAP Commerce Cloud
-description: Learn how to deploy eCommerce with SAP Commerce Cloud.
+description: Learn how to deploy Adobe Experience Manager eCommerce with SAP Commerce Cloud.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference

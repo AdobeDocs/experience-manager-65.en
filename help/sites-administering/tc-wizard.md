@@ -1,15 +1,6 @@
 ---
 title: Language Copy Wizard
-seo-title: Language Copy Wizard
-description: Learn about using the Language Copy Wizard in AEM.
-seo-description: Learn about using the Language Copy Wizard in AEM.
-uuid: a6168f5d-cce7-48bd-a898-171319621460
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
-docset: aem65
+description: Learn about using the Language Copy Wizard in Adobe Exeprience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
 ---
@@ -19,7 +10,7 @@ The Language Copy wizard is a guided experience for creating and instrumenting m
 
 >[!NOTE]
 >
->The user needs to be a member of project-administrators group to create the Language Copy of a site.
+>The user needs to be a member of projects-administrators group to create the Language Copy of a site.
 
 To access this wizard:
 

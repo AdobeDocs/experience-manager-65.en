@@ -1,7 +1,7 @@
 ---
 title: Using the CRX2Oak Migration Tool
 seo-title: Using the CRX2Oak Migration Tool
-description: Learn how to use the CRX2Oak migration tool.
+description: Learn how to use the CRX2Oak migration tool with AEM.
 seo-description: Learn how to use the CRX2Oak migration tool.
 uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
 contentOwner: User

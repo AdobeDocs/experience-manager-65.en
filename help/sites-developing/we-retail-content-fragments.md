@@ -1,6 +1,6 @@
 ---
 title: Trying out Content Fragments in We.Retail
-description: Trying out Content Fragments in We.Retail
+description: Learn how to try out Content Fragments in Adobe Experience Manager using We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference

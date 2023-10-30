@@ -1,8 +1,6 @@
 ---
 title: AEM 6.5 Implementation User Guide
-seo-title: AEM 6.5 Implementation User Guide
-description: An overview of how to implement AEM 6.5
-seo-description: An overview of how to implement AEM 6.5
+description: An overview of how to implement and develop with Adobe Experience Manager 6.5.
 exl-id: 33404f0d-c04c-4720-8a24-ded6738ec7d4
 ---
 # AEM 6.5 Implementation User Guides {#aem-65-implementation-user-guides}

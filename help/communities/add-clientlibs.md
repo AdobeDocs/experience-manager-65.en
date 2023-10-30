@@ -1,6 +1,6 @@
 ---
 title: Add Clientlibs
-description: Add a ClientLibraryFolder
+description: Learn how to add a ClientLibraryFolder (clientlibs) that is used to contain the JavaScript and  Cascading Style Sheets used to render the pages of your site.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -12,7 +12,7 @@ exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
 
 ## Add a ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Create a ClientLibraryFolder named `clientlibs` which will contain the JS and CSS used to render the pages of your site.
+Create a ClientLibraryFolder named `clientlibs` which contains the JavaScript (JS) and Cascading Styles Sheets (CSS) used to render the pages of your site.
 
 The `categories` property value given to this client library is the identifier used to directly include this clientlib from a content page or to embed it in other clientlibs.
 
@@ -101,7 +101,7 @@ This is how `/etc/designs/an-scf-sandbox/clientlibs` should now appear in the re
 
 ### Include Clientlibs in PlayPage Template {#include-clientlibs-in-playpage-template}
 
-Without including the `apps.an-scf-sandbox` ClientLibraryFolder category on the page, the SCF components are not functional nor styled as the necessary JavaScript and styles are not available.
+Without including the `apps.an-scf-sandbox` ClientLibraryFolder category on the page, the SCF components are not functional nor styled as the necessary JavaScript and CSS styles are not available.
 
 For example, without including the clientlibs, the SCF comments component appears unstyled :
 
@@ -120,7 +120,7 @@ The include statement belongs in the `head` section of the `html` script. The de
 1. Right-click and select **Copy** (or select Copy from the toolbar)
 1. Select **`/apps/an-scf-sandbox/components/playpage`**
 1. Right-click and select **Paste** (or select Paste from the toolbar)
-1. Double-click **`headlibs.jsp`** to open it
+1. Double-click **`headlibs.jsp`** so you can open it
 1. Append the following line to the end of the file
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
@@ -145,13 +145,13 @@ Load your website in the browser and see if the background is not a shade of blu
 
 ### Saving Your Work So Far {#saving-your-work-so-far}
 
-At this point, there exists a minimalist sandbox, and it might be worth saving as a package so that, while playing, if your repository becomes corrupt and you desire to start over, you can turn off your server, rename or delete the folder crx-quickstart/, turn on your server, upload and install this saved package, and not have to repeat these most basic of steps.
+At this point, there exists a minimalist sandbox. It might be worth saving as a package so that, while playing, if your repository becomes corrupt and you desire to start over, you can turn off your server. Then rename or delete the folder crx-quickstart/, turn on your server, upload and install this saved package, and not have to repeat these most basic of steps.
 
 This package exists on the [Create a Sample Page](/help/communities/create-sample-page.md) tutorial for those who can't wait to jump in and start playing!...
 
 To create a package:
 
-* From CRXDE Lite click the [Package icon](https://localhost:4502/crx/packmgr/)
+* From CRXDE Lite, click the [Package icon](https://localhost:4502/crx/packmgr/)
 * Click **Create Package**
 
     * Package Name: an-scf-sandbox-minimal-pkg

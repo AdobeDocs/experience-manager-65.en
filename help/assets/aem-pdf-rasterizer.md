@@ -18,11 +18,11 @@ Adobe recommends using the PDF Rasterizer library for the following:
 
 Thumbnails and previews generated using PDF Rasterizer are better in quality compared to out-of-the-box output and, therefore, provide consistent viewing experience across devices. The Adobe PDF Rasterizer library does not support any color space conversion. It always outputs to RGB irrespective of the color space of the source file.
 
-1. Install the PDF Rasterizer package on your [!DNL Adobe Experience Manager] deployment from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
+1. Install the PDF Rasterizer package on your [!DNL Adobe Experience Manager] deployment from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
 
    >[!NOTE]
    >
-   >The PDF Rasterizer library is available for Windows and Linux only.
+   >The PDF Rasterizer library is available for Windows and Linux&reg; only.
 
 1. Access the [!DNL Assets] workflow console at `https://[aem_server]:[port]/workflow`. Open [!UICONTROL DAM Update Asset] workflow.
 
@@ -47,7 +47,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
     * Commands: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
     * Add Thumbnail sizes: 319:319, 140:100, 48:48. Add custom thumbnail configuration, if necessary.
 
-   The command line arguments for the `PDFRasterizer` command can include the following:
+   The command-line arguments for the `PDFRasterizer` command can include the following:
 
    * `-d`: Flag to enable smooth rendering of text, vector artwork, and images. Creates better quality images. However, including this parameter causes the command to run slowly and increase the size of images.
 
@@ -77,7 +77,7 @@ Thumbnails and previews generated using PDF Rasterizer are better in quality com
     * Commands: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
     * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. Add custom thumbnail configuration as required.
 
-   The command line arguments for the `PDFRasterizer` command can include the following:
+   The command-line arguments for the `PDFRasterizer` command can include the following:
 
    * `-d`: Flag to enable smooth rendering of text, vector artwork, and images. Creates better quality images. However, including this parameter causes the command to run slowly and increase the size of images.
 

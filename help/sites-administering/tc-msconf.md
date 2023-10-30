@@ -1,14 +1,7 @@
 ---
 title: Connecting to Microsoft&reg; Translator
-
-description: Learn how to connect AEM to Microsoft&reg; Translator.
-
-uuid: 5e3916ec-36a0-4d31-94ff-c340a462411a
+description: Learn how to connect Adobe Experience Manager to Microsoft&reg; Translator.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 feature: Language Copy
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 ---

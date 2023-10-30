@@ -1,6 +1,6 @@
 ---
 title: Models Overview
-description: Models Overview
+description: Learn how to use model management which involves the creation and management of models for associating with eventual data objects.
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE

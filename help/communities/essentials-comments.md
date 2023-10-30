@@ -1,6 +1,6 @@
 ---
 title: Comments Essentials
-description: Comments component overview
+description: Learn about working with the comment system (Comments component) and managing the user-generated content (UGC) in community member posts.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,7 +9,7 @@ exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
 ---
 # Comments Essentials {#comments-essentials}
 
-This page provides the essentials of working with the comment system (comments component) and options for managing the user-generated content (UGC) produced when members post comments or replies.
+This page provides the fundamentals of working with the comment system (comments component) and options for managing the user-generated content (UGC) produced when members post comments or replies.
 
 The comments component establishes a comment system such that each individual post is represented by a comment component (singular). It is the comment system which is included on the page. The comment system creates the individual comments when invoked.
 

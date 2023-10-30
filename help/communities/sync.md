@@ -1,16 +1,11 @@
 ---
 title: Communities User Synchronization
-seo-title: Communities User Synchronization
-description: How user synchronization works
-seo-description: How user synchronization works
-uuid: 772b82bd-a66c-4c1d-b80b-dcff77c873a3
+description: Learn how user synchronization works in Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
-
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 ---
@@ -18,81 +13,79 @@ exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 
 ## Introduction {#introduction}
 
-In AEM Communities, from the publish environment (depending on permissions configured), *site visitors* may become *members*, create *user groups*, and edit their *member profile* .
+In Adobe Experience Manager (AEM) Communities, from the Publish environment (depending on permissions that are configured), *site visitors* may become *members*, create *user groups*, and edit their *member profile* .
 
-*User data* is a term used to refer to *users*, *user profiles* and *user groups*.
+*User data* refers to *users*, *user profiles*, and *user groups*.
 
-*Members* is a term used to refer to *users* registered in the publish environment, as opposed to users registered in the author environment.
+*Members* refer to *users* registered in the Publish environment, as opposed to users registered in the author environment.
 
 For more information regarding user data, visit [Managing Users and User Groups](/help/communities/users.md).
 
 ## Synchronizing Users Across a Publish Farm {#synchronizing-users-across-a-publish-farm}
 
-By design, user data created in the publish environment does not appear in the author environment.
+By design, user data created in the Publish environment does not appear in the Author environment.
 
-Most user data created in the author environment is intended to remain in the author environment and is not synchronized nor replicated to publish instances.
+Most user data created in the Author environment is intended to remain in the Author environment and is not synchronized nor replicated to Publish instances.
 
-When the [topology](/help/communities/topologies.md) is a [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), registration  and  modifications made on one publish instance need to be synchronized with other publish instances. Members need to be able to log in and see their data on any publish node.
+When the [topology](/help/communities/topologies.md) is a [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), registration and modifications made on one Publish instance must be synchronized with other Publish instances. Members must be able to log in and see their data on any Publish node.
 
-When user synchronization is enabled, user data is automatically synchronized across the publish instances in the farm.
+When user synchronization is enabled, user data is automatically synchronized across the Publish instances in the farm.
 
 ### User Sync Setup Instructions {#user-sync-setup-instructions}
 
-For detailed, step-by-step instructions, on how to enable synchronization across a publish farm, see:
+For detailed, step-by-step instructions on how to enable synchronization across a publish farm, see [User Synchronization](/help/sites-administering/sync.md).
 
-* [User Synchronization](/help/sites-administering/sync.md)
-
-## User sync in the background  {#user-sync-in-the-background}
+## User sync in the background {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
-* **vlt  package** 
+* **vlt package** 
 
-  It is a zip file of all the changes done on a publisher, which need to be distributed across publishers. Changes on a publisher generate events that are picked by the change event listener. This creates a vlt package that contains all the changes.
+  It is a zip file of all the changes done on a Publisher, which must be distributed across publishers. Changes on a publisher generate events that are picked by the change event listener. This creates a vlt package that contains all the changes.
 
 * **distribution package** 
 
-  It contains distribution information for Sling. That is information about where the content needs to be distributed, and when was it distributed last.
+  It contains distribution information for Sling. That is information about where the content must be distributed, and when it was distributed last.
 
 ## What Happens When ... {#what-happens-when}
 
 ### Publish Site from Communities Sites Console {#publish-site-from-communities-sites-console}
 
-On author, when a community site is published from the [Communities Sites console](/help/communities/sites-console.md), the effect is to [replicate](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) the associated pages, and Sling distribute the dynamically created community user groups, including their membership.
+On Author, when a community site is published from the [Communities Sites console](/help/communities/sites-console.md), the effect is to [replicate](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) the associated pages, and Sling distribute the dynamically created community user groups, including their membership.
 
 ### User is Created or Edits Profile on Publish {#user-is-created-or-edits-profile-on-publish}
 
-By design, users and profiles created in the publish environment (such as by self-registration, social-login, LDAP authentication) do not appear in the author environment.
+By design, users and profiles created in the Publish environment (such as by self-registration, social-login, LDAP authentication) do not appear in the Author environment.
 
 When the topology is a [publish farm](/help/communities/topologies.md) and user sync has been correctly configured, the *user* and *user profile* is synchronized across the publish farm using Sling distribution.
 
 ### New Community Group is created on Publish {#new-community-group-is-created-on-publish}
 
-Although initiated from a publish instance, the community group creation, which results in new site pages and a new user group, actually occurs on the author instance.
+Although initiated from a Publish instance, the community group creation, which results in new site pages and a new user group, actually occurs on the Author instance.
 
-As part of the process, the new site pages are replicated to all publish instances. The dynamically created community user group and its membership are Sling distributed to all publish instances.
+As part of the process, the new site pages are replicated to all Publish instances. The dynamically created community user group and its membership are Sling distributed to all Publish instances.
 
 ### Users or User Groups are Created Using Security Console {#users-or-user-groups-are-created-using-security-console}
 
-By design, user data created in the publish environment does not appear in the author environment and conversely.
+By design, user data created in the publish environment does not appear in the Author environment and conversely.
 
-When the [User Administration and Security](/help/sites-administering/security.md) console is used to add new users in the publish environment, user sync will synchronize the new users and their group membership to other publish instances, if necessary. User sync will also synchronize user groups created through the security console.
+When the [User Administration and Security](/help/sites-administering/security.md) console is used to add new users in the publish environment, user sync synchronizes the new users and their group membership to other publish instances, if necessary. User sync also synchronizes user groups created through the security console.
 
 ### User Posts Content on Publish {#user-posts-content-on-publish}
 
-For user generated content (UGC), the data entered on a publish instance is accessed through the [configured SRP](/help/communities/srp-config.md).
+For user-generated content (UGC), the data entered on a publish instance is accessed through the [configured SRP](/help/communities/srp-config.md).
 
 ## Best practices {#bestpractices}
 
 By default, user sync is **disabled**. Enabling user sync involves modifying *existing* OSGi configurations. No new configurations should be added as a result of enabling user sync.
 
-User sync relies on the  author  environment to manage the user data distributions, even though the user data is not created on  author .
+User sync relies on the author environment to manage the user data distributions, even though the user data is not created on author.
 
 **Prerequisites**
 
 1. If users and user groups have already been created on one publisher, it is recommended to [manually sync](/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) the user data to all publishers prior to configuring and enabling user sync.
    
-   Once user sync is enabled, only newly created users and groups are  syncrhonized .
+   After user sync is enabled, only newly created users and groups are synchronized .
 
 1. Ensure the latest code has been installed:
 
@@ -131,9 +124,9 @@ To configure Apache Sling Sync Agents configuration:
 
 ### Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
-It enables the author to identify the authorized user, as having permission to sync user data from  author  to publish.
+It enables the author to identify the authorized user, as having permission to sync user data from author to publish.
 
-The [authorized user created](/help/sites-administering/sync.md#createauthuser) on all the publish instances helps the publishers to connect with  author  and configure Sling distribution on the author. This authorized user has all the requisite [ACLs](/help/sites-administering/sync.md#howtoaddacl).
+The [authorized user created](/help/sites-administering/sync.md#createauthuser) on all the publish instances helps the publishers to connect with author and configure Sling distribution on the author. This authorized user has all the requisite [ACLs](/help/sites-administering/sync.md#howtoaddacl).
 
 Whenever data is to be installed on or fetched from publishers, then the author connects with the publishers using the credentials (user name and password) set in this configuration.
 
@@ -202,7 +195,7 @@ To ensure member synchronization:
 
 This configuration lets you configure the polling interval (after which publishers are pinged and changes are pulled by author) to sync the changes across publishers.
 
-The author polls publishers every 30 seconds (default). If any packages are present at the folder `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, then it will fetch those packages and install them on other publishers.
+The author polls publishers every 30 seconds (default). If any packages are present at the folder `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, then it fetches those packages and installs them on other publishers.
 
 To alter the polling interval:
 
@@ -252,7 +245,7 @@ On each AEM publish instance:
 
    `sling:OrderedFolder`
 
-   The node types specified in this property will synchronize, and the notifications info (blogs and configurations followed) are synced between different publishers.
+   The node types specified in this property synchronize, and the notifications info (blogs and configurations followed) are synced between different publishers.
 
 1. Add all the folders to synchronize in **DistributedFolders**. For example,
 
@@ -276,18 +269,18 @@ On each AEM publish instance:
 
 AEM author instance uses Sling ID to identify from where the data is coming and to which publishers it needs to (or need not) send the package back to.
 
-Make sure all the publishers in a publish farm have a unique Sling ID. If the Sling ID is the same for multiple publish instances in a publish farm, then user synchronization will fail. As the author won't know where to fetch the package from and where to install the package.
+Make sure all the publishers in a publish farm have a unique Sling ID. If the Sling ID is the same for multiple publish instances in a publish farm, then user synchronization fails. As the author won't know where to fetch the package from and where to install the package.
 
-To ensure unique Sling ID of publishers in the publish farm, on each publish instance:
+To ensure unique Sling ID of publishers in the publish farm, on each Publish instance:
 
 1. Browse to [https://_host:port_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
 1. Check the value of **Sling ID**.
 
    ![slingid](assets/slingid.png)
 
-   If the Sling ID of a publish instance matches the Sling ID of any other publish instance, then:
+   If the Sling ID of a Publish instance matches the Sling ID of any other Publish instance, then:
 
-1. Stop one of the publish instances that has a matching Sling ID.
+1. Stop one of the Publish instances that has a matching Sling ID.
 1. In the `crx-quickstart/launchpad/felix` directory, search for and delete the file named *sling.id.file.*
 
    For example, on a Linux system:
@@ -298,10 +291,10 @@ To ensure unique Sling ID of publishers in the publish farm, on each publish ins
 
    Use windows explorer and search for `sling.id.file`
 
-1. Start the publish instance. On startup it will be assigned a new Sling ID.
+1. Start the Publish instance. On startup it is assigned a new Sling ID.
 1. Validate that the **Sling ID** is now unique.
 
-Repeat these steps until all publish instances have an unique Sling ID.
+Repeat these steps until all Publish instances have a unique Sling ID.
 
 ### Vault Package Builder Factory {#vault-package-builder-factory}
 
@@ -310,7 +303,7 @@ In `/home/users`, a `*/rep:cache` node is created. It is a cache which is used t
 
 User synchronization can stop if `rep :cache` nodes are synced across publishers.
 
-To ensure that updates are synced properly across publishers, on each AEM publish instance:
+To ensure that updates are synced properly across publishers, on each AEM Publish instance:
 
 1. Access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
@@ -352,8 +345,8 @@ If Sling distribution fails, try the following debugging steps:
 
 1. **Check AEM Communities User Sync Listener configuration.** If the created users are synced but subscriptions and follows are not working, then ensure that AEM Communities User Sync Listener configuration has:
 
-   * Node types- set to **rep:User,  nt :unstructured**, **nt :resource**, **rep:ACL**, **sling:Folder**, and **sling:OrderedFolder**.
-   * Ignorable nodes- set to **.tokens**, **system**, and **rep  :cache**.
+   * Node types- set to **rep:User, nt:unstructured**, **nt:resource**, **rep:ACL**, **sling:Folder**, and **sling:OrderedFolder**.
+   * Ignorable nodes- set to **.tokens**, **system**, and **rep :cache**.
    * Distributed Folders- set to the folders which you want to be distributed.
 
 1. **Check logs generated on user creation on Publish instance**
@@ -383,13 +376,13 @@ To debug:
    1. Locate the configuration **Apache Sling Distribution Agent - Sync Agents Factory**.
    1. Deselect the **Enabled** check box. 
       
-      On disabling the user synchronization on author instance, (exporter and importer) endpoints are disabled and the author instance is static. The **vlt** packages are not pinged or fetched by the author.
+      On disabling the user synchronization on Author instance (exporter and importer) endpoints are disabled and the Author instance is static. The **vlt** packages are not pinged or fetched by the author.
        
       Now if a user is created on publish instance, the **vlt** package is created in */var/sling/distribution/packages/  socialpubsync -  vlt /data* node. And if these packages are pushed by the author to another service. You can download and extract this data to check what all properties are pushed to other services.
 
 1. Go to a publisher, and create a user on the publisher. As a result, events are created.
-1. Check the [order of logs](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), created on user creation.
+1. Check the [order of logs](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities) created on user creation.
 1. Check whether a **vlt** package is created on **/var/sling/distribution/packages/socialpubsync-vlt/data**.
-1. Now, enable the user synchronization on AEM author instance.
+1. Now, enable the user synchronization on AEM Author instance.
 1. On publisher, change the exporter or importer endpoints in **Apache Sling Distribution Agent - Sync Agents Factory**.
-   We can download and extract package data to check what all properties are pushed to other publishers, and which data is lost.
+   We can download and extract package data to check all what properties are pushed to other publishers, and which data is lost.

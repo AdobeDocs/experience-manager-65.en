@@ -1,6 +1,6 @@
 ---
 title: Starting AEM PhoneGap
-description: Learn about the starterkit for developers.
+description: Learn how to use the starterkit to help you get going with the basics of Adobe Experience Manager Mobile development.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -17,7 +17,7 @@ For developers, the best place to start is to look at the Adobe Experience Manag
 
 https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit
 
-The starterkit gets you going quickly by walking you through the basics of AEM Mobile development, starting with project creation and governance, installing the necessary tooling, defining a Maven archetype, building, deploying and then creating your own experience.
+The starterkit gets you going quickly by walking you through the basics of AEM Mobile development. It starts with project creation and governance, installing the necessary tooling, defining a Maven archetype, building, deploying and then creating your own experience.
 
 The developers can use this example as a starting point for trying out an AEM Mobile application using PhoneGap. Running through the starterkit and the reference application gives a solid understanding of the basics to create rich Mobile Applications.
 
@@ -32,7 +32,7 @@ The developers can use this example as a starting point for trying out an AEM Mo
 
 ## Templates and Components {#templates-and-components}
 
-AEM *Templates* and *Components* enable line-of-business owners to create custom experiences. Both *Templates *and *Components* are available out-of-the-box or can be custom developed by you, the developer either by extending existing components or creating greenfield (advanced). *Templates* and *Components* are what allow the AEM Author to drag-and-dropped to create engaging and relevant experiences.
+AEM *Templates* and *Components* enable line-of-business owners to create custom experiences. Both *Templates *and *Components* are available out-of-the-box or can be custom developed by you, the developer either by extending existing components or creating greenfield (advanced). *Templates* and *Components* are what allow the AEM Author to drag and drop to create engaging and relevant experiences.
 
 1. [Creating Components](/help/sites-developing/components.md)
 1. [Creating Templates](/help/sites-developing/templates.md)

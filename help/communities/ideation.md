@@ -1,14 +1,10 @@
 ---
 title: Ideation Essentials
-seo-title: Ideation Essentials
-description: Ideation feature overview
-seo-description: Ideation feature overview
-uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
+description: Learn about the fundamentals of working with the Ideation feature in Communities, which is similar to a forum, but with a more collaborative feel.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
 ---
 # Ideation Essentials {#ideation-essentials}

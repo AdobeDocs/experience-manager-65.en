@@ -1,6 +1,6 @@
 ---
 title: Reports Console
-description: Learn how to access various reports that may be accessed in several ways from the Adobe Experience Manager author environment.
+description: Learn how to use various reports that you can access in several ways from the Adobe Experience Manager Author environment.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering

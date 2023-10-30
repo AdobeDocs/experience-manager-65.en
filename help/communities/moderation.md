@@ -1,28 +1,23 @@
 ---
 title: Moderation Console
-seo-title: Moderation Console
-description: How to access the Moderation console
-seo-description: How to access the Moderation console
-uuid: d3b8a160-85b2-43f4-9891-5fafa8c48c5f
+description: Learn how administrators and community moderators can use the Moderation console to access all UGC for which they have permission to moderate.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
-
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
 ---
 # Moderation Console {#moderation-console}
 
-In AEM Communities, bulk [moderation of community content](/help/communities/moderate-ugc.md) is possible from both the author and publish environments by administrators and community moderators (trusted community members assigned as moderators).
+In AEM Communities, bulk [moderation of community content](/help/communities/moderate-ugc.md) is possible from both the Author and Publish environments by administrators and community moderators (trusted community members assigned as moderators).
 
-Administrators and community moderators may also perform [in-context moderation](/help/communities/in-context.md) in the publish environment.
+Administrators and community moderators may also perform [in-context moderation](/help/communities/in-context.md) in the Publish environment.
 
 A feature of all [community sites](/help/communities/sites-console.md) is an `Administration` menu item available to users who sign in with administrative privileges. The `Administration` link provides access to the Moderation console.
 
-From the Moderation console, administrators and community moderators will have access to all user generated content (UGC) for which they have permission to moderate. If permitted to moderate multiple sites, it is possible to view posts across all sites or filter by selected communities sites.
+From the Moderation console, administrators and community moderators have access to all user-generated content (UGC) for which they have permission to moderate. If permitted to moderate multiple sites, it is possible to view posts across all sites or filter by selected communities sites.
 
 For more detailed information visit [Managing Users and User Groups](/help/communities/users.md).
 
@@ -55,13 +50,13 @@ Only when signed in as an administrator, or as a member with [moderator permissi
 
 >[!NOTE]
 >
->UGC from the publish environment will only be visible on author if the chosen SRP implements a common store. For example, by default the storage is JSRP, which is not a common store for author and publish. See [Community Content Storage](/help/communities/working-with-srp.md).
+>UGC from the Publish environment is only visible on Author if the chosen SRP implements a common store. For example, by default the storage is JSRP, which is not a common store for Author and Publish. See [Community Content Storage](/help/communities/working-with-srp.md).
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## Moderation Console UI {#moderation-console-ui}
 
-Setting aside the left navigation rail (which appears on author, but not on publish), the moderation UI has following main areas:
+Setting aside the left navigation rail (which appears on author, but not on Publish), the moderation UI has following main areas:
 
 * **[Top navigation bar](#top-navigation-bar)**
 * **[Toolbar](#toolbar)**
@@ -83,7 +78,7 @@ The toolbar, located beneath the top navigation bar, provides the following togg
 ![toggleswitch](assets/toggleswitch.png)
 
 [Filter rail](/help/communities/moderation.md#filterrail)
-opens a rail, on selecting Search, which allows a choice of properties on which to filter the content.
+opens a rail on selecting Search, which allows a choice of properties on which to filter the content.
 
 ![filterrail](assets/filterrail.png)
 
@@ -94,16 +89,16 @@ The content area contains information for posted UGC:
 * UGC posted
 * Member name
 * Member avatar
-* Location of the post.
-* When it was posted.
-* Number of replies to the post.
+* Location of the post
+* When it was posted
+* Number of replies to the post
 * [Sentiment](/help/communities/moderate-ugc.md#sentiment) associated with the post
-* If approved, a checkmark is displayed.
-* If there is an attachment, a paperclip is displayed.
+* If approved, a checkmark is displayed
+* If there is an attachment, a paperclip is displayed
 
 >[!NOTE]
 > 
->The content area features an *infinite scroll*, which means that it will let you continue scrolling until you have reached the end of the content. The toolbar remains in a fixed, visible position above the content area even while scrolling.
+>The content area features an *infinite scroll*, which means that it lets you continue scrolling until you have reached the end of the content. The toolbar remains in a fixed, visible position above the content area even while scrolling.
 
 ### Filter Rail {#ootbfilters}
 
@@ -113,9 +108,9 @@ The side-panel icon opens the filter rail. The filter rail, which appears to the
 
 The filters within each category are **OR**'d together, and the filters in different categories are **AND**'d together.
 
-For example, if you check both **Question** and **Answer**, you will see content that is either a **Question** *or* an **Answer**.
+For example, if you check both **Question** and **Answer**, you see content that is either a **Question** *or* an **Answer**.
 
-However if you check **Question** and **Pending**, you will only see content that is a **Question** and is **Pending**.
+However, if you check **Question** and **Pending**, you only see content that is a **Question** and is **Pending**.
 
 >[!NOTE]
 >
@@ -123,7 +118,7 @@ However if you check **Question** and **Pending**, you will only see content tha
 
 ![searchicon](assets/searchicon.png)
 
-When the filter rail is open, the Search icon toggles the side-panel closed. However to close the filter rail and only view the user generated content, click the Search icon and select the Content Only option.
+When the filter rail is open, the Search icon toggles the side-panel closed. However to close the filter rail and only view the user-generated content, click the Search icon, and select the Content Only option.
 
 #### Content Path {#content-path}
 
@@ -147,7 +142,7 @@ Site limits the referenced UGC displayed to posts to selected community sites. I
 >
 >When the bulk moderation console is accessed by an administrator, all references to UGC are shown, including sites not created with the [site creation wizard](/help/communities/sites-console.md), such as the Geometrixx samples.
 >
->When the bulk moderation console is accessed on publish by a trusted community member, then only references to UGC created for community sites the member is authorized to moderate are shown, and may be filtered with the Site filter.
+>When the bulk moderation console is accessed on Publish by a trusted community member, only references to UGC created for community sites the member is authorized to moderate are shown. Also, it may be filtered with the Site filter.
 
 #### Content Type {#content-type}
 
@@ -173,10 +168,10 @@ Content Type limits the referenced UGC displayed to posts of the selected resour
 
 To add additional resources on which to filter:
 
-* Login to your author instance as administrator.
+* Log in to your author instance as administrator.
 * Open [Web Console](https://localhost:4502/system/console/configMgr).
 * Locate `AEM Communities Moderation Dashboard Filters`.
-* Select the configuration to open in edit mode.
+* Select the configuration so you can open in edit mode.
 * Enter the ResourceType of a component on which to filter:
 
   * For example, to filter on included Voting components, enter: 
@@ -190,15 +185,15 @@ To add additional resources on which to filter:
 
 The result is a new selectable filter for `Voting` under the `Content Type` filter group.
 
-When that filter is seleted the content of the dashboard will show UGC that matches any of the ResourceTypes entered.
+When that filter is selected, the content of the dashboard shows UGC that matches any of the ResourceTypes entered.
 
 #### Status {#status}
 
-Status limits the referenced UGC displayed to posts of the selected status, which may be one or more of Pending, Approved, Denied, or Closed, as well as Draft or Scheduled for Blog Articles, and Answered or Not Answered for QnA Questions. If none are selected, then all are shown.
+Status limits the referenced UGC displayed to posts of the selected status, which may be one or more of Pending, Approved, Denied, or Closed, and Draft or Scheduled for Blog Articles, and Answered or Not Answered for QnA Questions. If none is selected, then all are shown.
 
 >[!NOTE]
 >
->If only the Not Answered status is selected, then the moderator will see all the content (for all content types) except the answered questions. It is so because the property responsible for the Answered Question does not exist in the case of not-answered questions and other content such as forum topic, blog article, or comments.
+>If only the Not Answered status is selected, then the moderator sees all the content (for all content types) except the answered questions. It is so because the property responsible for the Answered Question does not exist if there are not-answered questions and other content such as forum topic, blog article, or comments.
 
 ![statuses](assets/statuses.png)
 
@@ -206,7 +201,7 @@ Status limits the referenced UGC displayed to posts of the selected status, whic
 
 Flagging limits the referenced UGC displayed to posts which are flagged or hidden.
 
-Once a piece of content is flagged, it remains flagged until you unflag that single piece of content by selecting the **Flag** button once again. Note that there are no flagging levels, such as important or followup.
+Once a piece of content is flagged, it remains flagged until you unflag that single piece of content by selecting the **Flag** button once again. There are no flagging levels, such as important or follow up.
 
 ![flagging](assets/flagging.png)
 
@@ -224,24 +219,24 @@ Posted In The Last limits the referenced UGC displayed to posts made in the last
 
 #### Sentiment {#sentiment}
 
-[Sentiment](/help/communities/moderate-ugc.md#sentiment) limits the referenced UGC displayed to posts with a sentiment value that is either positive, negative or neutral.
+[Sentiment](/help/communities/moderate-ugc.md#sentiment) limits the referenced UGC displayed to posts with a sentiment value that is either positive, negative, or neutral.
 
 ![sentiment](assets/sentiment.png)
 
 ## Custom Filters {#custom-filters}
 
-Apart from the out of the box filters in [Filter Rail](/help/communities/moderation.md#ootbfilters), additional custom filters on metadata can be added to moderation UI. Developers can use the sample code in Github to extend the existing moderation UI filters.
+Apart from the out of the box filters in [Filter Rail](/help/communities/moderation.md#ootbfilters), additional custom filters on metadata can be added to moderation UI. Developers can use the sample code in GitHub to extend the existing moderation UI filters.
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-The [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) on Github implements Tag filter, to filter the UGC list based on whether the specific tags are applied on user-generated content. You can follow the sample code and build analogous filters for other similar UGC metadata fields.
+The [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) on GitHub implements Tag filter, to filter the UGC list based on whether the specific tags are applied on user-generated content. You can follow the sample code and build analogous filters for other similar UGC metadata fields.
 
 To install the sample for the Tags filter:
 
-1. Open the package manager on AEM Author (`https://[aem-author]:4502/crx/packmgr/index.jsp`) instance and AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`) instance.
-1. Build the package `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` from Github code, and install and enable the same.
+1. Open the Package Manager on AEM Author (`https://[aem-author]:4502/crx/packmgr/index.jsp`) instance and AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`) instance.
+1. Build the package `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` from GitHub code, and install and enable the same.
 1. Open the bundles console on AEM Author ( `https://[aem-author]:4502/system/console/bundles`) instance and AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`) instance.
-1. Build the package (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) from Github, and install and enable the same.
+1. Build the package (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) from GitHub, and install and enable the same.
 1. Go to **/apps/social/moderation/facets** node on AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) and AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) instance.
 1. Add a technical user **communities-utility-reader** with `jcr:read` permissions.
 
@@ -263,9 +258,9 @@ To expose the custom filters on existing Community sites:
 
 [Moderation actions](/help/communities/moderate-ugc.md#moderation-actions) can be performed on one or more selections made in the content area or when viewing content detail.
 
-To bulk-moderate the posts, in the content area click the Select (![selecticon](assets/selecticon.png)) icon on a post, which appears on hovering over it with the mouse (desktop) or pressing and holding a finger on the post (mobile). By doing this, you enter the multi-select mode and can now select the subsequent posts to be bulk moderated by simply clicking them. Use the buttons displayed on the toolbar to perform moderation actions on the selected posts. All the actions will prompt for confirmation.
+To bulk-moderate the posts, in the content area click the Select (![selecticon](assets/selecticon.png)) icon on a post, which appears on hovering over it with the mouse (desktop) or pressing and holding a finger on the post (mobile). By doing this, you enter the multi-select mode and can now select the subsequent posts to be bulk moderated by simply clicking them. Use the buttons displayed on the toolbar so you can perform moderation actions on the selected posts. All the actions prompt for confirmation.
 
-To moderate a single post in the content area, hover over it with the mouse (desktop) or press and hold a finger on the post (mobile) such that buttons appear on the post. When operating on a single content detail, only a delete action will prompt for confirmation.
+To moderate a single post in the content area, hover over it with the mouse (desktop) or press and hold a finger on the post (mobile) such that buttons appear on the post. When operating on a single content detail, only a delete action prompts for confirmation.
 
 ### Moderating multiple posts {#moderating-multiple-posts}
 
@@ -301,10 +296,10 @@ In single selection mode, it is possible to:
 
 Present on the card view above the moderation action icons is the text of the post and below is data indicating:
 
-* If it has replies, and if so, preceded by the number of replies.
-* If it has been flagged.
-* If it has been approved.
-* When the UGC was posted.
+* If it has replies, and if so, preceded by the number of replies
+* If it has been flagged
+* If it has been approved
+* When the UGC was posted
 
 ![singleselectmode](assets/singleselectmode.png)
 
@@ -312,13 +307,13 @@ Present on the card view above the moderation action icons is the text of the po
 
 ![reply](assets/reply.png)
 
-When working with a single post, a Reply icon will appear if the UGC type supports replies and is configured to allow replies.
+When working with a single post, a Reply icon appears if the UGC type supports replies and is configured to allow replies.
 
 #### Allow {#allow}
 
 ![allow](assets/allow.png)
 
-When working with a single post, the Allow icon will appear when the post has been either flagged or denied. If flagged, selecting Allow will clear all flags.
+When working with a single post, the Allow icon appears when the post has been either flagged or denied. If flagged, selecting Allow clears all flags.
 
 #### Deny {#deny}
 
@@ -328,7 +323,7 @@ The **Deny** moderation action is only available for content that is moderated, 
 
 Content that is not moderated is always approved.
 
-Content that is moderated initially enters a Pending state, and can later be modified to be approved or denied.
+Content that is moderated initially enters a Pending state, and can be modified later for approval or denial.
 
 Content that leaves the pending state can never return to a pending state. Content that is marked as approved or denied can be changed to a different state at any time.
 
@@ -342,15 +337,15 @@ In single selection or bulk mode, you can select items and delete them. The dele
 
 ![close](assets/close.png)
 
-When working with a single post, a Close icon will appear if the UGC type supports the ability to prevent further posts for that resource.
+When working with a single post, a Close icon appears if the UGC type supports the ability to prevent further posts for that resource.
 
 #### Moderation History {#moderation-history}
 
 ![moderation](assets/moderation.png)
 
-When working with a single post, a Moderation History icon will appear when hovering over it. Selecting the icon will display a pane containing a history of actions taken regarding the UGC post.
+When working with a single post, a Moderation History icon appears when hovering over it. Selecting the icon displays a pane containing a history of actions taken regarding the UGC post.
 
-To return to the content area display of multiple UGC posts, select the X in the top right corner of the view detail pane.
+To return to the content area display of multiple UGC posts, select the X in the top-right corner of the view detail pane.
 
 For example:
 
@@ -360,11 +355,11 @@ For example:
 
 ![view](assets/view.png)
 
-When working wtih a single post, more details can be viewed by opening up the UGC in detail mode.
+When working with a single post, more details can be viewed by opening up the UGC in detail mode.
 
 To do so, hover over the post to display the `View Detail` icon and select it to display a panel containing more details of the post.
 
-To return to the content area display of multiple UGC posts, select the X in the top right corner of the view detail pane.
+To return to the content area display of multiple UGC posts, select the X in the top-right corner of the view detail pane.
 
 For example:
 

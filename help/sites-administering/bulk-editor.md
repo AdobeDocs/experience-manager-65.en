@@ -1,6 +1,6 @@
 ---
 title: The Bulk Editor
-description: Learn how to use the Bulk Editor.
+description: Learn how to use the Bulk Editor for efficient editing when the visual page context is not needed.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -35,7 +35,7 @@ For example, if you need all the names and email addresses of users who filled o
 An example to illustrate such a use case is included in the Geometrixx web site:
 
 1. Navigate to the **Support** page and then to the **Customer Service Satisfaction** survey.
-1. **Edit** the **Start of Form** paragraph. In the dialog click the **Advanced** tab, expand the **Action Configuration**, then click **View Data...**.
+1. **Edit** the **Start of Form** paragraph. In the dialog box, click the **Advanced** tab, expand the **Action Configuration**, then click **View Data...**.
 
    ![Customer satisfaction survey example](assets/custsatsurvey.png)
 
@@ -57,7 +57,7 @@ The Bulk Editor lets you:
 To use the Bulk Editor to edit multiple items simultaneously:
 
 1. In the **Tools** console, click the **Importers** folder to expand it.
-1. Double-click the **Bulk Editor** to open it.
+1. Double-click the **Bulk Editor**.
 1. Enter your selection requirements:
 
 <table>
@@ -72,11 +72,11 @@ To use the Bulk Editor to edit multiple items simultaneously:
   </tr>
   <tr>
    <td>Query Parameters</td>
-   <td>Using GQL parameters, enter the search string you want the Bulk Editor to look for in the repository; for example, <code>type:Page</code> looks for all pages in the root path, <code>text:professional</code> looks for all pages that have the word "professional" in them, and <code>"jcr:title":English</code> looks for all pages that have "English" as the title. You can only search for strings.</td>
+   <td>Using GQL parameters, enter the search string you want the Bulk Editor to look for in the repository. For example, <code>type:Page</code> looks for all pages in the root path, <code>text:professional</code> looks for all pages that have the word "professional" in them, and <code>"jcr:title":English</code> looks for all pages that have "English" as the title. You can only search for strings.</td>
   </tr>
   <tr>
    <td>Content Mode check box</td>
-   <td>Select this check box to read properties within the <code>jcr:content</code> sub node of the search results if exists. Use for pages only. Property names are prefixed with <code>"jcr:content/"</code></td>
+   <td>Select this check box so you can read properties within the <code>jcr:content</code> subnode of the search results if exists. Use for pages only. Property names are prefixed with <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Properties/Columns</td>
@@ -98,11 +98,11 @@ To use the Bulk Editor to edit multiple items simultaneously:
 
    ![Bulk editor results](assets/chlimage_1-39.png)
 
-1. Make any changes that you need by double-clicking in a cell.
+1. Double-click a cell so you can make any changes.
 
    ![Editing in bulk](assets/srchresultedit.png)
 
-1. Click **Save** to save your changes (the **Save** button will be activated once you have edited a cell).
+1. Click **Save** to save your changes (the **Save** button is activated after you have edited a cell).
 
    >[!CAUTION]
    >
@@ -111,18 +111,19 @@ To use the Bulk Editor to edit multiple items simultaneously:
 #### Additional GQL Query Parameters {#additional-gql-query-parameters}
 
 * **path:** only search nodes below this path. If you specify more than one term with a path prefix, only the last one is considered.
-* **type:** only return nodes of the given node types. This includes primary and mixin types. You may specify multiple comma-separated node types. GQL returns nodes that are of any of the specified types.
+* **type:** only return nodes of the given node type. This includes primary and mixin types. You may specify multiple comma-separated node types. GQL returns nodes that are of any of the specified types.
 * **order:** order the result by the given properties. You may specify multiple comma-separated property names. To order the result in descending order simply prefix the property name with a minus. For example, order:-name. Using a plus sign returns the result in ascending order, which is also the default.
-* **limit:** limits the number of results using an interval. For example, limit:10..20 The interval is zero based, start is inclusive, and end is exclusive. You may also specify an open interval:limit:10.. or limit:..20 If the dots are omitted and only one value is specified GQL will return at most this number of results. For example, limit:10 (returns the first ten results).
+* **limit:** limits the number of results using an interval. For example, limit:10..20 The interval is zero-based, start is inclusive, and end is exclusive. You may also specify an open interval:limit:10.. or limit:..20 
+If the dots are omitted and only one value is specified, GQL returns at most this number of results. For example, limit:10 (returns the first ten results).
 
 ### Exporting Content {#exporting-content}
 
-You may need to export content and make changes to it in an Excel spreadsheet. For example, you may want to export a mailing list and change the area code of all the listed phone numbers directly in Excel, or add additional lines, and so on.
+If necessary, export content into an Excel spreadsheet to make any changes. For example, you may want to export a mailing list and change the area code of all the listed phone numbers directly in Excel, or add additional lines.
 
 To export content:
 
 1. Search for content as described in [Searching and Editing Content](#searching-and-editing-content).
-1. Click **Export** to export the changes into a tab-separated Excel spreadsheet. AEM WCM asks you where you want to download the file.
+1. Click **Export** so you can export the changes into a tab-separated Excel spreadsheet. AEM WCM asks you where you want to download the file.
 
    >[!NOTE]
    >

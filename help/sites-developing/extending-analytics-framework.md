@@ -1,6 +1,6 @@
 ---
 title: Customizing the Adobe Analytics Framework
-description: Customizing the Adobe Analytics Framework
+description: Learn how to customize the Adobe Analytics framework for Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem

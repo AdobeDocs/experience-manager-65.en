@@ -1,23 +1,19 @@
 ---
 title: Voting Essentials
-seo-title: Voting Essentials
-description: Voting component overview
-seo-description: Voting component overview
-uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
+description: Learn how to use Voting component that allows members to rate a particular piece of content by selecting up or down arrows to indicate their opinion.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
 ---
 # Voting Essentials {#voting-essentials}
 
 The voting component, a [tally](tally.md) subclass, is a useful tool that allows members to rate a particular piece of content by simply selecting up or down arrows to indicate their opinion.
 
-Placing multiple instances of a voting component on the same page is allowed; each instance must be configured with an unique `tally name` property.
+Placing multiple instances of a voting component on the same page is allowed; each instance must be configured with a unique `tally name` property.
 
-Anonymous posting of a vote is not supported. Site visitors must register and sign in to participate in voting only once, The signed in visitor (member) may change their vote at any time.
+Anonymous posting of a vote is not supported. Site visitors must register and sign in to participate in voting only once. The signed in visitor (member) may change their vote at any time.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -54,9 +50,9 @@ Anonymous posting of a vote is not supported. Site visitors must register and si
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Tally APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](server-customize.md)
 
@@ -65,7 +61,7 @@ Anonymous posting of a vote is not supported. Site visitors must register and si
 UGC should be moderated using one of the standard methods for moderation.
 See [Moderating User Generated Content](moderate-ugc.md).
 
-As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP or JSRP).
+As of AEM 6.1 Communities, use of a [common store](working-with-srp.md) for UGC includes programmatic access to UGC regardless of the chosen storage option (such as ASRP, MSRP, or JSRP).
 
 **The location and format of the UGC in the repository is subject to change without warning**.
 

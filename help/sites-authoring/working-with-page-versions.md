@@ -1,11 +1,6 @@
 ---
 title: Work with content page versions
-description: Create, compare, and restore versions of a page
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: Create, compare, and restore versions of a page in Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 ---
 # Working with Page Versions{#working-with-page-versions}

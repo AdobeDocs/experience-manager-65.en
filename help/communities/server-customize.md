@@ -1,14 +1,10 @@
 ---
 title: Server-side Customization
-seo-title: Server-side Customization
-description: Customizing server-side in AEM Communities
-seo-description: Customizing server-side in AEM Communities
-uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
+description: Learn how server-side customization in Adobe Experience Manager Communities.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 exl-id: 190735bc-1909-4b92-ba4f-a221c0cd5be7
 ---
 # Server-side Customization {#server-side-customization}
@@ -17,7 +13,7 @@ exl-id: 190735bc-1909-4b92-ba4f-a221c0cd5be7
 |---|---|
 |   |**[SCF Handlebars Helpers ⇒](handlebars-helpers.md)** |
 
-## Java APIs {#java-apis}
+## Java&trade; APIs {#java-apis}
 
 >[!NOTE]
 >
@@ -25,9 +21,9 @@ exl-id: 190735bc-1909-4b92-ba4f-a221c0cd5be7
 
 ### SocialComponent Interface {#socialcomponent-interface}
 
-SocialComponents are POJOs that represent a resource for an AEM Communities feature. Ideally, each SocialComponent represents a specific resourceType with exposed GETters that provide data to the client so the resource is accurately represented. All business logic and view logic is encapsulated in the SocialComponent, including the site visitor's session information, if necessary.
+SocialComponents are POJOs that represent a resource for an AEM Communities feature. Ideally, each SocialComponent represents a specific resourceType with exposed GETters that provide data to the client so the resource is accurately represented. All business and view logic is encapsulated in the SocialComponent, including the site visitor's session information, if necessary.
 
-The interface defines a basic set of GETters that are necessary to represent a resource. Importantly, the interface stipulates Map&lt;String, Object&gt; getAsMap() and String toJSONString() methods that are necessary in order to render Handlebars templates and expose GET JSON endpoints for resources.
+The interface defines a basic set of GETters that are necessary to represent a resource. Importantly, the interface stipulates Map&lt;String, Object&gt; getAsMap() and String toJSONString() methods that are necessary to render Handlebars templates and expose GET JSON endpoints for resources.
 
 All SocialComponent classes must implement the interface `com.adobe.cq.social.scf.SocialComponent`
 
@@ -47,11 +43,11 @@ A SocialComponentFactory is an OSGi service and has access to other OSGi service
 
 All SocialComponentFactory classes must implement the interface `com.adobe.cq.social.scf.SocialComponentFactory`
 
-An implementation of SocialComponentFactory.getPriority() method should return the highest value in order for the factory to be used for the given resourceType as returned by getResourceType().
+An implementation of SocialComponentFactory.getPriority() method should return the highest value for the factory to be used for the given resourceType as returned by getResourceType().
 
 ### SocialComponentFactoryManager Interface {#socialcomponentfactorymanager-interface}
 
-The SocialComponentFactoryManager (manager) manages all SocialComponents registered with the framework and is responsible for selecting the SocialComponentFactory to use for a given resource (resourceType). If no factories are registered for a specific resourceType, the manager will return a factory with the nearest super type for the given resource.
+The SocialComponentFactoryManager (manager) manages all SocialComponents registered with the framework and is responsible for selecting the SocialComponentFactory to use for a given resource (resourceType). If no factories are registered for a specific resourceType, the manager returns a factory with the nearest super type for the given resource.
 
 A SocialComponentFactoryManager is an OSGi service and has access to other OSGi services which can be passed to the SocialComponent through a constructor.
 
@@ -63,7 +59,7 @@ A handle to the OSGi service is obtained by invoking `com.adobe.cq.social.scf.So
 
 The HTTP API POST endpoints are PostOperation classes defined by implementing the `SlingPostOperation` interface (package `org.apache.sling.servlets.post`).
 
-The `PostOperation` endpont implementation sets `sling.post.operation` to a value to which the operation will respond. All POST requests with an:operation parameter set to that value will be delegated to this implementation class.
+The `PostOperation` endpoint implementation sets `sling.post.operation` to a value to which the operation responds. All POST requests with an:operation parameter set to that value is delegated to this implementation class.
 
 The `PostOperation` invokes the `SocialOperation` which performs the actions necessary for the operation.
 
@@ -71,7 +67,7 @@ The `PostOperation` receives the result from the `SocialOperation` and returns t
 
 #### SocialOperation Class {#socialoperation-class}
 
-Each `SocialOperation` endpoint extends the AbstractSocialOperation class and overrides the method `performOperation()`. This method performs all actions needed to complete the operation and return a `SocialOperationResult` or else throw an `OperationException`, in which case an HTTP error status with a message, if available, is returned in place of the normal JSON response or success HTTP status code.
+Each `SocialOperation` endpoint extends the AbstractSocialOperation class and overrides the method `performOperation()`. This method performs all actions needed to complete the operation and return a `SocialOperationResult` or else throw an `OperationException`. In such case, an HTTP error status with a message, if available, is returned in place of the normal JSON response or success HTTP status code.
 
 Extending `AbstractSocialOperation` makes possible the reuse of `SocialComponents` to send JSON responses.
 
@@ -81,7 +77,7 @@ The `SocialOperationResult` class is returned as the result of the `SocialOperat
 
 The `SocialComponent` represents the resource that was affected by the operation.
 
-For a Create operation, the `SocialComponent` included in the `SocialOperationResult` represents the resource just created and for an Update operation, it represents the resource that was altered by the operation. No `SocialComponent` is returned for a Delete operation.
+For a Create operation, the `SocialComponent` included in the `SocialOperationResult` represents the resource created and for an Update operation, it represents the resource that was altered by the operation. No `SocialComponent` is returned for a Delete operation.
 
 The success HTTP status codes used are:
 
@@ -91,7 +87,7 @@ The success HTTP status codes used are:
 
 #### OperationException Class {#operationexception-class}
 
-An `OperationExcepton` can be thrown when performing an operation if the request is not valid or some other error occurs, such as internal errors, bad parameter values, improper permissions, etc. An `OperationException` is composed of an HTTP status code and an error message, which are returned to the client as the response to the `PostOperatoin`.
+An `OperationExcepton` is thrown when performing an operation if the request is not valid or some other error occurs. For example, internal errors, bad parameter values, or improper permissions. An `OperationException` is composed of an HTTP status code and an error message, which are returned to the client as the response to the `PostOperatoin`.
 
 #### OperationService Class {#operationservice-class}
 
@@ -104,15 +100,15 @@ All `OperationService` classes extend `AbstractOperationService`, allowing addit
   Allows for pre-checks/pre-processing and validations
 * `performAfterActions()`
   
-  Allows for further modification of resources or invoking custom events, workflows, etc
+  Allows for further editing of resources or invoking custom events, workflows, and so on.
 
 #### OperationExtension Class {#operationextension-class}
 
-`OperationExtension` classes are custom pieces of code that can be injected into an operation allowing for customization of operations to meet business needs. The consumers of the component can dynamically and incrementally add functionality to the component. The extension/hook pattern allows developers to focus exclusively on the extensions themselves and removes the need for copying and overriding entire operations and components.
+The `OperationExtension` classes are custom pieces of code that can be injected into an operation allowing for customization of operations to meet business needs. The consumers of the component can dynamically and incrementally add functionality to the component. The extension/hook pattern allows developers to focus exclusively on the extensions themselves and removes the need for copying and overriding entire operations and components.
 
 ## Sample Code {#sample-code}
 
-Sample code is available in the [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repository. Search for projects prefixed with either `aem-communities` or `aem-scf`.
+Sample code is available in the [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repository. Search for projects prefixed with either `aem-communities` or `aem-scf`.
 
 ## Best Practices {#best-practices}
 

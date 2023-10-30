@@ -1,6 +1,6 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: AEM Developer Tools for Eclipse
+description: Learn about Adobe Experience Manager's developer tools for Eclipse.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools

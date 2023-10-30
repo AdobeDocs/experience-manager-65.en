@@ -1,6 +1,6 @@
 ---
 title: Site Templates
-description: How to access the Site Templates console
+description: Learn how to access the Site Templates console to create a community site.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -18,7 +18,7 @@ The Site Templates console is similar to the [Group Templates](tools-groups.md) 
 
 ## Site Templates Console {#site-templates-console}
 
-In the author environment, to reach the community sites console:
+In the Author environment, to reach the community sites console:
 
 * From global navigation: **[!UICONTROL Tools > Communities > Site Templates]**
 
@@ -30,7 +30,7 @@ This console displays the templates from which a [community site](sites-console.
 
 To get started creating a site template, select `Create`.
 
-This opens the Site Editor panel that contains three sub-panels:
+This opens the Site Editor panel that contains three subpanels:
 
 ### Basic info {#basic-info}
 
@@ -66,7 +66,7 @@ For example, if you want a home page, drag the Page function from the library an
 
 Continue dragging and dropping any other community functions desired for a community site based on this template.
 
-The page function provides an empty page. The Groups function lets you create a group site (sub-community) within the community site.
+The page function provides an empty page. The Groups function lets you create a group site (subcommunity) within the community site.
 
 >[!CAUTION]
 >

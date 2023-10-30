@@ -1,23 +1,19 @@
 ---
 title: Administering Workflows
-seo-title: Administering Workflows
-description: Learn how to administer workflows in AEM.
-seo-description: Learn how to administer workflows in AEM.
-uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
+description: Learn how to automate Adobe Experience Manager activities using workflows.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 ---
 # Administering Workflows{#administering-workflows}
 
 Workflows enable you to automate Adobe Experience Manager (AEM) activities. Workflows:
 
-* Consist of a series of steps that are executed in a specific order.
+* Consist of a series of steps that are run in a specific order.
 
-    * Each step performs a distinct activity; such as waiting for user input, activating a page or sending an email message.
+    * Each step performs a distinct activity; such as waiting for user input, activating a page, or sending an email message.
 
 * Can interact with assets in the repository, user accounts, and AEM services.
 * Can coordinate complicated activities that involve any aspect of AEM.
@@ -50,7 +46,7 @@ When a workflow model is started (executed), a workflow instance is created. A w
 
 >[!CAUTION]
 >
->The steps performed are those defined by the workflow model *at the time the instance is generated*. See [Developing Workflows](/help/sites-developing/workflows.md#model) for further details.
+>The steps performed are those defined by the workflow model *at the time that the instance is generated*. See [Developing Workflows](/help/sites-developing/workflows.md#model) for further details.
 
 Workflow instances progress through the following lifecycle:
 
@@ -78,16 +74,16 @@ Either a user or a service performs workflow steps, depending on the type of ste
 
 >[!NOTE]
 >
->If an error occurs, the service/step implementation should handle behavior for an error scenario. The workflow engine itself will retry the job, then log an error and stop the instance.
+>If an error occurs, the service/step implementation should handle behavior for an error scenario. The workflow engine itself retries the job, then logs an error and stops the instance.
 
 ## Workflow Status and Actions {#workflow-status-and-actions}
 
-A workflow can have one of the following status:
+A workflow can have one of the following statuses:
 
 * **RUNNING**: The workflow instance is running.
 * **COMPLETED**: The workflow instance has been successfully ended.
 
-* **SUSPENDED**: Marks the workflow as suspended. However, see the Caution note below on a know issue with this state.
+* **SUSPENDED**: Marks the workflow as suspended. However, see the Caution note below on a known issue with this state.
 * **ABORTED**: The workflow instance has been terminated.
 * **STALE**: Progression of the workflow instance requires that a background job executes, however the job cannot be found in the system. This situation can occur when an error occurs when executing the workflow.
 
@@ -95,13 +91,13 @@ A workflow can have one of the following status:
 >
 >When the execution of a Process Step results in errors, the step appears in the administrator's Inbox and the workflow status is **RUNNING**.
 
-Depending on the current status, you can perform actions on running workflow instances when you need to intervene in the normal progression of a workflow instance:
+Depending on the status, you can perform actions on running workflow instances when you must intervene in the normal progression of a workflow instance:
 
 * **Suspend**: Suspending changes the workflow state to Suspended. See Caution below:
 
 >[!CAUTION]
 >
->Marking a workflow state to "Suspend" has a known issue. In this state it is possible to take actions on suspended workflow items in an Inbox.
+>Marking a workflow state to "Suspend" has a known issue. In this state, it is possible to act on suspended workflow items in an Inbox.
 
 * **Resume**: Restarts a suspended workflow at the same point of execution where it was suspended, using the same configuration.
 * **Terminate**: Ends the workflow execution and changes the state to **ABORTED**. An aborted workflow instance cannot be restarted.

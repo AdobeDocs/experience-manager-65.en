@@ -1,17 +1,6 @@
 ---
 title: Foundation Components
-seo-title: Foundation Components
-description: Foundation Components
-seo-description: null
-uuid: 3caf9123-ae58-4590-af2f-57ef076daf7f
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: ea2a523e-8d26-4be4-822f-35f153e40308
-docset: aem65
-legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
-pagetitle: Foundation Components
+description: Learn about Foundation Components in Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 ---
 # Foundation Components {#foundation-components}

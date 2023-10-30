@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Community
-description: Troubleshooting Community including Known Issues
+description: Learn about troubleshooting Community including known issues and concerns.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -17,7 +17,7 @@ This section contains common concerns and known issues when troubleshooting Comm
 
 When using Dispatcher 4.1.5 with a newer version of Jetty, a refetch may result in 'Unable to receive response from remote server' after waiting for the request to time out.
 
-Using Dispatcher 4.1.6 or later will resolve this issue.
+Using Dispatcher 4.1.6 or later resolves this issue.
 
 ### Cannot Access Forum Post After Upgrading from CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
@@ -40,7 +40,7 @@ Thus, any code using RelativeTimeFormat() API must change:
 * From: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * To: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-The failure is different on author and publish. On author, it fails silently and simply does not display the forum topics. On publish it throws up the error on the page.
+The failure is different on Author and Publish. On Author, it fails silently and simply does not display the forum topics. On Publish, it throws up the error on the page.
 
 See the [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API for more information.
 
@@ -72,7 +72,7 @@ These warnings can be safely ignored.
 
 ### Error in Logs: NoClassDefFoundError for IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Upgrading AEM 5.6.1 GA to latest cq-socialcommunities-pkg-1.4.x or to AEM 6.0 results in errors in the log file during startup for a condition which will resolve itself as evidenced by the error not being seen upon restart.
+Upgrading AEM 5.6.1 to the latest cq-socialcommunities-pkg-1.4.x, or to AEM 6.0 results in errors in the log file. This occurs during startup for a condition which resolves itself as evidenced by the error not being seen on restart.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException

@@ -1,6 +1,6 @@
 ---
 title: Deploying Best Practices
-description: Deploying and maintaining best practices.
+description: Learn how to deploy and maintain Adobe Experience Manager (AEM) in the most efficient and effective way possible.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference

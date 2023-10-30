@@ -1,6 +1,6 @@
 ---
 title: The AEM Community
-description: The AEM Community
+description: Discover and create connections with the Adobe Experience Manager Community.
 exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
 ---
 # The AEM Community {#the-aem-community}
