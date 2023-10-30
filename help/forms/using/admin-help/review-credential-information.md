@@ -1,8 +1,6 @@
 ---
 title: Review credential use information
-seo-title: Review credential use information
-description: Learn how to review credential use information.
-seo-description: Learn how to review credential use information.
+description: Learn how to review the credential use information. The credential use information which describes its use, is accessible through the Acrobat Reader extension. 
 uuid: 02af75f9-c235-470d-a98b-a2102aa31381
 contentOwner: admin
 content-type: reference
