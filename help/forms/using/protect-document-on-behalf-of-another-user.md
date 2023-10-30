@@ -1,7 +1,6 @@
 ---
 title: Protect a document on behalf of another user
-seo-title: Protect a document on behalf of another user
-description:  Protect a document on behalf of another user
+description: AEM Forms Document Security Java SDK offers APIs for a user account to protect a document on behalf of another user, without requiring edit permissions.
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6

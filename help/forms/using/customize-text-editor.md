@@ -1,8 +1,6 @@
 ---
 title: Customize text editor
-seo-title: Customize text editor
-description: Learn how to customize text editor.
-seo-description: Learn how to customize text editor.
+description: Learn how to customize text editor in AEM Forms environment.
 uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

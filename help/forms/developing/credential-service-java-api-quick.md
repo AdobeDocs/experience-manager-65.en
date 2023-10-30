@@ -1,7 +1,6 @@
 ---
 title: Credential Service Java API QuickStart(SOAP)
-seo-title: Credential Service Java API QuickStart(SOAP)
-description: Credential Service Java API QuickStart(SOAP)
+description: Import, delete credentials in AEM Forms using the Java API Quick Start (SOAP).
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
