@@ -1,6 +1,6 @@
 ---
 title: Endpoint Registry Java API QuickStart(SOAP)
-description: Add endpoints like EJB, SOAP, Watched Folder, Email endpoint, Remoting endpoint and more. Modifying, remove and retrieve an endpoint using Java API.
+description: Add endpoints like EJB, SOAP, Watched Folder, Email endpoint, Remoting endpoint, and more. Also, modify, remove, and retrieve an endpoint using Java API.
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
