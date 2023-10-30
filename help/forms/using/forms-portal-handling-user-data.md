@@ -1,6 +1,6 @@
 ---
 title: Forms Portal | Handling user data
-description: Managing user data such as access and delete, data store on AEM Forms portal.
+description: Managing user data such as access, delete and data store on AEM Forms portal.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
