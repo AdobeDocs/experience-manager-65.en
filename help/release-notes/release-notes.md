@@ -6,12 +6,12 @@ mini-toc-levels: 4
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
 
-<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/Documents/issue_tracker_sp_cfp_updates.xlsx?d=w3ea81ae4e6054153b132f2698c86f84e&csf=1&web=1&e=7yhrWb&nav=MTVfe0U0RjdDQUM3LTZCQ0EtNDk1Qy04Mjc1LTM2MUJEMzE1OEVGN30 -->
+<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
 
 <!-- DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
 >[!NOTE]
 >
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, June 1, 2023. In addition, a list of Forms fixes and enhancements is added to this section. -->
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, November 30, 2023. In addition, a list of Forms fixes and enhancements is added to this section. -->
 
 ## Release information {#release-information}
 
@@ -62,15 +62,17 @@ Some of the key features and enhancements in this release include the following:
 
 * U
 
+#### Accessibility{#sites-accessibility-6519}
+
+* On an AEM Sites page, when you zoom in 200% on the page, the links **[!UICONTROL Language Copy]** and **[!UICONTROL CSV Report]** in the References rail disappear. (SITES-11011) NORMAL
+
 #### Admin User Interface{#sites-adminui-6519}
 
 * AEM Screens Channel **[!UICONTROL Preview]** functionality does not work or display on the Dashboard. (SITES-15730) CRITICAL
-* During a page move operation, if the user interface cannot display the references but states that these will be automatically republished, they are actually *not* republished. (SITES-16435) MAJOR
-* In AEM 6.5 with Service Pack 16 or Service Pack 17, when in the List view of sites with the "Workflow" column enabled, you are unable to sort the list based on the items in that column; no sorting occurs. (SITES-15385) MAJOR
+* During a page move operation, if the user interface cannot display the references but states that these are automatically republished, they are *not* republished. (SITES-16435) MAJOR
+* In AEM 6.5 with Service Pack 16 or 17, when in the List view of sites with the "Workflow" column enabled, you cannot sort the list based on the items in that column. No sorting occurs. (SITES-15385) MAJOR
 * For a redirect page template, the redirect field has been made mandatory. However, the validation for the required field is not getting applied nor working in these two scenarios: when a page is created without a mandatory redirect value; cannot create a redirect page. The validation does not work when navigating using keyboard shortcuts and when the field is marked as invalid, it does not proceed. (SITES-15903) NORMAL
 * Some **Incoming Links** were not getting included in the displayed count in the **References** panel. For example, the panel was showing **Incoming Links (6)** but there were actually nine incoming links. (SITES-14816) NORMAL
-
-
 
 #### Classic UI{#sites-classicui-6519}
 
@@ -80,6 +82,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6519}
 
+* An Internal Server Error message appears in the Content Fragment Editor. (SITES-13550) CRITICAL
 * The update of the `org.json` library by way of NPR-41291 caused data error conversions in the `DefaultDataTypeConverter` of the `cfm-impl` bundle. Data type conversion must be more flexible. (SITES-16473) NORMAL
 * Getting the error pop-up message, "This content fragment version cannot be compared to the current version because of incompatible content." Content fragments should be comparable but it is not. (SITES-16317) NORMAL
 * Changed the asset selector JS URL from 
@@ -99,7 +102,7 @@ to
 
 #### Campaign integration{#sites-campaign-integration-6519}
 
-* On the signature component (`/apps/fpl/components/campaign/signature`), the link externalizer was not working. The domain was not getting appended to the image source, if the HTML comment above the image tag was removed. This issue was found only with the signature component in the production environment, not the staging environment. (SITES-16120) NORMAL
+* On the signature component (`/apps/fpl/components/campaign/signature`), the link Externalizer was not working. The domain was not getting appended to the image source, if the HTML comment above the image tag was removed. This issue was found only with the signature component in the production environment, not the staging environment. (SITES-16120) NORMAL
 
 #### Experience Fragments{#sites-experiencefragments-6519}
 
@@ -120,14 +123,15 @@ to
 
 #### MSM - Live Copies{#sites-msm-live-copies-6519}
 
-* Link Reference does not get updated inside experience fragment when creating a live copy or rollout an experience fragment.(SITES-15460) NORMAL
+* Link Reference does not get updated inside Experience Fragment when creating a live copy or rollout an Experience Fragment. (SITES-15460) NORMAL
 
 #### Page Editor{#sites-pageeditor-6519}
 
+* Selection of multiple document filetypes on asset type filter is not working on the page console. No results are found even if the results of one particular filetype are available. As a result, authors are unable to filter multiple documents. They must use multiple document types and they are having to filter it one at a time. (SITES-14047) MAJOR
 * After upgrading an instance from AEM 6.5.17 and AEM 6.5.18, from inside the Page Editor, if you click **[!UICONTROL Publish Page]**, you are redirected to a URL that does not exist. The user should be redirected to the Publish wizard. (SITES-15856) NORMAL
 * (SITES-15704) NORMAL
 * Redundant copy from AEM's Clipboard during a paste from the operating system's Clipboard. (SITES-15704) NORMAL
-* In Assets, selecting **[!UICONTROL Documents]**, then under **[!UICONTROL Filtertype]**, selecting **[!UICONTROL Microsoft Word]** or **[!UICONTROL Microsoft Excel]** shows no results even though files of both types exist. (SITES-14837) NORMAL
+* In Assets, selecting **[!UICONTROL Documents]**, then under **[!UICONTROL Filtertype]**, selecting **[!UICONTROL Microsoft&reg; Word]** or **[!UICONTROL Microsoft&reg; Excel]** shows no results even though files of both types exist. (SITES-14837) NORMAL
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -139,18 +143,17 @@ to
 
 ### [!DNL Forms]{#forms-6519}
 
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
 
+<!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
-  * W
+  * text
 * **Adaptive Forms** 
-  * W
- 
+  * text
 * **Accessibility**
-  * W
+  * text
 * **Interactive Communications**
-  * I
-
+  * text -->
 
 ### Commerce{#commerce-6519}
 
@@ -158,7 +161,11 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 ### Foundation{#foundation-6519}
 
-* A
+* Creating a language copy at the language root level does not adjust paths in the page. In the case where the language copy was created, not for the language root but for the pages under it, the path changed correctly. (NPR-41364) MAJOR
+* The "Relative Date Presentation" tooltip can only be closed by pressing Escape (ESC) on the keyboard. The tooltip should close when the user selects any part of the user interface. (NPR-41394) NORMAL
+* Unlocalized string `Something went wrong while adding the private key.` when adding the wrong Private Key File in **Edit User** > **Keystore**. (NPR-41366) NORMAL
+* Icons are needed for Microsoft&reg; SharePoint and Microsoft&reg; One Drive in the AEM 6.5 environment. (NPR-41354) NORMAL
+* Deselection does not work correctly after using "Select All" in the AEM Sites console. (NPR-41304) MINOR
 
 #### Content distribution{#foundation-content-distribution-6519}
 
@@ -174,7 +181,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Platform{#foundation-platform-6519}
 
-* A
+* QueryBuilder queries with square brackets are wrongly translated to xpath . (NPR-41298) NORMAL
 
 #### Replication{#foundation-replication-6519}
 
@@ -198,7 +205,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Workflow{#foundation-workflow-6519}
 
-* R
+* Unable to complete tasks in Inbox. There is no value (only "undefined") in the drop-down list when trying to complete the task for zip files, Asset reports, move (success or failure), or asset expiration. (NPR-41305) MAJOR
+* When a user selects **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > instances, then selects the running workflow, then select **[!UICONTROL View Payload]**, it results in a 500 error page. (NPR-41325) NORMAL
+
 
 ## Install [!DNL Experience Manager] 6.5.18.0{#install}
 
@@ -393,7 +402,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### Installation 
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
-* After upgrading to AEM Forms 6.5.18.0 JBoss Turnkey full installer environment on Windows Server 2022, when compiling Output client application code using Java 11, the following compilation error may occur:
+* After upgrading to AEM Forms 6.5.18.0 JBoss&reg; Turnkey full installer environment on Windows Server 2022, when compiling Output client application code using Java&trade; 11, the following compilation error may occur:
   
   ```
   error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
@@ -410,7 +419,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
         > You can also use an in-place editing tool, for example 7-zip, to update the `Manifest.mf` file.  
 
     1. Save the updated the `Manifest.mf` in the `adobe-output-client.jar` archive. 
-    1. Save the modified `adobe-output-client.jar` file and re-run the setup.  (CQDOC-20878)
+    1. Save the modified `adobe-output-client.jar` file and rerun the setup. (CQDOC-20878)
 * After installing AEM Service Pack 6.5.19.0 full installer, the EAR deployment fails on JEE using JBoss&reg; Turnkey. 
 To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager. (CQDOC-20803)
 
