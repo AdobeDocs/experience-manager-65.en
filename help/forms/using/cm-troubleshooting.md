@@ -1,11 +1,9 @@
 ---
 title: "Correspondence Management: Troubleshooting"
-description: Handle errors that may arise during the process of saving a letter in an AEM Forms environment.
-uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
+description: Learn how to handle errors that come up during the process of saving a letter in an AEM Forms environment.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
 ---
@@ -18,7 +16,7 @@ exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
 One of the following errors displayed when saving a letter:
 
 * Data binding not present for the text module
-* Please provide the property information needed for the following
+* Provide the property information needed for the following
 
 ### Reason {#reason}
 
@@ -44,5 +42,5 @@ Reset the letter cache on the publish instance using the following steps and the
 1. Go to **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** and log in as Admin.
 1. Select **Correspondence Management Configurations**.
 1. In **Correspondence Management Configurations**, disable **Enable Letter Cache **and then click** Save.**
-1. Enable **Enable Letter Cache** and then click **Save**.
+1. Check **Enable Letter Cache** and then click **Save**.
 1. Retry viewing the letter.
