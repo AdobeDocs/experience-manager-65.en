@@ -13,7 +13,6 @@ These operations include:
 * Moving many assets or assets with many references
 * Exporting/importing asset metadata in bulk
 * Fetching assets, which are above the threshold limit set, from a remote Experience Manager deployment
-* Moving pages
 * Rolling out Live Copies
 
 You can view the status of asynchronous jobs from the **[!UICONTROL Async Job Status]** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**.
@@ -107,19 +106,6 @@ If the number of assets/folders or references to be moved exceeds the threshold 
 1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
    ![Asset move threshold](assets/async-move-threshold.png)
-
-1. Check the option **Enable email notification** to receive email notifications for this job status. for example, success, failed.
-1. Save the changes.
-
-### Configure Asynchronous Page Move Operations {#configuring-asynchronous-page-move-operations}
-
-If the number of references to the page(s) to be moved exceeds the threshold number, the move operation is performed asynchronously.
-
-1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
-1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
-1. In the **[!UICONTROL Threshold number of references]** field, specify the threshold number of references for asynchronous processing of page move operations.
-
-   ![Page move threshold](assets/async-page-move.png)
 
 1. Check the option **Enable email notification** to receive email notifications for this job status. for example, success, failed.
 1. Save the changes.
