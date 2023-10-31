@@ -1,7 +1,6 @@
 ---
-title: Convert PDF Service Java API QuickStart(SOAP)
-seo-title: Convert PDF Service Java API QuickStart(SOAP)
-description: Convert PDF Service Java API QuickStart(SOAP)
+title: Convert PDF Service Java API QuickStart (SOAP)
+description: The Convert PDF service converts PDF documents to PostScript or image files (JPEG, JPEG 2000, PNG, and TIFF).
 uuid: 97253ac7-f0c1-4766-a7bd-c19af52adf51
 contentOwner: admin
 content-type: reference

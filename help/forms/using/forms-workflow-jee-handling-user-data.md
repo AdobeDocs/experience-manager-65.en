@@ -1,7 +1,6 @@
 ---
 title: Forms JEE workflows | Handling user data
-seo-title: Forms JEE workflows | Handling user data
-description: Forms JEE workflows | Handling user data
+description: AEM Forms JEE workflows to design, create, and manage business processes.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

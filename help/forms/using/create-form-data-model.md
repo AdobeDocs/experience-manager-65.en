@@ -1,8 +1,6 @@
 ---
 title: "Tutorial: Create form data model "
-seo-title: Create Form Data Model Tutorial
-description: Create form data model
-seo-description: Create form data model
+description: Configure MySQL as data source, create form data model (FDM), configure it, and test for AEM Forms.
 uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS

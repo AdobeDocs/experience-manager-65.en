@@ -1,6 +1,6 @@
 ---
 title: APIs to access letter instances
-description: Learn how to use APIs to access letter instances.
+description: Discover APIs and use them to programatically access letter instances in AEM Forms environment.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management

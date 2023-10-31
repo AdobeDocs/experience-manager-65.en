@@ -1,14 +1,10 @@
 ---
 title: Using the CRX2Oak Migration Tool
-seo-title: Using the CRX2Oak Migration Tool
-description: Learn how to use the CRX2Oak migration tool with AEM.
-seo-description: Learn how to use the CRX2Oak migration tool.
-uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
+description: Learn how to use the CRX2Oak migration tool with Adobe Experience Manager. The tool is designed to help you migrate data between different repositories.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
 ---
@@ -25,7 +21,7 @@ You can download the newest version of crx2oak from the public Adobe repository 
 
 >[!NOTE]
 >
->For more information on Apache Oak and key concepts of AEM persistance, see [Introduction to the AEM Platform](/help/sites-deploying/platform.md).
+>For more information on Apache Oak and key concepts of Adobe Experience Manager (AEM) persistence, see [Introduction to the AEM Platform](/help/sites-deploying/platform.md).
 
 ## Migration Use Cases {#migration-use-cases}
 
@@ -45,17 +41,17 @@ The below diagram illustrates all the possible migration combinations supported 
 
 CRX2Oak is called during AEM upgrades in a fashion in which the user can specify a predefined migration profile that automates the reconfiguration of persistence modes. This is called the quickstart mode.
 
-It can also be run separately in case it requires more customization. However, note that in this mode changes are made only to the repository and any additional reconfiguration of AEM needs to be performed manually. This is called the standalone mode.
+It can also be run separately in case it requires more customization. However, in this mode changes are made only to the repository and any additional reconfiguration of AEM must be performed manually. This is called the standalone mode.
 
-Another thing to note is that with the default settings in standalone mode, only the Node Store will be migrated and the new repository will re-use the old binary storage.
+Another thing to note is that with the default settings in standalone mode, only the Node Store is migrated and the new repository reuses the old binary storage.
 
 ### Automated Quickstart Mode {#automated-quickstart-mode}
 
-Since AEM 6.3, CRX2Oak is able to handle user defined migration profiles that can be configured with all the migration options already available. This allows for both higher flexibility, and the ability to automate configuration of AEM, features that are not available if you are using the tool in standalone mode.
+Since AEM 6.3, CRX2Oak is able to handle user-defined migration profiles that can be configured with all the migration options already available. This allows for both higher flexibility, and the ability to automate configuration of AEM, features that are not available if you are using the tool in standalone mode.
 
-In order to switch CRX2Oak to quickstart mode you need to define the path to crx-quickstart folder in the AEM installation directory via this operating system environmental variable:
+To switch CRX2Oak to quickstart mode, define the path to crx-quickstart folder in the AEM installation directory by way of this operating system environmental variable:
 
-**For UNIX based systems and macOS:**
+**For UNIX-based systems and macOS:**
 
 ```shell
 export SLING_HOME="/path/to/crx-quickstart"
@@ -73,15 +69,15 @@ The migration can be interrupted at any time, with the possibility to resume it 
 
 #### Customizable Upgrade Logic {#customizable-upgrade-logic}
 
-Custom Java logic cand also be implemented using `CommitHooks`. Custom `RepositoryInitializer` classes can be implemented in order to initialize the repository with custom values.
+Custom Java&trade; logic can be implemented using `CommitHooks`. Custom `RepositoryInitializer` classes can be implemented to initialize the repository with custom values.
 
 #### Support for Memory Mapped Operations {#support-for-memory-mapped-operations}
 
-CRX2Oak also supports memory mapped operations by default. Memory mapping greatly improves performance and should be used whenever possible.
+CRX2Oak also supports memory-mapped operations by default. Memory mapping greatly improves performance and should be used whenever possible.
 
 >[!CAUTION]
 >
->Note however that memory mapped operations are not supported for Windows platforms. Therefore, it is recommended to add the **--disable-mmap** parameter when performing the migration on Windows.
+>Note however that memory-mapped operations are not supported for Windows platforms. Therefore, it is recommended to add the **--disable-mmap** parameter when performing the migration on Windows.
 
 #### Selective Migration of Content {#selective-migration-of-content}
 
@@ -91,15 +87,15 @@ If there is any part of the content that is not required on the new instance, yo
 
 #### Path Merging {#path-merging}
 
-If data needs to be copied between two repositories and you have a content path that is different on both instances, you can define it in the `--merge-path` parameter. Once you do, CRX2Oak will copy only the new nodes to the destination repository and will keep the old ones in place.
+If data must be copied between two repositories and you have a content path that is different on both instances, you can define it in the `--merge-path` parameter. When you do, CRX2Oak copies only the new nodes to the destination repository and keeps the old ones in place.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 #### Version Support {#version-support}
 
-By default, AEM will create a version of each node or page that gets modified, and store it in the repository. The versions can be then used to restore the page to an earlier state.
+By default, AEM creates a version of each node or page that gets modified, and store it in the repository. The versions can be then used to restore the page to an earlier state.
 
-However, these versions are never purged even if the original page is deleted. When dealing with repositories that have been in operation for a long time, the migration might need to process a lot of redundant data caused by orphaned versions.
+However, these versions are never purged even if the original page is deleted. When dealing with repositories that have been in operation for a long time, the migration may reprocess redundant data caused by orphaned versions.
 
 A useful feature for these types of situations is the addition of the `--copy-versions` parameter. It can be used to skip the version nodes during migration or copy of a repository.
 
@@ -111,7 +107,7 @@ Both parameters also support a `YYYY-MM-DD` date format, in case you want to cop
 
 #### Open Source Version {#open-source-version}
 
-An open source version of CRX2Oak is available in the form of oak-upgrade. It supports all the features except for:
+An open-source version of CRX2Oak is available in the form of oak-upgrade. It supports all the features except for:
 
 * CRX2 support
 * Migration profile support
@@ -130,7 +126,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--src-user:` User for the source RDB
 
-* `--user`: User for the targed RDB
+* `--user`: User for the target RDB
 
 * `--password`: Password for the target RDB.
 
@@ -138,13 +134,13 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--early-shutdown`: Shuts down the source JCR2 repository after nodes are copied and before the commit hooks are applied
 * `--fail-on-error`: Forces a failure of the migration if the nodes cannot be read from the source repository.
-* `--ldap`: Migrates LDAP users from a CQ 5.x instance to an Oak based one. In order for this to work, the Identity Provider in the Oak configuration needs to be named ldap. For more information, see the [LDAP documentation](/help/sites-administering/ldap-config.md).
+* `--ldap`: Migrates LDAP users from a CQ 5.x instance to an Oak based one. For this to work, the Identity Provider in the Oak configuration must be named ldap. For more information, see the [LDAP documentation](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Use this in conjunction with the `--ldap` parameter for CQ 5.x repositories that used multiple LDAP servers for authentication. You can use it to point to the CQ 5.x `ldap_login.conf` or `jaas.conf` configuration files. The format is `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Use this with the `--ldap` parameter for CQ 5.x repositories that used multiple LDAP servers for authentication. You can use it to point to the CQ 5.x `ldap_login.conf` or `jaas.conf` configuration files. The format is `--ldapconfig=path/to/ldap_login.conf`.
 
 ### Version Store Options {#version-store-options}
 
-* `--copy-orphaned-versions`: Skips copying orphaned versions. Parameters supported are: `true`, `false` and `yyyy-mm-dd`. Defaults to `true`.
+* `--copy-orphaned-versions`: Skips copying orphaned versions. Parameters supported are: `true`, `false`, and `yyyy-mm-dd`. Defaults to `true`.
 
 * `--copy-versions:` Copies the version storage. Parameters: `true`, `false`, `yyyy-mm-dd`. Defaults to `true`.
 
@@ -180,7 +176,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 ## Debugging {#debugging}
 
-You can also enable debug information for the migration process in order to troubleshoot any issues that might appear during the process. You can do this differently depending on the mode you wish to run the tool in:
+You can also enable debug information for the migration process to troubleshoot any issues that might appear during the process. You can do this differently depending on the mode you wish to run the tool in:
 
 <table>
  <tbody>
@@ -190,11 +186,11 @@ You can also enable debug information for the migration process in order to trou
   </tr>
   <tr>
    <td>Quickstart mode</td>
-   <td>You can add the <strong>--log-level TRACE</strong> or <strong>--log-level DEBUG </strong>options to the command line when running CRX2Oak. In this mode logs are automatically redirected to the <strong>upgrade.log file</strong>.</td>
+   <td>You can add the <strong>--log-level TRACE</strong> or <strong>--log-level DEBUG </strong>options to the command line when running CRX2Oak. In this mode, logs are automatically redirected to the <strong>upgrade.log file</strong>.</td>
   </tr>
   <tr>
    <td>Standalone mode</td>
-   <td><p>Add the <strong>--trace</strong> options to the CRX2Oak command line to show TRACE events on standard output (you need to redirect logs yourself using redirection character: '&gt;' or 'tee' command for later inspection).</p> </td>
+   <td><p>Add the <strong>--trace</strong> options to the CRX2Oak command line so you can show TRACE events on standard output (you must redirect logs yourself using redirection character: '&gt;' or 'tee' command for later inspection).</p> </td>
   </tr>
  </tbody>
 </table>

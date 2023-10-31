@@ -1,6 +1,6 @@
 ---
 title: Assembler Service Java API QuickStart(SOAP)
-description: Assembler Service Java API QuickStart(SOAP)
+description: Assemble, Disassemble, and dynamically create a a PDF document using the Assembler Service Java API QuickStart(SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

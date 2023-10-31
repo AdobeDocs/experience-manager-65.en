@@ -1,8 +1,6 @@
 ---
 title: Forms Service API Quick Starts
-seo-title: Forms Service API Quick Starts
-description: Use the Quick Starts for the Forms Service API.
-seo-description: Use the Quick Starts for the Forms Service API.
+description: Render interactive PDF, HTML Forms, Fragments using JAVA API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
