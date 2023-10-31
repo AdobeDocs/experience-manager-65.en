@@ -1,7 +1,6 @@
 ---
 title: Understanding AEM Forms Processes
-seo-title: Understanding AEM Forms Processes
-description: Understanding AEM Forms Processes
+description: AEM Forms processes encompass form creation, submission, data handling, validation, integration, workflow automation, and output management.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference

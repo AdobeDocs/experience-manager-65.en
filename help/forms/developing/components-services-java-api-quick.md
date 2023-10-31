@@ -1,7 +1,6 @@
 ---
 title: Components and Services Java APIQuick Start(SOAP)
-seo-title: Components and Services Java APIQuick Start(SOAP)
-description: Components and Services Java APIQuick Start(SOAP)
+description: Programmatically manipulate AEM Forms components and services by using using Java API Quick Start (SOAP).
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference

@@ -1,7 +1,6 @@
 ---
 title: Configuring a Correspondence Management solution
-seo-title: Configuring a Correspondence Management solution
-description: Configuring a Correspondence Management solution
+description: Configure a Correspondence Management solution in AEM Forms environment.
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference

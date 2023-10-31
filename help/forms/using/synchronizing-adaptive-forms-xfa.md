@@ -1,8 +1,6 @@
 ---
 title: Synchronizing Adaptive Forms with XFA Form Templates
-seo-title: Synchronizing Adaptive Forms with XFA Form Templates
-description: Synchronizing Adaptive forms with XFA/XDP files.
-seo-description: Synchronizing Adaptive forms with XFA/XDP files.
+description: Learn how to synchronize forms with XFA/XDP files. It reuses fields of forms synchronized with changes made to the corresponding fields in the XFA/XDP files.
 uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -18,7 +16,7 @@ exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 
 ## Introduction {#introduction}
 
-You can create an adaptive form based on an XFA form template ( `*.XDP` file). This reuse lets you preserve your investment in existing XFA forms. For information on how to use an XFA form template for creating an adaptive form, [Create an Adaptive Form based on a template](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+You can create an Adaptive Form based on an XFA form template ( `*.XDP` file). This reuse lets you preserve your investment in existing XFA forms. For information on how to use an XFA form template for creating an adaptive form, [Create an Adaptive Form based on a template](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 You can reuse fields from the XDP file in your adaptive form. These fields are referred to as binded fields. The properties of the binded fields (such as scripts, labels, and display format) are copied from the XDP file. You can also choose to override the value of some of these properties.
 
