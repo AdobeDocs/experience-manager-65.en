@@ -372,18 +372,13 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 #### Asynchronous Actions {#asynchronous-actions}
 
-Normally a page move or rename action is carried out immediately. This is considered synchronous processing and further action in the UI is blocked until the action is complete.
+Page move operations are restricted to asynchronous move only.
 
-However, if the number of pages impacted is above a defined limit, the action will be processed asynchronously, allowing the user to continue authoring in the UI unimpeded by the page move or rename action.
+* The user must define when the asynchronous operation should be performed
+  * **Now** begins the execution of the asynchronous job immediately.
+  * **Later** allows the user to define when the asynchronous job will start.
 
-* When clicking **Move** in the last step above, AEM checks the configured limit.
-* If the number of pages impacted is below the limit, it performs a synchronous operation.
-* If the number of pages impacted is above the limit, it performs an asynchronous operation.
-  * The user must define when the asynchronous operation should be performed
-    * **Now** begins the execution of the asynchronous job immediately.
-    * **Later** allows the user to define when the asynchronous job will start.
-
-      ![Asynchronous page move](assets/asynchronous-page-move.png)
+    ![Asynchronous page move](assets/asynchronous-page-move.png)
 
 The status of asynchronous jobs can be checked in the [**Async Jobs Status** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
 
