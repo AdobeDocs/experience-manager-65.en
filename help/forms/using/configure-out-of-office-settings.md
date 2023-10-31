@@ -1,7 +1,6 @@
 ---
 title: Configure Out of Office settings
-seo-title: Configure Out of Office settings
-description: RConfigure Out of Office settings
+description: Configure Out of Office settings to your AEM Forms instance.
 seo-description: Configure Out of Office settings
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
 ---

@@ -1,8 +1,6 @@
 ---
 title: Logging in AEM Forms workflows
-seo-title: Logging in AEM Forms workflows
-description: Use logs to debug AEM Forms workflow issues.
-seo-description: Use logs to debug AEM Forms workflow issues.
+description: Debug AEM Forms workflow issues and enable debug logging for AEM Forms workflows to view the logs.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

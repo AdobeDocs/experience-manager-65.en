@@ -1,7 +1,7 @@
 ---
 title: SSL/TLS By Default
 seo-title: SSL/TLS By Default
-description: Learn how to use SSL by Default in AEM.
+description: Learn how to use SSL by Default feature in AEM 6.5.
 seo-description: Learn how to use SSL by Default in AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User

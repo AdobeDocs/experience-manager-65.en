@@ -1,8 +1,6 @@
 ---
 title: Configure service settings
-seo-title: Configure service settings
-description: Learn how to configure service settings.
-seo-description: Learn how to configure service settings.
+description: Learn how to configure service settings. You can use Service Management page for configuring the settings for each of the services that are part of AEM forms. 
 uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference

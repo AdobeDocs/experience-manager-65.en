@@ -1,8 +1,6 @@
 ---
 title: Customizing templates for forms portal components
-seo-title: Customizing templates for forms portal components
-description: Display custom metadata in form listing
-seo-description: Display custom metadata in form listing
+description: AEM Forms user interface allows users to add metadata to forms. Custom metadata enhances user experience in form listing and searching for your organization.
 uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

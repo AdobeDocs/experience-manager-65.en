@@ -1,7 +1,6 @@
 ---
 title: Distiller Service Java API QuickStart(SOAP)
-seo-title: Distiller Service Java API QuickStart(SOAP)
-description: Distiller Service Java API QuickStart(SOAP)
+description: The Distiller service transforms PostScript, EPS, and PRN files into PDFs, commonly employed for high-volume print-to-electronic document conversions.
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
