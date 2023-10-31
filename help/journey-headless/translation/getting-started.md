@@ -174,7 +174,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand how AEM stores headless content.
 * Be familiar with AEM's translation tools.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you will learn how to connect AEM to a translation service.|
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure the translation integration](configure-connector.md) where you will learn how to connect AEM to a translation service.|
 
 ## Additional Resources {#additional-resources}
 
