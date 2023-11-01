@@ -1,6 +1,6 @@
 ---
 title: Forms Portal | Handling user data
-description: Managing user data such as access, delete and data store on AEM Forms portal.
+description: Learn about managing user data such as access, delete, and data store on AEM Forms Portal.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,18 +9,18 @@ exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 ---
 # Forms Portal | Handling user data {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] portal provides components that you can use to list adaptive forms, HTML5 forms, and other Forms assets on the [!DNL AEM Sites] page. In addition, you can configure it to display drafts and submitted adaptive forms and HTML5 forms for a logged-in user. For more information about forms portal, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
+[!DNL AEM Forms] Portal provides components that you can use to list adaptive forms, HTML5 forms, and other Forms assets on the [!DNL AEM Sites] page. In addition, you can configure it to display drafts and submitted adaptive forms and HTML5 forms for a logged-in user. For more information about Forms Portal, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
 
-When a logged-in user saves an adaptive form as a draft or submits it, they are displayed in the Drafts and Submissions tabs on the forms portal. The data for drafted or submitted forms is stored in the data store configured for AEM deployment. The drafts and submissions of anonymous users are not displayed on the forms portal page; however, the data is stored in the configured data store. See [Configuring storage services for drafts and submissions](/help/forms/using/configuring-draft-submission-storage.md).
+When a logged-in user saves an adaptive form as a draft or submits it, they are displayed in the Drafts and Submissions tabs on the Forms Portal. The data for drafted or submitted forms is stored in the data store configured for AEM deployment. The drafts and submissions of anonymous users are not displayed on the Forms Portal page; however, the data is stored in the configured data store. See [Configuring storage services for drafts and submissions](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## User data and data stores {#user-data-and-data-stores}
 
-Forms portal stores data for draft and submitted forms in the following scenarios:
+Forms Portal stores data for draft and submitted forms in the following scenarios:
 
 * The submit action configured in the adaptive form is **Forms Portal Submit Action**.
-* For submit actions other than **Forms Portal Submit Action**, the **[!UICONTROL Store data in forms portal]** option is enabled in the **[!UICONTROL Submission]** properties of the adaptive form container.
+* For submit actions other than **Forms Portal Submit Action**, the **[!UICONTROL Store data in Forms Portal]** option is enabled in the **[!UICONTROL Submission]** properties of the adaptive form container.
 
-For every draft and submitted form for logged-in and anonymous users, the forms portal stores the following data:
+For every draft and submitted form for logged-in and anonymous users, the Forms Portal stores the following data:
 
 * Form metadata such as the form name, form path, draft or submission ID, attachments path, and user data ID
 * Form attachment as data bytes
@@ -37,17 +37,17 @@ Depending on the configured data store persistence, drafts and submitted forms d
   </tr>
   <tr>
    <td><p>Default</p> </td>
-   <td><p>AEM repository of author and publish instances</p> </td>
+   <td><p>AEM repository of Author and Publish instances</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Remote</p> </td>
-   <td><p>AEM repository of author and remote AEM instances</p> </td>
+   <td><p>AEM repository of Author and remote AEM instances</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Database</p> </td>
-   <td><p>AEM repository of author instance and database tables</p> </td>
+   <td><p>AEM repository of Author instance and database tables</p> </td>
    <td>Database tables <code>data</code>, <code>metadata</code>, and <code>additionalmetadata</code></td>
   </tr>
  </tbody>
@@ -63,7 +63,7 @@ All drafts and submitted forms data in AEM instances (author, publish, or remote
 
 #### Access user data {#access-user-data}
 
-When a logged-in user saves a draft or submits a form, a child node is created with her user ID. For example, drafts and submissions data for Sarah Rose whose user ID is `srose` are stored in `/content/forms/fp/srose/` node in AEM repository. Within the user ID node, the data is organized in a hierarchical structure.
+When a logged-in user saves a draft or submits a form, a child node is created with its user ID. For example, drafts and submissions data for Sarah Rose whose user ID is `srose` are stored in `/content/forms/fp/srose/` node in AEM repository. Within the user ID node, the data is organized in a hierarchical structure.
 
 The following table explains how the data for all drafts by `srose` is stored in AEM repository.
 
@@ -91,7 +91,7 @@ Drafts and submission data for all anonymous users is stored within the common `
 
 ### Database {#database}
 
-When AEM is configured to store data in a database, forms portal draft and submission data is stored in the following database tables for both logged-in and anonymous users:
+When AEM is configured to store data in a database, Forms Portal draft and submission data is stored in the following database tables for both logged-in and anonymous users:
 
 * data
 * metadata

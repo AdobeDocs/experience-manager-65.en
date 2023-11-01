@@ -1,6 +1,6 @@
 ---
-title: Assembler Service Java API QuickStart(SOAP)
-description: Assemble, Disassemble, and dynamically create a a PDF document using the Assembler Service Java API QuickStart(SOAP).
+title: Assembler Service Java&trade; API QuickStart(SOAP)
+description: Learn how to Assemble, Disassemble, and dynamically create a PDF document using the Assembler Service Java&trade; API QuickStart (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
 ---
-# Assembler Service Java API QuickStart(SOAP) {#assembler-service-java-api-quickstart-soap}
+# Assembler Service Java&trade; API QuickStart(SOAP) {#assembler-service-java-api-quickstart-soap}
 
 Java API Quick Start(SOAP) is available for the Assembler service
 
@@ -38,7 +38,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 >[!NOTE]
 >
->Quick Start located in Programming with AEM Forms are based on the Forms Server being deployed on JBoss Application Server and the Microsoft Windows operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Quick Starts in Programming with AEM Forms are based on the Forms Server being deployed on JBoss&reg; Application Server and the Microsoft&reg; Windows operating system. However, if you are using another operating system, such as UNIX&reg;, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Quick Start (SOAP mode): Assembling a PDF document using the Java API {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -730,7 +730,7 @@ The following Java code example assembles a non-interactive PDF document. The in
 
 ## Quick Start (SOAP mode): Determining whether a document is PDF/A compliant using the Java API {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-The following Java code example determines whether the input PDF document is PDF/A compliant. The input PDF document that is passed to the Assembler service is named *Loan.pdf*. The name of the DDX document is shell_PDFA.xml. The XML document that is returned from the Assembler service and specifies whether the input PDF document is PDF/A compliant is saved as an XML file named result.xml. For information about the *shell_PDFA.xml* DDX document used in this code example, see [Determining Whether Documents Are PDF/A- Compliant](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+The following Java code example determines whether the input PDF document is PDF/A compliant. The input PDF document that is passed to the Assembler service is named *Loan.pdf*. The name of the DDX document is shell_PDFA.xml. The XML document that is returned from the Assembler service and specifies whether the input PDF document is PDF/A- compliant, is saved as an XML file named result.xml. For information about the *shell_PDFA.xml* DDX document used in this code example, see [Determining Whether Documents Are PDF/A- Compliant](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```java
  /*
@@ -1177,7 +1177,7 @@ The following Java code example assembles a PDF document that contains bookmarks
 
 ## Quick Start (SOAP mode): Dynamically creating a DDX document using the Java API {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
 
-The following Java code example dynamally creates a DDX document that disassembles a PDF document. A new PDF document is created for each level 1 bookmark in the input PDF document. This code example contains two user-defined methods:
+The following Java code example dynamically creates a DDX document that disassembles a PDF document. A new PDF document is created for each level 1 bookmark in the input PDF document. This code example contains two user-defined methods:
 
 * `createDDX`: Creates an `org.w3c.dom.Document` object that represents the DDX document that is sent to the Assembler service. This user-defined method returns the `org.w3c.dom.Document` object.
 * `convertDDX`: Converts an `org.w3c.dom.Document` object to a `com.adobe.idp.Document` object. This method accepts an `org.w3c.dom.Document` object as an input parameter and returns a `com.adobe.idp.Document` object.
@@ -1678,11 +1678,11 @@ The following Java code example assembles XDP fragments that are based on the fo
 
 ## Quick Start (SOAP mode): Redacting a PDF document using the Java API {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
-The following code example redacts a PDF document using `PDFUtility`.
+The following code example redacts a PDF document using the `PDFUtility`.
 
 >[!NOTE]
 >
->`PDFUtility` can redact only those PDFs which are marked for redaction using Acrobat.
+>The `PDFUtility` can redact only those PDFs which are marked for redaction using Acrobat.
 
 ```java
 /*
