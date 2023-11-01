@@ -62,7 +62,7 @@ In the **Translation Configuration** UI, there are a number of options available
 1. AEM saves the configuration.
 1. You must select the context you just created and then tap or click **Edit**. This opens the **Translation Rules Editor** to configure the properties.
 ![Translation rules editor](assets/translation-rules-editor.png)
-1. By default all configurations are inherited from the parent path, in this case `/content/dam`. Uncheck the option **Inherit from `/content/dam`** in order to add additional fields to the configuration.
+1. By default all configurations are inherited from the parent path, in this case `/content/dam`. Uncheck the option **Inherit from `/content/dam`** to add additional fields to the configuration.
 1. Once unchecked, under the **General** section of the list, add the property names of the Content Fragment Model(s) that you [previously identified as fields for translation.](getting-started.md#content-models)
    1. Enter the property name in the **New Property** field.
    1. The options **Translate** and **Inherit** are checked automatically.

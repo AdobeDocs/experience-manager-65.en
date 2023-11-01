@@ -38,7 +38,7 @@ For more detail on how SPAs work in AEM, see the following documents:
 
 >[!NOTE]
 >
->In order to be able to author content within an SPA, the content must be stored in AEM and be exposed by the content model.
+>To be able to author content within an SPA, the content must be stored in AEM and be exposed by the content model.
 >
 >An SPA developed outside of AEM will not be authorable if it does not respect the content model contract.
 

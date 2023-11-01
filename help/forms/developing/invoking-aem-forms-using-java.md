@@ -998,7 +998,7 @@ You can invoke the Repository service by using a Java client library and by perf
 
 ## Invoking a short-lived process using the Invocation API {#invoking-a-short-lived-process-using-the-invocation-api}
 
-You can invoke a short-lived process using the Java Invocation API. When you invoke a short-lived process using the Invocation API, you pass required parameter values by using a `java.util.HashMap` object. For each parameter to pass to a service, invoke the `java.util.HashMap` object's `put` method and specify the name-value pair that is required by the service in order to perform the specified operation. Specify the exact name of the parameters that belong to the short-lived process.
+You can invoke a short-lived process using the Java Invocation API. When you invoke a short-lived process using the Invocation API, you pass required parameter values by using a `java.util.HashMap` object. For each parameter to pass to a service, invoke the `java.util.HashMap` object's `put` method and specify the name-value pair that is required by the service to perform the specified operation. Specify the exact name of the parameters that belong to the short-lived process.
 
 >[!NOTE]
 >

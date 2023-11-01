@@ -41,7 +41,7 @@ The page component for a SPA doesn't provide the HTML elements of its child comp
 
 ### Page Model Management {#page-model-management}
 
-The resolution and the management of the page model is delegated to a provided `PageModel` library. The SPA must use the Page Model library in order to be initialized and be authored by the SPA Editor. The Page Model library provided indirectly to the AEM Page component via the `aem-react-editable-components` npm. The Page Model is an interpreter between AEM and the SPA and therefore always must be present. When the page is authored, an additional library `cq.authoring.pagemodel.messaging` must be added in order to enable the communication with the page editor.
+The resolution and the management of the page model is delegated to a provided `PageModel` library. The SPA must use the Page Model library to be initialized and be authored by the SPA Editor. The Page Model library provided indirectly to the AEM Page component via the `aem-react-editable-components` npm. The Page Model is an interpreter between AEM and the SPA and therefore always must be present. When the page is authored, an additional library `cq.authoring.pagemodel.messaging` must be added to enable the communication with the page editor.
 
 If the SPA page component inherits from the page core component, there are two options for making the `cq.authoring.pagemodel.messaging` client library category available:
 
@@ -166,7 +166,7 @@ Previous versions of these frameworks may work with the AEM SPA Editor SDK, but 
 
 ### Additional Frameworks {#additional-frameworks}
 
-Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. Please see the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) document for the requirements that a framework must fulfill in order to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
+Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. Please see the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) document for the requirements that a framework must fulfill to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
 
 ### Using Multiple Selectors {#multiple-selectors}
 

@@ -34,7 +34,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 >[!NOTE]
 >
->The SAML 2.0 Authentication Handler is disabled by default. You must set at least one of the following properties in order to enable the handler:
+>The SAML 2.0 Authentication Handler is disabled by default. You must set at least one of the following properties to enable the handler:
 >
 >* The Identity Provider POST URL, or IDP URL.
 >* The Service Provider Entity ID.
@@ -85,7 +85,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 ## Add the IdP Certificate to the AEM TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 
-SAML assertions are signed and may optionally be encrypted. In order for this to work you have to provide at least the public certificate of the IdP in the repository. In order to do this you need to:
+SAML assertions are signed and may optionally be encrypted. In order for this to work you have to provide at least the public certificate of the IdP in the repository. To do this you need to:
 
 1. Go to *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Press the **[!UICONTROL Create TrustStore link]**
@@ -126,7 +126,7 @@ SAML assertions are signed and may optionally be encrypted. In order for this to
 
 ## Configure a Logger for SAML {#configure-a-logger-for-saml}
 
-You can set up a Logger in order to debug any issues that might arise from misconfiguring SAML. You can do this by:
+You can set up a Logger to debug any issues that might arise from misconfiguring SAML. You can do this by:
 
 1. Going to the Web Console, at *http://localhost:4502/system/console/configMgr*
 1. Search for and click on the entry called **Apache Sling Logging Logger Configuration**

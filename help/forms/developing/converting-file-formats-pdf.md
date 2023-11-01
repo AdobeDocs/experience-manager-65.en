@@ -586,7 +586,7 @@ This document uses the term *native application* to indicate the application use
 1. Opening the Print dialog box by selecting File &gt; Print
 1. Ensuring that the Print dialog box appears
 
-AppMon uses standard Win32 APIs to interact with third-party applications in order to transfer UI events such as key-strokes and mouse clicks, which is useful to control these applications to produce PDF files from them.
+AppMon uses standard Win32 APIs to interact with third-party applications to transfer UI events such as key-strokes and mouse clicks, which is useful to control these applications to produce PDF files from them.
 
 Due to a limitation with these Win32 APIs, AppMon is not able to dispatch these UI events to some specific kinds of windows, such as floating menu-bars (found in some applications such as TextPad), and certain kind of dialogs whose contents cannot be retrieved using the Win32 APIs.
 
@@ -976,7 +976,7 @@ This example specifies how the Generate PDF service should interact with Notepad
 * from Adobe Systems Incorporated.
 *-->
 
-<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
+<!-- This file automates printing of text files via notepad to Adobe PDF printer. To see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
 
 <application name="Notepad" version="9.0" locale="en_US" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
 

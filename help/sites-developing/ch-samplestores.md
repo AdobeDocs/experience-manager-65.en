@@ -103,7 +103,7 @@ The store uses a data tree that is similar to the following example:
 
 >[!NOTE]
 >
->A security policy introduced in Chrome 50.x requires that that all geolocation related calls are made over a secured connection. Therefore AEM forces https usage for geolocation API calls if AEM is running over https as well. Otherwise http is used in order to comply with the policy of same origin. See [this Google blog post](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) for more details on the change in Chrome.
+>A security policy introduced in Chrome 50.x requires that that all geolocation related calls are made over a secured connection. Therefore AEM forces https usage for geolocation API calls if AEM is running over https as well. Otherwise http is used to comply with the policy of same origin. See [this Google blog post](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) for more details on the change in Chrome.
 
 ## contexthub.surferinfo Sample Store Candidate {#contexthub-surferinfo-sample-store-candidate}
 

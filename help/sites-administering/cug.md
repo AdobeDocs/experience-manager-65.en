@@ -48,7 +48,7 @@ To create a closed user group:
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Press the **Create** button in the top right corner, in order to create a new group.
+1. Press the **Create** button in the top right corner, to create a new group.
 1. Name your new group; for example, `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)

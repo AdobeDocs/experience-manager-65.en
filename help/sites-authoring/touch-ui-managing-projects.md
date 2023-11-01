@@ -47,7 +47,7 @@ The procedure for creating a project is the same for all project templates. The 
 
 ### Associating Resources with Your Project {#associating-resources-with-your-project}
 
-Projects enable you to group resources into one entity in order to manage them as a whole. Therefore you need to associate resources to your project. These resources are grouped within the project as **Tiles**. The types of resources you can add are described in [Project Tiles](/help/sites-authoring/projects.md#project-tiles).
+Projects enable you to group resources into one entity to manage them as a whole. Therefore you need to associate resources to your project. These resources are grouped within the project as **Tiles**. The types of resources you can add are described in [Project Tiles](/help/sites-authoring/projects.md#project-tiles).
 
 To associate resources with your project:
 

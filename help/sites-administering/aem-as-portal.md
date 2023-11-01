@@ -390,7 +390,7 @@ To open the website administration page or to edit a page from the portlet, the 
 
 ### Privileges {#privileges}
 
-Some functions of the portlet are protected by privileges. The current user needs to have this privilege in order to be able to access this function. There are the following privileges pre-defined:
+Some functions of the portlet are protected by privileges. The current user needs to have this privilege to be able to access this function. There are the following privileges pre-defined:
 
 * "toolbar" : This is the general privilege to see/use the toolbar in the portlet.
 * "prefs" : If the user has this privilege, the user is allowed to see/change the preferences of the portlet.

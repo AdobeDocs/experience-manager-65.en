@@ -25,7 +25,7 @@ Likewise, content authors not only need the ability to structure and arrange the
 The Style System provides a unified solution to both the template author's and content author's requirements:
 
 * Template authors can define style classes in the content policy of components.
-* Content authors can then select these classes from a drop-down when editing the component on a page in order to apply the corresponding styles.
+* Content authors can then select these classes from a drop-down when editing the component on a page to apply the corresponding styles.
 
 The style class is then inserted on the decoration wrapper element of the component so that the component developer doesn't need to be concerned with handling the styles beyond providing their CSS rules.
 
@@ -105,7 +105,7 @@ If you wish to use the Style System for your own components do the following:
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary JavaScript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.
+>The CSS classes (as well as any necessary JavaScript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) to work.
 
 ## Setup {#setup}
 
@@ -152,6 +152,6 @@ This property is set on the `cq:Component` node. For example:
 >1. Finally, the component's `cq:htmlTag`/ `cq:tagName` will be considered as a fallback value.
 >
 
-This ability to define style names is useful for very generic components, like the Layout Container, or the Content Fragment component, in order to provide them with additional meaning.
+This ability to define style names is useful for very generic components, like the Layout Container, or the Content Fragment component, to provide them with additional meaning.
 
 For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, etc.

@@ -164,7 +164,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Defining the component XML file for the authorization handler {#define-component-xml-authorization-handler}
 
-You must define a component XML file in order to deploy the invite external users handler component. A component XML file exists for each component and provides metadata about the component.
+You must define a component XML file to deploy the invite external users handler component. A component XML file exists for each component and provides metadata about the component.
 
 The following `component.xml` file is used for the invite external users handler. Notice that the service name is `InviteExternalUsersSample` and the operation this service exposes is named `invitedUser`. The input parameter is a `java.util.List` instance and the output value is an array of `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instances.
 

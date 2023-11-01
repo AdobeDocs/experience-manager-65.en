@@ -101,7 +101,7 @@ This section only details specific links to Adobe Campaign. For more information
    >
    >The **Element Name** must be different for each form field. Change it if necessary.
    >
-   >Each form must contain an **Encrypted Primary Key** component in order to correctly manage recipients in the Adobe Campaign database.
+   >Each form must contain an **Encrypted Primary Key** component to correctly manage recipients in the Adobe Campaign database.
 
 1. Activate the page by selecting **Page** &gt; **Activate Page** in the toolbox. The page is activated on your site. You can view it by going to your AEM publication instance. The data in the Adobe Campaign database is updated once a form is validated.
 

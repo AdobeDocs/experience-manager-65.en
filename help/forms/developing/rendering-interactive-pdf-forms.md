@@ -188,7 +188,7 @@ Render an interactive PDF form by using the Forms API (Java):
     * Create a `URLSpec` object that stores URI values by using its constructor.
     * Invoke the `URLSpec` object's `setApplicationWebRoot` method and pass a string value that represents the application's web root.
     * Invoke the `URLSpec` object's `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design is located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository:///`.
-    * Invoke the `URLSpec` object's `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent in order to perform calculations.
+    * Invoke the `URLSpec` object's `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent to perform calculations.
 
 1. Attach files to the form
 
@@ -243,7 +243,7 @@ Render an interactive PDF form by using the Forms API (web service):
     * Create a `URLSpec` object that stores URI values by using its constructor.
     * Invoke the `URLSpec` object's `setApplicationWebRoot` method and pass a string value that represents the application's web root.
     * Invoke the `URLSpec` object's `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design is located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository:///`.
-    * Invoke the `URLSpec` object's `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent in order to perform calculations.
+    * Invoke the `URLSpec` object's `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent to perform calculations.
 
 1. Attach files to the form
 

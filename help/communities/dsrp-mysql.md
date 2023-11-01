@@ -103,7 +103,7 @@ When the MySQL Workbench is first launched, unless already in use for other purp
 
 ## Database Setup {#database-setup}
 
-Open the Communities connection in order to install the database.
+Open the Communities connection to install the database.
 
 ![install-database](assets/install-database.png)
 
@@ -152,7 +152,7 @@ In the following image, the `init_schema.sql` file is ready to be executed:
 
 #### Refresh {#refresh}
 
-Once the script is executed, it is necessary to refresh the `SCHEMAS` section of the `Navigator` in order to see the new database. Use the refresh icon to the right of 'SCHEMAS':
+Once the script is executed, it is necessary to refresh the `SCHEMAS` section of the `Navigator` to see the new database. Use the refresh icon to the right of 'SCHEMAS':
 
 ![refresh-schema](assets/refresh-schema.png)
 

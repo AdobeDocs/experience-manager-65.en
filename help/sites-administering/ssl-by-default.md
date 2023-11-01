@@ -197,7 +197,7 @@ You can also automate the SSL/TLS configuration by using the cURL tool. You can 
 
 *https://&lt;serveraddress&gt;:&lt;serverport&gt;/libs/granite/security/post/sslSetup.html*
 
-Below are the parameters you can use in order to change the various settings in the configuration wizard:
+Below are the parameters you can use to change the various settings in the configuration wizard:
 
 * `-F "keystorePassword=password"` - the keystore password;
 
@@ -218,7 +218,7 @@ Below are the parameters you can use in order to change the various settings in 
 >
 >The fastest way of running cURL to automate the SSL/TLS configuration is from the folder where the DER and CRT files are. Alternatively, you can specify the full path in the `privatekeyFile` and certificateFile arguments.
 >
->You also need to be authenticated in order to perform the update, so make sure you append the cURL command with the `-u user:passeword` parameter.
+>You also need to be authenticated to perform the update, so make sure you append the cURL command with the `-u user:passeword` parameter.
 >
 >A correct cURL post command should look like this:
 
