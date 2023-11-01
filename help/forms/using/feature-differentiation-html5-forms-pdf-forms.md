@@ -1,14 +1,11 @@
 ---
 title: Feature differentiation between HTML5 forms and PDF forms
-description: Learn about the differences between HTML5 forms and PDF forms.
-uuid: 6ddee197-d108-4897-9976-77d115a06504
+description: Learn about the feature differences between HTML5 forms and PDF forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
-
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 ---
@@ -45,7 +42,7 @@ The following table specifies the feature support provided for HTML5 forms and P
   </tr>
   <tr>
    <td>Pagination<br /> </td>
-   <td><p>An HTML5 form is divided into panels and boxes to give it an appearance similar to PDF forms. The size of the page is calculated dynamically. If all the contents of a page in an HTML5 form are deleted or marked hidden, then the blank page is hidden and an empty space (blank space) is not displayed between pages above and beneath the blank page.</p> <p>If data-merge or scripts add content to a page, then the length of the page expands to accommodate the newly added content. No new pages are added to the form to accommodate the newly added content. </p> <p><strong>Note:</strong> When the all the contents of a page in an HTML5 form are deleted or marked hidden, the blank page (blank space) remains visible between 1st and 2nd page but not between any other pages.</p> </td>
+   <td><p>An HTML5 form is divided into panels and boxes to give it an appearance similar to PDF forms. The size of the page is calculated dynamically. If all the contents of a page in an HTML5 form are deleted or marked hidden, then the blank page is hidden. An empty space (blank space) is not displayed between pages above and beneath the blank page.</p> <p>If data-merge or scripts add content to a page, then the length of the page expands to accommodate the newly added content. No new pages are added to the form to accommodate the newly added content. </p> <p><strong>Note:</strong> When the all the contents of a page in an HTML5 form are deleted or marked hidden, the blank page (blank space) remains visible between 1st and 2nd page but not between any other pages.</p> </td>
    <td>Pagination in PDF depends on data content merged or user content and page count is increased/reduced based on it.</td>
   </tr>
   <tr>
@@ -60,7 +57,7 @@ The following table specifies the feature support provided for HTML5 forms and P
   </tr>
   <tr>
    <td>XFA Script API</td>
-   <td>Supports the most commonly used XFA script constructs. For details list of supported constructs, see <a href="/help/forms/using/scripting-support.md">scripting support</a>.</td>
+   <td>Supports the most commonly used XFA script constructs. For a detailed listing of supported constructs, see <a href="/help/forms/using/scripting-support.md">scripting support</a>.</td>
    <td>Supports all XFA script constructs.</td>
   </tr>
   <tr>

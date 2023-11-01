@@ -5,7 +5,7 @@ exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 ---
 # Translate Content {#translate-content}
 
-Use the translation connector and rules to translate your headless content.
+Use the translation integration and rules to translate your headless content.
 
 ## The Story So Far {#story-so-far}
 

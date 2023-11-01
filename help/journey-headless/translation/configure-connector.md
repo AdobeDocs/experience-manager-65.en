@@ -1,9 +1,9 @@
 ---
-title: Configure the Translation Connector
+title: Configure the Translation Integration
 description: Learn how to connect AEM to a translation service.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 ---
-# Configure the Translation Connector {#configure-connector}
+# Configure the Translation Integration {#configure-integration}
 
 Learn how to connect AEM to a translation service.
 
@@ -19,7 +19,7 @@ This article builds on those fundamentals so you can take the first configuratio
 
 ## Objective {#objective}
 
-This document helps you understand how to set up an AEM connector to your chosen translation service. After reading you should:
+This document helps you understand how to set up an AEM integration to your chosen translation service. After reading you should:
 
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.

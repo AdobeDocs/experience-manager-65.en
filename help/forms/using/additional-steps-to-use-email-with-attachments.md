@@ -1,11 +1,12 @@
 ---
-title: Additional Steps to get Email with Attachment
-description: Fix the error when you are unable to retrieve Email with Attachments for AEM Forms on JEE Platforms.
+title: Additional Steps to get Email with Attachments
+description: Learn how to fix the error when you are unable to retrieve Email with Attachments for AEM Forms on JEE Platforms.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 ---
 # Unable to get Email with Attachments for AEM Forms on JEE Platforms{#unable-to-get-email-with-attachments}
 
 The issue applies to the following version:
+
 * Experience Manager 6.5 Forms
 
 ## Issue {#issue}
@@ -31,7 +32,7 @@ User is not able to perform operations such as Send PDF via Email or Include Att
 
 1. Install `java.mail-1.5.jar` obtained from step 3. This step restarts the sling properties of the JEE deployment. Wait for the installed bundles at `http://<server name>:<port>/lc/system/console/bundles` to show Status as **Active**. 
 
-    >Note: In case, the status is still **InActive**, restart   **JBoss&reg;** from the **Services Console**.
+    >In case the status is still **InActive**, restart   **JBoss&reg;** from the **Services Console**.
 
 
 1. Install `javax.mail-1.5.6.redhat-1.jar`file downloaded using step 5.

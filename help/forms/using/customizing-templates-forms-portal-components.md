@@ -1,16 +1,14 @@
 ---
-title: Customizing templates for forms portal components
-description: AEM Forms user interface allows users to add metadata to forms. Custom metadata enhances user experience in form listing and searching for your organization.
-uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
+title: Customizing templates for Forms Portal components
+description: Learn how the AEM Forms user interface lets users add metadata to forms. Custom metadata enhances user experience in form listing and searching.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 ---
-# Customizing templates for forms portal components{#customizing-templates-for-forms-portal-components}
+# Customizing templates for Forms Portal components{#customizing-templates-for-forms-portal-components}
 
 ## Prerequisites {#prerequisites}
 
@@ -24,7 +22,7 @@ The AEM Forms user interface lets you add metadata to any form. Custom metadata 
 
 Forms Portal lets you use custom metadata in form listings. While creating custom templates for assets, you can modify their layout and use custom metadata with your CSS style set.
 
-Perform the following steps to create a custom template for various Forms Portal components.
+Do the following so you can create a custom template for various Forms Portal components.
 
 ## Creating a&nbsp;custom template {#creating-a-nbsp-custom-template}
 
@@ -49,7 +47,7 @@ Perform the following steps to create a custom template for various Forms Portal
    The following image depicts the configuration for the Search & Lister component.
    ![Creating a sling:Folder](assets/1.png)
 
-1. Create a file template.html in this folder to serve as the custom template.
+1. Create a file template.html in this folder so it can serve as the custom template.
 1. Write the custom template and use custom metadata as described below.
 
 ## Working example {#working-example}
@@ -86,7 +84,7 @@ To include a repeatable entry, configure the value of the attribute **data-repea
 
 Each placeholder has an exclusive OOTB metadata set. To display custom metadata at a particular place on the form, add the **${metadata_prop} property** at the place.
 
-*In the example, the metadata property is used at multiple instance. For example, it is used in **description**, **name**, **formUrl**, **htmlStyle**, **pdfUrl**, **pdfStyle**, and **path** in the prescribed manner.*
+*In the example, the metadata property is used at multiple instances. For example, it is used in **description**, **name**, **formUrl**, **htmlStyle**, **pdfUrl**, **pdfStyle**, and **path** in the prescribed manner.*
 
 ## Out of the box metadata {#out-of-the-box-metadata}
 
@@ -99,7 +97,7 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 * **description**: Description of the form
 * **formUrl**: URL to render the form as HTML
 * **pdfUrl**: URL to render the form as PDF
-* **assetType**: Type of the asset. Valid values include **Form**,**PDF Form**, **Print Form**, and **Adaptive Form**
+* **assetType**: Type of the asset. Valid values include **Form**, **PDF Form**, **Print Form**, and **Adaptive Form**
 
 * **htmlStyle **& **pdfStyle**: Display style for HTML and PDF icons respectively used for rendering. Valid values are "**__FP_display_none**" or blank.
 
@@ -114,8 +112,8 @@ Support for localization, sorting, and using configuration properties on the use
 1. **Localization Support**: To localize any static text use the attribute `${localize-YOUR_TEXT}` and make the localized value available, if doesn't exist already.
    *In the example discussed, the attributes `${localize-Apply}` and `${localize-Download}` are used to localize the Apply and Download text.*
 
-1. **Support for Sorting**: Click the HTML element to sort search results. To implement sorting in a tabled layout, add the "data-sortKey" attribute on the particular table header. In addition, add its value as the metadata for which you want to sort.
-   For example, for the "Title" header in the grid view, the value of the "data-sortKey" header is "title". Click the heading to sort the values in a particular column.
+1. **Support for Sorting**: Click the HTML element to sort search results. To implement sorting in a table layout, add the "data-sortKey" attribute on the particular table header. In addition, add its value as the metadata for which you want to sort.
+   For example, for the "Title" header in the grid view, the value of the "data-sortKey" header is "title". Click the heading so you can sort the values in a particular column.
 
 1. **Using configuration properties**: The Search & Lister component has several configurations that you can use on the user interface. For example, to display HTML ToolTip text saved through the edit dialog, use the `${config-htmlLinkText}` attribute. **Similarly, for PDF tool tip text, use the** `${config-pdfLinkText}` attribute.
 
@@ -128,7 +126,7 @@ Support for localization, sorting, and using configuration properties on the use
 
 ### Drafts &amp; Submissions component {#drafts-amp-submissions-component}
 
-* **Path**: Path of the draft/submissions metadata node. Use it with the .HTML extension as a URL to open a draft or submission.
+* **Path**: Path of the draft/submissions metadata node. Use it with the .HTML extension as a URL so you can open a draft or submission.
 * **contextPath**: Context path of the AEM instance
 * **firstLetter**: First letter (uppercase) of the title of the adaptive form, which was saved as Draft or submitted.
 * **formName**: The title of the adaptive form, which was saved as Draft or submitted.
@@ -136,7 +134,7 @@ Support for localization, sorting, and using configuration properties on the use
 * **submitID**: ID for the submission that is listed (Use only in the template for the Submission section).
 * **status**: Status of the submitted form. (Use only in the template for the Submission section).
 * **description**: Description of the adaptive form associated with the draft or submission.
-* **diffTime**: Difference between the current time and the last save action for the draft. Alternatively, difference between the current time and the last submit action for the submission.
+* **diffTime**: Difference between the current time and the last save action for the draft. Alternatively, the difference between the current time and the last submitted action for the submission.
 * **iconClass**: CSS class used to display the first letter of the draft/submission. Forms Portal includes the following classes, which provide various colored backgrounds.
 * **owner**: User who created the draft/submission.
 * **Today**: Date of creation of draft or submission in DD:MM:YYYY format.
@@ -156,7 +154,7 @@ Support for localization, sorting, and using configuration properties on the use
 
 **C.** Data-repeatable attribute used for the template section for each form
 
-**D.** To localize "Apply" string
+**D.** Localize "Apply" string
 
 **E.** Using the configuration property pdfLinkText
 
@@ -171,11 +169,11 @@ Support for localization, sorting, and using configuration properties on the use
 
 ## Related Articles
 
-* [Enable forms portal components](/help/forms/using/enabling-forms-portal-components.md)
-* [Create forms portal page](/help/forms/using/creating-form-portal-page.md)
+* [Enable Forms Portal components](/help/forms/using/enabling-forms-portal-components.md)
+* [Create Forms Portal page](/help/forms/using/creating-form-portal-page.md)
 * [List forms on a web page using APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Use Drafts and submissions component](/help/forms/using/draft-submission-component.md)
 * [Customize storage of drafts and submitted forms](/help/forms/using/draft-submission-component.md)
-* [Sample for integrating drafts & submissions component with database](/help/forms/using/integrate-draft-submission-database.md)
-* [Customizing templates for forms portal components](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Sample for integrating drafts and submissions component with database](/help/forms/using/integrate-draft-submission-database.md)
+* [Customizing templates for Forms Portal components](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md)

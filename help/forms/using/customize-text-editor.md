@@ -1,13 +1,10 @@
 ---
 title: Customize text editor
-description: Learn how to customize text editor in AEM Forms environment.
-uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
+description: Learn how to customize the text editor in an Adobe Experience Manager Forms environment.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
-
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
 ---
@@ -24,7 +21,7 @@ You can customize to change the following in font settings:
 * Default values of font family and size, height, letter spacing, and date format
 * Bullet indents
 
-To do this, you need to:
+Do the following:
 
 1. [Customize fonts by editing the tbxeditor-config.xml file in CRX](#customizefonts)
 1. [Add custom fonts to the client computer](#addcustomfonts)
@@ -154,14 +151,14 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
        </editorConfig>
        ```
 
-    1. Make the required changes in the file to change the following in font settings:
+    1. Make the required changes in the file so you can change the following in font settings:
 
         * Add or remove font family and size
         * Properties such as height and letter spacing
         * Default values of font family and size, height, letter spacing, and date format
         * Bullet indents
 
-       For example, to add a Japanese font called Sazanami Mincho Medium, you need to make the following entry in the XML file: `<font>Sazanami Mincho Medium</font>`. You also need to have this font installed on the client machine used to access and work with the font customization. For more information, see [Add custom fonts to the client computer](#addcustomfonts).   
+       For example, to add a Japanese font called Sazanami Mincho Medium, you must make the following entry in the XML file: `<font>Sazanami Mincho Medium</font>`. You must also have this font installed on the client machine used to access and work with the font customization. For more information, see [Add custom fonts to the client computer](#addcustomfonts).   
   
        You can also change the defaults for various aspects of text and, by removing the entries, remove the fonts from the text editor. 
     
@@ -169,7 +166,7 @@ To customize fonts by editing the tbxeditor-config.xml file, do the following:
 
 ## Add custom fonts to the client computer {#addcustomfonts}
 
-When you access a font in the Correspondence Management text editor, it needs to be present in the client machine you are using to access Correspondence Management. To be able to use a custom font in the text editor, first you need to install the same on the client machine.
+When you access a font in the Correspondence Management text editor, it must be present in the client machine you are using to access Correspondence Management. To be able to use a custom font in the text editor, first you must install the same on the client machine.
 
 For more information on installing fonts, see the following:
 
@@ -178,7 +175,7 @@ For more information on installing fonts, see the following:
 
 ## Access font customizations {#access-font-customizations}
 
-After you have made changes to fonts in the tbxeditor-config.xml file in CRX and installed the required fonts on the client machine used to access AEM Forms, the changes appear in the text editor.
+After you have changed fonts in the `tbxeditor-config.xml` file in CRX and installed the required fonts on the client machine used to access AEM Forms, the changes appear in the text editor.
 
 For example, the Sazanami Mincho Medium font added in the [Customize fonts by editing the tbxeditor-config.xml file in CRX](#customizefonts) procedure appears in the text editor UI as following:
 
@@ -186,4 +183,4 @@ For example, the Sazanami Mincho Medium font added in the [Customize fonts by ed
 
 >[!NOTE]
 >
->To see text in Japanese, you first need to enter the text with Japanese characters. The application of a custom Japanese font only formats the text in a certain way. Application of a custom Japanese font does not change English or other characters to Japanese characters.
+>To see text in Japanese, you first must enter the text with Japanese characters. The application of a custom Japanese font only formats the text in a certain way. Application of a custom Japanese font does not change English or other characters to Japanese characters.
