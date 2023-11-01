@@ -1,12 +1,10 @@
 ---
 title: Backup and Restore Service APIQuick Starts
-description: AEM Forms Backup & Restore API Quick Starts enables efficient backup creation and restoration processes.
-uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
+description: Learn how AEM Forms Backup and Restore API Quick Starts enable efficient backup creation and restoration processes.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
 ---
@@ -20,7 +18,7 @@ Java&trade; API Quick Start(SOAP) is available for the Backup and Restore Servic
 
 [Quick Start: Leaving backup mode using the Java&trade; API(SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

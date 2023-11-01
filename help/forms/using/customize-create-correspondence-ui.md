@@ -65,7 +65,7 @@ Use the following steps to create the required folder structure in the `/apps` b
 
        >[!NOTE]
        >
-       >Do not change the `/libs` branch. Any changes you do make may be lost, because this branch is liable to changes whenever you:
+       >Do not change the `/libs` branch. Any changes you do make may be lost, because this branch is liable to any changes whenever you:
        >
        >    
        >    
@@ -77,7 +77,7 @@ Use the following steps to create the required folder structure in the `/apps` b
 
     1. Click **OK**. The css folder is created in the specified path.
 
-1. In the apps folder, create a folder named `imgs` with path/structure similar to the imgs folder (in the ccrui folder).
+1. In the apps folder, create a folder named `imgs` with path/structure similar to the `imgs` folder (in the ccrui folder).
 
     1. Right-click the **imgs** folder at the following path and select **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
     1. Ensure that the Overlay Node dialog has the following values:

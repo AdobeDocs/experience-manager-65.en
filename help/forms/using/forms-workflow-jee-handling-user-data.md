@@ -1,10 +1,8 @@
 ---
 title: Forms JEE workflows | Handling user data
-description: AEM Forms JEE workflows to design, create, and manage business processes.
-uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
+description: Learn how to use AEM Forms JEE workflows to design, create, and manage business processes.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 ---
@@ -26,7 +24,7 @@ When a process is triggered and as it progresses, it captures data about the pro
 
 ## Access and delete user data {#access-and-delete-user-data}
 
-When a process is triggered, a unique process instance ID and long-lived invocation ID is generated and associated with the process instance. You can access and delete data for a process instance based on the long-lived invocation ID. You can deduce the long-lived invocation ID of a process instance with the user name of the process initiator or process participants who have submitted their tasks.
+When a process is triggered, a unique process instance ID and long-lived invocation ID are generated and associated with the process instance. You can access and delete data for a process instance based on the long-lived invocation ID. You can deduce the long-lived invocation ID of a process instance with the user name of the process initiator or process participants who have submitted their tasks.
 
 However, you cannot identify the process instance ID for an initiator in the following scenarios:
 
@@ -36,9 +34,9 @@ However, you cannot identify the process instance ID for an initiator in the fol
 
 ### Identify process instance IDs when workflow initiator or participant is known {#initiator-participant}
 
-Perform the following steps to identify process instance IDs for a workflow initiator or a participant:
+Perform the following steps so you can identify process instance IDs for a workflow initiator or a participant:
 
-1. Execute the following command in AEM Forms server database to retrieve the principal ID for workflow initiator or participant from the `edcprincipalentity` database table.
+1. Execute the following command in AEM Forms Server database to retrieve the principal ID for workflow initiator or participant from the `edcprincipalentity` database table.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -69,7 +67,7 @@ Perform the following steps to identify process instance IDs for a workflow init
 
    For orphan tasks or tasks where the `process_instance_id` is 0 (zero), take note of the corresponding task IDs and see [Work with orphan tasks](#orphan).
 
-1. Follow the instructions in [Purge user data from workflow instances based on process instance IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) section to delete user data for identified process instance IDs.
+1. Follow the instructions in [Purge user data from workflow instances based on process instance IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) section so you can delete user data for identified process instance IDs.
 
 ### Identify process instance IDs when user data is stored in primitive variables {#primitive}
 
@@ -79,7 +77,7 @@ A workflow can be designed such that the user data is captured in a variable tha
 * **Numeric**: Contains the user ID directly.
 * **XML**: Contains the user ID as a substring within the text stored as text columns in database and can be queried like strings.
 
-Perform the following steps to determine if a workflow that stores data in primitive-type variables contains data for the user:
+Perform the following steps so you can determine if a workflow that stores data in primitive-type variables contains data for the user:
 
 1. Execute the following database command:
 
@@ -91,7 +89,7 @@ Perform the following steps to determine if a workflow that stores data in primi
 
    >[!NOTE]
    >
-   >The value of the `name` property can be complex if the workflow is nested within sub-folders inside the application. Ensure that you specify the exact full path to the workflow, which you can get from the `omd_object_type` database table.
+   >The value of the `name` property can be complex if the workflow is nested within subfolders inside the application. Ensure that you specify the exact full path to the workflow, which you can get from the `omd_object_type` database table.
 
 1. Review the `tb_<number>` table schema. The table contains variables that store user data for the specified workflow. The variables in the table correspond to the variables in the workflow.
 
@@ -105,13 +103,13 @@ Perform the following steps to determine if a workflow that stores data in primi
 
    The query returns all process instance IDs associated with the specified `user_ID`.
 
-1. Follow the instructions in [Purge user data from workflow instances based on process instance IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) section to delete user data for identified process instance IDs.
+1. Follow the instructions in [Purge user data from workflow instances based on process instance IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) section so you can delete user data for identified process instance IDs.
 
 ### Purge user data from workflow instances based on process instance IDs {#purge}
 
 Now that you have identified the process instance IDs associated with a user, do the following to delete user data from the respective process instances.
 
-1. Execute the following command to retrieve long-lived invocation ID and status for a process instance from the `tb_process_instance` table.
+1. Run the following command so you can retrieve long-lived invocation ID and status for a process instance from the `tb_process_instance` table.
 
    ```sql
    select long_lived_invocation_id, status from tb_process_instance where id='process_instance_id'
@@ -121,7 +119,7 @@ Now that you have identified the process instance IDs associated with a user, do
 
 1. Create an instance of the public `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager`) using a `ServiceClientFactory` instance with the correct connection settings.
 
-   For more information, see Java API reference for [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   For more information, see Java&trade; API reference for [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Check the status of the workflow instance. If the status is other than 2 (COMPLETE) or 4 (TERMINATED), terminate the instance first by calling the following method:
 
@@ -131,15 +129,15 @@ Now that you have identified the process instance IDs associated with a user, do
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   The `purgeProcessInstance` method completely deletes all data for the specified invocation ID from AEM Forms server database and GDS, if configured.
+   The `purgeProcessInstance` method completely deletes all data for the specified invocation ID from AEM Forms Server database and GDS, if configured.
 
 ### Work with orphan tasks {#orphan}
 
-Orphan tasks are the tasks whose containing process has been initiated but not submitted yet. in this case, the `process_instance_id` is **0** (zero). Therefore, you cannot trace user data stored for orphan tasks using process instance IDs. However, you can trace it using the task ID for an orphan task. You can identify the tasks IDs from the `tb_task` table for a user as described in [Identify process instance IDs when workflow initiator or participant is known](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Orphan tasks are the tasks whose containing process has been initiated but not submitted yet. In this case, the `process_instance_id` is **0** (zero). Therefore, you cannot trace user data stored for orphan tasks using process instance IDs. However, you can trace it using the task ID for an orphan task. You can identify the tasks IDs from the `tb_task` table for a user as described in [Identify process instance IDs when workflow initiator or participant is known](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Once you have the task IDs, do the following to purge the associated files and data with an orphan task from GDS and database.
 
-1. Execute the following command on AEM Forms server database to retrieve IDs for the identified task IDs.
+1. Run the following command on AEM Forms Server database so you can retrieve IDs for the identified task IDs.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -179,7 +177,7 @@ Once you have the task IDs, do the following to purge the associated files and d
        delete from tb_dm_deletion where sessionid=<session_id>
        ```
 
-1. Execute the following commands to delete data for task IDs from the AEM Forms server database:
+1. Run the following commands so you can delete data for task IDs from the AEM Forms Server database:
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>

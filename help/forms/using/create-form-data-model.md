@@ -1,10 +1,8 @@
 ---
 title: "Tutorial: Create form data model "
-description: Configure MySQL as data source, create form data model (FDM), configure it, and test for AEM Forms.
-uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
+description: Learn how to configure MySQL as data source, create form data model (FDM), configure it, and test for AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 ---
@@ -12,7 +10,7 @@ exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 
  ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-This tutorial is a step in the [Create Your First Adaptive Form](../../forms/using/create-your-first-adaptive-form.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
+This tutorial is a step in the [Create Your First Adaptive Form](../../forms/using/create-your-first-adaptive-form.md) series. Adobe recommends that you follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 ## About the tutorial {#about-the-tutorial}
 
@@ -43,7 +41,7 @@ Before you begin, ensure that you have the following:
 
 ## Step 1: Configure MySQL database as data source {#config-database}
 
-You can configure different types of data sources to create a form data model. For this tutorial, we will configure the MySQL database that you configured and populated with sample data. For information about other supported data sources and how to configure them, see [AEM Forms Data Integration](../../forms/using/data-integration.md).
+You can configure different types of data sources to create a form data model. For this tutorial, you configure the MySQL database that you configured and populated with sample data. For information about other supported data sources and how to configure them, see [AEM Forms Data Integration](../../forms/using/data-integration.md).
 
 Do the following to configure your [!DNL MySQL] database:
 
@@ -64,19 +62,19 @@ Do the following to configure your [!DNL MySQL] database:
 
         * **Datasource name:** You can specify any name. For example, specify **WeRetailMySQL**.
         * **DataSource service property name**: Specify name of the service property containing the DataSource name. It is specified while registering the data source instance as OSGi service. For example, **datasource.name**.
-        * **JDBC driver class**: Specify Java class name of the JDBC driver. For [!DNL MySQL] database, specify **com.mysql.jdbc.Driver**.
-        * **JDBC connection URI**: Specify connection URL of the database. For [!DNL MySQL] database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+        * **JDBC driver class**: Specify Java&trade; class name of the JDBC driver. For [!DNL MySQL] database, specify **com.mysql.jdbc.Driver**.
+        * **JDBC connection URI**: Specify connection URL of the database. For [!DNL MySQL] database running on port 3306 and schema `weretail`, the URL is: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
         
         >[!NOTE]
         >
-        > When the [!DNL MySQL] database is behind a firewall, then database hostname is not a Public DNS. IP address of the database needs to be added in the */etc/hosts* file of the AEM host machine.
+        > When the [!DNL MySQL] database is behind a firewall, then database hostname is not a Public DNS. IP address of the database must be added in the */etc/hosts* file of the AEM host machine.
 
         * **Username:** Username of the database. It is required to enable JDBC driver to establish a connection with the database.
         * **Password:** Password of the database. It is required to enable JDBC driver to establish a connection with the database.
 
         >[!NOTE]
         >
-        >AEM Forms does not support NT Authentication for [!DNL MySQL]. Go to AEM web console at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search "Apache Sling Connection Pooled Datasource".For "JDBC connection URI" property set value of "integratedSecurity" as False  and use created username and password for connecting with [!DNL MySQL] database.
+        >AEM Forms does not support NT Authentication for [!DNL MySQL]. Go to AEM web console at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search "Apache Sling Connection Pooled Datasource". For "JDBC connection URI" property, set the value of "integratedSecurity" as False  and use created username and password for connecting with [!DNL MySQL] database.
 
         * **Test on Borrow:** Enable the **[!UICONTROL Test on Borrow]** option.
         * **Test on Return:** Enable the **[!UICONTROL Test on Return]** option.
@@ -91,7 +89,7 @@ Do the following to configure your [!DNL MySQL] database:
 
 ## Step 2: Create form data model {#create-fdm}
 
-AEM [!DNL Forms] provides an intuitive user interface to [create a form data model](data-integration.md) from configured data sources. You can use multiple data sources in a form data model. For our use case, we will use the configured [!DNL MySQL] data source.
+AEM [!DNL Forms] provides an intuitive user interface to [create a form data model](data-integration.md) from configured data sources. You can use multiple data sources in a form data model. For this use case, you can use the configured [!DNL MySQL] data source.
 
 Do the following to create form data model:
 
@@ -120,7 +118,7 @@ Do the following to configure the form data model:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Expand the WeRailMySQL data source tree. Select the following data model objects and services from **weretail** &gt; **customerdetails** schema to form data model:
+1. Expand the WeRailMySQL data source tree. Select the following data model objects and services from **weretail** &gt; **customerdetails** schema so you can form data model:
 
     * **Data model objects**:
 
@@ -173,7 +171,7 @@ Do the following to configure the form data model:
         * **Title**: Specify title of the service. For example: Retrieve Shipping Address.
         * **Description**: Specify description containing detailed functioning of the service. For example:
 
-          This service retrieves shipping address and other customer details from [!DNL MySQL] database
+          This service retrieves the shipping address and other customer details from the [!DNL MySQL] database
 
         * **Output Model Object**: Select schema containing customer data. For example:
 
@@ -201,7 +199,7 @@ Do the following to configure the form data model:
 
         * **Output type**: Select **BOOLEAN**.
 
-        * **Arguments**: Select argument named **ID** and **customerdetails**.
+        * **Arguments**: Select argument name **ID** and **customerdetails**.
 
        Tap **[!UICONTROL Done]**. The **[!UICONTROL update]** service to update customer details in the [!DNL MySQL] database is configured.
 
@@ -229,6 +227,6 @@ Do the following to run the test:
 
    ![test-write-model](assets/test-write-model.png)
 
-   Now, if you test the read model service again for the id 7107215, it will fetch and display the updated customer details as shown below.
+   Now, if you test the read model service again for id 7107215, it fetches and displays the updated customer details as shown below.
 
    ![read-updated](assets/read-updated.png)

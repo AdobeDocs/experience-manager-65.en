@@ -1,6 +1,6 @@
 ---
 title: APIs to access letter instances
-description: Discover APIs and use them to programatically access letter instances in AEM Forms environment.
+description: Discover APIs and use them to programmatically access letter instances in AEM Forms environment.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -130,8 +130,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 Letter Instance can be of the type Submitted or Draft. Opening both the letter instance types show different behaviors:
 
-* In the case of a Submitted letter instance, a PDF representing the letter instance is opened. The submitted Letter instance persisted on the server also contains the dataXML & processed XDP, which can be used to accomplish and further custom use a case such as creating a PDF/A.
-* In the case of a Draft letter instance, the create correspondence UI is reloaded to the exact previous state as it was during the time when the draft was created
+* If there is a Submitted letter instance, a PDF representing the letter instance is opened. The submitted Letter instance persisted on the server also contains the dataXML & processed XDP, which can be used to accomplish and further custom use a case such as creating a PDF/A.
+* If there is a Draft letter instance, the create correspondence UI is reloaded to the exact previous state as it was during the time when the draft was created
 
 ### Opening Draft Letter Instance&nbsp; {#opening-draft-letter-instance-nbsp}
 
