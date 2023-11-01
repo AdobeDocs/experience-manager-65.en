@@ -41,7 +41,7 @@ AEM Command Center Metrics Tile
 
 ## Configuring the Cloud Service {#configuring-the-cloud-service}
 
-In order to take advantage of Adobe Mobile Services Analytics you need to configure the AEM Mobile Analytics Cloud Service with your Adobe Analytics account information.
+To take advantage of Adobe Mobile Services Analytics you need to configure the AEM Mobile Analytics Cloud Service with your Adobe Analytics account information.
 
 1. Click on the top right hand side icon to add or edit the Cloud Services from the **Manage Cloud Services** tile from the app dashboard.
 

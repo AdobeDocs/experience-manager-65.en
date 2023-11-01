@@ -286,7 +286,7 @@ Such instances can only be saved when the letter is being viewed on publish inst
 
  Before publishing letters or saving drafts on the publish instance, perform the following steps on author and publish instance to enable Save as Draft feature:
 
- The *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties are not carried over to publish instance by default. In order to carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component. To disable the component:
+ The *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties are not carried over to publish instance by default. To carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component. To disable the component:
 
  1. On the author instance, open the Adobe Experience Manager Web Console Components console. The default URL is `http://author-server:port/system/console/components`
 

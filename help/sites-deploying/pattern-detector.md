@@ -32,7 +32,7 @@ The Pattern Detector is released separately as a [one package](https://experienc
 
 >[!NOTE]
 >
->Pattern Detector can run on any environment, including local development instances. However, in order to:
+>Pattern Detector can run on any environment, including local development instances. However, to:
 >
 >* increase the detection rate
 >* avoid any slowdowns on business critical instances

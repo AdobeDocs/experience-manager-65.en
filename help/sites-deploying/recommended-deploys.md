@@ -128,7 +128,7 @@ The advantages:
 
 The basic rule that needs to be taken into account when choosing between the two available micro kernels is that TarMK is designed for performance, while MongoMK is used for scalability.
 
-You can use these decision matrices in order to establish what is the best type of deployment suited to your requirements.
+You can use these decision matrices to establish what is the best type of deployment suited to your requirements.
 
 Adobe highly recommends TarMK to be the default persistence technology used by customers in all deployment scenarios, for both the AEM Author and Publish instances, except in the use cases outlined below.
 
@@ -172,7 +172,7 @@ A set of prerequisites and recommendations is available if you are considering a
 **Mandatory prerequisites for MongoDB deployments:**
 
 1. MongoDB deployment architecture and sizing must be part of the project implementation with help from Adobe Consulting or MongoDB Architects who are familiar with AEM;
-1. MongoDB expertise must be present within the partner or customer team in order to have confidence in being able to sustain and maintain an existing or new MongoDB environment;
+1. MongoDB expertise must be present within the partner or customer team to have confidence in being able to sustain and maintain an existing or new MongoDB environment;
 1. You may choose to deploy the commercial or open source version of MongoDB (AEM supports both), but must purchase a MongoDB Maintenance and Support contract directly from MongoDB Inc;
 1. Overall AEM and MongoDB architectures and infrastructures should be well defined and validated by an Adobe AEM Architect;
 1. You must review the support model for AEM deployments that include MongoDB.
@@ -191,7 +191,7 @@ A set of prerequisites and recommendations is available if you are considering a
 
 For sites which plan to deploy [AEM Communities](/help/communities/overview.md), it is recommended to [choose a deployment](/help/communities/working-with-srp.md#characteristicsofstorageoptions) optimized for handling UGC posted by community members from the publish environment.
 
-By using a [common store](/help/communities/working-with-srp.md), UGC does not need to be replicated between author and other publish instances in order to obtain a consistent view of the UGC.
+By using a [common store](/help/communities/working-with-srp.md), UGC does not need to be replicated between author and other publish instances to obtain a consistent view of the UGC.
 
 Below are a set of decisional matrices that can assist you in choosing the best type of persistence for your deployment:
 
@@ -207,7 +207,7 @@ Below are a set of decisional matrices that can assist you in choosing the best 
 >
 >MongoDB is third-party software and is not included in the AEM licensing package. For more information see the [MongoDB licensing policy](https://www.mongodb.org/about/licensing/) page.
 >
->In order to get the most of your AEM deployment, Adobe recommends licensing the MongoDB Enterprise version in order to benefit from professional support.
+>To get the most of your AEM deployment, Adobe recommends licensing the MongoDB Enterprise version to benefit from professional support.
 >
 >The license includes a standard replica set, which is composed of one primary and two secondary instances that can be used for either the author or the publish deployments.
 >

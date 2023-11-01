@@ -63,7 +63,7 @@ To programmatically perform a Acrobat Reader DC extensionsservice operation, you
 
 **Retrieve a PDF document**
 
-You must retrieve a PDF document in order to apply usage rights. Rights-enabled PDF documents contain a usage rights dictionary. When Adobe Reader opens a document containing such a dictionary, it enables the usage rights specified in the dictionary for that document only. If the document does not contain a usage rights dictionary, the Acrobat Reader DC extensions service creates one. If it already contains a dictionary, the Acrobat Reader DC extensions service overwrites existing usage rights with the ones you specify. The dictionary specifies which usage rights are enabled. When a user opens the document in Adobe Reader, only the usage rights specified in the dictionary are permitted.
+You must retrieve a PDF document to apply usage rights. Rights-enabled PDF documents contain a usage rights dictionary. When Adobe Reader opens a document containing such a dictionary, it enables the usage rights specified in the dictionary for that document only. If the document does not contain a usage rights dictionary, the Acrobat Reader DC extensions service creates one. If it already contains a dictionary, the Acrobat Reader DC extensions service overwrites existing usage rights with the ones you specify. The dictionary specifies which usage rights are enabled. When a user opens the document in Adobe Reader, only the usage rights specified in the dictionary are permitted.
 
 **Specify usage rights to apply**
 
@@ -218,7 +218,7 @@ Apply usage rights to a PDF document by using the Acrobat Reader DC Extensions A
 
 ## Removing Usage Rights from PDF Documents {#removing-usage-rights-from-pdf-documents}
 
-You can remove usage rights from a rights-enabled document. Removing usage-rights from a rights-enabled PDF document is also necessary in order to perform other AEM Forms operations on it. For example, you must digitally sign (or certify) a PDF document before you set usage rights. Therefore if you want to perform operations on a rights-enabled document, you must remove usage rights from the PDF document, perform the other operations, such as digitally signing the document, and then re-apply usage rights to the document.
+You can remove usage rights from a rights-enabled document. Removing usage-rights from a rights-enabled PDF document is also necessary to perform other AEM Forms operations on it. For example, you must digitally sign (or certify) a PDF document before you set usage rights. Therefore if you want to perform operations on a rights-enabled document, you must remove usage rights from the PDF document, perform the other operations, such as digitally signing the document, and then re-apply usage rights to the document.
 
 >[!NOTE]
 >
@@ -244,7 +244,7 @@ Before you can programmatically perform a Acrobat Reader DC extensions service o
 
 **Retrieve a rights-enabled PDF document**
 
-Retrieve a rights-enabled PDF document in order to remove usage rights.
+Retrieve a rights-enabled PDF document to remove usage rights.
 
 **Remove usage rights from the PDF document**
 
@@ -382,7 +382,7 @@ Before you can programmatically perform a Acrobat Reader DC extensions service o
 
 **Retrieve a rights-enabled PDF document**
 
-You must retrieve a rights-enabled PDF document in order to retrieve information about the credential. You can also retrieve information about a credential by specifying its alias; however, if you want to retrieve information about a credential that was used to apply usage rights to a specific rights-enabled PDF document, then you must retrieve the document.
+You must retrieve a rights-enabled PDF document to retrieve information about the credential. You can also retrieve information about a credential by specifying its alias; however, if you want to retrieve information about a credential that was used to apply usage rights to a specific rights-enabled PDF document, then you must retrieve the document.
 
 **Retrieve information about the credential**
 

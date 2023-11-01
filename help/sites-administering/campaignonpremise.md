@@ -118,7 +118,7 @@ The integration package automatically creates the `aemserver` operator that AEM 
 
 ## Configure the Campaign Integration in AEM {#campaign-integration}
 
-AEM uses [the operator you already set up in Campaign](#create-operator) in order to communicate with Campaign
+AEM uses [the operator you already set up in Campaign](#create-operator) to communicate with Campaign
 
 1. Sign into to your AEM authoring instance as an administrator.
 

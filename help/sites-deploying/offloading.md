@@ -1,14 +1,10 @@
 ---
 title: Offloading Jobs
-seo-title: Offloading Jobs
-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
-seo-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
-uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
+description: Learn how to configure and use AEM instances in a topology to perform specific types of processing.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 ---

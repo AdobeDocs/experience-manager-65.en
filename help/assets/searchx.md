@@ -37,7 +37,7 @@ You can add additional search tabs by configuring them in the [!DNL Assets] admi
 
    >[!NOTE]
    >
-   >When you create a second `siteadminsearchpanel`, be sure to set an `id` property in order to prevent form conflicts.
+   >When you create a second `siteadminsearchpanel`, be sure to set an `id` property to prevent form conflicts.
 
 ## Create custom predicates {#creating-custom-predicates}
 

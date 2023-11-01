@@ -190,7 +190,7 @@ To clear the ContextHub persistence:
 * To clear persistence of currently loaded stores:
 
   ```
-  // in order to be able to fully access persistence layer, Opt-Out must be turned off
+  // to be able to fully access persistence layer, Opt-Out must be turned off
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
 
   // following call asks all currently loaded stores to clear their data

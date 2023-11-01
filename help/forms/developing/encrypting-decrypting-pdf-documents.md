@@ -801,7 +801,7 @@ To programmatically perform an Encryption service operation, you must create an 
 
 **Get the encrypted PDF document**
 
-You must obtain an encrypted PDF document in order to unlock it. If you attempt to unlock a PDF document that is not encrypted, an exception is thrown.
+You must obtain an encrypted PDF document to unlock it. If you attempt to unlock a PDF document that is not encrypted, an exception is thrown.
 
 **Unlock the document**
 

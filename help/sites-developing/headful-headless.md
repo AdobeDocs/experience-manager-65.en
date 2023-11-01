@@ -25,7 +25,7 @@ Single Page Applications (SPAs) are often the destination for content delivered 
 
 ## Web Shop Example {#web-shop-example}
 
-Let's say that you have an existing web shop for your company as an SPA. In it you have all your product details and images. Then you introduce AEM in order to power your marketing efforts such as promotional sites, blogs, and campaign content. How do you integrate the two? AEM enables a spectrum of options:
+Let's say that you have an existing web shop for your company as an SPA. In it you have all your product details and images. Then you introduce AEM to power your marketing efforts such as promotional sites, blogs, and campaign content. How do you integrate the two? AEM enables a spectrum of options:
 
 * **Allow the systems to operate independently.**
 * **Supply the web shop with limited content from AEM via GraphQL.** Content can be created by authors in AEM, but only seen via the web shop SPA.

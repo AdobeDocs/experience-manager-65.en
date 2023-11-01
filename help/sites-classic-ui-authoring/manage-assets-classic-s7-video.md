@@ -160,7 +160,7 @@ The various video encodings are created according to the Dynamic Media Classic e
 
 #### Configure Design {#configuring-design}
 
-The foundation video component must know about what video profiles to use in order to build the video sources list. Open the video components design dialog and configure the components design for using the new video profiles.
+The foundation video component must know about what video profiles to use to build the video sources list. Open the video components design dialog and configure the components design for using the new video profiles.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ The foundation video component must know about what video profiles to use in ord
 
 >[!NOTE]
 >
->Changes made to the design require activation of the design in order to take effect on publish.
+>Changes made to the design require activation of the design to take effect on publish.
 
 1. Open the foundation video component's design dialog and change to the **[!UICONTROL Profiles]** tab. Then delete the out-of-the-box profiles and add the new Dynamic Media Classic video profiles. The order of the profile list in the design dialog as well defines the order of the video sources element when rendering.
 1. For browsers not supporting HTML5, the Video component lets you configure a flash fallback. Open the video components design dialog and change to the **[!UICONTROL Flash]** tab. Configure the flash player settings and assign a fallback profile for the flash player.

@@ -242,7 +242,7 @@ Where `*{uri}*` is the path to the model node in the repository.
   </tr>
   <tr>
    <td><code>DELETE</code></td>
-   <td>Deletes the model. In order to solve firewall/proxy issues a <code>POST</code> that contains an <code>X-HTTP-Method-Override</code> header entry with value <code>DELETE</code> will also be accepted as <code>DELETE</code> request.</td>
+   <td>Deletes the model. To solve firewall/proxy issues a <code>POST</code> that contains an <code>X-HTTP-Method-Override</code> header entry with value <code>DELETE</code> will also be accepted as <code>DELETE</code> request.</td>
   </tr>
  </tbody>
 </table>

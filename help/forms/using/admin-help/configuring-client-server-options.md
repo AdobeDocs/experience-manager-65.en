@@ -66,7 +66,7 @@ Height: Minimum = 450; maximum = 800
 
 Your AEM forms environment contains one or more administrator users who have the appropriate privileges for creating users and groups. If your organization is using document security, at least one administrator must also be assigned the privilege to manage invited and local users.
 
-The administrators must also have the administration console User role in order to access administration console. (See [Creating and configuring roles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+The administrators must also have the administration console User role to access administration console. (See [Creating and configuring roles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 ### Configuring visible users and groups {#configuring-visible-users-and-groups}
 
@@ -290,7 +290,7 @@ You can enable and disable event auditing and specify the types of events to be 
 
 **Removed Policy:** A publisher removes a policy from a document to withdraw the security protections.
 
-**Change Document Revocation URL:** A call from the API level changes the revocation URL that is specified in order to access a new document that replaces a revoked document.
+**Change Document Revocation URL:** A call from the API level changes the revocation URL that is specified to access a new document that replaces a revoked document.
 
 **Modify Document:** A recipient changes the content of a policy-protected document.
 

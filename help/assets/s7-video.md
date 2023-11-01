@@ -163,7 +163,7 @@ The various video encodings are created according to the S7 encoding presets sel
 
 #### Configure design {#configuring-design}
 
-The **[!UICONTROL Foundation Video]** component must know about what video profiles to use in order to build the video sources list. Open the video components design dialog box and configure the components design for using the new video profiles.
+The **[!UICONTROL Foundation Video]** component must know about what video profiles to use to build the video sources list. Open the video components design dialog box and configure the components design for using the new video profiles.
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ The **[!UICONTROL Foundation Video]** component must know about what video profi
 
 >[!NOTE]
 >
->Changes made to the design require activation of the design in order to take effect on publish.
+>Changes made to the design require activation of the design to take effect on publish.
 
 1. Open the **[!UICONTROL Foundation Video]** component's design dialog box and change to the **[!UICONTROL Profiles]** tab. Then delete the out-of-the-box profiles and add the new S7 video profiles. The order of the profile list in the design dialog box defines the order of the video sources element when rendering.
 1. For browsers not supporting HTML5, the video component lets you configure a Flash fallback. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configure the Flash player settings and assign a fallback profile for the flash player.
