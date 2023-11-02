@@ -170,7 +170,7 @@ To create a new area:
 
 ## Creating areas as live copies {#creating-areas-as-live-copies}
 
-You create an area as a live copy in order to inherit the targeted content across site structures.
+You create an area as a live copy to inherit the targeted content across site structures.
 
 To create an area as a livecopy:
 

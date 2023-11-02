@@ -256,7 +256,7 @@ When Collections in AEM Assets are shared or unshared, users can receive email n
 
 ## Setting Up OAuth {#setting-up-oauth}
 
-AEM offers OAuth2 support for its integrated Mailer Service, in order to allow organizations to adhere to secure email requirements.
+AEM offers OAuth2 support for its integrated Mailer Service, to allow organizations to adhere to secure email requirements.
 
 You can configure OAuth for multiple email providers, as outlined below.
 

@@ -77,7 +77,7 @@ In Brackets' **File** menu, choose **Open Folder…** and pick either the `jcr_r
 
 ### Project Settings {#project-settings}
 
-In order to synchronize your content to and from an AEM development instance, you need to define your Project Settings. This can be done by going to the **AEM** menu and choosing **Project Settings…**
+To synchronize your content to and from an AEM development instance, you need to define your Project Settings. This can be done by going to the **AEM** menu and choosing **Project Settings…**
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 

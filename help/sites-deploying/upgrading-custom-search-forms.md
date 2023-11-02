@@ -163,7 +163,7 @@ The Page Status has been replaced by two Options Property Predicates, one for pu
     * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
     * to `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
-* Make sure you set `listOrder` property for the `analyticspredicate` node to "**8**". This is needed in order to avoid conflicts.
+* Make sure you set `listOrder` property for the `analyticspredicate` node to "**8**". This is needed to avoid conflicts.
 
 ### Date Range Predicates {#date-range-predicates}
 

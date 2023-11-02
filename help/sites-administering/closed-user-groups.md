@@ -90,7 +90,7 @@ The effect of a single CUG policy upon permission evaluation can be summarized a
 The following best practices should be taken into account for defining restricted read access through CUGs:
 
 * Make a conscious decision on whether your need for a CUG is about restricting read access or an authentication requirement. If the latter, or if there is a need for both, consult the section on Best Practices for details with regard to the Authentication requirement
-* Create a threat model for the data or content that needs to be protected in order to identify threat boundaries and get a clear picture about the sensitivity of the data and the roles associated with authorized access
+* Create a threat model for the data or content that needs to be protected to identify threat boundaries and get a clear picture about the sensitivity of the data and the roles associated with authorized access
 * Model the repository content and CUGs keeping general authorization-related aspects and best practices in mind:
 
     * Remember that read permission will only be granted if a given CUG and the evaluation of other modules deployed in the setup grant allow a given subject to read a given repository item
@@ -123,7 +123,7 @@ Since this type of authentication requirement is expected to be limited to certa
 
 The default AEM setup now makes use of this configuration by allowing to set the mixin in the author run mode but only have it take effect upon replication to the publish instance. See [this page](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) for details how Sling enforces the authentication requirement.
 
-Adding the `granite:AuthenticationRequired` mixin type within the configured supported paths will cause the OSGi registration of the responsible handler to be updated containing a new, additional entry with the `sling.auth.requirements` property. If a given authentication requirement specifies the optional `granite:loginPath` property, the value is additionally registered with the Authenticator with a '-' prefix in order to be excluded from authentication requirement.
+Adding the `granite:AuthenticationRequired` mixin type within the configured supported paths will cause the OSGi registration of the responsible handler to be updated containing a new, additional entry with the `sling.auth.requirements` property. If a given authentication requirement specifies the optional `granite:loginPath` property, the value is additionally registered with the Authenticator with a '-' prefix to be excluded from authentication requirement.
 
 #### Evaluation and Inheritance of the Authentication Requirement {#evaluation-and-inheritance-of-the-authentication-requirement}
 
@@ -712,7 +712,7 @@ Consult the [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/a
 
 ### Disable the Authentication Requirement {#disable-the-authentication-requirement}
 
-In order to disable support for the authentication requirement as provided by the `granite.auth.authhandler` module it is sufficient to remove the configuration associated with **Adobe Granite Authentication Requirement and Login Path Handler**.
+To disable support for the authentication requirement as provided by the `granite.auth.authhandler` module it is sufficient to remove the configuration associated with **Adobe Granite Authentication Requirement and Login Path Handler**.
 
 >[!NOTE]
 >
@@ -722,7 +722,7 @@ In order to disable support for the authentication requirement as provided by th
 
 ### Apache Jackrabbit API {#apache-jackrabbit-api}
 
-In order to reflect the new type of access control policy used by the CUG authorization model, the API defined by Apache Jackrabbit has been extended. Since version 2.11.0 of the `jackrabbit-api` module defines a new interface called `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy`, which extends from `javax.jcr.security.AccessControlPolicy`.
+To reflect the new type of access control policy used by the CUG authorization model, the API defined by Apache Jackrabbit has been extended. Since version 2.11.0 of the `jackrabbit-api` module defines a new interface called `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy`, which extends from `javax.jcr.security.AccessControlPolicy`.
 
 ### Apache Jackrabbit FileVault {#apache-jackrabbit-filevault}
 
@@ -734,7 +734,7 @@ See the above [Apache Jackrabbit FileVault](/help/sites-administering/closed-use
 
 ### Adobe Granite Replication {#adobe-granite-replication}
 
-The replication module has been slightly adjusted in order to be able to replicate the CUG policies between different AEM instances:
+The replication module has been slightly adjusted to be able to replicate the CUG policies between different AEM instances:
 
 * `DurboImportConfiguration.isImportAcl()` is interpreted literally and will only affect access control policies implementing `javax.jcr.security.AccessControlList`
 
@@ -747,7 +747,7 @@ There is one limitation of replicating CUG policies. If a given CUG policy gets 
 
 The authentication handler **Adobe Granite HTTP Header Authentication Handler** shipped with the `com.adobe.granite.auth.authhandler` bundle holds a reference to the `CugSupport` interface defined by the same module. It is used to calculate the 'realm' in certain circumstances, falling back to the realm configured with the handler.
 
-This has been adjusted to make the reference to `CugSupport` optional in order to ensure maximal backwards compatibility if a given setup decides to re-enable the deprecated implementation. Installations using the implementation will no longer get the realm extracted from the CUG implementation but will always display the realm as defined with **Adobe Granite HTTP Header Authentication Handler**.
+This has been adjusted to make the reference to `CugSupport` optional to ensure maximal backwards compatibility if a given setup decides to re-enable the deprecated implementation. Installations using the implementation will no longer get the realm extracted from the CUG implementation but will always display the realm as defined with **Adobe Granite HTTP Header Authentication Handler**.
 
 >[!NOTE]
 >
@@ -770,7 +770,7 @@ The aim of this section is to provide an overview of the changes made to the CUG
 
 ### Differences in CUG Setup and Configuration {#differences-in-cug-setup-and-configuration}
 
-The deprecated OSGi component **Adobe Granite Closed User Group (CUG) Support** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) has been replaced by new components in order to be able to separately handle authorization and authentication-related parts of the former CUG functionality.
+The deprecated OSGi component **Adobe Granite Closed User Group (CUG) Support** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) has been replaced by new components to be able to separately handle authorization and authentication-related parts of the former CUG functionality.
 
 ## Differences in Managing CUGs in the Repository Content {#differences-in-managing-cugs-in-the-repository-content}
 
@@ -788,7 +788,7 @@ With the new implementation the access control setup of the default authorizatio
 
 **Editing CUG Policies In Access Control Management**
 
-This move from residual JCR properties to a dedicated access control policy has an impact on the permission needed to create or modify the authorization part of the CUG feature. Since this is considered a modification to access control content, it requires `jcr:readAccessControl` and `jcr:modifyAccessControl` privileges in order to be written to the repository. Therefore, only content authors entitled to modify the access control content of a page can set up or modify this content. This contrasts to the old implementation where the ability to write regular JCR properties was sufficient, resulting in a privilege escalation.
+This move from residual JCR properties to a dedicated access control policy has an impact on the permission needed to create or modify the authorization part of the CUG feature. Since this is considered a modification to access control content, it requires `jcr:readAccessControl` and `jcr:modifyAccessControl` privileges to be written to the repository. Therefore, only content authors entitled to modify the access control content of a page can set up or modify this content. This contrasts to the old implementation where the ability to write regular JCR properties was sufficient, resulting in a privilege escalation.
 
 **Target Node Defined By Policy**
 
@@ -864,7 +864,7 @@ For upgraded AEM installation, it is important to ensure that only one CUG imple
 
 ### Migrating Existing CUG Content {#migrating-existing-cug-content}
 
-Adobe provides a tool for migrating to the new CUG implementation. In order to use it, perform the following steps:
+Adobe provides a tool for migrating to the new CUG implementation. To use it, perform the following steps:
 
 1. Go to `https://<serveraddress>:<serverport>/system/console/cug-migration` to access the tool.
 1. Enter the root path you want to check CUGs for, and press the **Perform dry-run** button. This will scan for CUGs eligible for conversion in the selected location.

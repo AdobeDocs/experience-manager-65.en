@@ -32,7 +32,7 @@ See also [Embed the Dynamic Media Video or Image viewer on a web page](embed-cod
 
 >[!NOTE]
 >
->* Assets must be published in order to use the URL. If the assets are not published, copying, and pasting the URL into a web browser does not work.
+>* Assets must be published to use the URL. If the assets are not published, copying, and pasting the URL into a web browser does not work.
 >* Image presets and viewer presets must be activated and published for live delivery.
 >
 

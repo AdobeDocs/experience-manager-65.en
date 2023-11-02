@@ -459,7 +459,7 @@ Add a Watched Folder endpoint by using the AEM Forms Java API:
 
 ### Watched folder configuration values constant file {#watched-folder-configuration-values-constant-file}
 
-The [QuickStart: Adding a Watched Folder endpoint using the Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) uses a constant file that must be part of your Java project in order to compile the quick start. This constant file represents configuration values that must be set when adding a Watched Folder endpoint. The following Java code represents the constant file.
+The [QuickStart: Adding a Watched Folder endpoint using the Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) uses a constant file that must be part of your Java project to compile the quick start. This constant file represents configuration values that must be set when adding a Watched Folder endpoint. The following Java code represents the constant file.
 
 ```java
  /**
@@ -704,7 +704,7 @@ Add an Email endpoint by using the Java API:
 
 ### Email configuration values constant file {#email-configuration-values-constant-file}
 
-The [QuickStart: Adding an Email endpoint using the Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) uses a constant file that must be part of your Java project in order to compile the quick start. This constant file represents configuration values that must be set when adding an email endpoint. The following Java code represents the constant file.
+The [QuickStart: Adding an Email endpoint using the Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) uses a constant file that must be part of your Java project to compile the quick start. This constant file represents configuration values that must be set when adding an email endpoint. The following Java code represents the constant file.
 
 ```java
  /**

@@ -6,7 +6,7 @@ exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 ---
 # Upgrade Steps for Application Server Installations{#upgrade-steps-for-application-server-installations}
 
-This section describes the procedure that needs to be followed in order to update AEM for Application Server installations.
+This section describes the procedure that needs to be followed to update AEM for Application Server installations.
 
 All the examples in this procedure use Tomcat as the Application Server and imply that you have a working version of AEM already deployed. The procedure is meant to document upgrades performed from **AEM version 6.4 to 6.5**.
 
@@ -24,7 +24,7 @@ All the examples in this procedure use Tomcat as the Application Server and impl
 
 1. Next, undeploy AEM 6.4. This can be done from the TomCat App Manager (`http://serveraddress:serverport/manager/html`)
 
-1. Now, migrate the repository using the crx2oak migration tool. In order to do that, download the latest version of crx2oak from [this location](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Now, migrate the repository using the crx2oak migration tool. To do that, download the latest version of crx2oak from [this location](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
@@ -81,7 +81,7 @@ All the examples in this procedure use Tomcat as the Application Server and impl
      minRecordLength=4096
      ```
 
-1. You now need to change the run modes in the AEM 6.5 war file. In order to do that, first create a temporary folder that will be housing the AEM 6.5 war. The name of the folder in this example will be `temp`. Once the war file has been copied over, extract its contents by running from inside the temp folder: 
+1. You now need to change the run modes in the AEM 6.5 war file. To do that, first create a temporary folder that will be housing the AEM 6.5 war. The name of the folder in this example will be `temp`. Once the war file has been copied over, extract its contents by running from inside the temp folder: 
 
    ```
    jar xvf aem-quickstart-6.5.0.war

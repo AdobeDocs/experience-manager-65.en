@@ -470,7 +470,7 @@ Review the following before reading further instructions:
 
 #### Creating an IMS Configuration Part 1 {#creating-ims-config}
 
-In order to configure the service to correctly communicate with the forms conversion tool users must configure the Identity Management System (IMS) service to be able to register with Adobe I/O.
+To configure the service to correctly communicate with the forms conversion tool users must configure the Identity Management System (IMS) service to be able to register with Adobe I/O.
 
 1. Navigate to https://&lt;aemserver&gt;:&lt;port&gt; > Click Adobe Experience
 Manager on the top left > Tools > Security >Adobe IMS Configuration.
@@ -491,7 +491,7 @@ Manager on the top left > Tools > Security >Adobe IMS Configuration.
 
 #### Creating Integration in Adobe I/O {#create-integration-adobeio}
 
-Make sure you have the ability to create an integration within your Adobe domain if you do not contact your system administrator in order to do so.
+Make sure you have the ability to create an integration within your Adobe domain if you do not contact your system administrator to do so.
 
 1. Navigate to the [Adobe I/O Console](https://developer.adobe.com/console/).
 

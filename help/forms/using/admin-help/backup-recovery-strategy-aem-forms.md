@@ -15,7 +15,7 @@ After you identify how AEM forms is used, determine which files must be backed u
 
 >[!NOTE]
 >
->As with any other aspect of your AEM forms implementation, your backup and recovery strategy must be developed and tested in a development or staging environment before being used in production in order to ensure that the entire solution is working as expected with no data loss.
+>As with any other aspect of your AEM forms implementation, your backup and recovery strategy must be developed and tested in a development or staging environment before being used in production to ensure that the entire solution is working as expected with no data loss.
 
 Adobe Experience Manager (AEM) is an integral part of AEM forms. Therefore, you need to back up AEM as well in sync with AEM forms backup as Correspondence Management Solution and services, such as forms manager are based on data stored in AEM part of AEM forms.To prevent any data loss, the AEM forms specific data must be backed up in a way to ensure that GDS and AEM (repository) correlate with database references.The database, GDS, AEM, and Content Storage Root directories must be restored to a computer with the same DNS name as the original.
 

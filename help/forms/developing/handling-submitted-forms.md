@@ -170,7 +170,7 @@ After you determine if a form contains file attachments, you can process the dat
 
 >[!NOTE]
 >
->The form must be submitted as PDF data in order to retrieve file attachments. If the form is submitted as XML data, file attachments are not submitted.
+>The form must be submitted as PDF data to retrieve file attachments. If the form is submitted as XML data, file attachments are not submitted.
 
 **Process the submitted data**
 
