@@ -36,19 +36,11 @@ Some of the key features and enhancements in this release include the following:
 
 **Key features**
 
-* Assets, Dynamic Media - [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
-
-* Assets - From Search results, you can now navigate to the folder location that contains an asset to let you perform various asset management tasks. (ASSETS-23182) 
+* A 
 
 **Key Enhancements**
 
-* Sites Polaris Picker in Content Fragments has improved performance. (SITES-14092) 
-
-* Enabled Sites Page Editor/Image Component user to reference assets from the remote Assets Cloud Service. (SITES-13448, SITES-13433) 
-
-* To quickly find a project in List view, where you may have many projects in your system, Adobe now supports server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) 
-
-* AEM 6.5.18.0 supports MongoDB 5.0 to 6.0.
+* S
 
 **Deprecated feature**
 
@@ -139,11 +131,17 @@ to
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
-* W 
+* A custom Servlet (API endpoint) is returning an incorrect Dynamic Media (Scene7) file name. It occurs when an asset is deleted and replaced with an asset of the same name.  The custom servlet is returning the old Dynamic Media (Scene7) file name, while a "jcr" API call returns the correct file name. (ASSETS-29476) MAJOR
+* Even after Sync is turned off at the Folder level, the Logs show the trigger of "Scene7 ReplicateOnModifyListener". The `ReplicateOnModifyListener/Worker` should skip processing on non-Dynamic Media folder assets and content fragments. (ASSETS-26705) MAJOR
+* User gets an empty/false async job message but the connected asset is published successfully. (ASSETS-29342) TRIVIAL
+* People with low vision are impacted if the Focus is not visible in drop-down elements (Content Only, View, More Options) in high contrast black and white modes. (ASSETS-25759) NORMAL
+* People with low vision are impacted if luminosity contrast ratio for text on a page is less than 4.5:1. (ASSETS-25756) NORMAL
 
 ### [!DNL Forms]{#forms-6519}
 
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
+
+* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) NORMAL
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -165,6 +163,8 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * The "Relative Date Presentation" tooltip can only be closed by pressing Escape (ESC) on the keyboard. The tooltip should close when the user selects any part of the user interface. (NPR-41394) NORMAL
 * Unlocalized string `Something went wrong while adding the private key.` when adding the wrong Private Key File in **Edit User** > **Keystore**. (NPR-41366) NORMAL
 * Icons are needed for Microsoft&reg; SharePoint and Microsoft&reg; One Drive in the AEM 6.5 environment. (NPR-41354) NORMAL
+* Unlocalized "UserId/Password mismatch." string in **Security** > **User** > **Create** dialog box. (NPR-41245) NORMAL
+* Popover code and Event handlers are loaded twice, breaking user-created Coral3-based user interfaces. (NPR-41171) NORMAL
 * Deselection does not work correctly after using "Select All" in the AEM Sites console. (NPR-41304) MINOR
 
 #### Content distribution{#foundation-content-distribution-6519}
@@ -173,11 +173,14 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Integrations{#integrations-6519}
 
-* A
+* SMS links in an AEM email campaign are not correctly written; they contain an HTML anchor element. (NPR-41211) MAJOR
+* Wording used on account configuration screen should not use new credential type. (NPR-41210) NORMAL
+* Moving Analytics report import scheduler from `ManagedPollConfig` to slingjobs. When two different analytics frameworks were attached with different report suites to two different sites, `ManagedPollConfig` polls only one of them. (NPR-41209) NORMAL
+* When the value is reset to default, the previously selected timeframe button stays enabled. In the content insight dashboard of AEM, by default the time frame is set at the week and shows content insights as weekly data. Now, if the user selects other time frame options, such as hour, day, month, and year, the data changes according to the selected value. However, if the values are reset, by default, the visible time frame is week but still the previously selected time frame option is selected. (NPR-41246) MINOR
 
 #### Oak{#oak-6519}
 
-* A
+* Backport utility to rate limit writes to AEM in case async indexing is delayed. (NPR-40985) MAJOR
 
 #### Platform{#foundation-platform-6519}
 
@@ -193,7 +196,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Translation projects{#foundation-translation-6519}
 
-* T
+* While creating the language copy of page "A", it should automatically create the language copies of the referenced Pages, Experience Fragments, Content Fragments, and Assets. Also, the newly created language copy of Page "A" at the new path should have its references updated to the respective newly created language copies of the Pages, Experience Fragments, Content Fragments, and Assets. (NPR-41076) NORMAL
 
 #### User interface{#foundation-ui-6519}
 
