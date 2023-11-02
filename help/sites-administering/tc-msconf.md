@@ -32,12 +32,12 @@ The following procedure creates a Microsoft Translator configuration.
    1. Type a title for your configuration. The title identifies the configuration in the Cloud Services console and in page property drop-down lists.
    1. Optionally, type a name to use for the repository node that stores the configuration.
 
-   ![Create translation configuration](../assets/create-translation-config.png)
+   ![Create translation configuration](assets/create-translation-config.png)
 
 1. Click **Create**.
 1. In the **Edit Configuration** window, provide the values for the translation service described in the previous table.
 
-   ![Edit translation configuration](../assets/edit-translation-config.png)
+   ![Edit translation configuration](assets/edit-translation-config.png)
 
 1. Tap or click **Connect** to verify the connection.
 1. Tap or click **Save &amp; Close**.
