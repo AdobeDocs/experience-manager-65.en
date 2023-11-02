@@ -121,7 +121,7 @@ to
 #### Page Editor{#sites-pageeditor-6519}
 
 * Selection of multiple document filetypes on asset type filter is not working on the page console. No results are found even if the results of one particular filetype are available. As a result, authors are unable to filter multiple documents. They must use multiple document types and they are having to filter it one at a time. (SITES-14047) MAJOR
-* After upgrading an instance from AEM 6.5.17 and AEM 6.5.18, from inside the Page Editor, if you click **[!UICONTROL Publish Page]**, you are redirected to a URL that does not exist. The user should be redirected to the Publish wizard. (SITES-15856) NORMAL
+* After upgrading an instance from AEM 6.5.17 and AEM 6.5.18, from inside the Page Editor, if you select **[!UICONTROL Publish Page]**, you are redirected to a URL that does not exist. The user should be redirected to the Publish wizard. (SITES-15856) NORMAL
 * (SITES-15704) NORMAL
 * Redundant copy from AEM's Clipboard during a paste from the operating system's Clipboard. (SITES-15704) NORMAL
 * In Assets, selecting **[!UICONTROL Documents]**, then under **[!UICONTROL Filtertype]**, selecting **[!UICONTROL Microsoft&reg; Word]** or **[!UICONTROL Microsoft&reg; Excel]** shows no results even though files of both types exist. (SITES-14837) NORMAL
@@ -132,14 +132,14 @@ to
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
-* After an asset is uploaded to AEM, the `update_asset` workflow is triggered. The workflow never finishes. Looking at the workflow instances, the workflow finishes up to the product upload step. The next step is scene7 batch upload. User can see the asset is in Scene7 from the Dynamic Media Classic app. (ASSETS-30443) CRITICAL
-* A custom Servlet (API endpoint) is returning an incorrect Dynamic Media (Scene7) file name. It occurs when an asset is deleted and replaced with an asset of the same name.  The custom servlet is returning the old Dynamic Media (Scene7) file name, while a "jcr" API call returns the correct file name. (ASSETS-29476) MAJOR
+* After an asset is uploaded to AEM, the `update_asset` workflow is triggered. The workflow never finishes. Looking at the workflow instances, the workflow finishes up to the product upload step. The next step is scene7 batch upload. User can see that the asset is in Scene7 from the Dynamic Media Classic app. (ASSETS-30443) CRITICAL
+* A custom Servlet (API endpoint) is returning an incorrect Dynamic Media (Scene7) file name. It occurs when an asset is deleted and replaced with an asset of the same name. The custom servlet is returning the old Dynamic Media (Scene7) file name, while a "jcr" API call returns the correct file name. (ASSETS-29476) MAJOR
 * Even after Sync is turned off at the Folder level, the Logs show the trigger of "Scene7 ReplicateOnModifyListener". The `ReplicateOnModifyListener/Worker` should skip processing on non-Dynamic Media folder assets and content fragments. (ASSETS-26705) MAJOR
 * People with low vision are impacted if the Focus is not visible in drop-down elements (Content Only, View, More Options) in high contrast black and white modes. (ASSETS-25759) NORMAL
 * People with low vision are impacted if luminosity contrast ratio for text on a page is less than 4.5:1. (ASSETS-25756) NORMAL
 * Screen readers are not narrating the displayed pop-up message after submitting the data. (ASSETS-25755) NORMAL
 * Screen readers are not recognizing landmarks in the page (Dynamic Media; creating a video encoding profile), when navigated using landmark/region shortcut key `D/R`. (ASSETS-25752) NORMAL
-* Screen readers are not recognizing multiple landmarks in the page (Dynamic Media; creating interactive video), when navigated using landmark/region shortcut key `D/R`.(ASSETS-25750) NORMAL
+* Screen readers are not recognizing multiple landmarks in the page (Dynamic Media; creating interactive video), when navigated using landmark/region shortcut key `D/R`. (ASSETS-25750) NORMAL
 * Screen readers (NVDA/JAWS/Narrator) are not recognizing the Landmarks in **Edit Asset** page while navigating using the shortcut keys `D/R`. (ASSETS-25744) NORMAL
 * User gets an empty/false async job message but the connected asset is published successfully. (ASSETS-29342) TRIVIAL
 
@@ -147,7 +147,7 @@ to
 
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
 
-* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) NORMAL
+* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft&reg; configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) NORMAL
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -181,7 +181,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * SMS links in an AEM email campaign are not correctly written; they contain an HTML anchor element. (NPR-41211) MAJOR
 * Wording used on account configuration screen should not use new credential type. (NPR-41210) NORMAL
-* Moving Analytics report import scheduler from `ManagedPollConfig` to slingjobs. When two different analytics frameworks were attached with different report suites to two different sites, `ManagedPollConfig` polls only one of them. (NPR-41209) NORMAL
+* Moving Analytics report import scheduler from `ManagedPollConfig` to sling jobs. When two different analytics frameworks were attached with different report suites to two different sites, `ManagedPollConfig` polls only one of them. (NPR-41209) NORMAL
 * When the value is reset to default, the previously selected timeframe button stays enabled. In the content insight dashboard of AEM, by default the time frame is set at the week and shows content insights as weekly data. Now, if the user selects other time frame options, such as hour, day, month, and year, the data changes according to the selected value. However, if the values are reset, by default, the visible time frame is week but still the previously selected time frame option is selected. (NPR-41246) MINOR
 
 #### Oak{#oak-6519}
@@ -438,7 +438,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
 * When a redirect URL is set in the guide container of an Adaptive Form, the inline signing stops working. (FORMS-10493)
-* All Document of Record (DoR) templates fail to publish. Only English locale-based DoR templates and their associated Forms-based DoR templates get published. (FORMS-10535)
+* All Document of Record (DoR) templates fail to publish. Only English locale-based DoR templates and their associated Forms-based DoR templates are published. (FORMS-10535)
 
 #### Interactive Communications
 
