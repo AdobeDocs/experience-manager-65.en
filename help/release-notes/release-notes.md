@@ -88,17 +88,17 @@ to
 
 * Improve `StyleImpl`. (SITES-15164) NORMAL
 
-#### Core Components{#sites-core-components-6519}
+<!--#### Core Components{#sites-core-components-6519}
 
-* A
+* A -->
 
 #### Campaign integration{#sites-campaign-integration-6519}
 
 * On the signature component (`/apps/fpl/components/campaign/signature`), the link Externalizer was not working. The domain was not getting appended to the image source, if the HTML comment above the image tag was removed. This issue was found only with the signature component in the production environment, not the staging environment. (SITES-16120) NORMAL
 
-#### Experience Fragments{#sites-experiencefragments-6519}
+<!--#### Experience Fragments{#sites-experiencefragments-6519}
 
-* A
+* A -->
 
 #### Foundation Components (Legacy){#sites-foundation-components-legacy-6519}
 
@@ -115,6 +115,7 @@ to
 
 #### MSM - Live Copies{#sites-msm-live-copies-6519}
 
+* MSM Rollout Button does not work in the touch graphical user interface. (SITES-16991) MAJOR
 * Link Reference does not get updated inside Experience Fragment when creating a live copy or rollout an Experience Fragment. (SITES-15460) NORMAL
 
 #### Page Editor{#sites-pageeditor-6519}
@@ -131,11 +132,16 @@ to
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
+* After an asset is uploaded to AEM, the `update_asset` workflow is triggered. The workflow never finishes. Looking at the workflow instances, the workflow finishes up to the product upload step. The next step is scene7 batch upload. User can see the asset is in Scene7 from the Dynamic Media Classic app. (ASSETS-30443) CRITICAL
 * A custom Servlet (API endpoint) is returning an incorrect Dynamic Media (Scene7) file name. It occurs when an asset is deleted and replaced with an asset of the same name.  The custom servlet is returning the old Dynamic Media (Scene7) file name, while a "jcr" API call returns the correct file name. (ASSETS-29476) MAJOR
 * Even after Sync is turned off at the Folder level, the Logs show the trigger of "Scene7 ReplicateOnModifyListener". The `ReplicateOnModifyListener/Worker` should skip processing on non-Dynamic Media folder assets and content fragments. (ASSETS-26705) MAJOR
-* User gets an empty/false async job message but the connected asset is published successfully. (ASSETS-29342) TRIVIAL
 * People with low vision are impacted if the Focus is not visible in drop-down elements (Content Only, View, More Options) in high contrast black and white modes. (ASSETS-25759) NORMAL
 * People with low vision are impacted if luminosity contrast ratio for text on a page is less than 4.5:1. (ASSETS-25756) NORMAL
+* Screen readers are not narrating the displayed pop-up message after submitting the data. (ASSETS-25755) NORMAL
+* Screen readers are not recognizing landmarks in the page (Dynamic Media; creating a video encoding profile), when navigated using landmark/region shortcut key `D/R`. (ASSETS-25752) NORMAL
+* Screen readers are not recognizing multiple landmarks in the page (Dynamic Media; creating interactive video), when navigated using landmark/region shortcut key `D/R`.(ASSETS-25750) NORMAL
+* Screen readers (NVDA/JAWS/Narrator) are not recognizing the Landmarks in **Edit Asset** page while navigating using the shortcut keys `D/R`. (ASSETS-25744) NORMAL
+* User gets an empty/false async job message but the connected asset is published successfully. (ASSETS-29342) TRIVIAL
 
 ### [!DNL Forms]{#forms-6519}
 
@@ -153,9 +159,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * **Interactive Communications**
   * text -->
 
-### Commerce{#commerce-6519}
+<!--### Commerce{#commerce-6519}
 
-* A
+* A -->
 
 ### Foundation{#foundation-6519}
 
@@ -167,9 +173,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * Popover code and Event handlers are loaded twice, breaking user-created Coral3-based user interfaces. (NPR-41171) NORMAL
 * Deselection does not work correctly after using "Select All" in the AEM Sites console. (NPR-41304) MINOR
 
-#### Content distribution{#foundation-content-distribution-6519}
+<!--#### Content distribution{#foundation-content-distribution-6519}
 
-* T
+* T -->
 
 #### Integrations{#integrations-6519}
 
@@ -186,28 +192,29 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * QueryBuilder queries with square brackets are wrongly translated to xpath . (NPR-41298) NORMAL
 
-#### Replication{#foundation-replication-6519}
+<!--#### Replication{#foundation-replication-6519}
 
-* R
+* R -->
 
-#### Sling{#foundation-sling-6519}
+<!--#### Sling{#foundation-sling-6519}
 
-* W
+* W -->
 
 #### Translation projects{#foundation-translation-6519}
 
 * While creating the language copy of page "A", it should automatically create the language copies of the referenced Pages, Experience Fragments, Content Fragments, and Assets. Also, the newly created language copy of Page "A" at the new path should have its references updated to the respective newly created language copies of the Pages, Experience Fragments, Content Fragments, and Assets. (NPR-41076) NORMAL
 
-#### User interface{#foundation-ui-6519}
+<!--#### User interface{#foundation-ui-6519}
 
-* A
+* A -->
 
-#### WCM{#wcm-6519}
+<!--#### WCM{#wcm-6519}
 
-* A
+* A -->
 
 #### Workflow{#foundation-workflow-6519}
 
+* Unable to complete a task in the Inbox. Only an "undefined" value is observed in the drop-down menu when trying to complete the task and select an action. This means that users cannot apply the AEM 6.5.18 service pack. (NPR-41402) MAJOR
 * Unable to complete tasks in Inbox. There is no value (only "undefined") in the drop-down list when trying to complete the task for zip files, Asset reports, move (success or failure), or asset expiration. (NPR-41305) MAJOR
 * When a user selects **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > instances, then selects the running workflow, then select **[!UICONTROL View Payload]**, it results in a 500 error page. (NPR-41325) NORMAL
 
