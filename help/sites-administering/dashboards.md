@@ -92,7 +92,7 @@ The **Basic** tab provides access to the following configuration entries:
 
 #### Report configuration {#report-configuration}
 
-In order to display web statistics, you need to define the date range of the data you want to fecth. The **Report** tab provides two fields to define that range.
+To display web statistics, you need to define the date range of the data you want to fecth. The **Report** tab provides two fields to define that range.
 
 >[!NOTE]
 >

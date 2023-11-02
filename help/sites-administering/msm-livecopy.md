@@ -1,6 +1,6 @@
 ---
 title: Creating and Synchronizing Live Copies
-description: Learn how to create and synchronize Live Copies.
+description: Learn how to create and synchronize Live Copies in Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 ---

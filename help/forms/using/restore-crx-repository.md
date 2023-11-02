@@ -1,7 +1,6 @@
 ---
 title: Unable to restore corrupt CRX repository applicable to JEE cluster server
-SEO Description: Unable to restore corrupted CRX repository
-description: Steps to restore corrupted CRX repository
+description: Learn the steps on how you can restore a CRX repository that is corrupt.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
 ---
 # Unable to restore corrupt CRX repository {#unable-to-restore-corrupt-crx-repository}
@@ -16,7 +15,6 @@ Take the backup of your CRX-repository before performing the below-mentioned ste
 
 ## Solution {#solution}
 
-Perform the following steps to resolve the issue:
 1. Go to  `https://[AEM Forms Server]:[port]/system/console/bundles`. 
 
 1. Locate the `oak-core` bundle and check whether it is running. 
@@ -28,6 +26,4 @@ Perform the following steps to resolve the issue:
 
 ## Applies To {#applies-to}
 
-This solution applies to:
-
-* AEM Forms on JEE Cluster 
+This solution applies to AEM Forms on JEE Cluster.

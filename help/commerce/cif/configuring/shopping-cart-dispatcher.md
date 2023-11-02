@@ -1,6 +1,6 @@
 ---
 title: Shopping Cart and Dispatcher Setup
-description: Shopping Cart and Dispatcher Setup
+description: Learn about the Shopping Cart and the Adobe Experience Manager Dispatcher Setup.
 ---
 
 # Shopping Cart and Dispatcher Setup

@@ -66,7 +66,7 @@ The diff detects changes at the component and HTML level. Items that have been c
 
 ### Fullscreen and Exiting {#fullscreen-and-exiting}
 
-In order to focus on particular content, you can click on the full screen icon for either "side" of the side-by-side diff to enlarge it to the full browser window.
+To focus on particular content, you can click on the full screen icon for either "side" of the side-by-side diff to enlarge it to the full browser window.
 
 ![Full screen mode icon](do-not-localize/chlimage_1-18.png)
 

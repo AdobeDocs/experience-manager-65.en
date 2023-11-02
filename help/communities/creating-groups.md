@@ -1,6 +1,6 @@
 ---
 title: Community Groups
-description: Creating community groups
+description: Learn how the community groups feature lets you dynamically create a subcommunity within a community site by authorized users in Publish and Author.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -10,7 +10,7 @@ exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
 ---
 # Community Groups {#community-groups}
 
-The community groups feature is the ability for a sub-community to be dynamically created within a community site by authorized users (community members and authors) from the publish and author environments.
+The community groups feature is the ability for a subcommunity to be dynamically created within a community site by authorized users (community members and authors) from the publish and author environments.
 
 This ability is present when the [groups function](/help/communities/functions.md#groups-function) is present in the [community site](/help/communities/sites-console.md) structure.
 
@@ -28,7 +28,7 @@ This is the page that loads on publish when the **Groups** menu item is selected
 
 ![new-group](assets/new-group.png)
 
-When you select the **New Group** icon, an edit dialog opens up.
+When you select the **New Group** icon, an edit dialog box opens up.
 
 Under the **Settings** tab, you provide the basic features of the group:
 
@@ -66,9 +66,9 @@ Under the **Image** tab, you can upload an image to display for the group on the
 
 ![group-image](assets/group-image.png)
 
-By selecting **Create Group**, the pages for the group are created based on the chosen template, and a user group is created for membership and the Groups page is updated to show the new sub-community.
+By selecting **Create Group**, the pages for the group are created based on the chosen template, and a user group is created for membership and the Groups page is updated to show the new subcommunity.
 
-For example, the Groups page with a new sub-community titled "Focus Group", for which an image thumbnail was uploaded, appears as follows (still signed in as a community group administrator):
+For example, the Groups page with a new subcommunity titled "Focus Group", for which an image thumbnail was uploaded, appears as follows (still signed in as a community group administrator):
 
 ![group-page](assets/group-page.png)
 

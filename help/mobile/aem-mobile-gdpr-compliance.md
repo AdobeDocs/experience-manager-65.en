@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager Mobile - GDPR Readiness
-description: Adobe Experience Manager Mobile - GDPR Readiness
+description: Learn about how Adobe Experience Manager is ready to assist you with your GDPR compliance obligations.
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
@@ -29,7 +29,7 @@ To ensure you are not confusing AEM Mobile with the older Digital Publishing Sui
 
 Contact Adobe Customer Care so you can initiate a GDPR request for the Digital Publishing Suite.
 
-The following IDs are required to locate customer data. Any subset received will imply the other IDs were not applicable to this user.
+The following IDs are required to locate customer data. Any subset received implies that the other IDs were not applicable to this user.
 
 Mandatory:
 
@@ -43,17 +43,17 @@ Provide at least 1 of the following:
 
 ### Frequently Asked Questions (FAQ) {#frequently-asked-questions-faq}
 
-**Will Adobe delete my App Store purchases when initiating a DELETE request?**
+**Is Adobe deleting my App Store purchases when initiating a DELETE request?**
 
-Adobe deletes information that it has of App store purchases (subscriptions, and so on), but purchases are still on record in the App stores. If the App (end-user) is logged into the App store, those receipts are picked up again and sent to Adobe and later, those are considered as new purchases and are restored by the App to have access again.
+Adobe deletes information that it has of App store purchases (subscriptions, and so on), but purchases are still on record in the App stores. If the App (end-user) is logged into the App store, those receipts are picked up again and sent to Adobe. Later, those are considered as new purchases and are restored by the App, with access again.
 
-**Will Adobe delete customer provided entitlements when initiating a DELETE request?**
+**Is Adobe deleting customer-provided entitlements when initiating a DELETE request?**
 
 Adobe deletes information that it has of the customer's additional direct entitlement allowances. If the App (end-user) logs in to the OAuth mechanism that the customer has used, it sends information to Adobe and the services pick up the extra entitlements again.
 
 **What is expected of the end user?**
 
-Since the key of assigning entitlements to the App resides on the device as part of the viewer software, the end user should uninstall the App. The end user should realize that if they reinstall the App, then existing purchases (associated with the App store user) and direct entitlement allowances (associated with the OAuth user of the customer) will still be restored.
+Since the key of assigning entitlements to the App resides on the device as part of the viewer software, the end user should uninstall the App. The end user should realize that if they reinstall the App, then existing purchases (associated with the App store user) and direct entitlement allowances (associated with the OAuth user of the customer) are still restored.
 
 **What happens when an app is shared between people on a device?**
 

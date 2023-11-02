@@ -1,6 +1,6 @@
 ---
 title: Using Maven for Communities
-description: Adobe Experience Manager Uber API jar
+description: Learn about Adobe Experience Manager Uber API jar for use in Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -23,7 +23,7 @@ There is only one "uber" artifact that replaces individual artifacts:
 >
 >From AEM 6.4 onwards, the Communities APIs are not released explicitly. All the Communities APIs are now included in the Uber jar itself. 
 >
->Keep up-to-date with the most recent Communities release.
+>Keep current with the most recent Communities release.
 >
 >See the [Latest Releases](deploy-communities.md#latest-releases) section where you can identify the most recent version.
 
@@ -70,7 +70,7 @@ Ensure thet the version specified corresponds with the Communities package versi
 1. Locate the package: `cq-socialcommunities-pkg-1.x.xxx`
 1. Extract the version from the package name:
    * First version for AEM 6.3 is version 1.11.170.
-   * Feature packs will be versions 1.12.xxx.
+   * Feature packs is versions 1.12.xxx.
 
 >[!NOTE]
 >

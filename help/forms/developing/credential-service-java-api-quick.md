@@ -1,35 +1,32 @@
 ---
-title: Credential Service Java API QuickStart(SOAP)
-seo-title: Credential Service Java API QuickStart(SOAP)
-description: Credential Service Java API QuickStart(SOAP)
-uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
+title: Credential Service Java&trade; API QuickStart(SOAP)
+description: Learn how to import and delete credentials in AEM Forms using the Java&trade; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
 ---
-# Credential Service Java API Quick Start (SOAP) {#credential-service-java-api-quickstart-soap}
+# Credential Service Java&trade; API Quick Start (SOAP) {#credential-service-java-api-quickstart-soap}
 
-Java API Quick Start(SOAP) is available for the Credential service.
+Java&trade; API Quick Start(SOAP) is available for the Credential service.
 
-[Quick Start (SOAP mode): Importing credentials using the Java API](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Quick Start (SOAP mode): Importing credentials using the Java&trade; API](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Quick Start (SOAP mode): Deleting credentials using the Java API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Quick Start (SOAP mode): Deleting credentials using the Java&trade; API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >
->Quick starts located in Programming with AEM forms are based on the FormsServer being deployed on JBoss and the Windows operating system. However, if you are using another operating system, such as Unix, replace Windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Starts in Programming with AEM forms are based on the Forms Server being deployed on JBoss&reg; and the Windows operating system. However, if you are using another operating system, such as UNIX&reg;, replace Windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >You cannot perform Credential service operations using web services.
 
-## Quick Start (SOAP mode): Importing credentials using the Java API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## Quick Start (SOAP mode): Importing credentials using the Java&trade; API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
 The following code example imports a credential based on a file named *cred.p12*. The alias value used to import the credential is `Secure`. (See [Importing Credentials by using the Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
@@ -130,7 +127,7 @@ The following code example imports a credential based on a file named *cred.p12*
  
 ```
 
-## Quick Start (SOAP mode): Deleting credentials using the Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Quick Start (SOAP mode): Deleting credentials using the Java&trade; API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
 The following code example deletes a credential based on an alias value *secure*. (See [Deleting Credentials by using the Trust Manager API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 

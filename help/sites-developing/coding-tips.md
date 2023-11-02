@@ -1,6 +1,6 @@
 ---
 title: Coding Tips
-description: Tips for coding for AEM
+description: Learn some tips for coding best-practices in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference

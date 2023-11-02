@@ -1,23 +1,19 @@
 ---
 title: Develop Sandbox Application
-seo-title: Develop Sandbox Application
-description: Develop application using foundation scripts
-seo-description: Develop application using foundation scripts
-uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
+description: Learn how to develop a Sandbox application that uses foundation scripts and includes the ability to enable authoring with Communities components.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
 ---
 # Develop Sandbox Application  {#develop-sandbox-application}
 
-In this section, now that the template has been setup in the [initial application](initial-app.md) section, and the initial pages established in the [initial content](initial-content.md) section, the application can be developed using foundation scripts including the ability to enable authoring with Communities components. At the end of this section, the website will be functional.
+In this section, now that the template is set up in the [initial application](initial-app.md) section, and the initial pages established in the [initial content](initial-content.md) section, you can develop the application. You do so by using foundation scripts that include the ability to enable authoring with Communities components. At the end of this section, you have a website that is fully functional.
 
 ## Using Foundation Page Scripts {#using-foundation-page-scripts}
 
-The default script, created when the component which renders the playpage template was added, is modifed to include the foundation page's head.jsp and a local body.jsp.
+The default script, created when the component which renders the playpage template was added, is modified to include the foundation page's head.jsp and a local body.jsp.
 
 ### Super Resource Type {#super-resource-type}
 
@@ -60,9 +56,9 @@ Using CRXDE Lite:
    %>
    ```
 
-1. Being aware of open/close script tags, replace " // TODO ..." with includes of scripts for the head and body parts of &lt;html&gt;.
+1. Being aware of open/close script tags, replace " // TODO ..." with `includes` of scripts for the head and body parts of &lt;html&gt;.
 
-   With a super type of `foundation/components/page`, any script not defined in this same folder will resolve to a script in `/apps/foundation/components/page` folder (if it exists), else to a script in `/libs/foundation/components/page` folder.
+   With a super type of `foundation/components/page`, any script not defined in this same folder is resolve to a script in `/apps/foundation/components/page` folder (if it exists), or else to a script in `/libs/foundation/components/page` folder.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -82,9 +78,9 @@ Using CRXDE Lite:
    </html>
    ```
 
-1. The foundation script `head.jsp` does not need to be overlaid, but the foundation script `body.jsp` is empty.
+1. Overlaying the foundation script `head.jsp` is not necessary, but the foundation script `body.jsp` is empty.
 
-   To setup for authoring, overlay `body.jsp` with a local script and include a paragraph system (parsys) in the body:
+   To set up for authoring, overlay `body.jsp` with a local script and include a paragraph system (parsys) in the body:
 
    1. Navigate to `/apps/an-scf-sandbox/components`.
    1. Select the `playpage` node.
@@ -156,13 +152,13 @@ In addition, choose **[!UICONTROL General]** components, such as
 >
 >The components enabled for the page par are stored in the repository as the value of the `components` property of the
 >
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
+>Node `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
 
 ## Landing Page {#landing-page}
 
-In a multi-language environment, the root page would include a script which would parse the request from the client to determine the preferred langauge.
+In a multi-language environment, the root page would include a script which would parse the request from the client to determine the preferred language.
 
-In this simple example, the root page is being statically set to redirect to the english page, which may be developed in the future to be the main landing page with a link to the play page.
+In this example, the root page is being statically set to redirect to the English page, which may be developed in the future to be the main landing page with a link to the play page.
 
 Change the browser URL to the root page: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
@@ -175,6 +171,6 @@ Change the browser URL to the root page: `http://localhost:4502/editor.html/cont
 
 * Click **[!UICONTROL OK]**
 
-Once the site is published, browsing to the root page on a publish instance will redirect to the english page.
+After the site is published, browsing to the root page on a publish instance redirects to the English page.
 
-The last step before playing with the communities SCF components is to add a Client Library Folder (clientlibs) .... [Add Clienlibs](add-clientlibs.md)
+The last step before playing with the Communities SCF components is to add a Client Library Folder (clientlibs) .... [Add Clientlibs](add-clientlibs.md)

@@ -1,21 +1,17 @@
 ---
 title: Using Social Graph
-seo-title: Using Social Graph
-description: Adding a Following component to a page
-seo-description: Adding a Following component to a page
-uuid: 8be6334b-e6c9-40bc-90a8-750b98419470
+description: Learn how to add a Following component to a page that lets signed-in community members follow activities or be followed.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 exl-id: 2cd1436b-3727-4757-b28e-70756be78a4e
 ---
 # Using Social Graph {#using-social-graph}
 
 ## Introduction {#introduction}
 
-The ability for a community member to follow [activities](activities.md) as well as be followed is established through two components: `Follow` and `Following`.
+The ability for a community member to follow [activities](activities.md) and be followed is established through two components: `Follow` and `Following`.
 
 The `Follow` component must be associated with another resource, and this association is already established for community members and features.
 
@@ -27,7 +23,7 @@ If it is desired to add a `Following` component to a page in author mode, locate
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-socialgraph.md#essentials-for-client-side) are included, this is how the `Following` component will appear:
+When the [required client-side libraries](essentials-socialgraph.md#essentials-for-client-side) are included, this is how the `Following` component appears:
 
 ![following](assets/following.png)
 

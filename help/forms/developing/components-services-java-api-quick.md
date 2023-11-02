@@ -1,32 +1,29 @@
 ---
-title: Components and Services Java APIQuick Start(SOAP)
-seo-title: Components and Services Java APIQuick Start(SOAP)
-description: Components and Services Java APIQuick Start(SOAP)
-uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
+title: Components and Services Java&trade; APIQuick Start (SOAP)
+description: Learn how to programmatically manipulate AEM Forms components and services by using Java&trade; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
-discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
 ---
-# Components and Services Java API Quick Start (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Components and Services Java&trade; API Quick Start (SOAP) {#components-and-services-java-apiquick-start-soap}
 
-Java API Quick Start(SOAP) is available for components and services.
+Java&trade; API Quick Start (SOAP) is available for components and services.
 
 
-[Quick Start (SOAP mode): Deploying a component using the Java API](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
+[Quick Start (SOAP mode): Deploying a component using the Java&trade; API](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
-[Quick Start (SOAP mode): Setting the execution context of a service using the Java API](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
+[Quick Start (SOAP mode): Setting the execution context of a service using the Java&trade; API](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
 
-[Quick Start (SOAP mode): Disabling service security using the Java API](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
+[Quick Start (SOAP mode): Disabling service security using the Java&trade; API](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
 
-[Quick Start (SOAP mode): Starting a service using the Java API](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
+[Quick Start (SOAP mode): Starting a service using the Java&trade; API](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
 
-[Quick Start (SOAP mode): Modifying a services configuration values using the Java API](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
+[Quick Start (SOAP mode): Modifying service configuration values using the Java&trade; API](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
 
-[Quick Start (SOAP mode): Removing components using the Java API](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+[Quick Start (SOAP mode): Removing components using the Java&trade; API](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
@@ -37,15 +34,15 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 >[!NOTE]
 >
->Quick starts located in Programming with AEM forms are based on the Forms server being deployed on JBoss and the Windows operating system. However, if you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick starts in Programming with AEM forms are based on the Forms Server being deployed on JBoss&reg; and the Windows operating system. However, if you are using another operating system, such as UNIX&reg;, replace Windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >If you have a custom component and you are using SOAP or EJB protocols to invoke DSCs on the same local server, and those invocations stop working after an upgrade, then use in-VM invocation strategy. Use the in-VM DSC invocation method with default ServiceClientFactory and do not construct ServiceClientFactory using SOAP or EJB protocols.
 
-## Quick Start (SOAP mode): Deploying a component using the Java API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
+## Quick Start (SOAP mode): Deploying a component using the Java&trade; API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-The following Java example deploys a component that is based on a JAR file named *adobe-emailSample-dsc.jar*.
+The following Java&trade; example deploys a component that is based on a JAR file named *adobe-emailSample-dsc.jar*.
 
 ```java
  /* 
@@ -145,9 +142,9 @@ The following Java example deploys a component that is based on a JAR file named
  
 ```
 
-## Quick Start (SOAP mode): Setting the execution context of a service using the Java API {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
+## Quick Start (SOAP mode): Setting the execution context of a service using the Java&trade; API {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-The following Java code example sets the Run-As Invoker execution context to an example service named *EncryptDocument*.
+The following Java&trade; code example sets the Run-As Invoker execution context to an example service named *EncryptDocument*.
 
 ```java
  /* 
@@ -237,9 +234,9 @@ The following Java code example sets the Run-As Invoker execution context to an 
  
 ```
 
-## Quick Start (SOAP mode): Disabling service security using the Java API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Quick Start (SOAP mode): Disabling service security using the Java&trade; API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
-The following Java code example disables security from the example EncryptDocument service and the services that are invoked from within this service (the Set Value and Encryption services).
+The following Java&trade; code example disables security from the example EncryptDocument service and the services that are invoked from within this service (the Set Value and Encryption services).
 
 ```java
  /* 
@@ -350,9 +347,9 @@ The following Java code example disables security from the example EncryptDocume
  
 ```
 
-## Quick Start (SOAP mode): Starting a service using the Java API {#quick-start-soap-mode-starting-a-service-using-the-java-api}
+## Quick Start (SOAP mode): Starting a service using the Java&trade; API {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-The following Java code example starts a service named *SendEmailService*.
+The following Java&trade; code example starts a service named *SendEmailService*.
 
 ```java
  package com.adobe.sample.servicemanager; 
@@ -408,9 +405,9 @@ The following Java code example starts a service named *SendEmailService*.
  
 ```
 
-## Quick Start (SOAP mode): Modifying a services configuration values using the Java API {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
+## Quick Start (SOAP mode): Modifying a services configuration values using the Java&trade; API {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
 
-The following Java example modifies configuration values that belong to SendEmail Service.
+The following Java&trade; example modifies configuration values that belong to SendEmail Service.
 
 ```java
  /* 
@@ -499,7 +496,7 @@ The following Java example modifies configuration values that belong to SendEmai
              modService.setConfigParameterAsText("smtpUser","smyUserName");     
              modService.setConfigParameterAsText("smtpPassword","myPassword");     
                       
-             //Modify the service’s configuration values 
+             //Modify the service's configuration values 
              serviceReg.modifyConfiguration(modService); 
                           
              //Conform the new configuration values 
@@ -520,9 +517,9 @@ The following Java example modifies configuration values that belong to SendEmai
  
 ```
 
-## Quick Start (SOAP mode): Removing components using the Java API {#quick-start-soap-mode-removing-components-using-the-java-api}
+## Quick Start (SOAP mode): Removing components using the Java&trade; API {#quick-start-soap-mode-removing-components-using-the-java-api}
 
-The following Java code example removes a component by using the Java API.
+The following Java&trade; code example removes a component by using the Java&trade; API.
 
 ```java
  /* 

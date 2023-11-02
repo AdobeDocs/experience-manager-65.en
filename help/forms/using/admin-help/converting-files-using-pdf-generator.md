@@ -1,8 +1,6 @@
 ---
 title: Converting files using PDF Generator
-seo-title: Converting files using PDF Generator
-description: Learn how to convert files using PDF Generator.
-seo-description: Learn how to convert files using PDF Generator.
+description: The PDF Generator service converts native file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference

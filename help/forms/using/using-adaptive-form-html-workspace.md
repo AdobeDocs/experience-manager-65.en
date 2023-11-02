@@ -1,21 +1,17 @@
 ---
 title: Using an adaptive form in HTML Workspace
-seo-title: Using an adaptive form in HTML Workspace
-description: Using an adaptive form in HTML Workspace
-seo-description: Using an adaptive form in HTML Workspace
-uuid: 473d5daf-a3ed-449f-9136-585755b59922
+description: Learn how to use an Adaptive Form in HTML Workspace that lets field workers access the form on their devices.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2b6875cd-2ee7-4aa8-90c7-d33583dc2f0e
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 ---
 # Using an adaptive form in HTML Workspace{#using-an-adaptive-form-in-html-workspace}
 
-AEM Forms on JEE provides the capability of using an adaptive form in HTML Workspace.
+AEM Forms on JEE provide the capability of using an adaptive form in HTML Workspace.
 
-As one can select an XDP during Process design, the capability to browse from an existing adaptive form AEM repository has been added. The capability gives the Process designer the ability to configure an adaptive form in Starting Point as well as in Task.
+As one can select an XDP during Process design, the capability to browse from an existing adaptive form AEM repository has been added. The capability gives the Process Designer the ability to configure an adaptive form in Starting Point and in Task.
 
 ## Process design experience {#process-design-experience}
 
@@ -33,17 +29,17 @@ Because adaptive forms are in the AEM repository, the LiveCycle application expo
 
 HTML Workspace provides some adaptive form-specific controls in addition to controls that are available for mobile forms. A user can add attachments, save, sign, submit, and navigate the adaptive forms in HTML Workspace when the user opens a Task or Start Point. The following are the specifics:
 
-1. To attach files use Task attachments, as was the case in Mobile Forms. Any File Attachment type button of adaptive form is hidden.  
+1. To attach files, use Task attachments, as was the case in Mobile Forms. Any File Attachment type button of adaptive form is hidden.  
 
 1. To save an adaptive form, click **Save**, as was the case in Mobile Forms. Any Save type button of adaptive form is hidden.  
 
 1. To submit an adaptive form, use the **Submit** button or route actions available, as was the case in Mobile Forms. Any Submit type button of adaptive form is hidden.  
 
-1. **Adaptive Form Global toolbar visibility**: If process designer hides the global/top-level toolbar, the toolbar, and the buttons don't appear on adaptive forms.  
+1. **Adaptive Form Global toolbar visibility**: If Process Designer hides the global/top-level toolbar, the toolbar, and the buttons don't appear on adaptive forms.  
 
-1. **Workspace navigation controls for Adaptive Forms**: Next/Previous buttons are available along with save, Submit, and Route Action buttons for an adaptive form in HTML Workspace. Click Next/Previous buttons to navigate panels of adaptive forms in HTML Workspace. The Next/Previous buttons provide deep navigation, similar to navigation controls in the Mobile view of adaptive forms.  
+1. **Workspace navigation controls for Adaptive Forms**: Next/Previous buttons are available along with save, Submit, and Route Action buttons for an adaptive form in HTML Workspace. Click Next/Previous buttons so you can navigate panels of adaptive forms in HTML Workspace. The Next/Previous buttons provide deep navigation, similar to navigation controls in the Mobile view of adaptive forms.  
 
-1. **eSign Services and Summary Component of Adaptive Form**: The Summary component is non-operational in HTML Workspace. In other words, if an adaptive form has a Summary component, it is not visible in workspace. Instead of Auto Submit in the Esign component, the workspace user clicks the Submit or a route action in HTML Workspace. After a document is signed, it is visible as a flat signed document. Click **Submit** or a route action to close/complete the task or Start Point.  
+1. **eSign Services and Summary Component of Adaptive Form**: The Summary component is non-operational in HTML Workspace. In other words, if an adaptive form has a Summary component, it is not visible in workspace. Instead of Auto Submit in the E-sign component, the workspace user clicks the Submit or a route action in HTML Workspace. After a document is signed, it is visible as a flat signed document. Click **Submit** or a route action so you can close/complete the task or Start Point.  
    The signed document is collected from the eSign services server, and the data xml file is forwarded to the next step in the process.
 
 ## Steps to use adaptive forms in process design {#steps-to-use-adaptive-forms-in-process-design}
@@ -54,13 +50,13 @@ HTML Workspace provides some adaptive form-specific controls in addition to cont
 
    ![Create new application](assets/create_new_appl.png)
 
-   Create new application
+   Create application
 
 1. Create a process, or use an existing process in the application.
 
    ![Create new process](assets/create_new_process.png)
 
-   Create new process
+   Create process
 
 1. Create a Start Point or Assign Task and double-click it.
 1. Under the **[!UICONTROL Presentation & Data]** section, select **[!UICONTROL use a CRX asset]** and click the ellipses before the asset.

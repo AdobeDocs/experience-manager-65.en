@@ -1,6 +1,6 @@
 ---
 title: Custom HTTP Headers
-description: Configuring custom HTTP Headers
+description: Learn how to configure custom HTTP Headers in Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 ---
 # Custom HTTP Headers {#custom-http-headers}
@@ -16,7 +16,7 @@ To gain more control over their backend, authors can configure custom HTTP heade
 
 ## Configuration {#configuration}
 
-In order to configure the custom HTTP headers, one must first define them. The custom HTTP headers must first be defined by adding them to the `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` service configuration using an OSGi config.
+To configure the custom HTTP headers, one must first define them. The custom HTTP headers must first be defined by adding them to the `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` service configuration using an OSGi config.
 
 You can configure the values of the HTTP headers in the Cloud Service Configuration page for your project:
 

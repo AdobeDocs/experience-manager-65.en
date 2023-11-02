@@ -1,6 +1,6 @@
 ---
 title: Search Essentials
-description: Search in Communities
+description: Learn about the search feature which is an essential feature of AEM Communities. Communities also provide the search API for user-generated content.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -39,7 +39,7 @@ The [UGC common store](working-with-srp.md) is provided by one of various storag
 
 ### ASRP Searches {#asrp-searches}
 
-For [ASRP](asrp.md), UGC is stored in the Adobe cloud. While UGC is not visible in CRX, [moderation](moderate-ugc.md) is available from both the author and publish environments. The use of the [UGC search API](#ugc-search-api) works for ASRP the same as for other SRPs.
+For [ASRP](asrp.md), UGC is stored in the Adobe cloud. While UGC is not visible in CRX, [moderation](moderate-ugc.md) is available from both the author and Publish environments. The use of the [UGC search API](#ugc-search-api) works for ASRP the same as for other SRPs.
 
 Tools do not currently exist for managing ASRP searches.
 
@@ -47,7 +47,7 @@ When creating custom properties that are searchable, it is necessary to adhere t
 
 ### MSRP Searches {#msrp-searches}
 
-For [MSRP](msrp.md), UGC is stored in MongoDB configured to use Solr for searching. UGC is not visible in CRX, but [moderation](moderate-ugc.md) is available from both the author and publish environments.
+For [MSRP](msrp.md), UGC is stored in MongoDB configured to use Solr for searching. UGC is not visible in CRX, but [moderation](moderate-ugc.md) is available from both the author and Publish environments.
 
 Regarding MSRP and Solr:
 
@@ -62,11 +62,11 @@ When creating custom properties that are searchable, it is necessary to adhere t
 
 ### JSRP Searches {#jsrp-searches}
 
-For [JSRP](jsrp.md), UGC is stored in [Oak](../../help/sites-deploying/platform.md) and is visible only in the repository of the AEM author or publish instance on which it was entered.
+For [JSRP](jsrp.md), UGC is stored in [Oak](../../help/sites-deploying/platform.md) and is visible only in the repository of the AEM Author or Publish instance on which it was entered.
 
-Since UGC is typically entered in the publish environment, for multi-publisher production systems, it is necessary to configure a [publish cluster](topologies.md), not a publish farm, so that the entered content is visible from all publishers.
+Since UGC is typically entered in the Publish environment, for multi-publisher production systems, it is necessary to configure a [publish cluster](topologies.md), not a publish farm, so that the entered content is visible from all publishers.
 
-For JSRP, UGC entered in the publish environment is never visible in the author environment. Therefore, all [moderation](moderate-ugc.md) tasks take place in the publish environment.
+For JSRP, UGC entered in the Publish environment is never visible in the author environment. Therefore, all [moderation](moderate-ugc.md) tasks take place in the Publish environment.
 
 Custom search features should use the [UGC search API](#ugc-search-api).
 

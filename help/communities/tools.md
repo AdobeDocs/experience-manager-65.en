@@ -1,21 +1,17 @@
 ---
 title: Communities Tools
-seo-title: Communities Tools
-description: How to access Communities Tools console
-seo-description: How to access Communities Tools console
-uuid: 3172fe00-7132-4cee-9fd1-b6f96eb43200
+description: Learn how to access Communities Tools console by way of your Author instance.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 role: Admin
 exl-id: ba6c4ad3-c393-42d8-9f1f-d59947c3e7ab
 ---
 # Communities Tools {#communities-tools}
 
-To access the Communities tools console, login your author instance:
+To access the Communities tools console, log in your author instance:
 
 * From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**.
 

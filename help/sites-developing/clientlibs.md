@@ -46,7 +46,7 @@ Each `cq:ClientLibraryFolder` is populated with a set of JS and/or CSS files, al
 
 * `categories`: Identifies the categories into which the set of JS and/or CSS files within this `cq:ClientLibraryFolder` fall. The `categories` property, being multi-valued, allows a library folder to be part of more than one category (see below for how this may be useful).
 
-* `dependencies`: This is a list of other client library categories on which this library folder depends. For example, given two `cq:ClientLibraryFolder` nodes `F` and `G`, if a file in `F` requires another file in `G` in order to function properly, then at least one of the `categories` of `G` should be among the `dependencies` of `F`.
+* `dependencies`: This is a list of other client library categories on which this library folder depends. For example, given two `cq:ClientLibraryFolder` nodes `F` and `G`, if a file in `F` requires another file in `G` to function properly, then at least one of the `categories` of `G` should be among the `dependencies` of `F`.
 
 * `embed`: Used to embed code from other libraries. If node F embeds nodes G and H, the resulting HTML will be a concetration of content from nodes G and H.
 * `allowProxy`: If a client library is located under `/apps`, this property allows acces to it via proxy servlet. See [Locating a Client Library Folder and Using the Proxy Client Libraries Servlet](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) below.
@@ -128,7 +128,7 @@ In previous versions, client library folders were located below `/etc/clientlibs
 
 >[!NOTE]
 >
->In order to better isolate code from content and configuration, it is recommended to locate client libraries under `/apps` and expose them via `/etc.clientlibs` by leveraging the `allowProxy` property.
+>To better isolate code from content and configuration, it is recommended to locate client libraries under `/apps` and expose them via `/etc.clientlibs` by leveraging the `allowProxy` property.
 
 In order for the client libraries under `/apps` to be accessible, a proxy servelt is used. The ACLs are still enforced on the client library folder, but the servlet allows for the content to be read via `/etc.clientlibs/` if the `allowProxy` property is set to `true`.
 

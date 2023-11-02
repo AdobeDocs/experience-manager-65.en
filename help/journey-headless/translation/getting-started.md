@@ -44,7 +44,7 @@ There are a number of requirements before you begin translating your headless AE
 
 * Sandbox access for testing translating your content
 * Credentials to connect to your preferred translation service
-* Be a member of the `project-administrators` group in AEM
+* Be a member of the `projects-administrators` group in AEM
 
 ## Structure is Key {#content-structure}
 
@@ -58,7 +58,7 @@ AEM's content, be it headless or traditional web pages, is driven by its structu
 
 ## How AEM Stores Headless Content {#headless-content-in-aem}
 
-For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM's translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
+For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM's translation tools. Most importantly you need to understand your own content and how it is structured to effectively translate it.
 
 ### Content Models {#content-models}
 
@@ -174,7 +174,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand how AEM stores headless content.
 * Be familiar with AEM's translation tools.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you will learn how to connect AEM to a translation service.|
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure the translation integration](configure-connector.md) where you will learn how to connect AEM to a translation service.|
 
 ## Additional Resources {#additional-resources}
 

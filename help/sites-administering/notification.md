@@ -1,7 +1,7 @@
 ---
 title: Configuring Email Notification
 seo-title: Configuring Email Notification
-description: Learn how to configure Email Notification in AEM.
+description: Learn how to configure email notification in Adobe Experience Manager.
 seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
@@ -256,7 +256,7 @@ When Collections in AEM Assets are shared or unshared, users can receive email n
 
 ## Setting Up OAuth {#setting-up-oauth}
 
-AEM offers OAuth2 support for its integrated Mailer Service, in order to allow organizations to adhere to secure email requirements.
+AEM offers OAuth2 support for its integrated Mailer Service, to allow organizations to adhere to secure email requirements.
 
 You can configure OAuth for multiple email providers, as outlined below.
 

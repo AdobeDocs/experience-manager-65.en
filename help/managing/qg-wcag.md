@@ -1,6 +1,6 @@
 ---
 title: A Quick Guide to WCAG 2.1
-description: A Quick Guide to WCAG 2.1
+description: A Quick Guide to Web Content Accessibility Guidelines (WCAG) version 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 ---
 # A Quick Guide to WCAG 2.1{#quick-guide-to-wcag}
@@ -36,7 +36,7 @@ The intention of WCAG 2.1 is to provide guidelines that:
   Each guideline is written in such a way that it can be objectively tested to ensure that a group of accessibility experts would generally agree that the guideline has been met. One of the challenges of accessibility guidelines is that while some can be technically testable, others require human judgment to ascertain whether or not the guideline has been successfully met. 
 
 * Support **prioritized and contextual implementation:**
-  WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
+  WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers to benefit from accessibility features.
 
 These aims have significantly influenced the structure of WCAG 2.1.
 

@@ -9,12 +9,12 @@ Learn how to define translation rules to identify content for translation.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM headless translation journey, [Configure translation connector](configure-connector.md) you learned how to install and configure your translation connector and should now:
+In the previous document of the AEM headless translation journey, [Configure translation integration](configure-connector.md) you learned how to install and configure your translation integration and should now:
 
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
+Now that your integration is set up, this article takes you through the next step of identifying what content you need to translate.
 
 ## Objective {#objective}
 
@@ -62,7 +62,7 @@ In the **Translation Configuration** UI, there are a number of options available
 1. AEM saves the configuration.
 1. You must select the context you just created and then tap or click **Edit**. This opens the **Translation Rules Editor** to configure the properties.
 ![Translation rules editor](assets/translation-rules-editor.png)
-1. By default all configurations are inherited from the parent path, in this case `/content/dam`. Uncheck the option **Inherit from `/content/dam`** in order to add additional fields to the configuration.
+1. By default all configurations are inherited from the parent path, in this case `/content/dam`. Uncheck the option **Inherit from `/content/dam`** to add additional fields to the configuration.
 1. Once unchecked, under the **General** section of the list, add the property names of the Content Fragment Model(s) that you [previously identified as fields for translation.](getting-started.md#content-models)
    1. Enter the property name in the **New Property** field.
    1. The options **Translate** and **Inherit** are checked automatically.
@@ -86,7 +86,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand what the translation rules do.
 * Be able to define your own translation rules.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content](translate-content.md) where you will learn how your connector and rules work together to translate headless content.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content](translate-content.md) where you will learn how your integration and rules work together to translate headless content.
 
 ## Additional Resources {#additional-resources}
 

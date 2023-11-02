@@ -1,6 +1,6 @@
 ---
 title: Integration with Adobe Sign | Handling user data
-description: Integration with Adobe Sign | Handling user data
+description: Learn AEM Forms integration with Adobe Sign for e-signatures in adaptive forms. It supports multiple signing options for various workflows.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Acrobat Sign

@@ -1,6 +1,6 @@
 ---
 title: Same Site Cookie Support for AEM 6.5
-description: Same Site Cookie Support for AEM 6.5
+description: Learn about the Same Site Cookie Support for AEM 6.5.
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
 ---
@@ -10,7 +10,7 @@ Since version 80, Chrome, and later Safari, introduced a new model for cookie se
 
 The default value of this setting (`SameSite=Lax`) might cause authentication between AEM instances or services to not work. This is because the domains or URL structures of these services might not fall under the constraints of this cookie policy.
 
-In order to get around this, you need to set the `SameSite` cookie attribute to `None` for the login token.
+To get around this, you need to set the `SameSite` cookie attribute to `None` for the login token.
 
 >[!CAUTION]
 >

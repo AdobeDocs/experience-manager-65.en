@@ -1,6 +1,6 @@
 ---
 title: Managing local credentials
-description: Learn how to manage local credentials.
+description: Learn how to manage local credentials using the Trust Store Management. AEM forms support RSA and DSA credentials in standard PKCS12 form.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials

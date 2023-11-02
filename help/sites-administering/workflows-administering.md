@@ -1,14 +1,10 @@
 ---
 title: Administering Workflow Instances
-seo-title: Administering Workflow Instances
-description: Lear how to administer Workflow Instances.
-seo-description: Lear how to administer Workflow Instances.
-uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
+description: Learn how the workflow console provides several tools for administering workflow instances to ensure that they are running as expected.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 ---
 # Administering Workflow Instances{#administering-workflow-instances}
@@ -31,7 +27,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 ## Monitoring the Status of Workflow Instances {#monitoring-the-status-of-workflow-instances}
 
 1. Using Navigation select **Tools**, then **Workflow**.
-1. Select **Instances** to display the list of workflow instances currently in progress.
+1. Select **Instances** so you can display the list of workflow instances currently in progress.
 
    ![wf-96](assets/wf-96.png)
 
@@ -60,7 +56,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 ## Suspending, Resuming, and Terminating a Workflow Instance {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. Using Navigation select **Tools**, then **Workflow**.
-1. Select **Instances** to display the list of workflow instances currently in progress.
+1. Select **Instances** so you can display the list of workflow instances currently in progress.
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -71,7 +67,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 ## Viewing Archived Workflows {#viewing-archived-workflows}
 
 1. Using Navigation select **Tools**, then **Workflow**.
-1. Select **Archive** to display the list of workflow instances that completed successfully.
+1. Select **Archive** so you can display the list of workflow instances that completed successfully.
 
    ![wf-98](assets/wf-98.png)
 
@@ -80,7 +76,7 @@ A range of consoles are available for administering your workflows. Use the [glo
    >The abort status is considered as a successful termination as it occurs as a result of user action; for example:
    >
    >* use of the **Terminate** action
-   >* when a page, that is subject to a workflow, is (force) deleted, then the workflow will be terminated
+   >* when a page that is subject to a workflow is (force) deleted, the workflow is terminated
 
 1. Select a specific item, then **Open History** to see more details:
 
@@ -96,14 +92,14 @@ When a workflow fails, AEM provides the **Failures** console to let you investig
 * **Open History**
   Shows details of the workflow history.
 
-* **Retry Step** Executes the Script Step component instance again. Use the Retry Step command after you have fixed the cause of the original error. For example, retry the step after you fix a bug in the script that the Process Step executes.
-* **Terminate** Terminate the workflow if the error has caused an irreconcilable situation for the workflow. For example, the workflow can rely on environmental conditions such as information in the repository that are no longer valid for the workflow instance.
-* **Terminate and Retry** Similar to **Terminate** except that a new workflow instance is started using the original payload, title, and description.
+* **Retry Step** &ndash; Runs the Script Step component instance again. Use the Retry Step command after you have fixed the cause of the original error. For example, retry the step after you fix a bug in the script that the Process Step executes.
+* **Terminate** &ndash; Terminate the workflow if the error has caused an irreconcilable situation for the workflow. For example, the workflow can rely on environmental conditions such as information in the repository that are no longer valid for the workflow instance.
+* **Terminate and Retry** &ndash; Similar to **Terminate** except that a new workflow instance is started using the original payload, title, and description.
 
 To investigate failures, then resume or terminate the workflow afterwards, use the following steps:
 
 1. Using Navigation select **Tools**, then **Workflow**.
-1. Select **Failures** to display the list of workflow instances that did not complete successfully.
+1. Select **Failures** so you can display the list of workflow instances that did not complete successfully.
 1. Select a specific item, then the appropriate action:
 
    ![wf-47](assets/wf-47.png)
@@ -114,9 +110,9 @@ Minimizing the number of workflow instances increases the performance of the wor
 
 Configure **Adobe Granite Workflow Purge Configuration** to purge workflow instances according to their age and status. You can also purge workflow instances of all models or of a specific model.
 
-You can also create multiple configurations of the service to purge workflow instances that satisfy different criteria. For example, create a configuration that purges the instances of a particular workflow model when they are running for much longer than the expected time. Create another configuration that purges all completed workflows after a certain number of days to minimize the size of the repository.
+You can also create multiple configurations of the service to purge workflow instances that satisfy different criteria. For example, create a configuration that purges the instances of a particular workflow model when they are running for longer than the expected time. Create another configuration that purges all completed workflows after a certain number of days to minimize the size of the repository.
 
-To configure the service, you can use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or [add an OSGi configuration to the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). The following table desribes the properties that you need for either method.
+To configure the service, you can use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or [add an OSGi configuration to the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). The following table describes the properties that you need for either method.
 
 >[!NOTE]
 >
@@ -157,7 +153,7 @@ To configure the service, you can use the [Web Console](/help/sites-deploying/co
   <tr>
    <td>Workflow Age</td>
    <td>scheduledpurge.daysold</td>
-   <td>The age of the workflow instances to purge, in days.</td>
+   <td>The age of the workflow instances to purge in days.</td>
   </tr>
  </tbody>
 </table>
@@ -176,15 +172,15 @@ You can set the maximum size of the inbox by configuring the **Adobe Granite Wor
 |---|---|
 | Max Inbox Query Size |granite.workflow.inboxQuerySize |
 
-## Using Workflow variables for customer owned datastores {#using-workflow-variables-customer-datastore}
+## Using Workflow variables for customer-owned datastores {#using-workflow-variables-customer-datastore}
 
-Data processed by workflows is stored in the Adobe provided storage (JCR). This data can be sensitive in nature. You may want to save all the user defined metadata/data in your own managed storage instead of Adobe provided storage. These sections describe how to set up these variables for external storage.
+Data processed by workflows is stored in the Adobe provided storage (JCR). This data can be sensitive in nature. You may want to save all the user-defined metadata/data in your own managed storage instead of Adobe provided storage. These sections describe how to set up these variables for external storage.
 
 ### Set the model to use external storage of metadata {#set-model-for-external-storage}
 
-At the level of workflow model, a flag is provided to indicate that the model (and its runtime instances) has external storage of metadata. Workflow variables will not be persisted in JCR for the workflow instances of the models marked for external storage. 
+At the level of workflow model, a flag is provided to indicate that the model (and its runtime instances) has external storage of metadata. Workflow variables are not persisted in JCR for the workflow instances of the models marked for external storage. 
 
-The property *userMetadataPersistenceEnabled* will be stored on the *jcr:content node* of the workflow model. This flag will be persisted in workflow metadata as *cq:userMetaDataCustomPersistenceEnabled*.
+The property *userMetadataPersistenceEnabled* is stored on the *jcr:content node* of the workflow model. This flag is persisted in workflow metadata as *cq:userMetaDataCustomPersistenceEnabled*.
 
 The illustration below shows how to set the flag on a workflow.
 
@@ -192,7 +188,7 @@ The illustration below shows how to set the flag on a workflow.
 
 ### APIs for metadata in external storage {#apis-for-metadata-external-storage}
 
-In order to store the variables externally you must implement the APIs that the workflow exposes.
+To store the variables externally, implement the APIs that the workflow exposes.
 
 UserMetaDataPersistenceContext
 

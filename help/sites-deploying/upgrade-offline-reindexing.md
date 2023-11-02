@@ -95,7 +95,7 @@ For more details around the text extraction process, see the [Oak-run documentat
 
 Create the Lucene index offline before the upgrade. If using MongoMK, it is recommended to run it directly on one of the MongoMk nodes, as this avoids network overhead.
 
-In order to create the index offline, please follow the below steps:
+To create the index offline, please follow the below steps:
 
 **1. Generate Oak Lucene index definitions for the target AEM version**
 

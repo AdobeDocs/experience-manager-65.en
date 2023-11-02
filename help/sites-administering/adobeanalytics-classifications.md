@@ -1,8 +1,8 @@
 ---
 title: Adobe Classifications
 seo-title: Adobe Classifications
-description: Learn about Adobe Classifications.
-seo-description: Learn about Adobe Classifications.
+description: Learn how to use Adobe Classifications to export classifications data to Adobe Analytics.
+seo-description: Learn how to use Adobe Classifications to export classifications data to Adobe Analytics.
 uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES

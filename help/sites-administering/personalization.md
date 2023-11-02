@@ -1,7 +1,7 @@
 ---
 title: Personalization
 seo-title: Personalization
-description: Learn about personalization in AEM.
+description: Learn about personalization in Adobe Experience Manager to provide the user with a tailor-made environment displaying dynamic content.
 seo-description: Learn about personalization in AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino

@@ -1,7 +1,7 @@
 ---
 title: Sling Cheatsheet
 seo-title: Sling Cheatsheet
-description: An easy Sling reference
+description: Learn about Apache Sling, an Adobe Experience Manager foundational technology, using this reference diagram.
 seo-description: An easy Sling reference
 uuid: 8e5e90da-2e97-45a4-be06-91e5e07e5bed
 contentOwner: Guillaume Carlino

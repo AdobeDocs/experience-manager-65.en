@@ -190,7 +190,7 @@ Perform the following steps to show and hide templates:
 1. Locate and open the **FormsManager Configuration** settings:
 
     * To show or hide out of the box adaptive forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
-    * To show or hide out of the box adaptive form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
+    * To show or hide out of the box adaptive form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed.
 

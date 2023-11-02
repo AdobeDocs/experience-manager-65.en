@@ -27,7 +27,7 @@ A user with administrator access in [!DNL Adobe Experience Manager] configures t
 
 ## Configure event subscriptions {#event-subscriptions}
 
-Event subscriptions are used to notify AEM of events that take place in [!DNL Adobe Workfront]. There are three [!DNL Workfront for Experience Manager enhanced connector] features that need event subscriptions in order to work, these are:
+Event subscriptions are used to notify AEM of events that take place in [!DNL Adobe Workfront]. There are three [!DNL Workfront for Experience Manager enhanced connector] features that need event subscriptions to work, these are:
 
 * Automatic creation of project linked folders.
 * Synchronization of changes in Workfront document custom form values to AEM asset metadata.
@@ -56,9 +56,9 @@ To subscribe to the events, follow these steps:
 1. Linked folder structure: Enter comma-separated values. Each value should be `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name, or some "Literal String Value" (this last one with quotation marks). It is currently set to Portfolio,Program,Year,DE:Project Type,Name.
 1. Build linked folder title in Workfront using the folder structure names checkbox should be checked if the title of the folder in Workfront should include all folders in the structure. Otherwise, it will be the title of the last folder.
 1. Sub-folders multifield lets you specify a list of folders that should be created as a child folder of the linked folder.
-1. Project status: Select the status the project has to be set to in order to create the linked folder.
-1. Create a linked folder in projects with portfolio: List of Portfolios that the project has to belong to in order to create the linked folder. Leave this list empty to create the linked folder for all project portfolio.
-1. Create a linked folder in projects with custom form field: Custom form field and its corresponding value that the project has to have in order to create the linked folder. This configuration will be ignored if left empty. Select `CUSTOM FORMS: Create DAM Linked Folder` for the field and input `Yes` for the value.
+1. Project status: Select the status of the project to create the linked folder.
+1. Create a linked folder in projects with portfolio: List of Portfolios to which the project must belong to create the linked folder. Leave this list empty to create the linked folder for all project portfolio.
+1. Create a linked folder in projects with custom form field: Custom form field and its corresponding value that the project has to have to create the linked folder. This configuration will be ignored if left empty. Select `CUSTOM FORMS: Create DAM Linked Folder` for the field and input `Yes` for the value.
 1. Click on Enable automatic creation of linked folders. If you go back to the Event Subscriptions tab, you'll see there is now one create event.
 
 ![linked folder configuration](/help/assets/assets/wf-linked-folder-config.png)
@@ -71,6 +71,7 @@ Metadata mapping between Workfront Projects and AEM Folders is defined within AE
 
 To configure the mappings, follow these steps:
 
+1. Add `jcr:read` permissions to `/conf/global/settings/dam/adminui-extension/foldermetadataschema` for `wf-workfront-users` group.
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Select the folder metadata schema form you wish to edit and click Edit.
 1. Select the folder metadata schema form field you wish to edit and select Settings tab on the right panel.

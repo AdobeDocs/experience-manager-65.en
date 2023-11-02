@@ -1,8 +1,6 @@
 ---
 title: AEM 6.5 Best Practices
-seo-title: AEM 6.5 Best Practices
-description: Resources for best practices, troubleshooting and training for AEM 6.5
-seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
+description: Resources for best practices, troubleshooting and training for AEM 6.5.
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
 ---
 # AEM 6.5 Best Practices {#aem-65-best-practices}

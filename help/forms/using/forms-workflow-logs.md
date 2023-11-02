@@ -1,19 +1,15 @@
 ---
 title: Logging in AEM Forms workflows
-seo-title: Logging in AEM Forms workflows
-description: Use logs to debug AEM Forms workflow issues.
-seo-description: Use logs to debug AEM Forms workflow issues.
-uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
+description: Learn how to debug AEM Forms Workflow issues and enable debug logging for AEM Forms workflows to view the logs.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
 ---
 # Logging in AEM Forms workflows{#logging-in-aem-forms-workflows}
 
-Forms workflow steps provide detailed logs to debug workflow-related issues conveniently. Enable debug logging for AEM Forms workflows to view the logs.
+Forms Workflow steps provide detailed logs to debug workflow-related issues conveniently. Enable debug logging for AEM Forms workflows to view the logs.
 
 By default, all logging information is available in the **error.log** file at the */crx-repository/logs/* directory.
 
@@ -64,7 +60,7 @@ The following example illustrates the logs for the Sign Document step:
 
 Use the logs to evaluate that:
 
-* You are using a correct adobe sign configuration.
+* You are using a correct Adobe Sign configuration.
 * The Adobe Sign Service exits after creating an agreement successfully.  
 * The Sign Document step exits with a success message.
 
@@ -72,7 +68,7 @@ If there is an exception, you can view the complete stack trace to evaluate the 
 
 ## Enable debug logging for AEM Forms workflows {#enable-debug-logging-for-aem-forms-workflows}
 
-Perform the following steps to enable debug logging for AEM Forms workflows:
+Do the following so you can enable debug logging for AEM Forms workflows:
 
 1. Go to AEM web console configuration manager at:
 

@@ -740,7 +740,7 @@ Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup scri
 
 **Referrer Filtering for Custom WAR files**
 
-You may have created custom WAR files to work with AEM Forms on JEE in order to meet your business requirements. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the* web.xml* file with the following parameters:
+You may have created custom WAR files to work with AEM Forms on JEE to meet your business requirements. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the* web.xml* file with the following parameters:
 
 **CSRF_CHECK_GETS** controls the Referrer check on GET requests. If this parameter is not defined, the default value is set to false. Include this parameter only if you want to filter your GET requests.
 

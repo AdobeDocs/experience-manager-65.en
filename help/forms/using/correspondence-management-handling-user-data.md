@@ -1,11 +1,8 @@
 ---
 title: Correspondence Management | Handling user data
-seo-title: Correspondence Management | Handling user data
-description: Correspondence Management | Handling user data
-uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
+description: Learn about Correspondence Management and handling user data in an Adobe Experience Manager Forms environment.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
 ---
@@ -68,7 +65,7 @@ You can access draft and submitted correspondence data in the configured data st
 
 Correspondence management provides APIs that you can use to find and access draft and submitted letter instances. Using the APIs, you can find and open letter instances using the letter instance ID or the user who saved or submitted the correspondence. For more information, see [APIs to access letter instances](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Alternatively, you can navigate to the letter instance in AEM repository using CRX DELite. See [User data and data stores](/help/forms/using/correspondence-management-handling-user-data.md#data) for information about stored data and repository location.
+Alternatively, you can navigate to the letter instance in AEM repository using CRXDE Lite. See [User data and data stores](/help/forms/using/correspondence-management-handling-user-data.md#data) for information about stored data and repository location.
 
 ### Delete user data {#delete-user-data}
 

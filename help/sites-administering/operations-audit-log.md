@@ -1,8 +1,8 @@
 ---
 title: Audit Log Maintenance in AEM 6
 seo-title: Audit Log Maintenance in AEM 6
-description: Lear about Audit Log Maintenance in AEM.
-seo-description: Lear about Audit Log Maintenance in AEM.
+description: Learn about Audit Log Maintenance in Adobe Experience Manager (AEM).
+seo-description: Learn about Audit Log Maintenance in Adobe Experience Manager (AEM).
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -32,7 +32,7 @@ Each can be configured by creating rules in the AEM Web Console. After they have
 
 ## Configure Page Audit Log Purging {#configure-page-audit-log-purging}
 
-Follow these steps in order to configure Audit Log Purging:
+Follow these steps to configure Audit Log Purging:
 
 1. Go to the Web Console Admin by pointing your browser to `http://localhost:4502/system/console/configMgr/`
 
@@ -52,7 +52,7 @@ Follow these steps in order to configure Audit Log Purging:
    >The content path only applies to children of the `/var/audit/com.day.cq.wcm.core.page` node in the repository.
 
 1. Save the rule.
-1. The rule you just created needs to be exposed in the Operations Dashboard in order for it to be executed. In order to do this, go **Tools - Operations - Maintenance** from the AEM Welcome screen.
+1. The rule you just created needs to be exposed in the Operations Dashboard in order for it to be executed. To do this, go **Tools - Operations - Maintenance** from the AEM Welcome screen.
 
 1. Press the **Weekly Maintenance Window** card.
 

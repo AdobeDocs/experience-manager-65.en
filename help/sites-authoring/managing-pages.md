@@ -1,6 +1,6 @@
 ---
 title: Creating and organizing pages with AEM
-description: How to create and manage pages with AEM
+description: Learn how to create and manage pages with Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 ---
 # Creating and Organizing Pages {#creating-and-organizing-pages}
@@ -88,7 +88,7 @@ When creating a new page there are two keys fields:
 
 The page **Title** and **Name** can be created separately but are related:
 
-* When creating a page, only the **Title** field is required. If no **Name** is provided at page creation, AEM will generate a name from the first 64 characters of the title (observing the validation set out below). Only the first 64 characters are used in order to support the best practice of short page names.
+* When creating a page, only the **Title** field is required. If no **Name** is provided at page creation, AEM will generate a name from the first 64 characters of the title (observing the validation set out below). Only the first 64 characters are used to support the best practice of short page names.
 
 * If a page name is manually specified by the author, the 64 character limit does not apply, however other technical limitations on the page name length may.
 
@@ -372,18 +372,13 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 #### Asynchronous Actions {#asynchronous-actions}
 
-Normally a page move or rename action is carried out immediately. This is considered synchronous processing and further action in the UI is blocked until the action is complete.
+Page move actions are always processed asynchronously, allowing the user to continue authoring in the UI unimpeded.
 
-However, if the number of pages impacted is above a defined limit, the action will be processed asynchronously, allowing the user to continue authoring in the UI unimpeded by the page move or rename action.
+* The user must define when the asynchronous operation should be performed
+  * **Now** begins the execution of the asynchronous job immediately.
+  * **Later** allows the user to define when the asynchronous job will start.
 
-* When clicking **Move** in the last step above, AEM checks the configured limit.
-* If the number of pages impacted is below the limit, it performs a synchronous operation.
-* If the number of pages impacted is above the limit, it performs an asynchronous operation.
-  * The user must define when the asynchronous operation should be performed
-    * **Now** begins the execution of the asynchronous job immediately.
-    * **Later** allows the user to define when the asynchronous job will start.
-
-      ![Asynchronous page move](assets/asynchronous-page-move.png)
+  ![Asynchronous page move](assets/asynchronous-page-move.png)
 
 The status of asynchronous jobs can be checked in the [**Async Jobs Status** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
 

@@ -1,9 +1,9 @@
 ---
-title: Configure the Translation Connector
+title: Configure the Translation Integration
 description: Learn how to connect AEM to a translation service.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 ---
-# Configure the Translation Connector {#configure-connector}
+# Configure the Translation Integration {#configure-integration}
 
 Learn how to connect AEM to a translation service.
 
@@ -19,7 +19,7 @@ This article builds on those fundamentals so you can take the first configuratio
 
 ## Objective {#objective}
 
-This document helps you understand how to set up an AEM connector to your chosen translation service. After reading you should:
+This document helps you understand how to set up an AEM integration to your chosen translation service. After reading you should:
 
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
@@ -52,7 +52,7 @@ If you choose another provider your administrator must install the connector pac
 >
 >If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections: [Creating a Translation Integration Configuration](#create-config) and [Associate the Configuration with Your Content.](#associate) However you are advised to read them so that you are familiar with the steps for when you need to configure your preferred connector.
 >
->The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, the system administrator must follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document in order to configure that license.
+>The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, the system administrator must follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document to configure that license.
 
 ## Creating a Translation Integration Configuration {#create-config}
 

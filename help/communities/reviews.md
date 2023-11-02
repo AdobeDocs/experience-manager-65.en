@@ -1,14 +1,10 @@
 ---
 title: Using Reviews and Reviews Summary (Display)
-seo-title: Using Reviews and Reviews Summary (Display)
-description: Adding the Reviews and Reviews Summary components to a page
-seo-description: Adding the Reviews and Reviews Summary components to a page
-uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
+description: Learn how to add the Reviews and Reviews Summary components to a page.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
 ---
 # Using Reviews and Reviews Summary (Display) {#using-reviews-and-reviews-summary-display}
@@ -19,7 +15,7 @@ The `Reviews Summary (Display)` component provides a summary of an active or clo
 
 >[!NOTE]
 >
->Anonymous posting of a review is not supported. Site visitors must register (become a member) and sign in to participate. The signed in visitor may update their review at any time.
+>Anonymous posting of a review is not supported. Site visitors must register (become a member) and sign in to participate. The signed-in visitor may update their review at any time.
 
 ## Adding a Review to a Page {#adding-a-review-to-a-page}
 
@@ -27,13 +23,13 @@ To add a `Reviews` component to a page in author mode, use the component browser
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews` component will appear.
+When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews` component appears.
 
 ![create-review](assets/create-review.png)
 
 ## Configuring Reviews {#configuring-reviews}
 
-Select the placed `Reviews` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Reviews` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure-new](assets/configure-new.png)
 
@@ -49,9 +45,9 @@ Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of rat
 
   Click **[!UICONTROL Add Item]** to add another rating choice.
 
-Under the **[!UICONTROL Required Ratings]** tab, re-enter items from the list of **[!UICONTROL Allowed Ratings]** that are required to be rated. If an item is only specified on the Allowed Ratings tab, it may be left unmarked when submitted by the member.
+Under the **[!UICONTROL Required Ratings]** tab, reenter items from the list of **[!UICONTROL Allowed Ratings]** that are required for rating. If an item is only specified on the Allowed Ratings tab, it may be left unmarked when submitted by the member.
 
-On the website, required ratings are marked with an asterisk. If an item is required and left unmarked, a message is displayed to the member and the submission is denied until all required ratings are marked.
+On the website, required ratings are marked with an asterisk. If an item is required and left unmarked, a message is displayed to the member, and the submission is denied until all required ratings are marked.
 
 ![required-rating](assets/configure-review2.png)
 
@@ -93,7 +89,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **[!UICONTROL Allowed File Types]**
   
-  Relevant only if **[!UICONTROL Allow File Uploads]** is checked. A comma separated list of file extensions with the "dot" separater. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed. Default is none specified such that all file types are allowed.
+  Relevant only if **[!UICONTROL Allow File Uploads]** is checked. A comma-separated list of file extensions with the "dot" separator. For example, .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified are not allowed. Default is none specified such that all file types are allowed.
 
 * **[!UICONTROL Rich Text Editor]**
   
@@ -109,11 +105,11 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews a
 
 * **[!UICONTROL Pre-Moderation]**
   
-  If checked, reviews must be approved before they will appear on a publish site. Default is unchecked.
+  If checked, reviews must be approved before they appear on a publish site. Default is unchecked.
 
 * **[!UICONTROL Delete Reviews]**
   
-  If checked, the member who posted the review is provided the ability to delete it. Default is unchecked.
+  If checked, the member who posted the review can delete it. Default is unchecked.
 
 * **[!UICONTROL Deny Reviews]**
   
@@ -149,11 +145,11 @@ To add a `Reviews Summary (Display)` component to a page in author mode, locate 
 
 * `Communities / Reviews Summary (Display)`
 
-and drag it into place on a page where a summary of an active or closed review is to be displayed.
+And drag it into place on a page where a summary of an active or closed review is to be displayed.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews Summary (Display)`component will appear.
+When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews Summary (Display)`component appears.
 
 ![review-summary](assets/configure-review5.png)
 
@@ -163,7 +159,7 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 
 ### Configuring Reviews Summary (Display) {#configuring-reviews-summary-display}
 
-Select the placed `Reviews Summary (Display)` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Reviews Summary (Display)` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure](assets/configure-new.png)
 
@@ -173,21 +169,21 @@ Under the **[!UICONTROL Review Summary]** tab
 
 * `Review Path`
 
-  enter or browse to the placed instance of the `reviews`component to summarize, for example, if added to the Web Page of the [Geometrixx Engage site,](getting-started.md) the path would be:
+  Enter or browse to the placed instance of the `reviews` component so you can summarize, for example, if added to the Web Page of the [Geometrixx Engage site,](getting-started.md) the path would be:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-  If checked, include the display of a bar graph indicating how many of each star rating there are in the reviews being summarized. Default is unchecked.
+  If checked, include the display of a bar graph indicating how many star ratings there are in the reviews being summarized. Default is unchecked.
 
 ### Changing to a Custom Review Type {#changing-to-a-custom-review-type}
 
 The Reviews component uses the Comment System.
 
-By changing the Comment Resource Type, the comment system will no longer generate an instance of a comment using the default, but rather one that has been customized (extended) by developers.
+By changing the Comment Resource Type, the comment system no longer generates an instance of a comment using the default, but rather one that has been customized (extended) by developers.
 
-Once the custom resource types is known, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double-click on the placed `Comments` component to open a dialog with an additional tab.
+When the custom resource types are known, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double-click the placed `Comments` component to open a dialog with an additional tab.
 
 Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting` components:
 
@@ -197,13 +193,13 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
   Navigate to the resourceType of an extended `comment`component (single comment) in /apps. For example, `/apps/social/commons/components/hbs/comments/comment`.
 
-  This resource will identify the resourceType of the UGC created when a visitor posts a comment.
+  This resource identifies the resourceType of the UGC created when a visitor posts a comment.
 
 * **[!UICONTROL Voting Resource Type]**
 
   Navigate to the resourceType of an extended `voting`component in /apps. For example, `/apps/social/components/hbs/voting`.
 
-  This resource will identify the resource type of the UGC created when a visitor posts a vote.
+  This resource identifies the resource type of the UGC created when a visitor posts a vote.
 
 * **[!UICONTROL Comment System Resource Type]**
 

@@ -28,7 +28,7 @@ This document covers the following topics:
 
 ## Requirements {#requirements}
 
-In order to make the most of this document, you need to have a solid understanding of the AEM Forms on JEE software.
+To make the most of this document, you need to have a solid understanding of the AEM Forms on JEE software.
 
 >[!MORELIKETHIS]
 >

@@ -1,7 +1,7 @@
 ---
 title: Interacting with Workflows Programmatically
 seo-title: Interacting with Workflows Programmatically
-description: Interacting with Workflows Programmatically
+description: Learn how to interact with workflows programmatically in Adobe Experience Manager.
 seo-description: null
 uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
@@ -242,7 +242,7 @@ Where `*{uri}*` is the path to the model node in the repository.
   </tr>
   <tr>
    <td><code>DELETE</code></td>
-   <td>Deletes the model. In order to solve firewall/proxy issues a <code>POST</code> that contains an <code>X-HTTP-Method-Override</code> header entry with value <code>DELETE</code> will also be accepted as <code>DELETE</code> request.</td>
+   <td>Deletes the model. To solve firewall/proxy issues a <code>POST</code> that contains an <code>X-HTTP-Method-Override</code> header entry with value <code>DELETE</code> will also be accepted as <code>DELETE</code> request.</td>
   </tr>
  </tbody>
 </table>

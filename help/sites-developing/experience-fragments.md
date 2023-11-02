@@ -1,6 +1,6 @@
 ---
 title: Experience Fragments in Adobe Experience Manager Sites development
-description: Learn about customizing Experience Fragments.
+description: Learn how to customize Experience Fragments for Adobe Experience Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -208,7 +208,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 To use the interface, you first need to create a bundle containing a new service component that implements the Link Rewriter Provider interface.
 
-This service is used to plug into the Experience Fragment Export to Target rewriting in order to have access to the various links.
+This service is used to plug into the Experience Fragment Export to Target rewriting to have access to the various links.
 
 For example, `ComponentService`:
 

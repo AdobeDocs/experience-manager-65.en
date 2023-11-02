@@ -1,7 +1,6 @@
 ---
 title: Install workbench
-seo-title: Install workbench
-description: Install workbench.
+description: Learn how to install, uninstall, configure, administer, or deploy AEM Forms Workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
@@ -80,9 +79,9 @@ Disk space for installation:
 >
 >If all these locations reside on a single drive, there must be 1.5 GB of space available during installation. The files copied to the temporary directories are deleted when installation is complete.
 
-* Hardware requirement: Intel&reg; Pentium&reg; 4 or AMD&reg; equivalent, 1 GHz processor.
+* Hardware requirement: Intel&reg; Pentium&reg; 4 or AMD&reg; equivalent, 1-GHz processor.
 * Java&trade; Runtime Environment (JRE) 7.0 update 51 or later updates to 7.0.
-* Minimum1024 X 768 pixels or greater monitor resolution with 16-bit color or higher.
+* Minimum 1024 X 768 pixels or greater monitor resolution with 16-bit color or higher.
 * TCP/IPv4 or TCP/IPv6 network connection to the AEM Forms Server.
 * Install Visual C++ Redistributable runtime Packages 2012 32-bit.
 * Install Visual C++ Redistributable runtime Packages 2013 32-bit.
@@ -115,7 +114,7 @@ Different versions of Designer can coexist on the same system, for example Desig
   </tr>
   <tr>
    <td><p>Designer (stand-alone)</p> </td>
-   <td><p>None. <br />The version of Designer included with Workbench is English-only. <br />The Workbench installer will not reinstall a new version of Designer. Instead an updated version, bundled with the Workbench installer, will be patched. This also lets you use your localized version of Designer within Workbench.<br /> </p> </td>
+   <td><p>None. <br />The version of Designer included with Workbench is English-only. <br />The Workbench installer does not reinstall a new version of Designer. Instead, an updated version, bundled with the Workbench installer, is patched. This also lets you use your localized version of Designer within Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -163,7 +162,7 @@ Before you install Workbench, you must ensure that your environment includes the
    >The installation directory path should not contain # (pound) and $ (dollar) characters.
 
 1. Review the preinstallation summary and click Install. The installation program displays the progress of the installation.
-1. Review the installation summary. Select Start AEM Forms Workbench to launch Workbench and click Next.
+1. Review the installation summary. Select Start AEM Forms Workbench so you can launch Workbench, then click Next.
 1. Review the Release Notes and click Done.
 1. The following items are now installed on your computer:
    * **Workbench**: To run Workbench from the Start menu, select All Programs > AEM Forms > Workbench, if you chose to store the shortcut folder there. For  information,   see the <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Using Workbench</a> documentation.
@@ -180,7 +179,7 @@ To use Workbench, you must have an instance of AEM Forms running, typically on a
 
 >[!NOTE]
 >
->If you configured AEM Forms to use the EMC Documentum&reg; or IBM&reg; FileNet repository provider and you want to log in to a repository other than the repository that is configured as the default in AEM forms administration console, provide the user name as username@Repository.
+>If you configured AEM Forms to use the EMC Documentum&reg; or IBM&reg; FileNet Repository Provider and you want to log in to a repository other than the repository that is configured as the default in AEM forms administration console, provide the user name as username@Repository.
 
 ### Configuring time-out settings {#configuring-timeout-settings}
 
@@ -201,7 +200,7 @@ Ensure that you connect to HTTPS by using the name that is specified in the cert
 
    >[!NOTE]
    >
-   >To export the certificate, open a web browser and log in to administration console, install the certificate in the browser, then export the certificate from the browser to a temporary storage location (or directly to the [Workbench_HOME]/workbench/jre/lib/security directory).
+   >To export the certificate, open a web browser and log in to administration console. Install the certificate in the browser, then export the certificate from the browser to a temporary storage location (or directly to the [Workbench_HOME]/workbench/jre/lib/security directory).
 
 1. Copy the certificate to the [Workbench_HOME]/workbench/jre/lib/security directory.
 
@@ -220,7 +219,7 @@ Ensure that you connect to HTTPS by using the name that is specified in the cert
 
 The following aspects of cache operation should be considered if your application generates unique templates on the fly by automatically updating XFA content. In effect, each transaction uses a new, unique template.
 
-When forms generator or output searches for, or updates, entries in the cache for a specific form template, it uses several key values to locate the specific cache entry that will be accessed.
+When forms generator or output searches for, or updates, entries in the cache for a specific form template, it uses several key values to locate the specific cache entry that is accessed.
 
 * **Template file name**: The location and filename of the template used as the primary unique identifier of the cached form.
 * **Timestamp**: The template file contains a timestamp used to determine the last update time of the form.
@@ -233,18 +232,21 @@ When forms generator or output searches for, or updates, entries in the cache fo
 
 
 The Forms service receives templates by reference to filename or repository location, or by value as an XML object in memory.
+
 * **Templates passed by reference**: Uses the content root and the form name. If unique templates with different filenames are passed in every request using this method, the disk cache grows endlessly and is never reused. To prevent this, unique templates should be passed with same filename to ensure that same cache is updated for all requests.
-* **Templates passed by value**: Uses template bytes passed along with the data using theinDataDoc parameter. If unique templates with different UUID are passed using this method, the disk cache grows endlessly and will never be reused. To prevent this, the UUID attribute should be stripped from all templates to ensure that no cache is created for the template. Alternatively, passing the same non-null UUID allows the cache objects to be created, but ensures that the same cache is updated with each request.
+* **Templates passed by value**: Uses template bytes passed along with the data using theinDataDoc parameter. If unique templates with different UUID are passed using this method, the disk cache grows endlessly and is never reused. To prevent this, the UUID attribute should be stripped from all templates to ensure that no cache is created for the template. Alternatively, passing the same non-null UUID allows the cache objects to be created, but ensures that the same cache is updated with each request.
 
 To prevent the cache from growing endlessly, consider the following factors for rendering dynamically generated templates using the new AEM Forms APIs, those being renderHTMLForm2, and renderPDFForm2.
 
 When using the new APIs, the template is passed as a document object, which is handled in the Forms service based on whether it is passivated or not.
 
 For passivated documents in which the UUID and content root serve as the cache key, consider the following aspects:
+
 * The cache is not created for passivated input templates with no UUID.
 * If more than one passivated input template having the same UUID and content root are passed, then the same cache is overwritten.
 
 For non-passivated documents in which the filename and content root serve as the cache key, consider the following aspect:
+
 * For non-passivated input templates, caching depends on the content root and filename from which the document was generated.
 The same cache is used only for requests with the same content root and template filename.
 The following best practices ensure that the cache does not grow endlessly when dynamically generated templates are passed to the Forms service:
@@ -253,7 +255,7 @@ The following best practices ensure that the cache does not grow endlessly when 
 
 ### Uninstalling Workbench {#uninstalling-workbench}
 
-Use the Add or Remove Programs function in the Control Panel to start the Uninstaller. The Workbench and Designer applications have separate uninstall programs.
+Use the Add or Remove Programs function in the Control Panel so you can start the Uninstaller. The Workbench and Designer applications have separate uninstall programs.
 
 ## Configuring AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor}
 
@@ -262,9 +264,11 @@ Using the XDC Editor, network printer administrators can create and modify XML F
 Before your network printer administrator uses the XDC Editor, relocate the sample XDC files and see Creating device profiles using XDC Editor.
 
 **To obtain the sample XDC files**:
+
 1. On the AEM Forms Server, locate the XDC folder in [AEM Forms root]\sdk\samples\Output\IVS.
 1. Copy the contents of this folder into a directory that is accessible from the Workbench or Eclipse system.
 
 **To obtain the XDC Editor Help**:
+
 1. Go to the AEM Forms documentation website.
 1. Click the **Develop** tab and navigate to Creating device profiles using XDC Editor. Download the xdc_editor_help_web.zip file and install the Help files by following the instructions provided in the Readme file.

@@ -1,7 +1,7 @@
 ---
 title: Workflow Best Practices
 seo-title: Workflow Best Practices
-description: Workflow Best Practices
+description: Learn the best practices for working with workflows in Adobe Experience Manager.
 seo-description: null
 uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
 contentOwner: User

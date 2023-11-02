@@ -1,14 +1,7 @@
 ---
 title: Identifying Content to Translate
-seo-title: Identifying Content to Translate
-description: Learn how to identify content that needs translating.
-seo-description: Learn how to identify content that needs translating.
-uuid: 81b9575c-1c7a-4955-b03f-3f26cbd4f956
+description: Learn how to identify content that needs translating in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 ---

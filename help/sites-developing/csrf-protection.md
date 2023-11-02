@@ -29,14 +29,14 @@ Any component that relies on the `granite.jquery` dependency will benefit from t
 
 ### Replicating the Crypto Key {#replicating-crypto-keys}
 
-In order to make use of the tokens, you need to replicate the HMAC binary to all of the instances in your deployment. See [Replicating the HMAC key](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) for more details.
+To make use of the tokens, you need to replicate the HMAC binary to all of the instances in your deployment. See [Replicating the HMAC key](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) for more details.
 
 >[!NOTE]
 >
->Make sure you also make the necessary [Dispatcher configuration changes](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) in order to use the CSRF Protection Framework.
+>Make sure you also make the necessary [Dispatcher configuration changes](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) to use the CSRF Protection Framework.
 
 >[!NOTE]
 >
->If you use the manifest cache with your web application, make sure you add "**&ast;**" to the manifest in order to make sure the token does not take the CSRF token generation call offline. For more information, consult this [link](https://www.w3.org/TR/offline-webapps/).
+>If you use the manifest cache with your web application, make sure you add "**&ast;**" to the manifest to make sure the token does not take the CSRF token generation call offline. For more information, consult this [link](https://www.w3.org/TR/offline-webapps/).
 >
 >For more information on CSRF attacks and ways to mitigate them, see the [Cross-Site Request Forgery OWASP page](https://owasp.org/www-community/attacks/csrf).

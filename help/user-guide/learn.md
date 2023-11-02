@@ -1,8 +1,6 @@
 ---
 title: Learn about Adobe Experience Manager 6.5 Capabilities
-seo-title: Learn about Adobe Experience Manager 6.5 Capabilities
-description: Learn about the essential capabilities of Adobe Experience Manager 6.5
-seo-description: An description of the essential capabilities of Adobe Experience Manager 6.5
+description: Learn about the essential capabilities of Adobe Experience Manager 6.5.
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
 ---
 # Learn About Adobe Experience Manager 6.5 Capabilities {#learn-about-aem-64-capabilities}

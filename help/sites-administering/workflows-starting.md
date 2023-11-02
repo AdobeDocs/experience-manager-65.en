@@ -1,19 +1,15 @@
 ---
 title: Starting Workflows
-seo-title: Starting Workflows
-description: Learn how to start Workflows in AEM.
-seo-description: Learn how to start Workflows in AEM.
-uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
+description: Learn how to administer workflows in Adobe Experience Manager so you can start them using various methods, either manually or automatically.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 ---
 # Starting Workflows{#starting-workflows}
 
-When administering workflows you can start them using a variety of methods:
+When administering workflows you can start them using various methods:
 
 * Manually:
 
@@ -81,16 +77,16 @@ A workflow package:
 ## Starting a Workflow from the Models Console {#starting-a-workflow-from-the-models-console}
 
 1. Navigate to the **Models** console using **Tools**, **Workflow**, then **Models**.
-1. Select the workflow (according to the console view); you can also use Search (top left) if required:
+1. Select the workflow (according to the console view); you can also use Search (top left) if necessary:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >The **[Transient](/help/sites-developing/workflows.md#transient-workflows)** indicator shows workflows for which the workflow history will not be persisted.
+   >The **[Transient](/help/sites-developing/workflows.md#transient-workflows)** indicator shows workflows for which the workflow history is not persisted.
 
 1. Select **Start Workflow** from the toolbar.
-1. The Run Workflow dialog will open, allowing you to specify:
+1. The Run Workflow dialog box opens, letting you specify:
 
     * **Payload**
 
@@ -109,13 +105,13 @@ A workflow package:
 ## Creating a Launcher Configuration {#creating-a-launcher-configuration}
 
 1. Navigate to the **Workflow Launchers** console using **Tools**, **Workflow**, then **Launchers**.
-1. Select **Create**, then **Add Launcher** to open the dialog:
+1. Select **Create**, then **Add Launcher** to open the dialog box:
 
    ![wf-105](assets/wf-105.png)
 
     * **Event Type**
 
-      The event type that will launch the workflow:
+      The event type that launches the workflow:
 
         * Created
         * Modified
@@ -141,11 +137,11 @@ A workflow package:
 
     * **Features**
 
-      A list of features to be enabled. Select the required feature(s) using the drop down selector.
+      A list of features to be enabled. Select the required features using the drop-down selector.
 
     * **Disabled Features**
 
-    A list of features to be disabled. Select the required feature(s) using the drop down selector.
+    A list of features to be disabled. Select the required features using the drop-down selector.
 
     * **Workflow Model**
 
@@ -164,12 +160,12 @@ A workflow package:
 
     * **Exclude List**
 
-      This specifies any JCR events to exclude (i.e. ignore) when determining whether a workflow should be triggered.
+      This specifies any JCR events to exclude (that is, ignore) when determining whether a workflow should be triggered.
 
-      This launcher property is a comma separated list of items: ``
+      This launcher property is a comma-separated list of items: ``
 
         * `property-name` ignore any `jcr` event which triggered on the specified property name. ``
-        * `event-user-data:<*someValue*>` ignores any event that contains the `*<someValue*`> `user-data` set through the [ `ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+        * `event-user-data:<*someValue*>` ignores any event that contains the `*<someValue*`> `user-data` set through the [ `ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
       For example:
 
@@ -181,7 +177,7 @@ A workflow package:
 
 1. Select **Create**, to create the launcher and return to the console.
 
-   Once the appropriate event occurs the launcher will be triggered and the workflow started.
+   When the appropriate event occurs, the launcher is triggered and the workflow started.
 
 ## Managing a Launcher Configuration {#managing-a-launcher-configuration}
 

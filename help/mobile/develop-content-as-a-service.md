@@ -1,6 +1,6 @@
 ---
 title: Content Delivery
-description: Content Delivery
+description: Learn about how to use all content in Adobe Experience Manager to deliver the targeted app experience.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -18,7 +18,7 @@ This includes using assets, site content, CaaS content (over-the-air) content, a
 
 >[!NOTE]
 >
->**Over-the-Air Content** can come from any of the above via ContentSync handlers. It can be used to batch package and delivery by way of zips and maintain updates or those packages.
+>**Over-the-Air Content** can come from any of the above by way of ContentSync handlers. It can be used to batch package and delivery by way of zips and maintain updates or those packages.
 
 There are three main types of material that Content Services deliver:
 
@@ -41,7 +41,7 @@ An Asset collection can be exposed through Content Services. Calling an asset co
 
 A key value of Content Services is the ability to return assets that are optimized for the device. This reduces local device storage needs and improves app performance.
 
-Asset optimization is a server-side function, based on information supplied in the API request. Wherever possible, the asset renditions should be cached so similar requests do not require a regeneration of the asset rendition.
+Asset optimization is a server-side function, based on information supplied in the API request. Wherever possible, the asset renditions should be cached so similar requests do not require regeneration of the asset rendition.
 
 ### Assets Workflow {#assets-workflow}
 
@@ -64,7 +64,7 @@ Content Services provide access to AEM-managed assets that may not be referenced
 
 #### Existing Managed Assets {#existing-managed-assets}
 
-A user of AEM Sites and Assets is using AEM Assets to manage all of their digital material for all channels. They are developing a native mobile app and need to use several assets that are managed by AEM Assets. For example logos, background images, and button icons.
+A user of AEM Sites and Assets is using AEM Assets to manage all of their digital material for all channels. They are developing a native mobile app and must use several assets that are managed by AEM Assets. For example logos, background images, and button icons.
 
 Currently these are spread around the Assets repository. The files that the app must reference are in the following:
 
@@ -100,7 +100,7 @@ To get the binary for the "cart" image, the client library is used once again.
 
 ## Packaged HTML Content {#packaged-html-content}
 
-HTML content is needed for customers that need to maintain the layout of content. This is useful for native applications that are using a web container - such as a Cordova webview - to display the content.
+HTML content is needed for customers that must maintain the layout of content. This is useful for native applications that are using a web container - such as a Cordova webview - to display the content.
 
 AEM Content Services provides HTML content to the mobile app by way of the API. Customers wanting to expose AEM content as HTML can create an HTML page entity that points to the AEM content source.
 
@@ -115,21 +115,21 @@ The following options are considered:
 
 Channel independent content is a way of exposing AEM content constructs - such as pages - without worrying about layout, components, or other channel-specific information.
 
-These content entities are generated using a content model to translate the AEM structures into a JSON format. The resulting JSON data contains information about the content's data that is decoupled from the AEM repository. This includes returning metadata and AEM reference links to assets and the relationships between content structures - including entity hierarchy.
+These content entities are generated using a content model to translate the AEM structures into a JSON format. Resulting JSON data contains information about the content's data that is decoupled from the AEM repository. This includes returning metadata and AEM reference links to assets and the relationships between content structures - including entity hierarchy.
 
 ### Managing Channel Independent Content {#managing-channel-independent-content}
 
 Content can get to the app in several ways.
 
-1. GET content ZIPS via AEM Over-the-Air
+1. GET content ZIPS by way of AEM Over-the-Air
 
     * Content Sync handlers can update the zip package directly or by calling existing content renderers
 
         * Platform Handlers
-        * AEMM Handlers
+        * AEM Handlers
         * Custom Handlers
 
-1. GET content directly via content renderers
+1. GET content directly by way of content renderers
 
     * Out-of-the-box Default Sling Renderers
     * AEM Mobile/Content Services Content Renderers

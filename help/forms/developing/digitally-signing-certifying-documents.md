@@ -591,7 +591,7 @@ After you add this configuration value to the cknfastrc file, the new credential
 
 **Signature is not trusted**
 
-When certifying and signing the same PDF document, if the certifying signature is not trusted, a yellow triangle appears against the first signature when opening the PDF document in Acrobat or Adobe Reader. The certifying signature must be trusted in order to avoid this situation.
+When certifying and signing the same PDF document, if the certifying signature is not trusted, a yellow triangle appears against the first signature when opening the PDF document in Acrobat or Adobe Reader. The certifying signature must be trusted to avoid this situation.
 
 **Signing documents that are XFA based forms**
 

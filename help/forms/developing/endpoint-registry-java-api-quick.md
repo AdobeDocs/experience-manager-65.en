@@ -1,51 +1,48 @@
 ---
-title: Endpoint Registry Java API QuickStart(SOAP)
-seo-title: Endpoint Registry Java API QuickStart(SOAP)
-description: Endpoint Registry Java API QuickStart(SOAP)
-uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
+title: Endpoint Registry Java&trade; API QuickStart(SOAP)
+description: Learn how to add endpoints like EJB, SOAP, Watched Folder, Email endpoint, and Remoting endpoint and edit, remove, and retrieve endpoints using Java&trade; API.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 ---
-# Endpoint Registry Java API Quick Start (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+# Endpoint Registry Java&trade; API Quick Start (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
-Java API Quick Start(SOAP) is available for the Endpoint Registry.
+Java&trade; API Quick Start(SOAP) is available for the Endpoint Registry.
 
-[QuickStart: Adding an EJB endpoint using the Java API](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart: Adding an EJB endpoint using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart: Adding a SOAP endpoint using the Java API](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: Adding a SOAP endpoint using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[QuickStart: Adding a Watched Folder endpoint using the Java API](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[QuickStart: Adding a Watched Folder endpoint using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[QuickStart: Adding an Email endpoint using the Java API](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[QuickStart: Adding an Email endpoint using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[QuickStart: Adding a Remoting endpoint using the Java API](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[QuickStart: Adding a Remoting endpoint using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[QuickStart: Adding a TaskManager endpoint using the Java API](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[QuickStart: Adding a TaskManager endpoint using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[QuickStart: Modifying an endpoint using the Java API](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[QuickStart: Modifying an endpoint using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[QuickStart: Removing an endpoint using the Java API](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[QuickStart: Removing an endpoint using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[QuickStart: Retrieving endpoint connector information using the Java API](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
+[QuickStart: Retrieving endpoint connector information using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >
->Quick start located in Programming with AEM forms are based on the Forms if you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Starts in Programming with AEM forms are based on the Forms if you are using another operating system, such as UNIX&reg;, replace Windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >You cannot work with endpoints by using a web service.
 
-## QuickStart: Adding an EJB endpoint using the Java API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
+## QuickStart: Adding an EJB endpoint using the Java&trade; API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-The following Java code example adds an EJB endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding EJB Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
+The following Java&trade; code example adds an EJB endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding EJB Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
 ```java
  /*
@@ -142,9 +139,9 @@ The following Java code example adds an EJB endpoint to a service named *MyAppli
  
 ```
 
-## QuickStart: Adding a SOAP endpoint using the Java API {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## QuickStart: Adding a SOAP endpoint using the Java&trade; API {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-The following Java code example adds a SOAP endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding SOAP Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+The following Java&trade; code example adds a SOAP endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding SOAP Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*
@@ -242,13 +239,13 @@ The following Java code example adds a SOAP endpoint to a service named *MyAppli
  
 ```
 
-## QuickStart: Adding a Watched Folder endpoint using the Java API {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
+## QuickStart: Adding a Watched Folder endpoint using the Java&trade; API {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-The following Java code example adds a Watched Folder endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding Watched Folder Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
+The following Java&trade; code example adds a Watched Folder endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding Watched Folder Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
->You must include the WatchedFolderEndpointConfigConstants.java file in your project to compile and run the following quick start. (See [Watched folder configuration values constant file](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>Include the WatchedFolderEndpointConfigConstants.java file in your project so you can compile and run the following quick start. (See [Watched folder configuration values constant file](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -377,13 +374,13 @@ The following Java code example adds a Watched Folder endpoint to a service name
  
 ```
 
-## QuickStart: Adding an Email endpoint using the Java API {#quickstart-adding-an-email-endpoint-using-the-java-api}
+## QuickStart: Adding an Email endpoint using the Java&trade; API {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-The following Java code example adds an Email endpoint to a service named *MyApplication/EncryptDocumen*t. (See [Adding Email Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
+The following Java&trade; code example adds an Email endpoint to a service named *MyApplication/EncryptDocumen*t. (See [Adding Email Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
->You must include the EmailEndpointConfigConstants.java file in your project to compile and run the following quick start. (See [Email configuration values constant file](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>Include the EmailEndpointConfigConstants.java file in your project so you can compile and run the following quick start. (See [Email configuration values constant file](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*
@@ -520,9 +517,9 @@ The following Java code example adds an Email endpoint to a service named *MyApp
  
 ```
 
-## QuickStart: Adding a Remoting endpoint using the Java API {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
+## QuickStart: Adding a Remoting endpoint using the Java&trade; API {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-The following Java code example adds a Remoting endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding Remoting Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
+The following Java&trade; code example adds a Remoting endpoint to a service named *MyApplication/EncryptDocument*. (See [Adding Remoting Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
 ```java
  /*
@@ -625,9 +622,9 @@ The following Java code example adds a Remoting endpoint to a service named *MyA
  
 ```
 
-## QuickStart: Adding a TaskManager endpoint using the Java API {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
+## QuickStart: Adding a TaskManager endpoint using the Java&trade; API {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-The following Java code example adds a TaskManager endpoint to a service named *MyApplication/EncryptDocument*. Notice that the name of the category is *EncryptProcess*. (See [Adding TaskManager Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
+The following Java&trade; code example adds a TaskManager endpoint to a service named *MyApplication/EncryptDocument*. Notice that the name of the category is *EncryptProcess*. (See [Adding TaskManager Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```java
  /*
@@ -734,9 +731,9 @@ The following Java code example adds a TaskManager endpoint to a service named *
  
 ```
 
-## QuickStart: Modifying an endpoint using the Java API {#quickstart-modifying-an-endpoint-using-the-java-api}
+## QuickStart: Modifying an endpoint using the Java&trade; API {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-The following Java code example modifies a Watched Folder endpoint.The endpoint is for the *MyApplication/EncryptDocument* process. The watched folder is changed to `C:\NewWatchedFolder`. (See [Modifying Endpoints](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
+The following Java&trade; code example modifies a Watched Folder endpoint. The endpoint is for the *MyApplication/EncryptDocument* process. The watched folder is changed to `C:\NewWatchedFolder`. (See [Modifying Endpoints](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```java
  /*
@@ -884,9 +881,9 @@ The following Java code example modifies a Watched Folder endpoint.The endpoint 
  
 ```
 
-## QuickStart: Removing an endpoint using the Java API {#quickstart-removing-an-endpoint-using-the-java-api}
+## QuickStart: Removing an endpoint using the Java&trade; API {#quickstart-removing-an-endpoint-using-the-java-api}
 
-The following Java code removes an EJB endpoint from a service named *MyApplication/EncryptDocument*. (See [Removing Endpoints](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
+The following Java&trade; code removes an EJB endpoint from a service named *MyApplication/EncryptDocument*. (See [Removing Endpoints](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
 ```java
  /*
@@ -1003,9 +1000,9 @@ The following Java code removes an EJB endpoint from a service named *MyApplicat
  
 ```
 
-## QuickStart: Retrieving endpoint connector information using the Java API {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
+## QuickStart: Retrieving endpoint connector information using the Java&trade; API {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-The following Java code retrieves information about a Watched Folder endpoint. Information about each configuration value is retrieved and displayed. This code list specifies whether each configuration value is required or optional. In addition, the name and value for each configuration value is displayed. (See [Retrieving Endpoint Connector Information](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
+The following Java&trade; code retrieves information about a Watched Folder endpoint. Information about each configuration value is retrieved and displayed. This code list specifies whether each configuration value is required or optional. In addition, the name and value for each configuration value is displayed. (See [Retrieving Endpoint Connector Information](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ```java
  /*

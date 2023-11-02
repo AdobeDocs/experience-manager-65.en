@@ -1,7 +1,7 @@
 ---
-title: AEM Sites - GDPR Readiness
+title: AEM Sites - GDPR Readiness 
 seo-title: AEM Sites - GDPR Readiness
-description: Learn about the details of GDPR Readiness for AEM Sites.
+description: Learn about the procedures to handle GDPR requests in AEM Sites and how to use them.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
@@ -190,7 +190,7 @@ To clear the ContextHub persistence:
 * To clear persistence of currently loaded stores:
 
   ```
-  // in order to be able to fully access persistence layer, Opt-Out must be turned off
+  // to be able to fully access persistence layer, Opt-Out must be turned off
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
 
   // following call asks all currently loaded stores to clear their data

@@ -191,7 +191,7 @@ Usage:
  export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 
 Description:
-  Export the Vault filesystem mounted at <uri> to the local filesystem at <local-path>. An optional <jcr-path> can be specified in order to export just a sub tree.
+  Export the Vault filesystem mounted at <uri> to the local filesystem at <local-path>. An optional <jcr-path> can be specified to export just a sub tree.
   Example:
     vlt export http://localhost:4502/crx /apps/geometrixx myproject
 
@@ -328,7 +328,7 @@ The following table describes all available VLT commands. See the individual com
 
 ### Export {#export}
 
-Exports the Vault filesystem mounted at &lt;uri&gt; to the local filesystem at &lt;local-path&gt;. An optional &lt;jcr-path&gt; can be specified in order to export just a sub-tree.
+Exports the Vault filesystem mounted at &lt;uri&gt; to the local filesystem at &lt;local-path&gt;. An optional &lt;jcr-path&gt; can be specified to export just a sub-tree.
 
 #### Syntax {#syntax}
 

@@ -1,6 +1,6 @@
 ---
 title: AEM Forms JEE Patch Installer
-description: AEM Forms JEE Patch Installer
+description: Learn how to use AEM Forms JEE Patch Installer to fix issues in AEM 6.5 Forms components.
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
@@ -10,7 +10,7 @@ exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 
 >[!NOTE]
 >
->[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html) for more information or to obtain the patch.
+>[Contact Support](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) for more information or to obtain the patch.
 
 ## About the patch installer {#about-the-patch-installer}
 
@@ -33,10 +33,10 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
       * (Windows 32-bit) `Windows\Disk1\InstData\VM`
       * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
 
-    * **Linux** 
+    * **Linux&reg;** 
       Navigate to the appropriate directory, and from a command prompt, type `./aem65_cfp_install.bin`.
 
-      * (Linux) `Linux/Disk1/InstData/NoVM`
+      * (Linux&reg;) `Linux/Disk1/InstData/NoVM`
 
    This launches an install wizard that guides you through the installation.
 
@@ -46,12 +46,11 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 1. Read the Pre-Installation Summary information and click **[!UICONTROL Install]**.
 1. When the installation is complete, click **[!UICONTROL Next]** to apply the quick fix updates to your installed files.  
 
-1. **[For Windows only]:** Perform one of the following step:
-   * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file located in `[aem-forms root]\configurationManager\bin`. 
+1. **[For Windows only]:** Do the following:
+   * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file in `[aem-forms root]\configurationManager\bin`. 
 
    * Or deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
 
-   >
    >[!NOTE]
    >
    >Using **ConfigurationManager.bat** file helps you to avoid updating name of .lax files manually.
@@ -63,16 +62,16 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
   
 1. Depending on your application server, choose one of the following documents and follow the instructions in the *Configuring and Deploying AEM forms* section.
 
-    * [Installing and Deploying AEM forms for JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-    * [Installing and Deploying AEM forms for WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+    * [Installing and Deploying AEM forms for JBoss&reg;](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+    * [Installing and Deploying AEM forms for WebSphere&reg;](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
-1. (JBoss only) After installing the patch and configuring the server, delete  tmp  and work directories of JBoss application server.
+1. (JBoss&reg; only) After installing the patch and configuring the server, delete  tmp  and work directories of JBoss&reg; application server.
 
 ## Post-deployment configurations {#post-deployment-configurations}
 
 ### SAML configurations {#saml-configurations}
 
-If you had SAML authentication configured and facing issues with large IDP metadata, do the following after installing the patch:
+If you have SAML authentication configured and facing issues with large IDP metadata, do the following after installing the patch:
 
 1. Set the following system property in your application server:  
    `um.saml.enable.large.xml=true`
@@ -85,4 +84,4 @@ If you had SAML authentication configured and facing issues with large IDP metad
 * Document Security
 * Foundation JEE
 
-[Contact Support](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact Support](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)

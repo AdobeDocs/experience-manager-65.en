@@ -1,7 +1,7 @@
 ---
 title: Encryption Support for Configuration Properties
 seo-title: Encryption Support for Configuration Properties
-description: Encryption Support for Configuration Properties
+description: Learn about the encryption support for configuration properties provided in AEM.
 seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
@@ -17,7 +17,7 @@ exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
 
 This feature allows all OSGi configuration properties to be stored in a protected encrypted form instead of clear text. The form intheWeb Console UI is used to create encrypted text from clear text using the system wide encryption master key.
 
-OSGi Configuration Plugin support was added in order to decrypt the property before it is used by a service.
+OSGi Configuration Plugin support was added to decrypt the property before it is used by a service.
 
 >[!NOTE]
 >

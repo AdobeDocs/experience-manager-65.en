@@ -1,7 +1,7 @@
 ---
 title: Using cURL with AEM
 seo-title: Using cURL with AEM
-description: Learn how to use cURL with AEM.
+description: Learn how to use cURL for common Adobe Experience Manager tasks.
 seo-description: Learn how to use cURL with AEM.
 uuid: 771b9acc-ff3a-41c9-9fee-7e5d2183f311
 contentOwner: Silviu Raiman

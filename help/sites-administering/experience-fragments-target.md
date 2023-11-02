@@ -1,6 +1,6 @@
 ---
 title: Exporting Experience Fragments to Adobe Target
-description: Exporting Experience Fragments to Adobe Target
+description: Learn how to export Adobe Experience Manager (AEM) Experience Fragments to Adobe Target.
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration

@@ -1,6 +1,6 @@
 ---
 title: AEM CIF Classic
-description: AEM CIF Classic self-help resources and documentation links
+description: Adobe Experience Manager CIF Classic self-help resources and documentation links.
 exl-id: ae0823b3-d847-42b6-ba92-e4e949da1799
 ---
 # AEM CIF Classic {#commerce-guide}

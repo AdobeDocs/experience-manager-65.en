@@ -1,29 +1,26 @@
 ---
-title: Distiller Service Java API QuickStart(SOAP)
-seo-title: Distiller Service Java API QuickStart(SOAP)
-description: Distiller Service Java API QuickStart(SOAP)
-uuid: 7781f074-cea4-4109-892b-118cfad4ec36
+title: Distiller Service Java&trade; API QuickStart(SOAP)
+description: Learn how the Distiller service transforms PostScript, EPS, and PRN files into PDFs, commonly employed for high-volume print-to-electronic document conversions.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
 ---
-# Distiller Service Java API Quick Start (SOAP) {#distiller-service-java-api-quickstart-soap}
+# Distiller Service Java&trade; API Quick Start (SOAP) {#distiller-service-java-api-quickstart-soap}
 
-Java API Quick Start(SOAP) is available for the Distiller® service:
+Java&trade; API Quick Start (SOAP) is available for the Distiller&reg; service:
 
-[Quick Start (SOAP mode): Converting a PostScript file to a PDF document using the Java API](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[Quick Start (SOAP mode): Converting a PostScript file to a PDF document using the Java&trade; API](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >
->Quick Starts located in Programming with AEM forms are based on the Forms Server being deployed on JBoss Application Server and the Microsoft Windows operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Starts in Programming with AEM forms are based on the Forms Server being deployed on JBoss&reg; Application Server and the Microsoft&reg; Windows operating system. However, if you are using another operating system, such as UNIX&reg;, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Start (SOAP mode): Converting a PostScript file to a PDF document using the Java API {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
+## Quick Start (SOAP mode): Converting a PostScript file to a PDF document using the Java&trade; API {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
 The following code example converts a PostScript file called *Loan.ps* to a PDF file called *Loan.pdf*. (See [Converting PostScript to PDF documents](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 

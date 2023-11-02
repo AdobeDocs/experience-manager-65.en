@@ -1,14 +1,10 @@
 ---
 title: Forms Service API Quick Starts
-seo-title: Forms Service API Quick Starts
-description: Use the Quick Starts for the Forms Service API.
-seo-description: Use the Quick Starts for the Forms Service API.
-uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
+description: Learn how to render interactive PDF, HTML Forms, Fragments using Java&trade; API.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
 ---
@@ -18,45 +14,45 @@ exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
 
 The following Quick Starts are available for the Forms service:
 
-[Quick Start (SOAP mode): Rendering an interactive PDF form using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
+[Quick Start (SOAP mode): Rendering an interactive PDF form using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
 
-[Quick Start (SOAP mode): Rendering a form at the client using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[Quick Start (SOAP mode): Rendering a form at the client using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
-[Quick Start (SOAP mode): Rendering a form based on fragments using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[Quick Start (SOAP mode): Rendering a form based on fragments using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
-[Quick Start (SOAP mode): Rendering a rights-enabled form using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Quick Start (SOAP mode): Rendering a rights-enabled form using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
-[Quick Start (SOAP mode): Rendering an HTML form using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[Quick Start (SOAP mode): Rendering an HTML form using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[Quick Start (SOAP mode): Rendering an HTML Form with a custom toolbar using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Quick Start (SOAP mode): Rendering an HTML Form with a custom toolbar using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Quick Start (SOAP mode): Handling PDF forms submitted as XML using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Quick Start (SOAP mode): Handling PDF forms submitted as XML using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Quick Start (SOAP mode): Handling PDF forms submitted as PDF using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Quick Start (SOAP mode): Handling PDF forms submitted as PDF using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
-[Quick Start (SOAP mode): Handling HTML forms submitted as XML using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Quick Start (SOAP mode): Handling HTML forms submitted as XML using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[Quick Start (SOAP mode): Creating PDF Documents with submitted XML data using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
+[Quick Start (SOAP mode): Creating PDF Documents with submitted XML data using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
-[Quick Start (SOAP mode): Prepopulating Forms with Flowable Layouts using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Quick Start (SOAP mode): Prepopulating Forms with Flowable Layouts using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[Quick Start (SOAP mode): Handling a form containing a calculation script using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
+[Quick Start (SOAP mode): Handling a form containing a calculation script using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
 
-[Quick Start (SOAP mode): Optimizing performance using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[Quick Start (SOAP mode): Optimizing performance using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
-[Quick Start (SOAP mode): Rendering by value using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[Quick Start (SOAP mode): Rendering by value using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[Quick Start (SOAP mode): Passing documents to the Forms Service using the Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Quick Start (SOAP mode): Passing documents to the Forms Service using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-Application logic that uses the Forms service API is implemented as Java servlets. AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+Application logic that uses the Forms service API is implemented as Java&trade; servlets. AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >
->Quick starts located in Programming with v are based on the forms server being you are using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Starts in Programming with v are based on the Forms Server being you are using another operating system, such as UNIX&reg;, replace Windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, then ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
   **Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms.
 
-## Quick Start (SOAP mode): Rendering an interactive PDF form using the Java API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
+## Quick Start (SOAP mode): Rendering an interactive PDF form using the Java&trade; API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
 The following code example renders an interactive PDF form named *Loan.xdp* to a client web browser. A file is attached to the form. Notice that the form design is part of an application and is referenced by using the content root URI value `repository:///`. (See [Rendering Interactive PDF Forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
@@ -198,9 +194,9 @@ The following code example renders an interactive PDF form named *Loan.xdp* to a
  }
 ```
 
-## Quick Start (SOAP mode): Rendering a form at the client using the Java API {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}
+## Quick Start (SOAP mode): Rendering a form at the client using the Java&trade; API {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}
 
-The following code example renders a form named *Loan.xdp* at the client using the Forms service Java API. Notice that the form design is part of an application and is referenced by using the content root URI value `repository:///`. (See [Rendering Forms at the Client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
+The following code example renders a form named *Loan.xdp* at the client using the Forms service Java&trade; API. Notice that the form design is part of an application and is referenced by using the content root URI value `repository:///`. (See [Rendering Forms at the Client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
 
 ```java
  /*
@@ -331,7 +327,7 @@ The following code example renders a form named *Loan.xdp* at the client using t
  
 ```
 
-## Quick Start (SOAP mode): Rendering a Guide (deprecated) using the Java API {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}
+## Quick Start (SOAP mode): Rendering a Guide (deprecated) using the Java&trade; API {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}
 
 The following code example renders a Guide (deprecated) named *TLALifeClaim.xdp* to a client web browser.
 
@@ -467,9 +463,9 @@ The following code example renders a Guide (deprecated) named *TLALifeClaim.xdp*
  
 ```
 
-## Quick Start (SOAP mode): Rendering a form based on fragments using the Java API {#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api}
+## Quick Start (SOAP mode): Rendering a form based on fragments using the Java&trade; API {#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api}
 
-The following code example renders a form that is based on fragments. The name of the form design is *PurchaseOrderDynamic.xdp* and it is located in the AEM Forms repository (the XDP file is stored in a folder named FormsFolder located in the repository). Also the fragments that the POFragment form references must also be located in the repository. (See [Rendering Forms Based on Fragments](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
+The following code example renders a form that is based on fragments. The name of the form design is *PurchaseOrderDynamic.xdp* and it is in the AEM Forms repository (the XDP file is stored in a folder named `FormsFolder` in the repository). Also the fragments that the POFragment form references must also be in the repository. (See [Rendering Forms Based on Fragments](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
 
 ```java
  /*
@@ -576,7 +572,7 @@ The following code example renders a form that is based on fragments. The name o
              Document myData = formOut.getOutputContent();
  
              //Get the content type of the response and
-             //set the HttpServletResponse object’s content type
+             //set the HttpServletResponse object's content type
              String contentType = myData.getContentType();
              resp.setContentType(contentType);
  
@@ -600,7 +596,7 @@ The following code example renders a form that is based on fragments. The name o
  }
 ```
 
-## Quick Start (SOAP mode): Rendering a rights-enabled form using the Java API {#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api}
+## Quick Start (SOAP mode): Rendering a rights-enabled form using the Java&trade; API {#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api}
 
 The following code example renders a rights-enabled form to a client web browser. The usage rights set in this code example enable a user to add comments in the form and save form data. (See [Rendering Rights-Enabled Forms](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms).)
 
@@ -737,9 +733,9 @@ The following code example renders a rights-enabled form to a client web browser
  
 ```
 
-## Quick Start (SOAP mode): Rendering an HTML form using the Java API {#quick-start-soap-mode-rendering-an-html-form-using-the-java-api}
+## Quick Start (SOAP mode): Rendering an HTML form using the Java&trade; API {#quick-start-soap-mode-rendering-an-html-form-using-the-java-api}
 
-The following code example renders an HTML form using the Forms service Java API. A toolbar is added to the HTML form as well as two file attachments. In addition, the user agent value is obtained from the `HttpServletRequest` object. (See [Rendering Forms as HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).)
+The following code example renders an HTML form using the Forms service Java&trade; API. A toolbar is added to the HTML form and two file attachments. In addition, the user agent value is obtained from the `HttpServletRequest` object. (See [Rendering Forms as HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).)
 
 ```java
  /*
@@ -869,7 +865,7 @@ The following code example renders an HTML form using the Forms service Java API
                  Document myData = formOut.getOutputContent();
  
                  //Get the content type of the response and
-                 //set the HttpServletResponse object’s content type
+                 //set the HttpServletResponse object's content type
                  String contentType = myData.getContentType();
                  resp.setContentType(contentType);
  
@@ -898,7 +894,7 @@ The following code example renders an HTML form using the Forms service Java API
  
 ```
 
-## Quick Start (SOAP mode): Rendering an HTML form that uses a CSS file using the Java API {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
+## Quick Start (SOAP mode): Rendering an HTML form that uses a CSS file using the Java&trade; API {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
 
 The following code example renders an HTML form using the Forms service Client API. The name of the custom CSS file that is referenced is *custom.css*. (See [Rendering HTML Forms Using Custom CSS Files](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
 
@@ -1028,7 +1024,7 @@ The following code example renders an HTML form using the Forms service Client A
                  Document myData = formOut.getOutputContent();
  
                  //Get the content type of the response and
-                 //set the HttpServletResponse object’s content type
+                 //set the HttpServletResponse object's content type
                  String contentType = myData.getContentType();
                  resp.setContentType(contentType);
  
@@ -1053,7 +1049,7 @@ The following code example renders an HTML form using the Forms service Client A
  }
 ```
 
-## Quick Start (SOAP mode): Rendering an HTML Form with a custom toolbar using the Java API {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
+## Quick Start (SOAP mode): Rendering an HTML Form with a custom toolbar using the Java&trade; API {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
 The following code example renders an HTML form with a toolbar that is displayed in French. The location of the fscmenu.xml is C:\Adobe (this folder must be on the server hosting AEM Forms). Notice that the locale value is `fr_FR`. The section that discusses how to render an HTML form with a custom toolbar shows the syntax of the fscmenu.xml file used in this quick start. (See [Rendering HTML Forms with Custom Toolbars](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
 
@@ -1183,7 +1179,7 @@ The following code example renders an HTML form with a toolbar that is displayed
                  Document myData = formOut.getOutputContent();
  
                  //Get the content type of the response and
-                 //set the HttpServletResponse object’s content type
+                 //set the HttpServletResponse object's content type
                  String contentType = myData.getContentType();
                  resp.setContentType(contentType);
  
@@ -1209,7 +1205,7 @@ The following code example renders an HTML form with a toolbar that is displayed
  
 ```
 
-## Quick Start (SOAP mode): Handling PDF forms submitted as XML using the Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
+## Quick Start (SOAP mode): Handling PDF forms submitted as XML using the Java&trade; API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
 
 The following code example handles a form that is submitted as XML. The content type value passed to the `processFormSubmission` method is `CONTENT_TYPE=text/xml`. The values that correspond to the fields named `mortgageAmount`, `lastName`, and `firstName` are displayed. A user-defined method named `getNodeText` is used in this quick start. It accepts an `org.w3c.dom.Document` instance and a string value that specifies the node name. This method returns a string value that represents the value of the node. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
@@ -1378,7 +1374,7 @@ The following code example handles a form that is submitted as XML. The content 
 >
 >When using a `com.adobe.idp.Document` object and an `org.w3c.dom.Document` in the same application, fully qualify `org.w3c.dom.Document`.
 
-## Quick Start (SOAP mode): Handling PDF forms submitted as PDF using the Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Quick Start (SOAP mode): Handling PDF forms submitted as PDF using the Java&trade; API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
 The following code example handles a form that is submitted as PDF data. The content type value passed to the `processFormSubmission` method is `CONTENT_TYPE=application/pdf`. The submitted form is saved as a PDF file named *tempPDF.pdf*. Also, because the form is submitted as PDF, file attachments can be retrieved. Any file attachments are saved as JPEG files. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
@@ -1528,9 +1524,9 @@ The following code example handles a form that is submitted as PDF data. The con
  
 ```
 
-## Quick Start (SOAP mode): Handling HTML forms submitted as XML using the Java API {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
+## Quick Start (SOAP mode): Handling HTML forms submitted as XML using the Java&trade; API {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
 
-The following code example handles an HTML form that is submitted as XML data. The content type value passed to the `processFormSubmission` method is `CONTENT_TYPE=application/x-www-form-urlencoded`.The values that correspond to the fields named `mortgageAmount`, `lastName`, and `firstName` are displayed. A user-defined method named `getNodeText` is used in this quick start. It accepts an `org.w3c.dom.Document` instance and a string value that specifies the node name. This method returns a string value that represents the value of the node. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
+The following code example handles an HTML form that is submitted as XML data. The content type value passed to the `processFormSubmission` method is `CONTENT_TYPE=application/x-www-form-urlencoded`. The values that correspond to the fields named `mortgageAmount`, `lastName`, and `firstName` are displayed. A user-defined method named `getNodeText` is used in this Quick Start. It accepts an `org.w3c.dom.Document` instance and a string value that specifies the node name. This method returns a string value that represents the value of the node. (See [Handling Submitted Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 ```java
  /*
@@ -1688,9 +1684,9 @@ The following code example handles an HTML form that is submitted as XML data. T
  
 ```
 
-## Quick Start (SOAP mode): Creating PDF Documents with submitted XML data using the Java API {#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api}
+## Quick Start (SOAP mode): Creating PDF Documents with submitted XML data using the Java&trade; API {#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api}
 
-The following Java code example handles form data that is submitted as XML. Form data is retrieved from the Form submission using the Forms API and sent to the Output service. The form data and a form design are used to create a non-interactive PDF document. The non-interactive PDF document is stored in a Content Services (deprecated) node named `/Company Home/Test Directory`. The name of the form is dynamically created. That is, the user’s first and last name are used to name the PDF file. The resource identifier of the new content is written out to the client web browser. (See [Creating PDF Documents with Submitted XML Data](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
+The following Java&trade; code example handles form data that is submitted as XML. Form data is retrieved from the Form submission using the Forms API and sent to the Output service. The form data and a form design are used to create a non-interactive PDF document. The non-interactive PDF document is stored in a Content Services (deprecated) node named `/Company Home/Test Directory`. The name of the form is dynamically created. That is, the user's first and last name are used to name the PDF file. The resource identifier of the new content is written out to the client web browser. (See [Creating PDF Documents with Submitted XML Data](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
 
 ```java
  /*
@@ -1960,15 +1956,15 @@ The following Java code example handles form data that is submitted as XML. Form
  }
 ```
 
-## Quick Start (SOAP mode): Prepopulating Forms with Flowable Layouts using the Java API {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
+## Quick Start (SOAP mode): Prepopulating Forms with Flowable Layouts using the Java&trade; API {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
 
 The following code example prepopulates a form with a dynamic data source. That is, the data source is created at run-time and is not contained within an XML file or created during design time. This code example contains three user-defined methods:
 
 * `createDataSource`: Creates an `org.w3c.dom.Document` object that represents the data source that is used to prepopulate the form. This user-defined method returns the `org.w3c.dom.Document` object.
 * `convertDataSource`: Converts an `org.w3c.dom.Document` object to a `com.adobe.idp.Document` object. This method accepts an `org.w3c.dom.Document` object as an input parameter and returns a `com.adobe.idp.Document` object.
-* `renderPOForm`: Uses the Forms service Java API to render a dynamic purchase order form. The `com.adobe.idp.Document` object that was returned by the `convertDataSource` method is used to prepopulate the form.
+* `renderPOForm`: Uses the Forms service Java&trade; API to render a dynamic purchase order form. The `com.adobe.idp.Document` object that was returned by the `convertDataSource` method is used to prepopulate the form.
 
-  All of these methods are invoked from within the Java servlet’s `doPost` method. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
+  All of these methods are invoked from within the Java&trade; servlet's `doPost` method. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
 
 ```java
 /*
@@ -2245,7 +2241,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
 }
 ```
 
-## Quick Start (SOAP mode): Handling a form containing a calculation script using the Java API {#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api}
+## Quick Start (SOAP mode): Handling a form containing a calculation script using the Java&trade; API {#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api}
 
 The following code example processes a form that contains a calculation script and writes the results back to the client web browser. (See [Calculating Form Data](/help/forms/developing/rendering-forms.md#calculating-form-data).)
 
@@ -2363,7 +2359,7 @@ The following code example processes a form that contains a calculation script a
  }
 ```
 
-## Quick Start (SOAP mode): Optimizing performance using the Java API {#quick-start-soap-mode-optimizing-performance-using-the-java-api}
+## Quick Start (SOAP mode): Optimizing performance using the Java&trade; API {#quick-start-soap-mode-optimizing-performance-using-the-java-api}
 
 The following code example optimizes performance by setting the caching, standalone, and linearized options. A linearized file is optimized for delivery on the web. (See [Optimizing the Performance of the Forms Service](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service).)
 
@@ -2491,9 +2487,9 @@ The following code example optimizes performance by setting the caching, standal
  }
 ```
 
-## Quick Start (SOAP mode): Rendering by value using the Java API {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
+## Quick Start (SOAP mode): Rendering by value using the Java&trade; API {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
 
-The following Java quick start renders an interactive PDF form that is based on a form design named *Loan.xdp* by value. Notice that the form design is used to populate a `com.adobe.idp.Document` object named *inputXDP*. (See [Rendering Forms By Value](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
+The following Java&trade; quick start renders an interactive PDF form that is based on a form design named *Loan.xdp* by value. Notice that the form design is used to populate a `com.adobe.idp.Document` object named *inputXDP*. (See [Rendering Forms By Value](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 
 ```java
  /*
@@ -2618,9 +2614,9 @@ The following Java quick start renders an interactive PDF form that is based on 
  }
 ```
 
-## Quick Start (SOAP mode): Passing documents to the Forms Service using the Java API {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
+## Quick Start (SOAP mode): Passing documents to the Forms Service using the Java&trade; API {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
 
-The following Java quick start retrieves the file Loan.xdp from Content Services (deprecated). This XDP file is located in the space `/Company Home/Form Designs`. The XDP file is returned in a `com.adobe.idp.Document` instance. The `com.adobe.idp.Document` instance is passed to the Forms service. The interactive form is written to a client web browser. (See [Passing Documents to the Forms Service](/help/forms/developing/passing-documents-forms-service.md).)
+The following Java&trade; Quick Start retrieves the file Loan.xdp from Content Services (deprecated). This XDP file is in the space `/Company Home/Form Designs`. The XDP file is returned in a `com.adobe.idp.Document` instance. The `com.adobe.idp.Document` instance is passed to the Forms service. The interactive form is written to a client web browser. (See [Passing Documents to the Forms Service](/help/forms/developing/passing-documents-forms-service.md).)
 
 ```java
  /*

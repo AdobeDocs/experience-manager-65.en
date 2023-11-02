@@ -15,7 +15,7 @@ exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 
 ## Introduction {#introduction}
 
-By default, AEM uses the Token Authentication Handler to authenticate each request. However, in order to serve authentication requests the Token Authentication Handler requires access to the repository for every request. This happens because cookies are used to maintain the authentication state. Logically, the state needs to be persisted in the repository in order to validate subsequent requests. In effect, this means that the authentication mechanism is stateful.
+By default, AEM uses the Token Authentication Handler to authenticate each request. However, to serve authentication requests the Token Authentication Handler requires access to the repository for every request. This happens because cookies are used to maintain the authentication state. Logically, the state needs to be persisted in the repository to validate subsequent requests. In effect, this means that the authentication mechanism is stateful.
 
 This is of particular importance for horizontal scalability. In a multi instances setup like the publish farm depicted below, load balancing cannot be achieved in an optimal manner. With stateful authentication, the persisted authentication state will only be available on the instance where the user is first authenticated.
 
@@ -62,7 +62,7 @@ There are a few things you need to take into consideration when configuring the 
 
 ### Replicating the HMAC key {#replicating-the-hmac-key}
 
-In order to replicate the key across instances, you need to:
+To replicate the key across instances, you need to:
 
 1. Access the AEM instance, typically an author instance, that contains the key material to copy;
 1. Locate the `com.adobe.granite.crypto.file` bundle in the local file system. For example, under this path:

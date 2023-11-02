@@ -38,7 +38,7 @@ Play a walkthrough on [how carousel banners are created](https://s7d5.scene7.com
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group in order to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
 ## Quick Start: Carousel banners {#quick-start-carousel-banners}
 
@@ -331,7 +331,7 @@ See also [Add image maps](/help/assets/image-maps.md).
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group in order to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
 You can perform various editing tasks on Carousel Sets such as the following:
 

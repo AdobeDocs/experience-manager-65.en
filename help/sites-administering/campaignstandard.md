@@ -211,7 +211,7 @@ Just as you need a user in Adobe Campaign that AEM can use to communicate with A
 
 ## Configure the AEM External Account in Campaign {#acc-external-user}
 
-When you [created an AEM-specific email delivery template,](#aem-email-delivery-template) you specified that the template should use the `aemInstance` external account to communicate with AEM. In order to enable two-way communication between both solutions, you need to configure this account in Adobe Campaign.
+When you [created an AEM-specific email delivery template,](#aem-email-delivery-template) you specified that the template should use the `aemInstance` external account to communicate with AEM. To enable two-way communication between both solutions, you need to configure this account in Adobe Campaign.
 
 1. Log into Adobe Campaign as an administrator.
 

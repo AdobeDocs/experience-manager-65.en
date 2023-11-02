@@ -1,7 +1,7 @@
 ---
 title: Client Context
 seo-title: Client Context
-description: Learn how to use the Client Context in AEM.
+description: Learn how to use the Client Context to see information about the current page and visitor in Adobe Experience Manager.
 seo-description: Learn how to use the Client Context in AEM.
 uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service
@@ -86,7 +86,7 @@ When displayed in the Context Cloud, the component uses a Google API to display 
 
 **JSONP Store** A component that displays content that is dependent on your installation.
 
-The JSONP standard is a complement to JSON that allows the circumvention of the same origin policy (making it impossible for a web app to communicate with servers that are on another domain). It consists in wrapping the JSON object in a function call in order to be able load it as a `<script>` from the other domain (which is an allowed exception to the same origin policy).
+The JSONP standard is a complement to JSON that allows the circumvention of the same origin policy (making it impossible for a web app to communicate with servers that are on another domain). It consists in wrapping the JSON object in a function call to be able load it as a `<script>` from the other domain (which is an allowed exception to the same origin policy).
 
 The JSONP Store is like any other store, but it loads information that comes from another domain without the need of having a proxy for that information on the current domain. See the example in [Storing Data in Client Context Via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
