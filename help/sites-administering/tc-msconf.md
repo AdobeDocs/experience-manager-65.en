@@ -9,10 +9,6 @@ exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 
 Create a configuration for the [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) cloud service to use your Microsoft Translation account for translating AEM page content or assets.
 
->[!TIP]
->
->If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
-
 >[!NOTE]
 >
 >AEM provides a trial Microsoft Translation account that allows for a maximum of 2 000 000 free translated characters per month. To obtain an account subscription that is adequate for production systems, see [Upgrading The Microsoft Translator Trial License Configuration](#upgrading-the-microsoft-translator-trial-license-configuration).
