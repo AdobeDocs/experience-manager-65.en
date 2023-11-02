@@ -156,7 +156,7 @@ The following table lists the synchronization actions that are installed with AE
   </tr>
   <tr>
    <td>notify</td>
-   <td>Sends a page event that the page has been rolled out. In order to be notified, one needs to first subscribe to rollout events.</td>
+   <td>Sends a page event that the page has been rolled out. To be notified, one needs to first subscribe to rollout events.</td>
    <td> </td>
   </tr>
   <tr>

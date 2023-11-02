@@ -347,7 +347,7 @@ Before you can programmatically perform a Document Securityservice operation, yo
 
 **Retrieve an existing policy**
 
-You must retrieve an existing policy in order to modify it. To retrieve a policy, specify the policy name and the policy set to which the policy belongs. If you specify a `null` value for the policy set name, the policy is retrieved from the *My Policies* policy set.
+You must retrieve an existing policy to modify it. To retrieve a policy, specify the policy name and the policy set to which the policy belongs. If you specify a `null` value for the policy set name, the policy is retrieved from the *My Policies* policy set.
 
 **Set the policy's attributes**
 
@@ -541,7 +541,7 @@ For code examples using the Document Security service, see the following Quick S
 
 ## Applying Policies to PDF Documents {#applying-policies-to-pdf-documents}
 
-You can apply a policy to a PDF document in order to secure the document. By applying a policy to a PDF document, you restrict access to the document. You cannot apply a policy to a document if the document is already secured with a policy.
+You can apply a policy to a PDF document to secure the document. By applying a policy to a PDF document, you restrict access to the document. You cannot apply a policy to a document if the document is already secured with a policy.
 
 While the document is open, you can also restrict access to Acrobat and Adobe Reader features, including the ability to print and copy text, make changes, and add signatures and comments to a document. In addition, you can revoke a policy-protected PDF document when you no longer want users to access the document.
 
@@ -571,7 +571,7 @@ Before you can programmatically perform a Document Security service operation, c
 
 **Retrieve a PDF document**
 
-You can retrieve a PDF document in order to apply a policy. After you apply a policy to the PDF document, users are restricted when using the document. For example, if the policy does not enable the document to be opened while offline, then users must be online to open the document.
+You can retrieve a PDF document to apply a policy. After you apply a policy to the PDF document, users are restricted when using the document. For example, if the policy does not enable the document to be opened while offline, then users must be online to open the document.
 
 **Apply an existing policy to the PDF document**
 
@@ -708,7 +708,7 @@ For code examples using the Document Security service, see the following Quick S
 
 ## Removing Policies from PDF Documents {#removing-policies-from-pdf-documents}
 
-You can remove a policy from a policy-protected document in order to remove security from the document. That is, if you no longer want the document to be protected by a policy. If you want to update a policy-protected document with a newer policy, then instead of removing the policy and adding the updated policy, it is more efficient to switch the policy.
+You can remove a policy from a policy-protected document to remove security from the document. That is, if you no longer want the document to be protected by a policy. If you want to update a policy-protected document with a newer policy, then instead of removing the policy and adding the updated policy, it is more efficient to switch the policy.
 
 >[!NOTE]
 >
@@ -734,11 +734,11 @@ Before you can programmatically perform a Document Security service operation, c
 
 **Retrieve a policy-protected PDF document**
 
-You can retrieve a policy-protected PDF document in order to remove a policy. If you attempt to remove a policy from a PDF document that is not protected by a policy, you will cause an exception.
+You can retrieve a policy-protected PDF document to remove a policy. If you attempt to remove a policy from a PDF document that is not protected by a policy, you will cause an exception.
 
 **Remove the policy from the PDF document**
 
-You can remove a policy from a policy-protected PDF document provided that an administrator is specified in the connection settings. If not, then the policy used to secure a document must contain the `SWITCH_POLICY` permission in order to remove a policy from a PDF document. Also, the user specified in the AEM Forms connection settings must also have that permission. Otherwise, an exception is thrown.
+You can remove a policy from a policy-protected PDF document provided that an administrator is specified in the connection settings. If not, then the policy used to secure a document must contain the `SWITCH_POLICY` permission to remove a policy from a PDF document. Also, the user specified in the AEM Forms connection settings must also have that permission. Otherwise, an exception is thrown.
 
 **Save the unsecured PDF document**
 
@@ -872,9 +872,9 @@ Before you can programmatically perform a Document Security service operation, y
 
 **Retrieve a policy-protected PDF document**
 
-You must retrieve a policy-protected PDF document in order to revoke it. You cannot revoke a document that has already been revoked or is not a policy-protected document.
+You must retrieve a policy-protected PDF document to revoke it. You cannot revoke a document that has already been revoked or is not a policy-protected document.
 
-If you know the license identifier value of the policy-protected document, then it is not necessary to retrieve the policy-protected PDF document. However, in most cases, you will need to retrieve the PDF document in order to obtain the license identifier value.
+If you know the license identifier value of the policy-protected document, then it is not necessary to retrieve the policy-protected PDF document. However, in most cases, you will need to retrieve the PDF document to obtain the license identifier value.
 
 **Revoke the policy-protected document**
 
@@ -1014,7 +1014,7 @@ Before you can programmatically perform a Document Security service operation, y
 
 **Retrieve the license identifier of the revoked PDF document**
 
-You must retrieve the license identifier of the revoked PDF document in order to reinstate a revoked PDF document. After you obtain the license identifier value, you can reinstate a revoked document. If you attempt to reinstate a document that is not revoked, you will cause an exception.
+You must retrieve the license identifier of the revoked PDF document to reinstate a revoked PDF document. After you obtain the license identifier value, you can reinstate a revoked document. If you attempt to reinstate a document that is not revoked, you will cause an exception.
 
 **Reinstate access to the revoked PDF document**
 
@@ -1943,7 +1943,7 @@ For code examples using the Rights Management service, see the following Quick S
 
 ## Applying Policies to Word Documents {#applying-policies-to-word-documents}
 
-In addition to PDF documents, the Rights Mangement service supports additional document formats such as a Microsoft Word document (DOC file) and other Micosoft office file formats. For example, you can apply a policy to a Word document in order to secure it. By applying a policy to a Word document, you restrict access to the document. You cannot apply a policy to a document if the document is already secured with a policy.
+In addition to PDF documents, the Rights Mangement service supports additional document formats such as a Microsoft Word document (DOC file) and other Micosoft office file formats. For example, you can apply a policy to a Word document to secure it. By applying a policy to a Word document, you restrict access to the document. You cannot apply a policy to a document if the document is already secured with a policy.
 
 You can monitor the use of a policy-protected Word document after you distribute it. That is, you can see how the document is being used and who is using it. For example, you can find out when somebody has opened the document.
 
@@ -1971,7 +1971,7 @@ Before you can programmatically perform a Document Security service operation, y
 
 **Retrieve a Word document**
 
-You must retrieve a Word document in order to apply a policy. After you apply a policy to the Word document, users are restricted when using the document. For example, if the policy does not enable the document to be opened while offline, then users must be online to open the document.
+You must retrieve a Word document to apply a policy. After you apply a policy to the Word document, users are restricted when using the document. For example, if the policy does not enable the document to be opened while offline, then users must be online to open the document.
 
 **Apply an existing policy to the Word document**
 
@@ -2100,7 +2100,7 @@ For code examples using the Document Security service, see the following Quick S
 
 ## Removing Policies from Word Documents {#removing-policies-from-word-documents}
 
-You can remove a policy from a policy-protected Word document in order to remove security from the document. That is, if you no longer want the document to be protected by a policy. If you want to update a policy-protected Word document with a newer policy, then instead of removing the policy and adding the updated policy, it is more efficient to switch the policy.
+You can remove a policy from a policy-protected Word document to remove security from the document. That is, if you no longer want the document to be protected by a policy. If you want to update a policy-protected Word document with a newer policy, then instead of removing the policy and adding the updated policy, it is more efficient to switch the policy.
 
 >[!NOTE]
 >
@@ -2126,11 +2126,11 @@ Before you can programmatically perform a Document Security service operation, c
 
 **Retrieve a policy-protected Word document**
 
-You must retrieve a policy-protected Word document in order to remove a policy. If you attempt to remove a policy from a Word document that is not protected by a policy, you will cause an exception.
+You must retrieve a policy-protected Word document to remove a policy. If you attempt to remove a policy from a Word document that is not protected by a policy, you will cause an exception.
 
 **Remove the policy from the Word document**
 
-You can remove a policy from a policy-protected Word document provided that an administrator is specified in the connection settings. If not, then the policy used to secure a document must contain the `SWITCH_POLICY` permission in order to remove a policy from a Word document. Also, the user specified in the AEM Forms connection settings must also have that permission. Otherwise, an exception is thrown.
+You can remove a policy from a policy-protected Word document provided that an administrator is specified in the connection settings. If not, then the policy used to secure a document must contain the `SWITCH_POLICY` permission to remove a policy from a Word document. Also, the user specified in the AEM Forms connection settings must also have that permission. Otherwise, an exception is thrown.
 
 **Save the unsecured Word document**
 

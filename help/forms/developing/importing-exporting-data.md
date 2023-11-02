@@ -45,7 +45,7 @@ To import data into a form created in Designer, you must reference a valid XDP X
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
-In order to import data values into this form, you must have a valid XDP XML data source that corresponds to the form. You cannot use an arbitrary XML data source to import data into a form using the Form Data Integration service. The difference between an arbitrary XML data source and an XDP XML data source is that an XDP data source conforms to the XML Forms Architecture (XFA). The following XML represents an XDP XML data source that corresponds to the example mortgage application form.
+To import data values into this form, you must have a valid XDP XML data source that corresponds to the form. You cannot use an arbitrary XML data source to import data into a form using the Form Data Integration service. The difference between an arbitrary XML data source and an XDP XML data source is that an XDP data source conforms to the XML Forms Architecture (XFA). The following XML represents an XDP XML data source that corresponds to the example mortgage application form.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8" ?>
@@ -117,7 +117,7 @@ To import data into a PDF form, you must reference either an XML form created in
 
 **Reference an XML data source**
 
-In order to import form data, you must reference a valid data source. To import data into an XFA XML form created in Designer, you must use an XDP XML data source. If you reference an Acrobat form, then you must use an XFDF data source. For each field that you want to import data into, a value must be specified. If an element located in the XML data source does not correspond to a field in the form, then the element is ignored.
+To import form data, you must reference a valid data source. To import data into an XFA XML form created in Designer, you must use an XDP XML data source. If you reference an Acrobat form, then you must use an XFDF data source. For each field that you want to import data into, a value must be specified. If an element located in the XML data source does not correspond to a field in the form, then the element is ignored.
 
 **Import data into the PDF form**
 

@@ -156,7 +156,7 @@ Set the file URI option when creating a PDF document. This option specifies the 
 
 **Set rendering run-time options**
 
-You can set rendering run-time options when creating a PDF document. Although these options are not required (unlike PDF run-time options that are required), you can perform tasks such as improving the performance of the Output service. For example, you can cache the form design that the Output service uses in order to improve its performance.
+You can set rendering run-time options when creating a PDF document. Although these options are not required (unlike PDF run-time options that are required), you can perform tasks such as improving the performance of the Output service. For example, you can cache the form design that the Output service uses to improve its performance.
 
 If you use a tagged Acrobat form as input, you cannot use the Output service Java or web service API to turn off the tagged setting. If you attempt to programmatically set this option to `false`, the result PDF document is still tagged.
 
@@ -1743,7 +1743,7 @@ You must set the following run-time options for the Output service to successful
 
 **Set rendering run-time options**
 
-You can set rendering run-time options while creating multiple files. Although these options are not required (unlike output run-time options, which are required), you can perform tasks such as improving the performance of the Output service. For example, you can cache the form design that the Output service uses in order to improve performance.
+You can set rendering run-time options while creating multiple files. Although these options are not required (unlike output run-time options, which are required), you can perform tasks such as improving the performance of the Output service. For example, you can cache the form design that the Output service uses to improve performance.
 
 When the Output service processes batch records, it reads data that contains multiple records in an incremental manner. That is, the Output service reads the data into memory and releases the data as the batch of records is processed. The Output service loads data in an incremental manner when either one of two run-time options are set. If you set the Record Name run-time option, the Output service reads data in an incremental manner. Likewise, if you set the Record Level run-time option to 2 or greater, the Output service reads data in an incremental manner.
 
@@ -1992,7 +1992,7 @@ Set the following PDF run-time options in order for the Output service to succes
 
 **Set rendering run-time options**
 
-You can set rendering run-time options while creating PDF files. Although these options are not required (unlike PDF run-time options), you can perform tasks such as improving the performance of the Output service. For example, you can cache the form design that the Output service uses in order to improve performance.
+You can set rendering run-time options while creating PDF files. Although these options are not required (unlike PDF run-time options), you can perform tasks such as improving the performance of the Output service. For example, you can cache the form design that the Output service uses to improve performance.
 
 **Generate a PDF document**
 
@@ -2051,7 +2051,7 @@ Create search rules by using the Output API (Java):
 1. Set rendering run-time options.
 
     * Create a `RenderOptionsSpec` object by using its constructor.
-    * Cache the form design in order to improve the performance of the Output service by invoking the `RenderOptionsSpec` object's `setCacheEnabled` and passing `true`.
+    * Cache the form design to improve the performance of the Output service by invoking the `RenderOptionsSpec` object's `setCacheEnabled` and passing `true`.
 
 1. Generate a PDF document.
 
@@ -2141,7 +2141,7 @@ Create search rules by using the Output API (web service):
 1. Set rendering run-time options
 
     * Create a `RenderOptionsSpec` object by using its constructor.
-    * Cache the form design in order to improve the performance of the Output service by assigning the value `true` to the `RenderOptionsSpec` object's `cacheEnabled` data member.
+    * Cache the form design to improve the performance of the Output service by assigning the value `true` to the `RenderOptionsSpec` object's `cacheEnabled` data member.
 
    >[!NOTE]
    >

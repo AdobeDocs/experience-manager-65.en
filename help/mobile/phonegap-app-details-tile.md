@@ -66,7 +66,7 @@ Within this section you define the Content Update Server URL, landing page for y
 
 **App Version** is the working version of your application. Common best practice is to use a 3-decimal notation and start below 1.0.0 prior to your first release.
 
-**PhoneGap Version** is the version in which you wish to compile your application with PhoneGap. Best practice is to keep up with the current version in order to ensure you get the latest and greatest features and bug fixes.
+**PhoneGap Version** is the version in which you wish to compile your application with PhoneGap. Best practice is to keep up with the current version to ensure you get the latest and greatest features and bug fixes.
 
 **Content Update Server URL** is the URL which your application will use to call for ContentSync updates. It must be set to your Dispatcher URL or, if not using a Dispatcher, to one of your publish instances that will be used to serve ContentSync updates to your application.
 
@@ -92,7 +92,7 @@ For platforms which are not understood by AEM, it is still possible for a AEM de
 
 #### iOS Metadata {#ios-metadata}
 
-The Apple AppStore requires additional metadata in order to submit your application for distribution. The iOS metadata section attempts to collect the required information that can be used by Apple's iTMSTransporter tool to publish the metadata to the associated Apple developer's account.
+The Apple AppStore requires additional metadata to submit your application for distribution. The iOS metadata section attempts to collect the required information that can be used by Apple's iTMSTransporter tool to publish the metadata to the associated Apple developer's account.
 
 To obtain the Apple specific metadata you first need to create your application on [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Upon creating your application Apple will generate metadata which is required by the iOS metadata section if you wish to use the Apple iTMSTransporter tool to validate and upload the metadata to itunesconnect.apple.com. If you just want to obtain the metadata to collect you don't necessarily need to fill out the iOS specific metadata. You can still export the metadata that will merge the iOS and common metadata and collect all the screenshots into a zip file that can be downloaded at any time.
 

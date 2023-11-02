@@ -349,7 +349,7 @@ Before you can import your Landing Page design, you need to create an importer p
 
 >[!NOTE]
 >
->By default, an Importer Page can only be created under campaigns, but you can also overlay this template in order to create a landing page under `/content/mysite`.
+>By default, an Importer Page can only be created under campaigns, but you can also overlay this template to create a landing page under `/content/mysite`.
 
 To create a new landing page:
 
@@ -383,7 +383,7 @@ Assuming that you have the design package ready, the following steps describe ho
 
 >[!NOTE]
 >
->Upon import the markup is sanitized for security reasons and in order to avoid importing and publishing invalid markup. This assumes HTML-only markup and all other form of elements such as inline SVG or Web Components will be filtered out.
+>Upon import the markup is sanitized for security reasons and to avoid importing and publishing invalid markup. This assumes HTML-only markup and all other form of elements such as inline SVG or Web Components will be filtered out.
 
 >[!NOTE]
 >

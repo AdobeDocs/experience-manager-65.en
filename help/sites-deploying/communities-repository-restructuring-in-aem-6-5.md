@@ -1,13 +1,9 @@
 ---
 title: Repository Restructuring for AEM Communities in 6.4
-seo-title: Repository Restructuring for AEM Communities in 6.4
-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Communities.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Communities.
-uuid: d161655f-4074-44a7-8d69-38e80934c58b
+description: Learn how to make the necessary changes to migrate to the new repository structure in AEM 6.4 for Communities.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 feature: Upgrading
 exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
 ---

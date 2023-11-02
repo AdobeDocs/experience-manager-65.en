@@ -36,7 +36,7 @@ For a [publish farm](topologies.md), registration and modifications made on one 
 
 ### Contribution Limits {#contribution-limits}
 
-In order to protect against spam, it is possible to limit members' frequency of posting content. Further, it is possible to automatically limit the contributions of newly registered members.
+To protect against spam, it is possible to limit members' frequency of posting content. Further, it is possible to automatically limit the contributions of newly registered members.
 
 For details, see [Member Contribution Limits](limits.md).
 
@@ -110,7 +110,7 @@ In the publish environment, depending on the [settings](sites-console.md#user-ma
 | Community &lt;*site name*&gt; &lt;*group name*&gt; Members |A community group member is a community member who has either joined an open community group or has been invited to a closed community group. They have the abilities of a member for that community group within the site. |
 | Community &lt;*site name*&gt; Groupadministrators |A community site group administrator is a trusted community member who is assigned to create and manage sub-communities (groups) within a community site. Included is the ability to provide in-context moderation.  |
 | *Privileged Members Security Group* |A manually created and maintained user group for the purpose of restricting content creation. See [Privileged Members Group](#privileged-members-group). |
-| None |An anonymous site visitor, who discovers the site, may view and search community sites that allow anonymous access. In order to participate and post content, the user must self-register (if allowed) and become a community member. |
+| None |An anonymous site visitor, who discovers the site, may view and search community sites that allow anonymous access. To participate and post content, the user must self-register (if allowed) and become a community member. |
 
 ### Assigning Members to Publish Group Roles {#assigning-members-to-publish-group-roles}
 

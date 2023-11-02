@@ -1,13 +1,9 @@
 ---
 title: SPA Blueprint
-seo-title: SPA Blueprint
-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
-seo-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
-uuid: 48f2d415-ec34-49dc-a8e1-6feb5a8a5bbe
+description: This document describes the general, framework-independent contract that any SPA framework should fulfill to implement editable SPA components within AEM.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 ---
@@ -21,7 +17,7 @@ To enable the author to use the AEM SPA Editor to edit the content of an SPA, th
 
 ## Introduction {#introduction}
 
-This document describes the general contract that any SPA framework should fulfill (i.e. the kind of AEM support layer) in order to implement editable SPA components within AEM.
+This document describes the general contract that any SPA framework should fulfill (i.e. the kind of AEM support layer) to implement editable SPA components within AEM.
 
 >[!NOTE]
 >
@@ -73,7 +69,7 @@ The SPA components must be in sync with the page model and be updated with any c
 
 ### Meta Fields {#meta-fields}
 
-The page model leverages the JSON Model Exporter, which is itself based on the [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API. The exportable sling models expose the following list of fields in order to enable the underlying libraries interpret the data model:
+The page model leverages the JSON Model Exporter, which is itself based on the [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API. The exportable sling models expose the following list of fields to enable the underlying libraries interpret the data model:
 
 * `:type`: Type of the AEM resource (default = resource type)
 * `:children`: Hierarchical children of the current resource. Children are not part of the inner content of the current resource (can be found on items representing a page)

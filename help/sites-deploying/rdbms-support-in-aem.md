@@ -40,7 +40,7 @@ In order for it to work, a data source needs to be configured with AEM. This is 
 
 For steps on creating OSGi bundles for JDBC drivers, please see this [documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) on the Apache Sling website.
 
-Once the bundles are in place, follow the below steps in order to configure AEM with RDB persistence:
+Once the bundles are in place, follow the below steps to configure AEM with RDB persistence:
 
 1. Make sure the database daemon is started and that you have an active database for use with AEM.
 1. Copy the AEM 6.3 jar into the installation directory.

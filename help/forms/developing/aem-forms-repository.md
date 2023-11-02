@@ -468,7 +468,7 @@ List resources by using the Repository service API (web service):
 
 ## Reading Resources {#reading-resources}
 
-You can retrieve resources from a given location in the repository in order to read their content and metadata. The workflow is front-ended by an initialization form. The process has all the permissions it needs to read the form. The system retrieves the data form and reads the content from the repository. The repository grants access to the content and the metadata (the ability to even know the resource exists).
+You can retrieve resources from a given location in the repository to read their content and metadata. The workflow is front-ended by an initialization form. The process has all the permissions it needs to read the form. The system retrieves the data form and reads the content from the repository. The repository grants access to the content and the metadata (the ability to even know the resource exists).
 
 The repository has the following four permission types:
 
@@ -836,7 +836,7 @@ Search for a resource by using the Repository service API (Java):
 
 1. Retrieve the resources from the search result
 
-   To retrieve the resources contained in the search result, iterate through the `List` and cast each object to a `Resource` in order to extract its information. In this example, the name of each resource is displayed.
+   To retrieve the resources contained in the search result, iterate through the `List` and cast each object to a `Resource` to extract its information. In this example, the name of each resource is displayed.
 
 **See also**
 

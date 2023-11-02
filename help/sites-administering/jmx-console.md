@@ -892,7 +892,7 @@ CRX allows external applications to interact with Managed Beans (MBeans) via [Ja
 
 ### Using JConsole to connect to CRX {#using-jconsole-to-connect-to-crx}
 
-In order to connect to CRX using JConsole, follow these steps:
+To connect to CRX using JConsole, follow these steps:
 
 1. Open a terminal window.
 1. Enter the following command:
@@ -909,7 +909,7 @@ JConsole will display a list of local Java Virtual Machine processes. The list w
 
 ### Connecting to a remote CRX process {#connecting-to-a-remote-crx-process}
 
-In order to connect to a remote CRX process, the JVM that hosts the remote CRX process will need to be enabled to accept remote JMX connections.
+To connect to a remote CRX process, the JVM that hosts the remote CRX process will need to be enabled to accept remote JMX connections.
 
 To enable remote JMX connections, the following system property must be set when starting the JVM:
 
@@ -938,7 +938,7 @@ After connecting to the quickstart process, JConsole provides a range of general
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
-In order to access CRX's internal monitoring and configuration options, go to the MBeans tab, and from the hierarchical content tree on the left, select the Attributes or Operations section that you are interested in. For example the com.adobe.granite/Repository/Operations section.
+To access CRX's internal monitoring and configuration options, go to the MBeans tab, and from the hierarchical content tree on the left, select the Attributes or Operations section that you are interested in. For example the com.adobe.granite/Repository/Operations section.
 
 Within that section, select the desired attribute or operation in the left pane.
 

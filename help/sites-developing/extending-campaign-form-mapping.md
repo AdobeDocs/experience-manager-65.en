@@ -28,7 +28,7 @@ See [Integrating AEM with Adobe Campaign Classic](/help/sites-administering/camp
 
 ## Creating Custom Form Mappings {#creating-custom-form-mappings-2}
 
-In order to create custom form mappings, you need to follow these high-level steps, which are described in detail in the following sections:
+To create custom form mappings, you need to follow these high-level steps, which are described in detail in the following sections:
 
 1. Create a custom table.
 1. Extend the **seed** table.

@@ -475,7 +475,7 @@ Packages are defined by their filters. You can have Package Manager apply filter
 
 ### Installing Packages {#installing-packages}
 
-Uploading a package only adds the package content to the repository, but it is not accessible. You must install the uploaded package in order to use the package's content.
+Uploading a package only adds the package content to the repository, but it is not accessible. You must install the uploaded package to use the package's content.
 
 >[!CAUTION]
 >

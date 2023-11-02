@@ -116,7 +116,7 @@ Retrieves a Siren representation of an existing folder and of its child entities
 * 404 - NOT FOUND - folder does not exist or is not accessible.
 * 500 - INTERNAL SERVER ERROR - if something else goes wrong.
 
-**Response**: The class of the entity returned is an asset or a folder. The properties of contained entities are a subset of the full set of properties of each entity. In order to obtain a full representation of the entity, clients should retrieve the contents of the URL pointed to by the link with a `rel` of `self`.
+**Response**: The class of the entity returned is an asset or a folder. The properties of contained entities are a subset of the full set of properties of each entity. To obtain a full representation of the entity, clients should retrieve the contents of the URL pointed to by the link with a `rel` of `self`.
 
 ## Create a folder {#create-a-folder}
 

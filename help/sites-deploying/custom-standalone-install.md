@@ -41,13 +41,13 @@ There are various rules to be followed when renaming the quickstart jar file:
 
 If you are running Oracle Java 11 (or generally versions of Java newer than 8), additional switches will need to be added to your command line when starting AEM.
 
-* The following - `-add-opens` switches need to be added in order to prevent related reflection access WARNING messages in the `stdout.log`
+* The following - `-add-opens` switches need to be added to prevent related reflection access WARNING messages in the `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Additionally, you need to make use of the `-XX:+UseParallelGC` switch in order to mitigate any potential performance issues.
+* Additionally, you need to make use of the `-XX:+UseParallelGC` switch to mitigate any potential performance issues.
 
 Below is a sample of how the additional JVM parameters should look like when starting AEM on Java 11:
 

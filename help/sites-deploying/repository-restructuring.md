@@ -34,7 +34,7 @@ When upgrading to AEM 6.5, a large subset of the content under /etc will be dupl
 
 ### Restructuring Guidance {#restructuring-guidance}
 
-While planning for an upgrade to AEM 6.5, the following per-solution pages should be referenced in order to assess the work effort:
+While planning for an upgrade to AEM 6.5, the following per-solution pages should be referenced to assess the work effort:
 
 * [Repository restructuring common to all AEM solutions](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
 * [AEM Sites repository restructuring](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)

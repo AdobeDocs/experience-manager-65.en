@@ -208,7 +208,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 To use the interface, you first need to create a bundle containing a new service component that implements the Link Rewriter Provider interface.
 
-This service is used to plug into the Experience Fragment Export to Target rewriting in order to have access to the various links.
+This service is used to plug into the Experience Fragment Export to Target rewriting to have access to the various links.
 
 For example, `ComponentService`:
 

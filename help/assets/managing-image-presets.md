@@ -279,7 +279,7 @@ Leaving them blank tells Experience Manager that this image preset is responsive
 
 >[!NOTE]
 >
->In order to see the **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons when applying an image preset to an asset, the asset must be published.
+>To see the **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons when applying an image preset to an asset, the asset must be published.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >

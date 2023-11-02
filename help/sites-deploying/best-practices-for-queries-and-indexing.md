@@ -99,13 +99,13 @@ Lucene registers a JMX bean that will provide details about indexed content incl
 
 You can reach it by accessing the JMX Console at `https://server:port/system/console/jmx`
 
-Once you are logged in to the JMX console, perform a search for **Lucene Index Statistics** in order to find it. Other index statistics can be found in the **IndexStats** MBean.
+Once you are logged in to the JMX console, perform a search for **Lucene Index Statistics** to find it. Other index statistics can be found in the **IndexStats** MBean.
 
 For query statistics, look at the MBean named **Oak Query Statistics**.
 
 If you would like to dig into your indexes using a tool like [Luke](https://code.google.com/archive/p/luke/), you must use the Oak console to dump the index from the `NodeStore` to a filesystem directory. For instructions on how to do this, please read the [Lucene documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-You can also extract the indexes in your system in JSON format. In order to do this, you need to access `https://server:port/oak:index.tidy.-1.json`
+You can also extract the indexes in your system in JSON format. To do this, you need to access `https://server:port/oak:index.tidy.-1.json`
 
 ### Query Limits {#query-limits}
 

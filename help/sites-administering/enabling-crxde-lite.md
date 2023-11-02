@@ -1,19 +1,15 @@
 ---
 title: Enabling CRXDE Lite in AEM
-seo-title: Enabling CRXDE Lite in AEM
 description: Learn how to enable CRXDE Lite in Adobe Experience Manager.
-seo-description: Learn how to enable CRXDE Lite in AEM.
-uuid: d7a3db67-6384-463b-9aa9-f08ecc6c99c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
 ---
 # Enabling CRXDE Lite in AEM{#enabling-crxde-lite-in-aem}
 
-In order to ensure that AEM installations are as secure as possible, the security checklist recommends [disabling WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) in production environments.
+To ensure that AEM installations are as secure as possible, the security checklist recommends [disabling WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) in production environments.
 
 However, CRXDE Lite depends on the `org.apache.sling.jcr.davex` bundle to function properly, so disabling WebDAV will effectively disable CRXDE Lite as well.
 
@@ -23,7 +19,7 @@ When this happens, browsing to `https://serveraddress:4502/crx/de/index.jsp` wil
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-While this recommendation is intended to reduce attack surfaces as much as possible, system administrators might sometimes need access to CRXDE Lite in order to browse content or debug issues on production instances.
+While this recommendation is intended to reduce attack surfaces as much as possible, system administrators might sometimes need access to CRXDE Lite to browse content or debug issues on production instances.
 
 You can enable CRXDE Lite with either [OSGi settings](#enabling-crxde-lite-osgi) or with a [cURL command](#enabling-crxde-lite-curl).
 
@@ -42,7 +38,7 @@ If disabled, you can turn CRXDE Lite on by following the below procedure:
 
     * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`
 
-1. Click the wrench icon next to it in order to see its configuration options:
+1. Click the wrench icon next to it to see its configuration options:
 
    ![chlimage_1-80](assets/chlimage_1-80a.png)
 

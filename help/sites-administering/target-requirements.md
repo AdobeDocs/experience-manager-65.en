@@ -24,7 +24,7 @@ The Client Code identifies the Adobe Target customer account when calling the Ad
 
 >[!NOTE]
 >
->Your account must also be enabled by the Target team in order to use the integration.
+>Your account must also be enabled by the Target team to use the integration.
 >
 >If it is not the case, please contact [Adobe Customer Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
 

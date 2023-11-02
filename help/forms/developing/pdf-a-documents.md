@@ -232,7 +232,7 @@ Before you can programmatically perform an DocConverter operation, you must crea
 
 **Reference a PDF document used to determine PDF/A compliancy**
 
-A PDF document must be referenced and passed to the DocConverter service in order to determine whether the PDF document is PDF/A-compliant.
+A PDF document must be referenced and passed to the DocConverter service to determine whether the PDF document is PDF/A-compliant.
 
 **Set run-time options**
 
