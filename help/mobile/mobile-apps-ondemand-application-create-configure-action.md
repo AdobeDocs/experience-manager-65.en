@@ -19,7 +19,7 @@ exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 
 ## Creating an On-Demand Application {#creating-an-on-demand-application}
 
-Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content, and is often performed at the AEM Administrator level. It represents a content shell, viewable on mobile devices, ready to display author created content such as articles, images, collections, etc.
+Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content, and is often performed at the AEM Administrator level. It represents a content shell, viewable on mobile devices, ready to display author created content such as articles, images, collections, and so on.
 
 The details of your app can be viewed in the Dashboard or AEM Mobile Control Center.
 
@@ -33,7 +33,7 @@ The details of your app can be viewed in the Dashboard or AEM Mobile Control Cen
 
 1. Select **Mobile** from the side rail.
 1. Select **Apps** from the Navigation.
-1. Click **Create** and select **App** from the drop down.
+1. Click **Create** and select **App** from the drop-down.
 1. Choose the Mobile app template and click **Next**.
 1. Enter app properties such as **Title**, **Name**, **Description**.
 1. Click **Next**.
@@ -48,10 +48,10 @@ The details of your app can be viewed in the Dashboard or AEM Mobile Control Cen
 
 ## Using App Templates {#using-app-templates}
 
-App templates provide an easy way to leverage existing designs created by devlopers, used for the creation of new apps within AEM.
+App templates provide an easy way to use existing designs created by devlopers, used for the creation of new apps within AEM.
 
 What is an app template? Think of it as a collection of page templates and components that represent a baseline or foundation of an app.
-When creating a new app based on the template of another app, you will get an app that has a starting point representative of the app in which it was created from.
+When creating an app based on the template of another app, you get an app that has a starting point representative of the app in which it was created from.
 
 You must have an existing mobile app template (or an app installed that has an app template) to make use of this feature.
 

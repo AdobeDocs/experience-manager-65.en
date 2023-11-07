@@ -62,7 +62,7 @@ After the connector package for your preferred translation service is installed,
 * Whether human or machine translation is to be performed
 * Whether to translate other content that is associated with the Content Fragment such as tags
 
-To create a new translation configuration:
+To create a translation configuration:
 
 1. In the global navigation menu, click or tap **Tools** -&gt; **Cloud Services** -&gt; **Translation Cloud Services**.
 1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular project or can be global.

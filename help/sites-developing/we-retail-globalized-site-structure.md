@@ -60,6 +60,6 @@ We.Retail has been built with a globalized site structure offering a language ma
 >
 >This procedure demonstrated the built-in integration with Microsoft&reg; machine translation. Using the [AEM Translation Integration Framework](/help/sites-administering/translation.md), you can integrate with many standard translation services to orchestrate the translation of AEM.
 
-## Further Information {#further-information}
+## More information {#further-information}
 
-For further information, refer to the authoring document [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for complete technical details.
+For more information, see the authoring document [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for complete technical details.

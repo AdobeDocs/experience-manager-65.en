@@ -11,7 +11,7 @@ exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 
 # [!DNL Adobe Experience Manager Assets] performance tuning guide {#assets-performance-tuning-guide}
 
-An [!DNL Experience Manager Assets] setup contains a number of hardware, software, and network components. Depending upon your deployment scenario, you may require specific configuration changes to hardware, software, and network components to remove performance bottlenecks.
+An [!DNL Experience Manager Assets] setup contains several hardware, software, and network components. Depending upon your deployment scenario, you may require specific configuration changes to hardware, software, and network components to remove performance bottlenecks.
 
 In addition, identifying and adhering to certain hardware and software optimization guidelines helps build a sound foundation that enables your [!DNL Experience Manager Assets] deployment to meet expectations around performance, scalability, and reliability.
 
@@ -23,11 +23,11 @@ Here are certain key focus areas around which you discover and fix performance i
 
 ## Platform {#platform}
 
-While Experience Manager is supported on a number of platforms, Adobe has found the greatest support for native tools on Linux and Windows, which contributes to optimum performance and ease of implementation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. As with any Experience Manager deployment, you should implement TarMK wherever possible. While TarMK cannot scale beyond a single author instance, it is found to perform better than MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
+While Experience Manager is supported on several platforms, Adobe has found the greatest support for native tools on Linux and Windows, which contributes to optimum performance and ease of implementation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. As with any Experience Manager deployment, you should implement TarMK wherever possible. While TarMK cannot scale beyond a single author instance, it is found to perform better than MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
 
 ### Temporary folder {#temp-folder}
 
-To improve asset upload times, use high performance storage for the Java temporary directory. On Linux and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
+To improve asset upload times, use high performance storage for the Java temporary directory. On Linux and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example, in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
 
 Assuming the server has ample memory, configure a RAM drive. On Linux, run these commands to create an 8 GB RAM drive:
 
@@ -151,7 +151,7 @@ By default, [!DNL Experience Manager] runs a maximum number of parallel jobs equ
 
 1. On [!DNL Experience Manager] Author, access `https://[aem_server]:[port]/system/console/slingevent`.
 
-1. Click **[!UICONTROL Edit]** on each workflow queue that is relevant to your implementation, for example **[!UICONTROL Granite Transient Workflow Queue]**.
+1. Click **[!UICONTROL Edit]** on each workflow queue that is relevant to your implementation, for example, **[!UICONTROL Granite Transient Workflow Queue]**.
 
 1. Update the value of **[!UICONTROL Maximum Parallel Jobs]** and click **[!UICONTROL Save]**.
 
@@ -222,7 +222,7 @@ Importing a large amount of metadata can result in resource-intensive XMP writeb
 
 ## Replication {#replication}
 
-When replicating assets to a large number of publish instances, for example in a Sites implementation, Adobe recommends you use chain replication. In this case, the author instance replicates to a single publish instance which in turn replicates to the other publish instances, freeing up the author instance.
+When replicating assets to a large number of publish instances, for example, in a Sites implementation, Adobe recommends you use chain replication. In this case, the author instance replicates to a single publish instance which in turn replicates to the other publish instances, freeing up the author instance.
 
 ### Configure chain replication {#configure-chain-replication}
 

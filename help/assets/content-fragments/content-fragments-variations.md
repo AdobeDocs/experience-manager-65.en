@@ -177,7 +177,7 @@ If the Content Fragment Model contains Fragment References, your fragment author
 The option **Edit Content Fragment** opens that fragment in a new window tab.
 
 <!--
-The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
+The option **Edit Content Fragment** opens that fragment in a new editor tab (within the same browser tab).
 
 Selecting the original tab again (for example, **Little Pony Inc.**), will close this secondary tab (in this case, **Adam Smith**).
 
@@ -429,7 +429,7 @@ To rename an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Rename** from the **Actions** drop down.
+1. Select **Rename** from the **Actions** drop-down.
 
 1. Enter the new **Title** and/or **Description** in the resulting dialog box.
 
@@ -445,7 +445,7 @@ To delete an existing variation:
 
 1. Open your fragment and select **Variations** from the side panel.
 1. Select the required variation.
-1. Select **Delete** from the **Actions** drop down.
+1. Select **Delete** from the **Actions** drop-down.
 
 1. Confirm the **Delete** action in the dialog.
 
@@ -475,7 +475,7 @@ When editing a variation, you have access to the action for synchronizing the cu
 
 1. Select a specific variation, then the appropriate synchronization action from either:
 
-   * the **Actions** drop down selector - **Sync current element with master**
+   * the **Actions** drop-down selector - **Sync current element with master**
 
       ![synchronizing with master](assets/cfm-variations-11a.png)
 

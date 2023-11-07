@@ -9,7 +9,7 @@ exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 ---
 # Process assets using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
 
-[!DNL Adobe Experience Manager Assets] comes with a set of default workflows and media handlers to process assets. A workflow defines the tasks to be executed on the assets, then delegates the specific tasks to the media handlers, for example thumbnail generation or metadata extraction.
+[!DNL Adobe Experience Manager Assets] comes with a set of default workflows and media handlers to process assets. A workflow defines the tasks to be executed on the assets, then delegates the specific tasks to the media handlers, for example, thumbnail generation or metadata extraction.
 
 A workflow can be configured to automatically execute when an asset of a particular MIME type is uploaded. The processing steps are defined in terms of a series of [!DNL Assets] media handlers. [!DNL Experience Manager] provides some [built in handlers,](#default-media-handlers) and additional ones can be either [custom developed](#creating-a-new-media-handler) or defined by delegating the process to a [command line tool](#command-line-based-media-handler).
 
@@ -77,9 +77,9 @@ To enable/disable a media handler:
 1. Refresh the page: an icon is displayed beside the media handler indicating it is disabled.
 1. To enable the media handler, click **[!UICONTROL Enable]** next to the name of the media handler.
 
-### Create a new media handler {#creating-a-new-media-handler}
+### Create a media handler {#creating-a-new-media-handler}
 
-To support a new media type or to execute specific tasks on an asset, it is necessary to create a new media handler. This section describes how to proceed.
+To support a new media type or to execute specific tasks on an asset, it is necessary to create a media handler. This section describes how to proceed.
 
 #### Important classes and interfaces {#important-classes-and-interfaces}
 
@@ -432,8 +432,8 @@ After you perform the following procedure, when you upload a TXT file into [!DNL
     1. Right-click the `myBundle` project, select **[!UICONTROL Run As]**, then **[!UICONTROL Maven Install]**.
     1. The bundle `myBundle-0.0.1-SNAPSHOT.jar` (containing the compiled class) is created under `myBundle/target`.
 
-1. In CRX explorer, create a new node under `/apps/myApp`. Name = `install`, Type = `nt:folder`.
-1. Copy the bundle `myBundle-0.0.1-SNAPSHOT.jar` and store it under `/apps/myApp/install` (for example with WebDAV). The new text handler is now active in [!DNL Experience Manager].
+1. In CRX explorer, create a node under `/apps/myApp`. Name = `install`, Type = `nt:folder`.
+1. Copy the bundle `myBundle-0.0.1-SNAPSHOT.jar` and store it under `/apps/myApp/install` (for example, with WebDAV). The new text handler is now active in [!DNL Experience Manager].
 1. In your browser, open the [!UICONTROL Apache Felix Web Management Console]. Select the [!UICONTROL Components] tab and disable the default text handler `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Command Line based media handler {#command-line-based-media-handler}
@@ -487,8 +487,8 @@ Install [!DNL ImageMagick] on the disk hosting the [!DNL Experience Manager] ser
 
 To test the modified workflow, add an asset to `/content/dam`.
 
-1. In the file system, get a TIFF image of your choice. Rename it to `myImage.tiff` and copy it to `/content/dam`, for example by using WebDAV.
-1. Go to the **[!UICONTROL CQ5 DAM]** console, for example `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. In the file system, get a TIFF image of your choice. Rename it to `myImage.tiff` and copy it to `/content/dam`, for example, by using WebDAV.
+1. Go to the **[!UICONTROL CQ5 DAM]** console, for example, `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Open the asset **[!UICONTROL myImage.tiff]** and verify that the flipped image and the three thumbnails have been created.
 
 #### Configure the CommandLineProcess process step {#configuring-the-commandlineprocess-process-step}
@@ -501,7 +501,7 @@ Separate the values of the [!UICONTROL Process Arguments] using comma and do not
 |---|---|
 | mime:&lt;mime-type&gt; | Optional argument. The process is applied if the asset has the same MIME type as the one of the argument. <br>Several MIME types can be defined. |
 | tn:&lt;width&gt;:&lt;height&gt; | Optional argument. The process creates a thumbnail with the dimensions defined in the argument. <br>Several thumbnails can be defined. |
-| cmd: &lt;command&gt; | Defines the command that is executed. The syntax depends on the command line tool. Only one command can be defined. <br>The following variables can be used to create the command:<br>`${filename}`: name of the input file, for example original.jpg <br> `${file}`: full path name of the input file, for example `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directory of the input file, for example `/tmp/cqdam0816.tmp` <br>`${basename}`: name of the input file without its extension, for example original <br>`${extension}`: extension of the input file, for example JPG. |
+| cmd: &lt;command&gt; | Defines the command that is executed. The syntax depends on the command line tool. Only one command can be defined. <br>The following variables can be used to create the command:<br>`${filename}`: name of the input file, for example, original.jpg <br> `${file}`: full path name of the input file, for example, `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directory of the input file, for example, `/tmp/cqdam0816.tmp` <br>`${basename}`: name of the input file without its extension, for example, original <br>`${extension}`: extension of the input file, for example, JPG. |
 
 For example, if [!DNL ImageMagick] is installed on the disk hosting the [!DNL Experience Manager] server and if you create a process step using [!UICONTROL CommandLineProcess] as Implementation and the following values as [!UICONTROL Process Arguments]:
 

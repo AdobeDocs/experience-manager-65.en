@@ -1,12 +1,10 @@
 ---
 title: Workflow participation
 description: Workflows typically include steps that require a person to perform an activity on a page or asset.
-uuid: 15d56bcc-1e84-4cc0-8b71-7fb906cd7ff7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 ---
@@ -35,12 +33,12 @@ When you are assigned a work item (for example, **Approve Content**) various ale
 
 * When you are using the page editor the status bar will show:
 
-    * The name of the workflow(s) being applied to the page; for example Request for Activation.
+    * The name of the workflow(s) being applied to the page; for example, Request for Activation.
     * Any actions available to the current user for the current step of the workflow; for example, Complete, Delegate, View details.
     * The number of workflows that the page is subject to. You can:
 
         * use the left/right arrows to navigate through the status information of the various workflows.
-        * click/tap on the actual number to open a drop down list of all applicable workflows, then select the workflow you want displayed in the status bar.
+        * click/tap on the actual number to open a drop-down list of all applicable workflows, then select the workflow you want displayed in the status bar.
 
   ![wf-59](assets/wf-59.png)
 
@@ -51,7 +49,7 @@ When you are assigned a work item (for example, **Approve Content**) various ale
   >
   >Actions are shown when the current user is directly involved in the current step of the workflow.
 
-* When **Timeline** is open for the resource, the workflow step will be shown. When you click/tap on the alert banner, the available actions will also be shown:
+* When **Timeline** is open for the resource, the workflow step is shown. When you click/tap on the alert banner, the available actions will also be shown:
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -78,7 +76,7 @@ Use the following procedure to complete the work item:
 1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Complete** from the toolbar.
-1. The **Complete Work Item** dialog will open. Select the **Next Step** from the drop down selector and add a **Comment** if required.
+1. The **Complete Work Item** dialog box opens. Select the **Next Step** from the drop-down selector and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Completing a Participant Step - Page Editor {#completing-a-participant-step-page-editor}
@@ -87,7 +85,7 @@ Use the following procedure to complete the work item:
 
 1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Select **Complete** from the status bar at the top.
-1. The **Complete Work Item** dialog will open. Select the **Next Step** from the drop down selector and add a **Comment** if required.
+1. The **Complete Work Item** dialog box opens. Select the **Next Step** from the drop-down selector and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Completing a Participant Step - Timeline {#completing-a-participant-step-timeline}
@@ -137,7 +135,7 @@ Use the following procedure to delegate a work item:
 1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Delegate** from the toolbar.
-1. The dialog will open. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
+1. The dialog box opens. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Delegating a Participant Step - Page Editor {#delegating-a-participant-step-page-editor}
@@ -146,7 +144,7 @@ Use the following procedure to delegate a work item:
 
 1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Select **Delegate** from the status bar at the top.
-1. The dialog will open. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
+1. The dialog box opens. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if required.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Delegating a Participant Step - Timeline {#delegating-a-participant-step-timeline}

@@ -19,7 +19,7 @@ The following section covers some issues that you might encounter when using AEM
 
 >[!NOTE]
 >
->Users who have administrator privileges, and who want to troubleshoot problems with AEM, can use the troubleshooting methods described in [Troubleshooting AEM (for Administrators)](/help/sites-administering/troubleshoot.md). If you do not have sufficient privileges, please see your system administrator about troubleshooting AEM.
+>Users who have administrator privileges, and who want to troubleshoot problems with AEM, can use the troubleshooting methods described in [Troubleshooting AEM (for Administrators)](/help/sites-administering/troubleshoot.md). If you do not have sufficient privileges, see your system administrator about troubleshooting AEM.
 
 ## Old page version still on published site {#old-page-version-still-on-published-site}
 

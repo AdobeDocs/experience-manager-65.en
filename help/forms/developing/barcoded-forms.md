@@ -26,7 +26,7 @@ For more information about the barcoded forms service, see [Services Reference f
 
 ## Decoding Barcoded Form Data {#decoding-barcoded-form-data}
 
-You can use the barcoded forms service API to decode data from a PDF form or an image that contains a barcode. Decoding form data means extracting data that is located in the barcode. Before data can be decoded from a PDF form (or image), a user has to populate the form with data.
+You can use the barcoded forms service API to decode data from a PDF form or an image that contains a barcode. Decoding form data means extracting data that is in the barcode. Before data can be decoded from a PDF form (or image), a user has to populate the form with data.
 
 >[!NOTE]
 >
@@ -54,9 +54,9 @@ The following JAR files must be added to your project’s classpath:
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (Required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (Required if AEM Forms is deployed on JBoss)
-* xercesImpl.jar (located in &lt;install directory&gt;/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar (in &lt;install directory&gt;/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
-If AEM Forms is deployed on a supported J2EE application server that is not JBOSS, then you will need to replace adobe-utilities.jar and jbossall-client.jar with JAR files that are specific to the J2EE application server on which AEM Forms is deployed. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+If AEM Forms is deployed on a supported J2EE application server that is not JBOSS, then you must replace adobe-utilities.jar and jbossall-client.jar with JAR files that are specific to the J2EE application server on which AEM Forms is deployed. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Create a barcoded forms Client API object**
 
@@ -154,7 +154,7 @@ Decode form data by using the barcoded forms API(Java):
 
 1. Process the decoded data
 
-    * Iterate through the `java.util.List` object to get each `org.w3c.dom.Document` object that is located in the list.
+    * Iterate through the `java.util.List` object to get each `org.w3c.dom.Document` object that is in the list.
     * For each element in the list, convert the `org.w3c.dom.Document` object to a `com.adobe.idp.Document` object. (The application logic that converts a `org.w3c.dom.Document` object into a `com.adobe.idp.Document` object is shown in the Decoding barcoded form data using the Java API example).
     * Save the XML data as an XML file by invoking the `com.adobe.idp.Document` object’s `copyToFile`, and passing a File object that represents the XML file.
 

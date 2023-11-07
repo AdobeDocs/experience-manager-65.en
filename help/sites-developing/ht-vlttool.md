@@ -435,7 +435,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |||
 |--- |--- |
-|`-l (--linkFormat) <format>`|printf format for hotfix links (name,id), for example `[CQ520_HF_%s|%s]`|
+|`-l (--linkFormat) <format>`|printf format for hotfix links (name,id), for example, `[CQ520_HF_%s|%s]`|
 |`-v (--verbose)`|verbose output|
 |`-q (--quiet)`|prints as little as possible|
 |`<localPaths> [<localPaths> ...]`|local path|
@@ -776,7 +776,7 @@ The vault sync service is used to synchronize repository content with a local fi
 
 >[!NOTE]
 >
->The vault sync service is a development tool and it is highly discouraged to use it on a productive system. Also note that the service can only sync with the local filesystem and cannot be used for remote development.
+>The vault sync service is a development tool and it is highly discouraged to use it on a productive system. Also, the service can only sync with the local filesystem and cannot be used for remote development.
 
 ### Installing the service using vlt {#installing-the-service-using-vlt}
 
@@ -850,7 +850,7 @@ Once the service is running it can be configured with the following parameters:
 >
 >The service can be configured with the Web console or a `sling:OsgiConfig` node (with the name `com.day.jcr.sync.impl.VaultSyncServiceImpl`) in the repository.
 >
->When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
+>When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
 #### Sync folder configuration {#sync-folder-configuration}
 

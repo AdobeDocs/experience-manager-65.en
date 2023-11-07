@@ -169,7 +169,7 @@ Profiles are the Resource nodes in sling that represent a form or Family of Form
 
 #### Profile Renderers {#profile-renderers}
 
-The Profile node has a property **sling:resourceSuperType** with value **xfaforms/profile**. This property internally sends forward requests to the sling script for Profile nodes located in the **/libs/xfaforms/profile** folder. These scripts are JSP pages, that are containers for putting together the HTML forms and required JS/CSS artifacts. The pages include references to:
+The Profile node has a property **sling:resourceSuperType** with value **xfaforms/profile**. This property internally sends forward requests to the sling script for Profile nodes in the **/libs/xfaforms/profile** folder. These scripts are JSP pages, that are containers for putting together the HTML forms and required JS/CSS artifacts. The pages include references to:
 
 * **xfaforms.I18N.&lt;locale&gt;**: This library contains localized data.
 * **xfaforms.profile**: This library contains implementation for XFA Scripting and Layout engine.

@@ -77,7 +77,7 @@ See also [Using Maven for Communities](/help/communities/maven.md).
 
 The [social component framework](/help/communities/scf.md) (SCF) uses the [HandlebarsJS](https://handlebarsjs.com/) (HBS) templating language in place of Java Server Pages (JSP) used prior to AEM 6.0.
 
-In AEM 6.0, the JSP components remained alongside the new HBS framework components in the same location, with the HBS components typically located in subfolders named "hbs".
+In AEM 6.0, the JSP components remained alongside the new HBS framework components in the same location, with the HBS components typically in subfolders named "hbs".
 
 As of AEM 6.1, the JSP components were completely removed. For Communities, it is recommended to replace all use of JSP components with SCF components.
 

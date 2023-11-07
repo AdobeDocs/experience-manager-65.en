@@ -103,7 +103,7 @@ The default value of this setting is `/LiveCycleES/ConnectorforIBMFileNet/AssetL
 
 ## Convert PDF service settings {#convert-pdf-service-settings}
 
-The Convert PDF service ( `ConvertPdfService`) converts PDF documents to PostScript and to a number of image formats (JPEG, JPEG 2000, PNG, and TIFF). Converting a PDF document to PostScript is useful for unattended server-based printing on any PostScript printer. Converting a PDF document to a multipage TIFF file is practical when archiving documents in content management systems that do no support PDF documents.
+The Convert PDF service ( `ConvertPdfService`) converts PDF documents to PostScript and to several image formats (JPEG, JPEG 2000, PNG, and TIFF). Converting a PDF document to PostScript is useful for unattended server-based printing on any PostScript printer. Converting a PDF document to a multipage TIFF file is practical when archiving documents in content management systems that do no support PDF documents.
 
 The following settings are available for the Convert PDF service.
 
@@ -237,7 +237,7 @@ The following settings are available for the FTP service.
 
 ## Generate PDF service settings {#generate-pdf-service-settings}
 
-The Generate PDF service ( `GeneratePDFService`) converts files in various native formats to PDF documents, and converts PDF documents to a number of file formats.
+The Generate PDF service ( `GeneratePDFService`) converts files in various native formats to PDF documents, and converts PDF documents to several file formats.
 
 The following settings are available for the Generate PDF service.
 
@@ -320,7 +320,7 @@ The default values for the Guide Utilities service support most use cases. Howev
 
 ### Using Guides in a server cluster {#using-guides-in-a-server-cluster}
 
-Rendering a Guide in a server cluster that does not use sticky sessions fails with a NullPointerException. A Guides request leverages secure URLs that, by default, are unique to the server they are generated on. In a cluster that uses sticky sessions, after a request hits a node in the cluster, all subsequent requests for that session or user are routed exclusively to that server, and everything is ok. In a cluster that does not use sticky sessions, subsequent requests can hit any server in the cluster. If the server that the requests hit is not the original server, they fail to resolve the secure URL.
+Rendering a Guide in a server cluster that does not use sticky sessions fails with a NullPointerException. A Guides request uses secure URLs that, by default, are unique to the server they are generated on. In a cluster that uses sticky sessions, after a request hits a node in the cluster, all subsequent requests for that session or user are routed exclusively to that server, and everything is ok. In a cluster that does not use sticky sessions, subsequent requests can hit any server in the cluster. If the server that the requests hit is not the original server, they fail to resolve the secure URL.
 
 If you are using Guides in a server cluster that does not use sticky sessions, set the macKeySeed value for the GuidesUtility service, and then stop and start the cluster.
 
@@ -820,7 +820,7 @@ Default security profiles are installed, which can then be configured to meet yo
     * **SUPERVISOR_PERM:** To view process instance data for a service that is created from a process
     * **START_STOP_PERM:** To start and stop a service
     * **ADD_REMOVE_ENDPOINTS_PERM:** To add, remove, and modify endpoints for a service
-    * **CREATE_VERSION_PERM:** To create a new version of the service
+    * **CREATE_VERSION_PERM:** To create a version of the service
     * **DELETE_VERSION_PERM:** To delete a version of the service
     * **MODIFY_VERSION_PERM:** To modify a version of the service
     * **READ_PERM:** To view the service

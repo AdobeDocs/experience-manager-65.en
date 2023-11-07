@@ -11,7 +11,7 @@ exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
 
 [Sling](https://sling.apache.org) offers an [Adapter pattern](https://sling.apache.org/documentation/the-sling-engine/adapters.html) to conveniently translate objects that implement the [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) interface. This interface provides a generic [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) method that translates the object to the class type being passed as the argument.
 
-For example to translate a Resource object to the corresponding Node object, you can simply do:
+For example, to translate a Resource object to the corresponding Node object, you can simply do:
 
 ```java
 Node node = resource.adaptTo(Node.class);

@@ -32,27 +32,27 @@ From the MCM you can access:
   This is divided into four panes:
 
     * [Lists](#lists)
-      This pane shows the lists you have already created, together with the number of leads in that list. From this pane you can create a new list directly or import leads to create a new list.
+      This pane shows the lists you have already created, together with the number of leads in that list. From this pane you can create a list directly or import leads to create a list.
       Selecting a specific list will take you to the [Lists](#lists) section showing details for your list.
 
     * [Segments](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
       This pane show the segments that you have defined. Segments let you characterize a collection of visitors that share certain traits.
-      Selecting a specific segment will open the segment definition page.
+      Selecting a specific segment opens the segment definition page.
 
     * [Reports](/help/sites-administering/reporting.md)
       AEM provides different reports to help you analyze and monitor the state of your instance. This MCM pane lists the reports.
-      Selecting a report will open the report page.
+      Selecting a report opens the report page.
 
     * [Campaigns](#campaigns)
       This pane lists your campaign experiences such as [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) and [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
 * **[Leads](#leads)**
   Here you can manage your leads. You can create or import leads, edit specific details for individual leads or delete when no longer needed. You can also put leads in different groups, called Lists. **Note:** Adobe is not planning to further enhance this capability.
-  Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+  Recommendation is to use [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 * **[Lists](#lists)**
   Here you can manage your lists (of leads).**Note:** Adobe is not planning to further enhance this capability.
-  Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+  Recommendation is to use [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 * **[Campaigns](#campaigns)**
   Here you can manage your Brands, Campaigns and Experiences.
@@ -68,7 +68,7 @@ The dashboard shows four panes that provide you with an overview of your lists (
 >[!NOTE]
 >
 >Adobe is not planning to further enhance this capability (Managing Leads).
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>Recommendation is to use [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM, you can organize and add leads by either entering them manually or importing a comma-separated list; for example, a mailing list. Additional ways to generate leads are from newsletter sign-ups or community sign-ups (if configured, these can trigger a workflow that populates leads). Leads are usually categorized and put into a list so that later you can perform actions on the whole list; for example, sending out a custom email to a certain list.
 
@@ -85,7 +85,7 @@ Under **Leads** in the left pane you can create, import, edit and delete your le
 >[!NOTE]
 >
 >Adobe is not planning to further enhance this capability (Managing Lists).
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>Recommendation is to use [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 Lists let you organize your leads into groups. With lists, you can target your marketing campaigns to a select group of people; for example, you can send a targeted newsletter to a list.
 
@@ -192,6 +192,6 @@ From here you can also open the sidekick (click the small down arrow) to change 
 
 ### Analyzing your Campaign Experiences {#analyzing-your-campaign-experiences}
 
-In the MCM, click **Campaigns**. Ensure that the list view is active, then select the required campaign experience and select **Analyze...**. A chart of the page impressions over time will be shown.
+In the MCM, click **Campaigns**. Ensure that the list view is active, then select the required campaign experience and select **Analyze...**. A chart of the page impressions over time is shown.
 
 ![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)

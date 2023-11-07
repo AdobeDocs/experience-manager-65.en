@@ -76,7 +76,7 @@ Some of the key features and enhancements in this release include the following:
   * MongoDB 4.4 
   * MySQL JDBC Connector 8 
 
-If you are installing or planning to use the latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer. To explore the complete list of newly added and deprecated software, refer to the documentation for AEM Forms on JEE or AEM Forms on OSGi. 
+If you are installing or planning to use the latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer. To explore the complete list of newly added and deprecated software, see the documentation for AEM Forms on JEE or AEM Forms on OSGi. 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -471,7 +471,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
         >[!NOTE]
         >
-        > You can also use an in-place editing tool, for example 7-zip, to update the `Manifest.mf` file.  
+        > You can also use an in-place editing tool, for example, 7-zip, to update the `Manifest.mf` file.  
 
     1. Save the updated the `Manifest.mf` in the `adobe-output-client.jar` archive. 
     1. Save the modified `adobe-output-client.jar` file and re-run the setup.  (CQDOC-20878)
@@ -487,7 +487,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 
 #### Interactive Communications
 
-* After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578)
+* After upgrading to AEM Service Pack 18, it is not possible to open the Interactive Communication with large inline images in the Edit mode. (FORMS-10578)
 To resolve the issue, perform the following steps:
 
   1. Download [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) from SD link.

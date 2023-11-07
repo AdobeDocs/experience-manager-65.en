@@ -21,7 +21,7 @@ If you are using IPv6, enter the Base URL as the computer name or the DNS name. 
 
 >[!NOTE]
 >
->The base URL is embedded in policy-protected files. Client applications use the base URL to connect back to the server. Secured files will continue to contain the base URL, even if it is changed later. If you change the base URL, configuration information will need to be updated for all connecting clients.
+>The base URL is embedded in policy-protected files. Client applications use the base URL to connect back to the server. Secured files will continue to contain the base URL, even if it is changed later. If you change the base URL, configuration information must be updated for all connecting clients.
 
 **Default Offline Lease Period:** The default length of time that a user can use a protected document offline. This setting determines the initial value of the Auto-Offline lease period setting when you create a policy. (See Creating and editing policies.) When the lease period expires, the recipient must synchronize the document again to continue using it.
 
@@ -567,7 +567,7 @@ By default, the invited user registration process is disabled. You can enable an
 
 You can restrict registration with document security for certain external users or user groups. This option is useful, for example, to allow access to a certain user group but exclude specific individuals who are part of the group.
 
-The following settings are located in the Email Restriction Filter area of the Invited User Registration page.
+The following settings are in the Email Restriction Filter area of the Invited User Registration page.
 
 **Exclusion:** Type the email address of a user or group to exclude. To exclude multiple users or groups, type each email address on a new line. To exclude all users who belong to a particular domain, enter a wildcard and the domain name. For example, to exclude all users in the example.com domain, enter &ast;.example.com.
 
@@ -575,7 +575,7 @@ The following settings are located in the Email Restriction Filter area of the I
 
 ### Server and registration account parameters {#server-and-registration-account-parameters}
 
-The following settings are located in the General Settings area of the Invited User Registration page.
+The following settings are in the General Settings area of the Invited User Registration page.
 
 **SMTP Host:** The host name of the SMTP server. The SMTP server manages the outgoing email notices to register and activate invited user accounts.
 
@@ -619,11 +619,11 @@ If required by your SMTP host, type the required information in the SMTP Server 
 
 ### Registration invitation email settings {#registration-invitation-email-settings}
 
-Document security automatically issues a registration invitation email when you create a new invited user account or when an existing user adds an external recipient who has not previously registered or been invited to register to a policy. The email contains a link that the recipient can use to access the registration page and enter personal account information, including user name and password. The password can be any combination of eight characters.
+Document security automatically issues a registration invitation email when you create an invited user account or when an existing user adds an external recipient who has not previously registered or been invited to register to a policy. The email contains a link that the recipient can use to access the registration page and enter personal account information, including user name and password. The password can be any combination of eight characters.
 
 When the recipient activates the account, the user becomes a local user.
 
-The following settings are located in the Invitation Email Configuration area of the Invited User Registration page.
+The following settings are in the Invitation Email Configuration area of the Invited User Registration page.
 
 **From:** The email address from which the invitation email is sent. The default format of the From email address is postmaster@[your_installation_domain].com.
 
@@ -639,7 +639,7 @@ After invited users register, document security sends an activation email. The a
 
 When the recipient activates the user account, the user becomes a local user.
 
-The following settings are located in the Activation Email Configuration area of the Invited User Registration page.
+The following settings are in the Activation Email Configuration area of the Invited User Registration page.
 
 >[!NOTE]
 >
@@ -657,7 +657,7 @@ The following settings are located in the Activation Email Configuration area of
 
 If you have to reset an invited user's password, a confirmation email is generated that invites the user to choose a new password. A user's password cannot be determined; if the user forgets it, you must reset it.
 
-The following settings are located in the Reset Password Email area of the Invited User Registration page.
+The following settings are in the Reset Password Email area of the Invited User Registration page.
 
 **From:** The email address from which the password reset email is sent. The default format of the From email address is postmaster@[your_installation_domain].com.
 
@@ -700,7 +700,7 @@ Your selected users and groups now have permission to create custom policies.
 
 ### Specify users and groups that are visible in searches {#specify-users-and-groups-that-are-visible-in-searches}
 
-When users are managing their custom policies, they can search for users and groups to add to their policies. You must specify the domains from which users and groups are visible in these searches.
+When users are managing their custom policies, they can search for users and groups to add to their policies. Specify the domains from which users and groups are visible in these searches.
 
 1. On the document security page, click Configuration &gt; My Policies.
 1. On the My Policies page, click the Visible Users and Groups tab.

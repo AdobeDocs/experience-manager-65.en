@@ -359,7 +359,7 @@ When an Experience Manager instance is configured to handle video encoding throu
 
    >[!NOTE]
    >
-   >Best practice: Most assets are ingested within minutes at most (for example, images). But in certain instances - larger videos for example - increase the timeout value to 7200 seconds (two hours) to accommodate long processing time. Otherwise, this Dynamic Media Classic upload job is marked as **[!UICONTROL UploadFailed]** in the JCR (Java™ Content Repository) metadata.
+   >Best practice: Most assets are ingested within minutes at most (for example, images). But in certain instances - larger videos for example, - increase the timeout value to 7200 seconds (two hours) to accommodate long processing time. Otherwise, this Dynamic Media Classic upload job is marked as **[!UICONTROL UploadFailed]** in the JCR (Java™ Content Repository) metadata.
 
 1. Select **[!UICONTROL Save]**.
 

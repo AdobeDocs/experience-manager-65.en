@@ -55,7 +55,7 @@ First of all, check the connection between the author and publish instances and 
 
    >[!NOTE]
    >
-   >If the template is not available, refer to the [Making a template available](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) section.
+   >If the template is not available, see the [Making a template available](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) section.
 
 1. Click **Create** to create the form.
 
@@ -75,7 +75,7 @@ This section only details specific links to Adobe Campaign. For more information
 
 1. Navigate to the form you want to edit.
 1. In the toolbox, select **Page** &gt; **Page Properties...** then go to the **Cloud Services** tab of the pop-up window.
-1. Add the Adobe Campaign service by clicking **Add service**, and then selecting the configuration that corresponds to your Adobe Campaign instance in the service's drop down list. This configuration is carried out when setting up the connection between your instances. For more information, see [Connecting AEM to Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
+1. Add the Adobe Campaign service by clicking **Add service**, and then selecting the configuration that corresponds to your Adobe Campaign instance in the service's drop-down list. This configuration is carried out when setting up the connection between your instances. For more information, see [Connecting AEM to Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >

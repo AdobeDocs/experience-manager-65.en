@@ -26,7 +26,7 @@ Connected Assets functionality supports the above use cases by integrating [!DNL
 
 ## Overview of Connected Assets {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability. Site authors can also use Dynamic Media images in their site's web pages through Connected Assets and leverage the Dynamic Media functionalities, such as smart crop and image presets.
+When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability. Site authors can also use Dynamic Media images in their site's web pages through Connected Assets and use the Dynamic Media functionalities, such as smart crop and image presets.
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and access to remote assets on the Site Editor. For any other use cases that may require the complete asset-corpus to be available on Sites, consider migrating the assets in bulk instead of using Connected Assets. See [Experience Manager Assets migration guide](/help/assets/assets-migration-guide.md).
 
@@ -139,7 +139,7 @@ You can check the connectivity between configured [!DNL Sites] deployments and [
 ## Use Dynamic Media assets {#dynamic-media-assets}
 
 
-With Connected Assets, you can use image assets processed by [!DNL Dynamic Media] from remote DAM deployment on Sites pages, and leverage Dynamic Media functionalities, such as smart crop and image presets.
+With Connected Assets, you can use image assets processed by [!DNL Dynamic Media] from remote DAM deployment on Sites pages, and use Dynamic Media functionalities, such as smart crop and image presets.
 
 To use [!DNL Dynamic Media] with Connected Assets:
 

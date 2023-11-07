@@ -1,13 +1,9 @@
 ---
 title: AEM Forms workspace JSON object description
-seo-title: AEM Forms workspace JSON object description
 description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
-seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
-uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
 ---
 # AEM Forms workspace JSON object description {#aem-forms-workspace-json-object-description}
@@ -268,7 +264,7 @@ JSON objects used in AEM Forms workspace are described below.
   <tr>
    <td>taskFormType<br /> </td>
    <td>T</td>
-   <td>It contains task form type. Using this field, task is rendered on client as pdf for, swf form etc.<br /> </td>
+   <td>It contains task form type. Using this field, task is rendered on client as pdf for, swf form and so on.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -628,7 +624,7 @@ JSON objects used in AEM Forms workspace are described below.
 
 1. Task ACL Object
 
-   Task ACL object contains information about permissions like forward, share, consult etc. of a task. Following are the properties of task's ACL.
+   Task ACL object contains information about permissions like forward, share, consult, and so on, of a task. Following are the properties of task's ACL.
 
 <table>
  <tbody>
@@ -788,7 +784,7 @@ JSON objects used in AEM Forms workspace are described below.
   <tr>
    <td>directGroupMemberships<br type="_moz" /> </td>
    <td>F</td>
-   <td>List of user’s group.<br type="_moz" /> </td>
+   <td>List of user's group.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>displayName<br type="_moz" /> </td>

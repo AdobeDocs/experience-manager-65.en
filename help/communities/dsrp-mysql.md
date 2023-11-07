@@ -171,7 +171,7 @@ When MySQL runs on a server different from AEM, the server hostname must be spec
   * For example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Locate the `Day Commons JDBC Connections Pool`
-* Select the `+` icon to create a new connection configuration.
+* Select the `+` icon to create a connection configuration.
 
   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 

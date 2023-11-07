@@ -301,7 +301,7 @@ After configuring the directory settings and creating the LDAP VLV entries for u
     [21/Nov/2007:16:47:29 +051800] - userRoot: Finished indexing.
    ```
 
-   The vlvindex tool is present in the directory server instance directory. If the Sun ONE Server has two instances running server1 and server2, the vlvindex tool is located in *Sun ONE server directory*\server1 directory. The value for parameter `-T` is the value of the `cn` attribute of the vlvindex entry created previously in the sample LDIF. In this case, it is `lcuser`.
+   The vlvindex tool is present in the directory server instance directory. If the Sun ONE Server has two instances running server1 and server2, the vlvindex tool is in *Sun ONE server directory*\server1 directory. The value for parameter `-T` is the value of the `cn` attribute of the vlvindex entry created previously in the sample LDIF. In this case, it is `lcuser`.
 
 1. If VLV is also enabled for groups, create the corresponding index for the groups. Verify whether the indexes are created by running the following command:
 

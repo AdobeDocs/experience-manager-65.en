@@ -63,7 +63,7 @@ Before giving the overview of specifics, here is a small collection of general t
 
 There are various aspects to finding a page; you can navigate and/or search:
 
-1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation)) - this is triggered (drop down) when you select the Adobe Experience Manager link (top left).
+1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation)) - this is triggered (drop-down) when you select the Adobe Experience Manager link (top left).
 
 1. Navigate down the tree by tapping/clicking on the appropriate page. How the page resources are represented depends on the view you are using - [Card, List, or Column](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
@@ -122,7 +122,7 @@ How to select a page depends on which view you are using in the console:
 [Quick actions](/help/sites-authoring/basic-handling.md#quick-actions) are available:
 
 1. [Navigate to the page](#finding-your-page) you want to take action on.
-1. Hover your mouse pointer over the card that represents your required resource; the quick actions will be shown:
+1. Hover your mouse pointer over the card that represents your required resource; the quick actions are shown:
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
@@ -189,7 +189,7 @@ How to select a page depends on which view you are using in the console:
 
         * Select **Preview** from the toolbar.
 
-    * Return to edit mode (or select another mode) using the **Edit** drop down selector.
+    * Return to edit mode (or select another mode) using the **Edit** drop-down selector.
 
    >[!NOTE]
    >
@@ -209,7 +209,7 @@ There are two (main) methods of [editing page properties](/help/sites-authoring/
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
-    1. The page properties will be shown. You can make updates as required, then use Save to persist these
+    1. The page properties are shown. You can make updates as required, then use Save to persist these
 
 * When [editing your page](#editing-your-page-content):
 

@@ -60,7 +60,7 @@ When working with digital assets in [!DNL Experience Manager], it helps if you u
 
 * **Tagging**: [!DNL Assets] can be tagged and classified. See [organizing assets](/help/assets/organize-assets.md).
 
-* **Renditions**: A rendition is the binary representation of an asset. [!DNL Assets] always have a primary representation - that of the uploaded file. They can have any number of additional representations that are created, for example by customized workflow steps or when an asset is uploaded. Renditions may be of a different size, with a different resolution, with an added watermark, or some other changed characteristic.
+* **Renditions**: A rendition is the binary representation of an asset. [!DNL Assets] always have a primary representation - that of the uploaded file. They can have any number of additional representations that are created, for example, by customized workflow steps or when an asset is uploaded. Renditions may be of a different size, with a different resolution, with an added watermark, or some other changed characteristic.
 
 * **Versions**: Versioning creates a snapshot of digital assets at a specific point in time. You can restore assets to previous versions. See [versioning in [!DNL Assets]](manage-assets.md#asset-versioning).
 

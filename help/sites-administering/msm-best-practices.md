@@ -46,11 +46,11 @@ The additional benefits of using a blueprint configuration are that they:
 
 In the case that a blueprint configuration is not referenced, rollouts can only be initiated from the live copies themselves, essentially pulling content from source.
 
-When creating a new site with live copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
+When creating a site with live copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
 
 >[!NOTE]
 >
->Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
+>Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Plan around this when configuring Live Copy.
 
 ## Components and Container Synchronization {#components-and-container-synchronization}
 
@@ -81,7 +81,7 @@ Notice that AEM has two main approaches for creating live copies:
 
 Following are a few considerations to keep in mind when creating a site:
 
-* To create a new site, you need a [blueprint configuration](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* To create a site, you need a [blueprint configuration](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * To allow the selection of language paths to create in a new site, the corresponding language roots must exist in the blueprint (source).
 * Once a [new site has been created as a live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (using **Create**, then **Site**), the first two levels of this live copy are *shallow*. Children of the page do not belong to the live-relationship, but a roll-out will still descend if a live-relationship that matches the trigger is found.
 
@@ -97,12 +97,12 @@ MSM can assist in the creation of multilingual websites in two ways:
 
 * When creating language masters.
 
-    * While MSM itself **does not provide content translation**, it can be integrated with third-party translation connectors that do. Please note that:
+    * While MSM itself **does not provide content translation**, it can be integrated with third-party translation connectors that do. Note that:
 
         * MSM lets you cancel inheritance at the page- and/or component- level. This helps prevent overwriting translated content (from a live copy, with not-yet-translated content from a blueprint) on the next rollout.
         * Some third-party translation connectors automate this management of MSM inheritances.
 
-          Please check with your translation service provider for more information.
+          Check with your translation service provider for more information.
 
         * An alternative approach for creating and translating language masters is to use language copies in conjunction with AEM's out-of-the-box translation integration framework.
 

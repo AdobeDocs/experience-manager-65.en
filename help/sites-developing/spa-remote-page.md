@@ -38,4 +38,4 @@ See the article [Editing an External SPA within AEM](spa-edit-external.md) for m
 
 ## Technical Details {#technical-details}
 
-Like the rest of the AEM SPA project, the RemotePage Component is open source. For the full technical details of the RemotePage Component, [please see the GitHub repository.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+Like the rest of the AEM SPA project, the RemotePage Component is open source. For the full technical details of the RemotePage Component, [see the GitHub repository.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

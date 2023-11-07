@@ -53,9 +53,9 @@ The body of an Angular page is rendered differently depending on whether wcmMode
 
 In author mode, each individual page is rendered separately. Angular does not handle routing between pages, nor is an ng-view used to load a partial template that contains the page's components. Instead, the content of the page template (template.jsp) is included on the server side via the `cq:include` tag.
 
-This strategy enables the author features (such as adding and editing components in the paragraph system, Sidekick, design mode, etc.) to function without modification. Pages that rely on client side rendering, such as those for apps, do not perform well in AEM author mode.
+This strategy enables the author features (such as adding and editing components in the paragraph system, Sidekick, design mode, and so on) to function without modification. Pages that rely on client side rendering, such as those for apps, do not perform well in AEM author mode.
 
-Note that the template.jsp include is wrapped in a `div` element that contains the `ng-controller` directive. This structure enables the linking of the DOM contents with the controller. Therefore, although pages that render themselves on the client side fail, individual components which do so work fine (see section on Components below).
+The template.jsp include is wrapped in a `div` element that contains the `ng-controller` directive. This structure enables the linking of the DOM contents with the controller. Therefore, although pages that render themselves on the client side fail, individual components which do so work fine (see section on Components below).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -138,7 +138,7 @@ The controller.js.jsp script generates the controller fragment for each page. Th
 ])
 ```
 
-Note that the `data` variable is assigned the promise returned by the Angular `$http.get` method. Each component included in this page can, if desired, make some .json content available (via its angular.json.jsp script) and act on the contents of this request when it resolves. The request is very fast on mobile devices because it simply accesses the file system.
+The `data` variable is assigned the promise returned by the Angular `$http.get` method. Each component included in this page can, if desired, make some .json content available (via its angular.json.jsp script) and act on the contents of this request when it resolves. The request is very fast on mobile devices because it simply accesses the file system.
 
 In order for a component to be part of the controller in this way, it should extend the /libs/mobileapps/components/angular/ng-component component and include the `frameworkType: angular` property.
 
@@ -361,7 +361,7 @@ The www directory contains all of the web content (HTML, JS, and CSS files) that
 
 ### www/config.xml {#www-config-xml}
 
-The PhoneGap documentation (`https://docs.phonegap.com`) refers to this file as a 'global configuration file'. The config.xml contains many app properties, such as the name of the app, the app 'preferences' (for example whether or not an iOS webview allows overscroll), and plugin dependencies that are *only* consumed by PhoneGap build.
+The PhoneGap documentation (`https://docs.phonegap.com`) refers to this file as a 'global configuration file'. The config.xml contains many app properties, such as the name of the app, the app 'preferences' (for example, whether an iOS webview allows overscroll), and plugin dependencies that are *only* consumed by PhoneGap build.
 
 The config.xml file is a static file in AEM and is exported as-is via Content Sync.
 

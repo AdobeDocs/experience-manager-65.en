@@ -62,7 +62,7 @@ Supports facet extraction. Provides buckets for each `true` or `false` value, bu
 #### Properties {#properties}
 
 * **boolproperty**
-  Relative path to property, for example `myFeatureEnabled` or `jcr:content/myFeatureEnabled`.
+  Relative path to property, for example, `myFeatureEnabled` or `jcr:content/myFeatureEnabled`.
 
 * **value**
   Value to check property for, " `true`" or " `false`".
@@ -115,11 +115,11 @@ Does not support filtering.
 
 * **property**
 
-  Relative path to a `DATE` property, for example `jcr:lastModified`.
+  Relative path to a `DATE` property, for example, `jcr:lastModified`.
 
 * **lowerBound**
 
-  Lower date bound to check property for, for example `2014-10-01`.
+  Lower date bound to check property for, for example, `2014-10-01`.
 
 * **lowerOperation**
 
@@ -127,7 +127,7 @@ Does not support filtering.
 
 * **upperBound**
 
-  Upper bound to check property for, for example `2014-10-01T12:15:00`.
+  Upper bound to check property for, for example, `2014-10-01T12:15:00`.
 
 * **upperOperation**
 
@@ -242,7 +242,7 @@ Supports facet extraction. Provides buckets for each unique language code.
 
 * **language**
 
-  ISO language code, for example " `de`"
+  ISO language code, for example, "`de`"
 
 ### mainasset {#mainasset}
 
@@ -308,7 +308,7 @@ Allows the results to be sorted. If ordering by multiple properties is required,
 
 * **orderby**
 
-  Either JCR property name indicated by a leading @, for example `@jcr:lastModified` or `@jcr:content/jcr:title`, or another predicate in the query, for example `2_property`, on which to sort.
+  Either JCR property name indicated by a leading @, for example, `@jcr:lastModified` or `@jcr:content/jcr:title`, or another predicate in the query, for example, `2_property`, on which to sort.
 
 * **sort**
 
@@ -352,7 +352,7 @@ Supports facet extraction. Provides buckets for each unique property value in th
 
 * **property**
 
-  Relative path to property, for example `jcr:title`.
+  Relative path to property, for example, `jcr:title`.
 
 * **value**
 
@@ -454,7 +454,7 @@ The name "root" is never used in a query, it's implicit.
 
 * **p.guessTotal**
 
-  Recommended: avoid calculating the full result total which can be costly; either a number indicating the maximum total to count up to (for example 1000, a number that gives users enough feedback on the rough size and exact numbers for smaller results) or " `true`" to count only up to the minimum necessary `p.offset` + `p.limit`.
+  Recommended: avoid calculating the full result total which can be costly; either a number indicating the maximum total to count up to (for example, 1000, a number that gives users enough feedback on the rough size and exact numbers for smaller results) or " `true`" to count only up to the minimum necessary `p.offset` + `p.limit`.
 
 * **p.excerpt**
 
@@ -516,7 +516,7 @@ Supports facet extraction. Provides buckets for each unique tag, using their cur
 
 * **tag**
 
-  Tag title path to look for, for example "Asset Properties : Orientation / Landscape".
+  Tag title path to look for, for example, "Asset Properties : Orientation / Landscape".
 
 * **N_value**
 
@@ -536,7 +536,7 @@ Supports facet extraction. Provides buckets for each unique tag, using their cur
 
 * **tagid**
 
-  Tag id so you can look for, for example " `properties:orientation/landscape`".
+  Tag id so you can look for, for example, " `properties:orientation/landscape`".
 
 * **N_value**
 
@@ -580,4 +580,4 @@ Supports facet extraction. Provides buckets for each unique type in the results.
 
 * **type**
 
-  Node type or mixin name to search for, for example `cq:Page`.
+  Node type or mixin name to search for, for example, `cq:Page`.

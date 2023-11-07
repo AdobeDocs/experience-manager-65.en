@@ -1,14 +1,10 @@
 ---
 title: Managing Subscriptions
-seo-title: Managing Subscriptions
 description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
-seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
-uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
 ---
 # Managing Subscriptions{#managing-subscriptions}
@@ -16,7 +12,7 @@ exl-id: add05d22-3a11-49e9-a554-2315962552d5
 >[!NOTE]
 >
 >Adobe does not plan to further enhance this capability (Managing Leads and Lists).
->The recommendation is to leverage [Adobe Campaign and its AEM integration](/help/sites-administering/campaign.md).
+>The recommendation is to use [Adobe Campaign and its AEM integration](/help/sites-administering/campaign.md).
 
 Users can be asked to subscribe to **Email Service Provider's** mailing lists with the help of the **Form** component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
 
@@ -66,7 +62,7 @@ To create a sign-up form and configure it for subscriptions to Email Service Pro
 In order for e-mail service subscribing and unsubscribing to work via the sign-up form on the publish instance, you need to follow these steps:
 
 1. On the author instance, navigate to the Package Manager.
-1. Create a new package. Set the filter as `/etc/key`.
+1. Create a package. Set the filter as `/etc/key`.
 1. Build and download the package.
 1. Navigate to the Package Manager on the publish instance and upload this package.
 1. Navigate to the Publish osgi console and restart the bundle named **Adobe Granite Crypto Support**.

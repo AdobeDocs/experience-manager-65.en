@@ -29,7 +29,7 @@ You can create a watched folder in the following two ways:
 
 * Create a folder on the file system prior to configuring a watched folder endpoint, and then type the full path in the Path box.
 
-In a clustered environment, the folder that will be used as a watched folder must be accessible, writable, and shared on the file system or network. In this scenario, each application server instance of the cluster must have access to the same shared folder.
+In a clustered environment, the folder that is used as a watched folder must be accessible, writable, and shared on the file system or network. In this scenario, each application server instance of the cluster must have access to the same shared folder.
 
 In Windows, if the application server is running as a service, it must be started with appropriate access to the shared folder in one of the following ways:
 
@@ -56,7 +56,7 @@ If the job contains more than one input file, the user must create a folder outs
 
 ## Watched folder output {#watched-folder-output}
 
-When the input is a folder and the output consists of multiple files, AEM forms creates an output folder with the same name as the input folder and copies the output files into that folder. When the output consists of a document map containing a key-value pair, such as the output from an Output process, the key will be used as the output file name.
+When the input is a folder and the output consists of multiple files, AEM forms creates an output folder with the same name as the input folder and copies the output files into that folder. When the output consists of a document map containing a key-value pair, such as the output from an Output process, the key is used as the output file name.
 
 The output file names that result from an endpoint process cannot contain characters other than letters, numbers, and a period (.) before the file extension. AEM forms converts other characters to their hexadecimal values.
 

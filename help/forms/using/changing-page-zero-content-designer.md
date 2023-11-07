@@ -42,4 +42,4 @@ Page Zero content is displayed by default when a non-Adobe PDF viewer, such as t
 
 >[!NOTE]
 >
->The custom property you just created may not appear properly in the Form Properties dialog when you reopen the form. However, it works fine and the form displays the updated Page Zero message.
+>The custom property you created may not appear properly in the Form Properties dialog when you reopen the form. However, it works fine and the form displays the updated Page Zero message.

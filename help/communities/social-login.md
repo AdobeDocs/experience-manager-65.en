@@ -1,14 +1,10 @@
 ---
 title: Social Login with Facebook and Twitter
-seo-title: Social Login with Facebook and Twitter
 description: Social login lets site visitors to sign in with their Facebook or Twitter account.
-seo-description: Social login lets site visitors to sign in with their Facebook or Twitter account.
-uuid: f70e346e-0d8c-41a0-a100-206a420088dc
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
 ---
@@ -111,7 +107,7 @@ The [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    ![fbsocialloginconfigpng](assets/fbsocialloginconfigpng.png)
 
-   * **[!UICONTROL Title]** (*Required*) Enter a display title that identifies the Facebook App. It is recommended to use the same name entered as the *Display Name* for the Facebook app.
+   * **[!UICONTROL Title]** (*Required*) Enter a display title that identifies the Facebook App. Use the same name entered as the *Display Name* for the Facebook app.
    * **[!UICONTROL App ID/API Key]** (*Required*) Enter the ***App ID*** for the Facebook App. This identifies the [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) instance created from the dialog.
    * **[!UICONTROL App Secret]** (*Required*) Enter the ***App Secret*** for the Facebook App.
    * **[!UICONTROL Create Users]** If checked, logging in with a Facebook account will create an AEM user entry and add them as a member to the selected user group(s).  Default  is checked (strongly recommended).
@@ -207,7 +203,7 @@ The next steps are the same for both Facebook and Twitter:
 
 A configured Twitter application is required to enable Twitter social login.
 
-Follow the latest instructions to create a new Twitter application at [https://apps.twitter.com](https://apps.twitter.com/).
+Follow the latest instructions to create a Twitter application at [https://apps.twitter.com](https://apps.twitter.com/).
 
 In general:
 
@@ -262,7 +258,7 @@ The [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    * **[!UICONTROL Title]** 
    
-     (*Required*) Enter a display title that identifies the Twitter App. It is recommended to use the same name entered as the *Display Name* for the Twitter app.
+     (*Required*) Enter a display title that identifies the Twitter App. Use the same name entered as the *Display Name* for the Twitter app.
 
    * **[!UICONTROL Consumer Key]** 
    
@@ -488,7 +484,7 @@ On an author instance, signed in with administrative privileges:
 
   ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
-For additional information and tools, refer to [Oak Queries and Indexing](../../help/sites-deploying/queries-and-indexing.md).
+For additional information and tools, see [Oak Queries and Indexing](../../help/sites-deploying/queries-and-indexing.md).
 
 ## Dispatcher Configuration {#dispatcher-configuration}
 

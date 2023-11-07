@@ -117,8 +117,8 @@ To create a live copy:
     * Selected: create a live copy of the selected page only (shallow live copy)
     * Not Selected: create a live copy that includes all descendants of the selected page (deep live copy)
 
-1. (Optional) To specify one or more rollout configurations to use for the livecopy, use the **Rollout Configs** drop-down list to select them; selected configurations will be shown underneath the drop-down selector.
-1. Click or tap **Create**. A confirmation message will be shown, from here you can select either **Open** or **Done**.
+1. (Optional) To specify one or more rollout configurations to use for the livecopy, use the **Rollout Configs** drop-down list to select them; selected configurations are shown underneath the drop-down selector.
+1. Click or tap **Create**. A confirmation message is shown, from here you can select either **Open** or **Done**.
 
 ### Creating a Live Copy of a Site from a Blueprint Configuration {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -143,7 +143,7 @@ When you create the site, provide values for the following properties:
 
 To create a live copy of a site from a blueprint configuration:
 
-1. In the **Sites** console, select **Create**, then **Site** from the drop down selector.
+1. In the **Sites** console, select **Create**, then **Site** from the drop-down selector.
 1. Select the blueprint configuration to use as the source of the live copy and proceed with **Next**:
 
    ![Select blueprint configuration as source of live copy](assets/blueprint-configuration-select.png)
@@ -319,7 +319,7 @@ To change live copy content, you can:
 
 >[!NOTE]
 >
->If you manually create a new page in the live copy, then it is local to the live copy, meaning it does not have a corresponding source page to attach to.
+>If you manually create a page in the live copy, then it is local to the live copy, meaning it does not have a corresponding source page to attach to.
 >
 >The best practice to create a local page that is part of the relationship would be to create it in the source and to do a (deep) rollout. That will create the page locally as live copies.
 
@@ -406,13 +406,13 @@ Once [suspended](#suspending-inheritance-from-page-properties) the **Resume** ac
 
 ![Resume](assets/chlimage_1-229.png)
 
-When selected, the dialog will be shown. You can select a synchronization, if required, then confirm the action.
+When selected, the dialog is shown. You can select a synchronization, if required, then confirm the action.
 
 #### Resume a Live Copy Page from the Live Copy Overview {#resume-a-live-copy-page-from-the-live-copy-overview}
 
 The [Resume action is also available from the Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), when a Live Copy page is selected.
 
-1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Live Copy Page that has been suspended; will be shown as **INHERITANCE CANCELLED**.
+1. Open the [Live Copy Overview](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) and select a Live Copy Page that has been suspended; it is shown as **INHERITANCE CANCELLED**.
 1. Select **Resume** from the toolbar.
 1. Indicate whether you want to synchronize the page after reverting inheritance, then confirm the **Resume** action in the **Resume Live Copy** dialog.
 
@@ -618,7 +618,7 @@ There are implications on where within the tree that you use **Detach**:
 
         * This is because MSM considers them as manually created pages that cause a conflict as they have the same name as the livecopy pages it is trying to create.
 
-    1. Create a new (livecopy) page with the original name, containing the changes from the rollout.
+    1. Create a (livecopy) page with the original name, containing the changes from the rollout.
 
   >[!NOTE]
   >
@@ -634,7 +634,7 @@ To detach a live copy:
 
    ![Detach](assets/chlimage_1-236.png)
 
-1. A confirmation dialog will be shown, select **Detach** to complete the action.
+1. A confirmation dialog is shown, select **Detach** to complete the action.
 
 ### Detach a Live Copy Page from the Live Copy Overview {#detach-a-live-copy-page-from-the-live-copy-overview}
 

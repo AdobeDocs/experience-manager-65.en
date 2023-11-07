@@ -25,7 +25,7 @@ The following is a list of the Bulk Editor query parameters:
 
 >[!NOTE]
 >
->Each parameter can have a long and a short name. For example the long name for the search root path is `rootPath`, the short one is `rp`. If the long name is not defined, the short one is read from the request.
+>Each parameter can have a long and a short name. For example, the long name for the search root path is `rootPath`, the short one is `rp`. If the long name is not defined, the short one is read from the request.
 
 <table>
  <tbody>
@@ -565,4 +565,4 @@ The servlet needs to know where the catalogCode property is stored.
 
 A default Save servlet implementation is available at /libs/wcm/bulkeditor/save/POST.jsp and is used in the Product List component. It takes all the parameters from the request (with a &lt;jcr path&gt;/&lt;property name&gt; format) and writes properties on nodes using the JCR API. It also creates node if they do not exist (grid inserted rows).
 
-The default code should not be used as is because it reimplements what the server natively does (a POST on &lt;jcr path&gt;/&lt;property name&gt;) and is therefore only a good starting point for building a Save servlet that can manage a property inheritance model.
+Do not use the default code as is because it reimplements what the server natively does (a POST on &lt;jcr path&gt;/&lt;property name&gt;) and is therefore only a good starting point for building a Save servlet that can manage a property inheritance model.

@@ -28,7 +28,7 @@ An administrator would only need to create folders occasionally to organize cont
       * It can be adjusted if necessary.
 
    ![Create folder](assets/assets-folder-create.png)
-1. Select the folder you just created and then select **Properties** from the toolbar (or use the `p` [keyboard shortcut.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Select the folder you created and then select **Properties** from the toolbar (or use the `p` [keyboard shortcut.](/help/sites-authoring/keyboard-shortcuts.md))
 1. In the **Properties** window, select the **Cloud Services** tab.
 1. For the **Cloud Configuration** Select the [configuration you created previously.](create-configuration.md)
    ![Configure assets folder](assets/assets-folder-configure.png)
@@ -37,7 +37,7 @@ An administrator would only need to create folders occasionally to organize cont
 
    ![Confirmation window](assets/assets-folder-confirmation.png)
 
-You can create additional subfolders within the folder you just created. The subfolders will inherit the **Cloud Configuration** of the parent folder. This can be overridden however if you wish to use models from another configuration.
+You can create additional subfolders within the folder you created. The subfolders will inherit the **Cloud Configuration** of the parent folder. This can be overridden however if you wish to use models from another configuration.
 
 If you are using a localized site structure, you can [create a language root](/help/assets/multilingual-assets.md) below your new folder.
 

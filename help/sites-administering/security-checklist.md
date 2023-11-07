@@ -387,7 +387,7 @@ Although not recommended, you can disable it in case you need the old implementa
 
 ### Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
 
-By default, AEM stores system metadata, such as `jcr:createdBy` or `jcr:lastModifiedBy` as node properties, next to regular content, in the repository. Depending on the configuration and the access control setup, in some cases this could lead to exposure of personally identifiable information (PII), for example when such nodes are rendered as raw JSON or XML. 
+By default, AEM stores system metadata, such as `jcr:createdBy` or `jcr:lastModifiedBy` as node properties, next to regular content, in the repository. Depending on the configuration and the access control setup, in some cases this could lead to exposure of personally identifiable information (PII), for example, when such nodes are rendered as raw JSON or XML. 
 
 Like all repository data, these properties are mediated by the Oak authorization stack. Access to them should be restricted in accordance with the principle of least privilege.
 
@@ -401,7 +401,7 @@ with the ones viewable after installing the package, where `jcr:createdBy` and `
 
 ![After Installing Package](/help/sites-administering/assets/after_resized.png)
 
-For more information please see the package release notes.
+For more information see the package release notes.
 
 ### Prevent Clickjacking {#prevent-clickjacking}
 

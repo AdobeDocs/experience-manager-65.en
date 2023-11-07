@@ -11,7 +11,7 @@ Know the answers to some AEM troubleshooting and configuration issues.
 
 ### How do I configure binary-less distribution? {#how-do-i-configure-binary-less-distribution}
 
-Binary-less distribution is supported for deployments over a shared data store and involves agents that leverage the Vault-based Distribution package exporter (factory PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) package builder.
+Binary-less distribution is supported for deployments over a shared data store and involves agents that use the Vault-based Distribution package exporter (factory PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) package builder.
 
 With binary-less mode enabled, the content packages distributed contain references to binaries rather than the actual binaries.
 
@@ -39,7 +39,7 @@ Create a language root and language copy inside the root, before creating a tran
 For example,
 Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Subsequently, create language copy of page from the references panel and navigate to `Create structure only` option in `Create & Translate`. Finally, create a translation project and then add the language copy to the translation job.
 
-For details, refer to the additional resources below:
+For details, see the additional resources below:
 
 * [Preparing content for translation](/help/sites-administering/tc-prep.md)
 * [Managing translation projects](/help/sites-administering/tc-manage.md)
@@ -55,7 +55,7 @@ Adobe Experience Manager (AEM) 6.4 ships with the SSL wizard and offers a User I
 
 To enable SSL by default, see [SSL by default](/help/sites-administering/ssl-by-default.md).
 
-#### What is the recommended architecture when using AEM’s Content Services from a mobile app, ideally React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### What is the recommended architecture when using AEM's Content Services from a mobile app, ideally React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 The Content Services are based on the Sling Models and the AEM developers must provide a Sling Model pojo for each component that is exported.
 
@@ -73,7 +73,7 @@ You can opt into usage statistics collection by using either the Touch UI or the
 
 #### Is there a good resource that highlights the key features for upgrading to AEM 6.4? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-Please refer to [Understanding Reasons to Upgrade AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) that describes high-level breakdown of key features for customers considering upgrading to the latest version of Adobe Experience Manager.
+See [Understanding Reasons to Upgrade AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) that describes high-level breakdown of key features for customers considering upgrading to the latest version of Adobe Experience Manager.
 
 ## Assets {#assets}
 
@@ -98,17 +98,17 @@ As a workaround, you can also manually disable the component either via the UI o
 
 #### How to customize admin consoles? {#how-to-customize-admin-consoles}
 
-AEM provides various mechanisms to enable you to customize the consoles and the page authoring functionality of your authoring instance. To learn how to create a custom console and customize a default view for a console, please refer to [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md).
+AEM provides various mechanisms to enable you to customize the consoles and the page authoring functionality of your authoring instance. To learn how to create a custom console and customize a default view for a console, see [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 #### What is the difference between CoralUI 2 and CoralUI 3-based components? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-A new set of Sling components of Granite UI Foundation is created for Coral3 and is located under [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) There is one set for CoralUI 2-based components and one set for CoralUI 3-based components. The new set will not be just a copy-paste of the old set, rather it will be cleaned up (for example streamlining, removing deprecated feature). So it is recommended that a page only use either CoralUI 3-based or CoralUI 2-based set.
+A new set of Sling components of Granite UI Foundation is created for Coral3 and is located under [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) There is one set for CoralUI 2-based components and one set for CoralUI 3-based components. The new set will not be just a copy-paste of the old set, rather it will be cleaned up (for example, streamlining, removing deprecated feature). So it is recommended that a page only use either CoralUI 3-based or CoralUI 2-based set.
 
-To learn more in detail, please refer to [Migration Guide to CoralUI 3-based](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+To learn more in detail, see [Migration Guide to CoralUI 3-based](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### How to customize the search component in AEM Assets? {#how-to-customize-the-search-component-in-aem-assets}
 
-To learn about search boost/ranking and further implementation information, please refer to [Simple search implementation guide](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
+To learn about search boost/ranking and further implementation information, see [Simple search implementation guide](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
 
 The Simple search implementation are the materials from the 2017 Summit lab AEM Search Demystified.
 

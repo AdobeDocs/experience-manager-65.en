@@ -87,7 +87,7 @@ To add an activity:
 
    >[!NOTE]
    >
-   >When you create a new activity and have an Adobe Target cloud configuration attached to the page or one of its parent, AEM automatically assumes Adobe Target as the engine.
+   >When you create an activity and have an Adobe Target cloud configuration attached to the page or one of its parent, AEM automatically assumes Adobe Target as the engine.
 
 1. In the **Targeting** engine drop-down menu, select your targeting engine.
 

@@ -1,14 +1,10 @@
 ---
 title: Administering Tags
-seo-title: Administering Tags
 description: Learn how to manage and administer tags in Adobe Experience Manager.
-seo-description: Learn how to administer Tags in AEM.
-uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 ---
 # Administering Tags {#administering-tags}
@@ -72,7 +68,7 @@ To access the Tagging console :
 
 ### Creating a Namespace {#creating-a-namespace}
 
-To create a new namespace, select the **`Create Namespace`** icon.
+To create a namespace, select the **`Create Namespace`** icon.
 
 The namespace is itself a tag, and need not contain any sub-tags. However, to continue creating a taxonomy, [create sub-tags](#creating-tags), which in turn may be either leaf tags or container tags.
 
@@ -205,7 +201,7 @@ When a namespace or other tag is selected, selecting the **`Move`** icon will al
 
 Merging tags can be used when a taxonomy has duplicates. When tag A is merged into tag B, all the pages tagged with tag A will be tagged with tag B and tag A is no longer available to authors.
 
-When a namespace or other tag is selected, selecting the **Merge** icon will open a panel where the path to merge into may be selected.
+When a namespace or other tag is selected, selecting the **Merge** icon opens a panel where the path to merge into may be selected.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
@@ -290,7 +286,7 @@ Once all translations are entered, select **Save** to exit edit mode.
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-In general, the language chosen for the tag is taken from the page language, when available. When the [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) is used in other cases (for example in forms or in dialogs), the tag language depends on the context.
+In general, the language chosen for the tag is taken from the page language, when available. When the [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) is used in other cases (for example, in forms or in dialog boxes), the tag language depends on the context.
 
 Instead of using the page language setting, the Tagging console uses the user language setting. In the Tagging console, for the 'Animals' tag, 'Animaux' would be displayed for a user who sets the language to French in their user properties.
 

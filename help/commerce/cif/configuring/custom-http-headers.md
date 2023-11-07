@@ -20,11 +20,11 @@ To configure the custom HTTP headers, one must first define them. The custom HTT
 
 You can configure the values of the HTTP headers in the Cloud Service Configuration page for your project:
 
-1. Go to the Cloud Service configuration page in Tools -> Cloud Services -> CIF Configuration
-1. Open an existing configuration or create a new one
+1. Go to the Cloud Service configuration page in Tools > Cloud Services > CIF Configuration.
+1. Open an existing configuration or create one.
 1. Go to the "Advanced" tab and find the "Custom HTTP Headers" multi-field. You can select the headers you defined earlier and assign values to them.
 
-The components using the above cloud service configuration will send these HTTP headers with every GraphQL request.
+The components using the above cloud service configuration sends these HTTP headers with every GraphQL request.
 
 ## Restrictions {#restrictions}
 

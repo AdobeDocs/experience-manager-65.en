@@ -18,7 +18,7 @@ This provides a paragraph system that lets you position components within a resp
 The layout container:
 
 * Provides horizontal snap to grid, together with the ability to place components into the grid side-by-side and define when they should collapse/reflow.
-* Uses pre-defined breakpoints (for example, for phone, tablet, etc.) to let you define the required behavior of content for related devices/orientation.
+* Uses pre-defined breakpoints (for example, for phone, tablet, and so on) to let you define the required behavior of content for related devices/orientation.
 
     * For example, you can customize the component size or whether the component can be seen on specific devices.
 
@@ -55,7 +55,7 @@ Depending on your project, the Layout Container might be used as the default par
 
 >[!NOTE]
 >
->Adobe provides [GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive layout as a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example when creating static HTML mock-ups for a future AEM site.
+>Adobe provides [GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive layout as a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example, when creating static HTML mock-ups for a future AEM site.
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    ![Emulator](do-not-localize/screen_shot_2018-03-23at084256.png)
 
-1. The emulator toolbar will open.
+1. The emulator toolbar opens.
 
    ![screen_shot_2018-03-23at084551](assets/screen_shot_2018-03-23at084551.png)
 
@@ -176,7 +176,7 @@ As with other components, you can select and then take action on (cut, copy, del
 
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
 
-1. This will highlight the entire grid with its content. The action toolbar will be shown, from where you can select an action such as **Delete.**
+1. This will highlight the entire grid with its content. The action toolbar is shown, from where you can select an action such as **Delete.**
 
    ![screen_shot_2018-03-23at085724](assets/screen_shot_2018-03-23at085724.png)
 
@@ -202,7 +202,7 @@ To configure the layout of a responsive grid implemented with the Layout Contain
 
 When in layout mode you can perform various actions on a grid:
 
-* Resize the content components using the blue dots. Resizing will always snap-to-grid. When resizing the background grid will be shown to aid alignment:
+* Resize the content components using the blue dots. Resizing will always snap-to-grid. When resizing, the background grid is shown to aid alignment:
 
   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 

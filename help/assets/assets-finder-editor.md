@@ -33,7 +33,7 @@ An asset-centric application in [!DNL Experience Manager] consists of an Asset E
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
 
-You customize the DAM Finder functionality and create pages that have all the functionality you require, which are called Asset Share pages. To create a new Asset Share page, you add the page using the Geometrixx Asset Share template and then you customize the actions users can perform on that page, determine how viewers see the assets, and decide how users can build their queries.
+You customize the DAM Finder functionality and create pages that have all the functionality you require, which are called Asset Share pages. To create an Asset Share page, you add the page using the Geometrixx Asset Share template and then you customize the actions users can perform on that page, determine how viewers see the assets, and decide how users can build their queries.
 
 Here are some use cases for creating a customized Asset Share page:
 
@@ -44,7 +44,7 @@ Here are some use cases for creating a customized Asset Share page:
 
 ### Create an Asset Share page {#creating-an-asset-share-page}
 
-To create a new Asset Share page, you can either create it when you are working on web sites or from the digital asset manager.
+To create an Asset Share page, you can either create it when you are working on web sites or from the digital asset manager.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ To customize your Asset Share page, you use elements from the sidekick and you a
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
-To create a new asset share page via the digital asset manager:
+To create an asset share page by way of the digital asset manager:
 
 1. In the digital asset manager, in **New**, select **New Asset Share**.
 1. In the **Title**, enter the name of the asset share page. If desired, enter a name for the URL.
@@ -156,7 +156,7 @@ To customize the query builder:
 
 #### Add predicates {#adding-predicates}
 
-Experience Manager Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
+Experience Manager Assets includes several predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
 To add predicates:
 
@@ -173,7 +173,7 @@ The following predicates are available:
 | Predicate | Description |
 |---|---|
 | **[!UICONTROL Date Predicate]** |Lets users search for assets that were modified before and after certain dates. |
-| **[!UICONTROL Options Predicate]** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
+| **[!UICONTROL Options Predicate]** |The site owner can specify a property to search for (as in the property predicate, for example, cq:tags) and a content tree to populate the options from (for example, the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
 | **[!UICONTROL Path Predicate]** |Lets users define the path and subfolders, if desired. |
 | **[!UICONTROL Property Predicate]** |The site owner specifies a property to search for, for example, tiff:ImageLength and the user can then enter a value, for example, 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values. |
 
@@ -417,7 +417,7 @@ To multi-edit assets with the Asset Editor page:
 
    Click **OK** to write the changes to the form. The box beside the **Tags** field is automatically checked.
 
-1. Edit the Description field. For example set it to:
+1. Edit the Description field. For example, set it to:
 
    `This is a common description`
 

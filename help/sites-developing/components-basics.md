@@ -108,7 +108,7 @@ Use the following tools to move your components to the publish instance:
   * The paragraph system is a key part of a website as it manages a list of paragraphs. It is used to hold and structure the individual components that hold the actual content.
   * You can create, move, copy, and delete paragraphs in the paragraph system.
   * You can also select the components to be available for use within a specific paragraph system.
-  * There are various paragraph systems available within a standard instance (for example `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
+  * There are various paragraph systems available within a standard instance (for example, `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Structure {#structure}
 
@@ -204,7 +204,7 @@ The icon or abbreviation for the component is defined via JCR properties of the 
 1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser
     * The abbreviation should be limited to two characters.
     * Providing an empty string builds the abbreviation from first two characters of the `jcr:title` property.
-        * For example "Im" for "Image"
+        * For example, "Im" for "Image"
         * The localized title is used to build the abbreviation.
     * The abbreviation is only translated if the component has an `abbreviation_commentI18n` property, which is then used as translation hint.
 1. `cq:icon.png` or `cq:icon.svg` - Icon for this component, which is shown in the component browser
@@ -305,12 +305,12 @@ A component is a node of type `cq:Component` and has the following properties an
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>If set, this property is taken as Cell ID. For more information, please refer to the Knowledge Base article <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">How are Design Cell IDs built</a>.<br /> </td>
+   <td>If set, this property is taken as Cell ID. For more information, see the Knowledge Base article <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">How are Design Cell IDs built</a>.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
    <td><code>cq:EditConfig</code></td>
-   <td>When the component is a container&mdash;for example a paragraph system&mdash;it drives the edit configuration of the child nodes.<br /> </td>
+   <td>When the component is a container&mdash;for example, a paragraph system&mdash;it drives the edit configuration of the child nodes.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:editConfig</code></td>
@@ -360,7 +360,7 @@ A component is a node of type `cq:Component` and has the following properties an
   <tr>
    <td><code>virtual</code></td>
    <td><code>sling:Folder</code></td>
-   <td>Enables creation of virtual components. To see an example, please look at the contact component at:<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
+   <td>Enables creation of virtual components. To see an example, look at the contact component at:<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
   </tr>
   <tr>
    <td><code>&lt;breadcrumb.jsp&gt;</code></td>
@@ -704,7 +704,7 @@ The `cq:layout` property ( `String`) defines how the component can be edited in 
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>The component edition is accessible through a toolbar.<br /> For advanced use, note that the corresponding client-side object is: <code>CQ.wcm.EditBar</code>.</td>
+   <td>The component edition is accessible through a toolbar.<br /> For advanced use, the corresponding client-side object is: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -1021,7 +1021,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 >  * `aftermove`
 >  * `aftercopy`
 
-The event handler can be implemented with a custom implementation. For example (where `project.customerAction` is a static method):
+The event handler can be implemented with a custom implementation. For example, (where `project.customerAction` is a static method):
 
 `afteredit = "project.customerAction"`
 
@@ -1031,7 +1031,7 @@ The following example is equivalent to the `REFRESH_INSERTED` configuration:
 
 >[!NOTE]
 >
->For the classic UI, to see which parameters can be used in the handlers, refer to the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
+>For the classic UI, to see which parameters can be used in the handlers, see the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
 
 With the following configuration, the page is refreshed after the component is deleted, edited, inserted, or moved:
 

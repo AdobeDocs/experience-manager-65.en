@@ -214,7 +214,7 @@ It is possible to configure a component so that it has multiple in-place editors
 
 ## Add a New Page Action {#add-a-new-page-action}
 
-To add a new page action to the page toolbar, for example a **Back to Sites** (console) action.
+To add a new page action to the page toolbar, for example, a **Back to Sites** (console) action.
 
 ### Code Sample {#code-sample-3}
 

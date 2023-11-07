@@ -21,7 +21,7 @@ An annotation places a colored marker/sticky-note on the page. The annotation al
 
 >[!NOTE]
 >
->Annotations created in the Classic UI will be shown in the touch-enabled UI. However sketches are UI-specific and they are only shown in the UI in which they were created.
+>Annotations created in the Classic UI are shown in the touch-enabled UI. However sketches are UI-specific and they are only shown in the UI in which they were created.
 
 >[!CAUTION]
 >

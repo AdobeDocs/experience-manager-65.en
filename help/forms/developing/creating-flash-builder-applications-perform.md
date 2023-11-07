@@ -666,7 +666,7 @@ The following code represents the progress.mxml file.
 
 ### Creating the remoting.mxml file {#creating-the-remoting-mxml-file}
 
-The following code represents the remoting.mxml file that invokes the `MyApplication/EncryptDocument` process. Because a document is passed to the process, application logic responsible for passing a secure document to AEM Forms is located in this file. (See [Passing secure documents to invoke processes using Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+The following code represents the remoting.mxml file that invokes the `MyApplication/EncryptDocument` process. Because a document is passed to the process, application logic responsible for passing a secure document to AEM Forms is in this file. (See [Passing secure documents to invoke processes using Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>

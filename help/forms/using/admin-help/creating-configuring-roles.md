@@ -195,7 +195,7 @@ You can change the permissions for any of the roles that you created. You cannot
 
 **Core Settings Control:** Manage the settings on the Core System Settings page in Administration Console
 
-**CREATE_VERSION_PERM:** Create a new version of a service
+**CREATE_VERSION_PERM:** Create a version of a service
 
 **Credential Modify:** Modify any signing credential in the Trust Store
 
@@ -285,7 +285,7 @@ You can change the permissions for any of the roles that you created. You cannot
 
 **Rights Management Policy Set Add Coordinator:** Add, remove, and change permissions for policy set coordinators
 
-**Rights Management Policy Set Create Policy:** Create a new policy for a policy set
+**Rights Management Policy Set Create Policy:** Create a policy for a policy set
 
 **Rights Management Policy Set Delete Policy:** Remove a policy from a policy set
 

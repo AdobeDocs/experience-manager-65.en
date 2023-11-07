@@ -44,7 +44,7 @@ These consoles are similar to the Communities Sites console.
   * **[!UICONTROL Community Group Root]**: *leave as default*
   * **[!UICONTROL Additional Available Community Group Language(s)]**: use the drop-down menu to select the available community group languages. The menu displays all the languages in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. The same group gets created in multiple specified languages in the Groups console of the respective community sites.
   * **[!UICONTROL Community Group Name]**: arts
-  * **[!UICONTROL Template]**: drop down to select `Reference Group`
+  * **[!UICONTROL Template]**: drop-down to select `Reference Group`
   * Select **[!UICONTROL Next]**
 
 ![Nested community groups](assets/parent-to-nestedgroup.png)
@@ -142,7 +142,7 @@ After publishing the main community site:
 
 ## Experience on Publish {#experience-on-publish}
 
-It is possible to experience the different groups when signed in, for example with the [demo users](/help/communities/tutorials.md#demo-users) used for:
+It is possible to experience the different groups when signed in, for example, with the [demo users](/help/communities/tutorials.md#demo-users) used for:
 
 * Art/History group member: `emily.andrews@mailinator.com/password`
   * The restricted (secret) group, arts/history, is visible:

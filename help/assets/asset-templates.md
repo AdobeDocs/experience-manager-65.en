@@ -21,7 +21,7 @@ The ability to edit [!DNL Adobe InDesign] templates from the web interface helps
 You can achieve the following with asset templates:
 
 * Modify editable template fields from the web interface.
-* Control the basic styling of text, for example font size, style, and type at the tag level.
+* Control the basic styling of text, for example, font size, style, and type at the tag level.
 * Change images within the template using Content Picker.
 * Preview template edits.
 * Merge multiple template files to create a multi-page artifact.
@@ -89,7 +89,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
-   You can edit the text properties, for example font style, color, and size using the options provided.
+   You can edit the text properties, for example, font style, color, and size using the options provided.
 
 1. Click **[!UICONTROL Preview]** to preview the text changes.
 

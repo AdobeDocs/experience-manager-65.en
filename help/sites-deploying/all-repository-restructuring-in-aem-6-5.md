@@ -572,13 +572,13 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
   </tr>
   <tr>
    <td><strong>Notes</strong></td>
-   <td><p>Restarting the Day Communique Tagging OSGi bundle will only register the New Location as the tag root if the Previous Location is empty.</p> <p>References to the Previous Location will continue to work after migrating to New Location for all functionality that leverages AEM's TagManager API for tag resolution.</p> <p>Any custom code that explicitly references the path <code>/etc/tags</code> must be updated to <span class="code">/content/
+   <td><p>Restarting the Day Communique Tagging OSGi bundle will only register the New Location as the tag root if the Previous Location is empty.</p> <p>References to the Previous Location will continue to work after migrating to New Location for all functionality that uses AEM's TagManager API for tag resolution.</p> <p>Any custom code that explicitly references the path <code>/etc/tags</code> must be updated to <span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>, or preferably rewritten to leverage the TagManager Java API, in tandem with this migration.</p> </td>
+      </code></span>, or preferably rewritten to use the TagManager Java API, in tandem with this migration.</p> </td>
   </tr>
  </tbody>
 </table>

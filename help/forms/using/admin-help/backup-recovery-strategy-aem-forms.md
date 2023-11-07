@@ -88,7 +88,7 @@ In a cluster, if you use TCP caching instead of UDP, you must update the cache l
 
 ### Changing the AEM forms node file system paths {#changing-the-aem-forms-node-file-system-paths}
 
-If you change the file system paths for a standalone node, you must update the appropriate references in preferences, other system configurations, custom applications, and deployed AEM forms applications. On the other hand, for a cluster, all nodes must use the same file system path configuration. You must set the Global Document Storage (GDS) root directory and ensure that it points to a copy of the recovered GDS which is in sync with the recovered database. Setting the GDS path is important because the GDS can contain data intended to persist across application server restarts.
+If you change the file system paths for a standalone node, you must update the appropriate references in preferences, other system configurations, custom applications, and deployed AEM forms applications. On the other hand, for a cluster, all nodes must use the same file system path configuration. Set the Global Document Storage (GDS) root directory and ensure that it points to a copy of the recovered GDS which is in sync with the recovered database. Setting the GDS path is important because the GDS can contain data intended to persist across application server restarts.
 
 In a clustered environment, the file system path configuration of the repository should be same for all the cluster nodes before the backup and after the recovery.
 

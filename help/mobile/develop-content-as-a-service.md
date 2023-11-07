@@ -64,7 +64,7 @@ Content Services provide access to AEM-managed assets that may not be referenced
 
 #### Existing Managed Assets {#existing-managed-assets}
 
-A user of AEM Sites and Assets is using AEM Assets to manage all of their digital material for all channels. They are developing a native mobile app and must use several assets that are managed by AEM Assets. For example logos, background images, and button icons.
+A user of AEM Sites and Assets is using AEM Assets to manage all of their digital material for all channels. They are developing a native mobile app and must use several assets that are managed by AEM Assets. For example, logos, background images, and button icons.
 
 Currently these are spread around the Assets repository. The files that the app must reference are in the following:
 

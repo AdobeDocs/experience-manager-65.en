@@ -30,14 +30,14 @@ When the source content fragment is updated or modified, the corresponding local
 The Create and translate workflow includes the following options. The procedural steps associated with each option are similar to those associated with the corresponding option for assets.
 
 * Create structure only: For procedure steps, see [Create structure only for assets](translation-projects.md#create-structure-only).
-* Create a new translation project: For procedure steps, see [Create a new translation project for assets](translation-projects.md#create-a-new-translation-project).
+* Create a translation project: For procedure steps, see [Create a translation project for assets](translation-projects.md#create-a-new-translation-project).
 * Add to existing translation project: For procedure steps, see [Add to existing translation project for assets](translation-projects.md#add-to-existing-translation-project).
 
 ## Update language copies workflow {#update-language-copies-workflow}
 
 The Update language copies workflow includes the following options. The procedural steps associated with each option are similar to those associated with the corresponding option for assets.
 
-* Create a new translation project: For procedure steps, see [Create a new translation project for assets](translation-projects.md#create-a-new-translation-project) (update workflow).
+* Create a translation project: For procedure steps, see [Create a translation project for assets](translation-projects.md#create-a-new-translation-project) (update workflow).
 * Add to existing translation project: For procedure steps, see [Add to existing translation project for assets](translation-projects.md#add-to-existing-translation-project) (update workflow).
 
 You can also create temporary language copies for fragments similar to the way you create temporary copies for assets. For details, see [Creating temporary language copies for assets](translation-projects.md#creating-temporary-language-copies).
@@ -153,4 +153,4 @@ To be able to translate content fragments that include mixed media, first edit t
 
    >[!NOTE]
    >
-   >The procedures for adding a content fragment to an existing project or to perform update workflows are similar to the corresponding procedures for assets. For guidance on these procedures, refer to the procedures described for assets.
+   >The procedures for adding a content fragment to an existing project or to perform update workflows are similar to the corresponding procedures for assets. For guidance on these procedures, see the procedures described for assets.

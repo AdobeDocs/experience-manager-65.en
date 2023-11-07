@@ -71,7 +71,7 @@ For additional information about the GDS directory, see [Preparing to Install AE
 
 **Location of the System Fonts directory** Type the path to the fonts directory that your operating system provided. Multiple directories can be added, separated by a semicolon **;**.
 
-**Location of Data Services Configuration file** Specifies the location of the services-config.xml file. By default, this file is embedded in the adobe-core-appserver.ear file and is not user-accessible. A copy of the default services-config.xml file is located in [aem-forms root]\sdk\misc\DataServices\Server-Configuration. If you changed this file and moved it, type the new location in this field.
+**Location of Data Services Configuration file** Specifies the location of the services-config.xml file. By default, this file is embedded in the adobe-core-appserver.ear file and is not user-accessible. A copy of the default services-config.xml file is in [aem-forms root]\sdk\misc\DataServices\Server-Configuration. If you changed this file and moved it, type the new location in this field.
 
 The Data Services configuration file allows customization of Data Services settings, such as authentication type and debug output.
 

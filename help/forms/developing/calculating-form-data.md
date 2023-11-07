@@ -74,13 +74,13 @@ To illustrate the usage of a form design script, this section examines a simple 
 
 **A.** A field named NumericField1 **B.** A field named NumericField2 **C.** A field named NumericField3
 
-The syntax of the script located in this form design is as follows:
+The syntax of the script in this form design is as follows:
 
 ```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
-In this form design, the Calculate button is a command button, and the script is located in this button’s `Click` event. When a user enters values into the first two fields (NumericField1 and NumericField2) and clicks the Calculate button, the form is sent to the Forms service, where the script is executed. The Forms service renders the form back to the client device with the results of the calculation displayed in the NumericField3 field.
+In this form design, the Calculate button is a command button, and the script is in this button’s `Click` event. When a user enters values into the first two fields (NumericField1 and NumericField2) and clicks the Calculate button, the form is sent to the Forms service, where the script is executed. The Forms service renders the form back to the client device with the results of the calculation displayed in the NumericField3 field.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Calculate form data by using the Forms API (Java):
     * Invoke the `FormsServiceClient` object’s `processFormSubmission` method and pass the following values:
 
         * The `com.adobe.idp.Document` object that contains the form data.
-        * A string value that specifies environment variables including all relevant HTTP headers. You must specify the content type to handle by specifying one or more values for the `CONTENT_TYPE` environment variable. For example, to handle XML and PDF data, specify the following string value for this parameter: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+        * A string value that specifies environment variables including all relevant HTTP headers. Specify the content type to handle by specifying one or more values for the `CONTENT_TYPE` environment variable. For example, to handle XML and PDF data, specify the following string value for this parameter: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
         * A string value that specifies the `HTTP_USER_AGENT` header value; for example, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
         * A `RenderOptionsSpec` object that stores run-time options.
 

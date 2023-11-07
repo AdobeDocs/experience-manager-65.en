@@ -107,7 +107,7 @@ The Forms service always caches form designs on disk. If form designs are stored
 
 The Forms service caches rendered forms so that it does not need to resolve and render the same form in subsequent requests. Rendered forms are cached both on disk and in memory.
 
-These settings are located in the **In Memory Form Rendering Cache** area. If you change either of these settings, restart the Forms service for the change to take effect. To restart this service, either use Workbench or see [Start or stop the services associated with AEM forms modules](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) for instructions.
+These settings are in the **In Memory Form Rendering Cache** area. If you change either of these settings, restart the Forms service for the change to take effect. To restart this service, either use Workbench or see [Start or stop the services associated with AEM forms modules](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) for instructions.
 
 **Cache Size:** Specifies the maximum number of rendered forms that can reside in the in-memory cache. The default value is 100. This setting does not affect the disk cache.
 
@@ -117,7 +117,7 @@ These settings are located in the **In Memory Form Rendering Cache** area. If yo
 
 The Forms service caches fragments and images use in form designs on disk. This improves performance because the fragments and images are only read from the repository on the first request. Then on subsequent requests, the Forms service reads fragments and images from the disk cache. Fragments and images are cached only on disk, and not in memory.
 
-You can use the following settings to control the on-disk caching of fragments and images. These settings are located in the **Template Resource Cache Settings** area:
+You can use the following settings to control the on-disk caching of fragments and images. These settings are in the **Template Resource Cache Settings** area:
 
 **Resource Caching** Select one of the following options from the list:
 

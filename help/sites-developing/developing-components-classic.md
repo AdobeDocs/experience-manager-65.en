@@ -190,7 +190,7 @@ To develop new components for AEM based on existing component, you can copy the 
     * using CRXDE Lite to add the value `<path-to-component>` (for example, `/apps/geometrixx/components/myComponent`) to the property components of the node `/etc/designs/geometrixx/jcr:content/contentpage/par`
     * following the instructions in [Adding new components to paragraph systems](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. In AEM WCM, open a page in your web site and insert a paragraph of the type you just created to make sure that the component is working properly.
+1. In AEM WCM, open a page in your web site and insert a paragraph of the type you created to make sure that the component is working properly.
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ To develop new components for AEM based on existing component, you can copy the 
 
 After the component has been developed, you add it to the paragraph system, which enables authors to select and use the component when editing a page.
 
-1. Access a page within your authoring environment that uses the paragraph system, for example `<contentPath>/Test.html`.
+1. Access a page within your authoring environment that uses the paragraph system, for example, `<contentPath>/Test.html`.
 1. Switch to Design mode by either:
 
     * adding `?wcmmode=design` to the end of the URL and accessing again, for example:

@@ -86,7 +86,7 @@ For forms workflow to receive and handle incoming email messages from users, you
 
 **Inbox Host:** The inbox host name or IP address for the email provider to scan.
 
-**Inbox Port:** The inbox port number for the email provider to scan. If the value is 0, the default IMAP or POP3 port will be used.
+**Inbox Port:** The inbox port number for the email provider to scan. If the value is 0, the default IMAP or POP3 port is used.
 
 **Inbox Protocol:** The email protocol for the email endpoint to use to scan the inbox. The choices are IMAP or POP3. The inbox host mail server must support these protocols.
 

@@ -156,7 +156,7 @@ Configure the following properties while creating charts for print and web chann
    <td><p>In addition to common configurations, the following chart-specific configuration are available:</p>
     <ul>
      <li><strong>Show legend: </strong>Shows a legend for the pie or donut chart when enabled.</li>
-     <li><strong>Legend position: </strong>Specifies the position of the legend with respect to the chart. The available options are Right, Left, Top, and Bottom. It is recommended to use the right-side legend in the print channel.</li>
+     <li><strong>Legend position: </strong>Specifies the position of the legend with respect to the chart. The available options are Right, Left, Top, and Bottom. Use the right-side legend in the print channel.</li>
      <li><strong>Inner radius</strong>: Available for Donut charts to specify the radius (in pixels) of the inner circle in the chart.</li>
      <li><strong>Line color</strong>: Available for Line, Line and Point, and Area charts to specify the color for the line in the chart.</li>
      <li><strong>Point color</strong>: Available for Point and Line and Point charts to specify the color for the points in the chart.<br /> </li>

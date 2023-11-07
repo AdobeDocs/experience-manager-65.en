@@ -68,7 +68,7 @@ When validating a DDX document, you must set specific run-time options that inst
 
 After you create the Assembler service client, reference the DDX document, and set run-time options, you can invoke the `invokeDDX` operation to validate the DDX document. When validating the DDX document, you can pass `null` as the map parameter (this parameter usually stores PDF documents that the Assembler requires to perform the operation(s) specified in the DDX document).
 
-If validation fails, an exception is thrown and the log file contains details that explains why the DDX document is invalid can be obtained from the `OperationException` instance. Once past the basic XML parsing and schema checking, then the validation against the DDX specification is performed. All errors that are located in the DDX document are specified in the log.
+If validation fails, an exception is thrown and the log file contains details that explains why the DDX document is invalid can be obtained from the `OperationException` instance. Once past the basic XML parsing and schema checking, then the validation against the DDX specification is performed. All errors that are in the DDX document are specified in the log.
 
 **Save the validation results in a log file**
 

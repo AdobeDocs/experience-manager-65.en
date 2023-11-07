@@ -73,7 +73,7 @@ To insert a new component:
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. In both the sidekick and the **Insert New Component** toolbar you see a list of the available components (paragraph types). These may be split into various sections (for example, General, Columns, etc.), which can be expanded as required.
+1. In both the sidekick and the **Insert New Component** toolbar you see a list of the available components (paragraph types). These may be split into various sections (for example, General, Columns, and so on), which can be expanded as required.
 
    Depending on your production environment, these choices may differ. For complete details on components, see [Default Components](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -81,7 +81,7 @@ To insert a new component:
 
 ### Inserting a Component using the Content Finder {#inserting-a-component-using-the-content-finder}
 
-You can also add a new component to the page by dragging an asset from the [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). This will automatically create a new component of the appropriate type containing the asset.
+You can also add a new component to the page by dragging an asset from the [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). This automatically creates a component of the appropriate type containing the asset.
 
 This is valid for the following asset types (some will be dependent on page/paragraph system):
 
@@ -171,7 +171,7 @@ Inherited components can be the product of various scenarios, including:
 * [Multi site management](/help/sites-administering/msm.md); also in combination with [scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Launches](/help/sites-classic-ui-authoring/classic-launches.md) (when based on livecopy).
-* Specific components; for example the Inherited Paragraph System within Geometrixx.
+* Specific components; for example, the Inherited Paragraph System within Geometrixx.
 
 You can cancel (then re-enable) the inheritance. Depending on the component, this can be available from:
 

@@ -68,11 +68,11 @@ Use **Save As** to persist your new query.
 
 Select the query you want to update from the list in the **[Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md)** panel (far left).
 
-The query will be shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
+The query is shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
 
 ## Running queries {#running-queries}
 
-You can run a new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query will be shown in the editor panel.
+You can run a new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query is shown in the editor panel.
 
 In either case, the query showing in the editor panel is the query that will be executed when you either:
 
@@ -106,7 +106,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
    ![Persisted Query HTTP Cache Headers](assets/cfm-graphqlapi-headers-01.png "Persisted Query HTTP Cache Headers")
 
-1. Selecting this will open the **Cache Configuration** dialog:
+1. Selecting this opens the **Cache Configuration** dialog box:
 
    ![Persisted Query HTTP Cache Header Settings](assets/cfm-graphqlapi-headers-02.png "Persisted Query HTTP Cache Header Settings")
 

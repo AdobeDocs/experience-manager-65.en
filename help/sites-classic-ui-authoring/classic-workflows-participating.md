@@ -54,7 +54,7 @@ When you are assigned a work item (for example, **Approve Content**) various ale
 After you have taken the action indicated you can complete the work item, thus allowing the workflow to continue. Use the following procedure to complete the work item.
 
 1. Select the workflow step and click the **Complete** button in the top navigation bar.
-1. In the resulting dialog, select the **Next Step**; that is, the step to execute next. A drop down list shows all appropriate destinations. A **Comment** can also be entered.
+1. In the resulting dialog, select the **Next Step**; that is, the step to execute next. A drop-down list shows all appropriate destinations. A **Comment** can also be entered.
 
    ![workflowcomplete](assets/workflowcomplete.png)
 
@@ -78,7 +78,7 @@ Use the following procedure to delegate a work item.
 Use the following procedure to step back.
 
 1. Click the Step Back button in the top navigation bar.
-1. In the resulting dialog, select the Previous Step; that is, the step to execute next - even though it is a step that occurs earlier in the workflow. A drop down list shows all appropriate destinations.
+1. In the resulting dialog, select the Previous Step; that is, the step to execute next - even though it is a step that occurs earlier in the workflow. A drop-down list shows all appropriate destinations.
 
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 

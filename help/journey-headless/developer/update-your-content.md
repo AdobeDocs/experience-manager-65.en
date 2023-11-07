@@ -157,7 +157,7 @@ The response will contain paging information as part of the `properties` section
 
 Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders, and sub-folders.
+The Assets REST API exposes access to the properties of a folder; for example, its name, title, and so on. Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
@@ -190,9 +190,9 @@ Content fragments:
 
 ### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, and so on. are part of the definition.
 
-To create a new content fragment, the (internal repository) path of the model has to be provided.
+To create a content fragment, the (internal repository) path of the model has to be provided.
 
 ### Associated Content {#associated-content}
 

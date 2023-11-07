@@ -1,14 +1,10 @@
 ---
 title: Client Context
-seo-title: Client Context
 description: Learn how to use the Client Context to see information about the current page and visitor in Adobe Experience Manager.
-seo-description: Learn how to use the Client Context in AEM.
-uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 ---
@@ -36,7 +32,7 @@ The icons (only available in the author environment) let you configure the detai
 ![The Edit, Load, and Reset icons of the Client Context window](do-not-localize/clientcontext_icons.png)
 
 * **Edit**
-  A new page will open allowing you to [edit, add or remove a profile property](#editingprofiledetails).
+  A new page opens, letting you [edit, add, or remove a profile property](#editingprofiledetails).
 
 * **Load**
   You can [select from a list of profiles and load the profile](#loading-a-new-user-profile) you want to test.
@@ -58,13 +54,13 @@ The Client Context can show the following properties ([depending on what has bee
 * the **mouse X** position
 * the **mouse Y** position
 
-**Activity Stream** This provides information about the social activity of the user on various platforms; for example, the AEM forums, blogs, ratings, etc.
+**Activity Stream** This provides information about the social activity of the user on various platforms; for example, the AEM forums, blogs, ratings, and so on.
 
 **Campaign** Allows authors to simulate a specific experience for a campaign. This component overrides normal campaign resolution and experience selection to enabled the testing of various permutations.
 
 Campaign resolution is normally based on the priority property of the campaign. The experience is normally selected based on segmentation.
 
-**Cart** Shows shopping cart information including product entries (title, quantity, priceFormatted, etc.), resolved promotions (title, message, etc.) and vouchers (code, description, etc.).
+**Cart** Shows shopping cart information including product entries (title, quantity, priceFormatted, and so on), resolved promotions (title, message, and so on) and vouchers (code, description, and so on).
 
 The cart session store also notifies the server about resolved promotion changes (based on segmentation changes) using the ClientContextCartServlet.
 
@@ -148,7 +144,7 @@ When finished you can [reset the profile](#resetting-the-profile-to-the-current-
 
    ![The Load Profile icon of Client Context](do-not-localize/clientcontext_loadprofile.png)
 
-1. This will open the dialog, here you can select the profile you want to load:
+1. This opens the dialog, here you can select the profile you want to load:
 
    ![The Profile Loader dialog showing the drop-down to select a profile](assets/clientcontext_profileloader.png)
 
@@ -158,7 +154,7 @@ When finished you can [reset the profile](#resetting-the-profile-to-the-current-
 
 You can also select a profile with the selection slider:
 
-1. Double-click on the icon representing the current user. The selector will open, use the arrows to navigate and see the profiles available:
+1. Double-click on the icon representing the current user. The selector opens, use the arrows to navigate and see the profiles available:
 
    ![The user selector](assets/clientcontext_profileselector.png)
 
@@ -172,7 +168,7 @@ You can also select a profile with the selection slider:
 
 ### Changing the Browser Platform {#changing-the-browser-platform}
 
-1. Double-click on the icon representing the browser platform. The selector will open, use the arrows to navigate and see the platforms/browsers available:
+1. Double-click on the icon representing the browser platform. The selector opens, use the arrows to navigate and see the platforms/browsers available:
 
    ![Browser platform selector](assets/clientcontext_browserplatform.png)
 
@@ -180,7 +176,7 @@ You can also select a profile with the selection slider:
 
 ### Changing the Geolocation {#changing-the-geolocation}
 
-1. Double-click on the geolocation icon. An expanded map will open, here you can drag the marker to a new location:
+1. Double-click on the geolocation icon. An expanded map opens, here you can drag the marker to a new location:
 
    ![Geolocation detail](assets/clientcontext_geomocationrelocate.png)
 
@@ -188,7 +184,7 @@ You can also select a profile with the selection slider:
 
 ### Changing the Tag Selection {#changing-the-tag-selection}
 
-1. Double-click on the Tag Cloud section of the Client Context. The dialog will open, here you can select tags:
+1. Double-click on the Tag Cloud section of the Client Context. The dialog opens, here you can select tags:
 
    ![Tag cloud dialog](assets/clientcontext_tagselection.png)
 

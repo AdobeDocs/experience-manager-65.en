@@ -102,7 +102,7 @@ If you are configuring authentication for an enterprise or hybrid domain and sel
 
 The following custom properties are required if artifact binding is used.
 
-* Add the following custom property to specify a username that represents the AEM forms Service Provider, which will be used to authenticate to the IDP Artifact Resolution service.
+* Add the following custom property to specify a username that represents the AEM forms Service Provider, which is used to authenticate to the IDP Artifact Resolution service.
   `saml.idp.resolve.username=<username>`
 
 * Add the following custom property to specify the password for the user specified in `saml.idp.resolve.username`.

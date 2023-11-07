@@ -29,7 +29,7 @@ The global also declares the [Sling library](/help/sites-developing/taglib.md#sl
 
 ### &lt;ui:includeClientLib&gt; {#ui-includeclientlib}
 
-The `<ui:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css, or a theme library. For multiple inclusions of different types, for example js and css, this tag must be used multiple times in the jsp. This tag is a convenience wrapper around the ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` service interface.
+The `<ui:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css, or a theme library. For multiple inclusions of different types, for example, js and css, this tag must be used multiple times in the jsp. This tag is a convenience wrapper around the ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` service interface.
 
 It has the following attributes:
 
@@ -111,7 +111,7 @@ It has the following optional attributes:
 
 **tagName** - Name of the element that will surround a non-empty output. It defaults to DIV.
 
-**placeholder** - Default value to use for null or empty text in edit mode, that is, the placeholder. Note that the default check is performed after the optional formatting and escaping, that is, it is written as-is to the output. It defaults to:
+**placeholder** - Default value to use for null or empty text in edit mode, that is, the placeholder. The default check is performed after the optional formatting and escaping, that is, it is written as-is to the output. It defaults to:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
@@ -250,7 +250,7 @@ Should you use `<cq:include>` or `<sling:include>`?
 >
 >`<cq:includeClientLib>` Deprecated since AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) should be used instead.
 
-The `<cq:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css or a theme library. For multiple inclusions of different types, for example js and css, this tag must be used multiple times in the jsp. This tag is a convenience wrapper around the `com.day.cq.widget.HtmlLibraryManager` service interface.
+The `<cq:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css or a theme library. For multiple inclusions of different types, for example, js and css, this tag must be used multiple times in the jsp. This tag is a convenience wrapper around the `com.day.cq.widget.HtmlLibraryManager` service interface.
 
 It has the following attributes:
 
@@ -539,7 +539,7 @@ It has the following attributes:
 
 >[!NOTE]
 >
->The resolution of the resource and the script that are included with the `<sling:include>` tag is the same as for a normal sling URL resolution. By default, the selectors, extension, and so on, from the current request are used for the included script as well. They can be modified through the tag attributes: for example `replaceSelectors="foo.bar"` lets you overwrite the selectors.
+>The resolution of the resource and the script that are included with the `<sling:include>` tag is the same as for a normal sling URL resolution. By default, the selectors, extension, and so on, from the current request are used for the included script as well. They can be modified through the tag attributes: for example, `replaceSelectors="foo.bar"` lets you overwrite the selectors.
 
 Examples:
 

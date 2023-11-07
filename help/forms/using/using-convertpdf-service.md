@@ -49,7 +49,7 @@ The ConvertPDF service provides the following two APIs:
  ConvertPdfService cpdfService = sling.getService(ConvertPdfService.class);
 
  // path to input document in AEM repository
- // please replace this with path to your document
+ // replace this with path to your document
 String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
  // Create a Docmanager Document object for
@@ -93,7 +93,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
  ConvertPdfService cpdfService = sling.getService(ConvertPdfService.class);
 
  // path to input document in AEM repository
- // please replace this with path to your document
+ // replace this with path to your document
  String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
  // Create a Docmanager Document object for

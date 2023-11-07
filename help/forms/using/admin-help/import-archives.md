@@ -73,7 +73,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 
       **ADD_REMOVE_ENDPOINTS_PERM:** To add, remove, and modify endpoints for a service
 
-      **CREATE_VERSION_PERM:** To create a new version of the service
+      **CREATE_VERSION_PERM:** To create a version of the service
 
       **DELETE_VERSION_PERM:** To delete a version of the service
 
@@ -140,7 +140,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 
       **ADD_REMOVE_ENDPOINTS_PERM:** To add, remove, and modify endpoints for a service
 
-      **CREATE_VERSION_PERM:** To create a new version of the service
+      **CREATE_VERSION_PERM:** To create a version of the service
 
       **DELETE_VERSION_PERM:** To delete a version of the service
 

@@ -723,7 +723,7 @@ Develop the script for the listchildren component.
    <%@include file="/libs/foundation/global.jsp"%><%
    %><%@ page import="java.util.Iterator,
             com.day.cq.wcm.api.PageFilter"%><%
-        /* Create a new Page object using the path of the current page */
+        /* Create a Page object using the path of the current page */
          String listroot = properties.get("listroot", currentPage.getPath());
         Page rootPage = pageManager.getPage(listroot);
         /* iterate through the child pages and gather properties */

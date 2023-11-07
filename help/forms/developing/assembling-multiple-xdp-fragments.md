@@ -69,9 +69,9 @@ The DDX document contains an XDP `result` tag that specifies the name of the res
  }
 ```
 
-The `XDP source` tag specifies the XDP file that represents a complete XDP document that can be used as a container for adding XDP fragments or as one of a number of documents that are appended together in order. In this situation, the XDP document is used only as a container (the first illustration shown in *Assembling Multiple XDP Fragments*). That is, the other XDP files are placed within the XDP container.
+The `XDP source` tag specifies the XDP file that represents a complete XDP document that can be used as a container for adding XDP fragments or as one of several documents that are appended together in order. In this situation, the XDP document is used only as a container (the first illustration shown in *Assembling Multiple XDP Fragments*). That is, the other XDP files are placed within the XDP container.
 
-For each sub form, you can add an `XDPContent` element (this element is optional). In the above example, notice that there are three sub forms: `subPatientContact`, `subPatientPhysical`, and `subPatientHealth`. Both the `subPatientPhysical` subform and the `subPatientHealth` sub form are located in the same XDP file, tuc018_patient.xdp. The fragment element specifies the name of the sub form, as defined in Designer.
+For each sub form, you can add an `XDPContent` element (this element is optional). In the above example, notice that there are three sub forms: `subPatientContact`, `subPatientPhysical`, and `subPatientHealth`. Both the `subPatientPhysical` subform and the `subPatientHealth` sub form are in the same XDP file, tuc018_patient.xdp. The fragment element specifies the name of the sub form, as defined in Designer.
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ To assemble multiple XDP documents, reference all XDP files that are used to ass
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
 ```
 
-The sub form named *subPatientContact* must be located in the XDP file named *tuc018_contact.xdp*.
+The sub form named *subPatientContact* must be in the XDP file named *tuc018_contact.xdp*.
 
 **Set run-time options**
 

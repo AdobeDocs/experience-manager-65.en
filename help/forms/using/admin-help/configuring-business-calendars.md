@@ -19,7 +19,7 @@ For example, a task reminder is configured to occur three business days after th
 
 >[!NOTE]
 >
->When calculating dates and times using business calendars, AEM forms uses the date and time of the server where it is running and does not adjust for the difference between time zones. For example, if a task reminder is scheduled to occur at 10:00 am on a server running in London, but the user receiving the reminder is located in New York City, the user would receive the reminder at 5:00 am local time.
+>When calculating dates and times using business calendars, AEM forms uses the date and time of the server where it is running and does not adjust for the difference between time zones. For example, if a task reminder is scheduled to occur at 10:00 am on a server running in London, but the user receiving the reminder is in New York City, the user would receive the reminder at 5:00 am local time.
 
 ## Using the default business calendar {#using-the-default-business-calendar}
 
@@ -59,7 +59,7 @@ If your organization contains different sets of users who have different non-bus
 
 >[!NOTE]
 >
->If you do not create a new business calendar, then the default calendar will be used.
+>If you do not create a business calendar, then the default calendar is used.
 
 1. In administration console, click Services &gt; Forms workflow &gt; Business Calendars.
 1. To add a new business calendar, click ![bus_cal_plus](assets/bus_cal_plus.png). The text *New Calendar* appears in the drop-down list. Select the text and type another name for your calendar.
@@ -84,7 +84,7 @@ If your organization contains different sets of users who have different non-bus
 
    >[!NOTE]
    >
-   >If you do not enable the calendar, the default calendar will be used.
+   >If you do not enable the calendar, the default calendar is used.
 
 ## Mapping users and groups to a business calendar {#mapping-users-and-groups-to-a-business-calendar}
 
@@ -111,7 +111,7 @@ There are two methods that you can use to associate a business calendar with a u
 
    >[!NOTE]
    >
-   >In Workbench, if you have configured a User service to use business calendars and the service is assigned to a group, AEM forms uses the group mappings specified here to resolve the calendar for the group. AEM forms always uses groups mappings to resolve the calendar for groups, even when you use business calendar keys to resolve the calendar for users. If no group mapping is found, the default business calendar will be used.
+   >In Workbench, if you have configured a User service to use business calendars and the service is assigned to a group, AEM forms uses the group mappings specified here to resolve the calendar for the group. AEM forms always uses groups mappings to resolve the calendar for groups, even when you use business calendar keys to resolve the calendar for users. If no group mapping is found, the default business calendar is used.
 
 1. For each item in the Directory Service Group list, select a Calendar.
 1. Click Save.
@@ -137,7 +137,7 @@ AEM forms enables you to export and import your business calendars as XML files.
 
 ## Delete a business calendar {#delete-a-business-calendar}
 
-You can remove any business calendars that your organization no longer requires. If you delete a business calendar that is still mapped to users and groups, the default calendar will be used.
+You can remove any business calendars that your organization no longer requires. If you delete a business calendar that is still mapped to users and groups, the default calendar is used.
 
 1. In administration console, click Services &gt; Forms workflow &gt; Business Calendars.
 1. Select the calendar.

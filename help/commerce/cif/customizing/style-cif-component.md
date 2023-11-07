@@ -255,7 +255,7 @@ There are several options for how to include a client-side library. Next inspect
 
     ![Edit the template](../assets/style-cif-component/edit-template.png)
 
-    This will open the **Landing Page** template the **Home** page is based on.
+    This opens the **Landing Page** template the **Home** page is based on.
 
     >[!NOTE]
     >
@@ -328,7 +328,7 @@ The webpack-dev-server proxies images and some of the CSS/JavaScript from the lo
 
     ![Webpack dev server on port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-    Leave the webpack-dev-server running. It will be used in the next exercise.
+    Leave the webpack-dev-server running. It is used in the next exercise.
 
 ## Implement Card style for Product Teaser {#update-css-product-teaser}
 

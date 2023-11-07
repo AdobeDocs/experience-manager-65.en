@@ -22,7 +22,7 @@ Then, configure WebLogic so that it uses the Custom Identity keystore and Custom
 
 ## Creating an SSL credential for use on WebLogic Server {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
-The keytool command is typically located in the Java jre/bin directory and must include several options and option values, which are listed in the following table.
+The keytool command is typically in the Java jre/bin directory and must include several options and option values, which are listed in the following table.
 
 <table>
  <thead>

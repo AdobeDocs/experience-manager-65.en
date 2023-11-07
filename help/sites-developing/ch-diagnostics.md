@@ -1,8 +1,6 @@
 ---
 title: ContextHub Diagnostics
-seo-title: ContextHub Diagnostics
 description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
-seo-description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -19,7 +17,7 @@ The ContextHub Diagnostics page provides information about the stores and UI mod
 
 >[!NOTE]
 >
->In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page will be blank. Please see [this document](ch-configuring.md#debugging-contexthub) for details on how to enable debug mode.
+>In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page will be blank. See [this document](ch-configuring.md#debugging-contexthub) for details on how to enable debug mode.
 
 >[!NOTE]
 >

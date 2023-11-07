@@ -34,7 +34,7 @@ In AEM, the **Call to Action** components - **ClickThroughLink** and **Graphical
 
 To map landing page components to Adobe Analytics:
 
-1. After creating the Adobe Analytics configuration and creating a new framework, select the appropriate reporting suite from the drop-down menu. This results in fetching the Adobe Analytics variables and showing them in the content finder.
+1. After creating the Adobe Analytics configuration and creating a framework, select the appropriate reporting suite from the drop-down menu. This results in fetching the Adobe Analytics variables and showing them in the content finder.
 1. Drag and drop Call to Action (CTA) components from the sidekick into the mapping area in the middle of the page, as appropriate.
 
 <table>
@@ -83,7 +83,7 @@ To map landing page components to Adobe Analytics:
 </table>
 
 1. Map these exposed attributes with any Adobe Analytics variables from the content finder. The framework is now ready to use.
-1. You can now create a new landing page or open an existing landing page with existing CTA components and click **Cloud Services** tab in **Page Properties** from the sidekick (in the touch-optimized UI, select **Open Properties** and click **Cloud Services**) and configure the framework to use with landing page. Select the framework from the drop-down list.
+1. You can now create a landing page or open an existing landing page with existing CTA components and click **Cloud Services** tab in **Page Properties** from the sidekick (in the touch-optimized UI, select **Open Properties** and click **Cloud Services**) and configure the framework to use with landing page. Select the framework from the drop-down list.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

@@ -171,7 +171,7 @@ Select `Add Group` to create a group in the publish environment.
 
 ![The Create New Group window](assets/group-console1.png)
 
-The required fields for creating a new publish-side member group are:
+The required fields for creating a publish-side member group are:
 
 * **[!UICONTROL ID]**
   

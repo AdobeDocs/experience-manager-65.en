@@ -14,7 +14,7 @@ exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 >[!NOTE]
 >
 >Adobe is not planning to further enhance E-mail tracking of open/bounces (not deliverable) send by AEM SMTP service.
->Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>Recommendation is to use [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content and add new content, specific to the newsletters.
 
@@ -57,7 +57,7 @@ This document describes the basics of creating newsletters in AEM. For more deta
 
 1. Click **Create**.
 
-1. A new dialog will open immediately. Here you can enter properties for the newsletter.
+1. A new dialog box opens immediately. Here you can enter properties for the newsletter.
 
    The **Default Recipients List** is a mandatory field as this forms the touchpoint for the newsletter (see [Working with Lists](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) for more information about lists).
 
@@ -163,7 +163,7 @@ To switch between clients, click the corresponding icon to view the newsletter i
 Although only authorized users can send a newsletter, you should customize the following:
 
 * The subject line, so that users want to open your email and also to ensure that your newsletter will not end up marked as spam.
-* The From address, for example noreply@geometrixx.com, so that users receive e-mail from a specified address.
+* The From address, for example, `noreply@geometrixx.com`, so that users receive e-mail from a specified address.
 
 To customize newsletter settings:
 
@@ -178,7 +178,7 @@ To customize newsletter settings:
 
 1. Modify the **Subject** of the e-mail, if necessary.
 
-1. Select a **Default Recipients List** from the drop down list.
+1. Select a **Default Recipients List** from the drop-down list.
 
 1. Click **OK**.
 
@@ -213,7 +213,7 @@ To flight test newsletters:
 >[!NOTE]
 >
 >Adobe is not planning to further enhance E-mail tracking of open/bounces (not deliverable) send by AEM SMTP service.
->Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>Recommendation is to use [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 You can send out a newsletter from either the newsletter or from the list. Both procedures are described.
 

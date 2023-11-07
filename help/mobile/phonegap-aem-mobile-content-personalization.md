@@ -91,7 +91,7 @@ Select the Adobe Mobile Services card and click Next.
 
 From the Create or Select wizard step, select the Mobile Service drop-down, and select the Create Configuration entry. Provide a title, company, username, password, and select the appropriate data center. If you do not know these values, contact your Adobe Mobile Service administrator to obtain them. After all fields are filled out, click **Verify**. The verification process goes to AMS and verifies the credentials for the account, and on successful validation, a list of Mobile Applications is populated where you select the associated mobile application from the dropdown. Click **Submit** to complete the wizard. The process may take a bit of time to obtain the configuration data and any associated analytics with the application. After the process is complete, click **Done** to return back to the Adobe Mobile Dashboard.
 
-Returning back to the Mobile Dashboard, the Manage Cloud Services tile contains the AMS cloud service. Also note that the Analyze Metrics tile is populated with lifecycle reports.
+Returning back to the Mobile Dashboard, the Manage Cloud Services tile contains the AMS cloud service. Also, the Analyze Metrics tile is populated with lifecycle reports.
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 

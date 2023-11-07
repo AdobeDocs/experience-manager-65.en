@@ -457,7 +457,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
       #/serveStaleOnError "0"
 
       # The rules section defines what responses should be cached based on
-      # the requested URL. Please note that only the following requests can
+      # the requested URL. Only the following requests can
       # lead to cacheable responses:
       #
       # - HTTP method is GET
@@ -503,7 +503,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
         }
 
       # The invalidate section defines the pages that are "invalidated" after
-      # any activation. Please note that the activated page itself and all
+      # any activation. The activated page itself and all
       # related documents are flushed on an modification. For example: if the
       # page /foo/bar is activated, all /foo/bar.* files are removed from the
       # cache.
@@ -771,7 +771,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
       #/serveStaleOnError "0"
 
       # The rules section defines what responses should be cached based on
-      # the requested URL. Please note that only the following requests can
+      # the requested URL. Only the following requests can
       # lead to cacheable responses:
       #
       # - HTTP method is GET
@@ -817,7 +817,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
         }
 
       # The invalidate section defines the pages that are "invalidated" after
-      # any activation. Please note that the activated page itself and all
+      # any activation. The activated page itself and all
       # related documents are flushed on an modification. For example: if the
       # page /foo/bar is activated, all /foo/bar.* files are removed from the
       # cache.

@@ -50,10 +50,10 @@ The command line arguments for Imaging Transcoding Library can include the follo
 
 You can configure the following options for the `-resize` parameter:
 
-* `X`: Works similar to [!DNL Experience Manager]. For example -resize 319.
-* `WxH`: Aspect ratio is not maintained, For example `-resize 319x319`.
-* `Wx`: Fixes the width and calculates the height maintaining the aspect ratio. For example `-resize 319x`.
-* `xH`: Fixes the height and calculates the width maintaining the aspect ratio. For example `-resize x319`.
+* `X`: Works similar to [!DNL Experience Manager]. For example, -resize 319.
+* `WxH`: Aspect ratio is not maintained, For example, `-resize 319x319`.
+* `Wx`: Fixes the width and calculates the height maintaining the aspect ratio. For example, `-resize 319x`.
+* `xH`: Fixes the height and calculates the width maintaining the aspect ratio. For example, `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)

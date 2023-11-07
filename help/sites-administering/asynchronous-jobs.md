@@ -49,7 +49,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. To view extra details, for example description and logs, select the operation and click **[!UICONTROL Open]** from the toolbar.
+1. To view extra details, for example, description and logs, select the operation and click **[!UICONTROL Open]** from the toolbar.
 
    ![open_icon](assets/async-open-icon.png)
 

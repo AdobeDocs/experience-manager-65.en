@@ -234,7 +234,7 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information that is used to create IMS account configuration.
 -->
 
 ### Configure the IMS account {#create-ims-account-configuration}

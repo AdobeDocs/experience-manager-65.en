@@ -57,7 +57,7 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 
 ### Create references to assets by exporting a ZIP file {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Perform the steps in [Create workflow models](/help/sites-developing/workflows-models.md) to create a new workflow.
+1. Perform the steps in [Create workflow models](/help/sites-developing/workflows-models.md) to create a workflow.
 1. Use the [Package feature](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) of [!DNL Adobe InDesign] to export the document. [!DNL Adobe InDesign] can export a document and the linked assets as a package. In this case, the exported folder contains a `Links` folder that contains subassets in the [!DNL InDesign] file. The `Links` folder is present in same folder as the INDD file. 
 1. Create a ZIP file and upload it to the [!DNL Experience Manager] repository.
 1. Start the `Unarchiver` workflow.

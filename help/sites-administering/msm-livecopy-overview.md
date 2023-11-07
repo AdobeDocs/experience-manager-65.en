@@ -52,7 +52,7 @@ The **Live Copy Overview** can be opened from the **References** side panel of t
 The **Live Copy Overview** can be opened when viewing properties of a blueprint page:
 
 1. Open **Properties** for the appropriate blueprint page.
-1. Open the **Blueprint** tab - the **Live Copy Overview** option will be shown in the top toolbar:
+1. Open the **Blueprint** tab - the **Live Copy Overview** option is shown in the top toolbar:
 
    ![Blueprint tab - Live Copy Overview](assets/chlimage_1-360.png)
 

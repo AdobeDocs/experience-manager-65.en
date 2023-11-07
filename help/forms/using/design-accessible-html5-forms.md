@@ -19,7 +19,7 @@ HTML5 forms use the ARIA HTML5 accessibility standard to generate accessible HTM
 
 *Note:Tabbed navigation does not cover protected fields such as calculation fields displaying sum of values. For the screen reader to read the value of a protected field, place an empty Read Only field either on top of, or next to, the protected field. Assign the value of the protected field to the new Read Only field. The screen reader or tabbed navigation can pick this read only field and speak it out as the value of the protected field.*
 
-AEM Forms Designer includes a number of Speak Text options that can be passed to screen readers. For each object in a form, the user can specify one of several settings for the screen reader text:
+AEM Forms Designer includes several Speak Text options that can be passed to screen readers. For each object in a form, the user can specify one of several settings for the screen reader text:
 
 * Custom screen reader text, which can be set using the Accessibility palette. Authors can annotate the names of buttons and fields, and their purpose.
 * Tool tips, which can be set in the Accessibility palette.

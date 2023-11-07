@@ -52,7 +52,7 @@ HTML5 forms provide an implementation of the widget framework that can be extend
   </tr>
   <tr>
    <td>getCommitValue</td>
-   <td>The Widget framework loads the function whenever the value of the widget is saved in the XFAModel (for example on exit event of a textField). The implementation should return the value that is saved in the widget. The handler is provided with the new value for the option.</td>
+   <td>The Widget framework loads the function whenever the value of the widget is saved in the XFAModel (for example, on exit event of a textField). The implementation should return the value that is saved in the widget. The handler is provided with the new value for the option.</td>
   </tr>
   <tr>
    <td>showValue</td>

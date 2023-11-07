@@ -20,7 +20,7 @@ This integration allows AEM and Adobe Campaign Standard to be used independently
 
 ## Integration Steps {#integration-steps}
 
-The configuration of the integration between AEM and Adobe Campaign Standard requires a number of steps in both solutions.
+The configuration of the integration between AEM and Adobe Campaign Standard requires several steps in both solutions.
 
 1. [Configure the `aemserver` User in Campaign](#aemserver-user)
 1. [Verify the `AEMResourceTypeFilter` in Campaign](#resource-type-filter)
@@ -36,7 +36,7 @@ This document leads you through each of these steps in detail.
 ## Prerequisites {#prerequisites}
 
 * Administrator access to Adobe Campaign Standard
-  * If you need additional details on how to set up and configure Adobe Campaign Standard please refer to the [Adobe Campaign Standard documentation.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
+  * If you need additional details on how to set up and configure Adobe Campaign Standard see the [Adobe Campaign Standard documentation.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
 * Administrator access to AEM
 
 ## Configure the aemserver User in Campaign {#aemserver-user}
@@ -57,7 +57,7 @@ Adobe Campaign Standard by default comes with an `aemserver` user that AEM uses 
 
 Your `aemserver` user now has the necessary rights so that AEM can use it to communicate with Adobe Campaign.
 
-However, before AEM can use the `aemserver` user, its password must be set. This cannot be done through Adobe Campaign. It must be carried out by an Adobe support engineer. [Please raise a ticket with Adobe Customer Care](https://experienceleague.adobe.com/?support-tab=home#support) to request the reset of the `aemserver` password. Once you have the password from Adobe Customer Care, please keep it in a secure location.
+However, before AEM can use the `aemserver` user, its password must be set. This cannot be done through Adobe Campaign. It must be carried out by an Adobe support engineer. [Submit a ticket with Adobe Customer Care](https://experienceleague.adobe.com/?support-tab=home#support) to request the reset of the `aemserver` password. Once you have the password from Adobe Customer Care, keep it in a secure location.
 
 ## Verify the AEMResourceTypeFilter in Campaign {#resource-type-filter}
 

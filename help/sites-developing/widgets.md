@@ -98,7 +98,7 @@ To include the client library in the page component jsp:
 * to only include JavaScript code:
   `<ui:includeClientLib js="<category-name>"/>`
 
-For more details refer to the description of the [&lt;ui:includeClientLib&gt;](/help/sites-developing/taglib.md#lt-ui-includeclientlib) tag.
+For more details, see the description of the [&lt;ui:includeClientLib&gt;](/help/sites-developing/taglib.md#lt-ui-includeclientlib) tag.
 
 Sometimes a client library should only be available in author mode and should be excluded in publish mode. It can be achieved as follows:
 
@@ -459,7 +459,7 @@ To use the **Custom Treebrowse** widget-based dialog:
 
 #### Example 3: Rich Text Editor (RTE) Plug-In {#example-rich-text-editor-rte-plug-in}
 
-The **Rich Text Editor (RTE) Plug-in** based dialog is a Rich Text Editor based dialog that has a custom button to insert some custom text within square brackets. The custom text can be parsed by some server-side logic (not implemented in this example), for example to add some text that is defined at the given path:
+The **Rich Text Editor (RTE) Plug-in** based dialog is a Rich Text Editor based dialog that has a custom button to insert some custom text within square brackets. The custom text can be parsed by some server-side logic (not implemented in this example), for example, to add some text that is defined at the given path:
 
 The **RTE plugin** based dialog:
 

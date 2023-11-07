@@ -127,4 +127,4 @@ For that to work:
 
    >[!NOTE]
    >
-   >If you include `/libs/foundation/global.jsp` or other JSPs in `/libs`, you will need to copy that to your project so Eclipse can resolve the inclusion. At the same time, you need to make sure that it is not bundled into your content package by Maven. How to achieve this is described in [How to Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   >If you include `/libs/foundation/global.jsp` or other JSPs in `/libs`, you must copy that to your project so Eclipse can resolve the inclusion. At the same time, you need to make sure that it is not bundled into your content package by Maven. How to achieve this is described in [How to Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md).

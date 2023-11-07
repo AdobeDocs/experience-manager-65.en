@@ -181,7 +181,7 @@ Which parameters you send depends on the following:
   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
 
-* If you do not want to use the **marketingcloud.properties** file then you must send the credentials and parameters; for example:
+* If you do not want to use the **marketingcloud.properties** file then you must send the credentials and parameters. For example:
     * automaticProvisioning= `true`
     * servicename= `analytics|target`
     * path=path to an AEM page to attach the created cloud services configs; multiple paths can be defined

@@ -77,7 +77,7 @@ You can create a launch from either the Sites or Launches console:
 1. In the **Properties** step of the wizard you can specify:
 
     * **Launch Title**: The name of the Launch. The name should be meaningful for authors.
-    * **with existing content**: the original content will be used to create the launch.
+    * **with existing content**: the original content is used to create the launch.
     * **use a new template to replace the page**: See [Create Launch with New Template](#create-launch-with-new-template) for more details.
     * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
 

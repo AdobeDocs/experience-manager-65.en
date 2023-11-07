@@ -113,7 +113,7 @@ After you create the service client, reference a DDX file, create a collection o
 
 The Assembler service returns a `java.util.Map` object, which can be obtained from the `AssemblerResult` object, and that contains operation results. The returned `java.util.Map` object contains the resultant documents and any exceptions.
 
-The following table summarizes some of the key values and object types that can be located in the returned `java.util.Map` object.
+The following table summarizes some of the key values and object types that can be in the returned `java.util.Map` object.
 
 <table>
  <thead>

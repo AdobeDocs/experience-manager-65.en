@@ -107,7 +107,7 @@ The following agents are available in a standard AEM installation:
 
 * Static Agent
   This is an "Agent that stores a static representation of a node into the filesystem."
-  For example with the default settings, content pages and dam assets are stored under `/tmp`, either as HTML or the appropriate asset format. See the `Settings` and `Rules` tabs for the configuration.
+  For example, with the default settings, content pages and dam assets are stored under `/tmp`, either as HTML or the appropriate asset format. See the `Settings` and `Rules` tabs for the configuration.
   This was requested so that when the page is requested directly from the application server the content can be seen. This is a specialized agent and (probably) is not required for most instances.
 
 ## Replication Agents - Configuration Parameters {#replication-agents-configuration-parameters}

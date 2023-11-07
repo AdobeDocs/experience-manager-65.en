@@ -76,7 +76,7 @@ AEM 6 can be configured to run with MongoDB storage by following the below proce
     * `changesSize`: Size in MB of capped collection used in Mongo for caching the diff output. The default is 256.
     * `customBlobStore`: Boolean value indicating that a custom data store is used. The default is false.
 
-1. Create a configuration file with the PID of the data store you want to use and edit the file to set the configuration options. For more info, please see [Configuring Node Stores and Data Stores](/help/sites-deploying/data-store-config.md).
+1. Create a configuration file with the PID of the data store you want to use and edit the file to set the configuration options. For more info, see [Configuring Node Stores and Data Stores](/help/sites-deploying/data-store-config.md).
 
 1. Start the AEM 6 jar with a MongoDB storage backend by running:
 

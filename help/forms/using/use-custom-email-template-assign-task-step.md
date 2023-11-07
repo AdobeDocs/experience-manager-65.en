@@ -15,7 +15,7 @@ You can use the Assign Task step to create and assign tasks to a user or group. 
 
 ![Email notification with out of the box template](do-not-localize/default_email_template_new.png)
 
-You can customize the appearance and use custom metadata in an email notification. AEM Forms provide an out of the box template for email notifications. You can customize the out of the box template or create a new template from scratch.
+You can customize the appearance and use custom metadata in an email notification. AEM Forms provide an out of the box template for email notifications. You can customize the out of the box template or create a template from scratch.
 
 Email notification templates are based on [HTML email](https://en.wikipedia.org/wiki/HTML_email). These emails adapt to different email clients and screen sizes. Moreover, the styling of the email is defined within the template.
 
@@ -51,7 +51,7 @@ Out of the box, AEM Forms provides a template for email notifications. The templ
 
 1. Add custom HTML code to the file.
 
-   An email notification template is an [HTML email](https://en.wikipedia.org/wiki/HTML_email). You can add custom HTML code to the file to create a new template.
+   An email notification template is an [HTML email](https://en.wikipedia.org/wiki/HTML_email). You can add custom HTML code to the file to create a template.
 
 1. Save the file. The template is ready for use in Assign Task step.
 

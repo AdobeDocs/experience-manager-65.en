@@ -70,7 +70,7 @@ To support asset distribution use cases, other solutions should be considered:
 
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for a configurable, SaaS add-on to [!DNL Experience Manager Assets] to publish assets.
 * Custom solutions are created based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) code base.
-* [!DNL Experience Manager] [link share](/help/assets/link-sharing.md) to share assets ad hoc using links.
+* [!DNL Experience Manager] [link share](/help/assets/link-sharing.md) to share assets on demand using links.
 * [Experience Manager Assets web interface](/help/assets/manage-assets.md) with areas for external parties secured by [!DNL Experience Manager] access control setup and with necessary IT / network configuration adjustments, giving these external users access to [!DNL Experience Manager].
 
 ## Key concepts and use cases {#key-concepts-and-use-cases}
@@ -85,7 +85,7 @@ To support asset distribution use cases, other solutions should be considered:
 * **Major asset update/change :** A change to a digital asset that requires considerable work, and sometimes must be done over a longer period of time. It typically includes multiple changes. The asset must be saved multiple times while being updated. Major asset updates typically cause the asset to enter a WIP stage.
 * **DAM:** Digital asset management. In this document, it is synonymous with [!DNL Experience Manager Assets], unless specifically mentioned otherwise.
 * **Creative user:** A creative professional, who creates digital assets using Creative Cloud apps and services. In some cases, a creative user may be a member of a creative team who may use Creative Cloud, but does not create digital assets (like a creative director or creative team manager).
-* **DAM user:** A typical user of a DAM system. Depending on the organization, a DAM user can be a marketing or a non-marketing user, for example a Line-of-Business (LOB) user, librarian, sales person, and so on.
+* **DAM user:** A typical user of a DAM system. Depending on the organization, a DAM user can be a marketing or a non-marketing user, for example, a Line-of-Business (LOB) user, librarian, sales person, and so on.
 
 ### Considerations when using [!DNL Experience Manager] and [!DNL Creative Cloud] integration {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -125,9 +125,9 @@ To design an efficient workflow between creative and marketing/line-of-business 
 
 ### Why assets are stored in DAM {#why-assets-are-stored-in-dam}
 
-Storing assets in DAM makes them easily accessible and findable. It ensures that the assets can be leveraged by numerous users across the organization or ecosystem, which includes partners, customers, and so on.
+Storing assets in DAM makes them easily accessible and findable. It ensures that the assets can be used by numerous users across the organization or ecosystem, which includes partners, customers, and so on.
 
-Most organizations choose to only store assets that are relevant to the downstream marketing/LOB processes (publishing to channels like web channel via [!DNL Experience Manager Sites] or other channels served by Adobe Experience Cloud - Marketing Cloud, Advertising Cloud, and measured by Analytics Cloud, providing to users/partners, and so on). In addition, organizations store assets that may be subjected to a review/approval process in DAM. This way, DAM stores mostly assets that have high chances of being leveraged, and avoids storing idle assets.
+Most organizations choose to only store assets that are relevant to the downstream marketing/LOB processes (publishing to channels like web channel via [!DNL Experience Manager Sites] or other channels served by Adobe Experience Cloud - Marketing Cloud, Advertising Cloud, and measured by Analytics Cloud, providing to users/partners, and so on). In addition, organizations store assets that may be subjected to a review/approval process in DAM. This way, DAM stores mostly assets that have high chances of being used, and avoids storing idle assets.
 
 Storing assets is also subject to technical and resource utilization considerations. DAM provides additional services around stored assets, including extracting metadata, versioning, generating previews/transcoding, managing references, and adding access control information. These services consume additional time and infrastructure resources.
 
@@ -166,7 +166,7 @@ The following are examples of updates that are typically not relevant:
 
 #### Creative users with direct access to DAM {#creative-users-with-direct-access-to-dam}
 
-Typically, in-house creative teams or agencies/creative professionals onboarded to the internal network have access to the DAM deployment, including [!DNL Experience Manager] login. [!DNL Experience Manager] and network infrastructure can be set up to allow direct access to external parties - usually trusted organizations like agencies working for a client - to have access to [!DNL Experience Manager] over network, for example via VPN or IP allowed list.
+Typically, in-house creative teams or agencies/creative professionals onboarded to the internal network have access to the DAM deployment, including [!DNL Experience Manager] login. [!DNL Experience Manager] and network infrastructure can be set up to allow direct access to external parties - usually trusted organizations like agencies working for a client - to have access to [!DNL Experience Manager] over network, for example, by way of VPN or IP allowed list.
 
 In such cases, Adobe Asset Link or [!DNL Experience Manager] desktop app helps provide easy access to final/approved assets and lets you save creative-ready assets to DAM.
 
@@ -195,7 +195,7 @@ Adobe Asset Link offers a good support for this use case:
 
 [!DNL Experience Manager] desktop app provides a network share for assets opened in the native app. By default, all the changes done locally are uploaded to [!DNL Experience Manager] automatically after a brief while. With such a configuration, frequent saves during the work-in-progress phase would all be uploaded into [!DNL Experience Manager] and versioned, creating a lot of network traffic and potential scalability challenges - not to mention unnecessary versions in [!DNL Experience Manager].
 
-The recommended approach here is to use an option in [!DNL Experience Manager] desktop app to turn off automated updates, and upload changes to assets to [!DNL Experience Manager] manually, leveraging the upload changes action in the app's Asset Status UI.
+The recommended approach here is to use an option in [!DNL Experience Manager] desktop app to turn off automated updates, and upload changes to assets to [!DNL Experience Manager] manually, using the upload changes action in the app's Asset Status UI.
 
 #### Bulk upload to DAM {#bulk-upload-to-dam}
 
@@ -207,7 +207,7 @@ You may have a requirement to simultaneously upload a larger number of files int
 
 The description refers to uploading files operationally (for example, every week or with every photoshoot), as a normal part of desktop user's workflow. Large asset migrations are not covered here.
 
-You can leverage the following upload capabilities:
+You can use the following upload capabilities:
 
 * To upload large/hierarchical folders in bulk, use [!DNL Experience Manager] desktop app that provides [folder upload](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem) functionality. You can also upload hierarchical folder structures. [!DNL Assets] are uploaded in background and, therefore, it is not tied to a web browser session
 * To upload a few files from a single folder, drag the files directly to the web interface or use the Create option in the [!DNL Assets] web interface.

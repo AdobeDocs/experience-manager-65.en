@@ -34,7 +34,7 @@ Because components are modular, you can:
 * Develop a new component on your local instance.
 * Deploy it to your test environment.
 * Deploy it to your live authoring environment, where they allow authors and/or administrators to add and configure content.
-* Deploy it to your live publish environment(s), where they are used to render content for visitors to your website. Certain components, for example for Communities, also accept input from your users.
+* Deploy it to your live publish environment(s), where they are used to render content for visitors to your website. Certain components, for example, for Communities, also accept input from your users.
 
 Each AEM component:
 

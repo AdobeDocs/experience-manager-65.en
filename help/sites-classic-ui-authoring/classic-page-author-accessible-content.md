@@ -1,15 +1,11 @@
 ---
 title: Creating Accessible Content (WCAG 2.0 Conformance)
-seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
 description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
-seo-description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 page-status-flag: de-activated
-uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 ---
 # Creating Accessible Content (WCAG 2.0 Conformance){#creating-accessible-content-wcag-conformance}
@@ -354,7 +350,7 @@ Follow the guidance provided for [Audio Description or Media Alternative (Pre-Re
 
 ### Adaptable (1.3) {#adaptable}
 
-[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example, simpler layout) without losing information or structure.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 This guideline covers the requirements necessary to support people who:
 
@@ -376,7 +372,7 @@ This success criterion exists to make sure that such structural information is p
 
 #### How to Meet - Info and Relationships (1.3.1) {#how-to-meet-info-and-relationships}
 
-AEM makes it easy to construct web pages using the appropriate HTML elements. Open your page content in the RTE (a Text component), and use the **Format** menu to specify the appropriate structural element (for example paragraph, and heading).
+AEM makes it easy to construct web pages using the appropriate HTML elements. Open your page content in the RTE (a Text component), and use the **Format** menu to specify the appropriate structural element (for example, paragraph, and heading).
 
 The following image shows text that has been styled as paragraph text; the source code view being used shows it has the correct opening and closing &lt;p&gt; and &lt;/p&gt; tags.
 
@@ -390,7 +386,7 @@ Make sure that your web pages are given the appropriate structure by:
 
   The following image demonstrates an example of the different types of headings.
 
-  ![Headings H1 through to H3 shown in the drop down selector (classic UI).](assets/chlimage_1-19a.png)
+  ![Headings H1 through to H3 shown in the drop-down selector (classic UI).](assets/chlimage_1-19a.png)
 
 *   **Emphasized text**:
 
@@ -522,13 +518,13 @@ Similarly, information that requires distinguishing between different sounds (fo
 
 >[!NOTE]
 >
->For requirements related to alternatives to color, refer to [Use of Color](#use-of-color).
+>For requirements related to alternatives to color, see [Use of Color](#use-of-color).
 
 #### How to Meet - Sensory Characteristics (1.3.3) {#how-to-meet-sensory-characteristics}
 
 Make sure that any information that relies on visual characteristics of page content is also presented in an alternative format.
 
-* Do not rely on visual position to give information. For example, if you want to refer users to a menu on the right-hand side of the page for access to further information, do not refer to *the menu on the right*; instead, name the menu (for example via a heading) and refer to that name in text.
+* Do not rely on visual position to give information. For example, if you want to refer users to a menu on the right-hand side of the page for access to further information, do not refer to *the menu on the right*; instead, name the menu (for example, by way of a heading) and refer to that name in text.
 * Do not rely on text styling (for example, bold or italicized text) as the only way to convey information.
 
 >[!NOTE]
@@ -678,7 +674,7 @@ If images of text must be used, use CSS to replace the images of text with equiv
 
 Points to note are:
 
-1. For requirements related to flickering or flashing content, refer to [Do not Design Content in a Way that is Known to Cause Seizures (2.3)](#seizures).
+1. For requirements related to flickering or flashing content, see [Do not Design Content in a Way that is Known to Cause Seizures (2.3)](#seizures).
 1. Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the web page (whether it is used to meet other success criteria or not) must meet this success criterion. See [Conformance Requirement 5: Non-Interference](https://www.w3.org/TR/WCAG20/#cc5).
 1. Content that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so.
 1. An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.
@@ -959,7 +955,7 @@ The positioning of labels is also important as it helps them to locate appropria
 
   Labels are positioned either immediately above or immediately to the left of the field.
 
-In simple forms with limited functionality, appropriately labeling a `Submit` button can act as a label for the adjacent field (for example `Search`). This is useful in situations when finding space for the label text might be difficult.
+In simple forms with limited functionality, appropriately labeling a `Submit` button can act as a label for the adjacent field (for example, `Search`). This is useful in situations when finding space for the label text might be difficult.
 
 #### More Information - Labels or Instructions (3.3.2) {#more-information-labels-or-instructions}
 

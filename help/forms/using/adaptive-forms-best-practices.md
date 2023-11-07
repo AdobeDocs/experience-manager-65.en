@@ -62,7 +62,7 @@ Once you have your AEM project set up, define strategy for authoring and customi
     * **XFA form template**: It is an ideal form model if you have investments in XFA-based HTML5 forms. It provides a direct way to convert your XFA-based forms into adaptive forms. Any existing XFA rules are retained in the associated adaptive forms. The resulting adaptive forms support XFA constructs, such as validations, events, properties, and patterns.
     * **Form Data Model**: It is a preferred form model if you are looking to integrate your backend systems like databases, web services, and AEM user profile to prefill adaptive forms and write submitted form data back into the backend systems. A Form Data Model editor lets you define and configure entities and services in a form data model that you can use to create adaptive forms. For more information, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-It is important to carefully choose the data model that not only suits your requirements but extends your existing investments in XFA and XSD assets, if any. It is recommended to use XSD Model to create form templates because the generated XML contains data as per XPATH defined by schema. Using XSD Model as a default choice for Form Data Model also helps because it decouples form design from back end system that processes and consumes data and it improves the performance of form because of one to one mapping of form field. Also, BindRef of the field can be made the XPATH of its data value in XML.
+It is important to carefully choose the data model that not only suits your requirements but extends your existing investments in XFA and XSD assets, if any. Use the XSD Model to create form templates because the generated XML contains data as per XPATH defined by schema. Using XSD Model as a default choice for Form Data Model also helps because it decouples form design from back end system that processes and consumes data and it improves the performance of form because of one to one mapping of form field. Also, BindRef of the field can be made the XPATH of its data value in XML.
 
 For more information, see [Create an adaptive form](/help/forms/using/creating-adaptive-form.md).
 
@@ -184,7 +184,7 @@ Rule editor provides a visual editor and a code editor for writing rules. Consid
 
 ### Working with themes {#working-with-themes}
 
-Adaptive for themes let you create reusable styles that can be applied across forms for consistent look and styling. It is recommended to use Themes to define styling for form components and panels. Some best practices around themes are as follows:
+Adaptive for themes let you create reusable styles that can be applied across forms for consistent look and styling. Use Themes to define styling for form components and panels. Some best practices around themes are as follows:
 
 * Use asset library for quick application of text styles, background and images. When a style is added in the asset library, it is available for other themes and in the style mode of the form editor.
 * Apply global settings like font and page background using page-level selector.
@@ -238,7 +238,7 @@ Adaptive forms require Submit actions to process user-specified data. A Submit a
 * You can write a custom submit action if the default submit actions do not fulfill your use case. For more information, see [Writing custom Submit action for adaptive forms](/help/forms/using/custom-submit-action-form.md).
 * Include server-side validations to prevent submission of invalid data submission.
 
-You can leverage multi-sign experience of Adobe Sign in adaptive forms. Consider the following when configuring Adobe Sign in adaptive forms. For details, see [Using Adobe Sign in an adaptive form](/help/forms/using/working-with-adobe-sign.md).
+You can use multi-sign experience of Adobe Sign in adaptive forms. Consider the following when configuring Adobe Sign in adaptive forms. For details, see [Using Adobe Sign in an adaptive form](/help/forms/using/working-with-adobe-sign.md).
 
 * Adobe Sign enabled adaptive form is submitted only after all the signers have signed the form. Forms appear in Pending Sign state until the form is signed by all signers.
 * You can configure in-form signing experience or redirect signers to a signing page on submission.

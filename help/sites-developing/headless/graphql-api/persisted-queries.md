@@ -191,7 +191,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Where `PERSISTENT_PATH` is a shortened path to where the Persisted query is saved.
 
-1. For example `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
+1. For example, `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
 
    ```shell
    $ curl -X GET \
@@ -223,7 +223,7 @@ The pattern looks like the following:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-For example the following query contains a variable `activity` to filter a list based on an activity value:
+For example, the following query contains a variable `activity` to filter a list based on an activity value:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -391,10 +391,10 @@ Persisted queries can be built into [AEM Packages](/help/sites-administering/pac
 To create a Package:
 
 1. Navigate to **Tools** > **Deployment** > **Packages**.
-1. Create a new package by tapping **Create Package**. This will open a dialog to define the Package.
+1. Create a package by tapping **Create Package**. This opens a dialog box to define the Package.
 1. In the Package Definition Dialog, under **General** enter a **Name** like "wknd-persistent-queries".
 1. Enter a version number like "1.0".
-1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example for the `wknd` configuration the full path will be `/conf/wknd/settings/graphql/persistentQueries`.
+1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example, for the `wknd` configuration the full path will be `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tap **Save** to save the new Package definition and close the dialog.
 1. Tap the **Build** button in the newly created Package definition.
 

@@ -35,7 +35,7 @@ When you prepopulate a form that already contains data, you must specify the dat
 
 For example, you can prepopulate a form such as the sample confirmation form. (See "Confirmation form" in [Rendering Interactive PDF Forms](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
-To prepopulate the sample confirmation form, you have to create an XML data source that contains three XML elements that match the three fields in the form. This form contains the following three fields: `FirstName`, `LastName`, and `Amount`. The first step is to create an XML data source that contains XML elements that match the fields located in the form design. The next step is to assign data values to the XML elements, as shown in the following XML code.
+To prepopulate the sample confirmation form, you have to create an XML data source that contains three XML elements that match the three fields in the form. This form contains the following three fields: `FirstName`, `LastName`, and `Amount`. The first step is to create an XML data source that contains XML elements that match the fields in the form design. The next step is to assign data values to the XML elements, as shown in the following XML code.
 
 ```xml
      <Untitled>
@@ -170,9 +170,9 @@ Notice that each data subgroup contains four XML elements that correspond to thi
 * Quantity of items
 * Unit price
 
-The name of a data subgroup’s parent XML element must match the name of the subform that is located in the form design. For example, in the previous diagram, notice that the name of the data subgroup’s parent XML element is `detail`. This corresponds to the name of the subform that is located in the form design on which the purchase order form is based. If the name of the data subgroup’s parent XML element and the subform do not match, a server-side form is not prepopulated.
+The name of a data subgroup’s parent XML element must match the name of the subform that is in the form design. For example, in the previous diagram, notice that the name of the data subgroup’s parent XML element is `detail`. This corresponds to the name of the subform that is in the form design on which the purchase order form is based. If the name of the data subgroup’s parent XML element and the subform do not match, a server-side form is not prepopulated.
 
-Each data subgroup must contain XML elements that match the field names in the subform. The `detail` subform located in the form design contains the following fields:
+Each data subgroup must contain XML elements that match the field names in the subform. The `detail` subform in the form design contains the following fields:
 
 * txtPartNum
 * txtDescription
