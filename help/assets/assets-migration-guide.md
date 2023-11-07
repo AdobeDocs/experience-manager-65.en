@@ -49,7 +49,7 @@ You may already have a tag taxonomy in place that you are applying to your image
 
 ### Ingest assets {#ingesting-assets}
 
-Performance and stability are important concerns when ingesting assets into the system. Because you are loading a large amount of data into the system, you want to make sure that the system performs and that it can minimize the amount of time required and to avoid overloading the system, which can lead to a system crash, especially in systems that already are in production.
+Performance and stability are important concerns when ingesting assets into the system. Because you are loading a large amount of data into the system, you want to make sure that the system performs well to minimize the amount of time required and to avoid overloading the system, which can lead to a system crash, especially in systems that already are in production.
 
 There are two approaches to loading the assets into the system: a push-based approach using HTTP or a pull-based approach using the JCR APIs.
 

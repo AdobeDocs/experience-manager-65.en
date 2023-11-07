@@ -1184,8 +1184,8 @@ public class TextWatermarks {
 
             // Add these elements to the watermark in the order in you want them
             // to be applied.
-            newWatermark.addWatermarkElement(element1);// Will be applied first.
-            newWatermark.addWatermarkElement(element2);// Will be applied on top
+            newWatermark.addWatermarkElement(element1);// Applied first.
+            newWatermark.addWatermarkElement(element2);// Applied on top
                                                         // of it.
             newWatermark.setName("Sample Text Watermark");
             watermarkManager.registerWatermark2(newWatermark);
