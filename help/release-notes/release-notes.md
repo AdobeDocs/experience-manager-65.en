@@ -487,7 +487,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 
 #### Interactive Communications
 
-* After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578)
+* After upgrading to AEM Service Pack 18, it is not possible to open the Interactive Communication with large inline images in the Edit mode. (FORMS-10578)
 To resolve the issue, perform the following steps:
 
   1. Download [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) from SD link.
