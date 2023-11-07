@@ -83,4 +83,4 @@ The default value is an empty string.
 
 >[!NOTE]
 >
->If you are using a temp cleaning utility, be aware that while deleting these directories does not affect functionality, it can significantly impact performance for a short time until the new cache is created. To avoid this issue, do not delete these directories while clearing the AEM forms temp directory.
+>If you are using a temp cleaning utility, while deleting these directories does not affect functionality, it can significantly impact performance for a short time until the new cache is created. To avoid this issue, do not delete these directories while clearing the AEM forms temp directory.

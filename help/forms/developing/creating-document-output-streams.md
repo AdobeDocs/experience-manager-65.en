@@ -251,7 +251,7 @@ Create a PDF document by using the Output API (Java):
 
    >[!NOTE]
    >
-   >When generating a PDF document by invoking the `generatePDFOutput` method, be aware that you cannot merge data with an XFA PDF form that is signed or certified. (See [Digitally Signing and Certifying Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >When generating a PDF document by invoking the `generatePDFOutput` method, you cannot merge data with an XFA PDF form that is signed or certified. (See [Digitally Signing and Certifying Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -348,7 +348,7 @@ Create a PDF document by using the Output API (web service):
 
    >[!NOTE]
    >
-   >When generating a PDF document by invoking the `generatePDFOutput` method, be aware that you cannot merge data with an XFA PDF form that is signed or certified. (See [Digitally Signing and Certifying Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >When generating a PDF document by invoking the `generatePDFOutput` method, you cannot merge data with an XFA PDF form that is signed or certified. (See [Digitally Signing and Certifying Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -2167,7 +2167,7 @@ Create search rules by using the Output API (web service):
 
    >[!NOTE]
    >
-   >When generating a PDF document by invoking the `generatePDFOutput` method, be aware that you cannot merge data with an XFA PDF form that is signed, certified, or contains usage rights. For information about usage rights, see [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+   >When generating a PDF document by invoking the `generatePDFOutput` method, you cannot merge data with an XFA PDF form that is signed, certified, or contains usage rights. For information about usage rights, see [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. Retrieve the results of the operation
 

@@ -67,7 +67,7 @@ For this purpose, an open source migration tool is available on GitHub:
 
 ### Java APIs {#java-apis}
 
-When upgrading from AEM 6.0 social communities to AEM 6.3 Communities, be aware that many APIs have been reorganized into different packages. Most should be easily resolved when using an IDE for customization of Communities features.
+When upgrading from AEM 6.0 social communities to AEM 6.3 Communities, many APIs have been reorganized into different packages. Most should be easily resolved when using an IDE for customization of Communities features.
 
 For details on the deprecated SocialUtils package, visit [SocialUtils Refactoring](/help/communities/socialutils.md).
 

@@ -732,7 +732,7 @@ By default, the portlet connects to the publish instance at localhost:4503 and t
 
 >[!NOTE]
 >
->These procedures use the Websphere portal as an example although they are as generic as possible; be aware that procedures vary for other web portals. Although the steps are essentially identical for all web portals, you need to repurpose the steps for your particular web portal.
+>These procedures use the Websphere portal as an example although they are as generic as possible; procedures vary for other web portals. Although the steps are essentially identical for all web portals, you need to repurpose the steps for your particular web portal.
 
 #### Installing the portlet {#installing-the-portlet}
 

@@ -98,7 +98,7 @@ For example:
 >
 >Custom rewrite rules on the Dispatcher might override defaults from AEM publish. 
 >
->In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern, then, if necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
+>In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern then, if necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
 
 Using GraphQL you can configure the HTTP Cache Headers  to control these parameters for your individual persisted query.
 

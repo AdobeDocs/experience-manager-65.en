@@ -73,7 +73,7 @@ You can configure the following properties for a Watched Folder.
 
 >[!NOTE]
 >
->If the server hosting the Watched Folder does not have any of the specified run-mode, then, the Watched Folder always activates regardless of the run-modes on the server.
+>If the server hosting the Watched Folder does not have any of the specified run-mode, then the Watched Folder always activates regardless of the run-modes on the server.
 
 * **outputFilePattern (String)**: Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern. [File and folder pattern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) can also specify a directory structure for the output files. It is a mandatory property.
 

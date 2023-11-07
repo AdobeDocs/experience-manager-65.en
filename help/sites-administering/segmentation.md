@@ -158,7 +158,7 @@ To define your new segment:
 
 Using the AND and OR container components, you can construct complex segments in AEM. When doing this, it helps to be aware of a few basic points:
 
-* The top level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.
+* The top-level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.
 * Ensure that the nesting of your container makes sense. The containers can be viewed as the brackets of your boolean expression.
 
 The following example is used to select visitors who are considered in our prime age group:
