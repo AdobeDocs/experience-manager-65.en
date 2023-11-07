@@ -70,7 +70,7 @@ Launches let you:
 
 * Update your source and launch pages in parallel:
 
-    * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; i.e. as a live copy).  
+    * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; that is, as a live copy).  
     * Changes to your launch copy can be made without disrupting these automatic updates or the source pages.
 
   ![Overview of updates](assets/chlimage_1-112.png)

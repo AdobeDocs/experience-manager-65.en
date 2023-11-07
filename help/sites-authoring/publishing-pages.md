@@ -70,7 +70,7 @@ If you are editing a page, it can be published directly from the editor.
 
 >[!NOTE]
 >
->Publishing from the editor is a shallow publish, i.e. only the selected page/pages is/are published and any child pages are not.
+>Publishing from the editor is a shallow publish, that is, only the selected page/pages is/are published and any child pages are not.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ To publish a page with Quick Publish:
 
 >[!NOTE]
 >
->Quick Publish is a shallow publish, i.e. only the selected page/pages is/are published and any child pages are not.
+>Quick Publish is a shallow publish, that is, only the selected page/pages is/are published and any child pages are not.
 
 #### Manage Publication {#manage-publication}
 

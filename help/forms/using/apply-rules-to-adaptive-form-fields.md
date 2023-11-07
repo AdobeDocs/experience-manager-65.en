@@ -96,7 +96,7 @@ After the customer details are retrieved from the database, you can update the s
 
 ## Step 3: (Bonus section) Use the code editor to run validations and display error messages {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 
-You should run validation on the form to ensure that the data entered in the form is correct and an error message is displayed in case of incorrect data. For example, if a non-existing Customer ID is entered in the form, an error message should be displayed.
+You should run validation on the form to ensure that the data entered in the form is correct and an error message is displayed if there is incorrect data. For example, if a non-existing Customer ID is entered in the form, an error message should be displayed.
 
 Adaptive forms provide several components with built-in validations, for example, email, and numeric fields that you can use for common use cases. Use the rule editor for advanced use cases, for example, to display an error message when the database returns zero (0) records (no records).
 

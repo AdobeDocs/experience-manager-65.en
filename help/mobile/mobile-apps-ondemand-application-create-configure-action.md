@@ -1,14 +1,10 @@
 ---
 title: Application Create and Configuration Actions
-seo-title: Application Create and Configuration Actions
 description: Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content. Follow this page to learn more.
-seo-description: Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content. Follow this page to learn more.
-uuid: f6b41d9a-d896-479e-9f6c-e91a88f3e74d
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 ---
 # Application Create and Configuration Actions{#application-create-and-configuration-actions}
@@ -53,7 +49,7 @@ App templates provide an easy way to use existing designs created by devlopers, 
 What is an app template? Think of it as a collection of page templates and components that represent a baseline or foundation of an app.
 When creating an app based on the template of another app, you get an app that has a starting point representative of the app in which it was created from.
 
-You must have an existing mobile app template (or an app installed that has an app template) to make use of this feature.
+You must have an existing mobile app template (or an app installed that has an app template) to use this feature.
 
 ### The Next Step {#the-next-step}
 

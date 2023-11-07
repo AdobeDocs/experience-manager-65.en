@@ -111,9 +111,9 @@ If the job is successfully disposed of, this URL returns an empty message.
 
 ## Error reporting {#error-reporting}
 
-If a synchronous or asynchronous invocation request cannot be completed due to an exception being thrown on the server, the exception is reported as part of the HTTP response message. If the invocation URL (or the `async_result` URL in the case of an asynchronous invocation) does not have an .xml suffix, the REST Provider returns the HTTP code `500 Internal Server Error` followed by an exception message.
+If a synchronous or asynchronous invocation request cannot be completed due to an exception being thrown on the server, the exception is reported as part of the HTTP response message. If the invocation URL (or the `async_result` URL if there is an asynchronous invocation) does not have an .xml suffix, the REST Provider returns the HTTP code `500 Internal Server Error` followed by an exception message.
 
-If the invocation URL (or the `async_result` URL in the case of an asynchronous invocation) does have an .xml suffix, the REST Provider returns the HTTP code `200 OK`followed by an XML document describing the exception in the following format.
+If the invocation URL (or the `async_result` URL if there is an asynchronous invocation) does have an .xml suffix, the REST Provider returns the HTTP code `200 OK`followed by an XML document describing the exception in the following format.
 
 ```xml
  <exception>

@@ -42,7 +42,7 @@ To search and filter your resources:
 
    ![s-01](assets/s-01.png)
 
-   By default the search results will be limited to your current location (i.e. console and related resource type):
+   By default the search results will be limited to your current location (that is, console and related resource type):
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 

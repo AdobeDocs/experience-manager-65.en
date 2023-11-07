@@ -722,7 +722,7 @@ AEM Forms on JEE provides APIs to manage the Allowed Referrer Exception list and
 
 Refer to the* AEM Forms on JEE API Reference* for more information on the APIs.
 
-Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exceptions at the global level i.e. to define exceptions that are applicable to all applications. This list contains only URIs with either an absolute path (for example, `/index.html`) or a relative path (for example, `/sample/`). You can also append a regular expression to the end of a relative URI, for example, `/sample/(.)*`.
+Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exceptions at the global level that is, to define exceptions that are applicable to all applications. This list contains only URIs with either an absolute path (for example, `/index.html`) or a relative path (for example, `/sample/`). You can also append a regular expression to the end of a relative URI, for example, `/sample/(.)*`.
 
 The ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list ID is defined as a constant in the `UMConstants` class of the `com.adobe.idp.um.api` namespace, found in `adobe-usermanager-client.jar`. You can use the AEM Forms APIs to create, modify, or edit this list. For example, to create the Global Allowed Referrer Exceptions list use:
 

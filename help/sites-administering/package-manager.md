@@ -167,8 +167,8 @@ When creating filters, you can define a path or use a regular expression to spec
 
 |Rule Type|Description|
 |---|---|
-|include|Including a directory will include that directory and all the files and folders in that directory (i.e. the entire subtree) but **will not** include other files or folders from under the specified root path.|
-|exclude|Excluding a directory will exclude that directory and all files and folders in that directory (i.e. the entire subtree).|
+|include|Including a directory will include that directory and all the files and folders in that directory (that is, the entire subtree) but **will not** include other files or folders from under the specified root path.|
+|exclude|Excluding a directory will exclude that directory and all files and folders in that directory (that is, the entire subtree).|
 
 Package filters are most often defined when you first [create the package.](#creating-a-new-package) However they can also be edited later, after which the package should be rebuilt to update its content based on the new filter definitions.
 

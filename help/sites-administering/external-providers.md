@@ -75,7 +75,7 @@ For the basic configuration:
 
 ## Using your new Service on Pages {#using-your-new-service-on-pages}
 
-Having created the service configuration, you now must configure the required pages to use it:
+Having created the service configuration, you must configure the required pages to use it:
 
 1. Navigate to the page.
 1. Open the **Page Properties** from sidekick, then the **Cloud Services** tab.

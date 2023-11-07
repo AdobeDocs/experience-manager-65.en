@@ -314,7 +314,7 @@ The following table describes the properties that you can configure:
 
 Several properties and node types are excluded by default, these are defined in the OSGi configuration of **CQ MSM Content Update Action**, under **Excluded Page Properties**.
 
-By default properties matching the following regular expressions are excluded (i.e. not updated) on rollout:
+By default properties matching the following regular expressions are excluded (that is, not updated) on rollout:
 
 ![CQ MSM Content Update Action](assets/chlimage_1.png)
 

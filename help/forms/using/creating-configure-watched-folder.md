@@ -102,7 +102,7 @@ Perform the following steps to create a watched folder:
 
     * **Throttle On:** When this option is enabled, it limits the number of watched folder jobs that AEM forms processes at any given time. The Batch Size value determines the maximum number of jobs. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
     * **Overwrite Existing Files With Similar Name**: When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
-    * **Preserve Files On Failure:** When set to True, the input files are preserved in case of failure. The default value is true.
+    * **Preserve Files On Failure:** When set to True, the input files are preserved if there is failure. The default value is true.
     * **Include Files With Pattern:** Specify a semi-colon (;) delimited list of patterns that the watched folder uses to determine which folders and files to scan and pick up. For example, if the Include File Pattern is input, all files and folders that match input are picked up. For more information, see [Administration Help](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
     * **Invoke Watched Folder Asynchronously:** Identifies the invocation type as asynchronous or synchronous. The default value is asynchronous. Asynchronous is recommended for long-lived processes, while synchronous is recommended for transient or short-lived processes.
     * **Enable Watched Folder:** When this option is enabled, the watch folder is enabled. The default value is True.

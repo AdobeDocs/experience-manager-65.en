@@ -1,14 +1,10 @@
 ---
 title: Styling constructs for adaptive forms
-seo-title: Styling constructs for adaptive forms
 description: Use LESS framework to customize appearance of adaptive forms.
-seo-description: Use LESS framework to customize appearance of adaptive forms.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
 ---
@@ -53,7 +49,7 @@ Currently, LESS variables are defined only for these properties of the various e
 
 ## Changing component style {#changing-component-style}
 
-You can make changes to the appearance, layout, positioning, and visibility of elements. To achieve this task, create or update your custom .css files to include the styling constructs listed in this article.
+You can change the appearance, layout, positioning, and visibility of elements. To achieve this task, create or update your custom .css files to include the styling constructs listed in this article.
 
 To apply a style to an adaptive form, open the adaptive form in for editing, open properties of adaptive form conatiner, specify the path of custom CSS File in the basic tab. Defaut styling constructs of the adaptive form and overridden with the constructs listed in the custom .css file.
 

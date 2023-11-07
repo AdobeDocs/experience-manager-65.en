@@ -687,7 +687,7 @@ See Editing Page Content for more information:
 
 All site pages are available from: *https://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content/we-gov*
 
-These site pages also make use of the AEM Grid package to control the layout of a few components.
+These site pages also use the AEM Grid package to control the layout of a few components.
 
 #### Style system {#style-system}
 

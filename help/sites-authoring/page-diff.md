@@ -1,14 +1,10 @@
 ---
 title: Page Diff
-seo-title: Page Diff
 description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
-seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
-uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 ---
@@ -84,7 +80,7 @@ You can exit the side-by-side diff at any time by clicking the Close button in t
 
 There are some situations in which the page diff may not detect a difference as expected.
 
-* When diffing versions and launches, the diff does not take into account dynamic components such as breadcrumbs, menus, product lists or logos (components that rely on the site structure to render their content).
+* When diffing versions and launches, the diff does not account for dynamic components such as breadcrumbs, menus, product lists or logos (components that rely on the site structure to render their content).
 * For versions, the diff does not recreate the access control policy and live copy relationships.
 * If a page is moved, you can no longer perform a diff with any versions made before the move.
 

@@ -1,14 +1,10 @@
 ---
 title: Configuring Segmentation
-seo-title: Configuring Segmentation
 description: Learn how to configure segmentation for AEM Campaign.
-seo-description: Learn how to configure segmentation for AEM Campaign.
-uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
 ---
@@ -104,7 +100,7 @@ The following segment traits are available out-of-the-box; they can be dragged f
 
 You can combine these traits using the boolean operators OR and AND (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting this segment.
 
-When the entire statement evaluates to true then this segment has resolved. In the event of multiple segments being applicable, then the **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor is also used.
+When the entire statement evaluates to true then this segment has resolved. If there are multiple applicable segments, then the **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor is also used.
 
 >[!CAUTION]
 >

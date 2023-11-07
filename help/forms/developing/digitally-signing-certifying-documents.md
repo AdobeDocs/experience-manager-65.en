@@ -345,7 +345,7 @@ You can modify signature fields that are in a PDF document by using the Java API
 
 A *field lock dictionary* specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from making changes to the field. A *seed value dictionary* contains constraining information that is used at the time the signature is applied. For example, you can change permissions that control the actions that can occur without invalidating a signature.
 
-By modifying an existing signature field, you can make changes to the PDF document to reflect changing business requirements. For example, a new business requirement may require locking all document fields after the document is signed.
+By modifying an existing signature field, you can change the PDF document to reflect changing business requirements. For example, a new business requirement may require locking all document fields after the document is signed.
 
 This section explains how to modify a signature field by amending both field lock dictionary and seed value dictionary values. Changes made to the signature field lock dictionary result in all fields in the PDF document being locked when a signature field is signed. Changes made to the seed value dictionary prohibit specific types of changes to the document.
 

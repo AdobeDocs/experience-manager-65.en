@@ -12,13 +12,13 @@ exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
 
 In AEM Forms workspace, managers can now access the tasks assigned to anyone in their hierarchy—direct or indirect reports—and perform various actions on them. The tasks are available in the To-do tab in the AEM Forms workspace. The actions supported on the tasks of direct reports are:
 
-**Forward** Forward a task from direct report to any user.
+**Forward** &ndash; Forward a task from direct report to any user.
 
-**Claim** Claim a task of a direct report.
+**Claim** &ndash; Claim a task of a direct report.
 
-**Claim & Open** Claim a task of a direct report and automatically open it in the To-do list of the manager.
+**Claim & Open** &ndash; Claim a task of a direct report and automatically open it in the To-do list of the manager.
 
-**Reject** Reject a task forwarded to a direct report by some other user. This option is available for the tasks forwarded by other users to a direct report.
+**Reject** &ndash; Reject a task forwarded to a direct report by some other user. This option is available for the tasks forwarded by other users to a direct report.
 
 AEM Forms restricts a users' access to only those tasks for which the user has access control (ACL). Such a check ensures that a user can fetch only the tasks on which the user has access permissions. Using third-party web-services and implementations to define hierarchy, an organization can customize the definition of manager and direct reports to suit their needs.
 

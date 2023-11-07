@@ -400,7 +400,7 @@ In addition it is possible to define this role based access on a per portlet ins
 
 ### Customizing the AEM portlet application {#customizing-the-aem-portlet-application}
 
-The provided AEM portlet application starts an OSGi container inside the web application just as AEM does. This architecture lets you make use of all the benefits of OSGi:
+The provided AEM portlet application starts an OSGi container inside the web application just as AEM does. This architecture lets you use all the benefits of OSGi:
 
 * Easy to update and extend
 * Provides hot updates of the portlet without any interaction of the portal server
@@ -748,7 +748,7 @@ To install the portlet:
 
 #### Configuring the Portlet {#configuring-the-portlet}
 
-After you install the portlet, you need to configure it so that it knows the URLs of the underlying AEM instances (author and publish). You also can configure other options.
+After you install the portlet, you need to configure it so that it knows the URLs of the underlying AEM instances (author and publish). You can also configure other options.
 
 To configure the portlet:
 

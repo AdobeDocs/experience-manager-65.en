@@ -170,7 +170,7 @@ Returns the version number of the Scripting library
 
 * **Input:** Som expression of the field on which to set focus
 * **Output:** None
-* **Error:** Throws an exception in case of incorrect Som expression
+* **Error:** Throws an exception if there is an incorrect Som expression
 
 **setFieldValue (som, value)** Sets the value of the fields for the given Som expressions
 
@@ -180,7 +180,7 @@ Returns the version number of the Scripting library
     * **value:** Array containing values corresponding to Som expressions provided in a **som**array. If the data type of the value is not the same as the fieldType, the value is not modified.
 
 * **Output:** None
-* **Error:** Throws an Exception in the case of an incorrect Som expression
+* **Error:** Throws an Exception if there is an incorrect Som expression
 
 **getFieldValue (som)** Returns the value of the fields for the given Som expressions
 

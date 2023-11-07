@@ -160,7 +160,7 @@ In general, it is recommended you use Lucene indexes unless there is a compellin
 
 ### Solr Indexing {#solr-indexing}
 
-AEM also provides support for Solr indexing by default. This is used to support full text search, but it can also be used to support any type of JCR query. Solr should be considered when the AEM instances do not have the CPU capacity to handle the number of queries required in search intensive deployments like search driven websites with a high number of concurrent users. Alternately, Solr can be implemented in a crawler-based approach to use some of the more advanced features of the platform.
+AEM also supports Solr indexing by default. This is used to support full text search, but it can also be used to support any type of JCR query. Solr should be considered when the AEM instances do not have the CPU capacity to handle the number of queries required in search intensive deployments like search driven websites with a high number of concurrent users. Alternately, Solr can be implemented in a crawler-based approach to use some of the more advanced features of the platform.
 
 Solr indexes can be configured to run embedded on the AEM server for development environments or can be offloaded to a remote instance to improve search scalability on the production and staging environments. While offloading search improves scalability, it introduces latency and because of this, is not recommended unless required. For more info on how to configure Solr integration and how to create Solr indexes see the [Oak Queries and Indexing documentation](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 

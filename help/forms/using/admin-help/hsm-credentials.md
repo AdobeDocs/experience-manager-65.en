@@ -67,7 +67,7 @@ AEM forms Digital Signatures can use credentials stored on an HSM to apply serve
 1. In administration console, click Settings &gt;Trust Store Management &gt; HSM Credentials.
 1. Click the check box next to credential that you want to check and click Check Status.
 
-The Status column reflects the current status of the credential. In case of failure, a red X is displayed in the Status column. Hover your mouse over the X to display a tool tip containing the reason for the failure.
+The Status column reflects the current status of the credential. If there is failure, a red X is displayed in the Status column. Hover your mouse over the X to display a tool tip containing the reason for the failure.
 
 ## Update HSM credential alias properties {#update-hsm-credential-alias-properties}
 

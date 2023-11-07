@@ -146,7 +146,7 @@ Emails/Newsletters can be published to your E-mail Service by following these st
 
    If successful, AEM confirms you can view the email in ExactTarget or Silverpop Engage.
 
-   In the case of ExactTarget the published email can ve viewed by clicking **View Published Email**. This takes you directly to the published newsletter in the ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   If there is ExactTarget the published email can ve viewed by clicking **View Published Email**. This takes you directly to the published newsletter in the ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >

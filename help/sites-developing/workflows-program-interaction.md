@@ -353,7 +353,7 @@ The following HTTP request methods apply to:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Completes the work item whose URI is sent as the parameter <code>item</code> and advances the according workflow instance to the next node(s), that is defined by the parameter <code>route</code> or <code>backroute</code> in case of going a step back.<br /> If the parameter <code>delegatee</code> is sent, the work item identified by the parameter <code>item</code> is delegated to the specified participant.</td>
+   <td>Completes the work item whose URI is sent as the parameter <code>item</code> and advances the according workflow instance to the next node(s), that is defined by the parameter <code>route</code> or <code>backroute</code> if there is going a step back.<br /> If the parameter <code>delegatee</code> is sent, the work item identified by the parameter <code>item</code> is delegated to the specified participant.</td>
   </tr>
  </tbody>
 </table>

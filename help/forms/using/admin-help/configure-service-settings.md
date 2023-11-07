@@ -698,7 +698,7 @@ In a cluster configuration, the batch size for a watched folder endpoint does no
 
 **Overwrite Duplicate Filenames:** A Boolean string that specifies whether the watched folder overwrites duplicate result filenames and whether preserved documents of the same name should be overwritten.
 
-**Preserve Folder:** The default value for the preserve folder. This folder is used to copy the source files into in case of successful processing of the input. This value can be an empty, relative, or absolute path with a file pattern as described for the Result Folder setting.
+**Preserve Folder:** The default value for the preserve folder. This folder is used to copy the source files into if there is successful processing of the input. This value can be an empty, relative, or absolute path with a file pattern as described for the Result Folder setting.
 
 **Failure Folder:** The name of the folder where the failure files are copied. This value can be an empty, relative, or absolute path with a file pattern as described for the Result Folder setting.
 

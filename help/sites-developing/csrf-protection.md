@@ -1,14 +1,10 @@
 ---
 title: The CSRF Protection Framework
-seo-title: The CSRF Protection Framework
 description: The framework makes use of tokens to guarantee that the client request is legitimate
-seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
-uuid: 7cb222ba-fc7a-46ee-8b49-a5f39a53580b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 ---
 # The CSRF Protection Framework{#the-csrf-protection-framework}
@@ -29,7 +25,7 @@ Any component that relies on the `granite.jquery` dependency will benefit from t
 
 ### Replicating the Crypto Key {#replicating-crypto-keys}
 
-To make use of the tokens, you need to replicate the HMAC binary to all the instances in your deployment. See [Replicating the HMAC key](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) for more details.
+To use the tokens, you need to replicate the HMAC binary to all the instances in your deployment. See [Replicating the HMAC key](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) for more details.
 
 >[!NOTE]
 >

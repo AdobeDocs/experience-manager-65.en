@@ -18,7 +18,7 @@ In an SPA the page component doesn't provide the HTML elements of its child comp
 
 ## Introduction {#introduction}
 
-The page component for an SPA doesn't provide the HTML elements of its child components via a JSP or HTL file and resource objects. This operation is delegated to the SPA framework. The representation of child components is fetched as a JSON data structure (i.e. the model). The SPA components are then added to the page according to the provided JSON model. As such the page component initial body composition differs from its pre-rendered HTML counterparts.
+The page component for an SPA doesn't provide the HTML elements of its child components via a JSP or HTL file and resource objects. This operation is delegated to the SPA framework. The representation of child components is fetched as a JSON data structure (that is, the model). The SPA components are then added to the page according to the provided JSON model. As such the page component initial body composition differs from its pre-rendered HTML counterparts.
 
 ## Page Model Management {#page-model-management}
 

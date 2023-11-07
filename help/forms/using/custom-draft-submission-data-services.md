@@ -48,7 +48,7 @@ public interface DraftAFDataService {
  /**
   * Saves user data provided in the argument map
   *
-  * @param draftUserDataMap contains Form Data (key - "guideState"), Adaptive Form Name (Key - "guideName"), and Draft DataID (Key - "userDataID") in case of update
+  * @param draftUserDataMap contains Form Data (key - "guideState"), Adaptive Form Name (Key - "guideName"), and Draft DataID (Key - "userDataID") if there is update
   * @return userData ID would be returned which needs to be saved in metadata node
   * @throws FormsPortalException
   */

@@ -189,7 +189,7 @@ The new rollout configuration is then available to you when setting rollout conf
    >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
    >The recommended method for configuration and other changes is:
    >
-   >* Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+   >* Recreate the required item (that is, as it exists in `/libs`) under `/apps`
    >* Make any changes within `/apps`
 
 1. Under this **Create** a node with the following properties:
@@ -651,11 +651,11 @@ For example, if two new page properties are being added:
 
 * Contact Email:
 
-  * This property is not required to be rolled out, as it will be different in each country (or brand, etc).
+  * This property is not required to be rolled out, as it will be different in each country (or brand, and so on).
 
 * Key Visual Style:
 
-  * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, etc).
+  * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, and so on).
 
 Then you need to ensure that:
 

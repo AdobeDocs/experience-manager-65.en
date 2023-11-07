@@ -125,7 +125,7 @@ It is also possible to combine multiple instances of the content repository to c
 
 **Dispatcher** - The Dispatcher is both a caching and load-balancing tool, and provides certain security safeguards.
 
-**ExtJS widgets** - Most user-interface elements in AEM make use of ExtJS, which is a third-party widget library written in JavaScript. ExtJS features high performance, customizable UI widgets and a well-designed and extensible component model.
+**ExtJS widgets** - Most user-interface elements in AEM use ExtJS, which is a third-party widget library written in JavaScript. ExtJS features high performance, customizable UI widgets and a well-designed and extensible component model.
 
 **JCR, Java&trade; Content Repository** - The Java&trade; Content Repository specification (JSR-283) provides both an abstract data model and an Application Programming Interface for realizing a massively scalable NoSQL data repository that combines features of a file system and an object database. While you do not need to understand JSR-283 in exhaustive detail, you should take time to familiarize yourself with the basic capabilities of JCR and the data model underlying it, because JCR is what makes possible the "everything is content" philosophy of AEM.
 

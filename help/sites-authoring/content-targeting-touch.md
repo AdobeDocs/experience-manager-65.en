@@ -1,14 +1,10 @@
 ---
 title: Authoring Targeted Content Using Targeting Mode
-seo-title: Authoring Targeted Content Using Targeting Mode
 description:  Targeting mode and the Target component provide tools for creating content for experiences
-seo-description:  Targeting mode and the Target component provide tools for creating content for experiences
-uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 ---
@@ -629,7 +625,7 @@ To simulate the visitor's experience, use the following tools:
 
    The page changes to show the content that is targeted for the current context.
 
-1. To make changes to the offers that are displayed, switch to Targeting mode. With the simulation activity selected, edit the offers for the context that you configured in Preview mode.
+1. To change the offers that are displayed, switch to Targeting mode. With the simulation activity selected, edit the offers for the context that you configured in Preview mode.
 
 ## Configuring Target Component Options {#configuring-target-component-options}
 

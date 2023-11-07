@@ -205,7 +205,7 @@ Read-only files are not processed and will be saved in the failure folder.
 
 The default value is failure/%Y/%M/%D/.
 
-**Preserve On Failure:** Preserve input files in case of failure to execute the operation on a service. The default value is true.
+**Preserve On Failure:** Preserve input files if there is a failure to run the operation on a service. The default value is true.
 
 **Overwrite Duplicate Filenames:** When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
 
@@ -219,7 +219,7 @@ A value of -1 days indicates to never delete the results folder. The default val
 
 **Literal:** The watched folder uses the value entered in the field as it is displayed. All basic Java types are supported. For example, if an API uses input such as String, long, int, and Boolean, the string is converted to the proper type and the service is invoked.
 
-**Variable:** The value entered is a file pattern that the watched folder uses to pick the input. For example, in the case of the encrypt password service, where the input document must be a PDF file, the user can use &ast;.pdf as the file pattern. The watched folder will pick up all files in the watched folder that match this pattern and invoke the service for each file. When a variable is used, all input files are converted to documents. Only APIs that use Document as the input type are supported.
+**Variable:** The value entered is a file pattern that the watched folder uses to pick the input. For example, if there is the encrypt password service, where the input document must be a PDF file, the user can use &ast;.pdf as the file pattern. The watched folder will pick up all files in the watched folder that match this pattern and invoke the service for each file. When a variable is used, all input files are converted to documents. Only APIs that use Document as the input type are supported.
 
 **Output Parameter Mappings:** Used to configure the outputs of the service and operation. The settings available depend on which service is using the watched folder endpoint.
 
@@ -265,7 +265,7 @@ If the output parameter mapping pattern ends with "File.separator" (which is the
 
 ## About throttling {#about-throttling}
 
-When throttling is enabled for a watch folder endpoint, it limits the number of watched folder jobs that can be processed at any given time. The maximum number of jobs is determined by the Batch Size value, also configurable in the Watched Folder endpoint. Incoming documents in the input directory of the watched folder will not be polled when the throttling limit has been reached. The documents will also remain in the input directory until other watched folder jobs have completed and another poll attempt is made. In the case of synchronous processing, all jobs processed in a single poll will count toward the throttling limit, even though the jobs are processed consecutively in a single thread.
+When throttling is enabled for a watch folder endpoint, it limits the number of watched folder jobs that can be processed at any given time. The maximum number of jobs is determined by the Batch Size value, also configurable in the Watched Folder endpoint. Incoming documents in the input directory of the watched folder will not be polled when the throttling limit has been reached. The documents will also remain in the input directory until other watched folder jobs have completed and another poll attempt is made. If there is synchronous processing, all jobs processed in a single poll will count toward the throttling limit, even though the jobs are processed consecutively in a single thread.
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ Throttling prevents Watched Folder from invoking new jobs when the previous jobs
 
 Watched Folder can serve 100 folders in total on one single node. The performance of Watched Folder is dependent on the performance of the Forms Server. For asynchronous invocation, performance is more dependent on the system load and jobs that are in the Job Manager queue.
 
-Watched Folder performance can be improved by adding nodes to the cluster. Watched Folder jobs are distributed across the cluster nodes by virtue of the Quartz scheduler and, in the case of asynchronous requests, by the Job Manager service. All the jobs are persisted in the database.
+Watched Folder performance can be improved by adding nodes to the cluster. Watched Folder jobs are distributed across the cluster nodes by virtue of the Quartz scheduler and, if there are asynchronous requests, by the Job Manager service. All the jobs are persisted in the database.
 
 Watched Folder depends on the Scheduler service for scheduling, unscheduling, and rescheduling the jobs. Other services, such as Event Management service, User Manager service, and Email Provider service, are available that share the Scheduler service thread pool. This can affect Watched Folder performance. The Scheduler service thread pool tuning will be needed when all the services start using it.
 

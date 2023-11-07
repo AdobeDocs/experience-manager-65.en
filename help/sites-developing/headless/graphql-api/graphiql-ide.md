@@ -30,7 +30,7 @@ The **GraphiQL** tool lets you test and debug your GraphQL queries by enabling y
 
 You can access the query editor from either: 
 
-* **Tools** -> **General** -> **GraphQL Query Editor**
+* **Tools** > **General** > **GraphQL Query Editor**
 * directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
@@ -119,7 +119,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
    * **surrogate-control** - **stale-while-revalidate**
      Caches may continue to serve a cached response after it becomes stale, for up to the specified number of seconds.
    * **surrogate-control** - **stale-if-error**
-     Caches may continue to serve a cached response in case of or origin error, for up to the specified number of seconds.
+     Caches may continue to serve a cached response if there is an origin error, for up to the specified number of seconds.
 
 1. Select **Save** to persist the changes.
 -->
