@@ -25,7 +25,7 @@ The App owns the routing and is then implemented by the project front end develo
 
 ## Architecture {#architecture}
 
-For a detailed description, please refer to the [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) section of the SPA Blueprint document.
+For a detailed description, see the [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) section of the SPA Blueprint document.
 
 ## ModelRouter {#modelrouter}
 

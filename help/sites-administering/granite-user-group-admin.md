@@ -23,7 +23,7 @@ Granite user and group administration consoles are both available from the **[To
 
 ![Tools console](assets/chlimage_1-72a.png)
 
-Choosing either **Users** or **Groups** from the Tools console will open the appropriate console. In both you can take action either by using the clickbox and then actions from the toolbar, or by opening the account details via the link under **Name**.
+Choosing either **Users** or **Groups** from the Tools console opens the appropriate console. In both you can take action either by using the clickbox and then actions from the toolbar, or by opening the account details via the link under **Name**.
 
 * [User Administration](#user-administration)
 
@@ -53,7 +53,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
    ![Add Useer icon](do-not-localize/chlimage_1-1.png)
 
-1. The **Create User** form will open:
+1. The **Create User** form opens:
 
    ![User Details form](assets/chlimage_1-75a.png)
 
@@ -129,7 +129,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
    ![Account Settings dialog](assets/chlimage_1-76a.png)
 
-1. The **Change Password** dialog will open. Enter and retype the new password, together with your password. Use **OK** to confirm the changes.
+1. The **Change Password** dialog opens. Enter and retype the new password, together with your password. Use **OK** to confirm the changes.
 
    ![Change password dialog](assets/chlimage_1-77a.png)
 
@@ -142,7 +142,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
    ![Using the Groups icon](do-not-localize/chlimage_1-2.png)
 
-   To open the group selection drop down:
+   To open the group selection drop-down:
 
    ![Groups selector](assets/chlimage_1-78a.png)
 
@@ -170,7 +170,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
    ![Add a new group](do-not-localize/chlimage_1-4.png)
 
-1. The **Create Group** form will open:
+1. The **Create Group** form opens:
 
    ![Group Details form](assets/chlimage_1-79a.png)
 
@@ -182,7 +182,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
     * **Name**
 
-      A name for the group; it will be shown in the Groups console.
+      A name for the group; it is shown in the Groups console.
 
     * **Description**
 

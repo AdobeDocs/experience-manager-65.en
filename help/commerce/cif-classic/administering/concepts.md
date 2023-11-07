@@ -480,7 +480,7 @@ Creating a catalog uses ten nodes per product as it provides individual componen
 
 Proxy pages use a two-node structure ( `cq:Page` and `jcr:content`) that does not contain any of the actual product content. The content is generated, at request time, by referencing the product data and the template page.
 
-However, there is a trade-off. You will not be able to customize your product information within AEM, a standard template (defined for your site) will be used.
+However, there is a trade-off. You will not be able to customize your product information within AEM, a standard template (defined for your site) is used.
 
 >[!NOTE]
 >
@@ -568,7 +568,7 @@ A promotion can be held either in an experience or directly in the campaign:
 
 >[!NOTE]
 >
->[hybris promotions](https://www.hybris.com/modules/promotion) and [hybris vouchers](https://www.hybris.com/en/modules/voucher) cover everything that influences the shopping cart and is related to pricing. Promotion-specific marketing content (such as banners, etc.) is not part of the hybris promotion.
+>[hybris promotions](https://www.hybris.com/modules/promotion) and [hybris vouchers](https://www.hybris.com/en/modules/voucher) cover everything that influences the shopping cart and is related to pricing. Promotion-specific marketing content (such as banners, and so on.) is not part of the hybris promotion.
 
 ## Personalization {#personalization}
 

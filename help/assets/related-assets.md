@@ -68,7 +68,7 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
 *Figure: Source asset of the related assets to include for translation.*
 
-1. Translate the assets in the source folder to a target language by following the steps in [Create a new translation project](translation-projects.md#create-a-new-translation-project). For example, in this case, translate your assets to French.
+1. Translate the assets in the source folder to a target language by following the steps in [Create a translation project](translation-projects.md#create-a-new-translation-project). For example, in this case, translate your assets to French.
 
 1. From the [!UICONTROL Projects] page, open the translation folder.
 

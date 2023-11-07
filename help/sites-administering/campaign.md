@@ -20,11 +20,11 @@ Adobe Campaign is a set of solutions that lets you personalize and deliver campa
 >
 >This document describes integrating Adobe Campaign with AEM 6.5, the on premises or AMS-hosted AEM solution.
 >
->For details on integrating Adobe Campaign with AEM as a Cloud Service, the cloud-native AEM solution, [please see this document.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
+>For details on integrating Adobe Campaign with AEM as a Cloud Service, the cloud-native AEM solution, [see this document.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
 
 ## Integrating with Adobe Campaign Classic {#acc}
 
-There are a number of Adobe Campaign Classic (ACC) versions. The support for integration with AEM depends on the ACC version you have implemented and if AEM is installed on-premises on in Adobe Manage Services (AMS).
+There are several Adobe Campaign Classic (ACC) versions. The support for integration with AEM depends on the ACC version you have implemented and if AEM is installed on-premises on in Adobe Manage Services (AMS).
 
 |ACC Version|Integration with AEM 6.5 <br>On Premises|Integration with AEM 6.5<br>AMS|
 |---|---|---|

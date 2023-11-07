@@ -76,7 +76,7 @@ An adaptive form referring to an XFA have its fields bound with the fields avail
 Removing a form template corrupts the dependent adaptive form or form template. Such an adaptive form is sometimes informally referred to as a dirty form. In AEM Forms user interface, you can find the dirty forms in the following two ways.
 
 * A warning icon is displayed on the adaptive form thumbnail in asset listing and the following message is displayed when you hover the pointer over the warning icon.  
-  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so go to Authoring mode and rebase it with new version.`
 
 ![Warning for an out of sync adaptive form after updating the associated XFA](assets/dirtyaf.png)
 

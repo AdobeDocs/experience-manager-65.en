@@ -19,7 +19,7 @@ ContextHub provides several sample store candidates that you can use in your sol
 
 >[!WARNING]
 >
->The sample store candidates are provided as reference configurations to help you build your own dedicated configuration for your project and as such should not be used directly.
+>The sample store candidates are provided as reference configurations to help you build your own dedicated configuration for your project. Do not use them directly.
 
 ## aem.segmentation Sample Store Candidate {#aem-segmentation-sample-store-candidate}
 

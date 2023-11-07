@@ -76,7 +76,7 @@ If you are running OpenOffice, Microsoft&reg; Word, or Microsoft&reg; PowerPoint
 
    `xhost +local:user1@`
 
-   For more details, refer to xhost command documentation.
+   For more details, see xhost command documentation.
 
 1. Restart the server.
 

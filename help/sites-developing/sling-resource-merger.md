@@ -151,7 +151,7 @@ These, in conjunction with standard functionality, enable you to:
         * The property will have a priority based on the Sling Resource Resolver configuration.
         * Changing the property type is supported.
 
-          If you use a property type different to the one used in `/libs`, then the property type you define will be used.
+          If you use a property type different to the one used in `/libs`, then the property type you define is used.
 
   >[!NOTE]
   >

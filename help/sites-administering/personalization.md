@@ -61,10 +61,10 @@ Personalization can be used in many cases, for example:
 
 ### Specific, Limited, Target User Groups - Extranets {#extranets}
 
-* Users require a login for authorization; this will be linked to a profile providing information required for personalization; possibly details such as their location, relationship to the product, usage history, budgeting responsibilities, etc.
+* Users require a login for authorization; this will be linked to a profile providing information required for personalization; possibly details such as their location, relationship to the product, usage history, budgeting responsibilities, and so on.
 * Such instances can range over sites such as:
 * Companies which provide websites to a highly specialized section of their market for example, a pharmaceutical company providing a specialized website for physicians.
-* Companies which provide websites allowing their customer to view current account and billing information; for example telephone providers.
+* Companies which provide websites allowing their customer to view current account and billing information; for example, telephone providers.
 
 ### Sales and Distribution Website {#sales-site}
 

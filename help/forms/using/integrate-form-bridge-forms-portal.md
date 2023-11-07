@@ -19,7 +19,7 @@ FormBridge is a HTML5 forms bridge API that lets you interact with a form. For t
 
 You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form. For example, you can use API to build a wizard-like experience.
 
-An existing HTML application can leverage the FormBridge API to interact with a form and embed it in the HTML page. You can use following steps to set the value of a field using Form Bridge API.
+An existing HTML application can use the FormBridge API to interact with a form and embed it in the HTML page. You can use following steps to set the value of a field using Form Bridge API.
 
 ## Integrating HTML5 forms to a web page {#integrating-html-forms-to-a-web-page}
 
@@ -29,7 +29,7 @@ An existing HTML application can leverage the FormBridge API to interact with a 
     1. Log in with administrator credentials.
     1. Create a profile or choose an existing profile.
 
-       For details on how to create a profile, see [Creating a new Profile](/help/forms/using/custom-profile.md).
+       For details on how to create a profile, see [Creating a Profile](/help/forms/using/custom-profile.md).
 
 1. **Modify the HTML Profile**
 

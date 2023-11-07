@@ -200,13 +200,13 @@ For examples, see:
 
 Widgets for the touch-enabled UI are implemented as Granite UI components.
 
-To create a new widget for use in a component dialog for the touch-enabled UI requires you to [create a new Granite UI field component](/help/sites-developing/granite-ui-component.md).
+To create a widget for use in a component dialog box for the touch-enabled UI requires you to [create a Granite UI field component](/help/sites-developing/granite-ui-component.md).
 
 >[!NOTE]
 >
->For full details about the Granite UI, please see the [Granite UI documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>For full details about the Granite UI, see the [Granite UI documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-If you consider your dialog as a simple container for a form element, then you can also see the primary content of your dialog content as form fields. Creating a new form field requires you to create a resource type; this is equivalent to creating a new component. To help you in that task, Granite UI offers a generic field component to inherit from (using `sling:resourceSuperType`):
+If you consider your dialog as a simple container for a form element, then you can also see the primary content of your dialog content as form fields. Creating a form field requires you to create a resource type; this is equivalent to creating a component. To help you in that task, Granite UI offers a generic field component to inherit from (using `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -222,7 +222,7 @@ Once you have created your resource type, you can instantiate your field by addi
 
 If you want to define styling and behavior for your component, you can create a dedicated [client library](/help/sites-developing/clientlibs.md) that defines your custom CSS/LESS and JS.
 
-To have your client library loaded solely for your component dialog (i.e. it will not be loaded for another component) you need to set the property `extraClientlibs` of your dialog to the category name of the client library you have just created. This is advisable if your client library is quite big and/or your field is specific to that dialog and will not be needed in other dialogs.
+To have your client library loaded solely for your component dialog (i.e. it will not be loaded for another component) you need to set the property `extraClientlibs` of your dialog to the category name of the client library you have created. This is advisable if your client library is quite big and/or your field is specific to that dialog and will not be needed in other dialogs.
 
 To have your client library loaded for all dialogs, set the category property of your client library to `cq.authoring.dialog`. This is the category name of the client library that is included by default when rendering all dialogs. You want to do that if you client library is small and/or your field is generic and could be reused in other dialogs.
 
@@ -340,13 +340,13 @@ If your new component references content from other pages then you can consider 
 
 Out-of-the-box AEM only checks the Reference component. To add your component you need to configure the OSGi bundle **WCM Authoring Content Reference Configuration**.
 
-Create a new entry in the definition, specifying your component, together with the property to be checked. For example:
+Create a entry in the definition, specifying your component, together with the property to be checked. For example:
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
 >[!NOTE]
 >
->When working with AEM there are several methods of managing the configuration settings for such services. See [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+>When working with AEM, there are several methods of managing the configuration settings for such services. See [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 ## Enabling and Adding Your Component to the Paragraph System {#enabling-and-adding-your-component-to-the-paragraph-system}
 
@@ -367,12 +367,12 @@ This behavior, and the required asset-to-component relationship can be configure
 
     * `/etc/designs/<myApp>/page/par`
 
-   Create a new node:
+   Create a node:
 
     * Name: `cq:authoring`
     * Type: `nt:unstructured`
 
-1. Under this create a new node to hold all the asset-to-component mappings:
+1. Under this, create a node to hold all the asset-to-component mappings:
 
     * Name: `assetToComponentMapping`
     * Type: `nt:unstructured`
@@ -392,7 +392,7 @@ This behavior, and the required asset-to-component relationship can be configure
     * `assetMimetype`:
 
         * Type: `String`
-        * Value: the mime type of the related asset; for example `image/*`
+        * Value: the mime type of the related asset; for example, `image/*`
 
     * `droptarget`:
 

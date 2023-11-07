@@ -81,7 +81,7 @@ All form types support the following features:
 
 Once form data is submitted, Adobe Experience Manager connects the form data with existing systems, business rules, and the required people.
 
-AEM Forms provide Forms Workspace, a mobile application that extends your digital business processes to mobile devices. Using Forms Workspace, you can collect and record data even when offline. Forms Workspace leverages the capabilities of your mobile device, and lets you capture photos, videos, and collect data such as timestamps and other information. The next time you connect to a network, you can synchronize the collected data.
+AEM Forms provide Forms Workspace, a mobile application that extends your digital business processes to mobile devices. Using Forms Workspace, you can collect and record data even when offline. Forms Workspace uses the capabilities of your mobile device, and lets you capture photos, videos, and collect data such as timestamps and other information. The next time you connect to a network, you can synchronize the collected data.
 
 Capturing data offline and synchronizing it the next time you return online is especially helpful for people on-field. It improves productivity and reduces errors.
 

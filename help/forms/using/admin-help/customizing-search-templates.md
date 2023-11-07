@@ -73,7 +73,7 @@ You can create as many search templates as required.
     * (Optional) To sort a column in descending order, select the check box next to the element name. If the check box is not selected, the column is sorted in ascending order.
 
 1. Click the Save tab.
-1. (Optional) If creating a new search template, give it a unique name. If you do not specify a unique name, you could overwrite an existing template.
+1. (Optional) If creating a search template, give it a unique name. If you do not specify a unique name, you could overwrite an existing template.
 1. Click the Save button.
 
 ## Delete a search template {#delete-a-search-template}

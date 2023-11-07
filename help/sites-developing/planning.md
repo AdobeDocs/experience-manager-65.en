@@ -1,14 +1,10 @@
 ---
 title: Planning
-seo-title: Planning
 description: Learn what you need to know to plan for your testing of Adobe Experience Manager.
-seo-description: What you need to know to plan for your test
-uuid: 29b1127a-da85-46ed-98e7-1c983eb40cfe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
 ---
 # Planning{#planning}
@@ -31,7 +27,7 @@ Before you start with the actual analysis and definition of tests review the fol
 
 There are many websites, books and courses which deal with such principles and so they will not be dealt with in detail in this document.
 
-**Assumptions to Avoid** - The biggest assumption (made regularly) is that your website will need to service millions of requests every day. In certain circumstances this may be true, but it cannot be assumed.
+**Assumptions to Avoid** - The biggest assumption is that your website must service millions of requests every day. In certain circumstances this may be true, but it cannot be assumed.
 
 Although future numbers cannot be predicted with 100% accuracy, observing your existing site and the traffic experienced will give a good indication. You can then make estimates dependent on the factor by which you expect / hope the traffic will increase.
 

@@ -74,7 +74,7 @@ You can tap the **Configure** ![configure](assets/configure.png) icon to set the
     * **Template message:** Specify the message to be displayed while the signature PDF is being loaded. Adobe Sign services take some time to prepare and load signature PDF.
     * **Signing Service:** Select the **Scribble Signature** option.
 
-    * **CSS Class**: Specify CSS class of the client library, if any. It is recommended to use [themes](../../forms/using/themes.md) and [in-line styles](../../forms/using/inline-style-adaptive-forms.md) instead of CSS Class.
+    * **CSS Class**: Specify CSS class of the client library, if any. Use [themes](../../forms/using/themes.md) and [in-line styles](../../forms/using/inline-style-adaptive-forms.md) instead of CSS Class.
 
    Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes. The Signature is configured sucessfully.
 

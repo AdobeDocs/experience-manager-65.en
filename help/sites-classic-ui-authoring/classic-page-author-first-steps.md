@@ -29,7 +29,7 @@ The content in your website is held in a tree-structure. To create or edit a pag
 
 ### Creating a New Page {#creating-a-new-page}
 
-Before editing, you need to [create a new page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
+Before editing, you need to [create a page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
 ### Opening a Page {#opening-a-page}
 
@@ -37,7 +37,7 @@ For many actions, such as editing, you need to [open a page](/help/sites-classic
 
 ### Editing a Page {#editing-a-page}
 
-Whether your instance already has existing pages or you have just created a new page yourself you can [edit a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) by:
+Whether your instance already has existing pages or you have created a new page yourself you can [edit a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) by:
 
 * [Inserting a Component (Paragraph)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [Editing a Component](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)

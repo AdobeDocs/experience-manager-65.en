@@ -63,7 +63,7 @@ Mobile applications are based on a blueprint that defines a page structure and p
 * **Title:** The application title.
 * **Destination Path:** The location in the repository where the application is stored. Leave the default to create a path based on the app name.
 
-* **Name:** The default value is the value of the Title property with space characters removed. The name is used within CQ to refer to the application, for example for the repository node that represents the application.
+* **Name:** The default value is the value of the Title property with space characters removed. The name is used within CQ to refer to the application, for example, for the repository node that represents the application.
 * **Description:** A description of the application.
 * **Server URL:** The URL that provides Over-the-Air (OTA) content updates to the application. The default value is the publish server URL of the instance that is used to create an application (taken from the externalizer service). Note, this must be a publish server instance rather than an author, which requires authentication.
 
@@ -163,16 +163,16 @@ Perform the following procedure on the instance where you want to update the cac
 
 ### Using App Templates {#using-app-templates}
 
-This is a feature that is available with Apps 6.1 Feature Pack 2 and provides an easy way to leverage existing app templates for the creation of new apps within AEM.
+This is a feature that is available with Apps 6.1 Feature Pack 2 and provides an easy way to use existing app templates for the creation of new apps within AEM.
 
 What is an app template? Think of it as a collection of page templates and components that represent a baseline or foundation of an app.
-When creating a new app based on the template of another app, you will get an app that has a starting point representative of the app in which it was created from.
+When creating an app based on the template of another app, you will get an app that has a starting point representative of the app in which it was created from.
 
 You must have an existing mobile app template (or an app installed that has an app template) to make use of this feature.
 
 The latest AEM Apps 6.1 samples package includes an updated version of the Geometrixx app with an app template. Alternatively, you can install the StarterKit which also provides a template.
 
-Steps to creating a new app based on an app template:
+Steps to creating an app based on an app template:
 
 1. Ensure you have the latest AEM Apps 6.1 feature pack and reference samples packages installed
 1. Click Apps from the left rail.
@@ -213,7 +213,7 @@ To open the application, from the rail click Mobile Applications and then select
 
 Each page of the mobile app includes the following features:
 
-* A back button for returning to the parent page. Note that the back button does not appear on the Home page.
+* A back button for returning to the parent page. The back button does not appear on the Home page.
 * An expendable rail that offers a menu of commands and links:
 
   * Open the Locations page.

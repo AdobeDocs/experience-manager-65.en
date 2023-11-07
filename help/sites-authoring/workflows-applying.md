@@ -1,12 +1,10 @@
 ---
 title: Apply workflows to content pages
 description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow.
-uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 ---
@@ -45,7 +43,7 @@ You can start a workflow from either:
 * [the Create option of the Sites toolbar](#starting-a-workflow-from-the-sites-toolbar).
 * [the Timeline rail of the Sites console](#starting-a-workflow-from-the-timeline).
 
-In both cases you will need to:
+In both cases you must:
 
 * [Specify the Workflow Details in the Create Workflow Wizard](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -112,7 +110,7 @@ You can specify details:
     * An existing resource to see additional actions:
 
         * **Include children** to specify that children of that resource will be included in the workflow.
-          A dialog will open allowing you to refine the selection according to:
+          A dialog box opens, letting you refine the selection according to:
 
             * Include only immediate children.
             * Include only modified pages.
@@ -132,6 +130,6 @@ You can specify details:
 
 ## Starting a Workflow from the Page Editor {#starting-a-workflow-from-the-page-editor}
 
-When editing a page you can select **Page Information** from the toolbar. The drop down menu has the option **Start in Workflow**. This will open a dialog where you can specify the required workflow, together with a title if required:
+When editing a page you can select **Page Information** from the toolbar. The drop-down menu has the option **Start in Workflow**. This opens a dialog box where you can specify the required workflow, together with a title if required:
 
 ![wf-54](assets/wf-54.png)

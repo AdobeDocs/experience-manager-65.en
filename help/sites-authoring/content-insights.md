@@ -42,7 +42,7 @@ Reports show data for a period of time that you control. When you adjust the rep
 >
 >The timeline for the Content Insight dashboard is in `GMT`.
 
-You can also specify the granularity of the reported data, for example you can see daily, weekly, monthly, or yearly data.
+You can also specify the granularity of the reported data, for example, you can see daily, weekly, monthly, or yearly data.
 
 See [Changing the Reporting Period](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 
@@ -73,7 +73,7 @@ The Page Average Engaged report includes the following features for evaluating p
 
 ## The Sources Report {#the-sources-report}
 
-The Sources report indicates how users navigated to the page, for example from search engine results or using the known URL.
+The Sources report indicates how users navigated to the page, for example, from search engine results or using the known URL.
 
 ![chlimage_1-314](assets/chlimage_1-314.png)
 

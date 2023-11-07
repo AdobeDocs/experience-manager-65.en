@@ -1,14 +1,10 @@
 ---
 title: AEM Portals and Portlets
-seo-title: AEM Portals and Portlets
 description: Learn how to configure and administer AEM as a portal and how to configure and display AEM content in a portlet.
-seo-description: Learn how to configure and administer AEM as a portal and how to configure and display AEM content in a portlet.
-uuid: 7f9e316d-277e-4a1e-b6f3-cd89addc897b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
 ---
@@ -125,7 +121,7 @@ The portlet can be configured with the following preferences:
   </tr>
   <tr>
    <td>preferenceDialog</td>
-   <td>Path to the preferences dialog in AEM - if left empty, the built-in preferences dialog will be used. This defaults to /libs/portal/content/prefs.html.</td>
+   <td>Path to the preferences dialog in AEM - if left empty, the built-in preferences dialog is used. This defaults to /libs/portal/content/prefs.html.</td>
   </tr>
   <tr>
    <td>initialRedirect</td>
@@ -188,7 +184,7 @@ To configure a replication agent for the portal:
 
    ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
-1. Double-click the replication agent you just created. It displays as invalid as it has not yet been configured.
+1. Double-click the replication agent you created. It displays as invalid as it has not yet been configured.
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
@@ -242,7 +238,7 @@ Authentication configuration options that the portlet uses in AEM WCM instances 
 
 >[!NOTE]
 >
->When working with AEM there are several methods of managing the configuration settings for OSGi services (console or repository nodes).
+>When working with AEM, there are several methods of managing the configuration settings for OSGi services (console or repository nodes).
 >
 >See [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
@@ -338,7 +334,7 @@ For every request AEM WCM receives, first the SSO-based authentication is attemp
 
 #### Enabling SSO Authentication in a AEM Portlet {#enabling-sso-authentication-in-a-aem-portlet}
 
-In order for the underlying AEM WCM instance to accept SSO requests, the portlet’s authentication mode has to be switched from **Technical** to **SSO**.
+In order for the underlying AEM WCM instance to accept SSO requests, the portlet's authentication mode has to be switched from **Technical** to **SSO**.
 
 To enable SSO authentication in a AEM portlet:
 
@@ -522,7 +518,7 @@ title="{text}"/>
 
 #### Installing a Custom Layout {#installing-a-custom-layout}
 
-To install a custom layout, access the portlet’s OSGI Web console **Bundles **section and upload the bundle.
+To install a custom layout, access the portlet's OSGI Web console **Bundles **section and upload the bundle.
 
 #### Packages {#packages}
 
@@ -543,7 +539,7 @@ The AEM content portlet has a built-in localization feature, which ensures that 
 This is done in two steps:
 
 1. The Portal Directory Locale Detector detects the locale of the portal user by getting the locale setting from the portal. This service must be configured with the list of available languages in AEM.
-1. The Portal Director Locale Handler handles the localization of the current request. It takes the path of the requested content, for example `/content/geometrixx/en/company.html`and according to the configuration, it rewrites the **en** with the actual locale of the user.
+1. The Portal Director Locale Handler handles the localization of the current request. It takes the path of the requested content, for example, `/content/geometrixx/en/company.html`and according to the configuration, it rewrites the **en** with the actual locale of the user.
 
 The Portal Director Locale Handler can be configured with the paths to check for locale information - usually this includes everything under `/content` and with the position of the locale information in the path. By default, the locale handler follows the recommondation of structuring multi-language sites within AEM.
 
@@ -611,7 +607,7 @@ When implementing such a service, make sure to set the **service.ranking** prope
 | **Name** |**Description** |**Default Behavior** |
 |---|---|---|
 | Authenticator |Provides the authentication information to AEM |Uses a configurable technical user for both author and publish. Or SSO can be used. |
-| HTMLRewriter |Rewrites links, images etc. |Rewrites AEM links to portal links, can be extended by a UrlMapper and a TextMapper |
+| HTMLRewriter |Rewrites links, images, and so on |Rewrites AEM links to portal links, can be extended by a UrlMapper and a TextMapper |
 | HttpClientService |Handles all http connections |Standard implementation |
 | LocaleHandler |Handles the locale info |Rewrites a link to the content with respect to the locale. |
 | LocaleDetector |Detects the locale of the user. |Uses the locale provided by the portal. |
@@ -656,7 +652,7 @@ The AEM Quickstart JAR file contains the portlet component files. To obtain the 
 
    The package installs the cq-portlet-director-sharedlibs-x.x.x.jar in the /libs/portal/director folder in the repository.
 
-1. Copy cq-portlet-director-sharedlibs-x.x.x.jar to your hard drive. Use any means to obtain the file, for example FileVault or a WebDAV client.
+1. Copy cq-portlet-director-sharedlibs-x.x.x.jar to your hard drive. Use any means to obtain the file, for example, FileVault or a WebDAV client.
 1. Move the cq-portlet-director-sharedlibs.x.x.x.jar file to the shared library folder of your application server so that the classes are available to deployed portlet applications.
 
 ### Adding the Portlet component to Sidekick {#adding-the-portlet-component-to-sidekick}
@@ -697,7 +693,7 @@ Deploy the portlets to the application server web container so that they are ava
 
    **Tip:** The `jar cvf nameofapp.war *` command adds contents of the current directory to the nameofapp.war file.
 
-1. Deploy the portlet application to the application server. For information, refer to the documentation for your application server.
+1. Deploy the portlet application to the application server. For information, see the documentation for your application server.
 
 ### Adding portlets to your AEM page {#adding-portlets-to-your-aem-page}
 
@@ -726,7 +722,7 @@ Use the Portal component to add a portlet window to your web page. Use the compo
 
 To access content provided by AEM WCM, the portal server needs to be fitted with the AEM Portal Director Portlet. You do this by installing, configuring, and adding the portlet to the portal page by using the steps provided in this section.
 
-By default, the portlet connects to the publish instance at localhost:4503 and to the author instance at localhost:4502. These values can be changed during deployment of the portlet. The portal director is available as content in the repository under /libs/portal/directory. You will need to download the application war file before using it.
+By default, the portlet connects to the publish instance at localhost:4503 and to the author instance at localhost:4502. These values can be changed during deployment of the portlet. The portal director is available as content in the repository under /libs/portal/directory. You must download the application war file before using it.
 
 ### Downloading the war file {#downloading-the-war-file}
 
@@ -736,7 +732,7 @@ By default, the portlet connects to the publish instance at localhost:4503 and t
 
 >[!NOTE]
 >
->These procedures use the Websphere portal as an example although they are as generic as possible; please be aware that procedures vary for other web portals. Although the steps are essentially identical for all web portals, you need to repurpose the steps for your particular web portal.
+>These procedures use the Websphere portal as an example although they are as generic as possible; be aware that procedures vary for other web portals. Although the steps are essentially identical for all web portals, you need to repurpose the steps for your particular web portal.
 
 #### Installing the portlet {#installing-the-portlet}
 
@@ -795,7 +791,7 @@ Usually the start path points directly to the content in AEM. However if you wan
 To add the portlet to the portal page:
 
 1. Be sure you are in the administration window of your app server and navigate to the location where you manage pages. (for example, in WebSphere 6.1, click **Manage Pages**).
-1. Select the name of the portlet and then select an existing page or create a new page.
+1. Select the name of the portlet and then select an existing page or create a page.
 1. Edit the page layout.
 1. Select the portlet and add it to a container.
 1. Save your changes.
@@ -805,4 +801,4 @@ To add the portlet to the portal page:
 To access the page you added to the portlet:
 
 1. In the portlet's personalization menu, configure the portlet as you configured it in the portal.
-1. Open the configuration (The portlet displays the publish start URL configured in the portlet’s configuration) and make edits as necessary, then save them.
+1. Open the configuration (The portlet displays the publish start URL configured in the portlet's configuration) and make edits as necessary, then save them.

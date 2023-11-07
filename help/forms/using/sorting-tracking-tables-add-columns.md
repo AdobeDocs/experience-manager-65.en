@@ -135,7 +135,7 @@ For the following customizations in the task table, you need to do semantic chan
        <tbody>
            <%_.each(obj, function(task){%>
            <tr>
-               <!-- Put the task attributes in the order of headings, for example -->
+               <!-- Put the task attributes in the order of headings, for example, -->
                <td><%= task.stepName %></td>
                <td><%= task.instructions %></td>
                <td><%= !task.selectedRoute?'':(task.selectedRoute=='null'?'Default':task.selectedRoute) %></td>

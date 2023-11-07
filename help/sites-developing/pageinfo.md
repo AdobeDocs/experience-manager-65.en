@@ -489,7 +489,7 @@ The service applies the cumulative result of all filters. For example, the follo
 
 >[!NOTE]
 >
->When working with AEM there are several methods of managing the configuration settings for such services. See [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
+>When working with AEM, there are several methods of managing the configuration settings for such services. See [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
 For example, to configure the service using CRXDE Lite:
 
@@ -511,7 +511,7 @@ To configure the service in your project source:
 
 1. Locate or create the config folder for your AEM application in your project source.
 
-   For example, if you used the multimodule archetype of the Content Package Maven Plugin to create your project, the folder path is `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   For example, if you used the multimodule archetype of the Content Package Maven Plugin to create your project, the folder path is `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. In the config folder, create a text file named com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
 1. Copy the following text to the file:
 

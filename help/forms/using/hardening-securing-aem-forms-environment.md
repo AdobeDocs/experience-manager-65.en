@@ -139,7 +139,7 @@ By default, forms portal submit action of adaptive forms saves data in the local
 
 You can configure the storage service to send over-the-wire to the processing cluster without saving anything locally on the publish node. The processing cluster resides in a secure zone behind the private firewall and data remains safe.
 
-Use the credentials of processing server for AEM DS settings service to post data from the publish node to the processing server. It is recommended to use credentials of a restricted non-administrative user with read-write access to repository of processing server. For more information, see [Configuring storage services for drafts and submissions](/help/forms/using/configuring-draft-submission-storage.md).
+Use the credentials of processing server for AEM DS settings service to post data from the publish node to the processing server. Use the credentials of a restricted non-administrative user with read-write access to repository of processing server. For more information, see [Configuring storage services for drafts and submissions](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Secure data handled by form data model (FDM) {#secure-data-handled-by-form-data-model-fdm}
 

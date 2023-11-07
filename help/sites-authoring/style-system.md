@@ -18,7 +18,7 @@ This eliminates the need to develop a custom component for each style or to cust
 
 ## Use Case {#use-case}
 
-Template authors not only need the ability to configure how components function for the content authors, but also to configure a number of alternative visual variations of a component.
+Template authors not only need the ability to configure how components function for the content authors, but also to configure several alternative visual variations of a component.
 
 Likewise, content authors not only need the ability to structure and arrange their content, but also to select how it is presented visually.
 
@@ -154,4 +154,4 @@ This property is set on the `cq:Component` node. For example:
 
 This ability to define style names is useful for very generic components, like the Layout Container, or the Content Fragment component, to provide them with additional meaning.
 
-For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, etc.
+For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, and so on.

@@ -38,7 +38,7 @@ Endpoints can be added only to services. An endpoint cannot exist alone; it must
 
 ## Enable or disable an endpoint {#enable-or-disable-an-endpoint}
 
-By default, new endpoints are automatically enabled. But if you have disabled an endpoint, you will need to enable it for it to be operational.
+By default, new endpoints are automatically enabled. But if you have disabled an endpoint, you must enable it for it to be operational.
 
 If you are experiencing problems with services, disable the associated endpoints to better troubleshoot the problem. You may also want to disable endpoints during regular system maintenance or when upgrading a service.
 

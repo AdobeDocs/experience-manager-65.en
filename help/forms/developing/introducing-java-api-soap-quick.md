@@ -30,19 +30,19 @@ The JAR file listing is in a comment section at the beginning of the Quick Start
      * 2. adobe--client.jar
      * 3. adobe-usermanager-client.jar
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/Adobe/Adobe_Experience_Manager_forms/SDK/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/Adobe/Adobe_Experience_Manager_forms/SDK/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/Adobe/Adobe_Experience_Manager_forms/jboss/bin/client
      *
      * If you want to invoke a remote AEM Forms instance and there is a
      * firewall between the client application and AEM Forms, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/Adobe/Adobe_Experience_Manager_forms/SDK/client-libs/thirdparty
      *

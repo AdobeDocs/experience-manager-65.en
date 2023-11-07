@@ -31,7 +31,7 @@ You can use Adobe Analytics to analyze data from your sites.
 Integrating with Adobe Analytics lets you do the following:
 
 * Enable Analytics user tracking.
-* Map your run modes (for example author, publish) to different report suites.
+* Map your run modes (for example, author, publish) to different report suites.
 * Submit Client Context variables as conversion variables or traffic properties.
 * Use predefined variable mappings.
 * Configure complete site sections at once.

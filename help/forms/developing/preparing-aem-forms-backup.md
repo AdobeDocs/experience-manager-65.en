@@ -47,13 +47,13 @@ You can perform these tasks using the Backup and Restore service:
 
 ## Entering Backup Mode on the forms server {#entering-backup-mode-on-the-forms-server}
 
-You enter backup mode to allow for hot backups of a forms server. When you enter backup mode, you specify the following information based on your organization’s backup procedures:
+You enter backup mode to allow for hot backups of a forms server. When you enter backup mode, you specify the following information based on your organization's backup procedures:
 
 * A unique label to identify the backup mode session that may be useful for your backup processes.
 * The time for the backup procedure to complete.
 * A flag to indicate whether to be in continuous backup mode, which is useful only if you are performing rolling backups.
 
-Before you write applications to enter into backup mode, it is recommended that you understand the backup procedures that will be used after you put the forms server in backup mode. For more information about what to consider when performing backups for AEM Forms, see [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).
+Before you write applications to enter into backup mode, it is recommended that you understand the backup procedures that are used after you put the forms server in backup mode. For more information about what to consider when performing backups for AEM Forms, see [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Enter backup mode by using the Backup and Restore Service API:
 
 1. Include project files
 
-   Include necessary client JAR files, such as adobe-backup-restore-client-sdk.jar, in your Java project’s class path. To create the Java client application, the following JAR files must be added to your project’s class path:
+   Include necessary client JAR files, such as adobe-backup-restore-client-sdk.jar, in your Java project's class path. To create the Java client application, the following JAR files must be added to your project's class path:
 
     * adobe-backup-restore-client-sdk.jar
     * adobe-livecycle-client.jar
@@ -217,7 +217,7 @@ Leave backup mode by using the Backup and Restore Service API (Java):
 
 1. Include project files
 
-   Include necessary client JAR files, such as adobe-backup-restore-client-sdk.jar, in your Java project’s class path. To create Java client application, the following JAR files must be added to your project’s class path:
+   Include necessary client JAR files, such as adobe-backup-restore-client-sdk.jar, in your Java project's class path. To create Java client application, the following JAR files must be added to your project's class path:
 
     * adobe-backup-restore-client-sdk.jar
     * adobe-livecycle-client.jar

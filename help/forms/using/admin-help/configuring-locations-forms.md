@@ -35,7 +35,7 @@ The following example points to the same content (using Content Root URI and Bas
 
 `(BaseURL)/subdir/image1.jpg`
 
-**FS Web Root URI:** The URL of the Forms web application. You can leave this box empty if the Forms web application and the client application are deployed on the same application server; the Forms API web root URL will be used.
+**FS Web Root URI:** The URL of the Forms web application. You can leave this box empty if the Forms web application and the client application are deployed on the same application server; the Forms API web root URL is used.
 
 If the Forms web application and the client application are not deployed to the same application server, provide the URL for the Forms web application in this box, as shown in this example:
 

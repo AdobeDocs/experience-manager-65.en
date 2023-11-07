@@ -1,8 +1,8 @@
 ---
 title: Passing Documents to the FormsService
 seo-title: Passing Documents to the FormsService
-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design located in the com.adobe.idp.Document object. 
-seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design located in the com.adobe.idp.Document object.
+description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design in the com.adobe.idp.Document object. 
+seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design in the com.adobe.idp.Document object.
 uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
 contentOwner: admin
 content-type: reference
@@ -17,7 +17,7 @@ exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
 
-The AEM Forms service renders interactive PDF forms to client devices, typically web browsers, to collect information from users. An interactive PDF form is based on a form design that is typically saved as an XDP file and created in Designer. As of AEM Forms, you can pass a `com.adobe.idp.Document` object that contains the form design to the Forms service. The Forms service then renders the form design located in the `com.adobe.idp.Document` object.
+The AEM Forms service renders interactive PDF forms to client devices, typically web browsers, to collect information from users. An interactive PDF form is based on a form design that is typically saved as an XDP file and created in Designer. As of AEM Forms, you can pass a `com.adobe.idp.Document` object that contains the form design to the Forms service. The Forms service then renders the form design in the `com.adobe.idp.Document` object.
 
 An advantage of passing a `com.adobe.idp.Document` object to the Forms service is that other service operations return a `com.adobe.idp.Document` instance. That is, you can get a `com.adobe.idp.Document` instance from another service operation and render it. For example, assume that an XDP file is stored in a Content Services (deprecated) node named `/Company Home/Form Designs`, as shown in the following illustration.
 

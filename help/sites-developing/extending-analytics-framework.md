@@ -86,9 +86,9 @@ Use the following procedure to add variables to the list:
 
 1. On your Adobe Analytics framework page, expand the **General Analytics Settings** area.
 1. Below the list of variables, click Add Item to add a new variable to the list.
-1. In the left-hand cell, enter a name for the variable, for example `prop10`.
+1. In the left-hand cell, enter a name for the variable, for example, `prop10`.
 
-1. In the right-hand column, enter a value for the variable, for example `CONSTANT`.
+1. In the right-hand column, enter a value for the variable, for example, `CONSTANT`.
 
 1. To remove a variable, click the (-) button next to the variable.
 
@@ -193,7 +193,7 @@ Therefore, your JavaScript should set `s.usePlugins` to `true` so that any code 
     1. Specify `cq` as the folder name, and click OK.
     1. Similarly, create the `analytics` and `components` folders.
 
-1. Right-click the `components` folder that you just created and click Create &gt; Create Component. Specify the following property values:
+1. Right-click the `components` folder that you created and click Create &gt; Create Component. Specify the following property values:
 
     * Label: `sitecatalyst`
     * Title: `sitecatalyst`
@@ -295,7 +295,7 @@ Use the following procedure to obtain the plugin code, store the code in the AEM
 
 1. Open the js.txt file from your client library folder.
 
-1. In a new line, add the name of the file that contains the plugin, for example getQueryParam.js. Then, click Save All and close the file.
+1. In a new line, add the name of the file that contains the plugin, for example, getQueryParam.js. Then, click Save All and close the file.
 
 >[!NOTE]
 >

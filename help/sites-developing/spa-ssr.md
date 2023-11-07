@@ -166,7 +166,7 @@ For a simplistic example, see [We.Retail Journal app](https://github.com/Adobe-M
 
 >[!CAUTION]
 >
->The [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) is for demonstration purposes only and therefore uses Node.js as a simple example instead of the recommended Adobe I/O Runtime. This example should not be used for any project work.
+>The [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) is for demonstration purposes only and therefore uses Node.js as a simple example instead of the recommended Adobe I/O Runtime. Do not use this example for any project work.
 
 >[!NOTE]
 >

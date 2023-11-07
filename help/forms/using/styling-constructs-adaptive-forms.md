@@ -22,7 +22,7 @@ Knowledge of CSS and the LESS framework.
 
 ## What can be customized {#what-can-be-customized}
 
-The article lists publicly available css classes of adaptive forms. You can leverage these classes to style various components of an adaptive form. The styling of authoring components, such as dialogs and status bars that display warnings are beyond the scope of this article. Use these styling constructs to create styles (using CSS or Less) only when you are unable to style components using [theme editor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+The article lists publicly available css classes of adaptive forms. You can use these classes to style various components of an adaptive form. The styling of authoring components, such as dialogs and status bars that display warnings are beyond the scope of this article. Use these styling constructs to create styles (using CSS or Less) only when you are unable to style components using [theme editor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Customizing styles in adaptive forms {#customizing-styles-in-adaptive-forms}
 

@@ -47,7 +47,7 @@ The [!DNL Adobe InDesign Server] can be integrated with [!DNL Experience Manager
 
    >[!CAUTION]
    >
-   >If the [!DNL InDesign Server] is not installed or not configured, then you can still upload an INDD file into [!DNL Experience Manager]. However the renditions generated will be limited to PNG and JPEG. You will not be able to generate HTML, .idml, or the page renditions.
+   >If the [!DNL InDesign Server] is not installed or not configured, then you can still upload an INDD file into [!DNL Experience Manager]. However the renditions generated are limited to PNG and JPEG. You will not be able to generate HTML, .idml, or the page renditions.
 
 1. After the extraction and rendition generation:
 
@@ -135,7 +135,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 
 * **Page Title**: Specify the title you want to have assigned to the resulting page.
 
-* **Page Root Path**: The path to the root location of the resulting page. If left blank the node holding the asset's renditions will be used.
+* **Page Root Path**: The path to the root location of the resulting page. If left blank the node holding the asset's renditions is used.
 
 * **Page Template**: The template to use when generating the resulting page.
 

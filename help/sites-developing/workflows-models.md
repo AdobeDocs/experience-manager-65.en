@@ -1,14 +1,10 @@
 ---
 title: Creating Workflow Models
-seo-title: Creating Workflow Models
-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
+description: You create a workflow model to define the series of steps that are run when a user starts the workflow.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
 ---
@@ -16,7 +12,7 @@ exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
 
 >[!CAUTION]
 >
->For use of the classic UI, please see the [AEM 6.3 documentation](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) for reference.
+>For use of the classic UI, see the [AEM 6.3 documentation](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) for reference.
 
 You create a [workflow model](/help/sites-developing/workflows.md#model) to define the series of steps executed when a user starts the workflow. You can also define model properties, such as whether the workflow is transient or uses multiple resources.
 
@@ -24,14 +20,14 @@ When a user starts a workflow, an instance is started; this is the corresponding
 
 ## Creating a New Workflow {#creating-a-new-workflow}
 
-When you first create a new workflow model it contains:
+When you first create a workflow model, it contains:
 
 * The steps, **Flow Start** and **Flow End**.
   These represent the beginning and end of the workflow. These steps are required and cannot be edited/removed.
 * An example **Participant** step named **Step 1**.
   This step is configured to assign a work item to the workflow initiator. Edit or delete this step, and add steps as required.
 
-To create a new workflow with the editor:
+To create a workflow with the editor:
 
 1. Open the **Workflow Models** console; via **Tools**, **Workflow**, **Models** or, for example: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Select **Create**, then **Create Model**.
@@ -69,7 +65,7 @@ When you (or any other user) make any changes to the workflow you must use **Syn
 
 When the changes are synchronized with the runtime (saved) model, **Synched** is shown instead.
 
-Some steps have mandatory fields and/or built in validation. When these conditions are not satisfied an error will be shown when you attempt to **Sync** the model. For example, when no participant has been defined for a **Participant** step:
+Some steps have mandatory fields and/or built in validation. When these conditions are not satisfied an error is shown when you attempt to **Sync** the model. For example, when no participant has been defined for a **Participant** step:
 
 ![wf-21](assets/wf-21.png)
 
@@ -80,8 +76,8 @@ When you open a [Default and/or Legacy model](/help/sites-developing/workflows.m
 * The Steps browser is not available (left side).
 * There is an **Edit** action available in the toolbar (right side).
 * Initially the model, and its properties, is presented in read-only mode as:
-    * Default workflows are located in `/libs`
-    * Legacy workflows are located in `/etc`
+    * Default workflows are in `/libs`
+    * Legacy workflows are in `/etc`
 Selecting **Edit** will:
 * take a copy of the workflow into `/conf`
 * make the Steps browser available
@@ -95,7 +91,7 @@ Selecting **Edit** will:
 
 ### Adding a Step to a Model {#adding-a-step-to-a-model}
 
-You will need to add steps to your model to represent the activity to perform - each step performs a specific activity. A selection of step components are available in a standard AEM instance.
+You must add steps to your model to represent the activity to perform - each step performs a specific activity. A selection of step components are available in a standard AEM instance.
 
 When you edit a model, the available steps appear in the various groups of the **Steps browser**. For example:
 
@@ -111,7 +107,7 @@ To add steps to your workflow model:
 1. Open the Steps browser; using **Toggle Side Panel**, at the far left of the top toolbar. Here you can:
 
     * **Filter** for specific steps.
-    * Use the drop down selector to limit the selection to a specific group of steps.
+    * Use the drop-down selector to limit the selection to a specific group of steps.
     * Select the Show Description icon ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) to show more details about the appropriate step.
 
    ![wf-02](assets/wf-02.png)
@@ -161,7 +157,7 @@ You can **Configure** and customize the behavior of a workflow step using the **
 
 ### Creating a Transient Workflow {#creating-a-transient-workflow}
 
-You can create a [Transient](/help/sites-developing/workflows.md#transient-workflows) workflow model when creating a new model, or by editing an existing one:
+You can create a [Transient](/help/sites-developing/workflows.md#transient-workflows) workflow model when creating a model, or by editing an existing one:
 
 1. Open the workflow model for [editing](#editinganexistingworkflow).
 1. Select **Workflow Model Properties** from the toolbar.
@@ -201,7 +197,7 @@ If a workflow model is present in Classic UI, but missing in the selection popup
    
 ### Configuring a Workflow for Multi Resource Support {#configuring-a-workflow-for-multi-resource-support}
 
-You can configure a workflow model for [Multi Resource Support](/help/sites-developing/workflows.md#multi-resource-support) when creating a new model, or by editing an existing one:
+You can configure a workflow model for [Multi Resource Support](/help/sites-developing/workflows.md#multi-resource-support) when creating a model, or by editing an existing one:
 
 1. Open the workflow model for [editing](#editinganexistingworkflow).
 1. Select **Workflow Model Properties** from the toolbar.
@@ -258,7 +254,7 @@ To define **Stages** for your workflow:
 
 To export a workflow model in a package:
 
-1. Create a new package using the [Package Manager](/help/sites-administering/package-manager.md#package-manager):
+1. Create a package using the [Package Manager](/help/sites-administering/package-manager.md#package-manager):
 
     1. Navigate to the Package Manager via **Tools**, **Deployment**, **Packages**.
 
@@ -293,7 +289,7 @@ You can configure a form to be processed by the selected workflow. When users su
 
 To configure the workflow to be used with your form:
 
-1. Create a new page and open it for editing.
+1. Create a page and open it for editing.
 1. Add a **Form** component to the page.
 1. **Configure** the **Form Start** component that appeared in the page.
 1. Use **Start Workflow** to select the desired workflow from those available:
@@ -322,7 +318,7 @@ You can also configure AEM to display **DEBUG** messages in the log files. See [
 
 To illustrate some of the possibilities for creating a workflow, the following example creates a variation of the `Publish Example` workflow.
 
-1. [Create a new workflow model](#creating-a-new-workflow).
+1. [Create a workflow model](#creating-a-new-workflow).
 
    The new workflow will contain:
 
@@ -396,7 +392,7 @@ To illustrate some of the possibilities for creating a workflow, the following e
 
 To define an OR rule, proceed as follows:
 
-1. Create two scripts and save them in the repository, for example under:
+1. Create two scripts and save them in the repository, for example, under:
 
    `/apps/myapp/workflow/scripts`
 

@@ -43,7 +43,7 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
 4. Assign the child configuration to an AEM site
 
    * Go to the AEM Sites console
-   * Navigate to the region or language root of your site structure, for example  /content/venia/us _or_ /content/venia/us/en for the Venia sample page
+   * Navigate to the region or language root of your site structure, for example,  /content/venia/us _or_ /content/venia/us/en for the Venia sample page
    * Select the page and open the page properties
    * Select the Advanced tab
    * In the `Configuration` section, select the configuration that you created at step

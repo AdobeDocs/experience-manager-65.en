@@ -37,7 +37,7 @@ You can create a collection either with [static references](#creating-a-collecti
 
 ### Create a collection with static references {#creating-a-collection-with-static-references}
 
-You can create a collection with static references, for example a collection with references to assets, folders, collections, spin sets, and image sets.
+You can create a collection with static references, for example, a collection with references to assets, folders, collections, spin sets, and image sets.
 
 1. Navigate to the **[!UICONTROL Collections]** console.
 1. From the toolbar, click **[!UICONTROL Create]**.

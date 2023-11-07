@@ -101,7 +101,7 @@ When your template is configured, make it available:
 
 The template consists of a node structure, as it uses the [Content Sync framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Each node has a `type` property that defines a specific action in the creation process of the zip file. 
 
-<!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
+<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 The following nodes can be used to build an export template:
@@ -125,7 +125,7 @@ The following nodes can be used to build an export template:
 
 * `rewrite` 
   The rewrite node defines how the links are rewritten in the exported page. The rewritten links can either point to the files included in the zip file or to the resources on the server.
-  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- See the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design` 
   The design node is used to copy the design used for the exported page. It has the following characteristics:
@@ -150,7 +150,7 @@ The following nodes can be used to build an export template:
   * Node type is `nt:unstructured`.
   * Has a `type` property and `type` related properties. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-  For example the following configuration node copies the `mysite.clientlibs.js` files to the zip file:
+  For example, the following configuration node copies the `mysite.clientlibs.js` files to the zip file:
 
   ```xml
   "mysite.clientlibs.js": {
@@ -171,7 +171,7 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 To meet some specific requirements, implement a [custom update handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
+<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Programmatically Exporting a Page {#programmatically-exporting-a-page}

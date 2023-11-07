@@ -1,21 +1,17 @@
 ---
 title: AEM Sites - GDPR Readiness 
-seo-title: AEM Sites - GDPR Readiness
 description: Learn about the procedures to handle GDPR requests in AEM Sites and how to use them.
-seo-description: Learn about the details of GDPR Readiness for AEM Sites.
-uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 ---
 # AEM Sites - GDPR Readiness{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA etc.
+>GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA and so on.
 
 The European Union's General Data Protection Regulation on data privacy rights takes effect as of May 2018.
 
@@ -145,7 +141,7 @@ To preview persistance used ContextHub, a user can:
         * ContextHub.Utils.Persistence.Modes.COOKIE
         * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      The ContextHub store defines which persistence layer will be used, thus to view the current state of the persistence all layers should be checked.
+      The ContextHub store defines which persistence layer is used, thus to view the current state of the persistence all layers should be checked.
 
 For example, to view data stored in localStorage:
 
@@ -174,7 +170,7 @@ To preview persistance used ContextHub, a user can:
         * ContextHub.Utils.Persistence.Modes.COOKIE
         * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      The ContextHub store defines which persistence layer will be used, thus to view the current state of the persistence all layers should be checked.
+      The ContextHub store defines which persistence layer is used, thus to view the current state of the persistence all layers should be checked.
 
 For example, to view data stored in localStorage:
 

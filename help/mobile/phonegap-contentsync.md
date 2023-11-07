@@ -281,7 +281,7 @@ Notice that the *factory* definition contains the common interface and the custo
 
 ### Implementing a Custom Update Handler {#implementing-a-custom-update-handler}
 
-Every We.Retail Mobile page contains a logo in the upper-left corner that we would like to include in the zip file, of course. However, for cache optimization, AEM doesn't reference the image file's real location in the repository, which prevents us from simply using the **copy** configuration type. What we must do instead is to provide our own **logo** configuration type that makes the image available at the location requested by AEM. The following code listing shows the full implementation of the logo update handler:
+Every We.Retail Mobile page contains a logo in the upper-left corner that we would like to include in the zip file. However, for cache optimization, AEM doesn't reference the image file's real location in the repository, which prevents us from simply using the **copy** configuration type. What we must do instead is to provide our own **logo** configuration type that makes the image available at the location requested by AEM. The following code listing shows the full implementation of the logo update handler:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

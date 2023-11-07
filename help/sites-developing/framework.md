@@ -50,7 +50,7 @@ The tagging framework also provides the ability to restrict authors and site vis
 * When containing child nodes, the tag is referred to as a [container tag.](#container-tags)
 * The tag is stored in the repository below a base path called the [taxonomy root node.](#taxonomy-root-node)
 
-Since tags are simply JCR nodes, the node names must of course abide by the [JCR naming convention.](naming-conventions.md)
+Because tags are simply JCR nodes, the node names must abide by the [JCR naming convention.](naming-conventions.md)
 
 ### TagID {#tagid}
 
@@ -104,7 +104,7 @@ The following table shows some sample TagIDs, their elements, and how the TagID 
 
 When the tag includes the optional title string ( `jcr:title`), it is possible to localize the title for display by adding the property `jcr:title.<locale>`.
 
-For more details, please see the following documents:
+For more details, see the following documents:
 
 * [Tags in Different Languages](/help/sites-developing/building.md#tags-in-different-languages), which describes use of the APIs
 * [Managing Tags in Different Languages](/help/sites-administering/tags.md#managing-tags-in-different-languages), which describes use of the tagging console
@@ -219,4 +219,4 @@ The following is a description of the effects in the repository when moving or m
 
 Since Adobe Experience Manager 6.4, tags are stored under `/content/cq:tags` whereas previous versions stored tags under `/etc/tags`. 
 
-Whenever upgrading an AEM system from a version prior to 6.4, tags must be migrated to `/content/cq:tags`. Please see the document [Common Repository Restructuring in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) for more information.
+Whenever upgrading an AEM system from a version prior to 6.4, tags must be migrated to `/content/cq:tags`. See [Common Repository Restructuring in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) for more information.

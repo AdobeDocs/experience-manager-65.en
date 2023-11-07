@@ -15,7 +15,7 @@ This section includes the following steps to configure SSL with your IBM WebSphe
 
 For enabling SSL, WebSphere needs access to a user account in the local OS user registry that has permission to administer the system:
 
-* (Windows) Create a new Windows user who is part of the Administrators group and has the privilege to act as part of the operating system. (See [Create a Windows user for WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
+* (Windows) Create a Windows user who is part of the Administrators group and has the privilege to act as part of the operating system. (See [Create a Windows user for WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
 * (Linux, UNIX) The user can be a root user or another user who has root privileges. When you enable SSL on WebSphere, use the server identification and password of this user.
 
 ### Create a Linux or UNIX user for WebSphere {#create-a-linux-or-unix-user-for-websphere}
@@ -45,7 +45,7 @@ For enabling SSL, WebSphere needs access to a user account in the local OS user 
 1. Right-click Users and select **New User**.
 1. Type a user name and password in the appropriate boxes, and type any other information you require in the remaining boxes.
 1. Deselect **User Must Change Password At Next Login**, click **Create**, and then click **Close**.
-1. Click **Users**, right-click the user you just created and select **Properties**.
+1. Click **Users**, right-click the user you created and select **Properties**.
 1. Click the **Member Of** tab and then click **Add**.
 1. In the Enter The Object Names To Select box, type `Administrators`, click Check Names to ensure that the group name is correct.
 1. Click **OK** and then click **OK** again.
@@ -120,7 +120,7 @@ Truststores and keystores can be created using ikeyman utility or admin console.
 
 1. In WebSphere Administrative Console, select **Security &gt; Global Security**.
 1. In the Authentication section, expand **RMI/IIOP security** and click **CSIv2 inbound communications**.
-1. Ensure that **SSL-supported** is selected in the Transport drop down list.
+1. Ensure that **SSL-supported** is selected in the Transport drop-down list.
 1. Restart the WebSphere profile.
 
 ## Configuring WebSphere to convert URLs that begins with https {#configuring-websphere-to-convert-urls-that-begins-with-https}

@@ -24,7 +24,7 @@ Adobe provides two versions of the Commerce Integration Framework:
 
 ## Deploying Other Implementations {#deploying-other-implementations}
 
-For AEM and Adobe Commerce, please see [AEM and Adobe Commerce integration](/help/commerce/cif/integrating/magento.md) using the [Commerce Integration Framework](/help/commerce/cif/introduction.md).
+For AEM and Adobe Commerce, see [AEM and Adobe Commerce integration](/help/commerce/cif/integrating/magento.md) using the [Commerce Integration Framework](/help/commerce/cif/introduction.md).
 
 >[!NOTE]
 >

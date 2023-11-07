@@ -70,7 +70,7 @@ At any time you can either add or remove pages to/from the range of source pages
 
         * Select **Edit Launch**.
 
-   The source pages will be shown.
+   The source pages are shown.
 
 1. Make your required changes, then confirm with **Save**.
 
@@ -92,7 +92,7 @@ At any time you can edit the properties for a launch:
 
         * Select **Edit Properties**.
 
-   The details will be shown.
+   The details are shown.
 
 1. Make your required changes, then confirm with **Save**.
 

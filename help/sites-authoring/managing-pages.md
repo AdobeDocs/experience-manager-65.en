@@ -15,11 +15,11 @@ This section describes how to create and manage pages with Adobe Experience Mana
 
 >[!NOTE]
 >
->There are a number of [keyboard shortcuts](/help/sites-authoring/keyboard-shortcuts.md) that you can use from the websites console that make organizing your pages more efficient.
+>There are several [keyboard shortcuts](/help/sites-authoring/keyboard-shortcuts.md) that you can use from the websites console that make organizing your pages more efficient.
 
 ## Organizing your Website {#organizing-your-website}
 
-As an author you will need to organize your website within AEM. This involves creating and naming your content pages so that:
+As an author, organize your website within AEM. This involves creating and naming your content pages so that:
 
 * You can easily find them on the author environment
 * Visitors to your site can easily browse them on the publish environment
@@ -72,7 +72,7 @@ From any point, you can see the upward branch from breadcrumbs in the header bar
 
 ### Page Naming Conventions {#page-naming-conventions}
 
-When creating a new page there are two keys fields:
+When creating a page, there are two keys fields:
 
 * **[Title](#title)**:
 
@@ -98,7 +98,7 @@ The page **Title** and **Name** can be created separately but are related:
 >
 >Also keep in mind that some browsers (for example, older versions of IE) can only accept URLs up to a certain length, so there is also technical reason to keep page names short.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
+When creating a page, AEM [validates the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
 
 The minimum allowed characters are:
 
@@ -116,7 +116,7 @@ Full details of all characters allowed can be found in [the naming conventions](
 
 #### Title {#title}
 
-If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters substituted. For example:
+If you supply only a page **Title** when creating a page, AEM derives the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters substituted. For example:
 
 | Title |Derived Name |
 |---|---|
@@ -125,7 +125,7 @@ If you supply only a page **Title** when creating a new page, AEM will derive th
 
 #### Name {#name}
 
-When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.
+When you supply a page **Name** when creating a page, AEM [validates the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.
 
 ![caop-02](assets/caop-02.png)
 
@@ -137,7 +137,7 @@ When you supply a page **Name** when creating a new page, AEM will [validate the
 
 ### Templates {#templates}
 
-In AEM, a template specifies a specialized type of page. A template will be used as the basis for any new page being created.
+In AEM, a template specifies a specialized type of page. A template is used as the basis for any new page being created.
 
 The template defines the structure of a page including a thumbnail image and other properties. For example, you may have separate templates for product pages, sitemaps, and contact information. Templates are comprised of [components](#components).
 
@@ -180,7 +180,7 @@ Unless all pages have been created for you in advance, before you can start crea
 
 1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigate to the location where you want to create the new page.
-1. Open the drop down selector using **Create** in the toolbar, then select **Page** from the list:
+1. Open the drop-down selector using **Create** in the toolbar, then select **Page** from the list:
 
    ![caop-03](assets/caop-03.png)
 
@@ -207,7 +207,7 @@ Unless all pages have been created for you in advance, before you can start crea
     * **Name**:
 
         * This is used to generate the URI. If not specified, the name is derived from the title.
-        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
+        * If you supply a page **Name** when creating a page, AEM [validates the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
 
         * You **cannot submit invalid characters** in the **Name** field. When AEM detects invalid characters the field will be highlighted and an explanatory message shown to indicate the characters that need removing/replacing.
 
@@ -215,7 +215,7 @@ Unless all pages have been created for you in advance, before you can start crea
    >
    >See [Page Naming Conventions](#page-naming-conventions).
 
-   The minimum information required to create a new page is the **Title**.
+   The minimum information required to create a page is the **Title**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -225,7 +225,7 @@ Unless all pages have been created for you in advance, before you can start crea
 
    >[!NOTE]
    >
-   >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists a new page will become `winter0`.
+   >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example, if `winter` already exists a new page will become `winter0`.
 
 1. If you return to the console you will see your new page:
 
@@ -275,17 +275,17 @@ You can copy a page and all of its subpages to a new location:
    >If you are in selection mode this is exited automatically as soon as the page is copied.
 
 1. Navigate to the location for the new copy of the page.
-1. The **Paste** icon is available with a drop down arrow directly to the right:
+1. The **Paste** icon is available with a drop-down arrow directly to the right:
 
    ![Paste](assets/paste-without-children.png)
 
    You can either:
    * Select the **Paste** page icon itself: A copy of the original page and any child-pages will be created at this location.
-   * Select the drop down arrow to reveal the **Paste without children** option. A copy of the original page will be created at this location; child-pages will not be copied.
+   * Select the drop-down arrow to reveal the **Paste without children** option. A copy of the original page will be created at this location; child-pages will not be copied.
 
    >[!NOTE]
    >
-   >If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists `winter` will become `winter1`.
+   >If you copy the page to a location where a page with the same name as the original already exists, the system will automatically generate a variation of the name by appending a number. For example, if `winter` already exists `winter` will become `winter1`.
 
 ### Moving or Renaming a Page {#moving-or-renaming-a-page}
 
@@ -315,7 +315,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
-   This will open the move page wizard.
+   This opens the move page wizard.
 
 1. From the **Rename** stage of the wizard you can either:
 
@@ -329,7 +329,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    >[!NOTE]
    >
-   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists `winter` will become `winter1`.
+   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example, if `winter` already exists `winter` will become `winter1`.
 
 1. From the **Select Destination** stage of the wizard you can either:
 
@@ -348,7 +348,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    >[!NOTE]
    >
-   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example if `winter` already exists `winter` will become `winter1`.
+   >If you move a page to a location where a page with the same name already exists, the system will automatically generate a variation of the name by appending a number. For example, if `winter` already exists `winter` will become `winter1`.
 
 1. If the page is linked to or referenced, or has been published, then the details will be listed in the **Adjust/Republish** step.
 
@@ -384,7 +384,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
 
 >[!NOTE]
 >
->For further information about asynchronous job processing and how to configure the limit for page move/rename actions, please see the [Asynchronous Jobs](/help/sites-administering/asynchronous-jobs.md) document in the Administration user guide.
+>For further information about asynchronous job processing and how to configure the limit for page move/rename actions, see the [Asynchronous Jobs](/help/sites-administering/asynchronous-jobs.md) document in the Administration user guide.
 
 >[!NOTE]
 >

@@ -144,7 +144,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
 
    ![Create a drop-down node](assets/dropdown-node.png)
 
-1. Package the content node and embed the .jar file at a particular location (for example /apps/myfolder/demo/install/). Deploy the same file on the server.
+1. Package the content node and embed the .jar file at a particular location (for example, /apps/myfolder/demo/install/). Deploy the same file on the server.
 1. Create an adaptive form and add two drop-down lists, Country and State to it. The Country list can include the names of countries. The State list can dynamically populate the names of states for the country you select in the first list.
 
    Add the names of countries to display in Country list. In the State list, add a script to populate it based on the name of the country in the Country list.

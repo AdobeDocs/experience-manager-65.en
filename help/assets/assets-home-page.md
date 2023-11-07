@@ -60,7 +60,7 @@ This section appears below the Welcome section and displays out-of-the-box widge
 * Recent
 * Discover
 
-**Activity**: Under this section, the **[!UICONTROL My Activity]** widget displays recent activities performed by the logged-in user with assets (including assets without renditions), for example asset uploads, downloads, asset creation, edits, comments, annotations, and shares.
+**Activity**: Under this section, the **[!UICONTROL My Activity]** widget displays recent activities performed by the logged-in user with assets (including assets without renditions), for example, asset uploads, downloads, asset creation, edits, comments, annotations, and shares.
 
 **Recent**: The **[!UICONTROL Recently Viewed]** widget under this section displays recently accessed entities by the logged-in user, including folders, collections, and projects.
 
@@ -68,7 +68,7 @@ This section appears below the Welcome section and displays out-of-the-box widge
 
 To enable purging of user activity data, enable the **[!UICONTROL DAM Event Purge Service]** from Configuration Manager. After you enable this service, activities of the logged-in user that exceed a specified number are deleted by the system.
 
-The Welcome screen provides easy navigational aids, for example icons on the toolbar to access folders, collections, and catalogs.
+The Welcome screen provides easy navigational aids, for example, icons on the toolbar to access folders, collections, and catalogs.
 
 >[!NOTE]
 >

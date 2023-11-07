@@ -42,7 +42,7 @@ AEM 6.5 is a flexible tool for the headless implementation model by offering thr
 
 ## Your First Steps with AEM Headless {#first-steps}
 
-There are a number of resources available for your to get started with AEM's headless features. They are intended for different use cases, but all give a solid overview of AEM's headless features.
+There are several resources available for your to get started with AEM's headless features. They are intended for different use cases, but all give a solid overview of AEM's headless features.
 
 |Resource|Description|Type|Audience|Est. Time|
 |---|---|---|---|---|

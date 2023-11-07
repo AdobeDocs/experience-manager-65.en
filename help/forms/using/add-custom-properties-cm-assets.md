@@ -42,7 +42,7 @@ This scenario shows how you can add a custom property to all the asset types (te
 Complete the following steps to add a custom property to all the asset types and letters:
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named css with path/structure similar to the css folder (located in ccrui folder) using the following steps:
+1. In the apps folder, create a folder named css with path/structure similar to the css folder (in ccrui folder) using the following steps:
 
     1. Right-click the items folder at the following path and select **Overlay Node**:
 
@@ -185,7 +185,7 @@ This scenario shows how you can add a custom tab, Recipients, to all the asset t
 Using the following procedure, you can add a tab with a field to all your assets:
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named cmmetadataproperties with path/structure similar to the cmmetadataproperties folder (located in content folder) using the following steps:
+1. In the apps folder, create a folder named cmmetadataproperties with path/structure similar to the cmmetadataproperties folder (in content folder) using the following steps:
 
     1. Right-click the cmmetadataproperties folder at the following path and select **Overlay Node**:
 
@@ -842,7 +842,7 @@ To allow indexing of custom properties, complete the following steps:
 ## Change default view of the search page {#change-default-view-of-the-search-page}
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named list with path/structure similar to the list folder located in /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
+1. In the apps folder, create a folder named list with path/structure similar to the list folder in /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
 
     1. Right-click the items folder at the following path and select **Overlay Node**:
 
@@ -886,7 +886,7 @@ To allow indexing of custom properties, complete the following steps:
 >These steps change the default view of all consoles such as Forms and Documents, Assets, and Sites.
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named list with path/structure similar to the list folder located in:
+1. In the apps folder, create a folder named list with path/structure similar to the list folder in:
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
@@ -929,7 +929,7 @@ To allow indexing of custom properties, complete the following steps:
 
 To show or hide the custom properties, complete the following steps:
 
-1. Under the custom property node, such as geographicallocation, create a new node with name "granite:rendercondition" of type "nt:unstructured."
+1. Under the custom property node, such as geographicallocation, create a node with name "granite:rendercondition" of type "nt:unstructured."
 1. Add the following property to the node and click **Save All**:
 
    <table>

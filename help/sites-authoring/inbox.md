@@ -61,7 +61,7 @@ To open the AEM notification inbox:
 
 1. Click/tap on the indicator in the toolbar.
 
-1. Select **View all**. The **AEM Inbox** will open. The inbox shows items from workflows, projects and tasks.
+1. Select **View all**. The **AEM Inbox** opens. The inbox shows items from workflows, projects and tasks.
 1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
 
    For both views you can also define [View Settings](#inbox-view-settings); the options available are dependent on the current view.
@@ -155,7 +155,7 @@ The Admin Control option is visible only to the members of the `administrators` 
 >Although it is possible to select more than one item, actions can only be taken on one item at a time.
 
 
-1. To take an action on an item, select the thumbnail for the appropriate item. Icons for the actions that are applicable to that item will be shown in the toolbar:
+1. To take an action on an item, select the thumbnail for the appropriate item. Icons for the actions that are applicable to that item are shown in the toolbar:
 
    ![wf-84](assets/wf-84.png)
 
@@ -185,7 +185,7 @@ The Admin Control option is visible only to the members of the `administrators` 
     * an action wizard will be started.
     * a documentation page will be opened.
 
-   For example, **Re-assign** will open a dialog:
+   For example, **Re-assign** opens a dialog:
 
    ![wf-85](assets/wf-85.png)
 
@@ -217,7 +217,7 @@ From the inbox you can create tasks:
 
     * **Advanced**
 
-        * **Name**: this will be used to form the URL; if blank it will be based on the **Title**.
+        * **Name**: this is used to form the URL; if blank it will be based on the **Title**.
 
    ![wf-87](assets/wf-87.png)
 

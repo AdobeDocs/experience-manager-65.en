@@ -51,7 +51,7 @@ Before you can programmatically perform a Forms service Client API operation, yo
 
 **Set usage rights run-time options**
 
-You must set usage rights run-time options to render a rights-enabled form. You must also specify the alias of the credential that is used to apply usage rights to a form. After you specify the alias value, you specify each usage right to apply to the form.
+Set usage rights run-time options to render a rights-enabled form. You must also specify the alias of the credential that is used to apply usage rights to a form. After you specify the alias value, you specify each usage right to apply to the form.
 
 **Render a rights-enabled form**
 

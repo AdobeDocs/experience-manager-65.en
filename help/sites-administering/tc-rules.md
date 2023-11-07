@@ -154,7 +154,7 @@ From here, you can **Add Context**. This lets you add a path.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Then you need to select your context and then click **Edit**. This will open the Translation Rules Editor.
+Then you need to select your context and then click **Edit**. This opens the Translation Rules Editor.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
@@ -186,7 +186,7 @@ In the UI, you can check/uncheck **Inherit** in the **Properties** tab.
 
 In the UI, you can check/uncheck **Translate** in the **Properties** tab.
 
-**updateDestinationLanguage** This attribute is used for properties that do not have text but language codes, for example jcr:language. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
+**updateDestinationLanguage** This attribute is used for properties that do not have text but language codes, for example, jcr:language. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
 
 In the UI, you can check/uncheck **Translate** in the **Properties** tab, but for the specific properties that have language codes as value.
 

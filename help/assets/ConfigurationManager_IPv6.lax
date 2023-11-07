@@ -17,7 +17,7 @@ lax.class.path=..\\lib\\adobe-lcm-bootstrapper.jar;lax.jar
 
 #   LAX.COMMAND.LINE.ARGS
 #   ---------------------
-#   what will be passed to the main method -- be sure to quote arguments with spaces in them
+#   what are passed to the main method -- be sure to quote arguments with spaces in them
 
 lax.command.line.args=..\\lib\\adobe-lcm.jar;..\\lib\\serializer-2.7.2.jar;..\\lib\\xalan-2.7.2.jar;..\\lib\\xercesImpl-2.12.0.jar;..\\lib\\xml-apis-2.7.2.jar;..\\lib\\commons-net-1.4.1.jar;..\\lib\\adobe-bootstrapper-client.jar;..\\lib\\adobe-truststore-api.jar;..\\lib\\cryptojcommon-6.2.5.0.2.jar;..\\lib\\certj-6.2.4.jar;..\\lib\\ant\\ant-1.6.5.jar;..\\lib\\ant\\ant-launcher-1.6.5.jar;..\\lib\\ant\\ant-trax-1.6.5.jar;..\\lib\\ant\\ant-xalan1-1.6.5.jar;..\\..\\sdk\\client-libs\\common\\adobe-livecycle-client.jar;..\\..\\sdk\\client-libs\\common\\adobe-applicationmanager-client-sdk.jar;..\\..\\sdk\\client-libs\\common\\adobe-usermanager-client.jar;..\\..\\sdk\\client-libs\\common\\adobe-truststore-client.jar;..\\..\\sdk\\client-libs\\thirdparty\\axis-1.4.1.1.jar;..\\..\\sdk\\client-libs\\thirdparty\\jaxrpc-api-1.1.jar;..\\..\\sdk\\client-libs\\thirdparty\\saaj-1.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\xercesImpl-2.12.0.jar;..\\..\\sdk\\client-libs\\thirdparty\\activation-1.0.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-codec-1.4.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-collections-3.2.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-discovery-0.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-logging-1.0.4.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-httpclient-3.1.jar;..\\sdk\\client-libs\\thirdparty\\commons-io-2.6.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-lang-2.4.jar;..\\..\\sdk\\client-libs\\thirdparty\\dom3-xml-apis-2.5.0.jar;..\\..\\sdk\\client-libs\\thirdparty\\jaxen-1.1.1.jar;..\\..\\sdk\\client-libs\\thirdparty\\log4j-1.2.14.jar;..\\..\\sdk\\client-libs\\thirdparty\\mail-1.4.jar;..\\..\\sdk\\client-libs\\thirdparty\\wsdl4j-1.5.1.jar;..\\..\\sdk\\client-libs\\thirdparty\\xalan-2.7.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\xbean-2.3.0.jar;..\\sdk\\client-libs\\thirdparty\\jacorb.jar;..\\..\\sdk\\client-libs\\common\\adobe-application-remote-client.jar;..\\..\\sdk\\client-libs\\common\\adobe-repository-client.jar -guiMode
 
@@ -60,7 +60,7 @@ lax.main.class=com.adobe.livecycle.lcm.bootstrap.LCMBootStrapper
 
 #   LAX.MAIN.METHOD
 #   ---------------
-#   the method in the main class that will be invoked
+#   the method in the main class that is invoked
 
 lax.main.method=main
 

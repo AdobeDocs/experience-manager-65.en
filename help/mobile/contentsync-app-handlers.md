@@ -151,7 +151,7 @@ AEM properties are those that are name-spaced with "cq", "sling" or "jcr". Other
 
     * another ContentSync config
     * to a Content Package (will be use its phonegap-exportTemplate property to find its ContentSync config)
-    * to a Mobile Resource (app-content's will be found under that resource and, if those content packages have a pge-includeInBuild property which is true, the phonegap-exportTemplate will be used to find its ContentSync config)
+    * to a Mobile Resource (app-content's will be found under that resource and, if those content packages have a pge-includeInBuild property which is true, the phonegap-exportTemplate is used to find its ContentSync config)
 
 * ***autoCreateFirstUpdateBeforeImport - Boolean*** - if true, create an initial **update** in the target config before importing if once does not exist already
 

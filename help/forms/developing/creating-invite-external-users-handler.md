@@ -26,7 +26,7 @@ To develop an Invite External Users Handler, you must perform the following step
 
 ## Setting up your development environment {#setting-up-development-environment}
 
-To set up your development environment, you must create a new Java project, such as an Eclipse project. The version of Eclipse that is supported is `3.2.1` or later.
+To set up your development environment, you must create a Java project, such as an Eclipse project. The version of Eclipse that is supported is `3.2.1` or later.
 
 The Rights Management SPI requires the `edc-server-spi.jar` file to be set in your project’s class path. If you do not reference this JAR file, you cannot use the Rights Management SPI in your Java project. This JAR file is installed with the AEM Forms SDK in the `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` folder.
 

@@ -308,9 +308,9 @@ For example, assume we have a SPA in which the application is rendered inside a 
 
 1. In the AEM app's page component body via two steps:
 
-   1. Create a new `body.html` for the page component.
+   1. Create a `body.html` for the page component.
 
-     ![Create a new body.html file](assets/external-spa-update-body.gif)
+     ![Create a body.html file](assets/external-spa-update-body.gif)
 
    1. Add the new root element in the new `body.html` file.
 
@@ -330,9 +330,9 @@ To enable editing within AEM for this example SPA, the following steps are requi
 
    * For our sample, we consider `wknd-spa-react/us/en` as the root of the SPA. This means that everything prior to that path is AEM only pages/content.
 
-1. Create a new page at the required level.
+1. Create a page at the required level.
 
-   * In this example, the page to be edited is `mydomain.com/test`. `test` is in the root path of the app. This needs to be preserved when creating the page in AEM as well. Therefore we can create a new page at the root level defined in the previous step.
+   * In this example, the page to be edited is `mydomain.com/test`. `test` is in the root path of the app. This needs to be preserved when creating the page in AEM as well. Therefore, you can create a page at the root level defined in the previous step.
    * The new page created must have the same name as the page to be edited. In this example for `mydomain.com/test`, the new page created must be `/path/to/aem/root/test`.
 
 1. Add helpers within SPA routing.

@@ -36,7 +36,7 @@ The following sections show how to pass a form design to the Output service usin
 
 The following sections show how to pass a form design within a `com.adobe.idp.Document` instance:
 
-* [Passing Documents located in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
+* [Passing Documents in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [Creating PDF Documents Using Fragments](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
 One consideration when deciding which technique to use is if you are getting the form design from another AEM Forms service, then pass it within a `com.adobe.idp.Document` instance. Both the *Passing Documents to the Output Service* and *Creating PDF Documents using Fragments* sections show how to get a form design from another AEM Forms service. The first section retrieves the form design from Content Services (deprecated). The second section retrieves the form design from the Assembler service.
@@ -51,7 +51,7 @@ You can accomplish these tasks by using the Output service:
 
 * [Creating PDF Documents](creating-document-output-streams.md#creating-pdf-documents)
 * [Creating PDF/A Documents](creating-document-output-streams.md#creating-pdf-a-documents)
-* [Passing Documents located in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
+* [Passing Documents in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [Creating PDF Documents Using Fragments](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 * [Printing to Files](creating-document-output-streams.md#printing-to-files)
 * [Sending Print Streams to Printers](creating-document-output-streams.md#sending-print-streams-to-printers)
@@ -99,7 +99,7 @@ The following JAR files must be added to your project's classpath:
 * adobe-utilities.jar (Required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (Required if AEM Forms is deployed on JBoss)
 
-if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you will need to replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
+if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you must replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
 
 **Create an Output Client object**
 
@@ -182,7 +182,7 @@ If the XDP file contains images (or other resources such as fragments), place th
 
 >[!NOTE]
 >
->To see a complete quick start that creates a PDF document by referencing an XDP located in a Forms application, see [Quick Start (EJB mode): Creating a PDF document based on an application XDP file using the Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
+>To see a complete quick start that creates a PDF document by referencing an XDP in a Forms application, see [Quick Start (EJB mode): Creating a PDF document based on an application XDP file using the Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
 
 **Retrieve the results of the operation**
 
@@ -259,7 +259,7 @@ Create a PDF document by using the Output API (Java):
 
    >[!NOTE]
    >
-   >You can also create a PDF document by invoking the `OutputClient` object's `generatePDFOutput2` method. (See [Passing Documents located in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >You can also create a PDF document by invoking the `OutputClient` object's `generatePDFOutput2` method. (See [Passing Documents in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Retrieve the results of the operation.
 
@@ -352,7 +352,7 @@ Create a PDF document by using the Output API (web service):
 
    >[!NOTE]
    >
-   >You can also create a PDF document by invoking the `OutputClient` object's `generatePDFOutput2` method. (See [Passing Documents located in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >You can also create a PDF document by invoking the `OutputClient` object's `generatePDFOutput2` method. (See [Passing Documents in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Retrieve the results of the operation.
 
@@ -421,7 +421,7 @@ The following JAR files must be added to your project's class path:
 * adobe-utilities.jar (Required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (Required if AEM Forms is deployed on JBoss)
 
-if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you will need to replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
+if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you must replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
 
 **Create an Output Client object**
 
@@ -517,7 +517,7 @@ Create a PDF/A document by using the Output API (Java):
 
    >[!NOTE]
    >
-   >You can also create a PDF /A document by invoking the `OutputClient` object's `generatePDFOutput`2 method. (See [Passing Documents located in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >You can also create a PDF /A document by invoking the `OutputClient` object's `generatePDFOutput`2 method. (See [Passing Documents in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Retrieve the results of the operation.
 
@@ -603,7 +603,7 @@ Create a PDF/A document by using the Output API (web service):
 
    >[!NOTE]
    >
-   >You can also create a PDF /A document by invoking the `OutputClient` object's `generatePDFOutput`2 method. (See [Passing Documents located in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >You can also create a PDF /A document by invoking the `OutputClient` object's `generatePDFOutput`2 method. (See [Passing Documents in Content Services (deprecated) to the Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Retrieve the results of the operation.
 
@@ -620,9 +620,9 @@ Create a PDF/A document by using the Output API (web service):
 
 [Invoking AEM Forms using SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Passing Documents located in Content Services (deprecated) to the Output Service {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
+## Passing Documents in Content Services (deprecated) to the Output Service {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
-The Output service renders a non-interactive PDF form that is based on a form design that is typically saved as an XDP file and created in Designer. You can pass a `com.adobe.idp.Document` object that contains the form design to the Output service. The Output service then renders the form design located in the `com.adobe.idp.Document` object.
+The Output service renders a non-interactive PDF form that is based on a form design that is typically saved as an XDP file and created in Designer. You can pass a `com.adobe.idp.Document` object that contains the form design to the Output service. The Output service then renders the form design in the `com.adobe.idp.Document` object.
 
 An advantage of passing a `com.adobe.idp.Document` object to the Output service is that other AEM Forms service operations return a `com.adobe.idp.Document` instance. That is, you can get a `com.adobe.idp.Document` instance from another service operation and render it. For example, assume that an XDP file is stored in a Content Services (deprecated) node named `/Company Home/Form Designs`, as shown in the following illustration.
 
@@ -809,25 +809,25 @@ Pass a document retrieved from Content Services (deprecated) by using the Output
 
 [Invoking AEM Forms using MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## Passing Documents located in the Repository to the Output Service {#passing-documents-located-in-the-repository-to-the-output-service}
+## Passing Documents in the Repository to the Output Service {#passing-documents-located-in-the-repository-to-the-output-service}
 
-The Output service renders a non-interactive PDF form that is based on a form design that is typically saved as an XDP file and created in Designer. You can pass a `com.adobe.idp.Document` object that contains the form design to the Output service. The Output service then renders the form design located in the `com.adobe.idp.Document` object.
+The Output service renders a non-interactive PDF form that is based on a form design that is typically saved as an XDP file and created in Designer. You can pass a `com.adobe.idp.Document` object that contains the form design to the Output service. The Output service then renders the form design in the `com.adobe.idp.Document` object.
 
 An advantage of passing a `com.adobe.idp.Document` object to the Output service is that other AEM Forms service operations return a `com.adobe.idp.Document` instance. That is, you can get a `com.adobe.idp.Document` instance from another service operation and render it. For example, assume that an XDP file is stored in the AEM Forms repository, as shown in the following illustration.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
-The *FormsFolder* folder is a user-defined location in the AEM Forms repository (this location is an example and does not exist by default). In this example, a form design named Loan.xdp is located in this folder. In addition to the form design, other form collateral such as images can be stored in this location. The path to a resource located in the AEM Forms repository is:
+The *FormsFolder* folder is a user-defined location in the AEM Forms repository (this location is an example and does not exist by default). In this example, a form design named Loan.xdp is in this folder. In addition to the form design, other form collateral such as images can be stored in this location. The path to a resource in the AEM Forms repository is:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
 You can programmatically retrieve Loan.xdp from the AEM Forms repository and pass it to the Output service within a `com.adobe.idp.Document` object.
 
-You can create a PDF based on an XDP file located in the repository using one of two ways. You can pass the XDP loction by reference or you can programmatically retrieve the XDP from the repository and pass it to the Output service within an XDP file.
+You can create a PDF based on an XDP file in the repository using one of two ways. You can pass the XDP loction by reference or you can programmatically retrieve the XDP from the repository and pass it to the Output service within an XDP file.
 
 [Quick Start (EJB mode): Creating a PDF document based on an application XDP file using the Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) (shows how to pass the location of the XDP file by reference).
 
-[Quick Start (EJB mode): Passing a document located in the AEM Forms Repository to the Output service using the Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (shows how to programmatically retrieve the XDP file from the AEM Forms Repository and pass it to the Output service within a `com.adobe.idp.Document` instance). (This section discusses how to perform this task)
+[Quick Start (EJB mode): Passing a document in the AEM Forms Repository to the Output service using the Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (shows how to programmatically retrieve the XDP file from the AEM Forms Repository and pass it to the Output service within a `com.adobe.idp.Document` instance). (This section discusses how to perform this task)
 
 >[!NOTE]
 >
@@ -871,7 +871,7 @@ You can save the non-interactive form as a PDF file. The form can be viewed in A
 
 **See also**
 
-[Pass documents located in the Repository to the Output Service using the Java API](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Pass documents in the Repository to the Output Service using the Java API](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -881,7 +881,7 @@ You can save the non-interactive form as a PDF file. The form can be viewed in A
 
 ResourceRepositoryClient
 
-### Pass documents located in the Repository to the Output Service using the Java API {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
+### Pass documents in the Repository to the Output Service using the Java API {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 Pass a document retrieved from the Repository by using the Output service and Repository API (Java):
 
@@ -922,7 +922,7 @@ Pass a document retrieved from the Repository by using the Output service and Re
 
 [Summary of steps](creating-document-output-streams.md#summary-of-steps)
 
-[Quick Start (EJB mode): Passing a document located in the AEM Forms Repository to the Output service using the Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Quick Start (EJB mode): Passing a document in the AEM Forms Repository to the Output service using the Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -930,7 +930,7 @@ Pass a document retrieved from the Repository by using the Output service and Re
 
 ## Creating PDF Documents Using Fragments {#creating-pdf-documents-using-fragments}
 
-You can use the Output and Assembler services to create an output stream, such as a PDF document, that is based on fragments. The Assembler service assembles an XDP document that is based on fragments located in multiple XDP files. The assembled XDP document is passed to the Output service, which creates a PDF document. Although this workflow shows a PDF document being generated, the Output service can generate other output types, such as ZPL, for this workflow. A PDF document is used for discussion purposes only.
+You can use the Output and Assembler services to create an output stream, such as a PDF document, that is based on fragments. The Assembler service assembles an XDP document that is based on fragments in multiple XDP files. The assembled XDP document is passed to the Output service, which creates a PDF document. Although this workflow shows a PDF document being generated, the Output service can generate other output types, such as ZPL, for this workflow. A PDF document is used for discussion purposes only.
 
 The following illustration shows this workflow.
 
@@ -1176,7 +1176,7 @@ The following JAR files must be added to your project's class path:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss)
 
-if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you will need to replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed. (See [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
+if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you must replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed. (See [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 
 **Create an Output Client object**
 
@@ -1235,7 +1235,7 @@ Print to a file using the Output API (Java):
 1. Set print run-time options required to print to a file.
 
     * Create a `PrintedOutputOptionsSpec` object by using its constructor.
-    * Specify the file by invoking the PrintedOutputOptionsSpec object's `setFileURI` method and passing a string value that represents the name and location of the file. For example, if you want the Output service to print to a PostScript file named MortgageForm.ps located in C:\Adobe, specify C:\\Adobe\MortgageForm.ps.
+    * Specify the file by invoking the PrintedOutputOptionsSpec object's `setFileURI` method and passing a string value that represents the name and location of the file. For example, if you want the Output service to print to a PostScript file named MortgageForm.ps in C:\Adobe, specify C:\\Adobe\MortgageForm.ps.
     * Specify the number of copies to print by invoking the `PrintedOutputOptionsSpec` object's `setCopies` method and passing an integer value that represents the number of copies.
 
 1. Print the print stream to a file.
@@ -1307,7 +1307,7 @@ Print to a file using the Output API (web service):
 1. Set print run-time options required to print to a file.
 
     * Create a `PrintedOutputOptionsSpec` object by using its constructor.
-    * Specify the file by assigning a string value that represents the location and name of the file to the `PrintedOutputOptionsSpec` object's `fileURI` data member. For example, if you want the Output service to print to a PostScript file named *MortgageForm.ps* located in C:\Adobe, specify C:\\Adobe\MortgageForm.ps.
+    * Specify the file by assigning a string value that represents the location and name of the file to the `PrintedOutputOptionsSpec` object's `fileURI` data member. For example, if you want the Output service to print to a PostScript file named *MortgageForm.ps* in C:\Adobe, specify C:\\Adobe\MortgageForm.ps.
     * Specify the number of copies to print by assigning an integer value that represents the number of copies to the `PrintedOutputOptionsSpec` object's `copies` data members.
 
 1. Print the print stream to a file.
@@ -1381,7 +1381,7 @@ The following JAR files must be added to your project's class path:
 * adobe-utilities.jar (Required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (Required if AEM Forms is deployed on JBoss)
 
-if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you will need to replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
+if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you must replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
 
 **Create an Output Client object**
 
@@ -1721,7 +1721,7 @@ The following JAR files must be added to your project's class path:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss)
 
-if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you will need to replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
+if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you must replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
 
 **Create an Output Client object**
 
@@ -1735,7 +1735,7 @@ An XML element must exist for every form field that you want to populate with da
 
 **Set PDF run-time options**
 
-You must set the following run-time options for the Output service to successfully create multiple files based on an XML data source:
+Set the following run-time options for the Output service to successfully create multiple files based on an XML data source:
 
 * **Many Files**: Specifies whether the Output service creates a single document or multiple documents. You can specify true or false. To create a separate document for each data record in the XML data source, specify true.
 * **File URI**: Specifies the location of the files that the Output service generates. For example, assume that you specify C:\\Adobe\forms\Loan.pdf. In this situation, the Output service creates a file named Loan.pdf and places the file in the C:\\Adobe\forms folder. When there are multiple files, the file names are Loan0001.pdf, Loan0002.pdf, Loan0003.pdf and so on. If you specify a file location, the files are placed on the server, not the client computer.
@@ -1929,7 +1929,7 @@ Create multiple PDF files by using the Output API (web service):
 
 ## Creating Search Rules {#creating-search-rules}
 
-You can create search rules that result in the Output service examining input data and using different form designs based on the data content to generate output. For example, if the text *mortgage* is located within the input data, then the Output service can use a form design named Mortgage.xdp. Likewise, if the text *automobile* is located in the input data, then the Output service can use a form design that is saved as AutomobileLoan.xdp. Although the Output service can generate different output types, this section assumes that the Output service generates a PDF file. The following diagram shows the Output service generating a PDF file by processing an XML data file and using one of many form designs.
+You can create search rules that result in the Output service examining input data and using different form designs based on the data content to generate output. For example, if the text *mortgage* is located within the input data, then the Output service can use a form design named Mortgage.xdp. Likewise, if the text *automobile* is in the input data, then the Output service can use a form design that is saved as AutomobileLoan.xdp. Although the Output service can generate different output types, this section assumes that the Output service generates a PDF file. The following diagram shows the Output service generating a PDF file by processing an XML data file and using one of many form designs.
 
 In addition, the Output service is able to generate document packages, where multiple records are provided in the data set and each record is matched to a form design and a single document is generated made up of multiple form designs.
 
@@ -1964,7 +1964,7 @@ The following JAR files must be added to your project's classpath:
 * adobe-utilities.jar (Required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (Required if AEM Forms is deployed on JBoss)
 
-if AEM Forms is deployed on a supported J2EE application server that is not JBoss, then you will need to replace adobe-utilities.jar and jbossall-client.jar with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
+if AEM Forms is deployed on a supported J2EE application server that is not JBoss, then you must replace adobe-utilities.jar and jbossall-client.jar with JAR files that are specific to the J2EE application server on which AEM Forms is deployed.
 
 **Create an Output Client object**
 
@@ -1980,7 +1980,7 @@ To define search rules, you define one or more text patterns that the Output ser
 
 >[!NOTE]
 >
->If text patterns are not located, then the default form is used. Make sure that all form designs that you use are located in the content root.
+>If text patterns are not located, then the default form is used. Make sure that all form designs that you use are in the content root.
 
 **Set PDF run-time options**
 
@@ -2221,7 +2221,7 @@ The following JAR files must be added to your project's class path:
 * adobe-utilities.jar (required if AEM Forms is deployed on JBoss)
 * jbossall-client.jar (required if AEM Forms is deployed on JBoss)
 
-if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you will need to replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+if AEM Forms is deployed on a supported J2EE application server that is not JBoss, you must replace the adobe-utilities.jar and jbossall-client.jar files with JAR files that are specific to the J2EE application server on which AEM Forms is deployed. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Create an Output Client object**
 

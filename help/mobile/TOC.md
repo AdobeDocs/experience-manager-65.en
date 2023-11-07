@@ -57,7 +57,7 @@ role: User
   + [Editing App Metadata](phonegap-editmetadata.md)
   + [App definitions](phonegap-app-definitions.md)
   + [Creating and Managing App Content](phonegap-manage-app-content.md)
-  + [Creating a new AEM Mobile app using create wizard](phonegap-create-new-app.md)
+  + [Creating an AEM Mobile app using create wizard](phonegap-create-new-app.md)
   + [Authoring Mobile Applications](phonegap-authoring-apps.md)
   + [Manage App Tile](phonegap-app-details-tile.md)
   + [AEM Mobile content personalization](phonegap-aem-mobile-content-personalization.md)

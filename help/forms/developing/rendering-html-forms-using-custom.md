@@ -1,15 +1,11 @@
 ---
 title: Rendering HTML Forms Using Custom CSS Files
-seo-title: Rendering HTML Forms Using Custom CSS Files
 description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
-seo-description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
-uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
 ---
@@ -19,7 +15,7 @@ exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
 
 The Forms service renders HTML forms in response to an HTTP request from a web browser. When rendering an HTML form, the Forms service can reference a custom CSS file. You can create a custom CSS file to meet your business requirements and reference that CSS file when using the Forms service to render HTML forms.
 
-The Forms service silently parses the custom CSS file. That is, the Forms service does not report errors that may be encountered if the custom CSS file does not comply with CSS standards. In this situation, the Forms service ignores the style and continues with the remaining styles located in the CSS file.
+The Forms service silently parses the custom CSS file. That is, the Forms service does not report errors that may be encountered if the custom CSS file does not comply with CSS standards. In this situation, the Forms service ignores the style and continues with the remaining styles in the CSS file.
 
 The following list specifies styles that are supported in a custom CSS file:
 
@@ -93,7 +89,7 @@ Render an HTML form that uses a custom CSS file by using the Forms API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-forms-client.jar, in your Java project's class path.
 
 1. Create a Forms Java API object
 
@@ -103,11 +99,11 @@ Render an HTML form that uses a custom CSS file by using the Forms API (Java):
 1. Reference the CSS file
 
     * Create an `HTMLRenderSpec` object by using its constructor.
-    * To render the HTML form that uses a custom CSS file, invoke the `HTMLRenderSpec` object’s `setCustomCSSURI` method and pass a string value that specifies the location and name of the CSS file.
+    * To render the HTML form that uses a custom CSS file, invoke the `HTMLRenderSpec` object's `setCustomCSSURI` method and pass a string value that specifies the location and name of the CSS file.
 
 1. Render an HTML form
 
-   Invoke the `FormsServiceClient` object’s `(Deprecated) (Deprecated) renderHTMLForm` method and pass the following values:
+   Invoke the `FormsServiceClient` object's `(Deprecated) (Deprecated) renderHTMLForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
     * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`.
@@ -121,13 +117,13 @@ Render an HTML form that uses a custom CSS file by using the Forms API (Java):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method.
+    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object 's `getOutputContent` method.
     * Get the content type of the `com.adobe.idp.Document` object by invoking its `getContentType` method.
-    * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
-    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.h\ttp.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
-    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument.
-    * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
+    * Set the `javax.servlet.http.HttpServletResponse` object's content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
+    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.h\ttp.HttpServletResponse` object's `getOutputStream` method.
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object's `getInputStream` method.
+    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object's `read` method and passing the byte array as an argument.
+    * Invoke the `javax.servlet.ServletOutputStream` object's `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
 
@@ -155,11 +151,11 @@ Render an HTML form that uses a custom CSS file by using the Forms API (web serv
 1. Reference the CSS file
 
     * Create an `HTMLRenderSpec` object by using its constructor.
-    * To render the HTML form that uses a custom CSS file, invoke the `HTMLRenderSpec` object’s `setCustomCSSURI` method and pass a string value that specifies the location and name of the CSS file.
+    * To render the HTML form that uses a custom CSS file, invoke the `HTMLRenderSpec` object's `setCustomCSSURI` method and pass a string value that specifies the location and name of the CSS file.
 
 1. Render an HTML form
 
-   Invoke the `FormsService` object’s `(Deprecated) renderHTMLForm` method and pass the following values:
+   Invoke the `FormsService` object's `(Deprecated) renderHTMLForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
     * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`.
@@ -179,13 +175,13 @@ Render an HTML form that uses a custom CSS file by using the Forms API (web serv
 
 1. Write the form data stream to the client web browser
 
-    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member.
-    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
+    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object's `value` data member.
+    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object's `getOutputContent` method.
     * Get the content type of the `BLOB` object by invoking its `getContentType` method.
-    * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
-    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
-    * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
+    * Set the `javax.servlet.http.HttpServletResponse` object's content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
+    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object's `getOutputStream` method.
+    * Create a byte array and populate it by invoking the `BLOB` object's `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
+    * Invoke the `javax.servlet.http.HttpServletResponse` object's `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
 

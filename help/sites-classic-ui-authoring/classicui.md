@@ -1,14 +1,10 @@
 ---
 title: Authoring in the Classic UI
-seo-title: Authoring in the Classic UI
-description: The Classic UI is the desktop-oriented user interface that as been available since CQ5. The following documentation on authoring is focused on this UI. The touch-based UI is the new standard user interface for AEM, designed for use on both touch and desktop devices. Please see the standard authoring documentation for further information.
-seo-description: The Classic UI is the desktop-oriented user interface that as been available since CQ5. The following documentation on authoring is focused on this UI. The touch-based UI is the new standard user interface for AEM, designed for use on both touch and desktop devices. Please see the standard authoring documentation for further information.
-uuid: 4ad03293-f36c-40ae-b668-c78ce326cf0d
+description: The Classic UI is the desktop-oriented user interface that as been available since CQ5. The following documentation on authoring is focused on this UI. The touch-based UI is the new standard user interface for AEM, designed for use on both touch and desktop devices. See the standard authoring documentation for more information.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: edc78306-5e83-45a4-a44b-ce0d21ff0f31
 exl-id: 05286d1e-4266-4521-bbb5-0bd51de4d552
 ---
 # Authoring in the Classic UI{#authoring-in-the-classic-ui}
@@ -17,7 +13,7 @@ exl-id: 05286d1e-4266-4521-bbb5-0bd51de4d552
 
 The Classic UI is the desktop-oriented user interface that as been available since CQ5 (the predecessory to AEM). The following documentation on authoring is focused on this UI.
 
-The touch-enabled UI is the new standard user interface for AEM, designed for use on both touch and desktop devices. Please see the [standard authoring documentation](/help/sites-authoring/author.md) for further information.
+The touch-enabled UI is the new standard user interface for AEM, designed for use on both touch and desktop devices. See the [standard authoring documentation](/help/sites-authoring/author.md) for more information.
 
 >[!NOTE]
 >

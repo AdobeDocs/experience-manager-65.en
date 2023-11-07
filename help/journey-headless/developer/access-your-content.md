@@ -256,14 +256,14 @@ To actually use the AEM GraphQL API in a query, we can use the two very basic Co
 
 As you can see, the CEO and Employees fields, reference the Person fragments.
 
-The fragment models will be used:
+The fragment models is used:
 
 * when creating the content in the Content Fragment Editor
 * to generate the GraphQL schemas that you will query
 
 ### Where to Test Your Queries {#where-to-test-your-queries}
 
-The queries can be entered in the [GraphiQL interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md), for example at:
+The queries can be entered in the [GraphiQL interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md), for example, at:
 
 * `http://localhost:4502/aem/graphiql.html`
 

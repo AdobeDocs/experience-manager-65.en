@@ -89,7 +89,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
    For the mortgage application example, configure the assign task step to use a Read-only adaptive form and display PDF Document once the task is complete. Also, select to user group allowed to approve the loan request. On the **Actions** tab, disable the **Submit** option. Create an **actionTaken** variable of String data type and specify the variable as the **Route Variable**. For example, actionTaken. Also, add the Approve and Reject routes. The routes are displayed as separate actions (buttons) in AEM Inbox. The workflow selects a branch based on the action (button) a user taps.
 
-   You can import the example package, available for download in the starting of the section, for the complete set of values of all the fields of the assign task step configured for example mortgage application.
+   You can import the example package, available for download in the starting of the section, for the complete set of values of all the fields of the assign task step configured for example, mortgage application.
 
 1. Drag-and-drop the OR Split component from step browser to the workflow model. The OR Split creates a split in the workflow, after which only one branch is active. This step enables you to introduce conditional processing paths into your workflow. You add workflow steps to each branch as required.
 
@@ -115,7 +115,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
    For the mortgage example, add a generate document of record, two assign task steps, and a sign document step to Branch 1 of the model, as displayed in the image below. One assign task step is to display and send **to be signed loan documents to the applicant** and another assign task component is **to display signed documents**. Also, add an assign task component to branch 2. It is activated, when a user taps Reject in AEM Inbox.
 
-   For the complete set of values of all the fields of the assign task steps, document of record step, and sign document step configured for example mortgage application, import the example package, available for download in the starting of this section.
+   For the complete set of values of all the fields of the assign task steps, document of record step, and sign document step configured for example, mortgage application, import the example package, available for download in the starting of this section.
 
    The workflow model is ready. You can launch the workflow through various methods. For details, see [Launch a Forms-centric workflow on OSGi](#launch).
 
@@ -271,9 +271,9 @@ Minimizing the number of workflow instances increases the performance of the wor
 
 ## Parameterize sensitive data to workflow variables and store in external data stores {#externalize-wf-variables}
 
-Any data that is submitted from adaptive forms to [!DNL Experience Manager] workflows can have PII (Personally Identifiable Information) or SPD (Sensitive Personal Data) of your business' end users. However, it is not mandatory to have your data stored in [!DNL Adobe Experience Manager] [JCR  repository](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). You can externalize the storage of end-user data into your managed data storage (for example Azure blob storage) by parameterizing the information into [workflow variables](/help/forms/using/variable-in-aem-workflows.md).
+Any data that is submitted from adaptive forms to [!DNL Experience Manager] workflows can have PII (Personally Identifiable Information) or SPD (Sensitive Personal Data) of your business' end users. However, it is not mandatory to have your data stored in [!DNL Adobe Experience Manager] [JCR  repository](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). You can externalize the storage of end-user data into your managed data storage (for example, Azure blob storage) by parameterizing the information into [workflow variables](/help/forms/using/variable-in-aem-workflows.md).
 
-In an [!DNL Adobe Experience Manager] Forms workflow, data is processed and passed through a series of workflow steps by way of workflow variables. These variables are named properties or key-value pairs that are stored in workflow instances metadata node; for example `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. These workflow variables can be externalized into a separate repository other than JCR and then processed by [!DNL Adobe Experience Manager] workflows. [!DNL Adobe Experience Manager] provides API `[!UICONTROL UserMetaDataPersistenceProvider]` to store the workflow variables in your managed external storage. To know more about Using workflow variables for customer owned datastores in [!DNL Adobe Experience Manager], see [Administer workflow variables for external datastores](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+In an [!DNL Adobe Experience Manager] Forms workflow, data is processed and passed through a series of workflow steps by way of workflow variables. These variables are named properties or key-value pairs that are stored in workflow instances metadata node; for example, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. These workflow variables can be externalized into a separate repository other than JCR and then processed by [!DNL Adobe Experience Manager] workflows. [!DNL Adobe Experience Manager] provides API `[!UICONTROL UserMetaDataPersistenceProvider]` to store the workflow variables in your managed external storage. To know more about Using workflow variables for customer owned datastores in [!DNL Adobe Experience Manager], see [Administer workflow variables for external datastores](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] provides the following [sample](https://github.com/adobe/workflow-variable-externalizer) to store variables from workflow metadata map to Azure blob storage, by using the API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). On the similar lines you can use the sample as a guide to use [UserMetaDataPersistenceProvider] API to externalize the workflow variables in any other data storage external to [!DNL Adobe Experience Manager] and manage the same.
 
 >[!NOTE]
@@ -307,11 +307,11 @@ The following are the purposes (and examples) of these properties:
 
 * **accountName** is the azure account where data has to be stored.
 
-* **endpointSuffix**, for example `core.windows.net`.
+* **endpointSuffix**, for example, `core.windows.net`.
 
 * **containerName** is the container in the account where the data needs to be stored. The sample assumes the container is existing.
 
-* **protocol**, for example `https` or `http`.
+* **protocol**, for example, `https` or `http`.
 
 1. Configure the workflow model in [!DNL Adobe Experience Manager]. To know how to configure the workflow model for an external storage, see [Configure the workflow model](#configure-aem-wf-model).
 
@@ -331,7 +331,7 @@ To configure an AEM Workflow model for an external data storage:
 
 ### Guidelines for AEM Workflows for external data storage {#guidelines-workflows-external-data-storage}
 
-The following are the guidelines when you are using [!DNL Adobe Experience Manager] workflows and storing data to external data storages (for example Microsoft Azure storage server):
+The following are the guidelines when you are using [!DNL Adobe Experience Manager] workflows and storing data to external data storages (for example, Microsoft Azure storage server):
 
 * Use variables to store data while defining input and output data files and attachments in workflow model steps. Do not select **[!UICONTROL Relative to Payload]** and **[!UICONTROL Available at an absolute path]** options. The **[!UICONTROL Relative to Payload]** and **[!UICONTROL Available at an absolute path]** options do not display automatically once you [configure an [!DNL Adobe Experience Manager] workflow model for external data storage](#configure-aem-wf-model).
 

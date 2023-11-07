@@ -27,7 +27,7 @@ When configuring workflow processes (customized and/or out-of-the-box), there ar
 
 To optimize high ingestion loads you can define a [workflow as transient](/help/sites-developing/workflows.md#transient-workflows).
 
-When a workflow is transient the runtime data related to the intermediate worksteps are not persisted in the JCR when they run (the output renditions are persisted of course).
+When a workflow is transient the runtime data related to the intermediate worksteps are not persisted in the JCR when they run (the output renditions are persisted).
 
 The advantages can include:
 
@@ -62,7 +62,7 @@ Additionally, there is a separate configuration for the **Granite Workflow Exter
 
 ### Configure Individual Job Queues {#configure-individual-job-queues}
 
-In some cases it is useful to configure individual job queues to control concurrent threads, or other queue options, on an individual job basis. You can add and configure an individual queue from the Web console via the **Apache Sling Job Queue Configuration** factory. To find the appropriate topic to list, execute your workflow’s model and look for it in the **Sling Jobs** console; for example, at `http://localhost:4502/system/console/slingevent`.
+In some cases it is useful to configure individual job queues to control concurrent threads, or other queue options, on an individual job basis. You can add and configure an individual queue from the Web console via the **Apache Sling Job Queue Configuration** factory. To find the appropriate topic to list, execute your workflow's model and look for it in the **Sling Jobs** console; for example, at `http://localhost:4502/system/console/slingevent`.
 
 Individual job queues can be added for transient workflows as well.
 
@@ -221,7 +221,7 @@ Workflow notifications are also stored in the repository according to type:
 
 ### Process Sessions {#process-sessions}
 
-As in any custom development, it is always recommended to use a user’s session when possible:
+As in any custom development, it is always recommended to use a user's session when possible:
 
 * for best adherence to security guidelines
 * to allow the system to manage opening and closing the session
@@ -253,7 +253,7 @@ Saving a session:
 
 >[!CAUTION]
 >
->If, despite the recommendations here, you do create your own jcr session, then it will need to be saved.
+>If, despite the recommendations here, you do create your own jcr session, then it must be saved.
 
 ### Minimize the Number/Scope of Launchers {#minimize-the-number-scope-of-launchers}
 
@@ -283,7 +283,7 @@ Workflows can carry a significant amount of overhead, both in terms of objects c
 
 An example of this would be a workflow that implements a business process on a set of content and then activates that content. It is better to create a custom workflow process that activates each of these nodes, rather than starting an **Activate Content** model for each of the content nodes that needs to be published. This approach will require additional development work, but is more efficient when executed than starting a separate workflow instance for each activation.
 
-Another example would be a workflow that processes a number of nodes, creates a workflow package, then activates said package. Rather than creating the package and then starting a separate workflow with the package as the payload, you can change the payload of your workflow in the step that creates the package and then call the step to activate the package within the same workflow model.
+Another example would be a workflow that processes several nodes, creates a workflow package, then activates said package. Rather than creating the package and then starting a separate workflow with the package as the payload, you can change the payload of your workflow in the step that creates the package and then call the step to activate the package within the same workflow model.
 
 ### Handler Advance {#handler-advance}
 

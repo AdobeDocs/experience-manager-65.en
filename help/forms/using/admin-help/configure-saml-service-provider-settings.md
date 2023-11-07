@@ -51,7 +51,7 @@ For an explanation of SAML, see [Security Assertion Markup Language (SAML) V2.0 
 
       `saml.sp.use.relaystate=true`
 
-    * Add the following custom property to configure the URL for the custom Java Server Pages (JSP), which will be used to render the registered list of identity providers. If you have not deployed a custom web application, it will use the default User Management page to render the list.
+    * Add the following custom property to configure the URL for the custom Java Server Pages (JSP), which is used to render the registered list of identity providers. If you have not deployed a custom web application, it will use the default User Management page to render the list.
 
     `saml.sp.discovery.url=/custom/custom.jsp`
 

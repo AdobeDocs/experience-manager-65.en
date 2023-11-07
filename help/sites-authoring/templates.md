@@ -10,13 +10,13 @@ exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 ---
 # Creating Page Templates{#creating-page-templates}
 
-When creating a page you must select a template, which will be used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.
+When creating a page you must select a template, which is used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.
 
 With the **Template Editor**, creating and maintaining templates is no longer a developer-only task. A type of power-user, who is called a **template author**, can be involved too. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without a development project.
 
 The **Templates Console** allows template authors to:
 
-* Create a new template or copy an existing template.
+* Create a template or copy an existing template.
 * Manage the lifecycle of the template.
 
 The **Template Editor** allows template authors to:
@@ -27,7 +27,7 @@ The **Template Editor** allows template authors to:
 
 This document explains how a **template author** can use the template console and editor to create and manage editable templates.
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.
+For detailed information about how editable templates work at a technical level, see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.
 
 >[!NOTE]
 >
@@ -45,13 +45,13 @@ For detailed information about how editable templates work at a technical level,
 
 The following points are important to consider before you start:
 
-* Creating a new template requires collaboration. For this reason the [Role](#roles) is indicated for each task.
+* Creating a template requires collaboration. For this reason the [Role](#roles) is indicated for each task.
 
 * Depending on how your instance is configured, it might be useful to be aware that AEM now provides [two basic types of template](/help/sites-authoring/templates.md#editable-and-static-templates). This does not impact how you actually [use a template to create a page](#using-a-template-to-create-a-page), but it does impact the type of template you can create and how a page relates to its template.
 
 ### Roles {#roles}
 
-Creating a new template using the **Templates Console** and the **Template Editor** requires collaboration between the following roles:
+Creating a template using the **Templates Console** and the **Template Editor** requires collaboration between the following roles:
 
 * **Admin**:
 
@@ -100,24 +100,24 @@ AEM now offers two basic types of templates:
     * They are [provided by your developers](/help/sites-developing/page-templates-static.md), so they cannot be created or edited by authors.
     * Are copied to create the new page, but no dynamic connection exists after this (though the template name is registered for information).
     * Use [Design Mode](/help/sites-authoring/default-components-designmode.md) to persist design properties.
-    * Because editing static templates is the exclusive task of a developer, please see the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md) for more information.
+    * Because editing static templates is the exclusive task of a developer, see the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md) for more information.
 
 By definition, the template console and template editor only allow creation and editing of editable templates. Therefore this document focuses exclusively on editable templates.
 
 ### Using a Template to Create a Page {#using-a-template-to-create-a-page}
 
-When using a template to [create a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page) there is no visible difference and no indication between static and editable templates. For the page author, the process is transparent.
+When using a template to [create a page](/help/sites-authoring/managing-pages.md#creating-a-new-page) there is no visible difference and no indication between static and editable templates. For the page author, the process is transparent.
 
 ## Creating and Managing Templates {#creating-and-managing-templates}
 
-When creating a new editable template you:
+When creating an editable template you:
 
 * Use the **Template** console. This is available in the **General** section of the **Tools** console.
 
     * Or directly at: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
-* [Create a new template](#creatinganewtemplateauthor), which will initially be empty
+* [Create a template](#creatinganewtemplateauthor), which is initially empty
 
 * [Define additional properties](#definingtemplatepropertiesauthor) for the template if required
 * [Edit the template](#editingtemplates) to define the:
@@ -167,7 +167,7 @@ A template folder should be created for your project to hold your project-specif
     * **Template Name**
     * **Description**
 
-1. Select **Create**. A confirmation will be shown, select **Open** to start [editing the template](#editingatemplate) or **Done** to return to the template console.
+1. Select **Create**. A confirmation is shown, select **Open** to start [editing the template](#editingatemplate) or **Done** to return to the template console.
 
    >[!NOTE]
    >
@@ -190,7 +190,7 @@ A template can have the following properties:
 
 * Description
 
-    * An optional description to provide more information about the template and its use, which can be seen for example in the **Create Page** wizard.
+    * An optional description to provide more information about the template and its use, which can be seen for example, in the **Create Page** wizard.
 
 To view and/or edit the properties:
 
@@ -241,7 +241,7 @@ A template can be enabled or disabled to make it available or unavailable in the
 
 1. In the **Templates Console**, select the template.
 1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
-1. You can now use your template when [creating a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editingatemplate) according to your requirements.
+1. You can now use your template when [creating a page](/help/sites-authoring/managing-pages.md#creating-a-new-page), though you likely want to [edit the template](#editingatemplate) according to your own requirements.
 
 >[!NOTE]
 >
@@ -374,7 +374,7 @@ In **Structure** mode of the template editor:
   >When you add an out-of-the-box **Title** component to the template it will contain the default text **structure**.
   >
   >
-  >If you change this, and add your own text, then this updated text will be used when a page is created from the template.
+  >If you change this, and add your own text, then this updated text is used when a page is created from the template.
   >
   >
   >If you leave the default text (structure) then the title will default to the name of the subsequent page.
@@ -455,7 +455,7 @@ In **Structure** mode of the template editor:
 
   On the **Main** tab, the most important settings of the component are defined.
 
-  For example for an image component the allowed widths can be defined along with enabling lazy loading.
+  For example, for an image component the allowed widths can be defined along with enabling lazy loading.
 
   If a setting allows for multiple configurations, click or tap the **Add** button to add another configuration.
 
@@ -471,7 +471,7 @@ In **Structure** mode of the template editor:
 
   The **Features** tab lets you enable or disable additional features of the component.
 
-  For example for an image component you can define the cropping proportions, allowed image orientations, and if uploads are allowed.
+  For example, for an image component you can define the cropping proportions, allowed image orientations, and if uploads are allowed.
 
   ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -549,7 +549,7 @@ In **Structure** mode of the template editor:
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
-  This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. If you have already added components/content to the container before unlocking it, then these will no longer be shown when in **Structure** mode but they will be shown in **Initial Content** mode. In **Structure Mode**, only the container component itself will be shown with its list of **Allowed Components**.
+  This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. If you have already added components/content to the container before unlocking it, then these are no longer shown when in **Structure** mode, but they are shown in **Initial Content** mode. In **Structure Mode**, only the container component itself is shown with its list of **Allowed Components**.
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -672,7 +672,7 @@ Using page properties, you can define the required client-side libraries by usin
 
 >[!NOTE]
 >
->While the template author can specify the page policy on the template, he or she will need to get details of the appropriate client-side libraries from the developer.
+>While the template author can specify the page policy on the template, they must get details of the appropriate client-side libraries from the developer.
 
 ### Editing a Template - Initial Page Properties - Author {#editing-a-template-initial-page-properties-author}
 

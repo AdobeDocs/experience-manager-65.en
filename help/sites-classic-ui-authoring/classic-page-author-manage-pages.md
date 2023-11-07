@@ -19,7 +19,7 @@ This section describes how to create and manage pages with Adobe Experience Mana
 
 ## Organizing your Website {#organizing-your-website}
 
-As an author you will need to organize your website within AEM. This involves creating and naming your content pages so that:
+As an author you must organize your website within AEM. This involves creating and naming your content pages so that:
 
 * you can easily find them on the author environment
 * visitors to your site can easily browse them on the publish environment
@@ -66,7 +66,7 @@ This structure can be viewed from the Websites console, which you can use to [na
 
 ### Page Naming Conventions {#page-naming-conventions}
 
-When creating a new page there are two keys fields:
+When creating a page there are two keys fields:
 
 * **[Title](#title)**:
 
@@ -78,7 +78,7 @@ When creating a new page there are two keys fields:
     * This is used to generate the URI.
     * User input for this field is optional. If not specified, the name is derived from the title.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
+When creating a page, AEM [validates the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
 
 Implementation and the list of characters allowed differs slightly according to UI (it is more extensive for the touch-enabled UI), but the minimum allowed is:
 
@@ -92,7 +92,7 @@ Use just these characters if you want to be sure of them being accepted/used (if
 
 #### Title {#title}
 
-If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. In both UIs a **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. For example:
+If you supply only a page **Title** when creating a page, AEM derives the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. In both UIs a **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. For example:
 
 | Title |Derived Name |
 |---|---|
@@ -101,7 +101,7 @@ If you supply only a page **Title** when creating a new page, AEM will derive th
 
 #### Name {#name}
 
-If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
+If you supply a page **Name** when creating a page, AEM [validates the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
 
 In the Classic UI you **cannot enter invalid characters** in the **Name** field.
 
@@ -116,7 +116,7 @@ In the Classic UI you **cannot enter invalid characters** in the **Name** field.
 
 ### Templates {#templates}
 
-In AEM, a template specifies a specialized type of page. A template will be used as the basis for any new page being created.
+In AEM, a template specifies a specialized type of page. A template is used as the basis for any new page being created.
 
 The template defines the structure of a page; including a thumbnail image and other properties. For example, you may have separate templates for product pages, sitemaps, and contact information. Templates are comprised of [components](#components).
 
@@ -149,7 +149,7 @@ Once you have created and opened a page you can [add content using the component
 
 Unless all pages have been created for you in advance, before you can start creating content, you must create a page:
 
-1. From the **Websites** console, select the level at which you want to create a new page.
+1. From the **Websites** console, select the level at which you want to create a page.
 
    In the following example, you are creating a page under the level **Products** - shown in the left pane; the right pane shows pages that already exist at the level under **Products**.
 
@@ -164,7 +164,7 @@ Unless all pages have been created for you in advance, before you can start crea
     * Provide a **Title**; this is displayed to the user.
     * Provide a **Name**; this is used to generate the URI. If not specified, the name will be derived from the title.
 
-        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and JCR.
+        * If you supply a page **Name** when creating a page, AEM [validates the name according to the conventions](/help/sites-developing/naming-conventions.md) imposesd by AEM and JCR.
         * In the classic UI you **cannot enter invalid characters** in the **Name** field.
 
     * Click the template you want to use to create the new page.
@@ -175,7 +175,7 @@ Unless all pages have been created for you in advance, before you can start crea
    >
    >See [Page Naming Conventions](#page-naming-conventions).
 
-   The minimum information required to create a new page is the **Title** and the template required.
+   The minimum information required to create a page is the **Title** and the template required.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -185,11 +185,11 @@ Unless all pages have been created for you in advance, before you can start crea
 
 1. Click **Create** to create the page. You return to the **Websites** console where you can see an entry for the new page.
 
-   The console provides information about the page (for example when it was last edited and by whom) which is updated as necessary.
+   The console provides information about the page (for example, when it was last edited and by whom) which is updated as necessary.
 
    >[!NOTE]
    >
-   >You can also create a page when you are editing an existing page. Using **Create Child Page **from the **Page** tab of the sidekick, will create a new page directly under the page being edited.
+   >You can also create a page when you are editing an existing page. Using **Create Child Page** from the **Page** tab of the sidekick creates a page directly under the page being edited.
 
 ### Opening a Page For Editing {#opening-a-page-for-editing}
 
@@ -229,7 +229,7 @@ When copying, you can copy either:
 
    >[!NOTE]
    >
-   >You can also use **Copy Page** from the **Page** tab of the sidekick. This will open a dialog where you can specify the destination, etc.
+   >You can also use **Copy Page** from the **Page** tab of the sidekick. This opens a dialog box where you can specify the destination, and so on.
 
 ### Moving or Renaming Page {#moving-or-renaming-page}
 
@@ -325,7 +325,7 @@ You can [lock/unlock a page](/help/sites-classic-ui-authoring/classic-page-autho
 
 1. Open the **Websites** console and navigate to the required location.
 1. In the **New...** menu (click the arrow next to **New...**), select **New Folder...**.
-1. The **Create Folder** dialog will open. Here you can enter the **Name** and **Title**:
+1. The **Create Folder** dialog box opens. Here you can enter the **Name** and **Title**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

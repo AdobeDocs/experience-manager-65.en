@@ -31,7 +31,7 @@ Overlaying a component is a method of making modifications to a default componen
 
 The overlay is accomplished by modifying a copy of the default component in the /**apps** directory, rather than modifying the original component in the /**libs** directory. The component is constructed with an identical relative path, except 'libs' is replaced with 'apps'.
 
-The /apps directory is the first place searched to resolve requests, and if not found, the default version located in the/libs directory is used.
+The /apps directory is the first place searched to resolve requests, and if not found, the default version in the/libs directory is used.
 
 The default component in the /libs directory must never be modified as future patches and upgrades are free to alter the /libs directory in any manner necessary while maintaining public interfaces.
 

@@ -30,7 +30,7 @@ The easiest way to do this is to give the **projects-users** group read access t
 
 ## Creating a Project {#creating-a-project}
 
-Follow these steps to create a new project.
+Follow these steps to create a project.
 
 1. In the **Projects** console, tap or click **Create** to open the **Create Project** wizard.
 1. Select a template and click **Next**. You can learn more about the standard project templates [here.](/help/sites-authoring/projects.md#project-templates)
@@ -66,15 +66,15 @@ To add items to a tile:
 
 1. In **Projects**, navigate to the project and click the downward chevron icon at the top-right of the tile you want to add an item to and select the appropriate option.
 
-   * The option depends on the type of tile. For example it may be **Create Task** for the **Tasks** tile or **Start Workflow** for the **Workflows** tile.
+   * The option depends on the type of tile. For example, it may be **Create Task** for the **Tasks** tile or **Start Workflow** for the **Workflows** tile.
 
    ![Tile chevron](assets/project-tile-create-task.png)
 
-1. Add the item to the tile as you would when creating a new tile. Project tiles are described [here.](/help/sites-authoring/projects.md#project-tiles)
+1. Add the item to the tile as you would when creating a tile. Project tiles are described [here.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Viewing Project Information {#viewing-project-info}
 
-The main purpose of projects is to group associated information in one place to make it more accessible and actionable. You have a number of ways to access this information.
+The main purpose of projects is to group associated information in one place to make it more accessible and actionable. You have several ways to access this information.
 
 ### Opening a Tile {#opening-a-tile}
 

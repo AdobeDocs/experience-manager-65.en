@@ -54,7 +54,7 @@ After you create the event table, run the **Update database structure wizard** t
 
 ### Extending the Seed Table {#extending-the-seed-table}
 
-In Adobe Campaign, tap/click **Add** to create a new extension of the **Seed addresses (nms)** table.
+In Adobe Campaign, select **Add** to create an extension of the **Seed addresses (nms)** table.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 

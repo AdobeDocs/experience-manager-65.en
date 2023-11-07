@@ -190,7 +190,7 @@ To configure the translation of your source pages into other languages, associat
 * The cloud configuration that connects AEM to your translation provider.
 * The translation integration framework that configures the details of the translation.
 
-Note that the translation integration framework cloud configuration identifies the cloud configuration to use for connecting to the service provider. When you associate a source page with a framework cloud configuration, the page must be associated with the service provider cloud configuration that the framework cloud configuration uses.
+The translation integration framework cloud configuration identifies the cloud configuration to use for connecting to the service provider. When you associate a source page with a framework cloud configuration, the page must be associated with the service provider cloud configuration that the framework cloud configuration uses.
 
 When you associate a page with a cloud configuration, the descendants of the page inherit the association. For example, if you associate the /content/geometrixx/en/products page with a Translation Integration Framework, the Products page and all pages below it are translated according to the framework.
 

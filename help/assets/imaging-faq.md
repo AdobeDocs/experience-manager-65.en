@@ -366,7 +366,7 @@ Smart Imaging determines if the conversion is beneficial or not. It returns the 
 
 ## Why does Device Pixel Ratio (dpr) functionality not work as expected with composite images? {#composite-images}
 
-If a composite image involves too many layers, dpr functionality may be impacted while using a position modifier. This issue is known and will be fixed in future releases of Smart Imaging. If other Smart Imaging functionality is not working as expected, you can create a support case to report the issue.
+If a composite image involves too many layers, dpr functionality may be impacted while using a position modifier. This issue is known and should be fixed in future releases of Smart Imaging. If other Smart Imaging functionality is not working as expected, you can create a support case to report the issue.
 
 ## Why does Smart Imaging PNG still convert to lossless WebP/AVIF? {#convert-to-lossless}
 

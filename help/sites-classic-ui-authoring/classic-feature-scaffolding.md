@@ -52,7 +52,7 @@ The body of the scaffold is the form. When a user wishes to create a page using 
 
 ### Creating a Scaffold {#creating-a-scaffold}
 
-To create a new scaffold, go to the **Tools** console, then **Default Page Scaffolding** and create a page. A single page template type is available, the *Scaffolding Template.*
+To create a scaffold, go to the **Tools** console, then **Default Page Scaffolding** and create a page. A single page template type is available, the *Scaffolding Template.*
 
 Go to the **Page Properties** of the new page and set the *Title Text*, *Description*, *Target Template*, and *Target Path*, as described above.
 
@@ -157,4 +157,4 @@ After unlocking, you can restore inheritance by clicking the unlocked padlock sy
 
 >[!NOTE]
 >
->If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties), then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).
+>If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties), then all components are editable in **Scaffolding** mode (they are shown in an unlocked state).

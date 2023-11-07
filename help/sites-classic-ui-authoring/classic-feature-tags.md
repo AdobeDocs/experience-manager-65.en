@@ -45,7 +45,7 @@ As with pages you can perform the following on tags and namespaces:
 
 * Activate individual tags.
 
-  Just as with pages, newly created tags will need to be activated before they become available on the publish environment.
+  Just as with pages, newly created tags must be activated before they become available on the publish environment.
 
 >[!NOTE]
 >

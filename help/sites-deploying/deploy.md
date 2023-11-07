@@ -99,7 +99,7 @@ The following sections describe both the scenarios:
 
 You can install AEM on servers in your Corporate environment. Typical installation instances include: Development, Testing, and Publishing environments. See [Getting Started](/help/sites-deploying/deploy.md#getting%20started) for basic details on how to get the AEM software to install it locally.
 
-To learn more about the typical on-premises deployments, refer to [Recommended Deployments](/help/sites-deploying/recommended-deploys.md).
+To learn more about the typical on-premises deployments, see [Recommended Deployments](/help/sites-deploying/recommended-deploys.md).
 
 ### Managed Services using Cloud Manager {#managed-services-using-cloud-manager}
 
@@ -149,7 +149,7 @@ In the following section we describe the **standalone installation**. For detail
 
    Windows install location: **`C:\Program Files\aem`**
 
-   Equally, it is common to install sample instances in a folder right on the desktop. In any case, we refer to this location generically as:
+   Equally, it is common to install sample instances in a folder right on the desktop. In any case, Adobe refers to this location generically as:
 
    `<aem-install>`
 

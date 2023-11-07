@@ -38,7 +38,7 @@ The most commonly applicable steps are covered in [Generic steps for AEM Forms w
 
 Before customizing workspace, make yourself familiar with the default style sheet supplied with AEM Forms at /libs/ws/css/style.css.
 
-To customize the workspace, it is recommended that you make yourself familiar with the existing style sheet, style.css, located in /libs/ws/css folder. A few prominent components are described below.
+To customize the workspace, it is recommended that you make yourself familiar with the existing style sheet, style.css, in /libs/ws/css folder. A few prominent components are described below.
 
 <table>
  <tbody>

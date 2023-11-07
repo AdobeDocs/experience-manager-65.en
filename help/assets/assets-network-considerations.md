@@ -55,7 +55,7 @@ In this example, the enterprise has a 10 Gbps uplink. It should be large enough 
 
 This is the smallest client-oriented choke-point. However, you can evaluate for a change or configuring an allowed list with the network operations group in charge of this firewall.
 
-From the sample diagrams, you can conclude that six devices share a conceptual 10Mbps channel. Depending on the size of the assets leveraged, this may be inadequate to meet user expectations.
+From the sample diagrams, you can conclude that six devices share a conceptual 10Mbps channel. Depending on the size of the assets used, this may be inadequate to meet user expectations.
 
 ## Topology of the [!DNL Experience Manager] environment {#topology-of-the-aem-environment}
 

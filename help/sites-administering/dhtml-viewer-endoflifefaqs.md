@@ -5,7 +5,6 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 exl-id: 06b74770-1f96-4f6b-98c0-afef7000e42b
 ---
 # DHTML Viewer End-of-Life {#dhtml-viewer-end-of-life}
@@ -24,7 +23,7 @@ End-of-life means that Scene7 will (1) no longer add any feature enhancements to
 
 **Why is Scene7 making this change?**
 
-Web standards are constantly evolving and DHTML is an older web development technology that is rapidly being replaced by HTML5. The biggest limitation to DHTML as a platform is that it is not capable of creating the richness of experience that HTML5 now can consistently and more easily support cross-browser. For example such limitations include lack of cross-browser support for:
+Web standards are constantly evolving and DHTML is an older web development technology that is rapidly being replaced by HTML5. The biggest limitation to DHTML as a platform is that it is not capable of creating the richness of experience that HTML5 now can consistently and more easily support cross-browser. For example, such limitations include lack of cross-browser support for:
 
 * Custom cursors
 * Rounded corners
@@ -39,7 +38,7 @@ Driven by these limitations on DHTML and rapid industry traction with HTML5 as a
 
 **How do I know if my viewer is using the DHTML platform?**
 
-To determine if the viewer your company is using is DHTML and hence affected by this change, please check if:
+To determine if the viewer your company is using is DHTML and hence affected by this change, check if:
 
 1. Your company is using an out-of-box Scene7 viewer listed in this table where the "Viewer Technology" is designated as "DHTML":
 
@@ -75,20 +74,20 @@ To determine if the viewer your company is using is DHTML and hence affected by 
 
 The replacement for DHTML is the Scene7 HTML5 viewer platform, consisting of both:
 
-* HTML5 out-of-box viewers featuring mobile optimized interactions across numerous viewer types including basic zoom, flyout zoom, image sets, swatch sets, multi-dimensional spin and mixed media. For full up-to-date examples of these viewers, please refer to: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
+* HTML5 out-of-box viewers featuring mobile optimized interactions across numerous viewer types including basic zoom, flyout zoom, image sets, swatch sets, multi-dimensional spin and mixed media. For full up-to-date examples of these viewers, see: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
 * HTML5 viewer SDK which enables extensive customization of Adobe Scene7 viewers for HTML5 supported sites and devices (such as iOS and Android), imparting the utmost flexibility and creativity to brand the viewer appearance and interactivity. The benefit of reusable performance-optimized components lower the overall cost of viewer development and accelerate custom development.
 
 **When will the HTML5 viewer platform have the features I need to transition off the DHTML viewer platform?**
 
 Scene7 released the first HTML5 viewer SDK in Fall 2011 with the launch of version 5.5. Since then, we have added numerous features to the platform and extended support for more and more types of viewers. For most common viewer requirements, the HTML5 viewer platform likely already has the features you need to migrate now. And we continue to aggressively invest in this viewer platform with releases every quarter.
 
-To determine if your viewer requirements can be met today with the HTML5 viewer platform, please refer to the following documentation:
+To determine if your viewer requirements can be met today with the HTML5 viewer platform, see the following documentation:
 
 [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (for out of box viewers features and customization capabilities)
 
 [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) (to access the SDK API documentation)
 
-If you are still unsure about whether or not the HTML5 viewer SDK can meet your requirements, please consult with our professional services team.
+If you are still unsure about whether or not the HTML5 viewer SDK can meet your requirements, consult with our professional services team.
 
 **How do I transition my viewers over to the HTML5 platform?**
 
@@ -105,7 +104,7 @@ HTML5 is supported across many mobile devices and web browsers, and continues to
 
 Current system requirements as of the HTML5 SDK version 2.2.1 are:
 
-* Microsoft® Windows® XP or later, Macintosh® OS X 10.6 or later
+* Microsoft&reg; Windows&reg; XP or later, Macintosh&reg; OS X 10.6 or later
 * Firefox 17, Safari 5.1, Chrome 23, Internet Explorer 7 or later
 * iOS 3.2.2 or later
 * Certified on iPhone3 or later and iPad1 or later (native browsers)
@@ -119,9 +118,9 @@ If you see the zoomed-in image by hovering your mouse or dragging your finger ov
 
 **What options do I have if I want to stay live in production with my existing DHTML viewer?**
 
-Although you can still be live in production with DHTML-based viewers, it is important to note that there will be no enhancements, bug fixes nor customer care after January 31, 2014. Hence, we strongly advise all customers to migrate over to our more robust HTML5 viewer platform. . However, if your business situation prevents such a migration by the EOL date, you have the option to contract with professional services to extend the supported maintenance time period. For more information, please contact your account manager.
+Although you can still be live in production with DHTML-based viewers, it is important to note that there will be no enhancements, bug fixes nor customer care after January 31, 2014. Hence, we strongly advise all customers to migrate over to our more robust HTML5 viewer platform. . However, if your business situation prevents such a migration by the EOL date, you have the option to contract with professional services to extend the supported maintenance time period. For more information, contact your account manager.
 
 **Who do I contact for more information?**
 
-If this FAQ did not answer all of your questions, please [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
+If this FAQ did not answer all of your questions, [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
  -->

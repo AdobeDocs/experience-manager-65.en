@@ -147,7 +147,7 @@ The Content Storage Root directory is created when Content Services (Deprecated)
 
 The default location for the Content Storage Root directory is `[aem-forms root]/lccs_data`.
 
-Back up the following directories located in the Content Storage Root directory:
+Back up the following directories in the Content Storage Root directory:
 
 /audit.contentstore
 
@@ -157,7 +157,7 @@ Back up the following directories located in the Content Storage Root directory:
 
 /backup-lucene-indexes
 
-If the /backup-lucene-indexes directory is not present, back up the /lucene-indexes directory, also located in the Content Storage Root directory. If the /backup-lucene-indexes directory is present, do not back up the /lucene-indexes directory because it may cause errors.
+If the /backup-lucene-indexes directory is not present, back up the /lucene-indexes directory, also in the Content Storage Root directory. If the /backup-lucene-indexes directory is present, do not back up the /lucene-indexes directory because it may cause errors.
 
 ### Content Storage Root location (clustered environment) {#content-storage-root-location-clustered-environment}
 
@@ -167,7 +167,7 @@ When you install Content Services (Deprecated) in a clustered environment, the C
 
 **Index Root directory:** A directory that is created on each node in the cluster, always having the same path and directory name
 
-The default location for the Content Storage Root directory is `[GDS root]/lccs_data`, where `[GDS root]` is the location described in [GDS location](files-back-recover.md#gds-location). Back up the following directories located in the Content Storage Root directory:
+The default location for the Content Storage Root directory is `[GDS root]/lccs_data`, where `[GDS root]` is the location described in [GDS location](files-back-recover.md#gds-location). Back up the following directories in the Content Storage Root directory:
 
 /audit.contentstore
 
@@ -177,7 +177,7 @@ The default location for the Content Storage Root directory is `[GDS root]/lccs_
 
 /backup-lucene-indexes
 
-If the /backup-lucene-indexes directory is not present, back up the /lucene-indexes directory, also located in the Content Storage Root directory. If the /backup-lucene-indexes directory is present, do not back up the /lucene-indexes directory because it may cause errors.
+If the /backup-lucene-indexes directory is not present, back up the /lucene-indexes directory, also in the Content Storage Root directory. If the /backup-lucene-indexes directory is present, do not back up the /lucene-indexes directory because it may cause errors.
 
 The default location for the Index Root directory is `[aem-forms root]/lucene-indexes` on each node.
 
@@ -187,6 +187,6 @@ If you installed additional fonts on your AEM forms environment, you must back t
 
 >[!NOTE]
 >
->By default, the Adobe fonts installed with AEM forms are located in the `[aem-forms root]/fonts` directory.
+>By default, the Adobe fonts installed with AEM forms are in the `[aem-forms root]/fonts` directory.
 
 If you are reinitializing the operating system on the host computer and want to use fonts from the previous operating system, the contents of the system fonts directory should also be backed up. (For specific instructions, see the documentation for your operating system).

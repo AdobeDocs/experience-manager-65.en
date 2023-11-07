@@ -144,7 +144,7 @@ To install the packages visible in `adobeaemcloud.com` on a local AEM instance, 
 * Select the **Assets** tab
 * Select **download to disk**
 
-On the local AEM instance, use a Package Manager (for example [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), to upload to the local AEM's package repository.
+On the local AEM instance, use a Package Manager (for example, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), to upload to the local AEM's package repository.
 
 Alternatively, accessing the package using Package Share from the local AEM instance (for example, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), the `Download` button downloads to the local AEM instance's package repository.
 

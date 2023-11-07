@@ -843,7 +843,7 @@ Authenticate a user using the Authentication Manager Service API (web service):
 
 ## Programmatically Synchronizing Users {#programmatically-synchronizing-users}
 
-You can programmatically synchronize users by using the User Management API. When you synchronize users, you are updating AEM Forms with user data that is located in your user repository. For example, assume that you add new users to your user repository. After you perform a synchronization operation, the new users become AEM forms users. As well, users no longer in your user respository are removed from AEM Forms.
+You can programmatically synchronize users by using the User Management API. When you synchronize users, you are updating AEM Forms with user data that is in your user repository. For example, assume that you add new users to your user repository. After you perform a synchronization operation, the new users become AEM forms users. As well, users no longer in your user respository are removed from AEM Forms.
 
 The following diagram shows AEM Forms synchronizing with a user respository.
 
@@ -902,7 +902,7 @@ Before you perform a synchronization operation by using the User Management API,
 
 **Invoke the synchronization operation**
 
-After you specify one or more enterprise domains, you can perform the synchronization operation. The time it takes to perform this operation depends upon the number of user records that are located in the user repository.
+After you specify one or more enterprise domains, you can perform the synchronization operation. The time it takes to perform this operation depends upon the number of user records that are in the user repository.
 
 **Determine if the synchronization operation is complete**
 

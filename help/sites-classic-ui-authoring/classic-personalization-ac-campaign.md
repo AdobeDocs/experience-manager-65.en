@@ -1,21 +1,17 @@
 ---
 title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: You can create email content in AEM and process it in Adobe Campaign emails.
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails.
-uuid: 439df7fb-590b-45b8-9768-565b022a808b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
 ---
 # Working with Adobe Campaign 6.1 and Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
 
 You can create email content in AEM and process it in Adobe Campaign emails. To do that, you must:
 
-1. Create a new newsletter in AEM from an Adobe Campaign-specific template.
+1. Create a newsletter in AEM from an Adobe Campaign-specific template.
 1. Select [an Adobe Campaign service](#selectingtheadobecampaigncloudservice) before editing the content to access all the functionality.
 1. Edit the content.
 1. Validate the content.
@@ -50,7 +46,7 @@ Detailed instructions are described in this document.
 
    >[!NOTE]
    >
-   >[Email samples are only available in Geometrixx](/help/sites-developing/we-retail.md#weretail). Please download sample Geometrixx content from Package Share.
+   >[Email samples are only available in Geometrixx](/help/sites-developing/we-retail.md#weretail). Download sample Geometrixx content from Package Share.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -109,8 +105,8 @@ You can edit email content in either the classic user interface or the touch-opt
 
 When editing your content, you can insert:
 
-* Adobe Campaign context fields. These are fields that you can insert within your text that will adapt according to the recipient’s data (for example first name, last name, or any data of the target dimension).
-* Adobe Campaign personalization blocks. These are blocks of predefined content that are not related to the recipient’s data, such as a brand logo, or link to a mirror page.
+* Adobe Campaign context fields. These are fields that you can insert within your text that will adapt according to the recipient's data (for example, first name, last name, or any data of the target dimension).
+* Adobe Campaign personalization blocks. These are blocks of predefined content that are not related to the recipient's data, such as a brand logo, or link to a mirror page.
 
 See [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) for a full description of the Campaign components.
 

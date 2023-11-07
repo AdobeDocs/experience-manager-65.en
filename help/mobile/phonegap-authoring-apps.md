@@ -65,7 +65,7 @@ Content Package allows the AEM App Author to manage page content in AEM and, hav
 
 Content Package creates a ZIP file, considered a Content Release Package, for each update. These packages contain html resources and html pages that are generated while rendering the app and is intelligent enough to only package those files that have been modified since the last update.
 
-The Manage Content Package Tile's **Type** column displays either 'App' to signify Application Shell content, for example framework or infrastructure of the app managed by a developer or, 'Content' which represents page content managed by the content author.
+The Manage Content Package Tile's **Type** column displays either 'App' to signify Application Shell content, for example, framework or infrastructure of the app managed by a developer or, 'Content' which represents page content managed by the content author.
 
 Content can be represented as a language or as a particular part of the app where multiple Content Release packages are consumed by the app. The choice of how you bundle your content is flexible and entirely up to how you want to manage content for your application.
 

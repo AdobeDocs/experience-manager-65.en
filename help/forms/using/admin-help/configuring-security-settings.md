@@ -77,7 +77,7 @@ These options configure the permissions:
 
 **Use A Password To Restrict Printing And Editing Of&#xA;The Document And Its Security Settings:** Enables restrictions on permissions.
 
-**Permissions Password:** Restricts users from printing and editing. Users cannot change these security settings unless they type the password you specify. You cannot use the same password that is used for Document Open Password. When you set a permissions password, only those people who type that password can change security settings. If the PDF document has both types of passwords, either password will open it. However, a user can only set or change the restricted features with the permissions password. If the PDF document has only the permission password or if a user opens the document by using the document open password, the password prompt appears when the user tries to change security settings.
+**Permissions Password:** Restricts users from printing and editing. Users cannot change these security settings unless they type the password you specify. You cannot use the same password that is used for Document Open Password. When you set a permissions password, only those people who type that password can change security settings. If the PDF document has both types of passwords, either password opens it. However, a user can only set or change the restricted features with the permissions password. If the PDF document has only the permission password or if a user opens the document by using the document open password, the password prompt appears when the user tries to change security settings.
 
 **Retype Permissions Password:** Ensures that the permissions password is correct.
 
