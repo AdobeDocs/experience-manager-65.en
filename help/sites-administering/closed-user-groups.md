@@ -17,7 +17,7 @@ Since AEM 6.3, there is a new Closed User Group implementation intended to addre
 
 >[!NOTE]
 >
->For the sake of simplicity, the CUG abbreviation will be used throughout this documentation.
+>For the sake of simplicity, the CUG abbreviation is used throughout this documentation.
 
 The goal of the new implementation is to cover existing functionality where needed while at the same time addressing problems and design limitations from older versions. The result is a new CUG design with the following characteristics:
 
@@ -98,7 +98,7 @@ The following best practices should be taken into account for defining restricte
     * Excessive need for nested CUGs may potentially highlight issues in the content design
     * Very excessive need for CUGs (for example, on every single page) may indicate the need for a custom authorization model potentially better suited to match the specific security needs of the application and content at hand.
 
-* Limit the paths supported for CUG policies to a few trees in the repository to allow for optimized performance. For example only allow CUGs below the /content node as shipped as the default value since AEM 6.3.
+* Limit the paths supported for CUG policies to a few trees in the repository to allow for optimized performance. For example, only allow CUGs below the /content node as shipped as the default value since AEM 6.3.
 * CUG policies are designed to grant read access to a small set of principals. The need for a huge number of principals may highlight issues in the content or application design and should be reconsidered.
 
 ### Authentication: Defining the Auth Requirement {#authentication-defining-the-auth-requirement}
@@ -201,7 +201,7 @@ The new type of access control policies to restrict read access for a CUG is man
 
 #### Set A New CUG Policy {#set-a-new-cug-policy}
 
-Code to apply a new CUG policy at a node that didn't have a CUG set before. Please note that `getApplicablePolicies` will only return new policies that have not been set before. At the end the policy needs to written back and changes needs to be persisted.
+Code to apply a new CUG policy at a node that didn't have a CUG set before. Note that `getApplicablePolicies` only returns new policies that have not been set before. At the end the policy needs to written back and changes needs to be persisted.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -237,7 +237,7 @@ session.save();
 
 #### Edit An Existing CUG Policy {#edit-an-existing-cug-policy}
 
-The following steps are needed to edit an existing CUG policy. Please note that the modified policy needs to written back and changes needs to be persisted using `javax.jcr.Session.save()`.
+The following steps are needed to edit an existing CUG policy. The modified policy needs to written back and changes needs to be persisted using `javax.jcr.Session.save()`.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -275,7 +275,7 @@ The JCR access control management defines a best effort method to retrieve the p
 
 >[!NOTE]
 >
->Please note the difference between `getEffectivePolicies` and the subsequent code example that walks up the hierarchy to find if a given path is already part of an existing CUG.
+>The difference between `getEffectivePolicies` and the subsequent code example that walks up the hierarchy to find if a given path is already part of an existing CUG.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -332,7 +332,7 @@ The creation, modification, or removal of a new authentication requirement is ac
 
 #### Adding a New Auth Requirement {#adding-a-new-auth-requirement}
 
-Steps to create a new authentication requirement are detailed below. Note that the requirement will only be registered with the Apache Sling Authenticator if the `RequirementHandler` has been configured for the tree containing the target node.
+Steps to create an authentication requirement are detailed below. The requirement is only registered with the Apache Sling Authenticator if the `RequirementHandler` has been configured for the tree containing the target node.
 
 ```java
 Node targetNode = [...]
@@ -343,7 +343,7 @@ session.save();
 
 #### Add a New Auth Requirement with Login Path {#add-a-new-auth-requirement-with-login-path}
 
-Steps to create a new authentication requirement including a login path. Note, that the requirement and the exclusion for the login path will only be registered with the Apache Sling Authenticator if the `RequirementHandler` has been configured for the tree containing the target node.
+Steps to create an authentication requirement including a login path. Note, that the requirement and the exclusion for the login path will only be registered with the Apache Sling Authenticator if the `RequirementHandler` has been configured for the tree containing the target node.
 
 ```java
 Node targetNode = [...]
@@ -576,7 +576,7 @@ The available configuration options associated with the CUG-authorization module
 
 #### Excluding Principals From CUG Evaluation {#excluding-principals-from-cug-evaluation}
 
-Exempting individual principals from CUG evaluation has been adopted from the former implementation. The new CUG authorization covers this with a dedicated interface named CugExclude. Apache Jackrabbit Oak 1.4 ships with a default implementation that excludes a fixed set of principals as well as an extended implementation that allows to configure individual principal names. The latter is configured in AEM publish instances.
+Exempting individual principals from CUG evaluation has been adopted from the former implementation. The new CUG authorization covers this with a dedicated interface named CugExclude. Apache Jackrabbit Oak 1.4 ships with a default implementation that excludes a fixed set of principals and an extended implementation that allows to configure individual principal names. The latter is configured in AEM publish instances.
 
 The default since AEM 6.3 prevents the following principals from being affected by CUG policies:
 
@@ -762,11 +762,11 @@ Configuring CUGs in conjunction with LiveCopy is represented in the repository b
 
 Both of these elements are created under the `cq:Page`. With the current design, MSM only handles nodes and properties that are under the `cq:PageContent` (`jcr:content`) node.
 
-Therefore, CUG groups cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
+Therefore, CUG groups cannot be rolled out to Live Copies from Blueprints. Plan around this when configuring Live Copy.
 
 ## Changes with the New CUG Implementation {#changes-with-the-new-cug-implementation}
 
-The aim of this section is to provide an overview of the changes made to the CUG feature as well as a comparison between the old and the new implementation. It lists the changes affecting the way CUG support is configured and describes how and by whom CUGs are managed in the repository content.
+The aim of this section is to provide an overview of the changes made to the CUG feature and a comparison between the old and the new implementation. It lists the changes affecting the way CUG support is configured and describes how and by whom CUGs are managed in the repository content.
 
 ### Differences in CUG Setup and Configuration {#differences-in-cug-setup-and-configuration}
 

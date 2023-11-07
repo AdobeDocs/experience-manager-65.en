@@ -71,7 +71,7 @@ The following sample ECMAScript dynamically selects an assignee for the Adobe Si
 
 >[!NOTE]
 >
->On using ECMAScript for Adobe Sign, the script must be located in crx-repository at /apps/fd/workflow/scripts/adobesign/, and should have a function named getAdobeSignRecipients to return a list of the users.
+>On using ECMAScript for Adobe Sign, the script must be in crx-repository at /apps/fd/workflow/scripts/adobesign/, and should have a function named getAdobeSignRecipients to return a list of the users.
 
 ```javascript
 function getAdobeSignRecipients() {

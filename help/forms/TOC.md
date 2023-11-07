@@ -222,7 +222,7 @@ feature: Forms Service
   + [Introduction to Customizing AEM form workspace](using/introduction-customizing-html-workspace.md)
   + [Generic steps for AEM Forms workspace customization](using/generic-steps-html-workspace-customization.md)
   + [Changing the locale of AEM Forms workspace user interface](using/changing-locale-user-interface.md)
-  + [Creating a new login screen](using/creating-new-login-screen.md)
+  + [Creating a login screen](using/creating-new-login-screen.md)
   + [Customizing error dialogs](using/customizing-error-dialogs.md)
   + [Customizing tabs for a task](using/customizing-tabs-task.md)
   + [Customizing the task details page](using/customizing-task-details-page.md)

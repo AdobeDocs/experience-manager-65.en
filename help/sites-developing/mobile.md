@@ -360,7 +360,7 @@ The `PageVariantsProvider` OSGi service is capable of generating alternate links
 The `cq:siteVariant` node must have the following properties:
 
 * `cq:childNodesMapTo` - determines to which attribute of the link element that the child nodes will be mapped; it is recommended to organize the content of your website in such a way so that the children of the root node represent the root for a language variant of your global website (for example, `/content/mysite/en`, `/content/mysite/de`), in which case the value of the `cq:childNodesMapTo` should be `hreflang`;
-* `cq:variantDomain` - indicates what `Externalizer` domain will be used to generate the page variants absolute URLs; if this value is not set then the page variants will be generated using relative links;
+* `cq:variantDomain` - indicates what `Externalizer` domain is used to generate the page variants absolute URLs; if this value is not set then the page variants will be generated using relative links;
 * `cq:variantFamily` - indicates to which family of websites this site belongs; multiple device-specific representations of the same website should belong to the same family;
 * `media` - stores the values of the media attribute of the link element; it is recommended to use the name of the `BrowserMap` registered `DeviceGroups`, so that the `BrowserMap` library can automatically forward the clients to the correct variant of the website.
 
@@ -386,7 +386,7 @@ BrowserMap is designed in such a way that Device Groups definitions can be overr
 
 If none of the previous mechanisms have been employed to indicate an alternate site for `BrowserMap`, then selectors that will use the names of the `DeviceGroups` will be added to the `URL`s, in which case you should provide your own servlets that will handle the requests.
 
-For example a device browsing `www.example.com/index.html` identified as `smartphone` by BrowserMap is forwarded to `www.example.com/index.smartphone.html.`
+For example, a device browsing `www.example.com/index.html` identified as `smartphone` by BrowserMap is forwarded to `www.example.com/index.smartphone.html.`
 
 ### Using BrowserMap On Your Pages {#using-browsermap-on-your-pages}
 
@@ -565,7 +565,7 @@ The **Statistics** page looks as follows:
 
 If you need to generate an entry in the statistics, you can proceed as follows:
 
-1. Use a mobile device or an emulator (as for example https://chrispederick.com/work/user-agent-switcher/ on Firefox).
+1. Use a mobile device or an emulator (as for example, https://chrispederick.com/work/user-agent-switcher/ on Firefox).
 1. Request a mobile page on the author instance by disabling the authoring mode, for example:
    `https://localhost:4502/content/geometrixx_mobile/en/products.html?wcmmode=disabled`
 
@@ -573,7 +573,7 @@ The **Statistics** page is now available.
 
 ### Supporting Page Caching for "send link to a friend" Links {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Mobile pages are cachable on Dispatcher, because pages that are rendered for a device group are distinguished in the page URL by the device group selector, for example `/content/mobilepage.touch.html`. A request to a mobile page without a selector is never cached, as in this case, the device detection operates and finally redirects to the matching device group (or "nomatch" for that matter). A mobile page rendered with a device group selector is processed by the link rewriter, which rewrites all links within the page to also contain the device group selector, preventing from reperforming device detection for every click on an already qualified page.
+Mobile pages are cachable on Dispatcher, because pages that are rendered for a device group are distinguished in the page URL by the device group selector, for example, `/content/mobilepage.touch.html`. A request to a mobile page without a selector is never cached, as in this case, the device detection operates and finally redirects to the matching device group (or "nomatch" for that matter). A mobile page rendered with a device group selector is processed by the link rewriter, which rewrites all links within the page to also contain the device group selector, preventing from reperforming device detection for every click on an already qualified page.
 
 Therefore you might encounter the following scenario:
 

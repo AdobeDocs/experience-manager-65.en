@@ -1,12 +1,10 @@
 ---
 title: Integrating with Adobe Campaign components
 description: When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms.
-uuid: a858d5ca-aa6e-4bde-92db-a6dcd8b48ae6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 ---
@@ -18,7 +16,7 @@ When you integrate with Adobe Campaign, you have components available for when w
 >
 >The AEM email components have been deprecated. Due to the nature of email, which merges content and style, the email components provided out-of-the-box by AEM become of limited reuse for customers because of the need to implement custom styles into whatever components are required for projects.
 >
->Email components can be implemented on project level, and the deprecated AEM email components illustrate how that can be achieved. However these deprecated components should not be used on projects.
+>Email components can be implemented on project level, and the deprecated AEM email components illustrate how that can be achieved. However, do not use these deprecated components on projects.
 
 ## Adobe Campaign Newsletter Components {#adobe-campaign-newsletter-components}
 
@@ -212,7 +210,7 @@ As with the Text & Personalization (Campaign) and Image (Campaign) components, y
   Lets you specify the following:
 
     * **Title**
-      The title for the block; will be shown by mouseover.
+      The title for the block; it is shown by mouseover.
 
     * **Alt Text**
       Alternative text to be shown if the image cannot be displayed.
@@ -383,7 +381,7 @@ The following example shows a Checkbox (Campaign) component being displayed.
 
 ### Date Field (Campaign) and Date Field/HTML 5 (Campaign) {#date-field-campaign-and-date-field-html-campaign}
 
-Use the date field to allow recipients to a date; for example you may want the recipients to specify their birth dates. The date format matches the format used in your Adobe Campaign instance.
+Use the date field to allow recipients to a date; for example, you may want the recipients to specify their birth dates. The date format matches the format used in your Adobe Campaign instance.
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 
@@ -435,7 +433,7 @@ The following example shows an Hidden Reconciliation Key (Campaign) component be
 
 ### Numeric Field (Campaign) {#numeric-field-campaign}
 
-Use the numeric field to allow recipients to enter numbers, for example their age.
+Use the numeric field to allow recipients to enter numbers, for example, their age.
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 

@@ -9,9 +9,9 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 ---
 # How to Use the VLT Tool {#how-to-use-the-vlt-tool}
 
-The Jackrabbit FileVault tool (VLT) is a tool developed by [The Apache Foundation](https://www.apache.org/) that maps the content of a Jackrabbit/AEM instance to your file system. The VLT tool has similar functions as source control system client (such as a Subversion (SVN) client), providing normal check-in, check-out and management operations, as well as configuration options for flexible representation of the project content.
+The Jackrabbit FileVault tool (VLT) is a tool developed by [The Apache Foundation](https://www.apache.org/) that maps the content of a Jackrabbit/AEM instance to your file system. The VLT tool has similar functions as source control system client (such as a Subversion (SVN) client), providing normal check-in, check-out and management operations, and configuration options for flexible representation of the project content.
 
-You run the VLT tool from the command line. This document describes how to use the tool, including how to get started and get help, as well as a list of all [commands](#vlt-commands) and available [options](#vlt-global-options).
+You run the VLT tool from the command line. This document describes how to use the tool, including how to get started and get help, and a list of all [commands](#vlt-commands) and available [options](#vlt-global-options).
 
 ## Concepts and Architecture {#concepts-and-architecture}
 
@@ -435,7 +435,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |||
 |--- |--- |
-|`-l (--linkFormat) <format>`|printf format for hotfix links (name,id), for example `[CQ520_HF_%s|%s]`|
+|`-l (--linkFormat) <format>`|printf format for hotfix links (name,id), for example, `[CQ520_HF_%s|%s]`|
 |`-v (--verbose)`|verbose output|
 |`-q (--quiet)`|prints as little as possible|
 |`<localPaths> [<localPaths> ...]`|local path|
@@ -776,7 +776,7 @@ The vault sync service is used to synchronize repository content with a local fi
 
 >[!NOTE]
 >
->The vault sync service is a development tool and it is highly discouraged to use it on a productive system. Also note that the service can only sync with the local filesystem and cannot be used for remote development.
+>The vault sync service is a development tool and it is highly discouraged to use it on a productive system. Also, the service can only sync with the local filesystem and cannot be used for remote development.
 
 ### Installing the service using vlt {#installing-the-service-using-vlt}
 
@@ -850,7 +850,7 @@ Once the service is running it can be configured with the following parameters:
 >
 >The service can be configured with the Web console or a `sling:OsgiConfig` node (with the name `com.day.jcr.sync.impl.VaultSyncServiceImpl`) in the repository.
 >
->When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
+>When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
 #### Sync folder configuration {#sync-folder-configuration}
 

@@ -182,7 +182,7 @@ Enable these options to specify how to display content, how to display pages in 
 
 **Page Layout:** Select the type of page layout for the PDF document.
 
-**Magnification:** Choose preset magnification for the initial view of the PDF document or select a custom value. Choosing a default setting indicates that the default Acrobat magnification will be used.
+**Magnification:** Choose preset magnification for the initial view of the PDF document or select a custom value. Choosing a default setting indicates that the default Acrobat magnification is used.
 
 **Open To Page Number:** Specify the page number that the PDF opens to.
 

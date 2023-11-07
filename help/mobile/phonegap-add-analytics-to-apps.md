@@ -39,9 +39,9 @@ AEM Mobile requires an Adobe Analytics account to collect and report tracking da
 
 After the Analytics account is set up, create a Content Sync configuration to pull in the content into your Mobile Application.
 
-For additional details, refer to Configuring the Content Sync Content. The configuration will need to instruct Content Sync to put the ADBMobileConfig into the /www directory. For example, in the Geometrixx Outdoors App, the Content Sync configuration is at: */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. There is a configuration for development as well; however, it is identical to the non-development configuration in the case of Geometrixx Outdoors.
+For additional details, see Configuring the Content Sync Content. The configuration must instruct Content Sync to put the ADBMobileConfig into the /www directory. For example, in the Geometrixx Outdoors App, the Content Sync configuration is at: */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. There is a configuration for development as well; however, it is identical to the non-development configuration in the case of Geometrixx Outdoors.
 
-For further details on how to download the ADBMobileConfig from your Mobile Application AEM Apps dashboard, refer to Analytics - Mobile Services - Adobe Mobile Services SDK Config File.
+For further details on how to download the ADBMobileConfig from your Mobile Application AEM Apps dashboard, see Analytics - Mobile Services - Adobe Mobile Services SDK Config File.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -57,7 +57,7 @@ Each platform requires the ADBMobileConfig to be copied to a specific location.
 
 If building with the PhoneGap CLI this can be done with an cordova build hook scripts. This can be seen intheGeometrixx Outdoors App at:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-For iOS the file will need to be copied to the XCode project's **Resources** directory (for example, "platforms/ios/Geometrixx/Resources/ADBMobileConfig.json"). If the App is targeted for Android&trade;, then the path to copy to is "platforms/android/assets/ADBMobileConfig.json". For further details on using hooks during the PhoneGap CLI build, see [Three hooks your Cordova/PhoneGap project needs](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+For iOS the file must be copied to the XCode project's **Resources** directory (for example, "platforms/ios/Geometrixx/Resources/ADBMobileConfig.json"). If the App is targeted for Android&trade;, then the path to copy to is "platforms/android/assets/ADBMobileConfig.json". For further details on using hooks during the PhoneGap CLI build, see [Three hooks your Cordova/PhoneGap project needs](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

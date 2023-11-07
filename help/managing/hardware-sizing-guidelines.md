@@ -79,7 +79,7 @@ Hardware sizing requirements for advanced use cases need to be based on a detail
 
 The disk space required depends heavily on both the volume and type of your web application. The calculations should account for the following:
 
-* the quantity and size of pages, assets, and other repository-stored entities such as workflows, profiles etc.
+* the quantity and size of pages, assets, and other repository-stored entities such as workflows, profiles, and so on.
 * the estimated frequency of content changes and therefore the creation of content versions
 * the volume of DAM asset renditions that will be generated
 * the overall growth of content over time

@@ -1,14 +1,9 @@
 ---
 title: Configure data sources
-seo-title: Configure data sources
-description: Learn how to configure different types of data sources and leverage to create form data models.
-seo-description: Learn how to configure different types of data sources and leverage to create form data models.
-uuid: 12360c8c-b596-4f9b-837a-10a8ff5c7448
+description: Learn how to configure different types of data sources so you can create form data models.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
-
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 ---

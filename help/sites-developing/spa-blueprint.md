@@ -65,11 +65,11 @@ The remainder of this document describes the requirements of this intermediary f
 
 The content structure of the page is stored in AEM. The model of the page is used to map and instantiate SPA components. The SPA developers create SPA components which they map to AEM components. To do this, they use the resource type (or path to the AEM component) as a unique key.
 
-The SPA components must be in sync with the page model and be updated with any changes to its content accordingly. A pattern leveraging dynamic components must be used to instantiate components on the fly following the provided page model structure.
+The SPA components must be in sync with the page model and be updated with any changes to its content accordingly. A pattern using dynamic components must be used to instantiate components on the fly following the provided page model structure.
 
 ### Meta Fields {#meta-fields}
 
-The page model leverages the JSON Model Exporter, which is itself based on the [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API. The exportable sling models expose the following list of fields to enable the underlying libraries interpret the data model:
+The page model uses the JSON Model Exporter, which is itself based on the [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API. The exportable sling models expose the following list of fields to enable the underlying libraries interpret the data model:
 
 * `:type`: Type of the AEM resource (default = resource type)
 * `:children`: Hierarchical children of the current resource. Children are not part of the inner content of the current resource (can be found on items representing a page)

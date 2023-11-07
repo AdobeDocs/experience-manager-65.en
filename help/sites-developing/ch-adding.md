@@ -28,7 +28,7 @@ Use ContextHub stores to persist context data. ContextHub provides the following
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-All store types are extensions of the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) class. For information about creating a new store type, see [Creating Custom Stores](ch-extend.md#creating-custom-store-candidates). For information about sample store types, see [Sample ContextHub Store Candidates](ch-samplestores.md).
+All store types are extensions of the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) class. For information about creating a store type, see [Creating Custom Stores](ch-extend.md#creating-custom-store-candidates). For information about sample store types, see [Sample ContextHub Store Candidates](ch-samplestores.md).
 
 ### Persistence Modes {#persistence-modes}
 
@@ -133,11 +133,11 @@ The rules that are used to resolve these segments are summarized as follows:
 
 >[!WARNING]
 >
->The installed segments are provided as reference configurations to help you build your own dedicated configuration for your project and as such should not be used directly.
+>The installed segments are provided as reference configurations to help you build your own dedicated configuration for your project. Do not use them directly.
 
 ## Debugging ContextHub {#debugging-contexthub}
 
-There are a number of options for debugging ContextHub including generating logs. See [Configuring ContextHub for more information.](ch-configuring.md#logging-debug-messages-for-contexthub)
+There are several options for debugging ContextHub including generating logs. See [Configuring ContextHub for more information.](ch-configuring.md#logging-debug-messages-for-contexthub)
 
 ## See an Overview of the ContextHub Framework {#see-an-overview-of-the-contexthub-framework}
 

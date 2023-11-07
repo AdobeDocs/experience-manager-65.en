@@ -125,7 +125,7 @@ For the Report Suite ID (RSID) that you are using, you can control which server 
    >
    >The content finder on the left is populated with Adobe Analytics variables (SiteCatalyst Variables) when you select a Report Suite ID.
 
-1. To select the server instances that you want to send information to the Report Suite, use the **Run Mode** drop down (next to the Report Suite ID).
+1. To select the server instances that you want to send information to the Report Suite, use the **Run Mode** drop-down (next to the Report Suite ID).
 
    ![aa-framework-01](assets/aa-framework-01.png)
 
@@ -171,7 +171,7 @@ Descendents of the page inherit the association with the framework. For example,
 1. Open the **[Page Properties](/help/sites-authoring/editing-page-properties.md)**, either directly from the console, or the page editor.
 1. Open the** Cloud Services** tab.
 
-1. Use the **Add Configuration** drop down to select **Adobe Analytics** from the available options. If inheritance is place, disable that before the selector becomes available.
+1. Use the **Add Configuration** drop-down to select **Adobe Analytics** from the available options. If inheritance is place, disable that before the selector becomes available.
 
 1. The drop-down selector for **Adobe Analytics** is appended to the options available. Select the required framework configuration.
 

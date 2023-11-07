@@ -154,7 +154,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 
 ## Metadata schemata reference {#metadata-schemata-reference}
 
-The following reference includes information about a particular metadata schemata (in alphabetical order) as well as a list of properties and their definitions.
+The following reference includes information about a particular metadata schemata (in alphabetical order) and a list of properties and their definitions.
 
 ### Dublin Core {#dublin-core}
 

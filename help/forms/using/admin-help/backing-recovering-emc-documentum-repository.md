@@ -1,14 +1,10 @@
 ---
 title: Backing up and recovering the EMC Documentum repository
-seo-title: Backing up and recovering the EMC Documentum repository
 description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
-seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
-uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
 ---
 # Backing up and recovering the EMC Documentum repository {#backing-up-and-recovering-the-emc-documentum-repository}
@@ -61,7 +57,7 @@ This section describes installing and configuring the EMC NetWorker software on 
     #
     # Parameters not shown can be set in this file (as per site customisation) #or from the command-line.
     #
-    # Please refer to the user Guides for details on all parameters, including
+    # See the user Guides for details on all parameters, including
     # those not listed below.
     # Note: DCTM environment for D6 is slightly different from D5, refer to D6
     # Installation Guide to update the values.
@@ -214,7 +210,7 @@ This section describes installing and configuring the EMC NetWorker software on 
 
 **Create a backup device**
 
-1. Create a new directory on the EMC Documentum server and share the folder by giving full rights to all users.
+1. Create a directory on the EMC Documentum server and share the folder by giving full rights to all users.
 1. Start EMC NetWorker Administrator and click Media Management &gt; Devices.
 1. Right-click Devices and select Create.
 1. Enter the following values and click OK:

@@ -28,7 +28,7 @@ The projects console is where you access and manage your projects within AEM.
 
 ![The Projects Console](assets/screen-shot_2019-03-05at125110.png)
 
-The Projects console is similar to other consoles in AEM, allow a number of actions on individual projects as well as adjusting your view of the projects.
+The Projects console is similar to other consoles in AEM, allow several actions on individual projects and adjusting your view of the projects.
 
 ### Toggle Your Mode {#modes}
 
@@ -123,7 +123,7 @@ The **Links** tile lets you associate external links with your project.
 
 ![Links tile](assets/project-tile-links.png)
 
-You can name the link with an easy-to-recognize name as well as change the thumbnail.
+You can name the link with an easy-to-recognize name and change the thumbnail.
 
 ### Project Info {#project-info}
 

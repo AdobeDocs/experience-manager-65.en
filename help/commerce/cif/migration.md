@@ -29,4 +29,4 @@ If you use catalog blueprint with Classic CIF, you need to update the product ca
 
 ## Non-Cacheable Data and Shopping Interaction
 
-Client-side requests for non-cacheable data and interactions (for example add-to-cart, search) should go directly to the commerce endpoint (either commerce solution or integration layer) via CDN / Dispatcher. Remove any calls where AEM was just a proxy.
+Client-side requests for non-cacheable data and interactions (for example, add-to-cart, search) should go directly to the commerce endpoint (either commerce solution or integration layer) via CDN / Dispatcher. Remove any calls where AEM was just a proxy.

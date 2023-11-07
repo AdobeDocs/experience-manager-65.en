@@ -27,7 +27,7 @@ In previous releases of Adobe Experience Manager (AEM), many APIs were exposed b
 
 * The Public APIs are backwards compatible with the installation of a compatibility package.
 * The compatibility package contains a compatibility Uber JAR to ensure backwards compatibility
-* Java&trade; APIs marked as `Private` are intended to only be used by AEM internal bundles and should not be used by custom bundles.
+* Java&trade; APIs marked as `Private` are intended to only be used by AEM internal bundles, not by custom bundles.
 
 >[!NOTE]
 >

@@ -227,7 +227,7 @@ To actually add the new configuration to the repository:
     * Type: `sling:OsgiConfig`
     * Name: the persistent identity (PID);
 
-      for example for AEM WCM Version Manager use `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      for example, for AEM WCM Version Manager use `com.day.cq.wcm.core.impl.VersionManagerImpl`
 
    >[!NOTE]
    >

@@ -40,7 +40,7 @@ For example, the content of a product page may contain a paragraph system holdin
 >
 >Editing the design using Design Mode as described in this article is the recommended way to define designs of static templates
 >
->Modifying designs in CRX DE for example is not best practice and the application of such designs can vary from expected behavior. See the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) for more information.
+>Modifying designs in CRX DE for example, is not best practice and the application of such designs can vary from expected behavior. See the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) for more information.
 
 ## Enable/Disable Components {#enable-disable-components}
 
@@ -60,7 +60,7 @@ To either enable or disable a component:
 
    This will select the paragraph system containing the current component.
 
-1. The **Configure** icon for the paragraph system will be shown in the parent's action bar.
+1. The **Configure** icon for the paragraph system is shown in the parent's action bar.
 
    ![Configure](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -89,7 +89,7 @@ To either enable or disable a component:
 
    >[!NOTE]
    >
-   >Adaptive form components are designed to work inside Adaptive Form Container to leverage the Forms ecosystem. Therefore, these components must be used only in adaptive form editor and they will not function in the Sites page editor.
+   >Adaptive form components are designed to work inside Adaptive Form Container to use the Forms ecosystem. Therefore, these components must be used only in adaptive form editor and they will not function in the Sites page editor.
 
    **Settings**
 
@@ -123,7 +123,7 @@ To either enable or disable a component:
 
    **Properties**
 
-   The **Properties** tab lets you configure the important design parameters of the component. For example for an image component you can define the maximum and minimum size of the image allowed.
+   The **Properties** tab lets you configure the important design parameters of the component. For example, for an image component you can define the maximum and minimum size of the image allowed.
 
    **Features**
 

@@ -56,7 +56,7 @@ Before you can programmatically perform a Distiller service operation, you must 
 
 **Retrieve the file to convert**
 
-You must retrieve the file that you want to convert. For example, to convert a PS file to a PDF document, you must retrieve the PS file.
+Retrieve the file that you want to convert. For example, to convert a PS file to a PDF document, you must retrieve the PS file.
 
 **Invoke the PDF creation operation**
 

@@ -45,7 +45,7 @@ This document will walk through the structure of a simplified SPA and illustrate
 
 ## Dependencies, Configuration, and Building {#dependencies-configuration-and-building}
 
-In addition to the expected Angular dependency, the sample SPA can leverage additional libraries to make the creation of the SPA more efficient.
+In addition to the expected Angular dependency, the sample SPA can use additional libraries to make the creation of the SPA more efficient.
 
 ### Dependencies {#dependencies}
 
@@ -59,7 +59,7 @@ The `package.json` file defines the requirements of the overall SPA package. The
 }
 ```
 
-The `aem-clientlib-generator` is leveraged to make the creation of client libraries automatic as part of the build process.
+The `aem-clientlib-generator` is used to make the creation of client libraries automatic as part of the build process.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -100,7 +100,7 @@ module.exports = {
 
 ### Building {#building}
 
-Actually building the app leverages [Webpack](https://webpack.js.org/) for transpilation in addition to the aem-clientlib-generator for automatic client library creation. Therefore the build command will resemble:
+Actually building the app uses [Webpack](https://webpack.js.org/) for transpilation in addition to the aem-clientlib-generator for automatic client library creation. Therefore the build command will resemble:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -108,7 +108,7 @@ Once built, the package can be uploaded to an AEM instance.
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+Any AEM project should use the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and uses the SPA SDK.
 
 ## Application Structure {#application-structure}
 
@@ -277,7 +277,7 @@ Finally the image can be rendered in `image.component.html`.
 
 It is regularly necessary for components within a single-page application to share information. There are several recommended ways of doing this, listed as follows in increasing order of complexity.
 
-* **Option 1:** Centralize the logic and broadcast to the necessary components for example by using a util class as a pure object-oriented solution.
+* **Option 1:** Centralize the logic and broadcast to the necessary components for example, by using a util class as a pure object-oriented solution.
 * **Option 2:** Share component states by using a state library such as NgRx.
 * **Option 3:** Leverage the object hierarchy by customizing and extending the container component.
 
@@ -289,4 +289,4 @@ For further information about how to oraganize yourself to develop SPAs for AEM 
 
 For further details about the dynamic model to component mapping and how it works within SPAs in AEM, see the article [Dynamic Model to Component Mapping for SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-If you wish to implement SPAs in AEM for a framework other than React or Angular or simply wish to take a deep dive into how the SPA SDK for AEM works, refer to the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) article.
+If you wish to implement SPAs in AEM for a framework other than React or Angular or simply wish to take a deep dive into how the SPA SDK for AEM works, see the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) article.

@@ -79,7 +79,7 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
    1.  When the installation is complete, click **[!UICONTROL Next]** to apply the quick fix updates to your installed files.
    1.  **[For Windows only]:** Perform one of the following step:
    
-         * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file located in `[aem-forms root]\configurationManager\bin`. 
+         * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file in `[aem-forms root]\configurationManager\bin`. 
 
          * Or deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
 

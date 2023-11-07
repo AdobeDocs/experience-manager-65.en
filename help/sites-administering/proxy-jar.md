@@ -76,7 +76,7 @@ To check if keep-alive works:
 
 **Finding Lost Requests**
 
-If you lose requests in a complex server setting, for example with a firewall and a Dispatcher, you can use the proxy server to find out where the request was lost. If there is a firewall:
+If you lose requests in a complex server setting, for example, with a firewall and a Dispatcher, you can use the proxy server to find out where the request was lost. If there is a firewall:
 
 1. Start a proxy before a firewall
 1. Start another proxy after a firewall

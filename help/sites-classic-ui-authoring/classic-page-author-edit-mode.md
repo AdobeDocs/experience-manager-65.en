@@ -306,7 +306,7 @@ The Flash component lets you load a Flash movie. You can drag a flash asset from
 
     * **Window Mode**
 
-      How the window appears, for example opaque, transparent, or as a distinct (solid) window.
+      How the window appears, for example, opaque, transparent, or as a distinct (solid) window.
 
     * **Background color**
 

@@ -20,7 +20,7 @@ The Audit Log Maintenance includes several parts of functionality that enables t
 
 It is implemented as a configurable weekly maintenance task and is accessible via the Operations Dashboard monitoring console.
 
-For more information, refer to the [Operations Dashboard Documentation](/help/sites-administering/operations-dashboard.md).
+For more information, see the [Operations Dashboard Documentation](/help/sites-administering/operations-dashboard.md).
 
 There are three types of Audit Log Purge options:
 
@@ -52,7 +52,7 @@ Follow these steps to configure Audit Log Purging:
    >The content path only applies to children of the `/var/audit/com.day.cq.wcm.core.page` node in the repository.
 
 1. Save the rule.
-1. The rule you just created needs to be exposed in the Operations Dashboard in order for it to be executed. To do this, go **Tools - Operations - Maintenance** from the AEM Welcome screen.
+1. The rule you created needs to be exposed in the Operations Dashboard in order for it to be executed. To do this, go **Tools - Operations - Maintenance** from the AEM Welcome screen.
 
 1. Press the **Weekly Maintenance Window** card.
 

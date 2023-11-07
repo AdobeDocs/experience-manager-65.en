@@ -23,7 +23,7 @@ cURL is an open-source command-line tool used to perform URL manipulations. It s
 
 cURL is a well-established and widely-used tool for getting or sending data using the URL syntax and was originally released in 1997. The name cURL originally meant "see URL."
 
-Because of the RESTful nature of the Sling framework upon which AEM is built, most tasks can be reduced to a URL call, which can be executed with cURL. [Content manipulation tasks](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) such as activating pages, and starting workflows as well as [operational tasks](/help/sites-administering/curl.md#common-operational-aem-curl-commands) such as package management and managing users can be automated using cURL. In addition you can [create your own cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) commands for most tasks in AEM.
+Because of the RESTful nature of the Sling framework upon which AEM is built, most tasks can be reduced to a URL call, which can be executed with cURL. [Content manipulation tasks](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) such as activating pages, and starting workflows and [operational tasks](/help/sites-administering/curl.md#common-operational-aem-curl-commands) such as package management and managing users can be automated using cURL. In addition you can [create your own cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) commands for most tasks in AEM.
 
 >[!NOTE]
 >

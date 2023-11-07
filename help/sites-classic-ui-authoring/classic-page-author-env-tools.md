@@ -176,7 +176,7 @@ The **Audit Log** can be accessed from the **Information** tab of the sidekick. 
 
 ## Page Information {#page-information}
 
-The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
+The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, and so on.
 
 ## Page Modes {#page-modes}
 
@@ -201,7 +201,7 @@ The row of icons at the bottom of the Sidekick are used to switch modes for work
 >
 >* [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [Client Context](/help/sites-administering/client-context.md)
->* Websites - will open the Websites console.
+>* Websites - opens the Websites console.
 >* Reload - will refresh the page.
 
 ## Keyboard Shortcuts {#keyboard-shortcuts}

@@ -24,7 +24,7 @@ To create a language copy, trigger one of the following language copy workflows 
 You use the create and translate workflow to generate language copies for a particular language for the first time. The workflow provides the following options:
 
 * Create structure only.
-* Create a new translation project.
+* Create a translation project.
 * Add to existing translation project.
 
 ### Create structure only {#create-structure-only}
@@ -49,7 +49,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
    ![reveal-in-assets](assets/reveal-in-assets.png)
 
-### Create a new translation project {#create-a-new-translation-project}
+### Create a translation project {#create-a-new-translation-project}
 
 If you use this option, assets to be translated are copied to the language root of the language to which you want to translate. Depending upon the options you choose, a translation project is created for the assets in the Projects console. Depending on the settings, the translation project can be started manually or runs automatically as soon as the translation project is created.
 
@@ -158,10 +158,10 @@ If you use this option, the translation workflow runs for assets that you add to
 
 Run this workflow to translate any additional set of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously translated assets. Depending upon the choice of options, a translation project is created or an existing translation project is updated for the new assets. The Update language copies workflow includes the following options:
 
-* Create a new translation project
+* Create a translation project
 * Add to existing translation project
 
-### Create a new translation project {#create-a-new-translation-project-1}
+### Create a translation project {#create-a-new-translation-project-1}
 
 If you use this option, a translation project is created for the set of assets for which you want to update a language copy.
 

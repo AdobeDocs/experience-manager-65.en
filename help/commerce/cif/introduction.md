@@ -12,7 +12,7 @@ With Adobe Experience Manager content and commerce, brands can scale and innovat
 
 With ever-increasing customer expectations for online commerce experiences, brands are pressured to deliver differentiated experiences and more content faster. However, implementing a content management platform often requires heavy time and budget investments in developing foundational elements, such as custom components and authoring tools, and accrues costs in maintenance and upgrades. Experience Manager Sites offers Content and Commerce as an add-on module for Experience Manager that provides out-of-the-box commerce core components, authoring tools, and a reference storefront to accelerate go-live, enable seamless collaboration across teams, and drive conversion.
 
-Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Experience Cloud, as well as any commerce engine of choice. With Experience Manager Content and Commerce, brands can:
+Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Experience Cloud, and any commerce engine of choice. With Experience Manager Content and Commerce, brands can:
 
 * Scale and innovate faster
 * Personalize experiences to drive conversion

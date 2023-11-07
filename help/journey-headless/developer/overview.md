@@ -1,11 +1,11 @@
 ---
 title: AEM Headless Developer Journey
-description: AEM Headless CMS Documentation. Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
+description: AEM Headless CMS Documentation. Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to use them on your first development project.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
 ---
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
 
-Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first headless development project. This journey provides you with all the AEM Headless Documentation you need to develop your first headless application.
+Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to use them on your first headless development project. This journey provides you with all the AEM Headless Documentation you need to develop your first headless application.
 
 ## Introduction {#introduction}
 
@@ -42,7 +42,7 @@ The following are the personas that interact in this journey.
 |Administrator|Manages the base setup and configuration of AEM|The developer works with the administrator to make configuration changes needed for development.|
 |Content Architect|Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data|Developers work with the content architect to understand the structure of the data and requirements for delivering it headlessly.|
 
-Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
+Information in this journey can be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/home.md#journeys)
 
 ## The Headless Developer Journey {#the-journey}
 
@@ -69,7 +69,7 @@ You are now ready to get started on your Adobe Headless journey. We encourage yo
 
 ### Choose Your Own Adventure {#choose-your-path}
 
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So please consider these two options.
+However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So consider these two options.
 
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
@@ -78,7 +78,7 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
+As such, journeys are designed to stand on their own. However, several them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
 
 * [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - If you prefer to learn by doing and are technically inclined, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.

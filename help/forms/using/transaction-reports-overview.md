@@ -34,7 +34,7 @@ Actions like submitting a PDF Form, using Agent UI to preview an interactive com
 
 ## Supported Topology {#supported-topology}
 
-Transaction reports are available only on AEM Forms on OSGi environment. It supports author-publish, author-processing-publish, and only processing topologies. For example topologies, see [Architecture and deployment topologies for AEM Forms](../../forms/using/transaction-reports-overview.md).
+Transaction reports are available only on AEM Forms on OSGi environment. It supports author-publish, author-processing-publish, and only processing topologies. For example, topologies, see [Architecture and deployment topologies for AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 The transaction count is reverse replicated from publish instances to author or processing instances. An indicative author-publish topology is displayed below:
 

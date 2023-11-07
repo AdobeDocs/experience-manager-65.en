@@ -424,7 +424,7 @@ Examples:
 * If you plan on capturing all the **ERROR** messages - no configuration is required. All the ERROR messages are captured by default.
 * If you plan on capturing all the **ERROR**, **WARN** and **INFO** messages - the logger name should be set to: "**root**", and the logger level to: **INFO**.
 
-* If you plan on capturing all the messages coming from a certain package (for example com.adobe.granite) - the logger name should be set to: "com.adobe.granite". And, the logger level set to: **DEBUG** (doing so captures all the **ERROR**, **WARN**, **INFO**, and **DEBUG** messages), as shown in the image below.
+* If you plan on capturing all the messages coming from a certain package (for example, com.adobe.granite) - the logger name should be set to: "com.adobe.granite". And, the logger level set to: **DEBUG** (doing so captures all the **ERROR**, **WARN**, **INFO**, and **DEBUG** messages), as shown in the image below.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 

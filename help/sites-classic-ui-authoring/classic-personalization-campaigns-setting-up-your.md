@@ -14,10 +14,10 @@ Setting up a new campaign includes the following (generic) steps:
 
 1. [Create a brand](#creating-a-new-brand) to hold your campaigns.
 1. If required you can [define the properties for your new brand](#defining-the-properties-for-your-new-brand).
-1. [Create a campaign](#creating-a-new-campaign) to hold experiences; for example teaser pages or a newsletter.
+1. [Create a campaign](#creating-a-new-campaign) to hold experiences; for example, teaser pages or a newsletter.
 1. If required you can [define the properties for your new campaign](#defining-the-properties-for-your-new-campaign).
 
-Then depending on the type of experience(s) you are creating, you will need to [create an experience](#creating-a-new-experience). The details of the experience, and the actions that follow its creation, are dependent on the type of experience you want to create:
+Then, depending on the type of experiences you create, you must [create an experience](#creating-a-new-experience). The details of the experience, and the actions that follow its creation, are dependent on the type of experience you want to create:
 
 * If creating a Teaser:
 
@@ -44,15 +44,13 @@ Then depending on the type of experience(s) you are creating, you will need to [
 
 ## Creating a New Brand {#creating-a-new-brand}
 
-To create a new brand:
-
 1. Open the **MCM** and select **Campaigns** in the left pane.
 
 1. Select **New...** to enter the **Title** and **Name** and template to be used for your new brand:
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. Click **Create**. Your new brand will be shown in the MCM (with a default icon).
+1. Click **Create**. Your new brand is shown in the MCM (with a default icon).
 
 ### Defining the Properties for Your New Brand {#defining-the-properties-for-your-new-brand}
 
@@ -66,17 +64,15 @@ To create a new brand:
 
 ### Creating a New Campaign {#creating-a-new-campaign}
 
-To create a new campaign:
-
 1. From **Campaigns**, select your new brand in the left pane, or double-click the icon in the right pane.
 
-   The overview will be shown (empty if the brand is new).
+   The overview is shown (empty if the brand is new).
 
 1. Click **New...** and specify the **Title**, **Name** and template to be used for your new campaign.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. Click **Create**. Your new campaign will be shown in the MCM.
+1. Click **Create**. Your new campaign is shown in the MCM.
 
 ### Defining the Properties for Your New Campaign {#defining-the-properties-for-your-new-campaign}
 
@@ -99,7 +95,7 @@ Configure campaign properties that control the behavior:
 
 ### Creating a New Experience {#creating-a-new-experience}
 
-The procedure for creating a new experience is dependent on the type of experience:
+The procedure for creating an experience is dependent on the type of experience:
 
 * [Creating a Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [Creating a Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
@@ -148,7 +144,7 @@ If you have existing experiences you can add a touchpoint directly from the Cale
 >[!NOTE]
 >
 >Adobe is not planning to further enhance this capability (Managing Leads).
->Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>Recommendation is to use [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM, you can organize and add leads either by entering them manually or importing a comma-separated list, for example, a mailing list. Additional ways to generate leads are from newsletter sign-ups or community sign-ups (if configured, those can trigger a workflow that populates leads).
 
@@ -166,7 +162,7 @@ In the Dashboard, you access all leads by clicking **Leads** from the left pane.
 
 After you create new leads, be sure to [activate them](#activating-or-deactivating-leads) so that you can track their activity on the publish instance and personalize their experience.
 
-To create a new lead manually:
+To create a lead manually:
 
 1. In AEM, navigate to the MCM. In the Dashboard, click **Leads**.
 1. Click **New**. The **Create New** window opens.
@@ -201,7 +197,7 @@ To active or deactive leads:
 
 ### Importing new leads {#importing-new-leads}
 
-When you import new leads, you can automatically add them to an existing list or create a new list to include these leads.
+When you import new leads, you can automatically add them to an existing list or create a list to include these leads.
 
 To import leads from a comma-separated list:
 
@@ -296,7 +292,7 @@ To delete existing leads in the MCM, select the check box next to the lead and c
 >[!NOTE]
 >
 >Adobe is not planning to further enhance this capability (managing lists).
->Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>Recommendation is to use [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 Lists let you organize your leads into groups. With lists, you can target your marketing campaigns to a select group of people, for example, you can send a targeted newsletter to a list. Lists are visible in the MCM, either in the Dashboard or by clicking **Lists**. Both provide you with the name of the list and the number of members.
 
@@ -308,8 +304,6 @@ If you click **Lists**, you also can view if the list is a member of another lis
 
 ### Creating new lists {#creating-new-lists}
 
-To create a new list (group):
-
 1. In the MCM dashboard, click **New List ...** or in **Lists**, click **New** ... The Create List window opens.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
@@ -319,8 +313,6 @@ To create a new list (group):
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### Modifying existing lists {#modifying-existing-lists}
-
-To modify an existing list:
 
 1. In the MCM, click **Lists**.
 
@@ -378,7 +370,7 @@ To merge existing lists:
 
 At anytime, you can view which leads belong to a specific list either by browsing or searching for members.
 
-To view the leads that belong to a list:
+To view the leads in lists:
 
 1. In the MCM, click **Lists**.
 

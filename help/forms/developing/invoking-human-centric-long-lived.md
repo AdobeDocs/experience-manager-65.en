@@ -50,7 +50,7 @@ The `FirstAppSolution/PreLoanProcess` process is invoked when an applicant submi
  </LoanApp>
 ```
 
-XML data passed to a process must match the fields located in the form used in the process. Otherwise, data is not displayed within the form. All applications that invoke the `FirstAppSolution/PreLoanProcess` process must pass this XML data source. The applications created in *Invoking Human-Centric Long-Lived Processes* dynamically create the XML data source from values that a user entered into a web client.
+XML data passed to a process must match the fields in the form used in the process. Otherwise, data is not displayed within the form. All applications that invoke the `FirstAppSolution/PreLoanProcess` process must pass this XML data source. The applications created in *Invoking Human-Centric Long-Lived Processes* dynamically create the XML data source from values that a user entered into a web client.
 
 Using a client application, you can send the *FirstAppSolution/PreLoanProcess* process the required XML data. A long-lived process returns an invocation identifier value as its return value. The following illustration shows client applications invoking the*FirstAppSolution/PreLoanProcess long-lived process. The client applications send XML data and get back a string value that represents the invocation identifier value.
 
@@ -209,7 +209,7 @@ The following Java code example represents the Java servlet that invokes the `Fi
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -315,7 +315,7 @@ The following Java code example represents the Java servlet that invokes the `Fi
                  DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
                  DocumentBuilder builder = factory.newDocumentBuilder();
  
-                 //Create a new Document object
+                 //Create a Document object
                  document = builder.newDocument();
  
                  //Create MortgageApp - the root element in the XML
@@ -512,7 +512,7 @@ Notice under Service References, there are two items. The first item is named* J
 
 ### Create an ASP page that invokes FirstAppSolution/PreLoanProcess {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}
 
-Within the ASP.NET project, add a web form (an ASPX file) that is responsible for displaying an HTML page to the loan applicant. The web form is based on a class that is derived from `System.Web.UI.Page`. The C# application logic that invokes `FirstAppSolution/PreLoanProcess` is located in the `Button1_Click` method (this button represents the Submit Application button).
+Within the ASP.NET project, add a web form (an ASPX file) that is responsible for displaying an HTML page to the loan applicant. The web form is based on a class that is derived from `System.Web.UI.Page`. The C# application logic that invokes `FirstAppSolution/PreLoanProcess` is in the `Button1_Click` method (this button represents the Submit Application button).
 
 The following illustration shows the ASP.NET application
 
@@ -553,7 +553,7 @@ The following table lists the controls that are part of this ASP.NET application
  </tbody>
 </table>
 
-The application logic that is part of the ASP.NET application must dynamically create an XML data source to pass to the `FirstAppSolution/PreLoanProcess` process. The values that the applicant entered into the HTML page must be specified within the XML data source. These data values are merged into the form when the form is viewed in Workspace. The classes located in the `System.Xml` namespace are used to create the XML data source.
+The application logic that is part of the ASP.NET application must dynamically create an XML data source to pass to the `FirstAppSolution/PreLoanProcess` process. The values that the applicant entered into the HTML page must be specified within the XML data source. These data values are merged into the form when the form is viewed in Workspace. The classes in the `System.Xml` namespace are used to create the XML data source.
 
 When invoking a process that requires XML data from an ASP.NET application, an XML data type is available for you to use. That is, you cannot pass a `System.Xml.XmlDocument` instance to the process. The fully qualified name of this XML instance to pass to the process is `InvokePreLoanProcess.PreLoanProcess.XML`. Convert the `System.Xml.XmlDocument` instance to `InvokePreLoanProcess.PreLoanProcess.XML`. You can perform this task by using the following code.
 
@@ -809,7 +809,7 @@ The following C# code example invokes the `FirstAppSolution/PreLoanProcess`proce
 
 >[!NOTE]
 >
->The values located in the getJobDescription user-defined method correspond to values returned by the Job Manager service.
+>The values in the getJobDescription user-defined method correspond to values returned by the Job Manager service.
 
 ### Run the ASP.NET application {#run-the-asp-net-application}
 

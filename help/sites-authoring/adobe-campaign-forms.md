@@ -48,7 +48,7 @@ First of all, check the connection between the author and publish instances and 
 >Make sure the **acMapping** property on the page's **jcr:content** node is set to **mapRecipient** or **profile** when using Adobe Campaign Classic or Adobe Campaign Standard, respectively
 >
 
-1. In AEM, in Sites, navigate to where you want to create a new page.
+1. In AEM, in Sites, navigate to where you want to create a page.
 1. Create a page and select **Adobe Campaign Classic Profile **or** Adobe Campaign Standard Profile** and click **Next**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
@@ -89,7 +89,7 @@ This section only details specific links to Adobe Campaign. For more information
     * **Adobe Campaign: Subscribe to Services**: lets you manage the subscriptions of a recipient in Adobe Campaign.
     * **Adobe Campaign: Unsubscribe from Services**: lets you cancel the subscriptions of a recipient in Adobe Campaign.
 
-1. You must have an **Encrypted Primary Key** component on each form. This component defines which URL parameter will be used to accept the encrypted primary key of an Adobe Campaign profile. In Components, select Adobe Campaign so only those componente are visible.
+1. You must have an **Encrypted Primary Key** component on each form. This component defines which URL parameter is used to accept the encrypted primary key of an Adobe Campaign profile. In Components, select Adobe Campaign so only those componente are visible.
 1. Drag the component **Encrypted Primary Key** to the form (anywhere) and click or tap the **Configuration** icon. In the **Adobe Campaign** tab, specify any name for the URL parameter. Click or tap the check mark to save your changes.
 
    Generated links to this form need to use this URL parameter and assign it the encrypted primary key of an Adobe Campaign profile. The encrypted primary key must be properly URL (percent) encoded.

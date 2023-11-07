@@ -291,7 +291,7 @@ AEM Forms exposes the metadata schemas of the supported forms types in this tool
 
 1. Click a component that you just dragged. In the Settings tab that opens in the right panel, fill in information for the following fields:
 
-    1. Specify a Field Label which will be used as a display name above the field placed in schema (For example: Department)
+    1. Specify a Field Label which is used as a display name above the field placed in schema (For example: Department)
     1. Under Map to property field, you can see a prefilled value **'./jcr:content/metadata/default'**. Change the ‘**default**’ to a desired property name, which is used to store the property in crx repository (For example: './jcr:content/metadata/department')
 
        >[!NOTE]

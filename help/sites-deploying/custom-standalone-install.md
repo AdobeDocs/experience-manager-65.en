@@ -1,8 +1,6 @@
 ---
 title: Custom Standalone Install
-seo-title: Custom Standalone Install
 description: Learn about the options available when installing a standalone AEM instance.
-seo-description: Learn about the options available when installing a standalone AEM instance.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
@@ -39,7 +37,7 @@ There are various rules to be followed when renaming the quickstart jar file:
 
 ### Java 11 Considerations {#java-considerations}
 
-If you are running Oracle Java 11 (or generally versions of Java newer than 8), additional switches will need to be added to your command line when starting AEM.
+If you are running Oracle Java 11 (or generally versions of Java newer than 8), additional switches must be added to your command line when starting AEM.
 
 * The following - `-add-opens` switches need to be added to prevent related reflection access WARNING messages in the `stdout.log`
 
@@ -61,7 +59,7 @@ Finally, if you are running an instance upgraded from AEM 6.3, make sure the fol
 
 ## Run Modes {#run-modes}
 
-**Run modes** let you tune your AEM instance for a specific purpose; for example, author or publish, test, development, intranet etc. These modes also let you control the use of sample content. This sample content is defined before the quickstart is built and can include packages, configurations, etc. This can be particularly useful for production-ready installations when you want to keep your installation lean and without sample content. For more information see:
+**Run modes** let you tune your AEM instance for a specific purpose; for example, author or publish, test, development, intranet, and so on. These modes also let you control the use of sample content. This sample content is defined before the quickstart is built and can include packages, configurations, and so on. This can be particularly useful for production-ready installations when you want to keep your installation lean and without sample content. For more information see:
 
 * [Run Modes](/help/sites-deploying/configure-runmodes.md)
 
@@ -137,7 +135,7 @@ To uninstall the service, either click **Stop** in the **Services** control pane
 
 ## Redefining the location of the temporary work directory {#redefining-the-location-of-the-temporary-work-directory}
 
-The default location of the temporary folder of the java machine is `/tmp`. AEM uses this folder too, for example when building packages.
+The default location of the temporary folder of the java machine is `/tmp`. AEM uses this folder too, for example, when building packages.
 
 If you want to change the location of the temporary folder (for example, if you need a directory with more free space) then define a * `<new-tmp-path>`* by adding the JVM parameter:
 

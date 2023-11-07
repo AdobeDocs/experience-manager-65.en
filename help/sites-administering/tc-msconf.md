@@ -16,7 +16,7 @@ Create a configuration for the [Microsoft Translator](https://www.microsoft.com/
 |Property|Description|
 |---|---|
 |Translation Label|The display name for the translation service|
-|Translation Attribution|(Optional) For user-generated content, the attribution that appears next to translated text, for example `Translations by Microsoft`|
+|Translation Attribution|(Optional) For user-generated content, the attribution that appears next to translated text, for example, `Translations by Microsoft`|
 |Workspace ID|(Optional) The ID of your customized Microsoft Translator engine to use|
 |Subscription Key|Your Microsoft Subscription Key for Microsoft Translator|
 

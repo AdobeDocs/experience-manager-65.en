@@ -102,7 +102,7 @@ After you set EJB endpoint attributes, you can create an EJB endpoint for a serv
 
 **Enable the endpoint**
 
-After you create a new endpoint, you must enable it. After you enable the endpoint, it can be used to invoke the service. After you enable the endpoint, you can view it within administration console.
+After you create an endpoint, you must enable it. After you enable the endpoint, it can be used to invoke the service. After you enable the endpoint, you can view it within administration console.
 
 **See also**
 
@@ -207,7 +207,7 @@ After you set SOAP endpoint attributes, you can create a SOAP endpoint.
 
 **Enable the endpoint**
 
-After you create a new endpoint, you must enable it. When the endpoint is enabled, it can be used to invoke the service. After you enable the endpoint, you can view see it within administration console.
+After you create an endpoint, you must enable it. When the endpoint is enabled, it can be used to invoke the service. After you enable the endpoint, you can view see it within administration console.
 
 **See also**
 
@@ -313,7 +313,7 @@ To create a Watched Folder endpoint for a service, specify the following values:
 
 **Specify configuration values**
 
-You must specify configuration values for a Watched Folder endpoint when programmatically adding a Watched Folder endpoint to a service. These configuration values are specified by an administrator if a Watched Folder endpoint is added by using administration console.
+Specify configuration values for a Watched Folder endpoint when programmatically adding a Watched Folder endpoint to a service. These configuration values are specified by an administrator if a Watched Folder endpoint is added by using administration console.
 
 The following list specifies configuration values that are set when programmatically adding a Watched Folder endpoint to a service:
 
@@ -546,7 +546,7 @@ To create an Email endpoint for a service, specify the following values:
 
 **Specify configuration values**
 
-You must specify configuration values for an Email endpoint when programmatically adding an Email endpoint to a service. These configuration values are specified by an administrator if an Email endpoint is added using administration console.
+Specify configuration values for an Email endpoint when programmatically adding an Email endpoint to a service. These configuration values are specified by an administrator if an Email endpoint is added using administration console.
 
 >[!NOTE]
 >
@@ -805,7 +805,7 @@ After you set Remoting endpoint attributes, you can create a Remoting endpoint f
 
 **Enable the endpoint**
 
-After you create a new endpoint, you must enable it. When a Remoting endpoint is enabled, it enables a Flex client to invoke the service.
+After you create an endpoint, you must enable it. When a Remoting endpoint is enabled, it enables a Flex client to invoke the service.
 
 **See also**
 
@@ -893,7 +893,7 @@ Before you can programmatically add a TaskManager endpoint, you must create an `
 
 **Create a category for the endpoint**
 
-Categories are used to organize services within Workspace. That is, a Workspace user can invoke a service that has a TaskManager endpoint by selecting a category within Workspace. When creating a TaskManager endpoint, you can either reference an existing category or programmatically create a new category.
+Categories are used to organize services within Workspace. That is, a Workspace user can invoke a service that has a TaskManager endpoint by selecting a category within Workspace. When creating a TaskManager endpoint, you can either reference an existing category or programmatically create a category.
 
 >[!NOTE]
 >
@@ -916,7 +916,7 @@ After you set a TaskManager endpoint attributes, you can create a TaskManager en
 
 **Enable the endpoint**
 
-After you create a new endpoint, you must enable it. When the endpoint is enabled, it can be used to invoke the service from within Workspace. After you enable the endpoint, you can view it within administration console.
+After you create an endpoint, you must enable it. When the endpoint is enabled, it can be used to invoke the service from within Workspace. After you enable the endpoint, you can view it within administration console.
 
 **See also**
 
@@ -1028,7 +1028,7 @@ When modifying an endpoint, specify new configuration values. For example, to mo
 
 >[!NOTE]
 >
->You cannot modify the service that is invoked by the endpoint. If you attempt to modify the service, an exception is thrown. To modify the service associated with a given endpoint, remove the endpoint and create a new one. (See [Removing Endpoints](programmatically-endpoints.md#removing-endpoints).)
+>You cannot modify the service that is invoked by the endpoint. If you attempt to modify the service, an exception is thrown. To modify the service associated with a given endpoint, remove the endpoint and create a one. (See [Removing Endpoints](programmatically-endpoints.md#removing-endpoints).)
 
 **See also**
 
@@ -1122,7 +1122,7 @@ You can retrieve an endpoint by retrieving a list of endpoints. You can then ite
 
 **Remove the endpoint**
 
-After you create a new endpoint, you must enable it. When the endpoint is enabled, it can be used to invoke the service. After you enable the endpoint, you can view it within administration console.
+After you create an endpoint, you must enable it. When the endpoint is enabled, it can be used to invoke the service. After you enable the endpoint, you can view it within administration console.
 
 **See also**
 

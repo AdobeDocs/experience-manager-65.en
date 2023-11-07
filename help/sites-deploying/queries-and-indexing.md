@@ -426,7 +426,7 @@ AEM can also be configured to work with a remote Solr server instance:
 
 #### Recommended configuration for Solr {#recommended-configuration-for-solr}
 
-Below is an example of a base configuration that can be used with all three Solr deployments described in this article. It accommodates the dedicated property indexes that are already present in AEM and should not be used with other applications.
+Below is an example of a base configuration that can be used with all three Solr deployments described in this article. It accommodates the dedicated property indexes that are already present in AEM; do not use with other applications.
 
 To properly use it, you must place the contents of the archive directly in the Solr Home Directory. If there are multi-node deployments, it should go directly under the root folder of each node.
 

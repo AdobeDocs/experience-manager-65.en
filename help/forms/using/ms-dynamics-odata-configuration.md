@@ -1,14 +1,9 @@
 ---
 title: Microsoft Dynamics OData configuration
-seo-title: Microsoft Dynamics ODtata configuration
-description: Leverage, integrate, and work with online and on-premises Microsoft Dynamics services through form data model.
-seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
-uuid: 37e59633-484b-4a20-808d-2a0bc0d336cc
+description: Learn how to use, integrate, and work with online and on-premises Microsoft Dynamics services through form data model.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
-
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
 ---
@@ -27,7 +22,7 @@ Microsoft Dynamics is a Customer Relationship Management (CRM) and Enterprise Re
 * Write data into Microsoft Dynamics on adaptive form submission
 * Write data in Microsoft Dynamics through custom entities defined in form data model and conversely
 
-AEM Forms add-on package also includes reference OData configuration that you can leverage to quickly integrate Microsoft Dynamics with AEM Forms.
+AEM Forms add-on package also includes reference OData configuration that you can use to quickly integrate Microsoft Dynamics with AEM Forms.
 
 When the package is installed, the following entities and services are available on your AEM Forms instance:
 

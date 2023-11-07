@@ -79,7 +79,7 @@ While all queries are converted to SQL2 before being run, the overhead of query 
 
 ### The Explain Query Tool {#the-explain-query-tool}
 
-As with any query language, the first step to optimizing a query is to understand how it will run. To enable this activity, you can use the [Explain Query tool](/help/sites-administering/operations-dashboard.md#explain-query) that is part of the Operations Dashboard. With this tool, a query can be plugged in and explained. A warning is shown if the query will cause issues with a large repository and run time and the indexes that will be used. The tool can also load a list of slow and popular queries that can then be explained and optimized.
+As with any query language, the first step to optimizing a query is to understand how it will run. To enable this activity, you can use the [Explain Query tool](/help/sites-administering/operations-dashboard.md#explain-query) that is part of the Operations Dashboard. With this tool, a query can be plugged in and explained. A warning is shown if the query will cause issues with a large repository and run time and the indexes that are used. The tool can also load a list of slow and popular queries that can then be explained and optimized.
 
 ### DEBUG Logging for Queries {#debug-logging-for-queries}
 
@@ -103,7 +103,7 @@ Once you are logged in to the JMX console, perform a search for **Lucene Index S
 
 For query statistics, look at the MBean named **Oak Query Statistics**.
 
-If you would like to dig into your indexes using a tool like [Luke](https://code.google.com/archive/p/luke/), you must use the Oak console to dump the index from the `NodeStore` to a filesystem directory. For instructions on how to do this, please read the [Lucene documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+If you would like to dig into your indexes using a tool like [Luke](https://code.google.com/archive/p/luke/), you must use the Oak console to dump the index from the `NodeStore` to a filesystem directory. For instructions on how to do this, read the [Lucene documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 You can also extract the indexes in your system in JSON format. To do this, you need to access `https://server:port/oak:index.tidy.-1.json`
 
@@ -160,7 +160,7 @@ In general, it is recommended you use Lucene indexes unless there is a compellin
 
 ### Solr Indexing {#solr-indexing}
 
-AEM also provides support for Solr indexing by default. This is leveraged to support full text search, but it can also be used to support any type of JCR query. Solr should be considered when the AEM instances do not have the CPU capacity to handle the number of queries required in search intensive deployments like search driven websites with a high number of concurrent users. Alternately, Solr can be implemented in a crawler-based approach to use some of the more advanced features of the platform.
+AEM also provides support for Solr indexing by default. This is used to support full text search, but it can also be used to support any type of JCR query. Solr should be considered when the AEM instances do not have the CPU capacity to handle the number of queries required in search intensive deployments like search driven websites with a high number of concurrent users. Alternately, Solr can be implemented in a crawler-based approach to use some of the more advanced features of the platform.
 
 Solr indexes can be configured to run embedded on the AEM server for development environments or can be offloaded to a remote instance to improve search scalability on the production and staging environments. While offloading search improves scalability, it introduces latency and because of this, is not recommended unless required. For more info on how to configure Solr integration and how to create Solr indexes see the [Oak Queries and Indexing documentation](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
@@ -183,7 +183,7 @@ The Oak documentation for Lucene indexes lists several considerations to make wh
 * In a property index, having a unique property name would help to reduce the size on an index, but for Lucene indexes, use of `nodeTypes` and `mixins` should be made to achieve cohesive indexes. Querying a specific `nodeType` or `mixin` will be more performant than querying `nt:base`. When using this approach, define `indexRules` for the `nodeTypes` in question.
 
 * If your queries are only being run under certain paths, then create those indexes under those paths. Indexes are not required to live at the root of the repository.
-* It is recommended to use a single index when all of the properties being indexed are related to allow Lucene to evaluate as many property restrictions as possible natively. Also, a query will only use one index, even when performing a join.
+* Use a single index when all of the properties being indexed are related to allow Lucene to evaluate as many property restrictions as possible natively. Also, a query will only use one index, even when performing a join.
 
 ### CopyOnRead {#copyonread}
 
@@ -291,7 +291,7 @@ The following detail possible issues together with resolutions:
 
         * Else, [reindex](#how-to-re-index) the lucene index
 
-            * Note: The index state from the last good reindexing (or initial indexing) will be used until a new reindexing is triggered
+            * Note: The index state from the last good reindexing (or initial indexing) is used until a new reindexing is triggered
 
 ### Erring and exceptional situations {#erring-and-exceptional-situations}
 
@@ -420,7 +420,7 @@ Text pre-extraction cannot be used for new content added to the repository, nor 
 
 New content is added to the repository will naturally and incrementally be indexed by the async full-text indexing process (by default, every 5 seconds).
 
-Under normal operation of AEM, for example uploading Assets via the Web UI or programmatic ingest of Assets, AEM will automatically and incrementally full-text index the new binary content. Since the amount of data is incremental and relatively small (approximately the amount of data that can be persisted to the repository in 5 seconds), AEM can perform the full-text extraction from the binaries during indexing without effecting overall system performance.
+Under normal operation of AEM, for example, uploading Assets via the Web UI or programmatic ingest of Assets, AEM will automatically and incrementally full-text index the new binary content. Since the amount of data is incremental and relatively small (approximately the amount of data that can be persisted to the repository in 5 seconds), AEM can perform the full-text extraction from the binaries during indexing without effecting overall system performance.
 
 #### Prerequisites to using text pre-extraction {#prerequisites-to-using-text-pre-extraction}
 

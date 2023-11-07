@@ -263,7 +263,7 @@ The adaptive image mechanism is made available via a script that controls select
 
 >[!CAUTION]
 >
->Custom stylesheet clientlibs must be loaded as part of the header for them to work properly on author as well as publish.
+>Custom stylesheet clientlibs must be loaded as part of the header for them to work properly on author and publish.
 
 ## Enable the Layout Container Component for Page {#enable-the-layout-container-component-for-page}
 

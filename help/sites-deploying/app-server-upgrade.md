@@ -61,7 +61,7 @@ All the examples in this procedure use Tomcat as the Application Server and impl
 
     * Remove **sling.options.file** by running: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf` 
 
-1. Now, create the node store and data store that will be used with AEM 6.5. You can do this by creating two files with the following names under `crx-quickstart\install`:
+1. Now, create the node store and data store that is used with AEM 6.5. You can do this by creating two files with the following names under `crx-quickstart\install`:
 
     * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
     * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`

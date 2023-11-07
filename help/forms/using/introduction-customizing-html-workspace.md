@@ -38,7 +38,7 @@ The most commonly applicable steps are covered in [Generic steps for AEM Forms w
 
 Before customizing workspace, make yourself familiar with the default style sheet supplied with AEM Forms at /libs/ws/css/style.css.
 
-To customize the workspace, it is recommended that you make yourself familiar with the existing style sheet, style.css, located in /libs/ws/css folder. A few prominent components are described below.
+To customize the workspace, it is recommended that you make yourself familiar with the existing style sheet, style.css, in /libs/ws/css folder. A few prominent components are described below.
 
 <table>
  <tbody>
@@ -197,7 +197,7 @@ It is primarily meant for customizations, as it provides the capability to gener
         * js:
 
             * libs - Contains all third-party libraries used in AEM Forms workspace.
-            * licenses - Contains licenses for HTML and JS files as well as code to prefix these licenses to respective source files.
+            * licenses - Contains licenses for HTML and JS files and code to prefix these licenses to respective source files.
             * minifier - Used for combination, minification, and uglification of customizedJavaScript code.
             * resourcejs_optimizer - Used for combination, minification, and uglification ofJavaScript source.
             * resource_generator - Used for generating register.js and modelcontrollerpath.js.

@@ -22,7 +22,7 @@ Use the following procedure to set up a framework for video tracking using each 
 
 >[!NOTE]
 >
->For new implementations, it is recommended that you **do not use** the legacy options for video tracking. Please use the **Milestones** method instead.
+>For new implementations, it is recommended that you **do not use** the legacy options for video tracking. Use the **Milestones** method instead.
 
 ## Common steps {#common-steps}
 
@@ -370,7 +370,7 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
    ![lseconds](assets/lseconds.png)
 
-   *The call is similar to the Legacy Milestones call above. Please see the information on pev3 **[provided there](/help/sites-administering/adobeanalytics.md)**.*
+   *The call is similar to the Legacy Milestones call above. See the information on pev3 **[provided there](/help/sites-administering/adobeanalytics.md)**.*
 
 **References used in this tutorial:**
 

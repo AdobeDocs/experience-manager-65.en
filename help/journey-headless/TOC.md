@@ -2,7 +2,7 @@
 sub-product: AEM Headless Journeys
 user-guide-title: AEM Headless Journeys
 breadcrumb-title: AEM Headless Journeys
-user-guide-description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your project.
+user-guide-description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to use them on your project.
 feature: Developer Tools
 role: Developer, Architect
 ---

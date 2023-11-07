@@ -13,7 +13,7 @@ In the Content Fragment Editor you can select the Structure Tree icon:
 
 ![Content Fragment Structure Tree](assets/cfm-structuretree-01.png)
 
-This will open a representation of the fragment's structure in the left hand pane. Using this you can navigate through, and to, referenced fragments. Selecting a reference opens that fragment for editing.
+This opens a representation of the fragment's structure in the left hand pane. Using this you can navigate through, and to, referenced fragments. Selecting a reference opens that fragment for editing.
 
 >[!NOTE]
 >

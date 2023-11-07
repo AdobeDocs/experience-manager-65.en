@@ -34,7 +34,7 @@ To access this wizard:
    >
    >By default, there is only one translation setting. To be able to select other settings, you have to configure cloud configurations first. See [Configuring the Translation Integration Framework](/help/sites-administering/tc-tic.md).
 
-1. The **Next** button brings you to the **Translate** step of the wizard. Here you can choose between creating the structure only, creating a new translation project or adding to an existing translation project.
+1. The **Next** button brings you to the **Translate** step of the wizard. Here you can choose between creating the structure only, creating a translation project, or adding to an existing translation project.
 
    >[!NOTE]
    >

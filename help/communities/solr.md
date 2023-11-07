@@ -106,7 +106,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 
 Multilingual Search (MLS) for AEM Communities is built for the Solr platform to provide improved search across all supported languages, including English.
 
-MLS for AEM Communities is available as either Standard MLS or Advanced MLS. Standard MLS only includes Solr configuration settings, and excludes any plugins or resource files. Advanced MLS is the more comprehensive solution and includes Solr configuration settings as well as plugins and related resources
+MLS for AEM Communities is available as either Standard MLS or Advanced MLS. Standard MLS only includes Solr configuration settings, and excludes any plugins or resource files. Advanced MLS is the more comprehensive solution and includes Solr configuration settings and plugins and related resources
 
 Standard MLS includes enhancements for content search for the following languages:
 

@@ -29,7 +29,7 @@ The following illustration shows three source documents being merged into a sing
 
 Assembling a simple PDF document from multiple PDF documents
 
-The following example is a simple DDX document used to assemble the document. It specifies the names of the source documents used to produce the resultant document, as well as the name of the resultant document:
+The following example is a simple DDX document used to assemble the document. It specifies the names of the source documents used to produce the resultant document, and the name of the resultant document:
 
 ```xml
 <PDF result="Doc4">
@@ -80,15 +80,15 @@ If one or more of the input documents is encrypted, provide a password to open t
 
 When you assemble a document, you can use Bates numbering to apply a unique page identifier to each page. When you use Bates numbering, each page in the document (or set of documents) is assigned a number that uniquely identifies the page. For example, manufacturing documents that contain bill of material information and are associated with the production of an assembly can contain an identifier. A Bates number contains a sequentially incremented numeric value and an optional prefix and suffix. The prefix + numeric value + suffix is called a bates pattern.
 
-The following illustration shows a PDF document that contains a unique identifier located in the document’s header.
+The following illustration shows a PDF document that contains a unique identifier in the document’s header.
 
-![A PDF document that contains a unique identifier located in the document’s header](do-not-localize/as_batesnumber.png)
+![A PDF document that contains a unique identifier in the document’s header](do-not-localize/as_batesnumber.png)
 
-A PDF document that contains a unique identifier located in the document’s header
+A PDF document that contains a unique identifier in the document’s header
 
 ### Flatten and assemble documents {#flatten-and-assemble-documents}
 
-You can use the Assembler service to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, form fields retain their graphical appearance but are no longer interactive. One reason to flatten a PDF document is to ensure that data cannot be modified. In addition, scripts associated with the fields no longer function.
+You can use the Assembler service to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, form fields retain their graphical appearance but are no longer interactive. One reason to flatten a PDF document is to ensure that data cannot be modified. In addition, scripts associated with the fields no longer function.
 
 When you create a PDF document that is assembled from interactive PDF documents, the Assembler service flattens those forms before assembling them into the resultant document.
 

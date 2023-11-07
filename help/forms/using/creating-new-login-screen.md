@@ -1,17 +1,13 @@
 ---
-title: Creating a new login screen
-seo-title: Creating a new login screen
-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
-seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
-uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
+title: Creating a login screen
+description: How-to modify the login page of LiveCycle modules, for example, of AEM Forms workspace or Forms Manager.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 ---
-# Creating a new login screen{#creating-a-new-login-screen}
+# Creating a login screen{#creating-a-new-login-screen}
 
 You can modify the login screen of all AEM Forms modules that use the AEM Forms login screen. For example, the modifications affect the login screen of, both, Forms Manager and AEM Forms workspace.
 

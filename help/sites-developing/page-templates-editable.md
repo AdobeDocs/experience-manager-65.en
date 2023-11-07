@@ -52,7 +52,7 @@ Creating editable templates is primarily done with the [template console and tem
 
 For information on how to use editable templates in an AEM project see [Creating an AEM project using Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
-When creating a new editable template you:
+When creating an editable template you:
 
 1. Create a [folder for the templates](#template-folders). This folder is not mandatory, but is recommended best practice.
 1. Select a [template type](#template-type). This type is copied to create the [template definition](#template-definitions).
@@ -413,7 +413,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >

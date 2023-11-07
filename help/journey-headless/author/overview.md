@@ -37,7 +37,7 @@ This journey is designed for the Content Author persona. As a Content Author you
 
 The journey lays out the requirements, steps, and approach for authoring content for an AEM Headless project. The journey will define additional personas with which the author must interact for a successful project, but the point-of-view for the journey is that of the content author.
 
-Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
+Information in this journey can be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
 
 ## The Headless Content Author Journey {#the-journey}
 
@@ -60,7 +60,7 @@ You are now ready to get started on your Adobe Headless journey. We encourage yo
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
 
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So please consider these two options.
+However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So consider these two options.
 
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
@@ -70,10 +70,10 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
+As such, journeys are designed to stand on their own. However, several them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
-* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
+* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to use them on your first development project.
 * [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager, and how to model content for your project.
 * [AEM technical documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
   * An [Introduction to AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)

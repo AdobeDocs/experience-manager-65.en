@@ -46,7 +46,7 @@ The method of creating a content fragment is:
 1. Select **Create**, then **Content Fragment** to open the wizard.
 1. The first step of the wizard requires you to specify the basis of the new fragment.
 
-      * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Adventure** model
+      * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example, the **Adventure** model
 
         * All available models are displayed.
 
@@ -72,7 +72,7 @@ The method of creating a content fragment is:
 
         * **Name**
 
-          The name; will be used to form the URL.
+          The name; is used to form the URL.
 
           Mandatory; will be automatically derived from the title, but can be updated.
 
@@ -124,11 +124,11 @@ To open your fragment for editing:
 
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
+>To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 
 >[!CAUTION]
 >
->To edit a content fragment you need the appropriate permissions. Please contact your system administrator if you are experiencing issues.
+>To edit a content fragment you need the appropriate permissions. Contact your system administrator if you are experiencing issues.
 
 1. Use the **Assets** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by either:
@@ -136,7 +136,7 @@ To open your fragment for editing:
    * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
    * Selecting the fragment, then **Edit** from the toolbar.
 
-1. The fragment editor will open. Make your changes as required:
+1. The fragment editor opens. Make your changes as required:
 
    ![fragment editor](assets/cfm-managing-03.png)
 
@@ -174,13 +174,13 @@ Some features in the top toolbar are available from multiple modes:
 
 ![modes](assets/cfm-managing-top-toolbar.png)
 
-* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
+* A message is shown when the fragment is already referenced on a content page. You can **Close** the message.
 
 * The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
 * Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
 
-  * The name is also a link that will open the model editor.
+  * The name is also a link that opens the model editor.
 
 * See the status of the fragment; for example, information about when it was created, modified or published. 
 
@@ -221,7 +221,7 @@ The editor has various options:
 
   >[!CAUTION]
   >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
+  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Contact your system administrator if you are experiencing issues. 
 
   >[!NOTE]
   >
@@ -231,7 +231,7 @@ The editor has various options:
   >
   >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
   >
-  >Please bear this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
+  >Keep this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
 
 * **Close**
 
@@ -313,13 +313,13 @@ For example:
 
 The **Compare to Current** action is available from the [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
 
-This will open:
+This opens:
 
 * the **Current** (latest) version (left)
 
 * the selected version **v&lt;*x.y*&gt;** (right)
 
-They will be shown side by side, where:
+They are shown side by side, where:
 
 * Any differences are highlighted
 

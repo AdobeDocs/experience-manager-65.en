@@ -19,7 +19,7 @@ You can use the Layout mode to resize components for all device types such as de
 Select **Layout** from the drop-down list that appears at the top of the Interactive Communication authoring interface next to the **Preview** option. The form displays in the Layout mode.
 
 1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**.
-1. Create a new or open an existing [Interactive Communication](../../forms/using/create-interactive-communication.md).
+1. Create an [Interactive Communication](../../forms/using/create-interactive-communication.md) or open an existing one.
 1. Select **Layout** from the drop-down list that appears at the top next to the **Preview** option. The form displays in the Layout mode.
 
    ![Layout mode for Interactive Communications](assets/layout_mode_ic_new.png)

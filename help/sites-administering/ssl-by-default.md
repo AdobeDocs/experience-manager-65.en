@@ -1,14 +1,10 @@
 ---
 title: SSL/TLS By Default
-seo-title: SSL/TLS By Default
 description: Learn how to use SSL by Default feature in AEM 6.5.
-seo-description: Learn how to use SSL by Default in AEM.
-uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 ---
@@ -111,7 +107,7 @@ Below are examples for both a successful response and an error.
 <dt class='foundation-form-response-description'>Description</dt>
 <dd>HTTPS has been configured on port 8443. The private key and
 certificate were stored in the key store of the user ssl-service.
-Please take note of the key store password you provided. You will need
+Take note of the key store password you provided. You need
 it for any subsequent updating of the private key or certificate.</dd>
 </dl>
 <h2>Links</h2>
@@ -158,7 +154,7 @@ Below you will find an example for creating a self-signed certificate in DER for
 
 >[!NOTE]
 >
->The use of a self-signed certificate is for example purposes only and should not be used in production.
+>The use of a self-signed certificate is for sample purposes only. Do not use in production.
 
 1. First, create the private key:
 

@@ -24,7 +24,7 @@ An XDP can be rendered as a PDF form or an HTML form. The new capabilities inclu
 
 ### New HTML Forms service {#new-html-forms-service}
 
-The new HTML Forms service leverages the new feature in Forms to support rendering of XDP form as HTML. The new HTML Forms service exposes the following methods:
+The new HTML Forms service uses the new feature in Forms to support rendering of XDP form as HTML. The new HTML Forms service exposes the following methods:
 
 ```java
 /*

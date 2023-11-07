@@ -1,14 +1,10 @@
 ---
 title: AEM Livefyre Recipes
-seo-title: AEM Livefyre Recipes
 description: Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.
-seo-description: Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.
-uuid: 78695a63-fca6-4990-9755-0aeaae4a7f64
 contentOwner: alba
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 exl-id: 7ccd67a7-9945-48c1-9986-f4eaf0f2b961
 ---
 # AEM Livefyre Recipes{#aem-livefyre-recipes}
@@ -51,7 +47,7 @@ There are three ways to implement Livefyre into a custom AEM component or other 
 
 * **Example**: [https://codepen.io/dharafyre/pen/KZKBNv?editors=1010](https://codepen.io/dharafyre/pen/KZKBNv?editors=1010)
 
-For advanced customizations using the SDK, please refer to [StreamHub SDKs](https://github.com/Livefyre/streamhub-sdk).
+For advanced customizations using the SDK, see [StreamHub SDKs](https://github.com/Livefyre/streamhub-sdk).
 
 **Method 3: API Implementation**
 
@@ -61,7 +57,7 @@ Make sure you follow [Twitter](https://developer.twitter.com/en/developer-terms/
 
 ### Media Wall Authentication Integration {#media-wall-authentication-integration}
 
-For Media Wall Integrations requiring authentication, please refer to:
+For Media Wall Integrations requiring authentication, see:
 
 * [Customize Single Sign on Integration](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) for AEM Identity Management
 * [Identity Integration](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) for third party authentication platforms
@@ -86,7 +82,7 @@ For training videos on streaming UGC, see [Create Automatic Content Streams and 
 
 For creating customized experiences and data visualizations, Livefyre Apps can be created from scratch by consuming Livefyre and social data using the [Bootstrap and Stream API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-For Livefyre Apps requiring authentication, please see [Identity Integration](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) for third party authentication platforms.
+For Livefyre Apps requiring authentication, see [Identity Integration](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) for third party authentication platforms.
 
 * [PGA Tour Media Wall](https://www.pgatour.com/social-hub.html)
 * [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
@@ -119,7 +115,7 @@ There are three ways to implement Livefyre Comments App into a custom AEM compon
 
 * **Example:**  [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
-For advanced customizations using the SDK, please see [StreamHub SDKs](https://github.com/Livefyre/streamhub-sdk).
+For advanced customizations using the SDK, see [StreamHub SDKs](https://github.com/Livefyre/streamhub-sdk).
 
 **Method 3: API Implementation**
 
@@ -162,7 +158,7 @@ For advanced customizations using the SDK, please see [StreamHub SDKs](https://g
 
 The Livefyre Adobe Experience Manager Package is available for AEM 6.1, 6.2SP1, 6.3, ,6.4 and 6.4 SP1. AEM 5.x and 6.0 are not supported. For detailed instructions, see [Integrating with Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-Reviews Component is not a supported component for AEM 6.1. Please check the [AEM support matrix for all Livefyre Apps](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+Reviews Component is not a supported component for AEM 6.1. Check the [AEM support matrix for all Livefyre Apps](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
 ### Traditional Implementation (for customized AEM components) {#traditional-implementation-for-customized-aem-components-2}
 
@@ -179,7 +175,7 @@ There are two ways to implement Livefyre Reviews App into a custom AEM component
 
 * **Example:**  [https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
 
-For advanced customizations using the SDK, please see [StreamHub SDKs](https://github.com/Livefyre/streamhub-sdk).
+For advanced customizations using the SDK, see [StreamHub SDKs](https://github.com/Livefyre/streamhub-sdk).
 
 **Method 2: API Implementation**
 

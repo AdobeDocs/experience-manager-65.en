@@ -63,7 +63,7 @@ To programmatically perform a Acrobat Reader DC extensionsservice operation, you
 
 **Retrieve a PDF document**
 
-You must retrieve a PDF document to apply usage rights. Rights-enabled PDF documents contain a usage rights dictionary. When Adobe Reader opens a document containing such a dictionary, it enables the usage rights specified in the dictionary for that document only. If the document does not contain a usage rights dictionary, the Acrobat Reader DC extensions service creates one. If it already contains a dictionary, the Acrobat Reader DC extensions service overwrites existing usage rights with the ones you specify. The dictionary specifies which usage rights are enabled. When a user opens the document in Adobe Reader, only the usage rights specified in the dictionary are permitted.
+Retrieve a PDF document to apply usage rights. Rights-enabled PDF documents contain a usage rights dictionary. When Adobe Reader opens a document containing such a dictionary, it enables the usage rights specified in the dictionary for that document only. If the document does not contain a usage rights dictionary, the Acrobat Reader DC extensions service creates one. If it already contains a dictionary, the Acrobat Reader DC extensions service overwrites existing usage rights with the ones you specify. The dictionary specifies which usage rights are enabled. When a user opens the document in Adobe Reader, only the usage rights specified in the dictionary are permitted.
 
 **Specify usage rights to apply**
 
@@ -382,7 +382,7 @@ Before you can programmatically perform a Acrobat Reader DC extensions service o
 
 **Retrieve a rights-enabled PDF document**
 
-You must retrieve a rights-enabled PDF document to retrieve information about the credential. You can also retrieve information about a credential by specifying its alias; however, if you want to retrieve information about a credential that was used to apply usage rights to a specific rights-enabled PDF document, then you must retrieve the document.
+Retrieve a rights-enabled PDF document to retrieve information about the credential. You can also retrieve information about a credential by specifying its alias; however, if you want to retrieve information about a credential that was used to apply usage rights to a specific rights-enabled PDF document, then you must retrieve the document.
 
 **Retrieve information about the credential**
 

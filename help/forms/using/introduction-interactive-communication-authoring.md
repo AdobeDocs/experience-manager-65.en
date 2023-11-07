@@ -20,7 +20,7 @@ The user interface for authoring [Interactive Communication](/help/forms/using/i
 * WYSIWYG drag-and-drop document editor
 * Integrated repository for assets - the assets uploaded to and created on the server are available in the Asset browser of Interactive Communication authoring interface
 
-When you [create a new or edit an existing Interactive Communication](../../forms/using/create-interactive-communication.md), you use the following user interface elements:
+When you [create or edit an existing Interactive Communication](../../forms/using/create-interactive-communication.md), you use the following user interface elements:
 
 * [Sidebar](#sidebar)
 * [Page toolbar](#page-toolbar)

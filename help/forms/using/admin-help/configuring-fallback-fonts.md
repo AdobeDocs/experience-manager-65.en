@@ -12,7 +12,7 @@ exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
 ---
 # Configuring fallback fonts {#configuring-fallback-fonts}
 
-You can manually configure the FontManagerResources.properties file to map the default AEM forms fonts to fallback (or substitute) if the default fonts are not available on the server. This property file is located in the adobe-fontmanager.jar file.
+You can manually configure the FontManagerResources.properties file to map the default AEM forms fonts to fallback (or substitute) if the default fonts are not available on the server. This property file is in the adobe-fontmanager.jar file.
 
 >[!NOTE]
 >

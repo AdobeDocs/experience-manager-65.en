@@ -54,13 +54,13 @@ If you are editing a page, it can be published directly from the editor.
     * The page will be published directly if there are no references to be published.
     * If the page has references that need publishing, these will be listed in the **Publish** wizard, where you can either:
 
-        * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
+        * Specify which of the assets/tags/and so on you want to publish together with the page, then use **Publish** to complete the process.
 
         * Use **Cancel** to abort the action.
 
    ![chlimage_1](assets/chlimage_1.png)
 
-1. Selecting **Publish** will replicate the page to the publish environment. In the page editor an information banner will be shown confirming the publish action.
+1. Selecting **Publish** will replicate the page to the publish environment. In the page editor, an information banner is shown confirming the publish action.
 
    ![screen_shot_2018-03-21at152840](assets/screen_shot_2018-03-21at152840.png)
 
@@ -105,7 +105,7 @@ To publish a page with Quick Publish:
 
 #### Manage Publication {#manage-publication}
 
-**Manage Publication** offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows as well as offering the option to publish at a later date.
+**Manage Publication** offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows and offering the option to publish at a later date.
 
 To publish or unpublish a page using Manage Publication:
 
@@ -176,7 +176,7 @@ To publish or unpublish a page using Manage Publication:
 
    >[!NOTE]
    >
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the [previous note on this page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) for details.
+   >The **Workflows** step is shown based on what rights your user may or may not have. See the [previous note on this page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) regarding publishing privileges and [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) for details.
 
    The resources are grouped by the workflows triggered and each given options to:
 

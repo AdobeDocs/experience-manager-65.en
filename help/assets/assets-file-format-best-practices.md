@@ -20,7 +20,7 @@ For the supported file formats, see [Assets supported formats](/help/assets/asse
 
 For optimal performance, Adobe recommends using [!DNL Adobe Camera Raw] library for RAW and DNG files.
 
-[!DNL Adobe Camera Raw] library supports CMYK color profile as input. However, it generates the output in RGB colorspace and supports output in JPEG format only. It does not retain the source file colorspace (for example CMYK) in the thumbnails.
+[!DNL Adobe Camera Raw] library supports CMYK color profile as input. However, it generates the output in RGB colorspace and supports output in JPEG format only. It does not retain the source file colorspace (for example, CMYK) in the thumbnails.
 
 For more information, see [Camera Raw support](/help/assets/camera-raw.md).
 

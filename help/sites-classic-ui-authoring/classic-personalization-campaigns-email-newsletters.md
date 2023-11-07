@@ -33,7 +33,7 @@ To publish your email to the email service provider, you need to perform the fol
 
 An email or newsletter that you want to publish to an e-mail service can be created under a campaign using the **Geometrixx Newsletter** template. You can also use the **Geometrixx Outdoors E-Mail** template. Sample email/newsletter-based on the **Geometrixx Outdoors E-Mail** template are available at `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-To create a new email that is published to the configured e-mail service:
+To create an email that is published to the configured e-mail service:
 
 1. Go to **Websites** and then **Campaigns**. Select a campaign.
 1. Click **New** to open the **Create Page** window.

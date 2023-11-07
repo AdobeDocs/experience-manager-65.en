@@ -91,7 +91,7 @@ The following groups are also included:
 
 ## Automated Forms Conversion (Camila) {#automated-forms-conversion}
 
-**This section**: Camila the CX Lead has an existing PDF based form that was used as part of a paper-based process. As part of a modernization effort Camila wants to use this PDF form to automatically create a new modern Adaptive Forms.
+**This section**: Camila the CX Lead has an existing PDF based form that was used as part of a paper-based process. As part of a modernization effort Camila wants to use this PDF form to automatically create a modern Adaptive Forms.
 
 ### Automated Forms Conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 

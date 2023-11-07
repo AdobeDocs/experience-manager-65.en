@@ -17,7 +17,7 @@ But this does not need to be a binary choice. AEM offers unprecedented flexibili
 
 ![AEM Implementation Models](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-In a headful or full-stack model, the content is managed in the AEM repository and AEM components based on Java, HTL, etc. are used to render the content for the user experience. In this model, creating the content, styling it, presenting it, and delivering it all happen in AEM.
+In a headful or full-stack model, the content is managed in the AEM repository and AEM components based on Java, HTL, and so on, are used to render the content for the user experience. In this model, creating the content, styling it, presenting it, and delivering it all happen in AEM.
 
 In a headless model, the content is managed in the AEM repository, but delivered via APIs such as REST and GraphQL to another system to render the content for the user experience. In this model, content is created in AEM, but styling it, presenting it, and delivering it all happen on another platform.
 
@@ -37,7 +37,7 @@ The next section explores these levels of integration in more detail.
 
 >[!NOTE]
 >
->Of course you could also re-implement the web shop SPA as a fully-functioning AEM SPA [using the AEM SPA Editor framework.](/help/sites-developing/spa-walkthrough.md) If you already have AEM and wish to create a new web shop or other SPA, this is the recommended method, but it out of the scope of this document.
+>Of course you could also re-implement the web shop SPA as a fully-functioning AEM SPA [using the AEM SPA Editor framework.](/help/sites-developing/spa-walkthrough.md) If you already have AEM and want to create a web shop or other SPA, this is the recommended method, but it is out of scope for this document.
 
 ## SPA Integration Levels {#integration-levels}
 

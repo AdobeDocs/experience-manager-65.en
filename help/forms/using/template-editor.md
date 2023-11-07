@@ -1,15 +1,10 @@
 ---
 title: Adaptive Form Templates
-seo-title: Adaptive Form Templates
 description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
-seo-description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
-uuid: 317ca3ab-f809-49a7-a063-9d0c17a35fe4
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
 ---
@@ -34,9 +29,9 @@ For example, you want all form authors to have certain text boxes, navigation bu
 
 ## Working with templates {#working-with-templates}
 
-You can access template editor from the Tools menu by navigating to **Adobe Experience Manager &gt; Tools &gt; Templates**. Here, the templates are organized in folders enabled for editable templates. AEM provides a global folder to organize templates. However, it is not enabled by default. You can request your Administrator to enable the global folder or create a new folder for templates. For more information on how to create folders, see [Template Folders](/help/sites-developing/page-templates-editable.md).
+You can access template editor from the Tools menu by navigating to **Adobe Experience Manager &gt; Tools &gt; Templates**. Here, the templates are organized in folders enabled for editable templates. AEM provides a global folder to organize templates. However, it is not enabled by default. You can request your Administrator to enable the global folder or create a folder for templates. For more information on how to create folders, see [Template Folders](/help/sites-developing/page-templates-editable.md).
 
-Once you tap to open a folder, you will find a Create button that allows creating a new template for adaptive forms.
+Once you tap to open a folder, you see a Create button that lets you create a template for adaptive forms.
 
 ### Creating a template {#create-template}
 

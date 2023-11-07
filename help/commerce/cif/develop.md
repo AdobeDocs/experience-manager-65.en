@@ -10,7 +10,7 @@ exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
 ---
 # Developing AEM Commerce {#develop}
 
-Developing AEM Commerce projects based on Commerce Integration Framework (CIF) for AEM follows the same rules and best practices like other AEM projects. Please review these first:
+Developing AEM Commerce projects based on Commerce Integration Framework (CIF) for AEM follows the same rules and best practices like other AEM projects. Review these first:
 
 - [AEM 6.5 Developing User Guide](/help/sites-developing/home.md)
 - [AEM Core Concepts](/help/sites-developing/the-basics.md)
@@ -23,7 +23,7 @@ A local development environment is recommended to work with CIF projects.
 
 >[!NOTE]
 >
->The following instructions help you setting up a local AEM development environment for AEM Commerce using CIF with focus for AEM 6.5). If you are using AEM as a Cloud Service, please see the [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) documentation.
+>The following instructions help you setting up a local AEM development environment for AEM Commerce using CIF with focus for AEM 6.5). If you are using AEM as a Cloud Service, see the [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) documentation.
 
 The AEM Commerce Add-On for AEM 6.5 aka. CIF Add-On is available for local development as well and provided as an AEM package. It can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) as a feature pack.
 

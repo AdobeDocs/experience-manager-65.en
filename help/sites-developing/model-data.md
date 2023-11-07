@@ -47,7 +47,7 @@ Further data constraints like mandatory or type and value constraints should onl
 
 #### Example {#example-1}
 
-The above example of using a `lastModified` Date property on for example "blog post" node, really does not mean that there is a need for a special node type. I would definitely use `nt:unstructured` for my blog post nodes at least initially. Since in my blogging application, all I am going to do is to display the lastModified date anyway (possibly "order by" it) I barely care if it is a Date at all. Because I implicitly trust my blog-writing application to put a "date" there anyway, there really is no need to declare the presence of a `lastModified` date in the form of a node type.
+The above example of using a `lastModified` Date property on for example, "blog post" node, really does not mean that there is a need for a special node type. I would definitely use `nt:unstructured` for my blog post nodes at least initially. Since in my blogging application, all I am going to do is to display the lastModified date anyway (possibly "order by" it) I barely care if it is a Date at all. Because I implicitly trust my blog-writing application to put a "date" there anyway, there really is no need to declare the presence of a `lastModified` date in the form of a node type.
 
 ### Rule #2: Drive the content hierarchy; do not let it happen. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 

@@ -11,7 +11,7 @@ exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 
 >[!NOTE]
 >
->The eCommerce framework can be used with any eCommerce solution. Certain specifics and examples dealt with here refer to the [hybris](https://www.sap.com/products/crm.html) solution.
+>The eCommerce framework can be used with any eCommerce solution. Certain specifics and examples dealt with here see the [hybris](https://www.sap.com/products/crm.html) solution.
 
 The integration framework includes an integration layer with an API. This lets you:
 
@@ -399,7 +399,7 @@ public class AxisFilter implements VariantFilter {
 
 * The shopping cart is owned by the `CommerceSession:`
 
-    * The `CommerceSession` performs add/remove/etc.
+    * The `CommerceSession` performs add/remove/and so on.
     * The `CommerceSession` also performs the various calculations on the cart. ``
 
 * While not directly cart-related, the `CommerceSession` must also provide catalog pricing information (since it owns pricing)

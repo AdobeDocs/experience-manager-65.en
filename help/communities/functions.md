@@ -231,7 +231,7 @@ When added to a template, the following dialog opens:
 
 The ideation function is a page with one [Ideation component](/help/communities/ideation-feature.md).
 
-When added to a template, the following dialog opens, which specifies the default Title and URL names, as well as default display settings for the template:
+When added to a template, the following dialog opens, which specifies the default Title and URL names, and default display settings for the template:
 
 ![ideation-function](assets/ideation-function.png)
 
@@ -259,7 +259,7 @@ The leaderboard function is a page with one [Leaderboard component](/help/commun
 
 **NOTE**: The Leaderboard component needs further configuration *after* a community site is created from a community template which includes the Leaderboard function. Specify the Leaderboard component's [rules](/help/communities/enabling-leaderboard.md#rules-tab), which depend on configuration of [scoring and badges](/help/communities/implementing-scoring.md) for the community site.
 
-When added to a template, the following dialog opens, which specifies the default Title and URL names, as well as default display settings for the template:
+When added to a template, the following dialog opens, which specifies the default Title and URL names, and default display settings for the template:
 
 ![leaderboard-dialog](assets/leaderboard-dialog.png)
 

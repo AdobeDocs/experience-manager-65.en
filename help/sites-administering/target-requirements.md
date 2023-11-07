@@ -1,14 +1,10 @@
 ---
 title: Prerequisites for Integrating with Adobe Target
-seo-title: Prerequisites for Integrating with Adobe Target
-description: Find out about the prerequisites for integrating with Adobe Target.
-seo-description: Find out about the prerequisites for integrating with Adobe Target.
-uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
+description: Learn about about the prerequisites for integrating with Adobe Target.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
 ---
@@ -26,7 +22,7 @@ The Client Code identifies the Adobe Target customer account when calling the Ad
 >
 >Your account must also be enabled by the Target team to use the integration.
 >
->If it is not the case, please contact [Adobe Customer Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
+>If it is not the case, contact [Adobe Customer Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
 
 ## Enabling the Target Replication Agent {#enabling-the-target-replication-agent}
 
@@ -41,13 +37,13 @@ The Test and Target [replication agent](/help/sites-deploying/replication.md) mu
    >
    >When you configure the Test and Target replication agent, in the **Transport** tab, the URI is set by default to **tnt:///**. Do not replace this URI with **https://admin.testandtarget.omniture.com**.
    >
-   >Please note that if you try to test the connection with **tnt:///**, it will throw an error. This is expected behavior as this URI is for internal use only and should not be used with **Test Connection**.
+   >If you try to test the connection with **tnt:///**, it throws an error. This is expected behavior as this URI is for internal use only; do not use with **Test Connection**.
 
 ## Securing the Activity Settings Node {#securing-the-activity-settings-node}
 
 You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. The activity settings node should only be accessible to the service handling the activity synchronization to Adobe Target.
 
-The **cq:ActivitySettings** node is available in CRXDE lite under `/content/campaigns/*nameofbrand*`* *under the activities jcr:content node;* *for example `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. This node is only created after you target a component.
+The **cq:ActivitySettings** node is available in CRXDE lite under `/content/campaigns/*nameofbrand*`* *under the activities jcr:content node;* *for example, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. This node is only created after you target a component.
 
 The **cq:ActivitySettings** node under the activity's jcr:content is protected by the following ACLs:
 

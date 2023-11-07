@@ -55,7 +55,7 @@ If you do not specify a GDS root directory, the directory defaults to an applica
 
 >[!NOTE]
 >
->Changing the value of the GDS root directory setting should be done with special care. The GDS directory is used to store both long-lived files used within a process as well as critical AEM forms product components. Changing the location of the GDS directory is a major system change. Incorrectly configuring the location of the GDS directory will render AEM forms inoperative and may require a complete reinstallation of AEM forms. If you specify a new location for the GDS directory, the application server needs to be shut down and the data migrated before the server can be restarted. The system administrator must move all files from the old location to the new location but keep the internal directory structure.
+>Changing the value of the GDS root directory setting should be done with special care. The GDS directory is used to store both long-lived files used within a process and critical AEM forms product components. Changing the location of the GDS directory is a major system change. Incorrectly configuring the location of the GDS directory will render AEM forms inoperative and may require a complete reinstallation of AEM forms. If you specify a new location for the GDS directory, the application server needs to be shut down and the data migrated before the server can be restarted. The system administrator must move all files from the old location to the new location but keep the internal directory structure.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ For additional information about the GDS directory, see [Preparing to Install AE
 
 **Location of the System Fonts directory** Type the path to the fonts directory that your operating system provided. Multiple directories can be added, separated by a semicolon **;**.
 
-**Location of Data Services Configuration file** Specifies the location of the services-config.xml file. By default, this file is embedded in the adobe-core-appserver.ear file and is not user-accessible. A copy of the default services-config.xml file is located in [aem-forms root]\sdk\misc\DataServices\Server-Configuration. If you changed this file and moved it, type the new location in this field.
+**Location of Data Services Configuration file** Specifies the location of the services-config.xml file. By default, this file is embedded in the adobe-core-appserver.ear file and is not user-accessible. A copy of the default services-config.xml file is in [aem-forms root]\sdk\misc\DataServices\Server-Configuration. If you changed this file and moved it, type the new location in this field.
 
 The Data Services configuration file allows customization of Data Services settings, such as authentication type and debug output.
 

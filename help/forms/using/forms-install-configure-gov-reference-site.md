@@ -356,7 +356,7 @@ This package comes pre-configured to connect to Adobe Analytics. The steps below
 
    ![Analytics cloud service configuration](assets/analytics_config.jpg)
 
-1. Click the "Edit" button to update the Adobe Analytics configuration (you will need to provide the Shared Secret). Click "Connect to Analytics" to connect, and "OK" to complete.
+1. Click the "Edit" button to update the Adobe Analytics configuration (you must provide the Shared Secret). Click "Connect to Analytics" to connect, and "OK" to complete.
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
@@ -695,7 +695,7 @@ Pages included in this package also supports the Style System:
 
 [Style System](../../sites-authoring/style-system.md)
 
-You can also refer to [Templates customization style system](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) for documentation on supported styles.
+You can also see [Templates customization style system](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) for documentation on supported styles.
 
 ### Adaptive forms customization {#adaptive-forms-customization}
 
@@ -744,7 +744,7 @@ This section contains information on demo features and design decisions that may
 
 ### Enabling Accessibility Testing Chrome Add On {#enable-chrome-add-on}
 
-To perform accessibility testing, install the Chrome plugin found here at `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+To perform accessibility testing, install the Chrome plugin found here at `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 After it is installed, load the page that you want to test within the Chrome Browser (Note: Having multiple tabs open may affect your score, it is preferable to only have one tab open). Once the page is loaded, **right-click** on the page and select **Audits** tab. There developers can select the type of audit to be performed by the Accessibility plugin. After all the desired options are selected, the user can click the Generate Report button. This generates a PDF document that shows the overall accessibility rating and what can be used to increase accessibility rating overall.
 

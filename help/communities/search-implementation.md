@@ -76,7 +76,7 @@ While Oak indexes are not automatically created for the AEM platform search, as 
 
 If custom properties are in use and searches are slow, then additional indexes must be created for the custom properties to make them more performant. To maintain portability, adhere to the [naming requirements](#naming-of-custom-properties) when creating custom properties that are searchable.
 
-To modify existing indexes or create custom indexes, refer to [Oak Queries and Indexing](../../help/sites-deploying/queries-and-indexing.md).
+To modify existing indexes or create custom indexes, see [Oak Queries and Indexing](../../help/sites-deploying/queries-and-indexing.md).
 
 The [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) is available from ACS AEM Commons. It provides:
 

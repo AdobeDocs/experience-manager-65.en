@@ -41,11 +41,11 @@ Create a language root as the root page of a language copy that identifies the l
 
 To create the language root you create a page and use an ISO language code as the value for the Name property. The language code must be in one of the following formats:
 
-* `<language-code>`The supported language code is a two-letter code as defined by ISO-639-1, for example `en`.
+* `<language-code>`The supported language code is a two-letter code as defined by ISO-639-1, for example, `en`.
 
-* `<language-code>_<country-code>` or `<language-code>-<country-code>`The supported country code is a lower-case or upper-case two-letter code as defined by ISO 3166, for example `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` or `<language-code>-<country-code>`The supported country code is a lower-case or upper-case two-letter code as defined by ISO 3166, for example, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-You can use either format, according to the structure that you have chosen for your global site.  For example, the root page of the French language copy of the Geometrixx site has `fr` as the Name property. Note that the Name property is used as the name of the page node in the repository, and therefore determines the path of the page. (http://localhost:4502/content/geometrixx/fr.html)
+You can use either format, according to the structure that you have chosen for your global site.  For example, the root page of the French language copy of the Geometrixx site has `fr` as the Name property. The Name property is used as the name of the page node in the repository, and therefore determines the path of the page. (http://localhost:4502/content/geometrixx/fr.html)
 
 The following procedure uses the touch-optimized UI to create a language copy of a web site. For instructions that use the Classic UI, see [Creating a Language Root Using the Classic UI](/help/sites-administering/tc-lroot-classic.md).
 
@@ -59,7 +59,7 @@ The following procedure uses the touch-optimized UI to create a language copy of
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Select the page template and then click or tap Next.
-1. In the Name field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Type a title for the page.
+1. In the Name field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Type a title for the page.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 

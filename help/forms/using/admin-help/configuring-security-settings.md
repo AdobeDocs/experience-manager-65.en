@@ -77,7 +77,7 @@ These options configure the permissions:
 
 **Use A Password To Restrict Printing And Editing Of&#xA;The Document And Its Security Settings:** Enables restrictions on permissions.
 
-**Permissions Password:** Restricts users from printing and editing. Users cannot change these security settings unless they type the password you specify. You cannot use the same password that is used for Document Open Password. When you set a permissions password, only those people who type that password can change security settings. If the PDF document has both types of passwords, either password will open it. However, a user can only set or change the restricted features with the permissions password. If the PDF document has only the permission password or if a user opens the document by using the document open password, the password prompt appears when the user tries to change security settings.
+**Permissions Password:** Restricts users from printing and editing. Users cannot change these security settings unless they type the password you specify. You cannot use the same password that is used for Document Open Password. When you set a permissions password, only those people who type that password can change security settings. If the PDF document has both types of passwords, either password opens it. However, a user can only set or change the restricted features with the permissions password. If the PDF document has only the permission password or if a user opens the document by using the document open password, the password prompt appears when the user tries to change security settings.
 
 **Retype Permissions Password:** Ensures that the permissions password is correct.
 
@@ -93,7 +93,7 @@ These options configure the permissions:
 
 **None:** Prevents users from changing the document, including filling signature and form fields.
 
-**Inserting, Deleting, And Rotating Pages:** Lets users insert, delete, and rotate pages, as well as create bookmarks and thumbnail pages. This option is available only if a high encryption level (Acrobat 5.0, 6.0, 7.0, or 9.0) is selected.
+**Inserting, Deleting, And Rotating Pages:** Lets users insert, delete, and rotate pages, and create bookmarks and thumbnail pages. This option is available only if a high encryption level (Acrobat 5.0, 6.0, 7.0, or 9.0) is selected.
 
 **Filling In Form Fields And Signing Existing Signature&#xA;Fields:** Lets users fill forms and add digital signatures. However, users cannot add comments or create form fields. This option is available only if a high encryption level (Acrobat 5.0, 6.0, 7.0, or 9.0) is selected.
 

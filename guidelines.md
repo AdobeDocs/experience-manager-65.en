@@ -72,7 +72,7 @@ Remember, readers of AEM documentation are worldwide and cannot be expected to b
 
 Screenshots are to be used judiciously and only when a textual description is insufficient.
 
-Markers or other annotations in screenshots (like red frames, arrows or text) should not be used. This way the screenshots are easier to reuse or replicate in localized versions of the documentation.
+Do not use markers or other annotations in screenshots (like red frames, arrows or text). This way the screenshots are easier to reuse or replicate in localized versions of the documentation.
 
 ### Version-Specific References
 
@@ -82,4 +82,4 @@ Try to avoid any direct references to a specific version throughout the document
 
 The product should always be referred to by its full name **Adobe Experience Manager** for the first time in an article and can thereafter be referred to as **AEM**.
 
-Day, Day Software, CQ, and CRX should not be used except where unavoidable such as in class names or referring to the history of AEM.
+Do not use Day, Day Software, CQ, and CRX except where unavoidable such as in class names or referring to the history of AEM.

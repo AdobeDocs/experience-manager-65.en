@@ -1,11 +1,7 @@
 ---
 title: Use metadata in an email notification 
-seo-title: Use metadata in an email notification 
 description: Use metadata to populate information in a forms workflow email notification
-seo-description: Use metadata to populate information in a forms workflow email notification
-uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
-discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
 ---
@@ -81,7 +77,7 @@ message=<html><body>\n\
    </tr>\n\
    <tr>\n\
     <td style="border-top: solid 1px #EDEAE7; padding: 16px;">\n\
-     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Please do not reply to this email.</code></p>\n\
+     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Do not reply to this email.</code></p>\n\
     </td>\n\
    </tr>\n\
   </tbody>\n\

@@ -23,11 +23,11 @@ All pages in We.Retail are based on editable templates, allowing non-developers 
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. Note that the mode selector no longer offers a Design mode. All pages for We.Retail are based on editable templates and to alter the design of editable templates they must be edited in the template editor.
+1. The mode selector no longer offers a Design mode. All pages for We.Retail are based on editable templates and to alter the design of editable templates they must be edited in the template editor.
 1. From the **Page information** menu select **Edit Template**.
 1. You are now editing the Hero Page template.
 
-   The structure mode of the page lets you modify the structure of the template. This includes for example the components that are allowed in the layout container.
+   The structure mode of the page lets you modify the structure of the template. This includes for example, the components that are allowed in the layout container.
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -39,7 +39,7 @@ All pages in We.Retail are based on editable templates, allowing non-developers 
 
 1. In the design dialog of the layout container, you can
 
-    * Select an existing policy or create a new policy for the container
+    * Select an existing policy or create a policy for the container
     * Select which components are allowed in the container
     * Define the default components to be placed when an asset is dragged to the container
 
@@ -49,7 +49,7 @@ All pages in We.Retail are based on editable templates, allowing non-developers 
 
    This lets you:
 
-    * Select an existing policy or create a new policy for the container
+    * Select an existing policy or create a policy for the container
     * Define the features available to the page author when using this component such as
 
         * Allowed paste sources
@@ -67,6 +67,6 @@ All pages in We.Retail are based on editable templates, allowing non-developers 
 
 ## More Information {#more-information}
 
-For further information please refer to the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete technical details on editable templates.
+For further information see the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete technical details on editable templates.
 
 You may also wish to investigate [core components](/help/sites-developing/we-retail-core-components.md). See the authoring document [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) for an overview of the capabilities of the core components and the developer document [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) for a technical overview.

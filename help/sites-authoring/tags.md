@@ -15,8 +15,8 @@ exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
 
 Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.
+* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework and including and extending tags in custom applications.
 
 ## Ten Reasons to Use Tagging {#ten-reasons-to-use-tagging}
 
@@ -49,7 +49,7 @@ As with pages you can perform the following on tags and namespaces:
 
 * Activate individual tags.
 
-  Just as with pages, newly created tags will need to be activated before they become available on the publish environment.
+  Just as with pages, newly created tags must be activated before they become available on the publish environment.
 
 >[!NOTE]
 >

@@ -15,12 +15,12 @@ exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 
 >[!NOTE]
 >
->This section describes configuring segmentation when using the ContextHub. If you are using the Client Context functionality, please see the relevant documentation for [configuring segmentation for Client Context](/help/sites-administering/campaign-segmentation.md).
+>This section describes configuring segmentation when using the ContextHub. If you are using the Client Context functionality, see the relevant documentation for [configuring segmentation for Client Context](/help/sites-administering/campaign-segmentation.md).
 >
 
 Segmentation is a key consideration when creating a campaign. See [Managing Audiences](/help/sites-authoring/managing-audiences.md) for information on how segmentation works and key terms.
 
-Depending on the information you have already collected about your site visitors and the goals you want to achieve, you will need to define the segments and strategies needed for your targeted content.
+Depending on the information you have already collected about your site visitors and the goals you want to achieve, you must define the segments and strategies needed for your targeted content.
 
 These segments are then used to provide a visitor with specifically targeted content. This content is maintained in the [Personalization](/help/sites-authoring/personalization.md) section of the website. [Activities](/help/sites-authoring/activitylib.md) defined here can be included on any page and define which visitor segment the specialized content is applicable for.
 
@@ -28,13 +28,13 @@ AEM lets you easily personalize your users' experience. It also lets you verify 
 
 ## Accessing Segments {#accessing-segments}
 
-The [Audiences](/help/sites-authoring/managing-audiences.md) console is used to manage segments for ContextHub or Client Context as well as audiences for your Adobe Target account. This documentation covers managing segments for ContextHub. For [Client Context segments](/help/sites-administering/campaign-segmentation.md) and Adobe Target segments, please see the relevant documentation.
+The [Audiences](/help/sites-authoring/managing-audiences.md) console is used to manage segments for ContextHub or Client Context and audiences for your Adobe Target account. This documentation covers managing segments for ContextHub. For [Client Context segments](/help/sites-administering/campaign-segmentation.md) and Adobe Target segments, see the relevant documentation.
 
 To access your segments you need to select your configuration. In global navigation select **Navigation &gt; Personalization &gt; Audiences**. You will see the available configurations:
 
 ![Audiences - Configurations](assets/segmentation-access-confs.png)
 
-Select your configuration to see the segments, for example WKND Site:
+Select your configuration to see the segments, for example, WKND Site:
 
 ![Audiences - Segments](assets/segmentation-access-segments.png)
 
@@ -135,7 +135,7 @@ To define your new segment:
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment as well as a boost value if required and then tap or click **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if required and then tap or click **Create**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -213,7 +213,7 @@ By using the Script Reference component, the evaluation of a segment property ca
 
 1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
 
-If the script depends on additional properties, the script should call `this.dependOn()`. For example if the script depends on `profile/age`:
+If the script depends on additional properties, the script should call `this.dependOn()`. For example, if the script depends on `profile/age`:
 
 ```
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -317,7 +317,7 @@ Or if it is not resolved:
 
 Such tests can also be performed on content pages and in combination with targeted content and related **Activities** and **Experiences**.
 
-If you have set up an activity and experience using the prime age group segment example above, you can easily test your segment with the activity. For details about setting up an activity, please see the related [documentation on authoring targeted content](/help/sites-authoring/content-targeting-touch.md).
+If you have set up an activity and experience using the prime age group segment example above, you can easily test your segment with the activity. For details about setting up an activity, see the related [documentation on authoring targeted content](/help/sites-authoring/content-targeting-touch.md).
 
 1. In editing mode of a page where you have set up targeted content, you can see that the content is targeted via arrow icon on the content.
 

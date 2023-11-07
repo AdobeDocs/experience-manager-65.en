@@ -251,7 +251,7 @@ You can define page properties:
 
 * From the **Sites** console:
 
-  * [Creating a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (a subset of the properties)
+  * [Creating a page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (a subset of the properties)
 
   * Clicking or tapping **Properties**
 
@@ -346,7 +346,7 @@ Once you have entered Bulk Editing, you can do the following:
   * Common properties with a common value
 
     * Only properties with a common value are shown in View mode.
-    * When the field is multi-value (for example Tags), values are only shown when *all* are common. If only some are common, they are only shown when editing.
+    * When the field is multi-value (for example, Tags), values are only shown when *all* are common. If only some are common, they are only shown when editing.
 
   When no properties with a common value exist, a message is displayed.
 
@@ -357,7 +357,7 @@ Once you have entered Bulk Editing, you can do the following:
   * You can update the values in the fields available.
 
     * The new values are applied to all selected pages when you select **Done**.
-    * When the field is multi-value (for example Tags), you can either append a new value or remove a common value.
+    * When the field is multi-value (for example, Tags), you can either append a new value or remove a common value.
 
   * Fields that are common, but have different values across the various pages, are indicated with a special value such as the text `<Mixed Entries>`. 
 

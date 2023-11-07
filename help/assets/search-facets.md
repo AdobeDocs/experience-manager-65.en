@@ -20,7 +20,7 @@ Use search facets in the Filters panel to add more granularity to your search ex
 
 In summary, search facets let you search for assets in multiple ways rather than in a single, pre-determined, taxonomic order. You can easily drill down to the desired level of detail for a more focused search.
 
-For example, if you are looking for an image, you can choose whether you want a bitmap or a vector image. You can reduce the scope of search further by specifying the MIME type for the image. Similarly, when searching for documents, you can specify the format, for example PDF or MS Word.
+For example, if you are looking for an image, you can choose whether you want a bitmap or a vector image. You can reduce the scope of search further by specifying the MIME type for the image. Similarly, when searching for documents, you can specify the format, for example, PDF or MS Word.
 
 ## Add a predicate {#adding-a-predicate}
 
@@ -107,7 +107,7 @@ If you want to use an existing node, specify it using the selection dialog.
 1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. In the **[!UICONTROL Edit Search Form]** page, drag **[!UICONTROL Options Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
-1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. For example, to search assets based on their format, specify a user-friendly name for the label, for example **[!UICONTROL File Type]**. Specify the property based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:format.`
+1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. For example, to search assets based on their format, specify a user-friendly name for the label, for example, **[!UICONTROL File Type]**. Specify the property based on which the search is to be performed in the property field, for example, `jcr:content/metadata/dc:format.`
 1. Do one of the following:
 
     * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
@@ -129,7 +129,7 @@ The Multi Value Property predicate lets you search assets for multiple values. C
 1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 1. In the Edit Search Form page, drag a **[!UICONTROL Multi Value Property Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
-1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. You can also use the selection dialog to select a node.
+1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example, `jcr:content/metadata/dc:value`. You can also use the selection dialog to select a node.
 1. Ensure that **[!UICONTROL Delimiter Support]** is selected. In the **[!UICONTROL Input Delimiters]** field, specify delimiters to separate individual values. By default, comma is specified as the delimiter. You can specify a different delimiter.
 1. In the **Description** field, enter an optional description and then click **[!UICONTROL Done]**.
 1. Navigate to the Filters panel in the [!DNL Assets] user interface. The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
@@ -142,7 +142,7 @@ The Tag predicate lets you perform tag-based searches for assets. By default, [!
 1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
-1. In the Settings tab, enter a placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. Alternatively, you can select a node in CRXDE from the selection dialog.
+1. In the Settings tab, enter a placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example, *jcr:content/metadata/cq:tags*. Alternatively, you can select a node in CRXDE from the selection dialog.
 1. Configure the Root tags path property of this predicate to populate various tags in the Tags list.
 1. Select **[!UICONTROL Show match all tags option]** to search for assets that include all tags that you specify.
 

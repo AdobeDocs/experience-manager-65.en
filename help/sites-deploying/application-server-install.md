@@ -40,7 +40,7 @@ If deployed, the following happens by default:
 * the run mode is `author`
 * the instance (Repository, Felix OSGI environment, bundles and so on) is installed in `${user.dir}/crx-quickstart`where `${user.dir}` is the current working directory, this path to crx-quickstart is called `sling.home`
 
-* the context root is the war file name for example, : `aem-6`
+* the context root is the war file name for example,  `aem-6`
 
 #### Configuration {#configuration}
 

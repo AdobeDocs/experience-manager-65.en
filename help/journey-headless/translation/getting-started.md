@@ -26,7 +26,7 @@ This document helps you understand how to get started translating headless conte
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
-There are a number of requirements before you begin translating your headless AEM content.
+There are several requirements before you begin translating your headless AEM content.
 
 ### Knowledge {#knowledge}
 
@@ -38,7 +38,7 @@ There are a number of requirements before you begin translating your headless AE
 
 >[!TIP]
 >
->If you are not familiar with using a large-scale CMS like AEM, consider reviewing the [Basic Handling](/help/sites-authoring/basic-handling.md) documentation before proceeding. The Basic Handling documentation is not part of the journey, so please return to this page when complete.
+>If you are not familiar with using a large-scale CMS like AEM, consider reviewing the [Basic Handling](/help/sites-authoring/basic-handling.md) documentation before proceeding. The Basic Handling documentation is not part of the journey, so return to this page when complete.
 
 ### Tools {#tools}
 

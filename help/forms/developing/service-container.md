@@ -1,7 +1,7 @@
 ---
 title: Service container
 seo-title: Service container
-description: AEM Forms services located in the service container
+description: AEM Forms services in the service container
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -15,7 +15,7 @@ exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
 
-AEM Forms services located in the service container (including standard servces such as the Encryption service, long-lived, and short-lived processes) can be invoked using various providers, such as an EJB provider. An EJB provider enables AEM Forms services to be invoked over RMI/IIOP. A web service provider exposes services as web services (WSDL Generation) using standards such as SOAP/HTTP and SOAP/JMS.
+AEM Forms services in the service container (including standard servces such as the Encryption service, long-lived, and short-lived processes) can be invoked using various providers, such as an EJB provider. An EJB provider enables AEM Forms services to be invoked over RMI/IIOP. A web service provider exposes services as web services (WSDL Generation) using standards such as SOAP/HTTP and SOAP/JMS.
 
 The following table describes the different ways in which you can programmatically invoke AEM Forms services.
 
@@ -55,7 +55,7 @@ The following illustration provides a visual representation of the different way
 The service container provides the following functionality:
 
 * Allows AEM Forms services to be invoked using different methods. You can configure a service by setting endpoints so that it can be invoked using all methods: Remoting, the Java API, web services, and REST. (See [Programmatically Managing Endpoints](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
-* Converts a message into a normalized format called an invocation request. An invocation request is sent from a client application (or another service) to a service located in the service container. An invocation request contains information such as the name of the service to invoke and data values that are required to perform the operation. Many services require a document to perform an operation. Therefore, an invocation request usually contains a document, which can be PDF data, XDP data, XML data, and so on.
+* Converts a message into a normalized format called an invocation request. An invocation request is sent from a client application (or another service) to a service in the service container. An invocation request contains information such as the name of the service to invoke and data values that are required to perform the operation. Many services require a document to perform an operation. Therefore, an invocation request usually contains a document, which can be PDF data, XDP data, XML data, and so on.
 * Routes invocation requests to appropriate services (the name of the service to invoke is part of the invocation request).
 * Performs tasks such as determining whether the caller has permission to invoke the specified service operation. The invocation request must contain a valid AEM forms user name and password.
 

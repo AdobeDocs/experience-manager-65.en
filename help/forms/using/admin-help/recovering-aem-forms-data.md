@@ -118,7 +118,7 @@ If your GDS is restored to a location other than where it was originally, run th
 
 >[!NOTE]
 >
->Component deployment will fail on Windows if the GDS directory is at the drive root (for example, D:\). For GDS, you must make sure that the directory is not located at the root of the drive but is located in a subdirectory. For example, the directory should be D:\GDS and not simply D:\.
+>Component deployment will fail on Windows if the GDS directory is at the drive root (for example, D:\). For GDS, you must make sure that the directory is not located at the root of the drive but is in a subdirectory. For example, the directory should be D:\GDS and not simply D:\.
 
 ## Recovering the GDS to a clustered environment {#recovering-the-gds-to-a-clustered-environment}
 

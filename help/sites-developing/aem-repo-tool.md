@@ -1,14 +1,10 @@
 ---
 title: AEM Repo Tool
-seo-title: AEM Repo Tool
-description: The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server via the command line comparable to FTP. The AEM Repo Tool is similar to the Jackrabbit FileVault tool, but is faster, has minimal dependencies, and is a simple bash script.
-seo-description: The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server via the command line comparable to FTP. The AEM Repo Tool is similar to the Jackrabbit FileVault tool, but is faster, has minimal dependencies, and is a simple bash script.
-uuid: 6c4a3504-e8e8-46c0-83cb-c18d9791f93e
+description: The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server by way of the command line comparable to FTP. The AEM Repo Tool is similar to the Jackrabbit FileVault tool, but is faster, has minimal dependencies, and is a simple bash script.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
 exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
 ---
 # AEM Repo Tool{#aem-repo-tool}
@@ -25,13 +21,13 @@ The tool does not support multiple filter paths or FileVault's `filter.xml`.
 
 >[!CAUTION]
 >
->Please note that the AEM Repo Tool will always overwrite the entire file or directory specified.
+>The AEM Repo Tool always overwrites the entire file or directory specified.
 
 ## Download and Documentation {#download-and-documentation}
 
 The [AEM Repo Tool is available on GitHub via this link](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) along with detailed installation and usage instructions.
 
-If you wish to download the source of the AEM Repo Tool, refer to the GitHub project linked below.
+If you want to download the source of the AEM Repo Tool, see the GitHub project linked below.
 
 CODE ON GITHUB
 

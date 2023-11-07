@@ -425,7 +425,7 @@ You can set the number of failure attempts and subsequent lock-out time that AEM
 
 ### Auditing and logging {#auditing-and-logging}
 
-The proper and secure use of application auditing and logging can help ensure that security and other anomalous events are tracked and detected as quickly as possible. Effective use of auditing and logging within an application includes such items as tracking successful and failed logins, as well as key application events such as the creation or deletion of key records.
+The proper and secure use of application auditing and logging can help ensure that security and other anomalous events are tracked and detected as quickly as possible. Effective use of auditing and logging within an application includes such items as tracking successful and failed logins, and key application events such as the creation or deletion of key records.
 
 You can use auditing to detect many types of attacks, including these:
 
@@ -657,7 +657,7 @@ Certain URLs are highlighted as end-user-facing web applications. You should avo
 
 A Cross-Site Request Forgery (CSRF) attack exploits the trust that a website has for the user, to transmit commands that are unauthorized and unintended by the user. The attack is set up by including a link or a script in a web page, or a URL in an email message, to access another site to which the user has already been authenticated.
 
-For example, you may be logged in to Administration Console while simultaneously browsing another website. One of the web pages may include an HTML image tag with a `src` attribute that targets a server-side script on the victim website. By leveraging the cookie-based session-authentication mechanism provided by web browsers, the attacking website can send malicious requests to this victim server-side script, masquerading as the legitimate user. For more examples, see [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+For example, you may be logged in to Administration Console while simultaneously browsing another website. One of the web pages may include an HTML image tag with a `src` attribute that targets a server-side script on the victim website. By using the cookie-based session-authentication mechanism provided by web browsers, the attacking website can send malicious requests to this victim server-side script, masquerading as the legitimate user. For more examples, see [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 The following characteristics are common to CSRF:
 
@@ -701,7 +701,7 @@ The Referrer Filtering process can be described as follows:
 
 AEM Forms on JEE provides a Referrer Filter to specify Referrer that are allowed access to your server resources. By default, the Referrer filter does not filter requests that use a safe HTTP method, for example, GET, unless *CSRF_CHECK_GETS* is set to true. If the port number for an Allowed Referrer entry is set to 0, AEM Forms on JEE will allow all requests with Referrer from that host regardless of the port number. If no port number is specified, only requests from the default port 80 (HTTP) or port 443 (HTTPS) are allowed. Referrer Filtering is disabled if all the entries in the Allowed Referrer list are deleted.
 
-When you first install Document Services, the Allowed Referrer list is updated with the address of the server on which Document Services is installed. The entries for the server include the server name, the IPv4 address, the IPv6 address if IPv6 is enabled, the loopback address, and a localhost entry. The names added to the Allowed Referrer list are returned by Host operating system. For example a server with an IP address of 10.40.54.187 will include the following entries: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. For any unqualified name retuned by Host operating system (names that do not have IPv4 address, IPv6 address or qualified domain name) allowlist is not updated. Modify the Allowed Referrer list to suit your business environment. Do not deploy the forms server in the production environment with the default Allowed Referrer list. After modifying any of the Allowed Referrer, Referrer Exceptions, or URIs, ensure that you restart the server for the changes to take effect.
+When you first install Document Services, the Allowed Referrer list is updated with the address of the server on which Document Services is installed. The entries for the server include the server name, the IPv4 address, the IPv6 address if IPv6 is enabled, the loopback address, and a localhost entry. The names added to the Allowed Referrer list are returned by Host operating system. For example, a server with an IP address of 10.40.54.187 will include the following entries: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. For any unqualified name retuned by Host operating system (names that do not have IPv4 address, IPv6 address or qualified domain name) allowlist is not updated. Modify the Allowed Referrer list to suit your business environment. Do not deploy the forms server in the production environment with the default Allowed Referrer list. After modifying any of the Allowed Referrer, Referrer Exceptions, or URIs, ensure that you restart the server for the changes to take effect.
 
 **Managing Allowed Referrer list**
 
@@ -927,7 +927,7 @@ This section describes the default ports (and alternate configuration ranges) fo
     <ul> 
      <li><p>Admin Server listen port: default is 7001</p> </li> 
      <li><p>Admin Server SSL listen port: default is 7002</p> </li> 
-     <li><p>Port configured for Managed Server, for example 8001</p> </li> 
+     <li><p>Port configured for Managed Server, for example, 8001</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

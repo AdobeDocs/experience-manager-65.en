@@ -173,7 +173,7 @@ The Task Notifications and Administrator Notifications pages provide several fea
 
 ### Rich text editor {#rich-text-editor}
 
-The Notification Template area is a rich text editor that enables you to generate HTML for the email notification messages. It provides font and paragraph formatting options, which are found below the Notification Template box. The options include font type, size, style, and color, as well as paragraph alignment and bullets.
+The Notification Template area is a rich text editor that enables you to generate HTML for the email notification messages. It provides font and paragraph formatting options, which are found below the Notification Template box. The options include font type, size, style, and color, and paragraph alignment and bullets.
 
 ### URL generation {#url-generation}
 
