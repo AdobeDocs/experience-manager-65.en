@@ -1,21 +1,17 @@
 ---
 title: AEM Brackets Extension
-seo-title: AEM Brackets Extension
 description: Learn how to use the Adobe Experience Manager extension for Brackets.
-seo-description: null
-uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
 ---
 # AEM Brackets Extension{#aem-brackets-extension}
 
 ## Overview {#overview}
 
-The AEM Brackets Extension provides a smooth workflow to edit AEM components and client libraries, and leverages the power of the [Brackets](https://brackets.io/) code editor, which gives access from within the code editor to Photoshop files and layers. The easy synchronization provided by the extension (no Maven or File Vault required) increases developer efficiency and also helps front-end developers with limited AEM knowledge to participate on projects. This extension also provides some support for the [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), which takes away the complexity of JSP to make component development easier and more secure.
+The AEM Brackets Extension provides a smooth workflow to edit AEM components and client libraries, and uses the power of the [Brackets](https://brackets.io/) code editor, which gives access from within the code editor to Photoshop files and layers. The easy synchronization provided by the extension (no Maven or File Vault required) increases developer efficiency and also helps front-end developers with limited AEM knowledge to participate on projects. This extension also provides some support for the [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), which takes away the complexity of JSP to make component development easier and more secure.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -65,7 +61,7 @@ The project has to contain at least:
 
 1. a `jcr_root` folder (for example, `myproject/jcr_root`)
 
-1. a `filter.xml` file (for example, `myproject/META-INF/vault/filter.xml`); for more details about the structure of the `filter.xml` file please see the [Workspace Filter definition](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` file (for example, `myproject/META-INF/vault/filter.xml`); for more details about the structure of the `filter.xml` file see the [Workspace Filter definition](https://jackrabbit.apache.org/filevault/filter.html).
 
 In Brackets' **File** menu, choose **Open Folder…** and pick either the `jcr_root` folder, or the parent project folder.
 
@@ -121,7 +117,7 @@ The AEM Brackets Extension features a notification icon in the toolbar on the ri
 * yellow - some of the files were not synchronized
 * red - none of the files were synchronized
 
-Clicking on the notification icon will open the Synchronization Status report dialog that lists of all the status for each synchronized file.
+Clicking on the notification icon opens the Synchronization Status report dialog box that lists of all the status for each synchronized file.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 

@@ -20,7 +20,7 @@ An annotation places a colored marker/sticky-note on the page. The annotation al
 
 >[!NOTE]
 >
->Annotations created in the classic UI will be shown as well in the touch-optimized UI. However sketches are UI-specific and are only shown in the UI in which they were created.
+>Annotations created in the classic UI are shown in the touch-optimized UI. However, sketches are UI-specific and are only shown in the UI in which they were created.
 
 >[!CAUTION]
 >

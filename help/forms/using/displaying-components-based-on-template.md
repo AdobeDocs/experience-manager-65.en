@@ -30,7 +30,7 @@ Perform the following steps to show the components in the sidebar based on the c
 
 1. In CRXDE, navigate to: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`
 
-   To select a group of components, a new content policy is required. To create a new policy, copy-paste the default policy, and rename it.
+   To select a group of components, a new content policy is required. To create a policy, copy-paste the default policy, and rename it.
 
    Path to default content policy is: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 

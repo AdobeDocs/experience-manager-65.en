@@ -368,7 +368,7 @@ If you are granted access to another user’s To-do list, you cannot view any ta
 
 If you plan to be out of the office, you can specify what happens to tasks that are assigned to you for that period.
 
-You have the option of specifying a start date and time and an end date and time for your out-of-office settings to be in effect. If you are located in a different time zone from the server, the time zone used is that of the server.
+You have the option of specifying a start date and time and an end date and time for your out-of-office settings to be in effect. If you are in a different time zone from the server, the time zone used is that of the server.
 
 You can set a default person to which all of your tasks are sent. You can also specify exceptions for tasks from specific processes to be sent to a different user or to remain in your To-do list until you return. If the designated person is also out of the office, the task goes to the user that they designated. If the task cannot be assigned to a user who is not out of the office, the task remains in your To-do list.
 

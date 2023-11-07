@@ -14,7 +14,7 @@ exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 
 AEM Forms can be invoked by using the AEM Forms Java API. When using the AEM Forms Java API, you can use either the Invocation API or Java client libraries. Java client libraries are available for services such as the Rights Management service. These strongly typed APIs let you develop Java applications that invoke AEM Forms.
 
-The Invocation API are classes that are located in the `com.adobe.idp.dsc` package. Using these classes, you can send an invocation request directly to a service and handle an invocation response that is returned. Use the Invocation API to invoke short-lived or long-lived processes that were created by using Workbench.
+The Invocation API are classes that are in the `com.adobe.idp.dsc` package. Using these classes, you can send an invocation request directly to a service and handle an invocation response that is returned. Use the Invocation API to invoke short-lived or long-lived processes that were created by using Workbench.
 
 The recommended way to programmatically invoke a service is to use a Java client library that corresponds to the service as opposed to the Invocation API. For example, to invoke the Encryption service, use the Encryption service client library. To perform an Encryption service operation, invoke a method that belongs to the Encryption service client object. You can encrypt a PDF document with a password by invoking the `EncryptionServiceClient` object's `encryptPDFUsingPassword` method.
 
@@ -626,7 +626,7 @@ In this scenario, a client application is running in its own JVM and invokes AEM
 
 ### Client application invoking clustered AEM Forms instances {#client-application-invoking-clustered-aem-forms-instances}
 
-The following diagram shows a client application running in its own JVM and invoking AEM Forms instances located in a cluster.
+The following diagram shows a client application running in its own JVM and invoking AEM Forms instances in a cluster.
 
 This scenario is similar to a client application invoking a stand-alone AEM Forms instance. However, the provider URL is different. If a client application wants to connect to a specific J2EE application server, the application must change the URL to reference the specific J2EE application server.
 
@@ -783,7 +783,7 @@ The following code example creates a `com.adobe.idp.Document` object that is bas
 
 #### Creating a document based on a file {#creating-a-document-based-on-a-file}
 
-The following code example creates a `com.adobe.idp.Document` object that is based on a PDF file named *map.pdf*. This file is located in the root of the C hard drive. This constructor attempts to set the MIME content type of the `com.adobe.idp.Document` object using the filename extension.
+The following code example creates a `com.adobe.idp.Document` object that is based on a PDF file named *map.pdf*. This file is in the root of the C hard drive. This constructor attempts to set the MIME content type of the `com.adobe.idp.Document` object using the filename extension.
 
 The `com.adobe.idp.Document` constructor that accepts a `java.io.File` object also accepts a Boolean parameter. By setting this parameter to `true`, the `com.adobe.idp.Document` object deletes the file. This action means that you do not have to remove the file after passing it to the `com.adobe.idp.Document` constructor.
 

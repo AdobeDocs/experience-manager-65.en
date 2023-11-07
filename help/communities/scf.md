@@ -51,7 +51,7 @@ To customize or extend the components, you write only the overlays and extension
 * To add custom processing during operations:
   * Write an [OperationExtension](server-customize.md#operationextension-class).
 * To add a custom operation:
-  * Create a new [Sling Post Operation](server-customize.md#postoperation-class).
+  * Create a [Sling Post Operation](server-customize.md#postoperation-class).
   * Use existing [OperationServices](server-customize.md#operationservice-class) as needed.
   * Add JavaScript code to invoke your operation from the client side as needed.
 

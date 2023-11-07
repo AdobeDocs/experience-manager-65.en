@@ -29,7 +29,7 @@ You can create a watched folder in the following two ways:
 
 * Create a folder on the file system prior to configuring a watched folder endpoint, and then type the full path in the Path box.
 
-In a clustered environment, the folder that will be used as a watched folder must be accessible, writable, and shared on the file system or network. In this scenario, each application server instance of the cluster must have access to the same shared folder.
+In a clustered environment, the folder that is used as a watched folder must be accessible, writable, and shared on the file system or network. In this scenario, each application server instance of the cluster must have access to the same shared folder.
 
 In Windows, if the application server is running as a service, it must be started with appropriate access to the shared folder in one of the following ways:
 
@@ -56,7 +56,7 @@ If the job contains more than one input file, the user must create a folder outs
 
 ## Watched folder output {#watched-folder-output}
 
-When the input is a folder and the output consists of multiple files, AEM forms creates an output folder with the same name as the input folder and copies the output files into that folder. When the output consists of a document map containing a key-value pair, such as the output from an Output process, the key will be used as the output file name.
+When the input is a folder and the output consists of multiple files, AEM forms creates an output folder with the same name as the input folder and copies the output files into that folder. When the output consists of a document map containing a key-value pair, such as the output from an Output process, the key is used as the output file name.
 
 The output file names that result from an endpoint process cannot contain characters other than letters, numbers, and a period (.) before the file extension. AEM forms converts other characters to their hexadecimal values.
 
@@ -380,7 +380,7 @@ Here are some tips and tricks when configuring the Watched Folder endpoint:
     * For `java.lang.String`: The administrator has two options. First, the administrator can specify the mapping type as `Literal` and enter a mapping value as a string, such as `hello.` Watched Folder will invoke the service with the string `hello`. Second, the administrator can specify the mapping type as a `Variable` and enter a mapping value with a pattern like `*.txt`. In the latter case, files with the .txt extension will be read as a document coerced as a string to invoke the service.
     * Java primitive type: The administrator can specify the mapping type as `Literal` and provide the value. Watched Folder will invoke the service with the value specified.
 
-* Watched Folder is meant to work with documents. The supported outputs are `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, as well as a list and map of these types. Any other type will result in a failure output in the failure folder.
+* Watched Folder is meant to work with documents. The supported outputs are `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, and a list and map of these types. Any other type will result in a failure output in the failure folder.
 * If the results are not in the result folder, verify the failure folder to see if a failure has occurred.
 * Watched Folder works best if used in asynchronous mode. In this mode, Watched Folder places the invocation request into the queue and calls back. The queue is then processed asynchronously. When the Asynchronous option is not set, Watched Folder invokes the target service synchronously and the Process Engine waits until the service is done with the request and results are produced. If the target service takes a long time to process the request, Watched Folder may get time-out errors.
 * The creation of watched folders for import and export operations does not allow filename extension abstraction. When invoking the Form Data Integration service using watched folders, the filename extension type for the output file may not match the intended output format for the document object type. For example, if the input file to a watched folder that invokes the export operation is an XFA form that contains data, the output should be an XDP data file. To obtain an output file with the correct filename extension, you can specify it in the output parameter mapping. In this example, you can use %F.xdp for the output parameter mapping.

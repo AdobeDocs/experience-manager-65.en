@@ -33,7 +33,7 @@ AEM search is capable of searching and locating AEM assets and performing text s
 * Ensure that all the bundles are up and running. If all the bundles are not active, wait until all the bundles are up and running.
 
     * For AEM Forms on OSGi, the bundles are listed at https://'[server]:[port]'/system/console/bundles.
-    * For AEM Forms on JEE, the bundles are listed at https://'[server]:[port]'/[context-path]/system/console/bundles. For example https://localhost:8080/lc/system/console/bundles.
+    * For AEM Forms on JEE, the bundles are listed at https://'[server]:[port]'/[context-path]/system/console/bundles. For example, https://localhost:8080/lc/system/console/bundles.
 
 * Add the *sun.util.calendar* package to the allowlist. To add the package to the allowlist, perform the following steps:
 

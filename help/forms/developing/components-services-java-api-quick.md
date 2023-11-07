@@ -69,19 +69,19 @@ The following Java&trade; example deploys a component that is based on a JAR fil
         * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to  
         * your local development environment and then include the 3 JBoss JAR files in your class path 
         * 
-        * These JAR files are located in the following path: 
+        * These JAR files are in the following path: 
         * <install directory>/sdk/client-libs/common 
         * 
-        * The adobe-utilities.jar file is located in the following path: 
+        * The adobe-utilities.jar file is in the following path: 
         * <install directory>/sdk/client-libs/jboss 
         * 
-        * The jboss-client.jar file is located in the following path: 
+        * The jboss-client.jar file is in the following path: 
         * <install directory>/jboss/bin/client 
         * 
         * If you want to invoke a remote forms server instance and there is a 
         * firewall between the client application and the server, then it is  
         * recommended that you use the SOAP mode. When using the SOAP mode,  
-        * you have to include additional JAR files located in the following  
+        * you have to include additional JAR files in the following  
         * path 
         * <install directory>/sdk/client-libs/thirdparty 
         * 
@@ -171,7 +171,7 @@ The following Java&trade; code example sets the Run-As Invoker execution context
         * The JBoss files must be kept in the jboss\bin\client folder. You can copy the client folder to  
         * your local development environment and then include the 3 JBoss JAR files in your class path 
         * 
-        * These JAR files are located in the following path: 
+        * These JAR files are in the following path: 
         * <install directory>/sdk/client-libs/common 
         * 
         * 
@@ -179,7 +179,7 @@ The following Java&trade; code example sets the Run-As Invoker execution context
         * If you want to invoke a remote forms server instance and there is a 
         * firewall between the client application and the server, then it is  
         * recommended that you use the SOAP mode. When using the SOAP mode,  
-        * you have to include additional JAR files located in the following  
+        * you have to include additional JAR files in the following  
         * path 
         * <install directory>/sdk/client-libs/thirdparty 
         * 
@@ -264,19 +264,19 @@ The following Java&trade; code example disables security from the example Encryp
         * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to 
         * your local development environment and then include the 3 JBoss JAR files in your class path 
         * 
-        * These JAR files are located in the following path: 
+        * These JAR files are in the following path: 
         * <install directory>/sdk/client-libs/common 
         * 
-        * The adobe-utilities.jar file is located in the following path: 
+        * The adobe-utilities.jar file is in the following path: 
         * <install directory>/sdk/client-libs/jboss 
         * 
-        * The jboss-client.jar file is located in the following path: 
+        * The jboss-client.jar file is in the following path: 
         * <install directory>/jboss/bin/client 
         * 
         * If you want to invoke a remote forms server instance and there is a 
         * firewall between the client application and the server, then it is  
         * recommended that you use the SOAP mode. When using the SOAP mode,  
-        * you have to include additional JAR files located in the following  
+        * you have to include additional JAR files in the following  
         * path 
         * <install directory>/sdk/client-libs/thirdparty 
         * 
@@ -295,7 +295,7 @@ The following Java&trade; code example disables security from the example Encryp
   
  /* 
      * This Java quick start disables security from the EncryptDocument process 
-     * and each service that is located in this process 
+     * and each service that is in this process 
      */ 
  public class DisableSecurity{ 
       
@@ -434,19 +434,19 @@ The following Java&trade; example modifies configuration values that belong to S
         * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to  
         * your local development environment and then include the 3 JBoss JAR files in your class path 
         * 
-        * These JAR files are located in the following path: 
+        * These JAR files are in the following path: 
         * <install directory>/sdk/client-libs/common 
         * 
-        * The adobe-utilities.jar file is located in the following path: 
+        * The adobe-utilities.jar file is in the following path: 
         * <install directory>/sdk/client-libs/jboss 
         * 
-        * The jboss-client.jar file is located in the following path: 
+        * The jboss-client.jar file is in the following path: 
         * <install directory>/jboss/bin/client 
         * 
         * If you want to invoke a remote forms server instance and there is a 
         * firewall between the client application and the server, then it is  
         * recommended that you use the SOAP mode. When using the SOAP mode,  
-        * you have to include additional JAR files located in the following  
+        * you have to include additional JAR files in the following  
         * path 
         * <install directory>/sdk/client-libs/thirdparty 
         * 
@@ -538,19 +538,19 @@ The following Java&trade; code example removes a component by using the Java&tra
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to  
      * your local development environment and then include the 3 JBoss JAR files in your class path 
      * 
-     * These JAR files are located in the following path: 
+     * These JAR files are in the following path: 
      * <install directory>/sdk/client-libs/common 
      * 
-     * The adobe-utilities.jar file is located in the following path: 
+     * The adobe-utilities.jar file is in the following path: 
      * <install directory>/sdk/client-libs/jboss 
      * 
-     * The jboss-client.jar file is located in the following path: 
+     * The jboss-client.jar file is in the following path: 
      * <install directory>/jboss/bin/client 
      * 
      * If you want to invoke a remote forms server instance and there is a 
      * firewall between the client application and the server, then it is  
      * recommended that you use the SOAP mode. When using the SOAP mode,  
-     * you have to include additional JAR files located in the following  
+     * you have to include additional JAR files in the following  
      * path 
      * <install directory>/sdk/client-libs/thirdparty 
      * 

@@ -12,7 +12,7 @@ When migrating assets into [!DNL Adobe Experience Manager], there are several st
 
 ## Prerequisites {#prerequisites}
 
-Before actually performing any of the steps in this methodology, review and implement the guidance in [Assets performance tuning tips](performance-tuning-guidelines.md). Many of the steps, such as configuring maximum concurrent jobs, greatly enhance the server’s stability and performance under load. Other steps, such as configuring a File Data Store, are much more difficult to perform after the system has been loaded with assets.
+Before actually performing any of the steps in this methodology, review and implement the guidance in [Assets performance tuning tips](performance-tuning-guidelines.md). Many of the steps, such as configuring maximum concurrent jobs, greatly enhance the server's stability and performance under load. Other steps, such as configuring a File Data Store, are much more difficult to perform after the system has been loaded with assets.
 
 >[!NOTE]
 >
@@ -49,13 +49,13 @@ You may already have a tag taxonomy in place that you are applying to your image
 
 ### Ingest assets {#ingesting-assets}
 
-Performance and stability are important concerns when ingesting assets into the system. Because you are loading a large amount of data into the system, you want to make sure that the system performs as well as it can to minimize the amount of time required and to avoid overloading the system, which can lead to a system crash, especially in systems that already are in production.
+Performance and stability are important concerns when ingesting assets into the system. Because you are loading a large amount of data into the system, you want to make sure that the system performs and that it can minimize the amount of time required and to avoid overloading the system, which can lead to a system crash, especially in systems that already are in production.
 
 There are two approaches to loading the assets into the system: a push-based approach using HTTP or a pull-based approach using the JCR APIs.
 
 #### Send through HTTP {#pushing-through-http}
 
-Adobe’s Managed Services team uses a tool called Glutton to load data into customer environments. Glutton is a small Java application that loads all assets from one directory into another directory on an [!DNL Experience Manager] deployment. Instead of Glutton, you could also use tools such as Perl scripts to post the assets into the repository.
+Adobe's Managed Services team uses a tool called Glutton to load data into customer environments. Glutton is a small Java application that loads all assets from one directory into another directory on an [!DNL Experience Manager] deployment. Instead of Glutton, you could also use tools such as Perl scripts to post the assets into the repository.
 
 There are two main downsides to using the approach of pushing through https:
 
@@ -76,14 +76,14 @@ After you load the assets into the system, you need to process them through the 
 
 After you have configured the workflow according to your needs, you have two options for executing it:
 
-1. The simplest approach is [ACS Commons’ Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). This tool lets you execute a query and to process the results of the query through a workflow. There are options for setting batch sizes as well.
+1. The simplest approach is [ACS Commons' Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). This tool lets you execute a query and to process the results of the query through a workflow. There are options for setting batch sizes as well.
 1. You can use the [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) in concert with [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). While this approach is much more involved, it lets you remove the overhead of the [!DNL Experience Manager] workflow engine while optimizing the use of server resources. Additionally, the Fast Action Manager further boosts performance by dynamically monitoring server resources and throttling the load placed on the system. Example scripts have been provided on the ACS Commons feature page.
 
 ### Activate assets {#activating-assets}
 
 For deployments that have a publish tier, you need to activate the assets out to the publish farm. While Adobe recommends running more than a single publish instance, it is most efficient to replicate all of the assets to a single publish instance and then clone that instance. When activating large numbers of assets, after triggering a tree activation, you may need to intervene. Here's why: When firing off activations, items are added to the Sling jobs/event queue. After the size of this queue begins to exceed approximately 40,000 items, processing slows dramatically. After the size of this queue exceeds 100,000 items, system stability starts to suffer.
 
-To work around this issue, you can use the [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) to manage asset replication. This works without using the Sling queues, lowering overhead, while throttling the workload to prevent the server from becoming overloaded. An example of using FAM to manage replication is shown on the feature’s documentation page.
+To work around this issue, you can use the [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) to manage asset replication. This works without using the Sling queues, lowering overhead, while throttling the workload to prevent the server from becoming overloaded. An example of using FAM to manage replication is shown on the feature's documentation page.
 
 Other options for getting assets to the publish farm include using [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) or [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), which are provided as tools as part of Jackrabbit. Another option is to use an open-sourced tool for your [!DNL Experience Manager] infrastructure called [Grabbit](https://github.com/TWCable/grabbit), which claims to have faster performance than vlt.
 

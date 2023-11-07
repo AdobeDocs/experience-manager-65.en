@@ -24,13 +24,13 @@ For example, consider the following Forms application named *Applications/FormsA
 
 ![ww_ww_formrepository](assets/ww_ww_formrepository.png)
 
-Notice that there is a file named Loan.xdp located in the FormsFolder. To access this form design, you specify the complete path (including version): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+Notice that there is a file named Loan.xdp in the FormsFolder. To access this form design, you specify the complete path (including version): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
 >For information about creating a Forms application using Workbench, see [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-The path to a resource located in the AEM Forms repository is:
+The path to a resource in the AEM Forms repository is:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -44,7 +44,7 @@ The following values show some examples of URI values:
 >
 >You can browse the AEM Forms Repository by using a web browser. To browse the repository, enter the following URL into a web browser `https://[server name]:[server port]/repository`. You can verify quick start results that are associated with the Working with AEM Forms Repository section by using a web browser. For example, if you add content to the AEM Forms Repository, you can see the content in a web browser. (See [Quick Start (SOAP mode): Writing a resource using the Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
-The repository API provides a number of operations that you can use to store and retrieve information from the repository. For example, you can obtain a list of resources or retrieve specific resources that are stored in the repository when a resource is needed as part of processing an application.
+The repository API provides several operations that you can use to store and retrieve information from the repository. For example, you can obtain a list of resources or retrieve specific resources that are stored in the repository when a resource is needed as part of processing an application.
 
 >[!NOTE]
 >
@@ -299,7 +299,7 @@ Write a resource by using the Repository service API (Java):
 
 1. Write the resource to the target folder
 
-   Invoke the `ResourceRepositoryClient` object’s `writeResource` method and pass in the URI of the folder, as well as the `Resource` object.
+   Invoke the `ResourceRepositoryClient` object’s `writeResource` method and pass in the URI of the folder, and the `Resource` object.
 
 **See also**
 
@@ -348,7 +348,7 @@ Write a resource by using the Repository service API (web service):
 
 1. Write the resource to the target folder
 
-   Invoke the `RepositoryServiceService` object’s `writeResource` method and pass in the URI of the folder, as well as the `Resource` object. Pass `null` for the other two parameters.
+   Invoke the `RepositoryServiceService` object’s `writeResource` method and pass in the URI of the folder, and the `Resource` object. Pass `null` for the other two parameters.
 
 **See also**
 
@@ -536,7 +536,7 @@ Read a resource by using the Repository service API (Java):
 
 1. Specify the URI of the resource to be read
 
-   Specify a string value that represents the URI of the resource to retrieve. For example, assuming the resource is named *testResource* which is located in a folder named *testFolder*, specify `/testFolder/testResource`.
+   Specify a string value that represents the URI of the resource to retrieve. For example, assuming the resource is named *testResource* which is in a folder named *testFolder*, specify `/testFolder/testResource`.
 
 1. Read the resource
 
@@ -710,7 +710,7 @@ You can retrieve related resources to determine dependencies between a form and 
 
 **Query statements**
 
-A *query* contains one or more statements that are logically joined with conditions. A *statement* consists of a left operand, an operator, and a right operand. In addition, you can specify the sort order to be used for the search results. The *sort order* contains information equivalent to an SQL `ORDER BY` clause and is comprised of elements that contain the attributes on which the search was based as well as a value indicating whether ascending or descending order is to be used.
+A *query* contains one or more statements that are logically joined with conditions. A *statement* consists of a left operand, an operator, and a right operand. In addition, you can specify the sort order to be used for the search results. The *sort order* contains information equivalent to an SQL `ORDER BY` clause and is comprised of elements that contain the attributes on which the search was based and a value indicating whether ascending or descending order is to be used.
 
 You can programmatically search for resources by using the Repository service Java API. At this time, it is not possible to use the web service API to search for resources.
 
@@ -915,7 +915,7 @@ Create relationship resources by using the Repository service Java API, perform 
 
 1. Specify the URIs of the resources to be related
 
-   Specify the URIs of the resources to be related. In this case, because the resources are named `testResource1` and `testResource2` and are located in the folder named `testFolder`, their URIs are `"/testFolder/testResource1"` and `"/testFolder/testResource2"`. The URIs are stored as a `java.lang.String` objects. In this example, the resources are first written to the repository, and their URIs are retrieved. For more information about writing a resource, see [Writing Resources](aem-forms-repository.md#writing-resources).
+   Specify the URIs of the resources to be related. In this case, because the resources are named `testResource1` and `testResource2` and are in the folder named `testFolder`, their URIs are `"/testFolder/testResource1"` and `"/testFolder/testResource2"`. The URIs are stored as a `java.lang.String` objects. In this example, the resources are first written to the repository, and their URIs are retrieved. For more information about writing a resource, see [Writing Resources](aem-forms-repository.md#writing-resources).
 
 1. Create the relationship
 
@@ -959,7 +959,7 @@ Create relationship resources by using the Repository API (web service):
 
 1. Specify the URIs of the resources to be related
 
-   Specify the URIs of the resources to be related. In this case, because the resources are named `testResource1` and `testResource2` and are located in the folder named `testFolder`, their URIs are `"/testFolder/testResource1"` and `"/testFolder/testResource2"`. When using a language compliant with the Microsoft .NET Framework (for example, C#), the URIs are stored as a `System.String` objects. In this example, the resources are first written to the repository, and their URIs are retrieved. For more information about writing a resource, see [Writing Resources](aem-forms-repository.md#writing-resources).
+   Specify the URIs of the resources to be related. In this case, because the resources are named `testResource1` and `testResource2` and are in the folder named `testFolder`, their URIs are `"/testFolder/testResource1"` and `"/testFolder/testResource2"`. When using a language compliant with the Microsoft .NET Framework (for example, C#), the URIs are stored as a `System.String` objects. In this example, the resources are first written to the repository, and their URIs are retrieved. For more information about writing a resource, see [Writing Resources](aem-forms-repository.md#writing-resources).
 
 1. Create the relationship
 
@@ -993,7 +993,7 @@ Create relationship resources by using the Repository API (web service):
 
 You can lock a resource or set of resources for exclusive use by a particular user or shared use among more than one user. A shared lock is an indication that something will happen with the resource, but it does not prevent anyone else from taking actions with that resource. A shared lock should be considered a signaling mechanism. An exclusive lock means that the user who locked the resource is going to change the resource, and the lock ensures that nobody else can do so until the user no longer needs access to the resource and has released the lock. If a repository administrator unlocks a resource, all exclusive and shared locks on that resource will automatically be removed. This type of action is meant for situations in which a user is no longer available and has not unlocked the resource.
 
-When a resource is locked, a lock icon appears when you view the Resources tab located in Workbench, as shown in the following illustration.
+When a resource is locked, a lock icon appears when you view the Resources tab in Workbench, as shown in the following illustration.
 
 ![lr_lr_lockrepository](assets/lr_lr_lockrepository.png)
 

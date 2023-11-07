@@ -13,7 +13,7 @@ This page describes all the xtypes that are available with Adobe Experience Mana
 
 In the ExtJS language, an xtype is a symbolic name given to a class. You can read the "Component XTypes" paragraph of the [Overview of ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) for a detailed explanation about what an xtype is and how it can be used.
 
-For a complete information on all the available widgets in AEM refer to the [widget API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+For a complete information on all the available widgets in AEM, see the [widget API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 To find out in which components a given xtype is used in AEM, you can use the following Xpath query in CRXDE by replacing 'checkbox' with the xtype that you are interested in:
 
@@ -239,7 +239,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.wcm.CreateVersionDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.CreateVersionDialog)
 
-  The CreateVersionDialog is a dialog box that allows creating a new version of a page.
+  The CreateVersionDialog is a dialog box that allows creating a version of a page.
 
 * customcontentpanel
 
@@ -697,7 +697,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.form.SearchField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SearchField)
 
-  The SearchField provides a search field that provides the results in a drop down list which can be used for searching the repository.
+  The SearchField provides a search field that provides the results in a drop-down list which can be used for searching the repository.
 
 * selection
 
@@ -727,7 +727,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.form.SizeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SizeField)
 
-  The SizeField lets the user enter the width and height (for example for an image).
+  The SizeField lets the user enter the width and height (for example, for an image).
 
 * slider
 
@@ -755,7 +755,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.form.SmartImage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage)
 
-  The SmartImage is an intelligent image uploader. It provides tools to process an uploaded image, for example a tool to define image maps and an image cropper.
+  The SmartImage is an intelligent image uploader. It provides tools to process an uploaded image, for example, a tool to define image maps and an image cropper.
 
   The component is designed for use on a separate dialog tab.
 

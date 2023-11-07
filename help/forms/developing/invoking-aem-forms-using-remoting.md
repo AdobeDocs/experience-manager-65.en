@@ -70,7 +70,7 @@ When this process is invoked, it performs the following actions:
 
 ## Including the AEM Forms Flex library file {#including-the-aem-forms-flex-library-file}
 
-To programmatically invoke AEM Forms processes using Remoting, add the adobe-remoting-provider.swc file to your Flex project's class path. This SWC file is located in the following location:
+To programmatically invoke AEM Forms processes using Remoting, add the adobe-remoting-provider.swc file to your Flex project's class path. This SWC file is in the following location:
 
 * *&lt;install_directory&gt;\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
@@ -544,7 +544,7 @@ When passing a secure document, use single sign-on and specify an AEM forms user
 
 >[!NOTE]
 >
->When you create a new role and you want members of that role to upload secure documents, ensure that you specify the Document Upload permission.
+>When you create a role and you want members of that role to upload secure documents, ensure that you specify the Document Upload permission.
 
 AEM Forms supports an operation named `getFileUploadToken` that returns a token that is passed to the upload servlet. The `DocumentReference.constructRequestForUpload` method requires a URL to AEM Forms along with the token returned by the `LC.FileUploadAuthenticator.getFileUploadToken` method. This method returns a `URLRequest` object that is used in the invocation to the upload servlet. The following code demonstrates this application logic.
 
@@ -883,7 +883,7 @@ if AEM Forms is configured to only allow secure documents to be uploaded and the
 
 ## Invoking custom component services using Remoting {#invoking-custom-component-services-using-remoting}
 
-You can invoke services located in a custom component using Remoting. For example, consider the Bank component that contains the Customer service. You can invoke operations that belong to the Customer service using a client application written in Flex. Before you can execute the quick start associated with this section, you have to create the Bank custom component.
+You can invoke services in a custom component using Remoting. For example, consider the Bank component that contains the Customer service. You can invoke operations that belong to the Customer service using a client application written in Flex. Before you can execute the quick start associated with this section, you have to create the Bank custom component.
 
 The Customer service exposes an operation named `createCustomer`. This discussion describes how to create a Flex client application that invokes the Customer service and creates a customer. This operation requires a complex object of type `com.adobe.livecycle.sample.customer.Customer` that represents the new customer. The following illustration shows the client application that invokes the Customer service and creates a new customer. The `createCustomer` operation returns a customer identifier value. The identifier value is displayed in the Customer Identifier text box.
 
@@ -963,7 +963,7 @@ The following ActionScript class named Customer shows how to map to the AEM Form
 
 The fully qualified data type of the AEM Forms complex type is assigned to the alias tag.
 
-The ActionScript class's fields match the fields that belong to the AEM Forms complex type. The six fields located in the Customer ActionScript class match the fields that belong to `com.adobe.livecycle.sample.customer.Customer`.
+The ActionScript class's fields match the fields that belong to the AEM Forms complex type. The six fields in the Customer ActionScript class match the fields that belong to `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 >

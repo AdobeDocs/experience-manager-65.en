@@ -1,14 +1,10 @@
 ---
 title: Classic UI Tagging Console
-seo-title: Classic UI Tagging Console
 description: Learn about the Adobe Experience Manager Classic UI Tagging Console.
-seo-description: Learn about the Classic UI Tagging Console.
-uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 ---
@@ -36,7 +32,7 @@ To access the Classic UI Tagging console :
 
    ![Creating a name space dialog](assets/creating_tags_andnamespaces.png)
 
-   If you select a namespace (for example **Demo**) you can create a tag within that namespace:
+   If you select a namespace (for example, **Demo**) you can create a tag within that namespace:
 
    ![Creating a tag dialog](assets/creating_tags_andnamespacesinnewnamespace.png)
 
@@ -155,7 +151,7 @@ The dialog looks as follows:
 
 The Tagging console uses the user language setting, so for the Animal tag, 'Animaux' is displayed for a user who sets the language to French in user properties.
 
-To add a new language to the dialog, please refer to the section [Adding a New Language to the Edit Tag Dialog](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in the **Tagging for Developers** section.
+To add a new language to the dialog, see the section [Adding a New Language to the Edit Tag Dialog](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in the **Tagging for Developers** section.
 
 ### Displaying Tag Titles in Page Properties in a Specified Language {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
@@ -172,7 +168,7 @@ By default the tag `titles`in the page properties are displayed in the page lang
 
 By default, the Page Properties dialog displays the tag `titles`according to the page language.
 
-In general, the language of the tag is taken from the page language if the page language is available. When the [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) is used in other cases (for example in forms or in dialogs), the tag language depends on the context.
+In general, the language of the tag is taken from the page language if the page language is available. When the [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) is used in other cases (for example, in forms or in dialog boxes), the tag language depends on the context.
 
 >[!NOTE]
 >

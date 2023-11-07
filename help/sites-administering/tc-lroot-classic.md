@@ -13,7 +13,7 @@ The following procedure uses the classic UI to create a language root of a site.
 1. Add a new child page that represents the language version of the site:
 
     1. Click New > New Page.
-    1. In the dialog, specify the Title and the Name. The Name needs to be in the format of `<language-code>` or `<language-code>_<country-code>`, for example en, en_US, en_us, en_GB, en_gb.
+    1. In the dialog, specify the Title and the Name. The Name needs to be in the format of `<language-code>` or `<language-code>_<country-code>`, for example, en, en_US, en_us, en_GB, en_gb.
 
         * The supported language code is lower-case, two-letter code as defined by ISO-639-1
         * The supported country code is lower-case or upper-case, two-letter code as defined by ISO 3166

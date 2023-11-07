@@ -34,7 +34,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 >[!NOTE]
 >
->The SAML 2.0 Authentication Handler is disabled by default. You must set at least one of the following properties to enable the handler:
+>The SAML 2.0 Authentication Handler is disabled by default. Set at least one of the following properties to enable the handler:
 >
 >* The Identity Provider POST URL, or IDP URL.
 >* The Service Provider Entity ID.

@@ -287,7 +287,7 @@ Included in the release are two scoring rules for the [Forum Function](/help/com
 * `subRules` is an attribute of type String[] on the rule's `jcr:content` node.
 
 * `sub-rules` may be shared among various scoring rules.
-* `rules` should be located in a repository location with read permission for everyone.
+* `rules` should be in a repository location with read permission for everyone.
 
   * Rule names must be unique regardless of the location.
 
@@ -389,17 +389,17 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *member-profil
 custom header to pass to server (required)
 
 *signin* = administrator-id:password
-for example : admin:admin
+for example,  admin:admin
 
 *operation* = ":operation=social:assignBadge" OR ":operation=social:deleteBadge"
 
 *badge* = "badgeContentPath=*badge-image-file*"
 
 *badge-image-file* = the location of the badge image file in the repository
-for example : /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
+for example, /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
 *member-profile-url* = the endpoint for the member's profile on publish
-for example : https://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/profile.social.json
+for example, https://&lt;server&gt;:&lt;port&gt;/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -622,7 +622,7 @@ Next, [republish](/help/communities/sites-console.md#publishing-the-site) the co
 Finally,
 
 * Browse to the component on the publish instance.
-* Sign in as a community member (for example : weston.mccall@dodgit.com / password).
+* Sign in as a community member (for example, weston.mccall@dodgit.com / password).
 * Post a new forum topic.
 * The page must be refreshed for the badge to show.
 

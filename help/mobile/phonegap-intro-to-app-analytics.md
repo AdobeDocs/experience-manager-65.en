@@ -70,7 +70,7 @@ After clicking the '**+**' button, the **Add Cloud Service** wizard is displayed
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Select or create a new mobile service configuration by filling required fields as shown below. Your AEM administrator requires this information to successfully create the connection to Adobe Mobile Services.
+Select or create a mobile service configuration by filling required fields as shown below. Your AEM administrator requires this information to successfully create the connection to Adobe Mobile Services.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 

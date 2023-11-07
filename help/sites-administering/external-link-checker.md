@@ -13,7 +13,7 @@ The Link Checker runs automatically to assist content authors with their links i
 * Showing a list of all external links in the content
 * Performing link transformations
 
- The Link Checker has a number of [configuration options](#configuring) such as defining the validation internal, allowing certain links or link patters to be omitted from validation, and rewriting link rewriting rules.
+ The Link Checker has several [configuration options](#configuring) such as defining the validation internal, allowing certain links or link patters to be omitted from validation, and rewriting link rewriting rules.
 
 The Link Checker validates both [internal links](#internal) and [external links.](#external)
 
@@ -82,7 +82,7 @@ You can manipulate the content of the window, by using the two buttons at the to
 
 ### How the External Link Checker Works {#how-it-works}
 
-Though easy to use, the External Link Checker relies on a number of services and understanding how they work helps you understand how to [configure the Link Checker](#configuring) to meet your needs.
+Though easy to use, the External Link Checker relies on several services and understanding how they work helps you understand how to [configure the Link Checker](#configuring) to meet your needs.
 
 1. Whenever a content author saves any link to a page, an event handler is triggered.
 1. The event handler traverse all content under `/content` and checks for new or updated links and adds them to a cache for the Link Checker.
@@ -93,7 +93,7 @@ Though easy to use, the External Link Checker relies on a number of services and
 
 ## Configuring the Link Checker {#configuring}
 
-The Link Checker is available automatically out-of-the-box in AEM. However there are a number of OSGi configurations that can be modified to change its behavior:
+The Link Checker is available automatically out-of-the-box in AEM. However, there are several OSGi configurations that can be modified to change its behavior:
 
 * **Day CQ Link Checker Info Storage Service** - This service defines the size of the Link Checker cache in the repository.
 * **Day CQ Link Checker Service** - This service performs asynchronous checking of the syntax of external links. You can define the check period and which types of links are skipped by the checker among other options.

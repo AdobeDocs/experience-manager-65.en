@@ -1,14 +1,10 @@
 ---
 title: Getting Started Developing AEM Sites - WKND Tutorial
-seo-title: Getting Started Developing AEM Sites - WKND Tutorial
 description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
-seo-description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
-uuid: 12861ca8-b5b9-404e-9788-9d13aa7c5a68
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: 95346ce1-84b7-4bd1-a1e2-6a803139dc69
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
 ---
@@ -28,7 +24,7 @@ The goal for this multi-part tutorial is to teach a developer who is new to AEM 
 
 ## Core Concepts {#core-concepts}
 
-The tutorial implementation leverages many powerful features of AEM. The site will be implemented using:
+The tutorial implementation uses many powerful features of AEM. The site will be implemented using:
 
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Sling Models](https://sling.apache.org/documentation/bundles/models.html)
@@ -36,7 +32,7 @@ The tutorial implementation leverages many powerful features of AEM. The site wi
 * [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Editable Templates](/help/sites-developing/page-templates-editable.md)
 
-Please progress through the tutorial before diving into the above concepts in detail.
+Progress through the tutorial before diving into the above concepts in detail.
 
 ## Next Steps {#next-steps}
 

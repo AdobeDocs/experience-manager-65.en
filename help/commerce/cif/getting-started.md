@@ -62,7 +62,7 @@ This configuration can be adjusted for the project via the CIF Cloud Service con
 The following properties can be configured:
 
 - GraphQL Client - select the configured GraphQL client for commerce backend communication. This should typically stay at default.
-- Store View - the store view identifier. If empty, the default store view will be used.
+- Store View - the store view identifier. If empty, the default store view is used.
 - GraphQL Proxy Path - the URL path GraphQL Proxy in AEM use to proxy requests to the commerce backend GraphQL endpoint.
 
   >[!NOTE]

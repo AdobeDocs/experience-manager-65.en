@@ -106,7 +106,7 @@ The Output service always caches form designs on disk. If form designs are store
 
 The Output service caches fragments and images use in form designs on disk. This improves performance because the fragments and images are only read from the repository on the first request. Then on subsequent requests, the Output service reads fragments and images from the disk cache. Fragments and images are cached only on disk, and not in memory.
 
-You can use the following settings to control the on-disk caching of fragments and images. These settings are located in the **Template Resource Cache Settings** area:
+You can use the following settings to control the on-disk caching of fragments and images. These settings are in the **Template Resource Cache Settings** area:
 
 **Resource Caching** Select one of the following options from the list:
 

@@ -170,7 +170,7 @@ The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic 
 
 **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you must make it visible. See [Manage Image Presets](/help/assets/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
-**[!UICONTROL Output Format]** - Select the output format of the image, for example jpeg. Depending on the output format you select, there are additional configuration options. See [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options).
+**[!UICONTROL Output Format]** - Select the output format of the image, for example, jpeg. Depending on the output format you select, there are additional configuration options. See [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options).
 
 **[!UICONTROL Sharpening]** - Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/sharpening_images.pdf).
 

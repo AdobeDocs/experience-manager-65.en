@@ -83,11 +83,11 @@ This means that when an IP address must be specified you can select (as required
 
 * an IPv6 address
 
-  for example `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  for example, `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * an IPv4 address
 
-  for example `https://123.1.1.4:4502`
+  for example, `https://123.1.1.4:4502`
 
 * a server name
 
@@ -281,7 +281,7 @@ See the [Basics of Report Customization](/help/sites-administering/reporting.md#
 
 CQ sends email notifications to users who:
 
-* Have subscribed to page events, for example modification or replication.
+* Have subscribed to page events, for example, modification or replication.
 * Have subscribed to forum events.
 * Have to perform a step in a workflow.
 

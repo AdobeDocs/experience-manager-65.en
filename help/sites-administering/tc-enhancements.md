@@ -79,7 +79,7 @@ The translation memory updates can be intercepted and sent to a custom destinati
 
 ## Language Copies on Multiple Levels {#language-copies-on-multiple-levels}
 
-Language roots can now be grouped under nodes, for example by region, while still being recognized as roots of language copies.
+Language roots can now be grouped under nodes, for example, by region, while still being recognized as roots of language copies.
 
 ![screen_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
 

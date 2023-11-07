@@ -30,7 +30,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
    <td>Specifies the content of the field before it changes in response to the actions of a user. This value can be recalled, similar to an undo feature.</td>
    <td><p>Does not work for drop-downs and list boxes. <code>PrevText </code>does not work correctly for the following cases:</p>
     <ul>
-     <li>On typing some special character keys (for example $, (,), &amp;, @, and more) in Numeric fields on the iPad, and </li>
+     <li>On typing some special character keys (for example, $, (,), &amp;, @, and more) in Numeric fields on the iPad, and </li>
      <li>For the Date field (when date is entered through calendar).<br /> </li>
     </ul> <p>Setting value through script is not supported.</p> </td>
   </tr>
@@ -46,7 +46,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
     <ul>
      <li>On selecting-replacing texts</li>
      <li>On deleting, copying, and pasting texts.</li>
-     <li>On typing some special character keys (for example $, (, ), &amp;, @, and more) in Numeric fields<br /> </li>
+     <li>On typing some special character keys (for example, $, (, ), &amp;, @, and more) in Numeric fields<br /> </li>
      <li>On using shift+alphanumeric combination. </li>
      <li>On using date/time fields.</li>
     </ul>
@@ -61,7 +61,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
     <ul>
      <li>On selecting-replacing texts</li>
      <li>On deleting, copying, and pasting texts.</li>
-     <li>On typing some special character keys (for example $, (,), &amp;, @, and more) in Numeric fields<br /> </li>
+     <li>On typing some special character keys (for example, $, (,), &amp;, @, and more) in Numeric fields<br /> </li>
      <li>On using shift+alphanumeric combination. </li>
      <li>On using date/time fields.</li>
     </ul> <p>Setting value through script is not supported.</p> </td>
@@ -1347,4 +1347,4 @@ The following client sided XFA events are supported:
 
 >[!NOTE]
 >
->HTML5 forms are rendered on the client-side (browser). It is recommended to use client side **validate** and **calculate** scripts instead of server-sided scripts.
+>HTML5 forms are rendered on the client-side (browser). Use client side **validate** and **calculate** scripts instead of server-sided scripts.

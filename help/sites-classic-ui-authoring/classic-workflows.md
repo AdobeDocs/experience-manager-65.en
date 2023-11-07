@@ -19,7 +19,7 @@ AEM Workflows lets you automate a series of steps that are performed on a page o
 
 Typically:
 
-* Content authors apply workflows to pages as well as participate in workflows.
+* Content authors apply workflows to pages and participate in workflows.
 * The workflows that you use are specific to the business processes of your organization.
 
 The following pages cover:

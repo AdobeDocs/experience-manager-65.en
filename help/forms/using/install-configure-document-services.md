@@ -1,11 +1,7 @@
 ---
 title: Installing and configuring document services
-seo-title: Installing and configuring document services
 description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode Barcoded Forms.
-seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
-uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
-discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 ---
@@ -793,7 +789,7 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 When user tries to convert Word or Excel files to PDF on Microsoft Windows Server, the following error is encountered as:
 
 *Error message from the primary converter:
-ALC-PDG-015-003-The system cannot open the input file. Please submit your file again or contact your system administrator.*
+ALC-PDG-015-003-The system cannot open the input file. Submit your file again or contact your system administrator.*
 
 To resolve the issue, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md). 
 

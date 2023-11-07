@@ -1,13 +1,9 @@
 ---
 title: Getting Task Variables in Summary URL
-seo-title: Getting Task Variables in Summary URL
 description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
-seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
-uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
 ---
 # Getting Task Variables in Summary URL {#getting-task-variables-in-summary-url}
@@ -57,7 +53,7 @@ In this sample orchestration, an employee submits a leave application form. The 
     1. Create a process **create PTO summary** and use this as a subprocess before the **Assign Task** operation in your orchestration.
     1. Define **employeeName**, **employeeID**, **ptoReason**, **totalDays**, and **nodeName** as input variables in your new process. These variables will be passed as submitted form data.
 
-       Also define an output variable **ptoNodePath** which will be used while setting the summary Url.
+       Also define an output variable **ptoNodePath** which is used while setting the summary Url.
 
     1. In the **create PTO summary** process, use the **set value** component to set the input details in a **nodeProperty**(**nodeProps**) map.
 

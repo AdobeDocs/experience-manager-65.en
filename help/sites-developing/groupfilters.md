@@ -159,7 +159,7 @@ public class ScreenSizeLarge implements DeviceGroupFilter {
 }
 ```
 
-The String value that the getTitle method returns appars in the drop down list of the device group properties.
+The String value that the getTitle method returns appars in the drop-down list of the device group properties.
 
 ![filteraddtogroup](assets/filteraddtogroup.png)
 

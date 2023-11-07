@@ -118,6 +118,6 @@ Testing your form by using a sample data source ensures that the data and fields
 
 1. Click **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
 
-## Preview forms located in a repository {#html-preview-of-forms-in-forms-manager}
+## Preview forms in a repository {#html-preview-of-forms-in-forms-manager}
 
-In AEM Forms, you can preview forms and documents in a repository. Preview helps to know exactly how the forms look and behave as they will be used end users.
+In AEM Forms, you can preview forms and documents in a repository. Preview helps to know exactly how the forms look and behave are used end users.

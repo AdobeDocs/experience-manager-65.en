@@ -69,12 +69,12 @@ The Workspace global settings file includes the following settings:
 
 The *specialRoutes* settings specify the properties of the special routes, approve and deny, in Workspace. In certain situations, the buttons for these routes appear on the task cards in Workspace, and the user can select them without opening the form. You can modify the specialRoutes settings in the global settings file to add customized names for approve and deny or to create additional routes.
 
-**client_specialRoutes_routes_approve_style:** The name of the style that is located in the Workspace theme, which identifies the approve button icons. The style must include values for an enabled icon and disabled icon. To define a style for a custom button, you must use the following template:
-` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` The Workspace CSS file is embedded in the workspace-theme.swf file, which is located in the adobe-workspace-client.ear > adobe-workspace-client.war file. To change the appearance of Workspace, you must recompile the workspace-theme.swf file.
+**client_specialRoutes_routes_approve_style:** The name of the style that is in the Workspace theme, which identifies the approve button icons. The style must include values for an enabled icon and disabled icon. To define a style for a custom button, you must use the following template:
+` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` The Workspace CSS file is embedded in the workspace-theme.swf file, which is in the adobe-workspace-client.ear > adobe-workspace-client.war file. To change the appearance of Workspace, you must recompile the workspace-theme.swf file.
 
 **client_specialRoutes_routes_deny_names:** The variety of strings that a Workbench user can use to be interpreted as "deny". The strings are case-sensitive. For example, the default value is deny. If the Workbench user uses the word Deny in a process, the word will not be recognized. The word Deny must be added to this setting for the route button to be customized and have the style applied to it.
 
-**client_specialRoutes_routes_deny_style:** The name of the style that is located in the Workspace theme file, which identifies the deny button icons. The style must include values for an enabled icon and disabled icon. To define a style for a custom button, you must use the following template:
+**client_specialRoutes_routes_deny_style:** The name of the style that is in the Workspace theme file, which identifies the deny button icons. The style must include values for an enabled icon and disabled icon. To define a style for a custom button, you must use the following template:
 `  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** The variety of strings that a Workbench user can use to be interpreted as "approve". The strings are case-sensitive. For example, the default value is approve. If the Workbench user uses the word Approve in a process, the word will not be recognized. The word Approve must be added to this setting for the route button to be customized and have the style applied to it.
 
 **client_specialRoutes_names:** The keys used to locate the customized string value from the resource files. Each entry in this setting needs to include the values for the names and style.
@@ -107,13 +107,13 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 ### formView settings {#formview-settings}
 
-**client_formView_openFormInFullScreen:** To display all forms in Workspace in full-screen mode, set this option to true. By default, this option is set to false, and forms are not displayed in full-screen mode. Note that the User service contains an option to open the document associated with a task in full screen mode. This enables you to control the display on a per-process basis.
+**client_formView_openFormInFullScreen:** To display all forms in Workspace in full-screen mode, set this option to true. By default, this option is set to false, and forms are not displayed in full-screen mode. The User service contains an option to open the document associated with a task in full screen mode. This enables you to control the display on a per-process basis.
 
 **client_routes_formViewOnly:** When set to True, routes are not displayed in card view or list view in Workspace. The default value is False, meaning that the routes are displayed in card view and list view.
 
 ### Other settings {#other-settings}
 
-**client_mimeTypes_openOutsideBrowser:** The MIME type of documents that will open outside of the Workspace browser instance. If your organization’s processes require an additional MIME type, specify it here. The default values are:
+**client_mimeTypes_openOutsideBrowser:** The MIME type of documents that opens outside of the Workspace browser instance. If your organization’s processes require an additional MIME type, specify it here. The default values are:
 
 * `application/msword`
 * `application/msexcel`

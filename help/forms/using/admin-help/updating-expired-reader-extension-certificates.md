@@ -8,7 +8,7 @@ exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
 
 Adobe Experience Manager Forms (AEM Forms) customers with Adobe Managed Services or On-premise Enterprise Base licenses are entitled to use Acrobat Reader DC Extensions service. The service enables an organization to easily share interactive PDF documents by extending the functionality of Acrobat Reader with additional usage rights. The service adds usage rights to a PDF document and activates features that are not available when a PDF document is opened using Adobe Acrobat Reader, such as adding comments to a document, filling forms, and saving the document. Third-party users do not require additional software or plug-ins to work with rights-enabled documents. PDF documents that have usage rights added are called rights-enabled documents. A user who opens a rights-enabled PDF document in Acrobat Reader can perform the operations that are enabled for that document.
 
-Adobe leverages a public key infrastructure (PKI) to issue digital certificates for use in licensing and feature enablement. Adobe has been issuing certificates under the certificate authority **Adobe Root CA**, which is set to expire on January 7, 2023. The expiration of certificate does not impact PDF documents extended using production certificates issued from the **Adobe Root CA** based certificates (old certificates). All PDF documents, Reader extended using the old certificates before January 7, 2023, including the ones downloaded by your customers, would continue to work with all the usage rights that are applied to them, and do not require any updates.
+Adobe uses a public key infrastructure (PKI) to issue digital certificates for use in licensing and feature enablement. Adobe has been issuing certificates under the certificate authority **Adobe Root CA**, which is set to expire on January 7, 2023. The expiration of certificate does not impact PDF documents extended using production certificates issued from the **Adobe Root CA** based certificates (old certificates). All PDF documents, Reader extended using the old certificates before January 7, 2023, including the ones downloaded by your customers, would continue to work with all the usage rights that are applied to them, and do not require any updates.
 
 A new certificate authority, **Adobe Root CA G2**, and certificates based on the new certificate authority are now available. On or before January 7, 2023, start using the new certificates —  those based on **Adobe Root CA G2** — to Reader extend your new PDF documents.  You can [obtain new certificates from the Adobe Licensing Website](https://licensing.adobe.com/) or Adobe Support.  
 
@@ -172,7 +172,7 @@ The following command list the details of the pfx file. Before running the comma
 
 `keytool -v -list -storetype pkcs12 -keystore [name of your .pfx file]`
 
-For example keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
+For example, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
 
 <!-- ### Remove usage rights from existing rights-enabled PDF documents
 

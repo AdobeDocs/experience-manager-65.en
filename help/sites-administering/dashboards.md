@@ -27,8 +27,6 @@ When using AEM you are able of managing a lot of content of different types (for
 
 ### Creating A Dashboard {#creating-a-dashboard}
 
-To create a new Dashboard, proceed as follows:
-
 1. In the **Tools** section, click **Configuration Console**.
 1. In the tree, Double-Click **Dashboard**.
 1. Click **New Dashboard**.

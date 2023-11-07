@@ -232,7 +232,7 @@ The Dynamic Media Classic (Scene7) Image component lets you add Dynamic Media Cl
 
 **Image preset** - Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you must make it visible. See Managing Image Presets. You cannot select a viewer preset if you are using an image preset and conversely.
 
-**Output Format** - Select the output format of the image, for example jpeg. Depending on the output format you select, you may have additional configuration options. See Image Preset best practices.
+**Output Format** - Select the output format of the image, for example, jpeg. Depending on the output format you select, you may have additional configuration options. See Image Preset best practices.
 
 **Sharpening** - Select how you want to sharpen the image. Sharpening is explained in detail in Image Preset best practices and Sharpening best practices.
 

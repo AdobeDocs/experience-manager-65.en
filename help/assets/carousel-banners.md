@@ -1,12 +1,10 @@
 ---
 title: Carousel banners
 description: Learn how to work with carousel banners in Dynamic Media
-uuid: 73684a08-d84d-4665-ab89-3a1bf88ac5dd
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 feature: Carousel Banners
 role: User, Admin
@@ -38,7 +36,7 @@ Play a walkthrough on [how carousel banners are created](https://s7d5.scene7.com
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing,  see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
 ## Quick Start: Carousel banners {#quick-start-carousel-banners}
 
@@ -173,7 +171,7 @@ Consider the following examples of Quickview URLs and their resulting hotspot or
 
 ## Upload Image Banners {#uploading-image-banners}
 
-If you have already uploaded the images that you want to use, advance to the next step, [Create Carousel Sets](#creating-carousel-sets). Please note the images used in the carousel must be uploaded after Dynamic Media has been enabled.
+If you have already uploaded the images that you want to use, advance to the next step, [Create Carousel Sets](#creating-carousel-sets). Note the images used in the carousel must be uploaded after Dynamic Media has been enabled.
 
 To upload image banners, see [Upload assets](/help/assets/manage-assets.md).
 
@@ -181,7 +179,7 @@ To upload image banners, see [Upload assets](/help/assets/manage-assets.md).
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
 **To create Carousel Sets:**
 
@@ -331,7 +329,7 @@ See also [Add image maps](/help/assets/image-maps.md).
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, please see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
 You can perform various editing tasks on Carousel Sets such as the following:
 

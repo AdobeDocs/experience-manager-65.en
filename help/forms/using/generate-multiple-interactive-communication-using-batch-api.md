@@ -183,7 +183,7 @@ You combine data (records) saved in an external data source with an interactive 
         </dependency>
     ```
     
- 1. Open the Java project, create a .java file, for example CCMBatchServlet.java. Add the following code to the file:
+ 1. Open the Java project, create a .java file, for example, CCMBatchServlet.java. Add the following code to the file:
 
     ```java
 

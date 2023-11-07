@@ -42,7 +42,7 @@ Regardless of the content being compared, the presentation of the diff remains t
 * The content selected when you started the diff is displayed on the left (the diff entry point).
 * The compare-to content is displayed on the right (what the selected content is compared against).
 
-For example if comparing versions, the current version is displayed on the left and the previous version is displayed on the right.
+For example, if comparing versions, the current version is displayed on the left and the previous version is displayed on the right.
 
 The source of both pages is clearly displayed in the header bar at the top of the browser window.
 
@@ -96,4 +96,4 @@ There are some situations in which the page diff may not detect a difference as 
 
 >[!NOTE]
 >
->For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.
+>For more details about the operation of the page diff mechanism and limitations which can affect page diff, see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.

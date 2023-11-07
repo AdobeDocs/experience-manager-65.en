@@ -79,7 +79,7 @@ Your customized field should only override the `render.jsp` script, where you pr
    vm.get("value, String.class");
    ```
 
-   For more details, please refer to the implementation of out-of-the-box Granite UI fields; for example, `/libs/granite/ui/components/foundation/form/textfield`.
+   For more details, see the implementation of out-of-the-box Granite UI fields; for example, `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >

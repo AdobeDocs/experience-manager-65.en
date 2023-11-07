@@ -34,7 +34,7 @@ Output service enables you to create applications that let you:
 
 Typically, you create templates using AEM Forms Designer. The `generatePDFOutput` and `generatePrintedOutput` APIs of the Output service let you directly convert these templates to various formats, including PDF, PostScript, ZPL, and PCL.
 
-The `generatePDFOutput` operation generates PDFs, while the `generatePrintedOutput` operation generates PostScript, ZPL, and PCL formats. The first parameter of both the operations accept either the name of the template file (for example `ExpenseClaim.xdp`) or a Document object that contains the template. When you specify the name of the template file, also specify the content root as the path to the folder that contains the template. You can specify content root using either the `PDFOutputOptions` or the `PrintedOutputOptions` parameter. See Javadoc for details of other options you can specify using these parameters.
+The `generatePDFOutput` operation generates PDFs, while the `generatePrintedOutput` operation generates PostScript, ZPL, and PCL formats. The first parameter of both the operations accept either the name of the template file (for example, `ExpenseClaim.xdp`) or a Document object that contains the template. When you specify the name of the template file, also specify the content root as the path to the folder that contains the template. You can specify content root using either the `PDFOutputOptions` or the `PrintedOutputOptions` parameter. See Javadoc for details of other options you can specify using these parameters.
 
 The second parameter accepts an XML document that is merged with the template while generating the output document.
 

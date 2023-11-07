@@ -177,7 +177,7 @@ The source of the UI module is located at /libs/granite/contexthub/components/mo
 
 ### Configuration {#configuration-5}
 
-Instances of the contexthub.screen-orientation UI module do not require a value for the Detail Configuration. The following JSON text represents the default configuration of the module. Note that the `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a popup where you can select the orientation.
+Instances of the contexthub.screen-orientation UI module do not require a value for the Detail Configuration. The following JSON text represents the default configuration of the module. The `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a popup where you can select the orientation.
 
 ```xml
 {

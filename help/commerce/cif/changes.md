@@ -51,4 +51,4 @@ AEM renders product catalog experiences on-the-fly using AEM catalog templates t
 
 >[!NOTE]
 >
->For additional documentation on how to use CIF with AEM Managed Service or AEM On-Premise, refer to [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>For additional documentation on how to use CIF with AEM Managed Service or AEM On-Premise, see [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

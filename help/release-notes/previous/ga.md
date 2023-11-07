@@ -302,7 +302,7 @@ Site Administrators can create a group at any level of hierarchy and become the 
 The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
 
 * Keyboard navigation support on enablement components
-* Enablement components (for example Catalog and Course Playing, Assignments, File Library) in AEM Communities support keyboard navigation for improved accessibility.
+* Enablement components (for example, Catalog and Course Playing, Assignments, File Library) in AEM Communities support keyboard navigation for improved accessibility.
 
 ##### Other enhancements {#other-enhancements}
 

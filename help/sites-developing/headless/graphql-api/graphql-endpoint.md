@@ -55,13 +55,13 @@ To enable the corresponding endpoint:
 
 1. Navigate to **Tools**, **Assets**, then select **GraphQL**.
 1. Select **Create**.
-1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
+1. The **Create new GraphQL Endpoint** dialog box opens. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
    * **Use GraphQL schema provided by**: use the dropdown to select the required site/project.
 
    >[!NOTE]
    >
-   >The following warning is shown in the dialog:
+   >The following warning is shown in the dialog box:
    >
    >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Please ensure to set appropriate permissions after creating an endpoint.*
    
@@ -84,4 +84,4 @@ Select the new endpoint and **Publish** to make it fully available in all enviro
 >
 >On publish instances this can pose a security concern, as GraphQL queries can impose a heavy load on the server.
 >
->You must set up ACLs appropriate to your use case on the endpoint.
+>Set up ACLs appropriate to your use case on the endpoint.

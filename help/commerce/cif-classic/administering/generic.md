@@ -258,7 +258,7 @@ You can add multiple assets in the product component, then specify the asset tha
 Two assets are now stored in your product component. You can configure which one appears on the product page. This works with a category system. First you must add a category to the individual assets:
 
 1. Select **View Product Data**.
-1. Type an **Asset Category** under the assets, for example `cat1` and `cat2`.
+1. Type an **Asset Category** under the assets, for example, `cat1` and `cat2`.
 
    >[!NOTE]
    >
@@ -339,8 +339,8 @@ The mechanism to select the image to be displayed is as follows:
 <!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration lets you: -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 * use the eCommerce API, independently of the underlying repository structure and commerce platform. -->
-<!-- Search&Promote is end of life as of September 1, 2022 * leverage the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
-<!-- Search&Promote is end of life as of September 1, 2022 * leverage the Remote Control feature of Search&Promote to perform on-demand or scheduled requests of the product feed -->
+<!-- Search&Promote is end of life as of September 1, 2022 * use the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
+<!-- Search&Promote is end of life as of September 1, 2022 * use the Remote Control feature of Search&Promote to perform on-demand or scheduled requests of the product feed -->
 <!-- Search&Promote is end of life as of September 1, 2022 * feed generation for different Search&Promote accounts, configured as cloud services configurations. -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 For more information, read [Product Feed](/help/sites-administering/product-feed.md). -->
@@ -469,7 +469,7 @@ To generate a Catalog:
 
 1. Selecting the **Done** button brings you back to the Sites console where you can see your catalog.
 
-   Tapping/clicking **Open Catalog** button opens your catalog (for example `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Tapping/clicking **Open Catalog** button opens your catalog (for example, `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Generating a Catalog - Classic UI {#generating-a-catalog-classic-ui}
 

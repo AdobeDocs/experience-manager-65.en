@@ -47,7 +47,7 @@ If you do not map a CQ variable to the `s.pageName` property in the framework, t
 
 ## Maintaining Continuity in Analytics Reporting {#maintaining-continuity-in-analytics-reporting}
 
-Maintaining a complete history of analytics data for a page requires that the value of the s.pageName property that is used for a page never changes. However, the analtyics properties that the foundation page component defines can be easily changed. For example moving a page changes the value of `pagedata.path` and breaks the continuity of the reporting history:
+Maintaining a complete history of analytics data for a page requires that the value of the s.pageName property that is used for a page never changes. However, the analtyics properties that the foundation page component defines can be easily changed. For example, moving a page changes the value of `pagedata.path` and breaks the continuity of the reporting history:
 
 * Data that was collected for the previous path is no longer associated with the page.
 * If a different page uses the path that another page once used, the different page inherits the data for that path.
@@ -148,7 +148,7 @@ The following implementation of the getResource method returns the Resource obje
     }
 ```
 
-The following code represents the entire class, including SCR annotations that configure the service. Note that the service ranking is 200 which overrides the default service.
+The following code represents the entire class, including SCR annotations that configure the service. The service ranking is 200 which overrides the default service.
 
 ```java
 /*************************************************************************

@@ -923,20 +923,20 @@ The CSS includes a series of media queries that use the following structure:
 
 Use the following algorithm as a starting point for developing the element classes and CSS styles for your pages.
 
-1. Define a class name for the div element that contains all rows, for example `content.`
+1. Define a class name for the div element that contains all rows, for example, `content.`
 1. Define a CSS class for div elements that represent rows, such as `row-fluid`.
 1. Define class names for content block elements. A class is required for all possible widths, in terms of column spans. For example, use the `span3` class for `div` elements that span three columns, use `span4` classes for spans of four columns. Define as many classes as there are columns in your grid.
 
 1. For each viewport size that you are targeting, add the corresponding media query to your CSS file. Add the following items in each media query:
 
-    * A selector for the `content` class, for example `.content{}`.
-    * Selectors for each span class, for example `.span3{ }`.
-    * A selector for the `row-fluid` class, for example `.row-fluid{ }`
-    * Selectors for span classes that are inside row-fluid classes, for example `.row-fluid span3 { }`.
+    * A selector for the `content` class, for example, `.content{}`.
+    * Selectors for each span class, for example, `.span3{ }`.
+    * A selector for the `row-fluid` class, for example, `.row-fluid{ }`
+    * Selectors for span classes that are inside row-fluid classes, for example, `.row-fluid span3 { }`.
 
 1. Add width styles for each selector:
 
-    1. Set the width of `content` selectors to the absolute size of the page, for example `width:480px`.
+    1. Set the width of `content` selectors to the absolute size of the page, for example, `width:480px`.
     1. Set the width of all row-fluid selectors to 100%.
     1. Set the width of all span selectors to the absolute width of the content block. A trivial grid uses evenly distributed columns of the same width: `(absolute width of page)/(number of columns)`.
     1. Set the width of the `.row-fluid .span` selectors as a percentage of the total width. Calculate this width using the `(absolute span width)/(absolute page width)*100` formula.

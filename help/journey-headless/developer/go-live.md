@@ -145,7 +145,7 @@ After the updates have been uploaded to Cloud Manager, deploy them to AEM using 
 
 <!-- Can't find a parallel link -->
 <!--
-You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
 
 ## Performance Monitoring {#performance-monitoring}
@@ -161,7 +161,7 @@ For users to have the best possible experience when using the AEM headless appli
     * Check number of users, requests, and load
 * Access App and Space specific performance reports
   * Once the server is up, check whether the general metrics are green/orange/red, then identify specific app issues
-  * Open same reports above filtered to app or space (for example Photoshop desktop, paywall)
+  * Open same reports above filtered to app or space (for example, Photoshop desktop, paywall)
   * Use Splunk log APIs to access service and application performance
   * Contact Customer Support in case there are other issues.
 

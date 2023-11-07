@@ -30,7 +30,7 @@ To generate the URL for assets that you want to share with users, use the [!UICO
 
 1. In the [!DNL Assets] user interface, select the asset to share as a link.
 
-1. From the toolbar, click the **[!UICONTROL Share Link]** ![share assets icon](assets/do-not-localize/assets_share.png). The link that will be created after clicking **[!UICONTROL Share]** is displayed in advance in the [!UICONTROL Share Link] field. The link is not created till you select **[!UICONTROL Submit]**.
+1. From the toolbar, click the **[!UICONTROL Share Link]** ![share assets icon](assets/do-not-localize/assets_share.png). The link that is created after clicking **[!UICONTROL Share]** is displayed in advance in the [!UICONTROL Share Link] field. The link is not created till you select **[!UICONTROL Submit]**.
 
    ![Dialog with the Link Share](assets/share-assets-as-link.png)
 

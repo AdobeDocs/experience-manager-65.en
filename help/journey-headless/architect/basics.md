@@ -99,7 +99,7 @@ Two data types provide references to content outside a specific fragment:
   This type of reference is used to create nested content, introducing the relationships needed to model your content.
   The data type can be configured to allow fragment authors to:
   * Edit the referenced fragment directly.
-  * Create a new content fragment, based on the appropriate model
+  * Create a content fragment, based on the appropriate model
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ For example, you might have the following Content Fragment Models defined:
 * Person
 * Awards
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
 And a Person can have an Award (or maybe two).
 

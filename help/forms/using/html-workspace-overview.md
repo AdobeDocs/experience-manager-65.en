@@ -93,7 +93,7 @@ The mapping between various types of customizations in both the workspaces is as
    <td>
     <ol>
      <li><a href="/help/forms/using/description-reusable-components.md">Working with Reusable components</a></li>
-     <li><a href="/help/forms/using/creating-new-login-screen.md">Creating a new Login screen</a></li>
+     <li><a href="/help/forms/using/creating-new-login-screen.md">Creating a Login screen</a></li>
      <li>Approval Container is deprecated.</li>
     </ol> </td>
   </tr>

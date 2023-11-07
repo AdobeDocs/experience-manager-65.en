@@ -1,13 +1,9 @@
 ---
 title: Create custom appearances for adaptive form fields
-seo-title: Create custom appearances for adaptive form fields
 description: Customize appearance of out-of-the-box components in Adaptive Forms.
-seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
-uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
 ---
@@ -15,7 +11,7 @@ exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
 
 ## Introduction {#introduction}
 
-Adaptive forms leverages the [appearance framework](/help/forms/using/introduction-widgets.md) to help you create custom appearances for adaptive form fields and provide a different user experience. For example, replace radio buttons and check boxes with toggle buttons or use custom jQuery plugins to restrict users inputs in fields like phone numbers or email ID.
+Adaptive forms uses the [appearance framework](/help/forms/using/introduction-widgets.md) to help you create custom appearances for adaptive form fields and provide a different user experience. For example, replace radio buttons and check boxes with toggle buttons or use custom jQuery plugins to restrict users inputs in fields like phone numbers or email ID.
 
 This document explains how to use a jQuery plugin to create these alternate experiences for adaptive form fields. In addition, it showcases an example to create a custom appearance for numeric field component to appear as a numeric stepper or slider.
 
@@ -135,7 +131,7 @@ Once the project template is created, do the following changes, as required:
   </tr>
   <tr>
    <td><code>getCommitValue</code></td>
-   <td>The jQuery widget framework loads the function whenever the value of the jQuery widget is saved in the XFA model (for example on exit event of a text field). The implementation should return the value saved in the widget. The handler is provided with the new value for the option.</td>
+   <td>The jQuery widget framework loads the function whenever the value of the jQuery widget is saved in the XFA model (for example, on exit event of a text field). The implementation should return the value saved in the widget. The handler is provided with the new value for the option.</td>
   </tr>
   <tr>
    <td><code>showValue</code></td>
@@ -314,4 +310,4 @@ Let's now look at an example to create a custom appearance for a numeric field t
 
     1. In the Styling tab, update the **[!UICONTROL CSS class]** property to add `widget_numericStepper`.
 
-The new appearance you just created is now available for use.
+The new appearance you created is now available for use.

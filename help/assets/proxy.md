@@ -81,7 +81,7 @@ The following is an example of API usage:
 @Reference
  JobService proxyJobService;
 
- // to create a new job
+ // to create a job
  final Hashtable props = new Hashtable();
  props.put("someproperty", "some value");
  props.put(JobUtil.PROPERTY_JOB_TOPIC, "myworker/job"); // this is an identifier of the worker

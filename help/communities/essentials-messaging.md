@@ -108,7 +108,7 @@ A community site structure, created using the wizard, includes the messaging fea
 
 ### Sample Code: Message Received Notification {#sample-code-message-received-notification}
 
-The Social Messaging feature throws events for operations, for example `send`, `marking read`, `marking delete`. These events can be caught and actions taken on the data contained in the event.
+The Social Messaging feature throws events for operations, for example, `send`, `marking read`, `marking delete`. These events can be caught and actions taken on the data contained in the event.
 
 The following example is of an event handler which listens for the `message sent` event and sends an email to all message recipients using the `Day CQ Mail Service`.
 

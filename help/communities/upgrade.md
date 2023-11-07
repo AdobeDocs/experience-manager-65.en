@@ -77,7 +77,7 @@ See also [Using Maven for Communities](/help/communities/maven.md).
 
 The [social component framework](/help/communities/scf.md) (SCF) uses the [HandlebarsJS](https://handlebarsjs.com/) (HBS) templating language in place of Java Server Pages (JSP) used prior to AEM 6.0.
 
-In AEM 6.0, the JSP components remained alongside the new HBS framework components in the same location, with the HBS components typically located in subfolders named "hbs".
+In AEM 6.0, the JSP components remained alongside the new HBS framework components in the same location, with the HBS components typically in subfolders named "hbs".
 
 As of AEM 6.1, the JSP components were completely removed. For Communities, it is recommended to replace all use of JSP components with SCF components.
 
@@ -91,7 +91,7 @@ In additin to moving UGC from earlier versions, it is also possible to use the t
 
 Conceptually, there are three generations of communities components :
 
-**Gen 1**: Roughly CQ 5.4 through AEM 5.6.0, these are the **collab** components which stored UGC in the local repository using replication as a means of synchronizing UGC across platforms. Other differences involve the implementation using Java Server Pages (JSP) as well as the blog feature consisting of authoring only in the author environment.
+**Gen 1**: Roughly CQ 5.4 through AEM 5.6.0, these are the **collab** components which stored UGC in the local repository using replication as a means of synchronizing UGC across platforms. Other differences involve the implementation using Java Server Pages (JSP) and the blog feature consisting of authoring only in the author environment.
 
 **Gen 2**: From AEM 5.6.1 through AEM 6.1, this is a mix of **collab** and **social** components. AEM 6.0 introduced the new [social component framework](/help/communities/scf.md) (SCF) and AEM 6.2 introduced a [common UGC store](/help/communities/working-with-srp.md) where UGC is accessed using a [storage resource provider](/help/communities/srp.md) (SRP).
 

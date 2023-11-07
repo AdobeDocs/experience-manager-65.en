@@ -80,9 +80,9 @@ You must obtain an unencrypted PDF document to encrypt the document with a passw
 
 To encrypt a PDF document with a password, you specify four values, including two password values. The first password value is used to encrypt the PDF document and must be specified when opening the PDF document. The second password value, named the master password value, is used to remove encryption from the PDF document. Password values are case sensitive, and these two password values cannot be the same values.
 
-You must specify the PDF document resources to encrypt. You can encrypt the entire PDF document, everything except for the document’s metadata, or just the document’s attachments. If you encrypt only the document’s attachments, a user is prompted for a password when they attempt to access the file attachments.
+Specify the PDF document resources to encrypt. You can encrypt the entire PDF document, everything except for the document’s metadata, or just the document’s attachments. If you encrypt only the document’s attachments, a user is prompted for a password when they attempt to access the file attachments.
 
-When encrypting a PDF document, you can specify permissions that are associated with the secured document. By specifying permissions, you can control the actions that a user who opens a password-encrypted PDF document is allowed to perform. For example to successfully extract form data, you must set the following permissions:
+When encrypting a PDF document, you can specify permissions that are associated with the secured document. By specifying permissions, you can control the actions that a user who opens a password-encrypted PDF document is allowed to perform. For example, to successfully extract form data, you must set the following permissions:
 
 * PASSWORD_EDIT_ADD
 * PASSWORD_EDIT_MODIFY
@@ -136,7 +136,7 @@ Encrypt a PDF document with a password by using the Encryption API (Java):
     * Create a `PasswordEncryptionOptionSpec` object by invoking its constructor.
     * Specify the PDF document resources to encrypt by invoking the `PasswordEncryptionOptionSpec` object’s `setEncryptOption` method and passing a `PasswordEncryptionOption` enumeration value that specifies the document resources to encrypt. For example, to encrypt the entire PDF document, including its metadata and its attachments, specify `PasswordEncryptionOption.ALL`.
     * Create a `java.util.List` object that stores the encryption permissions by using the `ArrayList` constructor.
-    * Specify a permission by invoking the `java.util.List` object ‘s `add` method and passing an enumeration value that corresponds to the permission that you want to set. For example, to set the permission that lets a user copy data located in the PDF document, specify `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repeat this step for each permission to set).
+    * Specify a permission by invoking the `java.util.List` object ‘s `add` method and passing an enumeration value that corresponds to the permission that you want to set. For example, to set the permission that lets a user copy data in the PDF document, specify `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repeat this step for each permission to set).
     * Specify the Acrobat compatibility option by invoking the `PasswordEncryptionOptionSpec` object’s `setCompatability` method and passing an enumeration value that specifies the Acrobat compatibility level. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
     * Specify the password value that lets a user open the encrypted PDF document by invoking the `PasswordEncryptionOptionSpec` object’s `setDocumentOpenPassword` method and passing a string value that represents the open password.
     * Specify the master password value that lets a user remove encryption from the PDF document by invoking the `PasswordEncryptionOptionSpec` object’s `setPermissionPassword` method and passing a string value that represents the master password.

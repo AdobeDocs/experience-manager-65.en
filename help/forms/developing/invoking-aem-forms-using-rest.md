@@ -315,4 +315,4 @@ The complete URL to invoke the process is https://hiro-xp:8080/rest/services/MyA
 
 If the process requires a PDF document as an input value, ensure that you submit the form as PDF, as shown in the previous illustration. Also, to successfully invoke a process, the process must return a PDF document. Otherwise Acroabt cannot handle the return value and an error occurs. You do not have to specify the name of the input process variable. For example, the *MyApplication/EncryptDocument* process has an input variable named `inDoc`. You do not have to specify inDoc, as long as the form is submited as PDF.
 
-You can also submit form data as XML to a Forms process, To submit XML data, ensure that the `Submit As` drop down specifies XML. Because the return value of the process must be a PDF document, the PDF document is displayed in Acrobat.
+You can also submit form data as XML to a Forms process, To submit XML data, ensure that the `Submit As` drop-down specifies XML. Because the return value of the process must be a PDF document, the PDF document is displayed in Acrobat.

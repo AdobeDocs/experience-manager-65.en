@@ -23,7 +23,7 @@ Currently all implementations of the Java Platform support [TrueType](https://en
 
    `/apps/<your-project>/`
 
-1. Under `/apps/<your-project>/` create a new node:
+1. Under `/apps/<your-project>/` create a node:
 
     * **Name**: `fonts`
     * **Type**: `sling:Folder`

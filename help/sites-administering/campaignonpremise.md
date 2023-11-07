@@ -20,7 +20,7 @@ This integration allows AEM and Adobe Campaign Classic to be used independently.
 
 ## Integration Steps {#integration-steps}
 
-Integration between AEM and Campaign requires a number of steps in both solutions.
+Integration between AEM and Campaign requires several steps in both solutions.
 
 1. [Install the AEM Integration Package in Campaign.](#install-package)
 1. [Create an operator for AEM in Campaign](#create-operator)
@@ -35,12 +35,12 @@ This document leads you through each of these steps in detail.
 
 * Administrator access to Adobe Campaign Classic
   * To perform the integration, you need a working Adobe Campaign Classic instance, including a configured database.
-  * If you need additional details on how to set up and configure Adobe Campaign Classic please refer to the [Adobe Campaign Classic documentation,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) particularly the Installation and Configuration guide.
+  * If you need additional details on how to set up and configure Adobe Campaign Classic see the [Adobe Campaign Classic documentation,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) particularly the Installation and Configuration guide.
 * Administrator access to AEM
 
 ## Install the AEM Integration Package in Campaign {#install-package}
 
-The **AEM Integration** package in Adobe Campaign includes a number of standard configurations necessary to connect to AEM.
+The **AEM Integration** package in Adobe Campaign includes several standard configurations necessary to connect to AEM.
 
 1. As an administrator, sign into the Adobe Campaign instance using the client console.
 
@@ -106,7 +106,7 @@ The integration package automatically creates the `aemserver` operator that AEM 
    >
    >By default, there is no security zone configured for the operator. For AEM to connect to Adobe Campaign, you must select a zone as detailed in the previous steps.
    >
-   >Adobe strongly recommends creating a security zone dedicated to AEM to avoid any security issues. For more on this topic, please refer to the [Adobe Campaign Classic documentation.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >Adobe strongly recommends creating a security zone dedicated to AEM to avoid any security issues. For more on this topic, see the [Adobe Campaign Classic documentation.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
 1. In the Campaign client, return to the `aemserver` operator and select the **General** tab.
 

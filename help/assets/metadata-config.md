@@ -15,7 +15,7 @@ hide: yes
 | AEM 6.5     | This article         |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -50,7 +50,7 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 ### Add a metadata profile {#adding-a-metadata-profile}
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** and click **[!UICONTROL Create]**.
-1. Enter a title for the profile, for example `Sample Metadata`, and click **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
+1. Enter a title for the profile, for example, `Sample Metadata`, and click **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
 
    ![Edit a metadata form](assets/metadata-edit-form.png)
 

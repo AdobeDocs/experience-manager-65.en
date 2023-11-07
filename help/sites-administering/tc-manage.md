@@ -117,7 +117,7 @@ After you have created a translation project, you can use the Resources pane to 
 
 When you add pages to a translation project, the pages are included in a new translation job. You can also [add pages to an existing job](#adding-pages-assets-to-a-translation-job).
 
-As when creating a new project, when adding pages, copies of the pages are added to a launch when necessary to avoid overwriting existing language copies. (See [Creating Translation Projects for Existing Language Copies](#performing-initial-translations-and-updating-existing-translations).)
+As when creating a project, when adding pages, copies of the pages are added to a launch when necessary to avoid overwriting existing language copies. (See [Creating Translation Projects for Existing Language Copies](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Use the Sites console to select the page that you are adding to the translation project.
 
@@ -228,7 +228,7 @@ When a project is created using the Resources pane of a page, these properties a
 
 ## Monitoring the Status of a Translation Job {#monitoring-the-status-of-a-translation-job}
 
-The Translation Job tile of a Translation project provides the status of a translation job, as well as the number of pages and assets in the job.
+The Translation Job tile of a Translation project provides the status of a translation job, and the number of pages and assets in the job.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -286,7 +286,7 @@ The following procedure sets the due date for a translation job.
 
 Scope a translation job to obtain an estimate of the cost of translation from your translation service provider. When you scope a job, source files are submitted to the translation vendor who compares the text to their pool of stored translations (translation memory). Typically, the scope is the number of words that require translating.
 
-To obtain more information about scoping results, please contact your translation vendor.
+To obtain more information about scoping results, contact your translation vendor.
 
 >[!NOTE]
 >
@@ -406,7 +406,7 @@ Populate your language copy so that it contains content from the master language
 
 ## Moving or Renaming a Source Page {#move-source}
 
-If an already translated source page needs to be [renamed or moved](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), translating the page again after the move will create a new language copy based on the new page name/location. The old language copy based on the previous name/location will still be there. To prevent this, you can use the update language copy functionality after the move:
+If an already translated source page needs to be [renamed or moved](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), translating the page again after the move creates a language copy based on the new page name/location. The old language copy based on the previous name/location is still there. To prevent this, you can use the update language copy functionality after the move:
 
 1. Move a page which has a language copy.
 1. Select the language copy root.
@@ -417,9 +417,9 @@ If an already translated source page needs to be [renamed or moved](/help/sites-
 1. Click **Update**. A [Launch](/help/sites-authoring/launches-promoting.md) will be created.
 1. Navigate to the required language root and select it.
 1. Using the **References** panel, select **Launches**.
-1. Click on the Launch that was just created and click **Promote launch**.
+1. Click on the Launch that was created and click **Promote launch**.
 
-Now the source page was moved, as well as the associated language copy.
+Now the source page was moved, and the associated language copy.
 
 ## Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
 
@@ -444,7 +444,7 @@ When you manually create a translation project, you must provide values for the 
 
 ## Exporting a Translation Job {#exporting-a-translation-job}
 
-You can download the content of a translation job, for example to send to a translation provider that is not integrated with AEM via a connector, or to review the content.
+You can download the content of a translation job, for example, to send to a translation provider that is not integrated with AEM via a connector, or to review the content.
 
 1. From the drop-down menu of the Translation Job tile, click or tap Export.
 1. In the Export dialog box, click or tap Download Exported File, and if necessary use the web browser dialog box to save the file.
@@ -452,7 +452,7 @@ You can download the content of a translation job, for example to send to a tran
 
 ## Importing a Translation Job {#importing-a-translation-job}
 
-You can import translated content into AEM, for example when your translation provider sends it to you because they are not integrated with AEM via a connector.
+You can import translated content into AEM, for example, when your translation provider sends it to you because they are not integrated with AEM via a connector.
 
 1. From the drop-down menu of the Translation Job tile, click or tap Import.
 1. Use the web browser's dialog box to select the file to import.

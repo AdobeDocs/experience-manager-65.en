@@ -26,7 +26,7 @@ The different facets of community groups are:
 * **Control**: group can be open or secret.
 * **Nesting**: group can contain zero or more groups.
 
-<!-- This is a 404 on helpx. Please update or remove.
+<!-- This is a 404 on helpx. Update or remove.
 >[!NOTE]
 >
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
@@ -144,7 +144,7 @@ It is possible to add moderators specifically to the group. Search for members (
 
 By default, the parent community site administrator is the administrator for groups too.
 
-However, it is possible to assign independent group administrators. Group administrators can manage their group (for example G1), and create a subgroup nested under G1. They can further assign different administrators for the subgroup.
+However, it is possible to assign independent group administrators. Group administrators can manage their group (for example, G1), and create a subgroup nested under G1. They can further assign different administrators for the subgroup.
 
 A user U1, therefore, can be an administrator in a group G1 and a regular user in its nested group G2.
 
@@ -298,4 +298,4 @@ After the group is successfully published, the following message appears:
 
 Delete a group from within the community Groups console by selecting the Delete Group icon, which appears on hovering mouse over the group.
 
-This removes all the items associated with the group, for example all the content of the group is permanently deleted and user memberships are removed from the system.
+This removes all the items associated with the group, for example, all the content of the group is permanently deleted and user memberships are removed from the system.

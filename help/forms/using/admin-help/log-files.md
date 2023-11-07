@@ -15,19 +15,19 @@ exl-id: 23a65be4-3277-4c73-9189-a9b4d7be73cd
 
 Events such as run-time or startup errors are recorded to the application server log files. If you have any problems deploying to the application server, you can use the log files to help you find the problem. You can open the log files using any text editor.
 
-(JBoss) The following log files are located in the `[appserver root]/server/'server'/log` directory:
+(JBoss) The following log files are in the `[appserver root]/server/'server'/log` directory:
 
 * boot.log
 * server.log.*[yyyy-mm-dd]*
 * server.log
 
-(WebLogic) Domain log files are located in the `[appserverdomain]` directory, and server log files are located in the `[appserverdomain]/servers/[appserver name]/logs` directory:
+(WebLogic) Domain log files are in the `[appserverdomain]` directory, and server log files are in the `[appserverdomain]/servers/[appserver name]/logs` directory:
 
 * `access.log`
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) The following log files are located in the `[appserver root]/profiles/default/logs/[appserver name]` directory:
+(WebSphere) The following log files are in the `[appserver root]/profiles/default/logs/[appserver name]` directory:
 
 * SystemErr.log
 * SystemOut.log

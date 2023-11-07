@@ -25,7 +25,7 @@ You can define:
 
 ## Heading Notation {#heading-notation}
 
-To create a header by placing a hash tag (#) in front of the heading. One hash tag (#) is used for an H1, two hash tags (##) for a H2 etc. You can use up to 6 hash tags. For example:
+To create a header by placing a hash tag (#) in front of the heading. One hash tag (#) is used for an H1, two hash tags (##) for a H2 and so on. You can use up to 6 hash tags. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`## This is an H2`
 

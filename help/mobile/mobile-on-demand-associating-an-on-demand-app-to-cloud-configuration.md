@@ -48,7 +48,7 @@ The following steps describes setting up link to cloud configuration:
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Enter the already existing configuration or create a new one by entering the **Configuration Title**, **Device Id**, and **Device Token**.
+1. Enter the already existing configuration or create one by entering the **Configuration Title**, **Device Id**, and **Device Token**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 

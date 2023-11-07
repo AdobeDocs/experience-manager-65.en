@@ -16,7 +16,7 @@ hide: yes
 | AEM 6.5     | This article         |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -35,7 +35,7 @@ The following methods can be used to add metadata to digital assets:
 
 * In [!DNL Experience Manager Assets], you can manually add or edit metadata of assets in the [!UICONTROL Properties] page.
 
-* You can leverage [metadata profiles](/help/assets/metadata-config.md#metadata-profiles) functionality of [!DNL Experience Manager Assets] to automatically add metadata when assets are uploaded to DAM.
+* You can use [metadata profiles](/help/assets/metadata-config.md#metadata-profiles) functionality of [!DNL Experience Manager Assets] to automatically add metadata when assets are uploaded to DAM.
 
 ## Add or edit metadata in [!DNL Experience Manager Assets] {#add-edit-metadata}
 
@@ -250,7 +250,7 @@ Describe the journey of an assets' metadata. What all happens to metadata when a
 
 * To begin with, assets come with some metadata. The applications that create digital assets add some metadata to the assets created. Before uploading an asset to Experience Manager, you can edit and modify metadata using either the native application used to create an asset or using some other metadata editing application. When you upload an asset to Experience Manager, the metadata is processed.
 
-* Link to PS, ID, AI, PDF, etc. metadata-related help articles.
+* Link to PS, ID, AI, PDF, and so on, metadata-related help articles.
 
 * Link to XMP writeback.
 
@@ -274,7 +274,7 @@ Link to metadata handling of collections.
 
 * Before ingesting assets: Metadata editors
 
-* After ingesting assets: Properties of an asset, folder, collection, etc.
+* After ingesting assets: Properties of an asset, folder, collection, and so on.
 
 * Any supported programmatic method to bulk edit metadata directly in JCR?
 

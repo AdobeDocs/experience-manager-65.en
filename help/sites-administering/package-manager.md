@@ -62,7 +62,7 @@ Package Manager is divided into four main functional areas:
 * **Activity Log** - This panel is minimized at first and expands to detail the activity of Package Manager such as when a package is built or installed. There are additional buttons in the Activity Log tab to:
   * **Clear Log**
   * **Show/Hide**
-* **Toolbar** - The toolbar contains refresh buttons for the Left Navigation Panel and Package list as well as buttons for searching, creating, and uploading packages.
+* **Toolbar** - The toolbar contains refresh buttons for the Left Navigation Panel and Package list and buttons for searching, creating, and uploading packages.
 
 ![Package Manager UI](assets/package-manager-ui.png)
 
@@ -269,7 +269,7 @@ You may need to [rebuild the package](#building-a-package) to update its content
 
 ### Rewrapping a Package {#rewrapping-a-package}
 
-Once a package has been built, it can be rewrapped. Rewrapping changes the package information without such as thumbnail, description, etc., without changing the package content.
+Once a package has been built, it can be rewrapped. Rewrapping changes the package information without such as thumbnail, description, and so on, without changing the package content.
 
 1. [Access Package Manager.](#accessing)
 
@@ -575,7 +575,7 @@ AEM Packages can be used to create and share content across AEM environments.
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com) is a centralized service  designed to simplify the search and download of AEM packages.
 
-For more information, please refer to the [Software Distribution documentation.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+For more information, see the [Software Distribution documentation.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!NOTE]
 >

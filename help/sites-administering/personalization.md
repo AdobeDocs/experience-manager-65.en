@@ -61,10 +61,10 @@ Personalization can be used in many cases, for example:
 
 ### Specific, Limited, Target User Groups - Extranets {#extranets}
 
-* Users require a login for authorization; this will be linked to a profile providing information required for personalization; possibly details such as their location, relationship to the product, usage history, budgeting responsibilities, etc.
+* Users require a login for authorization; this will be linked to a profile providing information required for personalization; possibly details such as their location, relationship to the product, usage history, budgeting responsibilities, and so on.
 * Such instances can range over sites such as:
 * Companies which provide websites to a highly specialized section of their market for example, a pharmaceutical company providing a specialized website for physicians.
-* Companies which provide websites allowing their customer to view current account and billing information; for example telephone providers.
+* Companies which provide websites allowing their customer to view current account and billing information; for example, telephone providers.
 
 ### Sales and Distribution Website {#sales-site}
 
@@ -174,4 +174,4 @@ Without Communities extension, various methods to explore for addressing the iss
 * Synchronize the multiple publish instances when necessary
 * Send the UGC from the publish instance to the author environment, from where it can be published in a manner similar to publishing page content
 
-The method used to achieve UGC consistency across a publish environment consisting of multiple publish instances should be carefully designed and tested for performance as well as consistency.
+The method used to achieve UGC consistency across a publish environment consisting of multiple publish instances should be carefully designed and tested for performance and consistency.

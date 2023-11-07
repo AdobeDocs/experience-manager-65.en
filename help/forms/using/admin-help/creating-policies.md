@@ -30,7 +30,7 @@ Invited users can also create, edit, copy, and delete personal policies if the a
 
 Administrators and policy set coordinators create shared policies based on the confidentiality requirements that your organization identifies for different types of documents and users. Shared policies are contained within policy sets and are available to all authorized users (document publishers, policy set coordinators, and document recipients) for a particular policy set. Administrators and policy set coordinators can enable and disable shared policies. Shared policies appear in policy sets on the Policy Sets tab of the Policies page.
 
-When you first install document security, it contains one shared policy, named *Restrict to All Principals*. When this policy is applied to a document, any user who can log in to document security can access the document. This policy is located in the policy set named *Global Policy Set*. By default, this policy is not enabled. You can enable it if it suits your organization’s needs.
+When you first install document security, it contains one shared policy, named *Restrict to All Principals*. When this policy is applied to a document, any user who can log in to document security can access the document. This policy is in the policy set named *Global Policy Set*. By default, this policy is not enabled. You can enable it if it suits your organization’s needs.
 
 **Microsoft Outlook auto-generated policies**
 
@@ -58,7 +58,7 @@ Users can create or edit personal policies for their own use. Administrators and
 
 ### Considerations for editing policies {#considerations-for-editing-policies}
 
-When you edit a policy, the changes affect documents that the policy currently protects, as well as documents that the policy protect thereafter. For example, if you remove recipients from a policy that is currently applied to a document, the recipients can no longer open the document.
+When you edit a policy, the changes affect documents that the policy currently protects, and documents that the policy protect thereafter. For example, if you remove recipients from a policy that is currently applied to a document, the recipients can no longer open the document.
 
 The status of the document determines when the change takes effect:
 

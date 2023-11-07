@@ -9,7 +9,7 @@ exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 ---
 # Creating a Custom Cloud Service{#creating-a-custom-cloud-service}
 
-The default set of Cloud Services can be extended with custom Cloud Service types. This lets you inject custom markup into the page in a structured fashion. This is primarily of use for third party analytics providers, for example Google Analytics, Chartbeat, and so on. Cloud Services are inherited from parent pages to child pages with the ability to break the inheritance at any level.
+The default set of Cloud Services can be extended with custom Cloud Service types. This lets you inject custom markup into the page in a structured fashion. This is primarily of use for third party analytics providers, for example, Google Analytics, Chartbeat, and so on. Cloud Services are inherited from parent pages to child pages with the ability to break the inheritance at any level.
 
 >[!NOTE]
 >
@@ -202,6 +202,6 @@ The default set of Cloud Services can be extended with custom Cloud Service type
 
    Choose **Google Analytics Configuration** and click **Create**.
 
-1. Enter an **Account ID**, for example `AA-11111111-1`. Click **OK**.
+1. Enter an **Account ID**, for example, `AA-11111111-1`. Click **OK**.
 1. Navigate to a page and add the newly created configuration in the page properties, under the **Cloud Services** tab.
 1. The page will have the custom markup added to it.

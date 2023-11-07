@@ -1,14 +1,10 @@
 ---
 title: Recommended Deployments
-seo-title: Recommended Deployments
 description: This article describes the recommended topologies for AEM.
-seo-description: This article describes the recommended topologies for AEM.
-uuid: bc638121-c531-43eb-9ec6-3283a33519f8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 ---
@@ -70,7 +66,7 @@ The disadvantages:
 
 >[!NOTE]
 >
->The Cold Standby deployment in this TarMK example requires that both the primary and standby instances be licensed separately, as there is constant replication to the failover server. For more information about licensing, please consult the [Adobe General Licensing Terms](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>The Cold Standby deployment in this TarMK example requires that both the primary and standby instances be licensed separately, as there is constant replication to the failover server. For more information about licensing, consult the [Adobe General Licensing Terms](https://www.adobe.com/legal/terms/enterprise-licensing.html).
 
 ### TarMK Farm {#tarmk-farm}
 
@@ -146,7 +142,7 @@ It is almost impossible to predict what the exact concurrency model will be afte
 
 >[!NOTE]
 >
->Tough Day can be used to evaluate the performance of the customer’s application in the context of the hardware configuration deployed. More information about this tool is available [here](/help/sites-developing/tough-day.md).
+>Tough Day can be used to evaluate the performance of the customer's application in the context of the hardware configuration deployed. More information about this tool is available [here](/help/sites-developing/tough-day.md).
 
 A minimum deployment with MongoDB will typically involve the following topology:
 
@@ -185,7 +181,7 @@ A set of prerequisites and recommendations is available if you are considering a
 
 >[!NOTE]
 >
->For all additional questions about these guidelines, prerequisites, and recommendations please contact [Adobe Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>For all additional questions about these guidelines, prerequisites, and recommendations contact [Adobe Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 ### Considerations for AEM Communities {#considerations-for-aem-communities}
 

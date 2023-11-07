@@ -56,10 +56,10 @@ To initiate a photo shoot request, tap or click a project and then tap or click 
 
 A **Product Photo Shoot Project** includes the following out-of-the-box workflows:
 
-* **Product Photo Shoot (Commerce Integration) Workflow**: This workflow leverages commerce integration with the product information management (PIM) system to automatically generate a shot list for the selected products (hierarchy). You can view the product data as part of the asset metadata after the workflow is complete.
+* **Product Photo Shoot (Commerce Integration) Workflow**: This workflow uses commerce integration with the product information management (PIM) system to automatically generate a shot list for the selected products (hierarchy). You can view the product data as part of the asset metadata after the workflow is complete.
 * **Product Photo Shoot Workflow**: This workflow lets you provide a shot list instead of depending on commerce integration. It maps the uploaded images to a CSV file in the project assets folder.
 
-Use the **Product Photo Shoot (Commerce Integration)** workflow to map image assets with the products in AEM. This workflow leverages commerce integration to link the approved images to the existing product data at the location `/etc/commerce`.
+Use the **Product Photo Shoot (Commerce Integration)** workflow to map image assets with the products in AEM. This workflow uses commerce integration to link the approved images to the existing product data at the location `/etc/commerce`.
 
 The **Product Photo Shoot (Commerce Integration)** workflow includes the following tasks:
 

@@ -16,7 +16,7 @@ exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
 
 Tagging allows content to be categorized and organized. Tags can be classified by a namespace and a taxonomy.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
+* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.
 * See [Using Tags](/help/sites-authoring/tags.md) for information about tagging content.
 
 The following information is available for developers :

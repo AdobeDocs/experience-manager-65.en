@@ -1,12 +1,10 @@
 ---
 title: Adobe Campaign Components
 description: When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms.
-uuid: cc9417c9-4cc1-4554-858e-2ecd682dc92f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 ---
@@ -18,7 +16,7 @@ When you integrate with Adobe Campaign, you have components available for when w
 >
 >The AEM email components have been deprecated. Due to the nature of email, which merges content and style, the email components provided out-of-the-box by AEM become of limited reuse for customers because of the need to implement custom styles into whatever components are required for projects.
 >
->Email components can be implemented on project level, and the deprecated AEM email components illustrate how that can be achieved. However these deprecated components should not be used on projects.
+>Email components can be implemented on project level, and the deprecated AEM email components illustrate how that can be achieved. However, do not use these deprecated components on projects.
 
 ## Adobe Campaign Newsletter Components {#adobe-campaign-newsletter-components}
 
@@ -67,7 +65,7 @@ The image (campaign) component displays an image and accompanying text according
 
 You can upload an image, then edit and manipulate it (for example, crop, rotate, add link/title/text).
 
-You can upload an image, then edit and manipulate it (for example crop, rotate, add link/title/text). You can either drag and drop an image from the [Content Finder](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) directly onto the component or its Edit dialog. You can also double-click in the central area of the Edit dialog to browse your local file system and upload an image. The two tabs of the Edit dialog also control all definitions and manipulation of the image:
+You can upload an image, then edit and manipulate it (for example, crop, rotate, add link/title/text). You can either drag and drop an image from the [Content Finder](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) directly onto the component or its Edit dialog. You can also double-click in the central area of the Edit dialog to browse your local file system and upload an image. The two tabs of the Edit dialog also control all definitions and manipulation of the image:
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -170,7 +168,7 @@ As with the Text & Personalization (Campaign) and Image (Campaign) components, y
   Lets you specify the following:
 
     * **Title**
-      The title for the block; will be shown by mouseover.
+      The title for the block; it is shown by mouseover.
 
     * **Alt Text**
       Alternative text to be shown if the image cannot be displayed.
@@ -322,7 +320,7 @@ The following example shows a Checkbox (Campaign) component being displayed.
 
 ### Date Field (Campaign) and Date Field/HTML 5 (Campaign) {#date-field-campaign-and-date-field-html-campaign}
 
-Use the date field to allow recipients to a date; for example you may want the recipients to specify their birth dates. The date format matches the format used in your Adobe Campaign instance.
+Use the date field to allow recipients to a date; for example, you may want the recipients to specify their birth dates. The date format matches the format used in your Adobe Campaign instance.
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 
@@ -373,7 +371,7 @@ The following example shows an Hidden Reconciliation Key (Campaign) component be
 
 ### Numeric Field (Campaign) {#numeric-field-campaign}
 
-Use the numeric field to allow recipients to enter numbers, for example their age.
+Use the numeric field to allow recipients to enter numbers, for example, their age.
 
 In addition to [settings common to most Adobe Campaign components](#settings-common-to-most-components), you can configure the following:
 

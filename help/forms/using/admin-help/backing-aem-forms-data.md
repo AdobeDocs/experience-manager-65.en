@@ -131,7 +131,7 @@ You can use the command-line interface to take AEM Forms out of safe backup mode
 
    >[!NOTE]
    >
-   >You must set the JAVA_HOME directory as described in the appropriate chapter for your application server in [Preparing to Install AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Set the JAVA_HOME directory as described in the appropriate chapter for your application server in [Preparing to Install AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Run the following command on a single line:
 

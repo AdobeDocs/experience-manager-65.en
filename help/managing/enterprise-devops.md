@@ -88,7 +88,7 @@ To reverse-replicate data generated in a publish environment back to the author 
 
 #### Publish {#publish}
 
-A publish environment is located in the Demilitarized Zone (DMZ). This is the environment where visitors access your content (for example, via a website or in the form of a mobile application) and interact with it; be it public, or within your intranet. A publish environment:
+A publish environment is in the Demilitarized Zone (DMZ). This is the environment where visitors access your content (for example, via a website or in the form of a mobile application) and interact with it; be it public, or within your intranet. A publish environment:
 
 * holds content replicated from the author environment
 * makes that content available to the visitors

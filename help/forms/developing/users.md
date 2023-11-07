@@ -1,14 +1,10 @@
 ---
 title: Managing Users
-seo-title: Managing Users
-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
-seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
-uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
+description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), and authenticate users.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 ---
@@ -18,7 +14,7 @@ exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 
 **About User Management**
 
-You can use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users. User Management API consists of the following AEM Forms APIs:
+You can use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), and authenticate users. User Management API consists of the following AEM Forms APIs:
 
 * Directory Manager Service API
 * Authentication Manager Service API
@@ -60,7 +56,7 @@ The following table describes each step of the authentication process.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>User Management sends the user name and password, as well as configuration information, to the authentication provider.</p></td>
+   <td><p>User Management sends the user name and password, and configuration information, to the authentication provider.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -136,7 +132,7 @@ When you add a new user by using the Directory Manager Service API, define infor
 
 **Add the user to AEM Forms**
 
-After you define user information, you can add the user to AEM Forms. To add a user, invoke the `DirectoryManagerServiceClient` object’s `createLocalUser` method.
+After you define user information, you can add the user to AEM Forms. To add a user, invoke the `DirectoryManagerServiceClient` object's `createLocalUser` method.
 
 **Verify that the user was added**
 
@@ -160,7 +156,7 @@ Add users by using the Directory Manager Service API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project's class path.
 
 1. Create a DirectoryManagerServices client.
 
@@ -169,31 +165,31 @@ Add users by using the Directory Manager Service API (Java):
 1. Define user information.
 
     * Create a `UserImpl` object by using its constructor.
-    * Set the demain name by invoking the `UserImpl` object’s `setDomainName` method. Pass a string value that specifies the domain name.
-    * Set the principal type by invoking the `UserImpl` object’s `setPrincipalType` method. Pass a string value that specifies the type of user. For example, you can specify `USER`.
-    * Set the user identifier value by invoking the `UserImpl` object’s `setUserid` method. Pass a string value that specifies the user identifier value. For example, you can specify `wblue`.
-    * Set the canonical name by invoking the `UserImpl` object’s `setCanonicalName` method. Pass a string value that specifies the user’s canonical name. For example, you can specify `wblue`.
-    * Set the given name by invoking the `UserImpl` object’s `setGivenName` method. Pass a string value that specifies the user’s given name. For example, you can specify `Wendy`.
-    * Set the family name by invoking the `UserImpl` object’s `setFamilyName` method. Pass a string value that specifies the user’s family name. For example, you can specify `Blue`.
+    * Set the demain name by invoking the `UserImpl` object's `setDomainName` method. Pass a string value that specifies the domain name.
+    * Set the principal type by invoking the `UserImpl` object's `setPrincipalType` method. Pass a string value that specifies the type of user. For example, you can specify `USER`.
+    * Set the user identifier value by invoking the `UserImpl` object's `setUserid` method. Pass a string value that specifies the user identifier value. For example, you can specify `wblue`.
+    * Set the canonical name by invoking the `UserImpl` object's `setCanonicalName` method. Pass a string value that specifies the user's canonical name. For example, you can specify `wblue`.
+    * Set the given name by invoking the `UserImpl` object's `setGivenName` method. Pass a string value that specifies the user's given name. For example, you can specify `Wendy`.
+    * Set the family name by invoking the `UserImpl` object's `setFamilyName` method. Pass a string value that specifies the user's family name. For example, you can specify `Blue`.
 
    >[!NOTE]
    >
-   >Invoke a method that belongs to the `UserImpl` object to set other values. For example, you can set the locale value by invoking the `UserImpl` object’s `setLocale` method.
+   >Invoke a method that belongs to the `UserImpl` object to set other values. For example, you can set the locale value by invoking the `UserImpl` object's `setLocale` method.
 
 1. Add the user to AEM Forms.
 
-   Invoke the `DirectoryManagerServiceClient` object’s `createLocalUser` method and pass the following values:
+   Invoke the `DirectoryManagerServiceClient` object's `createLocalUser` method and pass the following values:
 
     * The `UserImpl` object that represents the new user
-    * A string value that represents the user’s password
+    * A string value that represents the user's password
 
    The `createLocalUser` method returns a string value that specifies the local user identifier value.
 
 1. Verify that the user was added.
 
     * Create a `PrincipalSearchFilter` object by using its constructor.
-    * Set the user identifier value by invoking the `PrincipalSearchFilter` object’s `setUserId` method. Pass a string value that represents the user identifier value.
-    * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user.
+    * Set the user identifier value by invoking the `PrincipalSearchFilter` object's `setUserId` method. Pass a string value that represents the user identifier value.
+    * Invoke the `DirectoryManagerServiceClient` object's `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user.
 
 **See also**
 
@@ -222,7 +218,7 @@ Add users by using the Directory Manager Service API (web service):
     * Create a `DirectoryManagerServiceClient` object by using its default constructor.
     * Create a `DirectoryManagerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. Ensure that you specify `?blob=mtom`.
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DirectoryManagerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
@@ -233,27 +229,27 @@ Add users by using the Directory Manager Service API (web service):
 1. Define user information.
 
     * Create a `UserImpl` object by using its constructor.
-    * Set the demain name by assigning a string value to the `UserImpl` object’s `domainName` field.
-    * Set the principal type by assigning a string value to the `UserImpl` object’s `principalType` field. For example, you can specify `USER`.
-    * Set the user identifier value by assigning a string value to the `UserImpl` object’s `userid` field.
-    * Set the canonical name value by assigning a string value to the `UserImpl` object’s `canonicalName` field.
-    * Set the given name value by assigning a string value to the `UserImpl` object’s `givenName` field.
-    * Set the family name value by assigning a string value to the `UserImpl` object’s `familyName` field.
+    * Set the demain name by assigning a string value to the `UserImpl` object's `domainName` field.
+    * Set the principal type by assigning a string value to the `UserImpl` object's `principalType` field. For example, you can specify `USER`.
+    * Set the user identifier value by assigning a string value to the `UserImpl` object's `userid` field.
+    * Set the canonical name value by assigning a string value to the `UserImpl` object's `canonicalName` field.
+    * Set the given name value by assigning a string value to the `UserImpl` object's `givenName` field.
+    * Set the family name value by assigning a string value to the `UserImpl` object's `familyName` field.
 
 1. Add the user to AEM Forms.
 
-   Invoke the `DirectoryManagerServiceClient` object’s `createLocalUser` method and pass the following values:
+   Invoke the `DirectoryManagerServiceClient` object's `createLocalUser` method and pass the following values:
 
     * The `UserImpl` object that represents the new user
-    * A string value that represents the user’s password
+    * A string value that represents the user's password
 
    The `createLocalUser` method returns a string value that specifies the local user identifier value.
 
 1. Verify that the user was added.
 
     * Create a `PrincipalSearchFilter` object by using its constructor.
-    * Set the user identifier value of the user by assigning a string value that represents the user identifier value to the `PrincipalSearchFilter` object’s `userId` field.
-    * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `MyArrayOfUser` collection object, where each element is a `User` object. Iterate through the `MyArrayOfUser` collection to locate the user.
+    * Set the user identifier value of the user by assigning a string value that represents the user identifier value to the `PrincipalSearchFilter` object's `userId` field.
+    * Invoke the `DirectoryManagerServiceClient` object's `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `MyArrayOfUser` collection object, where each element is a `User` object. Iterate through the `MyArrayOfUser` collection to locate the user.
 
 **See also**
 
@@ -286,11 +282,11 @@ Before you can programmatically perform a Directory Manager Service API operatio
 
 **Specify the user to delete**
 
-You can specify a user to delete by using the user’s identifier value.
+You can specify a user to delete by using the user's identifier value.
 
 **Delete the user from AEM Forms**
 
-To delete a user, invoke the `DirectoryManagerServiceClient` object’s `deleteLocalUser` method.
+To delete a user, invoke the `DirectoryManagerServiceClient` object's `deleteLocalUser` method.
 
 **See also**
 
@@ -310,7 +306,7 @@ Delete users by using the Directory Manager Service API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project's class path.
 
 1. Create a DirectoryManagerService client.
 
@@ -319,12 +315,12 @@ Delete users by using the Directory Manager Service API (Java):
 1. Specify the user to delete.
 
     * Create a `PrincipalSearchFilter` object by using its constructor.
-    * Set the user identifier value by invoking the `PrincipalSearchFilter` object’s `setUserId` method. Pass a string value that represents the user identifier value.
-    * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user to delete.
+    * Set the user identifier value by invoking the `PrincipalSearchFilter` object's `setUserId` method. Pass a string value that represents the user identifier value.
+    * Invoke the `DirectoryManagerServiceClient` object's `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user to delete.
 
 1. Delete the user from AEM Forms.
 
-   Invoke the `DirectoryManagerServiceClient` object’s `deleteLocalUser` method and pass the value of the `User` object’s `oid` field. Invoke the `User` object’s `getOid` method. Use the `User` object retrieved from the `java.util.List` instance.
+   Invoke the `DirectoryManagerServiceClient` object's `deleteLocalUser` method and pass the value of the `User` object's `oid` field. Invoke the `User` object's `getOid` method. Use the `User` object retrieved from the `java.util.List` instance.
 
 **See also**
 
@@ -344,14 +340,14 @@ Delete users by using the Directory Manager Service API (web service):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project's class path.
 
 1. Create a DirectoryManagerService client.
 
     * Create a `DirectoryManagerServiceClient` object by using its default constructor.
     * Create a `DirectoryManagerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference. Ensure that you specify `blob=mtom.`
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `DirectoryManagerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
@@ -362,12 +358,12 @@ Delete users by using the Directory Manager Service API (web service):
 1. Specify the user to delete.
 
     * Create a `PrincipalSearchFilter` object by using its constructor.
-    * Set the user identifier value by assigning a string value to the `PrincipalSearchFilter` object’s `userId` field.
-    * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `MyArrayOfUser` collection object, where each element is a `User` object. Iterate through the `MyArrayOfUser` collection to locate the user. The `User` object retrieved from the `MyArrayOfUser` collection object is used to delete the user.
+    * Set the user identifier value by assigning a string value to the `PrincipalSearchFilter` object's `userId` field.
+    * Invoke the `DirectoryManagerServiceClient` object's `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `MyArrayOfUser` collection object, where each element is a `User` object. Iterate through the `MyArrayOfUser` collection to locate the user. The `User` object retrieved from the `MyArrayOfUser` collection object is used to delete the user.
 
 1. Delete the user from AEM Forms.
 
-   Delete the user by passing the `User` object’s `oid` field value to the `DirectoryManagerServiceClient` object’s `deleteLocalUser` method.
+   Delete the user by passing the `User` object's `oid` field value to the `DirectoryManagerServiceClient` object's `deleteLocalUser` method.
 
 **See also**
 
@@ -395,7 +391,7 @@ To create a group, perform the following steps:
 
 Include necessary files in your development project. If you are creating a client application using Java, include the necessary JAR files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -442,7 +438,7 @@ Create a group by using the Directory Manager Service API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project's class path.
 
 1. Create a DirectoryManagerService client.
 
@@ -451,26 +447,26 @@ Create a group by using the Directory Manager Service API (Java):
 1. Determine whether the group exists.
 
     * Create a `PrincipalSearchFilter` object by using its constructor.
-    * Set the principal type by invoking the `PrincipalSearchFilter` object’s `setPrincipalType` object. Pass the value `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
-    * Set the domain by invoking the `PrincipalSearchFilter` object’s `setSpecificDomainName` object. Pass a string value that specifies the domain name.
-    * To find a group, invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method (a principal can be a group). Pass the `PrincipalSearchFilter` object that specifies the principal type and the domain name. This method returns a `java.util.List` instance where each element is a `Group` instance. Each group instance conforms to the filter specified by using the `PrincipalSearchFilter` object.
+    * Set the principal type by invoking the `PrincipalSearchFilter` object's `setPrincipalType` object. Pass the value `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
+    * Set the domain by invoking the `PrincipalSearchFilter` object's `setSpecificDomainName` object. Pass a string value that specifies the domain name.
+    * To find a group, invoke the `DirectoryManagerServiceClient` object's `findPrincipals` method (a principal can be a group). Pass the `PrincipalSearchFilter` object that specifies the principal type and the domain name. This method returns a `java.util.List` instance where each element is a `Group` instance. Each group instance conforms to the filter specified by using the `PrincipalSearchFilter` object.
     * Iterate through the `java.util.List` instance. For each element, retrieve the group name. Ensure that the group name does not equal the new group name.
 
 1. Create the group.
 
-    * If the group does not exist, invoke the `Group` object’s `setCommonName` method and pass a string value that specifies the group name.
-    * Invoke the `Group` object’s `setDescription` method and pass a string value that specifies the group description.
-    * Invoke the `Group` object’s `setDomainName` method and pass a string value that specifies the domain name.
-    * Invoke the `DirectoryManagerServiceClient` object’s `createLocalGroup` method and pass the `Group` instance.
+    * If the group does not exist, invoke the `Group` object's `setCommonName` method and pass a string value that specifies the group name.
+    * Invoke the `Group` object's `setDescription` method and pass a string value that specifies the group description.
+    * Invoke the `Group` object's `setDomainName` method and pass a string value that specifies the domain name.
+    * Invoke the `DirectoryManagerServiceClient` object's `createLocalGroup` method and pass the `Group` instance.
 
    The `createLocalUser` method returns a string value that specifies the local user identifier value.
 
 1. Perform an action with the group.
 
     * Create a `PrincipalSearchFilter` object by using its constructor.
-    * Set the user identifier value by invoking the `PrincipalSearchFilter` object’s `setUserId` method. Pass a string value that represents the user identifier value.
-    * Invoke the `DirectoryManagerServiceClient` object’s `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user.
-    * Add a user to the group by invoking the `DirectoryManagerServiceClient` object’s `addPrincipalToLocalGroup` method. Pass the return value of the `User` object’s `getOid` method. Pass the return value of the `Group` objects’s `getOid` method (use the `Group` instance that represents the new group).
+    * Set the user identifier value by invoking the `PrincipalSearchFilter` object's `setUserId` method. Pass a string value that represents the user identifier value.
+    * Invoke the `DirectoryManagerServiceClient` object's `findPrincipals` method and pass the `PrincipalSearchFilter` object. This method returns a `java.util.List` instance, where each element is a `User` object. Iterate through the `java.util.List` instance to locate the user.
+    * Add a user to the group by invoking the `DirectoryManagerServiceClient` object's `addPrincipalToLocalGroup` method. Pass the return value of the `User` object's `getOid` method. Pass the return value of the `Group` objects's `getOid` method (use the `Group` instance that represents the new group).
 
 **See also**
 
@@ -533,7 +529,7 @@ To programmatically manage users, groups, and domains using the (Java), perform 
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project’s class path. For information about the location of these files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project's class path. For information about the location of these files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Create a DirectoryManagerService client.
 
@@ -541,15 +537,15 @@ To programmatically manage users, groups, and domains using the (Java), perform 
 
 1. Invoke the appropriate user or group operations.
 
-   To find a user or group, invoke one of the `DirectoryManagerServiceClient` object’s methods for finding principals (since a principal can be a user or a group). In the example below, the `findPrincipals` method is called using a search filter (a `PrincipalSearchFilter` object).
+   To find a user or group, invoke one of the `DirectoryManagerServiceClient` object's methods for finding principals (since a principal can be a user or a group). In the example below, the `findPrincipals` method is called using a search filter (a `PrincipalSearchFilter` object).
 
    Since the return value in this case is a `java.util.List` containing `Principal` objects, iterate through the result and cast the `Principal` objects to either `User` or `Group` objects.
 
-   Using the resultant `User` or `Group` object (which both inherit from the `Principal` interface), retrieve the information you need in your workflows. For example, the domain name and canonical name values, in combination, uniquely identify a principal. These are retrieved by invoking the `Principal` object’s `getDomainName` and `getCanonicalName` methods, respectively.
+   Using the resultant `User` or `Group` object (which both inherit from the `Principal` interface), retrieve the information you need in your workflows. For example, the domain name and canonical name values, in combination, uniquely identify a principal. These are retrieved by invoking the `Principal` object's `getDomainName` and `getCanonicalName` methods, respectively.
 
-   To delete a local user, invoke the `DirectoryManagerServiceClient` object’s `deleteLocalUser` method and pass the user’s identifier.
+   To delete a local user, invoke the `DirectoryManagerServiceClient` object's `deleteLocalUser` method and pass the user's identifier.
 
-   To delete a local group, invoke the `DirectoryManagerServiceClient` object’s `deleteLocalGroup` method and pass the group’s identifier.
+   To delete a local group, invoke the `DirectoryManagerServiceClient` object's `deleteLocalGroup` method and pass the group's identifier.
 
 **See also**
 
@@ -570,11 +566,11 @@ To programmatically manage users, groups, and domains using the Directory Manage
 
 1. Create a DirectoryManagerService client.
 
-   Create a `DirectoryManagerServiceService` object by using your proxy class’ constructor.
+   Create a `DirectoryManagerServiceService` object by using your proxy class' constructor.
 
 1. Invoke the appropriate user or group operations.
 
-   To find a user or group, invoke one of the `DirectoryManagerServiceService` object’s methods for finding principals (since a principal can be a user or a group). In the example below, the `findPrincipalsWithFilter` method is called using a search filter (a `PrincipalSearchFilter` object). When using a `PrincipalSearchFilter` object, local principals are only returned if the `isLocal` property is set to `true`. This behavior is different than what would occur with the Java API.
+   To find a user or group, invoke one of the `DirectoryManagerServiceService` object's methods for finding principals (since a principal can be a user or a group). In the example below, the `findPrincipalsWithFilter` method is called using a search filter (a `PrincipalSearchFilter` object). When using a `PrincipalSearchFilter` object, local principals are only returned if the `isLocal` property is set to `true`. This behavior is different than what would occur with the Java API.
 
    >[!NOTE]
    >
@@ -582,11 +578,11 @@ To programmatically manage users, groups, and domains using the Directory Manage
 
    Since the return value in this case is an `object[]` containing `Principal` objects, iterate through the result and cast the `Principal` objects to either `User` or `Group` objects.
 
-   Using the resultant `User` or `Group` object (which both inherit from the `Principal` interface), retrieve the information you need in your workflows. For example, the domain name and canonical name values, in combination, uniquely identify a principal. These are retrieved by invoking the `Principal` object’s `domainName` and `canonicalName` fields, respectively.
+   Using the resultant `User` or `Group` object (which both inherit from the `Principal` interface), retrieve the information you need in your workflows. For example, the domain name and canonical name values, in combination, uniquely identify a principal. These are retrieved by invoking the `Principal` object's `domainName` and `canonicalName` fields, respectively.
 
-   To delete a local user, invoke the `DirectoryManagerServiceService` object’s `deleteLocalUser` method and pass the user’s identifier.
+   To delete a local user, invoke the `DirectoryManagerServiceService` object's `deleteLocalUser` method and pass the user's identifier.
 
-   To delete a local group, invoke the `DirectoryManagerServiceService` object’s `deleteLocalGroup` method and pass the group’s identifier.
+   To delete a local group, invoke the `DirectoryManagerServiceService` object's `deleteLocalGroup` method and pass the group's identifier.
 
 **See also**
 
@@ -642,7 +638,7 @@ To manage roles and permissions using the Authorization Manager Service API (Jav
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project's class path.
 
 1. Create an AuthorizationManagerService client.
 
@@ -650,12 +646,12 @@ To manage roles and permissions using the Authorization Manager Service API (Jav
 
 1. Invoke the appropriate role or permission operations.
 
-   To assign a role to a principal, invoke the `AuthorizationManagerServiceClient` object’s `assignRole` method and pass the following values:
+   To assign a role to a principal, invoke the `AuthorizationManagerServiceClient` object's `assignRole` method and pass the following values:
 
     * A `java.lang.String` object that contains the role identifier
     * An array of `java.lang.String` objects containing the principal identifiers.
 
-   To remove a role from a principal, invoke the `AuthorizationManagerServiceClient` object’s `unassignRole` method and pass the following values:
+   To remove a role from a principal, invoke the `AuthorizationManagerServiceClient` object's `unassignRole` method and pass the following values:
 
     * A `java.lang.String` object that contains the role identifier.
     * An array of `java.lang.String` objects containing the principal identifiers.
@@ -687,7 +683,7 @@ Manage roles and permissions by using the Authorization Manager Service API (web
     * Create an `AuthorizationManagerServiceClient` object by using its default constructor.
     * Create an `AuthorizationManagerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`.) You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AuthorizationManagerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
@@ -697,12 +693,12 @@ Manage roles and permissions by using the Authorization Manager Service API (web
 
 1. Invoke the appropriate role or permission operations.
 
-   To assign a role to a principal, invoke the `AuthorizationManagerServiceClient` object’s `assignRole` method and pass the following values:
+   To assign a role to a principal, invoke the `AuthorizationManagerServiceClient` object's `assignRole` method and pass the following values:
 
     * A `string` object that contains the role identifier
     * A `MyArrayOf_xsd_string` object that contains the principal identifiers.
 
-   To remove a role from a principal, invoke the `AuthorizationManagerServiceService` object’s `unassignRole` method and pass the following values:
+   To remove a role from a principal, invoke the `AuthorizationManagerServiceService` object's `unassignRole` method and pass the following values:
 
     * A `string` object that contains the role identifier.
     * An array of `string` objects containing the principal identifiers.
@@ -723,7 +719,7 @@ Consider, for example, a scenario where a user enters a user name and password i
 
 If the authentication is successful, the application accesses a secured enterprise database. Otherwise, a message is sent to the user stating that the user is not an authorized user.
 
-The following diagram shows the application’s logic flow.
+The following diagram shows the application's logic flow.
 
 ![au_au_umauth_process](assets/au_au_umauth_process.png)
 
@@ -775,7 +771,7 @@ Before you can programmatically authenticate a user, you must create a Authentic
 
 **Invoke the authentication operation**
 
-Once you have created the service client, you can then invoke the authentication operation. This operation will need information about the user, such as the user’s name and password. If the user does not authenticate, an exception is thrown.
+Once you have created the service client, you can then invoke the authentication operation. This operation will need information about the user, such as the user's name and password. If the user does not authenticate, an exception is thrown.
 
 **Retrieve the authentication context**
 
@@ -797,7 +793,7 @@ Authenticate a user using the Authentication Manager Service API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-usermanager-client.jar, in your Java project's class path.
 
 1. Create an AuthenticationManagerServices client.
 
@@ -805,18 +801,18 @@ Authenticate a user using the Authentication Manager Service API (Java):
 
 1. Invoke the authentication operation.
 
-   Invoke the `AuthenticationManagerServiceClient` object’s `authenticate` method and pass the following values:
+   Invoke the `AuthenticationManagerServiceClient` object's `authenticate` method and pass the following values:
 
-    * A `java.lang.String` object that contains the user’s name.
-    * A byte array (a `byte[]` object) containing the user’s password. You can obtain the `byte[]` object by invoking the `java.lang.String` object’s `getBytes` method.
+    * A `java.lang.String` object that contains the user's name.
+    * A byte array (a `byte[]` object) containing the user's password. You can obtain the `byte[]` object by invoking the `java.lang.String` object's `getBytes` method.
 
    The authenticate method returns an `AuthResult` object, which contains information about the authenticated user.
 
 1. Retrieve the authentication context.
 
-   Invoke the `ServiceClientFactory` object’s `getContext` method, which will return a `Context` object.
+   Invoke the `ServiceClientFactory` object's `getContext` method, which will return a `Context` object.
 
-   Then invoke the `Context` object’s `initPrincipal` method and pass the `AuthResult`.
+   Then invoke the `Context` object's `initPrincipal` method and pass the `AuthResult`.
 
 ### Authenticate a user using the web service API {#authenticate-a-user-using-the-web-service-api}
 
@@ -829,15 +825,15 @@ Authenticate a user using the Authentication Manager Service API (web service):
 
 1. Create an AuthenticationManagerService client.
 
-   Create a `AuthenticationManagerServiceService` object by using your proxy class’ constructor.
+   Create a `AuthenticationManagerServiceService` object by using your proxy class' constructor.
 
 1. Invoke the authentication operation.
 
-   Invoke the `AuthenticationManagerServiceClient` object’s `authenticate` method and pass the following values:
+   Invoke the `AuthenticationManagerServiceClient` object's `authenticate` method and pass the following values:
 
-    * A `string` object that contains the user’s name
-    * A byte array (a `byte[]` object) containing the user’s password. You can obtain the `byte[]` object by converting a `string` object containing the password to a `byte[]` array using the logic shown in the example below.
-    * The returned value will be an `AuthResult` object, which can be used to retrieve information about the user. In the example below, the user’s information is retrieved by first obtaining the `AuthResult` object’s `authenticatedUser` field and subsequently obtaining the resultant `User` object’s `canonicalName` and `domainName` fields.
+    * A `string` object that contains the user's name
+    * A byte array (a `byte[]` object) containing the user's password. You can obtain the `byte[]` object by converting a `string` object containing the password to a `byte[]` array using the logic shown in the example below.
+    * The returned value will be an `AuthResult` object, which can be used to retrieve information about the user. In the example below, the user's information is retrieved by first obtaining the `AuthResult` object's `authenticatedUser` field and subsequently obtaining the resultant `User` object's `canonicalName` and `domainName` fields.
 
 **See also**
 
@@ -847,7 +843,7 @@ Authenticate a user using the Authentication Manager Service API (web service):
 
 ## Programmatically Synchronizing Users {#programmatically-synchronizing-users}
 
-You can programmatically synchronize users by using the User Management API. When you synchronize users, you are updating AEM Forms with user data that is located in your user repository. For example, assume that you add new users to your user repository. After you perform a synchronization operation, the new users become AEM forms users. As well, users no longer in your user respository are removed from AEM Forms.
+You can programmatically synchronize users by using the User Management API. When you synchronize users, you are updating AEM Forms with user data that is in your user repository. For example, assume that you add new users to your user repository. After you perform a synchronization operation, the new users become AEM forms users. As well, users no longer in your user respository are removed from AEM Forms.
 
 The following diagram shows AEM Forms synchronizing with a user respository.
 
@@ -906,7 +902,7 @@ Before you perform a synchronization operation by using the User Management API,
 
 **Invoke the synchronization operation**
 
-After you specify one or more enterprise domains, you can perform the synchronization operation. The time it takes to perform this operation depends upon the number of user records that are located in the user repository.
+After you specify one or more enterprise domains, you can perform the synchronization operation. The time it takes to perform this operation depends upon the number of user records that are in the user repository.
 
 **Determine if the synchronization operation is complete**
 
@@ -928,7 +924,7 @@ Synchronize users by using the User Management API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-usermanager-client.jar and adobe-usermanager-util-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-usermanager-client.jar and adobe-usermanager-util-client.jar, in your Java project's class path.
 
 1. Create a UserManagerUtilServiceClient client.
 
@@ -936,15 +932,15 @@ Synchronize users by using the User Management API (Java):
 
 1. Specify the enterprise domain.
 
-    * Invoke the `UserManagerUtilServiceClient` object’s `scheduleSynchronization` method to start the user synchronization operation.
+    * Invoke the `UserManagerUtilServiceClient` object's `scheduleSynchronization` method to start the user synchronization operation.
     * Create a `java.util.Set` instance by using a `HashSet` constructor. Ensure that you specify `String` as the data type. This `Java.util.Set` instance stores the domain names to which the synchronization operation applies.
-    * For each domain name to add, invoke the `java.util.Set` object’s add method and pass the domain name.
+    * For each domain name to add, invoke the `java.util.Set` object's add method and pass the domain name.
 
 1. Invoke the synchronization operation.
 
-   Invoke the `ServiceClientFactory` object’s `getContext` method, which will return a `Context` object.
+   Invoke the `ServiceClientFactory` object's `getContext` method, which will return a `Context` object.
 
-   Then invoke the `Context` object’s `initPrincipal` method and pass the `AuthResult`.
+   Then invoke the `Context` object's `initPrincipal` method and pass the `AuthResult`.
 
 **See also**
 

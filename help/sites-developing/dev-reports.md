@@ -736,7 +736,7 @@ The `preprocessing` definition can be applied to either the:
 
   If necessary, a separate definition can be provided for each aggregation.
 
-  To specify explicit preprocessing for aggregated values, the preprocessing definitions have to reside on a respective `aggregated` child node ( `apply/aggregated`, `applyAfter/aggregated`). If explicit preprocessing for distinct aggregates is required, the preprocessing definition is on a child node with the name of the respective aggregate (for example `apply/aggregated/min/max` or other aggregates).
+  To specify explicit preprocessing for aggregated values, the preprocessing definitions have to reside on a respective `aggregated` child node ( `apply/aggregated`, `applyAfter/aggregated`). If explicit preprocessing for distinct aggregates is required, the preprocessing definition is on a child node with the name of the respective aggregate (for example, `apply/aggregated/min/max` or other aggregates).
 
 You can specify either of the following to be used during preprocessing:
 
@@ -1331,7 +1331,7 @@ To illustrate these steps, the following example defines a report that lists all
    ```xml
    N:osgireport [cq:Template]
        P:allowedPaths [String[]] = "/etc/reports(/.*)?"
-       P:jcr:description [String] = "Use this report generator to create a new OSGi report."
+       P:jcr:description [String] = "Use this report generator to create an OSGi report."
        P:jcr:title [String] = "OSGi Report Template"
        P:ranking [Long] = 100
        P:shortTitle [String] = "OSGi Report"

@@ -381,7 +381,7 @@ In all views, all items can be deselected by tapping escape on the keyboard if y
 
 #### Selecting Example {#selecting-example}
 
-1. For example in card view:
+1. For example, in card view:
 
    ![Select - Card view](assets/bh-15.png)
 

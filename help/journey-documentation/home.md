@@ -11,7 +11,7 @@ Documentation Journeys provide a narrative structure within AEM documentation by
 
 A Documentation Journey ties together many different and complex topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
 
-Documentation Journeys contrast with AEM's existing technical docs that primarily focus on a single feature and documentation of tasks, assuming familiarity with AEM. By focusing on the concepts and deferring in-depth details to the existing technical documentation, Documentation Journeys give readers new to AEM a place to begin understanding how the platform can be leveraged by using best practices to address common business needs and workflows. For this reason, Documentation Journeys serve as a complement to and not a replacement for [AEM's existing technical documentation.](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+Documentation Journeys contrast with AEM's existing technical docs that primarily focus on a single feature and documentation of tasks, assuming familiarity with AEM. By focusing on the concepts and deferring in-depth details to the existing technical documentation, Documentation Journeys give readers new to AEM a place to begin understanding how the platform can be used by using best practices to address common business needs and workflows. For this reason, Documentation Journeys serve as a complement to and not a replacement for [AEM's existing technical documentation.](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 
 ### Learning By Narrative {#narrative}
 
@@ -33,7 +33,7 @@ If you want to know how Adobe recommends how to solve a business case with AEM, 
 
 ## How is a Documentation Journey Structured? {#structure}
 
-A Documentation Journey serves as a best practices-based introduction to how AEM solves common business problems. For this reason, each journey is designed with readers new to AEM in mind, laying out the business problem, describing any necessary theory, and then giving a step-by-step overview of how AEM solves the problem. Because of the comprehensive nature of a journey, it can be useful to readers new to AEM as well as experienced users.
+A Documentation Journey serves as a best practices-based introduction to how AEM solves common business problems. For this reason, each journey is designed with readers new to AEM in mind, laying out the business problem, describing any necessary theory, and then giving a step-by-step overview of how AEM solves the problem. Because of the comprehensive nature of a journey, it can be useful to readers new to AEM and experienced users.
 
 A typical Documentation Journey has the following parts.
 
@@ -70,12 +70,12 @@ Documentation Journeys are intended as a complement to existing AEM technical do
 |---|---|---|---|---|---|---|
 |Documentation Journey|A journey defines how AEM can solve a general business problem through a narrative that guides readers through complex, interrelated processes and features. It illustrates how multiple features work together to solve a business need in a best practices fashion.|Readers new to AEM|General CMS familiarity|Detailed options and configuration|Text|Ca. 1 hour|
 |Technical Docs|Technical docs focus on individual features, detailing the technical workings of the feature and every option available to the user.|Experienced AEM users|AEM experience|Context and background|Text|Varies|
-|Tutorial|A tutorial is an in-depth dive into a topic showing a developer or admin how to achieve a technical goal (generally programming or system configuration) in a step-by-step fashion, providing specific examples and example code, usually leveraging a limited set of features.|AEM developers or administrators|AEM experience|Background and theory|Video|&gt;1 hour|
+|Tutorial|A tutorial is an in-depth dive into a topic showing a developer or admin how to achieve a technical goal (generally programming or system configuration) in a step-by-step fashion, providing specific examples and example code, usually using a limited set of features.|AEM developers or administrators|AEM experience|Background and theory|Video|&gt;1 hour|
 |Getting Started Guide|A getting started guide is a lightning-fast walkthrough of a specific new AEM feature. It is a quick overview of an individual feature, leading the user through the important (but not all) steps to configuring and using a simple use case.|AEM Admins|AEM experience|Background, theory, detailed options|Text|&lt;1 hour|
 
 ## What Journeys Are There? {#journeys}
 
-There are a number of Documentation Journeys already available to you. Since each journey is designed as a narrative, please start with the introduction and read all the way through to get a full understanding of the topic in the context of AEM.
+There are several Documentation Journeys already available to you. Since each journey is designed as a narrative, start with the introduction and read all the way through to get a full understanding of the topic in the context of AEM.
 
 |Journey|Description|
 |---|---|

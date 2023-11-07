@@ -23,7 +23,7 @@ To access the API:
 1. Open the API service document at `https://[hostname]:[port]/api.json`.
 1. Follow the [!DNL Assets] service link leading to `https://[hostname]:[server]/api/assets.json`.
 
-The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example for PDF files. Rely on the response code for further analysis or actions.
+The API response is a JSON file for some MIME types and a response code for all MIME types. The JSON response is optional and may not be available, for example, for PDF files. Rely on the response code for further analysis or actions.
 
 After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. The API returns 404 error message if the [!UICONTROL On Time] is in the future or [!UICONTROL Off Time] is in the past.
 
@@ -205,7 +205,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 
 ## Create an asset rendition {#create-an-asset-rendition}
 
-Create a new asset rendition for an asset. If request parameter name is not provided, the file name is used as rendition name.
+Create an asset rendition for an asset. If request parameter name is not provided, the file name is used as rendition name.
 
 **Parameters**: The parameters are `name` for name of the rendition and `file` as a file reference.
 

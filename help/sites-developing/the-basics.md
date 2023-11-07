@@ -327,7 +327,7 @@ The following are of interest for development:
 
 **Item** An item is either a node or a property.
 
-For detailed information on manipulating Item objects, refer to the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) of the Interface javax.jcr.Item
+For detailed information on manipulating Item objects, see the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) of the Interface javax.jcr.Item
 
 **Node (and their properties)** Nodes and their properties are defined in the JCR API 2.0 specification (JSR 283). They store content, object definitions, rendering scripts and other data.
 
@@ -343,7 +343,7 @@ For example, to get the properties of the current node, you can use the followin
 
 The currentNode being the current node object.
 
-For more information on manipulating Node objects, refer to the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+For more information on manipulating Node objects, see the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** In AEM all user input is managed by widgets. These are often used to control the editing of a piece of content.
 
@@ -382,7 +382,7 @@ For example, to get the name of the current page, you can use the following code
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage being the current page object. For more information on manipulating Page objects, refer to the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+TcurrentPage being the current page object. For more information on manipulating Page objects, see the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Page Manager** The page manager is an Interface that provides methods for page level operations.
 
@@ -390,7 +390,7 @@ For example, to get the containing page of a resource, you can use the following
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-The pageManager being the page manager object, and myResource a resource object. For more information on the methods provided by the page manager, refer to the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+The pageManager being the page manager object, and myResource a resource object. For more information on the methods provided by the page manager, see the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structure within the Repository {#structure-within-the-repository}
 

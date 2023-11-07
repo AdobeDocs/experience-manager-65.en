@@ -145,7 +145,7 @@ Some recommendations on designing forms and running A/B tests are as follows:
 * Use standard or common terminologies for form fields.
 * Explain the field and required input, with examples or help, where users may get confused.
 * Validate user inputs as they type it, wherever possible, to avoid errors on form submission.
-* Optimize layouts for desktop as well as mobile devices.
+* Optimize layouts for desktop and mobile devices.
 * Auto-populate information for known users.
 
 **A/B tests**

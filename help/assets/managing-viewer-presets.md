@@ -398,7 +398,7 @@ Experience Manager shows a wide variety viewer presets when viewing an asset fro
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. In the limit property, change the number to the desired number, for example, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Select **[!UICONTROL Save All]**.
 
 ## Create a Viewer Preset {#creating-a-new-viewer-preset}

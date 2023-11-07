@@ -1,14 +1,10 @@
 ---
 title: Accessing UGC with SRP
-seo-title: Accessing UGC with SRP
 description: When a site is configured to use ASRP or MSRP, the actual UGC is not be stored in AEM's node store (JCR)
-seo-description: When a site is configured to use ASRP or MSRP, the actual UGC is not be stored in AEM's node store (JCR)
-uuid: 30549f93-e370-4b8b-a35a-69e05884227e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 72d4022c-43ba-49e0-b94c-f2beabaef64d
 docset: aem65
 exl-id: 1157366f-2cc5-46e4-8ec6-e66fe5d0a0f6
 ---
@@ -61,7 +57,7 @@ Methods to avoid :
 
 ### Use Search Collections {#use-search-collections}
 
-Different SRPs can have different native query languages. It is recommended to use methods from the [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) package to run the appropriate query language.
+Different SRPs can have different native query languages. Use methods from the [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) package to run the appropriate query language.
 
 For more information, see [Search Essentials](/help/communities/search-implementation.md).
 

@@ -21,7 +21,7 @@ Access an external SQL database to so that your CQ applications can interact wit
 
 ## Bundling the JDBC Database Driver {#bundling-the-jdbc-database-driver}
 
-Some database vendors provide JDBC drivers in an OSGi bundle, for example [MySQL](https://dev.mysql.com/downloads/connector/j/). If the JDBC driver for your database is not available as an OSGi bundle, obtain the driver JAR and wrap it in an OSGi bundle. The bundle must export the packages that are required for interacting with the database server. The bundle must also import the packages that it references.
+Some database vendors provide JDBC drivers in an OSGi bundle, for example, [MySQL](https://dev.mysql.com/downloads/connector/j/). If the JDBC driver for your database is not available as an OSGi bundle, obtain the driver JAR and wrap it in an OSGi bundle. The bundle must export the packages that are required for interacting with the database server. The bundle must also import the packages that it references.
 
 The following example uses the [Bundle plug-in for Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) to wrap the HSQLDB driver in an OSGi bundle. The POM instructs the plugin to embed the hsqldb.jar file that is identified as a dependency. All org.hsqldb packages are exported.
 
@@ -88,21 +88,21 @@ The following links open the download pages for some popular database products:
 
 Add a configuration for the JDBC Connections Pool service that uses the JDBC driver to create data source objects. Your application code uses this service to obtain the object and connect to the database.
 
-JDBC Connections Pool ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) is a factory service. If you require connections that use different properties, for example read-only or read/write access, create multiple configurations.
+JDBC Connections Pool ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) is a factory service. If you require connections that use different properties, for example, read-only or read/write access, create multiple configurations.
 
 When working with CQ, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
 The following properties are available to configure a pooled connection service. The property names are listed as they appear in the Web Console. The corresponding name for a `sling:OsgiConfig` node appears in parentheses. Example values are shown for an HSQLDB server and a database that has an alias of `mydb`:
 
-* JDBC Driver Class ( `jdbc.driver.class`): The Java&trade; class to use that implements the java.sql.Driver interface, for example `org.hsqldb.jdbc.JDBCDriver`. The data type is `String`.
+* JDBC Driver Class ( `jdbc.driver.class`): The Java&trade; class to use that implements the java.sql.Driver interface, for example, `org.hsqldb.jdbc.JDBCDriver`. The data type is `String`.
 
-* JDBC Connection URI ( `jdbc.connection.uri`): The URL of the database to use to create the connection, for example `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. The format of the URL must be valid for use with the getConnection method of the java.sql.DriverManager class. The data type is `String`.
+* JDBC Connection URI ( `jdbc.connection.uri`): The URL of the database to use to create the connection, for example, `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. The format of the URL must be valid for use with the getConnection method of the java.sql.DriverManager class. The data type is `String`.
 
 * Username ( `jdbc.username`): The user name to use to authenticate with the database server. The data type is `String`.
 
 * Password ( `jdbc.password`): The password to use for authentication of the user. The data type is `String`.
 
-* Validation Query ( `jdbc.validation.query`): The SQL statement to use to verify that the connection is successful, for example `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. The data type is `String`.
+* Validation Query ( `jdbc.validation.query`): The SQL statement to use to verify that the connection is successful, for example, `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. The data type is `String`.
 
 * Readonly By Default (default.readonly): Select this option when you want the connection to provide read-only access. The data type is `Boolean`.
 * Autocommit By Default ( `default.autocommit`): Select this option to create separate transactions for each SQL command that is sent to the database, and each transaction is automatically committed. Do not select this option when you are committing transactions explicitly in your code. The data type is `Boolean`.

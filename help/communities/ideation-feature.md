@@ -94,7 +94,7 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Allowed File Types**
 
-  Relevant only if `Allow File Uploads` is checked. A comma-separated list of file extensions with the "dot" separator. For example : .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified cannot be uploaded. Default is none specified such that all file types are allowed.
+  Relevant only if `Allow File Uploads` is checked. A comma-separated list of file extensions with the "dot" separator. For example, .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those not specified cannot be uploaded. Default is none specified such that all file types are allowed.
 
 * **Max Attach Image File Size**
 
