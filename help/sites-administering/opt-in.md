@@ -182,7 +182,6 @@ Which parameters you send depends on the following:
   ```
 
 * If you do not want to use the **marketingcloud.properties** file then you must send the credentials and parameters; for example:
-
     * automaticProvisioning= `true`
     * servicename= `analytics|target`
     * path=path to an AEM page to attach the created cloud services configs; multiple paths can be defined
