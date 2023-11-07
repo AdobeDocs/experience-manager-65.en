@@ -128,7 +128,9 @@ to
 
 ### [!DNL Assets]{#assets-6519}
 
-* T
+* Unable to differentiate publishing assets to Experience Manager or Brand Portal. [NPR-41320]
+* When you create or save a public folder, three groups are created in an admin dashboard. [ASSETS-26700]
+* In the search panel, when you select checkboxes and deselect any one of them, all the checkboxes are unchecked. [ASSETS-26377]
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
