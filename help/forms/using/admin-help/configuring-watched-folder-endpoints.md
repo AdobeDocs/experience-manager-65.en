@@ -278,13 +278,13 @@ Watched Folder scans the input folder at each Repeat Interval, picks up the numb
 Throttling prevents Watched Folder from invoking new jobs when the previous jobs are not completed. Watched Folder will detect jobs in progress and process new jobs based on the batch size minus jobs in progress. For example, in the second invocation, if the number of jobs completed is only three and one job is still in progress, Watched Folder invokes only three more jobs.
 
 * Watched Folder relies on the number of files present in the stage folder to find out how many jobs are in progress. If files remain unprocessed in the stage folder, Watched Folder will not invoke any more jobs. For example, if the batch size is four and three jobs are stalled, Watched Folder will invoke only one job in subsequent invocations. There are multiple scenarios that can cause files to remain unprocessed in the stage folder. When jobs are stalled, the administrator can terminate the process on the forms workflow administration page so that Watched Folder moves the files out of the stage folder.
-* If the forms server goes down before Watched Folder can invoke the jobs, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
-* If the forms server is running but Watched Folder is not running when the Job Manager service calls back, which occurs when services do not start in the ordered sequence, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* If the Forms Server goes down before Watched Folder can invoke the jobs, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* If the Forms Server is running but Watched Folder is not running when the Job Manager service calls back, which occurs when services do not start in the ordered sequence, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Performance and scalability {#performance-and-scalability}
 
-Watched Folder can serve 100 folders in total on one single node. The performance of Watched Folder is dependent on the performance of the forms server. For asynchronous invocation, performance is more dependent on the system load and jobs that are in the Job Manager queue.
+Watched Folder can serve 100 folders in total on one single node. The performance of Watched Folder is dependent on the performance of the Forms Server. For asynchronous invocation, performance is more dependent on the system load and jobs that are in the Job Manager queue.
 
 Watched Folder performance can be improved by adding nodes to the cluster. Watched Folder jobs are distributed across the cluster nodes by virtue of the Quartz scheduler and, in the case of asynchronous requests, by the Job Manager service. All the jobs are persisted in the database.
 
@@ -402,7 +402,7 @@ Here are some tips and tricks when configuring the Watched Folder endpoint:
 
 ## Service-specific recommendations for watched folders {#service-specific-recommendations-for-watched-folders}
 
-For all services, you should adjust the batch size and repeat interval of the watched folder so that the rate at which Watched Folder picks up new files and folders for processing does not exceed the rate of the jobs that can be processed by the AEM forms server. The actual parameters to use may vary depending on how many watched folders are configured, which services are using watched folders, and how intensive the jobs are on the processor.
+For all services, you should adjust the batch size and repeat interval of the watched folder so that the rate at which Watched Folder picks up new files and folders for processing does not exceed the rate of the jobs that can be processed by the AEM Forms Server. The actual parameters to use may vary depending on how many watched folders are configured, which services are using watched folders, and how intensive the jobs are on the processor.
 
 ### Generate PDF service recommendations {#generate-pdf-service-recommendations}
 

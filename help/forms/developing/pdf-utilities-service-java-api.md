@@ -69,7 +69,7 @@ The following code example converts a PDF document to an XDP document. (See [Con
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -170,7 +170,7 @@ The following code example converts an XDP document to a PDF document. (See [Con
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -270,7 +270,7 @@ The following code example determines whether the document is a PDF document and
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -387,7 +387,7 @@ The following code example sets the save mode for fast web viewing and then pass
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following

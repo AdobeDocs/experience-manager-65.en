@@ -41,7 +41,7 @@ Hence, reducing the size of the external resources and using only absolutely req
 
 * Use [compressed images](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). It reduces the network activity and amount of memory required to render a form. Therefore, the form load time decreases substantially.
 * Use the minify option in AEM Configuration Manager (Day CQ HTML Library Manager) to compress JavaScript and CSS files. For details, see [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md).
-* Enable web compression. It reduces the size of the requests and responses originated from a form. For details, see [Performance tuning of AEM forms server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Enable web compression. It reduces the size of the requests and responses originated from a form. For details, see [Performance tuning of AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Keep the interest alive, show only required fields  {#keep-the-interest-alive-show-only-required-fields}
 

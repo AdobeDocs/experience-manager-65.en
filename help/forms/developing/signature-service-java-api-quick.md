@@ -82,7 +82,7 @@ The following Java code example adds a signature field named *SignatureField1* t
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -170,7 +170,7 @@ The following Java code example retrieves the names of signature fields in a PDF
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -201,7 +201,7 @@ The following Java code example retrieves the names of signature fields in a PDF
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -276,7 +276,7 @@ The following Java code example modifies a signature field named SignatureField1
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -307,7 +307,7 @@ The following Java code example modifies a signature field named SignatureField1
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -404,7 +404,7 @@ The following Java code example digitally signs a PDF document that is based on 
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -435,7 +435,7 @@ The following Java code example digitally signs a PDF document that is based on 
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -553,7 +553,7 @@ The following Java code example signs an interactive form that is rendered by th
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -584,7 +584,7 @@ The following Java code example signs an interactive form that is rendered by th
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -765,7 +765,7 @@ The following Java code example certifies a PDF document that is based on a PDF 
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -796,7 +796,7 @@ The following Java code example certifies a PDF document that is based on a PDF 
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -941,7 +941,7 @@ The following Java code example verifies a digital signature that is in a signed
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -1078,7 +1078,7 @@ The following Java code example verifies multiple digital signatures that are in
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -1109,7 +1109,7 @@ The following Java code example verifies multiple digital signatures that are in
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -1240,7 +1240,7 @@ The following Java code example removes a digital signature from a signature fie
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. activation.jar (required for SOAP mode)
      * 7. axis.jar (required for SOAP mode)
@@ -1271,7 +1271,7 @@ The following Java code example removes a digital signature from a signature fie
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -1367,7 +1367,7 @@ The following Java code example applies a timestamp to a PDF document:
  * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
- * If you want to invoke a remote forms server instance and there is a
+ * If you want to invoke a remote Forms Server instance and there is a
  * firewall between the client application and the server, then it is
  * recommended that you use the SOAP mode. When using the SOAP mode,
  * you have to include these additional JAR files

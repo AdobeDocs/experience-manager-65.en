@@ -45,7 +45,7 @@ For a discussion of how offline lease and synchronization works, see [Primer on 
 
 **Allow Extended Authentication** Select to enable extended authentication and then enter the Extended Authentication Landing URL.
 
-Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the AEM forms server. For example, users can now experience the SAML-based authentication instead of AEM forms username/Password, from Acrobat and Reader Client. By default, the Landing URL contains *localhost* as the server name. Replace the server name with a fully qualified hostname. The hostname in the landing URL is automatically populated from the base URL, if extended Authentication is not enabled yet. See [Add the extended authentication provider](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the AEM Forms Server. For example, users can now experience the SAML-based authentication instead of AEM forms username/Password, from Acrobat and Reader Client. By default, the Landing URL contains *localhost* as the server name. Replace the server name with a fully qualified hostname. The hostname in the landing URL is automatically populated from the base URL, if extended Authentication is not enabled yet. See [Add the extended authentication provider](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***note**: Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.*
 
@@ -93,7 +93,7 @@ AEM forms provides a sample configuration that you can customize for your enviro
 >Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.
 
 1. Obtain the sample WAR file deploy it. See the installation guide appropriate for your application server.
-1. Ensure that the forms server has a fully qualified name instead of IP addresses as the base URL and that it is a HTTPS URL. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
+1. Ensure that the Forms Server has a fully qualified name instead of IP addresses as the base URL and that it is a HTTPS URL. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
 1. Enable Extended Authentication from the Server Configuration page. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
 1. Add the required SSO redirect URLs in the User Management configuration file. See [Add SSO redirect URLs for extended authentication](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -252,7 +252,7 @@ You can export audit events to a file for archiving purposes.
 
     * the minimum age of the audit events to export
     * the maximum number of audit events to include in a single file. The server generates one or more files, based on this value.
-    * the folder where the file will be created. This folder is on the forms server. If the folder path is relative, then it is relative to your application server root directory.
+    * the folder where the file will be created. This folder is on the Forms Server. If the folder path is relative, then it is relative to your application server root directory.
     * the file prefix to use for the audit events files
     * the format of the file, either a comma-separated values (CSV) file that is compatible with Microsoft Excel or an XML file.
 

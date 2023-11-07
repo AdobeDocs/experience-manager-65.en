@@ -71,7 +71,7 @@ The following Java code example searches for process instances that are based on
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -189,7 +189,7 @@ The following Java code example suspends a process instance. To successfully sus
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -281,7 +281,7 @@ The following Java code example starts a suspended process instance.
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -369,7 +369,7 @@ The following Java code example terminates a process instance with the identifie
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -459,7 +459,7 @@ The following Java code purges data from a process named *SecureDocument*. A fil
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -567,7 +567,7 @@ The following code example retrieves the status of 10 AEM Forms jobs.
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following

@@ -210,7 +210,7 @@ Enable these options to specify the window appearance:
 
 ## Flash videos to PDF settings {#flash-videos-to-pdf-settings}
 
-PDF Generator supports the ability to submit a video for Adobe Flash (SWF or FLV file) and create a PDF file with a video for Adobe Flash embedded in it. This conversion does not require Adobe Flash Player to be installed on the forms server. For instructions about accessing this option, see [Create or edit file type settings](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator supports the ability to submit a video for Adobe Flash (SWF or FLV file) and create a PDF file with a video for Adobe Flash embedded in it. This conversion does not require Adobe Flash Player to be installed on the Forms Server. For instructions about accessing this option, see [Create or edit file type settings](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Filename Extensions:** Comma-separated list of filename extensions that can be converted.
 
@@ -245,7 +245,7 @@ For instructions about accessing this setting, see [Create or edit file type set
 
     * If necessary, select a different fonts directory from the **Font source** drop-down menu. This drop-down menu lists fonts directories specified in **Home &gt; Settings &gt; Core System &gt; Core Configurations**.
     * Select one or more fonts from the **Available Fonts** list and click **Add**. These fonts are added to the **Fonts to Unembed** list.
-    * If you want to unembed some fonts that don't exist on the forms server, enter the names of those fonts in the **Add fonts to unembed** box. Click **Add**.
+    * If you want to unembed some fonts that don't exist on the Forms Server, enter the names of those fonts in the **Add fonts to unembed** box. Click **Add**.
 
    >[!NOTE]
    >

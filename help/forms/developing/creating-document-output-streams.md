@@ -1499,7 +1499,7 @@ After you retrieve a document to print, you can invoke the Output service, which
 
 >[!NOTE]
 >
->If PDFG is installed on the forms server and the server runs on Windows Server 2008, you cannot use the SharedPrinter property. In this situation, use a different printer protocol.
+>If PDFG is installed on the Forms Server and the server runs on Windows Server 2008, you cannot use the SharedPrinter property. In this situation, use a different printer protocol.
 
 >[!NOTE]
 >

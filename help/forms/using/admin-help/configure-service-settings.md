@@ -29,7 +29,7 @@ You can use the Service Management page to configure settings for each of the se
 
 ## Audit Workflow service settings {#audit-workflow-service-settings}
 
-Workbench provides the ability to record process instances as they execute at runtime and then play them back to observe the behavior of the process. (See [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).) To conserve space on the forms server's file system, you can limit the amount of process recording data that is stored. You can configure the following properties of the Audit Workflow Service service ( `AuditWorkflowService`):
+Workbench provides the ability to record process instances as they execute at runtime and then play them back to observe the behavior of the process. (See [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).) To conserve space on the Forms Server's file system, you can limit the amount of process recording data that is stored. You can configure the following properties of the Audit Workflow Service service ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** The maximum number of recordings that are stored. When the maximum number is stored, the oldest recording is removed from the file system when a new recording is created. This property is useful if you tend to create many recordings and you want to remove old recordings automatically. The default value is 50.
 
@@ -259,7 +259,7 @@ The following settings are available for the Generate PDF service.
 
 **OCR Pool Size:** The pool size of the PaperCaptureService that PDF Generator uses for OCR. The default value of this setting (recommended for single-processor systems) is 3, which you can increase on multi-processor systems. This setting is valid only on Windows systems.
 
-**Fallback Font Family For HTML To PDF Conversions:** The name of the font family to use in PDF documents when the font used in the original HTML is not available to the AEM forms server. Specify a font family if you expect to convert HTML pages that use unavailable fonts. For example, pages authored in regional languages could use unavailable fonts.
+**Fallback Font Family For HTML To PDF Conversions:** The name of the font family to use in PDF documents when the font used in the original HTML is not available to the AEM Forms Server. Specify a font family if you expect to convert HTML pages that use unavailable fonts. For example, pages authored in regional languages could use unavailable fonts.
 
 **Retry Logic for Native Conversions** Governs PDF generation retries if the first attempt at conversion has failed:
 
@@ -277,7 +277,7 @@ Retry PDF conversion if the time consumed for the first conversion attempt was l
 
 ## Guides ES4 Utilities service settings {#guides-es4-utilities-service-settings}
 
-When you create a Guide, some resources, such as the Guide definition, are embedded in the Guide. Resources can also exist as references to application assets stored locally or on the AEM forms server. The Guide does not contain data, and the values for the submit location and inputs are not suitable for all external environments.
+When you create a Guide, some resources, such as the Guide definition, are embedded in the Guide. Resources can also exist as references to application assets stored locally or on the AEM Forms Server. The Guide does not contain data, and the values for the submit location and inputs are not suitable for all external environments.
 
 In most cases, the default Guides render services is sufficient to prepare a Guide for use in Workspace or other external environments. (In the Services view, in Workbench, the default service is Guides (system)/Processes/Render Guide - 1.0.) The Guide Utilities service ( `GuidesUtility`) lets you create a customized process for rendering a Guide, if necessary.
 
@@ -334,7 +334,7 @@ The JDBC service ( `JdbcService`) enables processes to interact with databases.
 
 The following setting is available for the JDBC service.
 
-**datasourceName:** A string value that represents the JNDI name of the data source to use to connect to the database server. The data source must be defined on the application server that hosts the forms server. The default value is the JNDI name of the data source for the AEM forms database.
+**datasourceName:** A string value that represents the JNDI name of the data source to use to connect to the database server. The data source must be defined on the application server that hosts the Forms Server. The default value is the JNDI name of the data source for the AEM forms database.
 
 ## JMS service settings {#jms-service-settings}
 
@@ -476,7 +476,7 @@ The following settings are available for the PDFG Config service ( `PDFGConfigSe
 
 **Server Conversion Timeout:** The maximum job conversion timeout (in seconds) for the Generate PDF service and the Distiller service. This setting limits the maximum conversion timeout that can be specified in the config.xml file and in the administration console pages for PDF Generator. The default value is 270.
 
-**Server Global Timeout:** While performing PDF conversions, a forms server takes into account the timeout limit. Configure the timeout value to resolve the issue.
+**Server Global Timeout:** While performing PDF conversions, a Forms Server takes into account the timeout limit. Configure the timeout value to resolve the issue.
 
 **Job Options Prefix:** A prefix used by the Generate PDF service to prepend a short string to the job options files that it creates temporarily for use by Acrobat Distiller. The default value is pdfg.
 
@@ -745,11 +745,11 @@ The Web Service service interacts with web services by sending and receiving SOA
 
 The following settings are available for the Web Service service.
 
-**Key Store:** The full path of the keystore file that contains the private key to use for authentication. The forms server must be able to access the file.
+**Key Store:** The full path of the keystore file that contains the private key to use for authentication. The Forms Server must be able to access the file.
 
 **Key Store Password:** The password for the keystore file.
 
-**Key Store Type:** The type of the keystore. Provide no value to use the default keystore type that is configured for the JVM that runs the forms server. Otherwise, provide one of the following values:
+**Key Store Type:** The type of the keystore. Provide no value to use the default keystore type that is configured for the JVM that runs the Forms Server. Otherwise, provide one of the following values:
 
 * jks
 * pkcs12
@@ -760,7 +760,7 @@ The following settings are available for the Web Service service.
 
 **Trust Store Password:** The password for the truststore file.
 
-**Trust Store Type:** The type of the truststore. Provide no value to use the default keystore type that is configured for the JVM that runs the forms server. Otherwise, provide one of the following values:
+**Trust Store Type:** The type of the truststore. Provide no value to use the default keystore type that is configured for the JVM that runs the Forms Server. Otherwise, provide one of the following values:
 
 * jks
 * pkcs12
@@ -773,11 +773,11 @@ The XSLT Transformation service ( `XSLTService`) enables processes to apply Exte
 
 The following setting is available for the XSLT Transformation service.
 
-**Factory Name:** The fully qualified name of the Java class to use for performing XSLT transformations. If no value is specified, the default factory configured in the Java Virtual Machine that runs the forms server is used.
+**Factory Name:** The fully qualified name of the Java class to use for performing XSLT transformations. If no value is specified, the default factory configured in the Java Virtual Machine that runs the Forms Server is used.
 
 ## Modifying security settings for a service {#modifying-security-settings-for-a-service}
 
-forms server enables you to configure security settings for each service, which lets you configure fine-grained access control on a service-by-service level.
+Forms Server enables you to configure security settings for each service, which lets you configure fine-grained access control on a service-by-service level.
 
 Default security profiles are installed, which can then be configured to meet your system needs. Each security profile has an associated domain and is created at either the user level or the group level.
 

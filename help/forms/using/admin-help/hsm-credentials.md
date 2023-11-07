@@ -17,7 +17,7 @@ AEM forms Digital Signatures can use credentials stored on an HSM to apply serve
 
 >[!NOTE]
 >
->After changing your HSM configuration, restart the AEM forms server.
+>After changing your HSM configuration, restart the AEM Forms Server.
 
 ## Create an alias for an HSM credential when the HSM device is online {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
@@ -44,7 +44,7 @@ AEM forms Digital Signatures can use credentials stored on an HSM to apply serve
 1. In the Slot Type list, select Slot Id, Slot Index, or Token Name and specify a value in the Slot Info box. AEM forms uses these settings to determine where the credentials are stored on the HSM.
 
     * **Token Name:** Corresponds to a partition name (for example, HSMPART1).
-    * **Slot Id:** The Slot ID is an integer that corresponds to the slot, which in turn corresponds to a partition. For example, the client (forms server) registered with the HSMPART1 partition first. This maps slot 1 to the HSMPART1 partition, for this client. Because HSMPART1 is the first partition registered, the Slot ID is 1 and you would set Slot Info to 1.
+    * **Slot Id:** The Slot ID is an integer that corresponds to the slot, which in turn corresponds to a partition. For example, the client (Forms Server) registered with the HSMPART1 partition first. This maps slot 1 to the HSMPART1 partition, for this client. Because HSMPART1 is the first partition registered, the Slot ID is 1 and you would set Slot Info to 1.
 
       The slot ID is set on a client-by-client basis. If you registered a second machine to a different partition (for example, HSMPART2 on the same HSM device), then slot 1 would be associated with the HSMPART2 partition for that client.
 
@@ -77,7 +77,7 @@ The Status column reflects the current status of the credential. In case of fail
 
 ## Reset all HSM Connections {#reset-all-hsm-connections}
 
-Reset the open connections to an HSM device after any disruption to the network session between the forms server and the HSM device. For example, disruptions can happen due to a network outage or the HSM device being taken offline for a software update. After a disruption, the existing connections are stale and any signing requests against those connections fail. Using the Reset All HSM Connections option clears the old connections.
+Reset the open connections to an HSM device after any disruption to the network session between the Forms Server and the HSM device. For example, disruptions can happen due to a network outage or the HSM device being taken offline for a software update. After a disruption, the existing connections are stale and any signing requests against those connections fail. Using the Reset All HSM Connections option clears the old connections.
 
 1. In administration console, click Settings &gt;Trust Store Management &gt; HSM Credentials.
 1. Click Reset All HSM Connections.

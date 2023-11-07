@@ -77,7 +77,7 @@ The following Java code example assigns a task to a user named Tony Blue.
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -210,7 +210,7 @@ The following Java code example locks a task that corresponds to the task identi
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -299,7 +299,7 @@ The following Java code example retrieves all tasks that are assigned to a user 
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -425,7 +425,7 @@ The following Java code example retrieves form data from a task with the identif
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -531,7 +531,7 @@ The following Java code example updates a form with data that is in the *FormDat
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -641,7 +641,7 @@ The following Java code example retrieves file attachments. Each file attachment
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -745,7 +745,7 @@ The following Java code example retrieves all tasks that are based on a process 
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following

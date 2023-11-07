@@ -137,7 +137,7 @@ The `DSCError` element is optional and present only if the exception is an insta
 
 ## Security and authentication {#security-and-authentication}
 
-To provide REST invocations with a secure transport, an AEM forms administrator can enable the HTTPS protocol on the J2EE application server hosting AEM Forms. This configuration is specific to the J2EE application server; it is not part of the forms server configuration.
+To provide REST invocations with a secure transport, an AEM forms administrator can enable the HTTPS protocol on the J2EE application server hosting AEM Forms. This configuration is specific to the J2EE application server; it is not part of the Forms Server configuration.
 
 >[!NOTE]
 >

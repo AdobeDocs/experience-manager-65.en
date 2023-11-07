@@ -32,7 +32,7 @@ The default value is `com/adobe/formServer/PA/pa_output.xci`.
 **Default Location:** This is the default selection. When this option is selected, the cache is created at a location that is dependent on the application server you are using:
 
 * **JBoss:** `[JBoss Home]\server\[install type]\svcdata\Output\Cache`
-* **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[forms server name]\Output\Cache`
+* **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[Forms Server name]\Output\Cache`
 * **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
 **LC Temp Directory:** The cache is created in a subdirectory of the AEM forms temp directory, which is specified in the administration console under Settings > Core System Settings > Configurations > Location of Temp Directory. The subdirectory is named `adobeoutput_[servername]`.

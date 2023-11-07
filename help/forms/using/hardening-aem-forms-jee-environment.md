@@ -147,7 +147,7 @@ This section describes techniques you can use during the AEM Forms installation 
 
 After you successfully install AEM Forms on JEE, it is important to periodically maintain the environment from a security perspective.
 
-The following section describes in detail the different tasks that are recommended to secure the deployed forms server.
+The following section describes in detail the different tasks that are recommended to secure the deployed Forms Server.
 
 ### AEM Forms security {#aem-forms-security}
 
@@ -163,7 +163,7 @@ AEM Forms on JEE installs a service, by default, by using the LocalSystem accoun
 
 To run the application server on which AEM Forms on JEE is deployed, using a specific non-administrative account, follow these instructions:
 
-1. In the Microsoft Management Console (MMC), create a local user for the forms server service to log in as:
+1. In the Microsoft Management Console (MMC), create a local user for the Forms Server service to log in as:
 
     * Select **User cannot change password**.
     * On the **Member Of** tab, ensure that the **Users** group is listed.
@@ -176,7 +176,7 @@ To run the application server on which AEM Forms on JEE is deployed, using a spe
 1. Double-click the JBoss for AEM Forms on JEE and stop the service.
 1. On the **Log On** tab, select **This Account**, browse for the user account you created, and enter the password for the account.
 1. In the MMC, open **Local Security Settings** and select **Local Policies** &gt; **User Rights Assignment**.
-1. Assign the following rights to the user account that the forms server is running under:
+1. Assign the following rights to the user account that the Forms Server is running under:
 
     * Deny log on through Terminal Services
     * Deny log on locally
@@ -268,7 +268,7 @@ You can disable remote access to all Trust Store services by following the steps
 
 **Disable all non-essential anonymous access**
 
-Some forms server services have operations that may be invoked by an anonymous caller. If anonymous access to these services is not required, disable it by following the steps in [Disabling non-essential anonymous access to services](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Some Forms Server services have operations that may be invoked by an anonymous caller. If anonymous access to these services is not required, disable it by following the steps in [Disabling non-essential anonymous access to services](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Change the default administrator password {#change-the-default-administrator-password}
 
@@ -396,7 +396,7 @@ On WebSphere, you can configure integrated security only when you use an externa
 
 ### Protecting access to sensitive content in the database {#protecting-access-to-sensitive-content-in-the-database}
 
-The AEM Forms database schema contains sensitive information about system configuration and business processes and should be hidden behind the firewall. The database should be considered within the same trust boundary as the forms server. To guard against information disclosure and theft of business data, the database must be configured by the database administrator (DBA) to allow access only by authorized administrators.
+The AEM Forms database schema contains sensitive information about system configuration and business processes and should be hidden behind the firewall. The database should be considered within the same trust boundary as the Forms Server. To guard against information disclosure and theft of business data, the database must be configured by the database administrator (DBA) to allow access only by authorized administrators.
 
 As an added precaution, you should consider using database vendor-specific tools to encrypt columns in tables that contain the following data:
 
@@ -532,13 +532,13 @@ Certain URLs are highlighted as end-user-facing web applications. You should avo
   </tr> 
   <tr> 
    <td><p>/soap/*</p> </td> 
-   <td><p>Information page for forms server web services</p> </td> 
+   <td><p>Information page for Forms Server web services</p> </td> 
    <td><p>No</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
   <tr> 
    <td><p>/soap/services/*</p> </td> 
-   <td><p>Web service URL for all forms server services</p> </td> 
+   <td><p>Web service URL for all Forms Server services</p> </td> 
    <td><p>No</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
@@ -669,7 +669,7 @@ The following characteristics are common to CSRF:
 AEM Forms on JEE uses the Referrer Filter feature to block CSRF attacks. The following terms are used in this section to describe the Referrer Filtering mechanism:
 
 * **Allowed Referrer:** A Referrer is the address of the source page that sends a request to the server. For JSP pages or forms, the Referrers is usually the previous page in the browsing history. Referrer for images are usually the pages on which the images are displayed. You can identify the Referrer that are allowed access to your server resources by adding them to the Allowed Referrer list.
-* **Allowed Referrer Exceptions:** You may want to restrict the scope of access for a particular Referrer in your Allowed Referrer list. To enforce this restriction you can add individual paths of that Referrer to the Allowed Referrer Exceptions list. Requests originating from paths in the Allowed Referrer Exceptions list are prevented from invoking any resource on the forms server. You can define Allowed Referrer Exceptions for a specific application and also use a global list of exceptions that apply to all applications.
+* **Allowed Referrer Exceptions:** You may want to restrict the scope of access for a particular Referrer in your Allowed Referrer list. To enforce this restriction you can add individual paths of that Referrer to the Allowed Referrer Exceptions list. Requests originating from paths in the Allowed Referrer Exceptions list are prevented from invoking any resource on the Forms Server. You can define Allowed Referrer Exceptions for a specific application and also use a global list of exceptions that apply to all applications.
 * **Allowed URIs:** This is a list of resources that are to be served without checking the Referrer Header. Resources, for example, help pages, that do not result in state changes on the server, can be added to this list. The resources in the Allowed URIs list are never blocked by the Referrer Filter irrespective of who the Referrer is.
 * **Null Referrer:** A server request that is not associated with or does not originate from a parent web page is considered to be a request from a Null Referrer. For example, when you open a new browser window, type an address, and press enter, the Referrer sent to the server is null. A desktop application (.NET or SWING) making an HTTP request to a web server, also sends a Null Referrer to the server.
 
@@ -677,12 +677,12 @@ AEM Forms on JEE uses the Referrer Filter feature to block CSRF attacks. The fol
 
 The Referrer Filtering process can be described as follows:
 
-1. The forms server checks the HTTP method used for invocation:
+1. The Forms Server checks the HTTP method used for invocation:
 
-    1. If it is POST, the forms server performs the Referrer header check.
-    1. If it is GET, the forms server bypasses the Referrer check, unless *CSRF_CHECK_GETS* is set to true, in which case it performs the Referrer header check. *CSRF_CHECK_GETS* is specified in the *web.xml* file for your application.
+    1. If it is POST, the Forms Server performs the Referrer header check.
+    1. If it is GET, the Forms Server bypasses the Referrer check, unless *CSRF_CHECK_GETS* is set to true, in which case it performs the Referrer header check. *CSRF_CHECK_GETS* is specified in the *web.xml* file for your application.
 
-1. The forms server checks whether the requested URI exists in allowlist:
+1. The Forms Server checks whether the requested URI exists in allowlist:
 
     1. If the URI is allowlisted, the server accepts the request.
     1. If the requested URI is not allowlisted, the server retrieves the Referrer of the request.
@@ -701,7 +701,7 @@ The Referrer Filtering process can be described as follows:
 
 AEM Forms on JEE provides a Referrer Filter to specify Referrer that are allowed access to your server resources. By default, the Referrer filter does not filter requests that use a safe HTTP method, for example, GET, unless *CSRF_CHECK_GETS* is set to true. If the port number for an Allowed Referrer entry is set to 0, AEM Forms on JEE will allow all requests with Referrer from that host regardless of the port number. If no port number is specified, only requests from the default port 80 (HTTP) or port 443 (HTTPS) are allowed. Referrer Filtering is disabled if all the entries in the Allowed Referrer list are deleted.
 
-When you first install Document Services, the Allowed Referrer list is updated with the address of the server on which Document Services is installed. The entries for the server include the server name, the IPv4 address, the IPv6 address if IPv6 is enabled, the loopback address, and a localhost entry. The names added to the Allowed Referrer list are returned by Host operating system. For example, a server with an IP address of 10.40.54.187 will include the following entries: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. For any unqualified name retuned by Host operating system (names that do not have IPv4 address, IPv6 address or qualified domain name) allowlist is not updated. Modify the Allowed Referrer list to suit your business environment. Do not deploy the forms server in the production environment with the default Allowed Referrer list. After modifying any of the Allowed Referrer, Referrer Exceptions, or URIs, ensure that you restart the server for the changes to take effect.
+When you first install Document Services, the Allowed Referrer list is updated with the address of the server on which Document Services is installed. The entries for the server include the server name, the IPv4 address, the IPv6 address if IPv6 is enabled, the loopback address, and a localhost entry. The names added to the Allowed Referrer list are returned by Host operating system. For example, a server with an IP address of 10.40.54.187 will include the following entries: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. For any unqualified name retuned by Host operating system (names that do not have IPv4 address, IPv6 address or qualified domain name) allowlist is not updated. Modify the Allowed Referrer list to suit your business environment. Do not deploy the Forms Server in the production environment with the default Allowed Referrer list. After modifying any of the Allowed Referrer, Referrer Exceptions, or URIs, ensure that you restart the server for the changes to take effect.
 
 **Managing Allowed Referrer list**
 
@@ -734,7 +734,7 @@ Use the ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** list for application-specific exce
 
 **Disabling the Referrer Filter**
 
-In the event that the Referrer Filter completely blocks access to the forms server and you cannot edit the Allowed Referrer list, you can update the server startup script and disable Referrer Filtering.
+In the event that the Referrer Filter completely blocks access to the Forms Server and you cannot edit the Allowed Referrer list, you can update the server startup script and disable Referrer Filtering.
 
 Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup script and restart the server. Ensure that you delete the JAVA argument after you have appropriately reconfigured the Allowed Referrer list.
 
@@ -744,7 +744,7 @@ You may have created custom WAR files to work with AEM Forms on JEE to meet your
 
 **CSRF_CHECK_GETS** controls the Referrer check on GET requests. If this parameter is not defined, the default value is set to false. Include this parameter only if you want to filter your GET requests.
 
-**CSRF_ALLOWED_REFERER_EXCEPTIONS** is the ID of the Allowed Referrer Exceptions list. The Referrer Filter prevents requests originating from Referrers in the list identified by the list ID, from invoking any resource on the forms server.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** is the ID of the Allowed Referrer Exceptions list. The Referrer Filter prevents requests originating from Referrers in the list identified by the list ID, from invoking any resource on the Forms Server.
 
 **CSRF_ALLOWED_URIS_LIST_NAME** is the ID of the Allowed URIs list. The Referrer Filter does not block requests for any of the resources in the list identified by the list ID, regardless of the value of the Referrer header in the request.
 
@@ -830,7 +830,7 @@ When you configure a secure network architecture as described in the previous se
     <ul> 
      <li><p>Web service client applications, such as .NET applications</p> </li> 
      <li><p>Adobe Reader&reg; uses SOAP for AEM Forms on JEE server web services</p> </li> 
-     <li><p>Adobe Flash&reg; applications uses SOAP for forms server web services</p> </li> 
+     <li><p>Adobe Flash&reg; applications uses SOAP for Forms Server web services</p> </li> 
      <li><p>AEM Forms on JEE SDK calls when used in SOAP mode</p> </li> 
      <li><p>Workbench design environment</p> </li> 
     </ul> </td> 
@@ -990,7 +990,7 @@ The AEM Forms on JEE turnkey installation sets up a service account, by default,
 
 #### Run the application server using a non-administrative account {#run-the-application-server-using-a-non-administrative-account}
 
-1. In the Microsoft Management Console (MMC), create a local user for the forms server service to log in as:
+1. In the Microsoft Management Console (MMC), create a local user for the Forms Server service to log in as:
 
     * Select **User cannot change password**.
     * On the **Member Of** tab, ensure that the Users group is listed.
@@ -998,7 +998,7 @@ The AEM Forms on JEE turnkey installation sets up a service account, by default,
 1. Select **Settings** &gt; **Administrative Tools** &gt; **Services**.
 1. Double-click the application server service and stop the service.
 1. On the **Log On** tab, select **This Account**, browse for the user account you created, and enter the password for the account. 
-1. In the Local Security Settings window, under User Rights Assignment, give the following rights to the user account that the forms server is running under:
+1. In the Local Security Settings window, under User Rights Assignment, give the following rights to the user account that the Forms Server is running under:
 
     * Deny log on through Terminal Services
     * Deny log on locallyxx
@@ -1036,7 +1036,7 @@ AEM Forms on JEE uses the file system in the following ways:
 * Stores files in the global archive store that are used to support the solution components that are installed
 * Watched folders store dropped files that are used as input to a service from a file system folder location
 
-When using watched folders as a way to send and receive documents with a forms server service, take extra precautions with file system security. When a user drops content in the watched folder, that content is exposed through the watched folder. In this case, the service does not authenticate the actual end user. Instead, it relies on ACL and Share level security to be set at the folder level to determine who can effectively invoke the service.
+When using watched folders as a way to send and receive documents with a Forms Server service, take extra precautions with file system security. When a user drops content in the watched folder, that content is exposed through the watched folder. In this case, the service does not authenticate the actual end user. Instead, it relies on ACL and Share level security to be set at the folder level to determine who can effectively invoke the service.
 
 ## JBoss-specific security recommendations {#jboss-specific-security-recommendations}
 
