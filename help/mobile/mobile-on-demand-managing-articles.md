@@ -114,7 +114,7 @@ The general workflow to delete an article:
 1. Select the article to delete in the **Manage Articles** tile.
 1. Ensure it is selected in the list, (select others to delete as needed).
 1. Click **Delete** from the action bar.
-1. Check if you would like to delete from AEM as well as Mobile On-Demand.
+1. Check if you would like to delete from AEM and Mobile On-Demand.
 1. Click **Delete**.
 1. Your article is now removed from the list.
 

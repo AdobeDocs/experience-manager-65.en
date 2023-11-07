@@ -141,7 +141,7 @@ See [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-persona
 
 ### Previewing a newsletter {#previewing-a-newsletter}
 
-You can preview how the newsletter will look as well as preview the personalization.
+You can preview how the newsletter will look and preview the personalization.
 
 1. Open the newsletter you want to preview and click Preview (magnifying glass) to shrink the sidekick.
 1. Click one of the email client icons to see what your newsletter looks like in each email client.

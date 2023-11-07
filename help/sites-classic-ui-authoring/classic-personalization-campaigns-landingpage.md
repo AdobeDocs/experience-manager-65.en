@@ -433,7 +433,7 @@ While clearing the landing page, you can remove the content changes. If you clic
 
 >[!NOTE]
 >
->If you decide to remove the content changes, then all the changes that you made on the imported landing page as well as all page properties are lost when you click **Clear**.
+>If you decide to remove the content changes, then all the changes that you made on the imported landing page and all page properties are lost when you click **Clear**.
 
 ### Modifying and Adding Components on a Landing Page {#modifying-and-adding-components-on-a-landing-page}
 

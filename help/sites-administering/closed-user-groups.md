@@ -576,7 +576,7 @@ The available configuration options associated with the CUG-authorization module
 
 #### Excluding Principals From CUG Evaluation {#excluding-principals-from-cug-evaluation}
 
-Exempting individual principals from CUG evaluation has been adopted from the former implementation. The new CUG authorization covers this with a dedicated interface named CugExclude. Apache Jackrabbit Oak 1.4 ships with a default implementation that excludes a fixed set of principals as well as an extended implementation that allows to configure individual principal names. The latter is configured in AEM publish instances.
+Exempting individual principals from CUG evaluation has been adopted from the former implementation. The new CUG authorization covers this with a dedicated interface named CugExclude. Apache Jackrabbit Oak 1.4 ships with a default implementation that excludes a fixed set of principals and an extended implementation that allows to configure individual principal names. The latter is configured in AEM publish instances.
 
 The default since AEM 6.3 prevents the following principals from being affected by CUG policies:
 
@@ -766,7 +766,7 @@ Therefore, CUG groups cannot be rolled out to Live Copies from Blueprints. Pleas
 
 ## Changes with the New CUG Implementation {#changes-with-the-new-cug-implementation}
 
-The aim of this section is to provide an overview of the changes made to the CUG feature as well as a comparison between the old and the new implementation. It lists the changes affecting the way CUG support is configured and describes how and by whom CUGs are managed in the repository content.
+The aim of this section is to provide an overview of the changes made to the CUG feature and a comparison between the old and the new implementation. It lists the changes affecting the way CUG support is configured and describes how and by whom CUGs are managed in the repository content.
 
 ### Differences in CUG Setup and Configuration {#differences-in-cug-setup-and-configuration}
 

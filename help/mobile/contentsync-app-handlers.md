@@ -81,7 +81,7 @@ This handler should be added to any AEM Apps ContentSync Config.
 }
 ```
 
-**mobilecontentpackageslisting** Lists the AEM content package in a given app as well as the serverURL to make update requests to. This is used the client side js on device to request content updates
+**mobilecontentpackageslisting** Lists the AEM content package in a given app and the serverURL to make update requests to. This is used the client side js on device to request content updates
 
 The handler should be used on AEM App Shell ContentSync Config (node with pge-type=app-instance)
 

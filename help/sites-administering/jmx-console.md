@@ -888,7 +888,7 @@ The main page of the JMX console includes a table of services. Each row in the t
 
 ## Using External JMX Applications for Monitoring {#using-external-jmx-applications-for-monitoring}
 
-CRX allows external applications to interact with Managed Beans (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Using generic consoles such as [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) or domain-specific monitoring applications, allows getting and setting CRX configurations and properties, as well as the monitoring of performance and resource usage.
+CRX allows external applications to interact with Managed Beans (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Using generic consoles such as [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) or domain-specific monitoring applications, allows getting and setting CRX configurations and properties, and the monitoring of performance and resource usage.
 
 ### Using JConsole to connect to CRX {#using-jconsole-to-connect-to-crx}
 

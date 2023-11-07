@@ -191,7 +191,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 ### Linking to Dependencies {#linking-to-dependencies}
 
-When the code in your client library folder references other libraries, identify the other libraries as dependencies. In the JSP, the `ui:includeClientLib` tag that references your client library folder causes the HTML code to include a link to your generated library file as well as the dependencies.
+When the code in your client library folder references other libraries, identify the other libraries as dependencies. In the JSP, the `ui:includeClientLib` tag that references your client library folder causes the HTML code to include a link to your generated library file and the dependencies.
 
 The dependencies must be another `cq:ClientLibraryFolder`. To identify dependencies, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 

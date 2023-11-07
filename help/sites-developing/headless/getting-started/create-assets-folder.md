@@ -13,7 +13,7 @@ Use AEM Content Fragment Models to define the structure of Content Fragments, th
 
 However you will first need to create an assets folder where you will store them.
 
-Assets folders are used to [organize traditional content assets](/help/assets/manage-assets.md) like images and video as well as Content Fragments.
+Assets folders are used to [organize traditional content assets](/help/assets/manage-assets.md) like images and video and Content Fragments.
 
 ## How to Create an Assets Folder {#how-to-create-an-assets-folder}
 

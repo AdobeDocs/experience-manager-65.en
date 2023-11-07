@@ -103,7 +103,7 @@ DB2 has built-in capabilities to back up a database to Tivoli Storage Manager. B
 
 Use snapshot backups or configure your Oracle database to run in archive log mode. (See [Oracle Backup: An Introduction](https://www.databasedesign-resource.com/oracle-backup.md).) For more information about backing up and recovering your Oracle database, go to these sites:
 
-[Oracle Backup and Recovery:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explains the concepts of backup and recovery and the most common techniques for using Recovery Manager (RMAN) for backup, recovery, and reporting in more detail, as well as providing more information about how to plan a backup and recovery strategy.
+[Oracle Backup and Recovery:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explains the concepts of backup and recovery and the most common techniques for using Recovery Manager (RMAN) for backup, recovery, and reporting in more detail, and providing more information about how to plan a backup and recovery strategy.
 
 [Oracle Database Backup and Recovery User's Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Provides in-depth information about RMAN architecture, backup and recovery concepts and mechanisms, advanced recovery techniques such as point-in-time recovery and database flashback features, and backup and recovery performance tuning. It also covers user-managed backup and recovery, using host operating system facilities instead of RMAN. This volume is essential for backup and recovery of more sophisticated database deployments and for advanced recovery scenarios.
 

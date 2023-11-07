@@ -24,7 +24,7 @@ to a new location under:
 
 Because of this, manual adjustments are required after an upgrade in order for the forms to continue to function.
 
-This applies to new Search Forms as well as default Forms that have been customized.
+This applies to new Search Forms and default Forms that have been customized.
 
 For more information, see the documentation on [Search Facets](/help/assets/search-facets.md).
 

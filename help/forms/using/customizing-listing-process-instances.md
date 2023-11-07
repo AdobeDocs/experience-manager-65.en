@@ -84,7 +84,7 @@ To display the `description` property of the process instance in the process ins
 
    ```css
    .processinstance .processDescription {
-    <!--Dummy values, need to be configured by user as per requirement as well as user can add or delete any property depending upon requirement-->
+    <!--Dummy values, need to be configured by user as per requirement and user can add or delete any property depending upon requirement-->
        width : 250px;
        font-size : 11pt;
        padding : 2px;

@@ -299,7 +299,7 @@ Write a resource by using the Repository service API (Java):
 
 1. Write the resource to the target folder
 
-   Invoke the `ResourceRepositoryClient` object’s `writeResource` method and pass in the URI of the folder, as well as the `Resource` object.
+   Invoke the `ResourceRepositoryClient` object’s `writeResource` method and pass in the URI of the folder, and the `Resource` object.
 
 **See also**
 
@@ -348,7 +348,7 @@ Write a resource by using the Repository service API (web service):
 
 1. Write the resource to the target folder
 
-   Invoke the `RepositoryServiceService` object’s `writeResource` method and pass in the URI of the folder, as well as the `Resource` object. Pass `null` for the other two parameters.
+   Invoke the `RepositoryServiceService` object’s `writeResource` method and pass in the URI of the folder, and the `Resource` object. Pass `null` for the other two parameters.
 
 **See also**
 
@@ -710,7 +710,7 @@ You can retrieve related resources to determine dependencies between a form and 
 
 **Query statements**
 
-A *query* contains one or more statements that are logically joined with conditions. A *statement* consists of a left operand, an operator, and a right operand. In addition, you can specify the sort order to be used for the search results. The *sort order* contains information equivalent to an SQL `ORDER BY` clause and is comprised of elements that contain the attributes on which the search was based as well as a value indicating whether ascending or descending order is to be used.
+A *query* contains one or more statements that are logically joined with conditions. A *statement* consists of a left operand, an operator, and a right operand. In addition, you can specify the sort order to be used for the search results. The *sort order* contains information equivalent to an SQL `ORDER BY` clause and is comprised of elements that contain the attributes on which the search was based and a value indicating whether ascending or descending order is to be used.
 
 You can programmatically search for resources by using the Repository service Java API. At this time, it is not possible to use the web service API to search for resources.
 

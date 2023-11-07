@@ -197,7 +197,7 @@ It is primarily meant for customizations, as it provides the capability to gener
         * js:
 
             * libs - Contains all third-party libraries used in AEM Forms workspace.
-            * licenses - Contains licenses for HTML and JS files as well as code to prefix these licenses to respective source files.
+            * licenses - Contains licenses for HTML and JS files and code to prefix these licenses to respective source files.
             * minifier - Used for combination, minification, and uglification of customizedJavaScript code.
             * resourcejs_optimizer - Used for combination, minification, and uglification ofJavaScript source.
             * resource_generator - Used for generating register.js and modelcontrollerpath.js.

@@ -141,7 +141,7 @@ Follow the instructions on the main documentation page: [MSRP - MongoDB Common S
 
 ## Test {#test}
 
-To test and verify the MongoDB common store, post a comment on the publish instance and view it on the author instance, as well as view the UGC in MongoDB and Solr:
+To test and verify the MongoDB common store, post a comment on the publish instance and view it on the author instance, and view the UGC in MongoDB and Solr:
 
 1. On the publish instance, browse to the [Community Components Guide](http://localhost:4503/content/community-components/en/comments.html) page and select the Comments component.
 1. Sign in to post a comment:

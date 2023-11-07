@@ -72,7 +72,7 @@ To create a new translation configuration:
 
 1. Provide the following information in the fields and then click or tap **Create**.
    1. Select **Configuration Type** in the drop-down. Select **Translation Integration** from the list.
-   1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console as well as in page property drop-down lists.
+   1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console and in page property drop-down lists.
    1. Optionally, type a **Name** to use for the repository node that stores the configuration.
 
    ![Create translation configuration](assets/create-translation-configuration.png)

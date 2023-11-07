@@ -1,14 +1,10 @@
 ---
 title: E-mail Marketing
-seo-title: E-mail Marketing
-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
+description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content and add new content, specific to the newsletters.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 ---
@@ -20,7 +16,7 @@ exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 >Adobe is not planning to further enhance E-mail tracking of open/bounces (not deliverable) send by AEM SMTP service.
 >Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
-E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
+E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content and add new content, specific to the newsletters.
 
 Once created, you can send newsletters to the specific group of users either immediately or at another scheduled time (through the use of a workflow). In addition, users can subscribe to newsletters in the format that they choose.
 

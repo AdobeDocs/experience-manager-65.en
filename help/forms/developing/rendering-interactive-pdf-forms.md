@@ -70,7 +70,7 @@ This form is rendered by the sample loan application's `HandleData` Java Servlet
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-The `HandleData` Java Servlet prepopulates this form with the user's first and last name as well as the amount. After the form is prepopulated, it is sent to the client web browser. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+The `HandleData` Java Servlet prepopulates this form with the user's first and last name and the amount. After the form is prepopulated, it is sent to the client web browser. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
 **Java Servlets**
 

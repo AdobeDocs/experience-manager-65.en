@@ -96,4 +96,4 @@ There are some situations in which the page diff may not detect a difference as 
 
 >[!NOTE]
 >
->For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.
+>For more details about the operation of the page diff mechanism and limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.

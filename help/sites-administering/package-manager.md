@@ -62,7 +62,7 @@ Package Manager is divided into four main functional areas:
 * **Activity Log** - This panel is minimized at first and expands to detail the activity of Package Manager such as when a package is built or installed. There are additional buttons in the Activity Log tab to:
   * **Clear Log**
   * **Show/Hide**
-* **Toolbar** - The toolbar contains refresh buttons for the Left Navigation Panel and Package list as well as buttons for searching, creating, and uploading packages.
+* **Toolbar** - The toolbar contains refresh buttons for the Left Navigation Panel and Package list and buttons for searching, creating, and uploading packages.
 
 ![Package Manager UI](assets/package-manager-ui.png)
 

@@ -166,7 +166,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    To repeat the static text along with the DD elements, you need to apply repeat as explained in the further steps.
 
-1. Select the static text as well as the DD elements that you want to repeat, as shown below:
+1. Select the static text and the DD elements that you want to repeat, as shown below:
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 

@@ -17,4 +17,4 @@ With scaffolding you can create a form (a scaffold) with fields that reflect the
 
 >[!NOTE]
 >
->Although there is a Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) available, the maintenance and creation of scaffolds as well as creating new pages from scaffolds is done in the classic UI. See [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in the classic UI authoring documentation for details.
+>Although there is a Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) available, the maintenance and creation of scaffolds and creating new pages from scaffolds is done in the classic UI. See [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in the classic UI authoring documentation for details.

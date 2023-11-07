@@ -155,7 +155,7 @@ By default, [!DNL Experience Manager] runs a maximum number of parallel jobs equ
 
 1. Update the value of **[!UICONTROL Maximum Parallel Jobs]** and click **[!UICONTROL Save]**.
 
-Setting a queue to half of the available processors is a workable solution to start with. However, you may have to increase or decrease this number to achieve maximum throughput and tune it by environment. There are separate queues for transient and non-transient workflows as well as other processes, such as external workflows. If several queues set to 50% of the processors are active simultaneously, the system can get overloaded quickly. The queues that are heavily used vary greatly across user implementations. Therefore, you may have to configure them thoughtfully for maximum efficiency without sacrificing server stability.
+Setting a queue to half of the available processors is a workable solution to start with. However, you may have to increase or decrease this number to achieve maximum throughput and tune it by environment. There are separate queues for transient and non-transient workflows and other processes, such as external workflows. If several queues set to 50% of the processors are active simultaneously, the system can get overloaded quickly. The queues that are heavily used vary greatly across user implementations. Therefore, you may have to configure them thoughtfully for maximum efficiency without sacrificing server stability.
 
 ### DAM Update Asset configuration {#dam-update-asset-configuration}
 

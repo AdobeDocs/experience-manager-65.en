@@ -379,7 +379,7 @@ You can use the Output service to create a PDF/A document. Because PDF/A is an a
 
 The PDF/A-1 specification consists of two levels of conformance, namely a and b. The major difference between the two is regarding the logical structure (accessibility) support, which is not required for conformance level b. Regardless of the conformance level, PDF/A-1 dictates that all fonts are embedded in the generated PDF/A document.
 
-Although PDF/A is the standard for archiving PDF documents, it is not mandatory that PDF/A be used for archiving if a standard PDF document meets your company's needs. The purpose of the PDF/A standard is to establish a PDF file that can be stored for a long period of time as well as meet document preservation requirements. For example, a URL cannot be embedded in a PDF/A because over time the URL may become invalid.
+Although PDF/A is the standard for archiving PDF documents, it is not mandatory that PDF/A be used for archiving if a standard PDF document meets your company's needs. The purpose of the PDF/A standard is to establish a PDF file that can be stored for a long period of time and meet document preservation requirements. For example, a URL cannot be embedded in a PDF/A because over time the URL may become invalid.
 
 Your organization must assess its own needs, the length of time you intend to keep the document, file size considerations, and determine your own archiving strategy. You can programmatically determine if a PDF document is PDF/A compliant by using the DocConverter service. (See [Programmatically Determining PDF/A Compliancy](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 

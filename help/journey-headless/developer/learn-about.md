@@ -90,7 +90,7 @@ Headless opens up a world of flexibility for delivering your digital experiences
 
 Having many different channels can mean that they each have their own presentation systems. Even though they all consume the same content through the same APIs, the experience can be different because of the different presentations. Concern and care must be given to ensuring the consistency of the customer experience.
 
-By implementing careful design systems, sharing pattern libraries, and leveraging reusable design components as well as established, open client-side frameworks, consistent experiences can be ensured, but this must be planned.
+By implementing careful design systems, sharing pattern libraries, and leveraging reusable design components and established, open client-side frameworks, consistent experiences can be ensured, but this must be planned.
 
 ## The Future is Headless and the Future is Now {#future}
 

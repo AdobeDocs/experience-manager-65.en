@@ -69,7 +69,7 @@ By being faster, fluid, and more like a native application, a SPA becomes a very
 **Developers**
 
 * Developers want a clean separation of concerns between content and presentation.
-* Clean separation makes the system more extensible as well as allow for independent front-end development.
+* Clean separation makes the system more extensible and allow for independent front-end development.
 
 ### How Does a SPA Work? {#how-does-a-spa-work}
 
@@ -177,7 +177,7 @@ The next section, [Loading an SPA Application,](#loading-an-spa-application) dig
 
 1. Switch to the **Network** tab of the developer tools and reload the page.
 
-   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React JavaScript, its dependencies, as well as JSON data for the page.
+   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React JavaScript, its dependencies, and JSON data for the page.
 
    ![Step 5](assets/spa-walkthrough-step-1-5.png)
 
@@ -207,7 +207,7 @@ The next section, [Loading an SPA Application,](#loading-an-spa-application) dig
 
 ### Interaction with the SPA Editor {#interaction-with-the-spa-editor}
 
-Using the sample WKND SPA Project application, it is clear how the app behaves and is loaded when published, leveraging content services for JSON content delivery as well as asynchronous loading of resources.
+Using the sample WKND SPA Project application, it is clear how the app behaves and is loaded when published, leveraging content services for JSON content delivery and asynchronous loading of resources.
 
 Additionally, for the content author, content creation using a SPA editor is seamless within AEM.
 
@@ -246,4 +246,4 @@ Now that you understand the SPA editing experience in AEM and how a SPA relates 
 
 * [Getting Started with SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) shows how a basic SPA is built to work with the SPA Editor in AEM
 * [SPA Editor Overview](/help/sites-developing/spa-overview.md) goes into more depth into the communication model between AEM and the SPA.
-* [Developing SPAs for AEM](/help/sites-developing/spa-architecture.md) describes how to engage front-end developers to develop a SPA for AEM as well as how SPAs interact with AEM's architecture.
+* [Developing SPAs for AEM](/help/sites-developing/spa-architecture.md) describes how to engage front-end developers to develop a SPA for AEM and how SPAs interact with AEM's architecture.

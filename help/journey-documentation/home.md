@@ -33,7 +33,7 @@ If you want to know how Adobe recommends how to solve a business case with AEM, 
 
 ## How is a Documentation Journey Structured? {#structure}
 
-A Documentation Journey serves as a best practices-based introduction to how AEM solves common business problems. For this reason, each journey is designed with readers new to AEM in mind, laying out the business problem, describing any necessary theory, and then giving a step-by-step overview of how AEM solves the problem. Because of the comprehensive nature of a journey, it can be useful to readers new to AEM as well as experienced users.
+A Documentation Journey serves as a best practices-based introduction to how AEM solves common business problems. For this reason, each journey is designed with readers new to AEM in mind, laying out the business problem, describing any necessary theory, and then giving a step-by-step overview of how AEM solves the problem. Because of the comprehensive nature of a journey, it can be useful to readers new to AEM and experienced users.
 
 A typical Documentation Journey has the following parts.
 

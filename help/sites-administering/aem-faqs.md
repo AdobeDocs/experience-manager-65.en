@@ -61,7 +61,7 @@ The Content Services are based on the Sling Models and the AEM developers must p
 
 To understand how to consume AEM content services from a React application, see [Get Started with AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) tutorial.
 
-Also, if the developers want to export a tree of components they can also implement the `ComponentExporter` and `ContainerExporter` interfaces as well as use the `ModelFactory` to iterate over the child components and return their model representation. See the resources below:
+Also, if the developers want to export a tree of components they can also implement the `ComponentExporter` and `ContainerExporter` interfaces and use the `ModelFactory` to iterate over the child components and return their model representation. See the resources below:
 
 [1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 

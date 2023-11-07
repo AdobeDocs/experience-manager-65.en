@@ -100,7 +100,7 @@ Complete the following steps to add a custom property to all the asset types and
 
    >[!NOTE]
    >
-   >The common properties for all assets that you add appear in the basic tab of the asset properties. By default, the common properties added for all assets appear on the properties page as well as the asset creation page. To hide the common properties, you need to <!--link to show / hide properties]-->.
+   >The common properties for all assets that you add appear in the basic tab of the asset properties. By default, the common properties added for all assets appear on the properties page and the asset creation page. To hide the common properties, you need to <!--link to show / hide properties]-->.
 
 ### Scenario: Add custom drop-down and values to a custom property/field {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 

@@ -17,7 +17,7 @@ Media handlers are services in [!DNL Assets] that perform specific actions on as
 
 >[!NOTE]
 >
->See the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by [!DNL Assets] as well as features supported for each format.
+>See the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by [!DNL Assets] and features supported for each format.
 
 ## Default media handlers {#default-media-handlers}
 

@@ -21,7 +21,7 @@ HTML5 forms use the ARIA HTML5 accessibility standard to generate accessible HTM
 
 AEM Forms Designer includes a number of Speak Text options that can be passed to screen readers. For each object in a form, the user can specify one of several settings for the screen reader text:
 
-* Custom screen reader text, which can be set using the Accessibility palette. Authors can annotate the names of buttons and fields, as well as their purpose.
+* Custom screen reader text, which can be set using the Accessibility palette. Authors can annotate the names of buttons and fields, and their purpose.
 * Tool tips, which can be set in the Accessibility palette.
 * Captions for fields on the form.
 * Names of objects, as specified in the Name option of the Binding tab.

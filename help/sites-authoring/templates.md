@@ -1,14 +1,10 @@
 ---
 title: Creating Page Templates
-seo-title: Creating Page Templates
 description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
-seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
-uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 ---
@@ -312,7 +308,7 @@ The following aspects of a template can be edited:
 
   >[!NOTE]
   >
-  >In **Initial Content** mode as well as on the resultant pages, any unlocked components that have an accessible parent (i.e. components within a layout container) can be deleted.
+  >In **Initial Content** mode and on the resultant pages, any unlocked components that have an accessible parent (i.e. components within a layout container) can be deleted.
 
 * [Layout](#editingatemplatelayout)
 

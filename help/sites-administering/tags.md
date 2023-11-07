@@ -304,6 +304,6 @@ To add a new language to the dialog, see [Adding a New Language to the Edit Tag 
 
 * [Tagging for Developers](/help/sites-developing/tags.md)
 
-  Information about the tagging framework as well as extending and including tags in custom applications.
+  Information about the tagging framework and extending and including tags in custom applications.
 
 * [Classic UI Tagging Console](/help/sites-administering/classic-console.md)

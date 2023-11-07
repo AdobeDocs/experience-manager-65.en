@@ -105,7 +105,7 @@ If you wish to use the Style System for your own components do the following:
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary JavaScript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) to work.
+>The CSS classes (and any necessary JavaScript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) to work.
 
 ## Setup {#setup}
 

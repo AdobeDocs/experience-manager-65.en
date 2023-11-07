@@ -93,7 +93,7 @@ These options configure the permissions:
 
 **None:** Prevents users from changing the document, including filling signature and form fields.
 
-**Inserting, Deleting, And Rotating Pages:** Lets users insert, delete, and rotate pages, as well as create bookmarks and thumbnail pages. This option is available only if a high encryption level (Acrobat 5.0, 6.0, 7.0, or 9.0) is selected.
+**Inserting, Deleting, And Rotating Pages:** Lets users insert, delete, and rotate pages, and create bookmarks and thumbnail pages. This option is available only if a high encryption level (Acrobat 5.0, 6.0, 7.0, or 9.0) is selected.
 
 **Filling In Form Fields And Signing Existing Signature&#xA;Fields:** Lets users fill forms and add digital signatures. However, users cannot add comments or create form fields. This option is available only if a high encryption level (Acrobat 5.0, 6.0, 7.0, or 9.0) is selected.
 

@@ -180,7 +180,7 @@ See the [additional resources](#additional-resources) section for additional doc
 Folder hierarchy can address two major concerns with regards to content management:
 
 * [Translation](#translation) - AEM manages translation of content by maintaining copies of content in locale-specific folders.
-* Organization - Folders are used to define a content hierarchy required to support translation needs as well as logically manage Content Fragments.
+* Organization - Folders are used to define a content hierarchy required to support translation needs and logically manage Content Fragments.
 
 AEM allows for a flexible content structure and a hierarchy can be arbitrarily large. However it is important to realize that any changes in folder structure may have unintended consequences for existing queries that [rely on the content path.](#developer) Therefore a well-defined hierarchy that is clearly set out in advance, can be helpful to your content authors.
 

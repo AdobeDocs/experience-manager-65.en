@@ -11,7 +11,7 @@ exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
 This document describes the following:
 
 * Why you would create customized Asset Editor pages.
-* How to create and customize Asset Editor pages, which are WCM pages that let you view and edit metadata as well as perform actions on the asset.
+* How to create and customize Asset Editor pages, which are WCM pages that let you view and edit metadata and perform actions on the asset.
 * How to edit multiple assets simultaneously.
 
 <!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->

@@ -29,7 +29,7 @@ The following illustration shows three source documents being merged into a sing
 
 Assembling a simple PDF document from multiple PDF documents
 
-The following example is a simple DDX document used to assemble the document. It specifies the names of the source documents used to produce the resultant document, as well as the name of the resultant document:
+The following example is a simple DDX document used to assemble the document. It specifies the names of the source documents used to produce the resultant document, and the name of the resultant document:
 
 ```xml
 <PDF result="Doc4">

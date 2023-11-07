@@ -241,7 +241,7 @@ When the content author updates this component, a new `text_20` node is created 
 
 #### Requirements and Limitations {#limitations}
 
-There are several requirements to add virtual leaf components as well as some limitations.
+There are several requirements to add virtual leaf components and some limitations.
 
 * The `pagePath` property is mandatory for creating a virtual component.
 * The page node provided at the path in `pagePath` must exist in the AEM project.
@@ -280,7 +280,7 @@ More components and content can be added to the container now as the author requ
 
 #### Requirements and Limitations {#container-limitations}
 
-There are several requirements to add virtual containers as well as some limitations.
+There are several requirements to add virtual containers and some limitations.
 
 * The policy for determining which components can be added will be inherited from the parent container.
 * The immediate parent of the container to be created must already exist in AEM.

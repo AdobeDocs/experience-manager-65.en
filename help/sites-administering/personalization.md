@@ -174,4 +174,4 @@ Without Communities extension, various methods to explore for addressing the iss
 * Synchronize the multiple publish instances when necessary
 * Send the UGC from the publish instance to the author environment, from where it can be published in a manner similar to publishing page content
 
-The method used to achieve UGC consistency across a publish environment consisting of multiple publish instances should be carefully designed and tested for performance as well as consistency.
+The method used to achieve UGC consistency across a publish environment consisting of multiple publish instances should be carefully designed and tested for performance and consistency.

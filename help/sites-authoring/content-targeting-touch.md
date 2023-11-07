@@ -434,7 +434,7 @@ You can change the percentages as long as they add up to 100 percent. An audienc
 
 ## Goals & Settings: Configuring the Activity and Setting Goals {#goals-settings-configuring-the-activity-and-setting-goals}
 
-The Goals & Settings step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Specify when the activity starts and ends, as well as the activity priority. In addition, you also track goals. Specifically you can decide what you want to measure with your activities.
+The Goals & Settings step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Specify when the activity starts and ends, and the activity priority. In addition, you also track goals. Specifically you can decide what you want to measure with your activities.
 
 Goal Metrics are only available if you use Adobe Target for your targeting engine. You must define at least one goal metric. If you have Adobe Analytics configured and have an A4T Analytics cloud configuration, you can select whether you want the reporting source to be Adobe Target or Adobe Analytics.
 

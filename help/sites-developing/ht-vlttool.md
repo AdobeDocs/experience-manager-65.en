@@ -9,9 +9,9 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 ---
 # How to Use the VLT Tool {#how-to-use-the-vlt-tool}
 
-The Jackrabbit FileVault tool (VLT) is a tool developed by [The Apache Foundation](https://www.apache.org/) that maps the content of a Jackrabbit/AEM instance to your file system. The VLT tool has similar functions as source control system client (such as a Subversion (SVN) client), providing normal check-in, check-out and management operations, as well as configuration options for flexible representation of the project content.
+The Jackrabbit FileVault tool (VLT) is a tool developed by [The Apache Foundation](https://www.apache.org/) that maps the content of a Jackrabbit/AEM instance to your file system. The VLT tool has similar functions as source control system client (such as a Subversion (SVN) client), providing normal check-in, check-out and management operations, and configuration options for flexible representation of the project content.
 
-You run the VLT tool from the command line. This document describes how to use the tool, including how to get started and get help, as well as a list of all [commands](#vlt-commands) and available [options](#vlt-global-options).
+You run the VLT tool from the command line. This document describes how to use the tool, including how to get started and get help, and a list of all [commands](#vlt-commands) and available [options](#vlt-global-options).
 
 ## Concepts and Architecture {#concepts-and-architecture}
 

@@ -58,7 +58,7 @@ Users can create or edit personal policies for their own use. Administrators and
 
 ### Considerations for editing policies {#considerations-for-editing-policies}
 
-When you edit a policy, the changes affect documents that the policy currently protects, as well as documents that the policy protect thereafter. For example, if you remove recipients from a policy that is currently applied to a document, the recipients can no longer open the document.
+When you edit a policy, the changes affect documents that the policy currently protects, and documents that the policy protect thereafter. For example, if you remove recipients from a policy that is currently applied to a document, the recipients can no longer open the document.
 
 The status of the document determines when the change takes effect:
 

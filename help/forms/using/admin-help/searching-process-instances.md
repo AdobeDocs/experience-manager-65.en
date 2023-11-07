@@ -44,7 +44,7 @@ You can enter specific attributes to perform a detailed search. A detailed searc
     * In the Filter list, select an operator.
     * In the Value box, type a value appropriate to the attribute you selected.
 
-1. To add another row, select More Filters. Another set of Attribute, Filter, and Value lists appears, as well as a Condition list.
+1. To add another row, select More Filters. Another set of Attribute, Filter, and Value lists appears, and a Condition list.
 1. Under Condition, select AND or OR. Repeat steps 1 - 3 as required to narrow your search further.
 1. To add or remove rows, click More Filters or Fewer Filters. You can have from one to four rows.
 1. Click Search. The Process Instance page appears, listing the found instances.

@@ -15,7 +15,7 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 
 ## Overview {#overview}
 
-The authoring section of the documentation describes adding Communities features to AEM sites in author edit mode, as well as describing component configurations.
+The authoring section of the documentation describes adding Communities features to AEM sites in author edit mode, and describing component configurations.
 
 Components may be explored using an AEM instance and the interactive [Community Components guide](components-guide.md).
 

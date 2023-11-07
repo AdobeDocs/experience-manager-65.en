@@ -28,7 +28,7 @@ AEM lets you easily personalize your users' experience. It also lets you verify 
 
 ## Accessing Segments {#accessing-segments}
 
-The [Audiences](/help/sites-authoring/managing-audiences.md) console is used to manage segments for ContextHub or Client Context as well as audiences for your Adobe Target account. This documentation covers managing segments for ContextHub. For [Client Context segments](/help/sites-administering/campaign-segmentation.md) and Adobe Target segments, please see the relevant documentation.
+The [Audiences](/help/sites-authoring/managing-audiences.md) console is used to manage segments for ContextHub or Client Context and audiences for your Adobe Target account. This documentation covers managing segments for ContextHub. For [Client Context segments](/help/sites-administering/campaign-segmentation.md) and Adobe Target segments, please see the relevant documentation.
 
 To access your segments you need to select your configuration. In global navigation select **Navigation &gt; Personalization &gt; Audiences**. You will see the available configurations:
 
@@ -135,7 +135,7 @@ To define your new segment:
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment as well as a boost value if required and then tap or click **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if required and then tap or click **Create**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 

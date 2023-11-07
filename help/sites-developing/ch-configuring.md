@@ -97,7 +97,7 @@ The UI module properties include a detail configuration where you can provide va
 | [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) |Displays information about the browser |surferinfo |
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) |Displays date and time information |datetime |
 | [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) |Display the client device |emulators |
-| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) |Displays the latitude and longitude of the client, as well as the location on a map. Enables you to change the location. |geolocation |
+| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) |Displays the latitude and longitude of the client, and the location on a map. Enables you to change the location. |geolocation |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) |Displays the screen orientation of the device (landscape or portrait) |emulators |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) |Displays statistics about page tags |tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) |Displays the profile information for the current user, including authorizableID, displayName and familyName. You can change the value of displayName and familyName. |profile |

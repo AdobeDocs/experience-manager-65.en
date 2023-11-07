@@ -228,7 +228,7 @@ When a project is created using the Resources pane of a page, these properties a
 
 ## Monitoring the Status of a Translation Job {#monitoring-the-status-of-a-translation-job}
 
-The Translation Job tile of a Translation project provides the status of a translation job, as well as the number of pages and assets in the job.
+The Translation Job tile of a Translation project provides the status of a translation job, and the number of pages and assets in the job.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -419,7 +419,7 @@ If an already translated source page needs to be [renamed or moved](/help/sites-
 1. Using the **References** panel, select **Launches**.
 1. Click on the Launch that was just created and click **Promote launch**.
 
-Now the source page was moved, as well as the associated language copy.
+Now the source page was moved, and the associated language copy.
 
 ## Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
 

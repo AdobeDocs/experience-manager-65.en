@@ -425,7 +425,7 @@ You can set the number of failure attempts and subsequent lock-out time that AEM
 
 ### Auditing and logging {#auditing-and-logging}
 
-The proper and secure use of application auditing and logging can help ensure that security and other anomalous events are tracked and detected as quickly as possible. Effective use of auditing and logging within an application includes such items as tracking successful and failed logins, as well as key application events such as the creation or deletion of key records.
+The proper and secure use of application auditing and logging can help ensure that security and other anomalous events are tracked and detected as quickly as possible. Effective use of auditing and logging within an application includes such items as tracking successful and failed logins, and key application events such as the creation or deletion of key records.
 
 You can use auditing to detect many types of attacks, including these:
 
