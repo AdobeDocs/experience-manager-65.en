@@ -357,7 +357,7 @@ The plugins directory is populated by each plugin listed in the `.cordova/hooks/
 
 #### www/ {#www}
 
-The www directory contains all of the web content (HTML, JS, and CSS files) that implements the appearance and behaviour of the app. Except for the exceptions described below, this content originates from AEM and is exported into its static form via Content Sync.
+The www directory contains all the web content (HTML, JS, and CSS files) that implements the appearance and behaviour of the app. Except for the exceptions described below, this content originates from AEM and is exported into its static form via Content Sync.
 
 #### www/config.xml {#www-config-xml}
 

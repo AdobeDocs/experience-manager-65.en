@@ -1,12 +1,10 @@
 ---
 title: Configure service settings
 description: Learn how to configure service settings. You can use Service Management page for configuring the settings for each of the services that are part of AEM forms. 
-uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 ---
 # Configure service settings {#configure-service-settings}
@@ -20,7 +18,7 @@ You can use the Service Management page to configure settings for each of the se
 
    >[!NOTE]
    >
-   >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See "Configuration parameters" in the [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) 
+   >Not all the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See "Configuration parameters" in the [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) 
 
 
 1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying-security-settings-for-a-service).
@@ -53,7 +51,7 @@ The following settings are available for the barcoded forms service.
 
 >[!NOTE]
 >
->By default, all of the options are selected. Deselect an option only if you are certain that no barcodes appear that way on your forms.
+>By default, all the options are selected. Deselect an option only if you are certain that no barcodes appear that way on your forms.
 
 **Base File Path:** The file path relative to which the batch input and output file parameters for the Run XML File Job and Run Flat File Job operations are resolved. In clustered configurations, the base file path must be a shared file system location to which all cluster nodes have read/write access.
 
@@ -151,7 +149,7 @@ New settings can be created through the PDF Generator user interface.
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Deprecated) is a content management system installed with LiveCycle. It enables users to design, manage, monitor, and optimize human-centric processes. Content Services (Deprecated) support ends on 12/31/2014. See [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). 
+>Adobe&reg; LiveCycle&reg; Content Services ES (Deprecated) is a content management system installed with LiveCycle. It enables users to design, manage, monitor, and optimize human-centric processes. Content Services (Deprecated) support ends on 12/31/2014. See [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). 
 
 The Document Management service ( `DocumentManagementService`) enables processes to use the content management functionality provided by Content Services (Deprecated). Document Management operations provide basic tasks that are required to maintain spaces and content in the content management system. Examples of such tasks are copy, delete, move, retrieve, and store content, create spaces and associations, and get and set content attributes.
 
@@ -253,7 +251,7 @@ The following settings are available for the Generate PDF service.
 
 **Enable Acrobat-based AutoCAD Conversions (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all DWG to PDF conversions. This setting is useful only if AutoCAD is not installed on the server or the AutoCAD conversion mechanism is unable to convert files successfully.
 
-**Regular Expressions For Finding Out Prohibited Special&#xA;Characters In User Name (Windows Only):** Specifies characters that interfere with the Export PDF and Optimize PDF operations when the characters appear in a user’s name.
+**Regular Expressions For Finding Out Prohibited Special&#xA;Characters In User Name (Windows Only):** Specifies characters that interfere with the Export PDF and Optimize PDF operations when the characters appear in a user's name.
 
 **ImageToPDF Pool Size:** The pool size of the default (pure Java) Image-to-PDF converter in the Generate PDF service. This setting controls the maximum simultaneous Image-to-PDF conversions that the Generate PDF service can perform. The default value of this setting (recommended for single-processor systems) is 3, which you can increase on multi-processor systems.
 
@@ -419,19 +417,19 @@ The following settings are available for the Microsoft SharePoint configuration 
 
 **Tasks Application:** Enables the Tasks feature in the mobile client applications. When this option is selected, users can access their task lists and complete tasks from their mobile devices.
 
-**Content Services Application:** Enables the Content Services feature in the mobile client application. This feature is available only for iOS. When this option is selected, iPhone and iPad users can access files that are stored in your organizations’s WebDAV server.
+**Content Services Application:** Enables the Content Services feature in the mobile client application. This feature is available only for iOS. When this option is selected, iPhone and iPad users can access files that are stored in your organizations's WebDAV server.
 
 **Offline Support:** Enables users to continue using the mobile client applications even when they do not have a connection to the server (for example, when they are out of cell range or in airplane mode). Users must also enable the Offline Support setting on their mobile devices. This feature is available for Android and iOS devices. By default, this feature is off.
 
 >[!NOTE]
 >
->If Offline support has been enabled and then you disable it, the users’ provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.
+>If Offline support has been enabled and then you disable it, the users' provisioning profiles are updated immediately, or as soon as they are online. If a user has been working offline, all pending tasks are returned to their Tasks list and all items in their Queue, including pending forms, tasks, and forms containing validation errors, are deleted from the Queue.
 
 **Android:** Allows Android devices to connect to the server.
 
 **Apple iOS:** Allows iPhones and iPads to connect to the server.
 
-**AIR:** Allows devices running apps based on Adobe AIR® to connect to the server.
+**AIR:** Allows devices running apps based on Adobe AIR&reg; to connect to the server.
 
 **BlackBerry:** Allows BlackBerry devices to connect to the server.
 
@@ -658,7 +656,7 @@ The following settings are available for the Signature service.
 
 **Go Online:** Specifies whether to go online to do revocation checking. The default value is true.
 
-**Ignore the response’s thisUpdate and nextUpdate times:** Specifies whether to ignore the response's thisUpdate and nextUpdate times, which prevents these times from having a negative effect on response validity. The default value is false.
+**Ignore the response's thisUpdate and nextUpdate times:** Specifies whether to ignore the response's thisUpdate and nextUpdate times, which prevents these times from having a negative effect on response validity. The default value is false.
 
 **Allow OCSPNoCheck extension:** Specifies whether the OCSPNoCheck extension is allowed in the response signing certificate. The default value is true.
 
@@ -741,7 +739,7 @@ If the path is not absolute but relative, the folder is created inside the watch
 
 The Web Service service ( `WebService`) enables processes to invoke web service operations.
 
-The Web Service service enables processes to invoke web service operations. For example, an organization may want to integrate a process to store and retrieve information such as contact and account details by invoking a service provider’s exposed web services. The Web Service service invokes a specified web service and passes through values for each of its parameters. It then saves the return values from the operation into a designated variable within a process.
+The Web Service service enables processes to invoke web service operations. For example, an organization may want to integrate a process to store and retrieve information such as contact and account details by invoking a service provider's exposed web services. The Web Service service invokes a specified web service and passes through values for each of its parameters. It then saves the return values from the operation into a designated variable within a process.
 
 The Web Service service interacts with web services by sending and receiving SOAP messages. The service also supports sending MIME, MTOM, and SwaRef attachments with SOAP messages by using the WS-Attachment protocol. The Web Service service interactions are compatible with SAP systems and .NET web services.
 

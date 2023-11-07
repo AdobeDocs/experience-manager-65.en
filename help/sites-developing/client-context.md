@@ -501,7 +501,7 @@ The context store component requires an edit dialog. The geoloc edit dialog cont
 
 1. Right-click the `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` node and click Copy.
 1. Right-click the `/apps/myapp/contextstores/geoloc` node and click paste.
-1. Delete all of the child nodes below the /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items node:
+1. Delete all the child nodes below the /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items node:
 
     * store
     * properties

@@ -1507,7 +1507,7 @@ To modify a watermark, you must retrieve an existing watermark. You can retrieve
 
 **Set the watermarks attributes**
 
-To modify an existing watermark, change the value of one or more watermark attributes. When programmatically updating a watermark using a web service, you must set all of the attributes that were originally set, even if the value does not change. For example, assume the following watermark attributes are set: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`, and `WaterBackCmd:SRCTEXT`. Although the only attribute that you want to modify is `WaterBackCmd:OPACITY`, you must set the other values are well.
+To modify an existing watermark, change the value of one or more watermark attributes. When programmatically updating a watermark using a web service, you must set all the attributes that were originally set, even if the value does not change. For example, assume the following watermark attributes are set: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`, and `WaterBackCmd:SRCTEXT`. Although the only attribute that you want to modify is `WaterBackCmd:OPACITY`, you must set the other values are well.
 
 >[!NOTE]
 >

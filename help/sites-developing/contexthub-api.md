@@ -424,7 +424,7 @@ An object that represents the raw response.
 
 #### getServiceDetails() {#getservicedetails}
 
-Retrieves the service object for this ContextHub.Store.JSONPStore object. The service object contains all of the information required to create the service URL.
+Retrieves the service object for this ContextHub.Store.JSONPStore object. The service object contains all the information required to create the service URL.
 
 **Returns**
 
@@ -508,15 +508,15 @@ Resolves the given parameter.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-ContextHub.Store.PersistedJSONPStore extends [ContextHub.Store.JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore) so it inherits all of the functions of that class. However, the data that is retrieved from the JSONP service is persisted according to the configuration of ContextHub persistence. (See [Persistence Modes](/help/sites-developing/ch-adding.md#persistence-modes).)
+ContextHub.Store.PersistedJSONPStore extends [ContextHub.Store.JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore) so it inherits all the functions of that class. However, the data that is retrieved from the JSONP service is persisted according to the configuration of ContextHub persistence. (See [Persistence Modes](/help/sites-developing/ch-adding.md#persistence-modes).)
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-ContextHub.Store.PersistedStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) so it inherits all of the functions of that class. The data in this store is persisted according to the configuration of ContextHub persistence.
+ContextHub.Store.PersistedStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) so it inherits all the functions of that class. The data in this store is persisted according to the configuration of ContextHub persistence.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) so it inherits all of the functions of that class. The data in this store is persisted using in-memory persistance (JavaScript object).
+ContextHub.Store.SessionStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) so it inherits all the functions of that class. The data in this store is persisted using in-memory persistance (JavaScript object).
 
 ## ContextHub.UI {#contexthub-ui}
 

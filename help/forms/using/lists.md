@@ -206,7 +206,7 @@ The Find and Replace feature lets you search for (and replace) any string of tex
 
 ## List {#list}
 
-A list is a group of document fragments, including text, (other) lists, conditions, and images. The order of the list elements can be fixed or editable. While creating a letter, you can use some or all of the list elements to replicate a reusable pattern of elements. Lists basically behave as targets that can be nested within other targets.
+A list is a group of document fragments, including text, (other) lists, conditions, and images. The order of the list elements can be fixed or editable. While creating a letter, you can use some or all list elements to replicate a reusable pattern of elements. Lists basically behave as targets that can be nested within other targets.
 
 ### Implementing lists {#implementing-lists}
 

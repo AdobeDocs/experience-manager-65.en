@@ -39,7 +39,7 @@ If the repository has been configured with an external data store, [data store g
 
 The data store garbage collector first makes a note of the current timestamp when the process begins. The collection is then carried out using a multi-pass mark/sweep pattern algorithm.
 
-In the first phase, the data store garbage collector performs a comprehensive traversal of all of the repository content. For each content object that has a reference to a data store record, it located the file in the filesystem, performing a metadata update -- modifying the "last modified" or MTIME attribute. At this point files that are accessed by this phase become newer than the initial baseline timestamp.
+In the first phase, the data store garbage collector performs a comprehensive traversal of all the repository content. For each content object that has a reference to a data store record, it located the file in the filesystem, performing a metadata update -- modifying the "last modified" or MTIME attribute. At this point files that are accessed by this phase become newer than the initial baseline timestamp.
 
 In the second phase, the data store garbage collector traverses the physical directory structure of the data store in much the same way as a "find". It examined the "last modified" or MTIME attribute of the file and makes the following determination:
 

@@ -80,7 +80,7 @@ In the table below, you can find the relevant help parameters.
   </tr>
   <tr>
    <td>--help_full</td>
-   <td>Prints all of the above, plus tests, publishers and suite components.</td>
+   <td>Prints all the above, plus tests, publishers and suite components.</td>
    <td> </td>
   </tr>
   <tr>

@@ -199,7 +199,7 @@ These, in conjunction with standard functionality, enable you to:
 
 * **Hide children of a node (while keeping the properties of the node)**
 
-  The node, its properties and its children are defined in `/libs`. The node and its properties are required in the `/apps` overlay/override, but some or all of the child nodes are not required in the `/apps` overlay/override.
+  The node, its properties and its children are defined in `/libs`. The node and its properties are required in the `/apps` overlay/override, but some or all the child nodes are not required in the `/apps` overlay/override.
 
     1. Create the corresponding node under `/apps`
     1. Create the property `sling:hideChildren`:

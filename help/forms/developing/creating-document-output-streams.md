@@ -1632,7 +1632,7 @@ Send a print stream to a network printer by using the Output API (web service):
 
 The Output service can create separate documents for each record within an XML data source or a single file that contains all records (this functionality is the default). For example, assume that ten records are located within an XML data source and you instruct the Output service to create separate PDF documents (or other types of output) for each record by using the Output Service API. As a result, the Output service generates ten PDF documents. (Instead of creating documents, you can send multiple print streams to a printer.)
 
-The following illustration also shows the Output service processing an XML data file that contains multiple records. However, assume that you instruct the Output service to create a single PDF document that contains all data records. In this situation, the Output service generates one document that contains all of the records.
+The following illustration also shows the Output service processing an XML data file that contains multiple records. However, assume that you instruct the Output service to create a single PDF document that contains all the data records. In this situation, the Output service generates one document that contains all the records.
 
 The following illustration shows the Output service processing an XML data file that contains multiple records. Assume that you instruct the Output service to create a separate PDF document for each data record. In this situation, the Output service generates a separate PDF document for each data record.
 

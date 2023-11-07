@@ -54,7 +54,7 @@ Code analysis tools can be valuable, but only if their reports lead to action on
 
 ### Follow the Boy Scout Rule {#follow-the-boy-scout-rule}
 
-The Boy Scouts have a rule: "Leave it better than you found it." As long as all of the members of the development team adhere to this rule and clean something up when they come across a mess, the code will constantly improve.
+The Boy Scouts have a rule: "Leave it better than you found it." As long as all the members of the development team adhere to this rule and clean something up when they come across a mess, the code will constantly improve.
 
 ### Avoid implementing YAGNI features {#avoid-implementing-yagni-features}
 

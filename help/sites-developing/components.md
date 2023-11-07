@@ -73,7 +73,7 @@ There are two sets of Adobe-provided AEM components available:
 
 ### Viewing Available Components {#viewing-available-components}
 
-For an overview of all of the available components in your AEM instance, use the [Components Console](/help/sites-authoring/default-components-console.md).
+For an overview of all the available components in your AEM instance, use the [Components Console](/help/sites-authoring/default-components-console.md).
 
 Alternatively, you can also use CRXDE Lite to get a list of all the components available in the repository.
 

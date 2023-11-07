@@ -104,7 +104,7 @@ The properties file is a text file named marketingcloud.properties that you save
 * target.email: The email address that you use to authenticate your Target account.
 * target.password: The password that is associated with your email address.
 
-Properties and values are separated with equal signs (=). The Analytics properties are prefixed with `analytics`, and the Target properties are prefixed with `target`. To configure a service, provide values for all of the properties for that service. If you do not want to configure a service, provide no values for that service.
+Properties and values are separated with equal signs (=). The Analytics properties are prefixed with `analytics`, and the Target properties are prefixed with `target`. To configure a service, provide values for all the properties for that service. If you do not want to configure a service, provide no values for that service.
 
 The following example `.properties` file includes the property values for creating a cloud configuration for Analytics:
 

@@ -766,7 +766,7 @@ You can configure document security to deny services to applications that meet s
 
 When client applications attempt to establish a link with document security, they supply application, version, and platform information. Document security compares this information against Denials settings it obtains from the document security configuration file.
 
-The Denials settings can contain several sets of denial conditions. If all of the attributes of any one set match, the requesting application is denied access to the document security services.
+The Denials settings can contain several sets of denial conditions. If all the attributes of any one set match, the requesting application is denied access to the document security services.
 
 The denial-of-service feature requires that client applications use the document security C++ Client SDK version 8.2 or later. The following Adobe products provide product information when requesting document security services:
 

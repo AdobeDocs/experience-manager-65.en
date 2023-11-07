@@ -305,7 +305,7 @@ To localize the branding information that you enter in the Document of Record ta
 
    If you choose to select a custom template, browse a select an XDP on your AEM Forms server. If you want to use a template that is not already on your AEM Forms server, you need to first upload the XDP to your AEM Forms server.
 
-1. Based on whether you select a default or a custom template, some or all of the following properties appear in the Document Of Record tab. Specify these appropriately:
+1. Based on whether you select a default or a custom template, some or all the following properties appear in the Document Of Record tab. Specify these appropriately:
 
     * **Logo Image**: You can either choose to use the logo image from the adaptive form, choose one from DAM, or upload one from your computer.
     * **Form Title**

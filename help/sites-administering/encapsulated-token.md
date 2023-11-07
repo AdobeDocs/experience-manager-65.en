@@ -53,7 +53,7 @@ You can see how this works in a geographically distributed deployment with Mongo
 
 There are a few things you need to take into consideration when configuring the Encapsulated Token:
 
-1. Because of the cryptography involved, all of the instances need to have the same HMAC key. Since AEM 6.3, the key material is no longer stored in the repository, but on the actual filesystem. With this in mind, the best way to replicate the keys is to copy them from the filesystem of the source instance to that of the target instance(s) you want to replicate the keys to. See more info under "Replicating the HMAC key" below.
+1. Because of the cryptography involved, all the instances need to have the same HMAC key. Since AEM 6.3, the key material is no longer stored in the repository, but on the actual filesystem. With this in mind, the best way to replicate the keys is to copy them from the filesystem of the source instance to that of the target instance(s) you want to replicate the keys to. See more info under "Replicating the HMAC key" below.
 1. The Encapsulated Token needs to be enabled. This can be done through the Web Console.
 
 ### Replicating the HMAC key {#replicating-the-hmac-key}

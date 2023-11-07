@@ -400,7 +400,7 @@ In addition it is possible to define this role based access on a per portlet ins
 
 ### Customizing the AEM portlet application {#customizing-the-aem-portlet-application}
 
-The provided AEM portlet application starts an OSGi container inside the web application just as AEM does. This architecture lets you make use of all of the benefits of OSGi:
+The provided AEM portlet application starts an OSGi container inside the web application just as AEM does. This architecture lets you make use of all the benefits of OSGi:
 
 * Easy to update and extend
 * Provides hot updates of the portlet without any interaction of the portal server

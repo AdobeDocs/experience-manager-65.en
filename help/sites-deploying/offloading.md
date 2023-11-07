@@ -191,7 +191,7 @@ Jobs are distributed among instances that have the associated topic enabled usin
     * Disabled: This instance does not consume jobs of this topic.
     * Exclusive: This instance consumes jobs only of this topic.
 
-   **Note:** When you select Exclusive for a topic, all of the other topics are automatically set to Disabled.
+   **Note:** When you select Exclusive for a topic, all the other topics are automatically set to Disabled.
 
 ### Installed Job Consumers {#installed-job-consumers}
 
@@ -212,7 +212,7 @@ The Apache Sling Job Consumer Manager service provides topic allow list and bloc
 
 **Note:** If the instance belongs to a topology, you can also use Offloading Browser on any computer in the topology to enable or disable topics.
 
-The logic that creates the list of enabled topics first allows all of the topics that are in the allow list, and then removes topics that are on the block list. By default, all topics are enabled (the allow list value is `*`) and no topics are disabled (the block list has no value).
+The logic that creates the list of enabled topics first allows all the topics that are in the allow list, and then removes topics that are on the block list. By default, all topics are enabled (the allow list value is `*`) and no topics are disabled (the block list has no value).
 
 Use Web Console or a `sling:OsgiConfig` node to configure the following properties. For `sling:OsgiConfig` nodes, the PID of the Job Consumer Manager service is org.apache.sling.event.impl.jobs.JobConsumerManager.
 
@@ -239,7 +239,7 @@ This setup requires the following three agents:
 1. A reverse agent on the author instance that pulls from the outbox on the worker instance.
 1. An outbox agent on the worker instance.
 
-This replication scheme is similar to that used between author and publish instances. However, for the offloading situation all of the instances involved are authoring instances.
+This replication scheme is similar to that used between author and publish instances. However, for the offloading situation all the instances involved are authoring instances.
 
 >[!NOTE]
 >

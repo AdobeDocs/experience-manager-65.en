@@ -1,14 +1,10 @@
 ---
 title: Work Manager and throttling
-seo-title: Work Manager and throttling
 description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
-seo-description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
-uuid: b90998bc-e3d4-493a-9371-55ccb44da20d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 ---
 # Work Manager and throttling{#work-manager-and-throttling}
@@ -28,7 +24,7 @@ AEM forms (and earlier versions) used JMS queues to execute operations asynchron
 Asynchronous operations are handled in this manner:
 
 1. Work Manager receives a work item for execution.
-1. Work Manager stores the work item in a database table and assigns a unique identifier to the work item. The database record contains all of the information required to execute the work item.
+1. Work Manager stores the work item in a database table and assigns a unique identifier to the work item. The database record contains all the information required to execute the work item.
 1. Work Manager threads pull in work items when the threads become free. Before pulling in the work items, threads can check whether the required services are started, whether there is enough heap size to pull in the next work item, and whether there are enough CPU cycles to process the work item. Work Manager also evaluates attributes of the work item (such as its priority) when scheduling its execution.
 
 AEM forms administrators can use Health Monitor to check Work Manager statistics, such as the number of work items in the queue and their statuses. You can also use Health Monitor to pause, resume, retry, or delete work items. (See [View statistics related to Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)

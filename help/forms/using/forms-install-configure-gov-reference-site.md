@@ -47,11 +47,11 @@ The [AEM Forms We.Gov demo package](https://experience.adobe.com/#/downloads/con
         
         * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *AEM Sites Grid layout package for Sites page column control*
 
-    * **we-gov-forms.ui.content-&lt;version&gt;.zip** - *Contains all of the content, pages, images, forms, interactive communication assets, and so on.*
+    * **we-gov-forms.ui.content-&lt;version&gt;.zip** - *Contains all content, pages, images, forms, interactive communication assets, and so on.*
 
     * **we-gov-forms.ui.analytics-&lt;version&gt;.zip** - *Contains all We.Gov Forms Analytics data to be stored within the repository.*
     
-    * **we-gov-forms.config.public-&lt;version&gt;.zip** - *Contains all of the default configuration nodes including placeholder cloud configurations to help avoid forms data model, and service binding issues.*
+    * **we-gov-forms.config.public-&lt;version&gt;.zip** - *Contains all default configuration nodes including placeholder cloud configurations to help avoid forms data model, and service binding issues.*
 
 The assets included in this package include:
 
@@ -621,7 +621,7 @@ Once the configuration is set up users can test it by uploading a PDF document.
 
    ![Advanced conversion settings](assets/aftia-conversion-settings-2.jpg)
 
-1. Select start conversion after you have configured all of the options that you want to use.  
+1. Select start conversion after you have configured all options that you want to use.  
 
 1. As the conversion process begins then users should see the following screen:
 
