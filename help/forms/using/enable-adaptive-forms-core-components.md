@@ -1,8 +1,6 @@
 ---
 title: How to enable Adaptive Forms Core Components on AEM 6.5 Forms?
-seo-title: How to enable Adaptive Forms Core Components on AEM 6.5 Forms?
 description: Step-by-Step guide to help you enable Adaptive Forms Core Components on an AEM 6.5 Forms environment.
-seo-description: Step-by-Step guide to help you enable Adaptive Forms Core Components on an AEM 6.5 Forms environment.
 keywords: Enable Core Components, Core Components Adaptive Forms, Core Components on 6.5, Adaptive Forms Core Components on AEM 6.5, AF Core Components on AEM 6.5, AEM 6.5 Forms Core Components
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
@@ -21,10 +19,9 @@ exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 
 Enabling Adaptive Forms Core Components lets you start creating, publishing, and delivering [Core Components based Adaptive Forms](create-an-adaptive-form-core-components.md) and [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) from your AEM 6.5 Forms environment. 
 
-To enable HAdaptive Forms Core Components on your AEM 6.5 Forms environment, setup and deploy an [AEM Archetype 41 or later](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) based project (with forms options enabled) on all of your Author and Publish instances. 
+To enable Adaptive Forms Core Components on your AEM 6.5 Forms environment, setup and deploy an [AEM Archetype 41 or later](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) based project (with forms options enabled) on all of your Author and Publish instances. 
 
-This article provides detailed instructions to setup and deploy AEM Archetype 41 or later based project on your AEM 6.5 Forms environment to enable Adaptive Forms Core Components.
-
+This article provides detailed instructions to setup and deploy AEM Archetype 41 or later based project on your AEM 6.5 Forms environment to enable Adaptive Forms Core Components. You can refer to the list below for **AEM 6.5** compatible versions for enabling Forms Core Components:
 
 ## Prerequisites {#prerequisites}
 
@@ -107,7 +104,16 @@ To create an AEM Archetype 41 or [later](https://github.com/adobe/aem-project-ar
 1. Update project to include latest version of Forms Core Components: 
 
      1. Open the [AEM Archetype Project Folder]/pom.xml for editing. 
-     1. Set version of `core.forms.components.version` and `core.forms.components.af.version` to [latest Forms Core Components](https://github.com/adobe/aem-core-forms-components/tree/release/650) version.
+     1. Set version of `core.forms.components.version` and `core.forms.components.af.version` to [latest Forms Core Components](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) version and ensure both have the same version as **Forms Core Components** mentioned in the table, and set version of `core.wcm.components.version` as given in the **WCM Core Components**.
+
+        >[!WARNING]
+        >
+        >* When creating an Archetype project with `version 45`, the [AEM Archetype Project Folder]/pom.xml initially sets the forms core components version to `1.1.28`. Prior to building or deploying the Archetype project, update the forms core components version to `1.1.26`.
+
+
+        >[!NOTE]
+        >
+        >* If you set up any other topology, ensure that you add the submit, prefill, and other URLs to the allowlist at the Dispatcher layer.
 
      1. Save and close the file.  
 
