@@ -152,7 +152,7 @@ Also, indexes are only useful if the data contained within the index is unique e
 
 Lucene indexes were introduced in Oak 1.0.9 and offer some powerful optimizations over the property indexes that were introduced in the initial launch of AEM 6. When deciding whether to use Lucene indexes or property indexes, take the following into consideration:
 
-* Lucene indexes offer many more features than property indexes. For example, a property index can only index a single property while a Lucene index can include many. For more information on all of the features available in Lucene indexes, consult the [documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+* Lucene indexes offer many more features than property indexes. For example, a property index can only index a single property while a Lucene index can include many. For more information on all the features available in Lucene indexes, consult the [documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 * Lucene indexes are asynchronous. While this offers a considerable performance boost, it can also induce a delay between when data is written to the repository and when the index is updated. If it is vital to have queries return 100% accurate results, a property index would be required.
 * By virtue of being asynchronous, Lucene indexes cannot enforce uniqueness constraints. If this is required, then a property index needs to be put in place.
 
@@ -183,7 +183,7 @@ The Oak documentation for Lucene indexes lists several considerations to make wh
 * In a property index, having a unique property name would help to reduce the size on an index, but for Lucene indexes, use of `nodeTypes` and `mixins` should be made to achieve cohesive indexes. Querying a specific `nodeType` or `mixin` will be more performant than querying `nt:base`. When using this approach, define `indexRules` for the `nodeTypes` in question.
 
 * If your queries are only being run under certain paths, then create those indexes under those paths. Indexes are not required to live at the root of the repository.
-* Use a single index when all of the properties being indexed are related to allow Lucene to evaluate as many property restrictions as possible natively. Also, a query will only use one index, even when performing a join.
+* Use a single index when all the properties being indexed are related to allow Lucene to evaluate as many property restrictions as possible natively. Also, a query will only use one index, even when performing a join.
 
 ### CopyOnRead {#copyonread}
 

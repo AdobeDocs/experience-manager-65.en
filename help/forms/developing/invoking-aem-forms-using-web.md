@@ -434,7 +434,7 @@ You can use JAX-WS to convert a Forms service WSDL to Java proxy classes. These 
     * Set the Java compiler's compliance level to 5.0 or greater.
     * Build the project.
     * Export the project as a JAR file.
-    * Import this JAR file in a client project's class path. In addition, import all of the JAR files in &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
+    * Import this JAR file in a client project's class path. In addition, import all the JAR files in &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
 
    >[!NOTE]
    >

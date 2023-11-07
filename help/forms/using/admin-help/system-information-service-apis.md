@@ -100,7 +100,7 @@ The system information service provides a set of REST APIs to retrieve informati
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>This API is a wrapper for all of the system information service APIs. Internally, it runs all system information APIs and downloads information in zip format. </p><p><i><strong>note</strong>: The SystemInfo.info does not provide count and stack trace of active threads. </i></p></td>
+   <td><p>This API is a wrapper for all the system information service APIs. Internally, it runs all system information APIs and downloads information in zip format. </p><p><i><strong>note</strong>: The SystemInfo.info does not provide count and stack trace of active threads. </i></p></td>
   </tr>
  </tbody>
 </table>

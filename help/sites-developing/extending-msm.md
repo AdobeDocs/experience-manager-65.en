@@ -143,7 +143,7 @@ The following objects are provided as parameters of the `execute` method of the 
 
 * The reset value indicates the rollout reset mode.
 
-From these objects you can obtain all of the information about the `LiveCopy`. You can also use the `Resource` objects to obtain `ResourceResolver`, `Session`, and `Node` objects. These objects are useful for manipulating repository content:
+From these objects you can obtain all the information about the `LiveCopy`. You can also use the `Resource` objects to obtain `ResourceResolver`, `Session`, and `Node` objects. These objects are useful for manipulating repository content:
 
 In the first line of the following code, source is the `Resource` object of the source page:
 

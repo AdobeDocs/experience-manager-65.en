@@ -343,7 +343,7 @@ When Watched Folder cannot process the source files in the stage folder, you can
     * In Applications and Services, change the Include File Pattern parameter for the watched folder endpoint to something that will not match any of the new input files (for example, enter `NOMATCH`).
     * Suspend the process that is creating new input files.
 
-   Wait until AEM forms recovers and processes all of the files. The majority of the files should be recovered and any new input files processed correctly. The length of time you wait for Watched Folder to recover and process the files will depend on the length of the operation to invoke and the number of files to recover.
+   Wait until AEM forms recovers and processes all the files. The majority of the files should be recovered and any new input files processed correctly. The length of time you wait for Watched Folder to recover and process the files will depend on the length of the operation to invoke and the number of files to recover.
 
 1. Determine which files cannot be processed. If you waited an appropriate amount of time and completed the previous step, and there are still unprocessed files left in the stage folder, go to the next step.
 

@@ -98,4 +98,4 @@ Use the `LCSetGDS`script in the `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCo
 >
 >This circumstance is the only one under which you should use this script to change the GDS location. To change the GDS location while AEM forms is running, use Administration Console. (See [Configure general AEM forms settings](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
-After you set the GDS path, start the forms server in maintenance mode, and use the administration console to update the remaining file system paths for the new node. After you verify that all of the necessary configurations are updated, restart and test AEM forms.
+After you set the GDS path, start the forms server in maintenance mode, and use the administration console to update the remaining file system paths for the new node. After you verify that all the necessary configurations are updated, restart and test AEM forms.

@@ -13,7 +13,7 @@ From the Trust Store Management page, you can manage Hardware Security Module (H
 
 The client software is required to communicate with the HSM. The HSM client software must be installed and configured on the same computer as AEM forms.
 
-AEM forms Digital Signatures can use credentials stored on an HSM to apply server-side digital signatures. Follow the instructions in this section to create an alias for each HSM credential that Digital Signatures will use. The alias contains all of the parameters required by the HSM.
+AEM forms Digital Signatures can use credentials stored on an HSM to apply server-side digital signatures. Follow the instructions in this section to create an alias for each HSM credential that Digital Signatures will use. The alias contains all the parameters required by the HSM.
 
 >[!NOTE]
 >

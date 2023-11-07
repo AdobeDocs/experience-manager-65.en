@@ -31,7 +31,7 @@ An interactive communication includes the following elements:
 * **Data entered by a frontline employee (Agent UI)** who is customizing the communication before sending it out. For example, the payment due date.
 
 * **Conditional data** that gets populated based on predefined conditions. For example, the date when the interactive communication is generated.
-* **Images stored in a repository**, such as logos and signature images. Images such as corporate logos would appear in most or all of the interactive communication.
+* **Images stored in a repository**, such as logos and signature images. Images such as corporate logos would appear in most or all interactive communication.
 * **Charts and tables** required to simplify the representation of complex data in an Interactive Communication
 
 ## Anatomy of the Interactive Communication {#anatomy-of-the-interactive-communication}

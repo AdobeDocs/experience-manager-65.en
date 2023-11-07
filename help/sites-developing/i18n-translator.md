@@ -173,7 +173,7 @@ The search bar at the bottom of the Translator tool provides string selection op
     * Modified: Show items that are changed.
     * New: Show items that are added.
     * Deleted: Show items that are to be removed.
-    * Multiple Selections: Show items that have all of the selected properties.
+    * Multiple Selections: Show items that have all the selected properties.
 
 * **Has Comment**: Show items that have comments for translators.
 * **Missing Translations:** Show items where at least one language does not have a translation.
@@ -241,7 +241,7 @@ Use the following procedure to export all or some of only the English strings.
 
 1. Open the Translation tool. `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Use the Dictionaries drop-down menu to select the dictionary to export.
-1. If you are exporting a subset of the strings, select the items in the dictionary to export. Selecting no items exports all of the items.
+1. If you are exporting a subset of the strings, select the items in the dictionary to export. Selecting no items exports all the items.
 1. Click Export &gt; Export Selection As Xliff (Strings Only).
 1. In the dialog box that appears, copy the text and paste it into a text file.
 

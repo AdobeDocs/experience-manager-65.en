@@ -41,7 +41,7 @@ Migrating assets to [!DNL Experience Manager] requires several steps and should 
 
 ### Disable workflows {#disabling-workflows}
 
-Before starting your migration, disable your launchers for the [!UICONTROL DAM Update Asset] workflow. It is best to ingest all of the assets into the system and then run the workflows in batches. If you are already live while the migration is taking place, you can schedule these activities to run on off-hours.
+Before starting your migration, disable your launchers for the [!UICONTROL DAM Update Asset] workflow. It is best to ingest all the assets into the system and then run the workflows in batches. If you are already live while the migration is taking place, you can schedule these activities to run on off-hours.
 
 ### Load tags {#loading-tags}
 
@@ -81,7 +81,7 @@ After you have configured the workflow according to your needs, you have two opt
 
 ### Activate assets {#activating-assets}
 
-For deployments that have a publish tier, you need to activate the assets out to the publish farm. While Adobe recommends running more than a single publish instance, it is most efficient to replicate all of the assets to a single publish instance and then clone that instance. When activating large numbers of assets, after triggering a tree activation, you may need to intervene. Here's why: When firing off activations, items are added to the Sling jobs/event queue. After the size of this queue begins to exceed approximately 40,000 items, processing slows dramatically. After the size of this queue exceeds 100,000 items, system stability starts to suffer.
+For deployments that have a publish tier, you need to activate the assets out to the publish farm. While Adobe recommends running more than a single publish instance, it is most efficient to replicate all the assets to a single publish instance and then clone that instance. When activating large numbers of assets, after triggering a tree activation, you may need to intervene. Here's why: When firing off activations, items are added to the Sling jobs/event queue. After the size of this queue begins to exceed approximately 40,000 items, processing slows dramatically. After the size of this queue exceeds 100,000 items, system stability starts to suffer.
 
 To work around this issue, you can use the [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) to manage asset replication. This works without using the Sling queues, lowering overhead, while throttling the workload to prevent the server from becoming overloaded. An example of using FAM to manage replication is shown on the feature's documentation page.
 

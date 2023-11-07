@@ -23,7 +23,7 @@ Ever since the rise of easy-to-use, large-scale content management systems (CMSe
 
 ![The classic full-stack CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
+In a full-stack CMS, all the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
 * There is one system to maintain.
 * Content is managed centrally.

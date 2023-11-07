@@ -305,7 +305,7 @@ The Swipe Carousel component provides the following values for the Build List Us
 
 **Child Pages**
 
-The component lists all of the child pages of a specific page. After you select this value, select the page on the Child Pages tab, or specify no value to list the children of the current page.
+The component lists all the child pages of a specific page. After you select this value, select the page on the Child Pages tab, or specify no value to list the children of the current page.
 
 **Fixed List**
 

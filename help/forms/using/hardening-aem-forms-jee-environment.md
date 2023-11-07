@@ -264,7 +264,7 @@ Configuration Manager made use of a servlet deployed on your application server 
 
 Configuration Manager lets you upload a Acrobat Reader DC extensions credential to the AEM Forms on JEE trust store. This means that access to the Trust Store Credential Service over remote protocols (SOAP and EJB) has been enabled by default. This access is no longer necessary after you have uploaded the Rights credential using Configuration Manager or if you decide to use the Administration Console later to manage credentials.
 
-You can disable remote access to all of the Trust Store services by following the steps in the section [Disabling non-essential remote access to services](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+You can disable remote access to all Trust Store services by following the steps in the section [Disabling non-essential remote access to services](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Disable all non-essential anonymous access**
 
@@ -948,7 +948,7 @@ For information about WebSphere ports that AEM Forms on JEE requires, go to Port
 
 ### Configuring SSL {#configuring-ssl}
 
-Referring to the physical architecture that is described in the section [AEM Forms on JEE physical architecture](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), you should configure SSL for all of the connections that you plan to use. Specifically, all SOAP connections must be conducted over SSL to prevent exposure of user credentials on a network.
+Referring to the physical architecture that is described in the section [AEM Forms on JEE physical architecture](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), you should configure SSL for all connections that you plan to use. Specifically, all SOAP connections must be conducted over SSL to prevent exposure of user credentials on a network.
 
 For instructions on how to configure SSL on JBoss, WebLogic, and WebSphere, see "Configuring SSL" in the [administration help](https://www.adobe.com/go/learn_aemforms_admin_64).
 

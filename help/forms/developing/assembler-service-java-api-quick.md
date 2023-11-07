@@ -1634,7 +1634,7 @@ The following Java code example assembles XDP fragments that are based on the fo
              //Create a Document object
              Document inFragment2Doc = new Document(inFragment2);
  
-             //Place all of the XDP files into the MAP
+             //Place all the XDP files into the MAP
              inputs.put("tuc018_template_flowed.xdp",myMapSource);
              inputs.put("tuc018_contact.xdp",inFragment1Doc);
              inputs.put("tuc018_patient.xdp",inFragment2Doc);

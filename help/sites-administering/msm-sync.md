@@ -362,8 +362,8 @@ The following list of locations where you can specify the rollout configurations
 
 For example, a blueprint uses the We.Retail Reference Site as source content. A site is created from the blueprint. Each item in the following list describes a different scenario regarding the use of rollout configurations:
 
-* None of the blueprint pages or the live copy pages are configured to use a rollout configuration. MSM uses the system default rollout configuration for all of the live copy pages.
-* The root page of the We.Retail Reference Site is configured with several rollout configurations. MSM uses these rollout configurations for all of the live copy pages.
+* None of the blueprint pages or the live copy pages are configured to use a rollout configuration. MSM uses the system default rollout configuration for all the live copy pages.
+* The root page of the We.Retail Reference Site is configured with several rollout configurations. MSM uses these rollout configurations for all the live copy pages.
 * The root page of the We.Retail Reference Site is configured with several rollout configurations, and the root page of the live copy site is configured with a different set of rollout configurations. MSM uses the rollout configurations that are configured on the root page of the live copy site.
 
 ### Setting the Rollout Configurations for a Live Copy Page {#setting-the-rollout-configurations-for-a-live-copy-page}

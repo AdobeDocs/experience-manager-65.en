@@ -270,7 +270,7 @@ The following table describes the components that are available to display and m
 
 ### Settings Common to Most Components {#settings-common-to-most-components}
 
-The Adobe Campaign components have settings that are common in all of the components (except Encrypted Primary Key and Hidden Reconcilation Key components).
+The Adobe Campaign components have settings that are common in all the components (except Encrypted Primary Key and Hidden Reconcilation Key components).
 
 In most components, you can configure the following:
 

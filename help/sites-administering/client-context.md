@@ -235,7 +235,7 @@ Add the JSONP Store component to Client Context and use it to retrieve and store
 
    `https://api.wipmania.com/jsonp?callback=${callback}`
 
-   The component calls the JSONP service and lists all of the properties that the returned data contains. The properties that are in the list are those that will be available in Client Context.
+   The component calls the JSONP service and lists all the properties that the returned data contains. The properties that are in the list are those that will be available in Client Context.
 
    ![The properties of the JSONP Service](assets/chlimage_1-40.png)
 

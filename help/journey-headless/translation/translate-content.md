@@ -99,7 +99,7 @@ The project has been created, but contains no content to translate. The next sec
 
 ## Using a Translation Project {#using-translation-project}
 
-Translation projects are designed to collect all of the content and tasks related to a translation effort in one place to make your translation simple and easy to manage.
+Translation projects are designed to collect all the content and tasks related to a translation effort in one place to make your translation simple and easy to manage.
 
 To view the translation project:
 

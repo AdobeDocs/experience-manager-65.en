@@ -18,7 +18,7 @@ exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
 
 In AEM Forms, you can preview the forms and documents present in the repository. Preview helps to know exactly how the forms look and behave when they are released to the end users.
 
-When previewing forms, they are rendered in interactive interface and the user can fill the forms with data. When previewing documents, they are rendered in non-interactive mode and the user can only view the document. For forms, an additional option of Custom Preview is available. Using this option, you can preview the form using data from an XML file. The data fills up some or all of the fields of the form being previewed.
+When previewing forms, they are rendered in interactive interface and the user can fill the forms with data. When previewing documents, they are rendered in non-interactive mode and the user can only view the document. For forms, an additional option of Custom Preview is available. Using this option, you can preview the form using data from an XML file. The data fills up some or all fields of the form being previewed.
 
 The following table lists the preview options available for different types of supported forms:
 
