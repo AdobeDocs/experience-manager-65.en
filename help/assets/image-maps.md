@@ -26,7 +26,7 @@ Image Maps let you add one or more hyperlinked areas that function like other hy
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Click the hot-spot, and enter the URL and Alt text. From the **[!UICONTROL Target]** list, specify where you want the image map displayed, for example the same tab, a new tab, or an iFrame. For example, enter `https://www.adobe.com` as the URL, `Adobe website` as the Alt text, and specify **[!UICONTROL New Tab]** from the **[!UICONTROL Target]** list for the image map to open in a new tab.
+1. Click the hot-spot, and enter the URL and Alt text. From the **[!UICONTROL Target]** list, specify where you want the image map displayed, for example, the same tab, a new tab, or an iFrame. For example, enter `https://www.adobe.com` as the URL, `Adobe website` as the Alt text, and specify **[!UICONTROL New Tab]** from the **[!UICONTROL Target]** list for the image map to open in a new tab.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

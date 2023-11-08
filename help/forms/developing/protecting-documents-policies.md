@@ -287,7 +287,7 @@ Create a policy by using the Document Security API (web service):
     * Create a `PolicySpec` object by using its constructor.
     * Set the policy's name by assigning a string value to the `PolicySpec` object's `name` data member.
     * Set the policy's description by assigning a string value to the `PolicySpec` object's `description` data member.
-    * Specify the policy set to which the policy belongs by assigning a string value to the `PolicySpec` object's `policySetName` data member. You must specify an existing policy set name. (You can specify `null` for this parameter value that results in the policy being added to *My Policies*.)
+    * Specify the policy set to which the policy belongs by assigning a string value to the `PolicySpec` object's `policySetName` data member. Specify an existing policy set name. (You can specify `null` for this parameter value that results in the policy being added to *My Policies*.)
     * Set the policy's offline lease period by assigning an integer value to the `PolicySpec` object's `offlineLeasePeriod` data member.
     * Set the `PolicySpec` object's `policyXml` data member with a string value that represents PDRL XML data. To perform this task, create a .NET `StreamReader` object by using its constructor. Pass the location of a PDRL XML file that represents the policy to the `StreamReader` constructor. Next, invoke the `StreamReader` object's `ReadLine` method and assign the return value to a string variable. Iterate through the `StreamReader` object until the `ReadLine` method returns null. Assign the string variable to the `PolicySpec` object's `policyXml` data member.
 
@@ -317,9 +317,9 @@ For code examples using the Document Security service, see the following Quick S
 
 ## Modifying Policies {#modifying-policies}
 
-You can modify an existing policy using the Document Security Java API or web service API. To make changes to an existing policy, you retrieve it, modify it, and then update the policy on the server. For example, assume that you retrieve an existing policy and extend its validity period. Before the change takes effect, you must update the policy.
+You can modify an existing policy using the Document Security Java API or web service API. To change an existing policy, you retrieve it, modify it, and then update the policy on the server. For example, assume that you retrieve an existing policy and extend its validity period. Before the change takes effect, you must update the policy.
 
-You can modify a policy when business requirements change and the policy no longer reflects these requirements. Instead of creating a new policy, you can simply update an existing policy.
+You can modify a policy when business requirements change and the policy no longer reflects these requirements. Instead of creating a policy, you can simply update an existing policy.
 
 To modify policy attributes using a web service (for example, using Java proxy classes that were created with JAX-WS), you must ensure that the policy is registered with the Document Security service. You can then reference the existing policy by using the `PolicySpec.getPolicyXml` method and modify the policy attributes by using the applicable methods. For example, you can modify the offline lease period by invoking the `PolicySpec.setOfflineLeasePeriod` method.
 
@@ -347,7 +347,7 @@ Before you can programmatically perform a Document Securityservice operation, yo
 
 **Retrieve an existing policy**
 
-You must retrieve an existing policy to modify it. To retrieve a policy, specify the policy name and the policy set to which the policy belongs. If you specify a `null` value for the policy set name, the policy is retrieved from the *My Policies* policy set.
+Retrieve an existing policy to modify it. To retrieve a policy, specify the policy name and the policy set to which the policy belongs. If you specify a `null` value for the policy set name, the policy is retrieved from the *My Policies* policy set.
 
 **Set the policy's attributes**
 
@@ -872,9 +872,9 @@ Before you can programmatically perform a Document Security service operation, y
 
 **Retrieve a policy-protected PDF document**
 
-You must retrieve a policy-protected PDF document to revoke it. You cannot revoke a document that has already been revoked or is not a policy-protected document.
+Retrieve a policy-protected PDF document to revoke it. You cannot revoke a document that has already been revoked or is not a policy-protected document.
 
-If you know the license identifier value of the policy-protected document, then it is not necessary to retrieve the policy-protected PDF document. However, in most cases, you will need to retrieve the PDF document to obtain the license identifier value.
+If you know the license identifier value of the policy-protected document, then it is not necessary to retrieve the policy-protected PDF document. However, in most cases, you must retrieve the PDF document to obtain the license identifier value.
 
 **Revoke the policy-protected document**
 
@@ -1014,7 +1014,7 @@ Before you can programmatically perform a Document Security service operation, y
 
 **Retrieve the license identifier of the revoked PDF document**
 
-You must retrieve the license identifier of the revoked PDF document to reinstate a revoked PDF document. After you obtain the license identifier value, you can reinstate a revoked document. If you attempt to reinstate a document that is not revoked, you will cause an exception.
+Retrieve the license identifier of the revoked PDF document to reinstate a revoked PDF document. After you obtain the license identifier value, you can reinstate a revoked document. If you attempt to reinstate a document that is not revoked, you will cause an exception.
 
 **Reinstate access to the revoked PDF document**
 
@@ -1281,7 +1281,7 @@ Before you can programmatically perform a Document Security service operation, y
 
 **Set the watermarks attributes**
 
-To create a new watermark, you must set watermark attributes. The name attribute must always be defined. In addition to the name attribute, you must set at least one of the following attributes:
+To create a watermark, you must set watermark attributes. The name attribute must always be defined. In addition to the name attribute, you must set at least one of the following attributes:
 
 * Custom Text
 * DateIncluded
@@ -1402,7 +1402,7 @@ Create a watermark by using the Document Security API (Java):
     * Set the watermark's name attribute by invoking the `Watermark` object's `setName` method and passing a string value that specifies the policy name.
     * Set the watermark's background attribute by invoking the `Watermark` object's `setBackground` method and passing `true`. By setting this attribute, the watermark appears in the background of the document.
     * Set the watermark's custom text attribute by invoking the `Watermark` object's `setCustomText` method and passing a string value that represents the watermark's text.
-    * Set the watermark's opacity attribute by invoking the `Watermark` object's `setOpacity` method and passing an integer value that specifies the opacity level. A value of 100 indicates the watermark is completely opaque and a value of 0 indicates the watermark is completely transparent.
+    * Set the watermark's opacity attribute by invoking the `Watermark` object's `setOpacity` method and passing an integer value that specifies the opacity level. A value of 100 indicates that the watermark is completely opaque and a value of 0 indicates that the watermark is completely transparent.
 
 1. Register the watermark.
 
@@ -1471,7 +1471,7 @@ For code examples using the Document Security service, see the following Quick S
 
 ## Modifying Watermarks {#modifying-watermarks}
 
-You can modify an existing watermark using the Document Security Java API or web service API. To make changes to an existing watermark, you retrieve it, modify its attributes, and then update it on the server. For example, assume that you retrieve an watermark and modify its opacity attribute. Before the change takes effect, you must update the watermark.
+You can modify an existing watermark using the Document Security Java API or web service API. To change an existing watermark, you retrieve it, modify its attributes, and then update it on the server. For example, assume that you retrieve an watermark and modify its opacity attribute. Before the change takes effect, you must update the watermark.
 
 When you modify a watermark, the change impacts future documents that have the watermark applied to them. That is, existing PDF documents that contain the watermark are not affected.
 
@@ -1507,7 +1507,7 @@ To modify a watermark, you must retrieve an existing watermark. You can retrieve
 
 **Set the watermarks attributes**
 
-To modify an existing watermark, change the value of one or more watermark attributes. When programmatically updating a watermark using a web service, you must set all of the attributes that were originally set, even if the value does not change. For example, assume the following watermark attributes are set: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`, and `WaterBackCmd:SRCTEXT`. Although the only attribute that you want to modify is `WaterBackCmd:OPACITY`, you must set the other values are well.
+To modify an existing watermark, change the value of one or more watermark attributes. When programmatically updating a watermark using a web service, you must set all the attributes that were originally set, even if the value does not change. For example, assume the following watermark attributes are set: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`, and `WaterBackCmd:SRCTEXT`. Although the only attribute that you want to modify is `WaterBackCmd:OPACITY`, you must set the other values are well.
 
 >[!NOTE]
 >
@@ -1548,7 +1548,7 @@ Modify a watermark by using the Document Security API (Java):
 
 1. Set the watermark attributes.
 
-   Set the watermark's opacity attribute by invoking the `Watermark` object's `setOpacity` method and passing an integer value that specifies the opacity level. A value of 100 indicates the watermark is completely opaque and a value of 0 indicates the watermark is completely transparent.
+   Set the watermark's opacity attribute by invoking the `Watermark` object's `setOpacity` method and passing an integer value that specifies the opacity level. A value of 100 indicates that the watermark is completely opaque and a value of 0 indicates that the watermark is completely transparent.
 
    >[!NOTE]
    >
@@ -1616,9 +1616,9 @@ The Rights Management service tracks specific actions as they occur, such as app
 
 Events fall into one of the following categories:
 
-* Administrator events are actions related to an administrator, such as creating a new administrator account.
+* Administrator events are actions related to an administrator, such as creating an administrator account.
 * Document events are actions related to a document, such as closing a policy-protected document.
-* Policy events are actions related to a policy, such as creating a new policy.
+* Policy events are actions related to a policy, such as creating a policy.
 * Service events are actions related to the Rights Management service, such as synchronizing with the user directory.
 
 You can search for specify specific events by using the Rights Management Java API or web service API. By searching for events, you can perform tasks, such as creating a log file of certain events.
@@ -1646,7 +1646,7 @@ Before you can programmatically perform a Rights Management service operation, y
 
 **Specify the events to search for**
 
-You must specify the event to search for. For example, you can search for the policy create event, which occurs when a new policy is created.
+Specify the event to search for. For example, you can search for the policy create event, which occurs when a new policy is created.
 
 **Search for the event**
 
@@ -1971,7 +1971,7 @@ Before you can programmatically perform a Document Security service operation, y
 
 **Retrieve a Word document**
 
-You must retrieve a Word document to apply a policy. After you apply a policy to the Word document, users are restricted when using the document. For example, if the policy does not enable the document to be opened while offline, then users must be online to open the document.
+Retrieve a Word document to apply a policy. After you apply a policy to the Word document, users are restricted when using the document. For example, if the policy does not enable the document to be opened while offline, then users must be online to open the document.
 
 **Apply an existing policy to the Word document**
 
@@ -2126,7 +2126,7 @@ Before you can programmatically perform a Document Security service operation, c
 
 **Retrieve a policy-protected Word document**
 
-You must retrieve a policy-protected Word document to remove a policy. If you attempt to remove a policy from a Word document that is not protected by a policy, you will cause an exception.
+Retrieve a policy-protected Word document to remove a policy. If you attempt to remove a policy from a Word document that is not protected by a policy, you will cause an exception.
 
 **Remove the policy from the Word document**
 

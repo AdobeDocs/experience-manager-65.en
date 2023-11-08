@@ -43,7 +43,7 @@ As with [all components](/help/sites-developing/components.md), workflow step co
 >
 >The recommended method for configuration and other changes is:
 >
->1. Recreate the required item (i.e. as it exists in `/libs` under `/apps`
+>1. Recreate the required item (that is, as it exists in `/libs` under `/apps`
 >2. Make any changes within `/apps`
 
 The `/libs/cq/workflow/components/model/step` component is the nearest common ancestor of the **Process Step**, **Participant Step**, and **Dynamic Participant Step**, which all inherit the following items:
@@ -462,7 +462,7 @@ public class MyProcess implements WorkflowProcess {
 
 ### Using ECMAScript {#using-ecmascript}
 
-ECMA scripts enable script developers to implement process steps. The scripts are located in the JCR repository and executed from there.
+ECMA scripts enable script developers to implement process steps. The scripts are in the JCR repository and executed from there.
 
 The following table lists the variables that are immediately available to process scripts, providing access to objects of the workflow Java API.
 
@@ -523,7 +523,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 To use the script:
 
-1. Create the script (for example with CRXDE Lite) and save it in the repository below `//apps/workflow/scripts/`
+1. Create the script (for example, with CRXDE Lite) and save it in the repository below `//apps/workflow/scripts/`
 1. To specify a title that identifies the script in the **Process Step** edit dialog, add the following properties to the `jcr:content` node of your script:
 
    | Name |Type |Value |
@@ -614,7 +614,7 @@ To define a participant step as an OSGI service component (Java class):
 
 You can create an ECMA script that selects the user that is assigned the work item that the **Participant Step** generates. The script must include a function named `getParticipant` that requires no argumemts, and returns a `String` that contains the ID of a user or group.
 
-Scripts are located in the JCR repository and executed from there.
+Scripts are in the JCR repository and executed from there.
 
 The following table lists the variables that provide immediate access to workflow Java objects in your scripts.
 
@@ -640,7 +640,7 @@ function getParticipant() {
 }
 ```
 
-1. Create the script (for example with CRXDE Lite) and save it in the repository below `//apps/workflow/scripts`
+1. Create the script (for example, with CRXDE Lite) and save it in the repository below `//apps/workflow/scripts`
 1. To specify a title that identifies the script in the **Process Step** edit dialog, add the following properties to the `jcr:content` node of your script:
 
    | Name |Type |Value |
@@ -798,7 +798,7 @@ An easy way to start creating your own custom step is to copy an existing step f
    >
    >This step does not apply to the classic UI Model editor.
 
-1. Then place the copied step in your /apps folder; for example as:
+1. Then place the copied step in your /apps folder; for example, as:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -820,7 +820,7 @@ An easy way to start creating your own custom step is to copy an existing step f
 
       Must inherit from an existing step.
 
-      In this example we are inheriting from the base step at `cq/workflow/components/model/step`, but you can use other super types like `participant`, `process`, etc.
+      In this example we are inheriting from the base step at `cq/workflow/components/model/step`, but you can use other super types like `participant`, `process`, and so on.
 
     * `jcr:title`
 
@@ -1037,4 +1037,4 @@ The `_cq_dialog/.content.xml` sample used in this example:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  You must not modify anything in `/libs`, simply use them as examples. If you want to leverage any of the existing steps, copy them to `/apps` and modify them there.
+>  You must not modify anything in `/libs`, simply use them as examples. If you want to use any of the existing steps, copy them to `/apps` and modify them there.

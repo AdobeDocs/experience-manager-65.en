@@ -10,7 +10,7 @@ role: Developer, Architect
 # AEM Documentation Journeys {#documentation-journeys}
 
 <!--
-Please note that all links to other guides need to be absolute references with leading protocol and domain since SCCM does not allow pages to be referenced with relative links in multiple ToCs.
+All links to other guides need to be absolute references with leading protocol and domain since SCCM does not allow pages to be referenced with relative links in multiple ToCs.
 -->
 
 + AEM Documentation Journeys {#overview}

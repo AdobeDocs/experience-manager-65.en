@@ -22,7 +22,7 @@ Before performing the above steps, ensure that you follow the steps listed at [G
 
 >[!NOTE]
 >
->To change the language of the login screen of the AEM Forms workspace, see [Creating a new login screen](../../forms/using/creating-new-login-screen.md).
+>To change the language of the login screen of the AEM Forms workspace, see [Creating a login screen](../../forms/using/creating-new-login-screen.md).
 
 ## Localizing text {#localizing-text}
 

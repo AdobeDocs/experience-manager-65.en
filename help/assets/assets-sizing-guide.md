@@ -22,7 +22,7 @@ Finally, versioning capabilities of [!DNL Experience Manager] store duplicates o
 
 Considering these factors, you require a methodology to calculate an acceptably accurate storage space to store user assets.
 
-1. Determine the size and number of assets that will be loaded into the system.
+1. Determine the size and number of assets that are loaded into the system.
 1. Get a representative sample of the assets to be uploaded into [!DNL Experience Manager]. For instance, if you plan to load PSD, JPG, AI and PDF files into the system, you require multiple sample images of each file format. In addition, these samples should be representative of the different file sizes and complexities of images.
 1. Define the renditions to be used.
 1. Create the renditions in [!DNL Experience Manager] using [!DNL ImageMagick] or [!DNL Adobe Creative Cloud] applications. In addition to the renditions that the users specify, create out-of-the-box renditions. For users who implement Dynamic Media, you can use the IC binary to generate the PTIFF renditions to be stored in Experience Manager.
@@ -74,11 +74,11 @@ For AWS operations, implementing a single central location (via Amazon S3), rath
 
 #### Performance concerns {#performance-concerns}
 
-A shared datastore requires the binaries to be stored on a network-mounted drive that is shared between all instances. Because these binaries are accessed over a network, the system performance is adversely impacted. You can partially mitigate the impact by using a fast network connection to a fast array of disks. However, this is an expensive proposition. In the case of AWS operations, all disks are remote and require network connectivity. Ephemeral volumes lose data when the instance starts or stops.
+A shared datastore requires the binaries to be stored on a network-mounted drive that is shared between all instances. Because these binaries are accessed over a network, the system performance is adversely impacted. You can partially mitigate the impact by using a fast network connection to a fast array of disks. However, this is an expensive proposition. If there are AWS operations, all disks are remote and require network connectivity. Ephemeral volumes lose data when the instance starts or stops.
 
 #### Latency {#latency}
 
-Latency in S3 implementations is introduced by the background writing threads. Backup procedures must take into account this latency. In addition, Lucene indexes may remain incomplete when making a backup. It applies to any time-sensitive file written to S3 datastore and accessed from another instance.
+Latency in S3 implementations is introduced by the background writing threads. Backup procedures must account for this latency. In addition, Lucene indexes may remain incomplete when making a backup. It applies to any time-sensitive file written to S3 datastore and accessed from another instance.
 
 ### Node store or document store {#node-store-document-store}
 
@@ -97,7 +97,7 @@ For the repository, use SSDs or disks with an IOPS level greater than 3000. To e
 
 ## Network {#network}
 
-[!DNL Assets] has a number of use cases that make network performance more important than on many of our [!DNL Experience Manager] projects. A customer can have a fast server, but if the network connection is not large enough to support the load of the users who are uploading and downloading assets from the system, then it will still appear to be slow. There is a good methodology for determining the choke point in a user's network connection to [!DNL Experience Manager] at [Assets considerations for user experience, instance sizing, workflow evaluation, and network topology](/help/assets/assets-network-considerations.md).
+[!DNL Assets] has several use cases that make network performance more important than on many of our [!DNL Experience Manager] projects. A customer can have a fast server, but if the network connection is not large enough to support the load of the users who are uploading and downloading assets from the system, then it will still appear to be slow. There is a good methodology for determining the choke point in a user's network connection to [!DNL Experience Manager] at [Assets considerations for user experience, instance sizing, workflow evaluation, and network topology](/help/assets/assets-network-considerations.md).
 
 ## Limitations {#limitations}
 

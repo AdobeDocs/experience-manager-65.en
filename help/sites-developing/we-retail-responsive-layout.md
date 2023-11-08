@@ -1,14 +1,10 @@
 ---
 title: Trying out Responsive Layout in We.Retail
-seo-title: Trying out Responsive Layout in We.Retail
 description: Learn how to try out Responsive Layout in Adobe Experience Manager using We.Retail.
-seo-description: null
-uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 ---
 # Trying out Responsive Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
@@ -41,4 +37,4 @@ All We.Retail pages use the Layout Container component to implement responsive d
 
 ## Further Information {#further-information}
 
-For further information, refer to the authoring document [Responsive Layout](/help/sites-authoring/responsive-layout.md) or the administrator document [Configuring Layout Container and Layout Mode](/help/sites-administering/configuring-responsive-layout.md) for complete technical details.
+For more information, see the authoring document [Responsive Layout](/help/sites-authoring/responsive-layout.md) or the administrator document [Configuring Layout Container and Layout Mode](/help/sites-administering/configuring-responsive-layout.md) for complete technical details.

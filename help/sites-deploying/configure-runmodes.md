@@ -1,20 +1,16 @@
 ---
 title: Run Modes
-seo-title: Run Modes
 description: Learn how to tune your AEM instance for specific purposes by using run modes.
-seo-description: Learn how to tune your AEM instance for specific purposes by using run modes.
-uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 ---
 # Run Modes{#run-modes}
 
-Run modes let you tune your AEM instance for a specific purpose; for example author or publish, test, development, intranet or others.
+Run modes let you tune your AEM instance for a specific purpose; for example, author or publish, test, development, intranet or others.
 
 You can:
 
@@ -67,11 +63,11 @@ Customized run modes can also be selected at each startup.
 
 ## Using samplecontent and nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-These modes let you control the use of sample content. The sample content is defined before the quickstart is built and can include packages, configurations, etc:
+These modes let you control the use of sample content. The sample content is defined before the quickstart is built and can include packages, configurations, and so on:
 
-* The `samplecontent` run mode will install this content (the default mode).
+* The `samplecontent` run mode installs this content (the default mode).
 
-* The `nosamplecontent` mode will not install the sample content.
+* The `nosamplecontent` mode does not install the sample content.
 
 The nosamplecontent run mode is designed for production installations.
 
@@ -147,7 +143,7 @@ java -jar cq-56-p4545.jar -r dev
 
 A system property in the start script can be used to specify the run mode.
 
-* For example use the following to launch an instance as a production publish instance located in the US:
+* For example, use the following to launch an instance as a production publish instance in the US:
 
   `-Dsling.run.modes=publish,prod,us`
 

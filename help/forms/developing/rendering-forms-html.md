@@ -61,13 +61,13 @@ You must explicitly move from panel to panel using the `xfa.host.pageUp` and `xf
 >
 >If you want to customize the look of the HTML Digital Signature button on an HTML form, you must change the following properties in the fscdigsig.css file (within the adobe-forms-ds.ear &gt; adobe-forms-ds.war file):
 
-**.fsc-ds-ssb**: This style sheet is applicable in case of a blank sign field.
+**.fsc-ds-ssb**: This style sheet is applicable if there is a blank sign field.
 
-**.fsc-ds-ssv**: This style sheet is applicable in case of a Valid sign field.
+**.fsc-ds-ssv**: This style sheet is applicable if there is a Valid sign field.
 
-**.fsc-ds-ssc**: This style sheet is applicable in case of a Valid sign field but data has changed.
+**.fsc-ds-ssc**: This style sheet is applicable if there is a Valid sign field but data has changed.
 
-**.fsc-ds-ssi**: This style sheet is applicable in case of a invalid sign field.
+**.fsc-ds-ssi**: This style sheet is applicable if there is a invalid sign field.
 
 **.fsc-ds-popup-bg**: This style sheet property is not being used.
 
@@ -83,9 +83,9 @@ You can design forms that move between pages (panels) by calling `xfa.host.pageU
 
 It is recommended that you do not give script variables and form fields the same names such as item. Some web browsers, such as Internet Explorer, may not initialize a variable with the same name as a form field that results in a script error occurring. It is good practice to give form fields and script variables different names.
 
-When rendering HTML forms that contain both page navigation functionality and form scripts (for example, assume that a script retrieves field data from a database each time the form is rendered), ensure that the form script is located in the form:calculate event instead in of the form:readyevent.
+When rendering HTML forms that contain both page navigation functionality and form scripts (for example, assume that a script retrieves field data from a database each time the form is rendered), ensure that the form script is in the form:calculate event instead in of the form:readyevent.
 
-Form scripts that are located in the form:ready event are executed only once during the initial rendering of the form and are not executed for subsequent page retrievals. In contrast, the form:calculate event is executed for each page navigation where the form is rendered.
+Form scripts that are in the form:ready event are executed only once during the initial rendering of the form and are not executed for subsequent page retrievals. In contrast, the form:calculate event is executed for each page navigation where the form is rendered.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ You can invoke custom scripts before submitting a form. This feature works on al
 
 You must first define a callback function that is called before submitting the form, where the name of the function is `_user_onsubmit`. It is assumed that the function will not throw any exception, or if it does, the exception will be ignored. It is recommended to place the JavaScript function in the head section of the html; however, you can declare it anywhere before the end of the script tags that include `xfasubset.js`.
 
-When formserver renders an XDP that contains a drop-down list, in addition to creating the drop-down list, it also creates two hidden text fields. These text fields store the data of the drop-down list (one stores the display name of the options and other stores the value for the options). Therefore, every time a user submits the form, the entire data of the drop down list is submitted. Assuming that you don't want to submit that much data everytime, you can write a custom script to disable that. For example: The name of the drop down list is `drpOrderedByStateProv` and it is wrapped under subform header. The name of the HTML input element will be `header[0].drpOrderedByStateProv[0]`. The name of the hidden fields that store and submit the data of the dropdown have the following names: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+When formserver renders an XDP that contains a drop-down list, in addition to creating the drop-down list, it also creates two hidden text fields. These text fields store the data of the drop-down list (one stores the display name of the options and other stores the value for the options). Therefore, every time a user submits the form, the entire data of the drop-down list is submitted. Assuming that you don't want to submit that much data everytime, you can write a custom script to disable that. For example: The name of the drop-down list is `drpOrderedByStateProv` and it is wrapped under subform header. The name of the HTML input element will be `header[0].drpOrderedByStateProv[0]`. The name of the hidden fields that store and submit the data of the dropdown have the following names: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
 You can disable these input elements in the following way if you don't want to post the data. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
@@ -119,7 +119,7 @@ When creating form designs to render as HTML, you must restrict your scripting t
 
 Scripts that run on the client or run on both the client and the server must be written within the XFA subset. Scripts that run on the server can use the full XFA scripting model and also use FormCalc. For information about using JavaScript, see [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
-When running scripts on the client, only the current panel being displayed can use script; for example, you cannot script against fields that are located in panel A when panel B is displayed. When running scripts on the server, all panels can be accessed.
+When running scripts on the client, only the current panel being displayed can use script; for example, you cannot script against fields that are in panel A when panel B is displayed. When running scripts on the server, all panels can be accessed.
 
 You must also be careful when using Scripting Object Model (SOM) expressions within scripts that run on the client. Only a simplified subset of SOM expressions are supported by scripts that run on the client.
 
@@ -152,7 +152,7 @@ It is recommended that you place your form logic in calculate events, which run 
 
 As you move between HTML pages (panels), only the state of the data is maintained. Settings such as background color or mandatory field settings are not maintained (if different than the initial settings). To maintain the presentation state, you must create fields (usually hidden) that represent the presentation state of fields. If you add a script to a field’s `Calculate` event that changes the presentation based on hidden field values, you are able to preserve the presentation state as you move back and forth between HTML pages (panels).
 
-The following script maintains the `fillColor` of a field based on the value of `hiddenField`. Assume this script is located in a field’s `Calculate` event.
+The following script maintains the `fillColor` of a field based on the value of `hiddenField`. Assume this script is in a field’s `Calculate` event.
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -182,7 +182,7 @@ You can render a full HTML form that is compliant with accessibility guidelines.
 
 ## Validating form data {#validating-form-data}
 
-It is recommended that you limit your use of validation rules for form fields when rendering the form as an HTML form. Some validation rules may not be supported for HTML forms. For example, when a validation pattern of MM-DD-YYYY is applied to a `Date/Time` field that is located in a form design that is rendered as an HTML form, it does not work properly, even if the date is typed in properly. However, this validation pattern works properly for forms rendered as PDF.
+It is recommended that you limit your use of validation rules for form fields when rendering the form as an HTML form. Some validation rules may not be supported for HTML forms. For example, when a validation pattern of MM-DD-YYYY is applied to a `Date/Time` field that is in a form design that is rendered as an HTML form, it does not work properly, even if the date is typed in properly. However, this validation pattern works properly for forms rendered as PDF.
 
 >[!NOTE]
 >

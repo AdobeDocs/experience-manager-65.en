@@ -30,7 +30,7 @@ The **GraphiQL** tool lets you test and debug your GraphQL queries by enabling y
 
 You can access the query editor from either: 
 
-* **Tools** -> **General** -> **GraphQL Query Editor**
+* **Tools** > **General** > **GraphQL Query Editor**
 * directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
@@ -68,11 +68,11 @@ Use **Save As** to persist your new query.
 
 Select the query you want to update from the list in the **[Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md)** panel (far left).
 
-The query will be shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
+The query is shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
 
 ## Running queries {#running-queries}
 
-You can run a new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query will be shown in the editor panel.
+You can run a new query immediately, or you can load and run a persisted query. To load a persisted query, select it from the list - the query is shown in the editor panel.
 
 In either case, the query showing in the editor panel is the query that will be executed when you either:
 
@@ -98,7 +98,7 @@ For example:
 >
 >Custom rewrite rules on the Dispatcher might override defaults from AEM publish. 
 >
->In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern, then, if necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
+>In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern then, if necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
 
 Using GraphQL you can configure the HTTP Cache Headers  to control these parameters for your individual persisted query.
 
@@ -106,7 +106,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
    ![Persisted Query HTTP Cache Headers](assets/cfm-graphqlapi-headers-01.png "Persisted Query HTTP Cache Headers")
 
-1. Selecting this will open the **Cache Configuration** dialog:
+1. Selecting this opens the **Cache Configuration** dialog box:
 
    ![Persisted Query HTTP Cache Header Settings](assets/cfm-graphqlapi-headers-02.png "Persisted Query HTTP Cache Header Settings")
 
@@ -119,7 +119,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
    * **surrogate-control** - **stale-while-revalidate**
      Caches may continue to serve a cached response after it becomes stale, for up to the specified number of seconds.
    * **surrogate-control** - **stale-if-error**
-     Caches may continue to serve a cached response in case of or origin error, for up to the specified number of seconds.
+     Caches may continue to serve a cached response if there is an origin error, for up to the specified number of seconds.
 
 1. Select **Save** to persist the changes.
 -->

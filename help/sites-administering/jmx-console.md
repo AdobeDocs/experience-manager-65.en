@@ -349,7 +349,7 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>option.shareable.nodes.supported</td>
-   <td>true indicates the repository supports the creation of shareable nodes.</td>
+   <td>true indicates that the repository supports the creation of shareable nodes.</td>
   </tr>
   <tr>
    <td>crx.cluster.id</td>
@@ -373,7 +373,7 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>option.transactions.supported</td>
-   <td>true indicates the repository supports transactions.</td>
+   <td>true indicates that the repository supports transactions.</td>
   </tr>
   <tr>
    <td>jcr.repository.vendor.url</td>
@@ -381,7 +381,7 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>node.type.management.value.constraints.supported</td>
-   <td>true indicates the repository supports value constraints for node properties.</td>
+   <td>true indicates that the repository supports value constraints for node properties.</td>
   </tr>
   <tr>
    <td>node.type.management.property.types</td>
@@ -389,7 +389,7 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>node.type.management.orderable.child.nodes.supported</td>
-   <td>true indicates the repository supports the preservation of the order of child nodes.</td>
+   <td>true indicates that the repository supports the preservation of the order of child nodes.</td>
   </tr>
   <tr>
    <td>jcr.repository.vendor</td>
@@ -410,7 +410,7 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>query.xpath.doc.order</td>
-   <td>true indicates the repository supports the XPath 1.0 query language.</td>
+   <td>true indicates that the repository supports the XPath 1.0 query language.</td>
   </tr>
   <tr>
    <td>query.jcrpath</td>
@@ -418,19 +418,19 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>option.xml.import.supported</td>
-   <td>true indicates the repository supports the importing XML code as content.</td>
+   <td>true indicates that the repository supports the importing XML code as content.</td>
   </tr>
   <tr>
    <td>node.type.management.same.name.siblings.supported</td>
-   <td>true indicates the repository supports sibling nodes (nodes with the same parent) with the same names.</td>
+   <td>true indicates that the repository supports sibling nodes (nodes with the same parent) with the same names.</td>
   </tr>
   <tr>
    <td>node.type.management.residual.definitions.supported</td>
-   <td>true indicates the repository supports name properties with residual definitions. When supported, the name attribute of an item definition can be an asterisk ("*").</td>
+   <td>true indicates that the repository supports name properties with residual definitions. When supported, the name attribute of an item definition can be an asterisk ("*").</td>
   </tr>
   <tr>
    <td>node.type.management.autocreated.definitions.supported</td>
-   <td>true indicates the repository supports the automatic creation of child items (nodes or properties) of a node when the node is created.</td>
+   <td>true indicates that the repository supports the automatic creation of child items (nodes or properties) of a node when the node is created.</td>
   </tr>
   <tr>
    <td>crx.cluster.master</td>
@@ -442,7 +442,7 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>option.unfiled.content.supported</td>
-   <td>true indicates the repository supports unfiled content. Unfiled nodes are not part of the repository hierarchy.</td>
+   <td>true indicates that the repository supports unfiled content. Unfiled nodes are not part of the repository hierarchy.</td>
   </tr>
   <tr>
    <td>jcr.specification.name</td>
@@ -450,7 +450,7 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>option.versioning.supported</td>
-   <td>true indicates the repository supports full versioning.</td>
+   <td>true indicates that the repository supports full versioning.</td>
   </tr>
   <tr>
    <td>jcr.repository.name</td>
@@ -458,7 +458,7 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>option.locking.supported</td>
-   <td>true indicates the repository supports the locking of nodes. Locking enables a user to temporarily prevent other users from making changes.</td>
+   <td>true indicates that the repository supports the locking of nodes. Locking enables a user to temporarily prevent other users from making changes.</td>
   </tr>
   <tr>
    <td>jcr.repository.version.display</td>
@@ -466,19 +466,19 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>option.activities.supported</td>
-   <td>true indicates the repository supports activities. Activities are a set of changes that are performed in a workspace that are merged into another workspace.</td>
+   <td>true indicates that the repository supports activities. Activities are a set of changes that are performed in a workspace that are merged into another workspace.</td>
   </tr>
   <tr>
    <td>node.type.management.multivalued.properties.supported</td>
-   <td>true indicates the repository supports node properties that can have zero or more values.</td>
+   <td>true indicates that the repository supports node properties that can have zero or more values.</td>
   </tr>
   <tr>
    <td>option.retention.supported</td>
-   <td>true indicates the repository supports the use of external retention management applications to apply retention policies to content and supports hold and release.</td>
+   <td>true indicates that the repository supports the use of external retention management applications to apply retention policies to content and supports hold and release.</td>
   </tr>
   <tr>
    <td>option.lifecycle.supported</td>
-   <td>true indicates the repository supports lifecycle management.</td>
+   <td>true indicates that the repository supports lifecycle management.</td>
   </tr>
  </tbody>
 </table>
@@ -591,7 +591,7 @@ Read-only.
 
 * Returned value: none
 
-**becomeClusterMaster** Sets this repository node as the master node of the cluster. If not already master, this command stops the current master instance's listener and starts a master listener on the current node. This node is then set as the master node and restarts, causing all other nodes in the cluster (i.e. those that are controlled by the master) to connect to this instance.
+**becomeClusterMaster** Sets this repository node as the master node of the cluster. If not already master, this command stops the current master instance's listener and starts a master listener on the current node. This node is then set as the master node and restarts, causing all other nodes in the cluster (that is, those that are controlled by the master) to connect to this instance.
 
 * Arguments: none
 * Returned value: none
@@ -888,7 +888,7 @@ The main page of the JMX console includes a table of services. Each row in the t
 
 ## Using External JMX Applications for Monitoring {#using-external-jmx-applications-for-monitoring}
 
-CRX allows external applications to interact with Managed Beans (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Using generic consoles such as [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) or domain-specific monitoring applications, allows getting and setting CRX configurations and properties, as well as the monitoring of performance and resource usage.
+CRX allows external applications to interact with Managed Beans (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Using generic consoles such as [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) or domain-specific monitoring applications, allows getting and setting CRX configurations and properties, and the monitoring of performance and resource usage.
 
 ### Using JConsole to connect to CRX {#using-jconsole-to-connect-to-crx}
 
@@ -909,7 +909,7 @@ JConsole will display a list of local Java Virtual Machine processes. The list w
 
 ### Connecting to a remote CRX process {#connecting-to-a-remote-crx-process}
 
-To connect to a remote CRX process, the JVM that hosts the remote CRX process will need to be enabled to accept remote JMX connections.
+To connect to a remote CRX process, the JVM that hosts the remote CRX process must be enabled to accept remote JMX connections.
 
 To enable remote JMX connections, the following system property must be set when starting the JVM:
 
@@ -938,7 +938,7 @@ After connecting to the quickstart process, JConsole provides a range of general
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
-To access CRX's internal monitoring and configuration options, go to the MBeans tab, and from the hierarchical content tree on the left, select the Attributes or Operations section that you are interested in. For example the com.adobe.granite/Repository/Operations section.
+To access CRX's internal monitoring and configuration options, go to the MBeans tab, and from the hierarchical content tree on the left, select the Attributes or Operations section that you are interested in. For example, the com.adobe.granite/Repository/Operations section.
 
 Within that section, select the desired attribute or operation in the left pane.
 

@@ -370,10 +370,19 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * A GraphQL query may use the `damAssetLucene` index instead of the `fragments` index. This action might result in GraphQL queries that fail, or take a long time to run.
 
-  To correct the problem, `damAssetLucene` has to be configured to include the following two properties:
+  To correct the problem, `damAssetLucene` has to be configured to include the following two properties under `/indexRules/dam:Asset/properties`:
 
   * `contentFragment`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/contentFragment"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="Boolean"`
   * `model`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/data/cq:model"`
+    * `ordered="{Boolean}true"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="String"`
 
   After the index definition is changed, a reindexing is required (`reindex` = `true`).
 
@@ -428,7 +437,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
         >[!NOTE]
         >
-        > You can also use an in-place editing tool, for example 7-zip, to update the `Manifest.mf` file.  
+        > You can also use an in-place editing tool, for example, 7-zip, to update the `Manifest.mf` file.  
 
     1. Save the updated the `Manifest.mf` in the `adobe-output-client.jar` archive. 
     1. Save the modified `adobe-output-client.jar` file and rerun the setup. (CQDOC-20878)
@@ -444,7 +453,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 
 #### Interactive Communications
 
-* After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578)
+* After upgrading to AEM Service Pack 18, it is not possible to open the Interactive Communication with large inline images in the Edit mode. (FORMS-10578)
 To resolve the issue, perform the following steps:
 
   1. Download [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) from SD link.

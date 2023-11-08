@@ -70,7 +70,7 @@ The login component can be used to collect the login information, then activate 
 
 This provides the visitor with the standard fields of **Username** and **Password**, with a **Login** button to activate the login process when the credentials are entered.
 
-For example, users can either log in, or create a new account, using the **Sign In** option on the Geometrixx toolbar, which uses the page:
+For example, users can either log in, or create an account, using the **Sign In** option on the Geometrixx toolbar, which uses the page:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -89,22 +89,22 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 ```
 
-To see the details of your profile click on **My Profile** in the top right corner of any page; for example with the `admin` account:
+To see the details of your profile click on **My Profile** in the top right corner of any page; for example, with the `admin` account:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 You can view another profile using the [client context](/help/sites-administering/client-context.md) (on the author environment and with sufficient privileges):
 
-1. Open a page; for example the Geometrixx page:
+1. Open a page; for example, the Geometrixx page:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Click **My Profile** in the top right corner. You will see the profile of your current account; for example the administrator.
+1. Click **My Profile** in the top right corner. You will see the profile of your current account; for example, the administrator.
 1. Press **control-alt-C** to open the client context.
 1. In top left corner of the client context, click the **Load a Profile** button.
 
    ![Load a Profile icon](do-not-localize/loadprofile.png)
 
-1. Select another profile from the drop down list in the dialog window; for example, **Alison Parker**.
+1. Select another profile from the drop-down list in the dialog window; for example, **Alison Parker**.
 1. Click **OK**.
 1. Click again on **My Profile**. The form will be updated with Alison's details.
 
@@ -114,7 +114,7 @@ You can view another profile using the [client context](/help/sites-administerin
 
 ## Adding Fields to the Profile Definition {#adding-fields-to-the-profile-definition}
 
-You can add fields to the profile definition. For example to add a "Favorite Color" field to the Geometrixx profile:
+You can add fields to the profile definition. For example, to add a "Favorite Color" field to the Geometrixx profile:
 
 1. From the Websites console navigate to Geometrixx Outdoors Site &gt; English &gt; User &gt;My Profile.
 1. Double-click on the **My Profile** page to open it for editing.
@@ -140,7 +140,7 @@ You can add fields to the profile definition. For example to add a "Favorite Col
 
 ## Profile States {#profile-states}
 
-There are a number of use cases that require knowing whether a user (or rather their profile) is in a *specific state* or not.
+There are several use cases that require knowing whether a user (or rather their profile) is in a *specific state* or not.
 
 This involves defining an appropriate property in the user profile in a way that:
 
@@ -158,7 +158,7 @@ This is done with:
 
   To manage actions related to the states.
 
-Multiple states can be defined; for example in Geometrixx these include:
+Multiple states can be defined; for example, in Geometrixx these include:
 
 * subscribing (or unsubscribing) to notifications on newsletters or comment threads
 * adding and removing a connection to a friend

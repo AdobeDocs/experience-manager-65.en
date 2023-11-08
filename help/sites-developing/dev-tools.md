@@ -23,7 +23,7 @@ To develop your JCR, Apache Sling or Adobe Experience Manager (AEM) applications
   * A central dependency management system. For example, Apache Archiva.
   * And a build automation system. For example, Apache Continuum.
 
-  This setup lets you fully integrate your application (content, code, configuration) into any development environment and process. The link between the different elements is the file system representation of the repository through FileVault, as all of the previously mentioned development tools can work with files.
+  This setup lets you fully integrate your application (content, code, configuration) into any development environment and process. The link between the different elements is the file system representation of the repository through FileVault, as all the previously mentioned development tools can work with files.
 
 ## Extensions for Integrated Development Environments {#extensions-for-integrated-development-environments}
 

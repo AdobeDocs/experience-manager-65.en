@@ -613,7 +613,7 @@ This table lists the type of information used in printing native file formats.
   <tr>
    <td><p>Script </p></td>
    <td><p>Specifies interactions between the Generate PDF service and a native application. Such interactions usually direct the application to print a file to the Adobe PDF driver. </p><p>The script contains instructions that direct the native application to open specific dialog boxes and that supply specific responses to fields and buttons in those dialog boxes. </p></td>
-   <td><p>The Generate PDF service includes script files for all supported native applications. You can modify these files using an XML editing application.</p><p>To add support for a new native application, you must create a new script file. (See <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creating or modifying an additional dialog XML file for a native application</a>.) </p></td>
+   <td><p>The Generate PDF service includes script files for all supported native applications. You can modify these files using an XML editing application.</p><p>To add support for a new native application, you must create a script file. (See <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creating or modifying an additional dialog XML file for a native application</a>.) </p></td>
   </tr>
   <tr>
    <td><p>Generic dialog box instructions </p></td>

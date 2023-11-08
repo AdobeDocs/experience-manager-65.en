@@ -23,7 +23,7 @@ Currently all implementations of the Java Platform support [TrueType](https://en
 
    `/apps/<your-project>/`
 
-1. Under `/apps/<your-project>/` create a new node:
+1. Under `/apps/<your-project>/` create a node:
 
     * **Name**: `fonts`
     * **Type**: `sling:Folder`
@@ -36,7 +36,7 @@ Currently all implementations of the Java Platform support [TrueType](https://en
    >
    >Font files in the repository must have the suffix `*.ttf` or `*.TTF`.
 
-1. Update the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Add the path to your fonts folder; i.e. `/apps/<your-project>/fonts`.
+1. Update the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Add the path to your fonts folder; that is, `/apps/<your-project>/fonts`.
 
 1. Return to CRXDE Lite. You should now see a `.fontlist` node in your folder containing the name of the imported fonts.
 

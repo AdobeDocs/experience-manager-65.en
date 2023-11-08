@@ -655,7 +655,7 @@ The following table lists third-party libraries used within the Communiqué Serv
 
      3. The name "JDOM" must not be used to endorse or promote products
         derived from this software without prior written permission.  For
-        written permission, please contact <request_AT_jdom_DOT_org>.
+        written permission, contact <request_AT_jdom_DOT_org>.
 
      4. Products derived from this software may not be called "JDOM", nor
         may "JDOM" appear in their name, without prior written permission
@@ -686,7 +686,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      individuals on behalf of the JDOM Project and was originally
      created by Jason Hunter <jhunter_AT_jdom_DOT_org> and
      Brett McLaughlin <brett_AT_jdom_DOT_org>.  For more information
-     on the JDOM Project, please see <https://www.jdom.org/>.
+     on the JDOM Project, see <https://www.jdom.org/>.
 
 ```
 
@@ -731,7 +731,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      SAX2 is Free!
 
      I hereby abandon any property rights to SAX 2.0 (the Simple API for
-     XML), and release all of the SAX 2.0 source code, compiled code, and
+     XML), and release all the SAX 2.0 source code, compiled code, and
      documentation contained in this distribution into the Public Domain.
      SAX comes with NO WARRANTY or guarantee of fitness for any
      purpose.
@@ -989,7 +989,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      license and the Export Control Guidelines as set forth in the Terms
      of Use on Sun's website.  By viewing, downloading or otherwise
      copying the Specification, you agree that you have read,
-     understood, and will comply with all of the terms and conditions
+     understood, and will comply with all the terms and conditions
      set forth herein.
 
      Sun hereby grants you a fully-paid, non-exclusive, non-transferable,
@@ -1000,12 +1000,12 @@ The following table lists third-party libraries used within the Communiqué Serv
      applications intended to run on the Java platform or creating a
      clean room implementation of the Specification that: (i) includes a
      complete implementation of the current version of the Specification,
-     without subsetting or supersetting; (ii) implements all of the
+     without subsetting or supersetting; (ii) implements all the
      interfaces and functionality of the Specification without subsetting
      or supersetting; (iii) includes a complete implementation of any
      optional components (as defined by the Specification) which you
      choose to implement, without subsetting or supersetting; (iv)
-     implements all of the interfaces and functionality of such optional
+     implements all the interfaces and functionality of such optional
      components, without subsetting or supersetting; (v) does not add any
      additional packages, classes or interfaces to the "java.*" or
      "javax.*" packages or subpackages or other packages defined by the
@@ -1170,7 +1170,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      This formulation of W3C's notice and license became active on
      April 05 1999 so as to account for the treatment of DTDs, schema's
      and bindings. See the older formulation for the policy prior to this
-     date. Please see our Copyright FAQ for common questions about using
+     date. See our Copyright FAQ for common questions about using
      materials from our site, including specific terms and conditions
      for packages like libwww, Amaya, and Jigsaw.
      Other questions about this notice can be directed to site-policy@
@@ -1246,7 +1246,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      version ensures that W3C software licensing terms are no more
      restrictive than GPL and consequently W3C software may be
      distributed in GPL packages. See the older formulation for the
-     policy prior to this date. Please see our Copyright FAQ for common
+     policy prior to this date. See our Copyright FAQ for common
      questions about using materials from our site, including specific
      terms and conditions for packages like libwww, Amaya, and Jigsaw.
      Other questions about this notice can be directed to site-policy@

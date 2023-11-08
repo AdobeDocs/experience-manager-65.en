@@ -280,7 +280,7 @@ Perform the following steps to create a custom pattern for a specific field type
 
 1. The value of this property varies depending on the field for which you want to define the patterns. For numeric field, the value of the `guideComponentType` property is *fd/af/components/formatter/guideNumericBox*. The value for the Datepicker field is *fd/af/components/formatter/guideDatepicker*.
    ``
-1. You can add a custom pattern by assigning a property to the `textboxpatterns` node. Add a property with a name (for example `pattern1`), and set its value to the pattern you want to add. For example, add a property `pattern1` with value Fax=text{99-999-9999999}. The pattern is available for all the Text Boxes that you use in Adaptive Forms.
+1. You can add a custom pattern by assigning a property to the `textboxpatterns` node. Add a property with a name (for example, `pattern1`), and set its value to the pattern you want to add. For example, add a property `pattern1` with value Fax=text{99-999-9999999}. The pattern is available for all the Text Boxes that you use in Adaptive Forms.
 
    ![Creating custom patterns for fields in CrxDe](assets/creating-custom-patterns.png)
 

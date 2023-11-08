@@ -23,7 +23,7 @@ The Forms service lets you customize a toolbar that is rendered with an HTML for
 
 >[!NOTE]
 >
->This URI location is located in the adobe-forms-core.jar file, which is located in the adobe-forms-dsc.jar file. The adobe-forms-dsc.jar file is located in C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). You can use a file extraction tool, such as Win RAR, to open the adobe.
+>This URI location is in the adobe-forms-core.jar file, which is in the adobe-forms-dsc.jar file. The adobe-forms-dsc.jar file is in C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). You can use a file extraction tool, such as Win RAR, to open the adobe.
 
 You can copy the fscmenu.xml from this location, modify it to meet your requirements, and then place it in a custom URI location. Next, using the Forms Service API, set run-time options that result in the Forms service using your fscmenu.xml file from the specified location. These actions result in the Forms service rendering an HTML form that has a custom toolbar.
 
@@ -50,7 +50,7 @@ You can also specify the absolute locations of these JS and CSS files, such as h
 >
 >It is not recommended that you mix the ways in which these files are referenced. That is, all URIs should be referenced by using either the `FSToolBarURI` keyword or an absolute location.
 
-You can obtain the JS and CSS files by opening the adobe-forms-&lt;appserver&gt;.ear file. Within this file, open the adobe-forms-res.war. All of these files are located in the WAR file. The adobe-forms-&lt;appserver&gt;.ear file is located in the AEM forms installation folder (C:\ is the installation directory). You can open the adobe-forms-&lt;appserver&gt;.ear using a file extraction tool such as WinRAR.
+You can obtain the JS and CSS files by opening the adobe-forms-&lt;appserver&gt;.ear file. Within this file, open the adobe-forms-res.war. All of these files are in the WAR file. The adobe-forms-&lt;appserver&gt;.ear file is in the AEM forms installation folder (C:\ is the installation directory). You can open the adobe-forms-&lt;appserver&gt;.ear using a file extraction tool such as WinRAR.
 
 The following XML syntax shows an example fscmenu.xml file.
 

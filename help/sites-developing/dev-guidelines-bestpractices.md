@@ -13,13 +13,13 @@ exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
 
 Adobe Experience Manager (AEM) components and templates comprise a powerful toolkit. They can be used by developers to provide website business users, editors, and administrators with the functionality to adapt their websites to changing business needs (content agility). All this while retaining the uniform layout of the sites (brand protection).
 
-A typical challenge for a person responsible for a website, or set of websites (for example in a branch office of a global enterprise), is to introduce a new type of content presentation on their websites.
+A typical challenge for a person responsible for a website, or set of websites (for example, in a branch office of a global enterprise), is to introduce a new type of content presentation on their websites.
 
 Let us assume there is a need to add a newslist page to the websites, which lists extracts from other articles already published. The page should have the same design and structure as the rest of the website.
 
 The recommended way to approach such a challenge would be to:
 
-* Reuse an existing template so you can create a new type of page. The template roughly defines page structure (navigation elements, panels, and so on), which is further fine-tuned by its design (CSS, graphics).
+* Reuse an existing template so you can create a type of page. The template roughly defines page structure (navigation elements, panels, and so on), which is further fine-tuned by its design (CSS, graphics).
 * Use the paragraph system (parsys/iparsys) on the new pages.
 * Define access right to the Design mode of the paragraph systems, so that only authorized people (usually the administrator) can change them.
 * Define the components allowed in the given paragraph system so that editors can then place the required components on the page. In this case, it could be a list component, which can traverse a subtree of pages and extract the information according to predefined rules.
@@ -40,7 +40,7 @@ The following general rules for developers make sense in most usual projects:
 
 ### Customizing Components and Other Elements {#customizing-components-and-other-elements}
 
-When creating your own components or customizing an existing component, it is often easiest (and safest) to reuse existing definitions. The same principles also apply to other elements within AEM, for example the error handler.
+When creating your own components or customizing an existing component, it is often easiest (and safest) to reuse existing definitions. The same principles also apply to other elements within AEM, for example, the error handler.
 
 This can be done by copying and overlaying the existing definition. In other words, copying the definition from `/libs` to `/apps/<your-project>`. This new definition, in `/apps`, can be updated according to your requirements.
 

@@ -359,7 +359,7 @@ When an Experience Manager instance is configured to handle video encoding throu
 
    >[!NOTE]
    >
-   >Best practice: Most assets are ingested within minutes at most (for example, images). But in certain instances - larger videos for example - increase the timeout value to 7200 seconds (two hours) to accommodate long processing time. Otherwise, this Dynamic Media Classic upload job is marked as **[!UICONTROL UploadFailed]** in the JCR (Java™ Content Repository) metadata.
+   >Best practice: Most assets are ingested within minutes at most (for example, images). But in certain instances - larger videos for example, - increase the timeout value to 7200 seconds (two hours) to accommodate long processing time. Otherwise, this Dynamic Media Classic upload job is marked as **[!UICONTROL UploadFailed]** in the JCR (Java™ Content Repository) metadata.
 
 1. Select **[!UICONTROL Save]**.
 
@@ -377,7 +377,7 @@ When an asset is added into Experience Manager Assets, it is automatically uploa
 
 1. Select the Experience Manager icon and navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
 1. Under the Dynamic Media heading, under Available Configurations, select **[!UICONTROL dms7 (Dynamic Media]**).
-1. Select the **[!UICONTROL Advanced]** tab, select the **[!UICONTROL Enable Automatic Upload]** check box, then select **[!UICONTROL OK]**. You now must configure the DAM Asset workflow to include uploading to Dynamic Media Classic.
+1. Select the **[!UICONTROL Advanced]** tab, select the **[!UICONTROL Enable Automatic Upload]** check box, then select **[!UICONTROL OK]**. You must configure the DAM Asset workflow to include uploading to Dynamic Media Classic.
 
    >[!NOTE]
    >

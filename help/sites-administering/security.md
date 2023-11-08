@@ -165,7 +165,7 @@ Actions can be performed on a page (resource). For each page in the hierarchy, y
     <ul>
      <li>modify existing content on the page and on any child pages.</li>
      <li>create paragraphs on the page or on any child page.</li>
-    </ul> <p>At the JCR level, users can edit a resource by editing its properties, locking, versioning, nt-modifications, and they have complete write permission on nodes defining a jcr:content child node. For example cq:Page, nt:file, cq:Asset.</p> </td>
+    </ul> <p>At the JCR level, users can edit a resource by editing its properties, locking, versioning, nt-modifications, and they have complete write permission on nodes defining a jcr:content child node. For example, cq:Page, nt:file, cq:Asset.</p> </td>
   </tr>
   <tr>
    <td>Create</td>

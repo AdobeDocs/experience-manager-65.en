@@ -1,13 +1,9 @@
 ---
 title: Using AEM Document Services Programmatically
-seo-title: Using AEM Document Services Programmatically
 description: Learn how to use Document Services APIs to Digitally sign, encrypt, and generate PDF documents.
-seo-description: Learn how to use Document Services APIs to Digitally sign, encrypt, and generate PDF documents.
-uuid: bf5ee197-4daf-4a64-8b6d-2c0d1f232b1c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
 ---
 # Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
@@ -629,7 +625,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 ### Getting signature {#getting-signature}
 
-You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. If you are not sure of the signature field names located in a PDF document or to verify the names, then retrieve the names programmatically. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify. If you are not sure of the signature field names in a PDF document or to verify the names, then retrieve the names programmatically. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntax**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -656,7 +652,7 @@ You can retrieve the names of all signature fields that are located in a PDF doc
  </tbody>
 </table>
 
-The following Java code example retrieves the signature information for the given signature field located in a PDF document.
+The following Java code example retrieves the signature information for the given signature field in a PDF document.
 
 ```java
 /*************************************************************************
@@ -698,12 +694,12 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.adobe.fd.signatures.client.types.PDFSignature;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
- * The following Java code example retrieves the Signature Info for the given signature field located in a PDF document.
+ * The following Java code example retrieves the Signature Info for the given signature field in a PDF document.
  */
 
 @Component
@@ -754,7 +750,7 @@ public class GetSignature {
 
 ### Getting signature field list&nbsp; {#getting-signature-field-list-nbsp}
 
-You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. If you are unsure of the signature field names in a PDF document, you can programmatically retrieve and verify them. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify. If you are unsure of the signature field names in a PDF document, you can programmatically retrieve and verify them. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntax**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
@@ -765,7 +761,7 @@ You can retrieve the names of all signature fields that are located in a PDF doc
 | `inDoc` |Document object containing PDF |
 | `unlockOptions` |Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted. |
 
-The following Java code example retrieves the names of signature fields located in a PDF document.
+The following Java code example retrieves the names of signature fields in a PDF document.
 
 ```java
 /*************************************************************************
@@ -803,12 +799,12 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
- * The following Java code example retrieves the names of signature fields located in a PDF document.
+ * The following Java code example retrieves the names of signature fields in a PDF document.
  */
 
 @Component
@@ -869,7 +865,7 @@ public class GetSignatureFields {
 
 ### Modifying signature fields&nbsp; {#modifying-signature-fields-nbsp}
 
-You can modify signature fields that are located in a PDF document. Modifying a signature field involves manipulating its signature field lock dictionary values or seed value dictionary values.
+You can modify signature fields that are in a PDF document. Modifying a signature field involves manipulating its signature field lock dictionary values or seed value dictionary values.
 
 A field lock dictionary specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from editing the field. A seed value dictionary contains constraining information that is used at the time the signature is applied. For example, you can change permissions that control the actions that can occur without invalidating a signature.
 
@@ -950,12 +946,12 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesOtherException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can modify signature fields that are located in a PDF document by using the Java API and web service API. Modifying a signature field involves
+ * You can modify signature fields that are in a PDF document by using the Java API and web service API. Modifying a signature field involves
  * manipulating its signature field lock dictionary values or seed value dictionary values.
  * A field lock dictionary specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from making
  * changes to the field. A seed value dictionary contains constraining information that is used at the time the signature is applied.
  * For example, you can change permissions that control the actions that can occur without invalidating a signature.
- * By modifying an existing signature field, you can make changes to the PDF document to reflect changing business requirements. For example,
+ * By modifying an existing signature field, you can change the PDF document to reflect changing business requirements. For example,
  * a new business requirement may require locking all document fields after the document is signed.
  * This section explains how to modify a signature field by amending both field lock dictionary and seed value dictionary values.
  * Changes made to the signature field lock dictionary result in all fields in the PDF document being locked when a signature field is signed.
@@ -2604,17 +2600,17 @@ public class VerifyFieldEncryptedPDF {
 
              //Determine the status of the signature
              if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-                 myStatus = "The signatures located in the dynamic PDF form are unknown";
+                 myStatus = "The signatures in the dynamic PDF form are unknown";
              else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-                 myStatus = "The signatures located in the PDF document are unknown";
+                 myStatus = "The signatures in the PDF document are unknown";
              else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-                 myStatus = "The signatures located in a certified PDF form are valid";
+                 myStatus = "The signatures in a certified PDF form are valid";
              else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-                 myStatus = "The signatures located in a signed dynamic PDF form are valid";
+                 myStatus = "The signatures in a signed dynamic PDF form are valid";
              else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-                 myStatus = "The signatures located in a certified PDF document are valid";
+                 myStatus = "The signatures in a certified PDF document are valid";
              else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-                 myStatus = "The signatures located in a signed PDF document are valid";
+                 myStatus = "The signatures in a signed PDF document are valid";
              else if (sigStatus == SignatureStatus.SignatureFormatError)
                  myStatus = "The format of a signature in a signed document is invalid";
              else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -2908,7 +2904,7 @@ public class VerifyEncryptedPDFDoc {
                  dssPrefs,
                  resourceResolver);
 
-             //Get a list of all signatures that are located in the PDF document
+             //Get a list of all signatures that are in the PDF document
              List allSignatures = docInfo.getVerificationInfos();
 
            //Create an Iterator object and iterate through
@@ -2924,17 +2920,17 @@ public class VerifyEncryptedPDFDoc {
 
                    //Determine the status of the signature
                      if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-                         myStatus = "The signatures located in the dynamic PDF form are unknown";
+                         myStatus = "The signatures in the dynamic PDF form are unknown";
                      else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-                         myStatus = "The signatures located in the PDF document are unknown";
+                         myStatus = "The signatures in the PDF document are unknown";
                      else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-                         myStatus = "The signatures located in a certified PDF form are valid";
+                         myStatus = "The signatures in a certified PDF form are valid";
                      else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-                         myStatus = "The signatures located in a signed dynamic PDF form are valid";
+                         myStatus = "The signatures in a signed dynamic PDF form are valid";
                      else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-                         myStatus = "The signatures located in a certified PDF document are valid";
+                         myStatus = "The signatures in a certified PDF document are valid";
                      else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-                         myStatus = "The signatures located in a signed PDF document are valid";
+                         myStatus = "The signatures in a signed PDF document are valid";
                      else if (sigStatus == SignatureStatus.SignatureFormatError)
                          myStatus = "The format of a signature in a signed document is invalid";
                      else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -3174,7 +3170,7 @@ public class ClearSignatureField {
 
 ### Getting certifying signature field {#getting-certifying-signature-field}
 
-You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify. If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntax**: `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
@@ -3238,8 +3234,8 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
@@ -3294,7 +3290,7 @@ public class GetCertifyingSignatureField {
 
 ### Getting PDF encryption type {#getting-pdf-encryption-type}
 
-You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify. If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntax**: `void getPDFEncryption(Document inDoc)`
 
@@ -3313,7 +3309,7 @@ You can retrieve the names of all signature fields that are located in a PDF doc
  </tbody>
 </table>
 
-The following Java code example retrieves the Signature information for the given signature field located in a PDF document.
+The following Java code example retrieves the Signature information for the given signature field in a PDF document.
 
 ```java
 /*************************************************************************
@@ -3355,12 +3351,12 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.adobe.fd.encryption.client.EncryptionTypeResult;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
- * The following Java code example retrieves the Signature Info for the given signature field located in a PDF document.
+ * The following Java code example retrieves the Signature Info for the given signature field in a PDF document.
  */
 
 @Component

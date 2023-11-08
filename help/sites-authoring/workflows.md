@@ -21,7 +21,7 @@ For example, when publishing, an editor has to review the content - before a sit
 
 Typically:
 
-* Content authors apply workflows to pages as well as participate in workflows.
+* Content authors apply workflows to pages and participate in workflows.
 * The workflows that you use are specific to the business processes of your organization.
 
 The following pages cover:

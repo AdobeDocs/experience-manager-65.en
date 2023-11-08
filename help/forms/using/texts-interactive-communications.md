@@ -81,7 +81,7 @@ You can edit an existing text document fragment using the following steps. You c
 
 You can personalize text document fragments by inserting the form data model properties. By inserting form data model properties in text, you can fetch and populate recipient-specific data from the associated data source while previewing an Interactive Communication. For more information on form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-If you have specified a form data model while creating a text, the properties in the form data model appear in the left pane of the text editor. The specified form data model should be same for the text document fragment as well as the Interactive Communication that includes it. 
+If you have specified a form data model while creating a text, the properties in the form data model appear in the left pane of the text editor. The specified form data model should be same for the text document fragment and the Interactive Communication that includes it. 
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 

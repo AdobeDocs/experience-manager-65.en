@@ -166,7 +166,7 @@ It creates:
 
 * A child node of type `cq:PageContent` with Page Content properties
 
-You can add properties to your template: refer to the [Creating a Property](#creating-a-property) section.
+You can add properties to your template: see the [Creating a Property](#creating-a-property) section.
 
 ## Creating a Component {#creating-a-component}
 

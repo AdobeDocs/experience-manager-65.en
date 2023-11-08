@@ -232,7 +232,7 @@ Dynamically create a DDX document and disassemble a PDF document by using the As
 
     * Create a `System.IO.MemoryStream` object by using its constructor.
     * Populate the `MemoryStream` object with the DDX document by using the `XmlElement` object that represents the DDX document. Invoke the `XmlElement` object's `Save` method and pass the `MemoryStream` object.
-    * Create a byte array and populate it with data located in the `MemoryStream` object. The following code shows this application logic:
+    * Create a byte array and populate it with data in the `MemoryStream` object. The following code shows this application logic:
 
       ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 

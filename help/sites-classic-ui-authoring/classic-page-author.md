@@ -36,7 +36,7 @@ To aid you when authoring pages the author environment provides features such as
   A floating "inspector" window that appears on the editable page. From here new components can be dragged onto the page and page-specific actions can be executed.
 
 * **[Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-  On the left side of each authorable page, the content finder provides quick access to a range of assets, including digital assets (such as other images, Flash elements and documents), other pages and paragraphs. These items can be dragged to the page; for example to position assets or create links to other pages.
+  On the left side of each authorable page, the content finder provides quick access to a range of assets, including digital assets (such as other images, Flash elements and documents), other pages and paragraphs. These items can be dragged to the page; for example, to position assets or create links to other pages.
 
 * **Context menu**
   Right-clicking on most onscreen elements (for example, paragraphs on the page) brings up a context menu with appropriate action options.

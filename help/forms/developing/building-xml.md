@@ -101,7 +101,7 @@ The result of this simple script is a new XML document with a variable node that
 
 **Using an Iterative loop to Add Nodes to the XML**
 
-Nodes can be added to an existing XML variable within the process, too. The variable, node, contains the XML object that was just created.
+Nodes can be added to an existing XML variable within the process, too. The variable, node, contains the XML object that was created.
 
 ```xml
 Document document = patExecContext.getProcessDataValue("/process_data/node");
@@ -120,7 +120,7 @@ if (currentChild.getNodeType() == Node.ELEMENT_NODE)
 
 {
 
-// found the top level node
+// found the top-level node
 
 Element newResource = document.createElement("resource");
 

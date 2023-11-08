@@ -1,12 +1,10 @@
 ---
 title: Interactive images
 description: Learn how to work with interactive images in Dynamic Media
-uuid: 0bdb73f7-6ce9-4cdf-b6b5-a4d3d4e19a23
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 feature: Interactive Images
 role: User, Admin
@@ -69,7 +67,7 @@ See [(Optional) Create an Interactive Image viewer preset](/help/assets/managing
 >This task is only required if the following are true:
 >
 >* You want to add interactivity to your image by triggering to Quickview.
->* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+>* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM&reg; WebSphere&reg; Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 >
 >If your implementation of Experience Manager uses eCommerce, you can skip this task and proceed to the next task.
 
@@ -419,9 +417,9 @@ The embed code returned by Experience Manager Assets already has a ready-to-use 
              s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
-                    //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
+                    //To pass other parameter from the hotspot, you must add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
-                    //Please refer to your Quickviewer plugin for the Quickview call
+                    //See your Quickviewer plugin for the Quickview call
                  },
              });
         */

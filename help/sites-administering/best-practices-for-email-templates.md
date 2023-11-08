@@ -29,7 +29,7 @@ Use these best practices when creating your own newsletter.
 >
 >All campaign content should be created under a `master` page of type `cq/personalization/components/ambitpage`.
 >
->For example if your planned campaign structure is something like
+>For example, if your planned campaign structure is something like
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >

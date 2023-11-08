@@ -13,7 +13,7 @@ For the AEM CIF Core Components, caching is configured on a component basis, so 
 
 ### Configuration
 
-Once configured for a given component, the cache starts storing GraphQL queries and responses as defined by each cache configuration entry. The size of the cache and the caching duration of each entry is to be defined on a project basis, depending for example on how often the catalog data might change, how critical it is that a component always displays the latest possible data, and so on. Note that there isn't any cache invalidation, so be careful when setting the cache durations.
+Once configured for a given component, the cache starts storing GraphQL queries and responses as defined by each cache configuration entry. The size of the cache and the caching duration of each entry is to be defined on a project basis, depending for example, on how often the catalog data might change, how critical it is that a component always displays the latest possible data, and so on. Note that there isn't any cache invalidation, so be careful when setting the cache durations.
 
 When configuring caching for components, the cache name must be the name of the **proxy** components that you define in your project.
 
@@ -21,7 +21,7 @@ Before the client sends a GraphQL request, it checks if that **exact** same Grap
 
 ### Examples
 
-We recommend that to configure some caching for the search service that fetches all the available aggregations/facets values displayed on the product search and category pages. These values typically only change when a new attribute is for example added to products, so the duration for this cache entry can be "large" if the set of product attributes does not change often. While this is project-specific, Adobe recommends values of a few minutes in project development phases and a few hours on stable production systems.
+We recommend that to configure some caching for the search service that fetches all the available aggregations/facets values displayed on the product search and category pages. These values typically only change when a new attribute is for example, added to products, so the duration for this cache entry can be "large" if the set of product attributes does not change often. While this is project-specific, Adobe recommends values of a few minutes in project development phases and a few hours on stable production systems.
 
 This is typically configured with the following cache entry:
 

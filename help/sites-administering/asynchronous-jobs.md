@@ -49,7 +49,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. To view extra details, for example description and logs, select the operation and click **[!UICONTROL Open]** from the toolbar.
+1. To view extra details, for example, description and logs, select the operation and click **[!UICONTROL Open]** from the toolbar.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -82,7 +82,7 @@ You can modify the schedule for the purge job and the duration for which details
 
 ## Configure Asynchronous Processing {#configuring-asynchronous-processing}
 
-You can configure the threshold number of assets, pages, or references for AEM to process a particular operation asynchronously as well as toggle email notifications for when the jobs are processed.
+You can configure the threshold number of assets, pages, or references for AEM to process a particular operation asynchronously and toggle email notifications for when the jobs are processed.
 
 ### Configure Asynchronous Asset Delete Operations {#configuring-synchronous-delete-operations}
 

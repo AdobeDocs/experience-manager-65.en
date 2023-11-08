@@ -66,7 +66,7 @@ For example, a session store is based on a JSON object and retrieved via a JSON 
 * The store is pre-populated with default values (init properties), but the request fails (timeout). There is only one initialization with default values.
 * The store is pre-populated.
 
-When the delay is set to `true` or a number of milliseconds, the method waits before calling the callback method. If another initialization event is triggered before the delay is passed, it will wait until the delay time is exceeded with no initialization event. This enables waiting for a second initialization event to be triggered and calls the callback function in the most optimal case.
+When the delay is set to `true` or several milliseconds, the method waits before calling the callback method. If another initialization event is triggered before the delay is passed, it will wait until the delay time is exceeded with no initialization event. This enables waiting for a second initialization event to be triggered and calls the callback function in the most optimal case.
 
 **Parameters**
 

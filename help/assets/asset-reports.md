@@ -107,7 +107,7 @@ To generate reports, do the following:
    ![Select or cancel the selection of report columns](assets/custom_columns.png)
 
 1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
-1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. The same status appears in the notifications inbox.To view the report page, click the report link. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
+1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example, [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. The same status appears in the notifications inbox.To view the report page, click the report link. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    ![A generated report](assets/report_page.png)
 

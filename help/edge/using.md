@@ -14,7 +14,7 @@ With Edge Delivery, authoring is easy, fast, and flexible. You can take two diff
 * Document-based authoring (such as Microsoft Word or Google Docs) - [Refer to this link for more details](https://www.hlx.live/docs/authoring).
 * Page Editor/Universal Editor - Contact your Adobe Sales Representative.
 
-In the case of document-based authoring, you can work with a variety of sources such as Microsoft Word and Google Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
+If there is document-based authoring, you can work with a variety of sources such as Microsoft Word and Google Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
 
 ## Publishing {#publishing-edge}
 
@@ -22,7 +22,7 @@ With Edge Delivery, publishing content is seamless regardless of your content so
 
 ## Edge Delivery Services and GitHub {#github-edge}
 
-Edge Delivery leverages GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and JavaScript in GitHub. Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
+Edge Delivery uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and JavaScript in GitHub. Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
 
 ## Using the Sidekick {#using-sidekick}
 

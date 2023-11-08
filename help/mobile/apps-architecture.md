@@ -53,9 +53,9 @@ The body of an Angular page is rendered differently depending on whether wcmMode
 
 In author mode, each individual page is rendered separately. Angular does not handle routing between pages, nor is an ng-view used to load a partial template that contains the page's components. Instead, the content of the page template (template.jsp) is included on the server side via the `cq:include` tag.
 
-This strategy enables the author features (such as adding and editing components in the paragraph system, Sidekick, design mode, etc.) to function without modification. Pages that rely on client side rendering, such as those for apps, do not perform well in AEM author mode.
+This strategy enables the author features (such as adding and editing components in the paragraph system, Sidekick, design mode, and so on) to function without modification. Pages that rely on client side rendering, such as those for apps, do not perform well in AEM author mode.
 
-Note that the template.jsp include is wrapped in a `div` element that contains the `ng-controller` directive. This structure enables the linking of the DOM contents with the controller. Therefore, although pages that render themselves on the client side fail, individual components which do so work fine (see section on Components below).
+The template.jsp include is wrapped in a `div` element that contains the `ng-controller` directive. This structure enables the linking of the DOM contents with the controller. Therefore, although pages that render themselves on the client side fail, individual components which do so work fine (see section on Components below).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -69,7 +69,7 @@ In publish mode (such as when the app is exported using Content Sync), all pages
 
 There is only one HTML page in a SPA (a page that contains the `<html>` element). This page is known as the "layout template". In Angular terminology, it is "...a template that is common for all views in our application." Consider this page as the 'top-level app page'. By convention the top-level app page is the `cq:Page` node of your application that is closest to the root (and is not a redirect).
 
-Since the actual URI of your app does not change in publish mode, references to external assets from this page must use relative paths. Therefore, a special image component is provided that takes this top level page into account when rendering images for exporting.
+Since the actual URI of your app does not change in publish mode, references to external assets from this page must use relative paths. Therefore, a special image component is provided that takes this top-level page into account when rendering images for exporting.
 
 As an SPA, this layout template page simply generates a div element with an ng-view directive.
 
@@ -122,7 +122,7 @@ If necessary, you can override this script to handle more complex paths, includi
 
 ### angular-app-controllers.js.jsp {#angular-app-controllers-js-jsp}
 
-In Angular, Controllers wire up variables in the \$scope, exposing them to the view. The angular-app-controllers.js.jsp script follows the pattern illustrated by angular-app-module.js.jsp in that it iterates through each descendant page (including itself) and outputs the controller fragment that each page defines (via controller.js.jsp). The module it defines is called `cqAppControllers` and must be listed as a dependency of the top level app module so that the page controllers are made available.
+In Angular, Controllers wire up variables in the \$scope, exposing them to the view. The angular-app-controllers.js.jsp script follows the pattern illustrated by angular-app-module.js.jsp in that it iterates through each descendant page (including itself) and outputs the controller fragment that each page defines (via controller.js.jsp). The module it defines is called `cqAppControllers` and must be listed as a dependency of the top-level app module so that the page controllers are made available.
 
 ### controller.js.jsp {#controller-js-jsp}
 
@@ -138,7 +138,7 @@ The controller.js.jsp script generates the controller fragment for each page. Th
 ])
 ```
 
-Note that the `data` variable is assigned the promise returned by the Angular `$http.get` method. Each component included in this page can, if desired, make some .json content available (via its angular.json.jsp script) and act on the contents of this request when it resolves. The request is very fast on mobile devices because it simply accesses the file system.
+The `data` variable is assigned the promise returned by the Angular `$http.get` method. Each component included in this page can, if desired, make some .json content available (via its angular.json.jsp script) and act on the contents of this request when it resolves. The request is very fast on mobile devices because it simply accesses the file system.
 
 In order for a component to be part of the controller in this way, it should extend the /libs/mobileapps/components/angular/ng-component component and include the `frameworkType: angular` property.
 
@@ -154,11 +154,11 @@ This script simply outputs the Angular dependencies of the top-level Angular app
 
 ### header.jsp {#header-jsp}
 
-A script to place static content at the top of the app. This content is included by the top level page, outside the scope of ng-view.
+A script to place static content at the top of the app. This content is included by the top-level page, outside the scope of ng-view.
 
 ### footer.jsp {#footer-jsp}
 
-A script to place static content at the bottom of the app. This content is included by the top level page, outside the scope of ng-view.
+A script to place static content at the bottom of the app. This content is included by the top-level page, outside the scope of ng-view.
 
 ### js_clientlibs.jsp {#js-clientlibs-jsp}
 
@@ -185,7 +185,7 @@ Note the GUID '24BA22ED-7D06-4330-B7EB-F6FC73251CA3' in the path.
 
 As a PhoneGap developer, the content that you are concerned with is located below the www directory. To access the app assets, use relative paths.
 
-To compound the issue, your PhoneGap application uses the single page app (SPA) pattern so that the base URI (excluding the hash) never changes. Therefore, every asset, template, or script that you reference **must be relative to your top-level page.** The top level page initializes the Angular routing and controllers by virtue of `*<name>*.angular-app-module.js` and `*<name>*.angular-app-controllers.js`. This page should be the closest page to the root of the repository that *does not *extend a sling:redirect.
+To compound the issue, your PhoneGap application uses the single page app (SPA) pattern so that the base URI (excluding the hash) never changes. Therefore, every asset, template, or script that you reference **must be relative to your top-level page.** The top-level page initializes the Angular routing and controllers by virtue of `*<name>*.angular-app-module.js` and `*<name>*.angular-app-controllers.js`. This page should be the closest page to the root of the repository that *does not *extend a sling:redirect.
 
 Several helper methods are available for dealing with relative paths:
 
@@ -357,11 +357,11 @@ The plugins directory is populated by each plugin listed in the `.cordova/hooks/
 
 #### www/ {#www}
 
-The www directory contains all of the web content (HTML, JS, and CSS files) that implements the appearance and behaviour of the app. Except for the exceptions described below, this content originates from AEM and is exported into its static form via Content Sync.
+The www directory contains all the web content (HTML, JS, and CSS files) that implements the appearance and behaviour of the app. Except for the exceptions described below, this content originates from AEM and is exported into its static form via Content Sync.
 
 #### www/config.xml {#www-config-xml}
 
-The PhoneGap documentation (`https://docs.phonegap.com`) refers to this file as a 'global configuration file'. The config.xml contains many app properties, such as the name of the app, the app 'preferences' (for example whether or not an iOS webview allows overscroll), and plugin dependencies that are *only* consumed by PhoneGap build.
+The PhoneGap documentation (`https://docs.phonegap.com`) refers to this file as a 'global configuration file'. The config.xml contains many app properties, such as the name of the app, the app 'preferences' (for example, whether or not an iOS webview allows overscroll), and plugin dependencies that are *only* consumed by PhoneGap build.
 
 The config.xml file is a static file in AEM and is exported as-is via Content Sync.
 

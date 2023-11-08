@@ -196,7 +196,7 @@ You can have only one signer or multiple signers for an adaptive form. When you 
 
     * **[!UICONTROL Is the signer and the person filling the form same?]:** Select **Yes**, if form filler and first signer are the same person. If the option is set to **No,** then do not use the signature step component in the adaptive form. If the form contains a Signature Step component, then the field is automatically set to Yes.
 
-    * **[!UICONTROL Signer Email address]:** Specify email address of the signer. Signer receives to be signed documents/form on the specified email address. You can choose to use an email address provided in a form field, in AEM user profile of the logged-in user, or manually enter an email address. It is a mandatory step. Ensure that the email address of the first signer or the only signer (in case of single signer) is not identical to [!DNL Adobe Sign] account used to configure AEM cloud services.
+    * **[!UICONTROL Signer Email address]:** Specify email address of the signer. Signer receives to be signed documents/form on the specified email address. You can choose to use an email address provided in a form field, in AEM user profile of the logged-in user, or manually enter an email address. It is a mandatory step. Ensure that the email address of the first signer or the only signer (if there is a single signer) is not identical to [!DNL Adobe Sign] account used to configure AEM cloud services.
 
     * **[!UICONTROL Signer Authentication Method]:** Specify the method to authenticate a user before opening a form for signing. You can choose between phone, knowledge base, and social identity-based authentication. For Adobe Acrobat Sign Solutions for Government only phone and knowledge-based authentication options are available.
 
@@ -223,7 +223,7 @@ Also, an [!DNL Adobe Sign] enabled adaptive form is submitted only after all the
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the adaptive form is stored temporarily on Forms Portal. Use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 Your form signing experience is ready. You can preview the form to verify the signing experience. On the published form, [!DNL Adobe Sign] Block fields are displayed when a signer receives the form for signing through an email. This experience is also known as out-of-form signing experience. You can also configure an in-form signing experience for the first signer, for detailed steps see [Create in-form signing experience](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
@@ -350,7 +350,7 @@ When [!DNL Adobe Sign] service is configured for an adaptive form, the service f
 * Ensure that the API application on [!DNL Adobe Sign] server used to configure [!DNL Adobe Sign] Cloud service has required permissions.
 * If you are using multiple [!DNL Adobe Sign] Cloud services, point the **[!UICONTROL oAuth URL]** of all the services to same **[!UICONTROL Adobe Sign Shard]**.
 
-* Use separate email addresses to configure [!DNL Adobe Sign] account and for the first signer and single signer. The email address of the first signer or the only signer (in case of the single signer) cannot be identical to [!DNL Adobe Sign] account used to configure AEM cloud services.
+* Use separate email addresses to configure [!DNL Adobe Sign] account and for the first signer and single signer. The email address of the first signer or the only signer (if there is the single signer) cannot be identical to [!DNL Adobe Sign] account used to configure AEM cloud services.
 
 ### AEM [!DNL Forms] workflow configured for an [!DNL Adobe Sign] enabled adaptive form does not start {#adobe-sign-aem-form-workflow-failures}
 

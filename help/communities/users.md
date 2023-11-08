@@ -68,7 +68,7 @@ To manage users and user groups registered in the author environment, use the [S
 
 | If Member of Group... |Primary Role |
 |---|---|
-| administrators |The administrators group consists of system administrators who have all the abilities of a Community Administrator as well as the ability to manage the Community Administrators group. |
+| administrators |The administrators group consists of system administrators who have all the abilities of a Community Administrator and the ability to manage the Community Administrators group. |
 | Community Administrators |The Community Administrators group automatically becomes a member of all community sites and any community groups created on the site. An initial member of the Community Administrators group is the administrators group. In the author environment, Community Administrators are able to create community sites, manage sites, manage members (they can ban members from the community), and moderate content. |
 | Community &lt;*site name*&gt; Sitecontentmanager |The Community Site Content Manager is able to perform traditional AEM authoring, content creation, and modifying pages for a community site. |
 | None |An anonymous site visitor may not access the author environment. |
@@ -194,7 +194,7 @@ Follow the same steps as creating and assigning a user to the role of enablement
 
 ### LDAP Integration {#ldap-integration}
 
-AEM supports the use of LDAP for authentication of users as well as creation of user accounts. This is detailed in [Configuring LDAP with AEM 6](../../help/sites-administering/ldap-config.md).
+AEM supports the use of LDAP for authentication of users and creation of user accounts. This is detailed in [Configuring LDAP with AEM 6](../../help/sites-administering/ldap-config.md).
 
 Following are some configuration details specific for community members and member groups.
 

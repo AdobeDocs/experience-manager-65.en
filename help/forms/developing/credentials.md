@@ -73,7 +73,7 @@ Before you can programmatically import a credential into AEM Forms, create a cre
 
 **Reference the credential**
 
-Reference a credential that you want to import into AEM Forms. The quick start associated with this section references a P12 file located in the file system.
+Reference a credential that you want to import into AEM Forms. The quick start associated with this section references a P12 file in the file system.
 
 **Perform the import operation**
 

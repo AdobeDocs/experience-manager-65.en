@@ -45,7 +45,7 @@ Using Adobe Experience Manager, content authors and/or website owners can create
   Guidelines on how administrators can configure AEM for producing accessible content.
 
 * [Creating Accessible Adaptive Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
-  Adobe Experience Manager (AEM) includes a number of features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
+  Adobe Experience Manager (AEM) includes several features and capabilities that enhance the usability of adaptive forms for users with different abilities. The solution also assists form authors in creating accessible adaptive forms.
 
 >[!NOTE]
 >
@@ -53,4 +53,4 @@ Using Adobe Experience Manager, content authors and/or website owners can create
 
 ## Accessibility at Adobe {#accessibility-at-adobe}
 
-For additional information, please visit the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+For additional information, visit the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).

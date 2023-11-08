@@ -1,8 +1,6 @@
 ---
 title: How to create or customizing Adaptive Form themes?
-seo-title: How to create a theme for Adaptive Forms Core Components?
 description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
-seo-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 keywords: create adaptive forms core components theme, create new theme, customize theme, upload new theme, use theme in forms, delete a theme, create a theme in AEM 6.5 forms
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
@@ -56,7 +54,7 @@ You can [customize any of these themes to create a theme](#customize-a-theme-cor
 
 ## Customize a theme {#customize-a-theme-core-components-based-adaptive-forms}
 
-Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you make changes to its design elements, layout, colors, typography, and sometimes the underlying code. This lets you create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
+Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you change its design elements, layout, colors, typography, and sometimes the underlying code. This lets you create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
 
 >[!NOTE]
 >

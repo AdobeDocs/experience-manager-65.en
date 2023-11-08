@@ -117,7 +117,7 @@ To import data into a PDF form, you must reference either an XML form created in
 
 **Reference an XML data source**
 
-To import form data, you must reference a valid data source. To import data into an XFA XML form created in Designer, you must use an XDP XML data source. If you reference an Acrobat form, then you must use an XFDF data source. For each field that you want to import data into, a value must be specified. If an element located in the XML data source does not correspond to a field in the form, then the element is ignored.
+To import form data, you must reference a valid data source. To import data into an XFA XML form created in Designer, you must use an XDP XML data source. If you reference an Acrobat form, then you must use an XFDF data source. For each field that you want to import data into, a value must be specified. If an element in the XML data source does not correspond to a field in the form, then the element is ignored.
 
 **Import data into the PDF form**
 
@@ -171,7 +171,7 @@ Import form data by using the Form Data Integration API (Java):
     * The `com.adobe.idp.Document` object that stores the PDF form.
     * The `com.adobe.idp.Document` object that stores form data.
 
-   The `importData` method returns a `com.adobe.idp.Document` object that stores a PDF form that contains the data located in the XML data source.
+   The `importData` method returns a `com.adobe.idp.Document` object that stores a PDF form that contains the data in the XML data source.
 
 1. Save the PDF form as a PDF file.
 
@@ -236,7 +236,7 @@ Import form data by using the Form Data Integration API (web service):
     * The `BLOB` object that stores the PDF form.
     * The `BLOB` object that stores form data.
 
-   The `importData` method returns a `BLOB` object that stores a PDF form that contains the data located in the XML data source.
+   The `importData` method returns a `BLOB` object that stores a PDF form that contains the data in the XML data source.
 
 1. Save the PDF form as a PDF file.
 

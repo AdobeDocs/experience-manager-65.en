@@ -19,11 +19,11 @@ This document helps you understand headless content delivery, how AEM supports h
 
 ## Full-Stack Content Delivery {#full-stack}
 
-Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
+Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have used them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
 
 ![The classic full-stack CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
+In a full-stack CMS, all the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
 * There is one system to maintain.
 * Content is managed centrally.
@@ -44,7 +44,7 @@ When we talk about a headless CMS, the CMS manages the content and continues to 
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
+The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), and so on, take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
 Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
@@ -60,7 +60,7 @@ For AEM you, as a Content Architect, will perform the content modeling to design
 
 This is more of a development detail - but it might interest you, just to complete the story.
 
-Once you've created the Content Fragment Models, and your authors have used them to generate the content, the headless applications will need to access this content. 
+Once you've created the Content Fragment Models, and your authors have used them to generate the content, the headless applications must access this content. 
 
 Adobe Experience Manager (AEM), can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. Using the API a developer can formulate queries that select specific content.This selection process is based on *your* Content Fragment Models. 
 

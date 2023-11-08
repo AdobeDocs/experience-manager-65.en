@@ -23,7 +23,7 @@ The Forms service lets you create interactive data capture client applications t
 
 When an end-user requests a form, a client application sends the request to the Forms service, which returns the form in an appropriate format. As soon as the Forms service receives a request, it merges data with a form design and then delivers the form in the desired format. The Form service output is an interactive form, typically a PDF document. An interactive form enables users to fill in fields located on the form.
 
-Depending upon the type of client application, you can write the form to a client web browser or save the form as a PDF file. A web-based application can write the form to web browser. A desktop application can save the form as a PDF file. To demonstrate how to write out to a web browser and to a PDF file, the quick starts located in the *Rendering Forms* section are organized in the following manner:
+Depending upon the type of client application, you can write the form to a client web browser or save the form as a PDF file. A web-based application can write the form to web browser. A desktop application can save the form as a PDF file. To demonstrate how to write out to a web browser and to a PDF file, the quick starts in the *Rendering Forms* section are organized in the following manner:
 
 * The Java API strongly typed (SOAP mode) examples are a Java servlet.
 * The web service (Java Base64) examples are a Java servlet.
@@ -35,7 +35,7 @@ Depending upon the type of client application, you can write the form to a clien
 
   You can pass a form design (an XDP file) or a PDF document to the Forms service using one of two ways:
 
-* You can reference the form design using a URL value. This approach involves using a `URLSpec` object. The content root is passed to the Forms service using the `URLSpec` object’s `setContentRootURI` method. The Form design name ( `formQuery`) is passed as a separate parameter. The two values are concatenated to get the absolute reference to the form design. (Most of the quick starts located in the *Rendering Forms* section use this approach.)
+* You can reference the form design using a URL value. This approach involves using a `URLSpec` object. The content root is passed to the Forms service using the `URLSpec` object’s `setContentRootURI` method. The Form design name ( `formQuery`) is passed as a separate parameter. The two values are concatenated to get the absolute reference to the form design. (Most of the quick starts in the *Rendering Forms* section use this approach.)
 * You can pass a `com.adobe.idp.Document` that contains the form design to the Forms service. Two new methods named `renderPDFForm2` and `renderHTMLForm2` accept a `com.adobe.idp.Document` object that contains a form design. (See [Passing Documents to the Forms Service](/help/forms/developing/passing-documents-forms-service.md)
 
 You can accomplish these tasks using the Forms service:

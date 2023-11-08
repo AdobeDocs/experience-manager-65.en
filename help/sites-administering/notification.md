@@ -1,14 +1,10 @@
 ---
 title: Configuring Email Notification
-seo-title: Configuring Email Notification
 description: Learn how to configure email notification in Adobe Experience Manager.
-seo-description: Learn how to configure Email Notification in AEM.
-uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 ---
 
@@ -16,7 +12,7 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 
 AEM sends email notifications to users who:
 
-* Have subscribed to page events, for example modification or replication. The [Notification Inbox](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) section describes how to subscribe to such events.
+* Have subscribed to page events, for example, modification or replication. The [Notification Inbox](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) section describes how to subscribe to such events.
 
 * Have subscribed to forum events.
 * Have to perform a step in a workflow. The [Participant Step](/help/sites-developing/workflows-step-ref.md#participant-step) section describes how to trigger email notification in a workflow.
@@ -30,11 +26,11 @@ When a user is notified, he receives an email in the language that is defined in
 
 >[!NOTE]
 >
->When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+>When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 ## Configuring the Mail Service {#configuring-the-mail-service}
 
-For AEM to be able to send emails, the **Day CQ Mail Service** needs to be properly configured. You can view the configuration in the Web console. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+For AEM to be able to send emails, the **Day CQ Mail Service** needs to be properly configured. You can view the configuration in the Web console. When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 The following constraints apply:
 
@@ -273,7 +269,7 @@ You can configure OAuth for multiple email providers, as outlined below.
    * `https://mail.google.com/`
    * `https://www.googleapis.com//auth/gmail.send`
 1. Once you have added the scopes, go back to **Credentials** in the left hand menu, then go to **Create Credentials** - **OAuth Client ID** - **Desktop app**
-1. A new window will open containing the Client ID and Client Secret. 
+1. A new window opens containing the Client ID and Client Secret. 
 1. Save these credentials.
 
 **AEM Side Configurations**
@@ -355,7 +351,7 @@ Finally, confirm the configuration by:
 1. Next, go to **Certificates and Secrets**, click on **New client secret** and follow the on screen steps to create a secret. Make sure to take note of this secret for later use
 1. Press **Overview** in the left hand pane and copy the values for **Application (client) ID** and **Directory (tenant) ID** for later use
 
-To recap, you will need to the following information to configure OAuth2 for the Mailer service on the AEM side:
+To recap, you must have the following information to configure OAuth2 for the Mailer service on the AEM side:
 
 * The Auth URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * The Token URL, which will be constructed with the tenant ID. It will have this form: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`

@@ -21,7 +21,7 @@ The Server Settings page provides access to various settings for forms workflow:
 
 ## Configuring email settings {#configuring-email-settings}
 
-You can specify an email account for the forms server, through which it sends email messages to AEM forms users and administrators. These email messages are used to notify and remind users of tasks that they must complete, notify the user of tasks that have reached a deadline, and notify the administrator of any process errors that occur.
+You can specify an email account for the Forms Server, through which it sends email messages to AEM forms users and administrators. These email messages are used to notify and remind users of tasks that they must complete, notify the user of tasks that have reached a deadline, and notify the administrator of any process errors that occur.
 
 To enable the sending of email messages between AEM forms and users, configure the outgoing email settings on the Email Settings page. Outgoing email must use an SMTP server.
 
@@ -173,7 +173,7 @@ The Task Notifications and Administrator Notifications pages provide several fea
 
 ### Rich text editor {#rich-text-editor}
 
-The Notification Template area is a rich text editor that enables you to generate HTML for the email notification messages. It provides font and paragraph formatting options, which are found below the Notification Template box. The options include font type, size, style, and color, as well as paragraph alignment and bullets.
+The Notification Template area is a rich text editor that enables you to generate HTML for the email notification messages. It provides font and paragraph formatting options, which are found below the Notification Template box. The options include font type, size, style, and color, and paragraph alignment and bullets.
 
 ### URL generation {#url-generation}
 
@@ -282,7 +282,7 @@ On the BAM Configuration Settings page, you set the connections to the server th
 1. In administration console, click Services &gt; Forms workflow &gt; Server Settings &gt; BAM Configuration Settings.
 1. In the BAM Host box, type the name of the server that runs BAM. The default is localhost.
 1. In the BAM Port box, type the port to be used to connect to the server that runs BAM. The default BAM port for JBoss is 8080, WebLogic is 7001, and WebSphere is 9080.
-1. In the Server Host box, type the name or IP address of the host forms server. The default value is localhost.
-1. In the Server Port box, type the port number used by the forms server.
+1. In the Server Host box, type the name or IP address of the host Forms Server. The default value is localhost.
+1. In the Server Port box, type the port number used by the Forms Server.
 1. In the User Name and Password boxes, type the appropriate user ID and password to access the BAM Server. The default user name is CognosNowAdmin and the default password is manager.
 1. Click Save.

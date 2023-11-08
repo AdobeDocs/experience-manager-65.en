@@ -75,7 +75,7 @@ To modify your content headlessly, AEM offers two robust APIs.
 * The GraphQL API lets you create requests to access and deliver Content Fragments.
 * The Assets REST API lets you create and modify Content Fragments (and other assets).
 
-You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or refer to the [additional resources](#additional-resources) section below for additional documentation.
+You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or, see the [additional resources](#additional-resources) section below for additional documentation.
 
 ## Headless Integration Levels {#integration-levels}
 
@@ -107,13 +107,13 @@ This level of integration builds on level two by enabling most content in the ex
 
 ### You do not yet have an external consumer of the headless content such as a single page application (SPA). {#do-not-have-a-spa}
 
-If your goal is to create a new SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
+If your goal is to create a SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
 
 Using the SPA Editor, the SPA not only consumes content from AEM, but is also fully editable within AEM by your content authors giving you both the flexibility of headless delivery and in-context editing within AEM.
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
-There are a number of requirements before you begin your headless AEM project.
+There are several requirements before you begin your headless AEM project.
 
 ### Knowledge {#knowledge}
 
@@ -169,9 +169,9 @@ Create a plan on what content translation you need.
 * Do you need different languages or also language to adopt to regional specifics?
 * Do you need rich media content like images or videos to be different for different locales?
 
-Be clear about your content update workflow. What is the approval process that the system must support? Might AEM workflows be leveraged to automate this process?
+Be clear about your content update workflow. What is the approval process that the system must support? Might AEM workflows be used to automate this process?
 
-Note that your [content hierarchy](#content-hierarchy) can be leveraged to make translation easier.
+Note that your [content hierarchy](#content-hierarchy) can be used to make translation easier.
 
 See the [additional resources](#additional-resources) section for additional documentation on AEM workflows and translation tools including links to the AEM Headless Translation Journey.
 
@@ -180,7 +180,7 @@ See the [additional resources](#additional-resources) section for additional doc
 Folder hierarchy can address two major concerns with regards to content management:
 
 * [Translation](#translation) - AEM manages translation of content by maintaining copies of content in locale-specific folders.
-* Organization - Folders are used to define a content hierarchy required to support translation needs as well as logically manage Content Fragments.
+* Organization - Folders are used to define a content hierarchy required to support translation needs and logically manage Content Fragments.
 
 AEM allows for a flexible content structure and a hierarchy can be arbitrarily large. However it is important to realize that any changes in folder structure may have unintended consequences for existing queries that [rely on the content path.](#developer) Therefore a well-defined hierarchy that is clearly set out in advance, can be helpful to your content authors.
 

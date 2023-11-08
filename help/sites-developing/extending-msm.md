@@ -1,14 +1,10 @@
 ---
 title: Extending the Multi Site Manager
-seo-title: Extending the Multi Site Manager
 description: This page helps you extend the functionalities of the Multi Site Manager
-seo-description: This page helps you extend the functionalities of the Multi Site Manager
-uuid: dfa7d050-29fc-4401-8d4d-d6ace6b49bea
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 ---
@@ -17,7 +13,7 @@ exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 This page helps you extend the functionalities of the Multi Site Manager:
 
 * Learn about the main members of the MSM Java API.
-* Create a new synchronization action that can be used in a rollout configuration.
+* Create a synchronization action that can be used in a rollout configuration.
 * Modify the default language and country codes.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
@@ -105,7 +101,7 @@ The `LiveActionFactory` creates instances of the `LiveAction` class for a given 
 
 * `LiveAction` classes include the following methods:
 
-  * `getName`: Returns the name of the action The name is used to refer to the action, for example in rollout configurations.
+  * `getName`: Returns the name of the action. The name is used to refer to the action, for example, in rollout configurations.
   * `execute`: Performs the tasks of the action.
 
 * `LiveActionFactory` classes include the following members:
@@ -147,7 +143,7 @@ The following objects are provided as parameters of the `execute` method of the 
 
 * The reset value indicates the rollout reset mode.
 
-From these objects you can obtain all of the information about the `LiveCopy`. You can also use the `Resource` objects to obtain `ResourceResolver`, `Session`, and `Node` objects. These objects are useful for manipulating repository content:
+From these objects you can obtain all the information about the `LiveCopy`. You can also use the `Resource` objects to obtain `ResourceResolver`, `Session`, and `Node` objects. These objects are useful for manipulating repository content:
 
 In the first line of the following code, source is the `Resource` object of the source page:
 
@@ -176,8 +172,6 @@ The new rollout configuration is then available to you when setting rollout conf
 
 ### Create the Rollout Configuration {#create-the-rollout-configuration}
 
-To create a new rollout configuration:
-
 1. Open CRXDE Lite; for example:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -195,12 +189,12 @@ To create a new rollout configuration:
    >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
    >The recommended method for configuration and other changes is:
    >
-   >* Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+   >* Recreate the required item (that is, as it exists in `/libs`) under `/apps`
    >* Make any changes within `/apps`
 
 1. Under this **Create** a node with the following properties:
 
-    * **Name**: The node name of the rollout configuration. md#installed-synchronization-actions), for example `contentCopy` or `workflow`.
+    * **Name**: The node name of the rollout configuration. md#installed-synchronization-actions), for example, `contentCopy` or `workflow`.
     * **Type**: `cq:RolloutConfig`
 
 1. Add the following properties to this node:
@@ -234,7 +228,7 @@ Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to th
 1. **Create** a node with the following node properties:
 
     * **Name**: The node name of the synchronization action. 
-      The name must be the same as the **Action Name** in the table under [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example `contentCopy` or `workflow`.
+      The name must be the same as the **Action Name** in the table under [Synchronization Actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions), for example, `contentCopy` or `workflow`.
     * **Type**: `cq:LiveSyncAction`
 
 1. Add and configure as many synchronization action nodes as you require. Rearrange the action nodes so that their order matches the order in which you want them to occur. The topmost action node occurs first.
@@ -596,7 +590,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 1. In CRX Explorer, remove the node:
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a node:
 
     1. **Name** = `chapters`; **Type** = `cq:Widget`.
 
@@ -657,11 +651,11 @@ For example, if two new page properties are being added:
 
 * Contact Email:
 
-  * This property is not required to be rolled out, as it will be different in each country (or brand, etc).
+  * This property is not required to be rolled out, as it will be different in each country (or brand, and so on).
 
 * Key Visual Style:
 
-  * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, etc).
+  * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, and so on).
 
 Then you need to ensure that:
 

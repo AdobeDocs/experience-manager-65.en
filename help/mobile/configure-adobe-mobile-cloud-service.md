@@ -51,7 +51,7 @@ To take advantage of Adobe Mobile Services Analytics you need to configure the A
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-1. Choose an existing configuration from the **Mobile Services** or choose **Create Configuration** to create a new one.
+1. Choose an existing configuration from the **Mobile Services** or choose **Create Configuration** to create one.
 
    For new configuration, enter the **Mobile Services Properties **and click** Verify.**
 

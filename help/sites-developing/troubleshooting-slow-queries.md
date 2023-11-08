@@ -315,7 +315,7 @@ The following example uses Query Builder as it's the most common query language 
 ## Existing Index Tuning {#existing-index-tuning}
 
 1. If the optimal query resolves to a Property Index, then there is nothing left to do as Property Indexes are minimally tune-able.
-1. Otherwise, the query should resolve to a Lucene Property Index. If no index can be resolved, jump to Creating a new Index.
+1. Otherwise, the query should resolve to a Lucene Property Index. If no index can be resolved, jump to Creating an Index.
 1. As needed, convert the query to XPath or JCR-SQL2.
 
     * **Query Builder query**

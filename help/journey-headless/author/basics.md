@@ -35,7 +35,7 @@ For more details see the Authoring Concepts.
 
 ### Signing In {#signing-in}
 
-As with most systems you will need to login. As an author you will be provided with:
+As with most systems you must login. As an author you will be provided with:
 
 * User (account) name
 * Password
@@ -96,7 +96,7 @@ You can do this by creating a series of folders within **Files** section of the 
 
 ![Create Folder option](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-A dialog will open where you can enter the details, then confirm with **Create**:
+A dialog opens where you can enter the details, then confirm with **Create**:
 
 ![Create Folder dialog](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -195,7 +195,7 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
   This one is quite obvious as it's a tab in the editor.
 
-  Content Fragments have been available in AEM for quite a few versions. Originally they were made available for "traditional" use when authoring pages....and they are still used in this context. This can involve associating assets (for example images) that although not embedded in the fragment, needs to be available to the author when authoring a page.
+  Content Fragments have been available in AEM for quite a few versions. Originally they were made available for "traditional" use when authoring pages....and they are still used in this context. This can involve associating assets (for example, images) that although not embedded in the fragment, needs to be available to the author when authoring a page.
 
 * **Preview**
 
@@ -203,7 +203,7 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 * **Update page references**
 
-  This action is available from the **...** (ellipses) drop down. It is not interesting for headless authors as it relates to page authoring.
+  This action is available from the **...** (ellipses) drop-down. It is not interesting for headless authors as it relates to page authoring.
 
 ### Publishing {#publishing}
 

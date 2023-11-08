@@ -1,26 +1,22 @@
 ---
 title: Configuring Segmentation with ContextHub
-seo-title: Configuring Segmentation with ContextHub
 description: Learn how to configure segmentation with Context Hub.
-seo-description: Learn how to configure segmentation with Context Hub.
-uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 ---
 # Configuring Segmentation with ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
 >
->This section describes configuring segmentation when using the ContextHub. If you are using the Client Context functionality, please see the relevant documentation for [configuring segmentation for Client Context](/help/sites-administering/campaign-segmentation.md).
+>This section describes configuring segmentation when using the ContextHub. If you are using the Client Context functionality, see the relevant documentation for [configuring segmentation for Client Context](/help/sites-administering/campaign-segmentation.md).
 >
 
 Segmentation is a key consideration when creating a campaign. See [Managing Audiences](/help/sites-authoring/managing-audiences.md) for information on how segmentation works and key terms.
 
-Depending on the information you have already collected about your site visitors and the goals you want to achieve, you will need to define the segments and strategies needed for your targeted content.
+Depending on the information you have already collected about your site visitors and the goals you want to achieve, you must define the segments and strategies needed for your targeted content.
 
 These segments are then used to provide a visitor with specifically targeted content. This content is maintained in the [Personalization](/help/sites-authoring/personalization.md) section of the website. [Activities](/help/sites-authoring/activitylib.md) defined here can be included on any page and define which visitor segment the specialized content is applicable for.
 
@@ -28,13 +24,13 @@ AEM lets you easily personalize your users' experience. It also lets you verify 
 
 ## Accessing Segments {#accessing-segments}
 
-The [Audiences](/help/sites-authoring/managing-audiences.md) console is used to manage segments for ContextHub or Client Context as well as audiences for your Adobe Target account. This documentation covers managing segments for ContextHub. For [Client Context segments](/help/sites-administering/campaign-segmentation.md) and Adobe Target segments, please see the relevant documentation.
+The [Audiences](/help/sites-authoring/managing-audiences.md) console is used to manage segments for ContextHub or Client Context and audiences for your Adobe Target account. This documentation covers managing segments for ContextHub. For [Client Context segments](/help/sites-administering/campaign-segmentation.md) and Adobe Target segments, see the relevant documentation.
 
 To access your segments you need to select your configuration. In global navigation select **Navigation &gt; Personalization &gt; Audiences**. You will see the available configurations:
 
 ![Audiences - Configurations](assets/segmentation-access-confs.png)
 
-Select your configuration to see the segments, for example WKND Site:
+Select your configuration to see the segments, for example, WKND Site:
 
 ![Audiences - Segments](assets/segmentation-access-segments.png)
 
@@ -46,7 +42,7 @@ The **Segment Editor** lets you easily modify a segment. To edit a segment, sele
 
 Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
 
-When the entire statement evaluates to true then the segment has resolved. In the event of multiple segments being applicable, then the **Boost** factor is also used. See [Creating a New Segment](#creating-a-new-segment) for details on the [boost factor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+When the entire statement evaluates to true then the segment has resolved. If there are multiple applicable segments, then the **Boost** factor is also used. See [Creating a New Segment](#creating-a-new-segment) for details on the [boost factor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -100,7 +96,7 @@ The following segment comparisons are available out-of-the-box to evaluate segme
 
 >[!NOTE]
 >
->When comparing values, if the data type of the comparison is not set (i.e. set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
+>When comparing values, if the data type of the comparison is not set (that is, set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
 >
 >`null < 30 // will return true`
 >
@@ -135,7 +131,7 @@ To define your new segment:
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment as well as a boost value if required and then tap or click **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if required and then tap or click **Create**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -158,7 +154,7 @@ To define your new segment:
 
 Using the AND and OR container components, you can construct complex segments in AEM. When doing this, it helps to be aware of a few basic points:
 
-* The top level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.
+* The top-level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.
 * Ensure that the nesting of your container makes sense. The containers can be viewed as the brackets of your boolean expression.
 
 The following example is used to select visitors who are considered in our prime age group:
@@ -213,7 +209,7 @@ By using the Script Reference component, the evaluation of a segment property ca
 
 1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
 
-If the script depends on additional properties, the script should call `this.dependOn()`. For example if the script depends on `profile/age`:
+If the script depends on additional properties, the script should call `this.dependOn()`. For example, if the script depends on `profile/age`:
 
 ```
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -317,7 +313,7 @@ Or if it is not resolved:
 
 Such tests can also be performed on content pages and in combination with targeted content and related **Activities** and **Experiences**.
 
-If you have set up an activity and experience using the prime age group segment example above, you can easily test your segment with the activity. For details about setting up an activity, please see the related [documentation on authoring targeted content](/help/sites-authoring/content-targeting-touch.md).
+If you have set up an activity and experience using the prime age group segment example above, you can easily test your segment with the activity. For details about setting up an activity, see the related [documentation on authoring targeted content](/help/sites-authoring/content-targeting-touch.md).
 
 1. In editing mode of a page where you have set up targeted content, you can see that the content is targeted via arrow icon on the content.
 

@@ -1,15 +1,10 @@
 ---
 title: Creating and using themes
-seo-title: Creating and using themes
 description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
-seo-description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
-uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
-discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 ---
@@ -165,7 +160,7 @@ List of meta-properties of a theme (found in properties page of a theme).
    <td>
     <ul>
      <li>Contains 'Referred by' section. Lists forms that use the theme.</li>
-     <li>Since the theme does not refer to any other asset, there is no 'Refers' section.</li>
+     <li>Because the theme does not refer to any other asset, there is no 'Refers' section.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -221,7 +216,7 @@ The Theme Editor is divided in two panels:
       When you customize all the field components with a specific background color, all the fields such as age, name, and address inherit the background color. When you select a numeric box, such as age, and reduce its width, width of all the numeric boxes such as age, number of people in a family is reduced. Width of text boxes is not changed.
 
     * **State:** Lets you customize styles of an object in a specific state. For example, you can specify how an object looks when it is in default, focus, disabled, hover, or error state.
-    * **Property Categories:** Styling properties are divided in various categories. For example Dimension & Position, Text, Background, Border, and Effects. Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient.
+    * **Property Categories:** Styling properties are divided in various categories. For example, Dimension & Position, Text, Background, Border, and Effects. Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient.
 
     * **Advanced:** Lets you add custom CSS to an object, which overrides the properties visual controls define if there is an overlap.
 

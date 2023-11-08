@@ -1,6 +1,6 @@
 ---
 title: Digitally Signing and Certifying Documents
-description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields located in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures located in a PDF document, validate all digital signatures located in a PDF document, and remove a digital signature from a signature field.
+description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures in a PDF document, validate all digital signatures in a PDF document, and remove a digital signature from a signature field.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -31,12 +31,12 @@ If there are multiple signature fields located within a PDF document, it is reco
 You can accomplish these tasks using the Signature service:
 
 * Add and delete digital signature fields to a PDF document. (See [Adding Signature Fields](digitally-signing-certifying-documents.md#adding-signature-fields).)
-* Retrieve the names of signature fields located in a PDF document. (See [Retrieving Signature Field Names](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+* Retrieve the names of signature fields in a PDF document. (See [Retrieving Signature Field Names](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 * Modify signature fields. (See [Modifying Signature Fields](digitally-signing-certifying-documents.md#modifying-signature-fields).)
 * Digitally sign PDF documents. (See [Digitally Signing PDF Documents](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 * Certify PDF documents. (See [Certifying PDF Documents](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* Validate digital signatures located in a PDF document. (See [Verifying Digital Signatures](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Validate all digital signatures located in a PDF document. (See [Verifying Multiple Digital Signatures](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Validate digital signatures in a PDF document. (See [Verifying Digital Signatures](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Validate all digital signatures in a PDF document. (See [Verifying Multiple Digital Signatures](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * Remove a digital signature from a signature field. (See [Removing Digital Signatures](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 >[!NOTE]
@@ -207,7 +207,7 @@ To add a signature field by using the Signature API (web service):
 
 ## Retrieving Signature Field Names {#retrieving-signature-field-names}
 
-You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify. If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 >[!NOTE]
 >
@@ -341,11 +341,11 @@ Retrieve signature field names using the Signature API (web service):
 
 ## Modifying Signature Fields {#modifying-signature-fields}
 
-You can modify signature fields that are located in a PDF document by using the Java API and web service API. Modifying a signature field involves manipulating its signature field lock dictionary values or seed value dictionary values.
+You can modify signature fields that are in a PDF document by using the Java API and web service API. Modifying a signature field involves manipulating its signature field lock dictionary values or seed value dictionary values.
 
 A *field lock dictionary* specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from making changes to the field. A *seed value dictionary* contains constraining information that is used at the time the signature is applied. For example, you can change permissions that control the actions that can occur without invalidating a signature.
 
-By modifying an existing signature field, you can make changes to the PDF document to reflect changing business requirements. For example, a new business requirement may require locking all document fields after the document is signed.
+By modifying an existing signature field, you can change the PDF document to reflect changing business requirements. For example, a new business requirement may require locking all document fields after the document is signed.
 
 This section explains how to modify a signature field by amending both field lock dictionary and seed value dictionary values. Changes made to the signature field lock dictionary result in all fields in the PDF document being locked when a signature field is signed. Changes made to the seed value dictionary prohibit specific types of changes to the document.
 
@@ -355,7 +355,7 @@ This section explains how to modify a signature field by amending both field loc
 
 ### Summary of steps {#summary_of_steps-2}
 
-To modify signature fields located in a PDF document, perform the following tasks:
+To modify signature fields in a PDF document, perform the following tasks:
 
 1. Include project files.
 1. Create a Signature client.
@@ -595,7 +595,7 @@ When certifying and signing the same PDF document, if the certifying signature i
 
 **Signing documents that are XFA based forms**
 
-If you attempt to sign a XFA based form using the Signature service API, the data may be missing from the `View` `Signed` `Version` located in Acrobat. For example, consider the following workflow:
+If you attempt to sign a XFA based form using the Signature service API, the data may be missing from the `View` `Signed` `Version` in Acrobat. For example, consider the following workflow:
 
 * Using an XDP file created by using Designer, you merge a form design that contains a signature field and XML data that contains form data. You use the Forms service to generate an interactive PDF document.
 * You sign the PDF document using the Signature service API.
@@ -810,7 +810,7 @@ To digitally sign a PDF document by using the Signature API (web service):
 
 You can sign an interactive form that the Forms service creates. For example, consider the following workflow:
 
-* You merge an XFA-based PDF form created by using Designer and form data located in an XML document using the Forms service. The Forms server renders an interactive form.
+* You merge an XFA-based PDF form created by using Designer and form data in an XML document using the Forms service. The Forms server renders an interactive form.
 * You sign the interactive form using the Signature service API.
 
 The result is a digitally signed interactive PDF form. When signing a PDF form that is based on an XFA form, ensure that you save the PDF file as an Adobe Static PDF form. If you attempt to sign a PDF form that is saved as an Adobe Dynamic PDF form, an exception occurs. Because you are signing the form that is returned from the Forms service, ensure that the form contains a signature field.
@@ -1508,7 +1508,7 @@ Verify a digital signature by using the Signature Service API (web service):
 
 ## Verifying Multiple Digital Signatures {#verifying-multiple-digital-signatures}
 
-AEM Forms provides the means to verify all digital signatures that are located in a PDF document. Assume that a PDF document contains multiple digital signatures as a result of a business process that requires signatures from multiple signers. For example, consider a financial transaction that requires both a loan officer's and a manager's signature. You can use the Signature service Java API or web service API to verify all signatures within the PDF document. When verifying multiple digital signatures, you can check the status and properties of each signature. Before you trust a digital signature, it is recommended that you verify it. It is recommended that you are familiar with verifying a single digital signature.
+AEM Forms provides the means to verify all digital signatures that are in a PDF document. Assume that a PDF document contains multiple digital signatures as a result of a business process that requires signatures from multiple signers. For example, consider a financial transaction that requires both a loan officer's and a manager's signature. You can use the Signature service Java API or web service API to verify all signatures within the PDF document. When verifying multiple digital signatures, you can check the status and properties of each signature. Before you trust a digital signature, it is recommended that you verify it. It is recommended that you are familiar with verifying a single digital signature.
 
 >[!NOTE]
 >
@@ -1579,7 +1579,7 @@ Time stamping is the process of tracking the time when a signed or certified doc
 
 **Retrieve all digital signatures**
 
-To verify all digital signatures located in a PDF document, retrieve the digital signatures from the PDF document. All signatures are returned in a list. As part of verifying a digital signature, check the status of the signature.
+To verify all digital signatures in a PDF document, retrieve the digital signatures from the PDF document. All signatures are returned in a list. As part of verifying a digital signature, check the status of the signature.
 
 >[!NOTE]
 >
@@ -1635,7 +1635,7 @@ Verify multiple digital signatures by using the Signature Service API (Java):
     * A `PKIOptions` object that contains PKI run-time options.
     * A `VerifySPIOptions` instance that contains SPI information. You can specify `null` for this parameter.
 
-   The `verifyPDFDocument` method returns a `PDFDocumentVerificationInfo` object that contains information about all the digital signatures located in the PDF document.
+   The `verifyPDFDocument` method returns a `PDFDocumentVerificationInfo` object that contains information about all the digital signatures in the PDF document.
 
 1. Iterate through all signatures
 
@@ -1701,7 +1701,7 @@ Verify multiple digital signatures by using the Signature Service API (web servi
     * A `PKIOptions` object that contains PKI run-time options.
     * A `VerifySPIOptions` instance that contains SPI information. You can specify null for this parameter.
 
-   The `verifyPDFDocument` method returns a `PDFDocumentVerificationInfo` object that contains information about all the digital signatures located in the PDF document.
+   The `verifyPDFDocument` method returns a `PDFDocumentVerificationInfo` object that contains information about all the digital signatures in the PDF document.
 
 1. Iterate through all signatures
 

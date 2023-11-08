@@ -42,7 +42,7 @@ IBM FileNet P8 Content Engine provides software services for managing enterprise
 1. In the Encryption File Location box, enter the path to the encryption file:
 
     * If you selected Clear as the credential protection scheme, this keyword and its value are ignored.
-    * If you selected Symmetric as the credential protection scheme, the path you enter points to the location of an encryption file on the forms server that contains the cryptographic keys to be used.
+    * If you selected Symmetric as the credential protection scheme, the path you enter points to the location of an encryption file on the Forms Server that contains the cryptographic keys to be used.
 
 1. In the Default Object Store box, enter the object store connector that AEM forms connects to by default.
 1. In the User Name box, enter the user name of a user who has access rights to the default object store that you specified in the previous step.

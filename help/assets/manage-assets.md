@@ -106,7 +106,7 @@ To configure the cleanup task for the unfinished chunk upload jobs, go to `https
 
 If you upload an asset with the same name as an asset that is already available at the location where you are uploading the asset, a warning dialog is displayed.
 
-You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotate or crop) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
+You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example, annotate or crop) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
 ![Name Conflict dialog to resolve assets name conflict](assets/resolve-naming-conflict.png)
 
@@ -482,7 +482,7 @@ To move assets or folders:
 
    >[!NOTE]
    >
-   >* You can specify the same name for the asset if there is no asset with that name at the new location. However, you should use a different name if you move the asset to a location where an asset with the same name exists. If you use the same name, the system automatically generates a variation of the name. For example if your asset has the name Square, the system generates the name Square1 for its copy.
+   >* You can specify the same name for the asset if there is no asset with that name at the new location. However, you should use a different name if you move the asset to a location where an asset with the same name exists. If you use the same name, the system automatically generates a variation of the name. For example, if your asset has the name Square, the system generates the name Square1 for its copy.
    >* When renaming, whitespace is not allowed in the file name.
 
 1. On the **[!UICONTROL Select Destination]** dialog, do one of the following:
@@ -833,7 +833,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
    >
    >If the asset has subassets, you can print all the subassets along with their specific page-wise annotations.
 
-   To edit the appearance of the rendered PDF file, for example the font color, size, and style, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-assets.md#annotating).
+   To edit the appearance of the rendered PDF file, for example, the font color, size, and style, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-assets.md#annotating).
 
    ![Configuration to print asset annotation on PDF document](assets/annotation-print-pdf-config.png)
 

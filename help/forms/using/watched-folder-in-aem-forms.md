@@ -73,7 +73,7 @@ You can configure the following properties for a Watched Folder.
 
 >[!NOTE]
 >
->If the server hosting the Watched Folder does not have any of the specified run-mode, then, the Watched Folder always activates regardless of the run-modes on the server.
+>If the server hosting the Watched Folder does not have any of the specified run-mode, then the Watched Folder always activates regardless of the run-modes on the server.
 
 * **outputFilePattern (String)**: Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern. [File and folder pattern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) can also specify a directory structure for the output files. It is a mandatory property.
 
@@ -81,7 +81,7 @@ You can configure the following properties for a Watched Folder.
 
 >[!NOTE]
 >
->Even when an input is marked as having timed out using this mechanism, it may still be processing in the background but just taking more time than expected. If the input contents were consumed before the timeout mechanism kicked in, the processing may even proceed to completion later and the output be dumped into the results folder. If the contents were not consumed before the timeout, it is very likely that the processing will error out later on trying to consume the contents, and this error will also be logged in the failure folder for the same input. On the other hand, if the processing for the input never activated due to an intermittent job/workflow misfire (which is the scenario the expiration mechanism aims to address), then of course neither of these two eventualities will occur. Hence, for any entries in the failure folder which were marked as failures due to a timeout (look for messages of the form "File not processed after a significant amount of time, marking as failure!" in the failure log), it is advisable to scan the result folder (and also the failure folder itself for another entry for the same input) to check whether any of the eventualities described previously actually occurred.
+>Even when an input is marked as having timed out using this mechanism, it may still be processing in the background but just taking more time than expected. If the input contents were consumed before the timeout mechanism kicked in, the processing may even proceed to completion later and the output be dumped into the results folder. If the contents were not consumed before the timeout, it is very likely that the processing will error out later on trying to consume the contents, and this error will also be logged in the failure folder for the same input. On the other hand, if the processing for the input never activated due to an intermittent job/workflow misfire (which is the scenario the expiration mechanism aims to address), then neither of these two eventualities will occur. Hence, for any entries in the failure folder which were marked as failures due to a timeout (look for messages of the form "File not processed after a significant amount of time, marking as failure!" in the failure log), it is advisable to scan the result folder (and also the failure folder itself for another entry for the same input) to check whether any of the eventualities described previously actually occurred.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, default true):** Whether the expiration mechanism should activate only when the watch-folder is throttled. The mechanism is more relevant for throttled watch-folders since a small number of files which are lingering around in an unprocessed state (owing to intermittent job/workflow misfires) have the potential to choke processing for the entire batch when throttling is enabled. If this property is kept as true (the default), the expiration mechanism will not activate for watch-folders which are not throttled. If the property is kept as false, the mechanism will always activate as long as the stageFileExpirationDuration property is a positive number.
 
@@ -153,7 +153,7 @@ For more information about file patterns, see [About file patterns](../../forms/
 * **throttleOn (Boolean)**: When this option is selected, it limits the number of Watched Folder jobs that AEM Forms processes at any given time. The maximum number of jobs is determined by the Batch Size value. The defaut value is true. (See [About throttling](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Boolean)**: When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
-* **preserveOnFailure (Boolean)**: Preserve input files in case of failure to execute the operation on a service. The default value is true.
+* **preserveOnFailure (Boolean)**: Preserve input files if there is failure to run the operation on a service. The default value is true.
 * **inputFilePattern (String)**: Specifies the pattern of the input files for a Watched Folder. Creates a allowlist of the files.
 * **asynch (Boolean)**: Identifies the invocation type as asynchronous or synchronous. The default value is true (asynchronous). The file processing is a resource consuming task, keep the value of the asynch flag to true to prevent choking the main thread of the scan job. In a clustered environment, it is critical to keep the flag true to enable load-balancing for the files being processed across the available servers. If the flag is false, the scan job attempts to perform processing for each top-level file/folder sequentially within its own thread. Do not set the flag to false without a specific reason, such as, workflow-based processing on a single-server setup.
 
@@ -537,7 +537,7 @@ When Watched Folder cannot process the source files in the stage folder, you can
     * Change the includeFilePattern property for the Watched Folder to something that will not match any of the new input files (for example, enter NOMATCH).
     * Suspend the process that is creating new input files.
 
-   Wait until AEM Forms recovers and processes all of the files. The majority of the files should be recovered and any new input files processed correctly. The length of time you wait for Watched Folder to recover and process the files will depend on the length of the operation to invoke and the number of files to recover.
+   Wait until AEM Forms recovers and processes all files. The majority of the files should be recovered and any new input files processed correctly. The length of time you wait for Watched Folder to recover and process the files will depend on the length of the operation to invoke and the number of files to recover.
 
 1. Determine which files cannot be processed. If you waited an appropriate amount of time and completed the previous step, and there are still unprocessed files left in the stage folder, go to the next step.
 

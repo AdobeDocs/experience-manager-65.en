@@ -116,7 +116,7 @@ The web client must have permissions to access the `cq:ClientLibraryFolder` node
 
 ### Overriding Libraries in /lib {#overriding-libraries-in-lib}
 
-Client library folders located below `/apps` take precedence over same-named folders that are similarly located in `/libs`. For example, `/apps/cq/ui/widgets` takes precedence over `/libs/cq/ui/widgets`. When these libraries belong to the same category, the library below `/apps` is used.
+Client library folders located below `/apps` take precedence over same-named folders that are similarly in `/libs`. For example, `/apps/cq/ui/widgets` takes precedence over `/libs/cq/ui/widgets`. When these libraries belong to the same category, the library below `/apps` is used.
 
 ### Locating a Client Library Folder and Using the Proxy Client Libraries Servlet {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -128,7 +128,7 @@ In previous versions, client library folders were located below `/etc/clientlibs
 
 >[!NOTE]
 >
->To better isolate code from content and configuration, it is recommended to locate client libraries under `/apps` and expose them via `/etc.clientlibs` by leveraging the `allowProxy` property.
+>To better isolate code from content and configuration, it is recommended to locate client libraries under `/apps` and expose them via `/etc.clientlibs` by using the `allowProxy` property.
 
 In order for the client libraries under `/apps` to be accessible, a proxy servelt is used. The ACLs are still enforced on the client library folder, but the servlet allows for the content to be read via `/etc.clientlibs/` if the `allowProxy` property is set to `true`.
 
@@ -191,7 +191,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 ### Linking to Dependencies {#linking-to-dependencies}
 
-When the code in your client library folder references other libraries, identify the other libraries as dependencies. In the JSP, the `ui:includeClientLib` tag that references your client library folder causes the HTML code to include a link to your generated library file as well as the dependencies.
+When the code in your client library folder references other libraries, identify the other libraries as dependencies. In the JSP, the `ui:includeClientLib` tag that references your client library folder causes the HTML code to include a link to your generated library file and the dependencies.
 
 The dependencies must be another `cq:ClientLibraryFolder`. To identify dependencies, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 

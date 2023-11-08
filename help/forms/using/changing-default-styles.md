@@ -27,7 +27,7 @@ The following two images show the difference between the default and customized 
 
 1. **Choose a profile to add custom styles**
 
-   Access the CRX DE interface at the URL: **https://&lt;server&gt;:&lt;port&gt;/crx/de** and create a profile or choose an existing profile. To know how to create a profile, see [Creating a new Profile](/help/forms/using/custom-profile.md)
+   Access the CRX DE interface at the URL: **https://&lt;server&gt;:&lt;port&gt;/crx/de** and create a profile or choose an existing profile. To know how to create a profile, see [Creating a Profile](/help/forms/using/custom-profile.md)
 
 1. **Create a CSS style sheet for styling the HTML5 forms**
 
@@ -35,7 +35,7 @@ The following two images show the difference between the default and customized 
 
     1. Right-click the folder and select **create** &gt; **create File** from the menu
 
-    1. In the create file dialog, enter the name of the style sheet. Make sure that you use the extension .css (for example stylesheet.css)
+    1. In the create file dialog, enter the name of the style sheet. Make sure that you use the extension .css (for example, stylesheet.css)
     1. From the navigation pane, open the CSS file that you have created.
     1. Define the CSS classes of the components that you want to style and add styles in those classes.
 

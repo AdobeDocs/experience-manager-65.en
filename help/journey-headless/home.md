@@ -29,7 +29,7 @@ Headless Journeys are designed for varying personas, laying out the requirements
 
 An individual journey is defined for a specific persona or audience, but also defines additional personas with which the reader interacts.
 
-Information in the journeys can of course be useful to multiple personas, but a journey is targeted to a specific persona and some information may be superfluous to certain roles.
+Information in the journeys can be useful to multiple personas, but a journey is targeted to a specific persona and some information may be superfluous to certain roles.
 
 ## Headless Journeys {#headless-journeys}
 

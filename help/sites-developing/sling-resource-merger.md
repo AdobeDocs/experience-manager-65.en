@@ -23,7 +23,7 @@ The Sling Resource Merger provides services to access and merge resources. It pr
 
 With the Sling Resource Merger, the overlay/override resources and/or properties are merged with the original resources/properties:
 
-* The content of the customized definition has a higher priority than that of the original (i.e. it *overlays* or *overrides* it).
+* The content of the customized definition has a higher priority than that of the original (that is, it *overlays* or *overrides* it).
 
 * Where necessary, [properties](#properties) defined in the customization, indicate how content merged from the original is to be used.
 
@@ -56,7 +56,7 @@ The goals for using the Sling Resource Merger in AEM are to:
 >
 >The recommended method for configuration and other changes is:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Recreate the required item (that is, as it exists in `/libs`) under `/apps`
 >
 >1. Make any changes within `/apps`
 >
@@ -128,7 +128,7 @@ So in the above overlay example, the following nodes are needed:
 
 >[!NOTE]
 >
->When using the Sling Resource Merger (i.e. when dealing with the standard, touch-enabled UI) it is not recommended to copy the entire structure from `/libs` as it would result in too much information being held in `/apps`. This can cause problems when the system in upgraded in any way.
+>When using the Sling Resource Merger (that is, when dealing with the standard, touch-enabled UI) it is not recommended to copy the entire structure from `/libs` as it would result in too much information being held in `/apps`. This can cause problems when the system in upgraded in any way.
 
 ### Use Cases {#use-cases}
 
@@ -151,7 +151,7 @@ These, in conjunction with standard functionality, enable you to:
         * The property will have a priority based on the Sling Resource Resolver configuration.
         * Changing the property type is supported.
 
-          If you use a property type different to the one used in `/libs`, then the property type you define will be used.
+          If you use a property type different to the one used in `/libs`, then the property type you define is used.
 
   >[!NOTE]
   >
@@ -199,7 +199,7 @@ These, in conjunction with standard functionality, enable you to:
 
 * **Hide children of a node (while keeping the properties of the node)**
 
-  The node, its properties and its children are defined in `/libs`. The node and its properties are required in the `/apps` overlay/override, but some or all of the child nodes are not required in the `/apps` overlay/override.
+  The node, its properties and its children are defined in `/libs`. The node and its properties are required in the `/apps` overlay/override, but some or all the child nodes are not required in the `/apps` overlay/override.
 
     1. Create the corresponding node under `/apps`
     1. Create the property `sling:hideChildren`:

@@ -29,10 +29,10 @@ Each column shows a value for the current reporting period, and also indicates w
 >
 >To change the update period, [configure the import interval](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Open the **Sites** console; for example [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. Open the **Sites** console; for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. In the far right of the toolbar (upper-right corner), click or tap the icon to select **List View** (the icon shown will depend on the [current view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Again, in the far right of the toolbar (upper-right corner), click or tap the icon then select **View Settings**. The **Configure Columns** dialog will open. Make any changes required and confirm with **Update**.
+1. Again, in the far right of the toolbar (upper-right corner), click or tap the icon then select **View Settings**. The **Configure Columns** dialog opens. Make any changes required and confirm with **Update**.
 
    ![spad-02](assets/spad-02.png)
 
@@ -44,7 +44,7 @@ Select the reporting period for which Analytics data appears on the Sites consol
 * Last 90 Days Data
 * This Year's Data
 
-The current reporting period appears on the toolbar of the Sites console (right of the top toolbar). Use the drop down to select the required reporting period.
+The current reporting period appears on the toolbar of the Sites console (right of the top toolbar). Use the drop-down to select the required reporting period.
 
 ![aa-05](assets/aa-05.png)
 

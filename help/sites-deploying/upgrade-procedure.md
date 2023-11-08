@@ -16,7 +16,7 @@ exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
 >
 >The upgrade requires downtime for the Author tier as most Adobe Experience Manager (AEM) upgrades are performed in-place. By following these best practices, you can minimize or eliminate Publish tier downtime.
 
-When upgrading your AEM environments, you must consider the differences in approach between upgrading author environments or publish environments to minimize downtime for both you authors and end users. This page outlines the high-level procedure for upgrading an AEM topology currently running on a version of AEM 6.x. Because the process differs between author and publish tiers as well as Mongo and TarMK based deployments, each tier and microkernel has been listed in a separate section. When executing your deployment, Adobe recommends first upgrading your author environment, determining success, and then proceeding to the publish environments.
+When upgrading your AEM environments, you must consider the differences in approach between upgrading author environments or publish environments to minimize downtime for both you authors and end users. This page outlines the high-level procedure for upgrading an AEM topology currently running on a version of AEM 6.x. Because the process differs between author and publish tiers and Mongo and TarMK based deployments, each tier and microkernel has been listed in a separate section. When executing your deployment, Adobe recommends first upgrading your author environment, determining success, and then proceeding to the publish environments.
 
 <!--
 >[!IMPORTANT]

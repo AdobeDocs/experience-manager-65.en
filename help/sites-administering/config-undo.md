@@ -35,7 +35,7 @@ You can configure these OSGi service properties for your own instance.
 
 >[!NOTE]
 >
->When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+>When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 The following lists the properties as displayed in the Web console, followed by the name of the corresponding OSGi parameter, together with a description and the default value (where appropriate):
 
@@ -126,8 +126,8 @@ The following lists the properties as displayed in the Web console, followed by 
 
     * **Description**: A list of components and/or component operations that you do not want to be affected by the undo command. Add components and component operations that do not behave correctly with the undo command:
 
-        * Add a component path when you want none of the component's operations in the undo history, for example `collab/forum/components/post`
-        * Append a colon (:) and an operation to the path when you want that specific operation to be omitted from the undo history (other operations function correctly), for example `collab/forum/components/post:insertParagraph.`
+        * Add a component path when you want none of the component's operations in the undo history, for example, `collab/forum/components/post`
+        * Append a colon (:) and an operation to the path when you want that specific operation to be omitted from the undo history (other operations function correctly), for example, `collab/forum/components/post:insertParagraph.`
 
   >[!NOTE]
   >

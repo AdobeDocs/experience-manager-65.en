@@ -62,7 +62,7 @@ Complete this procedure using the Applications and Services web page in Administ
 
 ## Disabling non-essential anonymous access to services {#disabling-non-essential-anonymous-access-to-services}
 
-Some forms server services permit unauthenticated (anonymous) invocation for some operations. This means that one or more operations exposed by the service may be invoked as any authenticated user or as no authenticated user at all.
+Some Forms Server services permit unauthenticated (anonymous) invocation for some operations. This means that one or more operations exposed by the service may be invoked as any authenticated user or as no authenticated user at all.
 
 1. Log in to administration console by typing the following URL in a web browser:
 

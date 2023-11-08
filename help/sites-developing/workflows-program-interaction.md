@@ -67,7 +67,7 @@ The following actions are supported with the REST API:
 
 >[!NOTE]
 >
->By using Firebug, a Firefox extension for web development, it is possible to follow the HTTP traffic when the console is operated. For example you can check the parameters and the values sent to the AEM server with a `POST` request.
+>By using Firebug, a Firefox extension for web development, it is possible to follow the HTTP traffic when the console is operated. For example, you can check the parameters and the values sent to the AEM server with a `POST` request.
 
 In this page it is assumed that AEM runs on localhost at port `4502` and that the installation context is " `/`" (root). If it is not the case of your installation, the URIs, to which the HTTP requests apply, need to be adapted accordingly.
 
@@ -93,7 +93,7 @@ The following HTTP request methods apply to:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Creates a new workflow instance. The parameters are:<br /> - <code>model</code>: the ID (URI) of the respective workflow model<br /> - <code>payloadType</code>: containing the type of the payload (for example <code>JCR_PATH</code> or URL).<br /> The payload is sent as parameter <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
+   <td><p>Creates a new workflow instance. The parameters are:<br /> - <code>model</code>: the ID (URI) of the respective workflow model<br /> - <code>payloadType</code>: containing the type of the payload (for example, <code>JCR_PATH</code> or URL).<br /> The payload is sent as parameter <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -126,7 +126,7 @@ The following HTTP request methods apply to:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Changes the state of the instance. The new state is sent as the parameter <code>state</code> and must have one of the following values: <code>RUNNING</code>, <code>SUSPENDED</code>, or <code>ABORTED</code>.<br /> If the new state is not reachable (for example when suspending a terminated instance) a <code>409</code> (<code>CONFLICT</code>) response is sent back to the client.</td>
+   <td>Changes the state of the instance. The new state is sent as the parameter <code>state</code> and must have one of the following values: <code>RUNNING</code>, <code>SUSPENDED</code>, or <code>ABORTED</code>.<br /> If the new state is not reachable (for example, when suspending a terminated instance) a <code>409</code> (<code>CONFLICT</code>) response is sent back to the client.</td>
   </tr>
  </tbody>
 </table>
@@ -353,7 +353,7 @@ The following HTTP request methods apply to:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Completes the work item whose URI is sent as the parameter <code>item</code> and advances the according workflow instance to the next node(s), that is defined by the parameter <code>route</code> or <code>backroute</code> in case of going a step back.<br /> If the parameter <code>delegatee</code> is sent, the work item identified by the parameter <code>item</code> is delegated to the specified participant.</td>
+   <td>Completes the work item whose URI is sent as the parameter <code>item</code> and advances the according workflow instance to the next node(s), that is defined by the parameter <code>route</code> or <code>backroute</code> if there is going a step back.<br /> If the parameter <code>delegatee</code> is sent, the work item identified by the parameter <code>item</code> is delegated to the specified participant.</td>
   </tr>
  </tbody>
 </table>
@@ -482,7 +482,7 @@ The examples used:
 >
 >Deletion does not remove the model node.
 
-When creating a new model:
+When creating a model:
 
 * The workflow model editor requires that models use a specific node structure below `/var/workflow/models`. The parent node of the model must be of the type `cq:Page` having a `jcr:content` node with the following property values:
 

@@ -83,7 +83,7 @@ There may be cases however when this is not entirely necessary. The following ta
    <td><p>Content authors are restricted to a limited set of AEM's content authoring experience.</p> <p>The code risks being neither portable nor reusable if it contains static references or routing.</p> <p>Does not allow use of the template editor so the front-end developer must maintain editable templates by way of the JCR.</p> </td>
   </tr>
   <tr>
-   <td>The project fully leverages the SPA Editor SDK and the frontend components are developed as a library and the content structure of the app is delegated to AEM.</td>
+   <td>The project fully uses the SPA Editor SDK and the frontend components are developed as a library and the content structure of the app is delegated to AEM.</td>
    <td><p>The app is reusable and portable.</p> <p>The content author can edit the app using AEM's content authoring experience.<br /> </p> <p>The SPA is compatible with the template editor.</p> </td>
    <td><p>The developer is not in control of the structure of the app and the portion of content delegated to AEM.</p> <p>The developer can still reserve areas of the app for the content that is not meant to be authored using AEM.</p> </td>
   </tr>
@@ -221,4 +221,4 @@ For a step-by-step guide to creating your own SPA, see the [Getting Started with
 
 For further details about the dynamic model to component mapping and how it works within SPAs in AEM, see the article [Dynamic Model to Component Mapping for SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-If you wish to implement SPAs in AEM for a framework other than React or Angular or simply wish to take a deep dive into how the SPA SDK for AEM works, refer to the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) article.
+If you wish to implement SPAs in AEM for a framework other than React or Angular or simply wish to take a deep dive into how the SPA SDK for AEM works, see the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) article.

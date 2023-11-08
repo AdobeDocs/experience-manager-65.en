@@ -48,7 +48,7 @@ Depending on the specific configuration, these changes can be made by using eith
 
 >[!NOTE]
 >
->Configuring AEM is straightforward. However, be aware that certain changes can have a major impact on the applications. For this reason, ensure you have the necessary experience and knowledge before you start to configure AEM, and make only the changes which you know are required. Any changes made via the OSGi console are **immediately** applied to the running system (no restart is required).
+>Configuring AEM is straightforward. However, certain changes can have a major impact on the applications. For this reason, ensure you have the necessary experience and knowledge before you start to configure AEM, and make only the changes which you know are required. Any changes made via the OSGi console are **immediately** applied to the running system (no restart is required).
 
 ## Primary Configuration Considerations {#primary-configuration-considerations}
 
@@ -83,11 +83,11 @@ This means that when an IP address must be specified you can select (as required
 
 * an IPv6 address
 
-  for example `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  for example, `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * an IPv4 address
 
-  for example `https://123.1.1.4:4502`
+  for example, `https://123.1.1.4:4502`
 
 * a server name
 
@@ -281,7 +281,7 @@ See the [Basics of Report Customization](/help/sites-administering/reporting.md#
 
 CQ sends email notifications to users who:
 
-* Have subscribed to page events, for example modification or replication.
+* Have subscribed to page events, for example, modification or replication.
 * Have subscribed to forum events.
 * Have to perform a step in a workflow.
 

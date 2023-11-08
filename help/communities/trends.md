@@ -12,7 +12,7 @@ exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 
 ## Introduction {#introduction}
 
-The `Community Activity List` component lets you add trending information regarding posts and views by members as well as posts and views of content.
+The `Community Activity List` component lets you add trending information regarding posts and views by members and posts and views of content.
 
 The document describes:
 

@@ -33,7 +33,7 @@ To publish your email to the email service provider, you need to perform the fol
 
 An email or newsletter that you want to publish to an e-mail service can be created under a campaign using the **Geometrixx Newsletter** template. You can also use the **Geometrixx Outdoors E-Mail** template. Sample email/newsletter-based on the **Geometrixx Outdoors E-Mail** template are available at `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-To create a new email that is published to the configured e-mail service:
+To create an email that is published to the configured e-mail service:
 
 1. Go to **Websites** and then **Campaigns**. Select a campaign.
 1. Click **New** to open the **Create Page** window.
@@ -146,7 +146,7 @@ Emails/Newsletters can be published to your E-mail Service by following these st
 
    If successful, AEM confirms you can view the email in ExactTarget or Silverpop Engage.
 
-   In the case of ExactTarget the published email can ve viewed by clicking **View Published Email**. This takes you directly to the published newsletter in the ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   If there is ExactTarget the published email can ve viewed by clicking **View Published Email**. This takes you directly to the published newsletter in the ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >

@@ -1,14 +1,10 @@
 ---
 title: Using Translator to Manage Dictionaries
-seo-title: Using Translator to Manage Dictionaries
 description: AEM provides a console for managing the various translations of texts used in component UI
-seo-description: AEM provides a console for managing the various translations of texts used in component UI
-uuid: 4eea3110-e958-473e-8d22-c84fa435edbd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 ---
 # Using Translator to Manage Dictionaries{#using-translator-to-manage-dictionaries}
@@ -17,9 +13,9 @@ AEM provides a console for managing the various translations of texts used in co
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
-Use the translator tool to manage English strings and their translations. The dictionaries are created in the repository, for example /apps/myproject/i18n.
+Use the translator tool to manage English strings and their translations. The dictionaries are created in the repository, for example, /apps/myproject/i18n.
 
-Note that the Translator tool and the dictionaries that you manage are for presenting component UI in different languages. If you want to translate page or user generated content, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) and [Translation of User Generated Content](/help/communities/translate-ugc.md).
+The Translator tool and the dictionaries that you manage are for presenting component UI in different languages. If you want to translate page or user generated content, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) and [Translation of User Generated Content](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
@@ -37,7 +33,7 @@ The translator lists the texts used in AEM with the various language translation
 
 You can search, filter and edit the English and translated texts. You can also export dictionaries to XLIFF format for translating, then import the translations back into the dictionaries.
 
-It is also possible to add the i18n dictonaries to a translation project from this console. You can either create a new one or add to an existing project.
+It is also possible to add the i18n dictonaries to a translation project from this console. You can either create one or add to an existing project.
 
 1. Click **Translate Dictionary**.
 
@@ -107,7 +103,7 @@ The strings that you add to a dictionary must exactly match the string that is s
 
 Use the Commenet poperty of the dictionary string to provide information to the translator to clarify the meaning of the string. Typically, the UI assists users to determine the meaning of ambiguous words. However, the translator does not see the string within the context of the UI. The translation hint removes the ambiguity. For example, a comment helps the translator to understand that the English word Request is used as a noun rather than a verb.
 
-Translation hints also distinguish strings that are identical and have different meanings. For example the word Search can be a noun or a verb, requiring two "Search" entries in the dictionary with two different translation hints. The code that requests the string also includes the translation hint so that the correct string is used in the UI.
+Translation hints also distinguish strings that are identical and have different meanings. For example, the word Search can be a noun or a verb, requiring two "Search" entries in the dictionary with two different translation hints. The code that requests the string also includes the translation hint so that the correct string is used in the UI.
 
 **Including Indexed Variables**
 
@@ -177,7 +173,7 @@ The search bar at the bottom of the Translator tool provides string selection op
     * Modified: Show items that are changed.
     * New: Show items that are added.
     * Deleted: Show items that are to be removed.
-    * Multiple Selections: Show items that have all of the selected properties.
+    * Multiple Selections: Show items that have all the selected properties.
 
 * **Has Comment**: Show items that have comments for translators.
 * **Missing Translations:** Show items where at least one language does not have a translation.
@@ -245,7 +241,7 @@ Use the following procedure to export all or some of only the English strings.
 
 1. Open the Translation tool. `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Use the Dictionaries drop-down menu to select the dictionary to export.
-1. If you are exporting a subset of the strings, select the items in the dictionary to export. Selecting no items exports all of the items.
+1. If you are exporting a subset of the strings, select the items in the dictionary to export. Selecting no items exports all the items.
 1. Click Export &gt; Export Selection As Xliff (Strings Only).
 1. In the dialog box that appears, copy the text and paste it into a text file.
 
@@ -277,7 +273,7 @@ The Translator tool includes the following languages in the dictionary table:
 
 Use the following procedure to add or remove languages.
 
-1. Using CRXDE Lite create a new node:
+1. Using CRXDE Lite, create a node:
 
    `/etc/languages`
 
@@ -298,7 +294,7 @@ Use the following procedure to add or remove languages.
 
    >[!NOTE]
    >
-   >The translator will only save translations for languages that are actually [present in the dictionary](#creating-a-dictionary) (i.e. underneath the dictionary path such as `/apps/myProject/i18n`).
+   >The translator will only save translations for languages that are actually [present in the dictionary](#creating-a-dictionary) (that is, underneath the dictionary path such as `/apps/myProject/i18n`).
    >
    >Make sure that these correspond to the languages shown in the grid.
 
@@ -335,7 +331,7 @@ The default countries are used when displaying flags (for example, in the langua
 
 >[!NOTE]
 >
->For localizations as managed by the translator above, only the exact language works. If the language preference drop down uses `en_uk`, there must be a `en_uk` dictionary in the repository.
+>For localizations as managed by the translator above, only the exact language works. If the language preference drop-down uses `en_uk`, there must be a `en_uk` dictionary in the repository.
 
 To change the default definitions:
 
@@ -376,7 +372,7 @@ Similarly, testing of dictionary strings should be performed as part of your nor
 
 >[!NOTE]
 >
->Regular publish functionality, or replication, should not be used for dictionaries. Instead dictionaires should be treated the same way as code and configuration. This includes using source control to track changes, and using content packages to apply changes to author and publish.
+>Do not use regular publish functionality, or replication, for dictionaries. Instead dictionaires should be treated the same way as code and configuration. This includes using source control to track changes, and using content packages to apply changes to author and publish.
 
 >[!NOTE]
 >

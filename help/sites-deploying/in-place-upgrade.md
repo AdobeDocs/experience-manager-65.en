@@ -15,7 +15,7 @@ exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
 
 Before executing your upgrade, there are several steps that must be completed. See [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md) and [Pre-Upgrade Maintenance Tasks](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) for more information. Additionally, make sure that your system meets the requirements for the new version of AEM. See how Pattern Detector can help you estimate the complexity of your upgarde and also see the Upgrade Scope and Requirements section of [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md) for more information.
 
-<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Migration Prerequisites {#migration-prerequisites}
 
@@ -107,7 +107,7 @@ Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profil
 
 **You may also require additional switches for the following scenarios:**
 
-* If you are performing the upgrade on a Windows system where Java memory mapping is not handled correctly, please add the `--disable-mmap` parameter to the command.
+* If you are performing the upgrade on a Windows system where Java memory mapping is not handled correctly, add the `--disable-mmap` parameter to the command.
 
 For additional instructions on using the crx2oak tool, see Using the [CRX2Oak Migration Tool](/help/sites-deploying/using-crx2oak.md). The crx2oak helper JAR can be manually upgraded if needed, by manually replacing it with newer versions after unpacking the quickstart. Its location in the AEM installation folder is: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. The newest version of the CRX2Oak migration tool is available for download from the Adobe Repository at: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
@@ -121,7 +121,7 @@ While `FileDataStore` is the new default for AEM 6.3 installations, using an ext
 
 ## Troubleshooting Migration Issues {#troubleshooting-migration-issues}
 
-Please skip this section if you are upgrading from 6.3. While the provided crx2oak profiles should meet the needs of most customers, there are times when additional parameters will be necessary. If you run into an error during your migration, it is possible that there are aspects of your environment that require additional configuration options to be provided. If so, you will likely encounter the following error:
+Skip this section if you are upgrading from 6.3. While the provided crx2oak profiles should meet the needs of most customers, there are times when additional parameters will be necessary. If you run into an error during your migration, it is possible that there are aspects of your environment that require additional configuration options to be provided. If so, you will likely encounter the following error:
 
 **Checkpoints won't be copied, because no external datastore has been specified. This will result in the full repository reindexing on the first start. Use --skip-checkpoints to force the migration or see https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration for more info.**
 
@@ -155,13 +155,13 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 ### Determining the correct upgrade start command {#determining-the-correct-upgrade-start-command}
 
-To execute the upgrade, it is important to start AEM using the jar file to bring up the instance. For upgrading to 6.5, please also see other content restructuring and migration options in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) that you can choose with the upgrade command.
+To execute the upgrade, it is important to start AEM using the jar file to bring up the instance. For upgrading to 6.5, see other content restructuring and migration options in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) that you can choose with the upgrade command.
 
 >[!IMPORTANT]
 >
->If you are running Oracle Java 11 (or generally versions of Java newer than 8), additional switches will need to be added to your command line when starting AEM. For more information, see [Java 11 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>If you are running Oracle Java 11 (or generally versions of Java newer than 8), additional switches must be added to your command line when starting AEM. For more information, see [Java 11 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Note that starting AEM from the start script will not start the upgrade. Most customers start AEM using the start script and have customized this start script to include switches for environment configurations such as memory settings, security certificates, etc. For this reason, Adobe recommends following this procedure to determine the proper upgrade command:
+Note that starting AEM from the start script will not start the upgrade. Most customers start AEM using the start script and have customized this start script to include switches for environment configurations such as memory settings, security certificates, and so on. For this reason, Adobe recommends following this procedure to determine the proper upgrade command:
 
 1. On a running AEM instance, execute the following from the command line:
 

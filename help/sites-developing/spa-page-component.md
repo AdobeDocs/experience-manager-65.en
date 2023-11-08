@@ -1,14 +1,10 @@
 ---
 title: SPA Page Component
-seo-title: SPA Page Component
 description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
-seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
-uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 ---
@@ -22,7 +18,7 @@ In an SPA the page component doesn't provide the HTML elements of its child comp
 
 ## Introduction {#introduction}
 
-The page component for an SPA doesn't provide the HTML elements of its child components via a JSP or HTL file and resource objects. This operation is delegated to the SPA framework. The representation of child components is fetched as a JSON data structure (i.e. the model). The SPA components are then added to the page according to the provided JSON model. As such the page component initial body composition differs from its pre-rendered HTML counterparts.
+The page component for an SPA doesn't provide the HTML elements of its child components via a JSP or HTL file and resource objects. This operation is delegated to the SPA framework. The representation of child components is fetched as a JSON data structure (that is, the model). The SPA components are then added to the page according to the provided JSON model. As such the page component initial body composition differs from its pre-rendered HTML counterparts.
 
 ## Page Model Management {#page-model-management}
 
@@ -85,9 +81,9 @@ The meta resource properties that describe the SPA content:
 
 >[!CAUTION]
 >
->This document uses the We.Retail Journal app for demonstration purposes only. It should not be used for any project work.
+>This document uses the We.Retail Journal app for demonstration purposes only. Do not use for any project work.
 >
->Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.All SPA projects on AEM should be based on the Maven Archetype for SPA Starter Kit.
+>Any AEM project should use the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and uses the SPA SDK.All SPA projects on AEM should be based on the Maven Archetype for SPA Starter Kit.
 
 ## Page Editor Overlay Synchronization {#page-editor-overlay-synchronization}
 

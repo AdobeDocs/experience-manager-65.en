@@ -18,7 +18,7 @@ Here are the logical steps to make design importer recognize your custom compone
 
 1. Create a TagHandler
 
-    * A tag handler is a POJO that handles HTML tags of a specific kind. The "kind" of HTML tags your TagHandler can handle is defined via the TagHandlerFactory's OSGi property "tagpattern.name". This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it's up to you how you wish to take care of it.
+    * A tag handler is a POJO that handles HTML tags of a specific kind. The "kind" of HTML tags your TagHandler can handle is defined via the TagHandlerFactory's OSGi property "tagpattern.name". This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example, if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it's up to you how you wish to take care of it.
     * The tag handler interface is similar to a SAX content handler interface. It receives SAX events for each html tag. As a tag handler provider, you need to implement certain lifecycle methods which are automatically called by the design importer framework.
 
 1. Create its corresponding TagHandlerFactory.
@@ -103,11 +103,11 @@ The following section describes how to edit your HTML file so that you convert c
 
 ### Limitations {#limitations}
 
-Before importing, please note the following limitations:
+Before importing, note the following limitations:
 
 ### Any attribute like class or id applied on the &amp;lt;body> tag is not preserved {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-If any attribute like id or class is applied on the body tag for example `<body id="container">` then it is not preserved after the import. So the design being imported should not have any dependencies on the attributes applied on the `<body>` tag.
+If any attribute like id or class is applied on the body tag for example, `<body id="container">` then it is not preserved after the import. So the design being imported should not have any dependencies on the attributes applied on the `<body>` tag.
 
 ### Drag and Drop zip {#drag-and-drop-zip}
 
@@ -315,7 +315,7 @@ A lead form is a form that is used to collect a visitor/lead's profile informati
 
 * Pre-defined lead fields - first-name, last-name, address, dob, gender, about, userId, emailId, submit button are available in the sidekick. Simply drag/drop required component in your lead form.
 * With the help of these components author can design a standalone lead form, these fields corresponds to lead form fields. In standalone or imported zip application user can add extra fields using cq:form or cta lead form fields, name, and design them according to the requirements.
-* Map lead form fields using specific pre-defined names of CTA lead form, for example - firstName for first-name in lead form, and so on.
+* Map lead form fields using specific pre-defined names of CTA lead form, for example, - firstName for first-name in lead form, and so on.
 * Fields that are not mapped to lead form maps to cq:form components - text, radio, checkbox, dropdown, hidden, password.
 * User can provide the title using "label" tag and can provide styling by using style attribute "class" (only available for CTA lead form components).
 * Thank You page and subscription list can be provided as a hidden parameter of the form (present in the index.htm) or can be added/edited from edit bar of "Start of lead form"
@@ -433,9 +433,9 @@ If no encoding is specified in the imported HTML, then the default encoding set 
 
 ### Overlaying template {#overlaying-template}
 
-The Blank Landing Page template can be overlayed by creating a new one at: `/apps/<appName>/designimporter/templates/<templateName>`
+The Blank Landing Page template can be overlayed by creating a one at: `/apps/<appName>/designimporter/templates/<templateName>`
 
-Steps for creating a new template in AEM are explained [here](/help/sites-developing/templates.md).
+Steps for creating a template in AEM are explained [here](/help/sites-developing/templates.md).
 
 ### Referring a component from Landing page {#referring-a-component-from-landing-page}
 
@@ -542,7 +542,7 @@ If the design package contains a parsys component markup, then after importing, 
 If there was any errors (for example, the imported package is not a valid zip), the design import does not import the package. Instead, an error message is displayed on top of the page just above the drag and drop box. Examples of error scenarios are stated here. After correcting the error, you can reimport the updated zip onto the same blank landing page. Different scenarios where errors are thrown are as follows:
 
 * Imported design package is not a valid zip archive.
-* Imported design package does not contain an index.html at the top level.
+* Imported design package does not contain an index.html at the top-level.
 
 ### Warnings displayed after import {#warnings-displayed-after-import}
 
@@ -593,4 +593,4 @@ Then `box img` is used in the design importer, the resulting landing page appear
 
 >[!NOTE]
 >
->Also, designers should be aware that only code inside the **id=cqcanvas** tag is recognized by the importer, otherwise design is not preserved.
+>Designers should only code inside the **id=cqcanvas** tag is recognized by the importer, otherwise design is not preserved.

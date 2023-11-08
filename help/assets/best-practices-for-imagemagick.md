@@ -54,7 +54,7 @@ You can set up the command line process step for your particular use case. Perfo
 
    >[!NOTE]
    >
-   >The `convert` command may not run with certain Windows versions (for example Windows SE), because it conflicts with the native `convert` utility that is part of Windows installation. In this case, mention the complete path for the ImageMagick utility. For example, specify,
+   >The `convert` command may not run with certain Windows versions (for example, Windows SE), because it conflicts with the native `convert` utility that is part of Windows installation. In this case, mention the complete path for the ImageMagick utility. For example, specify,
    >
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`

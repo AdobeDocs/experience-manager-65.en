@@ -1,13 +1,9 @@
 ---
 title: Adding attachments
-seo-title: Adding attachments
 description: Add photographs and scribble notes as annotations to your task in the AEM Forms app
-seo-description: Add photographs and scribble notes as annotations to your task in the AEM Forms app
-uuid: 3d2738b4-fd43-44ec-8eaf-a2ad4b7e5af5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 ---
@@ -83,4 +79,4 @@ Attachments for mobile forms synced with AEM Forms OSGi servers work similar to 
 
 Form level attachments are not supported for adaptive forms loaded in the app from an AEM Forms OSGi server. To attach images or text notes, enable field level attachments in the form when you author it. Drag-drop the file attachment component from the components browser on the field.
 
-In case of adaptive forms, you can view the attached files in the document of record (DoR). See, [Generate Document of Record for non-XFA adaptive forms](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+If there are adaptive forms, you can view the attached files in the document of record (DoR). See, [Generate Document of Record for non-XFA adaptive forms](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).

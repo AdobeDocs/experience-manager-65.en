@@ -53,7 +53,7 @@ Your account remains active until the administrator deactivates or deletes it.
 
 ## Reset your password {#reset-your-password}
 
-If you forget your password, the policy administrator can reset it for you. Resetting a password generates an email that invites you to log in by using a temporary password. You can then create a new password.
+If you forget your password, the policy administrator can reset it for you. Resetting a password generates an email that invites you to log in by using a temporary password. You can then create another password.
 
 For information about contacting a document security administrator to obtain a new password, check your activation email notice or other notices from the organization that invited you to register.
 

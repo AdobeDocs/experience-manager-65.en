@@ -107,7 +107,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 >[!NOTE]
 >
->Quick Starts located in Programming with AEM forms are based on Forms server being deployed on JBoss Application Server and the Microsoft Windows operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Starts in Programming with AEM forms are based on Forms server being deployed on JBoss Application Server and the Microsoft Windows operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start: Invoking a short-lived process using the Invocation API {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
@@ -121,27 +121,27 @@ The following Java code example invokes a short-lived process named `MyApplicati
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
-     * 6. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 7. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 6. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 7. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -285,7 +285,7 @@ An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the 
                     //Populate a byte array with BLOB data
                     byte[] outByteArray = outDoc.binaryData;
  
-                    //Create a new file named UsageRightsLoan.pdf
+                    //Create a file named UsageRightsLoan.pdf
                     FileStream fs2 = new FileStream(encryptedPDF, FileMode.OpenOrCreate);
  
                     //Create a BinaryWriter object
@@ -574,7 +574,7 @@ An unsecured PDF document based on a PDF file named *map.pdf* is passed to the A
  using Microsoft.Web.Services2;
  
  //The following statement represents a web reference to
- //the forms server that contains the process that
+ //the Forms Server that contains the process that
  //is invoked
  using ConsoleApplication1.LC_Host;
  
@@ -802,7 +802,7 @@ An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the 
              URL myURL = new URL(outDoc.getRemoteURL());
              InputStream inputStream = myURL.openStream();
  
-             //Create a new file containing the returned PDF document
+             //Create a file containing the returned PDF document
              File f = new File("C:\\Adobe\EncryptedDocument.pdf");
              OutputStream out = new FileOutputStream(f);
  
@@ -894,7 +894,7 @@ An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the 
                    //Populate the byte array
                    PopulateArray(mySteam, myData);
  
-                   //Create a new file named UsageRightsLoan.pdf
+                   //Create a file named UsageRightsLoan.pdf
                    FileStream fs2 = new FileStream("C:\\Adobe\EncryptedPDF.pdf", FileMode.OpenOrCreate);
  
                    //Create a BinaryWriter object
@@ -996,7 +996,7 @@ An unsecured PDF document based on a PDF file named *loan.pdf* is passed to the 
                     BLOB outDoc = encryptProcess.invoke(inDoc);
                     byte[] encryptDoc = outDoc.MTOM;
  
-                    //Create a new file containing the encrypted PDF document
+                    //Create a file containing the encrypted PDF document
                     string FILE_NAME = "C:\\Adobe\EncryptedDocument.pdf";
                     FileStream fs2 = new FileStream(FILE_NAME, FileMode.OpenOrCreate);
                     BinaryWriter w = new BinaryWriter(fs2);
@@ -1083,7 +1083,7 @@ An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the 
          //Save the encrypted file as a PDF file
          DataHandler handler = outDoc.getSwaRef();
  
-         //Create a new file containing the returned PDF document
+         //Create a file containing the returned PDF document
          File f = new File("C:\\Adobe\EncryptedDocument.pdf");
          InputStream inputStream = handler.getInputStream();
          OutputStream out = new FileOutputStream(f);

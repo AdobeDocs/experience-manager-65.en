@@ -34,7 +34,7 @@ Because components are modular, you can:
 * Develop a new component on your local instance.
 * Deploy it to your test environment.
 * Deploy it to your live authoring environment, where they allow authors and/or administrators to add and configure content.
-* Deploy it to your live publish environment(s), where they are used to render content for visitors to your website. Certain components, for example for Communities, also accept input from your users.
+* Deploy it to your live publish environment(s), where they are used to render content for visitors to your website. Certain components, for example, for Communities, also accept input from your users.
 
 Each AEM component:
 
@@ -73,7 +73,7 @@ There are two sets of Adobe-provided AEM components available:
 
 ### Viewing Available Components {#viewing-available-components}
 
-For an overview of all of the available components in your AEM instance, use the [Components Console](/help/sites-authoring/default-components-console.md).
+For an overview of all the available components in your AEM instance, use the [Components Console](/help/sites-authoring/default-components-console.md).
 
 Alternatively, you can also use CRXDE Lite to get a list of all the components available in the repository.
 

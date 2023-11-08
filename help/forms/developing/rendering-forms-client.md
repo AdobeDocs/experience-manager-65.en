@@ -47,13 +47,13 @@ Before you can programmatically perform a Forms service Client API operation, yo
 
 **Set client rendering run-time options**
 
-You must set the client rendering run-time option to render a form at the client by setting the `RenderAtClient` run-time option to `true`. This results in the form being delivered to the client device where it is rendered. If `RenderAtClient` is `auto` (the default value), the form design determines whether the form is rendered at the client. The form design must be a form design with a flowable layouyt.
+Set the client rendering run-time option to render a form at the client by setting the `RenderAtClient` run-time option to `true`. This results in the form being delivered to the client device where it is rendered. If `RenderAtClient` is `auto` (the default value), the form design determines whether the form is rendered at the client. The form design must be a form design with a flowable layouyt.
 
 An optional run-time option that you may set is the `SeedPDF` option. The `SeedPDF` option combines the PDF container (seed PDF document) with the form design and the XML data. Both the form design and the XML data are delivered to Acrobat or Adobe Reader, where the form is rendered. The `SeedPDF` option can be used when the client computer does not have fonts that are used in the form, such as when an end user is not licensed to use a font that the form owner is licensed to use.
 
 You can use Designer to create a simple dynamic PDF file for use as a seed PDF file. The following steps are required to perform this task:
 
-1. Determine whether you need to embed any fonts within the seed PDF file. The seed PDF file will need to contain additional fonts required by the form being rendered. When embedding fonts into the seed PDF file, ensure that you are not violating any font licensing agreements. In Designer, you can determine whether you can legally embed fonts. Upon saving, if there are fonts you cannot embed into the form, Designer displays a message listing the fonts you cannot embed. This message is not displayed in Designer for static PDF documents.
+1. Determine whether you need to embed any fonts within the seed PDF file. The seed PDF file must contain additional fonts required by the form being rendered. When embedding fonts into the seed PDF file, ensure that you are not violating any font licensing agreements. In Designer, you can determine whether you can legally embed fonts. Upon saving, if there are fonts you cannot embed into the form, Designer displays a message listing the fonts you cannot embed. This message is not displayed in Designer for static PDF documents.
 1. If you are creating the seed PDF file in Designer, it is recommended that, at a minimum, you add a text field that contains a message. The message should be directed at users of earlier versions of Adobe Reader stating that they need Acrobat 7.0 or later or Adobe Reader 7.0 or later to view the document.
 1. Save the seed PDF file as a dynamic PDF file with the PDF file name extension.
 

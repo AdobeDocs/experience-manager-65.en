@@ -39,7 +39,7 @@ exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 
 * A new Category carousel component was added to enable business users to drag and drop this component on AEM content pages to enrich content pages with commerce data.
 
-* CIF core components extended to hydrate the Adobe Client Data Layer by sending commerce data. The Adobe Client Data Layer is a standardized method to collect data and communicate the data to Digital Analytics and reporting servers. For more details, refer to [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
+* CIF core components extended to hydrate the Adobe Client Data Layer by sending commerce data. The Adobe Client Data Layer is a standardized method to collect data and communicate the data to Digital Analytics and reporting servers. For more details, see [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Product Detail and Product List pages extended to automatically populate SEO metadata (such as title, meta description, meta keywords) configured from within the Adobe Commerce admin UI
 
@@ -137,7 +137,7 @@ This is the first version of CIF Core Components that is supported on Adobe Expe
 
 * Added category filtering as a facet to allow shoppers to filter based on category.
 
-* Added service user mapping as part of security requirement to ensure access to /conf via service users and not by directly manipulating ACLs. CIF Core Components now must use a service user to access configurations.
+* Added service user mapping as part of security requirement to ensure access to /conf via service users and not by directly manipulating ACLs. CIF Core Components must use a service user to access configurations.
 
 ### What's Improved {#what-is-improved-june}
 

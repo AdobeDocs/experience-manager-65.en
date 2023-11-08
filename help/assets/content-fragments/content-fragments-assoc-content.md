@@ -15,7 +15,7 @@ AEM's Associated content feature provides the connection so that assets can be o
 >
 >There are various methods of adding [visual assets (for example, images)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
-To make the association you first need to [add your media asset(s) to a collection](/help/assets/manage-collections.md). After that is done you can:
+To make the association you first need to [add your media assets to a collection](/help/assets/manage-collections.md). After that is done you can:
 
 1. Open your fragment and select **Associated Content** from the side panel.
 

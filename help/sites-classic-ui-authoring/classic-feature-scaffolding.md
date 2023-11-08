@@ -52,7 +52,7 @@ The body of the scaffold is the form. When a user wishes to create a page using 
 
 ### Creating a Scaffold {#creating-a-scaffold}
 
-To create a new scaffold, go to the **Tools** console, then **Default Page Scaffolding** and create a page. A single page template type is available, the *Scaffolding Template.*
+To create a scaffold, go to the **Tools** console, then **Default Page Scaffolding** and create a page. A single page template type is available, the *Scaffolding Template.*
 
 Go to the **Page Properties** of the new page and set the *Title Text*, *Description*, *Target Template*, and *Target Path*, as described above.
 
@@ -66,7 +66,7 @@ The dialog definition for a scaffold works similarly to that of a component (see
 
 * Component dialog definitions are rendered as normal dialog boxes (as shown in the middle pane of the dialog editor, for example) while scaffold dialog definitions, though they appear as normal dialog boxes in the dialog editor, are rendered on the scaffold page as a scaffold form (as shown in the **News** scaffold above).
 * Component dialogs provide fields for only those values needed to define the content of a single specific component. A scaffold dialog must provide fields for every property in every paragraph of the page to be created.
-* In the case of component dialogs, the component used to render the specified content is implicit and therefore the `sling:resourceType` property of the paragraph is filled in automatically when the paragraph is created. With a scaffold all the information defining both the content and the assigned component for a given paragraph must be provided by the dialog itself. In scaffold dialogs this information must be provided by using *Hidden* fields to submit this information on page creation.
+* If there are component dialogs, the component used to render the specified content is implicit and therefore the `sling:resourceType` property of the paragraph is filled in automatically when the paragraph is created. With a scaffold all the information defining both the content and the assigned component for a given paragraph must be provided by the dialog itself. In scaffold dialogs this information must be provided by using *Hidden* fields to submit this information on page creation.
 
 A look at the example **News** scaffold dialog in the dialog editor helps to explain how this works. Go into design mode on the scaffold page and click the dialog editor link.
 
@@ -157,4 +157,4 @@ After unlocking, you can restore inheritance by clicking the unlocked padlock sy
 
 >[!NOTE]
 >
->If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties), then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).
+>If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties), then all components are editable in **Scaffolding** mode (they are shown in an unlocked state).

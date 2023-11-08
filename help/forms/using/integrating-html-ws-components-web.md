@@ -1,19 +1,15 @@
 ---
 title: Integrating AEM Forms workspace components in web applications
-seo-title: Integrating AEM Forms workspace components in web applications
-description: How to reuse AEM Forms workspace components in your own webapps to leverage functionality and provide tight integration.
-seo-description: How to reuse AEM Forms workspace components in your own webapps to leverage functionality and provide tight integration.
-uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
+description: How to reuse AEM Forms workspace components in your own webapps to use functionality and provide tight integration.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
 ---
 # Integrating AEM Forms workspace components in web applications {#integrating-aem-forms-workspace-components-in-web-applications}
 
-You can use AEM Forms workspace [components](/help/forms/using/description-reusable-components.md) in your own web application. The following sample implementation uses components from an AEM Forms workspace dev package installed on a CRX™ instance to create a web application. Customize the solution below to suit your specific needs. The sample implementation reuses `UserInfo`, `FilterList`, and `TaskList`components inside a web portal.
+You can use AEM Forms workspace [components](/help/forms/using/description-reusable-components.md) in your own web application. The following sample implementation uses components from an AEM Forms workspace dev package installed on a CRX&trade; instance to create a web application. Customize the solution below to suit your specific needs. The sample implementation reuses `UserInfo`, `FilterList`, and `TaskList`components inside a web portal.
 
 1. Log into CRXDE Lite environment at `https://'[server]:[port]'/lc/crx/de/`. Ensure that you have an AEM Forms workpace dev package installed.
 1. Create a path `/apps/sampleApplication/wscomponents`.
@@ -58,10 +54,10 @@ You can use AEM Forms workspace [components](/help/forms/using/description-reusa
 
    ```javascript
    define([
-       ‘jquery’,
-       ‘underscore’,
-       ‘backbone’,
-       ‘runtime/views/userinfo'],
+       'jquery',
+       'underscore',
+       'backbone',
+       'runtime/views/userinfo'],
        function($, _, Backbone, UserInfo){
            var demoUserInfo = UserInfo.extend({
                //override the functions to customize the functionality

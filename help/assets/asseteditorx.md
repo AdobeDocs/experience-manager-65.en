@@ -147,7 +147,7 @@ This example describes how to build a component that shows and displays the meta
        String name = "dam:sampleMetadata";
        boolean readOnly = false;
 
-       // If the form page is requested for an asset loadResource will be the asset.
+       // If the form page is requested for an asset loadResource is the asset.
        Resource loadResource = (Resource) request.getAttribute("cq.form.loadresource");
 
        if (loadResource != null) {

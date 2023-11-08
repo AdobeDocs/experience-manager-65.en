@@ -111,9 +111,9 @@ If the job is successfully disposed of, this URL returns an empty message.
 
 ## Error reporting {#error-reporting}
 
-If a synchronous or asynchronous invocation request cannot be completed due to an exception being thrown on the server, the exception is reported as part of the HTTP response message. If the invocation URL (or the `async_result` URL in the case of an asynchronous invocation) does not have an .xml suffix, the REST Provider returns the HTTP code `500 Internal Server Error` followed by an exception message.
+If a synchronous or asynchronous invocation request cannot be completed due to an exception being thrown on the server, the exception is reported as part of the HTTP response message. If the invocation URL (or the `async_result` URL if there is an asynchronous invocation) does not have an .xml suffix, the REST Provider returns the HTTP code `500 Internal Server Error` followed by an exception message.
 
-If the invocation URL (or the `async_result` URL in the case of an asynchronous invocation) does have an .xml suffix, the REST Provider returns the HTTP code `200 OK`followed by an XML document describing the exception in the following format.
+If the invocation URL (or the `async_result` URL if there is an asynchronous invocation) does have an .xml suffix, the REST Provider returns the HTTP code `200 OK`followed by an XML document describing the exception in the following format.
 
 ```xml
  <exception>
@@ -137,7 +137,7 @@ The `DSCError` element is optional and present only if the exception is an insta
 
 ## Security and authentication {#security-and-authentication}
 
-To provide REST invocations with a secure transport, an AEM forms administrator can enable the HTTPS protocol on the J2EE application server hosting AEM Forms. This configuration is specific to the J2EE application server; it is not part of the forms server configuration.
+To provide REST invocations with a secure transport, an AEM forms administrator can enable the HTTPS protocol on the J2EE application server hosting AEM Forms. This configuration is specific to the J2EE application server; it is not part of the Forms Server configuration.
 
 >[!NOTE]
 >
@@ -315,4 +315,4 @@ The complete URL to invoke the process is https://hiro-xp:8080/rest/services/MyA
 
 If the process requires a PDF document as an input value, ensure that you submit the form as PDF, as shown in the previous illustration. Also, to successfully invoke a process, the process must return a PDF document. Otherwise Acroabt cannot handle the return value and an error occurs. You do not have to specify the name of the input process variable. For example, the *MyApplication/EncryptDocument* process has an input variable named `inDoc`. You do not have to specify inDoc, as long as the form is submited as PDF.
 
-You can also submit form data as XML to a Forms process, To submit XML data, ensure that the `Submit As` drop down specifies XML. Because the return value of the process must be a PDF document, the PDF document is displayed in Acrobat.
+You can also submit form data as XML to a Forms process, To submit XML data, ensure that the `Submit As` drop-down specifies XML. Because the return value of the process must be a PDF document, the PDF document is displayed in Acrobat.

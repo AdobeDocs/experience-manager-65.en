@@ -1,17 +1,13 @@
 ---
-title: Creating a new AEM Mobile app using create wizard
-seo-title: Creating a new AEM Mobile app using create wizard
-description: AEM Mobile apps are based on a blueprint that defines a page structure and properties. Follow this page to learn about how to create a new app based on an app template.
-seo-description: AEM Mobile apps are based on a blueprint that defines a page structure and properties. Follow this page to learn about how to create a new app based on an app template.
-uuid: c2bd63a5-3dff-4a72-b1fb-0c776e0afa33
+title: Creating an AEM Mobile app using create wizard
+description: AEM Mobile apps are based on a blueprint that defines a page structure and properties. Follow this page to learn about how to create an app based on an app template.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
 ---
-# Creating a new AEM Mobile app using create wizard{#creating-a-new-aem-mobile-app-using-create-wizard}
+# Creating an AEM Mobile app using create wizard{#creating-a-new-aem-mobile-app-using-create-wizard}
 
 >[!NOTE]
 >
@@ -22,7 +18,7 @@ AEM Mobile apps are based on a blueprint that defines a page structure and prope
 * **Title:** The application title.
 * **Destination Path:** The location in the repository where the application is stored. Leave the default to create a path based on the app name.
 
-* **Name:** The default value is the value of the Title property with space characters removed. The name is used within AEM to refer to the application, for example for the repository node that represents the application.
+* **Name:** The default value is the value of the Title property with space characters removed. The name is used within AEM to refer to the application, for example, for the repository node that represents the application.
 * **Description:** A description of the application.
 * **Server URL:** The URL that provides Over-the-Air (OTA) content updates to the application. The default value is the publish server URL of the instance that is used to create an application (taken from the externalizer service). Note, this must be a publish server instance rather than an author, which requires authentication.
 
@@ -35,16 +31,16 @@ Additional (and optional) tabs exist for build cloud service and integrating the
 
 ## Using App Templates {#using-app-templates}
 
-App templates provide an easy way to leverage existing designs created by devlopers, used for the creation of new apps within AEM.
+App templates provide an easy way to use existing designs created by devlopers, used for the creation of new apps within AEM.
 
 What is an app template? Think of it as a collection of page templates and components that represent a baseline or foundation of an app.
-When creating a new app based on the template of another app, you will get an app that has a starting point representative of the app in which it was created from.
+When creating an app based on the template of another app, you will get an app that has a starting point representative of the app in which it was created from.
 
-You must have an existing mobile app template (or an app installed that has an app template) to make use of this feature.
+You must have an existing mobile app template (or an app installed that has an app template) to use this feature.
 
 The latest AEM Apps samples package includes an updated version of the Geometrixx app with an app template. Alternatively, you can install the [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) which also provides a template.
 
-Steps to creating a new app based on an app template:
+Steps to creating an app based on an app template:
 
 1. Navigate to the AEM Mobile app catalog: &lt;*server-url*&gt;aem/apps.html/content/mobileapps
 1. Select **Create** and then choose **App** as shown below

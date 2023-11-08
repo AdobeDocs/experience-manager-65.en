@@ -5,7 +5,7 @@ exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 ---
 # Composite Components in SPAs {#composite-components-in-spas}
 
-Composite components leverage the modular nature of AEM components by combining multiple base components into a single component. A common composite component use case is the card component, made of a combination of the image and text components.
+Composite components use the modular nature of AEM components by combining multiple base components into a single component. A common composite component use case is the card component, made of a combination of the image and text components.
 
 When composite components are properly implemented within the AEM Single Page Application (SPA) Editor framework, the content authors can drag and drop such components as they would any other component, but still have the ability to individually edit each component making up the composite component.
 
@@ -13,7 +13,7 @@ This article demonstrates how you can add a composite component to your single p
 
 ## Use Case {#use-case}
 
-This article will use the typical card component as its example use case. Cards are a common UI element for many digital experiences and are typically made up of an image and associated text or caption. An author wants to be able to drag-and-drop the whole card, but be able to individually edit the card's image as well as customize the associated text.
+This article will use the typical card component as its example use case. Cards are a common UI element for many digital experiences and are typically made up of an image and associated text or caption. An author wants to be able to drag-and-drop the whole card, but be able to individually edit the card's image and customize the associated text.
 
 ## Prerequisites {#prerequisites}
 
@@ -35,7 +35,7 @@ The following sections give examples of implementing each case using the card co
 
 ### The component does not exist in your AEM project. {#component-does-not-exist}
 
-Start by creating the components that will make up the composite component, i.e. components for the image and its text.
+Start by creating the components that will make up the composite component, that is, components for the image and its text.
 
 1. Create the text component in your AEM project.
 1. Add the corresponding `resourceType` from the project in the component's `editConfig` node.

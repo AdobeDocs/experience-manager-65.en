@@ -102,7 +102,7 @@ If you are configuring authentication for an enterprise or hybrid domain and sel
 
 The following custom properties are required if artifact binding is used.
 
-* Add the following custom property to specify a username that represents the AEM forms Service Provider, which will be used to authenticate to the IDP Artifact Resolution service.
+* Add the following custom property to specify a username that represents the AEM forms Service Provider, which is used to authenticate to the IDP Artifact Resolution service.
   `saml.idp.resolve.username=<username>`
 
 * Add the following custom property to specify the password for the user specified in `saml.idp.resolve.username`.
@@ -141,7 +141,7 @@ Without just-in-time provisioning, when a user is successfully authenticated but
 ### Enable just-in-time provisioning for a domain {#enable-just-in-time-provisioning-for-a-domain}
 
 1. Write a service container that implements the IdentityCreator and AssignmentProvider interfaces. (See [Programming with AEM forms](https://www.adobe.com/go/learn_aemforms_programming_63).)
-1. Deploy the service container to the forms server.
+1. Deploy the service container to the Forms Server.
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
 
    Select an existing domain or click New Enterprise Domain.

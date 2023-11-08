@@ -84,7 +84,7 @@ The following code example renders an interactive PDF form named *Loan.xdp* to a
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -226,7 +226,7 @@ The following code example renders a form named *Loan.xdp* at the client using t
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -359,7 +359,7 @@ The following code example renders a Guide (deprecated) named *TLALifeClaim.xdp*
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -418,7 +418,7 @@ The following code example renders a Guide (deprecated) named *TLALifeClaim.xdp*
          renderSpec.setGuidePDF(false);
  
          //Specify URI values that are required to render a form
-         //design located in the AEM Forms repository
+         //design in the AEM Forms repository
          URLSpec uriValues = new URLSpec();
          uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsQS");
          uriValues.setContentRootURI("repository:///");
@@ -495,7 +495,7 @@ The following code example renders a form that is based on fragments. The name o
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -628,7 +628,7 @@ The following code example renders a rights-enabled form to a client web browser
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -765,7 +765,7 @@ The following code example renders an HTML form using the Forms service Java&tra
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -926,7 +926,7 @@ The following code example renders an HTML form using the Forms service Client A
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1081,7 +1081,7 @@ The following code example renders an HTML form with a toolbar that is displayed
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1237,7 +1237,7 @@ The following code example handles a form that is submitted as XML. The content 
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1406,7 +1406,7 @@ The following code example handles a form that is submitted as PDF data. The con
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1556,7 +1556,7 @@ The following code example handles an HTML form that is submitted as XML data. T
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1718,7 +1718,7 @@ The following Java&trade; code example handles form data that is submitted as XM
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -1994,7 +1994,7 @@ The following code example prepopulates a form with a dynamic data source. That 
 * that contains this quick start is exported as a WAR file which
 * is deployed to the J2EE application server)
 *
-* These JAR files are located in the following path:
+* These JAR files are in the following path:
 * <install directory>/sdk/client-libs/common
 *
 * For complete details about the location of these JAR files,
@@ -2045,7 +2045,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
    //Create DocumentBuilderFactory and DocumentBuilder objects
    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
    DocumentBuilder builder = factory.newDocumentBuilder();
-   //Create a new Document object
+   //Create a Document object
    document = builder.newDocument();
    //Create the root element and append it to the XML DOM
    Element root = (Element) document.createElement("transaction");
@@ -2273,7 +2273,7 @@ The following code example processes a form that contains a calculation script a
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -2391,7 +2391,7 @@ The following code example optimizes performance by setting the caching, standal
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -2447,7 +2447,7 @@ The following code example optimizes performance by setting the caching, standal
          renderSpec.setLinearizedPDF(true);
  
          //Specify URI values that are required to render a form
-         //design located in the AEM Forms Repository
+         //design in the AEM Forms Repository
          URLSpec uriValues = new URLSpec();
          uriValues.setApplicationWebRoot("https://'[server]:[port]'/FormsServiceClientApp");
          uriValues.setContentRootURI("repository:///");
@@ -2519,7 +2519,7 @@ The following Java&trade; quick start renders an interactive PDF form that is ba
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -2631,7 +2631,7 @@ The following Java&trade; Quick Start retrieves the file Loan.xdp from Content S
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,

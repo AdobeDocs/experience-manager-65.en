@@ -119,7 +119,7 @@ This workflow lets you request an email. It is the same workflow that appears in
 
 1. In a simple project, tap or click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
 1. In the workflow wizard select **Request Email** and click **Next**.
-1. Enter an email title, as well as the campaign and template paths. In addition you can provide a name, description, and live date.
+1. Enter an email title, and the campaign and template paths. In addition you can provide a name, description, and live date.
 
    ![Request email workflow](assets/project-request-email-workflow.png)
 

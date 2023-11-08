@@ -1,15 +1,10 @@
 ---
 title: Generate Document of Record for adaptive forms
-seo-title: Generate Document of Record for adaptive forms
 description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 ---
@@ -214,7 +209,7 @@ The adaptive forms table components such as header, footer, and row map to corre
 
 Base template provides styling and appearance information to document of record. It lets you customize default appearance of auto generated document of record. For example, you want to add your company logo in the header, and copyright information in the footer of the document of record. The master page from base template is used as a master page for document of record template. The master page can have information such as page header, page footer, and page number that you can apply to document of record. You can apply such information to document of record using base template for auto generation of document of record. Using base template enables you to change default properties of fields.
 
-Please follow [Base template conventions](#base-template-conventions) when you design base template.
+Be sure you follow [Base template conventions](#base-template-conventions) when you design base template.
 
 ## Base template conventions {#base-template-conventions}
 
@@ -230,7 +225,7 @@ A base template is used to define header, footer, styling, and appearance for a 
 
 **Styling conventions for fields**
 
-* To apply style on the fields in the document of record, the base template provides fields located in the `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` root subform.
+* To apply style on the fields in the document of record, the base template provides fields in the `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` root subform.
 
 * The properties of these fields are applied to the fields in the document of record. These fields should follow the `AF_<name of field in all caps>_XFO` naming convention. For example, the field name for check box should be `AF_CHECKBOX_XFO`.
 
@@ -310,7 +305,7 @@ To localize the branding information that you enter in the Document of Record ta
 
    If you choose to select a custom template, browse a select an XDP on your AEM Forms server. If you want to use a template that is not already on your AEM Forms server, you need to first upload the XDP to your AEM Forms server.
 
-1. Based on whether you select a default or a custom template, some or all of the following properties appear in the Document Of Record tab. Specify these appropriately:
+1. Based on whether you select a default or a custom template, some or all the following properties appear in the Document Of Record tab. Specify these appropriately:
 
     * **Logo Image**: You can either choose to use the logo image from the adaptive form, choose one from DAM, or upload one from your computer.
     * **Form Title**

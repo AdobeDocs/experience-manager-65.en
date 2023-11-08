@@ -1,14 +1,10 @@
 ---
 title: Styling constructs for adaptive forms
-seo-title: Styling constructs for adaptive forms
 description: Use LESS framework to customize appearance of adaptive forms.
-seo-description: Use LESS framework to customize appearance of adaptive forms.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
 ---
@@ -22,7 +18,7 @@ Knowledge of CSS and the LESS framework.
 
 ## What can be customized {#what-can-be-customized}
 
-The article lists publicly available css classes of adaptive forms. You can leverage these classes to style various components of an adaptive form. The styling of authoring components, such as dialogs and status bars that display warnings are beyond the scope of this article. Use these styling constructs to create styles (using CSS or Less) only when you are unable to style components using [theme editor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+The article lists publicly available css classes of adaptive forms. You can use these classes to style various components of an adaptive form. The styling of authoring components, such as dialogs and status bars that display warnings are beyond the scope of this article. Use these styling constructs to create styles (using CSS or Less) only when you are unable to style components using [theme editor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Customizing styles in adaptive forms {#customizing-styles-in-adaptive-forms}
 
@@ -53,7 +49,7 @@ Currently, LESS variables are defined only for these properties of the various e
 
 ## Changing component style {#changing-component-style}
 
-You can make changes to the appearance, layout, positioning, and visibility of elements. To achieve this task, create or update your custom .css files to include the styling constructs listed in this article.
+You can change the appearance, layout, positioning, and visibility of elements. To achieve this task, create or update your custom .css files to include the styling constructs listed in this article.
 
 To apply a style to an adaptive form, open the adaptive form in for editing, open properties of adaptive form conatiner, specify the path of custom CSS File in the basic tab. Defaut styling constructs of the adaptive form and overridden with the constructs listed in the custom .css file.
 
@@ -939,7 +935,7 @@ A Panel includes an optional toolbar and its content.
  </tbody>
 </table>
 
-The panel node is divided into navigators and content. There `` `` is no separate styling component for the content. The variables described are applied on navigator as well as content.
+The panel node is divided into navigators and content. There `` `` is no separate styling component for the content. The variables described are applied on navigator and content.
 
 The topmost panel (RootPanel) doesn't have this class.
 

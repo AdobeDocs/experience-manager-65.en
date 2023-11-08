@@ -112,7 +112,7 @@ IntelliJ IDEA must understand where to find the JSPs for debugging. Because IDEA
 
 The last step required is to start AEM with the JVM options proposed by IntelliJ IDEA.
 
-Start the AEM jar file directly and adding these options, for example with the following command line:
+Start the AEM jar file directly and adding these options, for example, with the following command line:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 

@@ -72,7 +72,7 @@ You can activate pages in the Websites console. After you have opened a page and
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. AEM WCM activates the selected content. The published page or pages appears in the [Websites console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marked green) with information about who activated the content as well as date and time of activation.
+1. AEM WCM activates the selected content. The published page or pages appears in the [Websites console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marked green) with information about who activated the content and date and time of activation.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 

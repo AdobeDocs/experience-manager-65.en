@@ -20,7 +20,7 @@ AEM Mobile On-Demand provides a fully configured app template, an article templa
 
 The We.Unlimited App is a sample template representing the shell of a fully configurable and manageable AEM Mobile On-Demand application.
 
-Selecting this sample template when creating a new app delivers an AEM Mobile feature rich dashboard.
+Selecting this sample template when creating an app delivers an AEM Mobile feature rich dashboard.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -30,13 +30,13 @@ Selecting this sample template when creating a new app delivers an AEM Mobile fe
 
 ## Creating App Templates {#creating-app-templates}
 
-An App template is used to create a new app and acts as a collection of page templates and components that represent a baseline or foundation of an app. The template stamps out some fundamental properties to lead the app in the appropriate way. In general, a customer would not create too many apps in total.
+An App template is used to create an app and acts as a collection of page templates and components that represent a baseline or foundation of an app. The template stamps out some fundamental properties to lead the app in the appropriate way. In general, a customer would not create too many apps in total.
 
-App templates provide an easy way to leverage existing designs created by devlopers, used for the creation of new apps within AEM.
+App templates provide an easy way to use existing designs created by devlopers, used for the creation of new apps within AEM.
 
-When creating a new app based on the template of another app, you will get an app that has a starting point representative of the app in which it was created from.
+When creating an app based on the template of another app, you will get an app that has a starting point representative of the app in which it was created from.
 
-Steps to creating a new app based on an app template:
+Steps to creating an app based on an app template:
 
 1. Navigate to the AEM Mobile app catalog: *&lt;server-url&gt;/aem/apps.html/content/mobileapps*
 1. Select **Create** --&gt; **App** as shown below
@@ -45,7 +45,7 @@ Once you create an app using this template, you can add articles, banners, and c
 
 >[!NOTE]
 >
->Alternatively, you can also select a sample app template, for example **We.Unlimited** app, made available to you by an AEM developer. If you use this sample template for your app, you get some sample articles and collections to work on. You will have the option of using the sample templates and components, customizing the existing ones, or creating new ones for your app.
+>Alternatively, you can also select a sample app template, for example, **We.Unlimited** app, made available to you by an AEM developer. If you use this sample template for your app, you get some sample articles and collections to work on. You will have the option of using the sample templates and components, customizing the existing ones, or creating new ones for your app.
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ Each entity type has two out-of-the-box templates. These are:
 
 The Unlimited Article is a sample template representing a typical AEM Mobile On-Demand article layout.
 
-1. Click on **+** in **Manage Articles** to create a new article. You can choose either an **Unlimited Article** or a **Rich Text Article**. The image below shows the option that lets you choose from any of these two article templates.
+1. In **Manage Articles**, select **+**  to create an article. You can choose either an **Unlimited Article** or a **Rich Text Article**. The image below shows the option that lets you choose from any of these two article templates.
 
 1. Click **Next** to define artcle meta data such as Article Name/Title, Description, Author, Abstract, Department, Thumbnail Image, Article Acces, and so on.
 1. Click **Next** to fill in the Advertisement Properties.

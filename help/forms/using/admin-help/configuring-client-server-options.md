@@ -21,7 +21,7 @@ If you are using IPv6, enter the Base URL as the computer name or the DNS name. 
 
 >[!NOTE]
 >
->The base URL is embedded in policy-protected files. Client applications use the base URL to connect back to the server. Secured files will continue to contain the base URL, even if it is changed later. If you change the base URL, configuration information will need to be updated for all connecting clients.
+>The base URL is embedded in policy-protected files. Client applications use the base URL to connect back to the server. Secured files will continue to contain the base URL, even if it is changed later. If you change the base URL, configuration information must be updated for all connecting clients.
 
 **Default Offline Lease Period:** The default length of time that a user can use a protected document offline. This setting determines the initial value of the Auto-Offline lease period setting when you create a policy. (See Creating and editing policies.) When the lease period expires, the recipient must synchronize the document again to continue using it.
 
@@ -45,7 +45,7 @@ For a discussion of how offline lease and synchronization works, see [Primer on 
 
 **Allow Extended Authentication** Select to enable extended authentication and then enter the Extended Authentication Landing URL.
 
-Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the AEM forms server. For example, users can now experience the SAML-based authentication instead of AEM forms username/Password, from Acrobat and Reader Client. By default, the Landing URL contains *localhost* as the server name. Replace the server name with a fully qualified hostname. The hostname in the landing URL is automatically populated from the base URL, if extended Authentication is not enabled yet. See [Add the extended authentication provider](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the AEM Forms Server. For example, users can now experience the SAML-based authentication instead of AEM forms username/Password, from Acrobat and Reader Client. By default, the Landing URL contains *localhost* as the server name. Replace the server name with a fully qualified hostname. The hostname in the landing URL is automatically populated from the base URL, if extended Authentication is not enabled yet. See [Add the extended authentication provider](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***note**: Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.*
 
@@ -93,7 +93,7 @@ AEM forms provides a sample configuration that you can customize for your enviro
 >Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.
 
 1. Obtain the sample WAR file deploy it. See the installation guide appropriate for your application server.
-1. Ensure that the forms server has a fully qualified name instead of IP addresses as the base URL and that it is a HTTPS URL. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
+1. Ensure that the Forms Server has a fully qualified name instead of IP addresses as the base URL and that it is a HTTPS URL. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
 1. Enable Extended Authentication from the Server Configuration page. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
 1. Add the required SSO redirect URLs in the User Management configuration file. See [Add SSO redirect URLs for extended authentication](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -148,7 +148,7 @@ To open a policy-protected document offline, the user's computer must have the a
 
 One way to lessen the threat to offline documents is to avoid permitting offline access to particularly sensitive documents. Another method is to periodically roll over the principal keys. When document security rolls the key over, any existing keys can no longer access the policy-protected documents. For example, if a perpetrator obtains a principal key from a stolen laptop, that key cannot be used to access the documents that are protected after the rollover occurs. If you suspect that a specific principal key has been compromised, you can manually roll over the key.
 
-However, you also need to be aware that a key rollover affects all principal keys, not just one. It also reduces the scalability of the system because clients must store more keys for offline access. The default key rollover frequency is 20 days. It is recommended not to set this value lower than 14 days because people may be prevented from viewing offline documents and system performance may be affected.
+However, a key rollover affects all principal keys, not just one. It also reduces the scalability of the system because clients must store more keys for offline access. The default key rollover frequency is 20 days. It is recommended not to set this value lower than 14 days because people may be prevented from viewing offline documents and system performance may be affected.
 
 In the following example, Key1 is the older of the two principal keys, and Key2 is the newer one. When you click the Rollover Keys Now button the first time, Key1 becomes invalid, and a newer, valid principal key (Key3) is generated. Users will obtain Key3 when they synchronize with document security, typically by opening a protected document online. However, users are not forced to synchronize with document security until they reach the maximum offline lease period specified in a policy. After the first key rollover, users who remain offline can still open offline documents, including those protected by Key3, until they reach the maximum offline lease period. When you click the Rollover Keys Now button a second time, Key2 becomes invalid, and Key4 is created. Users who remain offline during the two key rollovers are not able to open documents protected with Key3 or Key4 until they synchronize with document security.
 
@@ -252,7 +252,7 @@ You can export audit events to a file for archiving purposes.
 
     * the minimum age of the audit events to export
     * the maximum number of audit events to include in a single file. The server generates one or more files, based on this value.
-    * the folder where the file will be created. This folder is on the forms server. If the folder path is relative, then it is relative to your application server root directory.
+    * the folder where the file will be created. This folder is on the Forms Server. If the folder path is relative, then it is relative to your application server root directory.
     * the file prefix to use for the audit events files
     * the format of the file, either a comma-separated values (CSV) file that is compatible with Microsoft Excel or an XML file.
 
@@ -567,7 +567,7 @@ By default, the invited user registration process is disabled. You can enable an
 
 You can restrict registration with document security for certain external users or user groups. This option is useful, for example, to allow access to a certain user group but exclude specific individuals who are part of the group.
 
-The following settings are located in the Email Restriction Filter area of the Invited User Registration page.
+The following settings are in the Email Restriction Filter area of the Invited User Registration page.
 
 **Exclusion:** Type the email address of a user or group to exclude. To exclude multiple users or groups, type each email address on a new line. To exclude all users who belong to a particular domain, enter a wildcard and the domain name. For example, to exclude all users in the example.com domain, enter &ast;.example.com.
 
@@ -575,7 +575,7 @@ The following settings are located in the Email Restriction Filter area of the I
 
 ### Server and registration account parameters {#server-and-registration-account-parameters}
 
-The following settings are located in the General Settings area of the Invited User Registration page.
+The following settings are in the General Settings area of the Invited User Registration page.
 
 **SMTP Host:** The host name of the SMTP server. The SMTP server manages the outgoing email notices to register and activate invited user accounts.
 
@@ -619,11 +619,11 @@ If required by your SMTP host, type the required information in the SMTP Server 
 
 ### Registration invitation email settings {#registration-invitation-email-settings}
 
-Document security automatically issues a registration invitation email when you create a new invited user account or when an existing user adds an external recipient who has not previously registered or been invited to register to a policy. The email contains a link that the recipient can use to access the registration page and enter personal account information, including user name and password. The password can be any combination of eight characters.
+Document security automatically issues a registration invitation email when you create an invited user account or when an existing user adds an external recipient who has not previously registered or been invited to register to a policy. The email contains a link that the recipient can use to access the registration page and enter personal account information, including user name and password. The password can be any combination of eight characters.
 
 When the recipient activates the account, the user becomes a local user.
 
-The following settings are located in the Invitation Email Configuration area of the Invited User Registration page.
+The following settings are in the Invitation Email Configuration area of the Invited User Registration page.
 
 **From:** The email address from which the invitation email is sent. The default format of the From email address is postmaster@[your_installation_domain].com.
 
@@ -639,7 +639,7 @@ After invited users register, document security sends an activation email. The a
 
 When the recipient activates the user account, the user becomes a local user.
 
-The following settings are located in the Activation Email Configuration area of the Invited User Registration page.
+The following settings are in the Activation Email Configuration area of the Invited User Registration page.
 
 >[!NOTE]
 >
@@ -657,7 +657,7 @@ The following settings are located in the Activation Email Configuration area of
 
 If you have to reset an invited user's password, a confirmation email is generated that invites the user to choose a new password. A user's password cannot be determined; if the user forgets it, you must reset it.
 
-The following settings are located in the Reset Password Email area of the Invited User Registration page.
+The following settings are in the Reset Password Email area of the Invited User Registration page.
 
 **From:** The email address from which the password reset email is sent. The default format of the From email address is postmaster@[your_installation_domain].com.
 
@@ -700,7 +700,7 @@ Your selected users and groups now have permission to create custom policies.
 
 ### Specify users and groups that are visible in searches {#specify-users-and-groups-that-are-visible-in-searches}
 
-When users are managing their custom policies, they can search for users and groups to add to their policies. You must specify the domains from which users and groups are visible in these searches.
+When users are managing their custom policies, they can search for users and groups to add to their policies. Specify the domains from which users and groups are visible in these searches.
 
 1. On the document security page, click Configuration &gt; My Policies.
 1. On the My Policies page, click the Visible Users and Groups tab.
@@ -766,7 +766,7 @@ You can configure document security to deny services to applications that meet s
 
 When client applications attempt to establish a link with document security, they supply application, version, and platform information. Document security compares this information against Denials settings it obtains from the document security configuration file.
 
-The Denials settings can contain several sets of denial conditions. If all of the attributes of any one set match, the requesting application is denied access to the document security services.
+The Denials settings can contain several sets of denial conditions. If all the attributes of any one set match, the requesting application is denied access to the document security services.
 
 The denial-of-service feature requires that client applications use the document security C++ Client SDK version 8.2 or later. The following Adobe products provide product information when requesting document security services:
 

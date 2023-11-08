@@ -99,7 +99,7 @@ To create a Project with Adobe Target that AEM can use, open the Adobe Developer
 
 1. Review the credentials, and continue with **Next**:
 
-   ![Creating a new project](assets/integration-target-io-15.png)
+   ![Creating a project](assets/integration-target-io-15.png)
 
 1. Select the required product profiles, and continue with **Save configured API**:
 

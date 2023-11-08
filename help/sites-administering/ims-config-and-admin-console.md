@@ -110,7 +110,7 @@ User Sync is distributed through the Adobe Github repository at this location:
 
 Note that a pre-release version 2.4RC1 is available with dynamic group creation support and can be found here: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
-The major features for this release are the ability to dynamically map new LDAP groups for user membership in the [!DNL Admin Console], as well as dynamic user group creation.
+The major features for this release are the ability to dynamically map new LDAP groups for user membership in the [!DNL Admin Console], and dynamic user group creation.
 
 More information about the new group features can be found here:
 
@@ -118,7 +118,7 @@ More information about the new group features can be found here:
 
 >[!NOTE]
 >
->For more information regarding the User Sync Tool, refer to the [documentation page](https://adobe-apiplatform.github.io/user-sync.py/en/).
+>For more information regarding the User Sync Tool, see the [documentation page](https://adobe-apiplatform.github.io/user-sync.py/en/).
 >
 >
 >The User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
@@ -130,7 +130,7 @@ More information about the new group features can be found here:
 
 >[!NOTE]
 >
->The AEM IMS configuration will be handled by the Adobe Managed Services team. However, the customer administrator may modify it as per their requirements (for example Auto Group Membership or Group Mapping). The IMS client will also be registered by your Managed Services team.
+>The AEM IMS configuration will be handled by the Adobe Managed Services team. However, the customer administrator may modify it as per their requirements (for example, Auto Group Membership or Group Mapping). The IMS client will also be registered by your Managed Services team.
 
 ## How to Use {#how-to-use}
 
@@ -140,7 +140,7 @@ When the customer Product Administrator logs in to [!DNL Admin Console], they wi
 
 ![screen_shot_2018-09-17at105804pm](assets/screen_shot_2018-09-17at105804pm.png)
 
-In this example, the org *AEM-MS-Onboard* has 32 instances spanning different topologies and environments like Stage, Prod, etc.
+In this example, the org *AEM-MS-Onboard* has 32 instances spanning different topologies and environments like Stage, Prod, and so on.
 
 ![screen_shot_2018-09-17at105517pm](assets/screen_shot_2018-09-17at105517pm.png)
 

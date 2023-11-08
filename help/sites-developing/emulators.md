@@ -18,7 +18,7 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 >
 >Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) enables authors to view a page in an emulator that simulates the environment in which an end-user will view the page, as for example on a mobile device or in an email client.
+Adobe Experience Manager (AEM) enables authors to view a page in an emulator that simulates the environment in which an end-user will view the page, as for example, on a mobile device or in an email client.
 
 The AEM emulator framework:
 
@@ -112,7 +112,7 @@ When the page component relies on the mobile page component ( `/libs/wcm/mobile/
 
   `deviceGroup.drawHead(pageContext);`
 
-* The method `DeviceGroup.drawHead(pageContext)` includes the emulator's init component, i.e. calls the `init.html.jsp` of the emulator component. If the emulator component does not have its own `init.html.jsp` and relies on the mobile base emulator ( `wcm/mobile/components/emulators/base)`, the init script of the mobile base emulator is called ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* The method `DeviceGroup.drawHead(pageContext)` includes the emulator's init component, that is, calls the `init.html.jsp` of the emulator component. If the emulator component does not have its own `init.html.jsp` and relies on the mobile base emulator ( `wcm/mobile/components/emulators/base)`, the init script of the mobile base emulator is called ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
 * The init script of the mobile base emulator defines through JavaScript:
 
@@ -137,7 +137,7 @@ To create a custom mobile emulator:
 
    As an example, you can refer to the node `/libs/wcm/mobile/components/emulators/iPhone/css`
 
-1. If needed, define a JS client library, for example to define a specific plugin: name = js, node type = cq:ClientLibrary
+1. If needed, define a JS client library, for example, to define a specific plugin: name = js, node type = cq:ClientLibrary
 
    As an example, you can refer to the node `/libs/wcm/mobile/components/emulators/base/js`
 

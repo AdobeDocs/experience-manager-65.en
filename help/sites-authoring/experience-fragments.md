@@ -31,7 +31,7 @@ You can use Experience Fragments:
 >
 >&nbsp;&nbsp;&nbsp;&nbsp;`experience-fragments-editors`
 >
->Please contact your system administrator if you are experiencing any issues.
+>Contact your system administrator if you are experiencing any issues.
 
 ## When Should You Use Experience Fragments? {#when-should-you-use-experience-fragments}
 
@@ -49,7 +49,7 @@ Experience Fragments should be used:
 * If you have an Experience with different variations or renditions.
 
     * Channel or context-specific variations
-    * Experiences that make sense to group (for example a campaign with different experiences across channels)
+    * Experiences that make sense to group (for example, a campaign with different experiences across channels)
 
 * When you use Omnichannel Commerce.
 
@@ -129,7 +129,7 @@ To create and configure a folder for your Experience Fragments it is recommended
 >
 >It is not recommended to change the **Allowed Templates** by this method, as the templates specified can be overwritten upon upgrade.
 >
->Please use this dialog for information purposes only.
+>Use this dialog box for information purposes only.
 
 1. Navigate to the required **Experience Fragments** console.
 
@@ -228,7 +228,7 @@ You can create variations of your Experience Fragment, depending on your needs:
 
    ![xf-06](assets/xf-06.png)
 
-1. Confirm with **Done** (tick icon), the new variation will be shown in the panel:
+1. Confirm with **Done** (tick icon), the new variation is shown in the panel:
 
    ![xf-07](assets/xf-07.png)
 
@@ -261,7 +261,7 @@ You can select one or more components to create a building block for recycling w
 
 ### Creating a Building Block {#creating-a-building-block}
 
-To create a new Building Block:
+To create a Building Block:
 
 1. In the Experience Fragment editor, select the components you want to re-use:
 
@@ -275,7 +275,7 @@ To create a new Building Block:
 
    ![xf-11](assets/xf-11.png)
 
-1. The **Building Block** will be shown in the tab, and can be selected in the paragraph system:
+1. The **Building Block** is shown in the tab, and can be selected in the paragraph system:
 
    ![xf-12](assets/xf-12.png)
 

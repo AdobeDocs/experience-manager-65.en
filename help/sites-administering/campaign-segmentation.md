@@ -1,14 +1,10 @@
 ---
 title: Configuring Segmentation
-seo-title: Configuring Segmentation
 description: Learn how to configure segmentation for AEM Campaign.
-seo-description: Learn how to configure segmentation for AEM Campaign.
-uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
 ---
@@ -17,11 +13,11 @@ exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
 
 >[!NOTE]
 >
->This document covers the configuration of segmentation as used with the Client Context. To configure segments with ContextHub using the touch UI, please see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).
+>This document covers the configuration of segmentation as used with the Client Context. To configure segments with ContextHub using the touch UI, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).
 
 Segmentation is a key consideration when creating a campaign. See [Segmentation glossary](/help/sites-authoring/segmentation-overview.md) for information on how segmentation works and key terms.
 
-Depending on the information you have already collected about your site visitors and the goals you want to achieve, you will need to define the segments and strategies needed for your targeted content.
+Depending on the information you have already collected about your site visitors and the goals you want to achieve, you must define the segments and strategies needed for your targeted content.
 
 These segments are then used to provide a visitor with specifically targeted content. This content is maintained in the [Campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) section of the website. Teaser pages defined here can be included as teaser paragraphs on any page and define which visitor segment the specialized content is applicable for.
 
@@ -104,7 +100,7 @@ The following segment traits are available out-of-the-box; they can be dragged f
 
 You can combine these traits using the boolean operators OR and AND (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting this segment.
 
-When the entire statement evaluates to true then this segment has resolved. In the event of multiple segments being applicable, then the **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor is also used.
+When the entire statement evaluates to true then this segment has resolved. If there are multiple applicable segments, then the **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** factor is also used.
 
 >[!CAUTION]
 >
@@ -125,10 +121,10 @@ To define your new segment:
 1. Create a [new page](/help/sites-authoring/editing-content.md#creatinganewpage) using the **Segment** template.
 1. Open the new page to see the segment editor:
 
-   ![The first step of creating a new segment in the Segment Editor](assets/screen_shot_2012-02-02at101726am.png)
+   ![The first step of creating a segment in the Segment Editor](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Use either the sidekick or the context menu (usually right mouse button click, then select **New...** to open the Insert New Component window) to find the segment trait you need. Then drag it to the **Segment Editor** it will appear in the default **AND** container.
-1. Double-click on the new trait to edit the specific parameters; for example the mouse position:
+1. Double-click on the new trait to edit the specific parameters; for example, the mouse position:
 
    ![Editing a component in the Segment Editor](assets/screen_shot_2012-02-02at103135am.png)
 
@@ -143,7 +139,7 @@ To define your new segment:
 
 You can construct complex segments in AEM. It helps to be aware of a few basic points:
 
-* The top level of the definition is always the AND container that is initially created; this cannot be changed, but does not have an effect on the rest of your segment definition.
+* The top-level of the definition is always the AND container that is initially created; this cannot be changed, but does not have an effect on the rest of your segment definition.
 * Ensure that the nesting of your container makes sense. The containers can be viewed as the brackets of your boolean expression.
 
 The following example is used to select visitors who are either:

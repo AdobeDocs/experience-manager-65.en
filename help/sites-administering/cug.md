@@ -1,14 +1,10 @@
 ---
 title: Creating a Closed User Group
-seo-title: Creating a Closed User Group
 description: Learn how to create a Closed User Group.
-seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
-uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 ---
@@ -48,7 +44,7 @@ To create a closed user group:
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Press the **Create** button in the top right corner, to create a new group.
+1. Press the **Create** button in the top right corner, to create a group.
 1. Name your new group; for example, `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
@@ -76,7 +72,7 @@ To apply the CUG to a page, or pages:
    1. Activate the **Enable** tickbox.
 
    1. Add the path to your **Login Page**.
-   This is optional, if left blank the standard login page will be used.
+   This is optional, if left blank the standard login page is used.
 
    ![CUG added](assets/cug-authentication-requirement.png)
 
@@ -86,11 +82,11 @@ To apply the CUG to a page, or pages:
 
    >[!NOTE]
    >
-   >CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
+   >CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Plan around this when configuring Live Copy.
    >
    >For more information, see [this page](closed-user-groups.md#aem-livecopy).
 
-1. The **Edit Closed User Group** dialog will open. Here you can search for, and select, your CUG, then confirm the group selection with **Save**. 
+1. The **Edit Closed User Group** dialog opens. Here you can search for, and select, your CUG, then confirm the group selection with **Save**. 
 
    The group will be added to the list; for example, the group **cug_access**.
 

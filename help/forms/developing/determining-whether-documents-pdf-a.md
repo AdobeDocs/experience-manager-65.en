@@ -139,7 +139,7 @@ Determine whether a PDF document is PDF/A-compliant by using the Assembler Servi
     * Create a `java.util.Map` object that is used to store the input PDF document by using a `HashMap` constructor.
     * Add an entry to the `java.util.Map` object by invoking its `put` method and passing the following arguments:
 
-        * A string value that represents the key name. This value must match the value of the source element specified in the DDX document. For example, the value of the source element located in the DDX document that is introduced in this section is Loan.pdf.
+        * A string value that represents the key name. This value must match the value of the source element specified in the DDX document. For example, the value of the source element in the DDX document that is introduced in this section is Loan.pdf.
         * A `com.adobe.idp.Document` object that contains the input PDF document.
 
 1. Set run-time options.

@@ -114,7 +114,7 @@ To customize the images, add the following code snippet in the `/apps/ws/css/new
 
 >[!NOTE]
 >
->Add separate styles to display different images or images of different resolution for the Task list and Task details actions. For example to change the 'lock' action:
+>Add separate styles to display different images or images of different resolution for the Task list and Task details actions. For example, to change the 'lock' action:
 
 ```css
 #taskarea .taskActionsPopUp .lock{

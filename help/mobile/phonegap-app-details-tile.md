@@ -40,7 +40,7 @@ Platforms displayed are driven by the PhoneGap config.xml content:
 </widget>
 ```
 
-Each vendor application store&mdash;for example, Apple App Store or Google Play Store&mdash;requires one or more screenshots of your mobile application to display your application details to customers. These screenshots can have strict requirements around dimensions and content (basically they must truly represent the application). AEM Apps provides support for selecting and managing these screenshots for the supported platforms and view port dimensions as required by each vendor's application store.
+Each vendor application store&mdash;for example, Apple App Store or Google Play Store&mdash;requires one or more screenshots of your mobile application to display your application details to customers. These screenshots can have strict requirements around dimensions and content (basically they must truly represent the application). AEM Apps supports selecting and managing these screenshots for the supported platforms and view port dimensions as required by each vendor's application store.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Within this section you define the Content Update Server URL, landing page for y
 
 **PhoneGap Version** is the version in which you wish to compile your application with PhoneGap. Best practice is to keep up with the current version to ensure you get the latest and greatest features and bug fixes.
 
-**Content Update Server URL** is the URL which your application will use to call for ContentSync updates. It must be set to your Dispatcher URL or, if not using a Dispatcher, to one of your publish instances that will be used to serve ContentSync updates to your application.
+**Content Update Server URL** is the URL which your application will use to call for ContentSync updates. It must be set to your Dispatcher URL or, if not using a Dispatcher, to one of your publish instances that is used to serve ContentSync updates to your application.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -124,7 +124,7 @@ The Content Update Server URL property is the URL that must point to a publish i
 
 ### The Plugins tab {#the-plugins-tab}
 
-The **Plugins** tab describes the plugins associated with your app. This information will be used to retrieve the appropriate plugin during a build.
+The **Plugins** tab describes the plugins associated with your app. This information is used to retrieve the appropriate plugin during a build.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 

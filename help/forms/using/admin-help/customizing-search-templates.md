@@ -52,7 +52,7 @@ You can create as many search templates as required.
         * (Optional) To enable users to change the operand value in Workspace, select Allow The User To Change The Operand.
         * (Optional) To enable users to change the relational operator, select Allow The User To Select Another Relational Operator. In the list that appears, select the operators that will be available to the user.
 
-      **Tip**: *If you selected Process Name as the element, you can click the icon beside the operand field to display a list where you can select a process that is running on the forms server. After selecting a process, any process variables defined in that process are available for selection under Process Variables in the top section of the Criteria tab.*
+      **Tip**: *If you selected Process Name as the element, you can click the icon beside the operand field to display a list where you can select a process that is running on the Forms Server. After selecting a process, any process variables defined in that process are available for selection under Process Variables in the top section of the Criteria tab.*
 
       **Tip**: *You can delete an element from the search template by clicking the Delete icon beside the element’s search criteria.*
 
@@ -73,7 +73,7 @@ You can create as many search templates as required.
     * (Optional) To sort a column in descending order, select the check box next to the element name. If the check box is not selected, the column is sorted in ascending order.
 
 1. Click the Save tab.
-1. (Optional) If creating a new search template, give it a unique name. If you do not specify a unique name, you could overwrite an existing template.
+1. (Optional) If creating a search template, give it a unique name. If you do not specify a unique name, you could overwrite an existing template.
 1. Click the Save button.
 
 ## Delete a search template {#delete-a-search-template}

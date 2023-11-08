@@ -21,7 +21,7 @@ exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 
 The Forms service can render forms that are based on fragments that you create using Designer. A *fragment* is a reusable part of a form and is saved as a separate XDP file that can be inserted into multiple form designs. For example, a fragment can include an address block or legal text.
 
-Using fragments simplifies and speeds up the creation and maintenance of large numbers of forms. When creating a new form, you insert a reference to the required fragment and the fragment appears in the form. The fragment reference contains a subform that points to the physical XDP file. For information about creating form designs based on fragments, see [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
+Using fragments simplifies and speeds up the creation and maintenance of large numbers of forms. When creating a form, you insert a reference to the required fragment and the fragment appears in the form. The fragment reference contains a subform that points to the physical XDP file. For information about creating form designs based on fragments, see [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 A fragment can include several subforms that are wrapped in a choice subform set. Choice subform sets control the display of subforms based on the flow of data from a data connection. You use conditional statements to determine which subform from within the set appears in the delivered form. For example, each subform in a set can include information for a particular geographic location and the subform that is displayed can be determined based on the location of the user.
 
@@ -71,7 +71,7 @@ Before you can programmatically perform a Forms service Client API operation, yo
 
 To successfully render a form based on fragments, you must ensure that the Forms service can locate both the form and the fragments (the XDP files) that the form design references. For example, assume the form is named PO.xdp and this form uses two fragments named FooterUS.xdp and FooterCanada.xdp. In this situation, the Forms service must be able to locate all three XDP files.
 
-You can organize a form and its fragments by placing the form in one location and the fragments in another location, or you can place all XDP files in the same location. For the purposes of this section, assume that all XDP files are located in the AEM Forms repository. For information about placing XDP files in the AEM Forms repository, see [Writing Resources](/help/forms/developing/aem-forms-repository.md#writing-resources).
+You can organize a form and its fragments by placing the form in one location and the fragments in another location, or you can place all XDP files in the same location. For the purposes of this section, assume that all XDP files are in the AEM Forms repository. For information about placing XDP files in the AEM Forms repository, see [Writing Resources](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 When rendering a form based on fragments, you must reference only the form itself and not the fragments. For example, you must reference PO.xdp and not FooterUS.xdp or FooterCanada.xdp. Ensure that you place the fragments in a location where the Forms service can locate them.
 
@@ -116,7 +116,7 @@ Render a form based on fragments by using the Forms API (Java):
 
     * Create a `URLSpec` object that stores URI values by using its constructor.
     * Invoke the `URLSpec` object’s `setApplicationWebRoot` method and pass a string value that represents the application’s web root.
-    * Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design and the fragments are located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository://`.
+    * Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design and the fragments are in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository://`.
     * Invoke the `URLSpec` object’s `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent to perform calculations.
 
 1. Render the form
@@ -168,7 +168,7 @@ Render a form based on fragments using the Forms API (web service):
 
     * Create a `URLSpec` object that store URI values by using its constructor.
     * Invoke the `URLSpec` object’s `setApplicationWebRoot` method and pass a string value that represents the application’s web root.
-    * Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design is located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository://`.
+    * Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design is in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository://`.
     * Invoke the `URLSpec` object’s `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent to perform calculations.
 
 1. Render the form
@@ -177,7 +177,7 @@ Render a form based on fragments using the Forms API (web service):
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
     * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`.
-    * A `PDFFormRenderSpec` object that stores run-time options. Note that the tagged PDF option cannot be set if the input document is a PDF document. If the input file is an XDP file, the tagged PDF option can be set.
+    * A `PDFFormRenderSpec` object that stores run-time options. The tagged PDF option cannot be set if the input document is a PDF document. If the input file is an XDP file, the tagged PDF option can be set.
     * A `URLSpec` object that contains URI values required by the Forms service.
     * A `java.util.HashMap` object that stores file attachments. This is an optional parameter and you can specify `null` if you do not want to attach files to the form.
     * An empty `com.adobe.idp.services.holders.BLOBHolder` object that is populated by the method. This parameter is used to store the rendered form.

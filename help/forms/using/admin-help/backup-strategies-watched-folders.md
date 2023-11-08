@@ -151,7 +151,7 @@ The following strategies can minimize output and input folder data loss when res
 
   For example, if you are saving the output with `%F.`*extension*, the output file will have the same name as the input file. This helps you to determine which input files are manipulated and which ones must be resubmitted. If you see only file1_out file in the result folder and not file2_out, file3_out and file4_out, you must resubmit file2, file3, and file4.
 
-* If the watched folder backup that is available is older than the time it takes to process the job, you should allow the system to create a new watched folder and automatically place the files in the input folder.
+* If the watched folder backup that is available is older than the time it takes to process the job, you should allow the system to create a watched folder and automatically place the files in the input folder.
 * If the latest available backup is not recent enough, the backup time is less than the time it takes to process the files, and the watched folder is restored, the file was manipulated in one of the following different stages:
 
     * **Stage 1:** In the input folder
@@ -168,4 +168,4 @@ The following strategies can minimize output and input folder data loss when res
 
 ## Conclusion {#conclusion}
 
-Due to the dynamic and constantly changing nature of a watched folder, restoration of watched folders should be done with files that are backed up within a day. A best practice would be backing up the results, storing the input folder on a server, and tracking input files so that you can resubmit the job in case of failure.
+Due to the dynamic and constantly changing nature of a watched folder, restoration of watched folders should be done with files that are backed up within a day. A best practice would be backing up the results, storing the input folder on a server, and tracking input files so that you can resubmit the job if there is failure.

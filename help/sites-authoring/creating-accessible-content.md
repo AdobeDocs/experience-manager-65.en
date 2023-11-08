@@ -275,7 +275,7 @@ Follow the guidance provided for [Audio Description or Media Alternative (Prerec
 
 ### Adaptable (1.3) {#adaptable}
 
-[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.](https://www.w3.org/TR/WCAG/#adaptable)
+[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example, simpler layout) without losing information or structure.](https://www.w3.org/TR/WCAG/#adaptable)
 
 This guideline covers the requirements necessary to support people who:
 
@@ -317,7 +317,7 @@ You can make sure that your web pages are given the appropriate structure by usi
   * a `<th>` element for each row and column heading
   * a `<td>` element for every data cell
 
-  Also, accessible tables make use of the following elements and attributes:
+  Also, accessible tables use the following elements and attributes:
 
   * The `<caption>` element is used to provide a visible caption for the table. Captions by default appear centered above the table, but can be positioned appropriately using CSS. The caption is programmatically associated with the table, thus it is a useful method for providing an introduction to content.
   * The `<summary>` element assists non-sighted users to more easily understand the information presented within a table, by providing a synopsis of what a sighted user can see. This is useful where complex or unconventional table layouts are used (this attribute is not displayed in the browser, it is only read out to assistive technologies).
@@ -426,13 +426,13 @@ Similarly, information that requires distinguishing between different sounds (fo
 
 >[!NOTE]
 >
->For requirements related to alternatives to color, refer to [Use of Color](#use-of-color).
+>For requirements related to alternatives to color, see [Use of Color](#use-of-color).
 
 #### How to Meet - Sensory Characteristics (1.3.3) {#how-to-meet-sensory-characteristics}
 
 Make sure that any information that relies on visual characteristics of page content is also presented in an alternative format.
 
-* Do not rely on visual position to give information. For example, if you want to refer users to a menu on the right-hand side of the page for access to further information, do not refer to *the menu on the right*; instead, name the menu (for example via a heading) and refer to that name in text.
+* Do not rely on visual position to give information. For example, if you want to refer users to a menu on the right-hand side of the page for access to further information, do not refer to *the menu on the right*; instead, name the menu (for example, by way of a heading) and refer to that name in text.
 * Do not rely on text styling (for example, bold or italicized text) as the only way to convey information.
 
 >[!NOTE]
@@ -692,7 +692,7 @@ Follow the guidelines under [How to Meet Success Criteria 2.2.1](https://www.w3.
 
 Points to note are:
 
-1. For requirements related to flickering or flashing content, refer to Do not Design Content in a Way that is Known to Cause Seizures (2.3).
+1. For requirements related to flickering or flashing content, see Do not Design Content in a Way that is Known to Cause Seizures (2.3).
 1. Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the web page (whether it is used to meet other success criteria or not) must meet this success criterion. See [Conformance Requirement 5: Non-Interference](https://www.w3.org/TR/WCAG20/#cc5).
 1. Content that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so.
 1. An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.
@@ -834,7 +834,7 @@ Above all, make sure that the purpose of a link is clearly described within the 
 
 Links should be phrased consistently across pages, especially for navigation bars. For example, if a link to a specific page is named **Publications** on one page, use that text on other pages to ensure consistency.
 
-At the time of writing, there are some issues surrounding the use of title attributes to ensure that similar links presented on a page provide unique information about the destination (for example, "read more" will often refer to a range of different destinations):
+At the time of writing, there are some issues surrounding the use of title attributes to ensure that similar links presented on a page provide unique information about the destination (for example, "read more" often refers to a range of different destinations):
 
 * Text contained within the title attribute is only available to mouse users as a tool-tip pop-up and cannot be consistently accessed using the keyboard, or by mobile users.
 * Screen readers can read out title attributes, but this functionality may not be enabled by default; so users may be unaware a title attribute exists.
@@ -1088,7 +1088,7 @@ Follow the guidelines under [How to Meet Success Criteria 3.2.2](https://www.w3.
 
 The intent of this Success Criterion is to encourage the use of consistent presentation and layout for users who interact with repeated content within a set of Web pages and must locate specific information or functionality more than once. Individuals with low vision who use screen magnification to display a small portion of the screen at a time often use visual cues and page boundaries to quickly locate repeated content. Presenting repeated content in the same order is also important for visual users who use spatial memory or visual cues within the design to locate repeated content.
 
-It is important to note that the use of the phrase "same order" in this section is not meant to imply that subnavigation menus cannot be used or that blocks of secondary navigation or page structure cannot be used. Instead, this Success Criterion is intended to assist users who interact with repeated content across Web pages to be able to predict the location of the content they are looking for. And, to find it more quickly when they encounter it again.
+The use of the phrase "same order" in this section is not meant to imply that subnavigation menus cannot be used or that blocks of secondary navigation or page structure cannot be used. Instead, this Success Criterion is intended to assist users who interact with repeated content across Web pages to be able to predict the location of the content they are looking for. And, to find it more quickly when they encounter it again.
 
 Users may initiate a change in the order by using adaptive user agents or by setting preferences so that the information is presented in a way that is most useful to them.
 
@@ -1138,7 +1138,7 @@ Follow the guidelines under [How to Meet Success Criteria 3.2.4](https://www.w3.
  
 #### Purpose - Error Identification (3.3.1) {#purpose-error-identification}
 
-The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. In the case of an unsuccessful form submission, redisplaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, do not know that there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. This includes the following.
+The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. If there is an unsuccessful form submission, redisplaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, do not know that there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. This includes the following.
 
 Information that is required by the web page but omitted by the user, or information that is provided by the user but that falls outside the required data format or allowed values.
 For example:
@@ -1200,7 +1200,7 @@ The positioning of labels is also important as it helps them to locate appropria
 * All other form components (for example, text boxes, combo boxes):
   Labels are positioned either immediately above or immediately to the left of the field.
 
-In simple forms with limited functionality, appropriately labeling a `Submit` button can act as a label for the adjacent field (for example `Search`). This is useful in situations when finding space for the label text might be difficult.
+In simple forms with limited functionality, appropriately labeling a `Submit` button can act as a label for the adjacent field (for example, `Search`). This is useful in situations when finding space for the label text might be difficult.
 
 #### More Information - Labels or Instructions (3.3.2) {#more-information-labels-or-instructions}
 
@@ -1217,7 +1217,7 @@ In simple forms with limited functionality, appropriately labeling a `Submit` bu
 
 The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible. The WCAG definition of [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.
 
-Success Criterion 3.3.1 provides for notification of errors. However, persons with cognitive limitations may find it difficult to understand how to correct the errors. People with visual disabilities may not be able to figure out exactly how to correct the error. In the case of an unsuccessful form submission, users may abandon the form because they may be unsure of how to correct the error even though they are aware that it has occurred.
+Success Criterion 3.3.1 provides for notification of errors. However, persons with cognitive limitations may find it difficult to understand how to correct the errors. People with visual disabilities may not be able to figure out exactly how to correct the error. If there is an unsuccessful form submission, users may abandon the form because they may be unsure of how to correct the error even though they are aware that it has occurred.
 
 The content author may provide the description of the error, or the user agent may provide the description of the error based on technology-specific, programmatically determined information.
 

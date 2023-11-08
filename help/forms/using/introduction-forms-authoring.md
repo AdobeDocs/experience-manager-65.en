@@ -46,7 +46,7 @@ The touch-optimized UI for authoring adaptive forms is intuitive, and provides:
 * Standard form components
 * Integrated repository for assets
 
-When you create a new or edit an existing adaptive form, you use the following UI elements:
+When you create or edit an existing adaptive form, you use the following UI elements:
 
 * [Sidebar](#sidebar)
 * [Page toolbar](#page-toolbar)
@@ -148,7 +148,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>File attachment</td>

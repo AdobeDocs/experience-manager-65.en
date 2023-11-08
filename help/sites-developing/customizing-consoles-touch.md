@@ -21,7 +21,7 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 AEM provides various mechanisms to enable you to customize the consoles (and the [page authoring functionality](/help/sites-developing/customizing-page-authoring-touch.md)) of your authoring instance.
 
 * Clientlibs
-  Clientlibs let you extend the default implementation to realize new functionality, while reusing the standard functions, objects, and methods. When customizing, you can create your own clientlib under `/apps.` For example it can hold the code required for your custom component.
+  Clientlibs let you extend the default implementation to realize new functionality, while reusing the standard functions, objects, and methods. When customizing, you can create your own clientlib under `/apps.` For example, it can hold the code required for your custom component.
 
 * Overlays
   Overlays are based on node definitions and let you overlay the standard functionality (in `/libs`) with your own customized functionality (in `/apps`). When creating an overlay a 1:1 copy of the original is not required, as the sling resource merger allows for inheritance.
@@ -46,7 +46,7 @@ These can be used in many ways to extend your AEM consoles. A small selection ar
 >
 >The recommended method for configuration and other changes is:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Recreate the required item (that is, as it exists in `/libs`) under `/apps`
 >
 >1. Make any changes within `/apps`
 >
@@ -154,6 +154,6 @@ To customize the columns in the list view:
 
 ### Filtering Resources {#filtering-resources}
 
-When using a console, a common use case is when the user must select from resources (for example, pages, components, assets, etc.). This can take the form of a list for example from which the author must choose an item.
+When using a console, a common use case is when the user must select from resources (for example, pages, components, assets, and so on). This can take the form of a list for example, from which the author must choose an item.
 
 To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. See [this article](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) for details.

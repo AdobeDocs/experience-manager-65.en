@@ -30,7 +30,7 @@ For more information about the JSON Object description, see [this](/help/forms/u
 1. Follow the [Generic steps for AEM Forms workspace customization](../../forms/using/generic-steps-html-workspace-customization.md).
 1. To display additional information for a task, the corresponding key-value pairs must be added within the task block of `translation.json`.
 
-   For example change `/apps/ws/locales/en-US/translation.json` for English:
+   For example, change `/apps/ws/locales/en-US/translation.json` for English:
 
    ```json
 
@@ -121,7 +121,7 @@ For more information about the JSON Object description, see [this](/help/forms/u
 
 1. You can apply style to the information (property) added to a task. To do this, you need to add style information for the new property added to `/apps/ws/css/newStyle.css`.
 
-   For example add:
+   For example, add:
 
    ```css
 

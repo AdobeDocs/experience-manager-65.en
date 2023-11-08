@@ -37,7 +37,7 @@ Many issues can be resolved by restructuring the content. Keep these simple rule
 
 * **Refine content structure**
 
-    * Move it to other locations, for example where access control matches the request sessions available;
+    * Move it to other locations, for example, where access control matches the request sessions available;
     * Change the content granularity;
 
 * **Refactor your code to be a proper service**

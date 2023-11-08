@@ -109,7 +109,7 @@ The table below has a complete list of possible Designer installation scenarios 
    <td><p>Acrobat Pro or Acrobat Pro Extended (includes Designer)</p> </td>
    <td><p>None.<br /> 
 The Workbench installation detects an instance of Designer on your computer that was installed with either Acrobat Pro or Acrobat Pro Extended.<br />
-Different versions of Designer can coexist on the same system, for example Designer 6.4.x for Workbench 6.4 and Designer 6.5.0.x for Workbench 6.5. It is not necessary to uninstall the version of Designer installed with Acrobat 10 Pro or Acrobat 10 Pro Extended, or above.
+Different versions of Designer can coexist on the same system, for example, Designer 6.4.x for Workbench 6.4 and Designer 6.5.0.x for Workbench 6.5. It is not necessary to uninstall the version of Designer installed with Acrobat 10 Pro or Acrobat 10 Pro Extended, or above.
 <br /></p> </td>
   </tr>
   <tr>

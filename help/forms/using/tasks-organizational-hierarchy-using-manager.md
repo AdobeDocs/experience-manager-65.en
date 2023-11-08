@@ -1,14 +1,10 @@
 ---
 title: Managing tasks in an organizational hierarchy using Manager View
-seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
-seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
-uuid: c44c55e6-6cc1-417d-8e89-c8d5c32914c8
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
 ---
@@ -16,18 +12,18 @@ exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
 
 In AEM Forms workspace, managers can now access the tasks assigned to anyone in their hierarchy—direct or indirect reports—and perform various actions on them. The tasks are available in the To-do tab in the AEM Forms workspace. The actions supported on the tasks of direct reports are:
 
-**Forward** Forward a task from direct report to any user.
+**Forward** &ndash; Forward a task from direct report to any user.
 
-**Claim** Claim a task of a direct report.
+**Claim** &ndash; Claim a task of a direct report.
 
-**Claim & Open** Claim a task of a direct report and automatically open it in the To-do list of the manager.
+**Claim & Open** &ndash; Claim a task of a direct report and automatically open it in the To-do list of the manager.
 
-**Reject** Reject a task forwarded to a direct report by some other user. This option is available for the tasks forwarded by other users to a direct report.
+**Reject** &ndash; Reject a task forwarded to a direct report by some other user. This option is available for the tasks forwarded by other users to a direct report.
 
 AEM Forms restricts a users' access to only those tasks for which the user has access control (ACL). Such a check ensures that a user can fetch only the tasks on which the user has access permissions. Using third-party web-services and implementations to define hierarchy, an organization can customize the definition of manager and direct reports to suit their needs.
 
 1. Create a DSC. For more information, see 'Developing Components for AEM Forms' topic in [Programming with AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
-1. In the DSC, define a new SPI for hierarchy management to define direct reports and hierarchy within the AEM Forms users. Following is a sample Java™ code snippet.
+1. In the DSC, define a new SPI for hierarchy management to define direct reports and hierarchy within the AEM Forms users. Following is a sample Java&trade; code snippet.
 
    ```java
    public class MyHierarchyMgmtService
@@ -62,7 +58,7 @@ AEM Forms restricts a users' access to only those tasks for which the user has a
    }
    ```
 
-1. Create a component.xml file. Please ensure that spec-id must be same as shown in code snippet below. Following is a sample code snippet that you can repurpose.
+1. Create a component.xml file. Ensure that spec-id is the same as shown in code snippet below. The following is a sample code snippet that you can repurpose.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">

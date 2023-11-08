@@ -67,7 +67,7 @@ The following procedure illustrates how to extend the **Table** component with a
 
 ### Example - add the caption to the Table Properties dialog {#example-adding-the-caption-to-the-table-properties-dialog}
 
-In the constructor of the `TablePropertiesDialog`, add an additional text input field that is used for editing the caption. Note that `itemId` must be set to `caption` (i.e. the DOM attribute’s name) to automatically handle its content.
+In the constructor of the `TablePropertiesDialog`, add an additional text input field that is used for editing the caption. Note that `itemId` must be set to `caption` (that is, the DOM attribute’s name) to automatically handle its content.
 
 In **Table**, set explicitly set or remove the attribute to/from the DOM element. The value is passed by the dialog in the `config` object. Note that DOM attributes should be set/removed using the corresponding `CQ.form.rte.Common` methods ( `com` is a shortcut for `CQ.form.rte.Common`) to avoid common pitfalls with browser implementations.
 

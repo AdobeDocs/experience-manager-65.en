@@ -58,9 +58,9 @@ You can create a launch from either the Sites or Launches console:
 
    >[!NOTE]
    >
-   >To add pages and/or branches to a launch they must be within a site; i.e. below a common top-level root.
+   >To add pages and/or branches to a launch they must be within a site; that is, below a common top-level root.
    >
-   >If a site contains language roots below the top level, the pages and branches for a launch must be below a common language root.
+   >If a site contains language roots below the top-level, the pages and branches for a launch must be below a common language root.
    >
    >If you try to create a launch with a parent or child page in the source path, it will fail and return the error “Destination already exists at :path to the page.”.
 
@@ -77,7 +77,7 @@ You can create a launch from either the Sites or Launches console:
 1. In the **Properties** step of the wizard you can specify:
 
     * **Launch Title**: The name of the Launch. The name should be meaningful for authors.
-    * **with existing content**: the original content will be used to create the launch.
+    * **with existing content**: the original content is used to create the launch.
     * **use a new template to replace the page**: See [Create Launch with New Template](#create-launch-with-new-template) for more details.
     * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
 

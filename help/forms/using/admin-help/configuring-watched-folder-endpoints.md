@@ -29,7 +29,7 @@ You can create a watched folder in the following two ways:
 
 * Create a folder on the file system prior to configuring a watched folder endpoint, and then type the full path in the Path box.
 
-In a clustered environment, the folder that will be used as a watched folder must be accessible, writable, and shared on the file system or network. In this scenario, each application server instance of the cluster must have access to the same shared folder.
+In a clustered environment, the folder that is used as a watched folder must be accessible, writable, and shared on the file system or network. In this scenario, each application server instance of the cluster must have access to the same shared folder.
 
 In Windows, if the application server is running as a service, it must be started with appropriate access to the shared folder in one of the following ways:
 
@@ -56,7 +56,7 @@ If the job contains more than one input file, the user must create a folder outs
 
 ## Watched folder output {#watched-folder-output}
 
-When the input is a folder and the output consists of multiple files, AEM forms creates an output folder with the same name as the input folder and copies the output files into that folder. When the output consists of a document map containing a key-value pair, such as the output from an Output process, the key will be used as the output file name.
+When the input is a folder and the output consists of multiple files, AEM forms creates an output folder with the same name as the input folder and copies the output files into that folder. When the output consists of a document map containing a key-value pair, such as the output from an Output process, the key is used as the output file name.
 
 The output file names that result from an endpoint process cannot contain characters other than letters, numbers, and a period (.) before the file extension. AEM forms converts other characters to their hexadecimal values.
 
@@ -205,7 +205,7 @@ Read-only files are not processed and will be saved in the failure folder.
 
 The default value is failure/%Y/%M/%D/.
 
-**Preserve On Failure:** Preserve input files in case of failure to execute the operation on a service. The default value is true.
+**Preserve On Failure:** Preserve input files if there is a failure to run the operation on a service. The default value is true.
 
 **Overwrite Duplicate Filenames:** When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
 
@@ -219,7 +219,7 @@ A value of -1 days indicates to never delete the results folder. The default val
 
 **Literal:** The watched folder uses the value entered in the field as it is displayed. All basic Java types are supported. For example, if an API uses input such as String, long, int, and Boolean, the string is converted to the proper type and the service is invoked.
 
-**Variable:** The value entered is a file pattern that the watched folder uses to pick the input. For example, in the case of the encrypt password service, where the input document must be a PDF file, the user can use &ast;.pdf as the file pattern. The watched folder will pick up all files in the watched folder that match this pattern and invoke the service for each file. When a variable is used, all input files are converted to documents. Only APIs that use Document as the input type are supported.
+**Variable:** The value entered is a file pattern that the watched folder uses to pick the input. For example, if there is the encrypt password service, where the input document must be a PDF file, the user can use &ast;.pdf as the file pattern. The watched folder will pick up all files in the watched folder that match this pattern and invoke the service for each file. When a variable is used, all input files are converted to documents. Only APIs that use Document as the input type are supported.
 
 **Output Parameter Mappings:** Used to configure the outputs of the service and operation. The settings available depend on which service is using the watched folder endpoint.
 
@@ -265,7 +265,7 @@ If the output parameter mapping pattern ends with "File.separator" (which is the
 
 ## About throttling {#about-throttling}
 
-When throttling is enabled for a watch folder endpoint, it limits the number of watched folder jobs that can be processed at any given time. The maximum number of jobs is determined by the Batch Size value, also configurable in the Watched Folder endpoint. Incoming documents in the input directory of the watched folder will not be polled when the throttling limit has been reached. The documents will also remain in the input directory until other watched folder jobs have completed and another poll attempt is made. In the case of synchronous processing, all jobs processed in a single poll will count toward the throttling limit, even though the jobs are processed consecutively in a single thread.
+When throttling is enabled for a watch folder endpoint, it limits the number of watched folder jobs that can be processed at any given time. The maximum number of jobs is determined by the Batch Size value, also configurable in the Watched Folder endpoint. Incoming documents in the input directory of the watched folder will not be polled when the throttling limit has been reached. The documents will also remain in the input directory until other watched folder jobs have completed and another poll attempt is made. If there is synchronous processing, all jobs processed in a single poll will count toward the throttling limit, even though the jobs are processed consecutively in a single thread.
 
 >[!NOTE]
 >
@@ -278,15 +278,15 @@ Watched Folder scans the input folder at each Repeat Interval, picks up the numb
 Throttling prevents Watched Folder from invoking new jobs when the previous jobs are not completed. Watched Folder will detect jobs in progress and process new jobs based on the batch size minus jobs in progress. For example, in the second invocation, if the number of jobs completed is only three and one job is still in progress, Watched Folder invokes only three more jobs.
 
 * Watched Folder relies on the number of files present in the stage folder to find out how many jobs are in progress. If files remain unprocessed in the stage folder, Watched Folder will not invoke any more jobs. For example, if the batch size is four and three jobs are stalled, Watched Folder will invoke only one job in subsequent invocations. There are multiple scenarios that can cause files to remain unprocessed in the stage folder. When jobs are stalled, the administrator can terminate the process on the forms workflow administration page so that Watched Folder moves the files out of the stage folder.
-* If the forms server goes down before Watched Folder can invoke the jobs, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
-* If the forms server is running but Watched Folder is not running when the Job Manager service calls back, which occurs when services do not start in the ordered sequence, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* If the Forms Server goes down before Watched Folder can invoke the jobs, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* If the Forms Server is running but Watched Folder is not running when the Job Manager service calls back, which occurs when services do not start in the ordered sequence, the administrator can move the files out of the stage folder. For information, see [Failure points and recovery](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Performance and scalability {#performance-and-scalability}
 
-Watched Folder can serve 100 folders in total on one single node. The performance of Watched Folder is dependent on the performance of the forms server. For asynchronous invocation, performance is more dependent on the system load and jobs that are in the Job Manager queue.
+Watched Folder can serve 100 folders in total on one single node. The performance of Watched Folder is dependent on the performance of the Forms Server. For asynchronous invocation, performance is more dependent on the system load and jobs that are in the Job Manager queue.
 
-Watched Folder performance can be improved by adding nodes to the cluster. Watched Folder jobs are distributed across the cluster nodes by virtue of the Quartz scheduler and, in the case of asynchronous requests, by the Job Manager service. All the jobs are persisted in the database.
+Watched Folder performance can be improved by adding nodes to the cluster. Watched Folder jobs are distributed across the cluster nodes by virtue of the Quartz scheduler and, if there are asynchronous requests, by the Job Manager service. All the jobs are persisted in the database.
 
 Watched Folder depends on the Scheduler service for scheduling, unscheduling, and rescheduling the jobs. Other services, such as Event Management service, User Manager service, and Email Provider service, are available that share the Scheduler service thread pool. This can affect Watched Folder performance. The Scheduler service thread pool tuning will be needed when all the services start using it.
 
@@ -343,7 +343,7 @@ When Watched Folder cannot process the source files in the stage folder, you can
     * In Applications and Services, change the Include File Pattern parameter for the watched folder endpoint to something that will not match any of the new input files (for example, enter `NOMATCH`).
     * Suspend the process that is creating new input files.
 
-   Wait until AEM forms recovers and processes all of the files. The majority of the files should be recovered and any new input files processed correctly. The length of time you wait for Watched Folder to recover and process the files will depend on the length of the operation to invoke and the number of files to recover.
+   Wait until AEM forms recovers and processes all the files. The majority of the files should be recovered and any new input files processed correctly. The length of time you wait for Watched Folder to recover and process the files will depend on the length of the operation to invoke and the number of files to recover.
 
 1. Determine which files cannot be processed. If you waited an appropriate amount of time and completed the previous step, and there are still unprocessed files left in the stage folder, go to the next step.
 
@@ -380,7 +380,7 @@ Here are some tips and tricks when configuring the Watched Folder endpoint:
     * For `java.lang.String`: The administrator has two options. First, the administrator can specify the mapping type as `Literal` and enter a mapping value as a string, such as `hello.` Watched Folder will invoke the service with the string `hello`. Second, the administrator can specify the mapping type as a `Variable` and enter a mapping value with a pattern like `*.txt`. In the latter case, files with the .txt extension will be read as a document coerced as a string to invoke the service.
     * Java primitive type: The administrator can specify the mapping type as `Literal` and provide the value. Watched Folder will invoke the service with the value specified.
 
-* Watched Folder is meant to work with documents. The supported outputs are `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, as well as a list and map of these types. Any other type will result in a failure output in the failure folder.
+* Watched Folder is meant to work with documents. The supported outputs are `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, and a list and map of these types. Any other type will result in a failure output in the failure folder.
 * If the results are not in the result folder, verify the failure folder to see if a failure has occurred.
 * Watched Folder works best if used in asynchronous mode. In this mode, Watched Folder places the invocation request into the queue and calls back. The queue is then processed asynchronously. When the Asynchronous option is not set, Watched Folder invokes the target service synchronously and the Process Engine waits until the service is done with the request and results are produced. If the target service takes a long time to process the request, Watched Folder may get time-out errors.
 * The creation of watched folders for import and export operations does not allow filename extension abstraction. When invoking the Form Data Integration service using watched folders, the filename extension type for the output file may not match the intended output format for the document object type. For example, if the input file to a watched folder that invokes the export operation is an XFA form that contains data, the output should be an XDP data file. To obtain an output file with the correct filename extension, you can specify it in the output parameter mapping. In this example, you can use %F.xdp for the output parameter mapping.
@@ -402,7 +402,7 @@ Here are some tips and tricks when configuring the Watched Folder endpoint:
 
 ## Service-specific recommendations for watched folders {#service-specific-recommendations-for-watched-folders}
 
-For all services, you should adjust the batch size and repeat interval of the watched folder so that the rate at which Watched Folder picks up new files and folders for processing does not exceed the rate of the jobs that can be processed by the AEM forms server. The actual parameters to use may vary depending on how many watched folders are configured, which services are using watched folders, and how intensive the jobs are on the processor.
+For all services, you should adjust the batch size and repeat interval of the watched folder so that the rate at which Watched Folder picks up new files and folders for processing does not exceed the rate of the jobs that can be processed by the AEM Forms Server. The actual parameters to use may vary depending on how many watched folders are configured, which services are using watched folders, and how intensive the jobs are on the processor.
 
 ### Generate PDF service recommendations {#generate-pdf-service-recommendations}
 

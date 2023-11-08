@@ -1,13 +1,9 @@
 ---
 title: Working with AEM Forms workspace
-seo-title: Working with AEM Forms workspace
 description: Get started with AEM Forms workspace with this quick overview of the process workflows.
-seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
-uuid: 36381e7b-1533-459c-80de-92e806a49cd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 ---
@@ -17,7 +13,7 @@ exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 
 AEM Forms workspace is a part of AEM Forms. Workspace facilitates rendition of HTML Forms in addition to PDF forms. Now you can engage in business processes from mobile interfaces and web applications.
 
-Also, AEM Forms workspace is highly customizable using the standard HTML and JavaScript™ development methodologies. It is a component-based software that easily integrates with your other web applications.
+Also, AEM Forms workspace is highly customizable using the standard HTML and JavaScript&trade; development methodologies. It is a component-based software that easily integrates with your other web applications.
 
 For more information, see [Introduction to AEM Forms workspace](/help/forms/using/introduction-html-workspace.md).
 
@@ -45,7 +41,7 @@ You can approve multiple tasks of the same type. Once you select one task for ap
 
 Flex Workspace is not supported for AEM Forms customers. All the customers using the Flex Workspace should move to AEM Forms Workspace.
 
-In AEM Forms workspace, the default render and submit services, in the default action profile, associated with XDP forms have changed and new services have been introduced. For details, see [New render and submit service](/help/forms/using/new-render-submit-service.md). To migrate your existing processes, that work with XDP forms, to make use of these services, you can follow [these steps](new-render-submit-service.md).
+In AEM Forms workspace, the default render and submit services, in the default action profile, associated with XDP forms have changed and new services have been introduced. For details, see [New render and submit service](/help/forms/using/new-render-submit-service.md). To migrate your existing processes, that work with XDP forms, to use these services, you can follow [these steps](new-render-submit-service.md).
 
 **Mapping Flex Workspace customizations with AEM Forms workspace**
 
@@ -93,7 +89,7 @@ The mapping between various types of customizations in both the workspaces is as
    <td>
     <ol>
      <li><a href="/help/forms/using/description-reusable-components.md">Working with Reusable components</a></li>
-     <li><a href="/help/forms/using/creating-new-login-screen.md">Creating a new Login screen</a></li>
+     <li><a href="/help/forms/using/creating-new-login-screen.md">Creating a Login screen</a></li>
      <li>Approval Container is deprecated.</li>
     </ol> </td>
   </tr>
@@ -106,7 +102,7 @@ Some of the features of Flex Workspace that are not available in AEM Forms works
 
 ### Architecture {#architecture}
 
-AEM Forms workspace is an HTML and JavaScript™ based web application hosted on CRX™. When Workspace URL is opened in a browser, a CRX™ resource is accessed, and the application is rendered as an HTML page in the browser. The JavaScript libraries and the custom JavaScript code manages the internal and external behavior of the application, such as user interface, user interaction, and communication with AEM Forms server. For more details, see AEM Forms workspace [architecture](/help/forms/using/html-workspace-architecture.md).
+AEM Forms workspace is an HTML and JavaScript&trade; based web application hosted on CRX&trade;. When Workspace URL is opened in a browser, a CRX&trade; resource is accessed, and the application is rendered as an HTML page in the browser. The JavaScript libraries and the custom JavaScript code manages the internal and external behavior of the application, such as user interface, user interaction, and communication with AEM Forms server. For more details, see AEM Forms workspace [architecture](/help/forms/using/html-workspace-architecture.md).
 
 ### AEM Forms workspace customization {#aem-forms-workspace-customization}
 

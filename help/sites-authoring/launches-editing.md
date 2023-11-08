@@ -1,12 +1,10 @@
 ---
 title: Edit Launches
 description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the pages. 
-uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
@@ -15,7 +13,7 @@ exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 
 ## Editing Launch Pages {#editing-launch-pages}
 
-When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
+When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the pages).
 
 1. Access the [Launch from References (Sites console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) to show the available actions.
 1. Select **Go to the page** to open the page for editing.
@@ -70,13 +68,13 @@ At any time you can either add or remove pages to/from the range of source pages
 
         * Select **Edit Launch**.
 
-   The source pages will be shown.
+   The source pages are shown.
 
 1. Make your required changes, then confirm with **Save**.
 
    >[!NOTE]
    >
-   >To add pages to a launch they must be below a common language root; i.e. within a single site.
+   >To add pages to a launch they must be below a common language root; that is, within a single site.
 
 ## Editing a Launch Configuration {#editing-a-launch-configuration}
 
@@ -92,7 +90,7 @@ At any time you can edit the properties for a launch:
 
         * Select **Edit Properties**.
 
-   The details will be shown.
+   The details are shown.
 
 1. Make your required changes, then confirm with **Save**.
 

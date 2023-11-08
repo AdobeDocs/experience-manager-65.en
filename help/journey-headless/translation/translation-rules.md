@@ -25,7 +25,7 @@ This document helps you understand how to use AEM's translation rules to identif
 
 ## Translation Rules {#translation-rules}
 
-Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all of the fields within a Content Fragment must to be translated.
+Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all the fields within a Content Fragment must to be translated.
 
 Translation rules identify the content that is included in, or excluded from, translation projects. When content is translated, AEM extracts or harvests the content based on these rules. In this way only content that must be translated is sent to the translation service.
 
@@ -40,7 +40,7 @@ Because Content Fragment Models, which define the structure of your Content Frag
 
 >[!TIP]
 >
->Generally the content architect provides the translation specialist with the **Property Name**s of all of the fields needed for translation. These names are needed to configure translation rules. As the translation specialist, you [can find these **Property Name**s yourself](getting-started.md#content-models) as previously described in this journey.
+>Generally the content architect provides the translation specialist with the **Property Name**s of all the fields needed for translation. These names are needed to configure translation rules. As the translation specialist, you [can find these **Property Name**s yourself](getting-started.md#content-models) as previously described in this journey.
 
 ## Creating Translation Rules {#creating-rules}
 
@@ -53,21 +53,21 @@ There is a **Translation Configuration** console available for configuring trans
 1. Navigate to **Tools** -&gt; **General**.
 1. Tap or click **Translation Configuration**.
 
-In the **Translation Configuration** UI, there are a number of options available for your translation rules. Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
+In the **Translation Configuration** UI, there are several options available for your translation rules. Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
 
 1. Tap or click **Add Context**, which lets you add a path. This is the path of the content that is be affected by the rule.
 ![Add context](assets/add-translation-context.png)
 1. Use the path browser to select the required path and tap or click the **Confirm** button to save. Remember, Content Fragments, which hold headless content, are generally located under `/content/dam/<your-project>`.
 ![Select the path](assets/select-context.png)
 1. AEM saves the configuration.
-1. You must select the context you just created and then tap or click **Edit**. This opens the **Translation Rules Editor** to configure the properties.
+1. You must select the context you created and then tap or click **Edit**. This opens the **Translation Rules Editor** to configure the properties.
 ![Translation rules editor](assets/translation-rules-editor.png)
 1. By default all configurations are inherited from the parent path, in this case `/content/dam`. Uncheck the option **Inherit from `/content/dam`** to add additional fields to the configuration.
 1. Once unchecked, under the **General** section of the list, add the property names of the Content Fragment Model(s) that you [previously identified as fields for translation.](getting-started.md#content-models)
    1. Enter the property name in the **New Property** field.
    1. The options **Translate** and **Inherit** are checked automatically.
    1. Tap or click **Add**.
-   1. Repeat these steps for all of the fields that you must translate.
+   1. Repeat these steps for all the fields that you must translate.
    1. Tap or click **Save**.
 ![Add property](assets/add-property.png)
 
@@ -75,7 +75,7 @@ You have now configured your translation rules.
 
 ## Advanced Usage {#advanced-usage}
 
-There are a number of additional properties that can be configured as part of your translation rules. In addition, you can specify your rules by hand as XML, which allows for more specificity and flexibility.
+There are several additional properties that can be configured as part of your translation rules. In addition, you can specify your rules by hand as XML, which allows for more specificity and flexibility.
 
 Such features are generally not needed to get started localizing your headless content, but you can read about them further in the [Additional Resources](#additional-resources) section if you are interested.
 

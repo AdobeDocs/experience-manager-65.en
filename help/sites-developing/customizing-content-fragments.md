@@ -45,7 +45,7 @@ Depending on the type of fragment, either models or templates are also used:
   * Content fragment models define the structure of a content fragment when it is created.
   * A fragment references the model; so changes to the model may/will impact any dependent fragments.
   * Models are built-up of data types.
-  * Functions to add new variations, etc., have to update the fragment accordingly.
+  * Functions to add new variations, and so on, have to update the fragment accordingly.
 
   >[!CAUTION]
   >
@@ -56,8 +56,8 @@ Depending on the type of fragment, either models or templates are also used:
   * Used for defining simple content fragments.
   * Templates define the (basic, text-only) structure of a content fragment when it is created.
   * The template is copied to the fragment when it is created; so further changes to the template will not be reflected in existing fragments.
-  * Functions to add new variations, etc., have to update the fragment accordingly.
-  * [Content fragment templates](/help/sites-developing/content-fragment-templates.md) operate in a different manner to that of other templating mechanisms within the AEM ecosystem (for example, page templates, etc.). Therefore they should be considered separately.
+  * Functions to add new variations, and so on, have to update the fragment accordingly.
+  * [Content fragment templates](/help/sites-developing/content-fragment-templates.md) operate in a different manner to that of other templating mechanisms within the AEM ecosystem (for example, page templates, and so on). Therefore they should be considered separately.
   * When based on a template the MIME type of the content is managed on the actual content; this means that each element and variation can have a different MIME type.
 
 ### Integration with Assets {#integration-with-assets}
@@ -66,13 +66,13 @@ Content Fragment Management (CFM) is part of AEM Assets as:
 
 * Content fragments are assets.
 * They use existing Assets functionality.
-* They are fully integrated with Assets (admin consoles, etc.).
+* They are fully integrated with Assets (admin consoles, and so on).
 
 #### Mapping Structured Content Fragments to Assets {#mapping-structured-content-fragments-to-assets}
 
 ![fragment-to-assets-structured](assets/fragment-to-assets-structured.png)
 
-Content fragments with structured content (i.e. based on a content fragment model) are mapped to a single asset:
+Content fragments with structured content (that is, based on a content fragment model) are mapped to a single asset:
 
 * All content is stored under the `jcr:content/data` node of the asset:
 
@@ -134,7 +134,7 @@ Content fragments can be referenced from AEM pages, just as any other asset type
 * Additionally, a range of paragraphs can be selected to restrict the output; for example, this can be used for multi-column output.
 * The component allows [in-between content](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-  * Here the component lets you place other assets (images, etc.) in between the paragraphs of the referenced fragment.
+  * Here the component lets you place other assets (images, and so on) in between the paragraphs of the referenced fragment.
   * For in-between content you need to:
 
     * be aware of the possibility of unstable references; in-between content (added when authoring a page) has no fixed relationship to the paragraph it is positioned next to, inserting a new paragraph (in the content fragment editor) before the position of the in-between content can lose the relative position
@@ -178,7 +178,7 @@ There are still some guidelines you must follow to ensure your component is comp
 
 * If the output of multiple elements is supported (by using `elementNames` to specify multiple elements), the actual display mode is defined by property `displayMode`:
 
-  * If the value is `singleText` (and there is only one element configured) then the element is rendered as a text with in-between content, layout support, etc. This is the default for fragments where only one single element is rendered.
+  * If the value is `singleText` (and there is only one element configured) then the element is rendered as a text with in-between content, layout support, and so on. This is the default for fragments where only one single element is rendered.
   * Otherwise, a much more simple approach is used (could be called "form view"), where no in-between content is supported and the fragment content is rendered "as is".
 
 * If the fragment is rendered for `displayMode` == `singleText` (implicitly or explicitly) the following additional properties come into play:
@@ -250,7 +250,7 @@ The following three interfaces can serve as entry points:
 
 * **Fragment Template** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-  Use `FragmentTemplate.createFragment()` for creating a new fragment.
+  Use `FragmentTemplate.createFragment()` for creating a fragment.
 
   ```
   Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -489,9 +489,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### Example: Creating a new content fragment {#example-creating-a-new-content-fragment}
+### Example: Creating a content fragment {#example-creating-a-new-content-fragment}
 
-To create a new content fragment programmatically, you need to use:
+To create a content fragment programmatically, you need to use:
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 

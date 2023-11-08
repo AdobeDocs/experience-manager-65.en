@@ -41,7 +41,7 @@ The following steps are required to set up a PDFG Network Printer:
 
     * The name of the service to invoke
     * The name of the operation of the service to invoke
-    * The name of the input parameter, as specified in the component.xml file of the service or process. The PDF document will be used as a value for that input parameter.
+    * The name of the input parameter, as specified in the component.xml file of the service or process. The PDF document is used as a value for that input parameter.
 
 1. Click Save.
 
@@ -57,6 +57,6 @@ Users who have either the PDFG Administrator or PDFG User role can install a PDF
 
 1. Under PDFG Network Printer Installation, click the link. When prompted for user account information, specify the user name and password that you used in step 1 to log in. A message appears, stating that the printer has been successfully installed.
 
-   ***note**: If the user' password changes, then users will need to reinstall the PDFG Network Printer on their computers. You cannot update the password from administration console.*
+   ***note**: If the user' password changes, then users must reinstall the PDFG Network Printer on their computers. You cannot update the password from administration console.*
 
 1. Click OK.

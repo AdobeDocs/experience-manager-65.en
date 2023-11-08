@@ -188,7 +188,7 @@ The following asset types and functionalities are currently not supported:
 
   >[!IMPORTANT]
   >
-  >Starting May 1, 2023, UGC assets in Dynamic Media will be available for use up to 60 days from the date of upload. After 60 days, the assets will be removed.
+  >Starting May 1, 2023, UGC assets in Dynamic Media are available for use up to 60 days from the date of upload. After 60 days, the assets are removed.
 
   >[!NOTE]
   >

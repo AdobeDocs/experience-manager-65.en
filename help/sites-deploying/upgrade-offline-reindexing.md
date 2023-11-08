@@ -75,7 +75,7 @@ Then, use the above index dump to populate the store:
 java -jar oak-run.jar tika --data-file text-extraction/oak-binary-stats.csv --store-path text-extraction/store --index-dir ./indexing-result/index-dumps/<oak-index-name>/data populate
 ```
 
-Where `oak-index-name` is the name of the full text index, for example "lucene".
+Where `oak-index-name` is the name of the full text index, for example, "lucene".
 
 **3. Run the text extraction process using the tika library for the binaries missed out in the above step**
 
@@ -95,7 +95,7 @@ For more details around the text extraction process, see the [Oak-run documentat
 
 Create the Lucene index offline before the upgrade. If using MongoMK, it is recommended to run it directly on one of the MongoMk nodes, as this avoids network overhead.
 
-To create the index offline, please follow the below steps:
+To create the index offline, follow the below steps:
 
 **1. Generate Oak Lucene index definitions for the target AEM version**
 
@@ -154,7 +154,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 Usage of the `--doc-traversal-mode` parameter is handy with MongoMK installations as it improves the reindex time significantly by spooling repository content into a local flat file. However, it requires additional disk space of double the size of the repository.
 
-In the case of MongoMK, this process can be accelerated if this step is executed in an instance closer to the MongoDB instance. If run on the same machine, network overhead can be avoided.
+If there is MongoMK, this process can be accelerated if this step is executed in an instance closer to the MongoDB instance. If run on the same machine, network overhead can be avoided.
 
 Additional technical details can be found in the [oak-run documentation for indexing](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 

@@ -13,7 +13,7 @@ exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 ---
 # SAML 2.0 Authentication Handler{#saml-authentication-handler}
 
-AEM ships with a [SAML](https://saml.xml.org/saml-specifications) authentication handler. This handler provides support for the [SAML](https://saml.xml.org/saml-specifications) 2.0 Authentication Request Protocol (Web-SSO profile) using the `HTTP POST` binding.
+AEM ships with a [SAML](https://saml.xml.org/saml-specifications) authentication handler. This handler supports the [SAML](https://saml.xml.org/saml-specifications) 2.0 Authentication Request Protocol (Web-SSO profile) using the `HTTP POST` binding.
 
 It supports:
 
@@ -34,7 +34,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 >[!NOTE]
 >
->The SAML 2.0 Authentication Handler is disabled by default. You must set at least one of the following properties to enable the handler:
+>The SAML 2.0 Authentication Handler is disabled by default. Set at least one of the following properties to enable the handler:
 >
 >* The Identity Provider POST URL, or IDP URL.
 >* The Service Provider Entity ID.

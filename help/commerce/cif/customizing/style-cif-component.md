@@ -63,7 +63,7 @@ The CSS and JavaScript responsible for rendering the theme/styles of the storefr
 
 Brand-specific styles can be applied to AEM CIF Core Components by adding and overriding the CSS managed by these client libraries. Understanding how client libraries are structured and included on the page is critical.
 
-The [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) is a dedicated [webpack](https://webpack.js.org/) project to manage all of the front-end assets for a project. This allows front-end developers to use any number of languages and technologies like [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) and much more.
+The [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) is a dedicated [webpack](https://webpack.js.org/) project to manage all the front-end assets for a project. This allows front-end developers to use any number of languages and technologies like [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) and much more.
 
 The `ui.frontend` module is also a Maven module and integrated with the larger project by using an NPM module the [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). During a build, the `aem-clientlib-generator` copies the compiled CSS and JavaScript files into a client library in the `ui.apps` module.
 
@@ -255,7 +255,7 @@ There are several options for how to include a client-side library. Next inspect
 
     ![Edit the template](../assets/style-cif-component/edit-template.png)
 
-    This will open the **Landing Page** template the **Home** page is based on.
+    This opens the **Landing Page** template the **Home** page is based on.
 
     >[!NOTE]
     >
@@ -274,7 +274,7 @@ There are several options for how to include a client-side library. Next inspect
     * `venia.dependencies` - Provides any vendor libraries that `venia.site` depends on.
     * `venia.site` - This is the category for `clientlib-site` that the `ui.frontend` module generates.
 
-    Notice that other templates use the same policy, **Content Page**, **Landing Page**, and so on. By reusing the same policy, we can ensure that the same client libraries are included on all of the pages.
+    Notice that other templates use the same policy, **Content Page**, **Landing Page**, and so on. By reusing the same policy, we can ensure that the same client libraries are included on all the pages.
 
     The advantage of using Templates and Page policies to manage the inclusion of client libraries is that you can change the policy per template. For example, perhaps you are managing two different brands within the same AEM instance. Each brand has its own unique style or *theme* but the base libraries and code will be the same. Another example, if you had a larger client library that you only wanted to appear on certain pages, you could make a unique page policy just for that template.
 
@@ -328,7 +328,7 @@ The webpack-dev-server proxies images and some of the CSS/JavaScript from the lo
 
     ![Webpack dev server on port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-    Leave the webpack-dev-server running. It will be used in the next exercise.
+    Leave the webpack-dev-server running. It is used in the next exercise.
 
 ## Implement Card style for Product Teaser {#update-css-product-teaser}
 

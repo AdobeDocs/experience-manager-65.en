@@ -19,7 +19,7 @@ For an explanation of SAML, see [Security Assertion Markup Language (SAML) V2.0 
 
 1. In administration console, click Settings &gt; User Management &gt; Configuration &gt; SAML Service Provider Settings.
 1. In the Service Provider Entity ID box, type a unique ID to use as an identifier for the AEM forms service provider implementation. You also specify this unique ID when configuring your IDP (for example, `um.lc.com`.) You can also use the URL that is used to access AEM forms (for example, `https://AEMformsserver`).
-1. In the Service Provider Base URL box, type the base URL for your forms server (for example, `https://AEMformsserver:8080`).
+1. In the Service Provider Base URL box, type the base URL for your Forms Server (for example, `https://AEMformsserver:8080`).
 1. (Optional) To enable AEM forms to send signed authentication requests to the IDP, perform the following tasks:
 
     * Use Trust Manager to import a credential in PKCS #12 format with Document Signing Credential selected as the Trust Store Type. (See [Managing local credentials](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
@@ -51,7 +51,7 @@ For an explanation of SAML, see [Security Assertion Markup Language (SAML) V2.0 
 
       `saml.sp.use.relaystate=true`
 
-    * Add the following custom property to configure the URL for the custom Java Server Pages (JSP), which will be used to render the registered list of identity providers. If you have not deployed a custom web application, it will use the default User Management page to render the list.
+    * Add the following custom property to configure the URL for the custom Java Server Pages (JSP), which is used to render the registered list of identity providers. If you have not deployed a custom web application, it will use the default User Management page to render the list.
 
     `saml.sp.discovery.url=/custom/custom.jsp`
 

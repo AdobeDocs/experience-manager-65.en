@@ -113,7 +113,7 @@ To create a backup:
 1. Log in to AEM as the administrator.
 
 1. Go to **Tools - Operations - Backup.**
-1. Click **Create**. The backup console will open.
+1. Click **Create**. The backup console opens.
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
@@ -148,7 +148,7 @@ To create a backup:
 
 ### Automating AEM Online Backup {#automating-aem-online-backup}
 
-If possible, the online backup should be run when there is little load on the system, for example in the morning.
+If possible, the online backup should be run when there is little load on the system, for example, in the morning.
 
 Backups can be automated using the `wget` or `curl` HTTP clients. The following show examples of how to automate backup by using curl.
 
@@ -184,7 +184,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!CAUTION]
 >
->When using a different application server (such as JBoss), the online backup may not work as expected, because the target directory is not writable. In this case, please contact Support.
+>When using a different application server (such as JBoss), the online backup may not work as expected, because the target directory is not writable. In this case, contact Support.
 
 >[!NOTE]
 >
@@ -211,7 +211,7 @@ The online backup uses the following algorithm:
 
 1. When creating a zip file, the first step is to create or locate the target directory.
 
-    * If backing up to a zip file, a temporary directory is created. The directory name starts with `backup.` and ends with `.temp`; for example `backup.f4d3.temp`.
+    * If backing up to a zip file, a temporary directory is created. The directory name starts with `backup.` and ends with `.temp`; for example, `backup.f4d3.temp`.
     * If backing up to a directory, the name specified in the target path is used. An existing directory can be used, otherwise a new directory will be created.
 
       An empty file named `backupInProgress.txt` is created in the target directory when the backup starts. This file is deleted when the backup is finished.

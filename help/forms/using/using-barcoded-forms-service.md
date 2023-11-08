@@ -1,13 +1,9 @@
 ---
 title: Barcoded Forms Service
-seo-title: Using AEM Forms Barcoded Forms Service
 description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes. 
-seo-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes. 
-uuid: b044a788-0e4a-4718-b71a-bd846933d51b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 exl-id: edaf12be-473f-4175-b4e0-549b41159a55
 ---
@@ -170,13 +166,13 @@ The following sample code decodes a barcode in a document and saves the output X
 
  // Create a Docmanager Document object for 
  // the tiff file containing barcode
- // Please see Docmanager Document javadoc for
+ // See Docmanager Document javadoc for
  // more details
  Document inputDoc = new Document(documentPath);
 
  // Invoke decode operation of barcoded forms service 
  // Second parameter is set to true to decode PDF417 barcode symbology
- // Please see javadoc for details of parameters
+ // See javadoc for details of parameters
 
  org.w3c.dom.Document result = bcfService.decode(inputDoc, // Input Document Object
                                                     true, 

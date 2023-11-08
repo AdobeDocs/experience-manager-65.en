@@ -19,7 +19,7 @@ In addition, AEM Inbox consolidates notifications and tasks from various AEM com
 
 The Inbox user interface provides list and calendar views to view tasks. You can also configure the view settings. You can filter tasks based on various parameters. For more information about view and filters, see [Your Inbox](/help/sites-authoring/inbox.md).
 
-In summary, Inbox lets you create a new application and manage assigned tasks.
+In summary, Inbox lets you create an application and manage assigned tasks.
 
 >[!NOTE]
 >

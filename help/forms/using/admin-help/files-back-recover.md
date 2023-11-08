@@ -19,7 +19,7 @@ Consider the following points regarding backup and recovery:
 
 ## Global Document Storage directory {#global-document-storage-directory}
 
-The GDS is a directory used to store long-lived files that are used within a process. The lifetime of long-lived files is intended to span one or more launches of an AEM forms system, and can span days and even years. These long-lived files can include PDFs, policies, and form templates. Long-lived files are a critical part of the overall state of many AEM forms deployments. If some or all long-lived documents are lost or corrupted, the forms server may become unstable.
+The GDS is a directory used to store long-lived files that are used within a process. The lifetime of long-lived files is intended to span one or more launches of an AEM forms system, and can span days and even years. These long-lived files can include PDFs, policies, and form templates. Long-lived files are a critical part of the overall state of many AEM forms deployments. If some or all long-lived documents are lost or corrupted, the Forms Server may become unstable.
 
 Input documents for asynchronous job invocation are also stored in the GDS and must be available to process requests. Therefore, it is important that you consider the reliability of the file system that hosts the GDS and employ a redundant array of independent disks (RAID) or other technology as appropriate for your quality and level of service requirements.
 
@@ -103,7 +103,7 @@ DB2 has built-in capabilities to back up a database to Tivoli Storage Manager. B
 
 Use snapshot backups or configure your Oracle database to run in archive log mode. (See [Oracle Backup: An Introduction](https://www.databasedesign-resource.com/oracle-backup.md).) For more information about backing up and recovering your Oracle database, go to these sites:
 
-[Oracle Backup and Recovery:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explains the concepts of backup and recovery and the most common techniques for using Recovery Manager (RMAN) for backup, recovery, and reporting in more detail, as well as providing more information about how to plan a backup and recovery strategy.
+[Oracle Backup and Recovery:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explains the concepts of backup and recovery and the most common techniques for using Recovery Manager (RMAN) for backup, recovery, and reporting in more detail, and providing more information about how to plan a backup and recovery strategy.
 
 [Oracle Database Backup and Recovery User's Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Provides in-depth information about RMAN architecture, backup and recovery concepts and mechanisms, advanced recovery techniques such as point-in-time recovery and database flashback features, and backup and recovery performance tuning. It also covers user-managed backup and recovery, using host operating system facilities instead of RMAN. This volume is essential for backup and recovery of more sophisticated database deployments and for advanced recovery scenarios.
 
@@ -147,7 +147,7 @@ The Content Storage Root directory is created when Content Services (Deprecated)
 
 The default location for the Content Storage Root directory is `[aem-forms root]/lccs_data`.
 
-Back up the following directories located in the Content Storage Root directory:
+Back up the following directories in the Content Storage Root directory:
 
 /audit.contentstore
 
@@ -157,7 +157,7 @@ Back up the following directories located in the Content Storage Root directory:
 
 /backup-lucene-indexes
 
-If the /backup-lucene-indexes directory is not present, back up the /lucene-indexes directory, also located in the Content Storage Root directory. If the /backup-lucene-indexes directory is present, do not back up the /lucene-indexes directory because it may cause errors.
+If the /backup-lucene-indexes directory is not present, back up the /lucene-indexes directory, also in the Content Storage Root directory. If the /backup-lucene-indexes directory is present, do not back up the /lucene-indexes directory because it may cause errors.
 
 ### Content Storage Root location (clustered environment) {#content-storage-root-location-clustered-environment}
 
@@ -167,7 +167,7 @@ When you install Content Services (Deprecated) in a clustered environment, the C
 
 **Index Root directory:** A directory that is created on each node in the cluster, always having the same path and directory name
 
-The default location for the Content Storage Root directory is `[GDS root]/lccs_data`, where `[GDS root]` is the location described in [GDS location](files-back-recover.md#gds-location). Back up the following directories located in the Content Storage Root directory:
+The default location for the Content Storage Root directory is `[GDS root]/lccs_data`, where `[GDS root]` is the location described in [GDS location](files-back-recover.md#gds-location). Back up the following directories in the Content Storage Root directory:
 
 /audit.contentstore
 
@@ -177,7 +177,7 @@ The default location for the Content Storage Root directory is `[GDS root]/lccs_
 
 /backup-lucene-indexes
 
-If the /backup-lucene-indexes directory is not present, back up the /lucene-indexes directory, also located in the Content Storage Root directory. If the /backup-lucene-indexes directory is present, do not back up the /lucene-indexes directory because it may cause errors.
+If the /backup-lucene-indexes directory is not present, back up the /lucene-indexes directory, also in the Content Storage Root directory. If the /backup-lucene-indexes directory is present, do not back up the /lucene-indexes directory because it may cause errors.
 
 The default location for the Index Root directory is `[aem-forms root]/lucene-indexes` on each node.
 
@@ -187,6 +187,6 @@ If you installed additional fonts on your AEM forms environment, you must back t
 
 >[!NOTE]
 >
->By default, the Adobe fonts installed with AEM forms are located in the `[aem-forms root]/fonts` directory.
+>By default, the Adobe fonts installed with AEM forms are in the `[aem-forms root]/fonts` directory.
 
 If you are reinitializing the operating system on the host computer and want to use fonts from the previous operating system, the contents of the system fonts directory should also be backed up. (For specific instructions, see the documentation for your operating system).

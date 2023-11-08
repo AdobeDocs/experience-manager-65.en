@@ -1,14 +1,10 @@
 ---
 title: Encapsulated Token Support
-seo-title: Encapsulated Token Support
 description: Learn about the Encapsulated Token support in AEM.
-seo-description: Learn about the Encapsulated Token support in AEM.
-uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 ---
 # Encapsulated Token Support{#encapsulated-token-support}
@@ -41,7 +37,7 @@ You can see how this works in a geographically distributed deployment with Mongo
 
 >[!NOTE]
 >
->Please note that the Encapsulated Token is about authentication. It ensures that the cookie can be validated without having to access the repository. However, it is still required that the user exists on all the instances and that the information stored under that user can be accessed by every instance.
+>The Encapsulated Token is about authentication. It ensures that the cookie can be validated without having to access the repository. However, it is still required that the user exists on all the instances and that the information stored under that user can be accessed by every instance.
 >
 >For example, if a new user is created on publish instance number one, due to the way the Encapsulated Token works, it will be authenticated successfully on publish number two. If the user does not exist on the second publish instance, the request will still not be successful.
 >
@@ -57,7 +53,7 @@ You can see how this works in a geographically distributed deployment with Mongo
 
 There are a few things you need to take into consideration when configuring the Encapsulated Token:
 
-1. Because of the cryptography involved, all of the instances need to have the same HMAC key. Since AEM 6.3, the key material is no longer stored in the repository, but on the actual filesystem. With this in mind, the best way to replicate the keys is to copy them from the filesystem of the source instance to that of the target instance(s) you want to replicate the keys to. See more info under "Replicating the HMAC key" below.
+1. Because of the cryptography involved, all the instances need to have the same HMAC key. Since AEM 6.3, the key material is no longer stored in the repository, but on the actual filesystem. With this in mind, the best way to replicate the keys is to copy them from the filesystem of the source instance to that of the target instance(s) you want to replicate the keys to. See more info under "Replicating the HMAC key" below.
 1. The Encapsulated Token needs to be enabled. This can be done through the Web Console.
 
 ### Replicating the HMAC key {#replicating-the-hmac-key}

@@ -44,7 +44,7 @@ GraphQL is:
   See [GraphQL Foundation](https://graphql.org/foundation).
 
 <!--
-"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all the tools they need to understand and adopt GraphQL.*". 
 -->
 
 For further information about the GraphQL API, see the following sections (among many other resources):
@@ -110,7 +110,7 @@ AEM provides capabilities to convert queries (both types) to [Persisted Queries]
 
 GraphQL queries using POST requests are not recommended as they are not cached, so on a default instance the Dispatcher is configured to block such queries.
 
-While GraphQL also supports GET requests, these requests can hit limits (for example the length of the URL) that can be avoided using persisted queries.
+While GraphQL also supports GET requests, these requests can hit limits (for example, the length of the URL) that can be avoided using persisted queries.
 
 See [Enable caching of persisted queries](#enable-caching-persisted-queries) for further details.
 
@@ -413,7 +413,7 @@ query GetArticlesByVariation($variation: String!) {
 
 In GraphQL, there is a possibility to change the query based on variables, called GraphQL Directives.
 
-For example there you can include the `adventurePrice` field in a query for all the `AdventureModels`, based on a variable `includePrice`.
+For example, there you can include the `adventurePrice` field in a query for all the `AdventureModels`, based on a variable `includePrice`.
 
 ![GraphQL Directives](assets/cfm-graphqlapi-04.png "GraphQL Directives")
 

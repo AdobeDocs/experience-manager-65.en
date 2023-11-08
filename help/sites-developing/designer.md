@@ -1,21 +1,17 @@
 ---
 title: Designs and the Designer
-seo-title: Designs and the Designer
-description: You will need to create a design for your website and in AEM, you do so by using the Designer
-seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
-uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
+description: Learn how to create a design for your website and in AEM by using the Designer.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
 ---
 # Designs and the Designer{#designs-and-the-designer}
 
 >[!CAUTION]
 >
->This article describes how to create a website based on the classic UI. Adobe recommends leveraging the latest AEM technologies for your websites as described in detail in the article [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
+>This article describes how to create a website based on the classic UI. Adobe recommends using the latest AEM technologies for your websites as described in detail in the article [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
 
 The Designer is used to create a design for your website using the [Classic UI](/help/release-notes/touch-ui-features-status.md) in AEM.
 

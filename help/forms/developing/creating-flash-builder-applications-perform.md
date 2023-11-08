@@ -356,7 +356,7 @@ The following code represents the SSOEvent.as file.
          /**
           * The root event. If current event type is <code>AUTHENTICATION_FAULT</code> then it would be an
           * <code>IOErrorEvent</code> in other cases it would be complete event. Its basic use is to extract the root
-          * cause in case of an authentication fault.
+          * cause if there is an authentication fault.
           */
          public function get rootEvent():Event
          {
@@ -666,7 +666,7 @@ The following code represents the progress.mxml file.
 
 ### Creating the remoting.mxml file {#creating-the-remoting-mxml-file}
 
-The following code represents the remoting.mxml file that invokes the `MyApplication/EncryptDocument` process. Because a document is passed to the process, application logic responsible for passing a secure document to AEM Forms is located in this file. (See [Passing secure documents to invoke processes using Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+The following code represents the remoting.mxml file that invokes the `MyApplication/EncryptDocument` process. Because a document is passed to the process, application logic responsible for passing a secure document to AEM Forms is in this file. (See [Passing secure documents to invoke processes using Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>

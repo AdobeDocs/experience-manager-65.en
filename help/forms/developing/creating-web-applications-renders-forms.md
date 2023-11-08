@@ -45,7 +45,7 @@ Likewise, if the user selects Canadian data, then the returned form contains a C
 
 **Sample Files**
 
-This section uses sample files that can be located in the following location:
+This section uses sample files that can be in the following location:
 
 &lt;*Forms Designer install directory*&gt;/Samples/Forms/Purchase Order/Form Fragments
 
@@ -65,7 +65,7 @@ The XML data files used by the web application were moved from the Data folder t
 
 To create a web-based applications that renders forms based on fragments, perform the following steps:
 
-1. Create a new web project.
+1. Create a web project.
 1. Create Java application logic that represents the Java servlet.
 1. Create the web page for the web application.
 1. Package the web application to a WAR file.
@@ -78,7 +78,7 @@ To create a web-based applications that renders forms based on fragments, perfor
 
 ### Creating a web project {#creating-a-web-project}
 
-The first step to create a web application that contains a Java servlet that can invoke the Forms service is to create a new web project. The Java IDE that this document is based on is Eclipse 3.3. Using the Eclipse IDE, create a web project and add the required JAR files to your project. Finally, add an HTML page named *index.html* and a Java servlet to your project.
+The first step to create a web application that contains a Java servlet that can invoke the Forms service is to create a web project. The Java IDE that this document is based on is Eclipse 3.3. Using the Eclipse IDE, create a web project and add the required JAR files to your project. Finally, add an HTML page named *index.html* and a Java servlet to your project.
 
 The following list specifies the JAR files that you must add to your web project:
 
@@ -139,12 +139,12 @@ Normally, you would not place client code within a Java servlet’s `doGet` or `
 To render a form based on fragments using the Forms service API, perform the following tasks:
 
 1. Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path. For information about the location of these files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. Retrieve the value of the radio button that is submitted from the HTML form and specifies whether to use American or Canadian data. If American is submitted, create a `com.adobe.idp.Document` that stores data located in the *Purchase Order US.xml*. Likewise, if Canadian, then create a `com.adobe.idp.Document` that stores data located in the *Purchase Order Canada.xml* file.
+1. Retrieve the value of the radio button that is submitted from the HTML form and specifies whether to use American or Canadian data. If American is submitted, create a `com.adobe.idp.Document` that stores data in the *Purchase Order US.xml*. Likewise, if Canadian, then create a `com.adobe.idp.Document` that stores data in the *Purchase Order Canada.xml* file.
 1. Create a `ServiceClientFactory` object that contains connection properties. (See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 1. Create a `URLSpec` object that stores URI values by using its constructor.
 1. Invoke the `URLSpec` object’s `setApplicationWebRoot` method and pass a string value that represents the application’s web root.
-1. Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design and the fragments are located in the content root URI. If not, the Forms service throws an exception. To reference the AEM Forms repository, specify `repository://`.
+1. Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design and the fragments are in the content root URI. If not, the Forms service throws an exception. To reference the AEM Forms repository, specify `repository://`.
 1. Invoke the `URLSpec` object’s `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent to perform calculations.
 1. Invoke the `FormsServiceClient` object’s `renderPDFForm` method and pass the following values:
 
@@ -178,7 +178,7 @@ The following code example represents the Java servlet that invokes the Forms se
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs
      *
      * For complete details about the location of these JAR files,
@@ -325,7 +325,7 @@ The Java servlet captures the data that is posted from the HTML page by using th
              }
 ```
 
-The following HTML code is located in the index.html file that was created during setup of the development environment. (See [Creating a web project](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
+The following HTML code is in the index.html file that was created during setup of the development environment. (See [Creating a web project](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

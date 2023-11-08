@@ -1,14 +1,10 @@
 ---
 title: Authoring Targeted Content Using Targeting Mode
-seo-title: Authoring Targeted Content Using Targeting Mode
 description:  Targeting mode and the Target component provide tools for creating content for experiences
-seo-description:  Targeting mode and the Target component provide tools for creating content for experiences
-uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 ---
@@ -87,7 +83,7 @@ To add an activity:
 
    >[!NOTE]
    >
-   >When you create a new activity and have an Adobe Target cloud configuration attached to the page or one of its parent, AEM automatically assumes Adobe Target as the engine.
+   >When you create an activity and have an Adobe Target cloud configuration attached to the page or one of its parent, AEM automatically assumes Adobe Target as the engine.
 
 1. In the **Targeting** engine drop-down menu, select your targeting engine.
 
@@ -434,7 +430,7 @@ You can change the percentages as long as they add up to 100 percent. An audienc
 
 ## Goals & Settings: Configuring the Activity and Setting Goals {#goals-settings-configuring-the-activity-and-setting-goals}
 
-The Goals & Settings step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Specify when the activity starts and ends, as well as the activity priority. In addition, you also track goals. Specifically you can decide what you want to measure with your activities.
+The Goals & Settings step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Specify when the activity starts and ends, and the activity priority. In addition, you also track goals. Specifically you can decide what you want to measure with your activities.
 
 Goal Metrics are only available if you use Adobe Target for your targeting engine. You must define at least one goal metric. If you have Adobe Analytics configured and have an A4T Analytics cloud configuration, you can select whether you want the reporting source to be Adobe Target or Adobe Analytics.
 
@@ -629,7 +625,7 @@ To simulate the visitor's experience, use the following tools:
 
    The page changes to show the content that is targeted for the current context.
 
-1. To make changes to the offers that are displayed, switch to Targeting mode. With the simulation activity selected, edit the offers for the context that you configured in Preview mode.
+1. To change the offers that are displayed, switch to Targeting mode. With the simulation activity selected, edit the offers for the context that you configured in Preview mode.
 
 ## Configuring Target Component Options {#configuring-target-component-options}
 

@@ -77,7 +77,7 @@ Simulating reality is difficult and how much effort that you want to invest into
 
 The importance of properly establishing performance goals is not to be underestimated. Often, after people become focused on specific performance goals it is hard to change these goals afterwards, even if they are based on assumptions.
 
-Establishing good, solid performance goals is really one of the trickiest areas. It is often best to collect real life logs and benchmarks from a comparable website (for example the new website's predecessor).
+Establishing good, solid performance goals is really one of the trickiest areas. It is often best to collect real life logs and benchmarks from a comparable website (for example, the new website's predecessor).
 
 ### Stay Relevant {#stay-relevant}
 

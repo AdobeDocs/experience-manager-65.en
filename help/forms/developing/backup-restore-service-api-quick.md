@@ -55,16 +55,16 @@ The following Java&trade; code example enters into backup mode with a unique lab
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -111,10 +111,10 @@ The following Java&trade; code example enters into backup mode with a unique lab
              boolean continousCoverage = false;
  
  
-             // Enter backup mode on the forms server server
+             // Enter backup mode on the Forms Server server
              BackupModeEntryResult backupResult = backup.enterBackupMode(backUpLabel,minsInBackupMode, continousCoverage);
  
-             // Get information from entering backup mode on the forms server server.
+             // Get information from entering backup mode on the Forms Server server.
              if (backupResult != null)
              {
                  System.out.println("Start time is: " + backupResult.getStartTime());
@@ -170,16 +170,16 @@ The following Java&trade; code example explicitly causes a Forms Server to leave
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -220,7 +220,7 @@ The following Java&trade; code example explicitly causes a Forms Server to leave
              // Create a BackupService object
              BackupServiceClient backup = new BackupServiceClient(myFactory);
  
-             // Leave backup mode on the forms server
+             // Leave backup mode on the Forms Server
              BackupModeResult leaveBackupResult = backup.leaveBackupMode();
  
              //Get result information from leaving backup mode

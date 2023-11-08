@@ -345,7 +345,7 @@ Development is a crucial phase that requires more than just coding.
 
 ### Performance and Testing {#performance-and-testing}
 
-Once the new application is available it will need to undergo stringent testing, both for functionality and [performance](/help/sites-deploying/configuring-performance.md).
+Once the new application is available it must undergo stringent testing, both for functionality and [performance](/help/sites-deploying/configuring-performance.md).
 
 >[!NOTE]
 >

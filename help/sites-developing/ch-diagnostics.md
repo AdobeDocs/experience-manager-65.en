@@ -1,8 +1,6 @@
 ---
 title: ContextHub Diagnostics
-seo-title: ContextHub Diagnostics
 description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
-seo-description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -19,7 +17,7 @@ The ContextHub Diagnostics page provides information about the stores and UI mod
 
 >[!NOTE]
 >
->In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page will be blank. Please see [this document](ch-configuring.md#debugging-contexthub) for details on how to enable debug mode.
+>In order for diagnostic information to be returned, debug mode must be enabled, otherwise the diagnostics page will be blank. See [this document](ch-configuring.md#debugging-contexthub) for details on how to enable debug mode.
 
 >[!NOTE]
 >
@@ -45,7 +43,7 @@ The Modules section lists all the ContextHub UI modules that have been configure
 
 ## Clientlibs {#clientlibs}
 
-The Clientlibs section lists all of the client library folders that ContextHub has loaded. The client libraries are categorized:
+The Clientlibs section lists all the client library folders that ContextHub has loaded. The client libraries are categorized:
 
 * **kernel.js:** Client libraries that implement the ContextHub framework, the segment engine, and store types.
 * **ui.js:** Client libraries that implement the ContextHub UI and UI module types.

@@ -55,7 +55,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
    >[!NOTE]
    >
-   >You can either execute steps 1-4 to create a new configuration container and create an [!DNL Adobe Sign] configuration in the container or use the existing `global` folder in **Tools** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Adobe Sign]**. If you create the configuration in the new configuration container, ensure to specify the container name in the **[!UICONTROL Configuration Container]** field when you create an adaptive form.
+   >You can either execute steps 1-4 to create a configuration container and create an [!DNL Adobe Sign] configuration in the container or use the existing `global` folder in **Tools** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Adobe Sign]**. If you create the configuration in the new configuration container, ensure to specify the container name in the **[!UICONTROL Configuration Container]** field when you create an adaptive form.
    
    >[!NOTE]
    >

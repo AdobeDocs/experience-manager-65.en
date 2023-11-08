@@ -46,7 +46,7 @@ You want to drive a consistent experience and manage personalized campaigns acro
 
 Instead, you should consider how content on different surfaces is related based on organizing principle such as brand and product hierarchies, categories of goods or surfaces, or steps in the customer journey. For example, if you have a set of surfaces that support a specific brand of cars you manufacture, you may want to start with a content model for general information that would be true for the entire car and then have more - specific elements such as content needed when the car is starting up to when there are service issues. Such a model will enforce inheritance of general car brand content while allow for shifts based on specific context needed. It also helps with future management of updates to this content as you can enforce control based on roles such as the overall marketer or product manager for the entire car brand vs an author who is responsible for the "starting car" experience.
 
-Once you have the content model and clear view on the various clients the content needs to be surfaced to, you need to ensure the GraphQL/APIs associated with accessing various of the content model are published to all the clients who need this content. There are different options of how to access certain content. You can request for a specific piece of content that is static which enables caching of the content and higher performance. You can also request content that is dynamically generated which will require more processing. Ensure that clients are leveraging the APIs that are most efficient for their business need.
+Once you have the content model and clear view on the various clients the content needs to be surfaced to, you need to ensure the GraphQL/APIs associated with accessing various of the content model are published to all the clients who need this content. There are different options of how to access certain content. You can request for a specific piece of content that is static which enables caching of the content and higher performance. You can also request content that is dynamically generated which will require more processing. Ensure that clients are using the APIs that are most efficient for their business need.
 
 ## Understanding Your Environments {#understanding-environments}
 
@@ -62,15 +62,15 @@ During the development stage, it is recommended you work with a development and 
 
 ### Cooperation of Developers and Content Authors {#cooperation}
 
-Developers need an AEM development environment set up with the populated content models. The developer develops the client that will consume content from AEM headless as the content authors are still creating the content. That is why the API definitions are really important. By leveraging the AEM SDK, the developer can create a test hook so client and unit tests can be created to make sure the client is able to properly render the content.
+Developers need an AEM development environment set up with the populated content models. The developer develops the client that will consume content from AEM headless as the content authors are still creating the content. That is why the API definitions are really important. By using the AEM SDK, the developer can create a test hook so client and unit tests can be created to make sure the client is able to properly render the content.
 
-Content authors create content based on the content models that have been defined on the staging environment. Using the content fragment authoring tool, the author would create a new content fragment or edit an existing content fragment. Before publishing it, the author can preview how it will look in the client by working with the developer to push the content model onto development or set up a developer environment just for authors to preview how it would look in the client.
+Content authors create content based on the content models that have been defined on the staging environment. Using the content fragment authoring tool, the author would create a content fragment or edit an existing content fragment. Before publishing it, the author can preview how it will look in the client by working with the developer to push the content model onto development or set up a developer environment just for authors to preview how it would look in the client.
 
 ## Setup {#setup}
 
 Before you get started with headless in AEM, you need to make sure all required features are enabled. This section outlines what is required. The actual steps to fulfill these steps are detailed later in the [AEM Headless Developer Journey.](#overview.md)
 
-You can also optionally refer to the [additional resources](#additional-resources) for more information on the individual topics.
+You can also optionally see the [additional resources](#additional-resources) for more information on the individual topics.
 
 ### Configuration {#configuration}
 
@@ -88,7 +88,7 @@ This is an overview of what is needed to implement your first headless app using
 
 ## Best Practices {#best-practices}
 
-A headless project is not only successful because of the technology implemented, but also due to good planning and project governance. The following are a number of best practices for both content authors and developers to keep in mind as you plan your project.
+A headless project is not only successful because of the technology implemented, but also due to good planning and project governance. The following are several best practices for both content authors and developers to keep in mind as you plan your project.
 
 ### Organizing Your Content {#organizing-content}
 

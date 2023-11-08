@@ -1,8 +1,6 @@
 ---
 title: SEO and URL Management Best Practices
-
 description: Learn about SEO best practices and recommendations on an AEM implementation.
-
 topic-tags: managing
 content-type: reference
 docset: aem65
@@ -441,7 +439,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
         }
         String location = externalizer.externalize(resource);
         Url url = sitemap.addUrl(location + ".html");
-        // add any additional content to the Url like lastmod, change frequency, etc
+        // add any additional content to the Url like lastmod, change frequency, and so on
     }
 
     @Override
@@ -471,7 +469,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Furthermore, the functionality implemented for XML sitemaps can be used for different use cases as well, for example to add the canonical link or the language alternates to a page's head. See [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
+Furthermore, the functionality implemented for XML sitemaps can be used for different use cases as well, for example, to add the canonical link or the language alternates to a page's head. See [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
 
 ### Creating 301 redirects for legacy URLs {#creating-redirects-for-legacy-urls}
 
@@ -484,7 +482,7 @@ Make sure to check the additional resources section that follows for instruction
 
 ## Additional Resources {#additional-resources}
 
-For more information, please see the following additional resources:
+For more information, see the following additional resources:
 
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)
 * [https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url](https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url)

@@ -35,4 +35,4 @@ The capability to integrate with third-party applications can be used to bring y
 
 ## Support for custom task rendering based on end user's device {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-AEM Forms workspace provides support for HTML rendition of XDP forms. This support, when used in a render process that routes to different renditions of XDP based on the device or user-agent, allows users to view an XDP form as HTML on the mobile devices and as PDF on a desktop. This helps in providing seamless coverage of Process Management to users who work in varied environments on different devices.
+AEM Forms workspace supports HTML rendition of XDP forms. This support, when used in a render process that routes to different renditions of XDP based on the device or user-agent, allows users to view an XDP form as HTML on the mobile devices and as PDF on a desktop. This helps in providing seamless coverage of Process Management to users who work in varied environments on different devices.

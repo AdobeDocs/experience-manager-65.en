@@ -18,15 +18,15 @@ exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
 
 ## About the Backup and Restore Service {#about-the-backup-and-restore-service}
 
-The Backup and Restore service lets you put AEM Forms into *backup mode*, which enables hot backups to be performed. The Backup and Restore service does not actually perform a backup of AEM Forms or restore your system. Instead, it puts your server in a state for consistent and reliable backups while allowing your server to continue to run. You are responsible for the actions to back up the Global Document Storage (GDS) and the database connected to the forms server. The GDS is a directory used to store files used within a long-lived process.
+The Backup and Restore service lets you put AEM Forms into *backup mode*, which enables hot backups to be performed. The Backup and Restore service does not actually perform a backup of AEM Forms or restore your system. Instead, it puts your server in a state for consistent and reliable backups while allowing your server to continue to run. You are responsible for the actions to back up the Global Document Storage (GDS) and the database connected to the Forms Server. The GDS is a directory used to store files used within a long-lived process.
 
-Backup mode is a state that the server enters so that files in the GDS are not being purged while a backup procedure is taking place. Instead, subdirectories are created under the GDS directory to maintain a record of files to be purged after save backup mode ends. A file is intended to survive system restarts and can span days, or even years. These files are a critical part of the overall state of the forms server and may include PDF files, policies, or form templates. If any of these files are lost or become corrupted, the processes on the forms server may become unstable and data could be lost.
+Backup mode is a state that the server enters so that files in the GDS are not being purged while a backup procedure is taking place. Instead, subdirectories are created under the GDS directory to maintain a record of files to be purged after save backup mode ends. A file is intended to survive system restarts and can span days, or even years. These files are a critical part of the overall state of the Forms Server and may include PDF files, policies, or form templates. If any of these files are lost or become corrupted, the processes on the Forms Server may become unstable and data could be lost.
 
 You can choose to perform snapshot backups, where you would usually enter backup mode for a period and then leave backup mode after you complete your backup activities. Leaving backup mode is required so that files can be purged from the GDS to ensure that it does not grow unnecessarily large. You can either leave backup mode explicitly or wait for the time to expire on a backup mode session.
 
 You can also leave your server in perpetual backup mode, which is typical for backup strategies for rolling backups or continuous system coverage. Rolling backup mode indicates that the system is always in backup mode, with a new backup mode session initiated as soon as the previous session is released. When in continuous backup mode, a file is purged after two backup mode session and is no longer referenced.
 
-You can use the Backup and Restore service to add to existing applications or new applications that you create to perform backups of the GDS or database connected to the forms server.
+You can use the Backup and Restore service to add to existing applications or new applications that you create to perform backups of the GDS or database connected to the Forms Server.
 
 >[!NOTE]
 >
@@ -45,15 +45,15 @@ You can perform these tasks using the Backup and Restore service:
 >
 >For more information about the Backup and Restore service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Entering Backup Mode on the forms server {#entering-backup-mode-on-the-forms-server}
+## Entering Backup Mode on the Forms Server {#entering-backup-mode-on-the-forms-server}
 
-You enter backup mode to allow for hot backups of a forms server. When you enter backup mode, you specify the following information based on your organization’s backup procedures:
+You enter backup mode to allow for hot backups of a Forms Server. When you enter backup mode, you specify the following information based on your organization's backup procedures:
 
 * A unique label to identify the backup mode session that may be useful for your backup processes.
 * The time for the backup procedure to complete.
 * A flag to indicate whether to be in continuous backup mode, which is useful only if you are performing rolling backups.
 
-Before you write applications to enter into backup mode, it is recommended that you understand the backup procedures that will be used after you put the forms server in backup mode. For more information about what to consider when performing backups for AEM Forms, see [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).
+Before you write applications to enter into backup mode, it is recommended that you understand the backup procedures that are used after you put the Forms Server in backup mode. For more information about what to consider when performing backups for AEM Forms, see [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ To programmatically leave backup mode, you create a BackupService client object 
 
 **Decide upon a unique label, determine the amount of time to perform the backup, and decide whether to be in continuous backup mode**
 
-Before you enter backup mode, you should decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the forms server to stay in backup mode. These considerations are important to integrate with the backup procedures established by your organization. (See [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Before you enter backup mode, you should decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the Forms Server to stay in backup mode. These considerations are important to integrate with the backup procedures established by your organization. (See [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Enter backup mode**
 
@@ -94,7 +94,7 @@ After you enter backup mode, you can retrieve information about the session. Thi
 
 **Perform the backup of the GDS and database**
 
-After you successfully enter backup mode, you can perform a backup of the Global Document Storage (GDS) and the database that the forms server is connected to. This step is specific to your organization, since you can perform this step manually or you can run other tools to perform the backup procedure.
+After you successfully enter backup mode, you can perform a backup of the Global Document Storage (GDS) and the database that the Forms Server is connected to. This step is specific to your organization, since you can perform this step manually or you can run other tools to perform the backup procedure.
 
 ### Enter backup mode using the Java API {#enter-backup-mode-using-the-java-api}
 
@@ -102,7 +102,7 @@ Enter backup mode by using the Backup and Restore Service API:
 
 1. Include project files
 
-   Include necessary client JAR files, such as adobe-backup-restore-client-sdk.jar, in your Java project’s class path. To create the Java client application, the following JAR files must be added to your project’s class path:
+   Include necessary client JAR files, such as adobe-backup-restore-client-sdk.jar, in your Java project's class path. To create the Java client application, the following JAR files must be added to your project's class path:
 
     * adobe-backup-restore-client-sdk.jar
     * adobe-livecycle-client.jar
@@ -119,7 +119,7 @@ Enter backup mode by using the Backup and Restore Service API:
 
 1. Decide upon a unique label, determine the amount of time to perform the backup, and decide whether to be in continuous backup mode
 
-   Decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the forms server to stay in continuous backup mode.
+   Decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the Forms Server to stay in continuous backup mode.
 
 1. Enter backup mode
 
@@ -137,7 +137,7 @@ Enter backup mode by using the Backup and Restore Service API:
 
 1. Perform the backup of the GDS and database
 
-   Backup the Global Document Storage (GDS) and the database which your forms server is connected to. The actions to perform the backup are not part of the AEM Forms SDK and may even include manual steps specific to the backup procedures in your organization.
+   Backup the Global Document Storage (GDS) and the database which your Forms Server is connected to. The actions to perform the backup are not part of the AEM Forms SDK and may even include manual steps specific to the backup procedures in your organization.
 
 ### Enter backup mode using the web service API {#enter-backup-mode-using-the-web-service-api}
 
@@ -154,7 +154,7 @@ Enter backup mode by using the web service provided by Backup and Restore Servic
 
 1. Decide upon a unique label, determine the amount of time to perform the backup, and decide whether to be in continuous backup mode
 
-   Decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the forms server to stay in continuous backup mode.
+   Decide upon a unique label, determine the amount of time that you want to allocate to perform the backup, and decide whether you want the Forms Server to stay in continuous backup mode.
 
 1. Enter backup mode
 
@@ -172,11 +172,11 @@ Enter backup mode by using the web service provided by Backup and Restore Servic
 
 1. Perform the backup of the GDS and database
 
-   Backup the Global Document Storage (GDS) and the database which your forms server is connected to. The actions to perform the backup are not part of the AEM Forms SDK and may even include manual steps specific to the backup procedures in your organization.
+   Backup the Global Document Storage (GDS) and the database which your Forms Server is connected to. The actions to perform the backup are not part of the AEM Forms SDK and may even include manual steps specific to the backup procedures in your organization.
 
-## Leaving Backup Mode on the forms server {#leaving-backup-mode-on-the-forms-server}
+## Leaving Backup Mode on the Forms Server {#leaving-backup-mode-on-the-forms-server}
 
-You leave backup mode so that the forms server resumes purging of files from the GDS (Global Document Storage) on the forms server.
+You leave backup mode so that the Forms Server resumes purging of files from the GDS (Global Document Storage) on the Forms Server.
 
 Before you write applications to enter into leave mode, it is recommended that you understand the backup procedures that are used with AEM Forms. For more information about what to consider when performing backups for AEM Forms, see [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
@@ -191,7 +191,7 @@ To leave backup mode, perform the following steps:
 1. Include project files.
 1. Create a BackupService client object.
 1. Leave backup mode.
-1. (Optional) Retrieve information about the backup mode session that was running on the forms server.
+1. (Optional) Retrieve information about the backup mode session that was running on the Forms Server.
 
 **Include project files**
 
@@ -217,7 +217,7 @@ Leave backup mode by using the Backup and Restore Service API (Java):
 
 1. Include project files
 
-   Include necessary client JAR files, such as adobe-backup-restore-client-sdk.jar, in your Java project’s class path. To create Java client application, the following JAR files must be added to your project’s class path:
+   Include necessary client JAR files, such as adobe-backup-restore-client-sdk.jar, in your Java project's class path. To create Java client application, the following JAR files must be added to your project's class path:
 
     * adobe-backup-restore-client-sdk.jar
     * adobe-livecycle-client.jar

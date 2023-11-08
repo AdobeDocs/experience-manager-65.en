@@ -34,7 +34,7 @@ In addition to [developing new components](/help/sites-developing/developing-com
 
 >[!NOTE]
 >
->This document focuses on developing forms using the [Foundation Components](/help/sites-authoring/default-components-foundation.md) in the classic UI. Adobe recommends leveraging the new [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and [Hide Conditions](/help/sites-developing/hide-conditions.md) for form development in the touch-enabled UI.
+>This document focuses on developing forms using the [Foundation Components](/help/sites-authoring/default-components-foundation.md) in the classic UI. Adobe recommends using the new [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and [Hide Conditions](/help/sites-developing/hide-conditions.md) for form development in the touch-enabled UI.
 
 ## Preloading Form Values {#preloading-form-values}
 
@@ -54,18 +54,18 @@ This is an optional field that specifies the path to a node in the repository. W
 
 Various form fields also have the **Items Load Path**, again an optional path that points to a node in the repository.
 
-The **Items Load Path** is the path to node properties that is used to load predefined values into that specific field on the form, for example, a [drop down list](/help/sites-authoring/default-components-foundation.md#dropdown-list), [check box group](/help/sites-authoring/default-components-foundation.md#checkbox-group) or [radio group](/help/sites-authoring/default-components-foundation.md#radio-group).
+The **Items Load Path** is the path to node properties that is used to load predefined values into that specific field on the form, for example, a [drop-down list](/help/sites-authoring/default-components-foundation.md#dropdown-list), [check box group](/help/sites-authoring/default-components-foundation.md#checkbox-group) or [radio group](/help/sites-authoring/default-components-foundation.md#radio-group).
 
 #### Example - Preloading A Dropdown List with Multiple Values {#example-preloading-a-dropdown-list-with-multiple-values}
 
-A drop down list can be configured with your range of values for selection.
+A drop-down list can be configured with your range of values for selection.
 
 The **Items Load Path** can be used to access a list from a folder in the repository and preload these into the field:
 
-1. Create a new sling folder ( `sling:Folder`)
+1. Create a sling folder ( `sling:Folder`)
    for example, `/etc/designs/<myDesign>/formlistvalues`
 
-1. Add a new property (for example, `myList`) of type multi-value string ( `String[]`) to contain the list of drop down items. Content can also be imported using a script, such as with either a JSP script or cURL in a shell script.
+1. Add a new property (for example, `myList`) of type multi-value string ( `String[]`) to contain the list of drop-down items. Content can also be imported using a script, such as with either a JSP script or cURL in a shell script.
 
 1. Use the full path in the **Items Load Path** field:
    for example, `/etc/designs/geometrixx/formlistvalues/myList`
@@ -74,7 +74,7 @@ Note that if the values in the `String[]` are of the formatted like this:
 
 * `AL=Alabama`
 * `AK=Alaska`
-* etc.
+* and so on
 
 then AEM will generate the list as:
 
@@ -174,7 +174,7 @@ You can add your own action under `/apps` as follows:
       The name of the script is `cleanup.<extension>`, for example, `cleanup.jsp`
       This script can be used to perform cleanup.
 
-1. Use the **Forms** component in a parsys. The **Action Type** drop down will now include your new action.
+1. Use the **Forms** component in a parsys. The **Action Type** drop-down will now include your new action.
 
    >[!NOTE]
    >
@@ -204,7 +204,7 @@ You can add your own constraints for an individual field (under `/apps`) as foll
 
    * `sling:resourceType` - set to `foundation/components/form/constraint`
 
-   * `constraintMessage` - a customized message that will be shown if the field is not valid, according to the constraint, when the form is submitted
+   * `constraintMessage` - a customized message that is shown if the field is not valid, according to the constraint, when the form is submitted
 
    * Optionally:
 
@@ -251,7 +251,7 @@ Use the **Edit Show/Hide Rules** dialog box to specify the conditions under whic
 Use the fields at the top of the dialog box to specify the following information:
 
 * Whether you are specifying conditions for hiding or showing the component.
-* Whether any or all of the conditions need to be true to show or hide the component.
+* Whether any or all the conditions need to be true to show or hide the component.
 
 One or more conditions appear below these fields. A condition compares the value of another form component (on the same form) to a value. If the actual value in the field satisfies the condition, the condition evaluates to true. Conditions include the following information:
 
@@ -273,9 +273,9 @@ In JavaScript, conditions use the value of the Element Name property to refer to
 
 1. Select **Show / Hide** to open the **Edit Show / Hide Rules** dialog:
 
-   * In the first drop down list select either **Show** or **Hide** to specify whether your conditions determine whether to show or hide the component.
+   * In the first drop-down list select either **Show** or **Hide** to specify whether your conditions determine whether to show or hide the component.
 
-   * In the drop down list at the end of the top line select:
+   * In the drop-down list at the end of the top line select:
 
      * **all** - if all conditions must be true to show or hide the component
      * **any** - if only one or more conditions must be true to show or hide the component

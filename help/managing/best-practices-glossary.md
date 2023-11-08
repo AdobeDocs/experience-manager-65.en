@@ -96,7 +96,7 @@ Apart from standard Adobe Experience Manager (AEM) maintenance tasks, you must d
 
 ### Appropriately Trained Staff {#appropriately-trained-staff}
 
-Ensure that your team is made up of staff with the appropriate training. For project teams the recommendation is to have all of the following:
+Ensure that your team is made up of staff with the appropriate training. For project teams the recommendation is to have all the following:
 
 * at least one AEM certified Lead Developer
 * at least one AEM certified Architect
@@ -285,7 +285,7 @@ An initial draft of the legal contract.
 
 ### Current Content Structure and Format {#current-content-structure-and-format}
 
-Documentation of the current content architecture and format. This will be used to generate the future content architecture. It will also be used for the Migration Concept.
+Documentation of the current content architecture and format. This is used to generate the future content architecture. It will also be used for the Migration Concept.
 
 ### Customer Backup and Restore Policy {#customer-backup-and-restore-policy}
 
@@ -662,7 +662,7 @@ Details of the legacy system should be collected so that you know what can be re
 
 ### List of Development Tools to be Used {#list-of-development-tools-to-be-used}
 
-An outline of tools that will be used in the implementation; the tools should include:
+An outline of tools that are used in the implementation; the tools should include:
 
 * documentation tools
 * issue tracking tools

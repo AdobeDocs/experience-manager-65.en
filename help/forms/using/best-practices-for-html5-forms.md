@@ -26,7 +26,7 @@ Although, the recommendations discussed in this article are targeted at HTML5 fo
 
 ## Nodes are currency of HTML5 forms, spend them wisely {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
-Generally, an XFA form has multiple elements. For example, table, text field, and images. Every element has a number of properties to control the behavior and appearance of the element. When an XFA form is rendered in HTML5 format, all XFA elements, and the corresponding properties are converted to Model or HTML DOM nodes. These nodes add to the size and complexity of a DOM. Making the HTML5 form slow to render.
+Generally, an XFA form has multiple elements. For example, table, text field, and images. Every element has several properties to control the behavior and appearance of the element. When an XFA form is rendered in HTML5 format, all XFA elements, and the corresponding properties are converted to Model or HTML DOM nodes. These nodes add to the size and complexity of a DOM. Making the HTML5 form slow to render.
 
 It is easier for the browsers to render a leaner DOM. So, you can perform the following optimizations on an XFA form to reduce the number of nodes. Therefore, generate a lean DOM structure:
 
@@ -41,7 +41,7 @@ Hence, reducing the size of the external resources and using only absolutely req
 
 * Use [compressed images](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). It reduces the network activity and amount of memory required to render a form. Therefore, the form load time decreases substantially.
 * Use the minify option in AEM Configuration Manager (Day CQ HTML Library Manager) to compress JavaScript and CSS files. For details, see [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md).
-* Enable web compression. It reduces the size of the requests and responses originated from a form. For details, see [Performance tuning of AEM forms server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Enable web compression. It reduces the size of the requests and responses originated from a form. For details, see [Performance tuning of AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Keep the interest alive, show only required fields  {#keep-the-interest-alive-show-only-required-fields}
 

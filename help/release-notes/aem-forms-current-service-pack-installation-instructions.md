@@ -28,7 +28,7 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
 >[!NOTE]
 >
-> Adobe releases a full installer every sixth service pack. AEM 6.5 Forms Service Pack 18 (6.5.18.0) is the latest JEE full installer. The full installer provides support for new platforms while the regular service pack installer includes new features, bug fixed and general improvements. If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer released on 31 August 2023 instead of AEM 6.5 Forms installer released on 08 April 2019 or AEM 6.5.12 Forms Installer released on 03 March 2022. After using the full installer, install the latest service pack.
+> Adobe releases a full installer every sixth service pack. AEM 6.5 Forms Service Pack 18 (6.5.18.0) is the latest JEE full installer. The full installer supports new platforms while the regular service pack installer includes new features, bug fixed and general improvements. If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer released on 31 August 2023 instead of AEM 6.5 Forms installer released on 08 April 2019 or AEM 6.5.12 Forms Installer released on 03 March 2022. After using the full installer, install the latest service pack.
 
 ## Download and install Service Pack on an AEM Form on JEE environment {#download-and-install-for-jee-service-pack}
 
@@ -79,7 +79,7 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
    1.  When the installation is complete, click **[!UICONTROL Next]** to apply the quick fix updates to your installed files.
    1.  **[For Windows only]:** Perform one of the following step:
    
-         * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file located in `[aem-forms root]\configurationManager\bin`. 
+         * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file in `[aem-forms root]\configurationManager\bin`. 
 
          * Or deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
 

@@ -105,7 +105,7 @@ Interactive Communication is the default and recommended approach to create cust
   </tr>
   <tr>
    <td>Charts</td>
-   <td>Charts supported in print as well as web channel</td>
+   <td>Charts supported in print and web channel</td>
    <td>Not supported</td>
   </tr>
   <tr>

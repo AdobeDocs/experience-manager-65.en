@@ -53,7 +53,7 @@ Long term monitoring of an [!DNL Experience Manager] deployment involves monitor
 
 ### Log aggregation and reporting {#log-aggregation-and-reporting}
 
-There are several tools available to aggregate logs, for example Splunk(TM) and Elastic Search, Logstash, and Kabana (ELK). To evaluate the uptime of your [!DNL Experience Manager] deployment, it is important for you to understand log events specific to your system and create alerts based on them. A good knowledge of your development and operations practices can help you better understand how to tune your log aggregation process to generate critical alerts.
+There are several tools available to aggregate logs, for example, Splunk(TM) and Elastic Search, Logstash, and Kabana (ELK). To evaluate the uptime of your [!DNL Experience Manager] deployment, it is important for you to understand log events specific to your system and create alerts based on them. A good knowledge of your development and operations practices can help you better understand how to tune your log aggregation process to generate critical alerts.
 
 ### Environment monitoring {#environment-monitoring}
 
@@ -66,7 +66,7 @@ Environment monitoring includes monitoring the following:
 * JMX MBeans
 * External websites
 
-You require external tools, such as NewRelic(TM) and AppDynamics(TM) to monitor each item. Using these tools, you can define alerts specific to your system, for example high system utilization, workflow back up, health check failures, or unauthenticated access to your website. Adobe does not recommend any particular tools over others. Find the tool that works for you, and leverage it to monitor the items discussed.
+You require external tools, such as NewRelic(TM) and AppDynamics(TM) to monitor each item. Using these tools, you can define alerts specific to your system, for example, high system utilization, workflow back up, health check failures, or unauthenticated access to your website. Adobe does not recommend any particular tools over others. Find the tool that works for you, and use it to monitor the items discussed.
 
 #### Internal application monitoring {#internal-application-monitoring}
 

@@ -1,12 +1,10 @@
 ---
 title: Import and manage archives
 description: Learn how to import and manage archives. Archives imports and manages LCAs created in workbench. You can import, configure, use and delete an archive. 
-uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 ---
 # Import and manage archives {#import-and-manage-archives}
@@ -20,7 +18,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 1. Click Browse to locate the archive to import, and then click Preview.
 1. Review the list of resources and objects that will be installed with the archive. Ensure that there are no conflicts with existing resources, objects, and service configurations because no undo capability is available.
 
-   If you select to import the service configurations, AEM forms imports all of the process configuration files (endpoints, security profiles, and service configuration parameters) used by the processes in the LCA.
+   If you select to import the service configurations, AEM forms imports all the process configuration files (endpoints, security profiles, and service configuration parameters) used by the processes in the LCA.
 
 1. Click Import.
 1. Review the import results and either click Skip Configuration to finish the import process or click Configure to configure the archive.
@@ -73,7 +71,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 
       **ADD_REMOVE_ENDPOINTS_PERM:** To add, remove, and modify endpoints for a service
 
-      **CREATE_VERSION_PERM:** To create a new version of the service
+      **CREATE_VERSION_PERM:** To create a version of the service
 
       **DELETE_VERSION_PERM:** To delete a version of the service
 
@@ -140,7 +138,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 
       **ADD_REMOVE_ENDPOINTS_PERM:** To add, remove, and modify endpoints for a service
 
-      **CREATE_VERSION_PERM:** To create a new version of the service
+      **CREATE_VERSION_PERM:** To create a version of the service
 
       **DELETE_VERSION_PERM:** To delete a version of the service
 

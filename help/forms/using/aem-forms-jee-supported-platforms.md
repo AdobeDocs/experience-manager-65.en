@@ -15,7 +15,7 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 
 <div class="preview">
 
-Adobe has released a [full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) with AEM 6.5 Forms Service Pack 18 (6.5.18.0) on JEE along with the patch installers. The full installer provides support for new platforms while the patch installer includes only bug fixes.
+Adobe has released a [full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) with AEM 6.5 Forms Service Pack 18 (6.5.18.0) on JEE along with the patch installers. The full installer supports new platforms while the patch installer includes only bug fixes.
 If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using [AEM 6.5.18.0 Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) released on 31 August 2023 instead of AEM 6.5 Forms installer released on 08 April 2019 or AEM 6.5.12 Forms Installer released on 03 March 2022.
 
 </div>
@@ -456,7 +456,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >- PDF Generator does not support Microsoft&reg; Office 365.
 >- PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
 >- The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
->- A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))"
+>- A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))"
 >- PDF Generator service does not support Microsoft&reg; Windows 10.
 >-PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.

@@ -37,7 +37,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 
-1. In the apps folder, create a folder named items with path/structure similar to the items folder located in selection folder using the following steps:
+1. In the apps folder, create a folder named items with path/structure similar to the items folder in selection folder using the following steps:
 
     1. Right-click the **items** folder at the following path and select **Overlay Node**:
 
@@ -130,7 +130,7 @@ To customize Correspondence Management to allow your users to download a flat PD
         </tbody>
        </table>
 
-1. In the apps folder, create a folder named js with path/structure similar to the items folder located in admin folder using the following steps:
+1. In the apps folder, create a folder named js with path/structure similar to the items folder in admin folder using the following steps:
 
     1. Right-click the **js** folder at the following path and select **Overlay Node**:
 
@@ -220,7 +220,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
        The above code is for letters-specific action handling of the command created in this procedure. For action handling of other assets, modify the JavaScript code.
 
-1. In the apps folder, create a folder named items with path/structure similar to the items folder located in actionhandlers folder using the following steps:
+1. In the apps folder, create a folder named items with path/structure similar to the items folder in actionhandlers folder using the following steps:
 
     1. Right-click the **items** folder at the following path and select **Overlay Node**:
 

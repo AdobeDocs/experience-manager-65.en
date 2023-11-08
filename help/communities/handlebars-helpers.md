@@ -272,7 +272,7 @@ Includes a new comments component at `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-A helper that includes an AEM html client library, which can be a js, a css or a theme library. For multiple inclusions of different types, for example js and css, this tag must be used multiple times in the Handlebars script.
+A helper that includes an AEM html client library, which can be a js, a css or a theme library. For multiple inclusions of different types, for example, js and css, this tag must be used multiple times in the Handlebars script.
 
 This helper, appropriate only on the server-side, provides functionality similar to [ui:includeClientLib](../../help/sites-developing/taglib.md) for JSP scripts.
 

@@ -37,7 +37,7 @@ You can create a collection either with [static references](#creating-a-collecti
 
 ### Create a collection with static references {#creating-a-collection-with-static-references}
 
-You can create a collection with static references, for example a collection with references to assets, folders, collections, spin sets, and image sets.
+You can create a collection with static references, for example, a collection with references to assets, folders, collections, spin sets, and image sets.
 
 1. Navigate to the **[!UICONTROL Collections]** console.
 1. From the toolbar, click **[!UICONTROL Create]**.
@@ -177,7 +177,7 @@ To customize the metadata [!UICONTROL Properties] page, including adding, modify
 
 You can search collections from the Collections console. When you search with keywords in the Omnisearch box, [!DNL Assets] searches for collection names, metadata, and the tags added to the collections.
 
-If you search for collections from the top level, only individual collections are returned in search results. [!DNL Assets] or folders within the collections are excluded. In all other cases (for example, within an individual collection or in a folder hierarchy), all relevant assets, folders, and collections are returned.
+If you search for collections from the top-level, only individual collections are returned in search results. [!DNL Assets] or folders within the collections are excluded. In all other cases (for example, within an individual collection or in a folder hierarchy), all relevant assets, folders, and collections are returned.
 
 ## Search within collections {#searching-within-collections}
 

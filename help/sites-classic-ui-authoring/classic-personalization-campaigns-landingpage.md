@@ -1,14 +1,10 @@
 ---
 title: Landing Pages
-seo-title: Landing Pages
 description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
-seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
-uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 ---
@@ -35,7 +31,7 @@ Preparing the design package for importing is covered in [Extending and Configur
 
 ## What are Landing Pages? {#what-are-landing-pages}
 
-Landing pages are single or multipage sites that are the "endpoint" of a marketing outreach - for example with email, adwords/banners, social media. A landing page can serve various purposes, but all have one thing in common - the visitor should fulfill a task and that defines the success of a landing page.
+Landing pages are single or multipage sites that are the "endpoint" of a marketing outreach - for example, with email, adwords/banners, social media. A landing page can serve various purposes, but all have one thing in common - the visitor should fulfill a task and that defines the success of a landing page.
 
 The Landing Pages feature in AEM allows marketers to work with web designers at agencies or internal creative teams to create page designs that can be easily be imported into AEM and still be editable by the marketers and published under the same governance as the rest of the AEM-powered sites.
 
@@ -345,13 +341,13 @@ Adobe recommends using the design importer on a staging instance. On a staging i
 
 ### Creating an Importer Page {#creating-an-importer-page}
 
-Before you can import your Landing Page design, you need to create an importer page, for example under a campaign. The Imporer Page template lets you import your full HTML landing page. The page contains a drop box where the landing page design package can be imported by using drag and drop.
+Before you can import your Landing Page design, you need to create an importer page, for example, under a campaign. The Imporer Page template lets you import your full HTML landing page. The page contains a drop box where the landing page design package can be imported by using drag and drop.
 
 >[!NOTE]
 >
 >By default, an Importer Page can only be created under campaigns, but you can also overlay this template to create a landing page under `/content/mysite`.
 
-To create a new landing page:
+To create a landing page:
 
 1. Go to the **Websites** console.
 1. Select your campaign in the left pane.
@@ -411,7 +407,7 @@ When you import the design package, **Clear Design** and **Download Imported Zip
 
 ### Downloading the imported design package {#downloading-the-imported-design-package}
 
-Downloading the zip file lets you record which zip was imported with a particular landing page. Please note that changes made on a page are not added to the zip.
+Downloading the zip file lets you record which zip was imported with a particular landing page. Changes made on a page are not added to the zip.
 
 To download the imported design package, click **Download Zip** in the Landing Page toolbar.
 
@@ -433,7 +429,7 @@ While clearing the landing page, you can remove the content changes. If you clic
 
 >[!NOTE]
 >
->If you decide to remove the content changes, then all the changes that you made on the imported landing page as well as all page properties are lost when you click **Clear**.
+>If you decide to remove the content changes, then all the changes that you made on the imported landing page and all page properties are lost when you click **Clear**.
 
 ### Modifying and Adding Components on a Landing Page {#modifying-and-adding-components-on-a-landing-page}
 

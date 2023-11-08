@@ -47,13 +47,13 @@ In addition to using pre-existing predicates, [!DNL Experience Manager] develope
 
 Creating custom predicates requires basic knowledge about the [Widgets framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-The best practice is to copy an existing predicate and adjust it. Sample predicates are located in **/libs/cq/search/components/predicates**.
+The best practice is to copy an existing predicate and adjust it. Sample predicates are in **/libs/cq/search/components/predicates**.
 
 ### Example: Build a simple property predicate {#example-build-a-simple-property-predicate}
 
 To build a property predicate:
 
-1. Create a component folder in your projects directory, for example **/apps/weretail/components/titlepredicate**.
+1. Create a component folder in your projects directory, for example, **/apps/weretail/components/titlepredicate**.
 1. Add **content.xml**:
 
    ```xml
@@ -83,7 +83,7 @@ To build a property predicate:
 
        <div class="title">Title</div>
 
-       <%-- The wrapper for the form elements. All items will be append to this wrapper. --%>
+       <%-- The wrapper for the form elements. All items are appended to this wrapper. --%>
        <div id="<%= elemId %>" class="content"></div>
 
    </div><script type="text/javascript">
@@ -102,7 +102,7 @@ To build a property predicate:
            var id = qb.createId(predicateName);
 
            // Hidden field that defines the property to search for; in our case this
-           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property" etc.)
+           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property" and so on.)
            // indicates the server to use the property predicate
            // (com.day.cq.search.eval.JcrPropertyPredicateEvaluator).
            qb.addField({
@@ -146,7 +146,7 @@ To build a property predicate:
 
 To build a group predicate:
 
-1. Create a component folder in your projects directory, for example **/apps/weretail/components/picspredicate**.
+1. Create a component folder in your projects directory, for example, **/apps/weretail/components/picspredicate**.
 1. Add **content.xml**:
 
    ```xml
@@ -176,7 +176,7 @@ To build a group predicate:
 
        <div class="title">Image Formats</div>
 
-       <%-- The wrapper for the form elements. All items will be append to this wrapper. --%>
+       <%-- The wrapper for the form elements. All items are append to this wrapper. --%>
        <div id="<%= elemId %>" class="content"></div>
 
    </div><script type="text/javascript">
@@ -222,7 +222,7 @@ To build a group predicate:
                qb.addField({
                    "xtype": "checkbox",
                    "renderTo": "<%= elemId %>",
-                   // 1_group.property.0_value, 1_group.property.1_value etc.
+                   // 1_group.property.0_value, 1_group.property.1_value and so on.
                    "name": groupId + "." +  predicateName + "." + i + "_value",
                    "inputValue": options[i].value,
                    "boxLabel": options[i].label,

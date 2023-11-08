@@ -138,7 +138,7 @@ When hosting the Dynamic Tag Management libraries on AEM, AEM automatically conf
   </tr>
   <tr>
    <td>Download Workflow</td>
-   <td><p>The workflow model to use for downloading and installing the Dynamic Tag Management library. The default model is Default DTM Bundle Download. Use this model unless you have created a custom model.</p> <p>Note that the default download workflow automatically activates the libraries when they are downloaded.</p> </td>
+   <td><p>The workflow model to use for downloading and installing the Dynamic Tag Management library. The default model is Default DTM Bundle Download. Use this model unless you have created a custom model.</p> <p>The default download workflow automatically activates the libraries when they are downloaded.</p> </td>
   </tr>
   <tr>
    <td>Domain Hint</td>
@@ -154,7 +154,7 @@ When hosting the Dynamic Tag Management libraries on AEM, AEM automatically conf
   </tr>
   <tr>
    <td>Enable Polling Importer</td>
-   <td><p>(Optional) Select to periodically download and install the Dynamic Tag Management library to ensure you are using an updated version. When selected, Dynamic Tag Management does not send HTTP POST requests to the Deploy Hook URL.</p> <p>AEM automatically configures the Deploy Hook URL property of the Library Download properties for the Dynamic Tag Management web property. When selected, the property is configured with no value. When not selected, the property is configured with the URL of your Dynamic Tag Management configuration.</p> <p>Enable polling importer when the Dynamic Tag Management deploy hook cannot connect to AEM, for example when AEM is behind a firewall.</p> </td>
+   <td><p>(Optional) Select to periodically download and install the Dynamic Tag Management library to ensure you are using an updated version. When selected, Dynamic Tag Management does not send HTTP POST requests to the Deploy Hook URL.</p> <p>AEM automatically configures the Deploy Hook URL property of the Library Download properties for the Dynamic Tag Management web property. When selected, the property is configured with no value. When not selected, the property is configured with the URL of your Dynamic Tag Management configuration.</p> <p>Enable polling importer when the Dynamic Tag Management deploy hook cannot connect to AEM, for example, when AEM is behind a firewall.</p> </td>
   </tr>
   <tr>
    <td>Schedule Expression</td>
@@ -254,7 +254,7 @@ Use the following procedure to associate a page and the descendants with a Dynam
 
 1. Use the Dynamic Tag Management drop-down menu to select your configuration, and then click OK.
 
-Use the following procedure to override the inherited configuration association for a page. The override affects the page and all of the page descendants.
+Use the following procedure to override the inherited configuration association for a page. The override affects the page and all the page descendants.
 
 1. Open the page in the classic UI.
 1. Use Sidekick to open the page properties.

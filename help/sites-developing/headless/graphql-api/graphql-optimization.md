@@ -118,7 +118,7 @@ This capability allows AEM to further cache content within the scope of GraphQL 
 
 **Further Reference**
 
-Please contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
+Contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
 -->
 
 ### GraphQL Query optimization {#graphql-query-optimization}
@@ -171,7 +171,7 @@ See:
 
 The response time of complex queries, with large result sets, can be improved by segmenting responses into chunks using pagination, a GraphQL standard. 
 
-GraphQL in AEM provides support for two types of pagination:
+GraphQL in AEM supports two types of pagination:
 
 * [limit/offset-based pagination](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
   This is used for list queries; these end with `List`; for example, `articleList`. 

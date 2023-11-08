@@ -91,7 +91,7 @@ To create a data model object without data sources:
 
 1. Log into the AEM author instance, navigate to **[!UICONTROL Forms > Data Integrations]**, and open the form data model in which you want to create a data model object or entity.
 1. Tap **[!UICONTROL Create Entity]**.
-1. In the Create data Model dialog, specify a name for the data model object and tap **[!UICONTROL Add]**. A data model object is added to the form data model. Note that the newly added data model object is not bound to a data source and does not have any properties as shown in the following image. 
+1. In the Create data Model dialog, specify a name for the data model object and tap **[!UICONTROL Add]**. A data model object is added to the form data model. The newly added data model object is not bound to a data source and does not have any properties as shown in the following image. 
 
    ![new-entity](assets/new-entity.png)
 
@@ -316,7 +316,7 @@ A computed property is the one whose value is computed based on a rule or an exp
 
 For example, you can create a computed property **FullName** whose value is a result of concatenation the existing **FirstName** and **LastName** properties. To do so:
 
-1. Create a new property with the name `FullName` whose data type is String.
+1. Create a property with the name `FullName` whose data type is String.
 1. Enable **[!UICONTROL Computed]** and tap **[!UICONTROL Done]** to create the property.
 
    ![computed](assets/computed.png)

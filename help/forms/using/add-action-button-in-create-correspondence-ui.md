@@ -34,7 +34,7 @@ Adding a button with an action (here send letter for review) to the Create Corre
 ### Add the button to the Create Correspondence user interface {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named `defaultApp` with path/structure similar to the defaultApp folder (located in config folder). Use the following steps to create the folder:
+1. In the apps folder, create a folder named `defaultApp` with path/structure similar to the defaultApp folder (in config folder). Use the following steps to create the folder:
 
     1. Right-click the **defaultApp** folder at the following path and select **Overlay Node**:
 

@@ -11,7 +11,7 @@ exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 
 You can create email content in AEM and process it in Adobe Campaign emails. To do that, you must:
 
-1. Create a new newsletter in AEM from an Adobe Campaign-specific template.
+1. Create a newsletter in AEM from an Adobe Campaign-specific template.
 1. Select [an Adobe Campaign service](#selecting-the-adobe-campaign-cloud-service-and-template) before editing the content to access all the functionality.
 1. Edit the content.
 1. Validate the content.
@@ -49,7 +49,7 @@ Detailed instructions are described in this document.
 
    >[!NOTE]
    >
-   >[Email samples are only available in Geometrixx](/help/sites-developing/we-retail.md). Please download sample Geometrixx content from Package Share.
+   >[Email samples are only available in Geometrixx](/help/sites-developing/we-retail.md). Download sample Geometrixx content from Package Share.
 
    ![chlimage_1-15](assets/chlimage_1-15a.png)
 
@@ -119,7 +119,7 @@ To edit email content:
 
    >[!NOTE]
    >
-   >If the personalization fields in properties from within the editor are greyed out, please re-examine your configuration.
+   >If the personalization fields in properties from within the editor are greyed out, re-examine your configuration.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
@@ -139,7 +139,7 @@ To edit email content:
 
 When editing your content, you can insert:
 
-* Adobe Campaign context fields. These are fields that you can insert within your text that adapt according to the recipient's data (for example first name, last name, or any data of the target dimension).
+* Adobe Campaign context fields. These are fields that you can insert within your text that adapt according to the recipient's data (for example, first name, last name, or any data of the target dimension).
 * Adobe Campaign personalization blocks. These are blocks of predefined content that are not related to the recipient's data, such as a brand logo, or link to a mirror page.
 
 See [Adobe Campaign Components](/help/sites-authoring/adobe-campaign-components.md) for a full description of the Campaign components.
@@ -181,7 +181,7 @@ To insert personalization:
 
 ### Previewing a newsletter {#previewing-a-newsletter}
 
-You can preview how the newsletter will look as well as preview the personalization.
+You can preview how the newsletter will look and preview the personalization.
 
 1. With the newsletter open, click **Preview** in the upper right corner of AEM. AEM displays how the newsletter looks when users receive it.
 
@@ -251,7 +251,7 @@ Doing so lets you deliver the content. You see whether a newsletter is linked to
 
 To link a page created in AEM with an email from Adobe Campaign:
 
-1. Create a new email based on an AEM-specific email template. Refer to [Creating emails in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) for more information.
+1. Create an email based on an AEM-specific email template. Refer to [Creating emails in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) for more information.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -345,13 +345,13 @@ To synchronize content created in AEM with a delivery from Adobe Campaign:
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
-1. Specify the other parameters of your delivery (target, etc.)
-1. If necessary, start the delivery approval process in Adobe Campaign. Content approval in AEM is necessary in addition to approvals configured in Adobe Campaign (budget, target, etc.). Content approval in Adobe Campaign is only possible if the content is already approved in AEM.
+1. Specify the other parameters of your delivery (target, and so on)
+1. If necessary, start the delivery approval process in Adobe Campaign. Content approval in AEM is necessary in addition to approvals configured in Adobe Campaign (budget, target, and so on). Content approval in Adobe Campaign is only possible if the content is already approved in AEM.
 1. Execute the delivery. During the delivery analysis, the most up-to-date version of the AEM content is recovered.
 
    >[!NOTE]
    >
-   >* After the delivery and content are synchronized, the delivery content in Adobe Campaign becomes read only. The email subject as well as its content can no longer be modified.
+   >* After the delivery and content are synchronized, the delivery content in Adobe Campaign becomes read only. The email subject and its content can no longer be modified.
    >* If the content is updated in AEM while it is linked to a delivery in Adobe Campaign, it is automatically updated in the delivery during the delivery analysis. The synchronization can also be executed manually using the **Refresh content now** button.
    >* You can cancel synchronization between a delivery and AEM content using the **Desynchronize** button. This is only available if a content is already synchronized with the delivery. To synchronize a different content with a delivery, you must cancel the current content synchronization before being able to establish a new link.
    >* If desynchronized the local content is kept and becomes editable in Adobe Campaign. If you resynchronize the content after having modified it, you will lose all your changes.

@@ -1,12 +1,10 @@
 ---
 title: Using Launches to develop content for a future release
 description: Launches lets you efficiently develop content for a future release. They let you make changes ready for future publication, while maintaining your current pages.
-uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 ---
@@ -72,7 +70,7 @@ Launches let you:
 
 * Update your source and launch pages in parallel:
 
-    * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; i.e. as a live copy).  
+    * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; that is, as a live copy).  
     * Changes to your launch copy can be made without disrupting these automatic updates or the source pages.
 
   ![Overview of updates](assets/chlimage_1-112.png)
@@ -92,7 +90,7 @@ Launches let you:
 >
 >Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`. 
 >
->Please contact your system administrator if you experience any problems.
+>Contact your system administrator if you experience any problems.
 
 >[!CAUTION]
 >

@@ -46,7 +46,7 @@ Each rollout configuration uses a rollout trigger that causes the rollout to occ
 
 ### Installed Rollout Configurations {#installed-rollout-configurations}
 
-The following table lists the rollout configurations that are installed with AEM. The table includes the trigger and synchronization actions of each rollout configuration. If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+The following table lists the rollout configurations that are installed with AEM. The table includes the trigger and synchronization actions of each rollout configuration. If the installed rollout configuration actions do not meet your requirements, you can [create a rollout configuration](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -263,7 +263,7 @@ The new rollout configuration is then available to you when setting rollout conf
 
 You can configure several OSGi services that support corresponding synchronization actions so that they do not affect specific node types and properties. For example, many properties and subnodes related to the internal functioning of AEM should not be included in a live copy. Only the content that is relevent to the user of the page should be copied.
 
-When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 The following table lists the synchronization actions for which you can specify the nodes to exclude. The table provides the names of the services to configure using the Web Console and the PID for configuring using a repository node.
 
@@ -314,7 +314,7 @@ The following table describes the properties that you can configure:
 
 Several properties and node types are excluded by default, these are defined in the OSGi configuration of **CQ MSM Content Update Action**, under **Excluded Page Properties**.
 
-By default properties matching the following regular expressions are excluded (i.e. not updated) on rollout:
+By default properties matching the following regular expressions are excluded (that is, not updated) on rollout:
 
 ![CQ MSM Content Update Action](assets/chlimage_1.png)
 
@@ -328,7 +328,7 @@ For example, if you want the page **Title** to be included in the changes consid
 
 You can configure several OSGi services that support corresponding synchronization actions related to updating references.
 
-When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 The following table lists the synchronization actions for which you can specify the reference update. The table provides the names of the services to configure using the Web Console and the PID for configuring using a repository node.
 
@@ -362,8 +362,8 @@ The following list of locations where you can specify the rollout configurations
 
 For example, a blueprint uses the We.Retail Reference Site as source content. A site is created from the blueprint. Each item in the following list describes a different scenario regarding the use of rollout configurations:
 
-* None of the blueprint pages or the live copy pages are configured to use a rollout configuration. MSM uses the system default rollout configuration for all of the live copy pages.
-* The root page of the We.Retail Reference Site is configured with several rollout configurations. MSM uses these rollout configurations for all of the live copy pages.
+* None of the blueprint pages or the live copy pages are configured to use a rollout configuration. MSM uses the system default rollout configuration for all the live copy pages.
+* The root page of the We.Retail Reference Site is configured with several rollout configurations. MSM uses these rollout configurations for all the live copy pages.
 * The root page of the We.Retail Reference Site is configured with several rollout configurations, and the root page of the live copy site is configured with a different set of rollout configurations. MSM uses the rollout configurations that are configured on the root page of the live copy site.
 
 ### Setting the Rollout Configurations for a Live Copy Page {#setting-the-rollout-configurations-for-a-live-copy-page}
@@ -394,12 +394,12 @@ You can also configure the rollout configurations for a live copy page when you 
 
 Configure a blueprint page with the rollout configurations to use when the blueprint page is rolled out.
 
-Note that the child pages of the blueprint page inherit the configuration. When you configure the rollout configuration to use, you could be overriding the configuration that the page inherits from its parent.
+The child pages of the blueprint page inherit the configuration. When you configure the rollout configuration to use, you could be overriding the configuration that the page inherits from its parent.
 
 1. Use the **Sites** console to select the root page of the blueprint.
 1. Select **Properties** from the toolbar.
 1. Open the **Blueprint** tab.
-1. Select one or more **Rollout Configurations** using the drop down selector.
+1. Select one or more **Rollout Configurations** using the drop-down selector.
 1. Persist your updates with **Save**.
 
 ### Setting the System Default Rollout Configuration {#setting-the-system-default-rollout-configuration}

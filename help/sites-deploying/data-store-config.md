@@ -84,7 +84,7 @@ The document node store is the basis of AEM's MongoMK implementation. It uses th
 
 * `changesSize`: Size in MB of capped collection used in Mongo for caching the diff output. The default is `256`
 
-* `customBlobStore`: Boolean value indicating that a custom data store will be used. The default is `false`.
+* `customBlobStore`: Boolean value indicating that a custom data store is used. The default is `false`.
 
 The following is a sample `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` file:
 

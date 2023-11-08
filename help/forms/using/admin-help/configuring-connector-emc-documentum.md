@@ -1,14 +1,10 @@
 ---
 title: Configuring Connector for EMC Documentum
-seo-title: Configuring Connector for EMC Documentum
 description: Learn how to configure the Connector for EMC Documentum to enable communication between AEM forms and EMC Documentum.
-seo-description: Learn how to configure the Connector for EMC Documentum to enable communication between AEM forms and EMC Documentum.
-uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 ---
 # Configuring Connector for EMC Documentum {#configuring-connector-for-emc-documentum}
@@ -27,7 +23,7 @@ This topic describes the tasks for Connector for EMC Documentum that you can per
 
 >[!NOTE]
 >
->If you are configuring all of the settings simultaneously, you only need to click Save once.
+>If you are configuring all the settings simultaneously, you only need to click Save once.
 
 ### Configure the server {#configure-the-server}
 
@@ -92,7 +88,7 @@ If the Content Repository Connector for EMC Documentum service and/or the Reposi
 
 1. In administration console, click Services &gt; Connector for EMC Documentum &gt; Configuration Settings.
 1. Click the name of the repository to edit credentials for.
-1. Change the repository’s user name or password, or both. (The repository name is read-only.)
+1. Change the repository's user name or password, or both. (The repository name is read-only.)
 1. Click Save.
 
 If the Content Repository Connector for EMC Documentum service and/or the Repository Service for EMC Documentum are running, the credential information is verified against the specified repository before is stored in the database. If the credentials are invalid or exist, an error message is displayed.
