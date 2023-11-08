@@ -321,8 +321,8 @@ If editing is necessary, on each AEM publish instance:
 
      Location in the repository where user data is stored. For a community site, to ensure permissions for members to view one another's profile, the path should be the default `/home/users/community`.
 
-   * **[!UICONTROL Enable Params]** do not edit
-   * **[!UICONTROL URL Parameters]** do not edit
+   * **[!UICONTROL Enable Params]** &ndash; do not edit
+   * **[!UICONTROL URL Parameters]** &ndash; do not edit
    * **[!UICONTROL Update User]**
 
      If checked, refreshes user data in the repository on each login to reflect profile changes or additional data requested. The default is deselected.

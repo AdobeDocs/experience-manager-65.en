@@ -105,7 +105,7 @@ The general workflow to delete a collection:
 
 1. From Mobile, choose your Mobile On-Demand app from the catalog.
 1. Select the article to delete in the **Manage Collections** tile.
-1. Ensure it is selected in the list, (select others to delete as needed).
+1. Ensure it is selected in the list; select others to delete as needed.
 1. Click **Delete** from the action bar.
 1. Check if you would like to delete from AEM and Mobile On-Demand.
 1. Click **Delete**.

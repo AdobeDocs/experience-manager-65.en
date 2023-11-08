@@ -1,13 +1,9 @@
 ---
 title: Embed an adaptive form or interactive communication in AEM sites page
-seo-title: Embed an adaptive form or interactive communication in AEM sites page
 description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
-seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
-uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
-discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
 ---
@@ -63,7 +59,7 @@ To embed an adaptive form or interactive communication using AEM Forms Container
 
         * **Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
         * **Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
-        * **Refresh Page on Submission**: Enable to refresh the page containing the embedded adaptive form to show the thank you page. Otherwise, the thank you page replaces the adaptive form in the AEM Forms container, without refreshing the page. This option is available only when you choose to show a thank you page.
+        * **Refresh Page on Submission**: Enable so you can refresh the page containing the embedded adaptive form to show the thank you page. Otherwise, the thank you page replaces the adaptive form in the AEM Forms container, without refreshing the page. This option is available only when you choose to show a thank you page.
 
     * **Theme**: Select a theme that defines styling for components of your adaptive form or interactive communication. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
     * **Height**: Specify the height of the container. Leave it blank to automatically resize the container.
