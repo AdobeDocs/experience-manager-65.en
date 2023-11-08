@@ -46,7 +46,7 @@ To search and filter your resources:
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. If required, you can remove the location filter (select **X** on the filter you want removed) to search across all consoles/resource types.
+1. If necessary, you can remove the location filter (select **X** on the filter you want removed) to search across all consoles/resource types.
 1. The results are shown, grouped according to console and related resource type.
 
    You can either select a specific resource (for further action), or drill down by selecting the required resource type; for example, **View All Sites**:

@@ -102,7 +102,7 @@ A dialog opens where you can enter the details, then confirm with **Create**:
 
 #### Using Paths and Tags to limit Content Fragment Models available in the Folder {#tags-paths-for-models-in-folder}
 
-This section is slightly more advanced. You don't really need it if you're just starting out and trying things, but it is *very* useful when you have a lot of fragments. So it's good to know about - even if you don't use it quite yet.
+This section is slightly more advanced. You do not really need it if you are just starting out and trying things, but it is most useful when you have  many fragments. So it's good to know about - even if you do not use it quite yet.
 
 Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for yourself, and other authors, you can limit the list of models available for a specific folder.
 

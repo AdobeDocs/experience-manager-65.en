@@ -472,7 +472,7 @@ JSON objects used in AEM Forms workspace are described below.
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td>
    <td>T</td>
-   <td>It contains list of users which are searched by logged in user till date.<br type="_moz" /> </td>
+   <td>It contains a list of users that are searched by a logged in user until date.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>

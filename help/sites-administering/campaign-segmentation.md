@@ -133,7 +133,7 @@ To define your new segment:
 
    ![Editing the segment settings in the Segment Editor](assets/screen_shot_2012-02-02at103547am.png)
 
-1. Add more traits if required. You can formulate boolean expressions using the **AND Container** and **OR Container** components found under **Segment Logic**. With the segment editor you can delete traits or containers not needed anymore, or drag them to new positions within the statement.
+1. Add more traits if necessary. You can formulate boolean expressions using the **AND Container** and **OR Container** components found under **Segment Logic**. With the segment editor you can delete traits or containers not needed anymore, or drag them to new positions within the statement.
 
 ### Using AND and OR Containers {#using-and-and-or-containers}
 

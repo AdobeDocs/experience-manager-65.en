@@ -487,7 +487,7 @@ For a Watched Folder endpoint, users can start file processing operations by cop
 
 For Watched Folder endpoints, if a job requires only one input file, the user can copy that file to the root of the Watched Folder.
 
-If the job contains more than one input file, the user must create a folder outside the Watched Folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if required by the process). After the job folder has been constructed, the user copies it into the Watched Folder's input folder.
+If the job contains more than one input file, the user must create a folder outside the Watched Folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if necessary by the process). After the job folder has been constructed, the user copies it into the Watched Folder's input folder.
 
 >[!NOTE]
 >

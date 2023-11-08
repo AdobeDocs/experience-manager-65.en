@@ -161,7 +161,7 @@ You can create a [Transient](/help/sites-developing/workflows.md#transient-workf
 
 1. Open the workflow model for [editing](#editinganexistingworkflow).
 1. Select **Workflow Model Properties** from the toolbar.
-1. In the dialog activate **Transient Workflow** (or deactivate if required):
+1. In the dialog activate **Transient Workflow** (or deactivate if necessary):
 
    ![wf-07](assets/wf-07.png)
 
@@ -202,7 +202,7 @@ You can configure a workflow model for [Multi Resource Support](/help/sites-deve
 1. Open the workflow model for [editing](#editinganexistingworkflow).
 1. Select **Workflow Model Properties** from the toolbar.
 
-1. In the dialog activate **Multi Resource Support** (or deactivate if required):
+1. In the dialog activate **Multi Resource Support** (or deactivate if necessary):
 
    ![wf-08](assets/wf-08.png)
 
@@ -410,7 +410,7 @@ To define an OR rule, proceed as follows:
 
    >[!NOTE]
    >
-   >You can switch the branch order if required.
+   >You can switch the branch order if necessary.
 
 1. Edit the properties of the **Branch 2** of the **OR Split**.
 

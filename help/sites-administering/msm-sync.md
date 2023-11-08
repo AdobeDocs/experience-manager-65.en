@@ -22,7 +22,7 @@ Perform the following tasks to control how and when live copies are synchronized
 
 ## Installed and Custom Rollout Configurations {#installed-and-custom-rollout-configurations}
 
-This section provides information about the installed rollout configurations and the synchronization actions that they use, and how to create custom configurations if required.
+This section provides information about the installed rollout configurations and the synchronization actions that they use, and how to create custom configurations if necessary.
 
 >[!CAUTION]
 >
@@ -380,7 +380,7 @@ You can also configure the rollout configurations for a live copy page when you 
 
    ![Configuration](assets/chlimage_1-1.png)
 
-1. If required, adjust the **Live Copy Inheritance** flag. If checked the live copy configuration is effective on all children.
+1. If necessary, adjust the **Live Copy Inheritance** flag. If checked the live copy configuration is effective on all children.
 
 1. Clear the **Inherit Rollout Configuration From Parent** property, then select one or more rollout configurations from the list.
 

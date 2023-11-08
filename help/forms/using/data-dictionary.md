@@ -43,7 +43,7 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
 >[!NOTE]
 >
->For multiple letters that require similar elements, you can create a common data dictionary. A big data dictionary with a large number of elements, however, may lead to performance issues while using the data dictionary and loading the elements, such as in letters and document fragments. If you run into performance issues, try to create separate data dictionaries for different letters.
+>For multiple letters that require similar elements, you can create a common data dictionary. A large data dictionary with a large number of elements, however, may lead to performance issues while using the data dictionary and loading the elements, such as in letters and document fragments. If you run into performance issues, try to create separate data dictionaries for different letters.
 
 1. Select **Forms** &gt; **Data Dictionaries**.
 1. Tap **Create Data Dictionary**.
@@ -115,7 +115,7 @@ To quickly create one or more data dictionaries with properties and elements sim
 1. From the list of data dictionaries, select the appropriate data dictionaries. The UI displays the Copy icon.
 1. Tap Copy. The UI displays the Paste icon.
 1. Tap Paste. The Paste dialog appears. The system automatically assigns a names and titles to the new data dictionaries.
-1. If required, edit the Title and Name with which you want to save the copy of the data dictionary.
+1. If necessary, edit the Title and Name with which you want to save the copy of the data dictionary.
 1. Tap Paste. The copy of the data dictionary is created. Now you can make the required changes in your newly created data dictionary.
 
 ## See the document fragments or documents that refer to a Data Dictionary element {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}

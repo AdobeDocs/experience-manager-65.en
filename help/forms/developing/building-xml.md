@@ -5,7 +5,7 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 ---
 # Using the execute script service in AEM Forms on JEE Workbench to build XML data {#using-execute-script-service-forms-jee-workbench}
 
-There is a lot of XML involved with AEM Forms on JEE Process Management workflows, for instance: XML information may be built in a process and sent to a Flex application in AEM Forms on JEE Workspace, used for systems settings, or passing information to and from forms. There are many instances where a AEM Forms on JEE developer needs to manage XML, and many times this requires that the XML be managed via a AEM Forms on JEE process.
+There is much XML involved with AEM Forms on JEE Process Management workflows, for instance: XML information may be built in a process and sent to a Flex application in AEM Forms on JEE Workspace, used for systems settings, or passing information to and from forms. There are many instances where a AEM Forms on JEE developer needs to manage XML, and many times this requires that the XML be managed via a AEM Forms on JEE process.
 
 When dealing with simple XML settings, one may use the `Set Value` service, which is a default AEM Forms on JEE service. This service sets the value of one or more data items in the process data model. For simple conditional logic "if this, then that" scenarios, this service can suit the purpose.
 

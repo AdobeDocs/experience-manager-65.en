@@ -93,7 +93,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
    >
    >The formatting of pasted text, however, has some [limitations](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
-1. If required, insert special characters in the document fragment. For example, you can use the Special Characters palette to insert:
+1. If necessary, insert special characters in the document fragment. For example, you can use the Special Characters palette to insert:
 
     * Currency symbols such as &euro;,￥, and £
     * Mathematical symbols such as ∑, √, ∂, and ^
@@ -547,5 +547,5 @@ To quickly create a document fragment with properties and content similar to an 
 1. From the list of document fragments, select one or more document fragments. The UI displays the Copy icon.
 1. Tap Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Tap Paste. The Paste dialog appears. If you are copying and pasting the document fragments at the same place, the system automatically assigns names and a titles to the new copies of letters, but you can edit the titles and names of the letters.
-1. If required, edit the Title and Name with which you want to save the copy of the document fragment.
+1. If necessary, edit the Title and Name with which you want to save the copy of the document fragment.
 1. Tap Paste. The copy of the document fragment is created.

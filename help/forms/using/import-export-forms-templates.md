@@ -227,7 +227,7 @@ Complete the following steps to create copies of assets and letters:
 
    If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
 
-1. If required, edit the Title and Name with which you want to save the copy of the asset/letter.
+1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
 1. Tap Paste. New copies of the copied assets are created.
 
 ## Search {#search-forms}

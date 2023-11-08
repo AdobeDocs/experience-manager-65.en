@@ -181,7 +181,7 @@ In this example, the details associated with **4367655678**, as the value for th
 
 Select **[!UICONTROL User Profile Attribute]** from the **[!UICONTROL Binding To]** drop-down menu and enter the attribute name in the **[!UICONTROL Binding Value]** field. The details of the user logged in to the AEM instance are retrieved from the data source based on the attribute name.
 
-The attribute name specified in the **[!UICONTROL Binding Value]** field must include the complete binding path till the attribute name for the user. Open the following URL to access the user details on CRXDE:
+The attribute name specified in the **[!UICONTROL Binding Value]** field must include the complete binding path until the attribute name for the user. Open the following URL to access the user details on CRXDE:
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 

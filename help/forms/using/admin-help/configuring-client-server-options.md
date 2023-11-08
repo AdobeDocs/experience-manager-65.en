@@ -579,7 +579,7 @@ The following settings are in the General Settings area of the Invited User Regi
 
 **SMTP Host:** The host name of the SMTP server. The SMTP server manages the outgoing email notices to register and activate invited user accounts.
 
-If required by your SMTP host, type the required information in the SMTP Server Account Name and SMTP Server Account Password boxes to connect to the SMTP server. Some organizations do not enforce this requirement. If you need information, see your system administrator.
+If necessary by your SMTP host, type the required information in the SMTP Server Account Name and SMTP Server Account Password boxes to connect to the SMTP server. Some organizations do not enforce this requirement. If you need information, see your system administrator.
 
 **SMTP server socket class name:** Socket class name for the SMTP server. For example, javax.net.ssl.SSLSocketFactory.
 

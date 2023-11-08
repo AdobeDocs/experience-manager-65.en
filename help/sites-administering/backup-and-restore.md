@@ -1,14 +1,10 @@
 ---
 title: Backup and Restore
-seo-title: Backup and Restore
 description: Learn how to backup and restore your AEM content and configurations.
-seo-description: Learn how to backup and restore your AEM content.
-uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
 ---
 # Backup and Restore{#backup-and-restore}
@@ -227,7 +223,7 @@ The files are copied to the target directory in four stages:
     * Phase A - everything is copied except for the datastore (with delay).
     * Phase B - only the datastore is copied (with delay).
 
-1. In the second copy stage (progress indicator 63% - 65.8% when creating a zip file or 90% - 94% if no zip file is created) only files that were created or modified in the source directory since the first copy stage was started are copied. Depending on the activity of the repository, this might range from no files at all, up to a significant number of files (because the first file copy stage usually takes a lot of time). The copy process is similar to the first stage (Phase A and Phase B with delay).
+1. In the second copy stage (progress indicator 63% - 65.8% when creating a zip file or 90% - 94% if no zip file is created) only files that were created or modified in the source directory since the first copy stage was started are copied. Depending on the activity of the repository, this might range from no files at all, up to a significant number of files (because the first file copy stage usually takes the most time). The copy process is similar to the first stage (Phase A and Phase B with delay).
 1. In the third copy stage (progress indicator 65.8% - 68.6% when creating a zip file or 94% - 98% if no zip file is created) only files that were created or modified in the source directory since the second copy stage was started are copied. Depending on the activity of the repository, there might be no files to copy, or a very small number of files (because the second file copy stage is usually fast). The copy process is similar to the second stage - Phase A and Phase B but without delay.
 1. File copy stages one to three are all done concurrently while the repository is running. Only files that were created or modified in the source directory since the third copy stage was started are copied. Depending on the activity of the repository, there might be no files to copy, or a very, very small number of files (because the second file copy stage usually is very fast). Progress indicator 68.6% - 70% when creating a zip file or 98% - 100% if no zip file is created. The copy process is similar to the third stage.
 1. Depending on the target:
