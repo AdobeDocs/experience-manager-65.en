@@ -96,7 +96,7 @@ See [Dynamic Media - Supported raster image formats](/help/assets/assets-formats
 
 The following are some best practices around spin set images. In general, the more images you have in a Spin Set, the better the image spinning effect is. However, including many images in the set also increases the amount of time it takes for the images to load. Experience Manager recommends these guidelines for shooting images for use in Spin Sets:
 
-* At minimum, use 8-12 images in a one-dimensional spin set and 16-24 images in a two-dimensional Spin Set. A minimum of 8 images is necessary to be able to turn 360°. One-dimensional Spin Sets are more common as creating two-dimensional Spin Sets is labor-intensive.
+* At minimum, use 8-12 images in a one-dimensional spin set and 16-24 images in a two-dimensional Spin Set. A minimum of 8 images is necessary to be able to turn 360-degrees. One-dimensional Spin Sets are more common as creating two-dimensional Spin Sets is labor-intensive.
 * Use a lossless format; TIFF and PNG are recommended.
 * Mask all images so the item appears on a pure white or other high-contrast background. Optionally, add shadows.
 * Make sure that product details are well lighted and in focus.

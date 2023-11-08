@@ -13,9 +13,9 @@ exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
 Setting up a new campaign includes the following (generic) steps:
 
 1. [Create a brand](#creating-a-new-brand) to hold your campaigns.
-1. If required you can [define the properties for your new brand](#defining-the-properties-for-your-new-brand).
+1. If necessary you can [define the properties for your new brand](#defining-the-properties-for-your-new-brand).
 1. [Create a campaign](#creating-a-new-campaign) to hold experiences; for example, teaser pages or a newsletter.
-1. If required you can [define the properties for your new campaign](#defining-the-properties-for-your-new-campaign).
+1. If necessary you can [define the properties for your new campaign](#defining-the-properties-for-your-new-campaign).
 
 Then, depending on the type of experiences you create, you must [create an experience](#creating-a-new-experience). The details of the experience, and the actions that follow its creation, are dependent on the type of experience you want to create:
 

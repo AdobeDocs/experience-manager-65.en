@@ -113,7 +113,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    ![3_repeatdialog](assets/3_repeatdialog.png)
 
-1. Select Line Break as separator and, if required, tap Add Condition to create a rule. You can also use text as separator and specify the text charaters to be used as separator.
+1. Select Line Break as separator and, if necessary, tap Add Condition to create a rule. You can also use text as separator and specify the text charaters to be used as separator.
 
    The Create Rule dialog appears.
 
@@ -174,7 +174,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
-1. If required, insert a condition to selectively render the transactions, such as to render transaction amounts bigger than 50 cents:
+1. If necessary, insert a condition to selectively render the transactions, such as to render transaction amounts bigger than 50 cents:
 
    ```javascript
    ${DD_creditcard_TransactionAmount > 0.5}

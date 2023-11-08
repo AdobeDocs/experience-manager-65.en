@@ -1,19 +1,15 @@
 ---
 title: Dashboards
-seo-title: Dashboards
 description: Learn how to create, configure and develop new AEM dashboards.
-seo-description: Learn how to create, configure and develop new AEM dashboards.
-uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
 ---
 # Dashboards{#dashboards}
 
-When using AEM you are able of managing a lot of content of different types (for example, pages, assets). AEM Dashboards provide an easy to use and customizable way to define pages that displays consolidated data.
+When using AEM, you can manage numerous content of different types (for example, pages, assets). AEM Dashboards provide an easy to use and customizable way to define pages that displays consolidated data.
 
 >[!NOTE]
 >

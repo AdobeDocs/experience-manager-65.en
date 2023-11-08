@@ -214,7 +214,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    >[!NOTE]
    >
-   >When adding choices, if you click the Dropdown field, the interface is distorted and delete option for the choices stops working. Do not click on the dropdown till you save the changes. If you face this issue, save the schema and open it again to continue editing.
+   >When adding choices, if you click the Dropdown field, the interface is distorted and delete option for the choices stops working. Do not click on the drop-down until you save the changes. If you face this issue, save the schema and open it again to continue editing.
 
 1. (Optional) Add the other required fields. For example, format, codec, and duration for the asset type video.
 

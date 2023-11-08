@@ -792,7 +792,7 @@ This move from residual JCR properties to a dedicated access control policy has 
 
 **Target Node Defined By Policy**
 
-CUG policies are expected to be created at the JCR node defining the subtree to be subject to restricted read access. This is likely to be a AEM page in case the CUG is expected affect the whole tree.
+Create CUG policies at the JCR node defining the subtree to be subject to restricted read access. This is likely to be a AEM page in case the CUG is expected affect the whole tree.
 
 Note that placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the content s.str of a given page but will not take effect on any siblings or child pages. This may be a valid use case and it is possible to achieve with a repository editor that allows to apply fine grained access content. However, it contrasts the former implementation where placing a cq:cugEnabled property on the jcr:content node was internally remapped to the page node. This mapping is no longer performed.
 
@@ -833,7 +833,7 @@ As far as the `granite:loginPath` is concerned the same privilege is required to
 
 #### Target Node Defined By Mixin Type {#target-node-defined-by-mixin-type}
 
-Authentication requirements are expected to be created at the JCR node defining the subtree to be subject to enforced login. This is likely to be an AEM Page in case the CUG is expected to affect the whole tree and the UI for the new implementation will consequently add the auth-requirement mixin type on the page node.
+Create authentication requirements at the JCR node defining the subtree to be subject to enforced login. This is likely to be an AEM Page in case the CUG is expected to affect the whole tree and the UI for the new implementation will consequently add the auth-requirement mixin type on the page node.
 
 Placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the contents, but will not take affect on the page node itself nor on any child pages.
 

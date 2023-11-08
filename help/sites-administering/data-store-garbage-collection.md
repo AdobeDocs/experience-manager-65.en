@@ -133,7 +133,7 @@ To run garbage collection:
 1. In the Apache Felix OSGi Management Console, highlight the **Main** tab and select **JMX** from the following menu.
 1. Next, search for and click the **Repository Manager** MBean (or go to `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Click **startDataStoreGC(boolean markOnly)**.
-1. enter "`true`" for the `markOnly` parameter if required:
+1. enter "`true`" for the `markOnly` parameter if necessary:
 
    | **Option** |**Description** |
    |---|---|

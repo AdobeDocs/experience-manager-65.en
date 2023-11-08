@@ -546,7 +546,7 @@ The Revert Inheritance dialog appears.
 
 ![revertinheritance](assets/revertinheritance.png)
 
-If required, select **[!UICONTROL Synchronize The Page After Reverting Inheritance]**. Select this option to synchronize the entire inteactive communication. If you do not select this option only the relevant target area gets synchronized on reinstating the inheritance.
+If necessary, select **[!UICONTROL Synchronize The Page After Reverting Inheritance]**. Select this option to synchronize the entire inteactive communication. If you do not select this option only the relevant target area gets synchronized on reinstating the inheritance.
 
 Tap **[!UICONTROL Yes]**.
 

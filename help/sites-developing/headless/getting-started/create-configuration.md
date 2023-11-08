@@ -32,7 +32,7 @@ An administrator would only need to create a configuration once, or very seldoml
 
 1. Tap or click **Create**
 
-You can create multiple configurations if required. Configurations can also be nested.
+You can create multiple configurations if necessary. Configurations can also be nested.
 
 >[!NOTE]
 >

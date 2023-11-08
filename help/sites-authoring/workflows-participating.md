@@ -60,7 +60,7 @@ You can complete an item to allow the workflow to progress to the next step.
 On this action you can indicate:
 
 * **Next Step**: the next step to be taken; you can select from a list provided
-* **Comment**: if required
+* **Comment**: if necessary
 
 You can complete a participant step from either:
 
@@ -76,7 +76,7 @@ Use the following procedure to complete the work item:
 1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Complete** from the toolbar.
-1. The **Complete Work Item** dialog box opens. Select the **Next Step** from the drop-down selector and add a **Comment** if required.
+1. The **Complete Work Item** dialog box opens. Select the **Next Step** from the drop-down selector and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Completing a Participant Step - Page Editor {#completing-a-participant-step-page-editor}
@@ -85,7 +85,7 @@ Use the following procedure to complete the work item:
 
 1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Select **Complete** from the status bar at the top.
-1. The **Complete Work Item** dialog box opens. Select the **Next Step** from the drop-down selector and add a **Comment** if required.
+1. The **Complete Work Item** dialog box opens. Select the **Next Step** from the drop-down selector and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Completing a Participant Step - Timeline {#completing-a-participant-step-timeline}
@@ -119,7 +119,7 @@ The users who are available for delegation depend on who was assigned the work i
 On this action you can indicate:
 
 * **User**: the user you want to delegate to; you can select from a list provided
-* **Comment**: if required
+* **Comment**: if necessary
 
 You can delegate a participant step from either:
 
@@ -135,7 +135,7 @@ Use the following procedure to delegate a work item:
 1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Delegate** from the toolbar.
-1. The dialog box opens. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if required.
+1. The dialog box opens. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Delegating a Participant Step - Page Editor {#delegating-a-participant-step-page-editor}
@@ -144,7 +144,7 @@ Use the following procedure to delegate a work item:
 
 1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Select **Delegate** from the status bar at the top.
-1. The dialog box opens. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if required.
+1. The dialog box opens. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Delegating a Participant Step - Timeline {#delegating-a-participant-step-timeline}
@@ -169,7 +169,7 @@ If you discover that a step, or series of steps, needs to be repeated you can st
 On this action you can indicate:
 
 * **Previous Step**: the step to be returned to; you can select from a list provided
-* **Comment**: if required
+* **Comment**: if necessary
 
 You can perform step back on a participant step from either:
 
@@ -186,7 +186,7 @@ Use the following procedure to step back:
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Step Back** to open the dialog.
 
-1. Specify the **Previous Step** and add a **Comment** if required.
+1. Specify the **Previous Step** and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Performing Step Back on a Participant Step - Page Editor {#performing-step-back-on-a-participant-step-page-editor}
@@ -195,7 +195,7 @@ Use the following procedure to step back:
 
 1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Select **Step Back** from the status bar at the top.
-1. Specify the **Previous Step** and add a **Comment** if required.
+1. Specify the **Previous Step** and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
 
 #### Performing Step Back on a Participant Step - Timeline {#performing-step-back-on-a-participant-step-timeline}
@@ -248,7 +248,7 @@ To open a workflow item and view the details:
 1. Select the workflow item you want to take action on (tap/click on the thumbnail).
 1. Select **Open** to open the information tabs.
 
-1. If required, select the appropriate action, supply any details and confirm with **OK** (or **Cancel**).
+1. If necessary, select the appropriate action, supply any details and confirm with **OK** (or **Cancel**).
 1. Use **Save** or **Cancel** to exit.
 
 #### Opening Workflow Details - Page Editor {#opening-workflow-details-page-editor}
@@ -258,7 +258,7 @@ To open a workflow item and view the details:
 1. Open the [page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Select **View Details** from the status bar to open the information tabs.
 
-1. If required, select the appropriate action, supply any details and confirm with **OK** (or **Cancel**).
+1. If necessary, select the appropriate action, supply any details and confirm with **OK** (or **Cancel**).
 1. Use **Save** or **Cancel** to exit.
 
 ### Viewing the Workflow Payload (Multiple Resources) {#viewing-the-workflow-payload-multiple-resources}

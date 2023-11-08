@@ -119,7 +119,7 @@ When creating an editable template you:
 * Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
 * [Create a template](#creatinganewtemplateauthor), which is initially empty
 
-* [Define additional properties](#definingtemplatepropertiesauthor) for the template if required
+* [Define additional properties](#definingtemplatepropertiesauthor) for the template if necessary
 * [Edit the template](#editingtemplates) to define the:
 
     * [Structure](#editingatemplatestructureauthor) - Predefined content that cannot be changed on pages created with the template.

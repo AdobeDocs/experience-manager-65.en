@@ -21,7 +21,7 @@ The framework makes use of tokens to guarantee that the client request is legiti
 
 ### Dependencies {#dependencies}
 
-Any component that relies on the `granite.jquery` dependency will benefit from the CSRF Protection Framework automatically. If this is not the case for any of your components, you must declare a dependency to `granite.csrf.standalone` before you can use the framework.
+Any component that relies on the `granite.jquery` dependency can benefit from the CSRF Protection Framework automatically. If not, for any of your components, you must declare a dependency to `granite.csrf.standalone` before you can use the framework.
 
 ### Replicating the Crypto Key {#replicating-crypto-keys}
 

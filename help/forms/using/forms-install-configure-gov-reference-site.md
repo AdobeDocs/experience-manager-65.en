@@ -28,8 +28,8 @@ This package contains cloud configuration which supports the following platform 
 | Adobe Analytics |v1.4 Rest API |**Supported** |
 **Package Installation considerations:**
 
-* The package is expected to be installed on a clean server, free of other demo packages, or older demo package versions
-* The package is expected to be installed on an OSGI server, running in Author mode
+* Install the package on a clean server, free of other demo packages, or older demo package versions.
+* Install the package on an OSGI server, running in Author mode.
 
 ### What does this package include {#what-does-this-package-include}
 

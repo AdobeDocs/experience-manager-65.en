@@ -50,7 +50,7 @@ To create an Interactive Communication, have the [building blocks](#buildingbloc
    1. [Charts](/help/forms/using/chart-component-interactive-communications.md)
    1. [Document fragments](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
-1. Preview print and web channels and, if required, edit the Interactive Communication.
+1. Preview print and web channels and, if necessary, edit the Interactive Communication.
 1. The agent uses the Agent UI to [prepare the Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) for sending it to the recipient/post process.
 
 ### Building blocks {#buildingblocks}

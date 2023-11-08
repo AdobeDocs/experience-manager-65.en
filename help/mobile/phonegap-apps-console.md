@@ -83,7 +83,7 @@ The following procedure uses the Touch UI to create a mobile application.
 
    ![The Create icon indicated by a plus sign inside a square.](do-not-localize/chlimage_1-7.png)
 
-1. (Optional) On the Advanced tab, provide a description for the application, and change the server URL if required.
+1. (Optional) On the Advanced tab, provide a description for the application, and change the server URL if necessary.
 1. (Optional) If you are using PhoneGap Build to compile the application, on the Build tab, select the Configuration to use.
 
    To create a PhoneGap build configuration, click Manage Configurations.

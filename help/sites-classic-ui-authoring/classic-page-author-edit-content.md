@@ -1,12 +1,10 @@
 ---
 title: Editing page content
 description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
-uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 ---
@@ -104,7 +102,7 @@ To create a component by dragging one of the above asset types:
 
    A component, appropriate for the asset type, will be created at the required location - it will contain the selected asset.
 
-1. [Edit](#editmovecopypastedelete) the component if required.
+1. [Edit](#editmovecopypastedelete) the component if necessary.
 
 ## Editing a Component (Content and Properties) {#editing-a-component-content-and-properties}
 
@@ -221,7 +219,7 @@ For larger scale edits of the same phrase a **[Find & Replace](/help/sites-class
 
 ## Locking a Page {#locking-a-page}
 
-AEM lets you lock a page, so that no-one else can modify the contents. This is useful when you are making a lot of edits to one specific page, or when you need to freeze a page for a short while.
+AEM lets you lock a page, so that no one else can change the contents. This is useful when you are making numerous edits to one specific page, or when you need to freeze a page for a short while.
 
 >[!CAUTION]
 >

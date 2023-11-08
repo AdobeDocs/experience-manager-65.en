@@ -108,7 +108,7 @@ Administrators can add and customize the following rich media types when creatin
   </tr>
   <tr>
    <td><strong>Panoramic Image</strong></td>
-   <td><p>The Panoramic Image and PanoramicVR viewers render spherical panoramic images to immerse users in a 360° viewing experience of a room, property, location, or landscape.</p> <p>For an uploaded image to qualify as a spherical panorama, it must have either one or both of the following:</p>
+   <td><p>The Panoramic Image and PanoramicVR viewers render spherical panoramic images to immerse users in a 360-degree viewing experience of a room, property, location, or landscape.</p> <p>For an uploaded image to qualify as a spherical panorama, it must have either one or both of the following:</p>
     <ul>
      <li>An aspect ratio of 2:1.</li>
      <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="/help/sites-authoring/tags.md">Using Tags</a>.</li>

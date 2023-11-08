@@ -61,7 +61,7 @@ However, before AEM can use the `aemserver` user, its password must be set. This
 
 ## Verify the AEMResourceTypeFilter in Campaign {#resource-type-filter}
 
-The `AEMResourceTypeFilter` is an option in Adobe Campaign that is used to filter AEM resources that can be used in Adobe Campaign. Because AEM contains a lot of content, this option acts as a filter that allows Adobe Campaign to retrieve only the AEM content of types specifically designed to be used in Adobe Campaign.
+The `AEMResourceTypeFilter` is an option in Adobe Campaign that is used to filter AEM resources that can be used in Adobe Campaign. Because AEM contains much content, this option acts as a filter that allows Adobe Campaign to retrieve only the AEM content of types specifically designed to be used in Adobe Campaign.
 
 This option comes pre-configured. However, you may need to update it if you have customized the Campaign components of AEM. To verify that the `AEMResourceTypeFilter` option is configured, follow these steps.
 

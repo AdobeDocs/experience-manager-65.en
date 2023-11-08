@@ -110,7 +110,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Why HTML forms are larger in size than PDF forms?
 
-   Answer: A lot of intermediate data structures and objects such as form dom, data dom, and layout dom are required to render an XDP to an HTML form.
+   Answer: Numerous intermediate data structures and objects such as form dom, data dom, and layout dom are required to render an XDP to an HTML form.
 
    For PDF Forms, Adobe Acrobat has a built-in XTG engine to create intermediate data structures, and objects. Acrobat also takes care of layout and scripts.
 

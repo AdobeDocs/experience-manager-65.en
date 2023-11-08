@@ -30,7 +30,7 @@ You can create a version of your resource from:
    ![Timeline - Save as Version](assets/screen-shot_2019-03-05at112335.png)
 
 1. Select **Save as Version**.
-1. Enter a **Label** and **Comment** if required.
+1. Enter a **Label** and **Comment** if necessary.
 
    ![Create Version - add label and comment](assets/chlimage_1-42.png)
 
@@ -43,7 +43,7 @@ You can create a version of your resource from:
 1. Navigate to show the page for which you want to create a version.
 1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Select the **Create** option from the toolbar to open the dialog.
-1. In the dialog box, you can enter a **Label** and a **Comment**, if required:
+1. In the dialog box, you can enter a **Label** and a **Comment**, if necessary:
 
    ![Enter a label and comment](assets/screen_shot_2012-02-15at105050am.png)
 

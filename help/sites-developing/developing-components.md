@@ -222,7 +222,7 @@ Once you have created your resource type, you can instantiate your field by addi
 
 If you want to define styling and behavior for your component, you can create a dedicated [client library](/help/sites-developing/clientlibs.md) that defines your custom CSS/LESS and JS.
 
-To have your client library loaded solely for your component dialog (that is, it will not be loaded for another component) you need to set the property `extraClientlibs` of your dialog to the category name of the client library you have created. This is advisable if your client library is quite big and/or your field is specific to that dialog and will not be needed in other dialogs.
+To have your client library loaded solely for your component dialog (that is, it will not be loaded for another component) you need to set the property `extraClientlibs` of your dialog to the category name of the client library you have created. This is advisable if your client library is quite large and/or your field is specific to that dialog and will not be needed in other dialogs.
 
 To have your client library loaded for all dialogs, set the category property of your client library to `cq.authoring.dialog`. This is the category name of the client library that is included by default when rendering all dialogs. You want to do that if you client library is small and/or your field is generic and could be reused in other dialogs.
 

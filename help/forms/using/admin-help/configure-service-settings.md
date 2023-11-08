@@ -604,9 +604,9 @@ The following settings are available for the Signature service.
 
 **TSP Server URL:** The URL of the default timestamp provider. Used only if some valid value is provided. No default value.
 
-**TSP Server Username:** The user name if required by the timestamp provider. Used only if some valid value is provided for the URL. No default value.
+**TSP Server Username:** The user name if necessary by the timestamp provider. Used only if some valid value is provided for the URL. No default value.
 
-**TSP Server Password:** The password for the above user name if required by the timestamp provider. Used only if some valid value is provided for the URL and the user name. No default value.
+**TSP Server Password:** The password for the above user name if necessary by the timestamp provider. Used only if some valid value is provided for the URL and the user name. No default value.
 
 **Request Hash Algorithm:** Specifies the hashing algorithm to be used while creating the request for the timestamp provider. The default value is SHA1.
 

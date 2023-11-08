@@ -60,7 +60,7 @@ The [!DNL Adobe InDesign Server] can be integrated with [!DNL Experience Manager
 To integrate the [!DNL InDesign Server] for use with [!DNL Experience Manager Assets] and after configuring your proxy, you need to:
 
 1. [Install the InDesign Server](#installing-the-indesign-server).
-1. If required, [configure the Experience Manager Assets Workflow](#configuring-the-aem-assets-workflow).
+1. If necessary, [configure the Experience Manager Assets Workflow](#configuring-the-aem-assets-workflow).
    This is only necessary if the default values are not appropriate for your instance.
 1. Configure a [proxy worker for the InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
@@ -70,7 +70,7 @@ To install and start the [!DNL InDesign Server] for use with [!DNL Experience Ma
 
 1. Download and install the [!DNL InDesign Server].
 
-1. If required, you can customize the configuration of your [!DNL InDesign Server] instance.
+1. If necessary, you can customize the configuration of your [!DNL InDesign Server] instance.
 
 1. From the command line, start the server:
 
