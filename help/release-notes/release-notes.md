@@ -20,7 +20,7 @@ mini-toc-levels: 4
 | Version  | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
 | Date     | Thursday, November 23, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE UPDATE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
 
@@ -36,23 +36,21 @@ Some of the key features and enhancements in this release include the following:
 
 **Key features**
 
-* A 
+* SOFTWARE ENGINEERING/PMS: *WHAT ARE THE KEY FEATURES IN THIS SERVICE PACK RELEASE?*
 
-**Key Enhancements**
+**Key enhancements**
 
-* S
+* SOFTWARE ENGINEERING/PMS: *WHAT ARE THE KEY ENHANCEMENTS IN THIS SERVICE PACK RELEASE?*
 
 **Deprecated feature**
 
-* ActiveMQ in AEM is deprecated. ActiveMQ was used for communication between two AEM Publish instances. Adobe recommends that customers now use a load-balancer.
+* SOFTWARE ENGINEERING/PMS: *WHAT ARE THE DEPRECATED FEATURES IN THIS SERVICE PACK RELEASE?*
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 ## Fixed issues in Service Pack 19 {#fixed-issues}
 
 ### [!DNL Sites]{#sites-6519}
-
-* U
 
 #### Accessibility{#sites-accessibility-6519}
 
@@ -128,9 +126,9 @@ to
 
 ### [!DNL Assets]{#assets-6519}
 
-* Unable to differentiate publishing assets to Experience Manager or Brand Portal. [NPR-41320]
-* When you create or save a public folder, three groups are created in an admin dashboard. [ASSETS-26700]
-* In the search panel, when you select checkboxes and deselect any one of them, all the checkboxes are unchecked. [ASSETS-26377]
+* When you create or save a public folder, three groups are created in an admin dashboard. (ASSETS-26700) MAJOR
+* Unable to differentiate publishing assets to Experience Manager or Brand Portal. (NPR-41320) NORMAL
+* In the search panel, when you select checkboxes and deselect any one of them, all the checkboxes are unchecked. (ASSETS-26377) NORMAL
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
@@ -221,7 +219,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * When a user selects **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > instances, then selects the running workflow, then select **[!UICONTROL View Payload]**, it results in a 500 error page. (NPR-41325) NORMAL
 
 
-## Install [!DNL Experience Manager] 6.5.18.0{#install}
+## Install [!DNL Experience Manager] 6.5.19.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
@@ -323,7 +321,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * **Page publishing not working in Page Editor after upgrading to Service Pack 18 (6.5.19.0)**
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> After you upgrade an instance of AEM 6.5.0.0&mdash;6.5.17.0 to AEM 6.5.19.0, when you click **Publish Page** inside the Page Editor, you are redirected to a URL that does not exist.
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> After you upgrade an instance of AEM 6.5.0.0&mdash;6.5.17.0 to AEM 6.5.19.0, when you click **[!UICONTROL Publish Page]** inside the Page Editor, you are redirected to a URL that does not exist.
 
   To work around this issue, do one of the following:
 
@@ -334,7 +332,6 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * Paste the correct URL directly into the browser.
 
        `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html`
-
 
 
 * **Related to Oak**
