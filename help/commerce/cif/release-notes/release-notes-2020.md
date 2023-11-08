@@ -137,7 +137,7 @@ This is the first version of CIF Core Components that is supported on Adobe Expe
 
 * Added category filtering as a facet to allow shoppers to filter based on category.
 
-* Added service user mapping as part of security requirement to ensure access to /conf via service users and not by directly manipulating ACLs. CIF Core Components now must use a service user to access configurations.
+* Added service user mapping as part of security requirement to ensure access to /conf via service users and not by directly manipulating ACLs. CIF Core Components must use a service user to access configurations.
 
 ### What's Improved {#what-is-improved-june}
 

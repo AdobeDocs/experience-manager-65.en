@@ -276,7 +276,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
 -->
 
 ```shell
-# Each farm configures a set of load balanced renders (i.e. remote servers)
+# Each farm configures a set of load balanced renders (that is, remote servers)
 /farms
   {
   # First farm entry
@@ -590,7 +590,7 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
 <!-- existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
-# Each farm configures a set of load balanced renders (i.e. remote servers)
+# Each farm configures a set of load balanced renders (that is, remote servers)
 /farms
   {
   # First farm entry

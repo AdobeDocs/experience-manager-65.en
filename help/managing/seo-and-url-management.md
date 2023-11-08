@@ -1,8 +1,6 @@
 ---
 title: SEO and URL Management Best Practices
-
 description: Learn about SEO best practices and recommendations on an AEM implementation.
-
 topic-tags: managing
 content-type: reference
 docset: aem65
@@ -441,7 +439,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
         }
         String location = externalizer.externalize(resource);
         Url url = sitemap.addUrl(location + ".html");
-        // add any additional content to the Url like lastmod, change frequency, etc
+        // add any additional content to the Url like lastmod, change frequency, and so on
     }
 
     @Override

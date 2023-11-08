@@ -40,7 +40,7 @@ Platforms displayed are driven by the PhoneGap config.xml content:
 </widget>
 ```
 
-Each vendor application store&mdash;for example, Apple App Store or Google Play Store&mdash;requires one or more screenshots of your mobile application to display your application details to customers. These screenshots can have strict requirements around dimensions and content (basically they must truly represent the application). AEM Apps provides support for selecting and managing these screenshots for the supported platforms and view port dimensions as required by each vendor's application store.
+Each vendor application store&mdash;for example, Apple App Store or Google Play Store&mdash;requires one or more screenshots of your mobile application to display your application details to customers. These screenshots can have strict requirements around dimensions and content (basically they must truly represent the application). AEM Apps supports selecting and managing these screenshots for the supported platforms and view port dimensions as required by each vendor's application store.
 
 >[!NOTE]
 >

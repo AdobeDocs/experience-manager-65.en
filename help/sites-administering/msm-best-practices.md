@@ -154,7 +154,7 @@ Modifications to the content structure in a blueprint/source tree are reflected 
 
 ## Customizing Rollouts {#customizing-rollouts}
 
-MSM rollout configurations are highly customizable. You should be aware that automating rollouts can have far reaching consequences. As a best practice, you should plan *very* carefully before, for example:
+MSM rollout configurations are highly customizable. Automating rollouts can have far reaching consequences. As a best practice, you should plan *very* carefully before, for example:
 
 * automating rollouts; for example, with [onModify triggers](#onmodify),
 * customizing [node types/properties](#node-types-properties),

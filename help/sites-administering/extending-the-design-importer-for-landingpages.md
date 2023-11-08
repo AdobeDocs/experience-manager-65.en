@@ -542,7 +542,7 @@ If the design package contains a parsys component markup, then after importing, 
 If there was any errors (for example, the imported package is not a valid zip), the design import does not import the package. Instead, an error message is displayed on top of the page just above the drag and drop box. Examples of error scenarios are stated here. After correcting the error, you can reimport the updated zip onto the same blank landing page. Different scenarios where errors are thrown are as follows:
 
 * Imported design package is not a valid zip archive.
-* Imported design package does not contain an index.html at the top level.
+* Imported design package does not contain an index.html at the top-level.
 
 ### Warnings displayed after import {#warnings-displayed-after-import}
 
@@ -593,4 +593,4 @@ Then `box img` is used in the design importer, the resulting landing page appear
 
 >[!NOTE]
 >
->Also, designers should be aware that only code inside the **id=cqcanvas** tag is recognized by the importer, otherwise design is not preserved.
+>Designers should only code inside the **id=cqcanvas** tag is recognized by the importer, otherwise design is not preserved.

@@ -16,7 +16,7 @@ When a component in a web page is rendered, an HTML element can be generated, wr
 For developers, AEM offers clear and simple logic controlling the decoration tags that wrap included components. Whether and how the decoration tag is rendered is defined by the combination of two factors, which this page will dive into:
 
 * The component themselves can configure their decoration tag with a set of properties.
-* The scripts that include components (HTL, JSP, dispatcher, etc) can define the aspects of the decoration tag with include parameters.
+* The scripts that include components (HTL, JSP, dispatcher, and so on) can define the aspects of the decoration tag with include parameters.
 
 ## Recommendations {#recommendations}
 

@@ -43,7 +43,7 @@ As with [all components](/help/sites-developing/components.md), workflow step co
 >
 >The recommended method for configuration and other changes is:
 >
->1. Recreate the required item (i.e. as it exists in `/libs` under `/apps`
+>1. Recreate the required item (that is, as it exists in `/libs` under `/apps`
 >2. Make any changes within `/apps`
 
 The `/libs/cq/workflow/components/model/step` component is the nearest common ancestor of the **Process Step**, **Participant Step**, and **Dynamic Participant Step**, which all inherit the following items:

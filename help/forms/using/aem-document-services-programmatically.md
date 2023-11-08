@@ -1,13 +1,9 @@
 ---
 title: Using AEM Document Services Programmatically
-seo-title: Using AEM Document Services Programmatically
 description: Learn how to use Document Services APIs to Digitally sign, encrypt, and generate PDF documents.
-seo-description: Learn how to use Document Services APIs to Digitally sign, encrypt, and generate PDF documents.
-uuid: bf5ee197-4daf-4a64-8b6d-2c0d1f232b1c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
 ---
 # Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
@@ -955,7 +951,7 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
  * A field lock dictionary specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from making
  * changes to the field. A seed value dictionary contains constraining information that is used at the time the signature is applied.
  * For example, you can change permissions that control the actions that can occur without invalidating a signature.
- * By modifying an existing signature field, you can make changes to the PDF document to reflect changing business requirements. For example,
+ * By modifying an existing signature field, you can change the PDF document to reflect changing business requirements. For example,
  * a new business requirement may require locking all document fields after the document is signed.
  * This section explains how to modify a signature field by amending both field lock dictionary and seed value dictionary values.
  * Changes made to the signature field lock dictionary result in all fields in the PDF document being locked when a signature field is signed.

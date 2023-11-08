@@ -13,7 +13,7 @@ exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 ---
 # SAML 2.0 Authentication Handler{#saml-authentication-handler}
 
-AEM ships with a [SAML](https://saml.xml.org/saml-specifications) authentication handler. This handler provides support for the [SAML](https://saml.xml.org/saml-specifications) 2.0 Authentication Request Protocol (Web-SSO profile) using the `HTTP POST` binding.
+AEM ships with a [SAML](https://saml.xml.org/saml-specifications) authentication handler. This handler supports the [SAML](https://saml.xml.org/saml-specifications) 2.0 Authentication Request Protocol (Web-SSO profile) using the `HTTP POST` binding.
 
 It supports:
 

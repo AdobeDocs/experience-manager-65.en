@@ -120,7 +120,7 @@ if (currentChild.getNodeType() == Node.ELEMENT_NODE)
 
 {
 
-// found the top level node
+// found the top-level node
 
 Element newResource = document.createElement("resource");
 

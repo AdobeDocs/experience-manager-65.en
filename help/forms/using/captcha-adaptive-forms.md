@@ -1,15 +1,10 @@
 ---
 title: Using CAPTCHA in adaptive forms
-seo-title: Using CAPTCHA in adaptive forms
 description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in adaptive forms.
-seo-description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in adaptive forms.
-uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
-discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 ---
@@ -214,7 +209,7 @@ To use reCAPTCHA in adaptive forms:
 
 
    **If the selected configuration has version reCAPTCHA v2**:
-    1. Select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
+    1. Select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only if there is suspicious activity. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
 
         ![Google protected by reCAPTCHA badge](/help/forms/using/assets/google-recaptcha-v2.png)
 

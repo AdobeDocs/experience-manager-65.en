@@ -178,7 +178,7 @@ You can sort the list of documents by column heading. Triangle icons next to the
 
 ## Add cover page to policy protected documents {#add-cover-page-to-policy-protected-documents}
 
-In the case of most non-Adobe PDF viewers, if you open a document security protected document either the first page is displayed as a blank page or the application aborts without opening the document.
+If there are most non-Adobe PDF viewers, if you open a document security protected document either the first page is displayed as a blank page or the application aborts without opening the document.
 
 You can use the Page 0 (Wrapper Document) support to allow non-Adobe PDF viewers to open a protected document and display a cover page in the document.
 

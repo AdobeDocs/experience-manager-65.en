@@ -1,14 +1,9 @@
 ---
 title: Create an Interactive Communication
-seo-title: Create an Interactive Communication
 description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
-seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
-uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
-
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 ---
@@ -22,7 +17,7 @@ Interactive Communications centralize and manages the creation, assembly, and de
 
 The following are the prerequisites for creating an Interactive Communication:
 
-* Set up a [Form Data Model](/help/forms/using/data-integration.md) containing test data or with an actual data source, such as an instance of Microsoft® Dynamics.
+* Set up a [Form Data Model](/help/forms/using/data-integration.md) containing test data or with an actual data source, such as an instance of Microsoft&reg; Dynamics.
 * Ensure that you have the [Document fragments](/help/forms/using/document-fragments.md).
 * Ensure that you have [Templates for print and web channel](/help/forms/using/web-channel-print-channel.md).
 * Ensure that you have the required [theme](/help/forms/using/themes.md) for the web channel.
@@ -136,7 +131,7 @@ For more information on the Interactive Communication authoring interface, see [
 
    In addition, when you hover the mouse over these elements, a tooltip is displayed with the Field (Unbound) or Variable (Unbound) message.
 
-   An unbound variable used in a document fragment may sometimes not be displayed on the authoring interface. It can happen due to an inline text rule within a document fragment or in case of a condition fragment. In such cases, a tooltip, highlighted in blue, is displayed as a part of the document fragment. The tooltip displays the number of unbound variables used within a document fragment.
+   An unbound variable used in a document fragment may sometimes not be displayed on the authoring interface. It can happen due to an inline text rule within a document fragment or if there a condition fragment. In such cases, a tooltip, highlighted in blue, is displayed as a part of the document fragment. The tooltip displays the number of unbound variables used within a document fragment.
 
    ![Unbound variable](assets/df_unbound_variable_new.png)
 
@@ -194,7 +189,7 @@ For more information on the Interactive Communication authoring interface, see [
    | Panel |Lets you add a [Panel](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) to the Interactive Communication. |
    | Table |Adds a table that lets you organize data in rows and columns.  |
    | Target Area |Inserts a target area in a web channel to organize the web-channel-specific components. Target area is a plain container that lets you group web-channel specific components.  |
-   | Text |Adds rich text to the web channel of an Interactive Communication. Text can also make use of form data model objects to make the content dynamic. |
+   | Text |Adds rich text to the web channel of an Interactive Communication. Text can also use form data model objects to make the content dynamic. |
    | Button |Lets you add a [Button](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) to the Interactive Communication. You can use the Button component to navigate to other Interactive Communications, adaptive forms, other assets such as images or document fragments, or an external URL. |
    | Separator |Lets you insert a horizontal line within an Interactive Communication. Use this component to distinguish between sections in a correspondence. For example, you can use the Separator component to distinguish between Customer Details and Credit Card Details sections in a credit card statement. |
 
@@ -557,7 +552,7 @@ Tap **[!UICONTROL Yes]**.
 
 ### Synchronize {#synchronize-1}
 
-If you are using Print as Master for Web Channel and make changes to the Print channel, you can synchronize content to bring the newly made changes to the Web channel.
+If you are using Print as Master for Web Channel and change the Print channel, you can synchronize content to bring the newly made changes to the Web channel.
 
 1. To synchronize the Web channel with the Print channel, switch to the Web channel and tap the More options icon.
 

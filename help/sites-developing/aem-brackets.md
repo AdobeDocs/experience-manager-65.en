@@ -26,7 +26,7 @@ The main features of the AEM Brackets Extension are:
 
 Additionally, Brackets comes with many useful features for AEM font-end developers:
 
-* Photoshop file support to extract information from a PSD file, like layers, measurements, colors, fonts, texts, etc.
+* Photoshop file support to extract information from a PSD file, like layers, measurements, colors, fonts, texts, and so on.
 * Code hints from the PSD, to easily reuse this extracted information in the code.
 * CSS preprocessor support, like LESS and SCSS.
 * And hundreds of additional extensions that cover more specific needs.

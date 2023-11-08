@@ -75,13 +75,13 @@ AEM lets you define layouts dependent on the width of the device:
     * The range of a breakpoint extends left until the next breakpoint.
     * You cannot select the breakpoint specifically, selecting a device and orientation will automatically select the appropriate breakpoint.
 
-The device **Desktop**, which does not have a specific width, relates to the default breakpoint (i.e. everything above the last configured breakpoint).
+The device **Desktop**, which does not have a specific width, relates to the default breakpoint (that is, everything above the last configured breakpoint).
 
 >[!NOTE]
 >
 >It would be possible to define breakpoints for every individual device, but this would drastically increase the effort required for layout definition and maintenance.
 
-When using the emulator, you select a specific device for emulation and layout definition and the related breakpoint will be highlighted too. Any layout changes that you make will be applicable for other devices to which the breakpoint applies, i.e. any devices positioned to the left of the active breakpoint marker, but before the next breakpoint marker.
+When using the emulator, you select a specific device for emulation and layout definition and the related breakpoint will be highlighted too. Any layout changes that you make will be applicable for other devices to which the breakpoint applies, that is, any devices positioned to the left of the active breakpoint marker, but before the next breakpoint marker.
 
 For example, when you select the device **iPhone 6 Plus** (defined with a width of 540 pixels) for emulation and layout, the breakpoint **Phone** (defined as 768 pixels) will be activated too. Any layout changes you make for the **iPhone 6** will be applicable to other devices under the **Phones** breakpoint, such as **iPhone 5** (defined as 320 pixels).
 

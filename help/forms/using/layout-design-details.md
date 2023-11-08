@@ -1,15 +1,10 @@
 ---
 title: Layout Design
-seo-title: Layout Design
 description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
-seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
-uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
 content-type: reference
 topic-tags: correspondence-management, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
-
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
 ---
@@ -37,7 +32,7 @@ Follow these steps to create layouts for letters/print channel of Interactive Co
 1. A Layout can be designed as follows:
 
     1. Make each section as a separate subform containing all elements of the section.
-    1. Make each section subform child of same parent subform. Parent subform's layout are set to flow to allow the sections to shift below in case of large data is merged in previous sections.
+    1. Make each section subform child of same parent subform. Parent subform's layout are set to flow to allow the sections to shift below if there is large data that is merged in previous sections.
     1. Section Primary residence can be reused across other layouts as well. Create it as a fragment layout.
     1. Section Additional interest details contains only two elements placed one below another, can contain large data, and is designed as flowed.
     1. Other sections contain elements at specific positions so they are designed as positioned layout.
@@ -203,7 +198,7 @@ Use a field if you want to capture module data or data dictionary element data i
   </tr>
   <tr>
    <td><p>Repeating, optional, and conditional data groups are bound to subforms, to reduce the risk of design errors that could occur if scripts are used to achieve the same results</p> </td>
-   <td><p>Elements such as your organization’s logo and address appear on all pages of a letter/Interactive Communication. In this case, create form fields for those elements and place them on the master page. If you set the field binding to "No Data Binding", the no fields appear as relatable fields in the Letter/Interactive Communication Editor. If you want to relate some type of content to these fields, they must have binding.</p> <p>If your company address contains more than one line of data, use text field with the "Allow Multiple Lines" option to represent the address on the layout.</p> <p>If a text field's data type is set to plain text, the plain text version of the module output is used instead of the rich text version (all formatting is discarded). To preserve the formatting, set the text field’s data type to rich text.</p> </td>
+   <td><p>Elements such as your organization's logo and address appear on all pages of a letter/Interactive Communication. In this case, create form fields for those elements and place them on the master page. If you set the field binding to "No Data Binding", the no fields appear as relatable fields in the Letter/Interactive Communication Editor. If you want to relate some type of content to these fields, they must have binding.</p> <p>If your company address contains more than one line of data, use text field with the "Allow Multiple Lines" option to represent the address on the layout.</p> <p>If a text field's data type is set to plain text, the plain text version of the module output is used instead of the rich text version (all formatting is discarded). To preserve the formatting, set the text field's data type to rich text.</p> </td>
   </tr>
   <tr>
    <td><p>Text is flowed</p> </td>
@@ -222,10 +217,10 @@ Use a field if you want to capture module data or data dictionary element data i
 
 ## Setting up repetitive elements {#setting-up-repetitive-elements}
 
-When elements such as your organization’s logo and address appear on all pages of a letter/Interactive Communication, create form fields for those elements and place them on the master page. Use Name (Field Name) binding for these fields.
+When elements such as your organization's logo and address appear on all pages of a letter/Interactive Communication, create form fields for those elements and place them on the master page. Use Name (Field Name) binding for these fields.
 
 ## Specify the server render format {#specify-the-server-nbsp-render-format}
 
-Use the layout’s server render format to Dynamic XML Form; otherwise, any letters/Interactive Communications based on this layout cannot render correctly. By default, the server render format in Forms Designer is set to Dynamic XML Form. To ensure that you are using the correct format:
+Use the layout's server render format to Dynamic XML Form; otherwise, any letters/Interactive Communications based on this layout cannot render correctly. By default, the server render format in Forms Designer is set to Dynamic XML Form. To ensure that you are using the correct format:
 
 * In Designer, click **File** &gt; **Form Properties** &gt; **Defaults**, and ensure that the PDF Render/Format setting is set to Dynamic XML Form.

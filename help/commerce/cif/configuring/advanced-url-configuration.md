@@ -38,7 +38,7 @@ This configures the URLs of the product pages and supports the following options
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}` 
 
-In the case of the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia):
+If there is the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` is replaced by `/content/venia/us/en/products/product-page`
 * `{{sku}}` is replaced by the product's SKU, for example, `VP09`
@@ -57,7 +57,7 @@ This configures the URLs of the category or product list pages and supports the 
 * `{{page}}.html/{{url_path}}.html` (default)
 * `{{page}}.html/{{url_key}}.html`
 
-In the case of the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia):
+If there is the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` is replaced by `/content/venia/us/en/products/category-page`
 * `{{url_key}}` is replaced by the category's `url_key` property

@@ -61,13 +61,13 @@ You must explicitly move from panel to panel using the `xfa.host.pageUp` and `xf
 >
 >If you want to customize the look of the HTML Digital Signature button on an HTML form, you must change the following properties in the fscdigsig.css file (within the adobe-forms-ds.ear &gt; adobe-forms-ds.war file):
 
-**.fsc-ds-ssb**: This style sheet is applicable in case of a blank sign field.
+**.fsc-ds-ssb**: This style sheet is applicable if there is a blank sign field.
 
-**.fsc-ds-ssv**: This style sheet is applicable in case of a Valid sign field.
+**.fsc-ds-ssv**: This style sheet is applicable if there is a Valid sign field.
 
-**.fsc-ds-ssc**: This style sheet is applicable in case of a Valid sign field but data has changed.
+**.fsc-ds-ssc**: This style sheet is applicable if there is a Valid sign field but data has changed.
 
-**.fsc-ds-ssi**: This style sheet is applicable in case of a invalid sign field.
+**.fsc-ds-ssi**: This style sheet is applicable if there is a invalid sign field.
 
 **.fsc-ds-popup-bg**: This style sheet property is not being used.
 

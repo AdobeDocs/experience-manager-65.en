@@ -111,7 +111,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
   <tr>
    <td><code>title</code></td>
    <td>Specifies the title of the document. It is available only for client applications.</td>
-   <td>It returns title of HTML document in form, rather than the form metadata title as in the case of PDF Forms.</td>
+   <td>It returns title of HTML document in form, rather than the form metadata title as if there are PDF Forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>

@@ -228,7 +228,7 @@ If you use this option, the set of assets are added to an existing translation p
 
 ## Create temporary language copies {#creating-temporary-language-copies}
 
-When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). [!DNL Adobe Experience Manager Assets] stores the newly-translated asset(s) at a temporary location and updates the existing language copy after you explicitly approve the assets. If you reject the assets, the language copy remains unchanged.
+When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated assets. [!DNL Adobe Experience Manager Assets] stores the newly-translated assets at a temporary location and updates the existing language copy after you explicitly approve the assets. If you reject the assets, the language copy remains unchanged.
 
 1. Click the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click **[!UICONTROL Reveal in Assets]** to open the folder in [!DNL Experience Manager Assets].
 

@@ -82,7 +82,7 @@ When writing custom workflow processes, there are some things that should be kep
 
 ### Locations {#locations}
 
-Definitions of workflow models, launchers, scripts and notifications are held in the repository according to type; i.e. out-of-the-box, custom, among others.
+Definitions of workflow models, launchers, scripts and notifications are held in the repository according to type; that is, out-of-the-box, custom, among others.
 
 >[!NOTE]
 >

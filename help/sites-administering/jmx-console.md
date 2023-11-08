@@ -591,7 +591,7 @@ Read-only.
 
 * Returned value: none
 
-**becomeClusterMaster** Sets this repository node as the master node of the cluster. If not already master, this command stops the current master instance's listener and starts a master listener on the current node. This node is then set as the master node and restarts, causing all other nodes in the cluster (i.e. those that are controlled by the master) to connect to this instance.
+**becomeClusterMaster** Sets this repository node as the master node of the cluster. If not already master, this command stops the current master instance's listener and starts a master listener on the current node. This node is then set as the master node and restarts, causing all other nodes in the cluster (that is, those that are controlled by the master) to connect to this instance.
 
 * Arguments: none
 * Returned value: none

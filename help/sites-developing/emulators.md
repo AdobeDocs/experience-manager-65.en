@@ -112,7 +112,7 @@ When the page component relies on the mobile page component ( `/libs/wcm/mobile/
 
   `deviceGroup.drawHead(pageContext);`
 
-* The method `DeviceGroup.drawHead(pageContext)` includes the emulator's init component, i.e. calls the `init.html.jsp` of the emulator component. If the emulator component does not have its own `init.html.jsp` and relies on the mobile base emulator ( `wcm/mobile/components/emulators/base)`, the init script of the mobile base emulator is called ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* The method `DeviceGroup.drawHead(pageContext)` includes the emulator's init component, that is, calls the `init.html.jsp` of the emulator component. If the emulator component does not have its own `init.html.jsp` and relies on the mobile base emulator ( `wcm/mobile/components/emulators/base)`, the init script of the mobile base emulator is called ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
 * The init script of the mobile base emulator defines through JavaScript:
 

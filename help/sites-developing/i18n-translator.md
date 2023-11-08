@@ -294,7 +294,7 @@ Use the following procedure to add or remove languages.
 
    >[!NOTE]
    >
-   >The translator will only save translations for languages that are actually [present in the dictionary](#creating-a-dictionary) (i.e. underneath the dictionary path such as `/apps/myProject/i18n`).
+   >The translator will only save translations for languages that are actually [present in the dictionary](#creating-a-dictionary) (that is, underneath the dictionary path such as `/apps/myProject/i18n`).
    >
    >Make sure that these correspond to the languages shown in the grid.
 

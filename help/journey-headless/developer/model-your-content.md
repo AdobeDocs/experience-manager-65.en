@@ -200,7 +200,7 @@ Two data types provide references to content outside a specific fragment:
 
 ### Creating Content Fragment Models {#creating-content-fragment-models}
 
-At the start, you must enable Content Fragment Models for your site. This enablement is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
+At the start, you must enable Content Fragment Models for your site. This enablement is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](assets/cfm-configuration.png)
 
@@ -208,7 +208,7 @@ At the start, you must enable Content Fragment Models for your site. This enable
 >
 >See Additional Resources - Content Fragments in the Configuration Browser
 
-Then the Content Fragments Models can be created and the structure defined. This can be done under Tools -> Assets -> Content Fragment Models. For example:
+Then the Content Fragments Models can be created and the structure defined. This can be done under Tools > Assets > Content Fragment Models. For example:
 
 ![Content Fragment Model](assets/cfm-model.png)
 
@@ -222,7 +222,7 @@ Content Fragments are always based on a Content Fragment Model. The model provid
 
 ### Selecting the appropriate model {#select-model}
 
-The first step to actually creating your content is to create a Content Fragment. This is done using Create -> Content Fragment in the required folder under Assets -> Files. The wizard guides you through the steps.
+The first step to actually creating your content is to create a Content Fragment. This is done using Create > Content Fragment in the required folder under Assets > Files. The wizard guides you through the steps.
 
 A Content Fragment is based on a specific Content Fragment Model, that you select as the first step of the creation process.
 

@@ -47,7 +47,7 @@ The following points are important to consider before you start:
 
 * Creating a template requires collaboration. For this reason the [Role](#roles) is indicated for each task.
 
-* Depending on how your instance is configured, it might be useful to be aware that AEM now provides [two basic types of template](/help/sites-authoring/templates.md#editable-and-static-templates). This does not impact how you actually [use a template to create a page](#using-a-template-to-create-a-page), but it does impact the type of template you can create and how a page relates to its template.
+* Depending on how your instance is configured, AEM now provides [two basic types of template](/help/sites-authoring/templates.md#editable-and-static-templates). This does not impact how you actually [use a template to create a page](#using-a-template-to-create-a-page), but it does impact the type of template you can create and how a page relates to its template.
 
 ### Roles {#roles}
 
@@ -91,7 +91,7 @@ AEM now offers two basic types of templates:
 
     * Can be [created](#creatinganewtemplate) and [edited](#editingatemplate) by template authors using the **Template** console and editor. The **Template** console is accessible in the **General** section of the **Tools** console.
 
-    * After the new page is created a dynamic connection is maintained between the page and the template. This means that changes to the template structure and/or locked content will be reflected on any pages created with that template. Changes to the unlocked (i.e. initial) content will not be reflected.
+    * After the new page is created a dynamic connection is maintained between the page and the template. This means that changes to the template structure and/or locked content will be reflected on any pages created with that template. Changes to the unlocked (that is, initial) content will not be reflected.
     * Use content policies, which you can define these from the template editor, to persist the design properties. Design mode within the page editor is no longer used for editable templates.
 
 * Static Templates
@@ -308,7 +308,7 @@ The following aspects of a template can be edited:
 
   >[!NOTE]
   >
-  >In **Initial Content** mode and on the resultant pages, any unlocked components that have an accessible parent (i.e. components within a layout container) can be deleted.
+  >In **Initial Content** mode and on the resultant pages, any unlocked components that have an accessible parent (that is, components within a layout container) can be deleted.
 
 * [Layout](#editingatemplatelayout)
 

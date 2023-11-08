@@ -418,7 +418,7 @@ The [Resume action is also available from the Live Copy Overview](/help/sites-ad
 
 ### Changing Inheritance Depth (Shallow/Deep) {#changing-inheritance-depth-shallow-deep}
 
-On an existing live copy you can change the depth for a page; i.e. whether child pages are included.
+On an existing live copy you can change the depth for a page; that is, whether child pages are included.
 
 * Switching to a shallow live copy:
 

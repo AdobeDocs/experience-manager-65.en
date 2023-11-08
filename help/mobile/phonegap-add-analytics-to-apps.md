@@ -39,7 +39,7 @@ AEM Mobile requires an Adobe Analytics account to collect and report tracking da
 
 After the Analytics account is set up, create a Content Sync configuration to pull in the content into your Mobile Application.
 
-For additional details, see Configuring the Content Sync Content. The configuration must instruct Content Sync to put the ADBMobileConfig into the /www directory. For example, in the Geometrixx Outdoors App, the Content Sync configuration is at: */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. There is a configuration for development as well; however, it is identical to the non-development configuration in the case of Geometrixx Outdoors.
+For additional details, see Configuring the Content Sync Content. The configuration must instruct Content Sync to put the ADBMobileConfig into the /www directory. For example, in the Geometrixx Outdoors App, the Content Sync configuration is at: */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. There is a configuration for development as well. However, it is identical to the non-development configuration if there is Geometrixx Outdoors.
 
 For further details on how to download the ADBMobileConfig from your Mobile Application AEM Apps dashboard, see Analytics - Mobile Services - Adobe Mobile Services SDK Config File.
 

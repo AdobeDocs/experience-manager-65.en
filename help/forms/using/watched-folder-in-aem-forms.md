@@ -73,7 +73,7 @@ You can configure the following properties for a Watched Folder.
 
 >[!NOTE]
 >
->If the server hosting the Watched Folder does not have any of the specified run-mode, then, the Watched Folder always activates regardless of the run-modes on the server.
+>If the server hosting the Watched Folder does not have any of the specified run-mode, then the Watched Folder always activates regardless of the run-modes on the server.
 
 * **outputFilePattern (String)**: Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern. [File and folder pattern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) can also specify a directory structure for the output files. It is a mandatory property.
 
@@ -153,7 +153,7 @@ For more information about file patterns, see [About file patterns](../../forms/
 * **throttleOn (Boolean)**: When this option is selected, it limits the number of Watched Folder jobs that AEM Forms processes at any given time. The maximum number of jobs is determined by the Batch Size value. The defaut value is true. (See [About throttling](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Boolean)**: When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
-* **preserveOnFailure (Boolean)**: Preserve input files in case of failure to execute the operation on a service. The default value is true.
+* **preserveOnFailure (Boolean)**: Preserve input files if there is failure to run the operation on a service. The default value is true.
 * **inputFilePattern (String)**: Specifies the pattern of the input files for a Watched Folder. Creates a allowlist of the files.
 * **asynch (Boolean)**: Identifies the invocation type as asynchronous or synchronous. The default value is true (asynchronous). The file processing is a resource consuming task, keep the value of the asynch flag to true to prevent choking the main thread of the scan job. In a clustered environment, it is critical to keep the flag true to enable load-balancing for the files being processed across the available servers. If the flag is false, the scan job attempts to perform processing for each top-level file/folder sequentially within its own thread. Do not set the flag to false without a specific reason, such as, workflow-based processing on a single-server setup.
 

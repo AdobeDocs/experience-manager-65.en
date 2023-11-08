@@ -19,7 +19,7 @@ Consider the following points regarding backup and recovery:
 
 ## Global Document Storage directory {#global-document-storage-directory}
 
-The GDS is a directory used to store long-lived files that are used within a process. The lifetime of long-lived files is intended to span one or more launches of an AEM forms system, and can span days and even years. These long-lived files can include PDFs, policies, and form templates. Long-lived files are a critical part of the overall state of many AEM forms deployments. If some or all long-lived documents are lost or corrupted, the forms server may become unstable.
+The GDS is a directory used to store long-lived files that are used within a process. The lifetime of long-lived files is intended to span one or more launches of an AEM forms system, and can span days and even years. These long-lived files can include PDFs, policies, and form templates. Long-lived files are a critical part of the overall state of many AEM forms deployments. If some or all long-lived documents are lost or corrupted, the Forms Server may become unstable.
 
 Input documents for asynchronous job invocation are also stored in the GDS and must be available to process requests. Therefore, it is important that you consider the reliability of the file system that hosts the GDS and employ a redundant array of independent disks (RAID) or other technology as appropriate for your quality and level of service requirements.
 

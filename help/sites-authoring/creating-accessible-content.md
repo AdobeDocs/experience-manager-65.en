@@ -317,7 +317,7 @@ You can make sure that your web pages are given the appropriate structure by usi
   * a `<th>` element for each row and column heading
   * a `<td>` element for every data cell
 
-  Also, accessible tables make use of the following elements and attributes:
+  Also, accessible tables use the following elements and attributes:
 
   * The `<caption>` element is used to provide a visible caption for the table. Captions by default appear centered above the table, but can be positioned appropriately using CSS. The caption is programmatically associated with the table, thus it is a useful method for providing an introduction to content.
   * The `<summary>` element assists non-sighted users to more easily understand the information presented within a table, by providing a synopsis of what a sighted user can see. This is useful where complex or unconventional table layouts are used (this attribute is not displayed in the browser, it is only read out to assistive technologies).
@@ -1138,7 +1138,7 @@ Follow the guidelines under [How to Meet Success Criteria 3.2.4](https://www.w3.
  
 #### Purpose - Error Identification (3.3.1) {#purpose-error-identification}
 
-The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. In the case of an unsuccessful form submission, redisplaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, do not know that there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. This includes the following.
+The intent of this Success Criterion is to ensure that users are aware that an error has occurred and can determine what is wrong. The error message should be as specific as possible. If there is an unsuccessful form submission, redisplaying the form and indicating the fields in error is insufficient for some users to perceive that an error has occurred. Screen reader users, for example, do not know that there was an error until they encounter one of the indicators. They may abandon the form altogether before encountering the error indicator, thinking that the page simply is not functional. Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. This includes the following.
 
 Information that is required by the web page but omitted by the user, or information that is provided by the user but that falls outside the required data format or allowed values.
 For example:
@@ -1217,7 +1217,7 @@ In simple forms with limited functionality, appropriately labeling a `Submit` bu
 
 The intent of this Success Criterion is to ensure that users receive appropriate suggestions for correction of an input error if it is possible. The WCAG definition of [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) says that it is "information provided by the user that is not accepted" by the system. Some examples of information that is not accepted include information that is required but omitted by the user and information that is provided by the user but that falls outside the required data format or allowed values.
 
-Success Criterion 3.3.1 provides for notification of errors. However, persons with cognitive limitations may find it difficult to understand how to correct the errors. People with visual disabilities may not be able to figure out exactly how to correct the error. In the case of an unsuccessful form submission, users may abandon the form because they may be unsure of how to correct the error even though they are aware that it has occurred.
+Success Criterion 3.3.1 provides for notification of errors. However, persons with cognitive limitations may find it difficult to understand how to correct the errors. People with visual disabilities may not be able to figure out exactly how to correct the error. If there is an unsuccessful form submission, users may abandon the form because they may be unsure of how to correct the error even though they are aware that it has occurred.
 
 The content author may provide the description of the error, or the user agent may provide the description of the error based on technology-specific, programmatically determined information.
 

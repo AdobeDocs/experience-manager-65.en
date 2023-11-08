@@ -298,7 +298,7 @@ Lists let you organize your leads into groups. With lists, you can target your m
 
 ![screen_shot_2012-02-21at125021pm](assets/screen_shot_2012-02-21at125021pm.png)
 
-If you click **Lists**, you also can view if the list is a member of another list and see a description.
+If you click **Lists**, you can also view if the list is a member of another list and see a description.
 
 ![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 

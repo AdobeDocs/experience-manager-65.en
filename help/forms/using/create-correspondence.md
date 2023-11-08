@@ -1,14 +1,9 @@
 ---
 title: Create Correspondence
-seo-title: Create Correspondence
 description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
-
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
 ---
@@ -256,11 +251,11 @@ You can make layout and content related changes to ensure the letter looks the w
    >
    >If you are using Mozilla Firefox and HTML rendition type, to preview the letter as flattened PDF, ensure that you use the native browser plug-in and not the Acrobat plugin. To select the native browser plug-in, go to Mozilla Firefox's settings and for content type PDF, select Preview in Firefox.
 
-1. If you find the flattened PDF preview to be satisfactory, tap **Submit** to submit the letter. Or to make changes to the letter, tap **Exit Preview** to go back to the Create Correspondence UI preview of the letter to make changes in the letter. When you tap Submit, if the Manage Letter Instance configuration is enabled on the Publish instance, the submit letter instance is generated.
+1. If you find the flattened PDF preview to be satisfactory, tap **Submit** to submit the letter. Or, to change the letter, tap **Exit Preview** to go back to the Create Correspondence UI preview of the letter to make changes in the letter. When you tap Submit, if the Manage Letter Instance configuration is enabled on the Publish instance, the submit letter instance is generated.
 
    For more information, see Draft Instance under Saving drafts and submitting letter instances.
 
-   You can also save the letter as a draft to make changes to the letter later.
+   You can also save the letter as a draft to change the letter later.
 
    After making the required changes, you can either submit the letter from the HTML5 preview or tap Preview again to review the flattened PDF output.
 

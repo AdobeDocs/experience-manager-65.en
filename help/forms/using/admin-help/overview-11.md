@@ -22,7 +22,7 @@ Health Monitor provides critical information about the AEM forms system, such as
 
 The Health Monitor page in administration console has three tabs:
 
-* The System tab displays resource monitoring charts and information about the forms server (or node in a clustered environment). (See [View system information](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
+* The System tab displays resource monitoring charts and information about the Forms Server (or node in a clustered environment). (See [View system information](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
 * The Work Manager tab displays data that is related to Work Manager, such as the number of work items in the Work Manager queue. You can filter the information by using various criteria or manage individual work items by using the operation tools. (See [View statistics related to Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 * The Job Purge Scheduler tab enables you to purge obsolete records from the Job Manager database. (See [Purge records from the Job Manager database](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
 

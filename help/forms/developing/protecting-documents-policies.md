@@ -317,7 +317,7 @@ For code examples using the Document Security service, see the following Quick S
 
 ## Modifying Policies {#modifying-policies}
 
-You can modify an existing policy using the Document Security Java API or web service API. To make changes to an existing policy, you retrieve it, modify it, and then update the policy on the server. For example, assume that you retrieve an existing policy and extend its validity period. Before the change takes effect, you must update the policy.
+You can modify an existing policy using the Document Security Java API or web service API. To change an existing policy, you retrieve it, modify it, and then update the policy on the server. For example, assume that you retrieve an existing policy and extend its validity period. Before the change takes effect, you must update the policy.
 
 You can modify a policy when business requirements change and the policy no longer reflects these requirements. Instead of creating a policy, you can simply update an existing policy.
 
@@ -1471,7 +1471,7 @@ For code examples using the Document Security service, see the following Quick S
 
 ## Modifying Watermarks {#modifying-watermarks}
 
-You can modify an existing watermark using the Document Security Java API or web service API. To make changes to an existing watermark, you retrieve it, modify its attributes, and then update it on the server. For example, assume that you retrieve an watermark and modify its opacity attribute. Before the change takes effect, you must update the watermark.
+You can modify an existing watermark using the Document Security Java API or web service API. To change an existing watermark, you retrieve it, modify its attributes, and then update it on the server. For example, assume that you retrieve an watermark and modify its opacity attribute. Before the change takes effect, you must update the watermark.
 
 When you modify a watermark, the change impacts future documents that have the watermark applied to them. That is, existing PDF documents that contain the watermark are not affected.
 

@@ -27,6 +27,6 @@ Use simple variable types (for example, string or int) and avoid using complex v
 
 ## Product administration tips {#product-administration-tips}
 
-Use global document storage (GDS) effectively. The GDS directory on the forms server is used to store, among other things, files that are passed to services that are part of AEM forms in processes. To improve performance, smaller documents are instead stored in-memory and persisted in the database.
+Use global document storage (GDS) effectively. The GDS directory on the Forms Server is used to store, among other things, files that are passed to services that are part of AEM forms in processes. To improve performance, smaller documents are instead stored in-memory and persisted in the database.
 
 administration console exposes the Default Document Max Inline Size property for configuring the maximum size of documents that are stored in-memory and persisted in the database. (See [Configure general AEM forms settings](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) If you set this property to a low value, most documents are persisted in the GDS directory instead of in the database. The advantage is that you can more easily delete the files when they are no longer needed when they are stored in the GDS directory.

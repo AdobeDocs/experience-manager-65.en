@@ -83,7 +83,7 @@ public Boolean assign(User user);
 ### Create a just-in-time-enabled domain {#create-a-just-in-time-enabled-domain}
 
 1. Write a DSC implementing the APIs in the "APIs for just-in-time provisioning" section.
-1. Deploy the DSC to the forms server.
+1. Deploy the DSC to the Forms Server.
 1. Create a just-in-time-enabled domain:
 
     * In Administration Console, click Settings &gt; User Management &gt; Domain Management &gt; New Enterprise Domain.

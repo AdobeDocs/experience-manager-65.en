@@ -38,7 +38,7 @@ You receive these notifications in your own Inbox where you can view them and ta
 
 ## Inbox in the Header {#inbox-in-the-header}
 
-From any of the consoles the current number of items in your inbox is shown in the header. The indicator can also be opened to provide either quick access to the page(s) requiring action(s) or access to the inbox:
+From any of the consoles the current number of items in your inbox is shown in the header. The indicator can also be opened to provide either quick access to the pages that require actions or access to the inbox:
 
 ![wf-80](assets/wf-80.png)
 

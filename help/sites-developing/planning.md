@@ -35,7 +35,7 @@ Although future numbers cannot be predicted with 100% accuracy, observing your e
 
 It is the responsibility of the Project Manager to decide on and initiate action(s) dependent upon the results.
 
-**Become Involved** - Although it is the responsibility of the Project Manager to ensure that all parties are fully involved at any meetings (status, workshops, etc) you should also try to become involved as early as possible in the project cycle, including the information collection and requirement analysis processes.
+**Become Involved** - Although it is the responsibility of the Project Manager to ensure that all parties are fully involved at any meetings (status, workshops, and so on) you should also try to become involved as early as possible in the project cycle, including the information collection and requirement analysis processes.
 
 **Involve the Customer** - On a similar theme, try to involve the customer (where possible) when defining your test cases and plan.
 

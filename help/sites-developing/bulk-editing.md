@@ -82,7 +82,7 @@ Fields are enabled on the page component (*not* on the template):
    >
    >The recommended method for configuration and other changes is:
    >
-   >    1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+   >    1. Recreate the required item (that is, as it exists in `/libs`) under `/apps`
    >    1. Make any changes within `/apps`
 
 1. Select **Save All** to persist your updates.

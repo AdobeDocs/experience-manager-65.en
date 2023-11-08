@@ -87,8 +87,8 @@ With the improvements in features and subsequent updates in the versions of AEM 
     
             }
         ],
-        "originCode": <Origin http status code>, (optional - in case of SERVER_SIDE_VALIDATION)
-        "originMessage" : "<unstructured error message returned by service>" (optional - in case of SERVER_SIDE_VALIDATION)
+        "originCode": <Origin http status code>, (optional - if there is SERVER_SIDE_VALIDATION)
+        "originMessage" : "<unstructured error message returned by service>" (optional - if there is SERVER_SIDE_VALIDATION)
     }
 ```
 

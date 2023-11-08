@@ -69,7 +69,7 @@ In publish mode (such as when the app is exported using Content Sync), all pages
 
 There is only one HTML page in a SPA (a page that contains the `<html>` element). This page is known as the "layout template". In Angular terminology, it is "...a template that is common for all views in our application." Consider this page as the 'top-level app page'. By convention the top-level app page is the `cq:Page` node of your application that is closest to the root (and is not a redirect).
 
-Since the actual URI of your app does not change in publish mode, references to external assets from this page must use relative paths. Therefore, a special image component is provided that takes this top level page into account when rendering images for exporting.
+Since the actual URI of your app does not change in publish mode, references to external assets from this page must use relative paths. Therefore, a special image component is provided that takes this top-level page into account when rendering images for exporting.
 
 As an SPA, this layout template page simply generates a div element with an ng-view directive.
 
@@ -122,7 +122,7 @@ If necessary, you can override this script to handle more complex paths, includi
 
 ### angular-app-controllers.js.jsp {#angular-app-controllers-js-jsp}
 
-In Angular, Controllers wire up variables in the $scope, exposing them to the view. The angular-app-controllers.js.jsp script follows the pattern illustrated by angular-app-module.js.jsp in that it iterates through each descendant page (including itself) and outputs the controller fragment that each page defines (via controller.js.jsp). The module it defines is called `cqAppControllers` and must be listed as a dependency of the top level app module so that the page controllers are made available.
+In Angular, Controllers wire up variables in the $scope, exposing them to the view. The angular-app-controllers.js.jsp script follows the pattern illustrated by angular-app-module.js.jsp in that it iterates through each descendant page (including itself) and outputs the controller fragment that each page defines (via controller.js.jsp). The module it defines is called `cqAppControllers` and must be listed as a dependency of the top-level app module so that the page controllers are made available.
 
 ### controller.js.jsp {#controller-js-jsp}
 
@@ -154,11 +154,11 @@ This script simply outputs the Angular dependencies of the top-level Angular app
 
 ### header.jsp {#header-jsp}
 
-A script to place static content at the top of the app. This content is included by the top level page, outside the scope of ng-view.
+A script to place static content at the top of the app. This content is included by the top-level page, outside the scope of ng-view.
 
 ### footer.jsp {#footer-jsp}
 
-A script to place static content at the bottom of the app. This content is included by the top level page, outside the scope of ng-view.
+A script to place static content at the bottom of the app. This content is included by the top-level page, outside the scope of ng-view.
 
 ### js_clientlibs.jsp {#js-clientlibs-jsp}
 
@@ -185,7 +185,7 @@ Note the GUID '24BA22ED-7D06-4330-B7EB-F6FC73251CA3' in the path.
 
 As a PhoneGap developer, the content that you are concerned with is located below the www directory. To access the app assets, use relative paths.
 
-To compound the issue, your PhoneGap application uses the single page app (SPA) pattern so that the base URI (excluding the hash) never changes. Therefore, every asset, template, or script that you reference **must be relative to your top-level page. **The top level page initializes the Angular routing and controllers by virtue of `<name>.angular-app-module.js` and `<name>.angular-app-controllers.js`. This page should be the closest page to the root of the repository that *does not *extend a sling:redirect.
+To compound the issue, your PhoneGap application uses the single page app (SPA) pattern so that the base URI (excluding the hash) never changes. Therefore, every asset, template, or script that you reference **must be relative to your top-level page. **The top-level page initializes the Angular routing and controllers by virtue of `<name>.angular-app-module.js` and `<name>.angular-app-controllers.js`. This page should be the closest page to the root of the repository that *does not *extend a sling:redirect.
 
 Several helper methods are available for dealing with relative paths:
 

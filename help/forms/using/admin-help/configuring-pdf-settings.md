@@ -220,7 +220,7 @@ These options configure color, grayscale, and monochrome images:
 
 **Subsampling To:** Selects a pixel in the center of the sample area and replaces the entire area with that pixel at the specified resolution. Subsampling significantly reduces the conversion time compared to downsampling, but it results in images that are less smooth and continuous.
 
-The resolution setting for color and grayscale should be 1.5 to 2 times the line screen ruling that the file will be printed at. (Providing you do not go below this recommended resolution setting, images that contain no straight lines, or geometric or repeating patterns, are not affected by a lower resolution.) The resolution for monochrome images should be the same as the output device. However, be aware that saving a monochrome image at a resolution higher than 1500 dpi increases the file size without noticeably improving image quality.
+The resolution setting for color and grayscale should be 1.5 to 2 times the line screen ruling that the file will be printed at. (Providing you do not go below this recommended resolution setting, images that contain no straight lines, or geometric or repeating patterns, are not affected by a lower resolution.) The resolution for monochrome images should be the same as the output device. However, saving a monochrome image at a resolution higher than 1500 dpi increases the file size without noticeably improving image quality.
 
 Also consider whether users need to magnify a page. For example, if you are creating a PDF document of a map, consider using a higher image resolution so that users can zoom in on the map.
 

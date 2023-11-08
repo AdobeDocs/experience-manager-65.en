@@ -48,7 +48,7 @@ The Environment Options tab lets you set various processing options for the invo
 * *Job Log Level*: Specifies the log level for the processing logs.
 * *Validate Only*: Checks the validity of the input DDX.
 
-* *Fail On Error*: Specifies whether the call to Assembler service should fail in case of an error. The default value is False.
+* *Fail On Error*: Specifies whether the call to Assembler service should fail if there is an error. The default value is False.
 
 #### Output documents {#output-documents}
 

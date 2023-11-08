@@ -377,7 +377,7 @@ When an asset is added into Experience Manager Assets, it is automatically uploa
 
 1. Select the Experience Manager icon and navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
 1. Under the Dynamic Media heading, under Available Configurations, select **[!UICONTROL dms7 (Dynamic Media]**).
-1. Select the **[!UICONTROL Advanced]** tab, select the **[!UICONTROL Enable Automatic Upload]** check box, then select **[!UICONTROL OK]**. You now must configure the DAM Asset workflow to include uploading to Dynamic Media Classic.
+1. Select the **[!UICONTROL Advanced]** tab, select the **[!UICONTROL Enable Automatic Upload]** check box, then select **[!UICONTROL OK]**. You must configure the DAM Asset workflow to include uploading to Dynamic Media Classic.
 
    >[!NOTE]
    >

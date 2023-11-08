@@ -145,7 +145,7 @@ To make a project inactive follow these steps.
 
 Follow these steps to delete a project.
 
-1. Navigate to the top level of the **Projects** console.
+1. Navigate to the top-level of the **Projects** console.
 1. Selecting your project in the console.
 1. Tap or click **Delete** in the toolbar.
 1. AEM can remove/modify associated project data upon project deletion. Select which options you need in the **Delete Project** dialog.

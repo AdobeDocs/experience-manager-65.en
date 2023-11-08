@@ -588,7 +588,7 @@ For more info, see the table in the [Default Configuration since AEM 6.3](#defau
 
 The exclusion of the 'administrators' group can be altered or expanded in the system console in the configuration section of **Apache Jackrabbit Oak CUG Exclude List**.
 
-Alternatively, it is possible to provide and deploy a custom implementation of the CugExclude interface to adjust the set of excluded principals in case of special needs. See the documentation on [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) for details and an example implementation.
+Alternatively, it is possible to provide and deploy a custom implementation of the CugExclude interface to adjust the set of excluded principals if there are special needs. See the documentation on [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) for details and an example implementation.
 
 ### Authentication: Setup and Configuration {#authentication-setup-and-configuration}
 
@@ -704,7 +704,7 @@ New installations of AEM will by default use the new implementations both for th
 
 ## Disabling CUG Authorization and Authentication Requirement {#disabling-cug-authorization-and-authentication-requirement}
 
-The new implementation may be disabled altogether in case a given installation does not make use of CUGs or uses different means for authentication and authorization.
+The new implementation may be disabled altogether in case a given installation does not use CUGs or uses different means for authentication and authorization.
 
 ### Disable CUG Authorization {#disable-cug-authorization}
 
