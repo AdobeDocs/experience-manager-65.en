@@ -15,7 +15,7 @@ exl-id: d8bab1c4-b830-4491-9486-d7e7f4dc2c99
 
 You can set a message to be displayed on the Welcome page in the Workspace user interface.
 
-If required, you can use the HTML tags supported by Adobe Flash® Player to format the appearance of the text:
+If necessary, you can use the HTML tags supported by Adobe Flash® Player to format the appearance of the text:
 
 * &lt;a&gt; Anchor tag
 * &lt;b&gt; Bold tag

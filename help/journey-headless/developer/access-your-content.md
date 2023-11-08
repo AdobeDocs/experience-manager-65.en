@@ -239,7 +239,7 @@ Before starting with queries on your content you need to:
   * Use Tools > Assets > GraphQL
   * [Enabling your GraphQL Endpoint](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
   
-* Access GraphiQL (if required)
+* Access GraphiQL (if necessary)
   * [AEM GraphiQL interface](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Sample Structure {#sample-structure}

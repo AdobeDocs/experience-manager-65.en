@@ -55,7 +55,7 @@ The create **CSV Report** option is available when browsing the **Sites** consol
 
 To create a CSV export:
 
-1. Open the **Sites** console, navigate to the required location if required.
+1. Open the **Sites** console, navigate to the required location if necessary.
 1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
 
    ![etc-03](assets/etc-03.png)

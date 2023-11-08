@@ -46,7 +46,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Restructuring guidance</strong></td>
-   <td><p>If any new or modified ContextHub Segments are intended to be edited in source control rather than being edited in AEM, they must be migrated to the new location:</p>
+   <td><p>If any new or modified ContextHub Segments are edited in source control rather than being edited in AEM, they must be migrated to the new location:</p>
     <ol>
      <li>Copy any new or modified ContextHub Segments from the previous location to the appropriate new location (/<code>apps</code>, <code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>)</li>
      <li>Update references to ContextHub Segments in the previous location to the migrated ContextHub Segments in the new locations (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>

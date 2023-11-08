@@ -196,4 +196,4 @@ Tap Resize again to go back to the Create Rule\Edit Rule dialog.
 1. To insert a variable in the rule, drag-and-drop the variable into a placeholder for an option in the rule.
 1. After you have constructed a valid rule, tap **[!UICONTROL Done]**.
 
-   Proceed to making further changes, if required, in the condition and saving it.
+   Proceed to making further changes, if necessary, in the condition and saving it.

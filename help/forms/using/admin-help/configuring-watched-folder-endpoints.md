@@ -48,7 +48,7 @@ For a watched folder endpoint, users can invoke by copying or dragging input fil
 
 For watched folder endpoints, if the job requires only one input file, the user can copy that file to the root of the watched folder.
 
-If the job contains more than one input file, the user must create a folder outside the watched folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if required by the process). After the job folder has been constructed, the user copies it into the watched folder's input folder.
+If the job contains more than one input file, the user must create a folder outside the watched folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if necessary by the process). After the job folder has been constructed, the user copies it into the watched folder's input folder.
 
 >[!NOTE]
 >

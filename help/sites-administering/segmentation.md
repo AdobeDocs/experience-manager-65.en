@@ -131,7 +131,7 @@ To define your new segment:
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if required and then tap or click **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if necessary and then tap or click **Create**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 

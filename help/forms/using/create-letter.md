@@ -469,5 +469,5 @@ You can use an existing letter template to quickly create a letter template with
 1. In the Letters page, select one or more letters. The UI displays the Copy icon. 
 1. Tap Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets). 
 1. Tap Paste. The Paste dialog appears. If you are copying and pasting the letters at the same place, the system automatically assigns names and titles to the new copies of letters but you can edit the titles and names of the letters. 
-1. If required, edit the Title and Name with which you want to save the copy of the letter.
+1. If necessary, edit the Title and Name with which you want to save the copy of the letter.
 1. Tap Paste. The copy of the letter is created. Now you can make the required changes in your newly created letter.

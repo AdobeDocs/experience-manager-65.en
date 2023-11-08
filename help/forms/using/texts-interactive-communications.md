@@ -242,7 +242,7 @@ You can directly copy and paste the text from the Microsoft® Word document to a
 
 ## Insert special characters in text {#special}
 
-If required, insert special characters in the document fragment. For example, you can use the Special Characters palette to insert:
+If necessary, insert special characters in the document fragment. For example, you can use the Special Characters palette to insert:
 
 * Currency symbols such as €,￥, and £
 * Mathematical symbols such as ∑, √, ∂, and ^

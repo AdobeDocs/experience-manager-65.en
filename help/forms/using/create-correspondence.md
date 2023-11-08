@@ -115,7 +115,7 @@ In the content tab, manage the content such as document fragments and content va
    >
    >For more information on setting up tab spacing for your text modules and letters, see [More information on using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
 
-1. If required, insert special characters in the correspondence. For example, you can use the Special Characters palette to insert:
+1. If necessary, insert special characters in the correspondence. For example, you can use the Special Characters palette to insert:
 
     * Currency symbols such as &euro;,￥, and £
     * Mathematical symbols such as ∑, √, ∂, and ^

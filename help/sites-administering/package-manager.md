@@ -3,11 +3,9 @@ title: Package Manager
 description: Learn the basics of AEM package management with Package Manager.
 feature: Administering
 role: Admin
-uuid: cba76a5f-5d75-4d63-a0f4-44c13fa1baf2
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 ---
@@ -217,7 +215,7 @@ There are many actions that can be taken on a package.
 
    >[!TIP]
    >
-   >If your instance has a lot of packages, there might be a folder structure in place. In such cases, it is easier to navigate to the required target folder before creating the new package.
+   >If your instance has many packages, there might be a folder structure in place. In such cases, it is easier to navigate to the required target folder before creating the new package.
 
 1. In the **New Package** dialog, enter the following fields:
 

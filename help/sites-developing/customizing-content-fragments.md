@@ -230,7 +230,7 @@ Content fragments can be integrated with:
 
     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-    this can be extended if required.
+    this can be extended if necessary.
 
   * The respective schema form is integrated with the fragment editor.
 
