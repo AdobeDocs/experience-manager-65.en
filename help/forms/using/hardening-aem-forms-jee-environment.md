@@ -1,13 +1,9 @@
 ---
 title: Hardening Your AEM Forms on JEE Environment
-seo-title: Hardening Your AEM Forms on JEE Environment
 description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
-seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
-uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 ---
@@ -313,8 +309,8 @@ Web Service Definition Language (WSDL) generation should be enabled only for dev
    https://[host name]:[port]/adminui
    ```
 
-1. Click **Settings &gt; Core System Settings &gt; Configurations**.
-1. Deselect **Enable WSDL** and click **OK**.
+1. Select **Settings > Core System Settings > Configurations**.
+1. Deselect **Enable WSDL**, then select **OK**.
 
 ### Application server security {#application-server-security}
 
