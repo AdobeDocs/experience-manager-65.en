@@ -117,3 +117,7 @@ Personalized documents, like, receipts, welcome kits, and statements can easily 
 ![Layout two](do-not-localize/layout-02.png)
 
 Streamlined personalized communication workflow
+
+>[!NOTE]
+>
+>The Adaptive Forms feature, available in AEM 6.5 QuickStart, is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
