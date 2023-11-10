@@ -67,7 +67,7 @@ Building on this base, AEM also offers several application-level features for th
 * **Websites**
 * **Mobile Applications**
 * **Digital Publications**
-* **Forms**
+* **Forms & Documents**
 * **Digital Assets**
 * **Communities**
 * **Online Commerce**
@@ -75,6 +75,10 @@ Building on this base, AEM also offers several application-level features for th
 Finally, customers can use these infrastructure and application-level building blocks to create customized solutions by building applications of their own.
 
 The AEM server is **Java-based** and runs on most operating systems that support that platform. All client interaction with AEM is done through a **web browser**.
+
+>[!NOTE]
+>
+>The Adaptive Forms feature, available in AEM 6.5 QuickStart, is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
 
 ### Typical Deployment Scenarios {#typical-deployment-scenarios}
 
