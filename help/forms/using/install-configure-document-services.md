@@ -361,7 +361,7 @@ If you are using Microsoft Office 2019 on Microsoft Windows Server 2019, you mus
 * While using the PDF Generator service, your Windows machine should not have any active remote connection with the AEM server (Windows RDP session).
 * The default printer must be set to Adobe PDF.
 
-> [!NOTE]
+>[!NOTE]
 >* For Apple macOS and Ubuntu OS, you need not require to configure the aforementioned settings.
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
