@@ -67,7 +67,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
    ![Adobe Acrobat Sign Solutions](/help/forms/using/assets/adobe-sign-solution.png)
 
-1. Copy the URL in your current browser window to a notepad. It is required to configure [!DNL Adobe Sign] application with AEM[!DNL Forms].
+1. Copy the URL in your current browser window to a notepad  and remove the part /`ui#/aem` from the URL. The modified URL is then required to configure [!DNL Adobe Acrobat Sign] application with [!DNL AEM Forms], in a later step. Tap [!UICONTROL Next].
 
 1.  In the **[!UICONTROL Settings]** tab,
       * the **[!UICONTROL OAuth URL]** field contains the default URL which includes the Adobe Sign database shard. The format of the URL is:
