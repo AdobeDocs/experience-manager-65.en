@@ -940,4 +940,4 @@ Your local folder is now synchronized with the repository. The synchronization i
 
 >[!NOTE]
 >
->The VLT Sync feature only supports simple files and folders but detects special vault serialized files (.content.xml, dialog.xml, etc) and ignores them silently. Thus it is possible to use vault sync on a default vlt checkout.
+>The VLT Sync feature only supports simple files and folders but detects special vault serialized files (.content.xml, dialog.xml, and so on) and ignores them silently. Thus it is possible to use vault sync on a default vlt checkout.
