@@ -77,7 +77,7 @@ Perform the following steps to use subform in an XDP template:
     1. Specify a name for the subform in the **Name** field.
     1. Select **No data binding** from the **Data Binding** drop-down list.
 
-   Repeat steps 2 to 5 to add more subforms to the XDP template. Add [text, document fragments, images, and charts](create-interactive-communication.md#step2) to the target areas only while authoring the Interactive Communication.
+   Repeat steps 2&ndash;5 to add more subforms to the XDP template. Add [text, document fragments, images, and charts](create-interactive-communication.md#step2) to the target areas only while authoring the Interactive Communication.
 
 1. Select **File** &gt; **Save As** to save the file on the local file system:
 

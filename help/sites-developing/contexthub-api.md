@@ -1,14 +1,10 @@
 ---
 title: ContextHub JavaScript API Reference
-seo-title: ContextHub JavaScript API Reference
 description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
-seo-description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
-uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 ---
@@ -881,7 +877,7 @@ A copy of tree that is cleaned.
 
 #### getItem() {#getitem}
 
-Retrieves the value from an object for the a key.
+Retrieves the value from an object for the key.
 
 **Parameters**
 

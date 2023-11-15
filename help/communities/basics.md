@@ -1,14 +1,10 @@
 ---
 title: Communities Components Basics
-seo-title: Communities Components Basics
 description: Add Communities features to AEM sites in edit mode and configure components
-seo-description: Add Communities features to AEM sites in edit mode and configure components
-uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 ---
 # Communities Components Basics {#communities-components-basics}
@@ -49,7 +45,7 @@ The selected components are now available in the components browser:
 
 [Client-side libraries](../../help/sites-developing/clientlibs.md) (clientlibs) are required for the proper functioning (JavaScript) and styling (CSS) of a component.
 
-When adding a Communities component to a page, if the result is an error or an unexpected appearance, the first thing to try is adding the required clientlibs for the Communities component. For details, see [Clientlibs for Communities Components](clientlibs.md).
+When adding a Communities component to a page, if the result is an error or an unexpected appearance, the first thing to try is to add the required clientlibs for the Communities component. For details, see [Clientlibs for Communities Components](clientlibs.md).
 
 ### Example: Initially placed reviews without client libraries... {#example-initially-placed-reviews-without-client-libraries}
 

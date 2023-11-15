@@ -1,14 +1,10 @@
 ---
 title: Interacting with Workflows Programmatically
-seo-title: Interacting with Workflows Programmatically
 description: Learn how to interact with workflows programmatically in Adobe Experience Manager.
-seo-description: null
-uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
 ---
 # Interacting with Workflows Programmatically{#interacting-with-workflows-programmatically}
@@ -353,7 +349,7 @@ The following HTTP request methods apply to:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Completes the work item whose URI is sent as the parameter <code>item</code> and advances the according workflow instance to the next node(s), that is defined by the parameter <code>route</code> or <code>backroute</code> if there is going a step back.<br /> If the parameter <code>delegatee</code> is sent, the work item identified by the parameter <code>item</code> is delegated to the specified participant.</td>
+   <td>Completes the work item whose URI is sent as the parameter <code>item</code> and advances the according workflow instance to the next nodes, that is defined by the parameter <code>route</code> or <code>backroute</code> if there is going back a step.<br /> If the parameter <code>delegatee</code> is sent, the work item identified by the parameter <code>item</code> is delegated to the specified participant.</td>
   </tr>
  </tbody>
 </table>

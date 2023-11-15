@@ -9,7 +9,7 @@ exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
 
 The AEM Community has thousands of members around the world. They range from people new to Experience Manager, to seasoned expert developers and administrators. The community is there to help you from questions about AEM capabilities through to helping with development questions. AEM Community holds regular Expert sessions with internal and external expert users. It also helps produce samples, articles, and tutorials for you.
 
-[Join the community today for access to the best content, people, and knowledge.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) It's open to everyone. If you have an interest in AEM, then you're welcome. Drop by today!
+[Join the community today for access to the best content, people, and knowledge.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) It is open to everyone. If you have an interest in AEM, then you're welcome. Drop by today!
 
 ## What events are there for AEM Community members? {#events}
 
