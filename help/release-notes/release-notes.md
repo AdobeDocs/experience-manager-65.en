@@ -36,11 +36,19 @@ Some of the key features and enhancements in this release include the following:
 
 **Key features**
 
-* A 
+* Assets, Dynamic Media - [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
+
+* Assets - From Search results, you can now navigate to the folder location that contains an asset to let you perform various asset management tasks. (ASSETS-23182)  
 
 **Key Enhancements**
 
-* S
+* Sites Polaris Picker in Content Fragments has improved performance. (SITES-14092) 
+
+* Enabled Sites Page Editor/Image Component user to reference assets from the remote Assets Cloud Service. (SITES-13448, SITES-13433) 
+
+* To quickly find a project in List view, where you may have many projects in your system, Adobe now supports server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) 
+
+* AEM 6.5.18.0 supports MongoDB 5.0 to 6.0.
 
 **Deprecated feature**
 
@@ -52,7 +60,6 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Sites]{#sites-6519}
 
-* U
 
 #### Accessibility{#sites-accessibility-6519}
 
