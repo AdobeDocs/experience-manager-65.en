@@ -440,7 +440,7 @@ Supports facet extraction in the same way as the daterange predicate.
 
 Root predicate group. Supports all features of a group and lets you set global query parameters.
 
-The name "root" is never used in a query, it's implicit.
+The name "root" is never used in a query, it is implicit.
 
 #### Properties {#properties-18}
 

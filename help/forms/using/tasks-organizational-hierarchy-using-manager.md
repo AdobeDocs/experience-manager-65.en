@@ -49,7 +49,7 @@ AEM Forms restricts a users' access to only those tasks for which the user has a
 
        /*
        Returns whether a livecycle user has direct reports or not.
-       It's functionally equivalent to -
+       It is functionally equivalent to -
        getDirectReports(principalOid).size()>0
        */
        boolean isManager(String principalOid) {

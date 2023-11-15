@@ -1,14 +1,10 @@
 ---
 title: Working with Tasks
-seo-title: Working with Tasks
 description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
-seo-description: Tasks represent items of work to be done on content and are used in projects to determine the level of completeness of current tasks
-uuid: df4efb3f-8298-4159-acfe-305ba6b46791
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
 ---
 
@@ -44,7 +40,7 @@ Besides tracking progress, you may also want to view more information about the 
 
 #### Task List {#task-list}
 
-Click the ellipsis button at the bottom-right of the tasks tile to display the your inbox filtered on the tasks related to the project. The task details are displayed along with metadata such as due date, assignee, priority, and status.
+Click the ellipsis button at the bottom-right of the tasks tile to display your inbox filtered on the tasks related to the project. The task details are displayed along with metadata such as due date, assignee, priority, and status.
 
 ![Project task inbox](assets/project-tasks.png)
 

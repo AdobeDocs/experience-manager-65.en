@@ -264,7 +264,7 @@ Use the performance guidelines in the following situations:
 * **Upgrading to a new version**: When upgrading to a new version, it is important to understand the performance differences compared to the running environment. For example, upgrading from AEM 6.1 to 6.2, or from AEM 6.0 CRX2 to 6.2 OAK.
 * **Response time is slow**: When the selected Nodestore architecture is not meeting your requirements, it is important to understand the performance differences compared to other topology options. For example, deploying TarMK instead of MongoMK, or using a File Data Sore instead of an Amazon S3 or Microsoft&reg; Azure Data Store.
 * **Adding more authors**: When the recommended TarMK topology is not meeting the performance requirements and upsizing the Author node has reached the maximum capacity available, understand the performance differences. Compare to using MongoMK with three or more Author nodes. For example, deploying MongoMK instead of TarMK.
-* **Adding more content**: When the recommended Data Store architecture is not meeting your requirements, it's important to understand the performance differences compared to other Data Store options. Example: using the Amazon S3 or Microsoft&reg; Azure Data Store instead of a File Data Store.
+* **Adding more content**: When the recommended Data Store architecture is not meeting your requirements, it is important to understand the performance differences compared to other Data Store options. Example: using the Amazon S3 or Microsoft&reg; Azure Data Store instead of a File Data Store.
 
 ## Introduction {#introduction}
 

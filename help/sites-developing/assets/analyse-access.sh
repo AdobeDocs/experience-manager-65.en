@@ -256,7 +256,7 @@ for p in $@
 do
 	if [ ! -f $p ]
 	then
-		#if it's not a valid file it should be a path to be analysed out of the logs
+		#if it is not a valid file it should be a path to be analysed out of the logs
 		echo
 		echo "$p"
 		echo "------"

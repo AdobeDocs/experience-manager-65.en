@@ -68,7 +68,7 @@ Finally, if you are running an instance upgraded from AEM 6.3, make sure the fol
 By default the folder `crx-quickstart/install` is watched for files.
 This folder does not exist, but simply can be created at runtime.
 
-If a bundle, configuration or content package is put into this directory, it is automatically picked up and installed. If it's removed, it gets uninstalled.
+If a bundle, configuration or content package is put into this directory, it is automatically picked up and installed. If it is removed, it gets uninstalled.
 It is another way to put bundles, content packages or configurations to the repository.
 
 This is especially interesting for several use cases:
