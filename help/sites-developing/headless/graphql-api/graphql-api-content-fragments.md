@@ -709,7 +709,28 @@ To enable the caching of persisted queries, define the Dispatcher variable `CACH
 
 >[!NOTE]
 >
->To conform to the [Dispatcher's requirements for documents that can be cached](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), the Dispatcher adds the suffix `.json` to all persisted query URLS, so that the result can be cached. 
+>When Dispatcher caching is enabled for persisted queries by using `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` header is added to the response by the Dispatcher.
+>
+>By default the `ETag` header is configured with the following directive:
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>However, this setting can cause issues when used on the persisted query responses, because it does not account for small changes in the response.
+>
+>To achieve individual `ETag` calculations on *each* response that is unique the `FileETag Digest` setting has to be used in the dispatcher configuration:
+>
+>```xml
+><Directory />    
+>  ...    
+>  FileETag Digest
+></Directory> 
+>```
+
+>[!NOTE]
+>
+>To conform to the [Dispatcher's requirements for documents that can be cached](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), the Dispatcher adds the suffix `.json` to all persisted query URLs, so that the result can be cached. 
 >
 >This suffix is added by a rewrite rule, once persisted query caching is enabled.
 
