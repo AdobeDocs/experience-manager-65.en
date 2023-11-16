@@ -170,7 +170,7 @@ You can replace or change an adaptive form fragment by another fragment by using
 
 ### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
 
-You can use a schema-based form fragment (based on core components) multiple times in an Adaptive Form to save data uniquely for each form fragment fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
+You can use a schema-based form fragment multiple times in an Adaptive Form to save data uniquely for each form fragment fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
 
 ![using multiple fragment in adaptive form](/help/forms/using/assets/using-multiple-fragment-af.gif)
 
