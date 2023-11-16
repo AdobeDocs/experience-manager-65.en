@@ -42,6 +42,11 @@ You can create an adaptive form fragment from scratch or save a panel in an exis
 1. Click to open the **Form Model** tab, and from the **Select From** drop-down menu, select one of the following models for the fragment:
 
     * **None**: Specifies to create the fragment from scratch without using any form model.
+
+      >[!NOTE]
+      >
+      > In Adaptive Forms based on core components, you can use a single form fragment multiple times in a form. It supports both none-based and schema-based form fragments.
+
     * **Form Template**: Specifies to create the fragment using an XDP template uploaded to AEM Forms. Select the appropriate XDP template as the form model for the fragment.
 
    ![Creating an adaptive form using form template as model](assets/form-template-model.png)
@@ -94,6 +99,10 @@ In addition, if you selected an XML schema or XDP form template as the form mode
 
     * **Fragment Model Root**: Appears only in XSD-based adaptive forms. It specifies the root for the fragment model. You can choose **/** or the XSD complex type from the drop-down. Note that you can reuse the fragment in another adaptive form only if you select the complex type as the fragment model root.
       If you choose **/** as the fragment model root, the complete XSD tree from the root is visible in the adaptive form data model tab. For a complex type fragment model root, only the descendants of the selected complex type are visible in the adaptive form data model tab.
+
+         >[!NOTE]
+         >
+         > You can reuse the form fragment in another Adaptive Form only if you select the complex type as the **Fragment Model Root**.
 
     * **XSD Ref**: Appears only in XSD-based adaptive forms. It displays the location of the XML schema.
 
@@ -158,6 +167,17 @@ You can create nested adaptive form fragments, which means you can drag-drop a f
 ### Change fragments {#change-fragments}
 
 You can replace or change an adaptive form fragment by another fragment by using the **Select Fragment asset** property in the Edit component dialog for an adaptive form fragment panel.
+
+### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
+
+You can use a schema-based form fragment (based on core components) multiple times in an Adaptive Form to save data uniquely for each form fragment fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
+
+![using multiple fragment in adaptive form](/help/forms/using/assets/using-multiple-fragment-af.gif)
+
+  >[!NOTE]
+  >
+  > * If you use none-based form fragments multiple times in an Adaptive form, data syncing between the fields of fragments occurs. You can use a single form fragment (based on core components)  multiple times in a form. It supports both none-based and schema-based form fragments without data syncing issues. 
+
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
