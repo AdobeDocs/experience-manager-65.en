@@ -187,6 +187,7 @@ When a page is associated with an Adobe Analytics framework, the number of page 
 
 See [Seeing Page Analytics Data](/help/sites-authoring/page-analytics-using.md) for further details.
 
+<!-- SP19
 ### Configuring the Import Interval {#configuring-the-import-interval}
 
 Configure the appropriate instance of the **Adobe AEM Analytics Report Sling Importer** service:
@@ -204,6 +205,20 @@ Configure the appropriate instance of the **Adobe AEM Analytics Report Sling Imp
   The default is `0 0 0/12 * * ?`; this corresponds to 12 fetches every hour.
 
 To configure this OSGi service, you can either use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or an [osgiConfig node in the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (the service PID is `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
+-->
+
+### Configuring the Import Interval {#configuring-the-import-interval}
+
+Configure the appropriate instance of the **Adobe AEM Managed Polling Configuration** service:
+
+* **Poll Interval**:
+  The interval, in seconds, at which the service retrieves page view data from Adobe Analytics.
+  The default interval is 43200000 ms (12 hours).
+
+* **Enable**:
+  Enable or disable the service. By default, the service is enabled.
+
+To configure this OSGi service, you can either use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or an [osgiConfig node in the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (the service PID is `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
 
 ## Editing Adobe Analytics Configurations and/or Frameworks {#editing-adobe-analytics-configurations-and-or-frameworks}
 
