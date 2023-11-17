@@ -186,7 +186,7 @@ For more information about file patterns, see [About file patterns](configuring-
 * %m = minute 
 * %s = second 
 * %l = millisecond 
-* %R = random number (between 0 and 9) 
+* %R = random number (between 0&ndash;9) 
 * %P = process or job id
 
 For example, if it is 8 PM on July 17, 2009 and you specify `C:/Test/WF0/failure/%Y/%M/%D/%H/`, the result folder is `C:/Test/WF0/failure/2009/07/17/20`.
@@ -251,7 +251,7 @@ The administrator can define the file pattern of the output folder in which to s
 * %h = hour,
 * %m = minute,
 * %s = second,
-* %R = random number between 0-9
+* %R = random number between 0&ndash;9
 * %J = Job name
 
 For example, the path to the result folder may be `C:\Adobe\Adobe_Experience_Manager_forms\BarcodedForms\%y\%m\%d`.

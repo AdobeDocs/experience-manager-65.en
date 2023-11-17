@@ -1,8 +1,6 @@
 ---
 title: Integrating Services with the JMX Console
-seo-title: Integrating Services with the JMX Console
 description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
-seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 topic-tags: extending-aem
 content-type: reference
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
@@ -21,7 +19,7 @@ On the Apache Felix platform, you deploy MBeans as OSGi services. When an MBean 
 
 ## Creating MBeans for CQ5 and CRX {#creating-mbeans-for-cq-and-crx}
 
-MBeans that you create for managing CQ5 or CRX resources are based on the javax.management.DynamicMBean interface. To create them you follow the usual design patterns set forth in the JMX specification:
+MBeans that you create for managing CQ5 or CRX resources are based on the javax.management.DynamicMBean interface. To create them you follow the usual design patterns as outlined in the JMX specification:
 
 * Create the management interface, including get, set, and is methods to define attributes, and other methods to define operations.
 * Create the implementation class. The class must implement DynamicMBean, or extend an implementation class of DynamicMBean.

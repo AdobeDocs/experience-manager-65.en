@@ -18,7 +18,7 @@ Here are the logical steps to make design importer recognize your custom compone
 
 1. Create a TagHandler
 
-    * A tag handler is a POJO that handles HTML tags of a specific kind. The "kind" of HTML tags your TagHandler can handle is defined via the TagHandlerFactory's OSGi property "tagpattern.name". This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example, if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it's up to you how you wish to take care of it.
+    * A tag handler is a POJO that handles HTML tags of a specific kind. The "kind" of HTML tags your TagHandler can handle is defined via the TagHandlerFactory's OSGi property "tagpattern.name". This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example, if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it is up to you how you want to take care of it.
     * The tag handler interface is similar to a SAX content handler interface. It receives SAX events for each html tag. As a tag handler provider, you need to implement certain lifecycle methods which are automatically called by the design importer framework.
 
 1. Create its corresponding TagHandlerFactory.
@@ -359,7 +359,7 @@ HTML tag to include graphical link component in the imported zip. Here "firstNam
 
 ### Parsys {#parsys}
 
-The AEM parsys component is a container component that can contain other AEM components. It's possible to add a parsys component in the imported HTML. This allows the user to add/delete editable AEM components to the landing page even after it has been imported.
+The AEM parsys component is a container component that can contain other AEM components. It is possible to add a parsys component in the imported HTML. This allows the user to add/delete editable AEM components to the landing page even after it has been imported.
 
 The paragraph system gives users the ability to add components using the sidekick.
 

@@ -425,7 +425,7 @@ In this case, you want to render a banner on top of the teaser to indicate that 
 
    >[!CAUTION]
    >
-   >You also may see some stack traces if the product used in the teaser does not have the `eco_friendly` attribute as part of it's attribute set.
+   >You also may see some stack traces if the product used in the teaser does not have the `eco_friendly` attribute as part of its attribute set.
 
 ## Add Styles for the Eco Friendly Badge {#add-styles}
 

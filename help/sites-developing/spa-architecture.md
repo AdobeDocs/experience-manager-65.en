@@ -92,7 +92,7 @@ There may be cases however when this is not entirely necessary. The following ta
 
 >[!NOTE]
 >
->Although all models are supported in AEM, only by implementing the third (and thereby following the recommended [SPA development principles in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) will the content authors be able to interact with and edit the content of the SPA in AEM as they are accustomed.
+>Although all models are supported in AEM, only by implementing the third (and therefore following the recommended [SPA development principles in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) can content authors interact with and edit the content of the SPA in AEM as they are accustomed.
 
 ## Migrating Existing SPAs to AEM {#migrating-existing-spas-to-aem}
 

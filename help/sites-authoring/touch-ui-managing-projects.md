@@ -1,14 +1,10 @@
 ---
 title: Managing Projects
-seo-title: Managing Projects
 description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
-seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
-uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 ---
 
@@ -129,7 +125,7 @@ You can now create projects within the folder. You can create multiple folders a
 
 ### Inactivating Projects {#making-projects-inactive-or-active}
 
-You may want to mark a project inactive if it's completed but you still want to keep the information about the project. [Inactive projects do now show](#viewing-active-inactive-projects) by default in the **Projects** console.
+You may want to mark a project inactive if it s completed but you still want to keep the information about the project. [Inactive projects do now show](#viewing-active-inactive-projects) by default in the **Projects** console.
 
 To make a project inactive follow these steps.
 

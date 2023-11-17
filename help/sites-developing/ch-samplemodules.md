@@ -1,8 +1,6 @@
 ---
 title: Sample ContextHub UI Module Types
-seo-title: Sample ContextHub UI Module Types
-description: ContextHub provides several sample UI modules that you can use in your solutions
-seo-description: ContextHub provides several sample UI modules that you can use in your solutions
+description: ContextHub provides several sample UI modules that you can use in your solutions.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -51,7 +49,7 @@ Configure the contexthub.base UI module using a JavaScript object in JSON format
   * title: The text to display for this item
   * image: (Optional) A URL to an image that should be displayed on the left
   * icon: (Optional) A CUI icon class that should be displayed on the left; ignored if an image is specified
-  * selected: (Optional) A boolean value that specifies whether this item should be displayed as selected (true=selected). By default, selected items appear using a bold font. Use a `listType` property to configure other appearances (see below).
+  * selected: (Optional) A boolean value that specifies whether this item should be displayed as selected (true=selected). By default, selected items appear, using a bold font. Use a `listType` property to configure other appearances (see below).
 
 * **listType:** The style to use for popover list items. Use one of the following values:
 

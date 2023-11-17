@@ -21,7 +21,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 
 |Location|Shortcut|Description|
 |---|---|---|
-|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (for example, **Edit**, **Layout**, etc)*|
+|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (for example, **Edit**, **Layout**, and so on) |
 |**Edit** mode|`Ctrl-z`|[Undo last change](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-y`|[Redo last change](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-Click`|Select multiple paragraphs|

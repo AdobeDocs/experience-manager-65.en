@@ -74,11 +74,11 @@ The workflow to edit an article:
 1. From Mobile, choose your Mobile On-Demand app from the catalog.
 1. Select an AEM sourced article from the **Manage Articles** tile.
 1. Click the highlighted article from the list view to open it in the content editor.
-1. Use the content editor to drag article content (manuscripts, images, text, etc).
+1. Use the content editor to drag article content (manuscripts, images, text, and so on).
 
 ### Viewing and Editing the Metadata within an Article {#viewing-and-editing-the-metadata-within-an-article}
 
-Content like articles, banners, etc have numerous properties such as titles, descriptions, images. This action is used to view and modify such properties. Optionally, these changes can be uploaded to Mobile On-Demand upon save.
+Content like articles, banners, and so on have numerous properties such as titles, descriptions, images. This action is used to view and modify such properties. Optionally, these changes can be uploaded to Mobile On-Demand upon save.
 
 The general workflow to view/edit an article:
 

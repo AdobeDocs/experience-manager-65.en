@@ -212,7 +212,7 @@ The online backup uses the following algorithm:
 
       An empty file named `backupInProgress.txt` is created in the target directory when the backup starts. This file is deleted when the backup is finished.
 
-1. The files are copied from the source directory to the target directory (or temporary directory when creating a zip file). The segmentstore is copied before the datastore to avoid repository corruption. The index and cache data are omitted when creating the backup. As a result, data from `crx-quickstart/repository/cache` and `crx-quickstart/repository/index` is not included in the backup. The progress bar indicator of the process is between 0% - 70% when creating a zip file, or 0% - 100% if no zip file is created.
+1. The files are copied from the source directory to the target directory (or temporary directory when creating a zip file). The segmentstore is copied before the datastore to avoid repository corruption. The index and cache data are omitted when creating the backup. As a result, data from `crx-quickstart/repository/cache` and `crx-quickstart/repository/index` is not included in the backup. The progress bar indicator of the process is between 0%&ndash;70% when creating a zip file, or 0%&ndash;100% if no zip file is created.
 
 1. If the backup is being made to a pre-existing directory, then "old" files in the target directory are deleted. Old files are files that do not exist in the source directory.
 

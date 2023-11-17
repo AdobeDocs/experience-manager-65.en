@@ -40,7 +40,7 @@ Terms of interest:
 
 ## General {#general}
 
-Over the last few years Adobe has updated all the Adobe Experience Cloud solutions with an unified user interface. Users across the Experience Cloud solutions enjoy a consistant experience with common patterns on how to use and operate the applications. With every release, Adobe has refined it's user interface based on feedback from customers working across the various solutions.
+Over the last few years Adobe has updated all the Adobe Experience Cloud solutions with an unified user interface. Users across the Experience Cloud solutions enjoy a consistant experience with common patterns on how to use and operate the applications. With every release, Adobe has refined its user interface based on feedback from customers working across the various solutions.
 
 The original user interface for Adobe Experience Manager (previously known as CQ5), introduced in 2008 and used by customers running versions 5.0-5.6.1, is present in AEM 6.5. This guarantees that customers can update to 6.5, and benefit from an updated platform with new capabilities while keep using the same user interface.
 
