@@ -213,7 +213,7 @@ Now, you can use this SharePoint Sites configuration for the submit action in an
 
 You can use the created SharePoint Document Library configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint folder. Perform the following steps to use a SharePoint Document Library storage configuration in an Adaptive Form as:
 
-1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md).
+1. Create an [Adaptive Form](/help/forms/using/create-adaptive-form.md).
 
     >[!NOTE]
     >
@@ -262,10 +262,10 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
 You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
 
-1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
-1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
-1. [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
-1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/using/create-form-data-model.md)
+1. [Configure the Form Data Model to retrieve and send data](/help/forms/using/work-with-form-data-model.md#configure-services)
+1. [Create an Adaptive Form](/help/forms/using/create-adaptive-form.md).
+1. [Configure Submit action using a Form Data Model](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
@@ -317,7 +317,7 @@ Now, you can use this OneDrive storage configuration for the submit action in an
 ### Use OneDrive Configuration in an Adaptive Form {#use-onedrive-configuartion-in-af}
 
 You can use the created OneDrive storage configuration in an Adaptive Form, to save data or generated Document of Record in a OneDrive folder. Perform the following steps to use OneDrive storage configuration in an Adaptive Form as:
-1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md).
+1. Create an [Adaptive Form](/help/forms/using/create-adaptive-form.md).
 
     >[!NOTE]
     >
@@ -356,7 +356,7 @@ Now, you can use this Azure Storage container configuration for the submit actio
 ### Use Azure Storage Configuration in an Adaptive Form {#use-azure-storage-configuartion-in-af}
 
 You can use the created Azure Storage container configuration in an Adaptive Form, to save data or generated Document of Record in Azure Storage container. Perform the following steps to use Azure Storage container configuration in an Adaptive Form as:
-1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md).
+1. Create an [Adaptive Form](/help/forms/using/create-adaptive-form.md).
 
     >[!NOTE]
     >
