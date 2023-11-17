@@ -165,72 +165,13 @@ Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow
 
 After a successful configuration, use the [Invoke a Microsoft&reg; Power Automate flow](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) submit action to send data to a Power Automate Flow.  
 
-## Submit to SharePoint {#submit-to-sharedrive}
+## Submit to Microsoft® SharePoint List{#submit-to-sharedrive}
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. 
 
-Using Submit to SharePoint, you can:
-* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) 
-
-### Connect an Adaptive Form to SharePoint Document Library {#connect-af-sharepoint-doc-library}
-
-To use the **[!UICONTROL Submit to SharePoint Document Library]** Submit Action in an Adaptive Form:
-
-1. [Create a SharePoint Document Library Configuration](#create-a-sharepoint-configuration-create-sharepoint-configuration): It connects AEM Forms to your Microsoft&reg; Sharepoint Storage.
-2. [Use the Submit to SharePoint submit action in an Adaptive Form](#use-sharepoint-configuartion-in-af): It connects your Adaptive Form to configured Microsoft&reg; SharePoint.
-
-#### Create a SharePoint Document Library configuration {#create-sharepoint-configuration}
-
-To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library Storage:
-
-1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
-1. Once you select the **[!UICONTROL Microsoft&reg; SharePoint]**, you are redirected to **[!UICONTROL SharePoint Browser]**.
-1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
-1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** from the drop-down list. The SharePoint configuration wizard appears. 
-1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
-    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` to provide read/write permissions.
-    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
-
-    >[!NOTE]
-    >
-    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
-    
-1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
-
-1. Now, select **SharePoint Site** > **Document Library** > **SharePoint Folder**, to save the data.
-
-    >[!NOTE]
-    >
-    >* By default, `forms-ootb-storage-adaptive-forms-submission` is present at selected SharePoint Site.
-    >* Create a folder as `forms-ootb-storage-adaptive-forms-submission`, if not already present in the `Documents` library of the selected SharePoint Site by clicking **Create Folder**.
-
-Now, you can use this SharePoint Sites configuration for the submit action in an Adaptive Form. 
-
-#### Use SharePoint Document Library Configuration in an Adaptive Form {#use-sharepoint-configuartion-in-af}
-
-You can use the created SharePoint Document Library configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint folder. Perform the following steps to use a SharePoint Document Library storage configuration in an Adaptive Form as:
-
-1. Create an [Adaptive Form](/help/forms/using/create-adaptive-form.md).
-
-    >[!NOTE]
-    >
-    > * Select the same [!UICONTROL Configuration Container] for an Adaptive Form, where you have created your SharePoint Document Library storage. 
-    > * If no [!UICONTROL Configuration Container] is selected, then the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
-
-1. Select **Submit Action** as **[!UICONTROL Submit to SharePoint]**.
-   
-1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
-1. Click **[!UICONTROL Save]** to save the Submit settings.
-
-When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Document Library Storage. 
-Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
-
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
 
@@ -277,104 +218,10 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 > * person column
 > * external data column
 
-## Submit to OneDrive {#submit-to-onedrive}
-
-The **[!UICONTROL Submit to OneDrive]** Submit Action connects an Adaptive Form with a Microsoft&reg; OneDrive. You can submit the form data, file, attachments, or Document of Record to the connected Microsoft&reg; OneDrive Storage. To use the [!UICONTROL Submit to OneDrive] Submit Action in an Adaptive Form:
-
-1. [Create a OneDrive Configuration](#create-a-onedrive-configuration-create-onedrive-configuration): It connects AEM Forms to your Microsoft&reg; OneDrive Storage.
-2. [Use the Submit to OneDrive submit action in an Adaptive Form](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): It connects your Adaptive Form to
-configured Microsoft&reg; OneDrive.
-
-### Create a OneDrive Configuration {#create-onedrice-configuration}
-
-To connect AEM Forms to your Microsoft&reg; OneDrive Storage:
-
-1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; OneDrive]**.   
-1. Once you select the **[!UICONTROL Microsoft&reg; OneDrive]**, you are redirected to **[!UICONTROL OneDrive Browser]**.
-1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
-1. Click **[!UICONTROL Create]**. The OneDrive configuration wizard appears. 
-1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
-    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Files.ReadWrite.All` to provide read/write permissions.
-    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
-
-    >[!NOTE]
-    >
-    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
-    
-1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
-
-1. Now, select **[!UICONTROL OneDrive Container]** > **[OneDrive Folder]**  to save the data. 
-
-    >[!NOTE]
-    >
-    >* By default, `forms-ootb-storage-adaptive-forms-submission` is present at OneDrive Container. 
-    > * Create a folder as `forms-ootb-storage-adaptive-forms-submission`, if not already present by clicking **Create Folder**.
-
-Now, you can use this OneDrive storage configuration for the submit action in an Adaptive Form. 
-
-### Use OneDrive Configuration in an Adaptive Form {#use-onedrive-configuartion-in-af}
-
-You can use the created OneDrive storage configuration in an Adaptive Form, to save data or generated Document of Record in a OneDrive folder. Perform the following steps to use OneDrive storage configuration in an Adaptive Form as:
-1. Create an [Adaptive Form](/help/forms/using/create-adaptive-form.md).
-
-    >[!NOTE]
-    >
-    > * Select the same [!UICONTROL Configuration Container] for an Adaptive Form, where you have created your OneDrive storage. 
-    > * If no [!UICONTROL Configuration Container] is selected, then the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
-
-1. Select **Submit Action** as **[!UICONTROL Submit to OneDrive]**.
-1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
-1. Click **[!UICONTROL Save]** to save the Submit settings.
-
-When you submit the form, the data is saved in the specified Microsoft&reg; OneDrive Storage. 
-Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
-
-## Submit to Azure Blob Storage {#submit-to-azure-blob-storage}
-
-The **[!UICONTROL Submit to Azure Blob Storage]**  Submit Action connects an Adaptive Form with a Microsoft&reg; Azure portal. You can submit the form data, file, attachments, or Document of Record to the connected Azure Storage containers. To use the  Submit action for Azure Blob Storage: 
-
-1. [Create an Azure Blob Storage Container](#create-a-azure-blob-storage-container-create-azure-configuration): It connects AEM Forms to Azure Storage containers.
-2. [Use Azure Storage Configuration in an Adaptive Form ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): It connects your Adaptive Form to configured Azure Storage containers.
-
-### Create an Azure Blob Storage Container {#create-azure-configuration}
-
-To connect AEM Forms to your Azure Storage containers:
-1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure Storage]**.   
-1. Once you select the **[!UICONTROL Azure Storage]**, you are redirected to **[!UICONTROL Azure Storage Browser]**.
-1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
-1. Click **[!UICONTROL Create]**. The Create Azure Storage Configuration wizard appears. 
-1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Azure Storage Account]** and **[!UICONTROL Azure Access key]**. 
-    
-    * You can retrieve `Azure Storage Account` name and `Azure Access key` from the Storage Accounts in the Microsoft&reg; Azure portal.
-    
-1. Click **[!UICONTROL Save]**.
-
-Now, you can use this Azure Storage container configuration for the submit action in an Adaptive Form.
-
-### Use Azure Storage Configuration in an Adaptive Form {#use-azure-storage-configuartion-in-af}
-
-You can use the created Azure Storage container configuration in an Adaptive Form, to save data or generated Document of Record in Azure Storage container. Perform the following steps to use Azure Storage container configuration in an Adaptive Form as:
-1. Create an [Adaptive Form](/help/forms/using/create-adaptive-form.md).
-
-    >[!NOTE]
-    >
-    > * Select the same [!UICONTROL Configuration Container] for an Adaptive Form, where you have created your OneDrive storage. 
-    > * If no [!UICONTROL Configuration Container] is selected, then the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
-
-1. Select **Submit Action** as **[!UICONTROL Submit to Azure Blob Storage]**.    
-1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
-1. Click **[!UICONTROL Save]** to save the Submit settings.
-
-When you submit the form, the data is saved in the specified Azure Storage container configuration. 
-Folder structure to save data is `/configuration_container/form_name/year/month/date/submission_id/data`. 
 
 >[!NOTE] 
 >
 > To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
-
-
 
 ## Server-Side Revalidation in Adaptive Form {#server-side-revalidation-in-adaptive-form}
 
