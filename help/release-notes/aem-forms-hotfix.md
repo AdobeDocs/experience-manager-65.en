@@ -5,7 +5,7 @@ description: Provides information on how to download and install the hotfix for 
 
 # Adobe Experience Manager Hotfixes{#aem-form-hotfix}
 
-The installation of the latest [AEM Forms Service Pack](/help/release-notes/release-notes.md) is recommended that includes security, performance, stability, and key customer fixes and enhancements released since the general availability of Adobe Experience Manager 6.5. 
+The installation of the latest [AEM Service Pack](/help/release-notes/release-notes.md) is recommended that includes security, performance, stability, and key customer fixes and enhancements released since the general availability of Adobe Experience Manager 6.5. 
 
 ## Hotfixes for Adaptive Forms {#hotfix-for-adaptive-forms}
 
