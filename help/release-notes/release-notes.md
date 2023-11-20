@@ -123,7 +123,7 @@ to
 #### MSM - Live Copies{#sites-msm-live-copies-6519}
 
 * MSM Rollout Button does not work in the touch graphical user interface. (SITES-16991) 
-* Link Reference does not get updated inside Experience Fragment when creating a live copy or rollout an Experience Fragment. (SITES-15460) 
+* Link Reference does not get updated inside Experience Fragment when creating a live copy or rolling out an Experience Fragment. (SITES-15460) 
 
 #### Page Editor{#sites-pageeditor-6519}
 
@@ -140,7 +140,7 @@ to
 
 #### [!DNL Dynamic Media]{#assets-dm-6519}
 
-* After an asset is uploaded to AEM, the `update_asset` workflow is triggered. The workflow never finishes. Looking at the workflow instances, the workflow finishes up to the product upload step. The next step is scene7 batch upload. User can see that the asset is in Scene7 from the Dynamic Media Classic app. (ASSETS-30443) 
+* After an asset is uploaded to AEM, the `update_asset` workflow is triggered. The workflow never finishes. Looking at the workflow instances, the workflow finishes up to the product upload step. The next step is Scene7 batch upload. User can see that the asset is in Scene7 from the Dynamic Media Classic app. (ASSETS-30443) 
 * A custom Servlet (API endpoint) is returning an incorrect Dynamic Media (Scene7) file name. It occurs when an asset is deleted and replaced with an asset of the same name. The custom servlet is returning the old Dynamic Media (Scene7) file name, while a "jcr" API call returns the correct file name. (ASSETS-29476) 
 * Even after Sync is turned off at the Folder level, the Logs show the trigger of "Scene7 ReplicateOnModifyListener". The `ReplicateOnModifyListener/Worker` should skip processing on non-Dynamic Media folder assets and content fragments. (ASSETS-26705) 
 * People with low vision are impacted if the Focus is not visible in drop-down elements (Content Only, View, More Options) in high contrast black and white modes. (ASSETS-25759) 
@@ -278,7 +278,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.16 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-41010 for 6.5.18.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.17 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-41292 for 6.5.19.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Install Service Pack for [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
@@ -474,8 +474,8 @@ To resolve the issue, perform the following steps:
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.19.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [List of OSGi bundles included in Experience Manager 6.5.19.0](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.19.0](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.19.0](/help/release-notes/assets/65190_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.19.0](/help/release-notes/assets/65190_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
 
