@@ -1,21 +1,17 @@
 ---
 title: Configuring SSL for JBoss Application Server
-seo-title: Configuring SSL for JBoss Application Server
 description: Learn how to configure SSL for JBoss Application Server.
-seo-description: Learn how to configure SSL for JBoss Application Server.
-uuid: 7c13cf00-ea89-4894-a4fc-aaeec7ae9f66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
 ---
 # Configuring SSL for JBoss Application Server {#configuring-ssl-for-jboss-application-server}
 
 To configure SSL on JBoss Application Server, you need an SSL credential for authentication. You can use the Java keytool to create a credential or request and import a credential from a certificate authority (CA). You must then enable SSL on JBoss.
 
-You can run keytool by using a single command that includes all of the information needed to create the keystore.
+You can run keytool by using a single command that includes all the information needed to create the keystore.
 
 In this procedure:
 
@@ -64,7 +60,7 @@ In this procedure:
     * `keytool -printcert -v -file [appserver root]\standalone\configuration\AEMForms_cert.cer`
     * `keytool -printcert -v -file [appserver root]\domain\configuration\AEMForms_cert.cer`
 
-1. To provide write access to the cacerts file in `[JAVA_HOME]\jre\lib\security`, if required, perform the following task:
+1. To provide write access to the cacerts file in `[JAVA_HOME]\jre\lib\security`, if necessary, perform the following task:
 
     * (Windows) Right-click the cacerts file and select Properties, and then deselect the Read-only attribute.
     * (Linux) Type `chmod 777 cacerts`

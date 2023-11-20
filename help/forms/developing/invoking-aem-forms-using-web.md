@@ -434,7 +434,7 @@ You can use JAX-WS to convert a Forms service WSDL to Java proxy classes. These 
     * Set the Java compiler's compliance level to 5.0 or greater.
     * Build the project.
     * Export the project as a JAR file.
-    * Import this JAR file in a client project's class path. In addition, import all of the JAR files in &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
+    * Import this JAR file in a client project's class path. In addition, import all the JAR files in &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
 
    >[!NOTE]
    >
@@ -1729,4 +1729,4 @@ The following C# code example signs an interactive form that is rendered by the 
 
 ### Services starting with the letter I produce invalid proxy files {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
-The name of some AEM Forms generated proxy classes are incorrect when using Microsoft .Net 3.5 and WCF. This issue occurs when proxy classes are created for the IBMFilenetContentRepositoryConnector, IDPSchedulerService or any other service whose name starts with the letter I. For example, the name of the generated client in case of IBMFileNetContentRepositoryConnector is `BMFileNetContentRepositoryConnectorClient`. The letter I is missing in the generated proxy class.
+The name of some AEM Forms generated proxy classes are incorrect when using Microsoft .Net 3.5 and WCF. This issue occurs when proxy classes are created for the IBMFilenetContentRepositoryConnector, IDPSchedulerService or any other service whose name starts with the letter I. For example, the name of the generated client if there is IBMFileNetContentRepositoryConnector is `BMFileNetContentRepositoryConnectorClient`. The letter I is missing in the generated proxy class.

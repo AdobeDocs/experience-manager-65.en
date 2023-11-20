@@ -82,7 +82,7 @@ orderby=path
 
 The purpose of the `p.guessTotal` parameter is to return the appropriate number of results that can be shown by combining the minimum viable p.offset and p.limit values. The advantage of using this parameter is improved performance with large result sets. This avoids calculating the full total (for example, calling result.getSize()) and reading the entire result set, optimized all the way down to the Oak engine & index. This can be a significant difference when there are 100 thousands of results, both in execution time and memory usage.
 
-The disadvantage to the parameter is users do not see the exact total. But you can set a minimum number like p.guessTotal=1000 so it will always read up to 1000, so you get exact totals for smaller result sets, but if it's more than that, you can only show "and more".
+The disadvantage to the parameter is users do not see the exact total. But you can set a minimum number like p.guessTotal=1000 so it will always read up to 1000, so you get exact totals for smaller result sets, but if it is more than that, you can only show "and more".
 
 Add `p.guessTotal=true` to the query below to see how it works:
 
@@ -123,7 +123,7 @@ It returns a number the same default limit of ten results with a 0 offset, but w
 
 ### Implementing pagination {#implementing-pagination}
 
-By default the Query Builder would also provide the number of hits. Depending on the result size, this might take long time as determining the accurate count involves checking every result for access control. Mostly the total is used to implement pagination for the end user UI. Because determining the exact count can be slow, it is recommended to make use of the guessTotal feature to implement the pagination.
+By default the Query Builder would also provide the number of hits. Depending on the result size, this might take long time as determining the accurate count involves checking every result for access control. Mostly the total is used to implement pagination for the end user UI. Because determining the exact count can be slow, it is recommended to use the guessTotal feature to implement the pagination.
 
 For example, the UI can adapt following approach:
 
@@ -135,7 +135,7 @@ For example, the UI can adapt following approach:
     * `total=43`, `more=false` - Indicates that total number of hits is 43. The UI can show up to ten results as part of the first page and provide pagination for the next three pages. You can also use this implementation to display a descriptive text like **"43 results found"**.
     * `total=100`, `more=true` - Indicates that the total number of hits is greater than 100 and the exact count is not known. The UI can show up to ten as part of the first page and provide pagination for the next ten pages. You can also use this to display a text like **"more than 100 results found"**. As the user goes to the next pages calls made to the Query Builder would increase the limit of `guessTotal` and also of the `offset` and `limit` parameters.
 
-`guessTotal` should be used in cases where the UI needs to make use of infinite scrolling to avoid the Query Builder from determining the exact hit count.
+`guessTotal` should be used in cases where the UI needs to use infinite scrolling to avoid the Query Builder from determining the exact hit count.
 
 ### Find jar files and order them, newest first {#find-jar-files-and-order-them-newest-first}
 

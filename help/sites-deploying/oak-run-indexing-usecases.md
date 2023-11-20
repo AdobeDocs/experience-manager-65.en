@@ -72,7 +72,7 @@ For diagnosing some of the cases around query performance Adobe often required e
 
 1. Dump index contents for offline analysis;
 
-1. Will be usable even if AEM is not accessible
+1. Is usable even if AEM is not accessible
 
 The above operations can now be done by way of the following operation index commands:
 

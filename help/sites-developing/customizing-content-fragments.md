@@ -72,7 +72,7 @@ Content Fragment Management (CFM) is part of AEM Assets as:
 
 ![fragment-to-assets-structured](assets/fragment-to-assets-structured.png)
 
-Content fragments with structured content (i.e. based on a content fragment model) are mapped to a single asset:
+Content fragments with structured content (that is, based on a content fragment model) are mapped to a single asset:
 
 * All content is stored under the `jcr:content/data` node of the asset:
 
@@ -230,7 +230,7 @@ Content fragments can be integrated with:
 
     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-    this can be extended if required.
+    this can be extended if necessary.
 
   * The respective schema form is integrated with the fragment editor.
 

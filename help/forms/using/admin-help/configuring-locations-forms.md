@@ -76,11 +76,11 @@ The default value is an empty string.
 **Default Location:** This is the default selection. When this option is selected, the cache is created at a location that is dependent on the application server you are using:
 
 * **JBoss:** [JBoss Home]\server\[install type]\svcdata\FormServer\Cache
-* **WebLogic:** [WebLogic Home]\user_projects\domains\[aem-forms Domain Name]\adobe\[forms server name]\FormServer\Cache
+* **WebLogic:** [WebLogic Home]\user_projects\domains\[aem-forms Domain Name]\adobe\[Forms Server name]\FormServer\Cache
 * **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
 **LC Temp Directory:** The cache is created in a subdirectory of the AEM forms temp directory, which is specified in the administration console under Settings > Core System Settings > Configurations > Location of Temp Directory. The subdirectory is named adobeform_[servername].
 
 >[!NOTE]
 >
->If you are using a temp cleaning utility, be aware that while deleting these directories does not affect functionality, it can significantly impact performance for a short time until the new cache is created. To avoid this issue, do not delete these directories while clearing the AEM forms temp directory.
+>If you are using a temp cleaning utility, while deleting these directories does not affect functionality, it can significantly impact performance for a short time until the new cache is created. To avoid this issue, do not delete these directories while clearing the AEM forms temp directory.

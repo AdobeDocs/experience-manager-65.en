@@ -73,7 +73,7 @@ The advanced scoring engine provides an OSGi configuration with parameters that 
   Default value is 216000 hours (~24 years).
 
 * **Scoring growth rate**
-  This specifies the score between 0 and scoring range, beyond which growth slows to limit the number of experts.
+  This specifies the score between 0&ndash;scoring range, beyond which growth slows to limit the number of experts.
   
   Default value is 50.
 

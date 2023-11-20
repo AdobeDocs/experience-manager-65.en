@@ -1,12 +1,10 @@
 ---
 title: Editing Launches
-description: When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
-uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
+description: When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the pages.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 ---
@@ -14,7 +12,7 @@ exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 
 ## Editing Launch Pages {#editing-launch-pages}
 
-When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
+When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the pages.
 
 1. Open the page for editing.
 1. In Sidekick, select the **Versioning** tab, then expand the **Launches** group. The title of the launch that is currently being edited uses a bold font.

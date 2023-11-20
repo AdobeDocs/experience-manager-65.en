@@ -45,7 +45,7 @@ If you are running Oracle Java 11 (or generally versions of Java newer than 8), 
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Additionally, you need to make use of the `-XX:+UseParallelGC` switch to mitigate any potential performance issues.
+* Additionally, you need to use the `-XX:+UseParallelGC` switch to mitigate any potential performance issues.
 
 Below is a sample of how the additional JVM parameters should look like when starting AEM on Java 11:
 
@@ -68,7 +68,7 @@ Finally, if you are running an instance upgraded from AEM 6.3, make sure the fol
 By default the folder `crx-quickstart/install` is watched for files.
 This folder does not exist, but simply can be created at runtime.
 
-If a bundle, configuration or content package is put into this directory, it is automatically picked up and installed. If it's removed, it gets uninstalled.
+If a bundle, configuration or content package is put into this directory, it is automatically picked up and installed. If it is removed, it gets uninstalled.
 It is another way to put bundles, content packages or configurations to the repository.
 
 This is especially interesting for several use cases:

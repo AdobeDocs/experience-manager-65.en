@@ -1,13 +1,9 @@
 ---
 title: Ad-hoc Queries in Process Reporting
-seo-title: Ad-hoc Queries in Process Reporting
 description: Create custom queries to search for AEM Forms on JEE  process and task details in Process Reporting
-seo-description: Create custom queries to search for AEM Forms on JEE  process and task details in Process Reporting
-uuid: db0c5c28-b213-4582-a6ed-df127e570a4e
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
 ---
@@ -91,7 +87,7 @@ You use Process/Task Search to define filters for querying process/task instance
 After you create a query, use the options in the upper right corner of the **Create Filter** panel to:
 
 * **Cancel**: Cancel the changes and go back to the **My Filters** panel.
-* **Run**: Execute the current query to see and / or verify the results. In this case, you do not need to save the query before executing the query. You can verify the results, make changes if required, and then save the query when you are satisfied with the output.
+* **Run**: Execute the current query to see and / or verify the results. In this case, you do not need to save the query before executing the query. You can verify the results, make changes if necessary, and then save the query when you are satisfied with the output.
 * **Save**: Save the filter. The filter can then be viewed and executed from the **My Filters** panel.
 
 ### Options in My Filters panel {#options-in-my-filters-panel}

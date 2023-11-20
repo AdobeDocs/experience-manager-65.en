@@ -57,8 +57,8 @@ You can also enable SSO by using HTTP headers. (See [Enable SSO using HTTP heade
 >
 >AEM Forms on JEE does not support configuring SSO using Kerberos/SPNEGO in a multiple child domain environments .
 
-1. Decide which domain to use to enable SSO. The AEM forms server and the users must be part of the same Windows domain or trusted domain.
-1. In Active Directory, create a user who represents the AEM forms server. (See [Create a user account](enabling-single-sign-on-aem.md#create-a-user-account).) If you are configuring more than one domain to use SPNEGO, ensure that the passwords for each of these users is different. If the passwords are not different, SPNEGO SSO does not work.
+1. Decide which domain to use to enable SSO. The AEM Forms Server and the users must be part of the same Windows domain or trusted domain.
+1. In Active Directory, create a user who represents the AEM Forms Server. (See [Create a user account](enabling-single-sign-on-aem.md#create-a-user-account).) If you are configuring more than one domain to use SPNEGO, ensure that the passwords for each of these users is different. If the passwords are not different, SPNEGO SSO does not work.
 1. Map the service principal name. (See [Map a Service Principal Name (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configure the domain controller. (See [Prevent Kerberos integrity-check failures](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Add or edit an enterprise domain as described in [Adding domains](/help/forms/using/admin-help/adding-domains.md#adding-domains) or [Editing and converting existing domains](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). When you create or edit the enterprise domain, perform these tasks:
@@ -103,7 +103,7 @@ You can also enable SSO by using HTTP headers. (See [Enable SSO using HTTP heade
 
    The values that you must provide are described as follows:
 
-   **host:** Fully qualified name of the forms server or any unique URL. In this example, it is set to lcserver.um.lc.com.
+   **host:** Fully qualified name of the Forms Server or any unique URL. In this example, it is set to lcserver.um.lc.com.
 
    **REALM:** The Active Directory realm for the domain controller. In this example, it is set to UM.LC.COM. Ensure that you enter the realm in uppercase characters. To determine the realm for Windows 2003, complete the following steps:
 
@@ -144,9 +144,9 @@ If the server is accessed by using the computer name, such as https://lcserver:8
 
 1. Go to Tools &gt; Internet Options and click the Security tab.
 1. Click the Local Intranet icon and then click Sites.
-1. Click Advanced and, in the Add This Web Site To The Zone box, type the URL of your forms server. For example, type `https://lcserver.um.lc.com`
+1. Click Advanced and, in the Add This Web Site To The Zone box, type the URL of your Forms Server. For example, type `https://lcserver.um.lc.com`
 1. Click OK until all dialog boxes are closed.
-1. Test the configuration by accessing the URL of your AEM forms server. For example, in the browser URL box, type `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Test the configuration by accessing the URL of your AEM Forms Server. For example, in the browser URL box, type `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Configure Mozilla Firefox**
 

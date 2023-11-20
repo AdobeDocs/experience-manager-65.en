@@ -1,13 +1,9 @@
 ---
 title: Create or Configure a watched folder
-seo-title: Create or Configure a watched folder
 description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
-seo-description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
-uuid: 659d4d8c-99b8-40dd-b884-bfee4d476fe1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 ---
 # Create or Configure a watched folder {#create-or-configure-a-watched-folder}
@@ -89,7 +85,7 @@ Perform the following steps to create a watched folder:
         * %m = minute
         * %s = second
         * %l = millisecond
-        * %R = random number (between 0 and 9)
+        * %R = random number (between 0&ndash;9)
         * %P = process or job id
         * For example, if it is 8 PM on July 17, 2009 and you specify C:/Test/WF0/failure/%Y/%M/%D/%H/, the result folder is C:/Test/WF0/failure/2009/07/17/20.
         * If the path is not absolute but relative, the folder is created inside the watched folder. The default value is result/%Y/%M/%D/, which is the Result folder inside the watched folder. For more information about file patterns, see [About file patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
@@ -102,7 +98,7 @@ Perform the following steps to create a watched folder:
 
     * **Throttle On:** When this option is enabled, it limits the number of watched folder jobs that AEM forms processes at any given time. The Batch Size value determines the maximum number of jobs. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
     * **Overwrite Existing Files With Similar Name**: When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
-    * **Preserve Files On Failure:** When set to True, the input files are preserved in case of failure. The default value is true.
+    * **Preserve Files On Failure:** When set to True, the input files are preserved if there is failure. The default value is true.
     * **Include Files With Pattern:** Specify a semi-colon (;) delimited list of patterns that the watched folder uses to determine which folders and files to scan and pick up. For example, if the Include File Pattern is input, all files and folders that match input are picked up. For more information, see [Administration Help](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
     * **Invoke Watched Folder Asynchronously:** Identifies the invocation type as asynchronous or synchronous. The default value is asynchronous. Asynchronous is recommended for long-lived processes, while synchronous is recommended for transient or short-lived processes.
     * **Enable Watched Folder:** When this option is enabled, the watch folder is enabled. The default value is True.

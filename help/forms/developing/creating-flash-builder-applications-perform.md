@@ -356,7 +356,7 @@ The following code represents the SSOEvent.as file.
          /**
           * The root event. If current event type is <code>AUTHENTICATION_FAULT</code> then it would be an
           * <code>IOErrorEvent</code> in other cases it would be complete event. Its basic use is to extract the root
-          * cause in case of an authentication fault.
+          * cause if there is an authentication fault.
           */
          public function get rootEvent():Event
          {

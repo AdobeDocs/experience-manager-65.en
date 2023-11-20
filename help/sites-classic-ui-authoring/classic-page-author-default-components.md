@@ -2,17 +2,15 @@
 title: Components
 description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 page-status-flag: de-activated
-uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 ---
 # Components{#components}
 
-Adobe Experience Manager (AEM) comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) and are grouped by main functional area (i.e. component group) to aid filtering.
+Adobe Experience Manager (AEM) comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) and are grouped by main functional area (that is, component group) to aid filtering.
 
 >[!CAUTION]
 >

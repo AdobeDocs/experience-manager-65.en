@@ -45,7 +45,7 @@ For a discussion of how offline lease and synchronization works, see [Primer on 
 
 **Allow Extended Authentication** Select to enable extended authentication and then enter the Extended Authentication Landing URL.
 
-Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the AEM forms server. For example, users can now experience the SAML-based authentication instead of AEM forms username/Password, from Acrobat and Reader Client. By default, the Landing URL contains *localhost* as the server name. Replace the server name with a fully qualified hostname. The hostname in the landing URL is automatically populated from the base URL, if extended Authentication is not enabled yet. See [Add the extended authentication provider](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the AEM Forms Server. For example, users can now experience the SAML-based authentication instead of AEM forms username/Password, from Acrobat and Reader Client. By default, the Landing URL contains *localhost* as the server name. Replace the server name with a fully qualified hostname. The hostname in the landing URL is automatically populated from the base URL, if extended Authentication is not enabled yet. See [Add the extended authentication provider](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***note**: Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.*
 
@@ -93,7 +93,7 @@ AEM forms provides a sample configuration that you can customize for your enviro
 >Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.
 
 1. Obtain the sample WAR file deploy it. See the installation guide appropriate for your application server.
-1. Ensure that the forms server has a fully qualified name instead of IP addresses as the base URL and that it is a HTTPS URL. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
+1. Ensure that the Forms Server has a fully qualified name instead of IP addresses as the base URL and that it is a HTTPS URL. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
 1. Enable Extended Authentication from the Server Configuration page. See [Server configuration settings](configuring-client-server-options.md#server-configuration-settings).
 1. Add the required SSO redirect URLs in the User Management configuration file. See [Add SSO redirect URLs for extended authentication](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -148,7 +148,7 @@ To open a policy-protected document offline, the user's computer must have the a
 
 One way to lessen the threat to offline documents is to avoid permitting offline access to particularly sensitive documents. Another method is to periodically roll over the principal keys. When document security rolls the key over, any existing keys can no longer access the policy-protected documents. For example, if a perpetrator obtains a principal key from a stolen laptop, that key cannot be used to access the documents that are protected after the rollover occurs. If you suspect that a specific principal key has been compromised, you can manually roll over the key.
 
-However, you also need to be aware that a key rollover affects all principal keys, not just one. It also reduces the scalability of the system because clients must store more keys for offline access. The default key rollover frequency is 20 days. It is recommended not to set this value lower than 14 days because people may be prevented from viewing offline documents and system performance may be affected.
+However, a key rollover affects all principal keys, not just one. It also reduces the scalability of the system because clients must store more keys for offline access. The default key rollover frequency is 20 days. It is recommended not to set this value lower than 14 days because people may be prevented from viewing offline documents and system performance may be affected.
 
 In the following example, Key1 is the older of the two principal keys, and Key2 is the newer one. When you click the Rollover Keys Now button the first time, Key1 becomes invalid, and a newer, valid principal key (Key3) is generated. Users will obtain Key3 when they synchronize with document security, typically by opening a protected document online. However, users are not forced to synchronize with document security until they reach the maximum offline lease period specified in a policy. After the first key rollover, users who remain offline can still open offline documents, including those protected by Key3, until they reach the maximum offline lease period. When you click the Rollover Keys Now button a second time, Key2 becomes invalid, and Key4 is created. Users who remain offline during the two key rollovers are not able to open documents protected with Key3 or Key4 until they synchronize with document security.
 
@@ -252,7 +252,7 @@ You can export audit events to a file for archiving purposes.
 
     * the minimum age of the audit events to export
     * the maximum number of audit events to include in a single file. The server generates one or more files, based on this value.
-    * the folder where the file will be created. This folder is on the forms server. If the folder path is relative, then it is relative to your application server root directory.
+    * the folder where the file will be created. This folder is on the Forms Server. If the folder path is relative, then it is relative to your application server root directory.
     * the file prefix to use for the audit events files
     * the format of the file, either a comma-separated values (CSV) file that is compatible with Microsoft Excel or an XML file.
 
@@ -579,7 +579,7 @@ The following settings are in the General Settings area of the Invited User Regi
 
 **SMTP Host:** The host name of the SMTP server. The SMTP server manages the outgoing email notices to register and activate invited user accounts.
 
-If required by your SMTP host, type the required information in the SMTP Server Account Name and SMTP Server Account Password boxes to connect to the SMTP server. Some organizations do not enforce this requirement. If you need information, see your system administrator.
+If necessary by your SMTP host, type the required information in the SMTP Server Account Name and SMTP Server Account Password boxes to connect to the SMTP server. Some organizations do not enforce this requirement. If you need information, see your system administrator.
 
 **SMTP server socket class name:** Socket class name for the SMTP server. For example, javax.net.ssl.SSLSocketFactory.
 
@@ -766,7 +766,7 @@ You can configure document security to deny services to applications that meet s
 
 When client applications attempt to establish a link with document security, they supply application, version, and platform information. Document security compares this information against Denials settings it obtains from the document security configuration file.
 
-The Denials settings can contain several sets of denial conditions. If all of the attributes of any one set match, the requesting application is denied access to the document security services.
+The Denials settings can contain several sets of denial conditions. If all the attributes of any one set match, the requesting application is denied access to the document security services.
 
 The denial-of-service feature requires that client applications use the document security C++ Client SDK version 8.2 or later. The following Adobe products provide product information when requesting document security services:
 

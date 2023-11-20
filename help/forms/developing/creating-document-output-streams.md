@@ -251,7 +251,7 @@ Create a PDF document by using the Output API (Java):
 
    >[!NOTE]
    >
-   >When generating a PDF document by invoking the `generatePDFOutput` method, be aware that you cannot merge data with an XFA PDF form that is signed or certified. (See [Digitally Signing and Certifying Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >When generating a PDF document by invoking the `generatePDFOutput` method, you cannot merge data with an XFA PDF form that is signed or certified. (See [Digitally Signing and Certifying Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -348,7 +348,7 @@ Create a PDF document by using the Output API (web service):
 
    >[!NOTE]
    >
-   >When generating a PDF document by invoking the `generatePDFOutput` method, be aware that you cannot merge data with an XFA PDF form that is signed or certified. (See [Digitally Signing and Certifying Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >When generating a PDF document by invoking the `generatePDFOutput` method, you cannot merge data with an XFA PDF form that is signed or certified. (See [Digitally Signing and Certifying Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -1499,7 +1499,7 @@ After you retrieve a document to print, you can invoke the Output service, which
 
 >[!NOTE]
 >
->If PDFG is installed on the forms server and the server runs on Windows Server 2008, you cannot use the SharedPrinter property. In this situation, use a different printer protocol.
+>If PDFG is installed on the Forms Server and the server runs on Windows Server 2008, you cannot use the SharedPrinter property. In this situation, use a different printer protocol.
 
 >[!NOTE]
 >
@@ -1632,7 +1632,7 @@ Send a print stream to a network printer by using the Output API (web service):
 
 The Output service can create separate documents for each record within an XML data source or a single file that contains all records (this functionality is the default). For example, assume that ten records are located within an XML data source and you instruct the Output service to create separate PDF documents (or other types of output) for each record by using the Output Service API. As a result, the Output service generates ten PDF documents. (Instead of creating documents, you can send multiple print streams to a printer.)
 
-The following illustration also shows the Output service processing an XML data file that contains multiple records. However, assume that you instruct the Output service to create a single PDF document that contains all data records. In this situation, the Output service generates one document that contains all of the records.
+The following illustration also shows the Output service processing an XML data file that contains multiple records. However, assume that you instruct the Output service to create a single PDF document that contains all the data records. In this situation, the Output service generates one document that contains all the records.
 
 The following illustration shows the Output service processing an XML data file that contains multiple records. Assume that you instruct the Output service to create a separate PDF document for each data record. In this situation, the Output service generates a separate PDF document for each data record.
 
@@ -2167,7 +2167,7 @@ Create search rules by using the Output API (web service):
 
    >[!NOTE]
    >
-   >When generating a PDF document by invoking the `generatePDFOutput` method, be aware that you cannot merge data with an XFA PDF form that is signed, certified, or contains usage rights. For information about usage rights, see [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+   >When generating a PDF document by invoking the `generatePDFOutput` method, you cannot merge data with an XFA PDF form that is signed, certified, or contains usage rights. For information about usage rights, see [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. Retrieve the results of the operation
 

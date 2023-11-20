@@ -1,14 +1,10 @@
 ---
 title: Authoring Targeted Content Using Targeting Mode
-seo-title: Authoring Targeted Content Using Targeting Mode
 description:  Targeting mode and the Target component provide tools for creating content for experiences
-seo-description:  Targeting mode and the Target component provide tools for creating content for experiences
-uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 ---
@@ -36,9 +32,9 @@ The activities and experiences that you see in Target mode reflect the [Activite
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId`to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names can therefore not be re-used in different campaign types.
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId`to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names cannot be re-used in different campaign types.
 >
->If you use the same name in the same campaign type, you will overwrite the existing campaign.
+>If you use the same name in the same campaign type, you overwrite the existing campaign.
 >
 >If while synchronizing, you encounter the error "Request Failed. `thirdPartyId` already exists," change the name of the campaign and synchronize again.
 
@@ -77,7 +73,7 @@ To add an activity:
 
    >[!NOTE]
    >
-   >It is recommended to [create brands through the activities console](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe recommends that you [create brands through the activities console](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >If you create a brand in any other way, make certain that the node `/campaigns/<brand>/master` exists or an error will result when you attempt to create an activity.
@@ -138,7 +134,7 @@ After you [start the targeting process](/help/sites-authoring/content-targeting-
 
 >[!CAUTION]
 >
->Be careful when you disable targeting for a component that is already targeted in the author instance. The respective activity will be automatically deleted from the publish instance as well.
+>Be careful when you disable targeting for a component that is already targeted in the author instance. The respective activity is automatically deleted from the publish instance as well.
 
 >[!NOTE]
 >
@@ -249,7 +245,7 @@ Perform the following procedure after [starting the targeting process](/help/sit
 
    ![Target](do-not-localize/chlimage_1.png)
 
-   The component content is the offer for the Default experience. When a component is targeted, its default node will be replicated for each experience. This is needed for editing the correct content node during experience specific authoring. For these non-default experiences, either [add a custom offer](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) or [add a library offer](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   The component content is the offer for the Default experience. When a component is targeted, its default node is replicated for each experience. This is needed for editing the correct content node during experience specific authoring. For these non-default experiences, either [add a custom offer](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) or [add a library offer](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 #### Creating an Offer By Adding a Target Component {#creating-an-offer-by-adding-a-target-component}
 
@@ -340,7 +336,7 @@ You cannot add library offers to the Default experience.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-   The offer picker lets you browse or filter for offers. When browsing or filtering, you may also want to sort the offers and change how you view them. The number in the upper right-hand indicates how many offers are available in the current library.
+   The offer picker lets you browse or filter for offers. When browsing or filtering, you may also want to sort the offers and change how you view them. The number in the upper-right indicates how many offers are available in the current library.
 
     * Click or tap **Browse** to navigate to another folder. The navigation pane opens and you click the arrow to drill down into folders. Click or tap **Browse** again to close the navigation pane.
 
@@ -400,11 +396,11 @@ Audiences appear on the left side of the mapping diagram, and experiences appear
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-Define an audience using a segment. The cloud configuration for the page detemines determines the segments that are availble to you. When the page is not associated with an Adobe Target cloud configuration, AEM segments are available for defining audiences. When the page is associated with an Adobe Target cloud configuration, you use Target segments.
+Define an audience using a segment. The cloud configuration for the page determines the segments that are available to you. When the page is not associated with an Adobe Target cloud configuration, AEM segments are available for defining audiences. When the page is associated with an Adobe Target cloud configuration, you use Target segments.
 
 For information targeting engines, see [Targeting Engine](/help/sites-authoring/personalization.md#targeting-engine).
 
-An audience must not be used by more than one experience. A warning symbol appears next to an experience when it is mapped to an audience that is mapped to another experience.
+Do not use an audience more than one experience. A warning symbol appears next to an experience when it is mapped to an audience that is mapped to another experience.
 
 ![Warning symbol when mapped to an audience that is mapped to another experience](do-not-localize/chlimage_1-6.png)
 
@@ -506,7 +502,7 @@ Use the advanced settings to determine what happens **after** a user encounters 
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Increment Count, Release User &amp; Allow Reentry</strong></td>
+   <td><strong>Increment Count, Release User &amp; Allow Re-entry</strong></td>
    <td>Select the experience the visitor sees if they reenter the activity:
     <ul>
      <li>Same experience</li>
@@ -515,7 +511,7 @@ Use the advanced settings to determine what happens **after** a user encounters 
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Increment Count, Release User &amp; Bar Reentry</strong></td>
+   <td><strong>Increment Count, Release User &amp; Bar Re-entry</strong></td>
    <td>Determine what the user sees instead of the activity content:
     <ul>
      <li>Same experience, without tracking</li>
@@ -629,7 +625,7 @@ To simulate the visitor's experience, use the following tools:
 
    The page changes to show the content that is targeted for the current context.
 
-1. To make changes to the offers that are displayed, switch to Targeting mode. With the simulation activity selected, edit the offers for the context that you configured in Preview mode.
+1. To change the offers that are displayed, switch to Targeting mode. With the simulation activity selected, edit the offers for the context that you configured in Preview mode.
 
 ## Configuring Target Component Options {#configuring-target-component-options}
 

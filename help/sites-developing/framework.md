@@ -70,11 +70,11 @@ In AEM, the base path is `/content/cq:tags` and the root node is of type `cq:Fol
 
 ### Tag Namespace {#tag-namespace}
 
-Namespaces let you group things. The most typical use case is a namespace per site (for example,, public, internal, and portal) or per larger application (for example,, WCM, Assets, Communities). But namespaces can be used for various other needs. Namespaces are used in the user interface to only show the subset of tags (i.e., tags of a certain namespace) that is applicable to the current content.
+Namespaces let you group things. The most typical use case is a namespace per site (for example,, public, internal, and portal) or per larger application (for example,, WCM, Assets, Communities). But namespaces can be used for various other needs. Namespaces are used in the user interface to only show the subset of tags (that is,, tags of a certain namespace) that is applicable to the current content.
 
 The tag's namespace is the first level in the taxonomy subtree, which is the node immediately below the [taxonomy root node](#taxonomy-root-node). A namespace is a node of type `cq:Tag` whose parent is not a `cq:Tag` node type.
 
-All tags have a namespace. If no namespace is specified, the tag is assigned to the default namespace, which is TagID `default` with the title `Standard Tags`, i.e. `/content/cq:tags/default`.
+All tags have a namespace. If no namespace is specified, the tag is assigned to the default namespace, which is TagID `default` with the title `Standard Tags`, that is, `/content/cq:tags/default`.
 
 ### Container Tags {#container-tags}
 

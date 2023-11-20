@@ -588,7 +588,7 @@ For more info, see the table in the [Default Configuration since AEM 6.3](#defau
 
 The exclusion of the 'administrators' group can be altered or expanded in the system console in the configuration section of **Apache Jackrabbit Oak CUG Exclude List**.
 
-Alternatively, it is possible to provide and deploy a custom implementation of the CugExclude interface to adjust the set of excluded principals in case of special needs. See the documentation on [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) for details and an example implementation.
+Alternatively, it is possible to provide and deploy a custom implementation of the CugExclude interface to adjust the set of excluded principals if there are special needs. See the documentation on [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) for details and an example implementation.
 
 ### Authentication: Setup and Configuration {#authentication-setup-and-configuration}
 
@@ -704,7 +704,7 @@ New installations of AEM will by default use the new implementations both for th
 
 ## Disabling CUG Authorization and Authentication Requirement {#disabling-cug-authorization-and-authentication-requirement}
 
-The new implementation may be disabled altogether in case a given installation does not make use of CUGs or uses different means for authentication and authorization.
+The new implementation may be disabled altogether in case a given installation does not use CUGs or uses different means for authentication and authorization.
 
 ### Disable CUG Authorization {#disable-cug-authorization}
 
@@ -792,7 +792,7 @@ This move from residual JCR properties to a dedicated access control policy has 
 
 **Target Node Defined By Policy**
 
-CUG policies are expected to be created at the JCR node defining the subtree to be subject to restricted read access. This is likely to be a AEM page in case the CUG is expected affect the whole tree.
+Create CUG policies at the JCR node defining the subtree to be subject to restricted read access. This is likely to be a AEM page in case the CUG is expected affect the whole tree.
 
 Note that placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the content s.str of a given page but will not take effect on any siblings or child pages. This may be a valid use case and it is possible to achieve with a repository editor that allows to apply fine grained access content. However, it contrasts the former implementation where placing a cq:cugEnabled property on the jcr:content node was internally remapped to the page node. This mapping is no longer performed.
 
@@ -833,7 +833,7 @@ As far as the `granite:loginPath` is concerned the same privilege is required to
 
 #### Target Node Defined By Mixin Type {#target-node-defined-by-mixin-type}
 
-Authentication requirements are expected to be created at the JCR node defining the subtree to be subject to enforced login. This is likely to be an AEM Page in case the CUG is expected to affect the whole tree and the UI for the new implementation will consequently add the auth-requirement mixin type on the page node.
+Create authentication requirements at the JCR node defining the subtree to be subject to enforced login. This is likely to be an AEM Page in case the CUG is expected to affect the whole tree and the UI for the new implementation will consequently add the auth-requirement mixin type on the page node.
 
 Placing the CUG policy only at the jcr:content node located below a given page will only restrict access to the contents, but will not take affect on the page node itself nor on any child pages.
 

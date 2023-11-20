@@ -73,7 +73,7 @@ You can configure the following properties for a Watched Folder.
 
 >[!NOTE]
 >
->If the server hosting the Watched Folder does not have any of the specified run-mode, then, the Watched Folder always activates regardless of the run-modes on the server.
+>If the server hosting the Watched Folder does not have any of the specified run-mode, then the Watched Folder always activates regardless of the run-modes on the server.
 
 * **outputFilePattern (String)**: Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern. [File and folder pattern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) can also specify a directory structure for the output files. It is a mandatory property.
 
@@ -129,7 +129,7 @@ For more information about file patterns, see [About file patterns](../../forms/
   * %m = minute
   * %s = second
   * %l = millisecond
-  * %R = random number (between 0 and 9)
+  * %R = random number (between 0&ndash;9)
   * %P = process or job id
 
   For example, if it is 8 PM on July 17, 2009 and you specify C:/Test/WF0/failure/%Y/%M/%D/%H/, the result folder is C:/Test/WF0/failure/2009/07/17/20
@@ -153,7 +153,7 @@ For more information about file patterns, see [About file patterns](../../forms/
 * **throttleOn (Boolean)**: When this option is selected, it limits the number of Watched Folder jobs that AEM Forms processes at any given time. The maximum number of jobs is determined by the Batch Size value. The defaut value is true. (See [About throttling](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Boolean)**: When set to True, files in the results folder and preserve folder are overwritten. When set to False, files and folders with a numeric index suffix are used for the name. The default value is False.
-* **preserveOnFailure (Boolean)**: Preserve input files in case of failure to execute the operation on a service. The default value is true.
+* **preserveOnFailure (Boolean)**: Preserve input files if there is failure to run the operation on a service. The default value is true.
 * **inputFilePattern (String)**: Specifies the pattern of the input files for a Watched Folder. Creates a allowlist of the files.
 * **asynch (Boolean)**: Identifies the invocation type as asynchronous or synchronous. The default value is true (asynchronous). The file processing is a resource consuming task, keep the value of the asynch flag to true to prevent choking the main thread of the scan job. In a clustered environment, it is critical to keep the flag true to enable load-balancing for the files being processed across the available servers. If the flag is false, the scan job attempts to perform processing for each top-level file/folder sequentially within its own thread. Do not set the flag to false without a specific reason, such as, workflow-based processing on a single-server setup.
 
@@ -487,7 +487,7 @@ For a Watched Folder endpoint, users can start file processing operations by cop
 
 For Watched Folder endpoints, if a job requires only one input file, the user can copy that file to the root of the Watched Folder.
 
-If the job contains more than one input file, the user must create a folder outside the Watched Folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if required by the process). After the job folder has been constructed, the user copies it into the Watched Folder's input folder.
+If the job contains more than one input file, the user must create a folder outside the Watched Folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if necessary by the process). After the job folder has been constructed, the user copies it into the Watched Folder's input folder.
 
 >[!NOTE]
 >
@@ -537,7 +537,7 @@ When Watched Folder cannot process the source files in the stage folder, you can
     * Change the includeFilePattern property for the Watched Folder to something that will not match any of the new input files (for example, enter NOMATCH).
     * Suspend the process that is creating new input files.
 
-   Wait until AEM Forms recovers and processes all of the files. The majority of the files should be recovered and any new input files processed correctly. The length of time you wait for Watched Folder to recover and process the files will depend on the length of the operation to invoke and the number of files to recover.
+   Wait until AEM Forms recovers and processes all files. The majority of the files should be recovered and any new input files processed correctly. The length of time you wait for Watched Folder to recover and process the files will depend on the length of the operation to invoke and the number of files to recover.
 
 1. Determine which files cannot be processed. If you waited an appropriate amount of time and completed the previous step, and there are still unprocessed files left in the stage folder, go to the next step.
 
@@ -576,7 +576,7 @@ Administrators can specify the type of file that can invoke a service. Multiple 
 * %h = hour,
 * %m = minute,
 * %s = second,
-* %R = random number between 0-9
+* %R = random number between 0&ndash;9
 * %J = Job name
 
 For example, the path to the result folder may be C:\Adobe\Adobe LiveCycle ES4\BarcodedForms\%y\%m\%d.

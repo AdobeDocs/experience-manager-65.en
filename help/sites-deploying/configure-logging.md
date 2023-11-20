@@ -99,7 +99,7 @@ The first is a special case as it controls both the `request.log` and `access.lo
 
     * Writes the messages to either `request.log` or `access.log`.
 
-These can be customized if required, though the standard configuration is suitable for most installations.
+These can be customized if necessary, though the standard configuration is suitable for most installations.
 
 The other pairs follow the standard configuration:
 

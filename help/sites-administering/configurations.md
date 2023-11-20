@@ -151,7 +151,7 @@ Now let's have a look at the corresponding JCR content:
 
 In this example, you can assume a WKND-specific DAM folder here and a corresponding configuration. Starting at that folder `/content/dam/wknd`, you can see that there is a string-property named `cq:conf` that references the configuration that should apply for the subtree. The property is set on the `jcr:content` of an asset folder or page. These `conf` links are explicit, so it is easy to follow them by just looking at the content in CRXDE.
 
-Jumping inside `/conf`, you can follow the reference and see that there is a `/conf/wknd` node. This is a configuration. Its lookup is transparent to the application code. The example code never has a dedicated reference to it, it's hidden behind the `Conf` object. Which configuration applies is controlled through the JCR content.
+Jumping inside `/conf`, you can follow the reference and see that there is a `/conf/wknd` node. This is a configuration. Its lookup is transparent to the application code. The example code never has a dedicated reference to it, it is hidden behind the `Conf` object. Which configuration applies is controlled through the JCR content.
 
 You can see that the configuration contains a fixed-named `settings` node that contains the actual items, including the `dam/imageserver` that you need in this case. Such an item can be thought of as a "settings document" and is represented by a `cq:Page` including a `jcr:content` holding the actual content.
 

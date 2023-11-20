@@ -35,7 +35,7 @@ This is done by configuring the [OSGi Service - Content Fragment Component Confi
 
 The services that require the registration of a component are:
 
-* Determining dependencies correctly during publication (i.e. ensure that fragments & models can be automatically published with a page if they have changed since last publication).
+* Determining dependencies correctly during publication (that is, ensure that fragments & models can be automatically published with a page if they have changed since last publication).
 * Support for content fragments in full text search.
 * The management/handling of *in-between content.*
 * The management/handling of *mixed media assets.*

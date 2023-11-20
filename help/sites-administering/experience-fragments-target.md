@@ -205,7 +205,7 @@ To avoid such situations:
 
 Experience Fragments contain full html tags and all the necessary Client Libraries (CSS/JS) to render the fragment exactly as it was created by the Experience Fragment Content Author. This is by-design.
 
-When using an Experience Fragment Offer with Adobe Target on a page that is being delivered by AEM, the Targeted page already contains all of the necessary Client Libraries. In addition, the extraneous html in the Experience Fragment Offer is not needed either (see [Considerations](#considerations)). 
+When using an Experience Fragment Offer with Adobe Target on a page that is being delivered by AEM, the Targeted page already contains all the necessary Client Libraries. In addition, the extraneous html in the Experience Fragment Offer is not needed either (see [Considerations](#considerations)). 
 
 The following is a pseudo-example of the html in an Experience Fragment Offer:
 
@@ -214,7 +214,7 @@ The following is a pseudo-example of the html in an Experience Fragment Offer:
 <html>
    <head>
       <title>…</title>
-      <!-- all of the client libraries (css/js) -->
+      <!-- all the client libraries (css/js) -->
       …
    </head>
    <body>

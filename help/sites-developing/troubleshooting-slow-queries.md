@@ -174,7 +174,7 @@ AEM supports the following query languages:
 * JCR-SQL2
 * XPath
 
-The following example uses Query Builder as it's the most common query language used by AEM developers, however the same principles are applicable to JCR-SQL2 and XPath.
+The following example uses Query Builder as its the most common query language used by AEM developers, however the same principles are applicable to JCR-SQL2 and XPath.
 
 1. Add a nodetype restriction so the query resolves to an existing Lucene Property Index.
 

@@ -1,14 +1,10 @@
 ---
 title: Configuring Segmentation with ContextHub
-seo-title: Configuring Segmentation with ContextHub
 description: Learn how to configure segmentation with Context Hub.
-seo-description: Learn how to configure segmentation with Context Hub.
-uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 ---
 # Configuring Segmentation with ContextHub{#configuring-segmentation-with-contexthub}
@@ -46,7 +42,7 @@ The **Segment Editor** lets you easily modify a segment. To edit a segment, sele
 
 Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
 
-When the entire statement evaluates to true then the segment has resolved. In the event of multiple segments being applicable, then the **Boost** factor is also used. See [Creating a New Segment](#creating-a-new-segment) for details on the [boost factor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+When the entire statement evaluates to true then the segment has resolved. If there are multiple applicable segments, then the **Boost** factor is also used. See [Creating a New Segment](#creating-a-new-segment) for details on the [boost factor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -100,7 +96,7 @@ The following segment comparisons are available out-of-the-box to evaluate segme
 
 >[!NOTE]
 >
->When comparing values, if the data type of the comparison is not set (i.e. set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
+>When comparing values, if the data type of the comparison is not set (that is, set to auto detect), ContextHub's segmentation engine will simply compare the values as javascript would. It does not cast values to their expected types, which can lead to misleading results. For example:
 >
 >`null < 30 // will return true`
 >
@@ -135,7 +131,7 @@ To define your new segment:
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if required and then tap or click **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if necessary and then tap or click **Create**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -158,7 +154,7 @@ To define your new segment:
 
 Using the AND and OR container components, you can construct complex segments in AEM. When doing this, it helps to be aware of a few basic points:
 
-* The top level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.
+* The top-level of the definition is always the AND container that is initially created. This cannot be changed, but does not have an effect on the rest of your segment definition.
 * Ensure that the nesting of your container makes sense. The containers can be viewed as the brackets of your boolean expression.
 
 The following example is used to select visitors who are considered in our prime age group:

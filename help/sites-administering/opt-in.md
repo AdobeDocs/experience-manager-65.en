@@ -1,14 +1,10 @@
 ---
 title: Opting Into Adobe Analytics and Adobe Target
-seo-title: Opting Into Adobe Analytics and Adobe Target
 description: Learn how to opt into Adobe Analytics and Adobe Target.
-seo-description: Learn how to opt into Adobe Analytics and Adobe Target.
-uuid: 9090a0f3-d373-4826-aa68-6aa82c0fbfbb
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
 ---
 # Opting Into Adobe Analytics and Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
@@ -108,7 +104,7 @@ The properties file is a text file named marketingcloud.properties that you save
 * target.email: The email address that you use to authenticate your Target account.
 * target.password: The password that is associated with your email address.
 
-Properties and values are separated with equal signs (=). The Analytics properties are prefixed with `analytics`, and the Target properties are prefixed with `target`. To configure a service, provide values for all of the properties for that service. If you do not want to configure a service, provide no values for that service.
+Properties and values are separated with equal signs (=). The Analytics properties are prefixed with `analytics`, and the Target properties are prefixed with `target`. To configure a service, provide values for all the properties for that service. If you do not want to configure a service, provide no values for that service.
 
 The following example `.properties` file includes the property values for creating a cloud configuration for Analytics:
 
@@ -185,8 +181,7 @@ Which parameters you send depends on the following:
   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
 
-* If you do not want to use the **marketingcloud.properties** file then you will have to send the credentials and parameters; for example:
-
+* If you do not want to use the **marketingcloud.properties** file then you must send the credentials and parameters. For example:
     * automaticProvisioning= `true`
     * servicename= `analytics|target`
     * path=path to an AEM page to attach the created cloud services configs; multiple paths can be defined

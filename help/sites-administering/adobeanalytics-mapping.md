@@ -153,7 +153,7 @@ Taking the above image as an example, the **AEM view** has the following propert
       1. To revert the inheritance, delete the unlocked component; after which it will regain its locked status.
 
    1. **Drag components here to include them in the analytics framework**: Components can be dragged from the Sidekick and dropped here.
-   1. You can find all of the components that are currently included in the analytics framework:
+   1. You can find all the components that are currently included in the analytics framework:
 
       1. To add a component drag one from the sidekick's Components tab
       1. To delete a component and all of its mappings, select Delete from the component's context menu then accept the deletion on the confirmation dialogue.

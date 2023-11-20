@@ -1,12 +1,10 @@
 ---
 title: Authoring Mobile Applications
 description: he AEM Mobile Dashboard lets you create, build and deploy your mobile application, create, delete, and edit application metadata. Follow this page to learn more.
-uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
 ---
 # Authoring Mobile Applications{#authoring-mobile-applications}
@@ -61,7 +59,7 @@ Content can be created, updated, and deleted in AEM Mobile in much the same way 
 
 Once you have added or modified your content through the Manage Page Content Tile, you are able to push those changes out to your customers with a Content Release update.
 
-Content Package allows the AEM App Author to manage page content in AEM and, have your development team make changes to your PhoneGap Shell Application (that is, app framework or infrastructure) and then push those changes out to your customers quickly and without needing to enlist a developer to resubmit to the various stores for distribution.
+Content Package allows the AEM App Author to manage page content in AEM and, have your development team change your PhoneGap Shell Application (that is, app framework or infrastructure) and then push those changes out to your customers quickly and without needing to enlist a developer to resubmit to the various stores for distribution.
 
 Content Package creates a ZIP file, considered a Content Release Package, for each update. These packages contain html resources and html pages that are generated while rendering the app and is intelligent enough to only package those files that have been modified since the last update.
 

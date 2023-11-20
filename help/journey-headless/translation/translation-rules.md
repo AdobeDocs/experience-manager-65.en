@@ -25,7 +25,7 @@ This document helps you understand how to use AEM's translation rules to identif
 
 ## Translation Rules {#translation-rules}
 
-Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all of the fields within a Content Fragment must to be translated.
+Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all the fields within a Content Fragment must to be translated.
 
 Translation rules identify the content that is included in, or excluded from, translation projects. When content is translated, AEM extracts or harvests the content based on these rules. In this way only content that must be translated is sent to the translation service.
 
@@ -40,7 +40,7 @@ Because Content Fragment Models, which define the structure of your Content Frag
 
 >[!TIP]
 >
->Generally the content architect provides the translation specialist with the **Property Name**s of all of the fields needed for translation. These names are needed to configure translation rules. As the translation specialist, you [can find these **Property Name**s yourself](getting-started.md#content-models) as previously described in this journey.
+>Generally the content architect provides the translation specialist with the **Property Name**s of all the fields needed for translation. These names are needed to configure translation rules. As the translation specialist, you [can find these **Property Name**s yourself](getting-started.md#content-models) as previously described in this journey.
 
 ## Creating Translation Rules {#creating-rules}
 
@@ -67,7 +67,7 @@ In the **Translation Configuration** UI, there are several options available for
    1. Enter the property name in the **New Property** field.
    1. The options **Translate** and **Inherit** are checked automatically.
    1. Tap or click **Add**.
-   1. Repeat these steps for all of the fields that you must translate.
+   1. Repeat these steps for all the fields that you must translate.
    1. Tap or click **Save**.
 ![Add property](assets/add-property.png)
 

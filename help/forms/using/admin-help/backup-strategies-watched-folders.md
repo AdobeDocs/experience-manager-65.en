@@ -168,4 +168,4 @@ The following strategies can minimize output and input folder data loss when res
 
 ## Conclusion {#conclusion}
 
-Due to the dynamic and constantly changing nature of a watched folder, restoration of watched folders should be done with files that are backed up within a day. A best practice would be backing up the results, storing the input folder on a server, and tracking input files so that you can resubmit the job in case of failure.
+Due to the dynamic and constantly changing nature of a watched folder, restoration of watched folders should be done with files that are backed up within a day. A best practice would be backing up the results, storing the input folder on a server, and tracking input files so that you can resubmit the job if there is failure.

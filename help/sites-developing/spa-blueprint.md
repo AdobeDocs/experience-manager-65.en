@@ -17,7 +17,7 @@ To enable the author to use the AEM SPA Editor to edit the content of an SPA, th
 
 ## Introduction {#introduction}
 
-This document describes the general contract that any SPA framework should fulfill (i.e. the kind of AEM support layer) to implement editable SPA components within AEM.
+This document describes the general contract that any SPA framework should fulfill (that is, the kind of AEM support layer) to implement editable SPA components within AEM.
 
 >[!NOTE]
 >

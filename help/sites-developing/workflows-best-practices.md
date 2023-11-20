@@ -82,7 +82,7 @@ When writing custom workflow processes, there are some things that should be kep
 
 ### Locations {#locations}
 
-Definitions of workflow models, launchers, scripts and notifications are held in the repository according to type; i.e. out-of-the-box, custom, among others.
+Definitions of workflow models, launchers, scripts and notifications are held in the repository according to type; that is, out-of-the-box, custom, among others.
 
 >[!NOTE]
 >
@@ -257,9 +257,9 @@ Saving a session:
 
 ### Minimize the Number/Scope of Launchers {#minimize-the-number-scope-of-launchers}
 
-There is one listener that is responsible for all of the [workflow launchers](/help/sites-administering/workflows-starting.md#workflows-launchers) that are registered:
+There is one listener that is responsible for all the [workflow launchers](/help/sites-administering/workflows-starting.md#workflows-launchers) that are registered:
 
-* It will listen for changes at all of the paths specified in the globbing properties of the other launchers.
+* It will listen for changes at all the paths specified in the globbing properties of the other launchers.
 * When an event is dispatched, the workflow engine will then evaluate each launcher to determine if it should run.
 
 Creating too many launchers will cause the evaluation process to run more slowly.

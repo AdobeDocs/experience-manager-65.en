@@ -1,14 +1,10 @@
 ---
 title: Configuring Business Calendars
-seo-title: Configuring Business Calendars
 description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
-seo-description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
-uuid: 0ba610b8-72a8-480c-8783-70d98cbe890a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 ---
 # Configuring Business Calendars {#configuring-business-calendars}
@@ -23,7 +19,7 @@ For example, a task reminder is configured to occur three business days after th
 
 ## Using the default business calendar {#using-the-default-business-calendar}
 
-AEM forms provides a default business calendar (named *Built-in Calendar*) that designates Saturdays and Sundays as non-working days. If all of the users in your organization have the same non-business days, you can update the default business calendar to suit your organization. When using only the default business calendar, you do not need to enable business calendars in User Management or provide any mappings. When no other business calendars are defined, AEM forms uses the default business calendar.
+AEM forms provides a default business calendar (named *Built-in Calendar*) that designates Saturdays and Sundays as non-working days. If all the users in your organization have the same non-business days, you can update the default business calendar to suit your organization. When using only the default business calendar, you do not need to enable business calendars in User Management or provide any mappings. When no other business calendars are defined, AEM forms uses the default business calendar.
 
 ## Setting up multiple business calendars {#setting-up-multiple-business-calendars}
 
@@ -33,7 +29,7 @@ If some of the users in your organization have different non-business days, you 
 
 1. Decide how you will associate the appropriate business calendar with a user. There are two ways to associate a business calendar with a user:
 
-   **Group membership:** You can assign a business calendar to a user based on the user’s group membership. In this case, each user in the group will use the same business calendar.
+   **Group membership:** You can assign a business calendar to a user based on the user's group membership. In this case, each user in the group will use the same business calendar.
 
    If a user is a member of two different groups, and those groups are mapped to two different business calendars, AEM forms will use the first calendar that it finds in its search results. In this case, consider using business calendar keys to associate users with business calendars.
 
@@ -122,7 +118,7 @@ AEM forms enables you to export and import your business calendars as XML files.
 
 >[!NOTE]
 >
->This feature exports and imports all of the defined business calendars, including the default business calendar provided by AEM forms. An imported business calendar with the same name as an existing calendar will overwrite the existing calendar.
+>This feature exports and imports all the defined business calendars, including the default business calendar provided by AEM forms. An imported business calendar with the same name as an existing calendar overwrites the existing calendar.
 
 ### Export business calendars {#export-business-calendars}
 

@@ -527,7 +527,7 @@ If you are a standalone Experience Manager Assets customer, you can manually add
 >
 >As this point, if you added interactivity with only hyperlinked web pages, you are done.
 >
->However, if you added any interactivity to trigger a Quickview, the thumbnails next to the interactive video are for display purposes only; they are not yet integrated with your existing Quickview. In such case, you now must integrate the interactive video with the existing Quickview on your website.
+>However, if you added any interactivity to trigger a Quickview, the thumbnails next to the interactive video are for display purposes only; they are not yet integrated with your existing Quickview. In such case, you must integrate the interactive video with the existing Quickview on your website.
 
 **Example**
 

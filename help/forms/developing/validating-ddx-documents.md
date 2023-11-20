@@ -150,7 +150,7 @@ Validate a DDX document by using the Assembler Service API (web service):
 
    >[!NOTE]
    >
-   >Replace localhost with the IP address of the forms server.
+   >Replace localhost with the IP address of the Forms Server.
 
 1. Create a PDF Assembler client.
 

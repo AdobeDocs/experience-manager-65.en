@@ -317,7 +317,7 @@ For code examples using the Document Security service, see the following Quick S
 
 ## Modifying Policies {#modifying-policies}
 
-You can modify an existing policy using the Document Security Java API or web service API. To make changes to an existing policy, you retrieve it, modify it, and then update the policy on the server. For example, assume that you retrieve an existing policy and extend its validity period. Before the change takes effect, you must update the policy.
+You can modify an existing policy using the Document Security Java API or web service API. To change an existing policy, you retrieve it, modify it, and then update the policy on the server. For example, assume that you retrieve an existing policy and extend its validity period. Before the change takes effect, you must update the policy.
 
 You can modify a policy when business requirements change and the policy no longer reflects these requirements. Instead of creating a policy, you can simply update an existing policy.
 
@@ -1322,12 +1322,12 @@ The following table lists key and value pairs that are required when creating a 
   <tr>
    <td><p><code>WaterBackCmd:OPACITY</code></p></td>
    <td><p>Specifies the opacity of the watermark. The default value is 0.5 if it is not specified.</p></td>
-   <td><p>A value between 0.0 and 1.0.</p></td>
+   <td><p>A value between 0.0&ndash;1.0.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:ROTATION</code></p></td>
    <td><p>Specifies the rotation of the watermark. The default value is 0 degrees.</p></td>
-   <td><p>A value between 0 and 359.</p></td>
+   <td><p>A value between 0&ndash;359.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
@@ -1471,7 +1471,7 @@ For code examples using the Document Security service, see the following Quick S
 
 ## Modifying Watermarks {#modifying-watermarks}
 
-You can modify an existing watermark using the Document Security Java API or web service API. To make changes to an existing watermark, you retrieve it, modify its attributes, and then update it on the server. For example, assume that you retrieve an watermark and modify its opacity attribute. Before the change takes effect, you must update the watermark.
+You can modify an existing watermark using the Document Security Java API or web service API. To change an existing watermark, you retrieve it, modify its attributes, and then update it on the server. For example, assume that you retrieve an watermark and modify its opacity attribute. Before the change takes effect, you must update the watermark.
 
 When you modify a watermark, the change impacts future documents that have the watermark applied to them. That is, existing PDF documents that contain the watermark are not affected.
 
@@ -1507,7 +1507,7 @@ To modify a watermark, you must retrieve an existing watermark. You can retrieve
 
 **Set the watermarks attributes**
 
-To modify an existing watermark, change the value of one or more watermark attributes. When programmatically updating a watermark using a web service, you must set all of the attributes that were originally set, even if the value does not change. For example, assume the following watermark attributes are set: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`, and `WaterBackCmd:SRCTEXT`. Although the only attribute that you want to modify is `WaterBackCmd:OPACITY`, you must set the other values are well.
+To modify an existing watermark, change the value of one or more watermark attributes. When programmatically updating a watermark using a web service, you must set all the attributes that were originally set, even if the value does not change. For example, assume the following watermark attributes are set: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`, and `WaterBackCmd:SRCTEXT`. Although the only attribute that you want to modify is `WaterBackCmd:OPACITY`, you must set the other values are well.
 
 >[!NOTE]
 >

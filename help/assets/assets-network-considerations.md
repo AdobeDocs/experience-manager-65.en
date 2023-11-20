@@ -65,9 +65,9 @@ Designing the topology of the [!DNL Experience Manager] environment requires det
 
 The sample scenario includes a publish farm with five servers, an S3 binary store, and Dynamic Media configured.
 
-The dispatcher shares it's 100Mbps connection with two entities, the outside world and the [!DNL Experience Manager] deployment. For simultaneous upload and download operations, you should divide this number by two. The attached external storage uses a separate connection.
+The dispatcher shares its 100Mbps connection with two entities, the outside world and the [!DNL Experience Manager] deployment. For simultaneous upload and download operations, you should divide this number by two. The attached external storage uses a separate connection.
 
-The [!DNL Experience Manager] deployment shares it's 1Gbps connection with multiple services. From a network topology perspective, it is equivalent to sharing a single channel with different services.
+The [!DNL Experience Manager] deployment shares its 1Gbps connection with multiple services. From a network topology perspective, it is equivalent to sharing a single channel with different services.
 
 Reviewing the network from the client device to the [!DNL Experience Manager] deployment, the smallest choke-point appears to be the 10 Mbit enterprise firewall throttle. You can use these values in the sizing calculator in the [Assets Sizing Guide](assets-sizing-guide.md) to determine the user experience.
 

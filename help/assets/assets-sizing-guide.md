@@ -74,11 +74,11 @@ For AWS operations, implementing a single central location (via Amazon S3), rath
 
 #### Performance concerns {#performance-concerns}
 
-A shared datastore requires the binaries to be stored on a network-mounted drive that is shared between all instances. Because these binaries are accessed over a network, the system performance is adversely impacted. You can partially mitigate the impact by using a fast network connection to a fast array of disks. However, this is an expensive proposition. In the case of AWS operations, all disks are remote and require network connectivity. Ephemeral volumes lose data when the instance starts or stops.
+A shared datastore requires the binaries to be stored on a network-mounted drive that is shared between all instances. Because these binaries are accessed over a network, the system performance is adversely impacted. You can partially mitigate the impact by using a fast network connection to a fast array of disks. However, this is an expensive proposition. If there are AWS operations, all disks are remote and require network connectivity. Ephemeral volumes lose data when the instance starts or stops.
 
 #### Latency {#latency}
 
-Latency in S3 implementations is introduced by the background writing threads. Backup procedures must take into account this latency. In addition, Lucene indexes may remain incomplete when making a backup. It applies to any time-sensitive file written to S3 datastore and accessed from another instance.
+Latency in S3 implementations is introduced by the background writing threads. Backup procedures must account for this latency. In addition, Lucene indexes may remain incomplete when making a backup. It applies to any time-sensitive file written to S3 datastore and accessed from another instance.
 
 ### Node store or document store {#node-store-document-store}
 

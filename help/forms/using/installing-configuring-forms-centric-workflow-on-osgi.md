@@ -1,13 +1,8 @@
 ---
 title: Installing and Configuring Forms-centric workflow on OSGi
-seo-title: Installing and Configuring Forms-centric workflow on OSGi
 description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
-seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
-uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
 topic-tags: installing
-discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
-
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 ---
@@ -15,7 +10,7 @@ exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 
 ## Introduction {#introduction}
 
-Enterprises collect and process data from multiple forms, back-end systems, and other data sources. The processing of data involves review and approval procedures, repetitive tasks, and data archiving. For example, reviewing a form and converting it to PDF document. When done manually, the repetitive tasks can take a lot of time and resources.
+Enterprises collect and process data from multiple forms, back-end systems, and other data sources. The processing of data involves review and approval procedures, repetitive tasks, and data archiving. For example, reviewing a form and converting it to PDF document. When done manually, the repetitive tasks can take much time and numerous resources.
 
 You can use [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md) to rapidly build adaptive forms-based workflows. These workflows can help you automate review and approval workflows, business process workflows, and other repetitive tasks. These workflows also help process documents (create, assemble, distribute, and archive PDF documents, add digital signatures to limit access to documents, decode barcoded forms, and more) and use Adobe Sign signature workflow with forms and documents.
 

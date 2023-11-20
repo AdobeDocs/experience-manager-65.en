@@ -39,7 +39,7 @@ To activate DEBUG log level, use the CRX explorer to set the
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
 ```
 
-property to debug. Do not leave the log at the DEBUG log level longer than necessary, as it generates a lot of logs.
+property to debug. Do not leave the log at the DEBUG log level longer than necessary, as it generates numerous logs.
 
 A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example:
 

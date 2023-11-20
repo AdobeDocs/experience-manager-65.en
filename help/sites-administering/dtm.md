@@ -242,7 +242,7 @@ Manually download the Dynamic Tag Management libraries to immediately update the
 
 ## Associating a Dynamic Tag Management Configuration With Your Site {#associating-a-dynamic-tag-management-configuration-with-your-site}
 
-Associate your Dynamic Tag Management configuration with the pages of your web site so that AEM adds the required script to the pages. Associate the root page of your site with the configuration. All descendants of that page inherit the association. If required, you can override the association on a descendant page.
+Associate your Dynamic Tag Management configuration with the pages of your web site so that AEM adds the required script to the pages. Associate the root page of your site with the configuration. All descendants of that page inherit the association. If necessary, you can override the association on a descendant page.
 
 Use the following procedure to associate a page and the descendants with a Dynamic Tag Management configuration.
 
@@ -254,7 +254,7 @@ Use the following procedure to associate a page and the descendants with a Dynam
 
 1. Use the Dynamic Tag Management drop-down menu to select your configuration, and then click OK.
 
-Use the following procedure to override the inherited configuration association for a page. The override affects the page and all of the page descendants.
+Use the following procedure to override the inherited configuration association for a page. The override affects the page and all the page descendants.
 
 1. Open the page in the classic UI.
 1. Use Sidekick to open the page properties.

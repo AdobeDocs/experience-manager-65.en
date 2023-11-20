@@ -1,12 +1,10 @@
 ---
 title: Creating and Editing Apps Using the Apps Console
 description: Follow this page to learn about creating and editing apps using apps console.
-uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 ---
 # Creating and Editing Apps Using the Apps Console{#creating-and-editing-apps-using-the-apps-console}
@@ -85,7 +83,7 @@ The following procedure uses the Touch UI to create a mobile application.
 
    ![The Create icon indicated by a plus sign inside a square.](do-not-localize/chlimage_1-7.png)
 
-1. (Optional) On the Advanced tab, provide a description for the application, and change the server URL if required.
+1. (Optional) On the Advanced tab, provide a description for the application, and change the server URL if necessary.
 1. (Optional) If you are using PhoneGap Build to compile the application, on the Build tab, select the Configuration to use.
 
    To create a PhoneGap build configuration, click Manage Configurations.
@@ -168,7 +166,7 @@ This is a feature that is available with Apps 6.1 Feature Pack 2 and provides an
 What is an app template? Think of it as a collection of page templates and components that represent a baseline or foundation of an app.
 When creating an app based on the template of another app, you will get an app that has a starting point representative of the app in which it was created from.
 
-You must have an existing mobile app template (or an app installed that has an app template) to make use of this feature.
+You must have an existing mobile app template (or an app installed that has an app template) to use this feature.
 
 The latest AEM Apps 6.1 samples package includes an updated version of the Geometrixx app with an app template. Alternatively, you can install the StarterKit which also provides a template.
 
@@ -305,7 +303,7 @@ The Swipe Carousel component provides the following values for the Build List Us
 
 **Child Pages**
 
-The component lists all of the child pages of a specific page. After you select this value, select the page on the Child Pages tab, or specify no value to list the children of the current page.
+The component lists all the child pages of a specific page. After you select this value, select the page on the Child Pages tab, or specify no value to list the children of the current page.
 
 **Fixed List**
 

@@ -187,6 +187,26 @@ When a page is associated with an Adobe Analytics framework, the number of page 
 
 See [Seeing Page Analytics Data](/help/sites-authoring/page-analytics-using.md) for further details.
 
+<!-- SP19
+### Configuring the Import Interval {#configuring-the-import-interval}
+
+Configure the appropriate instance of the **Adobe AEM Analytics Report Sling Importer** service:
+
+* **Fetch attempts**:
+  Number of attempts to fetch a queued report. 
+  The default is `6`.
+
+* **Fetch delay**:
+  The number of milliseconds between attempts to fetch a queued report. 
+  The default is `10000`. As this is in milliseconds it corresponds to 10 seconds.
+
+* **Fetch frequency**:
+  A `cron` expression to determine the frequency for fetching the Analytics Report. 
+  The default is `0 0 0/12 * * ?`; this corresponds to 12 fetches every hour.
+
+To configure this OSGi service, you can either use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or an [osgiConfig node in the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (the service PID is `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
+-->
+
 ### Configuring the Import Interval {#configuring-the-import-interval}
 
 Configure the appropriate instance of the **Adobe AEM Managed Polling Configuration** service:

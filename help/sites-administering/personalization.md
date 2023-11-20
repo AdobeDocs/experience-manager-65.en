@@ -1,14 +1,10 @@
 ---
 title: Personalization
-seo-title: Personalization
 description: Learn about personalization in Adobe Experience Manager to provide the user with a tailor-made environment displaying dynamic content.
-seo-description: Learn about personalization in AEM.
-uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
 ---
 # Personalization {#personalization}
@@ -109,7 +105,7 @@ When using personalization, consider the following:
 
 * Personalization realized by tracking the user's behavior, or setting rules based on the user's profile, must be accurate and logical.
 * There is nothing more frustrating to the user than having content forced upon, or denied to, them because of the inaccurate logic of a rule.
-* Therefore rules must be well thought-out - with the user's requirements in the foreground. This can take a lot of effort, and is not to be under-estimated; defining the business rules often outweighs the technical effort when implementing personalization.
+* Therefore rules must be well thought-out - with the user's requirements in the foreground. This can take much effort, and is not to be under-estimated; defining the business rules often outweighs the technical effort when implementing personalization.
 
 #### When to Use {#when-to-use}
 
@@ -151,7 +147,7 @@ Various components are provided with AEM for personalization. Some allow users t
 | Forms Text Field |Text field that allows users to enter information. |
 | My Gadgets |Lets you include one of a selection of gadgets available. |
 | Profile Avatar Photo |Allows input of an Avatar Photo. |
-| Profile Detailed Name |Input of name details, including elements such as title, middle name and suffix if required. |
+| Profile Detailed Name |Input of name details, including elements such as title, middle name and suffix if necessary. |
 | Profile Display Name |Name to be displayed. |
 | Profile E-mail |Input of an e-mail address. |
 | Profile Gender |Allows input of the gender. |

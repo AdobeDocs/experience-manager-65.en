@@ -43,7 +43,7 @@ The Modules section lists all the ContextHub UI modules that have been configure
 
 ## Clientlibs {#clientlibs}
 
-The Clientlibs section lists all of the client library folders that ContextHub has loaded. The client libraries are categorized:
+The Clientlibs section lists all the client library folders that ContextHub has loaded. The client libraries are categorized:
 
 * **kernel.js:** Client libraries that implement the ContextHub framework, the segment engine, and store types.
 * **ui.js:** Client libraries that implement the ContextHub UI and UI module types.

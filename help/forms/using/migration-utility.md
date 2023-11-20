@@ -21,19 +21,19 @@ The Migration utility converts the [Adaptive Forms assets](../../forms/using/int
 
 >[!NOTE]
 >
->In the case of an out-of-place upgrade, for Correspondence Management assets, you can run the migration every time you import the assets. For Correspondence Management migration, you must have the Forms Compatibility Package installed.
+>If there is an out-of-place upgrade, for Correspondence Management assets, you can run the migration every time you import the assets. For Correspondence Management migration, you must have the Forms Compatibility Package installed.
 
 ## Approach to migration {#approach-to-migration}
 
 You can [upgrade](../../forms/using/upgrade.md) to the latest version of AEM Forms 6.5 from AEM Forms 6.4, 6.3, or 6.2, or a new installation. Depending on whether you upgraded your previous installation or performed a fresh install, you must do one of the following:
 
-**In the case of an in-place upgrade**
+**If there is an in-place upgrade**
 
 If you performed an in-place upgrade, the upgraded instance already has the assets and documents. However, before you can use the assets and documents, you must install the [AEMFD Compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (includes Correspondence Management Compatibility package)
 
 Then you must update the assets and documents by [running the Migration utility](#runningmigrationutility).
 
-**In the case of an out-of-place installation**
+**If there is an out-of-place installation**
 
 If it is an out of place (fresh) installation, before you can use the assets and documents, you must install the [AEMFD Compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (includes the Correspondence Management Compatibility package).
 

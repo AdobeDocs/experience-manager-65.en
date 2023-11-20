@@ -36,7 +36,7 @@ App templates provide an easy way to use existing designs created by devlopers, 
 What is an app template? Think of it as a collection of page templates and components that represent a baseline or foundation of an app.
 When creating an app based on the template of another app, you will get an app that has a starting point representative of the app in which it was created from.
 
-You must have an existing mobile app template (or an app installed that has an app template) to make use of this feature.
+You must have an existing mobile app template (or an app installed that has an app template) to use this feature.
 
 The latest AEM Apps samples package includes an updated version of the Geometrixx app with an app template. Alternatively, you can install the [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) which also provides a template.
 

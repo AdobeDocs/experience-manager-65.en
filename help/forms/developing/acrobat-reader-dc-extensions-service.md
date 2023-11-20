@@ -65,7 +65,7 @@ The following Java code example applies usage rights to a PDF document named *Lo
      * SOAP required JAR files are in the following path: 
      * <install directory>/sdk/client-libs/thirdparty 
      * 
-     * If you want to invoke a remote forms server instance and there is a 
+     * If you want to invoke a remote Forms Server instance and there is a 
      * firewall between the client application and the server, then it is  
      * recommended that you use the SOAP mode. When using the SOAP mode,  
      * you have to include these additional JAR files 
@@ -177,7 +177,7 @@ The following Java code example removes usage rights from a rights-enabled PDF d
      * 
      * <install directory>/jboss/bin/client 
      * 
-     * If you want to invoke a remote forms server instance and there is a 
+     * If you want to invoke a remote Forms Server instance and there is a 
      * firewall between the client application and the server, then it is  
      * recommended that you use the SOAP mode. When using the SOAP mode,  
      * you have to include additional JAR files in the following  
@@ -277,7 +277,7 @@ The following Java code example retrieves information about the credential that 
      * 
      * <install directory>/jboss/bin/client 
      * 
-     * If you want to invoke a remote forms server instance and there is a 
+     * If you want to invoke a remote Forms Server instance and there is a 
      * firewall between the client application and the server, then it is  
      * recommended that you use the SOAP mode. When using the SOAP mode,  
      * you have to include additional JAR files in the following  

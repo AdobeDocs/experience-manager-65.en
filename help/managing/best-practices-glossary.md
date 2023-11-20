@@ -96,7 +96,7 @@ Apart from standard Adobe Experience Manager (AEM) maintenance tasks, you must d
 
 ### Appropriately Trained Staff {#appropriately-trained-staff}
 
-Ensure that your team is made up of staff with the appropriate training. For project teams the recommendation is to have all of the following:
+Ensure that your team is made up of staff with the appropriate training. For project teams the recommendation is to have all the following:
 
 * at least one AEM certified Lead Developer
 * at least one AEM certified Architect

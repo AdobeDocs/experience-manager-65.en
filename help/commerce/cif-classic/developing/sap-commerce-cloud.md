@@ -637,7 +637,7 @@ public interface ImportHandler {
   * Creates a category from the given values.
   * @param ctx           The importer context
   * @param values        The category's properties
-  * @param parentPath    Path of parent category or base path of import in case of root category
+  * @param parentPath    Path of parent category or base path of import if there is a root category
   * @return Path of created category
   */
   public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;

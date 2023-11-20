@@ -294,7 +294,7 @@ If you followed the previous examples, your external SPA is now editable within 
 
 ### Root Node ID {#root-node-id}
 
-By default, we assume that the React application is rendered inside a `div` of element ID `spa-root`. If required, this can be customized.
+By default, we assume that the React application is rendered inside a `div` of element ID `spa-root`. If necessary, this can be customized.
 
 For example, assume we have a SPA in which the application is rendered inside a `div` of element ID `root`. This needs to be reflected across three files.
 

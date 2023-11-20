@@ -95,7 +95,7 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 ### Creating a Test Plan {#creating-a-test-plan}
 
-Each customer's implementation of AEM is unique and has been customized to meet their business requirements. As a result, it is important to determine all of the customizations that have been made to the system so that they can be included in a test plan. This test plan will power the QA process that Adobe performs on the upgraded instance.
+Each customer's implementation of AEM is unique and has been customized to meet their business requirements. As a result, it is important to determine all the customizations that have been made to the system so that they can be included in a test plan. This test plan will power the QA process that Adobe performs on the upgraded instance.
 
 ![test-plan](assets/test-plan.png)
 
@@ -129,7 +129,7 @@ Review the Technical Requirements for AEM 6.5 and ensure that your current hardw
 
 #### Content Restructuring Considerations {#content-restructuring-considerations}
 
-AEM has introduced changes to the repository structure that will help in making upgrades more seamless. The changes involve moving content out of the /etc folder to folders including /libs, /apps, and /content, based on whether Adobe or a customer owns the content, thus limiting the chances of overwriting content during releases. The repository restructuring has been done in such a way that it should not require code changes at the time of 6.5 upgrade, although it's recommended to review the details at [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring.md) while planning an upgrade.
+AEM has introduced changes to the repository structure that will help in making upgrades more seamless. The changes involve moving content out of the /etc folder to folders including /libs, /apps, and /content, based on whether Adobe or a customer owns the content, thus limiting the chances of overwriting content during releases. The repository restructuring has been done in such a way that it should not require code changes at the time of 6.5 upgrade, although it is recommended to review the details at [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring.md) while planning an upgrade.
 
 ### Assessing Upgrade Complexity {#assessing-upgrade-complexity}
 
@@ -145,7 +145,7 @@ The Pattern Detector introduced in recently should give you a fairly accurate es
 
 ### Building the Upgrade and Rollback Runbook {#building-the-upgrade-and-rollback-runbook}
 
-While Adobe has documented the process for upgrading an AEM instance, each customer's network layout, deployment architecture, and customizations require fine-tuning and tailoring of this approach. For this reason, Adobe encourages you to review all of the provided documentation and use it to inform a project-specific runbook that outlines the specific upgrade and rollback procedures that you will be following in your environment. If upgrading from CRX2, make sure to evaluate how long the content migration will take when moving from CRX2 to Oak. For large repositories, it could be substantial.
+While Adobe has documented the process for upgrading an AEM instance, each customer's network layout, deployment architecture, and customizations require fine-tuning and tailoring of this approach. For this reason, Adobe encourages you to review all the provided documentation and use it to inform a project-specific runbook that outlines the specific upgrade and rollback procedures that you will be following in your environment. If upgrading from CRX2, make sure to evaluate how long the content migration will take when moving from CRX2 to Oak. For large repositories, it could be substantial.
 
 ![runbook-diagram](assets/runbook-diagram.png)
 

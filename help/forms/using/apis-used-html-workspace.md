@@ -379,7 +379,7 @@ The following APIs are used in the AEM Forms workspace.
    <td>It uploads a note on the server for a task.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer (It's also called directly from html template)<br /> </td>
+   <td>uploadRMAToServer (It is also called directly from html template)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
    <td>It uploads an attachment on the server for a task.</td>

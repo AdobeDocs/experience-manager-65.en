@@ -1,20 +1,16 @@
 ---
 title: Form Bridge APIs for HTML5 forms
-seo-title: Form Bridge APIs for HTML5 forms
 description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
-seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
-uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
-discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
 ---
 # Form Bridge APIs for HTML5 forms {#form-bridge-apis-for-html-forms}
 
 You can use the Form Bridge APIs to open a communication channel between an XFA-based HTML5 forms and your applications. The Form Bridge APIs provides a **connect** API to create the connection.
 
-The **connect** API accepts a handler as an argument. After the a successful connection is created between XFA-based HTML5 form and Form Bridge, the handle is invoked.
+The **connect** API accepts a handler as an argument. After a successful connection is created between XFA-based HTML5 form and Form Bridge, the handle is invoked.
 
 You can use the following sample code to create the connection.
 
@@ -170,7 +166,7 @@ Returns the version number of the Scripting library
 
 * **Input:** Som expression of the field on which to set focus
 * **Output:** None
-* **Error:** Throws an exception in case of incorrect Som expression
+* **Error:** Throws an exception if there is an incorrect Som expression
 
 **setFieldValue (som, value)** Sets the value of the fields for the given Som expressions
 
@@ -180,7 +176,7 @@ Returns the version number of the Scripting library
     * **value:** Array containing values corresponding to Som expressions provided in a **som**array. If the data type of the value is not the same as the fieldType, the value is not modified.
 
 * **Output:** None
-* **Error:** Throws an Exception in the case of an incorrect Som expression
+* **Error:** Throws an Exception if there is an incorrect Som expression
 
 **getFieldValue (som)** Returns the value of the fields for the given Som expressions
 

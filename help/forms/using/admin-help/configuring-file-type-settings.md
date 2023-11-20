@@ -210,7 +210,7 @@ Enable these options to specify the window appearance:
 
 ## Flash videos to PDF settings {#flash-videos-to-pdf-settings}
 
-PDF Generator supports the ability to submit a video for Adobe Flash (SWF or FLV file) and create a PDF file with a video for Adobe Flash embedded in it. This conversion does not require Adobe Flash Player to be installed on the forms server. For instructions about accessing this option, see [Create or edit file type settings](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator supports the ability to submit a video for Adobe Flash (SWF or FLV file) and create a PDF file with a video for Adobe Flash embedded in it. This conversion does not require Adobe Flash Player to be installed on the Forms Server. For instructions about accessing this option, see [Create or edit file type settings](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Filename Extensions:** Comma-separated list of filename extensions that can be converted.
 
@@ -245,7 +245,7 @@ For instructions about accessing this setting, see [Create or edit file type set
 
     * If necessary, select a different fonts directory from the **Font source** drop-down menu. This drop-down menu lists fonts directories specified in **Home &gt; Settings &gt; Core System &gt; Core Configurations**.
     * Select one or more fonts from the **Available Fonts** list and click **Add**. These fonts are added to the **Fonts to Unembed** list.
-    * If you want to unembed some fonts that don't exist on the forms server, enter the names of those fonts in the **Add fonts to unembed** box. Click **Add**.
+    * If you want to unembed some fonts that don't exist on the Forms Server, enter the names of those fonts in the **Add fonts to unembed** box. Click **Add**.
 
    >[!NOTE]
    >
@@ -307,7 +307,7 @@ Preserve Overprint: Blends the color of transparent artwork with the background 
 
 The following table shows common types of printers and their resolution measured in dpi, their default screen ruling measured in lines per inch (lpi), and a resampling resolution for images measured in pixels per inch (ppi). For example, if you were printing to a 600-dpi laser printer, you would enter 170 for the resolution at which to resample images.
 
-**Images** Select Images to specify compression and resampling options for color, grayscale, and monochrome images. You may want to experiment with these options to find an appropriate balance between file size and image quality.The resolution setting for color and grayscale images should be 1.5 to 2 times the line screen ruling at which the file will be printed. The resolution for monochrome images should be the same as the output device, but be aware that saving a monochrome image at a resolution higher than 1500 dpi increases the file size without noticeably improving image quality. Images that will be magnified, such as maps, may require higher resolutions.
+**Images** Select Images to specify compression and resampling options for color, grayscale, and monochrome images. You may want to experiment with these options to find an appropriate balance between file size and image quality.The resolution setting for color and grayscale images should be 1.5 to 2 times the line screen ruling at which the file will be printed. The resolution for monochrome images should be the same as the output device, but saving a monochrome image at a resolution higher than 1500 dpi increases the file size without noticeably improving image quality. Images that will be magnified, such as maps, may require higher resolutions.
 
 >[!NOTE]
 >

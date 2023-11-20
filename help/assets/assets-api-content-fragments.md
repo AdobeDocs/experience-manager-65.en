@@ -172,7 +172,7 @@ The response will contain paging information as part of the `properties` section
 
 >[!NOTE]
 >
->Paging is typically applied on container entities (i.e. folders or assets with renditions), as it relates to the children of the requested entity.
+>Paging is typically applied on container entities (that is, folders or assets with renditions), as it relates to the children of the requested entity.
 
 #### Example: Paging {#example-paging}
 
@@ -225,7 +225,7 @@ Content fragments:
 * Do not expose any binary data.
 * Are completely contained in the JSON output (within the `properties` property).
 
-* Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
+* Are also considered atomic, that is, the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
 #### Content Models and Content Fragments {#content-models-and-content-fragments}
 

@@ -66,7 +66,7 @@ Where
 
 * `events` is either a string or a string array (for multiple events).
 
-* `values` contains all of the values to be tracked
+* `values` contains all the values to be tracked
 * `collect` is optional and will return an array containg the event and data object.
 * `options` is optional and contains link tracking options like HTML element `obj` and ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 

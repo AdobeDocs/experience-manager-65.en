@@ -22,7 +22,7 @@ Perform the following tasks to control how and when live copies are synchronized
 
 ## Installed and Custom Rollout Configurations {#installed-and-custom-rollout-configurations}
 
-This section provides information about the installed rollout configurations and the synchronization actions that they use, and how to create custom configurations if required.
+This section provides information about the installed rollout configurations and the synchronization actions that they use, and how to create custom configurations if necessary.
 
 >[!CAUTION]
 >
@@ -314,7 +314,7 @@ The following table describes the properties that you can configure:
 
 Several properties and node types are excluded by default, these are defined in the OSGi configuration of **CQ MSM Content Update Action**, under **Excluded Page Properties**.
 
-By default properties matching the following regular expressions are excluded (i.e. not updated) on rollout:
+By default properties matching the following regular expressions are excluded (that is, not updated) on rollout:
 
 ![CQ MSM Content Update Action](assets/chlimage_1.png)
 
@@ -362,8 +362,8 @@ The following list of locations where you can specify the rollout configurations
 
 For example, a blueprint uses the We.Retail Reference Site as source content. A site is created from the blueprint. Each item in the following list describes a different scenario regarding the use of rollout configurations:
 
-* None of the blueprint pages or the live copy pages are configured to use a rollout configuration. MSM uses the system default rollout configuration for all of the live copy pages.
-* The root page of the We.Retail Reference Site is configured with several rollout configurations. MSM uses these rollout configurations for all of the live copy pages.
+* None of the blueprint pages or the live copy pages are configured to use a rollout configuration. MSM uses the system default rollout configuration for all the live copy pages.
+* The root page of the We.Retail Reference Site is configured with several rollout configurations. MSM uses these rollout configurations for all the live copy pages.
 * The root page of the We.Retail Reference Site is configured with several rollout configurations, and the root page of the live copy site is configured with a different set of rollout configurations. MSM uses the rollout configurations that are configured on the root page of the live copy site.
 
 ### Setting the Rollout Configurations for a Live Copy Page {#setting-the-rollout-configurations-for-a-live-copy-page}
@@ -380,7 +380,7 @@ You can also configure the rollout configurations for a live copy page when you 
 
    ![Configuration](assets/chlimage_1-1.png)
 
-1. If required, adjust the **Live Copy Inheritance** flag. If checked the live copy configuration is effective on all children.
+1. If necessary, adjust the **Live Copy Inheritance** flag. If checked the live copy configuration is effective on all children.
 
 1. Clear the **Inherit Rollout Configuration From Parent** property, then select one or more rollout configurations from the list.
 
