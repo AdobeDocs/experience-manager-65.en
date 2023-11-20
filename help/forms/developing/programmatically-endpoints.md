@@ -1229,7 +1229,7 @@ After you specify the connector type, you can retrieve information about the con
 
 Retrieve endpoint connector information by using the Java API:
 
-1. Include project files. .
+1. Include project files.
 
    Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path.
 
