@@ -35,5 +35,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [6.5.0](previous/ga.md)
 + [AEM Forms service pack installation instructions](aem-forms-current-service-pack-installation-instructions.md)
 + [AEM Forms JEE patch installer](jee-patch-installer-65.md)
++ [AEM Forms Service Pack Hotfix](/help/release-notes/aem-forms-hotfix.md)
 + [Deprecated and removed features](deprecated-removed-features.md)
 + [Touch UI feature status](touch-ui-features-status.md)
