@@ -286,9 +286,7 @@ For instructions to install the service pack on Experience Manager Forms, see [E
 
 >[!NOTE]
 >
->The AEM Forms feature, such as Adaptive Forms, available in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), are intended for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms. 
-
-
+>The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
 
 ### Install GraphQL Index Package for Experience Manager Content Fragments{#install-aem-graphql-index-add-on-package}
 
@@ -458,17 +456,15 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
 * When a redirect URL is set in the guide container of an Adaptive Form, the inline signing stops working. (FORMS-10493)
-* All Document of Record (DoR) templates fail to publish. Only English locale-based DoR templates and their associated Forms-based DoR templates are published. (FORMS-10535)
+To resolve the issue, download and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* All Document of Record (DoR) templates fail to publish. Only English locale-based DoR templates and their associated Forms-based DoR templates get published. (FORMS-10535)
+To resolve the issue, download and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+
 
 #### Interactive Communications
 
 * After upgrading to AEM Service Pack 18, it is not possible to open the Interactive Communication with large inline images in the Edit mode. (FORMS-10578)
-To resolve the issue, perform the following steps:
-
-  1. Download [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) from SD link.
-  1. Extract the Hotfix archive file so you can obtain an Experience Manager package (.zip) and bundle (.jar) files.
-  1. Upload and install the package (.zip) via the Package Manager.
-  1. Open the configuration manager bundles `https://server:host/system/console/bundles`, upload, and install the bundle (.jar). 
+To resolve the issue, download and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
