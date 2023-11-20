@@ -251,7 +251,7 @@ Use the **Edit Show/Hide Rules** dialog box to specify the conditions under whic
 Use the fields at the top of the dialog box to specify the following information:
 
 * Whether you are specifying conditions for hiding or showing the component.
-* Whether any or all of the conditions need to be true to show or hide the component.
+* Whether any or all the conditions need to be true to show or hide the component.
 
 One or more conditions appear below these fields. A condition compares the value of another form component (on the same form) to a value. If the actual value in the field satisfies the condition, the condition evaluates to true. Conditions include the following information:
 

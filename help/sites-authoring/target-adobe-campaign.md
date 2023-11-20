@@ -100,4 +100,4 @@ To create a newsletter with targeted content:
 
    >[!NOTE]
    >
-   >If you also set the segments up in Adobe Campaign, clicking **Preview** will show you the experiences for each segment.
+   >If you also set up the segments in Adobe Campaign, clicking **Preview** will show you the experiences for each segment.

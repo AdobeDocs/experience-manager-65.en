@@ -18,7 +18,7 @@ exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
-Adaptive forms provides support for various XFA events, properties, scripts, and validations defined in an XDP file, including:
+Adaptive forms supports various XFA events, properties, scripts, and validations defined in an XDP file, including:
 
 * Execution of scripts defined on events in the XDP file.
 * Capturing default values and behavioral properties for fields in the XDP file.

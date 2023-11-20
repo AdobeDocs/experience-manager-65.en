@@ -130,6 +130,6 @@ You can specify details:
 
 ## Starting a Workflow from the Page Editor {#starting-a-workflow-from-the-page-editor}
 
-When editing a page you can select **Page Information** from the toolbar. The drop-down menu has the option **Start in Workflow**. This opens a dialog box where you can specify the required workflow, together with a title if required:
+When editing a page you can select **Page Information** from the toolbar. The drop-down menu has the option **Start in Workflow**. This opens a dialog box where you can specify the required workflow, together with a title if necessary:
 
 ![wf-54](assets/wf-54.png)

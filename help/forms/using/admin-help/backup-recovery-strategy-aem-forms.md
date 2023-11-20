@@ -55,11 +55,11 @@ To prevent data loss, the AEM forms specific data must be backed up in a way tha
 
 Use the following guidelines if you must recover AEM forms into a different environment because of the following changes:
 
-* Change in the IP address, hostname, or port of the AEM forms server
+* Change in the IP address, hostname, or port of the AEM Forms Server
 * Change in the drive letters or directory path
 * Change to a different database host, port, or name
 
-Typically, such recovery scenarios are caused by hardware failure of the server that hosts the application server, database server, or forms server. In addition to the AEM forms-specific configurations that are described in this section, you should also make the necessary changes for other parts of the AEM forms deployment such as load balancers and firewalls, if the hostname or IP address of an AEM forms server changes.
+Typically, such recovery scenarios are caused by hardware failure of the server that hosts the application server, database server, or Forms Server. In addition to the AEM forms-specific configurations that are described in this section, you should also make the necessary changes for other parts of the AEM forms deployment such as load balancers and firewalls, if the hostname or IP address of an AEM Forms Server changes.
 
 ### What cannot be changed {#what-cannot-be-changed}
 
@@ -67,7 +67,7 @@ Even though you can change the database server and many other parameters, you ca
 
 ### Restarting after a recovery {#restarting-after-a-recovery}
 
-Before you restart the forms server after a recovery, do the following:
+Before you restart the Forms Server after a recovery, do the following:
 
 1. Start the system in maintenance mode.
 1. Do the following to ensure that Form Manager is synced with AEM forms in the maintenance mode:
@@ -98,4 +98,4 @@ Use the `LCSetGDS`script in the `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCo
 >
 >This circumstance is the only one under which you should use this script to change the GDS location. To change the GDS location while AEM forms is running, use Administration Console. (See [Configure general AEM forms settings](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
-After you set the GDS path, start the forms server in maintenance mode, and use the administration console to update the remaining file system paths for the new node. After you verify that all of the necessary configurations are updated, restart and test AEM forms.
+After you set the GDS path, start the Forms Server in maintenance mode, and use the administration console to update the remaining file system paths for the new node. After you verify that all the necessary configurations are updated, restart and test AEM forms.

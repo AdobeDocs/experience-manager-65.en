@@ -731,7 +731,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      SAX2 is Free!
 
      I hereby abandon any property rights to SAX 2.0 (the Simple API for
-     XML), and release all of the SAX 2.0 source code, compiled code, and
+     XML), and release all the SAX 2.0 source code, compiled code, and
      documentation contained in this distribution into the Public Domain.
      SAX comes with NO WARRANTY or guarantee of fitness for any
      purpose.
@@ -989,7 +989,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      license and the Export Control Guidelines as set forth in the Terms
      of Use on Sun's website.  By viewing, downloading or otherwise
      copying the Specification, you agree that you have read,
-     understood, and will comply with all of the terms and conditions
+     understood, and will comply with all the terms and conditions
      set forth herein.
 
      Sun hereby grants you a fully-paid, non-exclusive, non-transferable,
@@ -1000,12 +1000,12 @@ The following table lists third-party libraries used within the Communiqué Serv
      applications intended to run on the Java platform or creating a
      clean room implementation of the Specification that: (i) includes a
      complete implementation of the current version of the Specification,
-     without subsetting or supersetting; (ii) implements all of the
+     without subsetting or supersetting; (ii) implements all the
      interfaces and functionality of the Specification without subsetting
      or supersetting; (iii) includes a complete implementation of any
      optional components (as defined by the Specification) which you
      choose to implement, without subsetting or supersetting; (iv)
-     implements all of the interfaces and functionality of such optional
+     implements all the interfaces and functionality of such optional
      components, without subsetting or supersetting; (v) does not add any
      additional packages, classes or interfaces to the "java.*" or
      "javax.*" packages or subpackages or other packages defined by the

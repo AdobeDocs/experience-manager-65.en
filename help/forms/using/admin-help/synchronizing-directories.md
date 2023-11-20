@@ -17,7 +17,7 @@ To synchronize domains, you can choose to do a manual or scheduled synchronizati
 
 Directory synchronization is used to pull details from the directory servers that you specified in your directory settings into the User Management database. Later, you can also do a manual synchronization if changes or updates occur on the directory servers. For example, you can do a manual synchronization if users and groups are added or changes are made to a user’s account.
 
-You can also set a daily synchronization schedule to automatically synchronize the User Management database with changes or updates to the source directory servers. However, be aware that this process uses network and server resources. Choose low-usage time periods and avoid scheduling unnecessary synchronizations that tie up system and network resources. To minimize unnecessary synchronizations, use the immediate synchronize option instead.
+You can also set a daily synchronization schedule to automatically synchronize the User Management database with changes or updates to the source directory servers. However, this process uses network and server resources. Choose low-usage time periods and avoid scheduling unnecessary synchronizations that tie up system and network resources. To minimize unnecessary synchronizations, use the immediate synchronize option instead.
 
 You can also specify whether to push user and group information into Adobe LiveCycle Content Services 9 (deprecated) when synchronizing domains.
 

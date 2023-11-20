@@ -13,7 +13,7 @@ exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 
 By default, AEM uses the Token Authentication Handler to authenticate each request. However, to serve authentication requests the Token Authentication Handler requires access to the repository for every request. This happens because cookies are used to maintain the authentication state. Logically, the state needs to be persisted in the repository to validate subsequent requests. In effect, this means that the authentication mechanism is stateful.
 
-This is of particular importance for horizontal scalability. In a multi instances setup like the publish farm depicted below, load balancing cannot be achieved in an optimal manner. With stateful authentication, the persisted authentication state will only be available on the instance where the user is first authenticated.
+This is of particular importance for horizontal scalability. In a multi-instances setup like the publish farm depicted below, load balancing cannot be achieved in an optimal manner. With stateful authentication, the persisted authentication state will only be available on the instance where the user is first authenticated.
 
 ![chlimage_1-33](assets/chlimage_1-33a.png)
 
@@ -53,7 +53,7 @@ You can see how this works in a geographically distributed deployment with Mongo
 
 There are a few things you need to take into consideration when configuring the Encapsulated Token:
 
-1. Because of the cryptography involved, all of the instances need to have the same HMAC key. Since AEM 6.3, the key material is no longer stored in the repository, but on the actual filesystem. With this in mind, the best way to replicate the keys is to copy them from the filesystem of the source instance to that of the target instance(s) you want to replicate the keys to. See more info under "Replicating the HMAC key" below.
+1. Because of the cryptography involved, all the instances need to have the same HMAC key. Since AEM 6.3, the key material is no longer stored in the repository, but on the actual filesystem. With this in mind, the best way to replicate the keys is to copy them from the filesystem of the source instance to that of the target instance(s) you want to replicate the keys to. See more info under "Replicating the HMAC key" below.
 1. The Encapsulated Token needs to be enabled. This can be done through the Web Console.
 
 ### Replicating the HMAC key {#replicating-the-hmac-key}

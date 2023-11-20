@@ -132,7 +132,7 @@ This Notice of Cancelation document is an example of a typical correspondence:
   </tr> 
   <tr> 
    <td>Stored<br /> Images from Central Repository</td> 
-   <td>Images such as logos and signature images. Images such as corporate logos would appear in most or all of the correspondence. Signature images are specific to the letter and to the person on whose behalf the letter is sent.</td> 
+   <td>Images such as logos and signature images. Images such as corporate logos would appear in most or all correspondence. Signature images are specific to the letter and to the person on whose behalf the letter is sent.</td> 
    <td><p>Images stored in AEM assets (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
@@ -164,7 +164,7 @@ Analyze every letter to uncover the various pieces that make up the letter. The 
 
 **Building the data dictionary** There will be data values such as "Customer Id" and "Customer Name" that are common to many letters. You can prepare a consolidated list of all such data values. Typically someone from the enterprise middleware team is consulted when planning the structure. This forms the basis for building the Data Dictionary.
 
-**Sourcing data from backend enterprise systems** You will also know all of the data values that are needed and from where the enterprise system data is obtained. You can then architect the implementation to extract the data from the enterprise system and feed to the Letters solution.
+**Sourcing data from backend enterprise systems** You will also know all data values that are needed and from where the enterprise system data is obtained. You can then architect the implementation to extract the data from the enterprise system and feed to the Letters solution.
 
 **Estimating the complexity of letters** It is important to determine how complex it will be to create a particular correspondence. This analysis helps in determining the amount of time and skill sets that will be required to create the letter templates. This in turn will help in estimating the resources and cost of implementing the Letters solution.
 
@@ -469,5 +469,5 @@ You can use an existing letter template to quickly create a letter template with
 1. In the Letters page, select one or more letters. The UI displays the Copy icon. 
 1. Tap Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets). 
 1. Tap Paste. The Paste dialog appears. If you are copying and pasting the letters at the same place, the system automatically assigns names and titles to the new copies of letters but you can edit the titles and names of the letters. 
-1. If required, edit the Title and Name with which you want to save the copy of the letter.
+1. If necessary, edit the Title and Name with which you want to save the copy of the letter.
 1. Tap Paste. The copy of the letter is created. Now you can make the required changes in your newly created letter.

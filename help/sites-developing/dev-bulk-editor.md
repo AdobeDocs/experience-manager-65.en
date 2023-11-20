@@ -163,7 +163,7 @@ With the Bulk Editor, you can add, modify, delete, filter, and export the rows, 
 The source code of the Product List component is available in the repository at /apps/geometrixx/components/productlist and is composed of several parts like all Adobe Experience Manager (AEM) components:
 
 * HTML rendering: the rendering is done in a JSP file (/apps/geometrixx/components/productlist/productlist.jsp). The JSP reads the subnodes of the current Product List component and displays each of them as a row of an HTML table.
-* Edit dialog, which is where you define the Bulk Editor configuration. Configure the dialog to match the needs of the component: columns available and possible actions performed on the grid or on the search. See [Bulk Editor configuration properties](#bulk-editor-configuration-properties) for information on all of the configuration properties.
+* Edit dialog, which is where you define the Bulk Editor configuration. Configure the dialog to match the needs of the component: columns available and possible actions performed on the grid or on the search. See [Bulk Editor configuration properties](#bulk-editor-configuration-properties) for information on all the configuration properties.
 
 Here is an XML representation of the dialog sub nodes:
 
@@ -430,7 +430,7 @@ Every part of the Bulk Editor can be configured. The following table lists all t
      <li>cellCls: css class </li>
      <li>readOnly: true to not being able to change value </li>
      <li>checkbox: true to define all cells of the column as checkboxes (true/false values) </li>
-     <li>forcedPosition: integer value to specify where column must be placed in grid (between 0 and number of colums-1)<p><br /> </p> </li>
+     <li>forcedPosition: integer value to specify where column must be placed in grid (between 0&ndash;number of colums-1)<p><br /> </p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -547,7 +547,7 @@ You can extend the Query servlet to return a complex inheritance model or return
 
 ### Save Servlet {#save-servlet}
 
-In the default configuration of the Bulk Editor each row is a node and the path of this node is stored in the row record. The Bulk Editor keeps the link between the row and the node through the jcr path. When a user edits the grid, a list of all of the modifications is built. When a user clicks **Save**, a POST query is sent to each path with the updated properties values. This is the basis of the Sling concept and it works well if each cell is a property of the node. But if the Query servlet is implemented to do inheritance computation, this model cannot work as a property returned by the Query servlet can be inherited from another node.
+In the default configuration of the Bulk Editor each row is a node and the path of this node is stored in the row record. The Bulk Editor keeps the link between the row and the node through the jcr path. When a user edits the grid, a list of all the modifications is built. When a user clicks **Save**, a POST query is sent to each path with the updated properties values. This is the basis of the Sling concept and it works well if each cell is a property of the node. But if the Query servlet is implemented to do inheritance computation, this model cannot work as a property returned by the Query servlet can be inherited from another node.
 
 The Save servlet concept is that the modifications are not directly posted to each node but that they are posted to one servlet that does the saving job. This gives this servlet the possibility to analyze the modifications and save the properties on the right node.
 

@@ -110,7 +110,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Why HTML forms are larger in size than PDF forms?
 
-   Answer: A lot of intermediate data structures and objects such as form dom, data dom, and layout dom are required to render an XDP to an HTML form.
+   Answer: Numerous intermediate data structures and objects such as form dom, data dom, and layout dom are required to render an XDP to an HTML form.
 
    For PDF Forms, Adobe Acrobat has a built-in XTG engine to create intermediate data structures, and objects. Acrobat also takes care of layout and scripts.
 
@@ -180,7 +180,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
     * There is limited support for xfa.connectionSet script. For connectionSet, only server-side invocation of web service is supported. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
     * There is no support for $record and $data in client side scripts. However, if the scripts are written in a formReady, layoutReady block, the scripts still work because these events run on the server side.
-    * XFA Draw element-specific scripts such as changing the Draw text (or Caption text in case of fields) are not supported.
+    * XFA Draw element-specific scripts such as changing the Draw text (or Caption text if there are fields) are not supported.
 
 1. Are there any limitations in using formCalc?
 

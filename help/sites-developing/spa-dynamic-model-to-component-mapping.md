@@ -32,7 +32,7 @@ Single Page Applications using the JavaScript SPA SDK for AEM are model-driven:
 1. Front-end components register themselves to the [Component Mapping Store](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Then the [Container](/help/sites-developing/spa-blueprint.md#container), once provided with a model by the [Model Provider](/help/sites-developing/spa-blueprint.md#the-model-provider), iterates over its model content ( `:items`).
 
-1. In the case of a page, its children ( `:children`) first get a component class from the [Component Mapping](/help/sites-developing/spa-blueprint.md#componentmapping) and then instantiate it.
+1. If there is a page, its children ( `:children`) first get a component class from the [Component Mapping](/help/sites-developing/spa-blueprint.md#componentmapping) and then instantiate it.
 
 ## App Initialization {#app-initialization}
 

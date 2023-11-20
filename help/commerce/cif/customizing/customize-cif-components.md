@@ -219,7 +219,7 @@ This is a new method to encapsulate the logic to indicate if the product has the
    private ProductTeaser productTeaser;
    ```
 
-   For all of the methods that are not overridden or changed, you can return the value that the `ProductTeaser` returns. For example:
+   For all the methods that are not overridden or changed, you can return the value that the `ProductTeaser` returns. For example:
 
    ```java
    @Override
@@ -347,7 +347,7 @@ In this case, you want to render a banner on top of the teaser to indicate that 
        componentGroup="Venia - Commerce"/>
    ```
 
-   The Component definition for the Product Teaser Component in this project is above. Notice the property `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. This is an example of creating a [Proxy component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). Instead of copying and pasting all of the Product Teaser HTL scripts from the AEM CIF Core Components, you can use the `sling:resourceSuperType` to inherit all of the functionality.
+   The Component definition for the Product Teaser Component in this project is above. Notice the property `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. This is an example of creating a [Proxy component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). Instead of copying and pasting all the Product Teaser HTL scripts from the AEM CIF Core Components, you can use the `sling:resourceSuperType` to inherit all functionality.
 
 1. Open the file `productteaser.html`. This is a copy of the `productteaser.html` file from the [CIF Product Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -425,7 +425,7 @@ In this case, you want to render a banner on top of the teaser to indicate that 
 
    >[!CAUTION]
    >
-   >You also may see some stack traces if the product used in the teaser does not have the `eco_friendly` attribute as part of it's attribute set.
+   >You also may see some stack traces if the product used in the teaser does not have the `eco_friendly` attribute as part of its attribute set.
 
 ## Add Styles for the Eco Friendly Badge {#add-styles}
 

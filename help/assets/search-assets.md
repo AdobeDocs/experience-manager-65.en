@@ -422,7 +422,7 @@ You can do the following with the assets you've searched in [!DNL Experience Man
 
 Sort search results to discover the required assets faster. You can sort the search results in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Assets] uses server-side sorting to quickly sort all the assets (howsoever numerous) within a folder or results of a search query. Server-side sorting provides faster and more accurate results than client-side sorting.
 
-In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Name, Title, Status, Dimensions, Size, Rating, Usage, (Date) Created, (Date) Modified, (Date) Published, Workflow, and Checked out.
+In list view, you can sort the search results just as you can sort assets in any folder. Sorting works on these columns -- Name, Title, Status, Dimensions, Size, Rating, Usage, Created, Modified, Published, Workflow, and Checked out.
 
 For limitations of sort functionality, see [limitations](#limitations).
 

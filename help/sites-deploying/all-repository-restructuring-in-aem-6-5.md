@@ -128,7 +128,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
    <td>Any explicit path references in
     <code>
      custom
-    </code> code to the Previous Location should also take into account the New Location. It is recommended that this code is refactored to use the AEM Workflow APIs.</td>
+    </code> code to the Previous Location should also account for the New Location. It is recommended that this code is refactored to use the AEM Workflow APIs.</td>
   </tr>
  </tbody>
 </table>

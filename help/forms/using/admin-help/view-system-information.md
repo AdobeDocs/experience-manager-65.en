@@ -57,9 +57,9 @@ The left pane of the System tab displays the following information about the ser
 
 **Maximum Heap:** The maximum amount of heap that was used.
 
-**Operating System Name:** The name of the operating system running on the AEM forms server.
+**Operating System Name:** The name of the operating system running on the AEM Forms Server.
 
-**Operating System Version:** Version number of the operating system running on the AEM forms server.
+**Operating System Version:** Version number of the operating system running on the AEM Forms Server.
 
 **Operating System Arch:** The operating system architecture that the JVM is running on.
 

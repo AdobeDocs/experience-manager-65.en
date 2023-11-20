@@ -1,19 +1,15 @@
 ---
 title: Working with tasks
-seo-title: Working with tasks
 description: Use the Task Search page to search for tasks by user name or task ID. Learn more about working with tasks.
-seo-description: Use the Task Search page to search for tasks by user name or task ID. Learn more about working with tasks.
-uuid: 630372d5-255f-4ea8-974d-d4f923108673
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 ---
 # Working with tasks {#working-with-tasks}
 
-Use the Task Search page to search for tasks by user name or task ID. The search results are displayed on the Task List page, where you can access a task’s history. You can also reassign a task is one user has too many tasks or if a user has received a task assignment in error.
+Use the Task Search page to search for tasks by user name or task ID. The search results are displayed on the Task List page, where you can access a task's history. You can also reassign a task is one user has too many tasks or if a user has received a task assignment in error.
 
 >[!NOTE]
 >
@@ -87,6 +83,6 @@ For each task assignment, the list shows the following information:
 
 The Assign User page lists the users who can be assigned to a task. You access the Assign User page by clicking Assign New User on the Task History page.
 
-1. In the Search For box on the Assign User page, type part or all of the required user name or email address.
+1. In the Search For box on the Assign User page, type part of or all the required user name or email address.
 1. Under Using, select Name or Email Address and then click Find. The users who match the search are displayed.
 1. Select the user from the list and click OK. The Task History page appears with the new user assignment.

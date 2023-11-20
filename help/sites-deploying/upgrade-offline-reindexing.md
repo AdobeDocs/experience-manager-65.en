@@ -154,7 +154,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 Usage of the `--doc-traversal-mode` parameter is handy with MongoMK installations as it improves the reindex time significantly by spooling repository content into a local flat file. However, it requires additional disk space of double the size of the repository.
 
-In the case of MongoMK, this process can be accelerated if this step is executed in an instance closer to the MongoDB instance. If run on the same machine, network overhead can be avoided.
+If there is MongoMK, this process can be accelerated if this step is executed in an instance closer to the MongoDB instance. If run on the same machine, network overhead can be avoided.
 
 Additional technical details can be found in the [oak-run documentation for indexing](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 

@@ -63,11 +63,11 @@ Customized run modes can also be selected at each startup.
 
 ## Using samplecontent and nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-These modes let you control the use of sample content. The sample content is defined before the quickstart is built and can include packages, configurations, etc:
+These modes let you control the use of sample content. The sample content is defined before the quickstart is built and can include packages, configurations, and so on:
 
-* The `samplecontent` run mode will install this content (the default mode).
+* The `samplecontent` run mode installs this content (the default mode).
 
-* The `nosamplecontent` mode will not install the sample content.
+* The `nosamplecontent` mode does not install the sample content.
 
 The nosamplecontent run mode is designed for production installations.
 

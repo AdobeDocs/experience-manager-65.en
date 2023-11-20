@@ -1,14 +1,10 @@
 ---
 title: Output Service Java API Quick Start(SOAP)
-seo-title: Output Service Java API Quick Start(SOAP)
 description: Use the Output service Java API Quick Start (SOAP) to create a PDF document, create a PDF document based on application XDP file, create a PDF/A document, pass documents to the Output service, pass a document in the AEM Forms repository to the Output service, create a PDF document based on fragments, printing to a file, sending a print stream to a network printer, create multiple PDF files, create search rules, transform a PDF document.
-seo-description: Use the Output service Java API Quick Start (SOAP) to create a PDF document, create a PDF document based on application XDP file, create a PDF/A document, pass documents to the Output service, pass a document in the AEM Forms repository to the Output service, create a PDF document based on fragments, printing to a file, sending a print stream to a network printer, create multiple PDF files, create search rules, transform a PDF document.
-uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 role: Developer
 exl-id: dc99dd4d-fce9-4ec5-9b51-661d37a21559
 ---
@@ -81,7 +77,7 @@ The following Java code example creates a PDF document named *Loan.pdf*. This PD
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -293,7 +289,7 @@ The following Java code retrieves an XDP file from the Repository and passes it 
 >
 >The Repository API is used to retrieve the XDP file from this location. (See [Reading Resources](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
-Also notice the content root value `repository:///Applications/FormsApplication/1.0/FormsFolder/` is passed to the `OutputClient` object’s `generatePDFOutput2` method (the second parameter). This value is passed to the Output service to inform the Output service that form collateral, such as images, are stored in this location.
+Also notice the content root value `repository:///Applications/FormsApplication/1.0/FormsFolder/` is passed to the `OutputClient` object's `generatePDFOutput2` method (the second parameter). This value is passed to the Output service to inform the Output service that form collateral, such as images, are stored in this location.
 
 >[!NOTE]
 >
@@ -323,7 +319,7 @@ The *Loan.pdf* is written to the C:\Adobe folder located on the J2EE application
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -474,7 +470,7 @@ The following Java code example creates a PDF document named *Loan.pdf*. This PD
      * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include these additional JAR files
@@ -584,7 +580,7 @@ The following Java code example creates a PDF/A document named *LoanArchive.pdf*
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -687,7 +683,7 @@ The following Java quick start retrieves the file *Loan.xdp* from Content Servic
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -842,7 +838,7 @@ The following Java code example creates a PDF document that is based on a form d
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -968,7 +964,7 @@ The following Java code example creates a PDF document that is based on a form d
                  //Create a Document object
                  Document inFragment2Doc = new Document(inFragment2);
  
-                 //Place all of the XDP files into the MAP
+                 //Place all the XDP files into the MAP
                  inputs.put("tuc018_template_flowed.xdp",myMapSource);
                  inputs.put("tuc018_contact.xdp",inFragment1Doc);
                  inputs.put("tuc018_patient.xdp",inFragment2Doc);
@@ -1049,7 +1045,7 @@ The following Java code example prints an output stream to a PostScript file nam
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -1161,7 +1157,7 @@ The following Java code example sends a PostScript print stream to a network pri
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -1286,7 +1282,7 @@ The following Java code creates multiple PDF files for each data record that is 
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -1407,7 +1403,7 @@ The following Java code example creates two text patterns that the Output servic
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -1539,7 +1535,7 @@ The following Java code example transforms an interactive PDF document named *Lo
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following

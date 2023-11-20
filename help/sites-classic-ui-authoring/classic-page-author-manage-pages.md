@@ -273,7 +273,7 @@ To move or rename a page:
 
     * **Rename to**
 
-      The current page label displays by default. Specify the new page label, if required.
+      The current page label displays by default. Specify the new page label, if necessary.
 
     * **Adjust**
 

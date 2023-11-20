@@ -93,7 +93,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
    >
    >The formatting of pasted text, however, has some [limitations](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
-1. If required, insert special characters in the document fragment. For example, you can use the Special Characters palette to insert:
+1. If necessary, insert special characters in the document fragment. For example, you can use the Special Characters palette to insert:
 
     * Currency symbols such as &euro;,￥, and £
     * Mathematical symbols such as ∑, √, ∂, and ^
@@ -206,7 +206,7 @@ The Find and Replace feature lets you search for (and replace) any string of tex
 
 ## List {#list}
 
-A list is a group of document fragments, including text, (other) lists, conditions, and images. The order of the list elements can be fixed or editable. While creating a letter, you can use some or all of the list elements to replicate a reusable pattern of elements. Lists basically behave as targets that can be nested within other targets.
+A list is a group of document fragments, including text, (other) lists, conditions, and images. The order of the list elements can be fixed or editable. While creating a letter, you can use some or all list elements to replicate a reusable pattern of elements. Lists basically behave as targets that can be nested within other targets.
 
 ### Implementing lists {#implementing-lists}
 
@@ -268,7 +268,7 @@ A list is a group of related content that can be used in a letter template as a 
     * **Selected:** When this option is selected, the content is preselected in Create Correspondence user interface.
     * **Skip Style:** When this option is selected, the content skips bullets and numbering in Create Correspondence user interface. (This option is not available for Image modules. Also, between Skip Style, Compound, and Ignore List Style, only one of the options can be applied to a module. One of these options can be used for a module when you select Add Bullets for a module.)
     * **Indentation:** You can change the indentation level of each module/content selected as part of the List. Indentation is specified in terms of Levels (starting with zero), such that each level of indent corresponds to a padding of 36pts.
-    * **Compound:** When selected, the compound numbering is applied as a combination of the outer (parent) List's style and it's own style. The compound numbering on this nested List is based on the order in which this nested List appears in the outer List.
+    * **Compound:** When selected, the compound numbering is applied as a combination of the outer (parent) List's style and its own style. The compound numbering on this nested List is based on the order in which this nested List appears in the outer List.
     * **Ignore list style:** If the Compound Numbering option is deselected, then the option to Ignore List Style is enabled. This selection ignores the nested List's own style and the numbering continues from the outer List. Therefore the modules of the nested list are treated as part of the outer list itself, disregarding any styles specified on the nested List. If the Ignore List Style option is deselected for a nested List, the modules that are part of that nested List have their own numbering style.
     * **Keep With Next:** Sets the page break for the assets contained in a list. If you set the Keep With Next property of one asset of a list to **On**, that asset and the next asset stays on the same page. This implies that the contents of the selected asset and the next asset will not break across pages.
 
@@ -547,5 +547,5 @@ To quickly create a document fragment with properties and content similar to an 
 1. From the list of document fragments, select one or more document fragments. The UI displays the Copy icon.
 1. Tap Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Tap Paste. The Paste dialog appears. If you are copying and pasting the document fragments at the same place, the system automatically assigns names and a titles to the new copies of letters, but you can edit the titles and names of the letters.
-1. If required, edit the Title and Name with which you want to save the copy of the document fragment.
+1. If necessary, edit the Title and Name with which you want to save the copy of the document fragment.
 1. Tap Paste. The copy of the document fragment is created.

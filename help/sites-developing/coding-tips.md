@@ -86,7 +86,7 @@ For Java&trade; code, AEM supports slf4j as the standard API for logging message
 * DEBUG: Lower level information about processing. Useful when debugging an issue with support.
 * TRACE: The lowest level information, things like entering/exiting methods. This will usually only be used by developers.
 
-In the case of JavaScript, *console.log* should only be used during development and all log statements should be removed before release.
+If there is JavaScript, *console.log* should only be used during development and all log statements should be removed before release.
 
 ### Avoid cargo cult programming {#avoid-cargo-cult-programming}
 

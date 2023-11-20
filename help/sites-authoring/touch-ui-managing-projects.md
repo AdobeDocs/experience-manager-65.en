@@ -1,14 +1,10 @@
 ---
 title: Managing Projects
-seo-title: Managing Projects
 description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
-seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
-uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 ---
 
@@ -37,7 +33,7 @@ Follow these steps to create a project.
 
    ![Create Project wizard](assets/create-project-wizard.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. You also add or delete users and what group they belong to.
+1. Define the **Title** and **Description** and add a **Thumbnail** image if necessary. You also add or delete users and what group they belong to.
 
    ![Properties step of wizard](assets/create-project-wizard-properties.png)
 
@@ -129,7 +125,7 @@ You can now create projects within the folder. You can create multiple folders a
 
 ### Inactivating Projects {#making-projects-inactive-or-active}
 
-You may want to mark a project inactive if it's completed but you still want to keep the information about the project. [Inactive projects do now show](#viewing-active-inactive-projects) by default in the **Projects** console.
+You may want to mark a project inactive if it s completed but you still want to keep the information about the project. [Inactive projects do now show](#viewing-active-inactive-projects) by default in the **Projects** console.
 
 To make a project inactive follow these steps.
 
@@ -145,7 +141,7 @@ To make a project inactive follow these steps.
 
 Follow these steps to delete a project.
 
-1. Navigate to the top level of the **Projects** console.
+1. Navigate to the top-level of the **Projects** console.
 1. Selecting your project in the console.
 1. Tap or click **Delete** in the toolbar.
 1. AEM can remove/modify associated project data upon project deletion. Select which options you need in the **Delete Project** dialog.

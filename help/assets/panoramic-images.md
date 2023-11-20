@@ -1,12 +1,10 @@
 ---
 title: Panoramic Images
 description: Learn how to work with panoramic images in Dynamic Media.
-uuid: ced3e5bd-93c8-4d5f-a397-1380d4d0a5e7
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
@@ -14,7 +12,7 @@ exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
 ---
 # Panoramic images{#panoramic-images}
 
-This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360° viewing experience of a room, property, location, or landscape.
+This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360-degree viewing experience of a room, property, location, or landscape.
 
 See also [Manage Viewer Presets](/help/assets/managing-viewer-presets.md).
 

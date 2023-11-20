@@ -20,7 +20,7 @@ One advantage of this approach is that the document security database size doesn
 
 Document security also supports Abstract Policies. Abstract policies are policy templates that contain all policy attributes such as document security settings and usage rights, but do not contain a list of principals. Administrators can create any number of policies from the abstract policy with different principals who should have access to the documents. Changes made to the abstract policy do not affect the actual policies that are generated from the abstract policies.
 
-In the case of monthly invoice generation for a telecom company, you create an abstract policy, create users, and then generate unique licenses for each user. The licenses are later applied to documents for each user.
+If there is a monthly invoice generation for a telecom company, you create an abstract policy, create users, and then generate unique licenses for each user. The licenses are later applied to documents for each user.
 
 Creation of an abstract policy is supported only through document security Java SDK. You can, however, administer the policies that you create from the abstract policy from the document security web pages. Policies that are created using this method are identical in behavior to those created from document security web pages.
 

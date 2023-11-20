@@ -110,11 +110,11 @@ For forms workflow to receive and handle incoming email messages from users, you
 
 **SMTP SSL Enabled:** When selected, enables SSL over SMTP.
 
-**Include The Original Email Body As An Attachment:** By default, when you send an email to the forms server, the original text of the message is included in the body of the message. To instead include the text as an attachment, select this option.
+**Include The Original Email Body As An Attachment:** By default, when you send an email to the Forms Server, the original text of the message is included in the body of the message. To instead include the text as an attachment, select this option.
 
 **Use The Original Subject Line For Result Emails:** By default, Forms server uses the values specified in the Success Email Subject and Error Email Subject settings as the subject line when sending result email messages. To instead use the same subject line as the original email sent to the server, select this option.
 
-**Success Email Subject:** After you send an email to an email endpoint to start or continue a process, you receive a return email message from the AEM forms server. If your email succeeds, you receive a success email. If your email fails, you receive a failure email informing why it failed. This setting enables you to specify the subject line of success email messages sent for this endpoint.
+**Success Email Subject:** After you send an email to an email endpoint to start or continue a process, you receive a return email message from the AEM Forms Server. If your email succeeds, you receive a success email. If your email fails, you receive a failure email informing why it failed. This setting enables you to specify the subject line of success email messages sent for this endpoint.
 
 **Success Email Body:** Enables you to specify the body text of success email messages sent for this endpoint.
 
@@ -124,9 +124,9 @@ For forms workflow to receive and handle incoming email messages from users, you
 
 **Error Email Body:** Enables you to specify the first line in the body text of failure email messages sent for this endpoint.
 
-**Email Summary Info:** Each success or failure message includes a section containing the original email text that you sent to the forms server. This setting specifies the text that appears above that section.
+**Email Summary Info:** Each success or failure message includes a section containing the original email text that you sent to the Forms Server. This setting specifies the text that appears above that section.
 
-**Validate Inbox Before Creating/Updating This Endpoint:** When this option is selected, the forms server checks whether your SMTP/POP3 settings are correct before creating the endpoint. When you click Add, a message displays, stating whether the inbox account is valid. If this option is not selected, the AEM forms server creates the endpoint without validating the inbox.
+**Validate Inbox Before Creating/Updating This Endpoint:** When this option is selected, the Forms Server checks whether your SMTP/POP3 settings are correct before creating the endpoint. When you click Add, a message displays, stating whether the inbox account is valid. If this option is not selected, the AEM Forms Server creates the endpoint without validating the inbox.
 
 **Character Set Encoding:** The encoding format to use for the email message. The default is UTF-8, which most users outside Japan will use. Users in a Japanese environment may choose ISO2022-JP.
 
@@ -200,11 +200,11 @@ For example, an email endpoint is created for a service that takes a single Word
 
 The default value is asynchronous.
 
-**Include the original email body as an attachment:** By default, when you send an email to the forms server, the original text of the message is included in the body of the message. To instead include the text as an attachment, select this option.
+**Include the original email body as an attachment:** By default, when you send an email to the Forms Server, the original text of the message is included in the body of the message. To instead include the text as an attachment, select this option.
 
 **Use the original subject line for result emails:** By default, Forms server uses the values specified in the Success Email Subject and Error Email Subject settings as the subject line when sending result email messages. To instead use the same subject line as the original email sent to the server, select this option.
 
-**Success Email Subject:** After you send an email to an email endpoint to start or continue a process, you receive a return email message from the AEM forms server. If your email succeeds, you receive a success email. If your email fails, you receive a failure email informing why it failed. This setting enables you to specify the subject line of success email messages sent for this endpoint.
+**Success Email Subject:** After you send an email to an email endpoint to start or continue a process, you receive a return email message from the AEM Forms Server. If your email succeeds, you receive a success email. If your email fails, you receive a failure email informing why it failed. This setting enables you to specify the subject line of success email messages sent for this endpoint.
 
 **Success Email Body:** Enables you to specify the body text of success email messages sent for this endpoint.
 
@@ -214,9 +214,9 @@ The default value is asynchronous.
 
 **Error Email Body:** Enables you to specify the first line in the body text of failure email messages sent for this endpoint.
 
-**Email Summary Info:** Each success or failure message includes a section containing the original email text that you sent to the forms server. This setting specifies the text that appears above that section.
+**Email Summary Info:** Each success or failure message includes a section containing the original email text that you sent to the Forms Server. This setting specifies the text that appears above that section.
 
-**Validate Inbox before creating/updating this endpoint:** When this option is selected, the forms server checks whether your SMTP/POP3 settings are correct before creating the endpoint. When you click Add, a message displays, stating whether the inbox account is valid. If this option is not selected, the AEM forms server creates the endpoint without validating the inbox.
+**Validate Inbox before creating/updating this endpoint:** When this option is selected, the Forms Server checks whether your SMTP/POP3 settings are correct before creating the endpoint. When you click Add, a message displays, stating whether the inbox account is valid. If this option is not selected, the AEM Forms Server creates the endpoint without validating the inbox.
 
 **Operation Name:** This setting is mandatory. A list of operations that can be assigned to the email endpoint. The operation that you select here determines which fields are displayed in the Input Parameter Mappings and Output Parameter Mappings sections.
 

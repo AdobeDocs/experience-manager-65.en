@@ -143,7 +143,7 @@ The following objects are provided as parameters of the `execute` method of the 
 
 * The reset value indicates the rollout reset mode.
 
-From these objects you can obtain all of the information about the `LiveCopy`. You can also use the `Resource` objects to obtain `ResourceResolver`, `Session`, and `Node` objects. These objects are useful for manipulating repository content:
+From these objects you can obtain all the information about the `LiveCopy`. You can also use the `Resource` objects to obtain `ResourceResolver`, `Session`, and `Node` objects. These objects are useful for manipulating repository content:
 
 In the first line of the following code, source is the `Resource` object of the source page:
 
@@ -189,7 +189,7 @@ The new rollout configuration is then available to you when setting rollout conf
    >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
    >The recommended method for configuration and other changes is:
    >
-   >* Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+   >* Recreate the required item (that is, as it exists in `/libs`) under `/apps`
    >* Make any changes within `/apps`
 
 1. Under this **Create** a node with the following properties:
@@ -610,7 +610,7 @@ AEM uses a default set of language and country codes.
 * The default language code is the lower-case, two-letter code as defined by ISO-639-1.
 * The default country code is the lower-case or upper-case, two-letter code as defined by ISO 3166.
 
-MSM uses a stored list of language and country codes to determine the name of the country that is associated with the name of the language version of your page. You can change the following aspects of the list if required:
+MSM uses a stored list of language and country codes to determine the name of the country that is associated with the name of the language version of your page. You can change the following aspects of the list if necessary:
 
 * Language titles
 * Country names
@@ -651,11 +651,11 @@ For example, if two new page properties are being added:
 
 * Contact Email:
 
-  * This property is not required to be rolled out, as it will be different in each country (or brand, etc).
+  * This property is not required to be rolled out, as it will be different in each country (or brand, and so on).
 
 * Key Visual Style:
 
-  * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, etc).
+  * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, and so on).
 
 Then you need to ensure that:
 

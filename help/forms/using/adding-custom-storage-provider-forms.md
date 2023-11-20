@@ -34,7 +34,7 @@ To customize the storage of user data for drafts, you must implement all the met
 public interface DraftDataService {
 
     /**
-     * To save/modify user data for this userDataID, it will be null in case of creation
+     * To save/modify user data for this userDataID, it will be null if there is creation
      * @param draftDataID: unique identifier associated with the form data
      * @param formName: name of the form whose draft is being saved
      * @param formData: user data associated with this draft

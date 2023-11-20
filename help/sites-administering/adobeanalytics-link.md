@@ -1,14 +1,10 @@
 ---
 title: Configuring Link Tracking for Adobe Analytics
-seo-title: Configuring Link Tracking for Adobe Analytics
 description: Learn about configuring link tracking for SiteCatalyst.
-seo-description: Learn about configuring link tracking for SiteCatalyst.
-uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 ---
 
@@ -87,7 +83,7 @@ Properties for tracking when external links are clicked:
 * **Leave Query String**
   Includes URL parameters when evaluating matches with internal and external filters.
 
-  Enable to include URL parameters when evaluating link target URLs against external and internal filters.
+  Enable if you want to include URL parameters when evaluating link target URLs against external and internal filters.
 
 The external link tracking properties are implemented as code in the `analytics.sitecatalyst.js` file that is generated for a page. The following example code is generated for a page that is associated with a framework that has enabled external link tracking with the following configuration:
 
@@ -209,7 +205,7 @@ This example illustrates how the mapping works in the context of tracking and th
 1. Deselect **Leave Query String**.
 1. Use the following value for the **External Filters** list to identify it as an external URL:
 
-   `‘yahoo.com’`
+   `'yahoo.com'`
 
 1. Add the following value to the **Link Track Events** field:
 
@@ -339,12 +335,12 @@ Use the following procedure to configure link tracking for a **Text** component:
 1. (Optional) To track variable data with the link click, add Adobe Analytics variables in the **Include Adobe Analytics Variables** field. Use either of the following formats:
 
     * *`<Variable-name>`*: *`<Dynamic Value>`*
-    * *`<Variable-name>`*: *`‘CONSTANT'`*
+    * *`<Variable-name>`*: *`'CONSTANT'`*
 
    The following examples illustrate each format:
 
     * `eVar10:pagedata.title`
-    * `prop1: ‘Aubergine'`
+    * `prop1: 'Aubergine'`
 
    Separate multiple values with a comma.
 

@@ -1,14 +1,10 @@
 ---
 title: Programmatically Managing Endpoints
-seo-title: Programmatically Managing Endpoints
 description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
-seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
-uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 ---
@@ -73,7 +69,7 @@ To add an EJB endpoint to a service, perform the following tasks:
 
 **Include project files**
 
-Include necessary files in your development project. The following JAR files must be added to your project’s class path:
+Include necessary files in your development project. The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -118,7 +114,7 @@ Add an EJB endpoint by using the Java API:
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project’s class path. (
+   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path. (
 
 1. Create an EndpointRegistry Client object.
 
@@ -128,19 +124,19 @@ Add an EJB endpoint by using the Java API:
 1. Set EJB endpoint attributes.
 
     * Create a `CreateEndpointInfo` object by using its constructor.
-    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object’s `setConnectorId` method and passing the string value `EJB`.
-    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object’s `setDescription` method and passing a string value that describes the endpoint.
-    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object’s `setName` method and passing a string value that specifies the name.
-    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object’s `setServiceId` method and passing a string value that specifies the service name.
-    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object’s `setOperationName` method and pass a string value that specifies the operation name. For SOAP and EJB endpoints, specify a wildcard character ( `*`), which implies all operations.
+    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object's `setConnectorId` method and passing the string value `EJB`.
+    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object's `setDescription` method and passing a string value that describes the endpoint.
+    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object's `setName` method and passing a string value that specifies the name.
+    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object's `setServiceId` method and passing a string value that specifies the service name.
+    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object's `setOperationName` method and pass a string value that specifies the operation name. For SOAP and EJB endpoints, specify a wildcard character ( `*`), which implies all operations.
 
 1. Create an EJB endpoint.
 
-   Create the endpoint by invoking the `EndpointRegistryClient` object’s `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the new EJB endpoint.
+   Create the endpoint by invoking the `EndpointRegistryClient` object's `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the new EJB endpoint.
 
 1. Enable the endpoint.
 
-   Enable the endpoint by invoking the `EndpointRegistryClient` object’s enable method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
+   Enable the endpoint by invoking the `EndpointRegistryClient` object's enable method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
 
 **See also**
 
@@ -178,7 +174,7 @@ To add a SOAP endpoint to a service, perform the following tasks:
 
 Include the necessary files in your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -223,7 +219,7 @@ Add a SOAP endpoint to a service by using the Java API:
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path.
 
 1. Create an EndpointRegistry Client object.
 
@@ -233,19 +229,19 @@ Add a SOAP endpoint to a service by using the Java API:
 1. Set SOAP endpoint attributes.
 
     * Create a `CreateEndpointInfo` object by using its constructor.
-    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object’s `setConnectorId` method and passing the string value `SOAP`.
-    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object’s `setDescription` method and passing a string value that describes the endpoint.
-    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object’s `setName` method and passing a string value that specifies the name.
-    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object’s `setServiceId` method and passing a string value that specifies the service name.
-    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object’s `setOperationName` method and passing a string value that specifies the operation name. For SOAP and EJB endpoints, specify a wildcard character ( `*`), which implies all operations.
+    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object's `setConnectorId` method and passing the string value `SOAP`.
+    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object's `setDescription` method and passing a string value that describes the endpoint.
+    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object's `setName` method and passing a string value that specifies the name.
+    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object's `setServiceId` method and passing a string value that specifies the service name.
+    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object's `setOperationName` method and passing a string value that specifies the operation name. For SOAP and EJB endpoints, specify a wildcard character ( `*`), which implies all operations.
 
 1. Create a SOAP endpoint.
 
-   Create the endpoint by invoking the `EndpointRegistryClient` object’s `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the new SOAP endpoint.
+   Create the endpoint by invoking the `EndpointRegistryClient` object's `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the new SOAP endpoint.
 
 1. Enable the endpoint.
 
-   Enable the endpoint by invoking the `EndpointRegistryClient` object’s enable method and pass the `Endpoint` object that was returned by the `createEndpoint` method.
+   Enable the endpoint by invoking the `EndpointRegistryClient` object's enable method and pass the `Endpoint` object that was returned by the `createEndpoint` method.
 
 **See also**
 
@@ -265,7 +261,7 @@ For the purposes of programmatically adding a Watched Folder endpoint to a servi
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-This process accepts an unsecured PDF document as an input value and then passes the unsecured PDF document to the Encryption service’s `EncryptPDFUsingPassword` operation. The PDF document is encrypted with a password, and the password-encrypted PDF document is the output value of this process. The name of the input value (the unsecured PDF document) is `InDoc` and the data type is `com.adobe.idp.Document`. The name of the output value (the password-encrypted PDF document) is `SecuredDoc` and the data type is `com.adobe.idp.Document`.
+This process accepts an unsecured PDF document as an input value and then passes the unsecured PDF document to the Encryption service's `EncryptPDFUsingPassword` operation. The PDF document is encrypted with a password, and the password-encrypted PDF document is the output value of this process. The name of the input value (the unsecured PDF document) is `InDoc` and the data type is `com.adobe.idp.Document`. The name of the output value (the password-encrypted PDF document) is `SecuredDoc` and the data type is `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -288,7 +284,7 @@ To add a Watched Folder endpoint to a service, perform the following tasks:
 
 Include the necessary files in your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -325,7 +321,7 @@ The following list specifies configuration values that are set when programmatic
 * **repeatCount**: The number of times a Watched Folder scans the folder or directory. A value of -1 indicates indefinite scanning. The default value is -1.
 * **throttleOn**: Limits the number of Watched Folder jobs that can be processed at any given time. The maximum number of jobs is determined by the batchSize value.
 * **userName**: The user name used when invoking a target service from the Watched Folder. This value is mandatory. The default value is SuperAdmin.
-* **domainName**: The user’s domain. This value is mandatory. The default value is DefaultDom.
+* **domainName**: The user's domain. This value is mandatory. The default value is DefaultDom.
 * **batchSize**: The number of files or folders to be picked up per scan. Use this value to prevent an overload on the system; scanning too many files at one time can result in a crash. The default value is 2.
 * **waitTime**: The time, in milliseconds, to wait before scanning a folder or file after creation. For example, if wait time is 36,000,000 milliseconds (one hour) and the file was created one minute ago, this file is picked up after 59 or more minutes have passed. This attribute is useful to ensure that a file or folder is completely copied to the input folder. For example, if you have a large file to process and the file takes ten minutes to download, set the wait time to 10&ast;60 &ast;1000 milliseconds. This setting prevents the watched folder from scanning the file if it has not been waiting for ten minutes. The default value is 0.
 * **excludeFilePattern**: The pattern that a watched folder uses to determine which files and folders to scan and pick up. Any file or folder that has this pattern will not be scanned for processing. This setting is useful when the input is a folder that contains multiple files. The contents of the folder can be copied into a folder that has a name that will be picked up by the watched folder. This step prevents the watched folder from picking up a folder for processing before the folder is completely copied into the input folder. For example, if the excludeFilePattern value is `data*`, all files and folders that match `data*` are not picked up. This includes files and folders named `data1`, `data2`, and so on. Additionally, the pattern can be supplemented with wildcard patterns to specify file patterns. The watched folder modifies the regular expression to support wildcard patterns such as `*.*` and `*.pdf`. These wildcard patterns are not supported by regular expressions.
@@ -333,7 +329,7 @@ The following list specifies configuration values that are set when programmatic
 * **resultFolderName**: The folder where the saved results are stored. This location can be an absolute or a relative directory path. If the results do not appear in this folder, check the failure folder. Read-only files are not processed and will be saved in the failure folder. The default value is `result/%Y/%M/%D/`. This is the results folder inside the watched folder.
 * **preserveFolderName**: The location where files are stored after successful scanning and pickup. This location can be an absolute, a relative, or a null directory path. The default value is `preserve/%Y/%M/%D/`.
 * **failureFolderName**: The folder where failure files are saved. This location is always relative to the watched folder. Read-only files are not processed and will be saved in the failure folder. The default value is `failure/%Y/%M/%D/`.
-* **preserveOnFailure**: Preserve input files in case of failure to execute the operation on a service. The default value is true.
+* **preserveOnFailure**: Preserve input files if there is a failure to run the operation on a service. The default value is true.
 * **overwriteDuplicateFilename**: When set to true, files in the results folder and preserve folder are overwritten. When set to false, files and folders that have a numeric index suffix are used for the name. The default value is false.
 
 **Define input parameter values**
@@ -371,7 +367,7 @@ To define an output parameter value required for a Watched Folder endpoint, spec
 
 **Create a Watched Folder endpoint**
 
-After you set the endpoint’s attributes, configuration values, and define input and output parameter values, you must create the Watched Folder endpoint.
+After you set the endpoint's attributes, configuration values, and define input and output parameter values, you must create the Watched Folder endpoint.
 
 **Enable the endpoint**
 
@@ -391,7 +387,7 @@ Add a Watched Folder endpoint by using the AEM Forms Java API:
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path.
 
 1. Create an EndpointRegistry Client object.
 
@@ -401,15 +397,15 @@ Add a Watched Folder endpoint by using the AEM Forms Java API:
 1. Set Watched Folder endpoint attributes.
 
     * Create a `CreateEndpointInfo` object by using its constructor.
-    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object’s `setConnectorId` method and passing the string value `WatchedFolder`.
-    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object’s `setDescription` method and passing a string value that describes the endpoint.
-    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object’s `setName` method and passing a string value that specifies the name.
-    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object’s `setServiceId` method and passing a string value that specifies the service name.
-    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object’s `setOperationName` method and passing a string value that specifies the operation name. Typically, when creating a Watched Folder endpoint for a service that originated from a process created in Workbench, the name of the operation is invoke.
+    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object's `setConnectorId` method and passing the string value `WatchedFolder`.
+    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object's `setDescription` method and passing a string value that describes the endpoint.
+    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object's `setName` method and passing a string value that specifies the name.
+    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object's `setServiceId` method and passing a string value that specifies the service name.
+    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object's `setOperationName` method and passing a string value that specifies the operation name. Typically, when creating a Watched Folder endpoint for a service that originated from a process created in Workbench, the name of the operation is invoke.
 
 1. Specify configuration values.
 
-   For each configuration value to set for the Watched Folder endpoint, you must invoke the `CreateEndpointInfo` object’s `setConfigParameterAsText` method. For example, to set the `url` configuration value, invoke the `CreateEndpointInfo` object’s `setConfigParameterAsText` method and pass the following string values:
+   For each configuration value to set for the Watched Folder endpoint, you must invoke the `CreateEndpointInfo` object's `setConfigParameterAsText` method. For example, to set the `url` configuration value, invoke the `CreateEndpointInfo` object's `setConfigParameterAsText` method and pass the following string values:
 
     * A string value that specifies the name of the configuration value. When setting the `url` configuration value, specify `url`.
     * A string value that specifies the value of the configuration value. When setting the `url` configuration value, specify the watched folder location.
@@ -420,7 +416,7 @@ Add a Watched Folder endpoint by using the AEM Forms Java API:
 
 1. Define input parameter values.
 
-   Define an input parameter value by invoking the `CreateEndpointInfo` object’s `setInputParameterMapping` method and pass the following values:
+   Define an input parameter value by invoking the `CreateEndpointInfo` object's `setInputParameterMapping` method and pass the following values:
 
     * A string value that specifies the name of the input parameter. For example, the name of the input parameter for the EncryptDocument service is `InDoc`.
     * A string value that specifies the data type of the input parameter. For example, the data type of the `InDoc` input parameter is `com.adobe.idp.Document`.
@@ -433,7 +429,7 @@ Add a Watched Folder endpoint by using the AEM Forms Java API:
 
 1. Define an output parameter value.
 
-   Define an output parameter value by invoking the `CreateEndpointInfo` object’s `setOutputParameterMapping` method and pass the following values:
+   Define an output parameter value by invoking the `CreateEndpointInfo` object's `setOutputParameterMapping` method and pass the following values:
 
     * A string value that specifies the name of the output parameter. For example, the name of the output parameter for the EncryptDocument service is `SecuredDoc`.
     * A string value that specifies the data type of the output parameter. For example, the data type of the `SecuredDoc` output parameter is `com.adobe.idp.Document`.
@@ -441,11 +437,11 @@ Add a Watched Folder endpoint by using the AEM Forms Java API:
 
 1. Create a Watched Folder endpoint.
 
-   Create the endpoint by invoking the `EndpointRegistryClient` object’s `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the Watched Folder endpoint.
+   Create the endpoint by invoking the `EndpointRegistryClient` object's `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the Watched Folder endpoint.
 
 1. Enable the endpoint.
 
-   Enable the endpoint by invoking the `EndpointRegistryClient` object’s `enable` method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
+   Enable the endpoint by invoking the `EndpointRegistryClient` object's `enable` method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
 
 **See also**
 
@@ -498,7 +494,7 @@ For the purposes of programmatically adding an Email endpoint to a service, cons
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-This process accepts an unsecured PDF document as an input value and then passes the unsecured PDF document to the Encryption service’s `EncryptPDFUsingPassword` operation. This process encrypts the PDF document with a password and returns the password-encrypted PDF document as the output value. The name of the input value (the unsecured PDF document) is `InDoc` and the data type is `com.adobe.idp.Document`. The name of the output value (the password-encrypted PDF document) is `SecuredDoc` and the data type is `com.adobe.idp.Document`.
+This process accepts an unsecured PDF document as an input value and then passes the unsecured PDF document to the Encryption service's `EncryptPDFUsingPassword` operation. This process encrypts the PDF document with a password and returns the password-encrypted PDF document as the output value. The name of the input value (the unsecured PDF document) is `InDoc` and the data type is `com.adobe.idp.Document`. The name of the output value (the password-encrypted PDF document) is `SecuredDoc` and the data type is `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -521,7 +517,7 @@ To add an Email endpoint to a service, perform the following tasks:
 
 Include the necessary files in your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -550,7 +546,7 @@ Specify configuration values for an Email endpoint when programmatically adding 
 
 >[!NOTE]
 >
->The email account that is monitored is a special account that is used for the Email endpoint only. This account is not a regular user's email account. A regular user’s email account must not be configured as the account that the Email Provider uses because the Email Provider deletes email messages from the inbox after it is finished with the messages.
+>The email account that is monitored is a special account that is used for the Email endpoint only. This account is not a regular user's email account. A regular user's email account must not be configured as the account that the Email Provider uses because the Email Provider deletes email messages from the inbox after it is finished with the messages.
 
 The following configuration values are set when programmatically adding an Email endpoint to a service:
 
@@ -636,7 +632,7 @@ Add an Email endpoint by using the Java API:
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path.
 
 1. Create an EndpointRegistry Client object.
 
@@ -646,15 +642,15 @@ Add an Email endpoint by using the Java API:
 1. Set Email endpoint attributes.
 
     * Create a `CreateEndpointInfo` object by using its constructor.
-    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object’s `setConnectorId` method and passing the string value `Email`.
-    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object’s `setDescription` method and passing a string value that describes the endpoint.
-    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object’s `setName` method and passing a string value that specifies the name.
-    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object’s `setServiceId` method and passing a string value that specifies the service name.
-    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object’s `setOperationName` method and passing a string value that specifies the operation name. Typically, when creating an Email endpoint for a service that originated from a process created in Workbench, the name of the operation is invoke.
+    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object's `setConnectorId` method and passing the string value `Email`.
+    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object's `setDescription` method and passing a string value that describes the endpoint.
+    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object's `setName` method and passing a string value that specifies the name.
+    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object's `setServiceId` method and passing a string value that specifies the service name.
+    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object's `setOperationName` method and passing a string value that specifies the operation name. Typically, when creating an Email endpoint for a service that originated from a process created in Workbench, the name of the operation is invoke.
 
 1. Specify configuration values.
 
-   For each configuration value to set for the Email endpoint, you must invoke the `CreateEndpointInfo` object’s `setConfigParameterAsText` method. For example, to set the `smtpHost` configuration value, invoke the `CreateEndpointInfo` object’s `setConfigParameterAsText` method and pass the following values:
+   For each configuration value to set for the Email endpoint, you must invoke the `CreateEndpointInfo` object's `setConfigParameterAsText` method. For example, to set the `smtpHost` configuration value, invoke the `CreateEndpointInfo` object's `setConfigParameterAsText` method and pass the following values:
 
     * A string value that specifies the name of the configuration value. When setting the `smtpHost` configuration value, specify `smtpHost`.
     * A string value that specifies the value of the configuration value. When setting the `smtpHost` configuration value, specify a string value that specifies the name of the SMTP server.
@@ -665,7 +661,7 @@ Add an Email endpoint by using the Java API:
 
 1. Define input parameter values.
 
-   Define an input parameter value by invoking the `CreateEndpointInfo` object’s `setInputParameterMapping` method and pass the following values:
+   Define an input parameter value by invoking the `CreateEndpointInfo` object's `setInputParameterMapping` method and pass the following values:
 
     * A string value that specifies the name of the input parameter. For example, the name of the input parameter for the EncryptDocument service is `InDoc`.
     * A string value that specifies the data type of the input parameter. For example, the data type of the `InDoc` input parameter is `com.adobe.idp.Document`.
@@ -678,7 +674,7 @@ Add an Email endpoint by using the Java API:
 
 1. Define an output parameter value.
 
-   Define an output parameter value by invoking the `CreateEndpointInfo` object’s `setOutputParameterMapping` method and passing the following values:
+   Define an output parameter value by invoking the `CreateEndpointInfo` object's `setOutputParameterMapping` method and passing the following values:
 
     * A string value that specifies the name of the output parameter. For example, the name of the output parameter for the EncryptDocument service is `SecuredDoc`.
     * A string value that specifies the data type of the output parameter. For example, the data type of the `SecuredDoc` output parameter is `com.adobe.idp.Document`.
@@ -686,11 +682,11 @@ Add an Email endpoint by using the Java API:
 
 1. Create the Email endpoint.
 
-   Create the endpoint by invoking the `EndpointRegistryClient` object’s `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the Email endpoint.
+   Create the endpoint by invoking the `EndpointRegistryClient` object's `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the Email endpoint.
 
 1. Enable the endpoint.
 
-   Enable the endpoint by invoking the `EndpointRegistryClient` object’s `enable` method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
+   Enable the endpoint by invoking the `EndpointRegistryClient` object's `enable` method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
 
 **See also**
 
@@ -754,7 +750,7 @@ For the purposes of programmatically adding a Remoting endpoint to a service, co
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-This process accepts an unsecured PDF document as an input value and then passes the unsecured PDF document to the Encryption service’s `EncryptPDFUsingPassword` operation. The PDF document is encrypted with a password, and the password-encrypted PDF document is the output value of this process. The name of the input value (the unsecured PDF document) is `InDoc` and the data type is `com.adobe.idp.Document`. The name of the output value (the password-encrypted PDF document) is `SecuredDoc` and the data type is `com.adobe.idp.Document`.
+This process accepts an unsecured PDF document as an input value and then passes the unsecured PDF document to the Encryption service's `EncryptPDFUsingPassword` operation. The PDF document is encrypted with a password, and the password-encrypted PDF document is the output value of this process. The name of the input value (the unsecured PDF document) is `InDoc` and the data type is `com.adobe.idp.Document`. The name of the output value (the password-encrypted PDF document) is `SecuredDoc` and the data type is `com.adobe.idp.Document`.
 
 To demonstrate how to add a Remoting endpoint to a service, this section adds a Remoting endpoint to a service named EncryptDocument.
 
@@ -776,7 +772,7 @@ To remove an endpoint from a service, perform the following tasks:
 
 Include the necessary files in your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -821,7 +817,7 @@ Add a Remoting endpoint by using the Java API:
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path.
 
 1. Create an EndpointRegistry Client object.
 
@@ -831,19 +827,19 @@ Add a Remoting endpoint by using the Java API:
 1. Set Remoting endpoint attributes.
 
     * Create a `CreateEndpointInfo` object by using its constructor.
-    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object’s `setConnectorId` method and passing the string value `Remoting`.
-    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object’s `setDescription` method and passing a string value that describes the endpoint.
-    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object’s `setName` method and passing a string value that specifies the name.
-    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object’s `setServiceId` method and passing a string value that specifies the service name.
-    * Specify the operation that is invoked by the `CreateEndpointInfo` object’s `setOperationName` method and passing a string value that specifies the operation name. For a Remoting endpoint, specify a wildcard character (&ast;).
+    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object's `setConnectorId` method and passing the string value `Remoting`.
+    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object's `setDescription` method and passing a string value that describes the endpoint.
+    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object's `setName` method and passing a string value that specifies the name.
+    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object's `setServiceId` method and passing a string value that specifies the service name.
+    * Specify the operation that is invoked by the `CreateEndpointInfo` object's `setOperationName` method and passing a string value that specifies the operation name. For a Remoting endpoint, specify a wildcard character (&ast;).
 
 1. Create a Remoting endpoint.
 
-   Create the endpoint by invoking the `EndpointRegistryClient` object’s `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the new Remoting endpoint.
+   Create the endpoint by invoking the `EndpointRegistryClient` object's `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the new Remoting endpoint.
 
 1. Enable the endpoint.
 
-   Enable the endpoint by invoking the `EndpointRegistryClient` object’s `enable` method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
+   Enable the endpoint by invoking the `EndpointRegistryClient` object's `enable` method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
 
 **See also**
 
@@ -878,7 +874,7 @@ To add a TaskManager endpoint to a service, perform the following tasks:
 
 Include the necessary files in your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -932,7 +928,7 @@ Add a TaskManager endpoint by using the Java API:
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path.
 
 1. Create an EndpointRegistry Client object.
 
@@ -946,25 +942,25 @@ Add a TaskManager endpoint by using the Java API:
         * A string value that specifies the identifier value of the category
         * A string value that specifies the description of the category
 
-    * Create the category by invoking the `EndpointRegistryClient` object’s `createEndpointCategory` method and passing the `CreateEndpointCategoryInfo` object. This method returns an `EndpointCategory` object that represents the new category.
+    * Create the category by invoking the `EndpointRegistryClient` object's `createEndpointCategory` method and passing the `CreateEndpointCategoryInfo` object. This method returns an `EndpointCategory` object that represents the new category.
 
 1. Set TaskManager endpoint attributes.
 
     * Create a `CreateEndpointInfo` object by using its constructor.
-    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object’s `setConnectorId` method and passing the string value `TaskManagerConnector`.
-    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object’s `setDescription` method and passing a string value that describes the endpoint.
-    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object’s `setName` method and passing a string value that specifies the name.
-    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object’s `setServiceId` method and passing a string value that specifies the service name.
-    * Specify the category to which the endpoint belongs by invoking the `CreateEndpointInfo` object’s `setCategoryId` method and passing a string value that specifies the category identifier value. You can invoke the `EndpointCategory` object’s `getId` method to get the identifier value of this category.
-    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object’s `setOperationName` method and passing a string value that specifies the operation name. Typically, when creating a `TaskManager` endpoint for a service that originated from a process created in Workbench, the name of the operation is `invoke`.
+    * Specify the connector identifier value by invoking the `CreateEndpointInfo` object's `setConnectorId` method and passing the string value `TaskManagerConnector`.
+    * Specify the description of the endpoint by invoking the `CreateEndpointInfo` object's `setDescription` method and passing a string value that describes the endpoint.
+    * Specify the name of the endpoint by invoking the `CreateEndpointInfo` object's `setName` method and passing a string value that specifies the name.
+    * Specify the service to which the endpoint belongs by invoking the `CreateEndpointInfo` object's `setServiceId` method and passing a string value that specifies the service name.
+    * Specify the category to which the endpoint belongs by invoking the `CreateEndpointInfo` object's `setCategoryId` method and passing a string value that specifies the category identifier value. You can invoke the `EndpointCategory` object's `getId` method to get the identifier value of this category.
+    * Specify the operation that is invoked by invoking the `CreateEndpointInfo` object's `setOperationName` method and passing a string value that specifies the operation name. Typically, when creating a `TaskManager` endpoint for a service that originated from a process created in Workbench, the name of the operation is `invoke`.
 
 1. Create a TaskManager endpoint.
 
-   Create the endpoint by invoking the `EndpointRegistryClient` object’s `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the new TaskManager endpoint.
+   Create the endpoint by invoking the `EndpointRegistryClient` object's `createEndpoint` method and passing the `CreateEndpointInfo` object. This method returns an `Endpoint` object that represents the new TaskManager endpoint.
 
 1. Enable the endpoint.
 
-   Enable the endpoint by invoking the `EndpointRegistryClient` object’s `enable` method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
+   Enable the endpoint by invoking the `EndpointRegistryClient` object's `enable` method and passing the `Endpoint` object that was returned by the `createEndpoint` method.
 
 **See also**
 
@@ -999,7 +995,7 @@ To modify an endpoint, perform the following tasks:
 
 Include the necessary files in your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1044,7 +1040,7 @@ Modify an endpoint by using the Java API:
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path.
 
 1. Create an EndpointRegistry Client object.
 
@@ -1053,20 +1049,20 @@ Modify an endpoint by using the Java API:
 
 1. Retrieve the endpoint to modify.
 
-    * Retrieve a list of all endpoints to which the current user (specified in the connection properties) can access by invoking the `EndpointRegistryClient` object’s `getEndpoints` method and passing a `PagingFilter` object that acts as a filter. You can pass a `(PagingFilter)null` value to return all endpoints. This method returns a `java.util.List` object where each element is an `Endpoint` object. For information about a `PagingFilter` object, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+    * Retrieve a list of all endpoints to which the current user (specified in the connection properties) can access by invoking the `EndpointRegistryClient` object's `getEndpoints` method and passing a `PagingFilter` object that acts as a filter. You can pass a `(PagingFilter)null` value to return all endpoints. This method returns a `java.util.List` object where each element is an `Endpoint` object. For information about a `PagingFilter` object, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
     * Iterate through the `java.util.List` object to determine whether it has endpoints. If endpoints exist, each element is an `EndPoint` instance.
-    * Determine the service that corresponds to an endpoint by invoking the `EndPoint` object’s `getServiceId` method. This method returns a string value that specifies the service name.
-    * Determine the type of endpoint by invoking the `EndPoint` object’s `getConnectorId` method. This method returns a string value that specifies the type of endpoint. For example, if the endpoint is a Watched Folder endpoint, this method returns `WatchedFolder`.
+    * Determine the service that corresponds to an endpoint by invoking the `EndPoint` object's `getServiceId` method. This method returns a string value that specifies the service name.
+    * Determine the type of endpoint by invoking the `EndPoint` object's `getConnectorId` method. This method returns a string value that specifies the type of endpoint. For example, if the endpoint is a Watched Folder endpoint, this method returns `WatchedFolder`.
 
 1. Specify new configuration values.
 
     * Create a `ModifyEndpointInfo` object by invoking its constructor.
-    * For each configuration value to set, invoke the `ModifyEndpointInfo` object’s `setConfigParameterAsText` method. For example, to set the url configuration value, invoke the `ModifyEndpointInfo` object’s `setConfigParameterAsText` method and pass the following values:
+    * For each configuration value to set, invoke the `ModifyEndpointInfo` object's `setConfigParameterAsText` method. For example, to set the url configuration value, invoke the `ModifyEndpointInfo` object's `setConfigParameterAsText` method and pass the following values:
 
         * A string value that specifies the name of the configuration value. For example, to set the `url` configuration value, specify `url`.
         * A string value that specifies the value of the configuration value. To define a value for the `url` configuration value, specify the watched folder location.
 
-    * Invoke the `EndpointRegistryClient` object’s `modifyEndpoint` method and pass the `ModifyEndpointInfo` object.
+    * Invoke the `EndpointRegistryClient` object's `modifyEndpoint` method and pass the `ModifyEndpointInfo` object.
 
 **See also**
 
@@ -1101,7 +1097,7 @@ To remove an endpoint from a service, perform the following tasks:
 
 Include the necessary files into your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1138,7 +1134,7 @@ Remove an endpoint by using the Java API:
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path.
 
 1. Create an EndpointRegistry Client object.
 
@@ -1147,14 +1143,14 @@ Remove an endpoint by using the Java API:
 
 1. Retrieve the endpoint to remove.
 
-    * Retrieve a list of all endpoints to which the current user (specified in the connection properties) has access by invoking the `EndpointRegistryClient` object’s `getEndpoints` method and passing a `PagingFilter` object that acts as a filter. You can pass `(PagingFilter)null` to return all endpoints. This method returns a `java.util.List` object where each element is an `Endpoint` object.
+    * Retrieve a list of all endpoints to which the current user (specified in the connection properties) has access by invoking the `EndpointRegistryClient` object's `getEndpoints` method and passing a `PagingFilter` object that acts as a filter. You can pass `(PagingFilter)null` to return all endpoints. This method returns a `java.util.List` object where each element is an `Endpoint` object.
     * Iterate through the `java.util.List` object to determine whether it has endpoints. If endpoints exist, each element is a `EndPoint` instance.
-    * Determine the service that corresponds to an endpoint by invoking the `EndPoint` object’s `getServiceId` method. This method returns a string value that specifies the service name.
-    * Determine the type of endpoint by invoking the `EndPoint` object’s `getConnectorId` method. This method returns a string value that specifies the type of endpoint. For example, if the endpoint is an EJB endpoint, this method returns `EJB`.
+    * Determine the service that corresponds to an endpoint by invoking the `EndPoint` object's `getServiceId` method. This method returns a string value that specifies the service name.
+    * Determine the type of endpoint by invoking the `EndPoint` object's `getConnectorId` method. This method returns a string value that specifies the type of endpoint. For example, if the endpoint is an EJB endpoint, this method returns `EJB`.
 
 1. Remove the endpoint.
 
-   Remove the endpoint by invoking the `EndpointRegistryClient` object’s `remove` method and passing the `EndPoint` object that represents the endpoint to remove.
+   Remove the endpoint by invoking the `EndpointRegistryClient` object's `remove` method and passing the `EndPoint` object that represents the endpoint to remove.
 
 **See also**
 
@@ -1193,7 +1189,7 @@ To retrieve endpoint connector information, perform the following tasks:
 
 Include the necessary files into your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1235,7 +1231,7 @@ Retrieve endpoint connector information by using the Java API:
 
 1. Include project files. .
 
-   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-livecycle-client.jar, in your Java project's class path.
 
 1. Create a ConnectorRegistry Client object.
 
@@ -1244,12 +1240,12 @@ Retrieve endpoint connector information by using the Java API:
 
 1. Specify the connector type.
 
-   Specify the connector type by invoking the `ConnectorRegistryClient` object’s `getEndpointDefinition` method and passing a string value that specifies the connector type. For example, to specify the Watched Folder connector type, pass the string value `WatchedFolder`. This method returns an `Endpoint` object that corresponds to the connector type.
+   Specify the connector type by invoking the `ConnectorRegistryClient` object's `getEndpointDefinition` method and passing a string value that specifies the connector type. For example, to specify the Watched Folder connector type, pass the string value `WatchedFolder`. This method returns an `Endpoint` object that corresponds to the connector type.
 
 1. Retrieve configuration values.
 
-    * Retrieve configuration values that are associated within this endpoint by invoking the `Endpoint` object’s `getConfigParameters` method. This method returns an array of `ConfigParameter` objects.
-    * Retrieve information about each configuration value by retrieving each element within the array. Each element is a `ConfigParameter` object. You can, for example, determine whether the configuration value is required or optional by invoking the `ConfigParameter` object’s `isRequired` method. If the configuration value is required, then this method returns `true`.
+    * Retrieve configuration values that are associated within this endpoint by invoking the `Endpoint` object's `getConfigParameters` method. This method returns an array of `ConfigParameter` objects.
+    * Retrieve information about each configuration value by retrieving each element within the array. Each element is a `ConfigParameter` object. You can, for example, determine whether the configuration value is required or optional by invoking the `ConfigParameter` object's `isRequired` method. If the configuration value is required, then this method returns `true`.
 
 **See also**
 

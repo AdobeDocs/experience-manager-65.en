@@ -1,20 +1,16 @@
 ---
 title: Upgrade to AEM 6.5 Forms on JEE
-
 description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
-
-uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
 ---
 # Upgrade to AEM 6.5 Forms on JEE {#upgrade-to-aem-forms-jee}
 
-AEM 6.5.18.0 Forms on JEE provides provides two types of installers: Full installer and Patch installer.
+AEM 6.5.18.0 Forms on JEE provides two types of installers: Full installer and Patch installer.
 
 **Full installer**: You can use the [AEM 6.5.18.0 on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.18.0 Forms on JEE.
 

@@ -30,11 +30,11 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
 
 3. Create a child configuration of the CIF Cloud Service config following these steps:
 
-   * In AEM go to Tools -> General -> [Configuration Browser](/help/sites-administering/configurations.md#using-configuration-browser)
+   * In AEM go to Tools > General > [Configuration Browser](/help/sites-administering/configurations.md#using-configuration-browser)
    * Select the base configuration that you created
    * Create a configuration using the steps described at point 2 above
 
-   This new configuration is created as a child configuration of the base one. You can now go to Tools -> General -> Configuration Browser and create the configuration settings.
+   This new configuration is created as a child configuration of the base one. You can now go to Tools > General > Configuration Browser and create the configuration settings.
 
    >[!TIP]
    >

@@ -39,7 +39,7 @@ If the repository has been configured with an external data store, [data store g
 
 The data store garbage collector first makes a note of the current timestamp when the process begins. The collection is then carried out using a multi-pass mark/sweep pattern algorithm.
 
-In the first phase, the data store garbage collector performs a comprehensive traversal of all of the repository content. For each content object that has a reference to a data store record, it located the file in the filesystem, performing a metadata update -- modifying the "last modified" or MTIME attribute. At this point files that are accessed by this phase become newer than the initial baseline timestamp.
+In the first phase, the data store garbage collector performs a comprehensive traversal of all the repository content. For each content object that has a reference to a data store record, it located the file in the filesystem, performing a metadata update -- modifying the "last modified" or MTIME attribute. At this point files that are accessed by this phase become newer than the initial baseline timestamp.
 
 In the second phase, the data store garbage collector traverses the physical directory structure of the data store in much the same way as a "find". It examined the "last modified" or MTIME attribute of the file and makes the following determination:
 
@@ -133,7 +133,7 @@ To run garbage collection:
 1. In the Apache Felix OSGi Management Console, highlight the **Main** tab and select **JMX** from the following menu.
 1. Next, search for and click the **Repository Manager** MBean (or go to `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Click **startDataStoreGC(boolean markOnly)**.
-1. enter "`true`" for the `markOnly` parameter if required:
+1. enter "`true`" for the `markOnly` parameter if necessary:
 
    | **Option** |**Description** |
    |---|---|

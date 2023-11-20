@@ -304,7 +304,7 @@ You can edit the following **[!UICONTROL General]** settings by selecting **[!UI
 
 ### Panoramic Media Component {#panoramic-media-component}
 
-Panoramic Media component is for those assets that are spherical panoramic images. Such images provide a 360° viewing experience of a room, property, location, or landscape. For an image to qualify as a spherical panorama, it must have either one OR both of the following:
+Panoramic Media component is for those assets that are spherical panoramic images. Such images provide a 360-degree viewing experience of a room, property, location, or landscape. For an image to qualify as a spherical panorama, it must have either one OR both of the following:
 
 * An aspect ratio of 2:1.
 * Tagged with the keywords `equirectangular` or (`spherical` + `panorama`) or (`spherical` + `panoramic`). See [Using Tags](/help/sites-authoring/tags.md).

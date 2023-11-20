@@ -9,7 +9,7 @@ exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 
 [!DNL Adobe Experience Manager Assets] uses a proxy to distribute processing for certain tasks.
 
-A proxy is a specific (and sometimes separate) Experience Manager instance that uses proxy workers as processors responsible for handling a job and creating a result. A proxy worker can be used for a wide variety of tasks. In the case of an [!DNL Assets] proxy this can be used for loading assets for rendering within Assets. For example, the [IDS proxy worker](indesign.md) uses an [!DNL Adobe InDesign] Server to process files for use in Assets.
+A proxy is a specific (and sometimes separate) Experience Manager instance that uses proxy workers as processors responsible for handling a job and creating a result. A proxy worker can be used for a wide variety of tasks. If there is an [!DNL Assets] proxy this can be used for loading assets for rendering within Assets. For example, the [IDS proxy worker](indesign.md) uses an [!DNL Adobe InDesign] Server to process files for use in Assets.
 
 When the proxy is a separate [!DNL Experience Manager] instance this helps reduce the load on the [!DNL Experience Manager] authoring instance(s). By default, [!DNL Assets] executes the asset processing tasks in the same JVM (externalized via Proxy) to reduce the load on the [!DNL Experience Manager] authoring instance.
 

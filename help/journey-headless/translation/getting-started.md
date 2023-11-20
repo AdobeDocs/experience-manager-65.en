@@ -87,7 +87,7 @@ Take note of the field **Property Name** for all fields that must be translated.
 
 >[!TIP]
 >
->Generally the content architect provides the translation specialist with the **Property Name**s of all of the fields required for translation. These field names are needed for later in the journey. The prior steps are provided for the understanding of the translation specialist.
+>Generally the content architect provides the translation specialist with the **Property Name**s of all the fields required for translation. These field names are needed for later in the journey. The prior steps are provided for the understanding of the translation specialist.
 
 ### Content Fragments {#content-fragments}
 

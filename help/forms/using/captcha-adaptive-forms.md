@@ -1,15 +1,10 @@
 ---
 title: Using CAPTCHA in adaptive forms
-seo-title: Using CAPTCHA in adaptive forms
 description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in adaptive forms.
-seo-description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in adaptive forms.
-uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
-discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 ---
@@ -63,7 +58,7 @@ AEM Forms users can use the reCAPTCHA service by Google to implement CAPTCHA in 
     1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and tap **[!UICONTROL Create]**.
     1. Select version as reCAPTCHA Enterprise and specify Name; Project ID, Site Key, and API key(Obtained in Step 2 and 3) for reCAPTCHA Enterprise service.
     1. Select key type, the key type should be same as the site key configured in the google cloud project, for example, **Checkbox site key** or **Score-based site key**.
-    1. Specify a threshold score in the range 0 to 1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
+    1. Specify a threshold score in the range 0&ndash;1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
     
         > Note:
         >
@@ -214,7 +209,7 @@ To use reCAPTCHA in adaptive forms:
 
 
    **If the selected configuration has version reCAPTCHA v2**:
-    1. Select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
+    1. Select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only if there is suspicious activity. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
 
         ![Google protected by reCAPTCHA badge](/help/forms/using/assets/google-recaptcha-v2.png)
 

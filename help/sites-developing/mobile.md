@@ -164,7 +164,7 @@ To create an emulator, see [Creating a Custom Mobile Emulator](/help/sites-devel
 **Main characteristics of mobile emulators**
 
 * A device group is composed of one of more emulators: the device group configuration page, for example, /etc/mobile/groups/touch, contains the `emulators` property below the `jcr:content` node.
-  Note: although it's possible that the same emulator belongs to several device groups, it does not make much sense.
+  Note: although it is possible that the same emulator belongs to several device groups, it does not make much sense.
 
 * Via the device group's configuration dialog, the `emulators` property is set with the path of the desired emulators. For example: `/libs/wcm/mobile/components/emulators/iPhone4`.
 

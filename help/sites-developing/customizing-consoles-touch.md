@@ -46,7 +46,7 @@ These can be used in many ways to extend your AEM consoles. A small selection ar
 >
 >The recommended method for configuration and other changes is:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Recreate the required item (that is, as it exists in `/libs`) under `/apps`
 >
 >1. Make any changes within `/apps`
 >

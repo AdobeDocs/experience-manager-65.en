@@ -31,6 +31,10 @@ In large enterprises, forms are often created once and reused by copying to a co
 
 AEM Forms provides forms management tools that not only lets you manage adaptive form, but XFA forms, PDF forms, and related assets as well. For more information, see [Introduction to managing forms](../../forms/using/introduction-managing-forms.md).
 
+>[!NOTE]
+>
+>The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
+
 ![AEM forms capabilities](do-not-localize/4th-draft.gif)
 
 ### Key capabilities {#key-capabilities}
@@ -117,3 +121,4 @@ Personalized documents, like, receipts, welcome kits, and statements can easily 
 ![Layout two](do-not-localize/layout-02.png)
 
 Streamlined personalized communication workflow
+

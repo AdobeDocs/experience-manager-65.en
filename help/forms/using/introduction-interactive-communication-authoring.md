@@ -1,15 +1,10 @@
 ---
 title: Introduction to Interactive Communication authoring UI
-seo-title: An introduction to the various user interface elements you can use to author Interactive Communication
 description: An introduction to the various user interface elements you can use to author Interactive Communication
-seo-description: An introduction to the various user interface elements you can use to author Interactive Communication
-uuid: e8c5b1e8-b2bb-46b4-b42e-1f343192641a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications
-discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
-
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 ---
@@ -69,7 +64,7 @@ The Channel browser helps you switch between the print and web channels of the I
 | Panel |-  |✓ |The Panel component is a placeholder for grouping other components together and controls how a group of components are laid out in an Interactive Communication. A panel component also lets you make a group of components repeatable for the end user, such as in multiple entries required for filling in educational credentials. It is also a good practice to use a panel each for a tab of an Interactive Communication with multiple tabs. |
 | Table  |&#42; |✓ |Adds a table that lets you organize data in rows and columns.  |
 | Target Area |&#42;&#42; |✓ |Inserts a target area in a web channel to organize the web-channel-specific components. |
-| Text  |- |✓ |Adds text to the web channel of an Interactive Communication. Text can make use of form data model objects to make the content dynamic. |
+| Text  |- |✓ |Adds text to the web channel of an Interactive Communication. Text can use form data model objects to make the content dynamic. |
 
 &#42; Use Layout Fragments in the Print channel to add tables.
 

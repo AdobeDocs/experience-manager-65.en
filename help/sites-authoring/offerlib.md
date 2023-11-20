@@ -17,7 +17,7 @@ exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
 Use the Offers console to create offers that you can [use in activity experiences](/help/sites-authoring/content-targeting-touch.md). Creating offers in the Offers console saves time when several experiences require the same offer:
 
 * Create the offer once in the library and use it in multiple experieces of your brand activities.
-* Change the offer in the library and the change affects all of the experiences that use it.
+* Change the offer in the library and the change affects all the experiences that use it.
 
 The Offers console organizes offers by brand. Each brand contains a library of offers that can be used in a brand's experiences. Use folders to define a heirarchical structure for organizing offers in each library. A logical folder structure enables authors to easily find offers by browsing. Tagging and search tools also enable authors to find offers.
 

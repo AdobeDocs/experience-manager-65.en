@@ -44,7 +44,7 @@ The following translation vendors provide an implementation of the new API for t
 
 After you install a connector package, you can create a cloud configuration for the connector. Typically, you need to provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft Translator connector, see [Integrating with Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
-You can create multiple cloud configurations for the same connector if required. For example, create one configuration for each of the accounts or projects that you have with the same vendor.
+You can create multiple cloud configurations for the same connector if necessary. For example, create one configuration for each of the accounts or projects that you have with the same vendor.
 
 After you configure a connection, you can create the translation integration framework configuration that uses it.
 

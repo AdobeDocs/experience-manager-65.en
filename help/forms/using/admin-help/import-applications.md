@@ -45,7 +45,7 @@ Use the Applications tab to import and manage applications that were created in 
 
    The Properties tab on the right displays the properties of the selected CRX node.
 
-   The **syncState** property indicates the state of synchronization of data between the AEM forms server and the CRX repository. As soon as the import process begins this state is set to 0 (zero). This state indicates the data is currently not synchronized. When the data is synchronized, the state is set to 1.
+   The **syncState** property indicates the state of synchronization of data between the AEM Forms Server and the CRX repository. As soon as the import process begins this state is set to 0 (zero). This state indicates the data is currently not synchronized. When the data is synchronized, the state is set to 1.
 
 ## Deploy an application {#deploy-an-application}
 

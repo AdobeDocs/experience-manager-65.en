@@ -85,7 +85,7 @@ Hard-coding the name and description text is sufficient for uni-lingual authorin
 
 ### Evaluating Against Filter Criteria {#evaluating-against-filter-criteria}
 
-The `matches` function returns `true` if the device capabilities satisfy all of the filter criteria. Evaluate the information provided in method arguments to determine if the device belongs to the group. The following values are provided as arguments:
+The `matches` function returns `true` if the device capabilities satisfy all the filter criteria. Evaluate the information provided in method arguments to determine if the device belongs to the group. The following values are provided as arguments:
 
 * A DeviceGroup object
 * The name of the user agent

@@ -1,12 +1,8 @@
 ---
 title: Prepare and send Interactive Communication using the Agent UI
-seo-title: Prepare and send Interactive Communication using the Agent UI
 description: The Agent UI allows the agents to prepare and send Interactive Communication to the post process. The Agent makes the required modifications as allowed, and submits the Interactive Communication to a post process, such as email or print.
-seo-description: Prepare and send Interactive Communication using the Agent UI
-uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
 ---
@@ -63,7 +59,7 @@ In the Content tab, manage the content such as document fragments and content va
 
    In the Content or Data tab, by tapping Highlight Selected Modules In Content ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) on upper left of the preview, you can disable or enable functionality to go to the document fragment when the relevant text, paragraph, or data field is tapped/selected in the preview.
 
-   The fragments that are allowed to be edited by the agent while creating the Interactive Communication have the Edit Selected Content ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) icon. Tap the Edit Selected Content icon to launch the fragment in edit mode and make changes in it. Use the following options for formatting and managing text:
+   The fragments that can be edited by the agent while creating the Interactive Communication have the Edit Selected Content ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) icon. Tap the Edit Selected Content icon to launch the fragment in edit mode and make changes in it. Use the following options for formatting and managing text:
 
     * [Formatting options](#formattingtext)
 
@@ -163,7 +159,7 @@ The Agent UI has built in support for 210 special characters. The admin can [add
 
 * Insert Blank Line: Inserts new blank line.
 * Selection (eye icon): Includes\excludes document fragment from the Interactive Communication.
-* Skip Bullets/Numberings: Enable to skip bullets/numbering in the list document fragment.
+* Skip Bullets/Numberings: Enable if you want to skip bullets/numbering in the list document fragment.
 * Unfilled Values (info): Indicates the number of unfilled variables in the document fragment.
 
 ## Save Interactive Communications as a draft {#save-as-draft}

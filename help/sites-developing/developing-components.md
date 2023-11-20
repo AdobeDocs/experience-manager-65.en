@@ -175,7 +175,7 @@ newComponent (cq:Component)
             description
 ```
 
-Customizing a dialog is similar to developing a component as the dialog is itself a component (i.e. markup rendered by a component script together with behavior/style provided by a client library).
+Customizing a dialog is similar to developing a component as the dialog is itself a component (that is, markup rendered by a component script together with behavior/style provided by a client library).
 
 For examples, see:
 
@@ -222,7 +222,7 @@ Once you have created your resource type, you can instantiate your field by addi
 
 If you want to define styling and behavior for your component, you can create a dedicated [client library](/help/sites-developing/clientlibs.md) that defines your custom CSS/LESS and JS.
 
-To have your client library loaded solely for your component dialog (i.e. it will not be loaded for another component) you need to set the property `extraClientlibs` of your dialog to the category name of the client library you have created. This is advisable if your client library is quite big and/or your field is specific to that dialog and will not be needed in other dialogs.
+To have your client library loaded solely for your component dialog (that is, it will not be loaded for another component) you need to set the property `extraClientlibs` of your dialog to the category name of the client library you have created. This is advisable if your client library is quite large and/or your field is specific to that dialog and will not be needed in other dialogs.
 
 To have your client library loaded for all dialogs, set the category property of your client library to `cq.authoring.dialog`. This is the category name of the client library that is included by default when rendering all dialogs. You want to do that if you client library is small and/or your field is generic and could be reused in other dialogs.
 
@@ -237,7 +237,7 @@ For an example, see:
 Depending on your requirements, you can either:
 
 * Extend a given Granite UI field by component inheritance ( `sling:resourceSuperType`)
-* Extend a given widget from the underlying widget library (in the case of Granite UI, this is Coral UI), by following the widget library API (JS/CSS inheritance)
+* Extend a given widget from the underlying widget library (if there is Granite UI, this is Coral UI), by following the widget library API (JS/CSS inheritance)
 
 #### Access to Dialog Fields {#access-to-dialog-fields}
 

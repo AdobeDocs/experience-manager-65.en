@@ -51,7 +51,7 @@ The Add-On and the [CIF Core Components](https://github.com/adobe/aem-core-cif-c
 
 This configuration can be adjusted for the project via the CIF Cloud Service config following these steps:
 
-1. In AEM go to Tools -> Cloud Services -> CIF Configuration
+1. In AEM go to Tools > Cloud Services > CIF Configuration
 
 2. Select the commerce configuration you want to change
 

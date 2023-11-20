@@ -48,7 +48,7 @@ Depending on the specific configuration, these changes can be made by using eith
 
 >[!NOTE]
 >
->Configuring AEM is straightforward. However, be aware that certain changes can have a major impact on the applications. For this reason, ensure you have the necessary experience and knowledge before you start to configure AEM, and make only the changes which you know are required. Any changes made via the OSGi console are **immediately** applied to the running system (no restart is required).
+>Configuring AEM is straightforward. However, certain changes can have a major impact on the applications. For this reason, ensure you have the necessary experience and knowledge before you start to configure AEM, and make only the changes which you know are required. Any changes made via the OSGi console are **immediately** applied to the running system (no restart is required).
 
 ## Primary Configuration Considerations {#primary-configuration-considerations}
 

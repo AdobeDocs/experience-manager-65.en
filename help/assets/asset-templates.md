@@ -154,7 +154,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
    You can apply various filters to search the desired templates. For example, you can search for templates based on file type or tags.
 
 1. Click **[!UICONTROL Next]** from the toolbar.
-1. In the **[!UICONTROL Preview & Reorder]** screen, rearrange the templates if required and preview the selection of templates to merge. Then, click **[!UICONTROL Next]** from the toolbar.
+1. In the **[!UICONTROL Preview & Reorder]** screen, rearrange the templates if necessary and preview the selection of templates to merge. Then, click **[!UICONTROL Next]** from the toolbar.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 

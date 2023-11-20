@@ -109,7 +109,7 @@ The standard functions of **[!UICONTROL Cut]** and **[!UICONTROL Copy]** are ava
 
 ![Undo, Redo toolbar](do-not-localize/cq55_rte_undoredo.png)
 
-AEM keeps a record of your last 50 actions in the current component, held in chronological order. These actions can be undone (and then redone) in strict order, if required.
+AEM keeps a record of your last 50 actions in the current component, held in chronological order. These actions can be undone (and then redone) in strict order, if necessary.
 
 >[!CAUTION]
 >

@@ -406,7 +406,7 @@ Once [suspended](#suspending-inheritance-from-page-properties) the **Resume** ac
 
 ![Resume](assets/chlimage_1-229.png)
 
-When selected, the dialog is shown. You can select a synchronization, if required, then confirm the action.
+When selected, the dialog is shown. You can select a synchronization, if necessary, then confirm the action.
 
 #### Resume a Live Copy Page from the Live Copy Overview {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -418,7 +418,7 @@ The [Resume action is also available from the Live Copy Overview](/help/sites-ad
 
 ### Changing Inheritance Depth (Shallow/Deep) {#changing-inheritance-depth-shallow-deep}
 
-On an existing live copy you can change the depth for a page; i.e. whether child pages are included.
+On an existing live copy you can change the depth for a page; that is, whether child pages are included.
 
 * Switching to a shallow live copy:
 
@@ -456,7 +456,7 @@ To specify or change the depth:
 
 ### Cancelling Inheritance for a Component {#cancelling-inheritance-for-a-component}
 
-Cancel the live copy inheritance for a component so that the component is no longer synchronized with the source component. You can enable inheritance at a later point if required.
+Cancel the live copy inheritance for a component so that the component is no longer synchronized with the source component. You can enable inheritance at a later point if necessary.
 
 >[!NOTE]
 >
@@ -516,7 +516,7 @@ When you cancel inheritance, you can change the property value. A broken-link ic
 
 ![Change property when inheritance broken](assets/chlimage_1-232.png)
 
-You can later re-enable inheritance for a property if required.
+You can later re-enable inheritance for a property if necessary.
 
 >[!NOTE]
 >

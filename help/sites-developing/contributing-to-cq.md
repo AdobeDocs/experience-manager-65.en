@@ -19,7 +19,7 @@ If you are contributing to components of AEM, familiarize yourself with AEM as y
 
 The HyperText Transfer Protocol (HTTP) is central to everything that we do. Therefore, before contributing to AEM, you should have a deep understanding of HTTP, ideally to the extent where you can write your own Java&trade; implementation of a multithreaded HTTP server with thread-pooling. You should also have an understanding of HTTP/1.1 keep-alive behavior, and you should have an in-depth knowledge of server/client-side interactions with JavaScript, particularly the asynchronous style of interaction represented by AJAX.
 
-Because page dynamism and interactive content are key to the WM experience, it's essential that you have a fairly deep understanding of the Document Object Model and its potential for programmatic manipulation in response to events. You should have some knowledge, for example, of real-time DOM manipulation and drag-and-drop behavior over multiple browser documents (for example, using iframes).
+Because page dynamism and interactive content are key to the WM experience, it is essential that you have a fairly deep understanding of the Document Object Model and its potential for programmatic manipulation in response to events. You should have some knowledge, for example, of real-time DOM manipulation and drag-and-drop behavior over multiple browser documents (for example, using iframes).
 
 At the highest level, you should have a solid understanding of:
 
@@ -125,7 +125,7 @@ It is also possible to combine multiple instances of the content repository to c
 
 **Dispatcher** - The Dispatcher is both a caching and load-balancing tool, and provides certain security safeguards.
 
-**ExtJS widgets** - Most user-interface elements in AEM make use of ExtJS, which is a third-party widget library written in JavaScript. ExtJS features high performance, customizable UI widgets and a well-designed and extensible component model.
+**ExtJS widgets** - Most user-interface elements in AEM use ExtJS, which is a third-party widget library written in JavaScript. ExtJS features high performance, customizable UI widgets and a well-designed and extensible component model.
 
 **JCR, Java&trade; Content Repository** - The Java&trade; Content Repository specification (JSR-283) provides both an abstract data model and an Application Programming Interface for realizing a massively scalable NoSQL data repository that combines features of a file system and an object database. While you do not need to understand JSR-283 in exhaustive detail, you should take time to familiarize yourself with the basic capabilities of JCR and the data model underlying it, because JCR is what makes possible the "everything is content" philosophy of AEM.
 

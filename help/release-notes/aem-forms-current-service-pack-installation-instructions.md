@@ -28,7 +28,12 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
 >[!NOTE]
 >
-> Adobe releases a full installer every sixth service pack. AEM 6.5 Forms Service Pack 18 (6.5.18.0) is the latest JEE full installer. The full installer provides support for new platforms while the regular service pack installer includes new features, bug fixed and general improvements. If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer released on 31 August 2023 instead of AEM 6.5 Forms installer released on 08 April 2019 or AEM 6.5.12 Forms Installer released on 03 March 2022. After using the full installer, install the latest service pack.
+> * Adobe releases a full installer every sixth service pack. AEM 6.5 Forms Service Pack 18 (6.5.18.0) is the latest JEE full installer. The full installer supports new platforms while the regular service pack installer includes new features, bug fixed and general improvements. If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer released on 31 August 2023 instead of AEM 6.5 Forms installer released on 08 April 2019 or AEM 6.5.12 Forms Installer released on 03 March 2022. After using the full installer, install the latest service pack.
+> 
+> * The AEM Forms feature, such as Adaptive Forms, available in [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), are intended for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms. 
+
+ 
+
 
 ## Download and install Service Pack on an AEM Form on JEE environment {#download-and-install-for-jee-service-pack}
 
