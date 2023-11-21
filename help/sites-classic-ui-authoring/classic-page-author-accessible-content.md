@@ -600,7 +600,7 @@ If color is used as a cue to provide information, you should provide an extra vi
 *   Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
 
     * Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1.
-    * Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+    * Incidental: Text or images of text that are part of an inactive user interface component that are pure decoration or not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
     * Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.
 
 #### Purpose - Contrast (Minimum) (1.4.3) {#purpose-contrast-minimum}

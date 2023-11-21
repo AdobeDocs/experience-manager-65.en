@@ -349,7 +349,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.Ext.form.FieldSet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet)
 
-  Standard container used for grouping items within a [form](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel). ...
+  Standard container used for grouping items within a [form](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel).
 
 * fileuploaddialogbutton
 
