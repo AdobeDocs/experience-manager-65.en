@@ -807,6 +807,10 @@ When you convert Microsoft Excel 2019 to PDF on Microsoft Windows Server 2019, y
 >[!NOTE]
 >* For Apple macOS and Ubuntu OS, you need not require to configure the aforementioned settings.
 
++++ Unable to convert XPS files to PDFs
+ 
+To resolve the issue, [create a feature-specific registry key on Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+
 +++
 
 ## Next steps {#next-steps}
