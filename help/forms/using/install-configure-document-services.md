@@ -36,7 +36,7 @@ AEM Forms provides a set of OSGi services to accomplish different document level
 
    The signature service accesses certificates and credentials that are stored in the trust store. For more information, see [Signature Service](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms is a powerful enterprise-class platform and the document services is only one of the capabilities of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms is a powerful enterprise-class platform and document services is only one of the capabilities of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Deployment Topology {#deployment-topology}
 
@@ -46,7 +46,7 @@ AEM Forms add-on package is an application deployed onto AEM. Generally, you req
 
 >[!NOTE]
 >
->Although AEM Forms let you set up and run all the functionalities from a single server, you should do capacity planning, load balancing, and set up dedicated servers for specific capabilities in a production environment. For example, for an environment using the PDF Generator service to convert thousands of pages a day and multiple adaptive forms to capture data, set up separate AEM Forms servers for the PDF Generator service and adaptive forms capabilities. It helps provide optimum performance and scale the servers independent of each other.
+>Although AEM Forms lets you set up and run all the functionalities from a single server, you should do capacity planning, load balancing, and set up dedicated servers for specific capabilities in a production environment. For example, for an environment using the PDF Generator service to convert thousands of pages a day and multiple adaptive forms to capture data, set up separate AEM Forms servers for the PDF Generator service and adaptive forms capabilities. It helps provide optimum performance and scale the servers independent of each other.
 
 ## System Requirements {#system-requirements}
 
@@ -194,7 +194,7 @@ If you are going use the PDF Generator service to convert native file formats su
 >* Start all the installed software at least once. Dismiss all the dialog boxes for all the users configured to use the PDF Generator service.
 >* [Check expiration date of your Adobe Acrobat serial numbers](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) and set a date to update license or [migrate your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) based on the expiry date.  
 
-After installing Acrobat, open Microsoft&reg; Word. On the **Acrobat** tab, click **Create PDF** and convert a .doc or .docx file available on your machine to a PDF Document. If the conversion is successful, AEM Form is ready to use Acrobat with PDF Generator service.
+After installing Acrobat, open Microsoft&reg; Word. On the **Acrobat** tab, click **Create PDF** and convert a .doc or .docx file available on your machine to a PDF Document. If the conversion is successful, AEM Forms is ready to use Acrobat with PDF Generator service.
 
 ### Setup environment variables {#setup-environment-variables}
 
@@ -353,16 +353,6 @@ Copy the Unicode font to any of the following directories as appropriate for you
 >* When you run PDF Generator service as a non-root user, provide the non-root user read and write access to all the font directories.
 >* Whenever you install new fonts to the fonts folder, restart the AEM Forms instance.
 >
-
-### (Windows Only) Additional configuration for using Microsoft Office 2019 on Windows Server 2019 
-
-If you are using Microsoft Office 2019 on Microsoft Windows Server 2019, you must ensure the following:
-
-* While using the PDF Generator service, your Windows machine should not have any active remote connection with the AEM server (Windows RDP session).
-* The default printer must be set to Adobe PDF.
-
->[!NOTE]
->* For Apple macOS and Ubuntu OS, you need not require to configure the aforementioned settings.
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
@@ -805,8 +795,19 @@ When user tries to convert Word or Excel files to PDF on Microsoft Windows Serve
 *Error message from the primary converter:
 ALC-PDG-015-003-The system cannot open the input file. Submit your file again or contact your system administrator.*
 
-To resolve the issue, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+To resolve the issues, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
++++ Unable to convert Office 2019 files to PDF on Windows Server 2019
+
+When you convert Microsoft Office 2019 files to PDF on Microsoft Windows Server 2019, you must ensure the following:
+
+* While using the PDF Generator service, your Windows machine should not have any active remote connection with the AEM server (Windows RDP session).
+* The default printer must be set to Adobe PDF.
+
+>[!NOTE]
+>* For Apple macOS and Ubuntu OS, you need not require to configure the aforementioned settings.
+
++++
 
 ## Next steps {#next-steps}
 
