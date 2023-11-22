@@ -797,9 +797,9 @@ ALC-PDG-015-003-The system cannot open the input file. Submit your file again or
 
 To resolve the issues, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
-+++ Unable to convert Office 2019 files to PDF on Windows Server 2019
++++ Unable to convert Excel files to PDF on Windows Server 2019
 
-When you convert Microsoft Office 2019 files to PDF on Microsoft Windows Server 2019, you must ensure the following:
+When you convert Microsoft Excel 2019 to PDF on Microsoft Windows Server 2019, you must ensure the following:
 
 * While using the PDF Generator service, your Windows machine should not have any active remote connection with the AEM server (Windows RDP session).
 * The default printer must be set to Adobe PDF.
