@@ -1,8 +1,8 @@
 ---
 title: Hotfix for AEM Form Service Pack
 description: Provides information on how to download and install the hotfix for AEM Forms Service Pack
+exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 ---
-
 # Adobe Experience Manager Hotfixes{#aem-form-hotfix}
 
 The installation of the latest [AEM Service Pack](/help/release-notes/release-notes.md) is recommended that includes security, performance, stability, and key customer fixes and enhancements released since the general availability of Adobe Experience Manager 6.5. 
@@ -43,4 +43,4 @@ Perform the following steps to download and install the Hotfix:
   1. Download [Hotfix](#hotfix-for-adaptive-forms) from the SD link.
   1. Extract the Hotfix archive file so you can obtain an Experience Manager package (.zip) and bundle (.jar) files.
   1. Upload and install the package (.zip) via the Package Manager.
-  1. Open the configuration manager bundles `https://server:host/system/console/bundles`, upload, and install the bundle (.jar). 
+  1. Open the configuration manager bundles `https://server:host/system/console/bundles`, upload, and install the bundle (.jar).
