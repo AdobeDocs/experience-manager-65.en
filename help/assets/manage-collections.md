@@ -216,7 +216,7 @@ When you download a collection, the entire hierarchy of assets within the collec
 
 ## Create nested collections {#creating-nested-collections}
 
-You can add a collection to another collection, thereby creating a nested collection.
+You can add a collection to another collection so that you create a nested collection.
 
 1. From the Collections console, select the desired collection or group of collections, and click **[!UICONTROL To Collection]** in the toolbar.
 

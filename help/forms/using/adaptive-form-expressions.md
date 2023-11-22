@@ -1,14 +1,9 @@
 ---
 title: Adaptive Form Expressions
-seo-title: Adaptive Form Expressions
 description: Use adaptive forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
-seo-description: Use adaptive forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
-uuid: c274dce5-8b87-472f-bff5-53b246fa6584
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 ---
@@ -192,7 +187,7 @@ The methods to add validations on a field are:
 
 ### Required {#required}
 
-To make a component mandatory, in the **Edit** dialog of the component, you can select option **Title and Text &gt; Required**. You can also add the appropriate **required message** (optional) as well. .
+To make a component mandatory, in the **Edit** dialog of the component, you can select option **Title and Text &gt; Required**. You can also add the appropriate **required message** (optional) as well.
 
 ### Validation Patterns {#validation-patterns}
 
@@ -210,7 +205,7 @@ Display Format can be used to display the data in different formats. For example
 
 ### GuideBridge - APIs and Events {#guidebridge-apis-and-events}
 
-GuideBridge is collection of APIs’ that can be used to interact with adaptive forms in memory model in a browser. For detailed introduction to Guide Bridge API, class methods, events exposed, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+GuideBridge is collection of APIs' that can be used to interact with adaptive forms in memory model in a browser. For detailed introduction to Guide Bridge API, class methods, events exposed, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >

@@ -1,14 +1,10 @@
 ---
 title: Operations Dashboard
-seo-title: Operations Dashboard
 description: Learn how to use the Operations Dashboard in Adobe Experience Manager.
-seo-description: Learn how to use the Operations Dashboard.
-uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
@@ -225,9 +221,9 @@ A Composite Health Check's role is to aggregate several individual Health Checks
      <li>returns Critical status if at least one indexing lane is failing</li>
      <li>checks the <code>lastIndexedTime</code> for all indexing lanes and:
       <ul>
-       <li>returns Critical status if it's more than 2 hours ago </li>
-       <li>returns Warning status if it's between 2 hours and 45 minutes ago </li>
-       <li>returns OK status if it's less than 45 minutes ago </li>
+       <li>returns Critical status if it is more than 2 hours ago </li>
+       <li>returns Warning status if it is between 2 hours and 45 minutes ago </li>
+       <li>returns OK status if it is less than 45 minutes ago </li>
       </ul> </li>
      <li>if none of these conditions are met, it returns the OK status</li>
     </ul> <p>Both the Critical and Warn status thresholds are configurable. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Note: </strong>This health check is available with AEM 6.4 and has been backported to AEM 6.3.0.1.</p> </td>
@@ -438,7 +434,7 @@ Examples:
 
 >[!NOTE]
 >
->The settings in the diagnosis page do not influence what is logged to the log files and conversely. So, while the error log might catch INFO messages, you might not see them in the log messages UI. Also, through the UI it's possible to catch DEBUG messages from certain packages without it affecting the error log. For more information on how to configure the log files, see [Logging](/help/sites-deploying/configure-logging.md).
+>The settings in the diagnosis page do not influence what is logged to the log files and conversely. So, while the error log might catch INFO messages, you might not see them in the log messages UI. Also, through the UI it is possible to catch DEBUG messages from certain packages without it affecting the error log. For more information on how to configure the log files, see [Logging](/help/sites-deploying/configure-logging.md).
 
 >[!NOTE]
 >

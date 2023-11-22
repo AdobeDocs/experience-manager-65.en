@@ -58,7 +58,7 @@ AEM Forms users can use the reCAPTCHA service by Google to implement CAPTCHA in 
     1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and tap **[!UICONTROL Create]**.
     1. Select version as reCAPTCHA Enterprise and specify Name; Project ID, Site Key, and API key(Obtained in Step 2 and 3) for reCAPTCHA Enterprise service.
     1. Select key type, the key type should be same as the site key configured in the google cloud project, for example, **Checkbox site key** or **Score-based site key**.
-    1. Specify a threshold score in the range 0 to 1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
+    1. Specify a threshold score in the range 0&ndash;1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
     
         > Note:
         >

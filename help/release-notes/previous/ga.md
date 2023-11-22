@@ -181,7 +181,7 @@ For more details on changes to AEM Screens - see the Release Notes in the [AEM S
 
 * The [Reference](/help/sites-authoring/author-environment-tools.md#references) rail has a new section to list internal links that are pointing to the page selected. This is useful when planning to take a page offline or delete - to see what pages need to be adjusted before taking them offline.
 * The [list view](/help/sites-authoring/basic-handling.md#list-view) has a new workflow column that shows the status when the page is in a workflow.
-* In the [page properties](/help/sites-authoring/editing-page-properties.md), it's now possible to browse for existing assets when assigning a Thumbnail to the page (Thumbnail tab).
+* In the [page properties](/help/sites-authoring/editing-page-properties.md), it is now possible to browse for existing assets when assigning a Thumbnail to the page (Thumbnail tab).
 
 #### Page Editor {#page-editor}
 

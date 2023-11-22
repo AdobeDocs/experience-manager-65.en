@@ -82,7 +82,7 @@ orderby=path
 
 The purpose of the `p.guessTotal` parameter is to return the appropriate number of results that can be shown by combining the minimum viable p.offset and p.limit values. The advantage of using this parameter is improved performance with large result sets. This avoids calculating the full total (for example, calling result.getSize()) and reading the entire result set, optimized all the way down to the Oak engine & index. This can be a significant difference when there are 100 thousands of results, both in execution time and memory usage.
 
-The disadvantage to the parameter is users do not see the exact total. But you can set a minimum number like p.guessTotal=1000 so it will always read up to 1000, so you get exact totals for smaller result sets, but if it's more than that, you can only show "and more".
+The disadvantage to the parameter is users do not see the exact total. But you can set a minimum number like p.guessTotal=1000 so it will always read up to 1000, so you get exact totals for smaller result sets, but if it is more than that, you can only show "and more".
 
 Add `p.guessTotal=true` to the query below to see how it works:
 

@@ -1,13 +1,9 @@
 ---
 title: Create or Configure a watched folder
-seo-title: Create or Configure a watched folder
 description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
-seo-description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
-uuid: 659d4d8c-99b8-40dd-b884-bfee4d476fe1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 ---
 # Create or Configure a watched folder {#create-or-configure-a-watched-folder}
@@ -89,7 +85,7 @@ Perform the following steps to create a watched folder:
         * %m = minute
         * %s = second
         * %l = millisecond
-        * %R = random number (between 0 and 9)
+        * %R = random number (between 0&ndash;9)
         * %P = process or job id
         * For example, if it is 8 PM on July 17, 2009 and you specify C:/Test/WF0/failure/%Y/%M/%D/%H/, the result folder is C:/Test/WF0/failure/2009/07/17/20.
         * If the path is not absolute but relative, the folder is created inside the watched folder. The default value is result/%Y/%M/%D/, which is the Result folder inside the watched folder. For more information about file patterns, see [About file patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).

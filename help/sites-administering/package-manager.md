@@ -352,11 +352,11 @@ Package Manager can perform the following validations:
 
 ##### Validate OSGi Package Imports {#osgi-package-imports}
 
-**What's Checked**
+**What is checked**
 
 This validation inspects the package for all JAR files (OSGi bundles), extracts their `manifest.xml` (which contains the versioned dependencies on which said OSGi bundle relies), and verifies the AEM instance exports said dependencies with the correct versions.
 
-**How It's Reported**
+**How it is reported**
 
 Any versioned dependencies that cannot be satisfied by the AEM instance are listed in the Activity Log of Package Manager.
 
@@ -370,13 +370,13 @@ To resolve errors due to unsatisfied OSGi bundles, the dependency version in the
 
 ##### Validate Overlays {#overlays}
 
-**What's Checked**
+**What is checked**
 
 This validation determines if the package being installed contains a file that is already overlaid in the destination AEM instance.
 
 For example, given an existing overlay at `/apps/sling/servlet/errorhandler/404.jsp`, a package that contains `/libs/sling/servlet/errorhandler/404.jsp`, such that it will change the existing file at `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**How It's Reported**
+**How it is eported**
 
 Any such overlays are described in the Activity Log of Package Manager.
 
@@ -394,11 +394,11 @@ To resolve this issue, the maintainer of the overlay file in `/apps` must review
 
 ##### Validate ACLs {#acls}
 
-**What's Checked**
+**What is checked**
 
 This validation checks which permissions are being added, how they will be handled (merge/replace), and if the current permissions will be impacted.
 
-**How It's Reported**
+**How it is reported**
 
 The permissions are described in the Activity Log of Package Manager.
 

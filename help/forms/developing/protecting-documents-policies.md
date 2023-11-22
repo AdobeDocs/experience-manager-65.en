@@ -1322,12 +1322,12 @@ The following table lists key and value pairs that are required when creating a 
   <tr>
    <td><p><code>WaterBackCmd:OPACITY</code></p></td>
    <td><p>Specifies the opacity of the watermark. The default value is 0.5 if it is not specified.</p></td>
-   <td><p>A value between 0.0 and 1.0.</p></td>
+   <td><p>A value between 0.0&ndash;1.0.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:ROTATION</code></p></td>
    <td><p>Specifies the rotation of the watermark. The default value is 0 degrees.</p></td>
-   <td><p>A value between 0 and 359.</p></td>
+   <td><p>A value between 0&ndash;359.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>

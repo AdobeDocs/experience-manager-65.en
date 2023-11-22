@@ -279,7 +279,7 @@ AEM starts and automatically redirects your web browser to the appropriate page,
 
 ![sign in screen](assets/screen_shot_2019-04-08at83533am.png)
 
-Once logged in, you have access to AEM. For more information, depending on the your role, see the following:
+After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
 * [Authoring](/help/sites-authoring/home.md)
 * [Administering](/help/sites-administering/home.md)

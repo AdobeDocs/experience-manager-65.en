@@ -45,7 +45,7 @@ You can accomplish these tasks using the Signature service:
 
 ## Adding Signature Fields {#adding-signature-fields}
 
-Digital signatures appear in signature fields, which are form fields that contain a graphic representation of the signature. Signature fields can be visible or invisible. Signers can use a preexisting signature field, or a signature field can be programmatically added. In either case, the signature field must exist before a PDF document can be signed.
+Digital signatures appear in signature fields, which are form fields that contain a graphic representation of the signature. Signature fields can be visible or invisible. Signers can use a pre-existing signature field, or a signature field can be programmatically added. In either case, the signature field must exist before a PDF document can be signed.
 
 You can programmatically add a signature field by using the Signature service Java API or Signature web service API. You can add more than one signature field to a PDF document; however, each signature field name must be unique.
 

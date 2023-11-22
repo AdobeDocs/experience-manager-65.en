@@ -148,7 +148,7 @@ The `Page` component extends the `Container` component. A container is a compone
 
 ### Responsive Grid {#responsive-grid}
 
-The Responsive Grid component is a container. It contains an specific variant of the Model Provider representing its columns. The Responsive Grid and its columns are responsible for decorating the outer HTML element of the project's component with the specific class names contained in the model.
+The Responsive Grid component is a container. It contains a specific variant of the Model Provider representing its columns. The Responsive Grid and its columns are responsible for decorating the outer HTML element of the project's component with the specific class names contained in the model.
 
 The Responsive Grid component should come pre-mapped to its AEM counterpart as this component is complex and rarely customized.
 

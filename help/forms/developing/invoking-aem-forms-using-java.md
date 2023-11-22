@@ -809,7 +809,7 @@ The following Java code example creates a `com.adobe.idp.Document` object that i
  Document myPDFDocument = new Document(is);
 ```
 
-#### Creating a document based on content accessible from an URL {#creating-a-document-based-on-content-accessible-from-an-url}
+#### Creating a document based on content accessible from a URL {#creating-a-document-based-on-content-accessible-from-an-url}
 
 The following Java code example creates a `com.adobe.idp.Document` object that is based on a PDF file named *map.pdf*. This file is located within a web application named `WebApp` that is running on `localhost`. This constructor attempts to set the `com.adobe.idp.Document` object's MIME content type using the content type returned with the URL protocol.
 
@@ -821,7 +821,7 @@ The URL supplied to the `com.adobe.idp.Document` object is always read at the si
 
 The c:/temp/input.pdf file must be located on the client computer (not on the server computer). The client computer is where the URL is read and where the `com.adobe.idp.Document` object was created.
 
-**Creating a document based on content accessible from an URL**
+**Creating a document based on content accessible from a URL**
 
 ```java
  //Create a Document object based on a java.net.URL object

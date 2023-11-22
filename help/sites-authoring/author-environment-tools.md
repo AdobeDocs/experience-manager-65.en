@@ -168,7 +168,7 @@ The Content Tree is a tab within the side panel (together with the components an
 
 ![Content tree](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-When you open the side panel, it slides open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Also, on a complex page, it makes it easier to jump between components of the page.
+When you open the side panel, it slides open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it is easier to understand how its content is structured hierarchically. Also, on a complex page, it makes it easier to jump between components of the page.
 
 ![ateat-11](assets/ateat-11.png)
 

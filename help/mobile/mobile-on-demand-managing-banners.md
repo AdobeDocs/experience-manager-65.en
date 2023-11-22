@@ -77,7 +77,7 @@ The workflow to edit an article:
 1. From Mobile, choose your Mobile On-Demand app from the catalog.
 1. Select an AEM sourced banner from the** Manage Banners** tile.
 1. Click the highlighted banner from the list view to open it in the content editor.
-1. Use the content editor to drag banner content (manuscripts, images, text, etc).
+1. Use the content editor to drag banner content (manuscripts, images, text, and so on).
 
 ### Viewing and Editing the Metadata within a Banner {#viewing-and-editing-the-metadata-within-a-banner}
 

@@ -94,7 +94,7 @@ To get a more in-depth look at setting up a local development environment and al
 
 <!-- Start of CDN Review -->
 
-Now, it's time to get your AEM headless application ready for launch, by following the best practices outlined below.
+Now, it is time to get your AEM headless application ready for launch, by following the best practices outlined below.
 
 ### Secure your Headless Application Before Launch {#secure-and-scale-before-launch}
 
