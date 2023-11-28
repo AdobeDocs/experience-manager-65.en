@@ -60,7 +60,6 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Sites]{#sites-6519}
 
-
 #### Accessibility{#sites-accessibility-6519}
 
 * On an AEM Sites page, when you zoom in 200% on the page, the links **[!UICONTROL Language Copy]** and **[!UICONTROL CSV Report]** in the References rail disappear. (SITES-11011)
@@ -93,7 +92,8 @@ to
 
 #### Core Backend{#sites-core-backend-6519}
 
-* Improve `StyleImpl`. (SITES-15164) 
+* Improve `StyleImpl`. (SITES-15164)
+* Improve the release/650 branch of the WCM pipeline to be able to run integration tests for its modules. (SITES-12938) 
 
 <!--#### Core Components{#sites-core-components-6519}
 
@@ -127,6 +127,7 @@ to
 
 #### Page Editor{#sites-pageeditor-6519}
 
+* In Forms > Themes, if you opened a theme in the theme editor and made a few changes and saved, then clicked Preview, a loading icon iss visible but the actual preview does not load. (SITES-17164)
 * Selection of multiple document filetypes on asset type filter is not working on the page console. No results are found even if the results of one particular filetype are available. As a result, authors are unable to filter multiple documents. They must use multiple document types and they are having to filter it one at a time. (SITES-14047) 
 * After upgrading an instance from AEM 6.5.17 and AEM 6.5.18, from inside the Page Editor, if you select **[!UICONTROL Publish Page]**, you are redirected to a URL that does not exist. The user should be redirected to the Publish wizard. (SITES-15856) 
 * Redundant copy from AEM's Clipboard during a paste from the operating system's Clipboard. (SITES-15704) 
@@ -222,10 +223,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Workflow{#foundation-workflow-6519}
 
-* Unable to complete a task in the Inbox. Only an "undefined" value is observed in the drop-down menu when trying to complete the task and select an action. This means that users cannot apply the AEM 6.5.18 service pack. (NPR-41402) 
+* Unable to complete a task in the Inbox. Only an "undefined" value is observed in the drop-down menu when trying to complete the task and select an action. This means that users cannot apply the AEM 6.5.18 service pack. (NPR-41402 and NPR-41473) 
 * Unable to complete tasks in Inbox. There is no value (only "undefined") in the drop-down list when trying to complete the task for zip files, Asset reports, move (success or failure), or asset expiration. (NPR-41305) 
 * When a user selects **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > instances, then selects the running workflow, then select **[!UICONTROL View Payload]**, it results in a 500 error page. (NPR-41325) 
-
 
 ## Install [!DNL Experience Manager] 6.5.19.0{#install}
 
