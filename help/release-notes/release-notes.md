@@ -19,7 +19,7 @@ mini-toc-levels: 4
 | -------- | ---------------------------- |
 | Version  | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
-| Date     | Thursday, November 23, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Date     | Thursday, November 30, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
