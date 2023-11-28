@@ -451,14 +451,34 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 * After installing AEM Service Pack 6.5.19.0 full installer, the EAR deployment fails on JEE using JBoss&reg; Turnkey. 
 To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager. (CQDOC-20803)
 
+#### Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
+
+* If you are upgrading *from* AEM Service Pack 6.5.14.0 or earlier, it is mandatory that you install the servlet fragment.
+* If you are upgrading *from* AEM Service Pack 6.5.15.0, the installation of the servlet fragment is *not* required. 
+* If you are upgrading *to* AEM Service Pack 6.5.15.0 or higher, and your AEM instance is running Tomcat 8.5.88, it is mandatory that you install the servlet fragment.
+* It is mandatory that you install the servlet fragment for all application servers except those running on JBoss&reg; EAP 7.4.0.
+
+**To install the servlet fragment:**
+
+1. Download the servlet fragment from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
+1. Start the application server. 
+1. Wait for logs to stabilize and check the bundle state.
+1. Open Web Console Bundles. The default URL is `http://[Server]:[Port]/system/console/bundles`.
+1. Select **[!UICONTROL Install]** or **[!UICONTROL Update]**. 
+1. Select the downloaded fragment 
+`org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar` 
+1. Select **[!UICONTROL Install]** or **[!UICONTROL Update]**. 
+1. Wait for the application server to stabilize.
+1. Stop the application server.
+
 #### Adaptive Forms
 
 * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
 * When a redirect URL is set in the guide container of an Adaptive Form, the inline signing stops working. (FORMS-10493)
-To resolve the issue, download and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
-* All Document of Record (DoR) templates fail to publish. Only English locale-based DoR templates and their associated Forms-based DoR templates get published. (FORMS-10535)
-To resolve the issue, download and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+To resolve the issue, download, and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* All Document of Record (DoR) templates fail to publish. Only English locale-based DoR templates and their associated Forms-based DoR templates are published. (FORMS-10535)
+To resolve the issue, download, and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 
 #### Interactive Communications
