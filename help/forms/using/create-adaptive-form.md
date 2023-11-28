@@ -1,11 +1,6 @@
 ---
 title: 'Tutorial: Create an adaptive form'
-seo-title: Create an adaptive form
 description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
-seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
-page-status-flag: de-activated
-uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
-discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 ---
@@ -45,7 +40,7 @@ You will have a form similar to the following by end of article:
 
    For information about adaptive form authoring interface and available components, see [Introduction to authoring adaptive forms](/help/forms/using/creating-adaptive-form.md).
 
-   ![newly-created-adaptive-form](assets/newly-created-adaptive-form.png)
+   ![A newly created adaptive form.](assets/newly-created-adaptive-form.png)
 
 ## Step 2: Add header and footer {#step-add-header-and-footer}
 

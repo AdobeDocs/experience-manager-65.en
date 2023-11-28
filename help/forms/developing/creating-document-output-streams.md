@@ -1800,7 +1800,7 @@ Create multiple PDF files by using the Output API (Java):
 
 1. Include project files"
 
-   Include client JAR files, such as adobe-output-client.jar, in your Java project's class path. .
+   Include client JAR files, such as adobe-output-client.jar, in your Java project's class path.
 
 1. Create an Output Client object
 
