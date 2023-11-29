@@ -1,6 +1,6 @@
 ---
 title: Prerequisites for Integrating with Adobe Target
-description: Learn about about the prerequisites for integrating with Adobe Target.
+description: Learn about the prerequisites for integrating with Adobe Target.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
