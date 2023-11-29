@@ -453,9 +453,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 
 #### Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
 
-* If you are upgrading *from* AEM Service Pack 6.5.14.0 or earlier, it is mandatory that you install the servlet fragment.
-* If you are upgrading *from* AEM Service Pack 6.5.15.0, the installation of the servlet fragment is *not* required. 
-* If you are upgrading *to* AEM Service Pack 6.5.15.0 or higher, and your AEM instance is running Tomcat 8.5.88, it is mandatory that you install the servlet fragment.
+* If you are upgrading to AEM Service Pack 6.5.15.0 or any higher version, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment *before* you proceed with the installation of Service Pack 6.5.15.0 or any higher version.
 * It is mandatory that you install the servlet fragment for all application servers except those running on JBoss&reg; EAP 7.4.0.
 
 **To install the servlet fragment:**
