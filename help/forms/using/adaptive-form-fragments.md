@@ -98,11 +98,7 @@ In addition, if you selected an XML schema or XDP form template as the form mode
     * **Form Model**: Depending on the form model for the adaptive form, this field displays the **XML Schema**, **Form Template**, or **None**. It is a non-editable field.
 
     * **Fragment Model Root**: Appears only in XSD-based adaptive forms. It specifies the root for the fragment model. You can choose **/** or the XSD complex type from the drop-down. Note that you can reuse the fragment in another adaptive form only if you select the complex type as the fragment model root.
-      If you choose **/** as the fragment model root, the complete XSD tree from the root is visible in the adaptive form data model tab. For a complex type fragment model root, only the descendants of the selected complex type are visible in the adaptive form data model tab.
-
-         >[!NOTE]
-         >
-         > You can reuse the form fragment in another Adaptive Form only if you select the complex type as the **Fragment Model Root**.
+      If you choose **/** as the fragment model root, the complete XSD tree from the root is visible in the adaptive form data model tab. For a complex type fragment model root, only the descendants of the selected complex type are visible in the adaptive form data model tab. If you create a fragment and choose a complex type as the **Fragment Model Root**, you can use it wherever that complex type is used, either within the same form or across multiple forms.
 
     * **XSD Ref**: Appears only in XSD-based adaptive forms. It displays the location of the XML schema.
 
@@ -176,9 +172,8 @@ You can use a schema-based form fragment multiple times in an Adaptive Form to s
 
   >[!NOTE]
   >
-  > * If you use none-based form fragments multiple times in an Adaptive form, data syncing between the fields of fragments occurs. You can use a single form fragment (based on core components)  multiple times in a form. It supports both none-based and schema-based form fragments without data syncing issues. 
-
-
+  > * If you use none-based form fragments multiple times in an Adaptive form, data syncing between the fields of fragments occurs. The data syncing issue does not occur in core component-based form fragments, where you can use a fragment either schema-based or none-based multiple times in a form.
+  
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
 When you create an adaptive form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an adaptive form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding adaptive form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
