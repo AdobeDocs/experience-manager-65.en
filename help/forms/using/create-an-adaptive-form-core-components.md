@@ -9,6 +9,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+feature: Adaptive Forms, Core Components
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
 ---
 # Create Core Components based Adaptive Forms {#creating-an-adaptive-form-core-components}

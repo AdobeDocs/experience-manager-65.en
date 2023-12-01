@@ -8,8 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
-
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
 ---
 # XFA support in XDP-based adaptive forms{#xfa-support-in-xdp-based-adaptive-forms}

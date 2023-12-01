@@ -6,6 +6,7 @@ seo-description: Learn how to extract SOM expressions of a panel of an adaptive 
 uuid: c5d55aff-fb69-4a1c-96ea-fb3f9322cbb0
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 

@@ -7,7 +7,7 @@ uuid: 0fe9a389-269b-438a-9489-d9d1d09558a1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
 ---
 # Auto-save an adaptive form {#auto-save-an-adaptive-form}

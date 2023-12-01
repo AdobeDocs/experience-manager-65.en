@@ -8,8 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 0ffbb4d3-9371-4705-8496-f98e22d9c4a6
 docset: aem65
-
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: be1a774f-5681-443f-b195-28e89a020547
 ---
 # Configuring redirect page{#configuring-redirect-page}

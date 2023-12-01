@@ -8,8 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
 ---
 # Associating submission reviewers with a form {#associating-submission-reviewers-with-a-form}

@@ -6,10 +6,9 @@ seo-description: Layout and appearances of adaptive forms on various devices are
 uuid: 79022ac2-1aa3-47c5-b094-cbe83334ea62
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+feature: Adaptive Forms, Foundation Components
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
-
-feature: Adaptive Forms
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
 ---
 # Layout capabilities of adaptive forms{#layout-capabilities-of-adaptive-forms}
