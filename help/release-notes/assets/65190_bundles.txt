@@ -1,0 +1,82 @@
+SYMBOLIC NAME                                          BUNDLE NAME                                                  VERSION
+com.adobe.granite.bundles.json                         Adobe Granite Bundles: json-20090211                         
+com.adobe.cq.screens.com.adobe.cq.screens.mq.activemq  Adobe Screens Apache ActiveMQ Implementation                 
+org.apache.commons.fileupload                          Apache Commons FileUpload                                    
+json                                                   Adobe Granite org.json-20230618 Wrapper                      20230618.0.0.2
+com.day.cq.wcm.cq-wcm-nodenameindexerimpl              Day Communique 5 WCM NodeNameIndexer Implementation          5.11.2
+com.day.cq.wcm.cq-wcm-siteimporter                     Day Communique 5 WCM Site Importer                           5.11.4
+org.owasp.encoder                                      Java Encoder                                                 1.2.3
+com.adobe.cq.cq-target-integration                     AEM 6 - Adobe Target integration                             1.3.58
+com.adobe.cq.cq-analytics-integration                  AEM 6 Analytics Integration Bundle                           1.3.36
+com.adobe.cq.com.adobe.cq.msm.ui                       AEM MSM - UI Utilities                                       0.2.18
+com.adobe.cq.com.adobe.cq.ui.commons                   AEM UI WCM Commons Bundle                                    1.3.52
+com.adobe.cq.wcm.com.adobe.cq.wcm.jobs.async           Adobe AEM - WCM Asynchronous Jobs support                    1.0.44
+com.adobe.cq.cq-dam-mac-sync                           Adobe CQ DAM - Adobe Marketing Cloud Synchronisation Bundle  1.5.16.B022
+com.adobe.cq.dam.cq-scene7-imaging                     Adobe CQ DAM Scene7 Dynamic Imaging                          1.6.66.CQ650-B0074
+com.adobe.cq.dam.cq-dam-processor-api                  Adobe CQ Nui API                                             1.0.6
+com.adobe.cq.dam.cq-dam-processor-nui                  Adobe CQ Nui Bundle                                          1.0.10
+com.adobe.cq.remotedam.cq-remotedam-api                Adobe CQ Remote DAM API Bundle                               0.8.16
+com.adobe.cq.remotedam.cq-remotedam-client-core        Adobe CQ Remote Dam Client Core Bundle                       1.0.46
+com.day.cq.cq-search                                   Adobe CQ Search QueryBuilder                                 5.12.26
+com.day.cq.wcm.cq-wcm-translation                      Adobe CQ Translation Workflow                                1.5.150
+com.day.cq.wcm.cq-wcm-scripting-support                Adobe CQ WCM Scripting Support                               1.1.8
+com.day.cq.wcm.cq-command                              Adobe Experience Manager Command Implementation              1.1.36
+cq-dam-cfm-graphql                                     Adobe Experience Manager GraphQL for Content Fragments       0.0.1.CQ650-B0030
+com.adobe.granite.auth.saml                            Adobe Granite - SAML 2.0 Authentication Handler              1.0.54.CQ-650-B0001
+com.adobe.granite.acp.platform                         Adobe Granite ACP Platform                                   0.3.34
+com.adobe.granite.conf.ui.core                         Adobe Granite Configuration Manager UI Core Module           0.0.40
+com.adobe.granite.references.core                      Adobe Granite References Core Bundle                         1.1.0.CQ659-B0007
+com.adobe.granite.security.user                        Adobe Granite Security Module                                0.4.63.CQ650-B0006
+org.apache.commons.commons-fileupload                  Apache Commons FileUpload                                    1.5.0
+org.apache.commons.commons-io                          Apache Commons IO                                            2.13.0
+org.apache.commons.lang3                               Apache Commons Lang                                          3.13.0
+org.apache.felix.http.jetty                            Apache Felix Http Jetty                                      4.2.18
+org.apache.felix.webconsole                            Apache Felix Web Management Console                          4.9.6
+org.apache.sling.servlets.get                          Apache Sling Default GET Servlets                            2.1.44.B0002
+org.apache.sling.engine                                Apache Sling Engine Implementation (Adobe vendor branch)     2.7.10.B0006
+org.apache.sling.jcr.base                              Apache Sling JCR Base                                        3.1.14
+org.apache.tika.core                                   Apache Tika core                                             1.28.5
+org.apache.tika.parsers                                Apache Tika parsers                                          1.28.5
+com.adobe.cq.cq-product-info-provider                  CQ ProductInfo Provider                                      6.5.40
+com.adobe.dam.cq-dam-cfm-impl                          ContentFragmentManagement - Implementation                   0.11.136
+com.day.cq.mcm.cq-mcm-campaign                         Day Communique 5 Adobe Campaign Integration                  1.3.32
+com.day.cq.dam.cq-dam-commons                          Day Communique 5 DAM Commons                                 5.12.168
+com.day.cq.dam.cq-dam-core                             Day Communique 5 DAM Core Implementation                     5.12.374
+com.day.cq.dam.cq-dam-indesign                         Day Communique 5 DAM InDesign Integration                    5.12.26
+com.day.cq.dam.cq-scene7-core                          Day Communique 5 DAM Scene7 Integration                      5.12.266
+com.day.cq.cq-rewriter                                 Day Communique 5 Rewriter                                    5.12.26
+com.day.cq.wcm.cq-wcm-core                             Day Communique 5 WCM Core Implementation                     5.12.242
+com.day.cq.wcm.cq-wcm-designimporter                   Day Communique 5 WCM Design Importer                         1.6.12
+com.day.cq.wcm.cq-wcm-emulator                         Day Communique 5 WCM Emulator                                5.11.2
+com.day.cq.wcm.cq-wcm-mobile-api                       Day Communique 5 WCM Mobile API                              5.11.6
+com.day.cq.wcm.cq-wcm-mobile-core                      Day Communique 5 WCM Mobile Core                             5.11.16
+com.day.cq.wcm.cq-msm-core                             Day Communique 5 WCM Multi Site Management Core              5.12.106
+com.day.cq.wcm.cq-wcm-offline                          Day Communique 5 WCM Offline Editor                          5.11.2
+com.adobe.aem.graphql.impl                             GraphQL - Impl                                               0.0.1.CQ650-B0008
+org.apache.jackrabbit.oak-jackrabbit-api               Jackrabbit API                                               1.22.17
+org.apache.jackrabbit.jackrabbit-data                  Jackrabbit Data                                              2.20.11
+org.apache.jackrabbit.jackrabbit-jcr-commons           Jackrabbit JCR Commons                                       2.20.11
+org.apache.jackrabbit.jackrabbit-spi                   Jackrabbit SPI                                               2.20.11
+org.apache.jackrabbit.jackrabbit-spi-commons           Jackrabbit SPI Commons                                       2.20.11
+org.apache.jackrabbit.jackrabbit-webdav                Jackrabbit WebDAV Library                                    2.20.11
+com.day.cq.wcm.cq-wcm-mobile-qrcode                    Mobile QR Code Generator                                     5.11.2
+org.apache.jackrabbit.oak-api                          Oak API                                                      1.22.17
+org.apache.jackrabbit.oak-blob-cloud-azure             Oak Azure Cloud Blob Store                                   1.22.17
+org.apache.jackrabbit.oak-blob-plugins                 Oak Blob Plugins                                             1.22.17
+org.apache.jackrabbit.oak-blob                         Oak Blob Store                                               1.22.17
+org.apache.jackrabbit.oak-authorization-cug            Oak CUG Authorization                                        1.22.17
+org.apache.jackrabbit.oak-commons                      Oak Commons                                                  1.22.17
+org.apache.jackrabbit.oak-store-composite              Oak Composite Store                                          1.22.17
+org.apache.jackrabbit.oak-core                         Oak Core                                                     1.22.17
+org.apache.jackrabbit.oak-core-spi                     Oak Core SPI                                                 1.22.17
+org.apache.jackrabbit.oak-store-document               Oak DocumentNodeStore                                        1.22.17
+org.apache.jackrabbit.oak-auth-external                Oak External Authentication Support                          1.22.17
+org.apache.jackrabbit.oak-jcr                          Oak JCR Binding                                              1.22.17
+org.apache.jackrabbit.oak-auth-ldap                    Oak LDAP Authentication Support                              1.22.17
+org.apache.jackrabbit.oak-lucene                       Oak Lucene                                                   1.22.17
+org.apache.jackrabbit.oak-store-spi                    Oak NodeStore and Commit SPI                                 1.22.17
+org.apache.jackrabbit.oak-query-spi                    Oak Query SPI                                                1.22.17
+org.apache.jackrabbit.oak-security-spi                 Oak Security SPI                                             1.22.17
+org.apache.jackrabbit.oak-segment-azure                Oak Segment Azure                                            1.22.17
+org.apache.jackrabbit.oak-segment-tar                  Oak Segment Tar                                              1.22.17
+org.apache.jackrabbit.oak-solr-osgi                    Oak Solr OSGi                                                1.22.17
