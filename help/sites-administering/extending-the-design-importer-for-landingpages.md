@@ -243,7 +243,7 @@ Supported properties
 * Target URL, supports third party and AEM url
 * Page rendering options (same window, new window, and so on)
 
-HTML tag to include click through component in the imported zip. Here href maps to target url, "View Product Details" maps to label and so on.
+HTML tag to include click through component in the imported zip. Here href maps to target url, "View Product Details" maps to label, and so on.
 
 ```xml
 <div id="cqcanvas">
@@ -276,7 +276,7 @@ Supported properties
 * Target URL, supports third party and AEM url
 * Page rendering options (same window, new window, and so on)
 
-HTML tag to include graphical link component in the imported zip. Here href maps to target url, img src is the rendering image, "title" is taken as hover text and so on.
+HTML tag to include graphical link component in the imported zip. Here href maps to target url, img src is the rendering image, "title" is taken as hover text, and so on.
 
 ```xml
 <div id="cqcanvas">

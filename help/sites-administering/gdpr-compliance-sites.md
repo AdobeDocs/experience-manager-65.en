@@ -11,7 +11,7 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 
 >[!IMPORTANT]
 >
->GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA and so on.
+>GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA, and so on.
 
 The European Union's General Data Protection Regulation on data privacy rights takes effect as of May 2018.
 

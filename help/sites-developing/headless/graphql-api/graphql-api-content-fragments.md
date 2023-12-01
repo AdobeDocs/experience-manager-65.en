@@ -548,7 +548,7 @@ The sorting criteria:
   * the first field in the list defines the primary sort order
     * the second field is used if two values of the primary sort criterion are equal
     * the third field is used if the first two criteria are equal, and so on.
-  * dotted notation, i.e field1.subfield.subfield and so on...
+  * dotted notation, that is, `field1.subfield.subfield`, and so on.
 * with an optional order direction
   * ASC (ascending) or DESC (descending); as default ASC is applied
   * the direction can be specified per field; this ability means that you can sort one field in ascending order, another one in descending order (name, firstName DESC)

@@ -76,7 +76,7 @@ When you add a directory to a domain, specify the following directory settings.
 
 **Port:** (Mandatory) The port that the directory server uses. Typically 389, or 636 if the Secure Sockets Layer (SSL) protocol is used for sending authentication information over the network.
 
-**SSL:** (Mandatory) Specifies whether the directory server uses SSL when sending data over the network. The default is No. When set to Yes, the corresponding LDAP server certificate must be trusted by the Java™ runtime environment (JRE) of the application server.
+**SSL:** (Mandatory) Specifies whether the directory server uses SSL when sending data over the network. The default is No. When set to Yes, the corresponding LDAP server certificate must be trusted by the Java&trade; runtime environment (JRE) of the application server.
 
 **Binding** (Mandatory) Specifies how to access the directory.
 
@@ -84,7 +84,7 @@ When you add a directory to a domain, specify the following directory settings.
 
 **User:** Authentication is required. In the Name box, specify the name of the user record that can access the directory. It is best to enter the full distinguished name (DN) of the user account, such as cn=Jane Doe, ou=user, dc=can, dc=com. In the Password box, specify the associated password. These settings are required when you select User as the Binding option.
 
-**Name:** Name that can be used to connect to the LDAP database when anonymous access is not enabled. For Active Directory 2003, specify `[domain name]\[userid]`. For Sun™ One, eDirectory or IBM Tivoli Directory Server, specify the fully qualified name of the user, such as uid=lcuser,ou=it,o=company.com.
+**Name:** Name that can be used to connect to the LDAP database when anonymous access is not enabled. For Active Directory 2003, specify `[domain name]\[userid]`. For Sun&trade; One, eDirectory or IBM Tivoli Directory Server, specify the fully qualified name of the user, such as uid=lcuser,ou=it,o=company.com.
 
 **Password:** Password that corresponds with the name you specified to connect to the LDAP database when anonymous access is not enabled.
 
@@ -100,7 +100,7 @@ When you add a directory to a domain, specify the following directory settings.
 
 ### User settings {#user-settings}
 
-**Unique Identifier:** (Mandatory) A unique and constant attribute used to identify users. Use a non-DN attribute as the unique identifier because a user’s DN may change if they move to another part of the organization. This setting depends on the directory server. The value is objectGUID for Active Directory 2003, nsuniqueID for Sun™ One, and guid for eDirectory.
+**Unique Identifier:** (Mandatory) A unique and constant attribute used to identify users. Use a non-DN attribute as the unique identifier because a user's DN may change if they move to another part of the organization. This setting depends on the directory server. The value is objectGUID for Active Directory 2003, nsuniqueID for Sun&trade; One, and guid for eDirectory.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ If you selected the Enable referral option in the Directory settings, set the Ba
 
 >[!NOTE]
 >
->Do not include the user’s DN in this setting. To synchronize a particular user, use the Search Filter setting.
+>Do not include the user's DN in this setting. To synchronize a particular user, use the Search Filter setting.
 
 Although Base DN is a mandatory setting in administration console, some directory servers such as IBM Domino Enterprise Server may require an empty BaseDN. To specify an empty Base DN, export the config.xml file, edit the setting in the config.xml file, and then reimport it. (See [Importing and exporting the configuration file](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
@@ -122,19 +122,19 @@ Although Base DN is a mandatory setting in administration console, some director
 
 **Full Name:** (Mandatory) Schema attribute for the full name of the user
 
-**Login ID:** (Mandatory) Schema attribute for the user’s login ID
+**Login ID:** (Mandatory) Schema attribute for the user's login ID
 
-**Last Name:** (Mandatory) Schema attribute for the user’s last name
+**Last Name:** (Mandatory) Schema attribute for the user's last name
 
-**Given Name:** (Mandatory) Schema attribute for the user’s first name
+**Given Name:** (Mandatory) Schema attribute for the user's first name
 
-**Initials:** Schema attribute for the user’s initials
+**Initials:** Schema attribute for the user's initials
 
 **Business Calendar:** Enables you to map a business calendar to a user, based on the value for this setting (the business calendar key). Business calendars define business and non-business days. AEM forms can use business calendars when calculating future dates and times for events such as reminders, deadlines, and escalations. The way you assign business calendar keys to users depends on whether you are using an enterprise, local, or hybrid domain. (See Configuring Business Calendars.)
 
 If you are using an enterprise domain, you can map the Business Calendar setting to a field in the LDAP directory. For example, if each user record in your directory contains a *country* field, and you want to assign business calendars based on the country where the user is located, specify the *country* field name as the value for the Business Calendar setting. You can then map the business calendar keys (the values defined for the *country* field in the LDAP directory) to business calendars in forms workflow.
 
-The amount of space used to display the name of the business calendar key in the forms workflow pages is limited. Limit the name of the business calendar key to less than 53 characters to avoid having it truncated on those pages.
+The amount of space used to display the name of the business calendar key in the forms workflow pages is limited. Limit the name of the business calendar key to fewer than 53 characters to avoid having it truncated on those pages.
 
 **Modify Timestamp:** To enable delta directory synchronization, set this value to modify TimeStamp. (See Enable delta directory synchronization.)
 
@@ -144,9 +144,9 @@ The amount of space used to display the name of the business calendar key in the
 
 **Secondary Email:** Schema attribute for the secondary email address of the user.
 
-**Telephone:** Schema attribute for the user’s telephone number.
+**Telephone:** Schema attribute for the user's telephone number.
 
-**Postal Address:** Schema attribute for the user’s mailing address.
+**Postal Address:** Schema attribute for the user's mailing address.
 
 **Locale:** Schema attribute that contains the ISO locale information. The value is a two-letter language code or a language and country code.
 
@@ -182,7 +182,7 @@ Although Base DN is a mandatory setting in administration console, some director
 
 **Member Unique Identifier:** Unique identifier for a user or group that is a member of the selected group. This value depends on the directory server. The value is objectSID for AD2003, nsuniqueID for Sun One, and guid for eDirectory.
 
-If Member DN is specified with a non-DN attribute, User Management uses Member Unique Identifier to query LDAP to collect the user’s DN as it corresponds to a unique identifier value.
+If Member DN is specified with a non-DN attribute, User Management uses Member Unique Identifier to query LDAP to collect the user's DN as it corresponds to a unique identifier value.
 
 If DN is specified as a unique identifier, you do not need to configure Member Unique Identifier.
 

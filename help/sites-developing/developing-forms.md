@@ -74,9 +74,8 @@ Note that if the values in the `String[]` are of the formatted like this:
 
 * `AL=Alabama`
 * `AK=Alaska`
-* and so on
 
-then AEM will generate the list as:
+and so on, then AEM generates the list as:
 
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
