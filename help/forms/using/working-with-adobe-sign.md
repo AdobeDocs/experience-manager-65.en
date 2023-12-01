@@ -7,11 +7,9 @@ uuid: cc3012ed-c318-4529-9adc-61aa5b5761a0
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Foundation Components, Acrobat Sign
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
-
-feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 ---
 # Using [!DNL Adobe Sign] in an adaptive form{#using-adobe-sign-in-an-adaptive-form}

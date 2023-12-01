@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
-feature: Mobile Forms
+feature: HTML5 forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 ---
 # Enabling attachments for an HTML5 form {#enabling-attachments-for-an-html-form}

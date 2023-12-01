@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
-feature: Mobile Forms
+feature: HTML5 forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 ---
 # Enable logging for HTML5 forms{#enable-logging-for-html-forms}

@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 
-feature: Mobile Forms
+feature: HTML5 forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 ---
 # Generate HTML5 preview of an XDP form{#generate-html-preview-of-an-xdp-form}
