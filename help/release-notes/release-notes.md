@@ -32,23 +32,12 @@ exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+**Key features and enhancements**
+
 Some of the key features and enhancements in this release include the following:
 
-**Key features**
-
-* Assets, Dynamic Media - [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
-
-* Assets - From Search results, you can now navigate to the folder location that contains an asset to let you perform various asset management tasks. (ASSETS-23182)  
-
-**Key Enhancements**
-
-* Sites Polaris Picker in Content Fragments has improved performance. (SITES-14092) 
-
 * Enabled Sites Page Editor/Image Component user to reference assets from the remote Assets Cloud Service. (SITES-13448, SITES-13433) 
-
-* To quickly find a project in List view, where you may have many projects in your system, Adobe now supports server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) 
-
-* AEM 6.5.19.0 supports MongoDB 5.0 to 6.0.
+* AEM now supports server-side sorting for quicker project navigation in List view. Project nodes are sorted based on the user-selected column before appearing in the interface.
 
 **Deprecated feature**
 
@@ -286,7 +275,7 @@ For instructions to install the service pack on Experience Manager Forms, see [E
 
 >[!NOTE]
 >
->The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
+>The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
 
 ### Install GraphQL Index Package for Experience Manager Content Fragments{#install-aem-graphql-index-add-on-package}
 
@@ -453,7 +442,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 
 #### Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
 
-* If you are upgrading to AEM Service Pack 6.5.15.0 or any higher version, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment *before* you proceed with the installation of Service Pack 6.5.15.0 or any higher version.
+* If you are upgrading to AEM Service Pack 6.5.15.0 or higher, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment *before* you proceed with the installation of Service Pack 6.5.15.0 or higher.
 * It is mandatory that you install the servlet fragment for all application servers except those running on JBoss&reg; EAP 7.4.0.
 
 **To install the servlet fragment:**
@@ -482,7 +471,7 @@ To resolve the issue, download, and install the [hotfix for 6.5.18.0](/help/rele
 #### Interactive Communications
 
 * After upgrading to AEM Service Pack 18, it is not possible to open the Interactive Communication with large inline images in the Edit mode. (FORMS-10578)
-To resolve the issue, download and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+To resolve the issue, install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
