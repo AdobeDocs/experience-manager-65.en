@@ -115,7 +115,7 @@ The following is an example of an image component on a landing page:
 
 A landing page design may have several links - some of these may be intended as "Calls to action."
 
-Call to action (CTA) is used to get the visitor take immediate action on the landing page such as "Subscribe Now," "View this video," "Limited Time Only" and so on.
+Call to action (CTA) is used to get the visitor take immediate action on the landing page such as "Subscribe Now," "View this video," "Limited Time Only", and so on.
 
 * Click Through Link - Lets you add a text link that when clicked takes the visitor to a target URL.
 * Graphical Link - Lets you add an image that when clicked takes the visitor to a target URL.

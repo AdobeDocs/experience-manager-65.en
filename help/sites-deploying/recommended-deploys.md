@@ -153,7 +153,7 @@ Additionally, it is highly recommended to configure the datastore on a shared fi
 
 One of the additional benefits of deploying a MongoDB replica set with a cluster of two or more author instances is having an automated recovery scenario with minimal downtime if there are author instances, MongoDB replica or a complete datacenter failure. Nonetheless, the choice of MongoMK over TarMK should not be solely driven by the recovery requirement, as TarMK can also provide a minimal downtime solution with a controlled failover mechanism.
 
-If the above criteria are not expected to be met during the first eighteen months of deployment, it is encouraged to first deploy AEM using TarMK, then re-evaluate your configuration at a later date when the above criteria apply, and finally determine whether to remain on TarMK or migrate to MongoMK.
+If the above criteria are not expected to be met during the first 18 months of deployment, it is encouraged to first deploy AEM using TarMK, then re-evaluate your configuration at a later date when the above criteria apply, and finally determine whether to remain on TarMK or migrate to MongoMK.
 
 ### Exceptions for choosing AEM MongoMK over TarMK on Publish Instances {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 

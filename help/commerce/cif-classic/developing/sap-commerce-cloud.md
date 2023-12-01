@@ -399,7 +399,7 @@ public class AxisFilter implements VariantFilter {
 
 * The shopping cart is owned by the `CommerceSession:`
 
-    * The `CommerceSession` performs add/remove/and so on.
+    * The `CommerceSession` performs add or remove, and so on.
     * The `CommerceSession` also performs the various calculations on the cart. ``
 
 * While not directly cart-related, the `CommerceSession` must also provide catalog pricing information (since it owns pricing)

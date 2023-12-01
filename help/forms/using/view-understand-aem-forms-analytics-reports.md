@@ -1,13 +1,9 @@
 ---
 title: View and understand AEM Forms analytics reports
-seo-title: View and understand AEM Forms analytics reports
 description: AEM Forms integrates with Adobe Analytics and provides you summary and detailed analytics about your published adaptive forms.
-seo-description: AEM Forms integrates with Adobe Analytics and provides you summary and detailed analytics about your published adaptive forms.
-uuid: b15ba5f3-aea7-40f5-893e-aaf3834cbc33
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
-discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 ---
@@ -34,7 +30,7 @@ When a user interacts with the form, the interactions are recorded and sent to A
 * 2 for save
 * 1 for help
 * 1 for each validation error
-* 1 for Form rendition + 1 for default panel visit + 1 for default 1st field visit
+* 1 for Form rendition + 1 for default panel visit + 1 for default first field visit
 * 2 for Form abandon
 
 >[!NOTE]
