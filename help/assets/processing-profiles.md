@@ -20,7 +20,7 @@ Those rules can include adding metadata, smart cropping of images, or establishi
 * [Image profiles](/help/assets/image-profiles.md)
 * [Video profiles](/help/assets/video-profiles.md)
 
-You must have Administrator rights to create, edit, and delete metadata, image, or video profiles.
+You need Administrator rights to create, edit, and delete metadata, image, or video profiles.
 
 After you create your metadata, image, or video profile, you assign it to one or more folders that you use as the destination for newly uploaded assets.
 

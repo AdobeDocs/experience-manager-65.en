@@ -52,7 +52,7 @@ The following steps describe how to do this using the creation of a new page wit
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
 1. Click **Create** in the **Create Page** wizard to actually create the workflow.
-1. Right-click on the resulting POST action and select **Copy** -&gt; **Copy as cURL**.
+1. Right-click the resulting POST action and select **Copy** > **Copy as cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 

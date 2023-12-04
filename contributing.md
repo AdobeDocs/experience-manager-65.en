@@ -29,7 +29,7 @@ Which method you choose depends on how comfortable you are editing the documenta
 
 Do you have a suggestion, observation about the current docs, or question the way something is described? Then create an issue. Issues are also excellent if you have something to contribute, but don't feel comfortable editing the docs or making a pull request yourself.
 
-Issues let you easily describe your idea for improvement to the docs and an AEM Docs Team member can review it. Simply click on the **Log an issue** link at the top of the right navigation panel on any page to create an issue.
+Issues let you easily describe your idea for improvement to the docs and an AEM Docs Team member can review it. Simply click the **Log an issue** link at the top of the right navigation panel on any page to create an issue.
 
 ### Create a Pull Request {#create-a-pull-request}
 

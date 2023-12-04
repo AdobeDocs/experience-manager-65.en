@@ -57,7 +57,7 @@ This section describes the workflows available for Projects.
 
 This workflow lets you request a manuscript from a user and then approve it. To start the request copy workflow:
 
-1. In a media project, tap or click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
+1. In a media project, click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
 1. In the workflow wizard select **Request Copy** and click **Next**.
 1. Enter a manuscript title and a brief summary of what you are requesting. If applicable, enter a target word count, task priority and a due date.
 
@@ -75,7 +75,7 @@ The **Product Photo Shoot** workflows (both commerce and without commerce) are c
 
 In the **Project Approval** workflow, you assign content to a user, review, and then approve the content.
 
-1. In a simple project, tap or click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
+1. In a simple project, click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
 1. In the workflow wizard select **Project Approval Workflow** and click **Next**.
 1. Enter a title and select who to assign it to. If applicable, enter a description, content path, task priority and a due date.
 
@@ -89,7 +89,7 @@ The workflow starts. The task appears on the **Tasks** card.
 
 This workflow lets you request a launch.
 
-1. In a simple project, tap or click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
+1. In a simple project, click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
 1. In the workflow wizard select **Request Launch Workflow** and click **Next**.
 1. Enter a title for the launch and provide the launch source path. You can also add a description and live date, if you applicable. Select Inherit source page live data or exclude sub pages depending on how you want the launch to behave.
 
@@ -103,7 +103,7 @@ The workflow starts. The workflow appears in the **Workflows** list.
 
 This workflow lets you request a landing page.
 
-1. In a simple project, tap or click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
+1. In a simple project, click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
 1. In the workflow wizard select **Request Landing Page** and click **Next**.
 1. Enter a title for your landing page and the parent path. If applicable, enter a live date or choose a file for your landing page.
 
@@ -117,7 +117,7 @@ The workflow starts. The task appears on the **Tasks** card.
 
 This workflow lets you request an email. It is the same workflow that appears in the **Emails** tile.
 
-1. In a simple project, tap or click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
+1. In a simple project, click the downward chevron at the top-right of the **Workflows** tile and select **Start Workflow**.
 1. In the workflow wizard select **Request Email** and click **Next**.
 1. Enter an email title, and the campaign and template paths. In addition you can provide a name, description, and live date.
 

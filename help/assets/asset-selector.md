@@ -51,4 +51,4 @@ You can pass the following request parameters in a URL to launch the asset selec
 
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
-1. Tap/click **[!UICONTROL Select]** from the toolbar.
+1. Click **[!UICONTROL Select]** from the toolbar.

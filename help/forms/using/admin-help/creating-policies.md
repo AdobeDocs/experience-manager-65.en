@@ -22,7 +22,7 @@ Document security provides the following types of policies.
 
 **Personal policies**
 
-Users can create, edit, copy, delete, and apply their own policies with settings appropriate to a particular situation. Only the person who creates a policy and the administrators can access that personal policy. Personal policies appear on the My Policies tab of the Policies page.
+Users can create, edit, copy, delete, and apply their own policies with settings appropriate to a particular situation. Only the person who creates a policy and the administrator can access that personal policy. Personal policies appear on the My Policies tab of the Policies page.
 
 Invited users can also create, edit, copy, and delete personal policies if the administrator enables this capability.
 
@@ -30,15 +30,15 @@ Invited users can also create, edit, copy, and delete personal policies if the a
 
 Administrators and policy set coordinators create shared policies based on the confidentiality requirements that your organization identifies for different types of documents and users. Shared policies are contained within policy sets and are available to all authorized users (document publishers, policy set coordinators, and document recipients) for a particular policy set. Administrators and policy set coordinators can enable and disable shared policies. Shared policies appear in policy sets on the Policy Sets tab of the Policies page.
 
-When you first install document security, it contains one shared policy, named *Restrict to All Principals*. When this policy is applied to a document, any user who can log in to document security can access the document. This policy is in the policy set named *Global Policy Set*. By default, this policy is not enabled. You can enable it if it suits your organization’s needs.
+When you first install document security, it contains one shared policy, named *Restrict to All Principals*. When this policy is applied to a document, any user who can log in to document security can access the document. This policy is in the policy set named *Global Policy Set*. By default, this policy is not enabled. You can enable it if it suits your organization's needs.
 
-**Microsoft Outlook auto-generated policies**
+**Microsoft&reg; Outlook auto-generated policies**
 
-Using Acrobat, you can apply policies to documents that you send as email attachments in Microsoft Outlook. In Outlook, you can protect a document by using an existing policy or by using an auto-generated policy that Acrobat generates with default confidentiality settings and applies to the document that is attached to an email message. (See *[Acrobat Help](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
+Using Acrobat, you can apply policies to documents that you send as email attachments in Microsoft&reg; Outlook. In Outlook, you can protect a document by using an existing policy. Or, you can use an auto-generated policy that Acrobat generates with default confidentiality settings and applies to the document that is attached to an email message. (See *[Acrobat Help](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
->In order for a policy to be available in Outlook, you must set the policy as a favorite in Acrobat. All other policies, including those there you are the Publisher, are not displayed in Outlook.
+>For a policy to be available in Outlook, you must set the policy as a favorite in Acrobat. All other policies, including those there you are the Publisher, are not displayed in Outlook.
 
 ## Who can create and manage policies and policy sets {#who-can-create-and-manage-policies-and-policy-sets}
 
@@ -48,7 +48,7 @@ The way that you interact with policies and policy sets depends on your role wit
 
 **Policy set coordinators:** Policy set coordinators can create and manage shared policies within the policy sets where they are designated as a coordinator. A policy set coordinator is typically a specialist in the organization who can best author the policies in a particular policy set.
 
-**Administrators:** Administrators can edit any user’s personal policies. They can create shared policies. They can also create, edit, and delete policy sets, and designate policy set coordinators.
+**Administrators:** Administrators can edit any user's personal policies. They can create shared policies. They can also create, edit, and delete policy sets, and designate policy set coordinators.
 
 For details on the various document security roles, see [About document security users](/help/forms/using/admin-help/document-security.md#about-document-security-users).
 
@@ -58,23 +58,23 @@ Users can create or edit personal policies for their own use. Administrators and
 
 ### Considerations for editing policies {#considerations-for-editing-policies}
 
-When you edit a policy, the changes affect documents that the policy currently protects, and documents that the policy protect thereafter. For example, if you remove recipients from a policy that is currently applied to a document, the recipients can no longer open the document.
+When you edit a policy, the changes affect documents that the policy currently protects, and documents that the policy protect thereafter. For example, if you remove recipients from a policy that is applied to a document, the recipients can no longer open the document.
 
 The status of the document determines when the change takes effect:
 
 * If the document is online, changes are applied immediately unless the user has the document open. In this case, the user must close the document for the changes to take effect.
-* If a recipient is using the document offline (for example, on a laptop computer), the changes take effect the next time the recipient takes the document online and synchronizes with document security by opening any policy-protected document.
+* If a recipient is using the document offline (for example, on a laptop computer), the changes take effect the next time the recipient takes the document online. It then synchronizes with document security by opening any policy-protected document.
 
 >[!NOTE]
 >
->Policies that Acrobat auto-generates for the recipients of documents that are attached to email messages in Microsoft Outlook do not appear in the policy list. You can view these policies only by opening the Document Detail page for the associated document.
+>Policies that Acrobat auto-generates for the recipients of documents that are attached to email messages in Microsoft&reg; Outlook do not appear in the policy list. You can view these policies only by opening the Document Detail page for the associated document.
 
 When you edit policies, these restrictions apply:
 
-* Invited users can only edit policies if the administrator enables this capability. If you cannot edit policies, the Edit option will not be available.
-* Policy set coordinators can edit policies within policy sets only if they have the correct permissions. The super user or policy set administrator sets these permissions in the document security administrator interface.
+* Invited users can only edit policies if the administrator enables this capability. If you cannot edit policies, the Edit option is not available.
+* Policy set coordinators can edit policies within policy sets only if they have the correct permissions. The super-user or policy set administrator sets these permissions in the document security administrator interface.
 * If the policy has a watermark configured that the administrator deleted since the policy was created, this watermark will no longer be applied to documents if you edit and save the policy. Deleted watermarks remain in effect only for existing policies as long as you do not edit the policy. If you edit the policy, you must select another watermark to replace the deleted one.
-* You cannot grant anonymous access to a document by editing the policy that is currently applied. If you edit the policy, users must still log in to access the document. To apply anonymous access to this document, first remove the policy in the client application and then apply another policy that permits anonymous access.
+* You cannot grant anonymous access to a document by editing the policy that is applied. If you edit the policy, users must still log in to access the document. To apply anonymous access to this document, first remove the policy in the client application and then apply another policy that permits anonymous access.
 * Policies that Acrobat auto-generates for the recipients of a document that is attached to an email message in Microsoft Outlook do not appear in the policy list. To access this policy, locate the document on the Documents page, open the Document Detail page, and click the policy name in the list of document details.
 
 **Create or edit a policy**
@@ -97,14 +97,14 @@ When you edit policies, these restrictions apply:
     * backslash (\)
     * forward slash (/)
 
-   If you use the following character in the name or description, they are converted to spaces:
+   If you used the following character in the name or description, they are converted to spaces:
 
     * carriage return (ASCII character 13)
     * new line (ASCII character 10).
 
    >[!NOTE]
    >
-   >You can create a policy name that contains extended characters; however, when a comparison is made between two strings, accented and non-accented characters such as "e" and "é" are considered to be the same. When someone creates a policy, a comparison is made to check whether a policy with the same name already exists. The comparison cannot distinguish between names that are the same except for accented characters. It is assumed that the policy is already added to the database and the new one is not added.
+   >You can create a policy name that contains extended characters; however, when a comparison is made between two strings, accented and non-accented characters such as "e" and "é" are considered to be the same. When someone creates a policy, a comparison is made to check whether a policy with the same name exists. The comparison cannot distinguish between names that are the same except for accented characters. It is assumed that the policy is already added to the database and the new one is not added.
 
 1. Add users and groups to the policy and set the appropriate permissions. (See [Users and Groups](creating-policies.md#users-and-groups).)
 1. Under General Settings, select the appropriate options. (See [General Settings](creating-policies.md#general-settings).)
@@ -124,21 +124,21 @@ In the Users and Groups area, you specify the users who have access to documents
 
 >[!NOTE]
 >
->The document publisher is the user who protects the document with the policy. This user is always included by default on a policy, with full access rights, including revocation and policy-switching capabilities. However, administrators can change the document publisher’s access rights for shared policies. For example, the administrator can restrict the document publisher from revoking document access or switching the policy.
+>The document publisher is the user who protects the document with the policy. This user is always included by default on a policy, with full access rights, including revocation and policy-switching capabilities. However, administrators can change the document publisher's access rights for shared policies. For example, the administrator can restrict the document publisher from revoking document access or switching the policy.
 
-**Add User or Group:** To add a user or group of users, click Add User or Group and then click Advanced Search to find users or groups. Users include your organization’s internal users and invited users who have registered with document security. When you select this option, the Add User or Group page appears:
+**Add User or Group:** To add a user or group of users, click Add User or Group and then click Advanced Search so you can find users or groups. Users include your organization's internal users and invited users who have registered with document security. When you select this option, the Add User or Group page appears:
 
 * In the Find box, type the user or group name or email address.
 * In the Using list, select Name or Email.
 * In the Type list, select User or Group.
-* Select the domain you want to search from the In list, and click Find.
+* Select the domain that you want to search from the In list, and click Find.
 * When the results are returned, select the user or group to add, and click Add.
 
 >[!NOTE]
 >
 >If you enter a correct invited user name or email address and no result is returned, the user may not have registered yet, or the account may be deleted. You can try adding the user as an invited user type or contact your administrator.
 
-**Invite New User:** To add an invited user, click Invite New User, type the user’s email address in the box that appears, and click Invite. This option is available only if the administrator enabled it. When you add new invited users to a policy, document security sends a registration invitation email if the users are not already invited to register. The users must use the link in the email to create an account, and then they must activate the account.
+**Invite New User:** To add an invited user, click Invite New User, type the user's email address in the box that appears, and click Invite. This option is available only if the administrator enabled it. When you add new invited users to a policy, document security sends a registration invitation email if the users are not already invited to register. The users must use the link in the email to create an account, and then they must activate the account.
 
 After registering, invited users can use policy-protected documents that they have authorization for. Depending on the capabilities that the administrator enables, the external users may have permission to apply policies to documents, create, edit and delete policies, and add other external users to policies.
 
@@ -154,7 +154,7 @@ You can specify document permissions for one user or group at a time, or you can
 
 By default, all policy-protected documents have a permission that allows users to open them while online.
 
-The Permissions and Options tab are displayed in document security.
+The Permissions and Options tab is displayed in document security.
 
 These document permissions are available on the Permissions tab. You can apply these permissions to PDF, PTC Pro/E, and Microsoft Office files.
 
@@ -186,7 +186,7 @@ These document permissions are available on the Options tab. You can apply these
 
 **Offline:** Permits the user to view a document offline that is protected with this policy.
 
-**Permission Validity:** Select Permissions Are Always Valid or set a document permissions validity period. If you select a validity period, click the calendar icons to select a date and use the arrows to specify the time in 24-hour format.
+**Permission Validity:** Select Permissions Are Always Valid or set a document permission validity period. If you select a validity period, click the calendar icon to select a date and use the arrows to specify the time in 24-hour format.
 
 For shared policies, administrators can disable the following privileges for the document publisher (the user who applies the policy to a document):
 
@@ -218,7 +218,7 @@ The General Settings area contains the following settings:
 >
 >The administrator must also enable server auditing on the Auditing and Privacy Settings configuration page for the auditing feature to work.
 
-**Extended Usage Tracking:** Enable or disable Extended Usage Tracking. document security supports tracking of user events associated with various operations performed on a PDF file. The document security object can be accessed using a Java Script. A button click, a multimedia file being played, or the saving of a file are some examples of events that can fired from a policy protected PDF. Using the document security object, you can also retrieve user information. The tracking of events may be enabled from the document security server at the global level or at a policy level.
+**Extended Usage Tracking:** Enable or disable Extended Usage Tracking. Document security supports tracking of user events associated with various operations performed on a PDF file. The document security object can be accessed using a Java Script. A button click, a multimedia file being played, or the saving of a file are some examples of events that are fired from a policy-protected PDF. Using the document security object, you can also retrieve user information. The tracking of events may be enabled from the document security server at the global level or at a policy level.
 
 **Auto-Offline Lease Period:** The maximum number of days the recipient can use the policy-protected document offline (without an active Internet or network connection). When the lease period expires, the recipient must synchronize the document again to continue using it.
 
@@ -230,15 +230,15 @@ Select the external authentication providers if you have already configured any.
 
 You can override the authentication settings that you configured on the server and specify the authentication options relevant for this policy. Select Override Global Authentication Settings and then select the authentication options relevant for this policy. The following authentication options are available:
 
-**Allow Username Password Authentication:** Select this option to enable client applications to use user name/password authentication when connecting to the server.
+**Allow Username Password Authentication:** Select this option if you want enable client applications to use user name/password authentication when connecting to the server.
 
-**Allow Kerberos Authentication:** Select this option to enable client applications to use Kerberos authentication when connecting to the server.
+**Allow Kerberos Authentication:** Select this option if you want to enable client applications to use Kerberos authentication when connecting to the server.
 
-**Allow Client Certificate Authentication:** Select this option to enable client applications to use certificate authentication when connecting to the server.
+**Allow Client Certificate Authentication:** Select this option if you want to enable client applications to use certificate authentication when connecting to the server.
 
 **Allow Extended Authentication** Select to enable extended authentication. Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the Document Security server
 
-If you are overriding the global authentication settings, you can choose the authentication options relevant for this policy. For example, if you had enabled three authentication options (username and password, client certificate, and extended authentication) on the server, you can override that global setting and select only extended authentication for this policy. You must ensure that the authentication option that you select here is already configured on the server. In this example, you cannot select Kerberos as the authentication option because it is not configured on the server.
+If you are overriding the global authentication settings, you can choose the authentication options relevant for this policy. For example, if you had enabled three authentication options (username and password, client certificate, and extended authentication) on the server, you can override that global setting and select only extended authentication for this policy. Ensure that the authentication option that you select here is already configured on the server. In this example, you cannot select Kerberos as the authentication option because it is not configured on the server.
 
 >[!NOTE]
 >
@@ -248,7 +248,7 @@ If you are overriding the global authentication settings, you can choose the aut
 
 The Advanced Settings area contains the following settings:
 
-**Dynamic Watermark:** Select a watermark to be dynamically displayed on the pages of a document (for example, when a recipient prints the document). Dynamic watermarks uniquely identify a document, therefore helping to ensure the confidentiality of the document and preventing copyright infringement. For example, the administrator can configure a dynamic watermark that displays the current date, the user name or identifier of the person who is using the document, or the name of the policy used to protect the document. A watermark can also display custom text or graphic elements if configured. Administrators configure the watermarks options, and administrators and users can apply them to policies.
+**Dynamic Watermark:** Select a watermark to be dynamically displayed on the pages of a document (for example, when a recipient prints the document). Dynamic watermarks uniquely identify a document, therefore helping to ensure the confidentiality of the document and preventing copyright infringement. For example, the administrator can configure a dynamic watermark that displays the current date, the user name, or identifier of the person who is using the document. Or, the name of the policy used to protect the document. A watermark can also display custom text or graphic elements, if configured. Administrators configure the watermark options, and administrators and users can apply them to policies.
 
 (See [Configure dynamic watermarks](/help/forms/using/admin-help/configuring-client-server-options.md#configure-dynamic-watermarks).)
 
@@ -258,9 +258,9 @@ If you are editing a policy and the administrator deleted a configured watermark
 >
 >For policies that provide anonymous user access, the user name and identifier of an anonymous user is not displayed as a watermark even if you select this type of watermark.
 
-**Use Only Certified Acrobat Plug-ins for PDF:** When selected for a policy, this option specifies that Acrobat 8.0 and later must run in certified mode when opening documents that are secured with the policy. When Acrobat runs in certified mode, it will not load any third-party plug-ins.
+**Use Only Certified Acrobat Plug-ins for PDF:** When selected for a policy, this option specifies that Acrobat 8.0 and later must run in certified mode when opening documents that are secured with the policy. When Acrobat runs in certified mode, it does not load any third-party plug-ins.
 
-Select this option if you are concerned about a document recipient writing a plug-in that can circumvent any of the document protections in Acrobat 8.0 and later. Do not select this option if your document recipients need to use third-party plug-ins in Acrobat to interact with documents.
+Select this option if you are concerned about a document recipient writing a plug-in that can circumvent any of the document protections in Acrobat 8.0 and later. Do not select this option if your document recipients must use third-party plug-ins in Acrobat to interact with documents.
 
 This option enables only the certified mode in Acrobat 8.0 or later; the administrator must disable access for Acrobat 7.0.
 
@@ -304,9 +304,9 @@ A red X appears beside a disabled policy.
 
 Using the My Policies tab, you can search personal policies.
 
-Policy sets that administrators create are listed on the Policy Sets tab of the Policies page with information about the policy set, including its name, the date created and modified, and a description. Click a policy set name to see its details. Policy set coordinators who have permission to manage policies can create shared policies within a particular policy set.
+Policy sets that administrators create are listed on the Policy Sets tab of the Policies page. They contain information about the policy set, including its name, the date created and modified, and a description. Click a policy set name so you can see its details. Policy set coordinators who have permission to manage policies can create shared policies within a particular policy set.
 
-When you create or edit a policy, a page is displayed where you can configure details such as policy name, permission levels, confidentiality settings, and the recipients to include in the policy.
+When you create or edit a policy, a page is displayed where you can configure the policy name, permission levels, confidentiality settings, and the recipients to include in the policy.
 
 The administrator can configure the following confidentiality settings for a policy:
 
@@ -323,7 +323,7 @@ You can view more detailed information about a policy that appears in the list, 
 >Policies that Acrobat auto-generates for the recipients of documents that are attached to email messages in Microsoft Outlook do not appear in the policy list. You can view these policies only by opening the Document Detail page for the associated document.
 
 1. On the document security page, click Policies and then click the My Policies tab.
-1. Complete the search information to search for personal policies.
+1. Complete the search information so you can search for personal policies.
 1. Select the appropriate policy from the list.
 1. On the Policy Detail page, you can see details about the policy, edit the policy, or view events related to the policy.
 
@@ -337,9 +337,9 @@ Administrators can search for shared policies and for personal policies that wer
 
 1. In the Find list, select one of these options:
 
-   **Policy ID:** The policy identification number that is generated when the user creates the policy. You must type the exact policy ID.
+   **Policy ID:** The policy identification number that is generated when the user creates the policy. Type the exact policy ID.
 
-   **Policy Name:** The name of the policy. You can search for part or all of the policy name.
+   **Policy Name:** The name of the policy. You can search for part of the policy name or all of it.
 
 1. In the text box, type the corresponding value. For example, if you selected Policy Name, type the policy name you are searching for.
 1. In the Display list, select the number of results to display and then click Find. The search results are displayed.
@@ -347,9 +347,9 @@ Administrators can search for shared policies and for personal policies that wer
 
 ## Copy a policy {#copy-a-policy}
 
-You can copy an existing policy and save it with a new name and description. Copying policies is an efficient way to create new policies by using existing settings.
+You can copy an existing policy and save it with a new name and description. Copying policies is an efficient way to create policies by using existing settings.
 
-External users can copy policies only if the administrator enables this capability. If you cannot create policies, the Copy option will not be available.
+External users can copy policies only if the administrator enables this capability. If you cannot create policies, the Copy option is not available.
 
 1. On the document security page, click Policies and then click the My Policy tab.
 1. Select the appropriate policy from the list.
@@ -366,14 +366,14 @@ External users can copy policies only if the administrator enables this capabili
     * backslash (\)
     * forward slash (/)
 
-   If you use the following character in the name or description, they are converted to spaces:
+   If you used the following character in the name or description, they are converted to spaces:
 
     * carriage return (ASCII character 13)
     * new line (ASCII character 10).
 
    >[!NOTE]
    >
-   >You can create a policy name that contains extended characters; however, when a comparison is made between two strings, accented and non-accented characters such as "e" and "é" are considered to be the same. When someone creates a policy, a comparison is made to check whether a policy with the same name already exists. The comparison cannot distinguish between names that are the same except for accented characters. It is assumed that the policy is already added to the database and the new one is not added.
+   >You can create a policy name that contains extended characters; however, when a comparison is made between two strings, accented and non-accented characters such as "e" and "é" are considered to be the same. When someone creates a policy, a comparison is made to check whether a policy with the same name exists. The comparison cannot distinguish between names that are the same except for accented characters. It is assumed that the policy is already added to the database and the new one is not added.
 
 1. Click OK.
 
@@ -381,7 +381,7 @@ External users can copy policies only if the administrator enables this capabili
 
 You can delete policies that you created. Administrators can delete policies that any user created. Policy set coordinators can delete policies in their policy sets. A policy that you delete is still enforced for documents that are protected with that policy. You can delete more than one policy at a time.
 
-Invited users can delete policies only if the administrator enables this capability. If you cannot delete policies, the delete option will not be available.
+Invited users can delete policies only if the administrator enables this capability. If you cannot delete policies, the delete option is not available.
 
 1. On the document security page, click Policies.
 1. Click the My Policy tab.
@@ -390,11 +390,11 @@ Invited users can delete policies only if the administrator enables this capabil
 
 >[!NOTE]
 >
->You must use the client application to remove policies from documents. (See Acrobat Help or the appropriate Acrobat Reader DC extensions Help.)
+>Use the client application to remove policies from documents. (See Acrobat Help or the appropriate Acrobat Reader DC extensions Help.)
 
 ## Sort the policy list {#sort-the-policy-list}
 
-You can sort the policy list by column heading to find policies more easily. A triangle icon next to the column heading indicate which column is currently used to sort. An upward-pointing triangle indicates ascending order, while a downward-pointing triangle indicates descending order.
+You can sort the policy list by column heading to find policies more easily. A triangle icon next to the column heading indicates which column is currently used to sort. An upward-pointing triangle indicates ascending order, while a downward-pointing triangle indicates descending order.
 
 1. On the document security page, click Policies and click the Policy Set tab.
 1. Select a policy set and then click the Policies tab.

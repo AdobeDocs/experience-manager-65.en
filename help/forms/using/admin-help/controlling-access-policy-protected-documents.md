@@ -36,7 +36,7 @@ You can also view more details, which are described below, about a particular do
 
 >[!NOTE]
 >
->You must use the Policy Name link on the Document Detail page to access policies that are auto-generated in Microsoft Outlook for recipients of a document that is attached to an email message. These policies do not appear on the policies page.
+>Use the Policy Name link on the Document Detail page to access policies that are auto-generated in Microsoft Outlook for recipients of a document that is attached to an email message. These policies do not appear on the policies page.
 
 **Document Name:** The name of the selected document.
 
@@ -46,7 +46,7 @@ You can also view more details, which are described below, about a particular do
 
 **Publisher:** Name of the user who attached the policy to the document.
 
-**Policy Name:** The name of the policy that is used to protect the document. You can click the name to open the policy. You must use this link to access policies that Acrobat generates for recipients of a document that is attached to an email message in Outlook. Those policies do not appear on the Policies page.
+**Policy Name:** The name of the policy that is used to protect the document. You can click the name to open the policy. Use this link to access policies that Acrobat generates for recipients of a document that is attached to an email message in Outlook. Those policies do not appear on the Policies page.
 
 **Policy Type:** The type of policy that was applied to the document.
 
@@ -115,7 +115,7 @@ When you revoke or reinstate document access privileges, the change takes effect
 
 ## Switch a policy that is applied to a document {#switch-a-policy-that-is-applied-to-a-document}
 
-Users, policy set coordinators, and administrators can switch the policy that is applied to a policy-protected document (you can apply only one policy at a time to a document). Users can switch policies that are applied to their own policy-protected documents if they created the policy or if the policy is a shared one that has this capability enabled. Otherwise, the administrator or policy set coordinator must switch the policy. Administrators can switch policies for any user’s policy-protected documents. Policy set coordinators can switch policies from their policy sets.
+Users, policy set coordinators, and administrators can switch the policy that is applied to a policy-protected document (you can apply only one policy at a time to a document). Users can switch policies that are applied to their own policy-protected documents if they created the policy or if the policy is a shared one that has this capability enabled. Otherwise, the administrator or policy set coordinator must switch the policy. Administrators can switch policies for any user's policy-protected documents. Policy set coordinators can switch policies from their policy sets.
 
 When you switch a policy, the new policy is enforced as follows:
 

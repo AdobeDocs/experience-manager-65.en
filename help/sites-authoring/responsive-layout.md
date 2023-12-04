@@ -114,7 +114,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 1. To select a specific device to emulate you can either:
 
     * Use the Select Device icon and select from a drop-down selector.
-    * Tap/click on the device indicator in the emulator toolbar.
+    * Click the device indicator in the emulator toolbar.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -210,7 +210,7 @@ When in layout mode you can perform various actions on a grid:
   >
   >Proportions and ratios will be maintained when components such as **Images** are resized.
 
-* Click/tap on a content component, the toolbar lets you:
+* Click on a content component, the toolbar lets you:
 
     * **Parent**
 
@@ -226,7 +226,7 @@ When in layout mode you can perform various actions on a grid:
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* In **Layout** mode you can tap/click on the **Drag components here** to select the entire component. This will show the toolbar for this mode.
+* In **Layout** mode you can click on the **Drag components here** to select the entire component. This will show the toolbar for this mode.
 
   The toolbar will have different options depending on the state of the layout component and the components belonging to it. For example:
 

@@ -234,7 +234,7 @@ For a [typical headless implementation using AEM,](#level-1) the developer requi
 
 For any project to be a success, performance must be considered before any content is created.
 
-You must understand your users/visitors expectations and design for those. Set service level objectives (SLOs) and measure them to understand if you meet your user's expectations.
+Be sure you understand your users/visitors expectations and design for those. Set service level objectives (SLOs) and measure them to understand if you meet your user's expectations.
 
 #### Traffic Patterns {#traffic-patterns}
 

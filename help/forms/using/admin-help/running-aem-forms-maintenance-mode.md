@@ -30,7 +30,7 @@ Avoid invoking any processes while the server is in maintenance mode. This is wh
 
    >[!NOTE]
    >
-   >If you shut down the server while it is maintenance mode, it will still be in maintenance mode when it is restarted. You must turn off maintenance mode when you are finished your maintenance tasks.
+   >If you shut down the server while it is maintenance mode, it is still in maintenance mode when it is restarted. Turn off maintenance mode when you are finished your maintenance tasks.
 
 **Check whether AEM forms is running in maintenance mode**
 

@@ -91,7 +91,7 @@ Selecting **Edit** will:
 
 ### Adding a Step to a Model {#adding-a-step-to-a-model}
 
-You must add steps to your model to represent the activity to perform - each step performs a specific activity. A selection of step components are available in a standard AEM instance.
+Add steps to your model to represent the activity to perform - each step performs a specific activity. A selection of step components are available in a standard AEM instance.
 
 When you edit a model, the available steps appear in the various groups of the **Steps browser**. For example:
 
@@ -138,9 +138,9 @@ You can **Configure** and customize the behavior of a workflow step using the **
 
 1. To open the **Step Properties** dialog for a step either:
 
-    * Click/tap the* *step in the workflow model and select **Configure** from the component toolbar.
+    * Click the* *step in the workflow model and select **Configure** from the component toolbar.
 
-    * Double-click on the step.
+    * Double-click the step.
 
    >[!NOTE]
    >
@@ -334,7 +334,7 @@ To illustrate some of the possibilities for creating a workflow, the following e
 1. To open the properties dialog either:
 
     * Click on the participant step and select **Configure** from the component toolbar.
-    * Double-click on participant step.
+    * Double-click participant step.
 
 1. In the **Common** tab enter `Validate Content` for both the **Title** and **Description**.
 1. Open the **User/Group** tab:

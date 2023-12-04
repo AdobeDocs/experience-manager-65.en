@@ -203,7 +203,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 **To configure image thumbnail size:**
 
 1. Tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
-1. Tap the **[!UICONTROL Dynamic Media Process Image Assets]** step and tap or click the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
+1. Tap the **[!UICONTROL Dynamic Media Process Image Assets]** step and click the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -501,14 +501,14 @@ If you are running Dynamic Media - Hybrid mode, you must manually publish image 
 
 **To publish image presets in Dynamic Media - Hybrid mode:**
 
-1. In Experience Manager, tap or click the Experience Manager logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
-1. Select the image preset or multiple image presets from the list of image presets and click or tap **[!UICONTROL Publish]**.
+1. In Experience Manager, click the Experience Manager logo to access the global navigation console and click the Tools icon and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. Select the image preset or multiple image presets from the list of image presets and click **[!UICONTROL Publish]**.
 1. After the image preset is published, the status changes from unpublished to published.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ## Deleting Dynamic Media image presets {#deleting-image-presets}
 
-1. In Experience Manager, tap or click the Experience Manager logo to access the global navigation console.
+1. In Experience Manager, click the Experience Manager logo to access the global navigation console.
 1. Tap the **[!UICONTROL Tools]** icon, then navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.

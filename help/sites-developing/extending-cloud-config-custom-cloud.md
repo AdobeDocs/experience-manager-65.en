@@ -35,7 +35,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
     * **Name**: templates
     * **Type**: `sling:Folder`
 
-1. Right-click on `/apps/acs/analytics/components`. Select **Create...** followed by **Create Component...** The dialog that opens lets you specify:
+1. Right-click `/apps/acs/analytics/components`. Select **Create...** followed by **Create Component...** The dialog that opens lets you specify:
 
     * **Label**: `googleanalyticspage`
     * **Title**: `Google Analytics Page`

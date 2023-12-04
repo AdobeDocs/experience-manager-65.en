@@ -92,7 +92,7 @@ Tapping or clicking the Scribble field opens the dialog box in read-only mode.
 
 ### Selecting Pen size {#selecting-pen-size}
 
-Click the **Brushes** icon to display a list of available pen sizes. Click or tap a pen size to use the corresponding pen.
+Click the **Brushes** icon to display a list of available pen sizes. Click a pen size to use the corresponding pen.
 
 ### Delete Signatures from the form {#delete-signatures-from-the-form}
 

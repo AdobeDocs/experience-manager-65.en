@@ -1,13 +1,9 @@
 ---
 title: Spaces and Entities
-seo-title: Developing AEM Mobile Content Services
 description: This page serves a landing page for developing AEM Mobile Content Services.
-seo-description: This page serves a landing page for developing AEM Mobile Content Services.
-uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
 ---
 # Spaces and Entities{#spaces-and-entities}
@@ -50,7 +46,7 @@ Once you configure Spaces in dashboard, follow these steps to create Spaces:
 
 ## Managing a Space {#managing-a-space}
 
-Once you create a space, click on the left to manage the space in the list.
+After you create a space, click the left to manage the space in the list.
 
 You can view properties of the space, delete the space, or publish the space and its contents to an AEM publish instance.
 
@@ -105,7 +101,7 @@ The **Language Copy** feature allows authors to copy their master Language Copy 
 
 ### Adding Language Copy {#adding-language-copy}
 
-1. Once you create space, click on that space to create a language copy.
+1. After you create space, click that space to create a language copy.
 
    Click **Create** and choose **Language Copy**.
 
@@ -136,7 +132,7 @@ The **Language Copy** feature allows authors to copy their master Language Copy 
 
    >[!NOTE]
    >
-   >To navigate into a folder and to see its contents or add a sub folder or entity, click on the title of the folder in the space's content list.
+   >To navigate into a folder and to see its contents or add a sub folder or entity, click the title of the folder in the space's content list.
 
 ## Working with Entities in a Space {#working-with-entities-in-a-space}
 
@@ -152,7 +148,7 @@ If entity children, which are other entities, are gathered for data modeling, th
 
 ### Creating an Entity {#creating-an-entity}
 
-1. Open the Space console and click on the title of the space.
+1. Open the Space console and click the title of the space.
 
    Optionally, you can navigate to the folder by clicking on the title of the folder in the list.
 
@@ -192,7 +188,7 @@ If entity children, which are other entities, are gathered for data modeling, th
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-   Alternatively, you can click on **Preview** to view the json link.
+   Alternatively, you can click **Preview** to view the json link.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -214,7 +210,7 @@ If entity children, which are other entities, are gathered for data modeling, th
    >
    >When you are done adding assets to your entity, you can either choose **Save** to save the changes or choose **Save & Close** to save and redirect to the Space console list where the entities are defined.
 
-   Additionally, select an entity from the space console list and click on **Properties** to view and edit the properties for a defined entity.
+   Additionally, select an entity from the space console list and click **Properties** to view and edit the properties for a defined entity.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 

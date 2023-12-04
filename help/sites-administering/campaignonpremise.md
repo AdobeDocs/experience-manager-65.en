@@ -64,11 +64,11 @@ The integration package is now installed.
 
 ## Create the Operator for AEM in Campaign {#create-operator}
 
-The integration package automatically creates the `aemserver` operator that AEM uses to connect to Adobe Campaign. You must define a security zone for this operator and set its password.
+The integration package automatically creates the `aemserver` operator that AEM uses to connect to Adobe Campaign. Define a security zone for this operator and set its password.
 
 1. Log into Adobe Campaign as an administrator using the client console.
 
-1. Select **Tools** -&gt; **Explorer** from the menu bar.
+1. Select **Tools** > **Explorer** from the menu bar.
 
 1. In the explorer, navigate to the **Administration** &gt; **Access Management** &gt; **Operators** node.
 
@@ -156,17 +156,17 @@ To configure replication from your AEM author instance to the publish instance:
 
 1. Sign into to your AEM authoring instance as an administrator.
 
-1. From the global navigation side rail, select **Tools** &gt; **Deployment** &gt; **Replication** &gt; **Agents on author**, then tap or click **Default agent (publish)**.
+1. From the global navigation side rail, select **Tools** &gt; **Deployment** &gt; **Replication** &gt; **Agents on author**, then click **Default agent (publish)**.
 
    ![Configure replication agent](assets/acc-replication-config.png)
 
-1. Tap or click **Edit** then select the **Transport** tab.
+1. Click **Edit** then select the **Transport** tab.
 
 1. Configure the **URI** field by replacing the default `localhost` value with the IP address of the AEM publishing instance.
 
    ![Transport tab](assets/acc-transport-tab.png)
 
-1. Tap or click **OK** to save the changes to the agent settings.
+1. Click **OK** to save the changes to the agent settings.
 
 You have configured replication to the AEM publish instance so your campaign recipients can access your content.
 
@@ -178,7 +178,7 @@ You have configured replication to the AEM publish instance so your campaign rec
 
 ## Configure the AEM Externalizer {#externalizer}
 
-[The Externalizer](/help/sites-developing/externalizer.md) is an OSGi service in AEM that transforms a resource path into an external and absolute URL, which is necessary for AEM to serve content that Campaign can use. You must configure it in order for the Campaign integration to work.
+[The Externalizer](/help/sites-developing/externalizer.md) is an OSGi service in AEM that transforms a resource path into an external and absolute URL, which is necessary for AEM to serve content that Campaign can use. Configure it so that the Campaign integration works.
 
 1. Sign into the AEM authoring instance as an administrator.
 1. From the global navigation side rail, select **Tools** &gt; **Operations** &gt; **Web Console** &gt; **OSGi Configuration** and search for **Day CQ link Externalizer**.
@@ -186,7 +186,7 @@ You have configured replication to the AEM publish instance so your campaign rec
 
    ![Configuring the Externalizer](assets/acc-externalizer-config.png)
 
-1. Tap or click **Save**. 
+1. Click **Save**. 
 
 You have configured the Externalizer and Adobe Campaign can now access your content.
 
@@ -199,8 +199,8 @@ You have configured the Externalizer and Adobe Campaign can now access your cont
 In order for Campaign to communicate with AEM, you need to set a password for the `campaign-remote` user in AEM.
 
 1. Log into AEM as an administrator.
-1. On the main navigation console, click on **Tools** in the left rail.
-1. Then click **Security** -&gt; **Users** to open the user administration console.
+1. On the main navigation console, and click **Tools** in the left rail.
+1. Then click **Security** > **Users** to open the user administration console.
 1. Locate the `campaign-remote` user.
 1. Select the `campaign-remote` user and click **Properties** to edit the user.
 1. In the **Edit User Settings** window, click **Change Password**.
@@ -214,7 +214,7 @@ When [installing the **AEM Integration** package in Campaign,](#install-package)
 
 1. Log into Adobe Campaign as an administrator using the client console.
 
-1. Select **Tools** -&gt; **Explorer** from the menu bar.
+1. Select **Tools** > **Explorer** from the menu bar.
 
 1. In the explorer, navigate to the **Administration** &gt; **Platform** &gt; **External Accounts** node.
 

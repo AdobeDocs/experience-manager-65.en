@@ -1,8 +1,8 @@
 ---
 title: Registering as a User
 seo-title: Registering as a User
-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
-seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
+description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -13,7 +13,7 @@ exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 ---
 # Registering as a User {#registering-as-a-user}
 
-You can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization. To use a policy-protected document, you must register with document security. If you were not previously invited to register, document security initiates the registration process when these events occur:
+You can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization. To use a policy-protected document, you must register with document security. If you were not previously invited to register, document security initiates the registration process when these events occur:
 
 * A document security user who wants to send you a policy-protected document adds you to a policy.
 * A document security administrator creates an account for you.
@@ -37,11 +37,11 @@ If you are an invited user and you receive an email registration message from do
 1. Open the document security registration email. The URL that the message contains is a link to the External Users Registration page in document security.
 1. Click the URL or copy it and paste it into your browser. The External Users Registration page is displayed.
 1. Type your name, telephone number, address, organization, and password in the appropriate boxes, and then retype your password in the Confirm Password box. Your password can be any combination of eight characters.
-1. Click Save. A thank-you message appears informing you to check your email for an activation email message. You must now activate your account to finish the registration process.
+1. Click Save. A thank-you message appears informing you to check your email for an activation email message. Now activate your account to finish the registration process.
 
 ## Activate your invited user account {#activate-your-invited-user-account}
 
-After you register, document security sends you an activation email. You must activate your account by using the URL in the message. You can then log in to document security to use policy-protected documents that you have access to. Depending on the features that the administrator enables for external users, you may have permission to create policies, apply policies to documents, and add other external users to your policies.
+After you register, document security sends you an activation email. Activate your account by using the URL in the message. You can then log in to document security to use policy-protected documents that you have access to. Depending on the features that the administrator enables for external users, you may have permission to create policies, apply policies to documents, and add other external users to your policies.
 
 Your account remains active until the administrator deactivates or deletes it.
 

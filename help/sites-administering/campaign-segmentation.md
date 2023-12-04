@@ -104,7 +104,7 @@ When the entire statement evaluates to true then this segment has resolved. If t
 
 >[!CAUTION]
 >
->The segment editor does not check for any circular references. For example, segment A references another segment B, which in turn references segment A. You must ensure that your segments do not contain any circular references.
+>The segment editor does not check for any circular references. For example, segment A references another segment B, which in turn references segment A. Ensure that your segments do not contain any circular references.
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ To define your new segment:
    ![The first step of creating a segment in the Segment Editor](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Use either the sidekick or the context menu (usually right mouse button click, then select **New...** to open the Insert New Component window) to find the segment trait you need. Then drag it to the **Segment Editor** it will appear in the default **AND** container.
-1. Double-click on the new trait to edit the specific parameters; for example, the mouse position:
+1. Double-click the new trait to edit the specific parameters; for example, the mouse position:
 
    ![Editing a component in the Segment Editor](assets/screen_shot_2012-02-02at103135am.png)
 

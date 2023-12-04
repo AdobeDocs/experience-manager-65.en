@@ -556,7 +556,7 @@ Integration is provided between AEM and various eCommerce systems. This requires
 
 A AEM front end can be positioned in front of an existing hybris implementation. Also a hybris engine can be added to an existing AEM installation. To do this, the systems must be able to gracefully handle existing users in either system:
 
-* AEM -&gt; hybris
+* AEM > hybris
 
     * When logging in to hybris, if the AEM user does not exist:
 
@@ -565,7 +565,7 @@ A AEM front end can be positioned in front of an existing hybris implementation.
 
     * See: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
-* hybris -&gt; AEM
+* hybris > AEM
 
     * When logging in to AEM, if the system recognizes the user:
 

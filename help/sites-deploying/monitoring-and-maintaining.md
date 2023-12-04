@@ -478,7 +478,7 @@ These entries hold the same information as shown when editing a page.
 
 #### OSGi Audit records from the Web Console {#osgi-audit-records-from-the-web-console}
 
-OSGi events also generate audit records which can be seen from the **Configuration Status** tab -&gt; **Log Files** tab in the AEM Web Console:
+OSGi events also generate audit records which can be seen from the **Configuration Status** tab > **Log Files** tab in the AEM Web Console:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 

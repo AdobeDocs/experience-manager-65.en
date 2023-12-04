@@ -90,7 +90,7 @@ This section only details specific links to Adobe Campaign. For more information
     * **Adobe Campaign: Unsubscribe from Services**: lets you cancel the subscriptions of a recipient in Adobe Campaign.
 
 1. You must have an **Encrypted Primary Key** component on each form. This component defines which URL parameter is used to accept the encrypted primary key of an Adobe Campaign profile. In Components, select Adobe Campaign so only those componente are visible.
-1. Drag the component **Encrypted Primary Key** to the form (anywhere) and click or tap the **Configuration** icon. In the **Adobe Campaign** tab, specify any name for the URL parameter. Click or tap the check mark to save your changes.
+1. Drag the component **Encrypted Primary Key** to the form (anywhere) and click the **Configuration** icon. In the **Adobe Campaign** tab, specify any name for the URL parameter. Click the check mark to save your changes.
 
    Generated links to this form need to use this URL parameter and assign it the encrypted primary key of an Adobe Campaign profile. The encrypted primary key must be properly URL (percent) encoded.
 

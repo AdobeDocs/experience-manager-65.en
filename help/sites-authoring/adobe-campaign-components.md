@@ -73,7 +73,7 @@ You can either drag and drop an image from the [Asset Browser](/help/sites-autho
 
 >[!NOTE]
 >
->You must enter information in the **Alt Text** field, or the image cannot be saved.
+>Enter information in the **Alt Text** field, or the image cannot be saved.
 
 After the image is uploaded (and not before) you can use [inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) to crop/rotate the image as required:
 
@@ -122,7 +122,7 @@ When an image is loaded, you can configure the following:
 
 >[!NOTE]
 >
->You must enter information in the **Alt Text** field in the **Advanced** tab, or the image cannot save and you see the following error message:
+>Enter information in the **Alt Text** field in the **Advanced** tab, or the image cannot save and you see the following error message:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -151,7 +151,7 @@ You can configure the following in the **Display**, **URL Info**, or **Advanced*
 
 >[!NOTE]
 >
->You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>Enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >

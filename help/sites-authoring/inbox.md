@@ -59,7 +59,7 @@ Out-of-the-box AEM comes pre-loaded with four tasks assigned to the administrato
 
 To open the AEM notification inbox:
 
-1. Click/tap on the indicator in the toolbar.
+1. Click on the indicator in the toolbar.
 
 1. Select **View all**. The **AEM Inbox** opens. The inbox shows items from workflows, projects and tasks.
 1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
@@ -146,7 +146,7 @@ The Admin Control option is visible only to the members of the `administrators` 
 
 * **User Navigation**
   * **Hide navigation options:** Select this option to hide navigation options available in the header. The navigation options include links to other solutions, Help link, and the authoring options available on tapping Adobe Experience Manager logo or text. 
-* **Save:** Tap/click this option to save the settings.
+* **Save:** Click this option to save the settings.
 
 ## Taking Action on an Item {#taking-action-on-an-item}
 

@@ -596,7 +596,7 @@ Read-only.
 * Arguments: none
 * Returned value: none
 
-**joinCluster** Adds this repository to a cluster as a node that is controlled by the cluster master. You must provide a user name and password for authentication purposes. The connection uses basic authentication. The security credentials are base-64 encoded before being sent to the server.
+**joinCluster** Adds this repository to a cluster as a node that is controlled by the cluster master. Provide a user name and password for authentication purposes. The connection uses basic authentication. The security credentials are base-64 encoded before being sent to the server.
 
 * Arguments:
 

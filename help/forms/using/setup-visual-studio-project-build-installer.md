@@ -107,7 +107,7 @@ There are two ways to install the application on a Windows device.
 
 ### By acquiring the developer license {#by-acquiring-the-developer-license}
 
-1. Right-click on the PowerShell file ( `Add-AppDevPackage.ps1)`, and choose **Run with PowerShell**.
+1. Right-click the PowerShell file ( `Add-AppDevPackage.ps1)`, and choose **Run with PowerShell**.
 
 1. The setup prompts you to get a developer license. Use Microsoft account credentials to acquire developer license.  
    This license is valid for 30 days, and you can renew it for free.
@@ -130,7 +130,7 @@ To deploy the app:
 
 1. In your device, run `gpedit.msc`.
 1. Navigate to **Computer Configuration &gt; Administrative Templates &gt; Windows Component &gt; App Package Deployment**.
-1. Right-click on **Allow all trusted apps to install**.
+1. Right-click **Allow all trusted apps to install**.
 1. Click **Edit** and select **Enabled**.
 
 1. Click **OK**.

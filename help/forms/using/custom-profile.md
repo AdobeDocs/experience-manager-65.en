@@ -68,7 +68,7 @@ To create a custom profile, perform the following steps:
 After creating a custom profile, add render information to this profile. On receiving a request for the new profile, CRX verifies the existence of the /apps folder for the JSP page to be rendered. Create the JSP page in the /apps folder.
 
 1. In the left pane, navigate to the `/apps` folder.
-1. Right-click on the `/apps` folder and choose to create a folder with name **hrform**.
+1. Right-click the `/apps` folder and choose to create a folder with name **hrform**.
 1. Insider the **hrform** folder create a folder named **demo**.
 1. Click the **Save All** button.
 1. Navigate to `/libs/xfaforms/profile/html.jsp` and copy the node **html.jsp**.

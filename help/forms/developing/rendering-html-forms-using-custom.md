@@ -59,7 +59,7 @@ To render an HTML form that uses a custom CSS file, ensure that you reference an
 
 **Render an HTML form**
 
-To render an HTML form, you must specify a form design created in Designer and saved as an XDP file. You must also select an HTML transformation type. For example, you can specify the HTML transformation type that renders a dynamic HTML for Internet Explorer 5.0 or later.
+To render an HTML form, specify a form design that was created in Designer and saved as an XDP file. Select an HTML transformation type. For example, you can specify the HTML transformation type that renders a dynamic HTML for Internet Explorer 5.0 or later.
 
 Rendering an HTML form also requires values, such as URI values needed to render other form types.
 

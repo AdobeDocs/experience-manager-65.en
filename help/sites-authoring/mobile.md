@@ -24,7 +24,7 @@ Devices are grouped into the categories feature, smart, and touch according to t
 Use the following procedure to author a mobile page:
 
 1. From global navigation open the **Sites** console.
-1. Open the page **We.Retail** -&gt; **United States** -&gt; **English**.
+1. Open the page **We.Retail** > **United States** > **English**.
 
 1. Switch to **Preview** mode.
 1. Switch to the desired emulator by clicking the device icon at the top of the page.

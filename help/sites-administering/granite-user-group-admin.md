@@ -216,7 +216,7 @@ Choosing either **Users** or **Groups** from the Tools console opens the appropr
 
 1. The **Edit Group Settings** form will be opened.
 
-   The group ID will be the same as the original, but prefixed with `Copy of`. You must edit this as the ID cannot contain spaces. All other details will be the same as the original.
+   The group ID will be the same as the original, but prefixed with `Copy of`. Edit this ID because it cannot contain spaces. All other details are the same as the original.
 
    You can now edit and save the details as in [Adding a New Group](#adding-a-new-group).
 

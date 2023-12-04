@@ -232,7 +232,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Existing tests in a given suite can also be reconfigured using the `config`* *parameter. You must also specify the suite name and the actual name of the test (not the Test Class name). You can find the test name in the `name` property of the Test Class. For further details on how to find test properties, read the [Changing Test Properties](/help/sites-developing/tough-day.md#changing-the-test-properties) section.
+Existing tests in a given suite can also be reconfigured using the `config`* *parameter. Also specify the suite name and the actual name of the test (not the Test Class name). You can find the test name in the `name` property of the Test Class. For further details on how to find test properties, read the [Changing Test Properties](/help/sites-developing/tough-day.md#changing-the-test-properties) section.
 
 In the example below the default asset title for the `CreatePageTreeTest` (named `UploadAsset`) is changed to "NewAsset".
 
@@ -254,7 +254,7 @@ tests:
       title : NewAsset
 ```
 
-Also, you can also remove tests from predefined suites or publishers from the default configuration with the use of the `exclude` parameter. You must also specify the suite name and the actual name of the test (not the Test C `lass` name). You can find the test name in the `name` property of the test class. In the example below, the `CreatePageTreeTest` (named `UploadAsset`) test is removed from the toughday suite.
+Also, you can also remove tests from predefined suites or publishers from the default configuration with the use of the `exclude` parameter. Also specify the suite name and the actual name of the test (not the Test C `lass` name). You can find the test name in the `name` property of the test class. In the example below, the `CreatePageTreeTest` (named `UploadAsset`) test is removed from the toughday suite.
 
 By using command-line parameters:
 

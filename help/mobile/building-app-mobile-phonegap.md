@@ -95,7 +95,7 @@ Move the content of your mobile application to your file system.
    >
    >The cache holds content updates for installed applications. Clearing the cache voids all cached updates.
 
-1. On the toolbar, click or tap the Download CLI Assets icon.
+1. On the toolbar, click the Download CLI Assets icon.
 
    ![Download CLI Assets icon indicated by overlapping tablet symbol.](do-not-localize/chlimage_1-1.png)
 

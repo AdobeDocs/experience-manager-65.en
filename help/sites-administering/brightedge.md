@@ -58,7 +58,7 @@ Associate pages with a BrightEdge configuration to send page data to the BrightE
 Activate a BrightEdge configuration to replicate it on the publish instance and to enable published pages to interact with the BrightEdge service.
 
 1. On the rail, click Sites, and then browse to and select the page that you associated with the BrightEdge configuration.
-1. Click or tap the Publish icon, and then click or tap Publish.
+1. Click the Publish icon, and then click Publish.
 
    ![chlimage_1-7](assets/chlimage_1-7a.png)
 

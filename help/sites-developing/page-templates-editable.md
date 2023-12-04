@@ -213,7 +213,7 @@ To create a folder, do the following:
 
 ### Using the Configuration Browser {#using-the-configuration-browser}
 
-1. Go to **Global Navigation** -&gt; **Tools** &gt; **Configuration Browser**.
+1. Go to **Global Navigation** > **Tools** &gt; **Configuration Browser**.
 
    The existing folders are listed to the left including the **global** folder.
 

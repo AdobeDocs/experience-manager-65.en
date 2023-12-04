@@ -62,7 +62,7 @@ The workflow to import a new article
 
 >[!CAUTION]
 >
->You must associate a Mobile On-Demand connection first.
+>Associate a Mobile On-Demand connection first.
 
 ## Editing a Banner {#editing-a-banner}
 

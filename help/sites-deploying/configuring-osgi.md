@@ -78,7 +78,7 @@ To update a configuration with the web console:
 
 1. Access the **Configuration** tab of the Web Console by either:
 
-    * Opening the web console from the link on the **Tool -&gt; Operations** menu. After logging into the console, you can use the drop-down menu of:
+    * Opening the web console from the link on the **Tool > Operations** menu. After logging into the console, you can use the drop-down menu of:
 
       **OSGi &gt;**
 

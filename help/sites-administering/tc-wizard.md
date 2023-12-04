@@ -14,7 +14,7 @@ The Language Copy wizard is a guided experience for creating and instrumenting m
 
 To access this wizard:
 
-1. In Sites, select a page and tap/click Create.
+1. In Sites, select a page and click Create.
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 

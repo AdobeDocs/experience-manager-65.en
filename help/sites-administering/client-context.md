@@ -154,7 +154,7 @@ When finished you can [reset the profile](#resetting-the-profile-to-the-current-
 
 You can also select a profile with the selection slider:
 
-1. Double-click on the icon representing the current user. The selector opens, use the arrows to navigate and see the profiles available:
+1. Double-click the icon representing the current user. The selector opens, use the arrows to navigate and see the profiles available:
 
    ![The user selector](assets/clientcontext_profileselector.png)
 
@@ -168,7 +168,7 @@ You can also select a profile with the selection slider:
 
 ### Changing the Browser Platform {#changing-the-browser-platform}
 
-1. Double-click on the icon representing the browser platform. The selector opens, use the arrows to navigate and see the platforms/browsers available:
+1. Double-click the icon representing the browser platform. The selector opens, use the arrows to navigate and see the platforms/browsers available:
 
    ![Browser platform selector](assets/clientcontext_browserplatform.png)
 
@@ -176,7 +176,7 @@ You can also select a profile with the selection slider:
 
 ### Changing the Geolocation {#changing-the-geolocation}
 
-1. Double-click on the geolocation icon. An expanded map opens, here you can drag the marker to a new location:
+1. Double-click the geolocation icon. An expanded map opens, here you can drag the marker to a new location:
 
    ![Geolocation detail](assets/clientcontext_geomocationrelocate.png)
 
@@ -184,7 +184,7 @@ You can also select a profile with the selection slider:
 
 ### Changing the Tag Selection {#changing-the-tag-selection}
 
-1. Double-click on the Tag Cloud section of the Client Context. The dialog opens, here you can select tags:
+1. Double-click the Tag Cloud section of the Client Context. The dialog opens, here you can select tags:
 
    ![Tag cloud dialog](assets/clientcontext_tagselection.png)
 
@@ -202,7 +202,7 @@ Editing a client context can be used to set (or reset) the values of certain pro
 
 ### Adding a Property Component {#adding-a-property-component}
 
-After you have opened the **ClientContext design page**, you can also **Add** a completely new property using the available components (the components are listed on both the sidekick or from the **Insert New Component** dialog that is opened after a double-click on the **Drag components or assets here** box):
+After you have opened the **ClientContext design page**, you can also **Add** a completely new property using the available components (the components are listed on both the sidekick or from the **Insert New Component** dialog that is opened after a double-click the **Drag components or assets here** box):
 
 ![Adding a property to the Client Context window](assets/clientcontext_alisonparker_new.png)
 

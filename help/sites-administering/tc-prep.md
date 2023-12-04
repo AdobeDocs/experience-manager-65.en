@@ -50,20 +50,20 @@ You can use either format, according to the structure that you have chosen for y
 The following procedure uses the touch-optimized UI to create a language copy of a web site. For instructions that use the Classic UI, see [Creating a Language Root Using the Classic UI](/help/sites-administering/tc-lroot-classic.md).
 
 1. Navigate to Sites.
-1. Click or tap the site for which you want to create a language copy.
+1. Click the site for which you want to create a language copy.
 
-   For example, to create a language copy of the Geometrixx Outdoors site, you would click or tap Geometrixx Outdoors Site.
+   For example, to create a language copy of the Geometrixx Outdoors site, you would click Geometrixx Outdoors Site.
 
-1. Click or tap Create, and then click or tap Create Page.
+1. Click Create, and then click Create Page.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Select the page template and then click or tap Next.
+1. Select the page template and then click Next.
 1. In the Name field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Type a title for the page.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Click or tap Create. In the confirmation dialog box, click or tap either **Done** to return to the Sites console, or **Open** to open the language copy.
+1. Click Create. In the confirmation dialog box, click either **Done** to return to the Sites console, or **Open** to open the language copy.
 
 ## Seeing the Status of Language Roots {#seeing-the-status-of-language-roots}
 
@@ -73,8 +73,8 @@ The touch-optimized UI provides a References panel that shows a list of language
 
 The following procedure uses the touch-optimized UI to open the References panel for a page.
 
-1. On the Sites console, select a page of the site and then click or tap **References**.
+1. On the Sites console, select a page of the site and then click **References**.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
-1. In the references panel, click or tap **Language Copies**. The Language Copies panel shows the language copies of the web site.
+1. In the references panel, click **Language Copies**. The Language Copies panel shows the language copies of the web site.

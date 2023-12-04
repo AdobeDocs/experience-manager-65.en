@@ -146,7 +146,7 @@ From the **Websites** tab you can activate the individual pages. When you have e
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
-1. On the **Replication** console, click on **Activate Tree**.
+1. On the **Replication** console, click **Activate Tree**.
 
    The following window ( `https://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
 

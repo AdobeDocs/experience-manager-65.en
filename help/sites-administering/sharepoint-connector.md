@@ -41,7 +41,7 @@ To get started with the connector, do the following:
 * Download the connector package distribution file from Software Distribution.
 * Copy a valid *license.properties* file to the directory that contains the *cq-quickstart-6.4.0.jar* file.
 
-* Double-click/tap the .jar file to start AEM, or start it from the command line.
+* Double-click the .jar file to start AEM, or start it from the command line.
 * Install the connector package from Package Manager.
 * Configure the connector options.
 
@@ -92,12 +92,12 @@ To install the connector content package.
 
 1. Open an Adobe Support ticket to request for the connector featurepack.
 1. Download the package when it is available and then open Package Manager for your AEM instance.
-1. Tap/click **Install** from the package description page.
-1. From the **Install Package** dialog, tap/click **Install**.
+1. Click **Install** from the package description page.
+1. From the **Install Package** dialog, click **Install**.
 
    **Note**: Make sure that you are logged-in as administrator.
 
-1. When the package is installed, tap/click **Close**.
+1. When the package is installed, click **Close**.
 
 ## Configuring SharePoint connector {#configuring-sharepoint-connector}
 
@@ -113,7 +113,7 @@ To set the URL of the SharePoint server and advanced options, perform these step
 1. Search for the **Day JCR Connector for Microsoft Sharepoint** bundle.
 1. Edit the configuration values.
 1. Set the SharePoint Server URL as the value of **Workspaces**.
-1. Tap/click **Save**.
+1. Click **Save**.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -199,7 +199,7 @@ The AEM JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 201
 
 Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
-1. Click OSGI -&gt; Configuration
+1. Click OSGI > Configuration
 1. Search "Day JCR Connector for Microsoft Sharepoint"
 1. Click "Edit the configuration values"
 1. Set the value of ‘Sharepoint Connection Factory’ as ‘com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory’

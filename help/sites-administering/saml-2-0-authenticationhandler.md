@@ -129,7 +129,7 @@ SAML assertions are signed and may optionally be encrypted. In order for this to
 You can set up a Logger to debug any issues that might arise from misconfiguring SAML. You can do this by:
 
 1. Going to the Web Console, at *http://localhost:4502/system/console/configMgr*
-1. Search for and click on the entry called **Apache Sling Logging Logger Configuration**
+1. Search for and click the entry called **Apache Sling Logging Logger Configuration**
 1. Create a logger with the following configuration:
 
     * **Log Level:** Debug
