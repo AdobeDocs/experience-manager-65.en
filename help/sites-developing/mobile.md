@@ -573,7 +573,7 @@ The **Statistics** page is now available.
 
 ### Supporting Page Caching for "send link to a friend" Links {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Mobile pages are cachable on Dispatcher, because pages that are rendered for a device group are distinguished in the page URL by the device group selector, for example, `/content/mobilepage.touch.html`. A request to a mobile page without a selector is never cached, as in this case, the device detection operates and finally redirects to the matching device group (or "nomatch" for that matter). A mobile page rendered with a device group selector is processed by the link rewriter, which rewrites all links within the page to also contain the device group selector, preventing from reperforming device detection for every click on an already qualified page.
+Mobile pages are cachable on Dispatcher, because pages that are rendered for a device group are distinguished in the page URL by the device group selector, for example, `/content/mobilepage.touch.html`. A request to a mobile page without a selector is never cached, as in this case, the device detection operates and finally redirects to the matching device group (or "nomatch" for that matter). A mobile page rendered with a device group selector is processed by the link rewriter, which rewrites all links within the page to also contain the device group selector, preventing from reperforming device detection for every click of an already qualified page.
 
 Therefore you might encounter the following scenario:
 

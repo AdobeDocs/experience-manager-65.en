@@ -29,7 +29,7 @@ Configuring MSSL for replication involves performing the following steps:
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-You must determine which user account is performing the replication. When installing the trusted author certificate on the publish instance, the certificate is associated with this user account.
+Determine which user account is performing the replication. When installing the trusted author certificate on the publish instance, the certificate is associated with this user account.
 
 ## Obtaining or Creating Credentials for MSSL {#obtaining-or-creating-credentials-for-mssl}
 
@@ -142,7 +142,7 @@ To perform the following procedure, you must be logged in as an adminstrator of 
 ### Install the Author Private Key {#install-the-author-private-key}
 
 1. Open the User Management page for the author instance. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. To open the properties of your user account, click or tap your user name.
+1. To open the properties of your user account, click your user name.
 1. If the Create KeyStore link appears in the Account Settings area, click the link. Configure a password and click OK.
 1. In the Account Settings area, click Manage Keystore.
 
@@ -161,7 +161,7 @@ To perform the following procedure, you must be logged in as an adminstrator of 
 ### Install the Publish Certificate {#install-the-publish-certificate}
 
 1. Open the User Management page for the author instance. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. To open the properties of your user account, click or tap your user name.
+1. To open the properties of your user account, click your user name.
 1. If the Create TrustStore link appears in the Account Settings area, click the link, create a password for the TrustStore and click OK.
 1. In the Account Settings area, click Manage TrustStore.
 1. Click Add Certificate From CER File.
@@ -185,7 +185,7 @@ To perform the following procedure, you must be logged in as an adminstrator of 
 ### Install the Publish Private Key {#install-the-publish-private-key}
 
 1. Open the User Management page for the publish instance. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. To open the properties of your user account, click or tap your user name.
+1. To open the properties of your user account, click your user name.
 1. If the Create KeyStore link appears in the Account Settings area, click the link. Configure a password and click OK.
 1. In the Account Settings area, click Manage Keystore.
 1. Click Add Private Key From Key Store File.

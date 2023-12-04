@@ -241,7 +241,7 @@ When you add associated data model objects in a data source to a form data model
 
 >[!NOTE]
 >
->Predefined associations in a JDBC data source are not retained in the form data model. You must create them manually.
+>Predefined associations in a JDBC data source are not retained in the form data model. Create them manually.
 
 To add an association:
 
@@ -432,7 +432,7 @@ The flag can be set to any of the following values:
 
 * **FULL**: FDM performs the validation based on all constraints
 * **OFF**: No validation
-* **BASIC**: FDM performs the validation based on ‘required’ and ‘nullable’ constraints
+* **BASIC**: FDM performs the validation based on 'required' and 'nullable' constraints
 
 If no value is set for the `ValidationOptions`flag, **BASIC** validation is performed on the input data.
 

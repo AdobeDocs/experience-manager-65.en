@@ -52,7 +52,7 @@ To map landing page components to Adobe Analytics:
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
-   <td>The destination where you are taken when you click on the link </td>
+   <td>The destination where you are taken when you click the link </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
@@ -67,7 +67,7 @@ To map landing page components to Adobe Analytics:
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clicktroughImageTarget</i> <br /> </td>
-   <td>The destination where you are taken when you click on the image which contains a link</td>
+   <td>The destination where you are taken when you click the image which contains a link</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>

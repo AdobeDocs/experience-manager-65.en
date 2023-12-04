@@ -25,7 +25,7 @@ Content Management actions are the building blocks that help to create and manag
 
 >[!CAUTION]
 >
->You must associate a Mobile On-Demand connection first.
+>Associate a Mobile On-Demand connection first.
 
 ## Uploading Shared Resources {#uploading-shared-resources-1}
 

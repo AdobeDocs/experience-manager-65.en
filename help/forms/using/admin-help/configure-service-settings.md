@@ -141,7 +141,7 @@ The following settings are available for the Distiller service.
 
 New settings can be created through the PDF Generator user interface.
 
-**Security Settings:** Preconfigured security settings that are applied to generated PDF documents. The default value is No Security. You must create security settings using PDF Generator and then enter the setting here.
+**Security Settings:** Preconfigured security settings that are applied to generated PDF documents. The default value is No Security. Create security settings using PDF Generator and then enter the setting here.
 
 **Pool Size:** The initial size of the pool. When the Distiller service is deployed, this number is used to determine the number of service implementation instances that are created and allocated to the free pool awaiting invocation requests. The service container can then respond immediately to invocation requests without having to first initialize a service instance.
 
@@ -326,7 +326,7 @@ The macKeySeed value is the seed for the random number generator that is used to
 
 Change the macKeySeed value when you need to refresh the secure URLs. Refreshing the secure URLs depends on your security policy, and is similar to the refresh policy for changing the master root password of the server. The macSeedValue is analogous to the master password for the secure URLs, because it is used to generate a new unique random number for use in secure URL generation and retrieval.
 
-You must restart the cluster because the macSeedValue is read only at system startup. All nodes need to restart to read the value, because they use it independently to initialize their internal random numbers with the seed value.
+Restart the cluster because the macSeedValue is read only at system startup. All nodes need to restart to read the value, because they use it independently to initialize their internal random numbers with the seed value.
 
 ## JDBC service settings {#jdbc-service-settings}
 

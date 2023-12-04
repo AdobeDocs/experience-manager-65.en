@@ -722,7 +722,7 @@ Use the Portal component to add a portlet window to your web page. Use the compo
 
 To access content provided by AEM WCM, the portal server needs to be fitted with the AEM Portal Director Portlet. You do this by installing, configuring, and adding the portlet to the portal page by using the steps provided in this section.
 
-By default, the portlet connects to the publish instance at localhost:4503 and to the author instance at localhost:4502. These values can be changed during deployment of the portlet. The portal director is available as content in the repository under /libs/portal/directory. You must download the application war file before using it.
+By default, the portlet connects to the publish instance at localhost:4503 and to the author instance at localhost:4502. These values can be changed during deployment of the portlet. The portal director is available as content in the repository under /libs/portal/directory. Download the application war file before using it.
 
 ### Downloading the war file {#downloading-the-war-file}
 

@@ -52,7 +52,7 @@ If desired, your author instance can use the production libraries. Web browser p
 
 When AEM hosts the Dynamic Tag Management libraries, you can use the Dynamic Tag Management deployment hook service to automatically push library updates to AEM. Library updates are pushed when changes are made to the libraries such as when the Dynamic Tag Management web property properties are edited.
 
-To use the deployment hook, Dynamic Tag Management must be able to connect to the AEM instance that hosts the libaries. You must [enable access to AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) for the Dynamic Tag Management servers.
+To use the deployment hook, Dynamic Tag Management must be able to connect to the AEM instance that hosts the libaries. [Enable access to AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) for the Dynamic Tag Management servers.
 
 In some circumstances AEM can be unreachable, such as when AEM lies behind a firewall. In these cases, you can use the AEM polling importer option to periodically retrieve the libraries. A cron job expression dictates the schedule for library downloads.
 

@@ -171,7 +171,7 @@ A set of prerequisites and recommendations is available if you are considering a
 1. MongoDB expertise must be present within the partner or customer team to have confidence in being able to sustain and maintain an existing or new MongoDB environment;
 1. You may choose to deploy the commercial or open source version of MongoDB (AEM supports both), but must purchase a MongoDB Maintenance and Support contract directly from MongoDB Inc;
 1. Overall AEM and MongoDB architectures and infrastructures should be well defined and validated by an Adobe AEM Architect;
-1. You must review the support model for AEM deployments that include MongoDB.
+1. Review the support model for AEM deployments that include MongoDB.
 
 **Strong recommendations for MongoDB deployments:**
 

@@ -151,18 +151,18 @@ Areas can span activities and offers. After you have created an area in either o
 
 >[!NOTE]
 >
->The default area called Master Area is collapsed by default when you tap or click on the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
+>The default area called Master Area is collapsed by default when you click on the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
 
 To create an area:
 
 1. Navigate to **Personalization** &gt; **Activities** or **Offers** or and then to your brand.
-1. Tap or click **Create Area**.
+1. Click **Create Area**.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Click the **Area** icon and click **Next**.
 1. In the **Title** field, enter a name for the new area. Optionally select tags.
-1. Tap or click **Create**.
+1. Click **Create**.
 
    AEM redirects to the brand window, where it lists any areas created. If there is another area besides the Master Area, then you can create areas directly in the Brand console.
 
@@ -175,7 +175,7 @@ You create an area as a live copy to inherit the targeted content across site st
 To create an area as a livecopy:
 
 1. Navigate to **Personalization** &gt; **Activities** or **Offers** and then to your brand.
-1. Tap or click **Create Area as Live Copy**.
+1. Click **Create Area as Live Copy**.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
@@ -197,7 +197,7 @@ To create an area as a livecopy:
    >
    >When a page is rolled out to a Live Copy and the area configured for the Blueprint page is also the Blueprint for the area configured for the Pages Live Copy, the LiveAction **personalizationContentRollout** triggers a synchronous subRollout, which is part of the **Standard rollout config**.
 
-1. Tap or click **Create**.
+1. Click **Create**.
 
    AEM redirects to the brand window, where it lists any areas created. If there is another area besides the Master Area, then you can create areas directly from the brand window.
 
@@ -216,13 +216,13 @@ When you link, only those activities, experiences, and offers from the selected 
 To link a site to an area:
 
 1. Navigate to the site (or page) that you want to link to an area.
-1. Select the site or page and tap or click **View Properties**.
-1. Tap or click the **Personalization** tab.
+1. Select the site or page and click **View Properties**.
+1. Click the **Personalization** tab.
 1. In the **Brand** menu, select the brand you want to link your area to. After you select the brand, available areas are available in the **Area Reference** menu.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Select the area from the **Area Reference** drop-down menu and tap or click **Save**.
+1. Select the area from the **Area Reference** drop-down menu and click **Save**.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
@@ -246,8 +246,8 @@ An activity that is inheriting from another site is marked green next to the act
 
 To suspend or detach inheritance of targeted content in an activity:
 
-1. Navigate to the page where you want to detach or suspend inheritance and tap or click **Targeting** in the mode drop-down menu.
-1. If your page is linked to an area that is a live copy, you see the inheritance status. Tap or click **Start Targeting**.
+1. Navigate to the page where you want to detach or suspend inheritance and click **Targeting** in the mode drop-down menu.
+1. If your page is linked to an area that is a live copy, you see the inheritance status. Click **Start Targeting**.
 1. To suspend on an activity, do one of the following:
 
     1. Select an element of the activity, such as the audience. AEM automatically displays a Suspend Live Copy confirmation box. (You can suspend live copy by tapping or clicking on any element throughout the Targeting process.)
@@ -255,7 +255,7 @@ To suspend or detach inheritance of targeted content in an activity:
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Tap or click **Suspend** to suspend the activity. Suspended activities are marked in red.
+1. Click **Suspend** to suspend the activity. Suspended activities are marked in red.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -263,10 +263,10 @@ To suspend or detach inheritance of targeted content in an activity:
 
 To break inheritance of targeted content in an activity:
 
-1. Navigate to the page where you want to detach the live copy from the master and tap or click **Targeting** in the mode drop-down menu.
-1. If your page is linked to an area that is a live copy, you see the inheritance status. Tap or click **Start Targeting**.
+1. Navigate to the page where you want to detach the live copy from the master and click **Targeting** in the mode drop-down menu.
+1. If your page is linked to an area that is a live copy, you see the inheritance status. Click **Start Targeting**.
 1. Select **Detach Live Copy** from the drop-down menu in the toolbar. AEM confirms that you want to detach the live copy.
-1. Tap or click **Detach** to detach the live copy from the activity. After it is detached, the drop-down menu regarding inheritance no longer displays. The activity is now a local activity.
+1. Click **Detach** to detach the live copy from the activity. After it is detached, the drop-down menu regarding inheritance no longer displays. The activity is now a local activity.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
@@ -276,13 +276,13 @@ If you have suspended inheritance of targeted content in an activity, you can re
 
 To restore inheritance of targeted content in an activity:
 
-1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
-1. Tap or click **Start Targeting**.
+1. Navigate to the page where you want to restore inheritance and click **Targeting** in the mode drop-down menu.
+1. Click **Start Targeting**.
 1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
-1. Tap or click **Resume** to confirm that you want to resume live copy inheritance. Any modifications made to the current activity are lost if you resume inheritance.
+1. Click **Resume** to confirm that you want to resume live copy inheritance. Any modifications made to the current activity are lost if you resume inheritance.
 
 ## Deleting areas {#deleting-areas}
 
@@ -291,5 +291,5 @@ When you delete an area, you delete all the activities in that area. AEM warns y
 To delete an area:
 
 1. Navigate to **Personalization** &gt; **Activities** or **Offers** and then your brand.
-1. Tap or click the icon next to the area you want to delete.
-1. Tap or click **Delete** and confirm that you want to delete the area.
+1. Click the icon next to the area you want to delete.
+1. Click **Delete** and confirm that you want to delete the area.

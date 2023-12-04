@@ -20,7 +20,7 @@ The author environment of AEM provides various mechanisms for searching for cont
 
 ## Search Basics {#search-basics}
 
-To access the search panel, click on the **Search** tab at the top of the left-hand pane of the appropriate console.
+To access the search panel, click the **Search** tab at the top of the left-hand pane of the appropriate console.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 

@@ -88,7 +88,7 @@ For more information, see:
 
 ## Preview with sample data {#preview-ic}
 
-Form data model editor lets you generate and edit sample data for data model objects in the form data model. You can use this data to preview and test interactive communications and adaptive forms. You must generate the sample data before previewing as described in [Work with form data model](../../forms/using/work-with-form-data-model.md#sample).
+Form data model editor lets you generate and edit sample data for data model objects in the form data model. You can use this data to preview and test interactive communications and adaptive forms. Generate the sample data before previewing as described in [Work with form data model](../../forms/using/work-with-form-data-model.md#sample).
 
 To preview an interactive communication with sample form data model data:
 

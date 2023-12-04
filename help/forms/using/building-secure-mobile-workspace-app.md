@@ -22,7 +22,7 @@ You need to archive the Xcode project for AEM Forms app to build the installer (
 
    Click **[!UICONTROL Done]**.
 
-1. Navigate to Provisioning-&gt;Distribution and create a New Profile using the App ID configured in step 3.
+1. Navigate to Provisioning>Distribution and create a New Profile using the App ID configured in step 3.
 1. Download and add the provisioning profile to the Xcode and the iPad.
 1. Log in to your Mac machine that has Xcode, and iOS SDK installed and configured.
 1. Open the `AEM Forms.xcodeproj` project in Xcode.

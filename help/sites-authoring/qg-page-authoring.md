@@ -96,11 +96,11 @@ How to select a page depends on which view you are using in the console:
 
 1. Column View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
+    * Click the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
 
 1. List View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
+    * Click the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
 
 1. Card View:
 
@@ -152,7 +152,7 @@ How to select a page depends on which view you are using in the console:
 
     * [Edit the content of an existing component](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) on the page:
 
-        * Open the component toolbar with either tap or click. Use the **Edit** (pencil) icon to open the dialog.
+        * Open the component toolbar with either click. Use the **Edit** (pencil) icon to open the dialog.
         * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
         * To see all actions available enter full-screen mode using:
 
@@ -160,16 +160,16 @@ How to select a page depends on which view you are using in the console:
 
     * [Configure the properties of an existing component](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-        * Open the component toolbar with either tap or click. Use the **Configure** (wrench) icon to open the dialog.
+        * Open the component toolbar with either click. Use the **Configure** (wrench) icon to open the dialog.
 
     * [Move a component](/help/sites-authoring/editing-content.md#moving-a-component) either:
 
         * Drag the required component to its new location.
-        * Open the component toolbar with either tap or click. Use the **Cut** then **Paste** icons where required.
+        * Open the component toolbar with either click. Use the **Cut** then **Paste** icons where required.
 
     * [Copy (and Paste)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) a component:
 
-        * Open the component toolbar with either tap or click. Use the **Copy** then **Paste** icons as required.
+        * Open the component toolbar with either click. Use the **Copy** then **Paste** icons as required.
 
    >[!NOTE]
    >
@@ -177,7 +177,7 @@ How to select a page depends on which view you are using in the console:
 
     * [Delete](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) a component:
 
-        * Open the component toolbar with either tap or click, then use the **Delete** icon.
+        * Open the component toolbar with either click, then use the **Delete** icon.
 
     * [Add annotations](/help/sites-authoring/annotations.md#annotations) to the page:
 
@@ -299,7 +299,7 @@ For example, the lock icon looks like this:
 
    ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. Tap/click on the required type of reference to show more details and (when appropriate) take further actions.
+1. Click the required type of reference to show more details and (when appropriate) take further actions.
 
 ### Creating a Version of Your Page {#creating-a-version-of-your-page}
 
@@ -309,7 +309,7 @@ To create a [version](/help/sites-authoring/working-with-page-versions.md) of yo
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Tap/click on the up-arrow at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
+1. Click the up-arrow at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -325,7 +325,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
    If a version of your page has already been saved, it is listed in the Timeline.
 
-1. Tap/click on the version you want to restore - this will reveal additional action buttons:
+1. Click the version you want to restore - this will reveal additional action buttons:
 
     * **Revert to this Version**
 

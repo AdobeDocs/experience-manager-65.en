@@ -158,7 +158,7 @@ The following diagram and steps detail how to proceed:
 
    As an example, see `IDSJob.IDS_EXTENDSCRIPT_JOB` for the IDS proxy worker.
 
-1. The external step is used to trigger the event and then wait until that is finished; this is done by polling on the id. You must develop your own step to implement new functionality.
+1. The external step is used to trigger the event and then wait until that is finished; this is done by polling on the id. Develop your own step to implement new functionality.
 
    Implement a `WorkflowExternalProcess`, then use the JobService API and your job topic to prepare a job event and dispatch it to the JobService (an OSGi service).
 

@@ -1,14 +1,10 @@
 ---
 title: Converting Between File Formats and PDF
-seo-title: Converting Between File Formats and PDF
 description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
-seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
-uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 ---
@@ -628,7 +624,7 @@ This table lists the type of information used in printing native file formats.
   <tr>
    <td><p>Additional application-specific dialog box instructions </p></td>
    <td><p>Specifies overrides and additions to application-specific dialog box instructions. The section presents an example of such information. </p><p>The file that contains this information is appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. An example is appmon.addition.en_US.xml.</p></td>
-   <td><p>Files of this type can be created and modified using an XML editing application. (See <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creating or modifying an additional dialog XML file for a native application</a>.) </p><p><strong>Important</strong>: You must create additional application-specific dialog box instructions for each native application your server will support. </p></td>
+   <td><p>Files of this type can be created and modified using an XML editing application. (See <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creating or modifying an additional dialog XML file for a native application</a>.) </p><p><strong>Important</strong>: Create additional application-specific dialog box instructions for each native application your server will support. </p></td>
   </tr>
  </tbody>
 </table>
@@ -667,7 +663,7 @@ The intent of the Generate PDF service's support for script XML files is to dire
 
 The steps in a script XML file are executed in order, without any opportunity for branching. The only conditional test supported is for time-out/retry, which causes a script to terminate if a step does not complete successfully within a specific period of time and after a specific number of retries.
 
-In addition to steps being sequential, the instructions within a step are also executed in order. You must ensure that the steps and instructions reflect the order in which a user would perform those same steps.
+In addition to steps being sequential, the instructions within a step are also executed in order. Ensure that the steps and instructions reflect the order in which a user would perform those same steps.
 
 Each step in a script XML file identifies the window element that is expected to appear if the step's instructions are successfully performed. If an unexpected dialog box appears while executing a script step, the Generate PDF service searches the dialog XML files as described in the next section.
 
@@ -790,7 +786,7 @@ You can use regular expressions in caption specifications. The Generate PDF serv
 
 #### Ordering the window and windowList elements {#ordering-the-window-and-windowlist-elements}
 
-You must order `window` and `windowList` elements as follows:
+Order `window` and `windowList` elements as follows:
 
 * When multiple `window` elements appear as children in a `windowList` or `dialog` element, order those `window` elements in descending order, with the lengths of the `caption` names indicating the position in the order.
 * When multiple `windowList` elements appear in a `window` element, order those `windowList` elements in descending order, with the lengths of the `caption` attributes of the first `indexes/`element indicating the position in the order.
@@ -858,7 +854,7 @@ The name of the additional dialog XML file must use the format `appmon.[applicat
 >
 >None of the generic applications specified in the native2pdfconfig.xml configuration file have a primary dialog XML file. The section [Adding or modifying support for a native file format](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) describes such specifications.
 
-You must order `windowList` elements that appear as children in a `window` element. (See [Ordering the window and windowList elements](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
+Order `windowList` elements that appear as children in a `window` element. (See [Ordering the window and windowList elements](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
 ### Modifying the general dialog XML file {#modifying-the-general-dialog-xml-file}
 
@@ -1056,7 +1052,7 @@ This example specifies how the Generate PDF service should interact with Notepad
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the Print dialog and click on the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
+    <!-- In this step, we acquire the Print dialog and click the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1074,7 +1070,7 @@ This example specifies how the Generate PDF service should interact with Notepad
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which  has the caption '"View Adobe PDF results' and we click on the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
+    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which has the caption '"View Adobe PDF results' and we click the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
     <step>
         <acquiredWindow>
             <window caption="Printing Preferences">
@@ -1098,7 +1094,7 @@ This example specifies how the Generate PDF service should interact with Notepad
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the 'Print' dialog and click on the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
+    <!-- In this step, we acquire the 'Print' dialog and click the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1117,7 +1113,7 @@ This example specifies how the Generate PDF service should interact with Notepad
             <window caption="Save PDF File As"/>
         </expectedWindow>
     </step>
-    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click on the Save button. The expectation is that the dialog disappears-->
+    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click the Save button. The expectation is that the dialog disappears-->
     <step>
         <acquiredWindow>
             <window caption="Save PDF File As">

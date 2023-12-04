@@ -34,7 +34,7 @@ You can efficiently create content for multinational and multilingual sites thro
 * Use [Multi Site Manager](/help/sites-administering/msm.md) to:
 
     * Re-use content from the master site, and the translations, to create sites for other countries and cultures.
-    * Make sure to limit the use of Multi Site Manager to content within one language, for example, English master -&gt; English language branches in country sites, French master -&gt; French language branches in country sites.
+    * Make sure to limit the use of Multi Site Manager to content within one language, for example, English master > English language branches in country sites, French master > French language branches in country sites.
     * Where required, detach elements of the live copies to add localization details.
 
 The following diagram illustrates how the main concepts intersect (but does not show all levels/elements involved):

@@ -14,7 +14,7 @@ exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
 ---
 # Reader extending policy-protected PDF documents using Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
-You must be familiar with concepts of document security, reader extension, and Java Programming language to reader-extend the document security policy-protected PDF documents.
+Be familiar with concepts of document security, reader extension, and Java Programming language to reader-extend the document security policy-protected PDF documents.
 
 You can use document security to restrict access of specific PDF documents to only authorized users. You can also determine how a recipient can use a protected document. For example, you can specify whether recipients can print, copy, or edit text of a document security policy-protected document. To learn more about document security, see [about document security](/help/forms/using/admin-help/document-security.md).
 

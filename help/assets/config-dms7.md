@@ -270,7 +270,7 @@ If you intend to use this feature, be aware of the following prerequisites and p
 
    * Copy and paste the path above into the CRXDE Lite path field below the toolbar, then press `Enter`.
 
-1. In the left rail, right-click on `fileupload`, then from the pop-up menu, select **[!UICONTROL Overlay Node]**.
+1. In the left rail, right-click `fileupload`, then from the pop-up menu, select **[!UICONTROL Overlay Node]**.
 
    ![Overlay Node option](/help/assets/assets-dm/uploadassets15gb_a.png)
 

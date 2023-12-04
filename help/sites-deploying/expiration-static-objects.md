@@ -29,7 +29,7 @@ All files, which are not dynamic and which do not change over time, can and shou
 
 >[!CAUTION]
 >
->You must be careful when you define the time period during which an object is considered to be up-to-date. As there is *no check until the specified time period has expired*, the client can end up presenting old content from the cache.
+>Be careful when you define the time period during which an object is considered to be up-to-date. As there is *no check until the specified time period has expired*, the client can end up presenting old content from the cache.
 
 1. **For an Author instance:**
 

@@ -28,15 +28,15 @@ To use the new format in HTML5 Forms, mark the table as complex. To mark the tab
  </extras>
 ```
 
-The tables which are marked as *complexTable* follow the native HTML rendition, and provide better accessibility support for certain screen readers.  To create a row span, select consecutive cells of a table in the same column, right-click on the selection, and then click **[!UICONTROL Merge Cells]**.
+The tables which are marked as *complexTable* follow the native HTML rendition, and provide better accessibility support for certain screen readers.  To create a row span, select consecutive cells of a table in the same column, right-click the selection, and then click **[!UICONTROL Merge Cells]**.
 
 >[!NOTE]
 >
 >Creating a row-span works for leftmost cells only.
 
-To mark a row as row header, select all cells in the row, right-click on the selection, and then click **[!UICONTROL Mark Header]**.
+To mark a row as row header, select all cells in the row, right-click the selection, and then click **[!UICONTROL Mark Header]**.
 
-To mark a cell as column header, select any cell in the column, right-click on the selection, and then click **[!UICONTROL Mark Header]**.
+To mark a cell as column header, select any cell in the column, right-click the selection, and then click **[!UICONTROL Mark Header]**.
 
 Limitations in new *AccessibleTable* format:
 

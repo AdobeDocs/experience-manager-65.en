@@ -22,10 +22,10 @@ There are two options to disable ContextHub:
 
 * Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
-    1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-    1. Click or tap the appropriate **Configuration Container**
-    1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
-    1. Click or tap **Disable ContextHub** and click or tap **Save**
+    1. In the rail click **Tools &gt; Sites &gt; ContextHub**
+    1. Click the appropriate **Configuration Container**
+    1. Select the **ContextHub Configuration** and click **Edit Selected Element**
+    1. Click **Disable ContextHub** and click **Save**
 
 or
 -->
@@ -68,10 +68,10 @@ Icons are references from the [Coral UI icon library](https://helpx.adobe.com/ex
 
 Add a UI mode to group related ContextHub modules. When you create the UI mode, you provide the title and icon that appear in the ContextHub toolbar.
 
-1. On the Experience Manager rail, click or tap Tools &gt; Sites &gt; Context Hub.
-1. Click or tap the default Configuration Container.
-1. Click or tap the Context Hub Configuration.
-1. Click or tap the Create button, and then click or tap Context Hub UI Mode.
+1. On the Experience Manager rail, click Tools &gt; Sites &gt; Context Hub.
+1. Click the default Configuration Container.
+1. Click the Context Hub Configuration.
+1. Click the Create button, and then click Context Hub UI Mode.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -81,7 +81,7 @@ Add a UI mode to group related ContextHub modules. When you create the UI mode, 
     * Mode Icon: The selector for the [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) to use, for example, `coral-Icon--user`
     * Enabled: Select to show the UI mode in the ContextHub toolbar
 
-1. Click or tap Save.
+1. Click Save.
 
 ### Adding a UI Module {#adding-a-ui-module}
 
@@ -102,11 +102,11 @@ The UI module properties include a detail configuration where you can provide va
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) |Displays statistics about page tags |tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) |Displays the profile information for the current user, including authorizableID, displayName and familyName. You can change the value of displayName and familyName. |profile |
 
-1. On the Experience Manager rail, click or tap Tools &gt; Sites &gt; ContextHub.
-1. Click or tap the Configuration Container to which you want to add a UI module.
+1. On the Experience Manager rail, click Tools &gt; Sites &gt; ContextHub.
+1. Click the Configuration Container to which you want to add a UI module.
 1. Click or typ the ContextHub Configuration to which you want to add the UI module.
-1. Click or tap the UI mode to which you are adding the UI module.
-1. Click or tap the Create button, then click or tap ContextHub UI Module (generic).
+1. Click the UI mode to which you are adding the UI module.
+1. Click the Create button, then click ContextHub UI Module (generic).
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -117,7 +117,7 @@ The UI module properties include a detail configuration where you can provide va
     * Enabled: Select to show the UI module in the ContextHub toolbar
 
 1. (Optional) To override the default store configuration, enter a JSON object to configure the UI Module.
-1. Click or tap Save.
+1. Click Save.
 
 ## Creating a ContextHub Store {#creating-a-contexthub-store}
 
@@ -145,14 +145,14 @@ AEM provides the following sample store candidates upon which you can base a sto
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) |Stores information about the client, such as device information, browser type, and window orientation |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) |Stores page tags and tag counts |
 
-1. On the Experience Manager rail, click or tap Tools &gt; Sites &gt; ContextHub.
-1. Click or tap the default configuration container.
-1. Click or tap Contexthub Configuration
-1. To add a store, click or tap the Create icon and then click or tap ContexHub Store Configuration.
+1. On the Experience Manager rail, click Tools &gt; Sites &gt; ContextHub.
+1. Click the default configuration container.
+1. Click Contexthub Configuration
+1. To add a store, click the Create icon and then click ContexHub Store Configuration.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. Provide values for the basic configuration properties and then click or tap Next:
+1. Provide values for the basic configuration properties and then click Next:
 
     * **Configuration Title:** The title that identifies the store
     * **Store Type:** The value of the storeType property of the store candidate upon which to base the store
@@ -160,7 +160,7 @@ AEM provides the following sample store candidates upon which you can base a sto
     * **Enabled:** Select to enable the store
 
 1. (Optional) To override the default store configuration, enter a JSON object in the Detail Configuration (JSON) box.
-1. Click or tap Save.
+1. Click Save.
 
 ## Example: Using a JSONP Service  {#example-using-a-jsonp-service}
 
@@ -235,10 +235,10 @@ A debugging mode for the ContextHub can be enabled to allow for troubleshooting.
 
 Edit the ContextHub's configuration and check the option **Debug**
 
-1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-1. Click or tap the default **Configuration Container**
-1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
-1. Click or tap **Debug** and click or tap **Save**
+1. In the rail click **Tools &gt; Sites &gt; ContextHub**
+1. Click the default **Configuration Container**
+1. Select the **ContextHub Configuration** and click **Edit Selected Element**
+1. Click **Debug** and click **Save**
 
 ### Via CRXDE {#via-crxde}
 

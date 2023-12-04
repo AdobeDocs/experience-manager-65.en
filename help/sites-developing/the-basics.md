@@ -47,7 +47,7 @@ The Experience Server provides the Experience Services which AEM is built on, an
 
 ### Introduction to Sling {#introduction-to-sling}
 
-AEM is built using [Sling](https://sling.apache.org/index.html), a Web application framework based on REST principles that provides easy development of content-oriented applications. Sling uses a JCR repository, such as Apache Jackrabbit or, if there is AEM, the CRX Content Repository, as its data store. Sling has been contributed to the Apache Software Foundation - further information can be found at Apache.
+AEM is built using [Sling](https://sling.apache.org/index.html), a Web application framework-based on REST principles that provides easy development of content-oriented applications. Sling uses a JCR repository, such as Apache Jackrabbit or, if there is AEM, the CRX Content Repository, as its data store. Sling has been contributed to the Apache Software Foundation - further information can be found at Apache.
 
 Using Sling, the type of content to be rendered is not the first processing consideration. Instead the main consideration is whether the URL resolves to a content object for which a script can then be found to perform the rendering. This provides excellent support for web content authors to build pages which are easily customized to their requirements.
 

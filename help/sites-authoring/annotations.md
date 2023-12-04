@@ -59,15 +59,15 @@ The Annotate mode lets you create, edit, move or delete annotations on your cont
 
    >[!NOTE]
    >
-   >To exit Annotation mode tap/click the Annotate icon (x symbol) at the right of the top toolbar.
+   >To exit Annotation mode click the Annotate icon (x symbol) at the right of the top toolbar.
 
-1. Click/tap the Add Annotation icon (plus symbol at the left of the toolbar) to start adding annotations.
+1. Click the Add Annotation icon (plus symbol at the left of the toolbar) to start adding annotations.
 
    >[!NOTE]
    >
-   >To stop adding annotations (and return to viewing) tap/click the Cancel icon (x symbol in a white circle) at the left of the top toolbar.
+   >To stop adding annotations (and return to viewing) click the Cancel icon (x symbol in a white circle) at the left of the top toolbar.
 
-1. Click/tap the required component (components that can be annotated will be highlighted with a blue border) to add the annotation and open the dialog:
+1. Click the required component (components that can be annotated will be highlighted with a blue border) to add the annotation and open the dialog:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
@@ -94,17 +94,17 @@ The Annotate mode lets you create, edit, move or delete annotations on your cont
 
 1. After you have finished editing a specific annotation, you can:
 
-    * Click/tap the text marker to open the annotation. Once open you can view the full text, make changes or delete the annotation.
+    * Click the text marker to open the annotation. Once open you can view the full text, make changes or delete the annotation.
 
         * Sketches cannot be deleted independently of the annotation.
 
     * Reposition the text marker.
-    * Click/tap on a sketch line to select that sketch and drag it to the desired position.
+    * Click on a sketch line to select that sketch and drag it to the desired position.
     * Move, or copy, a component
 
         * Any related annotations and their sketches will also be moved or copied and their position in relation to the paragraph will remain the same.
 
-1. To exit Annotation mode, and return to the mode previously used, tap/click the Annotate icon (x symbol) at the right of the top toolbar.
+1. To exit Annotation mode, and return to the mode previously used, click the Annotate icon (x symbol) at the right of the top toolbar.
 
 >[!NOTE]
 >

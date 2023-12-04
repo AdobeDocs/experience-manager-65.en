@@ -388,7 +388,7 @@ You can also configure the rollout configurations for a live copy page when you 
 
    ![Selected Rollout Configurations](assets/chlimage_1-2.png)
 
-1. Click or tap **Save**.
+1. Click **Save**.
 
 ### Setting the Rollout Configuration for a Blueprint Page {#setting-the-rollout-configuration-for-a-blueprint-page}
 

@@ -385,7 +385,7 @@ Consider the following points when designing tables:
     * header and footer for additional column
     * width ratio for each column
 
-You can nest fragments in a letter. This implies that you can add a fragment within a fragment. The Correspondence Management solution supports up to four levels of nesting within a letter: **Letter**-&gt;**Fragment**-&gt;**Fragment**-&gt;**Fragment**-&gt;**Fragment.**
+You can nest fragments in a letter. This implies that you can add a fragment within a fragment. The Correspondence Management solution supports up to four levels of nesting within a letter: **Letter* > *Fragment* > *Fragment* > *Fragment* > *Fragment.**
 
 For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#examplewithsamplefiles).
 

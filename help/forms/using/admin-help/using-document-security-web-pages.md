@@ -22,7 +22,7 @@ Users and administrators use the document security web pages to create and manag
 
 To open the web pages, you require a browser and the URL and your login information for document security. The URL for users is different from the URL for administrators.
 
-Because document security references your organization’s existing directories for user information, your document security login information may be the same information that you use to log in to your network and other applications. See your system administrator or administrator for your account information.
+Because document security references your organization's existing directories for user information, your document security login information may be the same information that you use to log in to your network and other applications. See your system administrator or administrator for your account information.
 
 To log in as an administrator, you need to have the administrator role assigned to you. You can use the default super administrator account that is created during the installation process.
 
@@ -81,7 +81,7 @@ Use these links to access the various pages, where you create and manage policie
 
 Client applications must be set up to connect to document security to protect documents, open policy-protected documents, and connect to the document security web pages. See *Acrobat Help* or the appropriate *RightsManagementExtension Help* for information about configuring the connection within the client application.
 
-Document security is accessed via Secure Sockets Layer (SSL). You must install the website’s certificate in your certificate store so that you can access document security through the client applications.
+Document security is accessed via Secure Sockets Layer (SSL). Install the website's certificate in your certificate store so that you can access document security through the client applications.
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 

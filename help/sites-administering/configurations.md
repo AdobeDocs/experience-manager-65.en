@@ -62,8 +62,8 @@ The Configuration Browser allows an administrator to easily create, manage, and 
 
 It is simple to create a configuration in AEM by using the Configuration Browser.
 
-1. Log into AEM as a Cloud Service and from the main menu select **Tools** -&gt; **General** -&gt; **Configuration Browser**.
-1. Tap or click **Create**.
+1. Log into AEM as a Cloud Service and from the main menu select **Tools** > **General** > **Configuration Browser**.
+1. Click **Create**.
 1. Provide a **Title** and a **Name** for your configuration.
 
    ![Create configuration](assets/configuration-create.png)
@@ -77,7 +77,7 @@ It is simple to create a configuration in AEM by using the Configuration Browser
    * [Context Hub Segments](/help/sites-administering/segmentation.md)
    * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
    * [Editable Templates](/help/sites-authoring/templates.md)
-1. Tap or click **Create**.
+1. Click **Create**.
 
 >[!TIP]
 >
@@ -87,8 +87,8 @@ It is simple to create a configuration in AEM by using the Configuration Browser
 
 If you think of configurations as workspaces, access rights can be set on those configurations to enforce who may and may not access those workspaces.
 
-1. Log into AEM as a Cloud Service and from the main menu select **Tools** -&gt; **General** -&gt; **Configuration Browser**.
-1. Select the configuration that you want to modify and then tap or click **Properties** in the tool bar.
+1. Log into AEM as a Cloud Service and from the main menu select **Tools** > **General** > **Configuration Browser**.
+1. Select the configuration that you want to modify and then click **Properties** in the tool bar.
 1. Select any additional features that you want to add to the configuration.
 
    >[!NOTE]

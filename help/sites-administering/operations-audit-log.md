@@ -86,7 +86,7 @@ In AEM 6.3, if the scheduled maintenance window closes before the Audit Log Purg
 ## Configure Replication Audit Log Purging  {#configure-replication-audit-log-purging}
 
 1. Navigate to the System Console at *https://&lt;serveraddress&gt;:&lt;serverport&gt;/system/console/configMgr*
-1. Search for **Replication audit Log Purge Scheduler** and click on the result
+1. Search for **Replication audit Log Purge Scheduler** and click the result
 1. In the next window, configure your rule accordingly. The options are:
 
     * **Rule name:** the name of the audit policy rule

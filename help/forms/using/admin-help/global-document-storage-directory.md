@@ -73,7 +73,7 @@ The location of the GDS directory can be configured manually during the AEM form
 
 ## Change the default GDS location {#change-the-default-gds-location}
 
-You can change the GDS location in administration console after the AEM forms installation is completed. You must manually relocate the data to complete the process.
+You can change the GDS location in administration console after the AEM forms installation is completed. Manually relocate the data to complete the process.
 
 >[!NOTE]
 >

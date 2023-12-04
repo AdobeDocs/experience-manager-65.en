@@ -46,7 +46,7 @@ When the entire statement evaluates to true then the segment has resolved. If th
 
 >[!CAUTION]
 >
->The segment editor does not check for any circular references. For example, segment A references another segment B, which in turn references segment A. You must ensure that your segments do not contain any circular refernces.
+>The segment editor does not check for any circular references. For example, segment A references another segment B, which in turn references segment A. Ensure that your segments do not contain any circular refernces.
 
 ### Containers {#containers}
 
@@ -127,11 +127,11 @@ To define your new segment:
 
 1. After [accessing the segments](/help/sites-administering/segmentation.md#accessing-segments), [navigate to the folder](#organizing-segments) where you would like to create the segment.
 
-1. click or tap the Create button and select **Create ContextHub Segment**.
+1. click the Create button and select **Create ContextHub Segment**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if necessary and then tap or click **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if necessary and then click **Create**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -141,7 +141,7 @@ To define your new segment:
     * Maximum value: `1000000`
 
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
-1. Double-click on or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in San Jose.
+1. Double-click the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in San Jose.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
@@ -227,7 +227,7 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 ### Create a New Folder {#create-folder}
 
-1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+1. After [accessing the segments](#accessing-segments), click the **Create** button and select **Folder**.
 
    ![Add folder](assets/contexthub-create-segment.png)
 
@@ -239,24 +239,24 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
     ![Create folder](assets/contexthub-create-folder.png)
 
-1. Tap or click **Create**.
+1. Click **Create**.
 
    ![Confirm folder](assets/contexthub-confirm-folder.png)
 
 1. The folder will appear in the list of segments.
    * How you sort your columns will affect where in the list the new folder appears.
-   * You can tap or click the column headings to adjust your sort.
+   * You can click the column headings to adjust your sort.
    ![The new folder](assets/contexthub-folder.png)
 
 ### Modify Existing Folders {#modify-folders}
 
-1. After [accessing the segments](#accessing-segments), click or tap the folder you wish to modify to select it.
+1. After [accessing the segments](#accessing-segments), click the folder you wish to modify to select it.
 
    ![Select folder](assets/contexthub-select-folder.png)
 
-1. Tap or click **Rename** in the toolbar to rename the folder.
+1. Click **Rename** in the toolbar to rename the folder.
 
-1. Provide a new **Folder Title** and tap or click **Save**.
+1. Provide a new **Folder Title** and click **Save**.
 
    ![Rename folder](assets/contexthub-rename-folder.png)
 
@@ -266,25 +266,25 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 ### Delete a Folder
 
-1. After [accessing the segments](#accessing-segments), click or tap the folder you wish to modify to select it.
+1. After [accessing the segments](#accessing-segments), click the folder you wish to modify to select it.
 
    ![Select folder](assets/contexthub-select-folder.png)
 
-1. Tap or click **Delete** in the toolbar to delete the folder.
+1. Click **Delete** in the toolbar to delete the folder.
 
 1. A dialog presents a list of folders selected for deletion.
 
    ![Confirm delete](assets/contexthub-confirm-segment-delete.png)
 
-   * Tap or click **Delete** to confirm.
-   * Tap or click **Cancel** to abort.
+   * Click **Delete** to confirm.
+   * Click **Cancel** to abort.
 
 1. If any of the selected folders contains subfolders or segments, their deletion must be confirmed.
 
    ![Confirm deletion of children](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tap or click **Force Delete** to confirm.
-   * Tap or click **Cancel** to abort.
+   * Click **Force Delete** to confirm.
+   * Click **Cancel** to abort.
 
 >[!NOTE]
 >

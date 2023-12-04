@@ -22,7 +22,7 @@ The [Opt-in wizard](/help/sites-administering/opt-in.md) that [integrates AEM wi
 You can also configure Adobe Target to use Adobe Target as the reporting source when targeting content by configuring the A4T Analytics Cloud Configuration.
 
 To locate the cloud configuration and the framework, Navigate to **Cloud Services** via **Tools** &gt; **Deployment** &gt; **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-Below Adobe Target, click or tap **Show Configurations**.
+Below Adobe Target, click **Show Configurations**.
 
 ### Provisioned Target Configuration Properties {#provisioned-target-configuration-properties}
 
@@ -85,7 +85,7 @@ To do so, you specify which A4T cloud configuration to connect your Adobe Target
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to the [A4T Analytics Configuration Dialog](#a4t-analytics-config-dialog) (see below)
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Click **Save All**.
 
 #### A4T Analytics Configuration Dialog {#a4t-analytics-config-dialog}
 
@@ -149,7 +149,7 @@ Use the following procedure to create a Target cloud configuration in AEM:
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Click **Save All**.
 
 1. In the dialog, provide values for these properties.
 
@@ -239,8 +239,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-authoring/basic-handling.md), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Click **Edit**.
+1. Click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
    ![Add Configuration](assets/chlimage_1-165.png)
 
@@ -250,7 +250,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Click **Done**.
 1. Activate the root page of the website so you replicate it to the publish server. (See [How To Publish Pages](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]

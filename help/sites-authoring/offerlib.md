@@ -27,21 +27,21 @@ Create a brand with which your offers are associated. Open a brand in the Offers
 
 When you create a brand using the Offers console, it also appears in the [Activities console](/help/sites-authoring/activitylib.md) where you can add and administer activities for the brand.
 
-1. In the Navigation console, click or tap **Personalization** &gt; **Offers**.
+1. In the Navigation console, click **Personalization** &gt; **Offers**.
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Click or tap **Create** and then **Create** **Brand**.
-1. Select the brand template and click or tap **Next**.
+1. Click **Create** and then **Create** **Brand**.
+1. Select the brand template and click **Next**.
 1. Type a title for the brand as you want it to appear in the Offers and Activities consoles. Optionally, type or select one or more tags to associate with the brand.
-1. Click or tap **Create**.
+1. Click **Create**.
 
 ## Add a Folder to an Offer Library {#add-a-folder-to-an-offer-library}
 
 Add a folder to the offer library of a brand to organize and store offers. You can create a folder below the brand or below other folders.
 
 1. In the Offers console, open the location where you want to create the folder. For example, open the brand to create a top-level folder, or open another folder in the library.
-1. Click or tap **Create** &gt; **Create Folder or Offer**.
+1. Click **Create** &gt; **Create Folder or Offer**.
 
    ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
@@ -50,7 +50,7 @@ Add a folder to the offer library of a brand to organize and store offers. You c
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-1. Click or tap **Create**.
+1. Click **Create**.
 
 ## Add an Offer to an Offer Library {#add-an-offer-to-an-offer-library}
 
@@ -59,13 +59,13 @@ Add an offer to a brand's offer library so that it can be added to the brand's e
 After you create the offer you can open it to author the content.
 
 1. In the Offers console, open the location where you want to create the offer. For example, open the brand to create a top-level offer, or open a folder in the library.
-1. Click or tap **Create** &gt; **Create Folder or Offer**.
+1. Click **Create** &gt; **Create Folder or Offer**.
 
    ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Select the **Offer Page** template and then click or tap **Next**.
-1. Type a title for the offer and optionally select or type one or more tags to associate with the offer, then click or tap **Create**.
-1. In the confirmation dialog box, to open the offer for editing click or tap **Open Page**.
+1. Select the **Offer Page** template and then click **Next**.
+1. Type a title for the offer and optionally select or type one or more tags to associate with the offer, then click **Create**.
+1. In the confirmation dialog box, to open the offer for editing click **Open Page**.
 
 ## Editing an Offer {#editing-an-offer}
 
@@ -73,7 +73,7 @@ Open an offer and edit the content as you want it to appear in the experiences t
 
 You can open an offer from a folder in an offer library or from search results. You can also open an offer from an experience that uses the offer.
 
-1. In the Offers console, tap or click the icon next to the offer and click or tap **Edit**.
+1. In the Offers console, click the icon next to the offer and click **Edit**.
 1. Add components to the offer and edit the component content as usual.
 
 ## Deleting an Offer {#deleting-an-offer}
@@ -82,15 +82,15 @@ Delete an offer when it is no longer needed. When you attempt to delete an offer
 
 You can delete an offer while viewing either folder contents in an offer library or search results.
 
-1. In the Offers console, tap or click the icon next to the offer and click or tap **Delete**.
+1. In the Offers console, click the icon next to the offer and click **Delete**.
 
-   Select the offer and click or tap **Delete**.
+   Select the offer and click **Delete**.
 
-1. In the dialog box that appears, click or tap **Delete** to confirm the deletion.
+1. In the dialog box that appears, click **Delete** to confirm the deletion.
 1. If the offer is used in one or more experiences, a dialog box appears to indicate that the offer is referenced:
 
-    * To delete the offer and remove it from the experiences, click or tap **Force Delete**.
-    * To keep the offer, click or tap **Cancel**.
+    * To delete the offer and remove it from the experiences, click **Force Delete**.
+    * To keep the offer, click **Cancel**.
 
 ## Searching for Offers {#searching-for-offers}
 
@@ -102,5 +102,5 @@ The current search criteria appear next to the search results. You can also sort
 
 To search offers:
 
-1. At the top of the Offers console, click or tap the magnifying glass icon. By default the search is limited to offers.
+1. At the top of the Offers console, click the magnifying glass icon. By default the search is limited to offers.
 1. Enter your keyword to search for offers. Select from the results.

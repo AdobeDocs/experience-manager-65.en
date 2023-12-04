@@ -94,7 +94,7 @@ Before a deployment read the [General Description](#general-description) above.
 
 * Let Basic Auth Headers pass through:
 
-  * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere&reg; server, to do so: go to Security -&gt; Global Security and uncheck the Enable administrative security checkbox, save, and restart the server.
+  * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere&reg; server, to do so: go to Security > Global Security and uncheck the Enable administrative security checkbox, save, and restart the server.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * If you want to install AEM using context root = /, change the context root of the existing Default web application.

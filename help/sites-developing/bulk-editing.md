@@ -17,7 +17,7 @@ exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 
 Due to the possibility of different values, page properties are not enabled for bulk editing as default. They must be explicitily allowed (enabled). When defining the page properties to be available for bulk editing you need to consider certain implications, such as:
 
-* Certain fields are usually unique; for example, a page title. You must decide whether it is meaningful to enable such fields for bulk editing, when one value will be applied.
+* Certain fields are usually unique; for example, a page title. Decide whether it is meaningful to enable such fields for bulk editing, when one value will be applied.
 * Certain fields might have multiple values - this needs meaningful representation when rendering.
 
   For example, a check-box indicating "Ready for Publication". This might have several values before bulk-editing (for example, ready, in-review, in-progress).

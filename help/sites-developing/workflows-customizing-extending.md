@@ -1037,4 +1037,4 @@ The `_cq_dialog/.content.xml` sample used in this example:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  You must not modify anything in `/libs`, simply use them as examples. If you want to use any of the existing steps, copy them to `/apps` and modify them there.
+>  Do not edit anything in `/libs`, simply use them as examples. If you want to use any of the existing steps, copy them to `/apps` and edit them there.

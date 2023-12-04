@@ -500,7 +500,7 @@ The following example (to search according to the template used to create a page
 
 1. Open the **Search Forms** console and select the configuration you want to update. For example, **Sites Admin Search Rail**.
 
-   Then click/tap the **Edit search forms** icon.
+   Then click the **Edit search forms** icon.
 
 1. Depending on the configuration, add an **Options** or **Options Property** to the configuration.
 1. Update the fields, in particular:

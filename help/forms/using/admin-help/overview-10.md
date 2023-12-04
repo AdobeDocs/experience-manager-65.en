@@ -27,4 +27,4 @@ On the Workspace pages in administration console, you can perform the following 
 
 >[!NOTE]
 >
->You must use the navigation methods within administration console. Do not use the Back, Forward, or Refresh buttons in the web browser. Using these buttons can cause data capture and data display problems.
+>Use the navigation methods within administration console. Do not use the Back, Forward, or Refresh buttons in the web browser. Using these buttons can cause data capture and data display problems.

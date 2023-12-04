@@ -41,7 +41,7 @@ When using automated tests within AEM, the following terms are important to unde
 
 Open the Testing Console to see the registered Test Suites. The Tests panel contains a list of test suites and their test cases.
 
-Navigate to the Tools console via **Global Navigation -&gt; Tools &gt; Operations -&gt; Testing**.
+Navigate to the Tools console via **Global Navigation > Tools &gt; Operations > Testing**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -63,7 +63,7 @@ An "X" icon indicates a failed test:
 
 To run a Test Suite:
 
-1. In the Tests panel, click or tap the name of the Test Case that you want to run to expand the details of the Actions.
+1. In the Tests panel, click the name of the Test Case that you want to run to expand the details of the Actions.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -85,7 +85,7 @@ Test Suites execute sequentially in the order that they appear in the console. Y
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. On the Tests panel, tap or click either the **Run all tests** button or the **Run tests** button below the title of the Test Suite that you want to run.
+1. On the Tests panel, click either the **Run all tests** button or the **Run tests** button below the title of the Test Suite that you want to run.
 
    ![An image of the Run all tests button and the Run tests button, indicated by a right-facing pointer inside a circle.](do-not-localize/chlimage_1-5.png)
 

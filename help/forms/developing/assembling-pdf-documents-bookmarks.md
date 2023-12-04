@@ -146,7 +146,7 @@ To assemble a PDF that contains new bookmarks, you must reference a bookmark XML
 
 **Add the PDF document and the bookmark XML document to a Map collection**
 
-You must add both the PDF document to which bookmarks are added and the bookmark XML document to the Map collection. Therefore the Map collection object contains two elements: a PDF document and the bookmark XML document.
+Add both the PDF document to which bookmarks are added and the bookmark XML document to the Map collection. Therefore the Map collection object contains two elements: a PDF document and the bookmark XML document.
 
 **Set run-time options**
 
@@ -158,7 +158,7 @@ To assemble a PDF document that contains new bookmarks, use the Assembler servic
 
 **Save the PDF document that contains bookmarks**
 
-You must extract the results from the returned map object and save the corresponding PDF document. (See "Extract the results" in [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+Extract the results from the returned map object and save the corresponding PDF document. (See "Extract the results" in [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **See also**
 

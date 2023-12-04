@@ -295,7 +295,7 @@ It is recommened to use handler advance as it delivers better performance.
 
 You can define [workflow stages](/help/sites-developing/workflows.md#workflow-stages), then assign tasks/steps to a specific workflow stage.
 
-This information is used for displaying the progress of a workflow when you click on the [**Workflow Info** tab of a workitem from the **Inbox**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Existing workflow models can be edited to add stages.
+This information is used for displaying the progress of a workflow when you click the [**Workflow Info** tab of a workitem from the **Inbox**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Existing workflow models can be edited to add stages.
 
 ### Activate Page Process Step {#activate-page-process-step}
 
