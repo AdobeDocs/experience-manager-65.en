@@ -30,17 +30,17 @@ You can segregate item delegation based on the workflow models. For example, you
 
 Perform the following steps to Enable the Out of Office setting for your account and delegate your Inbox Items to another user:
 
-1. Log in to your AEM instance. Tap the ![Inbox](assets/bell.svg) icon and tap **[!UICONTROL View All]**. A list of your inbox items appear.
-1. Tap the ![View Selector](assets/viewlist.svg) or ![View Selector](assets/calendar.svg) icon next to the **[!UICONTROL Create]** button and tap **[!UICONTROL Settings]**. The settings dialog appears.
+1. Log in to your AEM instance. Select the ![Inbox](assets/bell.svg) icon and select **[!UICONTROL View All]**. A list of your inbox items appear.
+1. Select the ![View Selector](assets/viewlist.svg) or ![View Selector](assets/calendar.svg) icon next to the **[!UICONTROL Create]** button and select **[!UICONTROL Settings]**. The settings dialog appears.
 1. Open the **[!UICONTROL Out of Office]** tab on the settings dialog.
-1. Tap the **[!UICONTROL Enable/Disable]** button to enable the Out of Office setting.
+1. Select the **[!UICONTROL Enable/Disable]** button to enable the Out of Office setting.
 1. Specify the **[!UICONTROL Start Time]**  and **[!UICONTROL End Time]** for the setting. The items are delegated only during the specified period. Leave the **[!UICONTROL End Time]** field empty to delegate items for an indefinite time period.
 1. Select the **[!UICONTROL Forward my items during this period]** checkbox. If you do not select the option and not specify an assignee, your items are not forwarded to any user. Although you are away and the setting is enabled, the items remain in your Inbox.
-1. Tap **[!UICONTROL Add Assignee]**. Specify a user in the **[!UICONTROL Assignee]** field so you can delegate the items. Specify the **[!UICONTROL Workflow Model]** so you can delegate to the specified user. You can select more than one workflow model.
+1. Select **[!UICONTROL Add Assignee]**. Specify a user in the **[!UICONTROL Assignee]** field so you can delegate the items. Specify the **[!UICONTROL Workflow Model]** so you can delegate to the specified user. You can select more than one workflow model.
 
     In addition, to assign all the items, irrespective of the workflow model, to a particular user, select **[!UICONTROL All Workflows]** from the Workflow Model drop-down list. <br>
 
-    To assign items to a particular user for all workflow models except a few, select **[!UICONTROL All Workflows]** from the Workflow Model drop-down list, tap **[!UICONTROL + Add Exceptions]**, and specify the workflow models to be left out.
+    To assign items to a particular user for all workflow models except a few, select **[!UICONTROL All Workflows]** from the Workflow Model drop-down list, select **[!UICONTROL + Add Exceptions]**, and specify the workflow models to be left out.
     <br>
 
     Repeat the step so you can add more assignees. <br>
@@ -49,7 +49,7 @@ Perform the following steps to Enable the Out of Office setting for your account
     >
     >The order of the assignees is important. When an item is assigned to a user who have enabled the out-of-office setting, the item is evaluated against the specified assignees list in the order assignees are added. When an item matches the criteria, it is assigned to the assignee, and next assignee is not checked.
 
-1. Tap **[!UICONTROL Save]**. The setting takes effect at the specified start date and time. If you log in while you are out of the office, you are not considered in the office until you change your settings.
+1. Select **[!UICONTROL Save]**. The setting takes effect at the specified start date and time. If you log in while you are out of the office, you are not considered in the office until you change your settings.
 
 Now, items assigned to you during the Out of Office time period are automatically assigned to the specified assignee.
 ![Out-of-office](assets/out-of-office.png)

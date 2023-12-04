@@ -90,7 +90,7 @@ The sidebar comprises the following browsers:
 
   Lets you edit the properties of a component. Properties change according to a component. To see properties of the adaptive form container:
 
-  Select a component, then tap ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![cmppr](assets/cmppr.png).
+  Select a component, then select ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![cmppr](assets/cmppr.png).
 
 * **Assets browser**
 
@@ -275,16 +275,16 @@ The sidebar comprises the following browsers:
 
 Some best practices and key points to remember when working with adaptive form components are as follows:
 
-* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![cmppr](assets/cmppr.png) to open the component properties in the Properties browser.
-* A component is identified with its element name. When you tap ![cmppr](assets/cmppr.png), you can change the name of the component by changing the **[!UICONTROL Element Name]** field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
+* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, select the component and select ![cmppr](assets/cmppr.png) to open the component properties in the Properties browser.
+* A component is identified with its element name. When you select ![cmppr](assets/cmppr.png), you can change the name of the component by changing the **[!UICONTROL Element Name]** field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
 
 * You can modify the Title property of an adaptive form component inline in the form editor without opening the Properties browser as long as the title is visible on the form. To do so:
 
-    1. Tap to select a component that has a **[!UICONTROL Title]** property and whose **[!UICONTROL Hide title]** property is disabled.
+    1. Select to select a component that has a **[!UICONTROL Title]** property and whose **[!UICONTROL Hide title]** property is disabled.
 
-    1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) to make the title editable.
+    1. Select ![aem_6_3_edit](assets/aem_6_3_edit.png) to make the title editable.
 
-    1. Modify the title and tap the Return key or tap anywhere outside the component to save the changes. Tap the Esc key to discard the changes.
+    1. Modify the title and select the Return key or select anywhere outside the component to save the changes. Select the Esc key to discard the changes.
 
 * Some adaptive form components like Email and Telephone include out-of-the-box validation patterns. However, you can specify custom validation by updating the **[!UICONTROL Validation Pattern]** field under the Patterns accordion in the component properties. See component descriptions in the table above for more information about default validations.
 
@@ -298,7 +298,7 @@ Some best practices and key points to remember when working with adaptive form c
 * The File attachment component, by default, allows a user to attach only one file. However, you can configure the component properties to support multiple attachments. In addition, if a user attaches multiple files with the same filename, the attachments can cause some issues. Therefore, it is recommended to associate a unique identifier for each submitted attachment at form submission. To do so:
 
     1. On your AEM Forms server, navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
-    1. Find and tap **[!UICONTROL Adaptive Forms Configuration Service]**.
+    1. Find and select **[!UICONTROL Adaptive Forms Configuration Service]**.
     1. In the Adaptive Forms Configuration Service dialog, enable **[!UICONTROL Make File Names Unique]**. By default, it is disabled.
 
 * To enable users to attach a PDF using Safari browser, ensure that **application/pdf** is added to the Supported File Types property of the File attachment component. Adaptive forms created with previous AEM Forms version may contain **.pdf** instead of **application/pdf** in the Supported File Types property.
@@ -339,7 +339,7 @@ The page toolbar on the top provides options that let you preview the form, chan
 
 When you select a component, you see a toolbar that lets you work it. You get options to cut, paste, move, and specify properties of the components. Your options are:
 
-A.**Configure**: When you tap **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for adaptive form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
+A.**Configure**: When you select **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for adaptive form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
 
 B.**Copy**: You can use the copy option to copy a component and paste it in other places in the form. When you paste a component, the pasted component gets a new element name but retains the properties of the copied component.
 
@@ -357,7 +357,7 @@ H. **Group**: Lets you select multiple components if you want to cut, copy, or p
 
 I. **Parent**: Lets you select the parent of a component. For example, a text field lies within a sub-section, which resides in a section. The section resides in the guide root panel, and the adaptive form container is the parent of a guide root panel. For a component, you can see all the options with the hierarchy sorted bottoms-up.
 
-For example, if you tap **[!UICONTROL Parent]** for a text box, you can see:
+For example, if you select **[!UICONTROL Parent]** for a text box, you can see:
 
 * Sub-section
 * Section

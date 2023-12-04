@@ -20,9 +20,9 @@ To sync your form in AEM Forms app:
 
 1. In author instance, select a form, and click **View Properties**.
 1. In the properties page, click **Advanced.**
-1. Under Advanced, enable option: **Sync with AEM Forms App**, and tap **Save**.
+1. Under Advanced, enable option: **Sync with AEM Forms App**, and select **Save**.
 
-To sync multiple forms, in the author instance, select multiple forms in forms manager and tap **Sync with AEM Forms App**. When the form is published, the AEM Forms app can connect to the publish server and fetch the forms.
+To sync multiple forms, in the author instance, select multiple forms in forms manager and select **Sync with AEM Forms App**. When the form is published, the AEM Forms app can connect to the publish server and fetch the forms.
 
 If your AFA (AEM Form Application) Android app fails to sync, perform the following steps to fix the sync issue:
 
@@ -45,5 +45,5 @@ If your AFA (AEM Form Application) Android app fails to sync, perform the follow
 
 **To open and update a form**
 
-1. To open a form, tap the **[!UICONTROL Form]** in the home screen.
+1. To open a form, select the **[!UICONTROL Form]** in the home screen.
 1. You can update the fields of the form, add attachments, save as draft, and submit it.

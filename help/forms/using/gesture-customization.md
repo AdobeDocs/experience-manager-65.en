@@ -43,13 +43,13 @@ In the AEM Forms app, the left swipe opens up a new task or Startpoint while rig
 
 1. Find
 
-    * "tap .taskContentArea" : "onTaskClick",
+    * "select .taskContentArea" : "onTaskClick",
 
-      "tap .taskOpenArea" : "onTaskClick",
+      "select .taskOpenArea" : "onTaskClick",
 
-      "tap .task-content" : "onTaskClick",
+      "select .task-content" : "onTaskClick",
 
-      "tap .last_empty_div" : "onTaskClick",
+      "select .last_empty_div" : "onTaskClick",
 
    and replace with
 

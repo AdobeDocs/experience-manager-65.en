@@ -98,5 +98,5 @@ Click the **Brushes** icon to display a list of available pen sizes. Click a pen
 
 To delete the signatures from the form:
 
-* (Mobile devices) Long press the signature field, and on the confirmation dialog, tap **Yes**.
+* (Mobile devices) Long press the signature field, and on the confirmation dialog, select **Yes**.
 * (Desktop) Hover over the signature field, click the **Cancel** icon, and on the confirmation dialog, click **Yes**.

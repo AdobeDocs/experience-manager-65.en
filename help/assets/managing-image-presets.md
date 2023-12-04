@@ -75,11 +75,11 @@ Adobe Illustrator's file format is a variant of PDF. The main differences, in th
 * Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG subasset under the main Illustrator asset.
 * PDF documents consist of one or more pages. Each page is extracted as a single page PDF subasset under the main multi-page PDF document.
 
-The subassets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+The subassets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, select **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
 
 See also [Viewing pages of a multi-page file](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-You can view the subassets or the pages when you open the asset, tap the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The subassets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on, below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
+You can view the subassets or the pages when you open the asset, select the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The subassets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on, below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
 
 To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or PDF files, the following processing steps are required:
 
@@ -100,7 +100,7 @@ To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or P
 
 You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar tap **[!UICONTROL Edit]**. On the [!UICONTROL DAM Update Asset] workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
+In the upper-left corner, select Adobe Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar select **[!UICONTROL Edit]**. On the [!UICONTROL DAM Update Asset] workflow page, double-select the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -142,7 +142,7 @@ Using the default process arguments, the first page of a PDF/AI document is rast
 
 Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java™ Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
 
 ### InDesign (INDD) file format {#indesign-indd-file-format}
 
@@ -202,18 +202,18 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 **To configure image thumbnail size:**
 
-1. Tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
-1. Tap the **[!UICONTROL Dynamic Media Process Image Assets]** step and click the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
+1. Select **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Dynamic Media Process Image Assets]** step and click the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tap the **[!UICONTROL Process Thumbnails]** step, then tap the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
+1. Select the **[!UICONTROL Process Thumbnails]** step, then select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
    >The values in the thumbnails argument in the **[!UICONTROL Process Thumbnails]** step must match the thumbnails argument in the **[!UICONTROL Dynamic Media Process Image Assets]** step.
 
-1. Tap **[!UICONTROL Save]** to save the changes to the workflow.
+1. Select **[!UICONTROL Save]** to save the changes to the workflow.
 
 ### Increasing or decreasing the number of Dynamic Media image presets that display {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -232,7 +232,7 @@ Image presets you create are available as dynamic renditions when you preview as
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. In the limit property, change the number to the desired number, for example, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tap **[!UICONTROL Save All]**.
+1. Select **[!UICONTROL Save All]**.
 
 ## Creating a Dynamic Media image preset {#creating-image-presets}
 
@@ -254,7 +254,7 @@ See [InDesign (INDD) file format](#indesign-indd-file-format).
 
 **To create a Dynamic Media image preset:**
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then select **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Click **[!UICONTROL Create]**. The **[!UICONTROL Edit Image Preset]** window opens.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -389,7 +389,7 @@ When you create or edit image presets, you have the options described in this se
     <ul>
      <li>Select <strong>None</strong> if you want to disable sharpening.</li>
      <li>Select <strong>Sharpen</strong> if you want to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </li>
-     <li>Select<strong> Unsharp mask</strong> if you want to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Photoshop’s "Unsharp Mask" filter.</li>
+     <li>Select<strong> Unsharp mask</strong> if you want to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Photoshop's "Unsharp Mask" filter.</li>
     </ul> <p>In <strong>Unsharp Mask</strong>, you have the following options:</p>
     <ul>
      <li><strong>Amount</strong> - Controls the amount of contrast applied to edge pixels. The default real number value is 1.0. For high-resolution images, you can increase it to as high as 5.0. Think of Amount as a measure of filter intensity.</li>
@@ -486,7 +486,7 @@ The following are some basic examples of what you can do with image modifiers.
 
 ## Editing Image Presets {#modifying-image-presets}
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then select **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -510,5 +510,5 @@ If you are running Dynamic Media - Hybrid mode, you must manually publish image 
 ## Deleting Dynamic Media image presets {#deleting-image-presets}
 
 1. In Experience Manager, click the Experience Manager logo to access the global navigation console.
-1. Tap the **[!UICONTROL Tools]** icon, then navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
-1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.
+1. Select the **[!UICONTROL Tools]** icon, then navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Select **[!UICONTROL Delete]** to delete or select **[!UICONTROL Cancel]** to abort.

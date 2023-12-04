@@ -359,11 +359,11 @@ Copy the Unicode font to any of the following directories as appropriate for you
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms Document Services and other AEM Forms capabilities. Perform the following steps to install the package:
 
 1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
-1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Select **[!UICONTROL Adobe Experience Manager]** available in the header menu.
 1. In the **[!UICONTROL Filters]** section:
    1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
    2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
-1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Select the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and select **[!UICONTROL Download]**.
 1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
@@ -485,7 +485,7 @@ Using the Trust Store Management, you can import, edit, and delete certificates 
 
 1. Log in to AEM Forms instance as an administrator.  
 1. Go to  **[!UICONTROL Tools]** >  **[!UICONTROL Security]** >  **[!UICONTROL Trust Store]**.
-1. Click  **[!UICONTROL Create TrustStore]**. Set password and tap **[!UICONTROL Save]**.
+1. Click  **[!UICONTROL Create TrustStore]**. Set password and select **[!UICONTROL Save]**.
 
 ### Set up certificates for Reader extension and encryption service {#set-up-certificates-for-reader-extension-and-encryption-service}
 

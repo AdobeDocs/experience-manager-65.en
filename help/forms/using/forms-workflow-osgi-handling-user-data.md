@@ -133,7 +133,7 @@ You must be an AEM administrator to delete user data from workflow instances by 
 
     1. Go to `https://'[server]:[port]'/aem/start.html` and log in with administrator credentials.
     1. Navigate to **[!UICONTROL Tools > Workflow> Instances]**.
-    1. Select relevant workflow instances for the user and tap **[!UICONTROL Terminate]** to terminate running instances.
+    1. Select relevant workflow instances for the user and select **[!UICONTROL Terminate]** to terminate running instances.
 
        For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
 

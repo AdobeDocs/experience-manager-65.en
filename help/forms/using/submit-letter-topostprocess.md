@@ -111,10 +111,10 @@ Saved letter instances can be manipulated further, such as retrieval of letter i
 
 In the CCR user interface, complete the following steps to associate a post process with a letter:
 
-1. Hover over a letter and tap **View Properties**.
+1. Hover over a letter and select **View Properties**.
 1. Select **Edit**.
 1. In the Basic Properties, using the Post Process drop-down, select the post process to associate with the letter. Both the AEM and Forms-related post processes are listed in the drop-down.
-1. Tap **Save**.
+1. Select **Save**.
 1. After configuring the letter with the Post Process, publish the letter and optionally on the publish instance, specify the processing URL in AEM DS Settings service. This ensures that the post process is run on the processing instance.
 
 ## Reload a draft letter instance&nbsp; {#reloaddraft}

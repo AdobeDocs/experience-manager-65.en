@@ -106,7 +106,7 @@ How to select a page depends on which view you are using in the console:
 
     * Enter selection mode by [selecting the required resource](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) with:
 
-        * Mobile device: tap-and-hold
+        * Mobile device: select-and-hold
         * Desktop: the [quick action](/help/sites-authoring/basic-handling.md#quick-actions) - tick icon:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
@@ -153,7 +153,7 @@ How to select a page depends on which view you are using in the console:
     * [Edit the content of an existing component](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) on the page:
 
         * Open the component toolbar with either click. Use the **Edit** (pencil) icon to open the dialog.
-        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
+        * Open the in place editor for the component with either select-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
         * To see all actions available enter full-screen mode using:
 
       ![Full screen mode](do-not-localize/screen_shot_2018-03-21at160706.png)

@@ -43,7 +43,7 @@ You can insert inline condition in a letter by inserting the inline condition in
 >
 >If your existing assets include old condition/repeat expressions (pre 6.2 SP1 CFP 4), the assets display old syntax of condition and repeat. However, the old condition/repeat works. The new and old condition/repeat expressions are compatible with each other to create a nested mix of old and new condition/repeat expressions.
 
-1. In the relevant text module, select the part of text that you want to conditionalize and tap **Condition**.
+1. In the relevant text module, select the part of text that you want to conditionalize and select **Condition**.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -55,9 +55,9 @@ You can insert inline condition in a letter by inserting the inline condition in
    >
    >Empty or invalid conditional expression cannot be saved. There has to be a valid conditional expression inside `${}` to save the expression.
 
-1. Do the following to construct a condition for evaluating whether the selected/conditionalized text appears in the letter and then tap the check mark to save the expression:
+1. Do the following to construct a condition for evaluating whether the selected/conditionalized text appears in the letter and then select the check mark to save the expression:
 
-   Double-tap a DD element to insert it in the condition. Insert the appropriate operator and construct the following condition in dialog.
+   Double-select a DD element to insert it in the condition. Insert the appropriate operator and construct the following condition in dialog.
 
    ```javascript
    ${DD_creditcard_Gender=="Male"}
@@ -66,7 +66,7 @@ You can insert inline condition in a letter by inserting the inline condition in
 
    For more information on creating the expression, see **Creating expressions and remote functions with expression builder** in [Expression Builder](../../forms/using/expression-builder.md). The value specified in the expression must be supported for the element in the data dictionary. For more information, see [Data Dictionary](../../forms/using/data-dictionary.md).
 
-   Once the condition is inserted, you can hover over the handle on the left of the condition to view the condition. You can tap the handle to view the pop-up menu of the condition, which lets you edit or remove the condition.
+   Once the condition is inserted, you can hover over the handle on the left of the condition to view the condition. You can select the handle to view the pop-up menu of the condition, which lets you edit or remove the condition.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
@@ -107,13 +107,13 @@ The following example gives you the steps for using repeat to structure and rend
 
    ![2_selection](assets/2_selection.png)
 
-1. Tap Repeat.
+1. Select Repeat.
 
    The Repeat dialog appears.
 
    ![3_repeatdialog](assets/3_repeatdialog.png)
 
-1. Select Line Break as separator and, if necessary, tap Add Condition to create a rule. You can also use text as separator and specify the text charaters to be used as separator.
+1. Select Line Break as separator and, if necessary, select Add Condition to create a rule. You can also use text as separator and specify the text charaters to be used as separator.
 
    The Create Rule dialog appears.
 
@@ -170,7 +170,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Tap **Repeat**. The Repeat dialog appears with an empty inline condition.
+1. Select **Repeat**. The Repeat dialog appears with an empty inline condition.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
@@ -182,7 +182,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    Otherwise, if you do not need to render the information (here transactions) selectively, keep the condition empty by deleting the following in the dialog: `${}`. Saving a repeat expression gets enabled either when the repeat expression window is empty (without ${} when no repeat is needed) or when it contains a valid condition for repeat.
 
-1. Select a separator for formatting the dynamic text and tap the check mark to save:
+1. Select a separator for formatting the dynamic text and select the check mark to save:
 
     * **Line Break**: Inserts line break after each transaction entry in the output letter.
     * **Text**: Inserts the specified text character after each transaction entry in the output letter.
@@ -191,7 +191,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   You can tap the handle to view the pop-up menu of the repeat, which lets you edit or remove the repeat construct.
+   You can select the handle to view the pop-up menu of the repeat, which lets you edit or remove the repeat construct.
 
    ![5_repeateditremove](assets/5_repeateditremove.png)
 

@@ -132,8 +132,8 @@ The Admin Control option is visible only to the members of the `administrators` 
 
 * **Column Customization**: Customize an AEM Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow.
   * **Add Column**: Select a column to add in AEM Inbox.
-  * **Edit Column**: Hover the mouse over the column title and tap ![edit](assets/edit.svg) icon to enter a column display name.
-  * **Delete Column**: Tap the ![delete](assets/delete_updated.svg) icon to delete the column from AEM Inbox.
+  * **Edit Column**: Hover the mouse over the column title and select ![edit](assets/edit.svg) icon to enter a column display name.
+  * **Delete Column**: Select the ![delete](assets/delete_updated.svg) icon to delete the column from AEM Inbox.
   * **Move Column**: Drag the ![move](assets/move_updated.svg) icon to move a column to a new position in AEM Inbox.
 
   ![admin-control](assets/admin-control-column-customize.png)

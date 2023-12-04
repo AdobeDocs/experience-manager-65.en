@@ -54,7 +54,7 @@ To embed an adaptive form or Interactive Communication using AEM Forms for SPA C
 1. Open the AEM sites page, in edit mode, in which you want to embed an adaptive form or Interactive Communication.
 1. Insert the **AEM Form for SPA** component on the page using any of the following options:
 
-    * Tap the layout container on the Sites page, tap **+** and select the **AEM Form for SPA** component.
+    * Select the layout container on the Sites page, select **+** and select the **AEM Form for SPA** component.
     
     * From the Component browser panel, drag-drop the **AEM Form for SPA** component on the page.
     * Search for an adaptive form or Interactive Communication in the Assets browser and drag-drop it onto the Sites page. It embeds the form in an AEM Forms for SPA component container.
@@ -63,7 +63,7 @@ To embed an adaptive form or Interactive Communication using AEM Forms for SPA C
    >
    >Rendering multiple AEM Forms SPA Container components on a page are not supported. You can have multiple AEM Forms SPA Container on a page but only one component is rendered at a time. Ensure that only one component is visible on a page to avoid discrepancies.
 
-1. Tap the embedded AEM Forms SPA Container component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **Edit AEM Forms SPA Container** dialog opens.
+1. Select the embedded AEM Forms SPA Container component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **Edit AEM Forms SPA Container** dialog opens.
 1. In the **Edit AEM Forms Container** dialog, specify the following:
 
     * **Asset Type:** Select the type of asset to embed. The options are **Adaptive Form** and **Interactive Communication** 
@@ -73,7 +73,7 @@ To embed an adaptive form or Interactive Communication using AEM Forms for SPA C
     
     * **Theme**: Select a theme that defines styling for components of your adaptive form or Interactive Communication. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
 
-1. Tap ![done_icon](assets/done_icon.png) to save the settings. The adaptive form or Interactive Communication is now embedded in the page.
+1. Select ![done_icon](assets/done_icon.png) to save the settings. The adaptive form or Interactive Communication is now embedded in the page.
 
 ## Publish embedded adaptive form and Interactive Communication {#publish-embedded-adaptive-form-and-interactive-communication}
 
@@ -90,7 +90,7 @@ AEM sites page maintains a reference to the adaptive form and Interactive Commun
 To modify any configuration or property of the embedded adaptive form and Interactive Communication, do one of the following.
 
 * Open the original form in adaptive forms or Interactive Communication in respective editors and modify them.
-* Tap the adaptive form or Interactive Communication from within the Sites page in edit mode and then tap **Edit in a new window**. The original form opens in edit mode.
+* Select the adaptive form or Interactive Communication from within the Sites page in edit mode and then select **Edit in a new window**. The original form opens in edit mode.
 
 ## Considerations and best practices {#considerations-and-best-practices}
 

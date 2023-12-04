@@ -37,7 +37,7 @@ The Send email action enables an author to send email automatically to one or mo
 
 1. Open an adaptive form in **[!UICONTROL edit]** mode.
 
-1. In the **[!UICONTROL Content]** tab, tap **[!UICONTROL Form Container]** and tap ![configure](assets/configure-icon.svg) to view the adaptive form properties.  
+1. In the **[!UICONTROL Content]** tab, select **[!UICONTROL Form Container]** and select ![configure](assets/configure-icon.svg) to view the adaptive form properties.  
 
 1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Send email]** from the **[!UICONTROL Submit Action]** drop-down list.  
 

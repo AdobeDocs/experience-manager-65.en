@@ -62,7 +62,7 @@ Omitting the head simplifies the CMS by removing complexity. Doing this also shi
 
 ## Decoupling {#decoupling}
 
-Headless delivery is possible by exposing a set of robust and flexible application programming interfaces (APIs) that all of your experiences can tap into. The API serves as a common language between the services, binding them together at the content level through standardized content delivery, but allowing them the flexibility to implement their own solutions.
+Headless delivery is possible by exposing a set of robust and flexible application programming interfaces (APIs) that all of your experiences can select into. The API serves as a common language between the services, binding them together at the content level through standardized content delivery, but allowing them the flexibility to implement their own solutions.
 
 Headless is an example of decoupling your content from its presentation. Or in a more generic sense, decoupling the front end from the back end of your service stack. In a headless setup, the presentation system (the head) is decoupled from the content management (the tail). The two only interact through API calls.
 

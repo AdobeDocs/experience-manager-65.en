@@ -25,7 +25,7 @@ The following are the prerequisites for creating an Interactive Communication:
 ## Create Interactive Communication {#createic}
 
 1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears.
+1. Select **[!UICONTROL Create]** and select **[!UICONTROL Interactive Communication]**. Create Interactive Communication page appears.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
 
@@ -45,7 +45,7 @@ The following are the prerequisites for creating an Interactive Communication:
     * **[!UICONTROL Publish Date:]** Enter the date to publish the Interactive Communication.
     * **[!UICONTROL Unpublish Date]**: Enter the date to unpublish the Interactive Communication.
 
-1. Tap **[!UICONTROL Next]**. The screen to specify print and web channel details appears.
+1. Select **[!UICONTROL Next]**. The screen to specify print and web channel details appears.
 1. Enter the following:
 
     * **[!UICONTROL Print]**: Select this option to generate the print channel of the Interactive Communication.
@@ -54,7 +54,7 @@ The following are the prerequisites for creating an Interactive Communication:
     * **[!UICONTROL Interactive Communication Web Template]**: Browse and select the web template.
     * **[!UICONTROL Theme]** and **[!UICONTROL Select Theme]**: Browse and select the theme to style the web channel of the Interactive Communication. For more information, see [Themes in AEM Forms](/help/forms/using/themes.md).
 
-    * **[!UICONTROL Use Print As Master for Web Channel]**: Select this option to create the web channel in sync with the print channel. Using print channel as master for web channel ensures the content and data binding of the web channel is derived from the print channel and the changes made in the print channel are reflected in the web channel when you tap Synchronize. The authors are, however, allowed to break the inheritance for specific components in the web channel, as required. For more information, see [Synchronize Web channel with Print channel](../../forms/using/create-interactive-communication.md#synchronize).
+    * **[!UICONTROL Use Print As Master for Web Channel]**: Select this option to create the web channel in sync with the print channel. Using print channel as master for web channel ensures the content and data binding of the web channel is derived from the print channel and the changes made in the print channel are reflected in the web channel when you select Synchronize. The authors are, however, allowed to break the inheritance for specific components in the web channel, as required. For more information, see [Synchronize Web channel with Print channel](../../forms/using/create-interactive-communication.md#synchronize).
       If you select the **[!UICONTROL Use Print As Master for Web Channel]** option, you can select any of the following modes to generate Web channel:
 
         * **[!UICONTROL Auto layout]**: Select this mode to automatically generate placeholders, content, and data binding for Web channel from Print channel.
@@ -62,7 +62,7 @@ The following are the prerequisites for creating an Interactive Communication:
 
    For more information on print channel and web channel, see [Print channel and web channel](/help/forms/using/web-channel-print-channel.md).
 
-1. Tap **[!UICONTROL Create]**. The Interactive Communication is created and an alert box appears. Tap **[!UICONTROL Edit]** to start building the contents of the Interactive Communication as explained in [Add contents using Interactive Communication authoring user interface](#step2). Alternatively, you can tap **[!UICONTROL Done]** and choose to edit the Interactive Communication later.
+1. Select **[!UICONTROL Create]**. The Interactive Communication is created and an alert box appears. Select **[!UICONTROL Edit]** to start building the contents of the Interactive Communication as explained in [Add contents using Interactive Communication authoring user interface](#step2). Alternatively, you can select **[!UICONTROL Done]** and choose to edit the Interactive Communication later.
 
 ## Add content to the Interactive Communication {#step2}
 
@@ -70,7 +70,7 @@ After you have created an Interactive Communication, you can use the Interactive
 
 For more information on the Interactive Communication authoring interface, see [Introduction to Interactive Communication authoring](/help/forms/using/introduction-interactive-communication-authoring.md).
 
-1. The Interactive Communication authoring interface is launched when you Tap Edit as mentioned in [Create Interactive Communication](#createic). Alternatively, you can navigate to an existing Interactive Communication asset on AEM, select it, and tap **[!UICONTROL Edit]** to launch the Interactive Communication authoring interface.
+1. The Interactive Communication authoring interface is launched when you Select Edit as mentioned in [Create Interactive Communication](#createic). Alternatively, you can navigate to an existing Interactive Communication asset on AEM, select it, and select **[!UICONTROL Edit]** to launch the Interactive Communication authoring interface.
 
    By default, the print channel of the Interactive Communication appears, unless the Interactive Communication is web-channel-only. The Print channel of the Interactive Communication displays target areas, as available in the selected XDP/print channel template. In these target areas and fields, you can add components or assets.
 
@@ -135,9 +135,9 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![Unbound variable](assets/df_unbound_variable_new.png)
 
-   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties.
+   Select the document fragment, select ![configure_icon](assets/configure_icon.png) (Configure), and then select **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties.
 
-1. To set up binding of variables, tap a variable and select ![configure_icon](assets/configure_icon.png) (Configure) and then set up the binding properties in the Properties panel in the sidebar.
+1. To set up binding of variables, select a variable and select ![configure_icon](assets/configure_icon.png) (Configure) and then set up the binding properties in the Properties panel in the sidebar.
 
     * **None**: Agent will fill in the value for the variable.
     * **Text Fragment**: If selected, you can browse and select a text document fragment whose content is rendered in the field. Only those text document fragments can be bound to variables that have no variables within.
@@ -177,9 +177,9 @@ For more information on the Interactive Communication authoring interface, see [
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Tap the document fragment, tap ![configure_icon](assets/configure_icon.png) (Configure), and then tap **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](#synchronize) in Web channel using Print channel, use the ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](#cancelinheritance) and to be able to edit them.
+   Select the document fragment, select ![configure_icon](assets/configure_icon.png) (Configure), and then select **[!UICONTROL Properties]** from the sidekick of the Interactive Communication. The **[!UICONTROL Variables and Data Model Objects]** section lists the variables, including the hidden variables, and data model objects used in the document fragments. Use the ![edit](assets/edit.svg) (Edit) icon next to each data model object or variable to edit the properties. In addition, for document fragments that have been [auto-generated](#synchronize) in Web channel using Print channel, use the ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) icon next to each data model object and variable to [cancel inheritance](#cancelinheritance) and to be able to edit them.
 
-1. To add additional components in the Web channel, with the Web channel selected, tap **[!UICONTROL Components]**. Drag-and-drop components in the web channel of your Interactive Communication as required and proceed to configure them.
+1. To add additional components in the Web channel, with the Web channel selected, select **[!UICONTROL Components]**. Drag-and-drop components in the web channel of your Interactive Communication as required and proceed to configure them.
 
    | Components |Functionality |
    |---|---|
@@ -201,7 +201,7 @@ For more information on the Interactive Communication authoring interface, see [
 
 You can use the **Preview option** to evaluate appearance of the Interactive Communication. The web channel of Interactive Communication also provides an option to Emulate experience of an Interactive Communication for various devices. For example, iPhone, iPad, and Desktop. You can use both **Preview** and **Emulator** ![ruler](assets/ruler.png) options in conjunction with each other to preview the web outputs for devices of different screen sizes. The sample data in the preview is populated from the specified forms data model.
 
-1. Select the (print or web) channel to preview and tap preview. The Interactive Communication appears.
+1. Select the (print or web) channel to preview and select preview. The Interactive Communication appears.
 
    >[!NOTE]
    >
@@ -219,7 +219,7 @@ Further, you can [Prepare and send Interactive Communication using the Agent UI]
 
 In the Print channel, you can configure the attachments and library access to allow the Agent manage attachments in the Agent UI for the Interactive Communication:
 
-1. In the Print channel, highlight the Document Container and tap **Properties**.
+1. In the Print channel, highlight the Document Container and select **Properties**.
 
    ![documentcontainerproperties](assets/documentcontainerproperties.png)
 
@@ -232,14 +232,14 @@ In the Print channel, you can configure the attachments and library access to al
     * **[!UICONTROL Allow Library Access]**: Select to enable library access for the agent in the Agent UI. If enabled, the Agent can add files from the library while preparing the Interactive Communication.
     * **[!UICONTROL Allow Re-Ordering Of Attachments]**: Select to enable the Agent to re-order the attachments with the Interactive Communication.
     * **[!UICONTROL Max Number Of Attachments Allowed]**: Specify the maximum number of attachments allowed with the Interactive Communication.
-    * **[!UICONTROL Files To Be Attached]**: Tap **[!UICONTROL Add]** and browse to select files to be attached and specify the following:
+    * **[!UICONTROL Files To Be Attached]**: Select **[!UICONTROL Add]** and browse to select files to be attached and specify the following:
 
         * **[!UICONTROL Attach This File To Document By Default]**: You can change this option if only the attachment is not Mandatory.
         * **[!UICONTROL Mandatory:]** Agent will not be able to remove the attachment in the Agent UI.
 
    ![attachfiles](assets/attachfiles.png)
 
-1. Tap **[!UICONTROL Done]**.
+1. Select **[!UICONTROL Done]**.
 
 ### XDP/Layout field properties {#xdplayoutfieldproperties}
 
@@ -268,13 +268,13 @@ In the Print channel, you can configure the attachments and library access to al
     * **[!UICONTROL Required]**: Select to make the field mandatory for the Agent. This setting is not applicable if Binding Type is Text Fragment.
     * **[!UICONTROL Allow multiple lines]**: Select this field to allow multiple lines of text as entry in the field. This setting is not applicable if Binding Type is Text Fragment.
 
-1. Tap ![done_icon](assets/done_icon.png).
+1. Select ![done_icon](assets/done_icon.png).
 
 ### Data display patterns {#datadisplaypatterns}
 
 The authoring interface enables you to define data display patterns for fields, variables, and form data model elements available while creating an Interactive Communication for print and web channels.
 
-To configure the data display pattern, tap the element, select ![configure_icon](assets/configure_icon.png) (Configure) and set up the display pattern in the **[!UICONTROL Properties]** panel in the sidebar. Select any pre-defined option from the **[!UICONTROL Type]** drop-down list to view the pattern associated with the selected type. Select **[!UICONTROL Custom]** from the **[!UICONTROL Type]** drop-down list to define a pattern that is not available in the list. Editing values in the **[!UICONTROL Pattern]** field automatically modifies the type to **[!UICONTROL Custom]**.
+To configure the data display pattern, select the element, select ![configure_icon](assets/configure_icon.png) (Configure) and set up the display pattern in the **[!UICONTROL Properties]** panel in the sidebar. Select any pre-defined option from the **[!UICONTROL Type]** drop-down list to view the pattern associated with the selected type. Select **[!UICONTROL Custom]** from the **[!UICONTROL Type]** drop-down list to define a pattern that is not available in the list. Editing values in the **[!UICONTROL Pattern]** field automatically modifies the type to **[!UICONTROL Custom]**.
 
 To apply the display pattern, the number of characters or digits defined in the Pattern field must match or exceed the characters or digits defined in the value for fields, variables, and form data model elements. For more information, see [example](../../forms/using/create-interactive-communication.md#greaternumberofdigits).
 
@@ -302,7 +302,7 @@ In addition, if the display pattern that is specified is incorrect or cannot be 
 
 ## Apply rules to Interactive Communication components {#rules}
 
-To conditionalize components or content in the interactive communcation, tap the component/piece of content and select ![createruleicon](assets/createruleicon.png) (Create Rule) to launch Rule Editor.
+To conditionalize components or content in the interactive communcation, select the component/piece of content and select ![createruleicon](assets/createruleicon.png) (Create Rule) to launch Rule Editor.
 
 For more information, see:
 
@@ -326,7 +326,7 @@ You can add dynamic tables in Interactive Communication using layout fragments. 
 
 1. Specify data binding for each of the cells of the table. To create a repeatable row, insert form data model properties in the row belonging to a common collection property.
 
-    1. Tap a cell in the table and select ![configure_icon](assets/configure_icon.png) (Configure).
+    1. Select a cell in the table and select ![configure_icon](assets/configure_icon.png) (Configure).
 
        The Properties dialog appears in the sidebar.
 
@@ -346,7 +346,7 @@ You can add dynamic tables in Interactive Communication using layout fragments. 
 
         * **[!UICONTROL Editable By Agent]**: Select to allow the agent to edit the value in the field in the Agent UI.
 
-    1. Tap ![done_icon](assets/done_icon.png).
+    1. Select ![done_icon](assets/done_icon.png).
 
 1. Preview the Interactive Communication to see the table rendered with the data.
 
@@ -354,20 +354,20 @@ You can add dynamic tables in Interactive Communication using layout fragments. 
 
 ### Web-channel only tables {#webchanneltables}
 
-Tap the root panel in the Web template and tap **+** to add a **Table** component to the Interactive Communication. A table including two rows is inserted in the Interactive Communication. The first row of the table represents the Table header.
+Select the root panel in the Web template and select **+** to add a **Table** component to the Interactive Communication. A table including two rows is inserted in the Interactive Communication. The first row of the table represents the Table header.
 
 #### Add rows and columns to the table {#addrowscolumnstable}
 
 **To add or delete columns:**
 
-1. Tap the default text box in the table header row to view the component toolbar.
+1. Select the default text box in the table header row to view the component toolbar.
 1. Select **Add Column** or **Delete Column** to add or delete table columns respectively.
 
 ![component_toolbar_table1](assets/component_toolbar_table1.png)
 
 **To add or delete rows:**
 
-1. Tap any of the table rows to view the component toolbar. You can also select table row using the Content browser in the sidekick of the Interactive Communication.
+1. Select any of the table rows to view the component toolbar. You can also select table row using the Content browser in the sidekick of the Interactive Communication.
 1. Select **Add Row** or **Delete Row** to add or delete table rows respectively. Use the **Move Up** and **Move Down** options available in the toolbar to rearrange rows in the table.
 
 ![Component Toolbar](assets/component_toolbar_table_row_new.png)
@@ -376,23 +376,23 @@ Tap the root panel in the Web template and tap **+** to add a **Table** componen
 
 #### Add or edit text in table cells {#addedittexttable}
 
-1. Select the default text box in the table cell and tap ![edit](assets/edit.png) (Edit).
-1. Type the text in the table cell and tap ![done_icon](assets/done_icon.png) to save it.
+1. Select the default text box in the table cell and select ![edit](assets/edit.png) (Edit).
+1. Type the text in the table cell and select ![done_icon](assets/done_icon.png) to save it.
 
 #### Create binding between table cells and data model object elements {#createbindingtablecells}
 
-1. Select the default text box in the table row and tap ![edit](assets/edit.png) (Edit).
-1. Tap the Data Model objects drop-down list and select the property.
-1. Tap to save and create a binding between the table cell and the data model object property.
+1. Select the default text box in the table row and select ![edit](assets/edit.png) (Edit).
+1. Select the Data Model objects drop-down list and select the property.
+1. Select to save and create a binding between the table cell and the data model object property.
 
 ![Create data binding](assets/create_data_binding_table_new.png)
 
 #### Create a hyperlink for text in the table cell {#createhyperlinktable}
 
-1. Select the default text box in the table cell and tap ![edit](assets/edit.svg) (Edit).
-1. Select the text in the table cell and tap the Hyperlink icon.
+1. Select the default text box in the table cell and select ![edit](assets/edit.svg) (Edit).
+1. Select the text in the table cell and select the Hyperlink icon.
 1. Specify the URL in the **Path** field.
-1. Tap ![done_icon](assets/done_icon.png) to save the hyperlink properties.
+1. Select ![done_icon](assets/done_icon.png) to save the hyperlink properties.
 
 ![Create hyperlink](assets/create_hyperlink_table_new.png)
 
@@ -416,9 +416,9 @@ Sorting can be applied to tables columns containing:
 
 To enable sorting:
 
-1. Select the table and tap ![configure_icon](assets/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
+1. Select the table and select ![configure_icon](assets/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
 1. Select **Enable Sorting.**
-1. Tap ![done_icon](assets/done_icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
+1. Select ![done_icon](assets/done_icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
 
    ![Enable sorting](assets/enable_sorting_new-1.png)
 
@@ -448,7 +448,7 @@ Use the **Properties** page to:
 To access the **Properties** page:
 
 1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents**.
-1. Select the Interactive Communication and tap **Properties**.
+1. Select the Interactive Communication and select **Properties**.
 1. Select the **General** tab to edit the **Title** and **Description** fields.
 
 ### Add or delete the Web channel {#add-or-delete-the-web-channel}
@@ -458,18 +458,18 @@ Execute the following steps to add the Web channel for an existing Interactive C
 1. On the **Properties** page, select the **Channels** tab.
 1. Select the **Web** checkbox and select a template for the Web channel.
 1. Select **Use Print as Master for Web Channel** to enable synchronization between the Web channel and the Print channel.
-1. Tap **Save & Close** to save the changes.
+1. Select **Save & Close** to save the changes.
 
-   Similarly, you can tap the **Web** checkbox on the **Channels** tab to delete the Web channel from the Interactive Communication.
+   Similarly, you can select the **Web** checkbox on the **Channels** tab to delete the Web channel from the Interactive Communication.
 
 ## Add Button component to the Web channel {#add-button-component-to-the-web-channel}
 
-You can add button as a component to the web channel of the Interactive Communication. Define rules using the [rule editor](../../forms/using/rule-editor.md) to be able to navigate to other Interactive Communications, adaptive forms, other assets such as images or document fragments, or an external URL on the tap of the button.
+You can add button as a component to the web channel of the Interactive Communication. Define rules using the [rule editor](../../forms/using/rule-editor.md) to be able to navigate to other Interactive Communications, adaptive forms, other assets such as images or document fragments, or an external URL on the select of the button.
 
 To add button and define rules on it:
 
-1. Tap the root panel in the Web template and tap **+** to add the **Button** component to the Interactive Communication.
-1. Tap the button component and tap ![edit-rules](assets/edit-rules.png) to define rules on the tap of the button.
+1. Select the root panel in the Web template and select **+** to add the **Button** component to the Interactive Communication.
+1. Select the button component and select ![edit-rules](assets/edit-rules.png) to define rules on the select of the button.
 1. In the **When** section, select **clicked** from the state of the button drop-down list.
 1. In the **Then** section:
 
@@ -477,11 +477,11 @@ To add button and define rules on it:
 
     1. Specify the URL of the Interactive Communication, adaptive form, an asset, or a web page. For example, specify the URL in the following format to navigate to another Interactive Communication: https://&lt;server-name&gt;:&lt;port&gt;/editor.html/content/forms/af/&lt;Interactive Communication name&gt;/channels/&lt;channel name - print or web&gt;.html
     1. Specify the option to open the asset in same tab, new tab, or new window.
-    1. Tap **Done** and then tap **Close** to save the rule.
+    1. Select **Done** and then select **Close** to save the rule.
 
    Similarly, you can select other available options from the action type drop-down list, such as Invoke Service and Submit Form. For more information, see [rule editor](../../forms/using/rule-editor.md).
 
-1. Preview the Interactive Communication and tap the button to view the Interactive Communication, adaptive form, an asset, or a web page specified in step 4(b).
+1. Preview the Interactive Communication and select the button to view the Interactive Communication, adaptive form, an asset, or a web page specified in step 4(b).
 
 ## Add Panel component to the web channel {#add-panel-component-to-the-web-channel}
 
@@ -491,19 +491,19 @@ Perform the following steps to add a Panel component to the web channel:
 
 1. Insert the **Panel** component in the web channel using any of the following options:
 
-    * Tap a component, tap **+** and select the **Panel** component.
+    * Select a component, select **+** and select the **Panel** component.
 
     * From the **Component** browser panel, drag-drop the **Panel** component on the Interactive Communication.
 
-    * Tap the **Panel** in the **Content** browser panel and tap **Add Child Panel**. Selecting the **Add Child Panel** option displays the **Add Child Panel** dialog box. Enter the title and an optional description and name for the Panel component.
+    * Select the **Panel** in the **Content** browser panel and select **Add Child Panel**. Selecting the **Add Child Panel** option displays the **Add Child Panel** dialog box. Enter the title and an optional description and name for the Panel component.
 
-1. Tap the panel from the **Content** browser to perform additional actions on the Panel such as configure, edit rules, copy, delete, and insert component.
+1. Select the panel from the **Content** browser to perform additional actions on the Panel such as configure, edit rules, copy, delete, and insert component.
 
    You can also drag-and-drop a panel within the **Content** browser to reflect the change in the structure of the Interactive Communication in the right pane.
 
 ## Synchronizing web channel with print channel {#synchronize}
 
-When you select Print as Master for Web Channel while creating an Interactive Communication, the Web channel is created in sync with the Print channel and the content and data binding of the Web channel is derived from the print channel and the changes made in the print channel could be reflected in the web channel when you tap Synchronize.
+When you select Print as Master for Web Channel while creating an Interactive Communication, the Web channel is created in sync with the Print channel and the content and data binding of the Web channel is derived from the print channel and the changes made in the print channel could be reflected in the web channel when you select Synchronize.
 
 The authors are, however, allowed to break the inheritance for components in the web channel, as required.
 
@@ -534,13 +534,13 @@ Navigate to **Data Sources** &gt; **Master Content** to view the Print channel e
 
 In the web channel, the components are embedded in the target areas.
 
-Hover over the relevant target area or variable in the web channel and select ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) and then in the Cancel Inheritance dialog, tap **[!UICONTROL Yes]**.
+Hover over the relevant target area or variable in the web channel and select ![cancelinheritance](assets/cancelinheritance.png) (Cancel Inheritance) and then in the Cancel Inheritance dialog, select **[!UICONTROL Yes]**.
 
 The inheritence of the components within the target area gets cancelled and now you can edit them as required.
 
 ### Re-enable Inheritance {#re-enable-inheritance}
 
-In the Web channel, if you have cancelled inheritance of a component, you can re-enable it. To re-enable inheritance, hover over the boundary of the relevant target area, which includes the component, and tap ![reenableinheritance](assets/reenableinheritance.png).
+In the Web channel, if you have cancelled inheritance of a component, you can re-enable it. To re-enable inheritance, hover over the boundary of the relevant target area, which includes the component, and select ![reenableinheritance](assets/reenableinheritance.png).
 
 The Revert Inheritance dialog appears.
 
@@ -548,17 +548,17 @@ The Revert Inheritance dialog appears.
 
 If necessary, select **[!UICONTROL Synchronize The Page After Reverting Inheritance]**. Select this option to synchronize the entire inteactive communication. If you do not select this option only the relevant target area gets synchronized on reinstating the inheritance.
 
-Tap **[!UICONTROL Yes]**.
+Select **[!UICONTROL Yes]**.
 
 ### Synchronize {#synchronize-1}
 
 If you are using Print as Master for Web Channel and change the Print channel, you can synchronize content to bring the newly made changes to the Web channel.
 
-1. To synchronize the Web channel with the Print channel, switch to the Web channel and tap the More options icon.
+1. To synchronize the Web channel with the Print channel, switch to the Web channel and select the More options icon.
 
    ![Auto sync options](assets/auto_sync_options_new.png)
 
-1. Tap one of the following:
+1. Select one of the following:
 
     * **[!UICONTROL Sync with Print]**: Syncs content only for the target areas in which inheritance is not cancelled.
     * **[!UICONTROL Reset]**: Syncs the Web channel content with the Print channel and discards all the changes made to the Web channel.
@@ -569,7 +569,7 @@ Once you have auto-generated content in the web channel using the Synchronize op
 
 ![Component Toolbar](assets/component_toolbar_inherited_web_new.png)
 
-Tap the component to view the following options:
+Select the component to view the following options:
 
 * **Copy:** Copy a component and paste it in other places in the Interactive Communication.
 * **Cut:** Move a component from one place to another in the Interactive Communication.
@@ -587,8 +587,8 @@ Tap the component to view the following options:
 
 The web channel authoring interface facilitates grouping the components in a panel to be able to perform operations on those components simultaneously. The **Content** tab lists the grouped components as child elements of the panel in the content tree.
 
-1. Tap a component and select the Group ( ![group](assets/group.jpg)) operation.
-1. Select multiple components and tap **Group objects in Panel**.
+1. Select a component and select the Group ( ![group](assets/group.jpg)) operation.
+1. Select multiple components and select **Group objects in Panel**.
 
    ![Group Objects](assets/component_toolbar_group_objects_new.png)
 
