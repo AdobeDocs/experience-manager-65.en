@@ -359,7 +359,7 @@ Resumes eventing for this store so that events are triggered. This function defi
 
 Adds a key/value pair to the store.
 
-Triggers the `data` event only if the value for the key is different than the value that is currently stored for the key. You can optionally prevent the triggering of the `data` event.
+Triggers the `data` event only if the value for the key is different from the value that is currently stored for the key. You can optionally prevent the triggering of the `data` event.
 
 The event data includes the store name, the key, the previous value, the new value, and the action type of `set`.
 

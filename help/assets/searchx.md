@@ -102,7 +102,7 @@ To build a property predicate:
            var id = qb.createId(predicateName);
 
            // Hidden field that defines the property to search for; in our case this
-           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property" and so on.)
+           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property", and so on.)
            // indicates the server to use the property predicate
            // (com.day.cq.search.eval.JcrPropertyPredicateEvaluator).
            qb.addField({
@@ -222,7 +222,7 @@ To build a group predicate:
                qb.addField({
                    "xtype": "checkbox",
                    "renderTo": "<%= elemId %>",
-                   // 1_group.property.0_value, 1_group.property.1_value and so on.
+                   // 1_group.property.0_value, 1_group.property.1_value, and so on.
                    "name": groupId + "." +  predicateName + "." + i + "_value",
                    "inputValue": options[i].value,
                    "boxLabel": options[i].label,

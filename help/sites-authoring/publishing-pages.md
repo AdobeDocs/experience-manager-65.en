@@ -54,7 +54,7 @@ If you are editing a page, it can be published directly from the editor.
     * The page will be published directly if there are no references to be published.
     * If the page has references that need publishing, these will be listed in the **Publish** wizard, where you can either:
 
-        * Specify which of the assets/tags/and so on you want to publish together with the page, then use **Publish** to complete the process.
+        * Specify which of the assets or tags, you want to publish together with the page, then use **Publish** to complete the process.
 
         * Use **Cancel** to abort the action.
 

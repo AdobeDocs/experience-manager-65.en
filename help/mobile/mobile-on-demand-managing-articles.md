@@ -78,7 +78,7 @@ The workflow to edit an article:
 
 ### Viewing and Editing the Metadata within an Article {#viewing-and-editing-the-metadata-within-an-article}
 
-Content like articles, banners, and so on have numerous properties such as titles, descriptions, images. This action is used to view and modify such properties. Optionally, these changes can be uploaded to Mobile On-Demand upon save.
+Content like articles, banners, and so on, have numerous properties such as titles, descriptions, images. This action is used to view and modify such properties. Optionally, these changes can be uploaded to Mobile On-Demand upon save.
 
 The general workflow to view/edit an article:
 

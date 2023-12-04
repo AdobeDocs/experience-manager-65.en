@@ -395,7 +395,7 @@ In all views, all items can be deselected by tapping escape on the keyboard if y
 
 The column view allows for a visual navigation of a content tree through a series of cascading columns. This view lets you visualize and traverse the tree structure of your website.
 
-Selecting a resource in the leftmost column displays the child resources in a column to the right. Selecting a resource in the right column displays the child resources in another column to the right and so on.
+Selecting a resource in the leftmost column displays the child resources in a column to the right. Selecting a resource in the right column displays the child resources in another column to the righ, and so on.
 
 * You can navigate up and down in the tree by tapping or clicking the resource name or the chevron to the right of the resource name.
 

@@ -45,7 +45,7 @@ Process Reporting also provides the option to export the report and query data i
 
 Use filters to get a specific view of your data.
 
-You can search processes or tasks by ID, duration, start and end dates, process initiator and so on.
+You can search processes or tasks by ID, duration, start and end dates, process initiator, and so on.
 
 You can combine multiple filters to create specific reports.
 
