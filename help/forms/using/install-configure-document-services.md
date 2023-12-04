@@ -791,7 +791,27 @@ When user tries to convert Word or Excel files to PDF on Microsoft Windows Serve
 *Error message from the primary converter:
 ALC-PDG-015-003-The system cannot open the input file. Submit your file again or contact your system administrator.*
 
-To resolve the issue, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md). 
+To resolve the issue, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
++++
+
++++ Unable to convert Excel files to PDF on Windows Server 2019
+
+When you convert Microsoft Excel 2019 to PDF on Microsoft Windows Server 2019, you must ensure the following:
+
+* While using the PDF Generator service, your Windows machine should not have any active remote connection with the AEM server (Windows RDP session).
+* The default printer must be set to Adobe PDF.
+
+   >[!NOTE]
+   >* For Apple macOS and Ubuntu OS, you need not require to configure the aforementioned settings.
+
++++
+
++++ Unable to convert XPS files to PDFs
+
+To resolve the issue, [create a feature-specific registry key on Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+
++++
 
 
 ## Next steps {#next-steps}
