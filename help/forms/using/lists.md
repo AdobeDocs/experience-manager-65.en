@@ -39,7 +39,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 ### Create text {#create-text}
 
 1. Select **Forms** &gt; **Document Fragments**.
-1. Tap **Create** &gt; **Text** Or select a text asset and tap **Edit**.
+1. Select **Create** &gt; **Text** Or select a text asset and select **Edit**.
 1. Specify the following information for the text:
 
     * **Title: (Optional)** Enter the title for the text asset. Titles do not need to be unique and can have special characters and non-english characters. Texts are referred by their titles (when available) such as in thumbnails and asset properties.
@@ -48,7 +48,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
     * **Data Dictionary**: Optionally, select the data dictionary in which to map. This attribute enables you to add references to data dictionary elements in the text asset.
     * **Tags**: Optionally, to create custom tag enter value in text field and press Enter. You can see your tag below text field of tags. When you save this text, the newly added tags also get created.
 
-1. Tap **Next**. Correspondence Management displays the Editor page where you can add text paragraphs and data elements to the text.
+1. Select **Next**. Correspondence Management displays the Editor page where you can add text paragraphs and data elements to the text.
 
    The default spellchecker in your browser checks spelling in the Text editor. To manage the spelling and grammar checking, you can edit your browser's spellchecker settings or install browser plugins/addons to check spelling and grammar.
 
@@ -60,7 +60,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
     * **Link**: Insert [hypertext](#insert-hyperlink) link in the text.
     * **Repeat**: Repeat prints collection element in Data Dictionary using a delimiter.
-    * **Condition**: Tap to insert a condition. Insert text based on condition. If condition is true, then text is visible in letter, otherwise not.
+    * **Condition**: Select to insert a condition. Insert text based on condition. If condition is true, then text is visible in letter, otherwise not.
     * **Add Description**: Add annotation to a piece of text. This is metadata visible to the Author but not a part of the letter that is created.
     * **Page Break**: If you set the page break attribute of a text module to false, the text module does not break across pages.
 
@@ -103,13 +103,13 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    Correspondence Management has built in support for 210 special characters. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
 
-1. To highlight\emphasize parts of text in an editable inline module, select the text and tap Highlight Color.
+1. To highlight\emphasize parts of text in an editable inline module, select the text and select Highlight Color.
 
    ![textbackgroundcolorapplied](assets/textbackgroundcolorapplied.png)
 
-   You can either directly tap a basic color `**[A]**` present in the Basic Colors palette or tap **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
+   You can either directly select a basic color `**[A]**` present in the Basic Colors palette or select **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
 
-   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then tap Select `**[D]**` to apply the color to highlight the text.
+   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then select Select `**[D]**` to apply the color to highlight the text.
 
    ![textbackgroundcolor-1](assets/textbackgroundcolor-1.png)
 
@@ -117,8 +117,8 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
    To:
 
-    * Add a data dictionary element in the text, select a data element from the list, and tap Insert ( ![insert](assets/insert.png)). If you select Protected, the data dictionary element is read-only and appears in the letter editor, but not in Create Correspondence user interface or Correspondence Creator.
-    * Add a place holder element in the text, in the Data Elements panel tap Create New, enter the details for the new Data Element, and tap Create to add the new element to the list. The new place holder can be inserted into the text in the same way as data dictionary element. To edit a placeholder, select a placeholder and tap Edit.
+    * Add a data dictionary element in the text, select a data element from the list, and select Insert ( ![insert](assets/insert.png)). If you select Protected, the data dictionary element is read-only and appears in the letter editor, but not in Create Correspondence user interface or Correspondence Creator.
+    * Add a place holder element in the text, in the Data Elements panel select Create New, enter the details for the new Data Element, and select Create to add the new element to the list. The new place holder can be inserted into the text in the same way as data dictionary element. To edit a placeholder, select a placeholder and select Edit.
 
    ![Placeholder elements](assets/placeholder_elements_in_xmldata.png)
 
@@ -131,7 +131,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
    You can also use the @ symbol to search and add data dictionary and placeholder elements to the text editor. Place the cursor where you want to insert the element. Type @ followed by the search string. The text editor performs the search operation on all data dictionary and placeholder elements available in the text document fragment. The search operation retrieves and displays the elements containing the search string as a drop-down list. Navigate through the search results and click the element that you want to insert at the cursor location. Press Esc to hide the search results.
 
 1. You can use inline conditions and repeat to make your letter highly contextual and well structured. For more information on inline condition and repeat, see [Inline conditions and repeat in letters](/help/forms/using/cm-inline-condition.md).
-1. Tap **Save**.
+1. Select **Save**.
 
 #### Insert hyperlink in a text {#insert-hyperlink}
 
@@ -139,9 +139,9 @@ Execute the following steps to create a hyperlink in a text asset:
 
 1. Select the text or the data model object in the text editor.
 
-2. Tap **[!UICONTROL Link]**. Tap **[!UICONTROL Alt Text]** field to remove the existing data model object name or text.
+2. Select **[!UICONTROL Link]**. Select **[!UICONTROL Alt Text]** field to remove the existing data model object name or text.
 
-3. Specify the URL and tap ![Save](assets/save_icon.svg).
+3. Specify the URL and select ![Save](assets/save_icon.svg).
 
 ![Create hyperlink in text asset](assets/text-create-hyperlink.png)
 
@@ -155,7 +155,7 @@ The Find and Replace feature lets you search for (and replace) any string of tex
 
 1. Open the text module in the text editor.
 
-1. Tap Find & Replace.
+1. Select Find & Replace.
 1. Enter the text to search in the Find text box and press Find. The search text is highlighted in the text module.
 1. To search for the next instance of the text, press Find again.
 
@@ -182,7 +182,7 @@ The Find and Replace feature lets you search for (and replace) any string of tex
 #### To search and replace text in a text module {#to-search-and-replace-text-in-a-text-module}
 
 1. Open the text module in the text editor.
-1. Tap Find & Replace.
+1. Select Find & Replace.
 1. Enter the text to search in the Find text box and the text to replace the find text with and press Replace.
 1. If the search text is found, the text is replaced by the Replace text.
 
@@ -238,23 +238,23 @@ A list is a group of related content that can be used in a letter template as a 
     * **Name:** The unique name for the list. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated with the value in the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)**: Type a description of the asset.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the list, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate list.
-    * **Tags (Optional)**: Select the tags to apply. You can also type in a new tag's name and create it. (The new tag is created when you tap **Save**.)
+    * **Tags (Optional)**: Select the tags to apply. You can also type in a new tag's name and create it. (The new tag is created when you select **Save**.)
 
-1. Tap **Next**.
-1. Tap **Add Asset**.
-1. To add assets to the list, select them in the Select Assets page and tap **Done**.
+1. Select **Next**.
+1. Select **Add Asset**.
+1. To add assets to the list, select them in the Select Assets page and select **Done**.
 
    ![Select assets to add to the list](assets/selectassets.png)
 
 1. The assets are added to the List Items page.
-   To change the order of the assets within the list, tap and hold the arrows icon ( ![dragndrop](assets/dragndrop.png) ) and drag-and-drop. When the user opens a letter template in the Create Correspondence user interface, the content is assembled in the order you defined here.
+   To change the order of the assets within the list, select and hold the arrows icon ( ![dragndrop](assets/dragndrop.png) ) and drag-and-drop. When the user opens a letter template in the Create Correspondence user interface, the content is assembled in the order you defined here.
 
    ![Reorder and configure assets in a list](assets/listitems.png)
 
 1. You can select the following options to specify how the list behaves in the CCR user interface:
 
-    * **Library Access**: To enable library access for adding assets, tap Library Access. When Library Access is enabled, the claims adjustor can add more content to the list. Otherwise, the Claims Adjustor is limited to the content you have defined for the list.
-    * **Lock Order**: To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap Lock Order. If you do not select this option, the Claims Adjustor can change the order of the list items.
+    * **Library Access**: To enable library access for adding assets, select Library Access. When Library Access is enabled, the claims adjustor can add more content to the list. Otherwise, the Claims Adjustor is limited to the content you have defined for the list.
+    * **Lock Order**: To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, select Lock Order. If you do not select this option, the Claims Adjustor can change the order of the list items.
 
     * **Add Bullets**: Use this option to apply a bullet or numbering style to the module. You can use either a predesigned list style or a custom one. You can also specify the text to be displayed before and after each of the list items.
     * **Page Break**: Select this option ( ![break](assets/break.png)) to add a page break between the list contents. When this option is not selected ( ![nobreak](assets/nobreak.png)), if the contents of the list are overflowing to the next page, the whole list is shifted to the next page instead of breaking in the page between the list.
@@ -272,7 +272,7 @@ A list is a group of related content that can be used in a letter template as a 
     * **Ignore list style:** If the Compound Numbering option is deselected, then the option to Ignore List Style is enabled. This selection ignores the nested List's own style and the numbering continues from the outer List. Therefore the modules of the nested list are treated as part of the outer list itself, disregarding any styles specified on the nested List. If the Ignore List Style option is deselected for a nested List, the modules that are part of that nested List have their own numbering style.
     * **Keep With Next:** Sets the page break for the assets contained in a list. If you set the Keep With Next property of one asset of a list to **On**, that asset and the next asset stays on the same page. This implies that the contents of the selected asset and the next asset will not break across pages.
 
-1. Tap **Save**.
+1. Select **Save**.
 
 ### Best practices/tips and tricks {#best-practices-tips-and-tricks}
 
@@ -310,25 +310,25 @@ The Condition editor enables you to specify a default condition. If the value of
     * **Name:** The unique name for the condition. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)** Type a description of the condition.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the condition, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate condition.
-    * **Tags (Optional)**: Optionally, select the tags to apply. You can also type in a new tag's name and create it. (The new tag is created when you tap **Save**.)
+    * **Tags (Optional)**: Optionally, select the tags to apply. You can also type in a new tag's name and create it. (The new tag is created when you select **Save**.)
 
-1. Tap **Next**.
-1. Tap **Add Asset**.
-1. To add an asset to the Condition, select it in the Select Assets page and tap **Done**. The assets are added to the Expression pane.
+1. Select **Next**.
+1. Select **Add Asset**.
+1. To add an asset to the Condition, select it in the Select Assets page and select **Done**. The assets are added to the Expression pane.
 1. You can select the following options to specify how the condition behaves at runtime:
 
     * **Disable Multiple Results Evaluation\Enable Multiple Results Evaluation**: When this option is enabled (appears as "Enable Multiple…"), all the conditions are evaluated and the result is the sum of all the true conditions. If this option is disabled (appears as "Disable Multiple...") then only the first condition that is found to be true is evaluated and becomes the output of the condition.
     * **Page Break**: Select this option ( ![break](assets/break.png)) to add a page break between the modules of the conditions. When this option is not selected ( ![nobreak](assets/nobreak.png)), if a condition is overflowing to the next page, the whole condition is shifted to the next page instead of breaking in the page between the condition.
 
-1. To change the order of the assets within the condition, tap and hold the arrows icon ( ![dragndrop](assets/dragndrop.png) ) and drag-and-drop. When the user opens a letter template in the Create Correspondence user interface, the content is assembled in the order you defined here.
-1. Tap **Delete** to delete the row. If you tap Delete for the default row, only clears the asset information.
-1. Tap **Copy** to duplicate a row.
-1. Tap **Edit** to change the asset or edit the expression.
+1. To change the order of the assets within the condition, select and hold the arrows icon ( ![dragndrop](assets/dragndrop.png) ) and drag-and-drop. When the user opens a letter template in the Create Correspondence user interface, the content is assembled in the order you defined here.
+1. Select **Delete** to delete the row. If you select Delete for the default row, only clears the asset information.
+1. Select **Copy** to duplicate a row.
+1. Select **Edit** to change the asset or edit the expression.
 
    Further:
 
-    * To update the asset, tap the folder icon under Asset column.
-    * To open the Expression Builder to insert an expression, tap the folder icon under the Expression column. For more information on Expression Builder, see [Expression Builder](/help/forms/using/expression-builder.md).
+    * To update the asset, select the folder icon under Asset column.
+    * To open the Expression Builder to insert an expression, select the folder icon under the Expression column. For more information on Expression Builder, see [Expression Builder](/help/forms/using/expression-builder.md).
 
 ### Best practices/tips and tricks {#best-practices-tips-and-tricks-1}
 
@@ -392,7 +392,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 ### Creating a layout fragment {#creating-a-layout-fragment}
 
 1. Select **Create** &gt; **Layout Fragment**.
-1. Correspondence Management displays the available XDPs. Select the XDP on which you want to base your layout fragment and tap **Next**.
+1. Correspondence Management displays the available XDPs. Select the XDP on which you want to base your layout fragment and select **Next**.
 1. Specify the following information for the layout:
 
     * **Title (Optional):** Enter the title for the layout fragment. Title does not need to be unique and can have special characters and non-english characters. Layout fragments are referred by their titles (when available) such as in thumbnails and asset properties.
@@ -400,7 +400,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
     * **Description (Optional)**: Description that appears in the list in the Manage Assets user interface.
     * **Tags (Optional)**: Optionally, select the tags to apply to the condition. You can also type in a new tag's name and create it.
 
-1. Tap the **Table** tab and specify the following information for the layout:
+1. Select the **Table** tab and specify the following information for the layout:
 
     * **Configuration for**: Select the table being configured.As a suffix to the table name in the dropdown is (Static) if the table is a static one or (Dynamic) if the table is a dynamic table. Static tables contain a fixed number of rows. Static tables can contain target areas and fields. These target area and fields cannot be bound to repeating DDEs. The data bound to table cells determines the number of rows for dynamic tables.
 
@@ -416,7 +416,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 
    For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#examplewithsamplefiles).
 
-1. Tap **Save**.
+1. Select **Save**.
 
 ### Upload an XDP to Correspondence Management {#upload-an-xdp-to-correspondence-management}
 
@@ -430,7 +430,7 @@ When creating target areas in Designer, it helps to set the default binding for 
 
 To set the default binding:
 
-1. In Designer, tap **Tools** &gt; **Options** &gt; **Data Bindings** &gt; **Subform Binding**.
+1. In Designer, select **Tools** &gt; **Options** &gt; **Data Bindings** &gt; **Subform Binding**.
 
 1. In the Default Binding for New Subforms list, select **No Data Binding**.
 
@@ -545,7 +545,7 @@ This example shows how you can create a dynamic and a static table, bind the dyn
 To quickly create a document fragment with properties and content similar to an existing document fragment, you can copy and paste it.
 
 1. From the list of document fragments, select one or more document fragments. The UI displays the Copy icon.
-1. Tap Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Tap Paste. The Paste dialog appears. If you are copying and pasting the document fragments at the same place, the system automatically assigns names and a titles to the new copies of letters, but you can edit the titles and names of the letters.
+1. Select Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Select Paste. The Paste dialog appears. If you are copying and pasting the document fragments at the same place, the system automatically assigns names and a titles to the new copies of letters, but you can edit the titles and names of the letters.
 1. If necessary, edit the Title and Name with which you want to save the copy of the document fragment.
-1. Tap Paste. The copy of the document fragment is created.
+1. Select Paste. The copy of the document fragment is created.

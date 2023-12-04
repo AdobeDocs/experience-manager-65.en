@@ -92,7 +92,7 @@ Use the following procedure to create a task for an SEO recommendation.
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. Fill the form fields that appear and then tap Create:
+1. Fill the form fields that appear and then select Create:
 
     * Project: Select the project in which to create the task.
     * Name: The name that identifies the task. The default name is the title of the SEO recommendation.

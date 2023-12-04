@@ -28,8 +28,8 @@ In summary, Inbox lets you create an application and manage assigned tasks.
 ## Create application {#create-application}
 
 1. Go to AEM Inbox at https://'[server]:[port]'/aem/inbox.
-1. In the Inbox UI, tap **[!UICONTROL Create > Application]**. The Select Application page appears.
-1. Select an application and click **[!UICONTROL Create]**. The adaptive form associated with the application opens. Fill up the information in the adaptive form and tap **[!UICONTROL Submit]**. It launches the associated workflow and creates a task in the assignee's Inbox.
+1. In the Inbox UI, select **[!UICONTROL Create > Application]**. The Select Application page appears.
+1. Select an application and click **[!UICONTROL Create]**. The adaptive form associated with the application opens. Fill up the information in the adaptive form and select **[!UICONTROL Submit]**. It launches the associated workflow and creates a task in the assignee's Inbox.
 
 ## Manage tasks {#manage-tasks}
 
@@ -39,17 +39,17 @@ When a Forms workflow triggers and you are an assignee or part of the assignee g
 
 Tasks that are assigned to a group appear in the Inbox of all group members. Any group member can claim that task or delegate it to another group member. To do so:
 
-1. Tap to select the thumbnail of the task. Options to open or delegate the task appear at the top.
+1. Select to select the thumbnail of the task. Options to open or delegate the task appear at the top.
 
    ![select-task](assets/select-task.png)
 
 1. Do one of the following:
 
-    * To delegate the task, tap **[!UICONTROL Delegate]**. The Delegate Item dialog Opens. Select a user, optionally add a comment, and tap **[!UICONTROL OK]**.
+    * To delegate the task, select **[!UICONTROL Delegate]**. The Delegate Item dialog Opens. Select a user, optionally add a comment, and select **[!UICONTROL OK]**.
 
    ![delegate](assets/delegate.png)
 
-    * To claim the task, tap **[!UICONTROL Open]**. The Assign to Self dialog opens. Tap **[!UICONTROL Proceed]** to claim the task. The claimed task appears with you as the assignee in your Inbox.
+    * To claim the task, select **[!UICONTROL Open]**. The Assign to Self dialog opens. Select **[!UICONTROL Proceed]** to claim the task. The claimed task appears with you as the assignee in your Inbox.
 
    ![claim](assets/claim.png)
 
@@ -57,8 +57,8 @@ Tasks that are assigned to a group appear in the Inbox of all group members. Any
 
 When you open a task, you can view task details and perform available actions. The actions available for a task are defined in the Assign task step of the associated Forms workflow.
 
-1. Tap to select the thumbnail of the task. Options to open or delegate the selected task appear at the top.
-1. Tap **Open** to view task details. The detailed task view opens. In this view, you can view task details and work on the task.
+1. Select to select the thumbnail of the task. Options to open or delegate the selected task appear at the top.
+1. Select **Open** to view task details. The detailed task view opens. In this view, you can view task details and work on the task.
 
    >[!NOTE]
    >
@@ -85,7 +85,7 @@ The Form tab in the main content area displays the submitted form and field-leve
 
 The Workflow Details tab at the top shows the progress of the task through various stages in the workflow. It shows completed, current, and pending stages for the task. The stages for a workflow are defined in the [Assign task step](/help/sites-developing/workflows-step-ref.md) of the associated workflow.
 
-In addition, the tab displays task history for each completed stage in the workflow. You can tap **[!UICONTROL View Details]** for a completed stage to know details about that stage. It displays comments, form and task attachments, status, start and end dates, and so on, about the task.
+In addition, the tab displays task history for each completed stage in the workflow. You can select **[!UICONTROL View Details]** for a completed stage to know details about that stage. It displays comments, form and task attachments, status, start and end dates, and so on, about the task.
 
 ![workflow-details](assets/workflow-details.png)
 
@@ -99,12 +99,12 @@ As you work on the task, it proceeds further in the workflow.
 
 AEM Inbox displays only active tasks. Completed tasks do not appear in the list. However, you can use Inbox filters to filter tasks based on several parameters, such as task type, status, and start and end dates. To view completed tasks:
 
-1. In AEM Inbox, tap ![toggle-side-panel1](assets/toggle-side-panel1.png) to open the filter selector.
-1. Tap **[!UICONTROL Task Status]** accordion and select **[!UICONTROL Complete]**. All your completed tasks appear.
+1. In AEM Inbox, select ![toggle-side-panel1](assets/toggle-side-panel1.png) to open the filter selector.
+1. Select **[!UICONTROL Task Status]** accordion and select **[!UICONTROL Complete]**. All your completed tasks appear.
 
    ![filter](assets/filter.png)
 
-1. Tap to select a task and click **[!UICONTROL Open]**.
+1. Select to select a task and click **[!UICONTROL Open]**.
 
 The task opens to display the document or the adaptive form associated with the task. For adaptive form, the task displays the read-only adaptive form or its PDF document of record as configured in the Form/Document tab of the [Assign Task workflow step](/help/sites-developing/workflows-step-ref.md).
 
@@ -112,7 +112,7 @@ The task details section displays information such as action taken, task status,
 
 ![completed-task](assets/completed-task.png)
 
-The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap **[!UICONTROL View details]** for a step for detailed information.
+The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Select **[!UICONTROL View details]** for a step for detailed information.
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 

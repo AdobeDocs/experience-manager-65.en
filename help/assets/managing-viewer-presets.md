@@ -348,7 +348,7 @@ The following table identifies the mobile viewer gestures that are supported on 
    <td><p>Shows or hides the user interface</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Double-tap</strong></p> </td>
+   <td><p><strong>Double-select</strong></p> </td>
    <td><p>Does not apply</p> </td>
    <td><p>Zooms in or resets</p> </td>
    <td><p>Zooms in or resets</p> </td>

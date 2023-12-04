@@ -180,7 +180,7 @@ You may be allowed to add, update, delete, or save any attachments locally.
 
 ### Save your work without completing the task {#save-your-work-without-completing-the-task}
 
-1. On any tab, tap **Save**.
+1. On any tab, select **Save**.
 
    The Save As Draft dialog appears. The default name of the draft is the task name from the task template.
 
@@ -193,7 +193,7 @@ You may be allowed to add, update, delete, or save any attachments locally.
    >
    >For more information, see Save Draft Periodically in [Managing Preferences](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. In the Save As Draft dialog, specify a unique name for the task and tap **OK**.
+1. In the Save As Draft dialog, specify a unique name for the task and select **OK**.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 

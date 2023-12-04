@@ -46,7 +46,7 @@ You can create [adaptive forms](../../forms/using/creating-adaptive-form.md) and
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Tap to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
+1. Select to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
 
    Select a from data model.
 
@@ -93,14 +93,14 @@ Form data model editor lets you generate and edit sample data for data model obj
 To preview an interactive communication with sample form data model data:
 
 1. On AEM author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)
 
-Similarly, to preview an adaptive form with sample data, open the adaptive adaptive form in author mode and tap **[!UICONTROL Preview]**.
+Similarly, to preview an adaptive form with sample data, open the adaptive adaptive form in author mode and select **[!UICONTROL Preview]**.
 
 ## Prefill using form data model service {#prefill}
 
@@ -130,10 +130,10 @@ You can also submit form attachments to a data source using binary data model ob
 
 1. Add a data model object that includes a binary property to the form data model.
 1. In the adaptive form, drag-drop the **[!UICONTROL File Attachment]** component from the Components browser onto the adaptive form.
-1. Tap to select the added component and tap ![settings_icon](assets/settings_icon.png) to open the Properties browser for the component.
-1. In the Bind Reference field, tap ![foldersearch_18](assets/foldersearch_18.png) and navigate to select the binary property you added in the form data model. Configure other properties, as appropriate.
+1. Select to select the added component and select ![settings_icon](assets/settings_icon.png) to open the Properties browser for the component.
+1. In the Bind Reference field, select ![foldersearch_18](assets/foldersearch_18.png) and navigate to select the binary property you added in the form data model. Configure other properties, as appropriate.
 
-   Tap ![check-button](assets/check-button.png) to save the properties. The attachment field is now bound to the binary property of the form data model.
+   Select ![check-button](assets/check-button.png) to save the properties. The attachment field is now bound to the binary property of the form data model.
 
 1. In the Submission section of the Adaptive Form Container properties, enable **[!UICONTROL Submit Form Attachments]**. It submits the attachment in the binary property field to the data source on form submission.
 

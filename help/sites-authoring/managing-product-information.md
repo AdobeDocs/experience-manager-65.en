@@ -115,8 +115,8 @@ This task involves assigning workflow steps to users based on their roles.
 
 To configure the **Product Photo Shoot** workflow:
 
-1. Navigate to **Tools** &gt; **Workflows**, and then tap the **Models** tile to open the **Workflow Models** page.
-1. Select the **Product Photo Shoot** workflow, and the tap the **Edit** icon from the toolbar to open it in edit mode.
+1. Navigate to **Tools** &gt; **Workflows**, and then select the **Models** tile to open the **Workflow Models** page.
+1. Select the **Product Photo Shoot** workflow, and the select the **Edit** icon from the toolbar to open it in edit mode.
 
    ![Product Photo Shoot model](assets/chlimage_1-138a.png)
 

@@ -46,7 +46,7 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 >For multiple letters that require similar elements, you can create a common data dictionary. A large data dictionary with a large number of elements, however, may lead to performance issues while using the data dictionary and loading the elements, such as in letters and document fragments. If you run into performance issues, try to create separate data dictionaries for different letters.
 
 1. Select **Forms** &gt; **Data Dictionaries**.
-1. Tap **Create Data Dictionary**.
+1. Select **Create Data Dictionary**.
 1. In the Properties screen, add the following:
 
     * **Title:** (Optional) Enter the title for the data dictionary. Title do not need to be unique and can have special characters and non-english characters. Letters and other document fragments are referred with their title (when available), such as in thumbnails and asset properties. Data dictionaries are referenced with their names and not titles.
@@ -54,11 +54,11 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
     * **Description**: (Optional) Description of the data dictionary.
     * **Tags:** (Optional) To create custom tag, enter value in text field and press Enter. You can see your tag below text field of tags. When you save this text, the newly added tags also get created.
-    * **Extended Properties**: (Optional) Tap **Add Field** to specify metadata attributes for your data dictionary. In the Property Name column, enter a unique property name. In the Value column, enter a value to associate with the property.
+    * **Extended Properties**: (Optional) Select **Add Field** to specify metadata attributes for your data dictionary. In the Property Name column, enter a unique property name. In the Value column, enter a value to associate with the property.
 
    ![Data dictionary properties specified in German](do-not-localize/1_ddproperties.png)
 
-1. (Optional) To upload an XSD schema definition for your data dictionary, under the Data Dictionary Structure pane, tap **Upload XML Schema**. Browse to XSD file, select it, and tap **Open**. A Data Dictionary gets created based on the uploaded XML schema. You need to tweak display names and descriptions of the elements in the data dictionary. To do this, select the names of the elements by tapping them and edit their descriptions, display names, and other details in the fields in the right pane.
+1. (Optional) To upload an XSD schema definition for your data dictionary, under the Data Dictionary Structure pane, select **Upload XML Schema**. Browse to XSD file, select it, and select **Open**. A Data Dictionary gets created based on the uploaded XML schema. You need to tweak display names and descriptions of the elements in the data dictionary. To do this, select the names of the elements by tapping them and edit their descriptions, display names, and other details in the fields in the right pane.
 
    For more information on Computed DD Elements, see [Computed Data Dictionary Elements](#computedddelements).
 
@@ -66,10 +66,10 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
    >
    >You can skip uploading the schema file and build your data dictionary from scratch using the user interface. To do this, skip this step and continue with the next steps.
 
-1. Tap **Next**.
+1. Select **Next**.
 1. In the Add Properties screen, add the elements to the data dictionary. You can also add/delete elements and edit their details if you have uploaded a schema to get a basic structure of the data dictionary.
 
-   You can tap the three dots on the right side of an element and add an element to the data dictionary structure.
+   You can select the three dots on the right side of an element and add an element to the data dictionary structure.
 
    ![1_2_createanelement](assets/1_2_createanelement.png)
 
@@ -93,7 +93,7 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Optional) After selecting an element, in the Advanced tab you can add properties (attributes). You can also tap **Add Field** and extend the properties of a DD element.
+1. (Optional) After selecting an element, in the Advanced tab you can add properties (attributes). You can also select **Add Field** and extend the properties of a DD element.
 
    ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
@@ -106,17 +106,17 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
    >Deleting a composite/collection element with child nodes deletes its child nodes also.
 
 1. (Optional) Select an element in the Data Dictionary Structure pane, and in the Field and Variable List panel. Change, or add any required attributes associated to the element.
-1. Tap **Save**.
+1. Select **Save**.
 
 ### Create copies of one or more data dictionary {#create-copies-of-one-or-more-data-dictionary}
 
 To quickly create one or more data dictionaries with properties and elements similar to existing data dictionaries, you can copy and paste them.
 
 1. From the list of data dictionaries, select the appropriate data dictionaries. The UI displays the Copy icon.
-1. Tap Copy. The UI displays the Paste icon.
-1. Tap Paste. The Paste dialog appears. The system automatically assigns a names and titles to the new data dictionaries.
+1. Select Copy. The UI displays the Paste icon.
+1. Select Paste. The Paste dialog appears. The system automatically assigns a names and titles to the new data dictionaries.
 1. If necessary, edit the Title and Name with which you want to save the copy of the data dictionary.
-1. Tap Paste. The copy of the data dictionary is created. Now you can make the required changes in your newly created data dictionary.
+1. Select Paste. The copy of the data dictionary is created. Now you can make the required changes in your newly created data dictionary.
 
 ## See the document fragments or documents that refer to a Data Dictionary element {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}
 
@@ -124,32 +124,32 @@ While editing or viewing a data dictionary, you can see which elements in the da
 
 1. Do one of the following to edit the data dictionary:
 
-    * Hover over a data dictionary and tap Edit.
-    * Select a data dictionary and then tap Edit in the header.
-    * Hover over a data dictionary and tap Select. Then tap Edit in the header.
+    * Hover over a data dictionary and select Edit.
+    * Select a data dictionary and then select Edit in the header.
+    * Hover over a data dictionary and select Select. Then select Edit in the header.
 
-   Or tap on a data dictionary to view it.
+   Or select on a data dictionary to view it.
 
-1. In the data dictionary, tap a simple element to select it. Composite and collection elements do not have references.
+1. In the data dictionary, select a simple element to select it. Composite and collection elements do not have references.
 
    Along with Basic and Advanced properties of the element, Lent Content also appears.
 
-1. Tap Lent Content.
+1. Select Lent Content.
 
    The Lent Content tab appears with the following: Texts, Conditions, Letters, and Interactive Communications. Each of these headings also displays the number of references to the selected element.
 
-1. Tap on a heading to see the name of the assets that refer to the element.
+1. Select a heading to see the name of the assets that refer to the element.
 
    ![lentcontent](assets/lentcontent.png)
 
-1. To view lent content for another element, tap the element.
-1. To display an asset that refers to the element, tap on its name. The browser displays the asset, letter, or Interactive Communication.
+1. To view lent content for another element, select the element.
+1. To display an asset that refers to the element, select on its name. The browser displays the asset, letter, or Interactive Communication.
 
 ## Working with test data {#working-with-test-data}
 
-1. On the Data Dictionaries page, tap **Select**.
-1. Tap a data dictionary for which you want to download test data and then tap **Download Sample XML Data**.
-1. Tap **OK** in the alert message. An XML file gets downloaded.
+1. On the Data Dictionaries page, select **Select**.
+1. Select a data dictionary for which you want to download test data and then select **Download Sample XML Data**.
+1. Select **OK** in the alert message. An XML file gets downloaded.
 1. Open the XML file with Notepad or another XML editor. The XML file has the same structure as the data dictionary and placeholder strings in the elements. Replace the placeholder strings with the data you want to test a letter with.
 
    ```xml
@@ -195,8 +195,8 @@ While editing or viewing a data dictionary, you can see which elements in the da
 
 1. After making the data entries, you can use this XML file when you are previewing a letter with test data.
 
-   You can add this test data with DD (Select DD and tap Upload Test Data and upload this xml file)
-   So after this when you preview letter normally (not custom), then this XML data is used in letter. You can also tap Custom and then upload this XML.
+   You can add this test data with DD (Select DD and select Upload Test Data and upload this xml file)
+   So after this when you preview letter normally (not custom), then this XML data is used in letter. You can also select Custom and then upload this XML.
 
 ## Samples {#samples}
 
@@ -410,9 +410,9 @@ Exporting an XSD requires specific data mapping, which is detailed in the follow
 
 Once you have created a data dictionary, you can download it as an XML sample data file to make text entries in it.
 
-1. In the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it.
+1. In the Data Dictionaries page, select **Select** and then select a data dictionary to select it.
 1. Select **Download Sample XML Data**.
-1. Tap **OK** in the alert message.
+1. Select **OK** in the alert message.
 
    Correspondence Management creates an XML file based on the selected data dictionary's structure and downloads it to your computer with the name &lt;data-dictionary-name&gt;-SampleData. Now you can edit this file in an XML or text editor to make data entries while [creating a letter](../../forms/using/create-letter.md).
 
@@ -422,9 +422,9 @@ When you want to send the same letter in different languages to your customers, 
 
 ### Localize data dictionary {#localize-data-dictionary}
 
-1. On the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it.
-1. Tap **Download Localization Data**.
-1. Tap **OK** in the alert. Correspondence Management downloads a zip file to your computer with the name DataDictionary-&lt;DDname&gt;.zip.
+1. On the Data Dictionaries page, select **Select** and then select a data dictionary to select it.
+1. Select **Download Localization Data**.
+1. Select **OK** in the alert. Correspondence Management downloads a zip file to your computer with the name DataDictionary-&lt;DDname&gt;.zip.
 1. The Zip file contains a .properties file. This file defines the downloaded data dictionary. The contents of the property file are similar to the following:
 
    ```ini

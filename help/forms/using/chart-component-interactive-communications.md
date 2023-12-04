@@ -23,13 +23,13 @@ While creating an Interactive Communication, you can add charts to visually repr
 
 Perform the following steps to add and configure a chart in an Interactive Communication:
 
-1. Tap **Components** from the sidekick of the Interactive Communication.
+1. Select **Components** from the sidekick of the Interactive Communication.
 1. Drag and drop the **Chart** component to one of the following components:
 
     * Print channel: Target area or Image field
     * Web channel: Panel or Target area
 
-1. Tap the chart component in the Interactive Communication editor and select **[!UICONTROL Configure (]** ![configure_icon](assets/configure_icon.png)) from the Component toolbar.
+1. Select the chart component in the Interactive Communication editor and select **[!UICONTROL Configure (]** ![configure_icon](assets/configure_icon.png)) from the Component toolbar.
 
    The Chart Properties display in the left pane.
 
@@ -42,13 +42,13 @@ Perform the following steps to add and configure a chart in an Interactive Commu
    Basic properties of a line type chart in web channel
 
 1. Configure the [chart properties](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) based on the channel type.
-1. (Print channel only) In the **[!UICONTROL Agent Settings]**, specify if it is mandatory for the agent to use this chart. If i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** option is not selected, the agent can tap the eye icon for the chart in the **[!UICONTROL Content]** tab of Agent UI to show or hide the chart.
+1. (Print channel only) In the **[!UICONTROL Agent Settings]**, specify if it is mandatory for the agent to use this chart. If i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** option is not selected, the agent can select the eye icon for the chart in the **[!UICONTROL Content]** tab of Agent UI to show or hide the chart.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Tap ![done_icon](assets/done_icon.png) to save the chart properties.
+1. Select ![done_icon](assets/done_icon.png) to save the chart properties.
 
-   Tap **[!UICONTROL Preview]** to view the appearance and data associated with the chart. Tap **[!UICONTROL Edit]** to reconfigure the properties of the chart.
+   Select **[!UICONTROL Preview]** to view the appearance and data associated with the chart. Select **[!UICONTROL Edit]** to reconfigure the properties of the chart.
 
 ## Configure chart properties {#configure-chart-properties}
 

@@ -135,7 +135,7 @@ Once the component has already been included in an AEM page, along with a few ot
 **To edit an existing component:**
 
 1. Choose that page and ensure you are in **Edit** mode and select the component
-1. Tap the wrench icon to configure the component
+1. Select the wrench icon to configure the component
 
 >[!NOTE]
 >

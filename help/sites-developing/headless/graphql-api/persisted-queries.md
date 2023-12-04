@@ -395,8 +395,8 @@ To create a Package:
 1. In the Package Definition Dialog, under **General** enter a **Name** like "wknd-persistent-queries".
 1. Enter a version number like "1.0".
 1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example, for the `wknd` configuration the full path will be `/conf/wknd/settings/graphql/persistentQueries`.
-1. Tap **Save** to save the new Package definition and close the dialog.
-1. Tap the **Build** button in the newly created Package definition.
+1. Select **Save** to save the new Package definition and close the dialog.
+1. Select the **Build** button in the newly created Package definition.
 
 After the package has been built you can: 
 

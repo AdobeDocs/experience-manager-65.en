@@ -46,15 +46,15 @@ The assets in the conditions that are rendered based on the applied rules and th
     * **[!UICONTROL Description]**: Type a description of the document fragment.
     * **[!UICONTROL Form Data Model]**: Optionally, select the Form Data Model radio button to create the condition based on a form data model. When you select Form Data Model radio button, **[!UICONTROL Form Data Model]** field appears. Browse and select a form data model. While creating condition for an Interactive Communication, ensure that you use the same data model that you intend to use in the Interactive Communication. For more information on form data model, see [Data Integration](../../forms/using/data-integration.md).
 
-    * **[!UICONTROL Tags]**: Optionally, to create custom tag enter value in text field and tap Enter. When you save this condition, the newly added tags get created.
+    * **[!UICONTROL Tags]**: Optionally, to create custom tag enter value in text field and select Enter. When you save this condition, the newly added tags get created.
 
-1. Tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Next]**.
 
    Create Condition page appears.
 
    ![createcondition](assets/createcondition.png)
 
-1. Tap **[!UICONTROL Add Assets]**.
+1. Select **[!UICONTROL Add Assets]**.
 
    Select Assets page appears and displays the available texts, lists, conditions, and images that are available for adding in the condition.
 
@@ -62,7 +62,7 @@ The assets in the conditions that are rendered based on the applied rules and th
    >
    >Only none-based, newly created assets and FDM-based assets (created using same FDM as the condition being created) appear in the Select Assets page.
 
-1. Tap on the appropriate assets to select them to include in the condition and then tap **[!UICONTROL Done]**.
+1. Select the appropriate assets to select them to include in the condition and then select **[!UICONTROL Done]**.
 
    Create Condition page appears and lists the added assets.
 
@@ -72,11 +72,11 @@ The assets in the conditions that are rendered based on the applied rules and th
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] Reject Change.** Tap this icon to reject the changes you may have made to the asset and the rule in the condition.
-   **[B] Accept Change.** Tap this icon to accept the changes you have made in the asset and rule in the condition.
-   **[C] Duplicate Asset.** Tap this icon to create a copy of the asset along with the applied rule, if any, in the condition. Then you can proceed to editing the rule and asset for duplicated asset. Duplicating an asset is useful for creating similar rules to display alternate assets based on a particular context.
-   **[D] Show Preview.** Tap this icon to display a preview of the asset within the Create\Edit Condition page.
-   **'server' Reorder.** Tap and hold this icon to drag-and-drop assets to reorder them within a condition.
+   **[A] Reject Change.** Select this icon to reject the changes you may have made to the asset and the rule in the condition.
+   **[B] Accept Change.** Select this icon to accept the changes you have made in the asset and rule in the condition.
+   **[C] Duplicate Asset.** Select this icon to create a copy of the asset along with the applied rule, if any, in the condition. Then you can proceed to editing the rule and asset for duplicated asset. Duplicating an asset is useful for creating similar rules to display alternate assets based on a particular context.
+   **[D] Show Preview.** Select this icon to display a preview of the asset within the Create\Edit Condition page.
+   **'server' Reorder.** Select and hold this icon to drag-and-drop assets to reorder them within a condition.
 
    You can select the following options to specify how the condition behaves at runtime:
 
@@ -84,7 +84,7 @@ The assets in the conditions that are rendered based on the applied rules and th
 
     * **Page Break**: Select this option ( ![break](assets/break.png)) to add a page break between the assets of the conditions. When this option is not selected ( ![nobreak](assets/nobreak.png)), if a condition is overflowing to the next page in the print output, the whole condition is shifted to the next page instead of breaking in the page between the assets in the condition.
 
-1. Tap **[!UICONTROL Create Rule]** to add rules to display or hide the assets, as required. To use variables in the rules, see [creating variables](#variables). For more information, see [Adding rules to condition](#ruleeditor).
+1. Select **[!UICONTROL Create Rule]** to add rules to display or hide the assets, as required. To use variables in the rules, see [creating variables](#variables). For more information, see [Adding rules to condition](#ruleeditor).
 
    The created rules appear in the RULE column in the Create Condition screen.
 
@@ -94,7 +94,7 @@ The assets in the conditions that are rendered based on the applied rules and th
    >
    >You can insert assets in your condition that already have rules or repeat applied.
 
-1. Tap **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Save]**.
 
    The condition is created. Now you can proceed to using the condition as a building block while creating an Interactive Communication.
 
@@ -108,9 +108,9 @@ You can edit a condition using the following steps. You can also choose to edit 
 
 1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Navigate to the condition and select it.
-1. Tap **[!UICONTROL Edit]**.
+1. Select **[!UICONTROL Edit]**.
 1. Make the required changes in the condition. For more details on the information you can change in a condition, see [Create condition](#createcondition).
-1. Tap **[!UICONTROL Save]** and then tap **[!UICONTROL Close]**.
+1. Select **[!UICONTROL Save]** and then select **[!UICONTROL Close]**.
 
 ## Create rules in condition {#ruleeditor}
 
@@ -125,7 +125,7 @@ Using rule editor in a condition, you can create rules to display or hide assets
 
 ### Create rule in condition {#create-rule-in-condition}
 
-1. While creating or editing a condition, tap ![ruleeditoricon](assets/ruleeditoricon.png) (Rule Editor) icon for the relevant asset.
+1. While creating or editing a condition, select ![ruleeditoricon](assets/ruleeditoricon.png) (Rule Editor) icon for the relevant asset.
 
    The Create Rule dialog appears. In addition to string, number, mathematical expression, and date, the following are also available in the Rule Editor for creating statements of the rules:
 
@@ -147,53 +147,53 @@ Using rule editor in a condition, you can create rules to display or hide assets
 
    Rule to show an asset when policy type is standard
 
-    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog lets you create [variables](#variables) to construct rules. Tap Resize again to go back to the regular Create Rule dialog.
+    * While creating or editing a rule, you can also select ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog lets you create [variables](#variables) to construct rules. Select Resize again to go back to the regular Create Rule dialog.
 
     * You can also create multiple conditions in a rule.
 
-1. Tap **[!UICONTROL Done]**.
+1. Select **[!UICONTROL Done]**.
 
    The rule gets applied to the asset.
 
 ## Creating and using variables in a condition {#variables}
 
-While creating or editing a rule in a condition, you can tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog. The expanded, full-window dialog lets you:
+While creating or editing a rule in a condition, you can select ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog. The expanded, full-window dialog lets you:
 
 * Create and use variables in the rule
 * Drag-and-drop form data model's properties and variables in the rule
 
-Tap Resize again to go back to the Create Rule\Edit Rule dialog.
+Select Resize again to go back to the Create Rule\Edit Rule dialog.
 
 ### Create variables {#create-variables}
 
-1. While creating or editing a rule in a condition, you can tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog.
+1. While creating or editing a rule in a condition, you can select ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog.
 
    The Expanded, full-window dialog appears.
 
    ![expandededitruledialog](assets/expandededitruledialog.png)
 
-1. In the left pane, tap **[!UICONTROL Variables]**.
+1. In the left pane, select **[!UICONTROL Variables]**.
 
    The Variables pane appears.
 
    ![expandededitrulevariables](assets/expandededitrulevariables.png)
 
-1. Tap **[!UICONTROL Create]**.
+1. Select **[!UICONTROL Create]**.
 
    Create Variables pane appears.
 
-1. Enter the following information and tap **[!UICONTROL Create]**:
+1. Enter the following information and select **[!UICONTROL Create]**:
 
     * **[!UICONTROL Name]**: Name of the variable.
     * **[!UICONTROL Description]**: Optionally enter a description about the variable.
     * **[!UICONTROL Type]**: Select a type of the variable: String, Number, Boolean, or Date.
     * **[!UICONTROL Allow Specific Values Only]**: For String and Number variables, you can ensure that the agent chooses from a specific set of values for a placeholder in the Agent UI. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values]** field.
 
-1. Tap **[!UICONTROL Create]**.
+1. Select **[!UICONTROL Create]**.
 
    The variable is created and listed in the Variables pane.
 
 1. To insert a variable in the rule, drag-and-drop the variable into a placeholder for an option in the rule.
-1. After you have constructed a valid rule, tap **[!UICONTROL Done]**.
+1. After you have constructed a valid rule, select **[!UICONTROL Done]**.
 
    Proceed to making further changes, if necessary, in the condition and saving it.

@@ -22,7 +22,7 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 
 ### A Touch-Enabled UI {#a-touch-enabled-ui}
 
-AEM's user interface has been enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. This is in contrast to how a traditional desktop interface operates with mouse actions such as click, double-click, right-click, and mouseover.
+AEM's user interface has been enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as select, touch-and-hold, and swipe. This is in contrast to how a traditional desktop interface operates with mouse actions such as click, double-click, right-click, and mouseover.
 
 As the AEM UI is touch-enabled, you can use the touch gestures on your touch devices (for example, mobile or tablet) and the mouse actions on a traditional desktop device.
 
@@ -318,12 +318,12 @@ Selecting a specific resource depends on a combination of the view and the devic
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile devices:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Select the thumbnail</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile devices:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Select the thumbnail</li>
     </ul> </td>
   </tr>
   <tr>
@@ -331,12 +331,12 @@ Selecting a specific resource depends on a combination of the view and the devic
    <td>
     <ul>
      <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
-     <li>Mobile devices:<br /> Tap-and-hold the card</li>
+     <li>Mobile devices:<br /> Select-and-hold the card</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Click the card</li>
-     <li>Mobile devices:<br /> Tap the card</li>
+     <li>Mobile devices:<br /> Select the card</li>
     </ul> </td>
   </tr>
   <tr>
@@ -344,12 +344,12 @@ Selecting a specific resource depends on a combination of the view and the devic
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile devices:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Select the thumbnail</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile devices:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Select the thumbnail</li>
     </ul> </td>
   </tr>
  </tbody>

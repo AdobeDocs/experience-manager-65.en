@@ -33,7 +33,7 @@ You can upload the supported asset types individually or as a ZIP archive. You c
 
 1. Log in to the AEM Forms user interface by accessing `https://'[server]:[port]'/aem/forms.html`.
 1. Navigate to the folder where you want to upload the form or the folder containing forms.
-1. In the actions toolbar, tap **Create &gt; File Upload**.
+1. In the actions toolbar, select **Create &gt; File Upload**.
 
    ![Files from local storage option under Create](assets/step.png)
 

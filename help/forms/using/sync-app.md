@@ -24,16 +24,16 @@ When you are online with the AEM Forms server, by default, your app is synchroni
 
 **To synchronize the app manually**
 
-Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right corner of the home screen.
+Select the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right corner of the home screen.
 
 **To alter the synchronization frequency**
 
-1. To go to the Setting screen, tap the menu button at the upper-left corner of the Home screen, and then tap **Settings**.
-1. In the Settings screen, tap the General tab.
+1. To go to the Setting screen, select the menu button at the upper-left corner of the Home screen, and then select **Settings**.
+1. In the Settings screen, select the General tab.
 
    ![Sync frequency setting in General Settings window](assets/gen-settings-2.png)
 
-1. On the Sync frequency option, tap the value to the right of Sync frequency.
+1. On the Sync frequency option, select the value to the right of Sync frequency.
 1. In the drop-down list, select the new synchronization frequency.
 
 ### Technical specifications {#technical-specifications}

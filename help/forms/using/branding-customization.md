@@ -175,7 +175,7 @@ Ensure that you have following images:
 
 ## Customizing the logo in the app menu {#customizing_images_on_the_login_page-1}
 
-After you login to the AEM Forms app and tap the menu button, you can see the logo above the menu. Perform the following steps to customize the default logo:
+After you login to the AEM Forms app and select the menu button, you can see the logo above the menu. Perform the following steps to customize the default logo:
 
 **Before you start**
 

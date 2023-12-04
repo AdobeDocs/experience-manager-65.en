@@ -25,8 +25,8 @@ In the General tab, change the download attachments, offline mode, landing scree
 
 **Navigate to the General tab on the Settings screen**
 
-1. To go to the Setting screen, tap the Menu button at the upper-left corner of the Home screen, and then Tap **Settings**.
-1. In the Settings screen, tap the General tab.
+1. To go to the Setting screen, select the Menu button at the upper-left corner of the Home screen, and then Select **Settings**.
+1. In the Settings screen, select the General tab.
 
    ![General settings in the AEM Forms app](assets/gen-settings-1.png)
 

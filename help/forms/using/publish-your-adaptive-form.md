@@ -37,7 +37,7 @@ When the adaptive form is published as an AEM Page, then the entire web page con
 
 1. Log in to AEM [!DNL Forms] author instance and locate the shipping-address-add-update-form adaptive form in the AEM [!DNL Forms] UI.
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
-1. Select the shipping-address-add-update-form adaptive form and tap **[!UICONTROL Publish]**. A dialog containing assets related to the adaptive form is displayed. Tap **[!UICONTROL Publish]**. The adaptive form is published and a success dialog appears.
+1. Select the shipping-address-add-update-form adaptive form and select **[!UICONTROL Publish]**. A dialog containing assets related to the adaptive form is displayed. Select **[!UICONTROL Publish]**. The adaptive form is published and a success dialog appears.
 1. Open the form on the publish instance. The form is available for end user to fill and submit.
    `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
@@ -53,11 +53,11 @@ AEM [!DNL Forms] provide a component, AEM [!DNL Forms] Container, to embed an ad
 
    The We.Retail site is shipped with AEM. If you do not have the We.Retail site installed, see to [We.Retail Reference Implementation](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) install the site.
 
-1. Tap ![properties](assets/properties.png) page information and select the **[!UICONTROL Edit Template]** option in the newly created We.Retail site page. The template of the page opens in a new tab of the browser.
-1. Tap inside the **[!UICONTROL layout container]** box and tap ![feedmanagement](assets/feedmanagement.png). In the **[!UICONTROL Allowed Components]** tab, expand the **[!UICONTROL General]** accordion, select the **[!UICONTROL AEM Form]** option, and tap ![save_icon](assets/save_icon.svg). The AEM [!DNL Forms] Container component is enabled for the page.
+1. Select ![properties](assets/properties.png) page information and select the **[!UICONTROL Edit Template]** option in the newly created We.Retail site page. The template of the page opens in a new tab of the browser.
+1. Select inside the **[!UICONTROL layout container]** box and select ![feedmanagement](assets/feedmanagement.png). In the **[!UICONTROL Allowed Components]** tab, expand the **[!UICONTROL General]** accordion, select the **[!UICONTROL AEM Form]** option, and select ![save_icon](assets/save_icon.svg). The AEM [!DNL Forms] Container component is enabled for the page.
 
-1. Open the browser tab containing AEM [!DNL Sites] page opened in step 1. Tap the **[!UICONTROL Drag components here]** box and tap **+.** In the **[!UICONTROL Insert New Component]** box, tap **[!UICONTROL AEM Form]**. The **[!UICONTROL AEM Forms Container]** component is added to the page.
-1. Tap the **[!UICONTROL AEM Forms container]** component and tap ![configure-icon](assets/configure-icon.svg). A dialog box with properties of AEM [!DNL Forms] Container appears. In the **[!UICONTROL Asset Path]** field, browse and select the shipping-address-add-update-form adaptive form. Tap ![save_icon](assets/save_icon.svg). The adaptive form is embedded in the page.
+1. Open the browser tab containing AEM [!DNL Sites] page opened in step 1. Select the **[!UICONTROL Drag components here]** box and select **+.** In the **[!UICONTROL Insert New Component]** box, select **[!UICONTROL AEM Form]**. The **[!UICONTROL AEM Forms Container]** component is added to the page.
+1. Select the **[!UICONTROL AEM Forms container]** component and select ![configure-icon](assets/configure-icon.svg). A dialog box with properties of AEM [!DNL Forms] Container appears. In the **[!UICONTROL Asset Path]** field, browse and select the shipping-address-add-update-form adaptive form. Select ![save_icon](assets/save_icon.svg). The adaptive form is embedded in the page.
 1. Publish both the adaptive form and [!DNL Sites] page. Here are a few points to consider:
 
     * If you publish the AEM [!DNL Sites] page for the first time and it includes an embedded form, publish the [!DNL Sites] page and the embedded form.
