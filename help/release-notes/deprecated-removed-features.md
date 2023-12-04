@@ -56,7 +56,7 @@ Customers are advised to review if they use the feature/capability in their curr
 This section lists features and capabilities that have been removed from AEM 6.5. Prior releases had these capabilities marked as deprecated.
 
 |Area|Feature|Replacement|Version (SP)|
-|--- |--- |-- |--- |
+|--- |--- |--- |--- |
 | Integration with [!DNL Experience Cloud] | You could synchronize your assets with [!DNL Experience Cloud] using a configuring via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] was formerly called [!DNL Adobe Experience Cloud]. | If you have any queries, [contact Adobe Customer Support](https://experienceleague.adobe.com/?support-solution=General#support). ||
 |Analytics Activity Map|The version of the Activity Map that is included within AEM.|Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM. Use the [ActivityMap plug-in provided by Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=en). ||
 |Integrations|ExactTarget integration has been removed from the default distribution (Quickstart) and it is no longer available.|No replacement. ||
