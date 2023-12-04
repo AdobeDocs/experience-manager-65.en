@@ -24,7 +24,7 @@ AEM Forms provides a set of OSGi services to accomplish different document level
 
 * **Output service:** Enables you to create documents in different formats, including PDF, laser printer formats, and label printer formats. Laser printer formats are PostScript and Printer Control Language (PCL). For more information, see [Output Service](/help/forms/using/output-service.md).
 
-* **PDF Generator service:** The PDF Generator service provides APIs to convert native file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents. For more information, see [PDF Generator Service](aem-document-services-programmatically.md#pdfgeneratorservice).
+* **PDF Generator service:** The PDF Generator service provides APIs to converts native file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents. For more information, see [PDF Generator Service](aem-document-services-programmatically.md#pdfgeneratorservice).
 
 * **Reader Extension service:** Enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The service activates features that are not available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document. For more information, see [Reader Extension Service](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
 
@@ -36,7 +36,7 @@ AEM Forms provides a set of OSGi services to accomplish different document level
 
    The signature service accesses certificates and credentials that are stored in the trust store. For more information, see [Signature Service](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms is a powerful enterprise-class platform and document services is only one of the capabilities of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms is a powerful enterprise-class platform and the document services is only one of the capability of AEM Forms. For the complete list of capabilities, see [Introduction to AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Deployment Topology {#deployment-topology}
 
@@ -665,10 +665,6 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 +++
 
-+++Microsoft Office 2019 is not running on Microsoft Windows Server 2019
-
-* Ensure that you don't have any active remote connection with AEM server.
-
 +++HTML to PDF conversion issues
 
 * Ensure that fonts directories are added in PDF Generator config UI.
@@ -795,23 +791,8 @@ When user tries to convert Word or Excel files to PDF on Microsoft Windows Serve
 *Error message from the primary converter:
 ALC-PDG-015-003-The system cannot open the input file. Submit your file again or contact your system administrator.*
 
-To resolve the issues, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+To resolve the issue, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md). 
 
-+++ Unable to convert Excel files to PDF on Windows Server 2019
-
-When you convert Microsoft Excel 2019 to PDF on Microsoft Windows Server 2019, you must ensure the following:
-
-* While using the PDF Generator service, your Windows machine should not have any active remote connection with the AEM server (Windows RDP session).
-* The default printer must be set to Adobe PDF.
-
->[!NOTE]
->* For Apple macOS and Ubuntu OS, you need not require to configure the aforementioned settings.
-
-+++ Unable to convert XPS files to PDFs
- 
-To resolve the issue, [create a feature-specific registry key on Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
-
-+++
 
 ## Next steps {#next-steps}
 
