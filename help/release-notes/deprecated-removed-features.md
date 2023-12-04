@@ -50,14 +50,13 @@ Customers are advised to review if they use the feature/capability in their curr
 |Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Forms|AEM Forms integration with AEM Mobile is deprecated. | No Replacement is available. ||Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Developers|Lodash/underscore client library. Adobe does not plan to further maintain and update the Lodash/underscore client library that is shipped as part of the distribution (Quickstart). | Adobe recommends customers that still require Lodash/underscore for their code to add it into their project code base. ||
-|Screens|Adobe does not plan to further maintain and update the com.adobe.cq.screens.mq.activemq bundle and related configurations that are used for 2Publishers setup.| Adobe recommends customers that still require 2Publishers setup can use load-balancer approach. ||
 
 ## Removed features {#removed-features}
 
 This section lists features and capabilities that have been removed from AEM 6.5. Prior releases had these capabilities marked as deprecated.
 
 |Area|Feature|Replacement|Version (SP)|
-|--- |--- |--- |--- |
+|--- |--- |-- |--- |
 | Integration with [!DNL Experience Cloud] | You could synchronize your assets with [!DNL Experience Cloud] using a configuring via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] was formerly called [!DNL Adobe Experience Cloud]. | If you have any queries, [contact Adobe Customer Support](https://experienceleague.adobe.com/?support-solution=General#support). ||
 |Analytics Activity Map|The version of the Activity Map that is included within AEM.|Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM. Use the [ActivityMap plug-in provided by Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=en). ||
 |Integrations|ExactTarget integration has been removed from the default distribution (Quickstart) and it is no longer available.|No replacement. ||
@@ -71,6 +70,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 |Developers|Remove `customJavaScriptPath` support in HTML Client Library Manager.|No replacement||
 | [!DNL Assets] | The assets offloading feature is removed in [!DNL Adobe Experience Manager] 6.5. | No replacement is available. ||
 | Cache | `system/console/slingjsp` is removed and is no longer available in AEM 6.5.|Classes and Slightly cache is stored under the Apache Sling Commons FileSystem ClassLoader bundle. You can check the bundle number in the AEM Web Console and remove the cache folder directly from the file system (`crx-quickstart/launchpad/felix/bundle<ID>`).||
+|Screens | Adobe does not plan to further maintain and update the com.adobe.cq.screens.mq.activemq bundle and related configurations. | No replacement is available. ||
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
