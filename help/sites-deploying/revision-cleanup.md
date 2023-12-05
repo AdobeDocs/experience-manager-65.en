@@ -546,7 +546,7 @@ The error.log is verbose if there are incidents during the online revision clean
   <tr>
     <td>N/A</td>
     <td>TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles.</td>
-    <td>This message doesn't mean that there was an unrecoverable error, but only that compaction was terminated after a some attempts. Also, read the <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">following paragraph.</a></td>
+    <td>This message does not mean that there was an unrecoverable error, but only that compaction was terminated after some attempts. Also, read the <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">following paragraph.</a></td>
     <td>Read the following <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak documentation</a>, and the last question of the Running Online Revision Cleanup section.</a></td>
   </td>
   </tr>
