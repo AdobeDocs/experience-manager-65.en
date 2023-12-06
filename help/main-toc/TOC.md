@@ -361,3 +361,6 @@ user-guide-title: AEM 6.5
   + Edge Delivery Services {#edge-delivery-services}
     + [Getting Started with Edge Delivery](/help/edge/overview.md)
     + [Using Edge Delivery](/help/edge/using.md)
+  + AEM Fluid Experiences {#aem-fluid-experiences}
+    + [Feature List](/help/fluid-experiences/feature-list.md)
+    
