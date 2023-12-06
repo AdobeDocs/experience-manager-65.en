@@ -358,3 +358,6 @@ user-guide-title: AEM 6.5
     + [Using Social Tag Cloud](/help/communities/tagcloud.md)
     + [Using Voting](/help/communities/voting.md)
     + [Create a Sample Page](/help/communities/create-sample-page.md)
+  + Edge Delivery Services {#edge-delivery-services}
+    + [Getting Started with Edge Delivery](/help/edge/overview.md)
+    + [Using Edge Delivery](/help/edge/using.md)
