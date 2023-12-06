@@ -116,7 +116,6 @@ role: Admin
   + [HTTP2 Delivery of Content FAQ](scene7-http2faq.md)
   + [Troubleshooting your Adobe Campaign Integration](troubleshooting-campaignintegration.md)
   + [SharePoint Connector Licenses, Copyright Notices, and Disclaimers](sharepoint-connector-licenses.md)
-  + [SharePoint Connector](sharepoint-connector.md)
   + [DHTML Viewer End-of-Life FAQs](dhtml-viewer-endoflifefaqs.md)
   + [Integrating with Adobe Campaign Classic](campaignonpremise.md)
   + [Related Community Articles](related-community-articles.md)
