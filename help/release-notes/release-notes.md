@@ -103,7 +103,7 @@ to
 #### GraphQL Query Editor{#sites-graphql-query-editor-6519}
 
 * GraphQL Editor user interface does not let you scroll through all the persisted queries when there is a high number of queries (for example, more than 25). (SITES-16008) 
-* The GraphQL Editor is not saving the publish status of persisted queries. The unpublish button appears in the GraphQL Editor, but the icon that indicates that the persisted query is published does not appear. Refreshing the page shows that the persisted query is not even published. (SITES-15858) 
+* The GraphQL Editor is not saving the publishing status of persisted queries. The unpublish button appears in the GraphQL Editor, but the icon that indicates that the persisted query is published does not appear. Refreshing the page shows that the persisted query is not even published. (SITES-15858) 
 
 #### Launches{#sites-launches-6519}
 

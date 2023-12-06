@@ -1,12 +1,10 @@
 ---
 title: Mixed Media Sets
 description: Learn how to work with mixed media sets in Dynamic Media
-uuid: cecad772-ed05-46f6-ba44-107195866b0d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 feature: Mixed Media Sets,Asset Management
 role: User, Admin

@@ -35,7 +35,7 @@ When creating an app based on the template of another app, you will get an app t
 Steps to creating an app based on an app template:
 
 1. Navigate to the AEM Mobile app catalog: *&lt;server-url&gt;/aem/apps.html/content/mobileapps*
-1. Select **Create** -> **App** as shown below
+1. Select **Create** > **App** as shown below
 
 Once you create an app using this template, you can add articles, banners, and collections to your app. To re-visit, creation of articles, banners, and collections, See [Content Management Actions](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
