@@ -1,13 +1,13 @@
 ---
 title: Inline condition and repeat in Interactive Communications and letters
-seo-title: Inline condition and repeat in Interactive Communications and letters
+
 description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
-seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
-uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
-discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
+
 docset: aem65
 
 feature: Correspondence Management

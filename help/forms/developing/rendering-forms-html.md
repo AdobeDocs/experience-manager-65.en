@@ -1,15 +1,15 @@
 ---
 title: Rendering Forms as HTML
-seo-title: Rendering Forms as HTML
+
 description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
-seo-description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
-uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
+
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 ---

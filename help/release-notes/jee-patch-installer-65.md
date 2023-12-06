@@ -1,9 +1,9 @@
 ---
 title: AEM Forms JEE Patch Installer
 description: Learn how to use AEM Forms JEE Patch Installer to fix issues in AEM 6.5 Forms components.
-uuid: 76662858-afca-4ba3-883b-9b9a61874f15
+
 content-type: reference
-discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
+
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 ---
 # AEM Forms JEE Patch Installer {#aem-forms-jee-patch-installer}

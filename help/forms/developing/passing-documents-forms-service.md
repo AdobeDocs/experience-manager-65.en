@@ -1,15 +1,15 @@
 ---
 title: Passing Documents to the FormsService
-seo-title: Passing Documents to the FormsService
+
 description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design in the com.adobe.idp.Document object. 
-seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design in the com.adobe.idp.Document object.
-uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
+
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 ---

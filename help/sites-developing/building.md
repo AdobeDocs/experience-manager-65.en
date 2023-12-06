@@ -1,14 +1,14 @@
 ---
 title: Building Tagging into an AEM Application
-seo-title: Building Tagging into an AEM Application
+
 description: Programmatically work with tags or extending tags within a custom AEM application
-seo-description: Programmatically work with tags or extending tags within a custom AEM application
-uuid: 0549552e-0d51-4162-b418-babf4ceee046
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
+
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 ---

@@ -1,8 +1,8 @@
 ---
 title: Forms Designer help
-seo-title: Forms Designer help
+
 description: Forms Designer help a user on submitting the form.
-seo-description: Forms Designer help
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish

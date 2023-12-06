@@ -1,14 +1,14 @@
 ---
 title: Extending Workflow Functionality
-seo-title: Extending Workflow Functionality
+
 description: Learn how to extend Adobe Experience Manager's workflow functionality.
-seo-description: null
-uuid: 9f4ea2a8-8b21-4e7c-ac73-dd37d9ada111
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
+
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
 ---
 # Extending Workflow Functionality{#extending-workflow-functionality}

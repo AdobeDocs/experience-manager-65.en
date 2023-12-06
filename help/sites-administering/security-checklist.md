@@ -1,14 +1,14 @@
 ---
 title: Security Checklist
-seo-title: Security Checklist
+
 description: Learn about the various security considerations when configuring and deploying AEM.
-seo-description: Learn about the various security considerations when configuring and deploying AEM.
-uuid: 8e293316-4177-4271-87c6-9dc1a2e85a07
+
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
+
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security

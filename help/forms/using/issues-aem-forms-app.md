@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot AEM Forms app
-seo-title: Troubleshoot AEM Forms app
+
 description: Learn about common issues with AEM Forms app and how to troubleshoot them.
-seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them.
-uuid: a5cc3065-0ebf-48c0-a8fe-f1061632ca90
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
+
 exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 ---
 # Troubleshoot AEM Forms app {#troubleshoot-aem-forms-app}
