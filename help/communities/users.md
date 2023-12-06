@@ -46,7 +46,7 @@ When a new community site is created, new user groups are dynamically created wi
 
 The names of the groups are generated from the name given the site during [community site creation](sites-console.md#step13asitetemplate). The unique ids avoid naming conflicts for similarly named community sites and community groups on the same server.
 
-For example, if the site name were "*engage*" for a site titled "We.Retail Engage", then one of the user groups created would be:
+For example, if the site name were "*engage*" for a site titled " Engage", then one of the user groups created would be:
 
 * Community *Engage* Members
 

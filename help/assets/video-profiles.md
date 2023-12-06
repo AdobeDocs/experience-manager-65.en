@@ -1,12 +1,10 @@
 ---
 title: Video profiles
 description: Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. You can also add smart crop to your videos.
-uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Video Profiles
 role: User, Admin
