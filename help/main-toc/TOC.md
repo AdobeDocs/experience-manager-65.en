@@ -10,7 +10,7 @@ user-guide-title: AEM 6.5
 
 # Adobe Experience Manager 6.5 Help {#content}
 
-+ Experience Manager Assets {#assets}
++ AEM Assets {#assets}
   + [[!DNL Assets] user guide](/help/assets/home.md)
   + [About DAM](/help/assets/assets.md)
   + [Best practices for assets](/help/assets/best-practices-for-assets.md)
@@ -174,3 +174,51 @@ user-guide-title: AEM 6.5
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
++ AEM Content and Commerce {#commerce}
+  + [AEM Content and Commerce](/help/commerce/home.md)
+  + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
+  + [Introduction and overview](/help/commerce/cif/introduction.md)
+  + Integrations {#integrations}
+    + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
+    + [3rd Party Commerce Solution](/help/commerce/cif/integrating/third-party.md)
+  + AEM Storefront {#storefront}
+    + [Getting started](/help/commerce/cif/getting-started.md)
+    + Authoring {#authoring}
+      + [Commerce Experiences](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
+      + [Product Cockpit](/help/commerce/cif/authoring/product-cockpit.md)
+      + [Enrich Product Data with Associated Content](/help/commerce/cif/authoring/enrich-product-associated-content.md)
+      + [Product Recommendations](/help/commerce/cif/authoring/product-recommendations.md)
+    + Administering {#administering}
+      + [Multi-Store Setup](/help/commerce/cif/configuring/multi-store-setup.md)
+      + [Multi-Template Usage](/help/commerce/cif/configuring/multi-template-usage.md)
+      + [Configuring URLs for SEO](/help/commerce/cif/configuring/advanced-url-configuration.md)
+      + [Caching Options](/help/commerce/cif/configuring/caching.md)
+      + [Custom HTTP Headers](/help/commerce/cif/configuring/custom-http-headers.md)
+    + Developing {#developing}
+      + [Developing with AEM](/help/commerce/cif/develop.md)
+      + [Styling CIF Components](/help/commerce/cif/customizing/style-cif-component.md)
+      + [Customizing CIF Components](/help/commerce/cif/customizing/customize-cif-components.md)
+      + [Using CIF catalog pickers](/help/commerce/cif/customizing/use-cif-pickers.md)
+  + [Adobe Commerce PWA Studio](/help/commerce/cif/pwa-studio/getting-started.md)
+  + [Migration](/help/commerce/cif/migration.md)
+  + Release Notes {#release-notes}
+    + [2022](/help/commerce/cif/release-notes/release-notes-2022.md)
+    + [2021](/help/commerce/cif/release-notes/release-notes-2021.md)
+    + [2020](/help/commerce/cif/release-notes/release-notes-2020.md)
+    + [2019](/help/commerce/cif/release-notes/release-notes-2019.md)
+  + [FAQ](/help/commerce/cif/faq.md)
+  + AEM CIF Classic {#classic}
+    + [Overview](/help/commerce/cif-classic/home.md) 
+    + Deploying {#deploying}
+      + [eCommerce Overview](/help/commerce/cif-classic/deploying/ecommerce.md)
+      + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
+    + Administering {#administering}
+      + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
+      + [Concepts](/help/commerce/cif-classic/administering/concepts.md)
+      + [Administering Generic eCommerce](/help/commerce/cif-classic/administering/generic.md)
+      + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)  
+    + Developing {#developing}
+      + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
+      + [Developing (generic)](/help/commerce/cif-classic/developing/generic.md)
+      + [Developing with SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
+
