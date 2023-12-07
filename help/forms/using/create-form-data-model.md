@@ -230,3 +230,8 @@ Do the following to run the test:
    Now, if you test the read model service again for id 7107215, it fetches and displays the updated customer details as shown below.
 
    ![read-updated](assets/read-updated.png)
+
+
+>[!NOTE]
+>
+> You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List. Refer to [create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration), for detailed steps

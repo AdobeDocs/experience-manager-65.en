@@ -201,7 +201,7 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
 
-You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
 
 1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/using/create-form-data-model.md)
 1. [Configure the Form Data Model to retrieve and send data](/help/forms/using/work-with-form-data-model.md#configure-services)
