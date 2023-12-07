@@ -614,7 +614,7 @@ user-guide-title: AEM 6.5
      + [Performance & Scalability](/help/sites-deploying/performance.md)
 + Documentation Journeys {#journeys}
   + [What is a documentation journey?](/help/journey-documentation/home.md)
-  + [AEM Headless Journeys](/help/journey-headless/home.md)
+  + [AEM Headless Journeys](/help/journey-headless/overview.md)
   + AEM Headless Developer Journey {#developer}
     + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)
     + [Learn about CMS Headless Development](/help/journey-headless/developer/learn-about.md)
