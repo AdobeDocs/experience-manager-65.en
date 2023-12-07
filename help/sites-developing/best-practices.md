@@ -3,12 +3,12 @@ title: Best Practices for AEM developers
 
 description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers.
 
-uuid: f962c31f-8140-482f-b189-16376e23bfed
+
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
+
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 ---
 # Best Practices{#best-practices}

@@ -1,14 +1,10 @@
 ---
 title: Coding Guidelines
-seo-title: Coding Guidelines
 description: Communities developer guidelines, tips, and tricks
-seo-description: Communities developer guidelines, tips, and tricks
-uuid: 311ef4f7-7f2c-44c3-bcf2-f68713752623
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
 exl-id: a23aab83-1dfa-4d91-9b6b-6246a2103896
 ---
 # Coding Guidelines {#coding-guidelines}

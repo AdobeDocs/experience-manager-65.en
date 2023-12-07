@@ -1,8 +1,8 @@
 ---
 title: Customizing and Extending Content Fragments
-seo-title: Customizing and Extending Content Fragments
+
 description: A content fragment extends a standard asset. Learn how you can customize them.
-seo-description: A content fragment extends a standard asset. Learn how you can customize them.
+
 topic-tags: extending-aem
 content-type: reference
 docset: aem65

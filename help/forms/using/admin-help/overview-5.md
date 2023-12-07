@@ -1,12 +1,12 @@
 ---
 title: Introduction to working with PDF Generator
 description: Learn how to convert various file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents.
-uuid: 1942bf9f-99cc-48b6-89f4-e78c1957a300
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
+
 docset: aem65
 
 feature: PDF Generator

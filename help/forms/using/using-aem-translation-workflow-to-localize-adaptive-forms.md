@@ -1,12 +1,12 @@
 ---
 title: Using AEM translation workflow to localize adaptive forms and document of record
-seo-title: Using AEM translation workflow to localize adaptive forms and document of record
+
 description: Learn to use AEM translation workflows to localize adaptive forms and document of record.
-seo-description: Learn to use AEM translation workflows to localize adaptive forms and document of record.
-uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
+
+
 content-type: reference
 topic-tags: develop
-discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
+
 noindex: true
 feature: Adaptive Forms
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a

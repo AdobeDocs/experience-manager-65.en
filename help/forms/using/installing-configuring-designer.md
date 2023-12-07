@@ -1,14 +1,14 @@
 ---
 title: Installing and configuring Designer
-seo-title: Installing and configuring Designer
+
 description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.  
-seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.  
-uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
+
+
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
+
 docset: aem65
 
 role: Admin

@@ -1,12 +1,12 @@
 ---
 title: Configuring Adobe PDF settings
 description: Learn how to configure Adobe PDF settings visible on the Adobe PDF Settings page. You can use any of the predefined PDF settings or create your own.
-uuid: 980c9d6a-f75e-4e7d-b050-d2d07a10ef33
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
+
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 ---

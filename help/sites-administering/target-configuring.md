@@ -1,14 +1,14 @@
 ---
 title: Manually Configuring the Integration with Adobe Target
-seo-title: Manually Configuring the Integration with Adobe Target
+
 description: Learn how to manually configure the integration with Adobe Target.
-seo-description: Learn how to manually configure the integration with Adobe Target.
-uuid: 0bb76a65-f981-4cc5-bee8-5feb3297137c
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
+
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 ---
 # Manually Configuring the Integration with Adobe Target {#manually-configuring-the-integration-with-adobe-target}

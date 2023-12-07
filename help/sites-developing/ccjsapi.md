@@ -1,14 +1,14 @@
 ---
 title: Client Context JavaScript API
-seo-title: Client Context JavaScript API
+
 description: Learn about the JavaScript API for Client Context in Adobe Experience Manager.
-seo-description: The JavaScript API for Client Context
-uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
+
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 ---

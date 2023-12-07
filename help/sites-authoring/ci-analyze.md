@@ -1,14 +1,14 @@
 ---
 title: Analyzing Page Performance
-seo-title: Analyzing Page Performance
+
 description: Use the Content Insight page to analyze the performance of the page that you are authoring
-seo-description: Use the Content Insight page to analyze the performance of the page that you are authoring
-uuid: 563d3e98-20d9-4cca-a174-bafd6e65c1bb
+
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
+
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 ---

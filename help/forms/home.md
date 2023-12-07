@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager 6.5 Forms Guide
-seo-title: AEM 6.5 Forms Guide
+
 description: Use this AEM 6.5 guide to create, manage, publish, and update digital forms. Find help on installing, upgrading, and configuring them, and learn about authoring adaptive forms.
-seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
+
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
 ---
 # Adobe Experience Manager 6.5 Forms Guide

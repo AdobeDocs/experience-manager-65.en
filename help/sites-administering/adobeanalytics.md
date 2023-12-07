@@ -1,14 +1,14 @@
 ---
 title: Integrating with Adobe Analytics
-seo-title: Integrating with Adobe Analytics
+
 description: Learn how to integrate Adobe Experience Manager (AEM) with Adobe Analytics.
-seo-description: Learn how to integrate Adobe Experience Manager (AEM) with Adobe Analytics.
-uuid: d8548263-6ac5-45fb-8c70-52ecd4161bbb
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
+
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 ---

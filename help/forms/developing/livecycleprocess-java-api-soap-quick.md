@@ -1,14 +1,14 @@
 ---
 title: LiveCycleProcess Java API(SOAP)Quick Start
-seo-title: LiveCycleProcess Java API(SOAP)Quick Start
+
 description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job. 
-seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
-uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
+
 role: Developer
 exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
 ---

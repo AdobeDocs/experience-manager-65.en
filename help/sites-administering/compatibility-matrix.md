@@ -1,12 +1,12 @@
 ---
 title: Compatibility Matrix for AEM Screens Player
-seo-title: Compatibility Matrix for AEM Screens Player
+
 description: This page lists the AEM Screens Players with their respective AEM Screens version.
-seo-description: This page lists the AEM Screens Players with their respective AEM Screens version.
+
 page-status-flag: never-activated
-uuid: d5bf1eee-d22a-4962-8289-fd56a54d85ae
+
 contentOwner: jsyal
-discoiquuid: dbc16a51-74c4-43bb-9501-081de1eb2f7d
+
 ---
 
 # Compatibility Matrix for AEM Screens Player{#compatibility-matrix-for-aem-screens-player}

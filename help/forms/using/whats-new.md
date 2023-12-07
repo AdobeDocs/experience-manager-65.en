@@ -1,12 +1,12 @@
 ---
 title: New features summary | AEM 6.5 Forms
-seo-title: New features summary | AEM 6.5 Forms
+
 description: Latest features and improvements to forms and documents of world’s most advanced digital experience management solution.
-seo-description: Latest features and improvements to forms and documents of world’s most advanced digital experience management solution.
-uuid: 179d372d-b7f6-4771-8349-fc6b7854efac
+
+
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
+
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 ---

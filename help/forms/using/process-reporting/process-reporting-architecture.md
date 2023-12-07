@@ -1,13 +1,13 @@
 ---
 title: How Process Reporting Works
-seo-title: How Process Reporting Works
+
 description: Description of the services that make up the AEM Forms on JEE Process Reporting and an introduction to the Process Reporting UI
-seo-description: Description of the services that make up the AEM Forms on JEE Process Reporting and an introduction to the Process Reporting UI
-uuid: 37e31985-088a-4ef6-ba57-10a01597a873
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
-discoiquuid: a6ff50df-273d-48f7-b0c6-0e69e900b97f
+
 docset: aem65
 exl-id: 66dfac36-5b7e-40be-9921-efa9f2a9521c
 ---

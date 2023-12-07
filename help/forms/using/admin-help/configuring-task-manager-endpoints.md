@@ -1,12 +1,12 @@
 ---
 title: Configuring Task Manager endpoints
 description: Learn how to configure Task Manager endpoints to invoke the service. Different settings are required for configuring Task Manager endpoints.
-uuid: 07604b10-0bd7-4bce-9624-7ebac4754f56
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
+
 exl-id: 8495a3d7-6ac9-41f5-b1f9-31decaba118a
 ---
 # Configuring Task Manager endpoints {#configuring-task-manager-endpoints}

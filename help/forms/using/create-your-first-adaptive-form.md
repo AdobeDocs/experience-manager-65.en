@@ -1,11 +1,11 @@
 ---
 title: "Tutorial: Create your first adaptive form"
-seo-title: "Tutorial: Create your first adaptive form"
+
 description: Learn to create business class, interactive, and responsive forms.
-seo-description: Learn to create business class, interactive, and responsive forms.
-uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
+
+
 topic-tags: introduction
-discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
+
 docset: aem65
 
 feature: Adaptive Forms
