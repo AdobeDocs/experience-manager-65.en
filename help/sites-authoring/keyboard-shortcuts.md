@@ -1,12 +1,12 @@
 ---
 title: Keyboard shortcuts for consoles in AEM
 description: Save time when authoring by using these keyboard shortcuts.
-uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
+
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 ---
 # Keyboard Shortcuts for Consoles{#keyboard-shortcuts-for-consoles}

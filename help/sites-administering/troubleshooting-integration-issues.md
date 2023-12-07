@@ -1,14 +1,14 @@
 ---
 title: Troubleshooting Integration Issues
-seo-title: Troubleshooting Integration Issues
+
 description: Learn how to troubleshoot issues when integrating with Adobe Experience Manager.
-seo-description: Learn how to troubleshoot integration issues.
-uuid: fe080e58-a855-4308-a611-f72eb47ba82d
+
+
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
+
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
 ---
 # Troubleshooting Integration Issues{#troubleshooting-integration-issues}

@@ -1,14 +1,14 @@
 ---
 title: Configuring your Page for Bulk Editing of Page Properties
-seo-title: Configuring your Page for Bulk Editing of Page Properties
+
 description: Bulk editing of page properties lets you edit the properties of multiple pages at once
-seo-description: Bulk editing of page properties lets you edit the properties of multiple pages at once
-uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
+
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 ---
 # Configuring your Page for Bulk Editing of Page Properties {#configuring-your-page-for-bulk-editing-of-page-properties}

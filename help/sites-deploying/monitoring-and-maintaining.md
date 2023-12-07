@@ -1,12 +1,12 @@
 ---
 title: Monitoring and maintaining your Adobe Experience Manager instance
 description: Learn how to monitor and maintain your Adobe Experience Manager instance.
-uuid: 14466552-5c92-4730-a427-85675a2b121c
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
+
 docset: aem65
 
 feature: Configuring

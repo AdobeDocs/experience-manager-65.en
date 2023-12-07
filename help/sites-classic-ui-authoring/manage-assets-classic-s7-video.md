@@ -5,7 +5,7 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
+
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
 ---
 # Video{#video}

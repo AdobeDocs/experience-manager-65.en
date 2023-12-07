@@ -1,12 +1,12 @@
 ---
 title: Authoring a page for mobile devices
 description: When authoring a mobile page, the page is displayed in a way that emulates the mobile device. When authoring the page, you can switch between several emulators to see what the end-user sees when accessing the page.
-uuid: ca16979d-6e5f-444d-b959-ae92542039b2
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
+
 exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
 ---
 # Authoring a Page for Mobile Devices{#authoring-a-page-for-mobile-devices}

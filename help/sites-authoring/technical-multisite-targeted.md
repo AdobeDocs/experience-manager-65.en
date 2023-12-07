@@ -1,14 +1,14 @@
 ---
 title: How Multisite Management for Targeted Content is Structured
-seo-title: How Multisite Management for Targeted Content is Structured
+
 description: A diagram shows how multisite support for targeted content is structured
-seo-description: A diagram shows how multisite support for targeted content is structured
-uuid: 2d30cdf0-ab77-490d-aac0-db3a0d417a58
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
+
 exl-id: d8ba91ff-ad6e-4540-baff-a2c0c764a299
 ---
 # How Multisite Management for Targeted Content is Structured{#how-multisite-management-for-targeted-content-is-structured}

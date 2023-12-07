@@ -1,12 +1,10 @@
 ---
 title: 360/VR Video
 description: Learn how to work with 360 and Virtual Reality (VR) Video in Dynamic Media.
-uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 feature: 360 VR Video
 role: User, Admin

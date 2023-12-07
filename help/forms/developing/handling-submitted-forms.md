@@ -1,15 +1,15 @@
 ---
 title: Handling Submitted Forms
-seo-title: Handling Submitted Forms
+
 description: Use the Forms service to retrieve the submitted data entered in an interactive form. The user can submit the form data in XML, PDF, and URL UTF-16 formats.
-seo-description: Use the Forms service to retrieve the submitted data entered in an interactive form. The user can submit the form data in XML, PDF, and URL UTF-16 formats.
-uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
+
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 ---

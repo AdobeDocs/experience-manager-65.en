@@ -191,7 +191,7 @@ To active or deactive leads:
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   As with AEM pages, the publish status is indicated in the **Published** column.
+   As with AEM pages, the publishing status is indicated in the **Published** column.
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 

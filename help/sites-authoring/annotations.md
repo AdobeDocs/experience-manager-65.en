@@ -1,12 +1,12 @@
 ---
 title: Annotations when editing a content page
 description: Many components directly related to content let you add an annotation.
-uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
+
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 ---
 # Annotations when Editing a Page{#annotations-when-editing-a-page}

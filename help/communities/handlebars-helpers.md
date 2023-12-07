@@ -1,12 +1,10 @@
 ---
 title: SCF Handlebars Helpers
 description: Handlebars Helper methods to facilitate work with SCF
-uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
 ---
 # SCF Handlebars Helpers {#scf-handlebars-helpers}

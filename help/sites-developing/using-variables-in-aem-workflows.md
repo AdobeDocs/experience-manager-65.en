@@ -1,11 +1,11 @@
 ---
 title: Variables in AEM workflows
 description: Create a variable, set a value for the variable, and use it in OR Split and  Goto AEM workflow steps.
-uuid: cc62ff11-51d4-4db4-9c6d-5dc2caa1da52
+
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
+
 docset: aem65
 exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 ---

@@ -3,12 +3,12 @@ title: Using and Extending Widgets (Classic UI)
 
 description: Adobe Experience Manager's web-based interface uses AJAX and other modern browser technologies to enable WYSIWYG editing and formatting of content by authors right on the web page
 
-uuid: eb3da415-cbef-4766-a28e-837e238a4156
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
+
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 ---

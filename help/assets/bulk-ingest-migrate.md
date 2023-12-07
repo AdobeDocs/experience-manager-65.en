@@ -1,12 +1,10 @@
 ---
 title: Install feature pack 18912 for bulk asset migration
 description: Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from Dynamic Media Classic into Dynamic Media on Adobe Experience Manager. This optional feature pack is available from Adobe support.
-uuid: 45c2f5f8-4368-4d7b-a43e-fe96cfb272fd
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 feature: Asset Management
 role: User, Admin

@@ -1,13 +1,13 @@
 ---
 title: Variables in AEM Forms workflows
-seo-title: Variables in AEM Forms Workflows
+
 description: Create a variable, set a value for the variable, and use it in AEM Forms Workflow steps.
-seo-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
-uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
+
+
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
+
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 ---

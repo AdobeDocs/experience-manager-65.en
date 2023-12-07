@@ -1,12 +1,12 @@
 ---
 title: "Tutorial: Create Interactive Communication "
-seo-title: Create an Interactive Communication for Print and Web
+
 description: Create an Interactive Communication using all building blocks
-seo-description: Create an Interactive Communication using all building blocks
-uuid: 5ffaa86f-87c7-4673-8b41-63ec61421be2
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
+
 docset: aem65
 
 feature: Interactive Communication

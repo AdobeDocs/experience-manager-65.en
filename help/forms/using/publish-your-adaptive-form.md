@@ -1,12 +1,12 @@
 ---
 title: "Tutorial: Publish your adaptive form"
-seo-title: "Tutorial: Publish your adaptive form"
+
 description: Publish the adaptive form as an AEM page, embed the form to an AEM Sites page, or embed the adaptive form in an external webpage
-seo-description: Publish the adaptive form as an AEM page, embed the form to an AEM Sites page, or embed the adaptive form in an external webpage
-uuid: 1b164376-e61a-40aa-9f16-c79d24a72e20
+
+
 contentOwner: khsingh
 topic-tags: introduction
-discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
+
 docset: aem65
 
 feature: Adaptive Forms

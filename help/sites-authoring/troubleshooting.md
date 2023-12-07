@@ -1,12 +1,12 @@
 ---
 title: Troubleshooting when authoring in AEM
 description: Some issues that you might encounter when using AEM.
-uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
+
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 ---
 # Troubleshooting AEM when Authoring{#troubleshooting-aem-when-authoring}

@@ -1,11 +1,11 @@
 ---
 title: Configuring the Submit action
-seo-title: Configuring the Submit action
+
 description: Forms lets you configure a submit action to define how an adaptive form is processed after submission. You can use built-in submit actions or write your own from scratch.
-uuid: 4368d648-88ea-4f84-a051-46296a1a084e
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
+
 docset: aem65
 
 feature: Adaptive Forms

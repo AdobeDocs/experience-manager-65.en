@@ -1,8 +1,8 @@
 ---
 title: AEM 6.5 Managing User Guide
-seo-title: AEM 6.5 Managing User Guide
+
 description: Discover how to manage an AEM project successfully, with support from key resources and a comprehensive collection of AEM 6.5 user guides. 
-seo-description: Covers how to manage an AEM project successfully
+
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 ---
 # AEM 6.5 Managing User Guide

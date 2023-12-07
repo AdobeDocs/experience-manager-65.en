@@ -1,11 +1,11 @@
 ---
 title: Forms-centric workflows on OSGi | Handling user data
-seo-title: Forms-centric workflows on OSGi | Handling user data
+
 description: Forms-centric workflows on OSGi | Handling user data
-uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
+
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
+
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 ---

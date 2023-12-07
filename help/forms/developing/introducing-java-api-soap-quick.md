@@ -1,12 +1,12 @@
 ---
 title: Introducing Java&trade; API QuickStart
 description: Learn how AEM Forms operations can be performed using the AEM Forms Java&trade; strongly-typed API enabled with SOAP connection.
-uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
-discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
+
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 ---

@@ -1,15 +1,15 @@
 ---
 title: Validating DDX Documents
-seo-title: Validating DDX Documents
+
 description: Validate a DDX document programmatically using the Java API and the Web Service API.
-seo-description: Validate a DDX document programmatically using the Java API and the Web Service API.
-uuid: da668170-d2e9-4fff-aef5-432a856bd0bd
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
+
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
 ---
