@@ -1,14 +1,14 @@
 ---
 title: Managing invited and local user accounts
-seo-title: Managing invited and local user accounts
+
 description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
-seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
-uuid: 0d0c717a-6e6e-4e42-96eb-3a7166e215ab
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
+
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 ---

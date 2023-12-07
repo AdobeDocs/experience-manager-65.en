@@ -1,13 +1,13 @@
 ---
 title: Enabling attachments for an HTML5 form
-seo-title: Enabling attachments for an HTML5 form
+
 description: By default, the attachment support for HTML5 forms is disabled.
-seo-description: By default, the attachment support for HTML5 forms is disabled.
-uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
+
 feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 ---

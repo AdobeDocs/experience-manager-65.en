@@ -1,14 +1,14 @@
 ---
 title: System information Service APIs
-seo-title: System information Service APIs
+
 description: This document provides detailed information about the APIs provided bythesystem information service.
-seo-description: This document provides detailed information about the APIs provided bythesystem information service.
-uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
+
 exl-id: 4da96c8f-8bd0-4cad-9087-18e324f084e7
 ---
 # System information Service APIs {#system-information-service-apis}

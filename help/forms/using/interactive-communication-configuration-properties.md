@@ -1,14 +1,14 @@
 ---
 title: Interactive Communications configuration properties
-seo-title: Interactive Communication configuration properties
+
 description: Edit default configuration properties for Interactive Communications
-seo-description: Edit default configuration properties for Interactive Communications
-uuid: 4030078f-64a3-40bb-9892-49e22a8da561
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: interactive-communications
-discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
+
 docset: aem65
 
 feature: Interactive Communication

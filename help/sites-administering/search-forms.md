@@ -236,7 +236,7 @@ The following predicates are available, dependent on the configuration:
   </tr>
   <tr>
    <td>Publish Status </td>
-   <td>Search assets based on their publish status</td>
+   <td>Search assets based on their publishing status</td>
    <td>
     <ul>
      <li>Field Label</li>

@@ -1,12 +1,12 @@
 ---
 title: Texts in Interactive Communications
-seo-title: Text in Interactive Communications
+
 description: Creating and editing text document fragments to be used in Interactive Communications - text is one of the four types of document fragments used to build Interactive Communications. The other three are conditions, lists, and layout fragments.  
-seo-description: Creating and editing text document fragments to be used in Interactive Communications
-uuid: fdac3dd8-c6d0-418e-b969-fc791b7bd509
+
+
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
+
 docset: aem65
 
 feature: Interactive Communication
@@ -85,11 +85,11 @@ If you have specified a form data model while creating a text, the properties in
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* To insert an form data model property into text, place the cursor where you want to insert the property, then select the **[A]** property in the left pane by tapping on it, and select **[!UICONTROL [B] Add Selected]**. You can also just double-select the property to insert it at the **[C]** cursor position. Form data model properties are highlighted in a brownish background color.
+* To insert a form data model property into text, place the cursor where you want to insert the property, then select the **[A]** property in the left pane by tapping on it, and select **[!UICONTROL [B] Add Selected]**. You can also just double-select the property to insert it at the **[C]** cursor position. Form data model properties are highlighted in a brownish background color.
 
 Alternatively, you can search and add form data model property using the @ symbol in the text editor. Place the cursor where you want to insert the property. Type @ followed by the search string. The search operation is performed on all form data model properties and variables available in the document fragment. The properties or variables containing the search string are retrieved and displayed as a drop-down list. Navigate through the search results and click the property that you want to insert at the cursor location. Press Esc to hide the search results.
 
-* To allow the agents to edit an form data model property's value in the agent UI while [Prepare and send Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) using the Agent UI, select the **[D]** lock icon for that property and ensure it is in an unlocked state. The default state of the property is locked and an agent cannot edit the property in the Agent UI.
+* To allow the agents to edit a form data model property's value in the agent UI while [Prepare and send Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) using the Agent UI, select the **[D]** lock icon for that property and ensure it is in an unlocked state. The default state of the property is locked and an agent cannot edit the property in the Agent UI.
 
 You can also use form data model properties to construct rules for displaying or hiding parts of content. For more information, see [Create rules in text](#rules).
 

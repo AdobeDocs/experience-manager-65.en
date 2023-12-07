@@ -3,12 +3,12 @@ title: Best practices for using AEM Authoring
 
 description: How to use AEM in the most efficient and most effective way possible.
 
-uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
+
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 ---
 # Best Practices{#best-practices}

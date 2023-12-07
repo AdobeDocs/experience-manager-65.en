@@ -1,12 +1,12 @@
 ---
 title: Responsive layout for your content pages
 description: Adobe Experience Manager lets you realize a responsive layout for your pages.
-uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
+
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 ---
 # Responsive Layout{#responsive-layout}

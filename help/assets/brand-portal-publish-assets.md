@@ -1,14 +1,10 @@
 ---
 title: Publish assets to Brand Portal
-seo-title: Publish assets to Brand Portal
 description: Learn how to publish and unpublish assets to Brand Portal.
-seo-description: Learn how to publish and unpublish assets to Brand Portal.
-uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
 role: User

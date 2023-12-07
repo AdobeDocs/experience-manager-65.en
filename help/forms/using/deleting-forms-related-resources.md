@@ -1,13 +1,13 @@
 ---
 title: Deleting forms and related resources
-seo-title: Deleting forms and related resources
+
 description: How to delete a form or an asset in AEM Forms and the impact on referenced and referring assets and XFA forms.
-seo-description: How to delete a form or an asset in AEM Forms and the impact on referenced and referring assets and XFA forms.
-uuid: df522b87-59d8-4678-922d-c9aab82b1381
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
+
 role: Admin
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
 ---

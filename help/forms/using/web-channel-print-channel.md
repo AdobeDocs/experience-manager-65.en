@@ -1,12 +1,12 @@
 ---
 title: Print channel and web channel
-seo-title: Print channel and web channel
+
 description: Importing print channel templates and creating and enabling web channel templates
-seo-description: Importing print channel templates and creating and enabling web channel templates
-uuid: 2361b1ee-c789-4a5a-9575-8b62b603da1e
+
+
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
+
 docset: aem65
 
 feature: Interactive Communication

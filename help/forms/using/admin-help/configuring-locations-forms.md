@@ -1,12 +1,12 @@
 ---
 title: Configuring locations for Forms
 description: Learn how to configure location for AEM Form. You can specify the file locations of attribute, the location of the form, the seed PDF file, and the cache location.
-uuid: ba35888b-492c-4678-890b-160b53e7d659
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
+
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 ---
 # Configuring locations for Forms {#configuring-locations-for-forms}

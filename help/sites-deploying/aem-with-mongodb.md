@@ -3,12 +3,12 @@ title: Adobe Experience Manager with MongoDB
 
 description: Learn about the tasks and considerations needed for a successful deployment of Adobe Experience Manager with MongoDB.
 
-uuid: 8028832d-10de-4811-a769-fab699c162ec
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
+
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 ---

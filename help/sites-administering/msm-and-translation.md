@@ -1,14 +1,14 @@
 ---
 title: Website Administration
-seo-title: Website Administration
+
 description: Learn how to manage multilingual websites using Adobe Experience Manager.
-seo-description: Learn how to manage multilingual websites in AEM.
-uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
+
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 ---
 # Website Administration{#website-administration}

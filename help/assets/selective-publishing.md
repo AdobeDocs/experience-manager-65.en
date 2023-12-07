@@ -96,8 +96,8 @@ See [Create a Dynamic Media configuration](#configuring-dynamic-media-cloud-serv
 
 1. In Experience Manager, select the Experience Manager logo to access the global navigation console. On the left side, select the Navigation icon (just above the Tools icon), then select **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, do one of the following:
-    * Navigate to a folder whose assets you want to publish. Select the folder, then on the toolbar, select **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular folder.
-    * Navigate to a folder whose assets you want to publish. Open the folder, then select one or more assets. On the toolbar, select **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular asset.
+    * Navigate to a folder whose assets you want to publish. Select the folder, then on the toolbar, select **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publishing status of a particular folder.
+    * Navigate to a folder whose assets you want to publish. Open the folder, then select one or more assets. On the toolbar, select **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publishing status of a particular asset.
 
         >[!NOTE]
         >
@@ -128,8 +128,8 @@ See [Create a Dynamic Media configuration](#configuring-dynamic-media-cloud-serv
 
 1. In Experience Manager, select the Experience Manager logo to access the global navigation console. On the left side, select the Navigation icon (just above the Tools icon), then select **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, do one of the following:
-    * Navigate to a folder whose assets you want to unpublish. Select the folder, then on the toolbar, select **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular folder.
-    * Navigate to a folder whose assets you want to unpublish. Open the folder, then select one or more assets. On the toolbar, select **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular asset.
+    * Navigate to a folder whose assets you want to unpublish. Select the folder, then on the toolbar, select **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publishing status of a particular folder.
+    * Navigate to a folder whose assets you want to unpublish. Open the folder, then select one or more assets. On the toolbar, select **[!UICONTROL Manage Publication]**. Use **[!UICONTROL List View]** so you can more easily check the publishing status of a particular asset.
 
         >[!NOTE]
         >
@@ -167,8 +167,8 @@ You can use **[!UICONTROL Quick Publish]** for simple asset activation cases. **
 
 1. In Experience Manager, select the Experience Manager logo to access the global navigation console. On the left side of the page, select the Navigation icon (just above the Tools icon), then on the right side of the page select **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]**, do one of the following:
-    * Navigate to a folder whose assets you want to publish. Select the folder, then on the toolbar, select **[!UICONTROL Quick Publish]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular folder.
-    * Navigate to a folder whose assets you want to publish. Open the folder, then select one or more assets. On the toolbar, select **[!UICONTROL Quick Publish]**. Use **[!UICONTROL List View]** so you can more easily check the publish status of a particular asset.
+    * Navigate to a folder whose assets you want to publish. Select the folder, then on the toolbar, select **[!UICONTROL Quick Publish]**. Use **[!UICONTROL List View]** so you can more easily check the publishing status of a particular folder.
+    * Navigate to a folder whose assets you want to publish. Open the folder, then select one or more assets. On the toolbar, select **[!UICONTROL Quick Publish]**. Use **[!UICONTROL List View]** so you can more easily check the publishing status of a particular asset.
 
         >[!NOTE]
         >
@@ -248,11 +248,11 @@ Optionally, you can use these check boxes with the **[!UICONTROL Publish]** sear
     * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, select **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** to begin the action.
 1. Select **[!UICONTROL OK]**.
 
-## Check the publish status of an asset {#check-publish-status-of-asset}
+## Check the publishing status of an asset {#check-publish-status-of-asset}
 
 You can use **[!UICONTROL Timeline]** with **[!UICONTROL Card view]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]** in Experience Manager to quickly check the publish state of an asset. 
 
-**To check the publish status of an asset:**
+**To check the publishing status of an asset:**
 
 1. In Experience Manager, in the upper-left corner of the page, select the Experience Manager logo to access the global navigation console. On the left side of the page, select the Navigation icon (just above the Tools icon), then select **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. In **[!UICONTROL Card View]**, **[!UICONTROL Column View]**, or **[!UICONTROL List View]** (screenshot below shows the **[!UICONTROL List View]**), open a folder that contains assets you have published or unpublished.
