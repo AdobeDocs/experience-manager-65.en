@@ -10,7 +10,7 @@ user-guide-title: AEM 6.5
 
 # Adobe Experience Manager 6.5 Help {#content}
 
-+ AEM Assets {#assets}
++ Assets {#assets}
   + [[!DNL Assets] user guide](/help/assets/home.md)
   + [About DAM](/help/assets/assets.md)
   + [Best practices for assets](/help/assets/best-practices-for-assets.md)
@@ -174,7 +174,7 @@ user-guide-title: AEM 6.5
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-+ AEM Content and Commerce {#commerce}
++ Content and Commerce {#commerce}
   + [AEM Content and Commerce](/help/commerce/home.md)
   + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
   + [Introduction and overview](/help/commerce/cif/introduction.md)
@@ -221,7 +221,7 @@ user-guide-title: AEM 6.5
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [Developing (generic)](/help/commerce/cif-classic/developing/generic.md)
       + [Developing with SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ AEM Communities {#communities}
++ Communities {#communities}
   + [Communities Guide](/help/communities/home.md)
   + Introduction to AEM Communities {#introduction}
     + [Communities Sites](/help/communities/administer-landing.md)
@@ -363,7 +363,7 @@ user-guide-title: AEM 6.5
     + [Using Edge Delivery](/help/edge/using.md)
   + AEM Fluid Experiences {#aem-fluid-experiences}
     + [Feature List](/help/fluid-experiences/feature-list.md)
-+ AEM Forms {#forms}
++ Forms {#forms}
   + [AEM 6.5 Forms Guide](/help/forms/home.md)
   + Release Notes {#release-notes-new-features}
     + [New features summary](/help/forms/using/whats-new.md)
@@ -516,7 +516,7 @@ user-guide-title: AEM 6.5
     + [Creating and using themes](/help/forms/using/themes.md)
     + [Adaptive forms rule editor](/help/forms/using/rule-editor.md)
     + [API to invoke form data model service from adaptive forms](/help/forms/using/invoke-form-data-model-services.md)
-    + [Asynchronous submission of adaptive forms]/help/forms/(using/asynchronous-submissions-adaptive-forms.md)
+    + [Asynchronous submission of adaptive forms](/help/forms/using/asynchronous-submissions-adaptive-forms.md)
     + [Create an adaptive form using a set of adaptive forms](/help/forms/using/create-adaptive-form-using-adaptive-form-set.md)
     + [Adaptive Form Templates](/help/forms/using/template-editor.md)
     + [Adaptive Form Expressions](/help/forms/using/adaptive-form-expressions.md)
@@ -811,15 +811,15 @@ user-guide-title: AEM 6.5
       + [Configuring Task Manager endpoints](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Types of endpoints](/help/forms/using/admin-help/types-endpoints.md)
      + Configuring Acrobat Reader DC extensions {#configure-acrobat-reader-dc-extensions}
-      + [Certificate types used by Acrobat Reader DC extensions](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
-      + [Recognizing valid and expired certificates in PDF documents](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
-      + [Configuring Acrobat Reader DC extensions for data capture](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
-      + [Review credential use information](/help/forms/using/admin-help/review-credential-information.md)
-      + [Configuring credentials for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
-      + [Review the usage rights of a PDF file](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
-      + [Enabling online commenting for Adobe Reader web browser plug-in](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
-      + [Setting timeout values for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
-      + [Updating expired Reader Extension service certificates](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
+       + [Certificate types used by Acrobat Reader DC extensions](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
+       + [Recognizing valid and expired certificates in PDF documents](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
+       + [Configuring Acrobat Reader DC extensions for data capture](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
+       + [Review credential use information](/help/forms/using/admin-help/review-credential-information.md)
+       + [Configuring credentials for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
+       + [Review the usage rights of a PDF file](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
+       + [Enabling online commenting for Adobe Reader web browser plug-in](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
+       + [Setting timeout values for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
+       + [Updating expired Reader Extension service certificates](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
     + Working with PDF Generator {#work-with-pdf-generator}
       + [Introduction to working with PDF Generator](/help/forms/using/admin-help/overview-5.md)
       + [Enabling multi-threaded file conversions](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
@@ -1049,7 +1049,7 @@ user-guide-title: AEM 6.5
     + [Configuring and troubleshooting an AEM Forms on JEE server cluster](/help/forms/developing/configure-server-cluster.md)
     + [Generating and working with Hashes in dynamic PDF forms](/help/forms/developing/hashing-forms.md)
     + [Passing credentials using WS-Security headers](/help/forms/developing/passing-credentials.md)
-+ AEM Documentation Journeys {#journeys}
++ Documentation Journeys {#journeys}
   + [What is a documentation journey?](/help/journey-documentation/home.md)
   + [AEM Headless Journeys](/help/journey-headless/home.md)
   + AEM Headless Developer Journey {#developer}
@@ -1082,7 +1082,7 @@ user-guide-title: AEM 6.5
     + [Configure translation rules](/help/journey-headless/translation/translation-rules.md)
     + [Translate content](/help/journey-headless/translation/translate-content.md)
     + [Publish translated content](/help/journey-headless/translation/publish-content.md)
-+ AEM Managing User Guide {#managing}
++ Managing {#managing}
   + [Managing User Guide](/help/managing/home.md)
   + Managing - Best Practices Checklist {#managing-best-practices-checklist}
     + [Managing Projects - Best Practices Checklist](/help/managing/best-practices.md)
@@ -1098,7 +1098,7 @@ user-guide-title: AEM 6.5
     + [Quick Guide to WCAG 2.1](/help/managing/qg-wcag.md)
   + Data Protection {#data-protection}
     + [AEM Readiness for Data Protection and Data Privacy Regulations](/help/managing/data-protection-and-privacy.md)
-+ AEM Mobile {#mobile}
++ Mobile {#mobile}
   + [Mobile User Guide overview](/help/mobile/home.md)
   + Introduction to AEM Mobile {#introduction}
     + [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
@@ -1183,7 +1183,7 @@ user-guide-title: AEM 6.5
   + Previous release notes {#service-pack}
     + [6.5.18](/help/release-notes/previous/6.5.18.md)
     + [6.5.17](/help/release-notes/previous/6.5.17.md)
-    + [6.5.16]/help/release-notes/(previous/6.5.16.md)
+    + [6.5.16](/help/release-notes/previous/6.5.16.md)
     + [6.5.15](/help/release-notes/previous/6.5.15.md)
     + [6.5.14](/help/release-notes/previous/6.5.14.md)
     + [6.5.13](/help/release-notes/previous/6.5.13.md)
@@ -1205,7 +1205,7 @@ user-guide-title: AEM 6.5
   + [AEM Forms Service Pack Hotfix](/help/release-notes/aem-forms-hotfix.md)
   + [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
   + [Touch UI feature status](/help/release-notes/touch-ui-features-status.md)
-+ AEM Administering {#administering}
++ Administering {#administering}
   + [Administering User Guide overview](/help/sites-administering/home.md)
   + Sites Features {#introduction}
     + [Website Administration](/help/sites-administering/msm-and-translation.md)
@@ -1351,7 +1351,7 @@ user-guide-title: AEM 6.5
     + [Classic UI Tagging Console](/help/sites-administering/classic-console.md)
     + [Content Management for Screens](/help/sites-administering/content-management-screens.md)
     + [WebDAV Access](/help/sites-administering/webdav-access.md)
-+ AEM Authoring {#authoring}
++ Authoring {#authoring}
   + [Authoring User Guide overview](/help/sites-authoring/home.md)
   + Essential tasks, tools and concepts for AEM Authoring {#essentials}
       + [First Steps for Authors](/help/sites-authoring/first-steps.md)
@@ -1430,7 +1430,7 @@ user-guide-title: AEM 6.5
       + [Targeting your Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
       + [Creating Adobe Campaign Forms in AEM](/help/sites-authoring/adobe-campaign-forms.md)
       + [Adobe Campaign Components](/help/sites-authoring/adobe-campaign-components.md)
-+ AEM Classic UI Authoring {#classic-ui}
++ Classic UI Authoring {#classic-ui}
   + [Classic UI Authoring Guide overview](/help/sites-classic-ui-authoring/home.md)
   + Introduction to Classic UI Authoring {#introduction}
       + [First Steps for Authors](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
@@ -1500,7 +1500,7 @@ user-guide-title: AEM 6.5
       + [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
       + [Working with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
       + [Naming conventions for assets testing](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
-+ Deploying AEM {#deploying}
++ Deploying {#deploying}
   + [Deploying User Guide](/help/sites-deploying/home.md)
   + Introduction to the AEM Platform {#introduction}
       + [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
@@ -1579,7 +1579,7 @@ user-guide-title: AEM 6.5
      + [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
      + [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md)
      + [Performance & Scalability](/help/sites-deploying/performance.md)
-+ AEM Developing {#developing}
++ Developing {#developing}
   + [Developing User Guide overview](/help/sites-developing/home.md)
   + Introduction for Developers {#introduction}
     + [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
