@@ -1,12 +1,12 @@
 ---
 title: Building Mobile Applications
 description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here. Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
-uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
+
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 ---
 # Building Mobile Applications{#building-mobile-applications}
@@ -95,7 +95,7 @@ Move the content of your mobile application to your file system.
    >
    >The cache holds content updates for installed applications. Clearing the cache voids all cached updates.
 
-1. On the toolbar, click or tap the Download CLI Assets icon.
+1. On the toolbar, click the Download CLI Assets icon.
 
    ![Download CLI Assets icon indicated by overlapping tablet symbol.](do-not-localize/chlimage_1-1.png)
 

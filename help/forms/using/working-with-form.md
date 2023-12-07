@@ -1,13 +1,13 @@
 ---
 title: Working with a Form
-seo-title: Working with a Form
+
 description: View and update the form associated with a task or Startpoint in the AEM Forms app
-seo-description: View and update the form associated with a task or Startpoint in the AEM Forms app
-uuid: 7481ca5c-a2c0-4697-9008-1e51bce2012e
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
+
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
 ---
 # Working with a Form {#working-with-a-form}
@@ -20,9 +20,9 @@ To sync your form in AEM Forms app:
 
 1. In author instance, select a form, and click **View Properties**.
 1. In the properties page, click **Advanced.**
-1. Under Advanced, enable option: **Sync with AEM Forms App**, and tap **Save**.
+1. Under Advanced, enable option: **Sync with AEM Forms App**, and select **Save**.
 
-To sync multiple forms, in the author instance, select multiple forms in forms manager and tap **Sync with AEM Forms App**. When the form is published, the AEM Forms app can connect to the publish server and fetch the forms.
+To sync multiple forms, in the author instance, select multiple forms in forms manager and select **Sync with AEM Forms App**. When the form is published, the AEM Forms app can connect to the publish server and fetch the forms.
 
 If your AFA (AEM Form Application) Android app fails to sync, perform the following steps to fix the sync issue:
 
@@ -45,5 +45,5 @@ If your AFA (AEM Form Application) Android app fails to sync, perform the follow
 
 **To open and update a form**
 
-1. To open a form, tap the **[!UICONTROL Form]** in the home screen.
+1. To open a form, select the **[!UICONTROL Form]** in the home screen.
 1. You can update the fields of the form, add attachments, save as draft, and submit it.

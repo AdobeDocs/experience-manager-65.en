@@ -1,14 +1,14 @@
 ---
 title: Working with the Author Environment
-seo-title: Working with the Author Environment
+
 description: The author environment lets you perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
-seo-description: The author environment lets you perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
-uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
+
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
+
 exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
 ---
 # Working with the Author Environment{#working-with-the-author-environment}

@@ -1,13 +1,13 @@
 ---
 title: Using Assembler Service
-seo-title: Using Assembler Service
+
 description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
-seo-description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
-uuid: 1efce50b-2d98-408e-aa43-ac4999de41a8
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
+
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
 ---

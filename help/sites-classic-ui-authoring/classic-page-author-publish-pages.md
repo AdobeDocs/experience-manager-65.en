@@ -1,12 +1,12 @@
 ---
 title: Publishing pages
 description: After you have created and reviewed your content on the author environment, make it available on your public website.
-uuid: ab5ffc59-1c41-46fe-904e-9fc67d7ead04
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
+
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
 ---
@@ -146,7 +146,7 @@ From the **Websites** tab you can activate the individual pages. When you have e
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
-1. On the **Replication** console, click on **Activate Tree**.
+1. On the **Replication** console, click **Activate Tree**.
 
    The following window ( `https://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
 

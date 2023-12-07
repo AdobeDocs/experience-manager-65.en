@@ -54,7 +54,7 @@ If you are editing a page, it can be published directly from the editor.
     * The page will be published directly if there are no references to be published.
     * If the page has references that need publishing, these will be listed in the **Publish** wizard, where you can either:
 
-        * Specify which of the assets/tags/and so on you want to publish together with the page, then use **Publish** to complete the process.
+        * Specify which of the assets or tags, you want to publish together with the page, then use **Publish** to complete the process.
 
         * Use **Cancel** to abort the action.
 
@@ -89,7 +89,7 @@ In the sites console there are two options for publishing:
 
 To publish a page with Quick Publish:
 
-1. Select the page or pages in the sites console and click on the **Quick Publish** button.
+1. Select the page or pages in the sites console and click the **Quick Publish** button.
 
    ![pp-02](assets/pp-02.png)
 
@@ -109,7 +109,7 @@ To publish a page with Quick Publish:
 
 To publish or unpublish a page using Manage Publication:
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 
    ![pp-02-1](assets/pp-02-1.png)
 
@@ -209,7 +209,7 @@ When editing a page, if you wish to unpublish that page, select **Unpublish Page
 
 Just as you [use the Manage Publication option to publish](/help/sites-authoring/publishing-pages.md#manage-publication), you can also use it to unpublish.
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 1. The **Manage Publication** wizard starts. In the first step, **Options**, select to **Unpublish** instead of the default option of **Publish**.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)

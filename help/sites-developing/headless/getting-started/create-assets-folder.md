@@ -19,8 +19,8 @@ Assets folders are used to [organize traditional content assets](/help/assets/ma
 
 An administrator would only need to create folders occasionally to organize content as it is created. For the purposes of this getting started guide, we only need to create one folder.
 
-1. Log into AEM and from the main menu select **Navigation -&gt; Assets -&gt; Files**.
-1. Tap or click **Create -&gt; Folder**.
+1. Log into AEM and from the main menu select **Navigation > Assets > Files**.
+1. Click **Create > Folder**.
 1. Provide a **Title** and a **Name** for your folder.
    * The **Title** should be descriptive.
    * The **Name** will become the node name in the repository.
@@ -32,8 +32,8 @@ An administrator would only need to create folders occasionally to organize cont
 1. In the **Properties** window, select the **Cloud Services** tab.
 1. For the **Cloud Configuration** Select the [configuration you created previously.](create-configuration.md)
    ![Configure assets folder](assets/assets-folder-configure.png)
-1. Tap or click **Save &amp; Close**.
-1. Tap or click **OK** in the confirmation window.
+1. Click **Save &amp; Close**.
+1. Click **OK** in the confirmation window.
 
    ![Confirmation window](assets/assets-folder-confirmation.png)
 

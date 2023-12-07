@@ -14,7 +14,7 @@ In an effort to continuously improve the security of AEM, Adobe has introduced a
 
 ## Enabling SSL/TLS By Default {#enabling-ssl-tls-by-default}
 
-You can start configuring SSL/TLS By Default by clicking the relevant Inbox message from your AEM home screen. To reach the Inbox, press the bell icon in the upper right corner of the screen. Then, click on **View All**. This will bring up a list of all alerts ordered in a list view.
+You can start configuring SSL/TLS By Default by clicking the relevant Inbox message from your AEM home screen. To reach the Inbox, press the bell icon in the upper right corner of the screen. Then, click **View All**. This will bring up a list of all alerts ordered in a list view.
 
 In the list, select and open the **Configure HTTPS** alert:
 

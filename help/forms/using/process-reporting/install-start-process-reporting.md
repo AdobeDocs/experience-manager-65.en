@@ -3,11 +3,11 @@ title: Getting Started with Process Reporting
 
 description: The steps to get started with AEM Forms on JEE Process Reporting
 
-uuid: 685cad39-da2c-411d-a0b0-201917438bcf
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
-discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
+
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
 ---

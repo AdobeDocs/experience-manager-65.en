@@ -1,12 +1,12 @@
 ---
 title: Solutions Integration
 description: Learn more about integrating Adobe Experience Manager (AEM) with other Adobe or third-party services.
-uuid: 3bf56b1b-284d-4f14-8974-0a595ece5028
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
+
 exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
 ---
 # Solutions Integration{#solutions-integration}

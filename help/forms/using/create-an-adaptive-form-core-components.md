@@ -1,8 +1,8 @@
 ---
 title: How to Create an Adaptive Form?
-seo-title: Learn how to create a Core Components based Adaptive Form on AEM 6.5 Forms.
+
 description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms]. Adaptive Forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an Adaptive Form based on a Form Data Model and XML or JSON schema.
-seo-description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms]. Adaptive Forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an Adaptive Form based on a Form Data Model and XML or JSON schema.
+
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 contentOwner: Khushwant Singh
@@ -58,9 +58,9 @@ You require the following to create an Adaptive Form:
 
 1. Login to your local [AEM author instance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs). 
 
-1. Enter your credentials on the Experience Manager login page. After you are logged in, in the upper-left corner, tap **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+1. Enter your credentials on the Experience Manager login page. After you are logged in, in the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 
-1. Tap **[!UICONTROL Create]**  &gt; **[!UICONTROL Create Adaptive Forms]**. 
+1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Create Adaptive Forms]**. 
 
 1. Select a Adaptive Forms Core Components template and click **[!UICONTROL Next]**.
 
@@ -72,10 +72,10 @@ You require the following to create an Adaptive Form:
     * **[!UICONTROL Theme Client Library]:** Specifies the theme for an Adaptive Form. By default, the `adaptiveform.theme.canvas3` theme is selected. You can also choose a different theme from the **[!UICONTROL Theme Client Library]** drop-down menu.
     * **[!UICONTROL Configuration Container:]**  Defines a location where configuration files for Adaptive Forms are stored. These configuration files contain settings and properties related to the behavior and appearance of Adaptive Forms.
     * **[!UICONTROL Tags:]** Specifies tags to uniquely identify the Adaptive Form. Tags help in searching the form. To create tags, type new tag names in the **[!UICONTROL Tags]** box.
-1. Tap **[!UICONTROL Create]**. An Adaptive Form is created and a dialog to open the form for editing appears.
+1. Select **[!UICONTROL Create]**. An Adaptive Form is created and a dialog to open the form for editing appears.
 
 
-1. Tap **[!UICONTROL Edit]** to open the newly created form in a new tab. The form opens for editing and displays the contents available in the template. It also displays the sidebar to customize the newly created form.
+1. Select **[!UICONTROL Edit]** to open the newly created form in a new tab. The form opens for editing and displays the contents available in the template. It also displays the sidebar to customize the newly created form.
 
 
 ## Use Adaptive Forms Core Components to create your form
@@ -164,11 +164,11 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
+1. Select the Adaptive Form and select ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
 1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
-1. Tap **[!UICONTROL Save]** to save the properties.
+1. Select **[!UICONTROL Save]** to save the properties.
 -->
 
 ## What's Next

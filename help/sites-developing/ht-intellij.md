@@ -1,12 +1,12 @@
 ---
 title: How to Develop AEM Projects using IntelliJ IDEA
 description: Learn how to use IntelliJ IDEA to develop Adobe Experience Manager projects.
-uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
+
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
 ---
 # How to Develop AEM Projects using IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
@@ -52,7 +52,7 @@ For that to work, follow the instructions on [How-To Work with JSPs](/help/sites
 1. Open the **Import** dialog in IntelliJ IDEA by
 
     * selecting **Import Project** on the welcome screen if you have no project open yet
-    * selecting **File -&gt; Import Project** from the main menu
+    * selecting **File > Import Project** from the main menu
 
 1. In the Import dialog, select the POM file of your project.
 
@@ -80,7 +80,7 @@ The following steps are necessary for debugging JSPs with IntelliJ IDEA
 
 IntelliJ IDEA must understand where to find the JSPs for debugging. Because IDEA cannot interpret the `content-package-maven-plugin` settings, it must be configured manually.
 
-1. Go to **File -&gt; Project Structure**
+1. Go to **File > Project Structure**
 1. Select the **Content** module
 1. Click **+** above the list of modules and select **Web**
 1. As the Web Resource Directory, select the `content/src/main/content/jcr_root subdirectory` of your project as shown in the screenshot below.
@@ -98,7 +98,7 @@ IntelliJ IDEA must understand where to find the JSPs for debugging. Because IDEA
 
 #### Configure a Debug Profile {#configure-a-debug-profile}
 
-1. Go to **Run -&gt; Edit Configurations**
+1. Go to **Run > Edit Configurations**
 1. Hit the **+** and select **JSR45 Remote**
 1. In the configuration dialog, select **Configure** next to **Application Server** and configure a Generic server
 1. Set the start page to an appropriate URL if you want to open a browser when you start debugging
@@ -135,7 +135,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 You are now all set up for debugging your JSPs in AEM.
 
-1. Select **Run -&gt; Debug -&gt; Your Debug Profile**
+1. Select **Run > Debug > Your Debug Profile**
 1. Set breakpoints in your component code
 1. Access a page in your browser
 

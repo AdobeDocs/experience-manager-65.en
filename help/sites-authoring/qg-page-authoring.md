@@ -1,14 +1,14 @@
 ---
 title: Quick Guide to Authoring Pages
-seo-title: Quick Guide to Authoring Pages
+
 description: A quick, high-level guide to the key actions of authoring page content
-seo-description: A quick, high-level guide to the key actions of authoring page content
-uuid: ef7ab691-f80d-4eeb-9f4a-afbf1bc83669
+
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
+
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 ---
@@ -96,17 +96,17 @@ How to select a page depends on which view you are using in the console:
 
 1. Column View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
+    * Click the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
 
 1. List View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
+    * Click the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
 
 1. Card View:
 
     * Enter selection mode by [selecting the required resource](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) with:
 
-        * Mobile device: tap-and-hold
+        * Mobile device: select-and-hold
         * Desktop: the [quick action](/help/sites-authoring/basic-handling.md#quick-actions) - tick icon:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
@@ -152,24 +152,24 @@ How to select a page depends on which view you are using in the console:
 
     * [Edit the content of an existing component](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) on the page:
 
-        * Open the component toolbar with either tap or click. Use the **Edit** (pencil) icon to open the dialog.
-        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
+        * Open the component toolbar with either click. Use the **Edit** (pencil) icon to open the dialog.
+        * Open the in place editor for the component with either select-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
         * To see all actions available enter full-screen mode using:
 
       ![Full screen mode](do-not-localize/screen_shot_2018-03-21at160706.png)
 
     * [Configure the properties of an existing component](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-        * Open the component toolbar with either tap or click. Use the **Configure** (wrench) icon to open the dialog.
+        * Open the component toolbar with either click. Use the **Configure** (wrench) icon to open the dialog.
 
     * [Move a component](/help/sites-authoring/editing-content.md#moving-a-component) either:
 
         * Drag the required component to its new location.
-        * Open the component toolbar with either tap or click. Use the **Cut** then **Paste** icons where required.
+        * Open the component toolbar with either click. Use the **Cut** then **Paste** icons where required.
 
     * [Copy (and Paste)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) a component:
 
-        * Open the component toolbar with either tap or click. Use the **Copy** then **Paste** icons as required.
+        * Open the component toolbar with either click. Use the **Copy** then **Paste** icons as required.
 
    >[!NOTE]
    >
@@ -177,7 +177,7 @@ How to select a page depends on which view you are using in the console:
 
     * [Delete](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) a component:
 
-        * Open the component toolbar with either tap or click, then use the **Delete** icon.
+        * Open the component toolbar with either click, then use the **Delete** icon.
 
     * [Add annotations](/help/sites-authoring/annotations.md#annotations) to the page:
 
@@ -299,7 +299,7 @@ For example, the lock icon looks like this:
 
    ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. Tap/click on the required type of reference to show more details and (when appropriate) take further actions.
+1. Click the required type of reference to show more details and (when appropriate) take further actions.
 
 ### Creating a Version of Your Page {#creating-a-version-of-your-page}
 
@@ -309,7 +309,7 @@ To create a [version](/help/sites-authoring/working-with-page-versions.md) of yo
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Tap/click on the up-arrow at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
+1. Click the up-arrow at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -325,7 +325,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
    If a version of your page has already been saved, it is listed in the Timeline.
 
-1. Tap/click on the version you want to restore - this will reveal additional action buttons:
+1. Click the version you want to restore - this will reveal additional action buttons:
 
     * **Revert to this Version**
 

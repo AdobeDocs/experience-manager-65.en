@@ -32,7 +32,7 @@ A. All PDF documents extended using production certificates issued from the old 
 
 **Q. Is the description of new certificates any different from old certificates?**
 
-A. The description of the new Acrobat Reader Extensions certificates mentions **G3-P24** as the program name. In the description of older certificates (certificates based on “Adobe Root CA”), **P24** is mentioned as the program name.
+A. The description of the new Acrobat Reader Extensions certificates mentions **G3-P24** as the program name. In the description of older certificates (certificates based on "Adobe Root CA"), **P24** is mentioned as the program name.
 
 **Q. How do I obtain the latest certificates?**
 
@@ -118,7 +118,7 @@ Applying new certificates on AEM Forms on JEE stack requires importing new crede
 
 #### Import and configure credentials 
 
-You can use the Trust Store Management pages to import a new credential. The Trust Store may contain more than one Reader Extensions credential. You must designate one of those credentials as the default Reader Extensions credential. The default credential is used when a Workbench user is unable to determine which credential to use during process creation. These rules apply to default credentials:
+You can use the Trust Store Management pages to import a new credential. The Trust Store may contain more than one Reader Extensions credential. Designate one of those credentials as the default Reader Extensions credential. The default credential is used when a Workbench user is unable to determine which credential to use during process creation. These rules apply to default credentials:
 
 * If you import a Reader Extensions credential and the Trust Store contains no other Reader Extensions credentials, it is set as the default.
 * If you import a Reader Extensions credential with the Default option selected, the default type is removed from an existing default credential. The imported credential becomes the default.

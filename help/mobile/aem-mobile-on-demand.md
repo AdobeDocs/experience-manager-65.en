@@ -1,11 +1,11 @@
 ---
 title: AEM Mobile On-Demand
 description: Follow this page as a starting point for developing On-Demand Services app with AEM (Adobe Experience Manager). The page covers the topics that are relevant to a developer of an app.
-uuid: 35b64823-9451-44bf-b254-3b6767f0d109
+
 contentOwner: JYOTIKA SYAL
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
+
 exl-id: a2134afd-4c0e-4a93-ac58-013b98fd9a09
 ---
 # AEM Mobile On-Demand {#aem-mobile-on-demand}

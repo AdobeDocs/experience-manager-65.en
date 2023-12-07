@@ -1,13 +1,13 @@
 ---
 title: Create accessible complex tables in HTML5 forms
-seo-title: Create accessible complex tables in HTML5 forms
+
 description: Learn how to create accessible tables in HTML5 forms.
-seo-description: Learn how to create accessible tables in HTML5 forms.
-uuid: e52562d2-4dc3-4359-9dbb-c18614921808
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
+
 feature: Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 ---
@@ -28,15 +28,15 @@ To use the new format in HTML5 Forms, mark the table as complex. To mark the tab
  </extras>
 ```
 
-The tables which are marked as *complexTable* follow the native HTML rendition, and provide better accessibility support for certain screen readers.  To create a row span, select consecutive cells of a table in the same column, right-click on the selection, and then click **[!UICONTROL Merge Cells]**.
+The tables which are marked as *complexTable* follow the native HTML rendition, and provide better accessibility support for certain screen readers.  To create a row span, select consecutive cells of a table in the same column, right-click the selection, and then click **[!UICONTROL Merge Cells]**.
 
 >[!NOTE]
 >
 >Creating a row-span works for leftmost cells only.
 
-To mark a row as row header, select all cells in the row, right-click on the selection, and then click **[!UICONTROL Mark Header]**.
+To mark a row as row header, select all cells in the row, right-click the selection, and then click **[!UICONTROL Mark Header]**.
 
-To mark a cell as column header, select any cell in the column, right-click on the selection, and then click **[!UICONTROL Mark Header]**.
+To mark a cell as column header, select any cell in the column, right-click the selection, and then click **[!UICONTROL Mark Header]**.
 
 Limitations in new *AccessibleTable* format:
 

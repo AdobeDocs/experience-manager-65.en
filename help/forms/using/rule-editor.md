@@ -1,12 +1,12 @@
 ---
 title: Adaptive forms rule editor
-seo-title: Adaptive forms rule editor
+
 description: Adaptive forms rule editor lets you add dynamic behavior and build complex logic into forms without coding or scripting.
-seo-description: Adaptive forms rule editor lets you add dynamic behavior and build complex logic into forms without coding or scripting.
-uuid: c1b3d6e4-6f36-4352-ab57-9850d718e47c
+
+
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
+
 docset: aem65
 
 feature: Adaptive Forms
@@ -348,13 +348,13 @@ Rule editor provides a comprehensive yet simple user interface to write and mana
 To launch the rule editor user interface:
 
 1. Open an adaptive form in authoring mode.
-1. Tap the form object for which you want to write a rule, and in Component Toolbar tap ![edit-rules](assets/edit-rules.png). The rule editor user interface appears.
+1. Select the form object for which you want to write a rule, and in Component Toolbar select ![edit-rules](assets/edit-rules.png). The rule editor user interface appears.
 
    ![create-rules](assets/create-rules.png)
 
    Any existing rules on the selected form objects are listed in this view. For information about managing existing rules, see [Manage rules](#manage-rules).
 
-1. Tap **[!UICONTROL Create]** to write a new rule. The visual editor of the rule editor user interface opens by default when you launch the rule editor the first time.
+1. Select **[!UICONTROL Create]** to write a new rule. The visual editor of the rule editor user interface opens by default when you launch the rule editor the first time.
 
    ![Rule Editor UI](assets/rule-editor-ui.png)
 
@@ -380,7 +380,7 @@ The Functions tab includes a set of built-in functions, such as Sum Of, Min Of, 
 >
 >You can perform text search on objects and functions names and titles in Forms Objects and Functions tabs.
 
-In the left tree of the form objects, you can tap the form objects to display the rules applied to each of the objects. Not only you can navigate through the rules of the various form objects, you can also copy-paste rules between the form objects. For more information, see [Copy-paste rules](#copy-paste-rules).
+In the left tree of the form objects, you can select the form objects to display the rules applied to each of the objects. Not only you can navigate through the rules of the various form objects, you can also copy-paste rules between the form objects. For more information, see [Copy-paste rules](#copy-paste-rules).
 
 ### C. Form objects and functions toggle {#c-form-objects-and-functions-toggle-br}
 
@@ -431,15 +431,15 @@ Perform the following steps to write rules:
 
 1. First, write the rule to control the visibility of the Spouse Salary field based on the option user selects for the Marital Status radio button.
 
-   Open the loan application form in authoring mode. Tap the **Marital Status** component and tap ![edit-rules](assets/edit-rules.png). Next, tap **[!UICONTROL Create]** to launch the rule editor.
+   Open the loan application form in authoring mode. Select the **Marital Status** component and select ![edit-rules](assets/edit-rules.png). Next, select **[!UICONTROL Create]** to launch the rule editor.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
    When you launch the rule editor, the When rule is selected by default. Also, the form object (in this case, Marital Status) from where you launched the rule editor is specified in the When statement.
 
-   While you cannot change or modify the selected object, you can use the rule drop-down, as shown below, to select another rule type. If you want to create a rule on another object, tap Cancel to exit the rule editor and launch it again from the desired form object.
+   While you cannot change or modify the selected object, you can use the rule drop-down, as shown below, to select another rule type. If you want to create a rule on another object, select Cancel to exit the rule editor and launch it again from the desired form object.
 
-1. Tap **[!UICONTROL Select State]** drop-down and select **[!UICONTROL is equal to]**. The **[!UICONTROL Enter a String]** field appears.
+1. Select **[!UICONTROL Select State]** drop-down and select **[!UICONTROL is equal to]**. The **[!UICONTROL Enter a String]** field appears.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -457,7 +457,7 @@ Perform the following steps to write rules:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Drag-drop the **Spouse Salary** field from the Form Objects tab on the **Drop object or select here** field. Alternatively, tap the **Drop object or select here** field and select the **Spouse Salary** field from the pop-up menu, which lists all form objects in the form.
+1. Drag-drop the **Spouse Salary** field from the Form Objects tab on the **Drop object or select here** field. Alternatively, select the **Drop object or select here** field and select the **Spouse Salary** field from the pop-up menu, which lists all form objects in the form.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -465,7 +465,7 @@ Perform the following steps to write rules:
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-   Tap **Done** to save the rule.
+   Select **Done** to save the rule.
 
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
@@ -479,13 +479,13 @@ Perform the following steps to write rules:
 
 1. Next, write a rule to compute the loan eligibility amount, which is 50% of the total salary, and display it in the Loan Eligibility field. To achieve this, create **Set value Of** rules on Loan Eligibility field.
 
-   In authoring mode, tap the **[!UICONTROL Loan Eligibility]** field and tap ![edit-rules](assets/edit-rules.png). Next, tap **[!UICONTROL Create]** to launch the rule editor.
+   In authoring mode, select the **[!UICONTROL Loan Eligibility]** field and select ![edit-rules](assets/edit-rules.png). Next, select **[!UICONTROL Create]** to launch the rule editor.
 
 1. Select **[!UICONTROL Set Value Of]** rule from the rule drop-down.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Tap **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
+1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -499,7 +499,7 @@ Perform the following steps to write rules:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Next, tap in the highlighted area around the expression field and tap **Extend Expression**.
+1. Next, select in the highlighted area around the expression field and select **Extend Expression**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
@@ -513,7 +513,7 @@ Perform the following steps to write rules:
 
    Next, create a condition, which when returns True, the expression executes.
 
-1. Tap **Add Condition** to add a When statement.
+1. Select **Add Condition** to add a When statement.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
@@ -527,7 +527,7 @@ Perform the following steps to write rules:
 
    The rule finally appears as follows in the rule editor.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
-   Tap **Done** to save the rule.
+   Select **Done** to save the rule.
 
 1. Repeat steps 7 through 12 to define another rule to compute the loan eligibility if the marital Status is Single. The rule appears as follows in the rule editor.
 
@@ -655,15 +655,15 @@ Perform the following steps to create a client library and add it in the CRX rep
 After you have added your client library in the CRX repository, use it in your adaptive form. It lets you use your custom function as a rule in your form. Perform the following steps to add the client library in your adaptive form.
 
 1. Open your form in edit mode.
-   To open a form in edit mode, select a form and tap **Open**.
-1. In the edit mode, select a component, then tap ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
+   To open a form in edit mode, select a form and select **Open**.
+1. In the edit mode, select a component, then select ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then select ![cmppr](assets/cmppr.png).
 1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
    ![Adding the custom function client library](assets/clientlib.png)
 
-1. Select the input numeric box, and tap ![edit-rules](assets/edit-rules.png) to open the rule editor.
-1. Tap **Create Rule**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
-   [ ![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Tap **Done**. Your custom function is added.
+1. Select the input numeric box, and select ![edit-rules](assets/edit-rules.png) to open the rule editor.
+1. Select **Create Rule**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
+   [ ![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Select **Done**. Your custom function is added.
 
 #### Function declaration supported types {#function-declaration-supported-types}
 
@@ -730,22 +730,22 @@ var c = {
 
 ## Manage rules {#manage-rules}
 
-Any existing rules on a form object are listed when you tap the object and tap ![edit-rules1](assets/edit-rules1.png). You can view the title and a preview the rule summary. Furthermore, the UI lets you expand and view the complete rule summary, change the order of rules, edit rules, and delete rules.
+Any existing rules on a form object are listed when you select the object and select ![edit-rules1](assets/edit-rules1.png). You can view the title and a preview the rule summary. Furthermore, the UI lets you expand and view the complete rule summary, change the order of rules, edit rules, and delete rules.
 
 ![list-rules](assets/list-rules.png)
 
 You can perform the following actions on rules:
 
-* **Expand/Collapse**: The Content column in the rule list displays the rule content. If the entire rule content is not visible in the default view, tap ![expand-rule-content](assets/expand-rule-content.png) to expand it.
+* **Expand/Collapse**: The Content column in the rule list displays the rule content. If the entire rule content is not visible in the default view, select ![expand-rule-content](assets/expand-rule-content.png) to expand it.
 
 * **Reorder**: Any new rule you create is stacked at the bottom of the rule list. The rules are executed from top to bottom. The rule at the top executes first followed by other rules of the same type. For example, if you have When, Show, Enable, and When rules at first, second, third, and fourth positions from top, respectively, the When rule at the top gets executed first followed by the When rule at the fourth position. Then, the Show and Enable rules will be executed.
   You can change the order of a rule by tapping ![sort-rules](assets/sort-rules.png) against it or drag-drop it to the desired order in the list.
 
-* **Edit**: To edit a rule, select the check box next to the rule title. Additional options to edit and delete the rule appear. Tap **Edit** to open the selected rule in the rule editor in visual or code editor mode depending the mode used to create the rule.
+* **Edit**: To edit a rule, select the check box next to the rule title. Additional options to edit and delete the rule appear. Select **Edit** to open the selected rule in the rule editor in visual or code editor mode depending the mode used to create the rule.
 
-* **Delete**: To delete a rule, select the rule and tap **Delete**.
+* **Delete**: To delete a rule, select the rule and select **Delete**.
 
-* **Enable/Disable**: You may need to suspend usage of a rule temporarily. You can select one or more rules and tap Disable in the Actions toolbar to disable them. If a rule is disabled, it does not execute at the runtime. To enable a rule that is disabled, you can select it and tap Enable in the actions toolbar. The status column of the rule displays whether the rule is enabled or disabled.
+* **Enable/Disable**: You may need to suspend usage of a rule temporarily. You can select one or more rules and select Disable in the Actions toolbar to disable them. If a rule is disabled, it does not execute at the runtime. To enable a rule that is disabled, you can select it and select Enable in the actions toolbar. The status column of the rule displays whether the rule is enabled or disabled.
 
 ![disablerule](assets/disablerule.png)
 
@@ -755,23 +755,23 @@ You can copy-paste a rule from one field to other similar fields to save time.
 
 To copy-paste rules, do the following:
 
-1. Tap the form object from which you want to copy a rule, and in the component toolbar tap ![editrule](assets/editrule.png). The rule editor user interface appears with the form object selected and the existing rules appear.
+1. Select the form object from which you want to copy a rule, and in the component toolbar select ![editrule](assets/editrule.png). The rule editor user interface appears with the form object selected and the existing rules appear.
 
    ![copyrule](assets/copyrule.png)
 
    For information about managing existing rules, see [Manage rules](#manage-rules).
 
-1. Select the check box next to the rule title. Additional options to manage the rule appear. Tap **Copy**.
+1. Select the check box next to the rule title. Additional options to manage the rule appear. Select **Copy**.
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Select another form object to which you want to paste the rule and tap **Paste**. Further, you can edit the rule to make changes in it.
+1. Select another form object to which you want to paste the rule and select **Paste**. Further, you can edit the rule to make changes in it.
 
    >[!NOTE]
    >
    >You can paste a rule to another form object only if that form object supports the copied rule's event. For example, a button supports the click event. You can paste a rule with a click event to a button but not to a check box.
 
-1. Tap **Done** to save the rule.
+1. Select **Done** to save the rule.
 
 ## Nested expressions {#nestedexpressions}
 
@@ -781,7 +781,7 @@ Following is an example of a nested rule that displays a message to the user abo
 
 ![complexexpression](assets/complexexpression.png)
 
-You can also drag-and-drop conditions within a rule to edit it. Tap and hover over the handle ( ![handle](assets/handle.png)) before a condition. Once the pointer turns into the hand symbol as shown below, drag and drop the condition anywhere within the rule. The rule structure changes.
+You can also drag-and-drop conditions within a rule to edit it. Select and hover over the handle ( ![handle](assets/handle.png)) before a condition. Once the pointer turns into the hand symbol as shown below, drag and drop the condition anywhere within the rule. The rule structure changes.
 
 ![drag-and-drop](assets/drag-and-drop.png)
 

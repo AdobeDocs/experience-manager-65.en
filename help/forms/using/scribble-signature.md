@@ -1,14 +1,14 @@
 ---
 title: Using Scribble Signature in HTML5 forms
-seo-title: Using Scribble Signature in HTML5 forms
+
 description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
-seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
-uuid: 163dd55a-971a-4dd4-93a7-a14e80184d9b
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
-discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
+
 docset: aem65
 
 feature: Designer
@@ -92,11 +92,11 @@ Tapping or clicking the Scribble field opens the dialog box in read-only mode.
 
 ### Selecting Pen size {#selecting-pen-size}
 
-Click the **Brushes** icon to display a list of available pen sizes. Click or tap a pen size to use the corresponding pen.
+Click the **Brushes** icon to display a list of available pen sizes. Click a pen size to use the corresponding pen.
 
 ### Delete Signatures from the form {#delete-signatures-from-the-form}
 
 To delete the signatures from the form:
 
-* (Mobile devices) Long press the signature field, and on the confirmation dialog, tap **Yes**.
+* (Mobile devices) Long press the signature field, and on the confirmation dialog, select **Yes**.
 * (Desktop) Hover over the signature field, click the **Cancel** icon, and on the confirmation dialog, click **Yes**.

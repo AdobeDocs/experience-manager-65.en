@@ -84,7 +84,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
         </ul> </li>
       </ol> </li>
      <li>Enable Edit mode in the Workflow Model Editor which will copy the Workflow Model definition to /conf/global/workflow/models.</li>
-     <li>Tap the Sync button to sync the changes to the Runtime Workflow Model under /var/workflow/models.</li>
+     <li>Select the Sync button to sync the changes to the Runtime Workflow Model under /var/workflow/models.</li>
      <li>Export both the Workflow Model (/conf/global/workflow/models/&lt;workflow-model&gt;) and Runtime Workflow Model (/var/workflow/models/&lt;workflow-model&gt;) and integrate into the AEM project.
       <ol>
        <li>For example, export:

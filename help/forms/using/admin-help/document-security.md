@@ -1,14 +1,14 @@
 ---
 title: What is document security? 
-seo-title: About document security 
+
 description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
-seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
-uuid: e4fba2a4-f3c1-4b20-8e05-8e241b40ebd0
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
+
 docset: aem65
 
 feature: Document Security

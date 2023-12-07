@@ -1,15 +1,15 @@
 ---
 title: Creating PDF Documents with SubmittedXML Data
-seo-title: Creating PDF Documents with SubmittedXML Data
+
 description: Use the Forms service to retrieve the form data that the user entered into an interactive form. Pass the form data to another AEM Forms service operation and create a PDF document using the data.
-seo-description: Use the Forms service to retrieve the form data that the user entered into an interactive form. Pass the form data to another AEM Forms service operation and create a PDF document using the data.
-uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
+
 role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
 ---

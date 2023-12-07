@@ -1,14 +1,14 @@
 ---
 title: Performance Guidelines
-seo-title: Performance Guidelines
+
 description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
-seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
-uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
+
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 ---

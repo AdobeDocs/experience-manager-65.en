@@ -1,12 +1,12 @@
 ---
 title: Naming conventions of nodes in the Java Content Repository
 description: Nodes in the repository are subject to naming conventions of the Java Content Repository
-uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
+
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
 ---
 # Naming Conventions {#naming-conventions}

@@ -1,13 +1,10 @@
 ---
 title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
-seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
 description: Document Management Service (Deprecated)Java API Quick Start(SOAP)
-uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
 ---
@@ -17,7 +14,7 @@ The following Quick Starts are available for the Document Management service (De
 
 >[!NOTE]
 >
->Effective August 5th 2011, Adobe is migrating Content Services ES customers to the Adobe Digital Enterprise Platform Experience Services. The product roadmap for customers that use Content Services is to move to the new ADEP Experience Services - Core, which includes a native Content Repository built on the modern, modular CRX architecture, acquired during the Adobe acquisition of Day Software.
+>Effective August 5, 2011, Adobe is migrating Content Services ES customers to the Adobe Digital Enterprise Platform Experience Services. The product roadmap for customers that use Content Services is to move to the new ADEP Experience Services - Core, which includes a native Content Repository built on the modern, modular CRX architecture, acquired during the Adobe acquisition of Day Software.
 
 [Quick Start (SOAP mode): Create Content Services spaces using the Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 

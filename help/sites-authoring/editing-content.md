@@ -362,7 +362,7 @@ For example, the **Text** component:
 
 To move a paragraph component:
 
-1. Select the paragraph to be moved with either tap-and-hold or click-and-hold.
+1. Select the paragraph to be moved with either select-and-hold or click-and-hold.
 1. Drag the paragraph to the new location. AEM indicates where the paragraph can be deposited. Drop it in your desired location.
 
    ![moving paragraph component](assets/screen_shot_2018-03-22at121821.png)
@@ -381,7 +381,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-authoring
 
    ![Edit mode in form](assets/screen_shot_2018-03-22at133756.png)
 
-   Click or tap the **Layout** action so you can adjust the layout of the component.
+   Click the **Layout** action so you can adjust the layout of the component.
 
    ![Component toolbar](do-not-localize/chlimage_1-21.png)
 

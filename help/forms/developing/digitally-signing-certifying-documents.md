@@ -81,7 +81,7 @@ Before you can programmatically perform a Signature service operation, you must 
 
 **Get a PDF document to which a signature field is added**
 
-You must obtain a PDF document to which a signature field is added.
+Obtain a PDF document to which a signature field is added.
 
 **Add a signature field**
 

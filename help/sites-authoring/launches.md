@@ -115,6 +115,6 @@ The Launches console provides an overview of your launches and lets you take act
 
    ![Reference tab - Launches](assets/screen-shot_2019-03-05at121901-1.png)
 
-1. Tap/click on the appropriate launch, the list of possible actions will be displayed:
+1. Click the appropriate launch, the list of possible actions will be displayed:
 
    ![Select launch to show possible actions](assets/screen-shot_2019-03-05at121952-1.png)

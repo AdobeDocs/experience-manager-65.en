@@ -490,7 +490,7 @@ Video Reports display several aggregate metrics across a specified time to help 
 
 A table of all *published* videos is also listed so you can track the top viewed videos on your website based on total video starts.
 
-When you tap a video name in the list, it shows you the video's audience retention (drop-off) report in the form of a line chart. The chart displays the number of views for any given moment of time during video playback. When you play the video, the vertical bar tracks in synchronization with the time indicator in the player. Drops in the line chart data indicate where your audience drops off from disinterest.
+When you select a video name in the list, it shows you the video's audience retention (drop-off) report in the form of a line chart. The chart displays the number of views for any given moment of time during video playback. When you play the video, the vertical bar tracks in synchronization with the time indicator in the player. Drops in the line chart data indicate where your audience drops off from disinterest.
 
 If the video was encoded outside of Adobe Experience Manager Dynamic Media, the audience retention (drop-off) chart and the Play Percentage data in the table are not available.
 
@@ -502,22 +502,22 @@ See also [Configure Dynamic Media Cloud Services](/help/assets/config-dynamic.md
 
 By default, the first time you enter Video Reports, the report displays video data starting at the first of the current month and ends with the current month's date. However, you can override the default date range by specifying your own date range. The next time you enter Video Reports, the date range you specified is used.
 
-For video reports to work correctly, a Report Suite ID is automatically created when Dynamic Media Cloud Services is configured. At the same time, the Report Suite ID is pushed to the Publish server so that it is available for the Copy URL feature when you preview assets. However, this functionality requires that the Publish server is already set up. If the Publish server is not set up, you can still publish to see the video report. However, you must return to the Dynamic Media Cloud Configuration and tap **[!UICONTROL OK]**.
+For video reports to work correctly, a Report Suite ID is automatically created when Dynamic Media Cloud Services is configured. At the same time, the Report Suite ID is pushed to the Publish server so that it is available for the Copy URL feature when you preview assets. However, this functionality requires that the Publish server is already set up. If the Publish server is not set up, you can still publish to see the video report. However, you must return to the Dynamic Media Cloud Configuration and select **[!UICONTROL OK]**.
 
 **To view video reports:**
 
-1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
+1. In the upper-left corner of Experience Manager, select the Experience Manager logo, then in the left rail, select **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
 1. On the Video Reports page, do one of the following:
 
-    * Near the upper-right corner, tap the **Refresh Video Report** icon.
+    * Near the upper-right corner, select the **Refresh Video Report** icon.
       Use Refresh only if the end date of the report is the current day. Doing so ensures that you see the video tracking that has occurred since the last time you ran the report.
 
-    * Near the upper-right corner, tap the **Date Picker** icon.
-      Specify the beginning and end date range for which you want video data, and then tap **[!UICONTROL Run Report]**.
+    * Near the upper-right corner, select the **Date Picker** icon.
+      Specify the beginning and end date range for which you want video data, and then select **[!UICONTROL Run Report]**.
 
    The Top Metrics group box identifies various aggregate measurements for all *published* videos across your site.
 
-1. In the table that lists the top published videos, tap a video name to play the video and also see the video's audience retention (drop-off) report.
+1. In the table that lists the top published videos, select a video name to play the video and also see the video's audience retention (drop-off) report.
 
 ### View video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
@@ -896,13 +896,13 @@ See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/
 
 1. Do one of the following:
 
-    * For a pop-up video viewer experience, tap **[!UICONTROL URL]**. In the URL dialog box, select and copy the URL to the Clipboard and then past the URL into a simple text editor. Append the copied URL of the video with the following syntax:
+    * For a pop-up video viewer experience, select **[!UICONTROL URL]**. In the URL dialog box, select and copy the URL to the Clipboard and then past the URL into a simple text editor. Append the copied URL of the video with the following syntax:
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
       Note the `,1` at the end of the caption path. Immediately following the `.vtt` filename extension in the path, you can optionally enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
 
-    * For an embedded video viewer experience, tap **[!UICONTROL Embed Code]**. In the Embed Code dialog box, select, and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:
+    * For an embedded video viewer experience, select **[!UICONTROL Embed Code]**. In the Embed Code dialog box, select, and copy the embed code to the Clipboard and then paste the code into a simple text editor. Append the copied embed code with the following syntax:
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -966,8 +966,8 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/)
        <td>
        <ol>
        <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
-       <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
-       <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
+       <li>From the drop-down menu, then click <strong>Viewers</strong>.</li>
+       <li>In the left rail, click the video viewer preset name. A preview of the video is opened in a separate page.</li>
        <li>In the left rail, at the bottom, click <strong>URL</strong>.</li>
        <li>In the URL dialog box, select and copy the URL to the Clipboard, then past the URL into a simple text editor.</li>
        <li>Append the copied URL of the video with the following syntax so you can associate it with the copied URL to your chapter file:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
@@ -978,8 +978,8 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/)
        <td>
        <ol>
        <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. See <a href="/help/assets/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
-       <li>From the drop-down menu, then click or tap <strong>Viewers</strong>.</li>
-       <li>In the left rail, tap or click the video viewer preset name. A preview of the video is opened in a separate page.</li>
+       <li>From the drop-down menu, then click <strong>Viewers</strong>.</li>
+       <li>In the left rail, click the video viewer preset name. A preview of the video is opened in a separate page.</li>
        <li>In the left rail, at the bottom, click <strong>Embed</strong>.</li>
        <li>In the Embed Code dialog box, select, and copy the entire code to the Clipboard, then paste it into a simple text editor.</li>
        <li>Append the embed code of the video with the following syntax so you can associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
@@ -1016,25 +1016,25 @@ These steps apply only to Dynamic Media running in "Dynamicmedia_Scene7" mode.
     * [Uploaded your videos to the folder](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, tap the video asset.
-1. On the toolbar, tap the **[!UICONTROL Properties]** icon (a circle with an "i" in it).
-1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
+1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
+1. On the toolbar, select the **[!UICONTROL Properties]** icon (a circle with an "i" in it).
+1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
 1. On the Change Thumbnail page, do one of the following:
 
     * To use a frame from the video as the new thumbnail:
 
-        * On the toolbar, tap **[!UICONTROL Select Frame from video]**.
-        * Tap the Play button, then tap the Pause button on the frame you want to capture as the video's new thumbnail.
+        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
+        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
 
     * To use an image asset as the new thumbnail:
 
-        * On the toolbar, tap **[!UICONTROL Select Thumbnail from Assets]**.
-        * Tap **[!UICONTROL Select Thumbnail]**.
+        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
+        * Select **[!UICONTROL Select Thumbnail]**.
         * Navigate to a previously uploaded and published image asset that you want to use. The asset is automatically resized to serve as a thumbnail image for the video.
-        * Select the image asset, then tap **[!UICONTROL Select]**.
+        * Select the image asset, then select **[!UICONTROL Select]**.
 
-1. On the Change Thumbnail page, tap **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, tap **[!UICONTROL Save & Close]**.
+1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
+1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
 
 ## About video thumbnails in Dynamic Media - Hybrid mode {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
@@ -1055,15 +1055,15 @@ These steps apply only to Dynamic Media running in Hybrid mode.
 **To add a video thumbnail:**
 
 1. Navigate to an uploaded video asset that you want to add a video thumbnail.
-1. In asset selection mode either from the List View or the Card View, tap the video asset.
-1. On the toolbar, tap the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
-1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, on the toolbar, tap **[!UICONTROL Select Frame]**.
+1. In asset selection mode either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
+1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
+1. On the Change Thumbnail page, on the toolbar, select **[!UICONTROL Select Frame]**.
 
    Dynamic Media generates a series of thumbnail images from your video, based on the default time interval or time interval you customized.
 
 1. Preview the generated thumbnail images, then select the one you want to add to your video.
-1. Tap **[!UICONTROL Save Change]**.
+1. Select **[!UICONTROL Save Change]**.
 
    The video's thumbnail image is updated to use the thumbnail you selected. If you later decide to change the thumbnail image, you can return to the **[!UICONTROL Change Thumbnail]** page and select a new one.
 
@@ -1079,21 +1079,21 @@ See [Add a video thumbnail](#adding-a-video-thumbnail).
 
 **To configure the default time interval that video thumbnails are generated:**
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, select **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
 1. In the CRXDE Lite page, in the directory panel on the left, navigate t `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   if the directory panel is not visible, tap the &gt;&gt; icon to the left of the Home tab.
+   if the directory panel is not visible, select the &gt;&gt; icon to the left of the Home tab.
 
-1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
+1. On the lower-right panel, in the Properties tab, double-select `thumbnailtime`.
 1. In the **[!UICONTROL Edit thumbnailtime]** dialog box, use the text fields to enter interval values as percentages.
 
-    * Tap the plus sign (+) icon if you want to add one or more interval value fields. If necessary, scroll to the bottom of the dialog box to see the icon.
-    * Tap the minus sign (-) icon to the right of an interval value field if you want to delete it from the list.
-    * Tap the up arrow icon and the down arrow icon if you want to reorder the interval values.
+    * Select the plus sign (+) icon if you want to add one or more interval value fields. If necessary, scroll to the bottom of the dialog box to see the icon.
+    * Select the minus sign (-) icon to the right of an interval value field if you want to delete it from the list.
+    * Select the up arrow icon and the down arrow icon if you want to reorder the interval values.
 
-1. Tap **[!UICONTROL OK]** and return to the Properties tab.
-1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to Experience Manager.
+1. Select **[!UICONTROL OK]** and return to the Properties tab.
+1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**, then select the Back Home icon in the upper-left corner to return to Experience Manager.
 
    See [Add a video thumbnail](#adding-a-video-thumbnail).
 
@@ -1104,12 +1104,12 @@ These steps apply only to Dynamic Media running in Hybrid mode.
 **To add a custom video thumbnail:**
 
 1. Navigate to an uploaded video asset that you want to add a custom video thumbnail.
-1. In asset selection mode either from the List View or the Card View, tap the video asset.
-1. On the toolbar, tap the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
-1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, on the toolbar, tap **[!UICONTROL Upload New Thumbnail]**.
-1. Navigate to a thumbnail image that you want to use, select it, then tap **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
-1. After you have successfully uploaded and published the image, in the Change Thumbnail page, tap **[!UICONTROL Save Changes]**.
+1. In asset selection mode either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
+1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
+1. On the Change Thumbnail page, on the toolbar, select **[!UICONTROL Upload New Thumbnail]**.
+1. Navigate to a thumbnail image that you want to use, select it, then select **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
+1. After you have successfully uploaded and published the image, in the Change Thumbnail page, select **[!UICONTROL Save Changes]**.
 
    The custom thumbnail is added to your video.
 

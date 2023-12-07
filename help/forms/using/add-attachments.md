@@ -11,7 +11,7 @@ exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 
 ## Adding attachments in forms synced with AEM Forms Workflow server (AEM Forms on JEE) {#adding-annotations}
 
-AEM Forms app lets you attach images, scribbled notes, and text notes to your form synced with AEM Forms JEE server. If your form is loaded from an AEM Forms Workflow server, your attachments are added to the form. You can tap the attachment button ![attachments-app](assets/attachments-app.png) to see all the attachments in a form together. The red notification specifies the number of attachments in the form. If there are no attachments in the form, you cannot see the red notifications button. If there are no attachments in the form, when you tap the attachments button ![attch](assets/attch.png), you get options to attach photos or scribbles.
+AEM Forms app lets you attach images, scribbled notes, and text notes to your form synced with AEM Forms JEE server. If your form is loaded from an AEM Forms Workflow server, your attachments are added to the form. You can select the attachment button ![attachments-app](assets/attachments-app.png) to see all the attachments in a form together. The red notification specifies the number of attachments in the form. If there are no attachments in the form, you cannot see the red notifications button. If there are no attachments in the form, when you select the attachments button ![attch](assets/attch.png), you get options to attach photos or scribbles.
 
 Your options are:
 
@@ -28,7 +28,7 @@ Your options are:
 
 ### The Attachments screen {#the-attachments-screen}
 
-To see all the attachments in a place, tap ![attachments-app](assets/attachments-app.png). You can add, rename, and delete attachments here.
+To see all the attachments in a place, select ![attachments-app](assets/attachments-app.png). You can add, rename, and delete attachments here.
 
 ![All attachments in a place](assets/attachments-screen.png)
 
@@ -38,26 +38,26 @@ You can use the **+** button in the Attachments screen to attach another picture
 
 You can use the camera of your mobile device or saved pictures in your device to attach a picture in the form.
 
-1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
-1. Tap **Gallery** or **Camera** in the pop-up that appears.
+1. Select the attachment button ![attch](assets/attch.png) at the bottom of the window.
+1. Select **Gallery** or **Camera** in the pop-up that appears.
 1. Based on the option you select, perform the following:
 
     1. If you select **Camera**.
 
-       Take a photograph. Then tap the **Use** ![use-pic](assets/use-pic.png) button.
+       Take a photograph. Then select the **Use** ![use-pic](assets/use-pic.png) button.
 
-       Or tap the **Retake** ![retake](assets/retake.png) button to retake the photograph.
+       Or select the **Retake** ![retake](assets/retake.png) button to retake the photograph.
 
     1. If you select **Gallery**.
 
-       The image browser of device pops up. In the picture browser of your device, tap the picture you want to attach.
+       The image browser of device pops up. In the picture browser of your device, select the picture you want to attach.
 
 ### Adding a note {#adding-a-note}
 
 The **Notes** option lets you add freehand scribbles and text attachments in your form.
 
-1. Tap the attachment button ![attch](assets/attch.png) at the bottom of the window.
-1. Tap **Notes** in the pop-up that appears.
+1. Select the attachment button ![attch](assets/attch.png) at the bottom of the window.
+1. Select **Notes** in the pop-up that appears.
 1. In the Notes user interface that is launched, capture a freehand scribble.
 
    ![Scribble interface](assets/scribble-ui.png)

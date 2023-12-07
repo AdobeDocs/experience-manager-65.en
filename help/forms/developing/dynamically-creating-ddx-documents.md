@@ -1,15 +1,15 @@
 ---
 title: Dynamically Creating DDX Documents
-seo-title: Dynamically Creating DDX Documents
+
 description: Create a DDX document dynamically using the Java API and Web Service API. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time.
-seo-description: Create a DDX document dynamically using the Java API and Web Service API. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time.
-uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
+
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
 ---

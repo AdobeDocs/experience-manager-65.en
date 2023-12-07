@@ -188,7 +188,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 
    ![products console with references open](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Click/tap on the reference type (for example, Product Pages) to expand the list.
+1. Click on the reference type (for example, Product Pages) to expand the list.
 1. Select a specific reference so you can show the options:
 
     * Navigate to Product Page
@@ -457,7 +457,7 @@ To generate a Catalog:
    ![create catalog wizard](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navigate to the required Catalog Blueprint.
-1. Select the **Select** button and tap/click the required Catalog Blueprint.
+1. Select the **Select** button and click the required Catalog Blueprint.
 1. Select **Next**.
 
    ![catalog properties wizard](/help/sites-administering/assets/chlimage_1-100.png)
@@ -518,7 +518,7 @@ To rollout a catalog:
 
    ![rollout](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. In the wizard, set the rollout as needed and then tap/click **Rollout Changes**.
+1. In the wizard, set the rollout as needed and then click **Rollout Changes**.
 1. A dialog box opens. Select **Done** when the process is finished.
 
 #### Rolling out a Catalog - Classic UI {#rolling-out-a-catalog-classic-ui}
@@ -543,7 +543,7 @@ To rollout a catalog:
 
    ![Import blueprints icon](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. In the wizard, select the Source as required and tap/click **Next**.
+1. In the wizard, select the Source as required and click **Next**.
 
    ![blueprint wizard](/help/sites-administering/assets/chlimage_1-102.png)
 

@@ -1,12 +1,10 @@
 ---
 title: Work with Dynamic Media
 description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
-uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
-discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
@@ -76,7 +74,7 @@ Dynamic Media-enabled assets include `pyramid.tiffs`.
 
 ### Asset views change {#asset-views-change}
 
-With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also click/tap to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled looks like this:
+With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also click to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled looks like this:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

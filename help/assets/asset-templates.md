@@ -99,7 +99,7 @@ You can edit a collateral immediately after you create it. Alternatively, you op
 
    ![chlimage_1-114](assets/chlimage_1-319.png)
 
-   You can also search for images using keywords, tags, and based on their publish status. You can browse through the [!DNL Experience Manager Assets] repository and navigate to the location of the desired image.
+   You can also search for images using keywords, tags, and based on their publishing status. You can browse through the [!DNL Experience Manager Assets] repository and navigate to the location of the desired image.
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 

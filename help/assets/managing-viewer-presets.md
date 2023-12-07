@@ -1,12 +1,10 @@
 ---
 title: Manage Viewer Presets
 description: How to create, edit, and manage Viewer Presets in Dynamic Media.
-uuid: 64fcf16a-7c4a-435b-bf1a-f27b8b39a715
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 feature: Viewer Presets
@@ -348,7 +346,7 @@ The following table identifies the mobile viewer gestures that are supported on 
    <td><p>Shows or hides the user interface</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Double-tap</strong></p> </td>
+   <td><p><strong>Double-select</strong></p> </td>
    <td><p>Does not apply</p> </td>
    <td><p>Zooms in or resets</p> </td>
    <td><p>Zooms in or resets</p> </td>

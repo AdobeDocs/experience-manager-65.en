@@ -1,13 +1,13 @@
 ---
 title: Getting XDP and PDF documents in AEM Forms
-seo-title: Getting XDP and PDF documents in AEM Forms
+
 description: AEM Forms lets you upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
-seo-description: AEM Forms lets you upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
-uuid: cd49b4a8-c282-4059-95a0-c98f6c92ab14
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
+
 docset: aem65
 
 role: Admin
@@ -33,7 +33,7 @@ You can upload the supported asset types individually or as a ZIP archive. You c
 
 1. Log in to the AEM Forms user interface by accessing `https://'[server]:[port]'/aem/forms.html`.
 1. Navigate to the folder where you want to upload the form or the folder containing forms.
-1. In the actions toolbar, tap **Create &gt; File Upload**.
+1. In the actions toolbar, select **Create &gt; File Upload**.
 
    ![Files from local storage option under Create](assets/step.png)
 

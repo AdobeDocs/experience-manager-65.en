@@ -1,14 +1,14 @@
 ---
 title: Using cURL with AEM
-seo-title: Using cURL with AEM
+
 description: Learn how to use cURL for common Adobe Experience Manager tasks.
-seo-description: Learn how to use cURL with AEM.
-uuid: 771b9acc-ff3a-41c9-9fee-7e5d2183f311
+
+
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
+
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
 ---
 # Using cURL with AEM{#using-curl-with-aem}
@@ -52,7 +52,7 @@ The following steps describe how to do this using the creation of a new page wit
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
 1. Click **Create** in the **Create Page** wizard to actually create the workflow.
-1. Right-click on the resulting POST action and select **Copy** -&gt; **Copy as cURL**.
+1. Right-click the resulting POST action and select **Copy** > **Copy as cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 

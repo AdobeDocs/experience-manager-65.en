@@ -98,7 +98,7 @@ You can also use the component to control the behavior of the task. For example,
 * **HTML Email Template**: Select email template for the notification email. To edit a template, modify the file located at /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
 * **Allow Delegation To:** AEM Inbox provides an option to the logged in user to delegate the assigned workflow to another user. You are allowed to delegate within the same group or to the workflow user of another group. If the task is assigned to a single user and the **allow delegation to members of the assignee group** option is selected, then it is not possible to delegate the task to another user or group.
 * **Share Settings:** AEM Inbox provides options to share a single or all the tasks in the inbox with another users:
-    * When the **Allow assignee to share explicitly in inbox** option is selected, the user can click on the task and share it with another AEM user. 
+    * When the **Allow assignee to share explicitly in inbox** option is selected, the user can click the task and share it with another AEM user. 
     * When the **Allow assignee to share via inbox sharing** option is selected and a user shares his Inbox items or allows other users to access his Inbox items, only tasks with aforementioned option enabled are shared with other users.
 
 * **Actions &gt; Default Actions:** Out of the box, Submit, Save, and Reset actions are available. All the default actions are enabled, by default. 
@@ -180,7 +180,7 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 **Save Generated Document of Record using below options:** Specify the location to keep a document of record file. You can choose to overwrite the payload folder, place document of record at a location within the payload directory, or store the document of record in a variable of Document data type.
 
-**Locale**: Specify the language of the document of record. Select **Literal** to select the locale from a drop-down list or select **Variable** to retrieve the locale from the value stored in a variable of string data type. You must define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
+**Locale**: Specify the language of the document of record. Select **Literal** to select the locale from a drop-down list or select **Variable** to retrieve the locale from the value stored in a variable of string data type. Define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
@@ -274,7 +274,7 @@ The Sign Document step enables you to use Adobe Sign to sign documents. The Sign
 
 * **Agreement Name:** Specify the title of the agreement. The agreement name becomes part of the subject and body text of the email sent to the recipients. You can either store the name in a variable of String data type or select **Literal** to add the name manually.
 
-* **Locale:** Specify the language for the email and verification options. You can either store the locale in a variable of String data type or select **Literal** to choose the locale from the list of available options. You must define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
+* **Locale:** Specify the language for the email and verification options. You can either store the locale in a variable of String data type or select **Literal** to choose the locale from the list of available options. Define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
 * **Adobe Sign Cloud Configuration**: Choose an Adobe Sign Cloud Configuration. If you have not configured Adobe Sign for AEM Forms, see [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md). 
 

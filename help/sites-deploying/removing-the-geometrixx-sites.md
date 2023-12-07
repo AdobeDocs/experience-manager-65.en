@@ -1,11 +1,11 @@
 ---
 title: Removing the Geometrixx Sites
 description: Learn how to remove the sample Geometrixx content.
-uuid: 07d20837-3375-4e64-bb07-3e4d10452335
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
+
 ---
 
 # Removing the Geometrixx Sites{#removing-the-geometrixx-sites}

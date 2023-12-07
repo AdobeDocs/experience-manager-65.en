@@ -1,8 +1,8 @@
 ---
 title: AEM Modernization Tools
-seo-title: AEM Modernization Tools
+
 description: AEM Modernization Tools help you convert your legacy AEM features to the latest technology
-seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749

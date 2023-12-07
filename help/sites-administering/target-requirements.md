@@ -28,10 +28,10 @@ The Client Code identifies the Adobe Target customer account when calling the Ad
 
 The Test and Target [replication agent](/help/sites-deploying/replication.md) must be enabled on the author instance. Note that this replication agent is not enabled by default if you used the [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) run mode for installing AEM. For more information about securing your production environment, see the [Security Checklist](/help/sites-administering/security-checklist.md).
 
-1. On the AEM home page, click or tap **Tools** &gt; **Deployment** &gt; **Replication**.
-1. Click or tap **Agents On Author**.
-1. Click or tap the **Test and Target (test and target)** replication agent, and then click or tap **Edit**.
-1. Select the Enabled option, then click or tap **OK**.
+1. On the AEM home page, click **Tools** &gt; **Deployment** &gt; **Replication**.
+1. Click **Agents On Author**.
+1. Click the **Test and Target (test and target)** replication agent, and then click **Edit**.
+1. Select the Enabled option, then click **OK**.
 
    >[!NOTE]
    >
@@ -41,7 +41,7 @@ The Test and Target [replication agent](/help/sites-deploying/replication.md) mu
 
 ## Securing the Activity Settings Node {#securing-the-activity-settings-node}
 
-You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. The activity settings node should only be accessible to the service handling the activity synchronization to Adobe Target.
+Secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. The activity settings node should only be accessible to the service handling the activity synchronization to Adobe Target.
 
 The **cq:ActivitySettings** node is available in CRXDE lite under `/content/campaigns/*nameofbrand*`* *under the activities jcr:content node;* *for example, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. This node is only created after you target a component.
 

@@ -32,7 +32,7 @@ Data integration supports OAuth2.0([Authorization Code](https://oauth.net/2/gran
 You can configure relational databases using AEM Web Console Configuration. Do the following:
 
 1. Go to AEM web console at `https://server:host/system/console/configMgr`.
-1. Look for **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuration. Tap to open the configuration in edit mode.
+1. Look for **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuration. Select to open the configuration in edit mode.
 1. In the configuration dialog, specify the details for the database you want to configure, such as:
 
     * Name of the data source
@@ -46,7 +46,7 @@ You can configure relational databases using AEM Web Console Configuration. Do t
    >Ensure that you encrypt sensitive information like passwords before configuring the data source. To encrypt:
    >
    > 1. Go to https://'[server]:[port]'/system/console/crypto.
-   > 1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
+   > 1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and select **[!UICONTROL Protect]**.
    >
    >The encrypted text appears in the Protected Text field that you can specify in the configuration.
 
@@ -56,7 +56,7 @@ You can configure relational databases using AEM Web Console Configuration. Do t
     * SELECT 1 (MySQL and MS SQL)
     * SELECT 1 from dual (Oracle)
 
-1. Tap **[!UICONTROL Save]** to save the configuration.
+1. Select **[!UICONTROL Save]** to save the configuration.
 
    >[!NOTE]
    >
@@ -67,7 +67,7 @@ You can configure relational databases using AEM Web Console Configuration. Do t
 You can configure AEM user profile using User Profile Connector configuration in AEM Web Console. Do the following:
 
 1. Go to AEM web console at https://'[server]:[port]'system/console/configMgr.
-1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
+1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
 1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -81,7 +81,7 @@ You can configure AEM user profile using User Profile Connector configuration in
    >
    >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
-1. Tap **[!UICONTROL Save]** to save the configuration.
+1. Select **[!UICONTROL Save]** to save the configuration.
 
 ## Configure folder for cloud service configurations {#cloud-folder}
 
@@ -97,15 +97,15 @@ To configure the folder for cloud service configurations:
    * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
 
-    1. In the **[!UICONTROL Configuration Browser]**, select the `global` folder and tap **[!UICONTROL Properties]**.
+    1. In the **[!UICONTROL Configuration Browser]**, select the `global` folder and select **[!UICONTROL Properties]**.
 
     1. In the **[!UICONTROL Configuration Properties]** dialog, enable **[!UICONTROL Cloud Configurations]**.
 
-    1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
+    1. Select **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
 
-1. In the **[!UICONTROL Configuration Browser]**, tap **[!UICONTROL Create]**.
+1. In the **[!UICONTROL Configuration Browser]**, select **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a title for the folder and enable **[!UICONTROL Cloud Configurations]**.
-1. Tap **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
+1. Select **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
 
 ## Configure RESTful web services {#configure-restful-web-services}
 
@@ -113,11 +113,11 @@ RESTful web service can be described using [Swagger specifications](https://swag
 
 Do the following to configure RESTful services:
 
-1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tap to select the folder where you want to create a cloud configuration.
+1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Select to select the folder where you want to create a cloud configuration.
 
    See [Configure folder for cloud service configurations](../../forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
 
-1. Tap **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL RESTful Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL RESTful Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and select **[!UICONTROL Next]**.
 1. Specify the following details for the RESTful service:
 
     * Select URL or File from the Swagger Source drop-down, and accordingly specify the Swagger URL to the Swagger definition file or upload the Swagger file from your local file system.
@@ -134,7 +134,7 @@ Do the following to configure RESTful services:
 
     If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).
 
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the RESTful service.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the RESTful service.
 
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 
@@ -143,7 +143,7 @@ Perform the following steps to configure the form data model HTTP client:
 
 1. Log in to [!DNL Experience Manager Forms] Author Instance as an administrator and go to [!DNL Experience Manager] web console bundles. The default URL is [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
-1. Tap **[!UICONTROL Form Data Model Http Client Configuration for REST data source]**.
+1. Select **[!UICONTROL Form Data Model Http Client Configuration for REST data source]**.
 
 1. In the [!UICONTROL Form Data Model Http Client Configuration for REST data source] dialog:
 
@@ -161,11 +161,11 @@ Perform the following steps to configure the form data model HTTP client:
 
 SOAP-based web services are described using [Web Services Description Language (WSDL) specifications](https://www.w3.org/TR/wsdl). To configure SOAP-based web service in AEM cloud services, ensure that you have the WSDL URL for the web service, and do the following:
 
-1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tap to select the folder where you want to create a cloud configuration.
+1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Select to select the folder where you want to create a cloud configuration.
 
    See [Configure folder for cloud service configurations](../../forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
 
-1. Tap **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL SOAP Web Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL SOAP Web Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and select **[!UICONTROL Next]**.
 1. Specify the following for the SOAP web service:
 
     * WSDL URL for the web service.
@@ -177,7 +177,7 @@ SOAP-based web services are described using [Web Services Description Language (
 
       If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).
 
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the SOAP web service.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the SOAP web service.
 
 ## Configure OData services {#config-odata}
 
@@ -188,11 +188,11 @@ An OData service is identified by its service root URL. To configure an OData se
 >Form data model supports [OData version 4](https://www.odata.org/documentation/).
 >For step-by-step guide to configure Microsoft Dynamics 365, online or on-premises, see [Microsoft Dynamics OData Configuration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tap to select the folder where you want to create a cloud configuration.
+1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Select to select the folder where you want to create a cloud configuration.
 
    See [Configure folder for cloud service configurations](../../forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
 
-1. Tap **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL OData Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL OData Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and select **[!UICONTROL Next]**.
 1. Specify the following details for the OData service:
 
     * Service Root URL for the OData service to be configured.
@@ -200,9 +200,9 @@ An OData service is identified by its service root URL. To configure an OData se
 
    >[!NOTE]
    >
-   >You must select OAuth 2.0 authentication type to connect with Microsoft Dynamics services using OData endpoint as the service root.
+   >Select OAuth 2.0 authentication type to connect with Microsoft Dynamics services using OData endpoint as the service root.
 
-1. Tap **Create** to create the cloud configuration for the OData service.
+1. Select **Create** to create the cloud configuration for the OData service.
 
 ## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
@@ -210,11 +210,11 @@ When you enable mutual authentication for form data model, both the data source 
 
 1. Upload the private key (certificate) to [!DNL AEM Forms] server. To upload the private key:
    1. Login to your [!DNL AEM Forms] server as an administrator.
-   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and tap **[!UICONTROL Properties]**.
-   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and tap **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
+   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the `fd-cloudservice` user and select **[!UICONTROL Properties]**.
+   1. Open the **[!UICONTROL Keystore]** tab, expand the **[!UICONTROL Add Private Key from KeyStore file]** option, upload the KeyStore File, specify the aliases, passwords, and select **[!UICONTROL Submit]**. The Certificate is uploaded.  The private key alias is mentioned in the certificate and set while creating the certificate.
 1. Upload trust certificate to Global Trust Store. To upload the certificate:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
-   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, tap **[!UICONTROL Select Certificate File]**, upload the certificate, and tap **[!UICONTROL Submit]**.
+   1. Expand the **[!UICONTROL Add Certificate from CER file]** option, select **[!UICONTROL Select Certificate File]**, upload the certificate, and select **[!UICONTROL Submit]**.
 1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.
 
 ## Next steps {#next-steps}

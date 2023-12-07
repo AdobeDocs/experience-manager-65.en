@@ -33,7 +33,7 @@ Under the Freedom of Information Act, Sarah requests a copy of the Administratio
 
 ### See it yourself {#see-it-yourself}
 
-In your browser, open `https://<hostname>:<PublishPort>/wegov`. In the We.Gov site, tap Applications &gt; All Applications. In the All Applications page, tap Apply under Application for FOIA Request.
+In your browser, open `https://<hostname>:<PublishPort>/wegov`. In the We.Gov site, select Applications &gt; All Applications. In the All Applications page, select Apply under Application for FOIA Request.
 
 ## Sarah starts her application for information under FOIA {#sarah-starts-her-application-for-information-under-foia}
 
@@ -48,7 +48,7 @@ Sarah clicks **Apply** and in the Freedom of Information Act Request Form page, 
 
 Requesting copy of the Administration for Children and Families case logs for fiscal years 2013 through 2016
 
-At any time, Sarah can tap **Save** to save a draft of the form and come back to it later to fill in the form and submit it. Sarah submits the form.
+At any time, Sarah can select **Save** to save a draft of the form and come back to it later to fill in the form and submit it. Sarah submits the form.
 
 >[!NOTE]
 >

@@ -1,14 +1,14 @@
 ---
 title: WebDAV Access
-seo-title: WebDAV Access
+
 description: Learn about how to access Adobe Experience manager using WebDAV.
-seo-description: Learn about WebDAV access in AEM.
-uuid: b0ecaa5d-5454-42df-8453-404ece734c32
+
+
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
+
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 ---
 # WebDAV Access{#webdav-access}

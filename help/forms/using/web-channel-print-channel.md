@@ -1,12 +1,12 @@
 ---
 title: Print channel and web channel
-seo-title: Print channel and web channel
+
 description: Importing print channel templates and creating and enabling web channel templates
-seo-description: Importing print channel templates and creating and enabling web channel templates
-uuid: 2361b1ee-c789-4a5a-9575-8b62b603da1e
+
+
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
+
 docset: aem65
 
 feature: Interactive Communication
@@ -30,9 +30,9 @@ To upload the template, you need to be a member of the forms-user group. Use the
 
 1. Select **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 
-1. Tap **[!UICONTROL Create]** > **[!UICONTROL File Upload]**.
+1. Select **[!UICONTROL Create]** > **[!UICONTROL File Upload]**.
 
-   Navigate and select the appropriate print channel template (XDP) and tap **[!UICONTROL Open]**.
+   Navigate and select the appropriate print channel template (XDP) and select **[!UICONTROL Open]**.
 
 ## Web channel {#web-channel}
 
@@ -46,23 +46,23 @@ To author a web channel template Complete the following steps:
 
 1. Create a Template folder to keep your Interactive Communication web templates, if you do not already have one. For more information, see Template Folders in [Page Templates - Editable](/help/sites-developing/page-templates-editable.md).
 
-    1. Tap **[!UICONTROL Tools]** ![tools](assets/tools.png) > **[!UICONTROL Configuration Browser]**.
+    1. Select **[!UICONTROL Tools]** ![tools](assets/tools.png) > **[!UICONTROL Configuration Browser]**.
        * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
-    1. In the Configuration Browser page, tap **[!UICONTROL Create]**.
-    1. In the Create Configuration dialog, specify a title for the folder, check **[!UICONTROL Editable Templates]**, and tap **[!UICONTROL Create]**.
+    1. In the Configuration Browser page, select **[!UICONTROL Create]**.
+    1. In the Create Configuration dialog, specify a title for the folder, check **[!UICONTROL Editable Templates]**, and select **[!UICONTROL Create]**.
 
        The Folder is created and listed in the Configuration Browser page.
 
 1. Navigate to the appropriate template folder and create a web template.
 
     1. Navigate to the appropriate template folder by selecting **[!UICONTROL Tools]** > **[!UICONTROL Templates]** > **`[Folder]`**.
-    1. Tap **[!UICONTROL Create]**.
-    1. Select **[!UICONTROL Interactive Communication - Web Channel]** and tap **[!UICONTROL Next]**.
-    1. Enter a Template title and description and then tap **[!UICONTROL Create]**.
+    1. Select **[!UICONTROL Create]**.
+    1. Select **[!UICONTROL Interactive Communication - Web Channel]** and select **[!UICONTROL Next]**.
+    1. Enter a Template title and description and then select **[!UICONTROL Create]**.
 
        The template is created and a dialog appears.
 
-    1. Tap **[!UICONTROL Open]** to open the template you have created in the Template editor.
+    1. Select **[!UICONTROL Open]** to open the template you have created in the Template editor.
 
        The Template Editor appears.
 
@@ -72,8 +72,8 @@ To author a web channel template Complete the following steps:
 
 1. To allow usage of this template for Interactive Communication creation, enable the template.
 
-    1. Tap **[!UICONTROL Tools]** ![tools](assets/tools.png) > **[!UICONTROL Templates]**.
-    1. Navigate to the appropriate template, select it, and tap **[!UICONTROL Enable]** and in the alert message, tap **[!UICONTROL Enable]**.
+    1. Select **[!UICONTROL Tools]** ![tools](assets/tools.png) > **[!UICONTROL Templates]**.
+    1. Navigate to the appropriate template, select it, and select **[!UICONTROL Enable]** and in the alert message, select **[!UICONTROL Enable]**.
 
        The template is enabled and its status is displayed as Enabled. Now you can proceed to creating an Interactive Communication where you can use the newly created web channel template.
 

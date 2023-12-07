@@ -1,12 +1,10 @@
 ---
 title: Embed the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page
 description: Learn how to embed Dynamic Media video, images, or 3D images on a web page
-uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34

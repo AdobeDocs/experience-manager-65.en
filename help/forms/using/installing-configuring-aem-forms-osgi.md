@@ -1,12 +1,12 @@
 ---
 title: Install and configure data capture capabilities
-seo-title: Install and configure data capture capabilities
+
 description: Install and configure adaptive forms, PDF Forms, and HTML5 Forms. Configure Adobe Analytics and Adobe Target for adaptive forms to analyze usage of forms and target users based on their profile.
-seo-description: Install and configure adaptive forms, PDF Forms, and HTML5 Forms. Configure Adobe Analytics and Adobe Target for adaptive forms to analyze usage of forms and target users based on their profile.
-uuid: 5d49032a-4dea-4f21-9dad-a7a30c5872ea
+
+
 topic-tags: installing
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
+
 docset: aem65
 
 role: Admin
@@ -107,11 +107,11 @@ Before you begin to install and configure data capture capability of AEM Forms, 
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms data capture and other capabilities. Perform the following steps to install the add-on package:
 
 1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
-1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Select **[!UICONTROL Adobe Experience Manager]** available in the header menu.
 1. In the **[!UICONTROL Filters]** section:
    1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
    2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
-1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Select the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and select **[!UICONTROL Download]**.
 1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 

@@ -62,16 +62,16 @@ To create variables for fields with Agent UI as the data source, create static t
 
     1. Select **Form Data Model** from the **Data Model** section.
 
-    1. Select **FDM_Create_First_IC** as the form data model and tap **Select**.
+    1. Select **FDM_Create_First_IC** as the form data model and select **Select**.
 
-    1. Tap **Next**.
+    1. Select **Next**.
 
-1. Select the **Variables** tab in the left pane and tap **Create**.
+1. Select the **Variables** tab in the left pane and select **Create**.
 1. In the **Create Variable** section:
 
     1. Enter **Invoicenumber** as the name of the variable.
     1. Select **String** as the type.
-    1. Tap **Create**.
+    1. Select **Create**.
 
    ![Create variable of String type](assets/variable_create_string_new.png)
 
@@ -126,16 +126,16 @@ To create variables for fields with Agent UI as the data source, create static t
 
     1. Select **Form Data Model** from the **Data Model** section.
 
-    1. Select **FDM_Create_First_IC** as the form data model and tap **Select**.
+    1. Select **FDM_Create_First_IC** as the form data model and select **Select**.
 
-    1. Tap **Next**.
+    1. Select **Next**.
 
-1. Select the **Variables** tab in the left pane and tap **Create**.
+1. Select the **Variables** tab in the left pane and select **Create**.
 1. In the **Create Variable** section:
 
     1. Enter **Placesupply** as the name of the variable.
     1. Select **String** as the type.
-    1. Tap **Create**.
+    1. Select **Create**.
 
    Repeat steps 4 and 5 to create the following variables:
 
@@ -189,16 +189,16 @@ To create variables for fields with Agent UI as the data source, create static t
 
     1. Select **Form Data Model** from the **Data Model** section.
 
-    1. Select **FDM_Create_First_IC** as the form data model and tap **Select**.
+    1. Select **FDM_Create_First_IC** as the form data model and select **Select**.
 
-    1. Tap **Next**.
+    1. Select **Next**.
 
-1. Select the **Variables** tab in the left pane and tap **Create**.
+1. Select the **Variables** tab in the left pane and select **Create**.
 1. In the **Create Variable** section:
 
     1. Enter **Previousbalance** as the name of the variable.
     1. Select **Number** as type.
-    1. Tap **Create**.
+    1. Select **Create**.
 
    Repeat steps 4 and 5 to create the following variables:
 
@@ -256,9 +256,9 @@ To create static text and use form data model elements in the Document Fragment,
 
     1. Select **Form Data Model** from the **Data Model** section.
 
-    1. Select **FDM_Create_First_IC** as the form data model and tap **Select**.
+    1. Select **FDM_Create_First_IC** as the form data model and select **Select**.
 
-    1. Tap **Next**.
+    1. Select **Next**.
 
 1. Create static text for the following fields using the right pane:
 
@@ -287,7 +287,7 @@ To create static text and use form data model elements in the Document Fragment,
 
    ![Summary of Charges](assets/summary_charges_static_fdm_new.png)
 
-1. Select the text in the **Value Added Services Charges** row and tap **Create Rule** to create a condition based on which the row is displayed in the Interactive Communication:
+1. Select the text in the **Value Added Services Charges** row and select **Create Rule** to create a condition based on which the row is displayed in the Interactive Communication:
 1. On the **Create Rule** pop-up window:
 
     1. Select **Data Models and Variables** and then **bills** &gt; **callcharges**.
