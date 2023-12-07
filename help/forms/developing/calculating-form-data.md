@@ -15,7 +15,7 @@ exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
 
 The Forms service can calculate the values that a user enters into a form and display the results. To calculate form data, you must perform two tasks. First, you create a form design script that calculates form data. A form design supports three types of scripts. One script type runs on the client, another runs on the server, and the third type runs on both the server and the client. The script type discussed in this topic runs on the server. Server-side calculations are supported for HTML, PDF, and form Guide (deprecated) transformations.
 
-As part of the form design process, you can use calculations and scripts to provide a richer user experience. Calculations and scripts can be added to most form fields and objects. You must create a form design script to perform calculation operations on data that a user enters into an interactive form.
+As part of the form design process, you can use calculations and scripts to provide a richer user experience. Calculations and scripts can be added to most form fields and objects. Create a form design script to perform calculation operations on data that a user enters into an interactive form.
 
 The user enters values into the form and clicks the Calculate button to view the results. The following process describes an example application that enables a user to calculate data:
 

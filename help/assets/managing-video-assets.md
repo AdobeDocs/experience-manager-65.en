@@ -119,7 +119,7 @@ To configure Google Cloud settings:
    If necessary, **[!UICONTROL Sign in]** using your Google account credentials to see the **[!UICONTROL Console]** option.
 
 1. On the Dashboard page, to the right of **[!UICONTROL Google Cloud Platform]**, click the Project drop-down list to open the Select a Project dialog box.
-1. In the Select a project dialog box, tap **[!UICONTROL New Project]**.
+1. In the Select a project dialog box, select **[!UICONTROL New Project]**.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
@@ -131,14 +131,14 @@ To configure Google Cloud settings:
 
 1. Do either one of the following:
 
-    * On your project's Dashboard, in the Getting Started card, tap **[!UICONTROL Explore and enable APIs]**.
-    * On your project's Dashboard, in the APIs card, tap **[!UICONTROL Go to APIs overview]**.
+    * On your project's Dashboard, in the Getting Started card, select **[!UICONTROL Explore and enable APIs]**.
+    * On your project's Dashboard, in the APIs card, select **[!UICONTROL Go to APIs overview]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. Near the top of the APIs & Services page, tap **[!UICONTROL Enable APIs and Services]**.
-1. On the API Library page, on the left side, under **[!UICONTROL Category]**, tap **[!UICONTROL YouTube]**. On the right side of the page, tap **[!UICONTROL YouTube Data API]**.
-1. On the YouTube Data API v3 page, tap **[!UICONTROL Enable]**.
+1. Near the top of the APIs & Services page, select **[!UICONTROL Enable APIs and Services]**.
+1. On the API Library page, on the left side, under **[!UICONTROL Category]**, select **[!UICONTROL YouTube]**. On the right side of the page, select **[!UICONTROL YouTube Data API]**.
+1. On the YouTube Data API v3 page, select **[!UICONTROL Enable]**.
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
@@ -152,11 +152,11 @@ To configure Google Cloud settings:
 
     * From the **[!UICONTROL Where are you calling the API from?]** drop-down list, select **[!UICONTROL Web Server (for example, node.js, Tomcat)]**
 
-    * From the **[!UICONTROL What data are you accessing?]** drop-down list, tap **[!UICONTROL User data]**.
+    * From the **[!UICONTROL What data are you accessing?]** drop-down list, select **[!UICONTROL User data]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
-1. Tap **[!UICONTROL What credentials do I need?]**
+1. Select **[!UICONTROL What credentials do I need?]**
 1. On the **[!UICONTROL Add credentials to your project]** page, step 2, under the **[!UICONTROL Create an OAuth 2.0 client ID]** heading, in the Name field, enter a unique name if desired. Or, you can use the default name specified by Google.
 1. Under the **[!UICONTROL Authorized JavaScript origins]** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
 
@@ -186,7 +186,7 @@ To configure Google Cloud settings:
    The consent screen is displayed to the Experience Manager administrator when they authenticate to YouTube; Experience Manager contacts YouTube for permission.
 
 1. Click **[!UICONTROL Continue]**.
-1. On the Add credentials to your project page, step 4, under the **[!UICONTROL Download credentials]** heading, tap **[!UICONTROL Download]**.
+1. On the Add credentials to your project page, step 4, under the **[!UICONTROL Download credentials]** heading, select **[!UICONTROL Download]**.
 
    ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
 
@@ -228,7 +228,7 @@ Or, if you intend to use the default tags in Experience Manager, you can skip th
 
 ### Enable the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
-After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, a listing of them is displayed as part of the test.
+After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, select **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, a listing of them is displayed as part of the test.
 
 1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
 1. On the Agents of Author page, click **[!UICONTROL YouTube Publish]**.
@@ -248,10 +248,10 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 #### Set up YouTube in Experience Manager 6.4 and later {#setting-up-youtube-in-aem-and-later}
 
 1. Be sure you log in to your instance of Dynamic Media as an Administrator.
-1. In the upper-left corner, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]**(hammer icon) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]**.
-1. Tap **[!UICONTROL global]** (do not select it).
+1. In the upper-left corner, select the Experience Manager logo, then in the left rail, select **[!UICONTROL Tools]**(hammer icon) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]**.
+1. Select **[!UICONTROL global]** (do not select it).
 
-1. Near the upper-right corner of the global page, tap **[!UICONTROL Create]**.
+1. Near the upper-right corner of the global page, select **[!UICONTROL Create]**.
 1. On the Create YouTube Configuration page, under Google Cloud Platform Settings, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
    You specified the project ID when you initially configured Google Cloud settings earlier.
@@ -262,33 +262,33 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. Using a plain text editor, open the JSON file that you downloaded and saved earlier in the task [Configure Google Cloud settings](/help/assets/video.md#configuring-google-cloud-settings).
 1. Select and copy the entire JSON text.
 1. Return to the YouTube Account Settings dialog box. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
+1. Near the upper-right corner of the page, select **[!UICONTROL Save]**.
 
    Now set up YouTube channels in Experience Manager.
 
-1. Tap **[!UICONTROL Add Channel]**.
+1. Select **[!UICONTROL Add Channel]**.
 1. In the Channel Name field, enter the name of the channel that you created in the task **[!UICONTROL Adding one or more channels to YouTube]** earlier.
 
    You can optionally add a description, if desired.
 
-1. Tap **[!UICONTROL Add]**.
+1. Select **[!UICONTROL Add]**.
 1. YouTube/Google authentication is displayed. If you are not already logged into the Google Cloud account, then skip this step.
 
     * Enter the Google username and password associated with the Google Project ID and the JSON text above.
     * Depending on how many channels your account has you see two or more items. Select a channel. Do not select the e-mail address; it is not a channel.
-    * On the next page, tap **[!UICONTROL Accept]** to allow access to this channel.
+    * On the next page, select **[!UICONTROL Accept]** to allow access to this channel.
 
-1. Tap **[!UICONTROL Allow]**.
+1. Select **[!UICONTROL Allow]**.
 
    Now set up tags for publishing.
 
-1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services &gt; YouTube page, tap the pencil icon to edit the list of tags that you want to use.
-1. Tap the drop-down list icon (upside-down caret) so you can display the list of available tags in Experience Manager.
-1. Tap one or more tags so you can add them.
+1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services &gt; YouTube page, select the pencil icon to edit the list of tags that you want to use.
+1. Select the drop-down list icon (upside-down caret) so you can display the list of available tags in Experience Manager.
+1. Select one or more tags so you can add them.
 
-   To delete a tag that you have added, select the tag, and tap **[!UICONTROL X]**.
+   To delete a tag that you have added, select the tag, and select **[!UICONTROL X]**.
 
-1. When you are finished adding the tags that you want, tap **[!UICONTROL Save]**.
+1. When you are finished adding the tags that you want, select **[!UICONTROL Save]**.
 
    Now you publish videos to your YouTube channel.
 
@@ -296,10 +296,10 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 
 1. Be sure you log in to your instance of Dynamic Media as an Administrator.
 
-1. In the upper-left corner, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
-1. Under the Third-Party Services heading, under YouTube, tap **[!UICONTROL Configure now]**.
+1. In the upper-left corner, select the Experience Manager logo, then in the left rail, select **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
+1. Under the Third-Party Services heading, under YouTube, select **[!UICONTROL Configure now]**.
 1. In the Create Configuration dialog box, enter a title (mandatory) and name (optional) in the respective fields.
-1. Tap **[!UICONTROL Create]**.
+1. Select **[!UICONTROL Create]**.
 1. In the YouTube Account Settings dialog box, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
    You specified the project ID when you initially [configured Google Cloud settings](/help/assets/video.md#configuring-google-cloud-settings) earlier.
@@ -308,33 +308,33 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. Using a plain text editor, open the JSON file that you downloaded and saved earlier in the task Configuring Google Cloud settings.
 1. Select and copy the entire JSON text.
 1. Return to the YouTube Account Settings dialog box. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
-1. Tap **[!UICONTROL OK]**.
+1. Select **[!UICONTROL OK]**.
 
    Now set up YouTube channels in Experience Manager.
 
-1. To the right of **[!UICONTROL Available Channels]**, tap **+** (plus sign icon).
+1. To the right of **[!UICONTROL Available Channels]**, select **+** (plus sign icon).
 1. In the YouTube Channel Settings dialog box, in the Title field, enter the name of the channel that you created in the task **[!UICONTROL Adding one or more channels to YouTube]** earlier.
 
    You can optionally add a description, if desired.
 
-1. Tap **[!UICONTROL OK]**.
+1. Select **[!UICONTROL OK]**.
 1. YouTube/Google authentication is displayed. If you are not already logged into the Google Cloud account, then skip this step.
 
     * Enter the Google username and password associated with the Google Project ID and the JSON text above.
     * Depending on how many channels your account has you see two or more items. Select a channel. Do not select the e-mail address; it is not a channel.
-    * On the next page, tap **[!UICONTROL Accept]** to allow access to this channel.
+    * On the next page, select **[!UICONTROL Accept]** to allow access to this channel.
 
-1. Tap **[!UICONTROL Allow]**.
+1. Select **[!UICONTROL Allow]**.
 
    Now set up tags for publishing.
 
-1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services &gt; YouTube page, tap the pencil icon to edit the list of tags that you want to use.
-1. Tap the drop-down list icon (upside-down caret) so you can display the list of available tags in Experience Manager.
-1. Tap one or more tags so you can add them.
+1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services &gt; YouTube page, select the pencil icon to edit the list of tags that you want to use.
+1. Select the drop-down list icon (upside-down caret) so you can display the list of available tags in Experience Manager.
+1. Select one or more tags so you can add them.
 
-   To delete a tag that you have added, select the tag, and tap **X**.
+   To delete a tag that you have added, select the tag, and select **X**.
 
-1. When you are finished adding the tags that you want, tap **[!UICONTROL OK]**.
+1. When you are finished adding the tags that you want, select **[!UICONTROL OK]**.
 
    Now you publish videos to your YouTube channel.
 
@@ -346,10 +346,10 @@ To create the metadata processing profile, you are first going to copy values fr
 
 To automate the setting of default YouTube properties for your uploaded videos:
 
-1. In the upper-left corner, tap the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. In the upper-left corner, select the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. Click **[!UICONTROL default]**. (Do not add a checkmark to the selection box to the left of "default".)
-1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then tap **[!UICONTROL Edit]**.
-1. On the Metadata Schema Editor page, tap the **[!UICONTROL Advanced]** tab.
+1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then select **[!UICONTROL Edit]**.
+1. On the Metadata Schema Editor page, select the **[!UICONTROL Advanced]** tab.
 1. Under the YouTube Publishing heading, click **[!UICONTROL YouTube Category]**.
 1. On the right side of the page, under the **[!UICONTROL Settings]** tab, do the following:
 
@@ -359,7 +359,7 @@ To automate the setting of default YouTube properties for your uploaded videos:
     * Under **[!UICONTROL Choices]**, select and copy the default value that you want to use (such as People & Blogs or Science & Technology).
       Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
 
-1. Under the YouTube Publishing heading, tap **[!UICONTROL YouTube Privacy]**.
+1. Under the YouTube Publishing heading, select **[!UICONTROL YouTube Privacy]**.
 1. On the right side of the page, under the **[!UICONTROL Settings]** tab, do the following:
 
     * In the **[!UICONTROL Map to property]** text field, select and copy the value.
@@ -369,7 +369,7 @@ To automate the setting of default YouTube properties for your uploaded videos:
       Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
 
 1. Near the upper-right corner of the Metadata Schema Editor page, click **[!UICONTROL Cancel]**.
-1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. In the upper-left corner of Experience Manager, select the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 
 1. On the Metadata Profiles page, near the upper-right corner of the page, click **[!UICONTROL Create]**.
 1. In the Add Metadata Profile dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video` then click **[!UICONTROL Create]**.
@@ -483,10 +483,10 @@ When you unpublish a video asset in Experience Manager, the video is removed fro
 
 1. Navigate to the video assets that you want to unpublish from your YouTube channel.
 1. In an asset selection mode, select one or more published video assets.
-1. On the toolbar, click **[!UICONTROL Manage Publication]**. Tap the three dots icon (. . .) on the toolbar so **[!UICONTROL Manage Publication]** opens.
-1. On the Manage Publication page, tap **[!UICONTROL Unpublish]**.
-1. In the upper-right corner of the page, tap **[!UICONTROL Next]**.
-1. In the upper-right corner of the page, tap **[!UICONTROL Unpublish]**.
+1. On the toolbar, click **[!UICONTROL Manage Publication]**. Select the three dots icon (. . .) on the toolbar so **[!UICONTROL Manage Publication]** opens.
+1. On the Manage Publication page, select **[!UICONTROL Unpublish]**.
+1. In the upper-right corner of the page, select **[!UICONTROL Next]**.
+1. In the upper-right corner of the page, select **[!UICONTROL Unpublish]**.
 
 ## Monitor video encoding and YouTube publishing progress {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -504,11 +504,11 @@ When you upload a new video to a folder that has video encoding applied, or you 
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   This column does not display by default. To enable the column, select **[!UICONTROL View Settings]** from the views drop-down menu, and add the **[!UICONTROL Processing Status]** column and tap or click **[!UICONTROL Update]**.
+   This column does not display by default. To enable the column, select **[!UICONTROL View Settings]** from the views drop-down menu, and add the **[!UICONTROL Processing Status]** column and click **[!UICONTROL Update]**.
 
    ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. View progress in the asset details. When you tap or click an asset, open the drop-down menu and select **[!UICONTROL Timeline]**. To narrow it down to workflow activities like encoding or YouTube publishing, select **[!UICONTROL Workflows]**.
+1. View progress in the asset details. When you click an asset, open the drop-down menu and select **[!UICONTROL Timeline]**. To narrow it down to workflow activities like encoding or YouTube publishing, select **[!UICONTROL Workflows]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -532,7 +532,7 @@ When you upload a new video to a folder that has video encoding applied, or you 
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
-   Select the instance and tap **[!UICONTROL Open History]**.
+   Select the instance and select **[!UICONTROL Open History]**.
 
    ![chlimage_1-434](assets/chlimage_1-434.png)
 
@@ -578,18 +578,18 @@ How you configure notification depends on whether you want notifications for enc
 
 * For YouTube publishing jobs, do the following:
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then tap **[!UICONTROL Edit]** on the toolbar.
-1. Near the upper-right corner of the Publish to YouTube workflow page, tap **[!UICONTROL Edit]**.
-1. Hover the mouse pointer on the YouTube Upload component, then tap once to display the inline toolbar.
+1. In Experience Manager, select **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then select **[!UICONTROL Edit]** on the toolbar.
+1. Near the upper-right corner of the Publish to YouTube workflow page, select **[!UICONTROL Edit]**.
+1. Hover the mouse pointer on the YouTube Upload component, then select once to display the inline toolbar.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
 
-1. On the inline toolbar, tap the Configuration icon (wrench). Click the **[!UICONTROL Arguments]** tab.
+1. On the inline toolbar, select the Configuration icon (wrench). Click the **[!UICONTROL Arguments]** tab.
 
    ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
 
-1. In the YouTube Upload Process - Step Properties dialog box, tap the **[!UICONTROL Arguments]** tab.
+1. In the YouTube Upload Process - Step Properties dialog box, select the **[!UICONTROL Arguments]** tab.
 
    ![6_5_publishtoyoutubeworkflow-arguments-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
 
@@ -605,8 +605,8 @@ How you configure notification depends on whether you want notifications for enc
    >
    >These emails are specific to YouTube and are in addition to the generic workflow email notifications. As a result, you can receive two sets of email notification - the generic notification available in the **[!UICONTROL Day CQ Workflow Email Notification Service]** and one specific to YouTube depending on your configuration settings.
 
-1. When you are finished, near the upper-right corner of the dialog box, tap the **[!UICONTROL Done]** icon (check mark).
-1. On the Publish to YouTube workflow page, near the upper-right corner, tap **[!UICONTROL Sync]**.
+1. When you are finished, near the upper-right corner of the dialog box, select the **[!UICONTROL Done]** icon (check mark).
+1. On the Publish to YouTube workflow page, near the upper-right corner, select **[!UICONTROL Sync]**.
 
 ## Annotate video assets {#annotate-video-assets}
 

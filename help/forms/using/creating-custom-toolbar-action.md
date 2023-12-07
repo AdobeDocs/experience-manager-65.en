@@ -1,13 +1,13 @@
 ---
 title: Creating a custom toolbar action
-seo-title: Creating a custom toolbar action
+
 description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
-seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
-uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
+
 docset: aem65
 exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
 ---

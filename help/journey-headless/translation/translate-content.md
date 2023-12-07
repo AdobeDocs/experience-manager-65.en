@@ -46,15 +46,15 @@ Both approaches are explored in the following sections.
 
 For content owners who are also responsible for translation, it is often easier to have AEM automatically create the translation project automatically. To have AEM automatically create a translation project based on your content path:
 
-1. Navigate to **Navigation** -&gt; **Assets** -&gt; **Files**. Remember that headless content in AEM is stored as assets known as Content Fragments.
+1. Navigate to **Navigation** > **Assets** > **Files**. Remember that headless content in AEM is stored as assets known as Content Fragments.
 1. Select the language root of your project. In this case, `/content/dam/wknd/en` is selected.
-1. Tap or click the rail selector and show the **References** panel.
-1. Tap or click **Language Copies**.
+1. Click the rail selector and show the **References** panel.
+1. Click **Language Copies**.
 1. Check the **Language Copies** checkbox.
 1. Expand the section **Update Language Copies** at the bottom of the references panel.
 1. In the **Project** dropdown, select **Create Translation Project(s)**.
 1. Provide an appropriate title for your translation project.
-1. Tap or click **Start**.
+1. Click **Start**.
 
 ![Create a translation project](assets/create-translation-project.png)
 
@@ -70,16 +70,16 @@ You receive a message that the project was created.
 
 For translation project managers, it is often necessary to manually select specific content to include in a translation project. To create such a manual translation project, you must start by creating an empty project and then select the content to add to it.
 
-1. Navigate to **Navigation** -&gt; **Projects**.
-1. Tap or click **Create** -&gt; **Folder** to create a folder for your projects.
+1. Navigate to **Navigation** > **Projects**.
+1. Click **Create** > **Folder** to create a folder for your projects.
    * This is optional, but helpful to organize your translation efforts.
-1. In the **Create Folder** window, add a **Title** for the folder, and then tap or click **Create**.
+1. In the **Create Folder** window, add a **Title** for the folder, and then click **Create**.
 
    ![Create project folder](assets/create-project-folder.png)
 
-1. Tap or click the folder to open the folder.
-1. In your new project folder, tap or click **Create** -&gt; **Project**.
-1. Projects are based on templates. Tap or click the **Translation Project** template to select it and then tap or click **Next**.
+1. Click the folder to open the folder.
+1. In your new project folder, click **Create** > **Project**.
+1. Projects are based on templates. Click the **Translation Project** template to select it and then click **Next**.
 
    ![Select translation project template](assets/select-translation-project-template.png)
 
@@ -87,11 +87,11 @@ For translation project managers, it is often necessary to manually select speci
 
    ![Project basic tab](assets/project-basic-tab.png)
 
-1. On the **Advanced** tab, use the **Target Language** dropdown to select the languages into which your content should be translated. Tap or click **Create**.
+1. On the **Advanced** tab, use the **Target Language** dropdown to select the languages into which your content should be translated. Click **Create**.
 
    ![Project advanced tab](assets/project-advanced-tab.png)
 
-1. Tap or click **Open** in the confirmation dialog.
+1. Click **Open** in the confirmation dialog.
 
    ![Project confirmation dialog](assets/project-confirmation-dialog.png)
 
@@ -103,8 +103,8 @@ Translation projects are designed to collect all the content and tasks related t
 
 To view the translation project:
 
-1. Navigate to **Navigation** -&gt; **Projects**.
-1. Tap or click the project that was created in the previous section.
+1. Navigate to **Navigation** > **Projects**.
+1. Click the project that was created in the previous section.
 
 ![Translation project](assets/translation-project.png)
 
@@ -123,16 +123,16 @@ When automatically creating the translation project, AEM evaluates the headless 
 
 To see the detail of the headless content included in this project:
 
-1. Tap or click the ellipsis button at the bottom of the **Translation Job** card.
+1. Click the ellipsis button at the bottom of the **Translation Job** card.
 1. The **Translation Job** window lists all items in the job.
 ![Translation Job detail](assets/translation-job-detail.png)
-1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
-1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
+1. Click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
+1. Click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
 ![Translation Job options](assets/translation-job-options.png)
 
 Typically the content for the translation job starts in the **Draft** state as indicated by the **State** column in the **Translation Job** window.
 
-To start the translation job, return to the translation project overview and tap or click the chevron button at the top of the **Translation Job** card and select **Start**.
+To start the translation job, return to the translation project overview and click the chevron button at the top of the **Translation Job** card and select **Start**.
 
 ![Start translation job](assets/start-translation-job.png)
 
@@ -148,16 +148,16 @@ When manually creating a translation project, AEM creates the necessary jobs, bu
 
 To add content to a translation job:
 
-1. Tap or click the ellipsis button at the bottom of one of the **Translation Job** cards.
-1. See that the job contains no content. Tap or click the **Add** button at top of the window and then **Assets/Pages** from the drop-down.
+1. Click the ellipsis button at the bottom of one of the **Translation Job** cards.
+1. See that the job contains no content. Click the **Add** button at top of the window and then **Assets/Pages** from the drop-down.
 
    ![Empty translation job](assets/empty-translation-job.png)
 
-1. A path browser opens allowing you to select specifically which content to add. Locate your content and tap or click to select.
+1. A path browser opens allowing you to select specifically which content to add. Locate your content and click to select.
 
    ![Path browser](assets/path-browser.png)
 
-1. Tap or click **Select** to add the selected content to the job.
+1. Click **Select** to add the selected content to the job.
 1. In the **Translate** dialog, specify that you wish to **Create Language Copy**.
 
    ![Create language copy](assets/translate-copy-master.png)
@@ -166,14 +166,14 @@ To add content to a translation job:
 
    ![Content added to translation job](assets/content-added.png)
 
-1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
+1. Click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
 ![Translation Job options](assets/translation-job-options-manual.png)
 
 1. Repeat these steps to include all required content in the job.
 
 >[!TIP]
 >
->The path browser is a powerful tool allowing you to search, filter, and navigate your content. Tap or click the **Content Only/Filters** button to toggle the side panel and reveal advanced filters such as **Modified Date** or **Translation Status**.
+>The path browser is a powerful tool allowing you to search, filter, and navigate your content. Click the **Content Only/Filters** button to toggle the side panel and reveal advanced filters such as **Modified Date** or **Translation Status**.
 >
 >You can learn more about the path browser in the [additional resources section.](#additional-resources)
 
@@ -181,7 +181,7 @@ You can use the prior steps to add the necessary content to all languages (jobs)
 
 Typically the content for the translation job starts in the **Draft** state as indicated by the **State** column in the **Translation Job** window.
 
-To start the translation job, return to the translation project overview and tap or click the chevron button at the top of the **Translation Job** card and select **Start**.
+To start the translation job, return to the translation project overview and click the chevron button at the top of the **Translation Job** card and select **Start**.
 
 ![Start translation job](assets/start-translation-job-manual.png)
 
@@ -199,7 +199,7 @@ Simply go to the completed translation job and select a line item by tapping or 
 
 ![Reveal in content fragment](assets/reveal-in-content-fragment.png)
 
-Tap or click that icon to open the translated content fragment in its editor console to see the details of the translated content.
+Click that icon to open the translated content fragment in its editor console to see the details of the translated content.
 
 ![A translated content fragment](assets/translated-content-fragment.png)
 
@@ -211,7 +211,7 @@ The project's purpose is to collect all the resources related to a translation i
 /content/dam/wknd/es
 ```
 
-If you navigate to this folder via **Navigation** -&gt; **Assets** -&gt; **Files**, you see the translated content.
+If you navigate to this folder via **Navigation** > **Assets** > **Files**, you see the translated content.
 
 ![Translated content folder structure](assets/translated-file-content.png)
 

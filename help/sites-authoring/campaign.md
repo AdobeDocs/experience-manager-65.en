@@ -96,7 +96,7 @@ From within the newsletter/email in authoring, you might not be able to select t
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Select **Cloud services** and click **+** to add a configuration. Select any visible configuration (does not matter which one). Click or tap the **+** sign to add another configuration and then select **Adobe Campaign**.
+1. Select **Cloud services** and click **+** to add a configuration. Select any visible configuration (does not matter which one). Click the **+** sign to add another configuration and then select **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -195,7 +195,7 @@ You can preview how the newsletter will look and preview the personalization.
 
    ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-1. You can view the seed data coming from Adobe Campaign that is associated with the currently selected persona. To do this, click/tap the Adobe Campaign module in the ContextHub bar. This opens a dialog box displaying all seed data of the current profile. Again, the data adapts when switching to a different persona.
+1. You can view the seed data coming from Adobe Campaign that is associated with the currently selected persona. To do this, click the Adobe Campaign module in the ContextHub bar. This opens a dialog box displaying all seed data of the current profile. Again, the data adapts when switching to a different persona.
 
    ![chlimage_1-30](assets/chlimage_1-30a.png)
 

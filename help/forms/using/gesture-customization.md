@@ -1,12 +1,12 @@
 ---
 title: Gesture customization
 description: Learn how to customize the gestures on AEM Forms app. You can customize the gestures to provide a distinct method of interacting with the application.
-uuid: 117e0e21-66bd-42f1-879c-6c1443991974
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
+
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 ---
 # Gesture customization {#gesture-customization}
@@ -43,13 +43,13 @@ In the AEM Forms app, the left swipe opens up a new task or Startpoint while rig
 
 1. Find
 
-    * "tap .taskContentArea" : "onTaskClick",
+    * "select .taskContentArea" : "onTaskClick",
 
-      "tap .taskOpenArea" : "onTaskClick",
+      "select .taskOpenArea" : "onTaskClick",
 
-      "tap .task-content" : "onTaskClick",
+      "select .task-content" : "onTaskClick",
 
-      "tap .last_empty_div" : "onTaskClick",
+      "select .last_empty_div" : "onTaskClick",
 
    and replace with
 

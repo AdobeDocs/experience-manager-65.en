@@ -1,11 +1,11 @@
 ---
 title: Set up the Visual Studio project and build the Windows app
-seo-title: Set up the Visual Studio project and build the Windows app
+
 description: Learn how to set up a Visual Studio project to build the AEM Forms Windows mobile device app.
-seo-description: Learn how to set up a Visual Studio project to build the AEM Forms Windows mobile device app.
-uuid: 9559e584-2a40-4740-a29a-d7ad66220224
+
+
 topic-tags: forms-app
-discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
+
 docset: aem65
 exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
 ---
@@ -16,11 +16,11 @@ AEM Forms provides the complete source code of the AEM Forms app. The source con
 To get the AEM Forms app source, perform the following steps:
 
 1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
-1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Select **[!UICONTROL Adobe Experience Manager]** available in the header menu.
 1. In the **[!UICONTROL Filters]** section:
    1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
    2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
-1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Select the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and select **[!UICONTROL Download]**.
 1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
@@ -107,7 +107,7 @@ There are two ways to install the application on a Windows device.
 
 ### By acquiring the developer license {#by-acquiring-the-developer-license}
 
-1. Right-click on the PowerShell file ( `Add-AppDevPackage.ps1)`, and choose **Run with PowerShell**.
+1. Right-click the PowerShell file ( `Add-AppDevPackage.ps1)`, and choose **Run with PowerShell**.
 
 1. The setup prompts you to get a developer license. Use Microsoft account credentials to acquire developer license.  
    This license is valid for 30 days, and you can renew it for free.
@@ -130,7 +130,7 @@ To deploy the app:
 
 1. In your device, run `gpedit.msc`.
 1. Navigate to **Computer Configuration &gt; Administrative Templates &gt; Windows Component &gt; App Package Deployment**.
-1. Right-click on **Allow all trusted apps to install**.
+1. Right-click **Allow all trusted apps to install**.
 1. Click **Edit** and select **Enabled**.
 
 1. Click **OK**.

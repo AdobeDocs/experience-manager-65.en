@@ -1,13 +1,13 @@
 ---
 title: Style System
-seo-title: Style System
+
 description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
-seo-description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
-uuid: 0d857650-8738-49e6-b431-f69c088be74f
+
+
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
+
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 ---
 # Style System{#style-system}
@@ -74,7 +74,7 @@ If you wish to use the Style System for your own components do the following:
 
    ![Style System for the author](assets/style-system-author.png)
 
-1. Tap or click the **Styles** button on the toolbar of the **List** component to open the style menu and change the appearance of the component.
+1. Click the **Styles** button on the toolbar of the **List** component to open the style menu and change the appearance of the component.
 
    ![Selecting styles](assets/style-system-author2.png)
 
@@ -84,7 +84,7 @@ If you wish to use the Style System for your own components do the following:
 
 ### As a Template Author {#as-a-template-author}
 
-1. While editing WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -&gt; Edit Template**.
+1. While editing WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information > Edit Template**.
 
    ![Edit Template](assets/style-system-edit-template.png)
 

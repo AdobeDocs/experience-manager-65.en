@@ -111,8 +111,8 @@ Do the following to register an OAuth client on Active Directory Federation Serv
 
 The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with default OData configuration. To configure it to connect with your Microsoft Dynamics service, do the following.
 
-1. Navigate to **[!UICONTROL Tools > Cloud Services > Data Sources]**, and tap the `global` configuration folder.
-1. Select **MS Dynamics OData Cloud Service (OData Service)** configuration and tap **[!UICONTROL Properties]**. The cloud service configuration property dialog opens.
+1. Navigate to **[!UICONTROL Tools > Cloud Services > Data Sources]**, and select the `global` configuration folder.
+1. Select **MS Dynamics OData Cloud Service (OData Service)** configuration and select **[!UICONTROL Properties]**. The cloud service configuration property dialog opens.
 
    In the **Authentication Settings** tab:
 

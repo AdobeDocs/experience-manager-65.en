@@ -1,13 +1,13 @@
 ---
 title: Creating a forms portal page
-seo-title: Creating a forms portal page
+
 description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
-seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
-uuid: a5017de5-616c-4ce4-81aa-f28c741f8e8f
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
+
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
@@ -52,13 +52,13 @@ Search & Lister Component in a page with Grid layout
 
 The List pane is an area where your forms are listed. The Search & Lister component provides various configuration options that you can use to control the display of forms in the List pane.
 
-To configure the List pane, tap the Search and Lister component and then tap ![settings_icon](assets/settings_icon.png). The **[!UICONTROL  Edit Component]** dialog opens.
+To configure the List pane, select the Search and Lister component and then select ![settings_icon](assets/settings_icon.png). The **[!UICONTROL  Edit Component]** dialog opens.
 
 ![List pane in edit mode](assets/edit-list.png)
 
 List pane in edit mode
 
-The **Edit** dialog includes several tabs that provide configuration options described in the table below. Tap **OK** to save the configuration, when done.
+The **Edit** dialog includes several tabs that provide configuration options described in the table below. Select **OK** to save the configuration, when done.
 
 <table>
  <tbody>
@@ -171,7 +171,7 @@ The Date Predicate component, when added, enables search on the listed forms tha
 
 To configure the Date Predicate component:
 
-1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
+1. Select the component and then select ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
 1. Specify the following:
 
     * **Type:** The only option available is **Last Modified Date**
@@ -182,7 +182,7 @@ To configure the Date Predicate component:
     * **End Date Label:** Label or caption for end date field
     * **Hide:** To enforce default date filter to list forms
 
-1. Tap **OK**
+1. Select **OK**
 
 #### Full Text Predicate {#full-text-predicate}
 
@@ -190,9 +190,9 @@ The Full Text Predicate component implements full text search on form data, such
 
 To configure the Full Text Predicate component:
 
-1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
+1. Select the component and then select ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
 1. Specify the title in the **Main Title** field.
-1. Tap **Ok**
+1. Select **Ok**
 
 #### Properties Predicate {#properties-predicate}
 
@@ -200,15 +200,15 @@ The Properties Predicate component implements searching of forms based on form p
 
 To configure the Properties Predicate component:
 
-1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
+1. Select the component and then select ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
 1. In the General tab, specify the search label. The default value is **Properties**
 
-1. In the Options tab, tap **Add Item.**
+1. In the Options tab, select **Add Item.**
 1. Select a property from the drop-down list and specify a search label for it in the field below the drop-down list.
 1. Repeat step 4 to add more properties. You can also specify a default filter value to list forms based on the specified criteria and hide the property for search by end users. Select the Hide checkbox for a property and specify the default filter value.
    For example, if you want to display forms that contain "Travel" in their titles, select Hide next to the Title property. In addition, specify Travel in default filter value text box.
 
-1. Tap **OK**
+1. Select **OK**
 
 #### Tags Predicate {#tags-predicate}
 
@@ -216,10 +216,10 @@ The Tags Predicate component implements searching of forms based on tags defined
 
 To configure the Tags Predicate component:
 
-1. Tap the component and then tap ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
-1. Tap the down-arrow button next to the Tags field.
+1. Select the component and then select ![settings_icon](assets/settings_icon.png). The Edit dialog opens.
+1. Select the down-arrow button next to the Tags field.
 1. Select appropriate tags
-1. Tap **OK**
+1. Select **OK**
 
 The selected tags appear in the Search pane along with the check boxes for selection. Users can now narrow down their search based on the tags.
 

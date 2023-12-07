@@ -8,7 +8,7 @@ exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 
 >[!IMPORTANT]
 >
->GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA and so on.
+>GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA, and so on.
 
 ## AEM Foundation GDPR support {#aem-foundation-gdpr-support}
 

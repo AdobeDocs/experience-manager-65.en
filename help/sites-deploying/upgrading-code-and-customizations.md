@@ -1,14 +1,14 @@
 ---
 title: Upgrading Code and Customizations
-seo-title: Upgrading Code and Customizations
+
 description: Learn more about upgrading code and customizations in AEM.
-seo-description: Learn more about upgrading custom code in AEM.
-uuid: dec11ef0-bf85-4e4e-80ac-dcb94cc3c256
+
+
 contentOwner: sarchiz
 topic-tags: upgrading
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
+
 docset: aem65
 targetaudience: target-audience upgrader
 

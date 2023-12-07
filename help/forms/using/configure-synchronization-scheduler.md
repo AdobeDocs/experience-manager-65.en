@@ -1,13 +1,13 @@
 ---
 title: Configuring the synchronization scheduler
-seo-title: Configuring the synchronization scheduler
+
 description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
-seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
-uuid: b2c89feb-2947-418a-b343-4c01e453602b
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
+
 docset: aem65
 
 role: Admin

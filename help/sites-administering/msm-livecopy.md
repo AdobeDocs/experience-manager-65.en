@@ -93,11 +93,11 @@ To create a live copy:
 
    ![Create Live Copy](assets/chlimage_1-212.png)
 
-1. Select the source page then click or tap **Next**. For example:
+1. Select the source page then click **Next**. For example:
 
    ![Select source page](assets/chlimage_1-213.png)
 
-1. Specify the destination path of the live copy (open the parent folder/page of the live copy) and then click or tap **Next**.
+1. Specify the destination path of the live copy (open the parent folder/page of the live copy) and then click **Next**.
 
    ![Specify destination](assets/chlimage_1-214.png)
 
@@ -118,7 +118,7 @@ To create a live copy:
     * Not Selected: create a live copy that includes all descendants of the selected page (deep live copy)
 
 1. (Optional) To specify one or more rollout configurations to use for the livecopy, use the **Rollout Configs** drop-down list to select them; selected configurations are shown underneath the drop-down selector.
-1. Click or tap **Create**. A confirmation message is shown, from here you can select either **Open** or **Done**.
+1. Click **Create**. A confirmation message is shown, from here you can select either **Open** or **Done**.
 
 ### Creating a Live Copy of a Site from a Blueprint Configuration {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -150,7 +150,7 @@ To create a live copy of a site from a blueprint configuration:
 
 1. Use the **Initial Languages** selector to specify the languages of the blueprint site to use for the live copy.
 
-   All available languages are selected by default. To remove a language, click or tap the **X** that appears next to the language.
+   All available languages are selected by default. To remove a language, click the **X** that appears next to the language.
 
    For example:
 
@@ -225,7 +225,7 @@ Roll out a blueprint page to push content changes to live copies. A **Rollout** 
 
    ![Rollout blueprint](assets/rollout-blueprint.png)
 
-Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** > **Tools** > **Operations** > **Jobs**
 
 >[!NOTE]
 >
@@ -236,7 +236,7 @@ Rollouts are processed as asynchronous jobs and can be checked in the [**Async J
 1. In the **Sites** console, select the page in the live copy and open the **[References](/help/sites-authoring/basic-handling.md#references)** panel (from the toolbar).
 1. Select the **Blueprint** option from the list, to show the blueprints associated with this page.
 1. Select the required blueprint from the list.
-1. Click or tap **Rollout**.
+1. Click **Rollout**.
 1. You will be asked to confirm details of the rollout:
 
     * **Rollout scope**:
@@ -251,7 +251,7 @@ Rollouts are processed as asynchronous jobs and can be checked in the [**Async J
 
 1. After confirming these details, select **Rollout** to perform the action.
 
-Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** > **Tools** > **Operations** > **Jobs**
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ The [Rollout action is also available from the Live Copy Overview](/help/sites-a
 
    ![Rollout blueprint](assets/rollout-blueprint.png)
 
-Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** > **Tools** > **Operations** > **Jobs**
 
 >[!NOTE]
 >
@@ -291,7 +291,7 @@ Synchronize a live copy to pull changes from the source to the livecopy.
 
 1. In the **Sites** console, select the live copy page and open the properties.
 1. Open the **Live Copy** tab.
-1. Click or tap **Synchronize**.
+1. Click **Synchronize**.
 
    ![Synchronize](assets/chlimage_1-224.png)
 
@@ -359,7 +359,7 @@ You can suspend the live copy inheritance for a live copy page so that you can c
 To suspend inheritance on a page:
 
 1. Open the properties of the live copy page either using the **View Properties** command of the **Sites** console or using **Page Information** on the page toolbar.
-1. Click or tap the **Live Copy** tab.
+1. Click the **Live Copy** tab.
 1. Select **Suspend** from the toolbar. You can then select either:
 
     * **Suspend**: current page only
@@ -440,7 +440,7 @@ On an existing live copy you can change the depth for a page; that is, whether c
 To specify or change the depth:
 
 1. Open the properties of the live copy page either using the **View Properties** command of the **Sites** console or using **Page Information** on the page toolbar.
-1. Click or tap the **Live Copy** tab.
+1. Click the **Live Copy** tab.
 1. In the **Configuration** section, set or clear the **Live Copy Inheritance** option depending on whether child pages are included:
 
     * checked - a deep live copy (the child pages are included)
@@ -452,7 +452,7 @@ To specify or change the depth:
    >
    >See [Live Copies - Composition](/help/sites-administering/msm.md#live-copies-composition) for more information.
 
-1. Click or tap **Save** to persist your updates.
+1. Click **Save** to persist your updates.
 
 ### Cancelling Inheritance for a Component {#cancelling-inheritance-for-a-component}
 
@@ -468,11 +468,11 @@ Cancel the live copy inheritance for a component so that the component is no lon
 
 Cancel inheritance to change the component content or delete the component:
 
-1. Click or tap the component for which you want to cancel inheritance.
+1. Click the component for which you want to cancel inheritance.
 
    ![Select component for cancel inheritance action](assets/chlimage_1-230.png)
 
-1. On the component toolbar, click or tap the **Cancel Inheritance** icon.
+1. On the component toolbar, click the **Cancel Inheritance** icon.
 
    ![Cancel Inheritance](do-not-localize/chlimage_1-8.png)
 
@@ -482,7 +482,7 @@ Cancel inheritance to change the component content or delete the component:
 
 ### Re-enabling Inheritance for a Component {#re-enabling-inheritance-for-a-component}
 
-To enable inheritance for a component, click or tap the **Re-enable Inheritance** icon on the component toolbar.
+To enable inheritance for a component, click the **Re-enable Inheritance** icon on the component toolbar.
 
 ![Re-enable inheritance](do-not-localize/chlimage_1-9.png)
 
@@ -523,15 +523,15 @@ You can later re-enable inheritance for a property if necessary.
 >When you re-enable inheritance, the live copy page property is not automatically synchronized with the source property. You can manually request a synchronization if this is required.
 
 1. Open the properties of the live copy page using either the **View Properties** option of the **Sites** console or **Page Information** icon on the page toolbar.
-1. To cancel inheritance of a property, click or tap the link icon that appears to the right of the property.
+1. To cancel inheritance of a property, click the link icon that appears to the right of the property.
 
    ![Cancel inheritance of property](do-not-localize/chlimage_1-10.png)
 
-1. In the **Cancel Inheritance** confirmation dialog, click or tap **Yes**.
+1. In the **Cancel Inheritance** confirmation dialog, click **Yes**.
 
 ### Revert Properties of a Live Copy Page {#revert-properties-of-a-live-copy-page}
 
-To enable inheritance for a property, click or tap the **Revert Inheritance** icon that appears next to the property.
+To enable inheritance for a property, click the **Revert Inheritance** icon that appears next to the property.
 
 ![Revert Inheritance](do-not-localize/chlimage_1-11.png)
 
@@ -628,7 +628,7 @@ There are implications on where within the tree that you use **Detach**:
 
 To detach a live copy:
 
-1. In the **Sites** console, select the live copy page and click or tap **View Properties**.
+1. In the **Sites** console, select the live copy page and click **View Properties**.
 1. Open the **Live Copy** tab.
 1. On the toolbar, select **Detach**.
 

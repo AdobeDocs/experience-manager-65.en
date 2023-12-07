@@ -25,7 +25,7 @@ You can create a version of your resource from:
 1. Navigate to show the page for which you want to create a version.
 1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column.
-1. Click/tap on the arrowhead by the comment field to reveal the options:
+1. Click on the arrowhead by the comment field to reveal the options:
 
    ![Timeline - Save as Version](assets/screen-shot_2019-03-05at112335.png)
 
@@ -204,7 +204,7 @@ Timewarp is a [mode](/help/sites-authoring/author-environment-tools.md#page-mode
 
    ![Select Timewarp in the mode selection](assets/wwpv-01.png)
 
-1. In the dialog, set a target date and time and click or tap **Set Date**. If you do not select a time, the current time is taken as the default.
+1. In the dialog, set a target date and time and click **Set Date**. If you do not select a time, the current time is taken as the default.
 
    ![Set Date](assets/wwpv-02.png)
 

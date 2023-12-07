@@ -145,7 +145,7 @@ A template folder should be created for your project to hold your project-specif
 
 ### Creating a New Template - Template Author {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools -&gt;** **General**) then navigate to the required folder.
+1. Open the **Templates Console** (via **Tools >** **General**) then navigate to the required folder.
 
    >[!NOTE]
    >
@@ -215,14 +215,14 @@ To define the template thumbnail:
 1. Edit the template properties.
 1. Choose if you wish to upload a thumbnail or have it generated from the template content.
 
-    * If you wish to upload a thumbnail, click or tap **Upload Image**
-    * If you wish to generate a thumbnail, click or tap **Generate Preview**
+    * If you wish to upload a thumbnail, click **Upload Image**
+    * If you wish to generate a thumbnail, click **Generate Preview**
 
 1. For both methods a preview of the thumbnail will be displayed.
 
-   If it is not satisfactory, click or tap **Clear** to upload another image or re-generate the thumbnail.
+   If it is not satisfactory, click **Clear** to upload another image or re-generate the thumbnail.
 
-1. When you are satisfied with the thumbnail, click or tap **Save & Close**.
+1. When you are satisfied with the thumbnail, click **Save & Close**.
 
 ### Enabling and Allowing a Template - Template Author {#enabling-and-allowing-a-template-template-author}
 
@@ -457,13 +457,13 @@ In **Structure** mode of the template editor:
 
   For example, for an image component the allowed widths can be defined along with enabling lazy loading.
 
-  If a setting allows for multiple configurations, click or tap the **Add** button to add another configuration.
+  If a setting allows for multiple configurations, click the **Add** button to add another configuration.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  To remove a configuration, click or tap the **Delete** button located to the right of the configuration.
+  To remove a configuration, click the **Delete** button located to the right of the configuration.
 
-  To remove a configuration, click or tap the** Delete** button.
+  To remove a configuration, click the** Delete** button.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -523,9 +523,9 @@ In **Structure** mode of the template editor:
 
   On the **Default Components** tab, you define which components are automatically associated with given media types so that when an author drags an asset from the asset browser, AEM knows with which component to associate it. Note that only components with drop zones are available for such configuration.
 
-  Click or tap **Add Mapping** to add an entirely new component and MIME type mapping.
+  Click **Add Mapping** to add an entirely new component and MIME type mapping.
 
-  Select a component in the list and click or tap **Add type** to add an additional MIME type to an already mapped component. Click the **Delete** icon to remove a MIME type.
+  Select a component in the list and click **Add type** to add an additional MIME type to an already mapped component. Click the **Delete** icon to remove a MIME type.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 

@@ -1,14 +1,14 @@
 ---
 title: Encrypting and Decrypting PDF Documents
-seo-title: Encrypting and Decrypting PDF Documents
+
 description: Use the Encryption service to encrypt and decrypt documents. The Encryption service tasks include encrypting a PDF document with a password, encrypting a PDF document with a certificate, removing password-based encryption from a PDF document, removing certificate-based encryption from a PDF document, unlocking the PDF document so that other service operations can be performed, and determining the encryption type of a secured PDF document.
-seo-description: Use the Encryption service to encrypt and decrypt documents. The Encryption service tasks include encrypting a PDF document with a password, encrypting a PDF document with a certificate, removing password-based encryption from a PDF document, removing certificate-based encryption from a PDF document, unlocking the PDF document so that other service operations can be performed, and determining the encryption type of a secured PDF document.
-uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
+
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 ---
@@ -74,7 +74,7 @@ To programmatically perform an Encryption service operation, you must create an 
 
 **Get a PDF document to encrypt**
 
-You must obtain an unencrypted PDF document to encrypt the document with a password. If you attempt to secure a PDF document that is already encrypted, you cause an exception.
+Obtain an unencrypted PDF document to encrypt the document with a password. If you attempt to secure a PDF document that is already encrypted, you cause an exception.
 
 **Set encryption run-time options**
 
@@ -283,7 +283,7 @@ To programmatically perform an Encryption service operation, you must create an 
 
 **Get a PDF document to encrypt**
 
-You must obtain an unencrypted PDF document to encrypt. If you attempt to secure a PDF document that is already encrypted, an exception is thrown.
+Obtain an unencrypted PDF document to encrypt. If you attempt to secure a PDF document that is already encrypted, an exception is thrown.
 
 **Reference the certificate**
 
@@ -493,7 +493,7 @@ To programmatically perform an Encryption service operation, you must create an 
 
 **Get the encrypted PDF document**
 
-You must obtain an encrypted PDF document to remove certificate-based encryption. If you attempt to remove encryption from a PDF document that is not encrypted, an exception is thrown. Likewise, if you attempt to remove certificate-based encryption from a password-encrypted document, an exception is thrown.
+Obtain an encrypted PDF document to remove certificate-based encryption. If you attempt to remove encryption from a PDF document that is not encrypted, an exception is thrown. Likewise, if you attempt to remove certificate-based encryption from a password-encrypted document, an exception is thrown.
 
 **Remove encryption**
 
@@ -654,7 +654,7 @@ To programmatically perform an Encryption service operation, you must create an 
 
 **Get the encrypted PDF document**
 
-You must obtain an encrypted PDF document to remove password-based encryption. If you attempt to remove encryption from a PDF document that is not encrypted, an exception is thrown.
+Obtain an encrypted PDF document to remove password-based encryption. If you attempt to remove encryption from a PDF document that is not encrypted, an exception is thrown.
 
 **Remove the password**
 
@@ -801,7 +801,7 @@ To programmatically perform an Encryption service operation, you must create an 
 
 **Get the encrypted PDF document**
 
-You must obtain an encrypted PDF document to unlock it. If you attempt to unlock a PDF document that is not encrypted, an exception is thrown.
+Obtain an encrypted PDF document to unlock it. If you attempt to unlock a PDF document that is not encrypted, an exception is thrown.
 
 **Unlock the document**
 
@@ -978,7 +978,7 @@ To programmatically perform an Encryption service operation, you must create an 
 
 **Get the encrypted PDF document**
 
-You must obtain a PDF document to determine the type of encryption that is protecting it.
+Obtain a PDF document to determine the type of encryption that is protecting it.
 
 **Determine the encryption type**
 

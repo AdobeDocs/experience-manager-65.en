@@ -14,7 +14,7 @@ In an SPA the page component doesn't provide the HTML elements of its child comp
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
 
 ## Introduction {#introduction}
 

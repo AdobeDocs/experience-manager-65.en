@@ -13,7 +13,7 @@ We.Retail has been built with a globalized site structure offering a language ma
 
 ## Trying it out {#trying-it-out}
 
-1. Open the sites console from **Global Navigation -&gt; Sites**.
+1. Open the sites console from **Global Navigation > Sites**.
 1. Switch to column view (if not already active) and select We.Retail. Note the example country structure with Switzerland, the United States, France, and so on, along side the Language Master.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
@@ -40,7 +40,7 @@ We.Retail has been built with a globalized site structure offering a language ma
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. A project is created for each language translation. View them under **Navigation -&gt; Projects**.
+1. A project is created for each language translation. View them under **Navigation > Projects**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 

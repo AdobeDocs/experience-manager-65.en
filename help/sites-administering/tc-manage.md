@@ -74,12 +74,12 @@ After translating, you can [review the translation](#reviewing-and-promoting-upd
 
    For example, to translate the English pages of Geometrixx Demo Site, select Geometrixx Demo Site &gt; English.
 
-1. On the toolbar, click or tap References.
+1. On the toolbar, click References.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
 1. Select Language Copies, and then select the language copies for which you are translating the source pages.
-1. Click or tap Create & Translate and then configure the translation job:
+1. Click Create & Translate and then configure the translation job:
 
     * Use the Languages drop-down to select a language copy for which you want to translate. Select additional languages as required. Languages that appear in the list correspond with the [language roots that you have created](/help/sites-administering/tc-prep.md#creating-a-language-root).
     * To translate the page that you selected and all child pages, select Select All Sub-Pages. To translate only the selected page that you selected, clear the option.
@@ -88,7 +88,7 @@ After translating, you can [review the translation](#reviewing-and-promoting-upd
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-1. Click or tap Create.
+1. Click Create.
 
 ### Create Translation Projects for an Existing Language Copy {#create-translation-projects-for-an-existing-language-copy}
 
@@ -96,12 +96,12 @@ After translating, you can [review the translation](#reviewing-and-promoting-upd
 
    For example, to translate the English pages of Geometrixx Demo Site, select Geometrixx Demo Site &gt; English.
 
-1. On the toolbar, click or tap References.
+1. On the toolbar, click References.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
 1. Select Language Copies, and then select the language copies for which you are translating the source pages.
-1. Click or tap Update Language Copies and then configure the translation job:
+1. Click Update Language Copies and then configure the translation job:
 
     * To translate the page that you selected and all child pages, select Select All Sub-Pages. To translate only the selected page that you selected, clear the option.
     * For Project, select Create New Translation Project.
@@ -109,7 +109,7 @@ After translating, you can [review the translation](#reviewing-and-promoting-upd
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Click or tap Start.
+1. Click Start.
 
 ## Adding Pages to a Translation Project {#adding-pages-to-a-translation-project}
 
@@ -123,7 +123,7 @@ As when creating a project, when adding pages, copies of the pages are added to 
 
    For example, to translate the English pages of Geometrixx Demo Site, select Geometrixx Demo Site &gt; English.
 
-1. On the toolbar, click or tap References.
+1. On the toolbar, click References.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -131,7 +131,7 @@ As when creating a project, when adding pages, copies of the pages are added to 
 
    ![chlimage_1-35](assets/chlimage_1-35.jpeg)
 
-1. Click or tap Update Language Copies and then configure the properties:
+1. Click Update Language Copies and then configure the properties:
 
     * To translate the page that you selected and all child pages, select Select All Sub-Pages. To translate only the selected page that you selected, clear the option.
     * For Project, select Add To Existing Translation Project.
@@ -143,21 +143,21 @@ As when creating a project, when adding pages, copies of the pages are added to 
 
    ![chlimage_1-36](assets/chlimage_1-36.jpeg)
 
-1. Click or tap Start.
+1. Click Start.
 
 ## Adding Pages/Assets to a Translation Job {#adding-pages-assets-to-a-translation-job}
 
 You can add pages, assets, tags or i18n dictionaries to the Translation Job of your Translation project. To add pages or assets:
 
-1. On the bottom of the Translation Job tile of your translation project, click or tap the ellipsis.
+1. On the bottom of the Translation Job tile of your translation project, click the ellipsis.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Click or tap Add and Pages/Assets.
+1. Click Add and Pages/Assets.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-1. Select the topmost item of the branch that you want to add, and then click or tap the checkmark icon. You can multi-select.
+1. Select the topmost item of the branch that you want to add, and then click the checkmark icon. You can multi-select.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -171,15 +171,15 @@ Your pages and/or assets are added to you translation job.
 
 You can add pages, assets, tags or i18n dictionaries to the Translation Job of your Translation project. To add an i18n dictionary:
 
-1. On the bottom of the Translation Job tile of your translation project, click or tap the ellipsis.
+1. On the bottom of the Translation Job tile of your translation project, click the ellipsis.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Click or tap Add and I18N-Dictionary.
+1. Click Add and I18N-Dictionary.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Select the dictionary that you want to add, and then click or tap Add button.
+1. Select the dictionary that you want to add, and then click Add button.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -195,15 +195,15 @@ Your dictionary is now in your translation job.
 
 You can add pages, assets, tags or i18n dictionaries to the Translation Job of your Translation project. To add Tags:
 
-1. On the bottom of the Translation Job tile of your translation project, click or tap the ellipsis.
+1. On the bottom of the Translation Job tile of your translation project, click the ellipsis.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. Click or tap Add and then Tags.
+1. Click Add and then Tags.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Select the tags that you want to add, and then click or tap the checkmark icon. You can multi-select.
+1. Select the tags that you want to add, and then click the checkmark icon. You can multi-select.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -249,7 +249,7 @@ The following table describes each status that a job or an item in the job can h
 | Error Update |An error has occurred while transferring files between AEM and the translation service. |
 | Unknown State |An unknown error has occurred. |
 
-To see the status of each file in the job, click or tap the ellipsis on the bottom of the tile.
+To see the status of each file in the job, click the ellipsis on the bottom of the tile.
 
 ## Setting the Due Date of Translation Jobs {#setting-the-due-date-of-translation-jobs}
 
@@ -262,7 +262,7 @@ Setting the due date functions correctly only when the translation vendor that y
 
 The following procedure sets the due date for a project.
 
-1. Click or tap the ellipsis at the bottom of the Translation Summary tile.
+1. Click the ellipsis at the bottom of the Translation Summary tile.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -270,15 +270,15 @@ The following procedure sets the due date for a project.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Click or tap Done.
+1. Click Done.
 
 The following procedure sets the due date for a translation job.
 
-1. On the Translation Job tile, click or tap the commands menu, then click or tap Due Date.
+1. On the Translation Job tile, click the commands menu, then click Due Date.
 
    ![chlimage_1-262](assets/chlimage_1-262.png)
 
-1. In the dialog box, click or tap the calendar icon, then select the date and time to use as the due date, then click Save.
+1. In the dialog box, click the calendar icon, then select the date and time to use as the due date, then click Save.
 
    ![chlimage_1-263](assets/chlimage_1-263.png)
 
@@ -297,11 +297,11 @@ When you scope a translation job, the status of the job is `Scope Requested`. Wh
 Scoping functions correctly only when the translation vendor that you are using supports this feature.
 
 1. In the Projects console, open your translation project.
-1. On the Translation Job tile, click or tap the commands menu, then click or tap Request Scope.
+1. On the Translation Job tile, click the commands menu, then click Request Scope.
 
    ![chlimage_1-264](assets/chlimage_1-264.png)
 
-1. When the job status changes to SCOPE_COMPLETED, on the Translation Job tile click or tap the commands menu, then click or tap Show Scope.
+1. When the job status changes to SCOPE_COMPLETED, on the Translation Job tile click the commands menu, then click Show Scope.
 
 ## Starting a Translation Job {#starting-a-translation-job}
 
@@ -312,19 +312,19 @@ After you start the translation job, the Translation Job tile shows the Translat
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
 1. In the Projects console, open the translation project.
-1. On the Translation Job tile, click or tap the commands menu, then click or tap Start.
+1. On the Translation Job tile, click the commands menu, then click Start.
 
    ![chlimage_1-266](assets/chlimage_1-266.png)
 
-1. In the Action dialog that confirms the starting of the translation, click or tap Close.
+1. In the Action dialog that confirms the starting of the translation, click Close.
 
 ## Canceling a Translation Job {#canceling-a-translation-job}
 
 Cancel a translation job to halt the translation process and prevent the translation vendor from performing any further translations. You can cancel a job when the job has the `Committed For Translation` or `Translation In Progress` status.
 
 1. In the Projects console, open the translation project.
-1. On the Translation Job tile, click or tap the commands menu, then click or tap Cancel.
-1. In the Action dialog that confirms the cancellation of the translation, click or tap OK.
+1. On the Translation Job tile, click the commands menu, then click Cancel.
+1. In the Action dialog that confirms the cancellation of the translation, click OK.
 
 ## Accept/Reject Workflow {#accept-reject-workflow}
 
@@ -344,18 +344,18 @@ When content is translated for an existing language copy, review the translation
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-1. Select the page in the language master, click or tap References, then click or tap Language Copies.
-1. Click or tap the language copy to review.
+1. Select the page in the language master, click References, then click Language Copies.
+1. Click the language copy to review.
 
    ![chlimage_1-270](assets/chlimage_1-270.png)
 
-1. Click or tap Launch to reveal the launch-related commands.
+1. Click Launch to reveal the launch-related commands.
 
    ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. To open the launch copy of the page to review and edit the content, click Open Page.
 1. After you have reviewed the content and made necessary changes, to promote the launch copy click Promote.
-1. On the Promote Launch page, specify which pages to promote and then click or tap Promote.
+1. On the Promote Launch page, specify which pages to promote and then click Promote.
 
 ## Comparing Language Copies {#comparing-language-copies}
 
@@ -387,7 +387,7 @@ Archive a translation job after it is complete and you no longer need to see job
 Populate your language copy so that it contains content from the master language that you are translating. Before you populate your language copy, you must have [created the language root](/help/sites-administering/tc-prep.md#creating-a-language-root) of the language copy.
 
 1. Use the Sites console to select the language root of the master language that you are using as the source. For example, to translate the English pages of the Geometrixx Demo Site, select Content &gt; Geometrixx Demo Site &gt; English.
-1. On the toolbar, click or tap References.
+1. On the toolbar, click References.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -395,14 +395,14 @@ Populate your language copy so that it contains content from the master language
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
-1. Click or tap Update Language Copies to reveal the translation tools, and configure the properties:
+1. Click Update Language Copies to reveal the translation tools, and configure the properties:
 
     * Select the Select All Sub-pages option.
     * For Project, select Create Structure Only.
 
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
-1. Click or tap Start.
+1. Click Start.
 
 ## Moving or Renaming a Source Page {#move-source}
 
@@ -436,24 +436,24 @@ When you manually create a translation project, you must provide values for the 
 * **Target Language:** The language into which the content is being translated.
 * **Translation Method:** Select Human Translation to indicate that the translation is to be performed manually.
 
-1. On the toolbar of the Projects console, click or tap Create.
-1. Select the Translation Project template and then click or tap Next.
+1. On the toolbar of the Projects console, click Create.
+1. Select the Translation Project template and then click Next.
 1. Enter values for the Basic properties.
-1. Click or tap Advanced and provide values for the translation-related properties.
-1. Click or tap Create. In the confirmation box, click or tap Done to return to the Projects console, or click or tap Open Project to open and start managing the project.
+1. Click Advanced and provide values for the translation-related properties.
+1. Click Create. In the confirmation box, click Done to return to the Projects console, or click Open Project to open and start managing the project.
 
 ## Exporting a Translation Job {#exporting-a-translation-job}
 
 You can download the content of a translation job, for example, to send to a translation provider that is not integrated with AEM via a connector, or to review the content.
 
-1. From the drop-down menu of the Translation Job tile, click or tap Export.
-1. In the Export dialog box, click or tap Download Exported File, and if necessary use the web browser dialog box to save the file.
-1. On the Export dialog box, click or tap Close.
+1. From the drop-down menu of the Translation Job tile, click Export.
+1. In the Export dialog box, click Download Exported File, and if necessary use the web browser dialog box to save the file.
+1. On the Export dialog box, click Close.
 
 ## Importing a Translation Job {#importing-a-translation-job}
 
 You can import translated content into AEM, for example, when your translation provider sends it to you because they are not integrated with AEM via a connector.
 
-1. From the drop-down menu of the Translation Job tile, click or tap Import.
+1. From the drop-down menu of the Translation Job tile, click Import.
 1. Use the web browser's dialog box to select the file to import.
-1. On the Import dialog box, click or tap Close.
+1. On the Import dialog box, click Close.

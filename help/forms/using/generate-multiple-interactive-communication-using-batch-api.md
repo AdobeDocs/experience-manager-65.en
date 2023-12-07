@@ -77,7 +77,7 @@ To create interactive communication from records saved in a JSON file:
 
 1. Create a [Watched folder](/help/forms/using/creating-configure-watched-folder.md) and configure it to use the Batch API:
     1. Log in to AEM Forms author instance.
-    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tap **[!UICONTROL New]**.
+    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Select **[!UICONTROL New]**.
     1. Specify the **[!UICONTROL Name]** and physical **[!UICONTROL Path]** of the folder. For example, `c:\batchprocessing`.
     1. Select the **[!UICONTROL Service]** option in the **[!UICONTROL Process File Using]** field.
     1. Select the **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** service in the **[!UICONTROL Service Name]** field.
@@ -93,7 +93,7 @@ To create interactive communication from records saved in a JSON file:
         |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT. The default value is WEB_AND_PRINT.|
         |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications. The default value is en_US|
 
-    1. Tap **[!UICONTROL Create]** The watched folder is created.
+    1. Select **[!UICONTROL Create]** The watched folder is created.
 1. Use the watched folder to generate interactive communication:
     1. Open the Watched Folder. Navigate to the input folder.
     1. Create a folder in the input folder and place the JSON file in the newly created folder.
@@ -109,9 +109,9 @@ You combine data (records) saved in an external data source with an interactive 
 
 1. Configure the Form Data Model of the template:
     1. Open the Form Data Model associated to interactive communication template.
-    1. Select your TOP LEVEL MODEL OBJECT and tap Edit Properties.
+    1. Select your TOP LEVEL MODEL OBJECT and select Edit Properties.
     1. Select your fetch or get service from the Read Service field under Edit Properties pane.
-    1. Tap the pencil icon for the read service argument to bind the argument to a Request Attribute and specify the binding value. It binds the service argument to the specified binding attribute or literal value, which is passed to the service as an argument to fetch details associated with the specified value from the data source.
+    1. Select the pencil icon for the read service argument to bind the argument to a Request Attribute and specify the binding value. It binds the service argument to the specified binding attribute or literal value, which is passed to the service as an argument to fetch details associated with the specified value from the data source.
 
         <br>
         In this example, the id argument takes the value of the id attribute of the user profile and passes it as an argument to the read service. It will read and return values of associated properties from the employee data model object for the specified id. So, if you specify 00250 in the id field in the form, the read service will read details of the employee with 00250 employee id.
@@ -139,7 +139,7 @@ You combine data (records) saved in an external data source with an interactive 
 
 1. Create a [Watched folder](/help/forms/using/creating-configure-watched-folder.md) and configure it to use the Batch API service:
     1. Log in to AEM Forms author instance.
-    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tap **[!UICONTROL New]**.
+    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Select **[!UICONTROL New]**.
     1. Specify the **[!UICONTROL Name]** and physical **[!UICONTROL Path]** of the folder. For example, `c:\batchprocessing`.
     1. Select the **[!UICONTROL Service]** option in the **[!UICONTROL Process File Using]** field.
     1. Select the **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** service in the **[!UICONTROL Service Name]** field.
@@ -155,7 +155,7 @@ You combine data (records) saved in an external data source with an interactive 
         |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT. The default value is WEB_AND_PRINT.|
         |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications. The default value is en_US.|
 
-    1. Tap **[!UICONTROL Create]** The watched folder is created.
+    1. Select **[!UICONTROL Create]** The watched folder is created.
 1. Use the watched folder to generate interactive communication:
     1. Open the Watched Folder. Navigate to the input folder.
     1. Create a folder in the input folder. Place the JSON file created in Step 2 in the newly created folder.  

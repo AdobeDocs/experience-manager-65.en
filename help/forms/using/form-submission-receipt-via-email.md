@@ -1,13 +1,13 @@
 ---
 title: Sending a form submission acknowledgement via email
-seo-title: Sending a form submission acknowledgement via email
+
 description: AEM Forms lets you configure the email submit action that sends an acknowledgement to a user on submitting the form.
-seo-description: AEM Forms lets you configure the email submit action that sends an acknowledgement to a user on submitting the form.
-uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
+
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
 ---
@@ -37,7 +37,7 @@ The Send email action enables an author to send email automatically to one or mo
 
 1. Open an adaptive form in **[!UICONTROL edit]** mode.
 
-1. In the **[!UICONTROL Content]** tab, tap **[!UICONTROL Form Container]** and tap ![configure](assets/configure-icon.svg) to view the adaptive form properties.  
+1. In the **[!UICONTROL Content]** tab, select **[!UICONTROL Form Container]** and select ![configure](assets/configure-icon.svg) to view the adaptive form properties.  
 
 1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Send email]** from the **[!UICONTROL Submit Action]** drop-down list.  
 

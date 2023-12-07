@@ -571,15 +571,15 @@ For example, make sure that information provided by color is also provided expli
    <td><p><strong>Availability</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Tuesday March 16<sup>th</sup></p> </td>
+   <td><p>Tuesday, March 16</p> </td>
    <td><p>SEATS AVAILABLE</p> </td>
   </tr>
   <tr>
-   <td><p>Wednesday March 17<sup>th</p> </td>
+   <td><p>Wednesday, March 17</p> </td>
    <td><p>SEATS AVAILABLE</p> </td>
   </tr>
   <tr>
-   <td><p>Thursday March 18<sup>th</sup></p> </td>
+   <td><p>Thursday, March 18</p> </td>
    <td><p>SOLD OUT</p> </td>
   </tr>
  </tbody>

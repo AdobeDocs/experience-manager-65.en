@@ -50,7 +50,7 @@ Once you analyze the layout required to create your Interactive Communication, y
 
 Perform the following steps to use subform in an XDP template:
 
-1. Open the Forms Designer, select **File** &gt; **New** &gt; **Use a blank form**, tap **Next**, and then tap **Finish** to open the form for template creation.
+1. Open the Forms Designer, select **File** &gt; **New** &gt; **Use a blank form**, select **Next**, and then select **Finish** to open the form for template creation.
 
    Ensure that the **Object Library** and **Object** options are selected from the **Window** menu.
 
@@ -84,7 +84,7 @@ Perform the following steps to use subform in an XDP template:
     1. Navigate to the location to save the file and specify a name for the XDP template.
     1. Select **.xdp** from the **Save as type** drop-down list.
 
-    1. Tap **Save**.
+    1. Select **Save**.
 
 ### Use Image Field component in an XDP template {#use-image-field-component-in-an-xdp-template}
 
@@ -118,9 +118,9 @@ Perform the following steps to use the Table component in the XDP template using
 
     1. Specify the number of rows and columns for the table.
     1. Select the **Include Header Row in Table** checkbox to include a row for the table header.
-    1. Tap **OK**.
+    1. Select **OK**.
 
-1. Tap **+** in the left pane next to the name of the table, right-click cell names included in the header and other rows, and select **Rename Object** to rename the table cells.
+1. Select **+** in the left pane next to the name of the table, right-click cell names included in the header and other rows, and select **Rename Object** to rename the table cells.
 1. Click the table header text fields in the **Design View** and rename them.
 1. Drag-and-drop the **Text Field** component from the **Object Library** to each table cell in the **Design View**. Perform this step to be able to bind table cells with the form data model objects while authoring the Interactive Communication.
 
@@ -135,15 +135,15 @@ Perform the following steps to use the Table component in the XDP template using
     1. Navigate to the location to save the file and specify the name for the XDP template.
     1. Select **.xdp** from the **Save as type** drop-down list.
 
-    1. Tap **Save**.
+    1. Select **Save**.
 
 ### Upload XDP template to the AEM Forms server {#uploadxdptemplate}
 
 Once you have created an XDP template using the Forms Designer, you must upload it to AEM Forms server so that the template is available for use while creating the Interactive Communication.
 
 1. Select **Forms** &gt; **Forms & Documents**.
-1. Tap **Create** &gt; **File Upload**.
-1. Navigate to the location of the XDP template on the local file system and tap **Open** to import the XDP template to the AEM Forms server.
+1. Select **Create** &gt; **File Upload**.
+1. Navigate to the location of the XDP template on the local file system and select **Open** to import the XDP template to the AEM Forms server.
 
 ## Using schema {#using-schema}
 

@@ -1,12 +1,10 @@
 ---
 title: Keyboard shortcuts when editing pages
 description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
-uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
 ---
 # Keyboard Shortcuts when Editing Pages{#keyboard-shortcuts-when-editing-pages}
@@ -21,8 +19,8 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 >
 >Multi-select on a desktop device:
 >
->* Windows: Ctrl+click on required components.
->* Mac: Cmd+click on required components.
+>* Windows: Ctrl+click required components.
+>* Mac: Cmd+click required components.
 >
 
 ## Editing Keyboard Shortcuts {#editing-keyboard-shortcuts}

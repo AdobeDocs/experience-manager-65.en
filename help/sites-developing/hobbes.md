@@ -1,12 +1,12 @@
 ---
 title: Testing Your UI
 description: AEM provides a framework for automating tests for your AEM UI
-uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
-discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
+
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 ---
@@ -41,7 +41,7 @@ When using automated tests within AEM, the following terms are important to unde
 
 Open the Testing Console to see the registered Test Suites. The Tests panel contains a list of test suites and their test cases.
 
-Navigate to the Tools console via **Global Navigation -&gt; Tools &gt; Operations -&gt; Testing**.
+Navigate to the Tools console via **Global Navigation > Tools &gt; Operations > Testing**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -63,7 +63,7 @@ An "X" icon indicates a failed test:
 
 To run a Test Suite:
 
-1. In the Tests panel, click or tap the name of the Test Case that you want to run to expand the details of the Actions.
+1. In the Tests panel, click the name of the Test Case that you want to run to expand the details of the Actions.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -85,7 +85,7 @@ Test Suites execute sequentially in the order that they appear in the console. Y
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. On the Tests panel, tap or click either the **Run all tests** button or the **Run tests** button below the title of the Test Suite that you want to run.
+1. On the Tests panel, click either the **Run all tests** button or the **Run tests** button below the title of the Test Suite that you want to run.
 
    ![An image of the Run all tests button and the Run tests button, indicated by a right-facing pointer inside a circle.](do-not-localize/chlimage_1-5.png)
 

@@ -1,14 +1,14 @@
 ---
 title: Managing Banners
-seo-title: Managing Banners
+
 description: Banners represent typically graphical promotional links. Follow this page to learn more.
-seo-description: Banners represent typically graphical promotional links. Follow this page to learn more.
-uuid: 593fe2ef-84df-42e2-8a03-897fb67a896d
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
+
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
 ---
 # Managing Banners{#managing-banners}
@@ -62,7 +62,7 @@ The workflow to import a new article
 
 >[!CAUTION]
 >
->You must associate a Mobile On-Demand connection first.
+>Associate a Mobile On-Demand connection first.
 
 ## Editing a Banner {#editing-a-banner}
 

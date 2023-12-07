@@ -12,7 +12,7 @@ exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
 
 >[!NOTE]
 >

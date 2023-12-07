@@ -1,14 +1,14 @@
 ---
 title: Workflow Best Practices
-seo-title: Workflow Best Practices
+
 description: Learn the best practices for working with workflows in Adobe Experience Manager.
-seo-description: null
-uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
+
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 ---
 # Workflow Best Practices{#workflow-best-practices}
@@ -295,7 +295,7 @@ It is recommened to use handler advance as it delivers better performance.
 
 You can define [workflow stages](/help/sites-developing/workflows.md#workflow-stages), then assign tasks/steps to a specific workflow stage.
 
-This information is used for displaying the progress of a workflow when you click on the [**Workflow Info** tab of a workitem from the **Inbox**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Existing workflow models can be edited to add stages.
+This information is used for displaying the progress of a workflow when you click the [**Workflow Info** tab of a workitem from the **Inbox**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Existing workflow models can be edited to add stages.
 
 ### Activate Page Process Step {#activate-page-process-step}
 

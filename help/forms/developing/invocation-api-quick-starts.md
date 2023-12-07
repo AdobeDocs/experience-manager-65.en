@@ -1,14 +1,14 @@
 ---
 title: Invocation API Quick Starts
-seo-title: Invocation API Quick Starts
+
 description: Use the Quick Starts to programmatically invoke AEM Forms services.
-seo-description: Use the Quick Starts to programmatically invoke AEM Forms services.
-uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
+
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
 ---

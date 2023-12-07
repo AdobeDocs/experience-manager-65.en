@@ -1,14 +1,14 @@
 ---
 title: Replicating Using Mutual SSL
-seo-title: Replicating Using Mutual SSL
+
 description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
-seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
-uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
+
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 ---
@@ -29,7 +29,7 @@ Configuring MSSL for replication involves performing the following steps:
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-You must determine which user account is performing the replication. When installing the trusted author certificate on the publish instance, the certificate is associated with this user account.
+Determine which user account is performing the replication. When installing the trusted author certificate on the publish instance, the certificate is associated with this user account.
 
 ## Obtaining or Creating Credentials for MSSL {#obtaining-or-creating-credentials-for-mssl}
 
@@ -142,7 +142,7 @@ To perform the following procedure, you must be logged in as an adminstrator of 
 ### Install the Author Private Key {#install-the-author-private-key}
 
 1. Open the User Management page for the author instance. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. To open the properties of your user account, click or tap your user name.
+1. To open the properties of your user account, click your user name.
 1. If the Create KeyStore link appears in the Account Settings area, click the link. Configure a password and click OK.
 1. In the Account Settings area, click Manage Keystore.
 
@@ -161,7 +161,7 @@ To perform the following procedure, you must be logged in as an adminstrator of 
 ### Install the Publish Certificate {#install-the-publish-certificate}
 
 1. Open the User Management page for the author instance. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. To open the properties of your user account, click or tap your user name.
+1. To open the properties of your user account, click your user name.
 1. If the Create TrustStore link appears in the Account Settings area, click the link, create a password for the TrustStore and click OK.
 1. In the Account Settings area, click Manage TrustStore.
 1. Click Add Certificate From CER File.
@@ -185,7 +185,7 @@ To perform the following procedure, you must be logged in as an adminstrator of 
 ### Install the Publish Private Key {#install-the-publish-private-key}
 
 1. Open the User Management page for the publish instance. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. To open the properties of your user account, click or tap your user name.
+1. To open the properties of your user account, click your user name.
 1. If the Create KeyStore link appears in the Account Settings area, click the link. Configure a password and click OK.
 1. In the Account Settings area, click Manage Keystore.
 1. Click Add Private Key From Key Store File.

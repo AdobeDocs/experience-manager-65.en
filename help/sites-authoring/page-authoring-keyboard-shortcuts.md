@@ -1,12 +1,12 @@
 ---
 title: Keyboard shortcuts when editing content pages
 description: Various keyboard shortcuts are available throughout AEM, including some for page editing
-uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
+
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
 ---
 # Keyboard Shortcuts when Editing Pages{#keyboard-shortcuts-when-editing-pages}
@@ -35,7 +35,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 
 >[!NOTE]
 >
->&ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. The user must click on the top editor bar or go back to the Edit mode for the shortcut to once again become available.
+>&ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. The user must click the top editor bar or go back to the Edit mode for the shortcut to once again become available.
 
 Various keyboard shortcuts are also available for desktop users when using the [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 

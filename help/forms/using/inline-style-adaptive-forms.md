@@ -1,12 +1,12 @@
 ---
 title: Inline styling of adaptive form components
-seo-title: Inline CSS properties for adaptive form components
+
 description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
-seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
-uuid: e863780e-2250-4bea-9569-22be5638d54e
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
+
 docset: aem65
 
 feature: Adaptive Forms
@@ -27,8 +27,8 @@ You can define the overall appearance and style of an adaptive form by specifyin
 
 To add inline styles to a component:
 
-1. Open your form in the form editor, and change the mode to styling mode. To change the mode to styling mode, in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Style**.
-1. Select a component in the page, and tap the edit button ![edit-button](assets/edit-button.png). Styling properties open in the sidebar.
+1. Open your form in the form editor, and change the mode to styling mode. To change the mode to styling mode, in the page toolbar, select ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Style**.
+1. Select a component in the page, and select the edit button ![edit-button](assets/edit-button.png). Styling properties open in the sidebar.
 
    You can also select components from the form hierarchy tree in the sidebar. Form hierarchy tree is available as Form Objects in the sidebar.
 
@@ -46,7 +46,7 @@ To add inline styles to a component:
     * Advanced (Lets you write custom CSS for the component)
 
 1. Similarly, you can apply styles for other parts of a component such as Widget, Caption, and Help.
-1. Tap **Done** to confirm the changes or **Cancel** to discard the changes.
+1. Select **Done** to confirm the changes or **Cancel** to discard the changes.
 
 ## Example: inline styles for a field component {#example-inline-styles-for-a-field-component}
 

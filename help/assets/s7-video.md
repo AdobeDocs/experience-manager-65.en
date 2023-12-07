@@ -1,12 +1,10 @@
 ---
 title: Video
 description: Learn about the centralized video asset management Adobe Experience Manager Assets where you can upload videos for auto-encoding to Dynamic Media Classic and access Dynamic Media Classic videos directly from Experience Manager Assets. Dynamic Media Classic video integration extends the reach of optimized video to all screens.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
@@ -19,7 +17,7 @@ Adobe Experience Manager Assets provides for centralized video asset management 
 Dynamic Media Classic video integration extends the reach of optimized video to all screens (auto device and bandwidth detection).
 
 * The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
-* Assets - You can include adaptive video sets rather than only single video assets. An adaptive video set contains all the video renditions that are required to play back video seamlessly across multiple screens. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. You use an Adaptive Video Set, along with S7 video component, for adaptive video streaming across multiple screens including desktop, iOS, Android™, BlackBerry®, and Windows mobile devices.
+* Assets - You can include adaptive video sets rather than only single video assets. An adaptive video set contains all the video renditions that are required to play back video seamlessly across multiple screens. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. You use an Adaptive Video Set, along with S7 video component, for adaptive video streaming across multiple screens including desktop, iOS, Android&trade;, BlackBerry&reg;, and Windows mobile devices.
 <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## About FFMPEG and Dynamic Media Classic {#about-ffmpeg-and-scene}

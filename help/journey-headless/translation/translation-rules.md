@@ -50,25 +50,25 @@ Translation rules are designed to handle such scenarios. However in this example
 
 There is a **Translation Configuration** console available for configuring translation rules. To access it:
 
-1. Navigate to **Tools** -&gt; **General**.
-1. Tap or click **Translation Configuration**.
+1. Navigate to **Tools** > **General**.
+1. Click **Translation Configuration**.
 
 In the **Translation Configuration** UI, there are several options available for your translation rules. Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
 
-1. Tap or click **Add Context**, which lets you add a path. This is the path of the content that is be affected by the rule.
+1. Click **Add Context**, which lets you add a path. This is the path of the content that is be affected by the rule.
 ![Add context](assets/add-translation-context.png)
-1. Use the path browser to select the required path and tap or click the **Confirm** button to save. Remember, Content Fragments, which hold headless content, are generally located under `/content/dam/<your-project>`.
+1. Use the path browser to select the required path and click the **Confirm** button to save. Remember, Content Fragments, which hold headless content, are generally located under `/content/dam/<your-project>`.
 ![Select the path](assets/select-context.png)
 1. AEM saves the configuration.
-1. You must select the context you created and then tap or click **Edit**. This opens the **Translation Rules Editor** to configure the properties.
+1. Select the context you created and then click **Edit**. This opens the **Translation Rules Editor** to configure the properties.
 ![Translation rules editor](assets/translation-rules-editor.png)
 1. By default all configurations are inherited from the parent path, in this case `/content/dam`. Uncheck the option **Inherit from `/content/dam`** to add additional fields to the configuration.
 1. Once unchecked, under the **General** section of the list, add the property names of the Content Fragment Model(s) that you [previously identified as fields for translation.](getting-started.md#content-models)
    1. Enter the property name in the **New Property** field.
    1. The options **Translate** and **Inherit** are checked automatically.
-   1. Tap or click **Add**.
+   1. Click **Add**.
    1. Repeat these steps for all the fields that you must translate.
-   1. Tap or click **Save**.
+   1. Click **Save**.
 ![Add property](assets/add-property.png)
 
 You have now configured your translation rules.

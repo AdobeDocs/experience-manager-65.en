@@ -1,12 +1,12 @@
 ---
 title: First steps for authors
 description: This section gives you an overview of the main tasks that you use when authoring content with Adobe Experience Manager (AEM).
-uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: page-authoring, introduction
-discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
+
 exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
 ---
 # First Steps for Authors{#first-steps-for-authors}

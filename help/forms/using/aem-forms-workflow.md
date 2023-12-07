@@ -59,8 +59,8 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
 1. Open the Workflow Models console. The default URL is `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Select **Create**, then **Create Model**. The Add Workflow Model dialog appears.
-1. Enter the **Title** and **Name** (optional). For example, a mortgage application. Tap **Done**.
-1. Select the newly created workflow model and tap **Edit**. Now, you can add workflow steps to build business logic. When you first create a workflow model, it contains:
+1. Enter the **Title** and **Name** (optional). For example, a mortgage application. Select **Done**.
+1. Select the newly created workflow model and select **Edit**. Now, you can add workflow steps to build business logic. When you first create a workflow model, it contains:
 
     * The steps: Flow Start and Flow End. These steps represent the beginning and end of the workflow. These steps are required and cannot be edited or removed.
     * An example Participant step named Step 1. This step is configured to assign a work item to the admin user. Remove this step.
@@ -73,7 +73,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 
 1. Create workflow stages. A workflow can have multiple stages. These stages are displayed in the AEM Inbox and report progress of the workflow.
 
-   To define a stage, tap the ![info-circle](assets/info-circle.png) icon to open workflow model properties, open the **Stages** tab, add stages for the workflow model, and tap **Save & Close**. For the example mortgage application, create stages: loan request, loan request status, to be signed documents, and signed loan document.
+   To define a stage, select the ![info-circle](assets/info-circle.png) icon to open workflow model properties, open the **Stages** tab, add stages for the workflow model, and select **Save & Close**. For the example mortgage application, create stages: loan request, loan request status, to be signed documents, and signed loan document.
 
 1. Drag-and-drop the **Assign Task** steps browser to the workflow model. Make it the first step of the model.
 
@@ -208,7 +208,7 @@ You can configure an adaptive form to sync, submit, and trigger a workflow from 
 An administrator (a member of fd-administrators group) can configure a network folder to run a pre-configured workflow when a user places a file (such as a PDF file) in the folder. After the workflow completes, it can save the result file to a specified output folder. Such a folder is known as [Watched Folder](../../forms/using/watched-folder-in-aem-forms.md). Perform the following procedure to configure a watched folder to launch a workflow:
 
 1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. A list of already configured watched folders is displayed.
-1. Tap **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
+1. Select **[!UICONTROL New]**. A list of fields is displayed. Specify a value for the following fields to configure a Watched Folder for a workflow:
 
 <table>
  <tbody>
@@ -239,7 +239,7 @@ An administrator (a member of fd-administrators group) can configure a network f
  </tbody>
 </table>
 
-1. Tap **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
+1. Select **Advanced**. Specify a value for the following field and taps **Create**. The Watched Folder is configured to launch a workflow. Now, whenever a file is placed in the input directory of the Watched Folder, the specified workflow is triggered.
 
    | Field |Description |
    |---|---|

@@ -1,10 +1,8 @@
 ---
 title: Video renditions
 description: Learn how to use Adobe Experience Manager Assets to generate video renditions for video assets of various formats including OGG, FLV, and so on.
-uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
 ---
 # Video renditions {#video-renditions}

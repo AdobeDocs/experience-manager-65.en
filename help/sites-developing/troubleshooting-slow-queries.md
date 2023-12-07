@@ -1,14 +1,14 @@
 ---
 title: Troubleshooting Slow Queries
-seo-title: Troubleshooting Slow Queries
+
 description: Learn how to troubleshoot slow queries in Adobe Experience Manager.
-seo-description: null
-uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
+
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
 ---
 # Troubleshooting Slow Queries{#troubleshooting-slow-queries}

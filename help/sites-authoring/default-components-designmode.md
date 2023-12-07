@@ -50,11 +50,11 @@ To either enable or disable a component:
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Tap or click on a component. The component will have a blue border when selected.
+1. Click a component. The component has a blue border when selected.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Click or tap the **Parent** icon.
+1. Click the **Parent** icon.
 
    ![Parent](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -103,7 +103,7 @@ To either enable or disable a component:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Tap or click on a component with a blue border. In this example a hero image component is selected.
+1. Click a component with a blue border. In this example, a hero image component is selected.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -147,4 +147,4 @@ To either enable or disable a component:
 
    ![Move](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Click or tap the **Done** icon to save and close the dialogue.
+1. Click the **Done** icon to save and close the dialogue.

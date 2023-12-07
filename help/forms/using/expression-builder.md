@@ -1,13 +1,13 @@
 ---
 title: Remote functions in Expression Builder
-seo-title: Expression Builder
+
 description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
-seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
-uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
+
 docset: aem65
 
 feature: Correspondence Management

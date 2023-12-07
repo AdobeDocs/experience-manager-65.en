@@ -1,14 +1,14 @@
 ---
 title: Getting started with AEM Forms workspace
-seo-title: Getting started with AEM Forms workspace
+
 description: How to get started with using the LiveCycle AEM Forms workspace to manage your business automation processes.
-seo-description: How to get started with using the LiveCycle AEM Forms workspace to manage your business automation processes.
-uuid: 35ca1a51-92c3-40d8-8de3-604be8704752
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
+
 exl-id: d2a962b6-16be-4866-a856-5064f81c9610
 ---
 # Getting started with AEM Forms workspace {#getting-started-with-aem-forms-workspace}
@@ -51,7 +51,7 @@ When you are navigating AEM Forms workspace by using a keyboard, the navigation 
 * The AEM Forms workspace Help opens in a separate browser window. After you view the Help, the focus returns to the browser window that contains AEM Forms workspace. The Help menu remains focused when the focus returns.
 * When you open a form to start a process or complete a task, the focus remains with the existing element and does not change to the form. Use tab to move the focus to the form and browse through it. Tabbing order through the form depends on the type and design of the form.
 
-  For PDF forms, when you tab through to the end of the form or submit the form, the cursor focus jumps to the browser Address bar. You must tab through the menus again (but not the entire form) to go to the form action buttons such as Save As Draft and Complete. If the form is still open, you can also tab past the buttons and back into the form.
+  For PDF forms, when you tab through to the end of the form or submit the form, the cursor focus jumps to the browser Address bar. Tab through the menus again (but not the entire form) to go to the form action buttons such as Save As Draft and Complete. If the form is still open, you can also tab past the buttons and back into the form.
 
 ## Managing preferences {#managing-preferences}
 
@@ -59,7 +59,7 @@ You can set the various AEM Forms workspace preferences in the following categor
 
 **Out of Office:** Set preferences to control how tasks are assigned to other people while you are out of the office. See [Setting out-of-office preferences](todo-lists.md#setting-out-of-office-preferences).
 
-**Queues:** Set preferences for sharing your To-do list with other users or for requesting access to another user’s list. See [Working with tasks from group and shared queues](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
+**Queues:** Set preferences for sharing your To-do list with other users or for requesting access to another user's list. See [Working with tasks from group and shared queues](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
 **UI Settings:** Set preferences for how you interact with AEM Forms workspace. See [Set user interface preferences](#set-user-interface-preferences).
 

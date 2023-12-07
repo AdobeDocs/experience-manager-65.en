@@ -1,14 +1,14 @@
 ---
 title: Live Copy Overview Console
-seo-title: Live Copy Overview Console
+
 description: Learn about the basics of the Live Copy Overview Console.
-seo-description: Learn about the basics of the Live Copy Overview Console.
-uuid: 6b1841ec-950e-455b-9b30-b5f5050a67b8
+
+
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
+
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 ---

@@ -281,7 +281,7 @@ You can configure OAuth for multiple email providers, as outlined below.
 First, configure the Mail Service:
 
 1. Open the AEM Web Console by going to `http://serveraddress:serverport/system/console/configMgr`
-1. Look for, then click on **Day CQ Mail Service**
+1. Look for, then click **Day CQ Mail Service**
 1. Add the following settings:
    * SMTP Server Host Name: `smtp.gmail.com`
    * SMTP Server Port: `25` or `587`, depending on the requirements
@@ -291,7 +291,7 @@ First, configure the Mail Service:
 Next, configure your SMTP OAuth provider by following the procedure below:
 
 1. Open the AEM Web Console by going to `http://serveraddress:serverport/system/console/configMgr`
-1. Look for, then click on **CQ Mailer SMTP OAuth2 Provider**
+1. Look for, then click **CQ Mailer SMTP OAuth2 Provider**
 1. Fill in the required information as follows:
    * Authorization URL: `https://accounts.google.com/o/oauth2/auth`
    * Token URL: `https://accounts.google.com/o/oauth2/token`
@@ -330,12 +330,12 @@ Finally, confirm the configuration by:
 ### Microsoft Outlook {#microsoft-outlook}
 
 1. Go to [https://portal.azure.com/](https://portal.azure.com/) and log in.
-1. Search for **Azure Active Directory** in the search bar and click on the result. Alternatively, you can browse directly to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. Search for **Azure Active Directory** in the search bar and click the result. Alternatively, you can browse directly to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Click on **App Registration** - **New Registration**
 
    ![The new registration button when configuring Microsoft Outlook](assets/oauth-outlook1.png)
 
-1. Fill in the information according to your requirements, then click on **Register**
+1. Fill in the information according to your requirements, then click **Register**
 1. Go to the newly created app, and select **API Permissions** 
 1. Go to **Add Permission** - **Graph Permission** - **Delegated Permissions**
 1. Select the below permissions for your app, then click **Add Permission**:
@@ -348,7 +348,7 @@ Finally, confirm the configuration by:
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. Repeat the above for each publish instance 
 1. Configure the settings according to your requirements
-1. Next, go to **Certificates and Secrets**, click on **New client secret** and follow the on screen steps to create a secret. Make sure to take note of this secret for later use
+1. Next, go to **Certificates and Secrets**, click **New client secret** and follow the on screen steps to create a secret. Make sure to take note of this secret for later use
 1. Press **Overview** in the left hand pane and copy the values for **Application (client) ID** and **Directory (tenant) ID** for later use
 
 To recap, you must have the following information to configure OAuth2 for the Mailer service on the AEM side:
@@ -364,7 +364,7 @@ To recap, you must have the following information to configure OAuth2 for the Ma
 Next, integrate your OAuth2 settings with AEM:
 
 1. Go to the Web Console of your local instance by browsing to `http://serveraddress:serverport/system/console/configMgr`
-1. Look for and click on **Day CQ Mail Service**
+1. Look for and click **Day CQ Mail Service**
 1. Add the following settings:
    * SMTP Server Host Name: `smtp.office365.com`
    * SMTP user: your username in email format
@@ -372,7 +372,7 @@ Next, integrate your OAuth2 settings with AEM:
    * SMTP Server Port: `25` or `587` depending on the requirements
    * Check the tickboxes for **SMPT use StarTLS** and **SMTP requires StarTLS**
    * Check **OAuth flow** and click **Save**.
-1. Look for, then click on **CQ Mailer SMTP OAuth2 Provider**
+1. Look for, then click **CQ Mailer SMTP OAuth2 Provider**
 1. Fill in the required information as follows:
    * Fill in the Authorization Url, Token Url and Refresh Token URL by constructing them as described at [the end of this procedure](#microsoft-outlook)
    * Client ID and Client Secret: configure these fields with the values that you retrieved as described above.

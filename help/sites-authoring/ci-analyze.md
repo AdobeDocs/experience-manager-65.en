@@ -1,14 +1,14 @@
 ---
 title: Analyzing Page Performance
-seo-title: Analyzing Page Performance
+
 description: Use the Content Insight page to analyze the performance of the page that you are authoring
-seo-description: Use the Content Insight page to analyze the performance of the page that you are authoring
-uuid: 563d3e98-20d9-4cca-a174-bafd6e65c1bb
+
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
+
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 ---
@@ -21,7 +21,7 @@ Open the [Content Insight](/help/sites-authoring/content-insights.md) page to an
 Use the following procedure to see the Analytics and Recommendations for a page:
 
 1. Navigate to the page that you want to analyze.
-1. In the toolbar, click or tap **Analytics and Recommendations**.
+1. In the toolbar, click **Analytics and Recommendations**.
 
    >[!NOTE]
    >
@@ -46,7 +46,7 @@ Change the reporting period of the Content Insight page to focus your analysis o
 
 To change the reporting period of a Content Insight page:
 
-1. If the timeframe does not appear at the top of the page, click or tap the Toggle Timeframe icon.
+1. If the timeframe does not appear at the top of the page, click the Toggle Timeframe icon.
 
    ![Toggle Timeframe](do-not-localize/chlimage_1-22.png)
 
@@ -64,11 +64,11 @@ Change the amount of time that each data point spans in a report. For example, w
 
 The granularity affects the reports that plot data against time, such as the Views and the Page Average Engaged Minutes reports. Granularity also affects the scale of the timeframe.
 
-1. If the granularity control does not appear, click or tap the Toggle Granularity icon.
+1. If the granularity control does not appear, click the Toggle Granularity icon.
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
-1. Click or tap the desired granularity. Once selected, the report automatically updates to reflect the granularity.
+1. Click the desired granularity. Once selected, the report automatically updates to reflect the granularity.
 
 ### Assigning Tasks for SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
@@ -84,7 +84,7 @@ When created, the task appears in the user's Tasks list. For information about t
 
 Use the following procedure to create a task for an SEO recommendation.
 
-1. Click or tap the information icon for the SEO recommendation.
+1. Click the information icon for the SEO recommendation.
 
    ![Onformation icon](do-not-localize/chlimage_1-23.png)
 
@@ -92,7 +92,7 @@ Use the following procedure to create a task for an SEO recommendation.
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. Fill the form fields that appear and then tap Create:
+1. Fill the form fields that appear and then select Create:
 
     * Project: Select the project in which to create the task.
     * Name: The name that identifies the task. The default name is the title of the SEO recommendation.
@@ -103,4 +103,4 @@ Use the following procedure to create a task for an SEO recommendation.
 
    **Note:** The task that is created also includes the path to the page to which the SEO recommendation applies.
 
-1. Click or tap Done to close the Task Created message.
+1. Click Done to close the Task Created message.

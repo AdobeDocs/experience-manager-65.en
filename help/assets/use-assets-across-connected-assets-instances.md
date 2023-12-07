@@ -226,7 +226,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
    ![Remote references in asset Properties page](assets/connected-assets-remote-reference.png)
 
 1. The references for [!DNL Sites] pages displays total count of references for each local [!DNL Sites]. It may take some time to find all the references and display the total number of references.
-1. The list of references is interactive and DAM users can click on a reference to open the referencing page. If remote references cannot be fetched for some reason, a notification is displayed informing the user of the failure.
+1. The list of references is interactive and DAM users can click a reference to open the referencing page. If remote references cannot be fetched for some reason, a notification is displayed informing the user of the failure.
 1. Users can move or delete the asset. When moving or deleting an asset, the total number of references of all the selected assets/folders are displayed in a warning dialog. When deleting an asset for which the references are not yet retrieved, a warning dialog is displayed.
 
    ![force delete warning](assets/delete-referenced-asset.png)

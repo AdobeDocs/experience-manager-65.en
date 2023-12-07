@@ -1,12 +1,10 @@
 ---
 title: Spin Sets
 description: Learn how to create a spin set in Dynamic Media to simulate the real-world act of turning an object to view it from any angle so you can see details.
-uuid: 379a20a3-6a17-499a-b0f1-3a835b97aa7b
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
@@ -143,9 +141,9 @@ See also [Dynamic Media limitations](/help/assets/limitations.md).
 
     * Near the upper-left corner of the Spin Set Editor page, select **[!UICONTROL Add Asset]**.
 
-    * Near the middle of the Spin Set Editor page, select **[!UICONTROL Tap to open Asset Selector]**.
+    * Near the middle of the Spin Set Editor page, select **[!UICONTROL Select to open Asset Selector]**.
 
-   Tap to select assets that you want to include in your Spin Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Select]**.
+   Select to select assets that you want to include in your Spin Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Select]**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then select the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 

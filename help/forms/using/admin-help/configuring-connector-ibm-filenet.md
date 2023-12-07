@@ -1,14 +1,14 @@
 ---
 title: Configuring Connector for IBM FileNet
-seo-title: Configuring Connector for IBM FileNet
+
 description: Learn how to configure the Connector for IBM FileNet to enable communication between AEM forms and IBM FileNet.
-seo-description: Learn how to configure the Connector for IBM FileNet to enable communication between AEM forms and IBM FileNet.
-uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
+
 exl-id: f4045df5-a35b-41d7-910e-971017148597
 ---
 # Configuring Connector for IBM FileNet {#configuring-connector-for-ibm-filenet}

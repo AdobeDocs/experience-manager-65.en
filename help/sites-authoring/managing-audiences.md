@@ -1,14 +1,14 @@
 ---
 title: Managing Audiences
-seo-title: Managing Audiences
+
 description: The Audiences console enables you to create, organize, and manage audiences for your Adobe Target account or manage segments for ContextHub or Client Context
-seo-description: The Audiences console enables you to create, organize, and manage audiences for your Adobe Target account or manage segments for ContextHub or Client Context
-uuid: 76408a8c-25db-4e9f-8a69-27e820a2a7cf
+
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
+
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
 ---
@@ -37,8 +37,8 @@ You can create a ContextHub segment either in the Audiences console or during th
 
 To create a ContextHub segment in the Audiences console:
 
-1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
-1. Tap or click **Create ContextHub Segment**.
+1. In the Navigation console, click **Personalization**. Click **Audiences**.
+1. Click **Create ContextHub Segment**.
 
    ![screen-shot_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
 
@@ -64,20 +64,20 @@ When you use more than one rule, these rules are combined by the Boolean operato
 
 To create an Adobe Target audience:
 
-1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
+1. In the Navigation console, click **Personalization**. Click **Audiences**.
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. In the Audiences console, tap or click **Create** and then** Create Target Audience**.
+1. In the Audiences console, click **Create** and then** Create Target Audience**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. In the **Adobe Target Configuration** dialog box, select the target configuration and tap or click **OK**.
-1. In the Rule#1 area, tap or click the attribute type and enter any attribute information in the fields that are available. When finished, select the check mark to the right of the attribute to save it. See [Attributes and their options](#attributes-and-their-options) for information on all the attributes.
+1. In the **Adobe Target Configuration** dialog box, select the target configuration and click **OK**.
+1. In the Rule#1 area, click the attribute type and enter any attribute information in the fields that are available. When finished, select the check mark to the right of the attribute to save it. See [Attributes and their options](#attributes-and-their-options) for information on all the attributes.
 1. Click **Add Rule** to add another rule. Enter as many rules as needed. Rules are combined with the boolean operator AND, which means that the audience must meet all the requirements of each rule to be eligible for an activity.
-1. Tap or click **Next**.
-1. Enter a name for the audience and tap or click **Save**.
-1. Tap or click **Save**. Your audience is listed in the Audience list.
+1. Click **Next**.
+1. Enter a name for the audience and click **Save**.
+1. Click **Save**. Your audience is listed in the Audience list.
 
 ### Attributes and their Options {#attributes-and-their-options}
 
@@ -101,6 +101,6 @@ You can create targeting rules for each of the following attributes:
 
 You can edit any ContextHub or Client Context audience from the Audiences console. You can also edit Adobe Target audiences, but only those audiences that were created in AEM:
 
-1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
-1. Tap or click the icon next to the ContextHub or Client Context segment you want to edit, and tap or click **Edit**.
+1. In the Navigation console, click **Personalization**. Click **Audiences**.
+1. Click the icon next to the ContextHub or Client Context segment you want to edit, and click **Edit**.
 1. Make any edits in the segment editor. See [Client Context](/help/sites-administering/campaign-segmentation.md) or [ContextHub](/help/sites-developing/ch-configuring.md) documentation.

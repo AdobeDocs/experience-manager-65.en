@@ -649,7 +649,7 @@ For simple, advanced, and custom searches to discover and use the most appropria
 
 Quick action icons are available for a single asset at a time. Depending upon your device, perform the following actions to display the quick action icons:
 
-* Touch devices: Touch and hold. For example, on an iPad, you can tap-and-hold an asset so that the quick actions display.
+* Touch devices: Touch and hold. For example, on an iPad, you can select-and-hold an asset so that the quick actions display.
 * Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
 
 ### Navigate and select assets {#navigating-and-selecting-assets}

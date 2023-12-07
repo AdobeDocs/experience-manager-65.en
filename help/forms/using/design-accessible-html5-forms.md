@@ -1,13 +1,13 @@
 ---
 title: Designing accessible HTML5 forms
-seo-title: Designing accessible HTML5 forms
+
 description: HTML5 forms use the ARIA HTML5 accessibility standard. These forms support tabbed navigation and are certified to be compatible with common screen readers.
-seo-description: HTML5 forms use the ARIA HTML5 accessibility standard. These forms support tabbed navigation and are certified to be compatible with common screen readers.
-uuid: 1ce5ba39-69ea-4d0e-96ea-e2a38b21d6b7
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
+
 docset: aem65
 
 feature: Mobile Forms

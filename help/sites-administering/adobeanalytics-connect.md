@@ -1,14 +1,14 @@
 ---
 title: Connecting to Adobe Analytics and Creating Frameworks
-seo-title: Connecting to Adobe Analytics and Creating Frameworks
+
 description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
-seo-description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
-uuid: 3820dd24-4193-42ea-aef2-4669ebfeaa9d
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
+
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 ---

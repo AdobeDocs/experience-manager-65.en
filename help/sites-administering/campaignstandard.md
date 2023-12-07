@@ -41,19 +41,19 @@ This document leads you through each of these steps in detail.
 
 ## Configure the aemserver User in Campaign {#aemserver-user}
 
-Adobe Campaign Standard by default comes with an `aemserver` user that AEM uses to connect to Adobe Campaign. You must assign an appropriate security group for this user and set its password.
+Adobe Campaign Standard by default comes with an `aemserver` user that AEM uses to connect to Adobe Campaign. Assign an appropriate security group for this user and set its password.
 
 1. Log into Adobe Campaign as an administrator.
 
-1. Tap or click the Adobe Campaign Logo at the top-left of the menu bar to open the global navigation, then select **Administration** &gt; **Users &amp; Security** &gt; **Users** from the navigation menu.
+1. Click the Adobe Campaign Logo at the top-left of the menu bar to open the global navigation, then select **Administration** &gt; **Users &amp; Security** &gt; **Users** from the navigation menu.
 
-1. Tap or click the `aemserver` user in the users console.
+1. Click the `aemserver` user in the users console.
 
 1. Ensure that the `aemserver` user is assigned at a minimum to a security group that has the role `deliveryPrepare` assigned to it. By default the group `Standard Users` has this role.
 
    ![aemserver user in Adobe Campaign](assets/acs-aemserver-user.png)
 
-1. Tap or click **Save** to save the changes.
+1. Click **Save** to save the changes.
 
 Your `aemserver` user now has the necessary rights so that AEM can use it to communicate with Adobe Campaign.
 
@@ -67,9 +67,9 @@ This option comes pre-configured. However, you may need to update it if you have
 
 1. Log into Adobe Campaign as an administrator.
 
-1. Tap or click the Adobe Campaign Logo at the top-left of the menu bar to open the global navigation, then select **Administration** &gt; **Application Settings** &gt; **Options** from the navigation menu.
+1. Click the Adobe Campaign Logo at the top-left of the menu bar to open the global navigation, then select **Administration** &gt; **Application Settings** &gt; **Options** from the navigation menu.
 
-1. Tap or click the `AEMResourceTypeFilter` in the options console.
+1. Click the `AEMResourceTypeFilter` in the options console.
 
 1. Confirm the configuration of the `AEMResourceTypeFilter`. The paths are delimited with commas and by default contain:
 
@@ -79,17 +79,17 @@ This option comes pre-configured. However, you may need to update it if you have
 
    ![AEMResourceTypeFilter](assets/acs-aem-resource-type-filter.png)
 
-1. Tap or click **Save** to save the changes.
+1. Click **Save** to save the changes.
 
 Your `AEMResourceTypeFilter` is now configured to retrieve the correct content from AEM.
 
 ## Create an AEM-Specific Email Delivery Template in Campaign {#aem-email-delivery-template}
 
-By default, AEM is not enabled in Adobe Campaign's email templates. You must configure a new email delivery template that can be used to create emails using AEM content. To create an AEM-specific email delivery template, follow these steps.
+By default, AEM is not enabled in Adobe Campaign's email templates. Configure a new email delivery template that can be used to create emails using AEM content. To create an AEM-specific email delivery template, follow these steps.
 
 1. Log into Adobe Campaign as an administrator.
 
-1. Tap or click the Adobe Campaign Logo at the top-left of the menu bar to open the global navigation, then select **Resources** &gt; **Templates** &gt; **Delivery templates** from the navigation menu.
+1. Click the Adobe Campaign Logo at the top-left of the menu bar to open the global navigation, then select **Resources** &gt; **Templates** &gt; **Delivery templates** from the navigation menu.
 
 1. In the delivery templates console, locate the default email template **Send via email (mail)** and hover the mouse over the card (or line) representing it to reveal the options. Click **Duplicate element**.
 
@@ -157,17 +157,17 @@ To configure replication from your AEM author instance to the publish instance:
 
 1. Sign into to your AEM authoring instance as an administrator.
 
-1. From the global navigation side rail, select **Tools** &gt; **Deployment** &gt; **Replication** &gt; **Agents on author**, then tap or click **Default agent (publish)**.
+1. From the global navigation side rail, select **Tools** &gt; **Deployment** &gt; **Replication** &gt; **Agents on author**, then click **Default agent (publish)**.
 
    ![Configure replication agent](assets/acc-replication-config.png)
 
-1. Tap or click **Edit** then select the **Transport** tab.
+1. Click **Edit** then select the **Transport** tab.
 
 1. Configure the **URI** field by replacing the default `localhost` value with the IP address of the AEM publishing instance.
 
    ![Transport tab](assets/acc-transport-tab.png)
 
-1. Tap or click **OK** to save the changes to the agent settings.
+1. Click **OK** to save the changes to the agent settings.
 
 You have configured replication to the AEM publish instance so your campaign recipients can access your content.
 
@@ -179,7 +179,7 @@ You have configured replication to the AEM publish instance so your campaign rec
 
 ## Configure the AEM Externalizer {#externalizer}
 
-[The Externalizer](/help/sites-developing/externalizer.md) is an OSGi service in AEM that transforms a resource path into an external and absolute URL, which is necessary for AEM to serve content that Campaign can use. You must configure it for the Campaign integration to work.
+[The Externalizer](/help/sites-developing/externalizer.md) is an OSGi service in AEM that transforms a resource path into an external and absolute URL, which is necessary for AEM to serve content that Campaign can use. Configure it so that the Campaign integration works.
 
 1. Sign into the AEM authoring instance as an administrator.
 1. From the global navigation side rail, select **Tools** &gt; **Operations** &gt; **Web Console** &gt; **OSGi Configuration** and search for **Day CQ link Externalizer**.
@@ -187,7 +187,7 @@ You have configured replication to the AEM publish instance so your campaign rec
 
    ![Configuring the Externalizer](assets/acc-externalizer-config.png)
 
-1. Tap or click **Save**. 
+1. Click **Save**. 
 
 You have configured the Externalizer and Adobe Campaign can now access your content.
 
@@ -200,7 +200,7 @@ You have configured the Externalizer and Adobe Campaign can now access your cont
 Just as you need a user in Adobe Campaign that AEM can use to communicate with Adobe Campaign, Adobe Campaign also needs a user in AEM for communication with AEM. By default the Campaign integration creates the `campaign-remote` user in AEM. Follow these steps to configure this user.
 
 1. Log into AEM as an administrator.
-1. On the main navigation console, click on **Tools** in the left rail.
+1. On the main navigation console, click **Tools** in the left rail.
 1. Then click **Security** &gt; **Users** to open the user administration console.
 1. Locate the `campaign-remote` user.
 1. Select the `campaign-remote` user and click **Properties** to edit the user.
@@ -215,9 +215,9 @@ When you [created an AEM-specific email delivery template,](#aem-email-delivery-
 
 1. Log into Adobe Campaign as an administrator.
 
-1. Tap or click the Adobe Campaign Logo at the top-left of the menu bar to open the global navigation, then select **Administration** &gt; **Application settings** &gt; **External accounts** from the navigation menu.
+1. Click the Adobe Campaign Logo at the top-left of the menu bar to open the global navigation, then select **Administration** &gt; **Application settings** &gt; **External accounts** from the navigation menu.
 
-1. Tap or click the **Adobe Experience Manager instance (aemInstance)** user in the users console.
+1. Click the **Adobe Experience Manager instance (aemInstance)** user in the users console.
 
 1. Ensure that the user has **Adobe Experience Manager** as the **Type**.
 

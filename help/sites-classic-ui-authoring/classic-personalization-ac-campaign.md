@@ -75,7 +75,7 @@ In addition you may also need to select the Adobe Campaign template and change t
 
    >[!NOTE]
    >
-   >Be sure to tap/click **OK** or **Apply** after adding the cloud service. This enables the **Adobe Campaign** tab to work properly.
+   >Be sure to click **OK** or **Apply** after adding the cloud service. This enables the **Adobe Campaign** tab to work properly.
 
 1. If you would like to apply a specific email delivery template (from Adobe Campaign), other than the default **mail** template, select **Page properties** again. In the **Adobe Campaign** tab, enter the email delivery template's internal name in the related Adobe Campaign instance.
 

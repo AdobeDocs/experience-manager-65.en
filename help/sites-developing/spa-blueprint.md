@@ -13,7 +13,7 @@ To enable the author to use the AEM SPA Editor to edit the content of an SPA, th
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
 
 ## Introduction {#introduction}
 
