@@ -1494,6 +1494,7 @@ user-guide-title: AEM 6.5
     + [Configuring and troubleshooting an AEM Forms on JEE server cluster](/help/forms/developing/configure-server-cluster.md)
     + [Generating and working with Hashes in dynamic PDF forms](/help/forms/developing/hashing-forms.md)
     + [Passing credentials using WS-Security headers](/help/forms/developing/passing-credentials.md)
+    + [Unable to use Output service, Forms service, or Document of Record (DoR) service](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Content and Commerce {#commerce}
   + [AEM Content and Commerce](/help/commerce/home.md)
   + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
