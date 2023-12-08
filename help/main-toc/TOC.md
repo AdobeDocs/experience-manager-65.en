@@ -1832,5 +1832,5 @@ user-guide-title: AEM 6.5
       + [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
       + [Working with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
       + [Naming conventions for assets testing](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
-+ Documentation Journeys {#journeys}
++ Documentation Journeys {#documentation-journeys}
   + [What is a documentation journey?](/help/journey-documentation/home.md)
