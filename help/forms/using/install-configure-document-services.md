@@ -551,6 +551,16 @@ The Assembler service depends on the Reader Extensions service, Signature servic
  </tbody>
 </table>
 
+### (Windows only) Configure registry entry for Microsoft® Project {#configure-registry-entry-for-microsoft-project}
+
+After you install AEM Forms add-on and Microsoft® Project on your machine, Register an entry for Microsoft® Project in the 64-bit location. It facilitates the execution of Project to PDFG conversions tests. Following are the steps outlining the process for registry entry:
+
+1. Open Microsoft® Windows Registry editor (regedit), To open registry editor, go to Start > Run, type regedit, and click OK.
+1. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, and create a new **Binary Value** registry and rename it to **Project**.
+1. Modify the data value of created Binary registry to 01 and click OK.
+1. Close the registry entry.
+
+
 ## Known issues and troubleshooting {#known-issues-and-troubleshooting}
 
 * The HTML to PDF conversion fails if a zipped input file contains HTML files with double-byte characters in filenames. To avoid this problem, do not use double-byte characters when naming HTML files.
