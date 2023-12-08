@@ -196,6 +196,15 @@ Adobe Experience Manager works with the following server platforms for productio
 1. Linux&reg; Kernel 2.6, 3. x, 4. x, and 5. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, CentOS, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on CentOS 7, Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
 1. AEM Forms is supported on Ubuntu 20.04 LTS.
 1. Linux&reg; distribution supported by Adobe Managed Services.
+
+    >[NOTE!]
+    >For Linux based server (OSGI and JEE stack), AEM Forms add-on require runtime dependencies such as:
+    >* glibc.x86_64 (2.17-196)
+    >* libX11.x86_64 (1.6.7-4)
+    >* zlib.x86-64 (1.2.7-17)
+    >* libxcb.x86_64 (1.13-1.el7)
+    >* libXau.x86_64 (1.0.8-2.1.el7)
+
 1. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
 1. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
 1. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
@@ -209,7 +218,6 @@ Adobe Experience Manager works with the following server platforms for productio
 >* Microsoft&reg; Visual C++ 2012 redistributable
 >* Microsoft&reg; Visual C++ 2013 redistributable 
 >* Microsoft&reg; Visual C++ 2019(VC14.28 or greater) redistributable
- 
 
 
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
@@ -368,7 +376,7 @@ With Dynamic Media enabled, the following additional technical requirements appl
 The following hardware requirements are applicable for both Linux&reg; and Windows:
 
 * Intel Xeon&reg; or AMD&reg; Opteron CPU with at least four cores
-* At least, 16 GB of RAM
+* At least 16 GB of RAM
 
 #### Linux&reg; {#linux}
 
@@ -514,7 +522,8 @@ For Windows x86:
 * Video hardware acceleration (optional)
 * Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 * Administrative privileges to install Designer
-* Microsoft Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
+* Microsoft Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime for 32-bit AEM Forms Designer
+* Microsoft Visual C++ 2019 (VC 14.28 or greater) 64-bit runtime for 64-bit AEM Forms Designer (For both OSGI and JEE stack)
 
 ### Requirements for AEM Assets XMP metadata write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 

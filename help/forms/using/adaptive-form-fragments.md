@@ -23,7 +23,7 @@ exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 
 While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details, and so on. Form developers are required to create these common segments every time a new form is created.
 
-Adaptive forms provides a convenient mechanism to create form segment like a panel or a group of fields only once and reuse them across adaptive forms. These reusable and standalone segments are called adaptive form fragments.
+Adaptive forms provide a convenient mechanism to create form segment like a panel or a group of fields only once and reuse them across adaptive forms. These reusable and standalone segments are called adaptive form fragments.
 
 ## Create a fragment {#create-a-fragment}
 
@@ -163,6 +163,10 @@ You can create nested adaptive form fragments, which means you can drag-drop a f
 ### Change fragments {#change-fragments}
 
 You can replace or change an adaptive form fragment by another fragment by using the **Select Fragment asset** property in the Edit component dialog for an adaptive form fragment panel.
+
+### Generate Document of Record for Adaptive Form fragment {#generate-DOR-for-fragments}
+
+Document of Record (DOR) helps you to keep information of your forms in the print or document format. Thereby, it help you to track information about your customers at any time later, and you can also use the Document of Record to archive forms and content together in PDF Format. [Learn to generate document of record for Adaptive Form fragments](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 ### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
 
