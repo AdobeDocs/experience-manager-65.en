@@ -814,7 +814,7 @@ user-guide-title: AEM 6.5
 + Forms {#forms}
   + [AEM 6.5 Forms Guide](/help/forms/home.md)
   + Release Notes {#release-notes-new-features}
-    + [New features summary](/help/forms/using/whats-new.md)
+    + [What's new](/help/forms/using/whats-new.md)
     + [Frequently asked questions](/help/forms/using/frequently-asked-questions-faq.md)  
   + Getting Started {#getting-started}
     + [Introduction to AEM Forms](/help/forms/using/introduction-aem-forms.md)
