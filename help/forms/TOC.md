@@ -699,4 +699,5 @@ feature: Forms Service
   + [Configuring and troubleshooting an AEM Forms on JEE server cluster](developing/configure-server-cluster.md)
   + [Generating and working with Hashes in dynamic PDF forms](developing/hashing-forms.md)
   + [Passing credentials using WS-Security headers](developing/passing-credentials.md)
+  + [Unable to use Output service, Forms service, or Document of Record (DoR) service](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 
