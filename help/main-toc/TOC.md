@@ -612,8 +612,10 @@ user-guide-title: AEM 6.5
      + [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
      + [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md)
      + [Performance & Scalability](/help/sites-deploying/performance.md)
-+ Documentation Journeys {#journeys}
-  + [What is a documentation journey?](/help/journey-documentation/home.md)
++ Edge Delivery Services {#edge-delivery-services}
+  + [Getting Started with Edge Delivery](/help/edge/overview.md)
+  + [Using Edge Delivery](/help/edge/using.md)
++ Headless {#headless}  
   + [AEM Headless Journeys](/help/journey-headless/overview.md)
   + AEM Headless Developer Journey {#developer}
     + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)
@@ -1679,11 +1681,8 @@ user-guide-title: AEM 6.5
     + [Using Social Tag Cloud](/help/communities/tagcloud.md)
     + [Using Voting](/help/communities/voting.md)
     + [Create a Sample Page](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
-  + Edge Delivery Services {#edge-delivery-services}
-    + [Getting Started with Edge Delivery](/help/edge/overview.md)
-    + [Using Edge Delivery](/help/edge/using.md)
-  + AEM Fluid Experiences {#aem-fluid-experiences}
-    + [Feature List](/help/fluid-experiences/feature-list.md)
++ Fluid Experiences {#aem-fluid-experiences}
+  + [Feature List](/help/fluid-experiences/feature-list.md)
 + Mobile {#mobile}
   + [Mobile User Guide overview](/help/mobile/home.md)
   + Introduction to AEM Mobile {#introduction}
@@ -1833,3 +1832,5 @@ user-guide-title: AEM 6.5
       + [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
       + [Working with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
       + [Naming conventions for assets testing](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
++ Documentation Journeys {#journeys}
+  + [What is a documentation journey?](/help/journey-documentation/home.md)
