@@ -647,6 +647,7 @@ user-guide-title: AEM 6.5
     + [Configure translation rules](/help/journey-headless/translation/translation-rules.md)
     + [Translate content](/help/journey-headless/translation/translate-content.md)
     + [Publish translated content](/help/journey-headless/translation/publish-content.md)
+  + [What is a documentation journey?](/help/journey-documentation/home.md)
 + Assets {#assets}
   + [[!DNL Assets] user guide](/help/assets/home.md)
   + [About DAM](/help/assets/assets.md)
@@ -1681,7 +1682,7 @@ user-guide-title: AEM 6.5
     + [Using Social Tag Cloud](/help/communities/tagcloud.md)
     + [Using Voting](/help/communities/voting.md)
     + [Create a Sample Page](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
-+ Fluid Experiences {#aem-fluid-experiences}
++ Fluid Experiences {#fluid-experiences}
   + [Feature List](/help/fluid-experiences/feature-list.md)
 + Mobile {#mobile}
   + [Mobile User Guide overview](/help/mobile/home.md)
@@ -1832,5 +1833,3 @@ user-guide-title: AEM 6.5
       + [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
       + [Working with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
       + [Naming conventions for assets testing](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
-+ Documentation Journeys {#documentation-journeys}
-  + [What is a documentation journey?](/help/journey-documentation/home.md)
