@@ -612,8 +612,10 @@ user-guide-title: AEM 6.5
      + [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
      + [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md)
      + [Performance & Scalability](/help/sites-deploying/performance.md)
-+ Documentation Journeys {#journeys}
-  + [What is a documentation journey?](/help/journey-documentation/home.md)
++ Edge Delivery Services {#edge-delivery-services}
+  + [Getting Started with Edge Delivery](/help/edge/overview.md)
+  + [Using Edge Delivery](/help/edge/using.md)
++ Headless {#headless}  
   + [AEM Headless Journeys](/help/journey-headless/overview.md)
   + AEM Headless Developer Journey {#developer}
     + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)
@@ -645,6 +647,7 @@ user-guide-title: AEM 6.5
     + [Configure translation rules](/help/journey-headless/translation/translation-rules.md)
     + [Translate content](/help/journey-headless/translation/translate-content.md)
     + [Publish translated content](/help/journey-headless/translation/publish-content.md)
+  + [What is a documentation journey?](/help/journey-documentation/home.md)
 + Assets {#assets}
   + [[!DNL Assets] user guide](/help/assets/home.md)
   + [About DAM](/help/assets/assets.md)
@@ -812,7 +815,7 @@ user-guide-title: AEM 6.5
 + Forms {#forms}
   + [AEM 6.5 Forms Guide](/help/forms/home.md)
   + Release Notes {#release-notes-new-features}
-    + [New features summary](/help/forms/using/whats-new.md)
+    + [What's new](/help/forms/using/whats-new.md)
     + [Frequently asked questions](/help/forms/using/frequently-asked-questions-faq.md)  
   + Getting Started {#getting-started}
     + [Introduction to AEM Forms](/help/forms/using/introduction-aem-forms.md)
@@ -1494,6 +1497,7 @@ user-guide-title: AEM 6.5
     + [Configuring and troubleshooting an AEM Forms on JEE server cluster](/help/forms/developing/configure-server-cluster.md)
     + [Generating and working with Hashes in dynamic PDF forms](/help/forms/developing/hashing-forms.md)
     + [Passing credentials using WS-Security headers](/help/forms/developing/passing-credentials.md)
+    + [Unable to use Output service, Forms service, or Document of Record (DoR) service](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Content and Commerce {#commerce}
   + [AEM Content and Commerce](/help/commerce/home.md)
   + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
@@ -1678,11 +1682,8 @@ user-guide-title: AEM 6.5
     + [Using Social Tag Cloud](/help/communities/tagcloud.md)
     + [Using Voting](/help/communities/voting.md)
     + [Create a Sample Page](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
-  + Edge Delivery Services {#edge-delivery-services}
-    + [Getting Started with Edge Delivery](/help/edge/overview.md)
-    + [Using Edge Delivery](/help/edge/using.md)
-  + AEM Fluid Experiences {#aem-fluid-experiences}
-    + [Feature List](/help/fluid-experiences/feature-list.md)
++ Fluid Experiences {#fluid-experiences}
+  + [Feature List](/help/fluid-experiences/feature-list.md)
 + Mobile {#mobile}
   + [Mobile User Guide overview](/help/mobile/home.md)
   + Introduction to AEM Mobile {#introduction}

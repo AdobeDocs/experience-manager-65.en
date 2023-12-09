@@ -19,7 +19,7 @@ exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 | -------- | ---------------------------- |
 | Version  | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
-| Date     | Thursday, November 30, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Date     | Thursday, December 07, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
@@ -32,12 +32,30 @@ exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-**Key features and enhancements**
+## Key features and enhancements
 
 Some of the key features and enhancements in this release include the following:
 
 * Enabled Sites Page Editor/Image Component user to reference assets from the remote Assets Cloud Service. (SITES-13448, SITES-13433) 
 * AEM now supports server-side sorting for quicker project navigation in List view. Project nodes are sorted based on the user-selected column before appearing in the interface.
+
+### [!DNL Forms]
+
+* **New Adaptive Form Core Components**: Vertical tabs, Terms & Conditions, and Checkbox are added to enhance the scalability of forms.
+  * **[Checkbox component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptive Forms based on Core Components can now include a checkbox component. It allows users to make binary choices, selecting or deselecting a particular option. It typically appears as a small box that can be clicked or tapped to toggle between two states: checked and unchecked. The checkbox is a common form element used to present a yes/no or true/false choice.
+
+  * **[Terms and Conditions component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptive Forms based on Core Components can now include a Terms and Conditions component. It allows forms authors to introduce a specific section within the form where users are presented with the terms, conditions, or legal agreements associated with the use of a service, product, or platform. This component is designed to inform users about the rules, regulations, and obligations they are agreeing to by submitting the form.
+
+    ![Vertical tabs, Terms & Conditions and Checkbox components](/help/forms/using/assets/forms-components.png)
+
+  * **[Vertical tabs component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Adaptive Forms based on Core Components can now organize form content into a vertical list of tabs, providing a structured and navigable layout. The use of vertical tabs in a form can enhance the overall user experience by simplifying navigation and improving the organization of form content, especially in situations where a form contains multiple sections or complex information.
+  
+* **[64-bit version of AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: The 64-bit version of AEM Forms Designer brings enhanced performance, scalability, and memory management to empower your form creation experience. With the 64-bit architecture, you can tackle even larger and more complex projects with ease, ensuring seamless design workflows and optimized efficiency. Elevate your form design capabilities and embrace the future of AEM Forms Designer with this cutting-edge release.
+
+* **[Connect an Adaptive Forms with Microsoft&reg; SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms provides an OOTB integration to submit forms data directly to SharePoint List, letting you use SharePoint's Lists capabilities. You can configure Microsoft SharePoint List as a datasource for a Form Data Model and use the Submit using Form Data Model submit action to connect an Adaptive Form with SharePoint List.
+
+* **[Support to configure Document of Record properties for Adaptive Form Fragments](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: You can now easily customize your Adaptive Form fragments and its fields in  Adaptive Form editor.
+
 
 **Deprecated feature**
 
@@ -143,9 +161,11 @@ to
 
 ### [!DNL Forms]{#forms-6519}
 
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
+#### [!DNL Adaptive Forms]
 
-* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft&reg; configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) 
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.-->
+
+<!--* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft&reg; configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) -->
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -160,6 +180,32 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 <!--### Commerce{#commerce-6519}
 
 * A -->
+
+* When a user adds a toolbar to Adaptive Form, the Form Container Label shows erratic behavior because it does not change to the preferred language the Author selected for Forms. (FORMS-11371) 
+* In AEM Forms Workspace, the dropdown field selects the first option by default on the UI. (FORMS-11346) 
+* The language configuration in AEM does not show to have any effect if you use locales with five characters and the decimal separator is not correctly rendered in the letter. (FORMS-11344) 
+* When a user generates the XML output using the workbench process, it fails for a few of the files. (FORMS-11314) 
+* When a user generates preview for Document of record (DOR) in languages other than English, it does not work. (FORMS-11106) 
+* When a user converts some image files with PDFG on an OSGI instance based on Linux with JDK11, it does not convert. (FORMS-11105) 
+* When user installs AEM Forms add-on, it breaks the content tree panel in AEM Sites. (FORMS-10912) 
+* When a user copies dates using NVDA screen reader from Date picker component, it does not read correctly. (FORMS-10805)  
+* In Forms rule editor, the user is unable to set the value of the Radio button/Checkbox when the data value type is Boolean. (FORMS-10713) 
+* When a user adds added items in an Adaptive Form, it is added in reverse order to a drop-down List. (FORMS-10456) 
+* When a dropdown is cleared using the rule editor, the first provided value still appears even though the value has been cleared. (FORMS-9963)  
+* Users are not able to access Form Title using screen readers such as NVDA. (FORMS-8815)  
+* Users are not able to access Sub Title in a Form using screen readers such as NVDA. (FORMS-8814)  
+* In the page source of html form, the access key attribute is empty and is not working. (FORMS-5753)  
+* In the About Workspace dialog, the text "Adobe Experience Manager – Forms" is presented as text. (FORMS-5748)
+
+#### [!DNL Forms Designer]{#forms-designer-6519}
+
+* When a user tries to read non-interactive PDF forms through screen readers, some list items are not read or skipped. (LC-3921645)  
+* When a user tabs through the editable fields, it does not traverse to all the PDF form fields consistently. (LC-3921631)  
+* Ordering of the tags are randomly changed in PDF even tagging in Forms Designer is correct. (LC-3921313)  
+* A list does not display correctly in the tags in Adobe Acrobat Reader or Adobe Acrobat DC. (LC-3921306)
+* Heading levels which are assigned correctly in Forms Designer are randomly changed to a `<P>` tag in Adobe Acrobat. (LC-3921305) 
+* In a table the ID of any object cannot be modified once it is assigned. (LC-3921134)  
+* If merged cells are in the table, no GUI is available for setting the span (row and column) and scope in a complex table in AEM Forms Designer. (LC-3919532) 
 
 ### Foundation{#foundation-6519}
 
@@ -412,8 +458,6 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 #### Supported platforms 
 
-* JDK versions higher than 1.8.0_281 are not supported for WebLogic JEE server. (FORMS-8498, CQDOC-20383)
-* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20 is not supported to install AEM Forms on JEE Installer. Only JDK 11.0.19 or earlier versions are supported to install AEM Forms on JEE Installer. (FORMS-10659)
 
 #### Installation 
@@ -462,16 +506,10 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 
 * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
-* When a redirect URL is set in the guide container of an Adaptive Form, the inline signing stops working. (FORMS-10493)
-To resolve the issue, download, and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
-* All Document of Record (DoR) templates fail to publish. Only English locale-based DoR templates and their associated Forms-based DoR templates are published. (FORMS-10535)
-To resolve the issue, download, and install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* When users perform the submit action, the submission fails with an error: 
+` javax.servlet.ServletException: java.lang.NoSuchMethodError`
+To resolve the issue, [recompile the Sling scripts such as JSP, Java, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
-
-#### Interactive Communications
-
-* After upgrading to AEM Service Pack 18, it is not possible to open the Interactive Communication with large inline images in the Edit mode. (FORMS-10578)
-To resolve the issue, install the [hotfix for 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
