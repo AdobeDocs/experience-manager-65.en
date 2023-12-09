@@ -1,12 +1,12 @@
 ---
-title:  Connection issues with Output, Forms, and (Document of Record) DoR Services  
+title: Connection issues with Output, Forms, and (Document of Record) DoR Services
 description: Resolve AEM Forms connection errors post SP19. Stop, install Microsoft Visual C++, restart server for a seamless solution. Troubleshoot Output, Forms, DoR services.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 role: Admin
+exl-id: bd58099c-08cd-4056-afb6-a5935454429a
 ---
-
 # Unable to use Output service, Forms service, or Document of Record (DoR) service {#unable-to-use-output-service-forms-service-or-document-of-record-service}
 
 ## Issue
