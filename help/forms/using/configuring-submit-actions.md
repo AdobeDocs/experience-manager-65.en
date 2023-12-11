@@ -167,8 +167,6 @@ After a successful configuration, use the [Invoke a Microsoft&reg; Power Automat
 
 ## Submit to Microsoft® SharePoint List{#submit-to-sharedrive}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. 
 
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
