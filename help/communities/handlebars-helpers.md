@@ -164,9 +164,9 @@ A helper to return content depending on an equality conditional.
 ```
 {{#equals  value "some-value"}}
   <div>They are EQUAL!</div>
-{{else}}
+`{{else}}`
   <div>They are NOT equal!</div>
-{{/equals}}
+`{{/equals}}`
 ```
 
 ## If-wcm-mode {#if-wcm-mode}
@@ -188,9 +188,9 @@ A block helper that tests the current value of [WCM mode](https://developer.adob
 ```xml
 {{#if-wcm-mode mode="DESIGN, EDIT"}}
  ...
-{{else}}
+`{else}}`
  ...
-{{/if-wcm-mode}}
+`{{/if-wcm-mode}}`
 ```
 
 ## i18n {#i-n}
@@ -469,7 +469,7 @@ var context = {posts: [
   ] };
 
 // when link_to is called, posts is the current context
-var source = '<ul>{{#posts}}<li>{{{link_to "Post"}}}</li>{{/posts}}</ul>'
+var source = '<ul>`{{#posts}}`<li>{{{link_to "Post"}}}</li>`{{/posts}}`</ul>'
 
 var template = Handlebars.compile(source);
 
@@ -495,7 +495,7 @@ var data = { "people": [
 ]};
 
 // when link is called, people is the current context
-var source = "<ul>{{#people}}<li>{{#link}}{{name}}{{/link}}</li>{{/people}}</ul>";
+var source = "<ul>`{{#people}}`<li>`{{#link}}``{{name}}``{{/link}}`</li>`{{/people}}`</ul>";
 
 var template = Handlebars.compile(source);
 
