@@ -1,8 +1,6 @@
 ---
 title: SCF Handlebars Helpers
 description: Handlebars Helper methods to facilitate work with SCF
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
@@ -169,7 +167,6 @@ A helper to return content depending on an equality conditional.
 {{else}}
   <div>They are NOT equal!</div>
 {{/equals}}
-
 ```
 
 ## If-wcm-mode {#if-wcm-mode}
@@ -221,7 +218,6 @@ See also [Internationalizing Strings in JavaScript Code](../../help/sites-develo
 ```
 {{i18n "hello"}}
 {{i18n "hello" comment="greeting" default="bonjour"}}
-
 ```
 
 ## Include {#include}
@@ -556,7 +552,6 @@ public class FooTextHelper implements TemplateHelper<String>{
         return String.class;
     }
 }
-
 ```
 
 >[!NOTE]
@@ -583,7 +578,6 @@ function(Handlebars, SCF, $CQ) {
     });
 
 })(Handlebars, SCF, $CQ);
-
 ```
 
 The custom client-side helpers must be added to a custom client library.
