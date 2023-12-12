@@ -1,12 +1,12 @@
 ---
 title: Using AEM translation workflow to localize adaptive forms and document of record
-seo-title: Using AEM translation workflow to localize adaptive forms and document of record
+
 description: Learn to use AEM translation workflows to localize adaptive forms and document of record.
-seo-description: Learn to use AEM translation workflows to localize adaptive forms and document of record.
-uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
+
+
 content-type: reference
 topic-tags: develop
-discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
+
 noindex: true
 feature: Adaptive Forms, Foundation Components
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
@@ -23,7 +23,7 @@ This article explains the process to use AEM translation workflow with adaptive 
 
 The machine translation service immediately translates your content in adaptive form and document of record. AEM Forms is pre-configured to use a trial version of Microsoft Translator for machine translation. Perform the following steps to enable machine translation for your adaptive forms and document of record:
 
-1. On the AEM Forms UI, select a form, and tap the **Add Dictionary** option.
+1. On the AEM Forms UI, select a form, and select the **Add Dictionary** option.
 1. In **Add Dictionary to Translation Project** screen, select the **Create a new translation project** or **Add to an existing translation project** option.
 1. In the **Project Title** field, specify the title. For example, `Government Reference Site - German locale.`
 1. In the **Target Languages** field, specify a locale (For example, `German(de)`), and click **Done**. You can specify multiple locales. The form is translated to all the locales specified in the **Target Languages** field.
@@ -47,7 +47,7 @@ The machine translation service immediately translates your content in adaptive 
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 ## Localizing an adaptive form and its document of record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

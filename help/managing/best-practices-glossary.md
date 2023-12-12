@@ -549,7 +549,7 @@ Definition of the content structure of the legacy system. This is used for refer
 
 ### Historical Performance and Historical Performance KPIs {#historical-performance-and-historical-performance-kpis}
 
-You must collect and document performance statistics and performance KPIs from the legacy system. These are then used as a reference point and for benchmarking the new solution.
+Collect and document performance statistics and performance KPIs from the legacy system. These are then used as a reference point and for benchmarking the new solution.
 
 ### Identify Critical Key Solutions/Functionalities {#identify-critical-key-solutions-functionalities}
 

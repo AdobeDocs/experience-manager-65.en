@@ -121,7 +121,7 @@ See also [Preview assets using the software interface](/help/assets/previewing-a
     | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
     | **Pan your camera**  | Pan your view left, right, up, or down. | Right-click + drag. | Two-finger press + drag. |
     | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
-    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
+    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-select. |
     | **Reset**  | Near the lower-right corner of the page, select the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
     | **Full screen mode**  | To enter full-screen mode, in the lower-right corner of the page, select the Fullscreen icon.  |   |   |
 
@@ -154,7 +154,7 @@ See also [Preview assets using the software interface](/help/assets/previewing-a
     | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
     | **Pan your camera**  | Pan your view left, right, up, or down. | Right-click + drag. | Two-finger press + drag. |
     | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
-    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
+    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-select. |
     | **Reset**  | Near the lower-right corner of the page, select the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
     | **Full screen mode**  | To enter full-screen mode, in the lower-right corner of the page, select the Fullscreen icon.  |   |   |
 

@@ -1,9 +1,6 @@
 ---
 title: Creating forms with repeatable sections
-seo-title: Creating forms with repeatable sections
 description: Repeatable sections are panels that can be dynamically added or removed to a form.
-seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
-uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
@@ -22,7 +19,7 @@ You can use one of the following methods to create repeatable panels:
 
 ## Using Instance Manager via scripts&nbsp; {#using-instance-manager-via-scripts-nbsp}
 
-1. In the edit mode, select a panel, then tap ![cmppr](assets/cmppr.png). In the sidebar, under Properties, enable **Make Panel Repeatable**. Specify values for the **[!UICONTROL Maximum]** and **[!UICONTROL Minimum]** fields.
+1. In the edit mode, select a panel, then select ![cmppr](assets/cmppr.png). In the sidebar, under Properties, enable **Make Panel Repeatable**. Specify values for the **[!UICONTROL Maximum]** and **[!UICONTROL Minimum]** fields.
 
    The Maximum field specifies the maximum number of times a panel can appear on the page. You can specify -1 in the Maximum Count field to allow the panel to appear for infinite number of times.
 
@@ -34,7 +31,7 @@ You can use one of the following methods to create repeatable panels:
 
 1. The parent of the panel, which is to be repeated, should contain add and delete buttons to manage instances of the repeatable panels. Perform the following steps to insert buttons to the parent and enable scripts on the buttons:
 
-    1. From the sidebar, drag-and-drop a button component to the parent of the panel. Select the component and tap ![edit-rules](assets/edit-rules.png). The rules of the button open in the rule editor.
+    1. From the sidebar, drag-and-drop a button component to the parent of the panel. Select the component and select ![edit-rules](assets/edit-rules.png). The rules of the button open in the rule editor.
     1. In the Rule Editor window, click **Create**.
 
        Select **Visual Editor** in the Form Objects and Functions row.
@@ -94,8 +91,8 @@ You can use one of the following methods to create repeatable panels:
 
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
+1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

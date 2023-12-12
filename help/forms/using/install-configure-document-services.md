@@ -359,11 +359,11 @@ Copy the Unicode font to any of the following directories as appropriate for you
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms Document Services and other AEM Forms capabilities. Perform the following steps to install the package:
 
 1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
-1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Select **[!UICONTROL Adobe Experience Manager]** available in the header menu.
 1. In the **[!UICONTROL Filters]** section:
    1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
    2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
-1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Select the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and select **[!UICONTROL Download]**.
 1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
@@ -485,7 +485,7 @@ Using the Trust Store Management, you can import, edit, and delete certificates 
 
 1. Log in to AEM Forms instance as an administrator.  
 1. Go to  **[!UICONTROL Tools]** >  **[!UICONTROL Security]** >  **[!UICONTROL Trust Store]**.
-1. Click  **[!UICONTROL Create TrustStore]**. Set password and tap **[!UICONTROL Save]**.
+1. Click  **[!UICONTROL Create TrustStore]**. Set password and select **[!UICONTROL Save]**.
 
 ### Set up certificates for Reader extension and encryption service {#set-up-certificates-for-reader-extension-and-encryption-service}
 
@@ -550,6 +550,16 @@ The Assembler service depends on the Reader Extensions service, Signature servic
   </tr>
  </tbody>
 </table>
+
+### (Windows only) Configure registry entry for Microsoft® Project {#configure-registry-entry-for-microsoft-project}
+
+After you install AEM Forms add-on and Microsoft® Project on your machine, Register an entry for Microsoft® Project in the 64-bit location. It facilitates the execution of Project to PDFG conversions tests. Following are the steps outlining the process for registry entry:
+
+1. Open Microsoft® Windows Registry editor (regedit), To open registry editor, go to Start > Run, type regedit, and click OK.
+1. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, and create a new **Binary Value** registry and rename it to **Project**.
+1. Modify the data value of created Binary registry to 01 and click OK.
+1. Close the registry entry.
+
 
 ## Known issues and troubleshooting {#known-issues-and-troubleshooting}
 
@@ -791,7 +801,27 @@ When user tries to convert Word or Excel files to PDF on Microsoft Windows Serve
 *Error message from the primary converter:
 ALC-PDG-015-003-The system cannot open the input file. Submit your file again or contact your system administrator.*
 
-To resolve the issue, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md). 
+To resolve the issue, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
++++
+
++++ Unable to convert Excel files to PDF on Windows Server 2019
+
+When you convert Microsoft Excel 2019 to PDF on Microsoft Windows Server 2019, you must ensure the following:
+
+* While using the PDF Generator service, your Windows machine should not have any active remote connection with the AEM server (Windows RDP session).
+* The default printer must be set to Adobe PDF.
+
+   >[!NOTE]
+   >* For Apple macOS and Ubuntu OS, you need not require to configure the aforementioned settings.
+
++++
+
++++ Unable to convert XPS files to PDFs
+
+To resolve the issue, [create a feature-specific registry key on Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+
++++
 
 
 ## Next steps {#next-steps}

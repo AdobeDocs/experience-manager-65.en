@@ -7,7 +7,7 @@ exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 
 The Components console lets you browse through all components defined for your instance and view key information for each component.
 
-It can be accessed from **Tools -&gt;** **General -&gt;** **Components**. In the console, card and list view are available. Because there is no tree structure for components, column view is not available.
+It can be accessed from **Tools >** **General >** **Components**. In the console, card and list view are available. Because there is no tree structure for components, column view is not available.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -23,7 +23,7 @@ With the **Content Only** icon (top left) you can open the **Search** panel to s
 
 ### Component Details {#component-details}
 
-To view details about a specific component tap/click on the required resource. Three tabs provide:
+To view details about a specific component click the required resource. Three tabs provide:
 
 * **Properties**
 

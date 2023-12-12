@@ -1,8 +1,8 @@
 ---
 title: AEM 6.5 Classic UI Authoring User Guide
-seo-title: AEM 6.5 Classic UI Authoring User Guide
+
 description: This guide covers the concepts of authoring in AEM in the classic user interface.
-seo-description: Covers the concepts of authoring in AEM in the classic UI.
+
 exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
 ---
 # AEM 6.5 Classic UI Authoring User Guide

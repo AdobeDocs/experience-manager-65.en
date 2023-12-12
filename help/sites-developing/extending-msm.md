@@ -185,7 +185,7 @@ The new rollout configuration is then available to you when setting rollout conf
 
    >[!NOTE]
    >
-   >You must not change anything in the `/libs` path.
+   >Do not change anything in the `/libs` path.
    >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
    >The recommended method for configuration and other changes is:
    >

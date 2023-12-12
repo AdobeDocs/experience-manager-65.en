@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager Mobile - GDPR Readiness
 description: Learn about how Adobe Experience Manager is ready to assist you with your GDPR compliance obligations.
-uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
+
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 ---

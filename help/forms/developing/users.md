@@ -95,7 +95,7 @@ In the configuration XML that User Management exports, the root node that has th
 
 When using Active Directory, it is important to understand that an `objectSID` value is not a unique attribute across multiple domains. This value stores the security identifier of an object. In a multiple domain environment (for example, a tree of domains) the `objectSID` value can be different.
 
-An `objectSID` value would change if an object is moved from one Active Directory domain to another domain. Some objects have the same `objectSID` value anywhere in the domain. For example, groups like BUILTIN\Administrators, BUILTIN\Power Users and so on would have the same `objectSID` value regardless of the domains. These `objectSID` values are well known.
+An `objectSID` value would change if an object is moved from one Active Directory domain to another domain. Some objects have the same `objectSID` value anywhere in the domain. For example, groups like BUILTIN\Administrators, BUILTIN\Power Users, and so on, would have the same `objectSID` value regardless of the domains. These `objectSID` values are well known.
 
 ## Adding Users {#adding-users}
 
@@ -570,7 +570,7 @@ To programmatically manage users, groups, and domains using the Directory Manage
 
 1. Invoke the appropriate user or group operations.
 
-   To find a user or group, invoke one of the `DirectoryManagerServiceService` object's methods for finding principals (since a principal can be a user or a group). In the example below, the `findPrincipalsWithFilter` method is called using a search filter (a `PrincipalSearchFilter` object). When using a `PrincipalSearchFilter` object, local principals are only returned if the `isLocal` property is set to `true`. This behavior is different than what would occur with the Java API.
+   To find a user or group, invoke one of the `DirectoryManagerServiceService` object's methods for finding principals (since a principal can be a user or a group). In the example below, the `findPrincipalsWithFilter` method is called using a search filter (a `PrincipalSearchFilter` object). When using a `PrincipalSearchFilter` object, local principals are only returned if the `isLocal` property is set to `true`. This behavior is different from what would occur with the Java API.
 
    >[!NOTE]
    >

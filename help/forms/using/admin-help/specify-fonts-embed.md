@@ -1,12 +1,12 @@
 ---
 title: Specify fonts to embed
 description: Learn how to specify fonts to embed in an Adaptive Form. You can specify which fonts are embedded or never embedded with forms that Forms service generates.
-uuid: 02da5c00-0467-4633-a076-c36725cbfbad
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 180f0448-d507-4b6d-bb8a-d12a434e1250
+
 exl-id: 02c28b2c-0cab-4431-9fab-fa332c96e092
 ---
 # Specify fonts to embed{#specify-fonts-to-embed}

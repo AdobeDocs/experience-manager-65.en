@@ -1,9 +1,6 @@
 ---
 title: Using Adobe Sign in an adaptive form
-seo-title: Using Adobe Sign in an adaptive form
 description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
-seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
-uuid: cc3012ed-c318-4529-9adc-61aa5b5761a0
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -74,7 +71,7 @@ Configure adaptive form properties for [!DNL Adobe Sign] for an existing or a ne
 Perform the following steps to create a sign-enabled adaptive form:
 
 1. Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Adaptive Form]**. A list of templates appear. Select the template and tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Create]** and select **[!UICONTROL Adaptive Form]**. A list of templates appear. Select the template and select **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Basic]** tab:
 
     1. Specify the **[!UICONTROL Name]** and **[!UICONTROL Title]** for the adaptive form.
@@ -91,14 +88,14 @@ Perform the following steps to create a sign-enabled adaptive form:
 
     * Select the **[!UICONTROL Generate Document of Record]** option. If you use a Document of Record option enabled adaptive form, then the document sent for signing displays all the fields of the adaptive form.
 
-1. Tap **[!UICONTROL Create.]** A sign-enabled adaptive form is created, which can be used to add [!DNL Adobe Sign] fields.
+1. Select **[!UICONTROL Create.]** A sign-enabled adaptive form is created, which can be used to add [!DNL Adobe Sign] fields.
 
 #### Edit an adaptive form for [!DNL Adobe Sign] {#editafsign}
 
 Perform the following steps to use [!DNL Adobe Sign] in an existing adaptive form:
 
 1. Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Select the adaptive form and tap **[!UICONTROL Properties]**.
+1. Select the adaptive form and select **[!UICONTROL Properties]**.
 1. In the **[!UICONTROL Basic]** tab, select the [configuration container](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) created while configuring [!DNL Adobe Sign] with AEM [!DNL Forms].
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 
@@ -106,7 +103,7 @@ Perform the following steps to use [!DNL Adobe Sign] in an existing adaptive for
 
     * Select the **[!UICONTROL Generate Document of Record]** option. If you use a Document of Record option enabled adaptive form, then the document sent for signing displays all the fields of the adaptive form.
 
-1. Tap **[!UICONTROL Save & Close]**. The adaptive form is enabled for [!DNL Adobe Sign].
+1. Select **[!UICONTROL Save & Close]**. The adaptive form is enabled for [!DNL Adobe Sign].
 
 ### Add Adobe Sign fields to an adaptive form {#addadobesignfieldstoanadaptiveform}
 
@@ -127,15 +124,15 @@ Perform the following steps to add fields to an adaptive form and customize vari
    >
    >
 
-1. Select the **[!UICONTROL Adobe Sign Block]** component and tap the **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. It displays options to add fields and format appearance of a field.
+1. Select the **[!UICONTROL Adobe Sign Block]** component and select the **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. It displays options to add fields and format appearance of a field.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** Select and add [!DNL Adobe Sign] fields. **B.** Expand the [!DNL Adobe Sign] block to full screen view
 
-1. Tap the **[!UICONTROL Adobe Sign] Field** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icon. It displays options to select and add [!DNL Adobe Sign] fields.
+1. Select the **[!UICONTROL Adobe Sign] Field** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icon. It displays options to select and add [!DNL Adobe Sign] fields.
 
-   Expand the **[!UICONTROL Type]** drop-down field to select a [!DNL Adobe Sign] field and tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to add the selected field to [!DNL Adobe Sign] block. The **[!UICONTROL Type]** drop-down field includes Signature, Signer info, and Data field types. [!DNL Adobe Sign] integration with AEM [!DNL Forms] support fields listed in the [!UICONTROL Type] drop-down box only. For detailed information about [!DNL Adobe Sign] fields, see [Adobe Sign documentation](https://helpx.adobe.com/sign/help/field-types.html).
+   Expand the **[!UICONTROL Type]** drop-down field to select a [!DNL Adobe Sign] field and select the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to add the selected field to [!DNL Adobe Sign] block. The **[!UICONTROL Type]** drop-down field includes Signature, Signer info, and Data field types. [!DNL Adobe Sign] integration with AEM [!DNL Forms] support fields listed in the [!UICONTROL Type] drop-down box only. For detailed information about [!DNL Adobe Sign] fields, see [Adobe Sign documentation](https://helpx.adobe.com/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -150,7 +147,7 @@ Perform the following steps to add fields to an adaptive form and customize vari
 
 Out of the box, [!DNL Adobe Sign] is not enabled for an adaptive form. Perform the following steps to enable it:
 
-1. In the Content browser, tap **[!UICONTROL Form Container]**, and tap the **[!UICONTROL Configure]** ![configure](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties.
+1. In the Content browser, select **[!UICONTROL Form Container]**, and select the **[!UICONTROL Configure]** ![configure](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties.
 1. In the properties browser, expand the **[!UICONTROL Electronic Signature]** accordion, and select the **[!UICONTROL Enable Adobe Sign]** option. It enables [!DNL Adobe Sign] for an adaptive form.
 
 ### Select [!DNL Adobe Sign] Cloud Service and signing order {#selectadobesigncloudserviceforanadaptiveform}
@@ -163,7 +160,7 @@ Perform the following steps to select a cloud service and order of signing:
 
 ![cloud-service](assets/cloud-service.png)
 
-1. In the Content browser, tap **[!UICONTROL Form Container]**, and tap the **[!UICONTROL Configure]** ![configure](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties.
+1. In the Content browser, select **[!UICONTROL Form Container]**, and select the **[!UICONTROL Configure]** ![configure](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties.
 1. In the properties browser, expand the **[!UICONTROL Electronic Signature]** accordion, and select the **[!UICONTROL Enable Adobe Sign]** option. It enables [!DNL Adobe Sign] for an adaptive form.
 1. Select a cloud service from the already configured list of [!DNL Adobe Sign] Cloud Services.
 
@@ -177,16 +174,16 @@ Perform the following steps to select a cloud service and order of signing:
 
    In simultaneous order, multiple signers can sign a form at a time.
 
-1. [Add Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) and tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
+1. [Add Signers to an adaptive form](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) and select the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
 
 ### Add Signers to an adaptive form {#addsignerstoanadaptiveform}
 
 You can have only one signer or multiple signers for an adaptive form. When you add a signer, you can also configure authentication details for the signer. You can also select if the form filler and singer are the same person. Perform the following steps to add and provide various details about a signer:
 
-1. In the Content browser, tap **[!UICONTROL Form Container]**, and tap the **[!UICONTROL Configure]** ![configure](assets/configure.png) icon. It opens properties browser with Adaptive Form container properties.
+1. In the Content browser, select **[!UICONTROL Form Container]**, and select the **[!UICONTROL Configure]** ![configure](assets/configure.png) icon. It opens properties browser with Adaptive Form container properties.
 1. In the properties browser, expand the **[!UICONTROL Electronic Signature]** accordion, and select the **[!UICONTROL Enable Adobe Sign]** option. It enables [!DNL Adobe Sign] for an adaptive form.
-1. Tap **[!UICONTROL Add Signer]** under **[!UICONTROL Signer Configuration]**. It adds a signer to the adaptive form. You can add multiple [!DNL Adobe Sign] signers to an adaptive form.
+1. Select **[!UICONTROL Add Signer]** under **[!UICONTROL Signer Configuration]**. It adds a signer to the adaptive form. You can add multiple [!DNL Adobe Sign] signers to an adaptive form.
    ![phone-details](assets/phone-details.png)
 
 1. Click the **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon to specify the following information about the signer:
@@ -211,7 +208,7 @@ You can have only one signer or multiple signers for an adaptive form. When you 
 
    The above image has two example [!DNL Adobe Sign] Blocks: Personal-Information and Office-details
 
-   Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon. The signer is added and configured.
+   Select the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon. The signer is added and configured.
 
 ### Select Submit Action for an adaptive form {#selectsubmitactionforanadaptiveform}
 
@@ -237,15 +234,15 @@ After [editing adaptive form properties for Adobe sign](../../forms/using/workin
 
    ![Sign block](assets/sign-block-new.png)
 
-1. Select the **[!UICONTROL Adobe Sign Block]** component and tap the **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. It displays options to add fields and format appearance of a field.
+1. Select the **[!UICONTROL Adobe Sign Block]** component and select the **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. It displays options to add fields and format appearance of a field.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** Select and add [!DNL Adobe Sign] fields. **B.** Expand the [!DNL Adobe Sign] block to full screen view
 
-1. Tap the **[!UICONTROL Adobe Sign Field]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icon. It displays options to select and add [!DNL Adobe Sign] fields.
+1. Select the **[!UICONTROL Adobe Sign Field]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icon. It displays options to select and add [!DNL Adobe Sign] fields.
 
-   Expand the **[!UICONTROL Type]** drop-down field to select **[!UICONTROL Digital Signature]** and tap the **Done** icon to add the selected field to [!DNL Adobe Sign] block.
+   Expand the **[!UICONTROL Type]** drop-down field to select **[!UICONTROL Digital Signature]** and select the **Done** icon to add the selected field to [!DNL Adobe Sign] block.
 
    ![Digital signatures](assets/digital_signatures_new.png)
 
@@ -280,7 +277,7 @@ Use the Signature Step component to provide an area to electronically sign the f
 Perform the following steps to configure the Signature Step component:
 
 1. Drag-and-drop the **[!UICONTROL Signature Step]** component from the Components browser to the form.
-1. Select the newly added Signature step component and tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays Signature step properties. Configure the following properties:
+1. Select the newly added Signature step component and select the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays Signature step properties. Configure the following properties:
 
     * **[!UICONTROL Name]**: Specify the name of the component.
 
@@ -294,7 +291,7 @@ Perform the following steps to configure the Signature Step component:
 
     * **[!UICONTROL CSS Class]**: Specify the CSS class for the component.
 
-   Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
+   Select the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
    ![Signature step](assets/signature_step_new.png)
 

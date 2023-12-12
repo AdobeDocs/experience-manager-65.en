@@ -1,9 +1,6 @@
 ---
 title: Getting started with HTML5 forms
-seo-title: Getting started with HTML5 forms
 description: To get started, deploy AEM Forms add-on package and import existing HTML5 forms to AEM.
-seo-description: To get started, deploy AEM Forms add-on package and import existing HTML5 forms to AEM.
-uuid: e85e57ab-fe32-4b6f-819e-322047ae3240
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms

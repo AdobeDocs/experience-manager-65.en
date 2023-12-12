@@ -101,16 +101,16 @@ After you create a mobile application, you can change the properties.
 
 #### Change the title, description, and icon {#change-the-title-description-and-icon}
 
-1. On the rail, click or tap Apps.
+1. On the rail, click Apps.
 1. Select the application to configure and click the View Page Properties icon.
 
    ![The View Page Properties icon indicated by the letter I inside a circle.](do-not-localize/chlimage_1-8.png)
 
-1. To change property values, click or tap the Edit icon.
+1. To change property values, click the Edit icon.
 
    ![The Edit icon indicated by a pencil.](do-not-localize/chlimage_1-9.png)
 
-1. Configure the Basic and Advanced properties, and then click or tap the Done icon.
+1. Configure the Basic and Advanced properties, and then click the Done icon.
 
    ![The Done icon indicated by a check mark symbol.](do-not-localize/chlimage_1-10.png)
 
@@ -121,11 +121,11 @@ After you create a mobile application, you can change the properties.
 
    ![The View Application Properties icon indicated by the letter I inside a circle.](do-not-localize/chlimage_1-11.png)
 
-1. To change property values, click or tap the Edit icon.
+1. To change property values, click the Edit icon.
 
    ![The Edit icon indicated by a pencil.](do-not-localize/chlimage_1-12.png)
 
-1. Configure the properties on the Basic, Advanced, Build, and Analytics tabs, and then click or tap the Done icon.
+1. Configure the properties on the Basic, Advanced, Build, and Analytics tabs, and then click the Done icon.
 
    ![The Done icon indicated by a check mark symbol.](do-not-localize/chlimage_1-13.png)
 
@@ -133,8 +133,8 @@ After you create a mobile application, you can change the properties.
 
 After you create the mobile application, add content that is used as the application UI.
 
-1. On the rail, click or tap Apps.
-1. Click or tap the application, then click or tap English.
+1. On the rail, click Apps.
+1. Click the application, then click English.
 1. Edit the Home page, or add child pages as required.
 
 ### Moving Content to Mobile Applications {#moving-content-to-mobile-applications}
@@ -154,8 +154,8 @@ Content Sync also tracks when the updates occur. With this information, Content 
 
 Perform the following procedure on the instance where you want to update the cache. For example, if your application requests updates from the publish instance, perform the procedure on the publish instance.
 
-1. On the rail, click or tap Apps, then click or tap your application.
-1. Select the splash page, and then click or tap the Update Cache icon.
+1. On the rail, click Apps, then click your application.
+1. Select the splash page, and then click the Update Cache icon.
 
    ![The Update Cache icon indicated by a striped barrell with a recycle symbol over it.](do-not-localize/chlimage_1-14.png)
 

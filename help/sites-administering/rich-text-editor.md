@@ -50,13 +50,13 @@ Authors can create and edit textual content in Experience Manager using the diff
 
 ### Inline editing {#inline-editing}
 
-When opened (with a slow double-tap/click) the content can be edited within the page. A compact toolbar with very basic options is presented.
+When opened (with a slow double-click) the content can be edited within the page. A compact toolbar with very basic options is presented.
 
 ![Inline editing with basic toolbar in Touch-enabled UI](assets/chlimage_1-36.png)
 
 *Figure: Inline editing with basic toolbar in Touch-enabled UI*
 
-In Classic UI, a slow double-click on the component allows inline editing and an orange outline highlights the content. If the Content Finder is open, a toolbar with the available RTE formatting options is displayed at the top of the window. If the Content Finder is not open, the formatting options are not displayed and you can do basic text edits only.
+In Classic UI, a slow double-click the component allows inline editing and an orange outline highlights the content. If the Content Finder is open, a toolbar with the available RTE formatting options is displayed at the top of the window. If the Content Finder is not open, the formatting options are not displayed and you can do basic text edits only.
 
 ### Full screen editing {#full-screen-editing}
 

@@ -50,14 +50,14 @@ Do the following to configure your [!DNL MySQL] database:
     1. Download [!DNL MySQL] JDBC Driver OSGi Bundle from `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
     1. Log in to AEM [!DNL Forms] Author Instance as an administrator and go to AEM web console bundles. The default URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
-    1. Tap **[!UICONTROL Install/Update]**. An [!UICONTROL Upload / Install Bundles] dialog appears.
+    1. Select **[!UICONTROL Install/Update]**. An [!UICONTROL Upload / Install Bundles] dialog appears.
 
-    1. Tap **[!UICONTROL Choose File]** to browse and select the [!DNL MySQL] JDBC driver OSGi bundle. Select **[!UICONTROL Start Bundle]** and **[!UICONTROL Refresh Packages]**, and tap **[!UICONTROL Install or Update]**. Ensure that the [!DNL Oracle Corporation's] JDBC Driver for [!DNL MySQL] is active. The driver is installed.
+    1. Select **[!UICONTROL Choose File]** to browse and select the [!DNL MySQL] JDBC driver OSGi bundle. Select **[!UICONTROL Start Bundle]** and **[!UICONTROL Refresh Packages]**, and select **[!UICONTROL Install or Update]**. Ensure that the [!DNL Oracle Corporation's] JDBC Driver for [!DNL MySQL] is active. The driver is installed.
 
 1. Configure [!DNL MySQL] database as a data source:
 
     1. Go to AEM web console at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-    1. Locate **Apache Sling Connection Pooled DataSource** configuration. Tap to open the configuration in edit mode.
+    1. Locate **Apache Sling Connection Pooled DataSource** configuration. Select to open the configuration in edit mode.
     1. In the configuration dialog, specify the following details:
 
         * **Datasource name:** You can specify any name. For example, specify **WeRetailMySQL**.
@@ -81,7 +81,7 @@ Do the following to configure your [!DNL MySQL] database:
         * **Validation Query:** Specify a SQL SELECT query to validate connections from the pool. The query must return at least one row. For example, **select &#42; from customerdetails**.
         * **Transaction Isolation**: Set the value to **READ_COMMITTED**.
 
-          Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **[!UICONTROL Save]**.
+          Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and select **[!UICONTROL Save]**.
 
           A configuration similar to the following is created.
 
@@ -94,9 +94,9 @@ AEM [!DNL Forms] provides an intuitive user interface to [create a form data mod
 Do the following to create form data model:
 
 1. In AEM author instance, navigate to **[!UICONTROL Forms]** &gt; **[!UICONTROL Data Integrations]**.
-1. Tap **[!UICONTROL Create]** &gt; **[!UICONTROL Form Data Model]**.
-1. In the Create Form Data Model dialog, specify a **name** for the form data model. For example, **customer-shipping-billing-details**. Tap **[!UICONTROL Next]**.
-1. The select datasource screen lists all configured data sources. Select **WeRetailMySQL** data source and tap **[!UICONTROL Create]**.
+1. Select **[!UICONTROL Create]** &gt; **[!UICONTROL Form Data Model]**.
+1. In the Create Form Data Model dialog, specify a **name** for the form data model. For example, **customer-shipping-billing-details**. Select **[!UICONTROL Next]**.
+1. The select datasource screen lists all configured data sources. Select **WeRetailMySQL** data source and select **[!UICONTROL Create]**.
 
    ![data-source-selection](assets/data-source-selection.png)
 
@@ -134,7 +134,7 @@ Do the following to configure the form data model:
         * get
         * update
 
-   Tap **Add Selected** to add selected data model objects and services to the form data model.
+   Select **Add Selected** to add selected data model objects and services to the form data model.
 
    ![WeRetail Schema](assets/weretail_schema_new.png)
 
@@ -144,8 +144,8 @@ Do the following to configure the form data model:
 
 1. Configure read and write services for the data model object.
 
-    1. Select the **customerdetails** data model object and tap **[!UICONTROL Edit Properties]**.
-    1. Select **[!UICONTROL get]** from the Read Service drop-down. The **id** argument, which is the primary key in the customerdetails data model object is added automatically. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) and configure the argument as follows.
+    1. Select the **customerdetails** data model object and select **[!UICONTROL Edit Properties]**.
+    1. Select **[!UICONTROL get]** from the Read Service drop-down. The **id** argument, which is the primary key in the customerdetails data model object is added automatically. Select ![aem_6_3_edit](assets/aem_6_3_edit.png) and configure the argument as follows.
 
        ![read-default](assets/read-default.png)
 
@@ -157,7 +157,7 @@ Do the following to configure the form data model:
 
        ![id-arg](assets/id-arg.png)
 
-    1. Tap **[!UICONTROL Done]** to save the data model object properties. Then, tap **[!UICONTROL Save]** to save the form data model.
+    1. Select **[!UICONTROL Done]** to save the data model object properties. Then, select **[!UICONTROL Save]** to save the form data model.
 
        The **[!UICONTROL get]** and **[!UICONTROL update]** services are added as default services for the data model object.
 
@@ -165,7 +165,7 @@ Do the following to configure the form data model:
 
 1. Go to the **[!UICONTROL Services]** tab and configure **[!UICONTROL get]** and **[!UICONTROL update]** services.
 
-    1. Select the **[!UICONTROL get]** service and tap **[!UICONTROL Edit Properties]**. The properties dialog opens.
+    1. Select the **[!UICONTROL get]** service and select **[!UICONTROL Edit Properties]**. The properties dialog opens.
     1. Specify the following in the Edit Properties dialog:
 
         * **Title**: Specify title of the service. For example: Retrieve Shipping Address.
@@ -180,11 +180,11 @@ Do the following to configure the form data model:
         * **Return array**: Disable the **Return array** option.
         * **Arguments**: Select argument named **ID**.
 
-       Tap **[!UICONTROL Done]**. Service to retrieve customer details from the MySQL database is configured.
+       Select **[!UICONTROL Done]**. Service to retrieve customer details from the MySQL database is configured.
 
        ![shiiping-address-retrieval](assets/shiiping-address-retrieval.png)
 
-    1. Select the **[!UICONTROL update]** service and tap **[!UICONTROL Edit Properties]**. The properties dialog opens.
+    1. Select the **[!UICONTROL update]** service and select **[!UICONTROL Edit Properties]**. The properties dialog opens.
 
     1. Specify the following in the [!UICONTROL Edit Properties] dialog:
 
@@ -201,7 +201,7 @@ Do the following to configure the form data model:
 
         * **Arguments**: Select argument name **ID** and **customerdetails**.
 
-       Tap **[!UICONTROL Done]**. The **[!UICONTROL update]** service to update customer details in the [!DNL MySQL] database is configured.
+       Select **[!UICONTROL Done]**. The **[!UICONTROL update]** service to update customer details in the [!DNL MySQL] database is configured.
 
        ![shiiping-address-update](assets/shiiping-address-update.png)
 
@@ -213,9 +213,9 @@ You can test the data model object and services to verify that the form data mod
 
 Do the following to run the test:
 
-1. Go to the **[!UICONTROL Model]** tab, select the **customerdetails** data model object, and tap **[!UICONTROL Test Model Object]**.
+1. Go to the **[!UICONTROL Model]** tab, select the **customerdetails** data model object, and select **[!UICONTROL Test Model Object]**.
 1. In the [!UICONTROL Test Model/Service] window, select **[!UICONTROL Read model object]** from the **[!UICONTROL Select Model/Service]** drop-down.
-1. In the **customerdetails** section, specify a value for the **id** argument that exists in the configured [!DNL MySQL] database and tap **[!UICONTROL Test]**.
+1. In the **customerdetails** section, specify a value for the **id** argument that exists in the configured [!DNL MySQL] database and select **[!UICONTROL Test]**.
 
    The customer details associated with the specified id are fetched and displayed in the **[!UICONTROL Output]** section as shown below.
 
@@ -230,3 +230,8 @@ Do the following to run the test:
    Now, if you test the read model service again for id 7107215, it fetches and displays the updated customer details as shown below.
 
    ![read-updated](assets/read-updated.png)
+
+
+>[!NOTE]
+>
+> You can create and use the SharePoint List configuration using Form Data Model in an Adaptive Form, to save data or generated Document of Record in a SharePoint List. Refer to [Connect an Adaptive Form to Microsoft® SharePoint List](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration), for detailed steps.

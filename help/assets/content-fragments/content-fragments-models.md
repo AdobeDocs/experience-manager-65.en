@@ -80,7 +80,7 @@ The content fragment model effectively defines the structure of the resulting co
 
 1. **To Remove a Field**
 
-   Select the required field, then click/tap the trash-can icon. You are asked to confirm the action.
+   Select the required field, then click the trash-can icon. You are asked to confirm the action.
 
    ![remove](assets/cfm-models-06.png)
 

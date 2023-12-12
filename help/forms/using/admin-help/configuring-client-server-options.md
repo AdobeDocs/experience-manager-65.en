@@ -724,7 +724,7 @@ You can make the following changes using the configuration file:
 
 >[!NOTE]
 >
->Importing the configuration file reconfigures your system based on the information in the file. The exceptions are dynamic watermark configuration and custom events information, which are not saved with the exported configuration file. You must configure this information manually in your new system. Only a system administrator or a professional services consultant who is familiar with document security and XML should modify the content of a configuration file, such as to reconfigure a corrupted setting or to tune parameters for a particular enterprise deployment scenario.
+>Importing the configuration file reconfigures your system based on the information in the file. The exceptions are dynamic watermark configuration and custom events information, which are not saved with the exported configuration file. Configure this information manually in your new system. Only a system administrator or a professional services consultant who is familiar with document security and XML should modify the content of a configuration file, such as to reconfigure a corrupted setting or to tune parameters for a particular enterprise deployment scenario.
 
 **Export a configuration file**
 

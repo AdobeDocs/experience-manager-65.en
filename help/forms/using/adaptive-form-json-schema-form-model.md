@@ -734,7 +734,7 @@ To enable all JSON schema-based Adaptive Forms to generate schema-compliant data
 
 1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
 1. Locate **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**. 
-1. Tap to open the configuration in edit mode.
+1. Select to open the configuration in edit mode.
 1. Select the **[!UICONTROL Generate Schema Compliant Data]** checkbox.
 1. Save the settings.
 

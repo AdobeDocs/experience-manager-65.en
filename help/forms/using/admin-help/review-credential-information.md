@@ -1,12 +1,12 @@
 ---
 title: Review credential use information
 description: Learn how to review the credential use information. The credential use information which describes its use, is accessible through the Acrobat Reader extension. 
-uuid: 02af75f9-c235-470d-a98b-a2102aa31381
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
+
 exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
 ---
 # Review credential use information {#review-credential-use-information}

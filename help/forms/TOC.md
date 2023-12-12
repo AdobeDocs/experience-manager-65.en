@@ -15,7 +15,7 @@ feature: Forms Service
 + [AEM 6.5 Forms Guide](home.md)
 + Release Notes {#release-notes-new-features}
   + [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
-  + [New features summary](using/whats-new.md)
+  + [What's new](/help/forms/using/whats-new.md)
   + [Frequently asked questions](/help/forms/using/frequently-asked-questions-faq.md)  
   + [Deprecated features](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Getting Started {#getting-started}
@@ -693,10 +693,13 @@ feature: Forms Service
   + [Unable to restore CRX Repository](/help/forms/using/restore-crx-repository.md)
   + [Service unavailable errors after installing AEM 6.5.15.0 service pack](/help/forms/using/aem-service-pack-installation-solution.md)
   + [AEM Forms JEE 6.5.15.0 service pack installation issue on JBoss Linux environment](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+  + [Executing multiple services even if AEM Forms has not started completely](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+  + [Unable to use Output service, Forms service, or Document of Record (DoR) service](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Legacy documentation {#legacy-documentation}
   + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
   + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
   + [Configuring and troubleshooting an AEM Forms on JEE server cluster](developing/configure-server-cluster.md)
   + [Generating and working with Hashes in dynamic PDF forms](developing/hashing-forms.md)
   + [Passing credentials using WS-Security headers](developing/passing-credentials.md)
+
 

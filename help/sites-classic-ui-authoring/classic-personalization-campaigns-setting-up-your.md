@@ -191,7 +191,7 @@ To active or deactive leads:
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   As with AEM pages, the publish status is indicated in the **Published** column.
+   As with AEM pages, the publishing status is indicated in the **Published** column.
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
@@ -233,7 +233,7 @@ To import leads from a comma-separated list:
 
    ![screen_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
 
-   The new lead appears in the Leads pane. If you click on the entry, all entered information appears in the right pane. After creating a lead, you can add it to a list.
+   The new lead appears in the Leads pane. If you click the entry, all entered information appears in the right pane. After creating a lead, you can add it to a list.
 
 ### Adding Leads to Lists {#adding-leads-to-lists}
 

@@ -15,7 +15,7 @@ The core components are modern, flexible components featuring easy extensibility
 
 1. Start Adobe Experience Manager (AEM) with the We.Retail sample content and open the [Components Console](/help/sites-authoring/default-components-console.md).
 
-   **Global Navigation -&gt; Tools -&gt; Components**
+   **Global Navigation > Tools > Components**
 
 1. Opening the rail in the Components Console, you can filter for a particular component group. The core components can be found in
 

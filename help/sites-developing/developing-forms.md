@@ -1,14 +1,14 @@
 ---
 title: Developing Forms (Classic UI)
-seo-title: Developing Forms (Classic UI)
+
 description: Learn how to develop forms for Adobe Experience Manager's classic UI
-seo-description: Learn how to develop forms
-uuid: 33859f29-edc5-4bd5-a634-35549f3b5ccf
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
+
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
 ---
@@ -74,9 +74,8 @@ Note that if the values in the `String[]` are of the formatted like this:
 
 * `AL=Alabama`
 * `AK=Alaska`
-* and so on
 
-then AEM will generate the list as:
+and so on, then AEM generates the list as:
 
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`

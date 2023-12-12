@@ -45,7 +45,7 @@ Perform these steps to enable Assets Insights through DTM.
    >
    >* `AppMeasurement.js` is removed. It is expected to be available through DTM's Adobe Analytics tool.
    >* The call to `assetAnalytics.dispatcher.init()` is removed. The function is expected to be called once DTM's Adobe Analytics tool finishes loading.
-   >* Depending on where Assets Insights Page Tracker is hosted (for example, Experience Manager, CDN and so on), the origin of the script source may require changes.
+   >* Depending on where Assets Insights Page Tracker is hosted (for example, Experience Manager, CDN, and so on), the origin of the script source may require changes.
    >* For Experience Manager-hosted Page Tracker, the source should point to a publish instance using the host name of the dispatcher instance.
 
 1. Access `https://dtm.adobe.com`. Click **[!UICONTROL Overview]** in the web property and click **[!UICONTROL Add Tool]** or open an existing Adobe Analytics Tool. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.

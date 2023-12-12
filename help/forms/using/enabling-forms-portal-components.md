@@ -1,13 +1,13 @@
 ---
 title: Enabling forms portal components
-seo-title: Enabling forms portal components
+
 description: Out of the box, Forms Portal components are disabled. Enable Document Services and Document Services Predicates groups to enable Forms Portal components.
-seo-description: Out of the box, Forms Portal components are disabled. Enable Document Services and Document Services Predicates groups to enable Forms Portal components.
-uuid: 92d25da6-f1df-4ac0-bf84-2edf9e2722b3
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
+
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
 ---
@@ -24,15 +24,15 @@ Out of the box, forms portal components are not available for use. To make the c
 
 1. For the pages using a static template, perform the following steps:
 
-    1. In the page header, tap ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Design** to open the page in Design mode.
-    1. Tap any component (with a blue border) and then tap ![field-level](assets/field-level.png) to select the paragraph system containing the current component.
-    1. In the paragraph system, tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the paragraph system.
-    1. From the list of **[!UICONTROL Allowed Components]**, enable checkboxes for **[!UICONTROL Document Services]** and **[!UICONTROL Document Services Predicates]** components. Tap **[!UICONTROL OK]**.
+    1. In the page header, select ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Design** to open the page in Design mode.
+    1. Select any component (with a blue border) and then select ![field-level](assets/field-level.png) to select the paragraph system containing the current component.
+    1. In the paragraph system, select ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the paragraph system.
+    1. From the list of **[!UICONTROL Allowed Components]**, enable checkboxes for **[!UICONTROL Document Services]** and **[!UICONTROL Document Services Predicates]** components. Select **[!UICONTROL OK]**.
 
 1. For the pages using a dynamic template, perform the following steps:
 
-    1. In the page header, tap ![properties](assets/properties.png) > **Edit Template** to open the template of the page.
-    1. Tap **Layout Container** and tap ![FeedManagement](/help/forms/using/assets/feedmanagement.png). In the **Allowed Components** tab, enable the **Document Services and Document Services Predicates** options, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+    1. In the page header, select ![properties](assets/properties.png) > **Edit Template** to open the template of the page.
+    1. Select **Layout Container** and select ![FeedManagement](/help/forms/using/assets/feedmanagement.png). In the **Allowed Components** tab, enable the **Document Services and Document Services Predicates** options, and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

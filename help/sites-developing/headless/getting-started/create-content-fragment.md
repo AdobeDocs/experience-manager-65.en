@@ -19,24 +19,24 @@ Content fragments contain structured content and can be delivered in JSON format
 
 Content authors will create any number of Content Fragments to represent the content that they create. This will be their main task in AEM. For the purposes of this getting started guide, we will only need to create one.
 
-1. Log into AEM and from the main menu select **Navigation -&gt; Assets**.
+1. Log into AEM and from the main menu select **Navigation > Assets**.
 1. Navigate to the [folder you created previously.](create-assets-folder.md)
-1. Tap or click **Create -&gt; Content Fragment**.
-1. The creation of a Content Fragment is presented as a wizard in two steps. First select which model you wish to use to create your content fragment and tap or click **Next**.
+1. Click **Create > Content Fragment**.
+1. The creation of a Content Fragment is presented as a wizard in two steps. First select which model you wish to use to create your content fragment and click **Next**.
    * The models available depend on the [**Cloud Configuration** you defined for the assets folder](create-assets-folder.md) in which you are creating the Content Fragment.
    * If you receive the message `We could not find any models`, check the configuration of your assets folder.
 
    ![Select Content Fragment Model](assets/content-fragment-model-select.png)
-1. Provide a **Title**, **Description**, and **Tags** as necessary and tap or click **Create**.
+1. Provide a **Title**, **Description**, and **Tags** as necessary and click **Create**.
 
    ![Create Content Fragment](assets/content-fragment-create.png)
-1. Tap or click **Open** in the confirmation window.
+1. Click **Open** in the confirmation window.
 
    ![Content Fragment created confirmation](assets/content-fragment-confirmation.png)
 1. Provide the details of the Content Fragment in the Content Fragment Editor.
 
    ![Content Fragment Editor](assets/content-fragment-edit.png)
-1. Tap or click **Save** or  **Save & close**.
+1. Click **Save** or  **Save & close**.
 
 Content Fragments can reference other Content Fragments, allowing for a nested content structure if necessary.
 

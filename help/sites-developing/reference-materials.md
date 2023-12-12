@@ -1,15 +1,15 @@
 ---
 title: API Guides
-seo-title: API Guides
+
 description: Documentation for the APIs that AEM provides for developing applications
-seo-description: Documentation for the APIs that AEM provides for developing applications
-uuid: d998b23c-5b0a-462f-a733-02cf979de2d0
+
+
 contentOwner: Guillaume Carlino
 topic-tags: introduction
 audience: developing
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
+
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
 ---

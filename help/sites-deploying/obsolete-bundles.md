@@ -1,14 +1,14 @@
 ---
 title: List of Obsolete Bundles Uninstalled After the Upgrade
-seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
+
 description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
-seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
-uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
+
 feature: Upgrading
 exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
 ---

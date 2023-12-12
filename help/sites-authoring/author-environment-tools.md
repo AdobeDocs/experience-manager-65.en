@@ -89,7 +89,7 @@ The actual appearance and handling depends on the device type that you are using
     * Filter components by name.
     * Limit the display to a specific group using the drop-down selection.
 
-  For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). For example, for the **Layout Container**:
+  For a more detailed description of the component, you can click the information icon next to the component in the **Components** browser (if available). For example, for the **Layout Container**:
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -338,7 +338,7 @@ The path browser is organized like the [column view](/help/sites-authoring/basic
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Once a resource is selected, the **Select** button at the upper-right of the dialogue becomes active. Click or tap to confirm the selection or **Cancel** to abort.
+* Once a resource is selected, the **Select** button at the upper-right of the dialogue becomes active. Click to confirm the selection or **Cancel** to abort.
 * If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click **X** next to the number to deselect all.
 * When you navigate through the tree, your location is reflected in the breadcrumbs at the top of the dialog. These breadcrumbs can also be used to quickly jump within the resource hierarchy.
 * At any time, you can use the search field at the top of the dialogue. Click the **X** in the search field to clear the search.

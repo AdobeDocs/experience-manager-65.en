@@ -1,14 +1,14 @@
 ---
 title: Working with To-do lists
-seo-title: Working with To-do lists
+
 description: How to open, work on, and complete the tasks as required, such as approving or rejecting a request or adding more information.
-seo-description: How to open, work on, and complete the tasks as required, such as approving or rejecting a request or adding more information.
-uuid: f9cfad8e-5d0c-4a30-8153-2a03bf7dd986
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
+
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
 ---
@@ -180,7 +180,7 @@ You may be allowed to add, update, delete, or save any attachments locally.
 
 ### Save your work without completing the task {#save-your-work-without-completing-the-task}
 
-1. On any tab, tap **Save**.
+1. On any tab, select **Save**.
 
    The Save As Draft dialog appears. The default name of the draft is the task name from the task template.
 
@@ -193,7 +193,7 @@ You may be allowed to add, update, delete, or save any attachments locally.
    >
    >For more information, see Save Draft Periodically in [Managing Preferences](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. In the Save As Draft dialog, specify a unique name for the task and tap **OK**.
+1. In the Save As Draft dialog, specify a unique name for the task and select **OK**.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 

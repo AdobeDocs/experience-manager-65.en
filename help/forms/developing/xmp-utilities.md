@@ -1,14 +1,14 @@
 ---
 title: Working with XMP Utilities
-seo-title: Working with XMP Utilities
+
 description: Use the XMP Utilities Java and Web Service APIs to programmatically import XMP metadata into a PDF document and retrieve and save XMP metadata from a PDF document.
-seo-description: Use the XMP Utilities Java and Web Service APIs to programmatically import XMP metadata into a PDF document and retrieve and save XMP metadata from a PDF document.
-uuid: 90ce6cef-efe1-456a-8e0c-5ba90249dda0
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
+
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 ---

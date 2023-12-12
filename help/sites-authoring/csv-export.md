@@ -1,14 +1,14 @@
 ---
 title: Export to CSV
-seo-title: Export to CSV
+
 description: Export information about your pages to a CSV file on your local system
-seo-description: Export information about your pages to a CSV file on your local system
-uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
+
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
+
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 ---

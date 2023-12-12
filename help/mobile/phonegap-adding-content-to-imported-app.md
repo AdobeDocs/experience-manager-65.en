@@ -1,12 +1,12 @@
 ---
 title: Is your hybrid app ready for AEM Mobile?
 description: Learn about hybrid apps. An app in Experience Manager is commonly divided into two parts. The 'shell' and 'content' and this page provides more insight on these topics.
-uuid: cbcce3fa-9100-46ea-9f24-931b42666709
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: b7fd7954-f2a5-402d-b259-e18b5a618be9
+
 pagetitle: Is your hybrid app ready for AEM Mobile?
 exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
 ---

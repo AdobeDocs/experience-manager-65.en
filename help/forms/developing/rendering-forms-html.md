@@ -1,15 +1,15 @@
 ---
 title: Rendering Forms as HTML
-seo-title: Rendering Forms as HTML
+
 description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
-seo-description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
-uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
+
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 ---
@@ -27,11 +27,11 @@ To render a form as HTML, the form design must be saved as an XDP file. A form d
 
 >[!NOTE]
 >
->When rendering a form that contains TIFF images using the `FormServiceClient` object’s `(Deprecated) renderHTMLForm` and `renderHTMLForm2` methods, the TIFF images are not visible in the rendered HTML form that is displayed in Internet Explorer or Mozilla Firefox browsers. These browsers do not provide native support for TIFF images.
+>When rendering a form that contains TIFF images using the `FormServiceClient` object's `(Deprecated) renderHTMLForm` and `renderHTMLForm2` methods, the TIFF images are not visible in the rendered HTML form that is displayed in Internet Explorer or Mozilla Firefox browsers. These browsers do not provide native support for TIFF images.
 
 ## HTML pages {#html-pages}
 
-When a form design is rendered as an HTML form, each second-level subform is rendered as an HTML page (panel). You can view a subform’s hierarchy in Designer. Child subforms that belong to the root subform (the default name of a root subform is form1) are the panel subforms. The following example shows a form design’s subforms.
+When a form design is rendered as an HTML form, each second-level subform is rendered as an HTML page (panel). You can view a subform's hierarchy in Designer. Child subforms that belong to the root subform (the default name of a root subform is form1) are the panel subforms. The following example shows a form design's subforms.
 
 ```java
      form1
@@ -77,9 +77,9 @@ You must explicitly move from panel to panel using the `xfa.host.pageUp` and `xf
 
 A form author specifies whether a script executes on the server or the client. The Forms service creates a distributed, event processing environment for execution of form intelligence that can be distributed between the client and the server by using the `runAt` attribute. For information about this attribute or creating scripts within form designs, see [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-The Forms service can execute scripts while the form is being rendered. As a result, you can prepopulate a form with data by connecting to a database or to web services that may not be available on the client. You can also set a button’s `Click` event to run on the server so that the client will round trip data to the server. This allows the client to run scripts that may require server resources, such as an enterprise database, while a user is interacting with a form. For HTML forms, formcalc scripts can be executed on server only. As a result, you must mark these scripts to run at `server` or `both`.
+The Forms service can execute scripts while the form is being rendered. As a result, you can prepopulate a form with data by connecting to a database or to web services that may not be available on the client. You can also set a button's `Click` event to run on the server so that the client will round trip data to the server. This allows the client to run scripts that may require server resources, such as an enterprise database, while a user is interacting with a form. For HTML forms, formcalc scripts can be executed on server only. As a result, you must mark these scripts to run at `server` or `both`.
 
-You can design forms that move between pages (panels) by calling `xfa.host.pageUp` and `xfa.host.pageDown` methods. This script is placed in a button’s `Click` event and the `runAt` attribute is set to `Both`. The reason you choose `Both` is so that Adobe Reader or Acrobat (for forms that are rendered as PDF) can change pages without going to the server and HTML forms can change pages by round tripping data to the server. That is, a form is sent to the Forms service, and a form is rendered back as HTML with the new page displayed.
+You can design forms that move between pages (panels) by calling `xfa.host.pageUp` and `xfa.host.pageDown` methods. This script is placed in a button's `Click` event and the `runAt` attribute is set to `Both`. The reason you choose `Both` is so that Adobe Reader or Acrobat (for forms that are rendered as PDF) can change pages without going to the server and HTML forms can change pages by round tripping data to the server. That is, a form is sent to the Forms service, and a form is rendered back as HTML with the new page displayed.
 
 It is recommended that you do not give script variables and form fields the same names such as item. Some web browsers, such as Internet Explorer, may not initialize a variable with the same name as a form field that results in a script error occurring. It is good practice to give form fields and script variables different names.
 
@@ -93,7 +93,7 @@ Form scripts that are in the form:ready event are executed only once during the 
 
 You can invoke custom scripts before submitting a form. This feature works on all available browsers. However, it can be used only when users render the HTML form that has its `Output Type` property set to `Form Body`. It will not work when the `Output Type` is `Full HTML`. Refer to Configuring forms in administration help for steps to configure this feature.
 
-You must first define a callback function that is called before submitting the form, where the name of the function is `_user_onsubmit`. It is assumed that the function will not throw any exception, or if it does, the exception will be ignored. It is recommended to place the JavaScript function in the head section of the html; however, you can declare it anywhere before the end of the script tags that include `xfasubset.js`.
+First define a callback function that is called before submitting the form, where the name of the function is `_user_onsubmit`. It is assumed that the function will not throw any exception, or if it does, the exception will be ignored. It is recommended to place the JavaScript function in the head section of the html; however, you can declare it anywhere before the end of the script tags that include `xfasubset.js`.
 
 When formserver renders an XDP that contains a drop-down list, in addition to creating the drop-down list, it also creates two hidden text fields. These text fields store the data of the drop-down list (one stores the display name of the options and other stores the value for the options). Therefore, every time a user submits the form, the entire data of the drop-down list is submitted. Assuming that you don't want to submit that much data everytime, you can write a custom script to disable that. For example: The name of the drop-down list is `drpOrderedByStateProv` and it is wrapped under subform header. The name of the HTML input element will be `header[0].drpOrderedByStateProv[0]`. The name of the hidden fields that store and submit the data of the dropdown have the following names: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
@@ -121,7 +121,7 @@ Scripts that run on the client or run on both the client and the server must be 
 
 When running scripts on the client, only the current panel being displayed can use script; for example, you cannot script against fields that are in panel A when panel B is displayed. When running scripts on the server, all panels can be accessed.
 
-You must also be careful when using Scripting Object Model (SOM) expressions within scripts that run on the client. Only a simplified subset of SOM expressions are supported by scripts that run on the client.
+Be careful when using Scripting Object Model (SOM) expressions within scripts that run on the client. Only a simplified subset of SOM expressions are supported by scripts that run on the client.
 
 ## Event timing {#event-timing}
 
@@ -150,9 +150,9 @@ It is recommended that you place your form logic in calculate events, which run 
 
 ## Maintaining presentation changes {#maintaining-presentation-changes}
 
-As you move between HTML pages (panels), only the state of the data is maintained. Settings such as background color or mandatory field settings are not maintained (if different than the initial settings). To maintain the presentation state, you must create fields (usually hidden) that represent the presentation state of fields. If you add a script to a field’s `Calculate` event that changes the presentation based on hidden field values, you are able to preserve the presentation state as you move back and forth between HTML pages (panels).
+As you move between HTML pages (panels), only the state of the data is maintained. Settings such as background color or mandatory field settings are not maintained (if different from the initial settings). To maintain the presentation state, you must create fields (usually hidden) that represent the presentation state of fields. If you add a script to a field's `Calculate` event that changes the presentation based on hidden field values, you are able to preserve the presentation state as you move back and forth between HTML pages (panels).
 
-The following script maintains the `fillColor` of a field based on the value of `hiddenField`. Assume this script is in a field’s `Calculate` event.
+The following script maintains the `fillColor` of a field based on the value of `hiddenField`. Assume this script is in a field's `Calculate` event.
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -210,7 +210,7 @@ Before you can programmatically import data into a PDF formClient API, you must 
 
 You set HTML run-time options when rendering an HTML form. For example, you can add a toolbar to an HTML form to enable users to select file attachments located on the client computer or to retrieve file attachments that are rendered with the HTML form. By default, an HTML toolbar is disabled. To add a toolbar to an HTML form, you must programmatically set run-time options. By default, an HTML toolbar consists of the following buttons:
 
-* `Home`: Provides a link to the application’s web root.
+* `Home`: Provides a link to the application's web root.
 * `Upload`: Provides a user interface to select files to attach to the current form.
 * `Download`: Provides a user interface to display the attached files.
 
@@ -230,7 +230,7 @@ HTTP URLs to where form data is posted may be specified by setting the target UR
 
 **Render an HTML form**
 
-To render an HTML form, you must specify a form design created in Designer and saved as an XDP file. You must also select an HTML transformation type. For example, you can specify the HTML transformation type that renders a dynamic HTML for Internet Explorer 5.0 or later.
+To render an HTML form, specify a form design that was created in Designer and saved as an XDP file. Select an HTML transformation type. For example, you can specify the HTML transformation type that renders a dynamic HTML for Internet Explorer 5.0 or later.
 
 Rendering an HTML form also requires values, such as URI values that are required to render other form types.
 
@@ -262,7 +262,7 @@ Render an HTML form by using the Forms API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-forms-client.jar, in your Java project's class path.
 
 1. Create a Forms Client API object
 
@@ -272,17 +272,17 @@ Render an HTML form by using the Forms API (Java):
 1. Set HTML run-time options
 
     * Create an `HTMLRenderSpec` object by using its constructor.
-    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object’s `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`.
-    * To set the locale value for the HTML form, invoke the `HTMLRenderSpec` object’s `setLocale` method and pass a string value that specifies the locale value. (This is an optional setting.)
-    * To render the HTML form within full HTML tags, invoke the `HTMLRenderSpec` object’s `setOutputType` method and pass `OutputType.FullHTMLTags`. (This is an optional setting.)
+    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object's `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`.
+    * To set the locale value for the HTML form, invoke the `HTMLRenderSpec` object's `setLocale` method and pass a string value that specifies the locale value. (This is an optional setting.)
+    * To render the HTML form within full HTML tags, invoke the `HTMLRenderSpec` object's `setOutputType` method and pass `OutputType.FullHTMLTags`. (This is an optional setting.)
 
    >[!NOTE]
    >
-   >Forms are not successfully rendered in HTML when the `StandAlone` option is `true` and the `ApplicationWebRoot` references a server other than the J2EE application server hosting AEM Forms (the `ApplicationWebRoot` value is specified using the `URLSpec` object that is passed to the `FormsServiceClient` object’s `(Deprecated) renderHTMLForm` method). When the `ApplicationWebRoot` is another server from the one hosting AEM Forms, the value of the web root URI in the administration console needs to be set as the Form's web application URI value. This can be done by logging in to the administration console, clicking Services &gt; Forms, and setting the Web Root URI as https://server-name:port/FormServer. Then, save your settings.
+   >Forms are not successfully rendered in HTML when the `StandAlone` option is `true` and the `ApplicationWebRoot` references a server other than the J2EE application server hosting AEM Forms (the `ApplicationWebRoot` value is specified using the `URLSpec` object that is passed to the `FormsServiceClient` object's `(Deprecated) renderHTMLForm` method). When the `ApplicationWebRoot` is another server from the one hosting AEM Forms, the value of the web root URI in the administration console needs to be set as the Form's web application URI value. This can be done by logging in to the administration console, clicking Services &gt; Forms, and setting the Web Root URI as https://server-name:port/FormServer. Then, save your settings.
 
 1. Render an HTML form
 
-   Invoke the `FormsServiceClient` object’s `(Deprecated) renderHTMLForm` method and pass the following values:
+   Invoke the `FormsServiceClient` object's `(Deprecated) renderHTMLForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
     * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`.
@@ -296,13 +296,13 @@ Render an HTML form by using the Forms API (Java):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method.
+    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object 's `getOutputContent` method.
     * Get the content type of the `com.adobe.idp.Document` object by invoking its `getContentType` method.
-    * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
-    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
-    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument.
-    * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
+    * Set the `javax.servlet.http.HttpServletResponse` object's content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
+    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object's `getOutputStream` method.
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object's `getInputStream` method.
+    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object's `read` method and passing the byte array as an argument.
+    * Invoke the `javax.servlet.ServletOutputStream` object's `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
 
@@ -330,17 +330,17 @@ Render an HTML form by using the Forms API (web service):
 1. Set HTML run-time options
 
     * Create an `HTMLRenderSpec` object by using its constructor.
-    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object’s `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`.
-    * To set the locale value for the HTML form, invoke the `HTMLRenderSpec` object’s `setLocale` method and pass a string value that specifies the locale value. For more information, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-    * To render the HTML form within full HTML tags, invoke the `HTMLRenderSpec` object’s `setOutputType` method and pass `OutputType.FullHTMLTags`.
+    * To render an HTML form with a toolbar, invoke the `HTMLRenderSpec` object's `setHTMLToolbar` method and pass an `HTMLToolbar` enum value. For example, to display a vertical HTML toolbar, pass `HTMLToolbar.Vertical`.
+    * To set the locale value for the HTML form, invoke the `HTMLRenderSpec` object's `setLocale` method and pass a string value that specifies the locale value. For more information, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+    * To render the HTML form within full HTML tags, invoke the `HTMLRenderSpec` object's `setOutputType` method and pass `OutputType.FullHTMLTags`.
 
    >[!NOTE]
    >
-   >Forms are not successfully rendered in HTML when the `StandAlone` option is `true` and the `ApplicationWebRoot` references a server other than the J2EE application server hosting AEM Forms (the `ApplicationWebRoot` value is specified using the `URLSpec` object that is passed to the `FormsServiceClient` object’s `(Deprecated) renderHTMLForm` method). When the `ApplicationWebRoot` is another server from the one hosting AEM Forms, the value of the web root URI in the administration console needs to be set as the Form's web application URI value. This can be done by logging in to the administration console, clicking Services &gt; Forms, and setting the Web Root URI as https://server-name:port/FormServer. Then, save your settings.
+   >Forms are not successfully rendered in HTML when the `StandAlone` option is `true` and the `ApplicationWebRoot` references a server other than the J2EE application server hosting AEM Forms (the `ApplicationWebRoot` value is specified using the `URLSpec` object that is passed to the `FormsServiceClient` object's `(Deprecated) renderHTMLForm` method). When the `ApplicationWebRoot` is another server from the one hosting AEM Forms, the value of the web root URI in the administration console needs to be set as the Form's web application URI value. This can be done by logging in to the administration console, clicking Services &gt; Forms, and setting the Web Root URI as https://server-name:port/FormServer. Then, save your settings.
 
 1. Render an HTML form
 
-   Invoke the `FormsService` object’s `(Deprecated) renderHTMLForm` method and pass the following values:
+   Invoke the `FormsService` object's `(Deprecated) renderHTMLForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
     * A `TransformTo` enum value that specifies the HTML preference type. For example, to render an HTML form that is compatible with dynamic HTML for Internet Explorer 5.0 or later, specify `TransformTo.MSDHTML`.
@@ -360,13 +360,13 @@ Render an HTML form by using the Forms API (web service):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member.
-    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
+    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object's `value` data member.
+    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object's `getOutputContent` method.
     * Get the content type of the `BLOB` object by invoking its `getContentType` method.
-    * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
-    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
-    * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
+    * Set the `javax.servlet.http.HttpServletResponse` object's content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
+    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object's `getOutputStream` method.
+    * Create a byte array and populate it by invoking the `BLOB` object's `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
+    * Invoke the `javax.servlet.http.HttpServletResponse` object's `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
 

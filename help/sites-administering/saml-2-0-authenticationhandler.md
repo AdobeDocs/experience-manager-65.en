@@ -1,14 +1,14 @@
 ---
 title: SAML 2.0 Authentication Handler
-seo-title: SAML 2.0 Authentication Handler
+
 description: Learn about the SAML 2.0 Authentication Handler in AEM.
-seo-description: Learn about the SAML 2.0 Authentication Handler in AEM.
-uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
+
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 ---
 # SAML 2.0 Authentication Handler{#saml-authentication-handler}
@@ -129,7 +129,7 @@ SAML assertions are signed and may optionally be encrypted. In order for this to
 You can set up a Logger to debug any issues that might arise from misconfiguring SAML. You can do this by:
 
 1. Going to the Web Console, at *http://localhost:4502/system/console/configMgr*
-1. Search for and click on the entry called **Apache Sling Logging Logger Configuration**
+1. Search for and click the entry called **Apache Sling Logging Logger Configuration**
 1. Create a logger with the following configuration:
 
     * **Log Level:** Debug

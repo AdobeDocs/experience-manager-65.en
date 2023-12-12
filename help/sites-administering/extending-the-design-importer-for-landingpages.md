@@ -52,10 +52,10 @@ Landing page Cheat Sheet
 
 A sample layout of the zip is as follows:
 
-* /index.html -&gt; landing page HTML file
-* /css -&gt; to add into the CSS clientlib
-* /img -&gt; all images and assets
-* /js -&gt; to add into the JS clientlib
+* /index.html > landing page HTML file
+* /css > to add into the CSS clientlib
+* /img > all images and assets
+* /js > to add into the JS clientlib
 
 The layout is based on the HTML5 Boilerplate best practices layout. Read more at [https://html5boilerplate.com/](https://html5boilerplate.com/)
 
@@ -243,7 +243,7 @@ Supported properties
 * Target URL, supports third party and AEM url
 * Page rendering options (same window, new window, and so on)
 
-HTML tag to include click through component in the imported zip. Here href maps to target url, "View Product Details" maps to label and so on.
+HTML tag to include click through component in the imported zip. Here href maps to target url, "View Product Details" maps to label, and so on.
 
 ```xml
 <div id="cqcanvas">
@@ -276,7 +276,7 @@ Supported properties
 * Target URL, supports third party and AEM url
 * Page rendering options (same window, new window, and so on)
 
-HTML tag to include graphical link component in the imported zip. Here href maps to target url, img src is the rendering image, "title" is taken as hover text and so on.
+HTML tag to include graphical link component in the imported zip. Here href maps to target url, img src is the rendering image, "title" is taken as hover text, and so on.
 
 ```xml
 <div id="cqcanvas">

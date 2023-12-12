@@ -1,12 +1,10 @@
 ---
 title: Troubleshoot Dynamic Media - Scene7 mode
 description: Learn how to troubleshoot and resolve setup, configuration, and general issues in Dynamic Media when it is running in Scene7 mode. 
-uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1

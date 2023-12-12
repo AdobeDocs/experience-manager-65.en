@@ -1,12 +1,12 @@
 ---
 title: Comprehensive search
 description: Find your content faster with comprehensive search.
-uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
+
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 ---

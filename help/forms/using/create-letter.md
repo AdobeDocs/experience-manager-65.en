@@ -1,12 +1,12 @@
 ---
 title: Create Letter
-seo-title: Create Letter
+
 description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management. 
-seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management. 
-uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
+
+
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
-discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
+
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
 ---
@@ -239,11 +239,11 @@ You need the following in place first to create a correspondence:
 
    ![create-letter](assets/create-letter.png)
 
-1. Select a layout by tapping it and tap **Next**.
+1. Select a layout by tapping it and select **Next**.
 
    ![Select layout to create a letter](assets/selectlayout.png)
 
-1. Enter the properties for the Correspondence and tap **Save:**
+1. Enter the properties for the Correspondence and select **Save:**
 
     * **Title (Optional):** Enter the title for the letter. Title do not need to be unique and can have special characters and non-english characters. 
     * **Name:** The unique name for the letter. No two letters in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
@@ -254,21 +254,21 @@ You need the following in place first to create a correspondence:
 
    ![Correspondence properties](assets/createcorrespondenceproperties.png)
 
-1. The system displays a message: "Letter created successfully." (in the alert message) Tap **Open** to configure the data modules and layout fragments in it. Or tap **Done** to go back to the previous page. 
+1. The system displays a message: "Letter created successfully." (in the alert message) Select **Open** to configure the data modules and layout fragments in it. Or select **Done** to go back to the previous page. 
 
    ![Alert message: letter created successfully](assets/createcorrespondencecreated.png)
 
-   **Next**: When you tap **Open**, Correspondence Management displays a representation of the layout with all the components in the layout (XDP) listed. Go ahead with inserting the [Data Modules and Layout Fragments and Configuring them](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Next**: When you select **Open**, Correspondence Management displays a representation of the layout with all the components in the layout (XDP) listed. Go ahead with inserting the [Data Modules and Layout Fragments and Configuring them](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Insert data modules and layout fragments in a letter and configure them {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-When after creating a correspondence, you tap Open, Correspondence Management displays a representation of the layout with all the subforms/target areas in the layout (XDP) listed. In each of the target areas, you can choose to insert either a Data Module or a Layout Fragment (and then data modules in the layout fragment).
+When after creating a correspondence, you select Open, Correspondence Management displays a representation of the layout with all the subforms/target areas in the layout (XDP) listed. In each of the target areas, you can choose to insert either a Data Module or a Layout Fragment (and then data modules in the layout fragment).
 
 >[!NOTE]
 >
->You can also choose to tap Edit icon for a letter in the Letters page to Insert data modules and layout fragments in a letter and configure them.
+>You can also choose to select Edit icon for a letter in the Letters page to Insert data modules and layout fragments in a letter and configure them.
 
-1. Tap **Insert** for each of the subforms and select Data Modules or a Layout Fragment to insert in each of the subforms.
+1. Select **Insert** for each of the subforms and select Data Modules or a Layout Fragment to insert in each of the subforms.
 
    ![Insert data modules and layout fragments](assets/insertdmandlf.png)
 
@@ -277,7 +277,7 @@ When after creating a correspondence, you tap Open, Correspondence Management di
    ![nestedlf](assets/nestedlf.png)
 
 1. If you insert a layout fragment, the name of the layout fragment appears in the subform. And according to the selected fragment, nested subforms appear in the subform.
-1. After the chosen Data Modules are inserted in the layout, you can tap configure mode and set the following after tapping the Edit icon for each of the modules:
+1. After the chosen Data Modules are inserted in the layout, you can select configure mode and set the following after tapping the Edit icon for each of the modules:
 
     1. **Editable**: When this option is selected, the content can be edited in Create Correspondence user interface. Mark content as editable only if it requires the business user (such as a Claims Adjustor) to modify it.
     1. **Mandatory**: When this option is selected, the content is required in Create Correspondence user interface.
@@ -288,20 +288,20 @@ When after creating a correspondence, you tap Open, Correspondence Management di
 
    ![Inserted data modules and layout fragments](assets/insertdmandlf2.png)
 
-1. To edit a module, tap the Edit icon next to it. After editing the modules, tap **Save**.
+1. To edit a module, select the Edit icon next to it. After editing the modules, select **Save**.
 
    In this page, you can also do the following for the subforms:
 
-    1. **Allow Free Text**: If Allow free Text is enabled then user can add inline text in letter in CCR view. In CCR view a 'T' action is enabled for those target areas which has Allow Free Text enabled and when user tap it then it asks for name and description of the text and then on tapping ok it opens that text in edit mode where user can add text. So this acts like other text modules
+    1. **Allow Free Text**: If Allow free Text is enabled then user can add inline text in letter in CCR view. In CCR view a 'T' action is enabled for those target areas which has Allow Free Text enabled and when user select it then it asks for name and description of the text and then on tapping ok it opens that text in edit mode where user can add text. So this acts like other text modules
     1. **Lock Order**: Locks the order of the subforms in the letter. The author is not allowed to reorder the subforms/components while creating the letter.
 
    In this page, you can also do the following for each of the assets in the subforms:
 
     1. **Change the order of the assets**: drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
-    1. **Delete assets**: Tap the Delete icon next to an asset to delete it.
-    1. **Preview assets**: Tap the show preview icon ( ![showpreview](assets/showpreview.png)) next to an asset.
+    1. **Delete assets**: Select the Delete icon next to an asset to delete it.
+    1. **Preview assets**: Select the show preview icon ( ![showpreview](assets/showpreview.png)) next to an asset.
 
-1. Tap **Next**. 
+1. Select **Next**. 
 1. The Data page details how data fields and variables are used in the template. Data can be linked to data sources such as a data dictionary or user input. Each field defines properties from which data dictionary maps data or what caption is displayed for user input fields.
 
    Linkage:
@@ -331,19 +331,19 @@ When after creating a correspondence, you tap Open, Correspondence Management di
 
    ![linkages](assets/linkages.png)
 
-1. After specifying linkage, tap **Next**. Correspondence Management displays the Attachments screen.
+1. After specifying linkage, select **Next**. Correspondence Management displays the Attachments screen.
 
 ### Set up the attachments {#set-up-the-attachments}
 
 1. Select **Add Asset**. 
-1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. You need to have the assets first uploaded to Assets. It is recommended that you attach only PDF and Microsoft Office documents, but you can also attach images. For more information on uploading assets in DAM, see [Uploading Assets](/help/assets/manage-assets.md).
-1. To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap **Lock Order**. If you do not select this option, the Claims Adjustor can change the order of the list items.
+1. In the Select Asset screen, select the assets to attach with the letter and select **Done**. You need to have the assets first uploaded to Assets. It is recommended that you attach only PDF and Microsoft Office documents, but you can also attach images. For more information on uploading assets in DAM, see [Uploading Assets](/help/assets/manage-assets.md).
+1. To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, select **Lock Order**. If you do not select this option, the Claims Adjustor can change the order of the list items.
 1. To change the order of the assets, drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
-1. Tap **Edit** in front of an attachment and specify an attachment as Mandatory if you do not want the author to be able to delete it. Specify an attachment as Selected if you want it to be preselected in the CCR interface. 
+1. Select **Edit** in front of an attachment and specify an attachment as Mandatory if you do not want the author to be able to delete it. Specify an attachment as Selected if you want it to be preselected in the CCR interface. 
 1. Select **Library Access** to give the access to the library. If Library Access is enabled, the Claims Adjustor can access content library while creating a letter and insert attachments.
 1. Select **Attachments Configuration** and specify the maximum number of attachments.  
 
-1. Tap **Save**. Your correspondence is created and listed on the Letters page.
+1. Select **Save**. Your correspondence is created and listed on the Letters page.
 
 After a letter template is created in Correspondence Management, the end user/agent/claim adjustor can open the letter in the CCR user interface and create a correspondence by entering data, setting up content, and managing attachments. For more information, see [Create Correspondence](/help/forms/using/create-correspondence.md).
 
@@ -467,7 +467,7 @@ The following values in the table
 You can use an existing letter template to quickly create a letter template with similar properties, content, and inherited assets, such as document fragments and data dictionary. To do this, copy and paste a letter.
 
 1. In the Letters page, select one or more letters. The UI displays the Copy icon. 
-1. Tap Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets). 
-1. Tap Paste. The Paste dialog appears. If you are copying and pasting the letters at the same place, the system automatically assigns names and titles to the new copies of letters but you can edit the titles and names of the letters. 
+1. Select Copy. The UI displays the Paste icon. You can also choose to go inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets). 
+1. Select Paste. The Paste dialog appears. If you are copying and pasting the letters at the same place, the system automatically assigns names and titles to the new copies of letters but you can edit the titles and names of the letters. 
 1. If necessary, edit the Title and Name with which you want to save the copy of the letter.
-1. Tap Paste. The copy of the letter is created. Now you can make the required changes in your newly created letter.
+1. Select Paste. The copy of the letter is created. Now you can make the required changes in your newly created letter.

@@ -69,7 +69,7 @@ You can:
 
 ### Full Screen Editor {#full-screen-editor}
 
-When editing a multi-line text field you can open the full screen editor; tap or click within the actual text, then select the following action icon:
+When editing a multi-line text field you can open the full screen editor; click within the actual text, then select the following action icon:
 
 ![full screen editor icon](assets/cfm-variations-03.png)
 

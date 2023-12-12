@@ -1,14 +1,14 @@
 ---
 title: Monitoring Server Resources Using the JMX Console
-seo-title: Monitoring Server Resources Using the JMX Console
+
 description: Learn how to monitor server resources using the JMX console.
-seo-description: Learn how to monitor server resources using the JMX console.
-uuid: 0a28aafe-61b2-472b-8f8f-2cd6540cbfee
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
+
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
 ---
@@ -596,7 +596,7 @@ Read-only.
 * Arguments: none
 * Returned value: none
 
-**joinCluster** Adds this repository to a cluster as a node that is controlled by the cluster master. You must provide a user name and password for authentication purposes. The connection uses basic authentication. The security credentials are base-64 encoded before being sent to the server.
+**joinCluster** Adds this repository to a cluster as a node that is controlled by the cluster master. Provide a user name and password for authentication purposes. The connection uses basic authentication. The security credentials are base-64 encoded before being sent to the server.
 
 * Arguments:
 

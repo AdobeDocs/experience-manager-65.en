@@ -254,7 +254,7 @@ A document of record (DoR) is a flattened PDF version of an adaptive form that y
     * **XSD schema**: Use the associated XFA template that uses the same XML schema as used by the adaptive form.
     * **None**: Use auto-generated DoR.
 
-* Configure header, footer, images, color, font, and so on right from the Document of Record tab of the adaptive form editor.
+* Configure header, footer, images, color, font, and so on, right from the Document of Record tab of the adaptive form editor.
 * Use `DoRService` to generate the DoR programmatically.
 * Exclude hidden fields from the DoR.
 * Use `afAcceptLang` request parameter to view DoR in another locale.

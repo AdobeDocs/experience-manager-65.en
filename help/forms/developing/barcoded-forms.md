@@ -1,14 +1,14 @@
 ---
 title: Working with barcoded forms
-seo-title: Working with barcoded forms
+
 description: Decode data from a PDF form or an image that contains a barcode using the Java API and Web Service API.
-seo-description: Decode data from a PDF form or an image that contains a barcode using the Java API and Web Service API.
-uuid: e56c3c94-384d-401f-b418-dd34cdc57eda
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
+
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 ---
@@ -47,7 +47,7 @@ To decode data from a PDF form, perform the following steps:
 
 Include necessary files into your development project. If you are creating a client application using Java, then include the necessary JAR files. If you are using web services, then make sure that you include the proxy files.
 
-The following JAR files must be added to your project’s classpath:
+The following JAR files must be added to your project's classpath:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -64,7 +64,7 @@ Before you can programmatically perform a barcoded forms service operation, you 
 
 **Get a PDF form that contains barcoded data**
 
-You must obtain a PDF form that contains a barcode that has been populated with user data.
+Obtain a PDF form that contains a barcode that has been populated with user data.
 
 **Decode the data from the PDF form**
 
@@ -109,7 +109,7 @@ Decode form data by using the barcoded forms API(Java):
 
 1. Include project files
 
-   Include client JAR files in your Java project’s class path.
+   Include client JAR files in your Java project's class path.
 
 1. Create a barcoded forms Client API object
 
@@ -122,7 +122,7 @@ Decode form data by using the barcoded forms API(Java):
 
 1. Decode the data from the PDF form
 
-   Decode the form data by invoking the `BarcodedFormsServiceClient` object’s `decode` method and passing the following values:
+   Decode the form data by invoking the `BarcodedFormsServiceClient` object's `decode` method and passing the following values:
 
     * The `com.adobe.idp.Document` object that contains the PDF form.
     * A `java.lang.Boolean` object that specifies whether to decode a PDF417 barcode.
@@ -139,9 +139,9 @@ Decode form data by using the barcoded forms API(Java):
 
 1. Convert the data to an XML data source
 
-   Convert the decoded data into either XDP or XFDF data by invoking the `BarcodedFormsServiceClient` object’s `extractToXML` method and passing the following values:
+   Convert the decoded data into either XDP or XFDF data by invoking the `BarcodedFormsServiceClient` object's `extractToXML` method and passing the following values:
 
-    * The `org.w3c.dom.Document` object that contains decoded data (ensure that you use the `decode` method’s return value).
+    * The `org.w3c.dom.Document` object that contains decoded data (ensure that you use the `decode` method's return value).
     * A `com.adobe.livecycle.barcodedforms.Delimiter` enumeration value that specifies the line delimiter. It is recommended that you specify `Delimiter.Carriage_Return`.
     * A `com.adobe.livecycle.barcodedforms.Delimiter` enumeration value that specifies the field delimiter. For example, specify `Delimiter.Tab`.
     * A `com.adobe.livecycle.barcodedforms.XMLFormat` enumeration value that specifies whether to convert the barcode data into XDP or XFDF XML data. For example, specify `XMLFormat.XDP` to convert the data to XDP data.
@@ -156,7 +156,7 @@ Decode form data by using the barcoded forms API(Java):
 
     * Iterate through the `java.util.List` object to get each `org.w3c.dom.Document` object that is in the list.
     * For each element in the list, convert the `org.w3c.dom.Document` object to a `com.adobe.idp.Document` object. (The application logic that converts a `org.w3c.dom.Document` object into a `com.adobe.idp.Document` object is shown in the Decoding barcoded form data using the Java API example).
-    * Save the XML data as an XML file by invoking the `com.adobe.idp.Document` object’s `copyToFile`, and passing a File object that represents the XML file.
+    * Save the XML data as an XML file by invoking the `com.adobe.idp.Document` object's `copyToFile`, and passing a File object that represents the XML file.
 
 **See also**
 
@@ -183,13 +183,13 @@ Decode form data by using the barcoded forms API(web service):
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that contains a barcode.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `binaryData` property with the contents of the byte array.
 
 1. Decode the data from the PDF form
 
-   Decode the form data by invoking the `BarcodedFormsServiceService` object’s `decode` method and passing the following values:
+   Decode the form data by invoking the `BarcodedFormsServiceService` object's `decode` method and passing the following values:
 
     * The `BLOB` object that contains the PDF form.
     * A `Boolean` object that specifies whether to decode a PDF417 barcode.
@@ -206,9 +206,9 @@ Decode form data by using the barcoded forms API(web service):
 
 1. Convert the data to an XML data source
 
-   Convert the decoded data into either XDP or XFDF data by invoking the `BarcodedFormsServiceService` object’s `extractToXML` method and passing the following values:
+   Convert the decoded data into either XDP or XFDF data by invoking the `BarcodedFormsServiceService` object's `extractToXML` method and passing the following values:
 
-    * A string value that contains decoded data (ensure that you use the `decode` method’s return value).
+    * A string value that contains decoded data (ensure that you use the `decode` method's return value).
     * A `Delimiter` enumeration value that specifies the line delimiter. It is recommended that you specify `Delimiter.Carriage_Return`.
     * A `Delimiter` enumeration value that specifies the field delimiter. For example, specify `Delimiter.Tab`.
     * A `XMLFormat` enumeration value that specifies whether to convert the barcode data into XDP or XFDF XML data. For example, specify `XMLFormat.XDP` to convert the data to XDP data.
@@ -222,9 +222,9 @@ Decode form data by using the barcoded forms API(web service):
 1. Process the decoded data
 
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the secured PDF document.
-    * Create a byte array that stores the data content of the `BLOB` object that was returned by the `encryptPDFUsingPassword` method. Populate the byte array by getting the value of the `BLOB` object’s `binaryData` data member.
+    * Create a byte array that stores the data content of the `BLOB` object that was returned by the `encryptPDFUsingPassword` method. Populate the byte array by getting the value of the `BLOB` object's `binaryData` data member.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 

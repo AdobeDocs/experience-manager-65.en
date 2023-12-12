@@ -37,7 +37,7 @@ The REST API provides access to the same features through HTTP with responses be
 
 These samples are given in Java&trade; properties style notation. To use them with the Java&trade; API, use a Java&trade; `HashMap` as in the API sample that follows.
 
-For the `QueryBuilder` JSON Servlet, each example includes a link to your local CQ installation (at the default location, `http://localhost:4502`). You must log in to your CQ instance before using these links.
+For the `QueryBuilder` JSON Servlet, each example includes a link to your local CQ installation (at the default location, `http://localhost:4502`). Log in to your CQ instance before using these links.
 
 >[!CAUTION]
 >

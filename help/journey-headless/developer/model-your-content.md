@@ -152,7 +152,7 @@ Content Fragment Models provide various mechanisms that let you define the struc
 A Content Fragment Model describes an entity.
 
 >[!NOTE]
->You must enable Content Fragment functionality in the Configuration Browser so that you can create models.
+>Enable Content Fragment functionality in the Configuration Browser so that you can create models.
 
 >[!TIP]
 >

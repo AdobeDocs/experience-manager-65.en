@@ -1,14 +1,14 @@
 ---
 title: Tracking processes
-seo-title: Tracking processes
+
 description: How to track your processes by searching for them and viewing their details.
-seo-description: How to track your processes by searching for them and viewing their details.
-uuid: 7bda9b61-0a40-4349-9aee-dc6636e5e692
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
+
 exl-id: 381a46c6-c73c-476a-a1a0-20d921069c37
 ---
 # Tracking processes {#tracking-processes}

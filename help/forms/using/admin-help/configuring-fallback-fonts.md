@@ -1,12 +1,12 @@
 ---
 title: Configuring fallback fonts
 description: Learn how to configure fallback fonts for AEM Forms. You can use the FontManagerResources.properties file to map the default fonts to fallback fonts manually. 
-uuid: 2745541c-8c6d-4bb4-aa14-ec19afd6bc35
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
+
 feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
 ---

@@ -1,14 +1,14 @@
 ---
 title: Connecting to SQL Databases
-seo-title: Connecting to SQL Databases
+
 description: Access an external SQL database to so that your AEM applications can interact with the data
-seo-description: Access an external SQL database to so that your AEM applications can interact with the data
-uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
+
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 ---
 # Connecting to SQL Databases{#connecting-to-sql-databases}

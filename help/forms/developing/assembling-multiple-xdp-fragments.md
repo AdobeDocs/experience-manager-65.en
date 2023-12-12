@@ -1,15 +1,15 @@
 ---
 title: Assembling Multiple XDP Fragments
-seo-title: Assembling Multiple XDP Fragments
+
 description: Assemble multiple XDP fragments into a single XDP document using the Java API and Web Service API.
-seo-description: Assemble multiple XDP fragments into a single XDP document using the Java API and Web Service API.
-uuid: 0e35ff85-ff40-4878-ae31-aa8da75bd3ec
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
+
 docset: aem65
 
 role: Developer

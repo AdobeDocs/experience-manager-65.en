@@ -46,7 +46,7 @@ Click the ellipsis button at the bottom-right of the tasks tile to display your 
 
 #### Task Details {#task-details}
 
-For more information on a particular task, in the inbox, tap or click the task to select it then tap or click **Open** in the toolbar.
+For more information on a particular task, in the inbox, click the task to select it then click **Open** in the toolbar.
 
 ![Task detail](assets/project-task-detail.png)
 
@@ -64,12 +64,12 @@ You can add new tasks to projects. These tasks then appear in the tasks tile and
 To add a task:
 
 1. In the project, locate the **Tasks** tile
-1. Tap or click the downward chevron at the top-right of the tile and select **Create Task**.
+1. Click the downward chevron at the top-right of the tile and select **Create Task**.
 1. In the **Add Task** window, provide task details such as priority, assignee, and due date.
 
    ![Adding a task](assets/project-add-task.png)
 
-1. Tap or click **Submit**.
+1. Click **Submit**.
 
 ## Working with Tasks in the Inbox {#working-with-tasks-in-the-inbox}
 

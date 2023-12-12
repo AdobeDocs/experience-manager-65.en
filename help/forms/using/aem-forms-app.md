@@ -1,14 +1,14 @@
 ---
 title: AEM Forms app
-seo-title: AEM Forms app
+
 description: AEM Forms app enables your field workers to use adaptive forms on their mobile devices.
-seo-description: AEM Forms app enables your field workers to use adaptive forms on their mobile devices.
-uuid: fac976c8-b713-4492-b153-f567e7a11ceb
+
+
 contentOwner: sashanka
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
+
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
 ---
 # Introduction to AEM Forms app {#aem-forms-app}
@@ -53,9 +53,9 @@ To sync your form in AEM Forms app:
 1. In author instance, select a form, and click **[!UICONTROL View Properties]**.
 
 1. In the properties page, click **[!UICONTROL Advanced]**.
-1. Under Advanced, enable option: **[!UICONTROL Sync with AEM Forms App]** and tap **[!UICONTROL Save]**.
+1. Under Advanced, enable option: **[!UICONTROL Sync with AEM Forms App]** and select **[!UICONTROL Save]**.
 
-When the form is published, the app syncs with the server and fetches the form. To sync multiple forms, in the author instance, select multiple forms in forms manager and tap **[!UICONTROL Sync with AEM Forms App]**.
+When the form is published, the app syncs with the server and fetches the form. To sync multiple forms, in the author instance, select multiple forms in forms manager and select **[!UICONTROL Sync with AEM Forms App]**.
 
 ## Mobile device support {#mobile-device-support}
 
@@ -178,11 +178,11 @@ The source code for the AEM Forms app can be extracted from the `adobe-lc-mobile
 To get the AEM Forms app source, perform the following steps:
 
 1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
-1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Select **[!UICONTROL Adobe Experience Manager]** available in the header menu.
 1. In the **[!UICONTROL Filters]** section:
    1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
    2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
-1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Select the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and select **[!UICONTROL Download]**.
 1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 

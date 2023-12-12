@@ -1,14 +1,14 @@
 ---
 title: Validate a DDX document using theweb service API
-seo-title: Validate a DDX document using theweb service API
+
 description: Use the Assembler Service API to validate a DDX document.
-seo-description: Use the Assembler Service API to validate a DDX document.
-uuid: f6125746-6138-4e46-a1c4-fb24fd7399c5
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
+
 role: Developer
 exl-id: 069e5b10-ab93-4492-a70d-6a0d462105a6
 ---

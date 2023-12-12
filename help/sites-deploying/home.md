@@ -1,6 +1,6 @@
 ---
 title: AEM 6.5 Deploying User Guide
-seo-title: AEM 6.5 Deploying User Guide
+
 description: Learn about installing and deploying Adobe Experience Manager 6.5 and about its architecture, including our Adobe Managed Services cloud deployment.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
 ---

@@ -27,14 +27,14 @@ Read on for details about asynchronous submission in adaptive forms.
 
 To configure asynchronous submission for an adaptive form:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![cmppr1](assets/cmppr1.png) to open its properties.
+1. In adaptive form authoring mode, select the Form Container object and select ![cmppr1](assets/cmppr1.png) to open its properties.
 1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
 1. In the **[!UICONTROL On Submit]** section, select one of the following options to perform on successful form submission.
 
     * **[!UICONTROL Redirect to URL]**: Redirects to the specified URL or page on form submission. You can specify a URL or browse to choose the path to a page in the **[!UICONTROL Redirect URL/Path]** field.
     * **[!UICONTROL Show Message]**: Displays a message on form submission. You can write a message in the text field below the Show Message option. The text field support rich text formatting.
 
-1. Tap ![check-button1](assets/check-button1.png) to save the properties.
+1. Select ![check-button1](assets/check-button1.png) to save the properties.
 
 ## How asynchronous submission works {#how-asynchronous-submission-works}
 
@@ -96,9 +96,9 @@ Form developers and authors can write rules, at form level, in code editor to ov
 
 Perform the following steps to write rules in code editor to handle success and error events.
 
-1. Open the adaptive form in authoring mode, select any form object, and tap ![edit-rules1](assets/edit-rules1.png) to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
+1. Open the adaptive form in authoring mode, select any form object, and select ![edit-rules1](assets/edit-rules1.png) to open the rule editor.
+1. Select **[!UICONTROL Form]** in the Form Objects tree and select **[!UICONTROL Create]**.
 1. Select **[!UICONTROL Code Editor]** from the mode selection drop-down.
-1. In the code editor, tap **[!UICONTROL Edit Code]**. Tap **[!UICONTROL Edit]** on the confirmation dialog.
+1. In the code editor, select **[!UICONTROL Edit Code]**. Select **[!UICONTROL Edit]** on the confirmation dialog.
 1. Choose **[!UICONTROL Successful Submission]** or **[!UICONTROL Error in Submission]** from the **[!UICONTROL Event]** drop-down.
-1. Write a rule for the selected event and tap **[!UICONTROL Done]** to save the rule.
+1. Write a rule for the selected event and select **[!UICONTROL Done]** to save the rule.

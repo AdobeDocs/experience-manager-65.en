@@ -102,7 +102,7 @@ When an image is loaded, you can configure the following:
 
 >[!NOTE]
 >
->You must enter information in the **Alt Text** field in the **Advanced** tab, or the image cannot save and you see the following error message:
+>Enter information in the **Alt Text** field in the **Advanced** tab, or the image cannot save and you see the following error message:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -133,7 +133,7 @@ You can configure the following in the **Display**, **URL Info**, or **Advanced*
 
 >[!NOTE]
 >
->You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>Enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >

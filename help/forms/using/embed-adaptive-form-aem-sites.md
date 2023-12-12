@@ -50,7 +50,7 @@ To embed an adaptive form or interactive communication using AEM Forms Container
    >
    >Multiple AEM Forms Container components on a page are not supported.
 
-1. Tap the embedded AEM Forms Container component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit AEM Forms Container]** dialog opens.
+1. Select the embedded AEM Forms Container component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit AEM Forms Container]** dialog opens.
 1. In the Edit AEM Forms Container dialog, specify the following.
 
     * **Asset Type:** Select the type of asset to embed. The options are adaptive form and interactive communication
@@ -82,7 +82,7 @@ AEM sites page maintains a reference to the adaptive form and interactive commun
 To modify any configuration or property of the embedded adaptive form and interactive communication, do one of the following.
 
 * Open the original form in adaptive forms or interactive communication in respective editors and modify them.
-* Tap the adaptive form or interactive communication from within the site page in edit mode and then tap **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
+* Select the adaptive form or interactive communication from within the site page in edit mode and then select **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
 
 >[!NOTE]
 >

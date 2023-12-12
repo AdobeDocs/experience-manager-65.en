@@ -3,12 +3,12 @@ title: Upgrade to AEM 6.5 Forms on OSGi
 
 description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 
-uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
+
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 ---
@@ -40,11 +40,11 @@ Do the following to upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 Forms
 1. Install AEM Forms add-on package. The steps are listed below:
 
     1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
-    1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+    1. Select **[!UICONTROL Adobe Experience Manager]** available in the header menu.
     1. In the **[!UICONTROL Filters]** section:
        1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
        1. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
-    1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+    1. Select the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and select **[!UICONTROL Download]**.
     1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
     1. Select the package and click **[!UICONTROL Install]**.
 

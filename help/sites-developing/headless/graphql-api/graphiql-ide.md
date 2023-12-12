@@ -76,7 +76,7 @@ You can run a new query immediately, or you can load and run a persisted query. 
 
 In either case, the query showing in the editor panel is the query that will be executed when you either:
 
-* click/tap on the **Execute Query** icon
+* click on the **Execute Query** icon
 * use the keyboard combination `Control-Enter`
 
 ## Query variables {#query-variables}

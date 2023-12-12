@@ -3,12 +3,12 @@ title: Troubleshooting installation issues with AEM
 
 description: This article covers some of the installation issues that you might encounter with AEM.
 
-uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
+
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 ---
 # Troubleshooting installation issues with AEM{#troubleshooting}
