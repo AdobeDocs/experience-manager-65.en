@@ -693,7 +693,7 @@ feature: Forms Service
   + [Unable to restore CRX Repository](/help/forms/using/restore-crx-repository.md)
   + [Service unavailable errors after installing AEM 6.5.15.0 service pack](/help/forms/using/aem-service-pack-installation-solution.md)
   + [AEM Forms JEE 6.5.15.0 service pack installation issue on JBoss Linux environment](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-  + [Executing multiple services even if AEM Forms has not started completely](/help/forms/using/executing-multiple-services-even-aem-forms-has-not-started.md)
+  + [Processing documents even if the AEM Forms server is not fully up and running](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
   + [Unable to use Output service, Forms service, or Document of Record (DoR) service](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 + Legacy documentation {#legacy-documentation}
   + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
