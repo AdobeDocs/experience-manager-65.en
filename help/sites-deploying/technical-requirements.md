@@ -197,7 +197,8 @@ Adobe Experience Manager works with the following server platforms for productio
 1. AEM Forms is supported on Ubuntu 20.04 LTS.
 1. Linux&reg; distribution supported by Adobe Managed Services.
 
-    >[NOTE!]
+    >[!NOTE]
+    >
     >For Linux based server (OSGI and JEE stack), AEM Forms add-on require runtime dependencies such as:
     >* glibc.x86_64 (2.17-196)
     >* libX11.x86_64 (1.6.7-4)
