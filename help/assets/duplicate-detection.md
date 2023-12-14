@@ -24,3 +24,4 @@ The detect duplicate feature is now enabled in [!DNL Assets]. When a user attemp
 >[!MORELIKETHIS]
 >
 >* [Duplicate assets in existing repository (a tutorial from a community member)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [Detect duplicate assets in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
