@@ -5,6 +5,7 @@ contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
+hide: yes
 ---
 # Asset selector {#asset-selector}
 
