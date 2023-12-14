@@ -206,7 +206,8 @@ to
 * A list does not display correctly in the tags in Adobe Acrobat Reader or Adobe Acrobat DC. (LC-3921306)
 * Heading levels which are assigned correctly in Forms Designer are randomly changed to a `<P>` tag in Adobe Acrobat. (LC-3921305) 
 * In a table the ID of any object cannot be modified once it is assigned. (LC-3921134)  
-* If merged cells are in the table, no GUI is available for setting the span (row and column) and scope in a complex table in AEM Forms Designer. (LC-3919532) 
+* If merged cells are in the table, no GUI is available for setting the span (row and column) and scope in a complex table in AEM Forms Designer. (LC-3919532)
+<!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
 
 ### Foundation{#foundation-6519}
 
@@ -513,6 +514,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 * When users perform the submit action, the submission fails with an error: 
 ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
 To resolve the issue, [recompile the Sling scripts such as JSP, Java, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* When a user try to select a font for their PDF documents in Adminui under the path Home > Services > PDF Generator > Adobe PDF settings, the fonts list shows empty. The user is unable to add fonts to  "Always embed" and "Never embed" lists. (FORMS-12095)
 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
