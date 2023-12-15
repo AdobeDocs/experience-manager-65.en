@@ -514,7 +514,8 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 * When users perform the submit action, the submission fails with an error: 
 `javax.servlet.ServletException: java.lang.NoSuchMethodError`
 To resolve the issue, [recompile the Sling scripts such as JSP, Java™, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
-* After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. The font enumeration fails due to the missing Ps2Pdf service file.(FORMS-12095)
+* After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. (FORMS-12095)
+<!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
