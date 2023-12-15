@@ -516,6 +516,12 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 `javax.servlet.ServletException: java.lang.NoSuchMethodError`
 To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 * After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. (FORMS-12095)
+
+#### AEM Forms on JEE 
+
+* Critical security vulnerabilities have been reported for Struts 2 RCE, a popular and open-source web application framework for developing Java EE web applications. Adobe has released [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) to address the vulnerability in AEM Forms on JEE. 
+
+
 <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
