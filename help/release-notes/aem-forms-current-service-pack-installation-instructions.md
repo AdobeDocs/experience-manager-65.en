@@ -9,7 +9,7 @@ exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 
 | Product   | Adobe Experience Manager 6.5 Forms  |
 |---|---|
-| Version  |  6.5.19.0 (OSGi) 6.5.19.0 (JEE)|
+| Version  |  6.5.19.0 (OSGi) 6.5.19.1 (JEE)|
 | Type  |  Service Pack release |
 | Date  |  08 December 2023 |
 | Download URL | [Latest AEM Forms Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
@@ -59,9 +59,6 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. Download the required software
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-
-Critical security vulnerabilities have been reported for Struts 2 RCE, a popular and open-source web application framework for developing Java EE web applications. Adobe has released AEM 6.5 Service Pack 19.1 (6.5.19.1) to address the vulnerability in AEM Forms on JEE. 
-
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [Fragment Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
