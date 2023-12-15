@@ -67,6 +67,7 @@ You can use the manual mitigation steps to resolve the issue on AEM 6.5 Form Ser
         
         patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
         
+        
         ```
 
 1. Start your AEM Forms Server. 
