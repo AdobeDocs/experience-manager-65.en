@@ -207,7 +207,8 @@ to
 * Heading levels which are assigned correctly in Forms Designer are randomly changed to a `<P>` tag in Adobe Acrobat. (LC-3921305) 
 * In a table the ID of any object cannot be modified once it is assigned. (LC-3921134)  
 * If merged cells are in the table, no GUI is available for setting the span (row and column) and scope in a complex table in AEM Forms Designer. (LC-3919532)
-<!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
+* When a user tries to generate PDF documents after installing the forms add-on package on AEM Forms Service Pack 6.5.15.0, it fails intermittently and shows the error:
+  * `OutputServiceException AEM_OUT_001_003:Unexpected Exception: 0 Out of Memory Caused by: org.omg.CORBA.COMM_FAILURE: null` (LC-3921530)
 
 ### Foundation{#foundation-6519}
 
