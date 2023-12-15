@@ -139,7 +139,7 @@ to
 * Selection of multiple document filetypes on asset type filter is not working on the page console. No results are found even if the results of one particular filetype are available. As a result, authors are unable to filter multiple documents. They must use multiple document types and they are having to filter it one at a time. (SITES-14047) 
 * After upgrading an instance from AEM 6.5.17 and AEM 6.5.18, from inside the Page Editor, if you selected **[!UICONTROL Publish Page]**, you are redirected to a URL that does not exist. The user should be redirected to the Publish wizard. (SITES-15856) 
 * Redundant copy from AEM's Clipboard during a paste from the operating system's Clipboard. (SITES-15704) 
-* In Assets, selecting **[!UICONTROL Documents]**, then under **[!UICONTROL Filtertype]**, selecting **[!UICONTROL Microsoft&reg; Word]** or **[!UICONTROL Microsoft&reg; Excel]** shows no results even though files of both types exist. (SITES-14837) 
+* In Assets, selecting **[!UICONTROL Documents]**, then under **[!UICONTROL Filtertype]**, selecting **[!UICONTROL Microsoft®&reg; Word]** or **[!UICONTROL Microsoft®&reg; Excel]** shows no results even though files of both types exist. (SITES-14837) 
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -514,9 +514,9 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
 * When users perform the submit action, the submission fails with an error: 
 `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-To resolve the issue, [recompile the Sling scripts such as JSP, Java, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
-* When a user try to select a font for their PDF documents in Adminui under the path Home > Services > PDF Generator > Adobe PDF settings, the fonts list shows empty. The user is unable to add fonts to  "Always embed" and "Never embed" lists. (FORMS-12095)
-
+To resolve the issue, [recompile the Sling scripts such as JSP, Java™, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. (FORMS-12095)
+<!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
