@@ -1,7 +1,7 @@
 ---
 
-title: Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms
-description: Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms
+title: Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms on JEE
+description: Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms on JEE
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
