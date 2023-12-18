@@ -1,7 +1,7 @@
 ---
 
-title: Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms on JEE
-description: Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms on JEE
+title: Mitigating Struts 2 Vulnerabilities for Experience Manager Forms on JEE
+description: Mitigating Struts 2 Vulnerabilities for Experience Manager Forms on JEE
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
@@ -10,7 +10,7 @@ role: Admin
 
 ---
 
-# Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
+# Mitigating Struts 2 Vulnerabilities for Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## Issue
 
@@ -42,14 +42,16 @@ You can use the manual mitigation steps to resolve the issue on AEM 6.5 Form Ser
     * patch-archive.bat
     * patch-archive.sh
 1. Open the terminal window and navigate to the folder containing the extracted files.
-1. Use the manual patching tool to search, list, and replace all the struts2 jar files. To search and replace the struts2-core-2.5.30 jar file and struts2-core.jar:
+1. Use the manual patching tool to search, list, and replace all the struts2 jar files. The tool requires internet connectivity as it downloads dependencies at runtime. So, before running the tool, ensure that you are connected to internet. 
+
+To search and replace the struts2-core-2.5.30 jar file and struts2-core.jar:
 
     
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. Run the following command to list all the struts2 jar files. Before running the command, replace the path in the above command with path of your AEM Form server:
+1. Run the following command to list all the struts2 jar files. Before running the command, replace the path in the command with the path of your AEM Forms server:
 
     ```
 
@@ -57,7 +59,7 @@ You can use the manual mitigation steps to resolve the issue on AEM 6.5 Form Ser
 
     ```
 
-1. Run the following commands in the listed order for recursive in-place replacement. Before running the command. Replace the path in the above command with  path of your AEM Form server and the `struts2-core-2.5.33.jar` file.
+1. Run the following commands in the listed order for recursive in-place replacement. Before running the command. Replace the path in the command with the path of your AEM Forms server and the `struts2-core-2.5.33.jar` file.
 
 
     ```
@@ -75,7 +77,7 @@ You can use the manual mitigation steps to resolve the issue on AEM 6.5 Form Ser
 
 >[!TAB Linux]
 
-1. Run the following command to list all the struts2 jar files. Before running the command, replace the path in the above command with path of your AEM Form server:
+1. Run the following command to list all the struts2 jar files. Before running the command, replace the path in the command with the path of your AEM Forms server:
 
     ```
 
@@ -83,7 +85,7 @@ You can use the manual mitigation steps to resolve the issue on AEM 6.5 Form Ser
 
     ```
 
-1. Run the following commands in the listed order for recursive in-place replacement. Before running the command         Replace the path in the above command with  path of your AEM Form server and the `struts2-core-2.5.33.jar` file.
+1. Run the following commands in the listed order for recursive in-place replacement. Before running the command, replace the path in the command with the path of your AEM Forms server and the `struts2-core-2.5.33.jar` file.
 
     ```
         
