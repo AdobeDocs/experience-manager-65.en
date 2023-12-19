@@ -695,6 +695,7 @@ feature: Forms Service
   + [AEM Forms JEE 6.5.15.0 service pack installation issue on JBoss Linux environment](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
   + [Processing documents even if the AEM Forms server is not fully up and running](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
   + [Unable to use Output service, Forms service, or Document of Record (DoR) service](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
+  [Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
 + Legacy documentation {#legacy-documentation}
   + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
   + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
