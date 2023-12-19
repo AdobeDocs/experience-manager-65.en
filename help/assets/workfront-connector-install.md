@@ -40,6 +40,10 @@ To install the connector, follow these steps:
 
 1. Install the package using [!UICONTROL Package Manager]. To know how to install packages, see [Package Manager documentation](/help/sites-administering/package-manager.md).
 1. Create `wf-workfront-users` in [!DNL Experience Manager] User Group and assign the permission `jcr:all` to `/content/dam`.
+1. Add a custom property to the out of the box index definition for **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. Execute the below steps:
+   * Add an **`nt:unstructured`** property named **`wfReferenceNumber`** to:
+   `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
+   * Reindex the `index /oak:index/ntFolderDamLucene` by flipping the reindex flag to `true`.
 
 A system user `workfront-tools` is automatically created and the required permissions are managed automatically. All users from [!DNL Workfront] who use the connector are automatically added as a part of this group.
 
