@@ -50,7 +50,7 @@ It is also recommended to configure JVM to tune memory usage and garbage collect
 ### JVM Configuration Example {#jvm-configuration-example}
 
 ```shell
-JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
+JVM_OPTS="-server -Xmx2048m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
 ```
 
 ### SolrCloud Set up Commands {#solrcloud-setup-commands}
