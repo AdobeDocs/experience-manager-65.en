@@ -50,7 +50,7 @@ user-guide-title: AEM 6.5
   + [Mitigating serialization issues in AEM](/help/sites-administering/mitigating-serialization-issues.md)
   + [User Synchronization](/help/sites-administering/sync.md)
   + [Encapsulated Token Support](/help/sites-administering/encapsulated-token.md)
-  + [Single Sign On](/help/sites-deploying/single-sign-on.md))
+  + [Single Sign On](/help/sites-deploying/single-sign-on.md)
   + [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md)
   + [SSL By Default](/help/sites-administering/ssl-by-default.md)
   + [SAML 2.0 Authentication Handler](/help/sites-administering/saml-2-0-authenticationhandler.md)
