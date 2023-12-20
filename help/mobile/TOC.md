@@ -78,7 +78,6 @@ hide: yes
   + [Page Templates for Mobile Apps](phonegap-apps-arch-page-templates.md)
   + [Configuring Adobe Target Cloud Service](aem-mobile-configuring-cloud-service.md)
   + [Single Page Applications](phonegap-single-page-applications.md)
-  + [Models in Repository](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/administering/administer-mobile-apps.html)
   + [Starting AEM PhoneGap](starting-aem-phonegap-app.md)
   + [Testing Mobile Apps](develop-mobile-apps-testing.md)
   + [Structure an App](phonegap-structure-an-app.md)
