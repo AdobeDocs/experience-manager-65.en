@@ -16,7 +16,6 @@ hide: yes
 + Introduction to AEM Communities {#introduction}
   + [Communities Sites](administer-landing.md)
   + [AEM Communities Overview](overview.md)
-  + [AEM Communities Release Notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
   + [Getting Started with AEM Communities](getting-started.md)  
   + [Initial Setup](setup.md)
   + [Author a New Community Site](create-site.md)
@@ -29,7 +28,6 @@ hide: yes
   + [Configuring Dispatcher for Communities](dispatcher.md)
 + Administering {#administer}
   + [User and UGC Management Service in AEM Communities](user-ugc-management-service.md)
-  + [Communities Sites](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
   + [Communities Consoles](consoles.md)
   + [Analytics Configuration for Communities Features](analytics.md)  
   + [Configuring Messaging](messaging.md)
@@ -148,4 +146,3 @@ hide: yes
   + [Activity Trends](trends.md)
   + [Using Social Tag Cloud](tagcloud.md)
   + [Using Voting](voting.md)
-  + [Create a Sample Page](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
