@@ -1,9 +1,9 @@
 ---
 title: AEM Forms JEE Patch Installer
 description: Learn how to use AEM Forms JEE Patch Installer to fix issues in AEM 6.5 Forms components.
-uuid: 76662858-afca-4ba3-883b-9b9a61874f15
+
 content-type: reference
-discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
+
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 ---
 # AEM Forms JEE Patch Installer {#aem-forms-jee-patch-installer}
@@ -49,7 +49,7 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 1. **[For Windows only]:** Do the following:
    * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file in `[aem-forms root]\configurationManager\bin`. 
 
-   * Or deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
+   * Or deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace the **ConfigurationManager.lax** and **ConfigurationManager_IPV6.lax** with the latest [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files, Search, and replace **axis-1.4.1.1.jar** with **axis-1.4.1.2.jar** in these two files.
 
    >[!NOTE]
    >

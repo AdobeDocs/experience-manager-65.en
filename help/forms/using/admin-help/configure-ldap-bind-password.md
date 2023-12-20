@@ -1,14 +1,14 @@
 ---
 title: Configure the LDAP bind password
-seo-title: Configure the LDAP bind password
+
 description: Learn how to configure the bind password field before you import the configuration file into another system.
-seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
-uuid: 1ab1907c-8b55-4b6f-bd5b-49f22d78b8a8
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
+
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 ---
 # Configure the LDAP bind password{#configure-the-ldap-bind-password}

@@ -1,14 +1,14 @@
 ---
 title: Configuring Layout Container and Layout Mode
-seo-title: Configuring Layout Container and Layout Mode
+
 description: Learn how to configure Layout Container and Layout Mode.
-seo-description: Learn how to configure Layout Container and Layout Mode.
-uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
+
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 ---

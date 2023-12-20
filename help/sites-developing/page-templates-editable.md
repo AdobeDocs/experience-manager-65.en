@@ -3,12 +3,12 @@ title: Page Templates - Editable
 
 description: Editable templates have been introduced that let non-developers create and edit templates, provide templates that retain a dynamic connection to any pages created from them, and make the page component more generic
 
-uuid: 61791960-fdef-4e49-878a-11fdf1d4f0ab
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
+
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 ---

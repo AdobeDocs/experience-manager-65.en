@@ -236,12 +236,12 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td><p><strong>Supported Patch Definitions</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Deprecated)</td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Deprecated) <sup>[9]</sup></td>
    <td>A: Supported</td>
    <td>Service pack and critical updates</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c </td>
+   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
    <td>A: Supported</td>
    <td>Service pack and critical updates</td>
   </tr>
@@ -349,6 +349,11 @@ Consider the following exceptions while choosing a platform to set up your AEM F
 1. AEM Forms on JEE do not support WebSphere&reg; application server on CentOS.
 1. AEM Forms on JEE do not support JBoss&reg; role-based access control (RBAC).
 1. AEM Forms on JEE support Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4 only.
+1. JDK versions higher than 1.8.0_281 are not supported for WebLogic server. (FORMS-8498)
+
+<!-- 
+1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
+-->
 
 In addition, consider the following points while choosing software for Adobe AEM Forms on JEE deployments:
 
@@ -862,6 +867,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | IBM&reg; Content Manager Server 8.5 Fix pack 2 |
 |  | | IBM&reg; Content Manager Client 8.5 |
 |  | | Microsoft&reg; SQL Server 2016 |
+|  | | Microsoft&reg; Windows Server 2016 |
 
 ### Release 6.5.10.0 (September 01, 20222)
 

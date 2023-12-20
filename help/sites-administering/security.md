@@ -3,12 +3,12 @@ title: User Administration and Security
 
 description: Learn about User Administration and Security in AEM.
 
-uuid: 4512c0bf-71bf-4f64-99f6-f4fa5a61d572
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
+
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security

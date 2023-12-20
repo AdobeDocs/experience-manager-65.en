@@ -1,14 +1,14 @@
 ---
 title: Purge records from the Job Manager database
-seo-title: Purge records from the Job Manager database
+
 description: Large process data can result in lower AEM forms performance. It is good practice to purge process data when records are no longer necessary.
-seo-description: Large process data can result in lower AEM forms performance. It is good practice to purge process data when records are no longer necessary.
-uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
+
 exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
 ---
 # Purge records from the Job Manager database {#purge-records-from-the-job-manager-database}

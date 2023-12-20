@@ -3,12 +3,12 @@ title: Performance Optimization
 
 description: Learn how to configure certain aspects of AEM to optimize performance.
 
-uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
+
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 ---
