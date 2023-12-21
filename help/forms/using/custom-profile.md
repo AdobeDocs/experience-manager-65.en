@@ -1,14 +1,11 @@
 ---
 title: Creating a custom profile for HTML5 forms
-
 description: A HTML5 forms profile is a resource node in Apache Sling. It represents a customized version of HTML5 forms Render service.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-
-feature: Mobile Forms
+discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
+feature: HTML5 Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 ---
 # Creating a custom profile for HTML5 forms {#creating-a-custom-profile-for-html-forms}

@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 
 docset: aem65
 
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 ---
 # Form set in AEM Forms{#form-set-in-aem-forms}

@@ -1,13 +1,10 @@
 ---
 title: Adaptive forms keywords
-
 description: You cannnot use these reserved words as identifiers in your adaptive forms.
-
-
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-
-feature: Adaptive Forms
+discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
+feature: Adaptive Forms, Foundation Components
 exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 ---
 # Adaptive forms keywords {#adaptive-forms-keywords}

@@ -8,8 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 
 docset: aem65
-
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
 ---
 # Authoring in-context help for form fields{#authoring-in-context-help-for-form-fields}

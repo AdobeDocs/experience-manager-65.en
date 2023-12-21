@@ -11,7 +11,7 @@ content-type: reference
 
 docset: aem65
 
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 ---
 # Best practices for HTML5 forms{#best-practices-for-html-forms}

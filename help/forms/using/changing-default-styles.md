@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 
 docset: aem65
 
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 ---
 # Changing default styles of HTML5 forms{#changing-default-styles-of-html-forms}

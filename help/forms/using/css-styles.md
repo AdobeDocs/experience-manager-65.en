@@ -1,15 +1,12 @@
 ---
 title: Creating CSS styles for HTML5 forms
-
 description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
-
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-
-feature: Mobile Forms
+discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
+feature: HTML5 Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 ---
 # Creating CSS styles for HTML5 forms {#creating-css-styles-for-html-forms}

@@ -6,6 +6,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 ---
 # Enable Adaptive Forms Core Components on AEM 6.5 Forms {#enable-adaptive-forms-core-components}

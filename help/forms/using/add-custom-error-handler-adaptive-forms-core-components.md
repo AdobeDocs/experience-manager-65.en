@@ -4,7 +4,7 @@ description: AEM Forms provides out-of-the-box success and error handlers for a 
 keywords: Add a custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
 ---
 # Error Handlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}

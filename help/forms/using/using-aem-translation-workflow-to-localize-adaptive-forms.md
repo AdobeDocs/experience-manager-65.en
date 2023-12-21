@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: develop
 
 noindex: true
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
 ---
 # Using AEM translation workflow to localize adaptive forms and document of record {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}

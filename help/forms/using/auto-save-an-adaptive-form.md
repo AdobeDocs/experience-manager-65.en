@@ -1,14 +1,9 @@
 ---
 title: Auto-save an adaptive form
-
 description: You can configure an adaptive form to automatically start saving the content based on an event or a pre-defined time-interval
-
-
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-
-feature: Adaptive Forms
-exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
+feature: Adaptive Forms, Foundation Components
 ---
 # Auto-save an adaptive form {#auto-save-an-adaptive-form}
 

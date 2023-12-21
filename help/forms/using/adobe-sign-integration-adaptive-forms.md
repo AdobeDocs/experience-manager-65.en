@@ -8,8 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 
 docset: aem65
-
-feature: Adaptive Forms, Acrobat Sign
+feature: Adaptive Forms, Foundation Components, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 ---
 # Integrate [!DNL Adobe Sign] with AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}

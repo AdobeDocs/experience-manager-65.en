@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 
 docset: aem65
 
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 ---
 # Integrating Form Bridge with custom portal for HTML5 forms{#integrating-form-bridge-with-custom-portal-for-html-forms}

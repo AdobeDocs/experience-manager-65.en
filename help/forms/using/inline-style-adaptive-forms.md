@@ -8,8 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 
 docset: aem65
-
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
 ---
 # Inline styling of adaptive form components {#inline-styling-of-adaptive-form-components}
