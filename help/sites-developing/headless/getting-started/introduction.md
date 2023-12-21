@@ -17,7 +17,7 @@ The Headless Getting Started Guides lay out a simple path for creating, managing
 >
 >This getting started guide assumes knowledge of both AEM and headless technologies.
 >
->If you are new to either AEM or headless, see the [Headless Documentation Journeys](/help/journey-headless/home.md) for an end-to-end introduction to both headless and how AEM supports it.
+>If you are new to either AEM or headless, see the [Headless Documentation Journeys](/help/journey-headless/overview.md) for an end-to-end introduction to both headless and how AEM supports it.
 
 ## Audience {#audience}
 

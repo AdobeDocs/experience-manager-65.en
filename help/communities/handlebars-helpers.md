@@ -1,8 +1,6 @@
 ---
 title: SCF Handlebars Helpers
 description: Handlebars Helper methods to facilitate work with SCF
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
@@ -166,10 +164,9 @@ A helper to return content depending on an equality conditional.
 ```
 {{#equals  value "some-value"}}
   <div>They are EQUAL!</div>
-{{else}}
+`{{else}}`
   <div>They are NOT equal!</div>
 {{/equals}}
-
 ```
 
 ## If-wcm-mode {#if-wcm-mode}
@@ -191,9 +188,9 @@ A block helper that tests the current value of [WCM mode](https://developer.adob
 ```xml
 {{#if-wcm-mode mode="DESIGN, EDIT"}}
  ...
-{{else}}
+{else}}
  ...
-{{/if-wcm-mode}}
+`{{/if-wcm-mode}}`
 ```
 
 ## i18n {#i-n}
@@ -221,7 +218,6 @@ See also [Internationalizing Strings in JavaScript Code](../../help/sites-develo
 ```
 {{i18n "hello"}}
 {{i18n "hello" comment="greeting" default="bonjour"}}
-
 ```
 
 ## Include {#include}
@@ -473,7 +469,7 @@ var context = {posts: [
   ] };
 
 // when link_to is called, posts is the current context
-var source = '<ul>{{#posts}}<li>{{{link_to "Post"}}}</li>{{/posts}}</ul>'
+var source = '<ul>`{{#posts}}`<li>{{{link_to "Post"}}}</li>`{{/posts}}`</ul>'
 
 var template = Handlebars.compile(source);
 
@@ -499,7 +495,7 @@ var data = { "people": [
 ]};
 
 // when link is called, people is the current context
-var source = "<ul>{{#people}}<li>{{#link}}{{name}}{{/link}}</li>{{/people}}</ul>";
+var source = "<ul>`{{#people}}`<li>`{{#link}}``{{name}}``{{/link}}`</li>`{{/people}}`</ul>";
 
 var template = Handlebars.compile(source);
 
@@ -556,7 +552,6 @@ public class FooTextHelper implements TemplateHelper<String>{
         return String.class;
     }
 }
-
 ```
 
 >[!NOTE]
@@ -583,7 +578,6 @@ function(Handlebars, SCF, $CQ) {
     });
 
 })(Handlebars, SCF, $CQ);
-
 ```
 
 The custom client-side helpers must be added to a custom client library.

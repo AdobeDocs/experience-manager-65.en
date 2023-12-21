@@ -23,7 +23,7 @@ This guide leads you through the most headless implementation topics in AEM so t
 
 Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
-If you want to know how Adobe recommends how to solve headless business cases with AEM, [AEM Headless Journeys](/help/journey-headless/home.md) are where to start.
+If you want to know how Adobe recommends how to solve headless business cases with AEM, [AEM Headless Journeys](/help/journey-headless/overview.md) are where to start.
 
 >[!TIP]
 >
