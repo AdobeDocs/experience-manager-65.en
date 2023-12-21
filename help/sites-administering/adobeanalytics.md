@@ -16,7 +16,7 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html)                  |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html)                  |
 | AEM 6.5     | This article         |
 
 
