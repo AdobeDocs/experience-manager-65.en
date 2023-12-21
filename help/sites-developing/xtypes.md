@@ -73,7 +73,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   Base class for any [Component](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component) that is to be sized as a box, using width and height.
 
-  BoxComponent provides automatic box model adjustments for sizing and positioning and will work correctly within the Component rendering model.
+  BoxComponent provides automatic box model adjustments for sizing and positioning and works correctly within the Component rendering model.
 
 * browsedialog
 
@@ -117,7 +117,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.Ext.chart.Chart](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart)
 
-  The CQ.Ext.chart package provides the capability to visualize data with flash based charting. Each chart binds directly to an CQ.Ext.data.Store enabling automatic updates of the chart. To change the look and feel of a chart, see the [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) and [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) config options.
+  The CQ.Ext.chart package provides the capability to visualize data with flash-based charting. Each chart binds directly to an CQ.Ext.data.Store enabling automatic updates of the chart. To change the look and feel of a chart, see the [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) and [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) config options.
 
 * checkbox
 
@@ -245,7 +245,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-  The CustomContentPanel is a special kind of panel for use in [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): Its contents are retrieved from and submitted to a different URL than the other fields in the dialog.
+  The CustomContentPanel is a special panel for use in [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): Its contents are retrieved from and submitted to a different URL than the other fields in the dialog.
 
 * cycle
 
@@ -287,7 +287,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
-  The Dialog is a special kind of window with a form in the body and a button group in the footer. It is typically used to edit content, but can also display information only.
+  The Dialog is a special window with a form in the body and a button group in the footer. It is typically used to edit content, but can also display information only.
 
 * dialogfieldset
 
@@ -407,7 +407,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  Provides a lightweight HTML Editor component. Some toolbar features are not supported by Safari and will be automatically hidden when needed. These are noted in the config options where appropriate.
+  Provides a lightweight HTML Editor component. Some toolbar features are not supported by Safari and are automatically hidden when needed. These are noted in the config options where appropriate.
 
   The editor's toolbar buttons have tooltips defined in the [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor) property.
 
@@ -457,7 +457,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-  CQ.Ext.list.ListView is a fast and light-weight implementation of a [Grid](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) like view.
+  CQ.Ext.list.ListView is a fast and light-weight implementation of a [Grid-like](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) view.
 
 * livecopyproperties
 
@@ -787,7 +787,7 @@ Listed below are the available xtypes in Adobe Experience Manager:
 
   [CQ.wcm.Statistics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-  The Statistics displays the page impressions as a chart. The widget allows to select a period, the statistics should be displayed for.
+  The Statistics displays the page impressions as a chart. The widget lets you select a period for which the statistics should be displayed.
 
 * store
 
