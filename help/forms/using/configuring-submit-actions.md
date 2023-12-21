@@ -168,18 +168,18 @@ After a successful configuration, use the [Invoke a Microsoft&reg; Power Automat
 
 The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. 
 
-### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
+### Connect an Adaptive Form to Microsoft&reg; SharePoint List {#connect-af-sharepoint-list}
 
 To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
 
-1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
-1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft&reg; Sharepoint List Storage.
+1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft&reg; SharePoint.
 
 #### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
 
 To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
@@ -194,13 +194,13 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft&reg; SharePointList.
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
 
 You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
 
-1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/using/create-form-data-model.md)
+1. [Create a Form Data Model using Microsoft&reg; SharePoint List configuration](/help/forms/using/create-form-data-model.md)
 1. [Configure the Form Data Model to retrieve and send data](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Create an Adaptive Form](/help/forms/using/create-adaptive-form.md).
 1. [Configure Submit action using a Form Data Model](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
@@ -209,7 +209,7 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 
 >[!NOTE]
 >
-> In Microsoft® SharePoint List, the following column types are not supported:
+> In Microsoft&reg; SharePoint List, the following column types are not supported:
 > * image column
 > * metadata column
 > * person column

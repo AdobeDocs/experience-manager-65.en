@@ -109,7 +109,6 @@ Google periodically changes their user interface. As such, the steps to publish 
 To configure Google Cloud settings:
 
 1. Create a Google account.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
 
    If you already have a Google account, skip to the next step.
 

@@ -44,7 +44,7 @@ Some of the key features and enhancements in this release include the following:
 * **New Adaptive Form Core Components**: Vertical tabs, Terms & Conditions, and Checkbox are added to enhance the scalability of forms.
   * **[Checkbox component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptive Forms based on Core Components can now include a checkbox component. It allows users to make binary choices, selecting or deselecting a particular option. It typically appears as a small box that can be clicked or tapped to toggle between two states: checked and unchecked. The checkbox is a common form element used to present a yes/no or true/false choice.
 
-  * **[Terms and Conditions component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptive Forms based on Core Components can now include a Terms and Conditions component. It allows forms authors to introduce a specific section within the form where users are presented with the terms, conditions, or legal agreements associated with the use of a service, product, or platform. This component is designed to inform users about the rules, regulations, and obligations they are agreeing to by submitting the form.
+  * **[Terms and Conditions component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptive Forms based on Core Components can now include a Terms and Conditions component. It allows Forms authors to introduce a specific section within the form where users are presented with the terms, conditions, or legal agreements associated with the use of a service, product, or platform. This component is designed to inform users about the rules, regulations, and obligations they are agreeing to by submitting the form.
 
     ![Vertical tabs, Terms & Conditions and Checkbox components](/help/forms/using/assets/forms-components.png)
 
@@ -52,12 +52,11 @@ Some of the key features and enhancements in this release include the following:
   
 * **[64-bit version of AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: The 64-bit version of AEM Forms Designer brings enhanced performance, scalability, and memory management to empower your form creation experience. With the 64-bit architecture, you can tackle even larger and more complex projects with ease, ensuring seamless design workflows and optimized efficiency. Elevate your form design capabilities and embrace the future of AEM Forms Designer with this cutting-edge release.
 
-* **[Connect an Adaptive Forms with Microsoft&reg; SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms provides an OOTB integration to submit forms data directly to SharePoint List, letting you use SharePoint's Lists capabilities. You can configure Microsoft SharePoint List as a datasource for a Form Data Model and use the Submit using Form Data Model submit action to connect an Adaptive Form with SharePoint List.
+* **[Connect an Adaptive Forms with Microsoft&reg; SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms provide an OOTB integration to submit forms data directly to SharePoint List, letting you use SharePoint's Lists capabilities. You can configure Microsoft&reg; SharePoint List as a datasource for a Form Data Model and use the Submit using Form Data Model submit action to connect an Adaptive Form with SharePoint List.
 
 * **[Support to configure Document of Record properties for Adaptive Form Fragments](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: You can now easily customize your Adaptive Form fragments and its fields in  Adaptive Form editor.
 
-* **64-bit XMLFM**: The 64-bit iteration of XMLFM introduces heightened performance, scalability, and refined memory management. It is the first 64-bit native service deployed on the server-side. By harnessing its inherent capability to access significantly larger memory resources compared to its 32-bit counterpart, XMLFM 64-bit empowers seamless handling of larger rendering workloads. This milestone not only represents a leap in performance but also introduces key enhancements to the native service framework within the AEM Forms server. This update equips AEM Forms server to seamlessly support any 64-bit native service.
-
+* **64-bit XMLFM**: The 64-bit iteration of XMLFM introduces heightened performance, scalability, and refined memory management. It is the first 64-bit native service deployed on the server-side. By harnessing its inherent capability to access larger memory resources compared to its 32-bit counterpart, XMLFM 64-bit empowers seamless handling of larger rendering workloads. This milestone not only represents a leap in performance but also introduces key enhancements to the native service framework within the AEM Forms Server. This update equips AEM Forms Server to seamlessly support any 64-bit native service.
 
 **Deprecated feature**
 
@@ -140,7 +139,7 @@ to
 * Selection of multiple document filetypes on asset type filter is not working on the page console. No results are found even if the results of one particular filetype are available. As a result, authors are unable to filter multiple documents. They must use multiple document types and they are having to filter it one at a time. (SITES-14047) 
 * After upgrading an instance from AEM 6.5.17 and AEM 6.5.18, from inside the Page Editor, if you selected **[!UICONTROL Publish Page]**, you are redirected to a URL that does not exist. The user should be redirected to the Publish wizard. (SITES-15856) 
 * Redundant copy from AEM's Clipboard during a paste from the operating system's Clipboard. (SITES-15704) 
-* In Assets, selecting **[!UICONTROL Documents]**, then under **[!UICONTROL Filtertype]**, selecting **[!UICONTROL Microsoft&reg; Word]** or **[!UICONTROL Microsoft&reg; Excel]** shows no results even though files of both types exist. (SITES-14837) 
+* In Assets, selecting **[!UICONTROL Documents]**, then under **[!UICONTROL Filtertype]**, selecting **[!UICONTROL Microsoft&reg;&reg; Word]** or **[!UICONTROL Microsoft&reg;&reg; Excel]** shows no results even though files of both types exist. (SITES-14837) 
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -185,17 +184,17 @@ to
 
 * When a user adds a toolbar to Adaptive Form, the Form Container Label shows erratic behavior because it does not change to the preferred language the Author selected for Forms. (FORMS-11371) 
 * In AEM Forms Workspace, the dropdown field selects the first option by default on the UI. (FORMS-11346) 
-* The language configuration in AEM does not show to have any effect if you use locales with five characters and the decimal separator is not correctly rendered in the letter. (FORMS-11344) 
+* The language configuration in AEM is not affected if you use locales with five characters and the decimal separator is not correctly rendered in the letter. (FORMS-11344) 
 * When a user generates the XML output using the workbench process, it fails for a few of the files. (FORMS-11314) 
 * When a user generates preview for Document of record (DOR) in languages other than English, it does not work. (FORMS-11106) 
-* When a user converts some image files with PDFG on an OSGI instance based on Linux with JDK11, it does not convert. (FORMS-11105) 
+* When a user converts some image files with PDFG on an OSGI instance based on Linux&reg; with JDK11, it does not convert. (FORMS-11105) 
 * When user installs AEM Forms add-on, it breaks the content tree panel in AEM Sites. (FORMS-10912) 
 * When a user copies dates using NVDA screen reader from Date picker component, it does not read correctly. (FORMS-10805)  
 * In Forms rule editor, the user is unable to set the value of the Radio button/Checkbox when the data value type is Boolean. (FORMS-10713) 
 * When a user adds added items in an Adaptive Form, it is added in reverse order to a drop-down List. (FORMS-10456) 
 * When a dropdown is cleared using the rule editor, the first provided value still appears even though the value has been cleared. (FORMS-9963)  
 * Users are not able to access Form Title using screen readers such as NVDA. (FORMS-8815)  
-* Users are not able to access Sub Title in a Form using screen readers such as NVDA. (FORMS-8814)  
+* Users are not able to access `Sub Title` in a Form using screen readers such as NVDA. (FORMS-8814)  
 * In the page source of html form, the access key attribute is empty and is not working. (FORMS-5753)  
 * In the About Workspace dialog, the text "Adobe Experience Manager – Forms" is presented as text. (FORMS-5748)
 
@@ -207,7 +206,9 @@ to
 * A list does not display correctly in the tags in Adobe Acrobat Reader or Adobe Acrobat DC. (LC-3921306)
 * Heading levels which are assigned correctly in Forms Designer are randomly changed to a `<P>` tag in Adobe Acrobat. (LC-3921305) 
 * In a table the ID of any object cannot be modified once it is assigned. (LC-3921134)  
-* If merged cells are in the table, no GUI is available for setting the span (row and column) and scope in a complex table in AEM Forms Designer. (LC-3919532) 
+* If merged cells are in the table, no GUI is available for setting the span (row and column) and scope in a complex table in AEM Forms Designer. (LC-3919532)
+* When a user tries to generate PDF documents after installing the forms add-on package on AEM Forms Service Pack 6.5.15.0, it fails intermittently and shows the error:
+  * `OutputServiceException AEM_OUT_001_003:Unexpected Exception: 0 Out of Memory Caused by: org.omg.CORBA.COMM_FAILURE: null` (LC-3921530)
 
 ### Foundation{#foundation-6519}
 
@@ -512,9 +513,16 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
 * When users perform the submit action, the submission fails with an error: 
-` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-To resolve the issue, [recompile the Sling scripts such as JSP, Java, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+`javax.servlet.ServletException: java.lang.NoSuchMethodError`
+To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. (FORMS-12095)
 
+#### AEM Forms on JEE 
+
+* Critical security vulnerabilities have been reported for Struts 2 RCE, a popular and open-source web application framework for developing Java EE web applications. Adobe has released [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) to address the vulnerability in AEM Forms on JEE. 
+
+
+<!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
