@@ -148,7 +148,7 @@ user-guide-title: AEM 6.5
   + Administering {#administering}
     + [Administering User Guide overview](/help/sites-administering/home.md)
     + Sites Features {#introduction}
-      + [Website Administration](/help/sites-administering/msm-and-translation.md)
+      + [MSM and Translation](/help/sites-administering/msm-and-translation.md)
       + [Asynchronous Jobs](/help/sites-administering/asynchronous-jobs.md)
       + [Reusing Content: Multi Site Manager and Live Copy](/help/sites-administering/msm.md)
       + [Live Copy Overview Console](/help/sites-administering/msm-livecopy-overview.md)
