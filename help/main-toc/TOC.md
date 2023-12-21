@@ -1351,6 +1351,23 @@ user-guide-title: AEM 6.5
     + [Headful and Headless in AEM](/help/sites-developing/headful-headless.md)
     + Headless Experience Management {#headless}
       + [Headless and AEM](/help/sites-developing/headless/introduction.md)
+      + Headless Journeys {#journeys}
+        + Headless Developer Journey {#developer}
+          + [Understand Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/overview.html)
+          + [Learn about CMS Headless Development](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/learn-about.html)
+          + [Getting Started with AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/getting-started.html)
+          + [Path to your first experience using AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/path-to-first-experience.html)
+          + [How to model your content as AEM Content Models](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/model-your-content.html)
+          + [How to access your content via AEM delivery APIs](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/access-your-content.html)
+          + [How to update your content via AEM Assets APIs](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/update-your-content.html)
+          + [How to put it all together](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/put-it-all-together.html)
+          + [How to go live with your headless application](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/go-live.html)
+          + [Optional - How to create single page applications with AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/create-spa.html)
+        + Headless Content Architect Journey {#architect}
+          + [AEM Headless Content Architect Journey Overview](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/overview.html)
+          + [Content Modeling for Headless with AEM - An Introduction](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/introduction.html)
+          + [Learn the Content Modeling Basics for Headless with AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/basics.html)
+          + [Learn about Creating Content Fragment Models in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/model-structure.html)
       + Getting Started Guides {#getting-started}
         + [Introduction](/help/sites-developing/headless/getting-started/introduction.md)
         + [Creating a Configuration](/help/sites-developing/headless/getting-started/create-configuration.md)
@@ -1358,6 +1375,18 @@ user-guide-title: AEM 6.5
         + [Creating an Assets Folder](/help/sites-developing/headless/getting-started/create-assets-folder.md)
         + [Creating a Content Fragment](/help/sites-developing/headless/getting-started/create-content-fragment.md)
         + [Accessing and Delivering Content Fragments](/help/sites-developing/headless/getting-started/create-api-request.md)
+      + Content Fragments{#content-fragments}
+        + [Headless Delivery with Content Fragments and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-graphql.html)
+        + [Working with Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html)
+        + [Enable Content Fragment Functionality for your Instance](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-configuration-browser.html)
+        + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html)
+        + [Managing Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-managing.html)
+        + [Variations - Authoring Fragment Content](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-variations.html)
+        + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-markdown.html)
+        + [Using Associated Content](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-assoc-content.html)
+        + [Metadata - Fragment Properties](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-metadata.html)
+        + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-structure-tree.html)
+        + [Preview - JSON Representation](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-json-preview.html)
       + Delivery API{#delivery-api}
         + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/mac-api-assets.html)
         + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)
