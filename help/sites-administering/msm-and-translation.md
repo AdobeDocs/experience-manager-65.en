@@ -1,7 +1,6 @@
 ---
-title: Website Administration
-
-description: Learn how to manage multilingual websites using Adobe Experience Manager.
+title: Multi Site Manager and Translation
+description: Learn how to reuse your content across your project and manage multilingual websites in Adobe Experience Manager.
 
 
 contentOwner: Guillaume Carlino
@@ -11,7 +10,7 @@ content-type: reference
 
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 ---
-# Website Administration{#website-administration}
+# Multi Site Manager and Translation {#msm-and-translation}
 
 The following administration tools are available for managing websites and pages:
 
