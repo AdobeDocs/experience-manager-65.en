@@ -1,14 +1,10 @@
 ---
 title: Forms Service
-
 description: The article describes Forms service and the form-related tasks you can perform using Forms service.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-
-exl-id: bd1216e4-2248-484b-a3c1-c209da4ff94f
+feature: Document Services
 ---
 # Forms Service {#forms-service}
 

@@ -1,12 +1,10 @@
 ---
 title: Forms Designer help
-
 description: Forms Designer help a user on submitting the form.
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-exl-id: 1847fc04-ba02-4c7c-b957-b5d7c79a2597
+feature: Forms Designer
 ---
 # Forms Designer help {#form-designer-help}
 

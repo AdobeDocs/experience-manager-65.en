@@ -1,13 +1,10 @@
 ---
 title: Viewing and Understanding Transaction Reports
-
 description: Use transaction reports to make an informed decision about the product usage and rebalancing investments in hardware and software.
-
-
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 docset: aem65
+feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
 ---
 # Viewing and Understanding Transaction Reports{#viewing-and-understanding-transaction-reports}

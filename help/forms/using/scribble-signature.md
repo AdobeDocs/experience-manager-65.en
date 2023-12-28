@@ -11,7 +11,7 @@ topic-tags: designer
 
 docset: aem65
 
-feature: Designer
+feature: Forms Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 ---
 # Using Scribble Signature in HTML5 forms{#using-scribble-signature-in-html-forms}
