@@ -1,13 +1,10 @@
 ---
 title: Previewing a form
-seo-title: Previewing a form
 description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
-seo-description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
-uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
 ---
 # Previewing a form {#previewing-a-form}

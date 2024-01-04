@@ -1,8 +1,8 @@
 ---
 title: Sample ContextHub Store Candidates
-seo-title: Sample ContextHub Store Candidates
+
 description: ContextHub provides several sample store candidates that you can use in your solutions
-seo-description: ContextHub provides several sample store candidates that you can use in your solutions
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization

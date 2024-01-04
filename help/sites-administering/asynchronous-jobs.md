@@ -15,7 +15,7 @@ These operations include:
 * Fetching assets, which are above the threshold limit set, from a remote Experience Manager deployment
 * Rolling out Live Copies
 
-You can view the status of asynchronous jobs from the **[!UICONTROL Async Job Status]** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**.
+You can view the status of asynchronous jobs from the **[!UICONTROL Async Job Status]** dashboard at **Global Navigation** > **Tools** > **Operations** > **Jobs**.
 
 >[!NOTE]
 >

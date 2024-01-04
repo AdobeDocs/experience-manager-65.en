@@ -581,7 +581,7 @@ A standard AEM installation includes the dictionaries for American English (`en_
 >
 >The RTE spell checker is available on-demand. It does not run automatically as you start typing text. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE checks the spelling of words and highlights the misspelled words.
 >
->If you incorporate any change that the spell checker suggests, the state of the text changes and misspelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
+>If you incorporate any change that the spell checker suggests, the state of the text changes and misspelled words are no longer highlighted. To run the spell checker, click Spellchecker button again.
 
 ## Configure the history size for undo and redo actions {#undohistory}
 

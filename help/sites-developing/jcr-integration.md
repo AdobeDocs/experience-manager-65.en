@@ -1,14 +1,14 @@
 ---
 title: JCR Integration
-seo-title: JCR Integration
+
 description: Learn some tips for when you need to integrate with Adobe Experience Manager at the JCR level.
-seo-description: Tips for when you must integrate at the JCR level
-uuid: 11518baf-521e-471d-ad4f-2baa76075cfa
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
+
 exl-id: 170474c1-c7f4-446c-bda4-84768d44a078
 ---
 # JCR Integration{#jcr-integration}

@@ -14,10 +14,6 @@ feature: Security
 >
 >This feature is available to Adobe Managed Services customers only.
 
->[!NOTE]
->
->Adobe Experience Manager (AEM) currently does not support assigning groups to profiles. Users should be added individually instead.
-
 ## Introduction {#introduction}
 
 AEM 6.4.3.0 introduces [!DNL Admin Console] support for AEM instances and Adobe IMS(Identity Management System) based authentication for **AEM Managed Services** customers.

@@ -1,16 +1,11 @@
 ---
 title: ASRP - Adobe Storage Resource Provider
-seo-title: ASRP - Adobe Storage Resource Provider
 description: Set up AEM Communities to use a relational database as its common store
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
-
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
 ---

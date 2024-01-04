@@ -1,8 +1,8 @@
 ---
 title: AEM 6.5 Authoring User Guide
-seo-title: AEM 6.5 Authoring User Guide
+
 description: Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates and other page features.
-seo-description: Explains the concepts of authoring in AEM.
+
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
 ---
 # AEM 6.5 Authoring User Guide
@@ -23,7 +23,6 @@ Explore the key concepts of creating content and authoring in AEM 6.5. You will 
 | [Release Notes](/help/release-notes/home.md)| Provides important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues. |
 | [Assets User Guide](/help/assets/home.md) | Learn how to create, manage, deliver, and optimize digital assets. |
 | [Forms User Guide](/help/forms/home.md) | This guide describes how to create, manage, publish, and update digital forms.|
-| [Communities User Guide](/help/communities/home.md) | Create online experiences such as forums, user groups, learning resources, and other social features.  |
 | [Administering Guide](/help/sites-administering/home.md) | Understand how to administer AEM |
 | [Authoring Guide](/help/sites-authoring/home.md) | This guide explains the concepts of authoring in AEM. |
 | [Classic UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | This guide explains the concepts of authoring in AEM in the classic user interface. |
@@ -32,7 +31,6 @@ Explore the key concepts of creating content and authoring in AEM 6.5. You will 
 | [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your AEM instance. |
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an AEM project successfully. |
 | [Commerce User Guide](/help/commerce/home.md)|Learn about Commerce Integration Framework on AEM.|
-| [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
 
 ## Key AEM resources
 

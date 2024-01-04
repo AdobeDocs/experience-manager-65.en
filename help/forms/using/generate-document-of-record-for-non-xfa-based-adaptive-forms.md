@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 ---
-# Generate Document of Record for adaptive forms{#generate-document-of-record-for-adaptive-forms}
+# Generate Document of Record for adaptive forms or adaptive form fragments {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
@@ -22,7 +22,7 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 
 After submitting a form, your customers generally want to keep a record, in print or in document format, of the information they have filled in the form for their future reference. This is referred to as a document of record.
 
-This article explains how you can generate a document of record for adaptive forms.
+This article explains how you can generate a document of record for Adaptive Forms or Adaptive Form fragment.
 
 >[!NOTE]
 >
@@ -63,6 +63,8 @@ Automatically generated document of record has the following advantages:
 To generate a document of record for adaptive forms, you need the following components:
 
 **Adaptive form** Adaptive form for which you want to generate a document of record.
+
+**Adaptive form fragment** Adaptive form fragment for which you want to generate a document of record.
 
 **Base template (recommended)** XFA template (XDP file) created in AEM Designer. Base template is used to specify styling and branding information for document of record template.
 
@@ -261,14 +263,14 @@ Perform the following steps to configure a document of record for adaptive forms
 
 1. In AEM author instance, click **Forms &gt; Forms and Documents.**
 1. Select a form, and click **View Properties**.
-1. In the Properties window, tap **Form Model**.
+1. In the Properties window, select **Form Model**.
    You can also select a form model when you create a form.
 
    >[!NOTE]
    >
    >In the Form Model tab, ensure that you select **Schema** or **None** from the **Select From** drop-down. **[!UICONTROL Document of record is not supported for XFA-based or adaptive forms with Form Template as form model.]**
 
-1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options.
+1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options:
 
    **None** Select this option if you don't want to configure document of record for the form.
 
@@ -297,8 +299,8 @@ While generating a document of record, you can change branding information for t
 
 To localize the branding information that you enter in the Document of Record tab, you need to ensure the locale of the browser is set appropriately. To customize the branding information of document of record, complete the following steps:
 
-1. Select a panel (root panel) in the document of record and then tap ![configure](assets/configure.png).
-1. Tap ![dortab](/help/forms/using/assets/dortab.png). The Document of Record tab appears.
+1. Select a panel (root panel) in the document of record and then select ![configure](assets/configure.png).
+1. Select ![dortab](/help/forms/using/assets/dortab.png). The Document of Record tab appears.
 1. Select either the default template or a custom template for rendering the document of record. If you select the default template, a thumbnail preview of the document of record appears below the Template drop-down.
 
    ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
@@ -343,7 +345,7 @@ To localize the branding information that you enter in the Document of Record ta
    </proto>
    ```
 
-1. To save the branding changes, tap Done.
+1. To save the branding changes, select Done.
 
 ## Table and column layouts for panels in Document of Record {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -391,6 +393,10 @@ The document of record settings of a component are available under its propertie
   * **[!UICONTROL Overflow]** > **[!UICONTROL Go to Content Area]** > Name of content area: Starts filling the specified content area.
   * **[!UICONTROL Overflow]** > **[!UICONTROL Go To Page]** > Name of page: Starts filling the specified page.
 
+  >[!NOTE]
+  >
+  > Pagination property is not available for adaptive form fragments.
+
 For information on how to apply page breaks and apply multiple master pages in a Document of Record, see [Apply page break in a Document of Record](#apply-page-breaks-in-dor) and [Apply multiple master pages to a Document of Record](#apply-multiple-master-pages-dor).
     
 **Form level settings**
@@ -404,12 +410,12 @@ You can apply page breaks in a Document of Record using multiple methods.
 
 To apply a page break to a Document of Record:
 
-1. Tap the panel and select ![Configure](/help/forms/using/assets/configure.png)
+1. Select the panel and select ![Configure](/help/forms/using/assets/configure.png)
 1. Expand **[!UICONTROL Document of Record]** to view the properties.
 
-1. In the **[!UICONTROL Pagination]** section, tap ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
-1. Tap **[!UICONTROL Top of Next page]** and tap **[!UICONTROL Select]**. You can also tap **[!UICONTROL Top of Page]**, select the master page, and tap **[!UICONTROL Select]** to apply the page break.
-1. Tap ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
+1. In the **[!UICONTROL Pagination]** section, select ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
+1. Select **[!UICONTROL Top of Next page]** and select **[!UICONTROL Select]**. You can also select **[!UICONTROL Top of Page]**, select the master page, and select **[!UICONTROL Select]** to apply the page break.
+1. Select ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
 
 The selected panel moves to the next page.
 
@@ -424,15 +430,18 @@ You upload an XDP template that includes four master pages to the [!DNL AEM Form
 
 To apply the second master page properties to a panel and the third master page properties to the panels that follow, execute the following steps:
 
-1. Tap the panel to apply the second master page and select ![Configure](assets/cmppr.png). 
-1. In the **[!UICONTROL Pagination]** section, tap ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
-1. Tap **[!UICONTROL On page]**, select the second master page and tap **[!UICONTROL Select]**.
+1. Select the panel to apply the second master page and select ![Configure](assets/cmppr.png). 
+1. In the **[!UICONTROL Pagination]** section, select ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
+1. Select **[!UICONTROL On page]**, select the second master page and select **[!UICONTROL Select]**.
    AEM Forms applies second master page to the panel and all subsequent panels in the adaptive form.
-1. In the **[!UICONTROL Pagination]** section, tap ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL After]** field.
-1. Tap **[!UICONTROL Go To page]**, select the third master page and tap **[!UICONTROL Select]**.
-1. Tap ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
+1. In the **[!UICONTROL Pagination]** section, select ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL After]** field.
+1. Select **[!UICONTROL Go To page]**, select the third master page and select **[!UICONTROL Select]**.
+1. Select ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
    AEM Forms applies third master page to the panel and all subsequent panels in the adaptive form.
 
+>[!NOTE]
+>
+> You can not apply multiple master pages to a Document of Record for an adaptive form Fragment.
 
 ## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 

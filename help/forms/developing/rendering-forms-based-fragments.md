@@ -1,15 +1,15 @@
 ---
 title: Rendering Forms Based on Fragments
-seo-title: Rendering Forms Based on Fragments
+
 description: Use the Forms service to render forms that are based on fragments created using Designer.
-seo-description: Use the Forms service to render forms that are based on fragments created using Designer.
-uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
+
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 ---

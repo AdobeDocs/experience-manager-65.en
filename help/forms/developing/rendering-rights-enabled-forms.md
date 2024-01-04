@@ -1,15 +1,15 @@
 ---
 title: Rendering Rights-Enabled Forms
-seo-title: Rendering Rights-Enabled Forms
+
 description: Use the Forms service to render forms that have usage rights applied to them. You can render rights-enabled forms using the Java API and Web Service API.
-seo-description: Use the Forms service to render forms that have usage rights applied to them. You can render rights-enabled forms using the Java API and Web Service API.
-uuid: ce5e4be6-d9b0-4989-a0e1-a8c3b98aed77
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
+
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 ---
@@ -51,7 +51,7 @@ Before you can programmatically perform a Forms service Client API operation, yo
 
 **Set usage rights run-time options**
 
-Set usage rights run-time options to render a rights-enabled form. You must also specify the alias of the credential that is used to apply usage rights to a form. After you specify the alias value, you specify each usage right to apply to the form.
+Set usage rights run-time options to render a rights-enabled form. Specify the alias of the credential that is used to apply usage rights to a form. After you specify the alias value, you specify each usage right to apply to the form.
 
 **Render a rights-enabled form**
 
@@ -87,7 +87,7 @@ Render a rights-enabled form by using the Forms API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-forms-client.jar, in your Java project's class path.
 
 1. Create a Forms Client API object
 
@@ -97,16 +97,16 @@ Render a rights-enabled form by using the Forms API (Java):
 1. Set usage rights run-time options
 
     * Create a `ReaderExtensionSpec` object by using its constructor.
-    * Specify the alias of the credential by invoking the `ReaderExtensionSpec` object’s `setReCredentialAlias` method and specify a string value that represents the alias value.
-    * Set each usage right by invoking the corresponding method that belongs to the `ReaderExtensionSpec` object. However, you can only set a usage right if the credential that you reference lets you do so. That is, you cannot set a usage right if the credential does not let you set it. For example. to set the usage right that enables a user to fill in form fields and save the form, invoke the `ReaderExtensionSpec` object’s `setReFillIn` method and pass `true`.
+    * Specify the alias of the credential by invoking the `ReaderExtensionSpec` object's `setReCredentialAlias` method and specify a string value that represents the alias value.
+    * Set each usage right by invoking the corresponding method that belongs to the `ReaderExtensionSpec` object. However, you can only set a usage right if the credential that you reference lets you do so. That is, you cannot set a usage right if the credential does not let you set it. For example. to set the usage right that enables a user to fill in form fields and save the form, invoke the `ReaderExtensionSpec` object's `setReFillIn` method and pass `true`.
 
    >[!NOTE]
    >
-   >It is not necessary to invoke the `ReaderExtensionSpec` object’s `setReCredentialPassword` method. This method is not used by the Forms service.
+   >It is not necessary to invoke the `ReaderExtensionSpec` object's `setReCredentialPassword` method. This method is not used by the Forms service.
 
 1. Render a rights-enabled form
 
-   Invoke the `FormsServiceClient` object’s `renderPDFFormWithUsageRights` method and pass the following values:
+   Invoke the `FormsServiceClient` object's `renderPDFFormWithUsageRights` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
     * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object.
@@ -118,13 +118,13 @@ Render a rights-enabled form by using the Forms API (Java):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method.
+    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object 's `getOutputContent` method.
     * Get the content type of the `com.adobe.idp.Document` object by invoking its `getContentType` method.
-    * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
-    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
-    * Create a byte array populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument.
-    * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
+    * Set the `javax.servlet.http.HttpServletResponse` object's content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
+    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object's `getOutputStream` method.
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object's `getInputStream` method.
+    * Create a byte array populate it with the form data stream by invoking the `InputStream` object's `read` method and passing the byte array as an argument.
+    * Invoke the `javax.servlet.ServletOutputStream` object's `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
 
@@ -150,12 +150,12 @@ Render a rights-enabled form by using the Forms API (web service):
 1. Set usage rights run-time options
 
     * Create a `ReaderExtensionSpec` object by using its constructor.
-    * Specify the alias of the credential by invoking the `ReaderExtensionSpec` object’s `setReCredentialAlias` method and specify a string value that represents the alias value.
-    * Set each usage right by invoking the corresponding method that belongs to the `ReaderExtensionSpec` object. However, you can only set a usage right if the credential that you reference lets you do so. That is, you cannot set a usage right if the credential does not let you set it. To set the usage right that enables a user to fill in form fields and save the form, invoke the `ReaderExtensionSpec` object’s `setReFillIn` method and pass `true`.
+    * Specify the alias of the credential by invoking the `ReaderExtensionSpec` object's `setReCredentialAlias` method and specify a string value that represents the alias value.
+    * Set each usage right by invoking the corresponding method that belongs to the `ReaderExtensionSpec` object. However, you can only set a usage right if the credential that you reference lets you do so. That is, you cannot set a usage right if the credential does not let you set it. To set the usage right that enables a user to fill in form fields and save the form, invoke the `ReaderExtensionSpec` object's `setReFillIn` method and pass `true`.
 
 1. Render a rights-enabled form
 
-   Invoke the `FormsService` object’s `renderPDFFormWithUsageRights` method and pass the following values:
+   Invoke the `FormsService` object's `renderPDFFormWithUsageRights` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
     * A `BLOB` object that contains data to merge with the form. If you do not want to merge data with the form, you must pass a `BLOB` object that is based on an empty XML data source. You cannot pass a `BLOB` object that is null; otherwise, an exception is thrown.
@@ -167,12 +167,12 @@ Render a rights-enabled form by using the Forms API (web service):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
+    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object's `getOutputContent` method.
     * Get the content type of the `BLOB` object by invoking its `getContentType` method.
-    * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
-    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
-    * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
+    * Set the `javax.servlet.http.HttpServletResponse` object's content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
+    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object's `getOutputStream` method.
+    * Create a byte array and populate it by invoking the `BLOB` object's `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
+    * Invoke the `javax.servlet.http.HttpServletResponse` object's `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **See also**
 

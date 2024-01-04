@@ -78,9 +78,9 @@ In addition to JBoss&reg; server, you can add -Dabtesting.enabled=true jvm argum
 
 AEM lets you create an audience, and use it for an A/B test. The audience you create within AEM is available in AEM Forms. To create audiences within AEM, do the following:
 
-1. In authoring instance, tap **Adobe Experience Manager** &gt; **Personalization** &gt; **Audiences**.
+1. In authoring instance, select **Adobe Experience Manager** &gt; **Personalization** &gt; **Audiences**.
 
-1. In the Audiences page, tap **Create Audience &gt; Create Target Audience**.
+1. In the Audiences page, select **Create Audience &gt; Create Target Audience**.
 1. In the Adobe Target Configuration dialog, select a Target configuration and click **Ok**.
 1. In the Create New Audience page, create rules. Rules let you categorize the audience. For example, you want to categorize audiences based on operating system. Your audience A comes from Windows, and audience B comes from Linux&reg;.
 

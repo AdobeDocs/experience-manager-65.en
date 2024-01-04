@@ -1,14 +1,14 @@
 ---
 title: Granite Operations - User and Group Administration
-seo-title: Granite Operations - User and Group Administration
+
 description: Learn about Granite user and group administration.
-seo-description: Learn about Granite user and group administration.
-uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
+
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 ---
@@ -216,7 +216,7 @@ Choosing either **Users** or **Groups** from the Tools console opens the appropr
 
 1. The **Edit Group Settings** form will be opened.
 
-   The group ID will be the same as the original, but prefixed with `Copy of`. You must edit this as the ID cannot contain spaces. All other details will be the same as the original.
+   The group ID will be the same as the original, but prefixed with `Copy of`. Edit this ID because it cannot contain spaces. All other details are the same as the original.
 
    You can now edit and save the details as in [Adding a New Group](#adding-a-new-group).
 

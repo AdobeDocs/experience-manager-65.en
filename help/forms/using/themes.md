@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 ---
 # Creating and using themes {#creating-and-using-themes}
@@ -360,7 +360,7 @@ When you select a component in the Canvas, you see the component toolbar on top 
 * **Numeric Box Widget**: Lets you select the component to customize its look in sidebar.
 * **Field Widget**: Lets you select the generic component for styling. In this example, all text input components (text box/numeric box/numeric stepper/date input) are selected for styling.
 
-* ![field-level](assets/field-level.png): Lets you switch to generic component for styling. If you select numeric box and tap this icon, field component is selected. If you select field component and tap this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
+* ![field-level](assets/field-level.png): Lets you switch to generic component for styling. If you select numeric box and select this icon, field component is selected. If you select field component and select this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
 
 >[!NOTE]
 >
@@ -587,7 +587,7 @@ To copy a theme, perform the following steps:
 
 1. In authoring instance, navigate to **Adobe Experience Manager &gt; Forms &gt; Themes**.
 1. Open the Theme Library folder.
-1. In the Theme Library folder, hover pointer over the corresponding out-of-the-box theme and tap **Copy**.
+1. In the Theme Library folder, hover pointer over the corresponding out-of-the-box theme and select **Copy**.
 1. Paste the copied theme outside the Theme Library folder.
 1. Customize the copied theme.
 

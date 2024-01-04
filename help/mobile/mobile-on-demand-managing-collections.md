@@ -58,7 +58,7 @@ The workflow to import a new Collection
 
 >[!CAUTION]
 >
->You must associate a Mobile On-Demand connection first.
+>Associate a Mobile On-Demand connection first.
 
 ## Editing a Collection {#editing-a-collection}
 

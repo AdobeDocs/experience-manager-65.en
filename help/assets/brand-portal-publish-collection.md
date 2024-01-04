@@ -1,16 +1,11 @@
 ---
 title: Publish collections to Brand Portal
-seo-title: Publish collections to Brand Portal
 description: Learn how to publish and unpublish collections to Brand Portal.
-seo-description: Learn how to publish and unpublish collections to Brand Portal.
-uuid: 7de58548-4cfa-4a94-bac7-9e914dee9042
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
 content-type: reference
-discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
-
 feature: Brand Portal
 role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538

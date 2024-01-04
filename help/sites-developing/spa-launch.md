@@ -14,7 +14,7 @@ Adobe Experience Platform Launch is the recommended way to implement Analytics, 
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
 
 ## Tutorial {#tutorial}
 

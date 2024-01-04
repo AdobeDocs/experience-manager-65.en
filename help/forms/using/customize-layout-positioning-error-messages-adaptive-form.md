@@ -24,8 +24,8 @@ To apply a custom layout to a field, do the following:
 
 ### Customize layout of a single field {#customize-layout-of-a-single-field}
 
-1. Open the form in **Style** mode. To open the form in style mode, in the page toolbar tap ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Style**.
-1. In the sidebar, under **Form Objects**, select the field and tap the edit button ![edit-button](assets/edit-button.png).
+1. Open the form in **Style** mode. To open the form in style mode, in the page toolbar select ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Style**.
+1. In the sidebar, under **Form Objects**, select the field and select the edit button ![edit-button](assets/edit-button.png).
 1. Select the state of the field that you want to customize, and specify the styling for that state. 
 
    ![Specifying inline styling of a field](assets/edit-error-state.png)
@@ -37,7 +37,7 @@ With AEM Forms, you can now create a theme and apply it to your form. Theme edit
 Create a theme using Theme Editor to customize the layout of all fields in your form. After you create a theme, perform the following steps to apply it to a form:
 
 1. Open your form in edit mode. 
-1. In the edit mode, select a component, then tap ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
+1. In the edit mode, select a component, then select ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then select ![cmppr](assets/cmppr.png).
 1. In the sidebar, under Adaptive Form Theme, select the theme you have created using the Theme Editor.
 
 ## Create a custom field layout {#create-a-custom-field-layout}

@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-exl-id: edaf12be-473f-4175-b4e0-549b41159a55
+feature: Document Services
 ---
 # Barcoded Forms Service{#barcoded-forms-service}
 

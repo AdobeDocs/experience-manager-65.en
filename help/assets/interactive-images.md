@@ -259,7 +259,7 @@ See [(Optional) Preview interactive images](#optional-previewing-interactive-ima
 
     * Select the image so you can open it in the Detail View page. On the toolbar, select **[!UICONTROL Edit]**.
 
-1. Near the upper-left corner of the page, select **[!UICONTROL Add Hotspot]** (finger tap icon) to open the Hotspot management page.
+1. Near the upper-left corner of the page, select **[!UICONTROL Add Hotspot]** (finger select icon) to open the Hotspot management page.
 1. Near the upper-left corner of the page, select **[!UICONTROL Hotspot]**.
 
    1. Near the upper-left corner of the Hotspot Management page, select **[!UICONTROL Hotspot]**.

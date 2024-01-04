@@ -4,7 +4,7 @@ description: You can use the separator component to visually segregate sections 
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
 ---
 # Separator component in adaptive forms{#separator-component-in-adaptive-forms}
@@ -24,7 +24,7 @@ You can use the Layout mode to define the number of columns that the separator c
 
 To specify the properties of a separator component:
 
-1. Select a separator component and tap ![cmppr](assets/cmppr.png). The properties open in the sidebar.
+1. Select a separator component and select ![cmppr](assets/cmppr.png). The properties open in the sidebar.
 1. Click a tab in the Inline CSS Properties section so you can specify CSS properties. For example: a. In the Field tab, click **Add Item**. A row with two fields gets added.
 1. In the first field from the left, specify a CSS3 property you want to apply. For example, **border**. You can also select a property by clicking the down-arrow button. The drop-down list is not exhaustive and you can specify any supported CSS3 property name in this field.
 1. In the adjoining field, specify a valid value for the specified CSS3 property. For example, **3-px solid black**.

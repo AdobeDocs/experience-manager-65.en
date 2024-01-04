@@ -422,7 +422,7 @@ AEM 6.5 Forms bring in several new features and enhancements. The highlights inc
 
 See the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources.
 
-### Use Customer-focused Development {#leverage-customer-focused-development}
+### Use Customer-focused Development {#use-customer-focused-development}
 
 Adobe is using a customer focused development model that allows customers to contribute to all stages of the development process, during specification, development, and testing. Our thanks go to all contributing customers and partners in this process.
 

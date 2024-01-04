@@ -1,14 +1,14 @@
 ---
 title: Encryption Support for Configuration Properties
-seo-title: Encryption Support for Configuration Properties
+
 description: Learn about the encryption support for configuration properties provided in AEM.
-seo-description: null
-uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: security
-discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
+
 exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
 ---
 # Encryption Support for Configuration Properties{#encryption-support-for-configuration-properties}

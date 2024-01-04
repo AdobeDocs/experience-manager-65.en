@@ -1,14 +1,14 @@
 ---
 title: Previewing Pages Using ContextHub Data
-seo-title: Previewing Pages Using ContextHub Data
+
 description: The ContextHub toolbar displays data from ContextHub stores and enables you to change store data and  is useful for previewing content
-seo-description: The ContextHub toolbar displays data from ContextHub stores and enables you to change store data and  is useful for previewing content
-uuid: 0150555a-0a92-4692-a706-bbe59fd34d6a
+
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
+
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
 ---
 # Previewing Pages Using ContextHub Data{#previewing-pages-using-contexthub-data}
@@ -17,7 +17,7 @@ The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data fro
 
 The toolbar consists of a series of UI modes that contain one or more UI modules.
 
-* UI modes are icons that appear on the left hand side of the toolbar. When you click or tap an icon, the toolbar reveals the UI modules that it contains.
+* UI modes are icons that appear on the left hand side of the toolbar. When you click an icon, the toolbar reveals the UI modules that it contains.
 * UI modules display data from one or more ContextHub stores. Some UI modules also enable you to manipulate store data.
 
 ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-developing/ch-configuring.md) to display different ones.
@@ -30,11 +30,11 @@ The ContextHub toolbar is available in Preview mode. The toolbar is available on
 
 ![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
 
-1. With your page open for editing, on the toolbar click or tap Preview.
+1. With your page open for editing, on the toolbar click Preview.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. To reveal the toolbar, click or tap the ContextHub icon.
+1. To reveal the toolbar, click the ContextHub icon.
 
    ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
@@ -60,6 +60,6 @@ The popup overlay of a module can include form elements that enable you to chang
 
 ### Fullscreen Mode {#fullscreen-mode}
 
-Popup overlays can include an icon that you click or tap to expand the popup content to cover the entire browser window or screen.
+Popup overlays can include an icon that you click to expand the popup content to cover the entire browser window or screen.
 
 ![Full screen](do-not-localize/chlimage_1-18.png)

@@ -3,7 +3,7 @@ title: Best practices for working with adaptive forms
 description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 ---
 # Best practices for working with adaptive forms {#best-practices-for-working-with-adaptive-forms}

@@ -1,14 +1,14 @@
 ---
 title: High-volume secure information delivery
-seo-title: High-volume secure information delivery
+
 description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
-seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
-uuid: 9747d283-506c-434e-9850-e50b95290cc8
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
+
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
 ---

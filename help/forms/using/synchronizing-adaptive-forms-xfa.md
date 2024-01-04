@@ -1,13 +1,12 @@
 ---
 title: Synchronizing Adaptive Forms with XFA Form Templates
 description: Learn how to synchronize forms with XFA/XDP files. It reuses fields of forms synchronized with changes made to the corresponding fields in the XFA/XDP files.
-uuid: 92818132-1ae0-4576-84f2-ece485a34457
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
-docset: aem65
 
-feature: Adaptive Forms
+docset: aem65
+feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 ---
 # Synchronizing Adaptive Forms with XFA Form Templates{#synchronizing-adaptive-forms-with-xfa-form-templates}

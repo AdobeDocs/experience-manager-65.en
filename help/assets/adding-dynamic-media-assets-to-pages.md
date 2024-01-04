@@ -1,12 +1,10 @@
 ---
 title: Add Dynamic Media Assets to pages
 description: How to add Dynamic Media components to a page in Adobe Experience Manager.
-uuid: b5e982f5-fa1c-478a-bcb3-a1ef980df201
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
@@ -239,7 +237,7 @@ Edit the following Dynamic Media Setting by selecting **[!UICONTROL Edit]** in t
 
     You can edit the following Advanced Settings by selecting **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
+* **[!UICONTROL Enable Aspect Ratio match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
 
 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 

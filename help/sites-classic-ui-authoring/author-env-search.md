@@ -1,12 +1,12 @@
 ---
 title: Search
 description: The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
-uuid: 6dd3df4d-6040-4230-8373-fc028687b675
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
+
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 ---
@@ -20,7 +20,7 @@ The author environment of AEM provides various mechanisms for searching for cont
 
 ## Search Basics {#search-basics}
 
-To access the search panel, click on the **Search** tab at the top of the left-hand pane of the appropriate console.
+To access the search panel, click the **Search** tab at the top of the left-hand pane of the appropriate console.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 

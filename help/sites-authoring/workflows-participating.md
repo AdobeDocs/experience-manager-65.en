@@ -38,7 +38,7 @@ When you are assigned a work item (for example, **Approve Content**) various ale
     * The number of workflows that the page is subject to. You can:
 
         * use the left/right arrows to navigate through the status information of the various workflows.
-        * click/tap on the actual number to open a drop-down list of all applicable workflows, then select the workflow you want displayed in the status bar.
+        * click on the actual number to open a drop-down list of all applicable workflows, then select the workflow you want displayed in the status bar.
 
   ![wf-59](assets/wf-59.png)
 
@@ -49,7 +49,7 @@ When you are assigned a work item (for example, **Approve Content**) various ale
   >
   >Actions are shown when the current user is directly involved in the current step of the workflow.
 
-* When **Timeline** is open for the resource, the workflow step is shown. When you click/tap on the alert banner, the available actions will also be shown:
+* When **Timeline** is open for the resource, the workflow step is shown. When you click on the alert banner, the available actions will also be shown:
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -74,7 +74,7 @@ You can complete a participant step from either:
 Use the following procedure to complete the work item:
 
 1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Select the workflow item you want to take action on (tap/click on the thumbnail).
+1. Select the workflow item you want to take action on (click the thumbnail).
 1. Select **Complete** from the toolbar.
 1. The **Complete Work Item** dialog box opens. Select the **Next Step** from the drop-down selector and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
@@ -96,7 +96,7 @@ You can also use timeline to complete and advance a step:
 
    ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
-1. Click/tap on the alert banner to show available actions. Select **Advance**:
+1. Click on the alert banner to show available actions. Select **Advance**:
 
    ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
@@ -133,7 +133,7 @@ You can delegate a participant step from either:
 Use the following procedure to delegate a work item:
 
 1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Select the workflow item you want to take action on (tap/click on the thumbnail).
+1. Select the workflow item you want to take action on (click the thumbnail).
 1. Select **Delegate** from the toolbar.
 1. The dialog box opens. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
@@ -152,7 +152,7 @@ Use the following procedure to delegate a work item:
 You can also use timeline to delegate and/or assign a step:
 
 1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
-1. Click/tap on the alert banner to show available actions. Select **Change Assignee**:
+1. Click on the alert banner to show available actions. Select **Change Assignee**:
 
    ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
@@ -183,7 +183,7 @@ You can perform step back on a participant step from either:
 Use the following procedure to step back:
 
 1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Select the workflow item you want to take action on (tap/click on the thumbnail).
+1. Select the workflow item you want to take action on (click the thumbnail).
 1. Select **Step Back** to open the dialog.
 
 1. Specify the **Previous Step** and add a **Comment** if necessary.
@@ -203,7 +203,7 @@ Use the following procedure to step back:
 You can also use timeline to roll (step) back to a previous step:
 
 1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
-1. Click/tap on the alert banner to show available actions. Select **Roll back**:
+1. Click on the alert banner to show available actions. Select **Roll back**:
 
    ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
 
@@ -245,7 +245,7 @@ You can open the work item details from either:
 To open a workflow item and view the details:
 
 1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Select the workflow item you want to take action on (tap/click on the thumbnail).
+1. Select the workflow item you want to take action on (click the thumbnail).
 1. Select **Open** to open the information tabs.
 
 1. If necessary, select the appropriate action, supply any details and confirm with **OK** (or **Cancel**).
@@ -268,7 +268,7 @@ You can view details of the payload associated with the workflow instance. Initi
 To view the payload, and resources, of the workflow instance:
 
 1. Open the **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Select the workflow item you want to take action on (tap/click on the thumbnail).
+1. Select the workflow item you want to take action on (click the thumbnail).
 1. Select **View Payload** from the toolbar to open the dialog.
 
    As a workflow package is simply a collection of pointers to paths within the repository, you can add/remove/modify the entries here to adjust what is referenced by the workflow package. Use the **Resource Definition** component to add new entries.

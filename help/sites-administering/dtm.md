@@ -1,14 +1,14 @@
 ---
 title: Integrating with Adobe Dynamic Tag Management
-seo-title: Integrating with Adobe Dynamic Tag Management
+
 description: Learn about integration with Adobe Dynamic Tag Management.
-seo-description: Learn about integration with Adobe Dynamic Tag Management.
-uuid: cbb9f942-44e3-4cd5-b07d-4298a7a08376
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
+
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
 ---
 # Integrating with Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
@@ -52,7 +52,7 @@ If desired, your author instance can use the production libraries. Web browser p
 
 When AEM hosts the Dynamic Tag Management libraries, you can use the Dynamic Tag Management deployment hook service to automatically push library updates to AEM. Library updates are pushed when changes are made to the libraries such as when the Dynamic Tag Management web property properties are edited.
 
-To use the deployment hook, Dynamic Tag Management must be able to connect to the AEM instance that hosts the libaries. You must [enable access to AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) for the Dynamic Tag Management servers.
+To use the deployment hook, Dynamic Tag Management must be able to connect to the AEM instance that hosts the libaries. [Enable access to AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) for the Dynamic Tag Management servers.
 
 In some circumstances AEM can be unreachable, such as when AEM lies behind a firewall. In these cases, you can use the AEM polling importer option to periodically retrieve the libraries. A cron job expression dictates the schedule for library downloads.
 

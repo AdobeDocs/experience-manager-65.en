@@ -186,7 +186,7 @@ Unless all pages have been created for you in advance, before you can start crea
 
 1. From the first stage of the wizard you can either:
 
-    * Select the template you want used to create the new page, then click/tap **Next** to proceed.
+    * Select the template you want used to create the new page, then click **Next** to proceed.
 
     * **Cancel** to abort the process.
 
@@ -194,7 +194,7 @@ Unless all pages have been created for you in advance, before you can start crea
 
 1. From the final stage of the wizard you can either:
 
-    * Use the three tabs to enter the [page properties](/help/sites-authoring/editing-page-properties.md) you want assigned to the new page, then click/tap **Create** to actually create the page.
+    * Use the three tabs to enter the [page properties](/help/sites-authoring/editing-page-properties.md) you want assigned to the new page, then click **Create** to actually create the page.
 
     * Use **Back** to return to template selection.
 
@@ -319,7 +319,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 1. From the **Rename** stage of the wizard you can either:
 
-    * Specify the name you want the page to have after it is moved, then click/tap **Next** to proceed.
+    * Specify the name you want the page to have after it is moved, then click **Next** to proceed.
 
     * **Cancel** to abort the process.
 
@@ -380,7 +380,7 @@ Page move actions are always processed asynchronously, allowing the user to cont
 
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 
-The status of asynchronous jobs can be checked in the [**Async Jobs Status** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+The status of asynchronous jobs can be checked in the [**Async Jobs Status** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** > **Tools** > **Operations** > **Jobs**
 
 >[!NOTE]
 >

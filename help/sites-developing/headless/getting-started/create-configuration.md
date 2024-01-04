@@ -21,7 +21,7 @@ In the context of headless content management in AEM, think of a configuration a
 
 An administrator would only need to create a configuration once, or very seldomly when a new workspace is required for organizing your Content Models. For the purposes of this getting started guide, we only need to create one configuration.
 
-1. Log into AEM and from the main menu select **Tools -&gt; General -&gt; Configuration Browser**.
+1. Log into AEM and from the main menu select **Tools > General > Configuration Browser**.
 1. Provide a **Title** for your configuration.
    * A name will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/sites-developing/naming-conventions.md). It will become the node name in the repository.
 1. Check the following options:
@@ -30,7 +30,7 @@ An administrator would only need to create a configuration once, or very seldoml
 
    ![Create Configuration](assets/create-configuration.png)
 
-1. Tap or click **Create**
+1. Click **Create**
 
 You can create multiple configurations if necessary. Configurations can also be nested.
 

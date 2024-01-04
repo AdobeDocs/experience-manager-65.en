@@ -1,14 +1,14 @@
 ---
 title: Content Management for Screens
-seo-title: Content Management for Screens
+
 description: Learn about the basics of Content Management for Screens.
-seo-description: Learn about the basics of Content Management for Screens.
-uuid: eee0036e-b352-4cde-84d2-04b27d3dfe95
+
+
 contentOwner: Jyotika Syal
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 014b5fdd-6522-4394-87bb-fe264492ba34
+
 exl-id: 3354d650-532a-488b-8d8b-b6e1fc30c30f
 ---
 # Content Management for Screens{#content-management-for-screens}

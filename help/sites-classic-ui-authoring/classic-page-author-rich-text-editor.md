@@ -82,7 +82,7 @@ Whereas a format is applied to the entire text paragraph (a format is HTML-based
 
 A specific format can only be changed (the default is **[!UICONTROL Paragraph]**).
 
-A style can be removed; place the cursor within the text to which the style has been applied and click on the remove icon:
+A style can be removed; place the cursor within the text to which the style has been applied and click the remove icon:
 
 >[!CAUTION]
 >
@@ -177,7 +177,7 @@ To break the link position the cursor anywhere within the link text and click th
 
 ![Anchors toolbar](do-not-localize/cq55_rte_anchor.png)
 
-An anchor can be created anywhere within the text by either positioning the cursor, or selecting some text. Then click on the **Anchor** icon to open the dialog.
+An anchor can be created anywhere within the text by either positioning the cursor, or selecting some text. Then click the **Anchor** icon to open the dialog box.
 
 Enter the name of the anchor then click **OK** to save.
 

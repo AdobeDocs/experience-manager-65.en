@@ -105,7 +105,7 @@ You can specify details:
 
 1. In the **Scope** step you can select:
 
-    * **Add Content** to open the [path browser](/help/sites-authoring/author-environment-tools.md#path-browser) and select additional resources; when in the browser, click/tap **Select** to add the content to the workflow instance.
+    * **Add Content** to open the [path browser](/help/sites-authoring/author-environment-tools.md#path-browser) and select additional resources; when in the browser, click **Select** to add the content to the workflow instance.
 
     * An existing resource to see additional actions:
 

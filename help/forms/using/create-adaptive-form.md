@@ -29,14 +29,14 @@ You will have a form similar to the following by end of article:
 ## Step 1: Create the adaptive form {#step-create-the-adaptive-form}
 
 1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**. The default URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments). 
-1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Adaptive Form]**. An option to select a template appears. Tap the **[!UICONTROL Blank]** template to select it and tap **[!UICONTROL Next]**.  
+1. Select **[!UICONTROL Create]** and select **[!UICONTROL Adaptive Form]**. An option to select a template appears. Select the **[!UICONTROL Blank]** template to select it and select **[!UICONTROL Next]**.  
 
 1. An option to **[!UICONTROL Add Properties]** appears. The **[!UICONTROL Title]** and **[!UICONTROL Name]** fields are mandatory:
 
     * **Title:** Specify `Add new or update shipping address` in the **[!UICONTROL Title]** field. The title field specifies the display name of the form. The title helps you identify the form in the AEM [!DNL Forms] user interface.
     * **Name:** Specify `shipping-address-add-update-form` in the **[!UICONTROL Name]** field. The Name field specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
 
-1. Tap **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears. Tap **[!UICONTROL Open]** to open the newly created form in a new tab. The form opens for editing. It also displays the sidebar to customize the newly created form according to the needs.
+1. Select **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears. Select **[!UICONTROL Open]** to open the newly created form in a new tab. The form opens for editing. It also displays the sidebar to customize the newly created form according to the needs.
 
    For information about adaptive form authoring interface and available components, see [Introduction to authoring adaptive forms](/help/forms/using/creating-adaptive-form.md).
 
@@ -46,12 +46,12 @@ You will have a form similar to the following by end of article:
 
 AEM [!DNL Forms] provides many components to display information on an adaptive form. Header and Footer components help provide a consistent look and feel to a form. A header typically includes the logo of a corporation, the title of the form, and summary. A footer typically includes copyright information and links to other pages.
 
-1. Tap ![toggle-side-panel](assets/toggle-side-panel.png) &gt; ![treeexpandall](assets/treeexpandall.png). The component browser opens. Drag the **[!UICONTROL Header]** component from component browser to the adaptive form. 
-1. Tap **[!UICONTROL Logo]**. The toolbar appears. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) on the toolbar, type **We.Retail**, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).  
+1. Select ![toggle-side-panel](assets/toggle-side-panel.png) &gt; ![treeexpandall](assets/treeexpandall.png). The component browser opens. Drag the **[!UICONTROL Header]** component from component browser to the adaptive form. 
+1. Select **[!UICONTROL Logo]**. The toolbar appears. Select ![aem_6_3_edit](assets/aem_6_3_edit.png) on the toolbar, type **We.Retail**, and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).  
 
-1. Tap Image. The toolbar appears. Tap ![cmppr](assets/cmppr.png). The properties browser opens on the left of the screen. **[!UICONTROL Browse]** and upload the logo image. Tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). The image appears on the header.
+1. Select Image. The toolbar appears. Select ![cmppr](assets/cmppr.png). The properties browser opens on the left of the screen. **[!UICONTROL Browse]** and upload the logo image. Select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). The image appears on the header.
 
-   You can tap Get file to download the logo used in this article if you don't have one.
+   You can select Get file to download the logo used in this article if you don't have one.
 
    [Get File](assets/logo.png)
 
@@ -63,7 +63,7 @@ AEM [!DNL Forms] provides many components to display information on an adaptive 
 
 Components are building blocks of an adaptive form. AEM [!DNL Forms] provides many components to capture and display information in an adaptive form. You can drag the components from ![treeexpandall](assets/treeexpandall.png) to a form. To learn about available components and corresponding functionality, see [Introduction to authoring adaptive forms](/help/forms/using/introduction-forms-authoring.md).
 
-1. Drag the **[!UICONTROL Numeric Box component]** to the adaptive form. Place it before the footer component. Open properties of the component, change **[!UICONTROL Title]** of the component to **`Customer ID`**, change **[!UICONTROL Element Name]** to **`customer_ID`**, enable the **[!UICONTROL Required Field]** option, enable the **[!UICONTROL Use HTML5 Number Input Type]** option, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Drag the **[!UICONTROL Numeric Box component]** to the adaptive form. Place it before the footer component. Open properties of the component, change **[!UICONTROL Title]** of the component to **`Customer ID`**, change **[!UICONTROL Element Name]** to **`customer_ID`**, enable the **[!UICONTROL Required Field]** option, enable the **[!UICONTROL Use HTML5 Number Input Type]** option, and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Drag three Text Box components to the adaptive form. Place these before the footer component. Set the following properties for these text boxes.:
 
    <table> 
@@ -101,7 +101,7 @@ Components are building blocks of an adaptive form. AEM [!DNL Forms] provides ma
     </tbody> 
    </table>
 
-1. Drag a **[!UICONTROL Numeric Box]** component before the footer component. Open properties of the component, set values listed in the below table, Tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Drag a **[!UICONTROL Numeric Box]** component before the footer component. Open properties of the component, set values listed in the below table, Select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Property |Value |
    |---|---|
@@ -111,7 +111,7 @@ Components are building blocks of an adaptive form. AEM [!DNL Forms] provides ma
    | Required Field |Enabled |
    | Display Pattern Type |No Pattern |
 
-1. Drag an **[!UICONTROL Email]** component before the footer component. Open properties of the component, set values listed in the below table, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Drag an **[!UICONTROL Email]** component before the footer component. Open properties of the component, set values listed in the below table, and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Property |Value |
    |---|---|
@@ -119,7 +119,7 @@ Components are building blocks of an adaptive form. AEM [!DNL Forms] provides ma
    | Element Name |customer_Email |
    | Required Field |Enabled |
 
-1. Drag an **[!UICONTROL File Attachment]** component before the footer component. Open properties of the component, set values listed in the below table, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Drag an **[!UICONTROL File Attachment]** component before the footer component. Open properties of the component, set values listed in the below table, and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -142,7 +142,7 @@ Components are building blocks of an adaptive form. AEM [!DNL Forms] provides ma
     </tbody> 
    </table>
 
-1. Drag a **[!UICONTROL Submit Button]** component to the adaptive form. Place it before the footer component. Open properties of the component, change Element Name to `address_addition_update_submit`, tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). The layout of the form is complete and the form looks like the following:
+1. Drag a **[!UICONTROL Submit Button]** component to the adaptive form. Place it before the footer component. Open properties of the component, change Element Name to `address_addition_update_submit`, select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). The layout of the form is complete and the form looks like the following:
 
    ![adaptive-form-with-all-the-components](assets/adaptive-form-with-all-the-components.png)
 
@@ -155,8 +155,8 @@ Using the following steps, you can configure email submit action and demo submit
 1. Configure the email server. For details, see [Configuring Email Notification](/help/sites-administering/notification.md).
 
 
-1. Tap **[!UICONTROL Form Container]** in the Content browser and tap ![cmppr](assets/cmppr.png). The properties browser opens on the left. 
-1. Go to **[!UICONTROL Submission]** &gt;  **[!UICONTROL Submit Action]**. Select **[!UICONTROL Send Email]**. Specify the following values and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Select **[!UICONTROL Form Container]** in the Content browser and select ![cmppr](assets/cmppr.png). The properties browser opens on the left. 
+1. Go to **[!UICONTROL Submission]** &gt;  **[!UICONTROL Submit Action]**. Select **[!UICONTROL Send Email]**. Specify the following values and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    |Property|Value|
    |--- |--- |
@@ -174,8 +174,8 @@ You can use the **[!UICONTROL Preview option]** to evaluate appearance and behav
 
 Adaptive forms also provide an option to Emulate experience of a form for various devices. For example, iPhone, iPad, and Desktop. You can use both **[!UICONTROL Preview]** and **[!UICONTROL Emulator]** ![ruler](assets/ruler.png) options in conjunction with each other to preview a form for devices of different screen sizes.
 
-1. Tap the **[!UICONTROL Preview]** option on the right side of the form editor. The form opens in the preview mode. If you have used the name mentioned the tutorial, then preview URL of the form is [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. Select the **[!UICONTROL Preview]** option on the right side of the form editor. The form opens in the preview mode. If you have used the name mentioned the tutorial, then preview URL of the form is [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Use ![ruler](assets/ruler.png) to view how the form looks on various devices.
-1. Fill out fields of the form and tap **[!UICONTROL Submit]**. The form is submitted and you are redirected to default **Thank You** page. You can also specify a custom thank you page. For details, see [Configuring redirect page](/help/forms/using/configuring-redirect-page.md).
+1. Fill out fields of the form and select **[!UICONTROL Submit]**. The form is submitted and you are redirected to default **Thank You** page. You can also specify a custom thank you page. For details, see [Configuring redirect page](/help/forms/using/configuring-redirect-page.md).
 
 The adaptive form to add an address is ready. If you have used the name mentioned in the tutorial and accessing the form on the machine running AEM Forms server, then the form is available at [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).

@@ -1,14 +1,10 @@
 ---
 title: Working with the Marketing Campaign Manager
-seo-title: Working with the Marketing Campaign Manager
 description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
-seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
-uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
 ---
@@ -109,14 +105,11 @@ To access existing campaigns, in the MCM click **Campaigns**.
 
 * **In the left pane**:
   There is a list of all brands and campaigns.
-  A single click on a brand will both:
-
-    * expand the list to show all related campaigns in the left pane; this list also shows the number of experiences that exist for each campaign.
-    * open the brand overview in the right pane.
+  Clicking a brand expands the list to show all related campaigns in the left pane; this list also shows the number of experiences that exist for each campaign. It also opens the brand overview in the right pane.
 
 * **In the right pane**:
   Icons are shown for each brand (historical campaigns will not be shown).
-  You can double-click on these to open the brand overview.
+  You can double-click these to open the brand overview.
 
 #### Brand Overview {#brand-overview}
 

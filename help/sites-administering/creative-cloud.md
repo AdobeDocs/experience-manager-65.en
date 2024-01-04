@@ -1,12 +1,12 @@
 ---
 title: Folder sharing with Adobe Creative Cloud
 description: Learn about sharing folder with Adobe Creative Cloud
-uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
+
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
+
 docset: aem65
 
 ---

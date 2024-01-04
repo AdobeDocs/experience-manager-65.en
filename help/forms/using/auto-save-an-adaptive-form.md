@@ -1,14 +1,9 @@
 ---
 title: Auto-save an adaptive form
-seo-title: Auto-save an adaptive form
 description: You can configure an adaptive form to automatically start saving the content based on an event or a pre-defined time-interval
-seo-description: You can configure an adaptive form to automatically start saving the content based on an event or a pre-defined time-interval
-uuid: 0fe9a389-269b-438a-9489-d9d1d09558a1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
-feature: Adaptive Forms
-exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
+feature: Adaptive Forms, Foundation Components
 ---
 # Auto-save an adaptive form {#auto-save-an-adaptive-form}
 
@@ -25,7 +20,7 @@ You can configure an adaptive form to automatically start saving the content bas
 
 For an adaptive form, the auto save option is not enabled out of the box. You can enable the auto save option from the **Auto Save** section in the properties of an adaptive form. The **Auto Save** section also provides several other configuration options. Perform the following steps to enable and configure the auto save option for an adaptive form:
 
-1. To access the auto-save section in the properties, select a component, then tap ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![cmppr](assets/cmppr.png).
+1. To access the auto-save section in the properties, select a component, then select ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![cmppr](assets/cmppr.png).
 1. In the **[!UICONTROL Auto Save]** section, **[!UICONTROL Enable]** the auto-save option.
 1. In the **[!UICONTROL Adaptive Form Event]** box, specify 1 or TRUE to automatically start saving the form when the form is loaded in the browser. You can also specify a conditional expression for an event, which when triggered and returns true, starts saving the content of the form.
 1. Specify the Trigger. Auto-save is triggered based on your configuration. Your options are:
@@ -82,6 +77,6 @@ You can implement a custom event to trigger the autosave functionality. Perform 
 
 1. Open the adaptive form in author mode.
 
-1. In the edit mode, select a component, then tap ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![cmppr](assets/cmppr.png).
+1. In the edit mode, select a component, then select ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![cmppr](assets/cmppr.png).
 1. In th properties, open the **[!UICONTROL Basic]** section. In the **[!UICONTROL Client Library Category]** box, enter the value of the category property defined while creating the client library folders.
 1. Open the Auto Save section. In the **[!UICONTROL Auto save after this event]** box, specify a custom event already defined in the client library. Click **[!UICONTROL OK]**.

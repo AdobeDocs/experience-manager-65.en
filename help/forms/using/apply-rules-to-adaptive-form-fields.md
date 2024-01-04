@@ -1,12 +1,12 @@
 ---
 title: Apply rules to adaptive form fields
-seo-title: Apply rules to adaptive form fields
+
 description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
-seo-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
+
 page-status-flag: de-activated
-uuid: 60f142aa-81ca-4333-8614-85a01e23e917
+
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
+
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 ---
 # Tutorial: Apply rules to adaptive form fields {#tutorial-apply-rules-to-adaptive-form-fields}
@@ -39,12 +39,12 @@ Every customer is assigned a unique Customer ID number, which helps identify rel
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. Tap the **[!UICONTROL Customer ID]** field and tap the **[!UICONTROL Edit Rules]** icon. The Rule Editor window opens.
-1. Tap the **[!UICONTROL + Create]** icon to add a rule. It opens the Visual Editor.
+1. Select the **[!UICONTROL Customer ID]** field and select the **[!UICONTROL Edit Rules]** icon. The Rule Editor window opens.
+1. Select the **[!UICONTROL + Create]** icon to add a rule. It opens the Visual Editor.
 
    In the Visual Editor, the **[!UICONTROL WHEN]** statement is selected by default. Also, the form object (in this case, **[!UICONTROL Customer ID]**) from where you launched the rule editor is specified in the **[!UICONTROL WHEN]** statement.
 
-1. Tap the **[!UICONTROL Select State]** drop-down and select **[!UICONTROL is changed]**.
+1. Select the **[!UICONTROL Select State]** drop-down and select **[!UICONTROL is changed]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
@@ -58,7 +58,7 @@ Every customer is assigned a unique Customer ID number, which helps identify rel
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Tap **[!UICONTROL Done]** to save the rule. On the rule editor window, tap **[!UICONTROL Close]**.
+   Select **[!UICONTROL Done]** to save the rule. On the rule editor window, select **[!UICONTROL Close]**.
 
 1. Preview the adaptive form. Enter an ID in the **[!UICONTROL Customer ID]** field. The form can now retrieve customer details from the database.
 
@@ -68,8 +68,8 @@ Every customer is assigned a unique Customer ID number, which helps identify rel
 
 After the customer details are retrieved from the database, you can update the shipping address, state, and zip code. The procedure below invokes a Form Data Model service to update customer information to the database:
 
-1. Select the **[!UICONTROL Submit]** field and tap the **[!UICONTROL Edit Rules]** icon. The Rule Editor window opens.
-1. Select the **[!UICONTROL Submit - Click]** rule and tap the **[!UICONTROL Edit]** icon. The options to edit the Submit rule appear.
+1. Select the **[!UICONTROL Submit]** field and select the **[!UICONTROL Edit Rules]** icon. The Rule Editor window opens.
+1. Select the **[!UICONTROL Submit - Click]** rule and select the **[!UICONTROL Edit]** icon. The options to edit the Submit rule appear.
 
    ![submit-rule](assets/submit-rule.png)
 
@@ -77,7 +77,7 @@ After the customer details are retrieved from the database, you can update the s
 
    ![submit-is-clicked](assets/submit-is-clicked.png)
 
-1. In the **[!UICONTROL THEN]** option, tap the **[!UICONTROL + Add Statement]** option. Select **[!UICONTROL Invoke Service]** from the **[!UICONTROL Select Action]** drop-down.
+1. In the **[!UICONTROL THEN]** option, select the **[!UICONTROL + Add Statement]** option. Select **[!UICONTROL Invoke Service]** from the **[!UICONTROL Select Action]** drop-down.
 1. Select the **[!UICONTROL Update Shipping Address]** service from the **[!UICONTROL Select]** drop-down.
 
    ![update-shipping-address](assets/update-shipping-address.png)
@@ -91,7 +91,7 @@ After the customer details are retrieved from the database, you can update the s
      >Do not drag-and-drop the **[!UICONTROL Name]** and **[!UICONTROL Customer ID]** fields to the corresponding tablename.property (for example, customerdetails.name). It helps avoid updating name and ID of the customer by mistake.
 
 1. Drag-and-drop the **[!UICONTROL Customer ID]** field from the [!UICONTROL Form Objects] tab to the id field in the **[!UICONTROL INPUT]** box. Fields without a prefixed  tablename  (for example,  customerdetails  in this use case) serve as a search parameter for the update service. The **[!UICONTROL id]** field in this use case uniquely identifies a record in the  **customerdetails**  table.
-1. Tap **[!UICONTROL Done]** to save the rule. On the rule editor window, tap **[!UICONTROL Close]**.
+1. Select **[!UICONTROL Done]** to save the rule. On the rule editor window, select **[!UICONTROL Close]**.
 1. Preview the adaptive form. Retrieve details of a customer, update the shipping address, and submit the form. When you retrieve details of the same customer again, the updated shipping address is displayed.
 
 ## Step 3: (Bonus section) Use the code editor to run validations and display error messages {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -102,12 +102,12 @@ Adaptive forms provide several components with built-in validations, for example
 
 The following procedure shows how to create a rule to displays an error message if the Customer ID entered in the form does not exist in the database. The rule also brings the focus to and resets the **[!UICONTROL Customer ID]** field. The rule uses [the dataIntegrationUtils API of the form data model service](/help/forms/using/invoke-form-data-model-services.md) to check if the Customer ID exists in the database.
 
-1. Tap the **[!UICONTROL Customer ID]** field and tap the `Edit Rules` icon. The [!UICONTROL Rule Editor] window opens.
-1. Tap the **[!UICONTROL + Create]** icon to add a rule. It opens the Visual Editor.
+1. Select the **[!UICONTROL Customer ID]** field and select the `Edit Rules` icon. The [!UICONTROL Rule Editor] window opens.
+1. Select the **[!UICONTROL + Create]** icon to add a rule. It opens the Visual Editor.
 
    In the Visual Editor, the **[!UICONTROL WHEN]** statement is selected by default. Also, the form object (in this case, **[!UICONTROL Customer ID]**) from where you launched the rule editor is specified in the **[!UICONTROL WHEN]** statement.
 
-1. Tap the **[!UICONTROL Select State]** drop-down and select **[!UICONTROL is changed]**.
+1. Select the **[!UICONTROL Select State]** drop-down and select **[!UICONTROL is changed]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 

@@ -83,7 +83,7 @@ If the user, uploading the movie files does not have delete permissions under as
 
 #### What are the default settings for OOTB configurations while creating Language Copy? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-When you create a language copy through Touch UI (**References** -&gt; **Update Language Copy**), a new DAM folder is created under the new language and assets are referenced from there.
+When you create a language copy through Touch UI (**References** > **Update Language Copy**), a new DAM folder is created under the new language and assets are referenced from there.
 
 This is default setting for OOTB configurations. You can set **Translate Page Assets** = **Do not translate** in Translation configurations.
 For AEM 6.4, **Tools** &gt; **Cloud Services** &gt; **Translation Cloud services**.

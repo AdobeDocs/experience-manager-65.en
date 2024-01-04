@@ -22,7 +22,7 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 
 ### A Touch-Enabled UI {#a-touch-enabled-ui}
 
-AEM's user interface has been enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. This is in contrast to how a traditional desktop interface operates with mouse actions such as click, double-click, right-click, and mouseover.
+AEM's user interface has been enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as select, touch-and-hold, and swipe. This is in contrast to how a traditional desktop interface operates with mouse actions such as click, double-click, right-click, and mouseover.
 
 As the AEM UI is touch-enabled, you can use the touch gestures on your touch devices (for example, mobile or tablet) and the mouse actions on a traditional desktop device.
 
@@ -36,21 +36,21 @@ Immediately after logging in you arrive on the [Navigation panel](#navigation-pa
 >
 >To get a good understanding of the basic use of AEM, this document is based on the **Sites** console.
 >
->To get started, click or tap on **Sites**.
+>To get started, click on **Sites**.
 
 ### Product Navigation {#product-navigation}
 
-Whenever a user first accesses a console, a product navigation tutorial is started. Click or tap through so you get a good overview of the basic handling of AEM.
+Whenever a user first accesses a console, a product navigation tutorial is started. Click through so you get a good overview of the basic handling of AEM.
 
 ![Product Navigation](assets/bh-02.png)
 
-Click or tap **Next** to advance to the next page of the overview. Click or tap **Close** or click or tap outside of the overview dialog box to close.
+Click **Next** to advance to the next page of the overview. Click **Close** or click outside of the overview dialog box to close.
 
 The overview restarts the next time you access a console unless you either view all slides, or check the option **Don't show this again**.
 
 ## Global Navigation {#global-navigation}
 
-You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you click or tap the Adobe Experience Manager link at the top-left of the screen.
+You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you click the Adobe Experience Manager link at the top-left of the screen.
 
 You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
 
@@ -318,12 +318,12 @@ Selecting a specific resource depends on a combination of the view and the devic
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile devices:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Select the thumbnail</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile devices:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Select the thumbnail</li>
     </ul> </td>
   </tr>
   <tr>
@@ -331,12 +331,12 @@ Selecting a specific resource depends on a combination of the view and the devic
    <td>
     <ul>
      <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
-     <li>Mobile devices:<br /> Tap-and-hold the card</li>
+     <li>Mobile devices:<br /> Select-and-hold the card</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Click the card</li>
-     <li>Mobile devices:<br /> Tap the card</li>
+     <li>Mobile devices:<br /> Select the card</li>
     </ul> </td>
   </tr>
   <tr>
@@ -344,12 +344,12 @@ Selecting a specific resource depends on a combination of the view and the devic
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile devices:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Select the thumbnail</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile devices:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Select the thumbnail</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -404,7 +404,7 @@ Selecting a resource in the leftmost column displays the child resources in a co
     ![Column View](assets/bh-17.png)
 
   * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
-  * If you tap or click a resource name that has no children, its details are displayed in the final column.
+  * If you click a resource name that has no children, its details are displayed in the final column.
 
 * Tapping or clicking the thumbnail selects the resource.
 
@@ -456,12 +456,12 @@ Selecting a resource in the leftmost column displays the child resources in a co
 
   * When all items in the list are selected, this checkbox appears checked.
 
-    * To deselect all, click or tap the checkbox.
+    * To deselect all, click the checkbox.
 
   * When only some items are selected, it appears with a minus sign.
 
-    * To select all, click or tap the checkbox.
-    * To deselect all, click or tap the checkbox again.
+    * To select all, click the checkbox.
+    * To deselect all, click the checkbox again.
 
 * Select the columns to be shown using the **View Settings** option located under the Views button. The following columns are available for display:
 
@@ -487,7 +487,7 @@ Selecting a resource in the leftmost column displays the child resources in a co
 
   ![Change Order](assets/bh-22.png)
 
-  Click or tap on the vertical selection bar and drag the item to a new position in the list.
+  Click on the vertical selection bar and drag the item to a new position in the list.
 
   ![Change Order - Drag](assets/bh-23.png)
 

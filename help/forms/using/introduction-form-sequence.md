@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
 ---
 # Introduction to multi-step form sequence{#introduction-to-multi-step-form-sequence}

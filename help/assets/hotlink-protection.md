@@ -1,12 +1,10 @@
 ---
 title: Activating hot link protection in Dynamic Media
 description: Information on how to activate hot link protection in Dynamic Media.
-uuid: 5f93bc27-5edd-4143-8701-87896c52f0af
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 role: User, Admin
 exl-id: 698e8bdb-9b31-49ab-8560-26b05109bb23
 feature: Configuration

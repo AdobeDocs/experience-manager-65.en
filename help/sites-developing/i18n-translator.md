@@ -200,11 +200,11 @@ After you add the English string to a dictionary, you can add translations of th
 
 1. To edit the translated texts for one of the strings you can either:
 
-    * Double-click on the appropriate language for the required string to edit that single text:
+    * Double-click the appropriate language for the required string to edit that single text:
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-    * Double-click on the **String** or **Comment** fields for the required string to open the **Edit string** dialog, edit the translation(s) as required, then click **OK** to close the dialog:
+    * Double-click the **String** or **Comment** fields for the required string to open the **Edit string** dialog, edit the translation(s) as required, then click **OK** to close the dialog:
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 

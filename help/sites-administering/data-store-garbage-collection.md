@@ -1,14 +1,14 @@
 ---
 title: Data Store Garbage Collection
-seo-title: Data Store Garbage Collection
+
 description: Learn how to configure Data Store Garbage Collection to free up disk space.
-seo-description: Learn how to configure Data Store Garbage Collection to free up disk space.
-uuid: 49488a81-986a-4d1a-96c8-aeb6595fc094
+
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
+
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 ---
@@ -103,12 +103,12 @@ If you need to run data store garbage collection outside of this time, it can be
 
 Before running data store garbage collection you should check that no backups are running at the time.
 
-1. Open the Operations Dashboard by **Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Maintenance**.
-1. Click or tap the **Weekly Maintenance Window**.
+1. Open the Operations Dashboard by **Navigation** > **Tools** > **Operations** > **Maintenance**.
+1. Click the **Weekly Maintenance Window**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Select the **Data Store Garbage Collection** task and then click or tap the **Run** icon.
+1. Select the **Data Store Garbage Collection** task and then click the **Run** icon.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 

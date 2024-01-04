@@ -1,12 +1,12 @@
 ---
 title: Monitoring and maintaining your Adobe Experience Manager instance
 description: Learn how to monitor and maintain your Adobe Experience Manager instance.
-uuid: 14466552-5c92-4730-a427-85675a2b121c
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
+
 docset: aem65
 
 feature: Configuring
@@ -478,7 +478,7 @@ These entries hold the same information as shown when editing a page.
 
 #### OSGi Audit records from the Web Console {#osgi-audit-records-from-the-web-console}
 
-OSGi events also generate audit records which can be seen from the **Configuration Status** tab -&gt; **Log Files** tab in the AEM Web Console:
+OSGi events also generate audit records which can be seen from the **Configuration Status** tab > **Log Files** tab in the AEM Web Console:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 

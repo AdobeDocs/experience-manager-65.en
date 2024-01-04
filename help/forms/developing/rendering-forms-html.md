@@ -1,15 +1,15 @@
 ---
 title: Rendering Forms as HTML
-seo-title: Rendering Forms as HTML
+
 description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
-seo-description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
-uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
+
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 ---
@@ -93,7 +93,7 @@ Form scripts that are in the form:ready event are executed only once during the 
 
 You can invoke custom scripts before submitting a form. This feature works on all available browsers. However, it can be used only when users render the HTML form that has its `Output Type` property set to `Form Body`. It will not work when the `Output Type` is `Full HTML`. Refer to Configuring forms in administration help for steps to configure this feature.
 
-You must first define a callback function that is called before submitting the form, where the name of the function is `_user_onsubmit`. It is assumed that the function will not throw any exception, or if it does, the exception will be ignored. It is recommended to place the JavaScript function in the head section of the html; however, you can declare it anywhere before the end of the script tags that include `xfasubset.js`.
+First define a callback function that is called before submitting the form, where the name of the function is `_user_onsubmit`. It is assumed that the function will not throw any exception, or if it does, the exception will be ignored. It is recommended to place the JavaScript function in the head section of the html; however, you can declare it anywhere before the end of the script tags that include `xfasubset.js`.
 
 When formserver renders an XDP that contains a drop-down list, in addition to creating the drop-down list, it also creates two hidden text fields. These text fields store the data of the drop-down list (one stores the display name of the options and other stores the value for the options). Therefore, every time a user submits the form, the entire data of the drop-down list is submitted. Assuming that you don't want to submit that much data everytime, you can write a custom script to disable that. For example: The name of the drop-down list is `drpOrderedByStateProv` and it is wrapped under subform header. The name of the HTML input element will be `header[0].drpOrderedByStateProv[0]`. The name of the hidden fields that store and submit the data of the dropdown have the following names: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
@@ -121,7 +121,7 @@ Scripts that run on the client or run on both the client and the server must be 
 
 When running scripts on the client, only the current panel being displayed can use script; for example, you cannot script against fields that are in panel A when panel B is displayed. When running scripts on the server, all panels can be accessed.
 
-You must also be careful when using Scripting Object Model (SOM) expressions within scripts that run on the client. Only a simplified subset of SOM expressions are supported by scripts that run on the client.
+Be careful when using Scripting Object Model (SOM) expressions within scripts that run on the client. Only a simplified subset of SOM expressions are supported by scripts that run on the client.
 
 ## Event timing {#event-timing}
 
@@ -230,7 +230,7 @@ HTTP URLs to where form data is posted may be specified by setting the target UR
 
 **Render an HTML form**
 
-To render an HTML form, you must specify a form design created in Designer and saved as an XDP file. You must also select an HTML transformation type. For example, you can specify the HTML transformation type that renders a dynamic HTML for Internet Explorer 5.0 or later.
+To render an HTML form, specify a form design that was created in Designer and saved as an XDP file. Select an HTML transformation type. For example, you can specify the HTML transformation type that renders a dynamic HTML for Internet Explorer 5.0 or later.
 
 Rendering an HTML form also requires values, such as URI values that are required to render other form types.
 

@@ -1,15 +1,12 @@
 ---
 title: Debugging HTML5 forms
-seo-title: Debugging HTML5 forms
 description: The document list steps to troubleshoot various known issues.
-seo-description: The document list steps to troubleshoot various known issues.
-uuid: df1835aa-6033-4ecb-97c8-4c3b7b96b943
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 ---
 # Debugging HTML5 forms {#debugging-html-forms}
@@ -101,9 +98,9 @@ Check the following parameters:
 ### Problem: Unexpected error encountered {#problem-unexpected-error-encountered}
 
 1. In the form URL, add a query parameter debugClientLibs and set its value to true (For example: https://&lt;server&gt;:&lt;port&gt;/content/xfaforms/profiles/test.html?contentRoot=&lt;some path&gt;&template=&lt;name of xdp file&gt;&log=1-a9-b9-c9&debugClientLibs=true)
-1. In the desktop browser like chrome, go to Developer Tools -&gt; Console.
+1. In the desktop browser like chrome, go to Developer Tools > Console.
 1. Open the logs to identify the type of error. For detailed information on logs, see [logs for HTML5 forms](/help/forms/using/enable-logs.md).
-1. Go to Developer Tools -&gt; Console. Use stack trace to locate the code which is causing the error. Debug the error to resolve the issue.
+1. Go to Developer Tools > Console. Use stack trace to locate the code which is causing the error. Debug the error to resolve the issue.
 
    >[!NOTE]
    >
@@ -118,7 +115,7 @@ Check the following parameters:
 
 ## Problem: Localized error messages do not display {#problem-localized-error-messages-do-not-display}
 
-1. Render the form with additional query parameter **debugClientLibs=true** in the desktop browser, and then go to Developer Tools -&gt; Resources and check for the file I18N.css.
+1. Render the form with additional query parameter **debugClientLibs=true** in the desktop browser, and then go to Developer Tools > Resources and check for the file I18N.css.
 1. If the file is not available, login into CRX DE at https://&lt;server&gt;:&lt;port&gt;/crx/de.
 1. In the folder hierarchy on the left, navigate to /libs/fd/xfaforms/clientlibs/I18N and ensure that the following files and folders exist:
 
@@ -176,6 +173,6 @@ Check the following parameters:
  </tbody>
 </table>
 
-1. In the desktop browser, go to Developer Tools -&gt; Resources.
+1. In the desktop browser, go to Developer Tools > Resources.
 
    Check on the left side in Frames if that image displays.

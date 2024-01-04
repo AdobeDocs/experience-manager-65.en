@@ -85,7 +85,7 @@ When you run the Migration Utility for the first time, a log is created with the
 
 1. Do the following to perform the migration:
 
-    * To migrate **assets**, tap AEM Forms Assets Migration, and in the next screen, tap **Start Migration**. The following get migrated:
+    * To migrate **assets**, select AEM Forms Assets Migration, and in the next screen, select **Start Migration**. The following get migrated:
 
         * Adaptive forms
         * Document fragments
@@ -97,18 +97,18 @@ When you run the Migration Utility for the first time, a log is created with the
    >
    >During assets migration, you may find warning messages such as "Conflict found for…". Such messages indicate that rules for some of the components in adaptive forms could not be migrated. For example, if the component had an event which had both rules and scripts, if rules occur after any script none of the rules for the component are migrated. You can [migrate such rules by opening the rule editor](#migrate-rules) in adaptive form authoring.
 
-    * To migrate adaptive form custom components, tap **Adaptive Forms Custom Components Migration** and in the Custom Components Migration page, tap **Start Migration**. The following get migrated:
+    * To migrate adaptive form custom components, select **Adaptive Forms Custom Components Migration** and in the Custom Components Migration page, select **Start Migration**. The following get migrated:
 
         * Custom components written for Adaptive Forms
         * Component overlays, if any.
 
-    * To migrate adaptive form templates, tap **Adaptive Forms Template Migration** and in the Custom Components Migration page, tap **Start Migration**. The following get migrated:
+    * To migrate adaptive form templates, select **Adaptive Forms Template Migration** and in the Custom Components Migration page, select **Start Migration**. The following get migrated:
 
         * Adaptive form templates created under `/apps` or `/conf` using AEM Template Editor.
 
     * Migrate AEM Forms Cloud Configuration services to use the new context-aware cloud service paradigm, which includes the touch enabled UI (under `/conf`). When you migrate AEM Forms Cloud Configuration services, the cloud services in `/etc` are moved to `/conf`. If you do not have any cloud services customizations that depend on the legacy paths (`/etc`), Adobe recommends that you run the migration utility after upgrading to 6.5; use cloud configuration Touch UI for any further work. If you have any existing cloud services customizations, continue using classic UI on upgraded setup until the customizations are updated to align with the migrated paths (`/conf`) and then run the migration utility.
 
-   To migrate **AEM Forms cloud services**, which include the following, tap AEM Forms Cloud Configuration Migration (cloud config migration is independent of AEMFD Compatibility package). Tap AEM Forms Cloud Configurations Migration and then on the Configuration Migration page, tap **Start Migration**:
+   To migrate **AEM Forms cloud services**, which include the following, select AEM Forms Cloud Configuration Migration (cloud config migration is independent of AEMFD Compatibility package). Select AEM Forms Cloud Configurations Migration and then on the Configuration Migration page, select **Start Migration**:
 
     * Form Data Model cloud services
 
@@ -146,13 +146,13 @@ When you run the Migration Utility for the first time, a log is created with the
 
 These components can be migrated by opening them in the Rule Editor in the Adaptive Forms editor.
 
-* To migrate rules and scripts (not required if upgrading from 6.3) in custom components, tap Adaptive Forms Custom Components Migration, and in the next screen, tap Start Migration. The following get migrated:
+* To migrate rules and scripts (not required if upgrading from 6.3) in custom components, select Adaptive Forms Custom Components Migration, and in the next screen, select Start Migration. The following get migrated:
   
   * Rules and Scripts created using rule editor (6.1 FP1 and later)
   
   * Scripts created using the Script tab in the UI of 6.1 and earlier
 
-* To migrate templates (not required if upgrading from 6.3 and 6.4), tap Adaptive Forms Template Migration, and in the next screen, tap Start Migration. The following get migrated:
+* To migrate templates (not required if upgrading from 6.3 and 6.4), select Adaptive Forms Template Migration, and in the next screen, select Start Migration. The following get migrated:
 
   * Old templates - the adaptive forms templates created under /apps using AEM 6.1 Forms or earlier. This includes the scripts that were defined in the template components.
 

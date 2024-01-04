@@ -485,7 +485,7 @@ You customized your first AEM CIF component! Download the [finished solution fil
 
 ## Bonus Challenge {#bonus-challenge}
 
-Review the functionality of the **New** badge that has already been implemented in the Product Teaser. Try to add an extra checkbox for authors to control when the **Eco Friendly** badge should be displayed. You must update the component dialog at `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Review the functionality of the **New** badge that has already been implemented in the Product Teaser. Try to add an extra checkbox for authors to control when the **Eco Friendly** badge should be displayed. Update the component dialog at `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![New Badge Implementation challenge](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 

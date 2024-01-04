@@ -270,7 +270,7 @@ If you intend to use this feature, be aware of the following prerequisites and p
 
    * Copy and paste the path above into the CRXDE Lite path field below the toolbar, then press `Enter`.
 
-1. In the left rail, right-click on `fileupload`, then from the pop-up menu, select **[!UICONTROL Overlay Node]**.
+1. In the left rail, right-click `fileupload`, then from the pop-up menu, select **[!UICONTROL Overlay Node]**.
 
    ![Overlay Node option](/help/assets/assets-dm/uploadassets15gb_a.png)
 
@@ -382,7 +382,7 @@ See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
     * Double-click the **[!UICONTROL enabled]** field. By default all asset mime types are enabled (set to **[!UICONTROL true]**), which means the assets are synched to Dynamic Media for processing. If you wish to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
 
-    * Double-tap **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/assets-formats.md#supported-mime-types) for a list of permitted processing parameter values that you can use for a given mime type.
+    * Double-select **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/assets-formats.md#supported-mime-types) for a list of permitted processing parameter values that you can use for a given mime type.
 
 1. Do one of the following:
 
@@ -436,7 +436,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. With the mime type `image_vnd.dwg` still selected, from the **[!UICONTROL Properties]** tab, in the **[!UICONTROL enabled]** row, under the **[!UICONTROL Value]** column header, double-tap the value to open the **[!UICONTROL Value]** drop-down list.
+1. With the mime type `image_vnd.dwg` still selected, from the **[!UICONTROL Properties]** tab, in the **[!UICONTROL enabled]** row, under the **[!UICONTROL Value]** column header, double-select the value to open the **[!UICONTROL Value]** drop-down list.
 1. Type `false` in the field (or select **[!UICONTROL false]** from the drop-down list).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)

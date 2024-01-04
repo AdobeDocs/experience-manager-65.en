@@ -175,7 +175,7 @@ You can cancel (then re-enable) the inheritance. Depending on the component, thi
 
 1. **Live Copy**
 
-   If a component is part of a livecopy or launch, it is indicated by a padlock icon. You can click on the padlock to cancel the inheritance.
+   If a component is part of a livecopy or launch, it is indicated by a padlock icon. You can click the padlock to cancel the inheritance.
 
     * The padlock icon is shown when the component is selected; for example:
 

@@ -16,7 +16,7 @@ This article presents important questions to consider when engaging a front-end 
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
 
 ## SPA Development Principles for AEM {#spa-development-principles-for-aem}
 

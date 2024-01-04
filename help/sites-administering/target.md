@@ -1,14 +1,14 @@
 ---
 title: Integrating with Adobe Target
-seo-title: Integrating with Adobe Target
+
 description: Learn how to integrate Adobe Experience Manager with Adobe Target.
-seo-description: Learn about integrating AEM with Adobe Target.
-uuid: b90346e8-9757-4272-a870-bbe5e647303f
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 454854f8-6053-406c-888d-f427777bf570
+
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
 ---
 # Integrating with Adobe Target{#integrating-with-adobe-target}
@@ -47,7 +47,7 @@ To integrate with Target, perform the following tasks:
 
 >[!CAUTION]
 >
->You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. The activity settings node should only be accessible to the service handling the activity synchronization to Adobe Target.
+>Secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. The activity settings node should only be accessible to the service handling the activity synchronization to Adobe Target.
 >
 >See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) for detailed information.
 

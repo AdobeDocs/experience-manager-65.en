@@ -48,7 +48,7 @@ The Channel browser helps you switch between the print and web channels of the I
 * **Properties browser**
 
   Lets you edit the properties of a component. Properties change according to the component. For example, to see properties of the document container:
-  Select a component, then tap ![field-level](assets/field-level.png) &gt; **Document Container**, and then tap ![cmppr](assets/cmppr.png).
+  Select a component, then select ![field-level](assets/field-level.png) &gt; **Document Container**, and then select ![cmppr](assets/cmppr.png).
 
 * **Assets browser**
   Segregates different types of content such as layout fragments, images, documents, pages, videos. Author can drag-and-drop assets into the Interactive Communication.
@@ -58,7 +58,7 @@ The Channel browser helps you switch between the print and web channels of the I
 
 | **Component** |**Print Channel** |**Web Channel** |**Functionality** |
 |---|---|---|---|
-| Chart |✓ |✓ |Adds a chart that you can use in an Interactive Communication for visual representation of two-dimensional data retrieved from an form data model collection item. |
+| Chart |✓ |✓ |Adds a chart that you can use in an Interactive Communication for visual representation of two-dimensional data retrieved from a form data model collection item. |
 | Document Fragment |✓ |✓ |Lets you add a reusable component, text, list, or condition, to an Interactive Communication. The reusable component you add to an Interactive Communication could be either form data model-based or without a form data model. |
 | Image |✓ |✓ |Lets you insert an image. |
 | Panel |-  |✓ |The Panel component is a placeholder for grouping other components together and controls how a group of components are laid out in an Interactive Communication. A panel component also lets you make a group of components repeatable for the end user, such as in multiple entries required for filling in educational credentials. It is also a good practice to use a panel each for a tab of an Interactive Communication with multiple tabs. |
@@ -77,14 +77,14 @@ The Channel browser helps you switch between the print and web channels of the I
 
 Key points when working with interactive communication components are as follows:
 
-* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, tap the component and tap ![cmppr](assets/cmppr.png) to open the component properties in the Properties browser.
-* A component is identified with its element name. When you tap ![cmppr](assets/cmppr.png), you can change the name of the component by changing the Element Name field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
+* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, select the component and select ![cmppr](assets/cmppr.png) to open the component properties in the Properties browser.
+* A component is identified with its element name. When you select ![cmppr](assets/cmppr.png), you can change the name of the component by changing the Element Name field value in the properties browser. The Element Name field accepts letters, numbers, hyphens (-), and underscores (_) only. Other special characters are not allowed, and element name should begin with a letter.
 * You can modify the Title property of an Interactive Communication component inline in the editor without opening the Properties browser as long as the title is visible on the Interactive Communication. To do so:
 
-    1. Tap to select a component that has a Title property and whose Hide title property is disabled.
-    1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) to make the title editable.
+    1. Select to select a component that has a Title property and whose Hide title property is disabled.
+    1. Select ![aem_6_3_edit](assets/aem_6_3_edit.png) to make the title editable.
 
-    1. Modify the title and tap the Return key or tap anywhere outside the component to save the changes. Tap the Esc key to discard the changes.
+    1. Modify the title and select the Return key or select anywhere outside the component to save the changes. Select the Esc key to discard the changes.
 
 ## Component toolbar {#component-toolbar}
 
@@ -92,9 +92,9 @@ Key points when working with interactive communication components are as follows
 
 When you select a component, you see a toolbar that lets you work with it. You get options to cut, paste, move, and specify properties of the components. Your options are:
 
-A.**Configure**: When you tap **Configure**, component properties are visible in the sidebar.
+A.**Configure**: When you select **Configure**, component properties are visible in the sidebar.
 
-B.**Edit Rules**: When you tap Edit Rules, Rule Editor appears in which you can edit and create rules for the selected component. In Rule Editor, you can also select other form objects (components) and edit/create rules for those form objects.
+B.**Edit Rules**: When you select Edit Rules, Rule Editor appears in which you can edit and create rules for the selected component. In Rule Editor, you can also select other form objects (components) and edit/create rules for those form objects.
 
 C.**Copy**: You can use the copy option to copy a component and paste it in other places in the Interactive Communication.
 

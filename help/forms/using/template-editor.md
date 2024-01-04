@@ -5,7 +5,7 @@ contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
 ---
 # Adaptive Form Templates{#adaptive-form-templates}
@@ -31,19 +31,19 @@ For example, you want all form authors to have certain text boxes, navigation bu
 
 You can access template editor from the Tools menu by navigating to **Adobe Experience Manager &gt; Tools &gt; Templates**. Here, the templates are organized in folders enabled for editable templates. AEM provides a global folder to organize templates. However, it is not enabled by default. You can request your Administrator to enable the global folder or create a folder for templates. For more information on how to create folders, see [Template Folders](/help/sites-developing/page-templates-editable.md).
 
-Once you tap to open a folder, you see a Create button that lets you create a template for adaptive forms.
+Once you select to open a folder, you see a Create button that lets you create a template for adaptive forms.
 
 ### Creating a template {#create-template}
 
 After you have created a folder, open the folder and perform the following steps to create a template:
 
-1. In the Template console, tap **Create** inside the folder you have created.
-1. In the Pick a Template Type section, select **Adaptive Form Template** and tap **Next**.
+1. In the Template console, select **Create** inside the folder you have created.
+1. In the Pick a Template Type section, select **Adaptive Form Template** and select **Next**.
 
-1. In the Template Details section, provide a Template Title and tap **Create**.
+1. In the Template Details section, provide a Template Title and select **Create**.
    You can provide a description and thumbnail that you can see when you can select the created template at the time of form authoring.
 
-1. Tap **Done** to return to the console, or tap **Open** to open the template in the editor.
+1. Select **Done** to return to the console, or select **Open** to open the template in the editor.
 
 ### Template editor UI {#template-editor-ui}
 
@@ -107,7 +107,7 @@ For example, you add the header component in the template. When you select the c
 
 When the Initial Content option is selected, the Adaptive Form Container of the template opens like an adaptive form for editing. Like authoring an adaptive form, you can specify initial settings, such as selecting a theme and submit actions.
 
-Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png) **&gt; Initial Content**.
+Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, select ![canvas-drop-down](assets/canvas-drop-down.png) **&gt; Initial Content**.
 ![Initial Content layer in Template Editor](assets/initial-content-layer.png)
 
 Initial Content layer in Template Editor showing Adaptive Form Container selected for specifying properties.
@@ -138,7 +138,7 @@ Change the layer from Structure to Initial Content, and start adding content to 
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/cmppr.png) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/cmppr.png) in the component toolbar to open its properties. In the Panel Layout field, select **Tabs on Top** and tap **Done**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/cmppr.png) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/cmppr.png) in the component toolbar to open its properties. In the Panel Layout field, select **Tabs on Top** and select **Done**. The tabbed template structure is applied.
 
 #### Adding content in tabs {#adding-content-in-tabs}
 
@@ -159,7 +159,7 @@ When you create a template, it is added as a draft. Enable the template to use i
 1. Navigate to **Adobe Experience Manager &gt; Tools &gt; Templates**, and open the folder in which you have created the template.
 
 1. The template you have created is marked as Draft.
-1. Select the template and tap **Enable** in the toolbar.
+1. Select the template and select **Enable** in the toolbar.
    When you create an adaptive form, you can see the template listed when you are asked to choose a template.
 
 ## Importing or exporting a template {#importing-or-exporting-a-template}

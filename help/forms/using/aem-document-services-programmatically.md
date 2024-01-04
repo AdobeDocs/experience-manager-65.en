@@ -4,7 +4,7 @@ description: Learn how to use Document Services APIs to Digitally sign, encrypt,
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
+feature: Document Services
 ---
 # Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
 
