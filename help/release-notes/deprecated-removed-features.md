@@ -50,7 +50,6 @@ Customers are advised to review if they use the feature/capability in their curr
 |Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Forms|AEM Forms integration with AEM Mobile is deprecated. | No Replacement is available. ||Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Developers|Lodash/underscore client library. Adobe does not plan to further maintain and update the Lodash/underscore client library that is shipped as part of the distribution (Quickstart). | Adobe recommends customers that still require Lodash/underscore for their code to add it into their project code base. ||
-|Screens|Adobe does not plan to further maintain and update the com.adobe.cq.screens.mq.activemq bundle and related configurations that are used for 2Publishers setup.| Adobe recommends customers that still require 2Publishers setup can use load-balancer approach. ||
 
 ## Removed features {#removed-features}
 
@@ -71,6 +70,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 |Developers|Remove `customJavaScriptPath` support in HTML Client Library Manager.|No replacement||
 | [!DNL Assets] | The assets offloading feature is removed in [!DNL Adobe Experience Manager] 6.5. | No replacement is available. ||
 | Cache | `system/console/slingjsp` is removed and is no longer available in AEM 6.5.|Classes and Slightly cache is stored under the Apache Sling Commons FileSystem ClassLoader bundle. You can check the bundle number in the AEM Web Console and remove the cache folder directly from the file system (`crx-quickstart/launchpad/felix/bundle<ID>`).||
+|Screens | Adobe does not plan to further maintain and update the com.adobe.cq.screens.mq.activemq bundle and related configurations. | No replacement is available. ||
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
