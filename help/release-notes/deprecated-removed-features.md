@@ -26,7 +26,6 @@ Customers are advised to review if they use the feature/capability in their curr
 |Area|Feature|Replacement|Version (SP)|
 |---|---|---|---|
 | Sites | The **Adobe AEM Managed Polling Configuration** service: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | The **Adobe AEM Analytics Report Sling Importer** service. See Connecting to Adobe Analytics and Creating Frameworks - [Configuring the Import Interval](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| Screens | ActiveMQ in AEM. ActiveMQ was used for communication between two AEM Publish instances. | Adobe recommends that customers use load-balancer. |  |
 | [!DNL Sites] | Experience Fragments properties for **Social Media Status**. |   | 6.5.11.0 |
 | [!DNL Sites] | Content fragment templates, for creating simple content fragments. | [Model-based structured content fragments](/help/assets/content-fragments/content-fragments-models.md) now. |6.5.11.0|
 |Creative Cloud integration|AEM to Creative Cloud Folder Sharing was introduced in AEM 6.2. It provides a way to give creative users access to assets from AEM, so that they can open them in [!DNL Creative Cloud] applications and upload new files or save changes to AEM. A new capability released in Creative Cloud application, Adobe Asset Link, provides a better user experience and more powerful access to assets from AEM directly from inside Photoshop, InDesign, and Illustrator. Adobe does not plan to make further enhancements to the AEM to Creative Cloud Folder Sharing integration. While the feature is included in AEM, customers are advised to use replacement solutions.|Customers are advised to switch to new Creative Cloud integration capabilities, including Adobe Asset Link or AEM desktop app. ||
@@ -70,7 +69,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 |Developers|Remove `customJavaScriptPath` support in HTML Client Library Manager.|No replacement||
 | [!DNL Assets] | The assets offloading feature is removed in [!DNL Adobe Experience Manager] 6.5. | No replacement is available. ||
 | Cache | `system/console/slingjsp` is removed and is no longer available in AEM 6.5.|Classes and Slightly cache is stored under the Apache Sling Commons FileSystem ClassLoader bundle. You can check the bundle number in the AEM Web Console and remove the cache folder directly from the file system (`crx-quickstart/launchpad/felix/bundle<ID>`).||
-|Screens | Adobe does not plan to further maintain and update the com.adobe.cq.screens.mq.activemq bundle and related configurations. | No replacement is available. ||
+|Screens | Removed activemq bundle support and its related configurations. |||
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
