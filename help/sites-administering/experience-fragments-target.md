@@ -176,7 +176,7 @@ To export an Experience Fragment from AEM to Target (after specifying the Cloud 
 
 ## Using your Experience Fragments in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-After performing the preceding tasks, the Experience Fragment displays on the Offers page in Adobe Target. Look at the [specific Target documentation](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en) to learn about what you can achieve there.
+After performing the preceding tasks, the Experience Fragment displays on the Offers page in Adobe Target. Look at the [specific Target documentation](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) to learn about what you can achieve there.
 
 >[!NOTE]
 >

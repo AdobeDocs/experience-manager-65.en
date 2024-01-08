@@ -56,7 +56,7 @@ The advantages of Editable Templates:
 
 >[!NOTE]
 >
->See [Using Editable Page Templates to develop an Experience Manager site](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en).
+>See [Using Editable Page Templates to develop an Experience Manager site](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html).
 
 ### Static Templates {#static-templates}
 

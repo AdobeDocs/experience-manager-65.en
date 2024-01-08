@@ -11,7 +11,7 @@ exl-id: 7ccd67a7-9945-48c1-9986-f4eaf0f2b961
 
 >[!IMPORTANT]
 >
->[Adobe Livefyre is officially end-of-service as of November 30, 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
+>[Adobe Livefyre is officially end-of-service as of November 30, 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
 
 <!--
 Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.

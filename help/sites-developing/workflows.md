@@ -35,7 +35,7 @@ Key aspects are covered below, while the following pages cover further details:
 >
 >* Participating in workflows, see [Using Workflows](/help/sites-authoring/workflows.md).
 >* Administering workflows and workflow instances, see [Administering Workflows](/help/sites-administering/workflows.md).
->* For an end-to-end Community Article, see [Modifying Digital Assets using Adobe Experience Manager Workflows.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=en)
+>* For an end-to-end Community Article, see [Modifying Digital Assets using Adobe Experience Manager Workflows.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)
 >* See the [Ask the AEM Experts Webinar on Workflows](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Changes to the locations of information see [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) and [Workflow Best Practices - Locations](/help/sites-developing/workflows-best-practices.md#locations).
 >
@@ -201,7 +201,7 @@ For example, for a workflow with six steps and four stages:
 
 ### Workflows and Forms {#workflows-and-forms}
 
-Typically, workflows are used to process form submissions in AEM. It can be with the [core components form components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=en) available in a standard AEM instance, or with the [AEM Forms solution](/help/forms/using/aem-forms-workflow.md).
+Typically, workflows are used to process form submissions in AEM. It can be with the [core components form components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) available in a standard AEM instance, or with the [AEM Forms solution](/help/forms/using/aem-forms-workflow.md).
 
 When creating a form, the form submission can be easily associated with a workflow model. For example, to store the content in a particular location of the repository or to notify a user about the form submission and its content.
 

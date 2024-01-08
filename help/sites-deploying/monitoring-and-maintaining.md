@@ -1094,9 +1094,9 @@ The following is a list of suggestions on what to check if you start experiencin
 >
 >See also the following articles for more information:
 >
->* [Thread dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
->* [Analyze memory problems](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
->* [Analyze using built-in profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
+>* [Thread dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analyze memory problems](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analyze using built-in profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >* [Analyze slow and blocked processes](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1121,7 +1121,7 @@ In these cases check:
 * The JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
 * The Knowledge Base:
 
-    * [Analyze Memory Problems](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+    * [Analyze Memory Problems](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### Disk I/O {#disk-i-o}
 
@@ -1139,7 +1139,7 @@ If your system is either running out of diskspace, or you notice disk thrashing,
 * Whether and how you have configured [Version Purging](/help/sites-deploying/version-purging.md)
 * The Knowledge Base:
 
-    * [Too Many Open Files](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
+    * [Too Many Open Files](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
     * [Journal consumes too much diskspace](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Regular Performance Degradation {#regular-performance-degradation}

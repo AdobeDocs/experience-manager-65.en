@@ -44,7 +44,7 @@ This document assumes that you are already familiar with creating and editing te
 >[!NOTE]
 >
 >Following tutorial might also be of interest for setting up an editable page template in a new project:
->[Getting Started with AEM Sites Part 2 - Creating a Base Page and Template](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=en)
+>[Getting Started with AEM Sites Part 2 - Creating a Base Page and Template](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## Creating a New Template {#creating-a-new-template}
 
@@ -68,7 +68,7 @@ When creating an editable template you:
     * The structure lets you define components and content for your template.
     * Components defined in the template structure cannot be moved on a resulting page nor deleted from any resulting pages.
 
-        * If you are creating a template in a custom folder outside of the `We.Retail` sample content, you can choose Foundation Components or use [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+        * If you are creating a template in a custom folder outside of the `We.Retail` sample content, you can choose Foundation Components or use [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
     * If you want page authors to be able to add and remove components, add a paragraph system to the template.
     * Components can be unlocked and locked again to let you define initial content.

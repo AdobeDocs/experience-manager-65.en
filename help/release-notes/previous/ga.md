@@ -12,7 +12,7 @@ exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 | Version | 6.5 |
 | Type | Major release |
 | General availability date | April 8, 2019 |
-| Recommended Updates | See [AEM recent updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en). |
+| Recommended Updates | See [AEM recent updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html). |
 
 ### Trivia {#trivia}
 
@@ -109,7 +109,7 @@ First shipped as part of AEM 6.4 SP2, with AEM 6.5 the SPA support gains followi
 
 #### Headless Content Management {#headless-content-management}
 
-AEM can serve the content in various formats and from various levels of the stack. Some have been around since 2008 with the [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) and [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([Sling Model Exporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en)) was introduced in AEM 6.3 and is the method used by the AEM SJ SDK to hydrate single-page apps. The [HTTP API for Assets](/help/assets/mac-api-assets.md) is a CRUD API, that was extended for AEM 6.5.
+AEM can serve the content in various formats and from various levels of the stack. Some have been around since 2008 with the [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) and [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([Sling Model Exporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)) was introduced in AEM 6.3 and is the method used by the AEM SJ SDK to hydrate single-page apps. The [HTTP API for Assets](/help/assets/mac-api-assets.md) is a CRUD API, that was extended for AEM 6.5.
 
 New HTTP API capabilities:
 
@@ -131,7 +131,7 @@ Efficiently design, deliver, and optimize experiences on all digital displays fr
 * Personalize by location or configuration of data triggered content by using dynamic placeholders.
 * Unified insights driven by Adobe Analytics integration into the AEM Screens Player
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 #### Component &amp; Template Development {#component-amp-template-development}
 
@@ -351,7 +351,7 @@ For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/a
 
 [!DNL Experience Manager Assets Brand Portal] helps you easily acquire, effectively control, and securely distribute the approved assets to external vendors/agencies and internal business users across devices. It helps improve the efficiency of asset sharing, accelerates the time-to-market for assets, and eliminates the risk of non-compliant usage and unauthorized access.
 
-For more information, see [What's new in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=en).
+For more information, see [What's new in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### Connected Assets {#connectedassets}
 
@@ -590,4 +590,4 @@ The following sites are available only to customers. If you are a customer and n
 
 * Product updates, patches, and packages for additional functionality on [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-* [Customer Support via Admin Console](https://adminconsole.adobe.com/). For more information, see [New Adobe Customer Support Experience](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en).
+* [Customer Support via Admin Console](https://adminconsole.adobe.com/). For more information, see [New Adobe Customer Support Experience](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

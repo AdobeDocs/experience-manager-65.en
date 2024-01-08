@@ -26,7 +26,7 @@ First a Sling Model must be defined for the component.
 
 >[!NOTE]
 >
->For an example of using Sling Models, see [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en).
+>For an example of using Sling Models, see [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
 The Sling Model implementation class must be annotated with the following:
 

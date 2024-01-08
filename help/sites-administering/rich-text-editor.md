@@ -174,7 +174,7 @@ For detailed configurations of the RTE plug-ins, see [how to activate and config
 
 >[!NOTE]
 >
->The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) allows template editors to configure many RTE plugins in a GUI as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document.
+>The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) allows template editors to configure many RTE plugins in a GUI as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document.
 >
 >For more information, see the [RTE UI settings and content polices](/help/sites-administering/rich-text-editor.md) section of this document and [Creating Page Templates](/help/sites-authoring/templates.md) and the [Core Components developer documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
@@ -252,7 +252,7 @@ The available options in the RTE flow downstream from the user interface configu
 * If the user interface configuration of the RTE removed or doesn't enable an item, the content policy cannot configure it.
 * An author has access to only such functionality as is made available by the user interface configurations and the content policies.
 
-As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
+As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Customize mapping between toolbar icons and commands {#iconstoolbar}
 
