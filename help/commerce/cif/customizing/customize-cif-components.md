@@ -184,7 +184,7 @@ Next, you will extend the business logic of the Product Teaser by implementing a
 
 Sling Models are implemented as Java&trade; and can be found in the **core** module of the generated project.
 
-Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
+Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
 
 1. In your IDE, navigate under the **core** module to: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 

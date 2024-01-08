@@ -34,7 +34,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 
 >[!NOTE]
 >
->The OSGi Configuration Diff tool, part of the [AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=en), can be used to list the default OSGi configurations.
+>The OSGi Configuration Diff tool, part of the [AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), can be used to list the default OSGi configurations.
 
 >[!NOTE]
 >
@@ -270,7 +270,7 @@ When creating a configuration, do not change the factory configuration. Instead,
 
 >[!CAUTION]
 >
->When changing the setting for either **Minify** or **Gzip**, delete the contents of clientlibs cache. See [Knowledge Base article](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en) for details.
+>When changing the setting for either **Minify** or **Gzip**, delete the contents of clientlibs cache. See [Knowledge Base article](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) for details.
 
 >[!NOTE]
 >

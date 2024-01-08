@@ -43,7 +43,7 @@ exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 
 * Fully authorable templates for product detail page and product list page. Authors can now create templates and drag and drop product list and product detail components on these templates. In addition to adding other components, authors can now change the layout of these templates too, giving them unlimited freedom to create amazing experiences combining marketing and commerce content.
 
-* All author-friendly CIF core-components have been enhanced to support [AEM's Style System](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Example styles have been provided for the product list component.
+* All author-friendly CIF core-components have been enhanced to support [AEM's Style System](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html). Example styles have been provided for the product list component.
 
 * React-based client-side components for account management. This release supports the following functionalities: Sign In, Forgot Password, and Create an Account.
 

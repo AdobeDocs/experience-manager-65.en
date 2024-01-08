@@ -96,7 +96,7 @@ The thread dump is a list of all the Java&trade; threads that are currently acti
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-See the [How to take Thread Dumps from a JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en) documentation for more information
+See the [How to take Thread Dumps from a JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) documentation for more information
 
 ### Checking for unclosed JCR sessions {#checking-for-unclosed-jcr-sessions}
 

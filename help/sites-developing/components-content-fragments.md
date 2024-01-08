@@ -23,7 +23,7 @@ See the [Content Fragment Management API - Client-Side](/help/sites-developing/c
 
 >[!CAUTION]
 >
->The [Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en) is now recommended. See [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) for more details.
+>The [Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) is now recommended. See [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) for more details.
 >
 >This section details the original component delivered for use with content fragments (**Content Fragment** in the **General** group).
 

@@ -170,7 +170,7 @@ As the same configuration parameter is in several places, the system:
 
 >[!NOTE]
 >
->Read also [how to define a repository-based configuration for a specific instance only](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=en).
+>Read also [how to define a repository-based configuration for a specific instance only](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
 
 ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 

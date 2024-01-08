@@ -183,7 +183,7 @@ The **OR Split** creates a split in the workflow, after which only one branch is
 
 >[!NOTE]
 >
->See [OR Split step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=en#use-a-variable)
+>See [OR Split step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
 
 ![Branching using OR Split](assets/variables_orsplit_new.png)
 

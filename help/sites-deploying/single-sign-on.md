@@ -72,13 +72,13 @@ To configure SSO for a AEM instance, you configure the [SSO Authentication Handl
 
 >[!NOTE]
 >
->If you are also using the [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) with the Microsoft&reg; Internet Information Server (IIS), then additional configuration is required in:
+>If you are also using the [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) with the Microsoft&reg; Internet Information Server (IIS), then additional configuration is required in:
 >
 >* `disp_iis.ini`
 >* IIS
 >
 >In `disp_iis.ini` set:
->(see [installing the Dispatcher with the Microsoft&reg; Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en#microsoft-internet-information-server) for full details)
+>(see [installing the Dispatcher with the Microsoft&reg; Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) for full details)
 >
 >* `servervariables=1` (forwards IIS server variables as request headers to the remote instance)
 >* `replaceauthorization=1` (replaces any header named "Authorization" other than "Basic" with its "Basic" equivalent)
