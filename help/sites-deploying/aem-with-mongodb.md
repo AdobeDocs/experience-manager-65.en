@@ -590,7 +590,7 @@ Because the Dispatcher is stateless, it can scale horizontally with ease. In som
 
 Running AEM without a Dispatcher requires SSL termination and load balancing to be performed by another application. It is required because sessions must have affinity to the AEM instance on which they are created, a concept known as sticky connections. The reason is to assure that updates to the content exhibit minimal latency.
 
-Check the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) for more information on how to configure it.
+Check the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) for more information on how to configure it.
 
 ### Additional Configuration {#additional-configuration}
 

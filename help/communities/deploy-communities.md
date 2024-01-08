@@ -78,7 +78,7 @@ AEM 6.5 Communities GA includes Communities package. To know more about updates 
 
 Starting in AEM 6.4, updates to Communities are delivered as part of AEM Cumulative Fix Packs and Service Packs.
 
-For the latest updates to AEM 6.5, see [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en).
+For the latest updates to AEM 6.5, see [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ### Version History {#version-history}
 
@@ -356,8 +356,8 @@ In particular, be careful to use the correct server name, not `localhost`, in th
 
 If using a Dispatcher, see:
 
-* AEM's [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) documentation
-* [Installing Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* AEM's [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) documentation
+* [Installing Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [Configuring Dispatcher for Communities](/help/communities/dispatcher.md)
 * [Known Issues](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

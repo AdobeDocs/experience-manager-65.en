@@ -256,7 +256,7 @@ Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`.
 
 ## Caching your persisted queries {#caching-persisted-queries}
 
-Persisted queries are recommended as they can be cached at the [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) and Content Delivery Network (CDN) layers, ultimately improving the performance of the requesting client application.
+Persisted queries are recommended as they can be cached at the [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) and Content Delivery Network (CDN) layers, ultimately improving the performance of the requesting client application.
 
 By default AEM will invalidate cache based on a Time To Live (TTL) definition. These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 

@@ -43,7 +43,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 |---|
 |[HTTP API](/help/assets/mac-api-assets.md)|
 |[Structured content models](/help/assets/content-fragments/content-fragments.md)|
-|[Content services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en)|
+|[Content services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)|
 |[Experience fragments](/help/sites-authoring/experience-fragments.md)|
 |HTTP API for structured content (read)|
 |HTTP API for structured content (CRUD)|
@@ -76,7 +76,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 
 ## Learn More {#learn-more}
 
-* [Fluid Experiences for headless use cases](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
-* [AEM Content Service: What, Why, and How?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
-* [FAQ for Third-Party Access](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
+* [Fluid Experiences for headless use cases](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [AEM Content Service: What, Why, and How?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [FAQ for Third-Party Access](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
 * [Using Sling APIs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

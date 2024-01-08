@@ -353,8 +353,8 @@ In particular, be careful to use the correct server name, not `localhost`, in th
 
 If using a Dispatcher, see :
 
-* AEM's [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) documentation
-* [Installing Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* AEM's [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) documentation
+* [Installing Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [Configuring Dispatcher for Communities](/help/communities/dispatcher.md)
 * [Known Issues](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

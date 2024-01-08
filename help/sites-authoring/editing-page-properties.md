@@ -181,7 +181,7 @@ Shows the page thumbnail image. You can:
 
 * **Social Media sharing**
 
-  Defines the sharing options available on the page. Exposes the options that are available to the [Sharing core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=en).
+  Defines the sharing options available on the page. Exposes the options that are available to the [Sharing core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
 
     * **Enable user sharing for Facebook**
     * **Enable user sharing for Pinterest**

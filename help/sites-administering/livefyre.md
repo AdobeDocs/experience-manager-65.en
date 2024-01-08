@@ -15,7 +15,7 @@ exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
 
 >[!IMPORTANT]
 >
->[Adobe Livefyre is officially end-of-service as of November 30, 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
+>[Adobe Livefyre is officially end-of-service as of November 30, 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
 
 <!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 
