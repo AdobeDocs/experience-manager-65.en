@@ -11,6 +11,8 @@ Discover how to manage an AEM project successfully, with support from key resour
 
 ## Key articles
 
+Key articles in this guide include:
+
 * [Managing Projects - Best Practices Checklist](/help/managing/best-practices.md)
 * [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md)
 * [SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md)
