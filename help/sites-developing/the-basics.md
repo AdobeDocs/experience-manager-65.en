@@ -438,7 +438,7 @@ With AEM, a production environment often consists of two different types of inst
 
 ## The Dispatcher {#the-dispatcher}
 
-The Dispatcher is Adobe's tool for both caching and/or load balancing. Further information can be found under [the Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
+The Dispatcher is Adobe's tool for both caching and/or load balancing. Further information can be found under [the Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
 ## FileVault (source revision system) {#filevault-source-revision-system}
 

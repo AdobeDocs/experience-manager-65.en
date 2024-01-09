@@ -109,7 +109,7 @@ While all systems are running, an increased computational performance is availab
 The estimation of how many cluster nodes are necessary is based on the basic requirements and specific use-cases of the particular web project:
 
 * From the perspective of fail-safeness, it is necessary to determine, for all environments, how critical failure is and the failure compensation time based on how long it takes for a cluster node to recover.
-* For the aspect of scalability, the number of write operations is basically the most important factor; see [Authors Working in Parallel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) for the author environment and [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) for the publish environment. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) for details.
+* For the aspect of scalability, the number of write operations is basically the most important factor; see [Authors Working in Parallel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) for the author environment and [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) for the publish environment. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) for details.
 
 ## Author environment-specific calculations {#author-environment-specific-calculations}
 

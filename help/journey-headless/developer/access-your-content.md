@@ -368,7 +368,7 @@ Now that you have learned how to access and query your headless content using th
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
   * [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md)
-* [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
+* [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))
 * [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL.
 
 <!--
