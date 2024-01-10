@@ -16,7 +16,7 @@ exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 | AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)|
 | AEM 6.5  |    This Article                  |
 
-**Applies to:** ✅ Adaptive Form Core Components ❎ Adaptive Form Foundation Components.
+<!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
 Enabling Adaptive Forms Core Components lets you start creating, publishing, and delivering [Core Components based Adaptive Forms](create-an-adaptive-form-core-components.md) and [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) from your AEM 6.5 Forms environment. 
 
