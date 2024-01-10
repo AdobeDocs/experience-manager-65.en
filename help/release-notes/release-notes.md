@@ -58,9 +58,6 @@ Some of the key features and enhancements in this release include the following:
 
 * **64-bit XMLFM**: The 64-bit iteration of XMLFM introduces heightened performance, scalability, and refined memory management. It is the first 64-bit native service deployed on the server-side. By harnessing its inherent capability to access larger memory resources compared to its 32-bit counterpart, XMLFM 64-bit empowers seamless handling of larger rendering workloads. This milestone not only represents a leap in performance but also introduces key enhancements to the native service framework within the AEM Forms Server. This update equips AEM Forms Server to seamlessly support any 64-bit native service.
 
-**Deprecated feature**
-
-* ActiveMQ in AEM is deprecated. ActiveMQ was used for communication between two AEM Publish instances. Adobe recommends that customers now use a load-balancer.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
