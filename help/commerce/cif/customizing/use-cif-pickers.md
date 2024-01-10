@@ -45,7 +45,7 @@ Also, standard dialog field properties like `name`, `fieldLabel`, or `fieldDescr
 >
 >Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. Adobe recommends using `sku` or `slug` as product identifier. Adobe continues to support `id` only for projects using CIF Core Components version 1.x.
 
-A full working example of the `cifproductfield` can be found in the [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) project. See also [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) of the AEM Core Components documentation.
+A full working example of the `cifproductfield` can be found in the [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) project. See also [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) of the AEM Core Components documentation.
 
 ## Category Picker {#category-picker}
 
@@ -70,7 +70,7 @@ Also, standard dialog field properties like `name`, `fieldLabel`, or `fieldDescr
 
 >[!CAUTION]
 >
->Same as the `cifproductfield` component the `cifcategoryfield` component also requires the `cif.shell.picker` clientlib. To add a clientlib to a dialog, you can use the `extraClientlibs` property. See [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) of the AEM Core Components documentation.
+>Same as the `cifproductfield` component the `cifcategoryfield` component also requires the `cif.shell.picker` clientlib. To add a clientlib to a dialog, you can use the `extraClientlibs` property. See [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) of the AEM Core Components documentation.
 >[!CAUTION]
 >
 >Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. Adobe recommends using `uid` or `urlPath` as category identifier. Adobe continues to support `id` & `idAndUrlPath` only for projects using CIF Core Components version 1.x.

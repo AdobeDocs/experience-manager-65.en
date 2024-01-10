@@ -179,7 +179,7 @@ Planning the development is key to ensure that your project is built on a solid 
 
     * Processes for each environment; for example, deployment and maintenance requirements
     * Maintenance activities (Datastore GC, TarPM optimization, and so on)
-    * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) caching
+    * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) caching
     * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
     * Performance for the client-side (JS minify, concat, css sprites, total number of http requests, and others)
 

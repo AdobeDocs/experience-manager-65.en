@@ -68,7 +68,7 @@ Once user sync is enabled, only newly created users and groups are synchronized.
 
 1. Ensure that the latest code is installed:
 
-* [AEM platform updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en)
+* [AEM platform updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
 * [AEM Communities updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}

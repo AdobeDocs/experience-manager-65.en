@@ -62,7 +62,7 @@ To troubleshoot, do the following:
 
 >[!NOTE]
 >
->See also [Analyze Memory Problems](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
+>See also [Analyze Memory Problems](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
 CRX itself has a low memory footprint. If the application running within CRX has bigger memory requirements or requests memory-heavy operations (for example, large transactions), the JVM instance where CRX runs must be started with appropriate memory settings.
@@ -71,13 +71,26 @@ Use Java&trade; command options to define memory settings of the JVM (for exampl
 
 Specify the memory setting option while starting AEM WCM from the command line. The AEM WCM start/stop scripts or custom scripts for managing AEM WCM startup can also be modified to define the required memory settings.
 
-If you have already defined your heapsize to 512 MB, you may want to analyze the memory issue further by creating a heap dump:
+If you have already defined your heapsize to 512 MB, you may want to analyze the memory issue further by creating a heap dump.
 
 To automatically create a heap dump when running out of memory, use the following command:
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
-This method generates a heap dump file (**java_...hprof**) whenever the process runs out of memory. The process may continue to run after the heap dump was generated. Usually, one heap dump file is enough to analyze the problem.
+This method generates a heap dump file (**java_...hprof**) whenever the process runs out of memory. The process may continue to run after the heap dump was generated. 
+
+Often three heap dump files, collected over a period of time, are required to analyze the problem:
+
+* Before a failure occurs
+* During failure 1
+* During failure 2
+* *Ideally, it would also be good to collect information after the event is resolved*
+
+These can be compared to see changes and how objects are using memory.
+
+>[!NOTE]
+>
+>If you regularly collect such information, or are experienced in reading heap dumps, one heap dump file can be enough to analyze the problem.
 
 ### The AEM Welcome screen does not display in the browser after double-clicking AEM Quickstart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 

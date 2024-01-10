@@ -1,14 +1,10 @@
 ---
 title: Transaction Reports Billable APIs
-
 description: List of all the APIs that are accounted as transactions
-
-
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 docset: aem65
-exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
+feature: Transaction Reports
 ---
 # Transaction Reports Billable APIs{#transaction-reports-billable-apis}
 

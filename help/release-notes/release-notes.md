@@ -58,9 +58,6 @@ Some of the key features and enhancements in this release include the following:
 
 * **64-bit XMLFM**: The 64-bit iteration of XMLFM introduces heightened performance, scalability, and refined memory management. It is the first 64-bit native service deployed on the server-side. By harnessing its inherent capability to access larger memory resources compared to its 32-bit counterpart, XMLFM 64-bit empowers seamless handling of larger rendering workloads. This milestone not only represents a leap in performance but also introduces key enhancements to the native service framework within the AEM Forms Server. This update equips AEM Forms Server to seamlessly support any 64-bit native service.
 
-**Deprecated feature**
-
-* ActiveMQ in AEM is deprecated. ActiveMQ was used for communication between two AEM Publish instances. Adobe recommends that customers now use a load-balancer.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -514,7 +511,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
 * When users perform the submit action, the submission fails with an error: 
 `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. (FORMS-12095)
 
 #### AEM Forms on JEE 

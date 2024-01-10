@@ -114,7 +114,7 @@ Red Hat&reg; Linux&reg; uses a memory management algorithm called Transparent Hu
 >Consult the following resources:
 >
 >* For more information regarding Transparent Huge Pages on Red Hat&reg; Linux&reg;, see this [article](https://access.redhat.com/solutions/46111).
->* For Linux&reg; tuning tips, see this [article](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>* For Linux&reg; tuning tips, see this [article](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 >
 
 ## Maintaining the Repository {#maintaining-the-repository}

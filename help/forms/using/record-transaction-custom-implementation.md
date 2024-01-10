@@ -1,14 +1,10 @@
 ---
 title: Record a transaction for custom implementations
-
-description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
-
-
+description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-
-exl-id: a1d97b15-14a6-4c3d-bdd3-6366f7acdfc8
+feature: Transaction Reports
 ---
 # Record a transaction for custom implementations {#record-a-transaction-for-custom-implementations}
 

@@ -225,7 +225,7 @@ Adobe Experience Manager works with the following server platforms for productio
 
 Adobe Experience Manager is supported running in a virtual machine on cloud computing environments. These environments include as Microsoft&reg; Azure and Amazon Web Services (AWS), running in compliance with the technical requirements listed on this page, and according to Adobe's standard support terms.
 
-For a cloud-native environment, review the latest offering from the AEM product line: Adobe Experience Manager as a Cloud Service. See [Adobe Experience Manager as a Cloud Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) for details.
+For a cloud-native environment, review the latest offering from the AEM product line: Adobe Experience Manager as a Cloud Service. See [Adobe Experience Manager as a Cloud Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) for details.
 
 Adobe also offers Adobe Managed Services to deploy AEM on Azure or AWS. Adobe Managed Services provides experts with experience and skills of deploying and operating AEM in these cloud computing environments. See [additional documentation on Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -235,7 +235,7 @@ For recommendations on how to deploy AEM on Azure or AWS, outside of Adobe Manag
 
 ### Dispatcher Platforms (Web Servers) {#dispatcher-platforms-web-servers}
 
-The Dispatcher is the caching and load-balancing component. [Download the latest Dispatcher version](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 requires Dispatcher version 4.3.2 or higher.
+The Dispatcher is the caching and load-balancing component. [Download the latest Dispatcher version](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requires Dispatcher version 4.3.2 or higher.
 
 The following web servers are supported for use with Dispatcher version 4.3.2:
 

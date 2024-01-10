@@ -54,6 +54,7 @@ To subscribe to the events, follow these steps:
 1. Go to the Project Linked Folders tab in the cloud services.
 1. Linked folder parent path: Select a folder in the DAM where you wish to create the linked folders. If left empty, it will default to /content/dam. Make sure that the Workfront Tools metadata schema and Workfront Linked Folder folder metadata schema have been applied to the selected folder.
 1. Linked folder structure: Enter comma-separated values. Each value should be `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name, or some "Literal String Value" (this last one with quotation marks). It is currently set to Portfolio,Program,Year,DE:Project Type,Name.
+1. Configure permissions: Add `jcr:all permissions` permissions to `/conf/workfront-tools/settings/cloudconfigs` for `wf-workfront-users` group.
 1. Build linked folder title in Workfront using the folder structure names checkbox should be checked if the title of the folder in Workfront should include all folders in the structure. Otherwise, it is the title of the last folder.
 1. Sub-folders multifield lets you specify a list of folders that should be created as a child folder of the linked folder.
 1. Project status: Select the status of the project to create the linked folder.

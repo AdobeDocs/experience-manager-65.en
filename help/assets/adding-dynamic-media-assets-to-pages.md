@@ -237,7 +237,7 @@ Edit the following Dynamic Media Setting by selecting **[!UICONTROL Edit]** in t
 
     You can edit the following Advanced Settings by selecting **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
+* **[!UICONTROL Enable Aspect Ratio match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
 
 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
