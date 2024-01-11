@@ -11,8 +11,7 @@ user-guide-title: AEM 6.5
 # Adobe Experience Manager 6.5 Documentation {#content}
 
 + Release Notes {#release-notes}
-  + [AEM 6.5 release notes](/help/release-notes/home.md)
-  + [Current release notes](/help/release-notes/release-notes.md)
+  + [Release notes](/help/release-notes/release-notes.md)
   + Previous release notes {#service-pack}
     + [6.5.18](/help/release-notes/previous/6.5.18.md)
     + [6.5.17](/help/release-notes/previous/6.5.17.md)
@@ -68,7 +67,6 @@ user-guide-title: AEM 6.5
   + [Same Site Cookie Support](/help/sites-administering/same-site-cookie-support.md)
 + Sites {#sites}
   + Authoring {#authoring}
-    + [Authoring User Guide overview](/help/sites-authoring/home.md)
     + Essential tasks, tools and concepts for AEM Authoring {#essentials}
         + [First Steps for Authors](/help/sites-authoring/first-steps.md)
         + [Page Authoring](/help/sites-authoring/page-authoring.md)
@@ -264,7 +262,6 @@ user-guide-title: AEM 6.5
       + [Content Management for Screens](/help/sites-administering/content-management-screens.md)
       + [WebDAV Access](/help/sites-administering/webdav-access.md)
   + Classic UI Authoring {#classic-ui}
-    + [Classic UI Authoring Guide overview](/help/sites-classic-ui-authoring/home.md)
     + Introduction to Classic UI Authoring {#introduction}
         + [First Steps for Authors](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
         + [Authoring in the Classic UI](/help/sites-classic-ui-authoring/classicui.md)
@@ -334,7 +331,6 @@ user-guide-title: AEM 6.5
         + [Working with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
         + [Naming conventions for assets testing](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
-  + [[!DNL Assets] user guide](/help/assets/home.md)
   + [About DAM](/help/assets/assets.md)
   + [Best practices for assets](/help/assets/best-practices-for-assets.md)
   + [Accessibility in [!DNL Assets]](/help/assets/accessibility.md)
@@ -498,7 +494,6 @@ user-guide-title: AEM 6.5
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
-  + [AEM 6.5 Forms Guide](/help/forms/home.md)
   + Release Notes {#release-notes-new-features}
     + [What's new](/help/forms/using/whats-new.md)
     + [Frequently asked questions](/help/forms/using/frequently-asked-questions-faq.md)  
@@ -1186,9 +1181,8 @@ user-guide-title: AEM 6.5
     + [Generating and working with Hashes in dynamic PDF forms](/help/forms/developing/hashing-forms.md)
     + [Passing credentials using WS-Security headers](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
-  + [AEM Content and Commerce](/help/commerce/home.md)
-  + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
   + [Introduction and overview](/help/commerce/cif/introduction.md)
+  + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
   + Integrations {#integrations}
     + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
     + [3rd Party Commerce Solution](/help/commerce/cif/integrating/third-party.md)
@@ -1270,7 +1264,6 @@ user-guide-title: AEM 6.5
   + [What is a documentation journey?](/help/journey-documentation/home.md)
 + Implementing {#implementing}
   + Developing {#developing}
-    + [Developing User Guide overview](/help/sites-developing/home.md)
     + Introduction for Developers {#introduction}
       + [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
       + [AEM Core Concepts](/help/sites-developing/the-basics.md)
@@ -1523,7 +1516,6 @@ user-guide-title: AEM 6.5
       + [Creating Sites for Mobile Devices](/help/sites-developing/mobile.md)
       + [Emulators](/help/sites-developing/emulators.md)
   + Deploying {#deploying}
-    + [Deploying User Guide](/help/sites-deploying/home.md)
     + Introduction to the AEM Platform {#introduction}
         + [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
         + [Technical Requirements](/help/sites-deploying/technical-requirements.md)

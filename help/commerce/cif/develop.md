@@ -12,7 +12,7 @@ exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
 
 Developing AEM Commerce projects based on Commerce Integration Framework (CIF) for AEM follows the same rules and best practices like other AEM projects. Review these first:
 
-- [AEM 6.5 Developing User Guide](/help/sites-developing/home.md)
+- [AEM 6.5 Developing User Guide](/help/sites-developing/getting-started.md)
 - [AEM Core Concepts](/help/sites-developing/the-basics.md)
 - [AEM Development - Guidelines and Best Practices](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [How to Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md)

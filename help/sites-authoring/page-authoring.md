@@ -13,7 +13,7 @@ The following provide two types of overview to authoring with AEM:
 
 >[!NOTE]
 >
->This section covers the tasks involved when authoring a content page. There are many additional features closely related to page authoring, covered in other sections of the [Authoring Guide](/help/sites-authoring/home.md).
+>This section covers the tasks involved when authoring a content page. There are many additional features closely related to page authoring, covered in other sections of the [Authoring Guide](/help/sites-authoring/first-steps.md).
 
 ## Quick Overview of Features Used for Authoring Pages {#quick-overview-of-features-used-for-authoring-pages}
 

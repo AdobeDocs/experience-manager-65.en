@@ -49,7 +49,7 @@ To view a list of forms or templates, in [!DNL Experience Manager] interface nav
 | |<ul><li>[!UICONTROL video]</li></ul>| Schema form for video assets with MIME type such as `video/avi` and `video/mp4`. |
 | [!UICONTROL collection] | | Schema form for collections. |
 | [!UICONTROL contentfragment] | | [Schema form for content fragments](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL forms] | | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL forms] | | This schema form relates to [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md). |
 | [!UICONTROL ugc_contentfragment] | | Schema form for user generated content pieces and assets integrated into Experience Manager from social media. |
 
 >[!NOTE]

@@ -972,7 +972,7 @@ Form components are used to create forms for visitors to submit input. Forms and
 
 >[!NOTE]
 >
->See [AEM Forms Help](/help/forms/home.md) for information about AEM Forms.
+>See [AEM Forms Help](/help/forms/using/introduction-aem-forms.md) for information about AEM Forms.
 
 Forms are built up from several different components:
 

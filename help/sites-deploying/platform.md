@@ -1,17 +1,14 @@
 ---
 title: Introduction to the AEM Platform
-
-description: This article provides a general overview of the AEM platform and its most important components.
-
-
+description: Learn about the AEM platform and its most important components including installing and deploying Adobe Experience Manager 6.5 as well as about its architecture, including Adobe Managed Services cloud deployment.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
 ---
+
 # Introduction to the AEM Platform{#introduction-to-the-aem-platform}
 
 The AEM platform in AEM 6 is based on Apache Jackrabbit Oak.

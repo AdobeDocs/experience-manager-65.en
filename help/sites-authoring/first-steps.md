@@ -1,15 +1,14 @@
 ---
 title: First steps for authors when creating content in AEM
-description: An overview of the main tasks that you use when authoring content with Adobe Experience Managaer (AEM).
-
+description: Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates and other page features.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 ---
+
 # First Steps for Authors{#first-steps-for-authors}
 
 This section gives you an overview of the main tasks that you will be using when [starting to author content](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) with Adobe Experience Manager (AEM).
