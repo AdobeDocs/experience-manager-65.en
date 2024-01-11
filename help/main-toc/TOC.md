@@ -1183,7 +1183,7 @@ user-guide-title: AEM 6.5
 + Content and Commerce {#commerce}
   + [Introduction and overview](/help/commerce/cif/introduction.md)
   + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
-    + Integrations {#integrations}
+  + Integrations {#integrations}
     + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
     + [3rd Party Commerce Solution](/help/commerce/cif/integrating/third-party.md)
   + AEM Storefront {#storefront}
