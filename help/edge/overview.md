@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Edge Delivery Services
-description: Getting Started with Edge Delivery Services (EDS).
+description: Getting Started with Edge Delivery Services
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
 ---
 # Getting Started with Edge Delivery Services {#getstart-edge}

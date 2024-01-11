@@ -99,7 +99,7 @@ Each user can set certain properties for themselves.
 
 * **Use Classic Authoring Experience**
 
-  This option enables [classic UI](/help/sites-classic-ui-authoring/home.md)-based page authoring. By default the standard UI is used.
+  This option enables [classic UI](./help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-based page authoring. By default the standard UI is used.
 
 * **Enable Assets Home Page**
 

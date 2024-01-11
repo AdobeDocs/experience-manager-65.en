@@ -43,7 +43,7 @@ We.Retail is delivered as AEM's sample content. To use, simply [start AEM as you
 
 >[!CAUTION]
 >
->We.Retail is based on the latest AEM technology and therefore does not support [classic UI authoring](/help/sites-classic-ui-authoring/home.md).
+>We.Retail is based on the latest AEM technology and therefore does not support [classic UI authoring](./help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Latest Version {#latest-version}
 

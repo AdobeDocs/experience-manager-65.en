@@ -37,7 +37,7 @@ AEM Delivery and Content Management APIs:
 
   * [JSON Exporter](/help/sites-developing/json-exporter.md)
   * [Enabling JSON Export for a Component](/help/sites-developing/json-exporter-components.md)
-  * See the [Components section in the Developing User Guide](/help/sites-developing/home.md) for more information
+  * See the [Components section in the Developing User Guide](/help/sites-developing/getting-started.md) for more information
 
 * **Assets**: The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments. See [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
