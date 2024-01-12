@@ -1,7 +1,4 @@
 SYMBOLIC NAME                                          BUNDLE NAME                                                  VERSION
-com.adobe.granite.bundles.json                         Adobe Granite Bundles: json-20090211                         
-com.adobe.cq.screens.com.adobe.cq.screens.mq.activemq  Adobe Screens Apache ActiveMQ Implementation                 
-org.apache.commons.fileupload                          Apache Commons FileUpload                                    
 json                                                   Adobe Granite org.json-20230618 Wrapper                      20230618.0.0.2
 com.day.cq.wcm.cq-wcm-nodenameindexerimpl              Day Communique 5 WCM NodeNameIndexer Implementation          5.11.2
 com.day.cq.wcm.cq-wcm-siteimporter                     Day Communique 5 WCM Site Importer                           5.11.4
