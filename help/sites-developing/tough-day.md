@@ -396,7 +396,7 @@ Tough Day 2 creates a logs folder in the same directory where you ran Tough Day 
 * **toughday.log**: contains messages related to the application state, debugging information and global messages.
 * **toughday_&lt;testname&gt;.log**: messages related to the specified test.
 
-The logs are not overwritten, subsequent runs append messages to the existing logs. The logs have several levels, for more information see the ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+The logs are not overwritten, subsequent runs append messages to the existing logs. The logs have several levels, for more information see the [loglevel parameter](/help/sites-developing/tough-day.html#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}
