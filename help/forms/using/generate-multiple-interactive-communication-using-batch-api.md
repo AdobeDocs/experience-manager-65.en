@@ -16,7 +16,7 @@ The Batch API accepts records (data) in JSON format and from a Form Data Model. 
 
 ## Using the Batch API {#using-the-batch-api}
 
-You can use the Batch API in conjunction with Watched Folders or as a standalone Rest API. You configure a template, output type (HTML, PRINT, or Both), locale, prefill service, and name for the generated interactive communications to use the Batch API.
+You can use the Batch API with Watched Folders or as a standalone Rest API. You configure a template, output type (HTML, PRINT, or Both), locale, prefill service, and name for the generated interactive communications to use the Batch API.
 
 You combine a record with an interactive communication template to produce an interactive communication. Batch APIs can read records (data for interactive communication templates) directly from a JSON file or from an external data source accessed via form data model. You can keep each record in a separate JSON file or create a JSON array to keep all the records in a single file.
 
@@ -64,12 +64,12 @@ You combine a record with an interactive communication template to produce an in
 
 ### Using the Batch API with Watched folders {#using-the-batch-api-watched-folders}
 
-To make it easy to experience the API, AEM Forms provides a Watched Folder service configured to use the Batch API, out of the box. You can access the service via AEM Forms UI to generates multiple interactive communications. You can also create custom services as per your requirements. You can use the below-listed methods to use Batch API with Watched folder:
+To make it easy to experience the API, AEM Forms provide a Watched Folder service configured to use the Batch API, out of the box. You can access the service by way of AEM Forms UI to generate multiple interactive communications. You can also create custom services as per your requirements. You can use the below-listed methods to use Batch API with Watched folder:
 
-* Specify input data (records) in JSON file format to produce an interactive communication
-* Use input data (records) saved in an external data source and accessed via a form data model to produce an interactive communication
+* Specify input data (records) in JSON file format so you can produce an interactive communication.
+* Use input data (records) saved in an external data source and accessed via a form data model to produce an interactive communication.
 
-#### Specify input data records in JSON file format to produce an interactive communication {#specify-input-data-in-JSON-file-format}
+#### Specify input data records in JSON file format so you can produce an interactive communication {#specify-input-data-in-JSON-file-format}
 
 You combine a record with an interactive communication template to produce an interactive communication. You can create a separate JSON file for each record or create a JSON array to keep all the records in a single file:
 
@@ -81,24 +81,24 @@ To create interactive communication from records saved in a JSON file:
     1. Specify the **[!UICONTROL Name]** and physical **[!UICONTROL Path]** of the folder. For example, `c:\batchprocessing`.
     1. Select the **[!UICONTROL Service]** option in the **[!UICONTROL Process File Using]** field.
     1. Select the **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** service in the **[!UICONTROL Service Name]** field.
-    1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) specifies the Watched Folder can find input files in a sub-folder of the Watched Folder\input folder.
+    1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifies the Watched Folder can find input files in a subfolder of the Watched Folder\input folder.
 1. Configure advanced parameters:
     1. Open the **[!UICONTROL Advanced]** tab and add the following custom properties:
 
         |Property|Type|Description|
         |--- |--- |--- |
-        |templatePath |String|Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic. It is a mandatory property.|
-        |recordPath|String|Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. The default value is a random [random UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()).|
+        |templatePath |String|Specify path of the interactive communication template to use. For example, `/content/dam/formsanddocuments/testsample/mediumic`. It is a mandatory property.|
+        |recordPath|String|Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. The default value is a [random UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()).|
         |usePrefillService|Boolean|Set the value to False. You can use the usePrefillService parameter to prefill interactive communication with data fetched from prefill service configured for corresponding interactive communication. When usePrefillService is set to true, input JSON data (for each record) is treated as FDM Arguments. The default value is false.|
         |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT. The default value is WEB_AND_PRINT.|
         |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications. The default value is en_US|
 
-    1. Select **[!UICONTROL Create]** The watched folder is created.
-1. Use the watched folder to generate interactive communication:
+    1. Select **[!UICONTROL Create]**.
+1. Use the created watched folder to generate interactive communication:
     1. Open the Watched Folder. Navigate to the input folder.
     1. Create a folder in the input folder and place the JSON file in the newly created folder.
-    1. Wait for the Watched Folder to process the file. When the processing starts, the input file and sub-folder containing the file is moved to the staging folder.
-    1. Open the output folder to view the output:
+    1. Wait for the Watched Folder to process the file. When the processing starts, the input file and subfolder that contains the file are moved to the staging folder.
+    1. Open the output folder so you can view the output:
         * When you specify the PRINT option in Watched Folder Configuration, PDF output for the interactive communication is generated.
         * When you specify the WEB option in Watched Folder Configuration, a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
         * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
@@ -114,7 +114,7 @@ You combine data (records) saved in an external data source with an interactive 
     1. Select the pencil icon for the read service argument to bind the argument to a Request Attribute and specify the binding value. It binds the service argument to the specified binding attribute or literal value, which is passed to the service as an argument to fetch details associated with the specified value from the data source.
 
         <br>
-        In this example, the id argument takes the value of the id attribute of the user profile and passes it as an argument to the read service. It will read and return values of associated properties from the employee data model object for the specified id. So, if you specify 00250 in the id field in the form, the read service will read details of the employee with 00250 employee id.
+        In this example, the id argument takes the value of the id attribute of the user profile and passes it as an argument to the read service. It reads and returns values of associated properties from the employee data model object for the specified id. So, if you specify 00250 in the id field in the form, the read service reads details of the employee with 00250 employee id.
         <br>
 
         ![Configure request attribute](assets/request-attribute.png)
@@ -122,7 +122,7 @@ You combine data (records) saved in an external data source with an interactive 
     1. Save properties and Form Data Model.
 1. Configure value for Request Attribute:
     1. Create a .json file on your file system and open it for editing.
-    1. Create a JSON array and specify the primary attribute to fetch data from Form Data Model. For example, the following JSON requests FDM to send data of records where id is 27126 or 27127:
+    1. Create a JSON array and specify the primary attribute so you can fetch data from Form Data Model. For example, the following JSON requests FDM to send data of records where id is 27126 or 27127:
 
         ```json
             [
@@ -143,37 +143,37 @@ You combine data (records) saved in an external data source with an interactive 
     1. Specify the **[!UICONTROL Name]** and physical **[!UICONTROL Path]** of the folder. For example, `c:\batchprocessing`.
     1. Select the **[!UICONTROL Service]** option in the **[!UICONTROL Process File Using]** field.
     1. Select the **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** service in the **[!UICONTROL Service Name]** field.
-    1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) specifies the Watched Folder can find input files in a sub-folder of the Watched Folder\input folder.  
+    1. Specify an **[!UICONTROL Output File Pattern]**. For example, the %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifies the Watched Folder can find input files in a subfolder of the Watched Folder\input folder.  
 1. Configure advanced parameters:
     1. Open the **[!UICONTROL Advanced]** tab and add the following custom properties:
 
         |Property|Type|Description|
         |--- |--- |--- |
         |templatePath|String|Specify path of the interactive communication template to use. For example, /content/dam/formsanddocuments/testsample/mediumic. It is a mandatory property.|
-        |recordPath|String|Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. The default value is a random [random UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()).||
-        |usePrefillService|Boolean|Set the value to True. The default value is false.  When the value is set to true, the Batch API reads data from the configured Form Data Model and fills it to the interactive communication. When usePrefillService is set to true, input JSON data (for each record) is treated as FDM Arguments.|
+        |recordPath|String|Value of the recordPath field helps set name of an interactive communication. You can set path of a field of a record as value of the recordPath field. For example, if you specify /employee/Id, the value of id field becomes name for corresponding interactive communication. The default value is a [random UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()).||
+        |usePrefillService|Boolean|Set the value to True. The default value is false. When the value is set to true, the Batch API reads data from the configured Form Data Model and fills it to the interactive communication. When usePrefillService is set to true, input JSON data (for each record) is treated as FDM Arguments.|
         |batchType|String|Set value to PRINT, WEB, or WEB_AND_PRINT. The default value is WEB_AND_PRINT.|
         |locale|String|Specify the locale of output interactive communication. The out-of-the-box service does not use the locale option, but you can create a custom service to generate localized interactive communications. The default value is en_US.|
 
-    1. Select **[!UICONTROL Create]** The watched folder is created.
-1. Use the watched folder to generate interactive communication:
+    1. Select **[!UICONTROL Create]**.
+1. Use the created watched folder to generate interactive communication:
     1. Open the Watched Folder. Navigate to the input folder.
     1. Create a folder in the input folder. Place the JSON file created in Step 2 in the newly created folder.  
-    1. Wait for the Watched Folder to process the file. When the processing starts, the input file and sub-folder containing the file is moved to the staging folder.
-    1. Open the output folder to view the output:
+    1. Wait for the Watched Folder to process the file. When the processing starts, the input file and subfolder that contains the file are moved to the staging folder.
+    1. Open the output folder so you can view the output:
         * When you specify the PRINT option in Watched Folder Configuration, PDF output for the interactive communication is generated.
         * When you specify the WEB option in Watched Folder Configuration, a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
         * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
 
 ## Invoke the Batch API using REST requests
 
- You can invoke [the Batch API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) through Representational State Transfer (REST) requests. It lets you provide a REST endpoint to other users to access the API and configure your own methods for processing, storing, and customizing interactive communication. You can develop your own custom Java servlet to deploy the  API on your AEM instance.
+ You can invoke [the Batch API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) through Representational State Transfer (REST) requests. It lets you provide a REST endpoint to other users to access the API and configure your own methods for processing, storing, and customizing interactive communication. You can develop your own custom Java&trade; servlet to deploy the  API on your AEM instance.
 
- Before you deploy the Java servlet, ensure that you have an interactive communication and corresponding data files are ready. Perform the following steps to create and deploy the Java servlet:  
+ Before you deploy the Java&trade; servlet, ensure that you have an interactive communication and corresponding data files are ready. Perform the following steps so you can create and deploy the Java&trade; servlet:  
 
  1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, [click here](assets/SimpleMediumIC.zip).
- 1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
- 1. Add [AEM Forms Client SDK version 6.0.12](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) or later in dependencies list of POM file of your AEM project. For example,
+ 1. [Build and deploy an AEM Project using Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) on your AEM instance.
+ 1. Add [AEM Forms Client SDK version 6.0.12 or later](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) in the dependencies list of POM file of your AEM project. For example,
 
     ```xml
         <dependency>
@@ -183,7 +183,7 @@ You combine data (records) saved in an external data source with an interactive 
         </dependency>
     ```
     
- 1. Open the Java project, create a .java file, for example, CCMBatchServlet.java. Add the following code to the file:
+ 1. Open the Java&trade; project, create a .java file, for example, CCMBatchServlet.java. Add the following code to the file:
 
     ```java
 
@@ -320,12 +320,12 @@ You combine data (records) saved in an external data source with an interactive 
     ```
 
  1. In the above code, replace the template path (setTemplatePath) with the path of your template and set value of the setBatchType API:
-    * When you specify the PRINT option PDF output for the interactive communication is generated.
-    * When you specify the WEB option a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
+    * When you specify the PRINT option PDF, output for the interactive communication is generated.
+    * When you specify the WEB option, a JSON file per record is generated. You can use the JSON file to [pre-fill a web template](#web-template).
     * When you specify both PRINT and WEB options, both PDF documents and a JSON file per record are generated.
 
- 1. [Use maven to deploy the updated code to your AEM instance](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven).
- 1. Invoke the batch API to generate the interactive communication. The batch API prints returns a stream of PDF and .json files depending on the number of records. You can use the JSON file to [pre-fill a web template](#web-template). If you use the above code, the API is deployed at `http://localhost:4502/bin/batchServlet`. The code prints and returns a stream of a PDF and a JSON files.
+ 1. [Use maven to deploy the updated code to your AEM instance](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+ 1. To generate the interactive communication, invoke the batch API. The batch API prints returns a stream of PDF and .json files depending on the number of records. You can use the JSON file to [pre-fill a web template](#web-template). If you use the above code, the API is deployed at `http://localhost:4502/bin/batchServlet`. The code prints and returns a stream of a PDF and a JSON files.
 
 ### Pre-fill a web template {#web-template}
 
@@ -360,4 +360,4 @@ Apart from saving the data on file system, you store JSON files in CRX-repositor
 
 >[!NOTE]
 >
->Only CRX protocol is enabled by default. To enable other supported protocols, see [Configuring prefill service using Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>Only CRX protocol is enabled by default. To enable other supported protocols, see [Configuring prefill service using Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
