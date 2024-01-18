@@ -110,8 +110,10 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | Store binaries in TAR files on file system `[1]` |Binaries |Z: Not supported for production |
 | Amazon S3 |Binaries |A: Supported |
 | Microsoft&reg; Azure Blob Storage |Binaries |A: Supported |
-| MongoDB Enterprise 4.4 |Repository |A: Supported `[2, 3, 4]` |
-| MongoDB Enterprise 4.2 |Repository |A: Supported `[2, 3, 4]` |
+| MongoDB Enterprise 6.0 |Repository |A: Supported `[3, 4]` |
+| MongoDB Enterprise 5.0 |Repository |A: Supported `[3, 4]` |
+| MongoDB Enterprise 4.4 |Repository |A: Supported `[2, 3, 4, 7]` |
+| MongoDB Enterprise 4.2 |Repository |A: Supported `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 |Repository |Z: Not supported |
 | MongoDB Enterprise 3.6 |Repository |Z: Not supported |
 | MongoDB Enterprise 3.4 |Repository |Z: Not supported |
@@ -126,9 +128,10 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 1. MongoDB Sharding is not supported in AEM.
 1. MongoDB Storage Engine WiredTiger is supported only.
 1. Supported for AEM Forms upgrade customers. Not supported for new installations.
-1. Applicable AEM Forms only:
+1. Applicable to AEM Forms only:
     * Removed support for Oracle Database 12c and added support for Oracle Database 19c.
     * Removed support for Microsoft&reg; SQL Server 2016 and added support for Microsoft&reg; SQL Server 2019.
+1. Not supported for AEM Forms.
 
 >[!NOTE]
 >
