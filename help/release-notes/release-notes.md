@@ -440,6 +440,39 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
    "refresh": true
    ```
 
+* When executing a GraphQL query using optional variables, if a specific value is not provided for the optional variable, then the value for that variable will be considered an implicit `null`. This means that the filter will match only `null` values for the corresponding property.
+
+  For example, in the query below, where no value is specified for the property `lastName`:
+
+  ```graphql
+  query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+      }
+    }
+  }
+  ```
+
+  Only authors with the `lastName` property set to null will be returned:
+
+  ```graphql
+  {
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": null
+        }
+      ]
+    }
+  }
+  }
+  ```
+
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java&trade; 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
 * Users can rename a folder in a hierarchy in [!DNL Assets] and publish a nested folder to [!DNL Brand Portal]. However, the title of the folder is not updated in [!DNL Brand Portal] until the root folder is republished.
