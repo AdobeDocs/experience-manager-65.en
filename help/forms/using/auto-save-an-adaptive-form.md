@@ -4,6 +4,7 @@ description: You can configure an adaptive form to automatically start saving th
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
+exl-id: ff9bf466-228d-40e6-9389-15c1f2ed1d2e
 ---
 # Auto-save an adaptive form {#auto-save-an-adaptive-form}
 

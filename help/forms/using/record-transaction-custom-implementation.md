@@ -5,6 +5,7 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 feature: Transaction Reports
+exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
 ---
 # Record a transaction for custom implementations {#record-a-transaction-for-custom-implementations}
 
