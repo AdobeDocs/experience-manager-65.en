@@ -440,7 +440,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
    "refresh": true
    ```
 
-* When executing a GraphQL query using optional variables, if a specific value is not provided for the optional variable, then the value for that variable will be considered an implicit `null`. This means that the filter will match only `null` values for the corresponding property.
+* When executing a GraphQL query using optional variables, if a specific value is **not** provided for the optional variable, then the value for that variable will be considered an implicit `null`. This means that the filter will match only `null` values for the corresponding property.
 
   For example, in the query below, where no value is specified for the property `lastName`:
 
