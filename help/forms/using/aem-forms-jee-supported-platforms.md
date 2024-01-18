@@ -156,7 +156,12 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td><p>Supported</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 4.4 </p> </td>
+   <td><p> MongoDB Enterprise 5.0</p> </td>
+   <td><p>Repository Microkernel</p> </td>
+   <td><p>Supported</p> </td>
+  </tr>
+    <tr>
+   <td><p> MongoDB Enterprise 6.0 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
@@ -821,6 +826,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
+### Release 6.5.19.1 (Dec 15, 2023)
+
+| Added Support | Removed Support | Deprecated Support |
+| -------------- | --------------- | ------------------- |
+| MongoDB Enterprise 6.0 |MongoDB Enterprise 4.4   |  |
+| MongoDB Enterprise 5.0 |  |  |
+|  | |  |
+
 ### Release 6.5.18.0 (Aug 31, 2023)
 
 | Added Support | Removed Support | Deprecated Support |
@@ -907,5 +920,4 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
 
     --> 
-
 
