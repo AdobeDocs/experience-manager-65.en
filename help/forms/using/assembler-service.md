@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
 feature: Document Services
+exl-id: 84c8125d-0f16-432a-9567-63b868667537
 ---
 # Using Assembler Service{#using-assembler-service}
 

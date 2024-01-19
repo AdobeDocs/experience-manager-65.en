@@ -1,11 +1,12 @@
 ---
 title: Barcoded Forms Service
-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes. 
+description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
 feature: Document Services
+exl-id: d4b5cacd-0bac-48b5-a8a6-0f58883136d7
 ---
 # Barcoded Forms Service{#barcoded-forms-service}
 
