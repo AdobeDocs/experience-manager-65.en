@@ -105,11 +105,12 @@ To create an AEM Archetype 41 or [later](https://github.com/adobe/aem-project-ar
 1. Update project to include latest version of Forms Core Components: 
 
      1. Open the [AEM Archetype Project Folder]/pom.xml for editing. 
-     1. Set version of `core.forms.components.version` and `core.forms.components.af.version` to [latest Forms Core Components](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) version and ensure both have the same version as **Forms Core Components** mentioned in the table, and set version of `core.wcm.components.version` as given in the **WCM Core Components**.
+     1. Set version of `core.forms.components.version` and `core.forms.components.af.version` to the [latest Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html) version and ensure both have the same version as **Forms Core Components** mentioned in the table, and set version of `core.wcm.components.version` as given in the [WCM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
         >[!WARNING]
         >
-        >* When creating an Archetype project with `version 45`, the [AEM Archetype Project Folder]/pom.xml initially sets the forms core components version to `1.1.28`. Prior to building or deploying the Archetype project, update the forms core components version to `1.1.26`.
+        >* When creating an Archetype project with `version 45`, the `[AEM Archetype Project Folder]/pom.xml` initially sets the forms core components version to `1.1.28`. Prior to building or deploying the Archetype project, update the forms core components version to `1.1.26`.
+        >* You can see a list of the Core Components releases that are compatible with AEM 6.5 Form on premise and AMS in the [AEM 6.5 Forms version history](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html) article.
 
 
         >[!NOTE]
