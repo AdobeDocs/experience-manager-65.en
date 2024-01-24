@@ -37,6 +37,8 @@ feature: Configuration,Hybrid Mode
 > `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
 > `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
 > `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+>
+> See also [Dynamic Media Limitations](/help/assets/limitations.md).
 
 <!-- FOR ABOVE - CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->

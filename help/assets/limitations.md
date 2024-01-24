@@ -51,7 +51,7 @@ Dynamic Media does not support the following web browser and operating system co
 <!-- CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-Effective April 30, 2024, Adobe Dynamic Media is ending support for the following:
+Effective April 30, 2024, Adobe Dynamic Media will end support for the following:
 
 * SSL (Secure Socket Layer) 2.0
 * SSL 3.0 
