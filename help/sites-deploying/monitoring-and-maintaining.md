@@ -200,7 +200,7 @@ AEM WCM records detailed logs. After you unpack and start Quickstart, you can fi
 
 Log file rotation refers to the process that limits the growth of the file by creating a file periodically. In AEM, a log file called `error.log` is rotated once a day according to the given rules:
 
-* The `error.log` file is renamed according to the pattern {original_filename} `.yyyy-MM-dd`. For example, on July 2010 11th, the current log file is renamed `error.log-2010-07-10`, then a new `error.og` is created.
+* The `error.log` file is renamed according to the pattern `{original_filename}.yyyy-MM-dd`. For example, on July 2010 11th, the current log file is renamed `error.log-2010-07-10`, then a new `error.log` is created.
 
 * Previous log files are not deleted, so it is your responsibility to clean old log files periodically to limit the disk usage.
 
