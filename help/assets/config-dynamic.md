@@ -14,6 +14,34 @@ feature: Configuration,Hybrid Mode
 ---
 # Configure Dynamic Media - Hybrid mode {#configuring-dynamic-media-hybrid-mode}
 
+>[!IMPORTANT]
+>
+>End of support for Secure Socket Layer 2.0 and 3.0 and Transport Layer Security 1.0 and 1.1.
+>Effective April 30, 2024, Adobe Dynamic Media is ending support for the following:
+>
+>* SSL (Secure Socket Layer) 2.0
+>* SSL 3.0 
+>* TLS (Transport Layer Security) 1.0 and 1.1
+>* The following weak ciphers in TLS 1.2:
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_RSA_WITH_AES_256_GCM_SHA384`
+> `TLS_RSA_WITH_AES_256_CBC_SHA256`
+> `TLS_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_AES_128_GCM_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+
+<!-- FOR ABOVE - CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+
+
 Dynamic Media-Hybrid must be enabled and configured for use. Depending on your use case, Dynamic Media has several [supported configurations](#supported-dynamic-media-configurations).
 
 >[!NOTE]
