@@ -1,7 +1,6 @@
 ---
 title: PDF generation fails to print a large number of PDFs with WorkBench 
 description: When a customer generates a large number of PDFs via services implemented through WorkBench,  the print service fails.
-hidefromtoc: yes
 ---
 # PDF generation fails to print a large number of PDFs via WorkBench {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 
@@ -37,7 +36,7 @@ The largest factor affecting memory usage is the amount of data on a form. Howev
 Additional factors one should consider while designing form template to help improve the memory usage:
 
 1. Avoid using Static Text to label a field. Instead, use captions in the Text Field.
-2. Don't overuse Rectangles, Line Objects and Tables.
+2. Don't overuse Rectangles, Line, Objects and Tables.
 3. Avoid using RichText and Choice Subforms if possible.
 4. Avoid excessive use of Subforms and nested Subforms.
 
@@ -47,7 +46,7 @@ As we are limited by the max process memory and the memory consumed by the proce
 
 If the form has many small nodes with small data, the process will consume more memory (and hence go out of memory faster), than a form that has less no of nodes (even) with big data.
 
-Read the **updated sapnote_0001033661** note for more information, where test results are based on Print form (Non-Tagged PDF). Using tagged PDF Process memory requirement increases. It also depends on the number of fields in the form - roughly the process memory requirement would be slightly more than 1.5 times of non-tagged PDF.
+Read the [Note](/help/forms/using/assets/sapnote_0001033661_updated.pdf) for more information, where test results are based on Print form (Non-Tagged PDF). Using tagged PDF process memory requirement increases. It also depends on the number of fields in the form - roughly the process memory requirement would be slightly more than 1.5 times of non-tagged PDF.
 
 ### Interactive Forms {#interactive-forms}
 
