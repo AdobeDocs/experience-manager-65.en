@@ -19,11 +19,15 @@ exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 
 While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details, and so on. Form developers are required to create these common segments every time a new form is created.
 
-Adaptive forms provide a convenient mechanism to create form segment like a panel or a group of fields only once and reuse them across adaptive forms. These reusable and standalone segments are called adaptive form fragments.
+Adaptive forms provide a convenient mechanism to create form segment like a panel or a group of fields only once and reuse them across adaptive forms. These reusable and standalone segments are called Adaptive Form Fragments.
+
+>[!NOTE]
+>
+> You can easily customize your fragment experience for users with the [Configure dialog and Design dialog of Form Fragment component](https://experienceleague.corp.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
 
 ## Create a fragment {#create-a-fragment}
 
-You can create an adaptive form fragment from scratch or save a panel in an existing adaptive form as fragment.
+You can create an Adaptive Form Fragment from scratch or save a panel in an existing adaptive form as fragment.
 
 ### Create fragment from scratch {#create-fragment-from-scratch}
 
