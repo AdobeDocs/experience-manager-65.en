@@ -7,7 +7,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 
 This article lists the critical fixes implemented to address known issues, improve system stability, and enhance overall performance of AEM Forms. 
 
-The hotfixes are designed to be cumulative, encompassing all preceding fixes. When you apply the latest hotfix to a release, it not only addresses the most recent issue but also incorporates all prior bug fixes and enhancements.
+>[!NOTE]
+>
+> The hotfixes are designed to be cumulative, encompassing all preceding fixes. When you apply the latest hotfix to a release, it not only addresses the most recent issue but also incorporates all prior bug fixes and enhancements.
 
 ## Hotfixes for Adaptive Forms {#hotfix-for-adaptive-forms}
 
