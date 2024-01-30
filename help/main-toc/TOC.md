@@ -609,6 +609,7 @@ user-guide-title: AEM 6.5
   + Adaptive Forms - Core Components {#adaptive-forms-core-components}
     + [Enable Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md)
     + [Create a Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
+    + [Create and use Adaptive Forms Fragments in an Adaptive Form](/help/forms/using/adaptive-form-fragment-core-components.md)
     + [Create themes for Core Components based Adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
   + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
