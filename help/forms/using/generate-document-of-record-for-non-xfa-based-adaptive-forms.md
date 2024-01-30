@@ -26,6 +26,11 @@ This article explains how you can generate a document of record for Adaptive For
 
 >[!NOTE]
 >
+> The support to customize your Adaptive Form fragments and its fields in Adaptive Form editor was introduced with AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+
+
+>[!NOTE]
+>
 >Auto-generation of document of record is not supported for XFA-based adaptive forms. However, you can use the XDP used to create the adaptive form as document of record.
 
 ## Adaptive form types and their documents of record {#adaptive-form-types-and-their-documents-of-record}
