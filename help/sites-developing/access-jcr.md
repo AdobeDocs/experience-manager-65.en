@@ -59,7 +59,7 @@ Use a `Session` instance to create a `javax.jcr.Node` instance. A `Node` instanc
 Node root = session.getRootNode();
 ```
 
-Once you create a `Node`instance, you can perform tasks such as creating another node and adding a value to it. For example, the following code creates two nodes and adds a value to the second node.
+Once you create a `Node` instance, you can perform tasks such as creating another node and adding a value to it. For example, the following code creates two nodes and adds a value to the second node.
 
 ```java
 // Store content
