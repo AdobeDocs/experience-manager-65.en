@@ -7,6 +7,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 
 This article lists the critical fixes implemented to address known issues, improve system stability, and enhance overall performance of AEM Forms. 
 
+>[!NOTE]
+>
+> The hotfixes are designed to be cumulative, encompassing all preceding fixes. When you apply the latest hotfix to a release, it not only addresses the most recent issue but also incorporates all prior bug fixes and enhancements.
+
 ## Hotfixes for Adaptive Forms {#hotfix-for-adaptive-forms}
 
 <table>
@@ -15,6 +19,34 @@ This article lists the critical fixes implemented to address known issues, impro
     <td><strong>Date</strong></td>
     <td><strong>Hotfix download link (AEM Software Distribution link)</strong></td>
     <td><strong>Fixed issues</strong></td>
+  </tr>
+  <tr>
+    <td>January 29, 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fforms-foundation-qs-content-4.0.170-FORMS-12692-B0001.zip">Hotfix for AEM Service Pack 6.5.19.0 for Windows on JEE server</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>On AEM Forms on the JEE server, the HTML5 Forms that make use of the context path fail to render. (FORMS-12485).</li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>January 29, 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-win-pkg-6.0.1016-004.zip">Hotfix for AEM Service Pack 6.5.18.0 for Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-linux-pkg-6.0.1016-004.zip">Hotfix for AEM Service Pack 6.5.18.0 for Linux</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-osx-pkg-6.0.1016-004.zip">Hotfix for AEM Service Pack 6.5.18.0 for Apple macOS</a></li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li> The OOTB Scribble Signature component fails to render for a preview in an adaptive form. (FORMS-12073).</li>
+    </ul>
+    </td>    
    </tr>
    <tr>
     <td>November 20, 2023</td>
@@ -32,9 +64,9 @@ This article lists the critical fixes implemented to address known issues, impro
     <li>Interactive Communication with large inline images fails to open in edit mode. (FORMS-10578)</li>
     </ul>
     </td>    
-    </tr>
-    <tbody>
-     </table>
+  </tr>
+  <tbody>
+</table>
 
 ## Download and install a Hotfix {#download-install-hotfix}
 
