@@ -55,7 +55,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### Admin User Interface{#sites-adminui-6520}
 
-* text
+* The `Workflow Title` field is marked with `*` as required, but there is no validation. (SITES-16491) NORMAL
 
 #### Classic UI{#sites-classicui-6520}
 
@@ -64,7 +64,19 @@ Some of the key features and enhancements in this release include the following:
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
 * Nested configuration folders were no longer supported and content fragment model folders were no longer visible after upgrading to AEM 6.5.18 or to AEM 6.5.19. (SITES-18110) MAJOR
-* Some sub-folders are not able to pick from inherited content fragment models. Need to support folders without having a jcr:content property, even if the DAM folders created by way of the user interface have such a node. (SITES-17943) NORMAL
+* Some subfolders are not able to pick from inherited content fragment models. It must support folders without having a `jcr:content` property, even if the DAM folders created by way of the user interface have such a node. (SITES-17943) NORMAL
+
+#### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6520}
+
+* When executing a GraphQL query to [filter results](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) using optional variables, if a specific value is **not** provided for the optional variable, then the variable is ignored in the filter evaluation. (SITES-17051) NORMAL
+
+#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
+
+* text
+
+#### [!DNL Content Fragments] - REST API{#sites-restapi-6520}
+
+* With the upgrade of the `org.json` library, there was a change in how decimal numbers were deserialized. Before they were converted "by default" into Doubles and now into BigDecimals. Instead, the metadata property values, stored by way of the REST API, should get converted to Double from BigDecimal. (SITES-16857) NORMAL
 
 #### Core Backend{#sites-core-backend-6520}
 
@@ -77,21 +89,13 @@ Some of the key features and enhancements in this release include the following:
 
 #### Campaign integration{#sites-campaign-integration-6520}
 
-* text
+* AEM was using an allowlist&ndash;also known as a whitelist&ndash;due to a vulnerability report. The allowlist was preventing customers from using needed functionality. (SITES-16822) CRITICAL
 
 #### Experience Fragments{#sites-experiencefragments-6520}
 
-* text
+* Make available MSM for Experience Fragments capability on AEM 6.5. (SITES-16004) MAJOR
 
 #### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
-
-* text
-
-#### GraphQL Queries {#sites-graphql-queries-6520}
-
-* When executing a GraphQL query to [filter results](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) using optional variables, if a specific value is **not** provided for the optional variable, then the variable will be ignored in the filter evaluation. (SITES-17051)
-
-#### GraphQL Query Editor{#sites-graphql-query-editor-6520}
 
 * text
 
@@ -102,12 +106,13 @@ Some of the key features and enhancements in this release include the following:
 #### MSM - Live Copies{#sites-msm-live-copies-6520}
 
 * An "`Is not modifiable`" exception is thrown when rolling out component. Specifically, an `org.apache.sling.servlets.post.impl.operations.ModifyOperation` exception is experienced during response processing. (SITES-18809) MAJOR
-* Unable to rollout changes to specific Live Copies of Experience Fragments. (SITES-17930) MAJOR
+* Unable to roll out changes to specific Live Copies of Experience Fragments. (SITES-17930) MAJOR
 * When a user adds an annotation to a component on a blueprint page, and then rolls it out, the annotation count on Live Copy is displayed incorrectly. (SITES-17099) MAJOR
+* The MSM Rollout button from parent page to child page is broken in the touch graphical user interface; when selected the following error is displayed: `Uncaught TypeError: _g.shared is undefined`. (SITES-16991) MAJOR
 
 #### Page Editor{#sites-pageeditor-6520}
 
-* Forms Theme Editor preview is broken. When Preview is selected only a loading icon is visible. (SITES-17164) BLOCKER 
+* Forms Theme Editor preview is broken. When Preview is selected, only a loading icon is visible. (SITES-17164) BLOCKER 
 
 ### [!DNL Assets]{#assets-6520}
 
@@ -149,6 +154,10 @@ Some of the key features and enhancements in this release include the following:
 
 * text
 
+#### Communities {#communities-6520}
+
+* User sync diagnostics fail after successfully configuring user sync. (NPR-41693) NORMAL
+
 #### Content distribution{#foundation-content-distribution-6520}
 
 * text
@@ -156,6 +165,10 @@ Some of the key features and enhancements in this release include the following:
 #### Integrations{#integrations-6520}
 
 * text
+
+#### Localization{#localization-6520}
+
+* Aria-label "close" is not localized in **[!UICONTROL Assets]** > **[!UICONTROL Files]**, select a folder, then on the toolbar, select **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > member name. (NPR-41705) MAJOR
 
 #### Oak{#oak-6520}
 
@@ -171,7 +184,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### Sling{#foundation-sling-6520}
 
-* text
+* The `org.apache.sling.resourceMerger` bundle 1.4.2 throws an exception from AEM 6.5, Service Pack 17 and later. The Sling resource merger 1.4.4 should be included in Service Pack 20. (NPR-41630) NORMAL
 
 #### Translation projects{#foundation-translation-6520}
 
@@ -248,7 +261,7 @@ For instructions to install the service pack on Experience Manager Forms, see [E
 
 >[!NOTE]
 >
->The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
+>The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
 
 ### Install GraphQL Index Package for Experience Manager Content Fragments{#install-aem-graphql-index-add-on-package}
 
@@ -441,11 +454,11 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
-* On AEM Forms on JEE, the HTML5 Forms that make use of the context path, fail to render. (FORMS-12485). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md).
+* On AEM Forms on JEE, the HTML5 Forms that use the context path, fail to render. (FORMS-12485). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md).
 
 #### AEM Forms on JEE 
 
-* Critical security vulnerabilities have been reported for Struts 2 RCE, a popular and open-source web application framework for developing Java EE web applications. Adobe has released [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) to address the vulnerability in AEM Forms on JEE. 
+* Critical security vulnerabilities have been reported for Struts 2 RCE, a popular and open-source web application framework for developing Java&trade; EE web applications. Adobe has released [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) to address the vulnerability in AEM Forms on JEE. 
 
 
 <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
