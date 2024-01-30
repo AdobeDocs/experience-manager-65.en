@@ -68,6 +68,7 @@ Different variants for tables are shown below that show rendering number of page
 
 1. A table with many small columns where 800 pages of PDFs are generated, data file size is 4.6 MB and 20-K records.
     ![table_many_small_columns](/help/forms/using/assets/table_many_small_columns.png)
+    
 1. A table with many small columns, but bigger data file because of usage of bigger xmlTag names.
 Here, everything is same as the previous, but xml tag names have been made large (so that data file size will increase without any increase in the actual effective data), the end result (upper limit) is almost the same. Though the data file size increased from 4.6 MB to 44.6 MB. Here 800 pages of PDFs are generated, data file size is 44.6 MB and 20-K records.
 
