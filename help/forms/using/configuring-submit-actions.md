@@ -166,6 +166,10 @@ After a successful configuration, use the [Invoke a Microsoft&reg; Power Automat
 
 ## Submit to Microsoft&reg; SharePoint List{#submit-to-sharedrive}
 
+>[!NOTE]
+>
+> The Submit to Microsoft&reg; SharePoint List feature was introduced with AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+
 The **[!UICONTROL Submit to SharePoint]** submit action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. 
 
 ### Connect an Adaptive Form to Microsoft&reg; SharePoint List {#connect-af-sharepoint-list}
