@@ -9,7 +9,7 @@ feature: Adaptive Forms, Core Components
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AAEM 6.5     | This article   |
+| AEM 6.5     | This article   |
 | AEM as a Cloud Service|    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html)                  |
 
 While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details. Form developers are required to create these common segments every time a new form is created.
