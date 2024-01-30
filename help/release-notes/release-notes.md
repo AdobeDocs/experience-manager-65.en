@@ -63,15 +63,17 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* text
+* Nested configuration folders were no longer supported and content fragment model folders were no longer visible after upgrading to AEM 6.5.18 or to AEM 6.5.19. (SITES-18110) MAJOR
+* Some sub-folders are not able to pick from inherited content fragment models. Need to support folders without having a jcr:content property, even if the DAM folders created by way of the user interface have such a node. (SITES-17943) NORMAL
 
 #### Core Backend{#sites-core-backend-6520}
 
-* text 
+* Content fragments are not serializable with Jackson exporter: The page load breaks when there is a content fragment referred to in a page (uses Jackson exporter code) and any tag added to a content fragment. (SITES-18096) NORMAL 
+* When Quick Publish of a Content Fragment is used, it continues loading and does not get published. That is, Quick Publish is not working for Content Fragments after a service pack upgrade from AEM 6.5.7 to AEM 6.5.17. When the user tried managed publish, it worked. However, when they tried Quick Publish, it was not getting published. Specifically, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` caused the system to thrash. (SITES-17311) MAJOR
 
 #### Core Components{#sites-core-components-6520}
 
-* text
+* Installing CIF Core Components package on AEM causes `:type` value of existing components to change. The change means that they no longer render on pages that they have been added to. (SITES-17601) MAJOR
 
 #### Campaign integration{#sites-campaign-integration-6520}
 
@@ -99,11 +101,13 @@ Some of the key features and enhancements in this release include the following:
 
 #### MSM - Live Copies{#sites-msm-live-copies-6520}
 
-* text 
+* An "`Is not modifiable`" exception is thrown when rolling out component. Specifically, an `org.apache.sling.servlets.post.impl.operations.ModifyOperation` exception is experienced during response processing. (SITES-18809) MAJOR
+* Unable to rollout changes to specific Live Copies of Experience Fragments. (SITES-17930) MAJOR
+* When a user adds an annotation to a component on a blueprint page, and then rolls it out, the annotation count on Live Copy is displayed incorrectly. (SITES-17099) MAJOR
 
 #### Page Editor{#sites-pageeditor-6520}
 
-* text 
+* Forms Theme Editor preview is broken. When Preview is selected only a loading icon is visible. (SITES-17164) BLOCKER 
 
 ### [!DNL Assets]{#assets-6520}
 
