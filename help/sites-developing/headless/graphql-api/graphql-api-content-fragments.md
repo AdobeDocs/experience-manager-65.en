@@ -713,7 +713,7 @@ To enable the caching of persisted queries, the following updates to the Dispatc
   >
   >The Dispatcher adds the suffix `.json` to all persisted query URLS, so that the result can be cached.
   >
-  >This is to ensure that the query conforms to the Dispatcher’s requirements for documents that can be cached.
+  >This is to ensure that the query conforms to the Dispatcher’s requirements for documents that can be cached. For further details see [How does the Dispatcher return documents?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F).
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
