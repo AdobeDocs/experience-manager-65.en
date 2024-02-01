@@ -2,7 +2,7 @@
 title: Failure to backup database during upgrade to 6.5.12.0 for MySQL.
 description: When a user upgrades to Experience Manager 6.5.12.0 and click "Upgrade MySQL", the configuration manager fails to back up the previous Experience Manager Forms Database.
 ---
-# Failure to backup database during upgrade to 6.5.12.0 for MySQL (#issue)
+# Failure to backup database during upgrade to 6.5.12.0 for MySQL {#issue}
 
 When a user upgrades to Experience Manager 6.5.12.0 and click "Upgrade MySQL", the configuration manager fails to back up the previous Experience Manager Forms Database, It shows the error:
 
