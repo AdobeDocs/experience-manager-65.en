@@ -43,24 +43,24 @@ In the Basic tab, you can configure the following properties:
 
 ![Chart Properties](assets/chart-properties.png)
 
-**Element name**: An identifier for the chart element in JCR content structure. It is not visible on the chart but helps when referring to the element from other components, scripts, and SOM expressions.
-**Chart type**: Specifies the type of chart that you want to generate. The available options are Pie, Donut, Bar, Column, Line, Line and Point, Point, and Area. In the example, the chart type is Column.
-**Repeating Row Name For Data Source**: Specifies the element name of the table row or the repeatable panel from where the data will be sourced. In the example, statementDetails is the element name of the repeatable row in the Statement Details table.
-**X-Axis > Title**: Specifies the title for the X-axis. In the example, the title for X-axis is Category.
-**X-Axis > Field**: Specifies the element name of the field (or a cell in a table) to be plotted on X-axis. In the example, categories are configured on X-axis. The element name for the table cell in the Category column of the example table is category.
-**X-Axis > Use function**: Specifies the statistical function to use for computing the values on X-axis. In the example, the option selected is None. For more information about functions, see Use functions in chart.
-**Y-Axis > Title**: Specifies the title for the Y-axis. In the example, the title for Y-axis is Expense.
-**Y-Axis > Field**: Specifies the element name of the field (or the cell in a table) to be plotted on Y-axis. In the example, configure amount on Y-axis. The element name for the table cell in the Amount column of the example table is amount.
-**Y-Axis > Use function**: Specifies the statistical function to use for computing the values on Y-axis. In the example, the amount spent in each category is added and the computed value is plotted on the Y-axis. Therefore, select Sum from the Use function drop-down list. For more information about functions, see Use functions in chart.
-**Legend position**: Specifies the position of the legend with respect to the chart. The available options are Right, Left, Top, and Bottom.
-**Show legend**: Show a legend for the chart, when enabled.
-**Tooltip**: Specifies the format in which the tool tip appears on mouseover on a data point in the chart. The default value is **\${x}(\${y})**. Depending on the chart type, when you point the mouse on a point, bar, or slice in the chart, the variables **\${x}** and **\${y}** are dynamically replaced with the corresponding values on X-axis and Y-axis and displayed in the tool tip. As shown in the example below, the tool tip is displayed as **Retail Stores(5870)** when pointing mouse at the Retails Stores column. To disable tool tip, leave the Tooltip field blank. This option is not applicable for Line and Area charts.
-**Chart-specific configurations**: In addition to common configurations, the following chart-specific configuration is available:
-**Inner radius**: available for Donut charts to specify the radius (in pixels) of the inner circle in the chart.
-**Line color**: available for Line, Line and Point, and Area charts to specify the hexadecimal value of the color for the line in the chart.
-**Point color**: available for Point and Line and Point charts to specify the hexadecimal value of the color for the points in the chart.
-**Area color**: available for Area charts to specify the hexadecimal value of the color for the area under the line in the chart.
-**CSS Class**: Specify the name of a CSS class in the CSS class field to apply custom styling to the chart.
+* **Element name**: An identifier for the chart element in JCR content structure. It is not visible on the chart but helps when referring to the element from other components, scripts, and SOM expressions.
+* **Chart type**: Specifies the type of chart that you want to generate. The available options are Pie, Donut, Bar, Column, Line, Line and Point, Point, and Area. In the example, the chart type is Column.
+* **Repeating Row Name For Data Source**: Specifies the element name of the table row or the repeatable panel from where the data will be sourced. In the example, statementDetails is the element name of the repeatable row in the Statement Details table.
+* **X-Axis > Title**: Specifies the title for the X-axis. In the example, the title for X-axis is Category.
+* **X-Axis > Field**: Specifies the element name of the field (or a cell in a table) to be plotted on X-axis. In the example, categories are configured on X-axis. The element name for the table cell in the Category column of the example table is category.
+* **X-Axis > Use function**: Specifies the statistical function to use for computing the values on X-axis. In the example, the option selected is None. For more information about functions, see Use functions in chart.
+* **Y-Axis > Title**: Specifies the title for the Y-axis. In the example, the title for Y-axis is Expense.
+* **Y-Axis > Field**: Specifies the element name of the field (or the cell in a table) to be plotted on Y-axis. In the example, configure amount on Y-axis. The element name for the table cell in the Amount column of the example table is amount.
+* **Y-Axis > Use function**: Specifies the statistical function to use for computing the values on Y-axis. In the example, the amount spent in each category is added and the computed value is plotted on the Y-axis. Therefore, select Sum from the Use function drop-down list. For more information about functions, see Use functions in chart.
+* **Legend position**: Specifies the position of the legend with respect to the chart. The available options are Right, Left, Top, and Bottom.
+* **Show legend**: Show a legend for the chart, when enabled.
+* **Tooltip**: Specifies the format in which the tool tip appears on mouseover on a data point in the chart. The default value is **\${x}(\${y})**. Depending on the chart type, when you point the mouse on a point, bar, or slice in the chart, the variables **\${x}** and **\${y}** are dynamically replaced with the corresponding values on X-axis and Y-axis and displayed in the tool tip. As shown in the example below, the tool tip is displayed as **Retail Stores(5870)** when pointing mouse at the Retails Stores column. To disable tool tip, leave the Tooltip field blank. This option is not applicable for Line and Area charts.
+* **Chart-specific configurations**: In addition to common configurations, the following chart-specific configuration is available:
+* **Inner radius**: available for Donut charts to specify the radius (in pixels) of the inner circle in the chart.
+* **Line color**: available for Line, Line and Point, and Area charts to specify the hexadecimal value of the color for the line in the chart.
+* **Point color**: available for Point and Line and Point charts to specify the hexadecimal value of the color for the points in the chart.
+* **Area color**: available for Area charts to specify the hexadecimal value of the color for the area under the line in the chart.
+* **CSS Class**: Specify the name of a CSS class in the CSS class field to apply custom styling to the chart.
 
 ### Configuration {#configuration}
 
@@ -96,13 +96,11 @@ The legend and the tool tip appear as follows.
 
 In the Styling mode, you can configure the width, in percentage of the total width available in the form or document, and height, in pixels, for the chart. Other options include text, background, border, effects, and CSS overrides.
 
-To switch to styling mode, in the page toolbar, tap > Style.
-
-Image - Chart properties available for styling
+To switch to styling mode, in the page toolbar, **tap>>Style**.
 
 ![Chart properties available for styling](assets/chart-styling.png)
 
-## Use functions in chart {#use-functions-in-chart}
+## Use functions in chart {#use-functions}
 
 You can configure a chart to use statistical functions to compute values from the source data for plotting on the chart. While the Chart component come with some in-built functions, you can write your own functions and make them available for use in the chart configuration.
 
@@ -114,14 +112,14 @@ You can configure a chart to use statistical functions to compute values from th
 
 The following functions are available by default with the Chart component:
 
-**Mean (Average)**: Returns the average of the values on X or Y axis for a given value on the other axis.
-**Sum**: Returns the sum of all values on X or Y axis for a given value on the other axis.
-**Maximum**: Returns the maximum of the values on X or Y axis for a given value on the other axis.
-**Frequency**: Returns the number of values on X or Y axis for a given value on the other axis.
-**Range**: Returns the difference between the maximum and minimum of the values on X or Y axis for a given value on the other axis.
-**Median**: Returns the value that separates higher and lower values in half on X or Y axis for a given value on the other axis.
-**Minimum**: Returns the minimum of the values on X or Y axis for a given value on the other axis.
-**Mode**: Returns the value with most occurrences on X or Y axis for a given value on the other axis
+* **Mean (Average)**: Returns the average of the values on X or Y axis for a given value on the other axis.
+* **Sum**: Returns the sum of all values on X or Y axis for a given value on the other axis.
+* **Maximum**: Returns the maximum of the values on X or Y axis for a given value on the other axis.
+* **Frequency**: Returns the number of values on X or Y axis for a given value on the other axis.
+* **Range**: Returns the difference between the maximum and minimum of the values on X or Y axis for a given value on the other axis.
+* **Median**: Returns the value that separates higher and lower values in half on X or Y axis for a given value on the other axis.
+* **Minimum**: Returns the minimum of the values on X or Y axis for a given value on the other axis.
+* **Mode**: Returns the value with most occurrences on X or Y axis for a given value on the other axis
 
 ### Custom functions {#custom-functions}
 
@@ -147,8 +145,8 @@ Once you have written a custom function, do the following to make it available f
     * Set value to a fully qualified name of the custom JavaScript function. (mandatory)
     * Set jcr:description to a meaningful name. It appears in the **Use function** drop-down list. For example, **Multiply**.
     * Set qtip to a short description of the function. It appears as a tooltip when hovering pointer over the function name in the Use function drop-down list.
-    * Click **Save All** to save the configuration.
-The function is now available for use in the Chart.
+    * Click **Save All** to save the configuration. 
+    * The function is now available for use in the Chart.
 
 ![Custom function](assets/custom-function.png)
 
