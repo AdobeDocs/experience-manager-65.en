@@ -7,6 +7,7 @@ feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sit
 version: 6.5
 type: Documentation
 index: y
+recommendations: noDisplay
 ---
 
 # Metadata for internal use
