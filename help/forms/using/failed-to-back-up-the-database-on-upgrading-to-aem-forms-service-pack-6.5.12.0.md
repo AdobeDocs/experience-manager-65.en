@@ -1,8 +1,8 @@
 ---
-title: Failed to back up the previous Database on AEM Forms 6.5.12.0.
+title: Failure to backup database during upgrade to 6.5.12.0 for MySQL.
 description: When a user upgrades to Experience Manager 6.5.12.0 and click "Upgrade MySQL", the configuration manager fails to back up the previous Experience Manager Forms Database.
 ---
-# Issue (#issue)
+# Failure to backup database during upgrade to 6.5.12.0 for MySQL {#issue}
 
 When a user upgrades to Experience Manager 6.5.12.0 and click "Upgrade MySQL", the configuration manager fails to back up the previous Experience Manager Forms Database, It shows the error:
 
