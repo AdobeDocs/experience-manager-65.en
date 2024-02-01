@@ -29,6 +29,11 @@ exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 
 +++
 
+>[!NOTE]
+>
+> The 64-bit version of the designer was introduced with AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+
+
 
 ## Install AEM Forms Designer {#install-designer}
 
