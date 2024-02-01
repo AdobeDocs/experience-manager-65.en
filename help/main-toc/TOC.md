@@ -620,6 +620,7 @@ user-guide-title: AEM 6.5
     + [Using CAPTCHA in adaptive forms](/help/forms/using/captcha-adaptive-forms.md)
     + [Adaptive forms keywords](/help/forms/using/adaptive-forms-keywords.md)
     + [Tables in adaptive forms](/help/forms/using/adaptive-forms-tables.md)
+    + [Charts in adaptive forms](/help/forms/using/adaptive-form-charts.md)
     + [Auto-save an adaptive form](/help/forms/using/auto-save-an-adaptive-form.md)
     + [Configuring redirect page](/help/forms/using/configuring-redirect-page.md)
     + [Creating accessible adaptive forms](/help/forms/using/creating-accessible-adaptive-forms.md)
