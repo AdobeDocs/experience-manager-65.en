@@ -188,11 +188,13 @@ Some of the key features and enhancements in this release include the following:
 
 #### Translation projects{#foundation-translation-6520}
 
-* text
+* Following deployment of AEM 6.5 Service Pack 18, there was an issue with the Filters tab in the Translation Rules Editor. When a Context is selected, clicking Edit > Save, a double-quote as HTML character appears the next time you open the same Context. Essentially, translation rules were not getting saved correctly.(NPR-41624) MAJOR
+* Issues related to Content Fragment translations, where the translated strings are being sent back from the translation provider to AEM, but they are stuck at the `/content/projects` level and not updating the Content Fragments.(NPR-41516) MAJOR
 
 #### User interface{#foundation-ui-6520}
 
-* text
+* In AEM, **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Tagging]** > **[!UICONTROL Create]** > **[!UICONTROL Create Tag]**, entering non-latin characters in the **Title** field causes the **Name** field to be filled with just the hyphen character ( `-` ). (NPR-41623) NORMAL
+* Copyright year is incorrect in the `About Adobe Experience Manager` dialog box. (NPR-41526) NORMAL
 
 #### WCM{#wcm-6520}
 
