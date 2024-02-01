@@ -27,7 +27,7 @@ You can programmatically modify nodes and properties located within the Adobe CQ
 
 Although there are different ways to connect to a repository and establish a connection, this development article uses a static method that belongs to the `org.apache.jackrabbit.commons.JcrUtils` class. The name of the method is `getRepository`. This method takes a string parameter that represents the URL of the Adobe CQ server. For example, `http://localhost:4503/crx/server`.
 
-The `getRepository`method returns a `Repository`instance, as shown in the following code example.
+The `getRepository` method returns a `Repository` instance, as shown in the following code example.
 
 ```java
 //Create a connection to the AEM JCR repository running on local host
@@ -36,14 +36,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Create a Session instance {#create-a-session-instance}
 
-The `Repository`instance represents the CRX repository. You use the `Repository`instance to establish a session with the repository. To create a session, invoke the `Repository`instance's `login`method and pass a `javax.jcr.SimpleCredentials` object. The `login`method returns a `javax.jcr.Session` instance.
+The `Repository` instance represents the CRX repository. You use the `Repository` instance to establish a session with the repository. To create a session, invoke the `Repository` instance's `login` method and pass a `javax.jcr.SimpleCredentials` object. The `login` method returns a `javax.jcr.Session` instance.
 
-You create a `SimpleCredentials`object by using its constructor and passing the following string values:
+You create a `SimpleCredentials` object by using its constructor and passing the following string values:
 
 * The user name;
 * The corresponding password
 
-When passing the second parameter, call the String object's `toCharArray`method. The following code shows how to call the `login`method that returns a `javax.jcr.Sessioninstance`.
+When passing the second parameter, call the String object's `toCharArray` method. The following code shows how to call the `login` method that returns a `javax.jcr.Sessioninstance`.
 
 ```java
 //Create a Session instance
@@ -52,14 +52,14 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Create a Node instance {#create-a-node-instance}
 
-Use a `Session`instance to create a `javax.jcr.Node` instance. A `Node`instance lets you perform node operations. For example, you can create a node. To create a node that represents the root node, invoke the `Session`instance's `getRootNode` method, as shown in the following line of code.
+Use a `Session` instance to create a `javax.jcr.Node` instance. A `Node` instance lets you perform node operations. For example, you can create a node. To create a node that represents the root node, invoke the `Session` instance's `getRootNode` method, as shown in the following line of code.
 
 ```java
 //Create a Node
 Node root = session.getRootNode();
 ```
 
-Once you create a `Node`instance, you can perform tasks such as creating another node and adding a value to it. For example, the following code creates two nodes and adds a value to the second node.
+Once you create a `Node` instance, you can perform tasks such as creating another node and adding a value to it. For example, the following code creates two nodes and adds a value to the second node.
 
 ```java
 // Store content
@@ -69,7 +69,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Retrieve Node Values {#retrieve-node-values}
 
-To retrieve a node and its value, invoke the `Node`instance's `getNode`method and pass a string value that represents the fully qualified path to the node. Consider the node structure created in the previous code example. To retrieve the day node, specify adobe/day, as shown in the following code:
+To retrieve a node and its value, invoke the `Node` instance's `getNode` method and pass a string value that represents the fully qualified path to the node. Consider the node structure created in the previous code example. To retrieve the day node, specify adobe/day, as shown in the following code:
 
 ```java
 // Retrieve content
@@ -81,7 +81,7 @@ System.out.println(node.getProperty("message").getString());
 
 ## Create nodes in the Adobe CQ Repository {#create-nodes-in-the-adobe-cq-repository}
 
-The following Java&trade; code example represents a Java&trade; class that connects to Adobe CQ, creates a `Session`instance, and adds new nodes. A node is assigned a data value and then the value of the node and its path is written out to the console. When you are done with the Session, be sure to log out.
+The following Java&trade; code example represents a Java&trade; class that connects to Adobe CQ, creates a `Session` instance, and adds new nodes. A node is assigned a data value and then the value of the node and its path is written out to the console. When you are done with the Session, be sure to log out.
 
 ```java
 /*
