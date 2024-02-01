@@ -150,13 +150,16 @@ Once you have written a custom function, do the following to make it available f
 
 ![Custom function](assets/custom-function.png)
 
+
 ## Auto refresh chart {#auto-refresh-chart}
+
 A chart refreshes automatically when users do one of the following:
 * Add or remove an instance of the data source panel or table row.
 * Change any value plotted on X or Y axis in the data source panel or table row.
 * Change the chart type.
 
-## Use chart type in adaptive form rules{#chart-in-rules}
+## Use chart type in adaptive form rules {#chart-in-rules}
+
 The chartType property specifies the type of chart. The possible values are pie, donut, bar, line, linepoint, point, and area. It is a scriptable property, which means you can use it in [adaptive form rules](/help/forms/using/rule-editor.md) to manipulate chart configurations. Let's understand it with the help of an example.
 
 Consider that you configured a Column chart. However, you also want to provide users an option to select a different chart type from a drop-down list and redraw the chart. You can achieve this using the chartType property in a rule as follows:
