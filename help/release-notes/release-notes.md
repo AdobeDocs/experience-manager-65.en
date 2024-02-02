@@ -120,7 +120,8 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
-* text
+* Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882) MAJOR
+* When an asset is uploaded to AEM, the `Update_asset` workflow is triggered. However, the workflow never finishes. The workflow only completes up to the product upload step. The next step is the Scene7 batch upload, but that process is not getting pulled into AEM. (ASSETS-30443) CRITICAL
 
 ### [!DNL Forms]{#forms-6520}
 
@@ -164,11 +165,12 @@ Some of the key features and enhancements in this release include the following:
 
 #### Integrations{#integrations-6520}
 
-* text
+* Remove all code and dependencies of Adobe Search&Promote from AEM 6.5. (NPR-40856) NORMAL
 
 #### Localization{#localization-6520}
 
 * Aria-label "close" is not localized in **[!UICONTROL Assets]** > **[!UICONTROL Files]**, select a folder, then on the toolbar, select **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > member name. (NPR-41705) MAJOR
+* There is a truncated tooltip for the **[!UICONTROL Key Store Password]** field on the SSL Setup page for locales ENG, FRA, KOR, DEU, and PTB. (NPR-41367) NORMAL
 
 #### Oak{#oak-6520}
 
@@ -176,7 +178,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### Platform{#foundation-platform-6520}
 
-* text
+* Issue with integrating Campaign with AEM caused by the /api servlet not returning the correct scheme in the href json. The reason was because AEM was not receiving the X-Forward-Proto header which forced the request to respond with an HTTP scheme instead of HTTPS. As such, the ability to toggle scheme selection based on an OSGI configuration should be added. (GRANITE-48454) MAJOR
 
 #### Replication{#foundation-replication-6520}
 
@@ -186,15 +188,19 @@ Some of the key features and enhancements in this release include the following:
 
 * The `org.apache.sling.resourceMerger` bundle 1.4.2 throws an exception from AEM 6.5, Service Pack 17 and later. The Sling resource merger 1.4.4 should be included in Service Pack 20. (NPR-41630) NORMAL
 
-#### Translation projects{#foundation-translation-6520}
+#### Translation{#foundation-translation-6520}
 
-* Following deployment of AEM 6.5 Service Pack 18, there was an issue with the Filters tab in the Translation Rules Editor. When a Context is selected, clicking Edit > Save, a double-quote as HTML character appears the next time you open the same Context. Essentially, translation rules were not getting saved correctly.(NPR-41624) MAJOR
-* Issues related to Content Fragment translations, where the translated strings are being sent back from the translation provider to AEM, but they are stuck at the `/content/projects` level and not updating the Content Fragments.(NPR-41516) MAJOR
+* Following deployment of AEM 6.5 Service Pack 18, there was an issue with the Filters tab in the Translation Rules Editor. When a Context is selected, clicking Edit > Save, a double-quote as HTML character appears the next time you open the same Context. Essentially, translation rules were not getting saved correctly. (NPR-41624) MAJOR
+* Issues related to Content Fragment translations, where the translated strings are being sent back from the translation provider to AEM, but they are stuck at the `/content/projects` level and not updating the Content Fragments. (NPR-41516) MAJOR
+* An error message is displayed when creating a language copy. It occurs on a page that has a content fragment referenced in a page property, using content fragment models. (NPR-41441) MAJOR
+* Links in Experience Fragments are not adjusted to the correct language during Language Copy. Instead, the Experience Fragment points to the master locale. (NPR-41343) NORMAL
 
 #### User interface{#foundation-ui-6520}
 
 * In AEM, **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Tagging]** > **[!UICONTROL Create]** > **[!UICONTROL Create Tag]**, entering non-latin characters in the **Title** field causes the **Name** field to be filled with just the hyphen character ( `-` ). (NPR-41623) NORMAL
 * Copyright year is incorrect in the `About Adobe Experience Manager` dialog box. (NPR-41526) NORMAL
+* Console error is experienced after an upgrade to AEM 6.5, Service Pack 18. The error is in the `coralUI3.js` file and it occurs when you select any drop-down in AEM. Specifically, it happens with an `onOverlayToggle` event. The error `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` is displayed. (NPR-41467) MAJOR
+* There are untranslated **[!UICONTROL Profile Properties]** strings when editing user settings. Occurs in all locales. (NPR-41365) NORMAL
 
 #### WCM{#wcm-6520}
 
