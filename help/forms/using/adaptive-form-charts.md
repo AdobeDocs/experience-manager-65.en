@@ -9,8 +9,8 @@ feature: Adaptive Forms, Foundation Components
 
 ![Hero_Image](assets/charts_hero_image.jpg)
 
-A chart or a graph is a visual representation of data. It allows you to condense large amounts of information into easy-to-underst and visual format, enabling you to better visualize, interpret, and analyze complex data.
-AEM Forms add-on package provides an out-of-the-box Chart component. You can use in your adaptive forms and documents for visual representation of two-dimensional data in repeatable panels and tables. The Chart component allows you to add and configurethe following types of charts:
+A chart or a graph is a visual representation of data. It allows you to condense large amounts of information into easy-to-understand visual format, enabling you to better visualize, interpret, and analyze complex data.
+AEM Forms add-on package provides an out-of-the-box Chart component. You can use in your adaptive forms and documents for visual representation of two-dimensional data in **repeatable panels** and **tables**. The Chart component allows you to add and configure the following types of charts:
 
 1. Pie
 1. Column
@@ -35,7 +35,7 @@ The Chart component is available in AEM sidebar, by default. You can drag-drop t
 > 
 > Before configuring the chart, ensure that the panel or the table row for which you are configuring the chart is set to repeatable. You can specify minimum and maximum counts for repeatable panel or table row in the Repeat Settings tab of their Edit Component dialog.
 
-To configure the chart, right-click the Chart component and click Edit to open the Edit Chart dialog. The dialog includes Title and text, Configuration, Advanced options, and Styling tabs that allow you to configure the chart.
+To configure the chart, click the Chart component and click ![Settings](cmppr1.png) to open the Edit Chart dialog. The dialog includes Title and text, Configuration, Advanced options, and Styling tabs that allow you to configure the chart.
 
 ### Basic {#basic}
 
@@ -45,7 +45,7 @@ In the Basic tab, you can configure the following properties:
 
 * **Element name**: An identifier for the chart element in JCR content structure. It is not visible on the chart but helps when referring to the element from other components, scripts, and SOM expressions.
 * **Chart type**: Specifies the type of chart that you want to generate. The available options are Pie, Donut, Bar, Column, Line, Line and Point, Point, and Area. In the example, the chart type is Column.
-* **Repeating Row Name For Data Source**: Specifies the element name of the table row or the repeatable panel from where the data will be sourced. In the example, statementDetails is the element name of the repeatable row in the Statement Details table.
+* **Repeating Row Name or Panel Name for Data Source**: Specifies the element name of the table row or the repeatable panel from where the data will be sourced. In the example, statementDetails is the element name of the repeatable row in the Statement Details table.
 * **X-Axis > Title**: Specifies the title for the X-axis. In the example, the title for X-axis is Category.
 * **X-Axis > Field**: Specifies the element name of the field (or a cell in a table) to be plotted on X-axis. In the example, categories are configured on X-axis. The element name for the table cell in the Category column of the example table is category.
 * **X-Axis > Use function**: Specifies the statistical function to use for computing the values on X-axis. In the example, the option selected is None. For more information about functions, see Use functions in chart.
@@ -58,7 +58,7 @@ In the Basic tab, you can configure the following properties:
 * **Chart-specific configurations**: In addition to common configurations, the following chart-specific configuration is available:
 * **Inner radius**: available for Donut charts to specify the radius (in pixels) of the inner circle in the chart.
 * **Line color**: available for Line, Line and Point, and Area charts to specify the hexadecimal value of the color for the line in the chart.
-* **Point color**: available for Point and Line and Point charts to specify the hexadecimal value of the color for the points in the chart.
+* **Point color**: available for Point and Line, and Point charts to specify the hexadecimal value of the color for the points in the chart.
 * **Area color**: available for Area charts to specify the hexadecimal value of the color for the area under the line in the chart.
 * **CSS Class**: Specify the name of a CSS class in the CSS class field to apply custom styling to the chart.
 
@@ -72,7 +72,7 @@ To accomplish this, you need to plot categories on X-axis, and on the Y-axis, pl
 
 ![Statment details](assets/statement-details.png)
 
-The credit card statement used in this example is an adaptive document and the statement details section is a table, which looks as follows in the authoring mode.
+The credit card statement used in this example is an adaptive form document and the statement details section is a table, which looks as follows in the authoring mode.
 
 ![Statment details authoring](assets/statement-details-authoring.png)
 
@@ -81,7 +81,7 @@ Let's consider the following requirements and conditions for generating the char
 * The chart displays the total expense in each category in the Statement Details table.
 * The chart type is Column, though you can choose any other chart type, as appropriate.
 * The Table row in the Statement Details table is repeatable. You can configure it in the Repeat Settings field of the table row properties.
-* The element name for the row is statementDetails. You can configure it in the Table Row properties.
+* The element name for the row is Statement Details. You can configure it in the Table Row properties.
 * The element name for the table cell in the Category column is category. You can specify it inline. Select the cell and tap the edit button.
 * The element name for the table cell in the Amount column is amount. Also, the table cell in the Amount column is a numeric box.
 * With the specified configuration, the Column chart in the example will appear as follows. Each color represents a category and individual line items or amounts for a category are added up in the chart.  
@@ -102,7 +102,7 @@ To switch to styling mode, in the page toolbar, **tap>>Style**.
 
 ## Use functions in chart {#use-functions}
 
-You can configure a chart to use statistical functions to compute values from the source data for plotting on the chart. While the Chart component come with some in-built functions, you can write your own functions and make them available for use in the chart configuration.
+You can configure a chart to use statistical functions to compute values from the source data for plotting on the chart. While the Chart component have some in-built functions, you can write your own functions and make them available for use in the chart configuration.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ The following functions are available by default with the Chart component:
 
 ### Custom functions {#custom-functions}
 
-In addition to using the default functions in charts, you can write custom functions in JavaScript and make them available in the list of functions in the Chart component.
+In addition to using the default functions in charts, you can write [custom functions](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) in JavaScript and make them available in the list of functions in the Chart component.
 
 A function takes an array or values and a category name as inputs and returns a value. For example:
 
