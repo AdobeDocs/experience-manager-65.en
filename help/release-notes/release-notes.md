@@ -49,17 +49,17 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Sites]{#sites-6520}
 
-#### Accessibility{#sites-accessibility-6520}
+<!--#### Accessibility{#sites-accessibility-6520}
 
-* text
+* text -->
 
 #### Admin User Interface{#sites-adminui-6520}
 
 * The `Workflow Title` field is marked with `*` as required, but there is no validation. (SITES-16491) NORMAL
 
-#### Classic UI{#sites-classicui-6520}
+<!--#### Classic UI{#sites-classicui-6520}
 
-* text 
+* text -->
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
@@ -68,11 +68,12 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6520}
 
+* When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL
 * When executing a GraphQL query to [filter results](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) using optional variables, if a specific value is **not** provided for the optional variable, then the variable is ignored in the filter evaluation. (SITES-17051) NORMAL
 
-#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
+<!--#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
 
-* text
+* text -->
 
 #### [!DNL Content Fragments] - REST API{#sites-restapi-6520}
 
@@ -80,8 +81,8 @@ Some of the key features and enhancements in this release include the following:
 
 #### Core Backend{#sites-core-backend-6520}
 
-* Content fragments are not serializable with Jackson exporter: The page load breaks when there is a content fragment referred to in a page (uses Jackson exporter code) and any tag added to a content fragment. (SITES-18096) NORMAL 
 * When Quick Publish of a Content Fragment is used, it continues loading and does not get published. That is, Quick Publish is not working for Content Fragments after a service pack upgrade from AEM 6.5.7 to AEM 6.5.17. When the user tried managed publish, it worked. However, when they tried Quick Publish, it was not getting published. Specifically, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` caused the system to thrash. (SITES-17311) MAJOR
+* Content fragments are not serializable with Jackson exporter: The page load breaks when there is a content fragment referred to in a page (uses Jackson exporter code) and any tag added to a content fragment. (SITES-18096) NORMAL 
 
 #### Core Components{#sites-core-components-6520}
 
@@ -95,13 +96,13 @@ Some of the key features and enhancements in this release include the following:
 
 * Make available MSM for Experience Fragments capability on AEM 6.5. (SITES-16004) MAJOR
 
-#### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
+<!--#### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
 
 * text
 
 #### Launches{#sites-launches-6520}
 
-* text 
+* text -->
 
 #### MSM - Live Copies{#sites-msm-live-copies-6520}
 
@@ -114,14 +115,14 @@ Some of the key features and enhancements in this release include the following:
 
 * Forms Theme Editor preview is broken. When Preview is selected, only a loading icon is visible. (SITES-17164) BLOCKER 
 
-### [!DNL Assets]{#assets-6520}
+<!--### [!DNL Assets]{#assets-6520}
 
-* text 
+* text -->
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
-* Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882) MAJOR
 * When an asset is uploaded to AEM, the `Update_asset` workflow is triggered. However, the workflow never finishes. The workflow only completes up to the product upload step. The next step is the Scene7 batch upload, but that process is not getting pulled into AEM. (ASSETS-30443) CRITICAL
+* Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882) MAJOR
 
 ### [!DNL Forms]{#forms-6520}
 
@@ -145,23 +146,21 @@ Some of the key features and enhancements in this release include the following:
 
 * text -->
 
-* text
-
 #### [!DNL Forms Designer]{#forms-designer-6520}
 
 * text
 
-### Foundation{#foundation-6520}
+<!-- ### Foundation{#foundation-6520}
 
-* text
+* text -->
 
 #### Communities {#communities-6520}
 
 * User sync diagnostics fail after successfully configuring user sync. (NPR-41693) NORMAL
 
-#### Content distribution{#foundation-content-distribution-6520}
+<!-- #### Content distribution{#foundation-content-distribution-6520}
 
-* text
+* text -->
 
 #### Integrations{#integrations-6520}
 
@@ -172,17 +171,17 @@ Some of the key features and enhancements in this release include the following:
 * Aria-label "close" is not localized in **[!UICONTROL Assets]** > **[!UICONTROL Files]**, select a folder, then on the toolbar, select **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > member name. (NPR-41705) MAJOR
 * There is a truncated tooltip for the **[!UICONTROL Key Store Password]** field on the SSL Setup page for locales ENG, FRA, KOR, DEU, and PTB. (NPR-41367) NORMAL
 
-#### Oak{#oak-6520}
+<!-- #### Oak{#oak-6520}
 
-* text
+* text -->
 
 #### Platform{#foundation-platform-6520}
 
 * Issue with integrating Campaign with AEM caused by the /api servlet not returning the correct scheme in the href json. The reason was because AEM was not receiving the X-Forward-Proto header which forced the request to respond with an HTTP scheme instead of HTTPS. As such, the ability to toggle scheme selection based on an OSGI configuration should be added. (GRANITE-48454) MAJOR
 
-#### Replication{#foundation-replication-6520}
+<!-- #### Replication{#foundation-replication-6520}
 
-* text
+* text -->
 
 #### Sling{#foundation-sling-6520}
 
@@ -197,18 +196,18 @@ Some of the key features and enhancements in this release include the following:
 
 #### User interface{#foundation-ui-6520}
 
+* Console error is experienced after an upgrade to AEM 6.5, Service Pack 18. The error is in the `coralUI3.js` file and it occurs when you select any drop-down in AEM. Specifically, it happens with an `onOverlayToggle` event. The error `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` is displayed. (NPR-41467) MAJOR
 * In AEM, **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Tagging]** > **[!UICONTROL Create]** > **[!UICONTROL Create Tag]**, entering non-latin characters in the **Title** field causes the **Name** field to be filled with just the hyphen character ( `-` ). (NPR-41623) NORMAL
 * Copyright year is incorrect in the `About Adobe Experience Manager` dialog box. (NPR-41526) NORMAL
-* Console error is experienced after an upgrade to AEM 6.5, Service Pack 18. The error is in the `coralUI3.js` file and it occurs when you select any drop-down in AEM. Specifically, it happens with an `onOverlayToggle` event. The error `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` is displayed. (NPR-41467) MAJOR
 * There are untranslated **[!UICONTROL Profile Properties]** strings when editing user settings. Occurs in all locales. (NPR-41365) NORMAL
 
-#### WCM{#wcm-6520}
+<!-- #### WCM{#wcm-6520}
 
 * text
 
 #### Workflow{#foundation-workflow-6520}
 
-* text
+* text -->
 
 ## Install [!DNL Experience Manager] 6.5.20.0{#install}
 
