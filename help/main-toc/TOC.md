@@ -36,6 +36,7 @@ user-guide-title: AEM 6.5
   + [AEM Forms service pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
   + [AEM Forms JEE patch installer](/help/release-notes/jee-patch-installer-65.md)
   + [AEM Forms Service Pack Hotfix](/help/release-notes/aem-forms-hotfix.md)
+  + [Cumulative Key Features and Enhancements](/help/release-notes/cumultive-features-enhancements.md)
   + [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
   + [Touch UI feature status](/help/release-notes/touch-ui-features-status.md)
 + Security {#security}
