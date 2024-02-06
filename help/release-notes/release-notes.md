@@ -36,7 +36,13 @@ mini-toc-levels: 4
 
 Some of the key features and enhancements in this release include the following:
 
-* text
+### [!DNL Dynamic Media]
+
+* HEIC format support is live - great news for iOS/iPad OS users.
+* Introduced Asset-level and Modifier-level telemetry for advanced reporting capabilities.
+* Generative AI capabilities are live for Dynamic Media customers beta program.
+* AVIF library has been updated for enhanced smart imaging, resulting in better quality optimized image delivery.
+* Microsoft&reg; Strategic fix to support the download of MS&reg; formats and txt format.
 
 ### [!DNL Forms]
 
