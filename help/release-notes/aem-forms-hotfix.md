@@ -29,7 +29,7 @@ This article lists the critical fixes implemented to address known issues, impro
      </td>
     <td>
     <ul>
-    <li>On AEM Forms on the JEE server, the HTML5 Forms that make use of the context path fail to render. (FORMS-12485).</li>
+    <li>On AEM Forms on the JEE server, the HTML5 Forms that make use of the context path fail to render. (FORMS-12485, FORMS-12691).</li>
     </ul>
     </td>    
   </tr>
