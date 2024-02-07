@@ -24,7 +24,7 @@ Review the minimum system requirements in the table below for the CIF version th
 ### Bug fixes {#bug-fixes-december}
 
 * Product and category redirect servlets registered for Page v3 resource type
-* Fix CIF AEP Extension live search eventing
+* Fix CIF AEP Extension live search events
 
 ## Release Date: November 2023
 
