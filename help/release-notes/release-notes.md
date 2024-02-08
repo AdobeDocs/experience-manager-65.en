@@ -36,19 +36,10 @@ mini-toc-levels: 4
 
 Some of the key features and enhancements in this release include the following:
 
-### [!DNL Assets]
 
-* Unable to select an image with read permissions. (ASSETS-32199)
-* When you try to add a custom metadata field as an additional column to the report, the checkboxes are not getting selected. (ASSETS-31671)
-* Unable to change size of card in view settings. (ASSETS-31667)
-* Unable to validate rule-based fields in metadata editor helper and it is showing an error message "Missing required fields". (ASSETS-31396)
-* Unable to switch to SP16 version. (ASSETS-30598)
-* Once the PDF is moved to another location, [!UICONTROL View Page] option disappears. (ASSETS-30538)
-* The .oft file type fails while upload. (ASSETS-30109)
+<!-- ### [!DNL Forms]
 
-### [!DNL Forms]
-
-* text
+* text -->
 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
@@ -123,9 +114,15 @@ Some of the key features and enhancements in this release include the following:
 
 * Forms Theme Editor preview is broken. When Preview is selected, only a loading icon is visible. (SITES-17164) BLOCKER 
 
-<!--### [!DNL Assets]{#assets-6520}
+### [!DNL Assets]{#assets-6520}
 
-* text -->
+* Unable to validate rule-based fields in metadata editor helper and it is showing an error message "Missing required fields". (ASSETS-31396) MAJOR
+* After a PDF is moved to another location, the **[!UICONTROL View Page]** option disappears. (ASSETS-30538) MAJOR
+* Unable to select an image with read permissions. (ASSETS-32199) NORMAL
+* Unable to change size of card in view settings. (ASSETS-31667) NORMAL
+* The .oft file type fails during upload. (ASSETS-30109) NORMAL
+* When you try to add a custom metadata field as an additional column to the report, the checkboxes are not getting selected. (ASSETS-31671) MINOR
+* Unable to switch to SP16 version. (ASSETS-30598) MINOR
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
