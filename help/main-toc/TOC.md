@@ -1211,6 +1211,8 @@ user-guide-title: AEM 6.5
   + [Adobe Commerce PWA Studio](/help/commerce/cif/pwa-studio/getting-started.md)
   + [Migration](/help/commerce/cif/migration.md)
   + Release Notes {#release-notes}
+    + [2024](/help/commerce/cif/release-notes/release-notes-2024.md)
+    + [2023](/help/commerce/cif/release-notes/release-notes-2023.md)
     + [2022](/help/commerce/cif/release-notes/release-notes-2022.md)
     + [2021](/help/commerce/cif/release-notes/release-notes-2021.md)
     + [2020](/help/commerce/cif/release-notes/release-notes-2020.md)
