@@ -1,6 +1,6 @@
 ---
-title: AEM Content and Commerce Release Notes 2022
-description: Adobe Experience Manager Content and Commerce Release Notes 2022.
+title: AEM Content and Commerce Release Notes 2024
+description: Adobe Experience Manager Content and Commerce Release Notes 2024.
 ---
 # Commerce Integration Framework GitHub Release Overview
 
