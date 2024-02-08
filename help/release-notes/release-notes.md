@@ -127,9 +127,9 @@ Some of the key features and enhancements in this release include the following:
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
 * When an asset is uploaded to AEM, the `Update_asset` workflow is triggered. However, the workflow never finishes. The workflow only completes up to the product upload step. The next step is the Scene7 batch upload, but that process is not getting pulled into AEM. (ASSETS-30443) CRITICAL
-* scene7SmartCropProcessingStatus status corrected . It used to show failure even when successful . (ASSETS-31255)
-* Handling non dm videos gracefully in dynamic media component. This was giving exception instantiating dynamicmedia_sly.js .(ASSETS-31301)
+* Need a better way to handle non Dynamic Media videos gracefully in the Dynamic Media component. This issue was giving an exception instantiating `dynamicmedia_sly.js`. (ASSETS-31301) MAJOR
 * Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882) MAJOR
+* The `scene7SmartCropProcessingStatus` status corrected. Smart Crop video metadata used to show failure even when it was successful. (ASSETS-31255) MINOR
 
 ### [!DNL Forms]{#forms-6520}
 
