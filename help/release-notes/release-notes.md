@@ -116,13 +116,13 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Assets]{#assets-6520}
 
-* Unable to validate rule-based fields in metadata editor helper and it is showing an error message "Missing required fields". (ASSETS-31396) MAJOR
+* Unable to validate rule-based fields in metadata editor helper and displays an error message "Missing required fields". (ASSETS-31396) MAJOR
 * After a PDF is moved to another location, the **[!UICONTROL View Page]** option disappears. (ASSETS-30538) MAJOR
 * Unable to select an image with read permissions. (ASSETS-32199) NORMAL
-* Unable to change size of card in view settings. (ASSETS-31667) NORMAL
-* The .oft file type fails during upload. (ASSETS-30109) NORMAL
-* When you try to add a custom metadata field as an additional column to the report, the checkboxes are not getting selected. (ASSETS-31671) MINOR
-* Unable to switch to SP16 version. (ASSETS-30598) MINOR
+* Unable to change card size in view settings. (ASSETS-31667) NORMAL
+* Upload fails while uploading .oft file type. (ASSETS-30109) NORMAL
+* When you try to add a custom metadata field as an additional column to the report, the checkboxes are not selected. (ASSETS-31671) MINOR
+* Asset move operation does not work appropriately in Experience Manager Service Pack 16. (ASSETS-30598) MINOR
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
