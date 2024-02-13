@@ -352,4 +352,42 @@ One of the key challenges for organizations is how to handle personally identifi
 * Use a secure, external storage like database to store data from draft and submitted forms. See [Configuring external storage for drafts and submitted forms data](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Use Terms and Conditions form component to take explicit consent from user before enabling auto save. In this case, enable auto save only when user agrees to the conditions in Terms and Conditions component.
 
+## Choose the Rule Editor, Code Editor, or Custom Client Libs for your Adaptive Form {#RuleEditor-CodeEditor-ClientLibs}
+
+### Rule editor {#rule-editor}
+
+<!--The AEM Forms Rule Editor offers predefined functions for defining rules in adaptive forms without extensive programming. It facilitates the implementation of conditional logic, data validation, and integration with external sources. This visual interface is especially valuable for business users and form designers, enabling them to create dynamic and complex rules with ease, here we discusss few use cases where rule editor allows you to:-->
+
+The AEM Forms Rule Editor provides a visual interface for creating and managing rules, reducing the need for extensive coding. It can be especially useful for business users or form designers who may not have advanced programming skills but need to define and maintain business rules within the forms, here we discuss few use cases where rule editor allows you:
+
+* <!-- Allows you --> To define business rules for your forms without the need for extensive programming.
+* <!-- Use the Rule Editor when you need --> To implement conditional logic within your forms. This includes showing or hiding form elements, altering field values based on certain conditions, or dynamically changing the behavior of your forms.
+* <!--When you want --> To enforce data validation rules on form submissions, the Rule Editor can be used to define validation conditions.
+* <!-- When you need --> To integrate your forms with external data sources (FDM) or services, the Rule Editor can help define rules for fetching, displaying, or manipulating data during form interactions.
+* <!-- If you want -->To create dynamic and interactive forms that respond to user actions, the Rule Editor allows you to define rules that govern the behavior of form elements in real time.
+
+### Code editor {#code-editor}  
+
+Code Editor is a tool within Adobe Experience Manager (AEM) Forms that allows you to write custom scripts and code for more complex and advanced functionality in your forms, here we discuss few use cases:
+
+* When you need to implement custom client-side logic or behavior that goes beyond the capabilities of the AEM Forms Rule Editor. The Code Editor allows you to write JavaScript code to handle complex interactions, calculations, or validations.
+* If your form requires server-side processing or integration with external systems, you can use the Code Editor to write custom server-side script. You can access guideBridge API in code editor to implement any complex logic on form events and objects.
+* When you require highly customized user interfaces that go beyond the standard capabilities of AEM Forms components, the Code Editor allows you to implement custom styles, behaviors, or even create custom form components.
+* If your form involves asynchronous operations such as asynchronous data loading, you can use the Code Editor to manage these operations through custom asynchronous JavaScript code.
+
+It's important to note that using the Code Editor requires a good understanding of JavaScript and AEM Forms architecture. Additionally, when implementing custom code, ensure that you follow best practices, adhere to security guidelines, and thoroughly test your code to prevent potential issues in production environments.
+
+Bonus: You can implement a callback for FDM using code editor.
+
+### Custom client libs {#custom-client-libs}
+
+Using custom client libraries in AEM Forms (Adobe Experience Manager Forms) can be beneficial in various scenarios to enhance the functionality, styling, or behavior of your forms. Here are some situations where using custom client libraries might be appropriate:
+
+* If you need to implement a unique design or branding for your forms that go beyond the capabilities of the default styling options provided by AEM Forms, you may choose to create custom client libraries to control the look and feel.
+* When you require custom client-side logic, reusability of methods across multiple forms or behavior that cannot be achieved through the standard AEM Forms features. This could include dynamic form interactions, custom validation, or integration with third-party libraries.
+* To improve the performance of your forms by optimizing and minifying client-side resources. Custom client libraries can be used to bundle and compress JavaScript and CSS files, reducing the overall page load time.
+* When you need to integrate additional JavaScript libraries or frameworks that are not included in the default AEM Forms setup. This might be necessary for features like enhanced date pickers, charts, or other interactive components.
+
+Before you decide to use custom client libraries, it's important to consider the maintenance overhead, potential conflicts with future updates, and adherence to best practices. Ensure that your customizations are well-documented and tested to avoid issues during upgrades or when collaborating with other developers.
+
 
