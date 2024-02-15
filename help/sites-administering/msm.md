@@ -13,13 +13,13 @@ Multi Site Manager (MSM) enables you to use the same site content in multiple lo
 
 * With MSM you can:
 
-    * Create content once and then
-    * Copy this content to, and reuse this content in, other areas ([live copies](#live-copies)) of the same or other sites.
+  * Create content once and then
+  * Copy this content to, and reuse this content in, other areas ([live copies](#live-copies)) of the same or other sites.
 
 * MSM then maintains the (live) relationships between your source content and its live copies so that:
 
-    * When you change the source content, the source and live copies are synchronized (to apply these changes to the live copies too).
-    * You can adjust the content of the live copies by disconnecting the live relationship for individual subpages, or components, or both. By doing this, changes to the source are no longer applied to the live copy.
+  * When you change the source content, the source and live copies are synchronized (to apply these changes to the live copies too).
+  * You can adjust the content of the live copies by disconnecting the live relationship for individual subpages, or components, or both. By doing this, changes to the source are no longer applied to the live copy.
 
 This and the following pages cover the related issues:
 
@@ -143,6 +143,10 @@ MSM is directly accessible in the UI using various options from the appropriate 
 * **Blueprints** (**Tools** - **Sites**)
 
     * This console lets you [create and manage your blueprint configurations](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+
+>[!NOTE]
+>
+>MSM can be used with both pages and [Experience Fragments](/help/sites-authoring/experience-fragments.md); these are part of an experience (page).
 
 >[!NOTE]
 >
