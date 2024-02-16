@@ -28,19 +28,17 @@ mini-toc-levels: 4
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!-- Some of the key features and improvements are the following:
-
-* _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
-
 ## Key features and enhancements
+
+<!-- * _6.5.20.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
 Some of the key features and enhancements in this release include the following:
 
+* Dynamic Media now supports lossless HEIC image format for Apple iOS/iPadOS. See [fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html?lang=en) in the Dynamic Media Image Serving and Rendering API.
 
 <!-- ### [!DNL Forms]
 
 * text -->
-
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -127,17 +125,15 @@ Some of the key features and enhancements in this release include the following:
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
 * When an asset is uploaded to AEM, the `Update_asset` workflow is triggered. However, the workflow never finishes. The workflow only completes up to the product upload step. The next step is the Scene7 batch upload, but that process is not getting pulled into AEM. (ASSETS-30443) CRITICAL
-* Need a better way to handle non Dynamic Media videos gracefully in the Dynamic Media component. This issue was giving an exception instantiating `dynamicmedia_sly.js`. (ASSETS-31301) MAJOR
+* Need a better way to handle non-Dynamic Media videos gracefully in the Dynamic Media component. This issue was giving an exception instantiating `dynamicmedia_sly.js`. (ASSETS-31301) MAJOR
 * Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882) MAJOR
 * The `scene7SmartCropProcessingStatus` status corrected. Smart Crop video metadata used to show failure even when it was successful. (ASSETS-31255) MINOR
 
 ### [!DNL Forms]{#forms-6520}
 
-#### [!DNL Adaptive Forms]
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of Forms fixes and enhancements is added to this section post the release.
 
-<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.-->
-
-<!--* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft&reg; configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) -->
+<!-- #### [!DNL Adaptive Forms] -->
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -439,11 +435,12 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
     1. Save the modified `adobe-output-client.jar` file and rerun the setup. (CQDOC-20878) -->
 
 * After installing AEM Service Pack 6.5.20.0 full installer, the EAR deployment fails on JEE using JBoss&reg; Turnkey. <!-- UPDATE FOR EACH NEW RELEASE -->
+
 To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager. (CQDOC-20803)
 
 #### Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
 
-* If you are upgrading to AEM Service Pack 6.5.15.0 or higher, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment *before* you proceed with the installation of Service Pack 6.5.15.0 or higher.
+* If you are upgrading to AEM Service Pack 6.5.15.0 or higher, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment. Do this install *before* you proceed with the installation of Service Pack 6.5.15.0 or higher.
 * It is mandatory that you install the servlet fragment for all application servers except those running on JBoss&reg; EAP 7.4.0.
 
 **To install the servlet fragment:**
@@ -468,7 +465,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
-* On AEM Forms on JEE, the HTML5 Forms that make use of the context path, fail to render. (FORMS-12485, FORMS-12691). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md).
+* On AEM Forms on JEE, the HTML5 Forms that use the context path, fail to render. (FORMS-12485, FORMS-12691). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md).
 * Adaptive Forms let you use custom functions with ECMAScript version 5 or earlier. When a custom function uses ECMAScript version 6 or later, like 'let', 'const', or arrow functions, the rule editor might not open properly.
 
 #### AEM Forms on JEE 
