@@ -36,6 +36,8 @@ Some of the key features and enhancements in this release include the following:
 
 * Dynamic Media now supports lossless HEIC image format for Apple iOS/iPadOS. See [fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html?lang=en) in the Dynamic Media Image Serving and Rendering API.
 
+* Multisite Manager (MSM) now supports Experience Fragment structures including folders and sub-folders, for efficient bulk rollout of Experience Fragments to Live Copies. 
+
 <!-- ### [!DNL Forms]
 
 * text -->
@@ -91,7 +93,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### Experience Fragments{#sites-experiencefragments-6520}
 
-* Make available MSM for Experience Fragments capability on AEM 6.5. (SITES-16004) MAJOR
+* MSM for Experience Fragments now supports bulk-rollout to Experience Fragment content structures including folders and sub-folders.  (SITES-16004) MAJOR
 
 <!--#### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
 
