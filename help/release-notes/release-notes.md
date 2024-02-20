@@ -67,7 +67,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6520}
 
-* When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL
+<!-- * When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL -->
 * When executing a GraphQL query to [filter results](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) using optional variables, if a specific value is **not** provided for the optional variable, then the variable is ignored in the filter evaluation. (SITES-17051) NORMAL
 
 <!--#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
