@@ -474,7 +474,8 @@ Configure your theme to use the [!DNL Adobe Fonts] configuration.
 
 1. Once, you click **Make me a new API token**, a new token is generated. 
 1. Copy the generated token for future use.
-1. Now login to your AEM  author instance. On the author instance, go to Tools > Cloud Services > Adobe Fonts.
+1. Now login to your AEM  author instance. On the author instance, go to **[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**> **[!UICONTROL Adobe Fonts]**.
+
 1. Select the configuration container and click **Create**. **[UICONTROL Create Adobe Fonts Configuration]** screen appears.
     ![API token](/help/forms/using/adobe-font-configuration-screen.png)
 
