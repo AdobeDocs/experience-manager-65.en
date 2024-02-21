@@ -459,7 +459,7 @@ Keep in mind the following considerations and limitations when working on docume
 
 ## Use a custom XCI file
 
-An XCI file helps you set various properties of a document. Forms as a Cloud Service has a master XCI file. You can use a custom XCI file to override one or more default properties specified in the master XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
+An XCI file helps you set various properties of a document. <!-- Forms as a Cloud Service has a master XCI file.--> You can use a custom XCI file to override one or more default properties specified in the your existing XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
 
 |XCI option|Description|
 |--- |--- |
@@ -491,16 +491,19 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
 |config/present/pdf/version|Specifies the version of PDF document to generate|
 |config/present/pdf/version/map|Specifies the fall back fonts for the document|
 
+
+<!--
+
 ### Use a custom XCI file in your AEM Forms environment
 
   1. Add the custom XCI file to your development project.
-  1. Specify the following inline property: <!--[inline property](/help/implementing/deploying/configuring-osgi.md)-->
-
-        ```JSON
-         {
-          "xciFilePath": "[path of XCI file]"
-         }
-        ```
+  1. Specify the following inline property: <!--[inline property](/help/implementing/deploying/configuring-osgi.md)
+  
+      ```JSON
+  {
+  "xciFilePath": "[path of XCI file]"
+  }
+  ```
 
         For example,
 
