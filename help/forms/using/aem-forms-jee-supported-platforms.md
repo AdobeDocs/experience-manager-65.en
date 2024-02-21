@@ -486,8 +486,8 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >-PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
 >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
->- PDF Generator fails to convert files using Microsoft&reg; Project 2019. 
->
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019.
+>- If the Microsoft® Office installation becomes deactivated or unlicensed due to any reasons, such as a VL_KMS being unable to establish communication for a period, conversions may fail until the installation is reactivated or relicensed.
 
 ### Exceptions to accessibility support {#exceptions-to-accessibility-support}
 
