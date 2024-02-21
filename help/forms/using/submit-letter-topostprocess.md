@@ -67,7 +67,7 @@ To associate post processes with letters or interactive communications, you firs
 
 1. login to `https://localhost:publishport/aem/forms`.
 1. Navigate to **[!UICONTROL Letters]** to view the published letter that is available on the publish instance.
-1. Configure the AEM DS Settings. See [Configuring AEM DS settings](../../forms/using/configuring-the-processing-server-url-.md).
+1. Configure the AEM DS Settings. See [Configuring AEM DS settings](../../forms/using/configuring-the-processing-server-url.md).
 
 >[!NOTE]
 >
