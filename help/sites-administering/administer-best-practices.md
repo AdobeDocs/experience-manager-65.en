@@ -3,12 +3,12 @@ title: Best practices to help administrators get up and running
 
 description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
 
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
+
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 ---
 # Best Practices{#best-practices}

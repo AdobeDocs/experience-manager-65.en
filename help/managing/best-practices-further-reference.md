@@ -1,14 +1,14 @@
 ---
 title: The Checklist - Further Reference
-seo-title: The Checklist - Further Reference
+
 description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
-seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
-uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
+
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 ---
 # The Checklist - Further Reference{#the-checklist-further-reference}
@@ -32,7 +32,7 @@ Consider the features of AEM that you are using, and the impact on your design; 
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Multi Site Management and Translation](/help/sites-administering/msm-and-translation.md)
-* [Forms](/help/forms/home.md)
+* [Forms](/help/forms/using/introduction-aem-forms.md)
 * [Communities](/help/communities/deploy-communities.md)
 
 In addition check the [Release Notes](/help/release-notes/release-notes.md), for the various versions of AEM, to see when any new features were added.

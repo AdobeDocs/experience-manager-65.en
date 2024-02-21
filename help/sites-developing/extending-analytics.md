@@ -1,14 +1,14 @@
 ---
 title: Extending Event Tracking
-seo-title: Extending Event Tracking
+
 description: AEM Analytics lets you track user interaction on your website
-seo-description: AEM Analytics lets you track user interaction on your website
-uuid: 722798ac-4043-4918-a6df-9eda2c85020b
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
+
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
 ---
 # Extending Event Tracking{#extending-event-tracking}

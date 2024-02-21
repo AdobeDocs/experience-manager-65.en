@@ -1,12 +1,12 @@
 ---
 title: Best Practices for Performance Testing
 description: Learn about the overall strategies and methodologies used for performance testing, and some of the tools that are available to help the process.
-uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
+
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 ---
 # Best Practices for Performance Testing{#best-practices-for-performance-testing}
@@ -68,7 +68,7 @@ The [Monitoring Performance](/help/sites-deploying/monitoring-and-maintaining.md
 
 **Developer Mode in Touch UI**
 
-One of the new features in AEM 6's touch UI is the Developer Mode. Just as authors can switch between edit and preview modes, developers can switch to developer mode in the author UI. Doing so lets you see the render time for each of the components on the page and to see stack traces of any errors. For more information on developer mode, see this [CQ Gems presentation](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
+One of the new features in AEM 6's touch UI is the Developer Mode. Just as authors can switch between edit and preview modes, developers can switch to developer mode in the author UI. Doing so lets you see the render time for each of the components on the page and to see stack traces of any errors. For more information on developer mode, see this [CQ Gems presentation](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Using the rlog.jar to read the request logs**
 
@@ -113,7 +113,7 @@ The **ObservationQueueMaxLength** section shows the number of events in Oak's ob
 1. Place it under the /crx-­‐quickstart/install folder. 
 
 >[!NOTE]
->See [AEM 6.x | Performance Tuning Tips](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>See [AEM 6.x | Performance Tuning Tips](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 The default setting is 10,000, but most deployments must raise it to 20,000 or 50,000.
 
@@ -141,7 +141,7 @@ After running performance tests on the author instance, any issues must be inves
 * Watch the error log for errors or warnings. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
 * Monitor system hardware resources such as memory and CPU utilization, disk I/O, or network I/O. These resources are often the causes of performance bottlenecks.
 * Optimize the architecture of the pages and how they are addressed to minimize the usage of URL parameters to allow for as much caching as possible.
-* Follow the [Performance Optimization](/help/sites-deploying/configuring-performance.md) and [Performance tuning tips](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en) documentation.
+* Follow the [Performance Optimization](/help/sites-deploying/configuring-performance.md) and [Performance tuning tips](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html) documentation.
 
 * If issues are present with editing certain pages or components on author instances, use the TouchUI Developer Mode to inspect the page in question. Doing so provides a breakdown of each content area on the page, and its load time.
 * Minify all JS and CSS on the site. See this [blog post](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

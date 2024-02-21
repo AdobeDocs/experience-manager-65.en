@@ -1,14 +1,14 @@
 ---
 title: Security Checklist
-seo-title: Security Checklist
+
 description: Learn about the various security considerations when configuring and deploying AEM.
-seo-description: Learn about the various security considerations when configuring and deploying AEM.
-uuid: 8e293316-4177-4271-87c6-9dc1a2e85a07
+
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
+
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
@@ -41,7 +41,7 @@ Enabling the HTTPS transport layer on both author and publish instances is manda
 
 ### Install Security Hotfixes {#install-security-hotfixes}
 
-Ensure that you have installed the latest [Security Hotfixes provided by Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en).
+Ensure that you have installed the latest [Security Hotfixes provided by Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ### Change Default Passwords For the AEM and OSGi Console Admin Accounts {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -106,11 +106,11 @@ Adobe recommends defining custom error handler pages, especially for 404 and 500
 
 >[!NOTE]
 >
->See [How can I create custom scripts or error handlers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=en) for more details.
+>See [How can I create custom scripts or error handlers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html) for more details.
 
 ### Complete Dispatcher Security Checklist {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher is a critical piece of your infrastructure. Adobe recommends that you complete the [Dispatcher security checklist](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en).
+AEM Dispatcher is a critical piece of your infrastructure. Adobe recommends that you complete the [Dispatcher security checklist](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >

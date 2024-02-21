@@ -25,9 +25,10 @@ Customers are advised to review if they use the feature/capability in their curr
 
 |Area|Feature|Replacement|Version (SP)|
 |---|---|---|---|
+|   |   |   |   |
 | Sites | The **Adobe AEM Managed Polling Configuration** service: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | The **Adobe AEM Analytics Report Sling Importer** service. See Connecting to Adobe Analytics and Creating Frameworks - [Configuring the Import Interval](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| Screens | ActiveMQ in AEM. ActiveMQ was used for communication between two AEM Publish instances. | Adobe recommends that customers use load-balancer. |  |
-| [!DNL Sites] | Experience Fragments properties for **Social Media Status**. |   | 6.5.11.0 |
+| Screens | ActiveMQ in Adobe Experience Manager (AEM). ActiveMQ was used for communication between two AEM Publish instances. | Adobe recommends that customers now use a load-balancer. | 6.5.18.0 |
+| Experience Fragments properties for **Social Media Status**. |   | 6.5.11.0 |
 | [!DNL Sites] | Content fragment templates, for creating simple content fragments. | [Model-based structured content fragments](/help/assets/content-fragments/content-fragments-models.md) now. |6.5.11.0|
 |Creative Cloud integration|AEM to Creative Cloud Folder Sharing was introduced in AEM 6.2. It provides a way to give creative users access to assets from AEM, so that they can open them in [!DNL Creative Cloud] applications and upload new files or save changes to AEM. A new capability released in Creative Cloud application, Adobe Asset Link, provides a better user experience and more powerful access to assets from AEM directly from inside Photoshop, InDesign, and Illustrator. Adobe does not plan to make further enhancements to the AEM to Creative Cloud Folder Sharing integration. While the feature is included in AEM, customers are advised to use replacement solutions.|Customers are advised to switch to new Creative Cloud integration capabilities, including Adobe Asset Link or AEM desktop app. ||
 | Assets |`AssetDownloadServlet` is disabled by default for the publish instances. For more details, see [AEM security checklist](/help/sites-administering/security-checklist.md). | Configuration described at [AEM Security checklist](/help/sites-administering/security-checklist.md). ||
@@ -50,7 +51,6 @@ Customers are advised to review if they use the feature/capability in their curr
 |Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Forms|AEM Forms integration with AEM Mobile is deprecated. | No Replacement is available. ||Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Developers|Lodash/underscore client library. Adobe does not plan to further maintain and update the Lodash/underscore client library that is shipped as part of the distribution (Quickstart). | Adobe recommends customers that still require Lodash/underscore for their code to add it into their project code base. ||
-|Screens|Adobe does not plan to further maintain and update the com.adobe.cq.screens.mq.activemq bundle and related configurations that are used for 2Publishers setup.| Adobe recommends customers that still require 2Publishers setup can use load-balancer approach. ||
 
 ## Removed features {#removed-features}
 
@@ -59,7 +59,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 |Area|Feature|Replacement|Version (SP)|
 |--- |--- |--- |--- |
 | Integration with [!DNL Experience Cloud] | You could synchronize your assets with [!DNL Experience Cloud] using a configuring via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] was formerly called [!DNL Adobe Experience Cloud]. | If you have any queries, [contact Adobe Customer Support](https://experienceleague.adobe.com/?support-solution=General#support). ||
-|Analytics Activity Map|The version of the Activity Map that is included within AEM.|Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM. Use the [ActivityMap plug-in provided by Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=en). ||
+|Analytics Activity Map|The version of the Activity Map that is included within AEM.|Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM. Use the [ActivityMap plug-in provided by Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). ||
 |Integrations|ExactTarget integration has been removed from the default distribution (Quickstart) and it is no longer available.|No replacement. ||
 |Integrations|Salesforce Force API integration has been removed from the default distribution (Quickstart) and is now an extra package to install from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).| The feature is still available.|
 |Forms|Support for Adobe Central Migration Bridge service has been removed as Adobe Central product is no longer supported.|No replacement. ||
@@ -71,6 +71,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 |Developers|Remove `customJavaScriptPath` support in HTML Client Library Manager.|No replacement||
 | [!DNL Assets] | The assets offloading feature is removed in [!DNL Adobe Experience Manager] 6.5. | No replacement is available. ||
 | Cache | `system/console/slingjsp` is removed and is no longer available in AEM 6.5.|Classes and Slightly cache is stored under the Apache Sling Commons FileSystem ClassLoader bundle. You can check the bundle number in the AEM Web Console and remove the cache folder directly from the file system (`crx-quickstart/launchpad/felix/bundle<ID>`).||
+|Screens | Removed activemq bundle support and its related configurations. |||
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 

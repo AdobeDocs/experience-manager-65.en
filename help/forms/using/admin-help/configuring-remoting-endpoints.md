@@ -1,12 +1,12 @@
 ---
 title: Configuring Remoting endpoints
 description: Learn how to configure remoting endpoints. This document explains how to enable application built with Flex to invoke the service using the AEM forms Remoting.
-uuid: 4d4f9274-dcae-4b9f-975a-575376c2f89c
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: aab9d622-d76b-4100-9ca6-e5b86f543381
+
 exl-id: 891d7d75-555a-46c6-a8a0-d5238b48bc79
 ---
 # Configuring Remoting endpoints {#configuring-remoting-endpoints}

@@ -110,8 +110,10 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | Store binaries in TAR files on file system `[1]` |Binaries |Z: Not supported for production |
 | Amazon S3 |Binaries |A: Supported |
 | Microsoft&reg; Azure Blob Storage |Binaries |A: Supported |
-| MongoDB Enterprise 4.4 |Repository |A: Supported `[2, 3, 4]` |
-| MongoDB Enterprise 4.2 |Repository |A: Supported `[2, 3, 4]` |
+| MongoDB Enterprise 6.0 |Repository |A: Supported `[3, 4]` |
+| MongoDB Enterprise 5.0 |Repository |A: Supported `[3, 4]` |
+| MongoDB Enterprise 4.4 |Repository |A: Supported `[2, 3, 4, 7]` |
+| MongoDB Enterprise 4.2 |Repository |A: Supported `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 |Repository |Z: Not supported |
 | MongoDB Enterprise 3.6 |Repository |Z: Not supported |
 | MongoDB Enterprise 3.4 |Repository |Z: Not supported |
@@ -126,9 +128,10 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 1. MongoDB Sharding is not supported in AEM.
 1. MongoDB Storage Engine WiredTiger is supported only.
 1. Supported for AEM Forms upgrade customers. Not supported for new installations.
-1. Applicable AEM Forms only:
+1. Applicable to AEM Forms only:
     * Removed support for Oracle Database 12c and added support for Oracle Database 19c.
     * Removed support for Microsoft&reg; SQL Server 2016 and added support for Microsoft&reg; SQL Server 2019.
+1. Not supported for AEM Forms.
 
 >[!NOTE]
 >
@@ -196,6 +199,16 @@ Adobe Experience Manager works with the following server platforms for productio
 1. Linux&reg; Kernel 2.6, 3. x, 4. x, and 5. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, CentOS, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on CentOS 7, Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
 1. AEM Forms is supported on Ubuntu 20.04 LTS.
 1. Linux&reg; distribution supported by Adobe Managed Services.
+
+    >[!NOTE]
+    >
+    >For Linux based server (OSGI and JEE stack), AEM Forms add-on require runtime dependencies such as:
+    >* glibc.x86_64 (2.17-196)
+    >* libX11.x86_64 (1.6.7-4)
+    >* zlib.x86-64 (1.2.7-17)
+    >* libxcb.x86_64 (1.13-1.el7)
+    >* libXau.x86_64 (1.0.8-2.1.el7)
+
 1. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
 1. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
 1. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
@@ -209,14 +222,13 @@ Adobe Experience Manager works with the following server platforms for productio
 >* Microsoft&reg; Visual C++ 2012 redistributable
 >* Microsoft&reg; Visual C++ 2013 redistributable 
 >* Microsoft&reg; Visual C++ 2019(VC14.28 or greater) redistributable
- 
 
 
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
 
 Adobe Experience Manager is supported running in a virtual machine on cloud computing environments. These environments include as Microsoft&reg; Azure and Amazon Web Services (AWS), running in compliance with the technical requirements listed on this page, and according to Adobe's standard support terms.
 
-For a cloud-native environment, review the latest offering from the AEM product line: Adobe Experience Manager as a Cloud Service. See [Adobe Experience Manager as a Cloud Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) for details.
+For a cloud-native environment, review the latest offering from the AEM product line: Adobe Experience Manager as a Cloud Service. See [Adobe Experience Manager as a Cloud Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) for details.
 
 Adobe also offers Adobe Managed Services to deploy AEM on Azure or AWS. Adobe Managed Services provides experts with experience and skills of deploying and operating AEM in these cloud computing environments. See [additional documentation on Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -226,7 +238,7 @@ For recommendations on how to deploy AEM on Azure or AWS, outside of Adobe Manag
 
 ### Dispatcher Platforms (Web Servers) {#dispatcher-platforms-web-servers}
 
-The Dispatcher is the caching and load-balancing component. [Download the latest Dispatcher version](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 requires Dispatcher version 4.3.2 or higher.
+The Dispatcher is the caching and load-balancing component. [Download the latest Dispatcher version](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requires Dispatcher version 4.3.2 or higher.
 
 The following web servers are supported for use with Dispatcher version 4.3.2:
 
@@ -368,7 +380,7 @@ With Dynamic Media enabled, the following additional technical requirements appl
 The following hardware requirements are applicable for both Linux&reg; and Windows:
 
 * Intel Xeon&reg; or AMD&reg; Opteron CPU with at least four cores
-* At least, 16 GB of RAM
+* At least 16 GB of RAM
 
 #### Linux&reg; {#linux}
 
@@ -514,7 +526,8 @@ For Windows x86:
 * Video hardware acceleration (optional)
 * Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 * Administrative privileges to install Designer
-* Microsoft Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
+* Microsoft Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime for 32-bit AEM Forms Designer
+* Microsoft Visual C++ 2019 (VC 14.28 or greater) 64-bit runtime for 64-bit AEM Forms Designer (For both OSGI and JEE stack)
 
 ### Requirements for AEM Assets XMP metadata write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 

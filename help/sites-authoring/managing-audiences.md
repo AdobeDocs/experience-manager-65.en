@@ -1,14 +1,14 @@
 ---
 title: Managing Audiences
-seo-title: Managing Audiences
+
 description: The Audiences console enables you to create, organize, and manage audiences for your Adobe Target account or manage segments for ContextHub or Client Context
-seo-description: The Audiences console enables you to create, organize, and manage audiences for your Adobe Target account or manage segments for ContextHub or Client Context
-uuid: 76408a8c-25db-4e9f-8a69-27e820a2a7cf
+
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
+
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
 ---
@@ -89,7 +89,7 @@ You can create targeting rules for each of the following attributes:
 | **Custom** |Custom parameters are mbox parameters. If you pass any mbox parameters to mboxes, or use the targetPageParams function, those parameters appear here for use in audiences. |See [Custom Parameters documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) at Adobe Target. |
 | **OS** |You can target visitors who use a certain operating system. |Target users who are using Linux&reg;, Macintosh, or Windows. |
 | **Site Pages** |Target visitors who are on a specific page or have a specific mbox parameter. |See [Site Pages documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) at Adobe Target. |
-| **Browser** |You can target users who use a specific browser or specific browser options when they visit your page. |See [Browser options documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=en) at Adobe Target. |
+| **Browser** |You can target users who use a specific browser or specific browser options when they visit your page. |See [Browser options documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) at Adobe Target. |
 | **Visitor Profile** |Target visitors who meet specific profile parameters. |See [Visitor Profile documentation](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html) at Adobe Target. |
 | **Traffic Sources** |Target visitors based on the search engine or landing page that refers them to your site. |See [Traffic Sources documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) at Adobe Target. |
 

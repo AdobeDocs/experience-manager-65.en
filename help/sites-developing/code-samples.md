@@ -11,7 +11,7 @@ exl-id: d77e9e39-6117-4d09-b34b-a97ab347397e
 
 The Adobe Consulting Services Team has generated a series of Adobe Experience Manager (AEM) code samples. These samples are well-commented pieces of code to help AEM Developers understand the key building blocks of AEM. The samples are available here: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-A multi-part tutorial designed for developers new to AEM covering fundamental topics like project setup, Core Components, Editable Templates, Client Libraries, and component development: [Getting Started with AEM Sites - WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+A multi-part tutorial designed for developers new to AEM covering fundamental topics like project setup, Core Components, Editable Templates, Client Libraries, and component development: [Getting Started with AEM Sites - WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 A Maven template to create an AEM project as a starting point to develop your own functionality is available [here](https://github.com/adobe/aem-project-archetype).
 

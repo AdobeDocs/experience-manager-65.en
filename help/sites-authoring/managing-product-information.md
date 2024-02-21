@@ -1,14 +1,14 @@
 ---
 title: Creative Project and PIM Integration
-seo-title: Creative Project and PIM Integration
+
 description: Creative Project streamlines the entire photo shoot workflow that including generating a photo shoot request, uploading a photo shoot, collaborating on a photo shoot, and packaging approved assets
-seo-description: Creative Project streamlines the entire photo shoot workflow that including generating a photo shoot request, uploading a photo shoot, collaborating on a photo shoot, and packaging approved assets
-uuid: 09f27d36-e725-45cb-88d1-27383aedceed
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
+
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 ---
 

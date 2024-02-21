@@ -1,13 +1,13 @@
 ---
 title: New render and submit service
-seo-title: New render and submit service
+
 description: Define render and submit services in Workbench to render XDP form as HTML or PDF depending on the device it is accessed from.
-seo-description: Define render and submit services in Workbench to render XDP form as HTML or PDF depending on the device it is accessed from.
-uuid: 7f8348a1-753c-4dab-87d5-4a4a301198dd
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
+
 docset: aem65
 exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
 ---

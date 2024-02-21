@@ -16,7 +16,7 @@ Each update to the repository creates a content revision. As a result, with each
 
 With AEM 6.3 and higher, an online version of this functionality called Online Revision Cleanup was introduced. Compared to Offline Revision Cleanup where the AEM instance has to be shut down, Online Revision Cleanup can be run while the AEM instance is online. Online Revision Cleanup is turned on by default and it is the recommended way of performing a revision cleanup.
 
-**Note**: [See the Video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) for an introduction and how to use Online Revision Cleanup.
+**Note**: [See the Video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) for an introduction and how to use Online Revision Cleanup.
 
 The revision cleanup process consists of three phases: **estimation**, **compaction**, and **clean up**. Estimation determines whether to run the next phase (compaction) or not based on how much garbage might be collected. During the compaction phase segments and tar files are rewritten leaving out any unused content. The clean up phase then removes the old segments including any garbage that they may contain. The offline mode can usually reclaim more space because the online mode must account for AEM's working set which retains additional segments from being collected.
 

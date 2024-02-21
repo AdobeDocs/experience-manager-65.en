@@ -1,14 +1,14 @@
 ---
 title: Connecting to Adobe Analytics and Creating Frameworks
-seo-title: Connecting to Adobe Analytics and Creating Frameworks
+
 description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
-seo-description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
-uuid: 3820dd24-4193-42ea-aef2-4669ebfeaa9d
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
+
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 ---
@@ -46,7 +46,7 @@ Before proceeding, ensure that your credentials let you log in to Adobe Analytic
 
 ### Configuring AEM to Use Your Adobe Analytics Data Centers {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [data centers](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en) collect, process, and store data associated with your Adobe Analytics report suite. Configure AEM to use the data center that hosts your Adobe Analytics report suite. The data center is mentioned in your contract. Contact an Admin in your organization for this information.
+Adobe Analytics [data centers](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) collect, process, and store data associated with your Adobe Analytics report suite. Configure AEM to use the data center that hosts your Adobe Analytics report suite. The data center is mentioned in your contract. Contact an Admin in your organization for this information.
 
 If necessary, use the following to be routed to the correct data center: `https://api.omniture.com/`.
 

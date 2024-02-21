@@ -1,12 +1,12 @@
 ---
 title: Configuring form output
 description: Learn how to configure form output. To configure the form output and enable the feature use the custom scripts before form submission.   
-uuid: 70aad14e-c845-4ef3-a751-ad8860d5d505
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
+
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 ---
 # Configuring form output{#configuring-form-output}

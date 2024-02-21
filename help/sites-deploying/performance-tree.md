@@ -1,13 +1,13 @@
 ---
 title: Performance Tree
-seo-title: Performance Tree
+
 description: Learn about the steps that to take to troubleshoot performance issues in AEM.
-uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
+
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 ---
 # Performance Tree{#performance-tree}
@@ -71,7 +71,7 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
   <tr>
    <td><strong>Step 4</strong></td>
    <td>Are requests coming from the Dispatcher?</td>
-   <td><p>To see if the requests are cached properly, check the <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#debugging">Dispatcher debugging documentation</a>.<br /> </p> </td>
+   <td><p>To see if the requests are cached properly, check the <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#debugging">Dispatcher debugging documentation</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Step 5</strong></td>
@@ -155,7 +155,7 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Out Of Memory</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">My application throws out-of-memory errors</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en">Analyze Memory Problems.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html">Analyze Memory Problems.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -222,20 +222,20 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
   <tr>
    <td><strong>Step 31</strong></td>
    <td>Use CDN in front of Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Using Dispatcher with a CDN</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Using Dispatcher with a CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Step 32</strong></td>
    <td>To offload the AEM server, use session management at the Dispatcher level</td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement">Enabling Secure Sessions</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Enabling Secure Sessions</a></p> </td>
   </tr>
   <tr>
    <td><strong>Step 33</strong></td>
    <td>Make requests cacheable</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">General Dispatcher Configuration</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Configuring the Dispatcher Cache</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html">General Dispatcher Configuration</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configuring the Dispatcher Cache</a></li>
     </ol> <p>How to improve cache ratio; make requests cache-able (Dispatcher best practices)</p> <p>Also, consider the below settings to optimize your caching configurations<br /> </p>
     <ol>
      <li>Set a no-cache rule for HTTP request that is not GET</li>
@@ -247,26 +247,26 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
   <tr>
    <td><strong>Step 34</strong></td>
    <td>Upgrade Dispatcher version</td>
-   <td><p>You can download the latest Dispatcher version at this location:</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en">Follow link</a></p> </td>
+   <td><p>You can download the latest Dispatcher version at this location:</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html">Follow link</a></p> </td>
   </tr>
   <tr>
    <td><strong>Step 35</strong></td>
    <td>Configure Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en">Configuring the Dispatcher</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html">Configuring the Dispatcher</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Step 36</strong></td>
    <td>Check cache invalidation</td>
    <td><br />
     <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment">Cache Invalidation for the Author tier;</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance">Cache Invalidation for the Publish tier.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Cache Invalidation for the Author tier;</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Cache Invalidation for the Publish tier.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Steps 37 and 38</strong></td>
    <td>Lazy-loading</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">See the Gem Session on AEM Web Performance.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">See the Gem Session on AEM Web Performance.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Step 39</strong></td>
@@ -286,7 +286,7 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
   <tr>
    <td><strong>Step 49</strong></td>
    <td>Shrink payload size</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Enable Gzip</a> and <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">shrink the image size</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Enable Gzip</a> and <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">shrink the image size</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Steps 42 and 43</strong></td>
@@ -318,7 +318,7 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
   <tr>
    <td><strong>Steps 50 and 51</strong></td>
    <td>JS code blocking</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html</a></td>
   </tr>
  </tbody>
 </table>

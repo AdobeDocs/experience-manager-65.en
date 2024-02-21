@@ -1,12 +1,12 @@
 ---
 title: Integrating AEM 6.5 with Adobe Campaign
 description: Lean about AEM 6.5's support for integrations with Adobe Campaign.
-uuid: 6113279e-d1f5-46c3-ac94-50270fa55060
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
+
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 ---
 

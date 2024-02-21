@@ -75,7 +75,7 @@ GraphQL queries and their JSON responses can be cached if targeted as `GET` requ
 
 See:
 
-* [Using CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn)
+* [Using CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### Set HTTP cache control headers {#set-http-cache-control-headers}
 

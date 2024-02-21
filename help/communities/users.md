@@ -1,14 +1,10 @@
 ---
 title: Managing Users and User Groups
-seo-title: Managing Users and User Groups
 description: Users of AEM Communities can self-register and edit their profiles
-seo-description: Users of AEM Communities can self-register and edit their profiles
-uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
 ---
@@ -46,7 +42,7 @@ When a new community site is created, new user groups are dynamically created wi
 
 The names of the groups are generated from the name given the site during [community site creation](sites-console.md#step13asitetemplate). The unique ids avoid naming conflicts for similarly named community sites and community groups on the same server.
 
-For example, if the site name were "*engage*" for a site titled "We.Retail Engage", then one of the user groups created would be:
+For example, if the site name were "*engage*" for a site titled " Engage", then one of the user groups created would be:
 
 * Community *Engage* Members
 

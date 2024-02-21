@@ -9,7 +9,7 @@ exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 ---
 # Using Hide Conditions {#using-hide-conditions}
 
-Hide conditions can be used to determine if a component resource is rendered or not. An example of this would be when a template author configures the Core Component [list component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) in the [template editor](/help/sites-authoring/templates.md) and decides to disable the options to build the list based on child pages. Disabling this option in the design dialog box sets a property so that when the list component is rendered, the hide condition is evaluated and the option to show child pages is not displayed.
+Hide conditions can be used to determine if a component resource is rendered or not. An example of this would be when a template author configures the Core Component [list component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) in the [template editor](/help/sites-authoring/templates.md) and decides to disable the options to build the list based on child pages. Disabling this option in the design dialog box sets a property so that when the list component is rendered, the hide condition is evaluated and the option to show child pages is not displayed.
 
 ## Overview {#overview}
 
@@ -47,7 +47,7 @@ When defining your hide expression, keep in mind the following:
 
 ## Example {#example}
 
-Examples of hide conditions can be found throughout AEM and the [core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in particular. For example, consider the [list core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en).
+Examples of hide conditions can be found throughout AEM and the [core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in particular. For example, consider the [list core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 [Using the template editor](/help/sites-authoring/templates.md), the template author can define in the design dialog which options of the list component that are available to the page author. Such options as whether to allow the list to be a static list, a list of child pages, a list of tagged pages, and so on, can be enabled or disabled.
 

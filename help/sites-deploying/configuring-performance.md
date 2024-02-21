@@ -3,12 +3,12 @@ title: Performance Optimization
 
 description: Learn how to configure certain aspects of AEM to optimize performance.
 
-uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
+
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 ---
@@ -20,7 +20,7 @@ exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 >
 >For more information about troubleshooting and fixing performance issues, also see the [Performance tree](/help/sites-deploying/performance-tree.md).
 >
->Also, you can review a Knowledge Base article on [Performance Tuning Tips](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Also, you can review a Knowledge Base article on [Performance Tuning Tips](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 A key issue is the time that your website takes to respond to visitor requests. Although this value varies for each request, an average target value can be defined. Once this value is proven to be both achievable and maintainable, it can be used to monitor the performance of the website and indicate the development of potential problems.
 
@@ -37,7 +37,7 @@ This environment contains content which you make available to your users. Here t
 >[!NOTE]
 >
 >* After configuring for performance optimization, follow the procedures in [Tough Day](/help/sites-developing/tough-day.md) to test the environment under heavy load.
->* See also [Performance tuning tips.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>* See also [Performance tuning tips.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 ## Performance Optimization Methodology {#performance-optimization-methodology}
 
@@ -199,7 +199,7 @@ Certain aspects of AEM (and/or the underlying repository) can be configured to o
 
 >[!NOTE]
 >
->See [Performance Optimization](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>See [Performance Optimization](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 ### Search Indexing {#search-indexing}
 
@@ -474,7 +474,7 @@ After all tests are completed, report on the following:
 
 ## Optimizing Performance when using the Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-The [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) is Adobe's caching and/or load-balancing tool. When using the Dispatcher, consider optimizing your website for cache performance.
+The [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is Adobe's caching and/or load-balancing tool. When using the Dispatcher, consider optimizing your website for cache performance.
 
 >[!NOTE]
 >
@@ -490,7 +490,7 @@ The Dispatcher offers several built-in mechanisms that you can use to optimize p
 >
 >In general, numerous caching strategies involve selecting good URLs and not relying on this additional data.
 >
->With Dispatcher version 4.1.11 you can also cache response headers, see [Caching HTTP Response Headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
+>With Dispatcher version 4.1.11 you can also cache response headers, see [Caching HTTP Response Headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 >
 
 ### Calculating the Dispatcher Cache Ratio {#calculating-the-dispatcher-cache-ratio}
@@ -526,7 +526,7 @@ With Dispatcher version 4.1.11, you can cache response headers. If you are not c
 
 #### Avoid URL Parameters {#avoid-url-parameters}
 
-If possible, avoid URL parameters for pages that you want to cache. For example, if you have a picture gallery, the following URL is never cached (unless Dispatcher is [configured accordingly](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)):
+If possible, avoid URL parameters for pages that you want to cache. For example, if you have a picture gallery, the following URL is never cached (unless Dispatcher is [configured accordingly](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -615,7 +615,7 @@ It is recommended that you limit personalization to where it is necessary. To il
 
 #### Sticky Connections {#sticky-connections}
 
-[Sticky connections](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#the-benefits-of-load-balancing) ensure that the documents for one user are all composed on the same server. If a user leaves this folder and later returns to it, the connection still sticks. To hold all documents that require sticky connections for the website, define one folder. Try not to have other documents in it. This scenario impacts load-balancing if you use personalized pages and session data.
+[Sticky connections](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) ensure that the documents for one user are all composed on the same server. If a user leaves this folder and later returns to it, the connection still sticks. To hold all documents that require sticky connections for the website, define one folder. Try not to have other documents in it. This scenario impacts load-balancing if you use personalized pages and session data.
 
 #### MIME Types {#mime-types}
 

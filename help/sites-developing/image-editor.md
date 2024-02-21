@@ -1,12 +1,12 @@
 ---
 title: Image Editor
 description: The Image Editor is a core piece of AEM and can be used by components to facilitate the manipulation of images by content authors.
-uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
+
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
+
 exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
 ---
 # Image Editor{#image-editor}

@@ -1,14 +1,14 @@
 ---
 title: Developing and Extending Workflows
-seo-title: Developing and Extending Workflows
+
 description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
-seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
-uuid: 5a857589-3b13-4519-bda2-b1dab6005550
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
+
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
 ---
 
@@ -35,7 +35,7 @@ Key aspects are covered below, while the following pages cover further details:
 >
 >* Participating in workflows, see [Using Workflows](/help/sites-authoring/workflows.md).
 >* Administering workflows and workflow instances, see [Administering Workflows](/help/sites-administering/workflows.md).
->* For an end-to-end Community Article, see [Modifying Digital Assets using Adobe Experience Manager Workflows.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=en)
+>* For an end-to-end Community Article, see [Modifying Digital Assets using Adobe Experience Manager Workflows.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)
 >* See the [Ask the AEM Experts Webinar on Workflows](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Changes to the locations of information see [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) and [Workflow Best Practices - Locations](/help/sites-developing/workflows-best-practices.md#locations).
 >
@@ -201,7 +201,7 @@ For example, for a workflow with six steps and four stages:
 
 ### Workflows and Forms {#workflows-and-forms}
 
-Typically, workflows are used to process form submissions in AEM. It can be with the [core components form components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=en) available in a standard AEM instance, or with the [AEM Forms solution](/help/forms/using/aem-forms-workflow.md).
+Typically, workflows are used to process form submissions in AEM. It can be with the [core components form components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) available in a standard AEM instance, or with the [AEM Forms solution](/help/forms/using/aem-forms-workflow.md).
 
 When creating a form, the form submission can be easily associated with a workflow model. For example, to store the content in a particular location of the repository or to notify a user about the form submission and its content.
 

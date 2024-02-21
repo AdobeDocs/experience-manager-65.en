@@ -3,9 +3,9 @@ title: Styling constructs for adaptive forms
 description: Use LESS framework to customize appearance of adaptive forms.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
+
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
 ---
 # Styling constructs for adaptive forms{#styling-constructs-for-adaptive-forms}

@@ -1,13 +1,13 @@
 ---
 title: Service container
-seo-title: Service container
+
 description: AEM Forms services in the service container
-uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
-discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
+
 role: Developer
 exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
 ---

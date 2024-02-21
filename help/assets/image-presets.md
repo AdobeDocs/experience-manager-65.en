@@ -1,12 +1,10 @@
 ---
 title: Apply Dynamic Media Image Presets
 description: Learn how you can enable assets to dynamically deliver images at different sizes, in different formats, or with other image properties that are generated dynamically.
-uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 feature: Image Presets
 role: User,Admin
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30

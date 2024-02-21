@@ -6,6 +6,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 ---
 # Create or customize an Adaptive Form theme {#introduction-to-theme}
@@ -16,7 +17,7 @@ exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 | AEM 6.5  |    This Article                  |
  
 
-**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/themes.md).
+<!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
 In AEM Forms 6.5, a theme is an AEM client library that you use to define the styles (look and feel) for an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms.
  

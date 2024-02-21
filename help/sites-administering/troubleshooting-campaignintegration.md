@@ -1,12 +1,12 @@
 ---
 title: Troubleshooting the Adobe Campaign Classic Integration
 description: Learn how to troubleshoot issues with the Adobe Campaign Classic integration.
-uuid: 835ac2c3-ef2f-4963-9047-aeda3647b114
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
+
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
 ---
 

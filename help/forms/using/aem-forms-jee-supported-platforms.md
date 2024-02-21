@@ -156,7 +156,12 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td><p>Supported</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 4.4 </p> </td>
+   <td><p> MongoDB Enterprise 5.0</p> </td>
+   <td><p>Repository Microkernel</p> </td>
+   <td><p>Supported</p> </td>
+  </tr>
+    <tr>
+   <td><p> MongoDB Enterprise 6.0 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
@@ -236,12 +241,12 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td><p><strong>Supported Patch Definitions</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Deprecated)</td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Deprecated) <sup>[9]</sup></td>
    <td>A: Supported</td>
    <td>Service pack and critical updates</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c </td>
+   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
    <td>A: Supported</td>
    <td>Service pack and critical updates</td>
   </tr>
@@ -349,6 +354,11 @@ Consider the following exceptions while choosing a platform to set up your AEM F
 1. AEM Forms on JEE do not support WebSphere&reg; application server on CentOS.
 1. AEM Forms on JEE do not support JBoss&reg; role-based access control (RBAC).
 1. AEM Forms on JEE support Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4 only.
+1. JDK versions higher than 1.8.0_281 are not supported for WebLogic server. (FORMS-8498)
+
+<!-- 
+1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
+-->
 
 In addition, consider the following points while choosing software for Adobe AEM Forms on JEE deployments:
 
@@ -467,7 +477,6 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >In addition,:
 >
->- PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
 >- PDF Generator supports only the 32-bit Retail version of Microsoft&reg; Office Professional Plus and other software required for conversion.
 >- PDF Generator does not support Microsoft&reg; Office 365.
 >- PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
@@ -477,8 +486,8 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >-PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
 >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
->- PDF Generator fails to convert files using Microsoft&reg; Project 2019. 
->
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019.
+>- If the Microsoft® Office installation becomes deactivated or unlicensed due to any reasons, such as a VL_KMS being unable to establish communication for a period, conversions may fail until the installation is reactivated or relicensed.
 
 ### Exceptions to accessibility support {#exceptions-to-accessibility-support}
 
@@ -816,6 +825,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
+### Release 6.5.19.1 (Dec 15, 2023)
+
+| Added Support | Removed Support | Deprecated Support |
+| -------------- | --------------- | ------------------- |
+| MongoDB Enterprise 6.0 |MongoDB Enterprise 4.4   |  |
+| MongoDB Enterprise 5.0 |  |  |
+|  | |  |
+
 ### Release 6.5.18.0 (Aug 31, 2023)
 
 | Added Support | Removed Support | Deprecated Support |
@@ -862,6 +879,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | IBM&reg; Content Manager Server 8.5 Fix pack 2 |
 |  | | IBM&reg; Content Manager Client 8.5 |
 |  | | Microsoft&reg; SQL Server 2016 |
+|  | | Microsoft&reg; Windows Server 2016 |
 
 ### Release 6.5.10.0 (September 01, 20222)
 
@@ -901,5 +919,4 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
 
     --> 
-
 

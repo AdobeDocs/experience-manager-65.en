@@ -1,12 +1,12 @@
 ---
 title: Configuring email endpoints
 description: Learn how to configure email endpoints. Email endpoints enable you to invoke a service by sending one or more documents to a specified email account.
-uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
+
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 ---
 # Configuring email endpoints {#configuring-email-endpoints}

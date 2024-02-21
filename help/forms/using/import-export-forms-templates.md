@@ -1,13 +1,13 @@
 ---
 title: Importing and exporting assets to AEM Forms
-seo-title: Importing and exporting assets to AEM Forms
+
 description: You can import and export adaptive forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-seo-description: You can import and export adaptive forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-uuid: 937daedd-56f3-4e02-b695-b194b494d9bf
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
+
 docset: aem65
 
 role: Admin

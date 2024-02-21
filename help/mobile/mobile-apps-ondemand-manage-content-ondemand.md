@@ -1,14 +1,14 @@
 ---
 title: Managing Content
-seo-title: Managing Content
+
 description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn more.
-seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn more.
-uuid: ab680836-133b-45b9-913c-e721b7e9fc04
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
+
 exl-id: 4e37e814-ceb6-4dfa-a4d3-754f15ca4edf
 ---
 # Managing Content{#managing-content}

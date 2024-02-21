@@ -6,3 +6,5 @@ settings.json
 Thumbs.db
 .gitignore
 desktop.ini
+/.idea/
+/experience-manager-65.en.iml

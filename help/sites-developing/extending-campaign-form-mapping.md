@@ -1,14 +1,14 @@
 ---
 title: Creating Custom Form Mappings
-seo-title: Creating Custom Form Mappings
+
 description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
-seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
-uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
+
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 ---
 # Creating Custom Form Mappings{#creating-custom-form-mappings}

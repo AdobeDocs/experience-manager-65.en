@@ -1,13 +1,13 @@
 ---
 title: Post processing of letters and interactive communications
-seo-title: Post Processing of Letters
+
 description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
-seo-description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
-uuid: 40cb349d-6ba2-4794-9ec6-dcab15c35b8d
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
+
 docset: aem65
 
 feature: Correspondence Management
@@ -67,7 +67,7 @@ To associate post processes with letters or interactive communications, you firs
 
 1. login to `https://localhost:publishport/aem/forms`.
 1. Navigate to **[!UICONTROL Letters]** to view the published letter that is available on the publish instance.
-1. Configure the AEM DS Settings. See [Configuring AEM DS settings](../../forms/using/configuring-the-processing-server-url-.md).
+1. Configure the AEM DS Settings. See [Configuring AEM DS settings](../../forms/using/configuring-the-processing-server-url.md).
 
 >[!NOTE]
 >

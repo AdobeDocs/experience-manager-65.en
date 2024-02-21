@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 ---
-# Generate Document of Record for adaptive forms{#generate-document-of-record-for-adaptive-forms}
+# Generate Document of Record for adaptive forms or adaptive form fragments {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
@@ -22,7 +22,12 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 
 After submitting a form, your customers generally want to keep a record, in print or in document format, of the information they have filled in the form for their future reference. This is referred to as a document of record.
 
-This article explains how you can generate a document of record for adaptive forms.
+This article explains how you can generate a document of record for Adaptive Forms or Adaptive Form fragment.
+
+>[!NOTE]
+>
+> The support to customize your Adaptive Form fragments and its fields in Adaptive Form editor was introduced with AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+
 
 >[!NOTE]
 >
@@ -63,6 +68,8 @@ Automatically generated document of record has the following advantages:
 To generate a document of record for adaptive forms, you need the following components:
 
 **Adaptive form** Adaptive form for which you want to generate a document of record.
+
+**Adaptive form fragment** Adaptive form fragment for which you want to generate a document of record.
 
 **Base template (recommended)** XFA template (XDP file) created in AEM Designer. Base template is used to specify styling and branding information for document of record template.
 
@@ -268,7 +275,7 @@ Perform the following steps to configure a document of record for adaptive forms
    >
    >In the Form Model tab, ensure that you select **Schema** or **None** from the **Select From** drop-down. **[!UICONTROL Document of record is not supported for XFA-based or adaptive forms with Form Template as form model.]**
 
-1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options.
+1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options:
 
    **None** Select this option if you don't want to configure document of record for the form.
 
@@ -391,6 +398,10 @@ The document of record settings of a component are available under its propertie
   * **[!UICONTROL Overflow]** > **[!UICONTROL Go to Content Area]** > Name of content area: Starts filling the specified content area.
   * **[!UICONTROL Overflow]** > **[!UICONTROL Go To Page]** > Name of page: Starts filling the specified page.
 
+  >[!NOTE]
+  >
+  > Pagination property is not available for adaptive form fragments.
+
 For information on how to apply page breaks and apply multiple master pages in a Document of Record, see [Apply page break in a Document of Record](#apply-page-breaks-in-dor) and [Apply multiple master pages to a Document of Record](#apply-multiple-master-pages-dor).
     
 **Form level settings**
@@ -433,6 +444,9 @@ To apply the second master page properties to a panel and the third master page 
 1. Select ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
    AEM Forms applies third master page to the panel and all subsequent panels in the adaptive form.
 
+>[!NOTE]
+>
+> You can not apply multiple master pages to a Document of Record for an adaptive form Fragment.
 
 ## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 

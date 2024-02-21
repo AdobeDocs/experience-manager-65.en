@@ -1,12 +1,12 @@
 ---
 title: Specify file locations for Output
 description: Learn how to specify file locations for Output for certain types of files, for example, Content Root URI, XCI Configuration File, Cache and Default.
-uuid: 3287274f-85b5-4811-8abb-d347a9b80947
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
+
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 ---
 # Specify file locations for Output {#specify-file-locations-for-output}

@@ -17,7 +17,7 @@ To learn what is necessary for your particular deployment and site design
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
 
-See also the main [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
+See also the main [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
 ## Dispatcher Caching {#dispatcher-caching}
 
@@ -33,7 +33,7 @@ When configured to support Dispatcher caching, a TTL-based "max age" expiration 
 
 ### Requirements {#requirements}
 
-* Dispatcher version 4.1.2 or later (see [Installing Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) for the latest version)
+* Dispatcher version 4.1.2 or later (see [Installing Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) for the latest version)
 * [ACS AEM Commons package](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
   * Version 3.3.2 or later
@@ -60,7 +60,7 @@ The OSGi configuration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
 ## Dispatcher Filters {#dispatcher-filters}
 
-The /filter section of the `dispatcher.any` file is documented in [Configuring Access to Content - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).
+The /filter section of the `dispatcher.any` file is documented in [Configuring Access to Content - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
 
 This section describes entries that are likely necessary for proper functioning of Communities features.
 
@@ -70,7 +70,7 @@ The following samples use property names that likely must be modified to fit int
 
 See also:
 
-* [Dispatcher Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)
+* [Dispatcher Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >

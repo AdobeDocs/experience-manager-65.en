@@ -1,14 +1,14 @@
 ---
 title: Monitoring Server Resources Using the JMX Console
-seo-title: Monitoring Server Resources Using the JMX Console
+
 description: Learn how to monitor server resources using the JMX console.
-seo-description: Learn how to monitor server resources using the JMX console.
-uuid: 0a28aafe-61b2-472b-8f8f-2cd6540cbfee
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
+
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
 ---
