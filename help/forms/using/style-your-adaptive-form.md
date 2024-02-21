@@ -462,7 +462,7 @@ You can use various fonts to design an adaptive form. All the devices that the a
 
 1. Click **Done** to close the web project window.
 1. Create a folder structure in CRXDE, for example `/apps/[fontslibrary]/[customlibrary(clientlibrary)]/css`. 
-1. Navigate to css folder and create a file. For example create a file as `fonts.css` and paste the embed code along with the URL.
+1. Navigate to css folder and create a file. For example, create a file as `fonts.css` and paste the embed code along with the URL.
    ![Folder structure](/help/forms/using/assets/fonts-add-in-crxde.png)
 1. Save the changes.
 
