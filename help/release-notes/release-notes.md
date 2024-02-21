@@ -36,7 +36,7 @@ Some of the key features and enhancements in this release include the following:
 
 * Dynamic Media now supports lossless HEIC image format for Apple iOS/iPadOS. See [fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html?lang=en) in the Dynamic Media Image Serving and Rendering API.
 
-* Multisite Manager (MSM) now supports Experience Fragment structures including folders and sub-folders, for efficient bulk rollout of Experience Fragments to Live Copies. 
+* Multisite Manager (MSM) now supports Experience Fragment structures including folders and subfolders, for efficient bulk rollout of Experience Fragments to Live Copies. 
 
 <!-- ### [!DNL Forms]
 
@@ -67,7 +67,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6520}
 
-<!-- * When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL -->
+<!-- REMOVED AS PER EMAIL FROM SAMEER DHAWAN FEBRUARY 19, 2024 * When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL -->
 * When executing a GraphQL query to [filter results](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) using optional variables, if a specific value is **not** provided for the optional variable, then the variable is ignored in the filter evaluation. (SITES-17051) NORMAL
 
 <!--#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
@@ -89,11 +89,11 @@ Some of the key features and enhancements in this release include the following:
 
 #### Campaign integration{#sites-campaign-integration-6520}
 
-* AEM was using an allowlist&ndash;also known as a whitelist&ndash;due to a vulnerability report. The allowlist was preventing customers from using needed functionality. (SITES-16822) CRITICAL
+* AEM was using an allowlist&ndash;also known as a `whitelist`&ndash;due to a vulnerability report. The allowlist was preventing customers from using needed functionality. (SITES-16822) CRITICAL
 
 #### Experience Fragments{#sites-experiencefragments-6520}
 
-* MSM for Experience Fragments now supports bulk-rollout to Experience Fragment content structures including folders and sub-folders.  (SITES-16004) MAJOR
+* MSM for Experience Fragments now supports bulk-rollout to Experience Fragment content structures including folders and subfolders. (SITES-16004) MAJOR
 
 <!--#### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
 
@@ -197,7 +197,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * Following deployment of AEM 6.5 Service Pack 18, there was an issue with the Filters tab in the Translation Rules Editor. When a Context is selected, clicking Edit > Save, a double-quote as HTML character appears the next time you open the same Context. Essentially, translation rules were not getting saved correctly. (NPR-41624) MAJOR
 * Issues related to Content Fragment translations, where the translated strings are being sent back from the translation provider to AEM, but they are stuck at the `/content/projects` level and not updating the Content Fragments. (NPR-41516) MAJOR
 * An error message is displayed when creating a language copy. It occurs on a page that has a content fragment referenced in a page property, using content fragment models. (NPR-41441) MAJOR
-* Links in Experience Fragments are not adjusted to the correct language during Language Copy. Instead, the Experience Fragment points to the master locale. (NPR-41343) NORMAL
+* Links in Experience Fragments are not adjusted to the correct language during Language Copy. Instead, the Experience Fragment points to the primary locale. (NPR-41343) NORMAL
 
 #### User interface{#foundation-ui-6520}
 
