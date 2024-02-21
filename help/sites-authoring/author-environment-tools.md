@@ -97,7 +97,7 @@ The actual appearance and handling depends on the device type that you are using
 
 ## Assets Browser {#assets-browser}
 
-The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.
+The assets browser shows all [assets](/help/assets/assets.md) that are available for direct use on your current page.
 
 The assets browser is a tab within the side panel along with the [components browse](/help/sites-authoring/author-environment-tools.md#components-browser)r and [content tree](/help/sites-authoring/author-environment-tools.md#content-tree). To open or close the side panel, use the icon at the top left of the toolbar:
 

@@ -33,7 +33,7 @@ You receive these notifications in your own Inbox where you can view them and ta
 >* [Projects](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projects - working with Tasks](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/home.md)
+>* [Forms](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Inbox in the Header {#inbox-in-the-header}

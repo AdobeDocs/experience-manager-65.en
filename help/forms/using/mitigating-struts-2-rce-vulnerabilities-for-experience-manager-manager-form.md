@@ -1,5 +1,4 @@
 ---
-
 title: Mitigating Struts 2 Vulnerabilities for Experience Manager Forms on JEE
 description: Mitigating Struts 2 Vulnerabilities for Experience Manager Forms on JEE
 content-type: reference
@@ -7,9 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-
+exl-id: 73b5aff2-1320-4d9a-8972-54c4fdd3a2c2
 ---
-
 # Mitigating Struts 2 Vulnerabilities for Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## Issue
@@ -185,4 +183,4 @@ You can use the manual mitigation steps to resolve the issue on AEM 6.5 Form Ser
 
 
 
---> 
+-->

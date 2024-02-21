@@ -699,40 +699,28 @@ Caching of persisted queries is not enabled by default in the Dispatcher. Defaul
 
 ### Enable caching of persisted queries {#enable-caching-persisted-queries}
 
-To enable the caching of persisted queries, define the Dispatcher variable `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+To enable the caching of persisted queries, the following updates to the Dispatcher configuration files are required:
 
-1. Add the variable to the Dispatcher file `global.vars`:
+* `<conf.d/rewrites/base_rewrite.rules>`
 
-   ```xml
-   Define CACHE_GRAPHQL_PERSISTED_QUERIES
-   ```
+  ```xml
+  # Allow the dispatcher to be able to cache persisted queries - they need an extension for the cache file
+  RewriteCond %{REQUEST_URI} ^/graphql/execute.json
+  RewriteRule ^/(.*)$ /$1;.json [PT] 
+  ```
 
->[!NOTE]
->
->When Dispatcher caching is enabled for persisted queries by using `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` header is added to the response by the Dispatcher.
->
->By default the `ETag` header is configured with the following directive:
->
->```
->FileETag MTime Size 
->```
->
->However, this setting can cause issues when used on the persisted query responses, because it does not account for small changes in the response.
->
->To achieve individual `ETag` calculations on *each* response that is unique the `FileETag Digest` setting has to be used in the dispatcher configuration:
->
->```xml
-><Directory />    
->  ...    
->  FileETag Digest
-></Directory> 
->```
+  >[!NOTE]
+  >
+  >The Dispatcher adds the suffix `.json` to all persisted query URLS, so that the result can be cached.
+  >
+  >This is to ensure that the query conforms to the Dispatcher’s requirements for documents that can be cached. For further details see [How does the Dispatcher return documents?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
->[!NOTE]
->
->To conform to the [Dispatcher's requirements for documents that can be cached](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), the Dispatcher adds the suffix `.json` to all persisted query URLs, so that the result can be cached. 
->
->This suffix is added by a rewrite rule, once persisted query caching is enabled.
+* `<conf.dispatcher.d/filters/ams_publish_filters.any>`
+
+  ```xml
+  # Allow GraphQL Persisted Queries & preflight requests
+  /0110 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
+  ```
 
 ### CORS configuration in the Dispatcher {#cors-configuration-in-dispatcher}
 

@@ -11,27 +11,26 @@ user-guide-title: AEM 6.5
 # Adobe Experience Manager 6.5 Documentation {#content}
 
 + Release Notes {#release-notes}
-  + [AEM 6.5 release notes](/help/release-notes/home.md)
-  + [Current release notes](/help/release-notes/release-notes.md)
+  + [Release notes](/help/release-notes/release-notes.md)
   + Previous release notes {#service-pack}
-    + [6.5.18](/help/release-notes/previous/6.5.18.md)
-    + [6.5.17](/help/release-notes/previous/6.5.17.md)
-    + [6.5.16](/help/release-notes/previous/6.5.16.md)
-    + [6.5.15](/help/release-notes/previous/6.5.15.md)
-    + [6.5.14](/help/release-notes/previous/6.5.14.md)
-    + [6.5.13](/help/release-notes/previous/6.5.13.md)
-    + [6.5.12](/help/release-notes/previous/6.5.12.md)
-    + [6.5.11](/help/release-notes/previous/6.5.11.md)
-    + [6.5.10](/help/release-notes/previous/6.5.10.md)
-    + [6.5.9](/help/release-notes/previous/6.5.9.md)
-    + [6.5.8](/help/release-notes/previous/6.5.8.md)
-    + [6.5.7](/help/release-notes/previous/6.5.7.md)
-    + [6.5.6](/help/release-notes/previous/6.5.6.md)
-    + [6.5.5](/help/release-notes/previous/6.5.5.md)
-    + [6.5.4](/help/release-notes/previous/6.5.4.md)
-    + [6.5.3](/help/release-notes/previous/6.5.3.md)
-    + [6.5.2](/help/release-notes/previous/6.5.2.md)
-    + [6.5.1](/help/release-notes/previous/6.5.1.md)
+    + [6.5.18](/help/release-notes/previous/6-5-18.md)
+    + [6.5.17](/help/release-notes/previous/6-5-17.md)
+    + [6.5.16](/help/release-notes/previous/6-5-16.md)
+    + [6.5.15](/help/release-notes/previous/6-5-15.md)
+    + [6.5.14](/help/release-notes/previous/6-5-14.md)
+    + [6.5.13](/help/release-notes/previous/6-5-13.md)
+    + [6.5.12](/help/release-notes/previous/6-5-12.md)
+    + [6.5.11](/help/release-notes/previous/6-5-11.md)
+    + [6.5.10](/help/release-notes/previous/6-5-10.md)
+    + [6.5.9](/help/release-notes/previous/6-5-9.md)
+    + [6.5.8](/help/release-notes/previous/6-5-8.md)
+    + [6.5.7](/help/release-notes/previous/6-5-7.md)
+    + [6.5.6](/help/release-notes/previous/6-5-6.md)
+    + [6.5.5](/help/release-notes/previous/6-5-5.md)
+    + [6.5.4](/help/release-notes/previous/6-5-4.md)
+    + [6.5.3](/help/release-notes/previous/6-5-3.md)
+    + [6.5.2](/help/release-notes/previous/6-5-2.md)
+    + [6.5.1](/help/release-notes/previous/6-5-1.md)
     + [6.5.0](/help/release-notes/previous/ga.md)
   + [AEM Forms service pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
   + [AEM Forms JEE patch installer](/help/release-notes/jee-patch-installer-65.md)
@@ -68,7 +67,6 @@ user-guide-title: AEM 6.5
   + [Same Site Cookie Support](/help/sites-administering/same-site-cookie-support.md)
 + Sites {#sites}
   + Authoring {#authoring}
-    + [Authoring User Guide overview](/help/sites-authoring/home.md)
     + Essential tasks, tools and concepts for AEM Authoring {#essentials}
         + [First Steps for Authors](/help/sites-authoring/first-steps.md)
         + [Page Authoring](/help/sites-authoring/page-authoring.md)
@@ -264,7 +262,6 @@ user-guide-title: AEM 6.5
       + [Content Management for Screens](/help/sites-administering/content-management-screens.md)
       + [WebDAV Access](/help/sites-administering/webdav-access.md)
   + Classic UI Authoring {#classic-ui}
-    + [Classic UI Authoring Guide overview](/help/sites-classic-ui-authoring/home.md)
     + Introduction to Classic UI Authoring {#introduction}
         + [First Steps for Authors](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
         + [Authoring in the Classic UI](/help/sites-classic-ui-authoring/classicui.md)
@@ -334,7 +331,6 @@ user-guide-title: AEM 6.5
         + [Working with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
         + [Naming conventions for assets testing](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
-  + [[!DNL Assets] user guide](/help/assets/home.md)
   + [About DAM](/help/assets/assets.md)
   + [Best practices for assets](/help/assets/best-practices-for-assets.md)
   + [Accessibility in [!DNL Assets]](/help/assets/accessibility.md)
@@ -498,7 +494,6 @@ user-guide-title: AEM 6.5
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
-  + [AEM 6.5 Forms Guide](/help/forms/home.md)
   + Release Notes {#release-notes-new-features}
     + [What's new](/help/forms/using/whats-new.md)
     + [Frequently asked questions](/help/forms/using/frequently-asked-questions-faq.md)  
@@ -559,7 +554,7 @@ user-guide-title: AEM 6.5
     + Configure AEM Forms {#configure-aem-forms}
       + [Performance tuning of AEM Forms server](/help/forms/using/performance-tuning-aem-forms.md)
       + [Configure adaptive forms cache](/help/forms/using/configure-adaptive-forms-cache.md)
-      + [Configuring AEM DS settings](/help/forms/using/configuring-the-processing-server-url-.md)
+      + [Configuring AEM DS settings](/help/forms/using/configuring-the-processing-server-url.md)
       + [Configuring the synchronization scheduler](/help/forms/using/configure-synchronization-scheduler.md)
       + [Configuring the Connector for Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Connecting AEM Forms with Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
@@ -613,6 +608,7 @@ user-guide-title: AEM 6.5
   + Adaptive Forms - Core Components {#adaptive-forms-core-components}
     + [Enable Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md)
     + [Create a Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
+    + [Create and use Adaptive Forms Fragments in an Adaptive Form](/help/forms/using/adaptive-form-fragment-core-components.md)
     + [Create themes for Core Components based Adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
   + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
@@ -624,6 +620,7 @@ user-guide-title: AEM 6.5
     + [Using CAPTCHA in adaptive forms](/help/forms/using/captcha-adaptive-forms.md)
     + [Adaptive forms keywords](/help/forms/using/adaptive-forms-keywords.md)
     + [Tables in adaptive forms](/help/forms/using/adaptive-forms-tables.md)
+    + [Charts in adaptive forms](/help/forms/using/adaptive-form-charts.md)
     + [Auto-save an adaptive form](/help/forms/using/auto-save-an-adaptive-form.md)
     + [Configuring redirect page](/help/forms/using/configuring-redirect-page.md)
     + [Creating accessible adaptive forms](/help/forms/using/creating-accessible-adaptive-forms.md)
@@ -633,7 +630,7 @@ user-guide-title: AEM 6.5
     + [Inline styling of adaptive form components](/help/forms/using/inline-style-adaptive-forms.md)
     + [Introduction to multi-step form sequence](/help/forms/using/introduction-form-sequence.md)
     + [Layout capabilities of adaptive forms](/help/forms/using/layout-capabilities-adaptive-forms.md)
-    + [Placeholder text in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms-.md)
+    + [Placeholder text in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms.md)
     + [Previewing a form](/help/forms/using/previewing-forms.md)
     + [Reusing adaptive forms](/help/forms/using/reusing-adaptive-forms.md)
     + [Separator component in adaptive forms](/help/forms/using/separator-component-in-adaptive-forms.md)
@@ -1179,6 +1176,8 @@ user-guide-title: AEM 6.5
     + [Processing documents even if the AEM Forms server is not fully up and running](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
     + [Unable to use Output service, Forms service, or Document of Record (DoR) service](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
     + [Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+    + [Failure to backup database during upgrade to 6.5.12.0 for MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
+    + [PDF generation fails to print a large number of PDFs on WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
     + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1186,9 +1185,8 @@ user-guide-title: AEM 6.5
     + [Generating and working with Hashes in dynamic PDF forms](/help/forms/developing/hashing-forms.md)
     + [Passing credentials using WS-Security headers](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
-  + [AEM Content and Commerce](/help/commerce/home.md)
-  + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
   + [Introduction and overview](/help/commerce/cif/introduction.md)
+  + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
   + Integrations {#integrations}
     + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
     + [3rd Party Commerce Solution](/help/commerce/cif/integrating/third-party.md)
@@ -1213,6 +1211,8 @@ user-guide-title: AEM 6.5
   + [Adobe Commerce PWA Studio](/help/commerce/cif/pwa-studio/getting-started.md)
   + [Migration](/help/commerce/cif/migration.md)
   + Release Notes {#release-notes}
+    + [2024](/help/commerce/cif/release-notes/release-notes-2024.md)
+    + [2023](/help/commerce/cif/release-notes/release-notes-2023.md)
     + [2022](/help/commerce/cif/release-notes/release-notes-2022.md)
     + [2021](/help/commerce/cif/release-notes/release-notes-2021.md)
     + [2020](/help/commerce/cif/release-notes/release-notes-2020.md)
@@ -1270,7 +1270,6 @@ user-guide-title: AEM 6.5
   + [What is a documentation journey?](/help/journey-documentation/home.md)
 + Implementing {#implementing}
   + Developing {#developing}
-    + [Developing User Guide overview](/help/sites-developing/home.md)
     + Introduction for Developers {#introduction}
       + [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
       + [AEM Core Concepts](/help/sites-developing/the-basics.md)
@@ -1523,7 +1522,6 @@ user-guide-title: AEM 6.5
       + [Creating Sites for Mobile Devices](/help/sites-developing/mobile.md)
       + [Emulators](/help/sites-developing/emulators.md)
   + Deploying {#deploying}
-    + [Deploying User Guide](/help/sites-deploying/home.md)
     + Introduction to the AEM Platform {#introduction}
         + [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
         + [Technical Requirements](/help/sites-deploying/technical-requirements.md)
