@@ -497,21 +497,22 @@ An XCI file helps you set various properties of a document. <!-- Forms as a Clou
 ### Use a custom XCI file in your AEM Forms environment
 
   1. Add the custom XCI file to your development project.
-  1. Specify the following inline property: <!--[inline property](/help/implementing/deploying/configuring-osgi.md)
+  1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
 
-            ```JSON
+          
+            JSON
               {
               "xciFilePath": "[path of XCI file]"
               }
-            ```
+
 
             For example,
 
-            ```JSON
+            JSON
               {
               "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
               }
-            ```
+
   1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
   
 -->
@@ -522,3 +523,5 @@ An XCI file helps you set various properties of a document. <!-- Forms as a Clou
   1. Open <!--Cloud Service SDK--> configuration manager. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
   1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
   1. Specify path of the XCI file and click **[!UICONTROL Save]**.
+
+  
