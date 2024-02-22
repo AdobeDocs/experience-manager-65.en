@@ -1,14 +1,10 @@
 ---
 title: Changing the organization logo for branding
-
 description: To brand AEM Forms workspace provide the logo of your organization by customizing the default logo.
-
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 exl-id: 49572f2a-f3ec-4ee6-98b8-2563de1cf96c
 ---
 # Changing the organization logo for branding {#changing-the-organization-logo-for-branding}
@@ -23,7 +19,9 @@ The organization logo is displayed at the upper-left corner of AEM Forms workspa
 
    >[!NOTE]
    >
-   >For more information about WebDAV access, see [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
+   >For more information, see [WebDAV Access](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+
+   [WebDAV Access](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)
 
 1. Reference the new logo image in style sheet at /apps/ws/css/newStyle.css by adding following style.
 

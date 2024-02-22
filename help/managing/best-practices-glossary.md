@@ -1123,11 +1123,11 @@ A clear process for the customer sign-off of specifications should be put in pla
 
 ### Staff Selected for AEM Administrator Training {#staff-selected-for-aem-administrator-training}
 
-Internal staff that needs training to administer the solution.
+Internal staff that needs training so they can administer the solution.
 
 ### Staff Selected for Author and End User Training {#staff-selected-for-author-and-end-user-training}
 
-Internal staff that needs training to author on the solution.
+Internal staff that needs training so they can author on the solution.
 
 ### Stakeholders {#stakeholders}
 
