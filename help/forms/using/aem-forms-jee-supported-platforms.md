@@ -487,7 +487,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
 >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019.
->- If the Microsoft® Office installation becomes deactivated or unlicensed due to any reasons, such as a VL_KMS being unable to establish communication for a period, conversions may fail until the installation is reactivated or relicensed.
+>- If a Microsoft® Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 
 ### Exceptions to accessibility support {#exceptions-to-accessibility-support}
 
