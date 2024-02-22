@@ -498,14 +498,14 @@ An XCI file helps you set various properties of a document. <!-- Forms as a Clou
 
   1. Add the custom XCI file to your development project.
   1. Specify the following inline property: <!--[inline property](/help/implementing/deploying/configuring-osgi.md)
-  
+
             ```JSON
               {
               "xciFilePath": "[path of XCI file]"
               }
-              ```
+            ```
 
-              For example,
+            For example,
 
             ```JSON
               {
