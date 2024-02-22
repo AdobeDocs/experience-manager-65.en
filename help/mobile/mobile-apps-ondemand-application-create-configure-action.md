@@ -1,6 +1,6 @@
 ---
 title: Application Create and Configuration Actions
-description: Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content. Follow this page to learn more.
+description: Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content. Follow this page if you want to learn more.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -15,7 +15,7 @@ exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 
 ## Creating an On-Demand Application {#creating-an-on-demand-application}
 
-Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content, and is often performed at the AEM Administrator level. It represents a content shell, viewable on mobile devices, ready to display author created content such as articles, images, collections, and so on.
+Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content, and is often performed at the AEM Administrator level. It represents a content shell, viewable on mobile devices, ready to display author-created content such as articles, images, and collections.
 
 The details of your app can be viewed in the Dashboard or AEM Mobile Control Center.
 
@@ -44,7 +44,7 @@ The details of your app can be viewed in the Dashboard or AEM Mobile Control Cen
 
 ## Using App Templates {#using-app-templates}
 
-App templates provide an easy way to use existing designs created by devlopers, used for the creation of new apps within AEM.
+App templates provide an easy way to use existing designs created by developers, used for the creation of new apps within AEM.
 
 What is an app template? Think of it as a collection of page templates and components that represent a baseline or foundation of an app.
 When creating an app based on the template of another app, you get an app that has a starting point representative of the app in which it was created from.
@@ -61,7 +61,7 @@ See [Associating your app to the Cloud Configuration](/help/mobile/mobile-on-dem
 
 Once you are familiar with creating an on-demand application and thus associating that app to a cloud configuration, see [Content Management Actions](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Content Management Actions** involes creation and management of following content:
+**Content Management Actions** involves creation and management of following content:
 
 * [Managing Articles](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Managing Banners](/help/mobile/mobile-on-demand-managing-banners.md)
