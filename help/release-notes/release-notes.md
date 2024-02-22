@@ -62,7 +62,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Nested configuration folders were no longer supported and content fragment model folders were no longer visible after upgrading to AEM 6.5.18 or to AEM 6.5.19. (SITES-18110) MAJOR
+* Nested configuration folders were no longer supported and content fragment model folders were no longer visible after upgrading to AEM 6.5.18 or to AEM 6.5.19. (SITES-18110)
 * Some subfolders are not able to pick from inherited content fragment models. It must support folders without having a `jcr:content` property, even if the DAM folders created by way of the user interface have such a node. (SITES-17943)
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6520}
@@ -151,13 +151,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * text -->
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
-
-* text
-
-<!-- ### Foundation{#foundation-6520}
-
-* text -->
+### Foundation {#foundation-6520}
 
 #### Communities {#communities-6520}
 
@@ -176,17 +170,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * Aria-label "close" is not localized in **[!UICONTROL Assets]** > **[!UICONTROL Files]**, select a folder, then on the toolbar, select **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > member name. (NPR-41705)
 * There is a truncated tooltip for the **[!UICONTROL Key Store Password]** field on the SSL Setup page for locales ENG, FRA, KOR, DEU, and PTB. (NPR-41367)
 
-<!-- #### Oak{#oak-6520}
-
-* text -->
-
 #### Platform{#foundation-platform-6520}
 
 * Issue with integrating Campaign with AEM caused by the /api servlet not returning the correct scheme in the href json. The reason was because AEM was not receiving the X-Forward-Proto header which forced the request to respond with an HTTP scheme instead of HTTPS. As such, the ability to toggle scheme selection based on an OSGI configuration should be added. (GRANITE-48454)
-
-<!-- #### Replication{#foundation-replication-6520}
-
-* text -->
 
 #### Sling{#foundation-sling-6520}
 
