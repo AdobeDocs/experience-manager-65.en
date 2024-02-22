@@ -498,21 +498,6 @@ An XCI file helps you set various properties of a document. <!-- Forms as a Clou
 
   1. Add the custom XCI file to your development project.
   1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
-
-          
-            JSON
-              {
-              "xciFilePath": "[path of XCI file]"
-              }
-
-
-            For example,
-
-            JSON
-              {
-              "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
-              }
-
   1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
   
 -->
