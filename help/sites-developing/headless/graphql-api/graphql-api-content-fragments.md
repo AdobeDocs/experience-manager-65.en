@@ -522,6 +522,53 @@ The following example demonstrates a full query that filters all persons that ha
 }
 ```
 
+When executing a GraphQL query using optional variables, if a specific value is **not** provided for the optional variable, then the variable will be ignored in the filter evaluation. This means, query results will contain all values, both `null` and not `null`, for the property related to the filter variable.
+
+>[!NOTE]
+>
+>If a `null` value is *explicitly* specified for such a variable, then the filter will match only `null` values for the corresponding property.
+
+For example, in the query below, where no value is specified for the property `lastName`:
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+All authors will be returned:
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
+    }
+  }
+}
+```
+
 While you can also filter on nested fields, it is not recommended, as it might lead to performance issues.
 
 For further examples, see:
