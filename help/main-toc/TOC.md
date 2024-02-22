@@ -13,6 +13,7 @@ user-guide-title: AEM 6.5
 + Release Notes {#release-notes}
   + [Release notes](/help/release-notes/release-notes.md)
   + Previous release notes {#service-pack}
+    + [6.5.19](/help/release-notes/previous/6-5-19.md)
     + [6.5.18](/help/release-notes/previous/6-5-18.md)
     + [6.5.17](/help/release-notes/previous/6-5-17.md)
     + [6.5.16](/help/release-notes/previous/6-5-16.md)
@@ -35,6 +36,7 @@ user-guide-title: AEM 6.5
   + [AEM Forms service pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
   + [AEM Forms JEE patch installer](/help/release-notes/jee-patch-installer-65.md)
   + [AEM Forms Service Pack Hotfix](/help/release-notes/aem-forms-hotfix.md)
+  + [Cumulative Key Features and Enhancements](/help/release-notes/cumulative-features-enhancements.md)
   + [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
   + [Touch UI feature status](/help/release-notes/touch-ui-features-status.md)
 + Security {#security}
