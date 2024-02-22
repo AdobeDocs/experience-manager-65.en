@@ -20,7 +20,7 @@ mini-toc-levels: 4
 | Version  | 6.5.20.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
 | Date     | Thursday, February 22, 2024 <!-- UPDATE FOR EACH NEW RELEASE -->              |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.20.0 {#what-is-included-in-aem-6520}
 
@@ -219,7 +219,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.20.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions. <!-- UPDATE FOR EACH NEW RELEASE -->
-* The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip).
+* The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip).
 * On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.20.0 on one of the Author instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -234,7 +234,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -265,7 +265,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.17 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-41292 for 6.5.19.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.18 or later (Use Web Console: `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Install Service Pack for [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
@@ -289,7 +289,7 @@ Failure to install this package may result in slow or failed GraphQL queries.
 
 ### UberJar{#uber-jar}
 
-The UberJar for [!DNL Experience Manager] 6.5.20.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.19/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+The UberJar for [!DNL Experience Manager] 6.5.20.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.20/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -480,8 +480,8 @@ To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.20.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [List of OSGi bundles included in Experience Manager 6.5.20.0](/help/release-notes/assets/65190_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.20.0](/help/release-notes/assets/65190_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.20.0](/help/release-notes/assets/65200_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.20.0](/help/release-notes/assets/65200_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
 
