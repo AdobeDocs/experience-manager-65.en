@@ -478,10 +478,10 @@ To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
-The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.20.0: <!-- UPDATE FOR EACH NEW RELEASE -->
+The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
 
-* [List of OSGi bundles included in Experience Manager 6.5.20.0](/help/release-notes/assets/65200_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.20.0](/help/release-notes/assets/65200_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.20.0](/help/release-notes/assets/65200-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.20.0](/help/release-notes/assets/65200-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
 
