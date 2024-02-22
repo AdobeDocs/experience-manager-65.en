@@ -3,7 +3,7 @@ title: Best practices for working with adaptive forms
 description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 ---
 # Best practices for working with adaptive forms {#best-practices-for-working-with-adaptive-forms}
@@ -366,6 +366,8 @@ The AEM Forms Rule Editor provides a visual interface for creating and managing 
 * <!-- When you need --> To integrate your forms with external data sources (FDM) or services, the Rule Editor can help define rules for fetching, displaying, or manipulating data during form interactions.
 * <!-- If you want -->To create dynamic and interactive forms that respond to user actions, the Rule Editor allows you to define rules that govern the behavior of form elements in real time.
 
+Rule Editor is available for both AEM Forms Foundation Components and Core Components.
+
 ### Code editor {#code-editor}  
 
 Code Editor is a tool within Adobe Experience Manager (AEM) Forms that allows you to write custom scripts and code for more complex and advanced functionality in your forms, here we discuss few use cases:
@@ -375,11 +377,11 @@ Code Editor is a tool within Adobe Experience Manager (AEM) Forms that allows yo
 * When you require highly customized user interfaces that go beyond the standard capabilities of AEM Forms components, the Code Editor allows you to implement custom styles, behaviors, or even create custom form components.
 * If your form involves asynchronous operations such as asynchronous data loading, you can use the Code Editor to manage these operations through custom asynchronous JavaScript code.
 
-It's important to note that using the Code Editor requires a good understanding of JavaScript and AEM Forms architecture. Additionally, when implementing custom code, ensure that you follow best practices, adhere to security guidelines, and thoroughly test your code to prevent potential issues in production environments.
+It's important to note that using the Code Editor requires a good understanding of JavaScript and AEM Forms architecture. Additionally, when implementing custom code, ensure that you follow best practices, adhere to security guidelines, and thoroughly test your code to prevent potential issues in production environments. You can implement a callback for FDM using code editor.
 
-Bonus: You can implement a callback for FDM using code editor.
+Code Editor is available for AEM Forms Foundation Component only. For Adaptive Form Core Components, you can use custom functions to create your own form rules, described in the next section.
 
-### Custom client libs {#custom-client-libs}
+### Custom Functions {#custom-client-libs}
 
 Using custom client libraries in AEM Forms (Adobe Experience Manager Forms) can be beneficial in various scenarios to enhance the functionality, styling, or behavior of your forms. Here are some situations where using custom client libraries might be appropriate:
 
@@ -389,5 +391,7 @@ Using custom client libraries in AEM Forms (Adobe Experience Manager Forms) can 
 * When you need to integrate additional JavaScript libraries or frameworks that are not included in the default AEM Forms setup. This might be necessary for features like enhanced date pickers, charts, or other interactive components.
 
 Before you decide to use custom client libraries, it's important to consider the maintenance overhead, potential conflicts with future updates, and adherence to best practices. Ensure that your customizations are well-documented and tested to avoid issues during upgrades or when collaborating with other developers.
+
+Custom Functions is available for both AEM Forms Foundation Components and Core Components.
 
 
