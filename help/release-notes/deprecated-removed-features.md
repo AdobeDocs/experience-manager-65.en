@@ -49,7 +49,8 @@ Customers are advised to review if they use the feature/capability in their curr
 |Developers|`Granite.Sling.js` client library. Adobe does not plan to further enhance the Granite.Sling.js client library that is shipped as part of the distribution (Quickstart). | Adobe recommends customers that are relying on the capability of the library to refactor their code to no longer use it.||
 |Developers|Using YUI to compress/minify JavaScript client libraries. Adobe does not plan to further update the YUI library. Up until AEM 6.4, YUI was default to minify JavaScript with the option to switch to Google Closure Compiler (GCC). Starting AEM 6.5, GCC is default.|Adobe recommends customers that upgrade to AEM 6.5 to switch to GCC for their implementation||
 |Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
-|Forms|AEM Forms integration with AEM Mobile is deprecated. | No Replacement is available. ||Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
+|Forms|AEM Forms integration with AEM Mobile is deprecated. | No Replacement is available. |
+|Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Developers|Lodash/underscore client library. Adobe does not plan to further maintain and update the Lodash/underscore client library that is shipped as part of the distribution (Quickstart). | Adobe recommends customers that still require Lodash/underscore for their code to add it into their project code base. ||
 
 ## Removed features {#removed-features}
