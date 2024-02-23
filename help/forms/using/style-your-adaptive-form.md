@@ -461,14 +461,21 @@ You can use various fonts to design an adaptive form. All the devices that the a
       ![embed code and URL](assets/font-add-url.png)
 
 1. Click **Done** to close the web project window.
-1. Create a folder structure in CRXDE, for example `/apps/[fontslibrary]/[customlibrary(clientlibrary)]/css`. 
-1. Navigate to css folder and create a file. For example, create a file as `fonts.css` and paste the embed code along with the URL.
+1. Log into your AEM instance and go to URL `http://server:port/crx/de/index.jsp#`
+1. Create a folder structure in CRXDE, for example `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`. 
+1. Go to the newly created `clientlibs` folder and add the `allowProxy` and `categories` properties.
+1. Navigate to `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` and create a css folder.
+1. Go to the created CSS folder and create a file. For example, create a file as `fonts.css` and paste the embed code along with the URL.
    ![Folder structure](/help/forms/using/assets/fonts-add-in-crxde.png)
 1. Save the changes.
 
-Configure your theme to use the [!DNL Adobe Fonts] configuration.
+>[!NOTE]
+>
+> To use the added custom fonts in an Adaptive Form, ensure that the client library name in the **[!UICONTROL Client Library Category]** aligns with the name specified in the categories option of the clientlib folder.
 
-1. To create a API Token, go to **login** > **API Token** > **Make me a new API token**
+### Create Adobe Fonts Configuration
+
+1. To create a API Token, go to **login** > **API Token** > **Make me a new API token**.
 
    ![API token](/help/forms/using/assets/fonts-api-token.png)
 
@@ -481,6 +488,8 @@ Configure your theme to use the [!DNL Adobe Fonts] configuration.
 
 1. Spceify the name and paste the API token in the **[!UICONTROL Kit ID]** textbox.
 1. Click **Create**.
+
+
 
 The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
 
