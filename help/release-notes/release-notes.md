@@ -54,7 +54,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### Admin User Interface{#sites-adminui-6520}
 
-* The `Workflow Title` field is marked with `*` as required, but there is no validation. (SITES-16491) NORMAL
+* The `Workflow Title` field is marked with `*` as required, but there is no validation. (SITES-16491)
 
 <!--#### Classic UI{#sites-classicui-6520}
 
@@ -62,13 +62,13 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Nested configuration folders were no longer supported and content fragment model folders were no longer visible after upgrading to AEM 6.5.18 or to AEM 6.5.19. (SITES-18110) MAJOR
-* Some subfolders are not able to pick from inherited content fragment models. It must support folders without having a `jcr:content` property, even if the DAM folders created by way of the user interface have such a node. (SITES-17943) NORMAL
+* Nested configuration folders were no longer supported and content fragment model folders were no longer visible after upgrading to AEM 6.5.18 or to AEM 6.5.19. (SITES-18110)
+* Some subfolders are not able to pick from inherited content fragment models. It must support folders without having a `jcr:content` property, even if the DAM folders created by way of the user interface have such a node. (SITES-17943)
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6520}
 
 <!-- REMOVED AS PER EMAIL FROM SAMEER DHAWAN FEBRUARY 19, 2024 * When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL -->
-* When executing a GraphQL query to [filter results](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) using optional variables, if a specific value is **not** provided for the optional variable, then the variable is ignored in the filter evaluation. (SITES-17051) NORMAL
+* When executing a GraphQL query to [filter results](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) using optional variables, if a specific value is **not** provided for the optional variable, then the variable is ignored in the filter evaluation. (SITES-17051)
 
 <!--#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
 
@@ -76,24 +76,24 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments] - REST API{#sites-restapi-6520}
 
-* With the upgrade of the `org.json` library, there was a change in how decimal numbers were deserialized. Before they were converted "by default" into Doubles and now into BigDecimals. Instead, the metadata property values, stored by way of the REST API, should get converted to Double from BigDecimal. (SITES-16857) NORMAL
+* With the upgrade of the `org.json` library, there was a change in how decimal numbers were deserialized. Before they were converted "by default" into Doubles and now into BigDecimals. Instead, the metadata property values, stored by way of the REST API, should get converted to Double from BigDecimal. (SITES-16857)
 
 #### Core Backend{#sites-core-backend-6520}
 
-* When Quick Publish of a Content Fragment is used, it continues loading and does not get published. That is, Quick Publish is not working for Content Fragments after a service pack upgrade from AEM 6.5.7 to AEM 6.5.17. When the user tried managed publish, it worked. However, when they tried Quick Publish, it was not getting published. Specifically, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` caused the system to thrash. (SITES-17311) MAJOR
-* Content fragments are not serializable with Jackson exporter: The page load breaks when there is a content fragment referred to in a page (uses Jackson exporter code) and any tag added to a content fragment. (SITES-18096) NORMAL 
+* When Quick Publish of a Content Fragment is used, it continues loading and does not get published. That is, Quick Publish is not working for Content Fragments after a service pack upgrade from AEM 6.5.7 to AEM 6.5.17. When the user tried managed publish, it worked. However, when they tried Quick Publish, it was not getting published. Specifically, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` caused the system to thrash. (SITES-17311)
+* Content fragments are not serializable with Jackson exporter: The page load breaks when there is a content fragment referred to in a page (uses Jackson exporter code) and any tag added to a content fragment. (SITES-18096) 
 
 #### Core Components{#sites-core-components-6520}
 
-* Installing CIF Core Components package on AEM causes `:type` value of existing components to change. The change means that they no longer render on pages that they have been added to. (SITES-17601) MAJOR
+* Installing CIF Core Components package on AEM causes `:type` value of existing components to change. The change means that they no longer render on pages that they have been added to. (SITES-17601)
 
 #### Campaign integration{#sites-campaign-integration-6520}
 
-* AEM was using an allowlist&ndash;also known as a `whitelist`&ndash;due to a vulnerability report. The allowlist was preventing customers from using needed functionality. (SITES-16822) CRITICAL
+* AEM was using an allowlist&ndash;also known as a `whitelist`&ndash;due to a vulnerability report. The allowlist was preventing customers from using needed functionality. (SITES-16822)
 
 #### Experience Fragments{#sites-experiencefragments-6520}
 
-* MSM for Experience Fragments now supports bulk-rollout to Experience Fragment content structures including folders and subfolders. (SITES-16004) MAJOR
+* MSM for Experience Fragments now supports bulk-rollout to Experience Fragment content structures including folders and subfolders. (SITES-16004)
 
 <!--#### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
 
@@ -105,31 +105,31 @@ Some of the key features and enhancements in this release include the following:
 
 #### MSM - Live Copies{#sites-msm-live-copies-6520}
 
-* An "`Is not modifiable`" exception is thrown when rolling out component. Specifically, an `org.apache.sling.servlets.post.impl.operations.ModifyOperation` exception is experienced during response processing. (SITES-18809) MAJOR
-* Unable to roll out changes to specific Live Copies of Experience Fragments. (SITES-17930) MAJOR
-* When a user adds an annotation to a component on a blueprint page, and then rolls it out, the annotation count on Live Copy is displayed incorrectly. (SITES-17099) MAJOR
-* The MSM Rollout button from parent page to child page is broken in the touch graphical user interface; when selected the following error is displayed: `Uncaught TypeError: _g.shared is undefined`. (SITES-16991) MAJOR
+* An "`Is not modifiable`" exception is thrown when rolling out component. Specifically, an `org.apache.sling.servlets.post.impl.operations.ModifyOperation` exception is experienced during response processing. (SITES-18809)
+* Unable to roll out changes to specific Live Copies of Experience Fragments. (SITES-17930)
+* When a user adds an annotation to a component on a blueprint page, and then rolls it out, the annotation count on Live Copy is displayed incorrectly. (SITES-17099)
+* The MSM Rollout button from parent page to child page is broken in the touch graphical user interface; when selected the following error is displayed: `Uncaught TypeError: _g.shared is undefined`. (SITES-16991)
 
 #### Page Editor{#sites-pageeditor-6520}
 
-* Forms Theme Editor preview is broken. When Preview is selected, only a loading icon is visible. (SITES-17164) BLOCKER 
+* Forms Theme Editor preview is broken. When Preview is selected, only a loading icon is visible. (SITES-17164) 
 
 ### [!DNL Assets]{#assets-6520}
 
-* Unable to validate rule-based fields in metadata editor helper and displays an error message "Missing required fields". (ASSETS-31396) MAJOR
-* After a PDF is moved to another location, the **[!UICONTROL View Page]** option disappears. (ASSETS-30538) MAJOR
-* Unable to select an image with read permissions. (ASSETS-32199) NORMAL
-* Unable to change card size in view settings. (ASSETS-31667) NORMAL
-* Upload fails while uploading .oft file type. (ASSETS-30109) NORMAL
-* When you try to add a custom metadata field as an additional column to the report, the checkboxes are not selected. (ASSETS-31671) MINOR
-* Asset move operation does not work appropriately in Experience Manager Service Pack 16. (ASSETS-30598) MINOR
+* Unable to validate rule-based fields in metadata editor helper and displays an error message "Missing required fields". (ASSETS-31396)
+* After a PDF is moved to another location, the **[!UICONTROL View Page]** option disappears. (ASSETS-30538)
+* Unable to select an image with read permissions. (ASSETS-32199)
+* Unable to change card size in view settings. (ASSETS-31667)
+* Upload fails while uploading .oft file type. (ASSETS-30109)
+* When you try to add a custom metadata field as an additional column to the report, the checkboxes are not selected. (ASSETS-31671)
+* Asset move operation does not work appropriately in Experience Manager Service Pack 16. (ASSETS-30598)
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
-* When an asset is uploaded to AEM, the `Update_asset` workflow is triggered. However, the workflow never finishes. The workflow only completes up to the product upload step. The next step is the Scene7 batch upload, but that process is not getting pulled into AEM. (ASSETS-30443) CRITICAL
-* Need a better way to handle non-Dynamic Media videos gracefully in the Dynamic Media component. This issue was giving an exception instantiating `dynamicmedia_sly.js`. (ASSETS-31301) MAJOR
-* Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882) MAJOR
-* The `scene7SmartCropProcessingStatus` status corrected. Smart Crop video metadata used to show failure even when it was successful. (ASSETS-31255) MINOR
+* When an asset is uploaded to AEM, the `Update_asset` workflow is triggered. However, the workflow never finishes. The workflow only completes up to the product upload step. The next step is the Scene7 batch upload, but that process is not getting pulled into AEM. (ASSETS-30443)
+* Need a better way to handle non-Dynamic Media videos gracefully in the Dynamic Media component. This issue was giving an exception instantiating `dynamicmedia_sly.js`. (ASSETS-31301)
+* Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882)
+* The `scene7SmartCropProcessingStatus` status corrected. Smart Crop video metadata used to show failure even when it was successful. (ASSETS-31255)
 
 ### [!DNL Forms]{#forms-6520}
 
@@ -151,17 +151,11 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * text -->
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
-
-* text
-
-<!-- ### Foundation{#foundation-6520}
-
-* text -->
+### Foundation {#foundation-6520}
 
 #### Communities {#communities-6520}
 
-* User sync diagnostics fail after successfully configuring user sync. (NPR-41693) NORMAL
+* User sync diagnostics fail after successfully configuring user sync. (NPR-41693)
 
 <!-- #### Content distribution{#foundation-content-distribution-6520}
 
@@ -169,42 +163,34 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Integrations{#integrations-6520}
 
-* Remove all code and dependencies of Adobe Search&Promote from AEM 6.5. (NPR-40856) NORMAL
+* Remove all code and dependencies of Adobe Search&Promote from AEM 6.5. (NPR-40856)
 
 #### Localization{#localization-6520}
 
-* Aria-label "close" is not localized in **[!UICONTROL Assets]** > **[!UICONTROL Files]**, select a folder, then on the toolbar, select **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > member name. (NPR-41705) MAJOR
-* There is a truncated tooltip for the **[!UICONTROL Key Store Password]** field on the SSL Setup page for locales ENG, FRA, KOR, DEU, and PTB. (NPR-41367) NORMAL
-
-<!-- #### Oak{#oak-6520}
-
-* text -->
+* Aria-label "close" is not localized in **[!UICONTROL Assets]** > **[!UICONTROL Files]**, select a folder, then on the toolbar, select **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > member name. (NPR-41705)
+* There is a truncated tooltip for the **[!UICONTROL Key Store Password]** field on the SSL Setup page for locales ENG, FRA, KOR, DEU, and PTB. (NPR-41367)
 
 #### Platform{#foundation-platform-6520}
 
-* Issue with integrating Campaign with AEM caused by the /api servlet not returning the correct scheme in the href json. The reason was because AEM was not receiving the X-Forward-Proto header which forced the request to respond with an HTTP scheme instead of HTTPS. As such, the ability to toggle scheme selection based on an OSGI configuration should be added. (GRANITE-48454) MAJOR
-
-<!-- #### Replication{#foundation-replication-6520}
-
-* text -->
+* Issue with integrating Campaign with AEM caused by the /api servlet not returning the correct scheme in the href json. The reason was because AEM was not receiving the X-Forward-Proto header which forced the request to respond with an HTTP scheme instead of HTTPS. As such, the ability to toggle scheme selection based on an OSGI configuration should be added. (GRANITE-48454)
 
 #### Sling{#foundation-sling-6520}
 
-* The `org.apache.sling.resourceMerger` bundle 1.4.2 throws an exception from AEM 6.5, Service Pack 17 and later. The Sling resource merger 1.4.4 should be included in Service Pack 20. (NPR-41630) NORMAL
+* The `org.apache.sling.resourceMerger` bundle 1.4.2 throws an exception from AEM 6.5, Service Pack 17 and later. The Sling resource merger 1.4.4 should be included in Service Pack 20. (NPR-41630)
 
 #### Translation{#foundation-translation-6520}
 
-* Following deployment of AEM 6.5 Service Pack 18, there was an issue with the Filters tab in the Translation Rules Editor. When a Context is selected, clicking Edit > Save, a double-quote as HTML character appears the next time you open the same Context. Essentially, translation rules were not getting saved correctly. (NPR-41624) MAJOR
-* Issues related to Content Fragment translations, where the translated strings are being sent back from the translation provider to AEM, but they are stuck at the `/content/projects` level and not updating the Content Fragments. (NPR-41516) MAJOR
-* An error message is displayed when creating a language copy. It occurs on a page that has a content fragment referenced in a page property, using content fragment models. (NPR-41441) MAJOR
-* Links in Experience Fragments are not adjusted to the correct language during Language Copy. Instead, the Experience Fragment points to the primary locale. (NPR-41343) NORMAL
+* Following deployment of AEM 6.5 Service Pack 18, there was an issue with the Filters tab in the Translation Rules Editor. When a Context is selected, clicking Edit > Save, a double-quote as HTML character appears the next time you open the same Context. Essentially, translation rules were not getting saved correctly. (NPR-41624)
+* Issues related to Content Fragment translations, where the translated strings are being sent back from the translation provider to AEM, but they are stuck at the `/content/projects` level and not updating the Content Fragments. (NPR-41516)
+* An error message is displayed when creating a language copy. It occurs on a page that has a content fragment referenced in a page property, using content fragment models. (NPR-41441)
+* Links in Experience Fragments are not adjusted to the correct language during Language Copy. Instead, the Experience Fragment points to the primary locale. (NPR-41343)
 
 #### User interface{#foundation-ui-6520}
 
-* Console error is experienced after an upgrade to AEM 6.5, Service Pack 18. The error is in the `coralUI3.js` file and it occurs when you select any drop-down in AEM. Specifically, it happens with an `onOverlayToggle` event. The error `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` is displayed. (NPR-41467) MAJOR
-* In AEM, **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Tagging]** > **[!UICONTROL Create]** > **[!UICONTROL Create Tag]**, entering non-latin characters in the **Title** field causes the **Name** field to be filled with just the hyphen character ( `-` ). (NPR-41623) NORMAL
-* Copyright year is incorrect in the `About Adobe Experience Manager` dialog box. (NPR-41526) NORMAL
-* There are untranslated **[!UICONTROL Profile Properties]** strings when editing user settings. Occurs in all locales. (NPR-41365) NORMAL
+* Console error is experienced after an upgrade to AEM 6.5, Service Pack 18. The error is in the `coralUI3.js` file and it occurs when you select any drop-down in AEM. Specifically, it happens with an `onOverlayToggle` event. The error `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` is displayed. (NPR-41467)
+* In AEM, **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Tagging]** > **[!UICONTROL Create]** > **[!UICONTROL Create Tag]**, entering non-latin characters in the **Title** field causes the **Name** field to be filled with just the hyphen character ( `-` ). (NPR-41623)
+* Copyright year is incorrect in the `About Adobe Experience Manager` dialog box. (NPR-41526)
+* There are untranslated **[!UICONTROL Profile Properties]** strings when editing user settings. Occurs in all locales. (NPR-41365)
 
 <!-- #### WCM{#wcm-6520}
 
