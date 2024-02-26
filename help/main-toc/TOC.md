@@ -13,6 +13,7 @@ user-guide-title: AEM 6.5
 + Release Notes {#release-notes}
   + [Release notes](/help/release-notes/release-notes.md)
   + Previous release notes {#service-pack}
+    + [6.5.19](/help/release-notes/previous/6-5-19.md)
     + [6.5.18](/help/release-notes/previous/6-5-18.md)
     + [6.5.17](/help/release-notes/previous/6-5-17.md)
     + [6.5.16](/help/release-notes/previous/6-5-16.md)
@@ -35,6 +36,7 @@ user-guide-title: AEM 6.5
   + [AEM Forms service pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
   + [AEM Forms JEE patch installer](/help/release-notes/jee-patch-installer-65.md)
   + [AEM Forms Service Pack Hotfix](/help/release-notes/aem-forms-hotfix.md)
+  + [Cumulative Key Features and Enhancements](/help/release-notes/cumulative-features-enhancements.md)
   + [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
   + [Touch UI feature status](/help/release-notes/touch-ui-features-status.md)
 + Security {#security}
@@ -554,7 +556,7 @@ user-guide-title: AEM 6.5
     + Configure AEM Forms {#configure-aem-forms}
       + [Performance tuning of AEM Forms server](/help/forms/using/performance-tuning-aem-forms.md)
       + [Configure adaptive forms cache](/help/forms/using/configure-adaptive-forms-cache.md)
-      + [Configuring AEM DS settings](/help/forms/using/configuring-the-processing-server-url-.md)
+      + [Configuring AEM DS settings](/help/forms/using/configuring-the-processing-server-url.md)
       + [Configuring the synchronization scheduler](/help/forms/using/configure-synchronization-scheduler.md)
       + [Configuring the Connector for Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Connecting AEM Forms with Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
@@ -630,7 +632,7 @@ user-guide-title: AEM 6.5
     + [Inline styling of adaptive form components](/help/forms/using/inline-style-adaptive-forms.md)
     + [Introduction to multi-step form sequence](/help/forms/using/introduction-form-sequence.md)
     + [Layout capabilities of adaptive forms](/help/forms/using/layout-capabilities-adaptive-forms.md)
-    + [Placeholder text in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms-.md)
+    + [Placeholder text in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms.md)
     + [Previewing a form](/help/forms/using/previewing-forms.md)
     + [Reusing adaptive forms](/help/forms/using/reusing-adaptive-forms.md)
     + [Separator component in adaptive forms](/help/forms/using/separator-component-in-adaptive-forms.md)
