@@ -170,9 +170,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
 *	When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating a new user under default DOM fails with the error (FORMS-11857): 
-`com.adobe.idp.cx.a: error seeding random number generator`
+  `com.adobe.idp.cx.a: error seeding random number generator`
 
-*	When a user selects fonts in ADMINUI under the path Home > Services > PDF Generator > Adobe PDF Settings, the fonts do not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of **Always embed** or **Never embed**, It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
+*	When a user selects fonts in ADMINUI under the path `Home>Services>PDF Generator>Adobe PDF Settings`, the fonts do not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of **Always embed** or **Never embed**, It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
 
 * On AEM Forms Service Pack 6.5.18.0, the user is unable to create new security settings, it shows no error or server logs, but a pop-up error message is shown on the screen. (FORMS-12212)
 
