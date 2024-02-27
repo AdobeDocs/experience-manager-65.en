@@ -156,24 +156,23 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * When a user updates an existing option in a Radio button group, incorrect translation values are published. (FORMS-12575)
 * When a user adds characters to an Adaptive Form on an Android device, the user is allowed to type more than the defined maximum number of characters in the Text field on focus out, on Android devices. Although, it works when a user selects the HTML5 input type. (FORMS-12748)
 * Due to matching labels Arial labelledby and Arial label, the screen readers are not able to distinguish between these two. To resolve the issue – the label “aria-labelledby” is replaced with “aria-describedby” for the form fields. (FORMS-12436)
-* When an author uses the “Adaptive Forms - Embed (v2)" component to embed an Adaptive Form in their sites page and the embedded form contains a CAPTCHA component on it (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), the site page does not render when the user tries to view the Site Page using "View as Published" on the author instance and the error is shown as: (FORMS-11859)
-
-  `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
+* When an author uses the “Adaptive Forms - Embed (v2)" component to embed an Adaptive Form in their sites page and the embedded form contains a CAPTCHA component on it (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), the site page does not render when the user tries to view the Site Page using "View as Published" on the author instance and the error is shown as (FORMS-11859):
+`Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * When a user tries to select the date using the date picker component, the value is not updated and shows NULL. (FORMS-12742, FORMS-12736)
 
 * When a user upgrades to AEM Form Service Pack 6.5.19.0, after updating a new language to the existing dictionary it does not get merged with the “guideContainer” rows to add a new locale to a form. (FORMS-12947)
 
-* On AEM Forms Service Pack 6.5.19.0, the invoke webservice operation on Java 11 fails with the error (FORMS-12329)
+* On AEM Forms Service Pack 6.5.19.0, the invoke webservice operation on Java 11 fails with the error (FORMS-12329):
   `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
 
-* When a user invoke "receive" operation for "EmailService" on AEM Forms Service Pack 6.5.18.0, an exception is thrown: (FORMS-12050)
+* When a user invoke "receive" operation for "EmailService" on AEM Forms Service Pack 6.5.18.0, an exception is thrown (FORMS-12050): 
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
-*	When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating a new user under default DOM fails with the error: (FORMS-11857)
-  `com.adobe.idp.cx.a: error seeding random number generator`
+*	When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating a new user under default DOM fails with the error (FORMS-11857): 
+`com.adobe.idp.cx.a: error seeding random number generator`
 
-*	When a user selects fonts in ADMINUI under the path Home > Services > PDF Generator > Adobe PDF Settings, the fonts do not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of `Always embed` or `Never embed` It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
+*	When a user selects fonts in ADMINUI under the path Home > Services > PDF Generator > Adobe PDF Settings, the fonts do not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of **Always embed** or **Never embed**, It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
 
 * On AEM Forms Service Pack 6.5.18.0, the user is unable to create new security settings, it shows no error or server logs, but a pop-up error message is shown on the screen. (FORMS-12212)
 
