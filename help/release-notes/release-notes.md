@@ -40,7 +40,7 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Forms]
 
-* **Support for the Elliptic Curve Digital Signature Algorithm (ECDSA)**: AEM Forms has added support for the Elliptic Curve Digital Signature Algorithm (ECDSA), allowing users to seamlessly Sign, Certify, and Verify PDF documents with more security. AEM Forms now supports the following EC curve algorithms:
+* **Support for the Elliptic Curve Digital Signature Algorithm (ECDSA)**: AEM Forms has added support for the Elliptic Curve Digital Signature Algorithm (ECDSA) for **AEM Forms on the JEE and OSGi** stacks, allowing users to seamlessly Sign, Certify, and Verify PDF documents with more security. AEM Forms now supports the following EC curve algorithms:
 
   * ECDSA elliptic curve P256 with digest algorithm SHA256 
   * ECDSA elliptic curve P384 with digest algorithm SHA384 
@@ -170,10 +170,10 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * When a user invoke "receive" operation for "EmailService" on AEM Forms Service Pack 6.5.18.0, an exception is thrown: (FORMS-12050)
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
-*	When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating new user under default dom fails with the error: (FORMS-11857)
+*	When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating a new user under default DOM fails with the error: (FORMS-11857)
   `com.adobe.idp.cx.a: error seeding random number generator`
 
-*	When a user selects fonts in ADMINUI under the path Home > Services > PDF Generator > Adobe PDF Settings, the fonts do not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of “Always embed” or “Never embed” It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
+*	When a user selects fonts in ADMINUI under the path Home > Services > PDF Generator > Adobe PDF Settings, the fonts do not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of `Always embed` or `Never embed` It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
 
 * On AEM Forms Service Pack 6.5.18.0, the user is unable to create new security settings, it shows no error or server logs, but a pop-up error message is shown on the screen. (FORMS-12212)
 
@@ -197,11 +197,10 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
 * When a user selects “Microsoft SharePoint” while running the configuration manager on AEM Forms 6.5.19.1 with JBoss Turnkey setup, the Livecycle Jboss EAR installation fails, and it shows the following error: (FORMS-12463)
 
-`
-Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.
-`
+    ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
+
 
 * When a user upgrades to AEM Forms Service Pack 6.5.18.0, due to missing exception handling, XDPs passed through the output service with the tagged PDF option enabled fail. (LC-3921757)
 
@@ -357,14 +356,15 @@ Failure to install this package may result in slow or failed GraphQL queries.
 The UberJar for [!DNL Experience Manager] 6.5.20.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.20/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
-    ```shell
+
+  ```shell
     <dependency>
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
     <version>6.5.20</version>
     <scope>provided</scope>          
     </dependency>
-    ```
+  ```
 
 >[!NOTE]
 >
