@@ -40,15 +40,15 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Forms]
 
-**Support for the Elliptic Curve Digital Signature Algorithm (ECDSA)**: AEM Forms has added support for the Elliptic Curve Digital Signature Algorithm (ECDSA), allowing users to seamlessly Sign, Certify, and Verify PDF documents with more security. AEM Forms now supports the following EC curve algorithms:
+* **Support for the Elliptic Curve Digital Signature Algorithm (ECDSA)**: AEM Forms has added support for the Elliptic Curve Digital Signature Algorithm (ECDSA), allowing users to seamlessly Sign, Certify, and Verify PDF documents with more security. AEM Forms now supports the following EC curve algorithms:
 
-  *	ECDSA elliptic curve P256 with digest algorithm SHA256 
-  *	ECDSA elliptic curve P384 with digest algorithm SHA384 
-  *	ECDSA elliptic curve P512 with digest algorithm SHA512
+  * ECDSA elliptic curve P256 with digest algorithm SHA256 
+  * ECDSA elliptic curve P384 with digest algorithm SHA384 
+  * ECDSA elliptic curve P512 with digest algorithm SHA512
 
-**JEE transaction reporting feature**: Transaction reporting to capture and view the number of form submissions (Adaptive Forms, HTML5 Forms, and PDF Forms) and document renditions using various document services and interactive communications (Web and Print channels) is available for AEM Forms on the JEE stack.
+* **JEE transaction reporting feature**: Transaction reporting to capture and view the number of form submissions (Adaptive Forms, HTML5 Forms, and PDF Forms) and document renditions using various document services and interactive communications (Web and Print channels) is available for AEM Forms on the JEE stack.
 
-**Windows 11 support for Forms Designer**: With added support for AEM Forms Designer in Windows 11, users can now seamlessly install Forms Designer on Windows 11. Moreover, users can update their OS to Windows 11 without the need to reinstall or concern themselves with potential non-working issues of Forms Designer.
+* **Windows 11 support for Forms Designer**: With added support for AEM Forms Designer in Windows 11, users can now seamlessly install Forms Designer on Windows 11. Moreover, users can update their OS to Windows 11 without the need to reinstall or concern themselves with potential non-working issues of Forms Designer.
 
 <!-- ### [!DNL Forms]
 
@@ -151,20 +151,14 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * When a user tries to integrate AEM Forms to a mailing platform with an AEM published URL, the AEM forms do not add “method=post” while rendering the page even though POST is set in the submit action with the URL. It causes the mailing platform to not recognize this as a form. (FORMS-12614)
 * When a user selects the date field having a display pattern on AEM Form Service Pack 6.5.18.0., the user is not able to select the current date using the keyboard. (FORMS-12736)
-
 * On AEM Forms Service Pack 6.5.17.0 and Service Pack 6.5.18.0 when a user switches between months in the calendar widget, the date picker component shows an extra row.  (FORMS-11869)
-
 * When a user clicks an image using the “Take a photo” in the Attachment component on an iOS device, all images are added to the folder with the same name. (FORMS-12224)
-
 * When a user updates an existing option in a Radio button group, incorrect translation values are published. (FORMS-12575)
-
 * When a user adds characters to an Adaptive Form on an Android device, the user is allowed to type more than the defined maximum number of characters in the Text field on focus out, on Android devices. Although, it works when a user selects the HTML5 input type. (FORMS-12748)
-
 * Due to matching labels Arial labelledby and Arial label, the screen readers are not able to distinguish between these two. To resolve the issue – the label “aria-labelledby” is replaced with “aria-describedby” for the form fields. (FORMS-12436)
-
 * When an author uses the “Adaptive Forms - Embed (v2)" component to embed an Adaptive Form in their sites page and the embedded form contains a CAPTCHA component on it (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), the site page does not render when the user tries to view the Site Page using "View as Published" on the author instance and the error is shown as: (FORMS-11859)
 
-  "Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha"
+  `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * When a user tries to select the date using the date picker component, the value is not updated and shows NULL. (FORMS-12742, FORMS-12736)
 
@@ -173,11 +167,11 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * On AEM Forms Service Pack 6.5.19.0, the invoke webservice operation on Java 11 fails with the error (FORMS-12329)
   `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
 
-* On AEM Forms Service Pack 6.5.18.0, On invoking "receive" operation for "EmailService" an exception is thrown: (FORMS-12050)
+* When a user invoke "receive" operation for "EmailService" on AEM Forms Service Pack 6.5.18.0, an exception is thrown: (FORMS-12050)
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
 *	When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating new user under default dom fails with the error: (FORMS-11857)
- `com.adobe.idp.cx.a: error seeding random number generator`
+  `com.adobe.idp.cx.a: error seeding random number generator`
 
 *	When a user selects fonts in ADMINUI under the path Home > Services > PDF Generator > Adobe PDF Settings, the fonts do not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of “Always embed” or “Never embed” It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
 
@@ -187,8 +181,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * When a user converts PDF to PDF/A-2b and PDF/A-3B, it fails to convert, the error is shown as: (FORMS-12790)
 
-  ``` Java
-
+  ```
   OCCD contains Order key that does not reference all layers.
   * -> Optional content configuration dictionary has no Name entry.
   * -> Font not embedded (and text rendering mode not 3).
@@ -199,11 +192,16 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   Page: 1
   * -> PDF/A entry missing. 
   * -> PDF/A entry missing.
+  ```
 
 * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
-* (FORMS-12463)
+* When a user selects “Microsoft SharePoint” while running the configuration manager on AEM Forms 6.5.19.1 with JBoss Turnkey setup, the Livecycle Jboss EAR installation fails, and it shows the following error: (FORMS-12463)
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
+`
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.
+`
+
+#### [!DNL Forms Designer] {#forms-designer-6520}
 
 * When a user upgrades to AEM Forms Service Pack 6.5.18.0, due to missing exception handling, XDPs passed through the output service with the tagged PDF option enabled fail. (LC-3921757)
 
@@ -217,8 +215,8 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * When a user creates an XDP on AEM Forms Designer, On PDF output when a user navigates through the form tags, the background object is also tagged. (LC-3921687)
 
-<!-- #### [!DNL Adaptive Forms] -->
 
+<!-- #### [!DNL Adaptive Forms] -->
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
   * text
@@ -228,10 +226,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   * text
 * **Interactive Communications**
   * text -->
+<!--### Commerce{#commerce-6520} * text -->
 
-<!--### Commerce{#commerce-6520}
 
-* text -->
 
 ### Foundation {#foundation-6520}
 
@@ -360,19 +357,19 @@ Failure to install this package may result in slow or failed GraphQL queries.
 The UberJar for [!DNL Experience Manager] 6.5.20.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.20/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
-
-```shell
-<dependency>
-     <groupId>com.adobe.aem</groupId>
-     <artifactId>uber-jar</artifactId>
-     <version>6.5.20</version>
-     <scope>provided</scope>
-</dependency>
-```
+    ```shell
+    <dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.5.20</version>
+    <scope>provided</scope>          
+    </dependency>
+    ```
 
 >[!NOTE]
 >
 >UberJar and the other related artifacts are available on Maven Central Repository instead of Adobe Public Maven repository (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. So, there is no `classifier`, with `apis` as the value, for the `dependency` tag.
+
 
 ## Deprecated and removed features{#removed-deprecated-features}
 
@@ -474,7 +471,8 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 * Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the ```org.apache.servicemix.bundles.rhino``` bundle has a new hoisting behavior. Scripts that use the strict mode (```use strict;```) have to correctly declare their variables, otherwise they do not get run, instead throwing a runtime error.
  
-### Known issues for AEM Forms
+
+### Known issues for AEM Forms {#known-issues-aem-forms-6520}
 
 Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.
 
