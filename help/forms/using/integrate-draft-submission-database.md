@@ -310,6 +310,10 @@ Perform the following steps,on all the author and publish instances, to install 
 1. Click **[!UICONTROL Install or Update]**. Once complete, restart the server.
 1. (*Windows only*) Turn off the system firewall for your operating system.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ## Sample code for forms portal data and metadata service {#sample-code-for-forms-portal-data-and-metadata-service}
 
 The following zip contains `FormsPortalSampleDataServiceImpl` and `FormsPortalSampleMetadataServiceImpl` (implementation classes) for data and metadata service interfaces. Additionally, it contains all the classes required for compilation of above mentioned implementation classes.

@@ -42,3 +42,7 @@ User is not able to perform operations such as Send PDF via Email or Include Att
     * `sling.bootdelegation.activation=javax.activation.*`
 
 1. Restart **JBoss&reg;**.
+
+>[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.

@@ -228,6 +228,11 @@ To add external users to invite using administration console:
 
 1. Deploy the invite external users handler's JAR file using Workbench.
 1. Restart the application server.
+
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+    
 1. Log in to administration console.
 1. Click **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Invited **[!UICONTROL User Registration]**.
 1. Enable invited user registration by checking the **[!UICONTROL Enable invited user registration]** box. Under **[!UICONTROL Use Built-in registration system]**, click **[!UICONTROL No]**. Save your settings.

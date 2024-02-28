@@ -82,6 +82,10 @@ Before you restart the Forms Server after a recovery, do the following:
 
 If the main AEM forms database is moved or changed, review the install Guides relevant to your application server for information on updating the database connection information for the AEM forms data sources IDP_DS and EDC_DS.
 
+>[!NOTE]
+> 
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ### Changing the AEM forms hostname or IP address {#changing-the-aem-forms-hostname-or-ip-address}
 
 In a cluster, if you use TCP caching instead of UDP, you must update the cache locator configuration. See "Configuring the caching locators (caching using TCP only)" in the configuration guide relevant to your application server.
