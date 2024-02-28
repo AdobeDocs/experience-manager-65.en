@@ -18,6 +18,10 @@ There are two types of services that are part of AEM forms:
 
 AEM forms modules (for example, Forms, Rights Management, Output) operate as services. At times, you may need to stop or start the services for these AEM forms modules. For example, you must stop and then restart an AEM forms service after you change a setting for the service.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 1. In administration console click **Services** &gt; **Applications and Services** &gt; **Service Management**.
 1. On the Service Management page, select the check box beside the service to stop or start and click Stop or Start.
 

@@ -42,6 +42,10 @@ Ensure that you have [AEM Compatibility package](https://helpx.adobe.com/aem-for
 1. After the logs are stabilized, restart the server.
 1. Use the migration utility for making your assets compatible with 6.5.
 
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
    For more information, see [migration utility](../../forms/using/migration-utility.md).
 
 ## Assets made compatible with AEM Forms 6.5 by installing the Compatibility package {#assetsmadecompatible}
