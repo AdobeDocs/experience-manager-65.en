@@ -46,9 +46,11 @@ Some of the key features and enhancements in this release include the following:
   * ECDSA elliptic curve P384 with digest algorithm SHA384 
   * ECDSA elliptic curve P512 with digest algorithm SHA512
 
-* **JEE transaction reporting feature**: Transaction reporting to capture and view the number of form submissions (Adaptive Forms, HTML5 Forms, and PDF Forms) and document renditions using various document services and interactive communications (Web and Print channels) is available for AEM Forms on the JEE stack.
+* **JEE transaction reporting feature**: A notable feature for transaction reporting is added to the AEM Forms on JEE. This capability of AEM Forms facilitates transaction recording of your documents for – Conversions, Renditions, and Submissions, enhancing the overall efficiency and record-keeping aspects of your processes.
 
 * **Windows 11 support for Forms Designer**: With added support for AEM Forms Designer in Windows 11, users can now seamlessly install Forms Designer on Windows 11. Moreover, users can update their OS to Windows 11 without the need to reinstall or concern themselves with potential non-working issues of Forms Designer.
+
+* **Custom accessibility role "Caption" included in AEM Forms Designer**: Now user can add a custom "Caption" Tag while creating XDPs in AEM Forms Designer. It enables users to enhance accessibility by integrating personalized captioning elements into their document designs.
 
 <!-- ### [!DNL Forms]
 
@@ -145,13 +147,13 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Forms]{#forms-6520}
 
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of Forms fixes and enhancements is added to this section post the release.
+<!--Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of Forms fixes and enhancements is added to this section post the release.-->
 
 #### [!DNL Adaptive Forms]
 
 * When a user tries to integrate AEM Forms to a mailing platform with an AEM published URL, the AEM forms do not add “method=post” while rendering the page even though POST is set in the submit action with the URL. It causes the mailing platform to not recognize this as a form. (FORMS-12614)
 * When a user selects the date field having a display pattern on AEM Form Service Pack 6.5.18.0., the user is not able to select the current date using the keyboard. (FORMS-12736)
-* On AEM Forms Service Pack 6.5.17.0 and Service Pack 6.5.18.0 when a user switches between months in the calendar widget, the date picker component shows an extra row.  (FORMS-11869)
+* On AEM Forms Service Pack 6.5.17.0 and Service Pack 6.5.18.0, when a user switches between months in the calendar widget, the date picker component shows an extra row. (FORMS-11869)
 * When a user clicks an image using the “Take a photo” in the Attachment component on an iOS device, all images are added to the folder with the same name. (FORMS-12224)
 * When a user updates an existing option in a Radio button group, incorrect translation values are published. (FORMS-12575)
 * When a user adds characters to an Adaptive Form on an Android device, the user is allowed to type more than the defined maximum number of characters in the Text field on focus out, on Android devices. Although, it works when a user selects the HTML5 input type. (FORMS-12748)
@@ -172,28 +174,29 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating a new user under default DOM fails with the error (FORMS-11857): 
   `com.adobe.idp.cx.a: error seeding random number generator`
 
-* When a user selects fonts in ADMINUI under the path `Home>Services>PDF Generator>Adobe PDF Settings`, the fonts do not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of **Always embed** or **Never embed**, It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
+* When a user selects fonts in ADMINUI under the path `Home>Services>PDF Generator>Adobe PDF Settings`, it does not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of **Always embed** or **Never embed**, It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
 
 * On AEM Forms Service Pack 6.5.18.0, the user is unable to create new security settings, it shows no error or server logs, but a pop-up error message is shown on the screen. (FORMS-12212)
 
 * When a user on AEM Forms Service Pack 6.5.18.0 submits an Adaptive Form on the JEE workflow, the attachment in the Adaptive Form is not sent to the JEE process which causes application failure. (FORMS-12232, FORMS-12228)
 
-* When a user converts PDF to PDF/A-2b and PDF/A-3B, it fails to convert, the error is shown as: (FORMS-12790)
+* When a user converts PDF to PDF/A-2b or PDF/A-3B, it fails to convert, the error is shown as: (FORMS-12790)
 
   ```
   OCCD contains Order key that does not reference all layers.
-  * -> Optional content configuration dictionary has no Name entry.
-  * -> Font not embedded (and text rendering mode not 3).
+  -> Optional content configuration dictionary has no Name entry.
+  -> Font not embedded (and text rendering mode not 3).
   obj(65, 0)
   Page: 1
-  * -> Font not embedded (and text rendering mode not 3).
+  -> Font not embedded (and text rendering mode not 3).
   obj(67, 0)
   Page: 1
-  * -> PDF/A entry missing. 
-  * -> PDF/A entry missing.
+  -> PDF/A entry missing. 
+  -> PDF/A entry missing.
   ```
 
-* When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
+* On AEM Forms 6.5.18.0, When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
+
 * When a user selects “Microsoft SharePoint” while running the configuration manager on AEM Forms 6.5.19.1 with JBoss Turnkey setup, the Livecycle Jboss EAR installation fails, and it shows the following error: (FORMS-12463)
 
     ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
@@ -203,11 +206,11 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * When a user upgrades to AEM Forms Service Pack 6.5.18.0, due to missing exception handling, XDPs passed through the output service with the tagged PDF option enabled fail. (LC-3921757)
 
-* When a user generates an XDP in AEM Forms Designer, heading levels are tagged in the accessibility tree along with the graphical element, for example, a rectangle box. (LC-3921687)
+* When a user generates a PDF using AEM Forms Designer, heading levels are tagged in the accessibility tree along with the graphical element, for example, a rectangle box. (LC-3921687)
 
-* On AEM Forms Designer installed via Workbench, the version information is not explicit in the Control Panel/Programs/Programs and Features. (LC-3921976)
+* On AEM Forms Designer installed via Workbench, the version information is not explicit in the `Control Panel/Programs/Programs and Features`. (LC-3921976)
 
-* When a user creates an XDP on AEM Forms Designer, the user is not able to add the custom Caption Tag. (LC-3921246)
+<!--* When a user creates an XDP on AEM Forms Designer, the user is not able to add the custom Caption Tag. (LC-3921246)-->
 
 * When a user creates an XDP on AEM Forms Designer, On PDF output, the Button Form tag is not nested in the parent paragraph tag (p-tag). (LC-3921719)
 
@@ -473,8 +476,11 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6520}
 
-Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.
+There are no known issues identified for AEM Forms Service Pack 6.5.20.0 as of now. The known issues in AEM Forms Service Pack 6.5.19.0 are resolved.
 
+<!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
+
+<!--
 #### Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
 
 * If you are upgrading to AEM Service Pack 6.5.15.0 or higher, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment *before* you proceed with the installation of Service Pack 6.5.15.0 or higher.
@@ -492,6 +498,8 @@ Known issues in [!DNL Experience Manager] Forms are delivered through a separate
 1. Select **[!UICONTROL Install]** or **[!UICONTROL Update]**. 
 1. Wait for the application server to stabilize.
 1. Stop the application server.
+
+-->
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 

@@ -3,7 +3,7 @@ title: Configure OAuth2-based authentication for Microsoft&reg (Forms JEE OAuth)
 description: Configure OAuth2-based authentication for Microsoft&reg (Forms JEE OAuth); Office 365 mail server protocols
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 ---
-# Integrate AEM Forms with Microsoft&reg; Office 365 mail server protocols via Forms JEE OAuth{#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Integrate AEM Forms with Microsoft&reg; Office 365 mail server protocols {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 To allow organizations to adhere to secure email requirements, AEM Forms offer OAuth 2.0 support for integration with Microsoft&reg; Office 365 mail server protocols. You can use the Azure Active Directory (Azure AD) OAuth 2.0 authentication service, to connect with various protocols such as IMAP, POP, or SMTP and access email data for Office 365 users. Below are step-by-step instructions for configuring the Microsoft&reg; Office 365 mail server protocols to authenticate by way of the OAuth 2.0 service:
 
