@@ -531,12 +531,6 @@ For Windows x86:
 
 [Install and configure AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
 
-
-<!-->>[!NOTE]
->
-> * Install 64-bit version of Visual C++ 2019 Redistributable (x64). Ensure that the previously mentioned redistributable runtime packages are installed before starting the installation.
-> * Install 32-bit version of Visual C++ 2019 Redistributable (x64). Ensure that the previously mentioned redistributable runtime packages are installed before starting the installation.-->
-
 ### Requirements for AEM Assets XMP metadata write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP write-back is supported and enabled for the following platforms and file formats:
