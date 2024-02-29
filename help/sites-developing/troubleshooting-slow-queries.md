@@ -1,9 +1,6 @@
 ---
 title: Troubleshooting Slow Queries
-
 description: Learn how to troubleshoot slow queries in Adobe Experience Manager.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -33,7 +30,7 @@ The first two classifications of queries (index-less and poorly restricted) are 
 
 The act of inspecting each potential result is what is referred to as Traversing.
 
-Since each potential result must be inspected, the cost to determine the actual result set grows linearly with the number of potentials results.
+Since each potential result must be inspected, the cost to determine the actual result set grows linearly with the number of potential results.
 
 Adding query restrictions and tuning indexes allows the index data to be stored in an optimized format affording fast result retrieval and, reduces or eliminates the need for the linear inspection of potential result sets.
 
@@ -117,7 +114,7 @@ More query restrictions reduce the eligible result sets and further optimize the
 
 Similarly, without an extra index rule for the `cq:tags` property, even a fulltext query with a restriction on `cq:tags` would perform poorly as results from the index would return all fulltext matches. The restriction on cq:tags would be filtered after it.
 
-Another cause of post-index-filtering is Access Control Lists which often gets missed during development. Try to make sure that the query does not return paths that might be inaccessible to the user. Doing so can be done by better content structure along with providing relevant path restriction on the query.
+Another cause of post-index-filtering is Access Control Lists which often gets missed during development. Try to make sure that the query does not return paths that might be inaccessible to the user. Doing so can be done by better content structure along with providing relevant path restrictions on the query.
 
 A useful way to identify if the Lucene index is returning many results to return a small subset as query result, is to enable DEBUG logs for `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Doing so lets you see how many documents are being loaded from the index. Number of eventual results versus the number of loaded documents shouldn't be disproportionate. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
 
@@ -174,7 +171,7 @@ AEM supports the following query languages:
 * JCR-SQL2
 * XPath
 
-The following example uses Query Builder as its the most common query language used by AEM developers, however the same principles are applicable to JCR-SQL2 and XPath.
+The following example uses Query Builder because it is the most common query language used by AEM developers, however the same principles are applicable to JCR-SQL2 and XPath.
 
 1. Add a nodetype restriction so the query resolves to an existing Lucene Property Index.
 
@@ -464,7 +461,7 @@ Therefore, ensure that indexes satisfy queries, except if the combination of pat
 
   * Generate optimal Lucence Property Index from XPath or JCR-SQL2 query statements.
 
-* **[AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
+* **_AEM Chrome Plug-in_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
-  * Google Chrome web browser extension that exposes per-request log data, including executed queries and their query plans, in the browser's dev tools console.
-  * Requires [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) to be installed and enabled on AEM.
+  * The _AEM Chrome Plug-in_ is a Google Chrome web browser extension that exposes per-request log data, including run queries and their query plans, in the browser's dev tools console.
+  * Requires you to install and enable [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) on AEM.
