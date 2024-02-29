@@ -212,8 +212,6 @@ Some of the key features and enhancements in this release include the following:
 
 * When a user creates an XDP on AEM Forms Designer, On PDF output when a user navigates through the form tags, the background object is also tagged. (LC-3921687)
 
-
-<!-- #### [!DNL Adaptive Forms] -->
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
   * text
@@ -224,8 +222,6 @@ Some of the key features and enhancements in this release include the following:
 * **Interactive Communications**
   * text -->
 <!--### Commerce{#commerce-6520} * text -->
-
-
 
 ### Foundation {#foundation-6520}
 
