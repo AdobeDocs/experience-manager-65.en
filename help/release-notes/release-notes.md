@@ -40,17 +40,13 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Forms]
 
-* **Support for the Elliptic Curve Digital Signature Algorithm (ECDSA)**: AEM Forms has added support for the Elliptic Curve Digital Signature Algorithm (ECDSA) for **AEM Forms on the JEE and OSGi** stacks, allowing users to seamlessly Sign, Certify, and Verify PDF documents with more security. AEM Forms now supports the following EC curve algorithms:
-
-  * ECDSA elliptic curve P256 with digest algorithm SHA256 
-  * ECDSA elliptic curve P384 with digest algorithm SHA384 
-  * ECDSA elliptic curve P512 with digest algorithm SHA512
-
-* **JEE transaction reporting feature**: A notable feature for transaction reporting is added to the AEM Forms on JEE. This capability of AEM Forms facilitates transaction recording of your documents for – Conversions, Renditions, and Submissions, enhancing the overall efficiency and record-keeping aspects of your processes.
-
-* **Windows 11 support for Forms Designer**: With added support for AEM Forms Designer in Windows 11, users can now seamlessly install Forms Designer on Windows 11. Moreover, users can update their OS to Windows 11 without the need to reinstall or concern themselves with potential non-working issues of Forms Designer.
-
-* **Custom accessibility role "Caption" included in AEM Forms Designer**: Now user can add a custom "Caption" Tag while creating XDPs in AEM Forms Designer. It enables users to enhance accessibility by integrating personalized captioning elements into their document designs.
+* **Transaction Reporting in AEM Forms on JEE**: Transaction reporting capability has been introduced for AEM Forms on JEE, enabling comprehensive recording of document transactions such as Conversions, Renditions, and Submissions. This enhancement boosts efficiency and facilitates better record-keeping. The feature is disabled by default. You can enable it from Admin UI.
+* **Enhanced Security with ECDSA Support**: AEM Forms now offers robust support for the Elliptic Curve Digital Signature Algorithm (ECDSA) across both JEE and OSGi stacks. Users can now Sign, Certify, and Verify PDF documents with heightened security. Supported EC curve algorithms include:
+  * ECDSA elliptic curve P256 with SHA256 digest algorithm
+  * ECDSA elliptic curve P384 with SHA384 digest algorithm
+  * ECDSA elliptic curve P512 with SHA512 digest algorithm
+* **Seamless Compatibility with Windows 11 for Forms Designer**: AEM Forms Designer now supports Windows 11, ensuring smooth installation and operation. Users can confidently upgrade to Windows 11 without the hassle of reinstalling Forms Designer or worrying about compatibility issues, ensuring uninterrupted workflow.
+* **Enhanced Accessibility with Custom "Caption" Role in AEM Forms Designer**: AEM Forms Designer now includes a custom accessibility role called "Caption," empowering users to create XDPs with personalised captioning elements. This feature enhances accessibility by allowing users to integrate custom captions into their document designs, thereby improving inclusivity and user experience.
 
 <!-- ### [!DNL Forms]
 
@@ -145,7 +141,7 @@ Some of the key features and enhancements in this release include the following:
 * Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882)
 * The `scene7SmartCropProcessingStatus` status corrected. Smart Crop video metadata used to show failure even when it was successful. (ASSETS-31255)
 
-### [!DNL Forms]{#forms6520}
+### [!DNL Forms]{#forms-6520}
 
 <!--Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of Forms fixes and enhancements is added to this section post the release.-->
 
