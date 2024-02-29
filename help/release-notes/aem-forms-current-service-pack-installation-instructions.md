@@ -9,9 +9,9 @@ exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 
 | Product   | Adobe Experience Manager 6.5 Forms  |
 |---|---|
-| Version  |  6.5.19.0 (OSGi), 6.5.19.1 (JEE)|
+| Version  |  6.5.20.0|
 | Type  |  Service Pack release |
-| Date  |  08 December 2023 |
+| Date  |  29 February 2023 |
 | Download URL | [Latest AEM Forms Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -43,7 +43,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 ## Download and install Service Pack on an AEM Form on JEE environment {#download-and-install-for-jee-service-pack}
 
-![JEE Installation](/help/forms/using/assets/jeeinstallation.png)
+   <!--
+![JEE Installation](/help/forms/using/assets/jeeinstallation.png) -->
 
 +++1. Take backup of your existing environment
    
@@ -65,7 +66,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++ 3. Install Microsoft Visual C++ Redistributable packages
++++3. Install Microsoft Visual C++ Redistributable packages
 
 * Download and install the [64-bit version of Microsoft Visual C++ Redistributable packages for Visual Studio 2015, 2017, 2019, and 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) on the computer where AEM 6.5 Forms is installed.
 
@@ -75,7 +76,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++3. Install AEM Forms on JEE service pack:
++++4. Install AEM Forms on JEE service pack:
 
    1. Stop your application server.
    1. Extract the **AEM Forms on JEE Service Pack installer archive** to your hard drive: 
@@ -102,15 +103,15 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
    
          * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file in `[aem-forms root]\configurationManager\bin`. 
 
-         * Or deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace the **ConfigurationManager.lax** and **ConfigurationManager_IPV6.lax** with the latest [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
+         * Or deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace the **ConfigurationManager.lax** and **ConfigurationManager_IPV6.lax** with the latest [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files, Search, and replace **axis-1.4.1.1.jar** with **axis-1.4.1.2.jar** in these two files..
 
             >[!NOTE]
             >
             >* Updating or replacing the **ConfigurationManager.bat** file helps you to avoid updating the .lax files manually.
 
-   1. **[For Unix-based only]:** The **Start Configuration Manager** check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager instantly or to run **Configuration Manager** later, deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. You can start **Configuration Manager** later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
+   2. **[For Unix-based only]:** The **Start Configuration Manager** check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager instantly or to run **Configuration Manager** later, deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. You can start **Configuration Manager** later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
   
-   1. Depending on your application server, choose one of the following documents and follow the instructions in the *Configuring and Deploying AEM forms* section.
+   3. Depending on your application server, choose one of the following documents and follow the instructions in the *Configuring and Deploying AEM forms* section.
 
       * [Installing and Deploying AEM forms for JBoss&reg;](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
       * [Installing and Deploying AEM forms for WebSphere&reg;](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
@@ -127,7 +128,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++4. Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
++++5. Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
 
    >[!NOTE]
    >
@@ -149,7 +150,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++5. Install AEM Service Pack
++++6. Install AEM Service Pack
 
    1.  Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
    1.  Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
@@ -180,7 +181,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++6. Install AEM Experience Manager Forms add-on package
++++7. Install AEM Experience Manager Forms add-on package
       
    1. Ensure that you have installed the [!DNL Experience Manager] service pack.
    1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) for your operating system.
@@ -191,8 +192,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 ## Download and install Service Pack on an AEM Form on OSGi environment {#download-and-install-for-osgi-service-pack}
 
-![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
 
+   <!-- ![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
+-->
 
 +++1. Take backup of your existing environment
    

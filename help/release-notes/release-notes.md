@@ -145,7 +145,7 @@ Some of the key features and enhancements in this release include the following:
 * Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882)
 * The `scene7SmartCropProcessingStatus` status corrected. Smart Crop video metadata used to show failure even when it was successful. (ASSETS-31255)
 
-### [!DNL Forms]{#forms-6520}
+### [!DNL Forms]{#forms}
 
 <!--Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of Forms fixes and enhancements is added to this section post the release.-->
 
