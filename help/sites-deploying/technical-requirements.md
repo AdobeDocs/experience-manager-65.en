@@ -529,6 +529,8 @@ For Windows x86:
 * Microsoft Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime for 32-bit AEM Forms Designer
 * Microsoft Visual C++ 2019 (VC 14.28 or greater) 64-bit runtime for 64-bit AEM Forms Designer (For both OSGI and JEE stack)
 
+[Install and configure AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
+
 ### Requirements for AEM Assets XMP metadata write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP write-back is supported and enabled for the following platforms and file formats:
