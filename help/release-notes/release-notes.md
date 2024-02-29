@@ -476,7 +476,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6520}
 
-There are no known issues identified for AEM Forms Service Pack 6.5.20.0 as of now. The known issues in AEM Forms Service Pack 6.5.19.0 are resolved.
+* The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 
