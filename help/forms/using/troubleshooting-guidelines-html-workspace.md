@@ -30,6 +30,10 @@ While installling the package, if you encounter an error `javax.jcr.nodetype.Con
 1. Search and install the `adobe-lc-workspace-pkg-[version].zip` package.
 1. Restart the application server.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ## AEM Forms workspace&nbsp;logging {#aem-forms-workspace-nbsp-logging}
 
 You can generate logs at various levels to enable optimal troubleshooting of errors. For example, in a complex application, logging at the component level helps in debugging and troubleshooting specific components.

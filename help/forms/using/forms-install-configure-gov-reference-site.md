@@ -308,6 +308,10 @@ Once the cloud configuration is complete, you may want to test the form data mod
    >
    >It has been reported that an AEM Server restart was required for the Data Source to successfully bind to the FDM.
 
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 #### Testing the Forms Data Model (Derby) {#test-fdm-derby}
 
 Once the cloud configuration is complete, you may want to test the forms data model.

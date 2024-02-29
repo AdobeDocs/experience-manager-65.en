@@ -300,6 +300,10 @@ You can enable a non-administrator user to use the PDF Generator service. Normal
 1. Set value of the environment variable to TRUE.
 1. Restart the AEM Forms instance.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ### (Windows Only) Disable User Account Control (UAC) {#disable-user-account-control-uac}
 
 1. To access the System Configuration Utility, go to **[!UICONTROL Start &gt; Run]** and then enter **[!UICONTROL MSCONFIG]**.
