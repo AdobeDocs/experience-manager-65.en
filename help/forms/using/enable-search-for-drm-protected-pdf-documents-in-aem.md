@@ -83,3 +83,7 @@ You can use one of the following methods to establish the secure connection:
 1. Create a folder in AEM Digital Asset Manager and upload the policy-protected PDF documents to the newly created folder.
 
    Now, you can search the policy-protected documents using AEM search.
+
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.

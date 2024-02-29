@@ -613,7 +613,9 @@ You can use administration console to specify whether documents are secure when 
 
 >[!NOTE]
 >
->To configure AEM Forms to accept unsecure documents, select the Allow non-secured document upload from Flex applications option. Then restart an application or service to ensure that the setting takes effect.
+>* To configure AEM Forms to accept unsecure documents, select the Allow non-secured document upload from Flex applications option. Then restart an application or service to ensure that the setting takes effect.
+> * It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 
 ### Quick Start: Invoking a short-lived process by passing a secure document using Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

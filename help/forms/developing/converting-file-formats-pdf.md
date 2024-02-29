@@ -905,6 +905,10 @@ Create an environment variable that specifies the location of the native applica
 
 After creating the new environment variable, you must restart the server on which the Generate PDF service is deployed.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK server. Restarting the AEM SDK server using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 **Create a system variable in the Windows XP environment**
 
 1. Select **Control Panel &gt; System**.

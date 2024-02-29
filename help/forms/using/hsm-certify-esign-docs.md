@@ -46,6 +46,10 @@ By default, the DocAssurance service is not enabled. Perform the following steps
 1. Save and close the sling.properties file.
 1. Restart the AEM instance.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 <!--
 
 ## Set up certificates for Reader extensions {#set-up-certificates-for-reader-extensions}

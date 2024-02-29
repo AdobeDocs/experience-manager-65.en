@@ -460,6 +460,10 @@ You can enable a non-administrator user to use PDF Generator. Normally, only use
 
 1. Restart the AEM Forms instance.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ## Configuring AEM Forms on JEE for access beyond the enterprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
 After you successfully install AEM Forms on JEE, it is important to periodically maintain the security of your environment. This section describes the tasks that are recommended to maintain the security of your AEM Forms on JEE production server.

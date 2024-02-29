@@ -11,6 +11,10 @@ exl-id: e1519477-b5a8-4947-8597-26b945a3b819
 
 The Core Configurations page in administration console provides settings that can help improve system performance. After configuring or updating these settings, restart your application server.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 For information about enabling safe backup mode, see [Enabling and disabling safe backup mode](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
 
