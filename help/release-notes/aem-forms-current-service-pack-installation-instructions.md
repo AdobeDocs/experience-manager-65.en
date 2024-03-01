@@ -255,7 +255,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++4. Install Adobe Experience Manager Forms (AEM) add-on package
++++5. Install Adobe Experience Manager Forms (AEM) add-on package
       
    1. Ensure that you have installed the [!DNL Experience Manager] service pack.
    1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) for your operating system.
