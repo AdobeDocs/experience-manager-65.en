@@ -119,6 +119,10 @@ The `<locale>` will appear at `https://'[server]:[port]'/libs/cq/i18n/translator
 
 Restart the AEM server for the added locale to come into effect.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ## Sample libraries for adding support for Spanish {#sample-libraries-for-adding-support-for-spanish}
 
 Sample client libraries for adding support for Spanish

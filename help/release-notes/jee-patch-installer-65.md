@@ -5,6 +5,8 @@ description: Learn how to use AEM Forms JEE Patch Installer to fix issues in AEM
 content-type: reference
 
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
+hide: yes
+hidefromtoc: yes
 ---
 # AEM Forms JEE Patch Installer {#aem-forms-jee-patch-installer}
 
@@ -77,6 +79,10 @@ If you have SAML authentication configured and facing issues with large IDP meta
    `um.saml.enable.large.xml=true`
 1. Restart the server.
 1. Delete existing SAML auth providers and add them again for existing domains as described in SAML settings.
+
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
 ## Impacted Modules {#impacted-modules}
 

@@ -589,6 +589,10 @@ You can add the following configuration value in the cknfastrc file, which is lo
 
 After you add this configuration value to the cknfastrc file, the new credential can be used without restarting the J2EE application server.
 
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 **Signature is not trusted**
 
 When certifying and signing the same PDF document, if the certifying signature is not trusted, a yellow triangle appears against the first signature when opening the PDF document in Acrobat or Adobe Reader. The certifying signature must be trusted to avoid this situation.

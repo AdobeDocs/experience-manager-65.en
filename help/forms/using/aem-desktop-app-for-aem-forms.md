@@ -33,4 +33,8 @@ AEM desktop app uses WebDAV protocol on Microsoft&reg; Windows and SMB1 on macOS
 1. Restart the AEM Forms Server. After the restart, the AEM Forms Server is enabled to accept and share content with the AEM desktop app.
 1. Open the app and connect to the AEM Forms Server.
 
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
    On successful connection, the app populates the `content/dam` and `content/dam/formsanddocuments` folders. Along with moving files from above folders to local folders and conversely, you can use the app to move content between auto-populated folders.
