@@ -572,7 +572,7 @@ For additional requirements see:
 
 ### Designer {#designer}
 
-- Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, or Microsoft&reg; Windows&reg; 10
+- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10, or Windows® 11
 - 1 GHz or faster processor with support for PAE, NX, and SSE2.
 - 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
 - 16-GB disk space for 32-bit or 20-GB disk space for 64-bit OS
