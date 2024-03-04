@@ -13,6 +13,7 @@ user-guide-title: AEM 6.5
 + Release Notes {#release-notes}
   + [Release notes](/help/release-notes/release-notes.md)
   + Previous release notes {#service-pack}
+    + [6.5.19](/help/release-notes/previous/6-5-19.md)
     + [6.5.18](/help/release-notes/previous/6-5-18.md)
     + [6.5.17](/help/release-notes/previous/6-5-17.md)
     + [6.5.16](/help/release-notes/previous/6-5-16.md)
@@ -35,6 +36,7 @@ user-guide-title: AEM 6.5
   + [AEM Forms service pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
   + [AEM Forms JEE patch installer](/help/release-notes/jee-patch-installer-65.md)
   + [AEM Forms Service Pack Hotfix](/help/release-notes/aem-forms-hotfix.md)
+  + [Cumulative Key Features and Enhancements](/help/release-notes/cumulative-features-enhancements.md)
   + [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
   + [Touch UI feature status](/help/release-notes/touch-ui-features-status.md)
 + Security {#security}
@@ -1178,6 +1180,7 @@ user-guide-title: AEM 6.5
     + [Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
     + [Failure to backup database during upgrade to 6.5.12.0 for MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
     + [PDF generation fails to print a large number of PDFs on WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
+    + [How to properly restart AEM SDK](/help/forms/using/restart-aem-sdk.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
     + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)

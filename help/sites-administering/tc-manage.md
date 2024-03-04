@@ -414,9 +414,15 @@ If an already translated source page needs to be [renamed or moved](/help/sites-
 1. Select **Languages Copies**.
 1. Select the target languages you want to update.
 1. Select **Update language copies**.
+
+   ![updating-language-copies](assets/translation-move-to.png)
+   
 1. Click **Update**. A [Launch](/help/sites-authoring/launches-promoting.md) will be created.
 1. Navigate to the required language root and select it.
 1. Using the **References** panel, select **Launches**.
+
+   ![promote-launch-translation](assets/promote-launch-translation.png)
+   
 1. Click on the Launch that was created and click **Promote launch**.
 
 Now the source page was moved, and the associated language copy.

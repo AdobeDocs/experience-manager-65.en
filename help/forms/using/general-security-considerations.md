@@ -218,6 +218,10 @@ JBoss&reg; Application Server uses 8080 as the default HTTP port. JBoss&reg; als
 1. Save and close the file.
 1. Restart the JBoss&reg; application server.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ## AEM Forms on JEE security considerations {#aem-forms-on-jee-security-considerations}
 
 This section describes some AEM Forms on JEE-specific security issues that you should know about.
