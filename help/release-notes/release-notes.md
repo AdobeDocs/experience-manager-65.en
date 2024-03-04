@@ -459,9 +459,10 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 * After updating from AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0) to AEM 6.5 Forms Service Pack 20 (6.5.20.0), users encounter a JSP compilation error. They can't open or create adaptive forms and they're running into errors with other AEM interfaces like the page editor, AEM Forms UI, and AEM Workflow editor. The error message similar to the following is experienced:
 
-`Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper` 
+  `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper` 
 
-You can contact Adobe support for the resolution of the issue. 
+  Your can reach out to Adobe support for assistance in resolving the issue.
+
 
 * The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)
 
