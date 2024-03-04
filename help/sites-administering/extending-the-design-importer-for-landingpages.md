@@ -558,7 +558,7 @@ After the landing page has been imported, the files (images, css, js, and so on)
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Suppose that the landing page is created under the campaign We.Retail and the name of the landing page is **myBlankLandingPage** then the location were Zip files are stored is as follows:
+Suppose that the landing page is created under the campaign `We.Retail` and the name of the landing page is **myBlankLandingPage** then the location were Zip files are stored is as follows:
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 

@@ -94,6 +94,10 @@ To change the publishing schedule, perform the following steps:
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ### ProcessDataStorage service {#processdatastorage-service}
 
 The ProcessDataStorageProvider service receives process data from the ProcessDataPublisher service and saves the data to the Process Reporting repository.
@@ -273,3 +277,5 @@ For details on the data publishing service and how to schedule this service, see
 * **[!UICONTROL Sync]**: Synchronize the embedded Process Reporting repository with the AEM Forms database.
 * **[!UICONTROL Help]**: View the Help documentation on Process Reporting.
 * **[!UICONTROL Logout]**: Log out of Process Reporting
+
+

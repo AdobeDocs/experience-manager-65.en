@@ -1,13 +1,9 @@
 ---
 title: Customize images used in route actions
-
 description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
 ---
 # Customize images used in route actions {#customize-images-used-in-route-actions}
@@ -24,7 +20,7 @@ To customize the images used in route actions, perform the steps described in [G
 
    >[!NOTE]
    >
-   >For more information about WebDAV access, see [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
+   >For more information, see [WebDAV Access](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    >[!NOTE]
    >
