@@ -18,7 +18,7 @@ The sections below list the scenarios where customers must (or in some cases mus
 
 >[!NOTE]
 >
->The [**AEM** Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) (note the **AEM** in the name, which distinguishes it from the **Adobe** Developer Console) provides a utility to generate [JWT tokens](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) used for server-to-server APIs. These credentials are not deprecated and can continue to be used.
+>The [**AEM** Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#crxde-lite-and-developer-console) (note the **AEM** in the name, which distinguishes it from the **Adobe** Developer Console) provides a utility to generate [JWT tokens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) used for server-to-server APIs. These credentials are not deprecated and can continue to be used.
 
 
 ## Integrating AEM with Other Adobe Solutions {#integrating-aem-with-other-adobe-solutions}
