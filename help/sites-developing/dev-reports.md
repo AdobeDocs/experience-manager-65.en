@@ -116,7 +116,7 @@ The query:
 
 **The key point here is that each single node returned in the result set of the query is used to generate a single row on the report (so a 1:1 relationship).**
 
-The developer has to ensure that the query defined for a report returns a node set appropriate for that report. However, the node itself need not hold all the required information, this can also be derived from parent and/or child nodes. For example, the query used for the [User Report](/help/sites-administering/reporting.md#user-report) selects nodes based on the node type (in this case `rep:user`). However, most columns on this report do not take their data directly from these nodes, but from the child nodes `profile`.
+The developer has to ensure that the query defined for a report returns a node set appropriate for that report. However, the node itself does not need to hold all the required information, this can also be derived from parent and/or child nodes. For example, the query used for the [User Report](/help/sites-administering/reporting.md#user-report) selects nodes based on the node type (in this case `rep:user`). However, most columns on this report do not take their data directly from these nodes, but from the child nodes `profile`.
 
 ### Processing Queue {#processing-queue}
 
