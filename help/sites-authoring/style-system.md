@@ -27,7 +27,7 @@ The Style System provides a unified solution to both the template author's and c
 * Template authors can define style classes in the content policy of components.
 * Content authors can then select these classes from a drop-down when editing the component on a page to apply the corresponding styles.
 
-The style class is then inserted on the decoration wrapper element of the component so that the component developer doesn't need to be concerned with handling the styles beyond providing their CSS rules.
+The style class is then inserted on the decoration wrapper element of the component so that the component developer does not need to be concerned with handling the styles beyond providing their CSS rules.
 
 ## Overview {#overview}
 
@@ -124,7 +124,7 @@ With the component configured, the styles configured by the page authors will be
 
 ### Enable Styles Tab in Edit Dialog {#enable-styles-tab-edit}
 
-As of AEM version 6.5.3.0 an optional Styles tab in the Edit Dialog is now available. Unlike the Design Dialog tab, the tab in the Edit Dialog isn't essential for the Style System to function, but is an optional alternative interface for a content author to set styles.
+As of AEM version 6.5.3.0 an optional Styles tab in the Edit Dialog is now available. Unlike the Design Dialog tab, the tab in the Edit Dialog is not essential for the Style System to function, but is an optional alternative interface for a content author to set styles.
 
 The edit dialog tab can be included in a similar way to the design dialog tab:
 

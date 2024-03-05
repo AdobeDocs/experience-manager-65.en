@@ -36,7 +36,7 @@ The largest factor affecting memory usage is the amount of data on a form. Howev
 Additional factors one should consider while designing form template to help improve the memory usage:
 
 1. Avoid using Static Text to label a field. Instead, use captions in the Text Field.
-2. Don't overuse Rectangles, Lines, Objects, and Tables.
+2. Do not overuse Rectangles, Lines, Objects, and Tables.
 3. Avoid using RichText and Choice Subforms if possible.
 4. Avoid excessive use of Subforms and nested Subforms.
 
@@ -44,7 +44,7 @@ Additional factors one should consider while designing form template to help imp
 
 As we are limited by the max process memory and the memory consumed by the process does not only depend on the size of the data file. It is very closely linked to the form design, and to some extent, to the actual amount of data being merged in the form.
 
-If the form has many small nodes with small data, the process will consume more memory (and hence go out of memory faster), than a form that has less no of nodes (even) with big data.
+If the form has many small nodes with small data, the process consumes more memory (and hence go out of memory faster), than a form that has less number of nodes (even) with large data.
 
 Read the [Appendix below](#appendix) for more information, where test results are based on Print form (Non-Tagged PDF). Using tagged PDF process memory requirement increases. It also depends on the number of fields in the form - roughly the process memory requirement would be slightly more than 1.5 times of non-tagged PDF.
 

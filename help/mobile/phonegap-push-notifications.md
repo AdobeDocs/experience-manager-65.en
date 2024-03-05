@@ -352,7 +352,7 @@ Once the **Push Notifications** tile displays in your dashboard, use the create 
    >
    >The Link Button Text is limited to 20 characters.
    >
-   >If the end user doesn't have the latest version of the application and the linked path isn't available, confirming the action of the deep link will bring the user to the main page of the app.
+   >If the end user does not have the latest version of the application and the linked path is not available, confirming the action of the deep link will bring the user to the main page of the app.
 
 1. Enter the **Text Details** in the **Create Notification Wizard** and click **Create**.
 

@@ -394,7 +394,7 @@ The following table lists third-party libraries used within the Communiqué Serv
 
         To apply the Apache License to your work, attach the following
         boilerplate notice, with the fields enclosed by brackets "[]"
-        replaced with your own identifying information. (Don't include
+        replaced with your own identifying information. (Do not include
         the brackets!)  The text should be enclosed in the appropriate
         comment syntax for the file format. We also recommend that a
         file or class name and description of purpose be included on the
@@ -1125,7 +1125,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      A link or URL to the original W3C document.
 
      The pre-existing copyright notice of the original author, or if
-     it doesn't exist, a notice of the form: "Copyright &copy; [$date-of-document]
+     it does not exist, a notice of the form: "Copyright &copy; [$date-of-document]
      World Wide Web Consortium, (Massachusetts
      Institute of Technology, Institut National de Recherche en Informatique
      et en Automatique, Keio

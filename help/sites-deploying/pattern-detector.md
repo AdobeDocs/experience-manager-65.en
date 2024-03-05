@@ -204,7 +204,7 @@ With the output:
 
 ## Detection scope {#scope}
 
-Currently Pattern Detector allows to check:
+Currently Pattern Detector lets you check the following:
 
 * OSGi bundles exports and imports mismatch
 * Sling resource types and super types (with search-path content overlays) overusages

@@ -247,7 +247,7 @@ To localize an adaptive form that contains adaptive form fragments, you need to 
 
 >[!NOTE]
 >
->The localization keys in the fragment won't appear in the XLIFF file for an adaptive form.
+>The localization keys in the fragment do not appear in the XLIFF file for an adaptive form.
 
 ## Key points to remember when working with fragments {#key-points-to-remember-when-working-with-fragments}
 

@@ -12,7 +12,7 @@ When deciding what level of integration you would like to have between your exte
 The RemotePage component fetches all the necessary assets from the application's generated `asset-manifest.json` and uses this for rendering the SPA within AEM.
 
 * The RemotePage lets you inject the scripts and stylesheets of a SPA in the body of an AEM Page component.
-* The Virtual Frontend Components allows to mark sections as editable in AEM SPA Editor.
+* The Virtual Frontend Components lets you mark sections as editable in AEM SPA Editor.
 * Together, a SPA hosted on a different domain can be made editable in AEM.
 
 See the article [Editing an External SPA within AEM](spa-edit-external.md) for more details on editable, external SPAs in AEM.
@@ -33,7 +33,7 @@ See the article [Editing an External SPA within AEM](spa-edit-external.md) for m
 
 ## Limitations {#limitations}
 
-* The RemotePage component expects that the implementation provides an asset-manifest like the one [found here.](https://github.com/shellscape/webpack-manifest-plugin) The RemotePage component, however, has only been tested to work with the React framework (and Next.js via the remote-page-next component), and therefore doesn't support remotely loading applications from other frameworks, such as Angular.
+* The RemotePage component expects that the implementation provides an asset-manifest like the one [found here.](https://github.com/shellscape/webpack-manifest-plugin) The RemotePage component, however, has only been tested to work with the React framework (and Next.js via the remote-page-next component), and therefore does not support remotely loading applications from other frameworks, such as Angular.
 * Internal CSS defined in the application's root HTML file and inline CSS on the root DOM node will not be available when doing remote rendering in AEM.
 
 ## Technical Details {#technical-details}

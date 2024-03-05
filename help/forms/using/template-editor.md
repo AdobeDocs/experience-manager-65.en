@@ -97,7 +97,7 @@ Header and footer added in the Structure layer
 
 When you edit the template with structure layer selected, you can unlock the header and footer of the template. If a component is unlocked in the template, form authors can edit the component in the adaptive form that uses the template. Locking a component prevents form authors from editing it in the adaptive form. Lock option is available in the component toolbar.
 
-For example, you add the header component in the template. When you select the component, you can see a lock option in the component toolbar. Typically, header includes company name and logo, and you don't want form authors to change the logo and header in a template. In an adaptive form created using the template with the header component locked, form authors cannot change the logo and company name.
+For example, you add the header component in the template. When you select the component, you can see a lock option in the component toolbar. Typically, header includes company name and logo, and you do not want form authors to change the logo and header in a template. In an adaptive form created using the template with the header component locked, form authors cannot change the logo and company name.
 
 >[!NOTE]
 >

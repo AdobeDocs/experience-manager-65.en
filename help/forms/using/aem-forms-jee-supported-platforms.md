@@ -348,8 +348,8 @@ Consider the following exceptions while choosing a platform to set up your AEM F
 
 1. AEM Forms on JEE do not support IBM&reg; WebSphere&reg; with MySQL.
 1. AEM Forms on JEE do not support and JBoss&reg; on SUSE&reg; Linux&reg; Enterprise Server 12. Only IBM&reg; WebSphere&reg; is supported on SUSE&reg; Linux&reg; Enterprise Server 12.
-1. AEM Forms on JEE don't support any JDK with JBoss&reg; other than Oracle Java&trade; SE.
-1. AEM Forms on JEE don't support any JDK with IBM&reg; WebSphere&reg; other than IBM&reg; JDK.
+1. AEM Forms on JEE do not support any JDK with JBoss&reg; other than Oracle Java&trade; SE.
+1. AEM Forms on JEE do not support any JDK with IBM&reg; WebSphere&reg; other than IBM&reg; JDK.
 1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Forms on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
 1. AEM Forms on JEE do not support WebSphere&reg; application server on CentOS.
 1. AEM Forms on JEE do not support JBoss&reg; role-based access control (RBAC).
@@ -369,7 +369,7 @@ In addition, consider the following points while choosing software for Adobe AEM
 - AEM Forms on JEE support platforms as per the support provided by third-party vendors. Some combinations may not be allowed by third-party vendors. For example, many vendors have not certified their application servers with Oracle. As a result, AEM Forms on JEE also do not support these combinations. To ensure that you choose the supported software versions, check the support matrix for the third-party vendors as well.
 - AEM Forms on JEE do not support TarMK Cold Standby.
 - AEM Forms on JEE do not support vertical clustering.
-- AEM Forms on JEE don't support MySQL database on a clustered environment.
+- AEM Forms on JEE do not support MySQL database on a clustered environment.
 - For the list of removed or updated platforms, see [AEM 6.5 Forms New Feature Summary](../../forms/using/whats-new.md) document.
 
 ### LDAP servers (optional) {#ldap-servers-optional}

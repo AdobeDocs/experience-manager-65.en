@@ -47,11 +47,11 @@ The Robustness Principle states that you should be conservative in what you send
 
 ### Implement spikes in their own modules {#implement-spikes-in-their-own-modules}
 
-Spikes and test code are a part of any Agile software implementation. However, you want to make sure that they don't make their way into the production code base without the appropriate level of oversight. As a result, it is recommended that spikes are created in their own module.
+Spikes and test code are a part of any Agile software implementation. However, you want to make sure that they do not make their way into the production code base without the appropriate level of oversight. As a result, it is recommended that spikes are created in their own module.
 
 ### Implement data migration scripts in their own module {#implement-data-migration-scripts-in-their-own-module}
 
-Data migration scripts, while production code, are only run once at the initial launch of a site. Therefore, when the site is live, the scripts become dead code. To ensure that you don't build implementation code that depends on the migration scripts, they should be implemented in their own module. Doing so lets us remove and retire this code immediately after launch, eliminating dead code from the system.
+Data migration scripts, while production code, are only run once at the initial launch of a site. Therefore, when the site is live, the scripts become dead code. To ensure that you do not build implementation code that depends on the migration scripts, they should be implemented in their own module. Doing so lets us remove and retire this code immediately after launch, eliminating dead code from the system.
 
 ### Follow published Maven conventions in POM files {#follow-published-maven-conventions-in-pom-files}
 

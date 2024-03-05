@@ -109,7 +109,7 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 
 Support for localization, sorting, and using configuration properties on the user interface (Search & Lister Only):
 
-1. **Localization Support**: To localize any static text use the attribute `${localize-YOUR_TEXT}` and make the localized value available, if doesn't exist already.
+1. **Localization Support**: To localize any static text use the attribute `${localize-YOUR_TEXT}` and make the localized value available, if does not exist already.
    *In the example discussed, the attributes `${localize-Apply}` and `${localize-Download}` are used to localize the Apply and Download text.*
 
 1. **Support for Sorting**: Click the HTML element to sort search results. To implement sorting in a table layout, add the "data-sortKey" attribute on the particular table header. In addition, add its value as the metadata for which you want to sort.
@@ -163,7 +163,7 @@ Support for localization, sorting, and using configuration properties on the use
 ## Tips, tricks, and known issues {#tips-tricks-and-known-issues}
 
 1. Do not use single quote (') in any custom template.
-1. For custom metadata, store this property on the **jcr:content/metadata** node only. If you store it at any other place, Forms Portal can't display the metadata.
+1. For custom metadata, store this property on the **jcr:content/metadata** node only. If you store it at any other place, Forms Portal cannot display the metadata.
 1. Ensure that the name of any custom metadata or existing metadata does not include a colon ( : ). If it does, you cannot display it on the user interface.
 1. **data-repeatable** does not have any significance for a **Link** component. Adobe recommends that you avoid using this property in the template for a Link component.
 

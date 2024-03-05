@@ -1,14 +1,10 @@
 ---
 title: Data Store Garbage Collection
-
 description: Learn how to configure Data Store Garbage Collection to free up disk space.
-
-
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 ---
@@ -159,7 +155,7 @@ The built-in Weekly Maintenance Window, available via the [Operations Dashboard]
 >
 >The reason not to run it concurrently is so that old (and unused) data store files are also backed up, so that if it is required to roll back to an old revision, the binaries are still there in the backup.
 
-If you don't wish to run data store garbage collection with the Weekly Maintenance Window in the Operations Dashboard, it can also be automated using the wget or curl HTTP clients. The following is an example of how to automate backup by using curl:
+If you do not want to run data store garbage collection with the Weekly Maintenance Window in the Operations Dashboard, it can also be automated using the wget or curl HTTP clients. The following is an example of how to automate backup by using curl:
 
 >[!CAUTION]
 >

@@ -277,7 +277,7 @@ Perform the following steps to configure a document of record for adaptive forms
 
 1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options:
 
-   **None** Select this option if you don't want to configure document of record for the form.
+   **None** Select this option if you do not want to configure document of record for the form.
 
    **Associate Form Template as Document of Record Template** Select this option if you have an XDP file that you want to use as a template for the document of record. On selecting this option, all XDP files available in AEM Forms repository are displayed. Select the appropriate file.
 

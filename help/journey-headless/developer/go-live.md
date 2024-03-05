@@ -143,7 +143,7 @@ If you are an AMS customer using Cloud Manager, after you make sure that everyth
 
 After the updates have been uploaded to Cloud Manager, deploy them to AEM using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
-<!-- Can't find a parallel link -->
+<!-- Cannot find a parallel link -->
 <!--
 You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->

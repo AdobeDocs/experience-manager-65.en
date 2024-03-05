@@ -515,7 +515,7 @@ To add a property to an asset type, complete the following steps:
 
 ### Display custom properties on the Asset Creation Page {#display-custom-properties-on-the-asset-creation-page}
 
-By default, the custom properties added to new tabs are visible only on the properties page and not on the asset creation page, as the asset creation page doesn't have tab layout. To display the custom properties on the asset creation page along with other properties, you need to do the following:
+By default, the custom properties added to new tabs are visible only on the properties page and not on the asset creation page, as the asset creation page does not have tab layout. To display the custom properties on the asset creation page along with other properties, you need to do the following:
 
 1. Right-click the items folder at the following path and select **Overlay Node**:
 
@@ -756,7 +756,7 @@ When you add the sling:orderBefore property to specify the column location, then
 
 ## Enable search for custom properties {#enable-search-for-custom-properties}
 
-By default, full text search doesn't include custom properties that you add to the UI using CRX/DE.
+By default, full text search does not include custom properties that you add to the UI using CRX/DE.
 
 To include the custom properties in search, you need to allow indexing of custom properties.
 

@@ -302,7 +302,7 @@ A typical Disable rule is structured as follows:
 
 ### Validate {#validate}
 
-The **Validate** rule type validates the value in a field using an expression. For example, you can write an expression to check that the text box for specifying name doesn't contain special characters or numbers.
+The **Validate** rule type validates the value in a field using an expression. For example, you can write an expression to check that the text box for specifying name does not contain special characters or numbers.
 
 A typical Validate rule is structured as follows:
 
@@ -314,7 +314,7 @@ A typical Validate rule is structured as follows:
 
 >[!NOTE]
 >
->If the specified value doesn't comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
+>If the specified value does not comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
 
 ![script-validation](assets/script-validation.png)
 
@@ -402,7 +402,7 @@ AEM Forms tracks the rule editor mode you used last to write a rule. When you la
 
 ### F. Done and cancel buttons {#f-done-and-cancel-buttons}
 
-The **[!UICONTROL Done]** button is used to save a rule. You can save an incomplete rule. However, incomplete are invalid and don't execute. Saved rules on a form object are listed when you launch the rule editor next time from the same form object. You can manage existing rules in that view. For more information, see [Manage rules](#manage-rules).
+The **[!UICONTROL Done]** button is used to save a rule. You can save an incomplete rule. However, incomplete are invalid and do not run. Saved rules on a form object are listed when you launch the rule editor next time from the same form object. You can manage existing rules in that view. For more information, see [Manage rules](#manage-rules).
 
 The **[!UICONTROL Cancel]** button discards any changes you made to a rule and closes the rule editor.
 

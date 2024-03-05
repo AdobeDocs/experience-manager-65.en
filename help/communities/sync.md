@@ -269,7 +269,7 @@ On each AEM publish instance:
 
 AEM author instance uses Sling ID to identify from where the data is coming and to which publishers it needs to (or need not) send the package back to.
 
-Make sure all the publishers in a publish farm have a unique Sling ID. If the Sling ID is the same for multiple publish instances in a publish farm, then user synchronization fails. As the author won't know where to fetch the package from and where to install the package.
+Make sure all the publishers in a publish farm have a unique Sling ID. If the Sling ID is the same for multiple publish instances in a publish farm, then user synchronization fails. As the author does not know where to fetch the package from and where to install the package.
 
 To ensure unique Sling ID of publishers in the publish farm, on each Publish instance:
 
