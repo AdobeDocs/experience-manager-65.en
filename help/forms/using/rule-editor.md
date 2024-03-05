@@ -734,7 +734,7 @@ You can perform the following actions on rules:
 
 * **Expand/Collapse**: The Content column in the rule list displays the rule content. If the entire rule content is not visible in the default view, select ![expand-rule-content](assets/expand-rule-content.png) to expand it.
 
-* **Reorder**: Any new rule you create is stacked at the bottom of the rule list. The rules are executed from top to bottom. The rule at the top executes first followed by other rules of the same type. For example, if you have When, Show, Enable, and When rules at first, second, third, and fourth positions from top, respectively, the When rule at the top gets executed first followed by the When rule at the fourth position. Then, the Show and Enable rules will be executed.
+* **Reorder**: Any new rule you create is stacked at the bottom of the rule list. The rules are executed from top to bottom. The rule at the top runs first followed by other rules of the same type. For example, if you have When, Show, Enable, and When rules at the first, second, third, and fourth positions from top, respectively, the When rule at the top gets executed first followed by the When rule at the fourth position. Then, the Show and Enable rules will be executed.
   You can change the order of a rule by tapping ![sort-rules](assets/sort-rules.png) against it or drag-drop it to the desired order in the list.
 
 * **Edit**: To edit a rule, select the check box next to the rule title. Additional options to edit and delete the rule appear. Select **Edit** to open the selected rule in the rule editor in visual or code editor mode depending the mode used to create the rule.

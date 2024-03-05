@@ -324,7 +324,7 @@ JSON objects used in AEM Forms workspace are described below.
   <tr>
    <td>availableCommands.otherCommands<br /> </td>
    <td>T</td>
-   <td>It contains commands like lock, unlock, abandon, return, claim, and so on as available.<br /> </td>
+   <td>It contains commands like lock, unlock, abandon, return, claim, and so on, as available.<br /> </td>
   </tr>
   <tr>
    <td>processInstanceInfo<br /> </td>
