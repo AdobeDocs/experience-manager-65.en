@@ -73,7 +73,7 @@ While you can achieve most of the use cases by using any rule construct, here ar
 * To trigger an action based on multiple conditions, it is recommended to use action-condition construct. For example, to show and hide field A by evaluating conditions on fields B, C, and D, use Show or Hide rule type on field A.
 * Use condition-action or action condition construct if the rule contains one action for one condition.
 * If a rule checks for a condition and performs an action immediately on providing a value in a field or exiting a field, it is recommended to write a rule with condition-action construct or the When rule type on the field on which the condition is evaluated.
-* The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. However, if you want the action to trigger when the value changes on the server side, like in case of prepopulating the value, it is recommended to write a When rule that triggers the action when the field is initialized.
+* The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. However, if you want the action to trigger when the value changes on the server side, like in prepopulating the value, it is recommended to write a When rule that triggers the action when the field is initialized.
 * When writing rules for drop-downs, radio buttons, or check boxes objects, the options or values of these form objects in the form are pre-populated in the rule editor.
 
 ## Available operator types and events in rule editor {#available-operator-types-and-events-in-rule-editor}

@@ -446,7 +446,7 @@ To apply the second master page properties to a panel and the third master page 
 
 >[!NOTE]
 >
-> You can not apply multiple master pages to a Document of Record for an adaptive form Fragment.
+> You cannot apply multiple master pages to a Document of Record for an adaptive form Fragment.
 
 ## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 

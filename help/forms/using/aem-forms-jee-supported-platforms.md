@@ -35,7 +35,7 @@ This document lists the supported client and server platforms for AEM Forms on J
  
 #### Full Installer
 
-- **Upgrade Support for full installers**: A full installer is released with every 6th AEM Service Pack Release. For example, there was a full installer released with 6.5.12.0 and 6.5.18.0 SP releases. AEM Forms allows direct upgrades exclusively from the last two full installers. For example, AEM Forms facilitates direct upgrades to version 6.5.18.0 only from the last two full installers, namely 6.5.12.0 and 6.5.6.0. If you need to upgrade from an earlier upgrade, you can use a multi-hop upgrade to first go to a supported full installer release and then to the latest release. 
+- **Upgrade Support for full installers**: A full installer is released with every sixth AEM Service Pack Release. For example, there was a full installer released with 6.5.12.0 and 6.5.18.0 SP releases. AEM Forms allows direct upgrades exclusively from the last two full installers. For example, AEM Forms facilitates direct upgrades to version 6.5.18.0 only from the last two full installers, namely 6.5.12.0 and 6.5.6.0. If you need to upgrade from an earlier upgrade, you can use a multi-hop upgrade to first go to a supported full installer release and then to the latest release. 
 
 - **Deprecation and Removal**: The platform support is updated with each full installer release. Any software marked as deprecated in the platform matrix during a full installer release is entitled to be removed from the supported platform matrix in a subsequent full installer release, indicating the end of support for the software.
  
@@ -488,7 +488,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
 >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019.
->- If a Microsoft® Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
+>- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 
 ### Exceptions to accessibility support {#exceptions-to-accessibility-support}
 
@@ -572,7 +572,7 @@ For additional requirements see:
 
 ### Designer {#designer}
 
-- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10, or Windows® 11
+- Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, Microsoft&reg; Windows&reg; 10, or Windows&reg; 11
 - 1 GHz or faster processor with support for PAE, NX, and SSE2.
 - 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
 - 16-GB disk space for 32-bit or 20-GB disk space for 64-bit OS

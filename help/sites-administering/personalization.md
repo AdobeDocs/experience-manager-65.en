@@ -38,7 +38,7 @@ Personalization can be either:
 
 #### Explicit {#explicit}
 
-* Customization: whereby the user makes selections from a choice of content sources.
+* Customization: the user makes selections from a choice of content sources.
 
 #### Implicit {#implicit}
 

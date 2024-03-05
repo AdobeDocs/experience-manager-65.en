@@ -166,7 +166,7 @@ You can replace or change an adaptive form fragment by another fragment by using
 
 ### Generate Document of Record for Adaptive Form fragment {#generate-DOR-for-fragments}
 
-Document of Record (DOR) helps you to keep information of your forms in the print or document format. Thereby, it help you to track information about your customers at any time later, and you can also use the Document of Record to archive forms and content together in PDF Format. [Learn to generate document of record for Adaptive Form fragments](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Document of Record (DOR) helps you keep information of your forms in the print or document format. As such, it help you to track information about your customers at any time later, and you can also use the Document of Record to archive forms and content together in PDF Format. [Learn to generate document of record for Adaptive Form fragments](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 ### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
 
