@@ -465,11 +465,11 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
   1. Download the hotfix for your operating system:
 
-    * [Hotfix for Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip) 
-    * [Hotfix for Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-    * [Hotfix for Apple macOS](/help/release-notes/assets/Hotfix-osx.zip) 
+     * [Hotfix for Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip) 
+     * [Hotfix for Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+     * [Hotfix for Apple macOS](/help/release-notes/assets/Hotfix-osx.zip) 
   
-  1. Upload and install the package (.zip) via the Package Manager.
+  1. Upload and install the package (.zip) via the [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
 
 * The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)
 
