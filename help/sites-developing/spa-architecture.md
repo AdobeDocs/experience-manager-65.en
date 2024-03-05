@@ -16,7 +16,7 @@ This article presents important questions to consider when engaging a front-end 
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
 
 ## SPA Development Principles for AEM {#spa-development-principles-for-aem}
 
@@ -92,7 +92,7 @@ There may be cases however when this is not entirely necessary. The following ta
 
 >[!NOTE]
 >
->Although all models are supported in AEM, only by implementing the third (and thereby following the recommended [SPA development principles in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) will the content authors be able to interact with and edit the content of the SPA in AEM as they are accustomed.
+>Although all models are supported in AEM, only by implementing the third (and therefore following the recommended [SPA development principles in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) can content authors interact with and edit the content of the SPA in AEM as they are accustomed.
 
 ## Migrating Existing SPAs to AEM {#migrating-existing-spas-to-aem}
 
@@ -150,7 +150,7 @@ The following is an outline of the steps that a front-end developer needs to fol
 
    When the `ModelRouter` is enabled, calling the `pushState` and `replaceState` functions trigger a request to the `PageModelManager` to fetch a missing fragment of the model.
 
-   The current version of the `ModelRouter` only supports the use of URLs that points to the actual resource path of Sling Model entry points. It doesn't support the use of vanity URLs or aliases.
+   The current version of the `ModelRouter` only supports the use of URLs that points to the actual resource path of Sling Model entry points. It does not support the use of vanity URLs or aliases.
 
    The `ModelRouter` can be disabled or configured to ignore a list of regular expressions.
 

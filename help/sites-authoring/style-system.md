@@ -1,13 +1,9 @@
 ---
 title: Style System
-seo-title: Style System
 description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
-seo-description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
-uuid: 0d857650-8738-49e6-b431-f69c088be74f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 ---
 # Style System{#style-system}
@@ -27,7 +23,7 @@ The Style System provides a unified solution to both the template author's and c
 * Template authors can define style classes in the content policy of components.
 * Content authors can then select these classes from a drop-down when editing the component on a page to apply the corresponding styles.
 
-The style class is then inserted on the decoration wrapper element of the component so that the component developer doesn't need to be concerned with handling the styles beyond providing their CSS rules.
+The style class is then inserted on the decoration wrapper element of the component so that the component developer does not need to be concerned with handling the styles beyond providing their CSS rules.
 
 ## Overview {#overview}
 
@@ -74,7 +70,7 @@ If you wish to use the Style System for your own components do the following:
 
    ![Style System for the author](assets/style-system-author.png)
 
-1. Tap or click the **Styles** button on the toolbar of the **List** component to open the style menu and change the appearance of the component.
+1. Click the **Styles** button on the toolbar of the **List** component to open the style menu and change the appearance of the component.
 
    ![Selecting styles](assets/style-system-author2.png)
 
@@ -84,7 +80,7 @@ If you wish to use the Style System for your own components do the following:
 
 ### As a Template Author {#as-a-template-author}
 
-1. While editing WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -&gt; Edit Template**.
+1. While editing WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information > Edit Template**.
 
    ![Edit Template](assets/style-system-edit-template.png)
 
@@ -120,11 +116,11 @@ In order for a component to work with AEM's Style System and show the style tab 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-With the component configured, the styles configured by the page authors will be automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself need not do anything else to make this happen.
+With the component configured, the styles configured by the page authors will be automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself does not need to do anything else to make this happen.
 
 ### Enable Styles Tab in Edit Dialog {#enable-styles-tab-edit}
 
-As of AEM version 6.5.3.0 an optional Styles tab in the Edit Dialog is now available. Unlike the Design Dialog tab, the tab in the Edit Dialog isn't essential for the Style System to function, but is an optional alternative interface for a content author to set styles.
+As of AEM version 6.5.3.0 an optional Styles tab in the Edit Dialog is now available. Unlike the Design Dialog tab, the tab in the Edit Dialog is not essential for the Style System to function, but is an optional alternative interface for a content author to set styles.
 
 The edit dialog tab can be included in a similar way to the design dialog tab:
 

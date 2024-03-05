@@ -9,7 +9,7 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 
 ## What is Tough Day 2 {#what-is-tough-day}
 
-"Tough Day 2" is a an application that lets you stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) for a presentation of the application.
+"Tough Day 2" is an application that lets you stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) for a presentation of the application.
 
 >[!CAUTION]
 >
@@ -232,7 +232,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Existing tests in a given suite can also be reconfigured using the `config`* *parameter. You must also specify the suite name and the actual name of the test (not the Test Class name). You can find the test name in the `name` property of the Test Class. For further details on how to find test properties, read the [Changing Test Properties](/help/sites-developing/tough-day.md#changing-the-test-properties) section.
+Existing tests in a given suite can also be reconfigured using the `config`* *parameter. Also specify the suite name and the actual name of the test (not the Test Class name). You can find the test name in the `name` property of the Test Class. For further details on how to find test properties, read the [Changing Test Properties](/help/sites-developing/tough-day.md#changing-the-test-properties) section.
 
 In the example below the default asset title for the `CreatePageTreeTest` (named `UploadAsset`) is changed to "NewAsset".
 
@@ -254,7 +254,7 @@ tests:
       title : NewAsset
 ```
 
-Also, you can also remove tests from predefined suites or publishers from the default configuration with the use of the `exclude` parameter. You must also specify the suite name and the actual name of the test (not the Test C `lass` name). You can find the test name in the `name` property of the test class. In the example below, the `CreatePageTreeTest` (named `UploadAsset`) test is removed from the toughday suite.
+Also, you can also remove tests from predefined suites or publishers from the default configuration with the use of the `exclude` parameter. Also specify the suite name and the actual name of the test (not the Test C `lass` name). You can find the test name in the `name` property of the test class. In the example below, the `CreatePageTreeTest` (named `UploadAsset`) test is removed from the toughday suite.
 
 By using command-line parameters:
 
@@ -396,7 +396,7 @@ Tough Day 2 creates a logs folder in the same directory where you ran Tough Day 
 * **toughday.log**: contains messages related to the application state, debugging information and global messages.
 * **toughday_&lt;testname&gt;.log**: messages related to the specified test.
 
-The logs are not overwritten, subsequent runs append messages to the existing logs. The logs have several levels, for more information see the ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+The logs are not overwritten, subsequent runs append messages to the existing logs. The logs have several levels, for more information see the [loglevel parameter.](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}

@@ -35,7 +35,7 @@ In the **Properties** tab for the new `clientlibs` node, enter the **categories*
 * Click **Add**
 * Click **Save All**
 
-Note: prefacing the categories value with 'apps.' is a convention to identify the 'owning application' as being in the /apps folder, not /libs. IMPORTANT: Add placeholder `js.tx`t and **`css.txt`** files. (It's not officially a cq:ClientLibraryFolder without them.)
+Note: prefacing the categories value with 'apps.' is a convention to identify the 'owning application' as being in the /apps folder, not /libs. IMPORTANT: Add placeholder `js.tx`t and **`css.txt`** files. (It is not officially a cq:ClientLibraryFolder without them.)
 
 1. Right-click **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Select **Create File...**
@@ -147,7 +147,7 @@ Load your website in the browser and see if the background is not a shade of blu
 
 At this point, there exists a minimalist sandbox. It might be worth saving as a package so that, while playing, if your repository becomes corrupt and you desire to start over, you can turn off your server. Then rename or delete the folder crx-quickstart/, turn on your server, upload and install this saved package, and not have to repeat these most basic of steps.
 
-This package exists on the [Create a Sample Page](/help/communities/create-sample-page.md) tutorial for those who can't wait to jump in and start playing!...
+This package exists on the [Create a Sample Page](/help/communities/create-sample-page.md) tutorial for those who cannot wait to jump in and start playing.
 
 To create a package:
 

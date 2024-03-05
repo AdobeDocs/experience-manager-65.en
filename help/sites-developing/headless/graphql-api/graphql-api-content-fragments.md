@@ -522,6 +522,53 @@ The following example demonstrates a full query that filters all persons that ha
 }
 ```
 
+When executing a GraphQL query using optional variables, if a specific value is **not** provided for the optional variable, then the variable will be ignored in the filter evaluation. This means, query results will contain all values, both `null` and not `null`, for the property related to the filter variable.
+
+>[!NOTE]
+>
+>If a `null` value is *explicitly* specified for such a variable, then the filter will match only `null` values for the corresponding property.
+
+For example, in the query below, where no value is specified for the property `lastName`:
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+All authors will be returned:
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
+    }
+  }
+}
+```
+
 While you can also filter on nested fields, it is not recommended, as it might lead to performance issues.
 
 For further examples, see:
@@ -548,7 +595,7 @@ The sorting criteria:
   * the first field in the list defines the primary sort order
     * the second field is used if two values of the primary sort criterion are equal
     * the third field is used if the first two criteria are equal, and so on.
-  * dotted notation, i.e field1.subfield.subfield and so on...
+  * dotted notation, that is, `field1.subfield.subfield`, and so on.
 * with an optional order direction
   * ASC (ascending) or DESC (descending); as default ASC is applied
   * the direction can be specified per field; this ability means that you can sort one field in ascending order, another one in descending order (name, firstName DESC)
@@ -699,19 +746,28 @@ Caching of persisted queries is not enabled by default in the Dispatcher. Defaul
 
 ### Enable caching of persisted queries {#enable-caching-persisted-queries}
 
-To enable the caching of persisted queries, define the Dispatcher variable `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+To enable the caching of persisted queries, the following updates to the Dispatcher configuration files are required:
 
-1. Add the variable to the Dispatcher file `global.vars`:
+* `<conf.d/rewrites/base_rewrite.rules>`
 
-   ```xml
-   Define CACHE_GRAPHQL_PERSISTED_QUERIES
-   ```
+  ```xml
+  # Allow the dispatcher to be able to cache persisted queries - they need an extension for the cache file
+  RewriteCond %{REQUEST_URI} ^/graphql/execute.json
+  RewriteRule ^/(.*)$ /$1;.json [PT] 
+  ```
 
->[!NOTE]
->
->To conform to the [Dispatcher's requirements for documents that can be cached](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), the Dispatcher adds the suffix `.json` to all persisted query URLS, so that the result can be cached. 
->
->This suffix is added by a rewrite rule, once persisted query caching is enabled.
+  >[!NOTE]
+  >
+  >The Dispatcher adds the suffix `.json` to all persisted query URLS, so that the result can be cached.
+  >
+  >This is to ensure that the query conforms to the Dispatcher’s requirements for documents that can be cached. For further details see [How does the Dispatcher return documents?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
+
+* `<conf.dispatcher.d/filters/ams_publish_filters.any>`
+
+  ```xml
+  # Allow GraphQL Persisted Queries & preflight requests
+  /0110 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
+  ```
 
 ### CORS configuration in the Dispatcher {#cors-configuration-in-dispatcher}
 

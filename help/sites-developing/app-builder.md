@@ -21,7 +21,7 @@ App Builder has been available to enterprise customers and partners by way of Ad
 
 >[!NOTE]
 >
->For customers of AEM as a Cloud Service, who want to use App Builder, see [Extending Adobe Experience Manager as a Cloud Service using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=en).
+>For customers of AEM as a Cloud Service, who want to use App Builder, see [Extending Adobe Experience Manager as a Cloud Service using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Architecture {#architecture}
 

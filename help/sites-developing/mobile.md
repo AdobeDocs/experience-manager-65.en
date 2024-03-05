@@ -118,7 +118,7 @@ The **We.Retail Mobile Demo Site** uses the following mobile components which ar
 
 #### Creating a Mobile Component {#creating-a-mobile-component}
 
-The AEM mobile framework allows to develop components that are sensitive to the device issuing the request. The following code samples show how to use the AEM mobile API in a component jsp and particularly how to:
+The AEM mobile framework lets you develop components that are sensitive to the device issuing the request. The following code samples show how to use the AEM mobile API in a component jsp and particularly how to:
 
 * Get the device from the request:
   `Device device = slingRequest.adaptTo(Device.class);`
@@ -164,7 +164,7 @@ To create an emulator, see [Creating a Custom Mobile Emulator](/help/sites-devel
 **Main characteristics of mobile emulators**
 
 * A device group is composed of one of more emulators: the device group configuration page, for example, /etc/mobile/groups/touch, contains the `emulators` property below the `jcr:content` node.
-  Note: although it's possible that the same emulator belongs to several device groups, it does not make much sense.
+  Note: although it is possible that the same emulator belongs to several device groups, it does not make much sense.
 
 * Via the device group's configuration dialog, the `emulators` property is set with the path of the desired emulators. For example: `/libs/wcm/mobile/components/emulators/iPhone4`.
 
@@ -374,7 +374,7 @@ When the value of the `cq:variantDomain` property of a `cq:siteVariant` node is 
 
 ### Defining a Device Group Specific URL {#defining-a-device-group-specific-url}
 
-If you don't want to use alternate links, you can configure a global URL for each `DeviceGroup`. Adobe recommends creating your own client library that embeds the `browsermap.standard` client library but redefines the device groups.
+If you do not want to use alternate links, you can configure a global URL for each `DeviceGroup`. Adobe recommends creating your own client library that embeds the `browsermap.standard` client library but redefines the device groups.
 
 BrowserMap is designed in such a way that Device Groups definitions can be overridden by creating and adding a Device Group with the same name to the `BrowserMap` object from your customized client library.
 
@@ -493,7 +493,7 @@ Once you've created your customized `BrowserMap` client library, Adobe suggests 
 
 ### Excluding BrowserMap From Certain Pages {#excluding-browsermap-from-certain-pages}
 
-If you would like to exclude the BrowserMap library from some of your pages where you don't need client-detection you can add a request attribute:
+If you would like to exclude the BrowserMap library from some of your pages where you do not need client-detection you can add a request attribute:
 
 ```xml
 <%
@@ -573,7 +573,7 @@ The **Statistics** page is now available.
 
 ### Supporting Page Caching for "send link to a friend" Links {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Mobile pages are cachable on Dispatcher, because pages that are rendered for a device group are distinguished in the page URL by the device group selector, for example, `/content/mobilepage.touch.html`. A request to a mobile page without a selector is never cached, as in this case, the device detection operates and finally redirects to the matching device group (or "nomatch" for that matter). A mobile page rendered with a device group selector is processed by the link rewriter, which rewrites all links within the page to also contain the device group selector, preventing from reperforming device detection for every click on an already qualified page.
+Mobile pages are cachable on Dispatcher, because pages that are rendered for a device group are distinguished in the page URL by the device group selector, for example, `/content/mobilepage.touch.html`. A request to a mobile page without a selector is never cached, as in this case, the device detection operates and finally redirects to the matching device group (or "nomatch" for that matter). A mobile page rendered with a device group selector is processed by the link rewriter, which rewrites all links within the page to also contain the device group selector, preventing from reperforming device detection for every click of an already qualified page.
 
 Therefore you might encounter the following scenario:
 

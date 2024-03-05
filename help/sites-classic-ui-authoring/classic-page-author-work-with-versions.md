@@ -162,7 +162,7 @@ If you want to view the timeline of the document:
 
     * All lines indicate published versions.
       When a page is activated, a new line starts. Every time the document is edited a new color appears.
-      In the example below, the red line indicates that the page was edited during the timeframe of the initial green version. The yellow line indicates that the page was edited sometime during the red version and so on.
+      In the example below, the red line indicates that the page was edited during the timeframe of the initial green version. The yellow line indicates that the page was edited sometime during the red version, and so on.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

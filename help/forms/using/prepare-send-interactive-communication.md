@@ -1,12 +1,8 @@
 ---
 title: Prepare and send Interactive Communication using the Agent UI
-seo-title: Prepare and send Interactive Communication using the Agent UI
 description: The Agent UI allows the agents to prepare and send Interactive Communication to the post process. The Agent makes the required modifications as allowed, and submits the Interactive Communication to a post process, such as email or print.
-seo-description: Prepare and send Interactive Communication using the Agent UI
-uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
 ---
@@ -27,7 +23,7 @@ While preparing the Interactive Communication using the Agent UI, the agent mana
 ## Prepare Interactive Communication using the Agent UI {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Select **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Select the appropriate Interactive Communication and tap **[!UICONTROL Open Agent UI]**.
+1. Select the appropriate Interactive Communication and select **[!UICONTROL Open Agent UI]**.
 
    >[!NOTE]
    >
@@ -45,7 +41,7 @@ While preparing the Interactive Communication using the Agent UI, the agent mana
 
 1. In the Data tab, enter the data for variables, form data model properties, and print template (XDP) fields, as required. Fill up all the mandatory fields marked with an asterisk (&ast;) to enable the **Submit** button.
 
-   Tap a data field value in the Interactive Communication preview to highlight the corresponding data field in the Data tab or conversely.
+   Select a data field value in the Interactive Communication preview to highlight the corresponding data field in the Data tab or conversely.
 
 ### Manage Content {#manage-content}
 
@@ -55,7 +51,7 @@ In the Content tab, manage the content such as document fragments and content va
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
-1. Edit the document fragments, as required, in the Content tab. To bring focus to the relevant fragment in the content hierarchy, you can either tap the relevant line or paragraph in the Interactive Communication preview or tap the fragment directly in the Content hierarchy.
+1. Edit the document fragments, as required, in the Content tab. To bring focus to the relevant fragment in the content hierarchy, you can either select the relevant line or paragraph in the Interactive Communication preview or select the fragment directly in the Content hierarchy.
 
    For example, the document fragment with the line "Make a payment online now ... " is selected in the preview in the below graphic and the same document fragment has got selected in the Content tab.
 
@@ -63,7 +59,7 @@ In the Content tab, manage the content such as document fragments and content va
 
    In the Content or Data tab, by tapping Highlight Selected Modules In Content ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) on upper left of the preview, you can disable or enable functionality to go to the document fragment when the relevant text, paragraph, or data field is tapped/selected in the preview.
 
-   The fragments that can be edited by the agent while creating the Interactive Communication have the Edit Selected Content ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) icon. Tap the Edit Selected Content icon to launch the fragment in edit mode and make changes in it. Use the following options for formatting and managing text:
+   The fragments that can be edited by the agent while creating the Interactive Communication have the Edit Selected Content ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) icon. Select the Edit Selected Content icon to launch the fragment in edit mode and make changes in it. Use the following options for formatting and managing text:
 
     * [Formatting options](#formattingtext)
 
@@ -87,11 +83,11 @@ In the Content tab, manage the content such as document fragments and content va
 
 1. Select **[!UICONTROL Attachment]**. The Agent UI displays the available attachments as set up while creating the Interactive Communication.
 
-   You can choose not to submit an attachment along with the Interactive Communication by tapping the view icon and you can tap the cross in the attachment to delete it (if the agent is allowed to delete or hide the attachment) from the Interactive Communication. For the attachments specified as mandatory while creating the Interactive Communication, the View and Delete icons are disabled.
+   You can choose not to submit an attachment along with the Interactive Communication by tapping the view icon and you can select the cross in the attachment to delete it (if the agent is allowed to delete or hide the attachment) from the Interactive Communication. For the attachments specified as mandatory while creating the Interactive Communication, the View and Delete icons are disabled.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Tap the Library Access ( ![libraryaccess](assets/libraryaccess.png)) icon to access Content Library to insert DAM assets as attachments.
+1. Select the Library Access ( ![libraryaccess](assets/libraryaccess.png)) icon to access Content Library to insert DAM assets as attachments.
 
    >[!NOTE]
    >
@@ -100,7 +96,7 @@ In the Content tab, manage the content such as document fragments and content va
 1. If the order of the attachments was not locked while creating the Interactive Communication, you can reorder the attachments by selecting an attachment and tapping the down and up arrows.
 1. Use Web Preview and Print Preview to see if the two outputs are as per your requirement.
 
-   If you find the previews to be satisfactory, tap **[!UICONTROL Submit]** to submit/send the Interactive Communication to a post process. Or to make changes, exit the preview to go back to the making changes.
+   If you find the previews to be satisfactory, select **[!UICONTROL Submit]** to submit/send the Interactive Communication to a post process. Or to make changes, exit the preview to go back to the making changes.
 
 ## Formatting text {#formattingtext}
 
@@ -120,7 +116,7 @@ List toolbar
 
 ### Highlight/Emphasize parts of text {#highlightemphasize}
 
-To highlight\emphasize parts of text in an editable fragment, select the text and tap Highlight Color.
+To highlight\emphasize parts of text in an editable fragment, select the text and select Highlight Color.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
@@ -163,7 +159,7 @@ The Agent UI has built in support for 210 special characters. The admin can [add
 
 * Insert Blank Line: Inserts new blank line.
 * Selection (eye icon): Includes\excludes document fragment from the Interactive Communication.
-* Skip Bullets/Numberings: Enable to skip bullets/numbering in the list document fragment.
+* Skip Bullets/Numberings: Enable if you want to skip bullets/numbering in the list document fragment.
 * Unfilled Values (info): Indicates the number of unfilled variables in the document fragment.
 
 ## Save Interactive Communications as a draft {#save-as-draft}
@@ -181,22 +177,22 @@ The Save as a Draft feature is not enabled, by default. Perform the following st
    The SPI enables you to save the draft version of the Interactive Communication to the database with a draft ID as the unique identifier. These instructions assume that you have prior knowledge on how to build an OSGi bundle using a Maven project.
 
    For sample SPI implementation, see [Sample ccrDocumentInstance SPI implementation](#sample-ccrDocumentInstance-spi).
-1. Open `http://<hostname>:<port>/ system/console/bundles` and tap **[!UICONTROL Install/Update]** to upload the OSGi bundle. Verify that the status of the uploaded package displays as **Active**. Restart the server if the status of the package does not display as **Active**.
+1. Open `http://<hostname>:<port>/ system/console/bundles` and select **[!UICONTROL Install/Update]** to upload the OSGi bundle. Verify that the status of the uploaded package displays as **Active**. Restart the server if the status of the package does not display as **Active**.
 1. Go to `https://'[server]:[port]'/system/console/configMgr`.
-1. Tap **[!UICONTROL Create Correspondence Configuration]**.
-1. Select **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** and tap **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Create Correspondence Configuration]**.
+1. Select **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** and select **[!UICONTROL Save]**.
 
 ### Save an Interactive Communication as draft {#save-as-draft-agent-ui}
 
 Perform the following steps to save an Interactive Communication as a draft:
 
-1. Select an Interactive Communication in Forms Manager and tap **[!UICONTROL Open Agent UI]**.
+1. Select an Interactive Communication in Forms Manager and select **[!UICONTROL Open Agent UI]**.
 
-1. Make appropriate changes in the Agent UI and tap **[!UICONTROL Save as Draft]**.
+1. Make appropriate changes in the Agent UI and select **[!UICONTROL Save as Draft]**.
 
-1. Specify the name of the Draft in the **[!UICONTROL Name]** field and tap **[!UICONTROL Done]**.
+1. Specify the name of the Draft in the **[!UICONTROL Name]** field and select **[!UICONTROL Done]**.
 
-Once you save the Interactive Communication as a draft, tap **[!UICONTROL Save Changes]** to save any further changes to the draft.
+Once you save the Interactive Communication as a draft, select **[!UICONTROL Save Changes]** to save any further changes to the draft.
 
 ### Retrieve the draft of an Interactive Communication {#retrieve-draft}
 

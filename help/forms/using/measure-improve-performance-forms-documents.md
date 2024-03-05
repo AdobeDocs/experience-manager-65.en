@@ -1,13 +1,13 @@
 ---
 title: Measure and improve effectiveness and conversion of forms
-seo-title: Measure and improve effectiveness and conversion of forms
+
 description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that lets you measure and improve the performance and conversion rate of your forms.
-seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that lets you measure and improve the performance and conversion rate of your forms.
-uuid: fd2f087c-39f5-457d-8b44-c3ec4400b3fc
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
-discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
+
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
 ---
@@ -115,7 +115,7 @@ For more details about forms analytics reports, see [Viewing and understanding A
 
 In this step, you will analyze data points in the analytics report and infer how the form is performing. If it does not meet your success KPIs, you will construct hypotheses, based on data, and find possible solutions to fix the issues. For example:
 
-* If the average fill time for the form is higher than your expectation, it is possible that your form is complex for customers to understand, the form doesn't use standard terminologies, the form is too long, and so on. In this case, you might want to simplify the form structure and fields, rework the form design, shorten the length of the form, or add help descriptions and examples for non-standard form fields.
+* If the average fill time for the form is higher than your expectation, it is possible that your form is complex for customers to understand, the form does not use standard terminologies, the form is too long, and so on. In this case, you might want to simplify the form structure and fields, rework the form design, shorten the length of the form, or add help descriptions and examples for non-standard form fields.
 * If data indicates that most customers are accessing help for a form panel, it is evident that customers are puzzled about what information to fill in. You might want to use alternate terminology or add some example inputs and help description for that panel.
 * If the abort or abandonment rate for a form is higher than expected, it might be due to the form taking long time to render, customers are inadvertently landing on the form, or it is too complicated. In this case, you may want to optimize the form description that appears in the search results, simplify the form, optimize the form for faster loading, and so on.
 

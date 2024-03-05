@@ -1,9 +1,9 @@
 ---
 title: How to Create an Adaptive Form
 description: Learn how to create an adaptive form using [!DNL Experience Manager Forms]. Adaptive forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an adaptive form based on a form data model, XFA form template, and XML or JSON schema. 
-feature: Adaptive Forms
 role: User, Developer
 level: Beginner
+feature: Adaptive Forms, Foundation Components
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 ---
 # Creating an adaptive form {#creating-an-adaptive-form}
@@ -23,14 +23,14 @@ Follow these steps to create an adaptive form.
 
 1. Enter your credentials on the Experience Manager login page.
 
-   After you are logged in, in the upper-left corner, tap **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+   After you are logged in, in the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 
    >[!NOTE]
    >
    >For a default installation, the login is `admin` and the password is `admin`.
 
-1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Adaptive Form]**.
-1. An option to select a template appears. For more information about templates, see [Adaptive form templates](creating-adaptive-form.md#p-adaptive-form-templates-p). Tap a template to select it and tap Next.
+1. Select **[!UICONTROL Create]** and select **[!UICONTROL Adaptive Form]**.
+1. An option to select a template appears. For more information about templates, see [Adaptive form templates](creating-adaptive-form.md#p-adaptive-form-templates-p). Select a template to select it and select Next.
 1. An option to 'Add Properties' appears. Specify the values for following property fields. The Title and Name fields are mandatory:
 
     * **[!UICONTROL Title:]** Specifies the display name of the form. The title helps you identify the form in the [!DNL Experience Manager Forms] user interface.
@@ -47,13 +47,13 @@ Follow these steps to create an adaptive form.
 
    You can configure these from the **[!UICONTROL Form Model]** tab on the **[!UICONTROL Add Properties]** page. By default, the form model selected is **[!UICONTROL None]**.
 
-1. Tap **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
+1. Select **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
 
    Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
 
    Once you have finished specifying all the properties, click **[!UICONTROL Create]**. An adaptive form is created and a dialog to open the form for editing appears.
 
-1. Tap **[!UICONTROL Open]** to open the newly created form in a new tab. The form opens for editing and displays the contents available in the template. It also displays the sidebar to customize the newly created form according to the needs.
+1. Select **[!UICONTROL Open]** to open the newly created form in a new tab. The form opens for editing and displays the contents available in the template. It also displays the sidebar to customize the newly created form according to the needs.
 
    Based on the type of adaptive form, the form elements present in the associated XFA form template, XML schema, or JSON schema are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your adaptive form.
 
@@ -73,7 +73,7 @@ To use a form data model for creating an adaptive form:
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Tap to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
+1. Select to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
 
    Select a from data model.
 
@@ -114,12 +114,12 @@ See the following documents to understand how to design XML or JSON schema for a
 
 Do the following to use XML or JSON schema as form model for an adaptive form:
 
-1. On the **[!UICONTROL Add Properties]** step of adaptive form creation page, tap on the **[!UICONTROL Form Model]** tab.
+1. On the **[!UICONTROL Add Properties]** step of adaptive form creation page, select on the **[!UICONTROL Form Model]** tab.
 1. In the Form Model tab, select **[!UICONTROL Schema]** from the **[!UICONTROL Select From]** drop-down field.
 
-1. Tap **[!UICONTROL Select Schema]** and do one of the following:
+1. Select **[!UICONTROL Select Schema]** and do one of the following:
 
-    * **[!UICONTROL Upload from disk]** - Select this option and tap Upload Schema Definition to browse and upload an XML schema or JSON schema from your file system. The uploaded schema file resides with the form and is not accessible to other adaptive forms.
+    * **[!UICONTROL Upload from disk]** - Select this option and select Upload Schema Definition to browse and upload an XML schema or JSON schema from your file system. The uploaded schema file resides with the form and is not accessible to other adaptive forms.
     * **[!UICONTROL Search in repository]** - Select this option to select from the list of schema definition files available in the repository. Select the XML or JSON schema file as form model. The selected schema is associated with the form by reference and is accessible for use in other adaptive forms.
 
    >[!CAUTION]
@@ -152,13 +152,13 @@ In addition, you can use the template editor to create your own templates. For m
 
 Adaptive forms are created without a form model (using the None option for form model) or using a form model such as a form template, XML schema or JSON schema, or form data model. You can change the form model for an adaptive form from None to another form model. For adaptive form based on a form model, you can choose another form template, XML schema, JSON schema, or form data model for the same form model. However, you cannot change from one form model to another.
 
-1. Select the adaptive form and tap the **Properties** icon.
+1. Select the adaptive form and select the **Properties** icon.
 1. Open the **[!UICONTROL Form Model]** tab and do one the following.
 
     * If the adaptive form is without a form model, you can choose another form model and accordingly select a form template, XML or JSON schema, or form data model.
     * If the adaptive form is based on a form model, you can choose another form template, XML or JSON schema, or form data model for the same form model.
 
-1. Tap **[!UICONTROL Save]** to save the properties.
+1. Select **[!UICONTROL Save]** to save the properties.
 
 ## Auto save an adaptive form {#auto-save-an-adaptive-form}
 
@@ -173,7 +173,7 @@ By default, the contents of an adaptive form are saved on a user action, such as
 
 By default, the auto save option is not enabled. You can enable the auto save option from the Auto Save tab of an adaptive form. The Auto Save tab also provides several other configuration options. Perform the following steps to enable and configure the auto save option for an adaptive form:
 
-1. To access the auto-save section in the properties, select a component, then tap ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![cmppr](assets/cmppr.png).
+1. To access the auto-save section in the properties, select a component, then select ![field-level](assets/field-level.png) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![cmppr](assets/cmppr.png).
 1. In the **[!UICONTROL Auto Save]** section, **[!UICONTROL Enable]** the auto-save option.
 1. In the **[!UICONTROL Adaptive Form Event]** box, specify 1 or TRUE to automatically start saving the form when the form is loaded in the browser. You can also specify a conditional expression for an event, which when triggered and returns true, starts saving the content of the form.
 1. Specify the Trigger. Auto-save is triggered based on your configuration. Your options are:

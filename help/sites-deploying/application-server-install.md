@@ -38,7 +38,7 @@ AEM comes as a single war file to deploy.
 If deployed, the following happens by default:
 
 * the run mode is `author`
-* the instance (Repository, Felix OSGI environment, bundles and so on) is installed in `${user.dir}/crx-quickstart`where `${user.dir}` is the current working directory, this path to crx-quickstart is called `sling.home`
+* the instance (Repository, Felix OSGI environment, bundles, and so on) is installed in `${user.dir}/crx-quickstart`where `${user.dir}` is the current working directory, this path to crx-quickstart is called `sling.home`
 
 * the context root is the war file name for example,  `aem-6`
 
@@ -94,7 +94,7 @@ Before a deployment read the [General Description](#general-description) above.
 
 * Let Basic Auth Headers pass through:
 
-  * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere&reg; server, to do so: go to Security -&gt; Global Security and uncheck the Enable administrative security checkbox, save, and restart the server.
+  * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere&reg; server, to do so: go to Security > Global Security and uncheck the Enable administrative security checkbox, save, and restart the server.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * If you want to install AEM using context root = /, change the context root of the existing Default web application.
@@ -125,7 +125,7 @@ Set Memory arguments in your conf file (for example, `standalone.conf`)
 
 * JAVA_OPTS="-Xms64m -Xmx2048m"
 
-If you use the deployment-scanner for to install the AEM web application it might be good to increase the `deployment-timeout,` for that set a `deployment-timeout` attribute in the xml file of your instance (for example, `configuration/standalone.xml)`:
+If you use the deployment-scanner to install the AEM web application, it might be good to increase the `deployment-timeout,` for that set a `deployment-timeout` attribute in the xml file of your instance (for example, `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -169,7 +169,7 @@ This uses a simple Server Layout with only an Admin Server.
   * uncomment sling.home initial parameter and set this path as you need (see General Description)
   * Repack web.xml file
 
-* Deploy AEM war file as an Application, (for the other settings use the default settings)
+* Deploy AEM war file as an Application (for the other settings, use the default settings)
 * The installation can take time...
 * Check that the installation has finished as mentioned above in the General Description (for example, tailing the error.log)
 * You can change the context root in the Configuration tab of the web application in the WebLogic `/console`

@@ -1,13 +1,9 @@
 ---
 title: Create or Configure a watched folder
-seo-title: Create or Configure a watched folder
 description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
-seo-description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
-uuid: 659d4d8c-99b8-40dd-b884-bfee4d476fe1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 ---
 # Create or Configure a watched folder {#create-or-configure-a-watched-folder}
@@ -31,9 +27,9 @@ Before you configure a watched folder, ensure the following:
 
 Perform the following steps to create a watched folder:
 
-1. Tap **Adobe Experience Manager** icon on the upper-left corner of the screen.
-1. Tap **Tools** &gt; **Forms** &gt; **Configure Watched Folder.** A list of already configured watched folders is displayed.
-1. Tap **New**. A list of fields required to create the watched folder is displayed:
+1. Select **Adobe Experience Manager** icon on the upper-left corner of the screen.
+1. Select **Tools** &gt; **Forms** &gt; **Configure Watched Folder.** A list of already configured watched folders is displayed.
+1. Select **New**. A list of fields required to create the watched folder is displayed:
 
     * **Name**: Identifies the watched folder. Use only alphanumeric characters for the name.
     * **Path**: Specifies the watched folder location. In a clustered environment, this setting must point to a shared network folder that is accessible to every user running AEM on different nodes of a cluster.
@@ -57,7 +53,7 @@ Perform the following steps to create a watched folder:
 
     * **Output File Pattern**: Specify a semi-colon (;) delimited list of patterns that a watched folder uses to determine the name and location of output files and folders. For more information about file patterns, see [About file patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-1. Tap **Advanced**. The advanced tab contains more fields. Most of these fields contain a default value.
+1. Select **Advanced**. The advanced tab contains more fields. Most of these fields contain a default value.
 
     * **Payload Mapper Filter:** When you create a watched folder, it creates a folder structure within the folder being watched. The folder structure has stage, result, preserve, input, and failure folders. The folder structure can serve as input payload to the workflow and accept output from a workflow. It can also list failure points, if any. The structure of a payload is different from the structure of a watched folder. You can write custom scripts to map structure of a watched folder to the payload. Such a script is called payload mapper filter. Two out-of-the-box payload mapper implementations are available. If you do not have [a custom implementation](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use one of out-of-the-box implementation:
 
@@ -89,7 +85,7 @@ Perform the following steps to create a watched folder:
         * %m = minute
         * %s = second
         * %l = millisecond
-        * %R = random number (between 0 and 9)
+        * %R = random number (between 0&ndash;9)
         * %P = process or job id
         * For example, if it is 8 PM on July 17, 2009 and you specify C:/Test/WF0/failure/%Y/%M/%D/%H/, the result folder is C:/Test/WF0/failure/2009/07/17/20.
         * If the path is not absolute but relative, the folder is created inside the watched folder. The default value is result/%Y/%M/%D/, which is the Result folder inside the watched folder. For more information about file patterns, see [About file patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
@@ -111,7 +107,7 @@ Perform the following steps to create a watched folder:
 
 Apart from changing the name of the watched folder, you can modify all the properties of an existing watched folder. Perform the following steps to modify properties of an existing watched folder:
 
-1. Tap the **Adobe Experience Manager** icon on the top-left corner of the screen.
-1. Tap **Tools** &gt; **Forms** &gt; **Configure Watched Folder.** A list of already configured watched folders is displayed.
-1. On the left side of the Watched Folder screen, select the watchfolder and tap **Edit.** A list of fields required to create the watched folder is displayed. The fields listed in the **Basic** Tab are mandatory. The advanced tab contains more fields. Most of these fields contain a default value. You can modify these properties as per your requirements.
-1. After modifying the properties, tap **Update**. The modified properties are saved.
+1. Select the **Adobe Experience Manager** icon on the top-left corner of the screen.
+1. Select **Tools** &gt; **Forms** &gt; **Configure Watched Folder.** A list of already configured watched folders is displayed.
+1. On the left side of the Watched Folder screen, select the watchfolder and select **Edit.** A list of fields required to create the watched folder is displayed. The fields listed in the **Basic** Tab are mandatory. The advanced tab contains more fields. Most of these fields contain a default value. You can modify these properties as per your requirements.
+1. After modifying the properties, select **Update**. The modified properties are saved.

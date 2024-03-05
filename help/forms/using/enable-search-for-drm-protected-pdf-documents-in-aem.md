@@ -1,14 +1,14 @@
 ---
 title: Enable AEM to search document security protected PDF documents
-seo-title: Enable AEM to search document security protected PDF documents
+
 description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.  
-seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.  
-uuid: ec6e5d53-a74c-4958-a389-7937d073c083
+
+
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
-discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
+
 docset: aem65
 
 feature: Document Security
@@ -83,3 +83,7 @@ You can use one of the following methods to establish the secure connection:
 1. Create a folder in AEM Digital Asset Manager and upload the policy-protected PDF documents to the newly created folder.
 
    Now, you can search the policy-protected documents using AEM search.
+
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.

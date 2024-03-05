@@ -1,14 +1,14 @@
 ---
 title: Invoking Human-Centric Long-Lived Processes
-seo-title: Invoking Human-Centric Long-Lived Processes
+
 description: Programmatically invoke human-centric long-lived processes created in Workbench using a Java web-based client application that uses the Invocation API, an ASP.NET application that uses web services, and a client application built with Flex that uses Remoting.
-seo-description: Programmatically invoke human-centric long-lived processes created in Workbench using a Java web-based client application that uses the Invocation API, an ASP.NET application that uses web services, and a client application built with Flex that uses Remoting.
-uuid: 42269d41-a90f-4ea1-aeb9-d61337bcfa54
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
+
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
 ---

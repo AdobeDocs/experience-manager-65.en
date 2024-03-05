@@ -1,15 +1,10 @@
 ---
 title: Creating accessible adaptive forms
-seo-title: Creating accessible adaptive forms
 description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
-seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
-uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
-
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 ---
 # Creating accessible adaptive forms{#creating-accessible-adaptive-forms}
@@ -49,7 +44,7 @@ The Ultramarine-Accessible theme is a reference theme. It helps demonstrate how 
 
 1. Download the theme package.
 1. Navigate to **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** on your AEM instance.
-1. Tap **[!UICONTROL Create]** > **[!UICONTROL File Upload]**. Select and upload the x  Ultramarine-Accessible-Theme.zip file. It uploads the theme to your AEM instance.
+1. Select **[!UICONTROL Create]** > **[!UICONTROL File Upload]**. Select and upload the x  Ultramarine-Accessible-Theme.zip file. It uploads the theme to your AEM instance.
 
 ## Make an adaptive form accessible
 
@@ -60,8 +55,8 @@ You should focus on four key aspects: keyboard navigation, color contrast, meani
 Apply the Ultramarine-Accessible theme to your existing adaptive form. To apply the theme:
 
 1. Open the adaptive form for editing.
-1. Select a component and tap the parent icon. In the context menu, tap **[!UICONTROL Adaptive Form Container]** and then tap the configure icon.
-1. Select the Ultramarine-Accessible theme in the properties browser and tap **[!UICONTROL Save]** icon.
+1. Select a component and select the parent icon. In the context menu, select **[!UICONTROL Adaptive Form Container]** and then select the configure icon.
+1. Select the Ultramarine-Accessible theme in the properties browser and select **[!UICONTROL Save]** icon.
 1. Refresh the browser window. The theme is applied to the adaptive form.  
 
 After applying an accessible theme, perform the below listed additional fixes. The fixes are in addition to accessibility fixes covered in the accessible theme:
@@ -98,11 +93,11 @@ After applying an accessible theme, perform the below listed additional fixes. T
 
 The label or title of a component identifies what the form component represents. For example, the text "First name" tells users that they have to enter their first name in a text field. To be accessible by screen readers, the label is programmatically associated with a form component. Alternatively, the form control is configured with additional accessibility information.
 
-The label that is perceived by screen readers need not necessarily be the same as the visual caption. In some cases, you may want to be more specific about the control's purpose. For each field object in a form, the accessibility options can be used to specify what the screen reader announces to identify the specific form field.
+The label that is perceived by screen readers does not need to be the same as the visual caption. In some cases, you may want to be more specific about the control's purpose. For each field object in a form, the accessibility options can be used to specify what the screen reader announces to identify the specific form field.
 
 To use the Accessibility option, follow these steps:
 
-1. Select a component and tap ![cmppr](assets/cmppr.png).
+1. Select a component and select ![cmppr](assets/cmppr.png).
 1. Click **[!UICONTROL Accessibility]** in the sidebar to choose the desired accessibility option.
 
 ### Accessibility options in form components {#accessibility-options-in-form-components}
@@ -130,7 +125,7 @@ Images can help improve comprehension for some users. However, for users using s
 
 Ensure that the text describes the object and its purpose in the form. A screen reader reads this alternative text when it encounters an image. An image must always have an alternative text specified.
 
-Select an image component and tap ![cmppr](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image.
+Select an image component and select ![cmppr](assets/cmppr.png). In the sidebar, under Properties, specify alternate text for an image.
 
 ![Alternate text for an image](assets/image-properties.png)
 
@@ -159,7 +154,7 @@ The following keyboard shortcuts are available in AEM Forms.
 | Reset the filled data in a form |Alt+R |
 | Submit a form |Alt+S |
 
-In addition, there are various keyboard shortcut keys available for the **[!UICONTROL Date Picker]** component in Adaptive Forms. To enable the shortcut keys, tap the **[!UICONTROL Date Picker]** component and tap ![Configure](assets/configure-icon.svg) to open the properties. In the **[!UICONTROL Patterns]** section, select a display pattern using the **[!UICONTROL Type]** and **[!UICONTROL Pattern]** dropdown lists. Save the properties to enable the use of shortcut keys for the **[!UICONTROL Date Picker]** component.
+In addition, there are various keyboard shortcut keys available for the **[!UICONTROL Date Picker]** component in Adaptive Forms. To enable the shortcut keys, select the **[!UICONTROL Date Picker]** component and select ![Configure](assets/configure-icon.svg) to open the properties. In the **[!UICONTROL Patterns]** section, select a display pattern using the **[!UICONTROL Type]** and **[!UICONTROL Pattern]** dropdown lists. Save the properties to enable the use of shortcut keys for the **[!UICONTROL Date Picker]** component.
 
 The following keyboard shortcut keys are available for the Date Picker component in Adaptive Forms:
 

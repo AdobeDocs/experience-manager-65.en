@@ -1,13 +1,13 @@
 ---
 title: Drafts and submissions component
-seo-title: Drafts and submissions component
+
 description: Drafts and submissions component lists forms that are in the draft state and are already submitted. You can customize appearance and style of the component.
-seo-description: Drafts and submissions component lists forms that are in the draft state and are already submitted. You can customize appearance and style of the component.
-uuid: 42c205b5-3141-4b80-85d9-dad921e223a2
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
+
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 ---
@@ -26,11 +26,11 @@ The drafts functionality is enabled out of the box. When a user clicks **Save** 
 Perform the following steps to add and configure a Drafts & Submissions component:
 
 1. Drag-and-drop the **Drafts & Submissions** component under Document Services category in the components browser on to your page.
-1. Tap the component and then tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the component.
+1. Select the component and then select ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the component.
 
    ![Drafts & Submission component](assets/drafts-submissions-edit.png)
 
-1. In the Edit dialog, specify the following details and tap **Done** to save the settings.
+1. In the Edit dialog, specify the following details and select **Done** to save the settings.
 
 <table>
  <tbody>

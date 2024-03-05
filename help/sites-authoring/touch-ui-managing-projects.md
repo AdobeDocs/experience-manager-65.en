@@ -1,14 +1,10 @@
 ---
 title: Managing Projects
-seo-title: Managing Projects
 description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
-seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
-uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
-discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 ---
 
@@ -22,7 +18,7 @@ Using the console, you can create a project, associate resources with your proje
 
 ## Access Requirements {#access-requirements}
 
-Projects a standard AEM feature and don't require any additional setup.
+Projects a standard AEM feature and do not require any additional setup.
 
 However for users in projects to see other users/groups while using Projects such as when creating projects, creating tasks/workflows, or viewing and managing the team, those users need to have read access on `/home/users` and `/home/groups`.
 
@@ -32,7 +28,7 @@ The easiest way to do this is to give the **projects-users** group read access t
 
 Follow these steps to create a project.
 
-1. In the **Projects** console, tap or click **Create** to open the **Create Project** wizard.
+1. In the **Projects** console, click **Create** to open the **Create Project** wizard.
 1. Select a template and click **Next**. You can learn more about the standard project templates [here.](/help/sites-authoring/projects.md#project-templates)
 
    ![Create Project wizard](assets/create-project-wizard.png)
@@ -41,7 +37,7 @@ Follow these steps to create a project.
 
    ![Properties step of wizard](assets/create-project-wizard-properties.png)
 
-1. Tap/click **Create**. The confirmation asks whether you want to open your new project or to return to the console.
+1. Click **Create**. The confirmation asks whether you want to open your new project or to return to the console.
 
 The procedure for creating a project is the same for all project templates. The difference between the types of projects relates to available [user roles](/help/sites-authoring/projects.md) and [workflows.](/help/sites-authoring/projects-with-workflows.md)
 
@@ -52,11 +48,11 @@ Projects enable you to group resources into one entity to manage them as a whole
 To associate resources with your project:
 
 1. Open your project from the **Projects** console.
-1. Tap/click **Add Tile** and select the tile that you want to link to your project. You can select multiple types of tiles.
+1. Click **Add Tile** and select the tile that you want to link to your project. You can select multiple types of tiles.
 
    ![Add tile](assets/project-add-tile.png)
 
-1. Tap/click **Create**. Your resource is linked to your project and from now on you can access it from your project.
+1. Click **Create**. Your resource is linked to your project and from now on you can access it from your project.
 
 ### Adding Items to a Tile {#adding-items-to-a-tile}
 
@@ -82,7 +78,7 @@ You may want to see what items are included in a current tile, or modify or dele
 
 To open a tile so that you can view or modify items:
 
-1. Tap or click the ellipses icon at the bottom-right of the tile.
+1. Click the ellipses icon at the bottom-right of the tile.
 
    ![Tasks tile](assets/project-tile-tasks.png)
 
@@ -94,7 +90,7 @@ To open a tile so that you can view or modify items:
 
 The project timeline provides information on when assets in the project were last used. To view the project timeline follow these steps.
 
-1. In the **Projects** console, click or tap **Timeline** in the rail selector at the top-left of the console.
+1. In the **Projects** console, click **Timeline** in the rail selector at the top-left of the console.
    ![Selecting timeline mode](assets/projects-timeline-rail.png)
 2. In the console select the project for which you wish to view its timeline.
    ![Project timeline view](assets/project-timeline-view.png)
@@ -117,7 +113,7 @@ There are several options available to help organize your projects to keep the *
 
 You can create folders in the **Projects** console to group and organize similar projects.
 
-1. In the **Projects** console tap or click **Create** and then **Create Folder**.
+1. In the **Projects** console click **Create** and then **Create Folder**.
 
    ![Create folder](assets/project-create-folder.png)
 
@@ -129,7 +125,7 @@ You can now create projects within the folder. You can create multiple folders a
 
 ### Inactivating Projects {#making-projects-inactive-or-active}
 
-You may want to mark a project inactive if it's completed but you still want to keep the information about the project. [Inactive projects do now show](#viewing-active-inactive-projects) by default in the **Projects** console.
+You may want to mark a project inactive if it s completed but you still want to keep the information about the project. [Inactive projects do now show](#viewing-active-inactive-projects) by default in the **Projects** console.
 
 To make a project inactive follow these steps.
 
@@ -139,7 +135,7 @@ To make a project inactive follow these steps.
 
    ![Project status selector in properties window](assets/project-status.png)
 
-1. Tap or click **Save &amp; Close** to save your changes.
+1. Click **Save &amp; Close** to save your changes.
 
 ### Deleting Projects {#deleting-a-project}
 
@@ -147,13 +143,13 @@ Follow these steps to delete a project.
 
 1. Navigate to the top-level of the **Projects** console.
 1. Selecting your project in the console.
-1. Tap or click **Delete** in the toolbar.
+1. Click **Delete** in the toolbar.
 1. AEM can remove/modify associated project data upon project deletion. Select which options you need in the **Delete Project** dialog.
    * Remove Project Groups and Roles
    * Delete Project Assets Folder
    * Terminate Project Workflows
 
    ![Project delete options](assets/project-delete-options.png)
-1. Tap or click **Delete** to delete the project with the options selected.
+1. Click **Delete** to delete the project with the options selected.
 
 To learn more about groups automatically created by projects see [Automatic Group Creation](/help/sites-authoring/projects.md#auto-group-creation) for details.

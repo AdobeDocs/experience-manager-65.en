@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 ---
-# Generate Document of Record for adaptive forms{#generate-document-of-record-for-adaptive-forms}
+# Generate Document of Record for adaptive forms or adaptive form fragments {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
@@ -22,7 +22,12 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 
 After submitting a form, your customers generally want to keep a record, in print or in document format, of the information they have filled in the form for their future reference. This is referred to as a document of record.
 
-This article explains how you can generate a document of record for adaptive forms.
+This article explains how you can generate a document of record for Adaptive Forms or Adaptive Form fragment.
+
+>[!NOTE]
+>
+> The support to customize your Adaptive Form fragments and its fields in Adaptive Form editor was introduced with AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+
 
 >[!NOTE]
 >
@@ -63,6 +68,8 @@ Automatically generated document of record has the following advantages:
 To generate a document of record for adaptive forms, you need the following components:
 
 **Adaptive form** Adaptive form for which you want to generate a document of record.
+
+**Adaptive form fragment** Adaptive form fragment for which you want to generate a document of record.
 
 **Base template (recommended)** XFA template (XDP file) created in AEM Designer. Base template is used to specify styling and branding information for document of record template.
 
@@ -261,16 +268,16 @@ Perform the following steps to configure a document of record for adaptive forms
 
 1. In AEM author instance, click **Forms &gt; Forms and Documents.**
 1. Select a form, and click **View Properties**.
-1. In the Properties window, tap **Form Model**.
+1. In the Properties window, select **Form Model**.
    You can also select a form model when you create a form.
 
    >[!NOTE]
    >
    >In the Form Model tab, ensure that you select **Schema** or **None** from the **Select From** drop-down. **[!UICONTROL Document of record is not supported for XFA-based or adaptive forms with Form Template as form model.]**
 
-1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options.
+1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options:
 
-   **None** Select this option if you don't want to configure document of record for the form.
+   **None** Select this option if you do not want to configure document of record for the form.
 
    **Associate Form Template as Document of Record Template** Select this option if you have an XDP file that you want to use as a template for the document of record. On selecting this option, all XDP files available in AEM Forms repository are displayed. Select the appropriate file.
 
@@ -297,8 +304,8 @@ While generating a document of record, you can change branding information for t
 
 To localize the branding information that you enter in the Document of Record tab, you need to ensure the locale of the browser is set appropriately. To customize the branding information of document of record, complete the following steps:
 
-1. Select a panel (root panel) in the document of record and then tap ![configure](assets/configure.png).
-1. Tap ![dortab](/help/forms/using/assets/dortab.png). The Document of Record tab appears.
+1. Select a panel (root panel) in the document of record and then select ![configure](assets/configure.png).
+1. Select ![dortab](/help/forms/using/assets/dortab.png). The Document of Record tab appears.
 1. Select either the default template or a custom template for rendering the document of record. If you select the default template, a thumbnail preview of the document of record appears below the Template drop-down.
 
    ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
@@ -343,7 +350,7 @@ To localize the branding information that you enter in the Document of Record ta
    </proto>
    ```
 
-1. To save the branding changes, tap Done.
+1. To save the branding changes, select Done.
 
 ## Table and column layouts for panels in Document of Record {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -391,6 +398,10 @@ The document of record settings of a component are available under its propertie
   * **[!UICONTROL Overflow]** > **[!UICONTROL Go to Content Area]** > Name of content area: Starts filling the specified content area.
   * **[!UICONTROL Overflow]** > **[!UICONTROL Go To Page]** > Name of page: Starts filling the specified page.
 
+  >[!NOTE]
+  >
+  > Pagination property is not available for adaptive form fragments.
+
 For information on how to apply page breaks and apply multiple master pages in a Document of Record, see [Apply page break in a Document of Record](#apply-page-breaks-in-dor) and [Apply multiple master pages to a Document of Record](#apply-multiple-master-pages-dor).
     
 **Form level settings**
@@ -404,12 +415,12 @@ You can apply page breaks in a Document of Record using multiple methods.
 
 To apply a page break to a Document of Record:
 
-1. Tap the panel and select ![Configure](/help/forms/using/assets/configure.png)
+1. Select the panel and select ![Configure](/help/forms/using/assets/configure.png)
 1. Expand **[!UICONTROL Document of Record]** to view the properties.
 
-1. In the **[!UICONTROL Pagination]** section, tap ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
-1. Tap **[!UICONTROL Top of Next page]** and tap **[!UICONTROL Select]**. You can also tap **[!UICONTROL Top of Page]**, select the master page, and tap **[!UICONTROL Select]** to apply the page break.
-1. Tap ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
+1. In the **[!UICONTROL Pagination]** section, select ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
+1. Select **[!UICONTROL Top of Next page]** and select **[!UICONTROL Select]**. You can also select **[!UICONTROL Top of Page]**, select the master page, and select **[!UICONTROL Select]** to apply the page break.
+1. Select ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
 
 The selected panel moves to the next page.
 
@@ -424,15 +435,18 @@ You upload an XDP template that includes four master pages to the [!DNL AEM Form
 
 To apply the second master page properties to a panel and the third master page properties to the panels that follow, execute the following steps:
 
-1. Tap the panel to apply the second master page and select ![Configure](assets/cmppr.png). 
-1. In the **[!UICONTROL Pagination]** section, tap ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
-1. Tap **[!UICONTROL On page]**, select the second master page and tap **[!UICONTROL Select]**.
+1. Select the panel to apply the second master page and select ![Configure](assets/cmppr.png). 
+1. In the **[!UICONTROL Pagination]** section, select ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
+1. Select **[!UICONTROL On page]**, select the second master page and select **[!UICONTROL Select]**.
    AEM Forms applies second master page to the panel and all subsequent panels in the adaptive form.
-1. In the **[!UICONTROL Pagination]** section, tap ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL After]** field.
-1. Tap **[!UICONTROL Go To page]**, select the third master page and tap **[!UICONTROL Select]**.
-1. Tap ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
+1. In the **[!UICONTROL Pagination]** section, select ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL After]** field.
+1. Select **[!UICONTROL Go To page]**, select the third master page and select **[!UICONTROL Select]**.
+1. Select ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
    AEM Forms applies third master page to the panel and all subsequent panels in the adaptive form.
 
+>[!NOTE]
+>
+> You cannot apply multiple master pages to a Document of Record for an adaptive form Fragment.
 
 ## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 
@@ -442,3 +456,57 @@ Keep in mind the following considerations and limitations when working on docume
 * Document fragments in an adaptive form do not appear in the document of record. However, adaptive form fragments are supported.
 * Content binding in document of record generated for XML Schema based adaptive form is not supported.
 * Localized version of document of record is created on demand for a locale when the user requests the rendering of the document of record. Localization of document of record occurs along with localization of adaptive form. For more information on localization of document of record and adaptive forms see [Using AEM translation workflow to localize adaptive forms and document of record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+
+## Use a custom XCI file
+
+An XCI file helps you set various properties of a document. <!-- Forms as a Cloud Service has a master XCI file.--> You can use a custom XCI file to override one or more default properties specified in the your existing XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
+
+|XCI option|Description|
+|--- |--- |
+|config/present/pdf/creator|Identifies the document creator using the Creator entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/).|
+|config/present/pdf/producer|Identifies the document producer using the Producer entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/).|
+|config/present/layout|Controls whether the output is a single panel or paginated.|
+|config/present/pdf/compression/level|Specifies the degree of compression to use when generating a PDF document.|
+|config/present/pdf/fontInfo/embed|Controls font embedding in the output document.|
+|config/present/pdf/scriptModel|Controls whether XFA-specific information is included in the output PDF document.|
+|config/present/common/data/adjustData|Controls whether the XFA application adjusts the data after merging.|
+|config/present/pdf/renderPolicy|Controls whether the generation of page content is done on the server or deferred to the client.|
+|config/present/common/locale|Specifies the default locale used in the output document.|
+|config/present/destination|When contained by a present element, specifies the output format. When contained by an openAction element, specifies the action to perform upon opening the document in an interactive client.|
+|config/present/output/type|Specifies either the type of compression to apply to a file or the type of output to produce.|
+|config/present/common/temp/uri|Specifies the Form URI.|
+|config/present/common/template/base|Supplies a base location for URIs in the form design. When this element is absent or empty, the location of the form design is used as the base.|
+|config/present/common/log/to|Controls the location that log data or output data is written to.|
+|config/present/output/to|Controls the location that log data or output data is written to.|
+|config/present/script/currentPage|Specifies the initial page when the document is opened.|
+|config/present/script/exclude|Informs Forms as a Cloud Service which events to ignore.|
+|config/present/pdf/linearized|Controls whether the output PDF document is linearized.|
+|config/present/script/runScripts|Controls which set of scripts Forms as a Cloud Service executes.|
+|config/present/pdf/tagged|Controls the inclusion of tags into the output PDF document. Tags, in the context of PDF, are additional information included in a document to expose the logical structure of the document. Tags assist accessibility aids and reformatting. For example, a page number may be tagged as an artifact so that a screen reader does not enunciate it in the middle of the text. Although tags make a document more useful, they also increase the size of the document and the processing time to create it.|
+|config/present/pdf/fontInfo/alwaysEmbed|Specifies a font that is embedded into the output document.|
+|config/present/pdf/fontInfo/neverEmbed|Specifies a font that must never be embedded into the output document.|
+|config/present/pdf/pdfa/part|Specifies the version number of the PDF/A specification that the document conforms to.|
+|config/present/pdf/pdfa/amd|Specifies the amendment level of the PDF/A specification.|
+|config/present/pdf/pdfa/conformance|Specifies the conformance level with the PDF/A specification.|
+|config/present/pdf/version|Specifies the version of PDF document to generate|
+|config/present/pdf/version/map|Specifies the fall back fonts for the document|
+
+
+<!--
+
+### Use a custom XCI file in your AEM Forms environment
+
+  1. Add the custom XCI file to your development project.
+  1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
+  1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
+  
+-->
+
+### Use a custom XCI file in your local Forms development environment
+
+  1. Upload the XCI file to your local development environment.
+  1. Open <!--Cloud Service SDK--> configuration manager. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+  1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
+  1. Specify path of the XCI file and click **[!UICONTROL Save]**.
+
+  

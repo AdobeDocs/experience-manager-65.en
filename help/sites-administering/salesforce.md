@@ -101,7 +101,7 @@ To export AEM users as Salesforce leads:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Select the AEM user that you want to create as a lead as the **Payload** for this workflow (home -&gt; users). Be sure to select the profile node of the user as it contains information like **givenName**, and  **familyName**, which are mapped to Salesforce lead's **FirstName** and **LastName** fields.
+1. Select the AEM user that you want to create as a lead as the **Payload** for this workflow (home > users). Be sure to select the profile node of the user as it contains information like **givenName**, and  **familyName**, which are mapped to Salesforce lead's **FirstName** and **LastName** fields.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 

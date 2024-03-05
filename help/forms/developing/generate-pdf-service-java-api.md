@@ -1,14 +1,14 @@
 ---
 title: Generate PDF Service Java API QuickStart(SOAP)
-seo-title: Generate PDF Service Java API QuickStart(SOAP)
+
 description: Use the Generate PDF service to convert a Microsoft Word document to a PDF document, convert HTML content to a PDF document, convert a PDF document to an RTF file using the Java API.
-seo-description: Use the Generate PDF service to convert a Microsoft Word document to a PDF document, convert HTML content to a PDF document, convert a PDF document to an RTF file using the Java API.
-uuid: f8c4a476-de5e-440a-b419-0bd1d7fde5ca
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a7c0c4cf-7476-41e7-8d4e-564e6a21458d
+
 role: Developer
 exl-id: b856a93b-91fa-47a5-9e46-6a537218fd4e
 ---

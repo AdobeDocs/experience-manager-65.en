@@ -14,7 +14,7 @@ Adobe Experience Platform Launch is the recommended way to implement Analytics, 
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
 
 ## Tutorial {#tutorial}
 
@@ -22,6 +22,6 @@ To understand how to integrate your SPA with Adobe Experience Platform Launch, s
 
 >[!NOTE]
 >
->The referenced KB was created to enable Adobe Experience Platform Launch integration with SPAs that don't use the Adobe Experience Manager SPA Editor. These methods should also allow the Adobe Experience Platform Launch integration to coexist with SPAs that are built to use the SPA Editor.
+>The referenced KB was created to enable Adobe Experience Platform Launch integration with SPAs that do not use the Adobe Experience Manager SPA Editor. These methods should also allow the Adobe Experience Platform Launch integration to coexist with SPAs that are built to use the SPA Editor.
 >
 >The use of Redux alongside the JavaScript SPA libraries has not been fully explored. Support of Redux is planned in a future release of the SPA Editor.

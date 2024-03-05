@@ -39,7 +39,7 @@ This article builds on those fundamentals so you understand how to prepare your 
 
 *It's a big, bad world out there*.
 
-Maybe, maybe not, but it's certainly a big ***complicated*** world out there. Data modeling is used to define a simplified representation of a very (very) small sub-section, using the specific information that is needed for a certain purpose.
+Maybe, but maybe not. It is certainly an overwhelmingly ***complicated*** world out there. Data modeling is used to define a simplified representation of a very (very) small sub-section, using the specific information that is needed for a certain purpose.
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Content Fragment Models provide various mechanisms that let you define the struc
 A Content Fragment Model describes an entity.
 
 >[!NOTE]
->You must enable Content Fragment functionality in the Configuration Browser so that you can create models.
+>Enable Content Fragment functionality in the Configuration Browser so that you can create models.
 
 >[!TIP]
 >

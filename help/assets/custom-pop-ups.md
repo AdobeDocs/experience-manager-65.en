@@ -1,18 +1,17 @@
 ---
 title: Create custom pop-ups using Quickview
-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
+description: The default Quickview is used in ecommerce experiences by which a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 ---
 # Create custom pop-ups using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer, this functionality lets users select on a hotspot, or a thumbnail image, or on an image map to see information or related content.
+The default Quickview is used in ecommerce experiences by which a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer, this functionality lets users select on a hotspot, or a thumbnail image, or on an image map to see information or related content.
 
 Quickview is supported by the following viewers in Dynamic Media:
 
@@ -103,7 +102,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
     * Interactive Image viewer: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
     * Interactive Video viewer: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. You must configure the `quickViewActivate` handler.
+1. Configure the `quickViewActivate` handler.
 
    The `quickViewActivate` handler controls the Quickview in the viewer. The handler contains the variable list and function calls for use with the Quickview. The embed code provides mapping for the SKU variable set in the Quickview and a sample `loadQuickView` function call.
 
@@ -158,7 +157,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
       With the variables from the Quickview mapped and the function call in place, the browser console writes the variable value to the browser console using the sample function provided.
 
 1. You can now use a function to invoke a simple pop-up in the Quickview. The following example uses a `DIV` for a popup.
-1. Style the pop-up `DIV` in the following manner. Add your own additional styling as desired.
+1. Style the pop-up `DIV` in the following manner. Add your own additional stylings as desired.
 
    ```xml
    <style type="text/css">

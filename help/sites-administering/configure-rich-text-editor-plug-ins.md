@@ -321,7 +321,7 @@ Any text authored in RTE is placed within a block tag, the default being `<p>`. 
 
 >[!NOTE]
 >
->If a block tag, for example, an &lt;hr&gt; tag, can't be assigned to a paragraph, it is not a valid use case for a paraformat plug-in.
+>If a block tag, for example, an &lt;hr&gt; tag, cannot be assigned to a paragraph, it is not a valid use case for a paraformat plug-in.
 
 When the Paragraph Formats plug-in is enabled for the first time, no default Paragraph Formats are available. The pop-up list is empty. To provide the authors with Paragraph Formats, do the following:
 
@@ -581,7 +581,7 @@ A standard AEM installation includes the dictionaries for American English (`en_
 >
 >The RTE spell checker is available on-demand. It does not run automatically as you start typing text. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE checks the spelling of words and highlights the misspelled words.
 >
->If you incorporate any change that the spell checker suggests, the state of the text changes and misspelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
+>If you incorporate any change that the spell checker suggests, the state of the text changes and misspelled words are no longer highlighted. To run the spell checker, click Spellchecker button again.
 
 ## Configure the history size for undo and redo actions {#undohistory}
 

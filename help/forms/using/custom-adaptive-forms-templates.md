@@ -1,13 +1,13 @@
 ---
 title: Creating a custom adaptive form template
-seo-title: Creating a custom adaptive form template
+
 description: This article describes how to create custom adaptive form templates.
-seo-description: This article describes how to create custom adaptive form templates.
-uuid: 11b5f8cd-c56a-4525-97d5-1938ef5f183d
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: affba49e-9712-4d29-858b-2f8ec4f2b1f1
+
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
 ---
@@ -119,7 +119,7 @@ The custom template has the same styling as the default template because the tem
 
 1. Rename the copied component to `enrollmentpage`.
 
-1. **(Only if you already have a contentpage)** Perform the following steps (a-d), if you have an existing `contentpage`component for your website. If you do not have an existing `contentpage`component for your website, you can leave the `resourceSuperType`property to point to the OOTB base page.
+1. **(Only if you already have a contentpage)** Perform the following steps (a-d), if you have an existing `contentpage`component for your website. If you do not have an existing `contentpage`component for your website, you can leave the `resourceSuperType`property to point to the out-of-the-box base page.
 
     1. For the `enrollmentpage` node, set value of the property `sling:resourceSuperType` to mycompany/components/page/contentpage. The `contentpage` component is the base page component for your site. Other page components can extend it. Remove script files under `enrollmentpage`, except `head.jsp`, `content.jsp`, and `library.jsp`. The `sling:resourceSuperType` component, which is `contentpage` in this case, includes all such scripts. Headers, including navigation bar and footer are inherited from the `contentpage` component.
 

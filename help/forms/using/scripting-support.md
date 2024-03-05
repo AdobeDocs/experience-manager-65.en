@@ -1,15 +1,11 @@
 ---
 title: Scripting support for HTML5 forms
-seo-title: Scripting support for HTML5 forms
 description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
-seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
-uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 ---
 # Scripting support for HTML5 forms {#scripting-support-for-html-forms}
@@ -30,7 +26,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
    <td>Specifies the content of the field before it changes in response to the actions of a user. This value can be recalled, similar to an undo feature.</td>
    <td><p>Does not work for drop-downs and list boxes. <code>PrevText </code>does not work correctly for the following cases:</p>
     <ul>
-     <li>On typing some special character keys (for example, $, (,), &amp;, @, and more) in Numeric fields on the iPad, and </li>
+     <li>On typing some special character keys (for example, $ or , or &amp; or @ and more) in Numeric fields on the iPad, and </li>
      <li>For the Date field (when date is entered through calendar).<br /> </li>
     </ul> <p>Setting value through script is not supported.</p> </td>
   </tr>
@@ -46,7 +42,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
     <ul>
      <li>On selecting-replacing texts</li>
      <li>On deleting, copying, and pasting texts.</li>
-     <li>On typing some special character keys (for example, $, (, ), &amp;, @, and more) in Numeric fields<br /> </li>
+     <li>On typing some special character keys (for example, $ or , or &amp; or @ and more) in Numeric fields<br /> </li>
      <li>On using shift+alphanumeric combination. </li>
      <li>On using date/time fields.</li>
     </ul>
@@ -61,7 +57,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
     <ul>
      <li>On selecting-replacing texts</li>
      <li>On deleting, copying, and pasting texts.</li>
-     <li>On typing some special character keys (for example, $, (,), &amp;, @, and more) in Numeric fields<br /> </li>
+     <li>On typing some special character keys (for example, $ or , or &amp; or @ and more) in Numeric fields<br /> </li>
      <li>On using shift+alphanumeric combination. </li>
      <li>On using date/time fields.</li>
     </ul> <p>Setting value through script is not supported.</p> </td>
@@ -73,7 +69,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
   </tr>
   <tr>
    <td>modifier</td>
-   <td>Determines whether the modifier key (for example, Ctrl on Microsoft® Windows®) is held down when a particular event executes.</td>
+   <td>Determines whether the modifier key (for example, Ctrl on Microsoft&reg; Windows&reg;) is held down when a particular event executes.</td>
    <td>None</td>
   </tr>
  </tbody>
@@ -312,12 +308,12 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
   </tr>
   <tr>
    <td>x</td>
-   <td>Specifies the x coordinate of the container’s anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
+   <td>Specifies the x coordinate of the container's anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
    <td>None</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Specifies the y coordinate of a container’s anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
+   <td>Specifies the y coordinate of a container's anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
    <td>None</td>
   </tr>
   <tr>
@@ -440,12 +436,12 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
   </tr>
   <tr>
    <td>x</td>
-   <td>Specifies the x coordinate of the container’s anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
+   <td>Specifies the x coordinate of the container's anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
    <td>None</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Specifies the y coordinate of a container’s anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
+   <td>Specifies the y coordinate of a container's anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
    <td>None</td>
   </tr>
   <tr>
@@ -460,7 +456,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
   </tr>
   <tr>
    <td>presence</td>
-   <td>Specifies an object’s visibility.</td>
+   <td>Specifies an object's visibility.</td>
    <td>None</td>
   </tr>
   <tr>
@@ -720,7 +716,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
   </tr>
   <tr>
    <td>presence</td>
-   <td>Specifies an object’s visibility.</td>
+   <td>Specifies an object's visibility.</td>
    <td> </td>
   </tr>
   <tr>
@@ -933,12 +929,12 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
   </tr>
   <tr>
    <td>x</td>
-   <td>Specifies the x coordinate of the container’s anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
+   <td>Specifies the x coordinate of the container's anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
    <td>None</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Specifies the y coordinate of a container’s anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
+   <td>Specifies the y coordinate of a container's anchor point relative to the upper-left corner of the parent container when placed with positioned layout.</td>
    <td>None</td>
   </tr>
   <tr>
@@ -958,7 +954,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
   </tr>
   <tr>
    <td>presence</td>
-   <td>Specifies an object’s visibility.</td>
+   <td>Specifies an object's visibility.</td>
    <td> </td>
   </tr>
   <tr>
@@ -988,7 +984,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
   </tr>
   <tr>
    <td>calculate</td>
-   <td>The calculate object controls the calculation of a field’s value.<br /> </td>
+   <td>The calculate object controls the calculation of a field's value.<br /> </td>
    <td>None</td>
   </tr>
  </tbody>
@@ -1103,7 +1099,7 @@ JavaScript, FormCalc properties, and methods supported in HTML5 forms are as lis
 
 | **Property** |**Description** |**Exception** |
 |---|---|---|
-| presence |Specifies an object’s visibility. |None |
+| presence |Specifies an object's visibility. |None |
 
 ## FormCalc {#formcalc}
 

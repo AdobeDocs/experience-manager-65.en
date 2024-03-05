@@ -430,7 +430,7 @@ Every part of the Bulk Editor can be configured. The following table lists all t
      <li>cellCls: css class </li>
      <li>readOnly: true to not being able to change value </li>
      <li>checkbox: true to define all cells of the column as checkboxes (true/false values) </li>
-     <li>forcedPosition: integer value to specify where column must be placed in grid (between 0 and number of colums-1)<p><br /> </p> </li>
+     <li>forcedPosition: integer value to specify where column must be placed in grid (between 0&ndash;number of colums-1)<p><br /> </p> </li>
     </ul> </td>
   </tr>
  </tbody>

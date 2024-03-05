@@ -13,11 +13,11 @@ The Rich Text Editor (RTE) is a basic building block for inserting textual conte
 
 ## In-Place Editing {#in-place-editing}
 
-Selecting a text-based component with a single tap or click will reveal the [component toolbar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) as with any component.
+Selecting a text-based component with a single click will reveal the [component toolbar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) as with any component.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Tapping/clicking agin or initially selecting the component with a slow double-tap/click opens in-place editing, which has its own toolbar. Here you can edit the content and make basic formatting changes.
+Tapping/clicking agin or initially selecting the component with a slow double-click opens in-place editing, which has its own toolbar. Here you can edit the content and make basic formatting changes.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

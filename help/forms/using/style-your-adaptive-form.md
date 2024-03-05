@@ -47,7 +47,7 @@ Adaptive forms editor provides multiple out-of-the-box themes. If you plan not t
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html) 
 
 1. Open properties of **[!UICONTROL Adaptive Form container]**. In the properties browser, navigate to **[!UICONTROL Basic]** &gt; **[!UICONTROL Adaptive Form Theme]**. The **[!UICONTROL Adaptive Form Theme]** field lists all the out-of-the-box and custom themes. By default, the Canvas theme is applied.
-1. Select a theme from the **[!UICONTROL Adaptive Form Theme]** field. For example, **Survey theme**. Tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) so you can apply the selected theme.
+1. Select a theme from the **[!UICONTROL Adaptive Form Theme]** field. For example, **Survey theme**. Select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) so you can apply the selected theme.
 
    ![Adaptive form with the default theme](assets/default-adaptive-form.png)
 
@@ -69,17 +69,17 @@ The design displayed above requires changes in placeholder text and logo of your
 
        [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
     
-    1. Tap logo image in the [!UICONTROL header] component and tap ![cmppr](assets/cmppr.png) **[!UICONTROL properties]**. In the [!UICONTROL image] property, tap X to remove the existing logo image.
-    1. Tap **[!UICONTROL upload]**, select the logo.png, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) to save the changes. The image was downloaded in the [Before you start](/help/forms/using/style-your-adaptive-form.md#before-you-start) section. 
-    1. Tap header text, `We.Retail`, and tap ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Change header text to `we retail`. Apply bold formatting only to `we`in `we retail`.
+    1. Select logo image in the [!UICONTROL header] component and select ![cmppr](assets/cmppr.png) **[!UICONTROL properties]**. In the [!UICONTROL image] property, select X to remove the existing logo image.
+    1. Select **[!UICONTROL upload]**, select the logo.png, and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) to save the changes. The image was downloaded in the [Before you start](/help/forms/using/style-your-adaptive-form.md#before-you-start) section. 
+    1. Select header text, `We.Retail`, and select ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Change header text to `we retail`. Apply bold formatting only to `we`in `we retail`.
 
        ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Remove title and add placeholder text:
 
-    1. Tap the Customer ID field and tap ![cmppr](assets/cmppr.png) properties.
+    1. Select the Customer ID field and select ![cmppr](assets/cmppr.png) properties.
     1. Copy the content of the **[!UICONTROL Title]** field to the **[!UICONTROL Placeholder Text]** field.
-    1. Delete the content of the **[!UICONTROL Title]** field and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+    1. Delete the content of the **[!UICONTROL Title]** field and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
     1. Repeat the previous three steps for all the text boxes, numeric box, and email field in the form.
 
        ![updated-adaptive-form](assets/updated-adaptive-form.png)
@@ -95,16 +95,16 @@ In this tutorial, you style header and footer, text and numeric components, atta
 ### Create a theme {#create-a-theme}
 
 1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Themes]**. The default URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes). 
-1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Theme]**. The [!UICONTROL Create Theme] page with the fields required to create a theme appears. The **[!UICONTROL Title]** and **[!UICONTROL Name]** fields are mandatory:
+1. Select **[!UICONTROL Create]** and select **[!UICONTROL Theme]**. The [!UICONTROL Create Theme] page with the fields required to create a theme appears. The **[!UICONTROL Title]** and **[!UICONTROL Name]** fields are mandatory:
 
     * **Title:** Specify a title of the theme. For example, **Global Theme.** The title helps you identify the theme from the list of themes.
     * **Name:** Specify the name of the theme. For example, **Global-Theme.** A node with the specified name is created in the repository. As you start typing a title, the value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
 
-1. Tap **[!UICONTROL Create]**. A theme is created and a dialog to open the form for editing appears. Tap **[!UICONTROL Open]** to open the newly created theme in a new tab. The theme opens in the theme editor. For styling, the theme editor uses an out-of-the-box adaptive form shipped with AEM [!DNL Forms].
+1. Select **[!UICONTROL Create]**. A theme is created and a dialog to open the form for editing appears. Select **[!UICONTROL Open]** to open the newly created theme in a new tab. The theme opens in the theme editor. For styling, the theme editor uses an out-of-the-box adaptive form shipped with AEM [!DNL Forms].
 
    For information about using the theme editor UI, see [About the theme editor](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Tap **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In the **[!UICONTROL Preview Form]** field, select the **shipping-address-add-update-form** adaptive form, tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), tap **[!UICONTROL Save]**. Now, the theme editor is configured to use your own adaptive form instead of the default adaptive form. Tap **[!UICONTROL Cancel]** to return to the theme editor.
+1. Select **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In the **[!UICONTROL Preview Form]** field, select the **shipping-address-add-update-form** adaptive form, select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), select **[!UICONTROL Save]**. Now, the theme editor is configured to use your own adaptive form instead of the default adaptive form. Select **[!UICONTROL Cancel]** to return to the theme editor.
 
    ![custom-theme](assets/custom-theme.png)
 
@@ -118,9 +118,9 @@ In this tutorial, you style header and footer, text and numeric components, atta
 
 Header and footer provide a consistent and distinctive look to an adaptive form. Generally, the header contains the logo and name of the organization, the footer contains copyright information, and these remain identical across multiple forms of an organization. To style the header and footer of the shipping-address-add-update-form adaptive form:
 
-1. Navigate the **[!UICONTROL Header]** &gt; **[!UICONTROL Text]** option in the Selectors panel. The Selectors panel is on the left of the theme editor. If the panel is not visible, tap ![toggle-side-panel](assets/toggle-side-panel.png) Toggle Side Panel.  
+1. Navigate the **[!UICONTROL Header]** &gt; **[!UICONTROL Text]** option in the Selectors panel. The Selectors panel is on the left of the theme editor. If the panel is not visible, select ![toggle-side-panel](assets/toggle-side-panel.png) Toggle Side Panel.  
 
-1. Set the following properties in the **[!UICONTROL Text]** accordion and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). 
+1. Set the following properties in the **[!UICONTROL Text]** accordion and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). 
 
    | Property |Value |
    |---|---|
@@ -128,10 +128,10 @@ Header and footer provide a consistent and distinctive look to an adaptive form.
    | Font Color |FFFFFF |
    | Font Size |54 px |
 
-1. Tap the [!UICONTROL header] widget and tap **[!UICONTROL Header]**. The options to style the Header widget appear on the left. Expand the **[!UICONTROL Dimensions & Position]** accordion, set the **[!UICONTROL Height]** to `120px`, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Select the [!UICONTROL header] widget and select **[!UICONTROL Header]**. The options to style the Header widget appear on the left. Expand the **[!UICONTROL Dimensions & Position]** accordion, set the **[!UICONTROL Height]** to `120px`, and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expand the **[!UICONTROL Background]** accordion of the header widget, set the **[!UICONTROL Background Color]** to `F6921E.`
 
-   Hover over **[!UICONTROL Image & Gradient]** &gt; **[!UICONTROL + Add]**, tap **[!UICONTROL Image]**. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Hover over **[!UICONTROL Image & Gradient]** &gt; **[!UICONTROL + Add]**, select **[!UICONTROL Image]**. Set the following properties and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Property |Value |
    |---|---|
@@ -139,7 +139,7 @@ Header and footer provide a consistent and distinctive look to an adaptive form.
    | Position |Right Bottom |
    | Tiling |No Repeat |
 
-1. In the theme editor, tap the logo in the header and tap **[!UICONTROL Header Logo]**. Expand the Dimensions & Position accordion, set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. In the theme editor, select the logo in the header and select **[!UICONTROL Header Logo]**. Expand the Dimensions & Position accordion, set the following properties and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -154,7 +154,7 @@ Header and footer provide a consistent and distinctive look to an adaptive form.
         <li>Top: 1.5rem</li> 
         <li>Bottom: -35px</li> 
         <li>Left: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Tip:</strong> Tap the <img src="assets/link.png"> link icon to provide a different value to each field.<br /> </p> </td> 
+       </ul> <p><strong>Tip:</strong> Select the <img src="assets/link.png"> link icon to provide a different value to each field.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Height</td> 
@@ -163,13 +163,13 @@ Header and footer provide a consistent and distinctive look to an adaptive form.
     </tbody> 
    </table>
 
-1. Tap the footer widget and tap **[!UICONTROL Footer]**. Expand the **[!UICONTROL Background]** accordion, set the **[!UICONTROL Background Color]** to `F6921E`, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Select the footer widget and select **[!UICONTROL Footer]**. Expand the **[!UICONTROL Background]** accordion, set the **[!UICONTROL Background Color]** to `F6921E`, and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### Style the data capture component and apply a background to the adaptive form {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 You can use multiple components in an adaptive form to capture data. For example, text box and numeric box. You can provide an identical style to all the data capture components or a separate style for each component. In this tutorial, an identical style is applied to numeric boxes (Customer ID, ZIP Code) and text boxes (Customer ID, Name, Shipping Address, State, Email). To style the data capture components:
 
-1. Tap the **[!UICONTROL Customer ID]** field and tap the **[!UICONTROL Field Widget]** option. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Select the **[!UICONTROL Customer ID]** field and select the **[!UICONTROL Field Widget]** option. Set the following properties and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -225,7 +225,7 @@ You can use multiple components in an adaptive form to capture data. For example
     </tbody> 
     </table>
 
-1. Tap on the empty area above the **[!UICONTROL Customer ID]** field and tap **[!UICONTROL Responsive Panel Container]**. Set the **[!UICONTROL Background]** &gt; **[!UICONTROL Background Color]** to F1F2F2. Tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Select the empty area above the **[!UICONTROL Customer ID]** field and select **[!UICONTROL Responsive Panel Container]**. Set the **[!UICONTROL Background]** &gt; **[!UICONTROL Background Color]** to F1F2F2. Select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Responsive panel container](do-not-localize/responsive-panel-container.png)
 
@@ -233,7 +233,7 @@ You can use multiple components in an adaptive form to capture data. For example
 
 You can use a custom theme to apply an identical style to all the buttons of the adaptive form and [inline styling](/help/forms/using/inline-style-adaptive-forms.md) to apply a style to a specific button. To style the buttons:
 
-1. Tap the **[!UICONTROL Submit]** button and tap the **[!UICONTROL Button]** option. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Select the **[!UICONTROL Submit]** button and select the **[!UICONTROL Button]** option. Set the following properties and select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -294,14 +294,14 @@ Some styles apply to only a specific component. Such components are styled in ad
 
    ![style-option](assets/style-option.png)
 
-1. Tap the **[!UICONTROL Attach]** button and tap the ![aem_6_3_edit](assets/aem_6_3_edit.png)icon. Set the following properties in the **[!UICONTROL Dimensions and Position]** accordion:
+1. Select the **[!UICONTROL Attach]** button and select the ![aem_6_3_edit](assets/aem_6_3_edit.png)icon. Set the following properties in the **[!UICONTROL Dimensions and Position]** accordion:
 
    | Property |Value |
    |---|---|
    | Float |Left |
    | Width |10% |
 
-1. Tap the **[!UICONTROL Government approved address proof]** option and tap the ![aem_6_3_edit](assets/aem_6_3_edit.png)icon. Set the following properties:
+1. Select the **[!UICONTROL Government approved address proof]** option and select the ![aem_6_3_edit](assets/aem_6_3_edit.png)icon. Set the following properties:
 
    <table> 
     <tbody> 
@@ -391,7 +391,7 @@ Some styles apply to only a specific component. Such components are styled in ad
     </tbody> 
    </table>
 
-1. Tap the **[!UICONTROL Submit]** button and tap the ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. Set the following properties:
+1. Select the **[!UICONTROL Submit]** button and select the ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. Set the following properties:
 
      <table> 
     <tbody> 
@@ -436,16 +436,77 @@ Some styles apply to only a specific component. Such components are styled in ad
 You can use various fonts to design an adaptive form. All the devices that the adaptive form is viewed on may not have the fonts used to design the adaptive form. You can use a web font service to deliver the required fonts to the target device.
 
 [!DNL Adobe Fonts] is a Web Fonts service. You can configure and use the service with adaptive forms. To use [!DNL Adobe Fonts] in an adaptive form:
+1. Browse the [library of Adobe fonts](https://fonts.adobe.com/) and choose font to style your form. 
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
+
+   >[!NOTE]
+   >
+   > You can add tags or filters to refine the list of fonts.
+
+1. Click the </> button to add the family to a web project, in case you find a font you like.
+
+   ![select-font-from-font-libary](assets/select-font-from-font-library.png)
+
+   Add fonts to a web project dialog screen appears.
+
+   >[!NOTE]
+   >
+   > You can only add fonts to your web project if they have the </> button available. 
+
+2. Name your web project.
+3. Select the checkboxes to select the font weights and styles you want to include.
+
+    ![add a font library](assets/add-a-font-window.png)
+
+4. Select **Click** to create the project.
+5. Copy the embed code and the URL from the screen.
+      ![embed code and URL](assets/font-add-url.png)
+
+6. Click **Done** to close the web project window.
+7. Log into your AEM instance and go to URL `http://server:port/crx/de/index.jsp#`
+8. Create a folder structure in CRXDE, for example `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`. 
+9. Go to the newly created `clientlibs` folder and add the `allowProxy` and `categories` properties.
+10. Navigate to `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` and create a css folder.
+11. Go to the created CSS folder and create a file. For example, create a file as `fonts.css` and paste the embed code along with the URL.
+   ![Folder structure](/help/forms/using/assets/fonts-add-in-crxde.png)
+12. Save the changes.
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+> To use the added custom fonts in an Adaptive Form, ensure that the client library name in the **[!UICONTROL Client Library Category]** aligns with the name specified in the categories option of the clientlib folder.
+
+The included fonts are now accessible to the Adaptive Form through the following custom font client library.
+
+
+<!--
+Create Adobe Fonts Configuration
+
+1. To create a API Token, go to **login** > **API Token** > **Make me a new API token**.
+
+   ![API token](/help/forms/using/assets/fonts-api-token.png)
+
+2. Once, you click **Make me a new API token**, a new token is generated. 
+3. Copy the generated token for future use.
+4. Now login to your AEM  author instance. On the author instance, go to **[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**> **[!UICONTROL Adobe Fonts]**.
+5. Select the configuration container and click **Create**. **[UICONTROL Create Adobe Fonts Configuration]** screen appears.
+    ![API token](/help/forms/using/adobe-font-configuration-screen.png)
+
+6. Spceify the name and paste the API token in the **[!UICONTROL Kit ID]** textbox.
+7. Click **Create**.
+
+
+
+The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
+1. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. 
+2. In the **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
+
 
 1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
 1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
 
-   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
 
-1. Configure your theme to use the [!DNL Adobe Fonts] configuration. On the author instance, open **[!UICONTROL Global Theme]** in the theme editor. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In the **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
 
-   The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.

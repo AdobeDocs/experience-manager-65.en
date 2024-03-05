@@ -2,12 +2,10 @@
 title: Configure Dynamic Media - Hybrid mode
 description: Learn how to configure Dynamic Media - Hybrid mode.
 mini-toc-levels: 3
-uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
@@ -15,6 +13,36 @@ exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 ---
 # Configure Dynamic Media - Hybrid mode {#configuring-dynamic-media-hybrid-mode}
+
+>[!IMPORTANT]
+>
+>End of support for Secure Socket Layer 2.0 and 3.0 and Transport Layer Security 1.0 and 1.1.
+>Effective April 30, 2024, Adobe Dynamic Media is ending support for the following:
+>
+>* SSL (Secure Socket Layer) 2.0
+>* SSL 3.0 
+>* TLS (Transport Layer Security) 1.0 and 1.1
+>* The following weak ciphers in TLS 1.2:
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_RSA_WITH_AES_256_GCM_SHA384`
+> `TLS_RSA_WITH_AES_256_CBC_SHA256`
+> `TLS_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_AES_128_GCM_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+>
+> See also [Dynamic Media Limitations](/help/assets/limitations.md).
+
+<!-- FOR ABOVE - CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+
 
 Dynamic Media-Hybrid must be enabled and configured for use. Depending on your use case, Dynamic Media has several [supported configurations](#supported-dynamic-media-configurations).
 
@@ -74,7 +102,7 @@ You can choose to implement Dynamic Media only for imaging, only for video, or f
   </tr>
   <tr>
    <td>Deliver ONLY images in production</td>
-   <td>Images are delivered through servers in Adobe’s worldwide data centers and then cached by a CDN for scalable performance and global reach.</td>
+   <td>Images are delivered through servers in Adobe's worldwide data centers and then cached by a CDN for scalable performance and global reach.</td>
    <td>
     <ol>
      <li>On the Experience Manager <strong>author</strong> node, <a href="#enabling-dynamic-media">enable Dynamic Media</a>.</li>
@@ -89,7 +117,7 @@ You can choose to implement Dynamic Media only for imaging, only for video, or f
   </tr>
   <tr>
    <td>Deliver ONLY images in pre-production (Dev, QE, Stage, and so on.)</td>
-   <td>Images are delivered through the Experience Manager publish node. In this scenario, because traffic is minimal, there is no need to deliver images to Adobe’s data center. And it allows for secure preview of content before production launch.</td>
+   <td>Images are delivered through the Experience Manager publish node. In this scenario, because traffic is minimal, there is no need to deliver images to Adobe's data center. And it allows for secure preview of content before production launch.</td>
    <td>
     <ol>
      <li>On the Experience Manager <strong>author</strong> node, <a href="#enabling-dynamic-media">enable Dynamic Media</a>.</li>
@@ -115,7 +143,7 @@ You can choose to implement Dynamic Media only for imaging, only for video, or f
   </tr>
   <tr>
    <td>Deliver BOTH images and video in production</td>
-   <td><p>Videos are delivered and cached by a CDN for scalable performance and global reach. Images and video poster images are delivered through servers in Adobe’s worldwide data centers and then cached by a CDN for scalable performance and global reach.</p> <p>Refer to previous sections to setup image or video in pre-production. </p> </td>
+   <td><p>Videos are delivered and cached by a CDN for scalable performance and global reach. Images and video poster images are delivered through servers in Adobe's worldwide data centers and then cached by a CDN for scalable performance and global reach.</p> <p>Refer to previous sections to setup image or video in pre-production. </p> </td>
    <td>
     <ol>
      <li>On the Experience Manager <strong>author</strong> node, <a href="#enabling-dynamic-media">enable Dynamic Media</a>.</li>
@@ -234,11 +262,11 @@ If you are upgrading Experience Manager - Dynamic Media from 6.3 to 6.5 (which n
 >
 >If you run your Experience Manager instance in compatibility mode &ndash; that is, you have the compatibility package installed &ndash; you do not need to run these commands.
 
-For all upgrades, either with or without the compatibility package, you can copy the default, out-of-the-box viewer presets that originally came with Dynamic Media by running the following Linux® curl command:
+For all upgrades, either with or without the compatibility package, you can copy the default, out-of-the-box viewer presets that originally came with Dynamic Media by running the following Linux&reg; curl command:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-To migrate any custom viewer presets and configurations that you have created from `/etc` to `/conf`, run the following Linux® curl command:
+To migrate any custom viewer presets and configurations that you have created from `/etc` to `/conf`, run the following Linux&reg; curl command:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
@@ -401,7 +429,7 @@ Check the password. The password saved in the replication agent is not the same 
 
 #### Problem: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
-This issue is caused by a configuration error in your Experience Manager Author instance. The Java™ process on the Author is not getting the correct `javax.net.ssl.trustStore`. You see this error in the replication log:
+This issue is caused by a configuration error in your Experience Manager Author instance. The Java&trade; process on the Author is not getting the correct `javax.net.ssl.trustStore`. You see this error in the replication log:
 
 ```shell
 14.04.2016 09:37:43 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1460651862089, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://<localhost>:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx2': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
@@ -418,7 +446,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 ```
 
 **Solution:**
-Make sure that the Java™ process on the Experience Manager Author has the system property `-Djavax.net.ssl.trustStore=` set to a valid truststore.
+Make sure that the Java&trade; process on the Experience Manager Author has the system property `-Djavax.net.ssl.trustStore=` set to a valid truststore.
 
 #### Problem: KeyStore is either not set up or it is not initialized {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
@@ -624,7 +652,7 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
 The Video Analytics preset—sometimes known simply as analytics preset--is stored next to the Viewer presets in Dynamic Media. It is basically the same as a Viewer preset but with information used to configure AppMeasurement and Video Heartbeat reporting.
 
-The preset’s properties are the following:
+The preset's properties are the following:
 
 * `reportSuite`
 * `trackingServer`
@@ -815,7 +843,7 @@ Configuring the Dynamic Media Image Server involves editing the Adobe CQ Scene7 
 >
 >Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media). However, you can optionally choose to fine-tune your installation by configuring Dynamic Media Image Server to meet certain specifications or requirements.
 
-**Prerequisite** - *Before* you configure Dynamic Media Image Server, ensure that your VM of Windows® includes an installation of the Microsoft® Visual C++ Libraries. The libraries are necessary to run Dynamic Media Image Server. You can [download the Microsoft® Visual C++ 2010 Redistributable Package (x64) here](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
+**Prerequisite** - *Before* you configure Dynamic Media Image Server, ensure that your VM of Windows&reg; includes an installation of the Microsoft&reg; Visual C++ Libraries. The libraries are necessary to run Dynamic Media Image Server. You can [download the Microsoft&reg; Visual C++ 2010 Redistributable Package (x64) here](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 To configure Dynamic Media Image Server settings:
 

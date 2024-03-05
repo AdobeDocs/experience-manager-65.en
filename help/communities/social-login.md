@@ -60,7 +60,7 @@ As of AEM  6.4  GA and AEM 6.3 SP1 social login  was  updated to work with the n
 
 >[!NOTE]
 >
->For older AEM versions, if you are facing an exception in logs **Can't extract a token from this**, upgrade to latest CFP for that AEM release.
+>For older AEM versions, if you are facing an exception in logs **Cannot extract a token from this**, upgrade to latest CFP for that AEM release.
 
 For the Facebook Graph API version information, see the [Facebook API changelog](https://developers.facebook.com/docs/apps/changelog).
 
@@ -117,7 +117,7 @@ The [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    >[!NOTE]
    >
-   >Groups may be added or removed at any time. But existing  users's  memberships won't be affected. Auto membership only applies to new users being created  post  this field update. For Sites where anonymous users are disabled, chose to add users to corresponding community-members group meant for that closed community site.
+   >Groups may be added or removed at any time. But existing users's memberships are not affected. Auto membership only applies to new users being created  post  this field update. For Sites where anonymous users are disabled, chose to add users to corresponding community-members group meant for that closed community site.
 
     * Select **[!UICONTROL SAVE]**.
     * **[!UICONTROL Publish]**.
@@ -282,7 +282,7 @@ The [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    >[!NOTE]
    >
-   >Groups may be added or removed at any time. But existing users' memberships won't be affected. Auto membership only applies to new users being created post this field update. For Sites where anonymous users are disabled, add users to corresponding community-members group meant for that closed community site.
+   >Groups may be added or removed at any time. But existing users' memberships are not affected. Auto membership only applies to new users being created post this field update. For Sites where anonymous users are disabled, add users to corresponding community-members group meant for that closed community site.
    >
 
 1. Select **[!UICONTROL SAVE]** and **[!UICONTROL Publish]**.
@@ -321,8 +321,8 @@ If editing is necessary, on each AEM publish instance:
 
      Location in the repository where user data is stored. For a community site, to ensure permissions for members to view one another's profile, the path should be the default `/home/users/community`.
 
-   * **[!UICONTROL Enable Params]** do not edit
-   * **[!UICONTROL URL Parameters]** do not edit
+   * **[!UICONTROL Enable Params]** &ndash; do not edit
+   * **[!UICONTROL URL Parameters]** &ndash; do not edit
    * **[!UICONTROL Update User]**
 
      If checked, refreshes user data in the repository on each login to reflect profile changes or additional data requested. The default is deselected.

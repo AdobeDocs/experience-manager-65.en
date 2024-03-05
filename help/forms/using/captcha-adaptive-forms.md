@@ -5,7 +5,7 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 ---
 # Using CAPTCHA in adaptive forms{#using-captcha-in-adaptive-forms}
@@ -45,28 +45,28 @@ AEM Forms users can use the reCAPTCHA service by Google to implement CAPTCHA in 
 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
     1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
-        1. In the Configuration Browser, select the **[!UICONTROL global]** folder and tap **[!UICONTROL Properties]**.
+        1. In the Configuration Browser, select the **[!UICONTROL global]** folder and select **[!UICONTROL Properties]**.
         1. In the Configuration Properties dialog, enable **[!UICONTROL Cloud Configurations]**.
-        1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
+        1. Select **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
 
-    1. In the Configuration Browser, tap **[!UICONTROL Create]**.
+    1. In the Configuration Browser, select **[!UICONTROL Create]**.
     1. In the Create Configuration dialog, specify a title for the folder and enable **[!UICONTROL Cloud Configurations]**.
-    1. Tap **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
+    1. Select **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
 1. Configure the cloud service for reCAPTCHA Enterprise.
 
     1. On your Experience Manager author instance, go to ![tools-1](assets/tools-1.png) &gt; **[!UICONTROL Cloud Services]**.
-    1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and tap **[!UICONTROL Create]**.
+    1. Select **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and select **[!UICONTROL Create]**.
     1. Select version as reCAPTCHA Enterprise and specify Name; Project ID, Site Key, and API key(Obtained in Step 2 and 3) for reCAPTCHA Enterprise service.
     1. Select key type, the key type should be same as the site key configured in the google cloud project, for example, **Checkbox site key** or **Score-based site key**.
-    1. Specify a threshold score in the range 0 to 1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
+    1. Specify a threshold score in the range 0&ndash;1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
     
         > Note:
         >
         > * Form authors can specify a score in the range suitable for uninterrupted form submission.
     
-    1. Tap **[!UICONTROL Create]** to create the cloud service configuration.
+    1. Select **[!UICONTROL Create]** to create the cloud service configuration.
 
-    1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Tap **[!UICONTROL Save Settings]** and then tap **[!UICONTROL OK]** to complete the configuration.
+    1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 
 Once the reCAPTCHA Enterprise service is enabled, it is available for use in adaptive forms. See [using CAPTCHA in adaptive forms](#using-reCAPTCHA).
 
@@ -80,21 +80,21 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
     1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
 
-        1. In the Configuration Browser, select the **[!UICONTROL global]** folder and tap **[!UICONTROL Properties]**.
+        1. In the Configuration Browser, select the **[!UICONTROL global]** folder and select **[!UICONTROL Properties]**.
 
         1. In the Configuration Properties dialog, enable **[!UICONTROL Cloud Configurations]**.
-        1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
+        1. Select **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
 
-    1. In the Configuration Browser, tap **[!UICONTROL Create]**.
+    1. In the Configuration Browser, select **[!UICONTROL Create]**.
     1. In the Create Configuration dialog, specify a title for the folder and enable **[!UICONTROL Cloud Configurations]**.
-    1. Tap **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
+    1. Select **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
 
 1. Configure the cloud service for reCAPTCHA v2.
 
     1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) &gt; **Cloud Services**.
-    1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and tap **[!UICONTROL Create]**.
-    1. Select version as reCAPTCHA v2, specify Name; Site key, and Secret Key for reCAPTCHA service(Obtained in Step 1) and tap **[!UICONTROL Create]** to create the cloud service configuration.
-    1. In the Edit Component dialog, specify the site and secret keys obtained in step 1. Tap **[!UICONTROL Save Settings]** and then tap **OK** to complete the configuration.
+    1. Select **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and select **[!UICONTROL Create]**.
+    1. Select version as reCAPTCHA v2, specify Name; Site key, and Secret Key for reCAPTCHA service(Obtained in Step 1) and select **[!UICONTROL Create]** to create the cloud service configuration.
+    1. In the Edit Component dialog, specify the site and secret keys obtained in step 1. Select **[!UICONTROL Save Settings]** and then select **OK** to complete the configuration.
 
    Once the reCAPTCHA service is configured, it is available for use in adaptive forms. For more information, see [using CAPTCHA in adaptive forms](#using-captcha).
 
@@ -121,7 +121,7 @@ To use reCAPTCHA in adaptive forms:
    >
    >Captcha is time-sensitive and expires in about a minute. Therefore, it is recommended to place the Captcha component just before the Submit button in the adaptive form.
 
-1. Select the Captcha component that you added and tap ![cmppr](assets/cmppr.png) to edit its properties.
+1. Select the Captcha component that you added and select ![cmppr](assets/cmppr.png) to edit its properties.
 1. Specify a title for the CAPTCHA widget. The default value is **Captcha**. Select **Hide title** if you do not want title to appear.
 1. From the **Captcha service** drop-down, select **reCAPTCHA** to enable reCAPTCHA service if you configured it as described in [reCAPTCHA service by Google](#google-reCAPTCHA).
 1. Select a configuration from the Settings drop-down.
@@ -224,11 +224,11 @@ To use reCAPTCHA in adaptive forms:
 
 ### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
 
-You can select to show or hide the CAPTCHA component based on rules that you apply on a component in an Adaptive Form. Tap the component, select ![edit rules](assets/edit-rules-icon.svg), and tap **[!UICONTROL Create]** to create a rule. For more information on creating rules, see [Rule Editor](rule-editor.md).
+You can select to show or hide the CAPTCHA component based on rules that you apply on a component in an Adaptive Form. Select the component, select ![edit rules](assets/edit-rules-icon.svg), and select **[!UICONTROL Create]** to create a rule. For more information on creating rules, see [Rule Editor](rule-editor.md).
 
 For example, the CAPTCHA component must display in an Adaptive Form only if the Currency Value field in the form has a value of more than 25000.
 
-Tap the **[!UICONTROL Currency Value]** field in the form and create the following rules:
+Select the **[!UICONTROL Currency Value]** field in the form and create the following rules:
 
 ![Show or hide rules](assets/rules-show-hide-captcha.png)
 
@@ -244,17 +244,17 @@ You can validate CAPTCHA in an Adaptive Form either when you submit the form or 
 
 To validate a CAPTCHA automatically when you submit an Adaptive Form:
 
-1. Tap the CAPTCHA component and select ![cmppr](assets/configure-icon.svg) to view the component properties.
+1. Select the CAPTCHA component and select ![cmppr](assets/configure-icon.svg) to view the component properties.
 1. In the **[!UICONTROL Validate CAPTCHA]** section, select **[!UICONTROL Validate CAPTCHA at form submission]**.
-1. Tap ![Done](assets/save_icon.svg) to save the component properties.
+1. Select ![Done](assets/save_icon.svg) to save the component properties.
 
 #### Validate CAPTCHA on user actions and conditions {#validate-captcha-user-action}
 
 To validate a CAPTCHA based on conditions and user actions:
 
-1. Tap the CAPTCHA component and select ![cmppr](assets/configure-icon.svg) to view the component properties.
+1. Select the CAPTCHA component and select ![cmppr](assets/configure-icon.svg) to view the component properties.
 1. In the **[!UICONTROL Validate CAPTCHA]** section, select **[!UICONTROL Validate CAPTCHA on a user action]**.
-1. Tap ![Done](assets/save_icon.svg) to save the component properties.
+1. Select ![Done](assets/save_icon.svg) to save the component properties.
 
     >[!NOTE]
     >
@@ -285,7 +285,7 @@ Perform the following steps to use the `ValidateCAPTCHA` API to validate CAPTCHA
 
 1. Add the script that includes the `ValidateCAPTCHA` API to custom Submit Action. For more on custom Submit Actions, see [Create a custom Submit Action for Adaptive Forms](custom-submit-action-form.md).
 1. Select the name of the custom Submit Action from the **[!UICONTROL Submit Action]** drop-down list in **[!UICONTROL Submission]** properties of an Adaptive Form.
-1. Tap **[!UICONTROL Submit]**. The CAPTCHA gets validated based on the conditions defined in `ValidateCAPTCHA` API of the custom Submit Action.
+1. Select **[!UICONTROL Submit]**. The CAPTCHA gets validated based on the conditions defined in `ValidateCAPTCHA` API of the custom Submit Action.
 
 **Option 2: Use [!DNL Experience Manager Forms] ValidateCAPTCHA API to validate CAPTCHA on a user action before submitting the form**
 
@@ -301,6 +301,7 @@ You can invoke the custom servlet that includes `ValidateCAPTCHA` API using the 
 
 Similarly, you can use rule editor to include a custom method to validate CAPTCHA in an Adaptive Form.
 
+<!--
 ### Add custom CAPTCHA services {#add-custom-captcha-service}
 
 [!DNL Experience Manager Forms] provides reCAPTCHA as the CAPTCHA service. However, you can add a custom service to display in the **[!UICONTROL CAPTCHA Service]** drop-down list.  
@@ -337,4 +338,4 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` Refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form.
+`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form. -->

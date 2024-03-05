@@ -19,7 +19,7 @@ If you are contributing to components of AEM, familiarize yourself with AEM as y
 
 The HyperText Transfer Protocol (HTTP) is central to everything that we do. Therefore, before contributing to AEM, you should have a deep understanding of HTTP, ideally to the extent where you can write your own Java&trade; implementation of a multithreaded HTTP server with thread-pooling. You should also have an understanding of HTTP/1.1 keep-alive behavior, and you should have an in-depth knowledge of server/client-side interactions with JavaScript, particularly the asynchronous style of interaction represented by AJAX.
 
-Because page dynamism and interactive content are key to the WM experience, it's essential that you have a fairly deep understanding of the Document Object Model and its potential for programmatic manipulation in response to events. You should have some knowledge, for example, of real-time DOM manipulation and drag-and-drop behavior over multiple browser documents (for example, using iframes).
+Because page dynamism and interactive content are key to the WM experience, it is essential that you have a fairly deep understanding of the Document Object Model and its potential for programmatic manipulation in response to events. You should have some knowledge, for example, of real-time DOM manipulation and drag-and-drop behavior over multiple browser documents (for example, using iframes).
 
 At the highest level, you should have a solid understanding of:
 
@@ -79,17 +79,17 @@ Code reuse: Our OSGi-based product architecture and "everything is content" phil
 
 Loose coupling: We favor loosely coupled interactions over tight dependencies and "unwanted intimacy". Loose coupling also enables more code reuse.
 
-### Don't Break the Demo {#don-t-break-the-demo}
+### Do not Break the Demo {#don-t-break-the-demo}
 
 Become familiar with demo scripts and product functionalities that are most often shown in demos. Understand that nothing you do should ever break a "demo script" feature. The core product should always be demo-ready, even during development.
 
 ### Design for Reliability {#design-for-reliability}
 
-We strive to design and code features in fail-soft fashion, so that (for example) a problem with a single DOM element doesn't cause a whole page to not render. In other words: Make things that should be fatal, fatal. Make everything else survivable. Make the product "forgiving."
+We strive to design and code features in fail-soft fashion, so that (for example) a problem with a single DOM element does not cause a whole page to not render. In other words: Make things that should be fatal, fatal. Make everything else survivable. Make the product "forgiving."
 
 ### Abnormal is the New Normal {#abnormal-is-the-new-normal}
 
-Don't depend on shutdown hooks, ensure cleanup on startup. Abnormal termination is normal termination.
+Do not depend on shutdown hooks, ensure cleanup on startup. Abnormal termination is normal termination.
 
 `shutdown == kill -9 == power outage`
 

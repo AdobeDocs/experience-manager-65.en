@@ -3,7 +3,7 @@ title: Best practices for working with adaptive forms
 description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 ---
 # Best practices for working with adaptive forms {#best-practices-for-working-with-adaptive-forms}
@@ -57,7 +57,7 @@ Once you have your AEM project set up, define strategy for authoring and customi
 * An adaptive form template is a specialized AEM page that defines structure and the header-footer information of an adaptive form. A template has preconfigured layouts, styles, and basic structure for an adaptive form. AEM Forms provides out-of-the-box templates and components that you can use to author adaptive forms. However, you can create custom templates and components as per your requirements. It is recommended to gather requirements for additional templates and components you will need in your adaptive forms. For details, see [Customizing adaptive forms and components](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
 * AEM Forms lets you create adaptive forms based on the following form models. The form models act as interface for data exchange between a form and AEM system and provide an XML-based structure for data flow within and outside an adaptive form. Also, the form models impose rules and constraints on adaptive forms in the form of schema and XFA constraints.
 
-    * **None**: Adaptive forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+    * **None**: Adaptive forms created with this option do not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
     * **XML or JSON schema**: XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an adaptive form and use its elements to add dynamic content to the adaptive form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring adaptive forms. You can drag-drop the schema elements to build the form.
     * **XFA form template**: It is an ideal form model if you have investments in XFA-based HTML5 forms. It provides a direct way to convert your XFA-based forms into adaptive forms. Any existing XFA rules are retained in the associated adaptive forms. The resulting adaptive forms support XFA constructs, such as validations, events, properties, and patterns.
     * **Form Data Model**: It is a preferred form model if you are looking to integrate your backend systems like databases, web services, and AEM user profile to prefill adaptive forms and write submitted form data back into the backend systems. A Form Data Model editor lets you define and configure entities and services in a form data model that you can use to create adaptive forms. For more information, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
@@ -254,7 +254,7 @@ A document of record (DoR) is a flattened PDF version of an adaptive form that y
     * **XSD schema**: Use the associated XFA template that uses the same XML schema as used by the adaptive form.
     * **None**: Use auto-generated DoR.
 
-* Configure header, footer, images, color, font, and so on right from the Document of Record tab of the adaptive form editor.
+* Configure header, footer, images, color, font, and so on, right from the Document of Record tab of the adaptive form editor.
 * Use `DoRService` to generate the DoR programmatically.
 * Exclude hidden fields from the DoR.
 * Use `afAcceptLang` request parameter to view DoR in another locale.

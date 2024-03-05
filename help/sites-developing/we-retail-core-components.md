@@ -15,7 +15,7 @@ The core components are modern, flexible components featuring easy extensibility
 
 1. Start Adobe Experience Manager (AEM) with the We.Retail sample content and open the [Components Console](/help/sites-authoring/default-components-console.md).
 
-   **Global Navigation -&gt; Tools -&gt; Components**
+   **Global Navigation > Tools > Components**
 
 1. Opening the rail in the Components Console, you can filter for a particular component group. The core components can be found in
 
@@ -77,6 +77,6 @@ The core components are modern, flexible components featuring easy extensibility
 
 ## Further Information {#further-information}
 
-For further information on the core components, see the authoring document [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) for an overview of the capabilities of the core components and the developer document [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) for a technical overview.
+For further information on the core components, see the authoring document [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) for an overview of the capabilities of the core components and the developer document [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) for a technical overview.
 
 Also you may wish to further investigate [editable templates](/help/sites-developing/we-retail-editable-templates.md). Refer to the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete details on editable templates.

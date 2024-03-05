@@ -1,14 +1,10 @@
 ---
 title: ContextHub JavaScript API Reference
-seo-title: ContextHub JavaScript API Reference
 description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
-seo-description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
-uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 ---
@@ -222,7 +218,7 @@ Retrieves the keys from the store. Optionally you can retrieve the keys that are
 
 **Parameters**
 
-* **includeInternals:** A value of `true` includes internally-used keys in the results. These keys begin with the underscore ("_") character. The default value is `false`.
+* **includeInternals:** A value of `true` includes internally used keys in the results. These keys begin with the underscore ("_") character. The default value is `false`.
 
 **Returns**
 
@@ -246,7 +242,7 @@ Retrieves the data tree from the store. Optionally you can include the key/value
 
 **Parameters**
 
-* `includeInternals:` A value of `true` includes internally-used key/value pairs in the results. The keys of this data begin with the underscore ("_") character. The default value is `false`.
+* `includeInternals:` A value of `true` includes internally used key/value pairs in the results. The keys of this data begin with the underscore ("_") character. The default value is `false`.
 
 **Returns**
 
@@ -363,7 +359,7 @@ Resumes eventing for this store so that events are triggered. This function defi
 
 Adds a key/value pair to the store.
 
-Triggers the `data` event only if the value for the key is different than the value that is currently stored for the key. You can optionally prevent the triggering of the `data` event.
+Triggers the `data` event only if the value for the key is different from the value that is currently stored for the key. You can optionally prevent the triggering of the `data` event.
 
 The event data includes the store name, the key, the previous value, the new value, and the action type of `set`.
 
@@ -881,7 +877,7 @@ A copy of tree that is cleaned.
 
 #### getItem() {#getitem}
 
-Retrieves the value from an object for the a key.
+Retrieves the value from an object for the key.
 
 **Parameters**
 

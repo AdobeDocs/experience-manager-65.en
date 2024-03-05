@@ -1,23 +1,72 @@
 ---
 title: New features summary | AEM 6.5 Forms
-seo-title: New features summary | AEM 6.5 Forms
-description: Latest features and improvements to forms and documents of world’s most advanced digital experience management solution.
-seo-description: Latest features and improvements to forms and documents of world’s most advanced digital experience management solution.
-uuid: 179d372d-b7f6-4771-8349-fc6b7854efac
+description: Latest features and improvements to AEM forms and documents, world's most advanced digital experience management solution.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 ---
 # New features summary | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
+| Product | Adobe Experience Manager 6.5 |
+| -------- | ---------------------------- |
+| Version |  6.5.19.0 |
+| Type | Service Pack release|
+| Date | Friday, December 08, 2023 |
+
+## What is included in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
+
+Experience Manager 6.5.19.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that have been released since the initial availability of 6.5 in April 2019. [Install this service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) on Experience Manager 6.5. 
+
+### New Features
+
+#### New Adaptive Form Core Components
+
+Vertical tabs, Terms & Conditions, and Checkbox are added to enhance the scalability of forms.
+
+* **[Checkbox component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptive Forms based on Core Components can now include a checkbox component. It allows users to make binary choices, selecting or deselecting a particular option. It typically appears as a small box that can be clicked or tapped to toggle between two states: checked and unchecked. The checkbox is a common form element used to present a yes/no or true/false choice.
+
+* **[Terms and Conditions component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptive Forms based on Core Components can now include a Terms and Conditions component. It allows forms authors to introduce a specific section within the form where users are presented with the terms, conditions, or legal agreements associated with the use of a service, product, or platform. This component is designed to inform users about the rules, regulations, and obligations they are agreeing to by submitting the form.
+
+    ![Vertical tabs, Terms & Conditions and Checkbox components](/help/forms/using/assets/forms-components.png)
+
+* **[Vertical tabs component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Adaptive Forms based on Core Components can now organize form content into a vertical list of tabs, providing a structured and navigable layout. The use of vertical tabs in a form can enhance the overall user experience by simplifying navigation and improving the organization of form content, especially in situations where a form contains multiple sections or complex information.
+  
+#### 64-bit version of AEM Forms Designer
+
+The [64-bit version of AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) brings enhanced performance, scalability, and memory management to empower your form creation experience. With the 64-bit architecture, you can tackle even larger and more complex projects with ease, ensuring seamless design workflows and optimized efficiency. Elevate your form design capabilities and embrace the future of AEM Forms Designer with this cutting-edge release.
+
+#### Connect an Adaptive Forms with Microsoft&reg; SharePoint List
+
+AEM Forms provides an out-of-the-box integration to [submit forms data directly to SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), letting you use SharePoint's Lists capabilities. You can configure Microsoft&reg; SharePoint List as a datasource for a Form Data Model and use the Submit using Form Data Model submit action to connect an Adaptive Form with SharePoint List.
+
+#### Support to configure Document of Record properties for Adaptive Form Fragments 
+
+You can now easily [customize your Adaptive Form fragments and its fields in  Adaptive Form editor](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+
+#### Includes 64-bit version of XMLFM 
+
+The 64-bit iteration of XMLFM introduces heightened performance, scalability, and refined memory management. It is the first 64-bit native service deployed on the server-side. By harnessing its inherent capability to access significantly larger memory resources compared to its 32-bit counterpart, XMLFM 64-bit empowers seamless handling of larger rendering workloads. This milestone not only represents a leap in performance but also introduces key enhancements to the native service framework within the AEM Forms server. This update equips AEM Forms server to seamlessly support any 64-bit native service.
+
+
+
+## Bug Fixes
+
+The release also includes fixes for 20+ customer reported issues. For detailed list of fixes included in the service pack, see [release notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519)
+
+
+## Installing the service pack
+
+The service pack brings new features and bug fixes for both AEM Forms on JEE and AEM Forms on OSGi. The installation instructions have changes in comparison to previous service packs, For installation instructions, see [AEM Forms service pack installation instructions](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+
+
+
+
+
+
+<!-- 
 ## Transaction Reports {#transaction-reports}
 
-| Version | Article link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html)                  |
-| AEM 6.5     | This article         |
 
 
 Transaction reports lets you capture and track the number of submitted forms, processed documents, and rendered documents. The objective behind tracking these transactions is to make an informed decision about the product usage and rebalancing investments in hardware and software. Some examples of transactions include:
@@ -212,8 +261,10 @@ In line with planned EOL of Adobe Flash Player and overall direction of migratin
 #### Security improvements {#security-improvements}
 
 * AEM 6.5 Forms on JEE administration console UI is now based on Apache Struts 2.5.
-* AEM 6.5 Forms now uses jQuery to 3.2.1 and jQuery UI 1.12.1. See, [upgrade documentation](/help/forms/home.md) for the impact of the change.
+* AEM 6.5 Forms now uses jQuery to 3.2.1 and jQuery UI 1.12.1. See, [upgrade documentation](/help/forms/using/introduction-aem-forms.md) for the impact of the change.
 
 #### Accessibility improvements {#accessibility-improvements}
 
-AEM 6.5 Forms has improved accessibility of AEM Forms Workspace.
+AEM 6.5 Forms has improved accessibility of AEM Forms Workspace. 
+!-->
+

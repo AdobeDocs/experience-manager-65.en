@@ -32,12 +32,12 @@ Some of the guidelines for developing Content Sync Handlers are as follows:
 
 * Handlers must implement *com.day.cq.contentsync.handler.ContentUpdateHandler* (either directly or extending a class that does)
 * Handlers can extend *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Handler must only report true if they update the ContentSync cache. Falsely reporting true has AEM create an update when an update didn't actually occur.
+* Handler must only report true if they update the ContentSync cache. Falsely reporting true has AEM create an update when an update did not actually occur.
 * Handler should only update the cache if the content changed. Do not write to the cache if a white is not necessary. This results in an unnecessary update being created.
 
 >[!NOTE]
 >
->Enable *ContentSync Debug logging* via OSGI logger configurations on package *com.day.cq.contentsync*. This allows to track what handlers ran and whether they updated the cache and reported updating the cache.
+>Enable *ContentSync Debug logging* via OSGI logger configurations on package *com.day.cq.contentsync*. This lets you track what handlers ran and whether they updated the cache and reported updating the cache.
 
 ## Configuring the Content Sync Content {#configuring-the-content-sync-content}
 
@@ -275,7 +275,7 @@ Notice that the *factory* definition contains the common interface and the custo
 
 ### Implementing a Custom Update Handler {#implementing-a-custom-update-handler}
 
-Every We.Retail Mobile page contains a logo in the upper-left corner that should be included in the zip file. However, for cache optimization, AEM doesn't reference the image file's real location in the repository, which prevents us from simply using the **copy** configuration type. What you must do instead is to provide our own **logo** configuration type that makes the image available at the location requested by AEM. The following code listing shows the full implementation of the logo update handler:
+Every We.Retail Mobile page contains a logo in the upper-left corner that should be included in the zip file. However, for cache optimization, AEM does not reference the image file's real location in the repository, which prevents us from simply using the **copy** configuration type. What you must do instead is to provide our own **logo** configuration type that makes the image available at the location requested by AEM. The following code listing shows the full implementation of the logo update handler:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -344,7 +344,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 The `LogoUpdateHandler` class implements the `ContentUpdateHandler` interface's `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` method, which takes several arguments:
 
 * A `ConfigEntry` instance that provides access to the configuration entry, for which this handler is called, and its properties.
-* A `lastUpdated` timestamp indicating the last time the Content Sync updated its cache. Content that hasn't been modified after that timestamp should not be updated by the handler.
+* A `lastUpdated` timestamp indicating the last time the Content Sync updated its cache. Content that has not been modified after that timestamp should not be updated by the handler.
 * A `configCacheRoot` argument that specifies the root path of the cache. All updated files must be stored below this path to be added to the zip file.
 * An administrative session that should be used for all cache-related repository operations.
 * A user session that can be used to update content in the context of a certain user and thus to provide a kind of personalized content.

@@ -3,11 +3,11 @@ title: Getting Started with Process Reporting
 
 description: The steps to get started with AEM Forms on JEE Process Reporting
 
-uuid: 685cad39-da2c-411d-a0b0-201917438bcf
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
-discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
+
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
 ---
@@ -93,6 +93,10 @@ To change the publishing schedule, perform the following steps:
 1. Restart the AEM Forms Server instance.
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
+
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
 ### ProcessDataStorage service {#processdatastorage-service}
 
@@ -273,3 +277,5 @@ For details on the data publishing service and how to schedule this service, see
 * **[!UICONTROL Sync]**: Synchronize the embedded Process Reporting repository with the AEM Forms database.
 * **[!UICONTROL Help]**: View the Help documentation on Process Reporting.
 * **[!UICONTROL Logout]**: Log out of Process Reporting
+
+

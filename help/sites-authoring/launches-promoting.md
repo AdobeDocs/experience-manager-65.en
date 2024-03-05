@@ -1,12 +1,10 @@
 ---
 title: Promote Launches
 description: You promote launch pages to move the content back into the source (production) before publishing. 
-uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
@@ -56,7 +54,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
     * the **Launches** console:
 
-        1. Select your launch (tap/click on the thumbnail).
+        1. Select your launch (click the thumbnail).
         1. Select **Promote**.
 
 1. In the first step you can specify:

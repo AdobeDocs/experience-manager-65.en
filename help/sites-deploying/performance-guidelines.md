@@ -1,14 +1,14 @@
 ---
 title: Performance Guidelines
-seo-title: Performance Guidelines
+
 description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
-seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
-uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
+
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 ---
@@ -264,7 +264,7 @@ Use the performance guidelines in the following situations:
 * **Upgrading to a new version**: When upgrading to a new version, it is important to understand the performance differences compared to the running environment. For example, upgrading from AEM 6.1 to 6.2, or from AEM 6.0 CRX2 to 6.2 OAK.
 * **Response time is slow**: When the selected Nodestore architecture is not meeting your requirements, it is important to understand the performance differences compared to other topology options. For example, deploying TarMK instead of MongoMK, or using a File Data Sore instead of an Amazon S3 or Microsoft&reg; Azure Data Store.
 * **Adding more authors**: When the recommended TarMK topology is not meeting the performance requirements and upsizing the Author node has reached the maximum capacity available, understand the performance differences. Compare to using MongoMK with three or more Author nodes. For example, deploying MongoMK instead of TarMK.
-* **Adding more content**: When the recommended Data Store architecture is not meeting your requirements, it's important to understand the performance differences compared to other Data Store options. Example: using the Amazon S3 or Microsoft&reg; Azure Data Store instead of a File Data Store.
+* **Adding more content**: When the recommended Data Store architecture is not meeting your requirements, it is important to understand the performance differences compared to other Data Store options. Example: using the Amazon S3 or Microsoft&reg; Azure Data Store instead of a File Data Store.
 
 ## Introduction {#introduction}
 
@@ -345,10 +345,10 @@ Develop for AEM aiming for **performance and scalability**. The following are be
 
 **DON'T**
 
-* Don't use JCR APIs directly, if you can
-* Don't change /libs, but rather use overlays
-* Don't use queries wherever possible
-* Don't use Sling Bindings to get OSGi services in Java&trade; code, but rather use:
+* Do not use JCR APIs directly, if you can
+* Do not change /libs, but rather use overlays
+* Do not use queries wherever possible
+* Do not use Sling Bindings to get OSGi services in Java&trade; code, but rather use:
 
     * @Reference in a DS component
     * @Inject in a Sling Model
@@ -425,7 +425,7 @@ Illustrated below are the architecture guidelines for AEM sites and AEM Assets.
 
 ### TarMK Settings Guideline {#tarmk-settings-guideline}
 
-For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, [see this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, [see this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 <table>
  <tbody>
@@ -535,7 +535,7 @@ To establish good performance when using MongoMK, you should start from the foll
 
 ### MongoMK Settings Guidelines {#mongomk-settings-guidelines}
 
-For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, [see this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, [see this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 <table>
  <tbody>

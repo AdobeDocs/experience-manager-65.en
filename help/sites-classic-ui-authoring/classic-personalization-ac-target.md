@@ -64,7 +64,7 @@ You can create the newsletter with targeted content in both the touch-enabled an
 
 To create a newsletter with targeted content:
 
-1. Create a newsletter with targeted content: Below Email Campaigns in Geometrixx Outdoors, click or tap **Create** &gt; **Page**, and select one of the Adobe Campaign Mail templates.
+1. Create a newsletter with targeted content: Below Email Campaigns in Geometrixx Outdoors, click **Create** &gt; **Page**, and select one of the Adobe Campaign Mail templates.
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ To create a newsletter with targeted content:
 
    >[!NOTE]
    >
-   >By default, the email samples included with AEM use Adobe Campaign as the targeting engine. For custom newsletters, you may need to select Adobe Campaign as the targeting engine. When targeting, tap or click + in the toolbar, enter a title for the new activity, and select **Adobe Campaign** as the targeting engine.
+   >By default, the email samples included with AEM use Adobe Campaign as the targeting engine. For custom newsletters, you may need to select Adobe Campaign as the targeting engine. When targeting, click + in the toolbar, enter a title for the new activity, and select **Adobe Campaign** as the targeting engine.
 
 1. Click **Default** and then the Text and Personalization component you added and you see the Bullseye with an arrow in it. Click the icon to target this component.
 
@@ -98,4 +98,4 @@ To create a newsletter with targeted content:
 
    >[!NOTE]
    >
-   >If you also set the segments up in Adobe Campaign, clicking **Preview** will show you the experiences for each segment.
+   >If you also set up the segments in Adobe Campaign, clicking **Preview** will show you the experiences for each segment.

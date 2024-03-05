@@ -1,13 +1,13 @@
 ---
 title: General Security Considerations for AEM Forms on JEE
-seo-title: General Security Considerations for AEM Forms on JEE
+
 description: Learn how to prepare for hardening your AEM Forms on JEE environment.
-seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
-uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
+
+
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
+
 docset: aem65
 
 role: Admin
@@ -217,6 +217,10 @@ JBoss&reg; Application Server uses 8080 as the default HTTP port. JBoss&reg; als
 
 1. Save and close the file.
 1. Restart the JBoss&reg; application server.
+
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
 ## AEM Forms on JEE security considerations {#aem-forms-on-jee-security-considerations}
 

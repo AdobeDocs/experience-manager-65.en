@@ -1,14 +1,14 @@
 ---
 title: Recovering the AEM forms data
-seo-title: Recovering the AEM forms data
+
 description: This document describes the steps required to recover the AEM forms data.
-seo-description: This document describes the steps required to recover the AEM forms data.
-uuid: b5735196-5a8d-4358-884f-e9b8d8f4f682
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 4e093114-219b-4018-9530-9002eb665448
+
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 ---
 # Recovering the AEM forms data {#recovering-the-aem-forms-data}
@@ -110,7 +110,7 @@ If your GDS is restored to a location other than where it was originally, run th
 
 >[!NOTE]
 >
->If you had enabled document storage in database, you don't need to change the GDS location.
+>If you had enabled document storage in database, you do not need to change the GDS location.
 
 >[!NOTE]
 >

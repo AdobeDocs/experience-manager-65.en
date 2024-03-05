@@ -58,7 +58,7 @@ The workflow to import a new Collection
 
 >[!CAUTION]
 >
->You must associate a Mobile On-Demand connection first.
+>Associate a Mobile On-Demand connection first.
 
 ## Editing a Collection {#editing-a-collection}
 
@@ -69,7 +69,7 @@ The workflow to edit a collection:
 1. From Mobile, choose your Mobile On-Demand app from the catalog.
 1. Select an AEM sourced article from the **Manage Collections** tile.
 1. Click the highlighted collection from the list view to open it in the content editor.
-1. Use the content editor to drag collection content (manuscripts, images, text, etc).
+1. Use the content editor to drag collection content (manuscripts, images, text, and so on).
 
 ### Viewing and Editing the Metadata within a Collection {#viewing-and-editing-the-metadata-within-a-collection}
 
@@ -105,7 +105,7 @@ The general workflow to delete a collection:
 
 1. From Mobile, choose your Mobile On-Demand app from the catalog.
 1. Select the article to delete in the **Manage Collections** tile.
-1. Ensure it is selected in the list, (select others to delete as needed).
+1. Ensure it is selected in the list; select others to delete as needed.
 1. Click **Delete** from the action bar.
 1. Check if you would like to delete from AEM and Mobile On-Demand.
 1. Click **Delete**.

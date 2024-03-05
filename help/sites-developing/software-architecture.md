@@ -1,19 +1,19 @@
 ---
 title: Software Architecture
 description: Learn some best practices for architecting your software for Adobe Experience Manager.
-uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
+
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 ---
 # Software Architecture{#software-architecture}
 
 ## Design for upgrades {#design-for-upgrades}
 
-When extending OOTB behaviors, it is important to keep upgrades in mind. Always apply customizations in the /apps directory and either overlay on top of the corresponding nodes in the /libs directory or use sling:resourceSuperType to extend the out of the box behavior. While some modifications may be necessary to support a new AEM version, the new version should not overwrite your customizations if this practice is followed.
+When extending out-of-the-box behaviors, it is important to keep upgrades in mind. Always apply customizations in the /apps directory and either overlay on top of the corresponding nodes in the /libs directory or use sling:resourceSuperType to extend the out of the box behavior. While some modifications may be necessary to support a new AEM version, the new version should not overwrite your customizations if this practice is followed.
 
 ### Reuse template and components when possible {#reuse-template-and-components-when-possible}
 
@@ -47,11 +47,11 @@ The Robustness Principle states that you should be conservative in what you send
 
 ### Implement spikes in their own modules {#implement-spikes-in-their-own-modules}
 
-Spikes and test code are a part of any Agile software implementation. However, you want to make sure that they don't make their way into the production code base without the appropriate level of oversight. As a result, it is recommended that spikes are created in their own module.
+Spikes and test code are a part of any Agile software implementation. However, you want to make sure that they do not make their way into the production code base without the appropriate level of oversight. As a result, it is recommended that spikes are created in their own module.
 
 ### Implement data migration scripts in their own module {#implement-data-migration-scripts-in-their-own-module}
 
-Data migration scripts, while production code, are only run once at the initial launch of a site. Therefore, when the site is live, the scripts become dead code. To ensure that you don't build implementation code that depends on the migration scripts, they should be implemented in their own module. Doing so lets us remove and retire this code immediately after launch, eliminating dead code from the system.
+Data migration scripts, while production code, are only run once at the initial launch of a site. Therefore, when the site is live, the scripts become dead code. To ensure that you do not build implementation code that depends on the migration scripts, they should be implemented in their own module. Doing so lets us remove and retire this code immediately after launch, eliminating dead code from the system.
 
 ### Follow published Maven conventions in POM files {#follow-published-maven-conventions-in-pom-files}
 

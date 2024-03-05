@@ -1,14 +1,10 @@
 ---
 title: Embed an adaptive form or interactive communication in AEM sites page
-seo-title: Embed an adaptive form or interactive communication in AEM sites page
 description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
-seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
-uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
-discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
 ---
 # Embed an adaptive form or interactive communication in AEM sites page {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
@@ -54,7 +50,7 @@ To embed an adaptive form or interactive communication using AEM Forms Container
    >
    >Multiple AEM Forms Container components on a page are not supported.
 
-1. Tap the embedded AEM Forms Container component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit AEM Forms Container]** dialog opens.
+1. Select the embedded AEM Forms Container component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit AEM Forms Container]** dialog opens.
 1. In the Edit AEM Forms Container dialog, specify the following.
 
     * **Asset Type:** Select the type of asset to embed. The options are adaptive form and interactive communication
@@ -63,7 +59,7 @@ To embed an adaptive form or interactive communication using AEM Forms Container
 
         * **Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
         * **Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
-        * **Refresh Page on Submission**: Enable to refresh the page containing the embedded adaptive form to show the thank you page. Otherwise, the thank you page replaces the adaptive form in the AEM Forms container, without refreshing the page. This option is available only when you choose to show a thank you page.
+        * **Refresh Page on Submission**: Enable so you can refresh the page containing the embedded adaptive form to show the thank you page. Otherwise, the thank you page replaces the adaptive form in the AEM Forms container, without refreshing the page. This option is available only when you choose to show a thank you page.
 
     * **Theme**: Select a theme that defines styling for components of your adaptive form or interactive communication. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
     * **Height**: Specify the height of the container. Leave it blank to automatically resize the container.
@@ -86,7 +82,7 @@ AEM sites page maintains a reference to the adaptive form and interactive commun
 To modify any configuration or property of the embedded adaptive form and interactive communication, do one of the following.
 
 * Open the original form in adaptive forms or interactive communication in respective editors and modify them.
-* Tap the adaptive form or interactive communication from within the site page in edit mode and then tap **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
+* Select the adaptive form or interactive communication from within the site page in edit mode and then select **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
 
 >[!NOTE]
 >

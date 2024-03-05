@@ -84,7 +84,7 @@ The disk space required depends heavily on both the volume and type of your web 
 * the volume of DAM asset renditions that will be generated
 * the overall growth of content over time
 
-Disk space is continuously monitored during Online, and Offline, Revision Cleanup. Should the available disk space drop below a critical value, the process is cancelled. The critical value is 25% of the current disk footprint of the repository and it is not configurable. Adobe recommends sizing the disk at least two or three times larger than the repository size including the estimated growth.
+Disk space is continuously monitored during Online, and Offline, Revision Cleanup. Should the available disk space drop below a critical value, the process is canceled. The critical value is 25% of the current disk footprint of the repository and it is not configurable. Adobe recommends sizing the disk at least two or three times larger than the repository size including the estimated growth.
 
 Consider a setup of redundant arrays of independent disks (RAID, for example, RAID10) for data redundancy.
 
@@ -109,7 +109,7 @@ While all systems are running, an increased computational performance is availab
 The estimation of how many cluster nodes are necessary is based on the basic requirements and specific use-cases of the particular web project:
 
 * From the perspective of fail-safeness, it is necessary to determine, for all environments, how critical failure is and the failure compensation time based on how long it takes for a cluster node to recover.
-* For the aspect of scalability, the number of write operations is basically the most important factor; see [Authors Working in Parallel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) for the author environment and [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) for the publish environment. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) for details.
+* For the aspect of scalability, the number of write operations is basically the most important factor; see [Authors Working in Parallel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) for the author environment and [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) for the publish environment. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) for details.
 
 ## Author environment-specific calculations {#author-environment-specific-calculations}
 
@@ -131,7 +131,7 @@ For benchmarking purposes, Adobe has developed some benchmark tests for standalo
 >
 >The throughput rate does not distinguish between transaction types within a load profile. The approach used to measure throughput ensures that a fixed proportion of each type of transaction is included in the workload.
 
-The above two tests clearly highlight that the throughput varies according to the type of operation. Use the activities on your environment as a base for sizing your system. You will get better throughput with less intensive actions such as modify (which is also more common).
+The above two tests clearly highlight that the throughput varies according to the type of operation. Use the activities on your environment as a base for sizing your system. You get better throughput with less intensive actions such as modify (which is also more common).
 
 ### Caching {#caching}
 
@@ -141,13 +141,13 @@ In the author environment the caching efficiency is typically much lower, becaus
 
 In the author environment the number of authors that work in parallel and the load their interactions add to the system are the main limiting factors. Therefore, Adobe recommends that you scale your system based on the shared throughput of data.
 
-For such scenarios, Adobe run benchmark tests on a two node shared-nothing cluster of author instances.
+For such scenarios, Adobe ran benchmark tests on a two-node shared-nothing cluster of author instances.
 
 * **Benchmark test 1a**
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput with a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages, all of a similar nature.
 
     * **Result**
-      Maximum throughput for a simple page creation exercise, such as above, (considered as one transaction) is found to be 2016 transactions/hour. This is an increase of approximately 16% when compared to a standalone author instance for the same benchmark test.
+      Maximum throughput for a simple page creation exercise, such as above&ndash;considered as one transaction&ndash;is found to be 2016 transactions/hour. This is an increase of approximately 16% when compared to a standalone author instance for the same benchmark test.
 
 * **Benchmark test 2b**
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput when the load profile has a mix of fresh page creation (10%), modification of an existing pages (80%) and creation and modification a page in succession (10%). The complexity of the page remains the same as in the profile of benchmark test 1. Basic modification of the page is done by adding an image and modifying the text content. Again, the exercise was performed on top of a base load of 300 pages of complexity the same as defined in benchmark test 1.
@@ -173,7 +173,7 @@ Also see [Parallelization](/help/managing/hardware-sizing-guidelines.md#parallel
 
 ### Hardware Recommendations {#hardware-recommendations}
 
-Usually you can use the same hardware for your author environment as is recommended for your publishing environment. Typically, website traffic is much lower on authoring systems, but cache efficiency is lower too. However, the fundamental factor here is the number of authors working in parallel, together with the type of actions being made to the system. In general, AEM clustering (of the author environment) is most effective at scaling read operations; in other words, a AEM cluster scales well with authors who are performing basic edit operations.
+Usually you can use the same hardware for your author environment as is recommended for your publishing environment. Typically, website traffic is lower on authoring systems, but cache efficiency is lower too. However, the fundamental factor here is the number of authors working in parallel, together with the type of actions being made to the system. In general, AEM clustering (of the author environment) is most effective at scaling read operations; in other words, a AEM cluster scales well with authors who are performing basic edit operations.
 
 The benchmark tests at Adobe were performed using the Red Hat&reg; 5.5 operating system, running on a Hewlett-Packard ProLiant DL380 G5 hardware platform with the following configuration:
 
@@ -209,7 +209,7 @@ The cache ratio is the percentage of pages that the Dispatcher can return withou
 
 ### Complexity of templates and applications {#complexity-of-templates-and-applications}
 
-If you use complex templates AEM will need more time to render a page. Pages taken from the cache are not affected by this, but the page size is still relevant when considering the overall response time. Rendering a complex page can easily take ten times longer than rendering a simple page.
+If you use complex templates AEM needs more time to render a page. Pages taken from the cache are not affected by this, but the page size is still relevant when considering the overall response time. Rendering a complex page can easily take ten times longer than rendering a simple page.
 
 ### Formula {#formula}
 
@@ -275,7 +275,7 @@ If you have a more complex website, you also need more powerful web servers so t
 
 ## Additional use-case specific calculations {#additional-use-case-specific-calculations}
 
-In addition to the calculation for a default web application, you may need to consider specific factors for the following use-cases. The calculated values are to be added to the default calculation.
+In addition to the calculation for a default web application, consider specific factors for the following use-cases. The calculated values are to be added to the default calculation.
 
 ### Assets-specific considerations {#assets-specific-considerations}
 
@@ -285,7 +285,7 @@ Allocate at least 16GB of heap and configure the [!UICONTROL DAM Update Asset] w
 
 >[!NOTE]
 >
->A higher throughput of images means that the computing resources need to be able to keep pace with system I/O and conversely. For example, if workflows are launched by the import of images, then uploading many images via WebDAV could cause a backlog of workflows.
+>A higher throughput of images means that the computing resources must be able to keep pace with system I/O and conversely. For example, if workflows are launched by the import of images, then uploading many images via WebDAV could cause a backlog of workflows.
 >
 >The use of separate disks for TarPM, data store, and search index can help to optimize the system I/O behavior (however, usually it makes sense to keep the search index locally).
 

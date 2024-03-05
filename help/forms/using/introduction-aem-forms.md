@@ -1,16 +1,13 @@
 ---
 title: Introduction to AEM Forms
-seo-title: Introduction to AEM Forms
-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
-seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
-uuid: a6564997-4227-4d5d-b27d-47a55a386238
+description: Use this AEM 6.5 guide to create, manage, publish, and update digital forms. Find help on installing, upgrading, and configuring them, and learn about authoring adaptive forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
-discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
+
 ---
 # Introduction to AEM Forms{#introduction-to-aem-forms}
 
@@ -30,6 +27,10 @@ AEM Forms combine form authoring, management, and publishing along with correspo
 In large enterprises, forms are often created once and reused by copying to a content management system. Keeping a large database of forms up-to-date and making them discoverable can be a considerable challenge. AEM provides a customizable Forms Portal that ensures that customers find and access forms they need across both web and mobile channels.
 
 AEM Forms provides forms management tools that not only lets you manage adaptive form, but XFA forms, PDF forms, and related assets as well. For more information, see [Introduction to managing forms](../../forms/using/introduction-managing-forms.md).
+
+>[!NOTE]
+>
+>The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
 
 ![AEM forms capabilities](do-not-localize/4th-draft.gif)
 
@@ -117,3 +118,4 @@ Personalized documents, like, receipts, welcome kits, and statements can easily 
 ![Layout two](do-not-localize/layout-02.png)
 
 Streamlined personalized communication workflow
+

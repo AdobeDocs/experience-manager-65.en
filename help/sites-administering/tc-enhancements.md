@@ -14,7 +14,7 @@ This page presents incremental enhancements and refinements to AEM translation m
 
 Options to improve productivity working with translation projects have been added, such as automatically promoting and deleting translation launches, and scheduling the recurring execution of a translation project.
 
-1. In your translation project, click or tap the ellipsis at the bottom of the **Translation Summary** tile.
+1. In your translation project, click the ellipsis at the bottom of the **Translation Summary** tile.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -34,7 +34,7 @@ Options to improve productivity working with translation projects have been adde
 
 It is possible to configure multiple target languages in a translation project, to reduce the total number of translation projects created.
 
-1. In your translation project, click or tap the dots at the bottom of the **Translation Summary** tile.
+1. In your translation project, click the dots at the bottom of the **Translation Summary** tile.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -104,11 +104,11 @@ A property can now be selected in the Sites list view that shows if a page has b
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Click or tap **View Settings**.
+1. Click **View Settings**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Check **Translated** checkbox under **Translation** and tap/click **Update**.
+1. Check **Translated** checkbox under **Translation** and click **Update**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 

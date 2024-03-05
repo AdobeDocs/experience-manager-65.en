@@ -1,14 +1,14 @@
 ---
 title: User Interface Recommendations for Customers
-seo-title: User Interface Recommendations for Customers
+
 description: A list of recommendations related to the classic and touch-optimized user interfaces.
-seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
-uuid: 9ec2c9de-a79e-4f2c-a90f-b38ba9553e07
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
+
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 ---
@@ -40,7 +40,7 @@ Terms of interest:
 
 ## General {#general}
 
-Over the last few years Adobe has updated all the Adobe Experience Cloud solutions with an unified user interface. Users across the Experience Cloud solutions enjoy a consistant experience with common patterns on how to use and operate the applications. With every release, Adobe has refined it's user interface based on feedback from customers working across the various solutions.
+Over the last few years Adobe has updated all the Adobe Experience Cloud solutions with an unified user interface. Users across the Experience Cloud solutions enjoy a consistant experience with common patterns on how to use and operate the applications. With every release, Adobe has refined its user interface based on feedback from customers working across the various solutions.
 
 The original user interface for Adobe Experience Manager (previously known as CQ5), introduced in 2008 and used by customers running versions 5.0-5.6.1, is present in AEM 6.5. This guarantees that customers can update to 6.5, and benefit from an updated platform with new capabilities while keep using the same user interface.
 

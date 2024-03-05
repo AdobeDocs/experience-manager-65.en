@@ -31,17 +31,17 @@ Before you begin to set up and configure Dynamics 365, ensure that you have:
    `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Scroll down to the Home Mortgage Calculator.
-1. Highlight the right column's (calculator's) panel and tap to display the pop-up menu. In the pop-up menu, tap Configure. The Edit AEM Forms Container dialog appears.
+1. Highlight the right column's (calculator's) panel and select to display the pop-up menu. In the pop-up menu, select Configure. The Edit AEM Forms Container dialog appears.
 
    ![calculatorconfigurepanel](assets/calculatorconfigurepanel.png)
 
-1. In the Edit AEM Forms Container dialog, browse the asset path and select home-mortgage-calculator at the following path and tap **Confirm**:
+1. In the Edit AEM Forms Container dialog, browse the asset path and select home-mortgage-calculator at the following path and select **Confirm**:
 
    formsanddocuments/We.Finance/MS Dynamics/ 
 
    ![selectassetpath](assets/selectassetpath.png)
 
-1. Tap **Done**.
+1. Select **Done**.
 1. Publish the edited page.
 
    >[!NOTE]
@@ -54,7 +54,7 @@ Before you begin to set up and configure Dynamics 365, ensure that you have:
 
        `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
    
-    1. Import the solution package to Microsoft&reg; Dynamics instance. In your Microsoft&reg; Dynamics instance, go to **Settings** &gt; **Solutions** and then tap **Import**.
+    1. Import the solution package to Microsoft&reg; Dynamics instance. In your Microsoft&reg; Dynamics instance, go to **Settings** &gt; **Solutions** and then select **Import**.
 
 1. To set up user contact details used in the refsite, import the Sarah Rose Contact.CSV package to your Microsoft&reg; Dynamics instance:
 
@@ -62,4 +62,4 @@ Before you begin to set up and configure Dynamics 365, ensure that you have:
 
        `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-    1. Import the package to your Microsoft&reg; Dynamics instance. In your Microsoft&reg; Dynamics instance, go to **Sales** &gt; **Contacts** and then tap **Import Data**.
+    1. Import the package to your Microsoft&reg; Dynamics instance. In your Microsoft&reg; Dynamics instance, go to **Sales** &gt; **Contacts** and then select **Import Data**.

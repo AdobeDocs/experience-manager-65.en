@@ -1,14 +1,14 @@
 ---
 title: Interactive Communications configuration properties
-seo-title: Interactive Communication configuration properties
+
 description: Edit default configuration properties for Interactive Communications
-seo-description: Edit default configuration properties for Interactive Communications
-uuid: 4030078f-64a3-40bb-9892-49e22a8da561
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: interactive-communications
-discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
+
 docset: aem65
 
 feature: Interactive Communication
@@ -31,7 +31,7 @@ The configuration properties include:
 
 ## Document Fragments Configuration {#document-fragments-configuration}
 
-Tap **Document Fragments configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for document fragments.
+Select **Document Fragments configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for document fragments.
 
 <table>
  <tbody> 
@@ -77,7 +77,7 @@ Tap **Document Fragments configuration** on the **Adobe Experience Manager Web C
 
 ## Create Correspondence Configuration {#create-correspondence-configuration}
 
-Tap **Create Correspondence Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Agent UI.
+Select **Create Correspondence Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Agent UI.
 
 <table>
  <tbody> 
@@ -110,7 +110,7 @@ Tap **Create Correspondence Configuration** on the **Adobe Experience Manager We
 
 ## Adaptive Form and Interactive Communication Web Channel Configuration {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tap **Adaptive Form and Interactive Communication Web Channel Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel. The following table describes the properties related to Interactive Communications:
+Select **Adaptive Form and Interactive Communication Web Channel Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel. The following table describes the properties related to Interactive Communications:
 
 | Property |Description |Default |Acceptable values |
 |---|---|---|---|
@@ -120,7 +120,7 @@ Tap **Adaptive Form and Interactive Communication Web Channel Configuration** on
 
 ## Adaptive Form and Interactive Communication Web Channel Theme Configuration {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Tap **Adaptive Form and Interactive Communication Web Channel Theme Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel themes.
+Select **Adaptive Form and Interactive Communication Web Channel Theme Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel themes.
 
 <table>
  <tbody> 

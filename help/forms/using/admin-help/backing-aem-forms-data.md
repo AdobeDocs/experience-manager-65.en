@@ -31,7 +31,7 @@ If the database is running in a logging mode, as described in the previous secti
 
 ## Back up the database, GDS, AEM repository, and Content Storage Root directories {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-You must put AEM Forms in either the safe backup (snapshot) mode or the rolling backup (continuous coverage) mode. Before you set AEM Forms to enter either of the backup modes, ensure the following:
+Put AEM Forms in either the safe backup (snapshot) mode or the rolling backup (continuous coverage) mode. Before you set AEM Forms to enter either of the backup modes, ensure the following:
 
 * Verify the system version and record the patches or updates that were applied since the last complete system image backup was performed.
 * If you are using either rolling or snapshot mode backups, ensure that your database is configured with the correct log settings to allow for hot backups of the database. (See [AEM Forms database](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)

@@ -5,7 +5,6 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
 ---
 # Customizing the Adobe Analytics Framework{#customizing-the-adobe-analytics-framework}
@@ -54,7 +53,7 @@ When you use custom JavaScript code to customize the framework, you alter the co
 
 ## Configuring Adobe Analytics Properties {#configuring-adobe-analytics-properties}
 
-There are several predefined variables within Adobe Analytics that are configurable on a framework. The **charset**, **cookieLifetime**, **currencyCode** and **trackInlineStats** variables are included in the **General Analytics Settings** list by default.
+There are several predefined variables within Adobe Analytics that are configurable on a framework. The **charset**, **cookieLifetime**, **currencyCode**, and **trackInlineStats** variables are included in the **General Analytics Settings** list by default.
 
 ![aa-22](assets/aa-22.png)
 
@@ -100,7 +99,7 @@ Use the following procedure to add variables to the list:
 
 >[!CAUTION]
 >
->Some of the variables in this list are **mandatory** for Adobe Analytics calls to function correctly, (for example, **currencyCode**, **charSet**)
+>Some of the variables in this list are **mandatory** for Adobe Analytics calls to function correctly (for example, **currencyCode**, **charSet**).
 >
 >So, even if they are removed from the framework itself, they will still be attached with a default value when the Adobe Analytics call is made.
 

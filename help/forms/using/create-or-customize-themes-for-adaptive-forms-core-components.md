@@ -6,6 +6,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 ---
 # Create or customize an Adaptive Form theme {#introduction-to-theme}
@@ -16,7 +17,7 @@ exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 | AEM 6.5  |    This Article                  |
  
 
-**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/themes.md).
+<!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
 In AEM Forms 6.5, a theme is an AEM client library that you use to define the styles (look and feel) for an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms.
  
@@ -230,7 +231,7 @@ To apply and test the customized theme with an Adaptive Form:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
@@ -244,7 +245,7 @@ An Adaptive Form with the selected theme is created.
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Select an Adaptive Form and click Properties. 
 
@@ -280,7 +281,7 @@ After the package is installed the theme is available for selection.
 Steps to apply a theme to an Adaptive Form are:
 
 1. Log in to your local AEM author instance.
-1. Enter your credentials on the Experience Manager login page. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Enter your credentials on the Experience Manager login page. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 1. Click **Create** > **Adaptive Forms**. 
 1. Select an Adaptive Forms Core Components template and click **Next**. The **Add Properties** appears
 1. Specify the **Name** for your Adaptive Form.

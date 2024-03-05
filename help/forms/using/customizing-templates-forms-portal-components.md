@@ -76,19 +76,19 @@ The following is a sample implementation of a custom template where Forms Portal
 
 A custom template for any Forms Portal component includes repeatable and non-repeatable entries. Repeatable entries are basic entities for listing. Examples of repeatable entries are Search & Lister, Drafts & Submissions, and Link components.
 
-Forms Portal provides a syntax for place-holders to display custom/OOTB metadata. The placeholders are populated after displaying the results of forms, drafts, or submissions.
+Forms Portal provides a syntax for place-holders to display custom/out-of-the-box metadata. The placeholders are populated after displaying the results of forms, drafts, or submissions.
 
 To include a repeatable entry, configure the value of the attribute **data-repeatable** to **true**.
 
 *In the example discussed, two Div elements are present at the top in the custom template. The first, with "__FP_boxes-container" CSS class, works as a container element for the forms that are listed. The second, with "__FP_boxes" CSS class, is a template for the basic entities, in this case a Form. The **data-repeatable** attribute present in the Div element has the value **true**.*
 
-Each placeholder has an exclusive OOTB metadata set. To display custom metadata at a particular place on the form, add the **${metadata_prop} property** at the place.
+Each placeholder has an exclusive out-of-the-box metadata set. To display custom metadata at a particular place on the form, add the **${metadata_prop} property** at the place.
 
 *In the example, the metadata property is used at multiple instances. For example, it is used in **description**, **name**, **formUrl**, **htmlStyle**, **pdfUrl**, **pdfStyle**, and **path** in the prescribed manner.*
 
 ## Out of the box metadata {#out-of-the-box-metadata}
 
-Various Forms Portal components provide exclusive sets of OOTB metadata that you can use for listing.
+Various Forms Portal components provide exclusive sets of out-of-the-box metadata that you can use for listing.
 
 ### Search &amp; Lister component {#search-amp-lister-component}
 
@@ -109,7 +109,7 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 
 Support for localization, sorting, and using configuration properties on the user interface (Search & Lister Only):
 
-1. **Localization Support**: To localize any static text use the attribute `${localize-YOUR_TEXT}` and make the localized value available, if doesn't exist already.
+1. **Localization Support**: To localize any static text use the attribute `${localize-YOUR_TEXT}` and make the localized value available, if does not exist already.
    *In the example discussed, the attributes `${localize-Apply}` and `${localize-Download}` are used to localize the Apply and Download text.*
 
 1. **Support for Sorting**: Click the HTML element to sort search results. To implement sorting in a table layout, add the "data-sortKey" attribute on the particular table header. In addition, add its value as the metadata for which you want to sort.
@@ -163,7 +163,7 @@ Support for localization, sorting, and using configuration properties on the use
 ## Tips, tricks, and known issues {#tips-tricks-and-known-issues}
 
 1. Do not use single quote (') in any custom template.
-1. For custom metadata, store this property on the **jcr:content/metadata** node only. If you store it at any other place, Forms Portal can't display the metadata.
+1. For custom metadata, store this property on the **jcr:content/metadata** node only. If you store it at any other place, Forms Portal cannot display the metadata.
 1. Ensure that the name of any custom metadata or existing metadata does not include a colon ( : ). If it does, you cannot display it on the user interface.
 1. **data-repeatable** does not have any significance for a **Link** component. Adobe recommends that you avoid using this property in the template for a Link component.
 

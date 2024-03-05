@@ -1,12 +1,10 @@
 ---
 title: Image Sets
 description: Learn how to work with Image Sets in Dynamic Media
-uuid: ca2fd5b0-656e-4960-b10c-f0ec3d418760
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
@@ -34,8 +32,10 @@ When you create an Image Set, Adobe recommends the following best practices and 
 
 | Limit type | Best practice | Limit imposed |
 | --- | --- | --- |
-| Number of duplicate assets per set | No duplicates | 20 |
+| Number of duplicate assets per set | No duplicates | 20&Dagger; |
 | Maximum number of images per set | 5-10 images per set  | 1000 |
+
+&Dagger; Best practice is to not have duplicate assets in a set. The limit is 20 duplicates for a single asset. If you add another duplicate for that asset&mdash;within that set&mdash;the request either gives an error or ignores the duplicate.
 
 See also [Dynamic Media limitations](/help/assets/limitations.md).
 
@@ -137,8 +137,10 @@ When you create an Image Set, Adobe recommends the following best practices and 
 
 | Limit type | Best practice | Limit imposed |
 | --- | --- | --- |
-| Number of duplicate assets per set | No duplicates | 20 |
+| Number of duplicate assets per set | No duplicates | 20&Dagger; |
 | Maximum number of images per set | 5-10 images per set  | 1000 |
+
+&Dagger; Best practice is to not have duplicate assets in a set. The limit is 20 duplicates for a single asset. If you add another duplicate for that asset&mdash;within that set&mdash;the request either gives an error or ignores the duplicate.
 
 See also [Dynamic Media limitations](/help/assets/limitations.md).
 

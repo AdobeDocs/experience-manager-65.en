@@ -88,13 +88,13 @@ The local development environment is composed of three main areas:
 
 After the local development environment is set up, you can simulate content serving to the React app by deploying a static Node server locally.
 
-To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=en).
+To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
 
 <!-- Start of CDN Review -->
 
-Now, it's time to get your AEM headless application ready for launch, by following the best practices outlined below.
+Now, it is time to get your AEM headless application ready for launch, by following the best practices outlined below.
 
 ### Secure your Headless Application Before Launch {#secure-and-scale-before-launch}
 
@@ -135,7 +135,7 @@ Deploying to Production can depend on whether you have a *traditional* AEM insta
 
 ## Deploy to Production using Maven {#deploy-to-production-maven}
 
-For a *traditional* deployment (non-AMS) using Maven, see the [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) for an overview.
+For a *traditional* deployment (non-AMS) using Maven, see the [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) for an overview.
 
 ## Deploy to Production using Cloud Manager {#deploy-to-production-cloud-manager}
 
@@ -143,7 +143,7 @@ If you are an AMS customer using Cloud Manager, after you make sure that everyth
 
 After the updates have been uploaded to Cloud Manager, deploy them to AEM using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
-<!-- Can't find a parallel link -->
+<!-- Cannot find a parallel link -->
 <!--
 You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
@@ -208,11 +208,11 @@ If this kind of flexibility is something you need for your project, continue to 
 
 ## Additional Resources {#additional-resources}
 
-* [AEM Developing Guide](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
+* [AEM Developing Guide](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
-* [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+* [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* [Cloud Manager for AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=en) 
+* [Cloud Manager for AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) 
 
 * CDN Cache
 

@@ -1,13 +1,9 @@
 ---
 title: Creating and Adding Templates and Components
-seo-title: Creating and Adding Templates and Components
 description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
-seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
-uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
 ---
 # Creating and Adding Templates and Components {#creating-and-adding-templates-and-components}
@@ -39,7 +35,7 @@ When creating an app based on the template of another app, you will get an app t
 Steps to creating an app based on an app template:
 
 1. Navigate to the AEM Mobile app catalog: *&lt;server-url&gt;/aem/apps.html/content/mobileapps*
-1. Select **Create** --&gt; **App** as shown below
+1. Select **Create** > **App** as shown below
 
 Once you create an app using this template, you can add articles, banners, and collections to your app. To re-visit, creation of articles, banners, and collections, See [Content Management Actions](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
@@ -84,7 +80,7 @@ The Unlimited Article is a sample template representing a typical AEM Mobile On-
 
 Once created, an author can edit an article's content by adding components like text and images. Articles are an extension of AEM page templates.
 
-Select an article, you want to edit and click on **Edit** to add components to the article.
+Select an article you want to edit, then click **Edit** to add components to the article.
 
 ![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -139,7 +135,7 @@ Once the component has already been included in an AEM page, along with a few ot
 **To edit an existing component:**
 
 1. Choose that page and ensure you are in **Edit** mode and select the component
-1. Tap the wrench icon to configure the component
+1. Select the wrench icon to configure the component
 
 >[!NOTE]
 >

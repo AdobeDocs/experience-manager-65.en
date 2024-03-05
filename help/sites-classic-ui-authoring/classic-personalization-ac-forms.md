@@ -1,12 +1,12 @@
 ---
 title: Creating Adobe Campaign Forms in AEM
 description: AEM lets you create and use forms that interact with Adobe Campaign on your website. Specific fields can be inserted into your forms and mapped to the Adobe Campaign database.
-uuid: 7b1028f3-268a-4d4d-bc9f-acd176f5ef3d
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
+
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
 ---
 # Creating Adobe Campaign Forms in AEM{#creating-adobe-campaign-forms-in-aem}

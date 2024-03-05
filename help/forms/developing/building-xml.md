@@ -9,7 +9,7 @@ There is much XML involved with AEM Forms on JEE Process Management workflows, f
 
 When dealing with simple XML settings, one may use the `Set Value` service, which is a default AEM Forms on JEE service. This service sets the value of one or more data items in the process data model. For simple conditional logic "if this, then that" scenarios, this service can suit the purpose.
 
-However, in more complex situations, the Set Value service isn't as effective. In these situations, one must rely on a more robust set of programming commands, such as those provided by a programming language like Java&trade;. Using Java&trade; to build complex XML can be much easier and more clear than building an XML document from simple text within the Set Value service. In addition, it is easier to include conditional programming in Java&trade; than within a Set Value service.
+However, in more complex situations, the Set Value service is not as effective. In these situations, one must rely on a more robust set of programming commands, such as those provided by a programming language like Java&trade;. Using Java&trade; to build complex XML can be much easier and more clear than building an XML document from simple text within the Set Value service. In addition, it is easier to include conditional programming in Java&trade; than within a Set Value service.
 
 ## Using the Execute Script Service in a Process {#using-execute-script-service-in-process}
 
@@ -19,7 +19,7 @@ Within the set of the standard AEM Forms on JEE services available in AEM Forms 
 
 Overall application and process creation is out-of-scope for this tutorial, but for the sake of this instruction, an application named "DemoApplication02" has been created. Assuming that an application has already been created, you need to create a process in this application to call the executeScript service. To add a process to the application that includes the `Execute Script` service:
 
-1. Right-click on your application and select **[!UICONTROL New]**. In **[!UICONTROL New]** slide-out menu, select **[!UICONTROL Process]**. Name your process, add a description, if necessary, and select the icon you wish to represent this process. For the purposes of this tutorial, we have created a process and named it the  `executeScriptDemoProcess`.
+1. Right-click your application and select **[!UICONTROL New]**. In **[!UICONTROL New]** slide-out menu, select **[!UICONTROL Process]**. Name your process, add a description, if necessary, and select the icon you wish to represent this process. For the purposes of this tutorial, we have created a process and named it the  `executeScriptDemoProcess`.
 1. Define your start points, or simple opt to add your start points later.
 1. The process is now created and should automatically open in the [!UICONTROL Process Design] window. In this window, click the Activity Picker icon at the top of the Process Design window and drag the new activity onto the swim lane. At this point, the [!UICONTROL Define Activity Window] should appear (see Figure below).
    ![Define Activity](assets/define-activity.jpg)

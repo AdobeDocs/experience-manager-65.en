@@ -21,7 +21,7 @@ With content fragments that use structured content, you can provide content serv
 
 >[!NOTE]
 >
->The functionality described here is available for all Core Components since [release 1.1.0 of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+>The functionality described here is available for all Core Components since [release 1.1.0 of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 ## JSON Exporter with Content Fragment Core Components {#json-exporter-with-content-fragment-core-components}
 
@@ -93,4 +93,4 @@ For further details, see:
 * [Authoring with Content Fragments](/help/sites-authoring/content-fragments.md)
 * [Enabling JSON Export for a Component](/help/sites-developing/json-exporter-components.md)
 
-* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)

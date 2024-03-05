@@ -3,12 +3,12 @@ title: Templates
 
 description: Templates are used when creating a page which is used as the base for the new page.
 
-uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
+
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 ---
@@ -56,7 +56,7 @@ The advantages of Editable Templates:
 
 >[!NOTE]
 >
->See [Using Editable Page Templates to develop an Experience Manager site](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en).
+>See [Using Editable Page Templates to develop an Experience Manager site](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html).
 
 ### Static Templates {#static-templates}
 

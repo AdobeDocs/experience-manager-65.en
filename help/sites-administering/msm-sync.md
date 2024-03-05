@@ -1,14 +1,14 @@
 ---
 title: Configuring Live Copy Synchronization
-seo-title: Configuring Live Copy Synchronization
+
 description: Learn about configuring Live Copy Synchronization.
-seo-description: Learn about configuring Live Copy Synchronization.
-uuid: a5db0bee-a761-4cff-81dc-31b374525f47
+
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
+
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
@@ -58,7 +58,7 @@ The following table lists the rollout configurations that are installed with AEM
   </tr>
   <tr>
    <td>Standard rollout config</td>
-   <td>Standard rollout configuration which allows to start rollout process on rollout trigger and runs actions: create, update, delete content and order children nodes.</td>
+   <td>Standard rollout configuration which lets you start rollout process on rollout trigger and runs actions: create, update, delete content and order children nodes.</td>
    <td>On Rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -106,7 +106,7 @@ The following table lists the rollout configurations that are installed with AEM
   </tr>
   <tr>
    <td>DPS Publications Rollout Config</td>
-   <td>DPS Publication rollout configuration which allows to start rollout process on rollout trigger while excluding FolioProducer binding properties on initial rollout</td>
+   <td>DPS Publication rollout configuration which lets you start rollout process on rollout trigger while excluding FolioProducer binding properties on initial rollout</td>
    <td>On Rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>
@@ -388,7 +388,7 @@ You can also configure the rollout configurations for a live copy page when you 
 
    ![Selected Rollout Configurations](assets/chlimage_1-2.png)
 
-1. Click or tap **Save**.
+1. Click **Save**.
 
 ### Setting the Rollout Configuration for a Blueprint Page {#setting-the-rollout-configuration-for-a-blueprint-page}
 

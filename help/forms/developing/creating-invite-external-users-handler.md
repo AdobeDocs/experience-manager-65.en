@@ -28,9 +28,9 @@ To develop an Invite External Users Handler, you must perform the following step
 
 To set up your development environment, you must create a Java project, such as an Eclipse project. The version of Eclipse that is supported is `3.2.1` or later.
 
-The Rights Management SPI requires the `edc-server-spi.jar` file to be set in your project’s class path. If you do not reference this JAR file, you cannot use the Rights Management SPI in your Java project. This JAR file is installed with the AEM Forms SDK in the `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` folder.
+The Rights Management SPI requires the `edc-server-spi.jar` file to be set in your project's class path. If you do not reference this JAR file, you cannot use the Rights Management SPI in your Java project. This JAR file is installed with the AEM Forms SDK in the `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` folder.
 
-In addition to adding the `edc-server-spi.jar` file to your project’s class path, you must also add the JAR files that are required to use the Rights Management Service API. These files are needed to use the Rights Management Service API within the Invite External Users Handler.
+In addition to adding the `edc-server-spi.jar` file to your project's class path, you must also add the JAR files that are required to use the Rights Management Service API. These files are needed to use the Rights Management Service API within the Invite External Users Handler.
 
 ## Defining the invite external users handler implementation {#define-invite-external-users-handler}
 
@@ -164,7 +164,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Defining the component XML file for the authorization handler {#define-component-xml-authorization-handler}
 
-You must define a component XML file to deploy the invite external users handler component. A component XML file exists for each component and provides metadata about the component.
+Fefine a component XML file to deploy the invite external users handler component. A component XML file exists for each component and provides metadata about the component.
 
 The following `component.xml` file is used for the invite external users handler. Notice that the service name is `InviteExternalUsersSample` and the operation this service exposes is named `invitedUser`. The input parameter is a `java.util.List` instance and the output value is an array of `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instances.
 
@@ -198,19 +198,19 @@ The following `component.xml` file is used for the invite external users handler
 
 ## Packaging the invite external users handler {#packaging-invite-external-users-handler}
 
-To deploy the invite external users handler to AEM Forms, you must package your Java project into a JAR file. You must ensure that the external JAR files on which the invite external users handler’s business logic depends, such as the `edc-server-spi.jar` and `adobe-rightsmanagement-client.jar` files are also included in the JAR file. As well, the component XML file must be present. The `component.xml` file and external JAR files must be located at the root of the JAR file.
+To deploy the invite external users handler to AEM Forms, you must package your Java project into a JAR file. Ensure that the external JAR files on which the invite external users handler's business logic depends, such as the `edc-server-spi.jar` and `adobe-rightsmanagement-client.jar` files are also included in the JAR file. As well, the component XML file must be present. The `component.xml` file and external JAR files must be located at the root of the JAR file.
 
 >[!NOTE]
 >
 >In the illustration below, a `BootstrapImpl` class is shown. This section does not discuss how to create a `BootstrapImpl` class.
 
-The following illustration shows the Java project’s content that is packaged into the invite external users handler’s JAR file.
+The following illustration shows the Java project's content that is packaged into the invite external users handler's JAR file.
 
 ![Invite users](assets/ci_ci_InviteUsers.png)
 
 A. External JAR files required by the component B. JAVA file
 
-You must package the invite external users handler into a JAR file. In the previous diagram, notice that .JAVA files are listed. Once packaged into a JAR file, the corresponding .CLASS files must also be specified. Without the .CLASS files, the authorization handler does not work.
+Package the invite external users handler into a JAR file. In the previous diagram, notice that .JAVA files are listed. Once packaged into a JAR file, the corresponding .CLASS files must also be specified. Without the .CLASS files, the authorization handler does not work.
 
 >[!NOTE]
 >
@@ -226,8 +226,13 @@ To test the invite external users handler, you can add external users to invite 
 
 To add external users to invite using administration console:
 
-1. Deploy the invite external users handler’s JAR file using Workbench.
+1. Deploy the invite external users handler's JAR file using Workbench.
 1. Restart the application server.
+
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+    
 1. Log in to administration console.
 1. Click **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Invited **[!UICONTROL User Registration]**.
 1. Enable invited user registration by checking the **[!UICONTROL Enable invited user registration]** box. Under **[!UICONTROL Use Built-in registration system]**, click **[!UICONTROL No]**. Save your settings.

@@ -18,7 +18,7 @@ Here are the logical steps to make design importer recognize your custom compone
 
 1. Create a TagHandler
 
-    * A tag handler is a POJO that handles HTML tags of a specific kind. The "kind" of HTML tags your TagHandler can handle is defined via the TagHandlerFactory's OSGi property "tagpattern.name". This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example, if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it's up to you how you wish to take care of it.
+    * A tag handler is a POJO that handles HTML tags of a specific kind. The "kind" of HTML tags your TagHandler can handle is defined via the TagHandlerFactory's OSGi property "tagpattern.name". This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example, if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it is up to you how you want to take care of it.
     * The tag handler interface is similar to a SAX content handler interface. It receives SAX events for each html tag. As a tag handler provider, you need to implement certain lifecycle methods which are automatically called by the design importer framework.
 
 1. Create its corresponding TagHandlerFactory.
@@ -52,10 +52,10 @@ Landing page Cheat Sheet
 
 A sample layout of the zip is as follows:
 
-* /index.html -&gt; landing page HTML file
-* /css -&gt; to add into the CSS clientlib
-* /img -&gt; all images and assets
-* /js -&gt; to add into the JS clientlib
+* /index.html > landing page HTML file
+* /css > to add into the CSS clientlib
+* /img > all images and assets
+* /js > to add into the JS clientlib
 
 The layout is based on the HTML5 Boilerplate best practices layout. Read more at [https://html5boilerplate.com/](https://html5boilerplate.com/)
 
@@ -243,7 +243,7 @@ Supported properties
 * Target URL, supports third party and AEM url
 * Page rendering options (same window, new window, and so on)
 
-HTML tag to include click through component in the imported zip. Here href maps to target url, "View Product Details" maps to label and so on.
+HTML tag to include click through component in the imported zip. Here href maps to target url, "View Product Details" maps to label, and so on.
 
 ```xml
 <div id="cqcanvas">
@@ -276,7 +276,7 @@ Supported properties
 * Target URL, supports third party and AEM url
 * Page rendering options (same window, new window, and so on)
 
-HTML tag to include graphical link component in the imported zip. Here href maps to target url, img src is the rendering image, "title" is taken as hover text and so on.
+HTML tag to include graphical link component in the imported zip. Here href maps to target url, img src is the rendering image, "title" is taken as hover text, and so on.
 
 ```xml
 <div id="cqcanvas">
@@ -359,7 +359,7 @@ HTML tag to include graphical link component in the imported zip. Here "firstNam
 
 ### Parsys {#parsys}
 
-The AEM parsys component is a container component that can contain other AEM components. It's possible to add a parsys component in the imported HTML. This allows the user to add/delete editable AEM components to the landing page even after it has been imported.
+The AEM parsys component is a container component that can contain other AEM components. It is possible to add a parsys component in the imported HTML. This allows the user to add/delete editable AEM components to the landing page even after it has been imported.
 
 The paragraph system gives users the ability to add components using the sidekick.
 
@@ -558,7 +558,7 @@ After the landing page has been imported, the files (images, css, js, and so on)
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Suppose that the landing page is created under the campaign We.Retail and the name of the landing page is **myBlankLandingPage** then the location were Zip files are stored is as follows:
+Suppose that the landing page is created under the campaign `We.Retail` and the name of the landing page is **myBlankLandingPage** then the location were Zip files are stored is as follows:
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 

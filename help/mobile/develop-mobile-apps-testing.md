@@ -19,7 +19,7 @@ When developing a mobile app, there are many new concerns specific to devices th
 
 * Functional - Are all requirements met by your app?
 * Usability - Is the app easy to use and understand by your customer?
-* Performance - What happens during a spike in usage? Are the app elements, like swipes and carousels, quick and don't detract away from the experience?
+* Performance - What happens during a spike in usage? Are the app elements, like swipes and carousels, quick and do not detract away from the experience?
 * Failure or Interrupts - What happens when there is an incoming call or notification while your app is running? What happens if there is a network outage or power off?
 * Installation and Updates - How is the installation experience? How are updates pushed out?
 * Technical - Is your app consuming too much power from a device?
@@ -83,12 +83,12 @@ For more information, see [https://appium.io/](https://appium.io/).
 
 For more information, see [https://saucelabs.com/](https://saucelabs.com/).
 
-**AppTestNow**
+<!-- **AppTestNow**
 
 * An outsourcing service that tests your mobile apps.
 * Included is a large pool of devices and offers a wide range of types of testing: performance, quality, functional, certification, localization, data consumption, and so on.
 
-For more information, see [https://apptestnow.com/](https://apptestnow.com/).
+For more information, see [https://apptestnow.com/](https://apptestnow.com/). -->
 
 **HockeyApp**
 

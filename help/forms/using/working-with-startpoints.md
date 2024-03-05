@@ -24,7 +24,7 @@ To initiate a process from the Adobe Experience Manager (AEM) Forms app, you mus
 1. To view the Startpoints available in the AEM Forms app, go to [Home screen](../../forms/using/home-screen.md).
 1. On the **[!UICONTROL Home]** screen, by default, the **[!UICONTROL All Forms]** list is displayed.
 
-   The startpoint is associated with a form. Tap the startpoint associated form in the list to open it.
+   The startpoint is associated with a form. Select the startpoint associated form in the list to open it.
 
    The form associated with the startpoint opens.
 
@@ -32,7 +32,7 @@ To initiate a process from the Adobe Experience Manager (AEM) Forms app, you mus
 
    You can add annotations to this task using the [attachment](../../forms/using/add-attachments.md) button.
 
-1. After you fill the form, tap the **[!UICONTROL Submit]** button.
+1. After you fill the form, select the **[!UICONTROL Submit]** button.
 
 If the app is offline, the form and its data are saved in the Outbox folder.
 

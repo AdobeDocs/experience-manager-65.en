@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Edge Delivery Services
-description: Getting Started with Edge Delivery Services (EDS).
+description: Getting Started with Edge Delivery Services
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
 ---
 # Getting Started with Edge Delivery Services {#getstart-edge}
@@ -39,7 +39,7 @@ You can also use Edge Delivery Services in combination with Adobe Target, Analyt
 
 ## Getting Access to Edge Delivery Services {#getting-access}
 
-It's easy to get started using Edge Delivery Services. Get started by following the [Getting Started - Developer Tutorial](https://www.hlx.live/developer/tutorial).
+It is easy to get started using Edge Delivery Services. Get started by following the [Getting Started - Developer Tutorial](https://www.hlx.live/developer/tutorial).
 
 ## Getting Help from Adobe {#adobe-gethelp}
 

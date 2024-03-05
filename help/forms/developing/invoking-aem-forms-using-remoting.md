@@ -305,7 +305,7 @@ You enable custom authentication in administration console by changing the authe
 >
 >In the previous release of AEM Forms, you sent credentials to a destination by calling the `RemoteObject.setCredentials` method. The `setCredentials` method did not actually pass the credentials to the server until the first attempt by the component to connect to the server. Therefore, if the component issued a fault event, you could not be certain if the fault happened because of an authentication error, or for another reason. The `ChannelSet.login` method connects to the server when you call it so that you can handle an authentication issue immediately. Although you can continue to use the `setCredentials` method, it is recommended that you use the `ChannelSet.login` method.
 
-Because multiple destinations can use the same channels, and corresponding ChannelSet object, logging in to one destination logs the user in to any other destination that uses the same channel or channels. If two components apply different credentials to the same ChannelSet object, the last credentials applied are used. If multiple components use the same authenticated ChannelSet object, calling the `logout` method logs all components out of the destinations.
+Because multiple destinations can use the same channels, and corresponding ChannelSet object, logging in to one destination logs in the user to any other destination that uses the same channel or channels. If two components apply different credentials to the same ChannelSet object, the last credentials applied are used. If multiple components use the same authenticated ChannelSet object, calling the `logout` method logs all components out of the destinations.
 
 The following example uses the `ChannelSet.login` and `ChannelSet.logout` methods with a RemoteObject control. This application performs the following actions:
 
@@ -613,7 +613,9 @@ You can use administration console to specify whether documents are secure when 
 
 >[!NOTE]
 >
->To configure AEM Forms to accept unsecure documents, select the Allow non-secured document upload from Flex applications option. Then restart an application or service to ensure that the setting takes effect.
+>* To configure AEM Forms to accept unsecure documents, select the Allow non-secured document upload from Flex applications option. Then restart an application or service to ensure that the setting takes effect.
+> * It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 
 ### Quick Start: Invoking a short-lived process by passing a secure document using Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

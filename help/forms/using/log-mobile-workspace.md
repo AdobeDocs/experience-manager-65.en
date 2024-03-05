@@ -13,7 +13,7 @@ When you start your Adobe Experience Manager (AEM) Forms app, you must first pro
 
 ## To start the app {#to-start-the-app}
 
-1. Tap the AEM Forms app icon on your mobile device.
+1. Select the AEM Forms app icon on your mobile device.
 1. To log in to the app, enter a user name, password, and AEM Forms Server URL.
 
    >[!NOTE]

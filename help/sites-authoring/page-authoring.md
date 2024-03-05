@@ -13,7 +13,7 @@ The following provide two types of overview to authoring with AEM:
 
 >[!NOTE]
 >
->This section covers the tasks involved when authoring a content page. There are many additional features closely related to page authoring, covered in other sections of the [Authoring Guide](/help/sites-authoring/home.md).
+>This section covers the tasks involved when authoring a content page. There are many additional features closely related to page authoring, covered in other sections of the [Authoring Guide](/help/sites-authoring/first-steps.md).
 
 ## Quick Overview of Features Used for Authoring Pages {#quick-overview-of-features-used-for-authoring-pages}
 
@@ -35,7 +35,7 @@ To aid you when authoring pages the author environment provides features such as
   On the left side of an editable page a sliding browser can be opened; from here assets can be dragged onto the page; for example, to position assets or create links to other pages.
 
 * **Component Toolbar**
-  Both a single or a slow double-click/tap will reveal the appropriate toolbar (single for the inplace editing toolbar, then slow double for full toolbar).
+  Both a single or a slow double-click will reveal the appropriate toolbar (single for the inplace editing toolbar, then slow double for full toolbar).
 
 * **[Responsive Layout](/help/sites-authoring/responsive-layout.md)**
   This provides a paragraph system that lets you position components within a responsive grid.

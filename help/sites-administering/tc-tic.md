@@ -27,7 +27,7 @@ The following translation vendors provide an implementation of the new API for t
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
+* [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 * [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
@@ -174,14 +174,14 @@ Assets properties control how to configure assets. For more information about tr
  </tbody>
 </table>
 
-1. In the side bar, click or tap Tools &gt; Operations &gt; Cloud &gt; Cloud Services.
+1. In the side bar, click Tools &gt; Operations &gt; Cloud &gt; Cloud Services.
 1. In the Translation Integration area, whether any configurations have been created determines which link appears:
 
-    * If no configurations have been created, click or tap Configure Now.
-    * If configurations already exist, click or tap Show Configurations, and then click or tap the + link that appears next to Available Configurations.
+    * If no configurations have been created, click Configure Now.
+    * If configurations already exist, click Show Configurations, and then click the + link that appears next to Available Configurations.
 
-1. Type a name for the configuration and then click or tap Create.
-1. Configure the properties on the Sites, Communities, and Assets tab, and then click or tap OK.
+1. Type a name for the configuration and then click Create.
+1. Configure the properties on the Sites, Communities, and Assets tab, and then click OK.
 
 ## Configuring Pages for Translation {#configuring-pages-for-translation}
 
@@ -202,16 +202,16 @@ Further, for any communities [SCF components](/help/communities/scf.md) on the p
 
 Associate a page with the translation provider that you are using to translate the page and descendent pages.
 
-1. In the Sites console, select the page to configure and click or tap View Properties.
-1. Click or tap Edit then click or tap the Cloud Services tab.
-1. Click or tap Add Configuration &gt; Translation Integration.
-1. Select the translation provider to use, and then click or tap Done.
+1. In the Sites console, select the page to configure and click View Properties.
+1. Click Edit then click the Cloud Services tab.
+1. Click Add Configuration &gt; Translation Integration.
+1. Select the translation provider to use, and then click Done.
 
 ### Associating Pages with a Translation Integration Framework {#associating-pages-with-a-translation-integration-framework}
 
 Associate a page with the Translation Integration Framework that defines how you want to perform the translation of the page and descendent pages.
 
-1. In the Sites console, select the page to configure and click or tap View Properties.
-1. Click or tap Edit then click or tap the Cloud Services tab.
-1. Click or tap Add Configuration &gt; Translation Integration.
-1. Select the translation integration framework to use, and then click or tap Done.
+1. In the Sites console, select the page to configure and click View Properties.
+1. Click Edit then click the Cloud Services tab.
+1. Click Add Configuration &gt; Translation Integration.
+1. Select the translation integration framework to use, and then click Done.

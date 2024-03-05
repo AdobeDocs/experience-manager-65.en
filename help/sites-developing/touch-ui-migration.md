@@ -90,7 +90,7 @@ When migrating, be aware of the following major differences between the classic 
  </tbody>
 </table>
 
-In other words, migrating a section of your UI from the classic UI to the touch UI means porting an *ExtJS widget* to a *Sling component*. To ease this, the touch UI is based on the Granite UI framework, which already provides some Sling components for the UI (referred to as Granite UI components).
+In other words, migrating a section of your UI from the classic UI to the touch UI means to port an *ExtJS widget* to a *Sling component*. To ease this, the touch UI is based on the Granite UI framework, which already provides some Sling components for the UI (referred to as Granite UI components).
 
 Before you start, check the status and related recommendations:
 
@@ -138,11 +138,11 @@ Although not directly related to a migration to the touch UI, there are related 
 
 For full information on developing AEM see the collection of resources under:
 
-* [Developing User Guide](/help/sites-developing/home.md)
+* [Developing User Guide](/help/sites-developing/getting-started.md)
 * [Granite UI Documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Sites Tutorials and Videos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
 * [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

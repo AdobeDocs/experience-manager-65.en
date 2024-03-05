@@ -32,9 +32,9 @@ The activities and experiences that you see in Target mode reflect the [Activite
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId`to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names can therefore not be re-used in different campaign types.
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId`to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names cannot be re-used in different campaign types.
 >
->If you use the same name in the same campaign type, you will overwrite the existing campaign.
+>If you use the same name in the same campaign type, you overwrite the existing campaign.
 >
 >If while synchronizing, you encounter the error "Request Failed. `thirdPartyId` already exists," change the name of the campaign and synchronize again.
 
@@ -49,11 +49,11 @@ Switch to Target mode to access the tools for authoring targeted content.
 To switch to Target mode:
 
 1. Open the page for which you want to author targeted content.
-1. On the toolbar at the top of the page, click or tap the mode drop-down menu to reveal the available mode types.
+1. On the toolbar at the top of the page, click the mode drop-down menu to reveal the available mode types.
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
-1. Click or tap **Targeting**. Targeting options display at the top of the page.
+1. Click **Targeting**. Targeting options display at the top of the page.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -73,12 +73,12 @@ To add an activity:
 
    >[!NOTE]
    >
-   >It is recommended to [create brands through the activities console](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe recommends that you [create brands through the activities console](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >If you create a brand in any other way, make certain that the node `/campaigns/<brand>/master` exists or an error will result when you attempt to create an activity.
 
-1. Click or tap + next to the **Activity** drop-down menu.
+1. Click + next to the **Activity** drop-down menu.
 1. Type a name for the activity.
 
    >[!NOTE]
@@ -87,7 +87,7 @@ To add an activity:
 
 1. In the **Targeting** engine drop-down menu, select your targeting engine.
 
-    * If you select **ContextHub AEM**, the remaining fields are dimmed and not available. Click or tap **Create**.
+    * If you select **ContextHub AEM**, the remaining fields are dimmed and not available. Click **Create**.
 
     * If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.
 
@@ -116,13 +116,13 @@ To add an activity:
 
 1. In the **Brand** drop-down menu, select the brand that contains the activity that you are working on.
 1. In the **Activity** drop-down menu, select the activity for which you are authoring targeted content.
-1. To reveal the controls that guide you through the targeting process, click or tap **Start Targeting**.
+1. To reveal the controls that guide you through the targeting process, click **Start Targeting**.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    >[!NOTE]
    >
-   >To change the activity with which you are working, click or tap **Back**.
+   >To change the activity with which you are working, click **Back**.
 
 ## Create: Authoring the Experiences {#create-authoring-the-experiences}
 
@@ -134,7 +134,7 @@ After you [start the targeting process](/help/sites-authoring/content-targeting-
 
 >[!CAUTION]
 >
->Be careful when you disable targeting for a component that is already targeted in the author instance. The respective activity will be automatically deleted from the publish instance as well.
+>Be careful when you disable targeting for a component that is already targeted in the author instance. The respective activity is automatically deleted from the publish instance as well.
 
 >[!NOTE]
 >
@@ -174,14 +174,14 @@ Using the Create step of [the targeting process](/help/sites-authoring/content-t
 
 To add an experience:
 
-1. To add an experience, click or tap **+** **Add Experience Targeting** that appears below existing experiences in the **Audiences** pane.
-1. Select and audience. By default, that name is the name of the experience. You can type another name, if desired. Click or tap **OK**.
+1. To add an experience, click **+** **Add Experience Targeting** that appears below existing experiences in the **Audiences** pane.
+1. Select and audience. By default, that name is the name of the experience. You can type another name, if desired. Click **OK**.
 
 #### Removing Experiences Using Targeting Mode {#removing-experiences-using-targeting-mode}
 
 To delete an experience:
 
-1. Click or tap the arrow next to the experience name.
+1. Click the arrow next to the experience name.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -191,15 +191,15 @@ To delete an experience:
 
 To rename experiences using Targeting Mode:
 
-1. Click or tap the arrow next to the experience name.
+1. Click the arrow next to the experience name.
 1. Click **Rename Experience** and type in the new name.
-1. Click or tap somewhere else on the screen to save the changes.
+1. Click somewhere else on the screen to save the changes.
 
 #### Editing Audiences Using Targeting Mode {#editing-audiences-using-targeting-mode}
 
 To edit the audiences using Targeting Mode:
 
-1. Click or tap the arrow next to the experience name.
+1. Click the arrow next to the experience name.
 1. Click **Edit Audience** and select a new audience.
 1. Click **OK**.
 
@@ -207,7 +207,7 @@ To edit the audiences using Targeting Mode:
 
 To copy experiences using Targeting Mode:
 
-1. Click or tap the arrow next to the experience name.
+1. Click the arrow next to the experience name.
 1. Click **Duplicate** and choose the audience.
 1. Rename the experience, if desired, and click **OK**.
 
@@ -237,15 +237,15 @@ When you target a component, only that component can be used in the offer. You c
 
 Perform the following procedure after [starting the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings).
 
-1. Click or tap the component to target. The toolbar for the component appears, similar to the following example.
+1. Click the component to target. The toolbar for the component appears, similar to the following example.
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-1. Click or tap the Target icon.
+1. Click the Target icon.
 
    ![Target](do-not-localize/chlimage_1.png)
 
-   The component content is the offer for the Default experience. When a component is targeted, its default node will be replicated for each experience. This is needed for editing the correct content node during experience specific authoring. For these non-default experiences, either [add a custom offer](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) or [add a library offer](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   The component content is the offer for the Default experience. When a component is targeted, its default node is replicated for each experience. This is needed for editing the correct content node during experience specific authoring. For these non-default experiences, either [add a custom offer](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) or [add a library offer](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 #### Creating an Offer By Adding a Target Component {#creating-an-offer-by-adding-a-target-component}
 
@@ -275,10 +275,10 @@ When you add a component to the Target component, it provides content for a spec
 
 You can add a Target component to the page in Edit mode or in Target mode. You can add components to the Target component only in Target mode. The Target component belongs to the Personalization component group.
 
-If editing targeted content, you must click or tap **Start Targeting** before you can do so.
+If editing targeted content, you must click **Start Targeting** before you can do so.
 
 1. Drag the Target component to the page where you want the offer to appear.
-1. By default, no location ID is set. Click or tap the configure cog wheel to set the location.
+1. By default, no location ID is set. Click the configure cog wheel to set the location.
 
    >[!NOTE]
    >
@@ -303,15 +303,15 @@ Create an offer by authoring the content of a targeted component in Targeting mo
 If you decide that the offer can be used for other experiences, you can create a custom offer and [add it to the library](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library). For information about using the Offers console to create a reusable offer, see [Add an Offer to an Offer Library](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Select the experience to which you are adding the offer.
-1. To reveal the component menu, click or tap the targeted component to which you are adding the offer.
+1. To reveal the component menu, click the targeted component to which you are adding the offer.
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Click or tap the + icon.
+1. Click the + icon.
 
    The content of the Default offer is used as the offer for the current experience.
 
-1. Click or tap the offer to reveal the offer menu, then click or tap the edit icon.
+1. Click the offer to reveal the offer menu, then click the edit icon.
 
    ![Offer menu](do-not-localize/chlimage_1-2.png)
 
@@ -324,25 +324,25 @@ Add an offer from the [offer library](/help/sites-authoring/offerlib.md) to an e
 You cannot add library offers to the Default experience.
 
 1. Select the experience to which you are adding the offer.
-1. To reveal the component menu, click or tap the targeted component to which you are adding the offer.
+1. To reveal the component menu, click the targeted component to which you are adding the offer.
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
-1. Click or tap the folder icon.
+1. Click the folder icon.
 
    ![Folder icon](do-not-localize/chlimage_1-3.png)
 
-1. Select the offer from the library and then click or tap the checkmark icon.
+1. Select the offer from the library and then click the checkmark icon.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-   The offer picker lets you browse or filter for offers. When browsing or filtering, you may also want to sort the offers and change how you view them. The number in the upper right-hand indicates how many offers are available in the current library.
+   The offer picker lets you browse or filter for offers. When browsing or filtering, you may also want to sort the offers and change how you view them. The number in the upper-right indicates how many offers are available in the current library.
 
-    * Click or tap **Browse** to navigate to another folder. The navigation pane opens and you click the arrow to drill down into folders. Click or tap **Browse** again to close the navigation pane.
+    * Click **Browse** to navigate to another folder. The navigation pane opens and you click the arrow to drill down into folders. Click **Browse** again to close the navigation pane.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-    * Click or tap **Filter** to filter the offers against keywords or tags. You enter keywords and you select tags from the drop-down menu. Click or tap **Filter** again to close the filtering pane.
+    * Click **Filter** to filter the offers against keywords or tags. You enter keywords and you select tags from the drop-down menu. Click **Filter** again to close the filtering pane.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
@@ -350,7 +350,7 @@ You cannot add library offers to the Default experience.
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
-   Click or tap the icon next to **View as** to view offers as tiles or as a list.
+   Click the icon next to **View as** to view offers as tiles or as a list.
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -361,18 +361,18 @@ Add a custom offer to the [offer library](/help/sites-authoring/offerlib.md) whe
 For information about using the Offers console to create a reusable offer, see [Add an Offer to an Offer Library](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Select the experience to reveal the custom offer.
-1. Click or tap the custom offer to reveal the offer menu, then click or tap the **Save Offer To Offer Library** icon.
+1. Click the custom offer to reveal the offer menu, then click the **Save Offer To Offer Library** icon.
 
    ![Save offer to Offer Library](do-not-localize/chlimage_1-4.png)
 
-1. Type a name for the offer, and select the library to which you are adding the offer, then click or tap the checkmark icon.
+1. Type a name for the offer, and select the library to which you are adding the offer, then click the checkmark icon.
 
 #### Converting a Library Offer to a Custom Library {#converting-a-library-offer-to-a-custom-library}
 
 Convert a library offer to a custom offer to change the offer for current experience and without changing the offer in other experiences.
 
 1. Select the experience to reveal the library offer.
-1. Click or tap the library offer to reveal the offer menu, then click or tap the Convert to Inline Offer icon.
+1. Click the library offer to reveal the offer menu, then click the Convert to Inline Offer icon.
 
    ![Convert to Inline Offer](do-not-localize/chlimage_1-5.png)
 
@@ -396,11 +396,11 @@ Audiences appear on the left side of the mapping diagram, and experiences appear
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-Define an audience using a segment. The cloud configuration for the page detemines determines the segments that are availble to you. When the page is not associated with an Adobe Target cloud configuration, AEM segments are available for defining audiences. When the page is associated with an Adobe Target cloud configuration, you use Target segments.
+Define an audience using a segment. The cloud configuration for the page determines the segments that are available to you. When the page is not associated with an Adobe Target cloud configuration, AEM segments are available for defining audiences. When the page is associated with an Adobe Target cloud configuration, you use Target segments.
 
 For information targeting engines, see [Targeting Engine](/help/sites-authoring/personalization.md#targeting-engine).
 
-An audience must not be used by more than one experience. A warning symbol appears next to an experience when it is mapped to an audience that is mapped to another experience.
+Do not use an audience more than one experience. A warning symbol appears next to an experience when it is mapped to an audience that is mapped to another experience.
 
 ![Warning symbol when mapped to an audience that is mapped to another experience](do-not-localize/chlimage_1-6.png)
 
@@ -408,9 +408,9 @@ An audience must not be used by more than one experience. A warning symbol appea
 
 Use the following procedure to associate an experience with an audience when using AEM targeting (or Adobe Target experience targeting):
 
-1. Click or tap the drop-down arrow next in the audience box that is mapped to the experience.
-1. (Optional) Click or tap **Edit** and then type a keyword to search for the desired segment.
-1. In the list of audiences, select the audience and click or tap **OK**.
+1. Click the drop-down arrow next in the audience box that is mapped to the experience.
+1. (Optional) Click **Edit** and then type a keyword to search for the desired segment.
+1. In the list of audiences, select the audience and click **OK**.
 
 ### If you are using A/B Testing (Adobe Target) ... {#if-you-are-using-a-b-testing-adobe-target}
 
@@ -422,9 +422,9 @@ You can change the percentages as long as they add up to 100 percent. An audienc
 
 ### Associating Audiences and Traffic Percentages with A/B Testing {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
-1. Click or tap the drop-down box next to the audience that is mapped to the experience.
+1. Click the drop-down box next to the audience that is mapped to the experience.
 1. (Optional) Click **Edit**, then type a keyword to search for the desired segment.
-1. Click or tap **OK.**
+1. Click **OK.**
 1. Enter in percentages to configure how audience traffic is routed to each experiences. The total number must equal 100.
 1. (Optional) Edit the experience name by clicking the drop-down menu next to the experience name.
 
@@ -432,7 +432,7 @@ You can change the percentages as long as they add up to 100 percent. An audienc
 
 The Goals & Settings step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Specify when the activity starts and ends, and the activity priority. In addition, you also track goals. Specifically you can decide what you want to measure with your activities.
 
-Goal Metrics are only available if you use Adobe Target for your targeting engine. You must define at least one goal metric. If you have Adobe Analytics configured and have an A4T Analytics cloud configuration, you can select whether you want the reporting source to be Adobe Target or Adobe Analytics.
+Goal Metrics are only available if you use Adobe Target for your targeting engine. Define at least one goal metric. If you have Adobe Analytics configured and have an A4T Analytics cloud configuration, you can select whether you want the reporting source to be Adobe Target or Adobe Analytics.
 
 The goal metrics are only measured for the published campaign.
 
@@ -502,7 +502,7 @@ Use the advanced settings to determine what happens **after** a user encounters 
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Increment Count, Release User &amp; Allow Reentry</strong></td>
+   <td><strong>Increment Count, Release User &amp; Allow Re-entry</strong></td>
    <td>Select the experience the visitor sees if they reenter the activity:
     <ul>
      <li>Same experience</li>
@@ -511,7 +511,7 @@ Use the advanced settings to determine what happens **after** a user encounters 
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Increment Count, Release User &amp; Bar Reentry</strong></td>
+   <td><strong>Increment Count, Release User &amp; Bar Re-entry</strong></td>
    <td>Determine what the user sees instead of the activity content:
     <ul>
      <li>Same experience, without tracking</li>
@@ -530,12 +530,12 @@ To configure settings if using AEM targeting:
 1. To specify when the activity starts, use the **Start** drop-down menu to select one of the following values:
 
     * **When Activated**: The activity starts when the page that contains the targeted content is activated.
-    * **Specified Date & Time**: A specific time. When you select this option, click or tap the calendar icon, select a date, and specify the time to start the activity.
+    * **Specified Date & Time**: A specific time. When you select this option, click the calendar icon, select a date, and specify the time to start the activity.
 
 1. To specify when the activity ends, use the **End** drop-down menu to select one of the following values:
 
     * **When Deactivated**: The activity ends when the page that contains the targeted content is deactivated.
-    * **Specified Date & Time**: A specific time. When you select this option, click or tap the calendar icon, select a date, and specify the time to end the activity.
+    * **Specified Date & Time**: A specific time. When you select this option, click the calendar icon, select a date, and specify the time to end the activity.
 
 1. To specify a priority for the activity, use the slider to select either **Low**, **Normal**, or **High**.
 
@@ -546,12 +546,12 @@ To configure goals and settings if using Adobe Target:
 1. To specify when the activity starts, use the **Start** drop-down menu to select one of the following values:
 
     * **When Activated**: The activity starts when the page that contains the targeted content is activated.
-    * **Specified Date & Time**: A specific time. When you select this option, click or tap the calendar icon, select a date, and specify the time to start the activity.
+    * **Specified Date & Time**: A specific time. When you select this option, click the calendar icon, select a date, and specify the time to start the activity.
 
 1. To specify when the activity ends, use the **End** drop-down menu to select one of the following values:
 
     * **When Deactivated**: The activity ends when the page that contains the targeted content is deactivated.
-    * **Specified Date & Time**: A specific time. When you select this option, click or tap the calendar icon, select a date, and specify the time to end the activity.
+    * **Specified Date & Time**: A specific time. When you select this option, click the calendar icon, select a date, and specify the time to end the activity.
 
 1. To specify a priority for the activity, use the slider to select either **Low**, **Normal**, or **High**.
 1. If you have configured Adobe Anaytics with your Adobe Target Account, then you see the **Reporting Source** drop-down menu. Select **Adobe Target** or **Adobe Analytics** as the source.
@@ -586,7 +586,7 @@ To configure goals and settings if using Adobe Target:
    >
    >You can remove additional goals by clicking or tapping the three dots and clicking or tapping **Delete**. AEM requires that you have at least one goal defined.
 
-1. If you want more control over how success metrics are counted, click or tap **Advanced Settings** to access those.
+1. If you want more control over how success metrics are counted, click **Advanced Settings** to access those.
 1. Click **Save**.
 
 After configuring, you can [view the performance of your activities](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) that use Adobe Target (either experience or A/B test targeting). In addition, with A/B test targeting, you can [convert the winners.](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
@@ -614,12 +614,12 @@ To simulate the visitor's experience, use the following tools:
 * The simulation Activity in Targeting mode: The page displays the offers for the user that is currently selected in Context Hub. You can edit the offers that target the user.
 * Preview mode: Use Context Hub to select the users and locations that satisfy the criteria of the segments that your experiences are based on. When your Context Hub selections change, the targeted content changes accordingly.
 
-1. To switch to Preview mode, on the toolbar click or tap **Preview**.
-1. On the tool bar, click or tap the Context Hub icon.
+1. To switch to Preview mode, on the toolbar click **Preview**.
+1. On the tool bar, click the Context Hub icon.
 
    ![Context Hub](do-not-localize/chlimage_1-7.png)
 
-1. Use Context Hub to change context properties. For example, click or tap the Persona property to select a different user.
+1. Use Context Hub to change context properties. For example, click the Persona property to select a different user.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -631,7 +631,7 @@ To simulate the visitor's experience, use the following tools:
 
 You can customize the Target component by accessing the component's options in one of two ways:
 
-1. After you have targeted the component, in the Target component, click or tap the component and then the settings icon (cog).
+1. After you have targeted the component, in the Target component, click the component and then the settings icon (cog).
 
    ![Target component menu](do-not-localize/chlimage_1-8.png)
 
@@ -639,7 +639,7 @@ You can customize the Target component by accessing the component's options in o
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Alternatively to access these settings in full screen mode, in the Target component options window, click or tap the full screen icon.
+1. Alternatively to access these settings in full screen mode, in the Target component options window, click the full screen icon.
 
    ![Target component options window](do-not-localize/chlimage_1-9.png)
 
@@ -690,11 +690,11 @@ You can customize the Target component by accessing the component's options in o
   </tr>
   <tr>
    <td><strong>Context Params</strong></td>
-   <td>Click or tap <strong>Add field</strong> to configure additional context parameters (same as what is available in Target framework). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td>
+   <td>Click <strong>Add field</strong> to configure additional context parameters (same as what is available in Target framework). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td>
   </tr>
   <tr>
    <td><strong>Static Params</strong></td>
-   <td>Click or tap <strong>Add field</strong> to configure additional static parameters (same as what is available in Target framework). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. Static parameters do not come from context (client context of content hub).</td>
+   <td>Click <strong>Add field</strong> to configure additional static parameters (same as what is available in Target framework). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. Static parameters do not come from context (client context of content hub).</td>
   </tr>
  </tbody>
 </table>

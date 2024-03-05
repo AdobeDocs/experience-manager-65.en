@@ -308,7 +308,7 @@ The following table describes all available VLT commands. See the individual com
 |Command|Abbreviated Command|Description|
 |`export`||Exports from a JCR repository (vault file system) to the local file system without control files.|
 |`import`||Imports a local file system to a JCR repository (vault file system).|
-|`checkout`|`co`|Checks out a Vault file system. Use this for an initial JCR repository to the local file system. (Note: You must first check out the repository in subversion.)|
+|`checkout`|`co`|Checks out a Vault file system. Use this for an initial JCR repository to the local file system. (Note: First check out the repository in subversion.)|
 |`analyze`||Analyzes packages.|
 |`status`|`st`|Prints the status of working copy files and directories.|
 |`update`|`up`|Imports changes from the repository into the working copy.|
@@ -940,4 +940,4 @@ Your local folder is now synchronized with the repository. The synchronization i
 
 >[!NOTE]
 >
->The VLT Sync feature only supports simple files and folders but detects special vault serialized files (.content.xml, dialog.xml, etc) and ignores them silently. Thus it is possible to use vault sync on a default vlt checkout.
+>The VLT Sync feature only supports simple files and folders but detects special vault serialized files (.content.xml, dialog.xml, and so on) and ignores them silently. Thus it is possible to use vault sync on a default vlt checkout.

@@ -1,14 +1,14 @@
 ---
 title: Compatibility Package
-seo-title: Compatibility Package
+
 description: Installing the Compatibility package on AEM Forms 6.5 lets you use the Correspondence Management assets from AEM Forms 6.4 and earlier versions and deprecated adaptive forms templates and pages
-seo-description: Installing the Compatibility package on AEM Forms 6.4 lets you use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
-uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
+
+
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
+
 docset: aem65
 
 role: Admin
@@ -41,6 +41,10 @@ Ensure that you have [AEM Compatibility package](https://helpx.adobe.com/aem-for
 
 1. After the logs are stabilized, restart the server.
 1. Use the migration utility for making your assets compatible with 6.5.
+
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
    For more information, see [migration utility](../../forms/using/migration-utility.md).
 

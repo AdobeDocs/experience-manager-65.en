@@ -4,7 +4,8 @@ description: Learn how to use Document Services APIs to Digitally sign, encrypt,
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
+feature: Document Services
+exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
 ---
 # Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
 
@@ -526,7 +527,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
               VerificationTime verificationTime = getVerificationTimeForPades();
               ValidationPreferences dssPrefs = getValidationPreferences();
 
-              //retrieve specifications for each of the services, you may pass null if you don't want to use that service
+              //retrieve specifications for each of the services, you may pass null if you do not want to use that service
               //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
                outDoc = docAssuranceService.applyDocumentTimeStamp(inDoc, verificationTime, dssPrefs, resourceResolver, null);
          }
@@ -1201,7 +1202,7 @@ public class Certify {
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
 
-             //retrieve specifications for each of the services, you may pass null if you don't want to use that service
+             //retrieve specifications for each of the services, you may pass null if you do not want to use that service
              //we are not extending the reader in this case, so passing null
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     try {
@@ -1566,7 +1567,7 @@ public class PassEncryptCertifyExtend {
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
 
-             //retrieve specifications for each of the services, you may pass null if you don't want to use that service
+             //retrieve specifications for each of the services, you may pass null if you do not want to use that service
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     outDoc = docAssuranceService.secureDocument(inDoc, getPassEncryptionOptions(), getCertificationOptions(resourceResolver), getReaderExtensionOptions(resourceResolver),null);
         }
@@ -1878,7 +1879,7 @@ public class PassEncryptSignExtend {
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
 
-             //retrieve specifications for each of the services, you may pass null if you don't want to use that service
+             //retrieve specifications for each of the services, you may pass null if you do not want to use that service
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     outDoc = docAssuranceService.secureDocument(inDoc, getCertEncryptionOptions(), getSignatureOptions(resourceResolver), getReaderExtensionOptions(resourceResolver),null);
         }
@@ -4458,7 +4459,7 @@ The PDF Generator service provides APIs to converts native file formats to PDF. 
 
 ### GeneratePDFService {#generatepdfservice}
 
-The GeneratePDFService provides APIs to convert various file formats such as .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, (Deprecated).swf, .jpg, .bmp, .tif, .png, .html, and many other file formats to PDF. It also provides APIs to export PDF to various file formats and optimize PDFs. The service supports the following APIs:
+The GeneratePDFService provides APIs to convert various file formats such as .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (deprecated), .jpg, .bmp, .tif, .png, .html, and many other file formats to PDF. It also provides APIs to export PDF to various file formats and optimize PDFs. The service supports the following APIs:
 
 * **createPDF**: Converts a supported file type to a PDF document. It supports file formats such as Microsoft Word, Microsoft PowerPoint, Microsoft Excel, and Microsoft Project. In addition to these applications, any third party generic PDF generating application type can also be plugged into the API.
 * **exportPDF**: Converts a PDF document to a supported file type. The method accepts a PDF as input and exports the content of the PDF in specified file type format. You can export a PDF document in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 with CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) formats. You can also specify [custom Preflight profiles](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) for the PDF outputs.

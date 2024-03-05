@@ -153,7 +153,7 @@ You do not need to alter the cloud configurations. However, you can configure th
 >
 >Accurate targeting is always enabled on the author instance. However, on the publish instance you can opt to turn accurate targeting off globally by clearing the check mark next to Accurate Targeting in the cloud service configuration (**http://localhost:4502/etc/cloudservices.html**). You can also still turn accurate targeting on and off for individual components regardless of your setting in the cloud service configuration.
 >
->If you have ***already*** created targeted components and you change this setting, your changes do not affect those components. You must make any changes to those component directly.
+>If you have ***already*** created targeted components and you change this setting, your changes do not affect those components. Make any changes to those components directly.
 
 >[!CAUTION]
 >

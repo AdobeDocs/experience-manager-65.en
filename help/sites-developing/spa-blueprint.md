@@ -13,7 +13,7 @@ To enable the author to use the AEM SPA Editor to edit the content of an SPA, th
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
 
 ## Introduction {#introduction}
 
@@ -76,7 +76,7 @@ The page model uses the JSON Model Exporter, which is itself based on the [Sling
 * `:hierarchyType`: Hierarchical type of a resource. The `PageModelManager` currently supports the page type
 
 * `:items`: Child content resources of the current resource (nested structure, only present on containers)
-* `:itemsOrder`: Ordered list of the children. The JSON map object doesn't guaranty the order of its fields. By having both the map and the current array the consumer of the API has the benefits of both structures
+* `:itemsOrder`: Ordered list of the children. The JSON map object does not guaranty the order of its fields. By having both the map and the current array the consumer of the API has the benefits of both structures
 * `:path`: Content path of an item (present on items representing a page)
 
 See also [Getting Started with AEM Content Services.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
@@ -148,7 +148,7 @@ The `Page` component extends the `Container` component. A container is a compone
 
 ### Responsive Grid {#responsive-grid}
 
-The Responsive Grid component is a container. It contains an specific variant of the Model Provider representing its columns. The Responsive Grid and its columns are responsible for decorating the outer HTML element of the project's component with the specific class names contained in the model.
+The Responsive Grid component is a container. It contains a specific variant of the Model Provider representing its columns. The Responsive Grid and its columns are responsible for decorating the outer HTML element of the project's component with the specific class names contained in the model.
 
 The Responsive Grid component should come pre-mapped to its AEM counterpart as this component is complex and rarely customized.
 

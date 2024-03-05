@@ -1,12 +1,12 @@
 ---
 title: Annotations when editing a content page
 description: Many components directly related to content let you add an annotation.
-uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
+
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 ---
 # Annotations when Editing a Page{#annotations-when-editing-a-page}
@@ -37,7 +37,7 @@ A special [mode](/help/sites-authoring/author-environment-tools.md#page-modes) i
 
 >[!NOTE]
 >
->Don't forget that [comments](/help/sites-authoring/basic-handling.md#timeline) are also available for providing feedback on a page.
+>Do not forget that [comments](/help/sites-authoring/basic-handling.md#timeline) are also available for providing feedback on a page.
 
 >[!NOTE]
 >
@@ -59,15 +59,15 @@ The Annotate mode lets you create, edit, move or delete annotations on your cont
 
    >[!NOTE]
    >
-   >To exit Annotation mode tap/click the Annotate icon (x symbol) at the right of the top toolbar.
+   >To exit Annotation mode click the Annotate icon (x symbol) at the right of the top toolbar.
 
-1. Click/tap the Add Annotation icon (plus symbol at the left of the toolbar) to start adding annotations.
+1. Click the Add Annotation icon (plus symbol at the left of the toolbar) to start adding annotations.
 
    >[!NOTE]
    >
-   >To stop adding annotations (and return to viewing) tap/click the Cancel icon (x symbol in a white circle) at the left of the top toolbar.
+   >To stop adding annotations (and return to viewing) click the Cancel icon (x symbol in a white circle) at the left of the top toolbar.
 
-1. Click/tap the required component (components that can be annotated will be highlighted with a blue border) to add the annotation and open the dialog:
+1. Click the required component (components that can be annotated will be highlighted with a blue border) to add the annotation and open the dialog:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
@@ -94,17 +94,17 @@ The Annotate mode lets you create, edit, move or delete annotations on your cont
 
 1. After you have finished editing a specific annotation, you can:
 
-    * Click/tap the text marker to open the annotation. Once open you can view the full text, make changes or delete the annotation.
+    * Click the text marker to open the annotation. Once open you can view the full text, make changes or delete the annotation.
 
         * Sketches cannot be deleted independently of the annotation.
 
     * Reposition the text marker.
-    * Click/tap on a sketch line to select that sketch and drag it to the desired position.
+    * Click on a sketch line to select that sketch and drag it to the desired position.
     * Move, or copy, a component
 
         * Any related annotations and their sketches will also be moved or copied and their position in relation to the paragraph will remain the same.
 
-1. To exit Annotation mode, and return to the mode previously used, tap/click the Annotate icon (x symbol) at the right of the top toolbar.
+1. To exit Annotation mode, and return to the mode previously used, click the Annotate icon (x symbol) at the right of the top toolbar.
 
 >[!NOTE]
 >

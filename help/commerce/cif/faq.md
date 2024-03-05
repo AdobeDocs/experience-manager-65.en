@@ -41,7 +41,7 @@ Dynamic data such as price or inventory is not cached on the Dispatcher. Dynamic
 
 ## 9. How does cache invalidation for AEM Dispatcher work with AEM and commerce?
 
-Adobe recommends setting up TTL-based cache invalidation for pages cached on the Dispatcher. For dynamic information such as price or stock, Adobe recommends rendering the date client-side. For more information about TTL-based cache invalidation, see [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=en)
+Adobe recommends setting up TTL-based cache invalidation for pages cached on the Dispatcher. For dynamic information such as price or stock, Adobe recommends rendering the date client-side. For more information about TTL-based cache invalidation, see [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
 
 ## 10. Is there any recommendation on unified search across AEM content with Commerce?
 

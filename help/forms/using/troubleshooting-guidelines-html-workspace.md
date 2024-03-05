@@ -1,14 +1,14 @@
 ---
 title: Troubleshooting guidelines for AEM Forms workspace
-seo-title: Troubleshooting guidelines for AEM Forms workspace
+
 description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
-seo-description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
-uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
+
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
 ---
 # Troubleshooting guidelines for AEM Forms workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
@@ -29,6 +29,10 @@ While installling the package, if you encounter an error `javax.jcr.nodetype.Con
 1. Go to the Package Manager. The default URL is `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Search and install the `adobe-lc-workspace-pkg-[version].zip` package.
 1. Restart the application server.
+
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
 ## AEM Forms workspace&nbsp;logging {#aem-forms-workspace-nbsp-logging}
 

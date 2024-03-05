@@ -134,7 +134,7 @@ The recommended values are :
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3, the above two parameters are preconfigured OOTB, and can be persisted via the OSGi QueryEngineSettings.
+In AEM 6.3, the above two parameters are preconfigured out-of-the-box, and can be persisted via the OSGi QueryEngineSettings.
 
 More information available under : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 

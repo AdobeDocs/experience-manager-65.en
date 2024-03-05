@@ -49,7 +49,7 @@ Once the locale is identified, the adaptive forms picks the form-specific dictio
 
 If no locale information is present, adaptive form is delivered in the original language of the form. The original language is the language used while developing the adaptive form.  
 
-If a client library for the requested locale doesn't exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` doesn't exist, the adaptive form will use the client library for `en` (English) language, if it exists. However, if none of them exist, the adaptive form uses the dictionary for `en` locale.
+If a client library for the requested locale does not exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` does not exist, the adaptive form will use the client library for `en` (English) language, if it exists. However, if none of them exist, the adaptive form uses the dictionary for `en` locale.
 
 ## Add localization support for non-supported locales {#add-localization-support-for-non-supported-locales}
 
@@ -118,6 +118,10 @@ The `<locale>` will appear at `https://'[server]:[port]'/libs/cq/i18n/translator
 ### Restart the server {#restart-the-server}
 
 Restart the AEM server for the added locale to come into effect.
+
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
 ## Sample libraries for adding support for Spanish {#sample-libraries-for-adding-support-for-spanish}
 

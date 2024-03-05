@@ -1,13 +1,13 @@
 ---
 title: Add custom properties to Correspondence Management assets
-seo-title: Add custom properties to Correspondence Management assets
+
 description: Learn how to add custom properties to Correspondence Management assets.
-seo-description: Learn how to add custom properties to Correspondence Management assets.
-uuid: 4716e181-d3ea-424b-9544-376cc649bce7
+
+
 content-type: reference
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
+
 docset: aem65
 
 feature: Correspondence Management
@@ -515,7 +515,7 @@ To add a property to an asset type, complete the following steps:
 
 ### Display custom properties on the Asset Creation Page {#display-custom-properties-on-the-asset-creation-page}
 
-By default, the custom properties added to new tabs are visible only on the properties page and not on the asset creation page, as the asset creation page doesn't have tab layout. To display the custom properties on the asset creation page along with other properties, you need to do the following:
+By default, the custom properties added to new tabs are visible only on the properties page and not on the asset creation page, as the asset creation page does not have tab layout. To display the custom properties on the asset creation page along with other properties, you need to do the following:
 
 1. Right-click the items folder at the following path and select **Overlay Node**:
 
@@ -756,7 +756,7 @@ When you add the sling:orderBefore property to specify the column location, then
 
 ## Enable search for custom properties {#enable-search-for-custom-properties}
 
-By default, full text search doesn't include custom properties that you add to the UI using CRX/DE.
+By default, full text search does not include custom properties that you add to the UI using CRX/DE.
 
 To include the custom properties in search, you need to allow indexing of custom properties.
 

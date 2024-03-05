@@ -1,13 +1,13 @@
 ---
 title: Fine-tuning Health Monitor performance
-seo-title: Fine-tuning Health Monitor performance
+
 description: Learn how to fine-tune Health Monitor performance. Control the system statistics which impact the performance of forms environment using JAVA setting option.
-uuid: 770b10cb-065f-41b5-9594-a291e4311151
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
+
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
 ---
 # Fine-tuning Health Monitor performance{#fine-tuning-health-monitor-performance}

@@ -33,7 +33,7 @@ You receive these notifications in your own Inbox where you can view them and ta
 >* [Projects](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projects - working with Tasks](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/home.md)
+>* [Forms](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Inbox in the Header {#inbox-in-the-header}
@@ -59,7 +59,7 @@ Out-of-the-box AEM comes pre-loaded with four tasks assigned to the administrato
 
 To open the AEM notification inbox:
 
-1. Click/tap on the indicator in the toolbar.
+1. Click on the indicator in the toolbar.
 
 1. Select **View all**. The **AEM Inbox** opens. The inbox shows items from workflows, projects and tasks.
 1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
@@ -132,8 +132,8 @@ The Admin Control option is visible only to the members of the `administrators` 
 
 * **Column Customization**: Customize an AEM Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow.
   * **Add Column**: Select a column to add in AEM Inbox.
-  * **Edit Column**: Hover the mouse over the column title and tap ![edit](assets/edit.svg) icon to enter a column display name.
-  * **Delete Column**: Tap the ![delete](assets/delete_updated.svg) icon to delete the column from AEM Inbox.
+  * **Edit Column**: Hover the mouse over the column title and select ![edit](assets/edit.svg) icon to enter a column display name.
+  * **Delete Column**: Select the ![delete](assets/delete_updated.svg) icon to delete the column from AEM Inbox.
   * **Move Column**: Drag the ![move](assets/move_updated.svg) icon to move a column to a new position in AEM Inbox.
 
   ![admin-control](assets/admin-control-column-customize.png)
@@ -146,7 +146,7 @@ The Admin Control option is visible only to the members of the `administrators` 
 
 * **User Navigation**
   * **Hide navigation options:** Select this option to hide navigation options available in the header. The navigation options include links to other solutions, Help link, and the authoring options available on tapping Adobe Experience Manager logo or text. 
-* **Save:** Tap/click this option to save the settings.
+* **Save:** Click this option to save the settings.
 
 ## Taking Action on an Item {#taking-action-on-an-item}
 

@@ -440,7 +440,7 @@ Supports facet extraction in the same way as the daterange predicate.
 
 Root predicate group. Supports all features of a group and lets you set global query parameters.
 
-The name "root" is never used in a query, it's implicit.
+The name "root" is never used in a query, it is implicit.
 
 #### Properties {#properties-18}
 
@@ -568,7 +568,7 @@ Does not support facet extraction.
 
 * **all**
 
-  (bool) Search entire tag fulltext, that is, all titles, description, and so on (takes precedence over "l `ang`").
+  (bool) Search entire tag fulltext, that is, all titles, description, and so on. Takes precedence over "l `ang`".
 
 ### type {#type}
 

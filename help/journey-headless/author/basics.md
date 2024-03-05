@@ -102,7 +102,7 @@ A dialog opens where you can enter the details, then confirm with **Create**:
 
 #### Using Paths and Tags to limit Content Fragment Models available in the Folder {#tags-paths-for-models-in-folder}
 
-This section is slightly more advanced. You do not really need it if you are just starting out and trying things, but it is most useful when you have  many fragments. So it's good to know about - even if you do not use it quite yet.
+This section is slightly more advanced. You do not really need it if you are just starting out and trying things, but it is most useful when you have  many fragments. So it is good to know about - even if you do not use it quite yet.
 
 Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for yourself, and other authors, you can limit the list of models available for a specific folder.
 
@@ -120,7 +120,7 @@ You then navigate through these folders to create, and edit your Content Fragmen
 
 Just in case...
 
-You will probably be given an initial folder where you can create your folders. This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. This probably won't interest you, but if necessary you can check the **Configuration** in the **Cloud Services** of the folder **Properties**:
+You will probably be given an initial folder where you can create your folders. This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. This is probably of no interest you, but if necessary you can check the **Configuration** in the **Cloud Services** of the folder **Properties**:
 
 ![Create Folder Properties - Configuration](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -178,7 +178,7 @@ Confirm your updates with either **Save** or **Save & close**.
 >
 >For more details you can read Variations - Authoring Content Fragments.
 
-#### What you (probably) don't need to worry about {#what-you-probably-do-not-need-to-worry-about}
+#### What you (probably) do not need to worry about {#what-you-probably-do-not-need-to-worry-about}
 
 OK, this might seem a slightly strange section, but once you open the Content Fragment Editor and start exploring you'll see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
 
@@ -193,7 +193,7 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 * **Associated Content**
 
-  This one is quite obvious as it's a tab in the editor.
+  This one is quite obvious as it is a tab in the editor.
 
   Content Fragments have been available in AEM for quite a few versions. Originally they were made available for "traditional" use when authoring pages....and they are still used in this context. This can involve associating assets (for example, images) that although not embedded in the fragment, needs to be available to the author when authoring a page.
 

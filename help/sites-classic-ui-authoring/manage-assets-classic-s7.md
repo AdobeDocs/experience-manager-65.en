@@ -1,12 +1,12 @@
 ---
 title: Add Dynamic Media Classic (Scene7) features to your page
 description: Adobe Dynamic Media Classic (Scene7) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
-uuid: dc463e2d-a452-490e-88af-f79bdaa3b089
+
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
+
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 ---

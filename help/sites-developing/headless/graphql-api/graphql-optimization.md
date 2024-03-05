@@ -75,7 +75,7 @@ GraphQL queries and their JSON responses can be cached if targeted as `GET` requ
 
 See:
 
-* [Using CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn)
+* [Using CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### Set HTTP cache control headers {#set-http-cache-control-headers}
 
@@ -310,7 +310,7 @@ There are several other situations where a filter expression cannot be evaluated
 
 ### Minimize Content Fragment Nesting {#minimize-content-fragment-nesting}
 
-Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a nested fragment, that has a nested fragment, that has...and so on. 
+Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a nested fragment that has a nested fragment, that has..., and so on. 
 
 However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested Content Fragments. 
 

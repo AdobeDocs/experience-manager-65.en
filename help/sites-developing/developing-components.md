@@ -1,14 +1,14 @@
 ---
 title: Developing AEM Components
-seo-title: Developing AEM Components
+
 description: AEM components are used to hold, format, and render the content made available on your webpages.
-seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
-uuid: 1f39daa6-7277-45a2-adcc-74b58c93b8e4
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
+
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
@@ -89,11 +89,11 @@ The mechanism to separate logic from appearance helps clarify what is called for
 
 ### Using Java {#using-java}
 
-[The HTL Java Use-API enables a HTL file to access helper methods in a custom Java class](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). This lets you use Java code to implement the logic for selecting and configuring the component content.
+[The HTL Java Use-API enables a HTL file to access helper methods in a custom Java class](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). This lets you use Java code to implement the logic for selecting and configuring the component content.
 
 ### Using JavaScript {#using-javascript}
 
-[The HTL JavaScript Use-API enables a HTL file to access helper code written in JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). This lets you use JavaScript code to implement the logic for selecting and configuring the component content.
+[The HTL JavaScript Use-API enables a HTL file to access helper code written in JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). This lets you use JavaScript code to implement the logic for selecting and configuring the component content.
 
 ### Using Client-Side HTML Libraries {#using-client-side-html-libraries}
 
@@ -192,7 +192,7 @@ For examples, see:
 >
 >See:
 >
->* the AEM Gems session on [Customizing Dialog Fields](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+>* the AEM Gems session on [Customizing Dialog Fields](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* the related sample code covered under [Code Sample - How to Customize Dialog Fields](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -458,9 +458,9 @@ When migrating a component that was designed for use with the classic UI to a co
     * Create a dialog for use in the touch-enabled UI. However, for compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI.
     * The [AEM Modernization Tools](/help/sites-developing/modernization-tools.md) are provided to help you extend existing components.
     * [Mapping ExtJS to Granite UI Components](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) provides a convenient overview of ExtJS xtypes and node types with their equivalent Granite UI resource types.
-    * Customizing fields, for more information see the AEM Gems session on [Customizing Dialog Fields](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+    * Customizing fields, for more information see the AEM Gems session on [Customizing Dialog Fields](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
     * Migrate from vtypes to [Granite UI validation](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-    * Using JS listeners, for more information see [Handling Field Events](#handling-field-events) and the AEM Gems session on [Customizing Dialog Fields](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+    * Using JS listeners, for more information see [Handling Field Events](#handling-field-events) and the AEM Gems session on [Customizing Dialog Fields](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ### Migrating cq:listener Code {#migrating-cq-listener-code}
 

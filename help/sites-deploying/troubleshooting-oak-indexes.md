@@ -1,13 +1,10 @@
 ---
 title: Troubleshooting Oak Indexes
-seo-title: Troubleshooting Oak Indexes
 description: Learn how to identify if indexing is slow, find the cause, and resolve the issue.
-uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
 ---
 # Troubleshooting Oak Indexes{#troubleshooting-oak-indexes}
@@ -16,7 +13,7 @@ exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
 
 AEM's internal reindexing process collects repository data and stores it in Oak indexes to support performant querying of content. In exceptional circumstances, the process can become slow or even stuck. This page acts as a troubleshooting guide to help identify if the indexing is slow, find the cause, and resolve the issue.
 
-It is important to distinguish between reindexing that takes an inappropriately long amount of time, and reindexing that takes a long amount of time because it's indexing vast quantities of content. For example, the time it takes to index content scales with the amount of content, so large production repositories take longer to reindex than small development repositories.
+It is important to distinguish between reindexing that takes an inappropriately long amount of time, and reindexing that takes a long amount of time because it is indexing vast quantities of content. For example, the time it takes to index content scales with the amount of content, so large production repositories take longer to reindex than small development repositories.
 
 See the [Best Practices on Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md) for additional information on when and how to reindex content.
 
@@ -47,7 +44,7 @@ A forced shutdown results in AEM suspending asynchronous indexing for up to 30 m
 
 >[!NOTE]
 >
->For AEM 6.1, ensure that [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) is installed.
+>For AEM 6.1, ensure that [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) is installed.
 
 In exceptional circumstances, the thread pool used to manage asynchronous indexing may become overloaded. To isolate the indexing process, a thread pool can be configured to prevent other AEM work from interfering with Oak's ability to index content in a timely manner. In such cases, do the following:
 

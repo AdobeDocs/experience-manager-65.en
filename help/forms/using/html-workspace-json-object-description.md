@@ -264,7 +264,7 @@ JSON objects used in AEM Forms workspace are described below.
   <tr>
    <td>taskFormType<br /> </td>
    <td>T</td>
-   <td>It contains task form type. Using this field, task is rendered on client as pdf for, swf form and so on.<br /> </td>
+   <td>It contains task form type. Using this field, task is rendered on client as pdf for, swf form, and so on.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -324,7 +324,7 @@ JSON objects used in AEM Forms workspace are described below.
   <tr>
    <td>availableCommands.otherCommands<br /> </td>
    <td>T</td>
-   <td>It contains commands like lock, unlock, abandon, return, claim, and so on as available.<br /> </td>
+   <td>It contains commands like lock, unlock, abandon, return, claim, and so on, as available.<br /> </td>
   </tr>
   <tr>
    <td>processInstanceInfo<br /> </td>

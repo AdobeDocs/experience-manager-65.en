@@ -51,7 +51,7 @@ These subforms are displayed as target areas in the Print template after uploadi
 
 To create an XDP template for the Print channel, do the following:
 
-1. Open the Forms Designer, select **File** &gt; **New** &gt; **Use a blank form,** tap **Next**, and then tap **Finish** to open the form for template creation.
+1. Open the Forms Designer, select **File** &gt; **New** &gt; **Use a blank form,** select **Next**, and then select **Finish** to open the form for template creation.
 
    Ensure that the **Object Library** and **Object** options are selected from the **Window** menu.
 
@@ -102,22 +102,22 @@ To create an XDP template for the Print channel, do the following:
     1. Navigate to the location where you can save the file and specify the name as **create_first_ic_print_template**.
     1. Select **.xdp** from the **Save as type** drop-down list.
 
-    1. Tap **Save**.
+    1. Select **Save**.
 
 ### Upload an XDP template to the AEM Forms Server {#upload-xdp-template-to-the-aem-forms-server}
 
 Once you have created an XDP template using the Forms Designer, you must upload it to the AEM Forms Server so that the template is available for use while creating the Interactive Communication.
 
 1. Select **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
-1. Tap **Create** &gt; **File Upload**.
+1. Select **Create** &gt; **File Upload**.
 
-   Navigate and select the **create_first_ic_print_template** template (XDP) and tap **Open** to import the XDP template to the AEM Forms Server.
+   Navigate and select the **create_first_ic_print_template** template (XDP) and select **Open** to import the XDP template to the AEM Forms Server.
 
 ### Create an XDP template for layout fragments {#create-xdp-template-for-layout-fragments}
 
 To create a layout fragment for the Print channel of the Interactive Communication, create an XDP using Forms Designer and upload it to the AEM Forms Server.
 
-1. Open the Forms Designer, select **File** &gt; **New** &gt; **Use a blank form,** tap **Next**, and then tap **Finish** to open the form for template creation.
+1. Open the Forms Designer, select **File** &gt; **New** &gt; **Use a blank form,** select **Next**, and then select **Finish** to open the form for template creation.
 
    Ensure that the **Object Library** and **Object** options are selected from the **Window** menu.
 
@@ -129,7 +129,7 @@ To create a layout fragment for the Print channel of the Interactive Communicati
     1. Select the **Include Header Row in Table** checkbox.
     1. Tab **OK**.
 
-1. Tap **+** in the left pane next to **Table** 1 and right-click **Cell1** and select **Rename Object** to **Date**.
+1. Select **+** in the left pane next to **Table** 1 and right-click **Cell1** and select **Rename Object** to **Date**.
 
    Similarly, rename **Cell2**, **Cell3**, **Cell4**, and **Cell5** to **Time**, **Number**, **Duration**, and **Charges** respectively.
 
@@ -152,7 +152,7 @@ To create a layout fragment for the Print channel of the Interactive Communicati
     1. Navigate to the location where you can save the file and specify the name as **table_lf**.
     1. Select **.xdp** from the **Save as type** drop-down list.
 
-    1. Tap **Save**.
+    1. Select **Save**.
 
    Once you have created an XDP template for layout fragment using the Forms Designer, you must [upload](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) it to the AEM Forms Server so that the template is available for use while creating layout fragments.
 
@@ -171,10 +171,10 @@ To create a Web channel template, define a folder where you can save the created
 
 To create a folder for the editable templates, do the following:
 
-1. Tap **Tools** ![hammer-icon](assets/hammer-icon.svg) &gt; **Configuration Browser**.
+1. Select **Tools** ![hammer-icon](assets/hammer-icon.svg) &gt; **Configuration Browser**.
    * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
-1. In the Configuration Browser page, tap **Create**.
-1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
+1. In the Configuration Browser page, select **Create**.
+1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and select **Create**.
 
    ![Configure web templates](assets/create_first_ic_web_template_new.png)
 
@@ -199,31 +199,31 @@ All the entities such as document fragments, charts, tables, images, and buttons
 To create a template for the Web channel in the **Create_First_IC_templates** folder, do the following steps:
 
 1. Navigate to the appropriate template folder by selecting the **Tools** &gt; **Templates** &gt; **Create_First_IC_templates** folder.
-1. Tap **Create**.
-1. On the **Pick a Template Type** configuration wizard, select **Interactive Communication - Web Channel** and tap **Next**.
-1. On the **Template Details** configuration wizard, specify **Create_First_IC_Web_Template** as the template title. Specify an optional description and tap **Create**.
+1. Select **Create**.
+1. On the **Pick a Template Type** configuration wizard, select **Interactive Communication - Web Channel** and select **Next**.
+1. On the **Template Details** configuration wizard, specify **Create_First_IC_Web_Template** as the template title. Specify an optional description and select **Create**.
 
    A confirmation message that the **Create_First_IC_Web_Template** is displayed.
 
-1. Tap **Open** to open the template in the template editor.
+1. Select **Open** to open the template in the template editor.
 1. Select **Initial Content** from the drop-down list next to the **Preview** option.
 
    ![Template editor](assets/template_editor_initial_content_new.png)
 
-1. Tap **Root Panel** and then tap **+** to view the list of components that you can add to the template.
+1. Select **Root Panel** and then select **+** to view the list of components that you can add to the template.
 1. To add a panel above the **Root Panel**, select **Panel** from the list.
 1. Select the **Content** tab in the left pane. The new panel added in step 8 is displayed under the **Root Panel** in the content tree.
 
    ![Content tree](assets/content_tree_root_panel_new.png)
 
-1. Select the panel and tap ![configure_icon](assets/configure_icon.png) (Configure).
+1. Select the panel and select ![configure_icon](assets/configure_icon.png) (Configure).
 1. In the Properties pane:
 
     1. Specify **billdetails** in the Name field.
     1. Specify **Bill Details** in the Title field.
     1. Select **1** from the **Number of Columns** drop-down list.
 
-    1. To save the properties, tap ![Save](/help/forms/using/assets/done_icon.png).
+    1. To save the properties, select ![Save](/help/forms/using/assets/done_icon.png).
 
    The name of the panel is updated to **Bill Details** in the content tree.
 
@@ -248,9 +248,9 @@ Once you have created the Web template, you must enable it to use the template w
 
 To enable the Web template, do the following:
 
-1. Tap **Tools** ![hammer-icon](assets/hammer-icon.svg) &gt; **Templates**.
-1. Navigate to the **Create_First_IC_Web_Template** template, select it, and tap **Enable**.
-1. Tap **Enable** again to confirm.
+1. Select **Tools** ![hammer-icon](assets/hammer-icon.svg) &gt; **Templates**.
+1. Navigate to the **Create_First_IC_Web_Template** template, select it, and select **Enable**.
+1. Select **Enable** again to confirm.
 
    The template is enabled and its status is displayed as Enabled. You can use this template while creating Interactive Communication for the Web channel.
 
@@ -259,7 +259,7 @@ To enable the Web template, do the following:
 Based on the use case, you must include the **Pay Now** and **Subscribe** buttons (adaptive forms components) in Interactive Communication. To enable the use of these buttons in the Interactive Communication, do the following:
 
 1. Select **Structure** from the drop-down list next to the **Preview** option.
-1. Select the **Document Container** root panel using the content tree and tap **Policy** to select the components that are allowed for use in the Interactive Communication.
+1. Select the **Document Container** root panel using the content tree and select **Policy** to select the components that are allowed for use in the Interactive Communication.
 
    ![Configure policy](assets/structure_configure_policy_new.png)
 
@@ -267,4 +267,4 @@ Based on the use case, you must include the **Pay Now** and **Subscribe** button
 
    ![Allowed components](assets/allowed_components_af_new.png)
 
-1. To save the properties, tap ![save](assets/done_icon.png).
+1. To save the properties, select ![save](assets/done_icon.png).

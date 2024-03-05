@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 ---
 # Feature differentiation between HTML5 forms and PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
@@ -42,7 +42,7 @@ The following table specifies the feature support provided for HTML5 forms and P
   </tr>
   <tr>
    <td>Pagination<br /> </td>
-   <td><p>An HTML5 form is divided into panels and boxes to give it an appearance similar to PDF forms. The size of the page is calculated dynamically. If all the contents of a page in an HTML5 form are deleted or marked hidden, then the blank page is hidden. An empty space (blank space) is not displayed between pages above and beneath the blank page.</p> <p>If data-merge or scripts add content to a page, then the length of the page expands to accommodate the newly added content. No new pages are added to the form to accommodate the newly added content. </p> <p><strong>Note:</strong> When the all the contents of a page in an HTML5 form are deleted or marked hidden, the blank page (blank space) remains visible between 1st and 2nd page but not between any other pages.</p> </td>
+   <td><p>An HTML5 form is divided into panels and boxes to give it an appearance similar to PDF forms. The size of the page is calculated dynamically. If all the contents of a page in an HTML5 form are deleted or marked hidden, then the blank page is hidden. An empty space (blank space) is not displayed between pages above and beneath the blank page.</p> <p>If data-merge or scripts add content to a page, then the length of the page expands to accommodate the newly added content. No new pages are added to the form to accommodate the newly added content. </p> <p><strong>Note:</strong> When the all the contents of a page in an HTML5 form are deleted or marked hidden, the blank page (blank space) remains visible between first and second page but not between any other pages.</p> </td>
    <td>Pagination in PDF depends on data content merged or user content and page count is increased/reduced based on it.</td>
   </tr>
   <tr>

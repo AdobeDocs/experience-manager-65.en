@@ -1,15 +1,15 @@
 ---
-title: Configure OAuth2-based authentication for Microsoft&reg; Office 365 mail server protocols
-description: Configure OAuth2-based authentication for Microsoft&reg; Office 365 mail server protocols
+title: Configure OAuth2-based authentication for Microsoft&reg (Forms JEE OAuth); Office 365 mail server protocols
+description: Configure OAuth2-based authentication for Microsoft&reg (Forms JEE OAuth); Office 365 mail server protocols
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 ---
-# Integrate with Microsoft&reg; Office 365 mail server protocols {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Integrate AEM Forms with Microsoft&reg; Office 365 mail server protocols {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 To allow organizations to adhere to secure email requirements, AEM Forms offer OAuth 2.0 support for integration with Microsoft&reg; Office 365 mail server protocols. You can use the Azure Active Directory (Azure AD) OAuth 2.0 authentication service, to connect with various protocols such as IMAP, POP, or SMTP and access email data for Office 365 users. Below are step-by-step instructions for configuring the Microsoft&reg; Office 365 mail server protocols to authenticate by way of the OAuth 2.0 service:
 
 1. Log in to [https://portal.azure.com/](https://portal.azure.com/) and search for **Azure Active Directory** in the search bar and click the result. 
 Alternatively, you can browse directly to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-1. Click **Add** > **App Registration** > **New Registration**
+1. Click **Add** > **App Registration** > **New Registration**.
 
    ![App Registeration](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
@@ -27,7 +27,7 @@ Alternatively, you can browse directly to [https://portal.azure.com/#blade/Micro
 
     ![Secret Key](/help/forms/using/assets/azure_secretkey.png)
 
-1. For adding permissions, go to the newly created app, and select **API Permissions** > **Add a Permission** > **Microsoft&reg; Graph** > **Delegated Permissions**
+1. For adding permissions, go to the newly created app, and select **API Permissions** > **Add a Permission** > **Microsoft&reg; Graph** > **Delegated Permissions**.
 1. Select the checkboxes for the below permissions for the app and click **Add Permission**:
 
    * `IMAP.AccessUser.All` 
@@ -68,14 +68,14 @@ Next, you must generate the authorization code, explained in the following steps
    >
    > If there is the single tenant application, replace `common` with your `[tenantid]` in the following URL for generating authorization code: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
-1. When, you type the above URL, you are redirected to the login screen:
+1. When you type the above URL, you are redirected to the login screen:
    ![Login Screen](/help/forms/using/assets/azure_loginscreen.png)
 
 1. Enter the email, click **Next** and the App permission screen appears:
 
    ![Allow Permission](/help/forms/using/assets/azure_permission.png)
 
-1. Once you allow permission, you are redirected to a new URL as: `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
+1. When you allow permission, you are redirected to a new URL as: `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
 
 1. Copy the value of `<code>` from the above URL from `0.ASY...` to `&session_state` in the above URL.
 
@@ -128,7 +128,7 @@ Next, you must generate the refresh token, explained in the following steps:
 
    >[!NOTE]
    >
-   >If you want to change the Auth 2.0 authentication setting to basic authentication for a particular process in a workbench, you can set the **OAuth 2.0 Authentication** value as 'False' under **Use Global settings** in the **Connection Settings** tab. 
+   >If desired, you can change the Auth 2.0 authentication setting to basic authentication for a particular process in a workbench. To do so, set the **OAuth 2.0 Authentication** value as 'False' under **Use Global settings** in the **Connection Settings** tab. 
 
 ## To enable oAuth task notifications {#enable_oauth_task}
 
@@ -142,7 +142,7 @@ Next, you must generate the refresh token, explained in the following steps:
 
    >[!NOTE]
    >
-   > To know more information related to task notifications, [click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > To know more information related to task notifications, [click here](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
  
 ## To configure email endpoint {#configure_email_endpoint}
 
@@ -156,7 +156,7 @@ Next, you must generate the refresh token, explained in the following steps:
 
    >[!NOTE]
    >
-   > To know more information on configuring email endpoints, click [Configure an email endpoint](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html).
+   > To know more information on configuring email endpoints, click [Configure an email endpoint](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
  
 ## Troubleshooting {#troubleshooting}
 

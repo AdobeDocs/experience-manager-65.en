@@ -1,14 +1,14 @@
 ---
 title: Workflow Step Reference
-seo-title: Workflow Step Reference
+
 description: Refer to this step reference for workflows in Adobe Experience Manager.
-seo-description: null
-uuid: 88bf6997-73a1-4639-82aa-5dff08d3ef86
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
+
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 ---
@@ -63,7 +63,7 @@ The following properties are available for many workflow step components, on the
 
 * **Notify user via email**
 
-    * You can notify participants by sending them an email when the workflow reaches the step.
+    * Notify participants by sending them an email when the workflow reaches the step.
     * If enabled, an email is sent to the user defined by the property **User/Group**, or to each member of the group if a group is defined.
 
 * **User/Group**
@@ -183,7 +183,7 @@ The **OR Split** creates a split in the workflow, after which only one branch is
 
 >[!NOTE]
 >
->See [OR Split step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=en#use-a-variable)
+>See [OR Split step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
 
 ![Branching using OR Split](assets/variables_orsplit_new.png)
 

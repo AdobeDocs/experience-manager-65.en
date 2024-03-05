@@ -3,10 +3,10 @@ title: "Tutorial: Create form data model in AEM Forms"
 
 description: Create form data model for Interactive Communication
 
-uuid: b56d3dac-be54-4812-b958-38a085686218
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
+
 docset: aem65
 
 feature: Interactive Communication
@@ -117,14 +117,14 @@ Do the following to configure your MySQL database:
 1. Install JDBC driver for MySQL database as an OSGi bundle:
 
     1. Log in to AEM Forms Author Instance as an administrator and go to AEM web console bundles. The default URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
-    1. Tap **Install/Update**. An **Upload / Install Bundles** dialog appears.
+    1. Select **Install/Update**. An **Upload / Install Bundles** dialog appears.
 
-    1. Tap **Choose File** to browse and select the MySQL JDBC driver OSGi bundle. Select **Start Bundle** and **Refresh Packages**, and tap **Install** or **Update**. Ensure that the Oracle Corporation's JDBC Driver for MySQL is active. The driver is installed.
+    1. Select **Choose File** to browse and select the MySQL JDBC driver OSGi bundle. Select **Start Bundle** and **Refresh Packages**, and select **Install** or **Update**. Ensure that the Oracle Corporation's JDBC Driver for MySQL is active. The driver is installed.
 
 1. Configure MySQL database as a data source:
 
     1. Go to AEM web console at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-    1. Locate **Apache Sling Connection Pooled DataSource** configuration. Tap to open the configuration in edit mode.
+    1. Locate **Apache Sling Connection Pooled DataSource** configuration. Select to open the configuration in edit mode.
     1. In the configuration dialog, specify the following details:
 
         * **Datasource name:** You can specify any name. For example, specify **MySQL**.
@@ -144,7 +144,7 @@ Do the following to configure your MySQL database:
 
         * **Transaction Isolation**: Set the value to **READ_COMMITTED**.
 
-   Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **Save**.
+   Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and select **Save**.
 
    A configuration similar to the following is created.
 
@@ -157,9 +157,9 @@ AEM Forms provide an intuitive user interface to [create a form data mode](https
 Do the following to create form data model:
 
 1. In AEM author instance, navigate to **Forms** &gt; **Data Integrations**.
-1. Tap **Create** &gt; **Form Data Model**.
-1. In the Create Form Data Model wizard, specify a **name** for the form data model. For example, **FDM_Create_First_IC**. Tap **Next**.
-1. The select datasource screen lists all configured data sources. Select **MySQL** data source and tap **Create**.
+1. Select **Create** &gt; **Form Data Model**.
+1. In the Create Form Data Model wizard, specify a **name** for the form data model. For example, **FDM_Create_First_IC**. Select **Next**.
+1. The select datasource screen lists all configured data sources. Select **MySQL** data source and select **Create**.
 
    ![MYSQL datasource](assets/fdm_mysql_data_source_new.png)
 
@@ -178,7 +178,7 @@ Configuring form data model includes:
 ### Add data model objects and services {#add-data-model-objects-and-services}
 
 1. On AEM author instance, navigate to **Forms** &gt; **Data Integrations**. The default URL is [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
-1. The **FDM_Create_First_IC** form data model you created earlier is listed here. Select it and tap **Edit**.
+1. The **FDM_Create_First_IC** form data model you created earlier is listed here. Select it and select **Edit**.
 
    The selected data source **MySQL** is displayed in the **Data Sources** pane.
 
@@ -197,7 +197,7 @@ Configuring form data model includes:
         * get
         * update
 
-   Tap **Add Selected** to add selected data model objects and services to the form data model.
+   Select **Add Selected** to add selected data model objects and services to the form data model.
 
    ![Select data model object services](assets/select_data_model_object_services_new.png)
 
@@ -216,29 +216,29 @@ Based on the use case, create the **usagecharges** child computed property in th
 
 Execute the following steps to create computed child properties for bills data model object:
 
-1. Select the check box at the top of the **bills** data model object to select it and tap **Create Child Property**.
+1. Select the check box at the top of the **bills** data model object to select it and select **Create Child Property**.
 1. In the **Create Child Property** pane:
 
     1. Enter **usagecharges** as the name of the child property.
     1. Enable **Computed**.
-    1. Select **Float** as the type and tap **Done** to add the child property to the **bills** data model object.
+    1. Select **Float** as the type and select **Done** to add the child property to the **bills** data model object.
 
    ![Create child property](assets/create_child_property_new.png)
 
-1. Tap **Edit Rule** to open the Rule Editor.
-1. Tap **Create**. The **Set Value** rule window opens.
+1. Select **Edit Rule** to open the Rule Editor.
+1. Select **Create**. The **Set Value** rule window opens.
 1. From the Select Option drop-down, select **Mathematical Expression**.
 
    ![Usage charges rule editor](assets/usage_charges_rule_editor_new.png)
 
-1. In the mathematical expression, select **callcharges** and **confcallcharges** as first and second objects, respectively. Select **plus** as the operator. Tap within the mathematical expression and tap **Extend Expression** to add **smscharges**, **internetcharges**, **roamingnational**, **roamingintnl**, and **vas** objects to the expression.
+1. In the mathematical expression, select **callcharges** and **confcallcharges** as first and second objects, respectively. Select **plus** as the operator. Select within the mathematical expression and select **Extend Expression** to add **smscharges**, **internetcharges**, **roamingnational**, **roamingintnl**, and **vas** objects to the expression.
 
    The following image depicts the mathematical expression in the rule editor:
 
    ![Usage charges rule](assets/usage_charges_rule_all_new.png)
 
-1. Tap **Done**. The rule gets created in the Rule Editor.
-1. Tap **Close** to close the Rule Editor window.
+1. Select **Done**. The rule gets created in the Rule Editor.
+1. Select **Close** to close the Rule Editor window.
 
 ### Add associations between data model objects {#add-associations-between-data-model-objects}
 
@@ -255,7 +255,7 @@ Based on the use case, create the following associations between the data model 
 
 Perform the following steps to create associations between data model objects:
 
-1. Select the check box at the top of the **customer** data model object to select it and tap **Add Association**. The **Add Association** property pane opens.
+1. Select the check box at the top of the **customer** data model object to select it and select **Add Association**. The **Add Association** property pane opens.
 1. In the **Add Association** pane:
 
     * Specify a title for the association. It is an optional field.
@@ -265,7 +265,7 @@ Perform the following steps to create associations between data model objects:
 
     * Select **get** from the **Service** drop-down list.
 
-    * Tap **Add** to link the **customer** data model object to **calls** data model object using a property. Based on the use case, the calls data model object must be linked to the mobile number property in the customer data model object. The **Add Argument** dialog box opens.
+    * Select **Add** to link the **customer** data model object to **calls** data model object using a property. Based on the use case, the calls data model object must be linked to the mobile number property in the customer data model object. The **Add Argument** dialog box opens.
 
    ![Add association](assets/add_association_new.png)
 
@@ -279,7 +279,7 @@ Perform the following steps to create associations between data model objects:
 
     * Select **mobilenum** from the **Binding Value** drop-down list.
 
-    * Tap **Add**.
+    * Select **Add**.
 
    ![Add association for an argument](assets/add_association_argument_new.png)
 
@@ -287,11 +287,11 @@ Perform the following steps to create associations between data model objects:
 
    ![Add argument association](assets/add_argument_association_new.png)
 
-1. Tap **Done** to create a 1:n association between customer and calls data model objects.
+1. Select **Done** to create a 1:n association between customer and calls data model objects.
 
    Once you have created an association between customer and calls data model objects, create a 1:1 association between the customer and bills data model objects.
 
-1. Select the check box at the top of the **customer** data model object to select it and tap **Add Association**. The **Add Association** property pane opens.
+1. Select the check box at the top of the **customer** data model object to select it and select **Add Association**. The **Add Association** property pane opens.
 1. In the **Add Association** pane:
 
     * Specify a title for the association. It is an optional field.
@@ -306,7 +306,7 @@ Perform the following steps to create associations between data model objects:
 
     * Select **customerplan** from the **Binding Value** drop-down list.
 
-    * Tap **Done** to create a binding between the billplan and customerplan properties.
+    * Select **Done** to create a binding between the billplan and customerplan properties.
 
    ![Add association for customer bill](assets/add_association_customer_bills_new.png)
 
@@ -318,7 +318,7 @@ Perform the following steps to create associations between data model objects:
 
 After creating associations between the customer and other data model objects, edit the customer properties to define the property based on which the data is retrieved from the data model object. Based on the use case, mobile number is used as the property to retrieve data from the customer data model object.
 
-1. Select the check box at the top of the **customer** data model object to select it and tap **Edit Properties**. The **Edit Properties** pane opens.
+1. Select the check box at the top of the **customer** data model object to select it and select **Edit Properties**. The **Edit Properties** pane opens.
 1. Specify **customer** as the **Top Level Model object**.
 1. Select **get** from the **Read Service** drop-down list.
 1. In the **Arguments** section:
@@ -334,37 +334,37 @@ After creating associations between the customer and other data model objects, e
 
     * Select **mobilenum** from the **Binding Value** drop-down list.
 
-1. Tap **Done** to save the properties.
+1. Select **Done** to save the properties.
 
    ![Configure services](assets/configure_services_customer_new.png)
 
-1. Select the check box at the top of the **calls** data model object to select it and tap **Edit Properties**. The **Edit Properties** pane opens.
+1. Select the check box at the top of the **calls** data model object to select it and select **Edit Properties**. The **Edit Properties** pane opens.
 1. Disable the **Top Level Model object** for **calls** data model object.
-1. Tap **Done**.
+1. Select **Done**.
 
    Repeat steps 8 - 10 to configure the properties for **bills** data model object.
 
 ### Configure services {#configure-services}
 
 1. Go to the **Services** tab.
-1. Select the **get** service and tap **Edit Properties**. The **Edit Properties** pane opens.
+1. Select the **get** service and select **Edit Properties**. The **Edit Properties** pane opens.
 1. In the **Edit Properties** pane:
 
     * Enter an optional title and description.
     * Select **customer** from the **Output Model Object** drop-down list.
 
-    * Tap **Done** to save the properties.
+    * Select **Done** to save the properties.
 
    ![Edit properties](assets/edit_properties_get_details_new.png)
 
-1. Select the **update** service and tap **Edit Properties**. The **Edit Properties** pane opens.
+1. Select the **update** service and select **Edit Properties**. The **Edit Properties** pane opens.
 1. In the **Edit Properties** pane:
 
     * Enter an optional title and description.
     * Select **customer** from the **Input Model Object** drop-down list.
 
-    * Tap **Done**.
-    * Tap **Save** to save the form data model.
+    * Select **Done**.
+    * Select **Save** to save the form data model.
 
    ![Update service properties](assets/update_service_properties_new.png)
 
@@ -374,17 +374,17 @@ You can test the data model object and services to verify that the form data mod
 
 Do the following to run the test:
 
-1. Go to the **Model** tab, select the **customer** data model object, and tap **Test Model Object**.
+1. Go to the **Model** tab, select the **customer** data model object, and select **Test Model Object**.
 1. In the **Test Form Data Model** window, select **Read model object** from the **Select Model/Service** drop-down list.
-1. In the **Input** section, specify a value for the **mobilenum** property that exists in the configured MySQL database and tap **Test**.
+1. In the **Input** section, specify a value for the **mobilenum** property that exists in the configured MySQL database and select **Test**.
 
    The customer details associated with the specified mobilenum property are fetched and displayed in the Output section as shown below. Close the dialog box.
 
    ![Test data model](assets/test_data_model_new.png)
 
 1. Go to the **Services** tab.
-1. Select the **get** service and tap **Test Service.**
-1. In the **Input** section, specify a value for the **mobilenum** property that exists in the configured MySQL database and tap **Test**.
+1. Select the **get** service and select **Test Service.**
+1. In the **Input** section, specify a value for the **mobilenum** property that exists in the configured MySQL database and select **Test**.
 
    The customer details associated with the specified mobilenum property are fetched and displayed in the Output section as shown below. Close the dialog box.
 
@@ -396,8 +396,8 @@ Form data model editor lets you generate sample data for all data model object p
 
 Do the following to generate, edit, and save sample data:
 
-1. On the form data model page, tap **Edit Sample Data**. It generates and displays the sample data in Edit Sample Data window.
+1. On the form data model page, select **Edit Sample Data**. It generates and displays the sample data in Edit Sample Data window.
 
    ![Edit sample data](assets/edit_sample_data_new.png)
 
-1. In **Edit Sample Data** window, edit data, as required, and tap **Save**. Close the window.
+1. In **Edit Sample Data** window, edit data, as required, and select **Save**. Close the window.

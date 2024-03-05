@@ -1,14 +1,14 @@
 ---
 title: Content Properties and Nodes
-seo-title: Content Properties and Nodes
+
 description: Follow this page to learn about content properties and nodes.
-seo-description: Follow this page to learn about content properties and nodes.
-uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
+
 exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 ---
 # Content Properties and Nodes {#content-properties-and-nodes}

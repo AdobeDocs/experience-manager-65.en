@@ -160,7 +160,7 @@ To generate the service account credentials and JWT payload:
 
 1. Select the default **[!UICONTROL Adobe Stock]** product profile and click **[!UICONTROL Save configured API]**. 
 
-1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click on the **[!UICONTROL Service Account (JWT)]** option. Here, you can view the credentials and perform actions such as generate JWT tokens, copy credential details, and retrieve client secret.
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option. Here, you can view the credentials and perform actions such as generate JWT tokens, copy credential details, and retrieve client secret.
 
 1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
@@ -317,7 +317,7 @@ The following table explains how the user permissions work while accessing the [
 
 Using this capability, organizations can allow its users to work using [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets]. From within the [!DNL Experience Manager] user interface, users can search [!DNL Adobe Stock] assets and license the required assets.
 
-Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it can be used and managed like a typical asset. In [!DNL Experience Manager], the users can search and preview the assets; copy and publish the assets; share the assets on [!DNL Brand Portal]; access and use the assets via [!DNL Experience Manager] desktop app; and so on.
+Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it can be used and managed like a typical asset. In [!DNL Experience Manager], the users can search and preview the assets; copy and publish the assets; share the assets on [!DNL Brand Portal]; access and use the assets by way of [!DNL Experience Manager] desktop app, and so on.
 
 ![Search for [!DNL Adobe Stock] assets and filter results from your [!DNL Adobe Experience Manager] workspace](assets/adobe-stock-search-results-workspace.png)
 
@@ -371,7 +371,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 * **Functionality to restrict users from licensing is not working properly**: All users having `read` permissions to the stock configuration are allowed to search and license the [!DNL Adobe Stock] assets. 
 
-* **Non-admin users have to manually activate the [!DNL Adobe Stock] cloud configuration**: In the **[!UICONTROL User Preferences]** window, the **[!UICONTROL Stock Configuration]** shows the [!DNL Adobe Stock] cloud configuration as enabled but it does not work for a non-admin user. The user has to click on the **[!UICONTROL Accept]** button to activate the Stock configuration. In absence of this step, the system reflects an error message on accessing **[!UICONTROL Assets]**.   
+* **Non-admin users have to manually activate the [!DNL Adobe Stock] cloud configuration**: In the **[!UICONTROL User Preferences]** window, the **[!UICONTROL Stock Configuration]** shows the [!DNL Adobe Stock] cloud configuration as enabled but it does not work for a non-admin user. The user has to click the **[!UICONTROL Accept]** button to activate the Stock configuration. In absence of this step, the system reflects an error message on accessing **[!UICONTROL Assets]**.   
 
 * **Editorial image warning is not displayed**: When licensing an image, users cannot check if an image is Editorial Use Only. To prevent possible misuse, the administrators can turn off the access to editorial assets from the Admin Console.
 

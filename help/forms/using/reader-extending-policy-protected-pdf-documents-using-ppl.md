@@ -1,20 +1,20 @@
 ---
 title: Reader extending policy-protected PDF documents using Portable Protection Library
-seo-title: Reader extending policy-protected PDF documents using Portable Protection Library
+
 description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
-seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
-uuid: 0da17641-d24c-43c2-b918-8b5abe1e5473
+
+
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
+
 feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
 ---
 # Reader extending policy-protected PDF documents using Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
-You must be familiar with concepts of document security, reader extension, and Java Programming language to reader-extend the document security policy-protected PDF documents.
+Be familiar with concepts of document security, reader extension, and Java Programming language to reader-extend the document security policy-protected PDF documents.
 
 You can use document security to restrict access of specific PDF documents to only authorized users. You can also determine how a recipient can use a protected document. For example, you can specify whether recipients can print, copy, or edit text of a document security policy-protected document. To learn more about document security, see [about document security](/help/forms/using/admin-help/document-security.md).
 

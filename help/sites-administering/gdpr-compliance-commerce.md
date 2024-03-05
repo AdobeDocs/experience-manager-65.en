@@ -1,11 +1,11 @@
 ---
 title: AEM Commerce - GDPR Readiness
-seo-title: AEM Commerce - GDPR Readiness
+
 description: Learn about the procedures to handle GDPR requests in AEM Commerce and how to use them.
-seo-description: null
-uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
+
+
 contentOwner: carlino
-discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
+
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
 ---
 # AEM Commerce - GDPR Readiness{#aem-commerce-gdpr-readiness}

@@ -63,7 +63,7 @@ Now that the client code has been associated with the mobile application, when t
 
 ### Adobe Mobile Service Could Service {#adobe-mobile-service-could-service}
 
-Now that AMS has been configured, it's time to associate the mobile application in the Adobe Mobile Dashboard. From the AEM Mobile Dashboard, locate the Manage Cloud Services and click the + button.
+Now that AMS is configured, it is time to associate the mobile application in the Adobe Mobile Dashboard. From the AEM Mobile Dashboard, locate the Manage Cloud Services and click the + button.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 

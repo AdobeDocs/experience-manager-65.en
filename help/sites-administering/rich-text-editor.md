@@ -50,13 +50,13 @@ Authors can create and edit textual content in Experience Manager using the diff
 
 ### Inline editing {#inline-editing}
 
-When opened (with a slow double-tap/click) the content can be edited within the page. A compact toolbar with very basic options is presented.
+When opened (with a slow double-click) the content can be edited within the page. A compact toolbar with very basic options is presented.
 
 ![Inline editing with basic toolbar in Touch-enabled UI](assets/chlimage_1-36.png)
 
 *Figure: Inline editing with basic toolbar in Touch-enabled UI*
 
-In Classic UI, a slow double-click on the component allows inline editing and an orange outline highlights the content. If the Content Finder is open, a toolbar with the available RTE formatting options is displayed at the top of the window. If the Content Finder is not open, the formatting options are not displayed and you can do basic text edits only.
+In Classic UI, a slow double-click the component allows inline editing and an orange outline highlights the content. If the Content Finder is open, a toolbar with the available RTE formatting options is displayed at the top of the window. If the Content Finder is not open, the formatting options are not displayed and you can do basic text edits only.
 
 ### Full screen editing {#full-screen-editing}
 
@@ -174,7 +174,7 @@ For detailed configurations of the RTE plug-ins, see [how to activate and config
 
 >[!NOTE]
 >
->The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) allows template editors to configure many RTE plugins in a GUI as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document.
+>The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) allows template editors to configure many RTE plugins in a GUI as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document.
 >
 >For more information, see the [RTE UI settings and content polices](/help/sites-administering/rich-text-editor.md) section of this document and [Creating Page Templates](/help/sites-authoring/templates.md) and the [Core Components developer documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
@@ -189,7 +189,7 @@ For detailed configurations of the RTE plug-ins, see [how to activate and config
 
 ## Configure RTE toolbar {#dialogfullscreen}
 
-AEM lets you configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
+AEM lets you configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You do not need to specify all the toolbar configurations.
 
 To configure the toolbar for `dialogFullScreen`, use the following sample configuration.
 
@@ -249,10 +249,10 @@ Administrators can control the RTE options using content policies, say instead o
 The available options in the RTE flow downstream from the user interface configurations to the content policies.
 
 * User interface configuration settings define which options are available to the content policies.
-* If the user interface configuration of the RTE removed or doesn't enable an item, the content policy cannot configure it.
+* If the user interface configuration of the RTE removed or does not enable an item, the content policy cannot configure it.
 * An author has access to only such functionality as is made available by the user interface configurations and the content policies.
 
-As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
+As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Customize mapping between toolbar icons and commands {#iconstoolbar}
 
@@ -312,7 +312,7 @@ On a page, you can either include CoralUI 2 RTE clientlib or the CoralUI 3 RTE c
 
 >[!NOTE]
 >
->CoralUI 2 RTE uses handlebars templates for plug-in dialogs. Therefore, the CoralUI 2 RTE clientlib had a dependency on the handlebars clientlib. CoralUI 3 RTE does not use handlebars templates and doesn't have any associated dependency. If your custom plug-ins use handlebars templates, include the handlebars clientlib in your web page.
+>CoralUI 2 RTE uses handlebars templates for plug-in dialogs. Therefore, the CoralUI 2 RTE clientlib had a dependency on the handlebars clientlib. CoralUI 3 RTE does not use handlebars templates and does not have any associated dependency. If your custom plug-ins use handlebars templates, include the handlebars clientlib in your web page.
 
 ## Further Information {#further-information}
 

@@ -3,12 +3,12 @@ title: Adobe Experience Manager with MongoDB
 
 description: Learn about the tasks and considerations needed for a successful deployment of Adobe Experience Manager with MongoDB.
 
-uuid: 8028832d-10de-4811-a769-fab699c162ec
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
+
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 ---
@@ -353,7 +353,7 @@ To adjust the size of the WiredTiger internal cache, see [storage.wiredTiger.eng
 
 NUMA (Non-Uniform Memory Access) allows a kernel to manage how memory is mapped to the processor cores. Although this process attempts to make memory access faster for cores ensuring that they are able to access the data required, NUMA interferes with MMAP introducing additional latency as reads cannot be predicted. As a result, NUMA must be disabled for the `mongod` process on all capable operating systems.
 
-In essence, in a NUMA architecture memory is connected to CPUs and CPUs are connected to a bus. In an SMP or a UMA architecture, memory is connected to the bus and shared by CPUs. When a thread allocates memory on a NUMA CPU, it allocates according to a policy. The default is to allocate memory attached to the thread's local CPU unless there is no free, at which point it uses memory from a free CPU at higher cost. Once allocated, the memory doesn't move between CPUs. The allocation is performed by a policy inherited from the parent thread, which ultimately is the thread that started the process.
+In essence, in a NUMA architecture memory is connected to CPUs and CPUs are connected to a bus. In an SMP or a UMA architecture, memory is connected to the bus and shared by CPUs. When a thread allocates memory on a NUMA CPU, it allocates according to a policy. The default is to allocate memory attached to the thread's local CPU unless there is no free, at which point it uses memory from a free CPU at higher cost. Once allocated, the memory does not move between CPUs. The allocation is performed by a policy inherited from the parent thread, which ultimately is the thread that started the process.
 
 In many databases that see the computer as a multicore uniform memory architecture, this scenario leads to the initial CPU getting full first and the secondary CPU filling later. It is especially true if a central thread is responsible for allocating memory buffers. The solution is to change the NUMA policy of the main thread used to start the `mongod` process by running the following command:
 
@@ -590,7 +590,7 @@ Because the Dispatcher is stateless, it can scale horizontally with ease. In som
 
 Running AEM without a Dispatcher requires SSL termination and load balancing to be performed by another application. It is required because sessions must have affinity to the AEM instance on which they are created, a concept known as sticky connections. The reason is to assure that updates to the content exhibit minimal latency.
 
-Check the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) for more information on how to configure it.
+Check the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) for more information on how to configure it.
 
 ### Additional Configuration {#additional-configuration}
 

@@ -21,7 +21,7 @@ The pages of your application should all be located below /content/mobileapps fo
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-By AEM convention, the first page of your app should be a redirect to one of it's children which serve as the default language of the app ('en' in both Geometrixx and Starter Kit cases). The top-level locale page typically inherits from the foundation 'splash-page' component (/libs/mobileapps/components/splash-page) which takes care of the initialization necessary to support the installation of over-the-air Content Sync updates (contentInit code can be found at /etc/clientlibs/mobile/content-sync/js/contentInit.js).
+By AEM convention, the first page of your app should be a redirect to one of its children which serve as the default language of the app ('en' in both Geometrixx and Starter Kit cases). The top-level locale page typically inherits from the foundation 'splash-page' component (/libs/mobileapps/components/splash-page) which takes care of the initialization necessary to support the installation of over-the-air Content Sync updates (contentInit code can be found at /etc/clientlibs/mobile/content-sync/js/contentInit.js).
 
 ## Templates and Components {#templates-and-components}
 
@@ -37,9 +37,9 @@ Authorable page components, wanting to use AngularJS, have an equivalent `sling:
 
 In client libraries, there are a few options available to the developer of where to place them in the repository. The following pattern is offered for guidance, but is not a hard requirement.
 
-If your clientside code can stand on its own and doesn't relate to a specific component of your application&mdash;meaning it may be reused in other applications&mdash;Adobe recommends storing it in /etc/clientlibs/&lt;brand name&gt;/&lt;lib name&gt;. On the other hand, if the clientlib is specific to a single app, you can nest it as a child of your app's design node; /etc/designs/phonegap/&lt;brand name&gt;/&lt;app name&gt;/clientlibs. Do not use this clientlib's category with other libs; instead, embed other libs as necessary. Following this pattern saves the developer from having to add new Content Sync configurations each time a client library is added to the app, instead simply updating the 'embeds' property of the app's design clientlib. For example, look at the Geometrixx clientlibs-all Content Sync config node at /content/phonegap/geometrixx-outdoors/en/jcr:content/pge-app/app-config/clientlibs-all.
+If your clientside code can stand on its own and does not relate to a specific component of your application&mdash;meaning it may be reused in other applications&mdash;Adobe recommends storing it in /etc/clientlibs/&lt;brand name&gt;/&lt;lib name&gt;. On the other hand, if the clientlib is specific to a single app, you can nest it as a child of your app's design node; /etc/designs/phonegap/&lt;brand name&gt;/&lt;app name&gt;/clientlibs. Do not use this clientlib's category with other libs; instead, embed other libs as necessary. Following this pattern saves the developer from having to add new Content Sync configurations each time a client library is added to the app, instead simply updating the 'embeds' property of the app's design clientlib. For example, look at the Geometrixx clientlibs-all Content Sync config node at /content/phonegap/geometrixx-outdoors/en/jcr:content/pge-app/app-config/clientlibs-all.
 
-If your client-side code is tightly coupled to a specific component, place that code in a client library nested below the component's location in /apps/, and embed it's category into your app's 'design' clientlib.
+If your client-side code is tightly coupled to a specific component, place that code in a client library nested below the component's location in /apps/, and embed its category into your app's 'design' clientlib.
 
 ## PhoneGap Configuration {#phonegap-configuration}
 

@@ -571,15 +571,15 @@ For example, make sure that information provided by color is also provided expli
    <td><p><strong>Availability</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Tuesday March 16<sup>th</sup></p> </td>
+   <td><p>Tuesday, March 16</p> </td>
    <td><p>SEATS AVAILABLE</p> </td>
   </tr>
   <tr>
-   <td><p>Wednesday March 17<sup>th</p> </td>
+   <td><p>Wednesday, March 17</p> </td>
    <td><p>SEATS AVAILABLE</p> </td>
   </tr>
   <tr>
-   <td><p>Thursday March 18<sup>th</sup></p> </td>
+   <td><p>Thursday, March 18</p> </td>
    <td><p>SOLD OUT</p> </td>
   </tr>
  </tbody>
@@ -600,7 +600,7 @@ If color is used as a cue to provide information, you should provide an extra vi
 *   Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
 
     * Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1.
-    * Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+    * Incidental: Text or images of text that are part of an inactive user interface component that are pure decoration or not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
     * Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.
 
 #### Purpose - Contrast (Minimum) (1.4.3) {#purpose-contrast-minimum}
@@ -798,7 +798,7 @@ John Smith's publications
 >
 >The above snippet is an illustration, it is recommended to use the **Image** component.
 
-While it's advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
+While it is advisable to provide link text that identifies the purpose of the link without needing additional context, it is recognized that this is not always possible. Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
 
 * Where the link text is part of a list of closely related links and when the list item enclosing the link provides enough context.
 * Where the purpose of a link can be clearly identified from the *preceding* (not the following) paragraph text.

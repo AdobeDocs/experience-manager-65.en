@@ -50,12 +50,12 @@ If the content fragment includes a collection, the assets within the collection 
 
 To be able to translate content fragments that include mixed media, first edit the default translation framework to enable the translation of inline assets and collections associated with content fragments.
 
-1. Click/tap the AEM logo, and navigate to **[!UICONTROL Tools > Deployment > Cloud Services]**.
-1. Locate **[!UICONTROL Translation Integration]** under **[!UICONTROL Adobe Marketing Cloud]**, and click/tap **[!UICONTROL Show Configurations]**.
+1. Click the AEM logo, and navigate to **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Locate **[!UICONTROL Translation Integration]** under **[!UICONTROL Adobe Marketing Cloud]**, and click **[!UICONTROL Show Configurations]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. From the list of available configurations, click/tap **[!UICONTROL Default configuration (Translation Integration configuration)]** to open the **[!UICONTROL Default configuration]** page.
+1. From the list of available configurations, click **[!UICONTROL Default configuration (Translation Integration configuration)]** to open the **[!UICONTROL Default configuration]** page.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -63,7 +63,7 @@ To be able to translate content fragments that include mixed media, first edit t
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Navigate to the **[!UICONTROL Assets]** tab, and choose **[!UICONTROL Inline Media Assets and Associated Collections]** from the **[!UICONTROL Translate Content Fragment Assets]** list. Click/tap **[!UICONTROL OK]** to save the changes.
+1. Navigate to the **[!UICONTROL Assets]** tab, and choose **[!UICONTROL Inline Media Assets and Associated Collections]** from the **[!UICONTROL Translate Content Fragment Assets]** list. Click **[!UICONTROL OK]** to save the changes.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -71,7 +71,7 @@ To be able to translate content fragments that include mixed media, first edit t
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Click/tap the **[!UICONTROL Insert Asset]** icon.
+1. Click the **[!UICONTROL Insert Asset]** icon.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -79,28 +79,28 @@ To be able to translate content fragments that include mixed media, first edit t
 
    ![insert asset in to content fragment](assets/column-view.png)
 
-1. Click/tap the **[!UICONTROL Associate Content]** icon.
+1. Click the **[!UICONTROL Associate Content]** icon.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Click/tap **[!UICONTROL Associate Content]**.
+1. Click **[!UICONTROL Associate Content]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. Select a collection and include it into the content fragment. Click/tap **[!UICONTROL Save]**.
+1. Select a collection and include it into the content fragment. Click **[!UICONTROL Save]**.
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Select the content fragment, and click/tap the **[!UICONTROL GlobalNav]** icon.
+1. Select the content fragment, and click the **[!UICONTROL GlobalNav]** icon.
 1. Select **[!UICONTROL References]** from the menu to display the **[!UICONTROL References]** pane.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the language copies.
+1. Click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the language copies.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Click/tap **[!UICONTROL Create & Translate]** from at the bottom of the panel to display the **[!UICONTROL Create & Translate]** dialog.
+1. Click **[!UICONTROL Create & Translate]** from at the bottom of the panel to display the **[!UICONTROL Create & Translate]** dialog.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -112,7 +112,7 @@ To be able to translate content fragments that include mixed media, first edit t
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. Specify the title of the project in the **[!UICONTROL Project Title]** box and then click/tap **Create**.
+1. Specify the title of the project in the **[!UICONTROL Project Title]** box and then click **Create**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
@@ -120,7 +120,7 @@ To be able to translate content fragments that include mixed media, first edit t
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
-1. Click/tap the project tile to open the project details page.
+1. Click the project tile to open the project details page.
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
@@ -133,7 +133,7 @@ To be able to translate content fragments that include mixed media, first edit t
 
    ![chlimage_1-463](assets/chlimage_1-463.png)
 
-1. Click/tap the content fragment to check the path of the translated associated assets.
+1. Click the content fragment to check the path of the translated associated assets.
 
    ![chlimage_1-464](assets/chlimage_1-464.png)
 

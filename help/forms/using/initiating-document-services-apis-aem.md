@@ -1,13 +1,9 @@
 ---
 title: Initiate Document Services APIs from AEM Workflow
-seo-title: Initiate Document Services APIs from AEM Workflow
 description: Learn how to invoke AEM Document services on DDX or supplied inputs. Also see hwo to convert PDF to PDF/A
-seo-description: Learn how to invoke AEM Document services on DDX or supplied inputs. Also see hwo to convert PDF to PDF/A
-uuid: aacec2df-1ad6-4ff2-a99d-ef206efcdc09
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
 ---
 # Initiate Document Services APIs from AEM Workflow  {#initiate-document-services-apis-from-aem-workflow}
@@ -55,7 +51,7 @@ The Environment Options tab lets you set various processing options for the invo
 Depending on the input DDX, the invoke API can produce multiple output documents. The Output Documents tab lets you select where output document will be saved.
 
 1. *Save Output in Payload*: Saves output documents under the payload folder, or overwrites the payload, if payload is a file.
-1. *Output Document's Map*: Allows to explicitly specify where to save each output document by adding one entry per output document. Each entry specifies the document and where to save it. An output document can overwrite the payload or saved under the payload folder. It is useful when there are multiple output documents.
+1. *Output Document's Map*: Lets you explicitly specify where to save each output document by adding one entry per output document. Each entry specifies the document and where to save it. An output document can overwrite the payload or saved under the payload folder. It is useful when there are multiple output documents.
 
 1. *Job Log*: Specifies where to save the job log document, which is helpful in troubleshooting failures.
 

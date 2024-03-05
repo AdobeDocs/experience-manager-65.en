@@ -172,7 +172,7 @@ These properties are available in two tabs:
 
     * **Build list using**
       There are several ways to build a page list - Child Pages, Fixed List, Search, or Advanced Search (all described below).
-      No matter which method you choose, the pages you include in your list should each already have an image associated with the page. It is this image that is displayed in the Carousel. If there is no image for a given page under that page's Page Properties, you should associate an image with the page before beginning. If you don't, the Carousel displays a mostly blank page. See [Editing Page Properties](/help/sites-authoring/editing-page-properties.md).
+      No matter which method you choose, the pages you include in your list should each already have an image associated with the page. It is this image that is displayed in the Carousel. If there is no image for a given page under that page's Page Properties, you should associate an image with the page before beginning. If you do not, the Carousel displays a mostly blank page. See [Editing Page Properties](/help/sites-authoring/editing-page-properties.md).
       Depending on the item you choose, a new panel appears:
 
         * **Options for Child Pages**
@@ -207,7 +207,7 @@ These properties are available in two tabs:
 
 >[!NOTE]
 >
->You can create a custom carousel component for Adobe Experience Manager that displays digital assets in the AEM DAM. See [Creating Custom Carousel components for Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>You can create a custom carousel component for Adobe Experience Manager that displays digital assets in the AEM DAM. See [Creating Custom Carousel components for Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 ### Chart {#chart}
 
@@ -242,7 +242,7 @@ The following show an example of chart data followed by the resulting Bar chart:
 
 >[!NOTE]
 >
->You can create a custom AEM chart control that displays data in the AEM JCR. For information, see [Displaying Adobe Experience Manager Data in a Chart](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>You can create a custom AEM chart control that displays data in the AEM JCR. For information, see [Displaying Adobe Experience Manager Data in a Chart](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 ### Content Fragment {#content-fragment}
 
@@ -877,7 +877,7 @@ The following example shows a Text Image Component that displays the image left-
 
 >[!CAUTION]
 >
->This Foundation Component is deprecated. Adobe recommends using the [Title Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) instead.
+>This Foundation Component is deprecated. Adobe recommends using the [Title Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) instead.
 
 The title component can either:
 
@@ -972,7 +972,7 @@ Form components are used to create forms for visitors to submit input. Forms and
 
 >[!NOTE]
 >
->See [AEM Forms Help](/help/forms/home.md) for information about AEM Forms.
+>See [AEM Forms Help](/help/forms/using/introduction-aem-forms.md) for information about AEM Forms.
 
 Forms are built up from several different components:
 

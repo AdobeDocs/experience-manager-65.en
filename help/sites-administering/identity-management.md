@@ -1,14 +1,10 @@
 ---
 title: Identity Management
-seo-title: Identity Management
 description: Learn about the inner workings of identity management in AEM.
-seo-description: Learn about identity management in AEM.
-uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 ---
@@ -89,7 +85,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 ```
 
-To see the details of your profile click on **My Profile** in the top right corner of any page; for example, with the `admin` account:
+To see the details of your profile click **My Profile** in the top right corner of any page; for example, with the `admin` account:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 You can view another profile using the [client context](/help/sites-administering/client-context.md) (on the author environment and with sufficient privileges):
@@ -117,7 +113,7 @@ You can view another profile using the [client context](/help/sites-administerin
 You can add fields to the profile definition. For example, to add a "Favorite Color" field to the Geometrixx profile:
 
 1. From the Websites console navigate to Geometrixx Outdoors Site &gt; English &gt; User &gt;My Profile.
-1. Double-click on the **My Profile** page to open it for editing.
+1. Double-click the **My Profile** page to open it for editing.
 1. In the **Components** tab of sidekick expand the **Form** section.
 1. Drag a **Dropdown List** from sidekick to the form, just below the **About me** field.
 1. Double-click the **Dropdown List** component to open the dialog for configuration and enter:
@@ -146,7 +142,7 @@ This involves defining an appropriate property in the user profile in a way that
 
 * is visible and accessible to the user
 * defines two states for each property
-* allows toggling between the two states defined
+* lets you toggle between the two states defined
 
 This is done with:
 

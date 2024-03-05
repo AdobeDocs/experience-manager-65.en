@@ -1,13 +1,9 @@
 ---
 title: Sample for integrating drafts & submissions component with database
-seo-title: Sample for integrating drafts & submissions component with database
 description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
-seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
-uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 ---
 # Sample for integrating drafts & submissions component with database {#sample-for-integrating-drafts-submissions-component-with-database}
@@ -229,7 +225,7 @@ Perform the following steps, on all the author and publish instances, to install
    `key` varchar(255) NOT NULL,
    `id` varchar(60) NOT NULL,
    PRIMARY KEY (`id`,`key`),
-   CONSTRAINT ‘additionalmetadatatable_fk’ FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
+   CONSTRAINT 'additionalmetadatatable_fk' FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
@@ -294,7 +290,7 @@ Perform the following steps, on all the author and publish instances, to install
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
    ```
 
-The sample implementation is now configured, which you can use to list your drafts and submissions while storing all data and metadata in a database. Let’s now see how data and metadata services are configured in the sample.
+The sample implementation is now configured, which you can use to list your drafts and submissions while storing all data and metadata in a database. Let's now see how data and metadata services are configured in the sample.
 
 ## Install mysql-connector-java-5.1.39-bin.jar file {#install-mysql-connector-java-bin-jar-file}
 
@@ -309,6 +305,10 @@ Perform the following steps,on all the author and publish instances, to install 
 1. Click **[!UICONTROL Choose File]** and browse to select the mysql-connector-java-5.1.39-bin.jar file. Also, select **[!UICONTROL Start Bundle]** and **[!UICONTROL Refresh Packages]** checkboxes.
 1. Click **[!UICONTROL Install or Update]**. Once complete, restart the server.
 1. (*Windows only*) Turn off the system firewall for your operating system.
+
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
 ## Sample code for forms portal data and metadata service {#sample-code-for-forms-portal-data-and-metadata-service}
 
@@ -394,7 +394,7 @@ Perform the following steps to create [a client library](/help/sites-developing/
 
    >[!NOTE]
    >
-   >The script is for out of the box (OOTB) attachment widget component. If you have customized the OOTB attachment widget then change the above script to incorporate respective changes.
+   >The script is for out-of-the-box attachment widget component. If you have customized the out-of-the-box attachment widget then change the above script to incorporate respective changes.
 
 1. Add the following property to the folder created in step 2 and click **[!UICONTROL Save All]**.
 

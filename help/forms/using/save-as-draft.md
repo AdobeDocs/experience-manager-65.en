@@ -1,13 +1,13 @@
 ---
 title: Saving a task or form as a draft
-seo-title: Saving a task or form as a draft
+
 description: Steps to save a draft copy of a task or a form in the AEM Forms app
-seo-description: Steps to save a draft copy of a task or a form in the AEM Forms app
-uuid: 1192d2c2-05a4-4a96-9015-e56111aa2646
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
+
 exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 ---
 # Saving a task or form as a draft {#saving-a-task-or-form-as-a-draft}
@@ -19,7 +19,7 @@ You can [update the form](/help/forms/using/working-with-form.md), [annotate it]
 To enable save as draft feature for forms saved on forms portal, see [Saving an HTML5 form as a draft](/help/forms/using/saving-html5-form-draft.md).
 To configure submission of adaptive forms, see [Drafts and submissions component](/help/forms/using/draft-submission-component.md). (Not valid for forms synced with AEM Forms JEE server.)
 
-To create a draft, open the form and tap the **Save as Draft** ![save-as-draft](assets/save-as-draft.png). Provide the name of the draft and tap **Save**. The draft is saved in the Drafts folder and synced with the server. It is saved in the Outbox folder if the app is offline.
+To create a draft, open the form and select the **Save as Draft** ![save-as-draft](assets/save-as-draft.png). Provide the name of the draft and select **Save**. The draft is saved in the Drafts folder and synced with the server. It is saved in the Outbox folder if the app is offline.
 
 If you update the corresponding form afterwards, the changes are reflected immediately. On synchronizing the AEM Forms app with AEM Forms server, the draft is uploaded to AEM Forms server. In addition, the draft is moved from the Outbox to the Tasks or Drafts folder. An edit icon appears next to it.
 
@@ -37,5 +37,5 @@ Perform the following steps to delete a draft:
 
 1. In the AEM Forms app, navigate to **Forms.**
 1. Select **Drafts** from the drop-down next to Search.
-1. A form with the edit icon ![edit-draft-app](assets/edit-draft-app.png) denotes a draft. Tap the horizontal ellipsis next to the draft.
-1. In the options that appear when you tap the horizontal ellipsis, tap **Delete Draft**.
+1. A form with the edit icon ![edit-draft-app](assets/edit-draft-app.png) denotes a draft. Select the horizontal ellipsis next to the draft.
+1. In the options that appear when you select the horizontal ellipsis, select **Delete Draft**.

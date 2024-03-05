@@ -1,14 +1,14 @@
 ---
 title: Global document storage directory
-seo-title: Global document storage directory
+
 description: The global document storage (GDS) directory is a directory used to store long-lived files that are used within a process.
-seo-description: The global document storage (GDS) directory is a directory used to store long-lived files that are used within a process.
-uuid: 7681672c-a0dc-4445-8004-1b1e2ed3d301
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
+
 exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 ---
 # Global document storage directory{#global-document-storage-directory}
@@ -73,7 +73,7 @@ The location of the GDS directory can be configured manually during the AEM form
 
 ## Change the default GDS location {#change-the-default-gds-location}
 
-You can change the GDS location in administration console after the AEM forms installation is completed. You must manually relocate the data to complete the process.
+You can change the GDS location in administration console after the AEM forms installation is completed. Manually relocate the data to complete the process.
 
 >[!NOTE]
 >

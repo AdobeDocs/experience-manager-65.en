@@ -35,7 +35,7 @@ The default mail service is required for both notifications and subscriptions.
 
 This is based on the documentation for [Configuring Email Notification](../../help/sites-administering/notification.md), but with a difference in that the field `"From" address` is *not* required and should be left empty.
 
-For example (filled in with values for illustrative purposes only),:
+For example (filled in with values for illustrative purposes only):
 
 ![email-config](assets/email-config.png)
 

@@ -23,7 +23,7 @@ The REST API provides access to the same features through HTTP with responses be
 
 >[!NOTE]
 >
->The QueryBuilder API is built using the JCR API. You can also query the Adobe Experience Manager JCR by using the JCR API from within an OSGi bundle. For information, see [Adobe Experience Manager using the JCR API](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=en).
+>The QueryBuilder API is built using the JCR API. You can also query the Adobe Experience Manager JCR by using the JCR API from within an OSGi bundle. For information, see [Adobe Experience Manager using the JCR API](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html).
 
 ## Gem Session {#gem-session}
 
@@ -37,7 +37,7 @@ The REST API provides access to the same features through HTTP with responses be
 
 These samples are given in Java&trade; properties style notation. To use them with the Java&trade; API, use a Java&trade; `HashMap` as in the API sample that follows.
 
-For the `QueryBuilder` JSON Servlet, each example includes a link to your local CQ installation (at the default location, `http://localhost:4502`). You must log in to your CQ instance before using these links.
+For the `QueryBuilder` JSON Servlet, each example includes a link to your local CQ installation (at the default location, `http://localhost:4502`). Log in to your CQ instance before using these links.
 
 >[!CAUTION]
 >
@@ -82,7 +82,7 @@ orderby=path
 
 The purpose of the `p.guessTotal` parameter is to return the appropriate number of results that can be shown by combining the minimum viable p.offset and p.limit values. The advantage of using this parameter is improved performance with large result sets. This avoids calculating the full total (for example, calling result.getSize()) and reading the entire result set, optimized all the way down to the Oak engine & index. This can be a significant difference when there are 100 thousands of results, both in execution time and memory usage.
 
-The disadvantage to the parameter is users do not see the exact total. But you can set a minimum number like p.guessTotal=1000 so it will always read up to 1000, so you get exact totals for smaller result sets, but if it's more than that, you can only show "and more".
+The disadvantage to the parameter is users do not see the exact total. But you can set a minimum number like p.guessTotal=1000 so it will always read up to 1000, so you get exact totals for smaller result sets, but if it is more than that, you can only show "and more".
 
 Add `p.guessTotal=true` to the query below to see how it works:
 

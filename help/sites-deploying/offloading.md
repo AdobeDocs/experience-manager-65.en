@@ -223,7 +223,7 @@ Use Web Console or a `sling:OsgiConfig` node to configure the following properti
 
 ## Creating Replication Agents For Offloading {#creating-replication-agents-for-offloading}
 
-The offloading framework uses replication to transport resources between author and worker. The offloading framework automatically creates replication agents when instances join the topology. The agents are created with default values. You must manually change the password that the agents use for authentication.
+The offloading framework uses replication to transport resources between author and worker. The offloading framework automatically creates replication agents when instances join the topology. The agents are created with default values. Manually change the password that the agents use for authentication.
 
 >[!CAUTION]
 >

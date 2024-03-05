@@ -13,7 +13,7 @@ This document describes how the dynamic model to component mapping occurs in the
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
 
 ## ComponentMapping Module {#componentmapping-module}
 

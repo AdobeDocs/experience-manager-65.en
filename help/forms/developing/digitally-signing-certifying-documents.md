@@ -45,7 +45,7 @@ You can accomplish these tasks using the Signature service:
 
 ## Adding Signature Fields {#adding-signature-fields}
 
-Digital signatures appear in signature fields, which are form fields that contain a graphic representation of the signature. Signature fields can be visible or invisible. Signers can use a preexisting signature field, or a signature field can be programmatically added. In either case, the signature field must exist before a PDF document can be signed.
+Digital signatures appear in signature fields, which are form fields that contain a graphic representation of the signature. Signature fields can be visible or invisible. Signers can use a pre-existing signature field, or a signature field can be programmatically added. In either case, the signature field must exist before a PDF document can be signed.
 
 You can programmatically add a signature field by using the Signature service Java API or Signature web service API. You can add more than one signature field to a PDF document; however, each signature field name must be unique.
 
@@ -81,7 +81,7 @@ Before you can programmatically perform a Signature service operation, you must 
 
 **Get a PDF document to which a signature field is added**
 
-You must obtain a PDF document to which a signature field is added.
+Obtain a PDF document to which a signature field is added.
 
 **Add a signature field**
 
@@ -588,6 +588,10 @@ You can add the following configuration value in the cknfastrc file, which is lo
 ```
 
 After you add this configuration value to the cknfastrc file, the new credential can be used without restarting the J2EE application server.
+
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
 **Signature is not trusted**
 

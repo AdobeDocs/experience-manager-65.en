@@ -101,7 +101,7 @@ The portlet can be configured with the following preferences:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>This is the start path of the portlet: it defines the content that is initially displayed.</p> <p><strong>Important</strong>: If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than<strong> /</strong>, you need to enable the force <strong>CQUrlInfo</strong> in the Html Library Manager configuration of these AEM instances (for example, via Felix Webconsole) or editing will not work and the preferences dialog will not appear.</p> </td>
+   <td><p>This is the start path of the portlet: it defines the content that is initially displayed.</p> <p><strong>Important</strong>: If the portlet is configured to connect to AEM author and publish instances that are running on a context path different from<strong> /</strong>, you need to enable the force <strong>CQUrlInfo</strong> in the Html Library Manager configuration of these AEM instances (for example, via Felix Webconsole) or editing will not work and the preferences dialog will not appear.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -144,7 +144,7 @@ Open the **Configurations** tab and select **Portal Directory CQ Server Configur
 
 To support automated deployments and configuration provisioning, the AEM content portlet has built-in configuration support that tries to read configurations from the classpath provided to the portlet application.
 
-On startup, the system property **com.day.cq.portet.config** is read to detect the current environment. Usually, the value of this property is something like **dev**, **prod**, **test** and so on. If no environment is set, no configurations are read.
+On startup, the system property **com.day.cq.portet.config** is read to detect the current environment. Usually, the value of this property is something like **dev**, **prod**, **test**, and so on. If no environment is set, no configurations are read.
 
 If an environment is set, a config file is searched in the classpath at* ***com/day/cq/portlet/{env}.config** where **env** is replaced with the actual value for the environment. This file should list all configuration files for this environment. These files are searched relative to the location of the config file. For example, if the file contains a line `my.service.xml,` this file is read from the classpath at `com/day/cq/portlet/my.service.config.` The name of the file consists of the persistence ID of the service, followed by **.config**. In the previous example, the persistence ID is **my.service**. The format of the configuration file, is the format used by the Apache Sling OSGi installer.
 
@@ -496,7 +496,7 @@ In the HTML, you can use the following placeholders, which are replaced by the p
 
 | Placeholder String  |Description  |
 |---|---|
-| {name} |Name of the button, for example,** author, back, refresh**, and so on. |
+| {name} |Name of the button, for example,**author, back, refresh**, and so on. |
 | {id} |CSS id of the button. |
 | {url} |URL for the button's target. |
 | {text} |Label of the button. |
@@ -607,7 +607,7 @@ When implementing such a service, make sure to set the **service.ranking** prope
 | **Name** |**Description** |**Default Behavior** |
 |---|---|---|
 | Authenticator |Provides the authentication information to AEM |Uses a configurable technical user for both author and publish. Or SSO can be used. |
-| HTMLRewriter |Rewrites links, images, and so on |Rewrites AEM links to portal links, can be extended by a UrlMapper and a TextMapper |
+| HTMLRewriter |Rewrites links and mages |Rewrites AEM links to portal links, can be extended by a UrlMapper and a TextMapper |
 | HttpClientService |Handles all http connections |Standard implementation |
 | LocaleHandler |Handles the locale info |Rewrites a link to the content with respect to the locale. |
 | LocaleDetector |Detects the locale of the user. |Uses the locale provided by the portal. |
@@ -722,7 +722,7 @@ Use the Portal component to add a portlet window to your web page. Use the compo
 
 To access content provided by AEM WCM, the portal server needs to be fitted with the AEM Portal Director Portlet. You do this by installing, configuring, and adding the portlet to the portal page by using the steps provided in this section.
 
-By default, the portlet connects to the publish instance at localhost:4503 and to the author instance at localhost:4502. These values can be changed during deployment of the portlet. The portal director is available as content in the repository under /libs/portal/directory. You must download the application war file before using it.
+By default, the portlet connects to the publish instance at localhost:4503 and to the author instance at localhost:4502. These values can be changed during deployment of the portlet. The portal director is available as content in the repository under /libs/portal/directory. Download the application war file before using it.
 
 ### Downloading the war file {#downloading-the-war-file}
 
@@ -757,7 +757,7 @@ To configure the portlet:
 
    >[!NOTE]
    >
-   >If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than** /**, you need to enable the force **CQUrlInfo** in the Html Library Manager configuration of these AEM instances (for example, via Felix Webconsole) or editing will not work and the preferences dialog will not appear.
+   >If the portlet is configured to connect to AEM author and publish instances that are running on a context path different from **/**, you need to enable the force **CQUrlInfo** in the Html Library Manager configuration of these AEM instances (for example, via Felix Webconsole) or editing will not work and the preferences dialog will not appear.
 
 1. Save the configuration changes in the app server.
 
