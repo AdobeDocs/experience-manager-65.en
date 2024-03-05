@@ -46,7 +46,7 @@ Some of the key features and enhancements in this release include the following:
   * ECDSA elliptic curve P384 with SHA384 digest algorithm
   * ECDSA elliptic curve P512 with SHA512 digest algorithm
 * **Seamless Compatibility with Windows 11 for Forms Designer**: AEM Forms Designer now supports Windows 11, ensuring smooth installation and operation. Users can confidently upgrade to Windows 11 without the hassle of reinstalling Forms Designer or worrying about compatibility issues, ensuring uninterrupted workflow.
-* **Enhanced Accessibility with Custom "Caption" Role in AEM Forms Designer**: AEM Forms Designer now includes a custom accessibility role called "Caption" to create XDPs with personalized captioning elements. This feature enhances accessibility by letting users integrate custom captions into their document designs to improve inclusivity and user experience.
+* **Enhanced Accessibility with Custom "Caption" Role in AEM Forms Designer**: AEM Forms Designer now includes a custom accessibility role called "Caption," empowering users to create XDPs with personalized captioning elements. This feature enhances accessibility by letting users integrate custom captions into their document designs so they can improve inclusivity and user experience.
 
 <!-- ### [!DNL Forms]
 
@@ -461,8 +461,15 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
   `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper` 
 
-  Your can reach out to Adobe support for assistance in resolving the issue.
+  To resolve the issue:
 
+  1. Download the hotfix for your operating system:
+
+    * [Hotfix for Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip) 
+    * [Hotfix for Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+    * [Hotfix for Apple macOS](/help/release-notes/assets/Hotfix-osx.zip) 
+  
+  1. Upload and install the package (.zip) via the Package Manager.
 
 * The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)
 
