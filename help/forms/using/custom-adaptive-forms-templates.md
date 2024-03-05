@@ -119,7 +119,7 @@ The custom template has the same styling as the default template because the tem
 
 1. Rename the copied component to `enrollmentpage`.
 
-1. **(Only if you already have a contentpage)** Perform the following steps (a-d), if you have an existing `contentpage`component for your website. If you do not have an existing `contentpage`component for your website, you can leave the `resourceSuperType`property to point to the OOTB base page.
+1. **(Only if you already have a contentpage)** Perform the following steps (a-d), if you have an existing `contentpage`component for your website. If you do not have an existing `contentpage`component for your website, you can leave the `resourceSuperType`property to point to the out-of-the-box base page.
 
     1. For the `enrollmentpage` node, set value of the property `sling:resourceSuperType` to mycompany/components/page/contentpage. The `contentpage` component is the base page component for your site. Other page components can extend it. Remove script files under `enrollmentpage`, except `head.jsp`, `content.jsp`, and `library.jsp`. The `sling:resourceSuperType` component, which is `contentpage` in this case, includes all such scripts. Headers, including navigation bar and footer are inherited from the `contentpage` component.
 

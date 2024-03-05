@@ -150,7 +150,7 @@ The following is an outline of the steps that a front-end developer needs to fol
 
    When the `ModelRouter` is enabled, calling the `pushState` and `replaceState` functions trigger a request to the `PageModelManager` to fetch a missing fragment of the model.
 
-   The current version of the `ModelRouter` only supports the use of URLs that points to the actual resource path of Sling Model entry points. It doesn't support the use of vanity URLs or aliases.
+   The current version of the `ModelRouter` only supports the use of URLs that points to the actual resource path of Sling Model entry points. It does not support the use of vanity URLs or aliases.
 
    The `ModelRouter` can be disabled or configured to ignore a list of regular expressions.
 

@@ -63,7 +63,7 @@ The following properties are available for many workflow step components, on the
 
 * **Notify user via email**
 
-    * You can notify participants by sending them an email when the workflow reaches the step.
+    * Notify participants by sending them an email when the workflow reaches the step.
     * If enabled, an email is sent to the user defined by the property **User/Group**, or to each member of the group if a group is defined.
 
 * **User/Group**

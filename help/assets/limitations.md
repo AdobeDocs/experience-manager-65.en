@@ -25,11 +25,12 @@ When you create a Spin Set or an Image Set, or upload PDFs for page extraction, 
 | Asset - Limit type | Best practice | Limit imposed |
 | --- | --- | --- |
 | **Image** - Number of Smart Crops per image | 5 | 100 |
-| **All sets** - Number of duplicate assets per set | No duplicates | 20 |
+| **All sets** - Number of duplicate assets per set | No duplicates | 20&Dagger; |
 | **All sets** - Maximum number of assets per set | 5-10 images per set  | 1000 |
 | **Spin Set** - Maximum number of rows/columns per 2D set | 12-18 images per set | 1000 |
 | **PDF** - Maximum number of pages for a PDF to be considered for extraction || 100 (for all PDFs) |
 
+&Dagger; Best practice is to not have duplicate assets in a set. The limit is 20 duplicates for a single asset. If you add another duplicate for that asset&mdash;within that set&mdash;the request either gives an error or ignores the duplicate.
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Unsupported web browser and operating system combinations for Dynamic Media {#unsupported-browser-os}

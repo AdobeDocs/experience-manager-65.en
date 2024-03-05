@@ -18,7 +18,7 @@ Using the console, you can create a project, associate resources with your proje
 
 ## Access Requirements {#access-requirements}
 
-Projects a standard AEM feature and don't require any additional setup.
+Projects a standard AEM feature and do not require any additional setup.
 
 However for users in projects to see other users/groups while using Projects such as when creating projects, creating tasks/workflows, or viewing and managing the team, those users need to have read access on `/home/users` and `/home/groups`.
 

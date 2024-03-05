@@ -91,7 +91,7 @@ All examples that follow assume following content structure, and components:
 
 #### Use Case 1: Include a Component for Code Reuse {#use-case-include-a-component-for-code-reuse}
 
-The most typical use case is when a component includes another component for code reuse reasons. In that case, the included component isn't desired to be editable with its own toolbar and dialog, so no wrapper is needed, and the component's `cq:htmlTag` will be ignored. This can be considered the default behavior.
+The most typical use case is when a component includes another component for code reuse reasons. In that case, the included component is not desired to be editable with its own toolbar and dialog, so no wrapper is needed, and the component's `cq:htmlTag` will be ignored. This can be considered the default behavior.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

@@ -116,7 +116,7 @@ Similarly, without an extra index rule for the `cq:tags` property, even a fullte
 
 Another cause of post-index-filtering is Access Control Lists which often gets missed during development. Try to make sure that the query does not return paths that might be inaccessible to the user. Doing so can be done by better content structure along with providing relevant path restrictions on the query.
 
-A useful way to identify if the Lucene index is returning many results to return a small subset as query result, is to enable DEBUG logs for `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Doing so lets you see how many documents are being loaded from the index. Number of eventual results versus the number of loaded documents shouldn't be disproportionate. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
+A useful way to identify if the Lucene index is returning many results to return a small subset as query result, is to enable DEBUG logs for `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Doing so lets you see how many documents are being loaded from the index. Number of eventual results versus the number of loaded documents should not be disproportionate. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
 
 #### Post-Deployment {#post-deployment-1}
 

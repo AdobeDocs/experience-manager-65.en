@@ -100,7 +100,7 @@ This is a brief summary of best practices for [!DNL Experience Manager] and [!DN
 * **Understand why and when to store assets in DAM:** Updates to be made available to the broader team in your organization.
 * **Mind the volume of assets shared:** If your use case is asset distribution, governance and security might be the most important aspects. Consider using tools built for doing that at scale, like Brand Portal.
 * **Understand asset lifecycle:** Know how assets are handled in your organization by different teams
-* **Handle frequent saves to assets with care:** Adobe Asset Link takes care of that for you with PS, AI, ID. For other applications, don't carry out work in progress tasks in mapped/shared folder unless you need all the changes in DAM
+* **Handle frequent saves to assets with care:** Adobe Asset Link takes care of that for you with PS, AI, ID. For other applications, do not carry out work in progress tasks in mapped/shared folder unless you need all the changes in DAM
 
 ### Access to [!DNL Adobe Stock] assets from [!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 
@@ -111,7 +111,7 @@ A few important points about this integration:
 * When assets from Adobe stock are saved to [!DNL Experience Manager], they become a regular [!DNL Assets], with binary saved to the [!DNL Experience Manager] repository. Some metadata related to [!DNL Adobe Stock] are saved for the asset in [!DNL Experience Manager], otherwise the ingestion process looks the same as for any other file. For example, if Smart Tags are active, the tags are added to these assets upon saving.
 * The asset saved to [!DNL Experience Manager] is a copy, not a link back into [!DNL Adobe Stock].
 
-**Working with assets saved from [!DNL Adobe Stock] into [!DNL Experience Manager] in [!DNL Creative Cloud]**. This integration is independent of [!DNL Adobe Asset Link], but [!DNL Adobe Asset Link] recognizes these assets saved from [!DNL Stock] that way, and displays additional metadata and a [!DNL Adobe Stock] logo on these assets in [!DNL Adobe Asset Link] extension UI in [!DNL Photoshop], [!DNL Illustrator], or [!DNL InDesign]. The files are available for browsing, opening, and so on - because they are regular assets when saved to [!DNL Experience Manager].
+**Working with assets saved from [!DNL Adobe Stock] into [!DNL Experience Manager] in [!DNL Creative Cloud]**. This integration is independent of [!DNL Adobe Asset Link], but [!DNL Adobe Asset Link] recognizes these assets saved from [!DNL Stock] that way, and displays additional metadata and a [!DNL Adobe Stock] logo on these assets in [!DNL Adobe Asset Link] extension UI in [!DNL Photoshop], [!DNL Illustrator], or [!DNL InDesign]. The files are available for browsing, opening, and so on, because they are regular assets when saved to [!DNL Experience Manager].
 Creative users working in [!DNL Creative Cloud] apps with [!DNL Adobe Asset Link] extension present, in addition to having access to already-licensed assets from [!DNL Adobe Stock] into [!DNL Experience Manager], can also use [!DNL Creative Cloud] Libraries panel to search, preview, and license [!DNL Adobe Stock] assets.
 [!DNL Assets] from [!DNL Adobe Stock] licensed and saved into [!DNL Experience Manager] become available to the broader teams accessing [!DNL Experience Manager Assets] deployment, whereas creatives licensing assets from [!DNL Adobe Stock] via [!DNL Creative Cloud] Libraries panel make them available to themselves only by default in their [!DNL Creative Cloud] account.
 

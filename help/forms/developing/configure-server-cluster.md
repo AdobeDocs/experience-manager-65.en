@@ -145,7 +145,7 @@ On the other node, AP-HP7:
 
 ```
 
-**What if GemFire is finding nodes that it shouldn't?**
+**What if GemFire is finding nodes that it should not?**
 
 Each distinct cluster that shares a corporate network should use a separate set of TCP locators, if TCP locators are used, or a separate UDP port number if multicast UDP configuration is used. Because UDP autodiscovery is the default configuration for AEM Forms on JEE, and the same default port 33456 is in use by multiple clusters, it is possible that clusters that should not be attempting to communicate, may be unexpectedly doing so. For example, the production and QA clusters should remain separate, but may connect to each other by way of UDP multicast.
 
@@ -209,7 +209,7 @@ On UNIX&reg; systems, NFS configurations often default to distrust root ownershi
 For a cluster to work correctly, the same database must be shared by all the cluster members. The scope for getting this wrong is roughly:
 
 * accidentally setting the IDP_DS, EDC_DS, AdobeDefaultSA_DS or other required data sources differently on separate cluster nodes, so that the nodes point to different databases.
-* accidentally setting multiple separate nodes to share a database when they shouldn't.
+* accidentally setting multiple separate nodes to share a database when they should not.
 
 Depending on your application server, it may be natural that the JDBC connection is defined at a cluster scope, so that different definitions are not possible on different nodes. On JBoss&reg;, however, it is entirely possible to set up things so that a data source, such as IDP_DS, points to one database on node 1, but points to something else on node 2.
 
@@ -246,7 +246,7 @@ and ones like:
 
 ### Quartz scheduler {#quartz-scheduler}
 
-Generally, AEM Forms on JEE's use of the internal Quartz scheduler in a cluster is meant to automatically follow the global cluster configuration of AEM Forms on JEE in general. There is, however a bug, #2794033, which causes the automatic cluster configuration of Quartz to fail if TCP locators are being used for Gemfire instead of multicast autodiscovery. In this case, Quartz incorrectly runs in a nonclustered mode. This creates deadlocks and data corruption in the Quartz tables. The side effects are worse in version 8.2.x than 9.0, as Quartz isn't used as much, but is still there.
+Generally, AEM Forms on JEE's use of the internal Quartz scheduler in a cluster is meant to automatically follow the global cluster configuration of AEM Forms on JEE in general. There is, however a bug, #2794033, which causes the automatic cluster configuration of Quartz to fail if TCP locators are being used for Gemfire instead of multicast autodiscovery. In this case, Quartz incorrectly runs in a nonclustered mode. This creates deadlocks and data corruption in the Quartz tables. The side effects are worse in version 8.2.x than 9.0, as Quartz is not used as much, but is still there.
 
 Fixes are available as follows for this problem: 8.2.1.2 QF2.143 and 9.0.0.2 QF2.44.
 
@@ -277,7 +277,7 @@ If Quartz is set up to run as a single node, but is running in a cluster, and sh
 ```xml
 
 [1/20/11 10:40:57:584 EST] 00000035 ErrorLogger   E org.quartz.core.ErrorLogger schedulerError An error occured while marking executed job complete. job= 'Asynchronous.TaskFormDataSaved:12955380518320.5650479324757354'
- org.quartz.JobPersistenceException: Couldn't remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
+ org.quartz.JobPersistenceException: Could not remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.removeTrigger(JobStoreSupport.java:1405)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:2888)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport$38.execute(JobStoreSupport.java:2872)

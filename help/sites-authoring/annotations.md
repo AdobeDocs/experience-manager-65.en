@@ -37,7 +37,7 @@ A special [mode](/help/sites-authoring/author-environment-tools.md#page-modes) i
 
 >[!NOTE]
 >
->Don't forget that [comments](/help/sites-authoring/basic-handling.md#timeline) are also available for providing feedback on a page.
+>Do not forget that [comments](/help/sites-authoring/basic-handling.md#timeline) are also available for providing feedback on a page.
 
 >[!NOTE]
 >

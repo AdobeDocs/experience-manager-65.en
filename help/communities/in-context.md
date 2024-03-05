@@ -50,7 +50,7 @@ For more on community user groups, visit [Managing Users and User Groups](users.
 
   * Enter the body text
 
-    I haven't had much success when I hang a hummingbird feeder up every year. Seems they come a day or two then that is it. I change it once a week is that too long? Must I change it sooner?
+    I have not had much success when I hang a hummingbird feeder up every year. Seems they come a day or two then that is it. I change it once a week is that too long? Must I change it sooner?
 
   * Select Post
   * Select Log Out

@@ -500,7 +500,7 @@ The following Java code purges data from a process named *SecureDocument*. A fil
  
            //Prepare parameters to use in the purge operation
               long age = 10;  // in seconds
-              boolean includeChildren = false;// don't include children by default
+              boolean includeChildren = false;// do not include children by default
               int status = 3;   // both completed and terminated by default
               short minor = 0;
               short major = 1;

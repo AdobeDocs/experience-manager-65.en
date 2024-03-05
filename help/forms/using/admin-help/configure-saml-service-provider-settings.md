@@ -11,7 +11,7 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 
 Security Assertion Markup Language (SAML) is one of the options that you can select when configuring authorization for an enterprise or hybrid domain. SAML is primarily used to support SSO across multiple domains. When SAML is configured as your authentication provider, users log in and authenticate to AEM forms via a specified third-party identity provider (IDP).
 
-For an explanation of SAML, see [Security Assertion Markup Language (SAML) V2.0 Technical Overview](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
+For an explanation of SAML, see [Security Assertion Markup Language (SAML) V2.0 Technical Overview](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. In administration console, click Settings &gt; User Management &gt; Configuration &gt; SAML Service Provider Settings.
 1. In the Service Provider Entity ID box, type a unique ID to use as an identifier for the AEM forms service provider implementation. You also specify this unique ID when configuring your IDP (for example, `um.lc.com`.) You can also use the URL that is used to access AEM forms (for example, `https://AEMformsserver`).
