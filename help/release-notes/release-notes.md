@@ -378,7 +378,6 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
        `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
 
 
-
 * **Related to Oak**
   From Service Pack 13 and above, the following error log has begun to appear which affects the persistence cache:
 
