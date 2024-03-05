@@ -75,11 +75,11 @@ See [Understanding Reasons to Upgrade AEM](https://helpx.adobe.com/experience-ma
 
 If the user, uploading the movie files does not have delete permissions under asset node, the delete chunk nodes fail and the upload restarts.
 
-#### What are the default settings for OOTB configurations while creating Language Copy? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### What are the default settings for out-of-the-box configurations while creating Language Copy? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 When you create a language copy through Touch UI (**References** > **Update Language Copy**), a new DAM folder is created under the new language and assets are referenced from there.
 
-This is default setting for OOTB configurations. You can set **Translate Page Assets** = **Do not translate** in Translation configurations.
+This is default setting for out-of-the-box configurations. You can set **Translate Page Assets** = **Do not translate** in Translation configurations.
 For AEM 6.4, **Tools** &gt; **Cloud Services** &gt; **Translation Cloud services**.
 
 #### How to disable an AEM component causing exponential growth for the AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

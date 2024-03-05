@@ -59,7 +59,7 @@ You create an **adaptive template** and apply the theme to the template. You can
 
    **Less variables files**: These are the files where you define or override the variables that are used in defining CSS styles.
 
-   Adaptive forms provide OOTB variables defined in the following `.less` files:
+   Adaptive forms provide out-of-the-box variables defined in the following `.less` files:
 
     * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
     * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -101,7 +101,7 @@ You create an **adaptive template** and apply the theme to the template. You can
 
    **Less mixin files:** You can define the functions that accept variables as arguments. The output of these functions is the resultant styles. Use these mixins within different styles so you can avoid repeating CSS styles.
 
-   Adaptive forms provide OOTB mixins defined in:
+   Adaptive forms provide out-of-the-box mixins defined in:
 
     * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

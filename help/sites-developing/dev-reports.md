@@ -108,7 +108,7 @@ The query:
 
       This specifies the subtree of the repository to be searched.
 
-      To help minimize the performance impact, it is advisable to (try to) restrict the query to a specific subtree of the repository. The root path can be either predefined in the [report template](#report-template) or set by the user in the [Configuration (Edit) dialog](#configuration-dialog).
+      To help minimize the performance impact, it is advisable to (try to) restrict the query to a specific subtree of the repository. The root path can be either predefined in the [report template](#report-template) or set by the user in the [Configuration (Edit) dialog box](#configuration-dialog).
 
     * [One or more criteria](#query-definition).
 

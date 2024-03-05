@@ -13,7 +13,7 @@ exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 
 ## Design for upgrades {#design-for-upgrades}
 
-When extending OOTB behaviors, it is important to keep upgrades in mind. Always apply customizations in the /apps directory and either overlay on top of the corresponding nodes in the /libs directory or use sling:resourceSuperType to extend the out of the box behavior. While some modifications may be necessary to support a new AEM version, the new version should not overwrite your customizations if this practice is followed.
+When extending out-of-the-box behaviors, it is important to keep upgrades in mind. Always apply customizations in the /apps directory and either overlay on top of the corresponding nodes in the /libs directory or use sling:resourceSuperType to extend the out of the box behavior. While some modifications may be necessary to support a new AEM version, the new version should not overwrite your customizations if this practice is followed.
 
 ### Reuse template and components when possible {#reuse-template-and-components-when-possible}
 

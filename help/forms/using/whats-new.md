@@ -38,7 +38,7 @@ The [64-bit version of AEM Forms Designer](/help/forms/using/installing-configur
 
 #### Connect an Adaptive Forms with Microsoft&reg; SharePoint List
 
-AEM Forms provides an OOTB integration to [submit forms data directly to SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), letting you use SharePoint's Lists capabilities. You can configure Microsoft&reg; SharePoint List as a datasource for a Form Data Model and use the Submit using Form Data Model submit action to connect an Adaptive Form with SharePoint List.
+AEM Forms provides an out-of-the-box integration to [submit forms data directly to SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), letting you use SharePoint's Lists capabilities. You can configure Microsoft&reg; SharePoint List as a datasource for a Form Data Model and use the Submit using Form Data Model submit action to connect an Adaptive Form with SharePoint List.
 
 #### Support to configure Document of Record properties for Adaptive Form Fragments 
 

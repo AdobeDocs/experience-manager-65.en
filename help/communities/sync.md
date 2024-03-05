@@ -261,7 +261,7 @@ On each AEM publish instance:
 
    `system`
 
-   `rep:cache` (since we use sticky sessions, we need not sync this node to different publishers).
+   `rep:cache` (because sticky sessions are used, you do not need to sync this node to different publishers).
 
    ![user-sync-listner](assets/user-sync-listner.png)
 

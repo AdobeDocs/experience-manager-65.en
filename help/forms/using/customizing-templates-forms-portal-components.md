@@ -76,19 +76,19 @@ The following is a sample implementation of a custom template where Forms Portal
 
 A custom template for any Forms Portal component includes repeatable and non-repeatable entries. Repeatable entries are basic entities for listing. Examples of repeatable entries are Search & Lister, Drafts & Submissions, and Link components.
 
-Forms Portal provides a syntax for place-holders to display custom/OOTB metadata. The placeholders are populated after displaying the results of forms, drafts, or submissions.
+Forms Portal provides a syntax for place-holders to display custom/out-of-the-box metadata. The placeholders are populated after displaying the results of forms, drafts, or submissions.
 
 To include a repeatable entry, configure the value of the attribute **data-repeatable** to **true**.
 
 *In the example discussed, two Div elements are present at the top in the custom template. The first, with "__FP_boxes-container" CSS class, works as a container element for the forms that are listed. The second, with "__FP_boxes" CSS class, is a template for the basic entities, in this case a Form. The **data-repeatable** attribute present in the Div element has the value **true**.*
 
-Each placeholder has an exclusive OOTB metadata set. To display custom metadata at a particular place on the form, add the **${metadata_prop} property** at the place.
+Each placeholder has an exclusive out-of-the-box metadata set. To display custom metadata at a particular place on the form, add the **${metadata_prop} property** at the place.
 
 *In the example, the metadata property is used at multiple instances. For example, it is used in **description**, **name**, **formUrl**, **htmlStyle**, **pdfUrl**, **pdfStyle**, and **path** in the prescribed manner.*
 
 ## Out of the box metadata {#out-of-the-box-metadata}
 
-Various Forms Portal components provide exclusive sets of OOTB metadata that you can use for listing.
+Various Forms Portal components provide exclusive sets of out-of-the-box metadata that you can use for listing.
 
 ### Search &amp; Lister component {#search-amp-lister-component}
 

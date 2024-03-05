@@ -1,13 +1,9 @@
 ---
 title: Style System
-
 description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
-
-
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 ---
 # Style System{#style-system}
@@ -120,7 +116,7 @@ In order for a component to work with AEM's Style System and show the style tab 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-With the component configured, the styles configured by the page authors will be automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself need not do anything else to make this happen.
+With the component configured, the styles configured by the page authors will be automatically inserted by AEM on the decoration element that AEM automatically wraps around every editable component. The component itself does not need to do anything else to make this happen.
 
 ### Enable Styles Tab in Edit Dialog {#enable-styles-tab-edit}
 
