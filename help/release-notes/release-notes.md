@@ -378,7 +378,6 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
        `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
 
 
-
 * **Related to Oak**
   From Service Pack 13 and above, the following error log has begun to appear which affects the persistence cache:
 
@@ -456,6 +455,22 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
  
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6520}
+
+* After updating from AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0) to AEM 6.5 Forms Service Pack 20 (6.5.20.0), users encounter a JSP compilation error. They cannot open or create adaptive forms and they're running into errors with other AEM interfaces like the page editor, AEM Forms UI, and AEM Workflow editor. The error message similar to the following is experienced:
+
+  `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper` 
+
+  To resolve the issue:
+
+  1. Download the hotfix for your operating system:
+
+     * [Hotfix for Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip) 
+     * [Hotfix for Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+     * [Hotfix for Apple macOS](/help/release-notes/assets/Hotfix-osx.zip) 
+  
+  1. Upload and install the package (.zip) via the [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
+
+  1. Restart the AEM Server and verify the activation status of all bundles once the restart process completes. You can monitor the status of the bundles by accessing: `https://server:host/system/console/bundles`. Ensure that all bundles are active before proceeding with further tasks.
 
 * The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)
 

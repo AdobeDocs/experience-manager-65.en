@@ -120,7 +120,7 @@ You then navigate through these folders to create, and edit your Content Fragmen
 
 Just in case...
 
-You will probably be given an initial folder where you can create your folders. This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. This probably won't interest you, but if necessary you can check the **Configuration** in the **Cloud Services** of the folder **Properties**:
+You will probably be given an initial folder where you can create your folders. This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. This is probably of no interest you, but if necessary you can check the **Configuration** in the **Cloud Services** of the folder **Properties**:
 
 ![Create Folder Properties - Configuration](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -178,7 +178,7 @@ Confirm your updates with either **Save** or **Save & close**.
 >
 >For more details you can read Variations - Authoring Content Fragments.
 
-#### What you (probably) don't need to worry about {#what-you-probably-do-not-need-to-worry-about}
+#### What you (probably) do not need to worry about {#what-you-probably-do-not-need-to-worry-about}
 
 OK, this might seem a slightly strange section, but once you open the Content Fragment Editor and start exploring you'll see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
 

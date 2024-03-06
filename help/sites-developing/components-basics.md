@@ -596,9 +596,9 @@ There are many existing configurations in the repository. You can easily search 
 
 ### Component Placeholders {#component-placeholders}
 
-Components must always render some HTML that is visible to the author, even when the component has no content. Otherwise, it might visually disappear from the editor's interface, making it technically present but invisible on the page and in the editor. In such a case, the authors won't be able to select and interact with the empty component.
+Components must always render some HTML that is visible to the author, even when the component has no content. Otherwise, it might visually disappear from the editor's interface, making it technically present but invisible on the page and in the editor. In such a case, the authors cannot select and interact with the empty component.
 
-For this reason, components should render a placeholder as long as they don't render any visible output when the page is rendered in the page editor (when the WCM mode is `edit` or `preview`).
+For this reason, components should render a placeholder as long as they do not render any visible output when the page is rendered in the page editor (when the WCM mode is `edit` or `preview`).
 The typical HTML markup for a placeholder is the following:
 
 ```HTML

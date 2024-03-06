@@ -85,7 +85,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 The [!DNL Assets] console can display various states for assets. Depending on the current state of a particular asset, its card view displays a label that describes its state, for example, Expired, Published, Approved, Rejected, and so on.
 
 1. In the [!DNL Assets] user interface, select an asset.
-1. Click **[!UICONTROL Publish]** from the toolbar. If you don't see **Publish** on the toolbar, click **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** ![publish option](assets/do-not-localize/publish-globe.png) option.
+1. Click **[!UICONTROL Publish]** from the toolbar. If you do not see **Publish** on the toolbar, click **[!UICONTROL More]** on the toolbar and locate **[!UICONTROL Publish]** ![publish option](assets/do-not-localize/publish-globe.png) option.
 1. Choose **[!UICONTROL Publish]** from the menu, and then close the confirmation dialog.
 1. Exit the selection mode. The publication status for the asset appears at the bottom of the asset thumbnail in the card view. In the list view, the Published column displays the time when the asset was published.
 

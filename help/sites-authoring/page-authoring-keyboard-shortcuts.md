@@ -1,12 +1,10 @@
 ---
 title: Keyboard shortcuts when editing content pages
 description: Various keyboard shortcuts are available throughout AEM, including some for page editing
-
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
 ---
 # Keyboard Shortcuts when Editing Pages{#keyboard-shortcuts-when-editing-pages}
@@ -26,7 +24,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 ||`Ctrl-y`|[Redo last change](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-Click`|Select multiple paragraphs|
 ||`Ctrl-c`|Copy selected paragraphs|
-||`Ctrl-x`|Cut selected paragraphs, (cut paragraphs will not disappear in the UI until it is pasted)|
+||`Ctrl-x`|Cut selected paragraphs (cut paragraphs do not disappear in the UI until it is pasted)|
 ||`Ctrl-v`|Paste paragraphs previously cut or copied|
 ||`Ctrl-Backspace`|Delete selected paragraphs|
 |**Edit** mode - Rich Text Editor|`Ctrl-b`|Bold|

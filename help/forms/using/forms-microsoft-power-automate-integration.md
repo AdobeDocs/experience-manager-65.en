@@ -3,7 +3,6 @@ title: How to connect and send Adaptive Form data to Microsoft&reg; Power Automa
 description: A step-by-step guide to connect and send Adaptive Form data to Microsoft&reg; Power Automate. 
 keywords: Adaptive Forms Microsoft Power Automate, Submit Adaptive Forms data to Microsoft Power Automate 
 feature: Adaptive Forms, Foundation Components
-exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 ---
 
 # Connect and submit Adaptive Form data to Microsoft&reg; Power Automate {#connect-adaptive-form-with-power-automate}

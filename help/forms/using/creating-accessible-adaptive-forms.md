@@ -1,12 +1,8 @@
 ---
 title: Creating accessible adaptive forms
-
 description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
-
-
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
@@ -97,7 +93,7 @@ After applying an accessible theme, perform the below listed additional fixes. T
 
 The label or title of a component identifies what the form component represents. For example, the text "First name" tells users that they have to enter their first name in a text field. To be accessible by screen readers, the label is programmatically associated with a form component. Alternatively, the form control is configured with additional accessibility information.
 
-The label that is perceived by screen readers need not necessarily be the same as the visual caption. In some cases, you may want to be more specific about the control's purpose. For each field object in a form, the accessibility options can be used to specify what the screen reader announces to identify the specific form field.
+The label that is perceived by screen readers does not need to be the same as the visual caption. In some cases, you may want to be more specific about the control's purpose. For each field object in a form, the accessibility options can be used to specify what the screen reader announces to identify the specific form field.
 
 To use the Accessibility option, follow these steps:
 

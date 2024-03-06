@@ -103,7 +103,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    The emulator toolbar displays additional layout options:
 
-    * **Rotate device** - Lets you rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and vice-versa.
+    * **Rotate device** - Lets you rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and conversely.
 
       ![Rotate device](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotate device](do-not-localize/screen_shot_2018-03-23at084637.png)
 
