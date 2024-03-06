@@ -470,6 +470,9 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
   
   1. Upload and install the package (.zip) via the [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
 
+  1. Restart the AEM Server and verify the activation status of all bundles once the restart process completes. You can monitor the status of the bundles by accessing: `https://server:host/system/console/bundles`
+    Ensure that all bundles are active before proceeding with further tasks.
+
 * The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
