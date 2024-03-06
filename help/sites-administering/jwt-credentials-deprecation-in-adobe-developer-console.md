@@ -16,11 +16,6 @@ The main takeaway at this time is that AEM features do not yet support the new O
 
 The sections below list the scenarios where customers must (or in some cases must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, once AEM supports them in mid-April. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to replace the credentials in the future.
 
->[!NOTE]
->
->The [**AEM** Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#crxde-lite-and-developer-console) (note the **AEM** in the name, which distinguishes it from the **Adobe** Developer Console) provides a utility to generate [JWT tokens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) used for server-to-server APIs. These credentials are not deprecated and can continue to be used.
-
-
 ## Integrating AEM with Other Adobe Solutions {#integrating-aem-with-other-adobe-solutions}
 
 **Action**: Wait to migrate until after mid-April 2024, when AEM supports it.
