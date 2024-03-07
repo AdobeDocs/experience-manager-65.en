@@ -47,12 +47,12 @@ When migrating, be aware of the following major differences between the classic 
    <td><p>Dialog nodes:</p>
     <ul>
      <li>Name: <code>dialog</code></li>
-     <li>jcr:primaryType: <code>cq:Dialog</code></li>
+     <li><code>jcr:primaryType</code>: <code>cq:Dialog</code></li>
     </ul> </td>
    <td><p>Dialog nodes:</p>
     <ul>
      <li>Name: <code>cq:dialog</code></li>
-     <li>jcr:primaryType: <code>nt:unstructured</code></li>
+     <li><code>jcr:primaryType</code>: <code>nt:unstructured</code></li>
     </ul> </td>
   </tr>
   <tr>

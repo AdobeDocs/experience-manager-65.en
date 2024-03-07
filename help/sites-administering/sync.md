@@ -135,7 +135,7 @@ The authorized user is used in step 3 to configure the Sling distribution on Aut
     * **Principal**: *search for user created for user sync*
     * **Type**: `Allow`
     * **Privileges**: `jcr:all`
-    * **Restrictions** rep:glob: `*/activities/*`
+    * **Restrictions** `rep:glob`: `*/activities/*`
     * select **OK**
 
 * select **Save All**

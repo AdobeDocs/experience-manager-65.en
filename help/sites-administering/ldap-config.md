@@ -274,12 +274,12 @@ To enable debug logging, you must do the following:
 
 * Log level: Debug
 * Log File logs/ldap.log
-* Message Pattern: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &ast;{4}&ast; {2} {3} {5}
+* Message Pattern: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Log level: Debug
 * Log File: logs/external.log
-* Message Pattern: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &ast;{4}&ast; {2} {3} {5}
+* Message Pattern: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## A Word on Group Affiliation {#a-word-on-group-affiliation}

@@ -194,7 +194,7 @@ For example, to create a ` [sling:OsgiConfig](/help/sites-deploying/configuring-
 
   The - `*alias*` suffix is required because the MobileEmulatorProvider service is a factory service. Use any alias that is unique for this factory.
 
-* jcr:primaryType: `sling:OsgiConfig`
+* `jcr:primaryType`: `sling:OsgiConfig`
 
 Add the following node property:
 

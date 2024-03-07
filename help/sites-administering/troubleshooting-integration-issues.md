@@ -96,10 +96,10 @@ To fix the issue, you can try the following:
 * Check ACLs on `/etc/cloudservices`. The ACLs should be:
 
     * allow; jcr:read; webservice-support-servicelibfinder
-    * allow; jcr:read; everyone; rep:glob:&ast;/defaults/&ast;
-    * allow; jcr:read; everyone; rep:glob:&ast;/defaults
-    * allow; jcr:read; everyone; rep:glob:&ast;/public/&ast;
-    * allow; jcr:read; everyone; rep:glob:&ast;/public
+    * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults/`&ast;
+    * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults`
+    * allow; jcr:read; everyone; `rep:glob:`&ast;`/public/`&ast;
+    * allow; jcr:read; everyone; `rep:glob:`&ast;`/public`
 
 For more information about managing ACLs, read the [User Administration and Security](/help/sites-administering/security.md#permissions-in-aem) page.
 
