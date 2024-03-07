@@ -5,8 +5,8 @@ content-type: reference
 docset: aem65
 feature: Release Information
 role: User, Admin
+exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 ---
-
 # Cumulative key features and enhancements
 
 A cumulative list of key features and enhancements in Adobe Experience Manager 6.5 for the previous eight service pack releases.

@@ -3,8 +3,8 @@ title: How to restart AEM SDK?
 description: Best practices to restart AEM SDK
 role: Admin, Developer, User
 feature: Adaptive Forms
+exl-id: f5d69d04-b842-4329-b1b3-57b88266d13d
 ---
-
 # Restarting the AEM SDK 
 
 If you restart the AEM SDK by stopping the Java™ processes, may lead to inconsistencies in the AEM development environment an error occurs as:

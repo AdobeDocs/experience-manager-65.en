@@ -1,8 +1,8 @@
 ---
 title: JWT Credentials Deprecation in Adobe Developer Console
 description: Learn about the impact of JWT credentials deprecation in Adobe Developer Console on AEM
+exl-id: f19a92de-ba6a-4f6d-9e12-60ad1bad2e74
 ---
-
 # JWT Credentials Deprecation in Adobe Developer Console {#jwt-credentials-deprecation-in-adobe-developer-console}
 
 >[!NOTE]
@@ -35,4 +35,4 @@ As an example, here are [the instructions](https://docs.mktossl.com/docs/experie
 
 **Relevant AEM versions**: Adobe Managed Services (Service Pack 20 and below).
 
-Customers create Adobe Developer Console projects so they can invoke [Cloud Manager APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). The credentials in the Adobe Developer project should be migrated to the OAuth Server-to-Server credential type, once AEM and Cloud Manager support it. 
+Customers create Adobe Developer Console projects so they can invoke [Cloud Manager APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). The credentials in the Adobe Developer project should be migrated to the OAuth Server-to-Server credential type, once AEM and Cloud Manager support it.
