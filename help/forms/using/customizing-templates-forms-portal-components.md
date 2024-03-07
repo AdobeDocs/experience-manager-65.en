@@ -137,8 +137,8 @@ Support for localization, sorting, and using configuration properties on the use
 * **diffTime**: Difference between the current time and the last save action for the draft. Alternatively, the difference between the current time and the last submitted action for the submission.
 * **iconClass**: CSS class used to display the first letter of the draft/submission. Forms Portal includes the following classes, which provide various colored backgrounds.
 * **owner**: User who created the draft/submission.
-* **Today**: Date of creation of draft or submission in DD:MM:YYYY format.
-* **TimeNow**: Time of creation of draft or submission in HH:MM:SS 24-hour format
+* **Today**: Date of creation of draft or submission in `DD:MM:YYYY` format.
+* **TimeNow**: Time of creation of draft or submission in `HH:MM:SS` 24-hour format
 
 *Note:*
 
