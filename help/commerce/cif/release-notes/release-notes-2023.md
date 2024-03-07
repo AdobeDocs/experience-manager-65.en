@@ -1,6 +1,7 @@
 ---
 title: AEM Content and Commerce Release Notes 2023
 description: Adobe Experience Manager Content and Commerce Release Notes 2023.
+exl-id: 00349400-6860-4e3c-ba56-fa12afc5db1d
 ---
 # Commerce Integration Framework GitHub Release Overview
 

@@ -1,6 +1,7 @@
 ---
-title: PDF generation fails to print a large number of PDFs with WorkBench 
+title: PDF generation fails to print a large number of PDFs with WorkBench
 description: When a customer generates a large number of PDFs via services implemented through WorkBench,  the print service fails.
+exl-id: f3746b8e-4c38-447a-b5bf-d11fc77556f7
 ---
 # PDF generation fails to print a large number of PDFs via WorkBench {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 

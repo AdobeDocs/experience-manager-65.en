@@ -1,10 +1,10 @@
 ---
 title: How to connect and send Adaptive Form data to Microsoft&reg; Power Automate?
-description: A step-by-step guide to connect and send Adaptive Form data to Microsoft&reg; Power Automate. 
-keywords: Adaptive Forms Microsoft Power Automate, Submit Adaptive Forms data to Microsoft Power Automate 
+description: A step-by-step guide to connect and send Adaptive Form data to Microsoft&reg; Power Automate.
+keywords: Adaptive Forms Microsoft Power Automate, Submit Adaptive Forms data to Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
+exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 ---
-
 # Connect and submit Adaptive Form data to Microsoft&reg; Power Automate {#connect-adaptive-form-with-power-automate}
 
 You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft&reg; Power Automate to build business logics around captured data and automate customer workflows. Here are a few examples of what you can do after integrating an Adaptive Form with Microsoft&reg; Power Automate: 
@@ -188,4 +188,3 @@ After you [Connect your AEM Forms Author instance with Microsoft&reg; Power Auto
 * [Create an Adaptive Form](create-an-adaptive-form-core-components.md)
 * [Configure a Submit Action](configuring-submit-actions.md)
 * [Adobe Experience Manager Connector for Microsoft&reg; Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-
