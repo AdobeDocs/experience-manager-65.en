@@ -30,7 +30,6 @@ There are several Adobe Campaign Classic (ACC) versions. The support for integra
 |---|---|---|
 |[v7](https://experienceleague.adobe.com/docs/campaign-classic.html)|Supported|Supported|
 |[v8 Client Console](https://experienceleague.adobe.com/docs/campaign-v8.html)|Supported|Supported|
-|[v8 Web User Interface](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html)|Supported|Supported|
 
 The following documentation describes how to integrate AEM with Adobe Campaign Classic.
 
@@ -40,13 +39,6 @@ The following additional documentation describes how to use the integration.
 
 * [Email Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html) - Learn about the standard email components that you can use to author Campaign content in AEM.
 * [Troubleshooting Your Adobe Campaign Classic Integration](/help/sites-administering/troubleshooting-campaignintegration.md) - Learn how to fix the most common issues with the AEM-ACC integration.
-
-
-The following documentation describes how to integrate AEM as a Cloud Service with Adobe Campaign v8 Web User interface.
-
-* [Manage templates with Adobe Experience Manager as a Cloud service in Adobe Campaign v8 Web User Interface](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html) - Learn the step-by-step details on configuring and using the integration with AEM Templates.
-* [Manage assets with Adobe Experience Manager as a Cloud service in Adobe Campaign v8 Web User Interface](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) - Learn the step-by-step details on configuring and using the integration with AEM Assets.
-
 
 ## Integrating with Adobe Campaign Standard {#acs}
 
