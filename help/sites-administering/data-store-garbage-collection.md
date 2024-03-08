@@ -155,7 +155,7 @@ The built-in Weekly Maintenance Window, available via the [Operations Dashboard]
 >
 >The reason not to run it concurrently is so that old (and unused) data store files are also backed up, so that if it is required to roll back to an old revision, the binaries are still there in the backup.
 
-If you do not want to run data store garbage collection with the Weekly Maintenance Window in the Operations Dashboard, it can also be automated using the wget or curl HTTP clients. The following is an example of how to automate backup by using curl:
+If you do not want to run data store garbage collection with the Weekly Maintenance Window in the Operations Dashboard, it can also be automated using the wget or curl HTTP clients. The following is an example of how to automate garbage collection by using curl:
 
 >[!CAUTION]
 >
