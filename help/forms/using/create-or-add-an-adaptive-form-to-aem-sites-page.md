@@ -183,7 +183,7 @@ To convert an Adaptive Form in AEM Sites page to an Experience Fragment:
 
 ## Configure Submit Action for the form {#configure-submit-action-for-form}
 
-A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
+A Submit Action lets you choose the destination of data captured by way of an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
 
 1. Open the AEM Page Editor or Experience Fragment that contains the Adaptive Form.
 1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container. 

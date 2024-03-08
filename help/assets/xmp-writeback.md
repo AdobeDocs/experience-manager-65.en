@@ -81,7 +81,7 @@ Filtering of XMP metadata via allowed list resolves this issue by letting you de
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
-1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
+1. To apply filtering by way of an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

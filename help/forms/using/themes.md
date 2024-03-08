@@ -277,9 +277,9 @@ Use Theme Editor breakpoints to define alternate styling for different screen si
 
 When you select a component in the Canvas, its styling properties are listed in the sidebar. Select the object type and its state, and then provide its styling.
 
-### Recently-used styles in Theme Editor {#recently-used-styles-in-theme-editor}
+### Recently used styles in Theme Editor {#recently-used-styles-in-theme-editor}
 
-Theme editor caches upto 10 styles applied to a component. You can use the cached styles with other component of a theme. Recently-used styles are available right below the selected component in sidebar as a list box. Initially, the recently-used styles list is empty.
+Theme editor caches upto 10 styles applied to a component. You can use the cached styles with other component of a theme. Recently used styles are available right below the selected component in sidebar as a list box. Initially, the recently-used styles list is empty.
 
 ![asset-library](assets/asset-library.png)
 
