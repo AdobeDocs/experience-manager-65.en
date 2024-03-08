@@ -35,7 +35,7 @@ The following documentation describes how to integrate AEM with Adobe Campaign C
 
 * [Integrating with Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) - Learn the step-by-step details on configuring the integration.
 
-The following additional documentation describes how to use the integration.
+The following additional documentation describes how to use the integration. 
 
 * [Email Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html) - Learn about the standard email components that you can use to author Campaign content in AEM.
 * [Troubleshooting Your Adobe Campaign Classic Integration](/help/sites-administering/troubleshooting-campaignintegration.md) - Learn how to fix the most common issues with the AEM-ACC integration.
