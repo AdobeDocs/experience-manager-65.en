@@ -135,7 +135,7 @@ A workflow model owner is unable to view items related to AEM Workflow in AEM in
       | allowExplicitSharing  |  allowExplicitSharing | BOOLEAN  |
       
 
-   * Deploy the indices via an AEM package. You can use an [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) project to create a deployable AEM package. Use the following sample code to add indices to an AEM Archetype project:
+   * Deploy the indices by way of an AEM package. You can use an [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) project to create a deployable AEM package. Use the following sample code to add indices to an AEM Archetype project:
 
    ``` Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

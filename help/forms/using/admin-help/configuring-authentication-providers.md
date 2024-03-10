@@ -117,7 +117,7 @@ If you are configuring authentication for an enterprise or hybrid domain and sel
 
 ## Just-in-time provisioning of users {#just-in-time-provisioning-of-users}
 
-Just-in-time provisioning creates a user in the User Management database automatically after the user is successfully authenticated via an authentication provider. Relevant roles and groups are also assigned dynamically to the new user. You can enable just-in-time provisioning for enterprise and hybrid domains.
+Just-in-time provisioning creates a user in the User Management database automatically after the user is successfully authenticated by way of an authentication provider. Relevant roles and groups are also assigned dynamically to the new user. You can enable just-in-time provisioning for enterprise and hybrid domains.
 
 This procedure describes the way traditional authentication works in AEM forms:
 

@@ -22,7 +22,7 @@ exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
 
 [Quick Start (SOAP mode): Determining encryption type using the Java&trade; API](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

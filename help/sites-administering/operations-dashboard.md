@@ -194,7 +194,7 @@ A Composite Health Check's role is to aggregate several individual Health Checks
    <td><p>Observation Queue Length iterates over all Event Listeners and Background Observers, compares their <code>queueSize </code>to their <code>maxQueueSize</code> and:</p>
     <ul>
      <li>returns Critical status if the <code>queueSize</code> value exceeds the <code>maxQueueSize</code> value (that is when events would be dropped)</li>
-     <li>returns Warn if the <code>queueSize</code> value is over the <code>maxQueueSize * WARN_THRESHOLD</code> (the default value is 0.75) </li>
+     <li>returns a Warn if the <code>queueSize</code> value is over the <code>maxQueueSize * WARN_THRESHOLD</code> (the default value is 0.75) </li>
     </ul> <p>The maximum length of each queue comes from separate configurations (Oak and AEM), and is not configurable from this health check. The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -218,12 +218,12 @@ A Composite Health Check's role is to aggregate several individual Health Checks
    <td>Asynchronous Indexes</td>
    <td><p>The Asynchronous Indexes check:</p>
     <ul>
-     <li>returns Critical status if at least one indexing lane is failing</li>
+     <li>returns a Critical status if at least one indexing lane is failing</li>
      <li>checks the <code>lastIndexedTime</code> for all indexing lanes and:
       <ul>
-       <li>returns Critical status if it is more than 2 hours ago </li>
-       <li>returns Warning status if it is between 2 hours and 45 minutes ago </li>
-       <li>returns OK status if it is less than 45 minutes ago </li>
+       <li>returns a Critical status if it is more than 2 hours ago </li>
+       <li>returns a Warning status if it is between 2 hours and 45 minutes ago </li>
+       <li>returns an OK status if it is less than 45 minutes ago </li>
       </ul> </li>
      <li>if none of these conditions are met, it returns the OK status</li>
     </ul> <p>Both the Critical and Warn status thresholds are configurable. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Note: </strong>This health check is available with AEM 6.4 and has been backported to AEM 6.3.0.1.</p> </td>
@@ -259,17 +259,17 @@ A Composite Health Check's role is to aggregate several individual Health Checks
      <code>maxNumQueueJobs</code> threshold, and:
     </div>
     <ul>
-     <li>returns Critical if more than the <code>maxNumQueueJobs</code> are in the queue</li>
-     <li>returns Critical if there are long-running active jobs that are older than 1 hour</li>
-     <li>returns Critical if there are queued jobs, and the last finished job time is older than 1 hour</li>
+     <li>returns a Critical if more than the <code>maxNumQueueJobs</code> are in the queue</li>
+     <li>returns a Critical if there are long-running active jobs that are older than 1 hour</li>
+     <li>returns a Critical if there are queued jobs, and the last finished job time is older than 1 hour</li>
     </ul> <p>Only the maximum number of queued jobs parameter is configurable and it has the default value of 1000.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Request Performance</td>
    <td><p>This check looks at the <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling metric </a>and:</p>
     <ul>
-     <li>returns Critical if the 75th percentile value is over the critical threshold (the default value is 500 milliseconds)</li>
-     <li>returns Warn if the 75th percentile value is over the warn threshold (the default value is 200 milliseconds)</li>
+     <li>returns a Critical if the 75th percentile value is over the critical threshold (the default value is 500 milliseconds)</li>
+     <li>returns a Warn if the 75th percentile value is over the warn threshold (the default value is 200 milliseconds)</li>
     </ul> <p>The MBean for this health check is<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -280,8 +280,8 @@ A Composite Health Check's role is to aggregate several individual Health Checks
    <td>Disk Space</td>
    <td><p>The Disk Space check looks at the <code>FileStoreStats</code> MBean, retrieves the size of the Node Store and the amount of usable disk space on the Node Store partition, and:</p>
     <ul>
-     <li>returns Warn if the usable disk space to repository size ratio is less than the warn threshold (the default value is 10)</li>
-     <li>returns Critical if the usable disk space to repository size ratio is less than the critical threshold (the default value is 2)</li>
+     <li>returns a Warn if the usable disk space to repository size ratio is less than the warn threshold (the default value is 10)</li>
+     <li>returns a Critical if the usable disk space to repository size ratio is less than the critical threshold (the default value is 2)</li>
     </ul> <p>Both thresholds are configurable. The check only works on instances with a Segment Store.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -304,15 +304,15 @@ A Composite Health Check's role is to aggregate several individual Health Checks
    <td>Code Cache Check</td>
    <td><p>A Health Check that verifies several JVM conditions that can trigger a CodeCache bug present in Java&trade; 7:</p>
     <ul>
-     <li>returns Warn if the instance is running on Java&trade; 7, with Code Cache flushing enabled</li>
-     <li>returns Warn if the instance is running on Java&trade; 7, and the Reserved Code Cache size is less than a minimum threshold (the default value is 90 MB)</li>
+     <li>returns a Warn if the instance is running on Java&trade; 7, with Code Cache flushing enabled</li>
+     <li>returns a Warn if the instance is running on Java&trade; 7, and the Reserved Code Cache size is less than a minimum threshold (the default value is 90 MB)</li>
     </ul> <p>The <code>minimum.code.cache.size</code> threshold is configurable. For more information about the bug, see <a href="https://bugs.java.com/bugdatabase/"> and then search on Bug ID 8012547</a>.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Resource Search Path Errors</td>
    <td><p>Checks if there are any resources in the path <code>/apps/foundation/components/primary</code> and:</p>
     <ul>
-     <li>returns Warn if there are child nodes under <code>/apps/foundation/components/primary</code></li>
+     <li>returns a Warn if there are child nodes under <code>/apps/foundation/components/primary</code></li>
     </ul> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>
