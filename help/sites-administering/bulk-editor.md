@@ -113,8 +113,8 @@ To use the Bulk Editor to edit multiple items simultaneously:
 * **path:** only search nodes below this path. If you specify more than one term with a path prefix, only the last one is considered.
 * **type:** only return nodes of the given node type. This includes primary and mixin types. You may specify multiple comma-separated node types. GQL returns nodes that are of any of the specified types.
 * **order:** order the result by the given properties. You may specify multiple comma-separated property names. To order the result in descending order simply prefix the property name with a minus. For example, order:-name. Using a plus sign returns the result in ascending order, which is also the default.
-* **limit:** limits the number of results using an interval. For example, limit:10..20 The interval is zero-based, start is inclusive, and end is exclusive. You may also specify an open interval:limit:10.. or limit:..20 
-If the dots are omitted and only one value is specified, GQL returns at most this number of results. For example, limit:10 (returns the first ten results).
+* **limit:** limits the number of results using an interval. For example, limit:10..20 The interval is zero-based, start is inclusive, and end is exclusive. You may also specify an open `interval:limit:10..` or `limit:..20` 
+If the dots are omitted and only one value is specified, GQL returns at most this number of results. For example, `limit:10` (returns the first ten results).
 
 ### Exporting Content {#exporting-content}
 
