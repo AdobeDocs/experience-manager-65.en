@@ -16,7 +16,7 @@ Java&trade; API Quick Start(SOAP) is available for the Credential service.
 
 [Quick Start (SOAP mode): Deleting credentials using the Java&trade; API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

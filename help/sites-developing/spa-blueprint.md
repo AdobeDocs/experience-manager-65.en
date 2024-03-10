@@ -226,7 +226,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 The project components must generate at a minimum the following data attributes to allow the editor to interact with them.
 
-* `data-cq-data-path`: Relative path of the component as provided by the `PageModel` (for example,, `"root/responsivegrid/image"`). This attribute should not be added to pages.
+* `data-cq-data-path`: Relative path of the component as provided by the `PageModel` (for example, `"root/responsivegrid/image"`). This attribute should not be added to pages.
 
 In summary, to be interpreted by the page editor as editable, a project component must respect the following contract:
 

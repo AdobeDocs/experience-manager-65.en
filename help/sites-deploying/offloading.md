@@ -44,7 +44,7 @@ Upon creation of a job, the payload is only guaranteed to be located on the inst
 
 ## Administering Topologies {#administering-topologies}
 
-Topologies are loosely-coupled Experience Manager clusters that are participating in offloading. A cluster consists of one or more Experience Manager server instances (a single instance is considered as a cluster).
+Topologies are loosely coupled Experience Manager clusters that are participating in offloading. A cluster consists of one or more Experience Manager server instances (a single instance is considered as a cluster).
 
 Each Experience Manager instance runs the following Offloading-related services:
 

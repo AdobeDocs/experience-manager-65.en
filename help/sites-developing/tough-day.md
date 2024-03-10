@@ -124,7 +124,7 @@ You can find the relevant parameters in the list bellow:
 | `--port=<Val>` |The port of the host. |4502 |  |
 | `--user=<Val>` |The user name for the instance. |admin |  |
 | `--password=<Val>` |Password for the given user. |admin |  |
-| `--duration=<Val>` |The duration of the tests. Can be expressed in (**s**)econds, (**m**)inutes, (**h**)ours and (**d**)ays. |1d |  |
+| `--duration=<Val>` |The duration of the tests. Can be expressed in **s**econds, **m**inutes, **h**ours, and **d**ays. |1d |  |
 | `--timeout=<Val>` |How long a test will run before it will be interrupted and marked as failed. Expressed in seconds. |180 |  |
 | `--suite=<Val>` |The value can be one or a list (separated by commas) of predefined test suites. |toughday |  |
 | `--configfile=<Val>` |The targeted yaml configuration file. |  |  |

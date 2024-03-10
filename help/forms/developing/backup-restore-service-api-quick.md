@@ -18,7 +18,7 @@ Java&trade; API Quick Start(SOAP) is available for the Backup and Restore Servic
 
 [Quick Start: Leaving backup mode using the Java&trade; API(SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

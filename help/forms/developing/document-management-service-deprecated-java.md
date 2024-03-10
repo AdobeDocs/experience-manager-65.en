@@ -32,7 +32,7 @@ The following Quick Starts are available for the Document Management service (De
 
 [Quick Start (SOAP mode): Setting Content Services Permissions using the Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

@@ -16,7 +16,7 @@ The following Quick Starts are available for the Convert PDF service API.
 
 [Quick Start (SOAP mode): Converting a PDF document to JPEG files using the Java&trade; API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

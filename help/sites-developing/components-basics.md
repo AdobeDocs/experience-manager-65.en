@@ -1021,7 +1021,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 >  * `aftermove`
 >  * `aftercopy`
 
-The event handler can be implemented with a custom implementation. For example, (where `project.customerAction` is a static method):
+The event handler can be implemented with a custom implementation. For example, where `project.customerAction` is a static method:
 
 `afteredit = "project.customerAction"`
 

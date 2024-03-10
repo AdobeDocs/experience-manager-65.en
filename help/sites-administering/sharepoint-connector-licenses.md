@@ -1103,7 +1103,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      W3C&reg; DOCUMENT NOTICE AND LICENSE
      Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
-     Wide Web Consortium, (Massachusetts Institute of
+     Wide Web Consortium (Massachusetts Institute of
      Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.
      <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
@@ -1126,7 +1126,7 @@ The following table lists third-party libraries used within the Communiqué Serv
 
      The pre-existing copyright notice of the original author, or if
      it does not exist, a notice of the form: "Copyright &copy; [$date-of-document]
-     World Wide Web Consortium, (Massachusetts
+     World Wide Web Consortium (Massachusetts
      Institute of Technology, Institut National de Recherche en Informatique
      et en Automatique, Keio
      University). All Rights Reserved.
@@ -1190,7 +1190,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      W3C&reg; SOFTWARE NOTICE AND LICENSE
      Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
-     Wide Web Consortium, (Massachusetts Institute of
+     Wide Web Consortium (Massachusetts Institute of
      Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.
      <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
