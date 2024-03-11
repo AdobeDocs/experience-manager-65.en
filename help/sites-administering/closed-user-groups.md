@@ -316,7 +316,7 @@ while (isSupportedPath(path)) {
 
 #### Managing CUG Policies by Principal {#managing-cug-policies-by-pincipal}
 
-The extensions defined by `JackrabbitAccessControlManager` that allow to edit access control policies by principal are not implemented with CUG access control management, as by definition a CUG policy always affects all principals: those listed with the `PrincipalSetPolicy` are being granted read access while all other principals will be prevented to read content in the tree defined by the target node.
+The extensions defined by `JackrabbitAccessControlManager` that let you edit access control policies by principal are not implemented with CUG access control management, as by definition a CUG policy always affects all principals: those listed with the `PrincipalSetPolicy` are being granted read access while all other principals will be prevented to read content in the tree defined by the target node.
 
 The corresponding methods always return an empty policy array but will not throw exceptions.
 

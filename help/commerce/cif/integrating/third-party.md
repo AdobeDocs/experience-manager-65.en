@@ -6,7 +6,7 @@ exl-id: e99899a4-df86-4108-991a-8b30d303a279
 ---
 # AEM and Third-Party Commerce Integration using Commerce Integration Framework {#aem-third-party}
 
-The integration of non-Adobe Commerce solution is a common scenario for CIF. Third-party solutions with different APIs and schemas get connected via an integration layer.
+The integration of non-Adobe Commerce solution is a common scenario for CIF. Third-party solutions with different APIs and schemas get connected by way of an integration layer.
 
 ## Architecture {#architecture}
 

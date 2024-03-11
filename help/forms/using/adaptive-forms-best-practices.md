@@ -127,7 +127,7 @@ Rule editor provides a visual editor and a code editor for writing rules. Consid
 
 * Refer components by relative unique hierarchy to avoid any conflict. For example, `parentName.fieldName`.
 
-* When handling complex or commonly-used rules, consider writing business logic as functions in a separate client library that you can specify and reuse across adaptive forms. The client library should be a self-contained library and should not have any external dependencies, except on jQuery and Underscore.js. You can also use the client library to enforce [server-side revalidation](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) of submitted form data.
+* When handling complex or commonly used rules, consider writing business logic as functions in a separate client library that you can specify and reuse across adaptive forms. The client library should be a self-contained library and should not have any external dependencies, except on jQuery and Underscore.js. You can also use the client library to enforce [server-side revalidation](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) of submitted form data.
 * Adaptive forms provide a set of APIs that you can use to communicate with and perform actions on adaptive forms. Some of the key APIs are as follows. For more information, see [JavaScript Library API reference for Adaptive Forms](https://adobe.com/go/learn_aemforms_documentation_63).
 
     * `guideBridge.reset()`: Resets a form.

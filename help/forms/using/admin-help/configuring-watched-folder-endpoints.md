@@ -233,8 +233,8 @@ Watched Folder output can be a single document, a list of documents, or a map of
 
 Administrators can specify the type of file that can invoke a service. Multiple file patterns can be established for each watched folder. A file pattern can be one of the following file properties:
 
-* Files with specific file name extensions; for example, &ast;.dat, &ast;.xml, &ast;.pdf,;
-* Files with specific names; for example, data.&ast;
+* Files with specific file name extensions. For example, &ast;.dat, &ast;.xml, &ast;.pdf
+* Files with specific names. For example, data.&ast;
 * Files with composite expressions in the name and extension, as in these examples:
 
     * Data[0-9][0-9][0-9].[dD][aA]'port'

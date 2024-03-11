@@ -24,7 +24,7 @@ Headless is a term used to describe systems that effectively detaches the conten
 
 Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
 
-Now, headless means that your content-set can be managed in the CMS and then accessed by one, or more, (independent) applications. 
+Now, headless means that your content-set can be managed in the CMS and then accessed by one, or more (independent) applications. 
 
 This means that your content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
 

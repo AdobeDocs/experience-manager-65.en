@@ -146,7 +146,7 @@ This scenario shows how you can add a custom property to all the asset types and
 
 1. Under property node (here geographicallocation), add a new node with name `items`. Under the items node, add a node each for the values in the drop-down. As a good practice, add the first node as blank to serve as the default value of the drop-down and an option for the user to specify no value for the field. To add multiple options/drop-down values, repeat the following steps:
 
-    1. Right-click the property node, (here geographicallocation) and select **Create** &gt; **Create Node**.
+    1. Right-click the property node (here geographicallocation) and select **Create** &gt; **Create Node**.
     1. Enter name of the field as `item1,` retain type as nt:unstructured, and click **OK**.
     1. Add the following properties to the newly created node (here item1) and then click **Save All**:
 
@@ -385,7 +385,7 @@ This scenario shows how you can add a property to a particular asset type, such 
 * Data Dictionary
 * Letter
 
-For example, only to the text assets, you want to add a property, Location of recipients, to identify which geographical area an asset is relevant to.  ![Custom property added to an asset](assets/newtabui.png)
+For example, only to the text assets, you want to add a property, Location of recipients, to identify which geographical area that an asset is relevant to.  ![Custom property added to an asset](assets/newtabui.png)
 
 To add a property to an asset type, complete the following steps:
 

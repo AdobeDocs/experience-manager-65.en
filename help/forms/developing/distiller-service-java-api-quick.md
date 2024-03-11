@@ -14,7 +14,7 @@ Java&trade; API Quick Start (SOAP) is available for the Distiller&reg; service:
 
 [Quick Start (SOAP mode): Converting a PostScript file to a PDF document using the Java&trade; API](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

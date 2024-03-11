@@ -687,8 +687,15 @@ Follow the guidelines under [How to Meet Success Criteria 2.2.1](https://www.w3.
 * Success Criterion 2.2.2
 * Level A
 * Pause, Stop, Hide: For moving, blinking, scrolling, or auto-updating information, the following are true:
-  * Moving, blinking, scrolling: For any moving, blinking, or scrolling information that (a) starts automatically, (b) lasts more than five seconds, and (c) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential;
-  * Auto-updating: For any auto-updating information that (a) starts automatically and (b) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.
+  * Moving, blinking, scrolling: For any moving, blinking, or scrolling information that
+    * (a) starts automatically,
+    * (b) lasts more than five seconds, and
+    * (C) is presented in parallel with other content,
+    there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential;
+  * Auto-updating: For any auto-updating information that
+    * (a) starts automatically, and
+    * (b) is presented in parallel with other content
+    there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.
 
 Points to note are:
 

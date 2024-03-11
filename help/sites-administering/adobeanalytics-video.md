@@ -111,7 +111,7 @@ The following table describes the default CQ variables that are provided for the
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Contains information on the segment that has been viewed for example, 2:O:4-8 </td>
+   <td>Contains information on the segment that has been viewed for example, <code>2:O:4-8</code> </td>
   </tr>
  </tbody>
 </table>
