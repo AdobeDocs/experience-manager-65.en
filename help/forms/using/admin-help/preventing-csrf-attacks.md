@@ -11,7 +11,7 @@ exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
 
 ## How CSRF attacks work {#how-csrf-attacks-work}
 
-Cross-site request forgery (CSRF) is a web site vulnerability where a valid user's browser is used to send a malicious request, possibly via an iFrame. Because the browser sends cookies on a domain basis, if the user is logged in to an application, the user's data may be compromised.
+Cross-site request forgery (CSRF) is a web site vulnerability where a valid user's browser is used to send a malicious request, possibly by way of an iFrame. Because the browser sends cookies on a domain basis, if the user is logged in to an application, the user's data may be compromised.
 
 For example, consider a scenario where you are logged in to administration console in a browser. You receive an email message containing a link. You click the link, which opens a new tab in your browser. The page that you opened contains a hidden iFrame that makes a malicious request to the Forms Server using the cookie from your authenticated AEM forms session. Because User Management receives a valid cookie, it passes the request.
 

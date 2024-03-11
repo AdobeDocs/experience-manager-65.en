@@ -14,7 +14,7 @@ Java&trade; API Quick Start(SOAP) is available for the Barcoded Forms service:
 
 [Quick Start (SOAP mode): Decoding barcoded form data using the Java&trade; API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

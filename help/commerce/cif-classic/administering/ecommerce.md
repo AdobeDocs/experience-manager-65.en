@@ -90,7 +90,7 @@ Adobe provides two versions of the Commerce Integration Framework:
  </tbody>
 </table>
 
-eCommerce, together with Product Information Management (PIM), handles the activities of a website focused on selling products via an online store:
+eCommerce, together with Product Information Management (PIM), handles the activities of a website focused on selling products by way of an online store:
 
 * Creation, lifetime, and obsolescence of a product
 * Price management
