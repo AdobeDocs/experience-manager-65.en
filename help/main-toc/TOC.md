@@ -884,7 +884,7 @@ user-guide-title: AEM 6.5
     + [Displaying components based on the template used](/help/forms/using/displaying-components-based-on-template.md)
     + [Creating custom adaptive form themes](/help/forms/using/creating-custom-adaptive-form-themes.md)
   + Transaction Reports {#transaction-reports} 
-    + [Transaction Reports](help/forms/using/transaction-reports-overview-jee-osgi.md)
+    + [Transaction Reports](/help/forms/using/transaction-reports-overview-jee-osgi.md)
       + Transaction Reports for AEM Forms on OSGi {#transaction-reports-osgi}
         + [Enable transaction reports](/help/forms/using/transaction-reports-overview.md)
         + [Viewing and understanding transaction reports](/help/forms/using/viewing-and-understanding-transaction-reports.md)

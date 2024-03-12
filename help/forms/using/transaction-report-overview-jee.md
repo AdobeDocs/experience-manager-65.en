@@ -30,7 +30,6 @@ Before you get the transaction reports, you enable transaction reporting, To ena
 >[!NOTE]
 > By default the transaction recording is disabled.
 
-
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
 -->
