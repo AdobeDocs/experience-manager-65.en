@@ -1,13 +1,14 @@
 ---
 title: Record a transaction for custom components for AEM Forms on JEE.
 description: Use the TransactionRecorder API to record transaction for custom component.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-manager
+topic-tags: forms-manager 
 feature: Transaction Reports
 ---
-# Record a transaction for custom components for AEM Forms on JEE {#record-a-transaction-for-custom-components}
+# Record a transaction for custom component API for AEM Forms on JEE {#record-a-transaction-for-custom-components}
 
-If you have your custom component for document services, you can enable transactions for your custom component. To enable transaction reporting, you modify the `component.xml` file of the component and add the following tags under operation for which transaction logging needs to be enabled.
+If you have deployed custom component, you can enable transactions reporting. To enable transaction reporting, you modify the `component.xml` file of the component and add the tag given below under the operation for which transaction reporting needs to be enabled.
+
+If you have deployed custom component, you can enable transaction reporting for the same.
 
 **Tag**: `<transaction-operation-type>CONVERT</transaction-operation-type> // Supported values are SUBMIT, CONVERT, RENDER.`
 
@@ -26,10 +27,15 @@ Steps to record the varied transaction count:
 1. Import class `"com.adobe.idp.dsc.InvocationContextStack"` in the code. The class is part of the `adobe-livecycle-client.jar` sdk file. This sdk file is available at `<AEM_Forms_JEE_Install>\sdk\client-libs\common`
 
     >[!Note] 
-    > Update the client file shared above in your client project with new the file, in case it is already bundled.
+    > Update the client file shared above in your client project with the new file, in case it is already bundled.
 
-1. Inside the API for which varied transactions need to be logged:
+1. In the API for which varied transactions need to be logged:
     1. Add logic to store the transaction count in some integer variable, such as, `transaction_count`.
     1. When the operation is successful, add `InvocationContextStack.recordTransactionCount(transaction_count)`.
+
+## Related Articles
+
+* [Enable and view transaction report on AEM Forms JEE](/help/forms/using/transaction-report-overview-jee.md)
+* [Billable APIs on AEM Forms JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
 
 

@@ -2,11 +2,10 @@
 title: Transaction Reports Billable APIs for AEM Forms on JEE.
 description: List of all the APIs that are accounted as transactions.
 topic-tags: forms-manager
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-feature: Transaction Reports
+feature: Transaction Reports 
 ---
-# Transaction Reports Billable APIs for AEM Forms on JEE{#transaction-reports-billable-apis}
+# Transaction reporting Billable APIs for AEM Forms on JEE{#transaction-reports-billable-apis}
 
 AEM Forms on JEE provides several APIs to submit, process, and render documents. Some APIs are accounted as transactions and others are free to use. This document provides a list of all the APIs that are accounted as transactions. Here are a few common scenarios where a billable API is used:
 
@@ -16,15 +15,20 @@ AEM Forms on JEE provides several APIs to submit, process, and render documents.
 
 Billing APIs does not account for the number of pages, the length of a document or form, or final format of the rendered document. A transaction report divides the transactions into three categories: Documents Rendered, Submitted, Converted.
 
-**TO CHECK AGAIN**
+<!--
 
 * **Forms Submitted:** When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an HTML5 Form, PDF Forms are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.
 
 * **Documents Rendered:** Generating a document by combining a template and data, digitally signing or certifying a document, using a billable document services API for document services, or converting a document from one format to another are accounted as documents rendered.
 
+-->
+
 >[!NOTE]
 >
-> Transaction Reports UI displays three categories: Documents Submitted, Documents Rendered, and Documents Processed.
+> * Transaction Reports UI displays three categories: Documents Submitted, Documents Rendered, and Documents Processed.
+>
+
+Below is the list of JEE billable APIs, For the list of OSGi billable APIs, visit [Transaction Reports Billable APIs for AEM Forms on OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis.html).
 
 ## Billable Document Services APIs {#billable-document-services-apis}
 
@@ -36,61 +40,51 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td><p>API</p> </td>
    <td>Description</td>
    <td>Transaction report category</td>
-   <td>Additional Information</td>
   </tr>
    <tr>
    <td><a>CreatePDF</a></td>
    <td>Creates Adobe PDF to supported file types.</td>
    <td>Conversion<br /> </td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>CreatePDF3</a></td>
    <td>Creates Adobe PDF to supported file types. </td>
    <td>Conversion<br /> </td>
-   <td> </td>
   </tr>
   <tr>
    <td><a> HtmlToPDF</a></td>
    <td>Converts HTML file to Adobe PDF. </td>
    <td>Conversion<br /> </td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
    <td>Exports PDF to supported file types. </td>
    <td>Conversion<br /> </td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>ExportPDF2</a></td>
    <td><p>Exports PDF to supported file types.</p> </td>
    <td>Conversion<br /> </td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>ExportPDF3</a></td>
    <td>Exports PDF to supported file types.</td>
    <td>Conversion<br /> </td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>HtmlFileToPDF</a></td>
    <td>Converts HTML file to PDF.</td>
    <td>Conversion<br /> </td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
    <td>Converts HTML file to PDF.</td>
    <td>Conversion<br /> </td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>OptimizePDF</a></td>
    <td>Optimizes PDF to reduce file size by stripping unnecessary metadata without affecting the quality.</td>
    <td>Conversion<br /> </td>
-   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -103,13 +97,11 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td><p>API</p> </td>
    <td>Description</td>
    <td>Transaction report category</td>
-   <td>Additional Information</td>
   </tr>
   <tr>
    <td><a>Sign/Certify</a><br /> </td>
    <td>This API enables you to secure your document. You can use the API to sign and certify a PDF document.</td>
    <td>Conversion</td>
-   <td><!--Only sign and certify operation of the secureDocument are billed.--></td>
   </tr>
  </tbody>
 </table>
@@ -123,20 +115,17 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td><p>API</p> </td>
    <td>Description</td>
    <td>Transaction report category</td>
-   <td>Additional Information</td>
   </tr>
   <tr>
   <tr>
    <td><a>CreatePDF</a></td>
    <td>Creates Adobe PDF from supported file types.</td>
    <td>Conversion</td>
-   <td></td>
   </tr>
   <tr>
    <td><a>CreatePDF2</a></td>
    <td>Creates Adobe PDF from supported file types.</td>
    <td>Conversion</td>
-   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -172,43 +161,36 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td><p>API</p> </td>
    <td>Description</td>
    <td>Transaction report category</td>
-   <td>Additional Information</td>
   </tr>
   <tr>
    <td><a>generateOutput</a></td>
    <td>Merges data and templates to create a PDF document.</td>
    <td>Documents Rendered</td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>generatePDFOutput</a></td>
    <td>Merges data and templates to create a PDF document.</td>
    <td>Documents Rendered</td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>generatePDFOutput2</a></td>
    <td>Merges data and templates to create a PDF document.</td>
    <td>Documents Rendered</td>
-   <td></td>
   </tr>
   <tr>
    <td><a>generatePrintedOutput</a></td>
    <td>Converts XDP and PDF documents to PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td>
    <td>Documents Rendered</td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>generatePrintedOutput2</a></td>
    <td>Converts XDP and PDF documents to PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td>
    <td>Documents Rendered</td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>transformPDF</a></td>
    <td>Converts a set of XDP and PDF documents to a set of PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td>
    <td>Documents Conversion</td>
-   <td></td>
   </tr>
  </tbody>
 </table>
@@ -248,37 +230,21 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td><p>API</p> </td>
    <td>Description</td>
    <td>Transaction report category</td>
-   <td>Additional Information</td>
-  </tr>
-  <tr>
-   <td><a>toImage</a></td>
-   <td>Converts a PDF document to a list of image documents. Supported image formats are JPEG, JPEG2K, PNG, and TIFF.</td>
-   <td>Documents Conversion</td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>toImage2</a></td>
    <td>Converts a PDF document to a list of image documents. Supported image formats are JPEG, JPEG2K, PNG, and TIFF.</td>
    <td>Documents Conversion</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a>toPS</a></td>
-   <td>Converts a Flat PDF file to PostScript format using the options specified in the option spec.</td>
-   <td>Documents Conversion</td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>toPS2</a></td>
    <td>Converts a Flat PDF file to PostScript format using the options specified in the option spec.</td>
    <td>Documents Conversion</td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>toSWF</a></td>
    <td>Converts a Flat PDF file to SWF format using the options specified in the option spec.</td>
    <td>Documents Conversion</td>
-   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -291,13 +257,11 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td><p>API</p> </td>
    <td>Description</td>
    <td>Transaction report category</td>
-   <td>Additional Information</td>
   </tr>
   <tr>
    <td><a>decode</a></td>
    <td>Decodes all the barcodes in a Document object and returns an org.w3c.dom.Document object that contains data that was retrieved from the barcode.</td>
    <td>Documents Conversion</td>
-   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -310,41 +274,31 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td><p>API</p> </td>
    <td>Description</td>
    <td>Transaction report category</td>
-   <td>Additional Information</td>
   </tr>
   <tr>
    <td><a>invoke</a></td>
    <td>Executes the specified DDX document and returns an AssemblerResult object containing the resultant documents. </td>
    <td>Documents Conversion</td>
-   <td><!--The following operations are not accounted as transactions:
-    <ul>
-     <li>Creating packages or portfolio</li>
-     <li>Stitching multiple XDPs </li>
-    </ul>--></td>
   </tr>
   <tr>
    <td><a>invokeDDX</a></td>
    <td>Executes the specified DDX document and returns an AssemblerResult object containing the resultant documents. </td>
    <td>Documents Conversion</td>
-   <td><!--All the input file formats that PDF Generator, Forms, and Output services support, Assembler service supports all those formats as output file formats.--></td>
   </tr>
   <tr>
    <td><a>invokeOneDocument</a></td>
    <td>Convert a specified document to PDF/A using the options specified.</td>
    <td>Documents Conversion</td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>invokeDDXOneDocument</a></td>
    <td>Convert a specified document to PDF/A using the options specified.</td>
    <td>Documents Conversion</td>
-   <td> </td>
   </tr>
   <tr>
    <td><a>toPDFA</a></td>
    <td>Convert a specified document to PDF/A using the options specified.</td>
    <td>Documents Conversion</td>
-   <td> </td>
   </tr>
  </tbody>
 </table>
@@ -440,84 +394,46 @@ The invoke API's usage is counted as a transaction, when you perform one or more
    <td><p>API</p> </td>
    <td>Description</td>
    <td>Transaction report category</td>
-   <td>Additional Information</td>
   </tr>
   <tr>
    <td>exportData</td>
    <td>Submits form.</td>
    <td>Forms Submitted</td>
-   <td>
-    <!--<ul>
-     <li> Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form. </li>
-    </ul>--></td>
   </tr>
   <tr>
    <td>exportData2</td>
    <td>Submits form.</td>
    <td>Forms Submitted</td>
-   <td>
-    <!--<ul>
-     <li><!--Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li>
-    </ul>--></td>
   </tr>
   <tr>
    <td>renderForm</td>
    <td>Submits form.</td>
    <td>Forms Rendered</td>
-   <td>
-    <!--<ul>
-     <li>Renders an adaptive form.</li>
-    </ul>--></td>
   </tr>
   <tr>
    <td>renderHTMLForm</td>
    <td>Submits form.</td>
    <td>Forms Rendered</td>
-   <td>
-    <!--<ul>
-     <li>Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li>
-     <li>Every form in an HTML5 Forms form set accounts as a separate transaction. </li>
-    </ul>--></td>
   </tr>
   <tr>
    <td>renderHTMLForm2</td>
    <td>Submits form.</td>
    <td>Forms Rendered</td>
-   <td>
-    <!--<ul>
-     <li>Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li>
-     <li>Every form in an HTML5 Forms form set accounts as a separate transaction. </li>
-    </ul>--> </td>
   </tr>
   <tr>
    <td>renderPDFForm</td>
    <td>Submits form.</td>
    <td>Forms Rendered</td>
-   <td>
-    <!--<ul>
-     <li>Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li>
-     <li>Every form in an HTML5 Forms form set accounts as a separate transaction. </li>
-    </ul> --> </td>
   </tr>
   <tr>
    <td>renderPDFForm2</td>
    <td>Submits form.</td>
    <td>Forms Rendered</td>
-   <td>
-    <!--<ul>
-     <li>Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li>
-     <li>Every form in an HTML5 Forms form set accounts as a separate transaction. </li>
-    </ul> --></td>
   </tr>
   <tr>
    <td>renderPDFFormWithUsageRights</td>
    <td>Submits form.</td>
    <td>Forms Rendered</td>
-   <td>
-    <!--<ul>
-     <li>Using the adaptive form within an adaptive form (Adaptive form formset) accounts only single transaction. You can have any number of adaptive forms within an adaptive form.</li>
-     <li>Every form in an HTML5 Forms form set accounts as a separate transaction. </li>
-    </ul> --></td>
   </tr>
  </tbody>
 </table>
@@ -621,3 +537,8 @@ Actions like submitting a PDF Form, using Agent UI to preview an interactive com
 * [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
 
 -->
+
+## Related Articles
+
+* [Enable and view transaction report on AEM Forms JEE](/help/forms/using/transaction-report-overview-jee.md)
+* [Record a custom implementation on AEM Forms JEE](/help/forms/using/record-transaction-custom-component-jee.md)

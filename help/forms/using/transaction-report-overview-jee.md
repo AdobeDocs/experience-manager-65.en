@@ -2,17 +2,16 @@
 title: Transaction Reports Overview for AEM Forms on JEE
 description: Keep a count of all the forms submitted, interactive communication rendered, Documents converted to one format to another, and more
 topic-tags: forms-manager
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 ---
-# Transaction Reports Overview for AEM Forms on JEE{#transaction-reports-overview}
+# Transaction reports overview for AEM forms on JEE{#transaction-reports-overview}
 
-Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
 * Submission of a document
 * Rendition of a document
-* Conversion of a document from one file format to another
+* Conversion of a document from one file format to another 
 
 For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.
 
@@ -26,6 +25,7 @@ Before you get the transaction reports, you enable transaction reporting, To ena
     ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1.	Restart the server.
+1. Apart from the changes on server, on client side you would need to update the `adobe-livecycle-client.jar` in your project, if you are using the one.
 
 > [!NOTE]
 > * By default the transaction recording is disabled.
@@ -39,7 +39,7 @@ Before you get the transaction reports, you enable transaction reporting, To ena
 
 ## Transaction Report {#transaction-report}
 
-When you enable transaction reporting, the information about the transaction counts becomes accessible through transaction dashboard and a detailed transaction log are accessible via a log file relative to the server start context path. Both are explained below:
+When you enable transaction reporting, the information about the transaction counts becomes accessible through the transaction dashboard and a detailed transaction log are accessible via a log file relative to the server start context path. Both are explained below:
 
 ### Transaction report via dashboard {#transaction-report-dashboard}
 
@@ -49,13 +49,13 @@ It provides total number of transactions count for each type of transaction. For
 1. Login with the default administrator and password.
 1. Click Health Monitor.
 1. Navigate to **Transaction Reporter** tab, click **Calculate Total Transactions**.
-1. You see that a pie chart shows the number of forms - submitted, rendered, converted, as shown in the image.
+1. You see that a pie chart shows the number of document - submitted, rendered, or converted, as shown in the image.
 
 ![sample-transaction-report-jee](assets/transaction-piechart.png)
 
 ### Transaction report via log file {#transaction-report-logfile} 
 
-It provides a detailed information about each transaction. To access transaction logs, follow the context path relative to server startup. Transactions are captured in a separate log file `transaction_log.log` by default. The **file path** is relative to the server start context as given below:
+It provides a detailed information about each transaction. To access transaction logs, follow the context path relative to server startup. Transactions are captured in a separate log file `transaction_log.log` by default. The **file path** is relative to the server start context. The default sample path for different servers are given below:
 
 ```
 For Jboss Turnkey:
@@ -68,16 +68,12 @@ For Oracle Weblogic:
 "<Weblogic_Domain_path>/transaction_log.log"
 
 For Jboss Cluster:
-"<Jboss>/domain/transaction_log.log"
+"<Jboss home>/transaction_log.log"
 
 ```
 
 Example of a sample transaction log:
 `[2024-02-28 06:11:27] [INFO] TransactionRecord{service=‘GeneratePDFService’, operation=‘HtmlFileToPDF’, internalService=‘GeneratePDFService’, internalOperation=‘HtmlFileToPDF’, transactionOperationType=‘CONVERT’, transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
-
-
->[!NOTE]
-> * User can define their own server context path also.
 
 ### Transaction Record {#transaction-record-structure-jee}
 
@@ -102,9 +98,9 @@ TransactionRecord
 * **internalService**: Name of the callee in case of an internal call, otherwise same as the service name.
 * **internalOperation**: Name of the callee in case of an internal call, otherwise same as the operation name.
 * **transactionOperationType**: Type of transaction (SUBMIT, RENDER, CONVERT).
-* **transactionCount**: Total count of transactions.
-* **elapsedTime**: Time between the call initiation and response received by the Transaction Interceptor.
-* **transactionDate**: Timestamp indicating when the service was invoked by the Transaction Interceptor.
+* **transactionCount**: Total count of transaction.
+* **elapsedTime**: Time between the call initiation and response received.
+* **transactionDate**: Timestamp indicating when the service was invoked.
 
 **Sample transaction log**:
 
@@ -126,12 +122,9 @@ TransactionRecord
 
 Transaction persistence involves updating the total transaction count for SUBMIT, CONVERT, and RENDER operations on the server periodically:
 
-* The transaction count is updated on the dashboard periodically, default is set to 1 minute. The update frequency can be modified, by setting the system property at `"com.adobe.idp.dsc.transaction.recordFrequency"`
+* The transaction count is updated on the dashboard periodically, default is set to 1 minute. You can update the frequency by setting the system property at `"com.adobe.idp.dsc.transaction.recordFrequency"`
 
 * In transaction logs, the update occurs instantly.
-
->[!NOTE]
-> Before you update the record frequency, update the `adobe-livecycle-client.jar` in your existing client project.
 
 <!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 
@@ -159,5 +152,5 @@ The transaction count is reverse replicated from publish instances to author or 
 
 ## Related Articles {#related-articles}
 
-* [Transaction Reports Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md)
-* [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation-jee.md)
+* [Billable APIs on AEM Forms JEE](../../forms/using/transaction-reports-billable-apis-jee.md)
+* [Record a transaction for custom implementations on AEM Forms JEE](/help/forms/using/record-transaction-custom-implementation-jee.md)
