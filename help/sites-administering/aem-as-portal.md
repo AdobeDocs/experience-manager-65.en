@@ -607,7 +607,7 @@ When implementing such a service, make sure to set the **service.ranking** prope
 | **Name** |**Description** |**Default Behavior** |
 |---|---|---|
 | Authenticator |Provides the authentication information to AEM |Uses a configurable technical user for both author and publish. Or SSO can be used. |
-| HTMLRewriter |Rewrites links, images, and so on |Rewrites AEM links to portal links, can be extended by a UrlMapper and a TextMapper |
+| HTMLRewriter |Rewrites links and mages |Rewrites AEM links to portal links, can be extended by a UrlMapper and a TextMapper |
 | HttpClientService |Handles all http connections |Standard implementation |
 | LocaleHandler |Handles the locale info |Rewrites a link to the content with respect to the locale. |
 | LocaleDetector |Detects the locale of the user. |Uses the locale provided by the portal. |

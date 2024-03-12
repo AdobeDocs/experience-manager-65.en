@@ -34,7 +34,7 @@ Java API Quick Start(SOAP) is available for the Output service.
 
 [Quick Start (SOAP mode): Transforming a PDF document using the Java API](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

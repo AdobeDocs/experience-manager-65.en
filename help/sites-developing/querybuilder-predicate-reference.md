@@ -568,7 +568,7 @@ Does not support facet extraction.
 
 * **all**
 
-  (bool) Search entire tag fulltext, that is, all titles, description, and so on (takes precedence over "l `ang`").
+  (bool) Search entire tag fulltext, that is, all titles, description, and so on. Takes precedence over "l `ang`".
 
 ### type {#type}
 

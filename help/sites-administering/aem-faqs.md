@@ -20,12 +20,6 @@ With binary-less mode enabled, the content packages distributed contain referenc
 To enable binary-less distribution, deploy with a shared blob store.
 Check the `useBinaryReferences` property in the OSGI configuration with the factory PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* that your agent is using.
 
-#### How can I customize the error messages while navigating page hierarchy in AEM sites console? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
-
-Check the Network panel (of Chrome browser) where a personal setup (JS has not been minified).
-
-View the `Initiator` column to determine what the initiator of a request was. It provides the files and the line numbers from where the AJAX calls are made. Later, you can trace the error handling function and change the error message as per your requirement.
-
 #### How to enable permissions while creating Language Copy for Content-Authors in AEM? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
 To create language copy feature, content-authors need permissions at `/content/projects` location.
@@ -81,11 +75,11 @@ See [Understanding Reasons to Upgrade AEM](https://helpx.adobe.com/experience-ma
 
 If the user, uploading the movie files does not have delete permissions under asset node, the delete chunk nodes fail and the upload restarts.
 
-#### What are the default settings for OOTB configurations while creating Language Copy? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### What are the default settings for out-of-the-box configurations while creating Language Copy? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 When you create a language copy through Touch UI (**References** > **Update Language Copy**), a new DAM folder is created under the new language and assets are referenced from there.
 
-This is default setting for OOTB configurations. You can set **Translate Page Assets** = **Do not translate** in Translation configurations.
+This is default setting for out-of-the-box configurations. You can set **Translate Page Assets** = **Do not translate** in Translation configurations.
 For AEM 6.4, **Tools** &gt; **Cloud Services** &gt; **Translation Cloud services**.
 
 #### How to disable an AEM component causing exponential growth for the AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

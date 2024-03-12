@@ -1,14 +1,10 @@
 ---
 title: SharePoint Connector
-
 description:  Day JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013, version 4.0.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
 ---
@@ -202,7 +198,7 @@ Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 1. Click OSGI > Configuration
 1. Search "Day JCR Connector for Microsoft Sharepoint"
 1. Click "Edit the configuration values"
-1. Set the value of ‘Sharepoint Connection Factory’ as ‘com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory’
+1. Set the value of 'Sharepoint Connection Factory' as 'com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory'
 1. Click **Save**.
 
 **Configuring Basic Authentication (Windows)**
@@ -217,7 +213,7 @@ Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 
 Only a user who is authenticated on both AEM and SharePoint can access the SharePoint content through the connector.
 
-You can also use the connector extension for authentication to create a custom authentication module, which, for example,, maps access by AEM users to specific SharePoint users. Create AEM users corresponding to SharePoint users (user name and password should match) to be able to see SharePoint content mapped to the connector instance.
+You can also use the connector extension for authentication to create a custom authentication module, which, for example, maps access by AEM users to specific SharePoint users. Create AEM users corresponding to SharePoint users (user name and password should match) to be able to see SharePoint content mapped to the connector instance.
 
 To create a user in AEM:
 
@@ -233,8 +229,8 @@ To create a user in AEM:
 To add the user in the admin group:
 
 1. Go to Group Administration.
-1. Click the ‘a’ node.
-1. Click ‘administrators’.
+1. Click the 'a' node.
+1. Click 'administrators'.
 1. Type the user ID create above in the text box before **Browse** button.
 1. Click the Green tick symbol to add the user to admin group.
 

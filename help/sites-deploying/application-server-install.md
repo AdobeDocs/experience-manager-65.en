@@ -169,7 +169,7 @@ This uses a simple Server Layout with only an Admin Server.
   * uncomment sling.home initial parameter and set this path as you need (see General Description)
   * Repack web.xml file
 
-* Deploy AEM war file as an Application, (for the other settings use the default settings)
+* Deploy AEM war file as an Application (for the other settings, use the default settings)
 * The installation can take time...
 * Check that the installation has finished as mentioned above in the General Description (for example, tailing the error.log)
 * You can change the context root in the Configuration tab of the web application in the WebLogic `/console`

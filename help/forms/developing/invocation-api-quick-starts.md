@@ -103,7 +103,7 @@ The following Quick Starts are available for programmatically invoking AEM Forms
  </tbody>
 </table>
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

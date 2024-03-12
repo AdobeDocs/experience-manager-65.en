@@ -51,7 +51,7 @@ AEM [!DNL Forms] provides many components to display information on an adaptive 
 
 1. Select Image. The toolbar appears. Select ![cmppr](assets/cmppr.png). The properties browser opens on the left of the screen. **[!UICONTROL Browse]** and upload the logo image. Select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). The image appears on the header.
 
-   You can select Get file to download the logo used in this article if you don't have one.
+   You can select Get file to download the logo used in this article if you do not have one.
 
    [Get File](assets/logo.png)
 

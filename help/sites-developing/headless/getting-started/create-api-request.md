@@ -19,7 +19,7 @@ The remainder of this guide focuses on GraphQL access and Content Fragment deliv
 
 ## How to Deliver a Content Fragment Using GraphQL {#how-to-deliver-a-content-fragment}
 
-Information architects must design queries for their channel endpoints to deliver content. These queries only must be considered once per endpoint per model. For the purposes of this getting started guide, you only must create one.
+Information architects must design queries for their channel endpoints to deliver content. These queries must only be considered once per endpoint per model. For the purposes of this getting started guide, you must only create one.
 
 1. Log into AEM and access the [GraphiQL interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * For example: `http://<host>:<port>/aem/graphiql.html`.

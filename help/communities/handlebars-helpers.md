@@ -129,7 +129,7 @@ A helper to return a formatted date string.
 
 * **format**: String
 
-  (Optional) The date format to apply. Default is "YYYY-MM-DDTHH:mm:ss.sssZ" and the result appears as "2015-03-18T18:17:13-07:00"
+  (Optional) The date format to apply. Default is "`YYYY-MM-DDTHH:mm:ss.sssZ`" and the result appears as "`2015-03-18T18:17:13-07:00`"
 
 ### Examples {#examples-1}
 

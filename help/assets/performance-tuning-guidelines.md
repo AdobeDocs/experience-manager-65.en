@@ -121,7 +121,7 @@ Primarily, your network optimization strategy depends upon the amount of bandwid
 
 ### Transient workflows {#transient-workflows}
 
-Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. The setting significantly reduces the overheads required to process workflows because, in this case, workflows need not pass through the normal tracking and archival processes.
+Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. The setting significantly reduces the overheads required to process workflows because, in this case, workflows do not need to pass through the normal tracking and archival processes.
 
 1. Navigate to `/miscadmin` in the [!DNL Experience Manager] deployment at `https://[aem_server]:[port]/miscadmin`.
 

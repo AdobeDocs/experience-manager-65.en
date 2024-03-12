@@ -134,7 +134,7 @@ The recommended values are :
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3, the above two parameters are preconfigured OOTB, and can be persisted via the OSGi QueryEngineSettings.
+In AEM 6.3, the above two parameters are preconfigured out-of-the-box, and can be persisted via the OSGi QueryEngineSettings.
 
 More information available under : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -397,7 +397,7 @@ The following detail possible issues together with resolutions:
 
 ### Text Pre-extraction of Binaries {#text-pre-extraction-of-binaries}
 
-Text pre-extraction is the process of extracting and processing text from binaries, directly from the Data Store via an isolated process, and directly exposing the extracted text to subsequent re/indexings of Oak indexes.
+Text pre-extraction is the process of extracting and processing text from binaries, directly from the Data Store by way of an isolated process, and directly exposing the extracted text to subsequent re/indexings of Oak indexes.
 
 * Oak text pre-extraction is recommended for re/indexing Lucene indexes on repositories with large volumes of files (binaries) that contain extractable text (for example, PDFs, Word Docs, PPTs, TXT, and so on) that qualify for full-text search via deployed Oak indexes; for example, `/oak:index/damAssetLucene`.
 * Text pre-extraction only benefits the re/indexing of Lucene indexes, and NOT Oak property indexes, since property indexes do not extract text from binaries.

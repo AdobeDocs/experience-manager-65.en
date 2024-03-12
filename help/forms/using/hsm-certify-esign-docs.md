@@ -46,6 +46,10 @@ By default, the DocAssurance service is not enabled. Perform the following steps
 1. Save and close the sling.properties file.
 1. Restart the AEM instance.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 <!--
 
 ## Set up certificates for Reader extensions {#set-up-certificates-for-reader-extensions}
@@ -223,8 +227,8 @@ public class Sign{
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
 
-             //retrieve specifications for each of the services, you may pass null if you don't want to use that service
-             //as we don't want encryption in this case, passing null for Encryption Options
+             //retrieve specifications for each of the services, you may pass null if you do not want to use that service
+             //as we do not want encryption in this case, passing null for Encryption Options
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     outDoc = docAssuranceService.secureDocument(inDoc, null, getSignatureOptions(alias,resourceResolver),null,null);
         }

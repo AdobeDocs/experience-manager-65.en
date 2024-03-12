@@ -100,7 +100,7 @@ A headless project is not only successful because of the technology implemented,
 * Group similar content into a folder.
   * It is more likely that a content author will copy and paste exiting content to create new content. Therefore having this done in the same folder makes it more efficient.
   * AEM permits allowed models to be set per folder so the **Create new** button will only show the models that are supported in that location.
-* In-line Content Fragment editor creation of new Content Fragments can be simplified if the root folder is set in the model. Then the practitioner doesn't have to choose a location, but just needs to provide a name and can start edit the new reference.
+* In-line Content Fragment editor creation of new Content Fragments can be simplified if the root folder is set in the model. Then the practitioner does not have to choose a location, but just needs to provide a name and can start edit the new reference.
 
 ### Authoring Content {#authoring}
 

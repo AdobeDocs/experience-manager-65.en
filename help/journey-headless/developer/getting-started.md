@@ -200,7 +200,7 @@ Content Fragment names must be descriptive for content authors. AEM transparentl
 
 See the [additional resources](#additional-resources) section for additional documentation on AEM page naming conventions.
 
-##### Don't Overextend Content Nesting {#content-nesting}
+##### Do not Overextend Content Nesting {#content-nesting}
 
 [Content Fragments](#content-fragments) are used in AEM to create headless content. AEM supports up to ten levels of content nesting for Content Fragments. However it is important to keep in mind that AEM  must iteratively resolve each reference defined in the parent Content Fragment, then check if there are any child references in all siblings. These operations can add up quickly and become a performance concern.
 
@@ -252,7 +252,7 @@ To understand traffic and traffic patterns start with gathering what you know fr
 Often different sections of experiences have different frequencies of content updates. Understanding this is important to be able to fine-tune CDN and cache configurations. This is also important input for the [Content Architects](#content-architects) as they design models to represent your content. Consider:
 
 * Must some types of content expire after a certain period?
-* Are there elements that are user-specific and thus can't be cached?
+* Are there elements that are user-specific and thus cannot be cached?
 
 ## What's Next {#what-is-next}
 

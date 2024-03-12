@@ -277,7 +277,7 @@ Perform the following steps to configure a document of record for adaptive forms
 
 1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options:
 
-   **None** Select this option if you don't want to configure document of record for the form.
+   **None** Select this option if you do not want to configure document of record for the form.
 
    **Associate Form Template as Document of Record Template** Select this option if you have an XDP file that you want to use as a template for the document of record. On selecting this option, all XDP files available in AEM Forms repository are displayed. Select the appropriate file.
 
@@ -446,7 +446,7 @@ To apply the second master page properties to a panel and the third master page 
 
 >[!NOTE]
 >
-> You can not apply multiple master pages to a Document of Record for an adaptive form Fragment.
+> You cannot apply multiple master pages to a Document of Record for an adaptive form Fragment.
 
 ## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 
@@ -456,3 +456,57 @@ Keep in mind the following considerations and limitations when working on docume
 * Document fragments in an adaptive form do not appear in the document of record. However, adaptive form fragments are supported.
 * Content binding in document of record generated for XML Schema based adaptive form is not supported.
 * Localized version of document of record is created on demand for a locale when the user requests the rendering of the document of record. Localization of document of record occurs along with localization of adaptive form. For more information on localization of document of record and adaptive forms see [Using AEM translation workflow to localize adaptive forms and document of record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+
+## Use a custom XCI file
+
+An XCI file helps you set various properties of a document. <!-- Forms as a Cloud Service has a master XCI file.--> You can use a custom XCI file to override one or more default properties specified in the your existing XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
+
+|XCI option|Description|
+|--- |--- |
+|config/present/pdf/creator|Identifies the document creator using the Creator entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/).|
+|config/present/pdf/producer|Identifies the document producer using the Producer entry in the Document Information dictionary. For information about this dictionary, see the [PDF Reference guide](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/).|
+|config/present/layout|Controls whether the output is a single panel or paginated.|
+|config/present/pdf/compression/level|Specifies the degree of compression to use when generating a PDF document.|
+|config/present/pdf/fontInfo/embed|Controls font embedding in the output document.|
+|config/present/pdf/scriptModel|Controls whether XFA-specific information is included in the output PDF document.|
+|config/present/common/data/adjustData|Controls whether the XFA application adjusts the data after merging.|
+|config/present/pdf/renderPolicy|Controls whether the generation of page content is done on the server or deferred to the client.|
+|config/present/common/locale|Specifies the default locale used in the output document.|
+|config/present/destination|When contained by a present element, specifies the output format. When contained by an openAction element, specifies the action to perform upon opening the document in an interactive client.|
+|config/present/output/type|Specifies either the type of compression to apply to a file or the type of output to produce.|
+|config/present/common/temp/uri|Specifies the Form URI.|
+|config/present/common/template/base|Supplies a base location for URIs in the form design. When this element is absent or empty, the location of the form design is used as the base.|
+|config/present/common/log/to|Controls the location that log data or output data is written to.|
+|config/present/output/to|Controls the location that log data or output data is written to.|
+|config/present/script/currentPage|Specifies the initial page when the document is opened.|
+|config/present/script/exclude|Informs Forms as a Cloud Service which events to ignore.|
+|config/present/pdf/linearized|Controls whether the output PDF document is linearized.|
+|config/present/script/runScripts|Controls which set of scripts Forms as a Cloud Service executes.|
+|config/present/pdf/tagged|Controls the inclusion of tags into the output PDF document. Tags, in the context of PDF, are additional information included in a document to expose the logical structure of the document. Tags assist accessibility aids and reformatting. For example, a page number may be tagged as an artifact so that a screen reader does not enunciate it in the middle of the text. Although tags make a document more useful, they also increase the size of the document and the processing time to create it.|
+|config/present/pdf/fontInfo/alwaysEmbed|Specifies a font that is embedded into the output document.|
+|config/present/pdf/fontInfo/neverEmbed|Specifies a font that must never be embedded into the output document.|
+|config/present/pdf/pdfa/part|Specifies the version number of the PDF/A specification that the document conforms to.|
+|config/present/pdf/pdfa/amd|Specifies the amendment level of the PDF/A specification.|
+|config/present/pdf/pdfa/conformance|Specifies the conformance level with the PDF/A specification.|
+|config/present/pdf/version|Specifies the version of PDF document to generate|
+|config/present/pdf/version/map|Specifies the fall back fonts for the document|
+
+
+<!--
+
+### Use a custom XCI file in your AEM Forms environment
+
+  1. Add the custom XCI file to your development project.
+  1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
+  1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
+  
+-->
+
+### Use a custom XCI file in your local Forms development environment
+
+  1. Upload the XCI file to your local development environment.
+  1. Open <!--Cloud Service SDK--> configuration manager. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+  1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
+  1. Specify path of the XCI file and click **[!UICONTROL Save]**.
+
+  
