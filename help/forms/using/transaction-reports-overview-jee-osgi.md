@@ -14,7 +14,7 @@ Transaction reports within AEM Forms allow you to monitor all transactions since
 * Submission and rendition of a document
 * Conversion of a document from one file format to another
 
-For a detailed instruction about enabling transactions, billable APIs, and custom implementations, Based on your AEM Forms technology stack, you can visit:
+You can refer to the following for comprehensive instructions on how to enable transactions, billable APIs, and custom implementations based on your AEM Forms technology stack:
 
 **Transaction reports for AEM Forms on JEE**
 
