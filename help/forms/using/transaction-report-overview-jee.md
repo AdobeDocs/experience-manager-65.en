@@ -27,8 +27,8 @@ Before you get the transaction reports, you enable transaction reporting, To ena
 1. Restart the server.
 1. Apart from the changes on server, on client side you would need to update the `adobe-livecycle-client.jar` in your project, if you are using the same.
 
-> [!NOTE]
-> * By default the transaction recording is disabled.
+>[!NOTE]
+> By default the transaction recording is disabled.
 
 
 <!--
