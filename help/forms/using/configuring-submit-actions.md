@@ -1,11 +1,8 @@
 ---
 title: Configuring the Submit action
-
 description: Forms lets you configure a submit action to define how an adaptive form is processed after submission. You can use built-in submit actions or write your own from scratch.
-
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
@@ -137,7 +134,7 @@ For more information about the Forms Portal and submit action, see [Drafts and s
 
 The **[!UICONTROL Invoke an AEM Workflow]** Submit Action associates an Adaptive Form with an [AEM Workflow](/help/sites-developing/workflows-models.md). When a form is submitted, the associated workflow starts automatically on the Author instance. You can save the data file, attachments, and Document of Record to the folder relative or under the payload of the workflow or to a variable. If the workflow is marked for external data storage then the variable option is available and not the payload option. You can select from the list of variables available for the workflow model. If the workflow is marked for external data storage at a later stage and not at the time of workflow creation, then ensure that the required variable configurations are in place.
 
-Before using the **Invoke an AEM Workflow** submit action, [configure the Experience Manager DS settings](../../forms/using/configuring-the-processing-server-url-.md). For information about creating an AEM Workflow, see [Form-centric workflows on OSGi](../../forms/using/aem-forms-workflow.md).
+Before using the **Invoke an AEM Workflow** submit action, [configure the Experience Manager DS settings](../../forms/using/configuring-the-processing-server-url.md). For information about creating an AEM Workflow, see [Form-centric workflows on OSGi](../../forms/using/aem-forms-workflow.md).
 
 The Submit Action places the following at the payload location of the workflow. However, note that only the Variable option is displayed if the workflow model is marked for external data storage, and not the payload option.
 
@@ -232,7 +229,7 @@ The server-side revalidation feature provides the ability to also run the valida
 
 ### What to validate on Server? {#what-to-validate-on-server-br}
 
-All out of the box (OOTB) field validations of an adaptive form that are rerun at the server are:
+All out-of-the-box field validations of an adaptive form that are rerun at the server are:
 
 * Required
 * Validation Picture Clause

@@ -93,17 +93,17 @@ To enable and configure caching adaptive forms on Dispatcher, perform the follow
             /glob "*"
             /type "allow"
       }
-      ## Don't cache csrf login tokens
+      ## Do not cache csrf login tokens
       /0001 {
             /glob "/libs/granite/csrf/token.json"
             /type "deny"
       }
-      ## Don't cache IC - print channel
+      ## Do not cache IC - print channel
       /0002 {
             /glob "/content/forms/**/channels/print.html"
             /type "deny"
       }
-      ## Don't cache IC - web channel
+      ## Do not cache IC - web channel
       /0003 {
             /glob "/content/forms/**/channels/web.html"
             /type "deny"

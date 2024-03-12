@@ -29,10 +29,7 @@ There are several Adobe Campaign Classic (ACC) versions. The support for integra
 |ACC Version|Integration with AEM 6.5 <br>On Premises|Integration with AEM 6.5<br>AMS|
 |---|---|---|
 |[v7](https://experienceleague.adobe.com/docs/campaign-classic.html)|Supported|Supported|
-|[v8](https://experienceleague.adobe.com/docs/campaign-v8.html)|Supported|Supported|
-|Web UI*|Supported|Supported|
-
-*The Web UI for Adobe Campaign Classic is anticipated by the end of 2023.
+|[v8 Client Console](https://experienceleague.adobe.com/docs/campaign-v8.html)|Supported|Supported|
 
 The following documentation describes how to integrate AEM with Adobe Campaign Classic.
 

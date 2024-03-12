@@ -149,8 +149,8 @@ This section contains details and instructions on the post-deployment configurat
 
 1. Configure the service to connect to the SMTP server of your choice:
 
-    1. **SMTP Server hostname**: for example, (smtp.gmail.com)
-    1. **Server Port**: for example, (465) for gmail using SSL
+    1. **SMTP Server hostname**: for example (smtp.gmail.com)
+    1. **Server Port**: for example (465) for gmail using SSL
     1. **SMTP User:** demo@ &lt;companyname&gt; .com
     1. **"From" Address**: aemformsdemo@adobe.com
 
@@ -307,6 +307,10 @@ Once the cloud configuration is complete, you may want to test the form data mod
    >[!NOTE]
    >
    >It has been reported that an AEM Server restart was required for the Data Source to successfully bind to the FDM.
+
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
 #### Testing the Forms Data Model (Derby) {#test-fdm-derby}
 

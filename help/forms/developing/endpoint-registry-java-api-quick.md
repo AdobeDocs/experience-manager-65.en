@@ -30,7 +30,7 @@ Java&trade; API Quick Start(SOAP) is available for the Endpoint Registry.
 
 [QuickStart: Retrieving endpoint connector information using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

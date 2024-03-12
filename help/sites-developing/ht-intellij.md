@@ -102,7 +102,7 @@ IntelliJ IDEA must understand where to find the JSPs for debugging. Because IDEA
 1. Hit the **+** and select **JSR45 Remote**
 1. In the configuration dialog, select **Configure** next to **Application Server** and configure a Generic server
 1. Set the start page to an appropriate URL if you want to open a browser when you start debugging
-1. Remove all **Before launch** tasks if you use vlt autosync, or configure appropriate Maven tasks if you don't
+1. Remove all **Before launch** tasks if you use vlt autosync, or configure appropriate Maven tasks if you do not
 1. On the **Startup/Connection** pane, adjust the port, if necessary
 1. Copy the command-line arguments that IntelliJ IDEA proposes
 

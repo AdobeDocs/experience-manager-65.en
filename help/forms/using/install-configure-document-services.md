@@ -300,6 +300,10 @@ You can enable a non-administrator user to use the PDF Generator service. Normal
 1. Set value of the environment variable to TRUE.
 1. Restart the AEM Forms instance.
 
+>[!NOTE]
+>
+> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ### (Windows Only) Disable User Account Control (UAC) {#disable-user-account-control-uac}
 
 1. To access the System Configuration Utility, go to **[!UICONTROL Start &gt; Run]** and then enter **[!UICONTROL MSCONFIG]**.
@@ -551,11 +555,11 @@ The Assembler service depends on the Reader Extensions service, Signature servic
  </tbody>
 </table>
 
-### (Windows only) Configure registry entry for Microsoft® Project {#configure-registry-entry-for-microsoft-project}
+### (Windows only) Configure registry entry for Microsoft&reg; Project {#configure-registry-entry-for-microsoft-project}
 
-After you install AEM Forms add-on and Microsoft® Project on your machine, Register an entry for Microsoft® Project in the 64-bit location. It facilitates the execution of Project to PDFG conversions tests. Following are the steps outlining the process for registry entry:
+After you install AEM Forms add-on and Microsoft&reg; Project on your machine, Register an entry for Microsoft&reg; Project in the 64-bit location. It facilitates the execution of Project to PDFG conversions tests. Following are the steps outlining the process for registry entry:
 
-1. Open Microsoft® Windows Registry editor (regedit), To open registry editor, go to Start > Run, type regedit, and click OK.
+1. Open Microsoft&reg; Windows Registry editor (regedit), To open registry editor, go to Start > Run, type regedit, and click OK.
 1. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, and create a new **Binary Value** registry and rename it to **Project**.
 1. Modify the data value of created Binary registry to 01 and click OK.
 1. Close the registry entry.
@@ -813,7 +817,7 @@ When you convert Microsoft Excel 2019 to PDF on Microsoft Windows Server 2019, y
 * The default printer must be set to Adobe PDF.
 
    >[!NOTE]
-   >* For Apple macOS and Ubuntu OS, you need not require to configure the aforementioned settings.
+   >* For Apple macOS and Ubuntu OS, you are not required to configure the aforementioned settings.
 
 +++
 

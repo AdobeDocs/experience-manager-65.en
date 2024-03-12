@@ -13,6 +13,7 @@ user-guide-title: AEM 6.5
 + Release Notes {#release-notes}
   + [Release notes](/help/release-notes/release-notes.md)
   + Previous release notes {#service-pack}
+    + [6.5.19](/help/release-notes/previous/6-5-19.md)
     + [6.5.18](/help/release-notes/previous/6-5-18.md)
     + [6.5.17](/help/release-notes/previous/6-5-17.md)
     + [6.5.16](/help/release-notes/previous/6-5-16.md)
@@ -35,6 +36,7 @@ user-guide-title: AEM 6.5
   + [AEM Forms service pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
   + [AEM Forms JEE patch installer](/help/release-notes/jee-patch-installer-65.md)
   + [AEM Forms Service Pack Hotfix](/help/release-notes/aem-forms-hotfix.md)
+  + [Cumulative Key Features and Enhancements](/help/release-notes/cumulative-features-enhancements.md)
   + [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
   + [Touch UI feature status](/help/release-notes/touch-ui-features-status.md)
 + Security {#security}
@@ -65,6 +67,7 @@ user-guide-title: AEM 6.5
   + [Content Disposition Filter](/help/sites-administering/content-disposition-filter.md)
   + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
   + [Same Site Cookie Support](/help/sites-administering/same-site-cookie-support.md)
+  + [JWT Credentials Deprecation in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Sites {#sites}
   + Authoring {#authoring}
     + Essential tasks, tools and concepts for AEM Authoring {#essentials}
@@ -554,7 +557,7 @@ user-guide-title: AEM 6.5
     + Configure AEM Forms {#configure-aem-forms}
       + [Performance tuning of AEM Forms server](/help/forms/using/performance-tuning-aem-forms.md)
       + [Configure adaptive forms cache](/help/forms/using/configure-adaptive-forms-cache.md)
-      + [Configuring AEM DS settings](/help/forms/using/configuring-the-processing-server-url-.md)
+      + [Configuring AEM DS settings](/help/forms/using/configuring-the-processing-server-url.md)
       + [Configuring the synchronization scheduler](/help/forms/using/configure-synchronization-scheduler.md)
       + [Configuring the Connector for Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Connecting AEM Forms with Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
@@ -630,7 +633,7 @@ user-guide-title: AEM 6.5
     + [Inline styling of adaptive form components](/help/forms/using/inline-style-adaptive-forms.md)
     + [Introduction to multi-step form sequence](/help/forms/using/introduction-form-sequence.md)
     + [Layout capabilities of adaptive forms](/help/forms/using/layout-capabilities-adaptive-forms.md)
-    + [Placeholder text in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms-.md)
+    + [Placeholder text in AEM Forms](/help/forms/using/placeholder-text-in-aem-forms.md)
     + [Previewing a form](/help/forms/using/previewing-forms.md)
     + [Reusing adaptive forms](/help/forms/using/reusing-adaptive-forms.md)
     + [Separator component in adaptive forms](/help/forms/using/separator-component-in-adaptive-forms.md)
@@ -1184,6 +1187,7 @@ user-guide-title: AEM 6.5
     + [Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
     + [Failure to backup database during upgrade to 6.5.12.0 for MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
     + [PDF generation fails to print a large number of PDFs on WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
+    + [How to properly restart AEM SDK](/help/forms/using/restart-aem-sdk.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
     + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)

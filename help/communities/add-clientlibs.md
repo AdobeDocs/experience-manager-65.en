@@ -147,7 +147,7 @@ Load your website in the browser and see if the background is not a shade of blu
 
 At this point, there exists a minimalist sandbox. It might be worth saving as a package so that, while playing, if your repository becomes corrupt and you desire to start over, you can turn off your server. Then rename or delete the folder crx-quickstart/, turn on your server, upload and install this saved package, and not have to repeat these most basic of steps.
 
-This package exists on the [Create a Sample Page](/help/communities/create-sample-page.md) tutorial for those who can't wait to jump in and start playing!...
+This package exists on the [Create a Sample Page](/help/communities/create-sample-page.md) tutorial for those who cannot wait to jump in and start playing.
 
 To create a package:
 

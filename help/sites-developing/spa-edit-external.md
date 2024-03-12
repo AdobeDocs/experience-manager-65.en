@@ -354,7 +354,7 @@ To enable editing within AEM for this example SPA, the following steps are requi
 
 ## Framework Limitations {#framework-limitations}
 
-The RemotePage component expects that the implementation provides an asset-manifest like the one [found here](https://github.com/shellscape/webpack-manifest-plugin). The RemotePage component, however, has only been tested to work with the React framework (and Next.js via the remote-page-next component), and therefore doesn't support remotely loading applications from other frameworks, such as Angular.
+The RemotePage component expects that the implementation provides an asset-manifest like the one [found here](https://github.com/shellscape/webpack-manifest-plugin). The RemotePage component, however, has only been tested to work with the React framework (and Next.js via the remote-page-next component), and therefore does not support remotely loading applications from other frameworks, such as Angular.
 
 ## Additional Resources {#additional-resources}
 

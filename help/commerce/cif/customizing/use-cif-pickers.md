@@ -15,7 +15,7 @@ AEM Content & Commerce Authoring provides a set of authoring tools to help AEM a
 
 ## Product Picker {#product-picker}
 
-To use the product picker in a project component, a developer must add `commerce/gui/components/common/cifproductfield` to a component dialog. For example, use the following for the cq:dialog:
+To use the product picker in a project component, a developer must add `commerce/gui/components/common/cifproductfield` to a component dialog. For example, use the following for the `cq:dialog`:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"

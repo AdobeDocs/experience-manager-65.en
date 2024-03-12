@@ -143,7 +143,7 @@ Perform the same steps to configure the tasks in the **Product Photo Shoot (Comm
 This section describes how to integrate product information management with your creative project.
 
 1. Navigate to a product photo shoot project, and click the **Add Work** icon on the **Workflows** card.
-1. Select the **Product Photo Shoot (Commerce Integration)** workflow card to start the **Product Photo Shoot (Commerce Integration)** workflow. If the product information isn't available under `/etc/commerce`, select the **Product Photo Shoot** workflow and start the **Product Photo Shoot** workflow.
+1. Select the **Product Photo Shoot (Commerce Integration)** workflow card to start the **Product Photo Shoot (Commerce Integration)** workflow. If the product information is not available under `/etc/commerce`, select the **Product Photo Shoot** workflow and start the **Product Photo Shoot** workflow.
 
    ![Workflow wizard](assets/chlimage_1-140a.png)
 

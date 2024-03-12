@@ -189,7 +189,8 @@ For example, if a user created a Content Fragment Model called `Article`, then A
    
    * Three of them have been controlled by the user: `author`, `main`, and `referencearticle`.
 
-   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment. In this example, (the [helper fields](#helper-fields)) `_path`, `_metadata`, `_variations`.
+   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment. In this example,
+     (the [helper fields](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -522,6 +523,53 @@ The following example demonstrates a full query that filters all persons that ha
 }
 ```
 
+When executing a GraphQL query using optional variables, if a specific value is **not** provided for the optional variable, then the variable will be ignored in the filter evaluation. This means, query results will contain all values, both `null` and not `null`, for the property related to the filter variable.
+
+>[!NOTE]
+>
+>If a `null` value is *explicitly* specified for such a variable, then the filter will match only `null` values for the corresponding property.
+
+For example, in the query below, where no value is specified for the property `lastName`:
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+All authors will be returned:
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
+    }
+  }
+}
+```
+
 While you can also filter on nested fields, it is not recommended, as it might lead to performance issues.
 
 For further examples, see:
@@ -713,7 +761,7 @@ To enable the caching of persisted queries, the following updates to the Dispatc
   >
   >The Dispatcher adds the suffix `.json` to all persisted query URLS, so that the result can be cached.
   >
-  >This is to ensure that the query conforms to the Dispatcher’s requirements for documents that can be cached. For further details see [How does the Dispatcher return documents?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
+  >This is to ensure that the query conforms to the Dispatcher's requirements for documents that can be cached. For further details see [How does the Dispatcher return documents?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 

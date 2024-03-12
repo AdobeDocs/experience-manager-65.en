@@ -1,6 +1,6 @@
 ---
 title: SPA Page Component
-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
+description: In an SPA the page component does not provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,7 +10,7 @@ exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 ---
 # SPA Page Component{#spa-page-component}
 
-In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
+In an SPA the page component does not provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 
 >[!NOTE]
 >
@@ -18,7 +18,7 @@ In an SPA the page component doesn't provide the HTML elements of its child comp
 
 ## Introduction {#introduction}
 
-The page component for an SPA doesn't provide the HTML elements of its child components via a JSP or HTL file and resource objects. This operation is delegated to the SPA framework. The representation of child components is fetched as a JSON data structure (that is, the model). The SPA components are then added to the page according to the provided JSON model. As such the page component initial body composition differs from its pre-rendered HTML counterparts.
+The page component for an SPA does not provide the HTML elements of its child components via a JSP or HTL file and resource objects. This operation is delegated to the SPA framework. The representation of child components is fetched as a JSON data structure (that is, the model). The SPA components are then added to the page according to the provided JSON model. As such the page component initial body composition differs from its pre-rendered HTML counterparts.
 
 ## Page Model Management {#page-model-management}
 
@@ -29,7 +29,7 @@ To allow the page to be authored, a client library named `cq.authoring.pagemodel
 * If the template is editable, add the client library category to the page policy.
 * Add the client library category using the `customfooterlibs.html` of the page component.
 
-Don't forget to limit the inclusion of the `cq.authoring.pagemodel.messaging` category to the context of the page editor.
+Do not forget to limit the inclusion of the `cq.authoring.pagemodel.messaging` category to the context of the page editor.
 
 ## Communication Data Type {#communication-data-type}
 

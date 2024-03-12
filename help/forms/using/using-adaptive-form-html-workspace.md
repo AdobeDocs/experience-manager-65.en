@@ -35,7 +35,7 @@ HTML Workspace provides some adaptive form-specific controls in addition to cont
 
 1. To submit an adaptive form, use the **Submit** button or route actions available, as was the case in Mobile Forms. Any Submit type button of adaptive form is hidden.  
 
-1. **Adaptive Form Global toolbar visibility**: If Process Designer hides the global/top-level toolbar, the toolbar, and the buttons don't appear on adaptive forms.  
+1. **Adaptive Form Global toolbar visibility**: If Process Designer hides the global/top-level toolbar, the toolbar, and the buttons do not appear on adaptive forms.  
 
 1. **Workspace navigation controls for Adaptive Forms**: Next/Previous buttons are available along with save, Submit, and Route Action buttons for an adaptive form in HTML Workspace. Click Next/Previous buttons so you can navigate panels of adaptive forms in HTML Workspace. The Next/Previous buttons provide deep navigation, similar to navigation controls in the Mobile view of adaptive forms.  
 
