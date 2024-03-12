@@ -152,4 +152,4 @@ The transaction count is reverse replicated from publish instances to author or 
 ## Related Articles {#related-articles}
 
 * [Billable APIs on AEM Forms JEE](../../forms/using/transaction-reports-billable-apis-jee.md)
-* [Record a transaction for custom implementations on AEM Forms JEE](/help/forms/using/record-transaction-custom-implementation-jee.md)
+* [Record a transaction for custom implementations on AEM Forms JEE](/help/forms/using/record-transaction-custom-component-jee.md)
