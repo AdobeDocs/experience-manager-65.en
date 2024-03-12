@@ -17,15 +17,15 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 Before you get the transaction reports, you enable transaction reporting, To enable transaction reporting:
 
-1.	Navigate to the `/adminui` on your Forms JEE Server, for example, `http://10.10.10.10:8080/adminui`.
-1.	Login with the default administrator and password.
-1.	Go to **Settings** > **Core System Settings** > **Configurations**.
-1.	Click checkbox to "Enable transaction reporting" and save the settings.
+1. Navigate to the `/adminui` on your Forms JEE Server, for example, `http://10.10.10.10:8080/adminui`.
+1. Login with the default administrator and password.
+1. Go to **Settings** > **Core System Settings** > **Configurations**.
+1. Click checkbox to "Enable transaction reporting" and save the settings.
 
     ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
-1.	Restart the server.
-1. Apart from the changes on server, on client side you would need to update the `adobe-livecycle-client.jar` in your project, if you are using the one.
+1. Restart the server.
+1. Apart from the changes on server, on client side you would need to update the `adobe-livecycle-client.jar` in your project, if you are using the same.
 
 > [!NOTE]
 > * By default the transaction recording is disabled.

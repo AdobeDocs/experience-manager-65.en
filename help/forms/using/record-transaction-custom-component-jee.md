@@ -26,7 +26,7 @@ Steps to record the varied transaction count:
 
 1. Import class `"com.adobe.idp.dsc.InvocationContextStack"` in the code. The class is part of the `adobe-livecycle-client.jar` sdk file. This sdk file is available at `<AEM_Forms_JEE_Install>\sdk\client-libs\common`
 
-    >[!Note] 
+    >[!NOTE] 
     > Update the client file shared above in your client project with the new file, in case it is already bundled.
 
 1. In the API for which varied transactions need to be logged:
