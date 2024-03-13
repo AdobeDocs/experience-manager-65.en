@@ -406,7 +406,7 @@ Custom Functions present a notable advantage over the Code Editor for the follow
 1. **Git Implications:**
    * Unlike the Code Editor, Custom Functions isolate code from content.
    * The isolation of code from content significantly reduces Git conflicts during content management.
-   - Valuable for projects with multiple contributors working simultaneously.
+   * Valuable for projects with multiple contributors working simultaneously.
 
 1. **Cleaner Repository:**
    * The absence of code within content minimizes conflicts and promotes a well-organized repository.
