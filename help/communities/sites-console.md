@@ -314,7 +314,7 @@ The global setting for moderating user-generated content (UGC) is controlled by 
   
     Default is *not selected*.
 
-  * **Don't persist translations**
+  * **Do not persist translations**
   
     If selected, translations are not stored in the repository.
   

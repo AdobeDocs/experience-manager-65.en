@@ -26,7 +26,7 @@ With Adobe Experience Manager (AEM), you can use Content Fragments, together wit
 
 A Headless Content Management System (CMS) is:
 
-* "*A headless content management system, or headless CMS, is a back-end only content management system (CMS) built from the ground up as a content repository that makes content accessible via an API for display on any device.*
+* "*A headless content management system, or headless CMS, is a back-end only content management system (CMS) built from the ground up as a content repository that makes content accessible by way of an API for display on any device.*
 
   See [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 

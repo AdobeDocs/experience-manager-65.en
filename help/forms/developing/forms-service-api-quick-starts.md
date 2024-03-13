@@ -44,7 +44,7 @@ The following Quick Starts are available for the Forms service:
 
 [Quick Start (SOAP mode): Passing documents to the Forms Service using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-Application logic that uses the Forms service API is implemented as Java&trade; servlets. AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+Application logic that uses the Forms service API is implemented as Java&trade; servlets. AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

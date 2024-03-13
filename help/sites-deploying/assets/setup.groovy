@@ -39,13 +39,13 @@ def extensions = localExtensions.extensions.extension.findAll { it.@name ==~ /^(
 extensions.each { it.replaceNode {} }
 
 if ((localExtensions.extensions.extension.findAll { it.@name == "platformwebservices" }).isEmpty()) {
-    //Needed for Hybris 5.1.1 which doesn't include platformwebservices in the default configuration
+    //Needed for Hybris 5.1.1 which does not include platformwebservices in the default configuration
     println "Adding platformwebservices extension"
     localExtensions.extensions.appendNode ({ extension(name: "platformwebservices") })
 }
 if (buildNumber.version < "5.3.0.0") { //sampledata extension is dropped starting from Hybris 5.3
     if ((localExtensions.extensions.extension.findAll { it.@name == "sampledata" }).isEmpty()) {
-        //Needed for Hybris 5.2 which doesn't include 'sampledata' in the default configuration
+        //Needed for Hybris 5.2 which does not include 'sampledata' in the default configuration
         println "Adding sampledata extension"
         localExtensions.extensions.appendNode ({ extension(name: "sampledata") })
     }

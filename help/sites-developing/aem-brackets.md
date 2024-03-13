@@ -67,7 +67,7 @@ In Brackets' **File** menu, choose **Open Folder…** and pick either the `jcr_r
 
 >[!NOTE]
 >
->If you don't have of your own a project with a content-package, you can try the [HTL TodoMVC Example](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). On GitHub, click **Download ZIP**, extract the files locally, and as instructed above, open the `jcr_root` folder in Brackets. Then follow the steps below to setup the **Project Settings**, and finally upload the whole package to your AEM development instance by doing an **Export Content Package** as instructed further down in the Full Content-Package Synchronization section.
+>If you do not have of your own a project with a content-package, you can try the [HTL TodoMVC Example](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). On GitHub, click **Download ZIP**, extract the files locally, and as instructed above, open the `jcr_root` folder in Brackets. Then follow the steps below to setup the **Project Settings**, and finally upload the whole package to your AEM development instance by doing an **Export Content Package** as instructed further down in the Full Content-Package Synchronization section.
 >
 >After these steps, you should be able to access the `/content/todo.html` URL on your AEM development instance and you can start doing modifications to the code in Brackets and see how, after doing a refresh in the web browser, the changes were immediately synchronized to the AEM server.
 
@@ -77,10 +77,10 @@ To synchronize your content to and from an AEM development instance, you need to
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-The Project Settings allow to define:
+The Project Settings let you define the following:
 
 1. The server URL (for example, `http://localhost:4502`)
-1. Wether to tolerate servers that don't have a valid HTTPS certificate (keep unchecked, unless required)
+1. Wether to tolerate servers that do not have a valid HTTPS certificate (keep unchecked, unless required)
 1. The username used for synchronizing content (for example, `admin`)
 1. The user's password (for example, `admin`)
 
@@ -104,7 +104,7 @@ In the Project Explorer, open the contextual menu by right-clicking on any file 
 
 ### Full Content-Package Synchronization {#full-content-package-synchronization}
 
-In the **AEM** menu, the **Export Content Package** or **Import Content Package** options allow to synchronize the whole project with the server.
+In the **AEM** menu, the **Export Content Package** or **Import Content Package** options let you synchronize the whole project with the server.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

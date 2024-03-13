@@ -177,13 +177,13 @@ To convert an Adaptive Form in AEM Sites page to an Experience Fragment:
 
     * **Action:** Select to create an Experience Fragment or Add to an existing Experience Fragment.
     * **Parent path:** Specify path of the folder to host the Experience Fragment in. The option is available only for creating an Experience Fragment. 
-    * **Template:** Specify path of the Experience Fragment template. If you don't have an Experience Fragment template, [create it](/help/sites-developing/experience-fragments.md). The option is available only for adding Adaptive Form to an existing Experience Fragment. 
+    * **Template:** Specify path of the Experience Fragment template. If you do not have an Experience Fragment template, [create it](/help/sites-developing/experience-fragments.md). The option is available only for adding Adaptive Form to an existing Experience Fragment. 
     * **Fragment title:** Specify title of the Experience Fragment. The title uniquely identifies an Experience Fragment 
 
 
 ## Configure Submit Action for the form {#configure-submit-action-for-form}
 
-A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
+A Submit Action lets you choose the destination of data captured by way of an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
 
 1. Open the AEM Page Editor or Experience Fragment that contains the Adaptive Form.
 1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container. 

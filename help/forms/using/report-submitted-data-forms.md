@@ -25,7 +25,7 @@ Returns a list of all eligible forms.
 
 ### URL parameters {#url-parameters}
 
-This API doesn't require additional parameters.
+This API does not require additional parameters.
 
 ### Response {#response}
 

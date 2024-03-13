@@ -59,6 +59,10 @@ A secure connection enables  seamless  flow of information between AEM Forms on 
 
    Click **Save**. AEM is enabled to search document security protected PDF and Microsoft Office documents
 
+    >[!NOTE]
+    >
+    > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 ## Index a sample policy-protected PDF or Microsoft Office document {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 
 1. Log in to AEM Assets as an administrator.

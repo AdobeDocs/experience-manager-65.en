@@ -52,7 +52,7 @@ To generate the URL for assets that you want to share with users, use the [!UICO
 
 1. To let users download the original asset, select **[!UICONTROL Allow download of original file]**. To let users download only the renditions of the shared assets, select **[!UICONTROL Allow download of renditions of file]**.
 
-1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users via an email.
+1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users by way of an email.
 
 1. To view the shared asset, click the link in the email that is sent to the user. To generate a preview of the asset, click the shared asset. To close the preview, click **[!UICONTROL Back]**. If you have shared a folder, click **[!UICONTROL Parent Folder]** to return to the parent folder.
 

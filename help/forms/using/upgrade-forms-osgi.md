@@ -56,6 +56,10 @@ Do the following to upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 Forms
 
   1. Restart the AEM instance.
 
+      >[!NOTE]
+      >
+      > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+
 1. Perform post-installation activities.
 
     * **Run Migration Utility**

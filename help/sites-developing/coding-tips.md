@@ -31,7 +31,7 @@ In the AEM code base, the following conventions are used:
 * Java&trade; implementations are placed in an impl package below their API.
 
 
-These conventions don't necessarily apply to customer implementations, but it is important that conventions are defined and adhered to so that the code can stay maintainable.
+These conventions do not necessarily apply to customer implementations, but it is important that conventions are defined and adhered to so that the code can stay maintainable.
 
 Ideally, names should reveal their intention. A common code test for when names are not as clear as they should be is the presence of comments explaining what the variable or method is for:
 
@@ -52,7 +52,7 @@ Ideally, names should reveal their intention. A common code test for when names 
  </tbody>
 </table>
 
-### Don't repeat yourself  {#don-t-repeat-yourself}
+### Do not repeat yourself  {#don-t-repeat-yourself}
 
 DRY states that the same set of code should never be duplicated. This also applies to things like string literals. Code duplication opens the door for defects whenever something has to change and should be sought out and eliminated.
 

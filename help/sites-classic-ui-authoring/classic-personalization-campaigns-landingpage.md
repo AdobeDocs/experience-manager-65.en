@@ -445,7 +445,7 @@ To add components on the landing page, drag and drop components to the landing p
 
 Deleting a landing page is like deleting a normal AEM page.
 
-The only exception is that when you delete a desktop landing page, it also deletes the corresponding mobile landing page (if present) but not vice-versa.
+The only exception is that when you delete a desktop landing page, it also deletes the corresponding mobile landing page (if present) but not conversely.
 
 ### Publishing a landing page {#publishing-a-landing-page}
 

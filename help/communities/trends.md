@@ -86,7 +86,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
     * `Last 7 days`
     * `Last 30 days`
     * `Last 90 days`
-    * `This year (since Jan 1st)`
+    * `This year (since Jan 1)`
     * `Total`
 
   Default is `Total`.

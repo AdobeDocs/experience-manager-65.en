@@ -95,7 +95,7 @@ Members of the app-admins group can author application content with the same per
 
    >[!CAUTION]
    >
-   >/var/contentsync access is denied OOTB.
+   >/var/contentsync access is denied out-of-the-box.
    >
    >Omitting the READ permission can result in empty update packages being built and replicated.
 

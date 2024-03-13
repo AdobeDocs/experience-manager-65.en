@@ -79,17 +79,17 @@ Code reuse: Our OSGi-based product architecture and "everything is content" phil
 
 Loose coupling: We favor loosely coupled interactions over tight dependencies and "unwanted intimacy". Loose coupling also enables more code reuse.
 
-### Don't Break the Demo {#don-t-break-the-demo}
+### Do not Break the Demo {#don-t-break-the-demo}
 
 Become familiar with demo scripts and product functionalities that are most often shown in demos. Understand that nothing you do should ever break a "demo script" feature. The core product should always be demo-ready, even during development.
 
 ### Design for Reliability {#design-for-reliability}
 
-We strive to design and code features in fail-soft fashion, so that (for example) a problem with a single DOM element doesn't cause a whole page to not render. In other words: Make things that should be fatal, fatal. Make everything else survivable. Make the product "forgiving."
+We strive to design and code features in fail-soft fashion, so that (for example) a problem with a single DOM element does not cause a whole page to not render. In other words: Make things that should be fatal, fatal. Make everything else survivable. Make the product "forgiving."
 
 ### Abnormal is the New Normal {#abnormal-is-the-new-normal}
 
-Don't depend on shutdown hooks, ensure cleanup on startup. Abnormal termination is normal termination.
+Do not depend on shutdown hooks, ensure cleanup on startup. Abnormal termination is normal termination.
 
 `shutdown == kill -9 == power outage`
 

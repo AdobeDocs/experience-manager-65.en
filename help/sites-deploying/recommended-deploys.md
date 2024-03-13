@@ -88,7 +88,7 @@ The advantages:
 
 ### Oak Cluster with MongoMK Failover for High Availability in a Single Datacenter {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-This approach implies multiple Oak instances accessing a MongoDB replica set within a single data center, in effect creating an active-active cluster for the AEM author environment. Replica sets in MongoDB are used to provide high availability and redundancy in the event of a hardware or network failure.
+This approach implies multiple Oak instances accessing a MongoDB replica set within a single data center, in effect creating an active-active cluster for the AEM author environment. Replica sets in MongoDB are used to provide high availability and redundancy in case of a hardware or network failure.
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 

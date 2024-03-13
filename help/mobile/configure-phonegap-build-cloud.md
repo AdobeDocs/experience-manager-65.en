@@ -25,7 +25,7 @@ You can push a remote build to `https://build.phonegap.com` or download the sour
 
 To take advantage of PhoneGap Build, you must configure the AEM PhoneGap Build Cloud Service with your PhoneGap Build account information.
 
-If you don't currently have an account, navigate to `https://build.phonegap.com` and sign up! If you have an Adobe Creative Cloud membership, you may have support for up to 25 private apps (non-open source apps).
+If you do not currently have an account, navigate to `https://build.phonegap.com` and sign up! If you have an Adobe Creative Cloud membership, you may have support for up to 25 private apps (non-open source apps).
 
 Once you have verified your PhoneGap Build account is active, navigate to your AEM Cloud Management Console, specifically the [PhoneGap Build Cloud Service](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
@@ -88,7 +88,7 @@ phonegap run ios (or android, ...)
 
 >[!NOTE]
 >
->Add --emulate at the end of this line if you don't want to run it on your connected device.
+>Add --emulate at the end of this line if you do not want to run it on your connected device.
 
 Once you have verified that the above works, use the **PhoneGap Build** Tile to **Download Source**. Save and unzip the file onto your local system. Once that is done:
 

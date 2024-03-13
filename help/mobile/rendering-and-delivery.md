@@ -149,7 +149,7 @@ The following table shows the properties:
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>For the following sling resource types, don't return the default CaaS json export.<br /> Return a customer json export by rendering the resource as;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>For the following sling resource types, do not return the default CaaS json export.<br /> Return a customer json export by rendering the resource as;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
