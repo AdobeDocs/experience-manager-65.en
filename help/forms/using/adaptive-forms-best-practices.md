@@ -392,9 +392,10 @@ Using custom client libraries in AEM Forms (Adobe Experience Manager Forms) can 
 
 Before you decide to use custom client libraries, it's important to consider the maintenance overhead, potential conflicts with future updates, and adherence to best practices. Ensure that your customizations are well-documented and tested to avoid issues during upgrades or when collaborating with other developers.
 
-> [!NOTE]
-> Custom Functions is available for both AEM Forms Foundation Components and Core Components.
+>[!NOTE]
+> Custom Function is available for both AEM Forms Foundation Components and Core Components.
 
+**Recommendations:**
 
 Custom Functions present a notable advantage over the Code Editor for the following reasons:
 
@@ -402,20 +403,20 @@ Custom Functions present a notable advantage over the Code Editor for the follow
    - Custom Functions provide a clear separation between content and code.
    - The separation between content and code enhances collaboration and streamlines workflows.
 
-2. **Git Implications:**
+1. **Git Implications:**
    - Unlike the Code Editor, Custom Functions isolate code from content.
    - The isolation of code from content significantly reduces Git conflicts during content management.
    - Valuable for projects with multiple contributors working simultaneously.
 
-3. **Cleaner Repository:**
+1. **Cleaner Repository:**
    - The absence of code within content minimizes conflicts and promotes a well-organized repository.
 
-4. **Technical Benefits:**
+1. **Technical Benefits:**
    - Custom Functions offer modularity and encapsulation.
    - Modules can be developed, tested, and maintained independently.
    - Enhances code reusability and maintainability.
 
-5. **Efficient Development Process:**
+1. **Efficient Development Process:**
    - Modularity allows developers to focus on specific functionalities.
    - Developers are not burdened by the complexities of the entire codebase.
    - Fosters a more efficient development process.
