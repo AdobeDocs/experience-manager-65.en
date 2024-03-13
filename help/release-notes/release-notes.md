@@ -197,6 +197,9 @@ Some of the key features and enhancements in this release include the following:
 
     ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
+* When a user selects a form data model in AEM Forms Service Pack 6.5.19.0, the variable names appear undefined on the side panel, but the variable names are shown when they are dropped onto the form panel or when they are clicked. (FORMS-13238)
+
+
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
 
