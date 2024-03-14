@@ -8,6 +8,7 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 2ca7b8b2-573c-40e9-b8c3-f38736e819ef
+solution: Experience Manager Assets
 ---
 <!-- hide: yes
 hidefromtoc: yes -->

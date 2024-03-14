@@ -8,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Document Security
 exl-id: d00ae232-b018-44e5-b04b-376d4cd9c6eb
+solution: Experience Manager Forms
 ---
 # Document security offerings{#document-security-offerings}
 

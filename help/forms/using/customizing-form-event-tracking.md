@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 
 exl-id: d0280a15-5d0d-49cf-bce9-ad1c40530eae
+solution: Experience Manager Forms
 ---
 # Customizing form event tracking {#customizing-form-event-tracking}
 

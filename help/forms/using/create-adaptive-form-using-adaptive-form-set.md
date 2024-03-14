@@ -10,6 +10,7 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
+solution: Experience Manager Forms
 ---
 # Create an adaptive form using a set of adaptive forms{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 

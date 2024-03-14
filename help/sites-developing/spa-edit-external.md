@@ -2,6 +2,7 @@
 title: Editing an External SPA within Adobe Experience Manager
 description: This document describes the recommended steps to upload a standalone SPA to an Adobe Experience Manager instance, add editable sections of content, and enable authoring.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
+solution: Experience Manager Sites
 ---
 # Editing an External SPA within Adobe Experience Manager {#editing-external-spa-within-aem}
 

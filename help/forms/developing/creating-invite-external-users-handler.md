@@ -3,6 +3,7 @@ title: Creating an Invite External Users Handler
 description: Learn how to create an Invite External Users Handler. It enables the Rights Management service to invite external users to become Rights Management users.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
+solution: Experience Manager Forms
 ---
 # Creating an Invite External Users Handler {#create-invite-external-users-handler} 
 

@@ -7,6 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
+solution: Experience Manager Sites
 ---
 # Working with Page Versions{#working-with-page-versions}
 

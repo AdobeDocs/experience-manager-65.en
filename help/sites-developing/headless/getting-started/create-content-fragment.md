@@ -2,6 +2,7 @@
 title: Creating Content Fragments Headless Quick Start Guide
 description: Learn how to use AEM's Content Fragments to design, create, curate, and use page-independent content for headless delivery.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
+solution: Experience Manager Sites
 ---
 # Creating Content Fragments Headless Quick Start Guide {#creating-content-fragments}
 

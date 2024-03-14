@@ -9,6 +9,7 @@ docset: aem65
 feature: Mixed Media Sets,Asset Management
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
+solution: Experience Manager Assets
 ---
 # Mixed Media Sets{#mixed-media-sets}
 

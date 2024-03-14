@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 734ed463-2441-49fc-bacb-deb40851af42
+solution: Experience Manager Forms
 ---
 # Set up the System information service {#set-up-the-system-information-service}
 

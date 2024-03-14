@@ -9,6 +9,7 @@ docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
+solution: Experience Manager Assets
 ---
 # Publish folders to Brand Portal{#publish-folders-to-brand-portal}
 

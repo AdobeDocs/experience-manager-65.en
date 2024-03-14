@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 role: Admin
 exl-id: bd58099c-08cd-4056-afb6-a5935454429a
+solution: Experience Manager Forms
 ---
 # Unable to use Output service, Forms service, or Document of Record (DoR) service {#unable-to-use-output-service-forms-service-or-document-of-record-service}
 

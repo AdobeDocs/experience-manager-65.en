@@ -6,6 +6,7 @@ role: User
 feature: Collaboration
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 hide: yes
+solution: Experience Manager Assets
 ---
 # Private folder in [!DNL Adobe Experience Manager Assets] {#private-folder}
 

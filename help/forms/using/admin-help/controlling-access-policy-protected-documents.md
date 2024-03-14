@@ -7,6 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
+solution: Experience Manager Forms
 ---
 # Controlling access to policy-protected documents {#controlling-access-to-policy-protected-documents}
 

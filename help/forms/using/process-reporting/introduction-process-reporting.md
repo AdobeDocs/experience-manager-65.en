@@ -10,6 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 docset: aem65
 exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
+solution: Experience Manager Forms
 ---
 # Introduction to Process Reporting{#introduction-to-process-reporting}
 

@@ -6,6 +6,7 @@ feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: yes
+solution: Experience Manager Assets
 ---
 # Understand, apply, and curate Smart Tags {#enhanced-smart-tags}
 

@@ -4,6 +4,7 @@ description: The User Management settings in the administration console let you 
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
+solution: Experience Manager Forms
 ---
 # Adding and configuring users {#adding-and-configuring-users}
 

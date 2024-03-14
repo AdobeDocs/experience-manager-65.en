@@ -8,6 +8,7 @@ content-type: reference
 feature: Image Presets
 role: User,Admin
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
+solution: Experience Manager Assets
 ---
 # Apply Dynamic Media image presets {#applying-image-presets}
 

@@ -7,6 +7,7 @@ topic-tags: Configuration
 docset: aem65
 role: Admin
 exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
+solution: Experience Manager Forms
 ---
 # Configuring AEM DS settings{#configuring-aem-ds-settings}
 

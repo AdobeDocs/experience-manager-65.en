@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
+solution: Experience Manager Forms
 ---
 # Assembler Service Java&trade; API QuickStart(SOAP) {#assembler-service-java-api-quickstart-soap}
 

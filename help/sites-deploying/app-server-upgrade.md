@@ -3,6 +3,7 @@ title: Upgrade Steps for Application Server Installations
 description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
+solution: Experience Manager Sites
 ---
 # Upgrade Steps for Application Server Installations{#upgrade-steps-for-application-server-installations}
 

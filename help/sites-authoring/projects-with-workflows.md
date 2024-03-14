@@ -10,6 +10,7 @@ topic-tags: projects
 content-type: reference
 
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
+solution: Experience Manager Sites
 ---
 
 # Working with Project Workflows {#working-with-project-workflows}

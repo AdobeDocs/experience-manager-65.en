@@ -10,6 +10,7 @@ topic-tags: operations
 content-type: reference
 
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
+solution: Experience Manager Sites
 ---
 # Using cURL with AEM{#using-curl-with-aem}
 

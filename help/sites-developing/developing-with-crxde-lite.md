@@ -7,6 +7,7 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
+solution: Experience Manager Sites
 ---
 # Developing with CRXDE Lite{#developing-with-crxde-lite}
 

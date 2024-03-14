@@ -10,6 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 
 exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
+solution: Experience Manager Forms
 ---
 # Displaying information in the Task Summary pane {#displaying-information-in-the-task-summary-pane}
 

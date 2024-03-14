@@ -9,6 +9,7 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
+solution: Experience Manager Assets
 ---
 # Carousel banners{#carousel-banners}
 

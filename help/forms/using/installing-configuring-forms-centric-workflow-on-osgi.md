@@ -5,6 +5,7 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
+solution: Experience Manager Forms
 ---
 # Installing and Configuring Forms-centric workflow on OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}
 

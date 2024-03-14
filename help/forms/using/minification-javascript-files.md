@@ -6,6 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: d88c6831-8ae9-426d-acb5-2a7e066ad158
+solution: Experience Manager Forms
 ---
 # Minification of the JavaScript files {#minification-of-the-javascript-files}
 

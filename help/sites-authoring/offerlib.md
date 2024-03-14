@@ -11,6 +11,7 @@ topic-tags: personalization
 
 docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
+solution: Experience Manager Sites
 ---
 # Creating and Managing Offers{#creating-and-managing-offers}
 

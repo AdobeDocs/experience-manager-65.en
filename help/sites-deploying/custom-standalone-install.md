@@ -4,6 +4,7 @@ description: Learn about the options available when installing a standalone AEM 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
+solution: Experience Manager Sites
 ---
 # Custom Standalone Install{#custom-standalone-install}
 

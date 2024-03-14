@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 
 exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
+solution: Experience Manager Forms
 ---
 # Theme Customization {#theme-customization}
 

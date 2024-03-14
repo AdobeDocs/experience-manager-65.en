@@ -9,6 +9,7 @@ docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
+solution: Experience Manager Assets
 ---
 # Panoramic images{#panoramic-images}
 

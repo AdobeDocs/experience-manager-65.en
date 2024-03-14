@@ -10,6 +10,7 @@ topic-tags: integration
 content-type: reference
 
 exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
+solution: Experience Manager Sites
 ---
 # Integrating with Third-Party Services{#integrating-with-third-party-services}
 

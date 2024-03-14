@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
+solution: Experience Manager Sites
 ---
 # Dynamic Model to Component Mapping for SPAs{#dynamic-model-to-component-mapping-for-spas}
 

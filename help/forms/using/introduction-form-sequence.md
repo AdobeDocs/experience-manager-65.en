@@ -7,6 +7,7 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
+solution: Experience Manager Forms
 ---
 # Introduction to multi-step form sequence{#introduction-to-multi-step-form-sequence}
 

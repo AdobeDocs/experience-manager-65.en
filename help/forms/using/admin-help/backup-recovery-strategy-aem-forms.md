@@ -6,6 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
+solution: Experience Manager Forms
 ---
 # Backup and recovery strategy for AEM forms{#backup-and-recovery-strategy-for-aem-forms}
 

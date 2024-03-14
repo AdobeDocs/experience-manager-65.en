@@ -2,6 +2,7 @@
 title: Default components
 description: Adobe Experience Manager comes with various out-of-the-box components that provide comprehensive functionality for website authors.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
+solution: Experience Manager Sites
 ---
 # Components{#components}
 

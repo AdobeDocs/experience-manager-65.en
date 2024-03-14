@@ -10,6 +10,7 @@ topic-tags: components
 content-type: reference
 
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
+solution: Experience Manager Sites
 ---
 # Components Overview{#components-overview}
 

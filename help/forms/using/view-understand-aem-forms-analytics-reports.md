@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
+solution: Experience Manager Forms
 ---
 # View and understand AEM Forms analytics reports {#view-and-understand-aem-forms-analytics-reports}
 

@@ -11,6 +11,7 @@ content-type: reference
 
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
+solution: Experience Manager Sites
 ---
 # Developing AEM Components - Code Samples{#developing-aem-components-code-samples}
 

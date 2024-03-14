@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
+solution: Experience Manager Sites
 ---
 # Configure the Video component {#configure-the-video-component}
 

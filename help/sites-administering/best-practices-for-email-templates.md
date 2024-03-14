@@ -9,6 +9,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
+solution: Experience Manager Sites
 ---
 
 # Best Practices for Email Templates {#best-practices-for-email-templates}

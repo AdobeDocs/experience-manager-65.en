@@ -11,6 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
+solution: Experience Manager Forms
 ---
 # Choosing a persistence type for an AEM Forms installation {#choosing-a-persistence-type-for-an-aem-forms-installation}
 

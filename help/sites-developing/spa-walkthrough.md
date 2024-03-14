@@ -4,6 +4,7 @@ description: This article introduces the concepts of a SPA and walks through usi
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
+solution: Experience Manager Sites
 ---
 
 # SPA Introduction and Walkthrough {#spa-introduction-and-walkthrough}

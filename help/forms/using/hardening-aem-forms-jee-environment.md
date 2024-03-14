@@ -6,6 +6,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
+solution: Experience Manager Forms
 ---
 # Hardening Your AEM Forms on JEE Environment {#hardening-your-aem-forms-on-jee-environment}
 

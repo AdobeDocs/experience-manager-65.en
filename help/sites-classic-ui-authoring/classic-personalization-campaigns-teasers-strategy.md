@@ -7,6 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
+solution: Experience Manager Sites
 ---
 # Teasers and Strategies{#teasers-and-strategies}
 

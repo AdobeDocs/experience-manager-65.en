@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: e255145e-9e86-41ea-b048-ff46fdbff205
+solution: Experience Manager Sites
 ---
 # Dialog Conversion Tool{#dialog-conversion-tool}
 

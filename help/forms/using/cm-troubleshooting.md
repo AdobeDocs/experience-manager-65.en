@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
+solution: Experience Manager Forms
 ---
 # Correspondence Management: Troubleshooting {#correspondence-management-troubleshooting}
 

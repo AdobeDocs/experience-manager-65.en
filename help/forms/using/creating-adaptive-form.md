@@ -5,6 +5,7 @@ role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
+solution: Experience Manager Forms
 ---
 # Creating an adaptive form {#creating-an-adaptive-form}
 

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
 feature: Adaptive Forms, Foundation Components
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
+solution: Experience Manager Forms
 ---
 # Embed an adaptive form or interactive communication in AEM sites page {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 

@@ -2,6 +2,7 @@
 title: Expiration of Reader Extensions certificates and its impact 
 description: Expiration of Reader Extensions certificates and its impact 
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
+solution: Experience Manager Forms
 ---
 
 # Expiration of Reader Extensions certificates and its impact {#expiration-of-reader-extensions-certificates-and-its-impact}

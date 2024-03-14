@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
+solution: Experience Manager Sites
 ---
 # Customizing Page Authoring{#customizing-page-authoring}
 

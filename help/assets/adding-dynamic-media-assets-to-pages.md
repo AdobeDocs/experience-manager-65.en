@@ -9,6 +9,7 @@ docset: aem65
 role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
+solution: Experience Manager Assets
 ---
 # Add Dynamic Media assets to pages{#adding-dynamic-media-assets-to-pages}
 

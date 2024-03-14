@@ -7,6 +7,7 @@ topic-tags: hTML5_forms
 docset: aem65
 feature: HTML5 Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
+solution: Experience Manager Forms
 ---
 # Introduction to HTML5 forms{#introduction-to-html-forms}
 

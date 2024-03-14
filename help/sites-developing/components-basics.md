@@ -7,6 +7,7 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
+solution: Experience Manager Sites
 ---
 # Adobe Experience Manager (AEM) Components - The Basics{#aem-components-the-basics}
 

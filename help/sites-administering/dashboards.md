@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
+solution: Experience Manager Sites
 ---
 # Dashboards{#dashboards}
 

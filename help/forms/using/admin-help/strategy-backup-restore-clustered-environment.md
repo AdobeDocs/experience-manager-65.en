@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 98c96349-f253-475f-b646-352269814a38
+solution: Experience Manager Forms
 ---
 # Strategy for backup and restore in a clustered environment {#strategy-for-backup-and-restore-in-a-clustered-environment}
 

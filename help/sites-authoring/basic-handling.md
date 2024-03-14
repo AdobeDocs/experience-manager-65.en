@@ -7,6 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
+solution: Experience Manager Sites
 ---
 # Basic Handling{#basic-handling}
 

@@ -5,6 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
+solution: Experience Manager Forms
 ---
 # Forms-centric workflow on OSGi - Step Reference {#forms-centric-workflow-on-osgi-step-reference}
 

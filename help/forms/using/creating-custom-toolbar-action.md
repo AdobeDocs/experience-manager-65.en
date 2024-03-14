@@ -10,6 +10,7 @@ topic-tags: customization
 
 docset: aem65
 exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
+solution: Experience Manager Forms
 ---
 # Creating a custom toolbar action{#creating-a-custom-toolbar-action}
 

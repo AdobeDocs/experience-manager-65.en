@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
+solution: Experience Manager Forms
 ---
 # Changing the locale of AEM Forms workspace user interface{#changing-the-locale-of-aem-forms-workspace-user-interface}
 

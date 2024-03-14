@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
+solution: Experience Manager Forms
 ---
 # Create custom appearances for adaptive form fields{#create-custom-appearances-for-adaptive-form-fields}
 

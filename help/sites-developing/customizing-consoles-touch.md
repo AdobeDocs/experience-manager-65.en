@@ -11,6 +11,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
+solution: Experience Manager Sites
 ---
 # Customizing the Consoles {#customizing-the-consoles}
 

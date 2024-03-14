@@ -10,6 +10,7 @@ topic-tags: publish
 
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
+solution: Experience Manager Forms
 ---
 # Sending a form submission acknowledgement via email {#sending-a-form-submission-acknowledgement-via-email}
 

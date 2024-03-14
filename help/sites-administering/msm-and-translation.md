@@ -9,6 +9,7 @@ topic-tags: site-features
 content-type: reference
 
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
+solution: Experience Manager Sites
 ---
 # Multi Site Manager and Translation {#msm-and-translation}
 

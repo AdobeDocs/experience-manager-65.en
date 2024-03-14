@@ -7,6 +7,7 @@ topic-tags: adaptive_forms, author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
+solution: Experience Manager Forms
 ---
 # Using CAPTCHA in adaptive forms{#using-captcha-in-adaptive-forms}
 

@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 603edbd2-c012-4d25-99bf-c4f3dc147308
+solution: Experience Manager Forms
 ---
 # Review the usage rights of a PDF file {#review-the-usage-rights-of-a-pdf-file}
 

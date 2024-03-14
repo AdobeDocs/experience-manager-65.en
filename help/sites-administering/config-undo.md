@@ -10,6 +10,7 @@ topic-tags: operations
 content-type: reference
 
 exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
+solution: Experience Manager Sites
 ---
 # Configuring Undo for Page Editing{#configuring-undo-for-page-editing}
 

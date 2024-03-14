@@ -11,6 +11,7 @@ content-type: reference
 
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
+solution: Experience Manager Sites
 ---
 # Client Context JavaScript API{#client-context-javascript-api}
 
