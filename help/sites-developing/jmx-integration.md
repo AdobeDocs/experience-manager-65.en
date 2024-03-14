@@ -4,7 +4,7 @@ description: Expose service attributes and operations to enable administration t
 topic-tags: extending-aem
 content-type: reference
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Integrating Services with the JMX Console{#integrating-services-with-the-jmx-console}
 

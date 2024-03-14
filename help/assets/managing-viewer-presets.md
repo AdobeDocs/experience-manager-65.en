@@ -10,7 +10,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Manage Viewer Presets{#managing-viewer-presets}
 

@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Client Context in Detail{#client-context-in-detail}
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 23a65be4-3277-4c73-9189-a9b4d7be73cd
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Log files {#log-files}
 

@@ -4,7 +4,7 @@ description: Best practices to restart AEM SDK
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: f5d69d04-b842-4329-b1b3-57b88266d13d
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Restarting the AEM SDK 
 

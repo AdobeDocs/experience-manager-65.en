@@ -11,7 +11,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Content Fragment Templates{#content-fragment-templates}
 

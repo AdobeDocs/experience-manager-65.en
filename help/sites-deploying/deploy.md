@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Deploying and Maintaining{#deploying-and-maintaining}
 

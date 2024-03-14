@@ -8,7 +8,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Create or customize an Adaptive Form theme {#introduction-to-theme}
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f7aa5ac0-3d03-4c04-b9c2-1bda427b0588
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Configuring for AEM Apps{#configuring-for-aem-apps}
 

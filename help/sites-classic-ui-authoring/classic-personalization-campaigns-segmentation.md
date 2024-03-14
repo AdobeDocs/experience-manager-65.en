@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Understanding Segmentation{#understanding-segmentation}
 

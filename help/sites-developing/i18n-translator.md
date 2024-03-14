@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Using Translator to Manage Dictionaries{#using-translator-to-manage-dictionaries}
 

@@ -8,7 +8,7 @@ topic-tags: development-tools
 content-type: reference
 
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # How to Develop AEM Projects using IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 

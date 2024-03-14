@@ -10,7 +10,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Content Fragments Configuring Components for Rendering{#content-fragments-configuring-components-for-rendering}
 

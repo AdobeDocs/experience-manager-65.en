@@ -11,7 +11,7 @@ topic-tags: configuring
 
 feature: Configuring
 exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Configuration How-To Articles{#configuration-how-to-articles}
 

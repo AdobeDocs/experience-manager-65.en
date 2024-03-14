@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Introduction to Customizing AEM form workspace{#introduction-to-customizing-aem-form-workspace}
 

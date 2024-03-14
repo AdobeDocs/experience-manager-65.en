@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Overlays{#overlays}
 

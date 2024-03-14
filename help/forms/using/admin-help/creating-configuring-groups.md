@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Creating and configuring groups{#creating-and-configuring-groups}
 

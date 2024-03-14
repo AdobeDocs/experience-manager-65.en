@@ -5,7 +5,7 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: yes
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Content Fragments Support in AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 

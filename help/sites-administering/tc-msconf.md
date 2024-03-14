@@ -4,7 +4,7 @@ description: Learn how to connect AEM to Microsoft Translator out-of-the-box to 
 feature: Language Copy
 role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Connecting to Microsoft Translator {#connecting-to-microsoft-translator}
 

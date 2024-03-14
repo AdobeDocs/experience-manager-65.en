@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 
 exl-id: daf5c934-8a98-4891-94a1-029056d87931
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Working with Assets{#working-with-assets}
 

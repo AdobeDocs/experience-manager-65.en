@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 5be26485-afe5-47ac-918c-e2fff4f394b2
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Oracle database maximum open cursors threshold {#oracle-database-maximum-open-cursors-threshold}
 

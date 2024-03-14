@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: site-features
 
 exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Authoring a Page for Mobile Devices{#authoring-a-page-for-mobile-devices}
 

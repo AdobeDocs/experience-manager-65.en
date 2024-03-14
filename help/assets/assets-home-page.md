@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # [!DNL Adobe Experience Manager Assets] Home Page Experience {#aem-assets-home-page-experience}
 

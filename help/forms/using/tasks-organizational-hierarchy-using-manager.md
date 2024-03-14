@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Managing tasks in an organizational hierarchy using Manager View{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 

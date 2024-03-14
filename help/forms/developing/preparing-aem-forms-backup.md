@@ -11,7 +11,7 @@ topic-tags: operations
 
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Preparing AEM Forms for Backup {#preparing-aem-forms-for-backup} 
 

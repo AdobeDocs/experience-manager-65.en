@@ -11,7 +11,7 @@ topic-tags: operations
 
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Assigning Usage Rights {#assigning-usage-rights} 
 

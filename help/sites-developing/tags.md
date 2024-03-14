@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 feature: Tagging
 exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Tagging{#tagging}
 

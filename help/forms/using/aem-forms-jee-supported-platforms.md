@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 
 # Supported Platforms for AEM Forms on JEE {#supported-platforms-for-aem-forms-on-jee}

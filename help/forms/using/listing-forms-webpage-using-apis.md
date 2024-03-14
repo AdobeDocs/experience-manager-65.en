@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 
 exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Listing forms on a web page using APIs {#listing-forms-on-a-web-page-using-apis}
 

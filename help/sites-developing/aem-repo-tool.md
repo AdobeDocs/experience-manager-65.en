@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # AEM Repo Tool{#aem-repo-tool}
 

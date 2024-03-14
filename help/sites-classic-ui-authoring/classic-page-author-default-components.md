@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Components{#components}
 

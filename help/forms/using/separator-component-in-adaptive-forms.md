@@ -6,7 +6,7 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Separator component in adaptive forms{#separator-component-in-adaptive-forms}
 

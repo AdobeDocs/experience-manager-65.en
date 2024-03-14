@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Running AEM in Production Ready Mode{#running-aem-in-production-ready-mode}
 

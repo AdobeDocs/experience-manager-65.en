@@ -11,7 +11,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Components for Page Authoring{#components-for-page-authoring}
 

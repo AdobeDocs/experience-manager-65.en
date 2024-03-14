@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # IBM DB2 database: Running commands for regular maintenance {#ibm-db-database-running-commands-for-regular-maintenance}
 

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 
 exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Create targeted experiences in AEM Forms {#create-targeted-experiences-in-aem-forms}
 

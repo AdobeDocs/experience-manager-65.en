@@ -8,7 +8,7 @@ topic-tags: Security
 content-type: reference
 
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Configuring LDAP with AEM 6 {#configuring-ldap-with-aem}
 

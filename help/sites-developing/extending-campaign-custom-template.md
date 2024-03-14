@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Creating Custom AEM Page Template with Adobe Campaign Form Components{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 

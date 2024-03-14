@@ -11,7 +11,7 @@ docset: aem65
 
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Document Fragments{#document-fragments}
 

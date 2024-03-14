@@ -8,7 +8,7 @@ topic-tags: introduction
 content-type: reference
 
 exl-id: 57d45b06-e76e-420c-8cd0-389bd9f811af
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Selecting your UI{#selecting-your-ui}
 

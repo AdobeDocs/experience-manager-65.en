@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Integrating with the Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 

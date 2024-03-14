@@ -11,7 +11,7 @@ topic-tags: publish
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Creating a forms portal page{#creating-a-forms-portal-page}
 

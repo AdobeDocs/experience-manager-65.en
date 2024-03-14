@@ -11,7 +11,7 @@ content-type: reference
 
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Building Tagging into an AEM Application{#building-tagging-into-an-aem-application}
 

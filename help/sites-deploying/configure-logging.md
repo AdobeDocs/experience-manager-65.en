@@ -11,7 +11,7 @@ content-type: reference
 
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Logging{#logging}
 

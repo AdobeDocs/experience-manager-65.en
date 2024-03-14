@@ -11,7 +11,7 @@ content-type: reference
 
 docset: aem65
 exl-id: ee5df2c8-ab31-4be9-8ede-3c96f26fc626
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Compiling your Test Plan{#compiling-your-test-plan}
 

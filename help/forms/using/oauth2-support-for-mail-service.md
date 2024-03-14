@@ -2,7 +2,7 @@
 title: Configure OAuth2-based authentication for Microsoft&reg (Forms JEE OAuth); Office 365 mail server protocols
 description: Configure OAuth2-based authentication for Microsoft&reg (Forms JEE OAuth); Office 365 mail server protocols
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Integrate AEM Forms with Microsoft&reg; Office 365 mail server protocols {#oauth2-support-for-the-microsoft-mail-server-protocols}
 

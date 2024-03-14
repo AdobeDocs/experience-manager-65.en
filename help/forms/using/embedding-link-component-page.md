@@ -10,7 +10,7 @@ topic-tags: publish
 
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Embedding link component in a page{#embedding-link-component-in-a-page}
 

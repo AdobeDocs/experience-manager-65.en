@@ -9,7 +9,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Install feature pack 18912 for bulk asset migration{#installing-feature-pack-for-bulk-asset-migration}
 

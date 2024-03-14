@@ -3,7 +3,7 @@ title: Dynamic Media newsletter archive
 description: The archived Dynamic Media Newsletter by Experience League was a monthly newsletter. It was designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you could realize value right away. The archived newsletters contain valuable knowledge-building resources that were available in this one-stop shop newsletter that is now discontinued. Archived newsletters include how-to videos and solution overviews. There are also introductions to key features and capabilities like image presets, viewer presets, and video profiles. 
 keywords: Dynamic Media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 contentOwner: Rick Brough 
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Collaboration,Dynamic Media Classic

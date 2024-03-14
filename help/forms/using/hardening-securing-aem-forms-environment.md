@@ -8,7 +8,7 @@ topic-tags: Security
 
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Hardening and Securing AEM forms on OSGi environment {#hardening-and-securing-aem-forms-on-osgi-environment}
 

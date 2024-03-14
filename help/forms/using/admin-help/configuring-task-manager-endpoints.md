@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 8495a3d7-6ac9-41f5-b1f9-31decaba118a
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configuring Task Manager endpoints {#configuring-task-manager-endpoints}
 

@@ -9,7 +9,7 @@ topic-tags: Configuration
 docset: aem65
 role: Admin
 exl-id: 025a3314-8b9d-48e1-a74f-ea0c933e21e3
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configuring AEM Forms to submit form data to an AEM form on JEE process{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 

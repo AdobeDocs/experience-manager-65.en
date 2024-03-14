@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Administering Workflow Instances{#administering-workflow-instances}
 

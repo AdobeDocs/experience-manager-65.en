@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 
 exl-id: e0a261a2-518b-4984-a5b5-24f0b9222e24
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Changing the color scheme of the interface {#changing-the-color-scheme-of-the-interface}
 

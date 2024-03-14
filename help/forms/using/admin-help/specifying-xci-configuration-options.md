@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Specifying XCI configuration options {#specifying-xci-configuration-options}
 

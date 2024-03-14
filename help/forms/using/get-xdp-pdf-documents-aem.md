@@ -12,7 +12,7 @@ docset: aem65
 
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Getting XDP and PDF documents in AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 

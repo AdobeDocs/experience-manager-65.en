@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # How to Develop AEM Projects Using Eclipse{#how-to-develop-aem-projects-using-eclipse}
 

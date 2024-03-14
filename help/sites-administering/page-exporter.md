@@ -2,7 +2,7 @@
 title: The Page Exporter
 description: Learn how to use the Adobe Experience Manager (AEM) Page Exporter.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # The Page Exporter{#the-page-exporter}
 

@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Opening a task {#opening-a-task}
 

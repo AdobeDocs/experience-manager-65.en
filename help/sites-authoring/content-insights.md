@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Content Insight{#content-insight}
 

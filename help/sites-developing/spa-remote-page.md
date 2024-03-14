@@ -2,7 +2,7 @@
 title: The RemotePage Component
 description: The RemotePage Component is a custom page component for editing remote React SPA within AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # The RemotePage Component {#remote-page-component}
 

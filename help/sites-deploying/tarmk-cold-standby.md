@@ -8,7 +8,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # How to Run AEM with TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
 

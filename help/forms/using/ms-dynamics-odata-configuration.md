@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Microsoft Dynamics OData configuration{#microsoft-dynamics-odata-configuration}
 

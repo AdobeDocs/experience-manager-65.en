@@ -8,7 +8,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # RDBMS Support in AEM 6.4{#rdbms-support-in-aem}
 

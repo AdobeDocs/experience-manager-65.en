@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Integrating with Salesforce {#integrating-with-salesforce}

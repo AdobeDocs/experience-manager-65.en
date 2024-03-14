@@ -10,7 +10,7 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # XFA support in XDP-based adaptive forms{#xfa-support-in-xdp-based-adaptive-forms}
 

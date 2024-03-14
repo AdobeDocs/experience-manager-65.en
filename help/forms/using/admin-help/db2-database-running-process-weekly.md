@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: ca2cfe35-b602-4ef8-b4e3-af846105d4de
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # DB2 database: Running a process weekly{#db-database-running-a-process-weekly}
 

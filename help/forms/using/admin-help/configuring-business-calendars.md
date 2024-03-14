@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configuring Business Calendars {#configuring-business-calendars}
 

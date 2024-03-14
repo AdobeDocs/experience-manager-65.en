@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Starting and stopping services {#starting-and-stopping-services}
 

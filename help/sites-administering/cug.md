@@ -7,7 +7,7 @@ topic-tags: Security
 content-type: reference
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Creating a Closed User Group{#creating-a-closed-user-group}
 

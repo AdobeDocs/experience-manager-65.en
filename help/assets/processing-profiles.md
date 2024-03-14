@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Profiles for processing metadata, images, and videos{#profiles-for-processing-metadata-images-and-videos}
 

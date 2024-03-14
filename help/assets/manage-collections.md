@@ -7,7 +7,7 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: yes
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Manage collections {#managing-collections}
 

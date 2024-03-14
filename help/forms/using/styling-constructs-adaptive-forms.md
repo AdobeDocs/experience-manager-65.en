@@ -7,7 +7,7 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Styling constructs for adaptive forms{#styling-constructs-for-adaptive-forms}
 

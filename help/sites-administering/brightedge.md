@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 
 exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Integrating with BrightEdge Content Optimizer{#integrating-with-brightedge-content-optimizer}
 

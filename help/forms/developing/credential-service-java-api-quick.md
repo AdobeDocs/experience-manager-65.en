@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Credential Service Java&trade; API Quick Start (SOAP) {#credential-service-java-api-quickstart-soap}
 

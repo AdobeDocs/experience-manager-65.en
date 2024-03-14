@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Document Management Service (Deprecated) Java API Quick Start (SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
 

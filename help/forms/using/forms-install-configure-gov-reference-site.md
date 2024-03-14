@@ -4,7 +4,7 @@ description: Install, configure, and customize an AEM Forms demo package.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Set up and configure We.Gov and We.Finance reference site {#set-up-and-configure-we-gov-reference-site}
 

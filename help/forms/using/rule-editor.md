@@ -7,7 +7,7 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Adaptive forms rule editor{#adaptive-forms-rule-editor}
 

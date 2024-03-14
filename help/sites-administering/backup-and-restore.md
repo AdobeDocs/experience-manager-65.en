@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Backup and Restore{#backup-and-restore}
 

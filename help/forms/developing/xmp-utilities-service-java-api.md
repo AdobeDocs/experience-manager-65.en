@@ -11,7 +11,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: 699a7309-a976-480e-886f-2e466a477348
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # XMP Utilities Service Java API Quick Start (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 

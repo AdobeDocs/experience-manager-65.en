@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Introduction to the AEM Platform{#introduction-to-the-aem-platform}

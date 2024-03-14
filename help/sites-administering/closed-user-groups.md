@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Closed User Groups in AEM{#closed-user-groups-in-aem}
 

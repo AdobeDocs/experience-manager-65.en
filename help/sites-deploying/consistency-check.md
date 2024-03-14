@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 feature: Configuring
 exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Consistency and Traversal Checks{#consistency-and-traversal-checks}
 

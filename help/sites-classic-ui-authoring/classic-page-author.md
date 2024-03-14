@@ -8,7 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Authoring Pages{#authoring-pages}
 

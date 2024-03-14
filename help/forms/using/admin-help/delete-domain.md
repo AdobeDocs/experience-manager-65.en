@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 01a4faf0-ec6e-475b-9909-c35298e2fcaf
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Delete a domain {#delete-a-domain}
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: cf5283a5-dbfb-460d-a8bd-11cd15ab8640
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configure AEM forms to prefetchdomain information {#configure-aem-forms-to-prefetchdomain-information}
 

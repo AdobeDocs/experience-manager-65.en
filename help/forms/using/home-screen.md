@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Home screen{#home-screen}
 

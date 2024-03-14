@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Customize create correspondence UI{#customize-create-correspondence-ui}
 

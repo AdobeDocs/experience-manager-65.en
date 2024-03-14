@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # AEM Tagging Framework {#aem-tagging-framework}
