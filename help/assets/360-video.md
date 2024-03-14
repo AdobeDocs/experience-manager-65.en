@@ -1,6 +1,6 @@
 ---
 title: 360/VR Video
-description: Learn how to work with 360 and Virtual Reality (VR) Video in Dynamic Media.
+description: Learn how to work with and use 360 and Virtual Reality (VR) Video in Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
