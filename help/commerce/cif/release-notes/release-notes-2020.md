@@ -2,7 +2,7 @@
 title: AEM Content and Commerce Release Notes 2020
 description: Adobe Experience Manager Content and Commerce Release Notes 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-solution: "Experience Manager,Commerce"
+solution: Experience Manager,Commerce
 ---
 # Commerce Integration Framework GitHub Release Overview
 

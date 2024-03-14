@@ -9,7 +9,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-solution: "Experience Manager,Commerce"
+solution: Experience Manager,Commerce
 ---
 # Style AEM CIF Core Components {#style-aem-cif-core-components}
 

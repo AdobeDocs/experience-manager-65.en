@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-solution: "Experience Manager,Commerce"
+solution: Experience Manager,Commerce
 ---
 # Customize Adobe Experience Manager CIF Core Components {#customize-cif-components}
 

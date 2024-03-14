@@ -2,7 +2,7 @@
 title: AEM Content and Commerce Release Notes 2022
 description: Adobe Experience Manager Content and Commerce Release Notes 2022.
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-solution: "Experience Manager,Commerce"
+solution: Experience Manager,Commerce
 ---
 # Commerce Integration Framework GitHub Release Overview
 

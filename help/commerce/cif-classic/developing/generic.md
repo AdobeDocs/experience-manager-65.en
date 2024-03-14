@@ -3,7 +3,7 @@ title: Developing (generic)
 description: The integration framework includes an integration layer with an API, allowing you to build AEM components for eCommerce capabilities.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-solution: "Experience Manager,Commerce"
+solution: Experience Manager,Commerce
 ---
 # Developing (generic){#developing-generic}
 

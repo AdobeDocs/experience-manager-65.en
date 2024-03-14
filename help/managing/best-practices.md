@@ -7,7 +7,7 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-solution: "Experience Manager, Experience Manager 6.5"
+solution: Experience Manager, Experience Manager 6.5
 ---
 # Managing Projects - Best Practices Checklist{#managing-projects-best-practices-checklist}
 
