@@ -2,6 +2,7 @@
 title: A Quick Guide to WCAG 2.1
 description: A Quick Guide to Web Content Accessibility Guidelines (WCAG) version 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
+solution: "Experience Manager, Experience Manager 6.5"
 ---
 # A Quick Guide to WCAG 2.1{#quick-guide-to-wcag}
 

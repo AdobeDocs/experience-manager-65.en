@@ -10,6 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
+solution: Experience Manager Sites
 ---
 # Creating Custom Form Mappings{#creating-custom-form-mappings}
 

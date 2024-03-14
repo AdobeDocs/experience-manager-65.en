@@ -11,6 +11,7 @@ content-type: reference
 
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
+solution: Experience Manager Sites
 ---
 
 # Granite Operations - User and Group Administration{#granite-operations-user-and-group-administration}

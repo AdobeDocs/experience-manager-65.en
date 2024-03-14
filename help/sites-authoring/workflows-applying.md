@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
+solution: Experience Manager Sites
 ---
 # Applying Workflows to Pages{#applying-workflows-to-pages}
 

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
+solution: Experience Manager Sites
 ---
 # Using Tags{#using-tags}
 

@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
+solution: Experience Manager Forms
 ---
 # Monitoring events {#monitoring-events}
 

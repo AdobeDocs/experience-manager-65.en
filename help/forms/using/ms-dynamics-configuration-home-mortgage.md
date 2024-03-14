@@ -4,6 +4,7 @@ description: Learn how to use the Microsoft&reg; Dynamics 365 services through a
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
+solution: Experience Manager Forms
 ---
 # Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 

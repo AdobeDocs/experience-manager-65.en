@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
+solution: Experience Manager Sites
 ---
 # Query Builder Predicate Reference{#query-builder-predicate-reference}
 

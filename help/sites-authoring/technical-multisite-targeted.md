@@ -10,6 +10,7 @@ content-type: reference
 topic-tags: personalization
 
 exl-id: d8ba91ff-ad6e-4540-baff-a2c0c764a299
+solution: Experience Manager Sites
 ---
 # How Multisite Management for Targeted Content is Structured{#how-multisite-management-for-targeted-content-is-structured}
 

@@ -7,6 +7,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
+solution: Experience Manager Sites
 ---
 # SPA Editor Overview{#spa-editor-overview}
 

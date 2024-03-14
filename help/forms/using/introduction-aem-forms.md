@@ -8,6 +8,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
 
+solution: Experience Manager Forms
 ---
 # Introduction to AEM Forms{#introduction-to-aem-forms}
 

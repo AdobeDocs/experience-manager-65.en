@@ -7,6 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
+solution: Experience Manager Sites
 ---
 # Extending the Multi Site Manager{#extending-the-multi-site-manager}
 

@@ -7,6 +7,7 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
+solution: Experience Manager Sites
 ---
 # Single Sign On {#single-sign-on}
 

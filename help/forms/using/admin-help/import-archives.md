@@ -6,6 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
+solution: Experience Manager Forms
 ---
 # Import and manage archives {#import-and-manage-archives}
 

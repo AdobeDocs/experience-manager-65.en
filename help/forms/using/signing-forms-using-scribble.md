@@ -6,6 +6,7 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
+solution: Experience Manager Forms
 ---
 # Apply electronic signatures to a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 

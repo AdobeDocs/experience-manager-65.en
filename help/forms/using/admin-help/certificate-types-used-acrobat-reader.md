@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
+solution: Experience Manager Forms
 ---
 # Certificate types used by Acrobat Reader DC extensions {#certificate-types-used-by-acrobat-reader-dc-extensions}
 

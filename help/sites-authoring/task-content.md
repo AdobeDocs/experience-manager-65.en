@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
+solution: Experience Manager Sites
 ---
 
 # Working with Tasks {#working-with-tasks}

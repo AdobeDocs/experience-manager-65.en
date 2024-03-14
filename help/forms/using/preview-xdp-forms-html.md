@@ -11,6 +11,7 @@ docset: aem65
 
 feature: HTML5 Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
+solution: Experience Manager Forms
 ---
 # Generate HTML5 preview of an XDP form{#generate-html-preview-of-an-xdp-form}
 

@@ -7,6 +7,7 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
+solution: Experience Manager Forms
 ---
 # Adaptive form fragments{#adaptive-form-fragments}
 

@@ -9,6 +9,7 @@ topic-tags: page-authoring
 content-type: reference
 
 exl-id: b55d9edc-a210-407a-aa4b-a91bb358be7b
+solution: Experience Manager Sites
 ---
 # Page Authoring with Content Fragments{#page-authoring-with-content-fragments}
 

@@ -13,6 +13,7 @@ docset: aem65
 
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
+solution: Experience Manager Forms
 ---
 # Interactive Communications configuration properties{#interactive-communications-configuration-properties}
 

@@ -8,6 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
+solution: Experience Manager Sites
 ---
 # Troubleshooting AEM when Authoring{#troubleshooting-aem-when-authoring}
 

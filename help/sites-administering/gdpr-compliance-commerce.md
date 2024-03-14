@@ -7,6 +7,7 @@ description: Learn about the procedures to handle GDPR requests in AEM Commerce 
 contentOwner: carlino
 
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
+solution: Experience Manager Sites
 ---
 # AEM Commerce - GDPR Readiness{#aem-commerce-gdpr-readiness}
 

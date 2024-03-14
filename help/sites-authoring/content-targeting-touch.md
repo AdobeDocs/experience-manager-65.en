@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
+solution: Experience Manager Sites
 ---
 # Authoring Targeted Content Using Targeting Mode{#authoring-targeted-content-using-targeting-mode}
 

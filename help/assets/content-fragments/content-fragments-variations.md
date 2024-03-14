@@ -4,6 +4,7 @@ description: Understand how variations can make your headless content in AEM eve
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
+solution: Experience Manager Assets
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 

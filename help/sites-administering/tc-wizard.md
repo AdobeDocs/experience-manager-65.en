@@ -3,6 +3,7 @@ title: Language Copy Wizard
 description: Learn about using the Language Copy Wizard in Adobe Exeprience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
+solution: Experience Manager Sites
 ---
 # Language Copy Wizard{#language-copy-wizard}
 

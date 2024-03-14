@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
+solution: Experience Manager Sites
 ---
 # Internationalizing UI Strings {#internationalizing-ui-strings}
 

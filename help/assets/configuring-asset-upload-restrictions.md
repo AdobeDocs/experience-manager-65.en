@@ -5,6 +5,7 @@ contentOwner: AG
 role: Developer, Admin, Architect
 feature: Asset Management,Upload
 exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
+solution: Experience Manager Assets
 ---
 # Configure asset upload restrictions {#configuring-asset-upload-restrictions}
 

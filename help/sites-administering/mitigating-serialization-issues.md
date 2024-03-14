@@ -10,6 +10,7 @@ topic-tags: Security
 content-type: reference
 
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
+solution: Experience Manager Sites
 ---
 # Mitigating serialization issues in AEM{#mitigating-serialization-issues-in-aem}
 

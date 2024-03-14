@@ -10,6 +10,7 @@ topic-tags: customization
 
 docset: aem65
 exl-id: 7c2a91c8-9b68-4491-88e2-f7ea68f5a79f
+solution: Experience Manager Forms
 ---
 # Adding custom action on form lister items{#adding-custom-action-on-form-lister-items}
 

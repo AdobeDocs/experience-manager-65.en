@@ -7,6 +7,7 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
+solution: Experience Manager Sites
 ---
 # Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 

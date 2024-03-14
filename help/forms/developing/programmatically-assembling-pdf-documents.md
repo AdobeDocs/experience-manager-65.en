@@ -12,6 +12,7 @@ topic-tags: operations
 
 role: Developer
 exl-id: 7d6fd230-e477-4286-9fb3-18a3474e3e48
+solution: Experience Manager Forms
 ---
 # Programmatically Assembling PDF Documents {#programmatically-assembling-pdf-documents} 
 

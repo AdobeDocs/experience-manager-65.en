@@ -6,6 +6,7 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
+solution: "Experience Manager,Commerce"
 ---
 # Administering generic eCommerce {#administering-generic-ecommerce}
 

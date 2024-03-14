@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
+solution: Experience Manager Sites
 ---
 # Cloud Service Configurations{#cloud-service-configurations}
 

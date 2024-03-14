@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
+solution: Experience Manager Sites
 ---
 # Adaptive Template Rendering{#adaptive-template-rendering}
 

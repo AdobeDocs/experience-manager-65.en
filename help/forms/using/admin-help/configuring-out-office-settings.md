@@ -6,6 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
+solution: Experience Manager Forms
 ---
 # Configuring Out of Office Settings {#configuring-out-of-office-settings}
 

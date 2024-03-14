@@ -5,6 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
+solution: Experience Manager Forms
 ---
 # Best practices for working with adaptive forms {#best-practices-for-working-with-adaptive-forms}
 

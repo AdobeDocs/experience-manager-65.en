@@ -7,6 +7,7 @@ topic-tags: Configuration
 docset: aem65
 role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
+solution: Experience Manager Forms
 ---
 # Performance tuning of AEM Forms Server{#performance-tuning-of-aem-forms-server}
 

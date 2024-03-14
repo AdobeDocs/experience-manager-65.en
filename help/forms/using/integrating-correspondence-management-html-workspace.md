@@ -5,6 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
+solution: Experience Manager Forms
 ---
 # Integrating third-party applications in AEM Forms workspace{#integrating-third-party-applications-in-aem-forms-workspace}
 

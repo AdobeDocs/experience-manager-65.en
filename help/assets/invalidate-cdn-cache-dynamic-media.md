@@ -8,6 +8,7 @@ content-type: reference
 role: User, Admin
 feature: CDN Cache
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
+solution: Experience Manager Assets
 ---
 
 # Invalidate the CDN cache by way of Dynamic Media {#invalidating-cdn-cache-for-dm-assets}

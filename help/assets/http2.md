@@ -8,6 +8,7 @@ content-type: reference
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
+solution: Experience Manager Assets
 ---
 # HTTP/2 delivery of content {#http-delivery-of-content}
 

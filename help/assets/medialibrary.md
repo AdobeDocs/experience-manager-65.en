@@ -6,6 +6,7 @@ role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: yes
+solution: Experience Manager Assets
 ---
 
 # Use Media Library for basic asset management {#manage-assets-using-media-library}

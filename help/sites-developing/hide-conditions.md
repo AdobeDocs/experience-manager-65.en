@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
+solution: Experience Manager Sites
 ---
 # Using Hide Conditions {#using-hide-conditions}
 

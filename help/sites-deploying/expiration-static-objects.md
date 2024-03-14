@@ -7,6 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
+solution: Experience Manager Sites
 ---
 # Expiration of Static Objects{#expiration-of-static-objects}
 

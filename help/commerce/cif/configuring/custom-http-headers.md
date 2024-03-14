@@ -2,6 +2,7 @@
 title: Custom HTTP Headers
 description: Learn how to configure custom HTTP Headers in Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
+solution: "Experience Manager,Commerce"
 ---
 # Custom HTTP Headers {#custom-http-headers}
 

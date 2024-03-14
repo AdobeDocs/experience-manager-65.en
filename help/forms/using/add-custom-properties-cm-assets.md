@@ -12,6 +12,7 @@ docset: aem65
 
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
+solution: Experience Manager Forms
 ---
 # Add custom properties to Correspondence Management assets{#add-custom-properties-to-correspondence-management-assets}
 

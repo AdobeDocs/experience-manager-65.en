@@ -8,6 +8,7 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
+solution: Experience Manager Sites
 ---
 # Sustainable Upgrades{#sustainable-upgrades}
 

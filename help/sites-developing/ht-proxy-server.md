@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
+solution: Experience Manager Sites
 ---
 # How to use the Proxy Server Tool{#how-to-use-the-proxy-server-tool}
 

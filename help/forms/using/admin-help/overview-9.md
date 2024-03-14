@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 68a9d95a-d51c-4a97-ae36-d4cb16c6fac0
+solution: Experience Manager Forms
 ---
 # Overview of Forms workflow {#overview-of-forms-workflow}
 

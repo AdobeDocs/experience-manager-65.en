@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
+solution: Experience Manager Sites
 ---
 # Trying out Core Components in We.Retail{#trying-out-core-components-in-we-retail}
 

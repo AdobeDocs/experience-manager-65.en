@@ -8,6 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
+solution: Experience Manager Sites
 ---
 
 # User Synchronization{#user-synchronization}

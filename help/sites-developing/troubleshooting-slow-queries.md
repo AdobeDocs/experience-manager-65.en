@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: best-practices
 
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
+solution: Experience Manager Sites
 ---
 # Troubleshooting Slow Queries{#troubleshooting-slow-queries}
 

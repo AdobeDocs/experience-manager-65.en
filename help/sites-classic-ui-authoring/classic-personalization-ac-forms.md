@@ -8,6 +8,7 @@ topic-tags: personalization
 content-type: reference
 
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
+solution: Experience Manager Sites
 ---
 # Creating Adobe Campaign Forms in AEM{#creating-adobe-campaign-forms-in-aem}
 

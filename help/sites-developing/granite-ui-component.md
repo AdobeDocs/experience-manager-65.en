@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
+solution: Experience Manager Sites
 ---
 # Creating a New Granite UI Field Component{#creating-a-new-granite-ui-field-component}
 

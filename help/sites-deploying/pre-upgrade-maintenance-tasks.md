@@ -13,6 +13,7 @@ docset: aem65
 
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
+solution: Experience Manager Sites
 ---
 # Pre-Upgrade Maintenance Tasks{#pre-upgrade-maintenance-tasks}
 

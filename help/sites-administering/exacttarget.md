@@ -7,6 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
+solution: Experience Manager Sites
 ---
 # Integrating with ExactTarget{#integrating-with-exacttarget}
 

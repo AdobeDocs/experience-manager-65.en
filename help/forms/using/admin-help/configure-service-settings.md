@@ -6,6 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
+solution: Experience Manager Forms
 ---
 # Configure service settings {#configure-service-settings}
 

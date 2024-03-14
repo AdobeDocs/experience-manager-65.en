@@ -3,6 +3,7 @@ title: eCommerce Overview
 description: AEM generic eCommerce is available as part of the standard installation and provides you with the full functionality of the eCommerce framework.
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
+solution: "Experience Manager,Commerce"
 ---
 # eCommerce Overview{#ecommerce-overview}
 

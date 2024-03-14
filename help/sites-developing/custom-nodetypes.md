@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
+solution: Experience Manager Sites
 ---
 # Custom Node Types{#custom-node-types}
 

@@ -9,6 +9,7 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
+solution: Experience Manager Assets
 ---
 # Image Sets {#image-sets}
 

@@ -6,6 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
+solution: Experience Manager Forms
 ---
 # Preventing CSRF attacks {#preventing-csrf-attacks}
 

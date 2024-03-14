@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
+solution: Experience Manager Assets
 ---
 # Understand metadata concepts {#why-we-need-metadata}
 

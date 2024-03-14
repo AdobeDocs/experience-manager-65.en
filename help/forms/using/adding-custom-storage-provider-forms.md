@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
+solution: Experience Manager Forms
 ---
 # Custom storage for drafts and submissions component {#custom-storage-for-drafts-and-submissions-component}
 

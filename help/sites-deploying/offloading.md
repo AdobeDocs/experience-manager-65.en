@@ -7,6 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
+solution: Experience Manager Sites
 ---
 # Offloading Jobs{#offloading-jobs}
 

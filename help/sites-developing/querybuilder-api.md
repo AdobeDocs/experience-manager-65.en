@@ -8,6 +8,7 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
+solution: Experience Manager Sites
 ---
 # Query Builder API{#query-builder-api}
 

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
+solution: Experience Manager Sites
 ---
 # Sample ContextHub UI Module Types {#sample-contexthub-ui-module-types}
 

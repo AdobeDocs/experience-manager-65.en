@@ -10,6 +10,7 @@ content-type: reference
 topic-tags: personalization
 
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
+solution: Experience Manager Sites
 ---
 # Working with Targeted Content in Multisites{#working-with-targeted-content-in-multisites}
 

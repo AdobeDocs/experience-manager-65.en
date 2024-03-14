@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
+solution: Experience Manager Sites
 ---
 # Interacting with Workflows Programmatically{#interacting-with-workflows-programmatically}
 

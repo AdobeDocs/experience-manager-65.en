@@ -8,6 +8,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
+solution: Experience Manager Forms
 ---
 # Configuring form output{#configuring-form-output}
 

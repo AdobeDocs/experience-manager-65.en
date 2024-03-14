@@ -13,6 +13,7 @@ docset: aem65
 
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
+solution: Experience Manager Forms
 ---
 # About document security {#about-document-security}
 

@@ -12,6 +12,7 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
+solution: Experience Manager Sites
 ---
 # Developing AEM Components{#developing-aem-components}
 

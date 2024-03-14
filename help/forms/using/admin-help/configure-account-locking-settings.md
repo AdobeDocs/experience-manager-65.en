@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
+solution: Experience Manager Forms
 ---
 # Configure account-locking settings {#configure-account-locking-settings}
 

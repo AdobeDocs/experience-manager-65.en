@@ -5,6 +5,7 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
+solution: Experience Manager Sites
 ---
 # Web Console{#web-console}
 

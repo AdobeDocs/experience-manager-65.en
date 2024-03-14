@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 606e84f2-6728-47a9-a439-dbe2e55100ad
+solution: Experience Manager Forms
 ---
 # Configure User Management for an SSL-enabled LDAP server {#configure-user-management-for-an-ssl-enabled-ldap-server}
 

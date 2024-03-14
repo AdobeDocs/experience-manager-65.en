@@ -10,6 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 
 exl-id: d2a962b6-16be-4866-a856-5064f81c9610
+solution: Experience Manager Forms
 ---
 # Getting started with AEM Forms workspace {#getting-started-with-aem-forms-workspace}
 
