@@ -884,16 +884,16 @@ user-guide-title: AEM 6.5
     + [Displaying components based on the template used](/help/forms/using/displaying-components-based-on-template.md)
     + [Creating custom adaptive form themes](/help/forms/using/creating-custom-adaptive-form-themes.md)
   + Transaction Reports {#transaction-reports} 
-      + [Transaction Reports](/help/forms/using/transaction-reports-overview-jee-osgi.md)
+      + [Transaction reporting overview](/help/forms/using/transaction-reports-overview-jee-osgi.md)
       + Transaction Reports for AEM Forms on OSGi {#transaction-reports-osgi}
-        + [Enable transaction reports](/help/forms/using/transaction-reports-overview.md)
+        + [Transaction reports](/help/forms/using/transaction-reports-overview.md)
         + [Viewing and understanding transaction reports](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-        + [Transaction reports billable APIs](/help/forms/using/transaction-reports-billable-apis.md)
+        + [List of billable APIs for AEM Forms on OSGi](/help/forms/using/transaction-reports-billable-apis.md)
         + [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
       + Transaction Reports for AEM Forms on JEE {#transaction-reports-jee}
-        + [Enable and viewing transaction reports](/help/forms/using/transaction-report-overview-jee.md)
-        + [Transaction reports billable APIs](/help/forms/using/transaction-reports-billable-apis-jee.md)
-        + [Record a transaction for custom component](/help/forms/using/record-transaction-custom-component-jee.md)
+        + [Enabling and viewing transaction reports](/help/forms/using/transaction-report-overview-jee.md)
+        + [List of billable APIs for AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+        + [Record a transaction for custom component APIs](/help/forms/using/record-transaction-custom-component-jee.md)
   + Administrator help for AEM Forms on JEE {#administrator-help}
     + Get Started {#get-started}
       + [General AEM Forms settings](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)

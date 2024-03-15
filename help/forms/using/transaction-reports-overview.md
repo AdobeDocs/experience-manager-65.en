@@ -7,9 +7,9 @@ docset: aem65
 feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 ---
-# Transaction Reports Overview{#transaction-reports-overview}
+# Transaction Reports for AEM Forms on OSGi {#transaction-reports-overview}
 
-## Introduction {#introduction}
+<!--## Introduction {#introduction}
 
 Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -17,7 +17,7 @@ Transaction reports in AEM Forms let you keep a count of all transactions taken 
 * Rendition of a print or a web version of an interactive communication
 * Conversion of a document from one file format to another
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
 
 Transaction recording is disabled by default. You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. You can view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
 
@@ -51,6 +51,6 @@ The transaction count is reverse replicated from publish instances to author or 
 
 ## Related Articles {#related-articles}
 
-* [Viewing and Understanding a Transaction Reports](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Transaction Reports Billable APIs](../../forms/using/transaction-reports-billable-apis.md)
-* [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
+* [Viewing and Understanding a Transaction Report for AEM Forms on OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [Transaction Reports Billable APIs for AEM Forms on OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Record a transaction for custom implementations for AEM Forms on OSGi](/help/forms/using/record-transaction-custom-implementation.md)

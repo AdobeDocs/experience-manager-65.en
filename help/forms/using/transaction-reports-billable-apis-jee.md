@@ -1,20 +1,18 @@
 ---
 title: Transaction Reports Billable APIs for AEM Forms on JEE.
-description: List of all the APIs that are accounted as transactions.
+description: List of all the APIs that are accounted as transactions for AEM Forms on JEE.
 topic-tags: forms-manager
-docset: aem65
 feature: Transaction Reports 
 ---
-# Transaction reporting Billable APIs for AEM Forms on JEE{#transaction-reports-billable-apis}
+# Transaction reporting Billable APIs for AEM Forms on JEE {#transaction-reports-billable-apis}
 
-AEM Forms on JEE provides several APIs to submit, process, and render documents. Some APIs are accounted as transactions and others are free to use. This document provides a list of all the APIs that are accounted as transactions. Here are a few common scenarios where a billable API is used:
+AEM Forms on JEE provide several APIs to submit, process, and render documents. Some APIs are accounted as transactions and others are free to use. This document provides a list of all the APIs that are accounted as transactions. Here are a few common scenarios where a billable API is used:
 
 * Converting a document from one format to another
 * Flattening a dynamic PDF document
 * Merging an interactive PDF document with another PDF document
 
-Billing APIs does not account for the number of pages, the length of a document or form, or final format of the rendered document. A transaction report divides the transactions into three categories: Documents Rendered, Submitted, Converted.
-
+Billing APIs does not account for the number of pages, the length of a document or form, or final format of the rendered document.
 <!--
 
 * **Forms Submitted:** When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an HTML5 Form, PDF Forms are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.
@@ -23,12 +21,7 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 -->
 
->[!NOTE]
->
-> * Transaction Reports UI displays three categories: Documents Submitted, Documents Rendered, and Documents Processed.
->
-
-Below is the list of JEE billable APIs, For the list of OSGi billable APIs, visit [Transaction Reports Billable APIs for AEM Forms on OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis.html).
+Below is the list of JEE billable APIs. Find the list of [billable APIs for AEM Forms on OSGi](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## Billable Document Services APIs {#billable-document-services-apis}
 
@@ -310,8 +303,8 @@ The invoke API's usage is counted as a transaction, when you perform one or more
 
 >[!NOTE]
 >
->* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked.
->* A single PDF document produced using assembler service can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the supplied <!--DDX--> code.
+>* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the `invoke API` can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked.
+>* A single PDF document produced using assembler service such as `invoke` and `invokeDDX`, can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the supplied <!--DDX--> code.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}
@@ -540,5 +533,5 @@ Actions like submitting a PDF Form, using Agent UI to preview an interactive com
 
 ## Related Articles
 
-* [Enable and view transaction report on AEM Forms JEE](/help/forms/using/transaction-report-overview-jee.md)
-* [Record a custom implementation on AEM Forms JEE](/help/forms/using/record-transaction-custom-component-jee.md)
+* [Enabling and viewing transaction report for AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
+* [Record a transaction for custom component APIs for AEM Forms on JEE](/help/forms/using/record-transaction-custom-component-jee.md)
