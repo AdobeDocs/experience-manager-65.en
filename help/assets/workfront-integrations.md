@@ -5,7 +5,7 @@ role: Admin,Leader,Architect
 feature: Workfront Integrations and Apps
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: yes
-solution: Workfront
+solution: Experience Manager, Workfront
 ---
 # [!DNL Adobe Experience Manager Assets] integration with [!DNL Adobe Workfront] {#assets-integration-overview}
 
