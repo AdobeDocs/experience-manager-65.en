@@ -2,6 +2,7 @@
 title: Adobe Experience Manager (AEM) and the Web Accessibility Guidelines
 description: An Introduction to Adobe Experience Manager (AEM) and the Web Accessibility Guidelines
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
+solution: Experience Manager, Experience Manager 6.5
 ---
 # AEM and the Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
 

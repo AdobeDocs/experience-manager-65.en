@@ -8,6 +8,7 @@ topic-tags: integration
 content-type: reference
 
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Troubleshooting the Adobe Campaign Classic Integration{#troubleshooting-your-adobe-campaign-classic-integration}

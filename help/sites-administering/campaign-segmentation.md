@@ -7,6 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Configuring Segmentation {#configuring-segmentation}

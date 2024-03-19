@@ -8,6 +8,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configuring email endpoints {#configuring-email-endpoints}
 

@@ -6,6 +6,7 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
+solution: Experience Manager, Experience Manager Sites
 ---
 # JSON Exporter for Content Services{#json-exporter-for-content-services}
 

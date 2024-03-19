@@ -12,6 +12,7 @@ content-type: reference
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
+solution: Experience Manager, Experience Manager Sites
 ---
 # Custom User Group Mapping in AEM 6.5 {#custom-user-group-mapping-in-aem}
 

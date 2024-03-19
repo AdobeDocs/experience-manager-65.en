@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 feature: PDF Generator
 exl-id: 48a5d992-4681-41a8-8d1d-4da6767134c2
+solution: Experience Manager, Experience Manager Forms
 ---
 # Modifying the PDF Export conversion settings {#modifying-the-pdf-export-conversion-settings}
 

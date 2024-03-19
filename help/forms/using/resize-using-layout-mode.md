@@ -3,6 +3,7 @@ title: Use Layout mode to resize components for adaptive forms
 description: Define the position of components using the responsive grid available in Layout mode 
 feature: Adaptive Forms, Foundation Components
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
+solution: Experience Manager, Experience Manager Forms
 ---
 # Use Layout mode to resize components {#use-layout-mode-to-resize-components}
 

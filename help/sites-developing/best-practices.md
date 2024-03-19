@@ -10,6 +10,7 @@ content-type: reference
 topic-tags: best-practices
 
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
+solution: Experience Manager, Experience Manager Sites
 ---
 # Best Practices{#best-practices}
 

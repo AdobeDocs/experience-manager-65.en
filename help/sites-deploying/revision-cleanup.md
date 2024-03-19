@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
+solution: Experience Manager, Experience Manager Sites
 ---
 # Revision Cleanup{#revision-cleanup}
 

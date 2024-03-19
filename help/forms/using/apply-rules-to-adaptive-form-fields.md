@@ -8,6 +8,7 @@ page-status-flag: de-activated
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
+solution: Experience Manager, Experience Manager Forms
 ---
 # Tutorial: Apply rules to adaptive form fields {#tutorial-apply-rules-to-adaptive-form-fields}
 

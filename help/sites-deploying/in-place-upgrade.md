@@ -4,6 +4,7 @@ description: Learn how to perform an in-place upgrade for AEM 6.5.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
+solution: Experience Manager, Experience Manager Sites
 ---
 # Performing an In-Place Upgrade{#performing-an-in-place-upgrade}
 

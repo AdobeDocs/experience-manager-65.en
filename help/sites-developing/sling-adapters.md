@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
+solution: Experience Manager, Experience Manager Sites
 ---
 # Using Sling Adapters{#using-sling-adapters}
 

@@ -2,6 +2,7 @@
 title: Decoration Tag
 description: When a component in a web page is rendered, an HTML element can be generated, wrapping the rendered component within itself. For developers, AEM offers clear and simple logic controlling the decoration tags that wrap included components.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
+solution: Experience Manager, Experience Manager Sites
 ---
 # Decoration Tag{#decoration-tag}
 

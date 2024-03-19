@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
+solution: Experience Manager, Experience Manager Sites
 ---
 # Targeting your Adobe Campaign{#targeting-your-adobe-campaign}
 

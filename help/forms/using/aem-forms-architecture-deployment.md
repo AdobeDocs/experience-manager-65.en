@@ -11,6 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
+solution: Experience Manager, Experience Manager Forms
 ---
 # Architecture and deployment topologies for AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 

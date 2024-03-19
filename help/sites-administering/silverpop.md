@@ -7,6 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
+solution: Experience Manager, Experience Manager Sites
 ---
 # Integrating with Silverpop Engage{#integrating-with-silverpop-engage}
 

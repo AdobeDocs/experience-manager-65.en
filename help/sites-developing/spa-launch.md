@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: spa
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
+solution: Experience Manager, Experience Manager Sites
 ---
 # SPA and Adobe Experience Platform Launch Integration{#spa-and-adobe-experience-platform-launch-integration}
 

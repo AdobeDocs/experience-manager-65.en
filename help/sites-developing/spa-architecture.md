@@ -7,6 +7,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
+solution: Experience Manager, Experience Manager Sites
 ---
 # Developing SPAs for AEM{#developing-spas-for-aem}
 

@@ -5,6 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: dcec8c1b-13cc-486c-b1a4-62e6eb3184ad
+solution: Experience Manager, Experience Manager Sites
 ---
 # Indexing by way of the Oak-run Jar {#indexing-via-the-oak-run-jar}
 

@@ -7,6 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
+solution: Experience Manager, Experience Manager Forms
 ---
 # Add a custom action button in Create Correspondence UI {#add-custom-action-button-in-create-correspondence-ui}
 

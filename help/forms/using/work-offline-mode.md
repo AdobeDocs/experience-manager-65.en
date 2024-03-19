@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 
 exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
+solution: Experience Manager, Experience Manager Forms
 ---
 # Working in the offline mode {#working-in-the-offline-mode}
 

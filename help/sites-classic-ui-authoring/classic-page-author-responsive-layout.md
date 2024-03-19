@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: ccdce571-8b1c-4aca-a8c6-a909ec9b0516
+solution: Experience Manager, Experience Manager Sites
 ---
 # Responsive Layout{#responsive-layout}
 

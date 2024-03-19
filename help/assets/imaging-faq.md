@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
+solution: Experience Manager, Experience Manager Assets
 ---
 # Smart Imaging {#smart-imaging}
 

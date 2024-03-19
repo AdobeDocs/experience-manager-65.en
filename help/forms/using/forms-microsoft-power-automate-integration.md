@@ -4,6 +4,7 @@ description: A step-by-step guide to connect and send Adaptive Form data to Micr
 keywords: Adaptive Forms Microsoft Power Automate, Submit Adaptive Forms data to Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
+solution: Experience Manager, Experience Manager Forms
 ---
 # Connect and submit Adaptive Form data to Microsoft&reg; Power Automate {#connect-adaptive-form-with-power-automate}
 

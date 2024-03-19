@@ -8,6 +8,7 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
+solution: Experience Manager, Experience Manager Sites
 ---
 # Assessing the Upgrade Complexity with the Pattern Detector
 
