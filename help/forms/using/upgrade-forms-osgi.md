@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Upgrade to AEM 6.5 Forms on OSGi {#upgrade-to-aem-forms-osgi}
 

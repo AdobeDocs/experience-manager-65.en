@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 9ff75d98-54ad-425d-912f-d5a7501bf564
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Change the character set {#change-the-character-set}
 

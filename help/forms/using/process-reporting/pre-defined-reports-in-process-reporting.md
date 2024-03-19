@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 docset: aem65
 exl-id: 34e55676-6332-4616-aecc-bcc8cc1e8a29
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Pre-defined reports in Process Reporting {#pre-defined-reports-in-process-reporting}
 

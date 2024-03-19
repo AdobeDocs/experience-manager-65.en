@@ -8,7 +8,7 @@ content-type: reference
 feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Invalidate the Content Delivery Network cache by way of Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 

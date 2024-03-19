@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Extending and Configuring the Design Importer for Landing Pages{#extending-and-configuring-the-design-importer-for-landing-pages}
 

@@ -11,7 +11,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Workflow Step Reference {#workflow-step-reference}
 

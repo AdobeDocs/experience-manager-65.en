@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Asset Management
 exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Best practices to translate assets {#best-practices-for-translating-assets-efficiently}
 

@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 55cc7c57-87a0-4bfb-b226-36d01d36849a
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Configure Dynamic Media General Settings
 

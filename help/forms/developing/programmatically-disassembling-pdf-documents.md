@@ -11,7 +11,7 @@ topic-tags: operations
 
 role: Developer
 exl-id: c5e712e0-5c3f-48cd-91cf-fd347222a6b2
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Programmatically Disassembling PDF Documents {#programmatically-disassembling-pdf-documents} 
 

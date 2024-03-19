@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: best-practices
 
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Best Practices for Performance Testing{#best-practices-for-performance-testing}
 

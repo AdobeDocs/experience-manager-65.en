@@ -10,7 +10,7 @@ topic-tags: testing
 content-type: reference
 
 exl-id: 30ac9a63-f9e6-4075-b67e-4524d11a0e29
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Acceptance and Sign-off{#acceptance-and-sign-off}
 

@@ -11,7 +11,7 @@ topic-tags: operations
 
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Working with PDF/A Documents {#working-with-pdf-a-documents}
 

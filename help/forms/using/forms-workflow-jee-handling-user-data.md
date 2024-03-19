@@ -5,7 +5,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Forms JEE workflows | Handling user data {#forms-jee-workflows-handling-user-data}
 

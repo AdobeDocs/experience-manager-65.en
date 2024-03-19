@@ -2,7 +2,7 @@
 title: How to Build AEM Projects using Apache Maven
 description: This document describes how to set up an AEM project based on Apache Maven
 exl-id: 451913bf-bb1e-4444-aee5-968ac30b5c9d
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # How to Build AEM Projects using Apache Maven {#how-to-build-aem-projects-using-apache-maven}
 

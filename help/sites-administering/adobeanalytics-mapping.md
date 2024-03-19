@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Mapping Component Data with Adobe Analytics Properties{#mapping-component-data-with-adobe-analytics-properties}
 

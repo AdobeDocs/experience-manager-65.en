@@ -4,7 +4,7 @@ description: Learn how to prepare content for translation in Adobe Experience Ma
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Preparing Content for Translation{#preparing-content-for-translation}
 

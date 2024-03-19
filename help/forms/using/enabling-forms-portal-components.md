@@ -10,7 +10,7 @@ topic-tags: publish
 
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Enabling forms portal components {#enabling-forms-portal-components}
 

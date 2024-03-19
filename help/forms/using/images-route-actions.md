@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Customize images used in route actions {#customize-images-used-in-route-actions}
 

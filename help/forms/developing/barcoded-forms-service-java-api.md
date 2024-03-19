@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Barcoded Forms Service Java&trade; API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 

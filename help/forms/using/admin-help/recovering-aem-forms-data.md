@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Recovering the AEM forms data {#recovering-the-aem-forms-data}
 

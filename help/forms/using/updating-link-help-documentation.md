@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 
 exl-id: ca637bea-05c1-4920-9283-e782f07607de
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Updating the link to the documentation {#updating-the-link-to-the-documentation}
 

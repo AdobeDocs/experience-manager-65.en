@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # About [!DNL Adobe Experience Manager Assets] as a DAM solution {#administering-assets}
 

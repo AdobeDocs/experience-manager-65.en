@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 noindex: true
 exl-id: a23db58d-1236-4689-93fc-dea508f8eb81
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # PDF Generator backup limitations {#pdf-generator-backup-limitations}
 

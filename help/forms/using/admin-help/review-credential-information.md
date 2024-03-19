@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Review credential use information {#review-credential-use-information}
 

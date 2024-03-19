@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Configuring Cookie Usage{#configuring-cookie-usage}
 

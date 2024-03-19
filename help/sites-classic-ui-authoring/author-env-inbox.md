@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Your Inbox{#your-inbox}
 

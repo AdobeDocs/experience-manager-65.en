@@ -8,7 +8,7 @@ topic-tags: introduction
 content-type: reference
 
 exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Keyboard Shortcuts for Consoles{#keyboard-shortcuts-for-consoles}
 

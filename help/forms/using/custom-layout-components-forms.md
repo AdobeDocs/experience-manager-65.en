@@ -10,7 +10,7 @@ topic-tags: customization
 
 docset: aem65
 exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Creating custom layout components for adaptive forms{#creating-custom-layout-components-for-adaptive-forms}
 

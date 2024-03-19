@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 <!-- TBD: Get reviewed by engineering. -->
 

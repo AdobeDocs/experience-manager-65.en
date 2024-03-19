@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # AEM Brackets Extension{#aem-brackets-extension}
 

@@ -9,7 +9,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Search{#searching}
 

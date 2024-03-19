@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 49572f2a-f3ec-4ee6-98b8-2563de1cf96c
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Changing the organization logo for branding {#changing-the-organization-logo-for-branding}
 

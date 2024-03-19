@@ -7,7 +7,7 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Using the CRX2Oak Migration Tool{#using-the-crx-oak-migration-tool}
 

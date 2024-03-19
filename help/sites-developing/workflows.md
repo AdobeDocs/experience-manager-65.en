@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Developing and Extending Workflows{#developing-and-extending-workflows}

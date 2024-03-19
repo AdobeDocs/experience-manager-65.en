@@ -12,7 +12,7 @@ topic-tags: operations
 
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Validating DDX Documents {#validating-ddx-documents} 
 

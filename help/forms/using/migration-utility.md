@@ -9,7 +9,7 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Migrate AEM Forms assets and documents{#migrate-aem-forms-assets-and-documents}
 

@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Extend Asset Editor {#extending-asset-editor}
 

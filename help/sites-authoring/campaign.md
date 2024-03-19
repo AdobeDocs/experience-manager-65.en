@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Working with Adobe Campaign Classic and Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 

@@ -5,7 +5,7 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Rich Text Editor {#rich-text-editor}
 

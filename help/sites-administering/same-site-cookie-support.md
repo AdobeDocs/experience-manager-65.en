@@ -3,7 +3,7 @@ title: Same Site Cookie Support for AEM 6.5
 description: Learn about the Same Site Cookie Support for AEM 6.5.
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Same Site Cookie Support for AEM 6.5 {#same-site-cookie-support-for-aem-65}
 

@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Enable AEM to search document security protected PDF and Microsoft Office documents{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 

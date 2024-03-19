@@ -4,7 +4,7 @@ description: Learn how to use Adobe Experience Manager Assets to generate video 
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 feature: Video
 ---
 # Video renditions {#video-renditions}

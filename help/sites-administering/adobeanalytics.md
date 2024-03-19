@@ -11,7 +11,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
 

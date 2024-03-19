@@ -12,7 +12,7 @@ docset: aem65
 
 feature: Correspondence Management
 exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Integrating Create Correspondence UI with your custom portal{#integrating-create-correspondence-ui-with-your-custom-portal}
 

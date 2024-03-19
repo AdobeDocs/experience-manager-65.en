@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configure the LDAP bind password{#configure-the-ldap-bind-password}
 

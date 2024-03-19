@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configuring directories {#configuring-directories}
 

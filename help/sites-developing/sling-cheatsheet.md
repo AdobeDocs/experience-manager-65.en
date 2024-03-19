@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 
 exl-id: ea97ac1f-84d1-4707-892d-b2249ee1cab5
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Sling Cheatsheet{#sling-cheatsheet}
 

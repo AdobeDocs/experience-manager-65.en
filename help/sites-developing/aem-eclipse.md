@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 

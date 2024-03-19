@@ -13,7 +13,7 @@ docset: aem65
 
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Compatibility Package{#compatibility-package}
 

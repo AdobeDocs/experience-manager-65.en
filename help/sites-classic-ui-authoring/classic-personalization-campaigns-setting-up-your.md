@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Setting up your campaign{#setting-up-your-campaign}
 

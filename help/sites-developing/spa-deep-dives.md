@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 
 exl-id: aba1dc0f-eab1-40aa-8ab6-317e2fa7891c
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # SPA Deep Dives{#spa-deep-dives}
 

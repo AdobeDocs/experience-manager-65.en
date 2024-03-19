@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Custom special characters in Correspondence Management{#custom-special-characters-in-correspondence-management}
 

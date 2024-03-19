@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 
 exl-id: 48c24442-22d2-4d1a-9462-0aba78340281
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Customizing the task details page {#customizing-the-task-details-page}
 

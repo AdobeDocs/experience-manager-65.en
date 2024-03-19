@@ -5,7 +5,7 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Creating custom adaptive form themes {#creating-custom-adaptive-form-themes}
 

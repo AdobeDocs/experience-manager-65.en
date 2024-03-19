@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Planning{#planning}
 

@@ -9,7 +9,7 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Spin Sets{#spin-sets}
 

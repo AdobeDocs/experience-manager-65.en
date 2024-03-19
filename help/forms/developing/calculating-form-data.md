@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Calculating Form Data {#calculating-form-data} 
 

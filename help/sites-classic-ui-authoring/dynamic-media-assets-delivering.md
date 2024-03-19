@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: 40f41bb0-b3cb-4c16-b5db-ac8ea1a86aa3
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Deliver Dynamic Media assets{#delivering-dynamic-media-assets}
 

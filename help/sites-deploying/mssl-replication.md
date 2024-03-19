@@ -11,7 +11,7 @@ topic-tags: configuring
 
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Replicating Using Mutual SSL{#replicating-using-mutual-ssl}
 

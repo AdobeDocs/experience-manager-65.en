@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Configuring Segmentation with ContextHub{#configuring-segmentation-with-contexthub}
 

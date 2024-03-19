@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: d8bab1c4-b830-4491-9486-d7e7f4dc2c99
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Setting the message of the day {#setting-the-message-of-the-day}
 

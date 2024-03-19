@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Transaction Reports Overview{#transaction-reports-overview}
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Tips for minimizing database growth {#tips-for-minimizing-database-growth}
 

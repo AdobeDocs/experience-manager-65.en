@@ -7,7 +7,7 @@ topic-tags: site-features
 content-type: reference
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # MSM Rollout Conflicts{#msm-rollout-conflicts}
 

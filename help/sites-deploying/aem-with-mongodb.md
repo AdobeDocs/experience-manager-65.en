@@ -11,7 +11,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Adobe Experience Manager with MongoDB{#aem-with-mongodb}
 

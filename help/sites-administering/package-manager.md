@@ -8,7 +8,7 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Package Manager {#working-with-packages}

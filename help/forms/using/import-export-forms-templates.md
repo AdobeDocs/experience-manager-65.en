@@ -12,7 +12,7 @@ docset: aem65
 
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Importing and exporting assets to AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 

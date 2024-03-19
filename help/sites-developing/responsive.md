@@ -7,7 +7,7 @@ topic-tags: mobile-web
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Responsive Design for Web Pages{#responsive-design-for-web-pages}
 

@@ -2,7 +2,7 @@
 title: Disable UAC for PDFG Configuration applicable to both JEE and OSGI
 description: Learn the steps on how you can disable UAC for PDFG Configuration to fix Word to PDF conversion.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Unable to convert Word or Excel file to PDF on Windows Server {#unable-to-convert-word-excel-files-PDF}
 

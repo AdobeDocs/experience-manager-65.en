@@ -12,7 +12,7 @@ docset: aem65
 
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Custom watermark in letter PDF preview{#custom-watermark-in-letter-pdf-preview}
 

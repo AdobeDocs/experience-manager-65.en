@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Backing up and recovering the EMC Documentum repository {#backing-up-and-recovering-the-emc-documentum-repository}
 

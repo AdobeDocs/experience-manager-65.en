@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 <!--
 Possible topics to cover in this article are below.

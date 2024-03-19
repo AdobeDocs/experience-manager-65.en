@@ -9,7 +9,7 @@ topic-tags: site-features
 
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Create Launches{#creating-launches}
 

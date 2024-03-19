@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: best-practices
 
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Performance Tree{#performance-tree}
 

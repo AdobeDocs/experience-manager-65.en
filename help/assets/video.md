@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-solution: Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 ---
 # Video in Dynamic Media {#video}
 

@@ -3,7 +3,7 @@ title: AEM Forms JEE 6.5.15.0 service pack installation issue on JBoss® Linux®
 description: AEM Forms JEE 6.5.15.0 service pack  is not installed properly on the JBoss® Linux® environment, any patch changes are not applied to the application server. Add the `RUP_BOM.xml` file to the XML directory.
 SEO Description: AEM Forms JEE 6.5.15.0 service pack  is not installed properly on the JBoss Linux environment.
 exl-id: 96ecbe58-a859-4432-a2d8-3d5dc0eaf989
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # AEM Forms 6.5.15.0 JEE Service Pack installation issue on JBoss® environment {#aem-forms-installation-issue-environment}
 

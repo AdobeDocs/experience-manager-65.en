@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Obtaining Page Information in JSON Format{#obtaining-page-information-in-json-format}
 

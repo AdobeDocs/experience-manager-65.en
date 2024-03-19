@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: site-features
 
 exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Launches{#launches}
 

@@ -10,7 +10,7 @@ topic-tags: forms-manager
 
 role: Admin
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Download an XFA or a PDF form template {#download-an-xfa-or-a-pdf-form-template}
 

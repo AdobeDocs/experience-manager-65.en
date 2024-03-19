@@ -5,7 +5,7 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Tutorial: Create form data model {#tutorial-create-form-data-model}
 

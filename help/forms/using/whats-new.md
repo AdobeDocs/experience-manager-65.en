@@ -5,7 +5,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # New features summary | AEM 6.5 Forms{#new-features-summary-aem-forms}
 

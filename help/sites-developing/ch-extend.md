@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 41898fa7-a369-4c63-8ccb-69eb3fa146a1
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Extending ContextHub{#extending-contexthub}
 

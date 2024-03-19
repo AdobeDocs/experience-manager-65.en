@@ -14,7 +14,7 @@ targetaudience: target-audience upgrader
 
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Upgrading Code and Customizations{#upgrading-code-and-customizations}
 

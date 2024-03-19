@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Application Manager Client JavaAPI Quick Start (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 

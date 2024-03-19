@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Specify file locations for Output {#specify-file-locations-for-output}
 

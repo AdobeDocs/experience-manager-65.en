@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Form Bridge APIs for HTML5 forms {#form-bridge-apis-for-html-forms}
 

@@ -11,7 +11,7 @@ topic-tags: document_services
 
 feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Reader extending policy-protected PDF documents using Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 

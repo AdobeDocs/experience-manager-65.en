@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-solution: Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites
 ---
 # Recommended Deployments{#recommended-deployments}
 

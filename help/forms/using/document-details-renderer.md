@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 946f0f6d-86af-41c1-98ef-98c8f5566e95
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 ---
 # Document details for renderer {#document-details-for-renderer}
 
