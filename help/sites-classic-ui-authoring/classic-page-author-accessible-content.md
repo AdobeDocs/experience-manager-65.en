@@ -86,11 +86,11 @@ The **Alt Text** field is available in the **Advanced** image properties tab of 
 
 AEM adds an **Alt Text** to your images by default. For the classic UI, there are two different scenarios for how the default attribute is created, though the default value may not be sufficient as an alternative and likely must be edited in the **Advanced** image properties tab:
 
-*   File:
+* File:
 
   An image is uploaded from the user's hard drive. If you add an image component to a page and then choose an image from your hard drive, or another source, the default value for **Alt Text** is `file`. This value must be changed in the **Advanced** image properties tab. Again, this value is not displayed in the **Alt Text** field, but when the value is changed, the new value is displayed in the field.
 
-*   Asset:
+* Asset:
 
   An image is added from the digital asset repository. If you drag an image from the digital asset repository to a web page, then the **Title** and **Alt Text** values for that image are taken from the metadata for that image.
 
@@ -106,30 +106,30 @@ AEM adds an **Alt Text** to your images by default. For the classic UI, there ar
 
 There are various forms of non-text content, so the value of the text alternative depends on the role the graphic plays in the web page. Some general rules of thumb include the following:
 
-*   Text alternatives should be succinct yet clearly capture the essential information provided by the non-text content.
-*   Overly long descriptions (over 100 characters) should be avoided. If a text alternative requires more detail:
+* Text alternatives should be succinct yet clearly capture the essential information provided by the non-text content.
+* Long descriptions (more than 100 characters) should be avoided. If a text alternative requires more detail:
 
     * provide a short description in the alternative text
     * and have a longer description in text elsewhere on the same page or in a separate web page. Link to this separate description by making the image a link, or by placing a text link next to the image.
 
-*   Alternative text should not replicate content provided in text form nearby on the same page. Remember that many images are illustrations of points already covered in the text of a page, so a detailed text alternative may exist already.
-*   If the non-text content is a link to another page or document and there is no other text forming part of the same link, then the alternative text for the image must indicate the destination of the link. It must not describe the image.
-*   If the non-text content is contained in a button element and there is no text forming part of the same button, then the alternative text of the image must indicate the functionality of the button, not describe the image.
-*   It is acceptable for an image to be given empty (null), alternative text, but only if the image has no alternative text. For example, it is a purely decorative graphic. Or, if the equivalent text exists already in the page text.
+* Alternative text should not replicate content provided in text form nearby on the same page. Remember that many images are illustrations of points already covered in the text of a page, so a detailed text alternative may exist already.
+* If the non-text content is a link to another page or document and there is no other text forming part of the same link, then the alternative text for the image must indicate the destination of the link. It must not describe the image.
+* If the non-text content is contained in a button element and there is no text forming part of the same button, then the alternative text of the image must indicate the functionality of the button, not describe the image.
+* It is acceptable for an image to be given empty (null), alternative text, but only if the image has no alternative text. For example, it is a purely decorative graphic. Or, if the equivalent text exists already in the page text.
 
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://html.spec.whatwg.org/multipage/images.html#alt) has more details and examples of appropriate alternative text provision for images of different types.
 
 Specific types of non-text content that require text alternatives might include:
 
-*   Illustrative photos:
+* Illustrative photos:
 
   These are images of people, objects, or places. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of [object]*, but may depend on the surrounding text.
 
-*   Icons:
+* Icons:
 
   Small pictograms (graphics) conveying specific information. They must be consistently used across a page and site. All instances of the icon on a page or site should have the same short and succinct text alternative, unless doing so results in unnecessary duplication of adjacent text.
 
-*   Charts and graphs:
+* Charts and graphs:
 
   These typically represent numerical data. So one option for providing a text alternative might be to include a brief summary of the main trends shown in the chart or graphic. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. Also, you could provide the source data in tabular form elsewhere in the page or site.
 
@@ -149,21 +149,21 @@ Specific types of non-text content that require text alternatives might include:
 
   In AEM, you can use a combination of the **Alt Text** and **Description** fields in the image's configuration dialog - as in [How to Meet - Non-text Content (1.1.1)](#how-to-meet-non-text-content).
 
-*   Maps, diagrams, flowcharts:
+* Maps, diagrams, flowcharts:
 
   For graphics providing spatial data (for example. to support describing relationships between objects or a process), ensure that the key message is provided in text format. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image's alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
 
-*   CAPTCHAs:
+* CAPTCHAs:
 
   A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. It is a security check used on web pages to distinguish humans from malicious software, but which can cause accessibility barriers. They are images that require users to describe what they see to pass a security test. Providing a text alternative for the image is not possible, so instead you must consider alternative non-graphic solutions.
 
   The W3C provides several suggestions, such as the following. Each of these approaches has their own merits and drawbacks.
 
-    * Logic puzzles
-    * The use of sound output instead of images
-    * Limited use accounts and spam filters.
+  * Logic puzzles
+  * The use of sound output instead of images
+  * Limited use accounts and spam filters.
 
-*   Background images:
+* Background images:
 
   These images are achieved using Cascading Style Sheets (CSS) rather than in HTML. It is not possible to specify an alternative text value. Therefore background images should not provide important textual information - if they do, this information must also be provided in the page's text.
 
@@ -188,9 +188,9 @@ This information deals with web content that is *time-based*. This covers conten
 
 ### Audio-only and Video-only (Pre-recorded) (1.2.1) {#audio-only-and-video-only-pre-recorded}
 
-*   Success Criterion 1.2.1
-*   Level A
-*   Audio-only and Video-only (Prerecorded): For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:
+* Success Criterion 1.2.1
+* Level A
+* Audio-only and Video-only (Prerecorded): For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:
 
     * Prerecorded Audio-only: An alternative for time-based media is provided which presents equivalent information for prerecorded audio-only content.
     * Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided which presents equivalent information for prerecorded video-only content.
@@ -209,13 +209,13 @@ Providing this information in a different format, such as text (or audio for vid
 
 #### How to Meet - Audio-only and Video-only (Pre-recorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-pre-recorded}
 
-*   If the content is pre-recorded audio with no video (such as a podcast):
+* If the content is pre-recorded audio with no video (such as a podcast):
 
-    *   Provide a link immediately before or after the content to a text-transcript of the audio content.
+    * Provide a link immediately before or after the content to a text-transcript of the audio content.
 
       The transcript should be an HTML page with a text equivalent of all spoken and important non-spoken content. It should also indicate who is speaking, a description of the setting, vocal expressions, and a description of any other significant audio.
 
-*   If the content is an animation or pre-recorded video with no audio:
+* If the content is an animation or pre-recorded video with no audio:
 
     * Provide a link immediately before or after the content to an equivalent text description of the information provided by the video
     * Or an equivalent audio description in a commonly used audio format such as MP3.
@@ -285,17 +285,17 @@ People who are blind or visually impaired experience accessibility barriers if t
 
 There are two approaches that can be adopted to meet this success criterion. Either is acceptable:
 
-1.  Include additional audio description for the video content. You can accomplish this approach in one of three ways:
+1. Include additional audio description for the video content. You can accomplish this approach in one of three ways:
 
-    *   During pauses in the existing dialogue, provide information about changes in the scene that are not presented as part of the existing audio track;
-    *   Provide a new, additional, and optional audio track containing the original soundtrack, but also including extra audio information about changes in the scene.
+    * During pauses in the existing dialogue, provide information about changes in the scene that are not presented as part of the existing audio track;
+    * Provide a new, additional, and optional audio track containing the original soundtrack, but also including extra audio information about changes in the scene.
 
         * Users can switch between the existing audio track (which *does not* contain an audio description) and the new audio track (which *does* contain an audio description).
         * This method prevents disruption to users who do not need the additional description.
 
-    *   Create a second version of the video content to allow for extended audio descriptions. Doing so reduces the difficulties associated with providing detailed audio descriptions within the gaps between existing dialogue, by temporarily pausing the audio and video at appropriate points. As a result, a much longer audio description can be given, before the action starts again. As in the previous example, this is best provided as an optional extra audio track to prevent disruption to users who do not need the additional description.
+    * Create a second version of the video content to allow for extended audio descriptions. Doing so reduces the difficulties associated with providing detailed audio descriptions within the gaps between existing dialogue, by temporarily pausing the audio and video at appropriate points. As a result, a much longer audio description can be given, before the action starts again. As in the previous example, this is best provided as an optional extra audio track to prevent disruption to users who do not need the additional description.
 
-1.  Provide a text transcript that is a suitable text equivalent of the audio and visual elements of the video or animation. It should include, where appropriate, an indication as to who is speaking, a description of the setting, vocal expressions. Depending on its length, you can place the transcript on the same page as the video or animation, or on a separate page; if you choose the latter option, provide a link to the transcript next to the video or animation.
+1. Provide a text transcript that is a suitable text equivalent of the audio and visual elements of the video or animation. It should include, where appropriate, an indication as to who is speaking, a description of the setting, vocal expressions. Depending on its length, you can place the transcript on the same page as the video or animation, or on a separate page; if you choose the latter option, provide a link to the transcript next to the video or animation.
 
 Exact details of how to create audio-described video are beyond the scope of this guide. Creating videos and audio descriptions can be time consuming, but other Adobe products can help achieve these tasks. If you create content in Adobe Flash Professional, you should also create a script to prompt the user to download the appropriate plug-in, and provide a text alternative through the `<noscript>` element.
 
@@ -354,9 +354,9 @@ Follow the guidance provided for [Audio Description or Media Alternative (Pre-Re
 
 This guideline covers the requirements necessary to support people who:
 
-*   may not be able to access information as presented by an author in a *standard* two dimensional, multi-column, colored web page layout
+* may not be able to access information as presented by an author in a *standard* two dimensional, multi-column, colored web page layout
 
-*   may use an audio-only, or alternative visual display such as large text or high contrast.
+* may use an audio-only, or alternative visual display such as large text or high contrast.
 
 ### Info and Relationships (1.3.1)  {#info-and-relationships}
 
@@ -380,7 +380,7 @@ The following image shows text that has been styled as paragraph text; the sourc
 
 Make sure that your web pages are given the appropriate structure by:
 
-*   **Using headings:**
+* **Using headings:**
 
   As long as you have the accessibility features of the RTE enabled (see [AEM and Accessibility](/help/sites-administering/rte-accessible-content.md)), AEM offers three levels of page heading. You can use these to identify sections and subsections of content. Heading 1 is the highest level of heading, Heading 3 the lowest. The system administrator can configure the system to allow the use of more heading levels.
 
@@ -388,12 +388,12 @@ Make sure that your web pages are given the appropriate structure by:
 
   ![Headings H1 through to H3 shown in the drop-down selector (classic UI).](assets/chlimage_1-19a.png)
 
-*   **Emphasized text**:
+* **Emphasized text**:
 
   Use the &lt;strong&gt; or &lt;em&gt; element to indicate emphasis. Do not use headings to highlight text within paragraphs.
 
-    * Highlight the text you want to emphasize;
-    * Click on the **B** icon (for &lt;strong&gt;) or the **I** icon (for &lt;em&gt;) shown within the **Properties** panel (make sure that HTML is selected).
+  * Highlight the text you want to emphasize;
+  * Click on the **B** icon (for &lt;strong&gt;) or the **I** icon (for &lt;em&gt;) shown within the **Properties** panel (make sure that HTML is selected).
 
   >[!NOTE]
   >
@@ -404,13 +404,13 @@ Make sure that your web pages are given the appropriate structure by:
   >
   >They are effectively the same, but &lt;strong&gt; and &lt;em&gt; are preferable as they are semantically correct html. Your development team can configure the RTE to use &lt;strong&gt; and &lt;em&gt; (instead of &lt;b&gt; and &lt;i&gt;) when developing your project instance.
 
-*   **Use lists**: You can use HTML to specify three different types of lists:
+* **Use lists**: You can use HTML to specify three different types of lists:
 
-    *   The `<ul>` element is used for *unordered* lists (bulleted) lists. Individual list items are identified using the `<li>` element.
+    * The `<ul>` element is used for *unordered* lists (bulleted) lists. Individual list items are identified using the `<li>` element.
 
       in the RTE, use the **Bulleted List** icon.
 
-    *   The `<ol>` element is used for *numbered* lists. Individual list items are identified using the `<li>` element.
+    * The `<ol>` element is used for *numbered* lists. Individual list items are identified using the `<li>` element.
 
       In the RTE, use the **Numbered List** icon.
 
@@ -420,14 +420,14 @@ Make sure that your web pages are given the appropriate structure by:
   >
   >The `<dl>` element is not supported by the RTE.
 
-*   **Use tables**:
+* **Use tables**:
 
   Tables of data must be identified using HTML table elements:
 
-    * one `<table>` element
-    * a `<tr>` element for each row of the table
-    * a `<th>` element for each row and column heading
-    * a `<td>` element for every data cell
+  * one `<table>` element
+  * a `<tr>` element for each row of the table
+  * a `<th>` element for each row and column heading
+  * a `<td>` element for every data cell
 
   >[!NOTE]
   >
@@ -435,9 +435,9 @@ Make sure that your web pages are given the appropriate structure by:
 
   Also, accessible tables use the following elements and attributes:
 
-    * The `<caption>` element is used to provide a visible caption for the table. Captions by default appear centred above the table, but can be positioned appropriately using CSS. The caption is programmatically associated with the table, thus it is a useful method for providing an introduction to content.
-    * The `<h3 class="summary">` element assists non-sighted users to more easily understand the information presented within a table, by providing a synopsis of what a sighted user can see. This is particularly useful where complex or unconventional table layouts are used (this attribute is not displayed in the browser, it is only read out to assistive technologies).
-    * The `scope` attribute of the `<th>` element is used to indicate whether a cell represents a header for a particular row, or for a particular column. A similar approach is to use the header and id attributes in complex tables, where data cells may be associated with one or more headers.
+  * The `<caption>` element is used to provide a visible caption for the table. Captions by default appear centred above the table, but can be positioned appropriately using CSS. The caption is programmatically associated with the table, thus it is a useful method for providing an introduction to content.
+  * The `<h3 class="summary">` element assists non-sighted users to more easily understand the information presented within a table, by providing a synopsis of what a sighted user can see. This is particularly useful where complex or unconventional table layouts are used (this attribute is not displayed in the browser, it is only read out to assistive technologies).
+  * The `scope` attribute of the `<th>` element is used to indicate whether a cell represents a header for a particular row, or for a particular column. A similar approach is to use the header and id attributes in complex tables, where data cells may be associated with one or more headers.
 
   >[!NOTE]
   >
@@ -445,8 +445,8 @@ Make sure that your web pages are given the appropriate structure by:
 
   When adding a **Table**, you can configure **Table properties** using the dialog.
 
-    * an appropriate **Caption**.
-    * Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
+  * an appropriate **Caption**.
+  * Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
 
   ![Table properties dialog.](assets/chlimage_1-20a.png)
 
@@ -454,7 +454,7 @@ Make sure that your web pages are given the appropriate structure by:
 
   ![Call properties dialog; setting a row (usually the first one) as a header row.](assets/chlimage_1-21a.png)
 
-*   **Complex Data Tables:**
+* **Complex Data Tables:**
 
   Sometimes, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships must be created between the headers and their related cells using the **header** and **id** attributes. For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
 
@@ -595,9 +595,9 @@ If color is used as a cue to provide information, you should provide an extra vi
 
 ### Contrast (Minimum) (1.4.3) {#contrast-minimum}
 
-*   Success Criterion 1.4.3
-*   Level AA
-*   Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
+* Success Criterion 1.4.3
+* Level AA
+* Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
 
     * Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1.
     * Incidental: Text or images of text that are part of an inactive user interface component that are pure decoration or not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
@@ -635,9 +635,9 @@ If it is not possible to meet the recommended contrast levels, provide a link to
 
 ### Images of Text (1.4.5) {#images-of-text}
 
-*   Success Criterion 1.4.5
-*   Level AA
-*   Images of Text: If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:
+* Success Criterion 1.4.5
+* Level AA
+* Images of Text: If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:
 
     * Customizable: The image of text can be visually customized to the user's requirements;
     * Essential: A particular presentation of text is essential to the information being conveyed.
@@ -665,12 +665,19 @@ If images of text must be used, use CSS to replace the images of text with equiv
 
 ### Pause, Stop, Hide (2.2.2)  {#pause-stop-hide}
 
-*   Success Criterion 2.2.2
-*   Level A
-*   Pause, Stop, Hide: For moving, blinking, scrolling, or auto-updating information, the following are true:
+* Success Criterion 2.2.2
+* Level A
+* Pause, Stop, Hide: For moving, blinking, scrolling, or auto-updating information, the following are true:
 
-    * Moving, blinking, scrolling: For any moving, blinking, or scrolling information that (a) starts automatically, (b) lasts more than five seconds, and (c) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential;
-    * Auto-updating: For any auto-updating information that (a) starts automatically and (b) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.
+    * Moving, blinking, scrolling: For any moving, blinking, or scrolling information that
+      * (a) starts automatically,
+      * (b) lasts more than five seconds, and
+      * (c) is presented in parallel with other content, 
+      there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential;
+    * Auto-updating: For any auto-updating information that
+      * (a) starts automatically, and 
+      * (b) is presented in parallel with other content, 
+      there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.
 
 Points to note are:
 
@@ -763,12 +770,12 @@ For all users, regardless of impairment, clearly indicating the direction of a l
 
 Above all, make sure that the purpose of a link is clearly described within the text of the link.
 
-*   Bad Example:
+* Bad Example:
 
     * Text: For details of evening classes for autumn 2010, click here.
     * Reason: it does not clearly and unambiguously indicate its destination.
 
-*   Good Example:
+* Good Example:
 
     * Text: Evening classes for autumn 2010 - details.
     * Reason: By slightly adjusting the text and the position of the link element, the link text can be improved:
@@ -838,11 +845,11 @@ The purpose of this success criterion is to make sure that text and other lingui
 
 To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. For example:
 
-*   If a page is written in British English, the `<html>` element should read:
+* If a page is written in British English, the `<html>` element should read:
 
   `<html lang = "en-gb">`
 
-*   Whereas, a page to be rendered as US English should adopt the following standard:
+* Whereas, a page to be rendered as US English should adopt the following standard:
 
   `<html lang = "en-us">`
 
@@ -947,11 +954,11 @@ If input for a form field is mandatory, make this clear by using the word requir
 
 The positioning of labels is also important as it helps them to locate appropriate fields. This is of particular importance when the user is faced with a complex form. Follow the convention below:
 
-*   Checkboxes or radio buttons:
+* Checkboxes or radio buttons:
 
   Labels are positioned immediately to the right of the field.
 
-*   All other form components (for example, text boxes, combo boxes):
+* All other form components (for example, text boxes, combo boxes):
 
   Labels are positioned either immediately above or immediately to the left of the field.
 

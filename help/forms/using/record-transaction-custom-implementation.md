@@ -7,7 +7,7 @@ topic-tags: forms-manager
 feature: Transaction Reports
 exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
 ---
-# Record a transaction for custom implementations {#record-a-transaction-for-custom-implementations}
+# Record a transaction for custom implementations for AEM Forms on OSGi {#record-a-transaction-for-custom-implementations}
 
 Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 
@@ -85,6 +85,6 @@ $.ajax({
 
 ## Related Articles {#related-articles}
 
-* [Transaction Reports Overview](/help/forms/using/transaction-reports-overview.md)
-* [Viewing and Understanding a Transaction Reports](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [Transaction Reports Billable APIs](/help/forms/using/transaction-reports-billable-apis.md)
+* [Transaction Reports Overview for AEM Forms on OSGi](/help/forms/using/transaction-reports-overview.md)
+* [Viewing and Understanding a Transaction Reports for AEM Forms on OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [Transaction Reports Billable APIs for AEM Forms on OSGi](/help/forms/using/transaction-reports-billable-apis.md)

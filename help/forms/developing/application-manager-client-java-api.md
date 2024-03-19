@@ -28,7 +28,7 @@ The following Java&trade; API Quick Start(SOAP) is available for the Application
 
 [Quick Start (SOAP mode):Deleting the AEM Forms application archive using the Java&trade; API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

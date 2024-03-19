@@ -172,7 +172,7 @@ These properties are available in two tabs:
 
     * **Build list using**
       There are several ways to build a page list - Child Pages, Fixed List, Search, or Advanced Search (all described below).
-      No matter which method you choose, the pages you include in your list should each already have an image associated with the page. It is this image that is displayed in the Carousel. If there is no image for a given page under that page's Page Properties, you should associate an image with the page before beginning. If you don't, the Carousel displays a mostly blank page. See [Editing Page Properties](/help/sites-authoring/editing-page-properties.md).
+      No matter which method you choose, the pages you include in your list should each already have an image associated with the page. It is this image that is displayed in the Carousel. If there is no image for a given page under that page's Page Properties, you should associate an image with the page before beginning. If you do not, the Carousel displays a mostly blank page. See [Editing Page Properties](/help/sites-authoring/editing-page-properties.md).
       Depending on the item you choose, a new panel appears:
 
         * **Options for Child Pages**

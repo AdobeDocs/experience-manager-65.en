@@ -224,7 +224,7 @@ The content of the `topnav.jsp` file should appear as follows:
   All Rights Reserved.
 
   This software is the confidential and proprietary information of
-  Day Management AG, ("Confidential Information"). You shall not
+  Day Management AG ("Confidential Information"). You shall not
   disclose such Confidential Information and shall use it only in
   accordance with the terms of the license agreement you entered into
   with Day.

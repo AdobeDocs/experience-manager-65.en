@@ -120,7 +120,7 @@ To build a property predicate:
                "name": id + ".value"
            });
 
-           // Depending on the predicate additional parameters allow to configure the
+           // Depending on the predicate, additional parameters let you configure the
            // predicate. Here we add an operation parameter to create a "like" query.
            // Again note the name set to the id and a suffix.
            qb.addField({

@@ -34,7 +34,7 @@ Java API Quick Start(SOAP) is available for the Assembler service
 
 [Quick Start (SOAP mode): Assembling multiple XDP fragments using the Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

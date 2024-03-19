@@ -216,7 +216,7 @@ Take the following example query:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-To define a Lucene Property Index for the above query, you can add the following definition by creating a node under **oak:index:**
+To define a Lucene Property Index for the above query, you can add the following definition by creating a node under **`oak:index`:**
 
 * **Name:** `LucenePropertyIndex`
 * **Type:** `oak:QueryIndexDefinition`

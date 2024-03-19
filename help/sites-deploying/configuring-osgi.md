@@ -1,14 +1,10 @@
 ---
 title: Configuring OSGi
-
 description: OSGi is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and their configuration. This article details how you can manage the configuration settings for such bundles.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 ---
@@ -245,7 +241,7 @@ To actually add the new configuration to the repository:
     * Type: as appropriate.
     * Value: as required.
 
-   You only must create properties for the parameters that you want to configure, others still take the default values as set by AEM.
+   You must only create properties for the parameters that you want to configure, others still take the default values as set by AEM.
 
 1. Save all changes.
 

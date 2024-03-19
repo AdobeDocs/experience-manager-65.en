@@ -36,7 +36,7 @@ The following Java API Quick Start(SOAP) are available for AEM Forms JEE Signatu
 
 [Quick Start (SOAP mode): Apply document timestamp using the Java API](#quick-start-soap-mode-apply-document-timestamp-using-the-java-api)
 
-AEM Forms JEE operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms JEE operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

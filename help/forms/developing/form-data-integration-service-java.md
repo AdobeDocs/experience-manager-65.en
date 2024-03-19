@@ -20,7 +20,7 @@ The following Quick Starts are available for the Form Data Integration service.
 
 [Quick Start (SOAP mode): Exporting form data using the Java API](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

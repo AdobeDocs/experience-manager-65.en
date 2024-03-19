@@ -149,8 +149,8 @@ This section contains details and instructions on the post-deployment configurat
 
 1. Configure the service to connect to the SMTP server of your choice:
 
-    1. **SMTP Server hostname**: for example, (smtp.gmail.com)
-    1. **Server Port**: for example, (465) for gmail using SSL
+    1. **SMTP Server hostname**: for example (smtp.gmail.com)
+    1. **Server Port**: for example (465) for gmail using SSL
     1. **SMTP User:** demo@ &lt;companyname&gt; .com
     1. **"From" Address**: aemformsdemo@adobe.com
 

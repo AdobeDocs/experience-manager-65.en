@@ -26,7 +26,7 @@ The following Quick Starts are available for the PDF Utilities service.
 
 [Quick Start (SOAP mode): Sanitizing PDF documents](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

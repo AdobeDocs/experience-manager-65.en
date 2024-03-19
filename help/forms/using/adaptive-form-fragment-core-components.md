@@ -4,6 +4,7 @@ description: Adaptive Forms provides a mechanism to create a form segment, such 
 topic-tags: author
 keywords: Add Adaptive Form fragments, Adaptive Form fragments, Create a form fragment, Add a fragment to an Adaptive Form, Manage fragments
 feature: Adaptive Forms, Core Components
+exl-id: 4a1ba259-8eb5-408f-8ee7-4868f98cca03
 ---
 # Create and use Adaptive Forms Fragments in an Adaptive Form based on Core Components {#adaptive-form-fragments}
 
@@ -174,7 +175,7 @@ You can perform several operations on Adaptive Form fragments using the AEM Form
 ## Key points to remember when working with fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
-* In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment will be automatically bound to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment will be bound to the schema root.
+* In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment is automatically bound to the child XDP fragment. If an XSD-based Adaptive Form, the resulting fragment is bound to the schema root.
 * When you create an Adaptive Form fragment, a fragment node gets created, which is similar to the guideContainer node for an Adaptive Form, in CRXDE Lite.
 * A fragment in an Adaptive Form that uses a different form data model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and conversely.
 * Adaptive Form fragments are available for use through the Adaptive Form Fragments tab in AEM content finder.

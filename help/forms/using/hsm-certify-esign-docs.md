@@ -227,8 +227,8 @@ public class Sign{
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
 
-             //retrieve specifications for each of the services, you may pass null if you don't want to use that service
-             //as we don't want encryption in this case, passing null for Encryption Options
+             //retrieve specifications for each of the services, you may pass null if you do not want to use that service
+             //as we do not want encryption in this case, passing null for Encryption Options
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     outDoc = docAssuranceService.secureDocument(inDoc, null, getSignatureOptions(alias,resourceResolver),null,null);
         }
