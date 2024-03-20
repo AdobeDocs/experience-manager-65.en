@@ -7,6 +7,7 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Classic UI Tagging Console{#classic-ui-tagging-console}

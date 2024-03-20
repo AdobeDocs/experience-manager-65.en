@@ -2,6 +2,7 @@
 title: Your Inbox to manage tasks
 description: Managing your tasks with the inbox in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
+solution: Experience Manager, Experience Manager Sites
 ---
 # Your Inbox{#your-inbox}
 

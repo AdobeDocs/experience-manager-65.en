@@ -4,6 +4,7 @@ description: Install AEM Forms document services to create, assemble, distribute
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
+solution: Experience Manager, Experience Manager Forms
 ---
 
 # Installing and configuring document services {#installing-and-configuring-document-services}

@@ -2,6 +2,7 @@
 title: JWT Credentials Deprecation in Adobe Developer Console
 description: Learn about the impact of JWT credentials deprecation in Adobe Developer Console on AEM
 exl-id: f19a92de-ba6a-4f6d-9e12-60ad1bad2e74
+solution: Experience Manager, Experience Manager Sites
 ---
 # JWT Credentials Deprecation in Adobe Developer Console {#jwt-credentials-deprecation-in-adobe-developer-console}
 

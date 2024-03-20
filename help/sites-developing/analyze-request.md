@@ -10,6 +10,7 @@ topic-tags: testing
 content-type: reference
 
 exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
+solution: Experience Manager, Experience Manager Sites
 ---
 # Request Analysis Script{#request-analysis-script}
 

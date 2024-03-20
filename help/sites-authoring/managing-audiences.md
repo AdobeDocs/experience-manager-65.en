@@ -11,6 +11,7 @@ topic-tags: personalization
 
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
+solution: Experience Manager, Experience Manager Sites
 ---
 # Managing Audiences{#managing-audiences}
 

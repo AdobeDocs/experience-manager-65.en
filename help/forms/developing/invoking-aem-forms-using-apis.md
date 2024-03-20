@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 role: Developer
 exl-id: 0e92d1ad-12bd-4bfd-81cc-9be8e376c5ca
+solution: Experience Manager, Experience Manager Forms
 ---
 # Invoking AEM Forms using APIs {#invoking-aem-forms-using-apis} 
 

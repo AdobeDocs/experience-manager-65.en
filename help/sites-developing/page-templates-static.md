@@ -7,6 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
+solution: Experience Manager, Experience Manager Sites
 ---
 # Page Templates - Static{#page-templates-static}
 

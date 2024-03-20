@@ -13,6 +13,7 @@ docset: aem65
 
 feature: Forms Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
+solution: Experience Manager, Experience Manager Forms
 ---
 # Using Scribble Signature in HTML5 forms{#using-scribble-signature-in-html-forms}
 

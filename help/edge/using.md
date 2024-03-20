@@ -2,6 +2,8 @@
 title: Using Edge Delivery Services
 description: Using Edge Delivery Services
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
+solution: Experience Manager, Experience Manager Assets
+feature: Edge Delivery Services
 ---
 # Using Edge Delivery Services {#usingedge}
 

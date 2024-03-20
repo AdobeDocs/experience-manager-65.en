@@ -10,6 +10,7 @@ content-type: reference
 topic-tags: best-practices
 
 exl-id: d68a3219-5d2c-4150-9b9c-b9fb1e815bad
+solution: Experience Manager, Experience Manager Sites
 ---
 # Performance & Scalability{#performance-scalability}
 

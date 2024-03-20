@@ -6,6 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
+solution: Experience Manager, Experience Manager Forms
 ---
 # Working with tasks {#working-with-tasks}
 

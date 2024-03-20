@@ -7,6 +7,7 @@ role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: yes
+solution: Experience Manager, Experience Manager Assets
 ---
 # Formats supported in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 

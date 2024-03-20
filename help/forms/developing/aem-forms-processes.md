@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
+solution: Experience Manager, Experience Manager Forms
 ---
 # Understanding AEM Forms Processes {#understanding-aem-forms-processes} 
 

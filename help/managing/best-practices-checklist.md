@@ -10,6 +10,7 @@ topic-tags: managing-checklist
 content-type: reference
 
 exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
+solution: Experience Manager, Experience Manager 6.5
 ---
 # The Checklist{#the-checklist}
 

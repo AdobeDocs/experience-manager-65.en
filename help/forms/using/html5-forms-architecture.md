@@ -13,6 +13,7 @@ docset: aem65
 
 feature: HTML5 Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
+solution: Experience Manager, Experience Manager Forms
 ---
 # Architecture of HTML5 forms{#architecture-of-html-forms}
 

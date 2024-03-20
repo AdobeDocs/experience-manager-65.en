@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
+solution: Experience Manager, Experience Manager Sites
 ---
 # Coding Tips{#coding-tips}
 

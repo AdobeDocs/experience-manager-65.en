@@ -5,6 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
+solution: Experience Manager, Experience Manager Forms
 ---
 # Set up the Android&trade; studio project and build the Android&trade; app {#set-up-the-android-studio-project-and-build-the-android-app}
 

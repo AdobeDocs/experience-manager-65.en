@@ -7,6 +7,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
+solution: Experience Manager, Experience Manager Forms
 ---
 # Upgrade to AEM 6.5 Forms on JEE {#upgrade-to-aem-forms-jee}
 

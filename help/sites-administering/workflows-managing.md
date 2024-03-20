@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
+solution: Experience Manager, Experience Manager Sites
 ---
 # Managing Access to Workflows{#managing-access-to-workflows}
 

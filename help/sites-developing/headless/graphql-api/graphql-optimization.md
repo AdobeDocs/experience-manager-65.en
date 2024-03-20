@@ -2,6 +2,7 @@
 title: Optimizing GraphQL queries
 description: Learn how to optimize your GraphQL queries when Filtering, Paging, and Sorting your Content Fragments in Adobe Experience Manager as a Cloud Service for headless content delivery.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
+solution: Experience Manager, Experience Manager Sites
 ---
 # Optimizing GraphQL Queries {#optimizing-graphql-queries}
 

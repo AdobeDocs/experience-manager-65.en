@@ -7,6 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # E-mail Marketing{#e-mail-marketing}

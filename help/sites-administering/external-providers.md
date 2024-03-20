@@ -7,6 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Analytics with External Providers {#analytics-with-external-providers}

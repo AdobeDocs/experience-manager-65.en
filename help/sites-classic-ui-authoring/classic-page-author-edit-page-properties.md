@@ -8,6 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
+solution: Experience Manager, Experience Manager Sites
 ---
 # Editing Page Properties{#editing-page-properties}
 

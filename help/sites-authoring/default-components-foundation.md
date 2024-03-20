@@ -2,6 +2,7 @@
 title: Foundation Components
 description: Learn about Foundation Components in Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
+solution: Experience Manager, Experience Manager Sites
 ---
 # Foundation Components {#foundation-components}
 

@@ -7,6 +7,7 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: yes
+solution: Experience Manager, Experience Manager Assets
 ---
 # Manage your digital assets {#manage-digital-assets}
 

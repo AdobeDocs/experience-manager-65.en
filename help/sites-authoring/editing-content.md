@@ -7,6 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
+solution: Experience Manager, Experience Manager Sites
 ---
 # Editing Page Content{#editing-page-content}
 

@@ -11,6 +11,7 @@ docset: aem65
 
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
+solution: Experience Manager, Experience Manager Forms
 ---
 # Data Dictionary{#data-dictionary}
 

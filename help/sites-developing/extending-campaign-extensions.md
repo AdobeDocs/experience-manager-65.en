@@ -8,6 +8,7 @@ topic-tags: extending-aem
 content-type: reference
 
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
+solution: Experience Manager, Experience Manager Sites
 ---
 # Creating Custom Extensions{#creating-custom-extensions}
 

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
+solution: Experience Manager, Experience Manager Sites
 ---
 # Customizing the Adobe Analytics Framework{#customizing-the-adobe-analytics-framework}
 

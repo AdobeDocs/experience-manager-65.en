@@ -8,6 +8,7 @@ content-type: reference
 feature: Asset Management
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
+solution: Experience Manager, Experience Manager Assets
 ---
 # Deliver optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
 

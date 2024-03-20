@@ -6,6 +6,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
+solution: Experience Manager, Experience Manager Sites
 ---
 # SPA Blueprint{#spa-blueprint}
 
