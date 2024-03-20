@@ -10,6 +10,7 @@ topic-tags: personalization
 content-type: reference
 
 exl-id: c7a6ab46-111f-42f0-bf09-7a300486672a
+solution: Experience Manager, Experience Manager Sites
 ---
 # Campaigns{#campaigns}
 

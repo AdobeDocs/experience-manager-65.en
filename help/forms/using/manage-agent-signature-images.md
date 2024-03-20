@@ -1,17 +1,13 @@
 ---
 title: Manage agent signature images
-
 description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-
 docset: aem65
-
 feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
+solution: Experience Manager, Experience Manager Forms
 ---
 # Manage agent signature images{#manage-agent-signature-images}
 
@@ -19,7 +15,7 @@ exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
 
 In Correspondence Management, you can use an image to render agent signature in letters. After you set up the agent signature image, while creating a letter, you can render the agent signature image in the letter as the signature of the sender agent.
 
-The agentSignatureImage DDE is a computed DDE representing the agent’s signature image. The expression for this computed DDE uses a new custom function exposed by the Expression Manager building block. This custom function takes agentID and agentFolder as input parameters and fetches the image content based on these parameters. The SystemContext system data dictionary gives letters in Correspondence Management access to information in the current system context. The system context includes information about the currently logged in user and active configuration parameters.
+The agentSignatureImage DDE is a computed DDE representing the agent's signature image. The expression for this computed DDE uses a new custom function exposed by the Expression Manager building block. This custom function takes agentID and agentFolder as input parameters and fetches the image content based on these parameters. The SystemContext system data dictionary gives letters in Correspondence Management access to information in the current system context. The system context includes information about the currently logged in user and active configuration parameters.
 
 You can add images under the cmuserroot folder. In [Correspondence Management Configuration Properties](/help/forms/using/cm-configuration-properties.md), using the CM User Root property you can change the folder from where agent signature image is picked up.
 
@@ -67,7 +63,7 @@ You can also override the default custom function to define your own logic for f
 
        ![jcr:content property](assets/3_jcrcontentntresource.png)
 
-       Among the subproperties of jcr:content is jcr:data, which is dimmed. Double-click jcr:data. The property becomes editable and the Choose File button appears in the entry. Click **Choose File** and select the image file you want to use as a logo. The image file need not have an extension.
+       Among the subproperties of jcr:content is jcr:data, which is dimmed. Double-click jcr:data. The property becomes editable and the Choose File button appears in the entry. Click **Choose File** and select the image file you want to use as a logo. The image file does not need to have an extension.
 
        ![JCR data](assets/5_jcrdata.png)
 

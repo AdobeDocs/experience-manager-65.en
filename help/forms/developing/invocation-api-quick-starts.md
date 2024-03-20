@@ -11,6 +11,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
+solution: Experience Manager, Experience Manager Forms
 ---
 # Invocation API Quick Starts {#invocation-api-quick-starts} 
 
@@ -103,7 +104,7 @@ The following Quick Starts are available for programmatically invoking AEM Forms
  </tbody>
 </table>
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

@@ -5,6 +5,7 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
+solution: Experience Manager,Commerce
 ---
 # eCommerce{#ecommerce}
 
@@ -90,7 +91,7 @@ Adobe provides two versions of the Commerce Integration Framework:
  </tbody>
 </table>
 
-eCommerce, together with Product Information Management (PIM), handles the activities of a website focused on selling products via an online store:
+eCommerce, together with Product Information Management (PIM), handles the activities of a website focused on selling products by way of an online store:
 
 * Creation, lifetime, and obsolescence of a product
 * Price management

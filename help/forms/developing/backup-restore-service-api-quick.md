@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
+solution: Experience Manager, Experience Manager Forms
 ---
 # Backup and Restore Service API Quick Starts {#backup-and-restore-service-apiquick-starts} 
 
@@ -18,7 +19,7 @@ Java&trade; API Quick Start(SOAP) is available for the Backup and Restore Servic
 
 [Quick Start: Leaving backup mode using the Java&trade; API(SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

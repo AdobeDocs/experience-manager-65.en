@@ -10,6 +10,7 @@ topic-tags: content
 content-type: reference
 
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
+solution: Experience Manager, Experience Manager Sites
 ---
 # WebDAV Access{#webdav-access}
 
@@ -186,7 +187,7 @@ macOS has now connected to AEM via WebDAV and you can use it as any other folder
 
 ### Linux&reg; {#linux}
 
-Connecting via WebDAV on Linux&reg; doesn't require any configuration, but does involve a few steps to make the connection which vary depending on your desktop environment.
+Connecting via WebDAV on Linux&reg; does not require any configuration, but does involve a few steps to make the connection which vary depending on your desktop environment.
 
 #### GNOME {#gnome}
 

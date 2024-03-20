@@ -12,6 +12,7 @@ docset: aem65
 
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
+solution: Experience Manager, Experience Manager Forms
 ---
 # Manage form metadata{#manage-form-metadata}
 

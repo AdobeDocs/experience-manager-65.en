@@ -12,6 +12,7 @@ docset: aem65
 
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
+solution: Experience Manager, Experience Manager Forms
 ---
 # General Security Considerations for AEM Forms on JEE{#general-security-considerations-for-aem-forms-on-jee}
 

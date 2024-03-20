@@ -3,6 +3,7 @@ title: Concepts
 description: Learn the general Concepts of eCommerce with Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
+solution: Experience Manager,Commerce
 ---
 # Concepts{#concepts}
 

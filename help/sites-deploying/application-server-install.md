@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
+solution: Experience Manager, Experience Manager Sites
 ---
 # Application Server Install{#application-server-install}
 
@@ -169,7 +170,7 @@ This uses a simple Server Layout with only an Admin Server.
   * uncomment sling.home initial parameter and set this path as you need (see General Description)
   * Repack web.xml file
 
-* Deploy AEM war file as an Application, (for the other settings use the default settings)
+* Deploy AEM war file as an Application (for the other settings, use the default settings)
 * The installation can take time...
 * Check that the installation has finished as mentioned above in the General Description (for example, tailing the error.log)
 * You can change the context root in the Configuration tab of the web application in the WebLogic `/console`

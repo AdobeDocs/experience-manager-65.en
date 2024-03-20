@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 1a4e8f20-0644-4c96-9f52-f7a59521eac9
+solution: Experience Manager, Experience Manager Forms
 ---
 # Starting and stopping WebSphere Application Server {#starting-and-stopping-websphere-application-server}
 

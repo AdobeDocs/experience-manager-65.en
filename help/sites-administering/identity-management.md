@@ -1,16 +1,13 @@
 ---
 title: Identity Management
-
 description: Learn about the inner workings of identity management in AEM.
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Identity Management{#identity-management}
@@ -146,7 +143,7 @@ This involves defining an appropriate property in the user profile in a way that
 
 * is visible and accessible to the user
 * defines two states for each property
-* allows toggling between the two states defined
+* lets you toggle between the two states defined
 
 This is done with:
 

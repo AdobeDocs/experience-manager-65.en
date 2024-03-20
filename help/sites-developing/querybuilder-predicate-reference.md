@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
+solution: Experience Manager, Experience Manager Sites
 ---
 # Query Builder Predicate Reference{#query-builder-predicate-reference}
 
@@ -568,7 +569,7 @@ Does not support facet extraction.
 
 * **all**
 
-  (bool) Search entire tag fulltext, that is, all titles, description, and so on (takes precedence over "l `ang`").
+  (bool) Search entire tag fulltext, that is, all titles, description, and so on. Takes precedence over "l `ang`".
 
 ### type {#type}
 

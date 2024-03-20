@@ -8,6 +8,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
+solution: Experience Manager, Experience Manager Forms
 ---
 # Enable Adaptive Forms Core Components on AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
@@ -142,7 +143,7 @@ To create an AEM Archetype 41 or [later](https://github.com/adobe/aem-project-ar
 >
 >
 >
-> * In case you encounter difficulty accessing the login dialog on a publish instance, to install the package through the Package Manager, try using the URL: `http://[Publish Server URL]:[PORT]/system/console` to login. This allows to you access the login page on a Publish instance, allowing you to proceed with the installation process.
+> * In case you encounter difficulty accessing the login dialog on a publish instance, to install the package through the Package Manager, try using the URL: `http://[Publish Server URL]:[PORT]/system/console` to login. This lets you access the login page on a Publish instance, allowing you to proceed with the installation process.
 > * Do not delete or discard the Archetype project, after deploying it to your environment. The Archetype project is required to add customized and new Adaptive Forms Core Components themes to your environment. 
 
 The Core Components are enabled for your environment. A blank Core Components based Adaptive Form template and Canvas 3.0 theme are deployed to your environment, enabling you to [create Core Components based Adaptive Forms](create-an-adaptive-form-core-components.md).

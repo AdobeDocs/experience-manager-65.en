@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
+solution: Experience Manager, Experience Manager Sites
 ---
 # Structure of the Adobe Experience Manager Touch-Enabled UI{#structure-of-the-aem-touch-enabled-ui}
 

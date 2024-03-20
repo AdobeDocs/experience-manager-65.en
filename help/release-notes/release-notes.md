@@ -2,7 +2,7 @@
 title: Release Notes for [!DNL Adobe Experience Manager] 6.5
 description: Find release information, what's new, install how-tos, and a detailed change list for [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
 
@@ -41,12 +41,12 @@ Some of the key features and enhancements in this release include the following:
 ### [!DNL Forms]
 
 * **Transaction Reporting in AEM Forms on JEE**: Transaction reporting capability has been introduced for AEM Forms on JEE, enabling comprehensive recording of document transactions such as Conversions, Renditions, and Submissions. This enhancement boosts efficiency and facilitates better record-keeping. The feature is disabled by default. You can enable it from Admin UI.
-* **Enhanced Security with ECDSA Support**: AEM Forms now offers robust support for the Elliptic Curve Digital Signature Algorithm (ECDSA) across both JEE and OSGi stacks. Users can now Sign, Certify, and Verify PDF documents with heightened security. Supported EC curve algorithms include:
+* **Enhanced Security with ECDSA Support**: AEM Forms now offer robust support for the Elliptic Curve Digital Signature Algorithm (ECDSA) across both JEE and OSGi stacks. Users can now Sign, Certify, and Verify PDF documents with heightened security. Supported EC curve algorithms include:
   * ECDSA elliptic curve P256 with SHA256 digest algorithm
   * ECDSA elliptic curve P384 with SHA384 digest algorithm
   * ECDSA elliptic curve P512 with SHA512 digest algorithm
 * **Seamless Compatibility with Windows 11 for Forms Designer**: AEM Forms Designer now supports Windows 11, ensuring smooth installation and operation. Users can confidently upgrade to Windows 11 without the hassle of reinstalling Forms Designer or worrying about compatibility issues, ensuring uninterrupted workflow.
-* **Enhanced Accessibility with Custom "Caption" Role in AEM Forms Designer**: AEM Forms Designer now includes a custom accessibility role called "Caption," empowering users to create XDPs with personalised captioning elements. This feature enhances accessibility by allowing users to integrate custom captions into their document designs, thereby improving inclusivity and user experience.
+* **Enhanced Accessibility with Custom "Caption" Role in AEM Forms Designer**: AEM Forms Designer now includes a custom accessibility role called "Caption," empowering users to create XDPs with personalized captioning elements. This feature enhances accessibility by letting users integrate custom captions into their document designs so they can improve inclusivity and user experience.
 
 <!-- ### [!DNL Forms]
 
@@ -147,32 +147,32 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Adaptive Forms]
 
-* When a user tries to integrate AEM Forms to a mailing platform with an AEM published URL, the AEM forms do not add “method=post” while rendering the page even though POST is set in the submit action with the URL. It causes the mailing platform to not recognize this as a form. (FORMS-12614)
-* When a user selects the date field having a display pattern on AEM Form Service Pack 6.5.18.0., the user is not able to select the current date using the keyboard. (FORMS-12736)
+* When a user tries to integrate AEM Forms to a mailing platform with an AEM published URL, AEM Forms does not add `method=post` while rendering the page. This issue occurs even though `POST` is set in the submit action with the URL. It causes the mailing platform to not recognize this as a form. (FORMS-12614)
+* When a user selects the date field having a display pattern on AEM Form Service Pack 6.5.18.0, the user is not able to select the current date using the keyboard. (FORMS-12736)
 * On AEM Forms Service Pack 6.5.17.0 and Service Pack 6.5.18.0, when a user switches between months in the calendar widget, the date picker component shows an extra row. (FORMS-11869)
-* When a user clicks an image using the “Take a photo” in the Attachment component on an iOS device, all images are added to the folder with the same name. (FORMS-12224)
+* When a user clicks an image using the "Take a photo" in the Attachment component on an iOS device, all images are added to the folder with the same name. (FORMS-12224)
 * When a user updates an existing option in a Radio button group, incorrect translation values are published. (FORMS-12575)
-* When a user adds characters to an Adaptive Form on an Android device, the user is allowed to type more than the defined maximum number of characters in the Text field on focus out, on Android devices. Although, it works when a user selects the HTML5 input type. (FORMS-12748)
-* Due to matching labels Arial labelledby and Arial label, the screen readers are not able to distinguish between these two. To resolve the issue – the label “aria-labelledby” is replaced with “aria-describedby” for the form fields. (FORMS-12436)
-* When an author uses the “Adaptive Forms - Embed (v2)" component to embed an Adaptive Form in their sites page and the embedded form contains a CAPTCHA component on it (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), the site page does not render when the user tries to view the Site Page using "View as Published" on the author instance and the error is shown as (FORMS-11859):
+* When a user adds characters to an Adaptive Form on an Android&trade; device, the user can type more than the defined maximum number of characters in the Text field on focus out, on Android&trade; devices. However, it works when a user selects the HTML5 input type. (FORMS-12748)
+* Due to matching labels Arial&reg; labelledby and Arial&reg; label, the screen readers are not able to distinguish between these two. To resolve the issue – the label "aria-labelledby" is replaced with "aria-describedby" for the form fields. (FORMS-12436)
+* When an author uses the "Adaptive Forms - Embed (v2)" component to embed an Adaptive Form in their sites page and the embedded form contains a CAPTCHA component on it (CAPTCHA Service -> reCAPTCHA, Settings -> reCAPTCHA-v2), the site page does not render when the user tries to view the Site Page using "View as Published" on the author instance. The following error is shown as (FORMS-11859):
 `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * When a user tries to select the date using the date picker component, the value is not updated and shows NULL. (FORMS-12742, FORMS-12736)
 
-* When a user upgrades to AEM Form Service Pack 6.5.19.0, after updating a new language to the existing dictionary it does not get merged with the “guideContainer” rows to add a new locale to a form. (FORMS-12947)
+* When a user upgrades to AEM Form Service Pack 6.5.19.0, after updating a new language to the existing dictionary it does not get merged with the "guideContainer" rows to add a locale to a form. (FORMS-12947)
 
-* On AEM Forms Service Pack 6.5.19.0, the invoke webservice operation on Java 11 fails with the error (FORMS-12329):
+* On AEM Forms Service Pack 6.5.19.0, the invoked webservice operation on Java&trade; 11 fails with the error (FORMS-12329):
   `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
 
-* When a user invoke "receive" operation for "EmailService" on AEM Forms Service Pack 6.5.18.0, an exception is thrown (FORMS-12050): 
+* When a user invokes "receive" operation for "EmailService" on AEM Forms Service Pack 6.5.18.0, an exception is thrown (FORMS-12050): 
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
-* When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating a new user under default DOM fails with the error (FORMS-11857): 
+* When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating a user under default DOM fails with the error (FORMS-11857): 
   `com.adobe.idp.cx.a: error seeding random number generator`
 
-* When a user selects fonts in ADMINUI under the path `Home>Services>PDF Generator>Adobe PDF Settings`, it does not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty so it's not possible to personalize the sub list of **Always embed** or **Never embed**, It causes user unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
+* When a user selects fonts in ADMINUI under the path `Home>Services>PDF Generator>Adobe PDF Settings`, it does not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty. As such, it is not possible to personalize the sublist of **Always embed** or **Never embed**. The user is unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
 
-* On AEM Forms Service Pack 6.5.18.0, the user is unable to create new security settings, it shows no error or server logs, but a pop-up error message is shown on the screen. (FORMS-12212)
+* On AEM Forms Service Pack 6.5.18.0, the user is unable to create security settings, it shows no error or server logs, but a pop-up error message is shown on the screen. (FORMS-12212)
 
 * When a user on AEM Forms Service Pack 6.5.18.0 submits an Adaptive Form on the JEE workflow, the attachment in the Adaptive Form is not sent to the JEE process which causes application failure. (FORMS-12232, FORMS-12228)
 
@@ -193,14 +193,17 @@ Some of the key features and enhancements in this release include the following:
 
 * On AEM Forms 6.5.18.0, When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
 
-* When a user selects “Microsoft SharePoint” while running the configuration manager on AEM Forms 6.5.19.1 with JBoss Turnkey setup, the Livecycle Jboss EAR installation fails, and it shows the following error: (FORMS-12463)
+* When a user selects "Microsoft SharePoint" while running the configuration manager on AEM Forms 6.5.19.1 with JBoss&reg; Turnkey setup, the LiveCycle JBoss&reg; EAR installation fails, and it shows the following error: (FORMS-12463)
 
     ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
+
+* When a user creates a document fragment using the form data model in AEM Forms Service Pack 6.5.19.0, the variable names appear undefined on the side panel, but the variable names are shown when they are dropped onto the form panel or when they are clicked. (FORMS-13238)
+
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
 
-* When a user upgrades to AEM Forms Service Pack 6.5.18.0, due to missing exception handling, XDPs passed through the output service with the tagged PDF option enabled fail. (LC-3921757)
+* When a user upgrades to AEM Forms Service Pack 6.5.18.0, due to missing exception handling, XDPs passed through the output service with the tagged PDF option-enabled fail. (LC-3921757)
 
 * When a user generates a PDF using AEM Forms Designer, heading levels are tagged in the accessibility tree along with the graphical element, for example, a rectangle box. (LC-3921687)
 
@@ -378,7 +381,6 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
        `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html` -->
 
 
-
 * **Related to Oak**
   From Service Pack 13 and above, the following error log has begun to appear which affects the persistence cache:
 
@@ -458,6 +460,17 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 ### Known issues for AEM Forms {#known-issues-aem-forms-6520}
 
 * The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)
+* Adaptive Forms let you use custom functions with ECMAScript version 5 or earlier. When a custom function uses ECMAScript version 6 or later, like 'let', 'const', or arrow functions, the rule editor might not open properly.
+* Users are unable to create a Correspondence Management letter. When a user creates a letter an error with description “Object Object” appears and the letter is not created. Thumbnails for layouts also fail to load on the letter creation screen. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) to resolve the issue. (FORMS-13496)
+* The interactive communications service creates the PDF document, but the user's data is not automatically populated in the form fields. The prefill service is not working as expected. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) to resolve the issue. (FORMS-13413, FORMS-13493)
+* The Review and Correct (RnC) editor of automated forms conversion service fails to load. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) to resolve the issue. (FORMS-13491)
+* After updating from AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0) to AEM 6.5 Forms Service Pack 20 (6.5.20.0), users encounter a JSP compilation error. They cannot open or create adaptive forms and they’re running into errors with other AEM interfaces like the page editor, AEM Forms UI, and AEM Workflow editor. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) to resolve the issue. (FORMS-13492)
+
+<!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
+* [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 for Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 for Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
+-->
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 

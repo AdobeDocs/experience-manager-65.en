@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
+solution: Experience Manager, Experience Manager Forms
 ---
 # Grant rule editor access to select user groups{#grant-rule-editor-access-to-select-user-groups}
 

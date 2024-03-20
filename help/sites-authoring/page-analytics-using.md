@@ -8,6 +8,7 @@ topic-tags: site-features
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
+solution: Experience Manager, Experience Manager Sites
 ---
 # Seeing Page Analytics Data{#seeing-page-analytics-data}
 

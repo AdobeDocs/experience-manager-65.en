@@ -4,6 +4,7 @@ description: Find out how to troubleshoot the most common MSM-related issues and
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
+solution: Experience Manager, Experience Manager Sites
 ---
 # Troubleshooting MSM Issues and FAQ {#troubleshooting-msm}
 
@@ -75,7 +76,7 @@ As an alternative you can either:
 
 ### Why do I see Live Copy pages with the suffix "_msm_moved"? {#moved-pages}
 
-If a blueprint page is rolled out, it either updates its Live Copy page or creates a new Live Copy page if it didn't exist yet. For example, when it is rolled out for the first time or the Live Copy page was manually deleted.
+If a blueprint page is rolled out, it either updates its Live Copy page or creates a new Live Copy page if it did not exist yet. For example, when it is rolled out for the first time or the Live Copy page was manually deleted.
 
 In this latter case however, if a page without a `cq:LiveRelationship` property exists with the same name, this page is renamed before the Live Copy page is created.
 

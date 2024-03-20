@@ -6,6 +6,7 @@ feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: yes
+solution: Experience Manager, Experience Manager Assets
 ---
 # Understand, apply, and curate Smart Tags {#enhanced-smart-tags}
 
@@ -176,7 +177,7 @@ You can also assign a higher rank to a tag to increase its relevance for an imag
 1. In the search box, search for assets based using a tag as a keyword.
 1. To identify an image that you do not find relevant to your search, review the search results.
 1. Select the image, and click **[!UICONTROL Manage Tags]** from the toolbar.
-1. From the **[!UICONTROL Manage Tags]** page, review the tags. If you don't want the image to be searched based on a specific tag, select the tag and then click **[!UICONTROL Delete]** from the toolbar. Alternatively, click `x` symbol that appears next to a tag.
+1. From the **[!UICONTROL Manage Tags]** page, review the tags. If you do not want the image to be searched based on a specific tag, select the tag and then click **[!UICONTROL Delete]** from the toolbar. Alternatively, click `x` symbol that appears next to a tag.
 1. Optionally, to assign a higher rank to a tag, select the tag and click **[!UICONTROL Promote]** from the toolbar. The tag you promote, is moved to the **[!UICONTROL Tags]** section.
 1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]**
 1. Navigate to the **[!UICONTROL Properties]** page for the image. Observe that the tag you promoted is assigned more relevance and appears earlier in the search results.

@@ -4,6 +4,7 @@ description: AEM Forms reference site showcases how organizations can use AEM Fo
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
+solution: Experience Manager, Experience Manager Forms
 ---
 # Employee recruitment reference site walkthrough {#employee-recruitment-reference-site-walkthrough}
 

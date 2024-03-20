@@ -8,6 +8,7 @@ topic-tags: introduction
 content-type: reference
 
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
+solution: Experience Manager, Experience Manager Sites
 ---
 # Keyboard Shortcuts for Consoles{#keyboard-shortcuts-for-consoles}
 
@@ -75,7 +76,7 @@ In addition keyboard shortcuts are the same for all locales and keyboard layouts
 
 ## Deactivating Keyboard Shortcuts {#deactivating-keyboard-shortcuts}
 
-AEM provides keyboard shortcuts for some of the commonly-used features (edit, properties, copy / paste, showing various side-rail menus, and so on).
+AEM provides keyboard shortcuts for some of the commonly used features (edit, properties, copy / paste, showing various side-rail menus, and so on).
 
 For users that do not use keyboard shortcuts or have certain accessibility requirements, all keyboard shortcuts can be disabled.
 

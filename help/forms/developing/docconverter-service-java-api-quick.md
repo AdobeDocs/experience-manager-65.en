@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 554b19d6-47c3-4171-b59d-343f1ad935b2
+solution: Experience Manager, Experience Manager Forms
 ---
 # DocConverter Service Java&trade; API Quick Start (SOAP) {#docconverter-service-java-api-quickstart-soap}
 
@@ -16,7 +17,7 @@ Java&trade; API Quick Start(SOAP) is available for the DocConverter service.
 
 [Quick Start (SOAP mode): Converting a document to a PDF/A document using the Java&trade; API](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

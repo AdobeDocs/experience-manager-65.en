@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
+solution: Experience Manager, Experience Manager Forms
 ---
 # Credential Service Java&trade; API Quick Start (SOAP) {#credential-service-java-api-quickstart-soap}
 
@@ -16,7 +17,7 @@ Java&trade; API Quick Start(SOAP) is available for the Credential service.
 
 [Quick Start (SOAP mode): Deleting credentials using the Java&trade; API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

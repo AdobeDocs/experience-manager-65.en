@@ -2,6 +2,7 @@
 title: Components Console
 description: The Components console lets you browse through all components defined for your instance and view key information for each component.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
+solution: Experience Manager, Experience Manager Sites
 ---
 # Components Console{#components-console}
 

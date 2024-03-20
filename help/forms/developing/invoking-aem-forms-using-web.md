@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
+solution: Experience Manager, Experience Manager Forms
 ---
 # Invoking AEM Forms using Web Services {#invoking-aem-forms-using-web-services} 
 
@@ -1512,7 +1513,7 @@ The following list specifies data types that cannot be shared between multiple s
 * `Roles`
 * `BLOB`
 
-To avoid this problem, it is recommended that you fully-qualify the data types. For example, consider a .NET application that references both the Forms service and Signature service using a service reference. Both service references will contain a `BLOB` class. To use a `BLOB` instance, fully-qualify the `BLOB` object when you declare it. This approach is shown in the following code example. For information about this code exampe, see [Digitally Signing Interactive Forms](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
+To avoid this problem, it is recommended that you fully qualify the data types. For example, consider a .NET application that references both the Forms service and Signature service using a service reference. Both service references will contain a `BLOB` class. To use a `BLOB` instance, fully qualify the `BLOB` object when you declare it. This approach is shown in the following code example. For information about this code exampe, see [Digitally Signing Interactive Forms](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
 
 The following C# code example signs an interactive form that is rendered by the Forms service. The client application has two service references. The `BLOB` instance that is associated with the Forms service belongs to the `SignInteractiveForm.ServiceReference2` namespace. Likewise, the `BLOB` instance that is associated with the Signature service belongs to the `SignInteractiveForm.ServiceReference1` namespace. The signed interactive form is saved as a PDF file named *LoanXFASigned.pdf*.
 
@@ -1547,7 +1548,7 @@ The following C# code example signs an interactive form that is rendered by the 
                 try
                 {
                     //Because BLOB objects are used in both service references
-                    //it is necessary to fully-qualify the BLOB objects
+                    //it is necessary to fully qualify the BLOB objects
  
                     //Retrieve the form -- invoke the Forms service
                     SignInteractiveForm.ServiceReference2.BLOB formData = GetForm();

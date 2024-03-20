@@ -8,6 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # User Synchronization{#user-synchronization}
@@ -135,7 +136,7 @@ The authorized user is used in step 3 to configure the Sling distribution on Aut
     * **Principal**: *search for user created for user sync*
     * **Type**: `Allow`
     * **Privileges**: `jcr:all`
-    * **Restrictions** rep:glob: `*/activities/*`
+    * **Restrictions** `rep:glob`: `*/activities/*`
     * select **OK**
 
 * select **Save All**

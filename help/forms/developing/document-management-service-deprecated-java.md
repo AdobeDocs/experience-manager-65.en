@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
+solution: Experience Manager, Experience Manager Forms
 ---
 # Document Management Service (Deprecated) Java API Quick Start (SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
 
@@ -32,7 +33,7 @@ The following Quick Starts are available for the Document Management service (De
 
 [Quick Start (SOAP mode): Setting Content Services Permissions using the Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

@@ -11,6 +11,7 @@ content-type: reference
 
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
+solution: Experience Manager, Experience Manager Sites
 ---
 # Audit Log Maintenance in AEM 6{#audit-log-maintenance-in-aem}
 

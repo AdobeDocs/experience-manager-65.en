@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
+solution: Experience Manager, Experience Manager Forms
 ---
 # Encryption Service Java&trade; API Quick Start (SOAP) {#encryption-service-java-api-quickstart-soap}
 
@@ -22,7 +23,7 @@ exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
 
 [Quick Start (SOAP mode): Determining encryption type using the Java&trade; API](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

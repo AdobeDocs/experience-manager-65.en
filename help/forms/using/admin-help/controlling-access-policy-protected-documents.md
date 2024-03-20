@@ -1,16 +1,13 @@
 ---
 title: Controlling access to policy-protected documents
-
 description: See how you can view, manage and control the access to your policy-protected documents.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
+solution: Experience Manager, Experience Manager Forms
 ---
 # Controlling access to policy-protected documents {#controlling-access-to-policy-protected-documents}
 
@@ -92,7 +89,7 @@ When you revoke or reinstate document access privileges, the change takes effect
 
 * If the document is online and closed, the change takes effect the next time the recipient synchronizes with document security by opening a policy-protected document.
 * If the document is online and open, the change takes effect when the recipient closes the document.
-* If the document is offline, (in use without an Internet connection, such as on a laptop), the change takes effect the next time the recipient synchronizes with document security.
+* If the document is offline&mdash;that is, in use without an Internet connection, such as on a laptop&mdash;the change takes effect the next time the recipient synchronizes with document security.
 
 **Revoke access to a policy-protected document**
 

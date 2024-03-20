@@ -1,14 +1,12 @@
 ---
 title: Configuring the Submit action
-
 description: Forms lets you configure a submit action to define how an adaptive form is processed after submission. You can use built-in submit actions or write your own from scratch.
-
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configuring the Submit action {#configuring-the-submit-action}
 
@@ -232,7 +230,7 @@ The server-side revalidation feature provides the ability to also run the valida
 
 ### What to validate on Server? {#what-to-validate-on-server-br}
 
-All out of the box (OOTB) field validations of an adaptive form that are rerun at the server are:
+All out-of-the-box field validations of an adaptive form that are rerun at the server are:
 
 * Required
 * Validation Picture Clause

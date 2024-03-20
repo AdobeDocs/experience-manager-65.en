@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
+solution: Experience Manager, Experience Manager Sites
 ---
 # Migration to the Touch UI{#migration-to-the-touch-ui}
 
@@ -47,12 +48,12 @@ When migrating, be aware of the following major differences between the classic 
    <td><p>Dialog nodes:</p>
     <ul>
      <li>Name: <code>dialog</code></li>
-     <li>jcr:primaryType: <code>cq:Dialog</code></li>
+     <li><code>jcr:primaryType</code>: <code>cq:Dialog</code></li>
     </ul> </td>
    <td><p>Dialog nodes:</p>
     <ul>
      <li>Name: <code>cq:dialog</code></li>
-     <li>jcr:primaryType: <code>nt:unstructured</code></li>
+     <li><code>jcr:primaryType</code>: <code>nt:unstructured</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -90,7 +91,7 @@ When migrating, be aware of the following major differences between the classic 
  </tbody>
 </table>
 
-In other words, migrating a section of your UI from the classic UI to the touch UI means porting an *ExtJS widget* to a *Sling component*. To ease this, the touch UI is based on the Granite UI framework, which already provides some Sling components for the UI (referred to as Granite UI components).
+In other words, migrating a section of your UI from the classic UI to the touch UI means to port an *ExtJS widget* to a *Sling component*. To ease this, the touch UI is based on the Granite UI framework, which already provides some Sling components for the UI (referred to as Granite UI components).
 
 Before you start, check the status and related recommendations:
 

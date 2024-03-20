@@ -2,6 +2,7 @@
 title: Creating Accessible Content for Adobe Experience Manager (WCAG 2.1 Conformance)
 description: Use AEM to help make web content accessible to, and usable by, persons with disabilities
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
+solution: Experience Manager, Experience Manager Sites
 ---
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 
@@ -687,8 +688,15 @@ Follow the guidelines under [How to Meet Success Criteria 2.2.1](https://www.w3.
 * Success Criterion 2.2.2
 * Level A
 * Pause, Stop, Hide: For moving, blinking, scrolling, or auto-updating information, the following are true:
-  * Moving, blinking, scrolling: For any moving, blinking, or scrolling information that (a) starts automatically, (b) lasts more than five seconds, and (c) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential;
-  * Auto-updating: For any auto-updating information that (a) starts automatically and (b) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.
+  * Moving, blinking, scrolling: For any moving, blinking, or scrolling information that
+    * (a) starts automatically,
+    * (b) lasts more than five seconds, and
+    * (C) is presented in parallel with other content,
+    there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential;
+  * Auto-updating: For any auto-updating information that
+    * (a) starts automatically, and
+    * (b) is presented in parallel with other content
+    there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.
 
 Points to note are:
 
@@ -1249,7 +1257,7 @@ The intent of this Success Criterion is to help users with disabilities avoid se
 
 Users with disabilities may be more likely to make mistakes. People with reading disabilities may transpose numbers and letters, and those with motor disabilities may hit keys by mistake. Providing the ability to reverse actions allows users to correct a mistake that could result in serious consequences. Providing the ability to review and correct information gives the user an opportunity to detect a mistake before taking an action that has serious consequences.
 
-User-controllable data is user-viewable data that the user can change and/or delete through an intentional action. Examples of the user controlling such data would be updating the phone number and address for the user's account, or deleting a record of past invoices from a website. It does not refer such things as internet logs and search engine monitoring data that the user can't view or interact with directly.
+User-controllable data is user-viewable data that the user can change and/or delete through an intentional action. Examples of the user controlling such data would be updating the phone number and address for the user's account, or deleting a record of past invoices from a website. It does not refer such things as internet logs and search engine monitoring data that the user cannot view or interact with directly.
 
 #### How to Meet - Error Prevention (Legal, Financial, Data) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
  

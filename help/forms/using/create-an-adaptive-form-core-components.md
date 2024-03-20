@@ -11,6 +11,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
+solution: Experience Manager, Experience Manager Forms
 ---
 # Create Core Components based Adaptive Forms {#creating-an-adaptive-form-core-components}
 
@@ -85,7 +86,7 @@ After opening the form for editing, you can use available Adaptive Forms Core Co
 
 ## Configure Submit Action for an Adaptive Form {#configure-submit-action-for-form}
 
-A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
+A Submit Action lets you choose the destination of data captured by way of an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/using/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 

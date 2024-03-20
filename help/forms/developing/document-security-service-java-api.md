@@ -10,6 +10,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: 76d855cf-ebfa-487a-b1c8-755e7e45dd73
+solution: Experience Manager, Experience Manager Forms
 ---
 # Document Security Service Java API Quick Start (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
@@ -39,7 +40,7 @@ Java API Quick Start(SOAP) is available for the Rights Management service:
 
 [Quick Start (SOAP mode): Removing a policy from a Word document using the Java API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

@@ -3,6 +3,7 @@ title: Developing (generic)
 description: The integration framework includes an integration layer with an API, allowing you to build AEM components for eCommerce capabilities.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
+solution: Experience Manager,Commerce
 ---
 # Developing (generic){#developing-generic}
 
@@ -38,7 +39,7 @@ The eCommerce framework can be used with any eCommerce solution, the engine bein
         * If found, the value is used to filter the commerce service lookup.
         * If not found, the highest-ranked commerce service is used.
 
-    * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly-typed resources.
+    * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly typed resources.
 
 * The `cq:commerceProvider` property is also used to reference the appropriate commerce factory definition.
 
@@ -465,7 +466,7 @@ The entry point for the search API is the `CommerceService#search` method which 
 
     * The ClientContext `SegmentMgr` resolves segments and the ClientContext `CartMgr` resolves promotions. Each promotion that is subject to at least one resolved segment is fired.
 
-        * Fired Promotions are sent back to the server via an AJAX call to recalculate the cart.
+        * Fired Promotions are sent back to the server by way of an AJAX call to recalculate the cart.
         * Fired Promotions (and added Vouchers) are also shown in the ClientContext panel.
 
 Adding/Removing a voucher from a cart is accomplished via the `CommerceSession` API:

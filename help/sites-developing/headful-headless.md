@@ -2,6 +2,7 @@
 title: Headful and Headless in AEM
 description: AEM projects can be implemented in a headful and headless model, but the choice is not binary. AEM offers the flexibility to exploit the advantages of both models in one project.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
+solution: Experience Manager, Experience Manager Sites
 ---
 # Headful and Headless in AEM {#headful-headless}
 

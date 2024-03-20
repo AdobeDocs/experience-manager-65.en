@@ -12,6 +12,7 @@ content-type: reference
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
+solution: Experience Manager, Experience Manager Sites
 ---
 # Configuring Live Copy Synchronization{#configuring-live-copy-synchronization}
 
@@ -58,7 +59,7 @@ The following table lists the rollout configurations that are installed with AEM
   </tr>
   <tr>
    <td>Standard rollout config</td>
-   <td>Standard rollout configuration which allows to start rollout process on rollout trigger and runs actions: create, update, delete content and order children nodes.</td>
+   <td>Standard rollout configuration which lets you start rollout process on rollout trigger and runs actions: create, update, delete content and order children nodes.</td>
    <td>On Rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -106,7 +107,7 @@ The following table lists the rollout configurations that are installed with AEM
   </tr>
   <tr>
    <td>DPS Publications Rollout Config</td>
-   <td>DPS Publication rollout configuration which allows to start rollout process on rollout trigger while excluding FolioProducer binding properties on initial rollout</td>
+   <td>DPS Publication rollout configuration which lets you start rollout process on rollout trigger while excluding FolioProducer binding properties on initial rollout</td>
    <td>On Rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>

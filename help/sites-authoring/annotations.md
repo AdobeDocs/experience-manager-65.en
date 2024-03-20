@@ -8,6 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
+solution: Experience Manager, Experience Manager Sites
 ---
 # Annotations when Editing a Page{#annotations-when-editing-a-page}
 
@@ -37,7 +38,7 @@ A special [mode](/help/sites-authoring/author-environment-tools.md#page-modes) i
 
 >[!NOTE]
 >
->Don't forget that [comments](/help/sites-authoring/basic-handling.md#timeline) are also available for providing feedback on a page.
+>Do not forget that [comments](/help/sites-authoring/basic-handling.md#timeline) are also available for providing feedback on a page.
 
 >[!NOTE]
 >

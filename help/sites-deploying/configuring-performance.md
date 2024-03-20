@@ -11,6 +11,7 @@ topic-tags: configuring
 
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
+solution: Experience Manager, Experience Manager Sites
 ---
 # Performance Optimization {#performance-optimization}
 
@@ -507,7 +508,7 @@ The formula to calculate the cache ratio is:
 
 For example, if the total number of requests is 129491 and the number of requests served by the Publish instance is 58959 the cache ratio is: **(129491 - 58959)/129491= 54.5%**.
 
-If you don't have a one-to-one publisher/dispatcher pairing, add requests from all dispatchers and publishers together to get an accurate measurement. See also [Recommended Deployments](/help/sites-deploying/recommended-deploys.md).
+If you do not have a one-to-one publisher/dispatcher pairing, add requests from all dispatchers and publishers together to get an accurate measurement. See also [Recommended Deployments](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >

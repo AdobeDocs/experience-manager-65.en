@@ -4,6 +4,8 @@ description: Use charts in an adaptive form to make your form more informative.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
+exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
+solution: Experience Manager, Experience Manager Forms
 ---
 # Adaptive Form Charts {#af-charts}
 
@@ -184,5 +186,3 @@ Consider that you configured a Column chart. However, you also want to provide u
 1. Click Done to save the rule.
 
 Now, you can select a chart type from the drop-down list and click refresh to redraw the chart.
-
-

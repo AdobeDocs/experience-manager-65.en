@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
+solution: Experience Manager, Experience Manager Forms
 ---
 # Forms Service API Quick Starts {#forms-service-api-quick-starts} 
 
@@ -44,7 +45,7 @@ The following Quick Starts are available for the Forms service:
 
 [Quick Start (SOAP mode): Passing documents to the Forms Service using the Java&trade; API](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-Application logic that uses the Forms service API is implemented as Java&trade; servlets. AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+Application logic that uses the Forms service API is implemented as Java&trade; servlets. AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

@@ -19,7 +19,7 @@ When developing a mobile app, there are many new concerns specific to devices th
 
 * Functional - Are all requirements met by your app?
 * Usability - Is the app easy to use and understand by your customer?
-* Performance - What happens during a spike in usage? Are the app elements, like swipes and carousels, quick and don't detract away from the experience?
+* Performance - What happens during a spike in usage? Are the app elements, like swipes and carousels, quick and do not detract away from the experience?
 * Failure or Interrupts - What happens when there is an incoming call or notification while your app is running? What happens if there is a network outage or power off?
 * Installation and Updates - How is the installation experience? How are updates pushed out?
 * Technical - Is your app consuming too much power from a device?

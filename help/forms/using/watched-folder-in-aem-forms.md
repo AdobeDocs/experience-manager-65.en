@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
+solution: Experience Manager, Experience Manager Forms
 ---
 # Watched folder in AEM Forms{#watched-folder-in-aem-forms}
 

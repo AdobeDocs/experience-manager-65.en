@@ -7,6 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
+solution: Experience Manager, Experience Manager Sites
 ---
 # Basic Configuration Concepts{#basic-configuration-concepts}
 
@@ -182,7 +183,7 @@ With the release of the AEM Doc Services and AEM Doc Security, AEM now has the c
 
 [Offloading](/help/sites-deploying/offloading.md) distributes processing tasks among Experience Manager instances in a topology. With offloading, you can use specific Experience Manager instances for performing specific types of processing. Specialized processing enables you to maximize the usage of available server resources.
 
-Topologies are loosely-coupled Experience Manager clusters that are participating in offloading. A cluster consists of one or more Experience Manager server instances (a single instance is considered as a cluster).
+Topologies are loosely coupled Experience Manager clusters that are participating in offloading. A cluster consists of one or more Experience Manager server instances (a single instance is considered as a cluster).
 
 For more information on how to view or modify topology membership, consult the [Administering Topologies](/help/sites-deploying/offloading.md#administering-topologies) section.
 

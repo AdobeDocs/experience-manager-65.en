@@ -3,10 +3,11 @@ title: AEM and third-party Commerce Integration using Commerce Integration Frame
 description: Enterprise businesses may require additional third-party commerce solutions to power their storefront. The Commerce Integration Framework (CIF) can be used in such integration scenarios to connect a third-party commerce solution to Adobe Experience Manager using I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
+solution: Experience Manager,Commerce
 ---
 # AEM and Third-Party Commerce Integration using Commerce Integration Framework {#aem-third-party}
 
-The integration of non-Adobe Commerce solution is a common scenario for CIF. Third-party solutions with different APIs and schemas get connected via an integration layer.
+The integration of non-Adobe Commerce solution is a common scenario for CIF. Third-party solutions with different APIs and schemas get connected by way of an integration layer.
 
 ## Architecture {#architecture}
 

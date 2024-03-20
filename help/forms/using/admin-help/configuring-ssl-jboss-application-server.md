@@ -6,6 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configuring SSL for JBoss Application Server {#configuring-ssl-for-jboss-application-server}
 
@@ -70,7 +71,7 @@ In this procedure:
    `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Type `changeit` as the password. This password is the default password for a Java installation and may have been changed by the system administrator.
-1. When prompted for `Trust this certificate? [no]`:, type `yes`. The confirmation "Certificate was added to keystore" is displayed.
+1. When prompted for `Trust this certificate? [no]`, type `yes`. The confirmation "Certificate was added to keystore" is displayed.
 1. If you are connecting over SSL from Workbench, install the certificate on the Workbench computer.
 1. In a text editor, open the following files for editing:
 

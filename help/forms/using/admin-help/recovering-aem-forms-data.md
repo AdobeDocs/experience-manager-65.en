@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
+solution: Experience Manager, Experience Manager Forms
 ---
 # Recovering the AEM forms data {#recovering-the-aem-forms-data}
 
@@ -110,7 +111,7 @@ If your GDS is restored to a location other than where it was originally, run th
 
 >[!NOTE]
 >
->If you had enabled document storage in database, you don't need to change the GDS location.
+>If you had enabled document storage in database, you do not need to change the GDS location.
 
 >[!NOTE]
 >

@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
+solution: Experience Manager, Experience Manager Assets
 ---
 # Enable Assets Insights through DTM {#enable-asset-insights-through-dtm}
 

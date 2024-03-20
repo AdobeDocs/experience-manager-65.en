@@ -11,6 +11,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
+solution: Experience Manager, Experience Manager Forms
 ---
 # LiveCycleProcess Java API (SOAP) Quick Start {#livecycleprocess-java-api-soap-quick-start}
 
@@ -28,7 +29,7 @@ The Java API(SOAP) Quick Start is available for processes. A *process instance* 
 
 [Quick Start (SOAP Mode): Retrieving the status of a job using the Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >
@@ -500,7 +501,7 @@ The following Java code purges data from a process named *SecureDocument*. A fil
  
            //Prepare parameters to use in the purge operation
               long age = 10;  // in seconds
-              boolean includeChildren = false;// don't include children by default
+              boolean includeChildren = false;// do not include children by default
               int status = 3;   // both completed and terminated by default
               short minor = 0;
               short major = 1;

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
+solution: Experience Manager, Experience Manager Sites
 ---
 # Adding Adobe Analytics Tracking to Components{#adding-adobe-analytics-tracking-to-components}
 
@@ -224,7 +225,7 @@ The content of the `topnav.jsp` file should appear as follows:
   All Rights Reserved.
 
   This software is the confidential and proprietary information of
-  Day Management AG, ("Confidential Information"). You shall not
+  Day Management AG ("Confidential Information"). You shall not
   disclose such Confidential Information and shall use it only in
   accordance with the terms of the license agreement you entered into
   with Day.

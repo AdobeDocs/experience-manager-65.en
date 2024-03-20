@@ -3,6 +3,7 @@ title: 'Tutorial: Create an adaptive form'
 description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
+solution: Experience Manager, Experience Manager Forms
 ---
 # Tutorial: Create an adaptive form {#do-not-publish-tutorial-create-an-adaptive-form}
 
@@ -51,7 +52,7 @@ AEM [!DNL Forms] provides many components to display information on an adaptive 
 
 1. Select Image. The toolbar appears. Select ![cmppr](assets/cmppr.png). The properties browser opens on the left of the screen. **[!UICONTROL Browse]** and upload the logo image. Select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). The image appears on the header.
 
-   You can select Get file to download the logo used in this article if you don't have one.
+   You can select Get file to download the logo used in this article if you do not have one.
 
    [Get File](assets/logo.png)
 

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
+solution: Experience Manager, Experience Manager Sites
 ---
 # Data Modeling - David Nuescheler's Model{#data-modeling-david-nuescheler-s-model}
 
@@ -69,7 +70,7 @@ Personally, I prefer hierarchy conventions over the node typing system initially
 
 #### Example {#example-2}
 
-I would model a simple blogging system as follows. Initially, I don't even care about the respective node types that I use at this point.
+I would model a simple blogging system as follows. Initially, I do not even care about the respective node types that I use at this point.
 
 ```xml
 /content/myblog
@@ -83,7 +84,7 @@ I would model a simple blogging system as follows. Initially, I don't even care 
 
 I think one of the things that becomes apparent is that the structure of the content is understood based on the example without any further explanations.
 
-What may be unexpected initially is why I wouldn't store the "comments" with the "post", which is due to access control which I would like to be applied in a reasonably hierarchical way.
+What may be unexpected initially is why I would not store the "comments" with the "post", which is due to access control which I would like to be applied in a reasonably hierarchical way.
 
 Using the above content model I can easily allow the "anonymous" user to "create" comments, but keep the anonymous user on a read-only basis for the rest of the workspace.
 
@@ -91,7 +92,7 @@ Using the above content model I can easily allow the "anonymous" user to "create
 
 #### Explanation {#explanation-3}
 
-If you don't use `clone()`, `merge()` or `update()` methods in your application a single workspace is probably the way to go.
+If you do not use `clone()`, `merge()` or `update()` methods in your application a single workspace is probably the way to go.
 
 "Corresponding nodes" is a concept defined in the JCR spec. Essentially, it boils down to nodes that represent the same content, in different so-called workspaces.
 
@@ -158,7 +159,7 @@ Let's assume I allow "references" from a document (a) to another document (b). I
 
 So I would either model those references as "weak-references" (in JCR v1.0 this essentially boils down to string properties that contain the uuid of the target node) or simply use a path. Sometimes the path is more meaningful to begin with.
 
-I think there are use cases where a system really can't work if a reference is dangling, but I just can't come up with a good "real" yet simple example from my direct experience.
+I think there are use cases where a system really cannot work if a reference is dangling, but I just cannot come up with a good "real" yet simple example from my direct experience.
 
 ### Rule #6: Files are files. {#rule-files-are-files}
 

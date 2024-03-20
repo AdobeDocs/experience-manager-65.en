@@ -6,6 +6,7 @@ role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: yes
+solution: Experience Manager, Experience Manager Assets
 ---
 
 # Use Media Library for basic asset management {#manage-assets-using-media-library}
@@ -74,7 +75,7 @@ To use the Media Library functionality, you can use the default [!DNL Experience
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
+As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
+solution: Experience Manager, Experience Manager Sites
 ---
 # Configure the Video component {#configure-the-video-component}
 
-The [Video component](/help/sites-authoring/default-components-foundation.md#video) lets you place a predefined, out-of-the-box (OOTB) video asset on your page.
+The [Video component](/help/sites-authoring/default-components-foundation.md#video) lets you place a predefined, out-of-the-box video asset on your page.
 
 For proper transcoding to occur, an administrator installs FFmpeg separately. See [Install FFmpeg and configure AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
 
@@ -75,4 +76,4 @@ To **configure AEM**, follow these steps:
 
 >[!NOTE]
 >
->Changes to the default out-of-the-box (OOTB) workflow models are not preserved when you upgrade your AEM instance. Adobe recommends that you copy the modified workflow models before edit those. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
+>Changes to the default out-of-the-box workflow models are not preserved when you upgrade your AEM instance. Adobe recommends that you copy the modified workflow models before edit those. For example, copy the out-of-the-box [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the out-of-the-box model.

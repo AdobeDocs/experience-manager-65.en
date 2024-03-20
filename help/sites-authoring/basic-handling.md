@@ -7,6 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
+solution: Experience Manager, Experience Manager Sites
 ---
 # Basic Handling{#basic-handling}
 
@@ -46,7 +47,7 @@ Whenever a user first accesses a console, a product navigation tutorial is start
 
 Click **Next** to advance to the next page of the overview. Click **Close** or click outside of the overview dialog box to close.
 
-The overview restarts the next time you access a console unless you either view all slides, or check the option **Don't show this again**.
+The overview restarts the next time you access a console unless you either view all slides, or check the option **Do not show this again**.
 
 ## Global Navigation {#global-navigation}
 

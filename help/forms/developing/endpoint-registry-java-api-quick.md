@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
+solution: Experience Manager, Experience Manager Forms
 ---
 # Endpoint Registry Java&trade; API Quick Start (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
@@ -30,7 +31,7 @@ Java&trade; API Quick Start(SOAP) is available for the Endpoint Registry.
 
 [QuickStart: Retrieving endpoint connector information using the Java&trade; API](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

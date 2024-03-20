@@ -10,6 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
+solution: Experience Manager, Experience Manager Forms
 ---
 # Manage Forms applications and tasks in AEM Inbox{#manage-forms-applications-and-tasks-in-aem-inbox}
 
@@ -135,7 +136,7 @@ A workflow model owner is unable to view items related to AEM Workflow in AEM in
       | allowExplicitSharing  |  allowExplicitSharing | BOOLEAN  |
       
 
-   * Deploy the indices via an AEM package. You can use an [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) project to create a deployable AEM package. Use the following sample code to add indices to an AEM Archetype project:
+   * Deploy the indices by way of an AEM package. You can use an [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) project to create a deployable AEM package. Use the following sample code to add indices to an AEM Archetype project:
 
    ``` Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

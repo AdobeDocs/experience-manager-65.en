@@ -8,6 +8,7 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
+solution: Experience Manager, Experience Manager Forms
 ---
 # Synchronizing Adaptive Forms with XFA Form Templates{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
@@ -110,7 +111,7 @@ You do not need to click the link in the error message to update the fields in t
 
 ### Deleted fields in XDP file {#deleted-fields-in-xdp-file}
 
-If a field that was earlier copied to an adaptive form is deleted from an XDP file, an error message is displayed in the authoring mode stating that the field doesn't exist in the XDP file. In such cases, manually delete the field from adaptive form or clear the `bindRef` property in the component dialog.
+If a field that was earlier copied to an adaptive form is deleted from an XDP file, an error message is displayed in the authoring mode stating that the field does not exist in the XDP file. In such cases, manually delete the field from adaptive form or clear the `bindRef` property in the component dialog.
 
 The following steps illustrate this use flow for the assets in the example used in this article:
 
@@ -118,7 +119,7 @@ The following steps illustrate this use flow for the assets in the example used 
 1. Upload the `sample-form.xdp` file in the AEM Forms UI
 1. Open the `sample-xfa-af` adaptive form for authoring. The following error message is displayed: Schema/Form Template for the Adaptive Form has been updated. `Click Here` to rebase it with the new version.
 
-1. Click the link (labeled " `Click Here`") in the message. An error message is displayed noting that the field doesn't exist anymore in the XDP file.
+1. Click the link (labeled " `Click Here`") in the message. An error message is displayed noting that the field does not exist anymore in the XDP file.
 
 ![Error you see when you delete an element in the XDP file](assets/no-element-xdp.png)
 
@@ -128,7 +129,7 @@ The field that has been deleted is also marked with an icon to indicate an error
 
 >[!NOTE]
 >
->The fields in the adaptive form that have an incorrect binding (an invalid `bindRef` value in the edit dialog) are also considered as deleted fields. If the author doesn't fix these errors and publish the adaptive form, the field is treated as a normal unbinded adaptive form field and is included in the unbinded section of the output XML file.
+>The fields in the adaptive form that have an incorrect binding (an invalid `bindRef` value in the edit dialog) are also considered as deleted fields. If the author does not fix these errors and publish the adaptive form, the field is treated as a normal unbinded adaptive form field and is included in the unbinded section of the output XML file.
 
 ## Downloads {#downloads}
 

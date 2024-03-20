@@ -6,6 +6,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
+solution: Experience Manager, Experience Manager Sites
 ---
 # SPA Blueprint{#spa-blueprint}
 
@@ -76,7 +77,7 @@ The page model uses the JSON Model Exporter, which is itself based on the [Sling
 * `:hierarchyType`: Hierarchical type of a resource. The `PageModelManager` currently supports the page type
 
 * `:items`: Child content resources of the current resource (nested structure, only present on containers)
-* `:itemsOrder`: Ordered list of the children. The JSON map object doesn't guaranty the order of its fields. By having both the map and the current array the consumer of the API has the benefits of both structures
+* `:itemsOrder`: Ordered list of the children. The JSON map object does not guaranty the order of its fields. By having both the map and the current array the consumer of the API has the benefits of both structures
 * `:path`: Content path of an item (present on items representing a page)
 
 See also [Getting Started with AEM Content Services.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
@@ -226,7 +227,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 The project components must generate at a minimum the following data attributes to allow the editor to interact with them.
 
-* `data-cq-data-path`: Relative path of the component as provided by the `PageModel` (for example,, `"root/responsivegrid/image"`). This attribute should not be added to pages.
+* `data-cq-data-path`: Relative path of the component as provided by the `PageModel` (for example, `"root/responsivegrid/image"`). This attribute should not be added to pages.
 
 In summary, to be interpreted by the page editor as editable, a project component must respect the following contract:
 

@@ -1,14 +1,11 @@
 ---
 title: Sample for integrating drafts & submissions component with database
-
 description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
+solution: Experience Manager, Experience Manager Forms
 ---
 # Sample for integrating drafts & submissions component with database {#sample-for-integrating-drafts-submissions-component-with-database}
 
@@ -229,7 +226,7 @@ Perform the following steps, on all the author and publish instances, to install
    `key` varchar(255) NOT NULL,
    `id` varchar(60) NOT NULL,
    PRIMARY KEY (`id`,`key`),
-   CONSTRAINT ‘additionalmetadatatable_fk’ FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
+   CONSTRAINT 'additionalmetadatatable_fk' FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
@@ -294,7 +291,7 @@ Perform the following steps, on all the author and publish instances, to install
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
    ```
 
-The sample implementation is now configured, which you can use to list your drafts and submissions while storing all data and metadata in a database. Let’s now see how data and metadata services are configured in the sample.
+The sample implementation is now configured, which you can use to list your drafts and submissions while storing all data and metadata in a database. Let's now see how data and metadata services are configured in the sample.
 
 ## Install mysql-connector-java-5.1.39-bin.jar file {#install-mysql-connector-java-bin-jar-file}
 
@@ -398,7 +395,7 @@ Perform the following steps to create [a client library](/help/sites-developing/
 
    >[!NOTE]
    >
-   >The script is for out of the box (OOTB) attachment widget component. If you have customized the OOTB attachment widget then change the above script to incorporate respective changes.
+   >The script is for out-of-the-box attachment widget component. If you have customized the out-of-the-box attachment widget then change the above script to incorporate respective changes.
 
 1. Add the following property to the folder created in step 2 and click **[!UICONTROL Save All]**.
 

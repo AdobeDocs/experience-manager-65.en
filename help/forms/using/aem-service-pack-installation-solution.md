@@ -3,6 +3,7 @@ title: CRX/bundle and Start page service unavailable errors once latest 6.5.15.0
 description: CRX/bundle and Start page service unavailable errors once latest 6.5.15.0 service pack is installed
 SEO Description: Trouble shooting steps to resolve the errors after installing latest 6.5.15.0 service pack
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
+solution: Experience Manager, Experience Manager Forms
 ---
 # Service unavailable error after installing AEM (6.5.15.0) service pack {#steps-to-resolve-error-after-installing-service-pack}
 
@@ -33,7 +34,7 @@ After installing [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/down
 
    >[!NOTE] 
    >
-   >In case the `bundle.info` under `bundle52` doesn't contains the `org.apache.felix.http.bridge` bundle, check the bundle number in square bracket next to the `org.apache.felix.http.bridge`. Then navigate to [aem-forms root]\crx-repository\launchpad\felix\bundle[x] and perform the next steps at this location.
+   >In case the `bundle.info` under `bundle52` does not contains the `org.apache.felix.http.bridge` bundle, check the bundle number in square bracket next to the `org.apache.felix.http.bridge`. Then navigate to [aem-forms root]\crx-repository\launchpad\felix\bundle[x] and perform the next steps at this location.
 
 1. Navigate to URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Search for `bundle.jar` and rename the `bundle.jar` to `bundle.jar.bak`.

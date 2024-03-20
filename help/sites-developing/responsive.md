@@ -7,6 +7,7 @@ topic-tags: mobile-web
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
+solution: Experience Manager, Experience Manager Sites
 ---
 # Responsive Design for Web Pages{#responsive-design-for-web-pages}
 
@@ -194,7 +195,7 @@ For example, to create a ` [sling:OsgiConfig](/help/sites-deploying/configuring-
 
   The - `*alias*` suffix is required because the MobileEmulatorProvider service is a factory service. Use any alias that is unique for this factory.
 
-* jcr:primaryType: `sling:OsgiConfig`
+* `jcr:primaryType`: `sling:OsgiConfig`
 
 Add the following node property:
 

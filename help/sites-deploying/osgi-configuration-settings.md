@@ -13,6 +13,7 @@ docset: aem65
 
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
+solution: Experience Manager, Experience Manager Sites
 ---
 # OSGi Configuration Settings{#osgi-configuration-settings}
 

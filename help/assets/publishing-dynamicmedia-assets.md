@@ -8,6 +8,7 @@ content-type: reference
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publishing
+solution: Experience Manager, Experience Manager Assets
 ---
 # Publish Dynamic Media assets {#publishing-dynamic-media-assets}
 

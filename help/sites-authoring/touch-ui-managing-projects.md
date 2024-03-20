@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Managing Projects {#managing-projects}
@@ -18,7 +19,7 @@ Using the console, you can create a project, associate resources with your proje
 
 ## Access Requirements {#access-requirements}
 
-Projects a standard AEM feature and don't require any additional setup.
+Projects a standard AEM feature and do not require any additional setup.
 
 However for users in projects to see other users/groups while using Projects such as when creating projects, creating tasks/workflows, or viewing and managing the team, those users need to have read access on `/home/users` and `/home/groups`.
 

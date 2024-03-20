@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
+solution: Experience Manager, Experience Manager Sites
 ---
 # Content Architecture{#content-architecture}
 
@@ -14,7 +15,7 @@ exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
 David's Model was written by David Nuescheler years ago, but the ideas hold true today. The main tenets of David's Model are as follows:
 
 * Data comes first, structure later. Maybe.
-* Drive the content hierarchy, don't let it happen.
+* Drive the content hierarchy, do not let it happen.
 * Workspaces are for `clone()`, `merge()`, and `update()`.
 * Beware of the same name siblings.
 * References are considered harmful.

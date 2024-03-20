@@ -11,6 +11,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: b856a93b-91fa-47a5-9e46-6a537218fd4e
+solution: Experience Manager, Experience Manager Forms
 ---
 # Generate PDF Service Java API Quick Start (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
 
@@ -22,7 +23,7 @@ Java API Quick Start(SOAP) is available for the Generate PDF service.
 
 [Quick Start (SOAP mode): Converting a PDF document to an RTF file using the Java API (SOAP mode)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

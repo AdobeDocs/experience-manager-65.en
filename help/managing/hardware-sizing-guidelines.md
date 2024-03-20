@@ -7,6 +7,7 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
+solution: Experience Manager, Experience Manager 6.5
 ---
 # Hardware Sizing Guidelines{#hardware-sizing-guidelines}
 
@@ -119,7 +120,7 @@ For benchmarking purposes, Adobe has developed some benchmark tests for standalo
   Calculate maximum throughput of a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages all of a similar nature. The steps involved were logging in to the site, creating a page with a SWF and Image/Text, adding a tag cloud, then activating the page.
 
     * **Result**
-      Maximum throughput for a simple page creation exercise such as above (considered as one transaction) was found to be 1730 transactions/hour.
+      Maximum throughput for a simple page creation exercise such as above&mdash;considered as one transaction&mdash;is found to be 1730 transactions/hour.
 
 * **Benchmark test 2**
   Calculate maximum throughput when load profile has a mix of fresh page creation (10%), modification of an existing page (80%) and creation then modification of a page in succession (10%). The complexity of the pages remains the same as in the profile of benchmark test 1. Basic modification of the page is done by adding an image and modifying the text content. Again, the exercise was performed on top of a base load of 300 pages of the same complexity as defined in benchmark test 1.
@@ -147,7 +148,7 @@ For such scenarios, Adobe ran benchmark tests on a two-node shared-nothing clust
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput with a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages, all of a similar nature.
 
     * **Result**
-      Maximum throughput for a simple page creation exercise, such as above&ndash;considered as one transaction&ndash;is found to be 2016 transactions/hour. This is an increase of approximately 16% when compared to a standalone author instance for the same benchmark test.
+      Maximum throughput for a simple page creation exercise, such as above&mdash;considered as one transaction&mdash;is found to be 2016 transactions/hour. This is an increase of approximately 16% when compared to a standalone author instance for the same benchmark test.
 
 * **Benchmark test 2b**
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput when the load profile has a mix of fresh page creation (10%), modification of an existing pages (80%) and creation and modification a page in succession (10%). The complexity of the page remains the same as in the profile of benchmark test 1. Basic modification of the page is done by adding an image and modifying the text content. Again, the exercise was performed on top of a base load of 300 pages of complexity the same as defined in benchmark test 1.

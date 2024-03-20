@@ -8,6 +8,7 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # AEM Tagging Framework {#aem-tagging-framework}
@@ -32,7 +33,7 @@ To tag content and use the AEM Tagging infrastructure:
 
 The declaration of a tag is captured in the repository in a node of type `cq:Tag`.
 
-A tag can be a simple word (for example, `sky`) or represent a hierarchical taxonomy (for example,, `fruit/apple`, meaning both the generic `fruit` and the more specific `apple`).
+A tag can be a simple word (for example, `sky`) or represent a hierarchical taxonomy (for example, `fruit/apple`, meaning both the generic `fruit` and the more specific `apple`).
 
 Tags are identified by a unique TagID.
 
@@ -70,7 +71,7 @@ In AEM, the base path is `/content/cq:tags` and the root node is of type `cq:Fol
 
 ### Tag Namespace {#tag-namespace}
 
-Namespaces let you group things. The most typical use case is a namespace per site (for example,, public, internal, and portal) or per larger application (for example,, WCM, Assets, Communities). But namespaces can be used for various other needs. Namespaces are used in the user interface to only show the subset of tags (that is,, tags of a certain namespace) that is applicable to the current content.
+Namespaces let you group things. The most typical use case is a namespace per site (for example, public, internal, and portal) or per larger application (for example, WCM, Assets, Communities). But namespaces can be used for various other needs. Namespaces are used in the user interface to only show the subset of tags (that is, tags of a certain namespace) that is applicable to the current content.
 
 The tag's namespace is the first level in the taxonomy subtree, which is the node immediately below the [taxonomy root node](#taxonomy-root-node). A namespace is a node of type `cq:Tag` whose parent is not a `cq:Tag` node type.
 

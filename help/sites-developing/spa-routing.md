@@ -10,6 +10,7 @@ topic-tags: spa
 content-type: reference
 
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
+solution: Experience Manager, Experience Manager Sites
 ---
 # SPA Model Routing{#spa-model-routing}
 
@@ -41,7 +42,7 @@ The `ModelRouter` automates the fetching of fragments of the model. But as any a
 
 >[!CAUTION]
 >
->The current version of the `ModelRouter` only support the use of URLs that points to the actual resource path of Sling Model entry points. It doesn't support the use of Vanity URLs or aliases.
+>The current version of the `ModelRouter` only support the use of URLs that points to the actual resource path of Sling Model entry points. It does not support the use of Vanity URLs or aliases.
 
 ## Routing Contract {#routing-contract}
 
@@ -57,7 +58,7 @@ By default, this behavior is automatically enabled. To disable it, the SPA shoul
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Note that every route of the SPA should correspond to an accessible resource in AEM (for example,, " `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Though, if needed, the SPA can also define a "block list" of routes that should be ignored by the `PageModelManager`:
+Note that every route of the SPA should correspond to an accessible resource in AEM (for example, " `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Though, if needed, the SPA can also define a "block list" of routes that should be ignored by the `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

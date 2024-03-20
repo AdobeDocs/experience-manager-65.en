@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
+solution: Experience Manager, Experience Manager Assets
 ---
 # Understand metadata concepts {#why-we-need-metadata}
 
@@ -128,7 +129,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PLUS - [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * PRL - PRISM Rights Language.
 * PUR - PRISM Usage Rights.
 * `xmpPlus` - Integration of PLUS with XMP.
@@ -143,7 +144,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 ### Print-specific metadata {#print-specific-metadata}
 
 * PDF and PDF/X - Adobe PDF and third-party applications.
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadata for paged text.
 

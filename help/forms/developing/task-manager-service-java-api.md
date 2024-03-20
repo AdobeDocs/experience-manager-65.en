@@ -11,6 +11,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
+solution: Experience Manager, Experience Manager Forms
 ---
 # Task Manager Service Java API Quick Start (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
@@ -30,7 +31,7 @@ The following Quick Starts are available for the Task Manager service.
 
 [Quick Start (SOAP mode): Retrieving task information using the Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

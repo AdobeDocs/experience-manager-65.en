@@ -5,6 +5,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
+solution: Experience Manager, Experience Manager Forms
 ---
 # New features summary | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
@@ -38,7 +39,7 @@ The [64-bit version of AEM Forms Designer](/help/forms/using/installing-configur
 
 #### Connect an Adaptive Forms with Microsoft&reg; SharePoint List
 
-AEM Forms provides an OOTB integration to [submit forms data directly to SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), letting you use SharePoint's Lists capabilities. You can configure Microsoft&reg; SharePoint List as a datasource for a Form Data Model and use the Submit using Form Data Model submit action to connect an Adaptive Form with SharePoint List.
+AEM Forms provides an out-of-the-box integration to [submit forms data directly to SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), letting you use SharePoint's Lists capabilities. You can configure Microsoft&reg; SharePoint List as a datasource for a Form Data Model and use the Submit using Form Data Model submit action to connect an Adaptive Form with SharePoint List.
 
 #### Support to configure Document of Record properties for Adaptive Form Fragments 
 

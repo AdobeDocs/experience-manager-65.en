@@ -4,6 +4,7 @@ description: Use fictitious users and groups to perform AEM Forms tasks using We
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
+solution: Experience Manager, Experience Manager Forms
 ---
 # We.Gov and We.Finance reference site walkthrough {#we-gov-reference-site-walkthrough}
 
@@ -188,7 +189,7 @@ Aya answers a few questions to confirm her eligibility by filling out a short ad
 
    >[!NOTE]
    >
-   >If the user earns more than $200,000/yr, they aren't eligible.  
+   >If the user earns more than $200,000/year, they are not eligible.  
 
 1. Click **Am I Eligible?**.
 1. Click **Apply Now** to proceed.

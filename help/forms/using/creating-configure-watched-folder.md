@@ -5,6 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
+solution: Experience Manager, Experience Manager Forms
 ---
 # Create or Configure a watched folder {#create-or-configure-a-watched-folder}
 
@@ -42,7 +43,7 @@ Perform the following steps to create a watched folder:
 
    >[!NOTE]
    >
-   >If you have selected **Service** for the **Process Files Using** field, the value of Service Name(inputProcessorType) field must be enclosed in parenthesis. For example, (foo=bar).
+   >If you have selected **Service** for the **Process Files Using** field, the value of Service Name(inputProcessorType) field must be enclosed in parenthesis. For example (foo=bar).
 
    ```java
    @Component(metatype = true, immediate = true, label = "WF Test Service", description = "WF Test Service")

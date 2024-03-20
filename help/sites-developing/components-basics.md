@@ -7,6 +7,7 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
+solution: Experience Manager, Experience Manager Sites
 ---
 # Adobe Experience Manager (AEM) Components - The Basics{#aem-components-the-basics}
 
@@ -596,9 +597,9 @@ There are many existing configurations in the repository. You can easily search 
 
 ### Component Placeholders {#component-placeholders}
 
-Components must always render some HTML that is visible to the author, even when the component has no content. Otherwise, it might visually disappear from the editor's interface, making it technically present but invisible on the page and in the editor. In such a case, the authors won't be able to select and interact with the empty component.
+Components must always render some HTML that is visible to the author, even when the component has no content. Otherwise, it might visually disappear from the editor's interface, making it technically present but invisible on the page and in the editor. In such a case, the authors cannot select and interact with the empty component.
 
-For this reason, components should render a placeholder as long as they don't render any visible output when the page is rendered in the page editor (when the WCM mode is `edit` or `preview`).
+For this reason, components should render a placeholder as long as they do not render any visible output when the page is rendered in the page editor (when the WCM mode is `edit` or `preview`).
 The typical HTML markup for a placeholder is the following:
 
 ```HTML
@@ -1021,7 +1022,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 >  * `aftermove`
 >  * `aftercopy`
 
-The event handler can be implemented with a custom implementation. For example, (where `project.customerAction` is a static method):
+The event handler can be implemented with a custom implementation. For example, where `project.customerAction` is a static method:
 
 `afteredit = "project.customerAction"`
 

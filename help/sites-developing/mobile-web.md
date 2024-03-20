@@ -11,6 +11,7 @@ content-type: reference
 
 legacypath: /content/docs/en/aem/6-0/develop/mobile
 exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
+solution: Experience Manager, Experience Manager Sites
 ---
 # Mobile Web{#mobile-web}
 

@@ -8,6 +8,7 @@ content-type: reference
 
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
+solution: Experience Manager, Experience Manager Forms
 ---
 # Configuring file type settings {#configuring-file-type-settings}
 
@@ -245,7 +246,7 @@ For instructions about accessing this setting, see [Create or edit file type set
 
     * If necessary, select a different fonts directory from the **Font source** drop-down menu. This drop-down menu lists fonts directories specified in **Home &gt; Settings &gt; Core System &gt; Core Configurations**.
     * Select one or more fonts from the **Available Fonts** list and click **Add**. These fonts are added to the **Fonts to Unembed** list.
-    * If you want to unembed some fonts that don't exist on the Forms Server, enter the names of those fonts in the **Add fonts to unembed** box. Click **Add**.
+    * If you want to unembed some fonts that do not exist on the Forms Server, enter the names of those fonts in the **Add fonts to unembed** box. Click **Add**.
 
    >[!NOTE]
    >
@@ -289,7 +290,7 @@ Select **Transparency** to configure the transparency settings while optimizing 
 >
 >Gradient and mesh resolution should generally be set to 150-300 ppi because the quality of the gradients, drop shadows, and feathers do not improve with higher resolutions, but printing time and file size increase.
 
-**Convert All Text to Outlines** Converts all type objects (point type, area type, and path type) to outlines and discards all type glyph information on pages containing transparency. This option ensures that the width of text stays consistent during flattening. Note that enabling this option will cause small fonts to appear slightly thicker when viewed in Acrobat or printed on low-resolution desktop printers. It doesn't affect the quality of the type printed on high-resolution printers or imagesetters.
+**Convert All Text to Outlines** Converts all type objects (point type, area type, and path type) to outlines and discards all type glyph information on pages containing transparency. This option ensures that the width of text stays consistent during flattening. Note that enabling this option will cause small fonts to appear slightly thicker when viewed in Acrobat or printed on low-resolution desktop printers. It does not affect the quality of the type printed on high-resolution printers or imagesetters.
 
 **Convert All Strokes to Outlines** Converts all strokes to simple filled paths on pages containing transparency. This option ensures that the width of strokes stays consistent during flattening. Note that enabling this option causes thin strokes to appear slightly thicker and may degrade flattening performance.
 

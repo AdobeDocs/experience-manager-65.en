@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 feature: Document Services
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
+solution: Experience Manager, Experience Manager Forms
 ---
 # Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
 
@@ -527,7 +528,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
               VerificationTime verificationTime = getVerificationTimeForPades();
               ValidationPreferences dssPrefs = getValidationPreferences();
 
-              //retrieve specifications for each of the services, you may pass null if you don't want to use that service
+              //retrieve specifications for each of the services, you may pass null if you do not want to use that service
               //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
                outDoc = docAssuranceService.applyDocumentTimeStamp(inDoc, verificationTime, dssPrefs, resourceResolver, null);
          }
@@ -1202,7 +1203,7 @@ public class Certify {
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
 
-             //retrieve specifications for each of the services, you may pass null if you don't want to use that service
+             //retrieve specifications for each of the services, you may pass null if you do not want to use that service
              //we are not extending the reader in this case, so passing null
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     try {
@@ -1567,7 +1568,7 @@ public class PassEncryptCertifyExtend {
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
 
-             //retrieve specifications for each of the services, you may pass null if you don't want to use that service
+             //retrieve specifications for each of the services, you may pass null if you do not want to use that service
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     outDoc = docAssuranceService.secureDocument(inDoc, getPassEncryptionOptions(), getCertificationOptions(resourceResolver), getReaderExtensionOptions(resourceResolver),null);
         }
@@ -1879,7 +1880,7 @@ public class PassEncryptSignExtend {
           adminSession = slingRepository.loginAdministrative(null);
              resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
 
-             //retrieve specifications for each of the services, you may pass null if you don't want to use that service
+             //retrieve specifications for each of the services, you may pass null if you do not want to use that service
              //for encrypted document pass Unlock Options - see the method getUnlockOptions() below
     outDoc = docAssuranceService.secureDocument(inDoc, getCertEncryptionOptions(), getSignatureOptions(resourceResolver), getReaderExtensionOptions(resourceResolver),null);
         }

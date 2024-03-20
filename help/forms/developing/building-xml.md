@@ -2,6 +2,7 @@
 title: How to use the execute script service in AEM Forms on JEE Workbench to build XML data?
 description: Using the execute script service in AEM Forms on JEE Workbench to build XML data
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
+solution: Experience Manager, Experience Manager Forms
 ---
 # Using the execute script service in AEM Forms on JEE Workbench to build XML data {#using-execute-script-service-forms-jee-workbench}
 
@@ -9,7 +10,7 @@ There is much XML involved with AEM Forms on JEE Process Management workflows, f
 
 When dealing with simple XML settings, one may use the `Set Value` service, which is a default AEM Forms on JEE service. This service sets the value of one or more data items in the process data model. For simple conditional logic "if this, then that" scenarios, this service can suit the purpose.
 
-However, in more complex situations, the Set Value service isn't as effective. In these situations, one must rely on a more robust set of programming commands, such as those provided by a programming language like Java&trade;. Using Java&trade; to build complex XML can be much easier and more clear than building an XML document from simple text within the Set Value service. In addition, it is easier to include conditional programming in Java&trade; than within a Set Value service.
+However, in more complex situations, the Set Value service is not as effective. In these situations, one must rely on a more robust set of programming commands, such as those provided by a programming language like Java&trade;. Using Java&trade; to build complex XML can be much easier and more clear than building an XML document from simple text within the Set Value service. In addition, it is easier to include conditional programming in Java&trade; than within a Set Value service.
 
 ## Using the Execute Script Service in a Process {#using-execute-script-service-in-process}
 

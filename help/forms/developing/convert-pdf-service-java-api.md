@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
+solution: Experience Manager, Experience Manager Forms
 ---
 # Convert PDF Service Java&trade; API Quick Start (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
@@ -16,7 +17,7 @@ The following Quick Starts are available for the Convert PDF service API.
 
 [Quick Start (SOAP mode): Converting a PDF document to JPEG files using the Java&trade; API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

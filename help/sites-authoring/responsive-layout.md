@@ -8,6 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
+solution: Experience Manager, Experience Manager Sites
 ---
 # Responsive Layout{#responsive-layout}
 
@@ -103,7 +104,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    The emulator toolbar displays additional layout options:
 
-    * **Rotate device** - Lets you rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and vice-versa.
+    * **Rotate device** - Lets you rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and conversely.
 
       ![Rotate device](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotate device](do-not-localize/screen_shot_2018-03-23at084637.png)
 

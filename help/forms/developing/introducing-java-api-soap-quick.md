@@ -1,6 +1,6 @@
 ---
 title: Introducing Java&trade; API QuickStart
-description: Learn how AEM Forms operations can be performed using the AEM Forms Java&trade; strongly-typed API enabled with SOAP connection.
+description: Learn how AEM Forms operations can be performed using the AEM Forms Java&trade; strongly typed API enabled with SOAP connection.
 
 contentOwner: admin
 content-type: reference
@@ -9,6 +9,7 @@ topic-tags: develop, development-tools
 
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
+solution: Experience Manager, Experience Manager Forms
 ---
 # Introducing Java&trade; API Quick Start {#introducing-java-api-quickstart} 
 
@@ -16,9 +17,9 @@ exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 
 Adobe AEM Forms API Quick Start can help you accelerate your efforts to develop programs that interact with AEM Forms services. *Quick Start*s are complete programs that you can copy and paste into your own projects and use as a starting point. You can run a Quick Start to see how it behaves and modify it for your own needs.
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
-Java&trade; strongly-typed API Quick Start provides a listing of JAR files that are required to execute the Java&trade; application. Most Java&trade; Quick Starts are console applications that run within `main`. However, the Forms Java&trade; strongly-typed API Quick Start is implemented as a Java&trade; servlet that runs within a web application.
+Java&trade; strongly typed API Quick Start provides a listing of JAR files that are required to execute the Java&trade; application. Most Java&trade; Quick Starts are console applications that run within `main`. However, the Forms Java&trade; strongly typed API Quick Start is implemented as a Java&trade; servlet that runs within a web application.
 
 The JAR file listing is in a comment section at the beginning of the Quick Start. For example, the following comment is in an Output quick start and is a typical JAR file listing found in each Java&trade; Quick Start.
 

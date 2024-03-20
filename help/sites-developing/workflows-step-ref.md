@@ -11,6 +11,7 @@ content-type: reference
 
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
+solution: Experience Manager, Experience Manager Sites
 ---
 # Workflow Step Reference {#workflow-step-reference}
 
@@ -63,7 +64,7 @@ The following properties are available for many workflow step components, on the
 
 * **Notify user via email**
 
-    * You can notify participants by sending them an email when the workflow reaches the step.
+    * Notify participants by sending them an email when the workflow reaches the step.
     * If enabled, an email is sent to the user defined by the property **User/Group**, or to each member of the group if a group is defined.
 
 * **User/Group**

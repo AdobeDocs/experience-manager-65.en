@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
+solution: Experience Manager, Experience Manager Sites
 ---
 # Development Practices{#development-practices}
 
@@ -58,4 +59,4 @@ The Boy Scouts have a rule: "Leave it better than you found it." As long as all 
 
 ### Avoid implementing YAGNI features {#avoid-implementing-yagni-features}
 
-YAGNI (You Aren't Gonna Need It) features are things that are implemented when we expect that we will need something in the future, even though we don't need it now. Ideally, we should implement the simplest thing that will work today and use continuous refactoring to ensure that the architecture of the system evolves with the requirements over time. This lets us focus on what matters and prevent code bloat and feature creep.
+YAGNI (You Are Not Gonna Need It) features are things that are implemented when we expect that we will need something in the future, even though we do not need it now. Ideally, we should implement the simplest thing that will work today and use continuous refactoring to ensure that the architecture of the system evolves with the requirements over time. This lets us focus on what matters and prevent code bloat and feature creep.

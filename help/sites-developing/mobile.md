@@ -8,6 +8,7 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
+solution: Experience Manager, Experience Manager Sites
 ---
 # Creating Sites for Mobile Devices{#creating-sites-for-mobile-devices}
 
@@ -118,7 +119,7 @@ The **We.Retail Mobile Demo Site** uses the following mobile components which ar
 
 #### Creating a Mobile Component {#creating-a-mobile-component}
 
-The AEM mobile framework allows to develop components that are sensitive to the device issuing the request. The following code samples show how to use the AEM mobile API in a component jsp and particularly how to:
+The AEM mobile framework lets you develop components that are sensitive to the device issuing the request. The following code samples show how to use the AEM mobile API in a component jsp and particularly how to:
 
 * Get the device from the request:
   `Device device = slingRequest.adaptTo(Device.class);`
@@ -374,7 +375,7 @@ When the value of the `cq:variantDomain` property of a `cq:siteVariant` node is 
 
 ### Defining a Device Group Specific URL {#defining-a-device-group-specific-url}
 
-If you don't want to use alternate links, you can configure a global URL for each `DeviceGroup`. Adobe recommends creating your own client library that embeds the `browsermap.standard` client library but redefines the device groups.
+If you do not want to use alternate links, you can configure a global URL for each `DeviceGroup`. Adobe recommends creating your own client library that embeds the `browsermap.standard` client library but redefines the device groups.
 
 BrowserMap is designed in such a way that Device Groups definitions can be overridden by creating and adding a Device Group with the same name to the `BrowserMap` object from your customized client library.
 
@@ -493,7 +494,7 @@ Once you've created your customized `BrowserMap` client library, Adobe suggests 
 
 ### Excluding BrowserMap From Certain Pages {#excluding-browsermap-from-certain-pages}
 
-If you would like to exclude the BrowserMap library from some of your pages where you don't need client-detection you can add a request attribute:
+If you would like to exclude the BrowserMap library from some of your pages where you do not need client-detection you can add a request attribute:
 
 ```xml
 <%

@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
+solution: Experience Manager, Experience Manager Forms
 ---
 # Components and Services Java&trade; API Quick Start (SOAP) {#components-and-services-java-apiquick-start-soap}
 
@@ -26,7 +27,7 @@ Java&trade; API Quick Start (SOAP) is available for components and services.
 [Quick Start (SOAP mode): Removing components using the Java&trade; API](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

@@ -11,6 +11,7 @@ docset: aem65
 
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
+solution: Experience Manager, Experience Manager Forms
 ---
 # Data Dictionary{#data-dictionary}
 
@@ -84,7 +85,7 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
     * Only composite type is allowed as top-level DDE in a data dictionary.
     * Name, reference name, and element type are mandatory fields for a data dictionary and DDEs.
     * The reference name must be unique.
-    * A parent DDE (composite) can't have two children with the same name.
+    * A parent DDE (composite) cannot have two children with the same name.
     * Enums only contain primitive String types.
 
    For more information on Composite, Collection, and Primitive elements and working with data dictionary elements, see [Mapping Data Dictionary Elements to XML Schema](#mappingddetoschema).
@@ -464,7 +465,7 @@ The Data Dictionary Editor enforces following validations when creating or updat
 * Composite and Collection elements are not allowed at leaf level. Only Primitive (String, Date, Number, Boolean) elements are allowed at leaf level. This validation ensures that there is no composite and collection element without a child DDE.
 * While uploading an XSD file to create a data dictionary, the Data Dictionary Editor Prompts for a top-level element, if multiple exist, to create the data dictionary.
 * The name is the only required parameter for a data dictionary.
-* A parent DDE (composite) can't have two children with the same name
+* A parent DDE (composite) cannot have two children with the same name
 * Ensures that a DDE is marked computed, only if it is not a required parameter. A required element cannot be computed and a computed element cannot be required. Also, Collection and Composite Element cannot be computed elements.
 * Ensures that a DDE is marked required, only when it is not computed. It also ensures that it is not the "collectionElement" denoting the type of Collection (that is the only children of a collection Element).
 * Empty keys or Duplicate keys are not allowed in extendedProperties for a data dictionary or DDE.

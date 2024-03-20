@@ -7,6 +7,7 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
+solution: Experience Manager, Experience Manager Forms
 ---
 # Creating and using themes {#creating-and-using-themes}
 
@@ -172,7 +173,7 @@ List of meta-properties of a theme (found in properties page of a theme).
      <li>The user-defined repository path within '/etc' where the clientlibs corresponding to this theme are stored.</li>
      <li>Default value - '/etc/clientlibs/fd/themes' + relative path of theme asset.</li>
      <li>If the location does not exist, the folder hierarchy is auto-generated.</li>
-     <li>When this value is changed, the clientlib node structure is moved to the new location entered.<br /> <em><strong>Note:</strong> If you change default clientlib location, in the CRXDE repository assign <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>to <code>forms-users</code> and <code>crx:replicate</code>, <code>jcr:read </code>to <code>fd-service</code> in the new location. Also attach another ACL by adding <code>deny jcr:addChildNodes</code> for <code>forms-user</code></em></li>
+     <li>When this value is changed, the clientlib node structure is moved to the new location entered.<br /> <em><strong>Note:</strong> If you change default clientlib location, in the CRXDE repository assign <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> to <code>forms-users</code> and <code>crx:replicate</code>, <code>jcr:read</code> to <code>fd-service</code> in the new location. Also attach another ACL by adding <code>deny jcr:addChildNodes</code> for <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -277,9 +278,9 @@ Use Theme Editor breakpoints to define alternate styling for different screen si
 
 When you select a component in the Canvas, its styling properties are listed in the sidebar. Select the object type and its state, and then provide its styling.
 
-### Recently-used styles in Theme Editor {#recently-used-styles-in-theme-editor}
+### Recently used styles in Theme Editor {#recently-used-styles-in-theme-editor}
 
-Theme editor caches upto 10 styles applied to a component. You can use the cached styles with other component of a theme. Recently-used styles are available right below the selected component in sidebar as a list box. Initially, the recently-used styles list is empty.
+Theme editor caches upto 10 styles applied to a component. You can use the cached styles with other component of a theme. Recently used styles are available right below the selected component in sidebar as a list box. Initially, the recently-used styles list is empty.
 
 ![asset-library](assets/asset-library.png)
 

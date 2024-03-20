@@ -10,6 +10,7 @@ topic-tags: process-reporting
 
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
+solution: Experience Manager, Experience Manager Forms
 ---
 # Getting Started with Process Reporting{#getting-started-with-process-reporting}
 

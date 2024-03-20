@@ -7,6 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
+solution: Experience Manager, Experience Manager Sites
 ---
 # SharePoint Connector Licenses, Copyright Notices, and Disclaimers{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
@@ -394,7 +395,7 @@ The following table lists third-party libraries used within the Communiqué Serv
 
         To apply the Apache License to your work, attach the following
         boilerplate notice, with the fields enclosed by brackets "[]"
-        replaced with your own identifying information. (Don't include
+        replaced with your own identifying information. (Do not include
         the brackets!)  The text should be enclosed in the appropriate
         comment syntax for the file format. We also recommend that a
         file or class name and description of purpose be included on the
@@ -479,7 +480,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      example, modifying the Specification, other than to the extent of your
      fair use rights, or distributing the Specification to third parties).
 
-     *3. Pass-through Conditions*. You need not include limitations (a)-(c)
+     *3. Pass-through Conditions*. You do not need to include limitations (a)-(c)
      from the previous paragraph or any other particular "pass through"
      requirements in any license You grant concerning the use of your
      Independent Implementation or products derived from it. However, except
@@ -831,7 +832,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      its scope. No license is granted hereunder for any
      other purpose.
 
-     You need not include limitations (i)-(iii) from
+     You do not need to include limitations (i)-(iii) from
      the previous paragraph or any other particular
      "pass through" requirements in any license You
      grant concerning the use of your Independent
@@ -1103,7 +1104,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      W3C&reg; DOCUMENT NOTICE AND LICENSE
      Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
-     Wide Web Consortium, (Massachusetts Institute of
+     Wide Web Consortium (Massachusetts Institute of
      Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.
      <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
@@ -1125,8 +1126,8 @@ The following table lists third-party libraries used within the Communiqué Serv
      A link or URL to the original W3C document.
 
      The pre-existing copyright notice of the original author, or if
-     it doesn't exist, a notice of the form: "Copyright &copy; [$date-of-document]
-     World Wide Web Consortium, (Massachusetts
+     it does not exist, a notice of the form: "Copyright &copy; [$date-of-document]
+     World Wide Web Consortium (Massachusetts
      Institute of Technology, Institut National de Recherche en Informatique
      et en Automatique, Keio
      University). All Rights Reserved.
@@ -1190,7 +1191,7 @@ The following table lists third-party libraries used within the Communiqué Serv
      W3C&reg; SOFTWARE NOTICE AND LICENSE
      Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
-     Wide Web Consortium, (Massachusetts Institute of
+     Wide Web Consortium (Massachusetts Institute of
      Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.
      <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>

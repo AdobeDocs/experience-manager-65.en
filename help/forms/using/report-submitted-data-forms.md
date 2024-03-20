@@ -10,6 +10,7 @@ topic-tags: publish, developer-reference
 
 feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
+solution: Experience Manager, Experience Manager Forms
 ---
 # APIs to work with submitted forms on forms portal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
@@ -25,7 +26,7 @@ Returns a list of all eligible forms.
 
 ### URL parameters {#url-parameters}
 
-This API doesn't require additional parameters.
+This API does not require additional parameters.
 
 ### Response {#response}
 

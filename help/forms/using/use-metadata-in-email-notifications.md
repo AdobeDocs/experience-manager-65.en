@@ -4,6 +4,7 @@ description: Use metadata to populate information in a forms workflow email noti
 topic-tags: publish
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
+solution: Experience Manager, Experience Manager Forms
 ---
 # Use metadata in an email notification {#use-metadata-in-an-email-notification}
 

@@ -44,7 +44,7 @@ This article lists the critical fixes implemented to address known issues, impro
      </td>
     <td>
     <ul>
-    <li> The OOTB Scribble Signature component fails to render for a preview in an adaptive form. (FORMS-12073).</li>
+    <li> The out-of-the-box Scribble Signature component fails to render for a preview in an adaptive form. (FORMS-12073).</li>
     </ul>
     </td>    
    </tr>

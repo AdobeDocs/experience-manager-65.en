@@ -8,6 +8,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms, Foundation Components
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
+solution: Experience Manager, Experience Manager Forms
 ---
 # Error Handlers in Adaptive Forms {#error-handlers-in-adaptive-form}
 
@@ -72,10 +73,10 @@ With the improvements in features and subsequent updates in the versions of AEM 
 
 ```javascript
     {
-        "type": "SERVER_SIDE_VALIDATION/FORM_SUBMISSION/SERVICE_INVOCATION/FAILURE/VALIDATION_ERROR", (required)
-        "title": "Server side validation failed/Third party service invocation failed", (optional)
-        "detail": "", (optional)
-        "instance": "", (optional)
+        "type": "SERVER_SIDE_VALIDATION/FORM_SUBMISSION/SERVICE_INVOCATION/FAILURE/VALIDATION_ERROR" (required)
+        "title": "Server side validation failed/Third party service invocation failed" (optional)
+        "detail": "" (optional)
+        "instance": "" (optional)
         "validationErrors" : [ (required)
             {
                 "fieldName":"<SOM expression of the field whose data sent is invalid>",
@@ -84,7 +85,7 @@ With the improvements in features and subsequent updates in the versions of AEM 
     
             }
         ],
-        "originCode": <Origin http status code>, (optional - if there is SERVER_SIDE_VALIDATION)
+        "originCode": <Origin http status code> (optional - if there is SERVER_SIDE_VALIDATION)
         "originMessage" : "<unstructured error message returned by service>" (optional - if there is SERVER_SIDE_VALIDATION)
     }
 ```

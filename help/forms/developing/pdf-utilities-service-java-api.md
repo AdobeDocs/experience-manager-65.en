@@ -11,6 +11,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: e861d848-b0b7-4ae9-a56d-c0957ec95730
+solution: Experience Manager, Experience Manager Forms
 ---
 # PDF Utilities Service Java API Quick Start (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
@@ -26,7 +27,7 @@ The following Quick Starts are available for the PDF Utilities service.
 
 [Quick Start (SOAP mode): Sanitizing PDF documents](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

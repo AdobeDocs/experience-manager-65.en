@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
+solution: Experience Manager, Experience Manager Forms
 ---
 # Distiller Service Java&trade; API Quick Start (SOAP) {#distiller-service-java-api-quickstart-soap}
 
@@ -14,7 +15,7 @@ Java&trade; API Quick Start (SOAP) is available for the Distiller&reg; service:
 
 [Quick Start (SOAP mode): Converting a PostScript file to a PDF document using the Java&trade; API](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

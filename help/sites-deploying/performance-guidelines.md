@@ -11,6 +11,7 @@ topic-tags: configuring
 
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
+solution: Experience Manager, Experience Manager Sites
 ---
 # Performance Guidelines{#performance-guidelines}
 
@@ -345,10 +346,10 @@ Develop for AEM aiming for **performance and scalability**. The following are be
 
 **DON'T**
 
-* Don't use JCR APIs directly, if you can
-* Don't change /libs, but rather use overlays
-* Don't use queries wherever possible
-* Don't use Sling Bindings to get OSGi services in Java&trade; code, but rather use:
+* Do not use JCR APIs directly, if you can
+* Do not change /libs, but rather use overlays
+* Do not use queries wherever possible
+* Do not use Sling Bindings to get OSGi services in Java&trade; code, but rather use:
 
     * @Reference in a DS component
     * @Inject in a Sling Model

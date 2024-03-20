@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: spa
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
+solution: Experience Manager, Experience Manager Sites
 ---
 # SPA and Adobe Experience Platform Launch Integration{#spa-and-adobe-experience-platform-launch-integration}
 
@@ -22,6 +23,6 @@ To understand how to integrate your SPA with Adobe Experience Platform Launch, s
 
 >[!NOTE]
 >
->The referenced KB was created to enable Adobe Experience Platform Launch integration with SPAs that don't use the Adobe Experience Manager SPA Editor. These methods should also allow the Adobe Experience Platform Launch integration to coexist with SPAs that are built to use the SPA Editor.
+>The referenced KB was created to enable Adobe Experience Platform Launch integration with SPAs that do not use the Adobe Experience Manager SPA Editor. These methods should also allow the Adobe Experience Platform Launch integration to coexist with SPAs that are built to use the SPA Editor.
 >
 >The use of Redux alongside the JavaScript SPA libraries has not been fully explored. Support of Redux is planned in a future release of the SPA Editor.

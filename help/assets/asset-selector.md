@@ -4,8 +4,9 @@ description: Learn how to use the asset selector to search, filter, browse, and 
 contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
-exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
 hide: yes
+exl-id: c84ce84a-1e52-48fd-a16c-38c7769df9af
+solution: Experience Manager, Experience Manager Assets
 ---
 # Asset selector {#asset-selector}
 

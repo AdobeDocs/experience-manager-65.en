@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
+solution: Experience Manager, Experience Manager Forms
 ---
 # Generate Document of Record for adaptive forms or adaptive form fragments {#generate-document-of-record-for-adaptive-forms}
 
@@ -277,7 +278,7 @@ Perform the following steps to configure a document of record for adaptive forms
 
 1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options:
 
-   **None** Select this option if you don't want to configure document of record for the form.
+   **None** Select this option if you do not want to configure document of record for the form.
 
    **Associate Form Template as Document of Record Template** Select this option if you have an XDP file that you want to use as a template for the document of record. On selecting this option, all XDP files available in AEM Forms repository are displayed. Select the appropriate file.
 
@@ -446,7 +447,7 @@ To apply the second master page properties to a panel and the third master page 
 
 >[!NOTE]
 >
-> You can not apply multiple master pages to a Document of Record for an adaptive form Fragment.
+> You cannot apply multiple master pages to a Document of Record for an adaptive form Fragment.
 
 ## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 

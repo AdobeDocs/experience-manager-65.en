@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
+solution: Experience Manager, Experience Manager Sites
 ---
 # Configuring ContextHub {#configuring-contexthub}
 
@@ -255,7 +256,7 @@ Use CRXDE Lite to set the property `debug` to **true** under:
 
 Silent mode suppresses all debug information. Unlike the normal debug option, which can be set independently for each ContextHub configuration, silent mode is a global setting which takes precedent over any debug settings on the ContextHub configuration level.
 
-This is useful for your publish instance, where you don't want any debug information at all. Because it is a global setting, it is enabled via OSGi.
+This is useful for your publish instance, where you do not want any debug information at all. Because it is a global setting, it is enabled via OSGi.
 
 1. Open the **Adobe Experience Manager Web Console Configuration** at `http://<host>:<port>/system/console/configMgr`
 1. Search for **Adobe Granite ContextHub**

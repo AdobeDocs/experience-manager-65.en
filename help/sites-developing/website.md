@@ -7,6 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
+solution: Experience Manager, Experience Manager Sites
 ---
 # Create a Fully-Featured Website (JSP){#create-a-fully-featured-website-jsp}
 
@@ -962,7 +963,7 @@ public class img_GET extends AbstractImageServlet {
 
     protected Layer createLayer(ImageContext c)
             throws RepositoryException, IOException {
-        /* don't create the layer yet. handle everything later */
+        /* do not create the layer yet. handle everything later */
         return null;
     }
 

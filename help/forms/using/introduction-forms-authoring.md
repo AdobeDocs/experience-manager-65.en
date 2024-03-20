@@ -11,6 +11,7 @@ topic-tags: introduction, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
+solution: Experience Manager, Experience Manager Forms
 ---
 # Introduction to authoring adaptive forms {#introduction-to-authoring-adaptive-forms}
 
@@ -34,7 +35,7 @@ Adaptive forms let you create forms that are engaging, responsive, dynamic, and 
   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an adaptive form and use its elements to add dynamic content to the adaptive form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring adaptive forms.
 
 * **Using none or without a form model**
-  Adaptive forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+  Adaptive forms created with this option do not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
 
 For more information about creating an adaptive form, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).
 

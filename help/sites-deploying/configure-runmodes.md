@@ -7,6 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
+solution: Experience Manager, Experience Manager Sites
 ---
 # Run Modes{#run-modes}
 

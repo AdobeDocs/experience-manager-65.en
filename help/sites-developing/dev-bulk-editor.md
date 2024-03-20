@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
+solution: Experience Manager, Experience Manager Sites
 ---
 # Developing the Bulk Editor{#developing-the-bulk-editor}
 

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
+solution: Experience Manager, Experience Manager Sites
 ---
 # AEM Development - Guidelines and Best Practices{#aem-development-guidelines-and-best-practices}
 

@@ -3,6 +3,7 @@ title: Configure the Rich Text Editor plug-ins
 description: Learn to configure the Adobe Experience Manager Rich Text Editor plug-ins to enable individual functionalities.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Configure the Rich Text Editor plug-ins {#configure-the-rich-text-editor-plug-ins}
@@ -321,7 +322,7 @@ Any text authored in RTE is placed within a block tag, the default being `<p>`. 
 
 >[!NOTE]
 >
->If a block tag, for example, an &lt;hr&gt; tag, can't be assigned to a paragraph, it is not a valid use case for a paraformat plug-in.
+>If a block tag, for example, an &lt;hr&gt; tag, cannot be assigned to a paragraph, it is not a valid use case for a paraformat plug-in.
 
 When the Paragraph Formats plug-in is enabled for the first time, no default Paragraph Formats are available. The pop-up list is empty. To provide the authors with Paragraph Formats, do the following:
 

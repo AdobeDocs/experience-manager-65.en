@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
+solution: Experience Manager, Experience Manager Forms
 ---
 # Assembler Service Java&trade; API QuickStart(SOAP) {#assembler-service-java-api-quickstart-soap}
 
@@ -34,7 +35,7 @@ Java API Quick Start(SOAP) is available for the Assembler service
 
 [Quick Start (SOAP mode): Assembling multiple XDP fragments using the Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

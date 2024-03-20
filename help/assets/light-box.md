@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
+solution: Experience Manager, Experience Manager Assets
 ---
 # Lightbox {#lightbox}
 
@@ -25,7 +26,7 @@ If you are an [!DNL Adobe Experience Manager Assets] user, Lightbox is automatic
 
    >[!NOTE]
    >
-   >Although Lightbox resembles a collection, you can't perform all the actions that you normally perform on collections. For example, you can't delete, share, or view settings for a Lightbox. In addition, you can't add it to other collections. However, you can edit the assets inside a lightbox.
+   >Although Lightbox resembles a collection, you cannot perform all the actions that you normally perform on collections. For example, you cannot delete, share, or view settings for a Lightbox. In addition, you cannot add it to other collections. However, you can edit the assets inside a lightbox.
 
 ## Remove assets from Lightbox {#removing-assets-from-lightbox}
 

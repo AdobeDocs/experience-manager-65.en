@@ -6,6 +6,7 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 78b7c497-c474-4308-bfab-8f424b5f7268
+solution: Experience Manager, Experience Manager Sites
 ---
 # E-Commerce Repository Restructuring in AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 

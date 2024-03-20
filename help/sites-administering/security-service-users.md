@@ -7,6 +7,7 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Service Users in Adobe Experience Manager (AEM) {#service-users-in-aem}
@@ -15,13 +16,13 @@ feature: Security
 
 The main way of getting an administrative session or resource resolver in AEM was using the `SlingRepository.loginAdministrative()` and `ResourceResolverFactory.getAdministrativeResourceResolver()` methods provided by Sling.
 
-However, neither of these methods were designed around the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) and make it too easy for a developer not to plan for a proper structure and corresponding Access Control Levels (ACLs) for their content early on. If a vulnerability is present in such a service it often leads to privilege escalations to the `admin` user, even if the code itself would not need administrative privileges to work.
+However, neither of these methods were designed around the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). It makes it too easy for a developer not to plan for a proper structure and corresponding Access Control Levels (ACLs) for their content early on. If a vulnerability is present in such a service it often leads to privilege escalations to the `admin` user, even if the code itself would not need administrative privileges to work.
 
 ## How to Phase Out Admin Sessions {#how-to-phase-out-admin-sessions}
 
 ### Priority 0: Is the feature active/needed/derelict? {#priority-is-the-feature-active-needed-derelict}
 
-There may be cases where the admin session is not used, or the feature is disabled entirely. If this is the case with your implementation, make sure you remove the feature altogether or fit it with [NOP code](https://en.wikipedia.org/wiki/NOP).
+There may be cases where the admin session is not used, or the feature is disabled entirely. If so with your implementation, make sure you remove the feature altogether or fit it with [NOP code](https://en.wikipedia.org/wiki/NOP).
 
 ### Priority 1: Use The Request Session {#priority-use-the-request-session}
 
@@ -51,7 +52,7 @@ Also, make sure that any new features you develop adhere to these principles:
     * Managing access control should feel natural
     * Access control must be enforced by the repository, not the application
 
-* **Make use of nodetypes**
+* **Use nodetypes**
 
     * Restrict the set of properties that can be set
 
@@ -74,7 +75,7 @@ Whether you apply access control while restructuring content or when you do it f
 
 ## Service Users and Mappings {#service-users-and-mappings}
 
-If the above fails, Sling 7 offers a Service User Mapping service, which allows to configure a bundle-to-user mapping and two corresponding API methods:
+If the above fails, Sling 7 offers a Service User Mapping service, which lets you configure a bundle-to-user mapping and two corresponding API methods:
 
 * [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
 * [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
@@ -93,7 +94,7 @@ The methods return a session/resource resolver with the privileges of a configur
 
 ### Replacing the admin-session with a service-user {#replacing-the-admin-session-with-a-service-user}
 
-A service user is a JCR user with no password set and a minimal set of privileges that are necessary to perform a specific task. Having no password set means that it will not be possible to log in with a service user.
+A service user is a JCR user with no password set and a minimal set of privileges that are necessary to perform a specific task. Having no password set means that it is not possible to log in with a service user.
 
 A way to deprecate an administrative session is to replace it with service user sessions. It could also be replaced by multiple subservice users if needed.
 
@@ -110,7 +111,7 @@ To replace the admin session with a service user, you should perform the followi
 
 ## Creating a service user {#creating-a-new-service-user}
 
-After you verified that no user in the list of AEM service users is applicable for your use case and the corresponding RTC issues have been approved, you can go ahead and add the new user to the default content.
+After you verified that no user in the list of AEM service users is applicable for your use case and the corresponding RTC issues have been approved, add the new user to the default content.
 
 The recommended approach is to create a service user to use the repository explorer at *https://&lt;server&gt;:&lt;port&gt;/crx/explorer/index.jsp*
 
@@ -130,7 +131,7 @@ You can create service users by:
 
    >[!NOTE]
    >
-   >There are no mixin types associated with service users. This means that there will be no access control policies for system users.
+   >There are no mixin types associated with service users. This means that there are no access control policies for system users.
 
 When adding the corresponding .content.xml to the content of your bundle, make sure you have set the `rep:authorizableId` and that the primary type is `rep:SystemUser`. It should look like this:
 
@@ -151,7 +152,7 @@ To add a mapping from your service to the corresponding System Users, create a f
 1. In this folder, create a file named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-&lt;some unique name for your factory configuration&gt;.xml with the content of your factory configuration (including all subservice user mappings). Example:
 
 1. Create a `SLING-INF/content` folder below the `src/main/resources` folder of your bundle;
-1. In this folder create a file `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` with the content of your factory configuration, including all subservice user mappings.
+1. In this folder, create a file `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` with the content of your factory configuration, including all subservice user mappings.
 
    For illustration purposes, take the file called `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`:
 
@@ -184,16 +185,16 @@ To add a mapping from your service to the corresponding System Users, create a f
 
     * Going to the Web Console at *https://serverhost:serveraddress/system/console/configMgr*
     * Search for **Apache Sling Service User Mapper Service Amendment**
-    * Click the link to see if the proper configuration is in place.
+    * Click the link so you can see if the proper configuration is in place.
 
 ## Dealing with shared sessions in services {#dealing-with-shared-sessions-in-services}
 
 Calls to `loginAdministrative()` often appear together with shared sessions. These sessions are acquired on service activation and are only logged out after the service is stopped. Although this is common practice, it leads to two problems:
 
-* **Security:** Such admin sessions are used to cache and return resources or other objects that are bound to the shared session. Later in the call stack these objects could get adapted to sessions or resource resolvers with elevated privileges, and often it is not clear to the caller that it is an admin session they are operating with.
+* **Security:** Such admin sessions are used to cache and return resources or other objects that are bound to the shared session. Later in the call stack these objects could get adapted to sessions or resource resolvers with elevated privileges. Often it is not clear to the caller that it is an admin session with which they are operating.
 * **Performance:** In Oak, shared sessions can cause performance problems, and it is not recommended that you use them.
 
-The most obvious solution for the security risk is to simply replace the `loginAdministrative()` call with a `loginService()` one to a user with restricted privileges. However, this will not have any impact on any potential performance degradation. A possibility to mitigate that is to wrap all requested information in an object that has no association with the session. Then, create (or destroy) the session on demand.
+The most obvious solution for the security risk is to simply replace the `loginAdministrative()` call with a `loginService()` one to a user with restricted privileges. However, this does not have any impact on any potential performance degradation. A possibility to mitigate that is to wrap all requested information in an object that has no association with the session. Then, create (or destroy) the session on demand.
 
 The recommended approach is to refactor the service's API to give the caller control over the creation/destruction of the session.
 

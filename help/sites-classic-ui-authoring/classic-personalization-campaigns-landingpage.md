@@ -7,6 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
+solution: Experience Manager, Experience Manager Sites
 ---
 # Landing Pages{#landing-pages}
 
@@ -445,7 +446,7 @@ To add components on the landing page, drag and drop components to the landing p
 
 Deleting a landing page is like deleting a normal AEM page.
 
-The only exception is that when you delete a desktop landing page, it also deletes the corresponding mobile landing page (if present) but not vice-versa.
+The only exception is that when you delete a desktop landing page, it also deletes the corresponding mobile landing page (if present) but not conversely.
 
 ### Publishing a landing page {#publishing-a-landing-page}
 

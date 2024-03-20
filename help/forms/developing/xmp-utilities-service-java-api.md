@@ -11,6 +11,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: 699a7309-a976-480e-886f-2e466a477348
+solution: Experience Manager, Experience Manager Forms
 ---
 # XMP Utilities Service Java API Quick Start (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
@@ -20,7 +21,7 @@ The following Quick Starts are available for the XMP Utilities service.
 
 [Quick Start (SOAP mode): Importing XMP metadata using the Java API](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >

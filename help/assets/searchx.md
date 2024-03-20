@@ -5,6 +5,7 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
+solution: Experience Manager, Experience Manager Assets
 ---
 # Extend assets search {#extending-assets-search}
 
@@ -120,7 +121,7 @@ To build a property predicate:
                "name": id + ".value"
            });
 
-           // Depending on the predicate additional parameters allow to configure the
+           // Depending on the predicate, additional parameters let you configure the
            // predicate. Here we add an operation parameter to create a "like" query.
            // Again note the name set to the id and a suffix.
            qb.addField({

@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
+solution: Experience Manager, Experience Manager Sites
 ---
 # Launches{#launches}
 

@@ -11,6 +11,7 @@ docset: aem65
 
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
+solution: Experience Manager, Experience Manager Forms
 ---
 # Document Fragments{#document-fragments}
 
@@ -206,7 +207,7 @@ The Find and Replace feature lets you search for (and replace) any string of tex
 
 ## List {#list}
 
-A list is a group of document fragments, including text, (other) lists, conditions, and images. The order of the list elements can be fixed or editable. While creating a letter, you can use some or all list elements to replicate a reusable pattern of elements. Lists basically behave as targets that can be nested within other targets.
+A list is a group of document fragments, including text, or (other) lists, conditions, and images. The order of the list elements can be fixed or editable. While creating a letter, you can use some or all list elements to replicate a reusable pattern of elements. Lists basically behave as targets that can be nested within other targets.
 
 ### Implementing lists {#implementing-lists}
 

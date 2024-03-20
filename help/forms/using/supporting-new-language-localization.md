@@ -8,6 +8,7 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
+solution: Experience Manager, Experience Manager Forms
 ---
 # Supporting new locales for adaptive forms localization{#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -49,7 +50,7 @@ Once the locale is identified, the adaptive forms picks the form-specific dictio
 
 If no locale information is present, adaptive form is delivered in the original language of the form. The original language is the language used while developing the adaptive form.  
 
-If a client library for the requested locale doesn't exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` doesn't exist, the adaptive form will use the client library for `en` (English) language, if it exists. However, if none of them exist, the adaptive form uses the dictionary for `en` locale.
+If a client library for the requested locale does not exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` does not exist, the adaptive form will use the client library for `en` (English) language, if it exists. However, if none of them exist, the adaptive form uses the dictionary for `en` locale.
 
 ## Add localization support for non-supported locales {#add-localization-support-for-non-supported-locales}
 

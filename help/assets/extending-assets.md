@@ -5,6 +5,7 @@ contentOwner: AG
 role: Developer
 feature: Developer Tools
 exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
+solution: Experience Manager, Experience Manager Assets
 ---
 # Customize and extend [!DNL Assets] {#customizing-and-extending-assets}
 

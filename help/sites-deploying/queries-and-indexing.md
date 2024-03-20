@@ -8,6 +8,7 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
+solution: Experience Manager, Experience Manager Sites
 ---
 # Oak Queries and Indexing{#oak-queries-and-indexing}
 
@@ -216,7 +217,7 @@ Take the following example query:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-To define a Lucene Property Index for the above query, you can add the following definition by creating a node under **oak:index:**
+To define a Lucene Property Index for the above query, you can add the following definition by creating a node under **`oak:index`:**
 
 * **Name:** `LucenePropertyIndex`
 * **Type:** `oak:QueryIndexDefinition`

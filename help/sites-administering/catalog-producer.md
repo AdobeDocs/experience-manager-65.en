@@ -10,6 +10,7 @@ content-type: reference
 
 description: Catalog Producer
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
+solution: Experience Manager, Experience Manager Sites
 ---
 # Catalog Producer{#catalog-producer}
 

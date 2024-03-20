@@ -7,6 +7,7 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
+solution: Experience Manager, Experience Manager Forms
 ---
 # Adaptive forms rule editor{#adaptive-forms-rule-editor}
 
@@ -73,7 +74,7 @@ While you can achieve most of the use cases by using any rule construct, here ar
 * To trigger an action based on multiple conditions, it is recommended to use action-condition construct. For example, to show and hide field A by evaluating conditions on fields B, C, and D, use Show or Hide rule type on field A.
 * Use condition-action or action condition construct if the rule contains one action for one condition.
 * If a rule checks for a condition and performs an action immediately on providing a value in a field or exiting a field, it is recommended to write a rule with condition-action construct or the When rule type on the field on which the condition is evaluated.
-* The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. However, if you want the action to trigger when the value changes on the server side, like in case of prepopulating the value, it is recommended to write a When rule that triggers the action when the field is initialized.
+* The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. However, if you want the action to trigger when the value changes on the server side, like in prepopulating the value, it is recommended to write a When rule that triggers the action when the field is initialized.
 * When writing rules for drop-downs, radio buttons, or check boxes objects, the options or values of these form objects in the form are pre-populated in the rule editor.
 
 ## Available operator types and events in rule editor {#available-operator-types-and-events-in-rule-editor}
@@ -115,7 +116,7 @@ Action 3 on Object C;
 
 _
 
-When you have a multi-value component, such as radio buttons or list, while creating a rule for that component the options are automatically retrieved and made available to the rule creator. You need not type the option values again.
+When you have a multi-value component, such as radio buttons or list, while creating a rule for that component the options are automatically retrieved and made available to the rule creator. You do not need to type the option values again.
 
 For example, a list has four options: Red, Blue, Green, and Yellow. While creating the rule, the options (radio buttons) are automatically retrieved and made available to the rule creator as following:
 
@@ -302,7 +303,7 @@ A typical Disable rule is structured as follows:
 
 ### Validate {#validate}
 
-The **Validate** rule type validates the value in a field using an expression. For example, you can write an expression to check that the text box for specifying name doesn't contain special characters or numbers.
+The **Validate** rule type validates the value in a field using an expression. For example, you can write an expression to check that the text box for specifying name does not contain special characters or numbers.
 
 A typical Validate rule is structured as follows:
 
@@ -314,7 +315,7 @@ A typical Validate rule is structured as follows:
 
 >[!NOTE]
 >
->If the specified value doesn't comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
+>If the specified value does not comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
 
 ![script-validation](assets/script-validation.png)
 
@@ -402,7 +403,7 @@ AEM Forms tracks the rule editor mode you used last to write a rule. When you la
 
 ### F. Done and cancel buttons {#f-done-and-cancel-buttons}
 
-The **[!UICONTROL Done]** button is used to save a rule. You can save an incomplete rule. However, incomplete are invalid and don't execute. Saved rules on a form object are listed when you launch the rule editor next time from the same form object. You can manage existing rules in that view. For more information, see [Manage rules](#manage-rules).
+The **[!UICONTROL Done]** button is used to save a rule. You can save an incomplete rule. However, incomplete are invalid and do not run. Saved rules on a form object are listed when you launch the rule editor next time from the same form object. You can manage existing rules in that view. For more information, see [Manage rules](#manage-rules).
 
 The **[!UICONTROL Cancel]** button discards any changes you made to a rule and closes the rule editor.
 
@@ -738,7 +739,7 @@ You can perform the following actions on rules:
 
 * **Expand/Collapse**: The Content column in the rule list displays the rule content. If the entire rule content is not visible in the default view, select ![expand-rule-content](assets/expand-rule-content.png) to expand it.
 
-* **Reorder**: Any new rule you create is stacked at the bottom of the rule list. The rules are executed from top to bottom. The rule at the top executes first followed by other rules of the same type. For example, if you have When, Show, Enable, and When rules at first, second, third, and fourth positions from top, respectively, the When rule at the top gets executed first followed by the When rule at the fourth position. Then, the Show and Enable rules will be executed.
+* **Reorder**: Any new rule you create is stacked at the bottom of the rule list. The rules are executed from top to bottom. The rule at the top runs first followed by other rules of the same type. For example, if you have When, Show, Enable, and When rules at the first, second, third, and fourth positions from top, respectively, the When rule at the top gets executed first followed by the When rule at the fourth position. Then, the Show and Enable rules will be executed.
   You can change the order of a rule by tapping ![sort-rules](assets/sort-rules.png) against it or drag-drop it to the desired order in the list.
 
 * **Edit**: To edit a rule, select the check box next to the rule title. Additional options to edit and delete the rule appear. Select **Edit** to open the selected rule in the rule editor in visual or code editor mode depending the mode used to create the rule.

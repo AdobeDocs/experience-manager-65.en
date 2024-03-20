@@ -12,6 +12,7 @@ topic-tags: operations
 
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
+solution: Experience Manager, Experience Manager Forms
 ---
 # Rendering Forms as HTML {#rendering-forms-as-html} 
 
@@ -95,9 +96,9 @@ You can invoke custom scripts before submitting a form. This feature works on al
 
 First define a callback function that is called before submitting the form, where the name of the function is `_user_onsubmit`. It is assumed that the function will not throw any exception, or if it does, the exception will be ignored. It is recommended to place the JavaScript function in the head section of the html; however, you can declare it anywhere before the end of the script tags that include `xfasubset.js`.
 
-When formserver renders an XDP that contains a drop-down list, in addition to creating the drop-down list, it also creates two hidden text fields. These text fields store the data of the drop-down list (one stores the display name of the options and other stores the value for the options). Therefore, every time a user submits the form, the entire data of the drop-down list is submitted. Assuming that you don't want to submit that much data everytime, you can write a custom script to disable that. For example: The name of the drop-down list is `drpOrderedByStateProv` and it is wrapped under subform header. The name of the HTML input element will be `header[0].drpOrderedByStateProv[0]`. The name of the hidden fields that store and submit the data of the dropdown have the following names: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+When formserver renders an XDP that contains a drop-down list, in addition to creating the drop-down list, it also creates two hidden text fields. These text fields store the data of the drop-down list (one stores the display name of the options and other stores the value for the options). Therefore, every time a user submits the form, the entire data of the drop-down list is submitted. Assuming that you do not want to submit that much data everytime, you can write a custom script to disable that. For example: The name of the drop-down list is `drpOrderedByStateProv` and it is wrapped under subform header. The name of the HTML input element will be `header[0].drpOrderedByStateProv[0]`. The name of the hidden fields that store and submit the data of the dropdown have the following names: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
-You can disable these input elements in the following way if you don't want to post the data. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
+You can disable these input elements in the following way if you do not want to post the data. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
 ```java
 header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]

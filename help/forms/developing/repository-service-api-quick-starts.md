@@ -11,6 +11,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
+solution: Experience Manager, Experience Manager Forms
 ---
 # Repository Service API Quick Starts {#repository-service-api-quick-starts} 
 
@@ -38,7 +39,7 @@ The following Quick Starts are available for the AEM Forms Repository service.
 
 [Quick Start (SOAP mode): Deleting a resource using the Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP
 
 **Applications/FormsApplication**
 

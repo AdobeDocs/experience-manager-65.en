@@ -2,9 +2,10 @@
 title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]'
 description: Introduction to integration between [!DNL Assets] and [!DNL Workfront]
 role: Admin,Leader,Architect
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: yes
+solution: Experience Manager, Workfront
 ---
 # [!DNL Adobe Experience Manager Assets] integration with [!DNL Adobe Workfront] {#assets-integration-overview}
 
@@ -41,7 +42,7 @@ See the platform support and [prerequisites for the enhanced connector](https://
 
 The following are the details of the functionalities available through various types of integrations between [!DNL Assets] and [!DNL Workfront].
 
-| Feature   |Description  | [!DNL Workfront] and [!DNL Assets Essentials] *No Connector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Requires Connector*| Workfront and [!DNL Experience Manager as a Cloud Service] *No Connector (OOTB)*|
+| Feature   |Description  | [!DNL Workfront] and [!DNL Assets Essentials] *No Connector (out-of-the-box)* | [!DNL Workfront for Experience Manager enhanced connector] *Requires Connector*| Workfront and [!DNL Experience Manager as a Cloud Service] *No Connector (out-of-the-box)*|
 |----|----|----|-----|-----|
 | Deployment methods   | Appropriate for which [!DNL Assets] offering. | Assets Essentials| Adobe Managed Services, On-premise| Cloud Service|
 | **General** |

@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 
 exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
+solution: Experience Manager, Experience Manager Forms
 ---
 # Create targeted experiences in AEM Forms {#create-targeted-experiences-in-aem-forms}
 
@@ -49,7 +50,7 @@ Configure Adobe Target in AEM to use it with adaptive forms and interactive comm
 
    >[!NOTE]
    >
-   >You may ignore the error "Your activity was saved but it wasn't synchronized to Target. Reason: The following experience has no offers", if encountered on saving the activity.
+   >You may ignore the error "Your activity was saved but it was not synchronized to Target. Reason: The following experience has no offers", if encountered on saving the activity.
 
 1. To enable target, edit the .jsp file to include client libraries that your adaptive forms template uses.
 

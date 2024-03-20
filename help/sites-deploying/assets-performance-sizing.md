@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 exl-id: fbe15e1b-830b-4752-bd02-0d239a90bc68
+solution: Experience Manager, Experience Manager Sites
 ---
 # Assets Performance Guide{#assets-performance-guide}
 
