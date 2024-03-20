@@ -208,37 +208,38 @@ The created folder structure looks like:
     ![Created Client Library Folder Structure](/help/forms/using/assets/clientlibrary_folderstructure.png)
 1. Double-click the `functions.js` file to open the editor. The file comprises the code for custom function.
 Let's add the following code to the JavaScript file to calculate age based on the Date of Birth(YYYY-MM-DD).
-    ```javascript
-   /**
-   * Calculates Age
-   * @name calculateAge 
-   * @return {string} 
-    */
 
-    function calculateAge(dateOfBirthString) {
-    var dob = new Date(dateOfBirthString);
-    var now = new Date();
+    ```javascript
+        /**
+        * Calculates Age
+        * @name calculateAge 
+        * @return {string} 
+        */
+
+        function calculateAge(dateOfBirthString) {
+        var dob = new Date(dateOfBirthString);
+        var now = new Date();
     
-    var age = now.getFullYear() - dob.getFullYear();
-    var monthDiff = now.getMonth() - dob.getMonth();
+        var age = now.getFullYear() - dob.getFullYear();
+        var monthDiff = now.getMonth() - dob.getMonth();
     
-    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+        if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
         age--;
-    }
+        }
     
-    return age;
-    }
+        return age;
+        }
     ```
         
 1. Save `function.js`.
-2. Navigate to `js.txt` and add the following code:
+1. Navigate to `js.txt` and add the following code:
   
     ```javascript
         #base=js
         functions.js
     ```
 
-3. Save the `js.txt` file.     
+1. Save the `js.txt` file.     
 
 You can refer to the following [custom function](/help/forms/using/assets/customfunction.zip) folder. Download and install this folder in your AEM instance.
 
@@ -250,8 +251,8 @@ Once you have deployed your client library to your Forms CS environment, use its
 
 1. Open your form in edit mode. To open a form in edit mode, select a form and select **[!UICONTROL Edit]**.
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
-2. Click the Guide Container properties icon. The Adaptive Form Container dialog box opens.  
-3. Open the **[!UICONTROL Basic]** tab and select the name of the **[!UICONTROL client library category]** from the drop-down list (in this case, select `customfunctionscategory`).
+1. Click the Guide Container properties icon. The Adaptive Form Container dialog box opens.  
+1. Open the **[!UICONTROL Basic]** tab and select the name of the **[!UICONTROL client library category]** from the drop-down list (in this case, select `customfunctionscategory`).
 
    ![Adding the custom function client library](/help/forms/using//assets/custom-function-category-name-core-component.png)
 
