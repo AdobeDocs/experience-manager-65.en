@@ -207,13 +207,14 @@ The created folder structure looks like:
 
     ![Created Client Library Folder Structure](/help/forms/using/assets/clientlibrary_folderstructure.png)
 1. Double-click the `functions.js` file to open the editor. The file comprises the code for custom function.
-Let's add the following code to the JavaScript file to calculate age based on the Date of Birth(YYYY-MM-DD).
+    Let's add the following code to the JavaScript file to calculate age based on the Date of Birth(YYYY-MM-DD).
 
     ```javascript
+
         /**
-        * Calculates Age
-        * @name calculateAge 
-        * @return {string} 
+             * Calculates Age
+             * @name calculateAge 
+             * @return {string} 
         */
 
         function calculateAge(dateOfBirthString) {
@@ -229,6 +230,7 @@ Let's add the following code to the JavaScript file to calculate age based on th
     
         return age;
         }
+
     ```
         
 1. Save `function.js`.
