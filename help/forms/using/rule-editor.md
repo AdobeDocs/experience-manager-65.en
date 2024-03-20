@@ -636,6 +636,7 @@ Supported `jsdoc` tags:
 >
 >Comments before custom function are used for summary. Summary can extend to multiple lines until a tag is encountered. Limit the size to a single for a concise description in the rule builder.
 
+<!--
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -643,7 +644,7 @@ For example, you want to add a custom function which calculates area of a square
 Perform the following steps to create a client library and add it in the CRX repository.
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](/help/sites-developing/clientlibs.md).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
@@ -724,6 +725,9 @@ var c = {
 >[!NOTE]
 >
 >Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+-->
+
+You can also use custom functions in your rule editor. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/using/create-and-use-custom-functions.md).
 
 ## Manage rules {#manage-rules}
 
