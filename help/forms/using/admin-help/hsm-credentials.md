@@ -6,6 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
+solution: Experience Manager, Experience Manager Forms
 ---
 # Managing HSM credentials {#managing-hsm-credentials}
 

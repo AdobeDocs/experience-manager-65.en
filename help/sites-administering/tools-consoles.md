@@ -7,6 +7,7 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
+solution: Experience Manager, Experience Manager Sites
 ---
 # Tools Consoles{#tools-consoles}
 

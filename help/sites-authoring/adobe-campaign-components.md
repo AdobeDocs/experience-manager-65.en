@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
+solution: Experience Manager, Experience Manager Sites
 ---
 # Adobe Campaign Components{#adobe-campaign-components}
 

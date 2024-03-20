@@ -11,6 +11,7 @@ docset: aem65
 
 feature: Form Data Model
 exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
+solution: Experience Manager, Experience Manager Forms
 ---
 # Create form data model{#create-form-data-model}
 

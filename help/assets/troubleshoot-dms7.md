@@ -10,6 +10,7 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
+solution: Experience Manager, Experience Manager Assets
 ---
 # Troubleshoot Dynamic Media - Scene7 mode{#troubleshooting-dynamic-media-scene-mode}
 

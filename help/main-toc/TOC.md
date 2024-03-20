@@ -883,11 +883,17 @@ user-guide-title: AEM 6.5
     + [Creating custom toolbar layout](/help/forms/using/creating-custom-toolbar-layout.md)
     + [Displaying components based on the template used](/help/forms/using/displaying-components-based-on-template.md)
     + [Creating custom adaptive form themes](/help/forms/using/creating-custom-adaptive-form-themes.md)
-  + Transaction Reports {#transaction-reports}
-    + [Transaction Reports Overview](/help/forms/using/transaction-reports-overview.md)
-    + [Viewing and Understanding Transaction Reports](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-    + [Transaction Reports Billable APIs](/help/forms/using/transaction-reports-billable-apis.md)
-    + [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
+  + Transaction Reports {#transaction-reports} 
+      + [Transaction reporting overview](/help/forms/using/transaction-reports-overview-jee-osgi.md)
+      + Transaction Reports for AEM Forms on OSGi {#transaction-reports-osgi}
+        + [Transaction reports](/help/forms/using/transaction-reports-overview.md)
+        + [Viewing and understanding transaction reports](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+        + [List of billable APIs for AEM Forms on OSGi](/help/forms/using/transaction-reports-billable-apis.md)
+        + [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
+      + Transaction Reports for AEM Forms on JEE {#transaction-reports-jee}
+        + [Enabling and viewing transaction reports](/help/forms/using/transaction-report-overview-jee.md)
+        + [List of billable APIs for AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+        + [Record a transaction for custom component APIs](/help/forms/using/record-transaction-custom-component-jee.md)
   + Administrator help for AEM Forms on JEE {#administrator-help}
     + Get Started {#get-started}
       + [General AEM Forms settings](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)

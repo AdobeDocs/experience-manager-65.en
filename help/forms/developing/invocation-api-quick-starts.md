@@ -11,6 +11,7 @@ topic-tags: develop
 
 role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
+solution: Experience Manager, Experience Manager Forms
 ---
 # Invocation API Quick Starts {#invocation-api-quick-starts} 
 

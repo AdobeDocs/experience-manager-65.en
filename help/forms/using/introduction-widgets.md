@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 
 exl-id: 3458471a-9815-463e-8044-68631073863c
+solution: Experience Manager, Experience Manager Forms
 ---
 # Appearance framework for adaptive and HTML5 forms {#appearance-framework-for-adaptive-and-html-forms}
 

@@ -2,6 +2,7 @@
 title: Configurations and the Configuration Browser
 description: Understand AEM configurations and how they manage workspace settings in AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
+solution: Experience Manager, Experience Manager Sites
 ---
 # Configurations and the Configuration Browser {#configuration-browser}
 

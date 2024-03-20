@@ -2,6 +2,7 @@
 title: AEM 6.5 Administering User Guide
 description: Learn about administering AEM 6.5. These guides cover site features, deployment operations, security features, personalization, integration, and more.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # AEM 6.5 Administering User Guide

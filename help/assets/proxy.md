@@ -4,6 +4,8 @@ description: A proxy is an [!DNL Experience Manager] instance that uses proxy wo
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
+solution: Experience Manager, Experience Manager Assets
+feature: Proxy Workers
 ---
 # [!DNL Assets] proxy development {#assets-proxy-development}
 

@@ -4,6 +4,7 @@ description: Learn to create a custom theme, style individual components, and us
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
+solution: Experience Manager, Experience Manager Forms
 ---
 # Style your adaptive form {#do-not-publish-style-your-adaptive-form}
 

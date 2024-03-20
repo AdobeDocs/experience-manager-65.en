@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
+solution: Experience Manager, Experience Manager Sites
 ---
 # AEM Sites - GDPR Readiness{#aem-sites-gdpr-readiness}
 

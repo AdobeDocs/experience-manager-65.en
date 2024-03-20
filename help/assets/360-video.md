@@ -1,6 +1,6 @@
 ---
 title: 360/VR Video
-description: Learn how to work with 360 and Virtual Reality (VR) Video in Dynamic Media.
+description: Learn how to work with and use 360 and Virtual Reality (VR) Video in Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -9,6 +9,7 @@ docset: aem65
 feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
+solution: Experience Manager, Experience Manager Assets
 ---
 # 360/VR Video {#vr-video}
 

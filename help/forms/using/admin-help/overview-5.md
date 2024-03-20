@@ -11,6 +11,7 @@ docset: aem65
 
 feature: PDF Generator
 exl-id: 08e2381e-c7e8-4690-9cbf-6934064a04f8
+solution: Experience Manager, Experience Manager Forms
 ---
 # Introduction to working with PDF Generator {#introduction-to-working-with-pdf-generator}
 

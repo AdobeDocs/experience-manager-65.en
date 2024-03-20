@@ -7,6 +7,7 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
+solution: Experience Manager, Experience Manager Sites
 ---
 
 # Service Users in Adobe Experience Manager (AEM) {#service-users-in-aem}

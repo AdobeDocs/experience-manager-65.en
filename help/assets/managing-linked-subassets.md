@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
+solution: Experience Manager, Experience Manager Assets
 ---
 # Manage compound and multi-page assets {#managing-compound-assets}
 

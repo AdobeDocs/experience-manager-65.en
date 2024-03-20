@@ -7,6 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: yes
+solution: Experience Manager, Experience Manager Assets
 ---
 # Use Connected Assets to share DAM assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 

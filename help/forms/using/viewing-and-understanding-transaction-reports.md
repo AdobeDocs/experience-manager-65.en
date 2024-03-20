@@ -6,8 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
+solution: Experience Manager, Experience Manager Forms
 ---
-# Viewing and Understanding Transaction Reports{#viewing-and-understanding-transaction-reports}
+# Viewing and Understanding Transaction Reports for AEM Forms on OSGi{#viewing-and-understanding-transaction-reports}
 
 Transaction reports lets you capture and track the number of submitted forms, processed documents, and rendered documents. The objective behind tracking these transactions is to make an informed decision about the product usage and rebalancing investments in hardware and software. For more information, see [AEM Forms Transaction Reports Overview](../../forms/using/transaction-reports-overview.md).
 
@@ -82,6 +83,6 @@ Transaction reporting places all the information displayed in the report and som
 
 ## Related Articles {#related-articles}
 
-* [Transaction Reports Overview](../../forms/using/transaction-reports-overview.md)
-* [Transaction Reports Billable APIs](../../forms/using/transaction-reports-billable-apis.md)
-* [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
+* [Transaction Reports Overview for AEM Forms on OSGi](../../forms/using/transaction-reports-overview.md)
+* [Transaction Reports Billable APIs for AEM Forms on OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Record a transaction for custom implementations for AEM Forms on OSGi](/help/forms/using/record-transaction-custom-implementation.md)

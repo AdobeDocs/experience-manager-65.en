@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configuration
+solution: Experience Manager, Experience Manager Assets
 ---
 # Set up Dynamic Media {#setting-up-dynamic-media}
 

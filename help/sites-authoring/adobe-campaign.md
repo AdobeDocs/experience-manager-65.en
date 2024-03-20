@@ -8,6 +8,7 @@ content-type: reference
 topic-tags: personalization
 
 exl-id: 0954fd5f-cd70-4f2f-85e9-df1c7a3037e1
+solution: Experience Manager, Experience Manager Sites
 ---
 # Working with Adobe Campaign{#working-with-adobe-campaign}
 

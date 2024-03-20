@@ -3,6 +3,7 @@ title: Introduction and overview
 description: Understand how to use and administer AEM Content and Commerce, with helpful articles on integrations and how to get started using AEM Storefront.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
+solution: Experience Manager,Commerce
 ---
 
 # Content and Commerce {#content-commerce}

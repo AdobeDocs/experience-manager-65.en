@@ -5,6 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
+solution: Experience Manager, Experience Manager Assets
 ---
 # Asset templates {#asset-templates}
 

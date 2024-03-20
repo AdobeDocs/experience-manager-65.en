@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
+solution: Experience Manager, Experience Manager Forms
 ---
 # Tutorial: Create document fragments{#tutorial-create-document-fragments}
 

@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
+solution: Experience Manager, Experience Manager Forms
 ---
 # Introduction to publishing forms on a portal{#introduction-to-publishing-forms-on-a-portal}
 

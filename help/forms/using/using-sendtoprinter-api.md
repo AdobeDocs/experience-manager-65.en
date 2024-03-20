@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 feature: Document Services
 exl-id: 585d4053-1056-4d2b-a9df-9516775afe50
+solution: Experience Manager, Experience Manager Forms
 ---
 # Using the sendToPrinter API {#using-the-sendtoprinter-api}
 

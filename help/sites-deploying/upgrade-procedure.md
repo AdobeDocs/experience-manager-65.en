@@ -9,6 +9,7 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
+solution: Experience Manager, Experience Manager Sites
 ---
 # Upgrade Procedure {#upgrade-procedure}
 

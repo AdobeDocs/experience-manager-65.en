@@ -7,6 +7,7 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
+solution: Experience Manager, Experience Manager Sites
 ---
 # Page Diff{#page-diff}
 

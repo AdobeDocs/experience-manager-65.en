@@ -7,6 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
+solution: Experience Manager, Experience Manager Sites
 ---
 # Creating Workflow Models{#creating-workflow-models}
 

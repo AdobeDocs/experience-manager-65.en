@@ -8,6 +8,7 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
+solution: Experience Manager, Experience Manager Assets
 ---
 # Create custom pop-ups using Quickview {#using-quickviews-to-create-custom-pop-ups}
 

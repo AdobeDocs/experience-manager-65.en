@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
+solution: Experience Manager, Experience Manager Sites
 ---
 # Workflow Process Reference{#workflow-process-reference}
 

@@ -2,6 +2,7 @@
 title: Accessing and Delivering Content Fragments Headless Quick Start Guide
 description: Learn how to use AEM's Assets REST API to manage Content Fragments and the GraphQL API for headless delivery of Content Fragment content.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
+solution: Experience Manager, Experience Manager Sites
 ---
 # Accessing and Delivering Content Fragments Headless Quick Start Guide {#accessing-delivering-content-fragments}
 

@@ -5,6 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
+solution: Experience Manager, Experience Manager Assets
 ---
 # How to migrate assets in bulk {#assets-migration-guide}
 

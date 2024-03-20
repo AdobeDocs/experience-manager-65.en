@@ -8,6 +8,7 @@ content-type: reference
 topic-tags: site-features
 
 exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
+solution: Experience Manager, Experience Manager Sites
 ---
 # Work with Workflows{#working-with-workflows}
 
