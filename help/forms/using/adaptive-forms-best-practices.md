@@ -396,33 +396,22 @@ Before you decide to use custom client libraries, it's important to consider the
 >[!NOTE]
 > Custom Function is available for both AEM Forms Foundation Components and Core Components.
 
-**Recommendations:**
+**Advantages of Custom Functions:**
 
-Custom Functions present a notable advantage over the Code Editor for the following reasons:
+**Custom Functions** provide a notable advantage over the **Code Editor** because it provide a clear separation between content and code which enhances collaboration and streamlines workflows. It is recommended to use custom functions for the following advantages:
 
-1. **Advantage:**
-   * Custom Functions provide a clear separation between content and code.
-   * The separation between content and code enhances collaboration and streamlines workflows.
+* **Seamlessly use versioning control like Git:**
+   * The isolation of code from content significantly reduces Git conflicts during content management and promotes a well-organized repository.
+   * Custom Functions is valuable for projects with multiple contributors working simultaneously.
 
-1. **Git Implications:**
-   * Unlike the Code Editor, Custom Functions isolate code from content.
-   * The isolation of code from content significantly reduces Git conflicts during content management.
-   * Valuable for projects with multiple contributors working simultaneously.
-
-1. **Cleaner Repository:**
-   * The absence of code within content minimizes conflicts and promotes a well-organized repository.
-
-1. **Technical Benefits:**
+* **Technical Benefits:**
    * Custom Functions offer modularity and encapsulation.
    * Modules can be developed, tested, and maintained independently.
    * Enhances code reusability and maintainability.
 
-1. **Efficient Development Process:**
+* **Efficient Development Process:**
    * Modularity allows developers to focus on specific functionalities.
-   * Developers are not burdened by the complexities of the entire codebase.
-   * Fosters a more efficient development process.
-
-In brief, Custom Functions offers a strategic advantage by fostering a clean separation of content and code, leading to fewer Git conflicts and promoting modularity and encapsulation for streamlined and efficient development practices.
+   * Lowers the burden of developers by reducing the complexities of the entire codebase for a more efficient development process.
 
 
 
