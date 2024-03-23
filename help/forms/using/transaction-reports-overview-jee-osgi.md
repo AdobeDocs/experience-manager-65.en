@@ -3,6 +3,7 @@ title: Transaction Reports Overview AEM Forms.
 description: Keep a count of all the forms submitted, documents submitted, interactive communication rendered, Documents converted to one format to another, and more.
 topic-tags: forms-manager
 feature: Transaction Reports
+exl-id: 6e5e29ef-eb90-4573-8745-1966a238bc03
 ---
 # Transaction Reporting for AEM Forms {#transaction-reports-overview}
 
@@ -27,5 +28,3 @@ You can refer to the following for comprehensive instructions on how to enable t
 * [Viewing and understanding transaction reports for AEM Forms on OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [List of billable APIs for AEM Forms on OSGi](/help/forms/using/transaction-reports-billable-apis.md)
 * [Record a transaction for custom implementation for AEM Forms on OSGi](/help/forms/using/record-transaction-custom-implementation.md)
-
-

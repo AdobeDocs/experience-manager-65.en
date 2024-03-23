@@ -2,7 +2,8 @@
 title: Transaction Reports Billable APIs for AEM Forms on JEE.
 description: List of all the APIs that are accounted as transactions for AEM Forms on JEE.
 topic-tags: forms-manager
-feature: Transaction Reports 
+feature: Transaction Reports
+exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 ---
 # Transaction reporting Billable APIs for AEM Forms on JEE {#transaction-reports-billable-apis}
 

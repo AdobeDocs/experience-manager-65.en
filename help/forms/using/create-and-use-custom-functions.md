@@ -5,9 +5,8 @@ keywords: Add a custom function, use a custom function, create a custom function
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-
+exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
 ---
-
 # Custom functions in Adaptive Forms (Core Components)
 
 ## Introduction
@@ -265,4 +264,3 @@ Now, you can create a rule to use custom functions in the rule editor:
 ![Adding the custom function client library](/help/forms/using//assets/calculateage-customfunction.png)
 
 Now, let's understand how to configure and use a custom function using the [Rule Editor's Invoke service in AEM Forms](/help//forms/using/rule-editor.md).
-

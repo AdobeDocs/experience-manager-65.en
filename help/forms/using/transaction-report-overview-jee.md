@@ -2,6 +2,7 @@
 title: Transaction Reports Overview for AEM Forms on JEE
 description: Keep a count of all the forms submitted, rendered, documents converted to one format to another, and more
 feature: Transaction Reports
+exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 ---
 # Enabling and viewing transaction report for AEM Forms on JEE {#transaction-reports-overview}
 
