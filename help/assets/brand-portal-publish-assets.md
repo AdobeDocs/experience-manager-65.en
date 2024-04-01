@@ -72,3 +72,15 @@ To schedule publishing the assets to Brand Portal to a later date or time:
 Now, login to Brand Portal to see whether the published assets are available on  Brand  Portal interface.
 
    ![bp_landingpage](assets/bp_landingpage.png)
+
+## View published file or folder to Brand Portal {#view-published-file-folder}
+
+1. Login to the Brand Portal interface to see the published assets (depending on your scheduled date or time).
+
+   ![bp_landingpage](assets/bp_landingpage.png) 
+
+1. Switch to List view ![List view](assets/list-view.svg) to see the current publish status of the asset.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+   ![generated report status](assets/report-status.JPG)
