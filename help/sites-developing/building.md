@@ -197,4 +197,4 @@ The new language (Finnish) is now available in the tag dialog of the page proper
 
 >[!CAUTION]
 >
->Installing a service pack resets the languages property of the /content/cq:tags node to default. Therefore, it is necessary to add it from the properties before installation.
+>Installing tagging related out-of-the-box content via an official update package (including Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, patches and the like), resets the languages property of the `/content/cq:tags` node to default. Therefore, it is necessary to add it from the properties before installation.
