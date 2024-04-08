@@ -456,6 +456,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 * Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the ```org.apache.servicemix.bundles.rhino``` bundle has a new hoisting behavior. Scripts that use the strict mode (```use strict;```) have to correctly declare their variables, otherwise they do not get run, instead throwing a runtime error.
  
+* Installing tagging related out-of-the-box content via an official update package (including Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, patches and the like), resets the languages property of the `/content/cq:tags` node to default. Therefore, it is necessary to add it from the properties before installation.
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6520}
 
