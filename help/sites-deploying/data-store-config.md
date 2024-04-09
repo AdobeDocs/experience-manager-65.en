@@ -7,6 +7,7 @@ docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Configuring node stores and data stores in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 

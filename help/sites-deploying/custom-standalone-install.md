@@ -5,6 +5,8 @@ content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 solution: Experience Manager, Experience Manager Sites
+feature: Deploying
+role: Admin
 ---
 # Custom Standalone Install{#custom-standalone-install}
 

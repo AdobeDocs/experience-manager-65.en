@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: deploying
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Troubleshooting Oak Indexes{#troubleshooting-oak-indexes}
 

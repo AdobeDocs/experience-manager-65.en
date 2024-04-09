@@ -7,6 +7,8 @@ topic-tags: Security
 content-type: reference
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Enabling CRXDE Lite in AEM{#enabling-crxde-lite-in-aem}
 

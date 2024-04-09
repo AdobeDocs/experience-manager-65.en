@@ -8,6 +8,8 @@ topic-tags: Security
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
+feature: Security
+role: Admin
 ---
 
 # Principal View for Permissions Management{#principal-view-for-permissions-management}

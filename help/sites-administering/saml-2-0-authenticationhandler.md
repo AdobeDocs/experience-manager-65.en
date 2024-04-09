@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 solution: Experience Manager, Experience Manager Sites
+feature: Security
+role: Admin
 ---
 # SAML 2.0 Authentication Handler{#saml-authentication-handler}
 

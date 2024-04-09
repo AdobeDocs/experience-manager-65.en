@@ -5,9 +5,10 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-feature: Configuring
+feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Revision Cleanup{#revision-cleanup}
 

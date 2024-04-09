@@ -12,6 +12,8 @@ content-type: reference
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Working with Logs{#working-with-logs}
 

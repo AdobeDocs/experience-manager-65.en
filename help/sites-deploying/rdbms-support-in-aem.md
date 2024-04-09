@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 docset: aem65
-feature: Configuring
+feature: Administering
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # RDBMS Support in AEM 6.4{#rdbms-support-in-aem}
 

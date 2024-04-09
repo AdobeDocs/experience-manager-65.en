@@ -9,9 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 
-feature: Configuring
+feature: Security
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Replicating Using Mutual SSL{#replicating-using-mutual-ssl}
 
