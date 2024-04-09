@@ -12,6 +12,8 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 solution: Experience Manager, Experience Manager Sites
+feature: Deploying
+role: Admin
 ---
 # Storage Elements in AEM 6.5{#storage-elements-in-aem}
 

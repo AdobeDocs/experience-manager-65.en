@@ -5,9 +5,10 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
-feature: Configuring
+feature: Security
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Single Sign On {#single-sign-on}
 

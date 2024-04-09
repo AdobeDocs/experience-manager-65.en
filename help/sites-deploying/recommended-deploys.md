@@ -8,6 +8,8 @@ topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 solution: Experience Manager, Experience Manager Sites
+feature: Deploying
+role: Admin
 ---
 # Recommended Deployments{#recommended-deployments}
 

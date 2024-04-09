@@ -7,6 +7,8 @@ topic-tags: operations
 content-type: reference
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
+feature: Configuring
+role: Admin
 ---
 
 # Configuring Email Notification{#configuring-email-notification}

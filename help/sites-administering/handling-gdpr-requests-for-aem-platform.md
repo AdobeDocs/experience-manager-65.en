@@ -4,6 +4,8 @@ description: Handling GDPR Requests for the Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Handling GDPR Requests for the Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 

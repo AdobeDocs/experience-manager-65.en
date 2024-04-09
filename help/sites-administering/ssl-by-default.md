@@ -8,6 +8,8 @@ topic-tags: Security
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
+feature: Security
+role: Admin
 ---
 # SSL/TLS By Default{#ssl-tls-by-default}
 

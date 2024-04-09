@@ -9,6 +9,8 @@ topic-tags: Security
 
 exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
 solution: Experience Manager, Experience Manager Sites
+feature: Security
+role: Admin
 ---
 # Content Disposition Filter {#content-disposition-filter}
 

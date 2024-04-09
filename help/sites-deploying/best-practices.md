@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: best-practices
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Deploying Best Practices{#deploying-best-practices}
 

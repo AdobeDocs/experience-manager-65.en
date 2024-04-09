@@ -7,6 +7,8 @@ topic-tags: operations
 content-type: reference
 exl-id: f7aa5ac0-3d03-4c04-b9c2-1bda427b0588
 solution: Experience Manager, Experience Manager Sites
+feature: Configuring
+role: Admin
 ---
 # Configuring for AEM Apps{#configuring-for-aem-apps}
 

@@ -5,9 +5,10 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-feature: Configuring
+feature: Administering
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Run Modes{#run-modes}
 

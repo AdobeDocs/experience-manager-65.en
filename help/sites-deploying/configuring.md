@@ -8,6 +8,7 @@ content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Basic Configuration Concepts{#basic-configuration-concepts}
 
