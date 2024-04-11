@@ -2,9 +2,9 @@
 title: Learn About CMS Headless Development
 description: In this part of the AEM Headless Developer Journey, learn about headless technology and why you would use it.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-solution: "Experience Manager, Experience Manager Sites"
-feature: "Headless,Content Fragments,GraphQL,Persisted Queries,Developing"
-role: "Admin, Developer"
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
 ---
 # Learn About CMS Headless Development {#learn-about}
 

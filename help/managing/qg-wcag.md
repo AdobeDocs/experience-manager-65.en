@@ -4,7 +4,7 @@ description: A Quick Guide to Web Content Accessibility Guidelines (WCAG) versio
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: "Developer,Leader,Architect,Data Architect,User"
+role: Developer,Leader,Architect,Data Architect,User
 ---
 # A Quick Guide to WCAG 2.1{#quick-guide-to-wcag}
 

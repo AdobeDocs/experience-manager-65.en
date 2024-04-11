@@ -9,8 +9,8 @@ topic-tags: personalization
 
 exl-id: 0954fd5f-cd70-4f2f-85e9-df1c7a3037e1
 solution: Experience Manager, Experience Manager Sites
-feature: "Authoring,Personalization,Integration"
-role: "User,Admin,Architect,Developer"
+feature: Authoring,Personalization,Integration
+role: User,Admin,Architect,Developer
 ---
 # Working with Adobe Campaign{#working-with-adobe-campaign}
 

@@ -9,8 +9,8 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 solution: Experience Manager, Experience Manager Sites
-feature: "Authoring,Launches"
-role: "User,Admin,Architect,Developer"
+feature: Authoring,Launches
+role: User,Admin,Architect,Developer
 ---
 # Editing Launches{#editing-launches}
 

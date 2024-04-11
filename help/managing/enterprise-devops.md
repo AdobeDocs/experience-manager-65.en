@@ -8,7 +8,7 @@ content-type: reference
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: "Developer,Leader"
+role: Developer,Leader
 ---
 # Enterprise DevOps{#enterprise-devops}
 
