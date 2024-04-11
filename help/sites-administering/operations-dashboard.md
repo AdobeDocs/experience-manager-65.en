@@ -9,6 +9,7 @@ docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Operations Dashboard {#operations-dashboard}
 

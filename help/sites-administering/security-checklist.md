@@ -13,6 +13,7 @@ docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
+role: "Admin,Developer"
 ---
 # Security Checklist {#security-checklist}
 

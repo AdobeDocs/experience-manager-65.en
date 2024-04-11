@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
+feature: Compliance
+role: "Developer,Leader"
 ---
 # Hardware Sizing Guidelines{#hardware-sizing-guidelines}
 

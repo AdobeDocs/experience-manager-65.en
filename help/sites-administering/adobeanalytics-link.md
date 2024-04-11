@@ -7,6 +7,8 @@ topic-tags: integration
 content-type: reference
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 
 # Configuring Link Tracking for Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}

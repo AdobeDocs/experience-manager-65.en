@@ -3,6 +3,8 @@ title: Creating a Configuration Headless Quick Start Guide
 description: Create a configuration as a first step to getting started with headless in AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
 solution: Experience Manager, Experience Manager Sites
+feature: "Headless,Content Fragments,GraphQL,Persisted Queries,Developing"
+role: "Admin,Architect,Data Architect,Developer"
 ---
 # Creating a Configuration Headless Quick Start Guide {#creating-configuration}
 

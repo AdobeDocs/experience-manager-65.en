@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # Configuring Video Tracking for Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 

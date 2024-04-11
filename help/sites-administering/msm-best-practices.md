@@ -5,6 +5,7 @@ topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # MSM Best Practices{#msm-best-practices}
 

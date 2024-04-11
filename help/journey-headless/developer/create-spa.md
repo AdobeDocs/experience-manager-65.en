@@ -2,6 +2,9 @@
 title: Optional - How to Create Single Page Applications (SPAs) with Adobe Experience Manager
 description: In this optional continuation of the Adobe Experience Manager (AEM) Headless Developer Journey, you learn how AEM can combine headless delivery with traditional full-stack CMS features and how you can create editable SPAs using AEM's SPA Editor framework.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
+solution: "Experience Manager, Experience Manager Sites"
+feature: "Headless,Content Fragments"
+role: "Admin, Developer"
 ---
 # How to Create Single Page Applications (SPAs) with AEM {#create-spa}
 

@@ -3,6 +3,8 @@ title: Authoring content pages in AEM
 description: The tasks involved when authoring a content page in Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: "User,Admin,Architect,Developer"
 ---
 # Authoring Pages{#authoring-pages}
 

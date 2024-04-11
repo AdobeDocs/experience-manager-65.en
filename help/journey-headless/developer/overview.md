@@ -2,6 +2,9 @@
 title: AEM Headless Developer Journey
 description: AEM Headless CMS Documentation. Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to use them on your first development project.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
+solution: "Experience Manager, Experience Manager Sites"
+feature: "Headless,Content Fragments,GraphQL,Persisted Queries,Developing"
+role: "Admin, Developer"
 ---
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
 

@@ -3,6 +3,8 @@ title: Creating Accessible Content for Adobe Experience Manager (WCAG 2.1 Confor
 description: Use AEM to help make web content accessible to, and usable by, persons with disabilities
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: "User,Admin,Architect,Developer"
 ---
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 

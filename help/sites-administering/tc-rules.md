@@ -5,6 +5,7 @@ contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Identifying Content to Translate{#identifying-content-to-translate}
 

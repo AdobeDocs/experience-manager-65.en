@@ -1,8 +1,8 @@
 ---
 title: Headless Content Delivery using Content Fragments with GraphQL
 description: Learn how to use AEM's Content Fragments with GraphQL for headless content delivery.
-feature: Content Fragments
-role: User
+feature: "Content Fragments,Headless,GraphQL"
+role: "User,Developer"
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
 solution: Experience Manager, Experience Manager Assets
 ---

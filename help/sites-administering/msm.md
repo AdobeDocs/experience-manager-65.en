@@ -7,6 +7,8 @@ topic-tags: site-features
 content-type: reference
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
 solution: Experience Manager, Experience Manager Sites
+feature: Multi Site Manager
+role: Admin
 ---
 # Reusing Content: Multi Site Manager and Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 

@@ -7,6 +7,8 @@ topic-tags: personalization
 content-type: reference
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
 solution: Experience Manager, Experience Manager Sites
+feature: Personalization
+role: Admin
 ---
 # Personalization {#personalization}
 

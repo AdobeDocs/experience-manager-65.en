@@ -3,6 +3,8 @@ title: Projects
 description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
+feature: "Authoring,Projects"
+role: "User,Admin,Architect,Developer"
 ---
 
 # Projects {#projects}

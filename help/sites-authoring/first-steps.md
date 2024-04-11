@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: "User,Admin,Architect,Developer"
 ---
 
 # First Steps for Authors{#first-steps-for-authors}

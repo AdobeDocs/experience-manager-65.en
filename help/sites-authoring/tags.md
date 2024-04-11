@@ -8,6 +8,8 @@ topic-tags: site-features
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: "User,Admin,Architect,Developer"
 ---
 
 # Using Tags {#using-tags}

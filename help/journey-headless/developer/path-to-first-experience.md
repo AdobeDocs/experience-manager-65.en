@@ -2,6 +2,9 @@
 title: Path to Your First Experience Using AEM Headless
 description: In this part of the AEM Headless Developer Journey, you will understand the steps to implementing your first headless experience in AEM including planning considerations and also learn best practices to make your path as smooth as possible.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
+solution: "Experience Manager, Experience Manager Sites"
+feature: "Headless,Content Fragments,GraphQL,Persisted Queries,Developing"
+role: "Admin, Developer"
 ---
 # Path to Your First Experience Using AEM Headless {#path-to-first-experience}
 

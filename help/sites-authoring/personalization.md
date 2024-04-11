@@ -3,6 +3,8 @@ title: Personalization and Content Targeting
 description: Learn how Adobe Experience Manager 6.5 can create personalized content.
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 solution: Experience Manager, Experience Manager Sites
+feature: "Authoring,Personalization"
+role: "User,Admin,Architect,Developer"
 ---
 # Personalization and Content Targeting {#personalization}
 

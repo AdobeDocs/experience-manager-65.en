@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Developer
 ---
 # Extending Event Tracking{#extending-event-tracking}
 
