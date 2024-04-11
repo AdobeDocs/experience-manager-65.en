@@ -2,6 +2,9 @@
 title: Getting Started with AEM Headless
 description: In this part of the AEM Headless Developer Journey, learn about AEM Headless prerequisites.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
 ---
 # Getting Started with AEM Headless {#getting-started}
 

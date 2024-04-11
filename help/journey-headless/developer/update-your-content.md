@@ -2,6 +2,9 @@
 title: How to Update Your Content via AEM Assets APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use the REST API to access and update the content of your Content Fragments.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
 ---
 # How to Update Your Content via AEM Assets APIs {#update-your-content}
 

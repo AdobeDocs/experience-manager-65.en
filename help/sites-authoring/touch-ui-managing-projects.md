@@ -7,6 +7,8 @@ topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User,Admin,Architect,Developer
 ---
 
 # Managing Projects {#managing-projects}

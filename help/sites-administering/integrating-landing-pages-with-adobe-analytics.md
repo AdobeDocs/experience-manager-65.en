@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # Integrating Landing Pages with Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 

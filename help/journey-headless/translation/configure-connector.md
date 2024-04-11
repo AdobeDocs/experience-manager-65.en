@@ -2,6 +2,9 @@
 title: Configure the Translation Integration
 description: Learn how to connect AEM to a translation service.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
 ---
 # Configure the Translation Integration {#configure-integration}
 

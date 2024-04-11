@@ -6,6 +6,8 @@ content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
 solution: Experience Manager, Experience Manager 6.5
+feature: Compliance
+role: Developer,Leader
 ---
 # SEO and URL Management Best Practices{#seo-and-url-management-best-practices}
 

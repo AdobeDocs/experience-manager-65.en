@@ -2,6 +2,9 @@
 title: Translate Content
 description: Use the translation connector and rules to translate your headless content.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
 ---
 # Translate Content {#translate-content}
 

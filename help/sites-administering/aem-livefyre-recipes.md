@@ -7,6 +7,8 @@ topic-tags: integration
 content-type: reference
 exl-id: 7ccd67a7-9945-48c1-9986-f4eaf0f2b961
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # AEM Livefyre Recipes{#aem-livefyre-recipes}
 

@@ -3,6 +3,8 @@ title: Integration with Adobe Target using IMS
 description: Learn about integrating AEM with Adobe Target using IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 
 # Integration with Adobe Target using IMS{#integration-with-adobe-target-using-ims}

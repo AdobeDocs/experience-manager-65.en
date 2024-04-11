@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Developer
 ---
 # Configuring your Page for Bulk Editing of Page Properties {#configuring-your-page-for-bulk-editing-of-page-properties}
 

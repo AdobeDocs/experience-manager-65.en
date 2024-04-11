@@ -11,6 +11,8 @@ topic-tags: best-practices
 
 exl-id: e17ff611-122a-4d17-97af-071d0234dd16
 solution: Experience Manager, Experience Manager Sites
+feature: Experience Fragments,Developing
+role: Developer
 ---
 # Trying out Experience Fragments in We.Retail{#trying-out-experience-fragments-in-we-retail}
 
