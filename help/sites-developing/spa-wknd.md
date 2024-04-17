@@ -9,7 +9,7 @@ content-type: reference
 
 exl-id: 59ada14e-3cb1-4f2c-b866-a2bb130db3fc
 solution: Experience Manager, Experience Manager Sites
-feature: "Developing,SPA Editor"
+feature: Developing,SPA Editor
 role: Developer
 ---
 # SPA WKND Tutorial{#spa-wknd-tutorial}

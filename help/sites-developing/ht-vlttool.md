@@ -7,7 +7,7 @@ topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
-feature: "Developing,Developer Tools"
+feature: Developing,Developer Tools
 role: Developer
 ---
 # How to Use the VLT Tool {#how-to-use-the-vlt-tool}

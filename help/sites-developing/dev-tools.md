@@ -7,7 +7,7 @@ topic-tags: development-tools
 content-type: reference
 exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
 solution: Experience Manager, Experience Manager Sites
-feature: "Developing,Developer Tools"
+feature: Developing,Developer Tools
 role: Developer
 ---
 # Development Tools{#development-tools}

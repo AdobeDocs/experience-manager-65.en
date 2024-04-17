@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
 solution: Experience Manager, Experience Manager Sites
-feature: "Authoring,Personalization"
+feature: Authoring,Personalization
 role: User
 ---
 # Understanding Segmentation{#understanding-segmentation}

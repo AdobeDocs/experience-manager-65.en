@@ -3,7 +3,7 @@ title: Composite Components in SPAs
 description: Learn how to create your own composite components, components made up of other components, that work with the AEM Single-Page Application (SPA) Editor.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
-feature: "Developing,SPA Editor"
+feature: Developing,SPA Editor
 role: Developer
 ---
 # Composite Components in SPAs {#composite-components-in-spas}

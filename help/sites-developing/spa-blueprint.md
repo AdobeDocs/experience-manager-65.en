@@ -7,7 +7,7 @@ content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
-feature: "Developing,SPA Editor"
+feature: Developing,SPA Editor
 role: Developer
 ---
 # SPA Blueprint{#spa-blueprint}

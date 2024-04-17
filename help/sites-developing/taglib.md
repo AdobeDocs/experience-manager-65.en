@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
 solution: Experience Manager, Experience Manager Sites
-feature: "Developing,Tagging"
+feature: Developing,Tagging
 role: Developer
 ---
 # Tag Libraries{#tag-libraries}

@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 solution: Experience Manager, Experience Manager Sites
-feature: "Authoring,Personalization"
+feature: Authoring,Personalization
 role: User
 ---
 # Landing Pages{#landing-pages}

@@ -11,7 +11,7 @@ content-type: reference
 
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
 solution: Experience Manager, Experience Manager Sites
-feature: "Developing,Developer Tools"
+feature: Developing,Developer Tools
 role: Developer
 ---
 # How to Develop AEM Projects Using Eclipse{#how-to-develop-aem-projects-using-eclipse}

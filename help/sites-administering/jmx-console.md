@@ -12,7 +12,7 @@ content-type: reference
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
 solution: Experience Manager, Experience Manager Sites
-feature: "Developing,Operations"
+feature: Developing,Operations
 role: Admin
 ---
 # Monitoring Server Resources Using the JMX Console{#monitoring-server-resources-using-the-jmx-console}

@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
 solution: Experience Manager, Experience Manager Sites
-feature: "Developing,JCR"
+feature: Developing,JCR
 role: Developer
 ---
 # How to programmatically access the AEM JCR{#how-to-programmatically-access-the-aem-jcr}

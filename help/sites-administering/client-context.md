@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 solution: Experience Manager, Experience Manager Sites
-feature: "Administering,Personalization"
+feature: Administering,Personalization
 role: Admin
 ---
 

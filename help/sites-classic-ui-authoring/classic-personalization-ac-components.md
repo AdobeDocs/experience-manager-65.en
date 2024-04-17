@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 solution: Experience Manager, Experience Manager Sites
-feature: "Authoring,Personalization"
+feature: Authoring,Personalization
 role: User
 ---
 # Adobe Campaign Components{#adobe-campaign-components}
