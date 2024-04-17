@@ -7,6 +7,8 @@ topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
 solution: Experience Manager, Experience Manager Sites
+feature: "Developing,Personalization"
+role: Developer
 ---
 # Sample ContextHub UI Module Types {#sample-contexthub-ui-module-types}
 

@@ -9,6 +9,8 @@ topic-tags: components
 
 exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Image Editor{#image-editor}
 

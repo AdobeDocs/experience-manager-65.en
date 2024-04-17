@@ -7,6 +7,8 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Interacting with Workflows Programmatically{#interacting-with-workflows-programmatically}
 

@@ -4,6 +4,8 @@ description: Learn to configure the Adobe Experience Manager Rich Text Editor to
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 

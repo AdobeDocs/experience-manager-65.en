@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 3354d650-532a-488b-8d8b-b6e1fc30c30f
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Content Management for Screens{#content-management-for-screens}
 

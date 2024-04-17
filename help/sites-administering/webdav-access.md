@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # WebDAV Access{#webdav-access}
 

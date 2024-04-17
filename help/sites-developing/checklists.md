@@ -7,6 +7,8 @@ topic-tags: testing
 content-type: reference
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Checklists{#checklists}
 

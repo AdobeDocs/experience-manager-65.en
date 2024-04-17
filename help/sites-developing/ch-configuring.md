@@ -7,6 +7,8 @@ topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
 solution: Experience Manager, Experience Manager Sites
+feature: "Developing,Personalization"
+role: Developer
 ---
 # Configuring ContextHub {#configuring-contexthub}
 

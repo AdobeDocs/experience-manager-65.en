@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Proxy Server Tool (proxy.jar){#proxy-server-tool-proxy-jar}
 

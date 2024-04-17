@@ -7,6 +7,8 @@ topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 
 # Configuring Search Forms{#configuring-search-forms}

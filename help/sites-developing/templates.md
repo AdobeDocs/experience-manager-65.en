@@ -12,6 +12,8 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Templates{#templates}
 

@@ -10,6 +10,8 @@ content-type: reference
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 
 # Best Practices for Email Templates {#best-practices-for-email-templates}

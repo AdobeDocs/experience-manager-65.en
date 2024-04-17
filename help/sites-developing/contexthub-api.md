@@ -5,9 +5,10 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-feature: Context Hub
+feature: "Context Hub,Developing,Personalization"
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 solution: Experience Manager, Experience Manager Sites
+role: Developer
 ---
 # ContextHub JavaScript API Reference{#contexthub-javascript-api-reference}
 

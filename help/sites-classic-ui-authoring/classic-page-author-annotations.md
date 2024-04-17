@@ -8,6 +8,8 @@ topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Annotations when Editing a Page{#annotations-when-editing-a-page}
 

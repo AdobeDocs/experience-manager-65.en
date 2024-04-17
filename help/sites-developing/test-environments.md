@@ -8,6 +8,8 @@ content-type: reference
 
 exl-id: 05f7a513-5ee7-4870-a691-4a0602e0cbb2
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Which Test Environments are needed?{#which-test-environments-will-be-needed}
 

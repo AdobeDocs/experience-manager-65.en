@@ -4,6 +4,8 @@ description: Create multiple in-place editors in Adobe Experience Manager by con
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Configure multiple in-place editors {#configure-multiple-in-place-editors}
 

@@ -7,6 +7,8 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Cloud Service Configurations{#cloud-service-configurations}
 

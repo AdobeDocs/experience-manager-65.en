@@ -12,6 +12,8 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Emulators{#emulators}
 

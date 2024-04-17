@@ -7,6 +7,8 @@ topic-tags: personalization
 content-type: reference
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
 solution: Experience Manager, Experience Manager Sites
+feature: "Authoring,Personalization"
+role: User
 ---
 # Targeting your Adobe Campaign{#targeting-your-adobe-campaign}
 

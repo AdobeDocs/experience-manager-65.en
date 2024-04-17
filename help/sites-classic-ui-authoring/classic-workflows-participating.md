@@ -9,6 +9,8 @@ topic-tags: site-features
 
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Participating in Workflows{#participating-in-workflows}
 

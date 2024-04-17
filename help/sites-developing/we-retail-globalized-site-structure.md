@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Trying out the Globalized Site Structure in We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 

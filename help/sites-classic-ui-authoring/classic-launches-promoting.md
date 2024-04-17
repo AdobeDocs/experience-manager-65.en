@@ -10,6 +10,8 @@ topic-tags: site-features
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Promoting Launches{#promoting-launches}
 

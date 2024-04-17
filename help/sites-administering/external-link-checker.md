@@ -3,6 +3,8 @@ title: The Link Checker
 description: The Link Checker helps validate both internal and external links and allows link rewriting.
 exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # The Link Checker {#the-link-checker}
 

@@ -5,6 +5,8 @@ topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Tough Day{#tough-day}
 

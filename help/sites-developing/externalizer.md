@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Externalizing URLs{#externalizing-urls}
 

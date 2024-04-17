@@ -7,6 +7,8 @@ topic-tags: platform
 content-type: reference
 exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Overlays{#overlays}
 

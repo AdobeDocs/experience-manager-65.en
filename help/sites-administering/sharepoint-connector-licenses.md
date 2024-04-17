@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # SharePoint Connector Licenses, Copyright Notices, and Disclaimers{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 

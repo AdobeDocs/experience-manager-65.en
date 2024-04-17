@@ -7,6 +7,8 @@ topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
 solution: Experience Manager, Experience Manager Sites
+feature: "Developing,Developer Tools"
+role: Developer
 ---
 # AEM Brackets Extension{#aem-brackets-extension}
 

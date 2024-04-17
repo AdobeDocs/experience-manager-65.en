@@ -12,6 +12,8 @@ content-type: reference
 docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 solution: Experience Manager, Experience Manager Sites
+feature: "Authoring,Personalization"
+role: User
 ---
 # Creating an Effective Newsletter Landing Page{#creating-an-effective-newsletter-landing-page}
 

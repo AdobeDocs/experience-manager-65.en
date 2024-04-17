@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
 solution: Experience Manager, Experience Manager Sites
+feature: "Authoring,Personalization"
+role: User
 ---
 # Tracking Bounced Emails{#tracking-bounced-emails}
 

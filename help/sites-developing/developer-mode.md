@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Developer Mode{#developer-mode}
 

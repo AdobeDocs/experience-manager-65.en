@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
 solution: Experience Manager, Experience Manager Sites
+feature: "Authoring,Personalization"
+role: User
 ---
 # Target offers{#target-offers}
 

@@ -7,6 +7,8 @@ topic-tags: content
 content-type: reference
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Administering Tags {#administering-tags}
 

@@ -12,6 +12,8 @@ content-type: reference
 docset: aem65
 exl-id: 8540e1f0-22d7-4f48-85d9-7c44eb7185df
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 
 # Editor{#editor}

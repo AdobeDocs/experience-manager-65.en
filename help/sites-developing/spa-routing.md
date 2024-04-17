@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
 solution: Experience Manager, Experience Manager Sites
+feature: "Developing,SPA Editor"
+role: Developer
 ---
 # SPA Model Routing{#spa-model-routing}
 
