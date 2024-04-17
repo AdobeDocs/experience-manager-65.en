@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: daf5c934-8a98-4891-94a1-029056d87931
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Working with Assets{#working-with-assets}
 

@@ -10,6 +10,8 @@ topic-tags: components, testing
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Testing Your UI{#testing-your-ui}
 

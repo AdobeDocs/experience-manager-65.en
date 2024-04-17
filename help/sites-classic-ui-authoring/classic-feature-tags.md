@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: site-features
 exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Using Tags{#using-tags}
 

@@ -8,6 +8,8 @@ topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Migration to the Touch UI{#migration-to-the-touch-ui}
 

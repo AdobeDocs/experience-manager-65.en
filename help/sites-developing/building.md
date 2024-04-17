@@ -9,9 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 
-feature: Tagging
+feature: Developing,Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
+role: Developer
 ---
 # Building Tagging into an AEM Application{#building-tagging-into-an-aem-application}
 

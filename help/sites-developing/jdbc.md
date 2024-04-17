@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Connecting to SQL Databases{#connecting-to-sql-databases}
 

@@ -7,6 +7,8 @@ topic-tags: integration
 content-type: reference
 exl-id: ebf6d4ef-20ba-487b-b301-52de8936628f
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # Related Community Articles{#related-community-articles}
 

@@ -11,6 +11,8 @@ topic-tags: components
 
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Extracting Strings for Translating{#extracting-strings-for-translating}
 

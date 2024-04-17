@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Workflow Best Practices{#workflow-best-practices}
 

@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # AEM Portals and Portlets{#aem-portals-and-portlets}
 

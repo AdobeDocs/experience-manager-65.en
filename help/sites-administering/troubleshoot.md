@@ -12,6 +12,8 @@ content-type: reference
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Troubleshooting Adobe Experience Manager {#troubleshooting-aem}
 

@@ -7,6 +7,8 @@ topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # The CSRF Protection Framework{#the-csrf-protection-framework}
 

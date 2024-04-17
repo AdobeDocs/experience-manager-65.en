@@ -7,6 +7,8 @@ topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Using xtypes (Classic UI){#using-xtypes-classic-ui}
 

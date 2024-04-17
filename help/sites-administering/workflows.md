@@ -7,6 +7,8 @@ topic-tags: operations
 content-type: reference
 exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 solution: Experience Manager, Experience Manager Sites
+feature: Operations
+role: Admin
 ---
 # Administering Workflows{#administering-workflows}
 

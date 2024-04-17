@@ -9,6 +9,8 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Creating Sites for Mobile Devices{#creating-sites-for-mobile-devices}
 

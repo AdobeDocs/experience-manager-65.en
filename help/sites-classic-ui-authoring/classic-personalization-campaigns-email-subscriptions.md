@@ -7,6 +7,8 @@ topic-tags: personalization
 content-type: reference
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring,Personalization
+role: User
 ---
 # Managing Subscriptions{#managing-subscriptions}
 

@@ -9,9 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 
-feature: Context Hub
+feature: Context Hub,Developing,Personalization
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 solution: Experience Manager, Experience Manager Sites
+role: Developer
 ---
 # Client Context JavaScript API{#client-context-javascript-api}
 

@@ -3,6 +3,8 @@ title: Adobe Content Package Maven Plugin
 description: Use the Content Package Maven plugin to deploy AEM applications
 exl-id: 002c00ba-eda1-4481-bc35-1f4d972e4073
 solution: Experience Manager, Experience Manager Sites
+feature: Developing,Developer Tools
+role: Developer
 ---
 # Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
 

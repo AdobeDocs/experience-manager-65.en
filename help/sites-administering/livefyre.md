@@ -11,6 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # Integrating with Livefyre{#integrating-with-livefyre}
 

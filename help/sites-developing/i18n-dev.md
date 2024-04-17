@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: components
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Internationalizing UI Strings {#internationalizing-ui-strings}
 

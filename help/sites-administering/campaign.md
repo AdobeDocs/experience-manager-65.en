@@ -9,6 +9,8 @@ content-type: reference
 
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 
 # Integrating AEM 6.5 with Adobe Campaign{#integrating-with-adobe-campaign}

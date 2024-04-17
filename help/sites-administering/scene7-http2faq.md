@@ -7,6 +7,8 @@ topic-tags: integration
 content-type: reference
 exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # HTTP2 Delivery of Content FAQ{#http-delivery-of-content-faq}
 

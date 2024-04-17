@@ -9,6 +9,8 @@ content-type: reference
 
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Editing Page Properties{#editing-page-properties}
 

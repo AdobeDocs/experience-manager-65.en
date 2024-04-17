@@ -4,6 +4,8 @@ description: Configure Rich Text Editor to create accessible webpages and sites.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Configure RTE to create accessible webpages and sites {#configure-rte-for-accessibility}
 

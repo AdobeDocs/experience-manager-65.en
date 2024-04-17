@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Creating and Consuming Jobs for Offloading{#creating-and-consuming-jobs-for-offloading}
 

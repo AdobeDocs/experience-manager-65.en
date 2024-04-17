@@ -7,6 +7,8 @@ topic-tags: operations
 content-type: reference
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 solution: Experience Manager, Experience Manager Sites
+feature: Operations
+role: Admin
 ---
 # Starting Workflows{#starting-workflows}
 

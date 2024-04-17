@@ -7,6 +7,8 @@ topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Custom Node Types{#custom-node-types}
 
