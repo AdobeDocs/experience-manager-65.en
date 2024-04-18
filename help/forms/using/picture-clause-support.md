@@ -85,6 +85,10 @@ Supported expression for Date Picture clause:
  </tbody>
 </table>
 
+>[!NOTE]
+>
+> As per design, the Date field in HTML5 Forms does not support the `MM-YYYY` in edit format. However, this format is supported in the display format.
+
 ## Numeric Picture Clause {#numeric-picture-clause}
 
 HTML5 forms support Numeric Picture symbols. However, there is a difference in support between PDF Forms and HTML Forms.
