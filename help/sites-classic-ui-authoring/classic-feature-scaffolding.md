@@ -8,6 +8,8 @@ topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Scaffolding{#scaffolding}
 

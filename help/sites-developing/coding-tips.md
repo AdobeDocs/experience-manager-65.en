@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Coding Tips{#coding-tips}
 

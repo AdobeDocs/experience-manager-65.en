@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: best-practices
 exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Trying out Responsive Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
 

@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
+feature: Developing,Search,Query Builder
+role: Developer
 ---
 # Query Builder Predicate Reference{#query-builder-predicate-reference}
 

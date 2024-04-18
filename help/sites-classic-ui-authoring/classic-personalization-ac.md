@@ -9,6 +9,8 @@ content-type: reference
 
 exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring,Personalization
+role: User
 ---
 # Working with Adobe Campaign{#working-with-adobe-campaign}
 

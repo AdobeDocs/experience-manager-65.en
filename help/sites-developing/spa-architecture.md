@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
 solution: Experience Manager, Experience Manager Sites
+feature: Developing,SPA Editor
+role: Developer
 ---
 # Developing SPAs for AEM{#developing-spas-for-aem}
 

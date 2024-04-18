@@ -10,6 +10,8 @@ content-type: reference
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Authoring - the Environment and Tools {#authoring-the-environment-and-tools}
 

@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
 solution: Experience Manager, Experience Manager Sites
+feature: Administering,Personalization
+role: Admin
 ---
 # Integrating with Adobe Target{#integrating-with-adobe-target}
 

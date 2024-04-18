@@ -8,6 +8,8 @@ content-type: reference
 
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Video{#video}
 

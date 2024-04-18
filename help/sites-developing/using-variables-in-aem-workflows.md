@@ -9,6 +9,8 @@ content-type: reference
 docset: aem65
 exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Variables in AEM workflows{#variables-in-aem-workflows}
 

@@ -7,6 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Creating and Organizing Pages{#creating-and-organizing-pages}
 

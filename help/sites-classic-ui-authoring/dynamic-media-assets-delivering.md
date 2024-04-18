@@ -7,6 +7,8 @@ topic-tags: authoring
 content-type: reference
 exl-id: 40f41bb0-b3cb-4c16-b5db-ac8ea1a86aa3
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Deliver Dynamic Media assets{#delivering-dynamic-media-assets}
 

@@ -7,6 +7,8 @@ topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Data Modeling - David Nuescheler's Model{#data-modeling-david-nuescheler-s-model}
 

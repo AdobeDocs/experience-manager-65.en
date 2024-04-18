@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Extending Workflow Functionality{#extending-workflow-functionality}
 

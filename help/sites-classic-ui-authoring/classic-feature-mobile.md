@@ -9,6 +9,8 @@ topic-tags: site-features
 
 exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Authoring a Page for Mobile Devices{#authoring-a-page-for-mobile-devices}
 

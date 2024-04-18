@@ -7,6 +7,8 @@ topic-tags: operations
 content-type: reference
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
 solution: Experience Manager, Experience Manager Sites
+feature: Administering
+role: Admin
 ---
 # Dashboards{#dashboards}
 

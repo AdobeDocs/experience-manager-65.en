@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # Adobe Classifications{#adobe-classifications}
 

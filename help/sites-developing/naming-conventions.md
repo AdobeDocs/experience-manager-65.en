@@ -9,6 +9,8 @@ content-type: reference
 
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Naming Conventions {#naming-conventions}
 

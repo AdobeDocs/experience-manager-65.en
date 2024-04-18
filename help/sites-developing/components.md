@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Components Overview{#components-overview}
 

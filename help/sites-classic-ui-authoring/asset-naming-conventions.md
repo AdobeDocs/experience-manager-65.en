@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: bb6a5913-0871-47c7-8641-936e98920ec0
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Naming conventions for assets testing{#naming-conventions-for-assets-testing}
 

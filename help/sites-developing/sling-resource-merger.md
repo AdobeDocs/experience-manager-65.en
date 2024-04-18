@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Using the Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
