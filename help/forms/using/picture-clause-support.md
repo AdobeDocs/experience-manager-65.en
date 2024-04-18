@@ -87,7 +87,7 @@ Supported expression for Date Picture clause:
 
 >[!NOTE]
 >
-> As per design, the Date field in HTML5 Forms does not support the `MM-YYYY` in edit format. However, this format is supported in the display format.
+> As per design, the Date field in HTML5 Forms does not support the `MM-YYYY` in edit format. However, the format is supported in the display format.
 
 ## Numeric Picture Clause {#numeric-picture-clause}
 
