@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: aba1dc0f-eab1-40aa-8ab6-317e2fa7891c
 solution: Experience Manager, Experience Manager Sites
+feature: Developing,SPA Editor
+role: Developer
 ---
 # SPA Deep Dives{#spa-deep-dives}
 

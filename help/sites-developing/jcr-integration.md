@@ -11,6 +11,8 @@ topic-tags: best-practices
 
 exl-id: 170474c1-c7f4-446c-bda4-84768d44a078
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # JCR Integration{#jcr-integration}
 

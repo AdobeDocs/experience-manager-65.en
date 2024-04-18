@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: best-practices
 exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # OSGi Bundles{#osgi-bundles}
 

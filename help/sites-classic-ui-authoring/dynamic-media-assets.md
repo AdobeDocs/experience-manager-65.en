@@ -9,6 +9,8 @@ content-type: reference
 
 exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Work with Dynamic Media{#working-with-dynamic-media}
 

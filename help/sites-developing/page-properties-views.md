@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Customizing Views of Page Properties{#customizing-views-of-page-properties}
 

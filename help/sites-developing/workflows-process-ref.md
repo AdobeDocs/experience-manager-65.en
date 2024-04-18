@@ -7,6 +7,8 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Workflow Process Reference{#workflow-process-reference}
 

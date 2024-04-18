@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 725c81d0-0258-4118-8b01-29fd7bcaf9b3
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Adding Fonts for Graphic-Rendering{#adding-fonts-for-graphic-rendering}
 

@@ -11,6 +11,8 @@ topic-tags: best-practices
 
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 solution: Experience Manager, Experience Manager Sites
+feature: Integration
+role: Admin
 ---
 # Best Practices{#best-practices}
 

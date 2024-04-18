@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 solution: Experience Manager, Experience Manager Sites
+feature: Operations
+role: Admin
 ---
 # Reporting {#reporting}
 

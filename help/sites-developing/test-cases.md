@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Defining your Test Cases{#defining-your-test-cases}
 

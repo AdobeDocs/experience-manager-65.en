@@ -12,6 +12,8 @@ content-type: reference
 docset: aem65
 exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Developing for Targeted Content{#developing-for-targeted-content}
 

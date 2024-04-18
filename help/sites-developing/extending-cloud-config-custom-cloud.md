@@ -7,6 +7,8 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Creating a Custom Cloud Service{#creating-a-custom-cloud-service}
 

@@ -7,6 +7,8 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 
 # Developing Reports {#developing-reports}

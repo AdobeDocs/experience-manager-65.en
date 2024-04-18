@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: introduction
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Editor Limitations{#editor-limitations}
 

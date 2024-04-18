@@ -9,6 +9,8 @@ topic-tags: best-practices
 
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Software Architecture{#software-architecture}
 

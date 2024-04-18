@@ -3,6 +3,8 @@ title: Security
 description: Application Security starts during the development phase
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
 solution: Experience Manager, Experience Manager Sites
+feature: Developing,Security
+role: Developer
 ---
 # Security{#security}
 

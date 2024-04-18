@@ -11,6 +11,8 @@ content-type: reference
 
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
 ---
 # Customizing the Welcome Console (Classic UI){#customizing-the-welcome-console-classic-ui}
 

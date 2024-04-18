@@ -7,6 +7,8 @@ topic-tags: introduction
 content-type: reference
 exl-id: 05286d1e-4266-4521-bbb5-0bd51de4d552
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Authoring in the Classic UI{#authoring-in-the-classic-ui}
 

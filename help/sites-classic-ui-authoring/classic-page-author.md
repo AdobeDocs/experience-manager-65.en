@@ -9,6 +9,8 @@ content-type: reference
 
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
 solution: Experience Manager, Experience Manager Sites
+feature: Authoring
+role: User
 ---
 # Authoring Pages{#authoring-pages}
 

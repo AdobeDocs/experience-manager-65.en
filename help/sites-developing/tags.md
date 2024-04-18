@@ -5,9 +5,10 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-feature: Tagging
+feature: Developing,Tagging
 exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
 solution: Experience Manager, Experience Manager Sites
+role: Developer
 ---
 # Tagging{#tagging}
 
