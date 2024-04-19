@@ -29,10 +29,10 @@ As AEM's standard reference implementation, We.Retail showcases some of the most
 | [Globalized site structure](/help/sites-administering/tc-bp.md) |We.Retail includes language masters which are live-copied into country-specific sites. | [Try it!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Responsive layout](/help/sites-authoring/responsive-layout.md) |All pages feature a responsive layout to adapt dynamically to screen and device size. | [Try it!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Editable templates](/help/sites-developing/page-templates-editable.md) |All pages are based on editable templates, allowing non-developers to adapt and customize the templates. | [Try it!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) |All components are based on HTL |  |
+| [HTML Template Language](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) |All components are based on HTL |  |
 | [eCommerce capabilities](/help/commerce/cif-classic/developing/ecommerce.md) |Features a product catalog |  |
 | [Communities sites](/help/communities/overview.md) |Allowing visitors to join in community discussions, read blogs, and much more |  |
-| [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |All components are based on the new core components and are more usable and user-configurable out-of-the-box | [Try it!](/help/sites-developing/we-retail-core-components.md) |
+| [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) |All components are based on the new core components and are more usable and user-configurable out-of-the-box | [Try it!](/help/sites-developing/we-retail-core-components.md) |
 | [Content Fragments](/help/assets/content-fragments/content-fragments.md) |The We.Retail Experiences section showcases the power of reusing content by way of content fragments. | [Try them!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Experience Fragments](/help/sites-authoring/experience-fragments.md) |An Experience Fragment is a group of one or more components including content and layout that can be referenced within pages. | [Try them!](/help/sites-developing/we-retail-experience-fragments.md) |
 
