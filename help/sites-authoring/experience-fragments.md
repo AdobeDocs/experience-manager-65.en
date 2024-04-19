@@ -8,7 +8,7 @@ role: User
 ---
 # Experience Fragments{#experience-fragments}
 
-An Experience Fragment is a group of one or more components including content and layout that can be referenced within pages. They can contain any component.
+In Adobe Experience Manager (AEM) an Experience Fragment is a group of one or more components including content and layout that can be referenced within pages. They can contain any component.
 
 An Experience Fragment:
 
