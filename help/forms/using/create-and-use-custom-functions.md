@@ -21,7 +21,6 @@ AEM Forms 6.5 introduced the ability to define JavaScript functions that can be 
 
 The custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They also enable dynamic alteration of form behavior based on predefined criteria. 
 In Adaptive Forms, you can use custom functions within the [rule editor of an Adaptive Form](/help/forms/using/rule-editor.md) to create specific validation rules for form fields.
-
 Let us understand use of custom function where users enter the email address, and you want to ensure that the entered email address follows a specific format (it contains an "@" symbol and a domain name). Create a custom function as "ValidateEmail" which takes the email address as input and returns true if it is valid and false otherwise.
 
 ```javascript
