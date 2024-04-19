@@ -243,7 +243,7 @@ This CTA component can be used to add a text link on the landing page.
 Supported properties
 
 * Label, with bold, italics, and underline options
-* Target URL, supports third party and AEM url
+* Target URL, supports third-party and AEM url
 * Page rendering options (same window, new window, and so on)
 
 HTML tag to include click through component in the imported zip. Here href maps to target url, "View Product Details" maps to label, and so on.
@@ -276,7 +276,7 @@ Supported properties
 
 * Image cropping, rotation
 * Hover text, description, size in px
-* Target URL, supports third party and AEM url
+* Target URL, supports third-party and AEM url
 * Page rendering options (same window, new window, and so on)
 
 HTML tag to include graphical link component in the imported zip. Here href maps to target url, img src is the rendering image, "title" is taken as hover text, and so on.
@@ -362,11 +362,11 @@ HTML tag to include graphical link component in the imported zip. Here "firstNam
 
 ### Parsys {#parsys}
 
-The AEM parsys component is a container component that can contain other AEM components. It is possible to add a parsys component in the imported HTML. This allows the user to add/delete editable AEM components to the landing page even after it has been imported.
+The AEM Parsys component is a container component that can contain other AEM components. It is possible to add a Parsys component in the imported HTML. This allows the user to add/delete editable AEM components to the landing page even after it has been imported.
 
 The paragraph system gives users the ability to add components using the sidekick.
 
-HTML markup to insert a parsys component ( `foundation/components/parsys`) in the HTML within design package:
+HTML markup to insert a Parsys component ( `foundation/components/parsys`) in the HTML within design package:
 
 ```xml
 <div data-cq-component="parsys">
@@ -378,9 +378,9 @@ HTML markup to insert a parsys component ( `foundation/components/parsys`) in th
 
 Including the above markup in the HTML does the following:
 
-* Inserts a AEM parsys component (foundation/components/parsys) in the landing page created after importing the design package.
-* Initializes the sidekick with default components. New components can be added to the landing page by dragging components from the sidekick onto the parsys component.
-* Two title components are also part of the parsys.
+* Inserts a AEM Parsys component (foundation/components/parsys) in the landing page created after importing the design package.
+* Initializes the sidekick with default components. New components can be added to the landing page by dragging components from the sidekick onto the Parsys component.
+* Two title components are also part of the Parsys.
 
 ### Target {#target}
 
@@ -436,7 +436,7 @@ If no encoding is specified in the imported HTML, then the default encoding set 
 
 ### Overlaying template {#overlaying-template}
 
-The Blank Landing Page template can be overlayed by creating a one at: `/apps/<appName>/designimporter/templates/<templateName>`
+The Blank Landing Page template can be over layed by creating a one at: `/apps/<appName>/designimporter/templates/<templateName>`
 
 Steps for creating a template in AEM are explained [here](/help/sites-developing/templates.md).
 
@@ -538,7 +538,7 @@ When importing the design package, you may encounter several errors, described i
 
 ### Initialization of sidekick with Landing Page relevant components {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-If the design package contains a parsys component markup, then after importing, the sidekick starts showing landing-page relevant components. You can drag and drop new components onto the parsys component within your landing page. You can also go to the design mode and add new components to the sidekick.
+If the design package contains a Parsys component markup, then after importing, the sidekick starts showing landing-page relevant components. You can drag and drop new components onto the Parsys component within your landing page. You can also go to the design mode and add new components to the sidekick.
 
 ### Error messages displayed during import {#error-messages-displayed-during-import}
 

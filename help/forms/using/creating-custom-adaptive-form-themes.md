@@ -58,7 +58,7 @@ You create an **adaptive template** and apply the theme to the template. You can
 
     * `css`folder: Contains the .css files in which you define the static styles to be used in the theme.
 
-   **Less variables files**: These are the files where you define or override the variables that are used in defining CSS styles.
+   **Less variable files**: These are the files where you define or override the variables that are used in defining CSS styles.
 
    Adaptive forms provide out-of-the-box variables defined in the following `.less` files:
 

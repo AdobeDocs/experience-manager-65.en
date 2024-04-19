@@ -100,8 +100,8 @@ To subscribe to notifications:
 
 If you have chosen to receive notifications in your AEM Inbox, your inbox fills up with notifications. You can [view your notifications](#viewing-your-notifications), then select the required notifications to:
 
-* Approve it by clicking **Approve**: the value in the **Read** column is set to **true**.
+* Accept it by clicking **Approve**: the value in the **Read** column is set to **true**.
 
-* Delete it by clicking **Delete**.
+* Eliminate it by clicking **Delete**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

@@ -42,13 +42,13 @@ The article uses an example to demonstrate how to synchronize the adaptive form 
 
 After uploading the package, you can view these assets in the AEM Forms UI.
 
-Install the package using the package manager: `https://<server>:<port>/crx/packmgr/index.jsp`
+Install the package using the Package Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
 
 The package contains the following assets:
 
 1. `sample-form.xdp`: The XFA form template used as an example
 
-1. `sample-xfa-af`: The adaptive form based on the sample-form.xdp file. This adaptive form, however, does not include any fields. In the next step, we will add content to this adaptive form.
+1. `sample-xfa-af`: The adaptive form based on the sample-form.xdp file. This adaptive form, however, does not include any fields. In the next step, you add content to this adaptive form.
 
 ### Add content to adaptive form {#add-content-to-adaptive-form-br}
 
@@ -59,7 +59,7 @@ The package contains the following assets:
 
 >[!NOTE]
 >
->In the preceding steps, we overwrote a property of a field in the XDP file. This property will, therefore, not be synchronized if the corresponding property in the XDP file is modifiled later.
+>In the preceding steps, you overwrote a property of a field in the XDP file. This property is, therefore, not synchronized if the corresponding property in the XDP file is edited later.
 
 ## Detecting changes in XDP file {#detecting-changes-in-xdp-file}
 
@@ -129,7 +129,7 @@ The field that has been deleted is also marked with an icon to indicate an error
 
 >[!NOTE]
 >
->The fields in the adaptive form that have an incorrect binding (an invalid `bindRef` value in the edit dialog) are also considered as deleted fields. If the author does not fix these errors and publish the adaptive form, the field is treated as a normal unbinded adaptive form field and is included in the unbinded section of the output XML file.
+>The fields in the adaptive form that have an incorrect binding (an invalid `bindRef` value in the edit dialog) are also considered as deleted fields. If the author does not fix these errors and publish the adaptive form, the field is treated as a normal unbound adaptive form field and is included in the unbound section of the output XML file.
 
 ## Downloads {#downloads}
 

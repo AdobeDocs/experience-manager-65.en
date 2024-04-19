@@ -28,7 +28,7 @@ Depending upon the type of client application, you can write the form to a clien
 
 * The Java API strongly typed (SOAP mode) examples are a Java servlet.
 * The web service (Java Base64) examples are a Java servlet.
-* The web service (MTOM) examples are a console application (not all quick starts have a MTOM example).
+* The web service (MTOM) examples are a console application (not all quick starts have an MTOM example).
 
 >[!NOTE]
 >

@@ -22,7 +22,7 @@ An [Experience Fragment](/help/sites-authoring/experience-fragments.md) is a gro
 
 They allow an author to re-use parts of a page (a fragment of an experience), without having to copy and paste the content.
 
-This supports the headless Content Management System (CMS) use-case, where authors want to use AEM only for authoring, but not for delivering to the customer. A third party system/touchpoint can then consume that experience and then deliver to the end user.
+This supports the headless Content Management System (CMS) use-case, where authors want to use AEM only for authoring, but not for delivering to the customer. A third-party system/touchpoint can then consume that experience and then deliver to the end user.
 
 >[!NOTE]
 >

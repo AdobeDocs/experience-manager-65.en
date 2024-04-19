@@ -36,7 +36,7 @@ Jobs do not require payloads. However, the payload is necessary if the job requi
 
 ## Creating Jobs for Offloading {#creating-jobs-for-offloading}
 
-Create a client that calls the JobManager.addJob method to create a job that an automatically-selected JobConsumer executes. Provide the following information to create the job:
+Create a client that calls the JobManager.addJob method to create a job that an automatically selected JobConsumer executes. Provide the following information to create the job:
 
 * Topic: The job topic.
 * Name: (Optional)

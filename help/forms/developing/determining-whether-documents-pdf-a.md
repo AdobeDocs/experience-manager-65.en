@@ -241,7 +241,7 @@ Determine whether a PDF document is PDF/A-compliant by using the Assembler Servi
 
     * Access the `AssemblerResult` object's `documents` field, which is a `Map` object that contains the XML data that specifies whether the input PDF document is a PDF/A document.
     * Iterate through the `Map` object to obtain each resultant document. Then, cast that array member's value to a `BLOB`.
-    * Extract the binary data that represents the XML data by accessing its `BLOB` object's `MTOM` field. This field stores an array of bytes that you can write out to as a XML file.
+    * Extract the binary data that represents the XML data by accessing its `BLOB` object's `MTOM` field. This field stores an array of bytes that you can write out to as an XML file.
 
 **See also**
 

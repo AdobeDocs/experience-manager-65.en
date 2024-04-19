@@ -189,7 +189,7 @@ The search bar at the bottom of the Translator tool provides string selection op
 
 ### Editing Translated Strings {#editing-translated-strings}
 
-After you add the English string to a dictionary, you can add translations of the string. You can also [export the dictionary](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) to have it translated by a third party.
+After you add the English string to a dictionary, you can add translations of the string. You can also [export the dictionary](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) to have it translated by a third-party.
 
 1. Select [your project specific dictionary](#creating-a-dictionary) as it specifies the path in the repository holding the translations. For example, select **Dictionaries** as:
 
@@ -219,7 +219,7 @@ After you add the English string to a dictionary, you can add translations of th
 
 ## Using Third-Party Translators {#using-third-party-translators}
 
-To support the use of third party translation services, the Translation tool enables you to export and import dictionaries.
+To support the use of third-party translation services, the Translation tool enables you to export and import dictionaries.
 
 ### Exporting a Dictionary {#exporting-a-dictionary}
 

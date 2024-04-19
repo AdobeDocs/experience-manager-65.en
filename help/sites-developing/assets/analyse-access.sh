@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# Analyse CQ access.log extrapolating various informations and producing a MarkDown output on stdout
+# Analyse CQ access.log extrapolating various information and producing a MarkDown output on stdout
 #
 # usage: 
 #    ./analyse-access.sh access.log.2013-*

@@ -36,7 +36,7 @@ You can perform the following actions to process a work item:
 
 * **Step Back**
 
-  If you discover that a step, or series of steps, needs to be repeated you can step back. This lets you select a step, that occurred earlier in the workflow, for reprocessing. The workflow returns to the step you specify, then proceeds from there.
+  If you discover that a step, or series of steps, needs to be repeated you can step back. This lets you select a step that occurred earlier in the workflow, for reprocessing. The workflow returns to the step you specify, then proceeds from there.
 
 ## Participating in a Workflow {#participating-in-a-workflow}
 

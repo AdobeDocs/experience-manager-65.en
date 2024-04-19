@@ -34,7 +34,7 @@ User accounts and UGC content on the author server are covered in the [Platform 
 
 User accounts used to authenticate visitors on the site, and UGC content on the publish server are covered in the [Platform GDPR documentation](/help/managing/data-protection-and-privacy.md).
 
-By default AEM Sites components do not store form-data entered by visitors on the  publish  server. It is recommended to forward the data to a third party system, or Adobe Campaign for further processing.
+By default AEM Sites components do not store form-data entered by visitors on the  publish  server. It is recommended to forward the data to a third-party system, or Adobe Campaign for further processing.
 
 ## Opt-In/Opt-Out {#opt-in-opt-out}
 

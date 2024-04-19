@@ -34,7 +34,7 @@ It can analyse a custom path provided on the command line.
 
 Taking from the comment within the file that tells you how to run it:
 
-Analyse CQ `access.log` extrapolating various informations and producing a Markdown output on `stdout`.
+Analyse CQ `access.log` extrapolating various information and producing a Markdown output on `stdout`.
 
 ## Usage {#usage}
 

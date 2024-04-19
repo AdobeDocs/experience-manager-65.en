@@ -142,7 +142,7 @@ AEM eCommerce provides:
 
     * the AEM search
     * the search of the eCommerce system
-    * a third party search
+    * a third-party search
     * or a combination thereof.
 
   ![search example](/help/sites-administering/assets/chlimage_1-131.png)

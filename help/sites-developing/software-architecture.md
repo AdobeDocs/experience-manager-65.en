@@ -46,7 +46,7 @@ Striving for compliance with these five principles should result in a system tha
 
 ### Follow the Robustness Principle {#follow-the-robustness-principle}
 
-The Robustness Principle states that you should be conservative in what you send, but be liberal in what you accept. In other words, when sending messages to a third party, you should completely conform to specifications. However, when you receive messages from a third party, you should accept non-conforming messages as long as the meaning of the message is clear.
+The Robustness Principle states that you should be conservative in what you send, but be liberal in what you accept. In other words, when sending messages to a third-party, you should completely conform to specifications. However, when you receive messages from a third-party, you should accept non-conforming messages as long as the meaning of the message is clear.
 
 ### Implement spikes in their own modules {#implement-spikes-in-their-own-modules}
 

@@ -276,7 +276,7 @@ Configure your Adobe Analytics framework to enable ad-hoc link tracking.
 
 >[!NOTE]
 >
->The XSS Antisamy configuration is now in SLING under path **/libs/sling/xss.config.xml** and the following rules need to be added to for ad-hoc linking to work:
+>The XSS Antisamy configuration is now in SLING under path **/libs/sling/xss.config.xml** and the following rules need to be added to ad-hoc so that linking works:
 
 #### Anchor tag rule extension {#anchor-tag-rule-extension}
 

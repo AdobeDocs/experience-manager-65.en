@@ -389,7 +389,7 @@ Export form data by using the Form Data Integration API (web service):
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the location of the XML file.
     * Create a byte array that stores the data content of the `BLOB` object that was returned by the `exportData` method. Populate the byte array by getting the value of the `BLOB` object’s `MTOM` field.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a XML file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to an XML file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
 
 **See also**
 

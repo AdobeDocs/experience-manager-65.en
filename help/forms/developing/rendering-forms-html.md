@@ -1,15 +1,11 @@
 ---
 title: Rendering Forms as HTML
-
-description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
-
-
+description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java&trade; API and Web Service API to render forms as HTML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
@@ -62,17 +58,17 @@ You must explicitly move from panel to panel using the `xfa.host.pageUp` and `xf
 >
 >If you want to customize the look of the HTML Digital Signature button on an HTML form, you must change the following properties in the fscdigsig.css file (within the adobe-forms-ds.ear &gt; adobe-forms-ds.war file):
 
-**.fsc-ds-ssb**: This style sheet is applicable if there is a blank sign field.
+**`.fsc-ds-ssb`**: This style sheet is applicable if there is a blank sign field.
 
-**.fsc-ds-ssv**: This style sheet is applicable if there is a Valid sign field.
+**`.fsc-ds-ssv`**: This style sheet is applicable if there is a Valid sign field.
 
-**.fsc-ds-ssc**: This style sheet is applicable if there is a Valid sign field but data has changed.
+**`.fsc-ds-ssc`**: This style sheet is applicable if there is a Valid sign field but data has changed.
 
-**.fsc-ds-ssi**: This style sheet is applicable if there is a invalid sign field.
+**`.fsc-ds-ssi`**: This style sheet is applicable if there is a invalid sign field.
 
-**.fsc-ds-popup-bg**: This style sheet property is not being used.
+**`.fsc-ds-popup-bg`**: This style sheet property is not being used.
 
-**.fsc-ds-popup-btn**: This style sheet property is not being used.
+**.`fsc-ds-popup-btn`**: This style sheet property is not being used.
 
 ## Running scripts {#running-scripts}
 

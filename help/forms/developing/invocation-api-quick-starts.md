@@ -1017,7 +1017,7 @@ An unsecured PDF document based on a PDF file named *loan.pdf* is passed to the 
 
 >[!NOTE]
 >
->Many quick starts that show how to perform AEM Forms service operations include a MTOM code example.
+>Many quick starts that show how to perform AEM Forms service operations include an MTOM code example.
 
 ## Quick Start: Invoking a service using SwaRef in a Java project {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
 

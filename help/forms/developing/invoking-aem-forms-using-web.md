@@ -811,7 +811,7 @@ Consider the `MyApplication/EncryptDocument` process that accepts an unsecured P
 
 >[!NOTE]
 >
->Most AEM Forms service operations have a MTOM quick start. You can view these quick starts in a service's corresponding quick start section. For example, to see the Output quick start section, see [Output Service API Quick Starts](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
+>Most AEM Forms service operations have an MTOM quick start. You can view these quick starts in a service's corresponding quick start section. For example, to see the Output quick start section, see [Output Service API Quick Starts](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
 
 **See also**
 
@@ -1594,7 +1594,7 @@ The following C# code example signs an interactive form that is rendered by the 
                     SignInteractiveForm.ServiceReference2.BLOB formData = new SignInteractiveForm.ServiceReference2.BLOB();
                     SignInteractiveForm.ServiceReference2.BLOB pdfForm = new SignInteractiveForm.ServiceReference2.BLOB();
  
-                    //Specify a XML form data
+                    //Specify an XML form data
                     string path = "C:\\Adobe\Loan.xml";
                     FileStream fs = new FileStream(path, FileMode.Open);
  
@@ -1605,7 +1605,7 @@ The following C# code example signs an interactive form that is rendered by the 
                     fs.Read(ByteArray, 0, len);
                     formData.MTOM = ByteArray;
  
-                    //Specify a XML form data
+                    //Specify an XML form data
                     string path2 = "C:\\Adobe\LoanSigXFA.pdf";
                     FileStream fs2 = new FileStream(path2, FileMode.Open);
  

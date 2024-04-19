@@ -74,7 +74,7 @@ See [(Optional) Create an Interactive Image viewer preset](/help/assets/managing
 
 Start by identifying dynamic variables used by your existing Quickview implementation so that you can enter hotspot data to create the interactive image.
 
-When you add hotspots to a banner image in Experience Manager Assets, you must assign a SKU (Stock Keeping Unit and optional additional variables to each hotspot. Such hotspot variables are used later to match hotspots with Quickview content.
+When you add hotspots to a banner image in Experience Manager Assets, you must assign a SKU (Stock Keeping Unit and optional extra variables to each hotspot. Such hotspot variables are used later to match hotspots with Quickview content.
 
 It is important to properly identify the number and type of variables to associate with hotspot data. Each hotspot added to a banner image must carry enough information to unambiguously identify the product in the existing backend system.
 
@@ -107,7 +107,7 @@ During this process, it is important to visit different areas of your website, w
 
 In the simplest case, the only variable part in the Quickview URL is the product SKU. In this case, the SKU value is the only data piece that you need for adding hotspots to the banner image.
 
-However, in complex cases, the Quickview URL has different varying elements in addition to the SKU, such as category ID, color code, and size code. In such cases, every element is a separate variable in your hotspot data definition in the shoppable interactive image feature in Experience Manager Assets.
+However, in complex cases, the Quickview URL has varying elements that differ in addition to the SKU, such as category ID, color code, and size code. In such cases, every element is a separate variable in your hotspot data definition in the shoppable interactive image feature in Experience Manager Assets.
 
 Consider the following examples of Quickview URLs and their resulting hotspot variables:
 
@@ -265,7 +265,7 @@ See [(Optional) Preview interactive images](#optional-previewing-interactive-ima
 
    1. Near the upper-left corner of the Hotspot Management page, select **[!UICONTROL Hotspot]**.
    1. On the image, select a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location.
-   1. Add additional hotspots as necessary by repeating steps a and b.
+   1. Add extra hotspots as necessary by repeating steps a and b.
    1. (Optional) To delete a hotspot, select it on the image, then select **[!UICONTROL Delete]** (trashcan icon) under the **[!UICONTROL Hotspots]** heading.
 
 1. In the Name text field, type the name of the hotspot. This name also appears in the Selected Hotspot drop-down list.
@@ -273,7 +273,7 @@ See [(Optional) Preview interactive images](#optional-previewing-interactive-ima
 
     * Select **[!UICONTROL Quickview]**.
 
-        * If you are an Experience Manager Sites or eCommerce customer, select the Product Picker icon (magnifying glass) to open the Select Product page. Select the product you want to use, then select **[!UICONTROL Select]** in the upper-right corner of the page so you can return to the Hotspot management page.
+        * If you are an Experience Manager Sites or eCommerce customer, select the Product Picker icon (magnifying glass) to open the Select Product page. Select the product that you want to use, then select **[!UICONTROL Select]** in the upper-right corner of the page so you can return to the Hotspot management page.
         * If you are *not* an Experience Manager Sites or eCommerce customer
 
             * See [Identify hotspot variables](#optional-identifying-hotspot-variables); you must define these variables.
@@ -369,9 +369,9 @@ Integration is as simple as removing the `IMG` tag and replacing it with the cop
 
 To apply a "crop" to a shoppable interactive image for a responsive environment, you can include the Interactive Image configuration attribute `ZoomView.iscommand` to the path. The component `ZoomView` is called and `iscommand` is the "crop" image serving command that you apply.
 
-See [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) configuration attribute.
+See [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) configuration attribute.
 
-See [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) image serving command.
+See [crop](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) image serving command.
 
 You are now ready to integrate the interactive image with an existing Quickview on your website.
 

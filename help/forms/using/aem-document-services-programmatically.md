@@ -4462,7 +4462,7 @@ The PDF Generator service provides APIs to converts native file formats to PDF. 
 
 The GeneratePDFService provides APIs to convert various file formats such as .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (deprecated), .jpg, .bmp, .tif, .png, .html, and many other file formats to PDF. It also provides APIs to export PDF to various file formats and optimize PDFs. The service supports the following APIs:
 
-* **createPDF**: Converts a supported file type to a PDF document. It supports file formats such as Microsoft Word, Microsoft PowerPoint, Microsoft Excel, and Microsoft Project. In addition to these applications, any third party generic PDF generating application type can also be plugged into the API.
+* **createPDF**: Converts a supported file type to a PDF document. It supports file formats such as Microsoft Word, Microsoft PowerPoint, Microsoft Excel, and Microsoft Project. In addition to these applications, any third-party generic PDF generating application type can also be plugged into the API.
 * **exportPDF**: Converts a PDF document to a supported file type. The method accepts a PDF as input and exports the content of the PDF in specified file type format. You can export a PDF document in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 with CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) formats. You can also specify [custom Preflight profiles](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) for the PDF outputs.
 
 * **optimizePDF**: Optimizes the PDF document and also converts a PDF document from one type to another. The method accepts a PDF document as input.
@@ -4510,7 +4510,7 @@ The GeneratePDFService provides APIs to convert various file formats such as .do
 
 #### createPDF {#createpdf}
 
-The createPDF API converts a supported file type to a PDF document. It supports various file formats such as Microsoft Word, Microsoft PowerPoint, Microsoft Excel, and Microsoft Project. In addition to these applications, any third party generic PDF generating application type can also be plugged into the API.
+The createPDF API converts a supported file type to a PDF document. It supports various file formats such as Microsoft Word, Microsoft PowerPoint, Microsoft Excel, and Microsoft Project. In addition to these applications, any third-party generic PDF generating application type can also be plugged into the API.
 
 For the conversion, only a few parameters are mandatory. An input document is mandatory parameter. You can apply the security permissions, PDF Output Settings, and Metadata information later to the output PDF document.
 

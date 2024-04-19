@@ -10,11 +10,11 @@ solution: Experience Manager, Experience Manager Forms
 ---
 # Creating accessible adaptive forms{#creating-accessible-adaptive-forms}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes an older approach to authoring Adaptive Forms using foundation components. </span>
 
 ## Introduction {#introduction}
 
-An accessible form is a form that everyone can use, including users with special needs. Adaptive Forms include several features and capabilities that enhance the usability for users with different abilities. Building accessibility into adaptive forms not only allows the widest possible audience for content, but also it is a requirement when supplying documents in geographies where compliance with accessibility standards is mandated. AEM Forms help form developers comply with the accessibility standards.
+An accessible form is a form that everyone can use, including users with special needs. Adaptive Forms include several features and capabilities that enhance the usability for users with different abilities. Building accessibility into adaptive forms not only allows the widest possible audience for content, but it is also a requirement when supplying documents in geographies where compliance with accessibility standards is mandated. AEM Forms help form developers comply with the accessibility standards.
 
 While authoring an adaptive form, author should consider the following points to create accessible adaptive form:
 
@@ -30,18 +30,18 @@ You require an accessibility tool such as **Accessible Name and Description Insp
 
 ### Download and install accessibility testing tool
 
-Accessible Name and Description Inspector (ANDI) tool helps you identify and fix accessibility compliance related issues in web content. It is the recommended tool under Trusted Tester v5 guidelines of Department of Homeland Security. It is developed by the Social Security Administration​ department of United States to check Section 508 compliance of web content. The tool:
+Accessible Name and Description Inspector (ANDI) tool helps you identify and fix accessibility compliance-related issues in web content. It is the recommended tool under Trusted Tester v5 guidelines of Department of Homeland Security. It is developed by the Social Security Administration​ department of United States to check Section 508 compliance of web content. The tool:
 
 * Helps detect accessibility issues​ on a webpage
 * Provides suggestions to improve accessibility​
 * Detects keyboard accessibility and color contrast issues
 * Clearly identifies the screen reader content in compliance with the standards
 
-ANDI works with all major Internet browsers. See, [ANDI's documentation](https://www.ssa.gov/accessibility/andi/help/install.html) for detailed instructions to configure and use the tool.
+ANDI works with all major Internet browsers. See [ANDI's documentation](https://www.ssa.gov/accessibility/andi/help/install.html) for detailed instructions on how to configure and use the tool.
 
 ### Download and install the Ultramarine-Accessible theme
 
-The Ultramarine-Accessible theme is a reference theme. It helps demonstrate how to fix color contrast and other accessibility related issues in an adaptive form. Adobe recommends that you create a custom theme for the production environment based on the styles approved by your organization. Perform the following steps to upload the theme to your AEM instance:
+The Ultramarine-Accessible theme is a reference theme. It helps demonstrate how to fix color contrast and other accessibility-related issues in an adaptive form. Adobe recommends that you create a custom theme for the production environment based on the styles approved by your organization. Perform the following steps to upload the theme to your AEM instance:
 
 1. Download the theme package.
 1. Navigate to **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** on your AEM instance.
@@ -56,7 +56,7 @@ You should focus on four key aspects: keyboard navigation, color contrast, meani
 Apply the Ultramarine-Accessible theme to your existing adaptive form. To apply the theme:
 
 1. Open the adaptive form for editing.
-1. Select a component and select the parent icon. In the context menu, select **[!UICONTROL Adaptive Form Container]** and then select the configure icon.
+1. Select a component and select the parent icon. In the context menu, select **[!UICONTROL Adaptive Form Container]** and then select the Configure icon.
 1. Select the Ultramarine-Accessible theme in the properties browser and select **[!UICONTROL Save]** icon.
 1. Refresh the browser window. The theme is applied to the adaptive form.  
 
@@ -64,11 +64,11 @@ After applying an accessible theme, perform the below listed additional fixes. T
 
 1. Add a meaningful alternate text for the logo image in the adaptive form.
 
-    Provide a meaningful alternate text for images in header and footer components of the adaptive form template. When you fix the template and use it to create an adaptive form, the adaptive forms inherit all the accessibility related fixes applied to header and footer of the template.  For an existing adaptive form, make changes at adaptive form level. Changes made to an adaptive form template does not automatically flow to an existing adaptive form.
+    Provide a meaningful alternate text for images in header and footer components of the adaptive form template. When you fix the template and use it to create an adaptive form, the adaptive forms inherit all the accessibility-related fixes applied to header and footer of the template.  For an existing adaptive form, make changes at the adaptive form level. Changes made to an adaptive form template do not automatically flow to an existing adaptive form.
 
 1. Add a heading component containing form name to the adaptive form. If your form design specifies a company name, add a separate heading component for the company name also. 
 
-    Most accessibility tools inform users about the hierarchy of the content to help them understand structure of the web page. Set different heading levels for organization name and form name text on the adaptive form to provide a hierarchical structure to these text. In addition, use a Text component before each panel and section with an appropriate heading level to create a hierarchy.
+    Most accessibility tools inform users about the hierarchy of the content to help them understand structure of the web page. Set different heading levels for organization name and form name text on the adaptive form to provide a hierarchical structure to these texts. In addition, use a Text component before each panel and section with an appropriate heading level to create a hierarchy.
 
     ![How to apply a header style](assets/apply-style.gif)
 
@@ -84,7 +84,7 @@ After applying an accessible theme, perform the below listed additional fixes. T
 
 1. Set custom accessibility text for the date picker component. For example, Enter your date of birth. Screen readers read these custom accessibility texts.  
 
-1. Use short description instead of long description for adaptive form components. A long description adds help  button. Ensure the adaptive are does not have any help button.  
+1. Use short description instead of long description for adaptive form components. A long description adds help  button. Ensure the adaptive does not have any Help button.  
 
 1. Add custom accessibility text to all the read-only cells of tables. Also, disable all the read-only cells of tables.
 
@@ -117,7 +117,7 @@ To use the Accessibility option, follow these steps:
 
 >[!NOTE]
 >
->* Radio Button and Check-box can have only two options for accessibility namely, Custom Text and Title.
+>* Radio Button and Check-box can have only two options for accessibility, namely Custom Text and Title.
 >* For XFA-based adaptive forms, the accessibility option is inherited from the accessibility options set in the XDP. Tool tips from XDP are mapped to the Short Description and Caption are mapped to Title. The other options work as is.
 
 ### 3. Provide text equivalents for images {#provide-text-equivalents-for-images}
@@ -175,7 +175,7 @@ The following keyboard shortcut keys are available for the Date Picker component
 
 ## Use the accessibility tool to find remaining accessibility issues
 
-Accessible Name and Description Inspector (ANDI) helps you identify and fix accessibility compliance related issues in an adaptive form. To use the ANDI tool to find the accessibility issues in an adaptive form:
+Accessible Name and Description Inspector (ANDI) helps you identify and fix accessibility compliance-related issues in an adaptive form. To use the ANDI tool to find the accessibility issues in an adaptive form:
 
 1. Open the adaptive form in preview mode.
 1. Click the bookmarked ANDI tool icon. The ANDI tool analyzes the adaptive form and displays accessibility issues. For details on how to use the tool, see [ANDI's documentation](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
