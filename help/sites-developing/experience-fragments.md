@@ -94,6 +94,8 @@ Components that do not use this convention are not taken into consideration.
 >[!CAUTION]
 >
 >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
+>
+>Experience Fragments can only be used on pages that are based on editable templates.
 
 When developing a new template for Experience Fragments, you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 
