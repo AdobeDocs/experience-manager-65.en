@@ -26,7 +26,7 @@ An Experience Fragment:
 You can use Experience Fragments:
 
 * If an author wants to re-use parts (a fragment of an experience) of a page, they need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. Experience Fragments eliminate the need for copy/paste.
-* To support the headless CMS use-case. Authors want to use AEM only for authoring but not for delivering to the customer. A third party system/touchpoint would consume that experience and then deliver to the end user.
+* To support the headless CMS use-case. Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the end user.
 * With [Multi Site Management (MSM)](/help/sites-administering/msm.md); as an Experience Fragment is part of a page. This applies to both the individual fragments and the folders they reside in.
 
 >[!NOTE]
@@ -48,7 +48,7 @@ Experience Fragments should be used:
 * When you use AEM as a content delivery platform for third parties.
 
     * Any solution that wants to use AEM as the content delivery platform
-    * Embedding content in third party touchpoints
+    * Embedding content in third-party touchpoints
 
 * If you have an Experience with different variations or renditions.
 
@@ -362,10 +362,10 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 >[!NOTE]
 >
->Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+>Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third-party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 
-By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
+By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third-party channels alike.
 
 For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.

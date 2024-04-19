@@ -230,17 +230,17 @@ Before a deployment read the [General Description](#general-description) above.
 
 * **Deploy AEM web application**
 
-  * Download AEM war file
-  * Make your configurations In web.xml if needed (see above in the General Description)
+  * Download AEM war file.
+  * Make your configurations In web.xml if needed (see above in the General Description).
 
-    * Unpack WEB-INF/web.xml file
-    * change sling.run.modes parameter to publish
-    * uncomment sling.home initial parameter and set this path as you need
-    * Repack web.xml file
+    * Unpack WEB-INF/web.xml file.
+    * Change sling.run.modes parameter to publish.
+    * Uncomment sling.home initial parameter and set this path as you need.
+    * Repack web.xml file.
 
-  * Rename AEM war file to ROOT.war if you like to deploy it as root webapp, rename it to for example, aemauthor.war if you like to have aemauthor as context root
-  * copy it into tomcat's webapps folder
-  * wait until AEM is installed
+  * Rename AEM war file to ROOT.war if you want to deploy it as root webapp. Rename it to aemauthor.war if you want to have aemauthor as context root.
+  * Copy it into tomcat's webapps folder.
+  * Wait until AEM is installed.
 
 ## Troubleshooting {#troubleshooting}
 

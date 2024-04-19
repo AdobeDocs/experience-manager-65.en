@@ -15,7 +15,7 @@ solution: Experience Manager, Experience Manager Assets
 
 Carousel banners enable marketers to drive conversion by easily creating interactive rotating promotional content and delivering it to any screen.
 
-Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to quickly publish new content or make it more targeted. Carousel banners let you quickly create or modify rotating banners. You can add interactivity such as hotspots linking to product detail or related resources, and deliver them to any screen &ndash; letting you bring new promotional content to market faster.
+Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to quickly publish new content or make it more targeted. Carousel banners let you quickly create or modify rotating banners. You can add interactivity such as hotspots linking to product details or related resources, and deliver them to any screen &ndash; letting you bring new promotional content to market faster.
 
 Carousel banners are designated by a banner with the word **[!UICONTROL CAROUSELSET]**
 
@@ -33,11 +33,11 @@ In this example, a user has tapped or clicked an image map and accessed the Quic
 
 ## Watch how carousel banners are created {#watch-how-carousel-banners-are-created}
 
-Play a walkthrough on [how carousel banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)(10 minute and 33 seconds). You also learn how to preview, edit, and deliver carousel banners.
+Play a walkthrough on [how carousel banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)(10 minutes and 33 seconds). You also learn how to preview, edit, and deliver carousel banners.
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing,  see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL `dam-users`]** group to be able to create or edit carousel banners. If you are having trouble creating or editing,  see your system administrator who can add you to the **[!UICONTROL `dam-users`]** group.
 
 ## Quick Start: Carousel banners {#quick-start-carousel-banners}
 
@@ -66,7 +66,7 @@ To get you up and running quickly with carousel banners:
 
    In Carousels Sets, users navigate through banner images and select hotspots or image maps to access relevant content.
 
-   To create a Carousel Set in Assets, select **[!UICONTROL Create]**, then select **[!UICONTROL Carousel Sets]**. Add assets to slides and select **[!UICONTROL Save]**. You can also edit the appearance and behavior of the carousel directly within the editor.
+   To create a Carousel Set in Assets, select **[!UICONTROL Create]**, then select **[!UICONTROL Carousel Sets]**. Add assets to each slide and select **[!UICONTROL Save]**. You can also edit the appearance and behavior of the carousel directly within the editor.
 
 1. [Add hotspots or image maps to an Image Banner](#adding-hotspots-or-image-maps-to-an-image-banner).
 
@@ -92,7 +92,7 @@ To edit Carousel Sets, see [editing Carousel Sets](#editing-carousel-sets). In a
 
 Start by identifying dynamic variables used by the existing Quickview implementation so that you can enter hotspots or image map data properly during the carousel set creation process in Experience Manager Assets.
 
-When you add hotspots or image maps to a banner image in Experience Manager Assets, assign a SKU and optional additional variables to each hotspot or image map. Such variables are used later to match hotspots or image maps with Quickview content.
+When you add hotspots or image maps to a banner image in Experience Manager Assets, assign a SKU and optional extra variables to each hotspot or image map. Such variables are used later to match hotspots or image maps with Quickview content.
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ During this process, it is important to visit different areas of your website, w
 
 In the simplest case, the only variable part in the Quickview URL is the product SKU. In this case, the SKU value is the only data piece that you need for adding hotspots or image maps to the banner image.
 
-However, in complex cases, the Quickview URL has different varying elements in addition to the SKU, such as category ID, color code, and size code, for example. In such cases, every element is a separate variable in your hotspot or image map data definition in the carousel banner feature.
+However, in complex cases, the Quickview URL has varying elements that differ in addition to the SKU, such as category ID, color code, and size code. In such cases, every element is a separate variable in your hotspot or image map data definition in the carousel banner feature.
 
 Consider the following examples of Quickview URLs and their resulting hotspot or image map variables:
 
@@ -180,7 +180,7 @@ To upload image banners, see [Upload assets](/help/assets/manage-assets.md).
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL `dam-users`]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, see your system administrator who can add you to the **[!UICONTROL `dam-users`]** group.
 
 **To create Carousel Sets:**
 
@@ -264,14 +264,14 @@ See also [Add image maps](/help/assets/image-maps.md).
 
 1. From Assets, navigate to the carousel set you want to make interactive.
 1. Select the carousel set and select **[!UICONTROL Edit]**. The Carousel Viewer Editor opens.
-1. Select the slide you want to make interactive.
+1. Select the slide that you want to make interactive.
 1. Near the upper-left corner of the page, select **[!UICONTROL Hotspot]** or **[!UICONTROL Image Map]**.
 1. Do either of the following:
 
     * For hotspots: On the image, select a location where you want the hotspot to appear.
     * For image maps: On the image, select, then drag from the top left to the bottom right to create the image map area. You can adjust the size of the image map by dragging the corners.
 
-   If necessary, drag the hotspot or the image map to a new location. Add additional hotspots or image maps as necessary.
+   If necessary, drag the hotspot or the image map to a new location. Add more hotspots or image maps as necessary.
 
    To delete a hotspot or image map, select the **[!UICONTROL Actions]** tab. Under the **[!UICONTROL Maps & Hotspots]** heading, from the **[!UICONTROL Selected Type]** drop-down menu, select the name of the hotspot or image map you want to remove. Select the **[!UICONTROL Trash]** icon next to the menu, then select **[!UICONTROL Delete]**.
 
@@ -280,7 +280,7 @@ See also [Add image maps](/help/assets/image-maps.md).
 
     * Select **[!UICONTROL Quickview]**.
 
-        * If you are an Experience Manager Sites and Ecommerce customer, select the Product Picker icon (magnifying glass) to open the Select Product page. Select the product you want to use, then select the check mark in the upper-right corner of the page so you can return to the carousel banner editor.
+        * If you are an Experience Manager Sites and Ecommerce customer, select the Product Picker icon (magnifying glass) to open the Select Product page. Select the product that you want to use, then select the check mark in the upper-right corner of the page so you can return to the carousel banner editor.
         * If you are not an Experience Manager Sites or Ecommerce customer
 
             * See [Identify hotspot variables](#identifying-hotspot-and-image-map-variables) if you want to define these variables.
@@ -330,7 +330,7 @@ See also [Add image maps](/help/assets/image-maps.md).
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL `dam-users`]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
 You can perform various editing tasks on Carousel Sets such as the following:
 
@@ -348,7 +348,7 @@ You can perform various editing tasks on Carousel Sets such as the following:
     * Hover over a Carousel Set asset, then select **[!UICONTROL Edit]** (pencil icon).
     * Hover over a Carousel Set asset, select **[!UICONTROL Select]** (checkmark icon), then select **[!UICONTROL Edit]** on the toolbar.
 
-    * Select a Carousel Set asset, then in the upper-left corner of the page select **[!UICONTROL Edit]** (pencil icon).
+    * Select a Carousel Set asset, then in the upper-left corner of the page, select **[!UICONTROL Edit]** (pencil icon).
 
 1. To edit the Carousel Set, do any of the following:
 

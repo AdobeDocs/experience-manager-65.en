@@ -460,7 +460,7 @@ Keep in mind the following considerations and limitations when working on docume
 
 ## Use a custom XCI file
 
-An XCI file helps you set various properties of a document. <!-- Forms as a Cloud Service has a master XCI file.--> You can use a custom XCI file to override one or more default properties specified in the your existing XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
+An XCI file helps you set various properties of a document. <!-- Forms as a Cloud Service has a master XCI file.--> You can use a custom XCI file to override one or more default properties specified in the existing XCI file. For example, you can choose to embed a font into a document or enable tagged property for all the documents. The following table specifies the XCI options:
 
 |XCI option|Description|
 |--- |--- |

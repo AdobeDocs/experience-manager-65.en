@@ -35,7 +35,7 @@ exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 
 **For the [Communities capability](/help/communities/overview.md)**
 
-* If deploying a [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [identify the primary publisher](#primary-publisher)
+* If deploying a [publishing farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [identify the primary publisher](#primary-publisher)
 
 * [Enable the tunnel service](#tunnel-service-on-author)
 * [Enable social login](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
@@ -63,7 +63,7 @@ exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 
   * If JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-    * Not a shared UGC (User Generated Content) store :
+    * Not a shared UGC (User-Generated Content) store :
 
       * UGC is never replicated
       * UGC is only visible on the AEM instance or cluster in which it was entered
@@ -78,7 +78,7 @@ AEM 6.5 Communities GA includes Communities package. To know more about updates 
 
 Starting in AEM 6.4, updates to Communities are delivered as part of AEM Cumulative Fix Packs and Service Packs.
 
-For the latest updates to AEM 6.5, see [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+For the latest updates to AEM 6.5, see [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ### Version History {#version-history}
 
@@ -162,7 +162,7 @@ For more information, visit [How to Work With Packages](/help/sites-administerin
 
 In AEM Communities, a common store is used to store UGC and is often referred to as the [storage resource provider (SRP)](/help/communities/working-with-srp.md). The recommended deployment centers on choosing an SRP option for the common store.
 
-The common store supports moderation of, and analytics on, UGC in the publish environment while eliminating the need for [replication](/help/communities/sync.md) of UGC.
+The common store supports moderation of, and analytics on, UGC in the publishing environment while eliminating the need for [replication](/help/communities/sync.md) of UGC.
 
 * [Community Content Store](/help/communities/working-with-srp.md) : discusses the SRP storage options for AEM Communities
 
@@ -202,7 +202,7 @@ For all other (secondary) publish instances in a publish farm:
 
 Replication is used for site content created in the publish environment, such as community groups, and managing members and member groups from the author environment using the [tunnel service](#tunnel-service-on-author).
 
-For the primary publisher, ensure the [Replication Agent Config](/help/sites-deploying/replication.md) correctly identifies the publish server and authorized user. The default authorized user, `admin,` already has the appropriate permissions (is a member of `Communities Administrators`).
+For the primary publisher, ensure the [Replication Agent Config](/help/sites-deploying/replication.md) correctly identifies the publishment server and authorized user. The default authorized user, `admin,` already has the appropriate permissions (is a member of `Communities Administrators`).
 
 For some other user to have the appropriate permissions, they must be added as a member to the `administrators` user group (also a member of `Communities Administrators`).
 
@@ -356,8 +356,8 @@ In particular, be careful to use the correct server name, not `localhost`, in th
 
 If using a Dispatcher, see:
 
-* AEM's [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) documentation
-* [Installing Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* AEM [Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) documentation
+* [Installing Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configuring Dispatcher for Communities](/help/communities/dispatcher.md)
 * [Known Issues](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

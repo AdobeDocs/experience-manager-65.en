@@ -204,7 +204,7 @@ Therefore, your JavaScript should set `s.usePlugins` to `true` so that any code 
 
 1. Click Next repeatedly until the OK button is enabled, and then click OK.
 
-   The sitecatalyst component contains the automatically-created sitecatalyst.jsp file.
+   The sitecatalyst component contains the automatically created sitecatalyst.jsp file.
 
 1. Right-click the sitecatalyst.jsp file and click Delete.
 

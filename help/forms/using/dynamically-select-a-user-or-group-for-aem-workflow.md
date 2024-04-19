@@ -28,7 +28,7 @@ ECMAScript is a scripting language. It is used for client-side scripting and ser
     * (Path for Assign Task step) `/apps/fd/dashboard/scripts/participantChooser`
     * (Path for Signature step) `/apps/fd/workflow/scripts/adobesign`
 
-1. Add ECMAScript, that has the logic to dynamically selecting a user, to the .ecma file. Click **[!UICONTROL Save All]**.
+1. Add ECMAScript that has the logic to dynamically select a user, to the .ecma file. Click **[!UICONTROL Save All]**.
 
    For sample scripts, see [Sample ECMAScripts for dynamically selecting a user or a group](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group). 
 

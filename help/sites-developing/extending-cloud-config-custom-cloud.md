@@ -12,7 +12,7 @@ role: Developer
 ---
 # Creating a Custom Cloud Service{#creating-a-custom-cloud-service}
 
-The default set of Cloud Services can be extended with custom Cloud Service types. This lets you inject custom markup into the page in a structured fashion. This is primarily of use for third party analytics providers, for example, Google Analytics, Chartbeat, and so on. Cloud Services are inherited from parent pages to child pages with the ability to break the inheritance at any level.
+The default set of Cloud Services can be extended with custom Cloud Service types. This lets you inject custom markup into the page in a structured fashion. This is primarily of use for third-party analytics providers, for example, Google Analytics, Chartbeat, and so on. Cloud Services are inherited from parent pages to child pages with the ability to break the inheritance at any level.
 
 >[!NOTE]
 >

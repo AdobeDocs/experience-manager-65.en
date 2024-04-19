@@ -73,7 +73,7 @@ If validation fails, an exception is thrown and the log file contains details th
 
 **Save the validation results in a log file**
 
-The Assembler service returns the validation results that you can write to a XML log file. The amount of detail that the Assembler service writes to the log file depends on the run-time option that you set.
+The Assembler service returns the validation results that you can write to an XML log file. The amount of detail that the Assembler service writes to the log file depends on the run-time option that you set.
 
 **See also**
 

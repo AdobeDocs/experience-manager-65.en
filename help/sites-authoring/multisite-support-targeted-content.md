@@ -208,7 +208,7 @@ To create an area as a livecopy:
 
 ## Linking sites to an area {#linking-sites-to-an-area}
 
-You can link areas to either pages or to a site. Areas are inherited by all subpages unless those pages are overlayed by a mapping on a subpage. In general, however, you link at the site level.
+You can link areas to either pages or to a site. Areas are inherited by all subpages unless those pages are over layed by a mapping on a subpage. In general, however, you link at the site level.
 
 When you link, only those activities, experiences, and offers from the selected area are available. This prevents accidental mixup of independently managed content. If no other area is configured, the master area of each brand is used.
 

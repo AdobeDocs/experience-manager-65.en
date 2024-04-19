@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 
 Page Tracker is a piece of JavaScript code that you include in third-party websites' code to enable Adobe Analytics to capture usage data around [!DNL Adobe Experience Manager Assets] on these websites.
 
-To capture events, such as clicks, that are specific to assets, you also include the Embed code in third-party websites' code.
+To capture events, such as clicks that are specific to assets, you also include the Embed code in third-party websites' code.
 
 The following sample code displays how a web page that contains both the Page Tracker code and Embed code looks like:
 

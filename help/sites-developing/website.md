@@ -1,6 +1,6 @@
 ---
-title: Create a Fully-Featured Website (JSP)
-description: This tutorial teaches you how to create a fully featured website with Adobe Experience Manager (AEM).
+title: Create a Full-Featured Website (JSP)
+description: This tutorial teaches you how to create a full-featured website with Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 ---
-# Create a Fully-Featured Website (JSP){#create-a-fully-featured-website-jsp}
+# Create a Full-Featured Website (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
 >

@@ -135,7 +135,7 @@ The portlet can be configured with the following preferences:
 
 #### OSGi Web Console {#osgi-web-console}
 
-Assuming the portal server runs on host localhost, port 8080 and the AEM portlet web application is mounted in the web application context *cqportlet*, the url to for the web console is `https://localhost:8080/cqportlet/cqbridge/system/console`. The default user and password is **admin**.
+Assuming the portal server runs on host localhost, port 8080 and the AEM portlet web application is mounted in the web application context *cqportlet*, the URL for the web console is `https://localhost:8080/cqportlet/cqbridge/system/console`. The default user and password is **admin**.
 
 Open the **Configurations** tab and select **Portal Directory CQ Server Configuration**. Here you specify the base URL to the author and the publish instance. This procedure is described in [Configuring the Portlet](#configuring-the-portlet).
 

@@ -8,7 +8,7 @@ role: Admin,Architect,Data Architect,Developer
 ---
 # Accessing and Delivering Content Fragments Headless Quick Start Guide {#accessing-delivering-content-fragments}
 
-Learn how to use AEM's Assets REST API to manage Content Fragments and the GraphQL API for headless delivery of Content Fragment content.
+Learn how to use AEM Assets REST API to manage Content Fragments and the GraphQL API for headless delivery of Content Fragment content.
 
 ## What are GraphQL and Assets REST APIs? {#what-are-the-apis}
 
@@ -22,7 +22,7 @@ The remainder of this guide focuses on GraphQL access and Content Fragment deliv
 
 ## How to Deliver a Content Fragment Using GraphQL {#how-to-deliver-a-content-fragment}
 
-Information architects must design queries for their channel endpoints to deliver content. These queries must only be considered once per endpoint per model. For the purposes of this getting started guide, you must only create one.
+Information architects must design queries for their channel endpoints to deliver content. Only consider these queries once per endpoint, per model. For this getting started guide, only create one.
 
 1. Log into AEM and access the [GraphiQL interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * For example: `http://<host>:<port>/aem/graphiql.html`.
