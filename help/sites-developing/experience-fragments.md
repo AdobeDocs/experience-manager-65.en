@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 ---
-# Experience Fragments{#experience-fragments}
+# Experience Fragments {#experience-fragments}
 
 ## The Basics {#the-basics}
 
