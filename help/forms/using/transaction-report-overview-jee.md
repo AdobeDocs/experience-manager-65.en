@@ -1,10 +1,10 @@
 ---
 title: Transaction Reports Overview for AEM Forms on JEE
-description: Keep a count of all the forms submitted, rendered, documents converted to one format to another, and more
+description: Keep a count of all the forms submitted, rendered, documents converted to one format to another, and more.
 feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 ---
-# Enabling and viewing transaction report for AEM Forms on JEE {#transaction-reports-overview}
+# Enabling and viewing transaction reports for AEM Forms on JEE {#transaction-reports-overview}
 
 <!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -26,7 +26,7 @@ By default the transaction recording is disabled. To enable transaction reportin
     ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1. Restart the server.
-1. Apart from the changes on server, on client side you would need to update the `adobe-livecycle-client.jar` file in your project, if you are using the same.
+1. Apart from the changes on the server, on the client side you must update the `adobe-livecycle-client.jar` file in your project, if you are using the same.
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -70,7 +70,7 @@ For Jboss Cluster:
 ```
 
 Example of a sample transaction record:
-`[2024-02-28 06:11:27] [INFO] TransactionRecord{service=‘GeneratePDFService’, operation=‘HtmlFileToPDF’, internalService=‘GeneratePDFService’, internalOperation=‘HtmlFileToPDF’, transactionOperationType=‘CONVERT’, transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
+`[2024-02-28 06:11:27] [INFO] TransactionRecord{service='GeneratePDFService', operation='HtmlFileToPDF', internalService='GeneratePDFService', internalOperation='HtmlFileToPDF', transactionOperationType='CONVERT', transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
 
 #### Transaction Record {#transaction-record-structure-jee}
 
@@ -92,8 +92,8 @@ TransactionRecord
 
 * **service**: Name of the service.
 * **operation**: Operation name.
-* **internalService**: Name of the callee in case of an internal call, otherwise same as the service name.
-* **internalOperation**: Name of the callee in case of an internal call, otherwise same as the operation name.
+* **internalService**: Name of the callee if there is an internal call, otherwise same as the service name.
+* **internalOperation**: Name of the callee in there is an internal call, otherwise same as the operation name.
 * **transactionOperationType**: Type of transaction (Submit, Render, Convert).
 * **transactionCount**: Total count of transaction.
 * **elapsedTime**: Time between the call initiation and response received.
@@ -121,7 +121,7 @@ TransactionRecord
 
 The frequency of recording transactions is determined by the update operations on the server for each form that is successfully submitted, rendered, or converted.
 
-* In **dashboard** the transaction count is updated periodically, default is set to 1 minute. You can update the frequency by setting the system property at `"com.adobe.idp.dsc.transaction.recordFrequency"`. For example, On AEM Forms for JEE on JBoss®, add `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` to set the update frequency to 5 minutes.
+* In **dashboard**, the transaction count is updated periodically, default is set to 1 minute. You can update the frequency by setting the system property at `"com.adobe.idp.dsc.transaction.recordFrequency"`. For example, On AEM Forms for JEE on JBoss&reg;, add `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` to set the update frequency to 5 minutes.
 
 * In **transaction logs**, the update for each transaction occurs instantly when a form is successfully submitted, rendered, or converted.
 
