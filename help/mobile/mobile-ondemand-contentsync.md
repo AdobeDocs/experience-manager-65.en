@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Mobile with Content Sync{#mobile-with-content-sync}
 

@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
+solution: Experience Manager
+feature: Communities
 ---
 # Badges Console {#badges-console}
 

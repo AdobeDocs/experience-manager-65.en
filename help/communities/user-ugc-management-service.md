@@ -8,6 +8,8 @@ topic-tags: administering
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
+solution: Experience Manager
+feature: Communities
 ---
 # User and UGC Management Service in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 

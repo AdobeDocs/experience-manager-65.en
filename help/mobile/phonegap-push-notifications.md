@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Push Notifications{#push-notifications}
 

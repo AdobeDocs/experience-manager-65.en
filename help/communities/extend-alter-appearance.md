@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Alter the Appearance (HBS) {#alter-the-appearance-hbs}
 

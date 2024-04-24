@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 385f7924-e8ab-4dcb-83f0-7b81bead3dda
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Access Device Features{#access-device-features}
 

@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 pagetitle: Liking Essentials
 exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Liking Essentials {#liking-essentials}
 

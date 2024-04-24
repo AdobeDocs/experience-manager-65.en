@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Previewing with Preflight {#previewing-with-preflight}
 

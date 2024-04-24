@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8049d797-e758-44c2-a89b-51d2b2fca8dc
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # OSGi Events for Communities Components  {#osgi-events-for-communities-components}
 

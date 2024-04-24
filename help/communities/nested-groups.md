@@ -7,6 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Authoring Nested Groups{#authoring-nested-groups}
 

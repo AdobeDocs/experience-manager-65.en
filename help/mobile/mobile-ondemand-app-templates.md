@@ -5,6 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Creating and Adding Templates and Components {#creating-and-adding-templates-and-components}
 

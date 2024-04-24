@@ -9,6 +9,8 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
+solution: Experience Manager
+feature: Communities
 ---
 # Community Groups Console {#community-groups-console}
 

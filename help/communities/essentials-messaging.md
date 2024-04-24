@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Messaging Essentials {#messaging-essentials}
 

@@ -7,6 +7,9 @@ topic-tags: administering
 content-type: reference
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # AEM Communities Overview {#aem-communities-overview}
 

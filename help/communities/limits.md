@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: d00a8eb2-47ce-425a-a312-f043f82912be
+solution: Experience Manager
+feature: Communities
 ---
 # Member Contribution Limits {#member-contribution-limits}
 

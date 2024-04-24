@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Alter the Appearance {#alter-the-appearance}
 

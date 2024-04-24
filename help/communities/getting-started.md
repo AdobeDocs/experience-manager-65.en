@@ -7,6 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 14ecaef7-d9fc-45ea-8feb-16ad8946508e
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Getting Started with AEM Communities {#getting-started-with-aem-communities}
 

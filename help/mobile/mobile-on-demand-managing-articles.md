@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Managing Articles{#managing-articles}
 

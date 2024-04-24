@@ -2,6 +2,9 @@
 title: Hotfixes for AEM Forms 
 description: Provides information on how to download and install a hotfix for AEM Forms. 
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
 ---
 # Adobe Experience Manager Forms Hotfixes{#aem-form-hotfix}
 

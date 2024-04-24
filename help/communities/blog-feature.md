@@ -7,6 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Blog Feature {#blog-feature}
 

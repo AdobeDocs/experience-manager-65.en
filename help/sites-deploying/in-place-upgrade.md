@@ -5,6 +5,7 @@ topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Performing an In-Place Upgrade{#performing-an-in-place-upgrade}
 

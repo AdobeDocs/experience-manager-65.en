@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
 solution: Experience Manager, Experience Manager Sites
+feature: Upgrading
+role: Admin
 ---
 # Common Repository Restructuring in AEM 6.5 {#common-repository-restructuring-in-aem}
 

@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
+solution: Experience Manager
+feature: Communities
 ---
 # Community Functions{#community-functions}
 

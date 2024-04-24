@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 76b76e0e-531b-4f80-be70-68532ef81a7f
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Featured Content Feature {#featured-content-feature}
 

@@ -11,6 +11,8 @@ topic-tags: deploying
 
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
+feature: Deploying
+role: Admin
 ---
 # Troubleshooting installation issues with AEM{#troubleshooting}
 

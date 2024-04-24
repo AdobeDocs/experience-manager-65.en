@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
+solution: Experience Manager
+feature: Communities
 ---
 # Group Templates {#group-templates}
 

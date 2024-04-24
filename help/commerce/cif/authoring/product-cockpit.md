@@ -3,6 +3,8 @@ title: Product Cockpit
 description: Working with Product Cockpit which provides a unified overview of linked product catalogs and associated content.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 solution: Experience Manager,Commerce
+feature: Commerce Integration Framework
+role: Admin, Developer
 ---
 # Product Cockpit {#product-cockpit}
 

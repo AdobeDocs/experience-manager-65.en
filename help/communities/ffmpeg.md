@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
+solution: Experience Manager
+feature: Communities
 ---
 # FFmpeg for Communities {#ffmpeg-for-communities}
 

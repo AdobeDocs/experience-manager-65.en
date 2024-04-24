@@ -7,6 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Activity Streams Feature {#activity-streams-feature}
 

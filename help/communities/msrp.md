@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
+solution: Experience Manager
+feature: Communities
 ---
 # MSRP - MongoDB Storage Resource Provider {#msrp-mongodb-storage-resource-provider}
 

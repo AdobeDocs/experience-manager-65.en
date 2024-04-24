@@ -8,6 +8,9 @@ topic-tags: introduction
 content-type: reference
 
 exl-id: a2bc9a50-6455-4703-8829-964fab313e96
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Getting Started with Adobe Experience Manager Mobile{#getting-started-with-aem-mobile}
 

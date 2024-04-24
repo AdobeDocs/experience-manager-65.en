@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
+solution: Experience Manager
+feature: Communities
 ---
 # SRP - Community Content Storage {#srp-community-content-storage}
 

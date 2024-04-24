@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 
 exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Cloud Configuration{#cloud-configuration}
 

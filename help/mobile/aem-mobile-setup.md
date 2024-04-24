@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # AEM Mobile SetUp{#aem-mobile-setup}
 

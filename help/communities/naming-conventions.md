@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 863900c3-5fe8-41a3-a151-466d0c62eeea
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Naming Conventions {#naming-conventions}
 

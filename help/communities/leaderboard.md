@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: fd1b1749-13f9-4079-ae39-348676105852
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Leaderboard Essentials {#leaderboard-essentials}
 

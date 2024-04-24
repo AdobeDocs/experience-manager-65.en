@@ -7,6 +7,7 @@ topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Dynamic Media repository restructuring in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 

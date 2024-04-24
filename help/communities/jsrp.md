@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
+solution: Experience Manager
+feature: Communities
 ---
 # JSRP - JCR Storage Resource Provider {#jsrp-jcr-storage-resource-provider}
 

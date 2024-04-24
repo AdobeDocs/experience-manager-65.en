@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 226fa91c-4a12-4586-b694-1a52fa2ba358
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Using Liking {#using-liking}
 

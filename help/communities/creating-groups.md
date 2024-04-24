@@ -7,6 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Community Groups {#community-groups}
 

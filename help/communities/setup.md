@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Initial Setup {#initial-setup}
 

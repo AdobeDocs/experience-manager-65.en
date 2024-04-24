@@ -7,6 +7,9 @@ content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: yes
 hidefromtoc: yes
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
 ---
 # AEM Forms JEE Patch Installer {#aem-forms-jee-patch-installer}
 

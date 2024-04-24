@@ -5,6 +5,9 @@ contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Spaces and Entities{#spaces-and-entities}
 

@@ -9,6 +9,7 @@ docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Resource Mapping{#resource-mapping}
 

@@ -7,6 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Deploying Communities {#deploying-communities}
 
