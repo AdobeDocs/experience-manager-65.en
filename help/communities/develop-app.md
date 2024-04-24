@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Develop Sandbox Application  {#develop-sandbox-application}
 

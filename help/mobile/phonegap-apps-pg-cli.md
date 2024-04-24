@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Developing Apps with PhoneGap CLI{#developing-apps-with-phonegap-cli}
 

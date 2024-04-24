@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Configuring Dispatcher for Communities {#configuring-dispatcher-for-communities}
 

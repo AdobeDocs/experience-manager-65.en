@@ -7,6 +7,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 
 exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # PhoneGap{#phonegap}
 

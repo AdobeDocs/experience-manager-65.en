@@ -4,8 +4,9 @@ description: A cumulative list of key features and enhancements made in Adobe Ex
 content-type: reference
 docset: aem65
 feature: Release Information
-role: User, Admin
+role: "User,Admin,Architect,Developer"
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
+solution: Experience Manager
 ---
 # Cumulative key features and enhancements
 

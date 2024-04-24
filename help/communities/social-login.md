@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
+solution: Experience Manager
+feature: Communities
 ---
 # Social Login with Facebook and Twitter {#social-login-with-facebook-and-twitter}
 

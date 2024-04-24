@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Configure Your Users and User Groups {#configure-your-users-and-user-groups}
 

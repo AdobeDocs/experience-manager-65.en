@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 
 exl-id: 5295f383-3b46-4456-9177-65de68e39a85
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Creating Article Export Configuration{#creating-article-export-configuration}
 

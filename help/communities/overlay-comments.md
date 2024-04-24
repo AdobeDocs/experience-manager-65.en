@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Overlay Communities components {#overlay-communities-components}
 

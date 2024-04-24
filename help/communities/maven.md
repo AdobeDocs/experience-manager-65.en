@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Using Maven for Communities {#using-maven-for-communities}
 

@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
+solution: Experience Manager
+feature: Communities
 ---
 # Advanced Scoring and Badges{#advanced-scoring-and-badges}
 

@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Starting AEM PhoneGap {#starting-aem-phonegap}
 

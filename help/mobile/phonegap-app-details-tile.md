@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Manage App Tile{#manage-app-tile}
 

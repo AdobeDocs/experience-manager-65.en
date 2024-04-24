@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # AEM Mobile content personalization{#aem-mobile-content-personalization}
 

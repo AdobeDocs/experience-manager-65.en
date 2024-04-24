@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Ideation Essentials {#ideation-essentials}
 

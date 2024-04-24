@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 1157366f-2cc5-46e4-8ec6-e66fe5d0a0f6
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Accessing UGC with SRP {#accessing-ugc-with-srp}
 

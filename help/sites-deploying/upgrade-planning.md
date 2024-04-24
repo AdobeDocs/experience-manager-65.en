@@ -9,6 +9,7 @@ docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Planning Your Upgrade{#planning-your-upgrade}
 

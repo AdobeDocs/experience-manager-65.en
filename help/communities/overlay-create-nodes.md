@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Create Nodes {#create-nodes}
 

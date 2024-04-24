@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: 2f02f541-92db-469b-bf23-ec64d2e282ff
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Setting Your Referrer Filter to Allow Empty{#setting-your-referrer-filter-to-allow-empty}
 

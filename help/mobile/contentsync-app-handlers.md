@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Out of the Box App Handlers{#out-of-the-box-app-handlers}
 

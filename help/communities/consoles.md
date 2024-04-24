@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
+solution: Experience Manager
+feature: Communities
 ---
 # Communities Consoles {#communities-consoles}
 

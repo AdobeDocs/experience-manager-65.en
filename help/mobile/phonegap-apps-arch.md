@@ -5,6 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # The Anatomy of an App{#the-anatomy-of-an-app}
 

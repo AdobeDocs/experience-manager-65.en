@@ -4,6 +4,8 @@ description: Enterprise businesses may require additional third-party commerce s
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
 solution: Experience Manager,Commerce
+feature: Commerce Integration Framework
+role: "Admin, Developer"
 ---
 # AEM and Third-Party Commerce Integration using Commerce Integration Framework {#aem-third-party}
 

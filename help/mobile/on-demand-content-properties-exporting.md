@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 
 exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
+solution: Experience Manager
+feature: Mobile
+role: Developer
 ---
 # Using Content Properties to Export Content{#using-content-properties-to-export-content}
 

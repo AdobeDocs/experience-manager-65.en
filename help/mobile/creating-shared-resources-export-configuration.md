@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 576b4567-c7b6-4196-84e7-47e980637540
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Creating Shared Resources Export Configuration{#creating-shared-resources-export-configuration}
 

@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
+solution: Experience Manager
+feature: Communities
 ---
 # Solr Configuration for SRP {#solr-configuration-for-srp}
 

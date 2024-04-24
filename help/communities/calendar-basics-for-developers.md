@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Calendar Essentials {#calendar-essentials}
 

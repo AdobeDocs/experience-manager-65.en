@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Structure an App{#structure-an-app}
 

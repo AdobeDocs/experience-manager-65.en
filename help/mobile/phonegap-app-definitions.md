@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 
 exl-id: 4c1c44fd-e685-462c-83a0-3cd2f74ab5c7
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # App definitions{#app-definitions}
 

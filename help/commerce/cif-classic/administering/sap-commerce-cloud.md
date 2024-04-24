@@ -6,6 +6,8 @@ topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
 solution: Experience Manager,Commerce
+feature: Commerce Integration Framework
+role: "Admin, Developer"
 ---
 # SAP Commerce Cloud{#sap-commerce-cloud}
 

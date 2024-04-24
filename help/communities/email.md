@@ -8,6 +8,8 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
+solution: Experience Manager
+feature: Communities
 ---
 # Configuring Email {#configuring-email}
 

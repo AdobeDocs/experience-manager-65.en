@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 960e132c-b370-43d1-bd8f-e7d0ded7c0b3
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Component Sideloading {#component-sideloading}
 

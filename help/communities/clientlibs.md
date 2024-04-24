@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Clientlibs for Communities Components {#clientlibs-for-communities-components}
 

@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
+solution: Experience Manager
+feature: Communities
 ---
 # Storage Configuration {#storage-configuration}
 

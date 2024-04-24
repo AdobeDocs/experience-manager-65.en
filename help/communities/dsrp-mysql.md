@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
+solution: Experience Manager
+feature: Communities
 ---
 # MySQL Configuration for DSRP {#mysql-configuration-for-dsrp}
 

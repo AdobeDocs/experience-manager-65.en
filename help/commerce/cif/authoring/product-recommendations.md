@@ -11,6 +11,7 @@ kt: 9649
 thumbnail: 340130.jpg
 exl-id: 50f437ae-10de-48f9-8abf-a1b37f7fda62
 solution: Experience Manager,Commerce
+role: "Admin, Developer"
 ---
 # Product Recommendations
 

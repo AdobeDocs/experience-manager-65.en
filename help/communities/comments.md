@@ -7,6 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Using Comments {#using-comments}
 

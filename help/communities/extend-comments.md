@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: e57198cb-8fd9-43e2-b416-e40e462561c8
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Extend Comments Component  {#extend-comments-component}
 

@@ -7,6 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Upgrading to AEM 6.5 Communities {#upgrading-to-aem-communities}
 

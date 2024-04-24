@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Mobile with Content Sync{#mobile-with-content-sync}
 

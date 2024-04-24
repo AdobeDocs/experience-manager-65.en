@@ -3,6 +3,8 @@ title: Adobe Experience Manager Content and Commerce Release Notes 2021
 description: Adobe Experience Manager Content and Commerce Release Notes 2021.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
+feature: Commerce Integration Framework
+role: "Admin, Developer"
 ---
 # Commerce Integration Framework GitHub Release Overview
 

@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # AEM Mobile Application Dashboard {#aem-mobile-application-dashboard}
 

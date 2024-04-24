@@ -5,6 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Content Delivery{#content-delivery}
 

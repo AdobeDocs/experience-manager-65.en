@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 
 exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Content Properties and Nodes {#content-properties-and-nodes}
 

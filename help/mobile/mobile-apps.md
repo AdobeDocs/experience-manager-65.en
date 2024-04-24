@@ -9,6 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 
 exl-id: 0a98881d-08f3-47e7-bae1-5500d1fe6514
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Mobile-Apps{#mobile-apps}
 

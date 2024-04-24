@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Scoring and Badges Essentials {#scoring-and-badges-essentials}
 

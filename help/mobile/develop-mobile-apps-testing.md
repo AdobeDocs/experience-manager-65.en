@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Testing Mobile Apps{#testing-mobile-apps}
 

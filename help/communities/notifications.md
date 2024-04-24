@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
+solution: Experience Manager
+feature: Communities
 ---
 # Communities Notifications {#communities-notifications}
 

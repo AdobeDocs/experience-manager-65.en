@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
+solution: Experience Manager
+feature: Communities
 ---
 # Moderating Community Content {#moderating-community-content}
 
