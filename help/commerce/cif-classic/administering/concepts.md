@@ -5,7 +5,7 @@ contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # Concepts{#concepts}
 

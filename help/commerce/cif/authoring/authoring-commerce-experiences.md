@@ -4,7 +4,7 @@ description: The CIF add-on extends Adobe Experience Manager authoring with comm
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # Authoring Commerce Experiences {#authoring-commerce-experiences}
 

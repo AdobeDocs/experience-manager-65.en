@@ -4,7 +4,7 @@ description: AEM generic eCommerce is available as part of the standard installa
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 solution: Experience Manager,Commerce
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # eCommerce Overview{#ecommerce-overview}
 

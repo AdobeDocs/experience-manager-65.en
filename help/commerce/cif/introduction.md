@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 
 # Content and Commerce {#content-commerce}

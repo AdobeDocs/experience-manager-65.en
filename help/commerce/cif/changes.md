@@ -4,7 +4,7 @@ description: Notable changes of the Commerce Integration Framework  (CIF) add-on
 exl-id: 41dee21a-9ae2-4067-a32a-2d4633323fc4
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # Notable Changes to the Commerce Integration Framework (CIF) add-on{#notable-changes}
 

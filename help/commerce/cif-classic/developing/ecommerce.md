@@ -4,7 +4,7 @@ description: The integration framework allows you to pull product data into AEM 
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # eCommerce{#ecommerce}
 

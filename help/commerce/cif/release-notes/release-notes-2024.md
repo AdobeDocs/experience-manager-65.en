@@ -4,7 +4,7 @@ description: Adobe Experience Manager Content and Commerce Release Notes 2024.
 exl-id: 372e6a46-72bb-4db4-ad01-534ca723ae58
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # Commerce Integration Framework GitHub Release Overview
 

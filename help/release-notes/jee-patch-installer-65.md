@@ -9,7 +9,7 @@ hide: yes
 hidefromtoc: yes
 solution: Experience Manager
 feature: Release Information
-role: "User,Admin,Architect,Developer"
+role: User,Admin,Architect,Developer
 ---
 # AEM Forms JEE Patch Installer {#aem-forms-jee-patch-installer}
 

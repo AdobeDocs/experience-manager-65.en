@@ -8,7 +8,7 @@ topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # Developing with SAP Commerce Cloud {#developing-with-sap-commerce-cloud}
 

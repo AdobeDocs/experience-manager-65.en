@@ -8,7 +8,7 @@ audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
 solution: Experience Manager,Commerce
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # Commerce Multi-Store Setup {#multi-store}
 
