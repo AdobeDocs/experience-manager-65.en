@@ -498,7 +498,7 @@ Manager on the top left > Tools > Security >Adobe IMS Configuration.
 
 Make sure you have the ability to create an integration within your Adobe domain if you do not contact your system administrator to do so.
 
-1. Navigate to the [Adobe I/O Console](https://developer.adobe.com/console/).
+1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/console/).
 
 1. Click Create Integration.
 

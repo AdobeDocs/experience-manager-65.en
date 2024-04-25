@@ -199,7 +199,7 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which is required in setting up the IMS Account configurations.
 
-1. Login to Adobe I/O Console with system administrator privileges on the IMS organization of the Brand Portal tenant.
+1. Login to Adobe Developer Console with system administrator privileges on the IMS organization of the Brand Portal tenant.
 
    Default URL: [https://console.adobe.io/](https://console.adobe.io/) 
 
