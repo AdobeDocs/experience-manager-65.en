@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Blog Essentials {#blog-essentials}
 

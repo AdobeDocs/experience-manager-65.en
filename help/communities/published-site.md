@@ -7,6 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Experience the Published Site {#experience-the-published-site}
 

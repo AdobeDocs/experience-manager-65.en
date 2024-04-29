@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Activity Stream Essentials {#activity-stream-essentials}
 

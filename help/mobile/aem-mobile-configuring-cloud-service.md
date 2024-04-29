@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: d370d772-ef4d-4f38-826c-e90d07735822
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Configuring Adobe Target Cloud Service {#configuring-adobe-target-cloud-service}
 

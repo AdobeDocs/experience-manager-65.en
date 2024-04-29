@@ -2,6 +2,9 @@
 title: Deprecated and Removed Features in Adobe Experience Manager 6.5 release.
 description: Release notes specific to deprecated and removed features in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
 ---
 # Deprecated and removed features {#deprecated-and-removed-features}
 

@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Social Graph Essentials  {#social-graph-essentials}
 

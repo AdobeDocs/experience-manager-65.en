@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Using Social Tag Cloud {#using-social-tag-cloud}
 

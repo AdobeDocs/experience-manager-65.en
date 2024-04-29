@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 
 exl-id: a7cfe77b-c073-4bed-b81a-503fb4445c96
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Mobile Quickstart {#mobile-quickstart}
 

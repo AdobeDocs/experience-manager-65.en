@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # AEM Mobile On-Demand{#aem-mobile-on-demand}
 

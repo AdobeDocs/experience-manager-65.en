@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Configure Your Users and User Groups {#configure-your-users-and-user-groups}
 

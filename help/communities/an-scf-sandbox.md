@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Create An SCF Sandbox  {#create-an-scf-sandbox}
 

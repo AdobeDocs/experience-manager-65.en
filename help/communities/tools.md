@@ -8,6 +8,8 @@ content-type: reference
 pagetitle: Communities Tools
 role: Admin
 exl-id: ba6c4ad3-c393-42d8-9f1f-d59947c3e7ab
+solution: Experience Manager
+feature: Communities
 ---
 # Communities Tools {#communities-tools}
 

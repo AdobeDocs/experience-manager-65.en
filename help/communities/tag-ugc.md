@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
+solution: Experience Manager
+feature: Communities
 ---
 # Tagging User Generated Content {#tagging-user-generated-content}
 

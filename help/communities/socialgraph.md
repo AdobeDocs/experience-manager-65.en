@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 2cd1436b-3727-4757-b28e-70756be78a4e
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Using Social Graph {#using-social-graph}
 

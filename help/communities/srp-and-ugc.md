@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8279684f-23dd-4234-bf01-fd2ce74bcb4e
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # SRP and UGC Essentials {#srp-and-ugc-essentials}
 

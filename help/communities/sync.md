@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
+solution: Experience Manager
+feature: Communities
 ---
 # Communities User Synchronization {#communities-user-synchronization}
 

@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Page Templates for Mobile Apps {#page-templates-for-mobile-apps}
 

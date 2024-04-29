@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 exl-id: ffd2d029-b81a-4768-8e58-66aa5cf3772d
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Mobile Apps{#mobile-apps}
 

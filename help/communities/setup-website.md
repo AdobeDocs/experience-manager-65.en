@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Setup Website Structure {#setup-website-structure}
 

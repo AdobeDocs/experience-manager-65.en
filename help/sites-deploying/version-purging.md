@@ -9,6 +9,7 @@ docset: aem65
 feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Version Purging{#version-purging}
 

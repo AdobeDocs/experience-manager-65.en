@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
+solution: Experience Manager
+feature: Communities
 ---
 # In-Context Moderation {#in-context-moderation}
 

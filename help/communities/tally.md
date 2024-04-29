@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 0b508df9-1a24-4728-a254-f913eeb9b391
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Tally Essentials {#tally-essentials}
 

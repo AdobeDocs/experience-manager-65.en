@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # App Templates and Components{#app-templates-and-components}
 

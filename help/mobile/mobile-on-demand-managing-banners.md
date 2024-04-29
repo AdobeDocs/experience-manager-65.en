@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Managing Banners{#managing-banners}
 

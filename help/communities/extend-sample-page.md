@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Add Comment to Sample Page  {#add-comment-to-sample-page}
 

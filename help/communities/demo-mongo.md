@@ -8,6 +8,8 @@ content-type: reference
 
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
+solution: Experience Manager
+feature: Communities
 ---
 # How to set up MongoDB for Demo {#how-to-setup-mongodb-for-demo}
 

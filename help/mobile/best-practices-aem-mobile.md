@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # Best Practices {#best-practices}
 

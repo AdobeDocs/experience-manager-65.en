@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
+solution: Experience Manager
+feature: Communities
 ---
 # Analytics Configuration for Communities Features {#analytics-configuration-for-communities-features}
 

@@ -7,6 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Activity Trends {#activity-trends}
 

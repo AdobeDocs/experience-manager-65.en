@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
+solution: Experience Manager
+feature: Communities
 ---
 # ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
 

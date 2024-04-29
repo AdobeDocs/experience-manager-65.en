@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
+solution: Experience Manager
+feature: Communities
 ---
 # Managing Users and User Groups {#managing-users-and-user-groups}
 

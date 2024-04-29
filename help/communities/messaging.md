@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
+solution: Experience Manager
+feature: Communities
 ---
 # Configure Messaging {#configure-messaging}
 

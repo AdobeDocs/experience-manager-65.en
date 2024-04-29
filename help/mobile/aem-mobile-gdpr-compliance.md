@@ -4,6 +4,9 @@ description: Learn about how Adobe Experience Manager is ready to assist you wit
 
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # AEM Mobile - GDPR Readiness {#aem-mobile-gdpr-readiness}
 

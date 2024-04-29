@@ -12,6 +12,7 @@ topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
+role: Admin
 ---
 # Performance Guidelines{#performance-guidelines}
 

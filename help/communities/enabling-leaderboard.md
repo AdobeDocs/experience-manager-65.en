@@ -7,6 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Leaderboard Feature {#leaderboard-feature}
 

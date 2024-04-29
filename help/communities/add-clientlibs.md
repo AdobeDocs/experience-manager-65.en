@@ -7,6 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Add Clientlibs {#add-clientlibs}
 

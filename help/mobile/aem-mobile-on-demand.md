@@ -7,6 +7,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 
 exl-id: a2134afd-4c0e-4a93-ac58-013b98fd9a09
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # AEM Mobile On-Demand {#aem-mobile-on-demand}
 

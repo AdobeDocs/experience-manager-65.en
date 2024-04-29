@@ -9,6 +9,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 
 pagetitle: Is your hybrid app ready for AEM Mobile?
 exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Is your hybrid app ready for Adobe Experience Manager Mobile?{#is-your-hybrid-app-ready-for-aem-mobile}
 

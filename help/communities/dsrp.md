@@ -7,6 +7,8 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
+solution: Experience Manager
+feature: Communities
 ---
 # DSRP - Relational Database Storage Resource Provider {#dsrp-relational-database-storage-resource-provider}
 

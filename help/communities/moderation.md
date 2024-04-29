@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
+solution: Experience Manager
+feature: Communities
 ---
 # Moderation Console {#moderation-console}
 

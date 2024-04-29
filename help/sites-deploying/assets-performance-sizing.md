@@ -7,6 +7,8 @@ content-type: reference
 topic-tags: configuring
 exl-id: fbe15e1b-830b-4752-bd02-0d239a90bc68
 solution: Experience Manager, Experience Manager Sites
+feature: Configuring
+role: Admin
 ---
 # Assets Performance Guide{#assets-performance-guide}
 

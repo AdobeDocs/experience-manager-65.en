@@ -7,6 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Messaging Feature {#messaging-feature}
 

@@ -6,6 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Developing Mobile Applications in AEM {#developing-mobile-applications-in-aem}
 

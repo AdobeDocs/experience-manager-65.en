@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Create a Sample Page {#create-a-sample-page}
 

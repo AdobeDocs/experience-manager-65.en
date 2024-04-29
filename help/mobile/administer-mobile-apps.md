@@ -8,6 +8,9 @@ topic-tags: introduction
 content-type: reference
 
 exl-id: dc7ba6ad-9df9-4312-a82f-5f3405dea684
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Mobile Apps{#mobile-apps}
 

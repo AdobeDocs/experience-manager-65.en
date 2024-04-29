@@ -10,6 +10,7 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
 solution: Experience Manager,Commerce
+role: Admin, Developer
 ---
 # Advanced URL Configurations {#url}
 

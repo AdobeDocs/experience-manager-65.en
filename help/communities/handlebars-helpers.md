@@ -4,6 +4,9 @@ description: Handlebars Helper methods to facilitate work with SCF
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # SCF Handlebars Helpers {#scf-handlebars-helpers}
 

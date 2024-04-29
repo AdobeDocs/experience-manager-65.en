@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
+solution: Experience Manager
+feature: Communities
+role: Developer
 ---
 # Voting Essentials {#voting-essentials}
 

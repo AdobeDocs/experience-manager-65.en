@@ -5,6 +5,9 @@ contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # PhoneGap{#phonegap}
 

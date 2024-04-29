@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # SocialUtils Refactoring {#socialutils-refactoring}
 

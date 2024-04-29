@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Client-side Customization  {#client-side-customization}
 

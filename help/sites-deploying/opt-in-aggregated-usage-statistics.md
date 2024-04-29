@@ -8,6 +8,8 @@ topic-tags: deploying
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
 solution: Experience Manager, Experience Manager Sites
+feature: Deploying
+role: Admin
 ---
 # Opting Into Aggregated Usage Statistics Collection{#opting-into-aggregated-usage-statistics-collection}
 

@@ -6,6 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: b6658330-d862-44e3-aac0-824fb91cd087
+solution: Experience Manager
+feature: Communities
+role: Admin
 ---
 # Recommended Topologies for Communities {#recommended-topologies-for-communities}
 

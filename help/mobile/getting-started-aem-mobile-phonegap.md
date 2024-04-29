@@ -10,6 +10,9 @@ topic-tags: introduction
 content-type: reference
 
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
+solution: Experience Manager
+feature: Mobile
+role: User
 ---
 # AEM Adobe PhoneGap{#aem-adobe-phonegap}
 

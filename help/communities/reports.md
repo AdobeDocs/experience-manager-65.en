@@ -8,6 +8,8 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
+solution: Experience Manager
+feature: Communities
 ---
 # Reports Console {#reports-console}
 

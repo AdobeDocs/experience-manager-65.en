@@ -8,6 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
+solution: Experience Manager
+feature: Mobile
+role: Admin
 ---
 # Building Mobile Applications{#building-mobile-applications}
 
