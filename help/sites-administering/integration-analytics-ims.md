@@ -5,6 +5,9 @@ exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 
 # Integration with Adobe Analytics using IMS {#integration-with-adobe-analytics-using-ims}
