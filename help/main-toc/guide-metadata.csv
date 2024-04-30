@@ -742,198 +742,198 @@ filename,title,solution,feature,role
 ./help/forms/using/creating-form-portal-page.md,Creating a forms portal page,"Experience Manager, Experience Manager Forms",Forms Portal,"User, Developer"
 ./help/forms/using/report-submitted-data-forms.md,APIs to work with submitted forms on forms portal,"Experience Manager, Experience Manager Forms",Forms Portal,"User, Developer"
 ./help/forms/using/adding-custom-storage-provider-forms.md,Custom storage for drafts and submissions component,"Experience Manager, Experience Manager Forms",Forms Portal,"User, Developer"
-./help/forms/using/overview-aem-document-services.md,Overview of AEM Document Services,"Experience Manager, Experience Manager Forms",Document Services,
-./help/forms/using/forms-service.md,Forms Service,"Experience Manager, Experience Manager Forms",Document Services,
-./help/forms/using/output-service.md,Output Service,"Experience Manager, Experience Manager Forms",Document Services,
-./help/forms/using/using-convertpdf-service.md,ConvertPDF Service,"Experience Manager, Experience Manager Forms",Document Services,
-./help/forms/using/using-barcoded-forms-service.md,Barcoded Forms Service,"Experience Manager, Experience Manager Forms",Document Services,
-./help/forms/using/assembler-service.md,Using Assembler Service,"Experience Manager, Experience Manager Forms",Document Services,
-./help/forms/using/hsm-certify-esign-docs.md,Use HSM to digitally sign or certify documents,"Experience Manager, Experience Manager Forms",Document Services,
-./help/forms/using/aem-document-services-programmatically.md,Using AEM Document Services Programmatically,"Experience Manager, Experience Manager Forms",Document Services,
-./help/forms/using/using-sendtoprinter-api.md,Using the sendToPrinter API,"Experience Manager, Experience Manager Forms",Document Services,
-./help/forms/using/document-security-offerings.md,Document security offerings,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/enable-search-for-drm-protected-pdf-documents-in-aem.md,Enable AEM to search document security protected PDF documents,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/reader-extending-policy-protected-pdf-documents-using-ppl.md,Reader extending policy-protected PDF documents using Portable Protection Library,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md,Enable AEM to search document security protected PDF and Microsoft Office documents,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/protect-document-on-behalf-of-another-user.md,Protect a document on behalf of another user,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/forms-designer-help.md,Forms Designer help,"Experience Manager, Experience Manager Forms",Forms Designer,
-./help/forms/using/scribble-signature.md,Using Scribble Signature in HTML5 forms,"Experience Manager, Experience Manager Forms",Forms Designer,
-./help/forms/using/changing-page-zero-content-designer.md,Changing Page Zero content in Designer,"Experience Manager, Experience Manager Forms","Adaptive Forms, Forms Designer",
-./help/forms/using/introduction-widgets.md,Appearance framework for adaptive and HTML5 forms,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/custom-adaptive-forms-templates.md,Creating a custom adaptive form template,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/custom-layout-components-forms.md,Creating custom layout components for adaptive forms,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/add-custom-action-form-lister.md,Adding custom action on form lister items,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/customize-layout-positioning-error-messages-adaptive-form.md,Customize layout and positioning of error messages of an adaptive form,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/creating-custom-toolbar-action.md,Creating a custom toolbar action,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/customizing-form-event-tracking.md,Customizing form event tracking,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/custom-appearance-widget-adaptive-form.md,Create custom appearances for adaptive form fields,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/custom-draft-submission-data-services.md,Customizing Draft and Submission data services,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/dynamically-populate-dropdowns.md,Dynamically populating drop-down lists,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/custom-submit-action-form.md,Writing custom Submit action for adaptive forms,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/creating-custom-toolbar-layout.md,Creating custom toolbar layout,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/displaying-components-based-on-template.md,Displaying components based on the template used,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/creating-custom-adaptive-form-themes.md,Creating custom adaptive form themes,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/transaction-reports-overview-jee-osgi.md,Transaction Reports Overview AEM Forms.,,Transaction Reports,
-./help/forms/using/transaction-reports-overview.md,Transaction Reports Overview,"Experience Manager, Experience Manager Forms",Transaction Reports,
-./help/forms/using/viewing-and-understanding-transaction-reports.md,Viewing and Understanding Transaction Reports,"Experience Manager, Experience Manager Forms",Transaction Reports,
-./help/forms/using/transaction-reports-billable-apis.md,Transaction Reports Billable APIs,"Experience Manager, Experience Manager Forms",Transaction Reports,
-./help/forms/using/record-transaction-custom-implementation.md,Record a transaction for custom implementations,"Experience Manager, Experience Manager Forms",Transaction Reports,
-./help/forms/using/transaction-report-overview-jee.md,Transaction Reports Overview for AEM Forms on JEE,,Transaction Reports,
-./help/forms/using/transaction-reports-billable-apis-jee.md,Transaction Reports Billable APIs for AEM Forms on JEE.,,Transaction Reports,
-./help/forms/using/record-transaction-custom-component-jee.md,Record a transaction for custom component API for AEM Forms on JEE.,,Transaction Reports,
-./help/forms/using/admin-help/configure-general-aem-forms-settings.md,General AEM Forms settings,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/update-license-type-deployment.md,Update the license type for the deployment,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/adding-domains.md,Adding domains,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/delete-domain.md,Delete a domain,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configure-account-locking-settings.md,Configure account-locking settings,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/editing-converting-existing-domains.md,Editing and converting existing domains,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-authentication-providers.md,Configuring authentication providers,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/synchronizing-directories.md,Synchronizing directories,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-directories.md,Configuring directories,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/change-order-evaluation-authentication.md,Change the order of evaluation for authentication,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configure-ldap-bind-password.md,Configure the LDAP bind password,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md,Configure AEM forms to prefetchdomain information,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-certificate-based-authentication.md,Configuring certificate-based authentication,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configure-saml-service-provider-settings.md,Configure SAML service provider settings,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/enabling-single-sign-on-aem.md,Enabling single sign-on in AEM forms,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configure-user-management-ssl-enabled.md,Configure User Management for an SSL-enabled LDAP server,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/importing-exporting-configuration-file.md,Importing and exporting the configuration file,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configure-advanced-system-attributes.md,Configure advanced system attributes,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/preventing-csrf-attacks.md,Preventing CSRF attacks,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/adding-configuring-users.md,Adding and configuring users ,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/just-in-time-user-provisioning.md,Just-in-time user provisioning,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/creating-configuring-groups.md,Creating and configuring groups,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/search-user-or-group.md,Search for a user or group,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/creating-configuring-roles.md,Creating and configuring roles,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-connector-emc-documentum.md,Configuring Connector for EMC Documentum,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-connector-ibm-filenet.md,Configuring Connector for IBM FileNet,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-connector-ibm-content-manager.md,Configuring Connector for IBM&reg; Content Manager,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md,Configuring Connector for Microsoft SharePoint,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/adding-removing-user-name-password.md,Adding and removing user name and password credentials,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/certificate-revocation-lists.md,Managing certificate revocation lists,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/overview-2.md,Basics of managing certificates and credentials,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/certificates.md,Managing certificates,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/hsm-credentials.md,Managing HSM credentials,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/local-credentials.md,Managing local credentials,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/change-number-items-displayed-applications.md,Change the number of items displayed on the Applications and Services pages,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/import-archives.md,Import and manage archives,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/import-applications.md,Import and manage applications,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configure-service-settings.md,Configure service settings,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/starting-stopping-services.md,Starting and stopping services,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/adding-enabling-modifying-or-removing.md,"Adding, enabling, modifying, or removing endpoints","Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-email-endpoints.md,Configuring email endpoints,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/oauth2-support-for-mail-service.md,Configure OAuth2-based authentication for Microsoft&reg (Forms JEE OAuth); Office 365 mail server protocols,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-remoting-endpoints.md,Configuring Remoting endpoints,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-watched-folder-endpoints.md,Configuring watched folder endpoints,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-task-manager-endpoints.md,Configuring Task Manager endpoints,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/types-endpoints.md,Types of endpoints,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/certificate-types-used-acrobat-reader.md,Certificate types used by Acrobat Reader DC extensions,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md,Recognizing valid and expired certificates in PDF documents,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md,Configuring Acrobat Reader DC Extensions for data capture,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/review-credential-information.md,Review credential use information,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md,Configuring credentials for use with Acrobat Reader DC Extensions,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/review-usage-rights-pdf-file.md,Review the usage rights of a PDF file,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/enabling-online-commenting-reader-web.md,Enabling online commenting for Adobe Reader web browser plug-in,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md,Setting timeout values for use with Acrobat Reader DC Extensions,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/updating-expired-reader-extension-certificates.md,Expiration of Reader Extensions certificates and its impact ,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/overview-5.md,Introduction to working with PDF Generator,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md,Enabling multi-threaded file conversions,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/configuring-pdf-settings.md,Configuring Adobe PDF settings,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/configuring-security-settings.md,Configuring security settings,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/configuring-file-type-settings.md,Configuring file type settings,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md,Importing and exporting PDF Generator configuration files,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/enable-pdf-a-support.md,Enable PDF/A support,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/setting-pdfg-network-printer-windows.md,Setting up a PDFG Network Printer (Windows only),"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/configuring-fallback-fonts.md,Configuring fallback fonts,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md,Modifying the PDF Export conversion settings,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/converting-files-using-pdf-generator.md,Converting files using PDF Generator,"Experience Manager, Experience Manager Forms",PDF Generator,
-./help/forms/using/admin-help/overview-6.md,Overview of configuring SSL,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-ssl-jboss-application-server.md,Configuring SSL for JBoss Application Server,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-ssl-windows-vista.md,Configuring SSL on Windows Vista,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-ssl-websphere-application-server.md,Configuring SSL for WebSphere Application Server,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/document-security.md,What is document security? ,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/high-volume-secure-information-delivery.md,High-volume secure information delivery,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/configuring-client-server-options.md,Configuring client and server options,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/invited-local-user-accounts.md,Managing invited and local user accounts,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/controlling-access-policy-protected-documents.md,Controlling access to policy-protected documents,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/monitoring-events.md,Monitoring events,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/creating-policies.md,Creating and managing policies,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/using-document-security-web-pages.md,Using the document security webpages,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/creating-policy-sets.md,Creating and managing policy sets,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/registering-as-a-user.md,Registering as a User,"Experience Manager, Experience Manager Forms",Document Security,
-./help/forms/using/admin-help/overview-7.md,Basics of configuring forms,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/setting-internationalization-options.md,Setting internationalization options,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-caching-forms.md,Configuring caching for Forms,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/specifying-xci-configuration-options.md,Specifying XCI configuration options,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-form-output.md,Configuring form output,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/specifying-fonts-embed.md,Specifying fonts to embed,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-locations-forms.md,Configuring locations for Forms,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/specifying-security-settings.md,Specifying security settings,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-validation-messages.md,Configuring validation messages,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/overview-8.md,Overview of output service,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/specify-xci-configuration-options.md,Specify XCI configuration options,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-caching-output.md,Configuring caching for Output,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/specify-file-locations-output.md,Specify file locations for Output,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/make-fonts-available.md,Make fonts available,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/specify-fonts-embed.md,Specify fonts to embed,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/specify-security-settings.md,Specify security settings,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/change-character-set.md,Change the character set,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/administration-process-terminology.md,About administration and process terminology,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/processes.md,Managing Processes,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-business-calendars.md,Configuring Business Calendars,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/overview-9.md,Overview of Forms workflow,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-out-office-settings.md,Configuring Out of Office Settings,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/searching-process-instances.md,Searching for process instances,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-server-settings.md,Configuring Server Settings,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/stalled-operations-branches.md,Working with stalled operations and branches,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/configuring-shared-queues.md,Configuring Shared Queues,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/tasks.md,Working with tasks,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/overview-10.md,Overview of Workspace,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/importing-exporting-global-settings.md,Importing and exporting global settings,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/setting-message-day.md,Setting the message of the day,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/customizing-search-templates.md,Customizing search templates,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/categories-displayed-workspace.md,Managing the categories displayed in Workspace,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/overview-11.md,Overview of Health Monitor,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/fine-tuning-health-monitor-performance.md,Fine-tuning Health Monitor performance,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/view-statistics-related-manager.md,View statistics related to Work Manager,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/view-system-information.md,View system information,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/purge-records-job-manager-database.md,Purge records from the Job Manager database,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/log-files.md,Log files,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/user-management.md,User Management,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/monitoring-aem-forms-deployments.md,Monitoring AEM forms deployments,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/manager-throttling.md,Work Manager and throttling,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/running-aem-forms-maintenance-mode.md,Running AEM forms in maintenance mode,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/db2-database-running-process-weekly.md,"""DB2&reg; database: Running a process weekly""","Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/oracle-database-maximum-open-cursors.md,Oracle database maximum open cursors threshold,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/ibm-db2-database-running-commands.md,"""IBM DB2 database: Running commands for regular maintenance""","Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/purging-process-data.md,Purging process data,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/microsoft-sql-server-database-fine.md,"""Microsoft SQL Server database: Fine-tuning the configuration""","Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/tips-minimizing-database-growth.md,Tips for minimizing database growth,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/application-server-websites.md,Application server websites,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/global-document-storage-directory.md,Global document storage directory,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/considerations-running-administration-console.md,Considerations when running Administration Console,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/enhancing-application-server-performance.md,Enhancing application server performance,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/starting-stopping-websphere-application-server.md,Starting and stopping WebSphere Application Server,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md,Backing up and recovering the EMC Documentum repository,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md,Enabling and disabling safe backup mode,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/backing-aem-forms-data.md,Backing up the Adobe Experience Manager Forms data,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/files-back-recover.md,Files to back up and recover,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md,Backup and recovery strategy for AEM forms,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/pdf-generator-backup-limitations.md,PDF Generator backup limitations,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/backup-strategies-watched-folders.md,Backup strategies for watched folders,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/recovering-aem-forms-data.md,Recovering the AEM forms data,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md,Backup strategy for Connector for EMC Documentum&reg; users,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md,Strategy for backup and restore in a clustered environment,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/set-system-information-service.md,Set up the System information service,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/admin-help/system-information-service-apis.md,System information Service APIs,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/process-reporting/introduction-process-reporting.md,Introduction to Process Reporting,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/process-reporting/install-start-process-reporting.md,Getting Started with Process Reporting,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/process-reporting/process-reporting-architecture.md,How Process Reporting Works,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md,Pre-defined reports in Process Reporting,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/process-reporting/process-reporting-custom-reports.md,Custom Reports in Process Reporting,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md,Ad-hoc Queries in Process Reporting,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/process-reporting/troubleshooting-process-management.md,Troubleshooting Process Reporting,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/form-bridge-apis.md,Form Bridge APIs for HTML5 forms,"Experience Manager, Experience Manager Forms",,
+./help/forms/using/overview-aem-document-services.md,Overview of AEM Document Services,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
+./help/forms/using/forms-service.md,Forms Service,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
+./help/forms/using/output-service.md,Output Service,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
+./help/forms/using/using-convertpdf-service.md,ConvertPDF Service,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
+./help/forms/using/using-barcoded-forms-service.md,Barcoded Forms Service,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
+./help/forms/using/assembler-service.md,Using Assembler Service,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
+./help/forms/using/hsm-certify-esign-docs.md,Use HSM to digitally sign or certify documents,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
+./help/forms/using/aem-document-services-programmatically.md,Using AEM Document Services Programmatically,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
+./help/forms/using/using-sendtoprinter-api.md,Using the sendToPrinter API,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
+./help/forms/using/document-security-offerings.md,Document security offerings,"Experience Manager, Experience Manager Forms",Document Security,"Admin, User, Developer"
+./help/forms/using/enable-search-for-drm-protected-pdf-documents-in-aem.md,Enable AEM to search document security protected PDF documents,"Experience Manager, Experience Manager Forms",Document Security,"Admin, User, Developer"
+./help/forms/using/reader-extending-policy-protected-pdf-documents-using-ppl.md,Reader extending policy-protected PDF documents using Portable Protection Library,"Experience Manager, Experience Manager Forms",Document Security,"Admin, User, Developer"
+./help/forms/using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md,Enable AEM to search document security protected PDF and Microsoft Office documents,"Experience Manager, Experience Manager Forms",Document Security,"Admin, User, Developer"
+./help/forms/using/protect-document-on-behalf-of-another-user.md,Protect a document on behalf of another user,"Experience Manager, Experience Manager Forms",Document Security,"Admin, User, Developer"
+./help/forms/using/forms-designer-help.md,Forms Designer help,"Experience Manager, Experience Manager Forms",Forms Designer,"User, Developer"
+./help/forms/using/scribble-signature.md,Using Scribble Signature in HTML5 forms,"Experience Manager, Experience Manager Forms",Forms Designer,"User, Developer"
+./help/forms/using/changing-page-zero-content-designer.md,Changing Page Zero content in Designer,"Experience Manager, Experience Manager Forms","Adaptive Forms, Forms Designer","User, Developer"
+./help/forms/using/introduction-widgets.md,Appearance framework for adaptive and HTML5 forms,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/custom-adaptive-forms-templates.md,Creating a custom adaptive form template,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/custom-layout-components-forms.md,Creating custom layout components for adaptive forms,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/add-custom-action-form-lister.md,Adding custom action on form lister items,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/customize-layout-positioning-error-messages-adaptive-form.md,Customize layout and positioning of error messages of an adaptive form,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/creating-custom-toolbar-action.md,Creating a custom toolbar action,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/customizing-form-event-tracking.md,Customizing form event tracking,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/custom-appearance-widget-adaptive-form.md,Create custom appearances for adaptive form fields,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/custom-draft-submission-data-services.md,Customizing Draft and Submission data services,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/dynamically-populate-dropdowns.md,Dynamically populating drop-down lists,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/custom-submit-action-form.md,Writing custom Submit action for adaptive forms,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/creating-custom-toolbar-layout.md,Creating custom toolbar layout,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/displaying-components-based-on-template.md,Displaying components based on the template used,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/creating-custom-adaptive-form-themes.md,Creating custom adaptive form themes,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/transaction-reports-overview-jee-osgi.md,Transaction Reports Overview AEM Forms.,,Transaction Reports,"Admin, User, Developer"
+./help/forms/using/transaction-reports-overview.md,Transaction Reports Overview,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
+./help/forms/using/viewing-and-understanding-transaction-reports.md,Viewing and Understanding Transaction Reports,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
+./help/forms/using/transaction-reports-billable-apis.md,Transaction Reports Billable APIs,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
+./help/forms/using/record-transaction-custom-implementation.md,Record a transaction for custom implementations,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
+./help/forms/using/transaction-report-overview-jee.md,Transaction Reports Overview for AEM Forms on JEE,,Transaction Reports,"Admin, User, Developer"
+./help/forms/using/transaction-reports-billable-apis-jee.md,Transaction Reports Billable APIs for AEM Forms on JEE.,,Transaction Reports,"Admin, User, Developer"
+./help/forms/using/record-transaction-custom-component-jee.md,Record a transaction for custom component API for AEM Forms on JEE.,,Transaction Reports,"Admin, User, Developer"
+./help/forms/using/admin-help/configure-general-aem-forms-settings.md,General AEM Forms settings,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/update-license-type-deployment.md,Update the license type for the deployment,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/adding-domains.md,Adding domains,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/delete-domain.md,Delete a domain,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configure-account-locking-settings.md,Configure account-locking settings,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/editing-converting-existing-domains.md,Editing and converting existing domains,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-authentication-providers.md,Configuring authentication providers,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/synchronizing-directories.md,Synchronizing directories,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-directories.md,Configuring directories,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/change-order-evaluation-authentication.md,Change the order of evaluation for authentication,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configure-ldap-bind-password.md,Configure the LDAP bind password,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md,Configure AEM forms to prefetchdomain information,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-certificate-based-authentication.md,Configuring certificate-based authentication,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configure-saml-service-provider-settings.md,Configure SAML service provider settings,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/enabling-single-sign-on-aem.md,Enabling single sign-on in AEM forms,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configure-user-management-ssl-enabled.md,Configure User Management for an SSL-enabled LDAP server,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/importing-exporting-configuration-file.md,Importing and exporting the configuration file,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configure-advanced-system-attributes.md,Configure advanced system attributes,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/preventing-csrf-attacks.md,Preventing CSRF attacks,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/adding-configuring-users.md,Adding and configuring users ,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/just-in-time-user-provisioning.md,Just-in-time user provisioning,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/creating-configuring-groups.md,Creating and configuring groups,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/search-user-or-group.md,Search for a user or group,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/creating-configuring-roles.md,Creating and configuring roles,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-connector-emc-documentum.md,Configuring Connector for EMC Documentum,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-connector-ibm-filenet.md,Configuring Connector for IBM FileNet,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-connector-ibm-content-manager.md,Configuring Connector for IBM&reg; Content Manager,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md,Configuring Connector for Microsoft SharePoint,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/adding-removing-user-name-password.md,Adding and removing user name and password credentials,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/certificate-revocation-lists.md,Managing certificate revocation lists,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/overview-2.md,Basics of managing certificates and credentials,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/certificates.md,Managing certificates,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/hsm-credentials.md,Managing HSM credentials,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/local-credentials.md,Managing local credentials,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/change-number-items-displayed-applications.md,Change the number of items displayed on the Applications and Services pages,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/import-archives.md,Import and manage archives,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/import-applications.md,Import and manage applications,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configure-service-settings.md,Configure service settings,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/starting-stopping-services.md,Starting and stopping services,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/adding-enabling-modifying-or-removing.md,"Adding, enabling, modifying, or removing endpoints","Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-email-endpoints.md,Configuring email endpoints,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/oauth2-support-for-mail-service.md,Configure OAuth2-based authentication for Microsoft&reg (Forms JEE OAuth); Office 365 mail server protocols,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-remoting-endpoints.md,Configuring Remoting endpoints,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-watched-folder-endpoints.md,Configuring watched folder endpoints,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-task-manager-endpoints.md,Configuring Task Manager endpoints,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/types-endpoints.md,Types of endpoints,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/certificate-types-used-acrobat-reader.md,Certificate types used by Acrobat Reader DC extensions,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md,Recognizing valid and expired certificates in PDF documents,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md,Configuring Acrobat Reader DC Extensions for data capture,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/review-credential-information.md,Review credential use information,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md,Configuring credentials for use with Acrobat Reader DC Extensions,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/review-usage-rights-pdf-file.md,Review the usage rights of a PDF file,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/enabling-online-commenting-reader-web.md,Enabling online commenting for Adobe Reader web browser plug-in,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md,Setting timeout values for use with Acrobat Reader DC Extensions,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/updating-expired-reader-extension-certificates.md,Expiration of Reader Extensions certificates and its impact ,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/overview-5.md,Introduction to working with PDF Generator,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md,Enabling multi-threaded file conversions,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/configuring-pdf-settings.md,Configuring Adobe PDF settings,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/configuring-security-settings.md,Configuring security settings,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/configuring-file-type-settings.md,Configuring file type settings,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md,Importing and exporting PDF Generator configuration files,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/enable-pdf-a-support.md,Enable PDF/A support,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/setting-pdfg-network-printer-windows.md,Setting up a PDFG Network Printer (Windows only),"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/configuring-fallback-fonts.md,Configuring fallback fonts,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md,Modifying the PDF Export conversion settings,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/converting-files-using-pdf-generator.md,Converting files using PDF Generator,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
+./help/forms/using/admin-help/overview-6.md,Overview of configuring SSL,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-ssl-jboss-application-server.md,Configuring SSL for JBoss Application Server,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-ssl-windows-vista.md,Configuring SSL on Windows Vista,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-ssl-websphere-application-server.md,Configuring SSL for WebSphere Application Server,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/document-security.md,What is document security? ,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/high-volume-secure-information-delivery.md,High-volume secure information delivery,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/configuring-client-server-options.md,Configuring client and server options,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/invited-local-user-accounts.md,Managing invited and local user accounts,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/controlling-access-policy-protected-documents.md,Controlling access to policy-protected documents,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/monitoring-events.md,Monitoring events,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/creating-policies.md,Creating and managing policies,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/using-document-security-web-pages.md,Using the document security webpages,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/creating-policy-sets.md,Creating and managing policy sets,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/registering-as-a-user.md,Registering as a User,"Experience Manager, Experience Manager Forms",Document Security,"User, Developer"
+./help/forms/using/admin-help/overview-7.md,Basics of configuring forms,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/setting-internationalization-options.md,Setting internationalization options,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-caching-forms.md,Configuring caching for Forms,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/specifying-xci-configuration-options.md,Specifying XCI configuration options,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-form-output.md,Configuring form output,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/specifying-fonts-embed.md,Specifying fonts to embed,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-locations-forms.md,Configuring locations for Forms,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/specifying-security-settings.md,Specifying security settings,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-validation-messages.md,Configuring validation messages,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/overview-8.md,Overview of output service,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/specify-xci-configuration-options.md,Specify XCI configuration options,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-caching-output.md,Configuring caching for Output,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/specify-file-locations-output.md,Specify file locations for Output,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/make-fonts-available.md,Make fonts available,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/specify-fonts-embed.md,Specify fonts to embed,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/specify-security-settings.md,Specify security settings,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/change-character-set.md,Change the character set,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/administration-process-terminology.md,About administration and process terminology,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/processes.md,Managing Processes,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-business-calendars.md,Configuring Business Calendars,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/overview-9.md,Overview of Forms workflow,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-out-office-settings.md,Configuring Out of Office Settings,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/searching-process-instances.md,Searching for process instances,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-server-settings.md,Configuring Server Settings,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/stalled-operations-branches.md,Working with stalled operations and branches,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/configuring-shared-queues.md,Configuring Shared Queues,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/tasks.md,Working with tasks,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/overview-10.md,Overview of Workspace,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/importing-exporting-global-settings.md,Importing and exporting global settings,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/setting-message-day.md,Setting the message of the day,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/customizing-search-templates.md,Customizing search templates,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/categories-displayed-workspace.md,Managing the categories displayed in Workspace,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/overview-11.md,Overview of Health Monitor,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/fine-tuning-health-monitor-performance.md,Fine-tuning Health Monitor performance,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/view-statistics-related-manager.md,View statistics related to Work Manager,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/view-system-information.md,View system information,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/purge-records-job-manager-database.md,Purge records from the Job Manager database,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/log-files.md,Log files,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/user-management.md,User Management,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/monitoring-aem-forms-deployments.md,Monitoring AEM forms deployments,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/manager-throttling.md,Work Manager and throttling,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/running-aem-forms-maintenance-mode.md,Running AEM forms in maintenance mode,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/db2-database-running-process-weekly.md,"""DB2&reg; database: Running a process weekly""","Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/oracle-database-maximum-open-cursors.md,Oracle database maximum open cursors threshold,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/ibm-db2-database-running-commands.md,"""IBM DB2 database: Running commands for regular maintenance""","Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/purging-process-data.md,Purging process data,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/microsoft-sql-server-database-fine.md,"""Microsoft SQL Server database: Fine-tuning the configuration""","Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/tips-minimizing-database-growth.md,Tips for minimizing database growth,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/application-server-websites.md,Application server websites,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/global-document-storage-directory.md,Global document storage directory,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/considerations-running-administration-console.md,Considerations when running Administration Console,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/enhancing-application-server-performance.md,Enhancing application server performance,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/starting-stopping-websphere-application-server.md,Starting and stopping WebSphere Application Server,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md,Backing up and recovering the EMC Documentum repository,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md,Enabling and disabling safe backup mode,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/backing-aem-forms-data.md,Backing up the Adobe Experience Manager Forms data,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/files-back-recover.md,Files to back up and recover,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md,Backup and recovery strategy for AEM forms,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/pdf-generator-backup-limitations.md,PDF Generator backup limitations,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/backup-strategies-watched-folders.md,Backup strategies for watched folders,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/recovering-aem-forms-data.md,Recovering the AEM forms data,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md,Backup strategy for Connector for EMC Documentum&reg; users,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md,Strategy for backup and restore in a clustered environment,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/set-system-information-service.md,Set up the System information service,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/admin-help/system-information-service-apis.md,System information Service APIs,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/process-reporting/introduction-process-reporting.md,Introduction to Process Reporting,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/process-reporting/install-start-process-reporting.md,Getting Started with Process Reporting,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/process-reporting/process-reporting-architecture.md,How Process Reporting Works,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md,Pre-defined reports in Process Reporting,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/process-reporting/process-reporting-custom-reports.md,Custom Reports in Process Reporting,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md,Ad-hoc Queries in Process Reporting,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/process-reporting/troubleshooting-process-management.md,Troubleshooting Process Reporting,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/form-bridge-apis.md,Form Bridge APIs for HTML5 forms,"Experience Manager, Experience Manager Forms",,"User, Developer"
 ./help/forms/developing/introducing-java-api-soap-quick.md,Introducing Java&trade; API QuickStart,"Experience Manager, Experience Manager Forms",,Developer
 ./help/forms/developing/invoking-aem-forms-using-apis.md,How to invoke AEM Forms using APIs?,"Experience Manager, Experience Manager Forms",,Developer
 ./help/forms/developing/aem-forms-processes.md,Understanding AEM Forms Processes,"Experience Manager, Experience Manager Forms",,Developer
@@ -1022,24 +1022,24 @@ filename,title,solution,feature,role
 ./help/forms/developing/programmatically-preferences-nodes.md,Programmatically managing the PreferencesNodes,"Experience Manager, Experience Manager Forms",,Developer
 ./help/forms/developing/protecting-documents-policies.md,Protecting Documents with Policies,"Experience Manager, Experience Manager Forms",,Developer
 ./help/forms/developing/validate-ddx-document-using-web.md,Validate a DDX document using theweb service API,"Experience Manager, Experience Manager Forms",,Developer
-./help/forms/using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md,Unable to use Experience Manager Forms with certain versions of Oracle JDK,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/additional-steps-to-use-email-with-attachments.md,Additional Steps to get Email with Attachments,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/disable-uac-for-pdfgconfiguration.md,Disable UAC for PDFG Configuration applicable to both JEE and OSGI,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md,"Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer, or Apple Safari","Experience Manager, Experience Manager Forms",Adaptive Forms,
-./help/forms/using/restore-crx-repository.md,Unable to restore corrupt CRX repository applicable to JEE cluster server,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/aem-service-pack-installation-solution.md,CRX/bundle and Start page service unavailable errors once latest 6.5.15.0 service pack is installed,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/linux-jboss-installation-issue-on-sp15.md,AEM Forms JEE 6.5.15.0 service pack installation issue on JBoss® Linux® environment,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md,AEM Forms Server starts processing the documents even before all the services are up and running.,"Experience Manager, Experience Manager Forms",,
+./help/forms/using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md,Unable to use Experience Manager Forms with certain versions of Oracle JDK,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/additional-steps-to-use-email-with-attachments.md,Additional Steps to get Email with Attachments,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/disable-uac-for-pdfgconfiguration.md,Disable UAC for PDFG Configuration applicable to both JEE and OSGI,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md,"Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer, or Apple Safari","Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
+./help/forms/using/restore-crx-repository.md,Unable to restore corrupt CRX repository applicable to JEE cluster server,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/aem-service-pack-installation-solution.md,CRX/bundle and Start page service unavailable errors once latest 6.5.15.0 service pack is installed,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/linux-jboss-installation-issue-on-sp15.md,AEM Forms JEE 6.5.15.0 service pack installation issue on JBoss® Linux® environment,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md,AEM Forms Server starts processing the documents even before all the services are up and running.,"Experience Manager, Experience Manager Forms",,"User, Developer"
 ./help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md,"Connection issues with Output, Forms, and (Document of Record) DoR Services","Experience Manager, Experience Manager Forms",,Admin
 ./help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md,Mitigating Struts 2 Vulnerabilities for Experience Manager Forms on JEE,"Experience Manager, Experience Manager Forms",,Admin
-./help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md,Failure to backup database during upgrade to 6.5.12.0 for MySQL.,"Experience Manager, Experience Manager Forms",,
-./help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md,PDF generation fails to print a large number of PDFs with WorkBench,"Experience Manager, Experience Manager Forms",,
+./help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md,Failure to backup database during upgrade to 6.5.12.0 for MySQL.,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md,PDF generation fails to print a large number of PDFs with WorkBench,"Experience Manager, Experience Manager Forms",,"User, Developer"
 ./help/forms/using/restart-aem-sdk.md,How to restart AEM SDK?,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin, Developer, User"
-./help/forms/developing/building-xml.md,How to use the execute script service in AEM Forms on JEE Workbench to build XML data?,"Experience Manager, Experience Manager Forms",,
-./help/forms/developing/compressing-decompressing-custom-dsc.md,Compress and decompress files using a AEM Forms on JEE Custom DSC,"Experience Manager, Experience Manager Forms",,
-./help/forms/developing/configure-server-cluster.md,How to configure and troubleshoot an AEM Forms on JEE server cluster,"Experience Manager, Experience Manager Forms",,
-./help/forms/developing/hashing-forms.md,How to generate and work with hashes in dynamic PDF forms?,"Experience Manager, Experience Manager Forms",,
-./help/forms/developing/passing-credentials.md,Pass credentials using WS-security headers,"Experience Manager, Experience Manager Forms",,
+./help/forms/developing/building-xml.md,How to use the execute script service in AEM Forms on JEE Workbench to build XML data?,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/developing/compressing-decompressing-custom-dsc.md,Compress and decompress files using a AEM Forms on JEE Custom DSC,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/developing/configure-server-cluster.md,How to configure and troubleshoot an AEM Forms on JEE server cluster,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/developing/hashing-forms.md,How to generate and work with hashes in dynamic PDF forms?,"Experience Manager, Experience Manager Forms",,"User, Developer"
+./help/forms/developing/passing-credentials.md,Pass credentials using WS-security headers,"Experience Manager, Experience Manager Forms",,"User, Developer"
 ./help/commerce/cif/introduction.md,Introduction and overview,"Experience Manager,Commerce",Commerce Integration Framework,"Admin, Developer"
 ./help/commerce/cif/changes.md,Notable changes of the Commerce Integration Framework (CIF) add-on,"Experience Manager,Commerce",Commerce Integration Framework,"Admin, Developer"
 ./help/commerce/cif/integrating/magento.md,AEM and Adobe Commerce Integration using Commerce Integration Framework,"Experience Manager,Commerce",Commerce Integration Framework,"Admin, Developer"
