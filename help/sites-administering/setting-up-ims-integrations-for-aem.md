@@ -21,7 +21,7 @@ The integrations use an IMS integration, configured with S2S OAuth.
 
 >[!CAUTION]
 >
->Previously, configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Previously, configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 >
 >Such configurations can no longer be created or updated, but can be migrated to OAuth configurations. 
 
