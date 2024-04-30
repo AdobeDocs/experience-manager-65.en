@@ -138,7 +138,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Dynamic Media]{#assets-dm-6520}
 
-* Effective April 30, 2024, Adobe Dynamic Media is ending support for the following:
+* Effective May 1, 2024, Adobe Dynamic Media is ending support for the following:
 
     * SSL (Secure Socket Layer) 2.0
     * SSL 3.0
