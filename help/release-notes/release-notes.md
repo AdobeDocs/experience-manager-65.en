@@ -55,7 +55,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### Admin User Interface{#sites-adminui-6521}
 
-* T
+* When you click **[!UICONTROL Sites]** > **[!UICONTROL Core Core Components]** > **[!UICONTROL Properties]** > **[!UICONTROL Permissions]** tab > **[!UICONTROL Effective Permission]**, the **Effective Permissions** dialog box does not open in. (SITES-17378)  
 
 #### Classic UI{#sites-classicui-6521}
 
@@ -63,15 +63,20 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6521}
 
-* N
+* Fixed the double inclusion of the form elements. (SITES-21109)  BLOCKER
+* When creating a Content Fragment, the Close button sometimes becomes unresponsive, causing the entire page to freeze and necessitating a page refresh to close the Content Fragment. As for the version creation issue, the system is creating a new version of a Content Fragment even when the user has not made any changes, simply by interacting with the RTE or a text field. (SITES-21187)  MAJOR
+
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6521}
 
-* W
+* While upgrading Adobe Experience Manager from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-20098)  CRITICAL
+
+
+
 
 #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6521}
 
-* T
+* W
 
 #### [!DNL Content Fragments] - REST API{#sites-restapi-6521}
 
@@ -91,7 +96,8 @@ Some of the key features and enhancements in this release include the following:
 
 #### Experience Fragments{#sites-experiencefragments-6521}
 
-* M
+* Rollout of Experience Fragments from `masters/language` to `country/language` does not update cross references. (SITES-20559)  BLOCKER 
+* Templates not only specified in the `cq:allowedTemplates`, but templates that have `allowedPaths` configured at the template level, appear as options when creating a new Experience Fragment. (SITES-20855)  MAJOR
 
 #### Foundation Components (Legacy){#sites-foundation-components-legacy-6521}
 
@@ -99,15 +105,15 @@ Some of the key features and enhancements in this release include the following:
 
 #### Launches{#sites-launches-6521}
 
-* T
+* The `sourceRootResource` configured in the Launch configuration within CRXDE Lite points to content that no longer exists, leading to a malfunction when attempts are made to delete launches. You should be able to delete launches even if the page is deleted or if the path is not the same. (SITES-20750)
 
 #### MSM - Live Copies{#sites-msm-live-copies-6521}
 
-* A
+* Overlayed the Page component to add tabs in page properties. One of them is page configuration and has a property to add an Experience Fragment URL. The link configured in the page properties for the Experience Fragment does not change for any language copies created for that page. The configured link should change with the language copy URL. (SITES-19580)  MAJOR
 
 #### Page Editor{#sites-pageeditor-6521}
 
-* F 
+* The edit mode applies a grey background inconsistently, which fails to comply with the WCAG (Web Content Accessibilty Guidelines) color contrast standards. (SITES-20060)
 
 ### [!DNL Assets]{#assets-6521}
 
