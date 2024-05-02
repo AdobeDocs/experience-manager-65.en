@@ -37,7 +37,7 @@ role: User,Admin,Architect,Developer
 
 Some of the key features and enhancements in this release include the following:
 
-* D
+* A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)  MAJOR
 
 ### [!DNL Forms]
 
@@ -49,9 +49,9 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Sites]{#sites-6521}
 
-#### Accessibility{#sites-accessibility-6521}
+#### Accessibility {#sites-accessibility-6521}
 
-* T
+* The **[!UICONTROL Saved Searches]** label is not persistent. Placeholder is being used as the only visual label for a text field.(SITES-3050)
 
 #### Admin User Interface{#sites-adminui-6521}
 
@@ -89,7 +89,6 @@ Some of the key features and enhancements in this release include the following:
 #### Core Components{#sites-core-components-6521}
 
 * I
-
 
 #### Campaign integration{#sites-campaign-integration-6521}
 
@@ -156,6 +155,10 @@ Some of the key features and enhancements in this release include the following:
 
 ### Foundation {#foundation-6521}
 
+#### Apache Felix {#felix-6521}
+
+* Upgrade issue with AEM 6.5 Service Pack 19 (SP19) in which the Application server context-root path is missing for unauthorised requests to Apache Felix following the installation of SP19. Update to Apache Felix Web Management Console 4.9.8. (NPR-41933)
+
 #### Communities {#communities-6521}
 
 * U
@@ -166,11 +169,12 @@ Some of the key features and enhancements in this release include the following:
 
 #### Integrations{#integrations-6521}
 
-* R
+* Replacement of Service Account (JSON Web Token or JWT) credentials with OAuth2 Server-to-Server credentials (also known as Service Principals).(NPR-41994)  MAJOR
+* When a customer attempts to view the Payload page, the content does not display properly due to a malformed URL; a 404 error is displayed. The error is caused by is missing a question mark symbol in the URL, before the query parameters. This issue requires the customer to manually insert the question mark symbol to view the Payload page correctly. (NPR-41957)
 
 #### Localization{#localization-6521}
 
-* A
+* In the Templates editor, the text string *`No video available.`* is not localized. (SITES-13190)
 
 #### Platform{#foundation-platform-6521}
 
@@ -186,7 +190,8 @@ Some of the key features and enhancements in this release include the following:
 
 #### User interface{#foundation-ui-6521}
 
-* C
+* The Granite `pathfield` component at `/libs/granite/ui/components/coral/foundation/form/pathfield` fails to enable the **[!UICONTROL Select]** button when an asset is selected. After the pathfield is popped up, and the user selects the the asset checkbox, the **[!UICONTROL Select]** button is not enabled; it does not change from grey to blue. (NPR-41970)
+* An issue exists with the Content Fragment Model (CFM) reference field within AEM. Despite the CFM reference field being set as mandatory, the system allows users to click Save to save content with non-CFM values in certain scenarios. The Save button should be dimmed (unavailable). (NPR-41894)
 
 #### WCM{#wcm-6521}
 
@@ -255,7 +260,7 @@ For instructions to install the service pack on Experience Manager Forms, see [E
 
 >[!NOTE]
 >
->The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
+>The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
 
 ### Install GraphQL Index Package for Experience Manager Content Fragments{#install-aem-graphql-index-add-on-package}
 
@@ -410,10 +415,10 @@ The following text documents list the OSGi bundles and Content Packages included
 These websites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
-* [Contact Adobe Customer Support](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [Contact Adobe Customer Support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] product page](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 >* [Subscribe to Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
