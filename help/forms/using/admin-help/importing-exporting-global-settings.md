@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Importing and exporting global settings {#importing-and-exporting-global-settings}
 

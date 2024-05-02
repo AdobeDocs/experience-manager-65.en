@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Recovering the AEM forms data {#recovering-the-aem-forms-data}
 

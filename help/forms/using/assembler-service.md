@@ -8,6 +8,7 @@ docset: aem65
 feature: Document Services
 exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Using Assembler Service{#using-assembler-service}
 

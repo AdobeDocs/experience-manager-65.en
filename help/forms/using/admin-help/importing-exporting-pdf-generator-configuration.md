@@ -12,6 +12,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Importing and exporting PDF Generator configuration files {#importing-and-exporting-pdf-generator-configuration-files}
 

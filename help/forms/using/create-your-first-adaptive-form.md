@@ -6,6 +6,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Tutorial: Create your first adaptive form {#tutorial-create-your-first-adaptive-form}
 

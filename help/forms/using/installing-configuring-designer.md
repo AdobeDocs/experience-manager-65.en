@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
-role: Admin
+role: "Admin, User, Developer"
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms

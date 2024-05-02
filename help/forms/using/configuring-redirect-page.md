@@ -11,6 +11,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: be1a774f-5681-443f-b195-28e89a020547
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Configuring redirect page{#configuring-redirect-page}
 

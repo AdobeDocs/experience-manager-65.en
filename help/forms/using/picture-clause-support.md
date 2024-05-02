@@ -9,6 +9,7 @@ discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Picture clause support for HTML5 forms {#picture-clause-support-for-html-forms}
 

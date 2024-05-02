@@ -7,6 +7,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Tables in adaptive forms{#tables-in-adaptive-forms}
 

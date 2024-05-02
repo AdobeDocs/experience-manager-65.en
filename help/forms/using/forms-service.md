@@ -7,6 +7,7 @@ topic-tags: document_services
 feature: Document Services
 exl-id: 6580fe6f-3cdb-45ec-8ba3-51dc60d1965e
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Forms Service {#forms-service}
 

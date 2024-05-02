@@ -11,6 +11,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Integrate [!DNL Adobe Sign] with AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
 

@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 483e8d11-7bb4-49a7-b71b-fca57356179b
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Application server websites {#application-server-websites}
 

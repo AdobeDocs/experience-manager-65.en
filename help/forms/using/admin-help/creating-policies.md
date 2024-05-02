@@ -12,6 +12,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Creating and managing policies {#creating-and-managing-policies}
 

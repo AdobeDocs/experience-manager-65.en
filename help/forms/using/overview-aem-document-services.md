@@ -8,6 +8,7 @@ docset: aem65
 feature: Document Services
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Overview of AEM Document Services{#overview-of-aem-document-services}
 

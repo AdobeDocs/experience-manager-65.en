@@ -8,6 +8,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Add custom action to the Asset Listing view{#add-custom-action-to-the-asset-listing-view}
 

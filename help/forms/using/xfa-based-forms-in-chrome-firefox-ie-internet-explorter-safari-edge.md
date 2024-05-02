@@ -5,6 +5,7 @@ description: Unable to open XFA-based PDF forms in Google Chrome, Firefox, Micro
 feature: Adaptive Forms
 exl-id: fdd15315-e0d6-4d80-acb4-2e0ecec716c4
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer, or Apple Safari{#unable-to-open-XFA-based-PDF-forms-in-Google-Chrome-Firefox-Microsoft-Edge-Microsoft-Internet-Explorer-or-Apple-Safari}
 

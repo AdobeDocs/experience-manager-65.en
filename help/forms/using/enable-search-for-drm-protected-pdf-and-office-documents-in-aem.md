@@ -12,6 +12,7 @@ noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Enable AEM to search document security protected PDF and Microsoft Office documents{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 

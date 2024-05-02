@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Configuring authentication providers {#configuring-authentication-providers}
 

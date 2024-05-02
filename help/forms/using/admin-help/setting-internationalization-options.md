@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 6cf82c2b-29f0-49d5-a138-99d7801d5a28
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Setting internationalization options{#setting-internationalization-options}
 

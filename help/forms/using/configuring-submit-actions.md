@@ -7,6 +7,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Configuring the Submit action {#configuring-the-submit-action}
 

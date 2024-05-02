@@ -13,6 +13,7 @@ docset: aem65
 feature: HTML5 Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 
 # Frequently asked questions (FAQ) for HTML5 forms{#frequently-asked-questions-faq-for-html-forms}

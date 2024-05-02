@@ -11,6 +11,7 @@ discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: HTML5 Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Create accessible complex tables in HTML5 forms {#create-accessible-complex-tables-in-html-forms}
 

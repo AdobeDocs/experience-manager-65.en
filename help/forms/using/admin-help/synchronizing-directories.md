@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Synchronizing directories {#synchronizing-directories}
 

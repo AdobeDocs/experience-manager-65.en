@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Configuring form output{#configuring-form-output}
 

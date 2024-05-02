@@ -10,7 +10,7 @@ topic-tags: forms-manager
 
 docset: aem65
 
-role: Admin
+role: "Admin,User"
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 solution: Experience Manager, Experience Manager Forms
 ---

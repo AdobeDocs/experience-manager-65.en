@@ -8,6 +8,7 @@ discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Creating a custom profile for HTML5 forms {#creating-a-custom-profile-for-html-forms}
 

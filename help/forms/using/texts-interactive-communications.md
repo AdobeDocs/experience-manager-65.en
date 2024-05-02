@@ -12,6 +12,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Texts in Interactive Communications{#texts-in-interactive-communications}
 

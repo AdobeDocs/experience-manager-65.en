@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Update the license type for the deployment {#update-the-license-type-for-the-deployment}
 

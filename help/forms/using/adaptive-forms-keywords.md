@@ -7,6 +7,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms, Foundation Components
 exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Adaptive forms keywords {#adaptive-forms-keywords}
 

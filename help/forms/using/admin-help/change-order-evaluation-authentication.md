@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Change the order of evaluation for authentication {#change-the-order-of-evaluation-for-authentication}
 
