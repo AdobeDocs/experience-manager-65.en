@@ -8,7 +8,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Customize create correspondence UI{#customize-create-correspondence-ui}
 

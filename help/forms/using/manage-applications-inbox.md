@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Manage Forms applications and tasks in AEM Inbox{#manage-forms-applications-and-tasks-in-aem-inbox}
 

@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: cf5283a5-dbfb-460d-a8bd-11cd15ab8640
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Configure AEM forms to prefetchdomain information {#configure-aem-forms-to-prefetchdomain-information}
 

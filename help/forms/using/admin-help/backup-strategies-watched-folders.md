@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Backup strategies for watched folders {#backup-strategies-for-watched-folders}
 

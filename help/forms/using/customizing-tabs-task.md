@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 
 exl-id: 8412cfec-bcab-40b7-9e5b-fcc211d43c0b
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Customizing tabs for a task {#customizing-tabs-for-a-task}
 

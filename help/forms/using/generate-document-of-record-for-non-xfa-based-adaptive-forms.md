@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Generate Document of Record for adaptive forms or adaptive form fragments {#generate-document-of-record-for-adaptive-forms}
 

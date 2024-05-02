@@ -5,7 +5,7 @@ Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af,
 feature: Adaptive Forms, Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Create or add an Adaptive Form to AEM Sites page {#create-or-add-an-adaptive-form-to-aem-sites-page}
 

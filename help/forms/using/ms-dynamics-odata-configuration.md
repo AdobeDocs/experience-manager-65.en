@@ -7,7 +7,7 @@ docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Microsoft Dynamics OData configuration{#microsoft-dynamics-odata-configuration}
 

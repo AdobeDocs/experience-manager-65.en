@@ -4,7 +4,7 @@ description: Keep a count of all the forms submitted, documents submitted, inter
 topic-tags: forms-manager
 feature: Transaction Reports
 exl-id: 6e5e29ef-eb90-4573-8745-1966a238bc03
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Transaction Reporting for AEM Forms {#transaction-reports-overview}
 

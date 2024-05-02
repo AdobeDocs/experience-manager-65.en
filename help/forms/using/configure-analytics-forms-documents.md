@@ -11,7 +11,7 @@ topic-tags: integrations
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Analytics using Cloud Service Framework {#analyticsusingcloudframework}
 

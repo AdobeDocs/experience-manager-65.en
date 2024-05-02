@@ -12,7 +12,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Tutorial: Create form data model in AEM Forms{#tutorial-create-form-data-model}
 

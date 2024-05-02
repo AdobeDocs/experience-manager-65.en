@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # View statistics related to Work Manager {#view-statistics-related-to-work-manager}
 

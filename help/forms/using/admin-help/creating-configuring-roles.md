@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Creating and configuring roles{#creating-and-configuring-roles}
 

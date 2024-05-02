@@ -12,7 +12,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Managing invited and local user accounts {#managing-invited-and-local-user-accounts}
 

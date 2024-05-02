@@ -5,7 +5,7 @@ topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Style your adaptive form {#do-not-publish-style-your-adaptive-form}
 

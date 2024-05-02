@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 
 docset: aem65
 
-role: "Admin,User"
+role: Admin,User
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
 solution: Experience Manager, Experience Manager Forms
 ---

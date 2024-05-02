@@ -11,7 +11,7 @@ topic-tags: forms-app
 
 exl-id: b97175fd-cc3d-457a-af11-1f8c83192eb7
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Save forms as templates {#save-forms-as-templates}
 

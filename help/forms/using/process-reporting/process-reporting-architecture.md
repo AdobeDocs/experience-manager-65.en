@@ -11,7 +11,7 @@ topic-tags: process-reporting
 docset: aem65
 exl-id: 66dfac36-5b7e-40be-9921-efa9f2a9521c
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # How Process Reporting Works{#how-process-reporting-works}
 

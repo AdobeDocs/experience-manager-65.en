@@ -4,7 +4,7 @@ description: Learn a variety of security-hardening settings to enhance the secur
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-role: "Admin,User"
+role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 ---

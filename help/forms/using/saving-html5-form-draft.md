@@ -8,7 +8,7 @@ discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: HTML5 Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Saving an HTML5 form as a draft {#saving-an-html-form-as-a-draft}
 

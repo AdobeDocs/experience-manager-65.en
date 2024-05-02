@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Tips for minimizing database growth {#tips-for-minimizing-database-growth}
 

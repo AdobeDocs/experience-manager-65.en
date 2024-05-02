@@ -4,7 +4,7 @@ description: Define the position of components using the responsive grid availab
 feature: Adaptive Forms, Foundation Components
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Use Layout mode to resize components {#use-layout-mode-to-resize-components}
 

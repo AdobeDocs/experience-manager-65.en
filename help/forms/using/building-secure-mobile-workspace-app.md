@@ -8,7 +8,7 @@ topic-tags: forms-app
 
 exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Building a secure AEM Forms app for iOS {#building-a-secure-aem-forms-app-for-ios}
 

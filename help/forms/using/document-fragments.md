@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: ff3a4cba-a1a6-4fc9-8466-da7f28a74fb5
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Document Fragments {#document-fragments}
 

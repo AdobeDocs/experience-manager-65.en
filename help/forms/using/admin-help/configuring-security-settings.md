@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Configuring security settings{#configuring-security-settings}
 

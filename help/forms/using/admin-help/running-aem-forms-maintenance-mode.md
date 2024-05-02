@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 6f5ce18b-26b4-4c31-b48a-43ccbb3912f6
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Running AEM forms in maintenance mode {#running-aem-forms-in-maintenance-mode}
 

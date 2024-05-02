@@ -7,7 +7,7 @@ topic-tags: Configuration
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Custom storage for drafts and submissions component {#custom-storage-for-drafts-and-submissions-component}
 

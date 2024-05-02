@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Configuring a Correspondence Management solution {#configuring-a-correspondence-management-solution}
 

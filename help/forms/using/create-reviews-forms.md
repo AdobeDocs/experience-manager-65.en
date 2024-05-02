@@ -10,7 +10,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Creating and managing reviews to forms{#creating-and-managing-reviews-to-forms}
 

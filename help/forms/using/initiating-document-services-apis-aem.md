@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Initiate Document Services APIs from AEM Workflow  {#initiate-document-services-apis-from-aem-workflow}
 

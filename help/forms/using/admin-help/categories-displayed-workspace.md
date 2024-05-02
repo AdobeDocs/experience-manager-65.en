@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Managing the categories displayed in Workspace {#managing-the-categories-displayed-in-workspace}
 
