@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 solution: Experience Manager, Experience Manager Forms
+role: User, Developer
 ---
 # Searching for process instances{#searching-for-process-instances}
 

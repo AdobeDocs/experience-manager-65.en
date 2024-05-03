@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 9ff75d98-54ad-425d-912f-d5a7501bf564
 solution: Experience Manager, Experience Manager Forms
+role: User, Developer
 ---
 # Change the character set {#change-the-character-set}
 

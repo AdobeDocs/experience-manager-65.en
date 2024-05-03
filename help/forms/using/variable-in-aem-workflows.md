@@ -11,6 +11,7 @@ topic-tags: publish
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 solution: Experience Manager, Experience Manager Forms
+role: User, Developer
 ---
 # Variables in AEM Forms workflows{#variables-in-aem-forms-workflows}
 
