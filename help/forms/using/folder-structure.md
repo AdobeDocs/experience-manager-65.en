@@ -11,6 +11,7 @@ topic-tags: forms-workspace
 
 exl-id: a4c1d3d8-477e-4edf-9dde-4ef9c766be5a
 solution: Experience Manager, Experience Manager Forms
+role: Admin, User, Developer
 ---
 # Understanding the folder structure {#understanding-the-folder-structure}
 
