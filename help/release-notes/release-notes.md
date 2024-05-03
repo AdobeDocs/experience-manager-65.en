@@ -239,6 +239,12 @@ Some of the key features and enhancements in this release include the following:
 
 * When a user creates an XDP on AEM Forms Designer, On PDF output when a user navigates through the form tags, the background object is also tagged. (LC-3921687)
 
+#### [!DNL Document Services] {#forms-document-services-6520}
+
+* (AEM Forms on JEE Only) The PDF Generator service fails to enumerate the fonts available on the server. Consequently, the font selection panel on the Adobe PDF Settings page in the PDFG Admin UI remains empty, effectively preventing (un)embedding of chosen fonts. (FORMS-12095)
+
+
+
 ### Foundation {#foundation-6520}
 
 #### Communities {#communities-6520}
