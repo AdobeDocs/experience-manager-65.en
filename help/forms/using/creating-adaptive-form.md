@@ -205,7 +205,7 @@ By default, the auto save option is not enabled. You can enable the auto save op
    >To configure the service, go to Adobe Experience Manager Web Console configuration at `https://'[server]:[port]'system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
 
 
-## How to rename an AEM Adaptive Form {#rename-an-AEM-Adaptive-Form}
+## How to rename an AEM Adaptive Form ? {#rename-an-AEM-Adaptive-Form}
 
 To rename an adaptive form, perform the following steps:
 
