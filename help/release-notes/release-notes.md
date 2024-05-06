@@ -147,12 +147,12 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Adaptive Forms]
 
-* W
+* <!-- THIS BUG WAS ALREADY REPORTED IN 6.5.20.0 RELEASE NOTES. IS IT NEEDED AGAIN IN THE 6.5.21.0 RELEASE NOTES? (AEM Forms on JEE Only) The PDF Generator service fails to enumerate the fonts available on the server. Consequently, the font selection panel on the Adobe PDF Settings page in the PDFG Admin UI remains empty, effectively preventing (un)embedding of chosen fonts. (FORMS-12095) -->
+
 
 #### [!DNL Forms Designer] {#forms-designer-6521}
 
 * W
-
 
 
 ### Foundation {#foundation-6521}
@@ -163,9 +163,11 @@ Some of the key features and enhancements in this release include the following:
 
 * Upgrade issue with AEM 6.5 Service Pack 19 (SP19) in which the Application server context-root path is missing for unauthorised requests to Apache Felix following the installation of SP19. Update to Apache Felix Web Management Console 4.9.8. (NPR-41933)
 
+* U
+
 #### Communities {#communities-6521}
 
-* U
+* T
 
 #### Content distribution{#foundation-content-distribution-6521}
 
