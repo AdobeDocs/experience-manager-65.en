@@ -153,7 +153,11 @@ Some of the key features and enhancements in this release include the following:
 
 * W
 
+
+
 ### Foundation {#foundation-6521}
+
+
 
 #### Apache Felix {#felix-6521}
 
@@ -170,7 +174,10 @@ Some of the key features and enhancements in this release include the following:
 #### Integrations{#integrations-6521}
 
 * Replacement of Service Account (JSON Web Token or JWT) credentials with OAuth2 Server-to-Server credentials (also known as Service Principals).(NPR-41994)  MAJOR
+* Create Audience request fails with IMS (Identity Management System) configuration. (NPR-41888)  MAJOR
 * When a customer attempts to view the Payload page, the content does not display properly due to a malformed URL; a 404 error is displayed. The error is caused by is missing a question mark symbol in the URL, before the query parameters. This issue requires the customer to manually insert the question mark symbol to view the Payload page correctly. (NPR-41957)
+* Remove code and dependency of Adobe Search&Promote from AEM 6.5 which reached [end-of-life September 2022 as per notice](https://experienceleague.adobe.com/en/docs/discontinued/using/search-promote). (NPR-41855)
+
 
 #### Localization{#localization-6521}
 
@@ -178,7 +185,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### Platform{#foundation-platform-6521}
 
-* I
+* The `Unclosed resource resolver` error is being experienced for `com.day.cq.mailer.impl.DefaultMailService`. The `MessageGatewayService` class, which is out-of-the-box, was being used without a resource resolver. The issue occured on any page with a form submission button that sends an email using this class. (NPR-41853)
 
 #### Sling{#foundation-sling-6521}
 
@@ -186,7 +193,7 @@ Some of the key features and enhancements in this release include the following:
 
 #### Translation{#foundation-translation-6521}
 
-* F
+* When creating multiple configurations and going to the Translation Cloud Services configurations, not all elements are displayed in the UI. Only the first 40 elements/folder are displayed, lazy loading is triggered but not adding more content. (NPR-41829) 
 
 #### User interface{#foundation-ui-6521}
 
