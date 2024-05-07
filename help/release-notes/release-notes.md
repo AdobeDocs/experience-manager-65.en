@@ -27,7 +27,7 @@ role: User,Admin,Architect,Developer
 
 ## What is included in [!DNL Experience Manager] 6.5.21.0 {#what-is-included-in-aem-6521}
 
-[!DNL Experience Manager] 6.5.21.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements released since the initial availability of 6.5 in April 2019. [Install this Service Pack](#install) on [!DNL Experience Manager] 6.5. 
+[!DNL Experience Manager] 6.5.21.0 includes new features, key customer-requested enhancements, and bug fixes. It also includes performance, stability, and security improvements released since the initial availability of 6.5 in April 2019. [Install this Service Pack](#install) on [!DNL Experience Manager] 6.5. 
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
