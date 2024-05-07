@@ -13,6 +13,7 @@ user-guide-title: AEM 6.5
 + Release Notes {#release-notes}
   + [Release notes](/help/release-notes/release-notes.md)
   + Previous release notes {#service-pack}
+    + [6.5.20](/help/release-notes/previous/6-5-20.md)
     + [6.5.19](/help/release-notes/previous/6-5-19.md)
     + [6.5.18](/help/release-notes/previous/6-5-18.md)
     + [6.5.17](/help/release-notes/previous/6-5-17.md)
