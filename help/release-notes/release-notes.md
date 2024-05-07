@@ -21,7 +21,7 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 | Product | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
 | Version  | 6.5.21.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
-| Type     | Service Pack release         |
+| Type     | Service pack release         |
 | Date     | Thursday, May 23, 2024 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
