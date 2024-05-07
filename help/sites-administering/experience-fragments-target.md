@@ -25,7 +25,7 @@ AEM Experience Fragments can be exported to the default workspace in Adobe Targe
 
 >[!NOTE]
 >
->[IMS integrations are now configured with S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md). 
+>[IMS integrations are now configured with S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md). 
 >
 >Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md). 
 
