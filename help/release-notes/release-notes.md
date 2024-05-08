@@ -110,9 +110,10 @@ Some of the key features and enhancements in this release include the following:
 
 * The edit mode applies a gray background inconsistently, which fails to comply with the WCAG (Web Content Accessibility Guidelines) color contrast standards. (SITES-20060)
 
-<!-- ### [!DNL Assets]{#assets-6521}
+### [!DNL Assets]{#assets-6521}
 
-* U -->
+
+
 
 #### [!DNL Dynamic Media]{#assets-dm-6521}
 
