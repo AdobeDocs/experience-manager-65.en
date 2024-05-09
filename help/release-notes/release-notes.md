@@ -127,9 +127,9 @@ The following is the list of accessibility fixes included in this release:
 
 ### [!DNL Assets]{#assets-6521}
 
-* If an asset is published to Brand Portal, the publishing status remains inconsistent. (ASSETS-36807)
+* If an asset is published to Brand Portal, the publishing status remains inconsistent. (ASSETS-36807) MAJOR
 * Assets are not deleted when you delete them from an instance using an API call. (ASSETS-35131)
-* When you try to import metadata, the insertion of characters in any language other than English are replaced by a `question mark (?)`.  (ASSETS-35091)
+* When you try to import metadata, a `question mark (?)` replaces the insertion of characters in any language other than English.  (ASSETS-35091)
 * When `dc:title` property is used with data type string, the assets content tree is not working appropriately after the installation of Service Pack 6.5.19. (ASSETS-34684)
 * An error is shown if there is any special character in the name of an asset. (ASSETS-33248)
 
@@ -138,7 +138,7 @@ The following is the list of accessibility fixes included in this release:
 * In AEM 6.5.18, it does not show all the hotspots added to an asset when you edit the hotspots. However, all the hotspots work in a published asset, but you cannot edit them later if you needed to. (ASSETS-33609) MAJOR
 * The latest EPS files that get uploaded are not generating thumbnails after reprocessing. (ASSETS-32617) MAJOR
 * In Tools > Assets > Dynamic Media Publish Setup > Request Attributes tab, the inputs `Width(px)` and `Height(px)` look different in Spanish, Italian, and Portuguese. They are not aligned with each other for these locations. (ASSETS-31896)
-* Effective May 1, 2024, Adobe Dynamic Media is ending support for the following:
+* Effective May 1, 2024, Adobe Dynamic Media ended support for the following:
   * SSL (Secure Socket Layer) 2.0
   * SSL 3.0 
   * TLS (Transport Layer Security) 1.0 and 1.1
