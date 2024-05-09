@@ -125,13 +125,9 @@ The following is the list of accessibility fixes included in this release:
 
 * The edit mode applies a gray background inconsistently, which fails to comply with the WCAG (Web Content Accessibility Guidelines) color contrast standards. (SITES-20060)
 
-### [!DNL Assets]{#assets-6521}
+<!-- ### [!DNL Assets]{#assets-6521}
 
-* If an asset is published to Brand Portal, the publishing status remains inconsistent. (ASSETS-36807)
-* Assets are not deleted when you delete them from an instance using an API call. (ASSETS-35131)
-* When you try to import metadata, the insertion of characters in any language other than English are replaced by a `question mark (?)`.  (ASSETS-35091)
-* When `dc:title` property is used with data type string, the assets content tree is not working appropriately after the installation of Service Pack 6.5.19. (ASSETS-34684)
-* An error is shown if there is any special character in the name of an asset. (ASSETS-33248)
+* U -->
 
 #### [!DNL Dynamic Media]{#assets-dm-6521}
 
