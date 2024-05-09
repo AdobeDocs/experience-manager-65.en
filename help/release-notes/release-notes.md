@@ -39,6 +39,21 @@ Some of the key features and enhancements in this release include the following:
 
 * A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994) MAJOR
 
+### [!DNL Assets]
+
+#### Enhancements
+
+The following is the list of enhancements included in this release:
+
+* The IPTC tab now supports [!UICONTROL Alt Text] and [!UICONTROL Extended Description] text fields. (ASSETS-34918)
+
+#### Accessibility fixes
+
+The following is the list of accessibility fixes included in this release:
+
+* If the processing status of an asset is Failed or Metadata Failed, the subtitles and audio tracks UI does not work appropriately. (ASSETS-37281)
+* When you save an asset metadata and try to edit it, the language name does not display. (ASSETS-37281)
+
 <!-- ### [!DNL Forms]
 * A -->
 
@@ -110,9 +125,13 @@ Some of the key features and enhancements in this release include the following:
 
 * The edit mode applies a gray background inconsistently, which fails to comply with the WCAG (Web Content Accessibility Guidelines) color contrast standards. (SITES-20060)
 
-<!-- ### [!DNL Assets]{#assets-6521}
+### [!DNL Assets]{#assets-6521}
 
-* U -->
+* If an asset is published to Brand Portal, the publishing status remains inconsistent. (ASSETS-36807)
+* Assets are not deleted when you delete them from an instance using an API call. (ASSETS-35131)
+* When you try to import metadata, the insertion of characters in any language other than English are replaced by a `question mark (?)`.  (ASSETS-35091)
+* When `dc:title` property is used with data type string, the assets content tree is not working appropriately after the installation of Service Pack 6.5.19. (ASSETS-34684)
+* An error is shown if there is any special character in the name of an asset. (ASSETS-33248)
 
 #### [!DNL Dynamic Media]{#assets-dm-6521}
 
