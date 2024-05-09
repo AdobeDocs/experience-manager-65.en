@@ -12,9 +12,9 @@ role: User,Admin,Architect,Developer
 
 | Product   | Adobe Experience Manager 6.5 Forms  |
 |---|---|
-| Version  |  6.5.20.0|
+| Version  |  6.5.21.0|
 | Type  |  Service Pack release |
-| Date  |  29 February 2024 |
+| Date  |  29 May 2024 |
 | Download URL | [Latest AEM Forms Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -63,6 +63,17 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. Download the required software
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+
+Before installing the AEM service package, download the [org.apache.felix.servlet-api-1.2.0 jar](assets/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) file on your local folder.
+
+  1. Login to `http://localhost:port/lc/system/console/bundles`.
+  1. Click on Install/Update button. 
+  1. Select the `.jar` file from your local folder. 
+  1. Click on Install or Update button.
+  1. Stop the server.
+  1. Start the server.
+  1. Once the server is up, install AEM service package and AEMDS.
+
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [Fragment Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
