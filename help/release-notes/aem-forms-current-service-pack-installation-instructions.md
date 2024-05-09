@@ -64,7 +64,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
-Before installing the AEM service package, download the [org.apache.felix.servlet-api-1.2.0 jar](assets/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) file on your local folder.
+Before installing the AEM service package, download the [org.apache.felix.servlet-api-1.2.0 jar](forms/using/assets/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) file on your local folder.
 
   1. Login to `http://localhost:port/lc/system/console/bundles`.
   1. Click on Install/Update button. 
