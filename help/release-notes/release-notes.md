@@ -524,6 +524,11 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 1. Stop the application server.
 
 -->
+* In an Adaptive Form based on an XDP with embedded scripts on checkboxes, the scripts are not executed for elements after such checkboxes. (FORMS-14244)
+* Rows in the date picker widget are truncated when traversing through months in the pop-up widget for fields with Edit/Display pattern. (FORMS-13620)
+* Form submissions are failing when trying to use the DOR (Document of Record) service in the backend. The error message encountered is: "Submit Action couldn't complete because Form Resource isn't correctly assigned." (FORMS-13798)
+* When an Adaptive Form is submitted from an Adobe Experience Manager Publish instance to an Adobe Experience Manager Workflow, the workflow fails to save the attachments. (FORMS-14209)
+* On installing AEM 6.5 Forms Service Pack 20 package (AEM Forms add-on package for SP20),the AEM Sites user interface (UI) exhibits significant performance degradation. (FORMS-13791)
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
