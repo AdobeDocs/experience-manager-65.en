@@ -1,10 +1,9 @@
 ---
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installation instructions for OSGi and JEE environment
-exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User, Admin, Architect, Developer
 ---
 # AEM 6.5 Forms Service Pack installation instructions {#aem-form-patch-installation-instructions}
 
@@ -64,19 +63,11 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
-Before installing the AEM service package, download the [org.apache.felix.servlet-api-1.2.0 jar](forms/using/assets/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) file on your local folder.
-
-  1. Login to `http://localhost:port/lc/system/console/bundles`.
-  1. Click on Install/Update button. 
-  1. Select the `.jar` file from your local folder. 
-  1. Click on Install or Update button.
-  1. Stop the server.
-  1. Start the server.
-  1. Once the server is up, install AEM service package and AEMDS.
+* [Fragment Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
 
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-* [Fragment Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+
 
 +++
 
@@ -142,12 +133,11 @@ Before installing the AEM service package, download the [org.apache.felix.servle
 
 +++
 
-+++5. Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
++++5. Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier) (**Mandatory Installation**)
 
    >[!NOTE]
    >
-   > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is mandatory to install the servlet fragment.
-   > * It is mandatory to install the **servlet fragment** for all application servers except those running on **JBoss&reg; EAP 7.4.0**.
+   > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment.
 
 
  To download and install the servlet fragment: 
