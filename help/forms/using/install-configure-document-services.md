@@ -3,7 +3,6 @@ title: Installing and configuring document services
 description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode Barcoded Forms.
 topic-tags: installing
 role: Admin, User, Developer
-exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 ---
 
@@ -292,6 +291,10 @@ The user account used to start the application server requires the **Replace a p
 1. Open the Group Policy Editor for Microsoft&reg; Windows. To open the Group Policy Editor, click **[!UICONTROL Start]**, type **gpedit.msc** in the Start Search box, and click **[!UICONTROL Group Policy Editor]**.
 1. Navigate to **[!UICONTROL Local Computer Policy]** &gt; **[!UICONTROL Computer Configuration]** &gt; **[!UICONTROL Windows Settings]** &gt; **[!UICONTROL Security Settings]** &gt; **[!UICONTROL Local Policies]** &gt; **[!UICONTROL User Rights Assignment]** and edit the **[!UICONTROL Replace a process level token]** policy and include the Administrators group.
 1. Add the user to the Replace a Process Level Token entry.
+
+>[!NOTE]
+>
+> If the AEM server is running as a service under LSA, explicitly assigning this privilege to a user may not be necessary, it means if no other application/components are installed apart from the one required for PDFG on the VM, then you do not need to grant any other accounts the **Replace a process level token right** and only local service and network service accounts should have the right.
 
 ### (Windows Only) Enable the PDF Generator service for non-administrators {#enable-the-pdf-generator-service-for-non-administrators}
 
