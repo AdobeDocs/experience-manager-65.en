@@ -294,7 +294,7 @@ The user account used to start the application server requires the **Replace a p
 
 >[!NOTE]
 >
-> If the AEM server is running as a service under LSA, explicitly assigning this privilege to a user may not be necessary, it means if no other application/components are installed apart from the one required for PDFG on the VM, then you do not need to grant any other accounts the **Replace a process level token right** and only local service and network service accounts should have the right.
+> As implied above, if the AEM server is running as a service under the LocalSystem account (LSA), explicitly assigning this privilege to a user is not necessary.
 
 ### (Windows Only) Enable the PDF Generator service for non-administrators {#enable-the-pdf-generator-service-for-non-administrators}
 
