@@ -4,8 +4,8 @@ description: Install AEM Forms document services to create, assemble, distribute
 topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
+exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 ---
-
 # Installing and configuring document services {#installing-and-configuring-document-services}
 
 AEM Forms provides a set of OSGi services to accomplish different document level operations, for example, services to create, assemble, distribute, and archive PDF documents, add digital signatures to limit access to documents, and decode Barcoded Forms. These services are included in AEM Forms add-on package. Collectively, these services are known as document services. The list of available document services and their major capabilities is as below:
