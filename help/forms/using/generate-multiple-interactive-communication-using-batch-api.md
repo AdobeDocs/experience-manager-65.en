@@ -115,9 +115,7 @@ You combine data (records) saved in an external data source with an interactive 
     1. Select your fetch or get service from the Read Service field under Edit Properties pane.
     1. Select the pencil icon for the read service argument to bind the argument to a Request Attribute and specify the binding value. It binds the service argument to the specified binding attribute or literal value, which is passed to the service as an argument to fetch details associated with the specified value from the data source.
 
-        <br>
         In this example, the id argument takes the value of the id attribute of the user profile and passes it as an argument to the read service. It reads and returns values of associated properties from the employee data model object for the specified id. So, if you specify 00250 in the id field in the form, the read service reads details of the employee with 00250 employee id.
-        <br>
 
         ![Configure request attribute](assets/request-attribute.png)
 
