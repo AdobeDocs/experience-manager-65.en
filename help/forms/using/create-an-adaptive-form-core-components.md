@@ -1,8 +1,6 @@
 ---
 title: How to Create an Adaptive Form?
-
 description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms]. Adaptive Forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an Adaptive Form based on a Form Data Model and XML or JSON schema.
-
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 contentOwner: Khushwant Singh
@@ -10,8 +8,8 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
-exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
 solution: Experience Manager, Experience Manager Forms
+exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
 ---
 # Create Core Components based Adaptive Forms {#creating-an-adaptive-form-core-components}
 
@@ -162,6 +160,21 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a redirect page or thank you message](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
 1. Select a form data model. Open the **[!UICONTROL Basic]** tab. In the prefill service, select **[!UICONTROL Form Data Model Prefill Service]**. 
 1. Click **[!UICONTROL Done]**. Your Adaptive form is now configured to use Form Data Model Prefill. You can now, use the [rule editor](rule-editor.md) to create rules to prepopulate fields of the form.
+
+## How to rename an AEM Adaptive Form ?{#rename-an-AEM-Adaptive-Form}
+
+To rename an adaptive form, perform the following steps:
+
+1. Select an adaptive form in your AEM Forms user interface.
+1. Click on the **Properties** located on the upper rail.
+
+    ![Properties](/help/forms/using/assets/rename-form-properties.png)
+
+1. Change the name of the form in the **Title** tab, as shown in the image below.
+1. Click **Save and Close**.
+
+    ![Rename an AEM Adaptive Form](/help/forms/using/assets/rename-form-title.png)
+
 
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}

@@ -1043,6 +1043,39 @@ For example, to grant access for requests with the Referrer `my.domain` you can:
 >
 >This functionality means that you must ensure that no sensitive data is available, as it could be leaked this way. For example, it includes information that could be present as field names in the model definition.
 
+## Limitations {#limitations}
+
+To protect against potential problems there are default limitations imposed on your queries:
+
+* The query cannot contain more than 1M (1024 * 1024) characters
+* The query cannot contain more than 15000 tokens 
+* The query cannot contain more than 200000 whitespace tokens
+
+You also need to aware of:
+
+* A field conflict error will be returned when your GraphQL query contains fields with the same name in two (or more) models, and the following conditions are met:
+
+  * So where:
+
+    * Two (or more models) are used as possible references; when they are defined as an allowed **Model Type** in the Content Fragment reference.
+
+    and:
+
+    * These two models have fields having a common name; that means the same name occurs in both models.
+
+    and
+
+    * Those fields are of different data types.
+
+  * For example:
+
+    * When two (or more) fragments with different models (for example, `M1`, `M2`) are used as possible references (Content Reference or Fragment Reference) from another fragment; for example, `Fragment1` `MultiField/List`
+    * And these two fragments with different models (`M1`, `M2`) have fields with the same name, but different types.
+      To illustrate:
+      * `M1.Title` as `Text` 
+      * `M2.Title` as `Text/MultiField`
+    * Then a field conflict error will occur if the GraphQL query contains the `Title` field.
+
 ## Authentication {#authentication}
 
 See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md).

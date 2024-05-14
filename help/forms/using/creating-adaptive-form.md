@@ -1,11 +1,11 @@
 ---
 title: How to Create an Adaptive Form
-description: Learn how to create an adaptive form using [!DNL Experience Manager Forms]. Adaptive forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an adaptive form based on a form data model, XFA form template, and XML or JSON schema. 
+description: Learn how to create an adaptive form using [!DNL Experience Manager Forms]. Adaptive forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an adaptive form based on a form data model, XFA form template, and XML or JSON schema.
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
-exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 solution: Experience Manager, Experience Manager Forms
+exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 ---
 # Creating an adaptive form {#creating-an-adaptive-form}
 
@@ -204,3 +204,18 @@ By default, the auto save option is not enabled. You can enable the auto save op
    >For auto save option to work for anonymous users, ensure that you configure the Forms Common Configuration Service to allow all users to preview, verify, and sign forms.
    >
    >To configure the service, go to Adobe Experience Manager Web Console configuration at `https://'[server]:[port]'system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
+
+
+## How to rename an AEM Adaptive Form ? {#rename-an-AEM-Adaptive-Form}
+
+To rename an adaptive form, perform the following steps:
+
+1. Select an adaptive form in your AEM Forms user interface.
+1. Click on the **Properties** located on the upper rail.
+
+    ![Properties](/help/forms/using/assets/rename-form-properties.png)
+
+1. Change the name of the form in the **Title** tab, as shown in the image below.
+1. Click **Save and Close**.
+
+    ![Rename an AEM Adaptive Form](/help/forms/using/assets/rename-form-title.png)
