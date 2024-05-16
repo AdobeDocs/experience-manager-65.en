@@ -24,6 +24,26 @@ This article lists the critical fixes implemented to address known issues, impro
     <td><strong>Fixed issues</strong></td>
   </tr>
   <tr>
+    <td>May 16, 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1192-010.zip">Hotfix for AEM Service Pack 6.5.20.0 for Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1192-010.zip">Hotfix for AEM Service Pack 6.5.20.0 for Linux </a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1192-010.zip">Hotfix for AEM Service Pack 6.5.20.0 for Apple macOS</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>In an Adaptive Form based on an XDP with embedded scripts on checkboxes, the scripts are not executed for elements after such checkboxes. A hotfix is available for this issue. (FORMS-14244) </li>
+     <li> Rows in the date picker widget are truncated when traversing through months in the pop-up widget for fields with Edit/Display pattern. A hotfix is available for this issue. (FORMS-13620) </li>
+     <li>Form submissions are failing when trying to use the DOR (Document of Record) service in the backend. The error message encountered is: "Submit Action couldn't complete because Form Resource isn't correctly assigned." (FORMS-13798) </li>
+     <li>When an Adaptive Form is submitted from an Adobe Experience Manager Publish instance to an Adobe Experience Manager Workflow, the workflow fails to save the attachments.  (FORMS-14209) </li>
+     <li> On installing AEM 6.5 Forms Service Pack 20 package (AEM Forms add-on package for SP20),the AEM Sites user interface (UI) exhibits significant performance degradation.  (FORMS-13791) </li>
+     <li>The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)</li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
     <td>January 29, 2024</td>
      <td>
      <ul>
