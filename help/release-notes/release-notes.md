@@ -22,7 +22,7 @@ role: User,Admin,Architect,Developer
 | -------- | ---------------------------- |
 | Version  | 6.5.21.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
-| Date     | Thursday, May 23, 2024 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Date     | Thursday, June 0, 2024 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.21.0 {#what-is-included-in-aem-6521}
@@ -106,7 +106,7 @@ The following is the list of accessibility fixes included in this release:
 
 #### Experience Fragments{#sites-experiencefragments-6521}
 
-* Rollout of Experience Fragments from `masters/language` to `country/language` does not update cross-references. (SITES-20559) BLOCKER 
+* Rollout of Experience Fragments from `masters/language` to `country/language` does not update cross-references. (SITES-21172) BLOCKER 
 * Templates not only specified in the `cq:allowedTemplates`, but templates that have `allowedPaths` configured at the template level, appear as options when creating a new Experience Fragment. (SITES-20855) MAJOR
 
 <!-- #### Foundation Components (Legacy){#sites-foundation-components-legacy-6521}
@@ -119,7 +119,7 @@ The following is the list of accessibility fixes included in this release:
 
 #### MSM - Live Copies{#sites-msm-live-copies-6521}
 
-* Overlaid the Page component to add tabs in page properties. One of them is page configuration and has a property to add an Experience Fragment URL. The link configured in the page properties for the Experience Fragment does not change for any language copies created for that page. The configured link should change with the language copy URL. (SITES-19580) MAJOR
+* Overlaying the Page component to add tabs in page properties. One of them is page configuration and has a property to add an Experience Fragment URL. The link configured in the page properties for the Experience Fragment does not change for any language copies created for that page. The configured link should change with the language copy URL. (SITES-19580) MAJOR
 
 #### Page Editor{#sites-pageeditor-6521}
 
@@ -160,11 +160,11 @@ The following is the list of accessibility fixes included in this release:
 
 ### [!DNL Forms]{#forms-6521}
 
-<!--Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.21.0 Forms add-on package release is scheduled for Thursday, May 30, 2024. A list of Forms fixes and enhancements is added to this section post the release.-->
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.21.0 Forms add-on package release is scheduled for Thursday, June 13, 2024. A list of Forms fixes and enhancements is added to this section post the release.
 
-#### [!DNL Adaptive Forms]
+<!-- #### [!DNL Adaptive Forms]
 
-* <!-- THIS BUG WAS ALREADY REPORTED IN THE 6.5.20.0 RELEASE NOTES. IS IT NEEDED AGAIN IN THE 6.5.21.0 RELEASE NOTES? (AEM Forms on JEE Only) The PDF Generator service fails to enumerate the fonts available on the server. Consequently, the font selection panel on the Adobe PDF Settings page in the PDFG Admin UI remains empty, effectively preventing (un)embedding of chosen fonts. (FORMS-12095) -->
+* THIS BUG WAS ALREADY REPORTED IN THE 6.5.20.0 RELEASE NOTES. IS IT NEEDED AGAIN IN THE 6.5.21.0 RELEASE NOTES? (AEM Forms on JEE Only) The PDF Generator service fails to enumerate the fonts available on the server. Consequently, the font selection panel on the Adobe PDF Settings page in the PDFG Admin UI remains empty, effectively preventing (un)embedding of chosen fonts. (FORMS-12095) -->
 
 
 <!-- #### [!DNL Forms Designer] {#forms-designer-6521}
@@ -204,7 +204,7 @@ The following is the list of accessibility fixes included in this release:
 
 #### Integrations{#foundation-integrations-6521}
 
-* Regarding `cq-target-integration`, need to remove non-test usage of Google Guava. (CQ-4357101)
+* Regarding `cq-target-integration`, need to remove non-test usage of Google Guava. (CQ-4357101) CRITICAL
 * Replacement of Service Account (JSON Web Token or JWT) credentials with OAuth2 Server-to-Server credentials (also known as Service Principals). (NPR-41994) MAJOR
 * Create Audience request fails with IMS (Identity Management System) configuration. (NPR-41888) MAJOR
 * When a customer attempts to view the Payload page, the content does not display properly due to a malformed URL; a 404 error is displayed. A missing question mark symbol in the URL, before the query parameters, caused the error. This issue requires the customer to insert the question mark symbol to view the Payload page correctly. (NPR-41957)
@@ -444,33 +444,28 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 ### Known issues for AEM Sites {#known-issues-aem-sites-6521}
 
-* In an Adaptive Form based on an XDP with embedded scripts on checkboxes, the scripts are not executed for elements after such checkboxes. (FORMS-14244)
-* Rows in the date picker widget are truncated when traversing through months in the pop-up widget for fields with Edit/Display pattern. (FORMS-13620)
-* Form submissions are failing when trying to use the DOR (Document of Record) service in the backend. The error message encountered is: "Submit Action couldn't complete because Form Resource isn't correctly assigned." (FORMS-13798)
-* When an Adaptive Form is submitted from an Adobe Experience Manager Publish instance to an Adobe Experience Manager Workflow, the workflow fails to save the attachments. (FORMS-14209)
-* On installing AEM 6.5 Forms Service Pack 20 package (AEM Forms add-on package for SP20),the AEM Sites user interface (UI) exhibits significant performance degradation. (FORMS-13791)
-* The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)
-* Adaptive Forms let you use custom functions with ECMAScript version 5 or earlier. When a custom function uses ECMAScript version 6 or later, like 'let', 'const', or arrow functions, the rule editor might not open properly.
-* Users are unable to create a Correspondence Management letter. When a user creates a letter, an error with description "`Object Object`" appears and the letter is not created. Thumbnails for layouts also fail to load on the letter creation screen. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) to resolve the issue. (FORMS-13496)
-* The interactive communications service creates the PDF document, but the user's data is not automatically populated in the form fields. The prefill service is not working as expected. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) to resolve the issue. (FORMS-13413, FORMS-13493)
-* The Review and Correct (RnC) editor of automated forms conversion service fails to load. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) to resolve the issue. (FORMS-13491)
-* After updating from AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0) to AEM 6.5 Forms Service Pack 20 (6.5.20.0), users encounter a JSP compilation error. They cannot open or create adaptive forms and they're running into errors with other AEM interfaces like the page editor, AEM Forms UI, and AEM Workflow editor. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) to resolve the issue. (FORMS-13492)
 * SITES-17934 - Content Fragments - Preview fails due to DoS protection for large tree of fragments. See the [KB article about Default GraphQL Query Executor configuration options](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945)
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6521}
 
 * In an Adaptive Form based on an XDP with embedded scripts on checkboxes, the scripts are not executed for elements after such checkboxes. (FORMS-14244)
+* Users are unable to create a Correspondence Management letter. When a user creates a letter, an error with description "`Object Object`" appears and the letter is not created. Thumbnails for layouts also fail to load on the letter creation screen. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) to resolve the issue. (FORMS-13496)
+* The Interactive Communications service creates the PDF document, but the user's data is not automatically populated in the form fields. The prefill service is not working as expected. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) to resolve the issue. (FORMS-13413, FORMS-13493)
+* The Review and Correct (RnC) editor of an automated forms conversion service fails to load. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) to resolve the issue. (FORMS-13491)
+* After updating from AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0) to AEM 6.5 Forms Service Pack 20 (6.5.20.0), users encounter a JSP compilation error. They cannot open or create adaptive forms and they're running into errors with other AEM interfaces like the page editor, AEM Forms UI, and AEM Workflow editor. You can install the [latest AEM 6.5 Form Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) to resolve the issue. (FORMS-13492)
 * Rows in the date picker widget are truncated when traversing through months in the pop-up widget for fields with Edit/Display pattern. (FORMS-13620)
 * Form submissions are failing when trying to use the DOR (Document of Record) service in the backend. The error message encountered is: "Submit Action couldn't complete because Form Resource isn't correctly assigned." (FORMS-13798)
 * When an Adaptive Form is submitted from an Adobe Experience Manager Publish instance to an Adobe Experience Manager Workflow, the workflow fails to save the attachments. (FORMS-14209)
-* On installing AEM 6.5 Forms Service Pack 20 package (AEM Forms add-on package for SP20),the AEM Sites user interface (UI) exhibits significant performance degradation. (FORMS-13791)
+* On installing AEM 6.5 Forms Service Pack 20 package (AEM Forms add-on package for SP20), the AEM Sites user interface (UI) exhibits significant performance degradation. (FORMS-13791)
+* The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)
+* Adaptive Forms let you use custom functions with ECMAScript version 5 or earlier. When a custom function uses ECMAScript version 6 or later, like `let`, `const`, or arrow functions, the rule editor might not open properly.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
 The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
 
-* [List of OSGi bundles included in Experience Manager 6.5.21.0](/help/release-notes/assets/65200-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.21.0](/help/release-notes/assets/65200-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.21.0](/help/release-notes/assets/65210-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.21.0](/help/release-notes/assets/65210-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
 
