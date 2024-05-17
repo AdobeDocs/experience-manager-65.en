@@ -442,7 +442,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
  
 * Installing tagging related out-of-the-box content by way of an official update package resets the languages property of the `/content/cq:tags` node to default. This action is true for Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, patches, and so on. Therefore, it is necessary to add it from the properties before installation.
 
-### Known issues for AEM Sites {#known-issues-aem-sites-6521}
+### Known issue for AEM Sites {#known-issues-aem-sites-6521}
 
 * SITES-17934 - Content Fragments - Preview fails due to DoS protection for large tree of fragments. See the [KB article about Default GraphQL Query Executor configuration options](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945)
 
