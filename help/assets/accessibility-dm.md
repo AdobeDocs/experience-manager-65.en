@@ -59,7 +59,7 @@ See the **Assistive technology support** Help topic in any customizing viewer to
 
 Dynamic Media supports the delivery of videos and adaptive video sets with closed captioning. The captions must be displayed on top of the video content.
 
-See [Video in Dynamic Media - Add closed captions or subtitles to video](/help/assets/video.md#adding-captions-to-video).
+See [Video in Dynamic Media - Add closed captions to video](/help/assets/video.md#adding-captions-to-video).
 
 >[!MORELIKETHIS]
 >

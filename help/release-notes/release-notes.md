@@ -51,7 +51,7 @@ The following is the list of enhancements included in this release:
 
 The following is the list of accessibility fixes included in this release:
 
-* If the processing status of an asset is Failed or Metadata Failed, the subtitles and audio tracks UI does not work appropriately. (ASSETS-37281)
+* If the processing status of an asset is Failed or Metadata Failed, the captions and audio tracks UI does not work appropriately. (ASSETS-37281)
 * When you save an asset metadata and try to edit it, the language name does not display. (ASSETS-37281)
 
 <!-- ### [!DNL Forms]

@@ -471,7 +471,7 @@ To include topnav in your contentpage component:
 
 #### Enhancing Pages with Subtitles {#enhancing-pages-with-subtitles}
 
-The Page component defines properties that enable you to provide subtitles for pages. Add subtitles that provide information about the page content.
+The Page component defines properties that enable you to provide captions for pages. Add captions that provide information about the page content.
 
 1. In your browser, open the **Products** page.
 1. On the Sidekick **Page** tab, click **Page Properties**.
