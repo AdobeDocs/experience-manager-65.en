@@ -7,6 +7,8 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Backing up the Adobe Experience Manager (AEM) Forms data {#backing-up-the-aem-forms-data}
 

@@ -11,6 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 68a9d95a-d51c-4a97-ae36-d4cb16c6fac0
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Overview of Forms workflow {#overview-of-forms-workflow}
 

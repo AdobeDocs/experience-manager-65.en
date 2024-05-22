@@ -8,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Enabling multi-threaded file conversions {#enabling-multi-threaded-file-conversions}
 

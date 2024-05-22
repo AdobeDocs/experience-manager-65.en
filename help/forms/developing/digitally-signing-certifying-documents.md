@@ -8,6 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms,  Document Services, API"
 ---
 # Digitally Signing and Certifying Documents {#digitally-signing-and-certifying-documents} 
 

@@ -8,9 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 
-role: Admin
+role: "Admin,User"
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 solution: Experience Manager, Experience Manager Forms
+feature: Interactive Communication
 ---
 # Download an XFA or a PDF form template {#download-an-xfa-or-a-pdf-form-template}
 

@@ -11,6 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms, Security"
+role: "User, Developer"
 ---
 # Managing certificates {#managing-certificates}
 

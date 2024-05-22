@@ -8,6 +8,7 @@ topic-tags: document_services
 feature: Document Services
 exl-id: 62adca19-8ed0-48b3-b7eb-9dbc3d8f96c6
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Use HSM to digitally sign or certify documents {#use-hsm-to-digitally-sign-or-certify-documents}
 

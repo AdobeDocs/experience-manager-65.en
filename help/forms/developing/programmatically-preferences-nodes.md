@@ -12,6 +12,7 @@ topic-tags: operations
 role: Developer
 exl-id: 108eb249-879b-4e4f-b431-8118b8656e62
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms, API"
 ---
 # Programmatically managing the Preferences Nodes {#programmatically-managing-the-preferencesnodes} 
 

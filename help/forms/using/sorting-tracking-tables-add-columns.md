@@ -10,6 +10,8 @@ topic-tags: forms-workspace
 
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Customize tracking tables{#customize-tracking-tables}
 

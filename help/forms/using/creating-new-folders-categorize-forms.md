@@ -8,9 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 
-role: Admin
+role: "Admin,User"
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 ---
 # Create new folders to categorize forms {#create-new-folders-to-categorize-forms}
 

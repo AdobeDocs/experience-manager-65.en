@@ -11,6 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: f4045df5-a35b-41d7-910e-971017148597
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms, Data Connectors"
+role: "User, Developer"
 ---
 # Configuring Connector for IBM FileNet {#configuring-connector-for-ibm-filenet}
 

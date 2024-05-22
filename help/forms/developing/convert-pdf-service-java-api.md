@@ -8,6 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms, API"
 ---
 # Convert PDF Service Java&trade; API Quick Start (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 

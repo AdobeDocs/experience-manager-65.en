@@ -6,6 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "Admin, User, Developer"
 ---
 # Create or Configure a watched folder {#create-or-configure-a-watched-folder}
 

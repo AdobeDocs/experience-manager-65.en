@@ -10,6 +10,8 @@ topic-tags: publish
 
 exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
+role: "Admin, User, Developer"
 ---
 # Listing forms on a web page using APIs {#listing-forms-on-a-web-page-using-apis}
 

@@ -7,6 +7,8 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e15dae6f-d30d-4770-a5ca-34f522a01d31
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Considerations when running Administration Console {#considerations-when-running-administrationconsole}
 

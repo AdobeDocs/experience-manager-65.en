@@ -6,6 +6,7 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Best practices for working with adaptive forms {#best-practices-for-working-with-adaptive-forms}
 

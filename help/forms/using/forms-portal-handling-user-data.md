@@ -4,9 +4,10 @@ description: Learn about managing user data such as access, delete, and data sto
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-role: Admin
+role: "Admin,User"
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 ---
 # Forms Portal | Handling user data {#forms-portal-handling-user-data}
 

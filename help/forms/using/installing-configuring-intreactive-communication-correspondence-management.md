@@ -8,9 +8,10 @@ topic-tags: installing
 
 docset: aem65
 
-role: Admin
+role: "Admin, User, Developer"
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
+feature: Interactive Communication
 ---
 # Install and configure Interactive Communications{#install-and-configure-interactive-communications}
 

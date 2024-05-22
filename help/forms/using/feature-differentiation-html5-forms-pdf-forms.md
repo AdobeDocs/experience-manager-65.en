@@ -9,6 +9,7 @@ docset: aem65
 feature: HTML5 Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Feature differentiation between HTML5 forms and PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 

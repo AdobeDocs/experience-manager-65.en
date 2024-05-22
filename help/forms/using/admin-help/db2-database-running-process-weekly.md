@@ -8,6 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: ca2cfe35-b602-4ef8-b4e3-af846105d4de
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # DB2&reg; database: Running a process weekly{#db-database-running-a-process-weekly}
 

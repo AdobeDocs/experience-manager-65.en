@@ -13,6 +13,7 @@ docset: aem65
 feature: Form Data Model
 exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # [!DNL AEM Forms] Data Integration {#aem-forms-data-integration}
 

@@ -12,6 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Introduction to authoring adaptive forms {#introduction-to-authoring-adaptive-forms}
 

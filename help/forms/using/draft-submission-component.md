@@ -11,6 +11,8 @@ topic-tags: publish
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
+role: "Admin, User, Developer"
 ---
 # Drafts and submissions component{#drafts-and-submissions-component}
 

@@ -10,6 +10,7 @@ topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
 solution: Experience Manager, Experience Manager Forms
+role: "Admin, User, Developer"
 ---
 # Create Letter {#create-letter}
 

@@ -7,6 +7,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
+role: "User, Developer"
 ---
 # Adaptive Form Expressions{#adaptive-form-expressions}
 

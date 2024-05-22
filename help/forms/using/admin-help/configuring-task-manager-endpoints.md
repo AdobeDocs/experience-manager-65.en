@@ -9,6 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 8495a3d7-6ac9-41f5-b1f9-31decaba118a
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Configuring Task Manager endpoints {#configuring-task-manager-endpoints}
 

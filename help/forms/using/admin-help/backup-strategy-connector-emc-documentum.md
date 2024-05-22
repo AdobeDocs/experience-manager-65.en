@@ -7,6 +7,8 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b759b936-5907-4311-a5cc-60f321476368
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Backup strategy for Connector for EMC Documentum&reg; users {#backup-strategy-for-connector-for-emc-documentum-users}
 

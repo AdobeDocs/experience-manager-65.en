@@ -5,6 +5,8 @@ description: Steps to integrate Salesforce integration with AEM Forms using OAut
 
 exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
+feature: Form Data Model
+role: "Admin, User, Developer"
 ---
 # Integration of Salesforce using OAuth 2.0 client credentials flow  {#configure-salesforce-with-ouath-2.0-client-credential}
 

@@ -11,6 +11,8 @@ topic-tags: customization
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms, Foundation Component "
+role: "User, Developer"
 ---
 # Creating a custom adaptive form template{#creating-a-custom-adaptive-form-template}
 

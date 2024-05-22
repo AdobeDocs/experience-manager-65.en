@@ -7,6 +7,8 @@ topic-tags: forms-app
 docset: aem65
 exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Logging in to Adobe Experience Manager Forms app{#logging-in-to-aem-forms-app}
 

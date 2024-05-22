@@ -11,6 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: cfb81f5b-e018-43b1-b76e-bac56b8bd96d
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Change the number of items displayed on the Applications and Services pages {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
 

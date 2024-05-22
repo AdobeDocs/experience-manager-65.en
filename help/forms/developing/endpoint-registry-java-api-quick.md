@@ -8,6 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms, API"
 ---
 # Endpoint Registry Java&trade; API Quick Start (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 

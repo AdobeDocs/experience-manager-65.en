@@ -3,6 +3,8 @@ title: How to generate and work with hashes in dynamic PDF forms?
 description: Generating and working with Hashes in dynamic PDF forms.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms, Document Security"
+role: "User, Developer"
 ---
 # Generating and working with Hashes in dynamic PDF forms {#generate-work-with-hashes-dynamic-pdf-forms}
 

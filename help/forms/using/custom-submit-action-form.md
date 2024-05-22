@@ -7,6 +7,8 @@ topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms, Foundation Component , Form Data Model"
+role: "User, Developer"
 ---
 # Writing custom Submit action for adaptive forms{#writing-custom-submit-action-for-adaptive-forms}
 

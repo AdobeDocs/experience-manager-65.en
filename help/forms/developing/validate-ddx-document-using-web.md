@@ -12,6 +12,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Developer
 exl-id: 069e5b10-ab93-4492-a70d-6a0d462105a6
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms,  Document Services, API"
 ---
 # Validate a DDX document using the web service API {#validate-a-ddx-document-using-theweb-service-api} 
 

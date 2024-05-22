@@ -9,6 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 1f544485-5a01-4a4a-ab0f-dcee67e1a38b
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms,  Security"
+role: "User, Developer"
 ---
 # Specify security settings {#specify-security-settings}
 

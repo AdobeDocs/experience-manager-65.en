@@ -9,6 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: b2cbf5f3-ee13-47bf-bf7f-f6a1884cee66
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Specifying fonts to embed {#specifying-fonts-to-embed}
 

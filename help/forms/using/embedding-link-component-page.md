@@ -11,6 +11,8 @@ topic-tags: publish
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
+role: "Admin, User, Developer"
 ---
 # Embedding link component in a page{#embedding-link-component-in-a-page}
 

@@ -9,9 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 docset: aem65
 
-role: Admin
+role: "Admin, User, Developer"
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms, OSGI"
 ---
 # Install and configure data capture capabilities{#install-and-configure-data-capture-capabilities}
 

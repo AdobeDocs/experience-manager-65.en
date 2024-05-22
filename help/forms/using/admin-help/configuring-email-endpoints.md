@@ -9,6 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
+role: "User, Developer"
 ---
 # Configuring email endpoints {#configuring-email-endpoints}
 

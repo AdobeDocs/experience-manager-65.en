@@ -10,9 +10,10 @@ topic-tags: forms-manager
 
 docset: aem65
 
-role: Admin
+role: "Admin,User"
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 ---
 # Searching for forms and assets{#searching-for-forms-and-assets}
 

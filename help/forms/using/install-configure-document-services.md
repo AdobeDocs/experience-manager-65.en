@@ -2,9 +2,10 @@
 title: Installing and configuring document services
 description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode Barcoded Forms.
 topic-tags: installing
-role: Admin
+role: "Admin, User, Developer"
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
+feature: Interactive Communication
 ---
 
 # Installing and configuring document services {#installing-and-configuring-document-services}
