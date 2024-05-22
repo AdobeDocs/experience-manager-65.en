@@ -5,8 +5,8 @@ topic-tags: publish
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Workflow"
-role: "Admin, User, Developer"
+feature: Adaptive Forms, Workflow
+role: Admin, User, Developer
 ---
 # Use metadata in an email notification {#use-metadata-in-an-email-notification}
 

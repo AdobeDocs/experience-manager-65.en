@@ -8,7 +8,7 @@ docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Ad-hoc Queries in Process Reporting{#ad-hoc-queries-in-process-reporting}
 

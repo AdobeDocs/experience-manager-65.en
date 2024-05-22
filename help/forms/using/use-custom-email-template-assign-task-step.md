@@ -9,8 +9,8 @@ topic-tags: publish
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Workflow"
-role: "Admin, User, Developer"
+feature: Adaptive Forms, Workflow
+role: Admin, User, Developer
 ---
 # Use custom email templates in an Assign Task step{#use-custom-email-templates-in-an-assign-task-step}
 

@@ -7,7 +7,7 @@ docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 solution: Experience Manager, Experience Manager Forms
 feature: Release Notes
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # New features summary | AEM 6.5 Forms{#new-features-summary-aem-forms}
 

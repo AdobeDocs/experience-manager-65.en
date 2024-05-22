@@ -12,7 +12,7 @@ docset: aem65
 exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Updating general settings{#updating-general-settings}
 

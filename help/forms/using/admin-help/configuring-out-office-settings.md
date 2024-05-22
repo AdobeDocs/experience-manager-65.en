@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Configuring Out of Office Settings {#configuring-out-of-office-settings}
 

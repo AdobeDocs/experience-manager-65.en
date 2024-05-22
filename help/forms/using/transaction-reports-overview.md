@@ -7,7 +7,7 @@ docset: aem65
 feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Transaction Reports for AEM Forms on OSGi {#transaction-reports-overview}
 

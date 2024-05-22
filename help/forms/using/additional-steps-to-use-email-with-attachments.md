@@ -3,8 +3,8 @@ title: Additional Steps to get Email with Attachments
 description: Learn how to fix the error when you are unable to retrieve Email with Attachments for AEM Forms on JEE Platforms.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Troubleshooting"
-role: "User, Developer"
+feature: Adaptive Forms, Troubleshooting
+role: User, Developer
 ---
 # Unable to get Email with Attachments for AEM Forms on JEE Platforms{#unable-to-get-email-with-attachments}
 

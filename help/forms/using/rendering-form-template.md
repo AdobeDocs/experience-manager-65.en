@@ -8,7 +8,7 @@ discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Rendering form template for HTML5 forms {#rendering-form-template-for-html-forms}
 

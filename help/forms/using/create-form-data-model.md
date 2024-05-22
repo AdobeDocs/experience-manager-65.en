@@ -7,7 +7,7 @@ docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Tutorial: Create form data model {#tutorial-create-form-data-model}
 

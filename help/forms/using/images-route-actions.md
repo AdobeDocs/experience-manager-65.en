@@ -7,7 +7,7 @@ topic-tags: forms-workspace
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Customize images used in route actions {#customize-images-used-in-route-actions}
 

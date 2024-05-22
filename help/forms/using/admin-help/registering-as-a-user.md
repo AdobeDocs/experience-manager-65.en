@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Registering as a User {#registering-as-a-user}
 

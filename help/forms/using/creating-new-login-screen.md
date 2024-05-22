@@ -8,7 +8,7 @@ docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Creating a login screen{#creating-a-new-login-screen}
 

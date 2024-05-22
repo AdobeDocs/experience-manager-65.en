@@ -12,7 +12,7 @@ topic-tags: coding
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, API"
+feature: Adaptive Forms, API
 ---
 # Invoking Human-Centric Long-Lived Processes {#invoking-human-centric-long-lived-processes}
 

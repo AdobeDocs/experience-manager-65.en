@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Using CAPTCHA in adaptive forms{#using-captcha-in-adaptive-forms}
 

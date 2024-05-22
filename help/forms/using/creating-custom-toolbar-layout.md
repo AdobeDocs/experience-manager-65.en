@@ -11,8 +11,8 @@ topic-tags: customization
 docset: aem65
 exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Foundation Component "
-role: "User, Developer"
+feature: Adaptive Forms, Foundation Component 
+role: User, Developer
 ---
 # Creating custom toolbar layout{#creating-custom-toolbar-layout}
 

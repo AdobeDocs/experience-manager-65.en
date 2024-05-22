@@ -7,8 +7,8 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01e966f6-a650-4565-80d1-e2297f25da5c
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Users and Roles"
-role: "User, Developer"
+feature: Adaptive Forms, Users and Roles
+role: User, Developer
 ---
 # Managing certificate revocation lists{#managing-certificate-revocationlists}
 

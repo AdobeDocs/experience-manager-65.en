@@ -6,7 +6,7 @@ topic-tags: customization
 feature: HTML5 Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Customizing error messages for HTML5 forms {#customizing-error-messages-for-html-forms}
 

@@ -12,7 +12,7 @@ topic-tags: operations
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,  Document Services, API"
+feature: Adaptive Forms,  Document Services, API
 ---
 # Working with XMP Utilities {#working-with-xmp-utilities} 
 

@@ -8,7 +8,7 @@ docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Customizing templates for Forms Portal components{#customizing-templates-for-forms-portal-components}
 

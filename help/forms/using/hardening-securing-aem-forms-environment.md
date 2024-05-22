@@ -6,10 +6,10 @@ description: Learn recommendations and best practices for securing AEM Forms on 
 
 topic-tags: Security
 
-role: "Admin,User"
+role: Admin,User
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 solution: Experience Manager, Experience Manager Forms
-feature: "Security, Adaptive Forms"
+feature: Security, Adaptive Forms
 ---
 # Hardening and Securing AEM forms on OSGi environment {#hardening-and-securing-aem-forms-on-osgi-environment}
 

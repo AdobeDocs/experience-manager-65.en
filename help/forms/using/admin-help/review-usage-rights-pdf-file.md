@@ -8,8 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: 603edbd2-c012-4d25-99bf-c4f3dc147308
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Users and Roles"
-role: "User, Developer"
+feature: Adaptive Forms, Users and Roles
+role: User, Developer
 ---
 # Review the usage rights of a PDF file {#review-the-usage-rights-of-a-pdf-file}
 

@@ -12,7 +12,7 @@ topic-tags: operations
 role: Developer
 exl-id: e4b204ee-7261-42b8-8db8-a92aa9fd0a28
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,  Document Services, API"
+feature: Adaptive Forms,  Document Services, API
 ---
 # Working with PDF Utilities {#working-with-pdf-utilities} 
 

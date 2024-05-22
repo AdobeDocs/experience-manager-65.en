@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, API"
+feature: Adaptive Forms, API
 ---
 # Barcoded Forms Service Java&trade; API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 

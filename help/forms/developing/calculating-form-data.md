@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, API"
+feature: Adaptive Forms, API
 ---
 # Calculating Form Data {#calculating-form-data} 
 

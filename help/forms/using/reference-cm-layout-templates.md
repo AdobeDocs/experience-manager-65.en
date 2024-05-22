@@ -10,8 +10,8 @@ topic-tags: correspondence-management
 
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Foundation Components"
-role: "Admin, User, Developer"
+feature: Adaptive Forms, Foundation Components
+role: Admin, User, Developer
 ---
 # Reference letter templates {#reference-letter-templates}
 

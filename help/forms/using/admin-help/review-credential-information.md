@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Review credential use information {#review-credential-use-information}
 

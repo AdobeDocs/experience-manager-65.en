@@ -12,8 +12,8 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: e6759ffd-cf63-4684-a1d7-208fbe55aaed
 solution: Experience Manager, Experience Manager Forms
-feature: "HTML5 Forms, Adaptive Forms"
-role: "Admin, User, Developer"
+feature: HTML5 Forms, Adaptive Forms
+role: Admin, User, Developer
 ---
 # Introduction to AEM Forms workspace{#introduction-to-aem-forms-workspace}
 

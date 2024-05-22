@@ -4,7 +4,7 @@ description: Learn how to compress and decompress files using a AEM Forms on JEE
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Compressing and decompressing files using a AEM Forms on JEE Custom DSC {#compressing-decompressing-files}
 

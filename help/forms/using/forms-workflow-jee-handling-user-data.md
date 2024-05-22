@@ -3,7 +3,7 @@ title: Forms JEE workflows | Handling user data
 description: Learn how to use AEM Forms JEE workflows to design, create, and manage business processes.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-role: "Admin,User"
+role: Admin,User
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

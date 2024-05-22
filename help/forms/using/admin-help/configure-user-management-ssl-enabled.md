@@ -12,7 +12,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 606e84f2-6728-47a9-a439-dbe2e55100ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Configure User Management for an SSL-enabled LDAP server {#configure-user-management-for-an-ssl-enabled-ldap-server}
 

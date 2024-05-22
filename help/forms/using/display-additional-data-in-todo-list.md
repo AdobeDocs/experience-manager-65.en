@@ -12,7 +12,7 @@ docset: aem65
 exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Displaying additional data in ToDo list{#displaying-additional-data-in-todo-list}
 

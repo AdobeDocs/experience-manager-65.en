@@ -3,7 +3,7 @@ title: Forms user management | Handling user data
 description: Learn how AEM Forms JEE User Management component lets you create, authorize, and manage users who need access to AEM Forms.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-role: "Admin,User"
+role: Admin,User
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

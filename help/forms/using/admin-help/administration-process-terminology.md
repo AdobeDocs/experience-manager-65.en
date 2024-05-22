@@ -12,7 +12,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8944cbae-865d-4b1c-b3bf-00c3a247d776
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # About administration and process terminology {#about-administration-and-process-terminology}
 

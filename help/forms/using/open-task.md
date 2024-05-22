@@ -7,7 +7,7 @@ topic-tags: forms-app
 exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Opening a task {#opening-a-task}
 

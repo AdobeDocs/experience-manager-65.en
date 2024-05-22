@@ -13,7 +13,7 @@ topic-tags: operations
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,  Document Services, API"
+feature: Adaptive Forms,  Document Services, API
 ---
 # Handling Submitted Forms {#handling-submitted-forms} 
 

@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Changing the font on the interface{#changing-the-font-on-the-interface}
 

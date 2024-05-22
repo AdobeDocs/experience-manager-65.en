@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
 solution: Experience Manager, Experience Manager Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Associating submission reviewers with a form {#associating-submission-reviewers-with-a-form}
 

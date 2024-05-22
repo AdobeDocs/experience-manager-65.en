@@ -12,7 +12,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Just-in-time user provisioning {#just-in-time-user-provisioning}
 

@@ -4,8 +4,8 @@ description: CRX/bundle and Start page service unavailable errors once latest 6.
 SEO Description: Trouble shooting steps to resolve the errors after installing latest 6.5.15.0 service pack
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Installation"
-role: "User, Developer"
+feature: Adaptive Forms, Installation
+role: User, Developer
 ---
 # Service unavailable error after installing AEM (6.5.15.0) service pack {#steps-to-resolve-error-after-installing-service-pack}
 

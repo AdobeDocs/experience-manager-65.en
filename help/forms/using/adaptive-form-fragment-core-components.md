@@ -6,7 +6,7 @@ keywords: Add Adaptive Form fragments, Adaptive Form fragments, Create a form fr
 feature: Adaptive Forms, Core Components
 exl-id: 4a1ba259-8eb5-408f-8ee7-4868f98cca03
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, Developer"
+role: Admin, Developer
 ---
 # Create and use Adaptive Forms Fragments in an Adaptive Form based on Core Components {#adaptive-form-fragments}
 

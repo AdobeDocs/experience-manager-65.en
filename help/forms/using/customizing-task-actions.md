@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 exl-id: d17863fb-7950-493d-b378-16861c4af176
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-role: "User, Developer"
+role: User, Developer
 ---
 # Customizing Task Actions {#customizing-task-actions}
 

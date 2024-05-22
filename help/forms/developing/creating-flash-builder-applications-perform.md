@@ -12,7 +12,7 @@ topic-tags: coding
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Security"
+feature: Adaptive Forms, Security
 ---
 # Creating Flash Builder applications that perform SSO authentication using HTTP tokens {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens} 
 

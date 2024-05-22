@@ -9,8 +9,8 @@ topic-tags: publish
 
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms, Users and Roles"
-role: "User, Developer"
+feature: Adaptive Forms, Users and Roles
+role: User, Developer
 ---
 # Dynamically select a user or group for AEM Forms-centric workflow steps {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 

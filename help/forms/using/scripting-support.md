@@ -8,7 +8,7 @@ topic-tags: hTML5_forms
 feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 solution: Experience Manager, Experience Manager Forms
-role: "Admin, User, Developer"
+role: Admin, User, Developer
 ---
 # Scripting support for HTML5 forms {#scripting-support-for-html-forms}
 
