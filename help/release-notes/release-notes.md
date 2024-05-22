@@ -113,9 +113,9 @@ The following is the list of accessibility fixes included in this release:
 
 * T -->
 
-#### Launches{#sites-launches-6521}
+<!-- #### Launches{#sites-launches-6521} -->
 
-* The `sourceRootResource` configured in the Launch configuration within CRXDE Lite points to content that no longer exists, leading to a malfunction when attempts are made to delete launches. Delete launches even if the page is deleted or if the path is not the same. (SITES-20750)
+<!-- DELETED MAY 22, 2024 FROM TOTAL RELEASE CANDIDATE ISSUES * The `sourceRootResource` configured in the Launch configuration within CRXDE Lite points to content that no longer exists, leading to a malfunction when attempts are made to delete launches. Delete launches even if the page is deleted or if the path is not the same. (SITES-20750) -->
 
 #### MSM - Live Copies{#sites-msm-live-copies-6521}
 
