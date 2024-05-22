@@ -178,13 +178,13 @@ Below you will find an example for creating a self-signed certificate in DER for
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-Convert the Private Key to DER format. This is because the SSL wizard requires key to be in DER format:
+1. Convert the Private Key to DER format. This is because the SSL wizard requires key to be in DER format:
 
-```shell
-openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
-```
+   ```shell
+   openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
+   ```
 
-Finally, upload the **localhostprivate.der** as the Private Key and **localhost.crt** as the SSL/TLS Certificate in step 2 of the graphical SSL/TLS Wizard described at the beginning of this page.
+1. Finally, upload the **localhostprivate.der** as the Private Key and **localhost.crt** as the SSL/TLS Certificate in step 2 of the graphical SSL/TLS Wizard described at the beginning of this page.
 
 ### Updating the SSL/TLS Configuration Via cURL {#updating-the-ssl-tls-configuration-via-curl}
 
