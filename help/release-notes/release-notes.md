@@ -465,7 +465,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
 
 * [List of OSGi bundles included in Experience Manager 6.5.21.0](/help/release-notes/assets/65210-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.21.0](/help/release-notes/assets/65210-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->f
+* [List of Content Packages included in Experience Manager 6.5.21.0](/help/release-notes/assets/65210-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
 
