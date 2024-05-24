@@ -10,6 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 ---
+
 # Working with Startpoints{#working-with-startpoints}
 
 A startpoint invokes a process created in Workbench. It is associated with a form which invokes the process when the form is submitted.
