@@ -1,13 +1,9 @@
 ---
 title: Interactive Communications Overview
-
 description: This article includes overview, sample use cases, creation workflow, and differences between Interactive Communication and letter.
-
-
 contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication

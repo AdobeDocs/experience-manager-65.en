@@ -1,13 +1,9 @@
 ---
 title: Configuring storage services for drafts and submissions
-
 description: Learn how to configure storage for drafts and submissions
-
-
 topic-tags: publish
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal

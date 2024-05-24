@@ -1,13 +1,9 @@
 ---
 title: Creating custom toolbar layout
-
 description: You can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-
 docset: aem65
 exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
 solution: Experience Manager, Experience Manager Forms

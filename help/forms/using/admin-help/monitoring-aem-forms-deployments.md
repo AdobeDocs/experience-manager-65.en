@@ -1,14 +1,10 @@
 ---
 title: Monitoring AEM forms deployments
-
 description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

@@ -1,12 +1,10 @@
 ---
 title: Set up environment for AEM Forms app
 description: Hardware, software, and licenses to build and deploy the AEM Forms app.
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-
 docset: aem65
 exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
 solution: Experience Manager, Experience Manager Forms

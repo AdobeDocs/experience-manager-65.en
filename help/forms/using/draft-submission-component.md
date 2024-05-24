@@ -1,13 +1,9 @@
 ---
 title: Drafts and submissions component
-
 description: Drafts and submissions component lists forms that are in the draft state and are already submitted. You can customize appearance and style of the component.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 solution: Experience Manager, Experience Manager Forms

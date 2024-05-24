@@ -1,14 +1,10 @@
 ---
 title: Configuring Server Settings
-
 description: The Server Settings page provides access to email, task notification and administrator notification settings.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

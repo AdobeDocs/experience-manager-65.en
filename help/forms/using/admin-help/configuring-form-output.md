@@ -1,12 +1,10 @@
 ---
 title: Configuring form output
 description: Learn how to configure form output. To configure the form output and enable the feature use the custom scripts before form submission.   
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

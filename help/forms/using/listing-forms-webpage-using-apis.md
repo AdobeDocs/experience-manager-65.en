@@ -1,13 +1,9 @@
 ---
 title: Listing forms on a web page using APIs
-
 description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-
 exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal

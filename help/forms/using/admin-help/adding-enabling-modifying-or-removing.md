@@ -1,9 +1,6 @@
 ---
 title: Adding, enabling, modifying, or removing endpoints
-
 description: Learn how to add, enable, modify and remove endpoints.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints

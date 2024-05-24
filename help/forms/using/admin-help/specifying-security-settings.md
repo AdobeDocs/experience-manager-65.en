@@ -1,12 +1,10 @@
 ---
 title: Specifying security settings
 description: Learn how to specify security settings to protect XML data files. The security setting feature controls the external entities in XML inputs.
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 004b8a2f-66a0-43a4-be56-7e42b703ebb2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,  Security

@@ -1,14 +1,10 @@
 ---
 title: Basics of managing certificates and credentials
-
 description: Learn about the basics of managing certificates and credentials.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 74bf0e77-f47b-475a-b2a7-52cfb3baaa22
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

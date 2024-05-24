@@ -15,13 +15,13 @@ Adobe customers use [Adobe Developer Console](https://developer.adobe.com/consol
 
 This article provides some additional context about how AEM 6.5 customers should handle the deprecation.
 
-The main takeaway at this time is that AEM features do not yet support the new OAuth Server-to-Server credentials. Support will come soon -- by late April 2024 through a special compatibility package to install for AEM 6.5, if you are running the latest Service Pack 20 or lower (Service Pack 21 and higher will automatically include it). You may have received an email with instructions to migrate your JWT credentials, but rest assured that you can and should hold off on the credentials migration until AEM supports the new OAuth Server-to-Server credential type.
+The main takeaway at this time is that AEM features do not yet support the new OAuth Server-to-Server credentials. Support will come soon -- by mid May 2024 through a special compatibility package to install for AEM 6.5, if you are running the latest Service Pack 20 or lower (Service Pack 21 and higher will automatically include it). You may have received an email with instructions to migrate your JWT credentials, but rest assured that you can and should hold off on the credentials migration until AEM supports the new OAuth Server-to-Server credential type.
 
-The sections below list the scenarios where customers must (or in some cases must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, once AEM supports them in late-April. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to replace the credentials in the future.
+The sections below list the scenarios where customers must (or in some cases must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, once AEM supports them in mid-May. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to replace the credentials in the future.
 
 ## Integrating AEM with Other Adobe Solutions {#integrating-aem-with-other-adobe-solutions}
 
-**Action**: Wait to migrate until after late-April 2024, when AEM supports it.
+**Action**: Wait to migrate until after mid-May 2024, when AEM supports it.
 
 **Relevant AEM versions**: Adobe Managed Services (Service Pack 20 and below).
 
@@ -30,11 +30,11 @@ AEM customers use the AEM Author UI to configure integrations with all other Ado
 
 ![Integrating AEM with other solutions](/help/sites-administering/assets/jwt-deprecation.png)
 
-As an example, here are [the instructions](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=en) for configuring the integration with Adobe Target. The API key in the [Completing the IMS Configuration in AEM](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html#completing-the-ims-configuration-in-aem) section should be migrated to the OAuth Server-to-Server credential type, once AEM supports those credentials in late-April. Those instructions will be updated will revised in late-April to help you apply the new OAuth Server-to-Server credentials.
+As an example, here are [the instructions](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims) for configuring the integration with Adobe Target. The API key in the [Completing the IMS Configuration in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims#completing-the-ims-configuration-in-aem) section should be migrated to the OAuth Server-to-Server credential type, once AEM supports those credentials in mid-May. Those instructions will be updated will revised in mid-May to help you apply the new OAuth Server-to-Server credentials.
 
 ## Cloud Manager APIs {#cloud-manager-apis}
 
-**Action**: Wait to migrate until after late-April 2024, when AEM supports it.
+**Action**: Wait to migrate until after mid-May 2024, when AEM supports it.
 
 **Relevant AEM versions**: Adobe Managed Services (Service Pack 20 and below).
 

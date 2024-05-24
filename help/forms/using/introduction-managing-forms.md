@@ -1,13 +1,9 @@
 ---
 title: Introduction to managing forms
-
 description: AEM Forms provides tools to manage Adaptive Forms and related assets. This article introduces you to the key forms management capabilities and user interface elements.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager, introduction
-
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms

@@ -1,14 +1,10 @@
 ---
 title: Updating the link to the documentation
-
 description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
-
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 exl-id: ca637bea-05c1-4920-9283-e782f07607de
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

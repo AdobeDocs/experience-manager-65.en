@@ -1,14 +1,10 @@
 ---
 title: Overview of Health Monitor
-
 description: This document provides the overview of the Health monitor, and details about how you can access it.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 05f8b430-141e-4921-98b1-a0d8f636e478
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

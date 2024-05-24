@@ -1,13 +1,9 @@
 ---
 title: Creating a custom adaptive form template
-
 description: This article describes how to create custom adaptive form templates.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
 solution: Experience Manager, Experience Manager Forms

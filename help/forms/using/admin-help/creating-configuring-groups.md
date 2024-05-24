@@ -1,14 +1,10 @@
 ---
 title: Creating and configuring groups
-
 description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Users and Roles
@@ -67,7 +63,7 @@ A dynamic group contains only users. It cannot contain other groups. However, a 
 
 ### Automatically create dynamic groups based on email domains {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. In administration console, click Settings &gt; User Management &gt; Configuration &gt; Configure Advanced System Attributes.
+1. Click Settings &gt; User Management &gt; Configuration &gt; Configure Advanced System Attributes.
 1. Under Auto Creation of Dynamic Group, select the check box.
 1. Specify when User Manager checks for new email domains. This time should be after the domain synchronization time because the creation of dynamic groups is logical only if the domain synchronization is completed.
 

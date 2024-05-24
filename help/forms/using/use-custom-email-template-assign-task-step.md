@@ -1,11 +1,7 @@
 ---
 title: Use custom email templates in an Assign Task step
-
 description: Custom email templates for forms workflow email notifications 
-
-
 topic-tags: publish
-
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
 solution: Experience Manager, Experience Manager Forms

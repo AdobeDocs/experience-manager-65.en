@@ -1,14 +1,10 @@
 ---
 title: Log files
-
 description: Events such as run-time or startup errors are recorded to the application server log files, which can be  opened using any text editor.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 23a65be4-3277-4c73-9189-a9b4d7be73cd
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

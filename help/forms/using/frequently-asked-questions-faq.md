@@ -1,8 +1,6 @@
 ---
 title: Frequently asked questions (FAQ) for Adaptive Forms, HTML5 forms, and AEM Forms
-
 description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of Adaptive Forms, HTML5 forms, and AEM Forms.
-
 docset: aem65
 exl-id: 19a6e431-de66-4d5c-924f-f9c1a195390c
 solution: Experience Manager, Experience Manager Forms

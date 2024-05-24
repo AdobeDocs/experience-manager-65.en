@@ -11,6 +11,11 @@ role: Admin, User, Developer
 ---
 # Record a transaction for custom implementations for AEM Forms on OSGi {#record-a-transaction-for-custom-implementations}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation)|
+| AEM 6.5     | This article         |
+
 Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 
 You can use custom code to submit a PDF Form or to send Agent UI preview URL to end users to preview an interactive communication. Or, you submit a form using custom methods instead of using submit methods provided with AEM Forms. All the previously mentioned actions and custom implementations of AEM Forms APIs are not accounted as transactions. AEM Forms provide an API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), to record such actions as transactions.

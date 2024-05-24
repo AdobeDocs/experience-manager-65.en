@@ -1,12 +1,8 @@
 ---
 title: Apply rules to adaptive form fields
-
 description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
-
 page-status-flag: de-activated
-
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

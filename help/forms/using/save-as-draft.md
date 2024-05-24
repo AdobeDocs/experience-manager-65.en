@@ -1,13 +1,9 @@
 ---
 title: Saving a task or form as a draft
-
 description: Steps to save a draft copy of a task or a form in the AEM Forms app
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-
 exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

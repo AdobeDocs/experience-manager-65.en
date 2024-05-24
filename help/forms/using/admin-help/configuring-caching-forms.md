@@ -1,14 +1,10 @@
 ---
 title: Configuring caching for Forms
-
 description: Learn how to configure cache settings and how to cluster considerations for caches.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

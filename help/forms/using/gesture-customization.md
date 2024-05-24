@@ -1,12 +1,10 @@
 ---
 title: Gesture customization
 description: Learn how to customize the gestures on AEM Forms app. You can customize the gestures to provide a distinct method of interacting with the application.
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

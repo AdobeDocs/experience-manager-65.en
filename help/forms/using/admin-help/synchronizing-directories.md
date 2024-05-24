@@ -1,14 +1,10 @@
 ---
 title: Synchronizing directories
-
 description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

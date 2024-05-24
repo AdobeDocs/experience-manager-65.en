@@ -1,13 +1,9 @@
 ---
 title: Troubleshoot AEM Forms app
-
 description: Learn about common issues with AEM Forms app and how to troubleshoot them.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-
 exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms

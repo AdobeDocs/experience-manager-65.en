@@ -1,8 +1,6 @@
 ---
 title: Unable to use Experience Manager Forms with certain versions of Oracle JDK
-
 description: Unable to use Experience Manager Forms with certain versions of Oracle JDK
-
 exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Troubleshooting

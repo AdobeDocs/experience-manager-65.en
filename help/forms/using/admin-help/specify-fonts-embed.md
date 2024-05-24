@@ -1,12 +1,10 @@
 ---
 title: Specify fonts to embed
 description: Learn how to specify fonts to embed in an Adaptive Form. You can specify which fonts are embedded or never embedded with forms that Forms service generates.
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 02c28b2c-0cab-4431-9fab-fa332c96e092
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
