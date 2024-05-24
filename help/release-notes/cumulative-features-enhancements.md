@@ -40,7 +40,7 @@ See also [Adobe Experience Manager 6.5 Latest Service Pack Release Notes](/help/
 
 ## AEM 6.5, Service Pack 18&mdash;August 24, 2023
 
-* Assets, Dynamic Media - [Multi-caption and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple captions and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+* Assets, Dynamic Media - [Multiple caption and audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
 * Assets - From Search results, you can now navigate to the folder location that contains an asset to let you perform various asset management tasks. 
 * Sites Polaris Picker in Content Fragments has improved performance.
 * Enabled Sites Page Editor/Image Component user to reference assets from the remote Assets Cloud Service.
