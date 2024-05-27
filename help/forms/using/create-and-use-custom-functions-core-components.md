@@ -401,7 +401,7 @@ Now, you can create a rule to use custom functions in the rule editor:
 
 ![Adding the custom function client library](/help/forms/using//assets/calculateage-customfunction.png)
 
-Now, let's understand how to configure and use a custom function using the [Rule Editor's Invoke service in AEM Forms 6.5](/help//forms/using/rule-editor-core-components#invoke-form-data-model-service-invoke.md).
+Now, let's understand how to configure and use a custom function using the [Rule Editor's Invoke service in AEM Forms 6.5](/help//forms/using/rule-editor-core-components#invoke-form-data-model-service-invoke)
 
 <!--
 
