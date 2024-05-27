@@ -66,7 +66,7 @@ A dynamic group contains only users. It cannot contain other groups. However, a 
 
 ### Automatically create dynamic groups based on email domains {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. In administration console, click Settings &gt; User Management &gt; Configuration &gt; Configure Advanced System Attributes.
+1. Click Settings &gt; User Management &gt; Configuration &gt; Configure Advanced System Attributes.
 1. Under Auto Creation of Dynamic Group, select the check box.
 1. Specify when User Manager checks for new email domains. This time should be after the domain synchronization time because the creation of dynamic groups is logical only if the domain synchronization is completed.
 
