@@ -614,6 +614,8 @@ user-guide-title: AEM 6.5
     + [Create and use Adaptive Forms Fragments in an Adaptive Form](/help/forms/using/adaptive-form-fragment-core-components.md)
     + [Create themes for Core Components based Adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
     + [Create and use custom function in an Adaptive Form](/help/forms/using/create-and-use-custom-functions.md)
+    + [Rule Editor](/help/forms/using/rule-editor-core-components.md)
+    + [Create and use custom function in an Adaptive Form Core Components](/help/forms/using/create-and-use-custom-functions-core-components.md)
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
   + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
     + [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)

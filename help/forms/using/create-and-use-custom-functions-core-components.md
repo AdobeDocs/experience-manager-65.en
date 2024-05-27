@@ -5,17 +5,16 @@ keywords: Add a custom function, use a custom function, create a custom function
 content-type: reference
 feature: Adaptive Forms, Core Components
 ---
+# Custom functions in Adaptive Forms Core Components
 
 <span class="preview"> This article contains content for some pre-release features. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). The features under the pre-release program are:
-
 * Optional parameter support in Custom Functions
 * Caching feature for Custom Functions
 * Global scope object and field objects support for Custom Functions
 * Support for modern JavaScript features like let and arrow functions (ES10 support)
 
-Ensure to set the [latest form version](https://github.com/adobe/aem-core-forms-components/tree/release/650) on your AEM Forms Core Component environment to use the pre-release features in Custom Function. </span>
+Ensure to set the [latest form version](https://github.com/adobe/aem-core-forms-components/tree/release/650) on your AEM Forms Core Component environment to use the pre-release features in Custom Functions. </span>
 
-# Custom functions in Adaptive Forms (Core Components)
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -256,12 +255,16 @@ To list the custom functions in the rule editor, you can use any one of the foll
 You can create a custom function with or without jsdoc comments. 
 
 ```javascript
+
     function functionName(parameters) 
         {
             // code to be executed
         }
+
 ```
+
 If the user does not add any JavaScript annotations to the custom function, it is listed in the rule editor by its function name. However, it is recommended to include JavaScript annotations for improved readability of the custom functions.
+
 
 ### Arrow function with mandatory JavaScript annotations or comment
 
@@ -311,11 +314,11 @@ If the user does not add any JavaScript annotations to the custom function, the 
 ## Create a custom function {#create-custom-function}
 
 Steps to create custom functions are:
-1. [Create and Add a Custom Function](#create-custom-function)
+1. [Create and Add a Custom Function](#create-add-custom-function)
 1. [Add client library to an Adaptive Form](#use-custom-function)
 
 
-## Create a Custom Function {#create-custom-function}
+## Create a Custom Function {#create-add-custom-function}
 
 To create a custom function, perform the following steps:
 
@@ -915,7 +918,7 @@ In case the custom functions are modified, the caching becomes invalidated, and 
 
 * The user needs to ensure that the [core component and specification version is set to the latest version](https://github.com/adobe/aem-core-forms-components/tree/release/650). However, for existing AEM projects and forms, there are additional steps to follow:
 
-  * For the AEM project, the user should replace all instances of `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` and deploy the project through the Cloud Manager pipeline.
+  * For the AEM project, the user should replace all instances of `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` and deploy the project.
 
   * For existing forms, if the custom submission handlers are not functioning correctly, the user needs to open and save the `submitForm` rule on the **Submit** button using the Rule Editor. This action replaces the existing rule from `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` in the form.
 
