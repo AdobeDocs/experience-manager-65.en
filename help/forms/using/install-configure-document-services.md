@@ -3,10 +3,9 @@ title: Installing and configuring document services
 description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode Barcoded Forms.
 topic-tags: installing
 role: Admin, User, Developer
-exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
+exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 ---
-
 # Installing and configuring document services {#installing-and-configuring-document-services}
 
 AEM Forms provides a set of OSGi services to accomplish different document level operations, for example, services to create, assemble, distribute, and archive PDF documents, add digital signatures to limit access to documents, and decode Barcoded Forms. These services are included in AEM Forms add-on package. Collectively, these services are known as document services. The list of available document services and their major capabilities is as below:
@@ -292,6 +291,10 @@ The user account used to start the application server requires the **Replace a p
 1. Open the Group Policy Editor for Microsoft&reg; Windows. To open the Group Policy Editor, click **[!UICONTROL Start]**, type **gpedit.msc** in the Start Search box, and click **[!UICONTROL Group Policy Editor]**.
 1. Navigate to **[!UICONTROL Local Computer Policy]** &gt; **[!UICONTROL Computer Configuration]** &gt; **[!UICONTROL Windows Settings]** &gt; **[!UICONTROL Security Settings]** &gt; **[!UICONTROL Local Policies]** &gt; **[!UICONTROL User Rights Assignment]** and edit the **[!UICONTROL Replace a process level token]** policy and include the Administrators group.
 1. Add the user to the Replace a Process Level Token entry.
+
+>[!NOTE]
+>
+> As implied above, if the AEM server is running as a service under the LocalSystem account (LSA), explicitly assigning this privilege to a user is not necessary.
 
 ### (Windows Only) Enable the PDF Generator service for non-administrators {#enable-the-pdf-generator-service-for-non-administrators}
 

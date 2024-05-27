@@ -1,13 +1,19 @@
 ---
 title: Introduction to [!DNL Adobe Experience Manager Assets]
 description: Create, manage, process, and distribute digital assets in Experience Manager. These guides describe best practices, accessibility features, and how to use AEM 6.5 assets.
-contentOwner: AG
+hide: yes
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 solution: Experience Manager, Experience Manager Assets
 ---
+
 # About [!DNL Adobe Experience Manager Assets] as a DAM solution {#administering-assets}
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)                  |
+| AEM 6.5     | This article         |
 
 AEM [!DNL Assets] is a Digital Asset Management (DAM) tool that is a part of the [!DNL Experience Manager] platform and enables your enterprise to manage and distribute digital assets. Users across an organization can manage, store, and access many types of digital assets such as images, videos, documents, audio clips, 3D files, and rich media for use on the web, in print, and for digital distribution.
 

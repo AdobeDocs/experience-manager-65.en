@@ -11,6 +11,11 @@ role: Admin, User, Developer
 ---
 # Transaction Reports Billable APIs for AEM Forms on OSGi {#transaction-reports-billable-apis}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis)                  |
+| AEM 6.5     | This article         |
+
 AEM Forms provides several APIs to submit forms, process documents, and render documents. Some APIs are accounted as transactions and others are free to use. This document provides a list of all the APIs that are accounted as transactions in a transaction report. Here are a few common scenarios where a billable API is used:
 
 * Submitting an adaptive form, HTML5 Form, and form set

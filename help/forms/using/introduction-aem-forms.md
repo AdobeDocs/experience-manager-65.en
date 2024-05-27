@@ -34,7 +34,7 @@ AEM Forms provides forms management tools that not only lets you manage adaptive
 >
 >The Adaptive Forms feature, available in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is designed for exploration and evaluation purposes only. For production use, it is essential to obtain a valid license for AEM Forms, as Adaptive Forms functionality requires proper licensing.
 
-![AEM forms capabilities](do-not-localize/4th-draft.gif)
+![AEM forms capabilities](do-not-localize/4th-draft-updated.gif)
 
 ### Key capabilities {#key-capabilities}
 
