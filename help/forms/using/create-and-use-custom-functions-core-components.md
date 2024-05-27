@@ -44,35 +44,35 @@ JavaScript annotations provides metadata for JavaScript code. It includes commen
 
 #### Name
 
-  The name is used to identify the custom function in the rule editor of an Adaptive form. Following syntaxes are used to name a Custom Function:
+The name is used to identify the custom function in the rule editor of an Adaptive form. Following syntaxes are used to name a Custom Function:
 
-  * `@name [functionName] <Function Name>`
-  * `@function [functionName] <Function Name>`
-  * `@func [functionName] <Function Name>`.
-  `functionName` is the name of the function. Spaces are not allowed.
-  `<Function Name>` is the display name of the function in the rule editor of an Adaptive Form.
-    If the function name is identical to the name of the function itself, you can omit `[functionName]` from the syntax.
+* `@name [functionName] <Function Name>`
+* `@function [functionName] <Function Name>`
+* `@func [functionName] <Function Name>`.
+`functionName` is the name of the function. Spaces are not allowed.
+`<Function Name>` is the display name of the function in the rule editor of an Adaptive Form.
+If the function name is identical to the name of the function itself, you can omit `[functionName]` from the syntax.
 
 #### Parameter
 
  The parameter is a list of arguments used by custom functions. A function can support multiple parameters. The following syntaxes are used to define a parameter in a custom function:
 
-   * `@param {type} name <Parameter Description>`
-   * `@argument` `{type} name <Parameter Description>` 
-   * `@arg` `{type}` `name <Parameter Description>`.
-    `{type}` represents the parameter type.  The allowed parameter types are:
+* `@param {type} name <Parameter Description>`
+* `@argument` `{type} name <Parameter Description>` 
+* `@arg` `{type}` `name <Parameter Description>`.
+`{type}` represents the parameter type.  The allowed parameter types are:
     
-      * string: Represents a single string value.
-      * number: Represents a single numeric value.
-      * boolean: Represents a single boolean value (true or false).
-      * string[]: Represents an array of string values.
-      * number[]: Represents an array of numeric values.
-      * boolean[]: Represents an array of boolean values.
-      * date: Represents a single date value.
-      * date[]: Represents an array of date values.
-      * array: Represents a generic array containing values of various types.
-      * object: Represents form object passed to a custom function instead of passing its value directly.
-      * scope: Represents the globals object, which contains read-only variables such as form instances, target field instances, and methods for performing form modifications within custom functions. It is declared as the last parameter in JavaScript annotations and is not visible in the rule editor of an Adaptive Form. The scope parameter accesses the object of the form or component to trigger the rule or event required for form processing. For further information on the Globals object and how to use it, [click here](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
+    * string: Represents a single string value.
+    * number: Represents a single numeric value.
+    * boolean: Represents a single boolean value (true or false).
+    * string[]: Represents an array of string values.
+    * number[]: Represents an array of numeric values.
+    * boolean[]: Represents an array of boolean values.
+    * date: Represents a single date value.
+    * date[]: Represents an array of date values.
+    * array: Represents a generic array containing values of various types.
+    * object: Represents form object passed to a custom function instead of passing its value directly.
+    * scope: Represents the globals object, which contains read-only variables such as form instances, target field instances, and methods for performing form modifications within custom functions. It is declared as the last parameter in JavaScript annotations and is not visible in the rule editor of an Adaptive Form. The scope parameter accesses the object of the form or component to trigger the rule or event required for form processing. For further information on the Globals object and how to use it, [click here](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
     
 The parameter type is not case-sensitive and spaces are not allowed in the parameter name.
  
@@ -131,23 +131,23 @@ To learn more about how to define optional parameters in JSDocs, [click here](ht
     
 #### Return Type
 
-  The return type specifies the type of value that the custom function returns after execution. The following syntaxes are used to define a return type in a custom function:
+The return type specifies the type of value that the custom function returns after execution. The following syntaxes are used to define a return type in a custom function:
 
-  * `@return {type}`
-  * `@returns {type}`
-    `{type}` represents the return type of the function. The allowed return types are:
-      * string: Represents a single string value.
-      * number: Represents a single numeric value.
-      * boolean: Represents a single boolean value (true or false).
-      * string[]: Represents an array of string values.
-      * number[]: Represents an array of numeric values.
-      * boolean[]: Represents an array of boolean values.
-      * date: Represents a single date value.
-      * date[]: Represents an array of date values.
-      * array: Represents a generic array containing values of various types.
-      * object: Represents form object instead of its value directly.
+* `@return {type}`
+* `@returns {type}`
+`{type}` represents the return type of the function. The allowed return types are:
+* string: Represents a single string value.
+* number: Represents a single numeric value.
+* boolean: Represents a single boolean value (true or false).
+* string[]: Represents an array of string values.
+* number[]: Represents an array of numeric values.
+* boolean[]: Represents an array of boolean values.
+* date: Represents a single date value.
+* date[]: Represents an array of date values.
+* array: Represents a generic array containing values of various types.
+* object: Represents form object instead of its value directly.
 
-    The return type is not case-sensitive.
+The return type is not case-sensitive.
 
 #### Private
 
@@ -942,9 +942,5 @@ In case the custom functions are modified, the caching becomes invalidated, and 
   * Class methods
   * Default parameters
   * Rest parameters 
-
-## See Also {#see-also}
-
-{{see-also}}
 
 
