@@ -794,6 +794,7 @@ var c = {
 >[!NOTE]
 >
 >Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+
 -->
 
 ## Manage rules {#manage-rules}

@@ -72,7 +72,7 @@ If the function name is identical to the name of the function itself, you can om
     * date[]: Represents an array of date values.
     * array: Represents a generic array containing values of various types.
     * object: Represents form object passed to a custom function instead of passing its value directly.
-    * scope: Represents the globals object, which contains read-only variables such as form instances, target field instances, and methods for performing form modifications within custom functions. It is declared as the last parameter in JavaScript annotations and is not visible in the rule editor of an Adaptive Form. The scope parameter accesses the object of the form or component to trigger the rule or event required for form processing. For further information on the Globals object and how to use it, [click here](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
+    * scope: Represents the globals object, which contains read-only variables such as form instances, target field instances, and methods for performing form modifications within custom functions. It is declared as the last parameter in JavaScript annotations and is not visible in the rule editor of an Adaptive Form. The scope parameter accesses the object of the form or component to trigger the rule or event required for form processing. For further information on the Globals object and how to use it, [click here](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
     
 The parameter type is not case-sensitive and spaces are not allowed in the parameter name.
  
