@@ -467,7 +467,7 @@ You can use the custom function in the rule editor of an Adaptive Form using the
 
 ## Using Custom Function in an Adaptive Form
 
-In an Adaptive Form, you can use [Custom Functions within the rule editor](/help/forms/rule-editor-core-components.md). Let us add the following code to the JavaScript file (`Function.js` file) to calculate age based on the Date of Birth(YYYY-MM-DD). Create a custom function as `calculateAge()` which takes the date of birth as input and returns age:
+In an Adaptive Form, you can use [Custom Functions within the rule editor](/help/forms/using/rule-editor-core-components.md) Let us add the following code to the JavaScript file (`Function.js` file) to calculate age based on the Date of Birth(YYYY-MM-DD). Create a custom function as `calculateAge()` which takes the date of birth as input and returns age:
 
 ```javascript
     /**
