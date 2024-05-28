@@ -5129,12 +5129,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
- * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
- * form1[0].grantApplication[0].page1[0].SignatureField1[0].
- *
- * The following Java code example retrieves the Signature Info for the given signature field in a PDF document.
+ * The following Java code example is used to tag the PDF document with lists and paragraphs.
  */
 
 public PDFDocument tag(final Document inDoc) throws PDFUtilityException {
