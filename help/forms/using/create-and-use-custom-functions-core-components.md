@@ -461,7 +461,7 @@ Once you have deployed your client library to your Forms CS environment, use its
 
 1. Click **[!UICONTROL Done]**.
 
-You can use the custom function in the [rule editor of an Adaptive Form](/help/forms/rule-editor-core-components.md) using the [Javascript annotations](##js-annotations).
+You can use the custom function in the rule editor of an Adaptive Form using the [Javascript annotations](##js-annotations).
 
 -->
 
