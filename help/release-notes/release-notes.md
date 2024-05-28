@@ -20,9 +20,9 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 
 | Product | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Version  | 6.5.20.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
+| Version  | 6.5.21.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
-| Date     | Thursday, February 22, 2024 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Date     | Friday, June 14, 2024 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.20.0 {#what-is-included-in-aem-6520}
@@ -42,13 +42,14 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Forms]
 
-* **Transaction Reporting in AEM Forms on JEE**: Transaction reporting capability has been introduced for AEM Forms on JEE, enabling comprehensive recording of document transactions such as Conversions, Renditions, and Submissions. This enhancement boosts efficiency and facilitates better record-keeping. The feature is disabled by default. You can enable it from the Admin UI.
-* **Enhanced Security with ECDSA Support**: AEM Forms now offer robust support for the Elliptic Curve Digital Signature Algorithm (ECDSA) across both JEE and OSGi stacks. Users can now Sign, Certify, and Verify PDF documents with heightened security. Supported EC curve algorithms include:
-  * ECDSA elliptic curve P256 with SHA256 digest algorithm
-  * ECDSA elliptic curve P384 with SHA384 digest algorithm
-  * ECDSA elliptic curve P512 with SHA512 digest algorithm
-* **Seamless Compatibility with Windows 11 for Forms Designer**: AEM Forms Designer now supports Windows 11, ensuring smooth installation and operation. Users can confidently upgrade to Windows 11 without the hassle of reinstalling Forms Designer or worrying about compatibility issues, ensuring uninterrupted workflow.
-* **Enhanced Accessibility with Custom "Caption" Role in AEM Forms Designer**: AEM Forms Designer now includes a custom accessibility role called "Caption," empowering users to create XDPs with personalized captioning elements. This feature enhances accessibility by letting users integrate custom captions into their document designs so they can improve inclusivity and user experience.
+* **Apply artifacts to individual text blocks in XDPs**: A new feature in Forms Designer is introduced that allows users to configure settings on individual text blocks in XDP files to control which elements are treated as artifacts in the resulting PDFs, such as headers and footers, to make them accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF/UA tagging.
+* **Rule Editor enhancements:**
+  * Support for implementing nested conditions with When-then-else functionality. b) 
+  * Validate or reset, panels and forms, including fields. 
+  * Support for modern JavaScript features such as let and arrow functions (ES10 support) within custom functions.
+* **AutoTag API for PDF Accessibility**: AEM Forms on OSGi now supports the new AutoTag API to enhance PDF for accessibility standards by adding tags: paragraphs, and lists. It makes PDFs more accessible for users with assistive technology.
+* **16-bit PNG support**: PDF Generator's ImageToPdf service now supports conversion of PNGs with 16-bit color depth.
+* **AEM Forms Designer** is now certified to the GB18030:2022 standard. With this certification, Forms Designer supports the Chinese Unicode character set, allowing Chinese characters to be entered into all editable fields and dialogs.
 
 <!-- ### [!DNL Forms]
 
@@ -171,73 +172,30 @@ Some of the key features and enhancements in this release include the following:
 
 #### [!DNL Adaptive Forms]
 
-* When a user tries to integrate AEM Forms to a mailing platform with an AEM published URL, AEM Forms does not add `method=post` while rendering the page. This issue occurs even though `POST` is set in the submit action with the URL. It causes the mailing platform to not recognize this as a form. (FORMS-12614)
-* When a user selects the date field having a display pattern on AEM Form Service Pack 6.5.18.0, the user is not able to select the current date using the keyboard. (FORMS-12736)
-* On AEM Forms Service Pack 6.5.17.0 and Service Pack 6.5.18.0, when a user switches between months in the calendar widget, the date picker component shows an extra row. (FORMS-11869)
-* When a user clicks an image using the "Take a photo" in the Attachment component on an iOS device, all images are added to the folder with the same name. (FORMS-12224)
-* When a user updates an existing option in a Radio button group, incorrect translation values are published. (FORMS-12575)
-* When a user adds characters to an Adaptive Form on an Android&trade; device, the user can type more than the defined maximum number of characters in the Text field on focus out, on Android&trade; devices. However, it works when a user selects the HTML5 input type. (FORMS-12748)
-* Due to matching labels Arial&reg; labelledby and Arial&reg; label, the screen readers are not able to distinguish between these two. To resolve the issue – the label "aria-labelledby" is replaced with "aria-describedby" for the form fields. (FORMS-12436)
-* An author uses the "Adaptive Forms - Embed (v2)" component to embed an Adaptive Form in their Sites page. When the embedded form contains a CAPTCHA component on it (CAPTCHA Service > reCAPTCHA, Settings > reCAPTCHA-v2), the site page does not render. This occurs when the user tries to view the Site Page using "View as Published" on the author instance. The following error is shown as (FORMS-11859):
-`Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
-
-* When a user tries to select the date using the date picker component, the value is not updated and shows NULL. (FORMS-12742, FORMS-12736)
-
-* When a user upgrades to AEM Form Service Pack 6.5.19.0, after updating a new language to the existing dictionary it does not get merged with the "guideContainer" rows to add a locale to a form. (FORMS-12947)
-
-* On AEM Forms Service Pack 6.5.19.0, the invoked webservice operation on Java&trade; 11 fails with the error (FORMS-12329):
-  `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
-
-* When a user invokes "receive" operation for "EmailService" on AEM Forms Service Pack 6.5.18.0, an exception is thrown (FORMS-12050): 
-  `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
-
-* When FIPS mode is enabled on AEM Forms Service Pack 6.5.18.0, creating a user under default DOM fails with the error (FORMS-11857): 
-  `com.adobe.idp.cx.a: error seeding random number generator`
-
-* When a user selects fonts in ADMINUI under the path `Home>Services>PDF Generator>Adobe PDF Settings`, it does not get selected. Moreover, in a standard or personalized profile, the list box of Fonts available is empty. As such, it is not possible to personalize the sublist of **Always embed** or **Never embed**. The user is unable to configure the font for their PDFs with PDF Generator. The logs do not show any relevant error messages. (FORMS-12095)
-
-* On AEM Forms Service Pack 6.5.18.0, the user is unable to create security settings, it shows no error or server logs, but a pop-up error message is shown on the screen. (FORMS-12212)
-
-* When a user on AEM Forms Service Pack 6.5.18.0 submits an Adaptive Form on the JEE workflow, the attachment in the Adaptive Form is not sent to the JEE process which causes application failure. (FORMS-12232, FORMS-12228)
-
-* When a user converts PDF to PDF/A-2b or PDF/A-3B, it fails to convert, the error is shown as: (FORMS-12790)
-
-  ```
-  OCCD contains Order key that does not reference all layers.
-  -> Optional content configuration dictionary has no Name entry.
-  -> Font not embedded (and text rendering mode not 3).
-  obj(65, 0)
-  Page: 1
-  -> Font not embedded (and text rendering mode not 3).
-  obj(67, 0)
-  Page: 1
-  -> PDF/A entry missing. 
-  -> PDF/A entry missing.
-  ```
-
-* On AEM Forms 6.5.18.0, When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
-
-* When a user selects "Microsoft&reg; SharePoint" while running the configuration manager on AEM Forms 6.5.19.1 with JBoss&reg; Turnkey setup, the LiveCycle JBoss&reg; EAR installation fails, and it shows the following error: (FORMS-12463)
-
-    ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
-
-* When a user creates a Document Fragment using the form data model in AEM Forms Service Pack 6.5.19.0, the variable names appear undefined on the side panel. However, the variable names are shown when dropped onto the form panel or when they are clicked. (FORMS-13238)
+* When an Adaptive Form is submitted from an Adobe Experience Manager Publish instance to an Adobe Experience Manager Workflow, the workflow fails to save the attachments. (FORMS-14209) 
+* When a user clicks the Print to PDF button on AEM Forms Service Pack 15 (6.5.15.0) on OSGi, the Client-side validation fails, it is evident by the error messages shown in the Developer Tools Console window. (FORMS-14029) 
+* When a user submits a form on AEM 6.5 Forms Service Pack 17 (6.5.17.0) or AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0), the translation of “Thank-You” messages does not function correctly. Although the messages are correctly translated in the dictionary. (FORMS-13846) * When a user previews a form having a date-picker component, the date-picker field misaligns with the other form fields. (FORMS-13763) 
+* When a user on the environment AEM Forms Service Pack 19 (6.5.19.0) calls the API to format numbers, the formatted numbers are not aligned with the respective Locales, and the currency signs are not displayed correctly. The issue persists regardless of the Locale parameter set to "de_DE" or "en_US". (FORMS-13759)
+* When a user on the environment AEM Forms Service Pack 19 (6.5.19.0), converts 16-bit PNGs to PDFs using Img2Pdf PDFG service, it fails and is unable to "Use Acrobat Image conversion" service. (FORMS-13754) 
+* On AEM Forms Service Pack 19 (6.5.19.1), when a user uploads an existing JobOptions file in the Services / PDF Generator / Adobe PDF Settings section of the administrative web interface of AEM forms JEE (adminui), the upload fails and shows an error message: " An error has occurred while processing your request. Please use the breadcrumb links to navigate to another page." (FORMS-13597)
+* When a user migrates from AEM Forms Service Pack 15 (6.5.15.0) to AEM Forms Service Pack (6.5.17.0) or AEM Forms Service Pack (6.5.19.0), the FD key duplicates, which causes the forms to not translate correctly. (FORMS-13461)
+* When a user puts dispatchers in front of the authors supported by the deployment topology on AMS, the Assign Task submission hangs/fails. (FORMS-8010)
+* Accessibility Related Improvements:
+  * Icons on “formsanddocuments” page are now accessible as per the ANDI standard. (FORMS-13094) 
+  * Users can access tool bar via keyboard to save or edit content on the edit page, the tool bar is enhanced as per the ANDI standard. (FORMS-13102) 
+  * “Required or Mandatory” form fields are accessible as per the ANDI standard. (FORMS-13097)
 
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
 
-* When a user upgrades to AEM Forms Service Pack 6.5.18.0, due to missing exception handling, XDPs passed through the output service with the tagged PDF option-enabled fail. (LC-3921757)
+* When a user adds a new table to an existing form using AEM Forms Designer on the environment AEM Forms Service Pack 19 (6.5.19.0), it crashes. (LC-3921978) 
+* When a user renders an Adaptive Form on Linux environment, an extra space between the field component occurs. (LC-3921957) 
+* When a user converts an XTG file to PostScript format using the Output Service, it fails with error: AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE). (LC-3921720) 
 
-* When a user generates a PDF using AEM Forms Designer, heading levels are tagged in the accessibility tree along with the graphical element, for example, a rectangle box. (LC-3921687)
-
-* On AEM Forms Designer installed via Workbench, the version information is not explicit in the `Control Panel/Programs/Programs and Features`. (LC-3921976)
-
-<!--* When a user creates an XDP on AEM Forms Designer, the user is not able to add the custom Caption Tag. (LC-3921246)-->
-
-* When a user creates an XDP on AEM Forms Designer, On PDF output, the Button Form tag is not nested in the parent paragraph tag (p-tag). (LC-3921719)
-
-* When a user creates an XDP on AEM Forms Designer, On PDF output when a user navigates through the form tags, the background object is also tagged. (LC-3921687)
+  To resolve the issue:  Check if the data contains special characters like Zero Width Space (0x200b). If yes, then use the flag by adding the tag `<behaviorOverride>patch-LC3921720:1</behaviorOverride> in the XCI file as shown in custom_xfa(1)-1.xci` file.
+* When using AEM Forms Service Pack 18 (6.5.18.0) within a Linux environment, XMLFM crashes on CPUs not supporting AVX /AVX2 instruction featuring AMD processors. (LC-3921718)
+* When a user creates a PDF from XDP using Forms Output service, the user is not able to configure "settings" on "individual text blocks" in XDP to control what is "artifacted". (LC-3921954)
 
 ### Foundation {#foundation-6520}
 
