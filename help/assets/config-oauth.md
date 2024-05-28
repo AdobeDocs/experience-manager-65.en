@@ -55,7 +55,7 @@ A public certificate lets you authenticate your profile on the Adobe Developer C
 
    Leave the other fields blank for now (to be provided later). Click **[!UICONTROL OK]**.
 
-   ![Experience Manager Smart Content Service dialog to provide content service URL](assets/aem_scs1.png)
+   ![Experience Manager Smart Content Service dialog to provide content service URL](assets/aem_scs12.png)
 
    *Figure: Smart Content Service dialog to provide content service URL*
 
