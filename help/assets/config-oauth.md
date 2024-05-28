@@ -79,8 +79,12 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
 1. On the **[!UICONTROL Add an API]** page, select **[!UICONTROL Experience Cloud]** and select **[!UICONTROL Smart Content]**. Click **[!UICONTROL Next]**.
 
-1. Click **[!UICONTROL Next]**.
+1. Choose the **[!UICONTROL OAuth Server-to-Server]** authentication method.
 
+1. Add/modify the **[!UICONTROL Credential Name]** as required. Click **[!UICONTROL Next]**.
+
+1. Select the product profile **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save Configured API]**. The OAuth API gets added under the connected credentials for the further use. You can copy the [!UICONTROL API key (Client ID)] or [!UICONTROL Generate access token] from it.
+<!--
 1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
 
    A page displays more information about the configuration. Keep this page open to copy and add these values in [!UICONTROL Assets Smart Tagging Service Settings] of cloud configuration in [!DNL Experience Manager] to configure smart tags.
@@ -89,6 +93,10 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
 
    *Figure: Details of integration in Adobe Developer Console*
+-->
+
+![oauth config](assets/oauth-config.png)
+*Figure: Configured OAuth Server-to-Server in Adobe Developer Console*
 
 ### Configure Smart Content Service {#configure-smart-content-service}
 
