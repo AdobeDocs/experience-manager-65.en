@@ -442,7 +442,7 @@ You can add custom functions by adding client library. To create a client librar
 
 1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to deploy the custom function.
 
-Once the pipeline is executed successfully, the custom function added in client library becomes available in your [Adaptive Form rule editor](/help/forms/rule-editor-core-components.md). 
+Once the pipeline is executed successfully, the custom function added in client library becomes available in your Adaptive Form rule editor. 
 
 ### Add client library to an Adaptive Form{#use-custom-function}
 
