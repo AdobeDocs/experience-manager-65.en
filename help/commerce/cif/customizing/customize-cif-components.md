@@ -2,6 +2,7 @@
 title: Customize CIF Core Components
 description: Learn how to customize Adobe Experience Manager CIF Core Components. The tutorial covers how to safely extend a CIF Core Component to meet business-specific requirements. Learn how to extend a GraphQL query to return a custom attribute and display the new attribute in a CIF Core Component.
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 ---
