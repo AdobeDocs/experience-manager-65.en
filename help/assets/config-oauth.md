@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 ---
-# OAuth configuration {#oauth-config}
+# Troubleshooting smart tags for OAuth credentials {#oauth-config}
 
-An open authorization configuration is required to adopt the consent to [!DNL Adobe Experience Manager] application to interact with Smart Content Services in a secured manner.
+An open authorization configuration is required to adopt the consent to the [!DNL Adobe Experience Manager] application to interact with Smart Content Services in a secured manner.
 
 >[!NOTE]
 >
