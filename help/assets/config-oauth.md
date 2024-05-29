@@ -170,8 +170,6 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
    | [!UICONTROL Organization ID] | [!UICONTROL ORGANIZATION ID] |
    | [!UICONTROL Client Secret] | [!UICONTROL CLIENT SECRET] |
 
-
-
 >[!MORELIKETHIS]
 >
 >* [Overview and how to train Smart Tags](enhanced-smart-tags.md)
