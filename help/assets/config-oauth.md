@@ -174,6 +174,6 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
 
 >[!MORELIKETHIS]
 >
+>* [Overview and how to train Smart Tags](enhanced-smart-tags.md)
 >* [Configure smart tagging](config-smart-tagging.md)
->* [Overview of and how to train Smart Tags](enhanced-smart-tags.md)
 >* [Video tutorial about smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
