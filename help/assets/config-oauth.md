@@ -24,14 +24,14 @@ Refer to [configuration of smart content services](#integrate-adobe-io) for the 
 
 ## OAuth configuration for the existing AMS users {#oauth-config-new-ams-users}
 
-Before performing any of the steps in this methodology, the existing and on-premise users are required to implement the following:
+Before performing any of the steps in this methodology, you are required to implement the following:
 
 ### Prerequisites {#prereqs-config-oauth-onprem}
 
 An OAuth configuration requires the following prerequisites:
 
-* Create a new OAuth integration in the [Developer Console](https://developer.adobe.com/console/user/servicesandapis) using `ClientID`, `ClientSecretID`, and `OrgID`.
-* Add the following files at this path `/apps/system/config in crx/de`:
+* Create a new OAuth integration in the [Developer Console](https://developer.adobe.com/console/user/servicesandapis). Use the `ClientID`, `ClientSecret`, `OrgID`, and other properties in the steps below:
+* The following files can be found at this path `/apps/system/config in crx/de`:
    * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
@@ -116,7 +116,7 @@ A public certificate lets you authenticate your profile on the Adobe Developer C
    >
    >The URL provided as [!UICONTROL Service URL] is not accessible via the browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com](https://status.adobe.com).
 
-1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
+1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`. Moreover, you are no longer required to upload this certificate in Adobe developer console. 
 
    ![A representation of the settings created for the smart tagging service](assets/smart-tags-download-public-cert1.png)
 
