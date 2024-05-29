@@ -1,5 +1,5 @@
 ---
-title: Release Information for [!DNL Adobe Experience Manager] 6.5
+title: Release Notes for [!DNL Adobe Experience Manager] 6.5
 description: Find release information, what's new, install how-tos, and a detailed change list for [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 solution: Experience Manager
