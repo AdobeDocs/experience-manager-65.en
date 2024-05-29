@@ -174,3 +174,9 @@ After you have completed the configuration, you can use a JMX MBean to validate 
 1. Click `validateConfigs()`. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
 
 The validation results are displayed in the same dialog.
+
+>[!MORELIKETHIS]
+>
+>* [Configure smart tagging](config-smart-tagging.md)
+>* [Overview of and how to train Smart Tags](enhanced-smart-tags.md)
+>* [Video tutorial about smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
