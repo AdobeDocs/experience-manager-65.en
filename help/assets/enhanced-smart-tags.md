@@ -188,3 +188,9 @@ You can also assign a higher rank to a tag to increase its relevance for an imag
 * Use of Smart Content Services is limited to up to 2 million tagged images per year. Any duplicate images that are processed and tagged are each counted as a tagged image.
 * If you run the tagging workflow from the timeline, you can apply tags on a maximum of 15 assets at a time.
 * Smart Tags work for only PNG and JPG image formats. So supported assets that have renditions created in these two formats get tagged with Smart Tags.
+
+>[!MORELIKETHIS]
+>
+>* [Overview and how to train Smart Tags](enhanced-smart-tags.md)
+>* [Configure smart tagging](config-smart-tagging.md)
+>* [Video tutorial about smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
