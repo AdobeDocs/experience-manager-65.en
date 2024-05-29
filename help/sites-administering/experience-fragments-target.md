@@ -13,30 +13,6 @@ role: Admin
 ---
 # Exporting Experience Fragments to Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
->[!CAUTION]
->
->Some functionality on this page requires the application of AEM 6.5.3.0 (or later).
->
->6.5.3.0:
->
->* **Externalizer Domains** can now be selected.
->  **Note:** Externalizer Domains are only relevant to the content of the Experience Fragment that is sent to Target, and not metadata such as View Offer Content.
->
->6.5.2.0:
->
->* Experience Fragments can be exported to either:
->
->   * the default workspace.
->   * a named workspace, specified in the Cloud Configuration.
->   * **Note:** Exporting to specific workspaces requires Adobe Target Premium.
->
->* AEM must be [integrated with Adobe Target using IMS](/help/sites-administering/integration-target-ims.md).
->
->AEM 6.5.0.0 and 6.5.1.0:
->
->* The AEM Experience Fragments are exported into the default workspace of Adobe Target.
->* AEM must be integrated with Adobe Target according to the instructions under [Integrating with Adobe Target](/help/sites-administering/target.md).
-
 You can export [Experience Fragments](/help/sites-authoring/experience-fragments.md), created in Adobe Experience Manager (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test, and personalize experiences at scale.
 
 There are three format options available for exporting an Experience Fragment to Adobe Target:
@@ -45,7 +21,13 @@ There are three format options available for exporting an Experience Fragment to
 * JSON: Support for headless content delivery
 * HTML & JSON
 
-AEM Experience Fragments can be exported to the default workspace in Adobe Target, or to user-defined workspaces for Adobe Target. This is done using the Adobe Developer Console, for which AEM must be [integrated with Adobe Target using IMS](/help/sites-administering/integration-target-ims.md).
+AEM Experience Fragments can be exported to the default workspace in Adobe Target, or to user-defined workspaces for Adobe Target. This is done using the Adobe Developer Console, for which AEM must be [integrated with Adobe Target using IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+>[!NOTE]
+>
+>[IMS integrations are now configured with S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md). 
+>
+>Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md). 
 
 >[!NOTE]
 >
@@ -65,14 +47,17 @@ AEM Experience Fragments can be exported to the default workspace in Adobe Targe
 
 ## Prerequisites {#prerequisites}
 
->[!CAUTION]
->
->Some functionality on this page requires the application of AEM 6.5.3.0.
-
 Various actions are required:
 
-1. You have to [integrate AEM with Adobe Target using IMS](/help/sites-administering/integration-target-ims.md).
-2. Experience Fragments are exported from the AEM author instance, so you must [Configure the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Experience Fragment are externalized for web delivery.
+1. You have to [integrate AEM with Adobe Target using IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+   >[!NOTE]
+   >
+   >[IMS integrations are now configured with S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md). 
+   >
+   >Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md). 
+
+1. Experience Fragments are exported from the AEM author instance, so you must [Configure the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Experience Fragment are externalized for web delivery.
 
    >[!NOTE]
    >

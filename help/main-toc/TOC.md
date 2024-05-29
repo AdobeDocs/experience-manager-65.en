@@ -68,6 +68,7 @@ user-guide-title: AEM 6.5
   + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
   + [Same Site Cookie Support](/help/sites-administering/same-site-cookie-support.md)
   + [JWT Credentials Deprecation in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+  + [Setting Up IMS Integrations for AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
   + Authoring {#authoring}
     + Essential tasks, tools and concepts for AEM Authoring {#essentials}
@@ -220,7 +221,6 @@ user-guide-title: AEM 6.5
       + [Configuring Link Tracking for Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
       + [Mapping Component Data with Adobe Analytics Properties](/help/sites-administering/adobeanalytics-mapping.md)
       + [Configuring Video Tracking for Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-      + [Integration with Adobe Analytics using IMS](/help/sites-administering/integration-analytics-ims.md)
       + [HTTP2 Delivery of Content FAQ](/help/sites-administering/scene7-http2faq.md)
       + [Troubleshooting your Adobe Campaign Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
       + [SharePoint Connector Licenses, Copyright Notices, and Disclaimers](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -244,7 +244,6 @@ user-guide-title: AEM 6.5
       + [Integrating with the Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
       + [Manually Configuring the Integration with Adobe Target](/help/sites-administering/target-configuring.md)
       + [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md)
-      + [Integration with Adobe Target using IMS](/help/sites-administering/integration-target-ims.md)
       + [Adobe Classifications](/help/sites-administering/adobeanalytics-classifications.md)
       + [Solutions Integration](/help/sites-administering/integration.md)
       + [Exporting Experience Fragments to Adobe Target](/help/sites-administering/experience-fragments-target.md)
