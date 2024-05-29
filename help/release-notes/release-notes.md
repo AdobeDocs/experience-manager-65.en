@@ -42,14 +42,14 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Forms]
 
-* **Apply artifacts to individual text blocks in XDPs**: A new feature in Forms Designer is introduced that allows users to configure settings on individual text blocks in XDP files to control which elements are treated as artifacts in the resulting PDFs, such as headers and footers, to make them accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF/UA tagging.
+* **Apply artifacts to individual text blocks in XDPs**: A new feature is introduced in Forms Designer that allows users to configure settings on individual text blocks in XDP files to control the elements which are treated as artifacts in the resulting PDFs, such as headers and footers, to make them accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF/UA tagging.
 * **Rule Editor enhancements:**
-  * Support for implementing nested conditions with When-then-else functionality. b) 
-  * Validate or reset, panels and forms, including fields. 
-  * Support for modern JavaScript features such as let and arrow functions (ES10 support) within custom functions.
+  * Support for implementing nested conditions with `When-then-else` functionality.
+  * Validate or reset, panels and forms, including fields.
+  * Support for modern JavaScript features such as let and arrow functions (ES10 support) within the Custom Functions.
 * **AutoTag API for PDF Accessibility**: AEM Forms on OSGi now supports the new AutoTag API to enhance PDF for accessibility standards by adding tags: paragraphs, and lists. It makes PDFs more accessible for users with assistive technology.
+* **AEM Forms Designer** is now certified with `GB18030:2022` standard. With this certification, Now Forms Designer supports Chinese Unicode character set which allow to input Chinese characters into all editable fields and dialogs.
 * **16-bit PNG support**: PDF Generator's ImageToPdf service now supports conversion of PNGs with 16-bit color depth.
-* **AEM Forms Designer** is now certified to the GB18030:2022 standard. With this certification, Forms Designer supports the Chinese Unicode character set, allowing Chinese characters to be entered into all editable fields and dialogs.
 
 <!-- ### [!DNL Forms]
 
@@ -166,21 +166,23 @@ Some of the key features and enhancements in this release include the following:
 * Preview works for all assets, adaptive video sets, and videos. However, it throws a 403 error for `.m3u8` files (which, incidentally, still work by way of public links). (ASSETS-31882)
 * The `scene7SmartCropProcessingStatus` status corrected. Smart Crop video metadata used to show failure even when it was successful. (ASSETS-31255)
 
-### [!DNL Forms]{#forms-6520}
+<!-- ### [!DNL Forms]-->
 
 <!--Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of Forms fixes and enhancements is added to this section post the release.-->
 
-#### [!DNL Adaptive Forms]
+#### [!DNL Adaptive Forms] {#forms-6520}
 
 * When an Adaptive Form is submitted from an Adobe Experience Manager Publish instance to an Adobe Experience Manager Workflow, the workflow fails to save the attachments. (FORMS-14209) 
 * When a user clicks the Print to PDF button on AEM Forms Service Pack 15 (6.5.15.0) on OSGi, the Client-side validation fails, it is evident by the error messages shown in the Developer Tools Console window. (FORMS-14029) 
-* When a user submits a form on AEM 6.5 Forms Service Pack 17 (6.5.17.0) or AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0), the translation of “Thank-You” messages does not function correctly. Although the messages are correctly translated in the dictionary. (FORMS-13846) * When a user previews a form having a date-picker component, the date-picker field misaligns with the other form fields. (FORMS-13763) 
+* When a user submits a form on AEM 6.5 Forms Service Pack 17 (6.5.17.0) or AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0), the translation of “Thank-You” messages does not function correctly. Although the messages are correctly translated in the dictionary. (FORMS-13846) 
+* When a user previews a form having a Date-Picker component, the date-picker field misaligns with the other form fields. (FORMS-13763)
 * When a user on the environment AEM Forms Service Pack 19 (6.5.19.0) calls the API to format numbers, the formatted numbers are not aligned with the respective Locales, and the currency signs are not displayed correctly. The issue persists regardless of the Locale parameter set to "de_DE" or "en_US". (FORMS-13759)
-* When a user on the environment AEM Forms Service Pack 19 (6.5.19.0), converts 16-bit PNGs to PDFs using Img2Pdf PDFG service, it fails and is unable to "Use Acrobat Image conversion" service. (FORMS-13754) 
-* On AEM Forms Service Pack 19 (6.5.19.1), when a user uploads an existing JobOptions file in the Services / PDF Generator / Adobe PDF Settings section of the administrative web interface of AEM forms JEE (adminui), the upload fails and shows an error message: " An error has occurred while processing your request. Please use the breadcrumb links to navigate to another page." (FORMS-13597)
+* When a user on the environment AEM Forms Service Pack 19 (6.5.19.0) converts 16-bit PNGs to PDFs using Img2Pdf PDFG service, it fails and is unable to "Use Acrobat Image conversion" service. (FORMS-13754) 
+* On AEM Forms Service Pack 19 (6.5.19.1), when a user uploads an existing JobOptions file in the Services / PDF Generator / Adobe PDF Settings section of the administrative web interface of AEM forms JEE (adminui), the upload fails and shows an error message (FORMS-13597):
+  "An error has occurred while processing your request. Please use the breadcrumb links to navigate to another page." 
 * When a user migrates from AEM Forms Service Pack 15 (6.5.15.0) to AEM Forms Service Pack (6.5.17.0) or AEM Forms Service Pack (6.5.19.0), the FD key duplicates, which causes the forms to not translate correctly. (FORMS-13461)
 * When a user puts dispatchers in front of the authors supported by the deployment topology on AMS, the Assign Task submission hangs/fails. (FORMS-8010)
-* Accessibility Related Improvements:
+* Accessibility Related Fixes:
   * Icons on “formsanddocuments” page are now accessible as per the ANDI standard. (FORMS-13094) 
   * Users can access tool bar via keyboard to save or edit content on the edit page, the tool bar is enhanced as per the ANDI standard. (FORMS-13102) 
   * “Required or Mandatory” form fields are accessible as per the ANDI standard. (FORMS-13097)
@@ -189,11 +191,13 @@ Some of the key features and enhancements in this release include the following:
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
 
-* When a user adds a new table to an existing form using AEM Forms Designer on the environment AEM Forms Service Pack 19 (6.5.19.0), it crashes. (LC-3921978) 
-* When a user renders an Adaptive Form on Linux environment, an extra space between the field component occurs. (LC-3921957) 
-* When a user converts an XTG file to PostScript format using the Output Service, it fails with error: AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE). (LC-3921720) 
+* When a user adds a new table to an existing form using AEM Forms Designer, on the environment AEM Forms Service Pack 19 (6.5.19.0), it crashes. (LC-3921978) 
+* When a user renders an Adaptive Form on Linux environment, an extra space between the field component occurs. (LC-3921957)
+* When a user converts an XTG file to PostScript format using the Output Service, it fails with the error:           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720) 
 
-  To resolve the issue:  Check if the data contains special characters like Zero Width Space (0x200b). If yes, then use the flag by adding the tag `<behaviorOverride>patch-LC3921720:1</behaviorOverride> in the XCI file as shown in custom_xfa(1)-1.xci` file.
+  To resolve the issue:
+    Check if the data contains special characters like Zero Width Space (0x200b). If yes, then use the flag by adding the tag `<behaviorOverride>patch-LC3921720:1</behaviorOverride> in the XCI file as shown in custom_xfa(1)-1.xci` file.
+
 * When using AEM Forms Service Pack 18 (6.5.18.0) within a Linux environment, XMLFM crashes on CPUs not supporting AVX /AVX2 instruction featuring AMD processors. (LC-3921718)
 * When a user creates a PDF from XDP using Forms Output service, the user is not able to configure "settings" on "individual text blocks" in XDP to control what is "artifacted". (LC-3921954)
 
