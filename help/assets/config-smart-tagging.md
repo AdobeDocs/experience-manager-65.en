@@ -129,6 +129,13 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
 ### Configure Smart Content Service {#configure-smart-content-service}
 
+>[!CAUTION]
+>
+>Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+>See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
+> See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
+
 To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], [!UICONTROL CLIENT SECRET], and [!UICONTROL CLIENT ID] fields from the Adobe Developer Console integration. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
 
 1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
@@ -145,6 +152,37 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
    | [!UICONTROL Technical Account ID] | [!UICONTROL TECHNICAL ACCOUNT ID] |
    | [!UICONTROL Organization ID] | [!UICONTROL ORGANIZATION ID] |
    | [!UICONTROL Client Secret] | [!UICONTROL CLIENT SECRET] |
+
+### Configure OAuth for on-premise users {#config-oauth-onprem}
+
+#### Prerequisites {#prereqs-config-oauth-onprem}
+
+An authorization scope is an OAuth string that contains the following prerequisites:
+
+* Create a new OAuth integration in the [Developer Console](https://developer.adobe.com/console/user/servicesandapis) using `ClientID`, `ClientSecretID`, and `OrgID`.
+* Add the following files at this path `/apps/system/config in crx/de`:
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+
+#### Configure OAuth for on-premise users {#steps-config-oauth-onprem}
+
+1. Add or update the below properties in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
+
+   * `auth.token.provider.authorization.grants="client_credentials"`
+   * `auth.token.provider.orgId="<OrgID>"`
+   * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
+   * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+     `auth.token.validator.type="adobe-ims-similaritysearch"`
+   * Update the `auth.token.provider.client.id` with the Client ID of the new OAuth configuration.
+   * Update `auth.access.token.request` to `"https://ims-na1.adobelogin.com/ims/token/v3"`
+2. Rename the file to `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+3. Perform the steps below in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
+   * Update the property auth.ims.client.secret with the Client Secret from the new OAuth integration.
+   * Rename the file to `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
+4. Save all the changes in content repository development console, for example, CRXDE.
+5. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
+6. Delete the old configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
+7. Restart the console.
 
 ### Validate the configuration {#validate-the-configuration}
 
@@ -293,5 +331,6 @@ To check whether the Smart Content Service is trained on your tags in the traini
 
 >[!MORELIKETHIS]
 >
->* [Overview of and how to train Smart Tags](enhanced-smart-tags.md)
+>* [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
+>* [Overview and how to train Smart Tags](enhanced-smart-tags.md)
 >* [Video tutorial about smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
