@@ -193,4 +193,5 @@ You can also assign a higher rank to a tag to increase its relevance for an imag
 >
 >* [Overview and how to train Smart Tags](enhanced-smart-tags.md)
 >* [Configure smart tagging](config-smart-tagging.md)
+>* [Troubleshooting smart tags for OAuth credentials](config-oauth.md)
 >* [Video tutorial about smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
