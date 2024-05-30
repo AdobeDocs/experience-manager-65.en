@@ -345,6 +345,7 @@ user-guide-title: AEM 6.5
     + [Preview 3D assets](/help/assets/previewing-3d-assets.md)
     + [Review folder assets and collections](/help/assets/bulk-approval.md)
     + [Enhanced Smart Tags](/help/assets/enhanced-smart-tags.md)
+    + [Troubleshooting smart tags for OAuth credentials](/help/assets/config-oauth.md)
     + [Activity stream in timeline](/help/assets/activity-stream.md)
     + [Process assets](/help/assets/assets-workflow.md)
     + [Add image maps](/help/assets/image-maps.md)
