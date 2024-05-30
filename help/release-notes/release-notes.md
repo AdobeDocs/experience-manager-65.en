@@ -22,7 +22,7 @@ role: User,Admin,Architect,Developer
 | -------- | ---------------------------- |
 | Version  | 6.5.21.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
-| Date     | Thursday, June 0, 2024 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Date     | Thursday, June 06, 2024 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.21.0 {#what-is-included-in-aem-6521}
