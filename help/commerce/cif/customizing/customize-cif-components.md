@@ -44,7 +44,7 @@ You clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia) and
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Add the necessary OSGi configurations so you can connect your AEM instance to an Adobe Commerce instance or add the configurations to the newly created project.
@@ -387,7 +387,7 @@ In this case, you want to render a banner on top of the teaser to indicate that 
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Open a new browser window and navigate to AEM and the **OSGi console** > **Status** > **Sling Models**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -466,7 +466,7 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Refresh to the **Venia Home Page** at [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) where the Product Teaser has been added.
