@@ -332,5 +332,5 @@ To check whether the Smart Content Service is trained on your tags in the traini
 >[!MORELIKETHIS]
 >
 >* [Overview and how to train Smart Tags](enhanced-smart-tags.md)
->* [Troubleshooting smart tags for OAuth credentials](config-smart-tagging.md)
+>* [Troubleshooting smart tags for OAuth credentials](config-oauth.md)
 >* [Video tutorial about smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
