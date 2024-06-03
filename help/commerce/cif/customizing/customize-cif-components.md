@@ -1,16 +1,8 @@
 ---
 title: Customize CIF Core Components
 description: Learn how to customize Adobe Experience Manager CIF Core Components. The tutorial covers how to safely extend a CIF Core Component to meet business-specific requirements. Learn how to extend a GraphQL query to return a custom attribute and display the new attribute in a CIF Core Component.
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
-feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 ---
@@ -52,7 +44,7 @@ You clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia) and
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Add the necessary OSGi configurations so you can connect your AEM instance to an Adobe Commerce instance or add the configurations to the newly created project.
@@ -395,7 +387,7 @@ In this case, you want to render a banner on top of the teaser to indicate that 
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Open a new browser window and navigate to AEM and the **OSGi console** > **Status** > **Sling Models**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -474,7 +466,7 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. Refresh to the **Venia Home Page** at [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) where the Product Teaser has been added.
