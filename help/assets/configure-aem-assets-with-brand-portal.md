@@ -27,9 +27,11 @@ AEM Assets is configured with Brand Portal via Adobe Developer Console, which pr
 >
 >Configuring AEM Assets with Brand Portal via Adobe Developer Console is supported on AEM 6.5.4.0 and above.
 >
+<!--
 >Earlier, Brand Portal was configured via legacy OAuth Gateway, which uses the JSON Web Token (JWT) exchange to obtain an IMS Access token for authorization. 
 >
 >Configuration via legacy OAuth Gateway is no longer supported from April 6, 2020, and is changed to Adobe Developer Console.
+-->
 
 >[!TIP]
 >
@@ -377,7 +379,7 @@ You can now:
 See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 -->
-
+<!--
 ## Upgrade configuration {#upgrade-integration-65}
 
 To upgrade your existing configurations to Adobe Developer Console, do the following steps, in the listed sequence : 
@@ -428,3 +430,4 @@ Run the following checklist while deleting the existing configurations:
 
 
 You can now [create a configuration](#configure-new-integration-65) by way of the Adobe Developer Console on your AEM 6.5 Author instance. 
+-->
