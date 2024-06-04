@@ -37,7 +37,7 @@ role: User,Admin,Architect,Developer
 
 Some of the key features and enhancements in this release include the following:
 
-* A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994) MAJOR
+* A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)
 
 ### [!DNL Assets]
 
@@ -77,12 +77,12 @@ The following is the list of accessibility fixes included in this release:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6521}
 
-* Fixed the double inclusion of the form elements. (SITES-21109) BLOCKER
-* When creating a Content Fragment, the Close button sometimes becomes unresponsive, causing the entire page to freeze and necessitating a page refresh to close the Content Fragment. As for the version creation issue, the system is creating a new version of a Content Fragment. This issue occurs even when the user has not made any changes, simply by interacting with the RTE or a text field. (SITES-21187) MAJOR
+* Fixed the double inclusion of the form elements. (SITES-21109)
+* When creating a Content Fragment, the Close button sometimes becomes unresponsive, causing the entire page to freeze and necessitating a page refresh to close the Content Fragment. As for the version creation issue, the system is creating a new version of a Content Fragment. This issue occurs even when the user has not made any changes, simply by interacting with the RTE or a text field. (SITES-21187)
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6521}
 
-* While upgrading Adobe Experience Manager from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-20098) CRITICAL
+* While upgrading Adobe Experience Manager from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-20098)
 
 <!-- #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6521}
 
@@ -106,8 +106,8 @@ The following is the list of accessibility fixes included in this release:
 
 #### Experience Fragments{#sites-experiencefragments-6521}
 
-* Rollout of Experience Fragments from `masters/language` to `country/language` does not update cross-references. (SITES-21172) BLOCKER 
-* Templates not only specified in the `cq:allowedTemplates`, but templates that have `allowedPaths` configured at the template level, appear as options when creating a new Experience Fragment. (SITES-20855) MAJOR
+* Rollout of Experience Fragments from `masters/language` to `country/language` does not update cross-references. (SITES-21172)
+* Templates not only specified in the `cq:allowedTemplates`, but templates that have `allowedPaths` configured at the template level, appear as options when creating a new Experience Fragment. (SITES-20855)
 
 <!-- #### Foundation Components (Legacy){#sites-foundation-components-legacy-6521}
 
@@ -119,7 +119,7 @@ The following is the list of accessibility fixes included in this release:
 
 #### MSM - Live Copies{#sites-msm-live-copies-6521}
 
-* Overlaying the Page component to add tabs in page properties. One of them is page configuration and has a property to add an Experience Fragment URL. The link configured in the page properties for the Experience Fragment does not change for any language copies created for that page. The configured link should change with the language copy URL. (SITES-19580) MAJOR
+* Overlaying the Page component to add tabs in page properties. One of them is page configuration and has a property to add an Experience Fragment URL. The link configured in the page properties for the Experience Fragment does not change for any language copies created for that page. The configured link should change with the language copy URL. (SITES-19580)
 
 #### Page Editor{#sites-pageeditor-6521}
 
@@ -127,7 +127,7 @@ The following is the list of accessibility fixes included in this release:
 
 ### [!DNL Assets]{#assets-6521}
 
-* If an asset is published to Brand Portal, the publishing status remains inconsistent. (ASSETS-36807) MAJOR
+* If an asset is published to Brand Portal, the publishing status remains inconsistent. (ASSETS-36807)
 * Assets are not deleted when you delete them from an instance using an API call. (ASSETS-35131)
 * When you try to import metadata, a `question mark (?)` replaces the insertion of characters in any language other than English.  (ASSETS-35091)
 * When `dc:title` property is used with data type string, the assets content tree is not working appropriately after the installation of Service Pack 6.5.19. (ASSETS-34684)
@@ -135,8 +135,8 @@ The following is the list of accessibility fixes included in this release:
 
 #### [!DNL Dynamic Media]{#assets-dm-6521}
 
-* In AEM 6.5.18, it does not show all the hotspots added to an asset when you edit the hotspots. However, all the hotspots work in a published asset, but you cannot edit them later if you needed to. (ASSETS-33609) MAJOR
-* The latest EPS files that get uploaded are not generating thumbnails after reprocessing. (ASSETS-32617) MAJOR
+* In AEM 6.5.18, it does not show all the hotspots added to an asset when you edit the hotspots. However, all the hotspots work in a published asset, but you cannot edit them later if you needed to. (ASSETS-33609)
+* The latest EPS files that get uploaded are not generating thumbnails after reprocessing. (ASSETS-32617)
 * In Tools > Assets > Dynamic Media Publish Setup > Request Attributes tab, the inputs `Width(px)` and `Height(px)` look different in Spanish, Italian, and Portuguese. They are not aligned with each other for these locations. (ASSETS-31896)
 * Effective May 1, 2024, Adobe Dynamic Media ended support for the following:
   * SSL (Secure Socket Layer) 2.0
@@ -188,7 +188,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Cloud Services{#foundation-cloudservices-6521}
 
-* Remove Google Guava from AEM Cloud Services. (CQ-4356436) CRITICAL
+* Remove Google Guava from AEM Cloud Services. (CQ-4356436)
 
 <!-- #### Communities {#foundation-communities-6521}
 
@@ -204,9 +204,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Integrations{#foundation-integrations-6521}
 
-* Regarding `cq-target-integration`, need to remove non-test usage of Google Guava. (CQ-4357101) CRITICAL
-* Replacement of Service Account (JSON Web Token or JWT) credentials with OAuth2 Server-to-Server credentials (also known as Service Principals). (NPR-41994) MAJOR
-* Create Audience request fails with IMS (Identity Management System) configuration. (NPR-41888) MAJOR
+* Regarding `cq-target-integration`, need to remove non-test usage of Google Guava. (CQ-4357101)
+* Replacement of Service Account (JSON Web Token or JWT) credentials with OAuth2 Server-to-Server credentials (also known as Service Principals). (NPR-41994)
+* Create Audience request fails with IMS (Identity Management System) configuration. (NPR-41888)
 * When a customer attempts to view the Payload page, the content does not display properly due to a malformed URL; a 404 error is displayed. A missing question mark symbol in the URL, before the query parameters, caused the error. This issue requires the customer to insert the question mark symbol to view the Payload page correctly. (NPR-41957)
 * Remove code and dependency of Adobe Search&Promote from AEM 6.5, which reached end of life on [September 2022 as per notice](https://experienceleague.adobe.com/en/docs/discontinued/using/search-promote). (NPR-41855)
 
@@ -227,14 +227,14 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Translation{#foundation-translation-6521}
 
-* An issue with AEM 6.5.19 out-of-the-box translation status not updating as expected for a launch. After importing a translated file into a translation job associated with an AEM launch, the status was expected to change to `Approved`. Instead, the status changed to `Ready for Review`, which is not the expected behavior. (NPR-41756) MAJOR
+* An issue with AEM 6.5.19 out-of-the-box translation status not updating as expected for a launch. After importing a translated file into a translation job associated with an AEM launch, the status was expected to change to `Approved`. Instead, the status changed to `Ready for Review`, which is not the expected behavior. (NPR-41756)
 * When creating multiple configurations and going to the Translation Cloud Services configurations, not all elements are displayed in the UI. Only the first 40 elements/folder are displayed; lazy loading is triggered but not adding more content. (NPR-41829)
 * Garbled characters occur if there is Japanese on the Permissions page in the Touch user interface. (NPR-41794)
 * AEM 6.5.14 and 6.5.9 do not send an emoji for translation. (CQ-4357000)
 
 #### User interface{#foundation-ui-6521}
 
-* In Tools > Security > Users > <user_name> > Profiles, in the **Edit User Settings** dialog box, clicking Cancel does not exit the dialog box. (NPR-41793) MAJOR
+* In Tools > Security > Users > <user_name> > Profiles, in the **Edit User Settings** dialog box, clicking Cancel does not exit the dialog box. (NPR-41793)
 * The Granite `pathfield` component at `/libs/granite/ui/components/coral/foundation/form/pathfield` fails to enable the **[!UICONTROL Select]** button when an asset is selected. After the path field is popped up, and the user selects the asset checkbox, the **[!UICONTROL Select]** button is not enabled; it does not change from gray to blue. (NPR-41970)
 * An issue exists with the Content Fragment Model (CFM) reference field within AEM. Despite the CFM reference field being set as mandatory, the system allows users to click Save to save content with non-CFM values in certain scenarios. The Save button should be dimmed (unavailable). (NPR-41894)
 * The standard Coral user interface dialog boxes that use the `successresponse` action must trigger a Success Response after the action. But in AEM 6.5 Service Pack 19, the reload action is not invoked and no message is displayed. (NPR-41797)
