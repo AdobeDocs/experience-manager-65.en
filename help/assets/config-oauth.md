@@ -4,6 +4,7 @@ description: Learn how to configure smart tagging and enhanced smart tagging in 
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
+exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
 ---
 # Troubleshooting smart tags for OAuth credentials {#oauth-config}
 
