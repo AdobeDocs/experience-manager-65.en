@@ -7,7 +7,7 @@ feature: Adaptive Forms, Core Components
 ---
 # Custom functions in Adaptive Forms Core Components
 
-<span class="preview"> This article contains content for some pre-release features. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). The features under the pre-release program are:
+<span class="preview"> This article contains content for features under early adopter program. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). The features under the pre-release program are:
 * Optional parameter support in Custom Functions
 * Caching feature for Custom Functions
 * Global scope object and field objects support for Custom Functions
@@ -23,7 +23,7 @@ Ensure to set the [latest form version](https://github.com/adobe/aem-core-forms-
 
 ## Introduction
 
-AEM Forms 6.5 includes JavaScript functions that allow you to define complex business rules using the rule editor. While AEM Forms offers a variety of out-of-the-box custom functions, many use cases require defining your own custom functions to use across multiple forms. These custom functions enhance the capabilities of forms by enabling the manipulation and processing of entered data to meet specific requirements. Additionally, they allow for dynamic alteration of form behavior based on predefined criteria.
+AEM Forms 6.5 includes JavaScript functions that allow you to define complex business rules by using the rule editor. While AEM Forms offers a variety of out-of-the-box custom functions, many use cases require defining your own custom functions to use across multiple forms. These custom functions enhance the capabilities of forms by enabling the manipulation and processing of entered data to meet specific requirements. Additionally, they allow for dynamic alteration of form behavior based on the predefined criteria.
 
 ### Uses of custom functions {#uses-of-custom-function}
 
@@ -36,31 +36,34 @@ Advantages of using Custom Functions in Adaptive Forms Core Components are:
 * **Dynamic behavior**: Custom functions allow you to control the dynamic behavior of your forms based on specific conditions. For example, you can show/hide fields, modify field values, or adjust form logic dynamically.
 * **Integration**: You can use custom functions to integrate with external APIs or services. It helps in fetching data from external sources, sending data to external Rest endpoints, or performing custom actions based on external events.
 
-Custom functions are essentially client libraries that are added in the JavaScript file. Once you create a Custom Function, it becomes available in the rule editor for selection by the user in an Adaptive Form. The custom Functions are identified by the JavaScript annotations in the rule editor.
+Custom functions are essentially client libraries that are added in the JavaScript file. Once you create a Custom Function, it becomes available in the rule editor for selection by the user in an Adaptive Form. The custom functions are identified by the JavaScript annotations in the rule editor.
 
 ### Supported JavaScript annotations for custom function {#js-annotations}
 
-JavaScript annotations provides metadata for JavaScript code. It includes comments that start with specific symbols for example, `/**` and `@`. The annotations provide important information about functions, variables, and other elements in the code. Adaptive Form supports the following JavaScript annotations for custom functions:
+**JavaScript annotations provides metadata for JavaScript code**. It includes comments that start with specific symbols for example, `/**` and `@`. The annotations provide important information about functions, variables, and other elements in the code. Adaptive Form supports the following JavaScript annotations for custom functions:
 
 #### Name
 
-The name is used to identify the custom function in the rule editor of an Adaptive form. Following syntaxes are used to name a Custom Function:
+The **Name** is used to identify the custom function in the rule editor of an Adaptive form. Following syntaxes are used to name a Custom Function:
 
 * `@name [functionName] <Function Name>`
 * `@function [functionName] <Function Name>`
-* `@func [functionName] <Function Name>`.
-`functionName` is the name of the function. Spaces are not allowed.
-`<Function Name>` is the display name of the function in the rule editor of an Adaptive Form.
-If the function name is identical to the name of the function itself, you can omit `[functionName]` from the syntax.
+* `@func [functionName] <Function Name>`
+
+>[!NOTE]
+>`[functionName]` is the name of the function. Spaces are not allowed.
+>`<Function Name>` is the display name of the function in the rule editor of Adaptive Forms.
+>If the function name is identical to the name of the function itself, you can omit `[functionName]` from the syntax.
 
 #### Parameter
 
- The parameter is a list of arguments used by custom functions. A function can support multiple parameters. The following syntaxes are used to define a parameter in a custom function:
+ The **Parameter** is a list of arguments used by custom functions. A function can support multiple parameters. The following syntaxes are used to define a parameter in a custom function:
 
 * `@param {type} name <Parameter Description>`
 * `@argument` `{type} name <Parameter Description>` 
-* `@arg` `{type}` `name <Parameter Description>`.
-`{type}` represents the parameter type.  The allowed parameter types are:
+* `@arg` `{type}` `name <Parameter Description>`
+
+    `{type}` represents the parameter type. The allowed parameter types are:
     
     * string: Represents a single string value.
     * number: Represents a single numeric value.
@@ -72,19 +75,20 @@ If the function name is identical to the name of the function itself, you can om
     * date[]: Represents an array of date values.
     * array: Represents a generic array containing values of various types.
     * object: Represents form object passed to a custom function instead of passing its value directly.
-    * scope: Represents the globals object, which contains read-only variables such as form instances, target field instances, and methods for performing form modifications within custom functions. It is declared as the last parameter in JavaScript annotations and is not visible in the rule editor of an Adaptive Form. The scope parameter accesses the object of the form or component to trigger the rule or event required for form processing. For further information on the Globals object and how to use it, [click here](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+    * scope: Represents the globals object, which contains read-only variables such as form instances, target field instances, and methods for performing form modifications within the custom functions. It is declared as the last parameter in the JavaScript annotations and is not visible to the rule editor of an Adaptive Form. The scope parameter accesses the object of the form or component to trigger the rule or event required for form processing. For further information on the Globals object and how to use it, [click here](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
     
-The parameter type is not case-sensitive and spaces are not allowed in the parameter name.
+The Parameter type is **not case-sensitive** and spaces are not allowed in the parameter name.
  
 `<Parameter Description>` contains details about the purpose of the parameter. It can have multiple words.
 
 **Optional Parameters**
-By default, all parameters are mandatory. You can define a parameter as optional by either adding `=` after the parameter type or enclosing the parameter name in  `[]`. Parameters defined as optional in JavaScript annotations are displayed as optional in the rule editor. 
+By default, all parameters are mandatory. You can define a parameter as optional by either adding `=` after the parameter type or enclosing the parameter name in `[]`. Parameters defined as optional in JavaScript annotations are displayed as optional in the rule editor.
 To define a variable as an optional parameter, you can use the any of the following syntaxes:
   
 * `@param {type=} Input1`
 
 In the above line of code, `Input1` is an optional parameter without any default value. To declare optional parameter with default value:
+
 `@param {string=<value>} input1`
         
 `input1` as an optional parameter with the default value set to `value`. 
@@ -92,7 +96,9 @@ In the above line of code, `Input1` is an optional parameter without any default
 * `@param {type} [Input1]`
 
 In the above line of code, `Input1` is an optional parameter without any default value. To declare optional parameter with default value:
+
 `@param {array} [input1=<value>]`
+
     `input1` is an optional parameter of array type with the default value set to `value`. 
     Ensure that the parameter type is enclosed in curly brackets {} and the parameter name is enclosed in square brackets []. 
 
@@ -153,11 +159,14 @@ The return type is not case-sensitive.
 
   The custom function, declared as private, does not appear in the list of custom functions in the rule editor of an Adaptive form. By default, custom functions are public. The syntax to declare custom function as private is `@private`.
 
-
+<!--
 #### Member
 
   Syntax: `@memberof namespace`
   Attaches a namespace to the function.
+-->
+
+<!--
 
 #### This
 
@@ -186,6 +195,10 @@ The return type is not case-sensitive.
     >[!NOTE]
     >
     >Comments before custom function are used for summary. Summary can extend to multiple lines until a tag is encountered. Limit the size to a single for a concise description in the rule builder.
+
+-->
+
+<!--
 
 ## Function declaration supported types {#function-declaration-supported-types}
 
@@ -245,6 +258,7 @@ var c = {
     }
 };
 ```
+-->
 
 ## Guidelines while creating custom functions {#considerations}
 
@@ -314,11 +328,11 @@ If the user does not add any JavaScript annotations to the custom function, the 
 ## Create a custom function {#create-custom-function}
 
 Steps to create custom functions are:
-1. [Create and Add a Custom Function](#create-add-custom-function)
+1. [Create and add a custom function](#create-add-custom-function)
 1. [Add client library to an Adaptive Form](#use-custom-function)
 
 
-## Create a Custom Function {#create-add-custom-function}
+## Create a custom function {#create-add-custom-function}
 
 To create a custom function, perform the following steps:
 
@@ -337,8 +351,8 @@ To create a custom function, perform the following steps:
 1. Save your changes.
 
 1. Create a folder called `js` under the `clientlibs` folder.
-1. Create a JavaScript file called `functions.js` under the `js` folder
-1. Create a file called `js.txt` under the `clientlibs` folder. 
+1. Create a JavaScript file called `functions.js` under the `js` folder.
+1. Create a file called `js.txt` under the `clientlibs` folder.
 1. Save your changes.
 The created folder structure looks like:
 
@@ -495,11 +509,11 @@ In an Adaptive Form, you can use [Custom Functions within the rule editor](/help
 
 In the above example, when the user enters the date of birth in the format (YYYY-MM-DD), the custom function `calculateAge` is invoked and returns the age. 
 
-![Calcualte Agae custom function in Rule Editor](/help/forms/using/assets/custom-function-calculate-age.png)
+![Calculate Agae custom function in Rule Editor](/help/forms/using/assets/custom-function-calculate-age.png)
 
 Let's preview the form to observe how the custom functions are implemented through the rule editor:
 
-![Calculate Agae custom function in Rule Editor Form Preview](/help/forms/using/assets/custom-function-age-calculate-form.png)
+![Calculate Age custom function in Rule Editor Form Preview](/help/forms/using/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
@@ -912,7 +926,7 @@ Adaptive Forms implement caching for custom functions to enhance response time w
 
 ![custom function with cache support](/help/forms/using/assets/custom-function-cache-error.png)
 
-In case the custom functions are modified, the caching becomes invalidated, and it is parsed.  
+In case the custom functions are modified, the caching becomes invalidated, and it is parsed. 
 
 ## Troubleshooting {#troubleshooting}
 

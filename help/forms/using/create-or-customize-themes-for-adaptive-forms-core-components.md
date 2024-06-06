@@ -29,6 +29,8 @@ AEM 6.5 environment provides the below listed themes for Core Components based A
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
+* [Public theme](https://github.com/adobe/aem-forms-theme-public)
+* [Manufacturing theme](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Understanding structure of the themes {#understanding-structure-of-theme}
 
@@ -51,6 +53,8 @@ AEM Forms 6.5 provides the below listed themes for Core Components based Adaptiv
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
+* [Public theme](https://github.com/adobe/aem-forms-theme-public)
+* [Manufacturing theme](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 You can [customize any of these themes to create a theme](#customize-a-theme-core-components).
 
