@@ -1,14 +1,10 @@
 ---
 title: Adobe Experience Manager with MongoDB
-
 description: Learn about the tasks and considerations needed for a successful deployment of Adobe Experience Manager with MongoDB.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
@@ -17,7 +13,7 @@ role: Admin
 ---
 # Adobe Experience Manager with MongoDB{#aem-with-mongodb}
 
-This article aims to improve knowledge on tasks and considerations that are necessary to successfully deploy AEM (Adobe Experience Manager) with MongoDB.
+This article aims to improve knowledge on the tasks and considerations that are necessary to successfully deploy AEM (Adobe Experience Manager) with MongoDB.
 
 For more deployment-related information, consult the [Deploying and Maintaining](/help/sites-deploying/deploy.md) section of the documentation.
 
@@ -30,7 +26,7 @@ MongoDB is typically used for supporting AEM author deployments where one of the
 * High volumes of page edits;
 * Large rollouts or activations.
 
-The criteria above are only for the author instances and not for any publish instances which should all be TarMK based. The number of users refers to authenticated users, as author instances do not allow unauthenticated access.
+The criteria above are only for the author instances and not for any publish instances that should all be TarMK based. The number of users refers to authenticated users, as author instances do not allow unauthenticated access.
 
 If the criteria are not met, then a TarMK active/standby deployment is recommended to address availability. Generally, MongoDB should be considered in situations where the scaling requirements are more than what can be achieved with a single item of hardware.
 
@@ -44,7 +40,7 @@ Below is a minimal deployment for AEM on MongoDB. For simplicity, SSL terminatio
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-A minimal deployment requires three `mongod` instances configured as a replica set. One instance is elected primary with the other instances being secondaries, with the election managed by `mongod`. Attached to each instance is a local disk. So the cluster can support the load, a minimum throughput of 12 MB per second with more than 3000 I/O Operations per Second (IOPS) is recommended.
+A minimal deployment requires three `mongod` instances configured as a replica set. One instance is elected primary with the other instances being secondaries, with the election managed by `mongod`. Attached to each instance is a local disk. So, the cluster can support the load, a minimum throughput of 12 MB per second with more than 3000 I/O Operations per Second (IOPS) is recommended.
 
 The AEM authors are connected to the `mongod` instances, with each AEM author connecting to all three `mongod` instances. Writes are sent to the primary and reads may be read from any of the instances. Traffic is distributed based on load by a Dispatcher to any one of the active AEM author instances. The Oak data store is a `FileDataStore`, and MongoDB monitoring is provided by MMS or MongoDB Ops Manager depending on the location of the deployment. Operating system level and log monitoring is provided by third-party solutions like Splunk or Ganglia.
 
@@ -58,9 +54,9 @@ For a list of supported operating systems for AEM 6, see the [Technical Requirem
 
 Virtualized environments are supported provided there is good communication between the different technical teams running the project. This support includes the team that is running AEM, the team owning the operating system, and the team managing the virtualized infrastructure.
 
-There are specific requirements covering the I/O capacity of the MongoDB instances which must be managed by the team managing the virtualized environment. If the project uses a cloud deployment, such as Amazon Web Services, instances must be provisioned with sufficient I/O capacity and consistency to support the MongoDB instances. Otherwise, the MongoDB processes and the Oak repository perform unreliably and erratically.
+There are specific requirements covering the I/O capacity of the MongoDB instances that must be managed by the team managing the virtualized environment. If the project uses a cloud deployment, such as Amazon Web Services, instances must be provisioned with sufficient I/O capacity and consistency to support the MongoDB instances. Otherwise, the MongoDB processes and the Oak repository perform unreliably and erratically.
 
-In the virtualized environments, MongoDB requires specific I/O and VM configurations to ensure that the storage engine of MongoDB is not crippled by VMWare resource allocation policies. A successful implementation ensures that there are no barriers between the various teams and all are signed up to deliver the performance required.
+In virtualized environments, MongoDB requires specific I/O and VM configurations to ensure that the storage engine of MongoDB is not crippled by VMWare resource allocation policies. A successful implementation ensures that there are no barriers between the various teams and all are signed up to deliver the performance required.
 
 ## Hardware Considerations {#hardware-considerations}
 
@@ -103,7 +99,7 @@ While it is possible to use command-line tools to get a quick snapshot of the op
 
 ### MongoDB Cloud Manager {#mongodb-cloud-manager}
 
-MongoDB Cloud Manager is a free service offered by MongoDB that allows monitoring and management of MongoDB instances. It provides a view into the performance and health of MongoDB cluster in real time. It manages both cloud and privately hosted instances provided the instance can reach the Cloud Manager monitoring server.
+MongoDB Cloud Manager is a free service offered by MongoDB that allows monitoring and management of MongoDB instances. It provides a view into the performance and health of the MongoDB cluster in real time. It manages both cloud and privately hosted instances provided the instance can reach the Cloud Manager monitoring server.
 
 It requires an agent installed on the MongoDB instance that connects to the monitoring server. There are three levels of the agent:
 
@@ -111,7 +107,7 @@ It requires an agent installed on the MongoDB instance that connects to the moni
 * A monitoring agent that can monitor the `mongod` instance,
 * A backup agent that can perform scheduled backups of the data.
 
-Although using Cloud Manager for maintenance automation of a MongoDB cluster makes many of the routine tasks easier, it is not required, and neither is using it for backup. When choosing Cloud Manager to monitor, monitoring is however required.
+Although using Cloud Manager for maintenance automation of a MongoDB cluster makes many of the routine tasks easier, it is not required, and neither is using it for backup. When choosing a Cloud Manager to monitor, monitoring is however required.
 
 For more information regarding MongoDB Cloud Manager, consult the [MongoDB documentation](https://docs.cloud.mongodb.com/).
 
@@ -123,7 +119,7 @@ MongoDB Ops Manager is the same software as the MongoDB Cloud Manager. Once regi
 
 Operating system level monitoring is required to run an AEM MongoDB cluster.
 
-Ganglia is a good example of such a system and it provides a picture on the range and detail of information required which goes beyond basic health metrics like CPU, load average, and free disk space. To diagnose issues, lower-level information such as entropy pool levels, CPU I/O Wait, sockets in FIN_WAIT2 state are required.
+Ganglia is a good example of such a system and it provides a picture of the range and detail of information required which goes beyond basic health metrics like CPU, load average, and free disk space. To diagnose issues, lower-level information such as entropy pool levels, CPU I/O Wait, sockets in FIN_WAIT2 state are required.
 
 ### Log Aggregation {#log-aggregation}
 
@@ -186,7 +182,7 @@ Where:
   The cache size in megabytes. This space is distributed among various caches used in the `DocumentNodeStore`. The default is 256 MB. However, Oak read performance benefits from a larger cache.
 
 * `blobCacheSize`
-  Frequently used blobs may be cached by AEM to avoid refetching them from the data store. Doing so has more impact on performance, especially when storing blobs in the MongoDB database. All the file system-based Data Stores benefits from the operating system-level disk cache.
+  Frequently used blobs may be cached by AEM to avoid refetching them from the data store. Doing so has more of an impact on performance, especially when storing blobs in the MongoDB database. All the file system-based Data Stores benefits from the operating system-level disk cache.
 
 #### Data Store Configuration {#data-store-configuration}
 
@@ -231,7 +227,7 @@ It is recommended that a persistent cache configuration is enabled for MongoDB d
 
 ### Operating System Support {#operating-system-support}
 
-MongoDB 2.6 uses a memory mapped storage engine that is sensitive to some aspects of the operating system level management between RAM and Disk. Query and read Performance of the MongoDB instance relies on avoiding or eliminating slow I/O operations often referred to as page faults. These issues are page faults that apply to the `mongod` process in particular. Do not confuse with operating system-level page faults.
+MongoDB 2.6 uses a memory mapped storage engine that is sensitive to some aspects of the operating system level management between RAM and Disk. Query and read Performance of the MongoDB instance relies on avoiding or eliminating slow I/O operations often referred to as page faults. These issues are page faults that apply to the `mongod` process in particular. Do not confuse this with operating system-level page faults.
 
 For fast operation, the MongoDB database should only access data that is already in RAM. The data that it must access is made up of indexes and data. This collection of indexes and data is called the working set. Where the working set is larger than the available RAM MongoDB has to page that data in from disk incurring an I/O cost, evicting other data already in memory. If the eviction causes data to be reloaded from disk, page faults dominate and performance degrades. Where the working set is dynamic and variable, more page faults are incurred to support operations.
 
@@ -239,7 +235,7 @@ MongoDB runs on several operating systems including a wide variety of Linux&reg;
 
 #### Linux&reg; {#linux}
 
-* Turn off transparent hugepages and defrag. See [Transparent Huge Pages Settings](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) for more information.
+* Turn off the transparent hugepages and defrag. See [Transparent Huge Pages Settings](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) for more information.
 * [Adjust the readahead settings](https://docs.mongodb.com/manual/administration/production-notes/#readahead) on the devices storing your database files so that you fit your use case.
 
     * For the MMAPv1 storage engine, if your working set is bigger that the available RAM, and the document access pattern is random, consider lowering the readahead to 32 or 16. Evaluate different settings so you can find an optimal value that maximizes the resident memory and lowers the number of page faults.
@@ -305,7 +301,7 @@ See [Journaling with WiredTiger](https://docs.mongodb.com/manual/core/journaling
 
 >[!NOTE]
 >
->Minimum log record size for WiredTiger is 128 bytes. If a log record is 128 bytes or smaller, WiredTiger does not compress that record.
+>The minimum log record size for WiredTiger is 128 bytes. If a log record is 128 bytes or smaller, WiredTiger does not compress that record.
 >
 >You can disable journaling by setting [storage.journal.enabled](https://docs.mongodb.com/manual/reference/configuration-options/#storage.journal.enabled) to false, which can reduce the overhead of maintaining the journal.
 >
@@ -338,9 +334,9 @@ Starting in 3.4, the WiredTiger internal cache, by default, uses the larger of e
 
 By default, WiredTiger uses Snappy block compression for all collections and prefix compression for all indexes. Compression defaults are configurable at a global level and can also be set on a per-collection and per-index basis during collection and index creation.
 
-Different representations are used for data in the WiredTiger internal cache versus the on-disk format:
+Different representations are used for data in the WiredTiger internal cache versus in the on-disk format:
 
-* Data in the filesystem cache is the same as the on-disk format, including benefits of any compression for data files. The filesystem cache is used by the operating system to reduce disk I/O.
+* Data in the filesystem cache is the same as the on-disk format, including the benefits of any compression for data files. The filesystem cache is used by the operating system to reduce disk I/O.
 
 Indexes loaded in the WiredTiger internal cache have a different data representation to the on-disk format, but can still take advantage of index prefix compression to reduce RAM usage.
 
@@ -390,7 +386,7 @@ The MongoDB process behaves differently under different allocation policies:
   Run only on CPUs (cores) listed. Mongod only runs on the CPUs listed and only use memory available on those CPUs.
 
 * `--localalloc`
-  Always allocate memory on the current node, but use all nodes the thread runs on. If one thread performs allocation, then only the memory available to that CPU is used.
+  Always allocate memory on the current node, but use all nodes the thread runs on. If one thread performs an allocation, then only the memory available to that CPU is used.
 
 * `--preferred=<node>`
   Prefers allocation to a node, but falls back to others if the preferred node is full. Relative notation for defining a node may be used. Also, the threads run on all nodes.
@@ -403,11 +399,11 @@ Due to the memory intensive nature of databases, operating system level swapping
 
 #### Remote Filesystems {#remote-filesystems}
 
-Remote file systems like NFS are not recommended for MongoDB's internal data files (the mongod process database files) , because they introduce too much latency. Do not confuse with the shared file system required for the storage of Oak Blob's (FileDataStore), where NFS is recommended.
+Remote file systems like NFS are not recommended for MongoDB's internal data files (the mongod process database files), because they introduce too much latency. Do not confuse with the shared file system required for the storage of Oak Blob's (FileDataStore), where NFS is recommended.
 
 #### Read Ahead {#read-ahead}
 
-Tune Read ahead so that when a page is paged in using a random read, unnecessary blocks are not read from disk. Such results mean an unnecessary consumption of I/O bandwidth.
+Tune Read ahead so that when a page is paged in using a random read, unnecessary blocks are not read from the disk. Such results mean an unnecessary consumption of I/O bandwidth.
 
 ### Linux&reg; Requirements {#linux-requirements}
 
@@ -565,13 +561,13 @@ If you are using WMWare ESX to manage and deploy your virtualized environments, 
 1. Turn off memory ballooning
 1. Pre-allocate and reserve memory for the virtual machines that host the MongoDB databases
 1. Use Storage I/O Control to allocate sufficient I/O to the `mongod` process.
-1. Guarantee CPU resources of the machines hosting MongoDB by setting [CPU Reservation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
+1. Guarantee the CPU resources of the machines hosting MongoDB by setting [CPU Reservation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
-1. Consider using ParaVirtual I/O drivers. See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).
+1. Consider using ParaVirtual I/O drivers. <!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
 ### Amazon Web Services {#amazon-web-services}
 
-For documentation on how to set up MongoDB with Amazon Web Services, check the [Configure AWS Integration](https://docs.cloud.mongodb.com/tutorial/configure-aws-settings/) article on the MongoDB website.
+For documentation on how to set up MongoDB with Amazon Web Services, check the [Configure AWS Integration](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/) article on the MongoDB website.
 
 ## Securing MongoDB Before Deployment {#securing-mongodb-before-deployment}
 
@@ -583,7 +579,7 @@ See this post on [securely deploying MongoDB](https://blogs.adobe.com/security/2
 
 To properly serve your MongoDB deployment, the operating system that hosts the Dispatcher must be running **Apache httpd** **version 2.4 or higher.**
 
-Also, make sure that the all libraries used in your build are up to date to minimize security implications.
+Also, make sure that all libraries used in your build are up to date to minimize security implications.
 
 ### Dispatcher Configuration {#dispatcher-configuration}
 
@@ -593,7 +589,7 @@ Because the Dispatcher is stateless, it can scale horizontally with ease. In som
 
 Running AEM without a Dispatcher requires SSL termination and load balancing to be performed by another application. It is required because sessions must have affinity to the AEM instance on which they are created, a concept known as sticky connections. The reason is to assure that updates to the content exhibit minimal latency.
 
-Check the [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) for more information on how to configure it.
+Check the [Dispatcher documentation](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) for more information on how to configure it.
 
 ### Additional Configuration {#additional-configuration}
 
