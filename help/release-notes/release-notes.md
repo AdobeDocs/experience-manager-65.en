@@ -5,7 +5,7 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
 
@@ -479,4 +479,3 @@ These websites are only available to customers. If you are a customer and need a
 >* [[!DNL Experience Manager] product page](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Subscribe to Adobe Priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
-
