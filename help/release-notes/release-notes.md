@@ -48,6 +48,7 @@ Some of the key features and enhancements in this release include the following:
 * **AutoTag API for PDF Accessibility**: AEM Forms on OSGi now supports the new AutoTag API to enhance PDF for accessibility standards by adding tags: paragraphs, and lists. It makes PDFs more accessible for users with assistive technology.
 * **AEM Forms Designer** is now certified with `GB18030:2022` standard. With this certification, Now Forms Designer supports Chinese Unicode character set which allow to input Chinese characters into all editable fields and dialogs.
 * **16-bit PNG support**: PDF Generator's ImageToPdf service now supports conversion of PNGs with 16-bit color depth.
+
 ### [!DNL Assets]
 
 #### Enhancements
@@ -217,7 +218,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 ### Foundation {#foundation-6521}
 
 #### Apache Felix {#foundation-apachefelix-6521}
->>>>>>> main
+
 
 * Upgrade issue with AEM 6.5 Service Pack 19 (SP19) in which the Application server context-root path is missing for unauthorized requests to Apache Felix following the installation of SP19. Update to Apache Felix Web Management Console 4.9.8. (NPR-41933)
 
@@ -236,7 +237,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 <!-- #### Communities {#foundation-communities-6521}
 
 * U -->
->>>>>>> main
+
 
 <!-- #### Content distribution{#foundation-content-distribution-6521}
 
