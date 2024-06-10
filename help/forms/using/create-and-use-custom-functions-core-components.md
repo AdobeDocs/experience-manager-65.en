@@ -340,13 +340,14 @@ Before you begin adding a custom function to your Adaptive Forms, ensure you hav
 ## Create a custom function {#create-custom-function}
 
 Steps to create custom functions are:
-1. [Create a client side library using Archetype project and add a custom function](#create-a-client-side-library)
-1. [Create and add a custom function and deploy directly to your local environment](#create-add-custom-function)
+1. [Create a client side library using Archetype project and add a custom function](#create-client-library-archetype)
+            OR
+[Create and add a custom function and deploy directly to your local environment](#create-add-custom-function)
 1. [Add client library to an Adaptive Form](#add-client-library)
 1. [Using Custom Function in an Adaptive Form](#use-custom-functions)
 
 
-### Create a client library {#create-client-library}
+### Create a client library {#create-client-library-archetype}
 
 You can add custom functions by adding a client library to the project created using [using the AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#what-you-get).
 
@@ -354,30 +355,7 @@ You can add custom functions by adding a client library to the project created u
 
 If you have an existing project and have already the project structure as shown in the image below, you can directly add [custom functions](#create-add-custom-function) to your local project.
 
-<!--
-
-**Clone the Repository**
-
-Clone your [AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
-
-
-
-1. Open your command line or terminal window.
-
-1. Navigate to the desired location on your machine where you want to store the repository.
-
-1. Run the following command to clone the repository:
-
-    `git clone [Git Repository URL]`
-
-This command downloads the repository and creates a local folder of the cloned repository on your machine. Throughout this guide, we refer to this folder as the [AEMaaCS project directory].
-
-
-This command downloads the repository and creates a local folder of the cloned repository on your machine. Throughout this guide, we refer to this folder as the [AEMaaCS project directory].
-
--->
-
-When you create an Archetpe Project on your local machine, create a client library, To create a client library perform the following steps:
+After you create an Archetype Project on your local machine, create a client library, To create a client library perform the following steps:
 
 1. **Add a Client Library Folder**
 
@@ -554,69 +532,7 @@ Now, you can create a rule to use custom functions in the rule editor:
 
 Now, let's understand how to configure and use a custom function using the [Rule Editor's Invoke service in AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
 
-<!--
-
-### Create a client library {#create-client-library}
-
-You can add custom functions by adding client library. To create a client library, perform the following steps:
-
-1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`.
-1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder`. For example, create a client library folder as `customclientlibs`.
-1. Add a property `categories` with string type value. For example, assign the value `customfunctionscategory` to the `categories` property for the `customclientlibs` folder.
-
-   >[!NOTE]
-   >
-   > You can choose any name for `client library folder` and `categories` property.
-
-1. Create a folder named `js`.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
-1. Add a JavaScript file, for example, `function.js`. The file comprises the code for custom function.
-1. Save the `function.js` file.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
-1. Add a text file as `js.txt`. The file contains:
-  
-    ```javascript
-        #base=js
-        functions.js
-    ```
-
-1. Save the `js.txt` file. 
-1. Add, commit, and push the changes in the repository using the below commands:
-         
-    ```javascript
-
-        git add .
-        git commit -a -m "Adding custom functions"
-        git push
-    ```
-
-1. [Run the pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to deploy the custom function.
-
-Once the pipeline is executed successfully, the custom function added in client library becomes available in your Adaptive Form rule editor. 
-
-### Add client library to an Adaptive Form{#use-custom-function}
-
-Once you have deployed your client library to your Forms CS environment, use its capabilities in your Adaptive Form. To add the client library in your Adaptive Form
-
-1. Open your form in edit mode. To open a form in edit mode, select a form and select **[!UICONTROL Edit]**.
-1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
-1. Click the Guide Container properties ![Guide properties](/help/forms/using/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens.  
-1. Open the **[!UICONTROL Basic]** tab and select the name of the **[!UICONTROL client library category]** from the drop-down list (in this case, select `customfunctionscategory`).
-
-   ![Adding the custom function client library](/help/forms/using/assets/clientlib-custom-function.png)
-
-   >[!NOTE]
-   >
-   > Multiple categories can be added by specifying a comma-separated list within the **[!UICONTROL Client library category]** field.
-
-1. Click **[!UICONTROL Done]**.
-
-You can use the custom function in the rule editor of an Adaptive Form using the [Javascript annotations](##js-annotations).
-
--->
-
-## Using Custom Function in an Adaptive Form {#use-custom functions}
+## Using Custom Function in an Adaptive Form {#use-custom-functions}
 
 In an Adaptive Form, you can use [Custom Functions within the rule editor](/help/forms/using/rule-editor-core-components.md) Let us add the following code to the JavaScript file (`Function.js` file) to calculate age based on the Date of Birth(YYYY-MM-DD). Create a custom function as `calculateAge()` which takes the date of birth as input and returns age:
 
