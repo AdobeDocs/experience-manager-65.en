@@ -403,7 +403,7 @@ Add the following to the added client library folder:
 
 1. In the `js` folder, add the javascript file as `function.js` which includes the custom functions:
 
-   ```javascript
+    ```javascript
     /**
         * Calculates Age
         * @name calculateAge
@@ -424,7 +424,7 @@ Add the following to the added client library folder:
 
     return age;
     }
-
+    
     ```
 
 1. Save the files.
