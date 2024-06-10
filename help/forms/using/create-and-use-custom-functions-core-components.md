@@ -422,6 +422,7 @@ Add the following to the added client library folder:
           #base=js
         function.js
     ```
+
 1. In the `js` folder, add the javascript file as `function.js` which includes the custom functions:
 
    ```javascript
@@ -447,6 +448,7 @@ Add the following to the added client library folder:
     }
 
     ```
+
 1. Save the files.
 
  ![custom fuction folder structure](assets/custom-function-added-files.png)
@@ -614,7 +616,7 @@ You can use the custom function in the rule editor of an Adaptive Form using the
 
 -->
 
-## Using Custom Function in an Adaptive Form{#use-custom functions}
+## Using Custom Function in an Adaptive Form {#use-custom functions}
 
 In an Adaptive Form, you can use [Custom Functions within the rule editor](/help/forms/using/rule-editor-core-components.md) Let us add the following code to the JavaScript file (`Function.js` file) to calculate age based on the Date of Birth(YYYY-MM-DD). Create a custom function as `calculateAge()` which takes the date of birth as input and returns age:
 
