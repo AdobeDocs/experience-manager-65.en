@@ -5062,14 +5062,13 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 ### Doc Utility Services {#doc-utility-services}
 
-Document utilities with synchronous APIs help you convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and Auto Tag API for tagging PDF documents with lists and paragraphs. Details of each APIs are given below:
+<!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
 #### Auto Tag PDF documents {#auto-tag-api}
 
+Auto Tag PDF API helps to make a PDF document accessible by adding tags to it, It supports tagging block of text (paragraphs) and the bulleted lists in one operator.
+
 ![Auto Tagged PDF document](assets/auto-tag-api.png)
-
-You can tag the lists and paragraphs in a PDF document as shown in the image below.
-
 
 **Syntax**: `tag(Document inDoc)`
 
