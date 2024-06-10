@@ -7,8 +7,8 @@ feature: Adaptive Forms, Core Components
 ---
 # Custom functions in Adaptive Forms Core Components
 
-<span class="preview"> This article contains content for features under early adopter program. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). The features under the pre-release program are:
-* Optional parameter support in Custom Functions
+<span class="preview"> This article contains content for features under the early adopter program. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). The features under the pre-release program are:
+<!-- * Optional parameter support in Custom Functions-->
 * Caching feature for Custom Functions
 * Global scope object and field objects support for Custom Functions
 * Support for modern JavaScript features like let and arrow functions (ES10 support)
@@ -81,6 +81,8 @@ The Parameter type is **not case-sensitive** and spaces are not allowed in the p
  
 `<Parameter Description>` contains details about the purpose of the parameter. It can have multiple words.
 
+<!--
+
 **Optional Parameters**
 By default, all parameters are mandatory. You can define a parameter as optional by either adding `=` after the parameter type or enclosing the parameter name in `[]`. Parameters defined as optional in JavaScript annotations are displayed as optional in the rule editor.
 To define a variable as an optional parameter, you can use the any of the following syntaxes:
@@ -134,6 +136,8 @@ You can save the rule without specifying a value for required parameters, but th
 When user leaves the optional parameter empty, then the "Undefined" value is passed to the custom function for the optional parameter.
 
 To learn more about how to define optional parameters in JSDocs, [click here](https://jsdoc.app/tags-param).
+
+-->
     
 #### Return Type
 
@@ -324,17 +328,148 @@ To list custom functions in the rule editor of an Adaptive Form, create custom f
 
 If the user does not add any JavaScript annotations to the custom function, the custom function is not listed in the rule editor of an Adaptive Form.
 
+### Prerequisites to create a custom function
+
+Before you begin adding a custom function to your Adaptive Forms, ensure you have the following Software installed on your machine:
+
+* **Plain Text Editor (IDE)**: While any plain text editor can work, an Integrated Development Environment (IDE) like Microsoft Visual Studio Code offers advanced features for easier editing.
+
+* **Git:** This version control system is required for managing code changes. If you do not have it installed, download it from https://git-scm.com.
+
 
 ## Create a custom function {#create-custom-function}
 
 Steps to create custom functions are:
-1. [Create and add a custom function](#create-add-custom-function)
-1. [Add client library to an Adaptive Form](#use-custom-function)
+1. [Create a client side library using Archetype project and add a custom function](#create-a-client-side-library)
+1. [Create and add a custom function and deploy directly to your local environment](#create-add-custom-function)
+1. [Add client library to an Adaptive Form](#add-client-library)
+1. [Using Custom Function in an Adaptive Form](#use-custom-functions)
 
 
-## Create a custom function {#create-add-custom-function}
+### Create a client library {#create-client-library}
 
-To create a custom function, perform the following steps:
+You can add custom functions by adding a client library to the project created using [using the AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#what-you-get).
+
+![custom fuction folder structure](assets/custom-library-folder-structure.png)
+
+If you have an existing project and have already the project structure as shown in the image below, you can directly add [custom functions](#create-add-custom-function) to your local project.
+
+<!--
+
+**Clone the Repository**
+
+Clone your [AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+
+
+
+1. Open your command line or terminal window.
+
+1. Navigate to the desired location on your machine where you want to store the repository.
+
+1. Run the following command to clone the repository:
+
+    `git clone [Git Repository URL]`
+
+This command downloads the repository and creates a local folder of the cloned repository on your machine. Throughout this guide, we refer to this folder as the [AEMaaCS project directory].
+
+
+This command downloads the repository and creates a local folder of the cloned repository on your machine. Throughout this guide, we refer to this folder as the [AEMaaCS project directory].
+
+-->
+
+When you create an Archetpe Project on your local machine, create a client library, To create a client library perform the following steps:
+
+1. **Add a Client Library Folder**
+
+To add new client library folder to your [AEM project directory], follow the steps:
+
+1. Open the [AEM project directory] in an editor.
+
+    ![custom fuction folder structure](assets/custom-library-folder-structure.png)
+
+1. Locate `ui.apps`.
+1. Add new folder. For example, add a folder named as `experience-league`.
+1. Navigate to `/experience-league/` folder and add a `ClientLibraryFolder`. For example, create a client library folder named as `customclientlibs`.
+
+   `Location is: [AEM project directory]/ui.apps/src/main/content/jcr_root/apps/`
+
+**Add files and folders to the Client Library folder**
+
+Add the following to the added client library folder:
+    
+* `.content.xml` file
+* `js.txt` file
+* `js` folder 
+
+`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/` 
+
+1. In the `.content.xml` add the following lines of code:
+    
+    ```javascript
+    <?xml version="1.0" encoding="UTF-8"?>
+    <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[customfunctionscategory]"/>
+    ```
+
+   >[!NOTE]
+   >
+   > You can choose any name for `client library folder` and `categories` property.
+
+1. In the `js.txt` add the following lines of code:
+   
+    ```javascript
+          #base=js
+        function.js
+    ```
+1. In the `js` folder, add the javascript file as `function.js` which includes the custom functions:
+
+   ```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
+
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
+
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
+
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+
+    return age;
+    }
+
+    ```
+1. Save the files.
+
+ ![custom fuction folder structure](assets/custom-function-added-files.png)
+
+**Include the new folder in filter.xml**:
+
+1. Navigate to the `/ui.apps/src/main/content/META-INF/vault/filter.xml` file in your [AEMaaCS project directory].
+
+1. Open the file and add the following line at the end:
+
+    `<filter root="/apps/experience-league" />`
+1. Save the file.
+
+    ![custom fuction filter xml](assets/custom-function-filterxml.png)
+
+1. Build the newly created Client library folder to your AEM environment by following the steps given in [How to Build section](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
+
+## Create and deploy custom function directly on your local environment {#create-add-custom-function}
+
+If your AEM project structure is same as given in the image below, you can create a custom function on your local environment to use the latest updates of custom functions. To do so, perform the following steps:
+
+![custom fuction folder structure](assets/custom-library-folder-structure.png)
+
 
 1. Log into `http://server:port/crx/de/index.jsp#`. 
 1. Create a folder under the `/apps` folder. For example, create a folder named as `experience-league`.
@@ -398,7 +533,7 @@ You can refer to the following [custom function](/help/forms/using/assets/custom
 
 Now, you can use the custom function in your Adaptive Form by adding the client library.
 
-## Add client library in an Adaptive Form{#use-custom-function}
+## Add client library in an Adaptive Form{#add-client-library}
 
 Once you have deployed your client library to your AEM Forms environment, use its capabilities in your Adaptive Form. To add the client library in your Adaptive Form
 
@@ -479,7 +614,7 @@ You can use the custom function in the rule editor of an Adaptive Form using the
 
 -->
 
-## Using Custom Function in an Adaptive Form
+## Using Custom Function in an Adaptive Form{#use-custom functions}
 
 In an Adaptive Form, you can use [Custom Functions within the rule editor](/help/forms/using/rule-editor-core-components.md) Let us add the following code to the JavaScript file (`Function.js` file) to calculate age based on the Date of Birth(YYYY-MM-DD). Create a custom function as `calculateAge()` which takes the date of birth as input and returns age:
 

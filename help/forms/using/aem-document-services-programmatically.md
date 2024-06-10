@@ -5066,7 +5066,10 @@ Document utilities with synchronous APIs help you convert documents from PDF to 
 
 #### Auto Tag PDF documents {#auto-tag-api}
 
-You can tag the lists and paragraphs in a PDF document
+![Auto Tagged PDF document](assets/auto-tag-api.png)
+
+You can tag the lists and paragraphs in a PDF document as shown in the image below.
+
 
 **Syntax**: `tag(Document inDoc)`
 
