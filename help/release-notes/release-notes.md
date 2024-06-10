@@ -215,6 +215,12 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * In the Templates editor, the text string *`No video available.`* is not localized. (SITES-13190)
 * String after activating or deactivating a user are not localized in **Tools** > **Security** > **Users** > *any_user_name* > **Activate** > **OK**, and select *any_user_name* > **Deactivate** > **OK**. (NPR-41737)
 
+#### Oak {#foundation-oak-6521}
+
+* Performance regression fix - Avoid range queries on like conditions. (OAK-9481)
+
+* New Oak version is 1.22.20.
+
 #### Platform{#foundation-platform-6521}
 
 * The `Unclosed resource resolver` error is being experienced for `com.day.cq.mailer.impl.DefaultMailService`. The `MessageGatewayService` class, which is out-of-the-box, was being used without a resource resolver. The issue occurred on any page with a form submission button that sends an email using this class. (NPR-41853)
