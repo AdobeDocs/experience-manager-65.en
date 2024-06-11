@@ -218,8 +218,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 #### Oak {#foundation-oak-6521}
 
 * Performance regression fix - Avoid range queries on like conditions. (OAK-9481)
-
-* New Oak version is 1.22.20.
+* New Oak version is 1.22.20. 
 
 #### Platform{#foundation-platform-6521}
 
