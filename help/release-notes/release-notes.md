@@ -193,7 +193,7 @@ The following is the list of accessibility fixes included in this release:
 * When a user converts an XTG file to PostScript format using the Output Service, it fails with the error:           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720) 
 
   To resolve the issue:
-    Check if the data contains special characters like Zero Width Space (0x200b). If yes, then use the flag by adding the tag `<behaviorOverride>patch-LC3921720:1</behaviorOverride> in the XCI file as shown in custom_xfa(1)-1.xci` file.
+    Check if the data contains special characters like Zero Width Space (0x200b). If yes, then use the flag by adding the tag `<behaviorOverride>patch-LC3921720:1</behaviorOverride>` in the XCI file as given in [custom_xfa.xci](/help/forms/using/assets/custom_xfa.xci) file.
 
 * When using AEM Forms Service Pack 18 (6.5.18.0) within a Linux environment, XMLFM crashes on CPUs not supporting AVX /AVX2 instruction featuring AMD processors. (LC-3921718)
 * When a user creates a PDF from XDP using Forms Output service, the user is not able to configure "settings" on "individual text blocks" in the XDP to control what is "artifacted". (LC-3921954)

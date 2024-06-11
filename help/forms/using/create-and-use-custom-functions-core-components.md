@@ -340,16 +340,16 @@ Before you begin adding a custom function to your Adaptive Forms, ensure you hav
 ## Create a custom function {#create-custom-function}
 
 Steps to create custom functions are:
-1. [Create a client side library using Archetype project and add a custom function](#create-client-library-archetype)
-            OR
+1. [Create a client side library using the AEM Project Archetype and add a custom function](#create-client-library-archetype)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+OR
 [Create and add a custom function and deploy directly to your local environment](#create-add-custom-function)
 1. [Add client library to an Adaptive Form](#add-client-library)
-1. [Using Custom Function in an Adaptive Form](#use-custom-functions)
+1. [Use custom function in an Adaptive Form](#use-custom-functions)
 
 
-### Create a client library {#create-client-library-archetype}
+### Create a client library using the AEM Project Archetype{#create-client-library-archetype}
 
-You can add custom functions by adding a client library to the project created using [using the AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#what-you-get).
+You can add custom functions by adding a client library to the project created [using the AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 
 ![custom fuction folder structure](assets/custom-library-folder-structure.png)
 
