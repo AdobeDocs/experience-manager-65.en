@@ -29,6 +29,8 @@ AEM 6.5 environment provides the below listed themes for Core Components based A
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
+* [FSI theme](https://github.com/adobe/aem-forms-theme-fsi)
+* [Healthcare theme](https://github.com/adobe/aem-forms-theme-healthcare)
 * [Public theme](https://github.com/adobe/aem-forms-theme-public)
 * [Manufacturing theme](https://github.com/adobe/aem-forms-theme-manufacturing)
 
