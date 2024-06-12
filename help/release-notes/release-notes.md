@@ -501,13 +501,17 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6521}
 
-* When a user installs AEM Forms Service Pack 21 (6.5.21.0), Geode JARs are not updated and versions 1.15.1 and 1.15.1.2 are present in the `libs/caching/libs` folder after installation of the `patch-0087`.(FORMS-14926)
+
+* When a user installs AEM Forms on JEE Service Pack 21 (6.5.21.0), two versions of Geode jars: `geode-1.15.1.jar` and `geode-1.15.1.2.jar`, is found in the `<AEM_Forms_Installation>/lib/caching/lib` folder which may cause execution issues. (FORMS-14926).
 
   To resolve the issue, perform the following steps:
-  1. Stop the locators.
-  1. Try reinstalling the patch by running the installers in run as administrator mode.
-  1. Check the folder in the path (C:\Adobe\Adobe_Experience_Manager_Forms\lib\caching\lib), you see updated Geode version.
-  1. Restart the locators.
+
+  1. Stop the locators and server in the specified order, if they are running.
+  1. Re-install the patch by running the patch installer in administrator mode (Important).
+  1. Confirm that only the Geode jars with `version 1.15.1.2.` jar is present.
+
+  >[!NOTE] 
+  > No action is required if only the geode jars with `version 1.15.1.2` is present.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
