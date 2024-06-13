@@ -38,14 +38,16 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 Some of the key features and enhancements in this release include the following:
 
 * A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)
-* Apply artifacts to individual text blocks in XDPs: A new feature is introduced in Forms Designer that allows users to configure settings on individual text blocks in XDP files to control the elements which are treated as artifacts in the resulting PDFs, such as headers and footers, to make them accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF/UA tagging.
+
 * Rule Editor enhancements in AEM Forms:
   * Support for implementing nested conditions with `When-then-else` functionality.
   * Validate or reset, panels and forms, including fields.
   * Support for modern JavaScript features such as let and arrow functions (ES10 support) within the Custom Functions.
 * AutoTag API for PDF Accessibility: AEM Forms on OSGi now supports the new AutoTag API to enhance PDF for accessibility standards by adding tags: paragraphs, and lists. It makes PDFs more accessible for users with assistive technology.
-* AEM Forms Designer is certified with `GB18030:2022` standard. With this certification, Now Forms Designer supports Chinese Unicode character set which allow to input Chinese characters into all editable fields and dialogs.
 * 16-bit PNG support: PDF Generator's ImageToPdf service now supports conversion of PNGs with 16-bit color depth.
+* Apply artifacts to individual text blocks in XDPs: A new feature is introduced in Forms Designer that allows users to configure settings on individual text blocks in XDP files to control the elements which are treated as artifacts in the resulting PDFs, such as headers and footers, to make them accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF/UA tagging.
+* AEM Forms Designer is certified with `GB18030:2022` standard. With this certification, Now Forms Designer supports Chinese Unicode character set which allow to input Chinese characters into all editable fields and dialogs.
+
 
 ### [!DNL Assets]
 
@@ -188,6 +190,24 @@ The following is the list of accessibility fixes included in this release:
   * Icons on “formsanddocuments” page are now accessible as per the ANDI standard. (FORMS-13094) 
   * Users can access tool bar via keyboard to save or edit content on the edit page, the tool bar is enhanced as per the ANDI standard. (FORMS-13102) 
   * “Required or Mandatory” form fields are accessible as per the ANDI standard. (FORMS-13097)
+
+* When a user tries to view a form on the page load, it fails to render. (FORMS-13594)
+* The date input field component does not function correctly on Microsoft Edge in Internet Explorer compatibility mode. (FORMS-13170)
+* Stalled email Notification with attachment failed to be sent when the fix for [additional-steps-to-use-email-with-attachments](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) is performed on the server. (FORMS-14227)
+* On AEM Forms Workspace on Service Pack 18 (6.5.18.0), When a user comments on any uploaded document, it causes the document file to corrupt. (FORMS-13735)
+* On AEM Forms Service Pack 18 (6.5.18.0) or AEM Forms Service Pack 19 (6.5.19.0) or AEM Forms Service Pack 20 (6.5.20.0), When a user tries to search for an Adaptive Form from the side panel (by toggling) asset tab, within the editing interface, the search fails. (FORMS-14117)
+* When a user edits a form created in German and translated into English, it results in inconsistent language displays between the 'Preview' and 'Edit' modes. This causes RadioButton and Checkbox components to display in English during 'Edit' mode while correctly appearing in German during 'Preview' mode. (FORMS-13910)
+* Process purge process tool fails with the error `NoClassDefFoundError: org/omg/CORBA/UserException`. (FORMS-13751)
+* When a user tries to embed an Adaptive Form (AF) inside a webpage, either external or on AEM Sites, using an embed container, the adaptive form guide container introduces an ARIA LABEL with the role=“main” for the embedded form. According to ARIA guidelines, there should only be one role=“main” per page. Therefore, when a user adds another role=“main” for their page's main content, it is flagged as an accessibility issue. (FORMS-13538)
+* On AEM Forms Service Pack 19 (6.5.19.0), On using the drop-down in an Adaptive Form, the dropdowns with placeholder text retain the value of id="emptyValue". So if a form has multiple drop-down components, each will have id="emptyValue" which is not correct as per the ARIA guidelines. (FORMS-13370).
+* When a user reloads an Interactive Communication after the data is submitted through XML, a blank space between the text block occurs in the generated PDF. (FORMS-13481)
+* Missing IPH for “Prepare for DSC Deployment step” screen while running ConfigurationManager. (FORMS-10699)
+* When a user adds a new dictionary to translate a form with existing dictionaries, the old translations become invalidated. The following issues arise: (FORMS-13576)
+    * Some fields fail to populate the translated data.
+    * Some fields are not translated into the new language, even though the data is successfully saved to the dictionary.
+
+#### [!DNL Forms Designer] {#forms-desgner-6520}
+
 * When a user adds a new table to an existing form using AEM Forms Designer on the environment AEM Forms Service Pack 19 (6.5.19.0), it crashes. (LC-3921978) 
 * When a user renders an Adaptive Form on Linux environment, an extra space between the field components occur. (LC-3921957)
 * When a user converts an XTG file to PostScript format using the Output Service, it fails with the error:           `(AEM_OUT_001_003:Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE)`. (LC-3921720) 
@@ -502,16 +522,16 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 ### Known issues for AEM Forms {#known-issues-aem-forms-6521}
 
 
-* When a user installs AEM Forms on JEE Service Pack 21 (6.5.21.0), two versions of Geode jars: `geode-1.15.1.jar` and `geode-1.15.1.2.jar`, is found in the `<AEM_Forms_Installation>/lib/caching/lib` folder which may cause execution issues. (FORMS-14926).
+* After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode JARs `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926).
 
-  To resolve the issue, perform the following steps:
+  Perform the following steps to resolve the issue:
 
   1. Stop the locators and server in the specified order, if they are running.
   1. Re-install the patch by running the patch installer in administrator mode (Important).
-  1. Confirm that only the Geode jars with `version 1.15.1.2.` jar is present.
+  1. Confirm that only the Geode jars with `version 1.15.1.2` are present.
 
   >[!NOTE] 
-  > No action is required if only the geode jars with `version 1.15.1.2` is present.
+  > No action is required if only the Geode jars with `version 1.15.1.2` are present.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
