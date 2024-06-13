@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeDocumentServicesForSAP" APIVersion="820.20081108042000.506920"?>
+<xfa>
+   <config xmlns="http://www.xfa.org/schema/xci/1.0/" xmlns:xfa="http://www.xfa.org/schema/xci/1.0/">
+      <present> <!--  [0..n]  -->
+         <cache> <!-- Note: Once render caches can be generated on the server, the renderCache tag below may be removed. -->
+            <templateCache maxEntries="0"/>
+            <renderCache enable="1"/>
+         </cache>
+         <common>
+            <data>
+               <adjustData>0</adjustData> <!-- 0|1 -->
+               <attributes>preserve</attributes> <!-- ignore|delegate|preserve -->
+            </data>
+         </common>
+         <pcl> <!--  [0..n]  -->
+            <fontInfo>
+               <embed>1</embed> <!-- 0|1 -->
+               <subsetBelow>100</subsetBelow>
+            </fontInfo>
+            <xdc>
+               <uri>hppcl5e.xdc</uri>
+            </xdc>
+         </pcl>
+         <pdf name="pdf"> <!--  [0..n]  -->
+            <fontInfo>
+               <embed>0</embed> <!-- 0|1 -->
+               <map>
+                  <equate from="Arial_*_*" to="Helvetica_*_*"/>
+                  <equate from="Times New Roman_*_*" to="Times_*_*"/>
+                  
+                  <equateRange from='Arial_*_*' to='Helvetica_*_*' unicodeRange='U+000000-00007F'/>                <!-- Basic Latin -->
+                  <equateRange from='Arial_*_*' to='Helvetica_*_*' unicodeRange='U+000080-0000FF'/>                <!-- Latin-1 Supplement -->
+                  <equateRange from='Arial_*_*' to='Myriad Pro_*_*' unicodeRange='U+000100-00017F'/>               <!-- Latin Extended-A -->
+                  <equateRange from='Arial_*_*' to='Myriad Pro_*_*' unicodeRange='U+000180-00024F'/>               <!-- Latin Extended-B -->
+                  <equateRange from='Arial_*_*' to='Myriad Pro_*_*' unicodeRange='U+000370-0003FF'/>               <!-- Greek and Coptic -->
+                  <equateRange from='Arial_*_*' to='Myriad Pro_*_*' unicodeRange='U+000400-0004FF'/>               <!-- Cyrillic -->
+                  <equateRange from='Arial_*_*' to='Myriad Pro_*_*' unicodeRange='U+000500-00052F'/>               <!-- Cyrillic Supplement -->
+                  <equateRange from='Arial_*_*' to='Adobe Hebrew_*_*' unicodeRange='U+000590-0005FF'/>             <!-- Hebrew -->
+                  <equateRange from='Arial_*_*' to='Adobe Arabic_*_*' unicodeRange='U+000600-0006FF'/>             <!-- Arabic -->
+                  <equateRange from='Arial_*_*' to='Adobe Thai_*_*' unicodeRange='U+000E00-000E7F'/>               <!-- Thai -->
+                  <!-- <equateRange from='Arial_*_*' to='_*_*' unicodeRange='U+001100-0011FF'/>  -->                   <!-- Hangul Jamo -->
+                  <equateRange from='Arial_*_*' to='Myriad Pro_*_*' unicodeRange='U+001E00-001EFF'/>               <!-- Latin Extended Additional -->
+                  <equateRange from='Arial_*_*' to='Myriad Pro_*_*' unicodeRange='U+001F00-001FFF'/>               <!-- Greek Extended -->
+                  <equateRange from='Arial_*_*' to='Myriad Pro_*_*' unicodeRange='U+0020AC-0020AC'/>               <!-- Euro Symbol -->
+                  <equateRange from='Arial_*_*' to='Adobe Heiti Std_*_*' unicodeRange='U+002E80-002EFF'/>          <!-- CJK Radicals Supplement -->
+                  <equateRange from='Arial_*_*' to='Adobe Heiti Std_*_*' unicodeRange='U+002F00-002FDF'/>          <!-- Kangxi Radicals -->
+                  <equateRange from='Arial_*_*' to='Adobe Heiti Std_*_*' unicodeRange='U+002FF0-002FFF'/>          <!-- Ideographic Description Characters -->
+                  <equateRange from='Arial_*_*' to='Kozuka Gothic Pr6N M_*_*' unicodeRange='U+003000-00303F'/>   <!-- CJK Symbols and Punctuation -->
+                  <equateRange from='Arial_*_*' to='Kozuka Gothic Pr6N M_*_*' unicodeRange='U+003040-00309F'/>   <!-- Hiragana -->
+                  <equateRange from='Arial_*_*' to='Kozuka Gothic Pr6N M_*_*' unicodeRange='U+0030A0-0030FF'/>   <!-- Katakana -->
+                  <equateRange from='Arial_*_*' to='Adobe Ming Std L_*_*' unicodeRange='U+003130-00318F'/>         <!-- Hangul Compatibility Jamo -->
+                  <equateRange from='Arial_*_*' to='Kozuka Gothic Pr6N M_*_*' unicodeRange='U+003190-00319F'/>   <!-- Kanbun -->
+                  <equateRange from='Arial_*_*' to='Kozuka Gothic Pr6N M_*_*' unicodeRange='U+0031F0-0031FF'/>   <!-- Katakana Phonetic Extensions -->
+                  <equateRange from='Arial_*_*' to='Adobe Song Std L_*_*' unicodeRange='U+003400-004DBF'/>         <!-- CJK Unified Ideographs Extension A -->
+                  <equateRange from='Arial_*_*' to='Adobe Song Std L_*_*' unicodeRange='U+004E00-009FFF'/>         <!-- CJK Unified Ideographs -->
+                  <equateRange from='Arial_*_*' to='Adobe Myungjo Std M_*_*' unicodeRange='U+00AC00-00D7AF'/>      <!-- Hangul Syllables -->
+                  <equateRange from='Arial_*_*' to='Kozuka Gothic Pr6N M_*_*' unicodeRange='U+00F900-00FAFF'/>   <!-- CJK Compatibility Ideographs -->
+                  <equateRange from='Arial_*_*' to='Myriad Pro_*_*' unicodeRange='U+00FB00-00FB4F'/>               <!-- Alphabetic Presentation Forms -->
+                  <equateRange from='Arial_*_*' to='Adobe Arabic_*_*' unicodeRange='U+00FB50-00FDFF'/>             <!-- Arabic Presentation Forms-A -->
+                  <equateRange from='Arial_*_*' to='Adobe Arabic_*_*' unicodeRange='U+00FE70-00FEFF'/>             <!-- Arabic Presentation Forms-B -->
+                  <equateRange from='Arial_*_*' to='Kozuka Gothic Pr6N M_*_*' unicodeRange='U+00FF00-00FFEF'/>   <!-- Halfwidth and Fullwidth Forms -->
+                  <equateRange from='Arial_*_*' to='Kozuka Gothic Pr6N M_*_*' unicodeRange='U+020000-02A6DF'/>   <!-- CJK Unified Ideographs Extension B -->
+                  <equateRange from='Arial_*_*' to='Kozuka Gothic Pr6N M_*_*' unicodeRange='U+02F800-02FA1F'/>   <!-- CJK Compatibility Ideographs Supplement -->
+                  
+                  <equateRange from='Times New Roman_*_*' to='Times_*_*' unicodeRange='U+000000-00007F'/>                    <!-- Basic Latin -->
+                  <equateRange from='Times New Roman_*_*' to='Times_*_*' unicodeRange='U+000080-0000FF'/>                    <!-- Latin-1 Supplement -->
+                  <equateRange from='Times New Roman_*_*' to='Minion Pro_*_*' unicodeRange='U+000100-00017F'/>               <!-- Latin Extended-A -->
+                  <equateRange from='Times New Roman_*_*' to='Minion Pro_*_*' unicodeRange='U+000180-00024F'/>               <!-- Latin Extended-B -->
+                  <equateRange from='Times New Roman_*_*' to='Minion Pro_*_*' unicodeRange='U+000370-0003FF'/>               <!-- Greek and Coptic -->
+                  <equateRange from='Times New Roman_*_*' to='Minion Pro_*_*' unicodeRange='U+000400-0004FF'/>               <!-- Cyrillic -->
+                  <equateRange from='Times New Roman_*_*' to='Minion Pro_*_*' unicodeRange='U+000500-00052F'/>               <!-- Cyrillic Supplement -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Hebrew_*_*' unicodeRange='U+000590-0005FF'/>             <!-- Hebrew -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Arabic_*_*' unicodeRange='U+000600-0006FF'/>             <!-- Arabic -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Thai_*_*' unicodeRange='U+000E00-000E7F'/>               <!-- Thai -->
+                  <!-- <equateRange from='Times New Roman_*_*' to='_*_*' unicodeRange='U+001100-0011FF'/>   -->                     <!-- Hangul Jamo -->
+                  <equateRange from='Times New Roman_*_*' to='Minion Pro_*_*' unicodeRange='U+001E00-001EFF'/>               <!-- Latin Extended Additional -->
+                  <equateRange from='Times New Roman_*_*' to='Minion Pro_*_*' unicodeRange='U+001F00-001FFF'/>               <!-- Greek Extended -->
+                  <equateRange from='Times New Roman_*_*' to='Minion Pro_*_*' unicodeRange='U+0020AC-0020AC'/>               <!-- Euro Symbol -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Song Std L_*_*' unicodeRange='U+002E80-002EFF'/>         <!-- CJK Radicals Supplement -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Song Std L_*_*' unicodeRange='U+002F00-002FDF'/>         <!-- Kangxi Radicals -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Song Std L_*_*' unicodeRange='U+002FF0-002FFF'/>         <!-- Ideographic Description Characters -->
+                  <equateRange from='Times New Roman_*_*' to='Kozuka Mincho Pr6N R_*_*' unicodeRange='U+003000-00303F'/>   <!-- CJK Symbols and Punctuation -->
+                  <equateRange from='Times New Roman_*_*' to='Kozuka Mincho Pr6N R_*_*' unicodeRange='U+003040-00309F'/>   <!-- Hiragana -->
+                  <equateRange from='Times New Roman_*_*' to='Kozuka Mincho Pr6N R_*_*' unicodeRange='U+0030A0-0030FF'/>   <!-- Katakana -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Ming Std L_*_*' unicodeRange='U+003130-00318F'/>         <!-- Hangul Compatibility Jamo -->
+                  <equateRange from='Times New Roman_*_*' to='Kozuka Mincho Pr6N R_*_*' unicodeRange='U+003190-00319F'/>   <!-- Kanbun -->
+                  <equateRange from='Times New Roman_*_*' to='Kozuka Mincho Pr6N R_*_*' unicodeRange='U+0031F0-0031FF'/>   <!-- Katakana Phonetic Extensions -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Song Std L_*_*' unicodeRange='U+003400-004DBF'/>         <!-- CJK Unified Ideographs Extension A -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Song Std L_*_*' unicodeRange='U+004E00-009FFF'/>         <!-- CJK Unified Ideographs -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Myungjo Std M_*_*' unicodeRange='U+00AC00-00D7AF'/>      <!-- Hangul Syllables -->
+                  <equateRange from='Times New Roman_*_*' to='Kozuka Mincho Pr6N R_*_*' unicodeRange='U+00F900-00FAFF'/>   <!-- CJK Compatibility Ideographs -->
+                  <equateRange from='Times New Roman_*_*' to='Minion Pro_*_*' unicodeRange='U+00FB00-00FB4F'/>               <!-- Alphabetic Presentation Forms -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Arabic_*_*' unicodeRange='U+00FB50-00FDFF'/>             <!-- Arabic Presentation Forms-A -->
+                  <equateRange from='Times New Roman_*_*' to='Adobe Arabic_*_*' unicodeRange='U+00FE70-00FEFF'/>             <!-- Arabic Presentation Forms-B -->
+                  <equateRange from='Times New Roman_*_*' to='Kozuka Mincho Pr6N R_*_*' unicodeRange='U+00FF00-00FFEF'/>   <!-- Halfwidth and Fullwidth Forms -->
+                  <equateRange from='Times New Roman_*_*' to='Kozuka Mincho Pr6N R_*_*' unicodeRange='U+020000-02A6DF'/>   <!-- CJK Unified Ideographs Extension B -->
+                  <equateRange from='Times New Roman_*_*' to='Kozuka Mincho Pr6N R_*_*' unicodeRange='U+02F800-02FA1F'/>   <!-- CJK Compatibility Ideographs Supplement -->
+               </map>
+            </fontInfo>
+            <tagged>1</tagged> <!-- 0|1 -->
+            <taggedMode>custom</taggedMode>
+            <compression>
+               <compressLogicalStructure>0</compressLogicalStructure>
+               <compressObjectStream>0</compressObjectStream>
+            </compression>
+            <xdc>
+               <uri>adobepdf.xdc</uri>
+            </xdc>
+            <version>1.65</version>
+         </pdf>
+         <pdf name="pdfa1"> <!--  [0..n]  -->
+		             <tagged>1</tagged> <!-- 0|1 -->
+		             <taggedMode>custom</taggedMode>
+		             <compression>
+		                <compressLogicalStructure>1</compressLogicalStructure>
+		             </compression>
+		             <xdc>
+		                <uri>pdfa.xdc</uri>
+		             </xdc>
+         </pdf>
+         <ps> <!--  [0..n]  -->
+            <fontInfo>
+               <embed>1</embed> <!-- 0|1 -->
+               <subsetBelow>100</subsetBelow>
+            </fontInfo>
+            <xdc>
+               <uri>ps_plain.xdc</uri>
+            </xdc>
+         </ps>
+         <zpl> <!--  [0..n]  -->
+            <fontInfo>
+               <defaultTypeface>CG Triumvirate</defaultTypeface>
+               <embed>0</embed> <!-- 0|1 -->
+            </fontInfo>
+            <xdc>
+               <uri>zpl300.xdc</uri>
+            </xdc>
+         </zpl>
+		 <behaviorOverride>patch-LC-3921720:1</behaviorOverride>
+      </present>
+   </config>
+</xfa>
