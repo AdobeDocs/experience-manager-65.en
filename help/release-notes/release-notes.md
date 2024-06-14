@@ -193,7 +193,7 @@ The following is the list of accessibility fixes included in this release:
 
 * When a user tries to view a form on the page load, it fails to render. (FORMS-13594)
 * The date input field component does not function correctly on Microsoft Edge in Internet Explorer compatibility mode. (FORMS-13170)
-* Stalled email Notification with attachment failed to be sent when the fix for [additional-steps-to-use-email-with-attachments](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) is performed on the server. (FORMS-14227)
+* Stalled email Notification with attachment failed to be sent when the fix for [additional steps to use email with attachments](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) is performed on the server. (FORMS-14227)
 * On AEM Forms Workspace on Service Pack 18 (6.5.18.0), When a user comments on any uploaded document, it causes the document file to corrupt. (FORMS-13735)
 * On AEM Forms Service Pack 18 (6.5.18.0) or AEM Forms Service Pack 19 (6.5.19.0) or AEM Forms Service Pack 20 (6.5.20.0), When a user tries to search for an Adaptive Form from the side panel (by toggling) asset tab, within the editing interface, the search fails. (FORMS-14117)
 * When a user edits a form created in German and translated into English, it results in inconsistent language displays between the 'Preview' and 'Edit' modes. This causes RadioButton and Checkbox components to display in English during 'Edit' mode while correctly appearing in German during 'Preview' mode. (FORMS-13910)
