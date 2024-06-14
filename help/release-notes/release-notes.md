@@ -206,7 +206,7 @@ The following is the list of accessibility fixes included in this release:
     * Some fields fail to populate the translated data.
     * Some fields are not translated into the new language, even though the data is successfully saved to the dictionary.
 
-#### [!DNL Forms Designer] {#forms-desgner-6520}
+#### [!DNL Forms Designer] {#forms-desgner-6521}
 
 * When a user adds a new table to an existing form using AEM Forms Designer on the environment AEM Forms Service Pack 19 (6.5.19.0), it crashes. (LC-3921978) 
 * When a user renders an Adaptive Form on Linux environment, an extra space between the field components occur. (LC-3921957)
