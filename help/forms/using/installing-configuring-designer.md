@@ -105,7 +105,7 @@ There are two cases while updating the latest version of AEM Forms Designer 6.5.
 * **Can a user directly upgrade or install 64-bit designer?**
    * Yes, users can directly upgrade or install 64-bit designer. To upgrade, install the [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) designer full installer and apply subsequent designer patch release over that.
 
-      > [!NOTE]
+      >[!NOTE]
       > Before you upgrade to 64-bit designer, first uninstall 32-bit designer if it exists.
 
 * **Can users keep both 32-bit and 64-bit installed on their system?**
