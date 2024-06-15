@@ -7,13 +7,12 @@ feature: Adaptive Forms, Core Components
 ---
 # Custom functions in Adaptive Forms Core Components
 
-<span class="preview"> This article contains content for features under the early adopter program. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). The features under the pre-release program are:
-<!-- * Optional parameter support in Custom Functions-->
+This article describes creating Custom Functions with the latest Adaptive Form Core Component, which have the latest features such as:
 * Caching feature for Custom Functions
 * Global scope object and field objects support for Custom Functions
 * Support for modern JavaScript features like let and arrow functions (ES10 support)
 
-Ensure to set the [latest form version](https://github.com/adobe/aem-core-forms-components/tree/release/650) on your AEM Forms Core Component environment to use the pre-release features in Custom Functions. </span>
+Ensure to set the [latest form version](https://github.com/adobe/aem-core-forms-components/tree/release/650) on your AEM Forms Core Component environment to use the latest features in Custom Functions. </span>
 
 
 | Version | Article link |

@@ -7,11 +7,10 @@ level: Beginner, Intermediate
 ---
 # Add rules to an Adaptive Form Core Components {#adaptive-forms-rule-editor}
 
-<span class="preview"> This article contains content for some pre-release features. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). The features under the pre-release program are:
+This article contains the latest Rule Editor features of Adaptive Forms Core Components which are:
 * Support for implementing nested conditions with When-then-else functionality
 * Validate or reset panels and forms, including fields 
 * Support for modern JavaScript features such as let and arrow functions (ES10 support) within custom functions.
-</span>
 
 The Rule Editor feature facilitates forms business users and developers to write rules on Adaptive Form objects. These rules define actions to trigger on form objects based on the preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
 
