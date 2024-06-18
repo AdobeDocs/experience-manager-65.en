@@ -8,6 +8,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 ---
 # Generate Document of Record for adaptive forms or adaptive form fragments {#generate-document-of-record-for-adaptive-forms}
 
@@ -529,5 +530,3 @@ An XCI file helps you set various properties of a document. <!-- Forms as a Clou
   1. Open <!--Cloud Service SDK--> configuration manager. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
   1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
   1. Specify path of the XCI file and click **[!UICONTROL Save]**.
-
-  
