@@ -522,16 +522,15 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 ### Known issues for AEM Forms {#known-issues-aem-forms-6521}
 
 
-* After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926).
+* After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
 
-  Perform the following steps to resolve the issue:
+  1. Stop the locators, if they are running.
+  1. Stop the AEM Server. 
+  1. Go to the `<AEM_Forms_Installation>/lib/caching/lib`. 
+  1. Remove all the Geode patch files except `geode-*-1.15.1.2.jar`. Confirm that only the Geode jars with `version 1.15.1.2` are present.
+  1. Open the command prompt in administrator mode.  
+  1. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
 
-  1. Stop the locators and server in the specified order, if they are running.
-  1. Re-install the patch by running the patch installer in administrator mode (Important).
-  1. Confirm that only the Geode jars with `version 1.15.1.2` are present.
-
-  >[!NOTE] 
-  > No action is required if only the Geode jars with `version 1.15.1.2` are present.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
