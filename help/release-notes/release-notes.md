@@ -35,18 +35,22 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+### [!DNL Forms]
+
 Some of the key features and enhancements in this release include the following:
 
-* A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)
-
-* Rule Editor enhancements in AEM Forms:
+* **Support for Oauth Credentials**: A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)
+* **Rule Editor enhancements in AEM Forms**:
   * Support for implementing nested conditions with `When-then-else` functionality.
   * Validate or reset panels and forms, including fields.
   * Support for modern JavaScript features such as let and arrow functions (ES10 support) within the Custom Functions.
-* AutoTag API for PDF Accessibility: AEM Forms on OSGi now support the new AutoTag API to enhance PDF for accessibility standards by adding tags: paragraphs, and lists. It makes PDFs more accessible for users with assistive technology.
-* 16-bit PNG support: PDF Generator's ImageToPdf service now supports conversion of PNGs with 16-bit color depth.
-* Apply artifacts to individual text blocks in XDPs: Forms Designer now lets users configure settings on individual text blocks in XDP files. This ability lets you control the elements that are treated as artifacts in the resulting PDFs. These elements, such as headers and footers, are made accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF / UA tagging.
-* AEM Forms Designer is certified with `GB18030:2022` standard. With this certification, now Forms Designer supports the Chinese Unicode character set that lets you input Chinese characters into all editable fields and dialog boxes.
+* **AutoTag API for PDF Accessibility**: AEM Forms on OSGi now support the new AutoTag API to enhance PDF for accessibility standards by adding tags: paragraphs, and lists. It makes PDFs more accessible for users with assistive technology.
+* **16-bit PNG support**: PDF Generator's ImageToPdf service now supports conversion of PNGs with 16-bit color depth.
+* **Apply artifacts to individual text blocks in XDPs**: Forms Designer now lets users configure settings on individual text blocks in XDP files. This ability lets you control the elements that are treated as artifacts in the resulting PDFs. These elements, such as headers and footers, are made accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF / UA tagging.
+* **AEM Forms Designer is certified with `GB18030:2022` standard**: With the `GB18030:2022` certification, now Forms Designer supports the Chinese Unicode character set that lets you input Chinese characters into all editable fields and dialog boxes.
+* **Support for WebToPDF route in JEE Server**: The PDF Generator service now supports the WebToPDF route for converting HTML files to PDF documents on JEE, in addition to the Webkit and WebCapture (Windows only) routes. While the WebToPDF route is already available on OSGi, it has now been extended to include in JEE as well. On both JEE and OSGi platforms, the PDF Generator service supports the following routes across different operating systems:
+  * **Windows**: Webkit, WebCapture, WebToPDF
+  * **Linux**: Webkit, WebToPDF
 
 
 ### [!DNL Assets]
