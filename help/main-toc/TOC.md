@@ -13,6 +13,7 @@ user-guide-title: AEM 6.5
 + Release Notes {#release-notes}
   + [Release notes](/help/release-notes/release-notes.md)
   + Previous release notes {#service-pack}
+    + [6.5.20](/help/release-notes/previous/6-5-20.md) 
     + [6.5.19](/help/release-notes/previous/6-5-19.md)
     + [6.5.18](/help/release-notes/previous/6-5-18.md)
     + [6.5.17](/help/release-notes/previous/6-5-17.md)
@@ -68,6 +69,7 @@ user-guide-title: AEM 6.5
   + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
   + [Same Site Cookie Support](/help/sites-administering/same-site-cookie-support.md)
   + [JWT Credentials Deprecation in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+  + [Setting Up IMS Integrations for AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
   + Authoring {#authoring}
     + Essential tasks, tools and concepts for AEM Authoring {#essentials}
@@ -220,7 +222,6 @@ user-guide-title: AEM 6.5
       + [Configuring Link Tracking for Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
       + [Mapping Component Data with Adobe Analytics Properties](/help/sites-administering/adobeanalytics-mapping.md)
       + [Configuring Video Tracking for Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-      + [Integration with Adobe Analytics using IMS](/help/sites-administering/integration-analytics-ims.md)
       + [HTTP2 Delivery of Content FAQ](/help/sites-administering/scene7-http2faq.md)
       + [Troubleshooting your Adobe Campaign Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
       + [SharePoint Connector Licenses, Copyright Notices, and Disclaimers](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -244,7 +245,6 @@ user-guide-title: AEM 6.5
       + [Integrating with the Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
       + [Manually Configuring the Integration with Adobe Target](/help/sites-administering/target-configuring.md)
       + [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md)
-      + [Integration with Adobe Target using IMS](/help/sites-administering/integration-target-ims.md)
       + [Adobe Classifications](/help/sites-administering/adobeanalytics-classifications.md)
       + [Solutions Integration](/help/sites-administering/integration.md)
       + [Exporting Experience Fragments to Adobe Target](/help/sites-administering/experience-fragments-target.md)
@@ -346,6 +346,7 @@ user-guide-title: AEM 6.5
     + [Preview 3D assets](/help/assets/previewing-3d-assets.md)
     + [Review folder assets and collections](/help/assets/bulk-approval.md)
     + [Enhanced Smart Tags](/help/assets/enhanced-smart-tags.md)
+    + [Troubleshooting smart tags for OAuth credentials](/help/assets/config-oauth.md)
     + [Activity stream in timeline](/help/assets/activity-stream.md)
     + [Process assets](/help/assets/assets-workflow.md)
     + [Add image maps](/help/assets/image-maps.md)
@@ -614,6 +615,8 @@ user-guide-title: AEM 6.5
     + [Create and use Adaptive Forms Fragments in an Adaptive Form](/help/forms/using/adaptive-form-fragment-core-components.md)
     + [Create themes for Core Components based Adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
     + [Create and use custom function in an Adaptive Form](/help/forms/using/create-and-use-custom-functions.md)
+    + [Rule Editor](/help/forms/using/rule-editor-core-components.md)
+    + [Create and use custom function in an Adaptive Form Core Components](/help/forms/using/create-and-use-custom-functions-core-components.md)
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
   + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
     + [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)

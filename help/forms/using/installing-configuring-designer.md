@@ -31,9 +31,10 @@ solution: Experience Manager, Experience Manager Forms
 
 >[!NOTE]
 >
-> The 64-bit version of the designer was introduced with AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+>* The 64-bit version of the designer was introduced with AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+>* The 32-bit version of the designer is deprecated since the release of [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-
+For more information regarding installation of Forms Designer, Visit [Frequently asked questions](#fandq).
 
 ## Install AEM Forms Designer {#install-designer}
 
@@ -98,3 +99,21 @@ There are two cases while updating the latest version of AEM Forms Designer 6.5.
    1. Install the latest version of AEM Forms Designer by double-clicking on the downloaded installer file.
 
 +++
+
+## Frequently asked questions {#fandq}
+
+* **Can a user directly upgrade or install 64-bit designer?**
+   * Yes, users can directly upgrade or install 64-bit designer. To upgrade, install the [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) designer full installer and apply subsequent designer patch release over that.
+
+      >[!NOTE]
+      > Before you upgrade to 64-bit designer, first uninstall 32-bit designer if it exists.
+
+* **Can users keep both 32-bit and 64-bit installed on their system?**
+   * No, 32-bit and 64-bit installation will not work on the same machine. User can either have a 32-bit designer or a 64-bit designer.
+
+* **How do you check if a user is on 64-bit designer or 32-bit designer?**
+   * There are two ways to check the Forms Designer version:
+
+      1. Open Designer, goto Help, click About designer and you see designer version information along with the bits information, for example, you see 64-bit is written at the end of the version as shown here:
+      `6.5.21.20240522.1.161 | 64 bit`
+      1. Open Designer, On the upper left you see a branding icon contains 64-bit information with the product name.

@@ -446,7 +446,7 @@ At the same time you create an Adobe Support case to have DASH enable on your ac
 >
 >Any videos that you uploaded *before* enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/processing-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
-**To enable DASH, multiple caption, and multiple audio track support on your Dynamic Media account:** 
+**To enable DASH, multiple caption and multiple audio track support on your Dynamic Media account:**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
@@ -465,7 +465,7 @@ At the same time you create an Adobe Support case to have DASH enable on your ac
 
     * Primary contact name, email, phone.
     * Name of your Dynamic Media account.
-    * Specify that you want DASH, multiple caption, and multiple audio track support enabled on your Dynamic Media account, on Experience Manager 6.5.
+    * Specify that you want DASH, multiple caption and multiple audio track support enabled on your Dynamic Media account, on Experience Manager 6.5.
    
 1. Adobe Customer Support adds you to the customer Wait List based on the order in which requests are submitted.
 1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
@@ -587,18 +587,17 @@ Use the [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.a
 
 
 
-
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
 With multiple caption and audio track capability in Dynamic Media, you can easily add multiple subtitles and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
 
-![Subtitles and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT subtitle files and uploaded .MP3 audio track files for a video.](assets-dm/msma-subtitle-audiotracks-tab.png)
+![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](assets-dm/msma-subtitle-audiotracks-tab2.png)
 
 Some of the use cases to consider for adding multiple caption and audio tracks to your primary video include the following:
 
 | Type | Use case |
 |--- |--- |
-| **Subtitles** | Multiple language support |
+| **Captions** | Multiple language support |
 |  | Descriptive text for accessibility |
 | **Audio tracks** | Multiple language support  |
 |  | Commentary tracks |
@@ -616,7 +615,7 @@ Before you add multiple caption and audio tracks to your video, be sure you alre
 * A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 * [Multiple caption and audio track is enabled on your Dynamic Media account](#enable-dash).
 
-Added subtitles and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+Added captions and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
 
 >[!IMPORTANT]
 >
@@ -629,31 +628,31 @@ Added subtitles and captions are supported with WebVTT and Adobe VTT formats. An
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
 1. On the toolbar, select the Properties icon (a circle with an "i" in it).
 ![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](assets-dm/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card view.*
-1. On the video's Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 
    >[!TIP]
-   >If you do not see the **[!UICONTROL Subtitles & Audio Tracks]** tab, it means either one of two things:
+   >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
    >
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
    >* Or, the video must be reprocessed by Dynamic Media. In which case, see [Reprocess assets in a folder](/help/assets/processing-profiles.md#reprocessing-assets).
    >
    >When you have completed either one of the above tasks, return to these steps.
 
-   ![Subtitles and Audio Tracks tab on the Properties page.](assets-dm/msma-audiotracks.png)*Subtitles and Audio Tracks tab on the video's Properties page.*
+   ![Captions and Audio Tracks tab on the Properties page.](assets-dm/msma-audiotracks2.png)*Captions and Audio Tracks tab on the video's Properties page.*
 
-1. (Optional) To add one or more subtitle (or caption) files to a video, do the following:
-    * Select **[!UICONTROL Upload Subtitles]**.
+1. (Optional) To add one or more caption files to a video, do the following:
+    * Select **[!UICONTROL Upload Captions]**.
     * Navigate to, and select, one or more .vtt (Video Text Tracks) files and open them.
-    * For subtitles to be visible on the media player, you *must* add required details (metadata) about *each* subtitle file that you uploaded. Select the pencil icon to the right of a subtitle file name. In the **Edit Subtitle** dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each subtitle file that you uploaded:
+    * For captions to be visible on the media player, you *must* add required details (metadata) about *each* caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
     
-      | Subtitle metadata | Description |
+      | Caption metadata | Description |
       |--- |--- |
-      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional subtitle files and audio track files. |
-      | Language | Select the language of the subtitle. |
-      | Type | Select the type of subtitle that you are using.<br>**Subtitle** &ndash; The subtitle text displayed with the video that translates or transcribes the dialogue.<br>**Caption** &ndash; The caption text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making the content more accessible for individuals who are deaf or hard of hearing. |
-      | Label | The text that is displayed for the subtitle's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+      | Language | Select the language of the caption. |
+      | Type | Select the type of caption that you are using.<br>**Subtitle** &ndash; The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** &ndash; The caption text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making the content more accessible for individuals who are deaf or hard of hearing. |
+      | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or subtitle]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-      You can change or edit subtitle metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+      You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
 1. (Optional) To add one or more audio tracks to a video, do the following:
     * Select **[!UICONTROL Upload Audio Tracks]**.
@@ -662,10 +661,10 @@ Added subtitles and captions are supported with WebVTT and Adobe VTT formats. An
     
       | Audio Track metadata | Description |
       |--- |--- |
-      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or subtitle files. |
+      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
       | Language | Select the language of the audio track. |
       | Type | Select the type of audio track that you are using.<br>**Original** &ndash; The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** &ndash; An add-on audio track for a language other than the original.<br>**Audio description** &ndash; An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
-      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original|` by default. |
+      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or subtitle]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
 
       You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
@@ -675,25 +674,25 @@ Added subtitles and captions are supported with WebVTT and Adobe VTT formats. An
     >
     >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded subtitle and audio track files](#lifecycle-status-video).
-1. (Optional) Preview the video before publishing to ensure the subtitles and audio work as expected. See [Preview a video that has multiple subtitles and audio tracks](#preview-video-audio-subtitle)
+1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple caption and audio tracks](#preview-video-audio-subtitle)
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-#### About adding subtitle and audio track files to a video that is already published
+#### About adding caption and audio track files to a video that is already published
 
-When you upload additional subtitle files or audio track files to a video that is already published, it means that those files will have a `Processed` status after they are prepared, following upload. At that point, you can preview the video in Dynamic Media to see or hear the newly uploaded files. 
+When you upload additional caption files or audio track files to a video that is already published, it means that those files will have a `Processed` status after they are prepared, following upload. At that point, you can preview the video in Dynamic Media to see or hear the newly uploaded files. 
 
-Following preview, however, you must *publish* the video again for the newly added subtitle or audio track files to be published, too. After publishing, the subtitles or audio becomes available with the public Dynamic Media URL.
+Following preview, however, you must *publish* the video again for the newly added caption or audio track files to be published, too. After publishing, the captions or audio becomes available with the public Dynamic Media URL.
 
 >[!NOTE]
 >
 >Based on the caching settings of your instance, metadata updates can take several minutes before they are reflected in preview and in published URLs.
 
-In the scenario where you have configured Dynamic Media for immediate publish, the uploading of additional subtitle or audio files immediately triggers a publish of the video following the upload of subtitle or audio files.
+In the scenario where you have configured Dynamic Media for immediate publish, the uploading of additional caption or audio files immediately triggers a publish of the video following the upload of caption or audio files.
 
 >[!CAUTION]
 >
->When you upload subtitle files or audio files to a video that is either published or unpublished, the files are deleted if you [*reprocess*](/help/assets/processing-profiles.md#reprocessing-assets) the video. Only the video's original audio remains intact. In such cases, you must reupload the subtitle files and audio track files to the video, again.
+>When you upload caption files or audio files to a video that is either published or unpublished, the files are deleted if you [*reprocess*](/help/assets/processing-profiles.md#reprocessing-assets) the video. Only the video's original audio remains intact. In such cases, you must reupload the caption files and audio track files to the video, again.
 
 #### Add multiple captions to a video that has an existing URL with caption modifier
 
@@ -704,36 +703,36 @@ Multiple caption changes take precedence over a caption added by way of a URL mo
 **To add multiple captions to a video that has an existing URL with caption modifier:**
 
 1. Upload the caption file that is already added as a modifier to the video, so you can manage the file explicitly.
-1. Upload any additional subtitle/caption files, as necessary.
+1. Upload any additional caption files, as necessary.
 1. Publish the video as usual.
 The existing URL with the caption modifier can now load multiple captions.
 
-### View the lifecycle status of uploaded subtitle and audio track files{#lifecycle-status-video}
+### View the lifecycle status of uploaded caption and audio track files{#lifecycle-status-video}
 
-You can observe the lifecycle status of any subtitle or audio track file uploaded to your primary video from the **Subtitles & Audio Tracks** tab of **Properties**.
+You can observe the lifecycle status of any caption or audio track file uploaded to your primary video from the **Captions & Audio Tracks** tab of **Properties**.
 
 **To view the lifecycle status of a video:**
 
 1. Navigate to the video asset whose lifecycle status you want to view.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
 1. On the toolbar, select the Properties icon (a circle with an "i" in it).
-1. On the Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab. In the Status column, note the state of each subtitle or audio file.
+1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab. In the Status column, note the state of each caption or audio file.
 
-| Subtitle or Audio Track Status | Description |
+| Caption or Audio Track Status | Description |
 | --- | --- |
-| Processing | When a new subtitle or audio track file is added and saved, it goes into a "Processing" state. Dynamic Media processes the file by attaching the streaming manifest to the primary video. |
-| Processed | After processing is complete, the subtitle or audio track file, or the original audio track associated with the primary video, appears in a "Processed" state. You can preview subtitle and audio track files that appear as "Processed" *before* you publish the video live. |
+| Processing | When a new caption or audio track file is added and saved, it goes into a "Processing" state. Dynamic Media processes the file by attaching the streaming manifest to the primary video. |
+| Processed | After processing is complete, the caption or audio track file, or the original audio track associated with the primary video, appears in a "Processed" state. You can preview caption and audio track files that appear as "Processed" *before* you publish the video live. |
 | Published | A "Published" state represents a similar state as "Published" for a primary video. Assets are published when the primary video is published and are available on the public Dynamic Media URL. |
-| Failed | A "Failed" state means that processing of a subtitle or audio track file did not complete. Delete the subtitle or audio track file and upload again. |
-| Unpublished | When a published primary video is unpublished explicitly, any subtitle or audio track files that you added to the video, are also unpublished. |      
+| Failed | A "Failed" state means that processing of a caption or audio track file did not complete. Delete the caption or audio track file and upload again. |
+| Unpublished | When a published primary video is unpublished explicitly, any caption or audio track files that you added to the video, are also unpublished. |      
 
-![Status column highlighted for Subtitles and Audio Tracks fields.](assets-dm/msma-lifecycle-status.png)*Lifecycle status of each uploaded subtitle and audio track file.*
+![Status column highlighted for Captions and Audio Tracks fields.](assets-dm/msma-lifecycle-status2.png)*Lifecycle status of each uploaded caption and audio track file.*
 
 ### Set the default audio for a video that has multiple audio tracks
 
 By default, a video's original audio is set as the default audio to be played.
 
-However, any uploaded audio track files can be set as the default audio to play after a video is loaded into the viewer. In the Properties user interface, under the **Subtitles & Audio Tracks** tab, the `Default` label is applied to the right of the audio track file for video playback.
+However, any uploaded audio track files can be set as the default audio to play after a video is loaded into the viewer. In the Properties user interface, under the **Captions & Audio Tracks** tab, the `Default` label is applied to the right of the audio track file for video playback.
 
 >[!NOTE]
 >
@@ -747,19 +746,19 @@ However, any uploaded audio track files can be set as the default audio to play 
 1. Navigate to the video asset whose default audio track you want to set.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
 1. On the toolbar, select the Properties icon (a circle with an "i" in it).
-1. On the Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab. 
+1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab. 
 1. Under the **Audio Tracks** heading, select the audio track file that you want to set as the video's default.
 1. Select **[!UICONTROL Set as default]**.
 In the **Set as default** dialog box, select **[!UICONTROL Replace]**.
 
-   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](assets-dm/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
+   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](assets-dm/msma-defaultaudiotrack2.png)*Setting the default audio track for a video.*
 
 1. In the upper-right corner, select **[!UICONTROL Save & Close]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-### Preview a video that has multiple subtitles and audio tracks{#preview-video-audio-subtitle}
+### Preview a video that has multiple caption and audio tracks{#preview-video-audio-subtitle}
 
-After subtitle files and audio track files are uploaded to a video and processed, you can use the Dynamic Media video viewer (or other viewer types, if desired) to preview all the different tracks. Previewing helps you to see what your video looks and sounds like to customers and ensures that it is behaving as expected.
+After caption files and audio track files are uploaded to a video and processed, you can use the Dynamic Media video viewer (or other viewer types, if desired) to preview all the different tracks. Previewing helps you to see what your video looks and sounds like to customers and ensures that it is behaving as expected.
 
 When you are satisfied with the video, you can [publish it](publishing-dynamicmedia-assets.md) using any one of the following methods.
 
@@ -769,11 +768,11 @@ See [Add Dynamic Media Assets to pages](/help/assets/adding-dynamic-media-assets
 
 >[!NOTE]
 >
->The default Experience Manager preview tab does not show multiple subtitle and audio tracks. The reason is because those tracks are associated with Dynamic Media and can only be seen using Dynamic Media Viewer preview.
+>The default Experience Manager preview tab does not show multiple caption and audio tracks. The reason is because those tracks are associated with Dynamic Media and can only be seen using Dynamic Media Viewer preview.
 
-**To preview a video that has multiple subtitles and audio tracks:**
+**To preview a video that has multiple captions and audio tracks:**
 
-1. In **[!UICONTROL Assets]**, navigate to an existing video that you have added multiple subtitles and audio tracks. 
+1. In **[!UICONTROL Assets]**, navigate to an existing video that you have added multiple captions and audio tracks. 
 1. Click the video asset so you can open it in preview mode.
 1. On the preview page, near the upper-left corner of the page, select the drop-down list, then select **[!UICONTROL Viewers]**.
 
@@ -783,49 +782,49 @@ See [Add Dynamic Media Assets to pages](/help/assets/adding-dynamic-media-assets
 
    ![Selection of the Video viewer from the Viewers drop-down list.](assets-dm/msma-dmviewerselected.png)
 
-1. Near the lower-right corner, to the left of the volume icon, select the speech bubble icon, then select the audio or subtitle you want to hear, or see or both. If desired, under Subtitles, you can select **[!UICONTROL Off]** to not display any subtitles or captions.
+1. Near the lower-right corner, to the left of the volume icon, select the speech bubble icon, then select the audio or caption you want to hear, or see or both. If desired, under Captions, you can select **[!UICONTROL Off]** to not display any captions.
 
-    ![The Audio and Subtitles pop-up list in the Video viewer.](assets-dm/msma-selectaudiosubtitle.png)*Simulation of a user selecting the audio and subtitle for video playback.*
+    ![The Audio and Captions pop-up list in the Video viewer.](assets-dm/msma-selectaudiosubtitle.png)*Simulation of a user selecting the audio and caption for video playback.*
 
 1. To begin playback, select the video's **[!UICONTROL Play]** button. 
     Note the **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons in the lower-left corner. Use these buttons to [link the video's URL to your web application](/help/assets/linking-urls-to-yourwebapplication.md) or to [embed the video on a Web Page](/help/assets/embed-code.md), respectively.
 1. Near the upper right corner of the preview page, select **[!UICONTROL Close]**.
 
-### Delete subtitle or audio track files from a video
+### Delete caption or audio track files from a video
 
-You can delete subtitle or audio track files from a video. Deletion of published subtitle or audio track files is automatically reflected in the video's published URL.
+You can delete caption or audio track files from a video. Deletion of published caption or audio track files is automatically reflected in the video's published URL.
 
 The original audio track extracted from a primary video cannot be deleted.
 
-**To delete subtitle or audio track files from a video:**
+**To delete caption or audio track files from a video:**
 
 1. Navigate to the video asset whose default audio track you want to set.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
 1. On the toolbar, select the Properties icon (a circle with an "i" in it).
-1. On the Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Do either one of the following:
 
-   * Subtitles&mdash;Under the **Subtitles** heading, select one or more subtitle files that you want to delete from the video, then select **[!UICONTROL Delete]**.
+   * Captions&mdash;Under the **Captions** heading, select one or more caption files that you want to delete from the video, then select **[!UICONTROL Delete]**.
    * Audio Tracks&mdash;Under the **Audio Tracks** heading, select one or more audio track files that you want to delete from the video, then select **[!UICONTROL Delete]**.
 
 1. In the Delete dialog box, select **[!UICONTROL OK]**.
 1. Publish the video.
 
-### Download subtitle or audio track files that were uploaded to a video
+### Download caption or audio track files that were uploaded to a video
 
-You can download one or more subtitle or audio track files that you uploaded for use with a video. You have the option of either downloading all selected files as a .zip, or creating a separate download folder for each file.
+You can download one or more caption or audio track files that you uploaded for use with a video. You have the option of either downloading all selected files as a .zip, or creating a separate download folder for each file.
 
 The original audio track extracted from a primary file cannot be downloaded.
 
-**To download subtitle or audio track files from a video:**
+**To download caption or audio track files from a video:**
 
 1. Navigate to the video asset whose default audio track you want to set.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
 1. On the toolbar, select the Properties icon (a circle with an "i" in it).
-1. On the Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 1. Do either one of the following:
 
-   * Subtitles&mdash;Under the **Subtitles** heading, select one or more subtitle files that you want to download from the video, then select **[!UICONTROL Download]**.
+   * Captions&mdash;Under the **Captions** heading, select one or more caption files that you want to download from the video, then select **[!UICONTROL Download]**.
    * Audio Tracks&mdash;Under the **Audio Tracks** heading, select one or more audio track files that you want to download from the video, then select **[!UICONTROL Download]**.
 
 1. In the Download dialog box, set the following options:
@@ -833,7 +832,7 @@ The original audio track extracted from a primary file cannot be downloaded.
     | Option | Description |
     |--- |--- |
     | Save As | Use the default file name specified in the Save As text field, or specify your own name. |
-    | Create a separate folder for each asset | Create a folder for each subtitle file or audio track file that you selected for download. |
+    | Create a separate folder for each asset | Create a folder for each caption file or audio track file that you selected for download. |
     | Email | Use your default email program to send the .zip file to a specified email address. |
     | Assets | Specifies the number of files that you are downloading and the combined total size of all selected files. Deselecting this option dims (turns off) the **[!UICONTROL Download]** button, preventing you from downloading any file. |
 1. Select **[!UICONTROL Download]**.
@@ -844,13 +843,13 @@ The original audio track extracted from a primary file cannot be downloaded.
 
 
 
-## Add closed captions or subtitles to a video {#adding-captions-to-video}
+## Add closed captions to a video {#adding-captions-to-video}
 
 >[!IMPORTANT]
 >
 >Adobe recommends that you [enable multiple caption and audio track capability](#enable-dash) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
 
-You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
+You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language captions appear so that people of different languages can still understand the audio portion.
 
 Closed captioning also allows for greater accessibility by people who are deaf or hard of hearing.
 
@@ -864,15 +863,15 @@ Dynamic Media converts caption files to JSON (JavaScript Object Notation) format
 
 See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in the *Dynamic Media Image Serving and Rendering API Help* for more information about using the JSON function in a URL.
 
-**To add closed captions or subtitles to a video:**
+**To add closed captions to a video:**
 
-1. Use a third-party application or service to create your video caption/subtitle file.
+1. Use a third-party application or service to create your video caption file.
 
    Ensure the file that you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .vtt. You can learn more information about the WebVTT captioning standard.
 
    See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
-   There are many websites that offer both free and premium tools and services that you can use to author WebVTT caption/subtitle files outside Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   There are many websites that offer both free and premium tools and services that you can use to author WebVTT caption/caption files outside Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -884,7 +883,7 @@ See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/
 
    >[!NOTE]
    >
-   >For global support of video subtitles in multiple languages, the WebVTT standard requires that you create separate .vtt files and calls for each language you want to support.
+   >For global support of video captions in multiple languages, the WebVTT standard requires that you create separate .vtt files and calls for each language you want to support.
 
    Generally, you want to name the caption VTT file the same name as the video file, and append it with the language locale, such as -EN, -FR, or -DE. By doing so, it can help you with automating the generation of the video URLs using your existing web content management system.
 
