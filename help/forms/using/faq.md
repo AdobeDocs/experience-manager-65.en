@@ -171,7 +171,6 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
    Answer: HTML5 forms do not support display patterns for floating fields.
 
 1. What is the format of the Date field in HTML5 Forms?
-  
   Answer: The Date field accepts the ISO format, YYYY-MM-DD. If you specify a date in some other format, the Date Field does not accept the formatting until the user tabs out of the field.
 
 ### Scripting {#scripting}
