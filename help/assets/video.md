@@ -591,7 +591,7 @@ Use the [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.a
 
 With multiple caption and audio track capability in Dynamic Media, you can easily add multiple subtitles and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
 
-![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](assets-dm/msma-subtitle-audiotracks2-tab.png)
+![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](assets-dm/msma-subtitle-audiotracks-tab2.png)
 
 Some of the use cases to consider for adding multiple caption and audio tracks to your primary video include the following:
 
