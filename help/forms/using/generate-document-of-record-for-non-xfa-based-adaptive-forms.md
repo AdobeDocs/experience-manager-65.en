@@ -1,14 +1,14 @@
 ---
 title: Generate Document of Record for adaptive forms
-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
+description: Explains how you can generate document of record (DoR) for adaptive forms.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
-exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 ---
 # Generate Document of Record for adaptive forms or adaptive form fragments {#generate-document-of-record-for-adaptive-forms}
 
@@ -310,18 +310,22 @@ To localize the branding information that you enter in the Document of Record ta
 1. Select ![dortab](/help/forms/using/assets/dortab.png). The Document of Record tab appears.
 1. Select either the default template or a custom template for rendering the document of record. If you select the default template, a thumbnail preview of the document of record appears below the Template drop-down.
 
-   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplateupdate.png)
 
    If you choose to select a custom template, browse a select an XDP on your AEM Forms server. If you want to use a template that is not already on your AEM Forms server, you need to first upload the XDP to your AEM Forms server.
 
-1. Based on whether you select a default or a custom template, some or all the following properties appear in the Document Of Record tab. Specify these appropriately:
+### Master Page Properties (#master-page-properties)
 
-    * **Logo Image**: You can either choose to use the logo image from the adaptive form, choose one from DAM, or upload one from your computer.
-    * **Form Title**
-    * **Header Text**
-    * **Disclaimer Label**
-    * **Disclaimer**
-    * **Disclaimer Text**
+Based on whether you select a default or a custom template, some or all the following Master Page Properties appear in the Document Of Record tab as shown in the image above. Specify these appropriately:
+
+* **Logo Image**: You can either choose to use the logo image from the adaptive form, choose one from DAM, or upload one from your computer.
+* **Form Title**
+* **Header Text**
+* **Disclaimer Label**
+* **Disclaimer**
+* **Disclaimer Text**
+
+    <!--
     * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
     * **Font Family**: Font family of the text in the document of record PDF
     * **For Check Box and Radio Button components, show only the selected values**
@@ -329,6 +333,7 @@ To localize the branding information that you enter in the Document of Record ta
     * **Include form objects that are not bound to data model**
     * **Exclude hidden fields from the document of record**
     * **Hide description of panels**
+    -->
 
     If the custom XDP template that you select includes multiple master pages, the properties for those pages appear in the **[!UICONTROL content]** section of the **[!UICONTROL Document of Record]** tab.
 
@@ -408,8 +413,23 @@ For information on how to apply page breaks and apply multiple master pages in a
     
 **Form level settings**
 
-* **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based adaptive form in document of record. By default it is true.
-* **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from [!UICONTROL Document of Record] at form submission. When you enable [Revalidate on server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the [!UICONTROL Document of Record].
+* **[!UICONTROL BASIC]**
+  * **Template:** You can select the template Default or Custom.
+        ![alt text](image.png)
+  * **Accent Color:** You can predefine the template Color of the [!UICONTROL Document of Record].
+  * **Font Family:** Select Font type for the [!UICONTROL Document of Record] texts.
+  * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based adaptive form in [!UICONTROL Document of Record]. By default it is true.
+  * **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from [!UICONTROL Document of Record] at form submission. When you enable [Revalidate on server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the [!UICONTROL Document of Record]
+* **[!UICONTROL FORM FIELD PROPERTIES]** 
+  * If you tick the option **For Check Box and Radio Button component, show only the selected value(s)**, it will generate DoR output with only selected value(s).
+  * You can select Separator for multiple selected value(s) or you can choose any other separator type.
+  * Options Alignment
+      * Vertical
+      * Horizontal
+      * Same as Adaptive Form
+    >[!NOTE]
+    > Vertical and Horizontal alignment is applicable for only     Radio Button and Check Box
+* **[!UICONTROL MASTER PAGE PROPERTIES]** Click for more information on [Master Page properties](#master-page-properties-master-page-properties)
 
 ## Apply a page break in a Document of Record {#apply-page-breaks-in-dor}
 
@@ -510,5 +530,3 @@ An XCI file helps you set various properties of a document. <!-- Forms as a Clou
   1. Open <!--Cloud Service SDK--> configuration manager. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
   1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
   1. Specify path of the XCI file and click **[!UICONTROL Save]**.
-
-  

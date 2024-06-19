@@ -73,8 +73,8 @@ Before you begin to install and configure AEM Forms document services, ensure th
 
 >[!NOTE]
 >
->* On Microsoft&reg; Windows, PDF Generator supports WebKit, Acrobat WebCapture, and PhantomJS conversion routes to convert HTML files to PDF documents.
->* On UNIX-based operating systems, PDF Generator supports WebKit and PhantomJS conversion routes to convert HTML files to PDF documents.
+>* On Microsoft&reg; Windows, PDF Generator supports WebKit, Acrobat WebCapture, and WebToPDF conversion routes to convert HTML files to PDF documents.
+>* On UNIX-based operating systems, PDF Generator supports WebKit and WebToPDF conversion routes to convert HTML files to PDF documents.
 >
 
 ### Extra requirements for UNIX-based operating system {#extrarequirements}
@@ -163,7 +163,7 @@ If you are using a UNIX-based operating system, install the following 32-bit pac
   * /usr/lib/libcrypto.so
   * /usr/lib/libssl.so
 
-* **(PDF Generator only)** PDF Generator service supports WebKit and PhantomJS routes to convert HTML files to PDF documents. To enable conversion for PhantomJS route, install the below listed 64-bit libraries. Generally, these libraries are already installed. If any library is missing, install it manually:
+* **(PDF Generator only)** PDF Generator service supports WebKit and WebToPDF routes to convert HTML files to PDF documents. To enable conversion for WebToPDF route, install the below listed 64-bit libraries. Generally, these libraries are already installed. If any library is missing, install it manually:
 
   * linux-gate.so.1
   * libz.so.1
@@ -331,7 +331,7 @@ To avoid receiving the error, you can disable the Windows error reporting. For m
 
 ### (Windows Only) Configure HTML to PDF conversion {#configure-html-to-pdf-conversion}
 
-The PDF Generator service provides WebKit, WebCapture, and PhantomJS routes or methods to convert HTML files to PDF documents. On Windows, to enable conversion for WebKit and Acrobat WebCapture routes, copy the Unicode font to %windir%\fonts directory.
+The PDF Generator service provides WebKit, WebCapture, and WebToPDF routes or methods to convert HTML files to PDF documents. On Windows, to enable conversion for WebKit and Acrobat WebCapture routes, copy the Unicode font to %windir%\fonts directory.
 
 >[!NOTE]
 >
@@ -339,7 +339,7 @@ The PDF Generator service provides WebKit, WebCapture, and PhantomJS routes or m
 
 ### (UNIX-based platforms only) Extra configurations for HTML to PDF conversion  {#extra-configurations-for-html-to-pdf-conversion}
 
-On UNIX-based platforms, the PDF Generator service supports WebKit and PhantomJS routes to convert HTML files to PDF documents. To enable HTML to PDF conversion, perform the following configurations, applicable to your preferred conversion route:
+On UNIX-based platforms, the PDF Generator service supports WebKit and WebToPDF routes to convert HTML files to PDF documents. To enable HTML to PDF conversion, perform the following configurations, applicable to your preferred conversion route:
 
 ### (UNIX-based platforms only) Enable support for Unicode fonts (WebKit only) {#enable-support-for-unicode-fonts-webkit-only}
 
@@ -480,7 +480,7 @@ On Microsoft&reg; Windows, the PDF Generator service uses Adobe Acrobat to conve
 
 ### (Windows only) Configure primary route for HTML to PDF conversion {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, Acrobat WebCapture (Windows only), and PhantomJS. Adobe recommends using PhantomJS route because it has the capability to handle dynamic content and has no dependencies on 32-bit libraries or requires no extra fonts. Also, PhantomJS route does not require sudo or root access to run the conversion.
+The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, Acrobat WebCapture (Windows only), and WebToPDF. Adobe recommends using WebToPDF route because it has the capability to handle dynamic content and has no dependencies on 32-bit libraries or requires no extra fonts. Also, WebToPDF route does not require sudo or root access to run the conversion.
 
 The default primary route for HTML to PDF conversion is Webkit. To change the conversion route:
 
@@ -578,7 +578,7 @@ After you install AEM Forms add-on and Microsoft&reg; Project on your machine, R
 
 1. Navigate to `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.  
 
-1. Run the following command to list all libraries that PhantomJS requires for HTML to PDF conversion.
+1. Run the following command to list all libraries that WebToPDF requires for HTML to PDF conversion.
 
    `ldd phantomjs`
 
@@ -688,11 +688,11 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 * Ensure that fonts directories are added in PDF Generator config UI.
 
-**Linux and Solaris (PhantomJS conversion route)**
+**Linux and Solaris (WebToPDF conversion route)**
 
-* Ensure that 32-bit library is available (libicudata.so.42) for Webkit based HTMLToPDF conversion and 64-bit (libicudata.so.42 libs are available for PhantomJS based HTMLToPDF conversion.
+* Ensure that 32-bit library is available (libicudata.so.42) for Webkit based HTMLToPDF conversion and 64-bit (libicudata.so.42 libs are available for WebToPDF based HTMLToPDF conversion.
 
-* Run the following command to list missing libraries for phantomjs:
+* Run the following command to list missing libraries for WebToPDF:
 
    ```
 

@@ -540,6 +540,26 @@ For additional requirements see:
 - [System requirements for a single-server AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
 - [System requirements for a clustered AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
+### Adobe Acrobat and Adobe Reader {#adobe-acrobat-and-adobe-reader}
+
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Acrobat and Adobe Reader (Base)</strong></p> </th>
+   <th><p><strong>Supported Patch Definitions</strong></p> </th>
+  </tr>
+  <tr>
+   <td>Acrobat 2020 (Classic track)</td>
+   <td>Version 20.004.30006 or later<br /> </td>
+  </tr>
+  
+ </tbody>
+</table>
+
+>[!NOTE]
+>
+>The Acrobat DC product family introduces two tracks for both Acrobat and Reader which are different products: "Classic" and "Continuous." For details and a comparison of the two tracks, see [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+
 ## Supported Clients for AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
@@ -586,26 +606,6 @@ For additional requirements see:
 - Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 - Administrative privileges to install Designer
 - Microsoft&reg; Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
-
-### Adobe Acrobat and Adobe Reader {#adobe-acrobat-and-adobe-reader}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Acrobat and Adobe Reader (Base)</strong></p> </th>
-   <th><p><strong>Supported Patch Definitions</strong></p> </th>
-  </tr>
-  <tr>
-   <td>Acrobat 2020 (Classic track)</td>
-   <td>Version 20.004.30006 or later<br /> </td>
-  </tr>
-  
- </tbody>
-</table>
-
->[!NOTE]
->
->The Acrobat DC product family introduces two tracks for both Acrobat and Reader which are different products: "Classic" and "Continuous." For details and a comparison of the two tracks, see [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### Browsers {#browsers}
 

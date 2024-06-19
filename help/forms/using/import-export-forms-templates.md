@@ -57,7 +57,7 @@ To download Forms & Documents assets:
 
 To upload Forms & Documents assets:
 
->[!VIDEO](https://vimeo.com/)
+<!--[!VIDEO](https://vimeo.com/)-->
 
 1. Log in to the AEM Forms instance.
 1. Select Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon &gt; navigation ![compass](assets/compass.png) icon&gt; Forms&gt; Forms & Documents.
