@@ -587,12 +587,11 @@ Use the [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.a
 
 
 
-
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
 With multiple caption and audio track capability in Dynamic Media, you can easily add multiple subtitles and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
 
-![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](assets-dm/msma-subtitle-audiotracks-tab.png)
+![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](assets-dm/msma-subtitle-audiotracks2-tab.png)
 
 Some of the use cases to consider for adding multiple caption and audio tracks to your primary video include the following:
 
@@ -639,7 +638,7 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
    >
    >When you have completed either one of the above tasks, return to these steps.
 
-   ![Captions and Audio Tracks tab on the Properties page.](assets-dm/msma-audiotracks.png)*Captions and Audio Tracks tab on the video's Properties page.*
+   ![Captions and Audio Tracks tab on the Properties page.](assets-dm/msma-audiotracks2.png)*Captions and Audio Tracks tab on the video's Properties page.*
 
 1. (Optional) To add one or more caption files to a video, do the following:
     * Select **[!UICONTROL Upload Captions]**.
@@ -650,8 +649,8 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
       |--- |--- |
       | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
       | Language | Select the language of the caption. |
-      | Type | Select the type of caption that you are using.<br>**Caption** &ndash; The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** &ndash; The caption text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making the content more accessible for individuals who are deaf or hard of hearing. |
-      | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a caption track. For example, `English (CC)`. |
+      | Type | Select the type of caption that you are using.<br>**Subtitle** &ndash; The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** &ndash; The caption text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making the content more accessible for individuals who are deaf or hard of hearing. |
+      | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or subtitle]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
       You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
@@ -665,7 +664,7 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
       | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
       | Language | Select the language of the audio track. |
       | Type | Select the type of audio track that you are using.<br>**Original** &ndash; The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** &ndash; An add-on audio track for a language other than the original.<br>**Audio description** &ndash; An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
-      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or subtitle]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
 
       You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
@@ -727,7 +726,7 @@ You can observe the lifecycle status of any caption or audio track file uploaded
 | Failed | A "Failed" state means that processing of a caption or audio track file did not complete. Delete the caption or audio track file and upload again. |
 | Unpublished | When a published primary video is unpublished explicitly, any caption or audio track files that you added to the video, are also unpublished. |      
 
-![Status column highlighted for Captions and Audio Tracks fields.](assets-dm/msma-lifecycle-status.png)*Lifecycle status of each uploaded caption and audio track file.*
+![Status column highlighted for Captions and Audio Tracks fields.](assets-dm/msma-lifecycle-status2.png)*Lifecycle status of each uploaded caption and audio track file.*
 
 ### Set the default audio for a video that has multiple audio tracks
 
@@ -752,7 +751,7 @@ However, any uploaded audio track files can be set as the default audio to play 
 1. Select **[!UICONTROL Set as default]**.
 In the **Set as default** dialog box, select **[!UICONTROL Replace]**.
 
-   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](assets-dm/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
+   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](assets-dm/msma-defaultaudiotrack2.png)*Setting the default audio track for a video.*
 
 1. In the upper-right corner, select **[!UICONTROL Save & Close]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
