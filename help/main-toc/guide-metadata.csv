@@ -461,57 +461,57 @@ filename,title,solution,feature,role
 ./help/forms/using/create-document-fragments.md,"""Tutorial: Create document fragments""","Experience Manager, Experience Manager Forms",Interactive Communication,"Admin, User, Developer"
 ./help/forms/using/create-templates-print-web.md,"""Tutorial: Create templates""","Experience Manager, Experience Manager Forms",Interactive Communication,"Admin, User, Developer"
 ./help/forms/using/create-interactive-communication0.md,"""Tutorial: Create Interactive Communication ""","Experience Manager, Experience Manager Forms",Interactive Communication,"Admin, User, Developer"
-./help/forms/using/forms-install-configure-gov-reference-site.md,Set up and configure We.Gov and We.Finance reference site,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/forms-gov-reference-site-user-demo.md,We.Gov and We.Finance reference site walkthrough,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/employee-recruitment-reference-site.md,Employee recruitment reference site walkthrough,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md,We.Finance Auto Insurance Renewal reference site walkthrough,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/gov-reference-site-foia-walkthrough.md,We.Gov reference site FOIA walkthrough,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/reference-adaptive-form-fragments.md,Reference adaptive form fragments,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/reference-themes.md,Reference Themes,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/reference-cm-layout-templates.md,Reference letter templates,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/ms-dynamics-configuration-home-mortgage.md,Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/aem-forms-architecture-deployment.md,Architecture and deployment topologies for AEM Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components",Admin
-./help/forms/using/choosing-persistence-type-for-aem-forms.md,Choosing a persistence type for an AEM Forms installation,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components",Admin
+./help/forms/using/forms-install-configure-gov-reference-site.md,Set up and configure We.Gov and We.Finance reference site,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/forms-gov-reference-site-user-demo.md,We.Gov and We.Finance reference site walkthrough,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/employee-recruitment-reference-site.md,Employee recruitment reference site walkthrough,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md,We.Finance Auto Insurance Renewal reference site walkthrough,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/gov-reference-site-foia-walkthrough.md,We.Gov reference site FOIA walkthrough,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/reference-adaptive-form-fragments.md,Reference adaptive form fragments,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/reference-themes.md,Reference Themes,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/reference-cm-layout-templates.md,Reference letter templates,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/ms-dynamics-configuration-home-mortgage.md,Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/aem-forms-architecture-deployment.md,Architecture and deployment topologies for AEM Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components",Admin
+./help/forms/using/choosing-persistence-type-for-aem-forms.md,Choosing a persistence type for an AEM Forms installation,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components",Admin
 ./help/forms/using/install-configure-document-services.md,Installing and configuring document services,"Experience Manager, Experience Manager Forms",Interactive Communication,"Admin, User, Developer"
-./help/forms/using/installing-configuring-aem-forms-osgi.md,Install and configure data capture capabilities,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on OSGi","Admin, User, Developer"
-./help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md,Installing and Configuring Forms-centric workflow on OSGi,"Experience Manager, Experience Manager Forms","Interactive Communication, AEM Forms on OSGi","Admin, User, Developer"
-./help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md,Install and configure Interactive Communications,"Experience Manager, Experience Manager Forms","Interactive Communication, Correspondence Management","Admin, User, Developer"
-./help/forms/using/aem-forms-jee-supported-platforms.md,Supported Platforms for AEM Forms on JEE,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on JEE, Platform Matrix",Admin
-./help/forms/using/installing-and-configuring-the-document-security-server.md,Installing and configuring the document security server,"Experience Manager, Experience Manager Forms","Interactive Communication, Document Security",Admin
-./help/forms/using/install-workbench.md,Install workbench,"Experience Manager, Experience Manager Forms","Workbench, Adaptive Forms","Admin, User, Developer"
-./help/forms/using/installing-configuring-designer.md,Installing and configuring Designer,"Experience Manager, Experience Manager Forms","Forms Designer, Designer","Admin, User, Developer"
+./help/forms/using/installing-configuring-aem-forms-osgi.md,Install and configure data capture capabilities,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on OSGi","Admin, User, Developer"
+./help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md,Installing and Configuring Forms-centric workflow on OSGi,"Experience Manager, Experience Manager Forms","Interactive Communication,AEM Forms on OSGi","Admin, User, Developer"
+./help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md,Install and configure Interactive Communications,"Experience Manager, Experience Manager Forms","Interactive Communication,Correspondence Management","Admin, User, Developer"
+./help/forms/using/aem-forms-jee-supported-platforms.md,Supported Platforms for AEM Forms on JEE,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on JEE,Platform Matrix",Admin
+./help/forms/using/installing-and-configuring-the-document-security-server.md,Installing and configuring the document security server,"Experience Manager, Experience Manager Forms","Interactive Communication,Document Security",Admin
+./help/forms/using/install-workbench.md,Install workbench,"Experience Manager, Experience Manager Forms","Workbench,Adaptive Forms","Admin, User, Developer"
+./help/forms/using/installing-configuring-designer.md,Installing and configuring Designer,"Experience Manager, Experience Manager Forms","Forms Designer,Designer","Admin, User, Developer"
 ./help/forms/using/performance-tuning-aem-forms.md,Performance tuning of AEM Forms server,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
-./help/forms/using/configure-adaptive-forms-cache.md,Configure adaptive forms cache,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin,User"
+./help/forms/using/configure-adaptive-forms-cache.md,Configure adaptive forms cache,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin,User"
 ./help/forms/using/configuring-the-processing-server-url.md,Configuring AEM DS settings,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
-./help/forms/using/configure-synchronization-scheduler.md,Configuring the synchronization scheduler,"Experience Manager, Experience Manager Forms","Workbench, Adaptive Forms","Admin,User"
+./help/forms/using/configure-synchronization-scheduler.md,Configuring the synchronization scheduler,"Experience Manager, Experience Manager Forms","Workbench,Adaptive Forms","Admin,User"
 ./help/forms/using/aem-livecycle-connector.md,Connecting AEM Forms with Adobe LiveCycle,"Experience Manager, Experience Manager Forms",Interactive Communication,"Admin,User"
 ./help/forms/using/submit-form-data-livecycle-process.md,Configuring AEM Forms to submit data to an AEM Forms on JEE process,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin, User, Developer"
 ./help/forms/using/aem-desktop-app-for-aem-forms.md,Adobe Experience Manager (AEM) desktop app for AEM Forms,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
-./help/forms/using/upgrade.md,Upgrade to AEM 6.5 Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms Upgrade","Admin,User"
-./help/forms/using/upgrade-forms-osgi.md,Upgrade to AEM 6.5 Forms on OSGi,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade","Admin,User"
+./help/forms/using/upgrade.md,Upgrade to AEM 6.5 Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms Upgrade","Admin,User"
+./help/forms/using/upgrade-forms-osgi.md,Upgrade to AEM 6.5 Forms on OSGi,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade","Admin,User"
 ./help/forms/using/compatibility-package.md,Compatibility Package,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
 ./help/forms/using/migration-utility.md,Migrate AEM Forms assets and documents,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
-./help/forms/using/upgrade-forms-jee.md,Upgrade to AEM 6.5 Forms on JEE,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms Upgrade, AEM Forms on JEE","Admin,User"
+./help/forms/using/upgrade-forms-jee.md,Upgrade to AEM 6.5 Forms on JEE,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE","Admin,User"
 ./help/forms/using/forms-groups-privileges-tasks.md,AEM Forms on OSGi Groups and Privileges,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
 ./help/forms/using/creating-new-folders-categorize-forms.md,Create new folders to categorize forms,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
 ./help/forms/using/searching-forms-or-assets.md,Searching for forms and assets,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
 ./help/forms/using/manage-form-metadata.md,Manage form metadata,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
 ./help/forms/using/download-xfa-or-pdf-form.md,Download an XFA or a PDF form template,"Experience Manager, Experience Manager Forms",Interactive Communication,"Admin,User"
 ./help/forms/using/deleting-forms-related-resources.md,Deleting forms and related resources,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
-./help/forms/using/get-xdp-pdf-documents-aem.md,Getting XDP and PDF documents in AEM Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin,User"
-./help/forms/using/import-export-forms-templates.md,Importing and exporting assets to AEM Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin,User"
-./help/forms/using/supporting-new-language-localization.md,Supporting new locales for adaptive forms localization,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin,User"
-./help/forms/using/forms-workflow-osgi-handling-user-data.md,Forms-centric workflows on OSGi | Handling user data,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on OSGi","Admin,User"
+./help/forms/using/get-xdp-pdf-documents-aem.md,Getting XDP and PDF documents in AEM Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin,User"
+./help/forms/using/import-export-forms-templates.md,Importing and exporting assets to AEM Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin,User"
+./help/forms/using/supporting-new-language-localization.md,Supporting new locales for adaptive forms localization,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin,User"
+./help/forms/using/forms-workflow-osgi-handling-user-data.md,Forms-centric workflows on OSGi | Handling user data,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on OSGi","Admin,User"
 ./help/forms/using/user-management-handling-user-data.md,Forms user management | Handling user data,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
 ./help/forms/using/forms-workflow-jee-handling-user-data.md,Forms JEE workflows | Handling user data,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
 ./help/forms/using/forms-portal-handling-user-data.md,Forms Portal | Handling user data,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin,User"
-./help/forms/using/correspondence-management-handling-user-data.md,Correspondence Management | Handling user data,"Experience Manager, Experience Manager Forms","Adaptive Forms, Form Data Model","Admin,User"
+./help/forms/using/correspondence-management-handling-user-data.md,Correspondence Management | Handling user data,"Experience Manager, Experience Manager Forms","Adaptive Forms,Form Data Model","Admin,User"
 ./help/forms/using/integration-adobe-sign-handling-user-data.md,Integration with Adobe Sign | Handling user data,"Experience Manager, Experience Manager Forms",Acrobat Sign,"Admin, User, Developer"
-./help/forms/using/document-security-handling-user-data.md,Document Security | Handling user data,"Experience Manager, Experience Manager Forms","Document Security, Adaptive Forms","Admin,User"
-./help/forms/using/hardening-securing-aem-forms-environment.md,Hardening and Securing AEM forms on OSGi environment,"Experience Manager, Experience Manager Forms","Document Security, Adaptive Forms","Admin,User"
-./help/forms/using/general-security-considerations.md,General Security Considerations for AEM Forms on JEE,"Experience Manager, Experience Manager Forms","Document Security, Adaptive Forms","Admin,User"
-./help/forms/using/hardening-aem-forms-jee-environment.md,Hardening Your AEM Forms on JEE Environment,"Experience Manager, Experience Manager Forms","Document Security, Adaptive Forms","Admin,User"
-./help/forms/using/configuring-secure-administration-settings-aem.md,Configuring Secure Administration Settings for AEM Forms on JEE,"Experience Manager, Experience Manager Forms","Document Security, Adaptive Forms","Admin,User"
+./help/forms/using/document-security-handling-user-data.md,Document Security | Handling user data,"Experience Manager, Experience Manager Forms","Document Security,Adaptive Forms","Admin,User"
+./help/forms/using/hardening-securing-aem-forms-environment.md,Hardening and Securing AEM forms on OSGi environment,"Experience Manager, Experience Manager Forms","Document Security,Adaptive Forms","Admin,User"
+./help/forms/using/general-security-considerations.md,General Security Considerations for AEM Forms on JEE,"Experience Manager, Experience Manager Forms","Document Security,Adaptive Forms","Admin,User"
+./help/forms/using/hardening-aem-forms-jee-environment.md,Hardening Your AEM Forms on JEE Environment,"Experience Manager, Experience Manager Forms","Document Security,Adaptive Forms","Admin,User"
+./help/forms/using/configuring-secure-administration-settings-aem.md,Configuring Secure Administration Settings for AEM Forms on JEE,"Experience Manager, Experience Manager Forms","Document Security,Adaptive Forms","Admin,User"
 ./help/forms/using/data-integration.md,AEM Forms Data Integration,"Experience Manager, Experience Manager Forms",Form Data Model,"Admin, User, Developer"
 ./help/forms/using/configure-data-sources.md,Configure data sources,"Experience Manager, Experience Manager Forms",Form Data Model,"Admin, User, Developer"
 ./help/forms/using/ms-dynamics-odata-configuration.md,Microsoft Dynamics OData configuration,"Experience Manager, Experience Manager Forms",Form Data Model,"Admin, User, Developer"
@@ -519,64 +519,64 @@ filename,title,solution,feature,role
 ./help/forms/using/create-form-data-models.md,Create form data model,"Experience Manager, Experience Manager Forms",Form Data Model,"Admin, User, Developer"
 ./help/forms/using/work-with-form-data-model.md,Work with form data model,"Experience Manager, Experience Manager Forms",Form Data Model,"Admin, User, Developer"
 ./help/forms/using/using-form-data-model.md,Use form data model,"Experience Manager, Experience Manager Forms",Form Data Model,"Admin, User, Developer"
-./help/forms/using/enable-adaptive-forms-core-components.md,How to enable Adaptive Forms Core Components on AEM 6.5 Forms?,"Experience Manager, Experience Manager Forms","Adaptive Forms, Core Components","Admin, Developer"
-./help/forms/using/create-an-adaptive-form-core-components.md,How to Create an Adaptive Form?,"Experience Manager, Experience Manager Forms","Adaptive Forms, Core Components","Admin, Developer"
-./help/forms/using/adaptive-form-fragment-core-components.md,What are Adaptive Form fragments?,"Experience Manager, Experience Manager Forms","Adaptive Forms, Core Components","Admin, Developer"
-./help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md,How to create or customizing Adaptive Form themes?,"Experience Manager, Experience Manager Forms","Adaptive Forms, Core Components","Admin, Developer"
-./help/forms/using/create-and-use-custom-functions.md,Create and add custom functions in an Adaptive Form,,"Adaptive Forms, Core Components","Admin, User, Developer"
-./help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md,Add a custom error handler in Adaptive Forms based on Core Components for AEM Adaptive Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Core Components","Admin, User"
-./help/forms/using/adaptive-forms-best-practices.md,Best practices for working with adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components, Core Components","Admin, User, Developer"
-./help/forms/using/creating-adaptive-form.md,How to Create an Adaptive Form,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md,Create or add an Adaptive Form to AEM Sites page,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/adaptive-form-fragments.md,Adaptive form fragments,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/configuring-submit-actions.md,Configuring the Submit action,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/captcha-adaptive-forms.md,Using CAPTCHA in adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/adaptive-forms-keywords.md,Adaptive forms keywords,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/adaptive-forms-tables.md,Tables in adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/adaptive-form-charts.md,Using charts in an adaptive form.,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/auto-save-an-adaptive-form.md,Auto-save an adaptive form,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/configuring-redirect-page.md,Configuring redirect page,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/creating-accessible-adaptive-forms.md,Creating accessible adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/creating-forms-repeatable-sections.md,Creating forms with repeatable sections,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/embed-adaptive-form-aem-sites.md,Embed an adaptive form or interactive communication in AEM sites page,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/embed-adaptive-form-external-web-page.md,Embed adaptive form in external web page,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/inline-style-adaptive-forms.md,Inline styling of adaptive form components,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/introduction-form-sequence.md,Introduction to multi-step form sequence,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/layout-capabilities-adaptive-forms.md,Layout capabilities of adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/placeholder-text-in-aem-forms.md,Placeholder text in AEM Forms ,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/previewing-forms.md,Previewing a form,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/reusing-adaptive-forms.md,Reusing adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/separator-component-in-adaptive-forms.md,Separator component in adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/signing-forms-using-scribble.md,Apply electronic signatures to a form using scribble signatures,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/keyboard-shortcuts.md,AEM Forms Keyboard Shortcuts,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/adding-reviewers-form.md,Associating submission reviewers with a form,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/authoring-in-field-help.md,Authoring in-context help for form fields,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/resize-using-layout-mode.md,Use Layout mode to resize components for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/forms-microsoft-power-automate-integration.md,How to connect and send Adaptive Form data to Microsoft&reg; Power Automate?,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/adaptive-form-json-schema-form-model.md,How to Create Adaptive Forms using JSON Schema?,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/adaptive-form-xml-schema-form-model.md,How to Create Adaptive Forms using XML Schema?,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/working-with-adobe-sign.md,Using Adobe Sign in an adaptive form,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components, Acrobat Sign","User, Developer"
-./help/forms/using/themes.md,Creating and using themes,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/rule-editor.md,Adaptive forms rule editor,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/invoke-form-data-model-services.md,API to invoke form data model service from adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/asynchronous-submissions-adaptive-forms.md,Asynchronous submission of adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/create-adaptive-form-using-adaptive-form-set.md,Create an adaptive form using a set of adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/template-editor.md,Adaptive Form Templates,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
-./help/forms/using/adaptive-form-expressions.md,Adaptive Form Expressions,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md,Generate Document of Record for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/lazy-loading-adaptive-forms.md,Improve performance of large forms with lazy loading,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/prepopulate-adaptive-form-fields.md,Prefill adaptive form fields,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/using-som-expressions-adaptive-forms.md,Using SOM expressions in adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/form-submission-metadata.md,Adding information from user data to form submission metadata,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/xfa-api-supported-in-adaptive-form.md,XFA support in XDP-based adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/rule-editor-access-user-groups.md,Grant rule editor access to select user groups,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md,Using AEM translation workflow to localize adaptive forms and document of record,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/styling-constructs-adaptive-forms.md,Styling constructs for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/synchronizing-adaptive-forms-xfa.md,Synchronizing Adaptive Forms with XFA Form Templates,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/adobe-sign-integration-adaptive-forms.md,Integrate Adobe Sign with AEM Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components, Acrobat Sign","Admin, User, Developer"
-./help/forms/using/create-reviews-forms.md,Creating and managing reviews in forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","Admin, User, Developer"
+./help/forms/using/enable-adaptive-forms-core-components.md,How to enable Adaptive Forms Core Components on AEM 6.5 Forms?,"Experience Manager, Experience Manager Forms","Adaptive Forms,Core Components","Admin, Developer"
+./help/forms/using/create-an-adaptive-form-core-components.md,How to Create an Adaptive Form?,"Experience Manager, Experience Manager Forms","Adaptive Forms,Core Components","Admin, Developer"
+./help/forms/using/adaptive-form-fragment-core-components.md,What are Adaptive Form fragments?,"Experience Manager, Experience Manager Forms","Adaptive Forms,Core Components","Admin, Developer"
+./help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md,How to create or customizing Adaptive Form themes?,"Experience Manager, Experience Manager Forms","Adaptive Forms,Core Components","Admin, Developer"
+./help/forms/using/create-and-use-custom-functions.md,Create and add custom functions in an Adaptive Form,,"Adaptive Forms,Core Components","Admin, User, Developer"
+./help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md,Add a custom error handler in Adaptive Forms based on Core Components for AEM Adaptive Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Core Components","Admin, User"
+./help/forms/using/adaptive-forms-best-practices.md,Best practices for working with adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components,Core Components","Admin, User, Developer"
+./help/forms/using/creating-adaptive-form.md,How to Create an Adaptive Form,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md,Create or add an Adaptive Form to AEM Sites page,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/adaptive-form-fragments.md,Adaptive form fragments,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/configuring-submit-actions.md,Configuring the Submit action,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/captcha-adaptive-forms.md,Using CAPTCHA in adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/adaptive-forms-keywords.md,Adaptive forms keywords,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/adaptive-forms-tables.md,Tables in adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/adaptive-form-charts.md,Using charts in an adaptive form.,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/auto-save-an-adaptive-form.md,Auto-save an adaptive form,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/configuring-redirect-page.md,Configuring redirect page,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/creating-accessible-adaptive-forms.md,Creating accessible adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/creating-forms-repeatable-sections.md,Creating forms with repeatable sections,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/embed-adaptive-form-aem-sites.md,Embed an adaptive form or interactive communication in AEM sites page,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/embed-adaptive-form-external-web-page.md,Embed adaptive form in external web page,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/inline-style-adaptive-forms.md,Inline styling of adaptive form components,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/introduction-form-sequence.md,Introduction to multi-step form sequence,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/layout-capabilities-adaptive-forms.md,Layout capabilities of adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/placeholder-text-in-aem-forms.md,Placeholder text in AEM Forms ,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/previewing-forms.md,Previewing a form,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/reusing-adaptive-forms.md,Reusing adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/separator-component-in-adaptive-forms.md,Separator component in adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/signing-forms-using-scribble.md,Apply electronic signatures to a form using scribble signatures,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/keyboard-shortcuts.md,AEM Forms Keyboard Shortcuts,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/adding-reviewers-form.md,Associating submission reviewers with a form,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/authoring-in-field-help.md,Authoring in-context help for form fields,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/resize-using-layout-mode.md,Use Layout mode to resize components for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/forms-microsoft-power-automate-integration.md,How to connect and send Adaptive Form data to Microsoft&reg; Power Automate?,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/adaptive-form-json-schema-form-model.md,How to Create Adaptive Forms using JSON Schema?,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/adaptive-form-xml-schema-form-model.md,How to Create Adaptive Forms using XML Schema?,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/working-with-adobe-sign.md,Using Adobe Sign in an adaptive form,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components,Acrobat Sign","User, Developer"
+./help/forms/using/themes.md,Creating and using themes,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/rule-editor.md,Adaptive forms rule editor,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/invoke-form-data-model-services.md,API to invoke form data model service from adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/asynchronous-submissions-adaptive-forms.md,Asynchronous submission of adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/create-adaptive-form-using-adaptive-form-set.md,Create an adaptive form using a set of adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/template-editor.md,Adaptive Form Templates,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","Admin, User, Developer"
+./help/forms/using/adaptive-form-expressions.md,Adaptive Form Expressions,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md,Generate Document of Record for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/lazy-loading-adaptive-forms.md,Improve performance of large forms with lazy loading,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/prepopulate-adaptive-form-fields.md,Prefill adaptive form fields,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/using-som-expressions-adaptive-forms.md,Using SOM expressions in adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/form-submission-metadata.md,Adding information from user data to form submission metadata,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/xfa-api-supported-in-adaptive-form.md,XFA support in XDP-based adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/rule-editor-access-user-groups.md,Grant rule editor access to select user groups,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md,Using AEM translation workflow to localize adaptive forms and document of record,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/styling-constructs-adaptive-forms.md,Styling constructs for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/synchronizing-adaptive-forms-xfa.md,Synchronizing Adaptive Forms with XFA Form Templates,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/adobe-sign-integration-adaptive-forms.md,Integrate Adobe Sign with AEM Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components,Acrobat Sign","Admin, User, Developer"
+./help/forms/using/create-reviews-forms.md,Creating and managing reviews in forms,"Experience Manager, Experience Manager Forms",Adaptive Forms Foundation Components,"Admin, User, Developer"
 ./help/forms/using/embed-adaptive-form-aem-sites-spa.md,Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/standard-validation-error-messages-adaptive-forms.md,Standard validation error messages for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
+./help/forms/using/standard-validation-error-messages-adaptive-forms.md,Standard validation error messages for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
 ./help/forms/using/introduction-interactive-communication-authoring.md,Introduction to Interactive Communication authoring UI,"Experience Manager, Experience Manager Forms",Interactive Communication,"Admin, User, Developer"
 ./help/forms/using/create-interactive-communication.md,Create an Interactive Communication,"Experience Manager, Experience Manager Forms",Interactive Communication,"User, Developer"
 ./help/forms/using/chart-component-interactive-communications.md,Using charts in Interactive Communications,"Experience Manager, Experience Manager Forms",Interactive Communication,"User, Developer"
@@ -587,30 +587,30 @@ filename,title,solution,feature,role
 ./help/forms/using/interactive-communication-configuration-properties.md,Interactive Communications configuration properties,"Experience Manager, Experience Manager Forms",Interactive Communication,"Admin, User, Developer"
 ./help/forms/using/generate-multiple-interactive-communication-using-batch-api.md,Use Batch API to generate multiple interactive communications,"Experience Manager, Experience Manager Forms",Interactive Communication,"User, Developer"
 ./help/forms/using/resize-using-layout-mode-interactive-communication.md,Use Layout mode to resize components for Interactive Communication,"Experience Manager, Experience Manager Forms",Interactive Communication,"User, Developer"
-./help/forms/using/aem-forms-workflow.md,Forms-centric workflow on OSGi,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/aem-forms-workflow-step-reference.md,Forms-centric workflow on OSGi - Step Reference,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Components","User, Developer"
-./help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md,Dynamically select a user or group for AEM Forms-centric workflow steps,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Services","User, Developer"
-./help/forms/using/capabilities-osgi-jee-workflows.md,Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on OSGi","User, Developer"
+./help/forms/using/aem-forms-workflow.md,Forms-centric workflow on OSGi,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/aem-forms-workflow-step-reference.md,Forms-centric workflow on OSGi - Step Reference,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Components","User, Developer"
+./help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md,Dynamically select a user or group for AEM Forms-centric workflow steps,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services","User, Developer"
+./help/forms/using/capabilities-osgi-jee-workflows.md,Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on OSGi","User, Developer"
 ./help/forms/using/initiating-document-services-apis-aem.md,Initiate Document Services APIs from AEM Workflow,"Experience Manager, Experience Manager Forms",Interactive Communication,"User, Developer"
 ./help/forms/using/forms-workflow-logs.md,Logging in AEM Forms workflows,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/variable-in-aem-workflows.md,Variables in AEM Forms workflows,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/configure-shared-queues-osgi.md,Configure shared queues,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on OSGi","Admin, User, Developer"
+./help/forms/using/configure-shared-queues-osgi.md,Configure shared queues,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on OSGi","Admin, User, Developer"
 ./help/forms/using/configure-out-of-office-settings.md,Configure Out of Office settings,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin, User, Developer"
-./help/forms/using/introduction-html-workspace.md,Introduction to AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/html-workspace-overview.md,Working with AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","User, Developer"
-./help/forms/using/html-workspace-architecture.md,AEM Forms Workspace Architecture,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","User, Developer"
-./help/forms/using/features-html-workspace-available-flex.md,Features of AEM Forms workspace not available in Flex workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/features-flex-workspace-available-html.md,Features of Flex workspace not available in AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/backbone-interaction.md,Backbone interaction,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
+./help/forms/using/introduction-html-workspace.md,Introduction to AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/html-workspace-overview.md,Working with AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","User, Developer"
+./help/forms/using/html-workspace-architecture.md,AEM Forms Workspace Architecture,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","User, Developer"
+./help/forms/using/features-html-workspace-available-flex.md,Features of AEM Forms workspace not available in Flex workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/features-flex-workspace-available-html.md,Features of Flex workspace not available in AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/backbone-interaction.md,Backbone interaction,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
 ./help/forms/using/description-reusable-components.md,Description of reusable components,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin, User, Developer"
-./help/forms/using/document-details-renderer.md,Document details for renderer,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/integrating-html-ws-components-web.md,Integrating AEM Forms workspace components in web applications,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/new-render-submit-service.md,New render and submit service,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/folder-structure.md,Understanding the folder structure,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/integrating-correspondence-management-html-workspace.md,Integrating third-party applications in the AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/html-workspace-json-object-description.md,AEM Forms workspace JSON object description,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/introduction-customizing-html-workspace.md,Introduction to Customizing AEM form workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/generic-steps-html-workspace-customization.md,Generic steps for AEM Forms workspace customization,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","User, Developer"
+./help/forms/using/document-details-renderer.md,Document details for renderer,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/integrating-html-ws-components-web.md,Integrating AEM Forms workspace components in web applications,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/new-render-submit-service.md,New render and submit service,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/folder-structure.md,Understanding the folder structure,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/integrating-correspondence-management-html-workspace.md,Integrating third-party applications in the AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/html-workspace-json-object-description.md,AEM Forms workspace JSON object description,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/introduction-customizing-html-workspace.md,Introduction to Customizing AEM form workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/generic-steps-html-workspace-customization.md,Generic steps for AEM Forms workspace customization,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","User, Developer"
 ./help/forms/using/changing-locale-user-interface.md,Changing the locale of AEM Forms workspace user interface,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/creating-new-login-screen.md,Creating a login screen,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/customizing-error-dialogs.md,Customizing error dialogs,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
@@ -624,10 +624,10 @@ filename,title,solution,feature,role
 ./help/forms/using/minification-javascript-files.md,Minification of the JavaScript files,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/sorting-tracking-tables-add-columns.md,Customize tracking tables,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/updating-link-help-documentation.md,Updating the link to the documentation,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin, User, Developer"
-./help/forms/using/form-sets-html-workspace.md,Working with Formsets in AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","User, Developer"
-./help/forms/using/apis-used-html-workspace.md,APIs used in AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","Admin, User, Developer"
+./help/forms/using/form-sets-html-workspace.md,Working with Formsets in AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","User, Developer"
+./help/forms/using/apis-used-html-workspace.md,APIs used in AEM Forms workspace,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","Admin, User, Developer"
 ./help/forms/using/initiating-new-process-existing-process.md,Initiating a new process with existing process data in AEM Forms workspace,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/two-html-workspace-instances-one.md,Hosting two AEM Forms workspace instances on one server,"Experience Manager, Experience Manager Forms","HTML5 Forms, Adaptive Forms, Mobile Forms","User, Developer"
+./help/forms/using/two-html-workspace-instances-one.md,Hosting two AEM Forms workspace instances on one server,"Experience Manager, Experience Manager Forms","HTML5 Forms,Adaptive Forms,Mobile Forms","User, Developer"
 ./help/forms/using/changing-color-scheme-interface.md,Changing the color scheme of the interface,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/changing-font-interface.md,Changing the font on the interface,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/changing-organization-logo-branding.md,Changing the organization logo for branding,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
@@ -638,7 +638,7 @@ filename,title,solution,feature,role
 ./help/forms/using/starting-processes.md,Starting processes,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin, User, Developer"
 ./help/forms/using/tracking-processes.md,Tracking processes,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin, User, Developer"
 ./help/forms/using/single-sign-timeout-handlers.md,Single Sign On and timeout handlers,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/using-adaptive-form-html-workspace.md,Using an adaptive form in HTML Workspace,"Experience Manager, Experience Manager Forms","Adaptive Forms, Workbench","User, Developer"
+./help/forms/using/using-adaptive-form-html-workspace.md,Using an adaptive form in HTML Workspace,"Experience Manager, Experience Manager Forms","Adaptive Forms,Workbench","User, Developer"
 ./help/forms/using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md,Integrating AEM forms workspace with Microsoft Office SharePoint Server,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/todo-lists.md,Working with To-do lists,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/troubleshooting-guidelines-html-workspace.md,Troubleshooting guidelines for AEM Forms workspace,"Experience Manager, Experience Manager Forms",Adaptive Forms,"Admin, User, Developer"
@@ -666,34 +666,34 @@ filename,title,solution,feature,role
 ./help/forms/using/work-offline-mode.md,Working in the offline mode,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/update-general-settings.md,Updating general settings,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/issues-aem-forms-app.md,Troubleshoot AEM Forms app,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/introduction.md,Introduction to HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/get-started.md,Getting started with HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/html5-forms-architecture.md,Architecture of HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/feature-differentiation-html5-forms-pdf-forms.md,Feature differentiation between HTML5 forms and PDF forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/faq.md,Frequently asked questions (FAQ) for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/designing-form-template.md,Designing form templates for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/best-practices-for-html5-forms.md,Best practices for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/design-accessible-html5-forms.md,Designing accessible HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/preview-xdp-forms-html.md,Generate HTML5 preview of an XDP form,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/rendering-form-template.md,Rendering form template for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/enabling-attachments-html5-form.md,Enabling attachments for an HTML5 form,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/service-proxy.md,HTML5 forms service proxy,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/optimize-html5-forms.md,Optimizing HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/screen-readers.md,Screen readers for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/custom-profile.md,Creating a custom profile for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/right-left-languages.md,Right-to-left languages in HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/integrate-form-bridge-forms-portal.md,Integrating Form Bridge with custom portal for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/custom-widgets.md,Create custom appearances in HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/changing-default-styles.md,Changing default styles of HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/picture-clause-support.md,Picture clause support for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/accessible-tables.md,Create accessible complex tables in HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/css-styles.md,Creating CSS styles for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/customzing-errors-html5-forms.md,Customizing error messages for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/saving-html5-form-draft.md,Saving an HTML5 form as a draft,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/enable-logs.md,Enable logging for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/debug.md,Debugging HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/scripting-support.md,Scripting support for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
-./help/forms/using/formset-in-aem-forms.md,Form set in AEM Forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","Admin, User, Developer"
+./help/forms/using/introduction.md,Introduction to HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/get-started.md,Getting started with HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/html5-forms-architecture.md,Architecture of HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/feature-differentiation-html5-forms-pdf-forms.md,Feature differentiation between HTML5 forms and PDF forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/faq.md,Frequently asked questions (FAQ) for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/designing-form-template.md,Designing form templates for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/best-practices-for-html5-forms.md,Best practices for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/design-accessible-html5-forms.md,Designing accessible HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/preview-xdp-forms-html.md,Generate HTML5 preview of an XDP form,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/rendering-form-template.md,Rendering form template for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/enabling-attachments-html5-form.md,Enabling attachments for an HTML5 form,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/service-proxy.md,HTML5 forms service proxy,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/optimize-html5-forms.md,Optimizing HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/screen-readers.md,Screen readers for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/custom-profile.md,Creating a custom profile for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/right-left-languages.md,Right-to-left languages in HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/integrate-form-bridge-forms-portal.md,Integrating Form Bridge with custom portal for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/custom-widgets.md,Create custom appearances in HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/changing-default-styles.md,Changing default styles of HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/picture-clause-support.md,Picture clause support for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/accessible-tables.md,Create accessible complex tables in HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/css-styles.md,Creating CSS styles for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/customzing-errors-html5-forms.md,Customizing error messages for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/saving-html5-form-draft.md,Saving an HTML5 form as a draft,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/enable-logs.md,Enable logging for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/debug.md,Debugging HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/scripting-support.md,Scripting support for HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
+./help/forms/using/formset-in-aem-forms.md,Form set in AEM Forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","Admin, User, Developer"
 ./help/forms/using/cm-overview.md,Correspondence Management Overview,"Experience Manager, Experience Manager Forms",Correspondence Management,"Admin, User, Developer"
 ./help/forms/using/layout-design-details.md,Layout Design,"Experience Manager, Experience Manager Forms",Correspondence Management,"Admin, User, Developer"
 ./help/forms/using/data-dictionary.md,Data Dictionary,"Experience Manager, Experience Manager Forms",Correspondence Management,"Admin, User, Developer"
@@ -742,45 +742,45 @@ filename,title,solution,feature,role
 ./help/forms/using/creating-form-portal-page.md,Creating a forms portal page,"Experience Manager, Experience Manager Forms",Forms Portal,"User, Developer"
 ./help/forms/using/report-submitted-data-forms.md,APIs to work with submitted forms on forms portal,"Experience Manager, Experience Manager Forms",Forms Portal,"User, Developer"
 ./help/forms/using/adding-custom-storage-provider-forms.md,Custom storage for drafts and submissions component,"Experience Manager, Experience Manager Forms",Forms Portal,"User, Developer"
-./help/forms/using/overview-aem-document-services.md,Overview of AEM Document Services,"Experience Manager, Experience Manager Forms","Document Services, Reader Extensions,  Forms Service, PDF Generator","Admin, User, Developer"
-./help/forms/using/forms-service.md,Forms Service,"Experience Manager, Experience Manager Forms","Document Services, Forms Service, PDF Generator","Admin, User, Developer"
-./help/forms/using/output-service.md,Output Service,"Experience Manager, Experience Manager Forms","Document Services, Output Service","Admin, User, Developer"
-./help/forms/using/using-convertpdf-service.md,ConvertPDF Service,"Experience Manager, Experience Manager Forms","Document Services, Assembler","Admin, User, Developer"
-./help/forms/using/using-barcoded-forms-service.md,Barcoded Forms Service,"Experience Manager, Experience Manager Forms","Document Services, Assembler, Barcoded Forms","Admin, User, Developer"
+./help/forms/using/overview-aem-document-services.md,Overview of AEM Document Services,"Experience Manager, Experience Manager Forms","Document Services,Reader Extensions, Forms Service,PDF Generator","Admin, User, Developer"
+./help/forms/using/forms-service.md,Forms Service,"Experience Manager, Experience Manager Forms","Document Services,Forms Service,PDF Generator","Admin, User, Developer"
+./help/forms/using/output-service.md,Output Service,"Experience Manager, Experience Manager Forms","Document Services,Output Service","Admin, User, Developer"
+./help/forms/using/using-convertpdf-service.md,ConvertPDF Service,"Experience Manager, Experience Manager Forms","Document Services,Assembler","Admin, User, Developer"
+./help/forms/using/using-barcoded-forms-service.md,Barcoded Forms Service,"Experience Manager, Experience Manager Forms","Document Services,Assembler,Barcoded Forms","Admin, User, Developer"
 ./help/forms/using/assembler-service.md,Using Assembler Service,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
 ./help/forms/using/hsm-certify-esign-docs.md,Use HSM to digitally sign or certify documents,"Experience Manager, Experience Manager Forms",Document Services,"Admin, User, Developer"
-./help/forms/using/aem-document-services-programmatically.md,Using AEM Document Services Programmatically,"Experience Manager, Experience Manager Forms","Document Services, APIs & Integrations","Admin, User, Developer"
-./help/forms/using/using-sendtoprinter-api.md,Using the sendToPrinter API,"Experience Manager, Experience Manager Forms","Document Services, APIs & Integrations","Admin, User, Developer"
+./help/forms/using/aem-document-services-programmatically.md,Using AEM Document Services Programmatically,"Experience Manager, Experience Manager Forms","Document Services,APIs & Integrations","Admin, User, Developer"
+./help/forms/using/using-sendtoprinter-api.md,Using the sendToPrinter API,"Experience Manager, Experience Manager Forms","Document Services,APIs & Integrations","Admin, User, Developer"
 ./help/forms/using/document-security-offerings.md,Document security offerings,"Experience Manager, Experience Manager Forms",Document Security,"Admin, User, Developer"
 ./help/forms/using/enable-search-for-drm-protected-pdf-documents-in-aem.md,Enable AEM to search document security protected PDF documents,"Experience Manager, Experience Manager Forms",Document Security,"Admin, User, Developer"
-./help/forms/using/reader-extending-policy-protected-pdf-documents-using-ppl.md,Reader extending policy-protected PDF documents using Portable Protection Library,"Experience Manager, Experience Manager Forms","Document Security, Reader Extensions","Admin, User, Developer"
+./help/forms/using/reader-extending-policy-protected-pdf-documents-using-ppl.md,Reader extending policy-protected PDF documents using Portable Protection Library,"Experience Manager, Experience Manager Forms","Document Security,Reader Extensions","Admin, User, Developer"
 ./help/forms/using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md,Enable AEM to search document security protected PDF and Microsoft Office documents,"Experience Manager, Experience Manager Forms",Document Security,"Admin, User, Developer"
 ./help/forms/using/protect-document-on-behalf-of-another-user.md,Protect a document on behalf of another user,"Experience Manager, Experience Manager Forms",Document Security,"Admin, User, Developer"
-./help/forms/using/forms-designer-help.md,Forms Designer help,"Experience Manager, Experience Manager Forms","Forms Designer, Designer","User, Developer"
-./help/forms/using/scribble-signature.md,Using Scribble Signature in HTML5 forms,"Experience Manager, Experience Manager Forms","Forms Designer, Designer","User, Developer"
-./help/forms/using/changing-page-zero-content-designer.md,Changing Page Zero content in Designer,"Experience Manager, Experience Manager Forms","Adaptive Forms, Forms Designer, Designer","User, Developer"
-./help/forms/using/introduction-widgets.md,Appearance framework for adaptive and HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms, Mobile Forms","User, Developer"
-./help/forms/using/custom-adaptive-forms-templates.md,Creating a custom adaptive form template,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/custom-layout-components-forms.md,Creating custom layout components for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/add-custom-action-form-lister.md,Adding custom action on form lister items,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/customize-layout-positioning-error-messages-adaptive-form.md,Customize layout and positioning of error messages of an adaptive form,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/creating-custom-toolbar-action.md,Creating a custom toolbar action,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/customizing-form-event-tracking.md,Customizing form event tracking,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/custom-appearance-widget-adaptive-form.md,Create custom appearances for adaptive form fields,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/custom-draft-submission-data-services.md,Customizing Draft and Submission data services,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component","User, Developer"
-./help/forms/using/dynamically-populate-dropdowns.md,Dynamically populating drop-down lists,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component , Form Data Model","User, Developer"
-./help/forms/using/custom-submit-action-form.md,Writing custom Submit action for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component , Form Data Model","User, Developer"
-./help/forms/using/creating-custom-toolbar-layout.md,Creating custom toolbar layout,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/displaying-components-based-on-template.md,Displaying components based on the template used,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/creating-custom-adaptive-form-themes.md,Creating custom adaptive form themes,"Experience Manager, Experience Manager Forms","Adaptive Forms, Foundation Component ","User, Developer"
-./help/forms/using/transaction-reports-overview-jee-osgi.md,Transaction Reports Overview AEM Forms.,,Transaction Reports,"Admin, User, Developer"
+./help/forms/using/forms-designer-help.md,Forms Designer help,"Experience Manager, Experience Manager Forms","Forms Designer,Designer","User, Developer"
+./help/forms/using/scribble-signature.md,Using Scribble Signature in HTML5 forms,"Experience Manager, Experience Manager Forms","Forms Designer,Designer","User, Developer"
+./help/forms/using/changing-page-zero-content-designer.md,Changing Page Zero content in Designer,"Experience Manager, Experience Manager Forms","Adaptive Forms,Forms Designer,Designer","User, Developer"
+./help/forms/using/introduction-widgets.md,Appearance framework for adaptive and HTML5 forms,"Experience Manager, Experience Manager Forms","HTML5 Forms,Mobile Forms","User, Developer"
+./help/forms/using/custom-adaptive-forms-templates.md,Creating a custom adaptive form template,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/custom-layout-components-forms.md,Creating custom layout components for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/add-custom-action-form-lister.md,Adding custom action on form lister items,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/customize-layout-positioning-error-messages-adaptive-form.md,Customize layout and positioning of error messages of an adaptive form,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/creating-custom-toolbar-action.md,Creating a custom toolbar action,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/customizing-form-event-tracking.md,Customizing form event tracking,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/custom-appearance-widget-adaptive-form.md,Create custom appearances for adaptive form fields,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/custom-draft-submission-data-services.md,Customizing Draft and Submission data services,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/dynamically-populate-dropdowns.md,Dynamically populating drop-down lists,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ,Form Data Model","User, Developer"
+./help/forms/using/custom-submit-action-form.md,Writing custom Submit action for adaptive forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ,Form Data Model","User, Developer"
+./help/forms/using/creating-custom-toolbar-layout.md,Creating custom toolbar layout,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/displaying-components-based-on-template.md,Displaying components based on the template used,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/creating-custom-adaptive-form-themes.md,Creating custom adaptive form themes,"Experience Manager, Experience Manager Forms","Adaptive Forms,Foundation Component ","User, Developer"
+./help/forms/using/transaction-reports-overview-jee-osgi.md,Transaction Reports Overview AEM Forms.,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
 ./help/forms/using/transaction-reports-overview.md,Transaction Reports Overview,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
 ./help/forms/using/viewing-and-understanding-transaction-reports.md,Viewing and Understanding Transaction Reports,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
 ./help/forms/using/transaction-reports-billable-apis.md,Transaction Reports Billable APIs,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
 ./help/forms/using/record-transaction-custom-implementation.md,Record a transaction for custom implementations,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
-./help/forms/using/transaction-report-overview-jee.md,Transaction Reports Overview for AEM Forms on JEE,,Transaction Reports,"Admin, User, Developer"
-./help/forms/using/transaction-reports-billable-apis-jee.md,Transaction Reports Billable APIs for AEM Forms on JEE.,,Transaction Reports,"Admin, User, Developer"
-./help/forms/using/record-transaction-custom-component-jee.md,Record a transaction for custom component API for AEM Forms on JEE.,,Transaction Reports,"Admin, User, Developer"
+./help/forms/using/transaction-report-overview-jee.md,Transaction Reports Overview for AEM Forms on JEE,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
+./help/forms/using/transaction-reports-billable-apis-jee.md,Transaction Reports Billable APIs for AEM Forms on JEE.,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
+./help/forms/using/record-transaction-custom-component-jee.md,Record a transaction for custom component API for AEM Forms on JEE.,"Experience Manager, Experience Manager Forms",Transaction Reports,"Admin, User, Developer"
 ./help/forms/using/admin-help/configure-general-aem-forms-settings.md,General AEM Forms settings,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/update-license-type-deployment.md,Update the license type for the deployment,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/adding-domains.md,Adding domains,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
@@ -793,13 +793,13 @@ filename,title,solution,feature,role
 ./help/forms/using/admin-help/change-order-evaluation-authentication.md,Change the order of evaluation for authentication,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/configure-ldap-bind-password.md,Configure the LDAP bind password,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md,Configure AEM forms to prefetchdomain information,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/admin-help/configuring-certificate-based-authentication.md,Configuring certificate-based authentication,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Security","User, Developer"
+./help/forms/using/admin-help/configuring-certificate-based-authentication.md,Configuring certificate-based authentication,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
 ./help/forms/using/admin-help/configure-saml-service-provider-settings.md,Configure SAML service provider settings,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/admin-help/enabling-single-sign-on-aem.md,Enabling single sign-on in AEM forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Security","User, Developer"
+./help/forms/using/admin-help/enabling-single-sign-on-aem.md,Enabling single sign-on in AEM forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
 ./help/forms/using/admin-help/configure-user-management-ssl-enabled.md,Configure User Management for an SSL-enabled LDAP server,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/importing-exporting-configuration-file.md,Importing and exporting the configuration file,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/configure-advanced-system-attributes.md,Configure advanced system attributes,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/admin-help/preventing-csrf-attacks.md,Preventing CSRF attacks,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Security","User, Developer"
+./help/forms/using/admin-help/preventing-csrf-attacks.md,Preventing CSRF attacks,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
 ./help/forms/using/admin-help/adding-configuring-users.md,Adding and configuring users ,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/just-in-time-user-provisioning.md,Just-in-time user provisioning,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/creating-configuring-groups.md,Creating and configuring groups,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
@@ -812,13 +812,13 @@ filename,title,solution,feature,role
 ./help/forms/using/admin-help/adding-removing-user-name-password.md,Adding and removing user name and password credentials,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/certificate-revocation-lists.md,Managing certificate revocation lists,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/overview-2.md,Basics of managing certificates and credentials,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/admin-help/certificates.md,Managing certificates,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Security","User, Developer"
-./help/forms/using/admin-help/hsm-credentials.md,Managing HSM credentials,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Security","User, Developer"
-./help/forms/using/admin-help/local-credentials.md,Managing local credentials,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Security","User, Developer"
+./help/forms/using/admin-help/certificates.md,Managing certificates,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
+./help/forms/using/admin-help/hsm-credentials.md,Managing HSM credentials,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
+./help/forms/using/admin-help/local-credentials.md,Managing local credentials,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
 ./help/forms/using/admin-help/change-number-items-displayed-applications.md,Change the number of items displayed on the Applications and Services pages,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/import-archives.md,Import and manage archives,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/import-applications.md,Import and manage applications,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/admin-help/configure-service-settings.md,Configure service settings,"Experience Manager, Experience Manager Forms","Adaptive Forms, Workbench","User, Developer"
+./help/forms/using/admin-help/configure-service-settings.md,Configure service settings,"Experience Manager, Experience Manager Forms","Adaptive Forms,Workbench","User, Developer"
 ./help/forms/using/admin-help/starting-stopping-services.md,Starting and stopping services,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/adding-enabling-modifying-or-removing.md,"Adding, enabling, modifying, or removing endpoints","Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/configuring-email-endpoints.md,Configuring email endpoints,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
@@ -829,17 +829,17 @@ filename,title,solution,feature,role
 ./help/forms/using/admin-help/types-endpoints.md,Types of endpoints,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/certificate-types-used-acrobat-reader.md,Certificate types used by Acrobat Reader DC extensions,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md,Recognizing valid and expired certificates in PDF documents,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md,Configuring Acrobat Reader DC Extensions for data capture,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Services, Reader Extensions","User, Developer"
+./help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md,Configuring Acrobat Reader DC Extensions for data capture,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,Reader Extensions","User, Developer"
 ./help/forms/using/admin-help/review-credential-information.md,Review credential use information,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md,Configuring credentials for use with Acrobat Reader DC Extensions,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/admin-help/review-usage-rights-pdf-file.md,Review the usage rights of a PDF file,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Services, Reader Extensions","User, Developer"
-./help/forms/using/admin-help/enabling-online-commenting-reader-web.md,Enabling online commenting for Adobe Reader web browser plug-in,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Services, Reader Extensions","User, Developer"
+./help/forms/using/admin-help/review-usage-rights-pdf-file.md,Review the usage rights of a PDF file,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,Reader Extensions","User, Developer"
+./help/forms/using/admin-help/enabling-online-commenting-reader-web.md,Enabling online commenting for Adobe Reader web browser plug-in,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,Reader Extensions","User, Developer"
 ./help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md,Setting timeout values for use with Acrobat Reader DC Extensions,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/updating-expired-reader-extension-certificates.md,Expiration of Reader Extensions certificates and its impact ,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/overview-5.md,Introduction to working with PDF Generator,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
 ./help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md,Enabling multi-threaded file conversions,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
 ./help/forms/using/admin-help/configuring-pdf-settings.md,Configuring Adobe PDF settings,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
-./help/forms/using/admin-help/configuring-security-settings.md,Configuring security settings,"Experience Manager, Experience Manager Forms","PDF Generator, Document Security","User, Developer"
+./help/forms/using/admin-help/configuring-security-settings.md,Configuring security settings,"Experience Manager, Experience Manager Forms","PDF Generator,Document Security","User, Developer"
 ./help/forms/using/admin-help/configuring-file-type-settings.md,Configuring file type settings,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
 ./help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md,Importing and exporting PDF Generator configuration files,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
 ./help/forms/using/admin-help/enable-pdf-a-support.md,Enable PDF/A support,"Experience Manager, Experience Manager Forms",PDF Generator,"User, Developer"
@@ -868,7 +868,7 @@ filename,title,solution,feature,role
 ./help/forms/using/admin-help/configuring-form-output.md,Configuring form output,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/specifying-fonts-embed.md,Specifying fonts to embed,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/configuring-locations-forms.md,Configuring locations for Forms,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/admin-help/specifying-security-settings.md,Specifying security settings,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Security","User, Developer"
+./help/forms/using/admin-help/specifying-security-settings.md,Specifying security settings,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
 ./help/forms/using/admin-help/configuring-validation-messages.md,Configuring validation messages,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/overview-8.md,Overview of output service,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/specify-xci-configuration-options.md,Specify XCI configuration options,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
@@ -876,7 +876,7 @@ filename,title,solution,feature,role
 ./help/forms/using/admin-help/specify-file-locations-output.md,Specify file locations for Output,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/make-fonts-available.md,Make fonts available,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/specify-fonts-embed.md,Specify fonts to embed,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/admin-help/specify-security-settings.md,Specify security settings,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Security","User, Developer"
+./help/forms/using/admin-help/specify-security-settings.md,Specify security settings,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
 ./help/forms/using/admin-help/change-character-set.md,Change the character set,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/administration-process-terminology.md,About administration and process terminology,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/admin-help/processes.md,Managing Processes,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
@@ -938,108 +938,108 @@ filename,title,solution,feature,role
 ./help/forms/developing/invoking-aem-forms-using-apis.md,How to invoke AEM Forms using APIs?,"Experience Manager, Experience Manager Forms",Adaptive Forms,Developer
 ./help/forms/developing/aem-forms-processes.md,Understanding AEM Forms Processes,"Experience Manager, Experience Manager Forms",Adaptive Forms,Developer
 ./help/forms/developing/service-container.md,Service container,"Experience Manager, Experience Manager Forms",Adaptive Forms,Developer
-./help/forms/developing/creating-invite-external-users-handler.md,Creating an Invite External Users Handler,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/application-manager-client-java-api.md,Application Manager Client JavaAPI Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/application-manager-service-java-api.md,Application Manager Service JavaAPI Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/assembler-service-java-api-quick.md,Assembler Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/acrobat-reader-dc-extensions-service.md,Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, Reader Extensions, APIs & Integrations",Developer
-./help/forms/developing/backup-restore-service-api-quick.md,Backup and Restore Service APIQuick Starts,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/barcoded-forms-service-java-api.md,Barcoded Forms Service Java&trade; API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/components-services-java-api-quick.md,Components and Services Java&trade; APIQuick Start (SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/convert-pdf-service-java-api.md,Convert PDF Service Java&trade; API QuickStart (SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/credential-service-java-api-quick.md,Credential Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/distiller-service-java-api-quick.md,Distiller Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/docconverter-service-java-api-quick.md,DocConverter Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/document-management-service-deprecated-java.md,Document Management Service (Deprecated)Java API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/document-security-service-java-api.md,Document Security Service JavaAPI Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/encryption-service-java-api-quick.md,Encryption Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/endpoint-registry-java-api-quick.md,Endpoint Registry Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/form-data-integration-service-java.md,Form Data Integration Service JavaAPI Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/forms-service-api-quick-starts.md,Forms Service API Quick Starts,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/generate-pdf-service-java-api.md,Generate PDF Service Java API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/invocation-api-quick-starts.md,Invocation API Quick Starts,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/livecycleprocess-java-api-soap-quick.md,LiveCycleProcess Java API(SOAP)Quick Start,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/output-service-java-api-quick.md,Output Service Java API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/pdf-utilities-service-java-api.md,PDF Utilities Service Java APIQuick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/repository-service-api-quick-starts.md,Repository Service API Quick Starts,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/signature-service-java-api-quick.md,Signature Service Java API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/task-manager-service-java-api.md,Task Manager Service Java API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/user-manager-java-api-quick.md,User Manager Java API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/xmp-utilities-service-java-api.md,XMP Utilities Service Java APIQuick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/invoking-aem-forms-using-rest.md,Invoking AEM Forms using REST Requests,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/invoking-aem-forms-using-web.md,Invoking AEM Forms using Web Services,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/invoking-aem-forms-using-remoting.md,Invoking AEM Forms using Remoting,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, Workbench",Developer
-./help/forms/developing/invoking-human-centric-long-lived.md,Invoking Human-Centric Long-Lived Processes,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, AEM Forms on JEE",Developer
-./help/forms/developing/invoking-aem-forms-using-java.md,Invoking AEM Forms using the JavaAPI,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/creating-flash-builder-applications-perform.md,Creating Flash Builder applicationsthat perform SSO authentication using HTTP tokens,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Security",Developer
+./help/forms/developing/creating-invite-external-users-handler.md,Creating an Invite External Users Handler,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/application-manager-client-java-api.md,Application Manager Client JavaAPI Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/application-manager-service-java-api.md,Application Manager Service JavaAPI Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/assembler-service-java-api-quick.md,Assembler Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/acrobat-reader-dc-extensions-service.md,Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,Reader Extensions,APIs & Integrations",Developer
+./help/forms/developing/backup-restore-service-api-quick.md,Backup and Restore Service APIQuick Starts,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/barcoded-forms-service-java-api.md,Barcoded Forms Service Java&trade; API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/components-services-java-api-quick.md,Components and Services Java&trade; APIQuick Start (SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/convert-pdf-service-java-api.md,Convert PDF Service Java&trade; API QuickStart (SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/credential-service-java-api-quick.md,Credential Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/distiller-service-java-api-quick.md,Distiller Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/docconverter-service-java-api-quick.md,DocConverter Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/document-management-service-deprecated-java.md,Document Management Service (Deprecated)Java API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/document-security-service-java-api.md,Document Security Service JavaAPI Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/encryption-service-java-api-quick.md,Encryption Service Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/endpoint-registry-java-api-quick.md,Endpoint Registry Java&trade; API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/form-data-integration-service-java.md,Form Data Integration Service JavaAPI Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/forms-service-api-quick-starts.md,Forms Service API Quick Starts,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/generate-pdf-service-java-api.md,Generate PDF Service Java API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/invocation-api-quick-starts.md,Invocation API Quick Starts,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/livecycleprocess-java-api-soap-quick.md,LiveCycleProcess Java API(SOAP)Quick Start,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/output-service-java-api-quick.md,Output Service Java API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/pdf-utilities-service-java-api.md,PDF Utilities Service Java APIQuick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/repository-service-api-quick-starts.md,Repository Service API Quick Starts,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/signature-service-java-api-quick.md,Signature Service Java API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/task-manager-service-java-api.md,Task Manager Service Java API QuickStart(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/user-manager-java-api-quick.md,User Manager Java API Quick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/xmp-utilities-service-java-api.md,XMP Utilities Service Java APIQuick Start(SOAP),"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/invoking-aem-forms-using-rest.md,Invoking AEM Forms using REST Requests,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/invoking-aem-forms-using-web.md,Invoking AEM Forms using Web Services,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/invoking-aem-forms-using-remoting.md,Invoking AEM Forms using Remoting,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,Workbench",Developer
+./help/forms/developing/invoking-human-centric-long-lived.md,Invoking Human-Centric Long-Lived Processes,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,AEM Forms on JEE",Developer
+./help/forms/developing/invoking-aem-forms-using-java.md,Invoking AEM Forms using the JavaAPI,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/creating-flash-builder-applications-perform.md,Creating Flash Builder applicationsthat perform SSO authentication using HTTP tokens,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security",Developer
 ./help/forms/developing/performing-service-operations-using-apis.md,Performing Service Operations Using APIs,"Experience Manager, Experience Manager Forms",Adaptive Forms,Developer
 ./help/forms/developing/rendering-forms.md,Rendering Forms,"Experience Manager, Experience Manager Forms",Adaptive Forms,Developer
-./help/forms/developing/assembling-pdf-documents.md,Assembling PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/programmatically-assembling-pdf-documents.md,Programmatically Assembling PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/converting-file-formats-pdf.md,Converting Between File Formats and PDF,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/programmatically-disassembling-pdf-documents.md,Programmatically Disassembling PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/assembling-encrypted-pdf-documents.md,Assembling Encrypted PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/assembling-multiple-xdp-fragments.md,Assembling Multiple XDP Fragments,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/assembling-documents-using-bates-numbering.md,Assembling Documents Using Bates Numbering,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/assembling-non-interactive-pdf-documents.md,Assembling Non-Interactive PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/assembling-pdf-documents-bookmarks.md,Assembling PDF Documents with Bookmarks,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/assigning-usage-rights.md,Assigning Usage Rights,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, Reader Extensions",Developer
-./help/forms/developing/assembling-pdf-portfolios.md,Assembling PDF Portfolios,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Developer
-./help/forms/developing/calculating-form-data.md,Calculating Form Data,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/creating-web-applications-renders-forms.md,Creating Web Applications thatRenders Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, Workbench, APIs & Integrations",Developer
-./help/forms/developing/creating-pdf-documents-submitted-xml.md,Creating PDF Documents with SubmittedXML Data,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/disassemble-pdf-document-using-web.md,Disassemble a PDF document usingthe web service API,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/determining-whether-documents-pdf-a.md,Determining Whether Documents Are PDF/A-Compliant,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/dynamically-creating-ddx-documents.md,Dynamically Creating DDX Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/handling-submitted-forms.md,Handling Submitted Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/optimizing-performance-forms-service.md,Optimizing the Performance of theForms Service,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/passing-documents-forms-service.md,Passing Documents to the FormsService,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/prepopulating-forms-flowable-layouts.md,Prepopulating Forms with Flowable Layouts,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/rendering-forms-based-fragments.md,Rendering Forms Based on Fragments,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/rendering-forms-value.md,Rendering Forms By Value,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/rendering-forms-html.md,Rendering Forms as HTML,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/rendering-forms-client.md,Rendering Forms at the Client,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/rendering-html-forms-using-custom.md,Rendering HTML Forms Using Custom CSS Files,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/rendering-html-forms-custom-toolbars.md,Rendering HTML Forms with CustomToolbars,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/rendering-interactive-pdf-forms.md,Rendering Interactive PDF Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/rendering-rights-enabled-forms.md,Rendering Rights-Enabled Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/validating-ddx-documents.md,Validating DDX Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/converting-pdf-postscript-image-files.md,Converting PDF to Postscript andImage Files,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/converting-postscript-pdf-documents.md,Converting Postscript to PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/creating-document-output-streams.md,Creating Document Output Streams,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/digitally-signing-certifying-documents.md,Digitally Signing and Certifying Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/encrypting-decrypting-pdf-documents.md,Encrypting and Decrypting PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/importing-exporting-data.md,Importing and Exporting Data,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
+./help/forms/developing/assembling-pdf-documents.md,Assembling PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/programmatically-assembling-pdf-documents.md,Programmatically Assembling PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/converting-file-formats-pdf.md,Converting Between File Formats and PDF,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/programmatically-disassembling-pdf-documents.md,Programmatically Disassembling PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/assembling-encrypted-pdf-documents.md,Assembling Encrypted PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/assembling-multiple-xdp-fragments.md,Assembling Multiple XDP Fragments,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/assembling-documents-using-bates-numbering.md,Assembling Documents Using Bates Numbering,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/assembling-non-interactive-pdf-documents.md,Assembling Non-Interactive PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/assembling-pdf-documents-bookmarks.md,Assembling PDF Documents with Bookmarks,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/assigning-usage-rights.md,Assigning Usage Rights,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,Reader Extensions",Developer
+./help/forms/developing/assembling-pdf-portfolios.md,Assembling PDF Portfolios,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Developer
+./help/forms/developing/calculating-form-data.md,Calculating Form Data,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/creating-web-applications-renders-forms.md,Creating Web Applications thatRenders Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Workbench,APIs & Integrations",Developer
+./help/forms/developing/creating-pdf-documents-submitted-xml.md,Creating PDF Documents with SubmittedXML Data,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/disassemble-pdf-document-using-web.md,Disassemble a PDF document usingthe web service API,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/determining-whether-documents-pdf-a.md,Determining Whether Documents Are PDF/A-Compliant,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/dynamically-creating-ddx-documents.md,Dynamically Creating DDX Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/handling-submitted-forms.md,Handling Submitted Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/optimizing-performance-forms-service.md,Optimizing the Performance of theForms Service,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/passing-documents-forms-service.md,Passing Documents to the FormsService,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/prepopulating-forms-flowable-layouts.md,Prepopulating Forms with Flowable Layouts,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/rendering-forms-based-fragments.md,Rendering Forms Based on Fragments,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/rendering-forms-value.md,Rendering Forms By Value,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/rendering-forms-html.md,Rendering Forms as HTML,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/rendering-forms-client.md,Rendering Forms at the Client,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/rendering-html-forms-using-custom.md,Rendering HTML Forms Using Custom CSS Files,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/rendering-html-forms-custom-toolbars.md,Rendering HTML Forms with CustomToolbars,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/rendering-interactive-pdf-forms.md,Rendering Interactive PDF Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/rendering-rights-enabled-forms.md,Rendering Rights-Enabled Forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/validating-ddx-documents.md,Validating DDX Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/converting-pdf-postscript-image-files.md,Converting PDF to Postscript andImage Files,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/converting-postscript-pdf-documents.md,Converting Postscript to PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/creating-document-output-streams.md,Creating Document Output Streams,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/digitally-signing-certifying-documents.md,Digitally Signing and Certifying Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/encrypting-decrypting-pdf-documents.md,Encrypting and Decrypting PDF Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/importing-exporting-data.md,Importing and Exporting Data,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
 ./help/forms/developing/users.md,Managing Users,"Experience Manager, Experience Manager Forms",Adaptive Forms,Developer
-./help/forms/developing/aem-forms-repository.md,Working with AEM Forms Repository,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/barcoded-forms.md,Working with barcoded forms,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations, Barcoded Forms",Developer
-./help/forms/developing/credentials.md,Working with Credentials,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/pdf-a-documents.md,Working with PDF/A Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/pdf-utilities.md,Working with PDF Utilities,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/xmp-utilities.md,Working with XMP Utilities,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/preparing-aem-forms-backup.md,Preparing AEM Forms for Backup,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/programmatically-endpoints.md,Programmatically Managing Endpoints,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/programmatically-preferences-nodes.md,Programmatically managing the PreferencesNodes,"Experience Manager, Experience Manager Forms","Adaptive Forms, APIs & Integrations",Developer
-./help/forms/developing/protecting-documents-policies.md,Protecting Documents with Policies,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
-./help/forms/developing/validate-ddx-document-using-web.md,Validate a DDX document using theweb service API,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services, APIs & Integrations",Developer
+./help/forms/developing/aem-forms-repository.md,Working with AEM Forms Repository,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/barcoded-forms.md,Working with barcoded forms,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations,Barcoded Forms",Developer
+./help/forms/developing/credentials.md,Working with Credentials,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/pdf-a-documents.md,Working with PDF/A Documents,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/pdf-utilities.md,Working with PDF Utilities,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/xmp-utilities.md,Working with XMP Utilities,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/preparing-aem-forms-backup.md,Preparing AEM Forms for Backup,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/programmatically-endpoints.md,Programmatically Managing Endpoints,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/programmatically-preferences-nodes.md,Programmatically managing the PreferencesNodes,"Experience Manager, Experience Manager Forms","Adaptive Forms,APIs & Integrations",Developer
+./help/forms/developing/protecting-documents-policies.md,Protecting Documents with Policies,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
+./help/forms/developing/validate-ddx-document-using-web.md,Validate a DDX document using theweb service API,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services,APIs & Integrations",Developer
 ./help/forms/using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md,Unable to use Experience Manager Forms with certain versions of Oracle JDK,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/using/additional-steps-to-use-email-with-attachments.md,Additional Steps to get Email with Attachments,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/disable-uac-for-pdfgconfiguration.md,Disable UAC for PDFG Configuration applicable to both JEE and OSGI,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services","User, Developer"
-./help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md,"Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer, or Apple Safari","Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services","User, Developer"
+./help/forms/using/disable-uac-for-pdfgconfiguration.md,Disable UAC for PDFG Configuration applicable to both JEE and OSGI,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services","User, Developer"
+./help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md,"Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer, or Apple Safari","Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services","User, Developer"
 ./help/forms/using/restore-crx-repository.md,Unable to restore corrupt CRX repository applicable to JEE cluster server,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/aem-service-pack-installation-solution.md,CRX/bundle and Start page service unavailable errors once latest 6.5.15.0 service pack is installed,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on JEE, AEM Forms on OSGi","User, Developer"
-./help/forms/using/linux-jboss-installation-issue-on-sp15.md,AEM Forms JEE 6.5.15.0 service pack installation issue on JBoss® Linux® environment,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on JEE","User, Developer"
+./help/forms/using/aem-service-pack-installation-solution.md,CRX/bundle and Start page service unavailable errors once latest 6.5.15.0 service pack is installed,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi","User, Developer"
+./help/forms/using/linux-jboss-installation-issue-on-sp15.md,AEM Forms JEE 6.5.15.0 service pack installation issue on JBoss® Linux® environment,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on JEE","User, Developer"
 ./help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md,AEM Forms Server starts processing the documents even before all the services are up and running.,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md,"Connection issues with Output, Forms, and (Document of Record) DoR Services","Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services",Admin
+./help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md,"Connection issues with Output, Forms, and (Document of Record) DoR Services","Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services",Admin
 ./help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md,Mitigating Struts 2 Vulnerabilities for Experience Manager Forms on JEE,"Experience Manager, Experience Manager Forms",Adaptive Forms,Admin
-./help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md,Failure to backup database during upgrade to 6.5.12.0 for MySQL.,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on JEE","User, Developer"
-./help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md,PDF generation fails to print a large number of PDFs with WorkBench,"Experience Manager, Experience Manager Forms","Adaptive Forms,  Document Services","User, Developer"
-./help/forms/using/restart-aem-sdk.md,How to restart AEM SDK?,"Experience Manager, Experience Manager Forms","Adaptive Forms, AEM Forms on JEE, AEM Forms on OSGi","Admin, Developer, User"
+./help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md,Failure to backup database during upgrade to 6.5.12.0 for MySQL.,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on JEE","User, Developer"
+./help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md,PDF generation fails to print a large number of PDFs with WorkBench,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Services","User, Developer"
+./help/forms/using/restart-aem-sdk.md,How to restart AEM SDK?,"Experience Manager, Experience Manager Forms","Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi","Admin, Developer, User"
 ./help/forms/developing/building-xml.md,How to use the execute script service in AEM Forms on JEE Workbench to build XML data?,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/developing/compressing-decompressing-custom-dsc.md,Compress and decompress files using a AEM Forms on JEE Custom DSC,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
 ./help/forms/developing/configure-server-cluster.md,How to configure and troubleshoot an AEM Forms on JEE server cluster,"Experience Manager, Experience Manager Forms",Adaptive Forms,"User, Developer"
-./help/forms/developing/hashing-forms.md,How to generate and work with hashes in dynamic PDF forms?,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Security","User, Developer"
-./help/forms/developing/passing-credentials.md,Pass credentials using WS-security headers,"Experience Manager, Experience Manager Forms","Adaptive Forms, Document Security","User, Developer"
+./help/forms/developing/hashing-forms.md,How to generate and work with hashes in dynamic PDF forms?,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
+./help/forms/developing/passing-credentials.md,Pass credentials using WS-security headers,"Experience Manager, Experience Manager Forms","Adaptive Forms,Document Security","User, Developer"
 ./help/commerce/cif/introduction.md,Introduction and overview,"Experience Manager,Commerce",Commerce Integration Framework,"Admin, Developer"
 ./help/commerce/cif/changes.md,Notable changes of the Commerce Integration Framework (CIF) add-on,"Experience Manager,Commerce",Commerce Integration Framework,"Admin, Developer"
 ./help/commerce/cif/integrating/magento.md,AEM and Adobe Commerce Integration using Commerce Integration Framework,"Experience Manager,Commerce",Commerce Integration Framework,"Admin, Developer"
