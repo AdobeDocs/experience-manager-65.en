@@ -249,9 +249,9 @@ The following settings are available for the Generate PDF service.
 
 **Use WebCapture (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all HTML to PDF conversions. This can improve the quality of the PDF files produced from HTML, though performance may be slightly lower. The default value is false.
 
-**Primary converter for HTML to PDF conversions:**: The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, WebCapture (Windows only), and WebToPDF. This setting allows user to select the primary route to convert HTML to PDF. By default, the WebToPDF route is selected.
+**Primary converter for HTML to PDF conversions:** The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, WebCapture (Windows only), and WebToPDF. This setting allows user to select the primary route to convert HTML to PDF. By default, the WebToPDF route is selected.
 
-**Fallback converter for HTML to PDF conversions:**: Specify the route for HTML to PDF conversions if the primary route fails in AEM Forms Server. By default, the WebCapture (Windows only) route is selected.
+**Fallback converter for HTML to PDF conversions:** Specify the route for HTML to PDF conversions if the primary route fails in AEM Forms Server. By default, the WebCapture (Windows only) route is selected.
 
 **Use Acrobat Image Conversion (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all Image to PDF conversions. This setting is useful only if the default pure Java conversion mechanism is unable to convert a significant proportion of the input images successfully. The default value is false.
 
