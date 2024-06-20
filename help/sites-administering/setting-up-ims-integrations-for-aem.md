@@ -1,6 +1,8 @@
 ---
 title: Setting Up IMS Integrations for AEM
 description: Learn how to set up IMS integrations for AEM
+feature: Security
+role: Admin
 exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
 ---
 # Setting Up IMS Integrations for AEM {#setting-up-ims-integrations-for-aem}
