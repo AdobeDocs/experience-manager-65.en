@@ -1,14 +1,10 @@
 ---
 title: Displaying components based on the template used
-
 description: When you create a form, learn how you can enable components in the sidebar based on the template selected.
-
-
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 content-type: reference
-
 docset: aem65
 exl-id: 1fc56829-db81-4450-b1d8-b4a31110199e
 solution: Experience Manager, Experience Manager Forms

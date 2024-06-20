@@ -1,14 +1,10 @@
 ---
 title: Creating and configuring groups
-
 description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

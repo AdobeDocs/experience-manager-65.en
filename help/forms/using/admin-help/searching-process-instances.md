@@ -1,16 +1,13 @@
 ---
 title: Searching for process instances
-
 description: Use the Process Search page to enter search criteria for finding a process instance.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Searching for process instances{#searching-for-process-instances}

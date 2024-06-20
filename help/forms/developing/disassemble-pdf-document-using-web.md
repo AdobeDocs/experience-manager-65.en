@@ -12,6 +12,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Developer
 exl-id: de2f90ad-5dea-40a0-8c6d-d6b08228310d
 solution: Experience Manager, Experience Manager Forms
+
 ---
 # Disassemble a PDF document using the web service API {#disassemble-a-pdf-document-usingthe-web-service-api} 
 

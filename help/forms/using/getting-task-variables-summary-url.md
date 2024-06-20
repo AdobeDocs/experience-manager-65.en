@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Getting Task Variables in Summary URL {#getting-task-variables-in-summary-url}

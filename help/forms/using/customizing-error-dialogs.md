@@ -1,15 +1,12 @@
 ---
 title: Customizing error dialogs
-
 description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Customizing error dialogs {#customizing-error-dialogs}

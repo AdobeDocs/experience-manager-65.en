@@ -10,6 +10,7 @@ docset: aem65
 role: Admin,User
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 ---
 # Migrate AEM Forms assets and documents{#migrate-aem-forms-assets-and-documents}
 

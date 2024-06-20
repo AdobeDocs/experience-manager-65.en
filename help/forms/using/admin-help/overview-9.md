@@ -1,16 +1,13 @@
 ---
 title: Overview of Forms workflow
-
 description: Forms workflow lets users design, manage, and optimize human-centric processes. Using forms workflow, users can also manage automated business-process applications that connect systems and people.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 68a9d95a-d51c-4a97-ae36-d4cb16c6fac0
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Overview of Forms workflow {#overview-of-forms-workflow}

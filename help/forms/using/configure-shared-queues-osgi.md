@@ -1,13 +1,12 @@
 ---
 title: Configure shared queues
-
 description: Learn how to use shared queues for Forms-centric workflows on AEM Forms on OSGi.
-
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, OSGI
 role: Admin, User, Developer
 ---
 # Share and request access to Inbox items of a user {#share-and-request-access}
