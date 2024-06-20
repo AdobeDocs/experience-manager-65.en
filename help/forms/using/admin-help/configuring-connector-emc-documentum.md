@@ -7,7 +7,6 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Data Connectors
 role: User, Developer
 ---
 # Configuring Connector for EMC Documentum {#configuring-connector-for-emc-documentum}

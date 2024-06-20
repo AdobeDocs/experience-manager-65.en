@@ -13,7 +13,7 @@ topic-tags: operations
 role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,  Document Services, API
+
 ---
 # Creating PDF Documents with Submitted XML Data {#creating-pdf-documents-with-submittedxml-data} 
 

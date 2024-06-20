@@ -13,7 +13,7 @@ topic-tags: operations
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,  Document Services, API
+
 ---
 # Dynamically Creating DDX Documents {#dynamically-creating-ddx-documents} 
 

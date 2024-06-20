@@ -13,7 +13,7 @@ topic-tags: operations
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,  Document Services, API
+
 ---
 # Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments} 
 

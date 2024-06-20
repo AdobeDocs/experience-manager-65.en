@@ -11,7 +11,6 @@ topic-tags: develop
 role: Developer
 exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, API
 ---
 # Application Manager Service JavaAPI Quick Start (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 

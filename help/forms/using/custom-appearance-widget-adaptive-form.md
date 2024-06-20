@@ -7,7 +7,6 @@ topic-tags: customization
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Foundation Component 
 role: User, Developer
 ---
 # Create custom appearances for adaptive form fields{#create-custom-appearances-for-adaptive-form-fields}

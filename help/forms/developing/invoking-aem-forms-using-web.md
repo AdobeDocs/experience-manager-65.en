@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, API
+
 ---
 # Invoking AEM Forms using Web Services {#invoking-aem-forms-using-web-services} 
 
