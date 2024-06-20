@@ -219,7 +219,7 @@ The following settings are available for the Encryption service.
 >
 >Use simple authentication (user name and password) only when the connection is protected via SSL (using LDAPS).
 
-**Compatibility Mode:**
+<!-- **Compatibility Mode:**-->
 
 ## FTP service settings {#ftp-service-settings}
 
