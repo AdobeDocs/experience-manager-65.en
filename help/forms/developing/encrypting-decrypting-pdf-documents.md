@@ -165,6 +165,7 @@ Encrypt a PDF document with a password by using the Encryption API (Java):
 
 [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
+
 [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Encrypting a PDF document using the web service API {#encrypting-a-pdf-document-using-the-web-service-api}
