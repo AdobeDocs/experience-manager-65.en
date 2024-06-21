@@ -2,7 +2,7 @@
 title: Troubleshooting Article to Resolve the Issue When the PaperCapture Service Fails to Perform OCR (Optical Character Recognition) Operations on PDFs.
 description: Learn the steps to resolve the issue where the PaperCapture service fails to perform OCR (Optical Character Recognition) operations on PDFs.
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User, Developer
 ---
 
