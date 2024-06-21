@@ -4,8 +4,8 @@ description: Learn the steps to resolve the issue where the PaperCapture service
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
 ---
-
 # PaperCature Service fails to perform OCR on PDFs
 
 ## Issue
@@ -27,5 +27,3 @@ After upgrading to AEM Forms Service Pack 6.5.21.0, the `PaperCapture` service f
     `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
 1. Replace the existing contents of the `PaperCaptureSvc` folder with the copied content.
 1. [Restart the AEM instance](/help/forms/using/restart-aem-sdk.md).
-
-
