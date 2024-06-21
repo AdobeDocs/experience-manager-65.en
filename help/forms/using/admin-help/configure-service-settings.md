@@ -254,9 +254,9 @@ The following settings are available for the Generate PDF service.
 
 **Fallback converter for HTML to PDF conversions:** Specify the converter for HTML to PDF conversions if the primary converter fails. By default, the WebCapture (Windows only) is selected.
 
-**Use Acrobat Image Conversion (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all Image to PDF conversions. This setting is useful only if the default pure Java conversion mechanism is unable to convert a significant proportion of the input images successfully. The default value is false.
+**Use Acrobat Image Conversion (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat for all Image to PDF conversions. This setting is useful only if the default pure Java conversion mechanism is unable to convert a significant proportion of the input images successfully. The default value is false.
 
-**Enable Acrobat-based AutoCAD Conversions (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all DWG to PDF conversions. This setting is useful only if AutoCAD is not installed on the server or the AutoCAD conversion mechanism is unable to convert files successfully.
+**Enable Acrobat-based AutoCAD Conversions (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat for all DWG to PDF conversions. This setting is useful only if AutoCAD is not installed on the server or the AutoCAD conversion mechanism is unable to convert files successfully.
 
 **Regular Expressions For Finding Out Prohibited Special&#xA;Characters In User Name (Windows Only):** Specifies characters that interfere with the Export PDF and Optimize PDF operations when the characters appear in a user's name.
 
