@@ -4,6 +4,7 @@ description: Learn the steps to resolve the issue where the PaperCapture service
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
 ---
 
 # PaperCature service fails to perform OCRs operation on PDFs
@@ -32,4 +33,3 @@ After upgrading to AEM Forms Service Pack 6.5.21.0, the `PaperCapture` service f
     >[!NOTE]
     >
     > It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
-
