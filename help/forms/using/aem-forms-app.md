@@ -1,16 +1,13 @@
 ---
 title: AEM Forms app
-
 description: AEM Forms app enables your field workers to use adaptive forms on their mobile devices.
-
-
 contentOwner: sashanka
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User, Developer
 ---
 # Introduction to AEM Forms app {#aem-forms-app}

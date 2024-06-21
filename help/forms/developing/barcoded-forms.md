@@ -12,6 +12,7 @@ topic-tags: operations
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 solution: Experience Manager, Experience Manager Forms
+
 ---
 # Working with barcoded forms {#working-with-barcoded-forms} 
 

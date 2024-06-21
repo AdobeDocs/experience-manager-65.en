@@ -1,16 +1,13 @@
 ---
 title: Configure the LDAP bind password
-
 description: Learn how to configure the bind password field before you import the configuration file into another system.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Configure the LDAP bind password{#configure-the-ldap-bind-password}

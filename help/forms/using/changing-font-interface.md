@@ -1,17 +1,14 @@
 ---
 title: Changing the font on the interface
-
 description: How to change the fonts on the user interface selectively.
-
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 docset: aem65
 exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Changing the font on the interface{#changing-the-font-on-the-interface}

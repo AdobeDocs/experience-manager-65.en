@@ -13,6 +13,7 @@ topic-tags: operations
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
 solution: Experience Manager, Experience Manager Forms
+
 ---
 # Optimizing the Performance of the Forms Service {#optimizing-the-performance-of-theforms-service} 
 

@@ -1,16 +1,13 @@
 ---
 title: Features of AEM Forms workspace not available in Flex workspace
-
 description: AEM Forms workspace innovates beyond Flex-based Workspace. Read about differences in features and capabilities.
-
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 exl-id: 4235e0ce-f1c4-432e-b486-2d72c390f320
 solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms, Adaptive Forms
 role: Admin, User, Developer
 ---
 # Features of AEM Forms workspace not available in Flex workspace {#features-of-aem-forms-workspace-not-available-in-flex-workspace}

@@ -1,16 +1,13 @@
 ---
 title: Recovering the AEM forms data
-
 description: This document describes the steps required to recover the AEM forms data.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Recovering the AEM forms data {#recovering-the-aem-forms-data}

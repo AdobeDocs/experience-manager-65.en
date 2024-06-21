@@ -7,6 +7,7 @@ topic-tags: publish
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workflow
 role: User, Developer
 ---
 # Logging in AEM Forms workflows{#logging-in-aem-forms-workflows}

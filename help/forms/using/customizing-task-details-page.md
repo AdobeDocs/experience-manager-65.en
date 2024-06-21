@@ -1,15 +1,12 @@
 ---
 title: Customizing the task details page
-
 description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 exl-id: 48c24442-22d2-4d1a-9462-0aba78340281
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Customizing the task details page {#customizing-the-task-details-page}

@@ -7,6 +7,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
 solution: Experience Manager, Experience Manager Forms
+feature: Document Security
 role: User, Developer
 ---
 # Configuring SSL for WebSphere Application Server {#configuring-ssl-for-websphere-application-server}
