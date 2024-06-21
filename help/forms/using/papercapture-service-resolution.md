@@ -26,6 +26,6 @@ After upgrading to AEM Forms Service Pack 6.5.21.0, the `PaperCapture` service f
     * **OSGi setup**:  
     `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
 1. Replace the existing contents of the `PaperCaptureSvc` folder with the copied content.
-1. Restart the AEM instance.
+1. [Restart the AEM instance](/help/forms/using/restart-aem-sdk.md).
 
 
