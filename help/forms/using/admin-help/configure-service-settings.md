@@ -272,18 +272,17 @@ The following settings are available for the Generate PDF service.
 
 **Retry Logic for Native Conversions** Governs PDF generation retries if the first attempt at conversion has failed:
 
-<!--
-**No retry**
+* **No retry**
 
-Do not retry the PDF conversion if the first conversion attempt has failed
+   Do not retry the PDF conversion if the first conversion attempt has failed
 
-**Retry**
+* **Retry**
 
-Retry PDF conversion regardless of whether the timeout threshold has been reached. The default timeout duration for the first attempt is 270s.
+   Retry PDF conversion regardless of whether the timeout threshold has been reached. The default timeout duration for the first attempt is 270s.
 
-**Retry if time permits**
+* **Retry if time permits**
 
-Retry PDF conversion if the time consumed for the first conversion attempt was less than the specified timeout duration. For example, if the timeout duration is 270s and the first attempt consumed 200s, PDF Generator will reattempt the conversion. If the first attempt itself consumed 270s, conversion will not be retried. -->
+   Retry PDF conversion if the time consumed for the first conversion attempt was less than the specified timeout duration. For example, if the timeout duration is 270s and the first attempt consumed 200s, PDF Generator will reattempt the conversion. If the first attempt itself consumed 270s, conversion will not be retried. 
 
 ## Guides ES4 Utilities service settings {#guides-es4-utilities-service-settings}
 
