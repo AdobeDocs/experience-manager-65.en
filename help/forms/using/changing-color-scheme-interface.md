@@ -1,16 +1,13 @@
 ---
 title: Changing the color scheme of the interface
-
 description: How to modify the color scheme of AEM Forms workspace user interface portions selectively.
-
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 exl-id: e0a261a2-518b-4984-a5b5-24f0b9222e24
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Changing the color scheme of the interface {#changing-the-color-scheme-of-the-interface}

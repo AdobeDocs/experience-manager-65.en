@@ -8,6 +8,7 @@ noindex: true
 role: Admin,User
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 ---
 # Adobe Experience Manager (AEM) desktop app for AEM Forms {#aem-desktop-app-for-aem-forms}
 

@@ -1,9 +1,6 @@
 ---
 title: Adding, enabling, modifying, or removing endpoints
-
 description: Learn how to add, enable, modify and remove endpoints.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
@@ -11,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Adding, enabling, modifying, or removing endpoints {#adding-enabling-modifying-or-removing-endpoints}

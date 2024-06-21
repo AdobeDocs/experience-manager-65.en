@@ -1,16 +1,13 @@
 ---
 title: Configuring directories
-
 description: Learn how to add, edit and delete directories and configure user management to use virtual list view.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Configuring directories {#configuring-directories}

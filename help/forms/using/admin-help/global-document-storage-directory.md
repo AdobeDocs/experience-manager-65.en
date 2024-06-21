@@ -1,16 +1,13 @@
 ---
 title: Global document storage directory
-
 description: The global document storage (GDS) directory is a directory used to store long-lived files that are used within a process.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Global document storage directory{#global-document-storage-directory}

@@ -1,16 +1,13 @@
 ---
 title: Backbone interaction
-
 description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 docset: aem65
 exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
 solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms, Adaptive Forms
 role: Admin, User, Developer
 ---
 # Backbone interaction{#backbone-interaction}
