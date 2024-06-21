@@ -247,11 +247,11 @@ The following settings are available for the Generate PDF service.
 
 **File type Settings:** The name of the pre-configured File Type Setting to apply to a conversion job, if these settings are not specified as a part of the API invocation parameters. The file type settings are configured in administration console, by clicking Services > PDF Generator> File Type Settings.
 
-**Use WebCapture (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all HTML to PDF conversions. This can improve the quality of the PDF files produced from HTML, though performance may be slightly lower. The default value is false.
+**Use WebCapture (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat for all HTML to PDF conversions. This can improve the quality of the PDF files produced from HTML, though performance may be slightly lower. The default value is false.
 
-**Primary converter for HTML to PDF conversions:** The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, WebCapture (Windows only), and WebToPDF. This setting allows user to select the primary route to convert HTML to PDF. By default, the WebToPDF route is selected.
+**Primary converter for HTML to PDF conversions:** The Generate PDF service provides multiple routes to convert HTML files to PDF documents: Webkit, WebCapture (Windows only), and WebToPDF. This setting allows user to select the primary converter to convert HTML to PDF. By default, the WebToPDF route is selected.
 
-**Fallback converter for HTML to PDF conversions:** Specify the route for HTML to PDF conversions if the primary route fails in AEM Forms Server. By default, the WebCapture (Windows only) route is selected.
+**Fallback converter for HTML to PDF conversions:** Specify the route for HTML to PDF conversions if the primary route fails. By default, the WebCapture (Windows only) route is selected.
 
 **Use Acrobat Image Conversion (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all Image to PDF conversions. This setting is useful only if the default pure Java conversion mechanism is unable to convert a significant proportion of the input images successfully. The default value is false.
 
@@ -265,7 +265,7 @@ The following settings are available for the Generate PDF service.
 
 **OCR Pool Size:** The pool size of the PaperCaptureService that PDF Generator uses for OCR. The default value of this setting (recommended for single-processor systems) is 3, which you can increase on multi-processor systems. This setting is valid only on Windows systems.
 
-**ImageToPDF max pages in memory for tiff conversions:** This setting determines the maximum number of pages from TIFF (Tagged Image File Format) documents that are processed simultaneously in memory when converting them into PDF format. The default value of this setting (recommended for single-processor systems) is 500, which you can increase on multi-processor systems.
+**ImageToPDF max pages in memory for TIFF conversions:** This setting determines the maximum number of pages from a TIFF image that can remain in memory before being flushed to disk during conversion to PDF. The default value for this setting is 500, which can be increased if additional memory is allocated to the ImageToPDF converter process.
 
 **Fallback Font Family For HTML To PDF Conversions:** The name of the font family to use in PDF documents when the font used in the original HTML is not available to the AEM Forms Server. Specify a font family if you expect to convert HTML pages that use unavailable fonts. For example, pages authored in regional languages could use unavailable fonts.
 
