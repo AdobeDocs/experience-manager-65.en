@@ -4,7 +4,7 @@ description: AEM Forms support custom functions which allow users to create and 
 keywords: Add a custom function, use a custom function, create a custom function, use custom function in rule editor.
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms, Core Components
+feature: "Adaptive Forms,Core Components"
 exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
 role: Admin, User, Developer
 ---

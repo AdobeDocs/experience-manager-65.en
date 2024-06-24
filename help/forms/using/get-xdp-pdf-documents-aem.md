@@ -13,7 +13,7 @@ docset: aem65
 role: Admin,User
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Foundation Components
+feature: "Adaptive Forms,Foundation Components"
 ---
 # Getting XDP and PDF documents in AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 

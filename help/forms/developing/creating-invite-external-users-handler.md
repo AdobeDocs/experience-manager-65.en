@@ -4,6 +4,7 @@ description: Learn how to create an Invite External Users Handler. It enables th
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms,APIs & Integrations"
 ---
 # Creating an Invite External Users Handler {#create-invite-external-users-handler} 
 

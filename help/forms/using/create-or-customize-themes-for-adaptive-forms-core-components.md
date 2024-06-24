@@ -6,7 +6,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-feature: Adaptive Forms, Core Components
+feature: "Adaptive Forms,Core Components"
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
 ---

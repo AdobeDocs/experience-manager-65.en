@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 
 docset: aem65
 
-feature: HTML5 Forms
+feature: "HTML5 Forms,Mobile Forms"
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer

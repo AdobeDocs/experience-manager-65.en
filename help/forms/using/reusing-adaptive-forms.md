@@ -4,7 +4,7 @@ description: You can reuse an existing adaptive form to create new adaptive form
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
-feature: Adaptive Forms, Foundation Components
+feature: "Adaptive Forms,Foundation Components"
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

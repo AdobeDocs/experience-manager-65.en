@@ -13,7 +13,7 @@ topic-tags: operations
 role: Developer
 exl-id: 2caaca74-640a-4257-a81b-3e8b295cd182
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,  Document Services
+feature: "Adaptive Forms,Document Services"
 ---
 # Assembling Encrypted PDF Documents {#assembling-encrypted-pdf-documents} 
 

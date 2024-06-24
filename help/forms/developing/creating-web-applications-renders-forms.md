@@ -14,6 +14,7 @@ role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 solution: Experience Manager, Experience Manager Forms
 
+feature: "Adaptive Forms,Workbench,APIs & Integrations"
 ---
 # Creating Web Applications that Renders Forms {#creating-web-applications-thatrenders-forms} 
 

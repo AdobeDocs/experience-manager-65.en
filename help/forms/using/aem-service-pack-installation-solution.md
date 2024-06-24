@@ -6,6 +6,7 @@ exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 solution: Experience Manager, Experience Manager Forms
 
 role: User, Developer
+feature: "Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi"
 ---
 # Service unavailable error after installing AEM (6.5.15.0) service pack {#steps-to-resolve-error-after-installing-service-pack}
 

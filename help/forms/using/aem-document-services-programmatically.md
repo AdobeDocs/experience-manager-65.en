@@ -4,7 +4,7 @@ description: Learn how to use Document Services APIs to Digitally sign, encrypt,
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-feature: Document Services
+feature: "Document Services,APIs & Integrations"
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3

@@ -8,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+feature: Adaptive Forms
 ---
 # Configuring Connector for Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
 

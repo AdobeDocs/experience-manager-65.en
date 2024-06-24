@@ -11,7 +11,7 @@ topic-tags: designer
 
 docset: aem65
 
-feature: Forms Designer
+feature: "Forms Designer,Designer"
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

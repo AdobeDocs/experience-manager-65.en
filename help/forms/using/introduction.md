@@ -5,7 +5,7 @@ description: HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AE
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: "HTML5 Forms,Mobile Forms"
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer

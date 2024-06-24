@@ -8,6 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
 solution: Experience Manager, Experience Manager Forms
+feature: "Adaptive Forms,APIs & Integrations"
 ---
 # Assembler Service Java&trade; API QuickStart(SOAP) {#assembler-service-java-api-quickstart-soap}
 

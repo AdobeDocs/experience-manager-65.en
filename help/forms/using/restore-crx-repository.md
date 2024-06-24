@@ -3,7 +3,7 @@ title: Unable to restore corrupt CRX repository applicable to JEE cluster server
 description: Learn the steps on how you can restore a CRX repository that is corrupt.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Unable to restore corrupt CRX repository {#unable-to-restore-corrupt-crx-repository}

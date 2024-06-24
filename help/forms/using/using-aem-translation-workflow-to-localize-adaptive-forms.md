@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: develop
 
 noindex: true
-feature: Adaptive Forms, Foundation Components
+feature: "Adaptive Forms,Foundation Components"
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

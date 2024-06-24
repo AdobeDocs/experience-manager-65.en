@@ -9,6 +9,7 @@ role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
 
+feature: "Adaptive Forms,APIs & Integrations"
 ---
 # Invoking AEM Forms using the Java API {#invoking-aem-forms-using-the-javaapi} 
 

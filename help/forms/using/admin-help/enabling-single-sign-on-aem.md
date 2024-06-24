@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms
+feature: "Adaptive Forms,Document Security"
 role: User, Developer
 ---
 # Enabling single sign-on in AEM forms{#enabling-single-sign-on-in-aem-forms}

@@ -12,7 +12,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin,User
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, OSGI
+feature: "Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade"
 ---
 # Upgrade to AEM 6.5 Forms on OSGi {#upgrade-to-aem-forms-osgi}
 

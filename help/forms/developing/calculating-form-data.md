@@ -10,6 +10,7 @@ role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
 solution: Experience Manager, Experience Manager Forms
 
+feature: "Adaptive Forms,APIs & Integrations"
 ---
 # Calculating Form Data {#calculating-form-data} 
 

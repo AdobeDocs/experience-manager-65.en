@@ -3,7 +3,7 @@ title: Pass credentials using WS-security headers
 description: Learn how to pass credentials using WS-security headers
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Document Security
+feature: "Adaptive Forms,Document Security"
 role: User, Developer
 ---
 # Passing credentials using WS-Security headers {#using-execute-script-service-aem-forms-jee-workbench}

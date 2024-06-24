@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 solution: Experience Manager, Experience Manager Forms
-feature: Security, Adaptive Forms
+feature: "Document Security,Adaptive Forms"
 ---
 # Document Security | Handling user data {#document-security-handling-user-data}
 

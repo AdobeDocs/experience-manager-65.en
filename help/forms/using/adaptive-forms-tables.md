@@ -4,7 +4,7 @@ description: The Table component in AEM Forms lets you create tables in adaptive
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: "Adaptive Forms,Foundation Components"
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

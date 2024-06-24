@@ -4,7 +4,7 @@ description: You can preview your forms before publishing or activating to ensur
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-feature: Adaptive Forms, Foundation Components
+feature: "Adaptive Forms,Foundation Components"
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

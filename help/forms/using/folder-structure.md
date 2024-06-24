@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: a4c1d3d8-477e-4edf-9dde-4ef9c766be5a
 solution: Experience Manager, Experience Manager Forms
-feature: HTML5 Forms, Adaptive Forms
+feature: "HTML5 Forms,Adaptive Forms,Mobile Forms"
 role: Admin, User, Developer
 ---
 # Understanding the folder structure {#understanding-the-folder-structure}
