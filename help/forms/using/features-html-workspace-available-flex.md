@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 4235e0ce-f1c4-432e-b486-2d72c390f320
 solution: Experience Manager, Experience Manager Forms
-feature: "HTML5 Forms,Adaptive Forms,Mobile Forms"
+feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 ---
 # Features of AEM Forms workspace not available in Flex workspace {#features-of-aem-forms-workspace-not-available-in-flex-workspace}

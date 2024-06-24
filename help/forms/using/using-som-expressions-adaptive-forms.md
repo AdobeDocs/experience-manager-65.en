@@ -3,7 +3,7 @@ title: Using SOM expressions in adaptive forms
 description: Learn how to extract SOM expressions of a panel of an adaptive form.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-feature: "Adaptive Forms,Foundation Components"
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 exl-id: 6a158e18-b7d0-45fb-b4fc-4770e66982b4

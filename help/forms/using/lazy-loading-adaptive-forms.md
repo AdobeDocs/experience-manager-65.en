@@ -4,7 +4,7 @@ description: Lazy loading significantly improves the performance of large and co
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: "Adaptive Forms,Foundation Components"
+feature: Adaptive Forms,Foundation Components
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

@@ -9,7 +9,7 @@ role: Developer
 exl-id: dc99dd4d-fce9-4ec5-9b51-661d37a21559
 solution: Experience Manager, Experience Manager Forms
 
-feature: "Adaptive Forms,APIs & Integrations,AEM Forms on JEE"
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 ---
 # Output Service Java API Quick Start (SOAP) {#output-service-java-api-quick-start-soap}
 

@@ -10,7 +10,7 @@ role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
 
-feature: "Adaptive Forms,Document Services,APIs & Integrations"
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Rendering Forms as HTML {#rendering-forms-as-html} 
 

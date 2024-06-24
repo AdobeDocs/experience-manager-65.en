@@ -13,7 +13,7 @@ role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 solution: Experience Manager, Experience Manager Forms
 
-feature: "Adaptive Forms,APIs & Integrations"
+feature: Adaptive Forms,APIs & Integrations
 ---
 # Working with AEM Forms Repository {#working-with-aem-forms-repository} 
 

@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,APIs & Integrations,AEM Forms on JEE"
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 ---
 # Distiller Service Java&trade; API Quick Start (SOAP) {#distiller-service-java-api-quickstart-soap}
 

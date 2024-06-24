@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-feature: "Adaptive Forms,Document Services,Reader Extensions"
+feature: Adaptive Forms,Document Services,Reader Extensions
 ---
 # Configuring Acrobat Reader DC Extensions for data capture {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 

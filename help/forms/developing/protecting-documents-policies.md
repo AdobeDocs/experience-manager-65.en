@@ -9,7 +9,7 @@ role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
 
-feature: "Adaptive Forms,Document Services,APIs & Integrations"
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Protecting Documents with Policies {#protecting-documents-with-policies} 
 

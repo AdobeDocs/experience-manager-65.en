@@ -9,7 +9,7 @@ docset: aem65
 exl-id: 1fc56829-db81-4450-b1d8-b4a31110199e
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-feature: "Adaptive Forms,Foundation Component "
+feature: Adaptive Forms,Foundation Component 
 ---
 # Displaying components based on the template used{#displaying-components-based-on-the-template-used}
 

@@ -12,7 +12,7 @@ topic-tags: operations
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,Document Services,Reader Extensions"
+feature: Adaptive Forms,Document Services,Reader Extensions
 ---
 # Assigning Usage Rights {#assigning-usage-rights} 
 

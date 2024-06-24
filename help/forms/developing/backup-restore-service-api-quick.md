@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,APIs & Integrations"
+feature: Adaptive Forms,APIs & Integrations
 ---
 # Backup and Restore Service API Quick Starts {#backup-and-restore-service-apiquick-starts} 
 

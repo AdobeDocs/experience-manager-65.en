@@ -4,7 +4,7 @@ description: AEM Forms JEE 6.5.15.0 service pack  is not installed properly on t
 SEO Description: AEM Forms JEE 6.5.15.0 service pack  is not installed properly on the JBoss Linux environment.
 exl-id: 96ecbe58-a859-4432-a2d8-3d5dc0eaf989
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,AEM Forms on JEE"
+feature: Adaptive Forms,AEM Forms on JEE
 role: User, Developer
 ---
 # AEM Forms 6.5.15.0 JEE Service Pack installation issue on JBoss® environment {#aem-forms-installation-issue-environment}

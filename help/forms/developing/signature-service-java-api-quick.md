@@ -13,7 +13,7 @@ role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
 solution: Experience Manager, Experience Manager Forms
 
-feature: "Adaptive Forms,APIs & Integrations,AEM Forms on JEE"
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 ---
 # Signature Service Java API Quick Start (SOAP) {#signature-service-java-api-quickstart-soap}
 

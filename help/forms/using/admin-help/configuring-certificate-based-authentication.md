@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,Document Security"
+feature: Adaptive Forms,Document Security
 role: User, Developer
 ---
 # Configuring certificate-based authentication {#configuring-certificate-based-authentication}

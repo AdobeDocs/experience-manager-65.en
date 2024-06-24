@@ -4,7 +4,7 @@ description: Forms Designer help a user on submitting the form.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-feature: "Forms Designer,Designer"
+feature: Forms Designer,Designer
 exl-id: f962844a-f191-4505-bfc9-85c94d8faa46
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 004b8a2f-66a0-43a4-be56-7e42b703ebb2
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,Document Security"
+feature: Adaptive Forms,Document Security
 role: User, Developer
 ---
 # Specifying security settings {#specifying-security-settings}

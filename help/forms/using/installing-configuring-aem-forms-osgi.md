@@ -12,7 +12,7 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
-feature: "Adaptive Forms,AEM Forms on OSGi"
+feature: Adaptive Forms,AEM Forms on OSGi
 ---
 # Install and configure data capture capabilities{#install-and-configure-data-capture-capabilities}
 

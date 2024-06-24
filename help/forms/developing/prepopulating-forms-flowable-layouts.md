@@ -13,7 +13,7 @@ role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
 solution: Experience Manager, Experience Manager Forms
 
-feature: "Adaptive Forms,Document Services,APIs & Integrations"
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Prepopulating Forms with Flowable Layouts {#prepopulating-forms-with-flowable-layouts1}
 

@@ -6,7 +6,7 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 solution: Experience Manager, Experience Manager Forms
-feature: "Interactive Communication,AEM Forms on OSGi"
+feature: Interactive Communication,AEM Forms on OSGi
 ---
 # Installing and Configuring Forms-centric workflow on OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}
 
