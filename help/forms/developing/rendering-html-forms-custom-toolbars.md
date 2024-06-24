@@ -14,6 +14,7 @@ role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
 solution: Experience Manager, Experience Manager Forms
 
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Rendering HTML Forms with CustomToolbars {#rendering-html-forms-with-customtoolbars} 
 

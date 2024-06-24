@@ -13,6 +13,7 @@ role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
 
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Working with Credentials {#working-with-credentials} 
 

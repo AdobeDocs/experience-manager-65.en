@@ -4,6 +4,7 @@ description: Learn about using the TransactionRecorder API to record transaction
 feature: Transaction Reports
 exl-id: 33e1868a-2a7f-4785-8571-95651e661e21
 role: Admin, User, Developer
+solution: "Experience Manager, Experience Manager Forms"
 ---
 # Record a transaction for custom component APIs for AEM Forms on JEE {#record-a-transaction-for-custom-components}
 

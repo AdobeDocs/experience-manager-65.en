@@ -13,6 +13,7 @@ role: Developer
 exl-id: de2f90ad-5dea-40a0-8c6d-d6b08228310d
 solution: Experience Manager, Experience Manager Forms
 
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Disassemble a PDF document using the web service API {#disassemble-a-pdf-document-usingthe-web-service-api} 
 

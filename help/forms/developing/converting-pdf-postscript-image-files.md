@@ -9,6 +9,7 @@ role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
 solution: Experience Manager, Experience Manager Forms
 
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Converting PDF to Postscript and Image Files {#converting-pdf-to-postscript-andimage-files} 
 
