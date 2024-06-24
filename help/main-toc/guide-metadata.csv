@@ -190,7 +190,6 @@ filename,title,solution,feature,role
 ./help/sites-administering/adobeanalytics-link.md,Configuring Link Tracking for Adobe Analytics,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/adobeanalytics-mapping.md,Mapping Component Data with Adobe Analytics Properties,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/adobeanalytics-video.md,Configuring Video Tracking for Adobe Analytics,"Experience Manager, Experience Manager Sites",Integration,Admin
-./help/sites-administering/integration-analytics-ims.md,Integration with Adobe Analytics using IMS,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/scene7-http2faq.md,HTTP2 Delivery of Content FAQ,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/troubleshooting-campaignintegration.md,Troubleshooting the Adobe Campaign Classic Integration,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/sharepoint-connector-licenses.md,"SharePoint Connector Licenses, Copyright Notices, and Disclaimers","Experience Manager, Experience Manager Sites",Integration,Admin
@@ -214,7 +213,6 @@ filename,title,solution,feature,role
 ./help/sites-administering/marketing-cloud.md,Integrating with the Adobe Experience Cloud,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/target-configuring.md,Manually Configuring the Integration with Adobe Target,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/target-requirements.md,Prerequisites for Integrating with Adobe Target,"Experience Manager, Experience Manager Sites",Integration,Admin
-./help/sites-administering/integration-target-ims.md,Integration with Adobe Target using IMS,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/adobeanalytics-classifications.md,Adobe Classifications,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/integration.md,Solutions Integration,"Experience Manager, Experience Manager Sites",Integration,Admin
 ./help/sites-administering/experience-fragments-target.md,Exporting Experience Fragments to Adobe Target,"Experience Manager, Experience Manager Sites",Integration,Admin
