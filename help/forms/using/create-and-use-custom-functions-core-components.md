@@ -4,11 +4,13 @@ description: AEM Forms support custom functions which allow users to create and 
 keywords: Add a custom function, use a custom function, create a custom function, use custom function in rule editor.
 content-type: reference
 feature: Adaptive Forms, Core Components
+roles: Admin, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
 ---
 # Custom functions in Adaptive Forms Core Components
 
 This article describes creating Custom Functions with the latest Adaptive Form Core Component, which have the latest features such as:
+
 * Caching feature for Custom Functions
 * Global scope object and field objects support for Custom Functions
 * Support for modern JavaScript features like let and arrow functions (ES10 support)
