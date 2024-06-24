@@ -8,7 +8,7 @@ docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-feature: Adaptive Forms,Foundation Component 
+feature: Adaptive Forms,Foundation Components
 ---
 # Create custom appearances for adaptive form fields{#create-custom-appearances-for-adaptive-form-fields}
 

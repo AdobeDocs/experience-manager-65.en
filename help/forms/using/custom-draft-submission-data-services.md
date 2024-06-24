@@ -7,7 +7,7 @@ topic-tags: customization
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-feature: Adaptive Forms,Foundation Component 
+feature: Adaptive Forms,Foundation Components
 ---
 # Customizing Draft and Submission data services {#customizing-draft-and-submission-data-services}
 
