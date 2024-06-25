@@ -14,7 +14,7 @@ This article outlines the steps required to properly uninstall the AEM Forms add
 
 ## Pre-requisites
 
-Ensure to take backup of forms and data to avoid any data loss.
+Ensure to take backup to avoid any data loss.
 
 ## To uninstall AEM Forms Add-on Package
 
