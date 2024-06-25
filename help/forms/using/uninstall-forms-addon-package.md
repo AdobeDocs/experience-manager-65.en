@@ -30,13 +30,13 @@ To uninstall the AEM Forms Add-on Package, perform the following steps:
    1. Navigate to the `http://[host]:[port]/crx/de/index.jsp`.
    1. Go to `/libs/fd/native/install` and delete `native` folder in CRXDE.
    
-   ![Delete native node from CRX/de](/help/forms/using/assets/native-install-folder-crxde.png)
-1. Save the changes.
+      ![Delete native node from CRX/de](/help/forms/using/assets/native-install-folder-crxde.png)
+   2. Save the changes.
 
-1. **Stop the AEM Forms SDK:**
+2. **Stop the AEM Forms SDK:**
    1. Stop the AEM Forms SDK instance by using the 'Ctrl + C' command.
 
-1. **Check for the bedrock folders in crx-quickstart folder**
+3. **Check for the bedrock folders in crx-quickstart folder**
      1. Navigate to `..author\crx-quickstart` folder in the AEM Forms SDK instance.
      2. Search for folder named `bedrock`.
    If found, ensure it is deleted from the `crx-quickstart` folder in the AEM Forms SDK instance.
@@ -45,7 +45,7 @@ To uninstall the AEM Forms Add-on Package, perform the following steps:
    >
    > The `bedrock` folder is created again automatically when you restart the AEM Forms SDK instance. 
   
-1. **Restart the AEM Instance:**
+4. **Restart the AEM Instance:**
    1. Once all the previous steps are completed, [restart the AEM Forms SDK instance](/help/forms/using/restart-aem-sdk.md).
    
 Even if you can view the Adaptive Form templates and themes, and create a new Adaptive form using them, you cannot author the form.
