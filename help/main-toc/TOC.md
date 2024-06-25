@@ -872,6 +872,12 @@ user-guide-title: AEM 6.5
     + [Designer FormCalc Reference](https://www.adobe.com/go/learn_aemforms_formCalc_65)
     + [Using Scribble Signature in HTML5 forms](/help/forms/using/scribble-signature.md)
     + [Changing Page Zero content in Designer](/help/forms/using/changing-page-zero-content-designer.md)
+    + [Accessibility Best Practices](/help/forms/using/accessibility-best-practices-forms-designer.md)
+      + [Introduction](/help/forms/using/introduction-accessibility-forms-designer.md)
+      + [Best practices for creating forms](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+      + [Techniques for testing form accessibility](/help/forms/using/techniques-for-testing-form-accessibility.md)
+      + [Mapping between guidelines and best practices](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+      + [Useful links](/help/forms/using/useful-links-accessibility-forms-designer.md)
   + Customize AEM Forms {#customize-aem-forms}
     + [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md)
     + [Creating a custom adaptive form template](/help/forms/using/custom-adaptive-forms-templates.md)
