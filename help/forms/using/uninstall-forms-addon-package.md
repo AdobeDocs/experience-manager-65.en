@@ -36,7 +36,7 @@ To uninstall the AEM Forms Add-on Package, perform the following steps:
 1. **Stop the AEM Forms SDK:**
    1. Stop the AEM Forms SDK instance by using the 'Ctrl + C' command.
 
-1. **Check for the bedrock folder in crx-quickstart folder**
+1. **Check for the bedrock and install folders in crx-quickstart folder**
      1. Navigate to `..author\crx-quickstart` folder in the AEM Forms SDK instance.
      1. Search for folders named `bedrock` and `install`.
    If found, ensure they are deleted from the `crx-quickstart` folder in the AEM Forms SDK instance.
