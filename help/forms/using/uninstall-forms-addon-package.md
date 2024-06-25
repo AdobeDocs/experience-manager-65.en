@@ -4,6 +4,8 @@ description: Learn the steps to uninstall the Forms add-on package using CRX Pac
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+hide: yes
+hidefromtoc: yes
 ---
 
 # Uninstall AEM Forms Add-on Package from AEM Instance
