@@ -13,6 +13,7 @@ role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
 solution: Experience Manager, Experience Manager Forms
 
+feature: Adaptive Forms,APIs & Integrations
 ---
 # Preparing AEM Forms for Backup {#preparing-aem-forms-for-backup} 
 

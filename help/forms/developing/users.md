@@ -9,6 +9,7 @@ role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 solution: Experience Manager, Experience Manager Forms
 
+feature: Adaptive Forms
 ---
 # Managing Users {#managing-users} 
 

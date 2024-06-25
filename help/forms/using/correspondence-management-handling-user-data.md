@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms,Form Data Model
 ---
 # Correspondence Management | Handling user data {#correspondence-management-handling-user-data}
 

@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin,User
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
 ---
 # Upgrade to AEM 6.5 Forms on JEE {#upgrade-to-aem-forms-jee}
 

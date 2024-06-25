@@ -3,7 +3,7 @@ title: Prefill adaptive form fields
 description: Use existing data to prefill fields of an adaptive form.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
