@@ -24,11 +24,11 @@ To uninstall the AEM Forms Add-on Package, perform the following steps:
    
    ![Uninstall package](/help/forms/using/assets/uninstall-aem-forms-package.png)
 
-1. **Delete the install folder from CRXDE:**
+1. **Delete the native folder from CRXDE:**
    1. Navigate to the `http://[host]:[port]/crx/de/index.jsp`.
    1. Go to `/libs/fd/native/install` and delete `native` folder in CRXDE.
    
-   ![Delete install node from CRX/de](/help/forms/using/assets/native-install-folder-crxde.png)
+   ![Delete native node from CRX/de](/help/forms/using/assets/native-install-folder-crxde.png)
 
 
 1. **Stop the AEM Forms SDK:**
