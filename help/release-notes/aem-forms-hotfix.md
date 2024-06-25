@@ -35,7 +35,7 @@ This article lists the critical fixes implemented to address known issues, impro
      </td>
     <td>
     <ul>
-    <li> After upgrading to AEM Forms Service Pack 6.5.21.0, the PaperCapture service fails to perform OCR (Optical Character Recognition) operations on PDFs. To resolve the issue, refer to the <a href="/help/forms/using/papercapture-service-resolution.md"> troubleshooting</a> article.(CQDOC-21680) </li>
+    <li> After upgrading to AEM Forms Service Pack 6.5.21.0, the PaperCapture service fails to perform OCR (Optical Character Recognition) operations on PDFs. For installation instructions, refer to the <a href="/help/forms/using/papercapture-service-resolution.md"> troubleshooting</a> article.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -48,7 +48,7 @@ This article lists the critical fixes implemented to address known issues, impro
      </td>
     <td>
     <ul>
-    <li>Draft letters with XML data are getting stuck in the loading state during preview. To download and install the hotfix, refer to the<a href="#install-hotfix"> Download and install hotfix for draft letter issue</a> section.(FORMS-14521)</li>
+    <li>Draft letters with XML data are getting stuck in the loading state during preview. For downloading and installation instructions of the hotfix, refer to the<a href="#install-hotfix"> Download and install hotfix for draft letter issue</a> section.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
