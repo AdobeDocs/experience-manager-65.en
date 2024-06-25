@@ -48,7 +48,6 @@ To uninstall the AEM Forms Add-on Package, perform the following steps:
 1. **Restart the AEM Instance:**
    1. Once all the previous steps are completed, [restart the AEM Forms SDK instance](/help/forms/using/restart-aem-sdk.md).
    
-Even if you can view the Adaptive Form templates and themes, and create a new Adaptive form using them, you cannot author the form.
 
 
 
