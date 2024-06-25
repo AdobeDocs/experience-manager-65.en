@@ -10,11 +10,11 @@ hidefromtoc: yes
 
 # Uninstall AEM Forms Add-on Package from AEM Instance
 
-This article outlines the steps required to properly uninstall the AEM Forms add-on package from an AEM Forms SDK instance. Following these steps to ensure removal of the Forms add-on package, preventing potential issues with your AEM environment.
+This article outlines the steps required to properly uninstall the AEM Forms add-on package from an AEM Forms SDK instance. Follow these steps to ensure removal of the Forms add-on package, preventing potential issues with your AEM environment.
 
-## Pre-requisites
+## Pre-requisite
 
-Ensure to take backup of forms and data to avoid any data loss.
+Ensure to take backup to avoid any data loss.
 
 ## To uninstall AEM Forms Add-on Package
 
