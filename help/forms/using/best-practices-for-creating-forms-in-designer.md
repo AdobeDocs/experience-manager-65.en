@@ -241,30 +241,26 @@ You can also dynamically populate a form control’s text alternative such as it
 The schema you connect to could have the following defined for a Tool Tip:
 
 ```html
-
 <form>
 <tooltip dp_tt="tooltip1"/>
 </form>
-
 ``` 
 The data file you point to could have the following defined for a tool tip:
 
 ```html
-
 <form>
 <tooltip dp_tt="Quantité - Entrez un nombre inférieur ou égal à 100."/>
 </form>
-
 ``` 
 
-1.	In the Object Library palette, click the Standard category and drag an object onto the form design. For example, insert a Text Field object.
-1.	(Optional) In the Object palette, click the Field tab and type a caption for the object in the Caption box. For example, type Quantité.
-1.	In the Accessibility palette, click the Tool Tip active label.
-1.	Select the data connection.
-1.	Click the triangle beside the Binding box and select a binding. For example, select tooltip > @dp_tt.
+1. In the Object Library palette, click the Standard category and drag an object onto the form design. For example, insert a Text Field object.
+1. (Optional) In the Object palette, click the Field tab and type a caption for the object in the Caption box. For example, type Quantité.
+1. In the Accessibility palette, click the Tool Tip active label.
+1. Select the data connection.
+1. Click the triangle beside the Binding box and select a binding. For example, select tooltip > @dp_tt.
 The following string appears in the Binding box: $record.tooltip.dp_tt Tip: You could type this string into the Items box instead of selecting it.
-1.	Click OK.
-1.	View the form in the Preview PDF tab.
+1. Click OK.
+1. View the form in the Preview PDF tab.
 
 ### Providing link text
 
@@ -318,8 +314,6 @@ For simple forms (that is, forms with a left-to-right, top-to-bottom layout), th
 * Click Show Order in the Tab Order palette.
 
 All objects will be displayed with a number in the upper right corner, indicating the object’s place in the default tab order. The interactive objects in this sequence form the tab order. Figure 7 shows the reading order visualization of a basic form.
-
-/help/forms/using/assets/
 
 ![Visualization of the default reading order for a typical order form](/help/forms/using/assets/image-7.png)
 
@@ -597,8 +591,7 @@ Follow these steps to create a heading in your form:
 1.	Identify the start of each logical segment of your form using static text labels,
 1.	For each label and select one of the heading options as the Role in the Accessibility palette. The different heading levels (1 to 6) enable you to create a heading structure in your form. Start with level 1, and then use level 2 and so on for nested subsections.
 
-Most screen readers allow users to quickly navigate between heading elements based on their level.
-Figure 16 shows a form that is divided into smaller segments using headings. In this example, the following heading structure is used:
+Most screen readers allow users to quickly navigate between heading elements based on their level. Figure 16 shows a form that is divided into smaller segments using headings. In this example, the following heading structure is used:
 
 * Heading Level 1: Product Request
     * Heading Level 2: Order Details
@@ -629,7 +622,7 @@ In LiveCycle Designer you create lists using subforms with the following steps:
 1.	Select each nested subform within the List subform, and set its Role to List Item.
 >[!NOTE] 
 > A List Item role can only be assigned to a subform that is contained in a subform that has a List role specified. You cannot define a table or table row as a list or list item; however, a list item can contain a table.
- 
+
 **Related checkpoints**
 * Section 508 §11934.22
     * (o) A method shall be provided that permits users to skip repetitive navigation links.
@@ -684,7 +677,7 @@ For Flash based media, consult [link]() for information on providing captions.
 
 **Related checkpoints**:
 * Section 508 §1194.22
-    * (b) Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation.
+   * (b) Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation.
 * WCAG 1.0
     * 1.1 Provide a text equivalent for every non-text element (e.g., via "alt", "longdesc", or in element content). This includes: images, graphical representations of text (including symbols), image map regions, animations (e.g., animated GIFs), applets and programmatic objects, ascii art, frames, scripts, images used as list bullets, spacers, graphical buttons, sounds (played with or without user interaction), stand-alone audio files, audio tracks of video, and video (P1).
     * 1.3 Until user agents can automatically read aloud the text equivalent of a visual track, provide an auditory description of the important information of the visual track of a multimedia presentation (P1).
