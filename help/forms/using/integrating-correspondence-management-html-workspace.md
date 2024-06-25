@@ -6,7 +6,7 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
 solution: Experience Manager, Experience Manager Forms
-feature: HTML5 Forms, Adaptive Forms
+feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 ---
 # Integrating third-party applications in AEM Forms workspace{#integrating-third-party-applications-in-aem-forms-workspace}

@@ -2,7 +2,7 @@
 title: Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer, or Apple Safari
 description: Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer, or Apple Safari
 
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms,Document Services
 exl-id: fdd15315-e0d6-4d80-acb4-2e0ecec716c4
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

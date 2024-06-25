@@ -8,6 +8,7 @@ docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+feature: Adaptive Forms,Foundation Components,Form Data Model
 ---
 # Dynamically populating drop-down lists {#dynamically-populating-drop-down-lists}
 

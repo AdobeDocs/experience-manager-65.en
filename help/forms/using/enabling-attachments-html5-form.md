@@ -5,7 +5,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer

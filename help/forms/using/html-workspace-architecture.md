@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: c6f216d4-781c-4356-b9f0-3324903a28e7
 solution: Experience Manager, Experience Manager Forms
-feature: HTML5 Forms, Adaptive Forms
+feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 ---
 # AEM Forms Workspace Architecture {#aem-forms-workspace-architecture}

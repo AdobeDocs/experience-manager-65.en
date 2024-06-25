@@ -4,7 +4,7 @@ description: Use Adobe Experience Manager Forms ConvertPDF service to convert PD
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-feature: Document Services
+feature: Document Services,Assembler
 exl-id: 50c7a385-b56d-4573-932f-1f44eec948f8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
