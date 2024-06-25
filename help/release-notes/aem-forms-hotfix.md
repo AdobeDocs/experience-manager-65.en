@@ -48,7 +48,7 @@ This article lists the critical fixes implemented to address known issues, impro
      </td>
     <td>
     <ul>
-    <li>Draft letters with XML data are getting stuck in the loading state during preview. To download and install the hotfix, refer to<a href="#install-hotfix"> Download and install hotfix for draft letter issue</a> section.(FORMS-14521)</li>
+    <li>Draft letters with XML data are getting stuck in the loading state during preview. To download and install the hotfix, refer to the<a href="#install-hotfix"> Download and install hotfix for draft letter issue</a> section.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
