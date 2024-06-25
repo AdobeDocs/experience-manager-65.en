@@ -3,7 +3,7 @@ title: Adaptive form fragments
 description: Adaptive forms provide a mechanism to create a form segment, such as a panel or a group of fields, as use it in any adaptive form. You can also save an existing panel as fragment.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031

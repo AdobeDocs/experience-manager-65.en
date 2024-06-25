@@ -8,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 50f0c963-8007-4e2a-aa73-d99b97d9a1aa
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+feature: Adaptive Forms
 ---
 # Configuring Connector for IBM&reg; Content Manager{#configuring-connector-for-ibm-content-manager}
 

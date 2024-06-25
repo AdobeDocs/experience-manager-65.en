@@ -15,7 +15,7 @@ docset: aem65
 role: Developer
 exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,  Document Services
+feature: Adaptive Forms,Document Services
 ---
 # Assembling Multiple XDP Fragments{#assembling-multiple-xdp-fragments}
 

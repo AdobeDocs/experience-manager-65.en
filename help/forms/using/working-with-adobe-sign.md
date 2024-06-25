@@ -4,7 +4,7 @@ description: Enable e-signature (Adobe Sign) workflows for an adaptive form to a
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-feature: Adaptive Forms, Foundation Components, Acrobat Sign
+feature: Adaptive Forms,Foundation Components,Acrobat Sign
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
