@@ -5,6 +5,7 @@ docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
+feature: Adaptive Forms
 ---
 # Analytics using [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 

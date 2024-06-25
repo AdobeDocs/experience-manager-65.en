@@ -3,7 +3,7 @@ title: Customizing error messages for HTML5 forms
 description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer

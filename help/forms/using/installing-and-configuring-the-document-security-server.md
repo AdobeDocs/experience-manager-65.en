@@ -9,7 +9,7 @@ contentOwner: khsingh
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
 solution: Experience Manager, Experience Manager Forms
-feature: Interactive Communication
+feature: Interactive Communication,Document Security
 ---
 # Installing and configuring the document security server {#installing-and-configuring-the-document-security-server}
 

@@ -5,7 +5,7 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
