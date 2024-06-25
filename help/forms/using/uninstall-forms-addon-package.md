@@ -31,14 +31,14 @@ To uninstall the AEM Forms Add-on Package, perform the following steps:
    1. Go to `/libs/fd/native/install` and delete `native` folder in CRXDE.
    
       ![Delete native node from CRX/de](/help/forms/using/assets/native-install-folder-crxde.png)
-   2. Save the changes.
+   1. Save the changes.
 
-2. **Stop the AEM Forms SDK:**
+1. **Stop the AEM Forms SDK:**
    1. Stop the AEM Forms SDK instance by using the 'Ctrl + C' command.
 
-3. **Check for the bedrock folder in crx-quickstart folder**
+1. **Check for the bedrock folder in crx-quickstart folder**
      1. Navigate to `..author\crx-quickstart` folder in the AEM Forms SDK instance.
-     2. Search for folder named `bedrock`.
+     1. Search for folder named `bedrock`.
    If found, ensure it is deleted from the `crx-quickstart` folder in the AEM Forms SDK instance.
 
    >[!NOTE]
