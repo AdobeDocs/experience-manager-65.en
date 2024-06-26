@@ -7,7 +7,7 @@ role: User, Developer
 ---
 # Best practices for creating forms in forms designer
 
-LiveCycle Designer enables you to build rich form content and comply with Section 508 guidelines. This guide contains an overview of the best practices for creating an accessible form, and guidelines for implementing these best practices using LiveCycle Designer. The following best practices are covered:
+LiveCycle Designer enables you to build rich form content and comply with Section 508 guidelines. This guide contains an overview of the best practices for creating an accessible form and guidelines for implementing these best practices using LiveCycle Designer. The following best practices are covered:
 
 1. [Keep forms simple and easy to use](#keep-simple)
 1. [Configure form properties to generate accessibility information](#configure-form-properties)
@@ -258,6 +258,7 @@ The data file you point to could have the following defined for a tool tip:
 1. In the Accessibility palette, click the Tool Tip active label.
 1. Select the data connection.
 1. Click the triangle beside the Binding box and select a binding. For example, select tooltip > @dp_tt.
+
 The following string appears in the Binding box: $record.tooltip.dp_tt Tip: You could type this string into the Items box instead of selecting it.
 1. Click OK.
 1. View the form in the Preview PDF tab.
@@ -415,7 +416,7 @@ If you decide that you do not want the customized tab order on your form, you ca
 * WCAG 1.0
     * 9.2 Ensure that any element that has its own interface can be operated in a device- independent manner.
 * WCAG 2.0
-	* 1.3.2 Meaningful Sequence: When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined. (Level A)
+    * 1.3.2 Meaningful Sequence: When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined. (Level A)
     * 2.1.1 Keyboard: All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. (Level A)
     * 2.1.3 Keyboard (No Exception): All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes. (Level AAA)
     * 2.4.3 Focus Order: If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. (Level A)
@@ -588,8 +589,8 @@ Figure 15: **Specifying a heading role in the Accessibility palette**
 
 Follow these steps to create a heading in your form:
 
-1.	Identify the start of each logical segment of your form using static text labels,
-1.	For each label and select one of the heading options as the Role in the Accessibility palette. The different heading levels (1 to 6) enable you to create a heading structure in your form. Start with level 1, and then use level 2 and so on for nested subsections.
+1. Identify the start of each logical segment of your form using static text labels,
+1. For each label and select one of the heading options as the Role in the Accessibility palette. The different heading levels (1 to 6) enable you to create a heading structure in your form. Start with level 1, and then use level 2 and so on for nested subsections.
 
 Most screen readers allow users to quickly navigate between heading elements based on their level. Figure 16 shows a form that is divided into smaller segments using headings. In this example, the following heading structure is used:
 
@@ -617,9 +618,10 @@ Sometimes it may also be useful to add list content to your form. Lists are usef
 
 In LiveCycle Designer you create lists using subforms with the following steps:
 
-1.	Select a subform that contains the content that will be marked as list items.
-1.	In the Accessibility palette, select List as the Role.
-1.	Select each nested subform within the List subform, and set its Role to List Item.
+1. Select a subform that contains the content that will be marked as list items.
+1. In the Accessibility palette, select List as the Role.
+1. Select each nested subform within the List subform, and set its Role to List Item.
+
 >[!NOTE] 
 > A List Item role can only be assigned to a subform that is contained in a subform that has a List role specified. You cannot define a table or table row as a list or list item; however, a list item can contain a table.
 
@@ -702,18 +704,18 @@ If the text (or alternative text) in your forms is presented in more than one la
 In LiveCycle Designer, setting the primary language is accomplished by setting the Locale property of the form and the Locale property for the top-level subform. To identify changes to the primary language, change the Locale property for any object that uses a language other than the form’s language.
 
 To set the Locale property of a form:
-1.	Choose File > Form Properties and select the Default tab
-2.	Select the appropriate language for the Form Locale (see Figure 17)
-3.	Click OK
+1. Choose File > Form Properties and select the Default tab
+2. Select the appropriate language for the Form Locale (see Figure 17)
+3. Click OK
  
 ![Changing the Form Locale on the Form Properties dialog box](/help/forms/using/assets/image-17.png)
 
 Figure 17: **Changing the Form Locale on the Form Properties dialog box**
 
 To set Local property of the top-level subform or an object that requires a different language:
-1.	Select the top-level subform or object in design view
-1.	Display the Object palette by choosing Window > Object
-1.	In the Object palette, select the Field tab, and in the Locale list select the language to be used for the object (see Figure 18). When applying different locale options to individual objects, keep in mind that the objects that are within tables and subforms automatically receive the same locale setting as the table and subform object.
+1. Select the top-level subform or object in design view
+1. Display the Object palette by choosing Window > Object
+1. In the Object palette, select the Field tab, and in the Locale list select the language to be used for the object (see Figure 18). When applying different locale options to individual objects, keep in mind that the objects that are within tables and subforms automatically receive the same locale setting as the table and subform object.
  
 ![Changing an object’s locale](/help/forms/using/assets/image-18.png)
 
