@@ -149,7 +149,7 @@ Use a unique icon for your package. Do not reuse an icon used by Adobe.
 
 Filters identify the repository nodes to include in the package. A **Filter Definition** specifies the following information:
 
-* The **Root Path** of the content to include
+* The **Root path** of the content to include
 * **Rules** that include or exclude specific nodes below the root path
 
 Add rules using the **+** button. Remove rules using the **-** button.
@@ -162,18 +162,22 @@ You can define one or more filter definitions for a package. Use more than one f
 
 ![Filters tab](assets/edit-filter.png)
 
-When creating filters, you can define a path or use a regular expression to specify all the nodes that you want to include or exclude.
+When creating rules, you define a regular expression (also known as regex, regexp or rational expression) to specify all the nodes that you want to include or exclude.
 
 |Rule Type|Description|
 |---|---|
-|include|Including a directory will include that directory and all the files and folders in that directory (that is, the entire subtree) but **will not** include other files or folders from under the specified root path.|
-|exclude|Excluding a directory will exclude that directory and all files and folders in that directory (that is, the entire subtree).|
+|include|Include will include all the files and folders in the specified directory that match the regular expression. Include **will not** include other files or folders from under the specified root path.|
+|exclude|Exclude will exclude all the files and folders that match the regular expression.|
 
 Package filters are most often defined when you first [create the package.](#creating-a-new-package) However they can also be edited later, after which the package should be rebuilt to update its content based on the new filter definitions.
 
 >[!TIP]
 >
 >One package can contain multiple filter definitions so that nodes from different locations can easily be combined into one package.
+
+>[!TIP]
+>
+>For background information see the [Apache Jackrabbit - Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html) documentation.
 
 ### Dependencies {#dependencies}
 
