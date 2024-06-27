@@ -94,7 +94,7 @@ The following tables list each item together with:
   <tr>
    <td>contributor</td>
    <td>Group</td>
-   <td><p>Basic privileges that allow the user to write content (as in, functionality only).</p> <p>Does not allocate any privileges to the /content tree. Must be allocated for the individual groups or users.</p> </td>
+   <td><p>Basic privileges that allow the user to write content (as in, only the privileges required for the basic functionality).</p> <p>Does not allocate any privileges for access to the /content tree itself. These must be specifically allocated for the individual groups or users.</p> </td>
    <td> </td>
   </tr>
   <tr>
