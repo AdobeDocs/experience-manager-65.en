@@ -202,7 +202,7 @@ To make radio buttons accessible using the button captions:
     1. In the Object palette, click the Field tab. In the Item area, double-click the item and type a meaningful value for the selected radio button. For example for the first button in a group of payment methods, you might type Cash.
     1. Repeat steps 3 and 4 for each radio button in the exclusion group.
 
-###	Labeling custom controls
+### Labeling custom controls
 
 It is strongly recommended to use standard components rather than custom components, as they will provide the assistive technology with the correct cues and information by default. However, if custom controls are used, consider the following:
 * Announce the state of checkboxes and radio buttons.
@@ -240,17 +240,24 @@ The following table provides overview of label placement rules for commonly used
 You can also dynamically populate a form control’s text alternative such as its Tool Tip, with a value from a data source. For example, you can display a custom Tool Tip for an object that is in French.
 The schema you connect to could have the following defined for a Tool Tip:
 
+
 ```html
+
 <form>
 <tooltip dp_tt="tooltip1"/>
 </form>
+
 ```
+
+
 The data file you point to could have the following defined for a tool tip:
 
 ```html
+
 <form>
 <tooltip dp_tt="Quantité - Entrez un nombre inférieur ou égal à 100."/>
 </form>
+
 ```
 
 1. In the Object Library palette, click the Standard category and drag an object onto the form design. For example, insert a Text Field object.
@@ -664,7 +671,7 @@ When designing scripts for accessibility, consider these general guidelines:
     * 6.2 Ensure that equivalents for dynamic content are updated when the dynamic content changes.
     * 6.3 Ensure that pages are usable when scripts, applets, or other programmatic objects are turned off or not supported. If this is not possible, provide equivalent information on an alternative accessible page.
     * 6.5 Ensure that dynamic content is accessible or provide an alternative presentation or page (P2).
-    * 8.1 Make programmatic elements such as scripts and applets directly accessible or compatible with assistive technologies [Priority 1 if functionality is important and not presented elsewhere, otherwise (P2)
+    * 8.1 Make programmatic elements such as scripts and applets directly accessible or compatible with assistive technologies [Priority 1 if functionality is important and not presented elsewhere], otherwise (P2).
     * 9.3 For scripts, specify logical event handlers rather than device-dependent event handlers (P2).
     * 10.1 Until user agents allow users to turn off spawned windows, do not cause pop-ups or other windows to appear and do not change the current window without informing the user.
 * WCAG 2.0
@@ -675,7 +682,7 @@ When designing scripts for accessibility, consider these general guidelines:
 ## Ensure all audio and video content is accessible{#ensure-audio-video-accessible}
 
 If your forms incorporate audio or video content, including audio and video clips, you must ensure that this content is accessible. Specifically, make sure that video clips incorporated into forms contain captions (sometimes called subtitles) for deaf and hard of hearing users and video descriptions for blind users. For audio files that are not synchronized with video content, a simple transcript is sufficient.
-For Flash based media, consult [link]() for information on providing captions.
+For Flash based media, consult [link](/help/forms/using/best-practices-for-creating-forms-in-designer.md) for information on providing captions.
 
 **Related checkpoints**:
 * Section 508 §1194.22
