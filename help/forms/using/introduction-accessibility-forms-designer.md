@@ -4,6 +4,8 @@ description: Learn to know about the best accessibility practices for using form
 feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+hide: yes
+hidefromtoc: yes
 ---
 # Introduction to best accessibility practices in Forms Designer
 
