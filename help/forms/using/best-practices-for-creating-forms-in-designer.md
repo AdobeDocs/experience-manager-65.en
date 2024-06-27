@@ -244,14 +244,14 @@ The schema you connect to could have the following defined for a Tool Tip:
 <form>
 <tooltip dp_tt="tooltip1"/>
 </form>
-``` 
+```
 The data file you point to could have the following defined for a tool tip:
 
 ```html
 <form>
 <tooltip dp_tt="Quantité - Entrez un nombre inférieur ou égal à 100."/>
 </form>
-``` 
+```
 
 1. In the Object Library palette, click the Standard category and drag an object onto the form design. For example, insert a Text Field object.
 1. (Optional) In the Object palette, click the Field tab and type a caption for the object in the Caption box. For example, type Quantité.

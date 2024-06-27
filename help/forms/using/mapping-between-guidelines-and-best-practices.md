@@ -176,7 +176,7 @@ The following sections map Section 508 and WCAG guidelines to the best practices
 | 3.2.4 [Consistent Identification](http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html) | <ul><li>2.3 Choose the right controls</li><li>2.5 Provide proper labels for form controls</li> | |
 | 3.2.5 [Change on Request](http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html) | 2.11 Avoid disruptive scripting | |
 | 3.3 [Input Assistance](http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html) | | |
-| 3.3.1 [Error Identification]() |  |LiveCycle Designer provides tools to mark form fields as required and to perform form input validation. |
+| 3.3.1 [Error Identification](http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html) |  |LiveCycle Designer provides tools to mark form fields as required and to perform form input validation. |
 | 3.3.2 [Labels or Instructions](http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html) | 2.5 Provide proper labels for form controls | |
 | 3.3.3 [Error Suggestion](http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html) |  |LiveCycle Designer provides tools to mark form fields as required and to perform form input validation. |
 | 3.3.4 [Error Prevention (Legal, Financial, Data)](http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html) | No specific LiveCycle techniques | |
