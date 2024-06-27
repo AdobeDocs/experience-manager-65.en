@@ -1,6 +1,6 @@
 ---
 title: Techniques for testing form accessibility
-description: Learn to know the Techniques for testing form accessibility in forms designer
+description: Learn to know the techniques for testing form accessibility in forms designer
 feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer

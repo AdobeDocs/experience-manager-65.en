@@ -237,7 +237,7 @@ The following table provides overview of label placement rules for commonly used
 | Button | The caption is automatically placed on the button and does not have to be positioned manually. Ensure that the button’s purpose is properly described by the caption text. |
 
 
-### Dynamically populating a Tool Tip or Custom Screen Reader Text.
+### Dynamically populating a Tool Tip or Custom Screen Reader Text
 
 You can also dynamically populate a form control’s text alternative such as its Tool Tip, with a value from a data source. For example, you can display a custom Tool Tip for an object that is in French.
 The schema you connect to could have the following defined for a Tool Tip:
