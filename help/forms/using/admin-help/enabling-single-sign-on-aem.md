@@ -176,14 +176,14 @@ Click to know the steps to [assign roles to users and groups](/help/forms/using/
 
 1. Log in to your AEM Forms on JEE Environment.
 1. In the administration console, Click Settings > User Management > Domain Management.
-1. Select your domain configuration, for example, LDAP, and Click on it. You find all the created users and groups, in the Directory. If required, you can create new users or groups.
+1. Select your domain configuration, for example, LDAP, and Click on it. You find all the created users and groups in the Directory. If required, you can create new users or groups.
    ![Domain managment page](/help/forms/using/assets/domain-mgmt-page.png)
 1. Click Authentication, On the new page select an Authentication Provider, such as LDAP.
-1. Navigate to the Domain Management page, select LDAP, and Click **Syn Now**, to synchronize the directory with the authentication scheme you configured, for the AEM access.
+1. Navigate to the Domain Management page, select LDAP, and Click **Syn Now**, to synchronize the directory with the authentication scheme you configured, for AEM access.
    ![Synchronise ldap](/help/forms/using/assets/sync-ldap.png)
 1. Go to User Management, and click Users and Groups.
-1. Search for users or group/s with the name, as shown in the image below.
-   ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/using/assets/search-user-group.png)
+1. Search for users or groups with their names, as shown in the image below.
+   ![Search user group](/help/forms/using/assets/search-user-group.png)
 1. Assign the roles to the users or groups as required.
    ![User role assignment](/help/forms/using/assets/user-role-assign.png)
 
