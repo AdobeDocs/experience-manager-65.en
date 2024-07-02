@@ -12,19 +12,23 @@ role: User, Developer
 ---
 # Enabling single sign-on in AEM forms{#enabling-single-sign-on-in-aem-forms}
 
-AEM forms provides two ways to enable single sign-on (SSO) - HTTP headers and SPNEGO.
+AEM forms provide two ways to enable single sign-on (SSO) - HTTP headers and SPNEGO.
 
 When SSO is implemented, the AEM forms user login pages are not required and do not appear if the user is already authenticated through their company portal.
 
 If AEM forms cannot authenticate a user by using either of these methods, the user is redirected to a login page.
 
+* [Enable SSO using HTTP headers](#enable-sso-using-http-headers)
+* [Enable SSO using SPNEGO](#enable-sso-using-spnego)
+* [Assign roles to users and groups](#assign-roles-to-users-groups)
+
 ## Enable SSO using HTTP headers {#enable-sso-using-http-headers}
 
-You can use the Portal Configuration page to enable single sign-on (SSO) between applications and any application that supports conveying the identity over HTTP header. When SSO is implemented, the AEM forms user login pages are not required and do not appear if the user is already authenticated through their company portal.
+You can use the Portal Configuration page to enable single sign-on (SSO) between applications and any application that supports conveying the identity over an HTTP header. When SSO is implemented, the AEM forms user login pages are not required and do not appear if the user is already authenticated through their company portal.
 
 You can also enable SSO by using SPNEGO. (See [Enable SSO using SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
-1. In administration console, click Settings &gt; User Management &gt; Configuration &gt; Configure Portal Attributes.
+1. In the administration console, click Settings &gt; User Management &gt; Configuration &gt; Configure Portal Attributes.
 1. Select Yes to enable SSO. If you select No, the remaining settings on the page are unavailable.
 1. Set the remaining options on the page as required and click OK:
 
@@ -46,6 +50,9 @@ You can also enable SSO by using SPNEGO. (See [Enable SSO using SPNEGO](enabling
 
 For the steps to configure allowed referers, see [Configure allowed referers](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
 
+### Assign roles to users and groups ()
+Click to know the steps to [assign roles to users and groups](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+
 ## Enable SSO using SPNEGO {#enable-sso-using-spnego}
 
 You can use Simple and Protected GSSAPI Negotiation Mechanism (SPNEGO) to enable single sign-on (SSO) when using Active Directory as your LDAP server in a Windows environment. When SSO is enabled, the AEM forms user login pages are not required and do not appear.
@@ -54,7 +61,7 @@ You can also enable SSO by using HTTP headers. (See [Enable SSO using HTTP heade
 
 >[!NOTE]
 >
->AEM Forms on JEE does not support configuring SSO using Kerberos/SPNEGO in a multiple child domain environments .
+>AEM Forms on JEE does not support configuring SSO using Kerberos/SPNEGO in a multiple child domain environments.
 
 1. Decide which domain to use to enable SSO. The AEM Forms Server and the users must be part of the same Windows domain or trusted domain.
 1. In Active Directory, create a user who represents the AEM Forms Server. (See [Create a user account](enabling-single-sign-on-aem.md#create-a-user-account).) If you are configuring more than one domain to use SPNEGO, ensure that the passwords for each of these users is different. If the passwords are not different, SPNEGO SSO does not work.
@@ -135,7 +142,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 ### Configuring SPNEGO client browser settings {#configuring-spnego-client-browser-settings}
 
-For SPNEGO-based authentication to work, the client computer must be part of the domain the user account is created in. You must also configure the client browser to allow SPNEGO-based authentication. As well, the site that requires SPNEGO- based authentication must be a trusted site.
+For SPNEGO-based authentication to work, the client computer must be part of the domain the user account is created in. You must also configure the client browser to allow SPNEGO-based authentication. As well, the site that requires SPNEGO-based authentication must be a trusted site.
 
 If the server is accessed by using the computer name, such as https://lcserver:8080, no settings are required for Internet Explorer. If you enter a URL that does not contain any dots ("."), Internet Explorer treats the site as a local intranet site. If you are using a fully qualified name for the site, the site must be added as a trusted site.
 
@@ -161,3 +168,21 @@ If the server is accessed by using the computer name, such as https://lcserver:8
    `lcserver.um.lc.com` - Configures Firefox to allow SPNEGO for your specific server only. Do not start this value with a dot (".").
 
 1. Test the configuration by accessing the application. The welcome page for the target application should appear.
+
+Click to know the steps to [assign roles to users and groups](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+
+## Assign roles to users and groups {#assign-roles-to-users-groups}
+
+1. Log in to your AEM Forms on JEE Environment.
+1. In the administration console, Click Settings > User Management > Domain Management.
+1. Select your domain configuration, for example, LDAP, and Click on it. You find all the created users and groups, in the Directory. If required, you can create new users or groups.
+   ![Domain managment page](/help/forms/using/assets/domain-mgmt-page.png)
+1. Click Authentication, On the new page select an Authentication Provider, such as LDAP.
+1. Navigate to the Domain Management page, select LDAP, and Click **Syn Now**, to synchronize the directory with the authentication scheme you configured, for the AEM access.
+   ![Synchronise ldap](/help/forms/using/assets/sync-ldap.png)
+1. Go to User Management, and click Users and Groups.
+1. Search for users or group/s with the name, as shown in the image below.
+   ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/using/assets/search-user-group.png)
+1. Assign the roles to the users or groups as required.
+   ![User role assignment](/help/forms/using/assets/user-role-assign.png)
+
