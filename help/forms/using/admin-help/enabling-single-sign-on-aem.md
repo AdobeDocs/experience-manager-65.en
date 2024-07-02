@@ -50,7 +50,8 @@ You can also enable SSO by using SPNEGO. (See [Enable SSO using SPNEGO](enabling
 
 For the steps to configure allowed referers, see [Configure allowed referers](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
 
-### Assign roles to users and groups ()
+### Assign roles to users and groups 
+
 Click to know the steps to [assign roles to users and groups](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
 
 ## Enable SSO using SPNEGO {#enable-sso-using-spnego}
