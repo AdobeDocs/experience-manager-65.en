@@ -1,16 +1,13 @@
 ---
 title: Managing certificates
-
 description: Learn how to import and export a certificate and edit its trust settings.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms,Document Security
 role: User, Developer
 ---
 # Managing certificates {#managing-certificates}

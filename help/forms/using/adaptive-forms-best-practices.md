@@ -3,7 +3,7 @@ title: Best practices for working with adaptive forms
 description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components, Core Components
+feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
@@ -57,6 +57,7 @@ For more information, see [How to Build AEM Projects using Apache Maven](/help/s
 Once you have your AEM project set up, define strategy for authoring and customizing adaptive forms templates and components.
 
 * An adaptive form template is a specialized AEM page that defines structure and the header-footer information of an adaptive form. A template has preconfigured layouts, styles, and basic structure for an adaptive form. AEM Forms provides out-of-the-box templates and components that you can use to author adaptive forms. However, you can create custom templates and components as per your requirements. It is recommended to gather requirements for additional templates and components you will need in your adaptive forms. For details, see [Customizing adaptive forms and components](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
+* It is recommended to upload the form packages using the Form Manager user interface instead of the CRX Package Manager user interface, as uploading packages via CRX Package Manager may sometimes lead to anomalies.
 * AEM Forms lets you create adaptive forms based on the following form models. The form models act as interface for data exchange between a form and AEM system and provide an XML-based structure for data flow within and outside an adaptive form. Also, the form models impose rules and constraints on adaptive forms in the form of schema and XFA constraints.
 
     * **None**: Adaptive forms created with this option do not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.

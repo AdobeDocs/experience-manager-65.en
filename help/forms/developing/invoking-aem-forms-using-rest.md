@@ -8,6 +8,8 @@ topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
 solution: Experience Manager, Experience Manager Forms
+
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 ---
 # Invoking AEM Forms using REST Requests {#invoking-aem-forms-using-rest-requests} 
 

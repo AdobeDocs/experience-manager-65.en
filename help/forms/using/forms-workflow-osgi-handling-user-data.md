@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms,AEM Forms on OSGi
 ---
 # Forms-centric workflows on OSGi | Handling user data {#forms-centric-workflows-on-osgi-handling-user-data}
 

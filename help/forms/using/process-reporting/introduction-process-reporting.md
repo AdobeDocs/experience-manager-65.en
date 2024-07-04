@@ -1,16 +1,13 @@
 ---
 title: Introduction to Process Reporting
-
 description: Introduction and key capabilities of AEM Forms on JEE Process Reporting
-
-
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 docset: aem65
 exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Introduction to Process Reporting{#introduction-to-process-reporting}

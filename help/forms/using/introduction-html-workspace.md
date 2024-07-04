@@ -1,17 +1,14 @@
 ---
 title: Introduction to AEM Forms workspace
-
 description: Increase org efficiency and create paperless office by business process automation using LiveCycle AEM Forms workspace.
-
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 docset: aem65
 exl-id: e6759ffd-cf63-4684-a1d7-208fbe55aaed
 solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 ---
 # Introduction to AEM Forms workspace{#introduction-to-aem-forms-workspace}

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
@@ -171,7 +171,6 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
    Answer: HTML5 forms do not support display patterns for floating fields.
 
 1. What is the format of the Date field in HTML5 Forms?
-  
   Answer: The Date field accepts the ISO format, YYYY-MM-DD. If you specify a date in some other format, the Date Field does not accept the formatting until the user tabs out of the field.
 
 ### Scripting {#scripting}

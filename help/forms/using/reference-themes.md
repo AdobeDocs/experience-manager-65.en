@@ -1,15 +1,12 @@
 ---
 title: Reference Themes
-
 description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
-
-
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 ---
 # Reference Themes{#reference-themes}

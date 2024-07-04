@@ -8,6 +8,7 @@ docset: aem65
 role: Admin,User
 exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 ---
 # Configuring AEM DS settings{#configuring-aem-ds-settings}
 

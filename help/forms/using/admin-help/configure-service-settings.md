@@ -7,6 +7,7 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms,Workbench
 role: User, Developer
 ---
 # Configure service settings {#configure-service-settings}
@@ -219,7 +220,7 @@ The following settings are available for the Encryption service.
 >
 >Use simple authentication (user name and password) only when the connection is protected via SSL (using LDAPS).
 
-**Compatibility Mode:**
+<!-- **Compatibility Mode:**-->
 
 ## FTP service settings {#ftp-service-settings}
 
@@ -247,11 +248,15 @@ The following settings are available for the Generate PDF service.
 
 **File type Settings:** The name of the pre-configured File Type Setting to apply to a conversion job, if these settings are not specified as a part of the API invocation parameters. The file type settings are configured in administration console, by clicking Services > PDF Generator> File Type Settings.
 
-**Use Acrobat WebCapture (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all HTML to PDF conversions. This can improve the quality of the PDF files produced from HTML, though performance may be slightly lower. The default value is false.
+**Use WebCapture (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat for all HTML to PDF conversions. This can improve the quality of the PDF files produced from HTML, though performance may be slightly lower. The default value is false.
 
-**Use Acrobat Image Conversion (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all Image to PDF conversions. This setting is useful only if the default pure Java conversion mechanism is unable to convert a significant proportion of the input images successfully. The default value is false.
+**Primary converter for HTML to PDF conversions:** The Generate PDF service provides multiple routes to convert HTML files to PDF documents: Webkit, WebCapture (Windows only), and WebToPDF. This setting allows user to select the primary converter to convert HTML to PDF. By default, the WebToPDF is selected.
 
-**Enable Acrobat-based AutoCAD Conversions (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat X Pro for all DWG to PDF conversions. This setting is useful only if AutoCAD is not installed on the server or the AutoCAD conversion mechanism is unable to convert files successfully.
+**Fallback converter for HTML to PDF conversions:** Specify the converter for HTML to PDF conversions if the primary converter fails. By default, the WebCapture (Windows only) is selected.
+
+**Use Acrobat Image Conversion (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat for all Image to PDF conversions. This setting is useful only if the default pure Java conversion mechanism is unable to convert a significant proportion of the input images successfully. The default value is false.
+
+**Enable Acrobat-based AutoCAD Conversions (Windows Only):** When this setting is true, the Generate PDF service uses Acrobat for all DWG to PDF conversions. This setting is useful only if AutoCAD is not installed on the server or the AutoCAD conversion mechanism is unable to convert files successfully.
 
 **Regular Expressions For Finding Out Prohibited Special&#xA;Characters In User Name (Windows Only):** Specifies characters that interfere with the Export PDF and Optimize PDF operations when the characters appear in a user's name.
 
@@ -261,21 +266,23 @@ The following settings are available for the Generate PDF service.
 
 **OCR Pool Size:** The pool size of the PaperCaptureService that PDF Generator uses for OCR. The default value of this setting (recommended for single-processor systems) is 3, which you can increase on multi-processor systems. This setting is valid only on Windows systems.
 
+**ImageToPDF max pages in memory for TIFF conversions:** This setting determines the maximum number of pages from a TIFF image that can remain in memory before being flushed to disk during conversion to PDF. The default value for this setting is 500, which can be increased if additional memory is allocated to the ImageToPDF converter process.
+
 **Fallback Font Family For HTML To PDF Conversions:** The name of the font family to use in PDF documents when the font used in the original HTML is not available to the AEM Forms Server. Specify a font family if you expect to convert HTML pages that use unavailable fonts. For example, pages authored in regional languages could use unavailable fonts.
 
 **Retry Logic for Native Conversions** Governs PDF generation retries if the first attempt at conversion has failed:
 
-**No retry**
+* **No retry**
 
-Do not retry the PDF conversion if the first conversion attempt has failed
+   Do not retry the PDF conversion if the first conversion attempt has failed
 
-**Retry**
+* **Retry**
 
-Retry PDF conversion regardless of whether the timeout threshold has been reached. The default timeout duration for the first attempt is 270s.
+   Retry PDF conversion regardless of whether the timeout threshold has been reached. The default timeout duration for the first attempt is 270s.
 
-**Retry if time permits**
+* **Retry if time permits**
 
-Retry PDF conversion if the time consumed for the first conversion attempt was less than the specified timeout duration. For example, if the timeout duration is 270s and the first attempt consumed 200s, PDF Generator will reattempt the conversion. If the first attempt itself consumed 270s, conversion will not be retried.
+   Retry PDF conversion if the time consumed for the first conversion attempt was less than the specified timeout duration. For example, if the timeout duration is 270s and the first attempt consumed 200s, PDF Generator will reattempt the conversion. If the first attempt itself consumed 270s, conversion will not be retried. 
 
 ## Guides ES4 Utilities service settings {#guides-es4-utilities-service-settings}
 

@@ -8,6 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 62489194-82ca-44f6-b5be-4411c95f6f80
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 ---
 # Performing Service Operations Using APIs {#performing-service-operations-using-apis} 
 

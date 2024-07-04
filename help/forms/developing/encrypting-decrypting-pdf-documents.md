@@ -12,6 +12,8 @@ topic-tags: operations
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
+
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Encrypting and Decrypting PDF Documents {#encrypting-and-decrypting-pdf-documents} 
 
@@ -163,6 +165,7 @@ Encrypt a PDF document with a password by using the Encryption API (Java):
 [Quick Start (SOAP mode): Encrypting a PDF document using the Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
 [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+
 
 [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 

@@ -8,6 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01e966f6-a650-4565-80d1-e2297f25da5c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+feature: Adaptive Forms
 ---
 # Managing certificate revocation lists{#managing-certificate-revocationlists}
 

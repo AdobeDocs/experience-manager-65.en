@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
 solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 ---
 # Integrating AEM Forms workspace components in web applications {#integrating-aem-forms-workspace-components-in-web-applications}

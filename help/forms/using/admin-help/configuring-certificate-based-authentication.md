@@ -1,16 +1,13 @@
 ---
 title: Configuring certificate-based authentication
-
 description: Import a Certificate Authority (CA) certificate into the Trust Store and create a certificate mapping for certificate-based authentication.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms,Document Security
 role: User, Developer
 ---
 # Configuring certificate-based authentication {#configuring-certificate-based-authentication}

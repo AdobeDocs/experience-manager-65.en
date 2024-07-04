@@ -1,17 +1,14 @@
 ---
 title: Working with To-do lists
-
 description: How to open, work on, and complete the tasks as required, such as approving or rejecting a request or adding more information.
-
-
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Working with To-do lists{#working-with-to-do-lists}

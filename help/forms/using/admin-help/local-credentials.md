@@ -7,6 +7,7 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms,Document Security
 role: User, Developer
 ---
 # Managing local credentials {#managing-local-credentials}

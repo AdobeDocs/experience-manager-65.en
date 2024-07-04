@@ -1,17 +1,14 @@
 ---
 title: Configuring analytics and reports
-
 description: Learn how to configure Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, adaptive documents, and HTML5 forms.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
-
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
+feature: Adaptive Forms
 ---
 # Analytics using Cloud Service Framework {#analyticsusingcloudframework}
 

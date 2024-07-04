@@ -1,15 +1,12 @@
 ---
 title: Working with a Form
-
 description: View and update the form associated with a task or Startpoint in the AEM Forms app
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # Working with a Form {#working-with-a-form}

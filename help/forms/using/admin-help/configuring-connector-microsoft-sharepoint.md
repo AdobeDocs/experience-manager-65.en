@@ -1,17 +1,14 @@
 ---
 title: Configuring Connector for Microsoft SharePoint
-
 description: Configure Connector for Microsoft SharePoint to enable communication between AEM forms and Microsoft SharePoint.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+feature: Adaptive Forms
 ---
 # Configuring Connector for Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
 

@@ -6,6 +6,7 @@ topic-tags: author
 role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
+feature: Workbench,Adaptive Forms
 ---
 # Install Workbench {#install-workbench}
 

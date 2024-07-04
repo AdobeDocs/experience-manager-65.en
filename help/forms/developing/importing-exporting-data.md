@@ -12,6 +12,8 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
+
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Importing and Exporting Data {#importing-and-exporting-data} 
 

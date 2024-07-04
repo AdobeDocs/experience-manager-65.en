@@ -1,17 +1,14 @@
 ---
 title: Creating and configuring roles
-
 description: Learn how to associate users and groups with roles that are already part of the User Management database. You can also create, edit, and delete roles.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+feature: Adaptive Forms
 ---
 # Creating and configuring roles{#creating-and-configuring-roles}
 

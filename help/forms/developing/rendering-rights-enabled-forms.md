@@ -13,6 +13,8 @@ topic-tags: operations
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
+
+feature: Adaptive Forms,Document Services,APIs & Integrations
 ---
 # Rendering Rights-Enabled Forms {#rendering-rights-enabled-forms}
 

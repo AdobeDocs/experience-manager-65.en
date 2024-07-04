@@ -4,7 +4,7 @@ description: Forms lets you configure a submit action to define how an adaptive 
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer

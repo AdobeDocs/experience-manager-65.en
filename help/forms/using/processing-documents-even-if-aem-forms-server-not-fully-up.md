@@ -3,6 +3,7 @@ title: AEM Forms Server starts processing the documents even before all the serv
 description: AEM Forms Server starts processing the documents even before all the services are up and running on JEE Server and OSGi Server.
 exl-id: 1a1bc1cb-e0ce-49a0-9b05-ae59f900cfb2
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
 ---
 # AEM Forms Server starts processing the documents even before all the services are up and running{#aem-forms-server-start-processing-documents-even-if-it-is-not-fully-up}

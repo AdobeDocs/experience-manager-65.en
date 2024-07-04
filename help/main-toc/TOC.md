@@ -13,7 +13,7 @@ user-guide-title: AEM 6.5
 + Release Notes {#release-notes}
   + [Release notes](/help/release-notes/release-notes.md)
   + Previous release notes {#service-pack}
-    + [6.5.20](/help/release-notes/previous/6-5-20.md)
+    + [6.5.20](/help/release-notes/previous/6-5-20.md) 
     + [6.5.19](/help/release-notes/previous/6-5-19.md)
     + [6.5.18](/help/release-notes/previous/6-5-18.md)
     + [6.5.17](/help/release-notes/previous/6-5-17.md)
@@ -872,6 +872,12 @@ user-guide-title: AEM 6.5
     + [Designer FormCalc Reference](https://www.adobe.com/go/learn_aemforms_formCalc_65)
     + [Using Scribble Signature in HTML5 forms](/help/forms/using/scribble-signature.md)
     + [Changing Page Zero content in Designer](/help/forms/using/changing-page-zero-content-designer.md)
+    + [Accessibility Best Practices]{#accessibility-best-practices}
+      + [Introduction](/help/forms/using/introduction-accessibility-forms-designer.md)
+      + [Best practices for creating forms](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+      + [Techniques for testing form accessibility](/help/forms/using/techniques-for-testing-form-accessibility.md)
+      + [Mapping between guidelines and best practices](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+      + [Useful links](/help/forms/using/useful-links-accessibility-forms-designer.md)
   + Customize AEM Forms {#customize-aem-forms}
     + [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md)
     + [Creating a custom adaptive form template](/help/forms/using/custom-adaptive-forms-templates.md)
@@ -1192,6 +1198,8 @@ user-guide-title: AEM 6.5
     + [Failure to backup database during upgrade to 6.5.12.0 for MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
     + [PDF generation fails to print a large number of PDFs on WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
     + [How to properly restart AEM SDK](/help/forms/using/restart-aem-sdk.md)
+    + [PaperCapture service fails to perform OCRs on PDFs](/help/forms/using/papercapture-service-resolution.md)
+    + [Uninstall AEM Forms Add-on Package](/help/forms/using/uninstall-forms-addon-package.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
     + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)

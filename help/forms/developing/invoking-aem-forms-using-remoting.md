@@ -8,6 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms,APIs & Integrations,Workbench
 ---
 # Invoking AEM Forms using Remoting {#invoking-aem-forms-using-remoting} 
 

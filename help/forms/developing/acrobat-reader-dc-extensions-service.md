@@ -7,6 +7,8 @@ topic-tags: develop
 role: Developer
 exl-id: 82f0b6c1-ca0c-48c7-b7f6-b54704ac0830
 solution: Experience Manager, Experience Manager Forms
+
+feature: Adaptive Forms,Reader Extensions,APIs & Integrations
 ---
 # Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
