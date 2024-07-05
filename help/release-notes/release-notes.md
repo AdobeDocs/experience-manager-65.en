@@ -541,7 +541,10 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 * When users update from AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0) to AEM 6.5 Forms Service Pack 20 (6.5.20.0) or AEM 6.5 Forms Service Pack 21 (6.5.21.0), users encounter a JSP compilation error, which prevents them from opening or creating adaptive forms and also causes errors with other AEM interfaces like the page editor, AEM Forms UI, and AEM Workflow editor. (FORMS-15256)
 
-
+  If you face such an issue, perform the following steps to resolve it:
+    1. Navigate to the directory `/libs/fd/aemforms/install/` in CRXDE.
+    1. Delete the bundle with the name `com.adobe.granite.ui.commons-5.10.26.jar`.
+    1. Restart your AEM server.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
