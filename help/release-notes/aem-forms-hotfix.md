@@ -24,6 +24,23 @@ This article lists the critical fixes implemented to address known issues, impro
     <td><strong>Fixed issues</strong></td>
   </tr>
   <tr>
+    <td>July 10, 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip">Hotfix for AEM Service Pack 6.5.21.0 for Windows on JBoss JEE server </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-jboss.tar.gz">Hotfix for AEM Service Pack 6.5.21.0 on Linux for JBoss JEE server </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip">Hotfix for AEM Service Pack 6.5.21.0 on Windows for Webshpere JEE server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-websphere.tar.gz">Hotfix for AEM Service Pack 6.5.21.0 on Linux for Webshpere JEE server</a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip">Hotfix for AEM Service Pack 6.5.21.0 on Windows for Weblogic JEE server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-weblogic.tar.gz">Hotfix for AEM Service Pack 6.5.21.0 on Linux for Weblogic JEE server</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul><li>When a user updates to AEM Forms Service Pack 20 (6.5.20.0) and generates PDFs using output services, the PDFs render with accessibility issues.</li><li>Tagged PDFs generated using output service show "Inappropriate structure warning".</li><li>When a form is submitted, the instances of a repeating XML element are removed from the data.</li><li>When a user on a Linux environment renders an adaptive form in HTML, it fails to render properly.</li><li>When a user converts an XTG file to PostScript format using the Output Service, it fails with the error: AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE.</li><li>After deploying AEM Forms Service Pack 18 (6.5.18.0), when a user submits a form, it fails to render HTML5 or PDF Forms.
+    </ul>
+    </td>    
+  </tr>
+  <tr>
     <td>June 21, 2024</td>
      <td>
      <ul>
