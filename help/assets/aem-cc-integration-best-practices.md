@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices.html?lang=en)                  |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices)                  |
 | AEM 6.5     | This article         |
 
 [!DNL Adobe Experience Manager Assets] is a digital asset management (DAM) solution that can integrate with [!DNL Adobe Creative Cloud] to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
