@@ -83,6 +83,10 @@ The integration package automatically creates the `aemserver` operator that AEM 
 
 1. Select the appropriate security zone and define the trusted IP mask as necessary.
 
+   >[!CAUTION]
+   >
+   >The security zone to be configured is **Private company network (VPN+LAN)**.
+ 
 1. Click **Save**.
 
 1. Log out of the Adobe Campaign client.
