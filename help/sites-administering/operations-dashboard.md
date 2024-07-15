@@ -326,74 +326,9 @@ By default, for an out-of-the-box AEM instance, the health checks run every 60 s
 
 You can configure the **Period** with the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) **Query Health Check Configuration** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics). 
 
-## Monitoring with Nagios {#monitoring-with-nagios}
+## Monitoring with External Services {#monitoring-with-external-services}
 
-The Health Check Dashboard can integrate with Nagios via the Granite JMX Mbeans. The below example illustrates how to add a check that shows used memory on the server running AEM.
-
-1. Set up and install Nagios on the monitoring server.
-1. Next, install the Nagios Remote Plugin Executor (NRPE).
-
-   >[!NOTE]
-   >
-   >For more info on how to install Nagios and NRPE on your system, consult the [Nagios Documentation](https://library.nagios.com/library/products/nagios-core/manuals//).
-
-1. Add a host definition for the AEM server. You can accomplish this task by way of the Nagios XI Web Interface, by using the Configuration Manager:
-
-    1. Open a browser and point to the Nagios server.
-    1. Press the **Configure** button in the top menu.
-    1. In the left pane, press the **Core Config Manager** under **Advanced Configuration**.
-    1. Press the **Hosts** link under the **Monitoring** section.
-    1. Add the host definition:
-
-   ![chlimage_1-118](assets/chlimage_1-118.png)
-
-   Below is an example of a host configuration file, in case you are using Nagios Core:
-
-   ```xml
-   define host {
-      address 192.168.0.5
-      max_check_attempts 3
-      check_period 24x7
-      check-command check-host-alive
-      contacts admin
-      notification_interval 60
-      notification_period 24x7
-   }
-   ```
-
-1. Install Nagios and NRPE on the AEM server.
-1. Install the [check_http_json](https://github.com/phrawzty/check_http_json) plugin on both servers.
-1. Define a generic JSON check command on both servers:
-
-   ```xml
-   define command{
-
-       command_name    check_http_json-int
-
-       command_line    /usr/lib/nagios/plugins/check_http_json --user "$ARG1$" --pass "$ARG2$" -u 'https://$HOSTNAME$:$ARG3$/$ARG4$' -e '$ARG5$' -w '$ARG6$' -c '$ARG7$'
-
-   }
-   ```
-
-1. Add a service for used memory on the AEM server:
-
-   ```xml
-   define service {
-
-       use generic-service
-
-       host_name my.remote.host
-
-       service_description AEM Author Used Memory
-
-       check_command  check_http_json-int!<cq-user>!<cq-password>!<cq-port>!system/sling/monitoring/mbeans/java/lang/Memory.infinity.json!{noname}.mbean:attributes.HeapMemoryUsage.mbean:attributes.used.mbean:value!<warn-threshold-in-bytes>!<critical-threshold-in-bytes>
-
-       }
-   ```
-
-1. Check your Nagios dashboard for the newly created service:
-
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+Integration is possible with external technologies or vendors. Consult their documentation for related details.
 
 ## Diagnosis tools {#diagnosis-tools}
 
