@@ -22,7 +22,7 @@ role: Admin
 >
 >For more information about troubleshooting and fixing performance issues, also see the [Performance tree](/help/sites-deploying/performance-tree.md).
 >
->Also, you can review a Knowledge Base article on [Performance Tuning Tips](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>Also, you can review a Knowledge Base article on [Performance Tuning Tips](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466).
 
 A key issue is the time that your website takes to respond to visitor requests. Although this value varies for each request, an average target value can be defined. Once this value is proven to be both achievable and maintainable, it can be used to monitor the performance of the website and indicate the development of potential problems.
 
@@ -39,7 +39,7 @@ This environment contains content which you make available to your users. Here t
 >[!NOTE]
 >
 >* After configuring for performance optimization, follow the procedures in [Tough Day](/help/sites-developing/tough-day.md) to test the environment under heavy load.
->* See also [Performance tuning tips.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>* See also [Performance tuning tips.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## Performance Optimization Methodology {#performance-optimization-methodology}
 
