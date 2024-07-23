@@ -6,6 +6,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
 ---
 # Best practices for creating forms in forms designer
 
