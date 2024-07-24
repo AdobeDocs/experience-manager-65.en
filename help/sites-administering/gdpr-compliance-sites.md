@@ -60,9 +60,9 @@ By default, this visitor-data is not stored in AEM; AEM sends rules to the data 
 
 >[!NOTE]
 >
->Prior to Adobe CQ 5.6, the ClientContext (an earlier version of ContextHub) did send the data to the server, but did not store them.
+>Prior to Adobe AEM(CQ) 5.6, the ClientContext (an earlier version of ContextHub) did send the data to the server, but did not store them.
 >
->Adobe CQ 5.5 and earlier are now EOL and not covered by this documentation.
+>Adobe AEM 6.4 and earlier versions are now EOL and not covered by this documentation. See [Older versions of Adobe Experience Manager, CQ, and CRX documentation](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Implementing Opt-in/Opt-Out {#implementing-opt-in-opt-out}
 
@@ -73,25 +73,25 @@ These guidelines implement opt-in as the default. Thus, a website visitor must c
 * The opt-out component should be included every time the ContextHub component is included.
 * The terms and conditions that relate to GDPR for the website, must be displayed to the website visitor, allowing them to:
 
-    * accept
-    * reject
-    * change their previous choice
+  * accept
+  * reject
+  * change their previous choice
 
 * If a site visitor accepts the site's terms and conditions, the ContextHub opt-out cookie should be removed:
 
-  ```
+  ```java
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   ```
 
 * If a site visitor does not accept the site's terms and conditions, the ContextHub opt-out cookie should be set:
 
-  ```
+  ```java
   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
   ```
 
 * To check whether ContextHub is running in opt-out mode, the following call should be made in the browser's console:
 
-  ```
+  ```java
   var isOptedOut = ContextHub.isOptedOut(true) === true;
   // if isOptedOut is true, ContextHub is running in opt-out mode
   ```
@@ -102,49 +102,49 @@ To preview persistance used ContextHub, a user can:
 
 * Use the browser's console; for example:
 
-    * Chrome:
+  * Chrome:
 
-        * Open Developer Tools &gt; Application &gt; Storage:
+    * Open Developer Tools &gt; Application &gt; Storage:
 
-            * Local Storage &gt; (website) &gt; ContextHubPersistence
-            * Session Storage &gt; (website) &gt; ContextHubPersistence
-            * Cookies &gt; (website) &gt; SessionPersistence
+      * Local Storage &gt; (website) &gt; ContextHubPersistence
+      * Session Storage &gt; (website) &gt; ContextHubPersistence
+      * Cookies &gt; (website) &gt; SessionPersistence
 
-    * Firefox:
+  * Firefox:
 
-        * Open Developer Tools &gt; Storage:
+    * Open Developer Tools &gt; Storage:
 
-            * Local Storage &gt; (website) &gt; ContextHubPersistence
-            * Session Storage &gt; (website) &gt; ContextHubPersistence
-            * Cookies &gt; (website) &gt; SessionPersistence
+      * Local Storage &gt; (website) &gt; ContextHubPersistence
+      * Session Storage &gt; (website) &gt; ContextHubPersistence
+      * Cookies &gt; (website) &gt; SessionPersistence
 
-    * Safari:
+  * Safari:
 
-        * Open Preferences &gt; Advanced &gt; Show Develop menu in menu bar
-        * Open Develop &gt; Show JavaScript Console
+    * Open Preferences &gt; Advanced &gt; Show Develop menu in menu bar
+    * Open Develop &gt; Show JavaScript Console
 
-            * Console &gt; Storage &gt; Local Storage &gt; (website) &gt; ContextHubPersistence
-            * Console &gt; Storage &gt; Session Storage &gt; (website) &gt; ContextHubPersistence
-            * Console &gt; Storage &gt; Cookies &gt; (website) &gt; ContextHubPersistence
+      * Console &gt; Storage &gt; Local Storage &gt; (website) &gt; ContextHubPersistence
+      * Console &gt; Storage &gt; Session Storage &gt; (website) &gt; ContextHubPersistence
+      * Console &gt; Storage &gt; Cookies &gt; (website) &gt; ContextHubPersistence
 
-    * Internet Explorer:
+  * Internet Explorer:
 
-        * Open Developer Tools &gt; Console
+    * Open Developer Tools &gt; Console
 
-            * localStorage.getItem('ContextHubPersistence')
-            * sessionStorage.getItem('ContextHubPersistence')
-            * document.cookie
+      * localStorage.getItem('ContextHubPersistence')
+      * sessionStorage.getItem('ContextHubPersistence')
+      * document.cookie
 
 * Use the ContextHub API, in the browser's console:
 
-    * ContextHub provides following data persistence layers:
+  * ContextHub provides following data persistence layers:
 
-        * ContextHub.Utils.Persistence.Modes.LOCAL (default)
-        * ContextHub.Utils.Persistence.Modes.SESSION
-        * ContextHub.Utils.Persistence.Modes.COOKIE
-        * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (default)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      The ContextHub store defines which persistence layer is used, thus to view the current state of the persistence all layers should be checked.
+    The ContextHub store defines which persistence layer is used, thus to view the current state of the persistence all layers should be checked.
 
 For example, to view data stored in localStorage:
 
@@ -152,32 +152,32 @@ To preview persistance used ContextHub, a user can:
 
 * Use the browser's console:
 
-    * Chrome - open Developer Tools &gt; Application &gt; Storage:
+  * Chrome - open Developer Tools &gt; Application &gt; Storage:
 
-        * Local Storage &gt; (website) &gt; ContextHubPersistence
-        * Session Storage &gt; (website) &gt; ContextHubPersistence
-        * Cookies &gt; (website) &gt; SessionPersistence
+    * Local Storage &gt; (website) &gt; ContextHubPersistence
+    * Session Storage &gt; (website) &gt; ContextHubPersistence
+    * Cookies &gt; (website) &gt; SessionPersistence
 
-    * Firefox - open Developer Tools &gt; Storage:
+  * Firefox - open Developer Tools &gt; Storage:
 
-        * Local Storage &gt; (website) &gt; ContextHubPersistence
-        * Session Storage &gt; (website) &gt; ContextHubPersistence
-        * Cookies &gt; (website) &gt; SessionPersistence
+    * Local Storage &gt; (website) &gt; ContextHubPersistence
+    * Session Storage &gt; (website) &gt; ContextHubPersistence
+    * Cookies &gt; (website) &gt; SessionPersistence
 
 * Use the ContextHub API, in the browser's console:
 
-    * ContextHub provides following data persistence layers:
+  * ContextHub provides following data persistence layers:
 
-        * ContextHub.Utils.Persistence.Modes.LOCAL (default)
-        * ContextHub.Utils.Persistence.Modes.SESSION
-        * ContextHub.Utils.Persistence.Modes.COOKIE
-        * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (default)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      The ContextHub store defines which persistence layer is used, thus to view the current state of the persistence all layers should be checked.
+    The ContextHub store defines which persistence layer is used, thus to view the current state of the persistence all layers should be checked.
 
 For example, to view data stored in localStorage:
 
-```
+```java
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
 console.log(storage.getTree());
 ```
@@ -188,7 +188,7 @@ To clear the ContextHub persistence:
 
 * To clear persistence of currently loaded stores:
 
-  ```
+  ```java
   // to be able to fully access persistence layer, Opt-Out must be turned off
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
 
@@ -202,7 +202,7 @@ To clear the ContextHub persistence:
 
 * To clear a specific persistence layer; for example, sessionStorage:
 
-  ```
+  ```java
   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
   storage.setItem('/store', null);
   storage.setItem('/_', null);
@@ -213,7 +213,7 @@ To clear the ContextHub persistence:
 
 * To clear all ContextHub persistence layers, the appropriate code must be called for all layers:
 
-    * ContextHub.Utils.Persistence.Modes.LOCAL (default)
-    * ContextHub.Utils.Persistence.Modes.SESSION
-    * ContextHub.Utils.Persistence.Modes.COOKIE
-    * ContextHub.Utils.Persistence.Modes.WINDOW
+  * ContextHub.Utils.Persistence.Modes.LOCAL (default)
+  * ContextHub.Utils.Persistence.Modes.SESSION
+  * ContextHub.Utils.Persistence.Modes.COOKIE
+  * ContextHub.Utils.Persistence.Modes.WINDOW
