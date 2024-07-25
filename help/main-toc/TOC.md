@@ -1254,9 +1254,6 @@ user-guide-title: AEM 6.5
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [Developing (generic)](/help/commerce/cif-classic/developing/generic.md)
       + [Developing with SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ Edge Delivery Services {#edge-delivery-services}
-  + [Getting Started with Edge Delivery](/help/edge/overview.md)
-  + [Using Edge Delivery](/help/edge/using.md)
 + Headless {#headless}  
   + [AEM Headless Journeys](/help/journey-headless/overview.md)
   + AEM Headless Developer Journey {#developer}
