@@ -60,7 +60,7 @@ By default, this visitor-data is not stored in AEM; AEM sends rules to the data 
 
 >[!NOTE]
 >
->Prior to Adobe AEM(CQ) 5.6, the ClientContext (an earlier version of ContextHub) did send the data to the server, but did not store them.
+>Prior to Adobe AEM (CQ) 5.6, the ClientContext (an earlier version of ContextHub) did send the data to the server, but did not store them.
 >
 >Adobe AEM 6.4 and earlier versions are now EOL and not covered by this documentation. See [Older versions of Adobe Experience Manager, CQ, and CRX documentation](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
