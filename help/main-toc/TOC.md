@@ -224,6 +224,7 @@ user-guide-title: AEM 6.5
       + [Configuring Video Tracking for Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
       + [HTTP2 Delivery of Content FAQ](/help/sites-administering/scene7-http2faq.md)
       + [Troubleshooting your Adobe Campaign Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
+      + [SharePoint Connector](/help/sites-administering/sharepoint-connector.md)
       + [SharePoint Connector Licenses, Copyright Notices, and Disclaimers](/help/sites-administering/sharepoint-connector-licenses.md)
       + [DHTML Viewer End-of-Life FAQs](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
       + [Integrating with Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
@@ -262,7 +263,6 @@ user-guide-title: AEM 6.5
       + [Administering Tags](/help/sites-administering/tags.md)
       + [The Page Exporter](/help/sites-administering/page-exporter.md)
       + [Classic UI Tagging Console](/help/sites-administering/classic-console.md)
-      + [Content Management for Screens](/help/sites-administering/content-management-screens.md)
       + [WebDAV Access](/help/sites-administering/webdav-access.md)
   + Classic UI Authoring {#classic-ui}
     + Introduction to Classic UI Authoring {#introduction}
