@@ -29,6 +29,7 @@ This package contains cloud configuration which supports the following platform 
 | Adobe Sign |v5 API |**Supported** |
 | Microsoft&reg; Dynamics 365 |1710 (9.1.0.3020) |**Supported** |
 | Adobe Analytics |v1.4 Rest API |**Supported** |
+
 **Package Installation considerations:**
 
 * Install the package on a clean server, free of other demo packages, or older demo package versions.
