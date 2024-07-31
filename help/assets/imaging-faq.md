@@ -140,12 +140,14 @@ When an image is requested by a consumer, Smart Imaging checks the user characte
 * Automatically convert to WebP if AVIF conversion was not beneficial or browser does not support AVIF
 * Automatically convert to JPEG2000 if Safari does not support WebP
 * Automatically convert to JPEGXR for IE 9+ or if Edge does not support WebP  
+
     | Image format | Supported browsers |
     |---|---|
     | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
     | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
     | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
     | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * For browsers that do not support these formats, the originally requested image format is served. 
 
 If the original image size is smaller than what Smart Imaging produces, then the original image is served.
