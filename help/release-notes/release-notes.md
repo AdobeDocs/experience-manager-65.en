@@ -545,7 +545,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
     1. Delete the bundle with the name `com.adobe.granite.ui.commons-5.10.26.jar`.
     1. Restart your AEM server.
 
-* When a user updates to AEM Forms Service Pack 20 (6.5.20.0) installed with the Forms Add-On, configurations using the legacy cloud service for Adobe Analytics with user credential-based authentication, fail to function correctly, causing the failure of analytics rules to execute. (FORMS-15428)
+* When a user updates to AEM Forms Service Pack 20 (6.5.20.0) installed with the Forms Add-On, configurations using the legacy cloud service for Adobe Analytics with user credential-based authentication, fail to function correctly, causing the failure of analytics rules to execute. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (FORMS-15428)
 
 * When a user updates to AEM Forms Service Pack 20 (6.5.20.0) on JEE server and generates PDFs using output services, the PDFs render with accessibility issues. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922112)
 * When a user generates Tagged PDFs using output service on JEE, it shows "Inappropriate structure warning". To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922038)
