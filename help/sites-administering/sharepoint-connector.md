@@ -7,6 +7,8 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
+feature: Integration
+role: Admin
 ---
 # SharePoint Connector{#sharepoint-connector}
 
