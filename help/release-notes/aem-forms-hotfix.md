@@ -86,6 +86,7 @@ This article lists the critical fixes implemented to address known issues, impro
      <li>When an Adaptive Form is submitted from an Adobe Experience Manager Publish instance to an Adobe Experience Manager Workflow, the workflow fails to save the attachments.  (FORMS-14209) </li>
      <li> On installing AEM 6.5 Forms Service Pack 20 package (AEM Forms add-on package for SP20),the AEM Sites user interface (UI) exhibits significant performance degradation.  (FORMS-13791) </li>
      <li>The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)</li>
+     <li>Configurations using the legacy cloud service for Adobe Analytics with user credential-based authentication, fail to function correctly, causing the failure of analytics rules to execute. (FORMS-15428)
     </ul>
     </td>    
   </tr>
