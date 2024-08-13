@@ -23,16 +23,12 @@ Create a cloud configuration that connects AEM to your translation service provi
 The following translation vendors provide an implementation of the new API for the Translation Projects. Links to learn more about the integration:
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
-* [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
-* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [Memsource](https://exchange.adobe.com/apps/ec/103166/memsource-connector-for-adobe-experience-manager)
+* [XTM Cloud](https://exchange.adobe.com/apps/ec/105037/xtm-connect-for-adobe-experience-manager)
+* [Lingotek](https://exchange.adobe.com/apps/ec/90088/lingotek-collaborative-translation-platform)
 * [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft (Microsoft Translator is pre-installed in AEM)
 
 >[!NOTE]
