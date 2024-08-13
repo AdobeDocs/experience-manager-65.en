@@ -39,9 +39,8 @@ The following translation vendors provide an implementation of the new API for t
 >
 >To find the latest list of human and machine translation providers, have a look at these pages:
 >
->
->* [AEM Human Translation](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM Machine Translation](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM Human Translation](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=aem+human+translation&sort=RELEVANCE)
+>* [AEM Machine Translation](https://exchange.adobe.com/apps/browse/ec?q=AEM+machine+translation&product=All&partnerLevel=All&sort=RELEVANCE)
 >
 
 After you install a connector package, you can create a cloud configuration for the connector. Typically, you need to provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft Translator connector, see [Integrating with Microsoft Translator](/help/sites-administering/tc-msconf.md).
