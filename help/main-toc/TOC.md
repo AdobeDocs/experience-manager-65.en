@@ -1225,6 +1225,7 @@ user-guide-title: AEM 6.5
       + [Configuring URLs for SEO](/help/commerce/cif/configuring/advanced-url-configuration.md)
       + [Caching Options](/help/commerce/cif/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce/cif/configuring/custom-http-headers.md)
+      + [Shopping Cart and Dispatcher Setup](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
     + Developing {#developing}
       + [Developing with AEM](/help/commerce/cif/develop.md)
       + [Styling CIF Components](/help/commerce/cif/customizing/style-cif-component.md)
