@@ -70,7 +70,7 @@ The `aem-clientlib-generator` is used to make the creation of client libraries a
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Further details about it can be found [on GitHub here](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+Further details about the [aem-clientlib-generator are available on GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 >[!CAUTION]
 >

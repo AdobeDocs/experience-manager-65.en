@@ -170,7 +170,7 @@ The value of **Yes** is an integer of **1**. This is useful when you write the G
 
    >[!TIP]
    >
-   >More detailed documentation about [Adobe Commerce GraphQL can be found here](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   >For more detailed documentation about Adobe Commerce GraphQL see the following [GraphQL overview](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Update the Sling Model for the Product Teaser {#updating-sling-model-product-teaser}
 
@@ -381,7 +381,7 @@ In this case, you want to render a banner on top of the teaser to indicate that 
 
    When calling a Sling Model method in HTL the `get` and `is` portion of the method is dropped and the first letter is lowercased. So `isShowBadge()` becomes `.showBadge` and `isEcoFriendly` becomes `.ecoFriendly`. Based on the boolean value returned from `.isEcoFriendly()` determines if the `<span>Eco Friendly</span>` is displayed.
 
-   More information about `data-sly-test` and other [HTL block statements can be found here](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
+   For more information about `data-sly-test` and other HTL block statements see [The HTL Specification](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
 1. Save the changes and deploy the updates to AEM using your Maven skills, from a command-line terminal:
 

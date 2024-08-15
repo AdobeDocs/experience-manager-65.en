@@ -16,7 +16,9 @@ role: Admin
 
 This section is for the Classic UI Tagging Console.
 
-The Touch-optimized UI Tagging Console is [here](/help/sites-administering/tags.md#tagging-console).
+>[!NOTE]
+>
+>See [Administering Tags](/help/sites-administering/tags.md#tagging-console) for details of the Touch-optimized UI Tagging Console.
 
 To access the Classic UI Tagging console :
 

@@ -249,7 +249,7 @@ For more details on changes to AEM Screens - see the Release Notes in the [AEM S
 
 #### AEM and Commerce {#aem-commerce}
 
-Improvements to the Commerce Integration Framework are on a faster release cycle since AEM 6.4. [Learn more here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
+Improvements to the Commerce Integration Framework are on a faster release cycle since AEM 6.4. Learn more from [AEM and Adobe Commerce Integration Using Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
 
 #### Communities Add-On {#communities-add-on}
 

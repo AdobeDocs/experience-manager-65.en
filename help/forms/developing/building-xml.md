@@ -44,7 +44,7 @@ Once a process has been created with the Execute Script service included, one ca
 
 **About the Execute Script Service's Technology**
 
-To know what the abilities and limitations of the Execute Script service are, one must know the technological underpinnings of the service. AEM Forms on JEE uses the Apache Xerces Document Object Model (DOM) parser to create and store XML variables within processes. Xerces is a Java&trade; implementation of W3C's Document Object Model specification; defined [here](https://dom.spec.whatwg.org/). The DOM specification is a standard way of manipulating XML that has been around since 1998. The Java&trade; implementation of Xerces, Xerces-J, supports DOM Level 2 version 1.0.
+To know what the abilities and limitations of the Execute Script service are, one must know the technological underpinnings of the service. AEM Forms on JEE uses the Apache Xerces Document Object Model (DOM) parser to create and store XML variables within processes. Xerces is a Java&trade; implementation of W3C's [Document Object Model specification](https://dom.spec.whatwg.org/). The DOM specification is a standard way of manipulating XML that has been around since 1998. The Java&trade; implementation of Xerces, Xerces-J, supports DOM Level 2 version 1.0.
 
 The Java&trade; classes used to store XML variables are:
 
@@ -52,7 +52,7 @@ The Java&trade; classes used to store XML variables are:
 
 * org.apache.xerces.dom.DocumentImpl
 
-DocumentImpl is a subclass of NodeImpl, so it can be supposed that any XML process variable is a NodeImpl derivation. You can find the documentation for NodeImpl [here](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html).
+DocumentImpl is a subclass of NodeImpl, so it can be supposed that any XML process variable is a NodeImpl derivation. See the documentation of [NodeImpl](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html) for more details.
 
 **A Sample XML Creation Using the Execute Script Service**
 

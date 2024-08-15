@@ -116,15 +116,16 @@ More information about the new group features can be found here:
 
 >[!NOTE]
 >
->For more information regarding the User Sync Tool, see the [documentation page](https://adobe-apiplatform.github.io/user-sync.py/en/).
+>For more details see:
 >
+>* the [User Sync Tool - Adobe User Sync](https://adobe-apiplatform.github.io/user-sync.py/en/)
 >
->The User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>* the User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described under [Authentication for API Access](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)
 >
->The Adobe Developer Console Documentation can be found [here](https://developer.adobe.com/developer-console/docs/guides/).
+>* the [Adobe Developer Console Documentation](https://developer.adobe.com/developer-console/docs/guides/).
 >
+>* the [User Management API Documentation](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 >
->The [!DNL User Management] API that is used by the User Sync Tool is covered at this [location](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >

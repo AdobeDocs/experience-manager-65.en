@@ -393,7 +393,7 @@ By default, AEM stores system metadata, such as `jcr:createdBy` or `jcr:lastModi
 
 Like all repository data, these properties are mediated by the Oak authorization stack. Access to them should be restricted in accordance with the principle of least privilege.
 
-To support this, Adobe provides a permission hardening package as a basis for customers to build upon. It works by installing a "deny" access control entry at the repository root, restricting anonymous access to commonly used system properties. The package is available for download [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) and can be installed on all supported versions of AEM. 
+To support this, Adobe provides a permission hardening package as a basis for customers to build upon. It works by installing a "deny" access control entry at the repository root, restricting anonymous access to commonly used system properties. The package can be [downloaded ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) and installed on all supported versions of AEM. 
 
 To illustrate the changes, we can compare the node properties that can be viewed anonymously before installing the package:
 

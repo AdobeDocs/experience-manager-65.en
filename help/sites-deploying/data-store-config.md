@@ -40,11 +40,9 @@ To configure both the node store and the data store, perform these steps:
 
 >[!CAUTION]
 >
->Newer versions of Oak employ a new naming scheme and format for OSGi configuration files. The new naming scheme requires that the configuration file be named **.config** and the new format requires values to be typed and is [documented here](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>Newer versions of Oak employ a new naming scheme and format for OSGi configuration files. The new naming scheme requires that the configuration file be named **.config** and the new format requires values to be typed. For details see [The Apache Sling Provisioning Model and Apache SlingStart - Default Configuration Format](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >If you upgrade from an older version of Oak, ensure that you make a backup of the `crx-quickstart/install`folder first. After the upgrade, restore the contents of the folder to the upgraded installation and modify the extension of the configuration files from **.cfg** to **.config**.
->
->In case you are reading this article in preparation for an upgrade from an **AEM 5.x** installation, ensure that you consult the [upgrade](https://experienceleague.adobe.com/docs/) documentation first.
 
 ### Segment Node Store {#segment-node-store}
 

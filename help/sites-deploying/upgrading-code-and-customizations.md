@@ -66,7 +66,7 @@ The AEM Uber jar includes all AEM APIs as a single dependency in your Maven proj
 
 ### Phase out use of Administrative Resource Resolver {#phase-out-use-of-administrative-resource-resolver}
 
-The use of an administrative session through `SlingRepository.loginAdministrative()` and `ResourceResolverFactory.getAdministrativeResourceResolver()` was prevalent in code bases before AEM 6.0. These methods have been deprecated for security reasons as they give too broad of a level of access. [In future versions of Sling, these methods are going to be removed](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). It is highly recommended to refactor any code to use Service Users instead. More information about Service Users and [how to phase out administrative sessions can be found here](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
+The use of an administrative session through `SlingRepository.loginAdministrative()` and `ResourceResolverFactory.getAdministrativeResourceResolver()` was prevalent in code bases before AEM 6.0. These methods have been deprecated for security reasons as they give too broad of a level of access. [In future versions of Sling, these methods are going to be removed](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). It is highly recommended to refactor any code to use Service Users instead. For information about Service Users and how to phase out administrative sessions see [Service Users in Adobe Experience Manager (AEM)](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
 ### Queries and Oak Indexes {#queries-and-oak-indexes}
 
@@ -82,7 +82,7 @@ The following tools are available for analyzing and inspecting query performance
 
 ### Classic UI Authoring {#classic-ui-authoring}
 
-Classic UI authoring is still available in AEM 6.5 but is being deprecated. More information can be found [here](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). If your application is running on the Classic UI author environment, it is recommended to upgrade to AEM 6.5 and continue using the Classic UI. Migration to the Touch UI can then be planned as a separate project to complete over several development cycles. To use the Classic UI in AEM 6.5, several OSGi configurations must be committed to the code base. More details on how to do the configuration can be found [here](/help/sites-administering/enable-classic-ui.md).
+Classic UI authoring is still available in AEM 6.5 but is being deprecated. See [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release) for more information. If your application is running on the Classic UI author environment, it is recommended to upgrade to AEM 6.5 and continue using the Classic UI. Migration to the Touch UI can then be planned as a separate project to complete over several development cycles. To use the Classic UI in AEM 6.5, several OSGi configurations must be committed to the code base. More details on how to do the configuration can be found under [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md).
 
 ## Align with 6.5 Repository Structure {#align-repository-structure}
 
@@ -96,7 +96,7 @@ All customizations to the AEM authoring environment in the source version of AEM
 
 ### Overlays in general {#overlays-in-general}
 
-It is a common practice to extend AEM out of the box functionality by overlaying nodes and/or files under /libs with additional nodes under /apps. These overlays should be tracked in version control and tested against the target version of AEM. If a file (such as JS, JSP, HTL) is overlaid, Adobe recommends that you leave a comment on what functionality was augmented for easier regression testing on the target version of AEM. More information about overlays in general can be found [here](/help/sites-developing/overlays.md). Instructions for specific AEM overlays can be found below.
+It is a common practice to extend AEM out of the box functionality by overlaying nodes and/or files under /libs with additional nodes under /apps. These overlays should be tracked in version control and tested against the target version of AEM. If a file (such as JS, JSP, HTL) is overlaid, Adobe recommends that you leave a comment on what functionality was augmented for easier regression testing on the target version of AEM. See [Overlays](/help/sites-developing/overlays.md) for generic information. Instructions for specific AEM overlays can be found below.
 
 ### Upgrading Custom Search Forms {#upgrading-custom-search-forms}
 
@@ -142,11 +142,11 @@ For all other purposes, use the `migrateAllAssets()` API.
 
 ### InDesign Script Customizations {#indesign-script-customizations}
 
-Adobe recommends putting custom scripts at `/apps/settings/dam/indesign/scripts` location. More information about InDesign Script customizations can be found [here](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
+Adobe recommends putting custom scripts at `/apps/settings/dam/indesign/scripts` location. More information about InDesign Script customizations can be found under [Integrate Adobe Experience Manager Assets with Adobe InDesign Server](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
 
 ### Recovering ContextHub Configurations {#recovering-contexthub-configurations}
 
-ContextHub configurations are affected by an upgrade. Instructions on how to recover existing ContextHub configurations can be found [here](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading).
+ContextHub configurations are affected by an upgrade. See [Configuring ContextHub](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading) for instructions on how to recover existing ContextHub configurations.
 
 ### Workflow Customizations {#workflow-customizations}
 
@@ -162,7 +162,7 @@ The structure for Editable templates changed between AEM 6.2 and 6.3. If you are
 
 ### CUG Implementation Changes {#cug-implementation-changes}
 
-The implementation of Closed User Groups has changed significantly to address performance and scalability limitations in previous versions of AEM. The previous version of CUG was deprecated in 6.3 and the new implementation is only supported in the Touch UI. If you are upgrading from 6.2 or earlier, then instructions to migrate to the new CUG implementation can be found [here](/help/sites-administering/closed-user-groups.md#upgradetoaem63).
+The implementation of Closed User Groups has changed significantly to address performance and scalability limitations in previous versions of AEM. The previous version of CUG was deprecated in 6.3 and the new implementation is only supported in the Touch UI. 
 
 ## Testing Procedure {#testing-procedure}
 

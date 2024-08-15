@@ -139,7 +139,7 @@ The `cq:OwnerTaggable` mixin, which inherits from `cq:Taggable`, is intended to 
 
 ### Node Type Notation (CND) {#node-type-notation-cnd}
 
-Node type definitions exist in the repository as CND files. The CND notation is defined as part of the JCR documentation [here](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Node type definitions exist in the repository as CND files. The CND notation is defined as part of the [Jackrabbit documentation](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 The essential definitions for the Node Types included in AEM are as follows:
 
