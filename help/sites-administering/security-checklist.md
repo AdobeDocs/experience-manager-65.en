@@ -337,7 +337,7 @@ To mitigate this issue, you can do the following steps:
 
 The default asset download servlet allows authenticated users to issue arbitrarily large, concurrent, download requests to create ZIP files of assets. Creating large ZIP archives can overload the server and the network. To mitigate a potential Denial of Service (DoS) risk caused by this behavior, `AssetDownloadServlet` OSGi component is disabled by default on [!DNL Experience Manager] publish instance. It is enabled on [!DNL Experience Manager] author instance by default. 
 
-If you do not need the download capability, disable the servlet on author and publish deployments. If your setup requires that the asset download capability is enabled, see [this article](/help/assets/download-assets-from-aem.md) for more information. Also, you can define a maximum download limit that your deployment can support.
+If you do not need the download capability, disable the servlet on author and publish deployments. If your setup requires that the asset download capability is enabled, see [Download assets from Adobe Experience Manage](/help/assets/download-assets-from-aem.md) for more information. Also, you can define a maximum download limit that your deployment can support.
 
 ### Disable WebDAV {#disable-webdav}
 

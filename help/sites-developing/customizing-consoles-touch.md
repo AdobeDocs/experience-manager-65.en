@@ -159,4 +159,4 @@ To customize the columns in the list view:
 
 When using a console, a common use case is when the user must select from resources (for example, pages, components, assets, and so on). This can take the form of a list for example, from which the author must choose an item.
 
-To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. See [this article](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) for details.
+To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. See [Customizing Page Authoring - Filtering Resources](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) for details.

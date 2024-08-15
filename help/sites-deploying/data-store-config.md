@@ -366,7 +366,7 @@ To configure binaryless replication with S3, the following steps are required:
 
     * If using S3 as the data store, create a file named o `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` in the `<aem-install>/crx-quickstart/install` folder as above.
 
-1. Modify the data store configuration files on each instance so they point to the same data store. For more information, see [this article](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Modify the data store configuration files on each instance so they point to the same data store. For more information, see [Data Store Configurations](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. If the instance has been cloned from an existing server, you must remove the `clusterId` of the new instance by using the latest oak-run tool while the repository is offline. The command you must run is:
 
    ```xml

@@ -106,7 +106,7 @@ To keep the list to a reasonable size and also relevant to the use case, a filte
 * Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
 * Specify a name for the predicate, and refer that name when using the `pathbrowser`.
 
-For further detail on creating a custom predicate, see [this article](/help/sites-developing/implementing-custom-predicate-evaluator.md).
+For further detail on creating a custom predicate, see [Implementing a Custom Predicate Evaluator for the Query Builder](/help/sites-developing/implementing-custom-predicate-evaluator.md).
 
 >[!NOTE]
 >
