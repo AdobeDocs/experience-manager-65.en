@@ -178,9 +178,9 @@ A set of prerequisites and recommendations is available if you are considering a
 
 **Strong recommendations for MongoDB deployments:**
 
-* Consult the MongoDB for Adobe Experience Manager [article](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
-* Review the MongoDB production [checklist](https://docs.mongodb.org/manual/administration/production-checklist/);
-* Attend a certification class on MongoDB available online [here](https://university.mongodb.com/).
+* Consult the [MongoDB Deployment Review for Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Review the [MongoDB Operations Checklist](https://docs.mongodb.org/manual/administration/production-checklist/);
+* Attend a [certification class on MongoDB - available online](https://university.mongodb.com/).
 
 >[!NOTE]
 >

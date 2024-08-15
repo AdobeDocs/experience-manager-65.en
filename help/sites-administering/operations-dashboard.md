@@ -503,7 +503,7 @@ You can also configure the timings by pressing the gear icon on any of the two m
 
 ### Revision Clean Up {#revision-clean-up}
 
-For more information on performing Revision Clean Up, [see this dedicated article](/help/sites-deploying/revision-cleanup.md).
+For more information, see [Revision Cleanup](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
