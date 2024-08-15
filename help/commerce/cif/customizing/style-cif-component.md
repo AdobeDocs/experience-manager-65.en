@@ -429,7 +429,7 @@ Return to the IDE and the generated project.
 
     ![Webpack Dev Server teaser changes](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-    However, the changes have not been deployed to AEM yet. You can download the [solution file here](../assets/style-cif-component/_productteaser.scss).
+    However, the changes have not been deployed to AEM yet. You can [download the solution file here](../assets/style-cif-component/_productteaser.scss).
 
 1. Deploy the updates to AEM using your Maven skills, from a command-line terminal:
 

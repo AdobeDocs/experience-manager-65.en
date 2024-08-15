@@ -213,7 +213,7 @@ It creates a dialog with the following structure:
 
 You can now adapt the dialog to your needs by modifying properties or creating nodes.
 
-You can also use the Dialog Editor to edit a dialog. Double-clicking the dialog node in CRXDE Lite brings up the editor. More information about the Dialog Editor can be found [here](/help/sites-developing/dialog-editor.md).
+You can also use the Dialog Editor to edit a dialog. Double-clicking the dialog node in CRXDE Lite brings up the editor. See [Dialog Editor](/help/sites-developing/dialog-editor.md) for more details.
 
 ## Creating a Node {#creating-a-node}
 

@@ -9,7 +9,7 @@ role: Admin
 ---
 # Same Site Cookie Support for AEM 6.5 {#same-site-cookie-support-for-aem-65}
 
-Since version 80, Chrome, and later Safari, introduced a new model for cookie security. This mode is designed to introduce security controls around availability of cookies to third-party sites, through a setting called `SameSite`. For more detailed information, see this [article](https://web.dev/samesite-cookies-explained/).
+Since version 80, Chrome, and later Safari, introduced a new model for cookie security. This mode is designed to introduce security controls around availability of cookies to third-party sites, through a setting called `SameSite`. For more detailed information, see this [web.dev - SameSite cookies explained](https://web.dev/samesite-cookies-explained/) article.
 
 The default value of this setting (`SameSite=Lax`) might cause authentication between AEM instances or services to not work. This is because the domains or URL structures of these services might not fall under the constraints of this cookie policy.
 

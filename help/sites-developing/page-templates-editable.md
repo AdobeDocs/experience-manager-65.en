@@ -432,7 +432,7 @@ When creating an editable template, the value is copied from the template type t
 
 If you have created a template that can serve as the basis of other templates, you can copy this template as a template type.
 
-1. Create a template as you would any editable template [as documented here](/help/sites-authoring/templates.md#creating-a-new-template-template-author), which can serve as the basis of your template type.
+1. Create a template as you would any editable template. See [Creating Page Templates](/help/sites-authoring/templates.md#creating-a-new-template-template-author). This can serve as the basis of your template type.
 1. Using CRXDE Lite, copy the newly created template from the `templates` node to the `template-types` node under the [template folder](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Delete the template from the `templates` node under the [template folder](/help/sites-developing/page-templates-editable.md#template-folders).
 1. In the copy of the template that is under the `template-types` node, delete all `cq:template` and `cq:templateType` properties from all `jcr:content` nodes.

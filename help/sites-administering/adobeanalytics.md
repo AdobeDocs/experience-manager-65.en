@@ -17,12 +17,6 @@ role: Admin
 ---
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
 
-| Version | Article link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html)                  |
-| AEM 6.5     | This article         |
-
-
 Integrating Adobe Analytics and AEM lets you track your web page activity:
 
 * An Adobe Analytics configuration enables AEM to authenticate with Adobe Analytics.
