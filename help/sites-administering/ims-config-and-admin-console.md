@@ -64,9 +64,9 @@ Once a customer exists as an IMS Organization and AMS is done with provisioning 
 
 >[!NOTE]
 >
->For more information about the Adobe Identity Management Basics, including IDP configuration see the article [this page.](https://helpx.adobe.com/enterprise/using/set-up-identity.html)
+>For more information about the Adobe Identity Management Basics, including IDP configuration see the article about [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
 >
->For more info about the Enterprise Administration and [!DNL Admin Console] see the article [this page](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+>For more info about the Enterprise Administration and [!DNL Admin Console] see the [Welcome to the enterprise and teams admin guide](https://helpx.adobe.com/enterprise/managing/user-guide.html).
 
 ### Onboarding Users to the [!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 

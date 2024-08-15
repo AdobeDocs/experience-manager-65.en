@@ -518,7 +518,7 @@ You can access the Lucene Binaries Cleanup task from: **AEM &gt; Tools &gt; Oper
 
 ### Data Store Garbage Collection {#data-store-garbage-collection}
 
-For details on Data Store Garbage Collection, see the dedicated [documentation page](/help/sites-administering/data-store-garbage-collection.md).
+For details on Data Store Garbage Collection, see the dedicated [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md) documentation page.
 
 ### Workflow purge {#workflow-purge}
 
@@ -529,7 +529,7 @@ Workflows can also be purged from the Maintenance Dashboard. To run the Workflow
 
 >[!NOTE]
 >
->For more detailed information about Workflow Maintenance, see [this page](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>For more detailed information about Workflow Maintenance, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Audit Log Maintenance {#audit-log-maintenance}
 

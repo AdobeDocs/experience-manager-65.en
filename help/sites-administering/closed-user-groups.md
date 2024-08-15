@@ -72,7 +72,7 @@ In contrast to the former implementation, the new CUG policies are always recogn
 
 Apart from a dedicated access control management for CUGs, the new authorization model lets you conditionally enable permission evaluation for its policies. This lets you set up CUG policies in a staging environment, and only enables evaluation of the effective permissions once replicated to the production environment.
 
-Permission evaluation for CUG policies and the interaction with the default or any additional authorization model follows the pattern designed for multiple authorization mechanisms in Apache Jackrabbit Oak. That is, a given set of permissions is granted if and only if all models grant access. See [this page](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) for more details.
+Permission evaluation for CUG policies and the interaction with the default or any additional authorization model follows the pattern designed for multiple authorization mechanisms in Apache Jackrabbit Oak. That is, a given set of permissions is granted if and only if all models grant access. See the [Jackrabbit Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) for more details.
 
 The following characteristics apply for the permission evaluation associated with the authorization model designed to handle and evaluate CUG policies:
 
@@ -123,7 +123,7 @@ The same applies for the `granite:loginPath` property. It is only respected if i
 
 Since this type of authentication requirement is expected to be limited to certain run modes and to a small subset of trees within the content repository, tracking of the requirement mixin type and the login path properties is conditional. And, it is bound to a corresponding configuration that defines the supported paths (see Configuration Options below). Therefore, only changes within the scope of these supported paths trigger an update of the OSGi registration, elsewhere both the mixin type and the property are ignored.
 
-The default AEM setup now makes use of this configuration by allowing to set the mixin in the author run mode but only have it take effect upon replication to the publish instance. See [this page](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) for details how Sling enforces the authentication requirement.
+The default AEM setup now makes use of this configuration by allowing to set the mixin in the author run mode but only have it take effect upon replication to the publish instance. See the [Sling Authentication - Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) documentation for details how Sling enforces the authentication requirement.
 
 Adding the `granite:AuthenticationRequired` mixin type within the configured supported paths cause the OSGi registration of the responsible handler to be updated containing a new, additional entry with the `sling.auth.requirements` property. If a given authentication requirement specifies the optional `granite:loginPath` property, the value is also registered with the Authenticator with a '-' prefix to be excluded from authentication requirement.
 
@@ -181,7 +181,7 @@ The following best practices should be taken into account when defining authenti
 
 ### CUG Policy Representation in the Repository {#cug-policy-representation-in-the-repository}
 
-The Oak documentation covers the how the new CUG policies are reflected in the repository content. For more information, consult [this page](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
+The Oak documentation covers the how the new CUG policies are reflected in the repository content. For more information, consult the [Jackrabbit Oak Documentation on Managing Access with CUGs](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
 
 ### Authentication Requirement in the Repository {#authentication-requirement-in-the-repository}
 

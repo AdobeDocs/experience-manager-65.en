@@ -26,16 +26,14 @@ You can also publish/unpublish a page immediately or at a predefined date/time i
 >
 >* **Replicate / Replication**
 >  These are the technical terms describing the movement of data (for example, page content, files, code, user comments) from one environment to another such as when publishing or reverse-replicating user comments.
->
 
->[!NOTE]
->
->If you do not have the required privileges for publishing a specific page:
->
->* A workflow will be triggered to notify the appropriate person of your request to publish.
->* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
->* A message will be displayed briefly to notify you that the workflow was triggered.
->
+## Insufficient Privileges {#insufficient-privileges}
+
+If you do not have the required privileges for publishing a specific page:
+
+* A workflow will be triggered to notify the appropriate person of your request to publish.
+* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
+* A message will be displayed briefly to notify you that the workflow was triggered.
 
 ## Publishing Pages {#publishing-pages-1}
 
@@ -179,7 +177,9 @@ To publish or unpublish a page using Manage Publication:
 
    >[!NOTE]
    >
-   >The **Workflows** step is shown based on what rights your user may or may not have. See the [previous note on this page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) regarding publishing privileges and [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) for details.
+   >The **Workflows** step is shown based on what rights your user may or may not have. 
+   >
+   >See the sections [Insufficient Privileges](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) for details.
 
    The resources are grouped by the workflows triggered and each given options to:
 

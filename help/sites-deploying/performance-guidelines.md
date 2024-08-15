@@ -427,7 +427,7 @@ Illustrated below are the architecture guidelines for AEM sites and AEM Assets.
 
 ### TarMK Settings Guideline {#tarmk-settings-guideline}
 
-For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, [see this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, see [Performance Optimization](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>
@@ -537,7 +537,7 @@ To establish good performance when using MongoMK, you should start from the foll
 
 ### MongoMK Settings Guidelines {#mongomk-settings-guidelines}
 
-For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, [see this page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+For good performance, you should follow the settings guidelines presented below. For instructions on how to change the settings, see [Performance Optimization](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>
