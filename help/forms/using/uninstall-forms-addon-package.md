@@ -6,8 +6,8 @@ feature: Adaptive Forms
 role: User, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: a42095b5-1791-4854-90d1-2d4a332673c1
 ---
-
 # Uninstall AEM Forms Add-on Package from AEM Instance
 
 This article outlines the steps required to properly uninstall the AEM Forms add-on package from an AEM Forms SDK instance. Follow these steps to ensure removal of the Forms add-on package, preventing potential issues with your AEM environment.
@@ -47,7 +47,3 @@ To uninstall the AEM Forms Add-on Package, perform the following steps:
   
 1. **Restart the AEM Instance:**
    1. Once all the previous steps are completed, [restart the AEM Forms SDK instance](/help/forms/using/restart-aem-sdk.md).
-   
-
-
-

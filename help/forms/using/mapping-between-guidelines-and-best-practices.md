@@ -6,6 +6,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: 0948231a-bd9e-4d29-946d-2d8c17e27c28
 ---
 # Mapping between guidelines and best practices
 
@@ -187,6 +188,3 @@ The following sections map Section 508 and WCAG guidelines to the best practices
 | 4.1 [Compatible](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
 | 4.1.1 [Parsing](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | No specific LiveCycle techniques | |
 | 4.1.2 [Name, Role, Value](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3 Choose the right controls</li> <li>2.5 Provide proper labels for form controls</li> | |
-
-
-

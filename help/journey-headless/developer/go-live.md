@@ -148,7 +148,7 @@ After the updates have been uploaded to Cloud Manager, deploy them to AEM using 
 
 <!-- Cannot find a parallel link -->
 <!--
-You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively - see the [Overview](/help/implementing/deploying/overview.md) to start.
 -->
 
 ## Performance Monitoring {#performance-monitoring}

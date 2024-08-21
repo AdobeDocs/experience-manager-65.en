@@ -6,6 +6,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: 77fd3bc5-9a05-4442-af2b-238169d8061a
 ---
 # Techniques for testing form accessibility
 
@@ -27,6 +28,3 @@ Many users with vision impairment rely on high contrast between the text and the
 * Do parts of the form become invisible, unrecognizable, or difficult to use?
 * Do any areas continue to appear black on a white background?
 * Are any elements improperly sized or truncated?
-
-
-

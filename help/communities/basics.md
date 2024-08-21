@@ -22,7 +22,7 @@ Components may be explored using an AEM instance and the interactive [Community 
 
 When authoring page content, if the underlying template permits changes to the design of the page, it is possible to enable components that are not already available in the components browser as part of the site design.
 
-The available Communities components are listed [here](author-communities.md#available-communities-components).
+See the list under [Available Communities Components](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >

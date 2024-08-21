@@ -72,4 +72,4 @@ Yes, Self-Assessment Questionnaire D and Attestation of Compliance are available
 
 ## 16. How can I request for an I/O Runtime trial license?
 
-You can request for a trial license to use I/O Runtime [here](https://adobeio.typeform.com/to/obqgRm).
+See [Getting Access](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) for details of requesting a trial license to use I/O Runtime.

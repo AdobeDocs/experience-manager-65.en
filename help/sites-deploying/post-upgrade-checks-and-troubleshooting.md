@@ -97,7 +97,7 @@ Several features in AEM require additional steps following the upgrade. A full l
 
 #### Enable Data Store Garbage Collection {#enable-data-store-garbage-collection}
 
-If using a File Data Store, ensure that the Data Store Garbage Collection task is enabled and added to the Weekly Maintenance list. Instructions are outlined [here](/help/sites-administering/data-store-garbage-collection.md).
+If using a File Data Store, ensure that the Data Store Garbage Collection task is enabled and added to the Weekly Maintenance list. Instructions are outlined under [Revision Cleanup](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ If using a File Data Store, ensure that the Data Store Garbage Collection task i
 
 #### Enable Online Revision Cleanup {#enable-online-revision-cleanup}
 
-If using MongoMK or the new TarMK segment format, ensure that the Revision Clean Up task is enabled and added to the Daily Maintenance list. Instructions outlined [here](/help/sites-deploying/revision-cleanup.md).
+If using MongoMK or the new TarMK segment format, ensure that the Revision Clean Up task is enabled and added to the Daily Maintenance list. Instructions are outlined under [Revision Cleanup](/help/sites-deploying/revision-cleanup.md).
 
 ### Execute Test Plan {#execute-test-plan}
 

@@ -136,7 +136,7 @@ In essence, JCR is a system of nodes and properties, in which nodes can inherit 
 
 JCR has several predefined node types and property types, but in general the typing system is flexible, and (indeed) one of the strengths of JCR is that it allows structured and unstructured content to be stored/managed with equal ease. That is, JCR can accommodate highly structured data, but it can also accommodate arbitrary dynamic data structures without schema constraints.
 
-The JavaDoc for JCR's Java&trade; API is [here](https://jackrabbit.apache.org/jcr/jcr-api.html).
+The JavaDoc for JCR's Java&trade; API is available from the [Apache Software Foundation - JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Before attempting to read the JavaDoc or the JCR spec itself, you might want to look at [this high-level explanation](/help/sites-developing/the-basics.md#java-content-repository) of JCR as implemented by Adobe Experience Services.
 

@@ -224,6 +224,7 @@ user-guide-title: AEM 6.5
       + [Configuring Video Tracking for Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
       + [HTTP2 Delivery of Content FAQ](/help/sites-administering/scene7-http2faq.md)
       + [Troubleshooting your Adobe Campaign Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
+      + [SharePoint Connector](/help/sites-administering/sharepoint-connector.md)
       + [SharePoint Connector Licenses, Copyright Notices, and Disclaimers](/help/sites-administering/sharepoint-connector-licenses.md)
       + [DHTML Viewer End-of-Life FAQs](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
       + [Integrating with Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
@@ -262,7 +263,6 @@ user-guide-title: AEM 6.5
       + [Administering Tags](/help/sites-administering/tags.md)
       + [The Page Exporter](/help/sites-administering/page-exporter.md)
       + [Classic UI Tagging Console](/help/sites-administering/classic-console.md)
-      + [Content Management for Screens](/help/sites-administering/content-management-screens.md)
       + [WebDAV Access](/help/sites-administering/webdav-access.md)
   + Classic UI Authoring {#classic-ui}
     + Introduction to Classic UI Authoring {#introduction}
@@ -1225,6 +1225,7 @@ user-guide-title: AEM 6.5
       + [Configuring URLs for SEO](/help/commerce/cif/configuring/advanced-url-configuration.md)
       + [Caching Options](/help/commerce/cif/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce/cif/configuring/custom-http-headers.md)
+      + [Shopping Cart and Dispatcher Setup](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
     + Developing {#developing}
       + [Developing with AEM](/help/commerce/cif/develop.md)
       + [Styling CIF Components](/help/commerce/cif/customizing/style-cif-component.md)
@@ -1254,9 +1255,6 @@ user-guide-title: AEM 6.5
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [Developing (generic)](/help/commerce/cif-classic/developing/generic.md)
       + [Developing with SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ Edge Delivery Services {#edge-delivery-services}
-  + [Getting Started with Edge Delivery](/help/edge/overview.md)
-  + [Using Edge Delivery](/help/edge/using.md)
 + Headless {#headless}  
   + [AEM Headless Journeys](/help/journey-headless/overview.md)
   + AEM Headless Developer Journey {#developer}

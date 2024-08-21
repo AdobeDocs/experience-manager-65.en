@@ -488,6 +488,8 @@ The following tasks are available in the Operations Dashboard:
 1. The **Data Store Garbage Collection** task, located under the **Weekly Maintenance Window** menu.
 1. The **Audit Log Maintenance** task, located under the **Weekly Maintenance Window** menu.
 1. The **Version Purge Maintenance** task, located under the **Weekly Maintenance Window** menu.
+1. The **Project Purge** maintenance task, located under the **Weekly Maintenance Window** menu; using the **Add** option.
+1. The **Purge of ad-hoc tasks** maintenance task, located under the **Weekly Maintenance Window** menu; using the **Add** option.
 
 The default timing for the daily maintenance window is 2:00 A.M. through 5:00 A.M. The tasks configured to run in the weekly maintenance window run between 1:00 A.M and 2:00 A.M. on Saturdays.
 
@@ -501,7 +503,7 @@ You can also configure the timings by pressing the gear icon on any of the two m
 
 ### Revision Clean Up {#revision-clean-up}
 
-For more information on performing Revision Clean Up, [see this dedicated article](/help/sites-deploying/revision-cleanup.md).
+For more information, see [Revision Cleanup](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
@@ -516,7 +518,7 @@ You can access the Lucene Binaries Cleanup task from: **AEM &gt; Tools &gt; Oper
 
 ### Data Store Garbage Collection {#data-store-garbage-collection}
 
-For details on Data Store Garbage Collection, see the dedicated [documentation page](/help/sites-administering/data-store-garbage-collection.md).
+For details on Data Store Garbage Collection, see the dedicated [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md) documentation page.
 
 ### Workflow purge {#workflow-purge}
 
@@ -527,7 +529,7 @@ Workflows can also be purged from the Maintenance Dashboard. To run the Workflow
 
 >[!NOTE]
 >
->For more detailed information about Workflow Maintenance, see [this page](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>For more detailed information about Workflow Maintenance, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Audit Log Maintenance {#audit-log-maintenance}
 
@@ -558,6 +560,26 @@ You can schedule the Version Purge maintenance task to delete old versions autom
 >[!CAUTION]
 >
 >To optimize the repository size that you should run the version purge task frequently. The task should be scheduled outside of business hours when there is a limited amount of traffic.
+
+### Project Purge {#project-purge}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`. See the Maintenance Window table below for additional configuration details.
+
+Enable the maintenance task by adding another node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. 
+-->
+
+Configure the OSGI properties under **Adobe Projects Purge Configuration** (com.adobe.cq.projects.purge.Scheduler).
+
+### Purge of ad-hoc tasks {#purge-of-ad-hoc-tasks} 
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`.
+
+See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it `granite_TaskPurgeTask`, with attribute `sling:resourceType` set to `granite/operations/components/maintenance/task` and attribute `granite.maintenance.name` set to `TaskPurge`. 
+-->
+ 
+Configure the OSGI properties under **Ad-hoc Task Purge** (`com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask`).
 
 ## Custom Maintenance Tasks {#custom-maintenance-tasks}
 
