@@ -538,7 +538,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
   
 * After upgrading to AEM Forms Service Pack 6.5.21.0, the `PaperCapture` service fails to perform OCR (Optical Character Recognition) operations on PDFs. The service does not generate output in the form of a PDF or a log file. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (CQDOC-21680)
 
-* When users update from AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0) to AEM 6.5 Forms Service Pack 20 (6.5.20.0) or AEM 6.5 Forms Service Pack 21 (6.5.21.0), users encounter a JSP compilation error, which prevents them from opening or creating adaptive forms and also causes errors with other AEM interfaces like the page editor, AEM Forms UI, and AEM Workflow editor. (FORMS-15256)
+* When users update from AEM 6.5 Forms Service Pack 18 (6.5.18.0) or AEM 6.5 Forms Service Pack 19 (6.5.19.0) to AEM 6.5 Forms Service Pack 20 (6.5.20.0) or AEM 6.5 Forms Service Pack 21 (6.5.21.0), users encounter a JSP compilation error, which prevents them from opening or creating adaptive forms and also causes errors with other AEM interfaces like the page editor, AEM Forms UI, AEM Workflow editor, and AEM System Overview UI. (FORMS-15256)
 
   If you face such an issue, perform the following steps to resolve it:
     1. Navigate to the directory `/libs/fd/aemforms/install/` in CRXDE.
