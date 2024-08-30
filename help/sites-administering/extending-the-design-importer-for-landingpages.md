@@ -438,7 +438,7 @@ If no encoding is specified in the imported HTML, then the default encoding set 
 
 The Blank Landing Page template can be over layed by creating a one at: `/apps/<appName>/designimporter/templates/<templateName>`
 
-Steps for creating a template in AEM are explained [here](/help/sites-developing/templates.md).
+Steps for creating a template in AEM are explained under [Templates](/help/sites-developing/templates.md).
 
 ### Referring a component from Landing page {#referring-a-component-from-landing-page}
 

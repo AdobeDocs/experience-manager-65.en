@@ -608,7 +608,7 @@ To learn about user sync and how to enable it, see [User Synchronization](/help/
 
 >[!NOTE]
 >
->Adobe has introduced a new Touch UI based principal view for permissions management. For more details on how to use it, see [this page](/help/sites-administering/touch-ui-principal-view.md).
+>Adobe has introduced a new Touch UI based principal view for permissions management. For more details on how to use it, see [Principal View for Permissions Management](/help/sites-administering/touch-ui-principal-view.md).
 
 This section describes how to set permissions, including replication privileges.
 

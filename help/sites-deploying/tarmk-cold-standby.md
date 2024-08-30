@@ -404,7 +404,7 @@ It is important to run garbage collection on file datastore instances from time 
 1. Run cold standby repository maintenance as described in the section [above](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
 1. After the maintenance process is completed and the instances restarted:
 
-    * On the primary, run the data store garbage collection by way of the relevant JMX bean as described in [this article](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
+    * On the primary, run the data store garbage collection by way of the relevant JMX bean as described in [Running Data Store Garbage Collection via the JMX Console](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
     * On the standby, the data store garbage collection is available only by way of the **BlobGarbageCollection** MBean - `startBlobGC()`. The **RepositoryManagement** MBean is not available on the standby.
 
    >[!NOTE]

@@ -6,6 +6,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: yes
 hidefromtoc: yes
+exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
 ---
 # Best practices for creating forms in forms designer
 
@@ -64,7 +65,7 @@ Related checkpoints
 
 For a form to be accessible, it must be [perceivable](https://www.w3.org/TR/WCAG20/#perceivable) by assistive technology. For example, most screen readers will not consider the visual layout of your form, but rather the underlying structure.
 
-To implement this underlying structure using LiveCycle Designer, you must create a PDF form with accessibility information (sometimes referred to as tags) included so that the screen reader or other assistive technology can read the form’s text and components. In a form with accessibility information, each element contains information about its own structure, plus information about how it is related to or dependent on other elements. Only in PDF files with accessibility information included can screen readers identify and describe the content of a document accurately.
+To implement this underlying structure using LiveCycle Designer, you must create a PDF form with accessibility information (sometimes referred to as tags) included so that the screen reader or other assistive technology can read the form's text and components. In a form with accessibility information, each element contains information about its own structure, plus information about how it is related to or dependent on other elements. Only in PDF files with accessibility information included can screen readers identify and describe the content of a document accurately.
 
 To create an accessible form, you must configure form properties to have LiveCycle Designer generate accessibility information when saving the form design as a PDF file:
 1. Choose File > Form Properties.
@@ -87,7 +88,7 @@ In LiveCycle Designer, this option is selected by default.
 
 ## Choose the right controls {#choose-right-controls}
 
-When you design your forms, use development objects from the tabs available in LiveCycle Designer’s Object Library. You can display this panel by choosing Window > Object Library or by pressing Shift+F12 (see Figure 1).
+When you design your forms, use development objects from the tabs available in LiveCycle Designer's Object Library. You can display this panel by choosing Window > Object Library or by pressing Shift+F12 (see Figure 1).
 
 ![Object Library Panel](/help/forms/using/assets/image-1.png)
 
@@ -114,20 +115,20 @@ Images can help improve comprehension for users with some types of disabilities.
 
 If you choose to use images, provide text descriptions for all image and image field objects. Ensure that the text describes the object and its purpose on the form. When you define a text alternative, the screen reader will read this alternative when it encounters the image. For this reason, an image containing information must always have a text alternative specified.
 
-You provide text descriptions using the Tool Tip or Custom Screen Reader Text properties in the Accessibility palette or via text fields, captions, and object names, as specified in the Name option of the Binding tab. For example, Figure 2 shows an example of an image that contains the text “Get Adobe Reader”. Since a screen reader is not able to read text that is part of an image, you should include a text alternative in the Custom Screen Reader Text field in the Accessibility palette for this object. In most cases, the alternative text should be the same as the text that is visible in the image (see Figure 2).
+You provide text descriptions using the Tool Tip or Custom Screen Reader Text properties in the Accessibility palette or via text fields, captions, and object names, as specified in the Name option of the Binding tab. For example, Figure 2 shows an example of an image that contains the text "Get Adobe Reader". Since a screen reader is not able to read text that is part of an image, you should include a text alternative in the Custom Screen Reader Text field in the Accessibility palette for this object. In most cases, the alternative text should be the same as the text that is visible in the image (see Figure 2).
 
 ![Specifying alternative text for an image using the Accessibility palette](/help/forms/using/assets/image-2.png)
 
 Figure 2: **Specifying alternative text for an image using the Accessibility palette**
 
 When specifying the alternative text, consider the following:
-* If the image object or scanned image includes important information for the form, create text for the image in the Accessibility palette that describes the object and its purpose. The text for a company logo, for example, could consist of the words “company logo” and the name of the company.
-* If the image object contains semantic color information, include this in the description as well. A description of a green traffic light, for example, could be “Transmission successful” and the description of a red light could be “Transmission failed”.
+* If the image object or scanned image includes important information for the form, create text for the image in the Accessibility palette that describes the object and its purpose. The text for a company logo, for example, could consist of the words "company logo" and the name of the company.
+* If the image object contains semantic color information, include this in the description as well. A description of a green traffic light, for example, could be "Transmission successful" and the description of a red light could be "Transmission failed".
 * If you use complex graphics, such as bar charts, provide the information in an alternative accessible version, such as a table or longer textual description.
 * Do not create text descriptions for static images that are only used for decoration.
 * Do not use scanned data as background information. This can happen when a designer scans a print form and uses Adobe LiveCycle Designer to add new fields to the form. Screen readers cannot detect the scanned data in this state.
 
-When you are including purely decorative graphical content into your forms, you want to make sure that screen readers do not announce the image’s presence. For most screen readers, this can be achieved by setting the Screen Reader Text property to None in the Accessibility palette. If you don’t do this, some screen readers may announce the presence of a graphic, without indicating what the graphic represents. For dynamic images, such as image field objects, ensure that text alternatives are properly updated when the image is changed. Do not create text descriptions for image field objects that are only used for decoration. You can use the FormCalc scripting language to assign text descriptions to an image field object dynamically. FormCalc is the standard scripting language of Adobe LiveCycle Designer. For example, consider a form with an image field named ImageField1 and associated text in the imagetext node of the runtime data. You can use scripting to pass this text in an appropriate event (such as `form:ready`)as follows:
+When you are including purely decorative graphical content into your forms, you want to make sure that screen readers do not announce the image's presence. For most screen readers, this can be achieved by setting the Screen Reader Text property to None in the Accessibility palette. If you don't do this, some screen readers may announce the presence of a graphic, without indicating what the graphic represents. For dynamic images, such as image field objects, ensure that text alternatives are properly updated when the image is changed. Do not create text descriptions for image field objects that are only used for decoration. You can use the FormCalc scripting language to assign text descriptions to an image field object dynamically. FormCalc is the standard scripting language of Adobe LiveCycle Designer. For example, consider a form with an image field named ImageField1 and associated text in the imagetext node of the runtime data. You can use scripting to pass this text in an appropriate event (such as `form:ready`)as follows:
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
  
@@ -142,15 +143,17 @@ Related checkpoints
 
 ## Provide proper labels for form controls{#provide-proper-labels}
 
-A form control’s label or caption identifies what the form control is supposed to represent. For example, the text “First name” tells users that they have to enter their first name in a text field. To be accessible by screen readers, the label must be programmatically associated with the form control or the form control must be configured with additional accessibility information using the Accessibility palette; it is not enough to just place a text object next to the control. For sighted or low vision users it is important that the label is properly positioned adjacent to the control. Both techniques will be discussed in the following sections.
+A form control's label or caption identifies what the form control is supposed to represent. For example, the text "First name" tells users that they have to enter their first name in a text field. To be accessible by screen readers, the label must be programmatically associated with the form control or the form control must be configured with additional accessibility information using the Accessibility palette; it is not enough to just place a text object next to the control. For sighted or low vision users it is important that the label is properly positioned adjacent to the control. Both techniques will be discussed in the following sections.
 
 ### Specifying accessible label text using the Accessibility palette
 
-The label that is perceived by screen reader users does not necessarily have to be the same as the visual caption. In some cases you may want to be more specific about the control’s purpose.
+The label that is perceived by screen reader users does not necessarily have to be the same as the visual caption. In some cases you may want to be more specific about the control's purpose.
 For each field object in a form, the Accessibility palette (see Figure 3) can be used to specify what the screen reader will announce to identify the specific form field.
+
 To use the Accessibility palette, follow these steps:
+
 1. Display the Accessibility palette by choosing Window > Accessibility or by pressing Shift+F6.
-1. Select an object in your form. The palette will show the object’s accessibility properties.
+1. Select an object in your form. The palette will show the object's accessibility properties.
  
 ![The Accessibility palette](/help/forms/using/assets/image-3.png)
 
@@ -164,24 +167,24 @@ When the form is saved as a PDF, LiveCycle Designer searches the form for Custom
 
 The following options are available:
 
-* **Custom Text**, which you set in the Accessibility palette’s Custom Screen Reader Text field. This option lets you specify any text you want assistive technology, such as screen readers, to use. Using the Caption setting is best for most situations – creating Custom Screen Reader Text should be considered an option only when using the Caption or a toolTip is not possible.
-* **Tool Tip**, which you set in the Accessibility palette’s Tool Tip field. For most objects, tool tips appear at run time when the user hovers the pointer over the object. Tool tips appear for some read-only objects, such as a paper form’s barcode object, only when a screen reader is in use.
-* **Caption**, which will cause LiveCycle Designer to use the form field’s associated (visual) label as screen reader text.
-* **Name**, which you set in the Binding tab’s Name field. Note that this name cannot contain any spaces.
+* **Custom Text**, which you set in the Accessibility palette's Custom Screen Reader Text field. This option lets you specify any text you want assistive technology, such as screen readers, to use. Using the Caption setting is best for most situations – creating Custom Screen Reader Text should be considered an option only when using the Caption or a toolTip is not possible.
+* **Tool Tip**, which you set in the Accessibility palette's Tool Tip field. For most objects, tool tips appear at run time when the user hovers the pointer over the object. Tool tips appear for some read-only objects, such as a paper form's barcode object, only when a screen reader is in use.
+* **Caption**, which will cause LiveCycle Designer to use the form field's associated (visual) label as screen reader text.
+* **Name**, which you set in the Binding tab's Name field. Note that this name cannot contain any spaces.
 * **None**, which will cause the object to not have a name. This is never recommended for form controls.
 
 Consider the following when using the Accessibility palette for form control labeling:
 
-* If your form control’s caption properly describes the control, then it is accessible for screen readers. In this case, either leave both Custom Text and Tool Tip fields empty in the Accessibility palette, or change the Screen Reader Precedence to Caption.
+* If your form control's caption properly describes the control, then it is accessible for screen readers. In this case, either leave both Custom Text and Tool Tip fields empty in the Accessibility palette, or change the Screen Reader Precedence to Caption.
 * When targeting screen readers, there is no point in specifying different text descriptions for the same form control, as only one will be used: The first non-empty field in the Screen Reader Precedence order. For example, there is no reason to specify both Custom Text and Tool Tip text for a screen reader.
 * By default, the screen reader reads the caption if nothing is specified in the Tool Tip box or the Custom Screen Reader Text box.
 * Do not use the Accessibility palette to create descriptions for any invisible fields or areas.
 * If you have to create a description using the Tool Tip or Custom Screen Reader Text options, always include the caption that is visible on the form, except when the visible caption is not meaningful, for example when the caption itself is abbreviated. This helps screen reader users communicate effectively with other users about UI elements. These different groups of users have difficulty identifying the same UI element if its caption text differs from the Tool Tip or Custom Screen Reader Text.
 * For checkboxes and drop-down list controls in table cells, the screen reader will announce whatever caption, tool tip, or custom screen reader text you specify for the object. If you want to use the column header for the alternative text for these objects when placed in a table, then do not provide a caption, tool tip, or custom screen reader text.
 * If the control requires additional instructions, make sure these are included in the text alternative as well. Include enough spoken information for users to know what input is expected and how to complete the field correctly, but do not overwhelm users with redundant information.
-* Don’t provide unneeded information describing how to operate controls – let the user’s assistive technologies handle this for the user. Users can configure the verbosity to suit their comfort levels.
+* Don't provide unneeded information describing how to operate controls – let the user's assistive technologies handle this for the user. Users can configure the verbosity to suit their comfort levels.
 
-Figure 4 shows an example of a text field with a visual caption that may be unclear for some screen reader users. In this example, Custom Screen Reader Text is set to ”Number of Pages”, and the Screen Reader Precedence is set to Custom Text. As a result the actual (visual) caption text (“# of pages”) will not be used by the screen reader. Alternatively, a Tool Tip could have been specified.
+Figure 4 shows an example of a text field with a visual caption that may be unclear for some screen reader users. In this example, Custom Screen Reader Text is set to "Number of Pages", and the Screen Reader Precedence is set to Custom Text. As a result the actual (visual) caption text ("# of pages") will not be used by the screen reader. Alternatively, a Tool Tip could have been specified.
 
 ![Specifying Custom Screen Reader Text when the visible label is inadequate](/help/forms/using/assets/image-4.png)
 
@@ -211,13 +214,13 @@ It is strongly recommended to use standard components rather than custom compone
 * In list boxes and drop-down lists, announce the default item selected in the list. Be sure that the user knows to use the Up Arrow and Down Arrow keys to move through the list items. Note that pressing the Tab key or the Enter or Return key will select the item in the list. Using scripting, you can set the object's Change event to announce which item is selected from the list.
 * Announce to users any special keystrokes they need to perform a function, for example, pressing the spacebar to select a button or the Down Arrow key to select an item from a list box.
 
-### Correctly positioning a control’s caption
+### Correctly positioning a control's caption
 
 The placement of a caption is important because users will expect them to be found adjacent to the control. For screen magnification users this is even more important, as they may not be able to view both the control and the caption at the same time if they are too far apart.
 
 When you create an object, LiveCycle Designer automatically positions the caption as specified by the object type. The captions of radio buttons, for example, are placed on the right. This default placement is always the best location for an accessible caption. If you must change the position of the caption text, use these steps:
 1. Select the object by moving the focus to it.
-1. In the Layout palette, select the position of your object’s caption from the Position option in the Caption section, at the bottom of the palette.
+1. In the Layout palette, select the position of your object's caption from the Position option in the Caption section, at the bottom of the palette.
 
 The example in Figure 5 shows a text box with a caption above it. The Position in the Layout palette is set to Top. The default location of the caption is to the left of the text box.
  
@@ -234,12 +237,12 @@ The following table provides overview of label placement rules for commonly used
 | Radio Button Group | Create a visible title for the radio button group by creating a static text element and placing it to the left of or above the group. For each individual radio button, place the label to the right (default). |
 | Drop-Down List | Place the caption to the left of the object (default). If this is not possible, place it immediately above it. For drop-down list controls in table cells, the screen reader will announce whatever caption, tool tip, or custom screen reader text you specify for the object. If you want to use the column header as the alternative text for these objects in a table, then do not provide a caption, tool tip, or custom screen reader text. |
 | List Box | The caption is positioned above the list box by default when you create it. |
-| Button | The caption is automatically placed on the button and does not have to be positioned manually. Ensure that the button’s purpose is properly described by the caption text. |
+| Button | The caption is automatically placed on the button and does not have to be positioned manually. Ensure that the button's purpose is properly described by the caption text. |
 
 
 ### Dynamically populating a Tool Tip or Custom Screen Reader Text
 
-You can also dynamically populate a form control’s text alternative such as its Tool Tip, with a value from a data source. For example, you can display a custom Tool Tip for an object that is in French.
+You can also dynamically populate a form control's text alternative such as its Tool Tip, with a value from a data source. For example, you can display a custom Tool Tip for an object that is in French.
 The schema you connect to could have the following defined for a Tool Tip:
 
 
@@ -280,9 +283,9 @@ Users of assistive technology may have different methods of reading linked text.
 
 Figure 6: **The JAWS Links List dialog box**
 
-For this reason links must be self describing; that is their meaning should not depend on their context (the surrounding text). For example, the words “click here” might form the actual link element in the phrase “click here to download our application form”. Such a link would be difficult to understand when read through a links list, especially when there are multiple links containing the same text.
+For this reason links must be self describing; that is their meaning should not depend on their context (the surrounding text). For example, the words "click here" might form the actual link element in the phrase "click here to download our application form". Such a link would be difficult to understand when read through a links list, especially when there are multiple links containing the same text.
  
-When using links in your form, make sure that each link properly describes its purpose, without depending on its surrounding text or position on the page. For example, instead of using a phrase such as “Click Here” as link text, use “Download application form” as the link text.
+When using links in your form, make sure that each link properly describes its purpose, without depending on its surrounding text or position on the page. For example, instead of using a phrase such as "Click Here" as link text, use "Download application form" as the link text.
 
 **Related checkpoints**
 
@@ -309,7 +312,7 @@ Ensuring a meaningful reading order is very important when designing forms that 
 The reading order of the form includes all static objects (such as text and images) and field objects, but only the interactive form controls are part of the tab order.
 
 >[!NOTE]
-> In many cases, the tab order is closely related to the reading order. For simplicity, the term “tab order” will be used in place of “tab or reading order” in this guide.
+> In many cases, the tab order is closely related to the reading order. For simplicity, the term "tab order" will be used in place of "tab or reading order" in this guide.
 
 ### The default tab order in LiveCycle Designer forms
 
@@ -323,7 +326,7 @@ For simple forms (that is, forms with a left-to-right, top-to-bottom layout), th
 * Choose View > Show Tab Order.
 * Click Show Order in the Tab Order palette.
 
-All objects will be displayed with a number in the upper right corner, indicating the object’s place in the default tab order. The interactive objects in this sequence form the tab order. Figure 7 shows the reading order visualization of a basic form.
+All objects will be displayed with a number in the upper right corner, indicating the object's place in the default tab order. The interactive objects in this sequence form the tab order. Figure 7 shows the reading order visualization of a basic form.
 
 ![Visualization of the default reading order for a typical order form](/help/forms/using/assets/image-7.png)
 
@@ -348,27 +351,27 @@ To enable the visual aids, use of the following methods:
 
 ### Using position to influence the default tab order
 
-To influence the default tab order, you can change an object’s coordinates by moving it to a different location. For example, in Figure 9, the Product Name field occurs in the tab order before the Quantity field. To change this order, you can move the Product Name field so that it is placed below or to the right of the Quantity field.
+To influence the default tab order, you can change an object's coordinates by moving it to a different location. For example, in Figure 9, the Product Name field occurs in the tab order before the Quantity field. To change this order, you can move the Product Name field so that it is placed below or to the right of the Quantity field.
 
 ![The default tab order is left to right](/help/forms/using/assets/image-9.png)
 
 Figure 9: **The default tab order is left to right**
 
-You can change an object’s position by doing one of the following:
+You can change an object's position by doing one of the following:
 * Drag it using the mouse
 * Select it, and move it using the keyboard arrow keys.
 
 >[!NOTE] 
 > It can be helpful to maintain object alignment by choosing View > Snap To Grid.
 
-You can change an object’s coordinates more precisely using the Layout palette (shown in Figure 10). This palette allows you to specify X and Y coordinates, as well as the object’s width and height.
+You can change an object's coordinates more precisely using the Layout palette (shown in Figure 10). This palette allows you to specify X and Y coordinates, as well as the object's width and height.
  
 ![Using coordinates to precisely position an object with the Layout palette](/help/forms/using/assets/image-10.png)
 
 Figure 10: **Using coordinates to precisely position an object with the Layout palette**
 
 >[!NOTE] 
-> When the caption and the control are not merged, the position of a form control’s caption is independent of the order in which screen readers read the object and its elements. For more information about captions, see the section 2.5 Provide proper labels for form controls in this guide.
+> When the caption and the control are not merged, the position of a form control's caption is independent of the order in which screen readers read the object and its elements. For more information about captions, see the section 2.5 Provide proper labels for form controls in this guide.
 
 ### Using subforms to influence the default tab order
 
@@ -388,7 +391,7 @@ Subforms, radio buttons, and content areas, along with the vertical position of 
 ### Creating a custom tab order using the Tab Order palette
 
 You can change the default tab order when you require a different sequence in your form and the change cannot be achieved with positioning or grouping in subforms. To change the default tab order you can create a custom tab order using the Tab Order palette.
-The Tab Order palette (see Figure 12) allows you to inspect and modify the order in which objects in your form are read by assistive technology and navigated by the user’s Tab key.
+The Tab Order palette (see Figure 12) allows you to inspect and modify the order in which objects in your form are read by assistive technology and navigated by the user's Tab key.
 
 ![The Tab Order palette](/help/forms/using/assets/image-12.png)
 
@@ -437,7 +440,7 @@ Users must be able to fill the form completely using only the keyboard or an equ
  
 In LiveCycle Designer, the easiest way to ensure that your controls are keyboard accessible is by using the controls listed under the Common tab in the Object Library palette. These controls respond to both mouse and keyboard input by default. For more information, see the section 2.3 Choose the right controls in this guide.
 
-Another important aspect of keyboard accessibility is ensuring that each interactive element is part of the form’s tab order. This allows the user to move the cursor forward and backward through the form with the Tab and Shift+Tab keys. Be sure to set a logical tab order that includes all fields and buttons. For more information, see the section 2.6 Ensure the reading and tab order are correct in this guide.
+Another important aspect of keyboard accessibility is ensuring that each interactive element is part of the form's tab order. This allows the user to move the cursor forward and backward through the form with the Tab and Shift+Tab keys. Be sure to set a logical tab order that includes all fields and buttons. For more information, see the section 2.6 Ensure the reading and tab order are correct in this guide.
 
 Finally, it is important to ensure that scripted behavior is keyboard accessible as well, and is not dependent upon device-specific events. The mouse event MouseEnter, for instance, cannot be executed using the keyboard. Also, such event handlers must not interfere with keyboard accessibility. For example, make sure that Change events used in drop-down lists or list boxes do not trigger unexpected actions.
 
@@ -470,9 +473,9 @@ For example, Figure 13 shows a form field that has a red caption (specified usin
 
 Figure 13: **Using color alone to convey information**
 
-To solve this problem, also indicate the form’s required status in the form control’s alternative text (as described in the section 2.5 Provide proper labels for form controls). For example, you could set the screen reader text to “Zip code (required)”. For users who have difficulties seeing color in certain combinations, it is recommended to set the text field type to User Entered – Required in the Object palette in addition to alternate text that indicates that the field is required. Alternatively, you can use indications other than color, such as visual text, text styles, and border styles. However, for screen reader users you will still have to convey the required information using the Accessibility palette.
+To solve this problem, also indicate the form's required status in the form control's alternative text (as described in the section 2.5 Provide proper labels for form controls). For example, you could set the screen reader text to "Zip code (required)". For users who have difficulties seeing color in certain combinations, it is recommended to set the text field type to User Entered – Required in the Object palette in addition to alternate text that indicates that the field is required. Alternatively, you can use indications other than color, such as visual text, text styles, and border styles. However, for screen reader users you will still have to convey the required information using the Accessibility palette.
 
-Also, when providing descriptions or instructions to the form user, keep in mind that statements based on color alone are insufficient for users with a visual impairment. For example, instead of a statement such as, "Click the green button to continue,” use a text description for actions, such as “Click the Next button to continue."
+Also, when providing descriptions or instructions to the form user, keep in mind that statements based on color alone are insufficient for users with a visual impairment. For example, instead of a statement such as, "Click the green button to continue," use a text description for actions, such as "Click the Next button to continue."
 
 >[!NOTE]
 > This best practice does not prohibit the use of color. It prohibits the use of color as the sole means of conveying important information. If a visual indication is still desired for this sort of information, the designer could use an asterisk or similar visual indicator to mark required fields.
@@ -512,7 +515,7 @@ Recommendations for using colors:
 
 ## Provide heading cells for tables{#provide-heading-cells}
 
-Tables are an effective way to organize and present content in accessible forms. When used appropriately, a table’s rows and columns provide a predictable and consistent structure for form content. For example, when a screen reader user navigates into a body row cell, the screen reader specifies the cell location and then reads the cell content. The screen reader specifies the cell location using a combination of row and column headers or row and column numbers. Because screen readers provide information that orients the user to the location of content in the table, its layout directly affects the table’s accessibility.
+Tables are an effective way to organize and present content in accessible forms. When used appropriately, a table's rows and columns provide a predictable and consistent structure for form content. For example, when a screen reader user navigates into a body row cell, the screen reader specifies the cell location and then reads the cell content. The screen reader specifies the cell location using a combination of row and column headers or row and column numbers. Because screen readers provide information that orients the user to the location of content in the table, its layout directly affects the table's accessibility.
 
 You can specify the following roles for table elements as you construct tables. These roles allow screen readers to navigate the table structure using special shortcuts, and will convey to the user the relationship between table cells and corresponding header cells.
 * Table
@@ -617,13 +620,13 @@ Figure 16: **Structuring a form using headings**
 These headings are just static text elements that were given a specific font size and a heading role with the appropriate level.
 
 >[!NOTE] 
-> Simply changing a text label’s visual appearance to look like a heading will not make screen readers recognize it as a heading. You must to apply a heading role.
+> Simply changing a text label's visual appearance to look like a heading will not make screen readers recognize it as a heading. You must to apply a heading role.
 
-Always make sure the order of the heading levels is logical. For example, a subsection of a level 2 heading must always be a level 3 heading; you should never skip levels when marking up subsections. Screen reader users use the different levels to get a better understanding of the form’s structure. For example, after encountering a level 2 heading, the user may use a shortcut to look for level 3 headings and determine if there are any subsections. If you skip levels, the user will have difficulties identifying these subsections.
+Always make sure the order of the heading levels is logical. For example, a subsection of a level 2 heading must always be a level 3 heading; you should never skip levels when marking up subsections. Screen reader users use the different levels to get a better understanding of the form's structure. For example, after encountering a level 2 heading, the user may use a shortcut to look for level 3 headings and determine if there are any subsections. If you skip levels, the user will have difficulties identifying these subsections.
 
 ### Marking up lists
 
-Sometimes it may also be useful to add list content to your form. Lists are useful to group related items together, and they allow screen reader users to know how many items there are in a list and quickly navigate past it. Properly marking up lists makes your form’s structure more clear to screen reader users.
+Sometimes it may also be useful to add list content to your form. Lists are useful to group related items together, and they allow screen reader users to know how many items there are in a list and quickly navigate past it. Properly marking up lists makes your form's structure more clear to screen reader users.
 
 In LiveCycle Designer you create lists using subforms with the following steps:
 
@@ -659,7 +662,7 @@ As part of the form design process, form developers can use scripts to provide a
 When designing scripts for accessibility, consider these general guidelines:
 
 * Keep the form content free of visual interruptions. For example, avoid features that cause content to flicker, blink, or move.
-* Ensure that pop-up windows appear only as a result of user-initiated actions. Similarly, do not allow the current focus of the form (the user’s current view) to change or content to redisplay unless initiated by the user. For example, if the user is completing fields in the lower half of the form, do not allow the focus to change to the upper-left corner of the form unless the user chooses to navigate to this location.
+* Ensure that pop-up windows appear only as a result of user-initiated actions. Similarly, do not allow the current focus of the form (the user's current view) to change or content to redisplay unless initiated by the user. For example, if the user is completing fields in the lower half of the form, do not allow the focus to change to the upper-left corner of the form unless the user chooses to navigate to this location.
 * Users with disabilities may require more time to provide input in fields. Do not specify time- based responses for input fields.
 * Be aware that client-side scripts can interfere with screen readers and keyboards if the script changes the focus of the client application. For example, the change and mouseEnter events, when used with drop-down lists or list boxes, have the potential to cause unexpected actions. Verify that your client-side scripts do not introduce problems for screen reader users and keyboard-only users.
 * Users of assistive technology will sometimes require additional time to complete tasks. In any case where a timed routine is about to expire, display an accessible message to allow for an extension. Alert boxes created via JavaScript are usable by assistive technology. A new window with a message alerting the user of an impending time out may also be deployed.
@@ -710,7 +713,7 @@ Form content will be read by assistive technologies that use speech synthesizers
 
 If the text (or alternative text) in your forms is presented in more than one language, you must identify the areas of your form in which a switch is made from one language to another.
 
-In LiveCycle Designer, setting the primary language is accomplished by setting the Locale property of the form and the Locale property for the top-level subform. To identify changes to the primary language, change the Locale property for any object that uses a language other than the form’s language.
+In LiveCycle Designer, setting the primary language is accomplished by setting the Locale property of the form and the Locale property for the top-level subform. To identify changes to the primary language, change the Locale property for any object that uses a language other than the form's language.
 
 To set the Locale property of a form:
 1. Choose File > Form Properties and select the Default tab
@@ -726,9 +729,9 @@ To set Local property of the top-level subform or an object that requires a diff
 1. Display the Object palette by choosing Window > Object
 1. In the Object palette, select the Field tab, and in the Locale list select the language to be used for the object (see Figure 18). When applying different locale options to individual objects, keep in mind that the objects that are within tables and subforms automatically receive the same locale setting as the table and subform object.
  
-![Changing an object’s locale](/help/forms/using/assets/image-18.png)
+![Changing an object's locale](/help/forms/using/assets/image-18.png)
 
-Figure 18: **Changing an object’s locale**
+Figure 18: **Changing an object's locale**
 
 **Related checkpoints**:
 * WCAG 1.0

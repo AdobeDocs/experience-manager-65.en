@@ -32,7 +32,10 @@ To use the tokens, you need to replicate the HMAC binary to all the instances in
 
 >[!NOTE]
 >
->Make sure you also make the necessary [Dispatcher configuration changes](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) to use the CSRF Protection Framework.
+>Make sure you also make the necessary Dispatcher configuration changes to use the CSRF Protection Framework:
+>
+>* [Configuring Adobe Experience Manager Dispatcher to Prevent CSRF Attacks](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [Dispatcher Overview](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >

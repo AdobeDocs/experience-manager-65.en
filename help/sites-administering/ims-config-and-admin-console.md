@@ -64,9 +64,9 @@ Once a customer exists as an IMS Organization and AMS is done with provisioning 
 
 >[!NOTE]
 >
->For more information about the Adobe Identity Management Basics, including IDP configuration see the article [this page.](https://helpx.adobe.com/enterprise/using/set-up-identity.html)
+>For more information about the Adobe Identity Management Basics, including IDP configuration see the article about [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
 >
->For more info about the Enterprise Administration and [!DNL Admin Console] see the article [this page](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+>For more info about the Enterprise Administration and [!DNL Admin Console] see the [Welcome to the enterprise and teams admin guide](https://helpx.adobe.com/enterprise/managing/user-guide.html).
 
 ### Onboarding Users to the [!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 
@@ -116,15 +116,16 @@ More information about the new group features can be found here:
 
 >[!NOTE]
 >
->For more information regarding the User Sync Tool, see the [documentation page](https://adobe-apiplatform.github.io/user-sync.py/en/).
+>For more details see:
 >
+>* the [User Sync Tool - Adobe User Sync](https://adobe-apiplatform.github.io/user-sync.py/en/)
 >
->The User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>* the User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described under [Authentication for API Access](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)
 >
->The Adobe Developer Console Documentation can be found [here](https://developer.adobe.com/developer-console/docs/guides/).
+>* the [Adobe Developer Console Documentation](https://developer.adobe.com/developer-console/docs/guides/).
 >
+>* the [User Management API Documentation](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 >
->The [!DNL User Management] API that is used by the User Sync Tool is covered at this [location](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >

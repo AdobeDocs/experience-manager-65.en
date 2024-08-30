@@ -87,7 +87,7 @@ To apply the CUG to a page, or pages:
    >
    >CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Plan around this when configuring Live Copy.
    >
-   >For more information, see [this page](closed-user-groups.md#aem-livecopy).
+   >For more information, see [Closed User Groups in AEM - Livecopy](closed-user-groups.md#aem-livecopy).
 
 1. The **Edit Closed User Group** dialog opens. Here you can search for, and select, your CUG, then confirm the group selection with **Save**. 
 

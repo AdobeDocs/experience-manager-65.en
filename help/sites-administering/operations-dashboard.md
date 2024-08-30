@@ -326,74 +326,9 @@ By default, for an out-of-the-box AEM instance, the health checks run every 60 s
 
 You can configure the **Period** with the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) **Query Health Check Configuration** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics). 
 
-## Monitoring with Nagios {#monitoring-with-nagios}
+## Monitoring with External Services {#monitoring-with-external-services}
 
-The Health Check Dashboard can integrate with Nagios via the Granite JMX Mbeans. The below example illustrates how to add a check that shows used memory on the server running AEM.
-
-1. Set up and install Nagios on the monitoring server.
-1. Next, install the Nagios Remote Plugin Executor (NRPE).
-
-   >[!NOTE]
-   >
-   >For more info on how to install Nagios and NRPE on your system, consult the [Nagios Documentation](https://library.nagios.com/library/products/nagios-core/manuals//).
-
-1. Add a host definition for the AEM server. You can accomplish this task by way of the Nagios XI Web Interface, by using the Configuration Manager:
-
-    1. Open a browser and point to the Nagios server.
-    1. Press the **Configure** button in the top menu.
-    1. In the left pane, press the **Core Config Manager** under **Advanced Configuration**.
-    1. Press the **Hosts** link under the **Monitoring** section.
-    1. Add the host definition:
-
-   ![chlimage_1-118](assets/chlimage_1-118.png)
-
-   Below is an example of a host configuration file, in case you are using Nagios Core:
-
-   ```xml
-   define host {
-      address 192.168.0.5
-      max_check_attempts 3
-      check_period 24x7
-      check-command check-host-alive
-      contacts admin
-      notification_interval 60
-      notification_period 24x7
-   }
-   ```
-
-1. Install Nagios and NRPE on the AEM server.
-1. Install the [check_http_json](https://github.com/phrawzty/check_http_json) plugin on both servers.
-1. Define a generic JSON check command on both servers:
-
-   ```xml
-   define command{
-
-       command_name    check_http_json-int
-
-       command_line    /usr/lib/nagios/plugins/check_http_json --user "$ARG1$" --pass "$ARG2$" -u 'https://$HOSTNAME$:$ARG3$/$ARG4$' -e '$ARG5$' -w '$ARG6$' -c '$ARG7$'
-
-   }
-   ```
-
-1. Add a service for used memory on the AEM server:
-
-   ```xml
-   define service {
-
-       use generic-service
-
-       host_name my.remote.host
-
-       service_description AEM Author Used Memory
-
-       check_command  check_http_json-int!<cq-user>!<cq-password>!<cq-port>!system/sling/monitoring/mbeans/java/lang/Memory.infinity.json!{noname}.mbean:attributes.HeapMemoryUsage.mbean:attributes.used.mbean:value!<warn-threshold-in-bytes>!<critical-threshold-in-bytes>
-
-       }
-   ```
-
-1. Check your Nagios dashboard for the newly created service:
-
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+Integration is possible with external technologies or vendors. Consult their documentation for related details.
 
 ## Diagnosis tools {#diagnosis-tools}
 
@@ -553,6 +488,8 @@ The following tasks are available in the Operations Dashboard:
 1. The **Data Store Garbage Collection** task, located under the **Weekly Maintenance Window** menu.
 1. The **Audit Log Maintenance** task, located under the **Weekly Maintenance Window** menu.
 1. The **Version Purge Maintenance** task, located under the **Weekly Maintenance Window** menu.
+1. The **Project Purge** maintenance task, located under the **Weekly Maintenance Window** menu; using the **Add** option.
+1. The **Purge of ad-hoc tasks** maintenance task, located under the **Weekly Maintenance Window** menu; using the **Add** option.
 
 The default timing for the daily maintenance window is 2:00 A.M. through 5:00 A.M. The tasks configured to run in the weekly maintenance window run between 1:00 A.M and 2:00 A.M. on Saturdays.
 
@@ -566,7 +503,7 @@ You can also configure the timings by pressing the gear icon on any of the two m
 
 ### Revision Clean Up {#revision-clean-up}
 
-For more information on performing Revision Clean Up, [see this dedicated article](/help/sites-deploying/revision-cleanup.md).
+For more information, see [Revision Cleanup](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
@@ -581,7 +518,7 @@ You can access the Lucene Binaries Cleanup task from: **AEM &gt; Tools &gt; Oper
 
 ### Data Store Garbage Collection {#data-store-garbage-collection}
 
-For details on Data Store Garbage Collection, see the dedicated [documentation page](/help/sites-administering/data-store-garbage-collection.md).
+For details on Data Store Garbage Collection, see the dedicated [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md) documentation page.
 
 ### Workflow purge {#workflow-purge}
 
@@ -592,7 +529,7 @@ Workflows can also be purged from the Maintenance Dashboard. To run the Workflow
 
 >[!NOTE]
 >
->For more detailed information about Workflow Maintenance, see [this page](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>For more detailed information about Workflow Maintenance, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Audit Log Maintenance {#audit-log-maintenance}
 
@@ -623,6 +560,26 @@ You can schedule the Version Purge maintenance task to delete old versions autom
 >[!CAUTION]
 >
 >To optimize the repository size that you should run the version purge task frequently. The task should be scheduled outside of business hours when there is a limited amount of traffic.
+
+### Project Purge {#project-purge}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`. See the Maintenance Window table below for additional configuration details.
+
+Enable the maintenance task by adding another node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. 
+-->
+
+Configure the OSGI properties under **Adobe Projects Purge Configuration** (com.adobe.cq.projects.purge.Scheduler).
+
+### Purge of ad-hoc tasks {#purge-of-ad-hoc-tasks} 
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`.
+
+See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it `granite_TaskPurgeTask`, with attribute `sling:resourceType` set to `granite/operations/components/maintenance/task` and attribute `granite.maintenance.name` set to `TaskPurge`. 
+-->
+ 
+Configure the OSGI properties under **Ad-hoc Task Purge** (`com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask`).
 
 ## Custom Maintenance Tasks {#custom-maintenance-tasks}
 

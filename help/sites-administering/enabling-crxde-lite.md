@@ -54,11 +54,19 @@ If disabled, you can turn CRXDE Lite on by following the below procedure:
 
 ## Enabling CRXDE Lite with cURL {#enabling-crxde-lite-curl}
 
-You can also enable CRXDE Lite via cURL, by running this command:
+You can also enable CRXDE Lite via cURL, by running (both of) these two commands:
 
-```shell
-curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
-```
+* Enable `create-absolute-uri` :
+
+  ```shell
+  curl -u admin:admin 'http://localhost:4502/system/console/configMgr/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet' --data-raw 'apply=true&action=ajaxConfigManager&%24location=&dav.create-absolute-uri=true&propertylist=dav.create-absolute-uri'
+  ```
+
+* Define `alias` : 
+
+  ```shell
+  curl -u admin:admin 'http://localhost:4502/system/console/configMgr/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet' --data-raw 'apply=true&action=ajaxConfigManager&%24location=&alias=/crx/server&propertylist=alias'
+  ```
 
 ## Other Resources {#other-resources}
 

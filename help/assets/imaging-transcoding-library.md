@@ -29,7 +29,7 @@ In addition to supporting a wide range of file formats and profiles, Imaging Tra
 
 ## Supported platforms {#supported-platforms}
 
-Imaging Transcoding Library is available only for RHEL 7 and CentOS 7 distributions.
+Imaging Transcoding Library is available only for RHEL 8, RHEL 7 and CentOS 7 distributions.
 
 >[!NOTE]
 >

@@ -117,7 +117,7 @@ The advantages:
 
 >[!NOTE]
 >
->In the diagram above, AEM Server 3 and AEM Server 4 are presented with an inactive status assuming a network latency in between the AEM Servers in Data Center 2 and the MongoDB primary node in Data Center 1 that is higher than the requirement documented [here](/help/sites-deploying/aem-with-mongodb.md#checklists). If the maximum latency is compatible with the requirements, for instance through the use of availability zones, then the AEM servers in Data Center 2 can be active as well, creating an active-active AEM cluster across multiple datacenters.
+>In the diagram above, AEM Server 3 and AEM Server 4 are presented with an inactive status assuming a network latency in between the AEM Servers in Data Center 2 and the MongoDB primary node in Data Center 1 that is higher than the requirement documented under [Adobe Experience Manager with MongoDB - Checklists](/help/sites-deploying/aem-with-mongodb.md#checklists). If the maximum latency is compatible with the requirements, for instance through the use of availability zones, then the AEM servers in Data Center 2 can be active as well, creating an active-active AEM cluster across multiple datacenters.
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ It is almost impossible to predict what the exact concurrency model will be afte
 
 >[!NOTE]
 >
->Tough Day can be used to evaluate the performance of the customer's application in the context of the hardware configuration deployed. More information about this tool is available [here](/help/sites-developing/tough-day.md).
+>[Tough Day](/help/sites-developing/tough-day.md) can be used to evaluate the performance of the customer's application in the context of the hardware configuration deployed. 
 
 A minimum deployment with MongoDB will typically involve the following topology:
 
@@ -178,9 +178,9 @@ A set of prerequisites and recommendations is available if you are considering a
 
 **Strong recommendations for MongoDB deployments:**
 
-* Consult the MongoDB for Adobe Experience Manager [article](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
-* Review the MongoDB production [checklist](https://docs.mongodb.org/manual/administration/production-checklist/);
-* Attend a certification class on MongoDB available online [here](https://university.mongodb.com/).
+* Consult the [MongoDB Deployment Review for Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Review the [MongoDB Operations Checklist](https://docs.mongodb.org/manual/administration/production-checklist/);
+* Attend a [certification class on MongoDB - available online](https://university.mongodb.com/).
 
 >[!NOTE]
 >

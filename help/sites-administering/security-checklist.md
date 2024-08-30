@@ -337,7 +337,7 @@ To mitigate this issue, you can do the following steps:
 
 The default asset download servlet allows authenticated users to issue arbitrarily large, concurrent, download requests to create ZIP files of assets. Creating large ZIP archives can overload the server and the network. To mitigate a potential Denial of Service (DoS) risk caused by this behavior, `AssetDownloadServlet` OSGi component is disabled by default on [!DNL Experience Manager] publish instance. It is enabled on [!DNL Experience Manager] author instance by default. 
 
-If you do not need the download capability, disable the servlet on author and publish deployments. If your setup requires that the asset download capability is enabled, see [this article](/help/assets/download-assets-from-aem.md) for more information. Also, you can define a maximum download limit that your deployment can support.
+If you do not need the download capability, disable the servlet on author and publish deployments. If your setup requires that the asset download capability is enabled, see [Download assets from Adobe Experience Manage](/help/assets/download-assets-from-aem.md) for more information. Also, you can define a maximum download limit that your deployment can support.
 
 ### Disable WebDAV {#disable-webdav}
 
@@ -393,7 +393,7 @@ By default, AEM stores system metadata, such as `jcr:createdBy` or `jcr:lastModi
 
 Like all repository data, these properties are mediated by the Oak authorization stack. Access to them should be restricted in accordance with the principle of least privilege.
 
-To support this, Adobe provides a permission hardening package as a basis for customers to build upon. It works by installing a "deny" access control entry at the repository root, restricting anonymous access to commonly used system properties. The package is available for download [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) and can be installed on all supported versions of AEM. 
+To support this, Adobe provides a permission hardening package as a basis for customers to build upon. It works by installing a "deny" access control entry at the repository root, restricting anonymous access to commonly used system properties. The package can be [downloaded ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) and installed on all supported versions of AEM. 
 
 To illustrate the changes, we can compare the node properties that can be viewed anonymously before installing the package:
 

@@ -71,7 +71,7 @@ If a template author chooses to disable the child pages option, a design propert
 
 1. The value of `disableChildren` is pulled from the design configuration and the expression `${cqDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
 
-   You can view the hide expression as the value of the `granite:hide` property [in GitHub here](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
+   You can view the hide expression as the value of the `granite:hide` property [in GitHub](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
 1. The option **Child pages** is no longer rendered for the page author when using the list component.
 

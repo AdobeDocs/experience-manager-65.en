@@ -482,7 +482,7 @@ You can disable it by following the below procedure:
 
 >[!NOTE]
 >
->For more information on Transparent Huge Pages, consult this [article](https://access.redhat.com/solutions/46111).
+>For more information on Transparent Huge Pages, consult the following article from the Red Hat&reg; Customer Portal: [How to use, monitor, and disable transparent hugepages in Red Hat Enterprise Linux 6 ,7 and 8?](https://access.redhat.com/solutions/46111).
 
 #### Disable NUMA {#disable-numa}
 

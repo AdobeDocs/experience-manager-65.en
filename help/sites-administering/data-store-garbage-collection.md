@@ -177,7 +177,7 @@ The curl command returns immediately.
 
 The data store consistency check will report any data store binaries that are missing but are still referenced. To start a consistency check, follow these steps:
 
-1. Go to the JMX console. For information on how to use the JMX console, see [this article](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Go to the JMX console. For information on how to use the JMX console, see [Monitoring Server Resources Using the JMX Console](/help/sites-administering/jmx-console.md#using-the-jmx-console).
 1. Search for the **BlobGarbageCollection** Mbean and click it.
 1. Click the `checkConsistency()` link.
 

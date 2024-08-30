@@ -66,9 +66,9 @@ CIF product catalog pages are virtual pages that get rendered on the fly. Thus, 
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    >If both category and product gets selected, the product will be taken.
+>[!NOTE]
+>
+>If both category and product gets selected, the product will be taken.
 
 This creates a placeholder link that gets replaced with a real link when the page gets rendered.
 
@@ -96,6 +96,6 @@ Using Omnisearch is an easy way for practitioners to find AEM content and produc
 
 The result is grouped by type.
 
-    >[!NOTE]
-    >
-    >Full-text search in Omnisearch does not support associated Content Fragments. Use SKU or UID to find associated Content Fragments.
+>[!NOTE]
+>
+>Full-text search in Omnisearch does not support associated Content Fragments. Use SKU or UID to find associated Content Fragments.
