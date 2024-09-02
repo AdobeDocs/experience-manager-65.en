@@ -1417,7 +1417,8 @@ user-guide-title: AEM 6.5
         + [Updating your Content Fragments for optimized GraphQL Filtering](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
         + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html)
         + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html)
-      + [The Universal Editor](/help/sites-developing/universal-editor/introduction.md)
+      + The Universal Editor {#universal-editor}
+        + [Introduction](/help/sites-developing/universal-editor/introduction.md)
     + Hybrid and SPA AEM Development {#spas}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [SPA Introduction and Walkthrough](/help/sites-developing/spa-walkthrough.md)
