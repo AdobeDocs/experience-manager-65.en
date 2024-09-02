@@ -54,7 +54,7 @@ You will need to take the following steps to update your AEM authoring instance 
 1. Stop bundle with version `2.6.12` and then delete it.
 1. Restart AEM.
 
-Now remove the SAMEORIGIN headers X-Frame option.
+Now remove the `SAMEORIGIN` headers X-Frame option.
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
@@ -88,10 +88,12 @@ With AEM updated and configured, you can set up a local Universal Editor Service
 1. Download and unpack latest Universal Editor Service from [Software Distribution](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home)
 1. Configure Universal Editor Service via environment variables or `.env` file.
    * [See the AEM as a Cloud Service Universal Editor documentation for details.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
-   * Note that the `UES_MAPPING` option might be important if internal IP rewriting is required.
+   * Note that you may need to use the `UES_MAPPING` option if internal IP rewriting is required.
 1. Run `universal-editor-service.cjs`
 
 ### Update the Dispatcher {#update-dispatcher}
+
+With AEM configured and a local Universal Editor service running, you will need to allow a reverse proxy for the new service [in the dispatcher.](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Adjust vhost file of author instance to include a reverse proxy.
 
@@ -101,10 +103,31 @@ With AEM updated and configured, you can set up a local Universal Editor Service
     ProxyPassReverse "/universal-editor" "http://localhost:8008"
    </IfModule>
    ```
+
 1. Restart Apache.
 
 ## Instrument Your App {#instrumentation}
 
 With AEM updated and a local Universal Editor Service running, you can start editing headless content using the Universal Editor.
 
-However that content must be instrumented to take advantage of the Universal Editor. This involves including meta tags to instruct the editor how and where to persist the content. Details of this instrumentation are available in the [Universal Editor documentation for AEM as a Cloud Service.]()
+However that content must be instrumented to take advantage of the Universal Editor. This involves including meta tags to instruct the editor how and where to persist the content. Details of this instrumentation are available in the [Universal Editor documentation for AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
+
+Note that when following documentation for the Universal Editor with AEM as a Cloud Service, the following changes apply when using it with AEM 6.5.
+
+* The protocol in meta tag must be `aem65` instead of `aem`.
+  
+  ```html
+  <meta name="urn:adobe:aue:system:aemconnection" content={`aem65:${getAuthorHost()}`}/>
+  ```
+
+* The Universal Editor Service endpoint must be announced via a meta tag.
+
+   ```html
+   <meta name="urn:adobe:aue:config:service" content={`${getAuthorHost()}/universal-editor`}/>
+   ```
+
+* In the `plugins` section of the components definition, `aem65` must be used instead of `aem`.
+
+>[!TIP]
+>
+>For a comprehensive guide for developers getting started with the Universal Editor, please see the document [Universal Editor Overview for AEM Developers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) in the AEM as a Cloud Service documentation while keeping in mind the necessary changes needed for AEM 6.5 support as mentioned in this section.
