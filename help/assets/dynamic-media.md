@@ -1,6 +1,6 @@
 ---
 title: Work with Dynamic Media
-description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
+description: Learn how to use the software to deliver assets for web, mobile, and social sites.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -10,19 +10,19 @@ exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
 ---
-# Working with Dynamic Media {#working-with-dynamic-media}
+# Work with Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, the software generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 
-Dynamic Media serves interactive viewing experiences, including zoom, 360-degree spin, and video. Dynamic Media uniquely incorporates the workflows of the Adobe Experience Manager digital asset management (Assets) solution to simplify and streamline the digital campaign management process.
+The software serves interactive viewing experiences, including zoom, 360-degree spin, and video. It uniquely incorporates the workflows of the Adobe Experience Manager digital asset management (Assets) solution to simplify and streamline the digital campaign management process.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## What you can do with Dynamic Media {#what-you-can-do-with-dynamic-media}
+## What you can do with the software {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media lets you manage your assets before publishing them. How to work with assets in general is covered in detail in [Work with digital assets](manage-assets.md). General topics include uploading, downloading, editing, and publishing assets; viewing and editing properties, and searching for assets.
+The software lets you manage your assets before publishing them. How to work with assets in general is covered in detail in [Work with digital assets](manage-assets.md). General topics include uploading, downloading, editing, and publishing assets; viewing and editing properties, and searching for assets.
 
 Dynamic Media-only features include the following:
 
@@ -47,23 +47,23 @@ See also [Set up Dynamic Media](administering-dynamic-media.md).
 
 ## Dynamic Media enabled versus Dynamic Media disabled {#dynamic-media-on-versus-dynamic-media-off}
 
-You can tell whether Dynamic Media is enabled (turned on) by the following characteristics:
+You can tell whether the software is enabled (turned on) by the following characteristics:
 
 * Dynamic renditions are available when downloading or previewing assets.
 * Image sets, spin sets, mixed media sets are available.
 * PTIFF renditions are created.
 
-When you select an image asset, the view of the asset is different with Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media uses the on-demand HTML5 viewers.
+When you select an image asset, the view of the asset is different with the software [enabled](config-dynamic.md#enabling-dynamic-media). It uses the on-demand HTML5 viewers.
 
 ### Dynamic renditions {#dynamic-renditions}
 
-Dynamic renditions such as image and viewer presets (under **[!UICONTROL Dynamic]**) are available when Dynamic Media is enabled.
+Dynamic renditions such as image and viewer presets (under **[!UICONTROL Dynamic]**) are available when the software is enabled.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
 ### Image sets, spins sets, mixed media sets {#image-sets-spins-sets-mixed-media-sets}
 
-Image sets, spin sets, and mixed media sets are available if Dynamic Media is enabled.
+Image sets, spin sets, and mixed media sets are available if the software is enabled.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -75,10 +75,10 @@ Dynamic Media-enabled assets include `pyramid.tiffs`.
 
 ### Asset views change {#asset-views-change}
 
-With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also click to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled looks like this:
+With the software enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also click to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. With the software enabled, it looks like this:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-With Dynamic Media disabled you can zoom in and out and revert to the original size:
+With the software disabled, you can zoom in and out and revert to the original size:
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
