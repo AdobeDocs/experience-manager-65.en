@@ -614,7 +614,6 @@ user-guide-title: AEM 6.5
     + [Create a Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
     + [Create and use Adaptive Forms Fragments in an Adaptive Form](/help/forms/using/adaptive-form-fragment-core-components.md)
     + [Create themes for Core Components based Adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-    + [Create and use custom function in an Adaptive Form](/help/forms/using/create-and-use-custom-functions.md)
     + [Rule Editor](/help/forms/using/rule-editor-core-components.md)
     + [Create and use custom function in an Adaptive Form Core Components](/help/forms/using/create-and-use-custom-functions-core-components.md)
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -671,6 +670,7 @@ user-guide-title: AEM 6.5
     + [Integrate Adobe Sign with AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
     + [Creating and managing reviews for assets in forms](/help/forms/using/create-reviews-forms.md)
     + [Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+    + [Create and use custom function in an Adaptive Form](/help/forms/using/create-and-use-custom-functions.md)
     + [Create and use custom error handler for Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
   + Interactive Communications {#interactive-communications}
     + [Introduction to Interactive Communication authoring UI](/help/forms/using/introduction-interactive-communication-authoring.md)
