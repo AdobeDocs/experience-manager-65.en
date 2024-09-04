@@ -331,7 +331,7 @@ user-guide-title: AEM 6.5
         + [Adding Dynamic Media Assets to Pages](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
         + [Adding Scene7 Features to your Page](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
         + [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
-        + [Working with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+        + [Work with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
         + [Naming conventions for assets testing](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
   + [About DAM](/help/assets/assets.md)

@@ -18,7 +18,7 @@ role: User
 
 Dynamic Media serves interactive viewing experiences, including zoom, 360-degree spin, and video. Dynamic Media uniquely incorporates the workflows of the Adobe Experience Manager digital asset management (Assets) solution to simplify and streamline the digital campaign management process.
 
-Working with Dynamic Media is not available in the classic UI. See [Work with Dynamic Media,](/help/assets/dynamic-media.md) which covers the touch-enabled user interface.
+Working with Dynamic Media is not available in the classic UI. See [Work with Dynamic Media](/help/assets/dynamic-media.md), which covers the touch-enabled user interface.
 
 >[!NOTE]
 >
