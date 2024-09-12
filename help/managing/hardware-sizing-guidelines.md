@@ -178,17 +178,6 @@ Also see [Parallelization](/help/managing/hardware-sizing-guidelines.md#parallel
 
 Usually you can use the same hardware for your author environment as is recommended for your publishing environment. Typically, website traffic is lower on authoring systems, but cache efficiency is lower too. However, the fundamental factor here is the number of authors working in parallel, together with the type of actions being made to the system. In general, AEM clustering (of the author environment) is most effective at scaling read operations; in other words, a AEM cluster scales well with authors who are performing basic edit operations.
 
-The benchmark tests at Adobe were performed using the Red Hat&reg; 5.5 operating system, running on a Hewlett-Packard ProLiant DL380 G5 hardware platform with the following configuration:
-
-* Two Quad Core Intel Xeon&reg; X5450 CPUs at 3.00 GHz
-* 8-GB RAM
-* Broadcom NetXtreme II BCM5708 Gigabit Ethernet
-* HP Smart Array RAID Controller, 256-MB cache
-* Two 146 GB 10,000-RPM SAS disks configured as a RAID0 stripe set
-* SPEC CINT2006 Rate benchmark score is 110
-
-AEM instances were running with a minimum heap size of 256M, a maximum heap size of 1024M.
-
 ## Publish environment-specific calculations {#publish-environment-specific-calculations}
 
 ### Caching efficiency and traffic {#caching-efficiency-and-traffic}
@@ -259,18 +248,6 @@ The variables in the equation are as follows:
 </table>
 
 If you have a more complex website, you also need more powerful web servers so that AEM can answer a request in an acceptable time.
-
-* Complexity below 4:
-  * 1024 MB JVM RAM&#42;
-  * Low to mid-performance CPU
-
-* Complexity from 4 through 8:
-  * 2048 MB JVM RAM&#42;
-  * Mid to high-performance CPU
-
-* Complexity above 8:
-  * 4096 MB JVM RAM&#42;
-  * High to high-end-performance CPU
 
 >[!NOTE]
 >
