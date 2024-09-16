@@ -57,22 +57,22 @@ You have two image crop options from which to choose: Pixel Crop or Smart Crop. 
 | --- | --- | --- |
 | Pixel Crop | Bulk crop images based on dimensions only. | To use this option, select **[!UICONTROL Pixel Crop]** from the Cropping Options drop-down list.<br><br>To crop from the sides of an image, you enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file.<br><br>An Image Profile pixel crop renders in the following manner:<br>&bull; Values are Top, Bottom, Left, and Right.<br>&bull; Top left is considered `0,0` and the pixel crop is calculated from there.<br>&bull; Crop starting point: Left is X and Top is Y<br>&bull; Horizontal calculation: horizontal pixel dimension of original image minus Left and then minus Right.<br>&bull; Vertical calculation: vertical pixel height minus Top, and then minus Bottom.<br><br>For example, suppose you have a 4000 x 3000 pixel image. You use values: Top=250, Bottom=500, Left=300, Right=700.<br><br>From Top Left (300,250) crop using the fill space of (4000-300-700, 3000-250-500, or 3000,2250).  |
 | Smart Crop | Bulk crop images based on their visual focal point. | Smart Crop uses the power of artificial intelligence in Adobe Sensei to quickly automate the cropping of images in bulk. Smart Crop automatically detects and crops to the focal point in any image to capture the intended point of interest, regardless of screen size.</p> <p>To use Smart Crop, select **[!UICONTROL Smart Crop]** from the Cropping Options drop-down list, then to the right of Responsive Image Crop, enable (turn on) the feature.</p> <p>The default breakpoint sizes of Large, Medium, and Small generally cover the full range of sizes that most images are used on mobile and tablet devices, desktops, and banners. If desired, you can edit the default names of Large, Medium, and Small.</p> <p>To add more breakpoints, select **[!UICONTROL Add Crop]** to delete a crop, select the Garbage Can icon. |
-| Color and Image Swatch | Bulk generates an image swatch for each image. | **Note**: Smart Swatch is not supported in Dynamic Media Classic.<br><br>Automatically locate and generate high-quality swatches from product images that show color or texture.<br><br>To use Color and Image Swatch, select **[!UICONTROL Smart Crop]** from the Cropping Options drop-down list, then to the right of Color and Image Swatch, enable (turn on) the feature. Enter a pixel value in the Width and Height text boxes.<br><br>While all image crops are available from the Renditions rail, swatches are only used by way of the Copy URL feature. Use your own viewing component to render the swatch on your site. (The exception to this rule is carousel banners. Dynamic Media provides the viewing component for the swatch used in carousel banners.)<br><br>**Using image swatches**<br>The URL for image swatches is straightforward. It is:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>where `:Swatch` is appended to the asset request.<br><br>**Using color swatches**<br>To use color swatches, you make a `req=userdata` request with the following:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>For example, the following is a swatch asset in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>and here is the swatch asset's corresponding `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>The `req=userdata` response is as follows:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>You can also request a `req=userdata` response in either XML or JSON format, as in the following respective URL examples:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Note:** Create your own WCM component to request a color swatch and parse the `SmartSwatchColor` attribute, represented by a 24-bit RGB hexadecimal value.<br><br>See also [`userdata` in the Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html). |
+| Color and Image Swatch | Bulk generates an image swatch for each image. | **Note**: Smart Swatch is not supported in Dynamic Media Classic.<br><br>Automatically locate and generate high-quality swatches from product images that show color or texture.<br><br>To use Color and Image Swatch, select **[!UICONTROL Smart Crop]** from the Cropping Options drop-down list, then to the right of Color and Image Swatch, enable (turn on) the feature. Enter a pixel value in the Width and Height text boxes.<br><br>While all image crops are available from the Renditions rail, swatches are only used by way of the Copy URL feature. Use your own viewing component to render the swatch on your site. (The exception to this rule is carousel banners. Dynamic Media provides the viewing component for the swatch used in carousel banners.)<br><br>**Using image swatches**<br>The URL for image swatches is straightforward. It is:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>where `:Swatch` is appended to the asset request.<br><br>**Using color swatches**<br>To use color swatches, you make a `req=userdata` request with the following:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>For example, the following is a swatch asset in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>and here is the swatch asset's corresponding `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>The `req=userdata` response is as follows:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>You can also request a `req=userdata` response in either XML or JSON format, as in the following respective URL examples:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Note:** Create your own WCM component to request a color swatch and parse the `SmartSwatchColor` attribute, represented by a 24-bit RGB hexadecimal value.<br><br>See also [`userdata` in the Viewers Reference Guide](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata). |
 
 ## Unsharp Mask {#unsharp-mask}
 
-You use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Adobe Photoshop's *Unsharp Mask* filter.
+Use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on the final downsampled image. You can control the intensity of the effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Adobe Photoshop's *Unsharp Mask* filter.
 
 >[!NOTE]
 >
->Unsharp mask is only applied to downscaled renditions within the PTIFF (pyramid tiff) that are downsampled more than 50%. That means the largest-sized renditions within the ptiff are not affected by unsharp mask whereas smaller-sized renditions such as thumbnails are altered (and show the unsharp mask).
+>The unsharp mask is only applied to downscaled renditions within the PTIFF (pyramid tiff) that are downsampled more than 50%. That means the largest-sized renditions within the ptiff are not affected by the unsharp mask whereas smaller-sized renditions such as thumbnails are altered (and show the unsharp mask).
 
 In **[!UICONTROL Unsharp Mask]**, you have the following filtering options:
 
 | Option | Description |
 | --- | --- |
-|Amount | Controls the amount of contrast applied to edge pixels. The default is 1.75. For high-resolution images, you can increase it to as high as 5. Think of Amount as a measure of filter intensity. Range is 0-5. |
-|Radius | Determines the number of pixels surrounding the edge pixels that affect the sharpening. For high-resolution images, enter from 1 through 2. A low value sharpens only the edge pixels; a high value sharpens a wider band of pixels. The correct value depends on the size of the image. The default value is 0.2. Range is 0-250. |
+|Amount | Controls the amount of contrast applied to edge pixels. The default is 1.75. For high-resolution images, you can increase it to as high as 5. Think of Amount as a measure of filter intensity. The range is 0-5. |
+|Radius | Determines the number of pixels surrounding the edge pixels that affect the sharpening. For high-resolution images, enter from 1 through 2. A low value sharpens only the edge pixels; a high value sharpens a wider band of pixels. The correct value depends on the size of the image. The default value is 0.2. The range is 0-250. |
 Threshold | Determines the range of contrast to ignore when the unsharp mask filter is applied. In other words, this option determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and are sharpened. To avoid introducing noise, experiment with values between 0&ndash;255. |
 
 Sharpening is described in [Sharpening Images](/help/assets/assets/sharpening_images.pdf).
@@ -137,7 +137,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Select **[!UICONTROL Apply Processing Profile to Folders]** and select the folder or multiple folders you want use to receive the newly uploaded assets and select **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Select **[!UICONTROL Apply Processing Profile to Folders]** and select the folder or multiple folders you want to use to receive the newly uploaded assets and select **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
 #### Apply Dynamic Media Image Profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
 
@@ -177,24 +177,27 @@ You can manually realign or resize the smart crop window of an image to further 
 
 After you edit a smart crop and save, the change is propagated everywhere you use the crop for the specific images.
 
-You can rerun smart crop to generate the additional crops again, if necessary.
+Rerun smart crop to generate the additional crops again, if necessary.
 
 See also [Edit the smart crop or smart swatch of multiple images](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **To edit the smart crop or smart swatch of a single image:**
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch Image Profile applied to it.
-
 1. Select the folder so you can open its contents.
 1. Select the image whose smart crop or smart swatch that you want to adjust.
 1. In the toolbar, select **[!UICONTROL Smart Crop]**.
+
+   >[!TIP]
+   >
+   >Use the hot key `s` to edit the smart crops or smart swatches.
 
 1. Do any of the following:
 
     * Near the upper-right corner of the page, drag the slider bar left or right to increase or decrease the image display, respectively.
     * On the image, drag a corner handle to adjust the size of the viewable area of the crop or swatch.
     * On the image, drag the box/swatch to a new location. You can only edit image swatches; color swatches are static.
-    * Above the image, select  **[!UICONTROL Revert]** to undo all your edits and restore the original crop or swatch.
+    * Above the image, select **[!UICONTROL Revert]** to undo all your edits and restore the original crop or swatch.
 
 1. Near the upper-right corner of the page, select **[!UICONTROL Save]**, then select **[!UICONTROL Close]** to return to the folder of assets.
 
@@ -208,7 +211,7 @@ After you apply an Image Profile &ndash; containing Smart Crop &ndash; to a fold
 
 After you edit a smart crop and save, the change is propagated everywhere you use the crop for the specific images.
 
-You can rerun smart crop to generate the additional crops again, if necessary.
+Rerun smart crop to generate the additional crops again, if necessary.
 
 **To edit the smart crop or smart swatch of multiple images:**
 
@@ -261,7 +264,7 @@ You can remove an Image Profile from a folder from within the **[!UICONTROL Tool
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Select the Image Profile that you want to remove from a folder or multiple folders.
-1. Select **[!UICONTROL Remove Processing Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and select **[!UICONTROL Remove]**.
+1. Select **[!UICONTROL Remove Processing Profile from Folders]** and select the folder or multiple folders you want to use to remove the profile from and select **[!UICONTROL Remove]**.
 
     You can confirm that the Image Profile is no longer applied to a folder because the name no longer appears below the folder name.
 
