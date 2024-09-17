@@ -1,11 +1,6 @@
 ---
 title: Hardware Sizing Guidelines
 description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing
-content-type: reference
-docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
@@ -78,7 +73,7 @@ Hardware sizing requirements for advanced use cases need to be based on a detail
 * extensive use of customized code, custom workflows or third-party software libraries
 * integration with unsupported external systems
 
-### Disk Space/ Hard Drive {#disk-space-hard-drive}
+## Disk Space/ Hard Drive {#disk-space-hard-drive}
 
 The disk space required depends heavily on both the volume and type of your web application. The calculations should account for the following:
 
@@ -91,15 +86,11 @@ Disk space is continuously monitored during Online, and Offline, Revision Cleanu
 
 Consider a setup of redundant arrays of independent disks (RAID, for example, RAID10) for data redundancy.
 
->[!NOTE]
->
->The temporary directory of a production instance should have at least 6 GB of available space.
-
-#### Virtualization {#virtualization}
+### Virtualization {#virtualization}
 
 AEM runs well in virtualized environments, but there can be factors such as CPU or I/O that cannot be directly equated to physical hardware. A recommendation is to choose a higher I/O speed (in general) as this is a critical factor, usually. Benchmarking your environment is necessary to get a precise understanding of what resources are required.
 
-#### Parallelization of AEM Instances {#parallelization-of-aem-instances}
+### Parallelization of AEM Instances {#parallelization-of-aem-instances}
 
 **Fail Safeness**
 
@@ -112,17 +103,17 @@ While all systems are running, an increased computational performance is availab
 The estimation of how many cluster nodes are necessary is based on the basic requirements and specific use-cases of the particular web project:
 
 * From the perspective of fail-safeness, it is necessary to determine, for all environments, how critical failure is and the failure compensation time based on how long it takes for a cluster node to recover.
-* For the aspect of scalability, the number of write operations is basically the most important factor; see [Authors Working in Parallel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) for the author environment and [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) for the publish environment. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) for details.
+* For the aspect of scalability, the number of write operations is basically the most important factor. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) for details.
 
-## Hardware Recommendations {#hardware-recommendations}
+### Hardware Recommendations {#hardware-recommendations}
 
 Usually you can use the same hardware for your author environment as is recommended for your publishing environment. Typically, website traffic is lower on authoring systems, but cache efficiency is lower too. However, the fundamental factor here is the number of authors working in parallel, together with the type of actions being made to the system. In general, AEM clustering (of the author environment) is most effective at scaling read operations; in other words, a AEM cluster scales well with authors who are performing basic edit operations.
 
-## Additional use-case specific calculations {#additional-use-case-specific-calculations}
+## Additional Use-case Specific Calculations {#additional-use-case-specific-calculations}
 
 In addition to the calculation for a default web application, consider specific factors for the following use-cases. The calculated values are to be added to the default calculation.
 
-### Assets-specific considerations {#assets-specific-considerations}
+### Assets-specific Considerations {#assets-specific-considerations}
 
 Extensive processing of digital assets requires optimized hardware resources, the most relevant factors are image size and the peak throughput of processed images.
 
@@ -151,7 +142,7 @@ Testing the planned use case with a representative content excerpt can help you 
 
 Also, account for authors working in parallel. They will perceive performance side effects if AEM MSM use cases consume more resources than planned.
 
-### AEM Communities sizing considerations {#aem-communities-sizing-considerations}
+### AEM Communities Sizing Considerations {#aem-communities-sizing-considerations}
 
 AEM sites that include AEM Communities features (community sites) experience a high level of interaction from site visitors (members) in the publish environment.
 
