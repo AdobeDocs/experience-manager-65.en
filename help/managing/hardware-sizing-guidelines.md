@@ -84,8 +84,6 @@ The disk space required depends heavily on both the volume and type of your web 
 
 Disk space is continuously monitored during Online, and Offline, Revision Cleanup. Should the available disk space drop below a critical value, the process is canceled. The critical value is 25% of the current disk footprint of the repository and it is not configurable. Adobe recommends sizing the disk at least two or three times larger than the repository size including the estimated growth.
 
-Consider a setup of redundant arrays of independent disks (RAID, for example, RAID10) for data redundancy.
-
 ### Virtualization {#virtualization}
 
 AEM runs well in virtualized environments, but there can be factors such as CPU or I/O that cannot be directly equated to physical hardware. A recommendation is to choose a higher I/O speed (in general) as this is a critical factor, usually. Benchmarking your environment is necessary to get a precise understanding of what resources are required.
