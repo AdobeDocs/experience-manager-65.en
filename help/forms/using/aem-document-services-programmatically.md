@@ -5071,6 +5071,8 @@ Auto Tag PDF API helps to make a PDF document accessible by adding tags to it, I
 
 ![Auto Tagged PDF document](assets/auto-tag-api.png)
 
+<!--
+
 **Syntax**: `tag(Document inDoc)`
 
 **Input Parameters**
@@ -5171,3 +5173,4 @@ StructLib.AutoTagDoc(outDoc);
 }
 
 ```
+-->
