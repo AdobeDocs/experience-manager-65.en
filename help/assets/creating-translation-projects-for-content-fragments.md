@@ -24,7 +24,7 @@ In this workflow, content fragments to be translated are copied to the language 
 
 **Update language copies**
 
-When the source content fragment is updated or modified, the corresponding locale/language specific content fragment requires retranslation. The update language copies workflow translates an additional group of content fragments and includes it in a lanugage copy for a particular locale. In this case, the translated content fragments are added to the target folder that already contains previously translated content fragments.
+When the source content fragment is updated or modified, the corresponding locale/language specific content fragment requires retranslation. The update language copies workflow translates an additional group of content fragments and includes it in a Language copy for a particular locale. In this case, the translated content fragments are added to the target folder that already contains previously translated content fragments.
 
 ## Create and translate workflow {#create-and-translate-workflow}
 
