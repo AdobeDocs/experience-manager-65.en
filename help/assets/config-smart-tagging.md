@@ -30,15 +30,17 @@ When you integrate with Adobe Developer Console, the [!DNL Experience Manager] s
 
 To configure the Smart Content Service, follow these top-level steps:
 
-1. To generate a public key, [Create a Smart Content Service](#obtain-public-certificate) configuration in [!DNL Experience Manager]. [Obtain public certificate](#obtain-public-certificate) for OAuth integration.
+1. To generate a public key, [Create a Smart Content Service] (#obtain-public-certificate) configuration in [!DNL Experience Manager]. 
 
-<!--1. [Create an integration in Adobe Developer Console](#create-adobe-i-o-integration) and upload the generated public key.
-
-1. [Configure your deployment](#configure-smart-content-service) using the API key and other credentials from Adobe Developer Console.
-
-1. [Test the configuration](#validate-the-configuration).-->
+1. [Obtain public certificate](#obtain-public-certificate) for OAuth integration.
 
 1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
+
+   <!--1. [Create an integration in Adobe Developer Console](#create-adobe-i-o-integration) and upload the generated public key.
+
+   1. [Configure your deployment](#configure-smart-content-service) using the API key and other credentials from Adobe Developer Console.
+
+   1. [Test the configuration](#validate-the-configuration).-->
 
 ### Obtain public certificate by creating Smart Content Service configuration {#obtain-public-certificate}
 
