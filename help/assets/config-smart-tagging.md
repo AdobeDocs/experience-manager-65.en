@@ -40,9 +40,9 @@ To configure the Smart Content Service, follow these top-level steps:
 
    1. [Test the configuration](#validate-the-configuration).-->
 
-### Create Smart Content Service configuration {#create-scs}
+### Create IMS technical account configuration {#create-ims-account-config}
 
-A public certificate lets you authenticate your profile on Adobe Developer Console.
+You need to create IMS technical account configuration using the steps below:
 
 1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
