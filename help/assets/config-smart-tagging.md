@@ -1,7 +1,6 @@
 ---
 title: Configure asset tagging using Smart Content Service
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
-contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
@@ -32,11 +31,10 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. To generate a public key, [Create a Smart Content Service] (#obtain-public-certificate) configuration in [!DNL Experience Manager]. 
 
-1. [Obtain public certificate](#obtain-public-certificate) for OAuth integration.
-
 1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-   <!--1. [Create an integration in Adobe Developer Console](#create-adobe-i-o-integration) and upload the generated public key.
+   <!--1. [Obtain public certificate](#obtain-public-certificate) for OAuth integration.
+   1. [Create an integration in Adobe Developer Console](#create-adobe-i-o-integration) and upload the generated public key.
 
    1. [Configure your deployment](#configure-smart-content-service) using the API key and other credentials from Adobe Developer Console.
 
