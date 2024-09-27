@@ -26,7 +26,7 @@ Before you use the Smart Content Service, ensure the following:
 ## Integrate with Adobe Developer Console {#integrate-adobe-io}
 
 When you integrate with Adobe Developer Console, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service. To integrate, you need an Adobe ID account that has administrator privileges for the organization and Smart Content Service license purchased and enabled for your organization.
-
+<!--
 To configure the Smart Content Service, follow these top-level steps:
 
 1. To generate a public key, [Create a Smart Content Service] (#obtain-public-certificate) configuration in [!DNL Experience Manager]. 
@@ -40,7 +40,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
    1. [Test the configuration](#validate-the-configuration).-->
 
-### Obtain public certificate by creating Smart Content Service configuration {#obtain-public-certificate}
+### Create Smart Content Service configuration {#create-scs}
 
 A public certificate lets you authenticate your profile on Adobe Developer Console.
 
