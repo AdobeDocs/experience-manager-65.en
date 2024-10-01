@@ -15,8 +15,8 @@ Before you can start tagging your assets using Smart Content Services, integrate
 >* Smart Content Services is no longer available to new [!DNL Experience Manager Assets] On-Premise customers. Existing On-Premise customers, who already have this capability enabled, can continue using Smart Content Services.
 >* Smart Content Services is available for existing [!DNL Experience Manager Assets] Managed Services customers, who already have this capability enabled.
 >* New Experience Manager Assets Managed Services customers can follow the instructions mentioned in this article to set up Smart Content Services.
->* Download the [hotfix]() which is meant for the upgrade of Service Pack 21. 
->* For the Service Pack 21 below users can troubleshoot the smart tags for OAuth credentials. See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
+>* To support the Oauth integration on Service Pack 21, you need to install the [hotfix]().
+>* For Service Pack 20 and older, you need to perform the workaround steps for SCS to support Oauth integration. See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md).
 
 Before you use the Smart Content Service, ensure the following:
 
@@ -28,6 +28,17 @@ Before you use the Smart Content Service, ensure the following:
 ## Integrate with Adobe Developer Console {#integrate-adobe-io}
 
 When you integrate with Adobe Developer Console, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service. To integrate, you need an Adobe ID account that has administrator privileges for the organization and Smart Content Service license purchased and enabled for your organization.
+
+To configure the Smart Content Service, follow these top-level steps:
+
+1. Create an integration in [Adobe Developer Console](https://console.adobe.io).
+
+1. Create [IMS technical account configuration](#create-ims-account-config) using the API key and other credentials from Adobe Developer Console.
+
+1. [Configure the Smart Content Service](#configure-smart-content-service).
+
+1. [Test the configuration](#validate-the-configuration).
+
 <!--
 To configure the Smart Content Service, follow these top-level steps:
 
@@ -93,11 +104,7 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
    | -------- | ---------------------------- |
    | Title | Add title of the configuring IMS account. |
    | Associated Adobe IMS Configuration | Choose configuration from the drop down. |
-   | Service URL | To be provided through [Adobe Developer console](https://developer.adobe.com/console/).|
-
-    **[!UICONTROL Service URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
-
-   For example, `https://smartcontent.adobe.io/apac`. You can specify `na`, `emea`, or, `apac` as the regions where your Experience Manager author instance is hosted.
+   | Service URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. For example, `https://smartcontent.adobe.io/apac`. You can specify `na`, `emea`, or, `apac` as the regions where your Experience Manager author instance is hosted.|
 
    >[!NOTE]
    >
@@ -114,7 +121,12 @@ After you have completed the configuration, you can use a JMX MBean to validate 
 
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** to open the OSGi console. Click **[!UICONTROL Main] > [!UICONTROL JMX]**.
 
-1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
+<!--
+1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
+
+1. Click `com.day.cq.dam.similaritysearch.internal.impl (SCS)`.
+
+   ![Mbean window](assets/mbean.png)
 
 1. Click `validateConfigs()`. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
 
