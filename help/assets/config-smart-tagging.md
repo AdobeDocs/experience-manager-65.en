@@ -14,7 +14,7 @@ Before you can start tagging your assets using Smart Content Services, integrate
 >
 >* Smart Content Services is no longer available to new [!DNL Experience Manager Assets] On-Premise customers. Existing On-Premise customers, who already have this capability enabled, can continue using Smart Content Services.
 >* Smart Content Services is available for existing [!DNL Experience Manager Assets] Managed Services customers, who already have this capability enabled.
->* New [!DNL Experience Manager Assets] Managed Services customers can follow the instructions mentioned in this article to set up Smart Content Services.
+>* Adobe customers use the [Adobe Developer Console](https://developer.adobe.com/console) to generate credentials that enable access to various APIs. Customers select from various credential types ranging from OAuth Server-to-Server to Single-Page App. The credential type Service Account (JWT) is now deprecated in favor of the OAuth Server-to-Server credentials with Service Pack 20. This change can be back ported to older Service Packs, starting with Service Pack 11 up to Service Pack 21 with the use of a hotfix that you can [download]().
 
 Before you use the Smart Content Service, ensure the following:
 
@@ -90,6 +90,10 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
    | Title | Add title of the configuring IMS account. |
    | Associated Adobe IMS Configuration | Choose configuration from the drop down. |
    | Service URL | To be provided through [Adobe Developer console](https://developer.adobe.com/console/).|
+
+    **[!UICONTROL Service URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+
+   For example, `https://smartcontent.adobe.io/apac`. You can specify `na`, `emea`, or, `apac` as the regions where your Experience Manager author instance is hosted. 
 
 1. Click **[!UICONTROL Save & Close]**.
 
