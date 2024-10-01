@@ -19,5 +19,5 @@ role: User
 The [Author Environment and Tools](/help/sites-authoring/author-environment-tools.md) section provides information about using [!UICONTROL Content Finder] to find and use assets when editing pages. AEM Assets provides other methods for working with assets:
 
 * [Adding Dynamic Media Classic features to your page](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
-* [Working with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+* [Work with Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
 * [Naming conventions for assets](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
