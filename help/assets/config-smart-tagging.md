@@ -16,8 +16,10 @@ Before you can start tagging your assets using Smart Content Services, integrate
 >* Smart Content Services is available for existing [!DNL Experience Manager Assets] Managed Services customers, who already have this capability enabled.
 >* New Experience Manager Assets Managed Services customers can follow the instructions mentioned in this article to set up Smart Content Services.
 >* For Service Pack 20 and older, you need to perform the workaround steps for SCS to support Oauth integration. See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md).
->* You do not need to follow any specific steps to migrate the existing SCS configuration (JWT). The process is the same as setting up a new integration. Any legacy configuration will be automatically cleaned up.
->* To support the Oauth integration on Service Pack 21, you need to install the [hotfix]().
+>* To support the Oauth integration on Service Pack 21, you need to install the [hotfix](). 
+>* In case you have an older SCS configuration, you can create a new SCS configuration using OAuth integration which is mentioned in this documentation.
+<!--
+>* You do not need to follow any specific steps to migrate the existing SCS configuration (JWT). The process is the same as setting up a new integration. Any legacy configuration will be automatically cleaned up.-->
 
 Before you use the Smart Content Service, ensure the following:
 
@@ -124,7 +126,7 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
 
 1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Smart Tag]** to open the [!UICONTROL Smart Tag Configurations].
 
-1. Select the configuration that you have created and click **[!UICONTROL Properties]**.
+1. Click **[!UICONTROL Properties]** to create a new configuration.
 
 1. Fill up the following fields:
 
