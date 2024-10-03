@@ -15,8 +15,9 @@ Before you can start tagging your assets using Smart Content Services, integrate
 >* Smart Content Services is no longer available to new [!DNL Experience Manager Assets] On-Premise customers. Existing On-Premise customers, who already have this capability enabled, can continue using Smart Content Services.
 >* Smart Content Services is available for existing [!DNL Experience Manager Assets] Managed Services customers, who already have this capability enabled.
 >* New Experience Manager Assets Managed Services customers can follow the instructions mentioned in this article to set up Smart Content Services.
->* To support the Oauth integration on Service Pack 21, you need to install the [hotfix]().
 >* For Service Pack 20 and older, you need to perform the workaround steps for SCS to support Oauth integration. See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md).
+>* You do not need to follow any specific steps to migrate the existing SCS configuration (JWT). The process is the same as setting up a new integration. Any legacy configuration will be automatically cleaned up.
+>* To support the Oauth integration on Service Pack 21, you need to install the [hotfix]().
 
 Before you use the Smart Content Service, ensure the following:
 
@@ -31,7 +32,7 @@ When you integrate with Adobe Developer Console, the [!DNL Experience Manager] s
 
 To configure the Smart Content Service, follow these top-level steps:
 
-1. Create an integration in [Adobe Developer Console](https://console.adobe.io).
+1. Create an integration in [Adobe Developer Console](#create-adobe-io-integration).
 
 1. Create [IMS technical account configuration](#create-ims-account-config) using the API key and other credentials from Adobe Developer Console.
 
@@ -52,6 +53,35 @@ To configure the Smart Content Service, follow these top-level steps:
    1. [Configure your deployment](#configure-smart-content-service) using the API key and other credentials from Adobe Developer Console.
 
    1. [Test the configuration](#validate-the-configuration).-->
+
+### Create Adobe Developer Console integration {#create-adobe-io-integration}
+
+To use Smart Content Service APIs, create an integration in Adobe Developer Console to obtain [!UICONTROL API Key] (generated in [!UICONTROL CLIENT ID] field of Adobe Developer Console integration), [!UICONTROL ORGANIZATION ID], and [!UICONTROL CLIENT SECRET] for [!UICONTROL Assets Smart Tagging Service Settings] of cloud configuration in [!DNL Experience Manager].
+
+1. Access [https://developer.adobe.com](https://developer.adobe.com/) in a browser. Select the appropriate account and verify that the associated organization role is system **administrator**.
+
+1. Create a project with any desired name. Click **[!UICONTROL Add API]**.
+
+1. On the **[!UICONTROL Add an API]** page, select **[!UICONTROL Experience Cloud]** and select **[!UICONTROL Smart Content]**. Click **[!UICONTROL Next]**.
+
+1. Select **[!UICONTROL OAuth Server-to-Server]**. Click **[!UICONTROL Next]**. 
+   For details on how to do this configuration, see the Developer Console documentation, depending on your requirements:
+   
+   * Overview:
+      * [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+
+   * Creating a new OAuth credential:
+      * [OAuth Server-to-Server credential implementation guide](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+
+   * Migrating an existing JWT credential to an OAuth credential:
+      * [Migrating from Service Account (JWT) credential to OAuth Server-to-Server credential](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+
+
+1. In the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
+
+   A page displays more information about the configuration. Keep this page open to copy and add these values in [!UICONTROL Assets Smart Tagging Service Settings] of cloud configuration in [!DNL Experience Manager] to configure smart tags.
+
+   ![OAuth Credential in the Developer Console](assets/ims-configuration-developer-console.png)
 
 ### Create IMS technical account configuration {#create-ims-account-config}
 
@@ -79,7 +109,7 @@ You need to create IMS technical account configuration using the steps below:
 
 1. Confirm the check health dialog box and click close once the configuration is in the healthy state.
 
-### Configure Smart Content Service {#configure-smart-content-service}
+### Create a new configuration {#configure-smart-content-service}
 
 <!--
 >[!CAUTION]
@@ -304,30 +334,19 @@ The validation results are displayed in the same dialog.
 
    ![Add smart tag asset step after the process thumbnail step in the DAM Update Asset workflow](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *Figure: Add smart tag asset step after the process thumbnail step in the [!UICONTROL DAM Update Asset] workflow.*
-
-1. Open the step in edit mode. Under **[!UICONTROL Advanced Settings]**, ensure that the **[!UICONTROL Handler Advance]** option is selected.
+1. Open the properties of the step to modify the details. Under **[!UICONTROL Advanced Settings]**, ensure that the **[!UICONTROL Handler Advance]** option is selected.
 
    ![Configure DAM Update Asset workflow and add smart tag step](assets/smart-tag-step-properties-workflow1.png)
 
-
-   *Figure: Configure DAM Update Asset workflow and add smart tag step*
-
 1. In the **[!UICONTROL Arguments]** tab, select **[!UICONTROL Ignore Errors]** if you want the workflow to complete even if the automatic tagging step fails.
+
+   Moreover, to tag assets when they are uploaded irrespective of whether smart tagging is enabled on folders, select **[!UICONTROL Ignore Smart Tag Flag]**.
 
    ![Configure DAM Update Asset workflow to add smart tag step and select handler advance](assets/smart-tag-step-properties-workflow2.png)
 
+1. Click done ![done icon](assets/do-not-localize/check-ok-done-icon.png) to close the process step.
 
-   *Figure: Configure DAM Update Asset workflow to add smart tag step and select handler advance*
-
-   To tag assets when they are uploaded irrespective of whether smart tagging is enabled on folders, select **[!UICONTROL Ignore Smart Tag Flag]**.
-
-   ![Configure DAM Update Asset workflow to add smart tag step and select ignore Smart Tag flag](assets/smart-tag-step-properties-workflow3.png)
-
-
-   *Figure: Configure DAM Update Asset workflow to add smart tag step and select ignore Smart Tag flag.*
-
-1. Click **[!UICONTROL OK]** to close the process step, and then save the workflow.
+1. Click **[!UICONTROL Sync]** to save the workflow.
 
 ## Train the Smart Content Service {#training-the-smart-content-service}
 
