@@ -293,8 +293,15 @@ First, configure the Mail Service:
 
 Next, configure your SMTP OAuth provider by following the procedure below:
 
+>[!WARNING]
+>
+>If, after completing this configuration, you ever change *any* of the values in the OSGi configuration **CQ Mailer SMTP OAuth2 Provide**, then you must reauthorize again following these steps.
+>
+>If these are not performed, the access token stored at `/conf/global/settings/mailer/oauth` will be invalid and the OAuth2 connection to the SMTP server will fail.
+
 1. Open the AEM Web Console by going to `http://serveraddress:serverport/system/console/configMgr`
 1. Look for, then click **CQ Mailer SMTP OAuth2 Provider**
+
 1. Fill in the required information as follows:
    * Authorization URL: `https://accounts.google.com/o/oauth2/auth`
    * Token URL: `https://accounts.google.com/o/oauth2/token`
@@ -365,6 +372,12 @@ To recap, you must have the following information to configure OAuth2 for the Ma
 **AEM Side Configurations**
 
 Next, integrate your OAuth2 settings with AEM:
+
+>[!WARNING]
+>
+>If, after completing this configuration, you ever change *any* of the values in the OSGi configuration **CQ Mailer SMTP OAuth2 Provide**, then you must reauthorize again following these steps.
+>
+>If these are not performed, the access token stored at `/conf/global/settings/mailer/oauth` will be invalid and the OAuth2 connection to the SMTP server will fail.
 
 1. Go to the Web Console of your local instance by browsing to `http://serveraddress:serverport/system/console/configMgr`
 1. Look for and click **Day CQ Mail Service**
