@@ -32,7 +32,7 @@ Before you use the Smart Content Service, ensure the following:
 
 **New Users**
 
-Install Service Pack 21. To support Oauth integration on Service Pack 21, you need to install [Hotfix for SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
+Install Service Pack 21. To support Oauth integration on Service Pack 21, you need to install [Hotfix for Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
 
 Follow the instructions mentioned in this article to set up Smart Content Services.
 
