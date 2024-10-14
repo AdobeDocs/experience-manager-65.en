@@ -24,8 +24,11 @@ Review the minimum system requirements in the table below for the CIF version th
 |:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
 |CIF Core Components | 2.15.0  | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.15.0) |
 
+### Bug fixes {#bug-fixes-january}
+
+* Fixed add to cart button and add to wishlist button in product collection component
+
 ### Bug fixes {#bug-fixes-October}
 
 * Fixed UI tests to work properly with Core CIF components.
 * Resolved issue with category URL format not functioning as expected in the cloud instance.
-
