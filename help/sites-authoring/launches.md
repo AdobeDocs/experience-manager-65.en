@@ -101,8 +101,7 @@ Launches let you:
 >
 >When the page is promoted any content changes will be reflected, but the component positions will not change.
 
-
-### The Launches Console {#the-launches-console}
+## The Launches Console {#the-launches-console}
 
 The Launches console provides an overview of your launches and lets you take actions on those listed. The console can be accessed by:
 
