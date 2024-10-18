@@ -15,7 +15,7 @@ solution: Experience Manager, Experience Manager Assets
 
 Smart Imaging applies each user's unique viewing characteristics to serve the right images optimized automatically for their experience, resulting in better performance and engagement.
 
-## What is "Smart Imaging"? {#what-is-smart-imaging}
+## About Smart Imaging {#what-is-smart-imaging}
 
 Smart Imaging technology applies Adobe Sensei AI capabilities and works with existing "image presets." It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
