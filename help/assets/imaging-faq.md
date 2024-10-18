@@ -131,7 +131,7 @@ DPR and network bandwidth values are based on the detected client-side values of
 * Previously, both the original and derivative images were cached, and it was a 2-step process to invalidate the cache. In the latest Smart Imaging, only the derivatives get cached, allowing a single-step cache invalidation process.
 * Customers that use custom headers in their ruleset benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging. For example, "Timing Allow Origin" and "X-Robot" as suggested in [Add a custom header value to image responses|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Frequently asked questions {#fag}
+## Frequently asked questions
 
 +++Are there any licensing costs associated with Smart Imaging?
 
