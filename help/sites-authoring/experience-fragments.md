@@ -25,7 +25,7 @@ An Experience Fragment:
 
 You can use Experience Fragments:
 
-* If an author wants to re-use parts (a fragment of an experience) of a page, they need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. Experience Fragments eliminate the need for copy/paste.
+* If an author wants to re-use parts of a page (a fragment of an experience), they need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. Experience Fragments eliminate the need for copy/paste.
 * To support the headless CMS use-case. Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the end user.
 * With [Multi Site Management (MSM)](/help/sites-administering/msm.md); as an Experience Fragment is part of a page. This applies to both the individual fragments and the folders they reside in.
 
