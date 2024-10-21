@@ -29,6 +29,24 @@ Review the minimum system requirements in the table below for the CIF version th
 * Fixed UI tests to work properly with Core CIF components.
 * Resolved issue with category URL format not functioning as expected in the cloud instance.
 
+## Release Date: September 2024
+
+|Component| Version |                                                                                                    Details |
+|:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
+|CIF Core Components | 2.14.2  | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.14.2) |
+
+### Improvements {#improvements-September}
+
+* Make category limit customisable.
+
+### Bug fixes {#bug-fixes-September}
+
+* Commerce fields are not properly integrated with the Assets Metadata Schema editor.
+* Issue with Carousel Products Multifield for Drag & Drop.
+* Issue with Carousel Category Multifield for Drag & Drop
+* On-click doesn’t working for the menus in the Page information on category & product editor page.
+* Order Number is not visible in Order Confirmation Page.
+
 ## Release Date: January 2024
 
 |Component| Version |                                                                                                    Details |
