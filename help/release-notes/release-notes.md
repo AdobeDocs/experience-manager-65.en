@@ -305,6 +305,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### User interface{#foundation-ui-6522}
 
+* The `coralui-component-dialog` was altering the placement of `cq-dialog-actions`, potentially affecting the layout or behavior of action buttons within dialog boxes in AEM. (NPR-42294) BLOCKER
 * The color picker functionality in AEM was malfunctioning. When accessed, it displayed a blank modal, preventing color selection. This issue began after installing AEM 6.5.20 in the Stage environment. The color picker worked correctly *prior* to the update. (NPR-42163)
 * In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **Tools** > **Workflow** > **Models** > select any model > **Start Workflow**, the Browse icon was missing from the Payload field in the **Run Workflow** dialog box. (NPR-42162)
 
