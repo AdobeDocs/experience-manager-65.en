@@ -17,7 +17,7 @@ Learn about the flexibility and power of the Universal Editor and how it can hel
 
 The Universal Editor is a versatile visual editor that is part of Adobe Experience Manager Sites. It enables authors to do what-you-see-is-what-you-get (WYSIWYG) editing of any headless experience.
 
-* Authors benefit from the Universal Editor’s flexibility as it is supports same consistent visual editing for all forms of AEM headless content.
+* Authors benefit from the Universal Editor’s flexibility as it is supports the same consistent visual editing for all forms of AEM headless content.
 * Developers benefit from Universal Editor’s versatility as it also supports true decoupling of the implementation. It allows developers to utilize virtually any framework or architecture of their choice, without imposing any SDK or technology constraints.
 
 Please see the [AEM as a Cloud Service documentation on the Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) for more detail.
@@ -31,6 +31,16 @@ The Universal Editor is a service that works in tandem with AEM to author conten
 * The Universal Editor writes changes back to the AEM author instance using the Universal Editor Service via the dispatcher.
 
 ![Author flow using the Universal Editor](assets/author-flow.png)
+
+## Authentication {#authentication}
+
+1. User login (regardless if using SAML, OAuth, or LDAP) creates a `login-token` cookie which is returned to the user
+1. All subsequent requests include the `login-token` cookie to prevent multiple round trips via the authentication providers.
+1. When opening a page within the Universal Editor, the request opens the Universal Editor with the desired page as a query parameter.
+   * Authentication Handler checks for the query parameter and authenticates the user as appropriate.
+1. All subsequent requests within the Universal Editor will include the `login-token` cookie with the `samesite=none; partitioned` attribute to authenticate requests.
+
+![Authentication flow](assets/authentication-flow.png)
 
 ## Setup {#setup}
 
