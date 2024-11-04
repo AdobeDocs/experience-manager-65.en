@@ -154,7 +154,16 @@ To create a nested launch from the **Sites** console - based on an existing laun
 
    If you select **Done**, you are returned to the **References** rail of the **Sites** console, if you select the appropriate page your new launch is shown.
 
-### Deleting a Launch {#deleting-a-launch}
+### Cloning a Launch {#cloning-a-launch}
+
+You can clone a launch from the [launches console](/help/sites-authoring/launches.md#the-launches-console):
+
+* Select the launch, by tapping/clicking on the thumbnail.
+* The toolbar will appear - select Clone.
+  * The clone will be created and shown in the console. 
+  * The **Launch Title** will indicate that it is a clone. You can update the title by editing the [Launch Configuration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Properties**).
+
+## Deleting a Launch {#deleting-a-launch}
 
 You can delete a launch from the [launches console](/help/sites-authoring/launches.md#the-launches-console):
 
