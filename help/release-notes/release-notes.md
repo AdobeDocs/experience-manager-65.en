@@ -63,8 +63,6 @@ The following is the list of accessibility fixes included in this release:
 
 ### [!DNL Sites]{#sites-6522}
 
-* A
-
 
 #### Accessibility {#sites-accessibility-6522}
 
@@ -95,9 +93,9 @@ The following is the list of accessibility fixes included in this release:
 * There was a discrepancy in the count of Incoming Links in the AEM author environment. The left side rail showed fewer links compared to the Classic UI. Also, some Incoming Links that were legitimate, do not work. (SITES-24837)
 * Extremely long loading times were being reported when viewing page versions in the Timeline view of AEM. It was taking up to 19 minutes to display versions. This issue was ongoing since the upgrade from AEM 6.4.8 to 6.5.18, significantly disrupting workflow efficiency. (SITES-22468 & SITES-22467)
 
-#### Classic UI{#sites-classicui-6522} 
+<!-- #### Classic UI{#sites-classicui-6522} 
 
-* A
+* A -->
 
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6522}
@@ -116,16 +114,14 @@ The following is the list of accessibility fixes included in this release:
 * When using Content Fragments with Multiline Text field items, the markup generated when querying using GraphQL was not retaining the formatting as specified in the HTML. For example, a newline was missing after the list. The impact was that the last paragraph became part of the list. (SITES-23233)
 
 
-#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6522}
+<!-- #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6522}
 
 * A
 
 
 #### [!DNL Content Fragments] - REST API{#sites-restapi-6522}
 
-* A
-
-
+* A -->
 
 
 #### Core Backend{#sites-core-backend-6522}
@@ -141,9 +137,9 @@ The following is the list of accessibility fixes included in this release:
 * After migrating to AEM 6.5.21, the HTML Template Language `data-sly-include` statement no longer functioned as expected, specifically failing to support `appendPath` and `prependPath` expressions. As a result, the included resource's output was not rendered properly, even though it worked correctly prior to the migration. This issue caused rendering failures for resources that rely on these expressions for path manipulation. (GRANITE-52970)
 
 
-#### Campaign integration{#sites-campaign-integration-6522}
+<!-- #### Campaign integration{#sites-campaign-integration-6522}
 
-* A
+* A -->
 
 
 #### Experience Fragments{#sites-experiencefragments-6522}
@@ -155,9 +151,9 @@ The following is the list of accessibility fixes included in this release:
 * After migrating from AEM 6.5.11 to 6.5.20, Cloud configurations on Experience Fragments were not saving correctly. Although the configurations appeared to save in `crx/de`, they would not display upon reopening the configurations console, indicating an issue with persistence. (SITES-22287) MAJOR
 
 
-#### Foundation Components (Legacy){#sites-foundation-components-legacy-6522}
+<!-- #### Foundation Components (Legacy){#sites-foundation-components-legacy-6522}
 
-* A
+* A -->
 
 
 #### Launches{#sites-launches-6522}
@@ -187,11 +183,9 @@ The following is the list of accessibility fixes included in this release:
 * In AEM 6.5.18 and 6.5.19, on deactivating a parent page, multiple deactivation requests were generated for each child page. This issue also broke the bulk unpublishing of the GraphQL endpoints. (NPR-42075 & NPR42010) CRITICAL
 
 
+<!-- ### [!DNL Assets]{#assets-6522}
 
-
-### [!DNL Assets]{#assets-6522}
-
-* A
+* A -->
 
 
 #### [!DNL Dynamic Media]{#assets-dm-6522}
@@ -204,14 +198,14 @@ The following is the list of accessibility fixes included in this release:
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.22.0 Forms add-on package release is scheduled for Thursday, November 28, 2024. A list of Forms fixes and enhancements is added to this section post the release.
 
 
-#### [!DNL Adaptive Forms] {#forms-6522}
+<!-- #### [!DNL Adaptive Forms] {#forms-6522}
 
 * A
 
 
 #### [!DNL Forms Designer] {#forms-designer-6522}
 
-* A
+* A -->
 
 
 ### Foundation {#foundation-6522}
@@ -219,7 +213,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * In the AEM Assets console, an issue occurred when attempting to reorder DITA documents. The breadcrumb at the top of the path browser dialog box incorrectly displays the node name instead of the node title for the root parent. The correct node title only appears after selecting an item within the breadcrumb, indicating a temporary display error. (NPR-42106) MAJOR
 
 
-#### Apache Felix {#foundation-apachefelix-6522}
+<!-- #### Apache Felix {#foundation-apachefelix-6522}
 
 
 * A
@@ -231,7 +225,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Cloud Services{#foundation-cloudservices-6522}
 
-* A
+* A -->
 
 
 #### Communities {#foundation-communities-6522}
@@ -239,17 +233,15 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * After upgrading from AEM 6.5.19 to 6.5.20, an issue emerged where `Connection evic` threads failed to close properly after calls to `UgcSearch`. This problem, observed in the production environment, causes these threads to persist and accumulate over time, potentially impacting performance. (NPR-42019) MAJOR
 
 
-#### Content distribution{#foundation-content-distribution-6522}
+<!-- #### Content distribution{#foundation-content-distribution-6522}
 
-* A
+* A -->
 
 
 #### CRX {#foundation-crx-6522}
 
 * Sorting was not working as per **Groups** in the left side menu in CRX Package Manager. (GRANITE-53277)
 * The Package Manager in AEM restricts the installation of lower package versions by default but allows forceful installations of older versions. However, using the force install option can interfere with future installations through the standard pipeline. For instance, if version 1.21 is installed and version 1.24 is added, the installation succeeds, listing both versions. However, trying to install version 1.22 over 1.24 fails through the pipeline but works if forcefully installed, listing all versions. Similarly, installing version 1.23 is blocked if version 1.24 is already present, as the pipeline does not permit downgrades. (GRANITE-53263)
-
-
 
 
 #### Granite{#foundation-granite-6522}
@@ -270,9 +262,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) Tools  >  **Security** > ![User icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) **Users**, on the User Management page, the data in **Status** column of the table was displaying vertically. (GRANITE-48304)
 
 
-#### Oak {#foundation-oak-6522}
+<!-- #### Oak {#foundation-oak-6522}
 
-* A
+* A -->
 
 
 #### Platform{#foundation-platform-6522}
@@ -292,9 +284,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * Several browsers are phasing out support for **SameSite=None** cookies, which are used to allow cross-site access to cookies. As an alternative, **Partitioned cookies** are being introduced. These cookies isolate storage by the context in which they are used, enhancing privacy and security by preventing tracking across sites while still allowing cookies to function within specific partitions, such as embedded third-party content. (GRANITE-51953)
 
 
-#### Sling{#foundation-sling-6522}
+<!-- #### Sling{#foundation-sling-6522}
 
-* A
+* A -->
 
 
 #### Translation{#foundation-translation-6522}
@@ -310,14 +302,14 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **Tools** > **Workflow** > **Models** > select any model > **Start Workflow**, the Browse icon was missing from the Payload field in the **Run Workflow** dialog box. (NPR-42162)
 
 
-#### WCM{#foundation-wcm-6522}
+<!-- #### WCM{#foundation-wcm-6522}
 
 * A
 
 
 #### Workflow{#foundation-workflow-6522}
 
-* A
+* A 
 
 
 ## Install [!DNL Experience Manager] 6.5.22.0{#install}
@@ -350,7 +342,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 >[!NOTE]
 >
->Dialog on Package Manager UI sometimes exits during the installation of the Service Pack. Adobe recommends that you wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installation is successful. Typically, this issue occurs in the [!DNL Safari] browser but can intermittently occur in any browser.
+>The dialog box on the Package Manager UI sometimes exits during the installation of the Service Pack. Adobe recommends that you wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installation is successful. Typically, this issue occurs in the [!DNL Safari] browser but can intermittently occur in any browser.
 
 **Automatic installation**
 
@@ -371,7 +363,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.20 or later (Use Web Console: `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.20 or later (Use Web Console: `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE. CHECK WITH SAMEER DHAWAN -->
 
 ### Install Service Pack for [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
