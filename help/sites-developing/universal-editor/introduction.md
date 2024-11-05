@@ -52,7 +52,13 @@ In order to test the Universal Editor you will need to:
 
 ### Update and Configure AEM {#update-configure-aem}
 
+There are a number of bundles that must be updated and configurations that must be set in order to use the Universal Editor with AEM 6.5.
+
+#### Apply Latest Service Pack {#latest}
+
 First make sure that you are running the latest service pack for AEM 6.5. You can download the latest service pack from [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+
+#### Upgrade the Adobe Granite Token Authentication bundle. {#token-authentication}
 
 Once you are running the latest service pack of AEM 6.5, you will need to make additional specific updates to your AEM authoring instance to support authoring with the Universal Editor. Begin by upgrading the **Adobe Granite Token Authentication** bundle.
 
@@ -61,12 +67,12 @@ Once you are running the latest service pack of AEM 6.5, you will need to make a
 1. Click **Install/Update...** at the top of the list of bundles.
 1. In the **Upload/Install Bundles** dialog, select the **Start Bundle**, **Refresh Packages**, and **Install Version in Parallel** options.
 1. Click **Choose file** and browse for the `crx-auth-token-2.7.0.jar` file provided to you by Adobe and then click **Install or Update**.
-1. Refresh the list of bundles and then use the search field at the top of the list of bundles to search for **Adobe Granite Token**, clicking on **Apply Filter** to search the list.
+1. Refresh the list of bundles and then use the search field at the top of the list of bundles to search for **Adobe Granite Token Authentication**, clicking on **Apply Filter** to search the list.
 1. You should see two **Adobe Granite Token Authentication** bundles: one with version `2.6.12` and one with version `2.7.0`.
 1. Stop bundle with version `2.6.12` and then delete it.
 1. Restart AEM.
 
-Set the SameSite attribute for the login-token cookie.
+#### Set the SameSite Attribute for the `login-token` cookie. {#samesite-attribute}
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
@@ -74,7 +80,7 @@ Set the SameSite attribute for the login-token cookie.
 1. Click **Save**.
    * There is no need to restart AEM.
 
-Remove the `SAMEORIGIN` headers X-Frame option.
+#### Remove the `SAMEORIGIN` headers X-Frame option. {#sameorigin}
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
@@ -83,29 +89,29 @@ Remove the `SAMEORIGIN` headers X-Frame option.
 1. Click **Save**.
    * There is no need to restart AEM.
 
-Install the Adobe Granite Query Token Authentication Handler.
+#### Install the Adobe Granite Query Token Authentication Handler. {#token-handler}
 
 1. Open the bundles page of the Configuration Manager.
    * `https://<host>:<port>/system/console/bundles`
 1. Click **Install/Update...** at the top of the list of bundles.
 1. In the **Upload/Install Bundles** dialog, select the **Start Bundle**, **Refresh Packages**, and **Install Version in Parallel** options.
 1. Click **Choose file** and browse for the `com.adobe.granite.auth.querytoken-1.0.8.jar` file provided to you by Adobe and then click **Install or Update**.
-1. Refresh the list of bundles and then use the search field at the top of the list of bundles to search for **Adobe Granite Query Parameter Authentication Handler**, clicking on **Apply Filter** to search the list.
-1. You should now see the **Adobe Granite Query Parameter Authentication Handler** bundle running.
+1. Refresh the list of bundles and then use the search field at the top of the list of bundles to search for **Adobe Granite Query Token Authentication Handler**, clicking on **Apply Filter** to search the list.
+1. You should now see the **Adobe Granite Query Token Authentication Handler** bundle running.
 1. Restart AEM.
 
-Configure the Adobe Granite Query Parameter Authentication Handler.
+#### Configure the Adobe Granite Query Parameter Authentication Handler. {#query-parameter}
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Edit the **Adobe Query Token Authentication Handler** in the list and click **Edit the configuration values**.
+1. Edit the **Adobe Granite Query Parameter Authentication Handler** in the list and click **Edit the configuration values**.
 1. Define the the authorization steps for query token authorization.
    * In the **Path** field, provide the repository path for which this authentication handler should be used by Sling.
-   * In the Query Parameter name field, provide the query parameter which is used for authentication.
+   * In the **Query Parameter name** field, provide the query parameter which is used for authentication.
 1. Click **Save**.
    * There is no need to restart AEM.
 
-Configure the Apache Sling Login Admin Whitelist Configuration Fragment.
+#### Configure the Apache Sling Login Admin Whitelist Configuration Fragment. {#whitelist-configuration}
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
@@ -115,7 +121,7 @@ Configure the Apache Sling Login Admin Whitelist Configuration Fragment.
 1. Click **Save**.
    * There is no need to restart AEM.
 
-Upgrade the **Day Communique 5 WCM Core Implementation** bundle.
+#### Upgrade the Day Communique 5 WCM Core Implementation bundle. {#cq5-core}
 
 1. Open the bundles page of the Configuration Manager.
    * `https://<host>:<port>/system/console/bundles`
@@ -127,12 +133,14 @@ Upgrade the **Day Communique 5 WCM Core Implementation** bundle.
 1. Stop bundle with version `5.12.260` and then delete it.
 1. Restart AEM.
 
-Define for which content paths or `sling:resourceTypes` the Universal Editor shall be opened.
+#### Define for which content paths or `sling:resourceTypes` the Universal Editor shall be opened. {#paths}
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Edit the **Apache Sling Servlet** in the list and click **Edit the configuration values**.
-1. Delete the `X-Frame-Options=SAMEORIGIN` value from the **Additional response headers** attribute.
+1. Edit the **Universal Editor URL Service** in the list and click **Edit the configuration values**.
+1. Define for which content paths or `sling:resourceTypes` the Universal Editor shall be opened.
+   * In the **Universal Editor Opening Mapping** field, provide the paths for which the Universal Editor is opened.
+   * In the **Sling:resourceTypes which shall be opened by Universal Editor** field, provide a list of resources which are opened directly by the Universal Editor.
 1. Click **Save**.
    * There is no need to restart AEM.
 
