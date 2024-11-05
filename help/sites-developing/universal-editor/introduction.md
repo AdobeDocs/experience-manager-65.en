@@ -59,7 +59,7 @@ You will need to take the following steps to update your AEM authoring instance 
 1. Click **Install/Update...** at the top of the list of bundles.
 1. In the **Upload/Install Bundles** dialog, select the **Start Bundle**, **Refresh Packages**, and **Install Version in Parallel** options.
 1. Click **Choose file** and browse for the `crx-auth-token-2.7.0.jar` file provided to you by Adobe and then click **Install or Update**.
-1. Refresh the list of bundles and then use the search field at the top of the list of bundes to search for **Adobe Granite Token**. Click on **Apply Filter** to search the list.
+1. Refresh the list of bundles and then use the search field at the top of the list of bundles to search for **Adobe Granite Token**. Click on **Apply Filter** to search the list.
 1. You should see two **Adobe Granite Token Authentication** bundles: one with version `2.6.12` and one with version `2.7.0`.
 1. Stop bundle with version `2.6.12` and then delete it.
 1. Restart AEM.
