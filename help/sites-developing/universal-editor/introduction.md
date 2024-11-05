@@ -1,13 +1,13 @@
 ---
 title: The Universal Editor
-description: Learn about the flexibility and power of the Universal Editor and how it can help power your headless experiences using AEM 6.5.
+description: Learn about the flexibility of the Universal Editor and how it can help power your headless experiences using AEM 6.5.
 feature: Developing
 role: Developer
 ---
 
 # The Universal Editor {#universal-editor}
 
-Learn about the flexibility and power of the Universal Editor and how it can help power your headless experiences using AEM 6.5.
+Learn about the flexibility of the Universal Editor and how it can help power your headless experiences using AEM 6.5.
 
 >[!NOTE]
 >
@@ -17,8 +17,8 @@ Learn about the flexibility and power of the Universal Editor and how it can hel
 
 The Universal Editor is a versatile visual editor that is part of Adobe Experience Manager Sites. It enables authors to do what-you-see-is-what-you-get (WYSIWYG) editing of any headless experience.
 
-* Authors benefit from the Universal Editor’s flexibility as it is supports the same consistent visual editing for all forms of AEM headless content.
-* Developers benefit from Universal Editor’s versatility as it also supports true decoupling of the implementation. It allows developers to utilize virtually any framework or architecture of their choice, without imposing any SDK or technology constraints.
+* Authors benefit from the Universal Editor's flexibility as it is supports the same consistent visual editing for all forms of AEM headless content.
+* Developers benefit from Universal Editor's versatility as it also supports true decoupling of the implementation. It allows developers to utilize virtually any framework or architecture of their choice, without imposing any SDK or technology constraints.
 
 Please see the [AEM as a Cloud Service documentation on the Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) for more detail.
 
@@ -46,9 +46,11 @@ The Universal Editor is a service that works in tandem with AEM to author conten
 
 In order to test the Universal Editor you will need to:
 
-1. Configure your AEM authoring instance.
-1. Set up a local Universal Editor Service.
-1. Adjust your dispatcher to allow the Universal Editor Service.
+1. [Update and configure your AEM authoring instance.](#update-configure-aem)
+1. [Set up a local Universal Editor Service.](#set-up-ue)
+1. [Adjust your dispatcher to allow the Universal Editor Service.](#update-dispatcher)
+
+Once you have complete the setup, you can [instrument your applications to use the Universal Editor.](#instrumentation)
 
 ### Update and Configure AEM {#update-configure-aem}
 
@@ -60,7 +62,7 @@ First make sure that you are running the latest service pack for AEM 6.5. You ca
 
 #### Upgrade the Adobe Granite Token Authentication bundle. {#token-authentication}
 
-Once you are running the latest service pack of AEM 6.5, you will need to make additional specific updates to your AEM authoring instance to support authoring with the Universal Editor. Begin by upgrading the **Adobe Granite Token Authentication** bundle.
+Once you are running the latest service pack of AEM 6.5, you will need to make additional, specific updates to your AEM authoring instance to support authoring with the Universal Editor. Begin by upgrading the **Adobe Granite Token Authentication** bundle.
 
 1. Open the bundles page of the Configuration Manager.
    * `https://<host>:<port>/system/console/bundles`
@@ -165,10 +167,14 @@ With AEM configured and a local Universal Editor service running, you will need 
 
    ```html
    <IfModule mod_proxy.c>
-    ProxyPass "/universal-editor" "http://localhost:8008"
-    ProxyPassReverse "/universal-editor" "http://localhost:8008"
+    ProxyPass "/universal-editor" "http://localhost:8080"
+    ProxyPassReverse "/universal-editor" "http://localhost:8080"
    </IfModule>
    ```
+
+   >[!NOTE]
+   >
+   >8080 is the default port. If you changed this using the `UES_PORT` parameter in [your `.env` file,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) you must adjust the port value here accordingly.
 
 1. Restart Apache.
 
@@ -176,7 +182,7 @@ With AEM configured and a local Universal Editor service running, you will need 
 
 With AEM updated and a local Universal Editor Service running, you can start editing headless content using the Universal Editor.
 
-However that content must be instrumented to take advantage of the Universal Editor. This involves including meta tags to instruct the editor how and where to persist the content. Details of this instrumentation are available in the [Universal Editor documentation for AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
+However your app must be instrumented to take advantage of the Universal Editor. This involves including meta tags to instruct the editor how and where to persist the content. Details of this instrumentation are available in the [Universal Editor documentation for AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
 
 Note that when following documentation for the Universal Editor with AEM as a Cloud Service, the following changes apply when using it with AEM 6.5.
 
