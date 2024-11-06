@@ -5065,9 +5065,18 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 <!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
+#### Auto Tag Table of Content {#auto-tag-toc}
+
+The Auto-Tagging TOC API enhances document accessibility and navigation by automatically generating and tagging Table of Contents entries. This ensures compliance with accessibility standards, improves user experience, and saves time by dynamically updating TOCs with content changes. The API also maintains accuracy and consistency across documents, simplifying content management for developers.
+
+
+
+
 #### Auto Tag PDF documents {#auto-tag-api}
 
 Auto Tag PDF API helps to make a PDF document accessible by adding tags to it, It supports tagging block of text (paragraphs) and the bulleted lists in one operator.
+
+yahan pe hoga sab
 
 ![Auto Tagged PDF document](assets/auto-tag-api.png)
 
