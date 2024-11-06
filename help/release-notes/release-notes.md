@@ -41,6 +41,20 @@ Some of the key features and enhancements in this release include the following:
 
 ### [!DNL Assets]
 
+* While using the Connected Assets feature, the updates made in AEM Assets do not reflect on AEM Sites environment. (ASSETS-42344)
+
+* `Fetch original rendition for Dynamic Media Connected Assets` option is missing within Connected Assets configuration. (ASSETS-41726)
+
+* Uploading assets using the API results in `unclosed resource resolver` error message. (ASSETS-41049)
+
+* Asset properties are getting saved even if you do not define a value for mandatory fields. (ASSETS-37914)
+
+* In AEM version 6.5.19, while removing one option from the search panel results, it unchecks all other available checkboxes as well. (ASSETS-37335)
+
+* Junk values are displayed in the Excel output while performing bulk metadata export operation. (ASSETS-37260)
+
+* In AEM version 6.5.19, when you upload an SVG file in UTF-8 format, the output is blurred. (ASSETS-36616)
+
 #### Enhancements
 
 #### Accessibility fixes
