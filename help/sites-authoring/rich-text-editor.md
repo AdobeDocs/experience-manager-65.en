@@ -10,9 +10,8 @@ role: User,Admin,Architect,Developer
 
 The Rich Text Editor (RTE) is a basic building block for inserting textual content into AEM. It forms the basis of various components, including:
 
-* Text
-* Text Image
-* Table
+* [Text](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [Table](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## In-Place Editing {#in-place-editing}
 
