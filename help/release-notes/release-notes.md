@@ -38,24 +38,6 @@ role: User,Admin,Architect,Developer
 Some of the key features and enhancements in this release include the following:
 
 
-
-### [!DNL Assets]
-
-* While using the Connected Assets feature, the updates made in AEM Assets do not reflect on AEM Sites environment. (ASSETS-42344)
-
-* `Fetch original rendition for Dynamic Media Connected Assets` option is missing within Connected Assets configuration. (ASSETS-41726)
-
-* Uploading assets using the API results in `unclosed resource resolver` error message. (ASSETS-41049)
-
-* Asset properties are saved even if you do not define a value for mandatory fields. (ASSETS-37914)
-
-* In AEM version 6.5.19, while removing one option from the search panel results, it unchecks all other available checkboxes as well. (ASSETS-37335)
-
-* Junk values are displayed in the Excel output while performing the bulk metadata export operation. (ASSETS-37260)
-
-* In AEM version 6.5.19, when you upload an SVG file in UTF-8 format, the output is blurred. (ASSETS-36616)
-
-
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 ## Fixed issues in Service Pack 22 {#fixed-issues}
@@ -182,10 +164,17 @@ Some of the key features and enhancements in this release include the following:
 * In AEM 6.5.18 and 6.5.19, on deactivating a parent page, multiple deactivation requests were generated for each child page. This issue also broke the bulk unpublishing of the GraphQL endpoints. (NPR-42075 & NPR42010) CRITICAL
 
 
-<!-- ### [!DNL Assets]{#assets-6522}
+### [!DNL Assets]{#assets-6522}
 
-* A -->
-
+* While using the Connected Assets feature, the updates made in AEM Assets do not reflect on AEM Sites environment. (ASSETS-42344) MAJOR <!-- Leave the "MAJOR" status priorities in place. -->
+* (ASSETS-41158) MAJOR
+* Uploading assets using the API results in `unclosed resource resolver` error message. (ASSETS-41049) MAJOR
+* (ASSETS-40384) MAJOR
+* In AEM version 6.5.19, while removing one option from the search panel results, it unchecks all other available checkboxes as well. (ASSETS-37335) MAJOR
+* Junk values are displayed in the Excel output while performing the bulk metadata export operation. (ASSETS-37260) MAJOR
+* In AEM version 6.5.19, when you upload an SVG file in UTF-8 format, the output is blurred. (ASSETS-36616) MAJOR
+* `Fetch original rendition for Dynamic Media Connected Assets` option is missing within Connected Assets configuration. (ASSETS-41726)
+* Asset properties are saved even if you do not define a value for mandatory fields. (ASSETS-37914)
 
 #### [!DNL Dynamic Media]{#assets-dm-6522}
 
