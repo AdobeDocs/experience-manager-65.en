@@ -715,7 +715,7 @@ To configure how links are added in AEM from another program, define the HTML ru
         * Specify the target mode:
 
             * **Name** `mode`
-            * **Type** `String`)
+            * **Type** `String`
             * **Value**
 
                 * `auto`: means that an automatic target is chosen
