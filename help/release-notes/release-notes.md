@@ -47,27 +47,13 @@ Some of the key features and enhancements in this release include the following:
 
 * Uploading assets using the API results in `unclosed resource resolver` error message. (ASSETS-41049)
 
-* Asset properties are getting saved even if you do not define a value for mandatory fields. (ASSETS-37914)
+* Asset properties are saved even if you do not define a value for mandatory fields. (ASSETS-37914)
 
 * In AEM version 6.5.19, while removing one option from the search panel results, it unchecks all other available checkboxes as well. (ASSETS-37335)
 
-* Junk values are displayed in the Excel output while performing bulk metadata export operation. (ASSETS-37260)
+* Junk values are displayed in the Excel output while performing the bulk metadata export operation. (ASSETS-37260)
 
 * In AEM version 6.5.19, when you upload an SVG file in UTF-8 format, the output is blurred. (ASSETS-36616)
-
-#### Enhancements
-
-#### Accessibility fixes
-
-The following is the list of accessibility fixes included in this release:
-
-* A
-
-
-### [!DNL Forms]
-
-* A
-
 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
@@ -136,7 +122,6 @@ The following is the list of accessibility fixes included in this release:
 #### [!DNL Content Fragments] - REST API{#sites-restapi-6522}
 
 * A -->
-
 
 #### Core Backend{#sites-core-backend-6522}
 
