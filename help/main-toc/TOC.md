@@ -624,6 +624,8 @@ user-guide-title: AEM 6.5
     + [Adaptive form fragments](/help/forms/using/adaptive-form-fragments.md)
     + [Configuring the Submit action](/help/forms/using/configuring-submit-actions.md)
     + [Using CAPTCHA in adaptive forms](/help/forms/using/captcha-adaptive-forms.md)
+    + [Using hCaptcha in adaptive forms](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+    + [Using Turnstile Captcha in adaptive forms](/help/forms/using/integrate-adaptive-forms-turnstile.md)
     + [Adaptive forms keywords](/help/forms/using/adaptive-forms-keywords.md)
     + [Tables in adaptive forms](/help/forms/using/adaptive-forms-tables.md)
     + [Charts in adaptive forms](/help/forms/using/adaptive-form-charts.md)
