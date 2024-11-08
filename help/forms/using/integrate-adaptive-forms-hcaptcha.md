@@ -15,7 +15,7 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 In addition to hCaptcha&reg;, AEM Forms 6.5 supports the following CAPTCHA solutions:
 
 * [Google reCAPTCHA](/help/forms/using/captcha-adaptive-forms.md)
-* [Cloudflare Turnstile](/help/forms/using/integrate-adaptive-forms-turnstile-core-components.md)
+* [Cloudflare Turnstile](/help/forms/using/integrate-adaptive-forms-turnstile.md)
 
 ## Integrate AEM Forms environment with hCaptcha&reg;
 
