@@ -94,7 +94,7 @@ The feature pack installs a number of new packages for which additional configur
 AEM will open the Universal Editor for pages based on this configuration.
 
 1. AEM will check the mappings under `Universal Editor Opening Mapping` and if the content is under any paths defined there, the Universal Editor is opened for it.
-1. For content not under paths defined in `Universal Editor Opening Mapping`, AEM checks if the `resourceType` of the content matches those defined in **Sling:resourceTypes which shall be opened by Universal Editor** and if the content matches one of those types, the Universal Editor is opened for it.
+1. For content not under paths defined in `Universal Editor Opening Mapping`, AEM checks if the `resourceType` of the content matches those defined in **Sling:resourceTypes which shall be opened by Universal Editor** and if the content matches one of those types, the Universal Editor is opened for it at `${author}${path}.html`.
 1. Otherwise AEM opens the Page Editor.
 
 The following variables are available to define your mappings under `Universal Editor Opening Mapping`.
