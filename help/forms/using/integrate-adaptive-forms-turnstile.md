@@ -1,7 +1,6 @@
 ---
 title: How to use Turnstile in an AEM Adaptive Form 6.5?
 description: Enhance form security with Turnstile service effortlessly. Step-by-step guide inside!
-topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 ---
