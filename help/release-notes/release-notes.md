@@ -33,7 +33,12 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 ## Key features and enhancements
 
-<!-- * _6.5.22.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
+### Sites {#sites}
+
+[The Universal Editor](/help/sites-developing/universal-editor/introduction.md) is now available on AEM 6.5 for headless use cases.
+
+
+### [!DNL Forms]
 
 Some of the key features and enhancements in this release include the following:
 
