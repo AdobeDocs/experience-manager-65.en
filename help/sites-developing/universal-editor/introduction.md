@@ -22,9 +22,9 @@ Please see the [AEM as a Cloud Service documentation on the Universal Editor](ht
 
 The Universal Editor is a service that works in tandem with AEM to author content headlessly.
 
-* The Universal Editor is hosted at `https://experience.adobe.com/#/aem/editor/canvas` and can edit an AEM 6.5 rendered page.
+* The Universal Editor is hosted at `https://experience.adobe.com/#/aem/editor/canvas` and can edit pages rendered by AEM 6.5.
 * The AEM page is read by the Universal Editor via the dispatcher from the AEM author instance.
-* The Universal Editor writes changes back to the AEM author instance using the Universal Editor Service via the dispatcher.
+* The Universal Editor Service, which runs on the same host as the Dispatcher, writes changes back to the AEM author instance.
 
 ![Author flow using the Universal Editor](assets/author-flow.png)
 
@@ -48,7 +48,9 @@ Make sure that you are running at least service pack 21 for AEM 6.5. You can dow
 
 #### Install Universal Editor Feature Pack {#feature-pack}
 
-Install the **Universal Editor Feature Pack for AEM 6.5** [available on Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip) You will need to restart AEM.
+Install the **Universal Editor Feature Pack for AEM 6.5** [available on Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
+
+If you are already running service pack 23 or higher, this step is not necessary.
 
 ### Configure Services {#configure-services}
 
