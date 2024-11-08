@@ -167,9 +167,9 @@ Some of the key features and enhancements in this release include the following:
 ### [!DNL Assets]{#assets-6522}
 
 * While using the Connected Assets feature, the updates made in AEM Assets do not reflect on AEM Sites environment. (ASSETS-42344) MAJOR <!-- Leave the "MAJOR" status priorities in place. -->
-* (ASSETS-41158) MAJOR
+* Issues with the asset publish status when you move assets from one location to another within Experience Manager. (ASSETS-41158) MAJOR
 * Uploading assets using the API results in `unclosed resource resolver` error message. (ASSETS-41049) MAJOR
-* (ASSETS-40384) MAJOR
+* Issues with `AssetReferenceResolverImpl` reference query after upgrading to Experience Manager Service Pack 21. (ASSETS-40384) MAJOR
 * In AEM version 6.5.19, while removing one option from the search panel results, it unchecks all other available checkboxes as well. (ASSETS-37335) MAJOR
 * Junk values are displayed in the Excel output while performing the bulk metadata export operation. (ASSETS-37260) MAJOR
 * In AEM version 6.5.19, when you upload an SVG file in UTF-8 format, the output is blurred. (ASSETS-36616) MAJOR
