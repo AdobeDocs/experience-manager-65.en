@@ -35,7 +35,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 ### Sites {#sites}
 
-[The Universal Editor](/help/sites-developing/universal-editor/introduction.md) is now available for the headless use case when using AEM 6.5 as part of an early adopter program.
+[The Universal Editor](/help/sites-developing/universal-editor/introduction.md) is now available on AEM 6.5 for headless use cases.
 
 If you are interested in testing this new feature and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
 
