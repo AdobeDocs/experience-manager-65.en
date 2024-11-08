@@ -9,10 +9,6 @@ role: Developer
 
 Learn about the flexibility of the Universal Editor and how it can help power your headless experiences using AEM 6.5.
 
->[!NOTE]
->
->The Universal Editor is available in AEM 6.5 as part of an [early adoption program.](/help/release-notes/release-notes.md#sites)
-
 ## Overview {#overview}
 
 The Universal Editor is a versatile visual editor that is part of Adobe Experience Manager Sites. It enables authors to do what-you-see-is-what-you-get (WYSIWYG) editing of any headless experience.
@@ -32,16 +28,6 @@ The Universal Editor is a service that works in tandem with AEM to author conten
 
 ![Author flow using the Universal Editor](assets/author-flow.png)
 
-## Authentication {#authentication}
-
-1. User login (regardless if using SAML, OAuth, or LDAP) creates a `login-token` cookie which is returned to the user
-1. All subsequent requests include the `login-token` cookie to prevent multiple round trips via the authentication providers.
-1. When opening a page within the Universal Editor, the request opens the Universal Editor with the desired page as a query parameter.
-   * Authentication Handler checks for the query parameter and authenticates the user as appropriate.
-1. All subsequent requests within the Universal Editor will include the `login-token` cookie with the `samesite=none; partitioned` attribute to authenticate requests.
-
-![Authentication flow](assets/authentication-flow.png)
-
 ## Setup {#setup}
 
 In order to test the Universal Editor you will need to:
@@ -52,101 +38,81 @@ In order to test the Universal Editor you will need to:
 
 Once you have complete the setup, you can [instrument your applications to use the Universal Editor.](#instrumentation)
 
-### Update and Configure AEM {#update-configure-aem}
+### Update AEM {#update-aem}
 
-There are a number of bundles that must be updated and configurations that must be set in order to use the Universal Editor with AEM 6.5.
+Service pack 21 and a feature pack for AEM are required in order to use the Universal Editor with AEM 6.5.
 
 #### Apply Latest Service Pack {#latest}
 
-First make sure that you are running the latest service pack for AEM 6.5. You can download the latest service pack from [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Make sure that you are running at least service pack 21 for AEM 6.5. You can download the latest service pack from [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
-#### Upgrade the Adobe Granite Token Authentication bundle. {#token-authentication}
+#### Install Universal Editor Feature Pack {#feature-pack}
 
-Once you are running the latest service pack of AEM 6.5, you will need to make additional, specific updates to your AEM authoring instance to support authoring with the Universal Editor. Begin by upgrading the **Adobe Granite Token Authentication** bundle.
+Install the **Universal Editor Feature Pack for AEM 6.5** [available on Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip) You will need to restart AEM.
 
-1. Open the bundles page of the Configuration Manager.
-   * `https://<host>:<port>/system/console/bundles`
-1. Click **Install/Update...** at the top of the list of bundles.
-1. In the **Upload/Install Bundles** dialog, select the **Start Bundle**, **Refresh Packages**, and **Install Version in Parallel** options.
-1. Click **Choose file** and browse for the `crx-auth-token-2.7.0.jar` file provided to you by Adobe and then click **Install or Update**.
-1. Refresh the list of bundles and then use the search field at the top of the list of bundles to search for **Adobe Granite Token Authentication**, clicking on **Apply Filter** to search the list.
-1. You should see two **Adobe Granite Token Authentication** bundles: one with version `2.6.12` and one with version `2.7.0`.
-1. Stop bundle with version `2.6.12` and then delete it.
-1. Restart AEM.
+### Configure Services {#configure-services}
+
+The feature pack installs a number of new packages for which additional configuration is needed.
 
 #### Set the SameSite Attribute for the `login-token` cookie. {#samesite-attribute}
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Edit the **Adobe Granite Token Authentication Handler** in the list and change the **SameSite attribute for the login-token cookie** value to `Partitioned`.
+1. Locate **Adobe Granite Token Authentication Handler** in the list and click **Change the configuration values**.
+1. In the dialog, change the **SameSite attribute for the login-token cookie** (`token.samesite.cookie.attr`)value to `Partitioned`.
 1. Click **Save**.
-   * There is no need to restart AEM.
 
 #### Remove the `SAMEORIGIN` headers X-Frame option. {#sameorigin}
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Edit the **Apache Sling Main Servlet** in the list and click **Edit the configuration values**.
-1. Delete the `X-Frame-Options=SAMEORIGIN` value from the **Additional response headers** attribute if it exists.
+1. Locate **Apache Sling Main Servlet** in the list and click **Edit the configuration values**.
+1. Delete the `X-Frame-Options=SAMEORIGIN` value from the **Additional response headers** attribute (`sling.additional.response.headers`) if it exists.
 1. Click **Save**.
-   * There is no need to restart AEM.
-
-#### Install the Adobe Granite Query Token Authentication Handler. {#token-handler}
-
-1. Open the bundles page of the Configuration Manager.
-   * `https://<host>:<port>/system/console/bundles`
-1. Click **Install/Update...** at the top of the list of bundles.
-1. In the **Upload/Install Bundles** dialog, select the **Start Bundle**, **Refresh Packages**, and **Install Version in Parallel** options.
-1. Click **Choose file** and browse for the `com.adobe.granite.auth.querytoken-1.0.8.jar` file provided to you by Adobe and then click **Install or Update**.
-1. Refresh the list of bundles and then use the search field at the top of the list of bundles to search for **Adobe Granite Query Token Authentication Handler**, clicking on **Apply Filter** to search the list.
-1. You should now see the **Adobe Granite Query Token Authentication Handler** bundle running.
-1. Restart AEM.
 
 #### Configure the Adobe Granite Query Parameter Authentication Handler. {#query-parameter}
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Edit the **Adobe Granite Query Parameter Authentication Handler** in the list and click **Edit the configuration values**.
-1. Define the the authorization steps for query token authorization.
-   * In the **Path** field, provide the repository path for which this authentication handler should be used by Sling.
-   * In the **Query Parameter name** field, provide the query parameter which is used for authentication.
+1. Locate **Adobe Granite Query Parameter Authentication Handler** in the list and click **Edit the configuration values**.
+1. In the **Path** field (`path`), add `/` to enable.
+   * An empty value disables the authentication handler.
 1. Click **Save**.
-   * There is no need to restart AEM.
-
-#### Configure the Apache Sling Login Admin Whitelist Configuration Fragment. {#whitelist-configuration}
-
-1. Open the Configuration Manager.
-   * `http://<host>:<port>/system/console/configMgr`
-1. Search for **Apache Sling Login Admin Whitelist Configuration Fragment** in the list.
-1. Below the **Apache Sling Login Admin Whitelist Configuration Fragment** entry, find the **granite** sub-configuration and click **Edit the configuration values**.
-1. Add `com.adobe.granite.auth.querytoken` to the **Whitelisted BSNs** list.
-1. Click **Save**.
-   * There is no need to restart AEM.
-
-#### Upgrade the Day Communique 5 WCM Core Implementation bundle. {#cq5-core}
-
-1. Open the bundles page of the Configuration Manager.
-   * `https://<host>:<port>/system/console/bundles`
-1. Click **Install/Update...** at the top of the list of bundles.
-1. In the **Upload/Install Bundles** dialog, select the **Start Bundle**, **Refresh Packages**, and **Install Version in Parallel** options.
-1. Click **Choose file** and browse for the `cq-wcm-core-5.12.268-CQ650-B0008.jar` file provided to you by Adobe and then click **Install or Update**.
-1. Refresh the list of bundles and then use the search field at the top of the list of bundles to search for **Day Communique 5 WCM Core Implementation**, clicking on **Apply Filter** to search the list.
-1. You should see two **Day Communique 5 WCM Core Implementation** bundles: one with version `5.12.260` and one with version `5.12.268.CQ650-B0008`.
-1. Stop bundle with version `5.12.260` and then delete it.
-1. Restart AEM.
 
 #### Define for which content paths or `sling:resourceTypes` the Universal Editor shall be opened. {#paths}
 
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Edit the **Universal Editor URL Service** in the list and click **Edit the configuration values**.
+1. Locate **Universal Editor URL Service** in the list and click **Edit the configuration values**.
 1. Define for which content paths or `sling:resourceTypes` the Universal Editor shall be opened.
    * In the **Universal Editor Opening Mapping** field, provide the paths for which the Universal Editor is opened.
    * In the **Sling:resourceTypes which shall be opened by Universal Editor** field, provide a list of resources which are opened directly by the Universal Editor.
 1. Click **Save**.
-   * There is no need to restart AEM.
 
-You have updated and configured AEM 6.5 to use the Universal Editor. You must now set up a Universal Editor Service for development and update your Dispatcher to permit it.
+AEM will open the Universal Editor for pages based on this configuration.
+
+1. AEM will check the mappings under `Universal Editor Opening Mapping` and if the content is under any paths defined there, the Universal Editor is opened for it.
+1. For content not under paths defined in `Universal Editor Opening Mapping`, AEM checks if the `resourceType` of the content matches those defined in **Sling:resourceTypes which shall be opened by Universal Editor** and if the content matches one of those types, the Universal Editor is opened for it.
+1. Otherwise AEM opens the Page Editor.
+
+The following variables are available to define your mappings under `Universal Editor Opening Mapping`.
+
+* `path`: Content path of the resource to open
+* `localhost`: Externalizer entry for `localhost` without schema, e.g. `localhost:4502`
+* `author`: Externalizer entry for author without schema, e.g. `localhost:4502`
+* `publish`: Externalizer entry for publish without schema, e.g. `localhost:4503`
+* `preview`: Externalizer entry for preview without schema, e.g. `localhost:4504`
+* `env`: `prod`, `stage`, `dev` based on the defined Sling run modes
+* `token`: Query token required for the `QueryTokenAuthenticationHandler`
+
+Example mappings:
+
+* Open all pages under `/content/foo` on the AEM Author: 
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * This results in opening `https://localhost:4502/content/foo/x.html?login-token=<token>`
+* Open all pages under `/content/bar` on a remote NextJS server, providing all variables as information
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * This results in opening `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ### Set Up Universal Editor Service {#set-up-ue}
 
