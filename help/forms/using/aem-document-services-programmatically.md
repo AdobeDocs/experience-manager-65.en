@@ -5076,8 +5076,6 @@ The Auto-Tagging TOC API enhances document accessibility and navigation by autom
 
 Auto Tag PDF API helps to make a PDF document accessible by adding tags to it, It supports tagging block of text (paragraphs) and the bulleted lists in one operator.
 
-yahan pe hoga sab
-
 ![Auto Tagged PDF document](assets/auto-tag-api.png)
 
 <!--
