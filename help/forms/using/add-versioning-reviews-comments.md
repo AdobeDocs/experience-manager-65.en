@@ -78,6 +78,4 @@ To add annotations to a form, perform the following steps:
 
    ![See added annotations](assets/see-annotations.png)
 
-## See Also {#see-also}
 
-{{see-also}}
