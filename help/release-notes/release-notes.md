@@ -37,12 +37,6 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 [The Universal Editor](/help/sites-developing/universal-editor/introduction.md) is now available on AEM 6.5 for headless use cases.
 
-<!-->
-### [!DNL Forms]
-
-Some of the key features and enhancements in this release include the following: -->
-
-
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 ## Fixed issues in Service Pack 22 {#fixed-issues}
@@ -174,7 +168,7 @@ Some of the key features and enhancements in this release include the following:
 * While using the Connected Assets feature, the updates made in AEM Assets do not reflect on AEM Sites environment. (ASSETS-42344) MAJOR <!-- Leave the "MAJOR" status priorities in place. -->
 * Issues with the asset publish status when you move assets from one location to another within Experience Manager. (ASSETS-41158) MAJOR
 * Uploading assets using the API results in `unclosed resource resolver` error message. (ASSETS-41049) MAJOR
-* Issues with `AssetReferenceResolverImpl` reference query after upgrading to Experience Manager Service Pack 21. (ASSETS-40384) MAJOR
+* Issues with `AssetReferenceResolverImpl` reference query after upgrading to Adobe Experience Manager, Service Pack 21. (ASSETS-40384) MAJOR
 * In AEM version 6.5.19, while removing one option from the search panel results, it unchecks all other available checkboxes as well. (ASSETS-37335) MAJOR
 * Junk values are displayed in the Excel output while performing the bulk metadata export operation. (ASSETS-37260) MAJOR
 * In AEM version 6.5.19, when you upload an SVG file in UTF-8 format, the output is blurred. (ASSETS-36616) MAJOR
@@ -186,7 +180,7 @@ Some of the key features and enhancements in this release include the following:
 * A production issue disrupted the migration process when a video upload to Dynamic Media failed, displaying a process failure error in the user interface. (ASSETS-36038)
 
 
-### [!DNL Forms]{#forms-65220}
+### [!DNL Forms]{#forms-6522}
 
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.22.0 Forms add-on package release is scheduled for Thursday, November 28, 2024. A list of Forms fixes and enhancements is added to this section post the release.
 
@@ -302,7 +296,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Workflow{#foundation-workflow-6522}
 
-* A 
+* A -->
 
 
 ## Install [!DNL Experience Manager] 6.5.22.0{#install}
@@ -506,7 +500,6 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6522}
 
-
 * After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
 
   1. Stop the locators, if they are running.
@@ -544,8 +537,8 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
 
-* [List of OSGi bundles included in Experience Manager 6.5.22.0](/help/release-notes/assets/65210-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.22.0](/help/release-notes/assets/65210-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.22.0](/help/release-notes/assets/65220-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.22.0](/help/release-notes/assets/65220-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
 

@@ -1,0 +1,79 @@
+SYMBOLIC NAME, BUNDLE NAME  ,VERSION
+com.adobe.granite.crypto, 3.4.22, Adobe Granite Crypto Support
+org.apache.commons.collections, 3.2.2.adobe-2, Apache Commons Collections
+com.adobe.cq.cq-product-info-provider, 6.5.50, CQ ProductInfo Provider
+org.apache.commons.commons-compress, 1.26.2, Apache Commons Compress
+org.apache.jackrabbit.jackrabbit-data, 2.20.16, Jackrabbit Data
+org.apache.jackrabbit.oak-api, 1.22.21, Oak API
+org.apache.jackrabbit.oak-auth-external, 1.22.21, Oak External Authentication Support
+org.apache.jackrabbit.oak-auth-ldap, 1.22.21, Oak LDAP Authentication Support
+org.apache.jackrabbit.oak-authorization-cug, 1.22.21, Oak CUG Authorization
+org.apache.jackrabbit.oak-blob, 1.22.21, Oak Blob Store
+org.apache.jackrabbit.oak-blob-cloud-azure, 1.22.21, Oak Azure Cloud Blob Store
+org.apache.jackrabbit.oak-blob-plugins, 1.22.21, Oak Blob Plugins
+org.apache.jackrabbit.oak-commons, 1.22.21, Oak Commons
+org.apache.jackrabbit.oak-core, 1.22.21, Oak Core
+org.apache.jackrabbit.oak-core-spi, 1.22.21, Oak Core SPI
+org.apache.jackrabbit.oak-jcr, 1.22.21, Oak JCR Binding
+org.apache.jackrabbit.oak-lucene, 1.22.21, Oak Lucene
+org.apache.jackrabbit.oak-query-spi, 1.22.21, Oak Query SPI
+org.apache.jackrabbit.oak-security-spi, 1.22.21, Oak Security SPI
+org.apache.jackrabbit.oak-segment-azure, 1.22.21, Oak Segment Azure
+org.apache.jackrabbit.oak-segment-tar, 1.22.21, Oak Segment Tar
+org.apache.jackrabbit.oak-solr-osgi, 1.22.21, Oak Solr OSGi
+org.apache.jackrabbit.oak-store-composite, 1.22.21, Oak Composite Store
+org.apache.jackrabbit.oak-store-document, 1.22.21, Oak DocumentNodeStore
+org.apache.jackrabbit.oak-store-spi, 1.22.21, Oak NodeStore and Commit SPI
+org.apache.jackrabbit.jackrabbit-jcr-commons, 2.20.16, Jackrabbit JCR Commons
+com.adobe.granite.installer.factory.packages, 1.0.14.CQ-650-B0004, Adobe Granite Installer for Content Packages
+org.apache.jackrabbit.jackrabbit-spi, 2.20.16, Jackrabbit SPI
+org.apache.jackrabbit.jackrabbit-spi-commons, 2.20.16, Jackrabbit SPI Commons
+com.adobe.cq.com.adobe.cq.ui.commons, 1.3.59.CQ650-B0002, AEM UI WCM Commons Bundle
+com.adobe.granite.auth.oauth, 1.10.32.B0004, Adobe Granite OAuth Authentication Handler
+com.adobe.granite.crx-packagemgr, 1.2.80.CQ650-B0046, Adobe Granite CRX Package Manager
+com.day.cq.cq-replication, 6.2.86.CQ650-B0009, Adobe Granite Replication
+com.adobe.granite.security.user, 0.4.63.CQ650-B0010, Adobe Granite Security Module
+com.adobe.granite.timeline, 1.0.26.CQ650-B007, Adobe Granite Timeline Support
+com.day.cq.wcm.cq-command, 1.1.39.CQ650-B0001, Adobe Experience Manager Command Implementation
+com.day.cq.dam.cq-dam-annotation-print, 0.2.7.CQ650-B0001, Adobe CQ DAM annotation print implementation
+com.day.cq.dam.cq-dam-api, 6.0.35.CQ650-B0002, Day Communique 5 DAM API
+com.adobe.dam.cq-dam-cfm-impl, 0.11.149.CQ650-B0003, ContentFragmentManagement - Implementation
+com.day.cq.dam.cq-dam-commons, 5.12.178.CQ650-B0004, Day Communique 5 DAM Commons
+com.day.cq.dam.cq-dam-core, 5.12.395.CQ650-B0006, Day Communique 5 DAM Core Implementation
+com.day.cq.dam.cq-dam-handler, 5.12.21.CQ650-B0001, Day Communique 5 DAM Asset Handler Implementation
+com.adobe.cq.cq-dam-mac-sync, 1.5.16.CQ650-B0002, Adobe CQ DAM - Adobe Marketing Cloud Synchronisation Bundle
+com.day.cq.dam.cq-dam-stock-integration, 1.2.8.CQ650-B0004, Adobe CQ DAM Stock Integration
+com.adobe.cq.dam.cq-dam-svg-handler, 0.4.17.CQ650-B0004, Adobe CQ Creative Cloud APIs - DAM SVG Asset Handler
+com.adobe.cq.dam.cq-dynamicmedia-core, 1.0.170.CQ650-B0002, AEM Dynamic Media Integration
+com.adobe.cq.cq-experience-fragments, 1.2.105.CQ650-B0001, AEM - Experience Fragments
+com.adobe.cq.cq-gfx, 1.5.5.CQ650-B0001, Adobe CQ Graphics Rendering API
+com.day.cq.cq-mailer, 5.14.3.CQ650-B0010, Day Communique 5 Mailer
+com.adobe.cq.remotedam.cq-remotedam-client-core, 1.0.49.CQ650-B0004, Adobe CQ Remote Dam Client Core Bundle
+com.day.cq.cq-rewriter, 5.12.27.CQ650-B0004, Day Communique 5 Rewriter
+com.day.cq.dam.cq-scene7-api, 5.12.72.CQ650-B0002, Day Communique 5 DAM Scene7 Integration
+com.day.cq.dam.cq-scene7-core, 5.12.272.CQ650-B0002, Day Communique 5 DAM Scene7 Integration
+com.adobe.cq.dam.cq-scene7-imaging, 1.6.66.CQ650-B0098, Adobe CQ DAM Scene7 Dynamic Imaging
+com.adobe.cq.social.cq-social-srp-impl, 1.4.26, AEM Communities SRP - Impl Bundle
+com.day.cq.cq-tagging, 5.12.7.CQ650-B0002, Day Communique 5 Tagging
+com.adobe.cq.cq-target-integration, 1.3.64.CQ650-B0001, AEM 6 - Adobe Target integration
+com.day.cq.wcm.cq-wcm-core, 5.12.268.CQ650-B0007, Day Communique 5 WCM Core Implementation
+com.day.cq.wcm.cq-wcm-foundation, 5.12.72, Adobe CQ WCM Foundation Components
+com.adobe.cq.wcm.cq-wcm-launches-core, 5.13.57.CQ650-B0002, Adobe Communique 5 WCM Launches Core
+com.adobe.cq.sightly.cq-wcm-sightly-extension, 1.7.10, Adobe Experience Manager HTL Extension
+com.day.cq.wcm.cq-wcm-translation, 1.5.161.CQ650-B0001, Adobe CQ Translation Workflow
+com.day.cq.wcm.cq-wcm-webservice-support, 5.12.15.CQ650-B0004, Day Communique 5 WCM Webservice Support
+com.day.crx.sling.crx-auth-token, 2.7.0, Adobe Granite Token Authentication
+com.day.cq.dam.dam-webdav-support, 1.4.7.CQ650-B0001, Adobe DAM WebDAV Support
+org.apache.jackrabbit.jackrabbit-webdav, 2.20.16, Jackrabbit WebDAV Library
+com.adobe.cq.json-schema-parser, 4.0.184, JSON Schema Parser Bundle
+org.apache.sling.rewriter, 1.4.4, Apache Sling Rewriter
+org.apache.sling.scripting.sightly, 1.4.24.140, Apache Sling Scripting HTL Engine
+org.apache.sling.scripting.sightly.js.provider, 1.2.10, Apache Sling Scripting HTL JS Use Provider
+com.adobe.aem.com.adobe.aem.graphql-java-wrapper, 0.0.1.CQ650-B0012, Adobe Experience Manager GraphQL Java Wrapper
+com.adobe.granite.webvitals65, 1.10.0, Adobe AEM Script Injector
+org.apache.commons.commons-codec, 1.17.1, Apache Commons Codec
+com.adobe.cq.remotedam.cq-remotedam-api, 0.8.17.CQ650-B0002, Adobe CQ Remote DAM API Bundle
+org.apache.jackrabbit.oak-jackrabbit-api, 1.22.21, Jackrabbit API
+com.adobe.granite.toggle.api, 1.2.20, Adobe Granite Toggle API
+com.adobe.granite.toggle.impl, 0.9.32, Adobe Granite Toggle Frontend Servlet
+com.adobe.granite.toggle.impl.static, 1.0.12, Adobe Granite Toggle Static Connector
