@@ -37,7 +37,7 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 
 ### Sites {#sites}
 
-[The Universal Editor](/help/sites-developing/universal-editor/introduction.md) is now available on AEM 6.5 for headless use cases.
+[The Universal Editor](/help/sites-developing/universal-editor/introduction.md) is now available on AEM 6.5 for headless use cases with the application of a feature pack.
 
 ### [!DNL Forms]
 
