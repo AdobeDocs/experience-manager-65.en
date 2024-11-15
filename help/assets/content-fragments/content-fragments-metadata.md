@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 ---
 # Metadata - Fragment Properties {#metadata-fragment-properties}
 
-See how you can view and edit the metadata properties for Content Fragments in AEM to adjust your headless content.
+See how you can use the Content Fragment editor to view and edit the metadata properties for Content Fragments in AEM to adjust your headless content.
 
 ## Editing Properties / Meta data {#editing-properties-meta-data}
 

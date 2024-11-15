@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 ---
 # Associated Content{#associated-content}
 
-AEM's Associated content feature provides the connection so that assets can be optionally used with the fragment when it is added to a content page. This provides flexibility for your headless content delivery by [providing a range of assets to access when using the content fragment on a page,](/help/sites-authoring/content-fragments.md#using-associated-content) while also helping to reduce the time required to search for the appropriate asset.
+AEM's Associated content feature provides the connection so that assets can (optionally) be used with the fragment when it is added to a content page. This provides flexibility for your headless content delivery by [providing a range of assets to access when using the content fragment on a page,](/help/sites-authoring/content-fragments.md#using-associated-content) while also helping to reduce the time required to search for the appropriate asset. Any associated content can be configured using the Content Fragment editor.
 
 ## Adding Associated Content {#adding-associated-content}
 
