@@ -35,7 +35,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 ### Sites {#sites}
 
-[The Universal Editor](/help/sites-developing/universal-editor/introduction.md) is now available on AEM 6.5 for headless use cases with the application of a feature pack.
+Service pack 21 introduced [the Universal Editor](/help/sites-developing/universal-editor/introduction.md) to AEM 6.5 for headless use cases with the application of a feature pack.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
