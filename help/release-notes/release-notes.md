@@ -33,9 +33,46 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 ## Key features and enhancements
 
+<!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
+
 ### Sites {#sites}
 
-Service pack 21 introduced [the Universal Editor](/help/sites-developing/universal-editor/introduction.md) to AEM 6.5 for headless use cases with the application of a feature pack.
+[The Universal Editor](/help/sites-developing/universal-editor/introduction.md) is now available on AEM 6.5 for headless use cases with the application of a feature pack.
+
+### [!DNL Forms]
+
+Some of the key features and enhancements in this release include the following:
+
+* **Support for Oauth Credentials**: A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)
+* [Rule Editor enhancements in AEM Forms](/help/forms/using/rule-editor-core-components.md):
+  * Support for implementing nested conditions with `When-then-else` functionality.
+  * Validate or reset panels and forms, including fields.
+  * Support for modern JavaScript features such as let and arrow functions (ES10 support) within the Custom Functions.
+* [AutoTag API for PDF Accessibility](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): AEM Forms on OSGi now support the new AutoTag API to enhance PDF for accessibility standards by adding tags: paragraphs, and lists. It makes PDFs more accessible for users with assistive technology.
+* **16-bit PNG support**: PDF Generator's ImageToPdf service now supports conversion of PNGs with 16-bit color depth.
+* **Apply artifacts to individual text blocks in XDPs**: Forms Designer now lets users configure settings on individual text blocks in XDP files. This ability lets you control the elements that are treated as artifacts in the resulting PDFs. These elements, such as headers and footers, are made accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF / UA tagging.
+* **AEM Forms Designer is certified with `GB18030:2022` standard**: With the `GB18030:2022` certification, now Forms Designer supports the Chinese Unicode character set that lets you input Chinese characters into all editable fields and dialog boxes.
+* [Support for WebToPDF route in JEE Server](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) using the PDF Generator service now supports the WebToPDF route for converting HTML files to PDF documents on JEE, in addition to the existing Webkit and WebCapture (Windows only) routes. While the WebToPDF route is already available on OSGi and extended to JEE. Now, on both JEE and OSGi platforms, the PDF Generator service supports the following routes across different operating systems:
+  * **Windows**: Webkit, WebCapture, WebToPDF
+  * **Linux&reg;**: Webkit, WebToPDF
+
+### [!DNL Assets]
+
+#### Enhancements
+
+The following is the list of enhancements included in this release:
+
+* The IPTC tab now supports [!UICONTROL Alt Text] and [!UICONTROL Extended Description] text fields. (ASSETS-34918)
+
+#### Accessibility fixes
+
+The following is the list of accessibility fixes included in this release:
+
+* If the processing status of an asset is Failed or Metadata Failed, the captions and audio tracks UI does not work appropriately. (ASSETS-37281)
+* When you save an asset metadata and try to edit it, the language name does not display. (ASSETS-37281)
+
+<!-- ### [!DNL Forms]
+* A -->
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
