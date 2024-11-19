@@ -33,17 +33,21 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 ## Key features and enhancements
 
+Key features and enhancements in this release include the following:
+
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
 ### Sites {#sites}
 
 [The Universal Editor](/help/sites-developing/universal-editor/introduction.md) is now available on AEM 6.5 for headless use cases with the application of a feature pack.
 
+### [!DNL Assets]
+
+The IPTC tab now supports [!UICONTROL Alt Text] and [!UICONTROL Extended Description] text fields. (ASSETS-34918)
+
 ### [!DNL Forms]
 
-Some of the key features and enhancements in this release include the following:
-
-* **Support for Oauth Credentials**: A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)
+* **Support for OAuth Credentials**: A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)
 * [Rule Editor enhancements in AEM Forms](/help/forms/using/rule-editor-core-components.md):
   * Support for implementing nested conditions with `When-then-else` functionality.
   * Validate or reset panels and forms, including fields.
@@ -52,27 +56,9 @@ Some of the key features and enhancements in this release include the following:
 * **16-bit PNG support**: PDF Generator's ImageToPdf service now supports conversion of PNGs with 16-bit color depth.
 * **Apply artifacts to individual text blocks in XDPs**: Forms Designer now lets users configure settings on individual text blocks in XDP files. This ability lets you control the elements that are treated as artifacts in the resulting PDFs. These elements, such as headers and footers, are made accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF / UA tagging.
 * **AEM Forms Designer is certified with `GB18030:2022` standard**: With the `GB18030:2022` certification, now Forms Designer supports the Chinese Unicode character set that lets you input Chinese characters into all editable fields and dialog boxes.
-* [Support for WebToPDF route in JEE Server](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) using the PDF Generator service now supports the WebToPDF route for converting HTML files to PDF documents on JEE, in addition to the existing Webkit and WebCapture (Windows only) routes. While the WebToPDF route is already available on OSGi and extended to JEE. Now, on both JEE and OSGi platforms, the PDF Generator service supports the following routes across different operating systems:
-  * **Windows**: Webkit, WebCapture, WebToPDF
-  * **Linux&reg;**: Webkit, WebToPDF
-
-### [!DNL Assets]
-
-#### Enhancements
-
-The following is the list of enhancements included in this release:
-
-* The IPTC tab now supports [!UICONTROL Alt Text] and [!UICONTROL Extended Description] text fields. (ASSETS-34918)
-
-#### Accessibility fixes
-
-The following is the list of accessibility fixes included in this release:
-
-* If the processing status of an asset is Failed or Metadata Failed, the captions and audio tracks UI does not work appropriately. (ASSETS-37281)
-* When you save an asset metadata and try to edit it, the language name does not display. (ASSETS-37281)
-
-<!-- ### [!DNL Forms]
-* A -->
+* The PDF Generator service on the JEE server now [supports the WebToPDF route](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) for converting HTML to PDF, alongside the existing WebKit and Windows-only WebCapture routes. While the WebToPDF route is already available on OSGi and extended to JEE. Now, on both JEE and OSGi platforms, the PDF Generator service supports the following routes across different operating systems:
+  * **Windows**: WebKit, WebCapture, WebToPDF
+  * **Linux&reg;**: WebKit, WebToPDF
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -124,12 +110,12 @@ The following is the list of accessibility fixes included in this release:
 
 #### [!DNL Content Fragments] - Admin{#sites-admin-6522}
 
-* Clicking the link in the email notification directs the user to the default asset viewer or editor. It does so instead of the Content Fragment editor, even when the asset in the workflow is determined to be a Content Fragment. (SITES-24338) MAJOR
+Clicking the link in the email notification directs the user to the default asset viewer or editor. It does so instead of the Content Fragment editor, even when the asset in the workflow is determined to be a Content Fragment. (SITES-24338) MAJOR
 
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6522}
 
-* When using Content Fragments with Multiline Text field items, the markup generated when querying using GraphQL was not retaining the formatting as specified in the HTML. For example, a newline was missing after the list. The impact was that the last paragraph became part of the list. (SITES-23233)
+When using Content Fragments with Multiline Text field items, the markup generated when querying using GraphQL was not retaining the formatting as specified in the HTML. For example, a newline was missing after the list. The impact was that the last paragraph became part of the list. (SITES-23233)
 
 
 <!-- #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6522}
@@ -163,7 +149,7 @@ The following is the list of accessibility fixes included in this release:
 
 * Experience Fragments do not sort by title as expected when the **Title** column header is clicked in the List View. A quick flicker of the screen is observed, but it does not sort. (SITES-23706) MAJOR
 
-* In AEM 6.5.17, an issue was encountered when converting a page component into an Experience Fragment using the out-of-the-box feature. After conversion, the Experience Fragment appeared empty during editing, despite displaying correctly on the page where it was used. The issue stemmed from incorrect node creation: the component node was placed outside the root/container node, violating the template's structure. You needed to move the component node manually into the correct root/container node to restore the fragment's editability. (SITES-22974) MAJOR
+* In AEM 6.5.17, an issue was encountered when converting a page component into an Experience Fragment using the out-of-the-box feature. After conversion, the Experience Fragment appeared empty during editing, despite displaying correctly on the page where it was used. The issue stemmed from incorrect node creation: the component node was placed outside the root / container node, violating the template's structure. You needed to move the component node manually into the correct root / container node to restore the fragment's editability. (SITES-22974) MAJOR
 
 * After migrating from AEM 6.5.11 to 6.5.20, Cloud configurations on Experience Fragments were not saving correctly. Although the configurations appeared to save in `crx/de`, they would not display upon reopening the configurations console, indicating an issue with persistence. (SITES-22287) MAJOR
 
@@ -175,11 +161,11 @@ The following is the list of accessibility fixes included in this release:
 
 #### Launches{#sites-launches-6522}
 
-* When adding Experience Fragment assets using the tagging filter in AEM production, the user could select it, but then encountered an error after selecting **Create language copy**. The expected behavior was that the Experience Fragment asset selected from the tagging filter was supposed to get added to the translation project. (SITES-24152) MAJOR
+When adding Experience Fragment assets using the tagging filter in AEM production, the user could select it, but then encountered an error after selecting **Create language copy**. The expected behavior was that the Experience Fragment asset selected from the tagging filter was supposed to get added to the translation project. (SITES-24152) MAJOR
 
 #### Link Checker{#sites-link-checker-6522}
 
-* The LinkCheckerTask fails to authenticate because the HTTP client tries NTLM before Basic Authentication, causing the proxy to block users after multiple failed attempts. The system should instead use Basic Authentication to authenticate against the proxy, allowing the LinkCheckerTask services to function correctly. (SITES-25034) MAJOR
+The LinkCheckerTask fails to authenticate because the HTTP client tries NTLM before Basic Authentication, causing the proxy to block users after multiple failed attempts. The system should instead use Basic Authentication to authenticate against the proxy, allowing the LinkCheckerTask services to function correctly. (SITES-25034) MAJOR
 
 
 #### MSM - Live Copies{#sites-msm-live-copies-6522}
@@ -197,7 +183,7 @@ The following is the list of accessibility fixes included in this release:
 
 #### Replication{#sites-replication-6522}
 
-* In AEM 6.5.18 and 6.5.19, on deactivating a parent page, multiple deactivation requests were generated for each child page. This issue also broke the bulk unpublishing of the GraphQL endpoints. (NPR-42075 & NPR42010) CRITICAL
+In AEM 6.5.18 and 6.5.19, on deactivating a parent page, multiple deactivation requests were generated for each child page. This issue also broke the bulk unpublishing of the GraphQL endpoints. (NPR-42075 & NPR42010) CRITICAL
 
 
 ### [!DNL Assets]{#assets-6522}
@@ -211,10 +197,12 @@ The following is the list of accessibility fixes included in this release:
 * In AEM version 6.5.19, when you upload an SVG file in UTF-8 format, the output is blurred. (ASSETS-36616) MAJOR
 * `Fetch original rendition for Dynamic Media Connected Assets` option is missing within Connected Assets configuration. (ASSETS-41726)
 * Asset properties are saved even if you do not define a value for mandatory fields. (ASSETS-37914)
+* If the processing status of an asset is Failed or Metadata Failed, the captions and audio tracks UI does not work appropriately. (ASSETS-37281)
+* When you save an asset metadata and try to edit it, the language name does not display. (ASSETS-37281)
 
 #### [!DNL Dynamic Media]{#assets-dm-6522}
 
-* A production issue disrupted the migration process when a video upload to Dynamic Media failed, displaying a process failure error in the user interface. (ASSETS-36038)
+A production issue disrupted the migration process when a video upload to Dynamic Media failed, displaying a process failure error in the user interface. (ASSETS-36038)
 
 
 ### [!DNL Forms]{#forms-6522}
@@ -234,7 +222,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 ### Foundation {#foundation-6522}
 
-* In the AEM Assets console, an issue occurred when attempting to reorder DITA documents. The breadcrumb at the top of the path browser dialog box incorrectly displays the node name instead of the node title for the root parent. The correct node title only appears after selecting an item within the breadcrumb, indicating a temporary display error. (NPR-42106) MAJOR
+In the AEM Assets console, an issue occurred when attempting to reorder DITA documents. The breadcrumb at the top of the path browser dialog box incorrectly displays the node name instead of the node title for the root parent. The correct node title only appears after selecting an item within the breadcrumb, indicating a temporary display error. (NPR-42106) MAJOR
 
 
 <!-- #### Apache Felix {#foundation-apachefelix-6522}
@@ -254,7 +242,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Communities {#foundation-communities-6522}
 
-* After upgrading from AEM 6.5.19 to 6.5.20, an issue emerged where `Connection evic` threads failed to close properly after calls to `UgcSearch`. This problem, observed in the production environment, causes these threads to persist and accumulate over time, potentially impacting performance. (NPR-42019) MAJOR
+After upgrading from AEM 6.5.19 to 6.5.20, an issue emerged where `Connection evic` threads failed to close properly after calls to `UgcSearch`. This problem, observed in the production environment, causes these threads to persist and accumulate over time, potentially impacting performance. (NPR-42019) MAJOR
 
 
 <!-- #### Content distribution{#foundation-content-distribution-6522}
@@ -283,7 +271,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Localization{#foundation-localization-6522}
 
-* In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) Tools  >  **Security** > ![User icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) **Users**, on the User Management page, the data in **Status** column of the table was displaying vertically. (GRANITE-48304)
+In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) Tools  >  **Security** > ![User icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) **Users**, on the User Management page, the data in **Status** column of the table was displaying vertically. (GRANITE-48304)
 
 
 <!-- #### Oak {#foundation-oak-6522}
@@ -419,7 +407,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
     <dependency>
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
-    <version>6.5.22</version>
+    <version>6.5.21</version>
     <scope>provided</scope>          
     </dependency>
   ```
@@ -532,7 +520,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 ### Known issue for AEM Sites {#known-issues-aem-sites-6522}
 
-* Content Fragments-Preview fails due to DoS protection for large tree of fragments. See the [KB article about Default GraphQL Query Executor configuration options](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+* Content Fragments-Preview fails due to DoS protection for a large tree of fragments. See the [KB article about Default GraphQL Query Executor configuration options](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6522}
