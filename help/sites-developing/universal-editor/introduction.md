@@ -62,7 +62,7 @@ The feature pack installs a number of new packages for which additional configur
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Locate **Adobe Granite Token Authentication Handler** in the list and click **Change the configuration values**.
-1. In the dialog, change the **SameSite attribute for the login-token cookie** (`token.samesite.cookie.attr`)value to `Partitioned`.
+1. In the dialog, change the **SameSite attribute for the login-token cookie** (`token.samesite.cookie.attr`) value to `Partitioned`.
 1. Click **Save**.
 
 #### Remove the `SAMEORIGIN` headers X-Frame option. {#sameorigin}
