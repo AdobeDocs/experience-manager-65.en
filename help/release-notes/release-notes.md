@@ -70,7 +70,7 @@ The IPTC tab now supports [!UICONTROL Alt Text] and [!UICONTROL Extended Descrip
 
 #### Accessibility {#sites-accessibility-6522}
 
-* Annotation swatch selector button was missing an accessible name. That is, using a screen reader, there is no human-understandable name for the button to select after entering a new hex value. (SITES-11992) MAJOR
+* Annotation swatch selector button was missing an accessible name. That is, using a screen reader, there is no human-understandable name for the button to select after entering a new hex value. (SITES-11992) 
 * The following elements in the left rail menu appear like a list but are not marked up as such in the screen reader:
 
   * Site
@@ -89,11 +89,11 @@ The IPTC tab now supports [!UICONTROL Alt Text] and [!UICONTROL Extended Descrip
 * In some instances of AEM, the version preview and comparison functionalities were not working as expected across several pages. Specifically:
 
     * **Preview Issue:** When attempting to preview a page version, an error appears initially. After retrying, the preview results in a blank page.
-    * **Version Comparison Issue:** The "Compare to Current" feature only displayed the current version, without highlighting any differences between versions. (SITES-23988) MAJOR
+    * **Version Comparison Issue:** The "Compare to Current" feature only displayed the current version, without highlighting any differences between versions. (SITES-23988) 
 
-* An unexpected `<br>` tag appears in the Rich Text Editor (RTE) field when using the `defaultPasteMode` set to `plaintext` during a copy and paste action. This issue results in different markup for the same content, resulting in the same text content being translated twice in a customer's translation memory. (SITES-23606) MAJOR
-* In AEM 6.5.20.0, a functionality issue was encountered with the **Manage Publication** feature. When selecting a node and scheduling it for future publication, an error message&mdash;"Failed to retrieve child resources for selected items"&mdash;could appear when trying to include child nodes. This issue was blocking the use of the **Include Children** option, preventing complete publication of the intended content hierarchy. (SITES-23000) MAJOR
-* A template's "Published" timestamp was not updating in the author environment, even though the template was successfully replicated to the publish instances. The expected behavior was for the timestamp on the author instance to reflect the latest publication, but this update was not occurring as intended. (SITES-21585) MAJOR
+* An unexpected `<br>` tag appears in the Rich Text Editor (RTE) field when using the `defaultPasteMode` set to `plaintext` during a copy and paste action. This issue results in different markup for the same content, resulting in the same text content being translated twice in a customer's translation memory. (SITES-23606) 
+* In AEM 6.5.20.0, a functionality issue was encountered with the **Manage Publication** feature. When selecting a node and scheduling it for future publication, an error message&mdash;"Failed to retrieve child resources for selected items"&mdash;could appear when trying to include child nodes. This issue was blocking the use of the **Include Children** option, preventing complete publication of the intended content hierarchy. (SITES-23000) 
+* A template's "Published" timestamp was not updating in the author environment, even though the template was successfully replicated to the publish instances. The expected behavior was for the timestamp on the author instance to reflect the latest publication, but this update was not occurring as intended. (SITES-21585) 
 * There was a discrepancy in the count of Incoming Links in the AEM author environment. The left side rail showed fewer links compared to the Classic UI. Also, some Incoming Links that were legitimate, do not work. (SITES-24837)
 * Extremely long loading times were being reported when viewing page versions in the Timeline view of AEM. It was taking up to 19 minutes to display versions. This issue was ongoing since the upgrade from AEM 6.4.8 to 6.5.18, significantly disrupting workflow efficiency. (SITES-22468 & SITES-22467)
 
@@ -104,13 +104,13 @@ The IPTC tab now supports [!UICONTROL Alt Text] and [!UICONTROL Extended Descrip
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6522}
 
-* In the upgraded AEM 6.5.17, saving Content Fragments resulted in the following error: *ERROR: Could not save Content Fragment.* (SITES-22993) CRITICAL
+* In the upgraded AEM 6.5.17, saving Content Fragments resulted in the following error: *ERROR: Could not save Content Fragment.* (SITES-22993) 
 * An issue was identified with an unclosed resource resolver in `ContentFragmentModelOmniSearchHandler` on the publisher in AEM. (SITES-24903)
 
 
 #### [!DNL Content Fragments] - Admin{#sites-admin-6522}
 
-Clicking the link in the email notification directs the user to the default asset viewer or editor. It does so instead of the Content Fragment editor, even when the asset in the workflow is determined to be a Content Fragment. (SITES-24338) MAJOR
+Clicking the link in the email notification directs the user to the default asset viewer or editor. It does so instead of the Content Fragment editor, even when the asset in the workflow is determined to be a Content Fragment. (SITES-24338) 
 
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6522}
@@ -147,11 +147,11 @@ When using Content Fragments with Multiline Text field items, the markup generat
 
 #### Experience Fragments{#sites-experiencefragments-6522}
 
-* Experience Fragments do not sort by title as expected when the **Title** column header is clicked in the List View. A quick flicker of the screen is observed, but it does not sort. (SITES-23706) MAJOR
+* Experience Fragments do not sort by title as expected when the **Title** column header is clicked in the List View. A quick flicker of the screen is observed, but it does not sort. (SITES-23706) 
 
-* In AEM 6.5.17, an issue was encountered when converting a page component into an Experience Fragment using the out-of-the-box feature. After conversion, the Experience Fragment appeared empty during editing, despite displaying correctly on the page where it was used. The issue stemmed from incorrect node creation: the component node was placed outside the root / container node, violating the template's structure. You needed to move the component node manually into the correct root / container node to restore the fragment's editability. (SITES-22974) MAJOR
+* In AEM 6.5.17, an issue was encountered when converting a page component into an Experience Fragment using the out-of-the-box feature. After conversion, the Experience Fragment appeared empty during editing, despite displaying correctly on the page where it was used. The issue stemmed from incorrect node creation: the component node was placed outside the root / container node, violating the template's structure. You needed to move the component node manually into the correct root / container node to restore the fragment's editability. (SITES-22974) 
 
-* After migrating from AEM 6.5.11 to 6.5.20, Cloud configurations on Experience Fragments were not saving correctly. Although the configurations appeared to save in `crx/de`, they would not display upon reopening the configurations console, indicating an issue with persistence. (SITES-22287) MAJOR
+* After migrating from AEM 6.5.11 to 6.5.20, Cloud configurations on Experience Fragments were not saving correctly. Although the configurations appeared to save in `crx/de`, they would not display upon reopening the configurations console, indicating an issue with persistence. (SITES-22287) 
 
 
 <!-- #### Foundation Components (Legacy){#sites-foundation-components-legacy-6522}
@@ -161,40 +161,40 @@ When using Content Fragments with Multiline Text field items, the markup generat
 
 #### Launches{#sites-launches-6522}
 
-When adding Experience Fragment assets using the tagging filter in AEM production, the user could select it, but then encountered an error after selecting **Create language copy**. The expected behavior was that the Experience Fragment asset selected from the tagging filter was supposed to get added to the translation project. (SITES-24152) MAJOR
+When adding Experience Fragment assets using the tagging filter in AEM production, the user could select it, but then encountered an error after selecting **Create language copy**. The expected behavior was that the Experience Fragment asset selected from the tagging filter was supposed to get added to the translation project. (SITES-24152) 
 
 #### Link Checker{#sites-link-checker-6522}
 
-The LinkCheckerTask fails to authenticate because the HTTP client tries NTLM before Basic Authentication, causing the proxy to block users after multiple failed attempts. The system should instead use Basic Authentication to authenticate against the proxy, allowing the LinkCheckerTask services to function correctly. (SITES-25034) MAJOR
+The LinkCheckerTask fails to authenticate because the HTTP client tries NTLM before Basic Authentication, causing the proxy to block users after multiple failed attempts. The system should instead use Basic Authentication to authenticate against the proxy, allowing the LinkCheckerTask services to function correctly. (SITES-25034) 
 
 
 #### MSM - Live Copies{#sites-msm-live-copies-6522}
 
-* When SEO Robots tags are applied to the primary copy and rolled out to Live Copy pages, the values appeared correctly in `crx/de`. However, the values were not reflected in the user interface under the Page Properties of the Live Copy pages. (SITES-23475) MAJOR
+* When SEO Robots tags are applied to the primary copy and rolled out to Live Copy pages, the values appeared correctly in `crx/de`. However, the values were not reflected in the user interface under the Page Properties of the Live Copy pages. (SITES-23475) 
 * Errors related to Launches were appearing when an attempt was made to promote a Launch through the user interface. The Promote Launch wizard remained empty, preventing the completion of the promotion process. (SITES-19718)
 * Issues arose with Experience Fragments in AEM following attempts to create Live Copies and perform rollouts. The problem occurred when users encountered a `NotFound` error when trying to navigate back to the Experience Fragments management screen from the Rollout screen. (SITES-21933)
 
 
 #### Page Editor{#sites-pageeditor-6522}
 
-* The Undo button changed the position of the component in addition to changing the text to the last version. (SITES-17465) BLOCKER
-* When a copied container component was pasted, it visually appeared twice, resulting in three instances on the page. However, after refreshing the page, the duplicate disappeared, suggesting the issue was likely a temporary visual glitch. (SITES-21890) MAJOR
+* The Undo button changed the position of the component in addition to changing the text to the last version. (SITES-17465) 
+* When a copied container component was pasted, it visually appeared twice, resulting in three instances on the page. However, after refreshing the page, the duplicate disappeared, suggesting the issue was likely a temporary visual glitch. (SITES-21890) 
 * While navigating the Components left pane using the keyboard's Tab or Shift+Tab keys, multiple text elements were not clearly visible, both visually and in tab mode. This issue affected accessibility, making it difficult to identify or interact with these components during keyboard navigation. (SITES-2266)
 
 #### Replication{#sites-replication-6522}
 
-In AEM 6.5.18 and 6.5.19, on deactivating a parent page, multiple deactivation requests were generated for each child page. This issue also broke the bulk unpublishing of the GraphQL endpoints. (NPR-42075 & NPR42010) CRITICAL
+In AEM 6.5.18 and 6.5.19, on deactivating a parent page, multiple deactivation requests were generated for each child page. This issue also broke the bulk unpublishing of the GraphQL endpoints. (NPR-42075 & NPR42010) 
 
 
 ### [!DNL Assets]{#assets-6522}
 
-* While using the Connected Assets feature, the updates made in AEM Assets do not reflect on AEM Sites environment. (ASSETS-42344) MAJOR <!-- Leave the "MAJOR" status priorities in place. -->
-* Issues with the asset publish status when you move assets from one location to another within Experience Manager. (ASSETS-41158) MAJOR
-* Uploading assets using the API results in `unclosed resource resolver` error message. (ASSETS-41049) MAJOR
-* Issues with `AssetReferenceResolverImpl` reference query after upgrading to Adobe Experience Manager, Service Pack 21. (ASSETS-40384) MAJOR
-* In AEM version 6.5.19, while removing one option from the search panel results, it unchecks all other available checkboxes as well. (ASSETS-37335) MAJOR
-* Junk values are displayed in the Excel output while performing the bulk metadata export operation. (ASSETS-37260) MAJOR
-* In AEM version 6.5.19, when you upload an SVG file in UTF-8 format, the output is blurred. (ASSETS-36616) MAJOR
+* While using the Connected Assets feature, the updates made in AEM Assets do not reflect on AEM Sites environment. (ASSETS-42344) 
+* Issues with the asset publish status when you move assets from one location to another within Experience Manager. (ASSETS-41158) 
+* Uploading assets using the API results in `unclosed resource resolver` error message. (ASSETS-41049) 
+* Issues with `AssetReferenceResolverImpl` reference query after upgrading to Adobe Experience Manager, Service Pack 21. (ASSETS-40384) 
+* In AEM version 6.5.19, while removing one option from the search panel results, it unchecks all other available checkboxes as well. (ASSETS-37335) 
+* Junk values are displayed in the Excel output while performing the bulk metadata export operation. (ASSETS-37260) 
+* In AEM version 6.5.19, when you upload an SVG file in UTF-8 format, the output is blurred. (ASSETS-36616) 
 * `Fetch original rendition for Dynamic Media Connected Assets` option is missing within Connected Assets configuration. (ASSETS-41726)
 * Asset properties are saved even if you do not define a value for mandatory fields. (ASSETS-37914)
 * If the processing status of an asset is Failed or Metadata Failed, the captions and audio tracks UI does not work appropriately. (ASSETS-37281)
@@ -222,7 +222,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 ### Foundation {#foundation-6522}
 
-In the AEM Assets console, an issue occurred when attempting to reorder DITA documents. The breadcrumb at the top of the path browser dialog box incorrectly displays the node name instead of the node title for the root parent. The correct node title only appears after selecting an item within the breadcrumb, indicating a temporary display error. (NPR-42106) MAJOR
+In the AEM Assets console, an issue occurred when attempting to reorder DITA documents. The breadcrumb at the top of the path browser dialog box incorrectly displays the node name instead of the node title for the root parent. The correct node title only appears after selecting an item within the breadcrumb, indicating a temporary display error. (NPR-42106) 
 
 
 <!-- #### Apache Felix {#foundation-apachefelix-6522}
@@ -242,7 +242,7 @@ In the AEM Assets console, an issue occurred when attempting to reorder DITA doc
 
 #### Communities {#foundation-communities-6522}
 
-After upgrading from AEM 6.5.19 to 6.5.20, an issue emerged where `Connection evic` threads failed to close properly after calls to `UgcSearch`. This problem, observed in the production environment, causes these threads to persist and accumulate over time, potentially impacting performance. (NPR-42019) MAJOR
+After upgrading from AEM 6.5.19 to 6.5.20, an issue emerged where `Connection evic` threads failed to close properly after calls to `UgcSearch`. This problem, observed in the production environment, causes these threads to persist and accumulate over time, potentially impacting performance. (NPR-42019) 
 
 
 <!-- #### Content distribution{#foundation-content-distribution-6522}
@@ -258,9 +258,9 @@ After upgrading from AEM 6.5.19 to 6.5.20, an issue emerged where `Connection ev
 
 #### Granite{#foundation-granite-6522}
 
-* Snapshot packages were being installed in AEM using CURL commands. During installation, the JCR installer scanned the packages by way of the OSGI Installer to ensure that no additional OSGI bundles or configurations are required. If a package version contained "SNAPSHOT," the OSGI Installer triggered VLT to create a corresponding snapshot package. However, because each AEM author instance runs its own OSGI Installer, both instances may attempt to generate the snapshot simultaneously, leading to session conflicts within the repository. (NPR-42003) MAJOR
-* A lock contention existed in `ScriptDependencyResolver` with AEM 6.5.21. (GRANITE-53181) MAJOR
-* After upgrading AEM to 6.5.21, issues arose when relative paths were used in Sightly (HTL) syntax, such as `data-sly-use`. (GRANITE-53080) MAJOR
+* Snapshot packages were being installed in AEM using CURL commands. During installation, the JCR installer scanned the packages by way of the OSGI Installer to ensure that no additional OSGI bundles or configurations are required. If a package version contained "SNAPSHOT," the OSGI Installer triggered VLT to create a corresponding snapshot package. However, because each AEM author instance runs its own OSGI Installer, both instances may attempt to generate the snapshot simultaneously, leading to session conflicts within the repository. (NPR-42003) 
+* A lock contention existed in `ScriptDependencyResolver` with AEM 6.5.21. (GRANITE-53181) 
+* After upgrading AEM to 6.5.21, issues arose when relative paths were used in Sightly (HTL) syntax, such as `data-sly-use`. (GRANITE-53080) 
 
 
 #### Integrations{#foundation-integrations-6522}
@@ -281,8 +281,8 @@ In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hamm
 
 #### Platform{#foundation-platform-6522}
 
-* The Enterprise Information Management tracking introduced in AEM 6.5.18 caused anomalies in calculating product adoption scores. The Adobe Metrics library caused this issue by overwriting user data supplied by the Omega tracking library. As a result, adoption scores for many AEM Sites and AEM Assets customers dropped to zero starting February 2024. (CQ-4358438) CRITICAL
-* A critical issue has been identified in the production environment where the Garbage Collector was improperly handling tags. Specifically, when a tag was moved or renamed, the Garbage Collector failed to update the `cq:MovedTo` property, causing the tag to disappear from pages. (CQ-4358293) MAJOR
+* The Enterprise Information Management tracking introduced in AEM 6.5.18 caused anomalies in calculating product adoption scores. The Adobe Metrics library caused this issue by overwriting user data supplied by the Omega tracking library. As a result, adoption scores for many AEM Sites and AEM Assets customers dropped to zero starting February 2024. (CQ-4358438) 
+* A critical issue has been identified in the production environment where the Garbage Collector was improperly handling tags. Specifically, when a tag was moved or renamed, the Garbage Collector failed to update the `cq:MovedTo` property, causing the tag to disappear from pages. (CQ-4358293) 
 * A problem with ContextHub in AEM 6.5.19 was causing segments to resolve incorrectly when a context path was added to an AEM instance. The issue specifically affected the URL field within the JavaScript objects generated by the page component, where the required context path prefix was missing. This omission prevented segments from functioning as expected. (SITES-21852)
 * Updated AEM Quickstart to use the library `commons-collections-3.2.2-adobe-2`. The update ensures that the application can continue to run smoothly. (NPR-42150)
 * The SMTP OAuth2 setup in AEM 6.5 differs significantly from what is used in AEM as a Cloud Service. To streamline configuration and ensure consistency, the setup in AEM 6.5 needed to be aligned with the standards used in AEM as a Cloud Service. (GRANITE-53273)
@@ -290,7 +290,7 @@ In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hamm
 
 #### Security{#foundation-security-6522}
 
-* Issues were encountered with an outdated JSAFE cryptographic library (version 6.0.0) in AEM. A patched bundle with JSAFE version 6.2.5 is included in AEM 6.5.22. (NPR-42006) CRITICAL
+* Issues were encountered with an outdated JSAFE cryptographic library (version 6.0.0) in AEM. A patched bundle with JSAFE version 6.2.5 is included in AEM 6.5.22. (NPR-42006) 
 * When validating allowed protocols during XSS checks, handlers compare against "http" and "https." However, the `protocol` property of a URL object returned these values with a trailing colon, such as `http:` and `https:`. This mismatch caused validation issues. To ensure accurate parsing, the protocol check needed to account for the colon or adjust the comparison logic accordingly.  (NPR-42119)
 * After installing AEM 6.5.21 (the previous version was AEM 6.5.19) on IBM&reg; WebSphere&reg; Liberty Profile and Semeru Java 8.0, it was not possible to open any pages. Error logs indicated issues related to servlet versions that different bundles required. To address this issue, the dependency on `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar` had to be reverted because it related to the problem. (NPR-42116)
 * Several browsers are phasing out support for **SameSite=None** cookies, which are used to allow cross-site access to cookies. As an alternative, **Partitioned cookies** are being introduced. These cookies isolate storage by the context in which they are used, enhancing privacy and security by preventing tracking across sites while still allowing cookies to function within specific partitions, such as embedded third-party content. (GRANITE-51953)
@@ -303,13 +303,13 @@ In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hamm
 
 #### Translation{#foundation-translation-6522}
 
-* Added support for recent changes in Core Components to default translation rules. (NPR-42029) CRITICAL
-* An issue was identified with the export of XLIFF files in AEM Forms. When using the **Export selection as XLIFF (strings only)** option, the sequence of components was not consistently maintained. However, the sequence remains correct when exporting XLIFF for a specific language. Two files were provided to demonstrate the issue: **DE-CH_Export.xliff** (correct sequence) and **String_Export.xliff** (incorrect sequence). (NPR-42118) MAJOR
+* Added support for recent changes in Core Components to default translation rules. (NPR-42029) 
+* An issue was identified with the export of XLIFF files in AEM Forms. When using the **Export selection as XLIFF (strings only)** option, the sequence of components was not consistently maintained. However, the sequence remains correct when exporting XLIFF for a specific language. Two files were provided to demonstrate the issue: **DE-CH_Export.xliff** (correct sequence) and **String_Export.xliff** (incorrect sequence). (NPR-42118) 
 
 
 #### User interface{#foundation-ui-6522}
 
-* The `coralui-component-dialog` was altering the placement of `cq-dialog-actions`, potentially affecting the layout or behavior of action buttons within dialog boxes in AEM. (NPR-42294) BLOCKER
+* The `coralui-component-dialog` was altering the placement of `cq-dialog-actions`, potentially affecting the layout or behavior of action buttons within dialog boxes in AEM. (NPR-42294) 
 * The color picker functionality in AEM was malfunctioning. When accessed, it displayed a blank modal, preventing color selection. This issue began after installing AEM 6.5.20 in the Stage environment. The color picker worked correctly *prior* to the update. (NPR-42163)
 * In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **Tools** > **Workflow** > **Models** > select any model > **Start Workflow**, the Browse icon was missing from the Payload field in the **Run Workflow** dialog box. (NPR-42162)
 
