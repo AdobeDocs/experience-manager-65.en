@@ -113,9 +113,11 @@ This is an automatically generated message. Please do not reply.
 
 To customize the English email template for page notification:
 
-1. In CRXDE, open the file:
+1. Create an overlay for [Page notifications](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 
-   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
+1. Open the file:
+
+   `en.txt`
 
 1. Modify the file to your needs.
 1. Save the changes.
@@ -175,9 +177,11 @@ This is an automatically generated message. Please do not reply.
 
 To customize the English email template for workflow event notification:
 
-1. In CRXDE, open the file:
+1. Create an overlay for [Workflow notifications](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
-   `/libs/settings/workflow/notification/email/default/en.txt`
+1. Open the file:
+
+   `en.txt`
 
 1. Modify the file to your needs.
 1. Save the changes.
@@ -233,11 +237,12 @@ The following variables can be used within the email template:
 
 To add a template for a new language:
 
-1. In CRXDE, add a file `<language-code>.txt` below:
+1. Create an [overlay](/help/sites-developing/overlays.md) as appropriate.
 
-    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : for page notifications
-    * `/libs/settings/workflow/notification/email/default` : for workflow notifications
+    * [Page notifications](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+    * [Workflow notifications](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
+1. Add a file `<language-code>.txt`.
 1. Adapt the file to the language.
 1. Save the changes.
 

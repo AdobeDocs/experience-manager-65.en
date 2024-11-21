@@ -5,6 +5,7 @@ feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
 ---
+
 # The Universal Editor {#universal-editor}
 
 Learn about the flexibility of the Universal Editor and how it can help power your headless experiences using AEM 6.5.
@@ -40,17 +41,17 @@ Once you have complete the setup, you can [instrument your applications to use t
 
 ### Update AEM {#update-aem}
 
-Service pack 21 and a feature pack for AEM are required in order to use the Universal Editor with AEM 6.5.
+Service pack 21 or 22 and a feature pack for AEM are required in order to use the Universal Editor with AEM 6.5.
 
 #### Apply Latest Service Pack {#latest}
 
-Make sure that you are running at least service pack 21 for AEM 6.5. You can download the latest service pack from [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Make sure that you are running at least service pack 21 or 22 for AEM 6.5. You can download the latest service pack from [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 #### Install Universal Editor Feature Pack {#feature-pack}
 
 Install the **Universal Editor Feature Pack for AEM 6.5** [available on Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
-If you are already running service pack 23 or higher, this step is not necessary.
+If you are already running service pack 23 or higher, the feature pack is not necesary.
 
 ### Configure Services {#configure-services}
 
@@ -61,7 +62,7 @@ The feature pack installs a number of new packages for which additional configur
 1. Open the Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Locate **Adobe Granite Token Authentication Handler** in the list and click **Change the configuration values**.
-1. In the dialog, change the **SameSite attribute for the login-token cookie** (`token.samesite.cookie.attr`)value to `Partitioned`.
+1. In the dialog, change the **SameSite attribute for the login-token cookie** (`token.samesite.cookie.attr`) value to `Partitioned`.
 1. Click **Save**.
 
 #### Remove the `SAMEORIGIN` headers X-Frame option. {#sameorigin}
