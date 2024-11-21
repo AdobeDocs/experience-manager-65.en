@@ -23,7 +23,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 | Version  | 6.5.22.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
 | Date     | Thursday, November 21, 2024 <!-- UPDATE FOR EACH NEW RELEASE -->              |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.22.0 {#what-is-included-in-aem-6522}
 
@@ -329,7 +329,7 @@ In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hamm
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.22.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions. <!-- UPDATE FOR EACH NEW RELEASE -->
-* The Service Pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip).
+* The Service Pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip).
 * On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.22.0 on one of the Author instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -344,7 +344,7 @@ In ![Hammer icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hamm
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the Service Sack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Download the Service Sack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -407,7 +407,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
     <dependency>
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
-    <version>6.5.21</version>
+    <version>6.5.22</version>
     <scope>provided</scope>          
     </dependency>
   ```
