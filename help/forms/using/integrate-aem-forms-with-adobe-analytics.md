@@ -215,6 +215,11 @@ Perform the following steps to create an Adobe Launch configuration:
 
 1. Publish the configuration.
 
+>[!NOTE]
+>
+> When you [embed AEM Forms within an AEM Sites page](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), Adobe Launch configurations are not supported in an iFrame for adaptive forms. To resolve this, configure Adobe Launch rules directly on the Sites page or migrate existing Adobe Launch configurations from AEM Forms to the Sites page.
+
+
 ### Enable [!DNL Adobe Analytics] for an adaptive form {#enable-analytics-adaptive-form}
 
 To use [!DNL Adobe Launch] configuration in an existing Adaptive Form:
