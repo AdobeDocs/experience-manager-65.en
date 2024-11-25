@@ -45,21 +45,6 @@ Key features and enhancements in this release include the following:
 
 The IPTC tab now supports [!UICONTROL Alt Text] and [!UICONTROL Extended Description] text fields. (ASSETS-34918)
 
-### [!DNL Forms]
-
-* **Support for OAuth Credentials**: A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)
-* [Rule Editor enhancements in AEM Forms](/help/forms/using/rule-editor-core-components.md):
-  * Support for implementing nested conditions with `When-then-else` functionality.
-  * Validate or reset panels and forms, including fields.
-  * Support for modern JavaScript features such as let and arrow functions (ES10 support) within the Custom Functions.
-* [AutoTag API for PDF Accessibility](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): AEM Forms on OSGi now support the new AutoTag API to enhance PDF for accessibility standards by adding tags: paragraphs, and lists. It makes PDFs more accessible for users with assistive technology.
-* **16-bit PNG support**: PDF Generator's ImageToPdf service now supports conversion of PNGs with 16-bit color depth.
-* **Apply artifacts to individual text blocks in XDPs**: Forms Designer now lets users configure settings on individual text blocks in XDP files. This ability lets you control the elements that are treated as artifacts in the resulting PDFs. These elements, such as headers and footers, are made accessible for assistive technologies. The key features include marking text blocks as artifacts, and embedding these settings in the XDP metadata. The Forms Output service applies these settings during PDF generation, ensuring proper PDF / UA tagging.
-* **AEM Forms Designer is certified with `GB18030:2022` standard**: With the `GB18030:2022` certification, now Forms Designer supports the Chinese Unicode character set that lets you input Chinese characters into all editable fields and dialog boxes.
-* The PDF Generator service on the JEE server now [supports the WebToPDF route](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) for converting HTML to PDF, alongside the existing WebKit and Windows-only WebCapture routes. While the WebToPDF route is already available on OSGi and extended to JEE. Now, on both JEE and OSGi platforms, the PDF Generator service supports the following routes across different operating systems:
-  * **Windows**: WebKit, WebCapture, WebToPDF
-  * **Linux&reg;**: WebKit, WebToPDF
-
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 ## Fixed issues in Service Pack 22 {#fixed-issues}
