@@ -39,23 +39,23 @@ Key features and enhancements in this release include the following:
 
 Some of the key features and enhancements in this release include the following:
 
-* **hCaptcha and Cloudfare Turnstile Captcha services**: AEM Forms support the following Captcha services:
+* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) and [Cloudfare Turnstile Captcha services](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms support the following Captcha services:
   * hCaptcha protects forms from bots, spam, and automated abuse by challenging users with a checkbox widget. It ensures only human users proceed, enhancing security for online transactions.
   * Cloudflare Turnstile offers a security measure that aims to protect forms from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form.
 
 * **Adaptive Form versioning**:
-  * **Create multiple versions of an Adaptive Form**: Now users can easily manage variations of existing forms. This simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
-  * **Compare Adaptive Forms**: Now users can easily compare two forms to identify differences. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
+  * [Create multiple versions of an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md): Now users can easily manage variations of existing forms. This simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
+  * [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md): Now users can easily compare two forms to identify differences. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
 
-* **Table of Content API for PDF Accessibility**: AEM Forms on OSGi now support the new TOC Tag API to enhance PDF for accessibility standards. It makes PDFs more accessible for users with assistive technology.
+* [Table of Content API for PDF Accessibility](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): AEM Forms on OSGi now support the new TOC Tag API to enhance PDF for accessibility standards. It makes PDFs more accessible for users with assistive technology.
 
 * Added support to enable font embedding in [Interactive Communications Batch APIs](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel):  Interactive Communications now includes support for embedding Adobe Ming and Adobe Myungjo fonts in PDFs generated through the Batch API. This enhancement ensures accurate text rendering in generated documents, even when using font subsets, providing improved support for multilingual content in PDF outputs.
 
-* **Support for Auto Sizing of Font for Static PDF documents**: AEM Forms Designer now supports Auto Sizing features in .xdp files. Now users can specify auto sizing for the text fields, numeric fields , password fields, and datetime fields in the XDPs to render the text field content without truncating these fields content in static PDF documents.
+* Support for Auto Sizing of Font for Static PDF documents: AEM Forms Designer now supports Auto Sizing features in .xdp files. Now users can specify auto sizing for the text fields, numeric fields , password fields, and datetime fields in the XDPs to render the text field content without truncating these fields content in static PDF documents.
 
-* **Fragment XDP resolution**: AEM Forms on OSGi now resolves Fragment XDPs referenced in Master XDPs and stored in the AEM CRX Repository.
+* [Fragment XDP resolution](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/ddxRef.pdf): AEM Forms on OSGi now resolves Fragment XDPs referenced in Master XDPs and stored in the AEM CRX Repository.
 
-* **PDF/A compliance enhancements**: Now users can convert PDFs to PDF/A formats (1a, 2a, 3a) for archival purposes while ensuring accessibility and verifying compliance with these standards.
+* [PDF/A compliance enhancements](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): Now users can convert PDFs to PDF/A formats (1a, 2a, 3a) for archival purposes while ensuring accessibility and verifying compliance with these standards.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -216,7 +216,7 @@ A production issue disrupted the migration process when a video upload to Dynami
 
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.22.0 Forms add-on package release is scheduled for Thursday, November 28, 2024. A list of Forms fixes and enhancements is added to this section post the release.
 
-#### Forms {forms-bug-fixes-sp22} 
+#### Forms {#forms-bug-fixes-sp22} 
 
 * The URLs generated for file attachments in saved drafts in AEM Forms does not reflect the configured Apache Sling Resource Resolver Factory mappings. (FORMS-16949) 
 * When a user on AEM Forms Service Pack 19 (6.5.19.0) previews a letter, the content does not align properly, as the spaces appear missing and the character ‘'x” appears at some locations. (FORMS-16670) 

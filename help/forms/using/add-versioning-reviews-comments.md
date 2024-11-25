@@ -1,5 +1,5 @@
 ---
-title: Add versionings, comments, and annotations to am AEM 6.5 adaptive form form.
+title: Add versionings, comments, and annotations to am AEM 6.5 adaptive form.
 description: Use AEM 6.5 adaptive form core components to add comments, annotations, and versionings to an adaptive form.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
@@ -9,9 +9,7 @@ role: User, Developer, Admin
 Before you use versionings, comments, and annotations in an Adaptive Form, you must ensure to [enable Adaptive Form Core Components](
 https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) on AEM 6.5 Forms.
 
-<!--
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
--->
 
 Adaptive Form Core Components let form authors add versioning, comments, and annotations to forms. These features simplify form development by enabling users to create and manage multiple versions, collaborate through comments, and add notes to specific form sections, enhancing the form-building experience.
 
