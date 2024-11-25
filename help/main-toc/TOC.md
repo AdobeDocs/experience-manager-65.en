@@ -618,6 +618,8 @@ user-guide-title: AEM 6.5
     + [Rule Editor](/help/forms/using/rule-editor-core-components.md)
     + [Create and use custom function in an Adaptive Form Core Components](/help/forms/using/create-and-use-custom-functions-core-components.md)
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+    + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md)
+    + [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md)
   + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
     + [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)
     + [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md)

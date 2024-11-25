@@ -35,7 +35,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 Key features and enhancements in this release include the following:
 
-### Forms {#forms}
+### Forms {#forms-sp22}
 
 Some of the key features and enhancements in this release include the following:
 
