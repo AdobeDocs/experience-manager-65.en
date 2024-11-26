@@ -77,4 +77,6 @@ To add annotations to a form, perform the following steps:
 
    ![See added annotations](assets/see-annotations.png)
 
+## See also {#see-also}
 
+* [Compare Adaptive Forms core components](/help/forms/using/compare-forms-core-components.md)

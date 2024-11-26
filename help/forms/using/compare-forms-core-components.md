@@ -18,6 +18,6 @@ When form authors need to compare two distinct forms based on the fields, conten
 
    ![Compared forms](/help/forms/using/assets/compared-forms.png)
 
-## See Also {#see-also}
+## See also {#see-also}
 
-{{see-also}}
+* [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md)
