@@ -6,13 +6,14 @@ role: User, Developer, Admin
 ---
 # Versioning, reviewing and commenting on an Adaptive Form
 
-Before you use versionings, comments, and annotations in an Adaptive Form, you must ensure to [enable Adaptive Form Core Components](
-https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) on AEM 6.5 Forms.
-
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Adaptive Form Core Components let form authors add versioning, comments, and annotations to forms. These features simplify form development by enabling users to create and manage multiple versions, collaborate through comments, and add notes to specific form sections, enhancing the form-building experience.
 
+## Prerequisite {#prerequisite-versioning}
+
+To use versioning, commenting, and annotation features in an Adaptive Form, ensure that [Adaptive Form Core Components](
+https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) are enabled on AEM 6.5 Forms.
 
 ## Adaptive Form versioning {#adaptive-form-versioning}
 
@@ -52,7 +53,7 @@ Form authors can compare two different versions of a form for previewing purpose
 A review is a mechanism that allows one or more reviewers to comment on forms. Any form user can comment on a form or review a form through comments. To comment on a form, select a **[!UICONTROL Form]**, and add a **[!UICONTROL Comment]** to the form.
 
    >[!NOTE]
-   > When you use comments in adaptive form core components as discussed above, the form functionality [Adding reviewers to forms](/help/forms/adding-reviwers-form.md) is disabled.
+   > When you use comments in adaptive form core components as discussed above, the form functionality, [adding reviewers to forms](/help/forms/using/create-reviews-forms.md) is disabled.
 
 
   ![Add comments on a form](assets/form-comments.png)
