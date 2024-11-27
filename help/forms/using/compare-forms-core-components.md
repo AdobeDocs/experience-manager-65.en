@@ -6,7 +6,7 @@ role: User, Developer, Admin
 ---
 # Compare Adaptive Forms {#compare-two-forms}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 When form authors need to compare two distinct forms based on the fields, content, and form components, they compare the two forms. The form author must make sure that the two forms are in the same directory or folder in order to compare them. To compare two distinct adaptive forms, perform the following steps:
 
@@ -18,6 +18,6 @@ When form authors need to compare two distinct forms based on the fields, conten
 
    ![Compared forms](/help/forms/using/assets/compared-forms.png)
 
-## See also {#see-also}
+## See also
 
 * [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md)

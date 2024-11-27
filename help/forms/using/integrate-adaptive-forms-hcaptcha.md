@@ -6,7 +6,7 @@ role: User, Developer
 ---
 # Connect your AEM Forms environment with hCaptcha&reg; {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview"> This feature is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes.
 
@@ -19,14 +19,14 @@ In addition to hCaptcha&reg;, AEM Forms 6.5 supports the following CAPTCHA solut
 
 hCaptcha&reg; service protects your forms from bots, spam, and automated abuse. It poses a checkbox widget challenge and evaluates the user response to determine if it's a human or a bot interacting with the form. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious activities.
 
-AEM 6.5 Adaptive Forms supports hCaptcha&reg. You can use it to present a checkbox widget challenge on form submission.
+AEM 6.5 Adaptive Forms support hCaptcha&reg. You can use it to present a checkbox widget challenge on form submission.
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
 
 ### Prerequisites to integrate AEM Forms environment with hCaptcha&reg; {#prerequisite}
 
-To configure hCaptcha&reg; with AEM Forms, you need to obtain the [hCaptcha&reg; sitekey and secret key](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) from the hCaptcha&reg; website.
+To configure hCaptcha&reg; with AEM Forms, you need to obtain the [hCaptcha&reg; site key and secret key](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) from the hCaptcha&reg; website.
 
 ### Configure hCaptcha&reg; {#steps-to-configure-hcaptcha}
 

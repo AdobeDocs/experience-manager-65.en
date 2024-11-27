@@ -6,7 +6,7 @@ role: User, Developer, Admin
 ---
 # Versioning, reviewing and commenting on an Adaptive Form
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 Adaptive Form Core Components let form authors add versioning, comments, and annotations to forms. These features simplify form development by enabling users to create and manage multiple versions, collaborate through comments, and add notes to specific form sections, enhancing the form-building experience.
 
@@ -21,7 +21,7 @@ Adaptive form versioning helps add versions to a form. Form authors can easily c
 
 ### Create a form version {#create-a-form-version}
 
-To create version of a form, follow the steps given below:
+To create a version of a form, follow the steps given below:
 
 1. On your AEM Forms environment, navigate to the **[!UICONTROL Form]**>>**[!UICONTROL Forms & Documents]** and select your **Form**.
 1. From the selection dropdown on the left panel, select **[!UICONTROL Versions]**.
@@ -68,15 +68,15 @@ To add annotations to a form, perform the following steps:
 1. Click the **add icon** located on the upper right rail as given in the image.
         ![Annotation](assets/annotation.png)
 
-1. Now click the **add icon** located on the upper left rail as given in the image to add the annotation.
+1. Now, click the **add icon** located on the upper left rail as given in the image to add the annotation.
         ![Add annotation](assets/add-annotation.png)
 
 1. Now, you can add comments, draw sketches with multiple colors to form components.
 
-1. To see all your added annotations to a form, select your form, and you see the annotations added on the left panel, as shown in the image.
+1. To see all your added annotations to a form, select your form, and you see that the annotations added on the left panel, as shown in the image.
 
    ![See added annotations](assets/see-annotations.png)
 
-## See also {#see-also}
+## See also
 
 * [Compare Adaptive Forms core components](/help/forms/using/compare-forms-core-components.md)

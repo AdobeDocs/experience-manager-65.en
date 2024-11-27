@@ -6,7 +6,7 @@ role: User, Developer
 ---
 # Connect your AEM Forms environment with Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<span class="preview"> This feature is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
 
@@ -25,11 +25,11 @@ Cloudflare's Turnstile Captcha is a security measure that aims to protect forms 
 
 ### Prerequisites to integrate AEM Forms environment with Turnstile Captcha {#prerequisite}
 
-To configure Turnstile for AEM Forms, you need to obtain [Turnstile sitekey and secret key](https://developers.cloudflare.com/turnstile/get-started/) from the Turnstile website.
+To configure Turnstile for AEM Forms, you need to obtain the [Turnstile sitekey and secret key](https://developers.cloudflare.com/turnstile/get-started/) from the Turnstile website.
 
 ### Configure Turnstile {#steps-to-configure-hcaptcha}
 
-To integrate AEM Forms with Turnstile service, perform the following steps:
+To integrate AEM Forms with the Turnstile service, perform the following steps:
 
 1. Create a Configuration Container on your AEM Forms environment. A Configuration Container holds Cloud Configurations used to connect AEM Forms to external services. To create a Configuration Container:
     1. Open your AEM Forms environment.
@@ -72,7 +72,7 @@ To integrate AEM Forms with Turnstile service, perform the following steps:
 
     ![Select Configuration Container](assets/captcha-properties.png)
 
-1. Select an Adaptive Form, and Click **[!UICONTROL Edit]** to open your adaptive form in editor.
+1. Select an Adaptive Form, and Click **[!UICONTROL Edit]** to open your adaptive form in the editor.
 1. From the component browser, drag-drop or add the **[!UICONTROL Adaptive Form Turnstile]** component onto the Adaptive Form.
 1. Select the **[!UICONTROL Adaptive Form Turnstile]** component and Click properties ![Properties icon](assets/configure-icon.svg) icon. It opens the properties dialog. Specify the following properties:
 
