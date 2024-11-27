@@ -33,6 +33,7 @@ solution: Experience Manager, Experience Manager Forms
 >
 >* The 64-bit version of the designer was introduced with AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 >* The 32-bit version of the designer is deprecated since the release of [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+> * To learn about the supported platforms for Forms Designer, which align with the AEM Forms supported platforms, [click here](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 For more information regarding installation of Forms Designer, Visit [Frequently asked questions](#fandq).
 
