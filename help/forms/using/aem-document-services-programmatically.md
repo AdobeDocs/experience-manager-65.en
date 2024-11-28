@@ -5065,22 +5065,19 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 <!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
-#### Auto Tag Table of Content {#auto-tag-toc}
-
-The Auto-Tagging TOC API enhances document accessibility and navigation by automatically generating and tagging Table of Contents entries. This ensures compliance with accessibility standards, improves user experience, and saves time by dynamically updating TOCs with content changes. The API also maintains accuracy and consistency across documents, simplifying content management for developers.
-
-
-
-
 #### Auto Tag PDF documents {#auto-tag-api}
 
-Auto Tag PDF API helps to make a PDF document accessible by adding tags to it, It supports tagging block of text (paragraphs) and the bulleted lists in one operator.
+The Auto Tag PDF API enhances PDF accessibility by adding tags to documents, ensuring compliance with accessibility standards. This not only improves the user experience but also maintains accuracy and consistency across documents. The Auto Tag API supports tagging the following elements:  
+
+* Blocks of text (paragraphs)  
+* Bulleted lists in one operator 
+* Table of Contents (TOC)  
 
 ![Auto Tagged PDF document](assets/auto-tag-api.png)
 
-<!--
+The following Java code sample demonstrates how to convert a PDF file into a tagged PDF document.
 
-**Syntax**: `tag(Document inDoc)`
+**Syntax**: `Document tag(final Document inDoc)`
 
 **Input Parameters**
 
@@ -5091,93 +5088,47 @@ Auto Tag PDF API helps to make a PDF document accessible by adding tags to it, I
    <th>Description</th>
   </tr>
   <tr>
-   <td><code>inDoc</code><br /> </td>
-   <td>Document object containing PDF.<br /> </td>
+   <td><code>inDoc</code></td>
+   <td>A document supplied as input to be tagged. It is a mandatory parameter.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-The following Java code tags the PDF document with lists and paragraphs.
-
 ```java
-/*************************************************************************
- *
- * ADOBE CONFIDENTIAL
- * ___________________
- *
- * Copyright 2014 Adobe Systems Incorporated
- * All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains
- * the property of Adobe Systems Incorporated and its suppliers,
- * if any.  The intellectual and technical concepts contained
- * herein are proprietary to Adobe Systems Incorporated and its
- * suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from Adobe Systems Incorporated.
- **************************************************************************/
-package com.adobe.fd.pdfutility.services.impl;
-import com.adobe.aem.transaction.core.ITransactionRecorder;
-import com.adobe.aemfd.docmanager.Document;
-import com.adobe.fd.jbig2.wrapper.api.JBIG2Wrapper;
-import com.adobe.fd.pdfutility.services.PDFUtilityService;
-import com.adobe.fd.pdfutility.services.client.*;
-import com.adobe.internal.pdftoolkit.core.exceptions.PDFIOException;
-import com.adobe.internal.pdftoolkit.core.exceptions.PDFInvalidDocumentException;
-import com.adobe.internal.pdftoolkit.core.exceptions.PDFSecurityException;
-import com.adobe.internal.pdftoolkit.pdf.document.*;
-import com.adobe.internal.pdftoolkit.services.pdftagging.structlib.StructLib;
-import com.adobe.internal.pdfutil.util.IOUtils;
-import com.adobe.internal.pdfutil.util.JBIG2CustomFilter;
-import com.day.cq.dam.handler.gibson.fontmanager.FontManagerService;
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
-import org.osgi.service.component.ComponentContext;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import java.io.IOException;
-import java.util.List;
-
-/**
- * The following Java code example is used to tag the PDF document with lists and paragraphs.
- */
-
-public PDFDocument tag(final Document inDoc) throws PDFUtilityException {
-        if (LOGGER.isTraceEnabled()) {
-            LOGGER.trace(pdfUtilService, "tag");
-}
-        if (inDoc == null) {
-            LOGGER.info(PDFUtilityMsgSet.UTL_S00_001_MISSING_DOCUMENT);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_001_MISSING_DOCUMENT, null));
-}
-PDFDocument outDoc;
-        try {
-PDFOpenOptions openOptions = PDFOpenOptions.newInstance();
-            openOptions.setFontSet(fontManagerService.getPdfFontSet());
-            outDoc = IOUtils.toPDFDocument(inDoc, openOptions);
-StructLib.AutoTagDoc(outDoc);
-            LOGGER.info("Successfully tagged the PDF document.");
-} catch (PDFSecurityException e) {
-            LOGGER.error(PDFUtilityMsgSet.UTL_S00_015_PDF_SECURITY_ERROR);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_015_PDF_SECURITY_ERROR, null), e);
-} catch (PDFIOException e) {
-            LOGGER.error(PDFUtilityMsgSet.UTL_S00_011_PDF_IO_ERROR);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_011_PDF_IO_ERROR, null), e);
-} catch (PDFInvalidDocumentException e) {
-            LOGGER.info(PDFUtilityMsgSet.UTL_S00_003_INVALID_PDF_DOCUMENT);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_003_INVALID_PDF_DOCUMENT, null), e);
-} catch (IOException e) {
-            LOGGER.error(PDFUtilityMsgSet.UTL_S00_016_PDF_GENERAL_ERROR);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_016_PDF_GENERAL_ERROR, null), e);
-} finally {
-            if (LOGGER.isTraceEnabled()) {
-                LOGGER.trace(pdfUtilService, "tag");
-}
-}
-        return outDoc;
+@Reference
+private PDFUtilityService pdfutilityService;
+private static final File outputFolder = new File("C:/Output/");
+void tag(File inputFile) throws Exception
+{
+    Document inDoc = null;
+    try
+    {
+        inDoc = new Document(inputFile);
+        if(inputFile.getName().trim().isEmpty()) {
+            throw new Exception("Input file name cannot be null");
+        }
+        String inputFileExtension = "";
+        int dotIndex = inputFile.getName().lastIndexOf('.');
+        if (dotIndex > 0 && dotIndex < inputFile.getName().length() - 1) {
+            inputFileExtension = inputFile.getName().substring(dotIndex + 1);
+        }
+        if(inputFileExtension.isEmpty()) {
+            throw new Exception("Input file should have an extension");
+        }
+        Document taggedDoc;
+        taggedDoc = pdfutilityService.tag(inDoc);
+        File outputFile = new File(outputFolder,"Output.pdf");
+        taggedDoc.copyToFile(outputFile);
+        taggedDoc.close();
+    } 
+    finally {
+        if (inDoc != null) {
+            inDoc.dispose();
+            inDoc = null;
+        }
+    }
 }
 
 ```
--->
+
+

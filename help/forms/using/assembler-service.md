@@ -197,6 +197,21 @@ fragment="myFragment"/>
 </XDP>
 </DDX>
 ```
+#### Resolve references on CRX repository {#resolve-references-on-crx-repository}
+
+You can selectively specify the source reference that you want to resolve by giving the crx path of the
+fragment reference in the <XDP source>. In the example given below, the fragments included will also be
+resolved.
+
+```xml
+<DDX xmlns="http://ns.adobe.com/DDX/1.0/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ns.adobe.com/DDX/1.0/ coldfusion_ddx.xsd">
+<XDP result="stitched.xdp">
+<XDP source="crx:///content/dam/formsanddocuments/test-xdp/sample.xdp" />
+</XDP>
+</DDX>
+```
 
 #### Selectively resolve absolute or relative references {#selectively-resolve-absolute-or-relative-references}
 
@@ -339,4 +354,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-Using DDX and the Assembler service to call other LiveC ycle services can simplify your process diagram. It can even reduce the effort you spend customizing your workflows. (See also
+Using DDX and the Assembler service to call other LiveC ycle services can simplify your process diagram. It can even reduce the effort you spend customizing your workflows. (See also)

@@ -6,7 +6,9 @@ role: User, Developer, Admin
 ---
 # Versioning, reviewing and commenting on an Adaptive Form
 
+<!--
 <span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+-->
 
 Adaptive Form Core Components let form authors add versioning, comments, and annotations to forms. These features simplify form development by enabling users to create and manage multiple versions, collaborate through comments, and add notes to specific form sections, enhancing the form-building experience.
 

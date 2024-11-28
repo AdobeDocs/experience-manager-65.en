@@ -33,29 +33,27 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 ## Key features and enhancements
 
-Key features and enhancements in this release include the following:
-
 ### Forms {#forms-sp22}
 
-Some of the key features and enhancements in this release include the following:
+Key features and enhancements in this release include the following:
 
 * [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) and [Cloudfare Turnstile Captcha services](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms support the following Captcha services:
-  * hCaptcha protects forms from bots, spam, and automated abuse by challenging users with a checkbox widget. It ensures only human users proceed, enhancing security for online transactions.
+  * hCaptcha protects forms from bots, spam, and automated abuse by challenging users with a checkbox widget. It ensures that only human users proceed, enhancing security for online transactions.
   * Cloudflare Turnstile offers a security measure that aims to protect forms from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form.
 
-* **Adaptive Form versioning**:
+* Adaptive Form versioning:
   * [Create multiple versions of an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md): Now users can easily manage variations of existing forms. This simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
   * [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md): Now users can easily compare two forms to identify differences. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
 
-* [Table of Content API for PDF Accessibility](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): AEM Forms on OSGi now support the new TOC Tag API to enhance PDF for accessibility standards. It makes PDFs more accessible for users with assistive technology.
-
 * Added support to enable font embedding in [Interactive Communications Batch APIs](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel):  Interactive Communications now includes support for embedding Adobe Ming and Adobe Myungjo fonts in PDFs generated through the Batch API. This enhancement ensures accurate text rendering in generated documents, even when using font subsets, providing improved support for multilingual content in PDF outputs.
 
-* Support for Auto Sizing of Font for Static PDF documents: AEM Forms Designer now supports Auto Sizing features in .xdp files. Now users can specify auto sizing for the text fields, numeric fields , password fields, and datetime fields in the XDPs to render the text field content without truncating these fields content in static PDF documents.
+* [Table of Content API for PDF Accessibility](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api): AEM Forms on OSGi now support the new TOC Tag API to enhance PDF for accessibility standards. It makes PDFs more accessible for users with assistive technology.
 
-* [Fragment XDP resolution](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/ddxRef.pdf): AEM Forms on OSGi now resolves Fragment XDPs referenced in Master XDPs and stored in the AEM CRX Repository.
+* [Fragment XDP resolution](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository): AEM Forms on OSGi now resolves Fragment XDPs referenced in Master XDPs and stored in the AEM CRX Repository.
 
 * [PDF/A compliance enhancements](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): Now users can convert PDFs to PDF/A formats (1a, 2a, 3a) for archival purposes while ensuring accessibility and verifying compliance with these standards.
+
+* **Support for Auto Sizing of Font for Static PDF documents**: AEM Forms Designer now supports Auto Sizing features in .xdp files. Now users can specify auto sizing for the text fields, numeric fields , password fields, and datetime fields in the XDPs to render the text field content without truncating these fields content in static PDF documents.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -211,10 +209,13 @@ In AEM 6.5.18 and 6.5.19, on deactivating a parent page, multiple deactivation r
 
 A production issue disrupted the migration process when a video upload to Dynamic Media failed, displaying a process failure error in the user interface. (ASSETS-36038)
 
+<!--
 
 ### [!DNL Forms]{#forms-6522}
 
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.22.0 Forms add-on package release is scheduled for Thursday, November 28, 2024. A list of Forms fixes and enhancements is added to this section post the release.
+
+-->
 
 #### Forms {#forms-bug-fixes-sp22} 
 
@@ -237,7 +238,8 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * When a user generates a PDF in AEM Forms with bulleted lists set to the default “Disc” style, the PDF fails the Accessibility Check in Adobe Acrobat's accessibility tool. List with 'Bullet' and 'Square' styles pass the accessibility check. (FORMS-13802, LC-3922179) 
 * When a user upgrades from AEMForms-6.5.0-0065 to AEMForms-6.5.0-0087 on Standalone RHEL8 JBoss setup, it fails to connect with the LiveCycle service container. (FORMS-15907) • 
 * On AEM Forms on JEE, In AEM Workspace when a user selects a previously submitted form and start a new form process, forms with prepopulated data processes wipe out all previously submitted data and replace it with the prepopulated data, not retaining any fields that were manually filled out in the previous form. (FORMS-15376) 
-* On AEM Forms Service Pack 20 (6.5.20.0) when a user converts Tiff file to PDF using PDFG service, it fails with the error: (FORMS-14879) ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/sun/image/codec/jpeg/JPEGCodec * Upgrade in AEM Forms on JEE jar files: The `commons-collections:commons-collections:jar` library is now included to improve dependency resolution and functionality across various AEM Forms JEE job such as:
+* On AEM Forms Service Pack 20 (6.5.20.0) when a user converts Tiff file to PDF using PDFG service, it fails with the error: (FORMS-14879) ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/sun/image/codec/jpeg/JPEGCodec 
+* Upgrade in AEM Forms on JEE jar files: The `commons-collections:commons-collections:jar` library is now included to improve dependency resolution and functionality across various AEM Forms JEE job such as:
   * Assembler Job enhancement to improve job processing and error handling. 
   * PDF Generator (PDFG) Job enhancement to ensure smoother operations for document generation and conversion. 
   * LC-Upgrade Job enhancement to improve the upgrade process while ensuring a stable transition between versions. 
@@ -611,30 +613,31 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 * In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
 * When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with 'x'. (FORMS-15681)
 * When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
+  ```java
 
-` 
-Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;" 
-the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear' 
-@7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52 
-(instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder, 
-have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
-    at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:423)
-    at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:362)
-    at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)
-    at com.jniwrapper.DefaultLibraryLoader.<clinit>(SourceFile:33)
-    at com.adobe.pdfg.callbacks.NativeToPDFTransactionCallback.<clinit>(NativeToPDFTransactionCallback.java:78)
-    at com.adobe.pdfg.Native2PdfCaller.callNativeBMC(Native2PdfCaller.java:1010)
-    at com.adobe.pdfg.Native2PdfCaller.createPDF(Native2PdfCaller.java:420)
-    at com.adobe.pdfg.GeneratePDFImpl.createPDFInternal(GeneratePDFImpl.java:630)
-    at com.adobe.pdfg.GeneratePDFImpl.createPDFCommon(GeneratePDFImpl.java:355)
-    at com.adobe.pdfg.GeneratePDFImpl.createPDF(GeneratePDFImpl.java:296)
-    at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-    at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-    at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-    at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-    at deployment.adobe-livecycle-jboss.ear//com.adobe.idp.dsc.component.impl.DefaultPOJOInvokerImpl.invoke(DefaultPOJOInvokerImpl.java:118)
-    ... 217 more
-`
+  Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;" 
+  the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear' 
+  @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52 
+  (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder, 
+  have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
+      at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:423)
+      at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:362)
+      at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)
+      at com.jniwrapper.DefaultLibraryLoader.<clinit>(SourceFile:33)
+      at com.adobe.pdfg.callbacks.NativeToPDFTransactionCallback.<clinit>(NativeToPDFTransactionCallback.java:78)
+      at com.adobe.pdfg.Native2PdfCaller.callNativeBMC(Native2PdfCaller.java:1010)
+      at com.adobe.pdfg.Native2PdfCaller.createPDF(Native2PdfCaller.java:420)
+      at com.adobe.pdfg.GeneratePDFImpl.createPDFInternal(GeneratePDFImpl.java:630)
+      at com.adobe.pdfg.GeneratePDFImpl.createPDFCommon(GeneratePDFImpl.java:355)
+      at com.adobe.pdfg.GeneratePDFImpl.createPDF(GeneratePDFImpl.java:296)
+      at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+      at deployment.adobe-livecycle-jboss.ear//com.adobe.idp.dsc.component.impl.DefaultPOJOInvokerImpl.invoke(DefaultPOJOInvokerImpl.java:118)
+      ... 217 more
+
+  ```
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
