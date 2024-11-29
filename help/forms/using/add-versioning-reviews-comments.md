@@ -3,6 +3,7 @@ title: Add versionings, comments, and annotations to am AEM 6.5 adaptive form.
 description: Use AEM 6.5 adaptive form core components to add comments, annotations, and versionings to an adaptive form.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
+exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
 ---
 # Versioning, reviewing and commenting on an Adaptive Form
 
