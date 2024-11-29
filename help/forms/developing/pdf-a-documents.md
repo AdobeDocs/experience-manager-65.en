@@ -36,6 +36,8 @@ The PDF/A-1 specification consists of two levels of conformance, namely A and B.
 
 While PDF/A is the standard for archiving PDF documents, it is not mandatory that PDF/A be used for archiving if a standard PDF document meets your company’s requirements. The purpose of the PDF/A standard is to establish a PDF file meant for long-term archiving and document-preservation needs.
 
+The supported PDF/A compliance standards include PDF/A-1a, 1b, 2a, 2b, 3a, and 3b.
+
 >[!NOTE]
 >
 >For more information about the DocConverter service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).

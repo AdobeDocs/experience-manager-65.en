@@ -33,7 +33,27 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 ## Key features and enhancements
 
+### Forms {#forms-sp22}
+
 Key features and enhancements in this release include the following:
+
+* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) and [Cloudfare Turnstile Captcha services](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms support the following Captcha services:
+  * hCaptcha protects forms from bots, spam, and automated abuse by challenging users with a checkbox widget. It ensures that only human users proceed, enhancing security for online transactions.
+  * Cloudflare Turnstile offers a security measure that aims to protect forms from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form.
+
+* Adaptive Form versioning:
+  * [Create multiple versions of an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md): Now users can easily manage variations of existing forms. This simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
+  * [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md): Now users can easily compare two forms to identify differences. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
+
+* Added support to enable font embedding in [Interactive Communications Batch APIs](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel):  Interactive Communications now includes support for embedding Adobe Ming and Adobe Myungjo fonts in PDFs generated through the Batch API. This enhancement ensures accurate text rendering in generated documents, even when using font subsets, providing improved support for multilingual content in PDF outputs.
+
+* [Table of Content API for PDF Accessibility](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api): AEM Forms on OSGi now support the new TOC Tag API to enhance PDF for accessibility standards. It makes PDFs more accessible for users with assistive technology.
+
+* [Fragment XDP resolution](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository): AEM Forms on OSGi now resolves Fragment XDPs referenced in Master XDPs and stored in the AEM CRX Repository.
+
+* [PDF/A compliance enhancements](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): Now users can convert PDFs to PDF/A formats (1a, 2a, 3a) for archival purposes while ensuring accessibility and verifying compliance with these standards.
+
+* **Support for Auto Sizing of Font for Static PDF documents**: AEM Forms Designer now supports Auto Sizing features in .xdp files. Now users can specify auto sizing for the text fields, numeric fields , password fields, and datetime fields in the XDPs to render the text field content without truncating these fields content in static PDF documents.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -189,10 +209,57 @@ In AEM 6.5.18 and 6.5.19, on deactivating a parent page, multiple deactivation r
 
 A production issue disrupted the migration process when a video upload to Dynamic Media failed, displaying a process failure error in the user interface. (ASSETS-36038)
 
+<!--
 
 ### [!DNL Forms]{#forms-6522}
 
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.22.0 Forms add-on package release is scheduled for Thursday, November 28, 2024. A list of Forms fixes and enhancements is added to this section post the release.
+
+-->
+
+#### Forms {#forms-bug-fixes-sp22} 
+
+* The URLs generated for file attachments in saved drafts in AEM Forms does not reflect the configured Apache Sling Resource Resolver Factory mappings. (FORMS-16949) 
+* When a user on AEM Forms Service Pack 19 (6.5.19.0) previews a letter, the content does not align properly, as the spaces appear missing and the character ‘'x” appears at some locations. (FORMS-16670) 
+* When a user on AEM Forms Service Pack 18 (6.5.18.0), attempts to print the files using CIFS protocol, it fails with the error: (FORMS-16629) 
+`ALC-OUT-001-401: Unknown error while printing using CIFS on the Printer: \\\\\\\\NSMVPLUETEST01\\\\TH_Test`. 
+* When a user upgrades from AEM Forms Service Pack 17 (6.5.17.0) to AEM Forms Service Pack 20 (6.5.20.0), the Rule Editor icon does not appear at the Form Container level. (FORMS-16430) 
+* When a user upgrades from AEM Forms Service Pack 17 (6.5.17.0) to AEM Forms Service Pack 21 (6.5.21.0), the modified Adaptive Form submit URL Path fails to work. (FORMS15894) 
+* On AEM Forms Service Pack 19 (6.5.19.0), AEM Forms 6.5 PDF/A validation fails for certain files with the error `creation date and modification date mismatch with timezone`, while it runs smoothly on Acrobat Pro PDF/A validation for a compliance check. (FORMS-15840)
+* When a user deletes form drafts using “Drafts and Submissions” component on a site page on AEM Forms Service Pack 15 (6.5.15.0) on OSGi, deletion fails. (FORMS-15755) 
+* When a user has a SharePoint list with more than 999 entries and the form includes an attachment, the form submission fails. (FORMS-15057) 
+* When a user employs two date picker components labeled as Start Date and End Date, after adding a validation rule to ensure that the end date is not earlier than the start date and setting a custom script validation message, the validation does not trigger if the end date is earlier than the start date. (FORMS-14757) 
+* When a user employs the show and hide functionality on a table in an adaptive form, the field size shrinks. The field size corrects itself on adding and removing a row. (FORMS-14756) 
+* When a user print forms on AEM Forms Service Pack 19 (6.5.19.0), some forms do not render correctly on the server, causing errors during the printing process. (FORMS14734) 
+* When user updates from AEM Forms Service Pack 15 (6.5.15.0) to AEM Forms Service Pack 19 (6.5.19.0), and uses a form where a particular variable is set as number and the custom display pattern is set as num{$zzz,zz9.99}, the pattern does not render correctly in preview and Agent UI. (FORMS-14694) 
+* When a user previews a letter in an Interactive Communication with a saved data xml, the letter becomes stuck in the "Loading" state on AEM UI. Previewing the letter again with the same XML works fine. (FORMS-14521) 
+* When a user on AEM Forms Service Pack 20 (6.5.20.0), sends an email with an attachment using a ‘Send Email’ submit action button in an adaptive form, the attachment name appears on the next line rather than inline. (FORMS-14426) 
+* When a user generates a PDF in AEM Forms with bulleted lists set to the default “Disc” style, the PDF fails the Accessibility Check in Adobe Acrobat's accessibility tool. List with 'Bullet' and 'Square' styles pass the accessibility check. (FORMS-13802, LC-3922179) 
+* When a user upgrades from AEMForms-6.5.0-0065 to AEMForms-6.5.0-0087 on Standalone RHEL8 JBoss setup, it fails to connect with the LiveCycle service container. (FORMS-15907) • 
+* On AEM Forms on JEE, In AEM Workspace when a user selects a previously submitted form and start a new form process, forms with prepopulated data processes wipe out all previously submitted data and replace it with the prepopulated data, not retaining any fields that were manually filled out in the previous form. (FORMS-15376) 
+* On AEM Forms Service Pack 20 (6.5.20.0) when a user converts Tiff file to PDF using PDFG service, it fails with the error: (FORMS-14879) ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/sun/image/codec/jpeg/JPEGCodec 
+* Upgrade in AEM Forms on JEE jar files: The `commons-collections:commons-collections:jar` library is now included to improve dependency resolution and functionality across various AEM Forms JEE job such as:
+  * Assembler Job enhancement to improve job processing and error handling. 
+  * PDF Generator (PDFG) Job enhancement to ensure smoother operations for document generation and conversion. 
+  * LC-Upgrade Job enhancement to improve the upgrade process while ensuring a stable transition between versions. 
+  * Rights Management Job enhancement to secure document handling and improved rights management capabilities. 
+  * Process Management Job enhancement for more reliable job processing and system management.
+
+
+#### XMLFM {#forms-xmlfm-sp22}
+
+* In AEM Forms Service Pack 21 (6.5.21.0) when a user adds non-standard tags to PDFs using XMLFM, the document fails to comply with PDF specification requirements. (LC-3922484) 
+* When a user generates a PDF using the Output Service on AEM Forms Service Pack 20 (6.5.20.0), it fails with CORBA.COMM_FAILURE and displays the error: `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`. The service passes successfully when the Accessibility role "Reference" is excluded from the XDP template’s subform. however, this role is needed for 508 compliance. (LC-3922402) 
+* When a user converts an XFA form to an AcroForm PDF, it fails. (LC-3922363) 
+* In AEM Forms Service Pack 19 (6.5.19.0) when a user creates an XDP with the unnamed subforms, FS_DATA_SOM appears empty for unnamed subforms. (LC-3922034) 
+
+#### Forms Designer {#forms-designer-sp22} 
+
+* When a user opens a fragment library by selecting a fragment folder in AEM Forms Designer version 6.5.21.0, it crashes. (LC-3922439) 
+* When a user uninstalls the 32-bit AEM Forms Designer version 6.5.20.0 and installs AEM Forms Designer version 6.5.21.0, Forms Designer fails to start. The error logs show insufficient memory allocation for the Java Runtime Environment (JRE). (LC-3922404) 
+* After a user installs AEM Forms Designer version 6.5.20.0, the Macros option does not appear in the menu, only the default 'Accessibility Checker' macro appears and fails to run. (LC-3922321) 
+* When a user adds a new template location for creating XDPs in AEM Forms Designer version 6.5.20.0, Forms Designer crashes. (LC-3922316) 
+* When a user generates output using ExportData method in AEM Forms 6.5 Service Pack 15 (6.5.15.0) OSGI, it produces incomplete and incorrect data. (LC-3922340)
 
 
 <!-- #### [!DNL Adaptive Forms] {#forms-6522}
@@ -541,7 +608,18 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 * In the Print Preview of the Interactive Communications Agent UI, the currency symbol (such as the dollar sign $) is inconsistently displayed for all field values. It appears for values up to 999 but is missing for values of 1000 and above. (FORMS-16557)
 * Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. (FORMS-16575)
 * In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
-* When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with 'x' (FORMS-15681)
+* When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with 'x'. (FORMS-15681)
+* When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
+  
+    ```java
+
+    Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
+    the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
+    @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
+    (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
+    have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
+
+    ```
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
