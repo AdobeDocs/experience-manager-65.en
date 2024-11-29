@@ -197,10 +197,11 @@ fragment="myFragment"/>
 </XDP>
 </DDX>
 ```
+
 #### Resolve references on CRX repository {#resolve-references-on-crx-repository}
 
 You can selectively specify the source reference that you want to resolve by giving the crx path of the
-fragment reference in the <XDP source>. In the example given below, the fragments included will also be
+fragment reference in the XDP source. In the example given below, the fragments included are also
 resolved.
 
 ```xml
