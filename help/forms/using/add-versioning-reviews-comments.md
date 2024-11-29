@@ -10,12 +10,14 @@ role: User, Developer, Admin
 <span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 -->
 
-Adaptive Form Core Components let form authors add versioning, comments, and annotations to forms. These features simplify form development by enabling users to create and manage multiple versions, collaborate through comments, and add notes to specific form sections, enhancing the form-building experience.
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+
+Adaptive Form Core Components allow form authors to add versioning, comments, and annotations to forms. These features simplify form development by enabling users to create and manage multiple versions, collaborate through comments, and add notes to specific form sections, enhancing the form-building experience.
 
 ## Prerequisite {#prerequisite-versioning}
 
-To use versioning, commenting, and annotation features in an Adaptive Form, ensure that [Adaptive Form Core Components](
-https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) are enabled on AEM 6.5 Forms.
+To use versioning, commenting, and annotation features in an Adaptive Form, ensure that the [Adaptive Form Core Components](
+https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) is enabled on your AEM 6.5 Forms environment.
 
 ## Adaptive Form versioning {#adaptive-form-versioning}
 
@@ -81,4 +83,4 @@ To add annotations to a form, perform the following steps:
 
 ## See also
 
-* [Compare Adaptive Forms core components](/help/forms/using/compare-forms-core-components.md)
+* [Compare Adaptive Forms Core Components](/help/forms/using/compare-forms-core-components.md)

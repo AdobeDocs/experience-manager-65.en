@@ -6,11 +6,18 @@ role: User, Developer, Admin
 ---
 # Compare Adaptive Forms {#compare-two-forms}
 
-<!--
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
--->
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 
-When form authors need to compare two distinct forms based on the fields, content, and form components, they compare the two forms. The form author must make sure that the two forms are in the same directory or folder in order to compare them. To compare two distinct adaptive forms, perform the following steps:
+The Compare feature in Adaptive Forms Core Components helps form authors identify differences between two forms by analyzing fields, content, and components.
+
+## Prerequisite {#prerequisite-versioning}
+
+To use Compare feature in an Adaptive Form based on Core Components, ensure that the [Adaptive Form Core Components](
+https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) is enabled on your AEM 6.5 Forms environment.
+
+## Compare distinct adaptive forms {#compare-af-65}
+
+To compare two distinct adaptive forms based on their fields, content, and components, ensure both forms are stored in the same directory. Follow these steps to perform the comparison.
 
 1. Select adaptive forms and click **[!UICONTROL Compare]**.
 
