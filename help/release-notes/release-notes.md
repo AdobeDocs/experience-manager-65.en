@@ -53,7 +53,7 @@ Key features and enhancements in this release include the following:
 
 * [PDF/A compliance enhancements](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): Now users can convert PDFs to PDF/A formats (1a, 2a, 3a) for archival purposes while ensuring accessibility and verifying compliance with these standards.
 
-* **Support for Auto Sizing of Font for Static PDF documents**: AEM Forms Designer now supports Auto Sizing features in .xdp files. Now users can specify auto sizing for the text fields, numeric fields , password fields, and datetime fields in the XDPs to render the text field content without truncating these fields content in static PDF documents.
+* **Support for Auto Sizing of Font for Static PDF documents**: AEM Forms Designer, OutputService and FormsService now supports auto sizing of fonts for static PDF's. This means that if font size 0 is mentioned in the template for fields like text field, numeric field , password field, or datetime field, the font size will be auto adjusted inside these fields without any change in the size of the field itself. To use this feature , user will have to pass a flag in the custom xci: <behaviorOverride>patch-LC-3921991:1</behaviorOverride>.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
