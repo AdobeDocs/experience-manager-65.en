@@ -613,31 +613,16 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 * In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
 * When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with 'x'. (FORMS-15681)
 * When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
-  ```java
+  
+    ```java
 
-  Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;" 
-  the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear' 
-  @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52 
-  (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder, 
-  have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
-      at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:423)
-      at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:362)
-      at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:388)
-      at com.jniwrapper.DefaultLibraryLoader.<clinit>(SourceFile:33)
-      at com.adobe.pdfg.callbacks.NativeToPDFTransactionCallback.<clinit>(NativeToPDFTransactionCallback.java:78)
-      at com.adobe.pdfg.Native2PdfCaller.callNativeBMC(Native2PdfCaller.java:1010)
-      at com.adobe.pdfg.Native2PdfCaller.createPDF(Native2PdfCaller.java:420)
-      at com.adobe.pdfg.GeneratePDFImpl.createPDFInternal(GeneratePDFImpl.java:630)
-      at com.adobe.pdfg.GeneratePDFImpl.createPDFCommon(GeneratePDFImpl.java:355)
-      at com.adobe.pdfg.GeneratePDFImpl.createPDF(GeneratePDFImpl.java:296)
-      at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-      at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-      at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-      at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-      at deployment.adobe-livecycle-jboss.ear//com.adobe.idp.dsc.component.impl.DefaultPOJOInvokerImpl.invoke(DefaultPOJOInvokerImpl.java:118)
-      ... 217 more
-
-  ```
+    Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
+    the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
+    @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
+    (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
+    have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
+    
+    ```
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
