@@ -226,7 +226,6 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * When a user upgrades from AEM Forms Service Pack 17 (6.5.17.0) to AEM Forms Service Pack 20 (6.5.20.0), the Rule Editor icon does not appear at the Form Container level. (FORMS-16430) 
 * When a user upgrades from AEM Forms Service Pack 17 (6.5.17.0) to AEM Forms Service Pack 21 (6.5.21.0), the modified Adaptive Form submit URL Path fails to work. (FORMS15894) 
 * On AEM Forms Service Pack 19 (6.5.19.0), AEM Forms 6.5 PDF/A validation fails for certain files with the error `creation date and modification date mismatch with timezone`, while it runs smoothly on Acrobat Pro PDF/A validation for a compliance check. (FORMS-15840)
-"creation date and modification date mismatch with timezone"
 * When a user deletes form drafts using “Drafts and Submissions” component on a site page on AEM Forms Service Pack 15 (6.5.15.0) on OSGi, deletion fails. (FORMS-15755) 
 * When a user has a SharePoint list with more than 999 entries and the form includes an attachment, the form submission fails. (FORMS-15057) 
 * When a user employs two date picker components labeled as Start Date and End Date, after adding a validation rule to ensure that the end date is not earlier than the start date and setting a custom script validation message, the validation does not trigger if the end date is earlier than the start date. (FORMS-14757) 
@@ -250,9 +249,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 #### XMLFM {#forms-xmlfm-sp22}
 
 * In AEM Forms Service Pack 21 (6.5.21.0) when a user adds non-standard tags to PDFs using XMLFM, the document fails to comply with PDF specification requirements. (LC-3922484) 
-* When a user generates a PDF using the Output Service on AEM Forms Service Pack 20 (6.5.20.0), it fails with CORBA.COMM_FAILURE and displays the error: (LC-3922402) 
-`15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`. 
-The service passes successfully when the Accessibility role "Reference" is excluded from the XDP template’s subform; however, this role is needed for 508 compliance. 
+* When a user generates a PDF using the Output Service on AEM Forms Service Pack 20 (6.5.20.0), it fails with CORBA.COMM_FAILURE and displays the error: `15:04:35,973 ERROR [com.adobe.formServer.PA.XMLFormAgentWrapper] (default task-14) ALCOUT-002-013: XMLFormFactory, PAexecute failure: "org.omg.CORBA.COMM_FAILURE"`. The service passes successfully when the Accessibility role "Reference" is excluded from the XDP template’s subform. however, this role is needed for 508 compliance. (LC-3922402) 
 * When a user converts an XFA form to an AcroForm PDF, it fails. (LC-3922363) 
 * In AEM Forms Service Pack 19 (6.5.19.0) when a user creates an XDP with the unnamed subforms, FS_DATA_SOM appears empty for unnamed subforms. (LC-3922034) 
 
@@ -621,7 +618,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
     @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
     (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
     have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
-    
+
     ```
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}

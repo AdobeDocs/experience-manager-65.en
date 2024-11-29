@@ -14,7 +14,7 @@ exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 |---|---|
 | Version  |  6.5.22.0|
 | Type  |  Service Pack release |
-| Date  |  28 November 2024 |
+| Date  |  29 November 2024 |
 | Download URL | [Latest AEM Forms Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
