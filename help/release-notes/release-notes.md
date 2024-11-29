@@ -218,7 +218,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 -->
 
-#### Forms {#forms-bug-fixes-sp22} 
+### Forms {#forms-bug-fixes-sp22} 
 
 * The URLs generated for file attachments in saved drafts in AEM Forms does not reflect the configured Apache Sling Resource Resolver Factory mappings. (FORMS-16949) 
 * When a user on AEM Forms Service Pack 19 (6.5.19.0) previews a letter, the content does not align properly, as the spaces appear missing and the character ‘'x” appears at some locations. (FORMS-16670) 
