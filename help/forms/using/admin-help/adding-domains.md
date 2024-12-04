@@ -12,9 +12,7 @@ role: User, Developer
 ---
 # Adding domains {#adding-domains}
 
-## Prerequisite
-
-* Ensure that the user has admin privileges to access the administrator console.
+Ensure that the user has admin privileges to access the administrator console.
 
 ## Add an enterprise domain {#add-an-enterprise-domain}
 
