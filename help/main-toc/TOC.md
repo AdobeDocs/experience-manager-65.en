@@ -618,6 +618,8 @@ user-guide-title: AEM 6.5
     + [Rule Editor](/help/forms/using/rule-editor-core-components.md)
     + [Create and use custom function in an Adaptive Form Core Components](/help/forms/using/create-and-use-custom-functions-core-components.md)
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+    + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md)
+    + [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md)
   + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
     + [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)
     + [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md)
@@ -625,6 +627,8 @@ user-guide-title: AEM 6.5
     + [Adaptive form fragments](/help/forms/using/adaptive-form-fragments.md)
     + [Configuring the Submit action](/help/forms/using/configuring-submit-actions.md)
     + [Using CAPTCHA in adaptive forms](/help/forms/using/captcha-adaptive-forms.md)
+    + [Using hCaptcha in adaptive forms](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+    + [Using Turnstile Captcha in adaptive forms](/help/forms/using/integrate-adaptive-forms-turnstile.md)
     + [Adaptive forms keywords](/help/forms/using/adaptive-forms-keywords.md)
     + [Tables in adaptive forms](/help/forms/using/adaptive-forms-tables.md)
     + [Charts in adaptive forms](/help/forms/using/adaptive-form-charts.md)
