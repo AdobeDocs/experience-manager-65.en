@@ -8,12 +8,8 @@ exl-id: bed93ce3-89db-477a-8316-7598275e4bca
 # Connect your AEM Forms environment with Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
--->
-
 <span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+-->
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
 
@@ -29,6 +25,8 @@ AEM Forms 6.5 supports the following CAPTCHA solutions:
 ## Integrate AEM Forms environment with Turnstile Captcha
 
 Cloudflare's Turnstile Captcha is a security measure that aims to protect forms and sites from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Prerequisites to integrate AEM Forms environment with Turnstile Captcha {#prerequisite}
 
