@@ -608,25 +608,22 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 * Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. (FORMS-16575)
 * In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
 * When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with 'x'. (FORMS-15681)
+* Starting AEM Forms OSGi 6.5.22, the renderPDFForm operation of Forms service will not execute client-only (runAt=client) scripts on the server, only those marked runAt=server or runAt=both will be executed as given in the table below.
+  | Script marked runAt | Executed on the server |
+  |---------------------|-------------------------|
+  | server              | yes                     |
+  | both                | yes                     |
+  | client              | no                      |
+
 * When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
   
     ```java
-
     Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
     the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
     @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
     (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
     have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
-
     ```
-* Starting AEM Forms OSGi 6.5.22, the renderPDFForm operation of Forms service will not execute client-only (runAt=client) scripts on the server, only those marked runAt=server or runAt=both will be executed as given in the table below.
-|Script marked runAt|Executed on the server|
-|--------|-------|
-|server|yes|
-|both|yes|
-|client|no|
-
-
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
