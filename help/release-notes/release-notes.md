@@ -619,6 +619,14 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
     have different Class objects for the type org/slf4j/ILoggerFactory used in the signature
 
     ```
+* Starting AEM Forms OSGi 6.5.22, the renderPDFForm operation of Forms service will not execute client-only (runAt=client) scripts on the server, only those marked runAt=server or runAt=both will be executed as given in the table below.
+|Script marked runAt|Executed on the server|
+|--------|-------|
+|server|yes|
+|both|yes|
+|client|no|
+
+
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
