@@ -12,6 +12,8 @@ role: User, Developer
 ---
 # Adding domains {#adding-domains}
 
+Ensure that the user has admin privileges to access the administrator console.
+
 ## Add an enterprise domain {#add-an-enterprise-domain}
 
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
