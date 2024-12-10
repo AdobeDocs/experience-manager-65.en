@@ -71,13 +71,13 @@ To integrate AEM Forms with the Turnstile service, perform the following steps:
 1. Select an Adaptive Form, and Click **[!UICONTROL Properties]**. In **[!UICONTROL Configuration Container]**, select your Cloud Configuration for Turnstile&reg;.
 1. Click **[!UICONTROL Save & Close]**.
 
-    If you do not have such a Configuration Container, see section [Connect your AEM Forms environment with Turnstile](#connect-your-forms-environment-with-turnstile-service) to learn how to create a Configuration Container.
+    If you do not have a Configuration Container to configure Captcha service, see section [Configure Turnstile](#configure-turnstile-steps-to-configure-hcaptcha) to learn how to create a Configuration Container.
 
     ![Select Configuration Container](assets/captcha-properties.png)
 
 1. Select an Adaptive Form, and Click **[!UICONTROL Edit]** to open your adaptive form in the editor.
 1. From the component browser, drag-drop the **[!UICONTROL Captcha]** component onto the Adaptive Form.
-1. Select the **[!UICONTROL Adaptive Form Turnstile]** component and Click properties ![Properties icon](assets/configure-icon.svg) icon. It opens the properties dialog. Specify the following properties:
+1. Select the **[!UICONTROL Captcha]** component and Click properties ![Properties icon](assets/configure-icon.svg) icon. It opens the properties dialog. Specify the following properties:
 
     <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
     ![Cloudfare Turnstile v1](assets/turnstile-setting-v1.png)
@@ -89,7 +89,8 @@ To integrate AEM Forms with the Turnstile service, perform the following steps:
     * **[!UICONTROL Configuration Settings]:** Select your Cloud Configuration configured for Turnstile&reg;.
         >[!NOTE]
         >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with Turnstile](#connect-your-forms-environment-with-turnstile-service) to learn how to create a Cloud Service that connects your AEM Forms environment with Turnstile service.
-    * **Error Message:** Provide the error message to display to the user when the Captcha submission fails.
+
+    * **[!UICONTROL Error Message]:** Provide the error message to display to the user when the Captcha submission fails.
     * **Captcha Size:** You can select the display size of the hCaptcha&reg; challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** to display a relatively large-size hCaptcha&reg; challenge dialog.
 
 1. Select **[!UICONTROL Done]**.
