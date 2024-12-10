@@ -37,7 +37,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 Key features and enhancements in this release include the following:
 
-#### New GA features in AEM Forms {ga-aem-forms-sp22}
+#### New GA features in AEM Forms {#ga-aem-forms-sp22}
 
 * Added support to enable font embedding in [Interactive Communications Batch APIs](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) - Interactive Communications now includes support for embedding Adobe Ming and Adobe Myungjo fonts in PDFs generated through the Batch API. This enhancement ensures accurate text rendering in generated documents, even when using font subsets, providing improved support for multilingual content in PDF outputs.
 
@@ -49,7 +49,7 @@ Key features and enhancements in this release include the following:
 
 * **Support for Auto Sizing of Font for Static PDF documents** - AEM Forms Designer, OutputService, and FormsService now supports auto sizing of fonts for static PDFs. If the user sets the font size 0 for text, numeric, password, or datetime fields, the font size auto-adjusts within these fields without altering the field's overall size. To use the feature, users pass a flag in the custom XCI: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
 
-#### New Beta features in AEM Forms {beta-aem-forms-sp22}
+#### New Beta features in AEM Forms {#beta-aem-forms-sp22}
 
 * [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) and [Cloudflare Turnstile CAPTCHA services](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms support the following Captcha services:
   * hCaptcha protects forms from bots, spam, and automated abuse by challenging users with a checkbox widget. It ensures that only human users proceed, enhancing security for online transactions.
