@@ -64,12 +64,12 @@ To integrate AEM Forms with hCaptcha&reg; service, perform the following steps:
 
    Once the hCAPTCHA service is configured, it is available for use in your adaptive form.
 
-## Use hCaptcha&reg; in an Adaptive Forms {#using-hCaptcha-in-aem-6.5}
+## Use hCaptcha&reg; in an Adaptive Form {#using-hCaptcha-in-aem-6.5}
 
 1. Open your AEM Forms environment.
 1. Go to **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]**.
 1. Select an Adaptive Form and Click **[!UICONTROL Properties]**. 
-1. In the **[!UICONTROL Configuration Container]**, select your Cloud Configuration for hCaptcha&reg;.
+1. In the **[!UICONTROL Configuration Container]**, select the Configuration Container that contains the Cloud Configuration that connects AEM Forms with hCaptcha.
 1. Click **[!UICONTROL Save & Close]**.
 
     If you do not have a Configuration Container for hCaptcha, see section [Connect your AEM Forms environment with hCaptcha&reg;](#configure-hcaptcha-steps-to-configure-hcaptcha) to learn how to create a Configuration Container.

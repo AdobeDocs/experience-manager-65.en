@@ -51,6 +51,8 @@ Key features and enhancements in this release include the following:
 
 #### New Beta features in AEM Forms {#beta-aem-forms-sp22}
 
+The beta feature offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development. Interested in enabling a beta feature for your environments? Send an email from your official address to aem-forms-ea@adobe.com with the list of capabilities that you are interested in.
+
 * [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) and [Cloudflare Turnstile CAPTCHA services](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms support the following Captcha services:
   * hCaptcha protects forms from bots, spam, and automated abuse by challenging users with a checkbox widget. It ensures that only human users proceed, enhancing security for online transactions.
   * Cloudflare Turnstile offers a security measure that aims to protect forms from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form.
