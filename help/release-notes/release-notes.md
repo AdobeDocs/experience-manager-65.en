@@ -244,7 +244,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   * LC-Upgrade Job enhancement to improve the upgrade process while ensuring a stable transition between versions. 
   * Rights Management Job enhancement to secure document handling and improved Rights Management capabilities. 
   * Process Management Job enhancement for more reliable job processing and system management.
+* Starting AEM Forms OSGi 6.5.22, the renderPDFForm operation of Forms service will not execute client-only (runAt=client) scripts on the server, only those marked runAt=server or runAt=both will be executed as described in the table below. (FORMS-16564)
 
+  | Script marked runAt | Executed on the server |
+  |---------------------|-------------------------|
+  | server              | yes                     |
+  | both                | yes                     |
+  | client              | no                      |
 
 #### XMLFM {#forms-xmlfm-sp22}
 
@@ -609,14 +615,6 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 * Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. (FORMS-16575)
 * In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
 * When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with 'x'. (FORMS-15681)
-* Starting AEM Forms OSGi 6.5.22, the renderPDFForm operation of Forms service will not execute client-only (runAt=client) scripts on the server, only those marked runAt=server or runAt=both will be executed as described in the table below. (FORMS-16564)
-
-  | Script marked runAt | Executed on the server |
-  |---------------------|-------------------------|
-  | server              | yes                     |
-  | both                | yes                     |
-  | client              | no                      |
-  
 * When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
   
     ```java
