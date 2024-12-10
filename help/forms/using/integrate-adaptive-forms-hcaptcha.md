@@ -70,13 +70,13 @@ To integrate AEM Forms with hCaptcha&reg; service, perform the following steps:
 1. In the **[!UICONTROL Configuration Container]**, select your Cloud Configuration for hCaptcha&reg;.
 1. Click **[!UICONTROL Save & Close]**.
 
-    If you do not have such a Configuration Container, see section [Connect your AEM Forms environment with hCaptcha&reg;](#connect-your-forms-environment-with-hcaptcha-service) to understand how to create a Configuration Container.
+    If you do not have a Configuration Container for hCaptcha, see section [Connect your AEM Forms environment with hCaptcha&reg;](#configure-hcaptcha-steps-to-configure-hcaptcha) to learn how to create a Configuration Container.
 
     ![Select Configuration Container](/help/forms/using/assets/captcha-properties.png)
 
-1. Select an Adaptive Form and Click **[!UICONTROL Edit]** to open the form in editor.
+1. Select an Adaptive Form and Click **[!UICONTROL Edit]** to open the form in the editor.
 1. From the component browser, drag-drop the **[!UICONTROL Captcha]** component onto the Adaptive Form.
-1. Select the **[!UICONTROL Adaptive Form hCaptcha&reg;]** component, and click properties ![Properties icon](assets/configure-icon.svg) to open the properties dialog. Specify the following properties:
+1. Select the **[!UICONTROL Captcha]** component, and click properties ![Properties icon](assets/configure-icon.svg) to open the properties dialog. Specify the following properties:
 
     ![hCaptcha&reg; v1](assets/config-hcaptcha-v1-img.png)
 
@@ -86,13 +86,14 @@ To integrate AEM Forms with hCaptcha&reg; service, perform the following steps:
     * **[!UICONTROL Configuration Settings]:** Select your Cloud Configuration configured for hCaptcha&reg;.
         >[!NOTE]
         >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with hCaptcha&reg;](#connect-your-forms-environment-with-hcaptcha-service) to learn how to create a Cloud Service that connects your AEM Forms environment with hCaptcha&reg; service.
-    * **Error Message:** Provide the error message to display to the user when the Captcha submission fails.
-    * **Captcha Size:** You can select the display size of the hCaptcha&reg; challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** to display a relatively large-size hCaptcha&reg; challenge dialog or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface.
+
+    * **[!UICONTROL Error Message]:** Provide the error message to display to the user when the Captcha submission fails.
+    * **[!UICONTROL Captcha Size]:** You can select the display size of the hCaptcha&reg; challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** to display a relatively large-size hCaptcha&reg; challenge dialog or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface.
 
 1. Select **[!UICONTROL Done]**.
 
 
-Now, only legitimate forms, in which the form filler successfully clears the challenge posed by the hCaptcha&reg; service are allowed for the form submission. hCaptcha&reg;
+Now, only legitimate forms, in which the form filler successfully clears the challenge posed by the hCaptcha&reg; service are allowed for the form submission.
 
 **hCaptcha&reg; is a registered trademark of Intuition Machines, Inc.**
 
