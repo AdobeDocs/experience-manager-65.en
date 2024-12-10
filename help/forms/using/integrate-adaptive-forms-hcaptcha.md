@@ -3,13 +3,11 @@ title: How to use hCaptcha&reg; in an AEM 6.5 Forms?
 description: Enhance form security with hCaptcha&reg; service effortlessly. Step-by-step guide inside!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
 ---
 # Connect your AEM Forms environment with hCaptcha&reg; {#connect-your-forms-environment-with-hcaptcha-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
+
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes.
 
@@ -76,7 +74,7 @@ To integrate AEM Forms with hCaptcha&reg; service, perform the following steps:
     ![Select Configuration Container](/help/forms/using/assets/captcha-properties.png)
 
 1. Select an Adaptive Form and Click **[!UICONTROL Edit]** to open the form in editor.
-1. From the component browser, drag-drop or add the **[!UICONTROL Adaptive Form hCaptcha&reg;]** component onto the Adaptive Form.
+1. From the component browser, drag-drop the **[!UICONTROL Captcha]** component onto the Adaptive Form.
 1. Select the **[!UICONTROL Adaptive Form hCaptcha&reg;]** component, and click properties ![Properties icon](assets/configure-icon.svg) to open the properties dialog. Specify the following properties:
 
     ![hCaptcha&reg; v1](assets/config-hcaptcha-v1-img.png)

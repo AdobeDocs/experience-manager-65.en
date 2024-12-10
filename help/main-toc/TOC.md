@@ -620,6 +620,7 @@ user-guide-title: AEM 6.5
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
     + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md)
     + [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md)
+    + [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md)
   + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
     + [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)
     + [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md)
