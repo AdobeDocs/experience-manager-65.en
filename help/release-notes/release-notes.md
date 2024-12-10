@@ -37,13 +37,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 Key features and enhancements in this release include the following:
 
-* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) and [Cloudflare Turnstile CAPTCHA services](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms support the following Captcha services:
-  * hCaptcha protects forms from bots, spam, and automated abuse by challenging users with a checkbox widget. It ensures that only human users proceed, enhancing security for online transactions.
-  * Cloudflare Turnstile offers a security measure that aims to protect forms from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form.
-
-* Adaptive Form versioning:
-  * [Create multiple versions of an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md) -  Now users can easily manage variations of existing forms. This process simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
-  * [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md): Now users can easily compare two forms to identify differences. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
+#### New GA features in AEM Forms {#ga-aem-forms-sp22}
 
 * Added support to enable font embedding in [Interactive Communications Batch APIs](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) - Interactive Communications now includes support for embedding Adobe Ming and Adobe Myungjo fonts in PDFs generated through the Batch API. This enhancement ensures accurate text rendering in generated documents, even when using font subsets, providing improved support for multilingual content in PDF outputs.
 
@@ -54,6 +48,18 @@ Key features and enhancements in this release include the following:
 * [PDF/A compliance enhancements](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - Now users can convert PDFs to PDF/A formats (1a, 2a, 3a) for archival purposes while ensuring accessibility and verifying compliance with these standards.
 
 * **Support for Auto Sizing of Font for Static PDF documents** - AEM Forms Designer, OutputService, and FormsService now supports auto sizing of fonts for static PDFs. If the user sets the font size 0 for text, numeric, password, or datetime fields, the font size auto-adjusts within these fields without altering the field's overall size. To use the feature, users pass a flag in the custom XCI: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
+
+#### New Beta features in AEM Forms {#beta-aem-forms-sp22}
+
+The beta feature offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development. Interested in enabling a beta feature for your environments? Send an email from your official address to aem-forms-ea@adobe.com with the list of capabilities that you are interested in.
+
+* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) and [Cloudflare Turnstile CAPTCHA services](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms support the following Captcha services:
+  * hCaptcha protects forms from bots, spam, and automated abuse by challenging users with a checkbox widget. It ensures that only human users proceed, enhancing security for online transactions.
+  * Cloudflare Turnstile offers a security measure that aims to protect forms from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form.
+
+* Adaptive Form versioning:
+  * [Create multiple versions of an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md) -  Now users can easily manage variations of existing forms. This process simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
+  * [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md): Now users can easily compare two forms to identify differences. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -615,7 +621,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 * Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. (FORMS-16575)
 * In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
 * When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with 'x'. (FORMS-15681)
-* When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
+* When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss® fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
   
     ```java
     Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
