@@ -172,3 +172,11 @@ Note that when following documentation for the Universal Editor with AEM as a Cl
 >[!TIP]
 >
 >For a comprehensive guide for developers getting started with the Universal Editor, please see the document [Universal Editor Overview for AEM Developers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) in the AEM as a Cloud Service documentation while keeping in mind the necessary changes needed for AEM 6.5 support as mentioned in this section.
+
+## Differences Between AEM 6.5 and AEM as a Cloud Service {#differences}
+
+The Universal Editor in AEM 6.5 broadly works the same as in AEM as a Cloud Service including the UI and much of the setup. There are, however, differences that should be noted.
+
+* The Universal Editor in 6.5 supports only the headless use case.
+* Setup of the Universal Editor varies slightly for 6.5 ([as described](#setup) in the current document).
+* The Universal Editor in 6.5 uses a different asset picker and a different Content Fragment picker than AEM as a Cloud Service.
