@@ -1,11 +1,9 @@
 ---
 title: AEM Forms Glossary
 description: AEM Forms Glossary provides a comprehensive list of key terms, definitions, and concepts used in Adobe Experience Manager Forms (AEM Forms), helping users understand and work with adaptive forms and related features.
-solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Forms Management, Document Services
-role: Admin, User, Developer, Content Author, Architect
+feature: Adaptive Forms
+role: Admin, User, Developer
 ---
-
 # AEM Forms 6.5 Glossary
 
 ## Adaptive Forms
