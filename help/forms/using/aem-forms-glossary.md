@@ -5,15 +5,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Forms Management, Document Services
 role: Admin, User, Developer, Content Author, Architect
 ---
-# AEM Forms 6.5 Comprehensive Glossary
+# AEM Forms 6.5 Glossary
 
 ## Adaptive Forms
 Dynamic, responsive forms that adjust their layout and presentation based on the user's device and input, enhancing user experience across various platforms. Includes conditional logic, dynamic data binding, and rule-based behavior.
 
+## AEM Forms Add-On Package
+An application deployed into Adobe Experience Manager (AEM) as a package, containing services (API providers) and servlets or JSPs managed by the AEM Sling framework.
+
 ## AEM Forms on JEE
 A deployment option of AEM Forms that leverages Java Enterprise Edition (JEE) servers, providing enterprise-level scalability, transaction management, and support for complex enterprise workflows.
 
-## AEM Forms on OSGi 
+## AEM Forms on OSGi
 AEM Forms on OSGi environment is standard AEM Author or AEM Publish with AEM Forms package deployed on it. You can run AEM Forms on OSGi in a single server environment, Farm, and clustered setups. Cluster setup is available only for AEM Author instances.
 
 ## AEM Forms Workbench
@@ -27,6 +30,12 @@ The ability to share and reuse digital assets like images, documents, and fragme
 
 ## Author Instance
 The environment where content creators and administrators design, create, and manage content before publishing it. Supports versioning, previewing, and testing.
+
+## Authoring Frontend
+A user interface for authoring and managing forms within AEM Forms.
+
+## Core AEM Services
+Fundamental services provided by AEM to deployed applications, including a JCR-compliant content repository, an OSGi service container, a workflow engine, a trust store, and a key store.
 
 ## Core Components
 Out-of-the-box reusable building blocks for creating content, including form fields, layout containers, buttons, and other interactive elements.
@@ -49,6 +58,9 @@ A caching and load balancing tool used in AEM to enhance website performance and
 ## Document Fragments
 Reusable components of documents, such as headers, footers, disclaimers, or clauses, which can be dynamically included in forms or correspondence to ensure consistency.
 
+## Document of Record (DoR)
+A feature in AEM Forms that generates a non-editable, archival version of a submitted form, typically in PDF format, preserving the exact content and layout as a record of the transaction.
+
 ## Form Data Model (FDM)
 A representation layer that connects adaptive forms to backend data sources, enabling integration with RESTful web services, SOAP services, and OData. FDM allows form authors to map form fields directly to backend data structures, ensuring seamless synchronization of user input with external systems.
 
@@ -58,8 +70,20 @@ The process of adapting forms to support multiple languages and regional setting
 ## Form Portal
 A customizable interface in AEM Forms that allows users to discover, access, and submit forms efficiently across web and mobile platforms.
 
+## Form Rendition and Submission Frontend
+An end-user interface in AEM Forms that allows users to view and submit forms via a web browser.
+
 ## Form Sets
 A collection of related forms grouped together to be presented as a single entity to users, allowing for complex data collection processes to be broken down into manageable sections.
+
+## Forms Designer
+A stand-alone application used to design forms such as Document of Record (DoR), PDF Forms, and HTML5 Forms, which can be uploaded to AEM Forms Manager.
+
+## Forms Services
+Functionalities within AEM Forms that enable the creation, assembly, distribution, and archiving of PDF documents, addition of digital signatures, and decoding of barcoded forms.
+
+## Forms Workspace
+A mobile application that extends digital business processes to mobile devices, allowing users to collect and record data even when offline. It leverages device capabilities to capture photos, videos, timestamps, and other information, synchronizing the data when the device reconnects to a network.
 
 ## JCR (Java Content Repository)
 A hierarchical, standards-based repository for storing content, configurations, and metadata in AEM, supporting structured and unstructured data storage.
@@ -76,6 +100,9 @@ A tool in AEM Forms that converts various file formats (e.g., Word, Excel, Power
 ## Publish Instance
 The environment in AEM that serves live content to end-users. It delivers forms, pages, and other digital experiences with optimized performance.
 
+## REST APIs
+APIs provided by AEM Forms' web layer for remote consumption by HTTP-based clients, such as the forms mobile SDK.
+
 ## Rule Editor
 A visual tool in Adaptive Forms that allows authors to define custom rules and logic for form fields, such as visibility, validation, and data prepopulation, without requiring coding expertise.
 
@@ -85,8 +112,14 @@ A feature in AEM Forms that allows users to electronically sign forms by drawing
 ## Sling
 A REST-based web framework used in AEM to map request URLs to content resources, enabling efficient content rendering and delivery.
 
+## Web Layer
+Comprises JSPs or servlets built over common and forms services, providing functionalities such as authoring front-end, form rendition and submission front-end, and REST APIs.
+
 ## Workflow
 A set of automated or manual steps in AEM Forms that manage business processes, such as document approval, content publishing, or user notifications.
+
+## Workflow Capabilities
+Features in AEM Forms that allow the rapid building and deployment of workflows for various tasks, with differences in features between AEM Forms on OSGi and AEM Forms on JEE.
 
 ## Workspace
 A browser-based interface for users to interact with AEM Forms workflows, tasks, and approvals.
@@ -103,8 +136,4 @@ A legacy technology for creating interactive and dynamic PDF forms. XFA forms al
 ## XML or JSON Schema
 A standardized structure used to define the format and organization of XML or JSON data in forms and workflows. These schemas ensure consistent data handling and enable interoperability with external systems.
 
-## Forms Workspace
-A mobile application that extends digital business processes to mobile devices, allowing users to collect and record data even when offline. It leverages device capabilities to capture photos, videos, timestamps, and other information, synchronizing the data when the device reconnects to a network.
 
-## Document of Record (DoR)
-A feature in AEM Forms that generates a non-editable, archival version of a submitted form, typically in PDF format, preserving the exact content and layout as a record of the transaction.
