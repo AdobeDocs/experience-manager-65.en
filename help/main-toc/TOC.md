@@ -532,6 +532,7 @@ user-guide-title: AEM 6.5
       + [Reference Themes](/help/forms/using/reference-themes.md)
       + [Reference letter templates](/help/forms/using/reference-cm-layout-templates.md)
       + [Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
+      + [AEM Forms Glossary](/help/forms/using/aem-forms-glossary.md)
   + Install and configure AEM Forms {#install-aem-forms}
     + [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
     + [Choosing a persistence type for an AEM Forms installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
