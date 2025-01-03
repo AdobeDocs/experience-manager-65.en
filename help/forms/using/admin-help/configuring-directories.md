@@ -21,7 +21,7 @@ For each enterprise domain you configure, specify the directories that the authe
 
 ### Add a directory {#add-a-directory}
 
->[!Note]
+>[!NOTE]
 >
 > Ensure that the user has admin privileges to access the administrator console.
 
