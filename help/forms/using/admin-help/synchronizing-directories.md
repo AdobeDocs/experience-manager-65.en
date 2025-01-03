@@ -13,11 +13,6 @@ role: User, Developer
 
 # Synchronizing directories {#synchronizing-directories}
 
-
->[!Note]
->
-> Ensure that the user has admin privileges to access the administrator console.
-
 To synchronize domains, you can choose to do a manual or scheduled synchronization. A *manual synchronization* synchronizes any selected domains. A *scheduled synchronization* synchronizes all domains.
 
 Directory synchronization is used to pull details from the directory servers that you specified in your directory settings into the User Management database. Later, you can also do a manual synchronization if changes or updates occur on the directory servers. For example, you can do a manual synchronization if users and groups are added or changes are made to a user’s account.
@@ -50,11 +45,13 @@ User Management performs the following steps when delta directory synchronizatio
 
 >[!NOTE]
 >
-> Users and groups who were removed from the directory are not deleted from the User Management database until you perform a full directory synchronization.
+> * Users and groups who were removed from the directory are not deleted from the User Management database until you perform a full directory synchronization.
+> * Ensure that the user has admin privileges to access the administrator console.
+
 
 1. In administration console, click Settings &gt; User Management &gt; Domain Management.
-1. Under Delta Synch, select the check box and click Save.
-1. Edit the directory settings for each of the enterprise domains that will use the delta directory synchronization feature. On the User Settings and Group Settings pages, locate the Modify Timestamp setting and enter `modify TimeStamp` as the value. For details about editing enterprise domains, see [Editing and converting existing domains](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+2. Under Delta Synch, select the check box and click Save.
+3. Edit the directory settings for each of the enterprise domains that will use the delta directory synchronization feature. On the User Settings and Group Settings pages, locate the Modify Timestamp setting and enter `modify TimeStamp` as the value. For details about editing enterprise domains, see [Editing and converting existing domains](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Enable or disable detailed logging during synchronization {#enable-or-disable-detailed-logging-during-synchronization}
 
