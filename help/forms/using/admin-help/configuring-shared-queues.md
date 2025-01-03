@@ -34,6 +34,10 @@ Once shared, these tasks can be completed by the user, with access to the queue,
 
 ### Configuring access to a selected user queue {#configuring-access-to-a-selected-user-queue}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. Log in to administration console using an Administrator account.
 1. Select **Services** > **Forms Workflow** > **Shared Queue**.
 

@@ -13,6 +13,10 @@ role: User, Developer
 ---
 # Configuring file type settings {#configuring-file-type-settings}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 In PDF Generator, you can set up the application settings for supported file types. On Windows, you can set up the application settings for each supported file type. On UNIX and Linux, you can set up the application settings for HTML-to-PDF and OpenOffice.
 
 On the File Type Settings page, you can perform these tasks:

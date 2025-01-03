@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Starting and stopping services {#starting-and-stopping-services}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 There are two types of services that are part of AEM forms:
 
 * Services that control the AEM forms application server and database.

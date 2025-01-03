@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Working with stalled operations and branches {#working-with-stalled-operations-and-branches}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 The Stalled Operations page and the Stalled Branches page show the processes that have stalled. A process can stall when an error occurs during or after the execution of an operation or because of a deliberate stall operation in the process:
 
 * Operations can stall due to an unforeseen error. However, a Stall Branch operation in a process deliberately stops a process from running further and requires the administrator to intervene.

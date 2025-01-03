@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Configuring validation messages {#configuring-validation-messages}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 For forms that are rendered as HTML, form validation errors that occur are displayed for the user. You can customize how validation messages are displayed. Depending on where the validation messages are displayed, you can also control the location of the message in the form and the size of the frame border.
 
 ## Specify how validation messages are displayed {#specify-how-validation-messages-are-displayed}

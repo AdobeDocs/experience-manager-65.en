@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Setting internationalization options{#setting-internationalization-options}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 ## Specify the locale used to render forms {#specify-the-locale-used-to-render-forms}
 
 You can specify the locale used when rendering a PDF form. The fields on a PDF form use the specified locale to display data. For example, if the locale is set to German, the form uses German decimal separators for numeric values. The locale is also used to send validation messages to client devices, such as web browsers, as part of HTML transformations.
