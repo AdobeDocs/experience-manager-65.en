@@ -188,10 +188,6 @@ To view the properties:
 
    ![Select Live Copy](assets/chlimage_1-218.png)
 
-   >[!NOTE]
-   >
-   >For further details see also the Knowledge Base article [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
-
 ### Seeing the Live Copies of a Blueprint Page {#seeing-the-live-copies-of-a-blueprint-page}
 
 Blueprint pages (that are referenced in a blueprint configuration) provide you with a list of the live copy pages that use the current (blueprint) page as the source. Use this list to keep track of the live copies. The list appears on the **Blueprint** tab of the [page properties](/help/sites-authoring/editing-page-properties.md).
