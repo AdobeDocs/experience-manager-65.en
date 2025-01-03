@@ -10,6 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 ---
+
 # Synchronizing directories {#synchronizing-directories}
 
 

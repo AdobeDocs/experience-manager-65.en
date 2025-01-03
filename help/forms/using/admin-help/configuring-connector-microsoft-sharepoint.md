@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 ---
+
 # Configuring Connector for Microsoft SharePoint 
-{#configuring-connector-for-microsoft-sharepoint}
 
 >[!NOTE]
 > 
@@ -20,7 +20,7 @@ feature: Adaptive Forms
 Connector for Microsoft SharePoint enables communication between AEM forms and Microsoft SharePoint. For additional background information, see "Connectors for ECM" in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63).
 
 1. In administration console, click Services &gt; Connector for Microsoft SharePoint.
-1. Specify the following settings for your SharePoint Server:
+2. Specify the following settings for your SharePoint Server:
 
    **SharePoint Server Host Name:** The host name port number of the web application on the SharePoint server, in the format `[hostname]:'port'`.
 
@@ -30,7 +30,7 @@ Connector for Microsoft SharePoint enables communication between AEM forms and M
 
    **Domain Name:** Domain where the SharePoint server is located.
 
-1. Click Save.
+3. Click Save.
 
 ## Microsoft SharePoint configuration service {#microsoft-sharepoint-configuration-service}
 
