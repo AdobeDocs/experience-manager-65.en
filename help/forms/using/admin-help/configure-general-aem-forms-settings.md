@@ -16,7 +16,8 @@ The Core Configurations page in administration console provides settings that ca
 
 >[!NOTE]
 >
-> It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+> * Ensure that the user has admin privileges to access the administrator console.
+> * It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 
 For information about enabling safe backup mode, see [Enabling and disabling safe backup mode](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 

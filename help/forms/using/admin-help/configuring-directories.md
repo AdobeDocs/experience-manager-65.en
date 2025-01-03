@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Configuring directories {#configuring-directories}
 
+> [!Note]
+>
+> Ensure that the user has admin privileges to access the administrator console.
+
 For each enterprise domain you configure, specify the directories that the authentication provider queries for user information. You can configure multiple directories for a domain.
 
 ## Adding directories or custom SPIs {#adding-directories-or-custom-spis}
