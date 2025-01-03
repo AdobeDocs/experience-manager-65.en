@@ -12,7 +12,7 @@ role: User, Developer
 ---
 # Adding domains {#adding-domains}
 
-> [!NOTE]
+>[!NOTE]
 > 
 > Ensure that the user has admin privileges to access the administrator console.
 

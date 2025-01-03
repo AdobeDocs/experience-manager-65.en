@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Configuring locations for Forms {#configuring-locations-for-forms}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 You can specify the URL, URI, and file locations of attributes such as the web root, the location of the forms to be retrieved, the seed PDF file that is used in PDFForm transformations, and the cache location.
 
 1. In administration console, click Services &gt; Forms.

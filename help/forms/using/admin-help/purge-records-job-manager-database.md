@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Purge records from the Job Manager database {#purge-records-from-the-job-manager-database}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Process data that is generated when a long-lived process is invoked can become too large, resulting in lower AEM forms performance and the use of unnecessary disk space. It is good practice to purge process data when records are no longer necessary.
 
 You can use administration console to perform a one-time purge of obsolete records, or to schedule regular automatic purges. Other methods for purging obsolete records are discussed in [Purging process data](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).

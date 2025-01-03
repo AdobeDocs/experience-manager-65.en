@@ -95,6 +95,10 @@ When document content is inlined (that is, less than the maximum inline size) th
 
 **Change the maximum inline size**
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. In administration console, click Settings &gt; Core System Settings &gt; Configurations.
 1. Enter a value in the Default Document Max Inline Size box and click OK.
 

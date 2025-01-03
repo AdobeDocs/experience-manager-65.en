@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Enabling single sign-on in AEM forms{#enabling-single-sign-on-in-aem-forms}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 AEM forms provide two ways to enable single sign-on (SSO) - HTTP headers and SPNEGO.
 
 When SSO is implemented, the AEM forms user login pages are not required and do not appear if the user is already authenticated through their company portal.

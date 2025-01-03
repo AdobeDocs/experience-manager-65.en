@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Work Manager and throttling{#work-manager-and-throttling}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 AEM forms (and earlier versions) used JMS queues to execute operations asynchronously. In AEM forms, JMS queues have been replaced by Work Manager. This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
 
 ## About long-lived (asynchronous) operations {#about-long-lived-asynchronous-operations}

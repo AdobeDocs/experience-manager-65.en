@@ -12,7 +12,7 @@ role: User, Developer
 ---
 # Configure account-locking settings {#configure-account-locking-settings}
 
-> [!NOTE]
+>[!NOTE]
 > 
 > Ensure that the user has admin privileges to access the administrator console.
 

@@ -13,7 +13,7 @@ role: User, Developer
 # Synchronizing directories {#synchronizing-directories}
 
 
-> [!Note]
+>[!Note]
 >
 > Ensure that the user has admin privileges to access the administrator console.
 

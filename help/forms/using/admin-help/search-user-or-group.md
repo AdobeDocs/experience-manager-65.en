@@ -12,5 +12,9 @@ feature: Adaptive Forms
 ---
 # Search for a user or group {#search-for-a-user-or-group}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. In administration console, click Settings &gt; User Management &gt; Users And Groups.
 1. Specify information to narrow the search and click Find. The results of the search are listed at the bottom of the page. You can sort the list by clicking any of the column headings. A maximum of 1000 results are returned.

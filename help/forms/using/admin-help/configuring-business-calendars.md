@@ -58,26 +58,28 @@ If your organization contains different sets of users who have different non-bus
 
 >[!NOTE]
 >
->If you do not create a business calendar, then the default calendar is used.
+> * If you do not create a business calendar, then the default calendar is used.
+> * Ensure that the user has admin privileges to access the administrator console.
+
 
 1. In administration console, click Services &gt; Forms workflow &gt; Business Calendars.
-1. To add a new business calendar, click ![bus_cal_plus](assets/bus_cal_plus.png). The text *New Calendar* appears in the drop-down list. Select the text and type another name for your calendar.
+2. To add a new business calendar, click ![bus_cal_plus](assets/bus_cal_plus.png). The text *New Calendar* appears in the drop-down list. Select the text and type another name for your calendar.
 
    To edit an existing business calendar, select it from the drop-down list.
 
-1. Under Default non-business days, select any weekly non-business days, such as weekends.
-1. [Optional] Select Use Business Hours and specify the start and end times for the business days.
+3. Under Default non-business days, select any weekly non-business days, such as weekends.
+4. [Optional] Select Use Business Hours and specify the start and end times for the business days.
 
    If you select this option, an event that occurs before the specified time range is moved to the beginning of the time range, and an event that occurs after the time range is moved to the start time of the next business day.
 
    For example, consider a situation where a user is assigned a task at 2:00 am on a Tuesday, and the reminder for that task is set to two business days. Without business hours, the reminder would occur at 2:00 am on Thursday. If business hours are set to 8:00 am to 5:00 pm, the reminder would be pushed to 8:00 am on Thursday. Without business hours, if a reminder event was created at 6:00 pm on Tuesday, the reminder would occur after business hours on Thursday. With business hours set to 8:00 am to 5:00 pm, the reminder would occur at 8:00 am on Friday.
 
-1. In the calendar on the left, double-click any other non-business days, such as holidays. You cannot select days in the past. The non-business days that you select appear in a list on the right, with the date appearing twice on one line. Select the date on the left to type name or description for the non-business day.
+5. In the calendar on the left, double-click any other non-business days, such as holidays. You cannot select days in the past. The non-business days that you select appear in a list on the right, with the date appearing twice on one line. Select the date on the left to type name or description for the non-business day.
 
    To remove a non-business day from the list, click ![bus_cal_trash](assets/bus_cal_trash.png) beside the day.
 
-1. [Optional] If this calendar is to be the default calendar, select Default Calendar. The default calendar is used when no other calendar mapping exists for user-associated events or no business calendar is specified for the Timer Event or the Wait Service. You cannot delete the default calendar.
-1. When you have finished defining the non-business days, select Calendar Enabled to make it active, and then click Save.
+6. [Optional] If this calendar is to be the default calendar, select Default Calendar. The default calendar is used when no other calendar mapping exists for user-associated events or no business calendar is specified for the Timer Event or the Wait Service. You cannot delete the default calendar.
+7. When you have finished defining the non-business days, select Calendar Enabled to make it active, and then click Save.
 
    If you are updating an existing calendar, the new version takes effect immediately and is used for all business calendar calculations, including for tasks that are already running.
 

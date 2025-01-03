@@ -12,6 +12,10 @@ feature: Adaptive Forms
 ---
 # Configuring Connector for IBM FileNet {#configuring-connector-for-ibm-filenet}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Connector for IBM FileNet enables communication between AEM forms and IBM FileNet. For additional background information, see "Connectors for ECM" in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]

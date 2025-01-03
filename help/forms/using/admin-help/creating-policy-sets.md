@@ -16,6 +16,10 @@ role: User, Developer
 ---
 # Creating and managing policy sets {#creating-and-managing-policy-sets}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Policy sets are used to group policies that have a common business purpose. Policy sets can be made available to a subset of users in the system.
 
 Each policy set has at least one associated policy set coordinator. The *policy set coordinator* is an administrator or a user who has additional permissions. The policy set coordinator is typically a specialist in the organization who can best author the policies in a given policy set.
