@@ -127,7 +127,7 @@ See also the [IccRenderIntent](https://experienceleague.adobe.com/en/docs/dynami
 
 >[!NOTE]
 >
-In general, use the default rendering intent for the selected color setting, which Adobe has tested to meet industry standards. For example, if you choose a color setting for North America or Europe, the default color conversion rendering intent is **[!UICONTROL Relative Colorimetric]**. If you choose a color setting for Japan, the default color conversion rendering intent is **[!UICONTROL Perceptual]**.
+>In general, use the default rendering intent for the selected color setting, which Adobe has tested to meet industry standards. For example, if you choose a color setting for North America or Europe, the default color conversion rendering intent is **[!UICONTROL Relative Colorimetric]**. If you choose a color setting for Japan, the default color conversion rendering intent is **[!UICONTROL Perceptual]**.
 
 | Setting | Characteristics |
 | --- | --- |
