@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Managing certificates {#managing-certificates}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Using the Trust Store Management, you can import, edit, and delete certificates that you trust on the server for validation of digital signatures and certificate authentication. You can import and export any number of certificates. After a certificate is imported, you can edit the trust settings and trust store type. Consider the following options when combining trust store types:
 
 * **Trust for Certificate Authentication with CA:** For CRL validation, also select Trust for Identity.

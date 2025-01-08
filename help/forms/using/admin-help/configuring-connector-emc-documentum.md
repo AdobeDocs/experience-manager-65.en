@@ -12,6 +12,10 @@ feature: Adaptive Forms
 ---
 # Configuring Connector for EMC Documentum {#configuring-connector-for-emc-documentum}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Connector for EMC Documentum enables communication between AEM forms and EMC Documentum. For additional background information, see "Connectors for ECM" in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63).
 
 Setting up Connector for EMC Documentum involves configuring the server connection and the repository credentials.

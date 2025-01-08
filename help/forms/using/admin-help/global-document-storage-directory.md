@@ -76,13 +76,15 @@ You can change the GDS location in administration console after the AEM forms in
 
 >[!NOTE]
 >
->Migrate the data in the following manner or data loss will occur.
+> * Migrate the data in the following manner or data loss will occur.
+> * Ensure that the user has admin privileges to access the administrator console.
+
 
 1. Log in to administration console and click Settings &gt; Core System Settings &gt; Configurations.
-1. In the Global Document Storage Directory box, enter the full path to the new GDS directory and then click OK.
-1. Immediately shut down the application server.
-1. Move all the files from the old GDS directory to the new location, keeping the internal directory structure.
-1. Restart the application server.
+2. In the Global Document Storage Directory box, enter the full path to the new GDS directory and then click OK.
+3. Immediately shut down the application server.
+4. Move all the files from the old GDS directory to the new location, keeping the internal directory structure.
+5. Restart the application server.
 
 ## About Deployment Files {#about-deployment-files}
 

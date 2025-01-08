@@ -94,6 +94,10 @@ The following additional default roles may be included, depending on the AEM for
 
 ## Create a role {#create-a-role}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. In administration console, click Settings &gt; User Management &gt; Role Management, and then click New Role.
 1. In the Role Name box, type a name for the role and, optionally, type a description of the role, and then click Next.
 

@@ -31,6 +31,10 @@ The Trust Store may contain more than one Acrobat Reader DC Extensions credentia
 
 ## Import a Acrobat Reader DC Extensions credential {#import-a-acrobat-reader-dc-extensions-credential}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. In the administration console, click Settings &gt; Trust Store Management &gt; Local Credentials.
 1. Click Import and, under Trust Store Type, select Acrobat Reader DC Extensions Credential.
 1. (Optional) To indicate that this credential is the default credential to use with Acrobat Reader DC Extensions, select Default.

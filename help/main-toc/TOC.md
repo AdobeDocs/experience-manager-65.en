@@ -620,6 +620,7 @@ user-guide-title: AEM 6.5
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
     + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md)
     + [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md)
+    + [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md)
   + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
     + [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)
     + [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md)
@@ -1204,7 +1205,6 @@ user-guide-title: AEM 6.5
     + [PDF generation fails to print a large number of PDFs on WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
     + [How to properly restart AEM SDK](/help/forms/using/restart-aem-sdk.md)
     + [PaperCapture service fails to perform OCRs on PDFs](/help/forms/using/papercapture-service-resolution.md)
-    + [Uninstall AEM Forms Add-on Package](/help/forms/using/uninstall-forms-addon-package.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
     + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)

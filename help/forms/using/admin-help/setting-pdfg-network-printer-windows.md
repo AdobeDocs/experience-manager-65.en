@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Setting up a PDFG Network Printer (Windows only) {#setting-up-a-pdfg-network-printer-windows-only}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 PDFG Network Printer allows users to generate a PDF document from any application that supports printing. After a user installs the PDFG Network Printer, a new printer named *PDF generator* appears in the Printers section of the Windows Control Panel. If a printer with the same name already exists, the user is prompted to provide another name.
 
 Printing to this printer from any application sends the document (in PostScript format) to PDF Generator, which converts the PostScript file to PDF. Depending on how you configured PDF Generator, it sends the PDF document to the user as an attachment to an email message, forwards the PDF document to a specified AEM forms service or process, or performs both actions.

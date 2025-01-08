@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Customizing search templates {#customizing-search-templates}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
 
 When creating or editing a search template, you can specify the layout and sort order of the search results. However, users can modify these settings in Workspace after the search results appear.

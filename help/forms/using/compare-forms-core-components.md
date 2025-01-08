@@ -7,7 +7,11 @@ exl-id: bcd6e9cf-b33b-4468-8b99-0da196f65eaa
 ---
 # Compare Adaptive Forms {#compare-two-forms}
 
+<!--
 <span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+-->
+
+<span class="preview">This feature is not enabled by default. You can write from your official address to aem-forms-ea@adobe.com to request access to the feature.</span>
 
 The Compare feature in Adaptive Forms Core Components helps form authors identify differences between two forms by analyzing fields, content, and components.
 

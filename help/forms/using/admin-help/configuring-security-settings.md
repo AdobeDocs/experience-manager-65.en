@@ -20,6 +20,10 @@ On the Security Settings page, you can do the following tasks:
 
 ## Create or edit a security setting {#create-or-edit-a-security-setting}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 A *security setting* controls the security and permissions for files that are converted with that security setting.
 
 1. In administration console, click Services &gt; PDF Generator &gt; Security Settings.

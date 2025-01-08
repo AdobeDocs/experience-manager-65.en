@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Specify file locations for Output {#specify-file-locations-for-output}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 You can specify the locations where Output looks for certain types of files that it requires.
 
 1. In administration console, click Services &gt; output.
