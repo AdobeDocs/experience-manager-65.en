@@ -37,6 +37,10 @@ role: User, Developer
 
 ## Configuring invocation of custom scripts before form submit {#configuring-invocation-of-custom-scripts-before-form-submit}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Perform the following steps to enable the feature:
 
 1. Login to the administration console.

@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Setting timeout values for use with Acrobat Reader DC Extensions  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 When working on many PDF files in Acrobat Reader DC Extensions, ensure that the following time-out values are set appropriately to prevent jobs from timing out and failing:
 
 **Document Disposal Timeout**

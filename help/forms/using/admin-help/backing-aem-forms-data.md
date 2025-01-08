@@ -115,6 +115,10 @@ You can use the command-line interface `LCBackupMode` scripts to put AEM Forms i
 
 ### Leaving backup modes {#leaving-backup-modes}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 You can use either the administration console or the command-line option to leave backup modes.
 
 **Leave safe backup mode (snapshot mode)**

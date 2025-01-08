@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Configure service settings {#configure-service-settings}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 You can use the Service Management page to configure settings for each of the services that are part of AEM forms. The available settings vary depending on the service being configured.
 
 1. In administration console, click Services &gt; Applications and Services &gt; Service Management.

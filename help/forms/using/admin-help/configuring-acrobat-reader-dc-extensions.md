@@ -12,6 +12,10 @@ feature: Adaptive Forms,Document Services,Reader Extensions
 ---
 # Configuring Acrobat Reader DC Extensions for data capture {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 If users of your AEM forms installation use the data capture functionality of Content Services (Deprecated), it is recommended that you create a role with read-only access for these users.
 
 ***Note**: Adobe&reg; LiveCycle&reg; Content Services ES (Deprecated) is a content management system installed with LiveCycle. It enables users to design, manage, monitor, and optimize human-centric processes. Content Services (Deprecated) support ends on 12/31/2014. See [Adobe product lifecycle document](https://helpx.adobe.com/support/programs/eol-matrix.html).*

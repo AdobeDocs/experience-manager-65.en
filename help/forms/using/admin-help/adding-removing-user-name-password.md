@@ -12,6 +12,10 @@ feature: Adaptive Forms
 ---
 # Adding and removing user name and password credentials {#adding-and-removing-user-name-and-password-credentials}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 From the Trust Store Management page, you can add and remove user name and password credentials used by the Forms service when it receives a request with SOAP-level security.
 
 ## Add a user name and password credential {#add-a-user-name-and-password-credential}

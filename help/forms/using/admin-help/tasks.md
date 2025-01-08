@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Working with tasks {#working-with-tasks}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Use the Task Search page to search for tasks by user name or task ID. The search results are displayed on the Task List page, where you can access a task's history. You can also reassign a task is one user has too many tasks or if a user has received a task assignment in error.
 
 >[!NOTE]

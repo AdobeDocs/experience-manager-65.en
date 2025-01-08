@@ -178,6 +178,10 @@ When you retry an operation, Forms workflow is sent a request to restart the ope
 
 ## Working with operations {#working-with-operations}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 The Operation Details page shows a summary of one operation in a process and its current user assignments.
 
 1. In administration console, click Services &gt; Forms workflow &gt; Forms workflow.

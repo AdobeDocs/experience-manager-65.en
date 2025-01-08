@@ -18,6 +18,10 @@ When creating a process, the Workbench user can specify whether a task can be re
 
 ## View a user's Out of Office information {#view-a-user-s-out-of-office-information}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. In administration console, click Services &gt; forms workflow &gt; Out of Office.
 1. In the box near the top of the Out of Office page, you can do one of the following:
 

@@ -24,6 +24,10 @@ AEM forms Digital Signatures can use credentials stored on an HSM to apply serve
 
 ## Create an alias for an HSM credential when the HSM device is online {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. In administration console, click Settings &gt;Trust Store Management &gt; HSM Credentials and then click Add.
 1. In the Profile Name box, type a string used to identify the alias. This value is used as a property to some Digital Signatures operations, such as the Sign Signature Field operation.
 1. In the PKCS11 Library box, type the fully qualified path of your HSM client library on the server. For example, `c:\Program Files\LunaSA\cryptoki.dll`. In a clustered environment, this path must be identical for all servers in the cluster.

@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Specify XCI configuration options {#specify-xci-configuration-options}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Output lets you specify a custom XCI file that it uses for rendering. See [Specify file locations for Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output). 
 
 By default, Output overrides some of the options specified in the XCI file, including the following:

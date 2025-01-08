@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Managing local credentials {#managing-local-credentials}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Local credentials are private key credentials hosted in Trust Store Management. A *local credential* identifies where a user's DES credential is stored. Using Trust Store Management, you can import and manage your local credentials by using, for example, existing PFX files so that you can import, edit, and delete local credentials.
 
 AEM forms support RSA and DSA credentials up to 4096 bits in standard PKCS12 format (.pfx and .p12 files).

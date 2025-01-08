@@ -16,6 +16,10 @@ role: User, Developer
 ---
 # Enable PDF/A support {#enable-pdf-a-support}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 PDF Generator supports the creation of PDF/A-compliant files from Microsoft Excel, Microsoft PowerPoint, and Microsoft Word files.
 
 1. In administration console, click Services &gt; PDF Generator &gt; File Type Settings.

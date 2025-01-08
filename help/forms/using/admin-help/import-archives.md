@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Import and manage archives {#import-and-manage-archives}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Use the archives tab to import and manage LCAs that were created in workbench.
 
 ## Import an archive {#import-an-archive}

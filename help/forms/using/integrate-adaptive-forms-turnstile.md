@@ -8,14 +8,12 @@ exl-id: bed93ce3-89db-477a-8316-7598275e4bca
 # Connect your AEM Forms environment with Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
+<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
 -->
 
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+<span class="preview">This feature is not enabled by default. You can write from your official address to aem-forms-ea@adobe.com to request access to the feature.</span>
 
-CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
+CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes.
 
 AEM Forms 6.5 supports the following CAPTCHA solutions:
 
@@ -29,6 +27,8 @@ AEM Forms 6.5 supports the following CAPTCHA solutions:
 ## Integrate AEM Forms environment with Turnstile Captcha
 
 Cloudflare's Turnstile Captcha is a security measure that aims to protect forms and sites from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Prerequisites to integrate AEM Forms environment with Turnstile Captcha {#prerequisite}
 
@@ -72,16 +72,16 @@ To integrate AEM Forms with the Turnstile service, perform the following steps:
 
 1. Open your AEM Forms environment. 
 1. Go to **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]**.
-1. Select an Adaptive Form, and Click **[!UICONTROL Properties]**. In **[!UICONTROL Configuration Container]**, select your Cloud Configuration for Turnstile&reg;.
+1. Select an Adaptive Form, and Click **[!UICONTROL Properties]**. In **[!UICONTROL Configuration Container]**, select the Configuration Container that contains the Cloud Configuration that connects AEM Forms with Turnstile.
 1. Click **[!UICONTROL Save & Close]**.
 
-    If you do not have such a Configuration Container, see section [Connect your AEM Forms environment with Turnstile](#connect-your-forms-environment-with-turnstile-service) to learn how to create a Configuration Container.
+    If you do not have a Configuration Container to configure Captcha service, see section [Configure Turnstile](#configure-turnstile-steps-to-configure-hcaptcha) to learn how to create a Configuration Container.
 
     ![Select Configuration Container](assets/captcha-properties.png)
 
 1. Select an Adaptive Form, and Click **[!UICONTROL Edit]** to open your adaptive form in the editor.
-1. From the component browser, drag-drop or add the **[!UICONTROL Adaptive Form Turnstile]** component onto the Adaptive Form.
-1. Select the **[!UICONTROL Adaptive Form Turnstile]** component and Click properties ![Properties icon](assets/configure-icon.svg) icon. It opens the properties dialog. Specify the following properties:
+1. From the component browser, drag-drop the **[!UICONTROL Captcha]** component onto the Adaptive Form.
+1. Select the **[!UICONTROL Captcha]** component and Click properties ![Properties icon](assets/configure-icon.svg) icon. It opens the properties dialog. Specify the following properties:
 
     <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
     ![Cloudfare Turnstile v1](assets/turnstile-setting-v1.png)
@@ -93,7 +93,8 @@ To integrate AEM Forms with the Turnstile service, perform the following steps:
     * **[!UICONTROL Configuration Settings]:** Select your Cloud Configuration configured for Turnstile&reg;.
         >[!NOTE]
         >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with Turnstile](#connect-your-forms-environment-with-turnstile-service) to learn how to create a Cloud Service that connects your AEM Forms environment with Turnstile service.
-    * **Error Message:** Provide the error message to display to the user when the Captcha submission fails.
+
+    * **[!UICONTROL Error Message]:** Provide the error message to display to the user when the Captcha submission fails.
     * **Captcha Size:** You can select the display size of the hCaptcha&reg; challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** to display a relatively large-size hCaptcha&reg; challenge dialog.
 
 1. Select **[!UICONTROL Done]**.
