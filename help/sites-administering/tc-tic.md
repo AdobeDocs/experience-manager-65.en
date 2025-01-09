@@ -21,7 +21,7 @@ For an overview of the content translation features in AEM, see [Translating Con
 
 Create a cloud configuration that connects AEM to your translation service provider. 
 
-AEM includes the capability to [connect to Microsoft&reg; Translator](help/sites-administering/tc-msconf.md) by default. Other translation technology vendors with AEM connectors who are members of the Adobe Exchange partner program can be found [here](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).  
+AEM includes the capability to [connect to Microsoft&reg; Translator](/help/sites-administering/tc-msconf.md) by default. Other translation technology vendors with AEM connectors who are members of the Adobe Exchange partner program can be found [here](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).  
 
 After you install a connector package, you can create a cloud configuration for the connector. Typically, you need to provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft Translator connector, see [Integrating with Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
