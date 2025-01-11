@@ -462,7 +462,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
