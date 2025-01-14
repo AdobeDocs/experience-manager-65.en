@@ -12,9 +12,7 @@ role: Admin
 ---
 # Developing Apps with PhoneGap CLI{#developing-apps-with-phonegap-cli}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 At any given time, as a developer you can run your app on a device or within an emulator, provided you've configured your development environment.
 

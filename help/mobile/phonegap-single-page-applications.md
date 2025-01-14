@@ -12,9 +12,7 @@ role: Admin
 ---
 # Single Page Applications{#single-page-applications}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 [Single-Page Applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA) have reached critical mass, widely regarded as the most effective pattern for building seamless experiences with web technology. By following a SPA pattern, you can create an application that performs identically to a desktop or mobile application, but reaches a multitude of device platforms and form factors due to its foundation in open web standards.
 

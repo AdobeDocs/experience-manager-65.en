@@ -12,9 +12,7 @@ role: Admin
 ---
 # Developing Mobile Applications in AEM {#developing-mobile-applications-in-aem}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM uses Adobe PhoneGap and Adobe Publishing Solutions, allowing you to create and manage both content-rich and utility-based cross-platform mobile applications:
 

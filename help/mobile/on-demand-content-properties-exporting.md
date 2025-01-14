@@ -16,9 +16,7 @@ role: Developer
 ---
 # Using Content Properties to Export Content{#using-content-properties-to-export-content}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Apps are represented as *cq:Pages* in AEM.
 

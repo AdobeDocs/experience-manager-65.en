@@ -11,9 +11,7 @@ role: Admin
 ---
 # Models Overview{#models-overview}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Model management involves the creation and management of models for associating with eventual data objects. Each model includes all the properties and field definitions required to facilitate the creation and rendering of objects.
 

@@ -12,9 +12,7 @@ role: Admin
 ---
 # Creating an AEM Mobile app using create wizard{#creating-a-new-aem-mobile-app-using-create-wizard}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM Mobile apps are based on a blueprint that defines a page structure and properties. You can configure the following application properties:
 

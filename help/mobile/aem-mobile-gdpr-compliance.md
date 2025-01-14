@@ -14,6 +14,8 @@ role: User
 >
 >GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, and CCPA.
 
+{{ue-over-mobile}}
+
 ## AEM Mobile GDPR Support {#aem-mobile-gdpr-support}
 
 AEM Mobile is ready to assist customers with their GDPR compliance obligations. No personal data is stored in AEM Mobile. If you are provisioned, you can log on to Adobe Experience Mobile with your Adobe ID.

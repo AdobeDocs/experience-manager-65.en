@@ -12,9 +12,7 @@ role: User
 ---
 # Page Templates for Mobile Apps {#page-templates-for-mobile-apps}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 ## Page Templates for Mobile Apps {#page-templates-for-mobile-apps-1}
 
