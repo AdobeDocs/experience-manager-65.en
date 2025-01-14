@@ -13,7 +13,7 @@
 
 >[!IMPORTANT]
 >
->Mobile is no longer maintained by Adobe and the preferred editors for managing headless content in AEM are now:
+>New installations of AEM 6.5 do not support AEM Mobile Apps functionality. The preferred editors for managing headless content in AEM are now:
 >
 >* [The Universal Editor](/help/sites-developing/universal-editor/introduction.md) for visually editing headless content.
 >* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
