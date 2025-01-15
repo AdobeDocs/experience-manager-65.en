@@ -12,9 +12,7 @@ role: User
 ---
 # Mobile with Content Sync{#mobile-with-content-sync}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Use Content Sync to package content so that it can be used in native mobile applications. Pages that are authored in Adobe Experience Manager (AEM) can be used as app content, even when the device is offline. Furthermore, because AEM pages are based on web standards, they work cross-platform enabling you to embed them in any native wrapper. This strategy reduces development effort and enables you to easily update app content.
 

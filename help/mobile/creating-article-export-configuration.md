@@ -16,9 +16,7 @@ role: User
 ---
 # Creating Article Export Configuration{#creating-article-export-configuration}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!CAUTION]
 >

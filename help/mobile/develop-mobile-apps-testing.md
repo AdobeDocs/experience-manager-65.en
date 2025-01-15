@@ -12,9 +12,7 @@ role: Admin
 ---
 # Testing Mobile Apps{#testing-mobile-apps}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Given the wide range of devices on the market and devices being released, testing your Apps has become imperative. This is an area where functionality and usability may garner low reviews on an app store, but a single defect can result in your app being uninstalled. Careful attention must be made in your testing plans and quality assurance. The following link covers many of the topics that must be addressed in general, such as identifying your environment, defining test cases, types of testing, assumptions, and customer involvement. Also discussed are tools to help in the testing effort. Internal tools, like [Hobbes](/help/sites-developing/hobbes.md), can help with web-based UI testing. [Tough Day](/help/sites-developing/tough-day.md) can stress your instances with a simulated load. If your testing environment already has experience with 3rd-party tools, like Selenium, these too can be used.
 

@@ -12,9 +12,7 @@ role: User
 ---
 # Publish UnPublish Content{#publish-unpublish-content}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Once you are familiar with content management actions on articles, banners, and collections you can publish your content. Also you can unpublish your content.
 

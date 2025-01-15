@@ -17,9 +17,7 @@ role: Admin
 ---
 # Configure your Adobe Mobile Services Cloud Service {#configure-your-adobe-mobile-services-cloud-service}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 The **Mobile Metrics Tile** on the command center provides real-time analytics for your mobile application.
 

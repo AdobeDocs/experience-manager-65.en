@@ -1441,7 +1441,6 @@ user-guide-title: AEM 6.5
       + [The RemotePage Component](/help/sites-developing/spa-remote-page.md)
       + [Editing an External SPA within AEM](/help/sites-developing/spa-edit-external.md)
       + [Composite Components in SPAs](/help/sites-developing/spa-composite-component.md)
-      + [SPA and Server-Side Rendering](/help/sites-developing/spa-ssr.md)
       + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html)
       + [Launch Integration](/help/sites-developing/spa-launch.md)
       + [SPA Reference Materials](/help/sites-developing/spa-reference-materials.md)

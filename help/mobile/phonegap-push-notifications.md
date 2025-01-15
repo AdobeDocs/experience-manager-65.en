@@ -12,9 +12,7 @@ role: Admin
 ---
 # Push Notifications{#push-notifications}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Being able to instantly alert your Adobe Experience Manager (AEM) Mobile app users with important notifications is crucial to the value of a mobile app and its marketing campaigns. Here, steps are described that must be taken to let your app receive push notifications. You also learn how to configure and send pushes from AEM Mobile to the app installed on the phone. Also, this section describes how to configure the [Deep Linking](#deeplinking) feature to your push notifications.
 

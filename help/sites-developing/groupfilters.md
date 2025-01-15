@@ -14,9 +14,7 @@ role: Developer
 ---
 # Creating Device Group Filters{#creating-device-group-filters}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Create a device group filter to define a set of device capability requirements. Create as many filters as you require to target the needed groups of device capabilities.
 
