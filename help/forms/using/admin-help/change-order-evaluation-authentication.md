@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Change the order of evaluation for authentication {#change-the-order-of-evaluation-for-authentication}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 If you configured multiple authentication providers, you can change the order in which AEM forms evaluates them for authentication. The order of the authentication providers that are listed in the config.xml file determines the order of evaluation for authentication.
 
 1. In administration console, click Settings &gt; User Management &gt; Configuration &gt; Import And Export Configuration Files.

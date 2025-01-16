@@ -16,9 +16,7 @@ role: Admin
 ---
 # Out of the Box App Handlers{#out-of-the-box-app-handlers}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 See the following guidelines for developing Content Sync Handlers:
 

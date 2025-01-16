@@ -12,6 +12,10 @@ feature: Adaptive Forms
 ---
 # Configuring Connector for IBM&reg; Content Manager{#configuring-connector-for-ibm-content-manager}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Connector for IBM&reg; Content Manager enables communication between AEM forms and IBM&reg; Content Manager. For additional background information, see "Connectors for ECM" in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Configure the IBM&reg; Content Manager connection {#configure-the-ibm-content-manager-connection}

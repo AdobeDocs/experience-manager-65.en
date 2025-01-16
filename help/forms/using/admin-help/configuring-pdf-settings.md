@@ -79,6 +79,10 @@ Print jobs fail if they have fonts that cannot be embedded. These PDF files can 
 
 ## Add or edit PDF settings {#add-or-edit-pdf-settings}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 PDF settings determine precisely how files are converted and their resultant PDF structure and features. Define a new PDF setting or edit one that you created previously. You cannot modify predefined settings, but you can create a setting based on an existing one by editing the setting and saving it under a new name.
 
 1. In administration console, click Services &gt; PDF Generator &gt; Adobe PDF Settings.

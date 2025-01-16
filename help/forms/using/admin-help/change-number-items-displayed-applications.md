@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Change the number of items displayed on the Applications and Services pages {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 On the Preferences page, you can control the number of services, endpoints, categories, and archives that are displayed on each of the Applications and Services web pages.
 
 1. In administration console, **[!UICONTROL click Services > Applications and Services > Preferences]**.

@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Configure AEM forms to prefetchdomain information {#configure-aem-forms-to-prefetchdomain-information}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Users may experience a slower response time if they belong to many groups (for example, 500 or more) or if the groups are nested deeply (for example, 30 levels). If you are experiencing this problem, you can configure AEM forms to prefetch information from certain domains.
 
 1. In administration console, click **[!UICONTROL Settings > User Management > Configuration > Import And Export Configuration Files]**.

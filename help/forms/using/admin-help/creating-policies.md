@@ -16,6 +16,10 @@ role: User, Developer
 ---
 # Creating and managing policies {#creating-and-managing-policies}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 A *policy* defines a set of confidentiality settings and users who can access a document to which the policy is applied. A *policy set* is used to group a set of policies that have a common business purpose. These policy sets are then made available to a subset of users in the system. For details about policies, see [Policies and policy-protected documents](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
 ## Types of policies {#types-of-policies}

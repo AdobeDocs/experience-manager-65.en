@@ -31,6 +31,10 @@ Use the Applications tab to import and manage applications that were created in 
 
 ## Import an application or archive {#import-an-application-or-archive}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. In administration console, click Services &gt; Applications and Services &gt; Application Management.
 1. Click Import.
 1. Click Browse and select the .lca file to import and click Preview. The Preview Application page displays information about the application.

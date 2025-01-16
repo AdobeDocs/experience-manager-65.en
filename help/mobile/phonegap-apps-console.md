@@ -12,9 +12,7 @@ role: Admin
 ---
 # Creating and Editing Apps Using the Apps Console{#creating-and-editing-apps-using-the-apps-console}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 The AEM mobile application development process recognizes that users of different expertise contribute to the development of mobile applications. The following process map illustrates the general order in which content authors and application developers perform tasks.
 

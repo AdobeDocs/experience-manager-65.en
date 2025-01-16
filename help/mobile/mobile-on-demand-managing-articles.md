@@ -12,9 +12,7 @@ role: User
 ---
 # Managing Articles{#managing-articles}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Content Management actions are the building blocks that help to create and manage articles within an application. The following actions are performed on articles within the application.
 

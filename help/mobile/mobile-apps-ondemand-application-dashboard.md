@@ -16,9 +16,7 @@ role: User
 ---
 # AEM Mobile Application Dashboard {#aem-mobile-application-dashboard}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 You can manage your application and mobile app content from AEM Mobile Application Dashboard or the Control Center.
 

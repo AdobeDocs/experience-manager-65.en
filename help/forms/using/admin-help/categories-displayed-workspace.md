@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Managing the categories displayed in Workspace {#managing-the-categories-displayed-in-workspace}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. You can set up the categories in administration console, or process designers can set them up in Workbench. When process designers creates processes, they assign them to categories.
 
 When you specify category names, create them so that they appear properly in the Workspace navigation pane. By default, the left navigation pane has a fixed width of 210 pixels, which is approximately 24 characters. If the category name that you specify is too long to fit within the fixed width of the left navigation pane, it is truncated. The full name appears only when the mouse pointer is paused over it. Try to avoid category names that will be truncated. The following examples illustrate category names that fit and those that are truncated:

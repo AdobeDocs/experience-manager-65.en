@@ -12,9 +12,7 @@ role: Admin
 ---
 # Starting AEM PhoneGap {#starting-aem-phonegap}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 For developers, the best place to start is to look at the Adobe Experience Manager Mobile Starterkit in github
 

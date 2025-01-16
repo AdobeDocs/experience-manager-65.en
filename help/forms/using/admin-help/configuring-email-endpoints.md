@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Configuring email endpoints {#configuring-email-endpoints}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Email endpoints enable users to invoke a service by sending one or more documents (as email attachments) to a specified email account. The email inbox acts as a collecting point for the attachments. The service monitors the inbox and processes the attachments. The results of the conversion are forwarded to the user defined in the endpoint.
 
 For an email endpoint, authorized users can invoke a process by emailing files to the appropriate account. The results will be returned to the submitting user (by default) or to the user defined in the endpoint settings.

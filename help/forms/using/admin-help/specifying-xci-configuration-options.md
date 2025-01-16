@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Specifying XCI configuration options {#specifying-xci-configuration-options}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Forms lets you specify a custom XCI file that it can use for rendering. (See [Configuring locations for Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) By default, Forms override some of the options specified in the XCI file, including the following:
 
 * `config/present/xdp/packets`

@@ -13,6 +13,10 @@ role: User, Developer
 ---
 # Adding, enabling, modifying, or removing endpoints {#adding-enabling-modifying-or-removing-endpoints}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 ## Add an endpoint to a service {#add-an-endpoint-to-a-service}
 
 Endpoints can be added only to services. An endpoint cannot exist alone; it must be associated with a service.

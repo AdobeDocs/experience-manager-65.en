@@ -12,6 +12,10 @@ feature: Adaptive Forms
 ---
 # Creating and configuring groups{#creating-and-configuring-groups}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Creating groups of users lets you assign roles to the group instead of to individual users.
 
 Two different types of groups are available. You can manually create a group and add users and other groups to it. You can also create dynamic groups that automatically include all users who meet a specified set of rules.

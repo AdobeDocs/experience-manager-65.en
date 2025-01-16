@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # About administration and process terminology {#about-administration-and-process-terminology}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 To administer forms workflow effectively, you should understand the following terms and the hierarchy of the elements:
 
 * *Process categories* organize processes into logical groups.

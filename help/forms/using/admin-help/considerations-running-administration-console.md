@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Considerations when running Administration Console {#considerations-when-running-administrationconsole}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 These are some things to consider when running Administration Console:
 
 * If you access administration console using the URL `https://[hostname]:'port'/adminui`, the specified host name cannot contain underscore characters. Otherwise, links to some areas of the administration console may not work properly.

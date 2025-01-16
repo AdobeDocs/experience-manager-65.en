@@ -16,9 +16,7 @@ role: User
 ---
 # Content Properties and Nodes {#content-properties-and-nodes}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Articles, Banners, and Collections are represented as cq:Pages in AEM.
 

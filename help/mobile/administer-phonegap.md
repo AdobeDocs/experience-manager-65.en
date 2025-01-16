@@ -12,9 +12,7 @@ role: Admin
 ---
 # Administering Content for Adobe PhoneGap Enterprise with AEM {#administering-content-for-adobe-phonegap-enterprise-with-aem}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 An ***AEM administrator*** is responsible for adding a new application to the AEM Mobile catalog, either by creating an app using the creation wizard, or by importing an existing application. AEM administrators who create an app using AEM Mobile's *creation wizard*, typically select one of the desired app templates either from Adobe's out-of-the-box reference samples or (usually) a custom app template created by *AEM developers.*
 
