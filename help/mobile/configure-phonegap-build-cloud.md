@@ -12,9 +12,7 @@ role: Admin
 ---
 # Configure your Adobe PhoneGap Build Cloud Service {#configure-your-adobe-phonegap-build-cloud-service}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 The **PhoneGap Build Tile** on the application dashboard lets you build and distribute your PhoneGap mobile application through the Adobe PhoneGap Build Service.
 

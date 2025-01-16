@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Files to back up and recover {#files-to-back-up-and-recover}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 The application and data files that must be backed up are described in more detail in the following sections.
 
 Consider the following points regarding backup and recovery:

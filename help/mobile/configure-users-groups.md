@@ -12,9 +12,7 @@ role: Admin
 ---
 # Configure Your Users and User Groups {#configure-your-users-and-user-groups}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 This chapter describes the user roles and how to configure your users and groups to support the authoring and management of your mobile apps.
 

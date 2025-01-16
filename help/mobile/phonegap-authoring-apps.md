@@ -12,9 +12,7 @@ role: Admin
 ---
 # Authoring Mobile Applications{#authoring-mobile-applications}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 The AEM Mobile Dashboard lets you create, build and deploy your mobile application, create, delete, and edit application metadata. Once your application is live, you can analyze application analytics including life cycle and usage metrics to improve customer conversion and brand loyalty.
 

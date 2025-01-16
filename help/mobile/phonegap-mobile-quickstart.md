@@ -16,9 +16,7 @@ role: Admin
 ---
 # Mobile Quickstart {#mobile-quickstart}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 ## AEM Verify App {#aem-verify-app}
 

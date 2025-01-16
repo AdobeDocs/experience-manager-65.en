@@ -11,9 +11,7 @@ role: User
 ---
 # Creating and Adding Templates and Components {#creating-and-adding-templates-and-components}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM Mobile On-Demand provides a fully configured app template, an article template, and article components.
 

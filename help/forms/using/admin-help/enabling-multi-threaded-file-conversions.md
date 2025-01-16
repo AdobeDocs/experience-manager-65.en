@@ -88,6 +88,10 @@ If you are running OpenOffice, Microsoft&reg; Word, or Microsoft&reg; PowerPoint
 
 ### Add a user account {#add-a-user-account}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. In the administration console, click Services &gt; PDF Generator &gt; User Accounts.
 1. Click Add and enter the user name and password of a user who has administrative privileges on the Forms Server. If you are configuring users for OpenOffice, dismiss the initial OpenOffice activation dialogs.
 

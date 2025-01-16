@@ -60,15 +60,11 @@ The **Live Copy Overview** can be opened when viewing properties of a blueprint 
 
 1. Select **Live Copy Overview** to show and use the overview of all live copies related to the current blueprint.
 
-   >[!NOTE]
-   >
-   >For further details see also the Knowledge Base article [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
-
 1. Use **Close** to exit and return to the **Sites** console.
 
 ## Using the Live Copy Overview {#using-the-live-copy-overview}
 
-The **Live Copy Overview** can also be used to peform actions on the live copy:
+The **Live Copy Overview** can also be used to perform actions on the live copy:
 
 1. Open the **Live Copy Overview**.
 1. Select the required blueprint or live copy page - the toolbar will be updated to show the available actions. The [actions](/help/sites-administering/msm.md#terms-used) available depend on whether you select a [blueprint](#actions-for-a-blueprint-page) or [live copy](#actions-for-a-live-copy-page) page:

@@ -16,6 +16,10 @@ role: User, Developer
 ---
 # Managing invited and local user accounts {#managing-invited-and-local-user-accounts}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Use the Invited and Local Users page to manage your invited and local users. This page is displayed only if the following requirements are met:
 
 * You are an administrator who is assigned the document security Manage Invited and Local Users role and the administration console User role. (See [Creating and configuring roles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)

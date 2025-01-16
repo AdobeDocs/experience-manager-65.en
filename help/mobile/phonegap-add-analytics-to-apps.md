@@ -12,9 +12,7 @@ role: Admin
 ---
 # Add Adobe Analytics to your Mobile Application{#add-adobe-analytics-to-your-mobile-application}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Want to build engaging and relevant experiences for your mobile application users? If you're not using the Adobe Mobile Services SDK to monitor and measure application lifecycle and usage, then on what are you basing your decisions? Where are your most loyal customers? How can you guarantee you're staying relevant and optimizing conversions?
 

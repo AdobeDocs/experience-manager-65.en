@@ -10,3 +10,5 @@ role: User
 # AEM 6.5 Mobile User Guide
 
 Benefit from AEM support to create and manage content for mobile apps. Get an introduction to and learn how to author, develop, and administer on the On-Demand Services App and Adobe PhoneGap Enterprise.
+
+{{ue-over-mobile}}

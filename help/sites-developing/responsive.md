@@ -13,10 +13,7 @@ role: Developer
 ---
 # Responsive Design for Web Pages{#responsive-design-for-web-pages}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (such as _React_). [Learn more](/help/sites-developing/spa-overview.md).
->
+{{ue-over-mobile}}
 
 >[!NOTE]
 >

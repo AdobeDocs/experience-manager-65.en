@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Configure the LDAP bind password{#configure-the-ldap-bind-password}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 To avoid security risks, the bind password field in the exported configuration file (config.xml) is not configured. Before you import the configuration file into another system, ensure that you configure this password. This password overrides an existing password that is stored in the database. A null password does not override an existing non-null password value.
 
 1. In administration console, click Settings &gt; User Management &gt; Configuration &gt; Import And Export Configuration Files.

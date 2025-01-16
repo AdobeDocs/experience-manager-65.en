@@ -1206,7 +1206,6 @@ user-guide-title: AEM 6.5
     + [PDF generation fails to print a large number of PDFs on WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
     + [How to properly restart AEM SDK](/help/forms/using/restart-aem-sdk.md)
     + [PaperCapture service fails to perform OCRs on PDFs](/help/forms/using/papercapture-service-resolution.md)
-    + [Uninstall AEM Forms Add-on Package](/help/forms/using/uninstall-forms-addon-package.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
     + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1443,7 +1442,6 @@ user-guide-title: AEM 6.5
       + [The RemotePage Component](/help/sites-developing/spa-remote-page.md)
       + [Editing an External SPA within AEM](/help/sites-developing/spa-edit-external.md)
       + [Composite Components in SPAs](/help/sites-developing/spa-composite-component.md)
-      + [SPA and Server-Side Rendering](/help/sites-developing/spa-ssr.md)
       + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html)
       + [Launch Integration](/help/sites-developing/spa-launch.md)
       + [SPA Reference Materials](/help/sites-developing/spa-reference-materials.md)

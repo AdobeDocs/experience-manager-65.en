@@ -14,9 +14,7 @@ role: Developer
 ---
 # Creating Sites for Mobile Devices{#creating-sites-for-mobile-devices}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Creating a mobile site is similar to creating a standard site as it also involves creating templates and components. For more details on creating templates and components, see the following pages: [Templates](/help/sites-developing/templates.md), [Components](/help/sites-developing/components.md), and [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md). The main difference consists in enabling the Adobe Experience Manager (AEM) built-in mobile functionalities within the site. It is achieved by creating a template that relies on the mobile page component.
 

@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Configuring caching for Forms{#configuring-caching-for-forms}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 The Forms service takes form designs that were created in Designer and renders them in various formats.
 
 The Forms page in administration console contains settings that control the way the Forms service caches items. You can adjust these settings to optimize the performance of the Forms service.

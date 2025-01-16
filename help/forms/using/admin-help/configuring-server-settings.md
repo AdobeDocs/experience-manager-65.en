@@ -30,6 +30,10 @@ If your processes are designed and implemented without requiring email, you do n
 
 ### Configure outgoing email settings {#configure-outgoing-email-settings}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 1. In administration console, click Services &gt; forms workflow &gt; Server Settings &gt; Email Settings.
 1. Select Enable Outgoing Messages.
 1. In the SMTP Server box, type the email server name or IP address. All notification email messages from forms workflow are sent from this email server.

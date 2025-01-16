@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Importing and exporting the configuration file {#importing-and-exporting-the-configuration-file}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 Use the Manual Configuration page to download a copy of the configuration settings in XML format. The settings in this file control all server preferences. You can then edit the file and upload it back to the server. You can also use the file to configure another AEM forms product instance.
 
 To avoid security risks, the bind password value for the directory server is not included in an exported configuration file. Update the password in the XML file before you import the file to a new system.

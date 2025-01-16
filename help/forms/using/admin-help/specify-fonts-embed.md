@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Specify fonts to embed{#specify-fonts-to-embed}
 
+>[!NOTE]
+> 
+> Ensure that the user has admin privileges to access the administrator console.
+
 You can specify which fonts are always embedded or never embedded with the forms used by Output. Embedding fonts increases the file size of the forms. Embed unusual fonts that users are not likely to have on their systems, and do not embed common fonts that they will have installed.
 
 >[!NOTE]
