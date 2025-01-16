@@ -6,6 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 ---
+
 # Composite Components in SPAs {#composite-components-in-spas}
 
 Composite components use the modular nature of AEM components by combining multiple base components into a single component. A common composite component use case is the card component, made of a combination of the image and text components.
@@ -13,6 +14,8 @@ Composite components use the modular nature of AEM components by combining multi
 When composite components are properly implemented within the AEM Single Page Application (SPA) Editor framework, the content authors can drag and drop such components as they would any other component, but still have the ability to individually edit each component making up the composite component.
 
 This article demonstrates how you can add a composite component to your single page application to work seamlessly with the AEM SPA Editor.
+
+{{ue-over-spa}}
 
 ## Use Case {#use-case}
 
