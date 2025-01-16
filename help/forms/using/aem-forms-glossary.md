@@ -253,73 +253,97 @@ An implementation of digital signature standards (e.g., PKCS #7) within AEM Form
 -->
 
 ## [Adobe Sign in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms)  
+
 A RESTful service for secure and seamless digital signature workflows. It integrates with AEM Forms using OAuth-based authentication, enabling automated signature collections and real-time tracking.
 
 ## [Letters](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/letters-correspondences/create-letter#create-a-letter-template)  
+
 Generated customer communications leveraging AEM Forms Document Services. Letters are created using a combination of XDP templates, data models, and reusable fragments, ensuring scalability in high-volume scenarios.
 
 ## [Submit Action in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions)  
+
 Server-side or client-side actions executed upon form submission. Examples include REST API calls, invoking a workflow, or writing data to a JCR (Java Content Repository).
 
 ## [Data Sources](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/form-data-model/configure-data-sources)  
+
 Interfaces for integrating external data into forms, including JDBC for relational databases, REST endpoints for web services, and OData for SAP systems. Managed via AEM Forms Data Integration framework.
 
 ## [Adaptive Form Block](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-references/form-components)  
+
 An encapsulation unit that logically groups related components and metadata, enabling dynamic data handling and easy scalability in multi-step forms.
 
 ## [Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview)  
+
 Optimized content delivery for AEM Forms ensuring reduced latency for assets like forms, themes, and client libraries where where authors can update and publish content quickly.
 
 ## [Forms Integration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/form-data-model/data-integration)  
+
 Involves connecting AEM Forms to enterprise systems (e.g., SAP, Salesforce) using OSGi bundles and connectors, supporting bidirectional data flows and real-time updates.
 
 ## [Custom Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/customize-adaptive-forms-core-components) 
+
 A bespoke component extending AEM Forms functionality, developed using Sling Models, Sightly (HTL), and Java. Typically used for unique business logic or advanced client-side interactivity.
 
 ## [Themes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)  
+
 CSS-driven styling frameworks applied to adaptive forms, utilizing LESS/SASS for preprocessors. Themes ensure compliance with branding guidelines and accessibility standards, you can customize a theme, change its design elements, layout, colors, typography, and sometimes the underlying code.
 
 ## [Template](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components)  
+
 Blueprints for adaptive forms, comprising structural elements (fields, layouts) and pre-configured scripts, you can create and customize new templates or use existing out-of-the-box templates.
 
 ## **Custom Properties**  
+
 Developer-defined metadata attributes added to components or forms for advanced behaviors, accessed via Sling APIs or Groovy scripts for dynamic processing.
 
-## **Embedding**  
+## **Embedding** 
+
 Integrating adaptive forms into AEM Sites or external web pages using `<iframe>` or SPA (Single Page Application) models. Embedding supports seamless session handling and cross-origin resource sharing (CORS).
 
 ## **CDN (Content Delivery Network)**  
+
 Distributed networks (e.g., Akamai) used for caching and delivering forms-related resources, ensuring high availability and faster load times for geographically distributed users.
 
 ## **Dispatcher**  
+
 An AEM caching and load balancing tool configured to optimize delivery of adaptive forms. Its filter rules ensure secure access control while caching frequently accessed forms and assets.
 
 ## **Editors**  
+
 Tools like the Adaptive Forms Editor, Theme Editor, and Rule Editor, enabling developers and content authors to customize forms and their behavior without extensive coding.
 
 ## **Responsive UI**  
+
 An implementation of media queries and flexible grids, ensuring adaptive forms render seamlessly across various screen sizes and devices.
 
 ## **Custom Functions**  
+
 JavaScript-based utilities or REST microservices that provide additional logic (e.g., complex field validation or data pre-population), extending the out-of-the-box capabilities of AEM Forms.
 
 ## **Package Manager**  
+
 AEM's CRX Package Manager facilitates importing/exporting adaptive forms, data schemas, or configurations as .zip files, enabling modular deployment in distributed environments.
 
 ## **Communication APIs**  
+
 REST and SOAP APIs provided by AEM Forms for operations like data pre-fill, dynamic content retrieval, or triggering workflows based on user interactions.
 
 ## **UE (User Experience)**  
+
 Design principles and optimizations applied in AEM Forms to enhance usability, including accessibility features (ARIA roles, tab navigation) and intuitive layouts.
 
-## **Forms Submission Services**  
+## **Forms Submission Services**
+
 Back-end services for handling form submissions, integrating with the AEM Workflow engine, third-party APIs, or direct JCR persistence.
 
 ## **Form Review**  
+
 A workflow-driven feature allowing stakeholders to review adaptive forms, add annotations, and approve changes before publishing. Uses AEM Inbox and Task Management.
 
 ## **Forms Versioning**  
+
 Capability to manage multiple versions of a form in the repository, using JCR node versioning. Ensures audit trails and easy rollback for adaptive forms.
 
 ## **Adobe Analytics Forms Integration**  
+
 Provides detailed insights into user interactions (e.g., field drop-offs, time spent per section) using Adobe Analytics, enabling data-driven optimization of form design.
