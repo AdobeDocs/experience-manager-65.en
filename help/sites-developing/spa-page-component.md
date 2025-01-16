@@ -11,13 +11,12 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 ---
+
 # SPA Page Component{#spa-page-component}
 
 In an SPA the page component does not provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 
->[!NOTE]
->
->The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
+{{#ue-over-spa}}
 
 ## Introduction {#introduction}
 

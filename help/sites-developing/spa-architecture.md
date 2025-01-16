@@ -11,15 +11,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 ---
+
 # Developing SPAs for AEM{#developing-spas-for-aem}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within Adobe Experience Manager (AEM) for a site built using such frameworks.
 
 This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM and gives an overview of the architecture of AEM regarding deploying SPAs on AEM.
 
->[!NOTE]
->
->The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
+{{#ue-over-spa}}
 
 ## SPA Development Principles for AEM {#spa-development-principles-for-aem}
 

@@ -1,19 +1,16 @@
 ---
 title: Getting Started with SPAs in AEM - Angular
-
 description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the Angular framework.
-
-
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-
 docset: aem65
 exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 ---
+
 # Getting Started with SPAs in AEM - Angular{#getting-started-with-spas-in-aem-angular}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.
@@ -24,9 +21,7 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 >
 >This article is based on the Angular framework. For the corresponding document for the React framework see [Getting Started with SPAs in AEM - React](/help/sites-developing/spa-getting-started-react.md).
 
->[!NOTE]
->
->The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
+{{#ue-over-spa}}
 
 ## Introduction {#introduction}
 
