@@ -18,7 +18,7 @@ Single page applications (SPAs) can offer compelling experiences for website use
 
 The SPA authoring feature offers a comprehensive solution for supporting SPAs within AEM. This article presents an example of how to adapt a simple, existing React component to work with the AEM SPA Editor.
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## Introduction {#introduction}
 

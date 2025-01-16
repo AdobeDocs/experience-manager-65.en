@@ -16,7 +16,7 @@ role: Developer
 
 Adobe Experience Platform Launch is the recommended way to implement Analytics, Target, and Audience Manager within Single Page Applications (SPAs).
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## Tutorial {#tutorial}
 

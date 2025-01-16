@@ -15,7 +15,7 @@ role: Developer
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill, which are described in this document.
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## Introduction {#introduction}
 

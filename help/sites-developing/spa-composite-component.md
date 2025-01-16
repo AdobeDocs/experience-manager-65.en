@@ -15,7 +15,7 @@ When composite components are properly implemented within the AEM Single Page Ap
 
 This article demonstrates how you can add a composite component to your single page application to work seamlessly with the AEM SPA Editor.
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## Use Case {#use-case}
 

@@ -13,7 +13,7 @@ role: Developer
 
 # SPA Reference Materials {#spa-reference-materials}
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## SPA JavaScript API References{#spa-javascript-api-references}
 

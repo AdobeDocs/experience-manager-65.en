@@ -18,7 +18,7 @@ Single page applications (SPAs) can offer compelling experiences for website use
 
 The SPA Editor offers a comprehensive solution for supporting SPAs within AEM. This page gives an overview of how SPA support is structured in AEM, how the SPA Editor works, and how the SPA framework and AEM keep in synch.
 
-{{#ue-over-spa}}
+{{ue-over-spa}}
 
 ## Introduction {#introduction}
 
