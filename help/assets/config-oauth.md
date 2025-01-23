@@ -33,12 +33,12 @@ An OAuth configuration requires the following prerequisites:
 
 * Create a new OAuth integration in the [Developer Console](https://developer.adobe.com/console/user/servicesandapis). Use the `ClientID`, `ClientSecret`, `OrgID`, and other properties in the steps below:
 * The following files can be found at this path `/apps/system/config in crx/de`:
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### OAuth configuration for the existing AMS and On prem users {#steps-config-oauth-onprem}
 
-The below steps can be performed by the system admin. AMS customer may reach out to the Adobe representative or submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
+The below steps can be performed by the system admin in **CRXDE**. AMS customer may reach out to the Adobe representative or submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
 
 1. Add or update the below properties in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -50,6 +50,11 @@ The below steps can be performed by the system admin. AMS customer may reach out
    * Update the `auth.token.provider.client.id` with the Client ID of the new OAuth configuration.
    * Update `auth.access.token.request` to `"https://ims-na1.adobelogin.com/ims/token/v3"`
 1. Rename the file to `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+
+   >[!IMPORTANT]
+   >
+   >Replace dot (.) with hyphen (-) as a prefix to `<randomnumber>`.
+
 1. Perform the steps below in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
    * Update the property auth.ims.client.secret with the Client Secret from the new OAuth integration.
    * Rename the file to `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
@@ -58,7 +63,7 @@ The below steps can be performed by the system admin. AMS customer may reach out
 1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
 1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 -->
-1. In `System/console/configMgr`, delete the old configurations for `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` and Access Token provider name `adobe-ims-similaritysearch`.
+1. In `System/console/configMgr`, the older and new configuration files gets create. Delete the older configurations for `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` and Access Token provider name `adobe-ims-similaritysearch`. Ensure that the updated configuration only is in place, rather than the older configurations.
 1. Restart the console.
 
 ## Validate the configuration {#validate-the-configuration}
@@ -75,13 +80,19 @@ After you have completed the configuration, you can use a JMX MBean to validate 
 
 The validation results are displayed in the same dialog.
 
+>[!NOTE]
+>
+>If `unsupported_grant_type` error occurs, then try installing the Granite hotfix. Refer to [migration from Service Account (JWT) to OAuth Server-to-Server credentials](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660).
+
 ## Integrate with Adobe Developer Console {#integrate-adobe-io}
 
 As a new user, when you integrate with Adobe Developer Console, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service. To integrate, you need an Adobe ID account that has administrator privileges for the organization and a Smart Content Service license purchased and enabled for your organization.
 
 To configure the Smart Content Service, follow these top-level steps:
 
-1. To generate a public key, [create a Smart Content Service](#obtain-public-certificate) configuration in [!DNL Experience Manager]. [Download a public certificate](#obtain-public-certificate) for OAuth integration.
+![Experience Manager Smart Content Service dialog to provide content service URL](assets/config-oauth.png)
+
+1. To generate a public key, [create a Smart Content Service](#oauth-config) configuration in [!DNL Experience Manager]. [Download a public certificate](#oauth-config) for OAuth integration.
 
 1. *[Not applicable if you are an existing user]* [create an integration in Adobe Developer Console](#create-adobe-i-o-integration).
 
