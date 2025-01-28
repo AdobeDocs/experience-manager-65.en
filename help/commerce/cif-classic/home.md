@@ -13,7 +13,7 @@ This page lists the self-help resources regarding AEM CIF Classic.
 
 >[!NOTE]
 >
->CIF Classic is in maintenance mode.
+>CIF Classic is deprecated.
 >
 >* New projects should use [AEM CIF](/help/commerce/cif/introduction.md).
 >* Existing CIF Classic should [migrate to AEM CIF](/help/commerce/cif/migration.md).
