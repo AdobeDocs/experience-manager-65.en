@@ -22,6 +22,37 @@ A deployment option of AEM Forms that leverages Java Enterprise Edition (JEE) se
 
 AEM Forms on the OSGi environment is standard AEM Author or AEM Publish with AEM Forms package deployed on it. You can run AEM Forms on OSGi in a single server environment, Farm, and clustered setups. Cluster setup is available only for AEM Author instances.
 
+## [Adobe Sign in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms)  
+
+A RESTful service for secure and seamless digital signature workflows. It integrates with AEM Forms using OAuth-based authentication, enabling automated signature collections and real-time tracking.
+
+## [AEM Forms Document Services 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/overview-aem-document-services)
+
+APIs provided by AEM Forms' web layer for remote consumption by HTTP-based clients, such as the forms mobile SDK.Functionalities within AEM Forms that enable the creation, assembly, distribution, and archiving of PDF documents, addition of digital signatures, and decoding of Barcoded Forms.
+
+| **Service Name**|**Description**| **Documentation Link**|
+|------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| **Forms Service**| Render PDF forms using templates and XML, integrate form data for import/export, and support fragment-based rendering. | [Forms Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/output-service) |
+| **Output Service**           | Generates documents by merging data with templates in formats like PDF, PCL, or PostScript.      | [Output Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/output-service) |
+| **Assembler Service**        | Combines, rearranges, validates, and augments PDF and XDP documents.                             | [Assembler Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/assembler-service) |
+| **ConvertPDF Service**       | Converts PDF documents to PostScript or image formats like PNG, JPEG, or TIFF.                   | [ConvertPDF Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/using-convertpdf-service) |
+| **Barcoded Forms Service**   | Extracts data from barcodes in TIFF and PDF files to automate data capture processes.             | [Barcoded Forms Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/using-barcoded-forms-service) |
+| **DocAssurance Service**     | Encrypts, decrypts, digitally signs, and applies document security policies to PDFs.              | [DocAssurance Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/overview-aem-document-services#doc-assurance-service) |
+| **PDF Generator Service**    | Converts native file formats (for example: Microsoft Word, Excel) into PDF documents.                   | [PDF Generator Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/aem-document-services-programmatically#pdfgeneratorservice) |
+
+## [Forms as a Cloud Service Communication APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction)
+
+AEM Forms as a Cloud Service provides advanced tools for managing forms and communication workflows, supporting seamless digital form creation, data capture, and personalized communications. Cloud Communication APIs provide secure on-demand and batch document generation, manipulation, validation, and integration with external systems via HTTP, ensuring streamlined and secure operations.
+
+| **Service Name**| **Description**|**Documentation Link**|
+|-------------------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| **Document Generation**        | Combine a template (XFA or PDF) with XML data to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats.  | [Document Generation documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#document-generation) |
+| **Document Manipulation**        | Combine, rearrange PDF documents. | [Document Manipulation documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation) |
+| **Document Conversion**|Convert a PDF to PDF/A and check PDF/A compliance. | [Document Conversion documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-conversion) |
+| **Document Assurance**| Add or remove signature fields, sign, certify, encrypt, decrypt, and apply usage rights to PDF documents.| [Document Assurance documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#doc-assurance) |
+| **Digital Signatures**| Integrates Adobe Sign for secure e-signing of forms and documents.| [Digital Signatures documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#digital-signatures)|
+
+
 ## [AEM Forms Workbench](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/install-workbench)
 
 A desktop application for creating, editing, and deploying workflows, as well as managing form-centric business processes. It provides integration with back-end services and systems.
@@ -30,10 +61,6 @@ A desktop application for creating, editing, and deploying workflows, as well as
 
 A template or pattern in AEM used to generate a new project with a predefined structure, facilitating standardization, quick setup, and adherence to AEM development best practices.
 
-<!--## [Asset Sharing]()
-
-The ability to share and reuse digital assets like images, documents, and fragments across forms and templates to maintain consistency and reduce duplication.-->
-
 ## [Author Instance](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/publish-process-aem-forms/publishing-unpublishing-forms)
 
 The environment where content creators and administrators design, create, and manage content before publishing it. Supports versioning, previewing, and testing.
@@ -41,10 +68,6 @@ The environment where content creators and administrators design, create, and ma
 ## [Authoring Frontend](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
 
 A user interface for authoring and managing forms within AEM Forms.
-
-<!--## Core AEM Services
-
-Fundamental services provided by AEM to deployed applications, including a JCR-compliant content repository, an OSGi service container, a workflow engine, a trust store, and a key store.-->
 
 ## [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
@@ -58,19 +81,9 @@ A module that enables businesses to create, manage, and deliver personalized cor
 
 The built-in Java Content Repository (JCR) in AEM that stores structured and unstructured data, enabling hierarchical storage of content, templates, and configurations.
 
-## [Interactive Communication](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)
-
-A custom implementation for managing highly personalized, multichannel communications. It combines data from various sources, like CRM or ERP systems, to deliver communications across formats such as web, mobile, email, and print. 
-
 ## [Data Integration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/form-data-model/data-integration)
 
 Seamless integration of external data sources, such as databases, web services, or REST APIs, into forms and workflows to enable dynamic and personalized user experiences.
-
-<!--
-## Dispatcher
-
-A caching and load balancing tool used in AEM to enhance website performance and security by caching responses, distributing load, and protecting against DoS attacks.
--->
 
 ## [Document Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/letters-correspondences/lists)
 
@@ -104,53 +117,13 @@ A collection of related forms grouped together to be presented as a single entit
 
 A stand-alone application used to design forms template in XDP form and use it in your AEM Forms to generate Document of Record.
 
-## [AEM Forms Document Services 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/overview-aem-document-services)
+## [Interactive Communication](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)
 
-Functionalities within AEM Forms that enable the creation, assembly, distribution, and archiving of PDF documents, addition of digital signatures, and decoding of Barcoded Forms.
-
-| **Service Name**|**Description**| **Documentation Link**|
-|------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| **Forms Service**| Render PDF forms using templates and XML, integrate form data for import/export, and support fragment-based rendering. | [Forms Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/output-service) |
-| **Output Service**           | Generates documents by merging data with templates in formats like PDF, PCL, or PostScript.      | [Output Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/output-service) |
-| **Assembler Service**        | Combines, rearranges, validates, and augments PDF and XDP documents.                             | [Assembler Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/assembler-service) |
-| **ConvertPDF Service**       | Converts PDF documents to PostScript or image formats like PNG, JPEG, or TIFF.                   | [ConvertPDF Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/using-convertpdf-service) |
-| **Barcoded Forms Service**   | Extracts data from barcodes in TIFF and PDF files to automate data capture processes.             | [Barcoded Forms Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/using-barcoded-forms-service) |
-| **DocAssurance Service**     | Encrypts, decrypts, digitally signs, and applies document security policies to PDFs.              | [DocAssurance Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/overview-aem-document-services#doc-assurance-service) |
-| **PDF Generator Service**    | Converts native file formats (for example: Microsoft Word, Excel) into PDF documents.                   | [PDF Generator Service documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-document-services/aem-document-services-programmatically#pdfgeneratorservice) |
-
-## [Forms as a Cloud Service Communication APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction)
-
-AEM Forms as a Cloud Service provides advanced tools for managing forms and communication workflows, supporting seamless digital form creation, data capture, and personalized communications.
-
-| **Service Name**| **Description**|**Documentation Link**|
-|-------------------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| **Document Generation**        | Combine a template (XFA or PDF) with XML data to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats.  | [Document Generation documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#document-generation) |
-| **Document Manipulation**        | Combine, rearrange PDF documents. | [Document Manipulation documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation) |
-| **Document Conversion**|Convert a PDF to PDF/A and check PDF/A compliance. | [Document Conversion documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-conversion) |
-| **Document Assurance**| Add or remove signature fields, sign, certify, encrypt, decrypt, and apply usage rights to PDF documents.| [Document Assurance documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#doc-assurance) |
-| **Digital Signatures**| Integrates Adobe Sign for secure e-signing of forms and documents.| [Digital Signatures documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#digital-signatures)|
-
-<!--
-
-## [Forms Workspace]()
-A mobile application that extends digital business processes to mobile devices, allowing users to collect and record data even when offline. It leverages device capabilities to capture photos, videos, timestamps, and other information, synchronizing the data when the device reconnects to a network.
--->
+A custom implementation for managing highly personalized, multichannel communications. It combines data from various sources, like CRM or ERP systems, to deliver communications across formats such as web, mobile, email, and print. 
 
 ## [JCR (Java Content Repository)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr)
 
 A hierarchical, standards-based repository for storing content, configurations, and metadata in AEM, supporting structured and unstructured data storage.
-
-<!--
-## LiveCycle
-
-An earlier version of AEM Forms, with legacy features for form and document automation, some of which are integrated into the AEM Forms platform.
--->
-
-<!--
-## [OSGi (Open Services Gateway initiative)]()
-
-A modular framework used in AEM for managing Java components, enabling dynamic configuration and deployment of services.
--->
 
 ## [PDF Generator](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/using-pdfg-in-aem-forms)
 
@@ -160,15 +133,6 @@ A tool in AEM Forms that converts various file formats (for example: Word, Excel
 
 The environment in AEM that serves live content to end-users. It delivers forms, pages, and other digital experiences with optimized performance.
 
-## [AEM Forms 6.5 REST APIs](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/programming-aem-forms-jee/invoking-aem-forms-jee-apis/invoking-aem-forms-using-rest)
-
-APIs provided by AEM Forms' web layer for remote consumption by HTTP-based clients, such as the forms mobile SDK.
-
-## [AEM Forms as a Cloud Service APIs](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/programming-aem-forms-jee/invoking-aem-forms-jee-apis/invoking-aem-forms-using-rest)
-
-Cloud Communication APIs provide secure on-demand and batch document generation, manipulation, validation, and integration with external systems via HTTP, ensuring streamlined and secure operations.
-
-
 ## [Rule Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components/rule-editor-core-components)
 
 A visual tool in Adaptive Forms that allows authors to define custom rules and logic for form fields, such as visibility, validation, and data prepopulation, without requiring coding expertise.
@@ -177,12 +141,6 @@ A visual tool in Adaptive Forms that allows authors to define custom rules and l
 
 A feature in AEM Forms that allows users to electronically sign forms by drawing their signature directly on the form using a mouse or touch-enabled device.
 
-<!--
-## Sling
-
-A REST-based web framework used in AEM to map request URLs to content resources, enabling efficient content rendering and delivery.
--->
-
 ## [Web Layer](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
 
 Comprises JSPs or servlets built over common and forms services, providing functionalities such as authoring front-end, form rendition and submission front-end, and REST APIs.
@@ -190,12 +148,6 @@ Comprises JSPs or servlets built over common and forms services, providing funct
 ## [Forms-centric workflow](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow)
 
 A set of automated or manual steps in AEM Forms that manage business processes, such as document approval, content publishing, or user notifications.
-
-<!--
-## Workspace
-
-A browser-based interface for users to interact with AEM Forms workflows, tasks, and approvals.
--->
 
 ## [Custom XCI (XML Configuration Information)](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/configure-forms/specifying-xci-configuration-options) 
 
@@ -213,48 +165,7 @@ A legacy technology for creating interactive and dynamic PDF forms. XFA forms al
 
 A standardized structure used to define the format and organization of XML or JSON data in forms and workflows. These schemas ensure consistent data handling and enable interoperability with external systems.
 
-<!--
-Foundation components
-e-signing
-adobe sign
-letters
-submit action
-data sources
-adaptive form block
-edge delivery services
-forms integration
-custom component 
-themes
-template 
-custom properties
-embedding
-CDN
-Dispatcher
-editors
-responsive UI
-custom functions
-package manager
-communication APIs
-UE
-Forms submission services
-Form review
-Forms Versioning
-Adobe analytics forms integration specific
--->
 
-<!--
-## **AEM Forms Foundation Components**  
-Core reusable elements within AEM Forms, built on Granite UI, enabling developers to create complex forms. They provide robust features like data bindings, field validations, and support for multilingual content.
-
-
-## **e-Signing**  
-An implementation of digital signature standards (e.g., PKCS #7) within AEM Forms, integrated with Adobe Sign APIs to ensure secure and legally binding electronic signatures.
-
--->
-
-## [Adobe Sign in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms)  
-
-A RESTful service for secure and seamless digital signature workflows. It integrates with AEM Forms using OAuth-based authentication, enabling automated signature collections and real-time tracking.
 
 ## [Letters](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/letters-correspondences/create-letter#create-a-letter-template)  
 
@@ -292,6 +203,26 @@ CSS-driven styling frameworks applied to adaptive forms, utilizing LESS/SASS for
 
 Blueprints for adaptive forms, comprising structural elements (fields, layouts) and pre-configured scripts, you can create and customize new templates or use existing out-of-the-box templates.
 
+
+## [Metadata in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/manage-form-metadata)
+Metadata enables efficient asset categorization and retrieval. AEM Forms includes predefined metadata for each asset type and allows customization. It also provides tools to create, manage, and exchange metadata seamlessly.
+
+
+
+## [Form Review](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms)  
+
+A workflow-driven feature allowing stakeholders to review adaptive forms, add annotations, and approve changes before publishing. Uses AEM Inbox and Task Management.
+
+## [Adpative Form Versioning](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/add-versioning-reviews-comments)  
+
+Capability to manage multiple versions of a form in the repository, using JCR node versioning. Ensures audit trails and easy rollback for adaptive forms.
+
+## [Adobe Analytics Forms Integration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation)
+
+Provides detailed insights into user interactions (e.g., field drop-offs, time spent per section) using Adobe Analytics, enabling data-driven optimization of form design.
+
+<!--
+
 ## **Custom Properties**  
 
 Developer-defined metadata attributes added to components or forms for advanced behaviors, accessed via Sling APIs or Groovy scripts for dynamic processing.
@@ -303,6 +234,7 @@ Integrating adaptive forms into AEM Sites or external web pages using `<iframe>`
 ## **CDN (Content Delivery Network)**  
 
 Distributed networks (e.g., Akamai) used for caching and delivering forms-related resources, ensuring high availability and faster load times for geographically distributed users.
+-->
 
 ## **Dispatcher**  
 
@@ -324,10 +256,6 @@ JavaScript-based utilities or REST microservices that provide additional logic (
 
 AEM's CRX Package Manager facilitates importing/exporting adaptive forms, data schemas, or configurations as .zip files, enabling modular deployment in distributed environments.
 
-## **Communication APIs**  
-
-REST and SOAP APIs provided by AEM Forms for operations like data pre-fill, dynamic content retrieval, or triggering workflows based on user interactions.
-
 ## **UE (User Experience)**  
 
 Design principles and optimizations applied in AEM Forms to enhance usability, including accessibility features (ARIA roles, tab navigation) and intuitive layouts.
@@ -336,14 +264,52 @@ Design principles and optimizations applied in AEM Forms to enhance usability, i
 
 Back-end services for handling form submissions, integrating with the AEM Workflow engine, third-party APIs, or direct JCR persistence.
 
-## **Form Review**  
+<!--
 
-A workflow-driven feature allowing stakeholders to review adaptive forms, add annotations, and approve changes before publishing. Uses AEM Inbox and Task Management.
+Foundation components
+e-signing
+adobe sign
+letters
+submit action
+data sources
+adaptive form block
+edge delivery services
+forms integration
+custom component 
+themes
+template 
+custom properties
+embedding
+CDN
+Dispatcher
+editors
+responsive UI
+custom functions
+package manager
+communication APIs
+UE
+Forms submission services
+Form review
+Forms Versioning
+Adobe analytics forms integration specific
 
-## **Forms Versioning**  
+-->
 
-Capability to manage multiple versions of a form in the repository, using JCR node versioning. Ensures audit trails and easy rollback for adaptive forms.
+<!--
 
-## **Adobe Analytics Forms Integration**  
+## **AEM Forms Foundation Components**  
+Core reusable elements within AEM Forms, built on Granite UI, enabling developers to create complex forms. They provide robust features like data bindings, field validations, and support for multilingual content.
 
-Provides detailed insights into user interactions (e.g., field drop-offs, time spent per section) using Adobe Analytics, enabling data-driven optimization of form design.
+
+## **e-Signing**  
+An implementation of digital signature standards (e.g., PKCS #7) within AEM Forms, integrated with Adobe Sign APIs to ensure secure and legally binding electronic signatures.
+
+## Workspace
+
+A browser-based interface for users to interact with AEM Forms workflows, tasks, and approvals.
+
+## Sling
+
+A REST-based web framework used in AEM to map request URLs to content resources, enabling efficient content rendering and delivery.
+
+-->
