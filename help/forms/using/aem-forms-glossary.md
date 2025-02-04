@@ -205,6 +205,7 @@ Blueprints for adaptive forms, comprising structural elements (fields, layouts) 
 
 
 ## [Metadata in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/manage-form-metadata)
+
 Metadata enables efficient asset categorization and retrieval. AEM Forms includes predefined metadata for each asset type and allows customization. It also provides tools to create, manage, and exchange metadata seamlessly.
 
 
