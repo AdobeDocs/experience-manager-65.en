@@ -234,7 +234,7 @@ Integrating adaptive forms into AEM Sites or external web pages using `<iframe>`
 ## **CDN (Content Delivery Network)**  
 
 Distributed networks (e.g., Akamai) used for caching and delivering forms-related resources, ensuring high availability and faster load times for geographically distributed users.
--->
+
 
 ## **Dispatcher**  
 
@@ -264,7 +264,6 @@ Design principles and optimizations applied in AEM Forms to enhance usability, i
 
 Back-end services for handling form submissions, integrating with the AEM Workflow engine, third-party APIs, or direct JCR persistence.
 
-<!--
 
 Foundation components
 e-signing
@@ -292,10 +291,6 @@ Forms submission services
 Form review
 Forms Versioning
 Adobe analytics forms integration specific
-
--->
-
-<!--
 
 ## **AEM Forms Foundation Components**  
 Core reusable elements within AEM Forms, built on Granite UI, enabling developers to create complex forms. They provide robust features like data bindings, field validations, and support for multilingual content.
