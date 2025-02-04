@@ -6,9 +6,12 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 ---
+
 # Editing an External SPA within Adobe Experience Manager {#editing-external-spa-within-aem}
 
 When deciding what level of integration you would like to have between your external SPA and Adobe Experience Manager (AEM), you often need to be able to edit and view the SPA within AEM.
+
+{{ue-over-spa}}
 
 ## Overview {#overview}
 

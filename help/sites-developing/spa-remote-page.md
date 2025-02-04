@@ -6,9 +6,12 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 ---
+
 # The RemotePage Component {#remote-page-component}
 
 When deciding what level of integration you would like to have between your external SPA and AEM, it is often clear that you need to be able to view and edit the SPA within AEM. The RemotePage Component is a custom page component just for this purpose.
+
+{{ue-over-spa}}
 
 ## Overview {#overview}
 
