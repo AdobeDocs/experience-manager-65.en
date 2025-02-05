@@ -3,12 +3,22 @@ title: AEM Forms Glossary
 description: AEM Forms Glossary provides a comprehensive list of key terms, definitions, and concepts used in Adobe Experience Manager Forms (AEM Forms), helping users understand and work with adaptive forms and related features.
 feature: Adaptive Forms
 role: Admin, User, Developer
+hidefromtoc: yes
+hide: yes
 ---
 # AEM Forms Glossary
 
 ## [Adaptive Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form)
 
 Dynamic, responsive forms that adjust their layout and presentation based on the user's device and input, enhancing user experience across various platforms. Includes conditional logic, dynamic data binding, and rule-based behavior.
+
+## [Adpative Form Versioning](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/add-versioning-reviews-comments)  
+
+Capability to manage multiple versions of a form in the repository, using JCR node versioning. Ensures audit trails and easy rollback for adaptive forms.
+
+## [Adobe Analytics Forms Integration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation)
+
+Provides detailed insights into user interactions (e.g., field drop-offs, time spent per section) using Adobe Analytics, enabling data-driven optimization of form design.
 
 ## [AEM Forms Add-On Package](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
 
@@ -69,6 +79,10 @@ The environment where content creators and administrators design, create, and ma
 
 A user interface for authoring and managing forms within AEM Forms.
 
+## [Adaptive Form Block](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-references/form-components)  
+
+An encapsulation unit that logically groups related components and metadata, enabling dynamic data handling and easy scalability in multi-step forms.
+
 ## [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
 Out-of-the-box reusable building blocks for creating forms, including form fields, layout containers, buttons, and other interactive elements.
@@ -81,9 +95,21 @@ A module that enables businesses to create, manage, and deliver personalized cor
 
 The built-in Java Content Repository (JCR) in AEM that stores structured and unstructured data, enabling hierarchical storage of content, templates, and configurations.
 
+## [Custom Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/customize-adaptive-forms-core-components) 
+
+A bespoke component extending AEM Forms functionality, developed using Sling Models, Sightly (HTL), and Java. Typically used for unique business logic or advanced client-side interactivity.
+
+## [Custom XCI (XML Configuration Information)](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/configure-forms/specifying-xci-configuration-options) 
+
+In Adobe Experience Manager (AEM) Forms, a Custom XCI (XML Configuration Information) file allows administrators to define specific rendering properties for forms and documents. By configuring XCI settings in the administration console, you can override system defaults with custom options, ensuring tailored processing and presentation of forms.
+
 ## [Data Integration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/form-data-model/data-integration)
 
 Seamless integration of external data sources, such as databases, web services, or REST APIs, into forms and workflows to enable dynamic and personalized user experiences.
+
+## [Data Sources](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/form-data-model/configure-data-sources)  
+
+Interfaces for integrating external data into forms, including JDBC for relational databases, REST endpoints for web services, and OData for SAP systems. Managed via AEM Forms Data Integration framework.
 
 ## [Document Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/letters-correspondences/lists)
 
@@ -92,6 +118,18 @@ Reusable components of documents, such as headers, footers, disclaimers, or clau
 ## [Document of Record (DoR)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)
 
 A feature in AEM Forms that generates a non-editable, archival version of a submitted form, typically in PDF format, preserving the exact content and layout as a record of the transaction.
+
+## [Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview)  
+
+Optimized content delivery for AEM Forms ensuring reduced latency for assets like forms, themes, and client libraries where where authors can update and publish content quickly.
+
+## [Forms Integration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/form-data-model/data-integration)  
+
+Involves connecting AEM Forms to enterprise systems (e.g., SAP, Salesforce) using OSGi bundles and connectors, supporting bidirectional data flows and real-time updates.
+
+## [Form Review](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms)  
+
+A workflow-driven feature allowing stakeholders to review adaptive forms, add annotations, and approve changes before publishing. Uses AEM Inbox and Task Management.
 
 ## [Form Data Model (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model)
 
@@ -117,6 +155,10 @@ A collection of related forms grouped together to be presented as a single entit
 
 A stand-alone application used to design forms template in XDP form and use it in your AEM Forms to generate Document of Record.
 
+## [Forms-centric workflow](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow)
+
+A set of automated or manual steps in AEM Forms that manage business processes, such as document approval, content publishing, or user notifications.
+
 ## [Interactive Communication](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)
 
 A custom implementation for managing highly personalized, multichannel communications. It combines data from various sources, like CRM or ERP systems, to deliver communications across formats such as web, mobile, email, and print. 
@@ -124,6 +166,14 @@ A custom implementation for managing highly personalized, multichannel communica
 ## [JCR (Java Content Repository)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr)
 
 A hierarchical, standards-based repository for storing content, configurations, and metadata in AEM, supporting structured and unstructured data storage.
+
+## [Letters](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/letters-correspondences/create-letter#create-a-letter-template)  
+
+Generated customer communications leveraging AEM Forms Document Services. Letters are created using a combination of XDP templates, data models, and reusable fragments, ensuring scalability in high-volume scenarios.
+
+## [Metadata in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/manage-form-metadata)
+
+Metadata enables efficient asset categorization and retrieval. AEM Forms includes predefined metadata for each asset type and allows customization. It also provides tools to create, manage, and exchange metadata seamlessly.
 
 ## [PDF Generator](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/using-pdfg-in-aem-forms)
 
@@ -141,17 +191,21 @@ A visual tool in Adaptive Forms that allows authors to define custom rules and l
 
 A feature in AEM Forms that allows users to electronically sign forms by drawing their signature directly on the form using a mouse or touch-enabled device.
 
+## [Submit Action in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions)  
+
+Server-side or client-side actions executed upon form submission. Examples include REST API calls, invoking a workflow, or writing data to a JCR (Java Content Repository).
+
+## [Themes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)  
+
+CSS-driven styling frameworks applied to adaptive forms, utilizing LESS/SASS for preprocessors. Themes ensure compliance with branding guidelines and accessibility standards, you can customize a theme, change its design elements, layout, colors, typography, and sometimes the underlying code.
+
+## [Template](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components)  
+
+Blueprints for adaptive forms, comprising structural elements (fields, layouts) and pre-configured scripts, you can create and customize new templates or use existing out-of-the-box templates.
+
 ## [Web Layer](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
 
 Comprises JSPs or servlets built over common and forms services, providing functionalities such as authoring front-end, form rendition and submission front-end, and REST APIs.
-
-## [Forms-centric workflow](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow)
-
-A set of automated or manual steps in AEM Forms that manage business processes, such as document approval, content publishing, or user notifications.
-
-## [Custom XCI (XML Configuration Information)](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/configure-forms/specifying-xci-configuration-options) 
-
-In Adobe Experience Manager (AEM) Forms, a Custom XCI (XML Configuration Information) file allows administrators to define specific rendering properties for forms and documents. By configuring XCI settings in the administration console, you can override system defaults with custom options, ensuring tailored processing and presentation of forms.
 
 ## [XDP (XML Data Package)](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/get-xdp-pdf-documents-aem)
 
@@ -164,63 +218,6 @@ A legacy technology for creating interactive and dynamic PDF forms. XFA forms al
 ## [XML or JSON Schema](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/creating-adaptive-form#create-an-adaptive-form-based-on-xml-or-json-schema)
 
 A standardized structure used to define the format and organization of XML or JSON data in forms and workflows. These schemas ensure consistent data handling and enable interoperability with external systems.
-
-
-
-## [Letters](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/letters-correspondences/create-letter#create-a-letter-template)  
-
-Generated customer communications leveraging AEM Forms Document Services. Letters are created using a combination of XDP templates, data models, and reusable fragments, ensuring scalability in high-volume scenarios.
-
-## [Submit Action in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions)  
-
-Server-side or client-side actions executed upon form submission. Examples include REST API calls, invoking a workflow, or writing data to a JCR (Java Content Repository).
-
-## [Data Sources](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/form-data-model/configure-data-sources)  
-
-Interfaces for integrating external data into forms, including JDBC for relational databases, REST endpoints for web services, and OData for SAP systems. Managed via AEM Forms Data Integration framework.
-
-## [Adaptive Form Block](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-references/form-components)  
-
-An encapsulation unit that logically groups related components and metadata, enabling dynamic data handling and easy scalability in multi-step forms.
-
-## [Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview)  
-
-Optimized content delivery for AEM Forms ensuring reduced latency for assets like forms, themes, and client libraries where where authors can update and publish content quickly.
-
-## [Forms Integration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/form-data-model/data-integration)  
-
-Involves connecting AEM Forms to enterprise systems (e.g., SAP, Salesforce) using OSGi bundles and connectors, supporting bidirectional data flows and real-time updates.
-
-## [Custom Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/customize-adaptive-forms-core-components) 
-
-A bespoke component extending AEM Forms functionality, developed using Sling Models, Sightly (HTL), and Java. Typically used for unique business logic or advanced client-side interactivity.
-
-## [Themes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)  
-
-CSS-driven styling frameworks applied to adaptive forms, utilizing LESS/SASS for preprocessors. Themes ensure compliance with branding guidelines and accessibility standards, you can customize a theme, change its design elements, layout, colors, typography, and sometimes the underlying code.
-
-## [Template](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components)  
-
-Blueprints for adaptive forms, comprising structural elements (fields, layouts) and pre-configured scripts, you can create and customize new templates or use existing out-of-the-box templates.
-
-
-## [Metadata in AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/manage-form-metadata)
-
-Metadata enables efficient asset categorization and retrieval. AEM Forms includes predefined metadata for each asset type and allows customization. It also provides tools to create, manage, and exchange metadata seamlessly.
-
-
-
-## [Form Review](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms)  
-
-A workflow-driven feature allowing stakeholders to review adaptive forms, add annotations, and approve changes before publishing. Uses AEM Inbox and Task Management.
-
-## [Adpative Form Versioning](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/add-versioning-reviews-comments)  
-
-Capability to manage multiple versions of a form in the repository, using JCR node versioning. Ensures audit trails and easy rollback for adaptive forms.
-
-## [Adobe Analytics Forms Integration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation)
-
-Provides detailed insights into user interactions (e.g., field drop-offs, time spent per section) using Adobe Analytics, enabling data-driven optimization of form design.
 
 <!--
 
