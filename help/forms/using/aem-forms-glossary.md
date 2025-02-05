@@ -5,6 +5,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 hidefromtoc: yes
 hide: yes
+exl-id: 1b327871-c861-48c8-aac6-cff864398bee
 ---
 # AEM Forms Glossary
 
