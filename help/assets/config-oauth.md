@@ -133,7 +133,7 @@ A public certificate lets you authenticate your profile on the Adobe Developer C
    >
    >The URL provided as [!UICONTROL Service URL] is not accessible via the browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com](https://status.adobe.com).
 
-1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`. Moreover, you are no longer required to upload this certificate in Adobe developer console. 
+1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`. Moreover, you are no longer required to upload this certificate in the Adobe Developer console. 
 
    ![A representation of the settings created for the smart tagging service](assets/smart-tags-download-public-cert1.png)
 
@@ -153,7 +153,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
 1. Add/modify the **[!UICONTROL Credential Name]** as required. Click **[!UICONTROL Next]**.
 
-1. Select the product profile **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save Configured API]**. The OAuth API gets added under the connected credentials for the further use. You can copy the [!UICONTROL API key (Client ID)] or [!UICONTROL Generate access token] from it.
+1. Select the product profile **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save Configured API]**. The OAuth API gets added to the connected credentials for the further use. You can copy the [!UICONTROL API key (Client ID)] or [!UICONTROL Generate access token] from it.
 <!--
 1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
 
