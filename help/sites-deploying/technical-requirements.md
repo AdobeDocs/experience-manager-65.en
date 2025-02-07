@@ -514,8 +514,9 @@ For Windows x86:
 >* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 >* A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. Programmatically access the bundled version only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator service does not support Microsoft&reg; Windows 10.
->* PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert `.VSD` and `.VSDX` files.
->* PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert `.VSD` and `.VSDX` files.
+>* PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
+>* PDF Generator fails to convert files using Microsoft&reg; Project 2019.
+>* If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >
 
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
