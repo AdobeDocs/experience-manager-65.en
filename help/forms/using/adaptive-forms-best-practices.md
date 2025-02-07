@@ -206,7 +206,8 @@ Consider the following best practices to overcome performance issues with large 
 * It is recommended to create adaptive forms using XSD form data model even when converting an XFA to adaptive form, if possible.
 * Include only those fields and panels in adaptive forms that capture information from the user. Consider keeping static content minimal or use URLs to open them in a separate window.
 * While every form is designed for a specific purpose, there are some common segments in most forms. For example, personal details, address, employment details, and so on. Create [adaptive form fragments](/help/forms/using/adaptive-form-fragments.md) for common form elements and sections and use them across forms. You can also save a panel in an existing form as a fragment. Any change in a fragment is reflected in all associated adaptive forms. It promotes collaborative authoring as multiple authors can work simultaneously on different fragments that make up a form.
-
+    
+    * Consider creating form fragments even for non-reusable sections during form authoring. As forms grow in size and complexity, breaking them down into fragments can significantly simplify the authoring process and make the form easier to maintain. This approach allows you to focus on smaller, more manageable pieces of the form rather than dealing with the entire form at once.
     * Similar to adaptive forms, it is recommended that all fragment-specific styling and custom scripts are defined in the client library using the fragment container dialog. Also, try creating self-sufficient fragments that do not depend on objects outside it.
     * Avoid using cross-fragments scripting. If there's any object outside the fragment that you must refer to, try to make that object a part of the parent form. If the object must still reside in another fragment, refer to it by its name in the script.
 
