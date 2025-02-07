@@ -480,7 +480,9 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >In addition,:
 >
->- PDF Generator supports only the 32-bit Retail version of Microsoft&reg; Office Professional Plus and other software required for conversion.
+>- PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
+>- The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
+>- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >- PDF Generator does not support Microsoft&reg; Office 365.
 >- PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
 >- The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
@@ -488,7 +490,12 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >- PDF Generator service does not support Microsoft&reg; Windows 10.
 >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019.
->- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
+
+PDF Generator supports only the 32-bit version of Microsoft® Office Professional Plus and other software required for conversion.
+
+The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
+
+If a Microsoft® Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
