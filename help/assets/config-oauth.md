@@ -63,7 +63,7 @@ The below steps can be performed by the system admin in **CRXDE**. AMS customer 
 1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
 1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 -->
-1. In `System/console/configMgr`, the older and new configuration files gets create. Delete the older configurations for `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` and Access Token provider name `adobe-ims-similaritysearch`. Ensure that the updated configuration only is in place, rather than the older configurations.
+1. In `System/console/configMgr`, you can see both older and new configuration files. Delete the older configurations for `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` and Access Token provider name `adobe-ims-similaritysearch`. Ensure that the updated configuration only is in place, rather than the older configurations.
 1. Restart the console.
 
 ## Validate the configuration {#validate-the-configuration}
@@ -90,7 +90,7 @@ As a new user, when you integrate with Adobe Developer Console, the [!DNL Experi
 
 To configure the Smart Content Service, follow these top-level steps:
 
-![Experience Manager Smart Content Service dialog to provide content service URL](assets/config-oauth.png)
+<!--![Experience Manager Smart Content Service dialog to provide content service URL](assets/config-oauth.png)-->
 
 1. To generate a public key, [create a Smart Content Service](#oauth-config) configuration in [!DNL Experience Manager]. [Download a public certificate](#oauth-config) for OAuth integration.
 
