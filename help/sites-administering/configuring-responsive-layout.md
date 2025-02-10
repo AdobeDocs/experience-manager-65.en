@@ -352,6 +352,7 @@ container
 ```
 
 >[!TAB Example Resulting HTML]
+
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
   <div id="container-c9955c233c" class="cmp-container">
