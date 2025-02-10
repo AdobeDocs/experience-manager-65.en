@@ -1,27 +1,30 @@
 ---
 title: Configuring Layout Container and Layout Mode
-
 description: Learn how to configure Layout Container and Layout Mode.
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 ---
+
 # Configuring Layout Container and Layout Mode{#configuring-layout-container-and-layout-mode}
 
-[Responsive Layout](/help/sites-authoring/responsive-layout.md) is a mechanism for realizing [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design). This allows the user to create web pages that have a layout and dimensions dependent on the devices their users use.
+Learn how to configure Layout Container and Layout Mode.
 
->[!NOTE]
+>[!TIP]
 >
->This can be compared with the [Mobile Web](/help/sites-developing/mobile-web.md) mechanisms, which use adaptive web design (primarily for the classic UI).
+>This document provides an overview of responsive design for site administrators and developers describing how features are realized in AEM.
+>
+>For content authors, details of how to use responsive design features on a content page are available in the document [Responsive layout for your content pages.](/help/sites-authoring/responsive-layout.md)
+
+## Overview {#overview}
+
+[Responsive Layout](/help/sites-authoring/responsive-layout.md) is a mechanism for realizing [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design). This allows the user to create web pages that have a layout and dimensions dependent on the devices their users use.
 
 AEM realizes responsive layout for your pages using a combination of mechanisms:
 
@@ -31,7 +34,7 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
 
     * The default **Layout Container** component is defined under:
 
-      /libs/wcm/foundation/components/responsivegrid
+      `/libs/wcm/foundation/components/responsivegrid`
 
     * You can define layout containers:
 
@@ -47,10 +50,6 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
   This lets you create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content is rendered using the Emulator.
 
->[!CAUTION]
->
->Although the **Layout Container** component is available in the classic UI, its full functionality is only available in the touch-enabled UI.
-
 With these responsive grid mechanisms you can:
 
 * Use breakpoints (that indicate device grouping) to define differing content behavior based on device layout.
@@ -58,9 +57,17 @@ With these responsive grid mechanisms you can:
 * Use horizontal snap to grid (place components into the grid, resize as required, define when they should collapse/reflow to be side-by-side or above/below).
 * Realize column control.
 
+>[!TIP]
+>
+>Adobe provides [GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive layout as a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example, when creating static HTML mock-ups for a future AEM site.
+
 >[!NOTE]
 >
 >In an out-of-the-box installation, responsive layout has been configured for the [We.Retail reference site](/help/sites-developing/we-retail.md). [Activate the Layout Container component](#enable-the-layout-container-component-for-page) for other pages.
+
+>[!CAUTION]
+>
+>Although the **Layout Container** component is available in the classic UI, its full functionality is only available in the touch-enabled UI.
 
 ## Configuring the Responsive Emulator {#configuring-the-responsive-emulator}
 
@@ -146,7 +153,7 @@ Breakpoints are located inside the `<jcr:content>` section of the `.context.html
 
 An example definition:
 
-```xml
+```html
 <cq:responsive jcr:primaryType="nt:unstructured">
   <breakpoints jcr:primaryType="nt:unstructured">
     <phone jcr:primaryType="nt:unstructured" title="{String}Phone" width="{Decimal}768"/>
@@ -184,13 +191,13 @@ The following two examples illustrate the definition:
 
 * **HTL:**
 
-  ```xml
+  ```html
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
   ```
 
 * **JSP:**
 
-  ```
+  ```html
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -202,7 +209,7 @@ AEM uses LESS to generate parts of the necessary CSS, these need to be included 
 
 You will also must create a [client library](https://experienceleague.adobe.com/docs/) to provide additional configuration and function calls. The following LESS extract is an example of the minimum that you must add to your project:
 
-```java
+```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
 /* maximum amount of grid cells to be provided */
@@ -309,3 +316,60 @@ You can configure the number of columns available for each specific instance of 
     * Components that can be added to the current component:
 
         * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+
+## Nested Responsive Grids {#nested-responsive-grids}
+
+There may be occasions when you find it necessary to nest responsive grids to support your project's needs. However, keep in mind that Adobe's recommended best practice is to keep the structure as flat as possible.
+
+When you can not avoid using nested responsive grids, make sure:
+
+* All containers (containers, tabs, accordions, etc.) have the property `layout = responsiveGrid`.
+* Do not mix the property `layout = simple` in the container hierarchy. 
+
+This includes all the structural containers from the page template.
+
+The column number of the inner container should never be greater than that of the outer container. The following example satisfies this condition. While the column number of the outer container is 8 for the default (desktop) screen, the column number of the inner container is 4.
+
+>[!BEGINTABS]
+
+>[!TAB Example Node Structure]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Example Resulting HTML]
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+>[!ENDTABS]

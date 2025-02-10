@@ -1,22 +1,29 @@
 ---
 title: Responsive layout for your content pages
-description: Adobe Experience Manager lets you realize a responsive layout for your pages.
-
+description: Adobe Experience Manager lets you realize a responsive layout for your pages by using the Layout Container component.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 ---
+
 # Responsive Layout{#responsive-layout}
 
-AEM lets you have a responsive layout for your pages by using the **Layout Container** component.
+Adobe Experience Manager lets you realize a responsive layout for your pages by using the **Layout Container** component.
 
-This provides a paragraph system that lets you position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), which lets you create and edit your responsive layout dependent on device.
+>[!TIP]
+>
+>This document provides an overview of the features of the Layout Container available to content authors.
+>
+>For site administrators and developers, details of how to configure the layout container for your sites is described in the document [Configuring Layout Container and Layout Mode.](/help/sites-administering/configuring-responsive-layout.md)
+
+## Overview {#overview}
+
+The **Layout Container** component provides a paragraph system that lets you position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), which lets you create and edit your responsive layout dependent on device.
 
 The layout container:
 
