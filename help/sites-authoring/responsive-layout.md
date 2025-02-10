@@ -19,7 +19,7 @@ Adobe Experience Manager lets you realize a responsive layout for your pages by 
 >
 >This document provides an overview of the features of the Layout Container available to content authors.
 >
->For site administrators and developers, details of how to configure the layout container for your sites is described in the document [Configuring Layout Container and Layout Mode.](/help/sites-administering/configuring-responsive-layout.md)
+>For site administrators and developers, details of how to configure the layout container for your sites is described in the document [Configuring Layout Container and Layout Mode.](/help/sites-authoring/responsive-layout.md)
 
 ## Overview {#overview}
 
