@@ -5,6 +5,7 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
+exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 ---
 # Technical Requirements{#technical-requirements}
 
