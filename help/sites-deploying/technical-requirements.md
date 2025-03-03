@@ -2,7 +2,6 @@
 title: Technical Requirements
 description: A list of the supported client and server platforms for Adobe Experience Manager.
 topic-tags: platform
-exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
