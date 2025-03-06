@@ -277,7 +277,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
    <td><code>keyframe</code></td>
    <td>The target number of frames between keyframes. Calculate this value so it can generate a keyframe every 2-10 seconds. For example, at 30 frames per second, the keyframe interval should be 60-300.<br /> <br /> Lower keyframe intervals improve stream seeking and stream switching behavior for adaptive video encodings and may also improve the quality for videos that have lot of motion. However, because keyframes increase a file's size, a lower keyframe interval usually results in lower overall video quality at a given bitrate.</td>
    <td><code>String</code></td>
-   <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for DASH or HLS is 60-90. (To use DASH for your videos, it must first be enabled on your account. See <a href="/help/assets/video.md#enable-dash">Enable DASH on your account</a>.)</p> </td>
+   <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for DASH or HLS is 60-90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
