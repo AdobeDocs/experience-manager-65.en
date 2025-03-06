@@ -549,8 +549,6 @@ Some of the use cases to consider for adding multiple caption and audio tracks t
 
 All [video formats supported in Dynamic Media](/help/assets/assets-formats.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple caption and audio tracks.
 
-Multiple caption and audio track capability is available for your Dynamic Media account through a feature toggle that must be enabled (turned on) by Adobe Customer Support.
-
 ### Add multiple caption and audio tracks to your video {#add-msma}
 
 Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
@@ -1384,7 +1382,7 @@ You invoke the servlet by performing a `GET` operation at `/dmSample/dynamicmedi
 | `manifestType` | Optional. The parameter can be DASH or HLS. If it is not passed, it defaults to DASH. |
 | `onlyIfPublished` | Optional. If passed, the `manifestUrl` is returned only if the video is published.  |
 
-In this example, let us assume the following setup: 
+In this example, assume the following setup: 
 
 * The company is `samplecompany`.
 * The authoring instance is `http://sample-aem-author.com`.

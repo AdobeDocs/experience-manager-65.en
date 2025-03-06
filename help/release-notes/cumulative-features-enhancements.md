@@ -80,7 +80,7 @@ If you are installing or planning to use the latest software for your AEM 6.5 Fo
 
   You do not need to navigate to the asset location and view its properties to perform these operations.
 * **Dynamic Media _Snapshot_** - Experiment with test images or Dynamic Media URLs, to see the output of different image modifiers, and Smart Imaging optimizations for file size (with WebP and AVIF delivery), network bandwidth, and Device Pixel Ratio. See [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
-* **DASH streaming with Dynamic Media** - New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled). Available now for all regions, [enabled by way of a support ticket](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
+* **DASH streaming with Dynamic Media** - New protocol (DASH - Dynamic Adaptive Streaming over HTTP) launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled). Available now for all regions.
 * **Integration of Experience Manager Sites and Content Fragments with Assets Next-Generation Dynamic Media** - Users of Experience Manager Assets as a Cloud Service Next-Generation Dynamic Media can now use those cloud-hosted assets for authoring and delivery with on-premise or Managed Services instances of Experience Manager Sites 6.5. 
 
 ### [!DNL Forms]
@@ -96,13 +96,11 @@ If you are installing or planning to use the latest software for your AEM 6.5 Fo
 
 ## AEM 6.5, Service Pack 16&mdash;February 23, 2023
 
-New protocol DASH (Dynamic Adaptive Streaming over HTTP) supports launched for adaptive bitrate streaming in Dynamic Media video delivery (with CMAF [Common Media Application Format] enabled).
+New protocol DASH (Dynamic Adaptive Streaming over HTTP) launched for adaptive bitrate streaming in Dynamic Media video delivery (with CMAF [Common Media Application Format] enabled).
 
 * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos.
 * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry.
-* Available now in Asia-Pacific and North America (to be enabled by way of a support ticket); coming soon in Europe-Middle East-Africa.
-
-See [Enable DASH on your account](/help/assets/video.md#enable-dash).
+* Available now in Asia-Pacific and North America; coming soon in Europe-Middle East-Africa.
 
 ### [!DNL Forms]
 
