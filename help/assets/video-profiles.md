@@ -295,7 +295,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
    <td><code>audioBitrateCustom</code></td>
    <td>Set value to <code>true</code> to force a constant bitrate for the audio stream, if supported by audio codec.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for DASH or HLS is <code>false</code>. (To use DASH for your videos, it must first be enabled on your account. See <a href="/help/assets/video.md#enable-dash">Enable DASH on your account</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for DASH or HLS is <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
