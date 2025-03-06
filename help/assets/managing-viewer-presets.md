@@ -462,10 +462,6 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
      * If the browser does not support DASH, then HLS streaming is used, second.
      * If the browser does not support either DASH or HLS, then progressive playback is used, lastly.
 
-   >[!NOTE]
-   >
-   >To see and use the **[!UICONTROL dash]** option, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](/help/assets/video.md#enable-dash).
-
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 
    Many components in the visual editor have a detailed description associated with it. These descriptions appear within blue boxes when you expand a component to reveal its associated parameters.
