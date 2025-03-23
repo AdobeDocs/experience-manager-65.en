@@ -3,7 +3,7 @@ title: Style Adobe Experience Manager CIF Core Components
 description: Learn how to style Adobe Experience Manager CIF Core Components. The tutorial covers how Client-Side Libraries or clientlibs are used to deploy and manage CSS and JavaScript for an Adobe Experience Manager (AEM) Commerce implementation. This tutorial will also cover how the ui.frontend module and a webpack project are integrated into the end-to-end build process.
 sub-product: Commerce
 topics: Development
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 feature: Commerce Integration Framework
 kt: 3456
