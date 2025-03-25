@@ -42,10 +42,9 @@ Once the process has been created with the "Execute Script" Service activity def
 
 Once a process has been created with the Execute Script service included, one can then use this script to create XML. One would write the scripts described below in the text box described in the Add a script to the process with the `Execute Script` Service section above.
 
->[!TIP]
+>[!NOTE]
 >
-> Use the `Execute Script` Service component to write custom Java code directly within a process. However, if the task involves more than a few lines of Java code, create a custom service component for better maintainability and performance.
-
+> If the JAVA code exceeds 10 lines, it is recommended to add the code to custom DSCs (Document Service Components) rather than writing it directly in the process. Custom DSCs improve maintainability, reusability, and performance by keeping workflows lightweight. Referencing these components in workflows ensures better execution efficiency and prevents potential slowdowns caused by processing large code blocks within the workflow.
 
 **About the Execute Script Service's Technology**
 
