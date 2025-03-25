@@ -17,9 +17,7 @@ role: Developer
 ---
 # Mobile Web{#mobile-web}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM provides several tools that enable you to develop sites for mobile devices and to integrate your content into mobile applications.
 

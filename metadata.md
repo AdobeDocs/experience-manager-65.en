@@ -5,7 +5,7 @@ git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 solution: Experience Manager, Experience Manager 6.5
 feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
 type: Documentation
-version: 6.5
+version: Experience Manager 6.5
 index: y
 recommendations: noDisplay
 ---

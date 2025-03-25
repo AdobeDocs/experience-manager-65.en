@@ -13,9 +13,7 @@ role: Admin
 ---
 # Mobile with Content Sync{#mobile-with-content-sync}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!NOTE]
 >

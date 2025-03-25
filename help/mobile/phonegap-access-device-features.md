@@ -12,9 +12,7 @@ role: Admin
 ---
 # Access Device Features{#access-device-features}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 ## Building Adobe Experience Manager (AEM) components that access device features {#building-aem-components-that-access-device-features}
 

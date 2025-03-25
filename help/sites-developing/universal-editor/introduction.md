@@ -29,6 +29,16 @@ The Universal Editor is a service that works in tandem with AEM to author conten
 
 ![Author flow using the Universal Editor](assets/author-flow.png)
 
+## Requirements {#requirements}
+
+The Universal Editor is supported by:
+
+* AEM 6.5 (service pack 21 or 22 plus a feature pack)
+  * Both on-premises and AMS hosting are supported.
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (release `2023.8.13099` or higher)
+
+This document focuses on AEM 6.5 support of the Universal Editor.
+
 ## Setup {#setup}
 
 In order to test the Universal Editor you will need to:
@@ -51,7 +61,7 @@ Make sure that you are running at least service pack 21 or 22 for AEM 6.5. You c
 
 Install the **Universal Editor Feature Pack for AEM 6.5** [available on Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
-If you are already running service pack 23 or higher, the feature pack is not necesary.
+If you are already running service pack 23 or higher, the feature pack is not necessary.
 
 ### Configure Services {#configure-services}
 
@@ -91,8 +101,15 @@ The feature pack installs a number of new packages for which additional configur
    * In the **Universal Editor Opening Mapping** field, provide the paths for which the Universal Editor is opened.
    * In the **Sling:resourceTypes which shall be opened by Universal Editor** field, provide a list of resources which are opened directly by the Universal Editor.
 1. Click **Save**.
+1. Check your [externalizer configuration](/help/sites-developing/externalizer.md) and ensure at a minimum you have the local, author, and publish environments set as in the following example.
 
-AEM will open the Universal Editor for pages based on this configuration.
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
+
+Once those configuration steps are complete, AEM will open the Universal Editor for pages in the following order.
 
 1. AEM will check the mappings under `Universal Editor Opening Mapping` and if the content is under any paths defined there, the Universal Editor is opened for it.
 1. For content not under paths defined in `Universal Editor Opening Mapping`, AEM checks if the `resourceType` of the content matches those defined in **Sling:resourceTypes which shall be opened by Universal Editor** and if the content matches one of those types, the Universal Editor is opened for it at `${author}${path}.html`.

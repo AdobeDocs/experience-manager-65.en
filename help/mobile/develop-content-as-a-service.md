@@ -11,9 +11,7 @@ role: User
 ---
 # Content Delivery{#content-delivery}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Mobile Apps should be able to use all content in AEM as needed to deliver the targeted app experience.
 

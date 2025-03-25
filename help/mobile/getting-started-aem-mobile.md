@@ -14,9 +14,7 @@ role: User
 ---
 # Getting Started with Adobe Experience Manager Mobile{#getting-started-with-aem-mobile}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!CAUTION]
 >
