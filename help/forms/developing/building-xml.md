@@ -40,7 +40,12 @@ Once the process has been created with the "Execute Script" Service activity def
 
 ## Creating XML Using the Execute Script Service {#create-xml-execute-script-service}
 
-Once a process has been created with the Execute Script service included, one can then use this script to create XML. One would write the scripts described below in the text box described in the Add a Script to the Process with the `Execute Script` Service section above.
+Once a process has been created with the Execute Script service included, one can then use this script to create XML. One would write the scripts described below in the text box described in the Add a script to the process with the `Execute Script` Service section above.
+
+>[!TIP]
+>
+> Use the `Execute Script` Service component to write custom Java code directly within a process. However, if the task involves more than a few lines of Java code, create a custom service component for better maintainability and performance.
+
 
 **About the Execute Script Service's Technology**
 
