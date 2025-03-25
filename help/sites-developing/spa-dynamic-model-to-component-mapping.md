@@ -10,13 +10,12 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 ---
+
 # Dynamic Model to Component Mapping for SPAs{#dynamic-model-to-component-mapping-for-spas}
 
 This document describes how the dynamic model to component mapping occurs in the JavaScript SPA SDK for Adobe Experience Manager (AEM).
 
->[!NOTE]
->
->The SPA Editor is the recommended solution for projects that require SPA framework-based client-side rendering (for example, React or Angular).
+{{ue-over-spa}}
 
 ## ComponentMapping Module {#componentmapping-module}
 

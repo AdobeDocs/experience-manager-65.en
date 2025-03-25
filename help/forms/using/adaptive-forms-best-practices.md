@@ -206,7 +206,8 @@ Consider the following best practices to overcome performance issues with large 
 * It is recommended to create adaptive forms using XSD form data model even when converting an XFA to adaptive form, if possible.
 * Include only those fields and panels in adaptive forms that capture information from the user. Consider keeping static content minimal or use URLs to open them in a separate window.
 * While every form is designed for a specific purpose, there are some common segments in most forms. For example, personal details, address, employment details, and so on. Create [adaptive form fragments](/help/forms/using/adaptive-form-fragments.md) for common form elements and sections and use them across forms. You can also save a panel in an existing form as a fragment. Any change in a fragment is reflected in all associated adaptive forms. It promotes collaborative authoring as multiple authors can work simultaneously on different fragments that make up a form.
-
+    
+    * Consider creating form fragments even for non-reusable sections during form authoring. As forms grow in size and complexity, breaking them down into fragments can significantly simplify the authoring process and make the form easier to maintain. This approach allows you to focus on smaller, more manageable pieces of the form rather than dealing with the entire form at once.
     * Similar to adaptive forms, it is recommended that all fragment-specific styling and custom scripts are defined in the client library using the fragment container dialog. Also, try creating self-sufficient fragments that do not depend on objects outside it.
     * Avoid using cross-fragments scripting. If there's any object outside the fragment that you must refer to, try to make that object a part of the parent form. If the object must still reside in another fragment, refer to it by its name in the script.
 
@@ -218,6 +219,36 @@ Consider the following best practices to overcome performance issues with large 
     * Mark a value in a lazy loaded panel as Use Value Globally if that value is used in some other part the form so that the value is available for use when the containing panel is unloaded.
     * Consider writing visibility rules for fragments that should show or hide based on a condition.
 * Set the value of the **Number of calls per request** in the **Apache Sling Main Servlet** to a fairly large number. It enables the Forms server to allow additional calls. The configuration displays a default value of 1500. The value, 1500 calls, is for other Experience Manager components like Sites and Assets. The default value set of adaptive forms is 20000. If you encounter the `too many calls` error in logs or the form fails to render, try increasing the value to a large number to resolve the issue. If the number of calls are exceeding 20000, that means the form is complex and it might take some time to render the form in browser. This only happens for the first time the form is loaded, after that the form is cached and once the form is cached, there is no significant impact on performance.
+
+### DOM Size Considerations and Browser Performance
+
+When creating large and complex adaptive forms, it's important to consider the impact of DOM size on rendering and performance:
+
+* **DOM Size Impact**: While there's no hard limit for DOM size in AEM Forms, excessive DOM size can significantly impact performance, especially when handling lazy-loaded fragments. Large DOM structures require more memory and processing time to render and manipulate.
+
+* **Browser Rendering Differences**: Rendering performance can vary significantly across different browsers and devices. Some browser rendering engines process dynamic DOM updates differently, with varying approaches to style recalculations, reflows, and repaints. This is particularly noticeable with large, dynamically loaded content. In some browsers, each significant DOM manipulation can trigger a complete layout recalculation and repaint of the page, which intensifies performance issues with large or complex forms.
+
+* **Performance Factors**: Several factors affect lazy loading performance:
+   * The size and complexity of the fragments
+   * The CSS styles applied to elements
+   * The number of reflows triggered by dynamic updates
+   * The device and browser capabilities
+
+* **Real-world Impact**: In observed cases, forms with DOM sizes around 400 KB have experienced significant rendering delays of up to 15 seconds on certain browsers. These delays are not solely due to fragment size but also related to CSS processing and page reflows triggered during dynamic content insertion.
+
+**Best Practices for Managing DOM Size:**
+
+* For static content, consider using AEM Content Fragments instead of dynamically inserting large HTML blocks via lazy loading. This approach can reduce reflows, repaints, and JavaScript execution time, improving overall page load performance.
+
+* When fragments must be dynamic and lazy-loaded, break large fragments into smaller, more manageable fragments and load only the required sections as needed.
+
+* Implement progressive disclosure patterns where appropriate, revealing additional form fields only when required based on user input.
+
+* Test your forms across multiple browsers and devices, especially when using lazy-loaded fragments, to ensure consistent performance across different environments.
+
+* Monitor and optimize the CSS used in your forms, as extensive or poorly structured CSS can significantly increase rendering time, especially during dynamic content updates.
+
+For more technical details on how different browser rendering engines handle DOM updates, reflows, and repaints, consider exploring browser engine documentation such as those provided by various browser vendors.
 
 ### Prefilling adaptive forms {#prefilling-adaptive-forms}
 

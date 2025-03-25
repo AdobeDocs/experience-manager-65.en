@@ -12,9 +12,7 @@ role: Admin
 ---
 # Manage App Tile{#manage-app-tile}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 The **`Manage App`** tile on the App Dashboard lets you edit details about the Application. To open the Details page, click the **`Manage App`** tile's details link. From within the **`Manage App`** page, you can edit the PhoneGap Application Configuration (config.xml) settings and prepare your application for submission to the various application stores.
 

@@ -6,9 +6,12 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 ---
+
 # Editing an External SPA within Adobe Experience Manager {#editing-external-spa-within-aem}
 
 When deciding what level of integration you would like to have between your external SPA and Adobe Experience Manager (AEM), you often need to be able to edit and view the SPA within AEM.
+
+{{ue-over-spa}}
 
 ## Overview {#overview}
 
@@ -74,7 +77,7 @@ The `initializationAsync` can optionally accept an `options` object as a paramet
 
 * `path` - On initialization, the model at the defined path is fetched and stored in the `ModelStore`. This can be used to fetch the `rootModel` at initialization if needed.
 * `modelClient` - Allows providing a custom client responsible for fetching the model.
-* `model` - A `model` object passed as a parameter typically populated when [using SSR.](spa-ssr.md)
+* `model` - A `model` object passed as a parameter typically populated when using SSR.
 
 ### AEM Authorable Leaf Components {#authorable-leaf-components}
 
@@ -369,4 +372,3 @@ The following reference material may be helpful to understand SPAs in the contex
 * [SPA Reference Materials (API references)](spa-reference-materials.md)
 * [SPA Blueprint and PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [SPA Model Routing](spa-routing.md)
-* [SPA and Server-Side Rendering](spa-ssr.md)

@@ -536,7 +536,7 @@ user-guide-title: AEM 6.5
     + [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
     + [Choosing a persistence type for an AEM Forms installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
     + Install AEM Forms on OSGi {#osgi-installation}
-      + [Supported platforms for AEM forms on OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements.html)
+      + [Supported platforms for AEM forms on OSGi](/help/forms/using/supported-platforms.md)
       + [Install and configure document services](/help/forms/using/install-configure-document-services.md)
       + [Install and configure data capture capabilities](/help/forms/using/installing-configuring-aem-forms-osgi.md)
       + [Install and Configure Forms-centric workflow on OSGi](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
@@ -878,7 +878,7 @@ user-guide-title: AEM 6.5
     + [Designer FormCalc Reference](https://www.adobe.com/go/learn_aemforms_formCalc_65)
     + [Using Scribble Signature in HTML5 forms](/help/forms/using/scribble-signature.md)
     + [Changing Page Zero content in Designer](/help/forms/using/changing-page-zero-content-designer.md)
-    + [Accessibility Best Practices]{#accessibility-best-practices}
+    + Accessibility Best Practices {#accessibility-best-practices}
       + [Introduction](/help/forms/using/introduction-accessibility-forms-designer.md)
       + [Best practices for creating forms](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
       + [Techniques for testing form accessibility](/help/forms/using/techniques-for-testing-form-accessibility.md)
@@ -1211,6 +1211,8 @@ user-guide-title: AEM 6.5
     + [Configuring and troubleshooting an AEM Forms on JEE server cluster](/help/forms/developing/configure-server-cluster.md)
     + [Generating and working with Hashes in dynamic PDF forms](/help/forms/developing/hashing-forms.md)
     + [Passing credentials using WS-Security headers](/help/forms/developing/passing-credentials.md)
+  + Glossary {#aem-forms-glossary}
+    +[AEM Forms Glossaries](/help/forms/using/aem-forms-glossary.md)
 + Content and Commerce {#commerce}
   + [Introduction and overview](/help/commerce/cif/introduction.md)
   + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
@@ -1441,7 +1443,6 @@ user-guide-title: AEM 6.5
       + [The RemotePage Component](/help/sites-developing/spa-remote-page.md)
       + [Editing an External SPA within AEM](/help/sites-developing/spa-edit-external.md)
       + [Composite Components in SPAs](/help/sites-developing/spa-composite-component.md)
-      + [SPA and Server-Side Rendering](/help/sites-developing/spa-ssr.md)
       + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html)
       + [Launch Integration](/help/sites-developing/spa-launch.md)
       + [SPA Reference Materials](/help/sites-developing/spa-reference-materials.md)

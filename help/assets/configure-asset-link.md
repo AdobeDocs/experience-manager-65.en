@@ -80,7 +80,7 @@ To manually configure Experience Manager:
 
    To add each `Client ID`, click `+`. Click **[!UICONTROL Save]** after adding all IDs.
 
-1. In **[!UICONTROL Adobe Granite OAuth Application and Provider]** configuration, inspect the existing **[!UICONTROL Adobe Granite OAuth Authentication Handler]** instances. If you locate an instance with the `Config ID` value of `ims`, use it for the instructions in this procedure. Otherwise, click `+` to create a configuration instance. Set the following property values and click **[!UICONTROL Save]**. 
+1. In **[!UICONTROL Adobe Granite OAuth Application and Provider]** configuration, inspect the existing **[!UICONTROL Adobe Granite OAuth Application and Provider]** instances. If you locate an instance with the `Config ID` value of `ims`, use it for the instructions in this procedure. Otherwise, click `+` to create a configuration instance. Set the following property values and click **[!UICONTROL Save]**. 
   
    * [!UICONTROL Client ID]: Do not change
    * [!UICONTROL Client Secret]: Do not change

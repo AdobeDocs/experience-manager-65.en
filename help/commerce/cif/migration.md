@@ -12,7 +12,7 @@ This guide helps identify the areas you need to update for the Experience Manage
 
 ## CIF Add-On
 
-CIF add-on is available for AEM 6.5 via the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). It is compatible and provides the same features as the CIF add-on for Experience Manager as a Cloud Service.
+CIF add-on is available for AEM 6.5 via the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16). It is compatible and provides the same features as the CIF add-on for Experience Manager as a Cloud Service.
 
 See [Getting started with AEM Content and Commerce](getting-started.md).
 

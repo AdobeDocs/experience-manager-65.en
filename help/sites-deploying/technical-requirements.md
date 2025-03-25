@@ -2,10 +2,10 @@
 title: Technical Requirements
 description: A list of the supported client and server platforms for Adobe Experience Manager.
 topic-tags: platform
-exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
+exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 ---
 # Technical Requirements{#technical-requirements}
 
@@ -211,6 +211,7 @@ Adobe Experience Manager works with the following server platforms for productio
     >* zlib.x86-64 (1.2.7-17)
     >* libxcb.x86_64 (1.13-1.el7)
     >* libXau.x86_64 (1.0.8-2.1.el7)
+    >* glibc-locale.x86_64 (2.17 or later)
 
 1. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
 1. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
@@ -506,17 +507,18 @@ For Windows x86:
 >In addition,
 >
 >* PDF Generator requires a 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Acrobat 2017 version 17.011.30078 to perform the conversion.
->* PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
->* PDF Generator supports only the 32-bit Retail version of Microsoft&reg; Office Professional Plus and other software required for conversion on the Windows operating system.
+>* PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
+>* The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
+>* If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >* PDF Generator supports the 32-bit and 64-bit versions of OpenOffice on the Linux&reg; operating system.
 >* PDF Generator does not support Microsoft&reg; Office 365.
+>* PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
 >* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 >* A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. Programmatically access the bundled version only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator service does not support Microsoft&reg; Windows 10.
->* PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert `.VSD` and `.VSDX` files.
->* PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert `.VSD` and `.VSDX` files.
->
-
+>* PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
+>* PDF Generator fails to convert files using Microsoft&reg; Project 2019.
+        
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, Microsoft&reg; Windows&reg; 10, or Windows&reg; 11

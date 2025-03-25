@@ -12,9 +12,7 @@ role: User
 ---
 # Best Practices {#best-practices}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Building an AEM Mobile On-Demand Services App is different from building an app that runs in the Cordova (or PhoneGap) shell directly. The developers should be familiar with the:
 

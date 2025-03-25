@@ -12,9 +12,7 @@ role: Admin
 ---
 # Setting Your Referrer Filter to Allow Empty{#setting-your-referrer-filter-to-allow-empty}
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 To allow the Adobe Experience Manager (AEM) Mobile Application Viewer to view apps on your Author instance, you must set your HTML referrer filter to 'allow empty'.
 

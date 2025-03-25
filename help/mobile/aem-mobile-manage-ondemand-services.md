@@ -14,9 +14,7 @@ role: Admin
 
 This page explains Previewing with Preflight app.
 
->[!NOTE]
->
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 The following actions are performed on the application as a whole.
 
