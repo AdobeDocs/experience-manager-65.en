@@ -368,7 +368,7 @@ When using AEM as a Cloud Service, there may be instances where you need to roll
 To perform a shallow rollout of a single page without its subpages using curl, follow these steps:
 
 1. Modify your existing curl command by changing the parameter from `type=deep` to `type=page`.
-2. Use the following syntax for your curl command:
+1. Use the following syntax for your curl command:
 
 ```shell
 curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand" \
@@ -376,9 +376,12 @@ curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand
    -d operation=asyncRollout \
    -d cmd=rollout \
    -d path="/content/<your-path>"
-   ```
-3. Ensure that you replace `<token>` with your actual authorization token and `<instance-url>` with your specific instance URL.
-4. Replace `/content/<your-path>` with the path of the specific page you wish to rollout.
+```
+
+Please be aware of the following:
+
+1. Ensure that you replace `<token>` with your actual authorization token and `<instance-url>` with your specific instance URL.
+1. Replace `/content/<your-path>` with the path of the specific page you wish to rollout.
 
 By setting `type=page`, the command targets only the specified page, excluding any  subpages from being rolled out. This adjustment aligns with how rollouts are managed through the AEM GUI when selecting individual pages.
 
