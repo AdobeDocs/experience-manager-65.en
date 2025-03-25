@@ -445,6 +445,21 @@ For Windows x86:
 
 ### Requirements for AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
+#### To run PDFG tests on an SLES Linux&reg; machine
+
+When executing PDFG tests on an SLES Linux&reg; machine, it is mandatory to set the `OPENSSL_CONF` environment variable before running the tests inside the container. This ensures proper configuration for OpenSSL. Perform the following steps to execute tests:
+
+1. **Set the Environment Variable**
+    Start the container and set the environment variable using the following command:
+    `export OPENSSL_CONF=/etc/ssl`
+    Alternatively, you can set the environment variable while starting the container:
+    `-e OPENSSL_CONF=/etc/ssl`
+1. **Verify the Configuration**
+    To confirm that the environment variable is set correctly, execute the following command:
+
+    `env | grep -i openssl | wc -l`
+The output should be 1, indicating that the variable is correctly set.
+
 ### Software support for PDF Generator {#software-support-for-pdf-generator}
 
 <table>
