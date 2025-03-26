@@ -1433,7 +1433,7 @@ user-guide-title: AEM 6.5
       + [Getting Started using React](/help/sites-developing/spa-getting-started-react.md)
       + [Implementing a React Component for SPA](/help/sites-developing/spa-implementing-react-component.md)
       + [Getting Started using Angular](/help/sites-developing/spa-getting-started-angular.md)
-      + [SPA Deep Dives](/help/sites-developing/spa-deep-dives.md)
+      + [SPA Deep Dives](/help/sites-developing/spa-deep-dives-gems.md)
       + [Developing SPAs for AEM](/help/sites-developing/spa-architecture.md)
       + [SPA Editor Overview](/help/sites-developing/spa-overview.md)
       + [SPA Blueprint](/help/sites-developing/spa-blueprint.md)
