@@ -461,20 +461,9 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 
 ### Requirements for PDF Generator
 
-#### To run PDFG tests on an SLES Linux&reg; machine
-
-When executing PDFG tests on an SLES Linux&reg; machine, it is mandatory to set the `OPENSSL_CONF` environment variable before running the tests inside the container. This ensures proper configuration for OpenSSL. Perform the following steps to execute tests:
-
-1. **Set the Environment Variable**
-    Start the container and set the environment variable using the following command:
-    `export OPENSSL_CONF=/etc/ssl`
-    Alternatively, you can pass the environment variable while starting the container:
-    `-e OPENSSL_CONF=/etc/ssl`
-2. **Verify the Configuration**
-    To confirm that the environment variable is set correctly, execute the following command:
-
-    `env | grep -i openssl | wc -l`
-The output should be 1, indicating that the variable is correctly set.
+* For testing PDF conversions on SUSE® Linux® server, ensure you have the following configurations:
+    * Navigate to the `/etc/profile` file and set the `OpenOffice_PATH` environment variable to `/opt/openoffice4` to configure it globally.
+    * Install the 32-bit version of OpenOffice on the Linux® operating system
 
 ### Software support for PDF Generator {#software-support-for-pdf-generator}
 
@@ -517,6 +506,7 @@ The output should be 1, indicating that the variable is correctly set.
 >- The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >- PDF Generator does not support Microsoft&reg; Office 365.
+>- PDF Generator supports the 32-bit version of OpenOffice on the Linux&reg; operating system.
 >- PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
 >- The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 >- A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))"

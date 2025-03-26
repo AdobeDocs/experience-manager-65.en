@@ -154,13 +154,14 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 >
 >For more information, see the [MongoDB for Adobe Experience Manager page](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
+<!--
 >[!NOTE]
 >
 >Supported relational databases as listed above are third-party software and are not included in the AEM licensing package.
 >
 >To run AEM 6.5 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care assists qualifying issues related to the usage of relational databases with AEM 6.5.
 >
->**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**
+>**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**-->
 
 ### Servlet Engines / Application Servers {#servlet-engines-application-servers}
 
@@ -445,20 +446,9 @@ For Windows x86:
 
 ### Requirements for AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-#### To run PDFG tests on an SLES Linux&reg; machine
-
-When executing PDFG tests on an SLES Linux&reg; machine, it is mandatory to set the `OPENSSL_CONF` environment variable before running the tests inside the container. This ensures proper configuration for OpenSSL. Perform the following steps to execute tests:
-
-1. **Set the Environment Variable**
-    Start the container and set the environment variable using the following command:
-    `export OPENSSL_CONF=/etc/ssl`
-    Alternatively, you can set the environment variable while starting the container:
-    `-e OPENSSL_CONF=/etc/ssl`
-1. **Verify the Configuration**
-    To confirm that the environment variable is set correctly, execute the following command:
-
-    `env | grep -i openssl | wc -l`
-The output should be 1, indicating that the variable is correctly set.
+* For testing PDF conversions on SUSE® Linux® server, ensure you have the following configurations:
+    * Navigate to the `/etc/profile` file and set the `OpenOffice_PATH` environment variable to `/opt/openoffice4` to configure it globally.
+    * Install the 32-bit version of OpenOffice on the Linux® operating system
 
 ### Software support for PDF Generator {#software-support-for-pdf-generator}
 
@@ -525,7 +515,7 @@ The output should be 1, indicating that the variable is correctly set.
 >* PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
 >* The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >* If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
->* PDF Generator supports the 32-bit and 64-bit versions of OpenOffice on the Linux&reg; operating system.
+>* PDF Generator supports the 32-bit version of OpenOffice on the Linux&reg; operating system.
 >* PDF Generator does not support Microsoft&reg; Office 365.
 >* PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
 >* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
