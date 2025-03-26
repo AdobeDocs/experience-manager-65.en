@@ -24,6 +24,24 @@ This article lists the critical fixes implemented to address known issues, impro
     <td><strong>Fixed issues</strong></td>
   </tr>
   <tr>
+    <td>March 26, 2025</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/jboss/adobe-aem-forms-jee-hotfix-6.5.22.0-win-jboss.tar.gz">Hotfix for AEM Service Pack 6.5.22.0 on Windows for JBoss JEE server </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/jboss/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-jboss.tar.gz">Hotfix for AEM Service Pack 6.5.22.0 on Linux for JBoss JEE server </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/weblogic/adobe-aem-forms-jee-hotfix-6.5.22.0-win-weblogic.tar.gz">Hotfix for AEM Service Pack 6.5.22.0 on Windows for Weblogic JEE server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/weblogic/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-weblogic.tar.gz">Hotfix for AEM Service Pack 6.5.22.0 on Linux for Weblogic JEE server</a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/websphere/adobe-aem-forms-jee-hotfix-6.5.22.0-win-websphere.tar.gz">Hotfix for AEM Service Pack 6.5.22.0 on Windows for Websphere JEE server </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/websphere/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-websphere.tar.gz">Hotfix for AEM Service Pack 6.5.22.0 on Linux for Websphere JEE server</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>Hot fixes for AEM Forms JEE servers. (CQ-4351234)</li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
     <td>July 10, 2024</td>
      <td>
      <ul>
