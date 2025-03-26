@@ -589,14 +589,20 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6522}
 
+* If the HTML to PDF conversion fails on SLES 15 SP6 Linux® server, with the error: `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`. Perform the following steps to resolve the issue:
+  1. Start the container and set the `OPENSSL_CONF` environment variable using the following command:
+    `export OPENSSL_CONF=/etc/ssl`
+    Alternatively, you can set the environment variable while starting the container:
+    `-e OPENSSL_CONF=/etc/ssl`
+  1. Restart the server.
 * After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
 
   1. Stop the locators, if they are running.
-  1. Stop the AEM Server. 
-  1. Go to the `<AEM_Forms_Installation>/lib/caching/lib`. 
-  1. Remove all the Geode patch files except `geode-*-1.15.1.2.jar`. Confirm that only the Geode jars with `version 1.15.1.2` are present.
-  1. Open the command prompt in administrator mode.  
-  1. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
+  2. Stop the AEM Server. 
+  3. Go to the `<AEM_Forms_Installation>/lib/caching/lib`. 
+  4. Remove all the Geode patch files except `geode-*-1.15.1.2.jar`. Confirm that only the Geode jars with `version 1.15.1.2` are present.
+  5. Open the command prompt in administrator mode.  
+  6. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
 
 * If a user tries to preview a draft letter with saved XML data, it gets stuck in `Loading` state for some specific letters. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (FORMS-14521)
   
