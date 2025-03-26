@@ -331,12 +331,12 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
 >[!NOTE]
 >
 > For Linux&reg; based server, the required runtime dependencies are:
-> * glibc.x86_64 (2.17-196)
-> * libX11.x86_64 (1.6.7-4)
-> * zlib.x86-64 (1.2.7-17)
-> * libxcb.x86_64 (1.13-1.el7)
-> * libXau.x86_64 (1.0.8-2.1.el7) 
-> * glibc-locale.x86_64 ( 2.17 or greater)
+> - glibc.x86_64 (2.17-196)
+> - libX11.x86_64 (1.6.7-4)
+> - zlib.x86-64 (1.2.7-17)
+> - libxcb.x86_64 (1.13-1.el7)
+> - libXau.x86_64 (1.0.8-2.1.el7) 
+> - glibc-locale.x86_64 ( 2.17 or greater)
 
 #### Virtualized environment {#virtualized-environment}
 
