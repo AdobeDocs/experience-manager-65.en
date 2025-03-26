@@ -461,9 +461,9 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 
 ### Requirements for PDF Generator
 
-* For testing PDF conversions on SUSE® Linux® server, ensure you have the following configurations:
-    * Navigate to the `/etc/profile` file and set the `OpenOffice_PATH` environment variable to `/opt/openoffice4` to configure it globally.
-    * Install the 32-bit version of OpenOffice on the Linux® operating system
+- For testing PDF conversions on SUSE® Linux® server, ensure you have the following configurations:
+    - Navigate to the `/etc/profile` file and set the `OpenOffice_PATH` environment variable to `/opt/openoffice4` to configure it globally.
+    - Install the 32-bit version of OpenOffice on the Linux® operating system
 
 ### Software support for PDF Generator {#software-support-for-pdf-generator}
 
