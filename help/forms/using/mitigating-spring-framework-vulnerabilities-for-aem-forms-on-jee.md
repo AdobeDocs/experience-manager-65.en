@@ -10,56 +10,49 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 ---
 
-# Mitigating for Spring Framework vulnerabilties for AEM Forms on JEE
+# Mitigating Spring Framework Vulnerabilities for AEM Forms on JEE
 
-This document helps address two critical Spring Framework vulnerabilities affecting AEM Forms on JEE:
+This document provides guidance on addressing two critical Spring Framework vulnerabilities that affect AEM Forms on JEE:
 
 - **[CVE-2024-38819](https://spring.io/security/cve-2024-38819)**: Path traversal vulnerability in functional web frameworks
 - **[CVE-2024-38820](https://spring.io/security/cve-2024-38820)**: Spring Framework DataBinder Case Sensitive Match Exception
 
+## Affected Versions
 
-## Vulnerability Impact Analysis
+- Adobe Experience Manager 6.5 Forms on JEE 
+- Versions AEM 6.5 Forms GA to 6.5.22.0
 
-### Affected Components̨
-
-- **Impacted**: Experience Manager 6.5 Forms on JEE (versions 6.5 GA to 6.5.22.0)
-- **Not Impacted**:
-  - Experience Manager Forms Workbench
-  - Experience Manager Forms as a Cloud Service
-
-
-## Resolution Options
+## Resolution 
 
 ### Version-Specific Solutions
 
 | AEM Forms Version | Required Action |
 |-------------------|-----------------|
 | 6.5.22.0 | [Install the hotfix](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md) |
-| 6.5.17.0 - 6.5.21.0 | [Use manual mitigation steps](#manual-mitigation-steps) |
-| 6.5 - 6.5.16.0 | [Install the latest service pack](/help/release-notes/release-notes.md) and [implement the appropriate solution based on your updated service pack version](#version-specific-solutions). |
+| 6.5.17.0 - 6.5.21.0 | [Apply manual mitigation steps](#manual-mitigation-steps) |
+| 6.5 - 6.5.16.0 | 1. [Install the latest service pack](/help/release-notes/release-notes.md)<br>2. [Implement the appropriate solution](#version-specific-solutions) based on your updated version |
 
-> **Note**: AEM Forms provides support for last 6 service packs. Users with older versions should upgrade to latest service pack and install the hot fix. 
+> **Note**: AEM Forms officially supports only the six most recent service packs. Users on older versions should first upgrade to the latest service pack and then install the required hotfix.
 
+## Deployment Considerations
 
-## Deployment-Specific Considerations
+### For Clustered Environments
 
-### Cluster Deployment
+When working with a clustered deployment:
 
-If you are using a clustered environment:
+- Apply JAR file replacements (Step #4) on **all nodes** in the cluster
+- Maintain consistency by using identical JAR versions across all servers
+- Complete updates on all nodes before initiating any service restarts
+- Implement a coordinated restart strategy to minimize system downtime
 
-- Perform Step #4 (replacing JAR files) on **all nodes** in the cluster
-- Ensure identical versions of the JAR files are used across all servers
-- Update all nodes before restarting any services to maintain system integrity
-- Follow a coordinated restart procedure to minimize downtime
+### For Single Node Environments
 
-### Single Node Deployment
+When working with a standalone deployment:
 
-If you are using a single node deployment:
-
-- The process is simplified as there are no locator servers to manage
-- Skip any steps related to starting or configuring Locator Servers
-- Follow all other steps as described above, particularly the JAR replacement and manifest updates
-- Restart your application server after completing all updates
+- Follow a simplified process as there are no locator servers to manage
+- Omit any steps related to locator server configuration or startup
+- Complete all other steps as instructed, especially JAR replacements and manifest updates
+- Restart your application server after implementing all changes
 
 ## Manual Mitigation Steps
 
