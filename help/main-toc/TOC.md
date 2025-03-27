@@ -1205,6 +1205,7 @@ user-guide-title: AEM 6.5
     + [PDF generation fails to print a large number of PDFs on WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
     + [How to properly restart AEM SDK](/help/forms/using/restart-aem-sdk.md)
     + [PaperCapture service fails to perform OCRs on PDFs](/help/forms/using/papercapture-service-resolution.md)
+    + [Mitigating Path traversal vulnerability in functional web frameworks for AEM Forms on JEE](/help/forms/using/mitigating-path-traversal-vulnerability.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
     + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)
