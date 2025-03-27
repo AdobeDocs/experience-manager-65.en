@@ -24,7 +24,7 @@ This article lists the critical fixes implemented to address known issues, impro
     <td><strong>Fixed issues</strong></td>
   </tr>
   <tr>
-    <td>March 26, 2025</td>
+    <td>March 26, 2025 </br> </br> To install this fix, follow the instructions <a href="https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions#download-and-install-for-jee-service-pack"> to install Service Pack on an AEM Form on JEE environment</a>.</td>
      <td>
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/jboss/adobe-aem-forms-jee-hotfix-6.5.22.0-win-jboss.tar.gz">Hotfix for AEM Service Pack 6.5.22.0 on Windows for JBoss JEE server </a> </li>
@@ -37,7 +37,7 @@ This article lists the critical fixes implemented to address known issues, impro
      </td>
     <td>
     <ul>
-    <li>Hot fixes for AEM Forms JEE servers. (CQ-4351234)</li>
+    <li>Mitigating Path traversal vulnerability in functional web frameworks for AEM Forms on JEE. (FORMS-19164)</li>
     </ul>
     </td>    
   </tr>
