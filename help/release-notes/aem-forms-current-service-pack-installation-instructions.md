@@ -131,6 +131,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 >
 >* After installing AEM Forms on JEE service pack, you need to remove the Forms add-on package from `crx-repository\install` folder before restarting the appserver. Download the latest Forms add-on package from the [Software Distribution portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 >* It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
+>* For [Hotfix for Mitigating Spring Framework Vulnerabilities for AEM Forms on JEE](/help/release-notes/aem-forms-hotfix.md), When deploying in a cluster environment, it is essential to ensure that locators are started using JDK 17. 
 
 +++
 
