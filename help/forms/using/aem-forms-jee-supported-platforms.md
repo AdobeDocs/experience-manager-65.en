@@ -461,10 +461,10 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 
 ### Requirements for PDF Generator
 
-- For testing PDF conversions on SUSE® Linux® server, ensure you have the following configurations:
+- For testing PDF conversions on SUSE® Linux® (SLES 15 SP6 or later) server, ensure you have the following configurations:
     - Navigate to the `/etc/profile` file and set the `OpenOffice_PATH` environment variable to `/opt/openoffice4` to configure it globally. 
-    - Install the 32-bit version of OpenOffice on the Linux® operating system. 
-
+    - Install the 32-bit version of OpenOffice.
+    
 ### Software support for PDF Generator {#software-support-for-pdf-generator}
 
 <table>
@@ -502,7 +502,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >In addition,:
 >
->- PDF Generator requires a 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Acrobat 2017 version 17.011.30078 to perform the conversion.
+>- PDF Generator requires a 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
 >- PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
 >- The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
