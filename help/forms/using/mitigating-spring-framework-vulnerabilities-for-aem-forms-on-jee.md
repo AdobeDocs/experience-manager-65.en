@@ -28,7 +28,7 @@ This document provides guidance on addressing two critical Spring Framework vuln
 
 | AEM Forms Version | Required Action |
 |-------------------|-----------------|
-| 6.5.22.0 | 1. [Download the hotfix for your environment](help/release-notes/aem-forms-hotfix.md). </br> 2. To install this fix, follow the instructions to [install Service Pack on an AEM Form on JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).|
+| 6.5.22.0 | 1. [Download the hotfix for your environment](/help/release-notes/aem-forms-hotfix.md). </br> 2. To install this fix, follow the instructions to [install Service Pack on an AEM Form on JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).|
 | 6.5.17.0 - 6.5.21.0 | [Apply manual mitigation steps](#manual-mitigation-steps). |
 | 6.5 - 6.5.16.0 | 1. [Install the latest service pack](/help/release-notes/release-notes.md)<br>2. [Implement the appropriate solution](#version-specific-solutions) based on your updated version. |
 
