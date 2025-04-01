@@ -311,6 +311,11 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td><p>Service packs, cumulative patches, and critical security updates</p> </td>
   </tr>
   <tr>
+   <td><p>SUSE&reg; Linux&reg; Enterprise Server 15 SP6 (64-bit)</p> </td>
+   <td><p>A: Supported</p> </td>
+   <td><p>Service packs, cumulative patches, and critical security updates</p> </td>
+  </tr>
+  <tr>
    <td>Oracle Linux&reg; 7 Update 3 (64-bit)</td>
    <td>A: Supported</td>
    <td>Service packs, cumulative patches, and critical security updates</td>
@@ -322,6 +327,16 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
   </tr>
  </tbody>
 </table>
+
+>[!NOTE]
+>
+> For Linux&reg; based server, the required runtime dependencies are:
+> - glibc.x86_64 (2.17-196)
+> - libX11.x86_64 (1.6.7-4)
+> - zlib.x86-64 (1.2.7-17)
+> - libxcb.x86_64 (1.13-1.el7)
+> - libXau.x86_64 (1.0.8-2.1.el7) 
+> - glibc-locale.x86_64 ( 2.17 or greater)
 
 #### Virtualized environment {#virtualized-environment}
 
@@ -349,7 +364,7 @@ You can run AEM Forms on JEE on a physical machine or a virtual environment. How
 Consider the following exceptions while choosing a platform to set up your AEM Forms on JEE server.
 
 1. AEM Forms on JEE do not support IBM&reg; WebSphere&reg; with MySQL.
-1. AEM Forms on JEE do not support and JBoss&reg; on SUSE&reg; Linux&reg; Enterprise Server 12. Only IBM&reg; WebSphere&reg; is supported on SUSE&reg; Linux&reg; Enterprise Server 12.
+1. AEM Forms on JEE do not support JBoss&reg; on SUSE&reg; Linux&reg; Enterprise Server 12. Only IBM&reg; WebSphere&reg; is supported on SUSE&reg; Linux&reg; Enterprise Server 12.
 1. AEM Forms on JEE do not support any JDK with JBoss&reg; other than Oracle Java&trade; SE.
 1. AEM Forms on JEE do not support any JDK with IBM&reg; WebSphere&reg; other than IBM&reg; JDK.
 1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Forms on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
@@ -443,6 +458,13 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 - Cordova Android&trade; 6.0.0
 - Cordova Windows 4.4.3
 
+
+### Requirements for PDF Generator
+
+- For testing PDF conversions on SUSE® Linux® server, ensure you have the following configurations:
+    - Navigate to the `/etc/profile` file and set the `OpenOffice_PATH` environment variable to `/opt/openoffice4` to configure it globally.
+    - Install the 32-bit version of OpenOffice on the Linux® operating system
+
 ### Software support for PDF Generator {#software-support-for-pdf-generator}
 
 <table>
@@ -484,6 +506,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >- The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >- PDF Generator does not support Microsoft&reg; Office 365.
+>- PDF Generator supports the 32-bit version of OpenOffice on the Linux&reg; operating system.
 >- PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
 >- The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 >- A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))"
@@ -835,6 +858,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 
 -->
+
+
+### Release 6.5.22.0 (Nov 29, 2024)
+
+| Added Support | Removed Support | Deprecated Support |
+| -------------- | --------------- | ------------------- |
+| SUSE&reg; Linux&reg; Enterprise Server 15 SP6 (64-bit) | |  |
+
 
 ### Release 6.5.19.1 (Dec 15, 2023)
 
