@@ -46,9 +46,6 @@ Once a process has been created with the Execute Script service included, one ca
 >
 > If the JAVA script code exceeds 10 lines, it is recommended to add the code to custom DSCs (Document Service Components) rather than writing it directly in the process. Custom DSCs improve maintainability, reusability, and performance by keeping workflows lightweight. Referencing these components in workflows ensures better execution efficiency and prevents potential slowdowns caused by processing large code blocks within the workflow.
 
->[!NOTE]
->
-> If the JAVA script code exceeds 10 lines, it is recommended to add the code to custom DSCs (Document Service Components) rather than writing it directly in the process. Custom DSCs improve maintainability, reusability, and performance by keeping workflows lightweight. Referencing these components in workflows ensures better execution efficiency and prevents potential slowdowns caused by processing large code blocks within the workflow.
 
 **About the Execute Script Service's Technology**
 
