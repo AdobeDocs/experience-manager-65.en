@@ -8,8 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
+exl-id: f704b58a-7bd8-401e-8d7e-2cc3b580c570
 ---
-
 # Mitigating Spring Framework Vulnerabilities for AEM Forms on JEE
 
 This document provides guidance on addressing two critical Spring Framework vulnerabilities that affect AEM Forms on JEE:
@@ -117,4 +117,4 @@ When working with a standalone deployment:
 
 1. Restart Servers:
    - Start the Locator Servers using JDK 17
-   - Start the Application Servers using the same JDK version (JDK 8 or JDK 11) that was previously used. 
+   - Start the Application Servers using the same JDK version (JDK 8 or JDK 11) that was previously used.
