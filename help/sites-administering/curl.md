@@ -363,12 +363,12 @@ curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination
 
 ### How to perform a shallow rollout {#shallow-rollout}
 
-When using AEM as a Cloud Service, there may be instances where you need to rollout only a single page without including its subpages. The issue is that the typical curl command for rolling out pages might inadvertently include subpages if not configured correctly. This section provides guidance on how to adjust the curl command to achieve a shallow rollout of a specified page and exclude any subpages from being propagated.
+When using AEM as a Cloud Service, there may be instances where you need to rollout only a single page without including its subpages. If not configured correctly, the typical curl command for rolling out pages might inadvertently include subpages. This section guides you on how to adjust the curl command to achieve a shallow rollout of a specified page and exclude any subpages from being propagated.
 
-To perform a shallow rollout of a single page without its subpages using curl, follow these steps:
+To perform a shallow rollout, follow these steps:
 
-1. Modify your existing curl command by changing the parameter from `type=deep` to `type=page`.
-1. Use the following syntax for your curl command:
+1. Modify the existing curl command by changing the parameter from `type=deep` to `type=page`.
+1. Use the following syntax for the curl command:
 
 ```shell
 curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand" \
@@ -378,14 +378,12 @@ curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand
    -d path="/content/<your-path>"
 ```
 
-Please be aware of the following:
+Also, ensure the following:
 
 1. Ensure that you replace `<token>` with your actual authorization token and `<instance-url>` with your specific instance URL.
 1. Replace `/content/<your-path>` with the path of the specific page you wish to rollout.
 
-By setting `type=page`, the command targets only the specified page, excluding any subpages from being rolled out. This adjustment aligns with how rollouts are managed through the AEM GUI when selecting individual pages.
-
-This solution enables precise control over content deployment within AEM as a Cloud Service, ensuring that only intended changes are propagated across environments.
+By setting `type=page`, the command targets only the specified page, excluding any subpages. As such, this configuration enables precise control over content deployment, ensuring that only the intended changes are propagated across environments. Furthermore, this adjustment also aligns with how rollouts are managed through the AEM GUI when selecting individual pages.
 
 ### Workflows {#workflows}
 
