@@ -363,7 +363,7 @@ curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination
 
 ### How to perform a shallow rollout {#shallow-rollout}
 
-When using AEM as a Cloud Service, there may be instances where you need to rollout only a single page without including its subpages. If not configured correctly, the typical curl command for rolling out pages might inadvertently include subpages. This section guides you on how to adjust the curl command to achieve a shallow rollout of a specified page and exclude any subpages from being propagated.
+When using AEM as a Cloud Service, there may be instances where you need to rollout a single, specific page without propagating its subpages. If not configured correctly, the typical curl command for rolling out pages might inadvertently include subpages. This section describes how to adjust the curl command to achieve a shallow rollout of a specified page and exclude any additional subpages.
 
 To perform a shallow rollout, follow these steps:
 
@@ -378,7 +378,7 @@ curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand
    -d path="/content/<your-path>"
 ```
 
-Also, ensure the following:
+Also, check the following:
 
 1. Ensure that you replace `<token>` with your actual authorization token and `<instance-url>` with your specific instance URL.
 1. Replace `/content/<your-path>` with the path of the specific page you wish to rollout.
