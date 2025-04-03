@@ -40,7 +40,7 @@ The following constraints apply:
 * The **SMTP server port** must be 25 or higher.
 
 * The **SMTP server host name** must not be blank.
-* The **"From" address** must not be blank.
+* The **"From" address** must not be blank and you must change the default value "<noreply@day.com>".
 
 To help you debug an issue with the **Day CQ Mail Service**, you can watch the logs of the service:
 
@@ -79,6 +79,10 @@ Use the following procedure to define the node in your content package source fo
 ## Configuring the Workflow Email Notification Service {#configuring-the-workflow-email-notification-service}
 
 When you receive workflow email notifications, both the from-email address and the host URL prefix are set to default values. You can change these values by configuring the **Day CQ Workflow Email Notification Service** in the Web Console. If you do so, it is recommended to persist the change in the repository.
+
+>[!NOTE]
+>
+>You must change the **From Email Address** to the Sender address of your email server. If you do not change this value you will see an error message such as: `NullPointerException` in the `EMailNotificationService`.
 
 The default configuration looks as follows in the Web Console:
 
