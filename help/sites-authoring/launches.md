@@ -15,7 +15,9 @@ role: User,Admin,Architect,Developer
 
 Launches enable you to efficiently develop content for a future release.
 
-A launch is created to let you make changes ready for future publication (while maintaining your current pages). After editing and updating your launch pages you promote them back to the source, then activate the source pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
+A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current pages. This means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new version.  
+
+You create a *Launch*, then after editing and updating your *Launch* pages you *Promote* them back to the *Source*. You can then activate these *Source* pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
 
 For example, the seasonal product pages of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate web pages. Throughout the quarter, the following changes are accumulated in the launch copy:
 
