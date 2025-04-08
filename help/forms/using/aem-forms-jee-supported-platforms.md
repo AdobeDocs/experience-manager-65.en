@@ -461,9 +461,10 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 
 ### Requirements for PDF Generator
 
-- For testing PDF conversions on SUSE® Linux® (SLES 15 SP6 or later) server, ensure you have the following configurations:
-    - Navigate to the `/etc/profile` file and set the `OpenOffice_PATH` environment variable to `/opt/openoffice4` to configure it globally. 
-    - Install the 32-bit version of OpenOffice.
+- For testing PDF conversions on SUSE&reg; Linux&reg; (SLES 15 SP6 or later) server, ensure you have the following configurations:
+  - Install the latest available 32-bit variant of `OpenOffice 4.1.x` to a directory such as `/opt/openoffice4`.
+  - Set the `OpenOffice_PATH` environment variable to point to this location. For example: `OpenOffice_PATH=/opt/openoffice4`.
+  - Ensure that the `OpenOffice_PATH` variable is set globally (for example, using `/etc/profile` or the system-specific equivalent) so it is available to all users upon login.
     
 ### Software support for PDF Generator {#software-support-for-pdf-generator}
 
@@ -504,7 +505,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >- PDF Generator requires a 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
 >- PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
->- The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
+>- The Microsoft&reg; Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >- PDF Generator does not support Microsoft&reg; Office 365.
 >- PDF Generator supports the 32-bit version of OpenOffice on the Linux&reg; operating system.
@@ -515,11 +516,11 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019.
 
-PDF Generator supports only the 32-bit version of Microsoft® Office Professional Plus and other software required for conversion.
+PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
 
-The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
+The Microsoft&reg; Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 
-If a Microsoft® Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
+If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
