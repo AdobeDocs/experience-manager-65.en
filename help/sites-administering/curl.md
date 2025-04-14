@@ -361,6 +361,30 @@ curl -u <user>:<password> -X POST -F cmd="unlockPage" -F path="/content/path/to/
 curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination/parent -F srcPath=/path/to/source/location http://localhost:4502/bin/wcmcommand
 ```
 
+### How to perform a shallow rollout {#shallow-rollout}
+
+When using AEM as a Cloud Service, there may be instances where you need to rollout a single, specific page without propagating its subpages. If not configured correctly, the typical curl command for rolling out pages might inadvertently include subpages. This section describes how to adjust the curl command to achieve a shallow rollout of a specified page and exclude any additional subpages.
+
+To perform a shallow rollout, follow these steps:
+
+1. Modify the existing curl command by changing the parameter from `type=deep` to `type=page`.
+1. Use the following syntax for the curl command:
+
+```shell
+curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand" \
+   -d type=page \
+   -d operation=asyncRollout \
+   -d cmd=rollout \
+   -d path="/content/<your-path>"
+```
+
+Also, check the following:
+
+1. Ensure that you replace `<token>` with your actual authorization token and `<instance-url>` with your specific instance URL.
+1. Replace `/content/<your-path>` with the path of the specific page you wish to rollout.
+
+By setting `type=page`, the command targets only the specified page, excluding any subpages. As such, this configuration enables precise control over content deployment, ensuring that only the intended changes are propagated across environments. Furthermore, this adjustment also aligns with how rollouts are managed through the AEM GUI when selecting individual pages.
+
 ### Workflows {#workflows}
 
 See [Interacting with Workflows Programmatically](/help/sites-developing/workflows-program-interaction.md) for details.

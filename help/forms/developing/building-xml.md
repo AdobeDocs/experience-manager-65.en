@@ -46,6 +46,7 @@ Once a process has been created with the Execute Script service included, one ca
 >
 > If the JAVA script code exceeds 10 lines, it is recommended to add the code to custom DSCs (Document Service Components) rather than writing it directly in the process. Custom DSCs improve maintainability, reusability, and performance by keeping workflows lightweight. Referencing these components in workflows ensures better execution efficiency and prevents potential slowdowns caused by processing large code blocks within the workflow.
 
+
 **About the Execute Script Service's Technology**
 
 To know what the abilities and limitations of the Execute Script service are, one must know the technological underpinnings of the service. AEM Forms on JEE uses the Apache Xerces Document Object Model (DOM) parser to create and store XML variables within processes. Xerces is a Java&trade; implementation of W3C's [Document Object Model specification](https://dom.spec.whatwg.org/). The DOM specification is a standard way of manipulating XML that has been around since 1998. The Java&trade; implementation of Xerces, Xerces-J, supports DOM Level 2 version 1.0.
