@@ -1206,6 +1206,7 @@ user-guide-title: AEM 6.5
     + [How to properly restart AEM SDK](/help/forms/using/restart-aem-sdk.md)
     + [PaperCapture service fails to perform OCRs on PDFs](/help/forms/using/papercapture-service-resolution.md)
     + [Mitigating Spring Framework Vulnerabilities for AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
+    + [Mitigating Log4j2 vulnerabilities for Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
     + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)
