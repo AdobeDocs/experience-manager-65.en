@@ -133,13 +133,13 @@ In previous versions, client library folders were located below `/etc/clientlibs
 >
 >To better isolate code from content and configuration, it is recommended to locate client libraries under `/apps` and expose them via `/etc.clientlibs` by using the `allowProxy` property.
 
-In order for the client libraries under `/apps` to be accessible, a proxy servelt is used. The ACLs are still enforced on the client library folder, but the servlet allows for the content to be read via `/etc.clientlibs/` if the `allowProxy` property is set to `true`.
+In order for the client libraries under `/apps` to be accessible, a proxy servlet is used. The ACLs are still enforced on the client library folder, but the servlet allows for the content to be read via `/etc.clientlibs/` if the `allowProxy` property is set to `true`.
 
 A static resource can only be accessed via the proxy, if it resides below a resource below the client library folder.
 
 As an example:
 
-* You have a clientlib in `/apps/myproject/clientlibs/foo`
+* You have a clientlib in `/apps/myprojects/clientlibs/foo`
 * You have a static image in `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
 Then you set the `allowProxy` property on `foo` to true.
