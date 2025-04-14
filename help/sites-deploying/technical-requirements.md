@@ -446,7 +446,7 @@ For Windows x86:
 
 ### Requirements for AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-* For testing PDF conversions on SUSE&reg; Linux&reg; (SLES 15 SP6 or later) server, ensure you have the following configurations:
+* On SUSE&reg; Linux&reg; (SLES 15 SP6 or later) based platforms , ensure you have the following configurations to setup OpenOffice:
     * Install the latest available 32-bit variant of `OpenOffice 4.1.x` to a directory such as `/opt/openoffice4`.
     * Set the `OpenOffice_PATH` environment variable to point to this location. For example: `OpenOffice_PATH=/opt/openoffice4`.
     * Ensure that the `OpenOffice_PATH` variable is set globally (for example, using `/etc/profile` or the system-specific equivalent) so it is available to all users upon login.
