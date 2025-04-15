@@ -226,7 +226,7 @@ Set environment variables for 64-bit Java Development Kit, third-party applicati
   <tr>
    <td><p><strong>OpenOffice</strong></p> </td>
    <td><p>OpenOffice_PATH</p> </td>
-   <td><p>C:\Program Files (x86)\OpenOffice.org4</p> </td>
+   <td><p>C:\Program Files (x86)\OpenOffice 4</p> </td>
   </tr>
  </tbody>
 </table>
@@ -240,7 +240,7 @@ Set environment variables for 64-bit Java Development Kit, third-party applicati
 >* On UNIX-based platforms, install OpenOffice as /root. If OpenOffice is not installed as root, the PDF Generator service fails to convert OpenOffice documents to PDF documents. If you are required to install and run OpenOffice as a non-root user, then provide sudo rights to the non-root user.  
 >* If you are using OpenOffice on a UNIX-based platform, run the following command to set the path variable:  
 > `export OpenOffice_PATH=/opt/openoffice.org4`
->* On SUSE&reg; Linux&reg; (SLES 15 SP6 or later) based platforms , ensure you have the following configurations to setup OpenOffice:
+>* On SUSE&reg; Linux&reg; (SLES 15 SP6 or later) based platforms, follow the following steps to setup OpenOffice:
 >     * Install the latest available 32-bit variant of `OpenOffice 4.1.x` to a directory such as `/opt/openoffice4`.
 >     * Set the `OpenOffice_PATH` environment variable to point to this location. For example: `OpenOffice_PATH=/opt/openoffice4`.
 >     * Ensure that the `OpenOffice_PATH` variable is set globally (for example, using `/etc/profile` or the system-specific equivalent) so it is available to all users upon login.
