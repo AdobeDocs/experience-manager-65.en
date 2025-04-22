@@ -1,9 +1,9 @@
 ---
-title: EAR Deployment Failing on JEE WebLogic Server 
+title: EAR Deployment Failing on JEE WebLogic Server
 seo-title: EAR Deployment failing on JEE Weblogic Server
 description: Steps to resolve EAR Deployment failing on JEE WebLogic Server
+exl-id: 109d9182-5e3f-477e-9417-abc83d5ea3bc
 ---
-
 # EAR Deployment failing on JEE WebLogic Server {#ear-deployment-failing-on-jee-weblogic-server}
 
 ## Issue {#issue}
