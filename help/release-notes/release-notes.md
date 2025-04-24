@@ -78,7 +78,7 @@ Key features and enhancements in this release include the following:
 
 #### Classic UI{#sites-classicui-6523} 
 
-* A ()
+* An issue in Classic UI dialogs boxes where toggling a button would hide a text area and fail to display it again on subsequent clicks. The fix ensures that the text area properly reappears when toggled, restoring expected behavior and preventing disruptions to dynamic dialog box workflows. (SITES-30230) MAJOR 
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
@@ -87,6 +87,10 @@ Key features and enhancements in this release include the following:
 #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
 
 * A ()
+
+#### [!DNL Content Fragments] - Fragments Editor{#sites-fragments-editor-6523}
+
+* Other authors can still publish Content Fragments even when another author checks them out, which is contrary to the intended behavior of the checkout feature. This fix prevents other users from seeing or using the publish buttons in the authoring interface when a Content Fragment is checked out. (SITES-30578) NORMAL & LTS
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6523}
 
@@ -102,8 +106,8 @@ Key features and enhancements in this release include the following:
 
 #### Core Backend{#sites-core-backend-6523}
 
-* A ()
-
+* Improperly formatted XMP metadata triggered an error during processing of image assets in the `ValidationDataServlet`. The fix ensures compliant metadata handling and avoids redundant parsing of invalid properties. (SITE-30683) NORMAL & LTS
+* An issue where the `SearchPathLimiter` component generated excessive log entries by printing messages at the ERROR level for each invocation. This behavior began after Service Pack 17 and led to performance concerns due to extremely high log volumes. The fix downgrades the log level to DEBUG, significantly reducing log noise and improving system monitoring and diagnostic efficiency. (SITES-29835) MAJOR
 
 #### Core Components{#sites-core-components-6523}
 
@@ -136,13 +140,16 @@ Key features and enhancements in this release include the following:
 
 #### Page Editor{#sites-pageeditor-6523}
 
-* A ()
+* A regression was introduced in AEM 6.5 Service Pack 22 that prevented users from including spaces in Launch titles. The fix restores the ability to use spaces, allowing teams to define and organize Launch names more flexibly, in line with expected behavior. (SITES-29414) MINOR 
 
 #### Replication{#sites-replication-6523}
 
 * A ()
 
+#### Universal editor {#sites-universal-editor-6523}
 
+* When multiple requests containing the query parameter are sent to AEM, the login-token cookie may not be returned in time, which can lead to a failed login. (SITES-30659) NORMAL & LTS
+* To ensure compatibility and support with SAML handlers, you must configure the `service.ranking` property so that the `Query Token Auth` handler runs *before* the `SAML Auth` handler. (SITES-29684) NORMAL
 
 ### [!DNL Assets]{#assets-6523}
 
@@ -498,7 +505,7 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 * In the Print Preview of the Interactive Communications Agent UI, the currency symbol (such as the dollar sign $) is inconsistently displayed for all field values. It appears for values up to 999 but is missing for values of 1000 and above. (FORMS-16557)
 * Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. (FORMS-16575)
 * In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
-* When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with 'x'. (FORMS-15681)
+* When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with `x`. (FORMS-15681)
 * When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss&reg; fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
   
     ```java
