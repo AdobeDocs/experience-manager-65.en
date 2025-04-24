@@ -320,7 +320,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    This opens the move page wizard.
 
-1. The **Rename** stage of the wizard provides you **Information** about the page including creation date, path, and number of direct references. From here you can either:
+1. The **Rename** step of the wizard provides you **Information** about the page including creation date, path, and number of direct references. From here you can either:
 
     * Specify the name you want the page to have after it is moved, then click **Next** to proceed.
     * **Cancel** to abort the process.
@@ -359,7 +359,7 @@ AEM offers you the functionality to update any internal links that refer to the 
    >[!NOTE]
    >
    >* If the page is neither linked to nor referenced, then this step will not be available.
-   >* This page lists both direct and indirect references. This may differ from the amount reported on the **Rename** step of the wizard as well as the references reported by the references rail, both of which only report direct references for performance reasons.
+   >* This step lists both direct and indirect references. This may differ from the amount reported on the **Rename** step of the wizard as well as the references reported by the references rail, both of which only report direct references for performance reasons.
 
    ![caop-09](assets/caop-09.png)
 
