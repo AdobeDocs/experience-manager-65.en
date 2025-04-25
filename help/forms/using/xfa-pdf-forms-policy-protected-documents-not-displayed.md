@@ -8,9 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-exl-id: b084c705-41d6-4dd5-ac37-c23600250336
 ---
-## Display issues for XFA-based PDF forms and policy-protected documents
+# Display issues for XFA-based PDF forms and policy-protected documents
 
 Check for the following reasons if you are not able to open an XFA-based PDF form or a policy-protected document using Adobe LiveCycle Rights Management:
 
