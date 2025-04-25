@@ -8,6 +8,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
+exl-id: 31b52a82-5062-403e-bba7-e6a7e32ee961
 ---
 # How to open XFA-based PDF forms on Firefox and Chrome
 
