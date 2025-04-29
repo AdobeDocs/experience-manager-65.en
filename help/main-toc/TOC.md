@@ -1435,6 +1435,7 @@ user-guide-title: AEM 6.5
         + [Introduction](/help/sites-developing/universal-editor/introduction.md)
     + Hybrid and SPA AEM Development {#spas}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [SPA Editor Deprecation](/help/sites-developing/spa-editor-deprecation.md)
       + [SPA Introduction and Walkthrough](/help/sites-developing/spa-walkthrough.md)
       + [SPA WKND Tutorial](/help/sites-developing/spa-wknd.md)
       + [Getting Started using React](/help/sites-developing/spa-getting-started-react.md)
