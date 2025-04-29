@@ -69,15 +69,17 @@ Key features and enhancements in this release include the following:
 
 #### Accessibility {#sites-accessibility-6523}
 
+* Fixed an accessibility issue in the AEM Page Editor where keyboard focus unexpectedly resets to the start of the Demographic toolbar after activating buttons such as Persona, Cart, or Abandoned. Focus now remains on the activated button to support consistent keyboard navigation and screen reader workflows. (SITES-25306) CRITICAL
+* Fixed a critical accessibility issue in AEM Page Editor where canvas elements across multiple dialog boxes and modals (for example, Asset rail or Layout preview) could not be operated using only a keyboard. All interactive canvas elements now support keyboard-only navigation, ensuring compliance with WCAG 2.1 success criterion 2.1.1 (SITE-25256) CRITICAL
+* Fixed an accessibility issue in the Sites Admin UI where interactive list items in the Create pop-up used incorrect ARIA roles. Elements that behaved like links were assigned `role="listitem"` instead of `role="menuitem"`, violating ARIA design patterns and confusing screen readers. Updates ensure all list components follow proper semantic roles for improved keyboard and assistive technology support. (SITES-24493) MAJOR
 * Fixed accessibility label association issue for page title and tags fields. The AEM interface now correctly associates accessibility labels with the "Title" and "Page Title" fields when using screen readers like JAWS. The fix ensures proper label reading and improves ADA compliance across page creation, properties, and move workflows. (SITES-27149) MAJOR
-* Fixed accessibility issue with table identification in permissions dialog box. The permissions table in AEM now uses correct ARIA roles and attributes to ensure screen readers like JAWS properly identify it as a table. The fix improves accessibility compliance and ensures that users receive accurate navigation and content announcements. (SITES-27140) MAJOR
+* Fixed an accessibility issue with table identification in permissions dialog box. The permissions table in AEM now uses correct ARIA roles and attributes to ensure screen readers like JAWS properly identify it as a table. The fix improves accessibility compliance and ensures that users receive accurate navigation and content announcements. (SITES-27140) MAJOR
 * Fixed missing visual label for comment input fields in timeline. Corrected missing visual labels for "comment" input fields under the timeline section to improve accessibility. The update ensures that screen readers can accurately announce the field labels. This experience enhances form navigation and submission for all users, particularly those individuals that rely on assistive technologies. (SITES-26903) MAJOR
 * Fixed keyboard accessibility for ellipsis button in timeline comments. Enabled keyboard navigation for the ellipsis (three dots) button next to comments under the timeline section. Users can now access and interact with the button using the tab key, improving accessibility for users who rely on keyboard-only navigation. (SITES-26891) NORMAL
 * Improved NVDA/Narrator announcements for search results in selection dialog boxes. Updated the Open Selection dialog box to announce whether search results are found or not when using screen readers, such as NVDA or Narrator. This improvement helps users relying on assistive technologies understand the outcome of their search actions without needing visual confirmation. (SITES-26883) NORMAL
 * Corrected ARIA role for ellipsis icon beside comment input field. Updated the ellipsis (three dots) icon beside the comment input field to use the correct ARIA role, ensuring screen readers can accurately identify the element. This improvement enhances accessibility compliance and improves the experience for users relying on assistive technologies. (SITES-26881) NORMAL
 * Corrected invalid ARIA attributes in Coral UI components. Updated Coral UI components to ensure all ARIA attributes use valid values, improving accessibility-compliance. In particular, cases were addressed where invalid values like `aria-modal="dialog"` were incorrectly assigned. This enhancement enables screen readers to interpret dialog box elements correctly, improving accessibility for users relying on assistive technologies. (SITES-26873) NORMAL
 * Improved visibility and tooltips for icons in reflow scenarios. Enhanced the reflow behavior to ensure tooltips display correctly for **Download**, **Reprocess assets**, and **Checkout** icons. Focused on an accessibility issue where icons and their labels became invisible when the viewport resized or browser zoom settings changed. This fix supports users with low vision by maintaining visibility and providing proper icon descriptions during reflow. (SITES-26871) NORMAL
-* () NORMAL
 
 
 #### Admin User Interface{#sites-adminui-6523}
@@ -93,9 +95,9 @@ Key features and enhancements in this release include the following:
 
 * Fixed validation test failure for `DeleteVariationIT.testUpdateBasic`. The `DeleteVariationIT.testUpdateBasic` test no longer fails during Service Pack validation runs. The fix corrects a missing text mapping issue in the JSON handling logic, ensuring test stability and avoiding unnecessary test disruptions. (SITES-28022) CRITICAL
 
-#### [!DNL Content Fragments] - Admin{#sites-admin-6523}
+<!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
 
-* A ()
+* A () -->
 
 #### [!DNL Content Fragments] - Fragments Editor{#sites-fragments-editor-6523}
 
@@ -105,13 +107,13 @@ Key features and enhancements in this release include the following:
 
 * Fixed GraphQL QueryValidationError with Content Fragment schemas. Refreshing the `cq-dam-cfm-graphql` bundle corrects schema validation errors when using Content Fragment references. The fix ensures that GraphQL queries function properly without requiring manual schema re-alignment or re-publishing after package deployments. (SITES-27001) MAJOR <!-- & LTS -->
 
-#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6523}
+<!-- #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6523}
 
-* A ()
+* A () -->
 
-#### [!DNL Content Fragments] - REST API{#sites-restapi-6523}
+<!-- #### [!DNL Content Fragments] - REST API{#sites-restapi-6523}
 
-* A ()
+* A () -->
 
 #### Component Console{#sites-component-console-6523}
 
@@ -119,42 +121,38 @@ Key features and enhancements in this release include the following:
 
 #### Core Backend{#sites-core-backend-6523}
 
-* **Fix Content Finder asset listing failure caused by invalid asset names**
-
 * Fixed Content Finder asset listing failure caused by invalid asset names. The Content Finder now handles asset names with non-encodable characters correctly. Asset listing in the Page Editor no longer fails or throw exceptions when encountering assets with problematic names. (SITES-28722) CRITICAL 
 * An issue where the `SearchPathLimiter` component generated excessive log entries by printing messages at the ERROR level for each invocation. This behavior began after Service Pack 17 and led to performance concerns due to extremely high log volumes. The fix downgrades the log level to DEBUG, significantly reducing log noise and improving system monitoring and diagnostic efficiency. (SITES-29835) MAJOR
 * Improperly formatted XMP metadata triggered an error during processing of image assets in the `ValidationDataServlet`. The fix ensures compliant metadata handling and avoids redundant parsing of invalid properties. (SITE-30683) NORMAL & LTS
 
+<!-- #### Core Components{#sites-core-components-6523}
 
-#### Core Components{#sites-core-components-6523}
+* A () -->
 
-* A ()
+<!-- #### Campaign integration{#sites-campaign-integration-6523}
 
+* A () -->
 
-#### Campaign integration{#sites-campaign-integration-6523}
+<!-- #### Experience Fragments{#sites-experiencefragments-6523}
 
-* A ()
+* A () -->
 
-#### Experience Fragments{#sites-experiencefragments-6523}
+<!-- #### Foundation Components (Legacy){#sites-foundation-components-legacy-6523}
 
-* A () 
-
-#### Foundation Components (Legacy){#sites-foundation-components-legacy-6523}
-
-* A ()
+* A () -->
 
 #### Launches{#sites-launches-6523}
 
 * Fixed incorrect launch date display between December 25 and December 31. The Launches UI now displays dates between December 25 and December 31 with the correct year. The fix ensures that dates no longer incorrectly show the following year, avoiding confusion during campaign planning and scheduling. (SITES-28706) MAJOR
 * Fixed broken AEM Launch templates after SP22 upgrade. AEM Launch templates now load correctly after a Service Pack 22 upgrade. The fix corrects invalid data in internal launch configurations, allowing users to view, edit, and create Launches without errors or missing fields. (SITES-28504) NORMAL
 
-#### Link Checker{#sites-link-checker-6523}
+<!-- #### Link Checker{#sites-link-checker-6523}
 
-* A ()
+* A () -->
 
-#### MSM - Live Copies{#sites-msm-live-copies-6523}
+<!-- #### MSM - Live Copies{#sites-msm-live-copies-6523}
 
-* A ()
+* A () -->
 
 #### Page Editor{#sites-pageeditor-6523}
 
@@ -166,9 +164,9 @@ Key features and enhancements in this release include the following:
 * Fixed resizing issue for components inside Layout Containers after hide/unhide actions. The Page Editor now properly calculates column values after hiding and unhiding a Layout Container. Users can resize components without errors, and columns display correctly during resizing actions. (SITES-28463) MINOR
 * Fixed Content Tree button misplacement in Page Editor. The Page Editor now correctly positions the Content Tree configuration button under the intended "Head Teaser" dialog box instead of the wrong section. The fix updates the CSS for the Content Tree dialog box to use `top:0` instead of `bottom:0`, ensuring proper button placement. (SITES-28448) MINOR
 
-#### Replication{#sites-replication-6523}
+<!-- #### Replication{#sites-replication-6523}
 
-* A ()
+* A () -->
 
 #### Rich Text Editor{#sites-rte-6523}
 
@@ -244,7 +242,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### CRX {#foundation-crx-6523}
 
-* A ()
+* A () 
 
 #### Granite{#foundation-granite-6523}
 
@@ -253,6 +251,10 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 #### Integrations{#foundation-integrations-6523}
 
 * A ()
+
+#### Jetty{#foundation-jetty-6523}
+
+* Addressed an issue where SNI validation blocked API calls over HTTPS for AEM customers using Dispatcher SSL configurations with custom host headers. Introduces an option to disable SNI validation as part of Jetty configuration, enabling compatibility with specific reverse proxy setups where `mod_proxy` is not feasible. (NPR-42614) NORMAL
 
 #### Localization{#foundation-localization-6523}
 
@@ -264,11 +266,11 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Platform{#foundation-platform-6523}
 
-* A ()
+* Resolved a `ClassCastException` error that prevents email delivery on Adaptive Form submission in AEM 6.5 running on WebSphere. The fix enables successful email transmission by ensuring compatibility between `com.sun.mail.handlers.text_plain` and `java.activation.DataContentHandler`, aligning with the mail handler configuration expected by WebSphere environments. (NPR-42500) MAJOR
 
 #### Security{#foundation-security-6523}
 
-* A ()
+* Removal of Guava dependency from the `tsdk-core` repository to improve security and reduce reliance on external libraries. This change aligned with broader dependency cleanup efforts across AEM 6.5 and supports compliance with modern Java standards. (NPR-42402) NORMAL
 
 #### Sling{#foundation-sling-6523}
 
@@ -280,7 +282,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### User interface{#foundation-ui-6523}
 
-* A ()
+* Adds missing `title` attributes to Coral UI dialog box buttons such as **Done** and **Cancel** in component edit dialog boxes to improve accessibility and enable automated validation. Ensures buttons retain expected attributes across markup rendering, preventing failures in Selenium-based UI tests. (NPR-42412) NORMAL 
 
 #### WCM{#foundation-wcm-6523}
 
