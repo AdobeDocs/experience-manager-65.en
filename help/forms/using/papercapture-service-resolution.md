@@ -11,11 +11,12 @@ exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
 
 ## Issue
 
-After upgrading to AEM Forms Service Pack 6.5.21.0, the `PaperCapture` service fails to perform OCR (Optical Character Recognition) operations on PDFs. The service does not generate output in the form of a PDF or a log file.
+After upgrading to AEM Forms Service Pack 6.5.21.0 or AEM Forms Service Pack 6.5.22.0, the `PaperCapture` service fails to perform OCR (Optical Character Recognition) operations on PDFs. The service does not generate output in the form of a PDF or a log file.
 
 ## Applies to
 
 This solution applies to:
+
 * AEM Forms on all (JBoss, Weblogic, Websphere) JEE servers
 * AEM Forms on OSGi servers
 
