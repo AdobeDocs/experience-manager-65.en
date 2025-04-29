@@ -388,9 +388,16 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 ## Deprecated and removed features{#removed-deprecated-features}
 
-See [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md/).
+See [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md/) for a detailed list of all features deprecated or removed for AEM 6.5.
 
+### SPA Editor {#spa-editor}
 
+[The SPA Editor](/help/sites-developing/spa-overview.md) has been deprecated for new projects starting with release 6.5.23 of AEM 6.5. The SPA Editor remains supported for existing projects, but should not be used for new projects.
+
+The preferred editors for managing headless content in AEM are now:
+
+* [The Universal Editor](/help/sites-developing/universal-editor/introduction.md) for visual editing.
+* [The Content Fragment Editor](/help/sites-developing/universal-editor/introduction.md) for form-based editing.
 
 ## Known issues{#known-issues}
 
