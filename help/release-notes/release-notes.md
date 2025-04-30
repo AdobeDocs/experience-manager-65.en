@@ -71,9 +71,9 @@ Key features and enhancements in this release include the following:
 
 * Fixed an accessibility issue in the AEM Page Editor where keyboard focus unexpectedly resets to the start of the Demographic toolbar after activating buttons such as Persona, Cart, or Abandoned. Focus now remains on the activated button to support consistent keyboard navigation and screen reader workflows. (SITES-25306) CRITICAL
 * Fixed a critical accessibility issue in AEM Page Editor where canvas elements across multiple dialog boxes and modals (for example, Asset rail or Layout preview) could not be operated using only a keyboard. All interactive canvas elements now support keyboard-only navigation, ensuring compliance with WCAG 2.1 success criterion 2.1.1 (SITE-25256) CRITICAL
-* Fixed an accessibility issue in the Sites Admin UI where interactive list items in the Create pop-up used incorrect ARIA roles. Elements that behaved like links were assigned `role="listitem"` instead of `role="menuitem"`, violating ARIA design patterns and confusing screen readers. Updates ensure all list components follow proper semantic roles for improved keyboard and assistive technology support. (SITES-24493) MAJOR
+* Fixed an accessibility issue in the Sites Admin UI where interactive list items in the Create pop-up used incorrect ARIA roles. Elements that behaved like links were assigned `role="listitem"` instead of `role="menuitem"`, violating ARIA design patterns and confusing screen readers. Updates ensure that all list components follow proper semantic roles for improved keyboard and assistive technology support. (SITES-24493) MAJOR
 * Fixed accessibility label association issue for page title and tags fields. The AEM interface now correctly associates accessibility labels with the "Title" and "Page Title" fields when using screen readers like JAWS. The fix ensures proper label reading and improves ADA compliance across page creation, properties, and move workflows. (SITES-27149) MAJOR
-* Fixed an accessibility issue with table identification in permissions dialog box. The permissions table in AEM now uses correct ARIA roles and attributes to ensure screen readers like JAWS properly identify it as a table. The fix improves accessibility compliance and ensures that users receive accurate navigation and content announcements. (SITES-27140) MAJOR
+* Fixed an accessibility issue with table identification in the permissions dialog box. The permissions table in AEM now uses correct ARIA roles and attributes to ensure screen readers like JAWS properly identify it as a table. The fix improves accessibility compliance and ensures that users receive accurate navigation and content announcements. (SITES-27140) MAJOR
 * Fixed missing visual label for comment input fields in timeline. Corrected missing visual labels for "comment" input fields under the timeline section to improve accessibility. The update ensures that screen readers can accurately announce the field labels. This experience enhances form navigation and submission for all users, particularly those individuals that rely on assistive technologies. (SITES-26903) MAJOR
 * Fixed keyboard accessibility for ellipsis button in timeline comments. Enabled keyboard navigation for the ellipsis (three dots) button next to comments under the timeline section. Users can now access and interact with the button using the tab key, improving accessibility for users who rely on keyboard-only navigation. (SITES-26891) NORMAL
 * Improved NVDA/Narrator announcements for search results in selection dialog boxes. Updated the Open Selection dialog box to announce whether search results are found or not when using screen readers, such as NVDA or Narrator. This improvement helps users relying on assistive technologies understand the outcome of their search actions without needing visual confirmation. (SITES-26883) NORMAL
@@ -84,7 +84,7 @@ Key features and enhancements in this release include the following:
 
 #### Admin User Interface{#sites-adminui-6523}
 
-* Fixed Universal Editor URL Service exception with missing externalizer endpoints. The Universal Editor URL Service now handles missing author, publish, or local externalizer endpoints without throwing exceptions. Admin users can open the Page Editor successfully even when some externalizer configurations are incomplete. (SITES-28877) BLOCKER <!-- & LTS -->
+* Fixed Universal Editor URL Service exception with missing Externalizer endpoints. The Universal Editor URL Service now handles missing author, publish, or local Externalizer endpoints without throwing exceptions. Admin users can open the Page Editor successfully even when some Externalizer configurations are incomplete. (SITES-28877) BLOCKER <!-- & LTS -->
 
 #### Classic UI{#sites-classicui-6523} 
 
@@ -94,6 +94,7 @@ Key features and enhancements in this release include the following:
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
 * Fixed validation test failure for `DeleteVariationIT.testUpdateBasic`. The `DeleteVariationIT.testUpdateBasic` test no longer fails during Service Pack validation runs. The fix corrects a missing text mapping issue in the JSON handling logic, ensuring test stability and avoiding unnecessary test disruptions. (SITES-28022) CRITICAL
+
 
 <!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
 
@@ -117,7 +118,7 @@ Key features and enhancements in this release include the following:
 
 #### Component Console{#sites-component-console-6523}
 
-* Improvements to "Component Live Usage" page loading. Optimizes the "Components Live Usage" page in AEM to prevent empty rows from appearing when scrolling through large datasets. Users loading components with extensive usage references now experience continuous data loading without unnecessary gaps or empty entries. This experience improves page navigation, tracking accuracy, and management efficiency across component usage reporting. (SITES-26454) MAJOR
+* Improvements to "Component Live Usage" page loading. Optimizes the "Components Live Usage" page in AEM to prevent empty rows from appearing when scrolling through large datasets. Users loading components with extensive usage references can now experience continuous data loading without unnecessary gaps or empty entries. This experience improves page navigation, tracking accuracy, and management efficiency across component usage reporting. (SITES-26454) MAJOR
 
 #### Core Backend{#sites-core-backend-6523}
 
@@ -191,34 +192,36 @@ Key features and enhancements in this release include the following:
 
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.23.0 Forms add-on package release is scheduled for Thursday, May 29, 2025. A list of Forms fixes and enhancements is added to this section post the release.
 
-<!--
+
 ### Forms {#forms-bug-fixes-6523} 
 
-* A ()
+* Improved CAPTCHA configuration handling for AEM Forms by ensuring the correct configuration binds to each form when multiple entries exist in the `/conf/global` folder. Prevents unintended use of incorrect CAPTCHA settings when the configuration container is not explicitly selected. (FORMS-19239) NORMAL
 
+<!--
 #### XMLFM {#forms-xmlfm-6523}
 
-* A ()
+* A () -->
 
+<!--
 #### Forms Designer {#forms-designer-6523} 
 
-* A ()
+* A () -->
 
+<!--
 #### [!DNL Adaptive Forms] {#adaptive-forms-6523}
 
-* A ()
+* A () -->
 
+<!--
 #### [!DNL Forms Designer] {#forms-designer-6523}
 
-* A ()
-
--->
+* A () -->
 
 
 
 ### Foundation {#foundation-6523}
 
-* Fixed an issue in Coral Alert Banners where text color appears white instead of black after upgrading to Service Pack 21. Ensures correct styling is applied to maintain proper contrast and readability of alert messages across the interface. (NPR-42359) MINOR
+* Fixed an issue in Coral Alert Banners where text color appears white instead of black after upgrading to Service Pack 21. Ensures that correct styling is applied to maintain proper contrast and readability of alert messages across the interface. (NPR-42359) MINOR
 * Added support for OAuth integration in Smart Tags configuration to align with the deprecation of JWT (JSON Web Token). Ensures continued functionality of Smart Tags features using updated authentication methods. (NPR-42296) NORMAL
 
 #### Apache Felix {#foundation-apachefelix-6523}
@@ -247,7 +250,11 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Granite{#foundation-granite-6523}
 
-* A () 
+* Resolved OSGi dependency cycles between Apache Sling scripting services that caused delays or failures when loading HTML pages after upgrading to Service Pack 21. Updated internal service references to eliminate cyclic dependencies involving `SightlyScriptingEngineFactory` and related components, improving reliability and startup behavior of the scripting engine. (GRANITE-56808) MAJOR
+* Updated JS Use Scripts in Apache Sling to load only on-demand instead of eagerly at startup, eliminating thread contention and reducing the risk of publish servers becoming unresponsive under load. This change improves server stability and response times during high-traffic scenarios by preventing resource locking caused by early script resolution. (GRANITE-56611) MAJOR
+* Corrected an issue in AEM Omnisearch where placeholders for input fields incorrectly display as labels, leading to visual confusion. Ensures proper rendering of placeholders across filter fields, maintaining consistent and accessible form behavior. (GRANITE-51791) NORMAL
+* Resolved a server error triggered when selecting more than 30 CFMs (Content Fragment Models) with multifield references in the Content Fragment model editor. Enhanced the filter suggestion component to support POST operations. This ability allows the proper handling of large reference sets during Content Fragment creation and improving stability for high-volume model configurations. (GRANITE-57164) MINOR
+* Resolved an issue in CFMs where clicking near a checkbox toggled its state unintentionally. Updated styles to restrict click activation strictly to the checkbox element, preventing accidental user interactions and improving form usability and accessibility. (GRANITE-52384) MINOR
 
 #### Integrations{#foundation-integrations-6523}
 
@@ -255,7 +262,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Jetty{#foundation-jetty-6523}
 
-* Addressed an issue where SNI validation blocked API calls over HTTPS for AEM customers using Dispatcher SSL configurations with custom host headers. Introduces an option to disable SNI validation as part of Jetty configuration, enabling compatibility with specific reverse proxy setups where `mod_proxy` is not feasible. (NPR-42614) NORMAL
+* Resolved an issue where SNI validation blocked API calls over HTTPS for AEM customers using Dispatcher SSL configurations with custom host headers. Introduces an option to disable SNI validation as part of Jetty configuration, enabling compatibility with specific reverse proxy setups where `mod_proxy` is not feasible. (NPR-42614) NORMAL
 
 #### Localization{#foundation-localization-6523}
 
@@ -267,12 +274,12 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Platform{#foundation-platform-6523}
 
-* Resolved a `ClassCastException` error that prevents email delivery on Adaptive Form submission in AEM 6.5 running on WebSphere. The fix enables successful email transmission by ensuring compatibility between `com.sun.mail.handlers.text_plain` and `java.activation.DataContentHandler`, aligning with the mail handler configuration expected by WebSphere environments. (NPR-42500) MAJOR
+* Resolved a `ClassCastException` error that prevents email delivery on Adaptive Form submission in AEM 6.5 running on WebSphere&reg;. The fix enables successful email transmission by ensuring compatibility between `com.sun.mail.handlers.text_plain` and `java.activation.DataContentHandler`, aligning with the mail handler configuration expected by WebSphere&reg; environments. (NPR-42500) MAJOR
 * Improved error handling in Package Manager by ensuring AEM surfaces a clear message when the installation fails and the error response is otherwise empty. This fix prevents silent failures and aids in faster debugging during package deployment. (NPR-42375) NORMAL
 
 #### Security{#foundation-security-6523}
 
-* Removal of Guava dependency from the `tsdk-core` repository to improve security and reduce reliance on external libraries. This change aligned with broader dependency cleanup efforts across AEM 6.5 and supports compliance with modern Java standards. (NPR-42402) NORMAL
+* Removal of Guava dependency from the `tsdk-core` repository to improve security and reduce reliance on external libraries. This change is aligned with broader dependency cleanup efforts across AEM 6.5 and supports compliance with modern Java standards. (NPR-42402) NORMAL
 
 #### Sling{#foundation-sling-6523}
 
@@ -280,12 +287,12 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Translation{#foundation-translation-6523}
 
-* Fixed a NullPointerException (NPE) issue triggered when updating Content Fragments in workflows using **Update Language Copy**. This fix ensures workflows do not enter a failed state or remain stuck in a running state when editing content tied to translation references. (NPR-42115) MAJOR
+* Fixed a NullPointerException (NPE) issue triggered when updating Content Fragments in workflows using **Update Language Copy**. This fix ensures that workflows do not enter a failed state or remain stuck in a running state when editing content tied to translation references. (NPR-42115) MAJOR
 
 #### User interface{#foundation-ui-6523}
 
-* () CRITICAL
-* Adds missing `title` attributes to Coral UI dialog box buttons such as **Done** and **Cancel** in component edit dialog boxes to improve accessibility and enable automated validation. Ensures buttons retain expected attributes across markup rendering, preventing failures in Selenium-based UI tests. (NPR-42412) NORMAL
+
+* Adds missing `title` attributes to Coral UI dialog box buttons such as **Done** and **Cancel** in component edit dialog boxes to improve accessibility and enable automated validation. Ensures that buttons retain expected attributes across markup rendering, preventing failures in Selenium-based UI tests. (NPR-42412) NORMAL
 
 
 #### WCM{#foundation-wcm-6523}
@@ -294,7 +301,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Workflow{#foundation-workflow-6523}
 
-* A ()
+* Resolved an issue in the `EmailNotificationServiceProcessor` where the `getSegmentId` method returns `null` after hotfix deployment, causing email triggers to fail during workflow processing. Restores correct segment ID resolution logic by ensuring the processor retrieves the required `SegmentInfo` values to support email notification workflows across AEM instances. (CQ-4359755) MAJOR
 
 
 
@@ -525,7 +532,7 @@ The preferred editors for managing headless content in AEM are now:
 * When a user updates to AEM Forms Service Pack 20 (6.5.20.0) on the JEE server and generates PDFs using output services, the PDFs render with accessibility issues. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922112)
 * When a user generates Tagged PDFs using the output service on JEE, it shows "Inappropriate structure warning." To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922038)
 * When a form is submitted on AEM Forms JEE, the instances of a repeating XML element are removed from the data. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3922017)
-* When a user in a Linux&reg; environment renders an adaptive form (on JEE) in HTML, it fails to render properly. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921957)
+* When a user in a Linux&reg; environment renders an Adaptive Form (on JEE) in HTML, it fails to render properly. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921957)
 * When a user converts an XTG file to PostScript format using the Output Service on AEM Forms JEE, it fails with the error: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921720)
 * After upgrading to AEM Forms Service Pack 18 (6.5.18.0) on JEE server, when a user submits a form, it fails to render HTML5 or PDF Forms and XMLFM crashes. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (LC-3921718)
 * In the Print Preview of the Interactive Communications Agent UI, the currency symbol (such as the dollar sign $) is inconsistently displayed for all field values. It appears for values up to 999 but is missing for values of 1000 and above. (FORMS-16557)
