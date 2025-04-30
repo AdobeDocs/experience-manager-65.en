@@ -218,7 +218,8 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 ### Foundation {#foundation-6523}
 
-* A ()
+* Fixed an issue in Coral Alert Banners where text color appears white instead of black after upgrading to Service Pack 21. Ensures correct styling is applied to maintain proper contrast and readability of alert messages across the interface. (NPR-42359) MINOR
+* Added support for OAuth integration in Smart Tags configuration to align with the deprecation of JWT (JSON Web Token). Ensures continued functionality of Smart Tags features using updated authentication methods. (NPR-42296) NORMAL
 
 #### Apache Felix {#foundation-apachefelix-6523}
 
@@ -267,6 +268,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 #### Platform{#foundation-platform-6523}
 
 * Resolved a `ClassCastException` error that prevents email delivery on Adaptive Form submission in AEM 6.5 running on WebSphere. The fix enables successful email transmission by ensuring compatibility between `com.sun.mail.handlers.text_plain` and `java.activation.DataContentHandler`, aligning with the mail handler configuration expected by WebSphere environments. (NPR-42500) MAJOR
+* Improved error handling in Package Manager by ensuring AEM surfaces a clear message when the installation fails and the error response is otherwise empty. This fix prevents silent failures and aids in faster debugging during package deployment. (NPR-42375) NORMAL
 
 #### Security{#foundation-security-6523}
 
@@ -278,11 +280,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Translation{#foundation-translation-6523}
 
-* A ()
+* Fixed a NullPointerException (NPE) issue triggered when updating Content Fragments in workflows using **Update Language Copy**. This fix ensures workflows do not enter a failed state or remain stuck in a running state when editing content tied to translation references. (NPR-42115) MAJOR
 
 #### User interface{#foundation-ui-6523}
 
-* Adds missing `title` attributes to Coral UI dialog box buttons such as **Done** and **Cancel** in component edit dialog boxes to improve accessibility and enable automated validation. Ensures buttons retain expected attributes across markup rendering, preventing failures in Selenium-based UI tests. (NPR-42412) NORMAL 
+* () CRITICAL
+* Adds missing `title` attributes to Coral UI dialog box buttons such as **Done** and **Cancel** in component edit dialog boxes to improve accessibility and enable automated validation. Ensures buttons retain expected attributes across markup rendering, preventing failures in Selenium-based UI tests. (NPR-42412) NORMAL
+
 
 #### WCM{#foundation-wcm-6523}
 
