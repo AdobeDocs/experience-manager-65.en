@@ -267,7 +267,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * Resolved an issue in CFMs where clicking near a checkbox toggled its state unintentionally. Updated styles to restrict click activation strictly to the checkbox element, preventing accidental user interactions and improving form usability and accessibility. (GRANITE-52384) MINOR
 
 
-<!-->
+<!--
 #### Integrations{#foundation-integrations-6523}
 
 * A () -->
