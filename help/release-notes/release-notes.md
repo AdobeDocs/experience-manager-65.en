@@ -195,19 +195,16 @@ Key features and enhancements in this release include the following:
 ### [!DNL Forms]{#forms-6523}
 
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.23.0 Forms add-on package release is scheduled for Thursday, May 29, 2025. A list of Forms fixes and enhancements is added to this section post the release.
+ 
+#### Forms Captcha {#forms-captcha-6523} 
 
-### Forms {#forms-bug-fixes-6523} 
-
+* Improved reCAPTCHA alerting in Adaptive Forms by updating submit error codes to 400. Also, refined log alerts to distinguish between timeouts, expirations, and bot detection failures, enhancing troubleshooting accuracy and system observability. (FORMS-19240) NORMAL
+* Closed an unclosed `ResourceResolver` instance in `ReCaptchaConfigurationServiceImpl` to prevent potential resource leaks and improve system stability when using reCAPTCHA integrations in AEM Forms. (FORMS-19242) NORMAL
 * Improved CAPTCHA configuration handling for AEM Forms by ensuring the correct configuration binds to each form when multiple entries exist in the `/conf/global` folder. Prevents unintended use of incorrect CAPTCHA settings when the configuration container is not explicitly selected. (FORMS-19239) NORMAL
 
 
 <!--
 #### XMLFM {#forms-xmlfm-6523}
-
-* A () -->
-
-<!--
-#### Forms Designer {#forms-designer-6523} 
 
 * A () -->
 
@@ -300,10 +297,12 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * Removal of Guava dependency from the `tsdk-core` repository to improve security and reduce reliance on external libraries. This change is aligned with broader dependency cleanup efforts across AEM 6.5 and supports compliance with modern Java standards. (NPR-42402) NORMAL
 
+
 <!--
 #### Sling{#foundation-sling-6523}
 
 * A () -->
+
 
 #### Translation{#foundation-translation-6523}
 
