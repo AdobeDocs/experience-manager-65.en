@@ -8,6 +8,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
+exl-id: c9beefac-14e9-466c-b5bd-44ffab1fb820
 ---
 # Display issues for XFA-based PDF forms and policy-protected documents
 
