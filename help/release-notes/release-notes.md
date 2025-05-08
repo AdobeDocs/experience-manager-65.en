@@ -186,7 +186,16 @@ Key features and enhancements in this release include the following:
 
 ### [!DNL Assets]{#assets-6523}
 
-* A ()
+* The following issues occur on [!DNL AEM] On-Premise (6.5.22.0) Navigation page after selecting  ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**, navigating to **[!UICONTROL Search Adobe Stock]** folder, and selecting an stock image:
+  * The selected stock image could not be licensed and saved as clicking **[!UICONTROL License & Save]** displays an empty dropdown. (ASSETS-48687)
+  * Selecting the Stock image or re-entering the stock page URL redirects to the [!DNL AEM] homepage, preventing access to the Adobe Stock image. (ASSETS-48687)
+* Issues while managing folders if the name of the folder includes a `/` in its name on the [!DNL AEM] On-Premise (6.5.22.0) Navigation page. (ASSETS-46740)
+* Issues while loading the asset details page due to high memory usage. (ASSETS-46738) 
+* Integration issues with [!DNL InDesign] as `Day CQ DAM Mime Type OSGI` Service incorrectly identifies [!DNL InDesign] files as `x-adobe-indesign` instead of `x-indesign`. (ASSETS-45953)
+* When you reopen and resave the **[!DNL Connected Assets configuration]** on the local Sites instance after making a minor change, such as updating the title, the remote instance could not connect with the local Sites instance. (ASSETS-44484)
+* In [!DNL AEM 6.5.21] when an asset upload in list view is cancelled and a second upload is performed, AEM displays an **[!UICONTROL 0 of NaN assets uploaded]** error. (ASSETS-44124)
+* Session leak issue in [!DNL AEM 6.5.21] caused by the out-of-the-box **[!UICONTROL Scheduled publish to Brand Portal]** workflow step. (ASSETS-44104)
+* **[!UICONTROL Out of Memory (OOM)]** errors display in [!DNL  AEM] when processing and publishing images due to deprecated methods in workflows, such as **[!DNL Dam Asset update]** and **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
 
 #### [!DNL Dynamic Media]{#assets-dm-6523}
 
