@@ -856,6 +856,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 
 -->
+
 ### Release 6.5.23.0 (May 29, 2025)
 
 | Added Support | Removed Support | Deprecated Support |
