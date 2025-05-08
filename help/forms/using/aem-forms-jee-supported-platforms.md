@@ -633,6 +633,7 @@ For additional requirements see:
 - Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 - Administrative privileges to install Designer
 - Microsoft&reg; Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
+- OpenSSL 3 (required at default location on OS)
 
 ### Browsers {#browsers}
 
@@ -855,7 +856,11 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 
 -->
+### Release 6.5.23.0 (May 29, 2025)
 
+| Added Support | Removed Support | Deprecated Support |
+| -------------- | --------------- | ------------------- |
+| OpenSSL 3 (required at default location on OS)  | |  |
 
 ### Release 6.5.22.0 (Nov 29, 2024)
 
