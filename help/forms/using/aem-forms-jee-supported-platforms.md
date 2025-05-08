@@ -860,7 +860,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| OpenSSL 3 (required at default location on OS)  | |  |
+| OpenSSL 3  | |  |
 
 ### Release 6.5.22.0 (Nov 29, 2024)
 
