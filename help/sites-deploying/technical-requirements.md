@@ -194,6 +194,7 @@ Adobe Experience Manager works with the following server platforms for productio
 | **Linux&reg;, based on the Red Hat&reg; distribution** |A: Supported `[1]` `[3]` |
 | Linux&reg;, based on Debian distribution incl. Ubuntu |A: Supported `[1]` `[2]` |
 | Linux&reg;, based on SUSE&reg; distribution |A: Supported `[1]`|
+| Microsoft&reg; Windows Server 2022 |R: Restricted Support  |
 | Microsoft&reg; Windows Server 2019 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft&reg; Windows Server 2016 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft&reg; Windows Server 2012 R2 |Z: Not supported  |
@@ -201,8 +202,8 @@ Adobe Experience Manager works with the following server platforms for productio
 | IBM&reg; AIX&reg; 7.2 |Z: Not supported  |
 
 1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x and 6. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, CentOS, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on CentOS 7, Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
-1. AEM Forms is supported on Ubuntu 20.04 LTS.
-1. Linux&reg; distribution supported by Adobe Managed Services.
+2. AEM Forms is supported on Ubuntu 20.04 LTS.
+3. Linux&reg; distribution supported by Adobe Managed Services.
 
     >[!NOTE]
     >
@@ -214,9 +215,9 @@ Adobe Experience Manager works with the following server platforms for productio
     >* libXau.x86_64 (1.0.8-2.1.el7)
     >* glibc-locale.x86_64 (2.17 or later)
 
-1. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
-1. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
-1. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
+4. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
+5. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
+6. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
 
 >[!NOTE]
 >
