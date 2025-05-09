@@ -31,7 +31,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!-->
+<!--
 ## Key features and enhancements
 
 ### Sites {#sites}
