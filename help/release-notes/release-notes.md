@@ -31,11 +31,12 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
+<!-->
 ## Key features and enhancements
 
 ### Sites {#sites}
 
-* A ()
+* A () -->
 
 <!--
 ### [!DNL Assets]
@@ -56,13 +57,11 @@ Key features and enhancements in this release include the following:
 -->
 
 
-
 ## Fixed issues in Service Pack 23 {#fixed-issues}
 
-<!-- * _6.5.23.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
+<!-- 6.5.23.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
-
 
 ### [!DNL Sites]{#sites-6523}
 
@@ -82,7 +81,7 @@ Key features and enhancements in this release include the following:
 
 #### Admin User Interface{#sites-adminui-6523}
 
-* Fixed Universal Editor URL Service exception with missing Externalizer endpoints. The Universal Editor URL Service now handles missing author, publish, or local Externalizer endpoints without throwing exceptions. Admin users can open the Page Editor successfully even when some Externalizer configurations are incomplete. (SITES-28877) BLOCKER <!-- & LTS -->
+Fixed Universal Editor URL Service exception with missing Externalizer endpoints. The Universal Editor URL Service now handles missing author, publish, or local Externalizer endpoints without throwing exceptions. Admin users can open the Page Editor successfully even when some Externalizer configurations are incomplete. (SITES-28877) BLOCKER <!-- & LTS -->
 
 #### Classic UI{#sites-classicui-6523} 
 
@@ -91,7 +90,7 @@ Key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
-* Fixed validation test failure for `DeleteVariationIT.testUpdateBasic`. The `DeleteVariationIT.testUpdateBasic` test no longer fails during Service Pack validation runs. The fix corrects a missing text mapping issue in the JSON handling logic, ensuring test stability and avoiding unnecessary test disruptions. (SITES-28022) CRITICAL
+Fixed validation test failure for `DeleteVariationIT.testUpdateBasic`. The `DeleteVariationIT.testUpdateBasic` test no longer fails during Service Pack validation runs. The fix corrects a missing text mapping issue in the JSON handling logic, ensuring test stability and avoiding unnecessary test disruptions. (SITES-28022) CRITICAL
 
 
 <!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
@@ -101,11 +100,11 @@ Key features and enhancements in this release include the following:
 
 #### [!DNL Content Fragments] - Fragments Editor{#sites-fragments-editor-6523}
 
-* Other authors can still publish Content Fragments even when another author checks them out, which is contrary to the intended behavior of the checkout feature. This fix prevents other users from seeing or using the publish buttons in the authoring interface when a Content Fragment is checked out. (SITES-30578) NORMAL <!-- & LTS -->
+Other authors can still publish Content Fragments even when another author checks them out, which is contrary to the intended behavior of the checkout feature. This fix prevents other users from seeing or using the publish buttons in the authoring interface when a Content Fragment is checked out. (SITES-30578) NORMAL <!-- & LTS -->
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6523}
 
-* Fixed GraphQL QueryValidationError with Content Fragment schemas. Refreshing the `cq-dam-cfm-graphql` bundle corrects schema validation errors when using Content Fragment references. The fix ensures that GraphQL queries function properly without requiring manual schema re-alignment or re-publishing after package deployments. (SITES-27001) MAJOR <!-- & LTS -->
+Fixed GraphQL QueryValidationError with Content Fragment schemas. Refreshing the `cq-dam-cfm-graphql` bundle corrects schema validation errors when using Content Fragment references. The fix ensures that GraphQL queries function properly without requiring manual schema re-alignment or re-publishing after package deployments. (SITES-27001) MAJOR <!-- & LTS -->
 
 
 <!-- #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6523}
@@ -119,7 +118,7 @@ Key features and enhancements in this release include the following:
 
 #### Component Console{#sites-component-console-6523}
 
-* Improvements to "Component Live Usage" page loading. Optimizes the "Components Live Usage" page in AEM to prevent empty rows from appearing when scrolling through large datasets. Users loading components with extensive usage references can now experience continuous data loading without unnecessary gaps or empty entries. This experience improves page navigation, tracking accuracy, and management efficiency across component usage reporting. (SITES-26454) MAJOR
+Improvements to "Component Live Usage" page loading. Optimizes the "Components Live Usage" page in AEM to prevent empty rows from appearing when scrolling through large datasets. Users loading components with extensive usage references can now experience continuous data loading without unnecessary gaps or empty entries. This experience improves page navigation, tracking accuracy, and management efficiency across component usage reporting. (SITES-26454) MAJOR
 
 #### Core Backend{#sites-core-backend-6523}
 
@@ -178,29 +177,30 @@ Key features and enhancements in this release include the following:
 
 #### Rich Text Editor{#sites-rte-6523}
 
-* Fix unexpected `<br>` tags in Rich Text Editor with plaintext paste mode. The Rich Text Editor now correctly handles cut-and-paste operations when using plaintext `defaultPasteMode`. The fix prevents the insertion of unexpected `<br>` tags when users cut and paste text inside RTE fields, ensuring clean formatting during content editing. (SITES-27780) MAJOR
+Fix unexpected `<br>` tags in Rich Text Editor with plaintext paste mode. The Rich Text Editor now correctly handles cut-and-paste operations when using plaintext `defaultPasteMode`. The fix prevents the insertion of unexpected `<br>` tags when users cut and paste text inside RTE fields, ensuring clean formatting during content editing. (SITES-27780) MAJOR
 
 #### Universal editor {#sites-universal-editor-6523}
 
-* When multiple requests containing the query parameter are sent to AEM, the login-token cookie may not be returned in time, which can lead to a failed login. (SITES-30659) NORMAL & LTS
+* When multiple requests containing the query parameter are sent to AEM, the login-token cookie may not be returned in time, which can lead to a failed login. (SITES-30659) NORMAL <!-- & LTS -->
 * To ensure compatibility and support with SAML handlers, you must configure the `service.ranking` property so that the `Query Token Auth` handler runs *before* the `SAML Auth` handler. (SITES-29684) NORMAL
 
 ### [!DNL Assets]{#assets-6523}
 
-* The following issues occur on [!DNL AEM] On-Premise (6.5.22.0) Navigation page after selecting  ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**, navigating to **[!UICONTROL Search Adobe Stock]** folder, and selecting an stock image:
+* The following issues occur on [!DNL AEM] On-Premise (6.5.22.0) Navigation page after selecting  ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**, navigating to **[!UICONTROL Search Adobe Stock]** folder, and selecting a stock image:
   * The selected stock image cannot be licensed and saved as clicking **[!UICONTROL License & Save]** displays an empty dropdown.
-  * Selecting the Stock image or re-entering the stock page URL redirects to the [!DNL AEM] homepage, preventing access to the Adobe Stock image. (ASSETS-48687)
-* Issues while managing folders if the name of the folder includes a `/` in its name on the [!DNL AEM] On-Premise (6.5.22.0) Navigation page. (ASSETS-46740)
-* On [!DNL AEM] 6.5 the asset details page does not load from ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]** view due to high memory usage. (ASSETS-46738) 
-* Integration issues with [!DNL InDesign] as `Day CQ DAM Mime Type OSGI` Service incorrectly identifies [!DNL InDesign] files as `x-adobe-indesign` instead of `x-indesign`. (ASSETS-45953)
-* When you reopen and resave the **[!DNL Connected Assets configuration]** on the local sites instance after making a minor change, such as updating the title, the remote instance cannot connect with the local sites instance. (ASSETS-44484)
-* In [!DNL AEM 6.5.21] when an asset upload in list view is cancelled and a second upload is performed, [!DNL AEM] displays an **[!UICONTROL 0 of NaN assets uploaded]** error. (ASSETS-44124)
-* Session leak issue in [!DNL AEM 6.5.21] caused by the out-of-the-box **[!UICONTROL Scheduled publish to Brand Portal]** workflow step. (ASSETS-44104)
-* **[!UICONTROL Out of Memory (OOM)]** errors display in [!DNL  AEM] when processing and publishing images due to deprecated methods in workflows, such as **[!DNL Dam Asset update]** and **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
+  * Selecting the Stock image or re-entering the stock page URL redirects to the [!DNL AEM] homepage, preventing access to the Adobe Stock image. (ASSETS-48687) MAJOR
+* Issues while managing folders if the name of the folder includes a `/` in its name on the [!DNL AEM] On-Premise (6.5.22.0) Navigation page. (ASSETS-46740) MAJOR 
+* On [!DNL AEM] 6.5, the asset details page does not load from ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]** view due to high memory usage. (ASSETS-46738) MAJOR
+* Integration issues with [!DNL InDesign] as `Day CQ DAM Mime Type OSGI` Service incorrectly identifies [!DNL InDesign] files as `x-adobe-indesign` instead of `x-indesign`. (ASSETS-45953) MAJOR
+* [!DNL AEM 6.5.21] session leak traced to the out-of-the-box **[!UICONTROL Scheduled publish to Brand Portal]** workflow step. (ASSETS-44104) MAJOR
+* **[!UICONTROL Out of Memory (OOM)]** errors display in [!DNL AEM] when processing and publishing images. This issues was due to deprecated methods in workflows, such as **[!DNL Dam Asset update]** and **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343) MAJOR
+* After making a minor change&ndash;such as updating the title&ndash;and reopening and resaving the **[!DNL Connected Assets configuration]** on the local Sites instance, the remote instance loses its connection to the local instance. As a result, it cannot establish communication with the local Sites instance.
+ (ASSETS-44484) NORMAL
+* In [!DNL AEM 6.5.21], when an asset upload in list view is canceled and a second upload is performed, [!DNL AEM] displays a **[!UICONTROL 0 of NaN assets uploaded]** error. (ASSETS-44124) MINOR
 
 #### [!DNL Dynamic Media]{#assets-dm-6523}
 
-* Added a metadata property (`jcr:content/metadata/dam:scene7SmartCropStatus`) to assets for identifying failed Smart Crop generations. Enables efficient search, filtering, and reprocessing of assets with Smart Crop issues through manual or automated workflows. (ASSETS-46237) CRITICAL
+Added a metadata property (`jcr:content/metadata/dam:scene7SmartCropStatus`) to assets for identifying failed Smart Crop generations. Enables efficient search, filtering, and reprocessing of assets with Smart Crop issues through manual or automated workflows. (ASSETS-46237) CRITICAL
 
 ### [!DNL Forms]{#forms-6523}
 
@@ -236,7 +236,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Apache Felix {#foundation-apachefelix-6523}
 
-* Fixed a NullPointerException that occurred when uploading private key files to a binary-type property field in CRX, restoring compatibility that was present through Service Pack 16. Enables secure keyfile upload workflows in AEM Managed Services without server errors or disruption to certificate renewal processes. (CQ-4359178) MINOR
+Fixed a NullPointerException that occurred when uploading private key files to a binary-type property field in CRX, restoring compatibility that was present through Service Pack 16. Enables secure keyfile upload workflows in AEM Managed Services without server errors or disruption to certificate renewal processes. (CQ-4359178) MINOR
 
 
 <!--
@@ -282,7 +282,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Jetty{#foundation-jetty-6523}
 
-* Resolved an issue where SNI validation blocked API calls over HTTPS for AEM customers using Dispatcher SSL configurations with custom host headers. Introduces an option to disable SNI validation as part of Jetty configuration, enabling compatibility with specific reverse proxy setups where `mod_proxy` is not feasible. (NPR-42614) NORMAL
+Resolved an issue where SNI validation blocked API calls over HTTPS for AEM customers using Dispatcher SSL configurations with custom host headers. Introduces an option to disable SNI validation as part of Jetty configuration, enabling compatibility with specific reverse proxy setups where `mod_proxy` is not feasible. (NPR-42614) NORMAL
 
 
 <!--
@@ -305,7 +305,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Security{#foundation-security-6523}
 
-* Removal of Guava dependency from the `tsdk-core` repository to improve security and reduce reliance on external libraries. This change is aligned with broader dependency cleanup efforts across AEM 6.5 and supports compliance with modern Java standards. (NPR-42402) NORMAL
+Removal of Guava dependency from the `tsdk-core` repository to improve security and reduce reliance on external libraries. This change is aligned with broader dependency cleanup efforts across AEM 6.5 and supports compliance with modern Java standards. (NPR-42402) NORMAL
 
 
 <!--
@@ -316,19 +316,19 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 #### Translation{#foundation-translation-6523}
 
-* Fixed a NullPointerException (NPE) issue triggered when updating Content Fragments in workflows using **Update Language Copy**. This fix ensures that workflows do not enter a failed state or remain stuck in a running state when editing content tied to translation references. (NPR-42115) MAJOR
+Fixed a NullPointerException (NPE) issue triggered when updating Content Fragments in workflows using **Update Language Copy**. This fix ensures that workflows do not enter a failed state or remain stuck in a running state when editing content tied to translation references. (NPR-42115) MAJOR
 
 #### User interface{#foundation-ui-6523}
 
-* Adds missing `title` attributes to Coral UI dialog box buttons such as **Done** and **Cancel** in component edit dialog boxes to improve accessibility and enable automated validation. Ensures that buttons retain expected attributes across markup rendering, preventing failures in Selenium-based UI tests. (NPR-42412) NORMAL
+Adds missing `title` attributes to Coral UI dialog box buttons such as **Done** and **Cancel** in component edit dialog boxes to improve accessibility and enable automated validation. Ensures that buttons retain expected attributes across markup rendering, preventing failures in Selenium-based UI tests. (NPR-42412) NORMAL
 
 #### WCM{#foundation-wcm-6523}
 
-* Fixed an issue that prevents pages from being added to translation jobs when using **Update Language Copy** in environments with Service Pack 19 or later. Ensures that translation workflows proceed as expected, enabling proper page transfer between language copies without manual intervention. (CQ-4357929) MAJOR
+Fixed an issue that prevents pages from being added to translation jobs when using **Update Language Copy** in environments with Service Pack 19 or later. Ensures that translation workflows proceed as expected, enabling proper page transfer between language copies without manual intervention. (CQ-4357929) MAJOR
 
 #### Workflow{#foundation-workflow-6523}
 
-* Resolved an issue in the `EmailNotificationServiceProcessor` where the `getSegmentId` method returns `null` after hotfix deployment, causing email triggers to fail during workflow processing. Restores correct segment ID resolution logic by ensuring the processor retrieves the required `SegmentInfo` values to support email notification workflows across AEM instances. (CQ-4359755) MAJOR
+Resolved an issue in the `EmailNotificationServiceProcessor` where the `getSegmentId` method returns `null` after hotfix deployment, causing email triggers to fail during workflow processing. Restores correct segment ID resolution logic by ensuring the processor retrieves the required `SegmentInfo` values to support email notification workflows across AEM instances. (CQ-4359755) MAJOR
 
 
 ## Install [!DNL Experience Manager] 6.5.23.0{#install}
