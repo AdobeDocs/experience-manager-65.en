@@ -99,6 +99,13 @@ A selection of data types is available for defining your model:
   * Add one, or more, fields of a single line of text; the maximum length can be defined
 * **Multi line text**
   * A text area that can be Rich Text, Plain Text, or Markdown
+
+    >[!NOTE]
+    >
+    >For performance reasons it is not recommended to have more than ten Rich Text fields in one model. 
+    >
+    >If needed, it is recommended that you use [nested Content Fragments](#fragment-reference-nested-fragments).
+
 * **Number**
   * Add one, or more, numerical fields
 * **Boolean**
