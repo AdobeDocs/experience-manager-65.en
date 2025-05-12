@@ -201,31 +201,32 @@ Fix unexpected `<br>` tags in Rich Text Editor with plaintext paste mode. The Ri
 
 Added a metadata property (`jcr:content/metadata/dam:scene7SmartCropStatus`) to assets for identifying failed Smart Crop generations. Enables efficient search, filtering, and reprocessing of assets with Smart Crop issues through manual or automated workflows. (ASSETS-46237) CRITICAL
 
-#### [!DNL Dynamic Media] Hybrid Mode {#assets-dm-hybrid-6523}
+#### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-6523}
 
-##### Dynamic Media Hybrid Add-on Package (6.5.23 and later)
+##### Dynamic Media - Hybrid add-on package (AEM 6.5.23 and later)
 
-Starting with AEM 6.5 Service Pack 23, a new add-on package is available for Dynamic Media Hybrid mode. This package includes the `cq-scene7-imaging` bundle specifically compatible with the Dynamic Media Hybrid run mode.
+Starting with AEM 6.5 Service Pack 23, a new add-on package is available for Dynamic Media - Hybrid mode. This package includes the `cq-scene7-imaging` bundle specifically compatible with the Dynamic Media - Hybrid run mode.
 
 **Key fix included**
 
-* Fixed an issue in Dynamic Media Hybrid deployments where updates to the `catalog.expiration` parameter under `/conf/global/settings/dam/dm/imageserver` were not reflected on the server or author URLs, despite replication succeeding without errors. The update ensures consistent expiration values between CRX/DE, the server response, and public delivery URLs. In turn, it improves the cache behavior and reliability of image transformations. (ASSETS-44837) MINOR
+* Fixed an issue in Dynamic Media - Hybrid deployments where updates to the `catalog.expiration` parameter under `/conf/global/settings/dam/dm/imageserver` were not reflected on the server or author URLs, despite replication succeeding without errors. The update ensures consistent expiration values between CRX/DE, the server response, and public delivery URLs. In turn, it improves the cache behavior and reliability of image transformations. (ASSETS-44837)
 
 **Important considerations**
 
-* The `cq-scene7-imaging` bundle in the base AEM 6.5.23 installation is *not compatible* with Dynamic Media Hybrid run mode.
-* Installing Service Pack 23 alone does *not automatically update* existing `cq-scene7-imaging` bundles configured for Dynamic Media Hybrid (`-r dynamicmedia` run mode).
+* The `cq-scene7-imaging` bundle in the base AEM 6.5.23 installation is *not compatible* with Dynamic Media - Hybrid run mode.
+* Installing Service Pack 23 alone does *not automatically update* existing `cq-scene7-imaging` bundles configured for Dynamic Media - Hybrid (`-r dynamicmedia` run mode).
 
 **When to install the Hybrid add-on package**
 
-* When upgrading directly to AEM 6.5.23 from 6.5.19 or earlier.
-* When needing fixes specific to the Dynamic Media Hybrid functionality.
-* When deploying a new Dynamic Media Hybrid instance directly from AEM 6.5 GA (General Availability) to Service Pack 23.
+* When upgrading directly to AEM 6.5.23 from AEM 6.5.19 or earlier.
+* When needing fixes specific to the Dynamic Media - Hybrid functionality.
+* When deploying a new Dynamic Media - Hybrid instance directly from AEM 6.5 GA (General Availability) to Service Pack 23.
 
-The Hybrid add-on package is available on Software Distribution and is publicly accessible when AEM 6.5.23 is officially released.
+**Download URL**
 
-Download URL: [Dynamic Media Hybrid Add-on Package](https://author-p11553-e21065.adobeaemcloud.com/ui#/aem/assetdetails.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-dam-delivery-65-hybrid-addon-1.0.zip)
+The Hybrid add-on package is available on Software Distribution and is publicly accessible when AEM 6.5.23 officially releases on May 22, 2025.
 
+[Dynamic Media - Hybrid add-on package](https://author-p11553-e21065.adobeaemcloud.com/ui#/aem/assetdetails.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-dam-delivery-65-hybrid-addon-1.0.zip).
 
 
 ### [!DNL Forms]{#forms-6523}
