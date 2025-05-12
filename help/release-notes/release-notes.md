@@ -222,11 +222,11 @@ Starting with AEM 6.5 Service Pack 23, a new add-on package is available for Dyn
 * When needing fixes specific to the Dynamic Media - Hybrid functionality.
 * When deploying a new Dynamic Media - Hybrid instance directly from AEM 6.5 GA (General Availability) to Service Pack 23.
 
-**Download URL**
+**Download Hybrid add-on package**
 
 The Hybrid add-on package is available on Software Distribution and is publicly accessible when AEM 6.5.23 officially releases on May 22, 2025.
 
-[Dynamic Media - Hybrid add-on package](https://author-p11553-e21065.adobeaemcloud.com/ui#/aem/assetdetails.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-dam-delivery-65-hybrid-addon-1.0.zip).
+[Download Dynamic Media - Hybrid add-on package](https://author-p11553-e21065.adobeaemcloud.com/ui#/aem/assetdetails.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-dam-delivery-65-hybrid-addon-1.0.zip).
 
 
 ### [!DNL Forms]{#forms-6523}
