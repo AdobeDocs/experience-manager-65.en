@@ -193,14 +193,40 @@ Fix unexpected `<br>` tags in Rich Text Editor with plaintext paste mode. The Ri
 * On [!DNL AEM] 6.5, the asset details page does not load from ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]** view due to high memory usage. (ASSETS-46738) MAJOR
 * Integration issues with [!DNL InDesign] as `Day CQ DAM Mime Type OSGI` Service incorrectly identifies [!DNL InDesign] files as `x-adobe-indesign` instead of `x-indesign`. (ASSETS-45953) MAJOR
 * [!DNL AEM 6.5.21] session leak traced to the out-of-the-box **[!UICONTROL Scheduled publish to Brand Portal]** workflow step. (ASSETS-44104) MAJOR
-* **[!UICONTROL Out of Memory (OOM)]** errors display in [!DNL AEM] when processing and publishing images. This issues was due to deprecated methods in workflows, such as **[!DNL Dam Asset update]** and **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343) MAJOR
-* After making a minor change&ndash;such as updating the title&ndash;and reopening and resaving the **[!DNL Connected Assets configuration]** on the local Sites instance, the remote instance loses its connection to the local instance. As a result, it cannot establish communication with the local Sites instance.
- (ASSETS-44484) NORMAL
+* **[!UICONTROL Out of Memory (OOM)]** errors display in [!DNL AEM] when processing and publishing images. This issue was due to deprecated methods in workflows, such as **[!DNL Dam Asset update]** and **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343) MAJOR
+* After you make a minor change, such as updating the title, you reopen and resave the **[!DNL Connected Assets configuration]** on the local Sites instance. The remote instance then loses its connection to the local instance. As a result, it cannot establish communication with the local Sites instance. (ASSETS-44484) NORMAL
 * In [!DNL AEM 6.5.21], when an asset upload in list view is canceled and a second upload is performed, [!DNL AEM] displays a **[!UICONTROL 0 of NaN assets uploaded]** error. (ASSETS-44124) MINOR
 
 #### [!DNL Dynamic Media]{#assets-dm-6523}
 
 Added a metadata property (`jcr:content/metadata/dam:scene7SmartCropStatus`) to assets for identifying failed Smart Crop generations. Enables efficient search, filtering, and reprocessing of assets with Smart Crop issues through manual or automated workflows. (ASSETS-46237) CRITICAL
+
+#### [!DNL Dynamic Media] Hybrid Mode {#assets-dm-hybrid-6523}
+
+##### Dynamic Media Hybrid Add-on Package (6.5.23 and later)
+
+Starting with AEM 6.5 Service Pack 23, a new add-on package is available for Dynamic Media Hybrid mode. This package includes the `cq-scene7-imaging` bundle specifically compatible with the Dynamic Media Hybrid run mode.
+
+**Key fix included**
+
+* Fixed an issue in Dynamic Media Hybrid deployments where updates to the `catalog.expiration` parameter under `/conf/global/settings/dam/dm/imageserver` were not reflected on the server or author URLs, despite replication succeeding without errors. The update ensures consistent expiration values between CRX/DE, the server response, and public delivery URLs. In turn, it improves the cache behavior and reliability of image transformations. (ASSETS-44837) MINOR
+
+**Important considerations**
+
+* The `cq-scene7-imaging` bundle in the base AEM 6.5.23 installation is *not compatible* with Dynamic Media Hybrid run mode.
+* Installing Service Pack 23 alone does *not automatically update* existing `cq-scene7-imaging` bundles configured for Dynamic Media Hybrid (`-r dynamicmedia` run mode).
+
+**When to install the Hybrid add-on package**
+
+* When upgrading directly to AEM 6.5.23 from 6.5.19 or earlier.
+* When needing fixes specific to the Dynamic Media Hybrid functionality.
+* When deploying a new Dynamic Media Hybrid instance directly from AEM 6.5 GA (General Availability) to Service Pack 23.
+
+The Hybrid add-on package is available on Software Distribution and is publicly accessible when AEM 6.5.23 is officially released.
+
+Download URL: [Dynamic Media Hybrid Add-on Package](https://author-p11553-e21065.adobeaemcloud.com/ui#/aem/assetdetails.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-dam-delivery-65-hybrid-addon-1.0.zip)
+
+
 
 ### [!DNL Forms]{#forms-6523}
 
@@ -271,7 +297,7 @@ Fixed a NullPointerException that occurred when uploading private key files to a
 * Updated JS Use Scripts in Apache Sling to load only on-demand instead of eagerly at startup, eliminating thread contention and reducing the risk of publish servers becoming unresponsive under load. This change improves server stability and response times during high-traffic scenarios by preventing resource locking caused by early script resolution. (GRANITE-56611) MAJOR
 * Corrected an issue in AEM Omnisearch where placeholders for input fields incorrectly display as labels, leading to visual confusion. Ensures proper rendering of placeholders across filter fields, maintaining consistent and accessible form behavior. (GRANITE-51791) NORMAL
 * Resolved a server error triggered when selecting more than 30 CFMs (Content Fragment Models) with multifield references in the Content Fragment model editor. Enhanced the filter suggestion component to support POST operations. This ability allows the proper handling of large reference sets during Content Fragment creation and improving stability for high-volume model configurations. (GRANITE-57164) MINOR
-* Resolved an issue in CFMs where clicking near a checkbox toggled its state unintentionally. Updated styles to restrict click activation strictly to the checkbox element, preventing accidental user interactions and improving form usability and accessibility. (GRANITE-52384) MINOR
+* Resolved an issue in CFMs where clicking close to a checkbox toggled its state unintentionally. Updated styles to restrict click activation strictly to the checkbox element, preventing accidental user interactions and improving form usability and accessibility. (GRANITE-52384) MINOR
 
 
 <!--
