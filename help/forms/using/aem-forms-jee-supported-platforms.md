@@ -633,7 +633,8 @@ For additional requirements see:
 - Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 - Administrative privileges to install Designer
 - Microsoft&reg; Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
-- OpenSSL 3 (required at default location on OS)
+- OpenSSL 3 (required at default location on OS).
+The libraries(libcrypto.so.3 and libssl.so.3) must be available in the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
 
 ### Browsers {#browsers}
 
