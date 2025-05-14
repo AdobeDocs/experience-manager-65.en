@@ -209,18 +209,18 @@ Starting with AEM 6.5 Service Pack 23, a new add-on package is available for Dyn
 
 **Key fix included**
 
-* Fixed an issue in Dynamic Media - Hybrid deployments where updates to the `catalog.expiration` parameter under `/conf/global/settings/dam/dm/imageserver` were not reflected on the server or author URLs, despite replication succeeding without errors. The update ensures consistent expiration values between CRX/DE, the server response, and public delivery URLs. In turn, it improves the cache behavior and reliability of image transformations. (ASSETS-44837)
+Fixed an issue in Dynamic Media - Hybrid deployments where updates to the `catalog.expiration` parameter under `/conf/global/settings/dam/dm/imageserver` were not reflected on the server or author URLs, despite replication succeeding without errors. The update ensures consistent expiration values between CRX/DE, the server response, and public delivery URLs. In turn, it improves the cache behavior and reliability of image transformations. (ASSETS-44837)
 
 **Important considerations**
 
-* The `cq-scene7-imaging` bundle in the base AEM 6.5.23 installation is *not compatible* with Dynamic Media - Hybrid run mode.
-* Installing Service Pack 23 alone does *not automatically update* existing `cq-scene7-imaging` bundles configured for Dynamic Media - Hybrid (`-r dynamicmedia` run mode).
+* The `cq-scene7-imaging` bundle in the base AEM 6.5.23 (and later) installation is *not compatible* with Dynamic Media - Hybrid run mode.
+* Installing Service Pack 23 (and later) alone does *not automatically update* existing `cq-scene7-imaging` bundle on AEM instances configured for Dynamic Media - Hybrid (`-r dynamicmedia` run mode).
 
 **When to install the Hybrid add-on package**
 
-* When upgrading directly to AEM 6.5.23 from AEM 6.5.19 or earlier.
+* When upgrading directly to AEM 6.5.23 (and later) from AEM 6.5.19 or earlier.
 * When needing fixes specific to the Dynamic Media - Hybrid functionality.
-* When deploying a new Dynamic Media - Hybrid instance directly from AEM 6.5 GA (General Availability) to Service Pack 23.
+* When deploying a new Dynamic Media - Hybrid instance directly from AEM 6.5 GA (General Availability) to Service Pack 23 (and later).
 
 **Download Hybrid add-on package**
 
