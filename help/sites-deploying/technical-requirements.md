@@ -214,7 +214,8 @@ Adobe Experience Manager works with the following server platforms for productio
     >* libxcb.x86_64 (1.13-1.el7)
     >* libXau.x86_64 (1.0.8-2.1.el7)
     >* glibc-locale.x86_64 (2.17 or later)
-    >* OpenSSL 3 (required at default location on OS). The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable.
+    >* OpenSSL 3 (required at default location on OS). 
+    >*     The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
 
 4. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
 5. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
