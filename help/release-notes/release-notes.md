@@ -67,30 +67,30 @@ Key features and enhancements in this release include the following:
 
 #### Accessibility {#sites-accessibility-6523}
 
-* Fixed an accessibility issue in the AEM Page Editor where keyboard focus unexpectedly resets to the start of the Demographic toolbar after activating buttons such as Persona, Cart, or Abandoned. Focus now remains on the activated button to support consistent keyboard navigation and screen reader workflows. (SITES-25306) CRITICAL
-* Fixed a critical accessibility issue in AEM Page Editor where canvas elements across multiple dialog boxes and modals (for example, Asset rail or Layout preview) could not be operated using only a keyboard. All interactive canvas elements now support keyboard-only navigation, ensuring compliance with WCAG 2.1 success criterion 2.1.1 (SITE-25256) CRITICAL
-* Fixed an accessibility issue in the Sites Admin UI where interactive list items in the Create pop-up used incorrect ARIA roles. Elements that behaved like links were assigned `role="listitem"` instead of `role="menuitem"`, violating ARIA design patterns and confusing screen readers. Updates ensure that all list components follow proper semantic roles for improved keyboard and assistive technology support. (SITES-24493) MAJOR
-* Fixed accessibility label association issue for page title and tags fields. The AEM interface now correctly associates accessibility labels with the "Title" and "Page Title" fields when using screen readers like JAWS. The fix ensures proper label reading and improves ADA compliance across page creation, properties, and move workflows. (SITES-27149) MAJOR
-* Fixed an accessibility issue with table identification in the permissions dialog box. The permissions table in AEM now uses correct ARIA roles and attributes to ensure screen readers like JAWS properly identify it as a table. The fix improves accessibility compliance and ensures that users receive accurate navigation and content announcements. (SITES-27140) MAJOR
-* Fixed missing visual label for comment input fields in timeline. Corrected missing visual labels for "comment" input fields under the timeline section to improve accessibility. The update ensures that screen readers can accurately announce the field labels. This experience enhances form navigation and submission for all users, particularly those individuals that rely on assistive technologies. (SITES-26903) MAJOR
-* Fixed keyboard accessibility for ellipsis button in timeline comments. Enabled keyboard navigation for the ellipsis (three dots) button next to comments under the timeline section. Users can now access and interact with the button using the tab key, improving accessibility for users who rely on keyboard-only navigation. (SITES-26891) NORMAL
-* Improved NVDA/Narrator announcements for search results in selection dialog boxes. Updated the Open Selection dialog box to announce whether search results are found or not when using screen readers, such as NVDA or Narrator. This improvement helps users relying on assistive technologies understand the outcome of their search actions without needing visual confirmation. (SITES-26883) NORMAL
-* Corrected ARIA role for ellipsis icon beside comment input field. Updated the ellipsis (three dots) icon beside the comment input field to use the correct ARIA role, ensuring screen readers can accurately identify the element. This improvement enhances accessibility compliance and improves the experience for users relying on assistive technologies. (SITES-26881) NORMAL
-* Corrected invalid ARIA attributes in Coral UI components. Updated Coral UI components to ensure all ARIA attributes use valid values, improving accessibility-compliance. In particular, cases were addressed where invalid values like `aria-modal="dialog"` were incorrectly assigned. This enhancement enables screen readers to interpret dialog box elements correctly, improving accessibility for users relying on assistive technologies. (SITES-26873) NORMAL
-* Improved visibility and tooltips for icons in reflow scenarios. Enhanced the reflow behavior to ensure tooltips display correctly for **Download**, **Reprocess assets**, and **Checkout** icons. Focused on an accessibility issue where icons and their labels became invisible when the viewport resized or browser zoom settings changed. This fix supports users with low vision by maintaining visibility and providing proper icon descriptions during reflow. (SITES-26871) NORMAL
+* Fixed an accessibility issue in the AEM Page Editor where keyboard focus unexpectedly resets to the start of the Demographic toolbar after activating buttons such as Persona, Cart, or Abandoned. Focus now remains on the activated button to support consistent keyboard navigation and screen reader workflows. (SITES-25306) 
+* Fixed a critical accessibility issue in AEM Page Editor where canvas elements across multiple dialog boxes and modals (for example, Asset rail or Layout preview) could not be operated using only a keyboard. All interactive canvas elements now support keyboard-only navigation, ensuring compliance with WCAG 2.1 success criterion 2.1.1 (SITE-25256) 
+* Fixed an accessibility issue in the Sites Admin UI where interactive list items in the Create pop-up used incorrect ARIA roles. Elements that behaved like links were assigned `role="listitem"` instead of `role="menuitem"`, violating ARIA design patterns and confusing screen readers. Updates ensure that all list components follow proper semantic roles for improved keyboard and assistive technology support. (SITES-24493) 
+* Fixed accessibility label association issue for page title and tags fields. The AEM interface now correctly associates accessibility labels with the "Title" and "Page Title" fields when using screen readers like JAWS. The fix ensures proper label reading and improves ADA compliance across page creation, properties, and move workflows. (SITES-27149) 
+* Fixed an accessibility issue with table identification in the permissions dialog box. The permissions table in AEM now uses correct ARIA roles and attributes to ensure screen readers like JAWS properly identify it as a table. The fix improves accessibility compliance and ensures that users receive accurate navigation and content announcements. (SITES-27140) 
+* Fixed missing visual label for comment input fields in timeline. Corrected missing visual labels for "comment" input fields under the timeline section to improve accessibility. The update ensures that screen readers can accurately announce the field labels. This experience enhances form navigation and submission for all users, particularly those individuals that rely on assistive technologies. (SITES-26903) 
+* Fixed keyboard accessibility for ellipsis button in timeline comments. Enabled keyboard navigation for the ellipsis (three dots) button next to comments under the timeline section. Users can now access and interact with the button using the tab key, improving accessibility for users who rely on keyboard-only navigation. (SITES-26891) 
+* Improved NVDA/Narrator announcements for search results in selection dialog boxes. Updated the Open Selection dialog box to announce whether search results are found or not when using screen readers, such as NVDA or Narrator. This improvement helps users relying on assistive technologies understand the outcome of their search actions without needing visual confirmation. (SITES-26883) 
+* Corrected ARIA role for ellipsis icon beside comment input field. Updated the ellipsis (three dots) icon beside the comment input field to use the correct ARIA role, ensuring screen readers can accurately identify the element. This improvement enhances accessibility compliance and improves the experience for users relying on assistive technologies. (SITES-26881) 
+* Corrected invalid ARIA attributes in Coral UI components. Updated Coral UI components to ensure all ARIA attributes use valid values, improving accessibility-compliance. In particular, cases were addressed where invalid values like `aria-modal="dialog"` were incorrectly assigned. This enhancement enables screen readers to interpret dialog box elements correctly, improving accessibility for users relying on assistive technologies. (SITES-26873) 
+* Improved visibility and tooltips for icons in reflow scenarios. Enhanced the reflow behavior to ensure tooltips display correctly for **Download**, **Reprocess assets**, and **Checkout** icons. Focused on an accessibility issue where icons and their labels became invisible when the viewport resized or browser zoom settings changed. This fix supports users with low vision by maintaining visibility and providing proper icon descriptions during reflow. (SITES-26871) 
 
 #### Admin User Interface{#sites-adminui-6523}
 
-Fixed Universal Editor URL Service exception with missing Externalizer endpoints. The Universal Editor URL Service now handles missing author, publish, or local Externalizer endpoints without throwing exceptions. Admin users can open the Page Editor successfully even when some Externalizer configurations are incomplete. (SITES-28877) BLOCKER <!-- & LTS -->
+Fixed Universal Editor URL Service exception with missing Externalizer endpoints. The Universal Editor URL Service now handles missing author, publish, or local Externalizer endpoints without throwing exceptions. Admin users can open the Page Editor successfully even when some Externalizer configurations are incomplete. (SITES-28877)  <!-- LTS -->
 
 #### Classic UI{#sites-classicui-6523} 
 
-* An issue in Classic UI dialogs boxes where toggling a button would hide a text area and fail to display it again on subsequent clicks. The fix ensures that the text area properly reappears when toggled, restoring expected behavior and preventing disruptions to dynamic dialog box workflows. (SITES-30230) MAJOR
-* Fixed broken Classic UI image asset finder functionality after SP22 upgrade. The Classic UI image asset finder now properly handles asset names containing spaces or special characters. This update ensures that the asset finder encodes file names correctly, preventing search failures and allowing authors to locate and select image assets without errors. (SITES-29151) MAJOR
+* An issue in Classic UI dialogs boxes where toggling a button would hide a text area and fail to display it again on subsequent clicks. The fix ensures that the text area properly reappears when toggled, restoring expected behavior and preventing disruptions to dynamic dialog box workflows. (SITES-30230) 
+* Fixed broken Classic UI image asset finder functionality after SP22 upgrade. The Classic UI image asset finder now properly handles asset names containing spaces or special characters. This update ensures that the asset finder encodes file names correctly, preventing search failures and allowing authors to locate and select image assets without errors. (SITES-29151) 
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
-Fixed validation test failure for `DeleteVariationIT.testUpdateBasic`. The `DeleteVariationIT.testUpdateBasic` test no longer fails during Service Pack validation runs. The fix corrects a missing text mapping issue in the JSON handling logic, ensuring test stability and avoiding unnecessary test disruptions. (SITES-28022) CRITICAL
+Fixed validation test failure for `DeleteVariationIT.testUpdateBasic`. The `DeleteVariationIT.testUpdateBasic` test no longer fails during Service Pack validation runs. The fix corrects a missing text mapping issue in the JSON handling logic, ensuring test stability and avoiding unnecessary test disruptions. (SITES-28022) 
 
 
 <!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
@@ -100,11 +100,11 @@ Fixed validation test failure for `DeleteVariationIT.testUpdateBasic`. The `Dele
 
 #### [!DNL Content Fragments] - Fragments Editor{#sites-fragments-editor-6523}
 
-Other authors can still publish Content Fragments even when another author checks them out, which is contrary to the intended behavior of the checkout feature. This fix prevents other users from seeing or using the publish buttons in the authoring interface when a Content Fragment is checked out. (SITES-30578) NORMAL <!-- & LTS -->
+Other authors can still publish Content Fragments even when another author checks them out, which is contrary to the intended behavior of the checkout feature. This fix prevents other users from seeing or using the publish buttons in the authoring interface when a Content Fragment is checked out. (SITES-30578)  <!-- LTS -->
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6523}
 
-Fixed GraphQL QueryValidationError with Content Fragment schemas. Refreshing the `cq-dam-cfm-graphql` bundle corrects schema validation errors when using Content Fragment references. The fix ensures that GraphQL queries function properly without requiring manual schema re-alignment or re-publishing after package deployments. (SITES-27001) MAJOR <!-- & LTS -->
+Fixed GraphQL QueryValidationError with Content Fragment schemas. Refreshing the `cq-dam-cfm-graphql` bundle corrects schema validation errors when using Content Fragment references. The fix ensures that GraphQL queries function properly without requiring manual schema re-alignment or re-publishing after package deployments. (SITES-27001)  <!-- LTS -->
 
 
 <!-- #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6523}
@@ -118,13 +118,13 @@ Fixed GraphQL QueryValidationError with Content Fragment schemas. Refreshing the
 
 #### Component Console{#sites-component-console-6523}
 
-Improvements to "Component Live Usage" page loading. Optimizes the "Components Live Usage" page in AEM to prevent empty rows from appearing when scrolling through large datasets. Users loading components with extensive usage references can now experience continuous data loading without unnecessary gaps or empty entries. This experience improves page navigation, tracking accuracy, and management efficiency across component usage reporting. (SITES-26454) MAJOR
+Improvements to "Component Live Usage" page loading. Optimizes the "Components Live Usage" page in AEM to prevent empty rows from appearing when scrolling through large datasets. Users loading components with extensive usage references can now experience continuous data loading without unnecessary gaps or empty entries. This experience improves page navigation, tracking accuracy, and management efficiency across component usage reporting. (SITES-26454) 
 
 #### Core Backend{#sites-core-backend-6523}
 
-* Fixed Content Finder asset listing failure caused by invalid asset names. The Content Finder now handles asset names with non-encodable characters correctly. Asset listing in the Page Editor no longer fails or throw exceptions when encountering assets with problematic names. (SITES-28722) CRITICAL 
-* An issue where the `SearchPathLimiter` component generated excessive log entries by printing messages at the ERROR level for each invocation. This behavior began after Service Pack 17 and led to performance concerns due to extremely high log volumes. The fix downgrades the log level to DEBUG, significantly reducing log noise and improving system monitoring and diagnostic efficiency. (SITES-29835) MAJOR
-* Improperly formatted XMP metadata triggered an error during processing of image assets in the `ValidationDataServlet`. The fix ensures compliant metadata handling and avoids redundant parsing of invalid properties. (SITE-30683) NORMAL & LTS
+* Fixed Content Finder asset listing failure caused by invalid asset names. The Content Finder now handles asset names with non-encodable characters correctly. Asset listing in the Page Editor no longer fails or throw exceptions when encountering assets with problematic names. (SITES-28722)  
+* An issue where the `SearchPathLimiter` component generated excessive log entries by printing messages at the ERROR level for each invocation. This behavior began after Service Pack 17 and led to performance concerns due to extremely high log volumes. The fix downgrades the log level to DEBUG, significantly reducing log noise and improving system monitoring and diagnostic efficiency. (SITES-29835) 
+* Improperly formatted XMP metadata triggered an error during processing of image assets in the `ValidationDataServlet`. The fix ensures compliant metadata handling and avoids redundant parsing of invalid properties. (SITE-30683)  <!-- LTS -->
 
 
 <!-- #### Core Components{#sites-core-components-6523}
@@ -146,8 +146,8 @@ Improvements to "Component Live Usage" page loading. Optimizes the "Components L
 
 #### Launches{#sites-launches-6523}
 
-* Fixed incorrect launch date display between December 25 and December 31. The Launches UI now displays dates between December 25 and December 31 with the correct year. The fix ensures that dates no longer incorrectly show the following year, avoiding confusion during campaign planning and scheduling. (SITES-28706) MAJOR
-* Fixed broken AEM Launch templates after SP22 upgrade. AEM Launch templates now load correctly after a Service Pack 22 upgrade. The fix corrects invalid data in internal launch configurations, allowing users to view, edit, and create Launches without errors or missing fields. (SITES-28504) NORMAL
+* Fixed incorrect launch date display between December 25 and December 31. The Launches UI now displays dates between December 25 and December 31 with the correct year. The fix ensures that dates no longer incorrectly show the following year, avoiding confusion during campaign planning and scheduling. (SITES-28706) 
+* Fixed broken AEM Launch templates after SP22 upgrade. AEM Launch templates now load correctly after a Service Pack 22 upgrade. The fix corrects invalid data in internal launch configurations, allowing users to view, edit, and create Launches without errors or missing fields. (SITES-28504) 
 
 
 <!-- #### Link Checker{#sites-link-checker-6523}
@@ -161,13 +161,13 @@ Improvements to "Component Live Usage" page loading. Optimizes the "Components L
 
 #### Page Editor{#sites-pageeditor-6523}
 
-* Fixed AssetPicker loading issue at lower screen resolutions. The AssetPicker now loads assets correctly when users scroll at lower screen resolutions (1728&times;1117 or smaller). Users no longer experience missing assets while scrolling, improving asset management across different device breakpoints. (SITES-28065) MAJOR
-* Fixed missing screen reader announcement for page lock and unlock actions. The Page Editor now announces the "Info: The page has been locked/unlocked" message correctly when users activate the lock/unlock button. The fix improves accessibility compliance and ensures that screen reader users receive dynamic updates during page editing. (SITES-27143) NORMAL
-* Improved keyboard focus behavior for component actions in AEM Authoring. Enhanced keyboard navigation in the AEM Author tool to ensure focus remains on the newly created or selected component after actions such as Configure, Delete, or Convert. Previously, focus shifted to the top of the page, causing accessibility compliance issues. This update improves the user experience for keyboard and assistive technology users. It does so by maintaining logical focus progression within the editing workflow. (SITES-26549) NORMAL
-* Improved tab navigation in Author dialog boxes. Enhances keyboard navigation in AEM Author dialog boxes by allowing users to continue tabbing forward after reaching the Description edit box. Previously, focus trapping at the Description field blocked further navigation without using special key combinations. The update ensures that users can move through fields seamlessly using only the Tab key, improving accessibility compliance and user experience. (SITES-26524) NORMAL
-* A regression was introduced in AEM 6.5 Service Pack 22 that prevented users from including spaces in Launch titles. The fix restores the ability to use spaces, allowing teams to define and organize Launch names more flexibly, in line with expected behavior. (SITES-29414) MINOR
-* Fixed resizing issue for components inside Layout Containers after hide/unhide actions. The Page Editor now properly calculates column values after hiding and unhiding a Layout Container. Users can resize components without errors, and columns display correctly during resizing actions. (SITES-28463) MINOR
-* Fixed Content Tree button misplacement in Page Editor. The Page Editor now correctly positions the Content Tree configuration button under the intended "Head Teaser" dialog box instead of the wrong section. The fix updates the CSS for the Content Tree dialog box to use `top:0` instead of `bottom:0`, ensuring proper button placement. (SITES-28448) MINOR
+* Fixed AssetPicker loading issue at lower screen resolutions. The AssetPicker now loads assets correctly when users scroll at lower screen resolutions (1728&times;1117 or smaller). Users no longer experience missing assets while scrolling, improving asset management across different device breakpoints. (SITES-28065) 
+* Fixed missing screen reader announcement for page lock and unlock actions. The Page Editor now announces the "Info: The page has been locked/unlocked" message correctly when users activate the lock/unlock button. The fix improves accessibility compliance and ensures that screen reader users receive dynamic updates during page editing. (SITES-27143) 
+* Improved keyboard focus behavior for component actions in AEM Authoring. Enhanced keyboard navigation in the AEM Author tool to ensure focus remains on the newly created or selected component after actions such as Configure, Delete, or Convert. Previously, focus shifted to the top of the page, causing accessibility compliance issues. This update improves the user experience for keyboard and assistive technology users. It does so by maintaining logical focus progression within the editing workflow. (SITES-26549) 
+* Improved tab navigation in Author dialog boxes. Enhances keyboard navigation in AEM Author dialog boxes by allowing users to continue tabbing forward after reaching the Description edit box. Previously, focus trapping at the Description field blocked further navigation without using special key combinations. The update ensures that users can move through fields seamlessly using only the Tab key, improving accessibility compliance and user experience. (SITES-26524) 
+* A regression was introduced in AEM 6.5 Service Pack 22 that prevented users from including spaces in Launch titles. The fix restores the ability to use spaces, allowing teams to define and organize Launch names more flexibly, in line with expected behavior. (SITES-29414) 
+* Fixed resizing issue for components inside Layout Containers after hide/unhide actions. The Page Editor now properly calculates column values after hiding and unhiding a Layout Container. Users can resize components without errors, and columns display correctly during resizing actions. (SITES-28463) 
+* Fixed Content Tree button misplacement in Page Editor. The Page Editor now correctly positions the Content Tree configuration button under the intended "Head Teaser" dialog box instead of the wrong section. The fix updates the CSS for the Content Tree dialog box to use `top:0` instead of `bottom:0`, ensuring proper button placement. (SITES-28448) 
 
 
 <!-- #### Replication{#sites-replication-6523}
@@ -177,29 +177,29 @@ Improvements to "Component Live Usage" page loading. Optimizes the "Components L
 
 #### Rich Text Editor{#sites-rte-6523}
 
-Fix unexpected `<br>` tags in Rich Text Editor with plaintext paste mode. The Rich Text Editor now correctly handles cut-and-paste operations when using plaintext `defaultPasteMode`. The fix prevents the insertion of unexpected `<br>` tags when users cut and paste text inside RTE fields, ensuring clean formatting during content editing. (SITES-27780) MAJOR
+Fix unexpected `<br>` tags in Rich Text Editor with plaintext paste mode. The Rich Text Editor now correctly handles cut-and-paste operations when using plaintext `defaultPasteMode`. The fix prevents the insertion of unexpected `<br>` tags when users cut and paste text inside RTE fields, ensuring clean formatting during content editing. (SITES-27780) 
 
 #### Universal editor {#sites-universal-editor-6523}
 
-* When multiple requests containing the query parameter are sent to AEM, the login-token cookie may not be returned in time, which can lead to a failed login. (SITES-30659) NORMAL <!-- & LTS -->
-* To ensure compatibility and support with SAML handlers, you must configure the `service.ranking` property so that the `Query Token Auth` handler runs *before* the `SAML Auth` handler. (SITES-29684) NORMAL
+* When multiple requests containing the query parameter are sent to AEM, the login-token cookie may not be returned in time, which can lead to a failed login. (SITES-30659)  <!-- LTS -->
+* To ensure compatibility and support with SAML handlers, you must configure the `service.ranking` property so that the `Query Token Auth` handler runs *before* the `SAML Auth` handler. (SITES-29684) 
 
 ### [!DNL Assets]{#assets-6523}
 
 * The following issues occur on [!DNL AEM] On-Premise (6.5.22.0) Navigation page after selecting  ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**, navigating to **[!UICONTROL Search Adobe Stock]** folder, and selecting a stock image:
   * The selected stock image cannot be licensed and saved as clicking **[!UICONTROL License & Save]** displays an empty dropdown.
-  * Selecting the Stock image or re-entering the stock page URL redirects to the [!DNL AEM] homepage, preventing access to the Adobe Stock image. (ASSETS-48687) MAJOR
-* Issues while managing folders if the name of the folder includes a `/` in its name on the [!DNL AEM] On-Premise (6.5.22.0) Navigation page. (ASSETS-46740) MAJOR 
-* On [!DNL AEM] 6.5, the asset details page does not load from ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]** view due to high memory usage. (ASSETS-46738) MAJOR
-* Integration issues with [!DNL InDesign] as `Day CQ DAM Mime Type OSGI` Service incorrectly identifies [!DNL InDesign] files as `x-adobe-indesign` instead of `x-indesign`. (ASSETS-45953) MAJOR
-* [!DNL AEM 6.5.21] session leak traced to the out-of-the-box **[!UICONTROL Scheduled publish to Brand Portal]** workflow step. (ASSETS-44104) MAJOR
-* **[!UICONTROL Out of Memory (OOM)]** errors display in [!DNL AEM] when processing and publishing images. This issue was due to deprecated methods in workflows, such as **[!DNL Dam Asset update]** and **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343) MAJOR
-* After you make a minor change, such as updating the title, you reopen and resave the **[!DNL Connected Assets configuration]** on the local Sites instance. The remote instance then loses its connection to the local instance. As a result, it cannot establish communication with the local Sites instance. (ASSETS-44484) NORMAL
-* In [!DNL AEM 6.5.21], when an asset upload in list view is canceled and a second upload is performed, [!DNL AEM] displays a **[!UICONTROL 0 of NaN assets uploaded]** error. (ASSETS-44124) MINOR
+  * Selecting the Stock image or re-entering the stock page URL redirects to the [!DNL AEM] homepage, preventing access to the Adobe Stock image. (ASSETS-48687) 
+* Issues while managing folders if the name of the folder includes a `/` in its name on the [!DNL AEM] On-Premise (6.5.22.0) Navigation page. (ASSETS-46740)  
+* On [!DNL AEM] 6.5, the asset details page does not load from ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]** view due to high memory usage. (ASSETS-46738) 
+* Integration issues with [!DNL InDesign] as `Day CQ DAM Mime Type OSGI` Service incorrectly identifies [!DNL InDesign] files as `x-adobe-indesign` instead of `x-indesign`. (ASSETS-45953) 
+* [!DNL AEM 6.5.21] session leak traced to the out-of-the-box **[!UICONTROL Scheduled publish to Brand Portal]** workflow step. (ASSETS-44104) 
+* **[!UICONTROL Out of Memory (OOM)]** errors display in [!DNL AEM] when processing and publishing images. This issue was due to deprecated methods in workflows, such as **[!DNL Dam Asset update]** and **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343) 
+* After you make a minor change, such as updating the title, you reopen and resave the **[!DNL Connected Assets configuration]** on the local Sites instance. The remote instance then loses its connection to the local instance. As a result, it cannot establish communication with the local Sites instance. (ASSETS-44484) 
+* In [!DNL AEM 6.5.21], when an asset upload in list view is canceled and a second upload is performed, [!DNL AEM] displays a **[!UICONTROL 0 of NaN assets uploaded]** error. (ASSETS-44124) 
 
 #### [!DNL Dynamic Media]{#assets-dm-6523}
 
-Added a metadata property (`jcr:content/metadata/dam:scene7SmartCropStatus`) to assets for identifying failed Smart Crop generations. Enables efficient search, filtering, and reprocessing of assets with Smart Crop issues through manual or automated workflows. (ASSETS-46237) CRITICAL
+Added a metadata property (`jcr:content/metadata/dam:scene7SmartCropStatus`) to assets for identifying failed Smart Crop generations. Enables efficient search, filtering, and reprocessing of assets with Smart Crop issues through manual or automated workflows. (ASSETS-46237) 
 
 #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-6523}
 
@@ -235,9 +235,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
  
 #### Forms Captcha {#forms-captcha-6523} 
 
-* Improved reCAPTCHA alerting in Adaptive Forms by updating submit error codes to 400. Also, refined log alerts to distinguish between timeouts, expirations, and bot detection failures, enhancing troubleshooting accuracy and system observability. (FORMS-19240) NORMAL
-* Closed an unclosed `ResourceResolver` instance in `ReCaptchaConfigurationServiceImpl` to prevent potential resource leaks and improve system stability when using reCAPTCHA integrations in AEM Forms. (FORMS-19242) NORMAL
-* Improved CAPTCHA configuration handling for AEM Forms by ensuring the correct configuration binds to each form when multiple entries exist in the `/conf/global` folder. Prevents unintended use of incorrect CAPTCHA settings when the configuration container is not explicitly selected. (FORMS-19239) NORMAL
+* Improved reCAPTCHA alerting in Adaptive Forms by updating submit error codes to 400. Also, refined log alerts to distinguish between timeouts, expirations, and bot detection failures, enhancing troubleshooting accuracy and system observability. (FORMS-19240) 
+* Closed an unclosed `ResourceResolver` instance in `ReCaptchaConfigurationServiceImpl` to prevent potential resource leaks and improve system stability when using reCAPTCHA integrations in AEM Forms. (FORMS-19242) 
+* Improved CAPTCHA configuration handling for AEM Forms by ensuring the correct configuration binds to each form when multiple entries exist in the `/conf/global` folder. Prevents unintended use of incorrect CAPTCHA settings when the configuration container is not explicitly selected. (FORMS-19239) 
 
 
 <!--
@@ -258,12 +258,12 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 ### Foundation {#foundation-6523}
 
-* Fixed an issue in Coral Alert Banners where text color appears white instead of black after upgrading to Service Pack 21. Ensures that correct styling is applied to maintain proper contrast and readability of alert messages across the interface. (NPR-42359) MINOR
-* Added support for OAuth integration in Smart Tags configuration to align with the deprecation of JWT (JSON Web Token). Ensures continued functionality of Smart Tags features using updated authentication methods. (NPR-42296) NORMAL
+* Fixed an issue in Coral Alert Banners where text color appears white instead of black after upgrading to Service Pack 21. Ensures that correct styling is applied to maintain proper contrast and readability of alert messages across the interface. (NPR-42359) 
+* Added support for OAuth integration in Smart Tags configuration to align with the deprecation of JWT (JSON Web Token). Ensures continued functionality of Smart Tags features using updated authentication methods. (NPR-42296) 
 
 #### Apache Felix {#foundation-apachefelix-6523}
 
-Fixed a NullPointerException that occurred when uploading private key files to a binary-type property field in CRX, restoring compatibility that was present through Service Pack 16. Enables secure keyfile upload workflows in AEM Managed Services without server errors or disruption to certificate renewal processes. (CQ-4359178) MINOR
+Fixed a NullPointerException that occurred when uploading private key files to a binary-type property field in CRX, restoring compatibility that was present through Service Pack 16. Enables secure keyfile upload workflows in AEM Managed Services without server errors or disruption to certificate renewal processes. (CQ-4359178) 
 
 
 <!--
@@ -294,11 +294,11 @@ Fixed a NullPointerException that occurred when uploading private key files to a
 
 #### Granite{#foundation-granite-6523}
 
-* Resolved OSGi dependency cycles between Apache Sling scripting services that caused delays or failures when loading HTML pages after upgrading to Service Pack 21. Updated internal service references to eliminate cyclic dependencies involving `SightlyScriptingEngineFactory` and related components, improving reliability and startup behavior of the scripting engine. (GRANITE-56808) MAJOR
-* Updated JS Use Scripts in Apache Sling to load only on-demand instead of eagerly at startup, eliminating thread contention and reducing the risk of publish servers becoming unresponsive under load. This change improves server stability and response times during high-traffic scenarios by preventing resource locking caused by early script resolution. (GRANITE-56611) MAJOR
-* Corrected an issue in AEM Omnisearch where placeholders for input fields incorrectly display as labels, leading to visual confusion. Ensures proper rendering of placeholders across filter fields, maintaining consistent and accessible form behavior. (GRANITE-51791) NORMAL
-* Resolved a server error triggered when selecting more than 30 CFMs (Content Fragment Models) with multifield references in the Content Fragment model editor. Enhanced the filter suggestion component to support POST operations. This ability allows the proper handling of large reference sets during Content Fragment creation and improving stability for high-volume model configurations. (GRANITE-57164) MINOR
-* Resolved an issue in CFMs where clicking close to a checkbox toggled its state unintentionally. Updated styles to restrict click activation strictly to the checkbox element, preventing accidental user interactions and improving form usability and accessibility. (GRANITE-52384) MINOR
+* Resolved OSGi dependency cycles between Apache Sling scripting services that caused delays or failures when loading HTML pages after upgrading to Service Pack 21. Updated internal service references to eliminate cyclic dependencies involving `SightlyScriptingEngineFactory` and related components, improving reliability and startup behavior of the scripting engine. (GRANITE-56808) 
+* Updated JS Use Scripts in Apache Sling to load only on-demand instead of eagerly at startup, eliminating thread contention and reducing the risk of publish servers becoming unresponsive under load. This change improves server stability and response times during high-traffic scenarios by preventing resource locking caused by early script resolution. (GRANITE-56611) 
+* Corrected an issue in AEM Omnisearch where placeholders for input fields incorrectly display as labels, leading to visual confusion. Ensures proper rendering of placeholders across filter fields, maintaining consistent and accessible form behavior. (GRANITE-51791) 
+* Resolved a server error triggered when selecting more than 30 CFMs (Content Fragment Models) with multifield references in the Content Fragment model editor. Enhanced the filter suggestion component to support POST operations. This ability allows the proper handling of large reference sets during Content Fragment creation and improving stability for high-volume model configurations. (GRANITE-57164) 
+* Resolved an issue in CFMs where clicking close to a checkbox toggled its state unintentionally. Updated styles to restrict click activation strictly to the checkbox element, preventing accidental user interactions and improving form usability and accessibility. (GRANITE-52384) 
 
 
 <!--
@@ -309,7 +309,7 @@ Fixed a NullPointerException that occurred when uploading private key files to a
 
 #### Jetty{#foundation-jetty-6523}
 
-Resolved an issue where SNI validation blocked API calls over HTTPS for AEM customers using Dispatcher SSL configurations with custom host headers. Introduces an option to disable SNI validation as part of Jetty configuration, enabling compatibility with specific reverse proxy setups where `mod_proxy` is not feasible. (NPR-42614) NORMAL
+Resolved an issue where SNI validation blocked API calls over HTTPS for AEM customers using Dispatcher SSL configurations with custom host headers. Introduces an option to disable SNI validation as part of Jetty configuration, enabling compatibility with specific reverse proxy setups where `mod_proxy` is not feasible. (NPR-42614) 
 
 
 <!--
@@ -325,14 +325,14 @@ Resolved an issue where SNI validation blocked API calls over HTTPS for AEM cust
 
 #### Platform{#foundation-platform-6523}
 
-* Fixed inconsistent tag merging behavior by ensuring the merged tag value always displays correctly across assets, regardless of whether tags are created inline or through the standard tag creation method. Prevents residual values from `EN:title` fields from overriding merged tag display. (CQ-4358812) MAJOR
-* Fixed repeated encoding of ampersand characters in tag values within the tag editing dialog box. Prevents extra "&amp;" entities from being appended on each save, ensuring tag values remain clean and consistent across edits and avoiding display errors in authored content. (CQ-4359048) MAJOR
-* Resolved a `ClassCastException` error that prevents email delivery on Adaptive Form submission in AEM 6.5 running on WebSphere&reg;. The fix enables successful email transmission by ensuring compatibility between `com.sun.mail.handlers.text_plain` and `java.activation.DataContentHandler`, aligning with the mail handler configuration expected by WebSphere&reg; environments. (NPR-42500) MAJOR
-* Improved error handling in Package Manager by ensuring AEM surfaces a clear message when the installation fails and the error response is otherwise empty. This fix prevents silent failures and aids in faster debugging during package deployment. (NPR-42375) NORMAL
+* Fixed inconsistent tag merging behavior by ensuring the merged tag value always displays correctly across assets, regardless of whether tags are created inline or through the standard tag creation method. Prevents residual values from `EN:title` fields from overriding merged tag display. (CQ-4358812) 
+* Fixed repeated encoding of ampersand characters in tag values within the tag editing dialog box. Prevents extra "&amp;" entities from being appended on each save, ensuring tag values remain clean and consistent across edits and avoiding display errors in authored content. (CQ-4359048) 
+* Resolved a `ClassCastException` error that prevents email delivery on Adaptive Form submission in AEM 6.5 running on WebSphere&reg;. The fix enables successful email transmission by ensuring compatibility between `com.sun.mail.handlers.text_plain` and `java.activation.DataContentHandler`, aligning with the mail handler configuration expected by WebSphere&reg; environments. (NPR-42500) 
+* Improved error handling in Package Manager by ensuring AEM surfaces a clear message when the installation fails and the error response is otherwise empty. This fix prevents silent failures and aids in faster debugging during package deployment. (NPR-42375) 
 
 #### Security{#foundation-security-6523}
 
-Removal of Guava dependency from the `tsdk-core` repository to improve security and reduce reliance on external libraries. This change is aligned with broader dependency cleanup efforts across AEM 6.5 and supports compliance with modern Java standards. (NPR-42402) NORMAL
+Removal of Guava dependency from the `tsdk-core` repository to improve security and reduce reliance on external libraries. This change is aligned with broader dependency cleanup efforts across AEM 6.5 and supports compliance with modern Java standards. (NPR-42402) 
 
 
 <!--
@@ -343,19 +343,19 @@ Removal of Guava dependency from the `tsdk-core` repository to improve security 
 
 #### Translation{#foundation-translation-6523}
 
-Fixed a NullPointerException (NPE) issue triggered when updating Content Fragments in workflows using **Update Language Copy**. This fix ensures that workflows do not enter a failed state or remain stuck in a running state when editing content tied to translation references. (NPR-42115) MAJOR
+Fixed a NullPointerException (NPE) issue triggered when updating Content Fragments in workflows using **Update Language Copy**. This fix ensures that workflows do not enter a failed state or remain stuck in a running state when editing content tied to translation references. (NPR-42115) 
 
 #### User interface{#foundation-ui-6523}
 
-Adds missing `title` attributes to Coral UI dialog box buttons such as **Done** and **Cancel** in component edit dialog boxes to improve accessibility and enable automated validation. Ensures that buttons retain expected attributes across markup rendering, preventing failures in Selenium-based UI tests. (NPR-42412) NORMAL
+Adds missing `title` attributes to Coral UI dialog box buttons such as **Done** and **Cancel** in component edit dialog boxes to improve accessibility and enable automated validation. Ensures that buttons retain expected attributes across markup rendering, preventing failures in Selenium-based UI tests. (NPR-42412) 
 
 #### WCM{#foundation-wcm-6523}
 
-Fixed an issue that prevents pages from being added to translation jobs when using **Update Language Copy** in environments with Service Pack 19 or later. Ensures that translation workflows proceed as expected, enabling proper page transfer between language copies without manual intervention. (CQ-4357929) MAJOR
+Fixed an issue that prevents pages from being added to translation jobs when using **Update Language Copy** in environments with Service Pack 19 or later. Ensures that translation workflows proceed as expected, enabling proper page transfer between language copies without manual intervention. (CQ-4357929) 
 
 #### Workflow{#foundation-workflow-6523}
 
-Resolved an issue in the `EmailNotificationServiceProcessor` where the `getSegmentId` method returns `null` after hotfix deployment, causing email triggers to fail during workflow processing. Restores correct segment ID resolution logic by ensuring the processor retrieves the required `SegmentInfo` values to support email notification workflows across AEM instances. (CQ-4359755) MAJOR
+Resolved an issue in the `EmailNotificationServiceProcessor` where the `getSegmentId` method returns `null` after hotfix deployment, causing email triggers to fail during workflow processing. Restores correct segment ID resolution logic by ensuring the processor retrieves the required `SegmentInfo` values to support email notification workflows across AEM instances. (CQ-4359755) 
 
 
 ## Install [!DNL Experience Manager] 6.5.23.0{#install}
