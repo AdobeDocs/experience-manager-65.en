@@ -332,10 +332,10 @@ Resolved an issue where SNI validation blocked API calls over HTTPS for AEM cust
 * Resolved a `ClassCastException` error that prevents email delivery on Adaptive Form submission in AEM 6.5 running on WebSphere&reg;. The fix enables successful email transmission by ensuring compatibility between `com.sun.mail.handlers.text_plain` and `java.activation.DataContentHandler`, aligning with the mail handler configuration expected by WebSphere&reg; environments. (NPR-42500) 
 * Improved error handling in Package Manager by ensuring AEM surfaces a clear message when the installation fails and the error response is otherwise empty. This fix prevents silent failures and aids in faster debugging during package deployment. (NPR-42375) 
 
+<!--
 #### Security{#foundation-security-6523}
 
-Removal of Guava dependency from the `tsdk-core` repository to improve security and reduce reliance on external libraries. This change is aligned with broader dependency cleanup efforts across AEM 6.5 and supports compliance with modern Java standards. (NPR-42402) 
-
+* A -->
 
 <!--
 #### Sling{#foundation-sling-6523}
