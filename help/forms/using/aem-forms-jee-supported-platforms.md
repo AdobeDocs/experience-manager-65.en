@@ -185,6 +185,7 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
   <tr>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
+   <td></td>
   </tr>
   <tr>
    <td><p>Microsoft&reg; SQL Server 2019 (Deprecated) </p> </td>
@@ -470,10 +471,6 @@ In addition, consider the following points while choosing software for Adobe AEM
    <td>IBM&reg; Content Manager Server (Deprecated) </td>
    <td>8.5 Fix pack 2</td>
   </tr>
-  <tr>
-   <td> IBM&reg; Content Manager Client</td>
-   <td>8.7 </td>
-  </tr>
    <tr>
    <td> IBM&reg; Content Manager Client (Deprecated)</td>
    <td>8.5 </td>
@@ -676,7 +673,11 @@ For additional requirements see:
 - Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 - Administrative privileges to install Designer
 - Microsoft&reg; Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
-- OpenSSL 3 (required at default location on OS). The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable.
+- OpenSSL 3 (required at default location on OS). 
+ 
+>[!NOTE]
+>
+> The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
 
 ### Browsers {#browsers}
 
@@ -904,7 +905,6 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| IBM Content Manager Client 8.7  | | IBM Content Manager Client 8.5 |
 | MongoDB Enterprise 7.0 | | MongoDB Enterprise 6.0 |
 | MYSQL 8.4 | | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 | |Microsoft&reg; SQL Server 2019 |
