@@ -56,7 +56,6 @@ Key features and enhancements in this release include the following:
 #### New Beta features in AEM Forms {#beta-aem-forms-sp23}
 -->
 
-
 ## Fixed issues in Service Pack 23 {#fixed-issues}
 
 <!-- 6.5.23.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
