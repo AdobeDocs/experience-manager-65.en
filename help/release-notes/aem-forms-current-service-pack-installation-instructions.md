@@ -1,20 +1,20 @@
 ---
 title: AEM Forms Patch Installation Instructions for AEM Forms
-description: AEM Forms service pack installation instructions for OSGi and JEE environment
+description: AEM Forms service pack Installation Instructions for OSGi and JEE environment
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 ---
-# AEM 6.5 Forms Service Pack installation instructions {#aem-form-patch-installation-instructions}
+# AEM 6.5 Forms Service Pack Installation Instructions {#aem-form-patch-installation-instructions}
 
 ## Release information
 
 | Product   | Adobe Experience Manager 6.5 Forms  |
 |---|---|
-| Version  |  6.5.22.0|
+| Version  |  6.5.23.0|
 | Type  |  Service Pack release |
-| Date  |  29 November 2024 |
+| Date  |  29 May 2025 |
 | Download URL | [Latest AEM Forms Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
