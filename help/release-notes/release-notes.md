@@ -60,7 +60,7 @@ Key features and enhancements in this release include the following:
 
 <!-- 6.5.23.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
-<!-- UPDATE BELOW FOR EACH NEW RELEASE -->
+<!-- UPDATE BELOW FOR EACH NEW RELEASE --> 
 
 ### [!DNL Sites]{#sites-6523}
 
