@@ -202,8 +202,8 @@ Adobe Experience Manager works with the following server platforms for productio
 | IBM&reg; AIX&reg; 7.2 |Z: Not supported  |
 
 1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x and 6. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, CentOS, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on CentOS 7, Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
-2. AEM Forms is supported on Ubuntu 20.04 LTS.
-3. Linux&reg; distribution supported by Adobe Managed Services.
+1. AEM Forms is supported on Ubuntu 20.04 LTS.
+1. Linux&reg; distribution supported by Adobe Managed Services.
 
     >[!NOTE]
     >
@@ -214,10 +214,13 @@ Adobe Experience Manager works with the following server platforms for productio
     >* libxcb.x86_64 (1.13-1.el7)
     >* libXau.x86_64 (1.0.8-2.1.el7)
     >* glibc-locale.x86_64 (2.17 or later)
+    >* OpenSSL 3 (required at default location on OS). 
+    
+     *For OpenSSL 3 Installation: The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.*
 
-4. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
-5. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
-6. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
+1. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
+1. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
+1. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
 
 >[!NOTE]
 >
