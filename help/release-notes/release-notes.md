@@ -469,7 +469,7 @@ The preferred editors for managing headless content in AEM are now:
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
 * **Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA**
-AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA include the `org.apache.sling.scripting.jsp:2.6.0` bundle, which is affected by a known issue. This issue is typically seen under high load conditions when many concurrent requests are processed by the AEM instance.
+AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
 
 When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
 
