@@ -36,9 +36,7 @@ Fixed an issue in Dynamic Media - Hybrid deployments where updates to the `catal
 
 **Download Hybrid add-on package**
 
-The Hybrid add-on package is available on Software Distribution and is publicly accessible when AEM 6.5.23 officially releases on May 22, 2025.
-
-[Download Dynamic Media - Hybrid add-on package](https://author-p11553-e21065.adobeaemcloud.com/ui#/aem/assetdetails.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-dam-delivery-65-hybrid-addon-1.0.zip).
+The Hybrid add-on package is publicly available on Adobe Software Distribution starting Thursday, May 22, 2025, with the official release of AEM 6.5.23. Users can find it by searching for **AEM 6.5 Dynamic Media Hybrid Add-on Package** in Software Distribution.
 
 
 ## End of support for SSL 2.0 and 3.0 and TLS 1.0 and 1.1.
