@@ -206,6 +206,10 @@ The only document found that contains both terms is 200, as in the example below
 
 When multiple entries are found, they are then sorted by score.
 
+>[!NOTE]
+>
+>The search mechanism described in this section uses Lucene indexing, not partial matching like the Linux `grep` command.
+
 ### The Lucene Property Index {#the-lucene-property-index}
 
 Since **Oak 1.0.8**, Lucene can be used to create indexes which involve property constraints that are not full-text.
