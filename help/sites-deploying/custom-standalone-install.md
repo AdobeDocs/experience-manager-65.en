@@ -80,10 +80,6 @@ This is especially interesting for several use cases:
 * If something goes wrong, the web console and the repository are not reachable. With this you can put additional bundles into this directory and they should get installed.
 * The `crx-quickstart/install` folder can be created before quickstart is started, and additional packages can be put there.
 
->[!NOTE]
->
->See also [How to install CRX packages automatically on server startup](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) for examples.
-
 ## Installing and Starting Adobe Experience Manager as a Windows Service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
