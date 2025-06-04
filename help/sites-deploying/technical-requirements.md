@@ -113,6 +113,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | Store binaries in TAR files on file system `[1]` |Binaries |Z: Not supported for production |
 | Amazon S3 |Binaries |A: Supported |
 | Microsoft&reg; Azure Blob Storage |Binaries |A: Supported |
+| MongoDB Enterprise 7.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 6.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 5.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 4.4 |Repository |A: Supported `[2, 3, 4, 7]` |
@@ -201,7 +202,7 @@ Adobe Experience Manager works with the following server platforms for productio
 | Oracle Solaris&trade; 11 |Z: Not supported  |
 | IBM&reg; AIX&reg; 7.2 |Z: Not supported  |
 
-1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x and 6. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, CentOS, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on CentOS 7, Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
+1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x and 6. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
 1. AEM Forms is supported on Ubuntu 20.04 LTS.
 1. Linux&reg; distribution supported by Adobe Managed Services.
 
@@ -395,7 +396,7 @@ The following hardware requirements are applicable for both Linux&reg; and Windo
 
 If you are using Dynamic Media on Linux&reg;, the following prerequisites must be met:
 
-* Red Hat&reg; Enterprise 7 or CentOS 7 and later with latest fix patches
+* Red Hat&reg; Enterprise 7 and later with latest fix patches
 * 64-bit Operating System
 * Swapping disabled (recommended)
 * SELinux disabled (See note that follows)
