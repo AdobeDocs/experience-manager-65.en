@@ -394,7 +394,9 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
 > - libxcb.x86_64 (1.13-1.el7)
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 ( 2.17 or greater)
-
+> - OpenSSL 3 (required at default location on OS). 
+    
+    For OpenSSL 3 Installation: The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
 
 #### Virtualized environment {#virtualized-environment}
 
@@ -742,10 +744,6 @@ For additional requirements see:
 - Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 - Administrative privileges to install Designer
 - Microsoft&reg; Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
-- OpenSSL 3 (required at default location on OS).
->[!NOTE]
->
-> The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
 
 
 ### Browsers {#browsers}
@@ -1016,18 +1014,18 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 -->
 
 
-### Release 6.5.23.0 (May 29, 2025)
+### Release 6.5.23.0 (June 06, 2025)
 
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
-| MYSQL 8.4 | | MYSQL 8.0.27 |
+| MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 | |Microsoft&reg; SQL Server 2019 |
 | Microsoft&reg; SQL Server JDBC driver 12.8 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
 | Microsoft&reg; Office 2021 | | Microsoft&reg; Office 2019 |
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
-|  |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) |  |
+
 
 ### Release 6.5.22.0 (Nov 29, 2024)
 
