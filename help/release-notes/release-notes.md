@@ -47,7 +47,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 Key features and enhancements in this release include the following:
 
-* [Accessible Hyperlinks with mixed text styling in Static PDFs](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks containing mixed text styles in static PDFs are now tagged as a single accessible element. This enhancement simplifies the tag tree structure, improves screen reader navigation, and supports better accessibility compliance. 
+* [Accessible Hyperlinks with mixed text styling in Static PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Hyperlinks containing mixed text styles in static PDFs are now tagged as a single accessible element. This enhancement simplifies the tag tree structure, improves screen reader navigation, and supports better accessibility compliance. 
 
 * [Updated Supported Platform Matrix](/help/forms/using/aem-forms-jee-supported-platforms.md) 
 
