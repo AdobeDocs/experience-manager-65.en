@@ -201,7 +201,7 @@ Adobe Experience Manager works with the following server platforms for productio
 | Oracle Solaris&trade; 11 |Z: Not supported  |
 | IBM&reg; AIX&reg; 7.2 |Z: Not supported  |
 
-1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x and 6. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, CentOS, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on CentOS 7, Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
+1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x and 6. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
 1. AEM Forms is supported on Ubuntu 20.04 LTS.
 1. Linux&reg; distribution supported by Adobe Managed Services.
 
@@ -395,7 +395,7 @@ The following hardware requirements are applicable for both Linux&reg; and Windo
 
 If you are using Dynamic Media on Linux&reg;, the following prerequisites must be met:
 
-* Red Hat&reg; Enterprise 7 or CentOS 7 and later with latest fix patches
+* Red Hat&reg; Enterprise 7 and later with latest fix patches
 * 64-bit Operating System
 * Swapping disabled (recommended)
 * SELinux disabled (See note that follows)
@@ -538,6 +538,10 @@ For Windows x86:
 * Administrative privileges to install Designer
 * Microsoft Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime for 32-bit AEM Forms Designer
 * Microsoft Visual C++ 2019 (VC 14.28 or greater) 64-bit runtime for 64-bit AEM Forms Designer (For both OSGI and JEE stack)
+* OpenSSL 3 (required at default location on OS).
+>[!NOTE]
+>
+> The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
 
 [Install and configure AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
 
