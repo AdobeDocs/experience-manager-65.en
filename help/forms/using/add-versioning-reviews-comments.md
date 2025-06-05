@@ -15,6 +15,10 @@ exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
 
 Adaptive Form Core Components allow form authors to add versioning, comments, and annotations to forms. These features simplify form development by enabling users to create and manage multiple versions, collaborate through comments, and add notes to specific form sections, enhancing the form-building experience.
 
+See this step by step video for versioning, commenting, and annotation features in an Adaptive Form.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463265)
+
 ## Prerequisite {#prerequisite-versioning}
 
 To use versioning, commenting, and annotation features in an Adaptive Form, ensure that the [Adaptive Form Core Components](
