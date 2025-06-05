@@ -42,8 +42,8 @@ This document lists the supported client and server platforms for AEM Forms on J
 >- For a complete list of exceptions to supported server platforms, see [Exceptions to supported server platforms](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE support only English, French, German, and Japanese versions of the supported operating systems and applications.
 
-
 ### Upgrade and Support policy
+
 #### Full Installer
 
 
@@ -51,6 +51,7 @@ This document lists the supported client and server platforms for AEM Forms on J
 
 
 - **Deprecation and Removal**: The platform support is updated with each full installer release. Any software marked as deprecated in the platform matrix during a full installer release is entitled to be removed from the supported platform matrix in a subsequent full installer release, indicating the end of support for the software.
+
 #### Service Packs
 
 
