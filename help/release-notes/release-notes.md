@@ -69,7 +69,7 @@ Key features and enhancements in this release include the following:
 
  
 
-* [Hardened file attachment component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/email): As a security measure, the component now prevents submission of files with modified extensions that attempt to bypass allowed file type checks. Such files are blocked during submission to ensure only valid file types are accepted. 
+* [Hardened file attachment component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): As a security measure, the component now prevents submission of files with modified extensions that attempt to bypass allowed file type checks. Such files are blocked during submission to ensure only valid file types are accepted. 
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
