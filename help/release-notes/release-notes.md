@@ -718,6 +718,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
     @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
     (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
     have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
+    ```
 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
