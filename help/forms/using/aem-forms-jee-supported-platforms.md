@@ -49,7 +49,6 @@ This document lists the supported client and server platforms for AEM Forms on J
 
 - **Upgrade Support for full installers**: A full installer is released with every sixth AEM Service Pack Release. For example, there was a full installer released with 6.5.12.0 and 6.5.18.0 SP releases. AEM Forms allows direct upgrades exclusively from the last two full installers. For example, AEM Forms facilitates direct upgrades to version 6.5.23.0 only from the last two full installers, namely 6.5.18.0 and 6.5.12.0. If you need to upgrade from an earlier upgrade, you can use a multi-hop upgrade to first go to a supported full installer release and then to the latest release.
 
-
 - **Deprecation and Removal**: The platform support is updated with each full installer release. Any software marked as deprecated in the platform matrix during a full installer release is entitled to be removed from the supported platform matrix in a subsequent full installer release, indicating the end of support for the software.
 
 #### Service Packs
@@ -182,6 +181,10 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
   <td><p>Supported</p> </td>
  </tr>
   <tr>
+  <td><p>Repository Microkernel</p> </td>
+  <td><p>Supported</p> </td>
+ </tr>
+   <tr>
   <td><p> MongoDB Enterprise 6.0 (Deprecated) </p> </td>
   <td><p>Repository Microkernel</p> </td>
   <td><p>Supported</p> </td>
@@ -396,6 +399,7 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
 > - OpenSSL 3 (required at default location on OS). 
     
     For OpenSSL 3 Installation: The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
+
 
 #### Virtualized environment {#virtualized-environment}
 
@@ -1010,10 +1014,10 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 
 
--->
 
 
 ### Release 6.5.23.0 (June 06, 2025)
+
 
 
 | Added Support | Removed Support | Deprecated Support |
@@ -1024,6 +1028,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft&reg; SQL Server JDBC driver 12.8 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
 | Microsoft&reg; Office 2021 | | Microsoft&reg; Office 2019 |
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
+-->
 
 
 ### Release 6.5.22.0 (Nov 29, 2024)
