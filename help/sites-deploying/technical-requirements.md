@@ -347,7 +347,7 @@ Generally, browser support for websites rendered by AEM Sites depends on the imp
 
 When connecting with Microsoft&reg; Windows 7+ to an AEM instance that is not secured with SSL, basic authentication over an unsecured network must be enabled in Windows. It requires a change in the Windows Registry of the WebClient:
 
-1. Locate the registry subkey:
+1. Locate the registry subkey: 
 
     * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
 

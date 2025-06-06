@@ -1011,11 +1011,6 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
    - Microsoft&reg; Office 2016
    - OpenOffice 4.1.2
 
-
-
-
-
-
 ### Release 6.5.23.0 (June 06, 2025)
 
 
@@ -1030,6 +1025,15 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 -->
 
+### Release 6.5.23.0 (June 6, 2025)
+
+| Added Support | Removed Support | Deprecated Support |
+| -------------- | --------------- | ------------------- |
+| MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
+| MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
+| Microsoft&reg; SQL Server 2022 | |Microsoft&reg; SQL Server 2019 |
+| Microsoft&reg; SQL Server JDBC driver 12.8 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
+|  Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit)| |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit) |
 
 ### Release 6.5.22.0 (Nov 29, 2024)
 
@@ -1037,9 +1041,6 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 | SUSE&reg; Linux&reg; Enterprise Server 15 SP6 (64-bit)  | |  |
-
-
-
 
 ### Release 6.5.19.1 (Dec 15, 2023)
 
