@@ -21,8 +21,9 @@ feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 <div class="preview">
 
 
-Adobe has released a [full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) with AEM 6.5 Forms Service Pack 18 (6.5.18.0) on JEE along with the patch installers. The full installer supports new platforms while the patch installer includes only bug fixes.
-If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using [AEM 6.5.18.0 Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) released on 31 August 2023 instead of AEM 6.5 Forms installer released on 08 April 2019 or AEM 6.5.12 Forms Installer released on 03 March 2022.
+Adobe has released a [full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) with AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) on JEE along with the patch installers. The full installer supports new platforms while the patch installer includes only bug fixes.
+
+If you are performing a fresh installation or planning to use latest software for your AEM 6.5.23.0 Forms on JEE environment, Adobe recommends using [AEM 6.5.23.0 Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) released on 06 June 2025 instead of AEM 6.5.18 Forms installer released on 31 August 2023 or AEM 6.5.12 Forms Installer released on 08 April 2019.
 
 
 </div>
@@ -46,9 +47,7 @@ This document lists the supported client and server platforms for AEM Forms on J
 
 #### Full Installer
 
-
-- **Upgrade Support for full installers**: A full installer is released with every sixth AEM Service Pack Release. For example, there was a full installer released with 6.5.12.0 and 6.5.18.0 SP releases. AEM Forms allows direct upgrades exclusively from the last two full installers. For example, AEM Forms facilitates direct upgrades to version 6.5.18.0 only from the last two full installers, namely 6.5.12.0 and 6.5.6.0. If you need to upgrade from an earlier upgrade, you can use a multi-hop upgrade to first go to a supported full installer release and then to the latest release.
-
+- **Upgrade Support for full installers**: A full installer is released with every sixth AEM Service Pack Release. For example, there was a full installer released with 6.5.12.0 and 6.5.18.0 SP releases. AEM Forms allows direct upgrades exclusively from the last two full installers. For example, AEM Forms facilitates direct upgrades to version 6.5.23.0 only from the last two full installers, namely 6.5.18.0 and 6.5.12.0. If you need to upgrade from an earlier upgrade, you can use a multi-hop upgrade to first go to a supported full installer release and then to the latest release.
 
 - **Deprecation and Removal**: The platform support is updated with each full installer release. Any software marked as deprecated in the platform matrix during a full installer release is entitled to be removed from the supported platform matrix in a subsequent full installer release, indicating the end of support for the software.
 
@@ -57,11 +56,9 @@ This document lists the supported client and server platforms for AEM Forms on J
 
 - **Service Pack Coverage**: Adobe provides technical support for AEM Forms environments using any of the latest six service packs. If your current version predates the last six service packs, Adobe strongly recommends upgrading to the latest version for optimal performance, security, and continuous support.
 
+- **Patch Installer Guidelines**: While using the patch installers to update, it's crucial to verify that the underlying full installer version is not more than two releases old. For instance, during the installation of service pack 6.5.23.0, ensure the underlying full installer version is either 6.5.18.0 or 6.5.12.0.
 
-- **Patch Installer Guidelines**: While using the patch installers to update, it's crucial to verify that the underlying full installer version is not more than two releases old. For instance, during the installation of service pack 6.5.19.0, ensure the underlying full installer version is either 6.5.18.0 or 6.5.12.0.
-
-
-- **Patch Upgrade Support**: You can keep upgrading to the latest service pack, until you are upgrading to the most recent supported platforms also. For example, upgrading from service pack 6.5.12.0 to 6.5.19.0 is possible, provided that you transition to a platform combination supported for 6.5.19.0.
+- **Patch Upgrade Support**: You can keep upgrading to the latest service pack, until you are upgrading to the most recent supported platforms also. For example, upgrading from service pack 6.5.18.0 to 6.5.23.0 is possible, provided that you transition to a platform combination supported for 6.5.23.0.
 
 
 ### Recommended configurations {#recommendedconfigurations}
@@ -183,8 +180,7 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
   <td><p>Repository Microkernel (TAR MK files)</p> </td>
   <td><p>Supported</p> </td>
  </tr>
- <tr>
-  <td><p> MongoDB Enterprise 5.0</p> </td>
+  <tr>
   <td><p>Repository Microkernel</p> </td>
   <td><p>Supported</p> </td>
  </tr>
@@ -373,11 +369,6 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
   <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
  </tr>
  <tr>
-  <td><p>SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit)</p> </td>
-  <td><p>A: Supported</p> </td>
-  <td><p>Service packs, cumulative patches, and critical security updates</p> </td>
- </tr>
- <tr>
   <td><p>SUSE&reg; Linux&reg; Enterprise Server 15 SP6 (64-bit) </p> </td>
   <td><p>A: Supported</p> </td>
   <td><p>Service packs, cumulative patches, and critical security updates</p> </td>
@@ -405,6 +396,9 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
 > - libxcb.x86_64 (1.13-1.el7)
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 ( 2.17 or greater)
+> - OpenSSL 3 (required at default location on OS). 
+    
+    For OpenSSL 3 Installation: The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
 
 
 #### Virtualized environment {#virtualized-environment}
@@ -753,10 +747,6 @@ For additional requirements see:
 - Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 - Administrative privileges to install Designer
 - Microsoft&reg; Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
-<!--- OpenSSL 3 (required at default location on OS).
->[!NOTE]
->
-> The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.-->
 
 
 ### Browsers {#browsers}
@@ -1026,19 +1016,20 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 
 
+### Release 6.5.23.0 (June 06, 2025)
 
-### Release 6.5.23.0 (May 29, 2025)
 
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| MongoDB Enterprise 7.0 |MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
-| MYSQL 8.4 | | MYSQL 8.0.27 |
+| MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
+| MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 | |Microsoft&reg; SQL Server 2019 |
 | Microsoft&reg; SQL Server JDBC driver 12.8 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
 | Microsoft&reg; Office 2021 | | Microsoft&reg; Office 2019 |
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 -->
+
 
 ### Release 6.5.22.0 (Nov 29, 2024)
 
