@@ -63,11 +63,7 @@ Key features and enhancements in this release include the following:
 
     * Microsoft&reg; SQL Server JDBC Driver 12.8 
 
-    * Microsoft&reg; Office 2021 
-
     * Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x, 64-bit)  
-
- 
 
 * [Hardened file attachment component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): As a security measure, the component now prevents submission of files with modified extensions that attempt to bypass allowed file type checks. Such files are blocked during submission to ensure only valid file types are accepted. 
 
@@ -254,8 +250,7 @@ Fixed an issue in Dynamic Media - Hybrid deployments where updates to the `catal
 The Hybrid add-on package is publicly available on Adobe Software Distribution starting Thursday, May 22, 2025, with the official release of AEM 6.5.23. Users can find it by searching for **AEM 6.5 Dynamic Media Hybrid Add-on Package** in Software Distribution.
 
 
-<!--### [!DNL Forms]{#forms-6523}
-
+### [!DNL Forms]{#forms-6523}
 
 #### Forms Designer 
 
@@ -268,8 +263,6 @@ The Hybrid add-on package is publicly available on Adobe Software Distribution s
 * On upgrading from AEM Forms 6.5 Service Pack 6 to AEM Forms Service Pack 20, the QR codes in generated PDFs become unreadable. The alternative text for the QR codes also fails accessibility testing, affecting screen reader compatibility. (LC-3922551). 
 
 * When a user renders a letter in Agent UI on AEM Forms Service Pack 18, the content fails to display correctly due to the FormService.render() API. (LC-3922461). 
-
- 
 
 #### Forms
 
@@ -331,8 +324,6 @@ The Hybrid add-on package is publicly available on Adobe Software Distribution s
 
 * When a user saves a large form with fragments and lazy loading enabled, it fails to retrieve drafts, disrupting the workflow. (FORMS-19890, FORMS-19808). 
 
- 
-
 #### Forms JEE 
 
 * When a user reconfigures the database in AEM Forms, the connection fails due to hardcoded parameters. (FORMS-19568, FORMS-17621) 
@@ -351,8 +342,7 @@ The Hybrid add-on package is publicly available on Adobe Software Distribution s
 
 * Improved reCAPTCHA alerting in Adaptive Forms by updating submit error codes to 400. Also, refined log alerts to distinguish between timeouts, expirations, and bot detection failures, enhancing troubleshooting accuracy and system observability. (FORMS-19240) 
 * Closed an unclosed `ResourceResolver` instance in `ReCaptchaConfigurationServiceImpl` to prevent potential resource leaks and improve system stability when using reCAPTCHA integrations in AEM Forms. (FORMS-19242) 
-* Improved CAPTCHA configuration handling for AEM Forms by ensuring the correct configuration binds to each form when multiple entries exist in the `/conf/global` folder. Prevents unintended use of incorrect CAPTCHA settings when the configuration container is not explicitly selected. (FORMS-19239)--> 
-
+* Improved CAPTCHA configuration handling for AEM Forms by ensuring the correct configuration binds to each form when multiple entries exist in the `/conf/global` folder. Prevents unintended use of incorrect CAPTCHA settings when the configuration container is not explicitly selected. (FORMS-19239)
 
 <!--
 #### XMLFM {#forms-xmlfm-6523}
@@ -678,9 +668,9 @@ AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.s
 
 Content Fragments-Preview fails due to DoS protection for a large tree of fragments. See the [KB article about Default GraphQL Query Executor configuration options](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
-<!--### Known issues for AEM Forms {#known-issues-aem-forms-6523}
+### Known issues for AEM Forms {#known-issues-aem-forms-6523}
 
-* When a customer upgrades from Struts 2.x to 6.x, stricter type checking can cause silent failures—especially when checkbox components return false and are bound to a List *Integer*. This value mismatch must be handled explicitly to avoid deserialization errors.
+* When a customer upgrades from Struts 2.x to 6.x, stricter type checking can cause silent failures—especially when checkbox components return false and are bound to a List *Integer*. This value mismatch must be handled explicitly to avoid deserialization errors. (FORMS-20203)
 
 * If the HTML to PDF conversion fails on a SUSE&reg; Linux&reg; (SLES 15 SP6 onwards) server with the following error:
   
@@ -727,7 +717,8 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
     the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
     @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
     (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
-    have different Class objects for the type org/slf4j/ILoggerFactory used in the signature-->
+    have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
+
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
