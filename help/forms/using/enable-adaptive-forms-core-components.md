@@ -54,7 +54,7 @@ To create an AEM Archetype 41 or [later](https://github.com/adobe/aem-project-ar
         -D appId="myform" ^
         -D groupId="com.myform" ^
         -D includeFormsenrollment="y" ^
-        -D aemVersion="6.5.15" 
+        -D aemVersion="6.5.23" 
 
      ```
 
@@ -70,13 +70,11 @@ To create an AEM Archetype 41 or [later](https://github.com/adobe/aem-project-ar
         -D appId="myform" \
         -D groupId="com.myform" \
         -D includeFormsenrollment="y" \
-        -D aemVersion="6.5.15" 
+        -D aemVersion="6.5.23" 
 
      ```    
 
     When you execute the above command, be sure to consider the following points:
-
-    * Do not change the value of the `aemVersion` property from `6.5.15.0` to anything else.  
     
     * Set the `archetypeVersion` property to `41` or later. For latest version, see system requirements section in [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) documentation. 
     
