@@ -123,19 +123,22 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | MongoDB Enterprise 3.4 |Repository |Z: Not supported |
 | IBM&reg; DB2&reg; 10.5 |Repository & Forms Database |R: Restricted Support `[5]` |
 | Oracle Database 12c (12.1.x) |Repository & Forms Database |R: Restricted Support |
+| Oracle Database 19c |Repository & Forms Database |R: Restricted Support |
 | Microsoft&reg; SQL Server 2016 |Forms Database |A: Supported |
+| Microsoft&reg; SQL Server 2019 (Deprecated) |Forms Database |A: Supported |
+| Microsoft&reg; SQL Server 2022 |Forms Database |A: Supported |
 | **Apache Lucene (Quickstart built-in)** |Search Service |A: Supported |
 | Apache Solr |Search Service |A: Supported |
 
 1. 'File System' includes block storage that is POSIX-compliant. Includes network storage technology. Mind that file system performance might vary and influences the overall performance. Load test AEM with the network/remote file system.
-1. MongoDB Enterprise versions 4.2 and 4.4 require AEM 6.5 SP9 as a minimum.
-1. MongoDB Sharding is not supported in AEM.
-1. MongoDB Storage Engine WiredTiger is supported only.
-1. Supported for AEM Forms upgrade customers. Not supported for new installations.
-1. Applicable to AEM Forms only:
+2. MongoDB Enterprise versions 4.2 and 4.4 require AEM 6.5 SP9 as a minimum.
+3. MongoDB Sharding is not supported in AEM.
+4. MongoDB Storage Engine WiredTiger is supported only.
+5. Supported for AEM Forms upgrade customers. Not supported for new installations.
+6. Applicable to AEM Forms only:
     * Removed support for Oracle Database 12c and added support for Oracle Database 19c.
-    * Removed support for Microsoft&reg; SQL Server 2016 and added support for Microsoft&reg; SQL Server 2019.
-1. Not supported for AEM Forms.
+    * Removed support for Microsoft&reg; SQL Server 2016 and added support for Microsoft&reg; SQL Server 2019 and Microsoft&reg; SQL Server 2022.
+7. Not supported for AEM Forms.
 
 >[!NOTE]
 >
@@ -176,14 +179,16 @@ The minimum Servlet API Version required is Servlet 3.1
 | Oracle WebLogic Server 12.2 (12cR2) |Z: Not supported  |
 | IBM&reg; WebSphere&reg; Application Server Continuous Delivery (LibertyProfile) with Web Profile 7.0 and IBM&reg; JRE 1.8 |R: Restricted Support for new contracts `[2]` |
 | IBM&reg; WebSphere&reg; Application Server 9.0 and IBM&reg; JRE 1.8 |R: Restricted Support for new contracts `[1]` `[2]` |
+| IBM&reg; WebSphere&reg; Application Server 9.0.0.10 |R: Restricted Support for new contracts `[1]` `[2]` |
 | Apache Tomcat 8.5.x |R: Restricted Support for new contracts `[2]` |
 | JBoss&reg; EAP 7.2.x with JBoss&reg; Application Server |Z: Not supported  |
 | JBoss&reg; EAP 7.1.4 with JBoss&reg; Application Server |R: Restricted Support for new contracts `[1]` `[2]` |
 | JBoss&reg; EAP 7.0.x with JBoss&reg; Application Server |Z: Not supported  |
+| JBoss&reg; EAP 7.4 with JBoss&reg; Application Server <sup>[2] [3] [7] |A: Supported  |
 
 1. Recommended for deployments with AEM Forms.
-1. Starting AEM 6.5 deployments on application servers moves to Restricted Support. Existing customers can upgrade to AEM 6.5 and keep using application servers. For new customers, it comes with support criteria and a support program as stated in the Level-R description above.
-1. Applicable AEM Forms only:
+2. Starting AEM 6.5 deployments on application servers moves to Restricted Support. Existing customers can upgrade to AEM 6.5 and keep using application servers. For new customers, it comes with support criteria and a support program as stated in the Level-R description above.
+3. Applicable AEM Forms only:
     * Removed support for JBoss&reg; EAP 7.1.4 and added support for JBoss&reg; EAP 7.4.10. 
 
 ### Server Operating Systems {#server-operating-systems}
@@ -196,15 +201,15 @@ Adobe Experience Manager works with the following server platforms for productio
 | Linux&reg;, based on Debian distribution incl. Ubuntu |A: Supported `[1]` `[2]` |
 | Linux&reg;, based on SUSE&reg; distribution |A: Supported `[1]`|
 | Microsoft&reg; Windows Server 2022 |R: Restricted Support  |
-| Microsoft&reg; Windows Server 2019 `[4]` |R: Restricted Support for new contracts `[5]` |
+| Microsoft&reg; Windows Server 2019 `[4]` (Deprecated) |R: Restricted Support for new contracts `[5]` |
 | Microsoft&reg; Windows Server 2016 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft&reg; Windows Server 2012 R2 |Z: Not supported  |
 | Oracle Solaris&trade; 11 |Z: Not supported  |
 | IBM&reg; AIX&reg; 7.2 |Z: Not supported  |
 
-1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x and 6. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
-1. AEM Forms is supported on Ubuntu 20.04 LTS.
-1. Linux&reg; distribution supported by Adobe Managed Services.
+1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x, 6. x and 9. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
+2. AEM Forms is supported on Ubuntu 20.04 and SUSE&reg; Linux&reg; Enterprise Server 15 SP6 (64-bit).
+3. Linux&reg; distribution supported by Adobe Managed Services.
 
     >[!NOTE]
     >
@@ -219,9 +224,9 @@ Adobe Experience Manager works with the following server platforms for productio
     
     *For OpenSSL 3 Installation: The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.*
 
-1. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
-1. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
-1. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
+4. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
+5. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
+6. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
 
 >[!NOTE]
 >
