@@ -35,6 +35,8 @@ The Universal Editor is supported by:
 
 * AEM 6.5
   * Both on-premises and AMS hosting are supported.
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+  * Both on-premises and AMS hosting are supported.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 This document focuses on AEM 6.5 support of the Universal Editor. To use the Universal Editor with AEM 6.5, you will need:
