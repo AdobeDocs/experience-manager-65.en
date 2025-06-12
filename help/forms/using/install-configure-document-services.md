@@ -178,6 +178,7 @@ If you are using a UNIX-based operating system, install the following 32-bit pac
   * libc.so.6
   * ld-linux.so.2
   * libexpat.so.1
+* For RHEL 8 or RHEL 9 setups, the 32-bit `nspr` library may not be available by default; install it if not present. 
 
 ## Pre-installation configurations {#preinstallationconfigurations}
 

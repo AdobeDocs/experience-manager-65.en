@@ -389,7 +389,6 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
     
   For OpenSSL 3 Installation: The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
 
-
 #### Virtualized environment {#virtualized-environment}
 
 
@@ -544,7 +543,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
  </tr>
  <tr>
-  <td>Microsoft&reg; Office 2019  (Deprecated) </td>
+  <td>Microsoft&reg; Office 2019  </td>
   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
  </tr>
  <tr>
