@@ -178,9 +178,9 @@ If you are using a UNIX-based operating system, install the following 32-bit pac
   * libc.so.6
   * ld-linux.so.2
   * libexpat.so.1
-* (PDF Generator only) To enable WebKit route For RHEL 8 or RHEL 9 setups, the 32-bit `nspr` library may not be available by default; install it if not present. 
+* (PDF Generator only) To enable WebKit route on RHEL 8 or RHEL 9 setups, the 32-bit `nspr` library may not be available by default; install it if not present. 
 
-* If the web to PDF conversion fails on Unix&reg; server with the following error:
+* (PDF Generator and Chart feature of Interactive Communications) If the WebToPDF conversion fails on Unix&reg; server with the following error:
   
   ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
   then set the following environment variable and restart the server:
