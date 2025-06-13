@@ -38,10 +38,6 @@ These are all [OSGi configurations](/help/sites-deploying/configuring-osgi.md).
 * version rotation; either maximum size or a time interval
 * the format to be used when writing the log messages
 
->[!NOTE]
->
->This [Knowledge Base article](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explains how to rotate the request.log and access.log files.
-
 ## Loggers and Writers for Individual Services {#loggers-and-writers-for-individual-services}
 
 In addition to the global logging settings, AEM lets you configure specific settings for an individual service:

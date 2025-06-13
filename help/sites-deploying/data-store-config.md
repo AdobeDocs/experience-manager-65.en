@@ -439,7 +439,7 @@ You can use the configuration file with the following options:
 * azureSas="": In version 1.6.3 of the connector, Azure Shared Access Signature (SAS) support was added. **If both SAS and storage credentials exists in the configuration file, SAS has priority.** For more information about SAS see the [official documentation](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Ensure that the '=' character is escaped like '\='.
 
 * azureBlobEndpoint="": The Azure Blob Endpoint. For example, https://&lt;storage-account&gt;.blob.core.windows.net.
-* accessKey="": The storage account name. For more details about the Microsoft&reg; Azure authentication credentials, see the [official documentation](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey="": The storage account name. For more details about the Microsoft&reg; Azure authentication credentials, see the [official documentation](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey="": The storage access key. Ensure that the '=' character is escaped like '\='.
 * container="": The Microsoft&reg; Azure blob storage container name. The container is a grouping of a set of blobs. For additional details, read the [official documentation](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

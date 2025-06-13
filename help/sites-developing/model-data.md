@@ -67,8 +67,6 @@ Personally, I prefer hierarchy conventions over the node typing system initially
 >[!CAUTION]
 >
 >The way a content repository is structured can impact performance as well. For best performance, the number of child nodes attached to individual nodes in a content repository should not exceed 1'000.
->
->See [How much data can CRX handle?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Example {#example-2}
 
