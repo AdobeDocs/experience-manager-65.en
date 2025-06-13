@@ -524,8 +524,6 @@ For [!DNL Adobe Experience Manager] 6.5, [read the list of deprecated and remove
   2. Upgrading to AEM 6.5.
   3. Executing "lazy content migration" on AEM 6.5.
 
-  A [Knowledge Base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) article is available with further details and the workaround for this issue.
-
 * If you are using JDK 11 with AEM 6.5 instance, some of the pages might display as blank after deploying some packages. The following error message displays in the log file:
 
    ```java

@@ -62,7 +62,7 @@ For example, the following location within the `/libs` structure can be overlaid
 
 >[!NOTE]
 >
->See the Knowledge Base article, [Troubleshooting AEM TouchUI issues](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), for further tips and tools.
+>See the Knowledge Base article, [Troubleshooting AEM TouchUI issues](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), for further tips and tools.
 
 ## Customizing the Default View for a Console {#customizing-the-default-view-for-a-console}
 
