@@ -16,7 +16,7 @@ solution: Experience Manager, Experience Manager Assets
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en)                  |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal)                  |
 | AEM 6.5     | This article         |
 
 Adobe Experience Manager Assets Brand Portal lets you publish approved brand assets from Adobe Experience Manager Assets to Brand Portal and distribute them to the Brand Portal users.
@@ -83,7 +83,7 @@ For detailed instructions, see the current [AEM 6.5 Service Pack Release Notes](
 
 >[!NOTE]
 >
->You cannot create new JWT credentials from June 2024 onwards. Henceforth, only OAuth credentials are created. See more creating an OAuth configuration.
+>You cannot create new JWT credentials from June 2024 onwards. Henceforth, only OAuth credentials are created. See more on creating an OAuth configuration.
 
 Configuring AEM Assets with Brand Portal requires configurations in both AEM Assets Author instance and the Adobe Developer Console.
 
@@ -121,7 +121,7 @@ Perform the following steps in the specified sequence to configure Experience Ma
 
 #### Create new Adobe IMS integration using OAuth {#create-ims-account-configuration}
 
-[Create a new Adobe IMS Integration using OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) and select Brand Portal from the drop down.
+[Create a new Adobe IMS Integration using OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) and select Brand Portal from the drop-down.
 
 #### Configure cloud service {#configure-cloud-service}
 
