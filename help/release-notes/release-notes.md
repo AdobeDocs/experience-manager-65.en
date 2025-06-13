@@ -674,12 +674,6 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 * After upgrading to AEM Forms Service Pack 6.5.23.0, the ImageToPDF conversion service fails with the error (FORMS-20360):
     ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
 
-* If the HTML to PDF conversion fails on a SUSE&reg; Linux&reg; (SLES 15 SP6 onwards) server with the following error (FORMS-20232):
-  
-  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-  then set the following environment variable and restart the server:
-    `OPENSSL_CONF=/etc/ssl`
-
 * After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
 
   1. Stop the locators, if they are running.
