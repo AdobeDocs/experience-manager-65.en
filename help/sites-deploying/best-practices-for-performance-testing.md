@@ -55,8 +55,6 @@ There are many commercially available performance testing tools on the market. W
 * AEM provides out of the box tools to quickly see problematic queries, requests, and error messages. For more information, see the [Diagnosis Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) section of the Operations Dashboard documentation.
 * Apache provides a product called **JMeter** that can be used for performance and load testing, and functional behavior. It is open-source software and free to use, but has a smaller feature set than enterprise products and a steeper learning curve. JMeter can be found on Apache's website at [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner** is an enterprise grade load testing product. A free evaluation version is available. More information can be found at [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-
 * Website load testing tools like [Vercara](https://vercara.com/website-performance-management) can also be used.
 * When testing mobile or responsive websites, a separate set of tools must be used. They work by throttling network bandwidth, simulating slower mobile connections like 3G or EDGE. Among the more widely used tools include the following:
 

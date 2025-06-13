@@ -48,7 +48,6 @@ You can also use the [Opt-in wizard](/help/sites-administering/opt-in.md) to eas
 See:
 
 * [Extending the Adobe Analytics Integration](/help/sites-developing/extending-analytics.md) for information about developing components that collect user data and customizing the Adobe Analytics framework.
-* The knowledge base article, [Adobe Analytics integration - troubleshooting issues](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), for information about troubleshooting your Adobe Analytics integration.
 
 >[!NOTE]
 >

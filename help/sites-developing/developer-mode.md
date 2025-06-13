@@ -50,7 +50,7 @@ These help a developer to:
 >
 >See the:
 >
->* Knowledge Base article, [Troubleshooting AEM TouchUI issues](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), for further tips and tools.
+>* Knowledge Base article, [Troubleshooting AEM TouchUI issues](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), for further tips and tools.
 >* AEM Gems session about [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
