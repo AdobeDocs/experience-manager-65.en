@@ -180,11 +180,15 @@ If you are using a UNIX-based operating system, install the following 32-bit pac
   * libexpat.so.1
 * (PDF Generator only) To enable WebKit route on RHEL 8 or RHEL 9 setups, the 32-bit `nspr` library may not be available by default; install it if not present. 
 
-* (PDF Generator and Chart feature of Interactive Communications) If the WebToPDF conversion fails on Unix&reg; server with the following error:
+* (PDF Generator only) If the WebToPDF conversion fails on Unix&reg; server with the following error:
   
   ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
   then set the following environment variable and restart the server:
     `OPENSSL_CONF=/etc/ssl`
+
+>[!NOTE]
+>
+> WebToPDF is also used by the Chart feature in Interactive Communications. Therefore, all the configuration steps mentioned for WebToPDF above are applicable for ensuring the Chart feature functions correctly.
 
 ## Pre-installation configurations {#preinstallationconfigurations}
 
