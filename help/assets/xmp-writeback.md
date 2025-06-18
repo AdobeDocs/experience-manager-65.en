@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en)                  |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata)                  |
 | AEM 6.5     | This article         |
 
 This XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates the metadata changes to the renditions of the original asset. When you change the metadata for an asset from within Assets or while uploading the asset, the changes are initially stored in the metadata node in the asset hierarchy. 
@@ -41,7 +41,7 @@ To enable the metadata changes to be propagated to the renditions of the asset w
 
 ## Enabling XMP writeback for specific renditions {#enabling-xmp-writeback-for-specific-renditions}
 
-To let the XMP Writeback feature propagate metadata changes to select renditions, specify these renditions to the XMP Writeback Process workflow step of [!UICONTROL DAM Metadata WriteBack] workflow. By default, this step is configured with the original rendition.
+To let the XMP Writeback feature propagate metadata changes to select renditions, specify these renditions to the XMP Writeback Process workflow step of the [!UICONTROL DAM Metadata WriteBack] workflow. By default, this step is configured with the original rendition.
 
 For the XMP Writeback feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
 
@@ -60,11 +60,9 @@ For the XMP Writeback feature to propagate metadata to the rendition thumbnails 
 
 1. Save the workflow.
 
-The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
+The metadata changes are propagated to the renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 
 >[!NOTE]
->
->For XMP writeback issues in 64 bit Linux, see [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >For the supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
@@ -86,7 +84,7 @@ Filtering of XMP metadata via allowed list resolves this issue by letting you de
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blocked XML Names for XMP filtering]** box.
+1. To filter out blocked XMP properties after applying filtering through the allowed list, specify those in the **[!UICONTROL Blocked XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >

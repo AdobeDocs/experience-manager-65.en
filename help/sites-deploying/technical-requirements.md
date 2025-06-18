@@ -552,10 +552,10 @@ XMP write-back is supported and enabled for the following platforms and file for
 
 * **Operating Systems:**
 
-    * Linux&reg; (32-bit and 32-bit application support on 64-bit systems). For steps to install 32-bit client libraries, see [How to enable XMP extraction and write-back on 64-bit Red Hat&reg; Linux&reg;](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+  * Linux&reg; (32-bit and 32-bit application support on 64-bit systems). 
 
-    * Windows Server
-    * macOS X (64-bit)
+  * Windows Server
+  * macOS X (64-bit)
 
 * **File Formats**: JPEG, PNG, TIFF, PDF, INDD, AI, and EPS.
 

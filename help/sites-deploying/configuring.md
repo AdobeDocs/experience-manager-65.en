@@ -178,7 +178,7 @@ See [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-disp
 
 ### Configuring AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-With the release of the AEM Doc Services and AEM Doc Security, AEM now has the capability to invoke the LiveCycle doc services to render an XFA form, convert a document to PDF and policy protect a document. See [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) for more details.
+With the release of the AEM Doc Services and AEM Doc Security, AEM now has the capability to invoke the LiveCycle doc services to render an XFA form, convert a document to PDF and policy protect a document. 
 
 ### Job Offloading and Topology Administration {#job-offloading-and-topology-administration}
 

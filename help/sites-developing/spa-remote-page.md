@@ -5,6 +5,7 @@ exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
+index: no
 ---
 
 # The RemotePage Component {#remote-page-component}

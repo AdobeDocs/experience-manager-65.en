@@ -9,6 +9,7 @@ exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
+index: no
 ---
 
 # Getting Started with SPAs in AEM - Angular{#getting-started-with-spas-in-aem-angular}

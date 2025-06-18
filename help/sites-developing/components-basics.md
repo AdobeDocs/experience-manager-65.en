@@ -308,7 +308,7 @@ A component is a node of type `cq:Component` and has the following properties an
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>If set, this property is taken as Cell ID. For more information, see the Knowledge Base article <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">How are Design Cell IDs built</a>.<br /> </td>
+   <td>If set, this property is taken as Cell ID.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>

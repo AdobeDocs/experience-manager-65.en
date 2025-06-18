@@ -322,10 +322,9 @@ This success criterion is identical to [Captions (Pre-Recorded)](#captions-pre-r
 
 Follow the guidance provided for [Captions (Pre-Recorded)](#captions-pre-recorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real-time captioning or speech-to-text tools.
 
-Detailed instructions are beyond the scope of this document, but the following resources provide helpful information:
+Detailed instructions are beyond the scope of this document, but the following resource provides helpful information:
 
 * [WebAIM: Real Time Captioning](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (University of Washington): Can captions be generated automatically using speech recognition?](https://www.washington.edu/doit/programs/accessit?1209)
 
 #### More Information - Captions (Live) (1.2.4) {#more-information-captions-live}
 
