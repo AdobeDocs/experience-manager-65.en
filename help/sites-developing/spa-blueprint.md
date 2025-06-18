@@ -9,6 +9,7 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
+index: no
 ---
 
 # SPA Blueprint{#spa-blueprint}

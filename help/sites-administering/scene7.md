@@ -419,10 +419,6 @@ Before you can push assets to Dynamic Media Classic without publishing them, you
 
 These steps are the same ones you would follow to create any secure test setup in Dynamic Media Classic.
 
->[!NOTE]
->
->If your installation environment is a UNIX&reg; 64-bit operating system, see [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) regarding other configuration options you must set.
-
 #### Known limitations for pushing assets in unpublished state  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
 If you use this feature, note the following limitations:

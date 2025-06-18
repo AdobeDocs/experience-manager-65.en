@@ -251,10 +251,6 @@ If the instance was installed from the UI, a browser window opens automatically,
 
 ![start up screen](assets/screen_shot_.png)
 
->[!NOTE]
->
->If you are using symlinks, have a look at [issues with symlink](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
-
 ### Starting and Stopping {#starting-and-stopping}
 
 Once AEM has unpacked itself and started up for the first time, double-clicking the jar file in the install directory simply starts the instance, it does not reinstall it.

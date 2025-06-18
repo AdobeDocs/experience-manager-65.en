@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 ---
 # Prepare [!DNL Assets] for smart tagging {#configure-asset-tagging-using-the-smart-content-service}
 
-Before you can start tagging your assets using Smart Content Services, integrate [!DNL Experience Manager Assets] with Adobe Developer Console to use smart service of [!DNL Adobe Sensei]. Once configured, train the service using a few images and a tag.
+Before you can start tagging your assets using Smart Content Services, integrate [!DNL Experience Manager Assets] with Adobe Developer Console to use the smart service of [!DNL Adobe Sensei]. Once configured, train the service using a few images and a tag.
 
 <!--
 >[!NOTE]
@@ -26,7 +26,7 @@ Before you use the Smart Content Service, ensure the following:
 * [Integrate with Adobe Developer Console](#integrate-adobe-io).
 * [Train the Smart Content Service](#training-the-smart-content-service).
 
-* Install the latest [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Install the latest [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ## SCS upgrade to support Oauth for Adobe Managed Services {#scs-upgrade-oauth-managed-services}
 
@@ -59,13 +59,13 @@ For Service Pack 20 and older, you need to perform the workaround steps for SCS 
 
 ## Integrate with Adobe Developer Console {#integrate-adobe-io}
 
-When you integrate with Adobe Developer Console, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service. To integrate, you need an Adobe ID account that has administrator privileges for the organization and Smart Content Service license purchased and enabled for your organization.
+When you integrate with Adobe Developer Console, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service. To integrate, you need an Adobe ID account that has administrator privileges for the organization and a Smart Content Service license purchased and enabled for your organization.
 
 To configure the Smart Content Service, follow these top-level steps:
 
 1. Create an integration in [Adobe Developer Console](#create-adobe-io-integration).
 
-1. Create [IMS technical account configuration](#create-ims-account-config) using the API key and other credentials from Adobe Developer Console.
+1. Create an [IMS technical account configuration](#create-ims-account-config) using the API key and other credentials from Adobe Developer Console.
 
 1. [Configure the Smart Content Service](#configure-smart-content-service).
 
@@ -87,7 +87,11 @@ To configure the Smart Content Service, follow these top-level steps:
 
 ### Create Adobe Developer Console integration {#create-adobe-io-integration}
 
-To use Smart Content Service APIs, create an integration in Adobe Developer Console to obtain [!UICONTROL API Key] (generated in [!UICONTROL CLIENT ID] field of Adobe Developer Console integration), [!UICONTROL ORGANIZATION ID], and [!UICONTROL CLIENT SECRET] for [!UICONTROL Assets Smart Tagging Service Settings] of cloud configuration in [!DNL Experience Manager].
+To use Smart Content Service APIs, create an integration in Adobe Developer Console to obtain the following:
+
+* [!UICONTROL API KEY] (generated in [!UICONTROL CLIENT ID] field of Adobe Developer Console integration), 
+* [!UICONTROL ORGANIZATION ID],
+* and [!UICONTROL CLIENT SECRET], for [!UICONTROL Assets Smart Tagging Service Settings] of cloud configuration in [!DNL Experience Manager].
 
 1. Access [https://developer.adobe.com](https://developer.adobe.com/) in a browser. Select the appropriate account and verify that the associated organization role is system **administrator**.
 
@@ -98,17 +102,12 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 1. Select **[!UICONTROL OAuth Server-to-Server]**. Click **[!UICONTROL Next]**. 
    For details on how to do this configuration, see the Developer Console documentation, depending on your requirements:
    
-   * Overview:
-      * [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
-
-   * Creating a new OAuth credential:
-      * [OAuth Server-to-Server credential implementation guide](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
-
-   * Migrating an existing JWT credential to an OAuth credential:
-      * [Migrating from Service Account (JWT) credential to OAuth Server-to-Server credential](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * For an overview, see *Server to Server authentication* on developer.adobe.com.
+   * To create a new OAuth credential, see the *OAuth Server-to-Server credential implementation guide* on developer.adobe.com.
+   * To migrate an existing JWT credential to an OAuth credential, see *Migrating from Service Account (JWT) credential to OAuth Server-to-Server credential* on developer.adobe.com.
 
 
-1. In the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
+1. In the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**, then click the option **[!UICONTROL Save configured API]**.
 
    A page displays more information about the configuration. Keep this page open to copy and add these values in [!UICONTROL Assets Smart Tagging Service Settings] of cloud configuration in [!DNL Experience Manager] to configure smart tags.
 
@@ -116,7 +115,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
 ### Create IMS technical account configuration {#create-ims-account-config}
 
-You need to create IMS technical account configuration using the steps below:
+You need to create an IMS technical account configuration using the steps below:
 
 1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
@@ -128,13 +127,13 @@ You need to create IMS technical account configuration using the steps below:
 
    | Field | Description |
    | -------- | ---------------------------- |
-   | Cloud Solution | Choose **[!UICONTROL Smart Tags]** from the drop down. |
-   | Title | Add title of the configuring IMS account. |
+   | Cloud Solution | Choose **[!UICONTROL Smart Tags]** from the drop-down. |
+   | Title | Add the title of the configuring IMS account. |
    | Authorization Server | Add `https://ims-na1.adobelogin.com` |
-   | Client ID | To be provided through [Adobe Developer console](https://developer.adobe.com/console/).|
-   | Client Secret | To be provided through [Adobe Developer console](https://developer.adobe.com/console/). |
-   | Scope | To be provided through [Adobe Developer console](https://developer.adobe.com/console/). |
-   | Org ID | To be provided through [Adobe Developer console](https://developer.adobe.com/console/). |
+   | Client ID | To be provided through the [Adobe Developer console](https://developer.adobe.com/console/).|
+   | Client Secret | To be provided through the [Adobe Developer console](https://developer.adobe.com/console/). |
+   | Scope | To be provided through the [Adobe Developer console](https://developer.adobe.com/console/). |
+   | Org ID | To be provided through the [Adobe Developer console](https://developer.adobe.com/console/). |
 
 1. Select the configuration that you have created and click **[!UICONTROL Check Health]**.
 
@@ -163,8 +162,8 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
 
    | Field | Description |
    | -------- | ---------------------------- |
-   | Title | Add title of the configuring IMS account. |
-   | Associated Adobe IMS Configuration | Choose configuration from the drop down. |
+   | Title | Add the title of the configuring IMS account. |
+   | Associated Adobe IMS Configuration | Choose a configuration from the drop-down. |
    | Service URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. For example, `https://smartcontent.adobe.io/apac`. You can specify `na`, `emea`, or, `apac` as the regions where your Experience Manager author instance is hosted.|
 
    >[!NOTE]
@@ -357,11 +356,11 @@ The validation results are displayed in the same dialog.
 
 1. In [!DNL Experience Manager], go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
-1. On **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Update Asset]** workflow model.
+1. On the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Update Asset]** workflow model.
 
 1. Click **[!UICONTROL Edit]** from the toolbar.
 
-1. Expand the Side Panel to display the steps. Drag **[!UICONTROL Smart Tag Asset]** step that is available in the DAM Workflow section and place it after the **[!UICONTROL Process Thumbnails]** step.
+1. Expand the Side Panel to display the steps. Drag the **[!UICONTROL Smart Tag Asset]** step that is available in the DAM Workflow section and put it after the **[!UICONTROL Process Thumbnails]** step.
 
    ![Add smart tag asset step after the process thumbnail step in the DAM Update Asset workflow](assets/smart-tag-in-dam-update-asset-workflow.png)
 
@@ -381,11 +380,11 @@ The validation results are displayed in the same dialog.
 
 ## Train the Smart Content Service {#training-the-smart-content-service}
 
-For the Smart Content Service to recognize your business taxonomy, run it on a set of assets that already include tags that are relevant to your business. To effectively tag your brand images, the Smart Content Service requires that the training images conform to certain guidelines. After training, the service can apply the same taxonomy on a similar set of assets.
+For the Smart Content Service to recognize your business taxonomy, run it on a set of assets that already include tags that are relevant to your business. To tag your brand images effectively, the Smart Content Service requires that the training images conform to certain guidelines. After training, the service can apply the same taxonomy on a similar set of assets.
 
 You can train the service multiple times to improve its ability to apply relevant tags. After each training cycle, run a tagging workflow and check whether your assets are tagged appropriately.
 
-You can train the Smart Content Service periodically or on requirement basis.
+You can train the Smart Content Service periodically or on a requirement basis.
 
 >[!NOTE]
 >
@@ -403,7 +402,7 @@ For example, it is not a good idea to tag all of these images as `my-party` (for
 
 ![Illustrative images to exemplify the guidelines for training](/help/assets/assets/do-not-localize/coherence.png)
 
-**Coverage**: Use sufficient variety in the images in the training. The idea is to supply a few but reasonably diverse examples so that Experience Manager learns to focus on the right things. If you're applying the same tag on visually dissimilar images, include at least five examples of each kind.
+**Coverage**: Use sufficient variety in the images in the training. The idea is to supply a few but reasonably diverse examples so that the Experience Manager learns to focus on the right things. If you're applying the same tag on visually dissimilar images, include at least five examples of each kind.
 
 For example, for the tag *model-down-pose*, include more training images similar to the highlighted image below for the service to identify similar images more accurately during tagging.
 
@@ -435,7 +434,7 @@ Once this option is selected for a folder, [!DNL Experience Manager] runs a trai
 
 You can train the Smart Content Service whenever required from the Workflow console.
 
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. In the [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
 1. Specify a title for the workflow and add a comment. Then, click **[!UICONTROL Run]**. The assets and tags are submitted for training.
@@ -450,7 +449,7 @@ You can train the Smart Content Service whenever required from the Workflow cons
 
 To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
 
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. In the [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, click **[!UICONTROL Create]** from the toolbar.
@@ -477,4 +476,4 @@ To check whether the Smart Content Service is trained on your tags in the traini
 >
 >* [Overview and how to train Smart Tags](enhanced-smart-tags.md)
 >* [Troubleshooting smart tags for OAuth credentials](config-oauth.md)
->* [Video tutorial about smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [Video tutorial about smart tags](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)

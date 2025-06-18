@@ -5,6 +5,7 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
+index: no
 ---
 
 # Editing an External SPA within Adobe Experience Manager {#editing-external-spa-within-aem}

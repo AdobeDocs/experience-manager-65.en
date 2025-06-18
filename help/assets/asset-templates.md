@@ -11,17 +11,17 @@ solution: Experience Manager, Experience Manager Assets
 
 Asset templates are a special class of assets that facilitate quick repurposing of visually rich content for digital and print media. An asset template includes two parts, the fixed messaging section and the editable section. The fixed messaging section can contain proprietary content, such as brand logo and copyright information that are disabled for editing. The editable section can contain visual and textual content in fields that can be edited to customize messaging.
 
-The flexibility to make limited edits while securing global signage makes asset templates ideal building blocks for quick content adaptation and distribution as content artifacts for various functions. Repurposing content helps reduce the cost for managing print and digital channels and deliver holistic and consistent experiences across these channels.
+Asset templates offer the flexibility to make limited edits while keeping global signage secure. This ability makes them ideal building blocks for quickly adapting and distributing content across various functions. Repurposing content helps reduce the cost for managing print and digital channels and deliver holistic and consistent experiences across these channels.
 
-As a marketer, you can store and manage templates within [!DNL Experience Manager Assets] and use a single base template to create multiple personalized print experiences with ease. You can create various types of marketing collateral, including brochures, flyers, postcards, business cards, and so on, to lucidly convey your marketing message to customers. You can also assemble multi-page print outputs from existing or new print outputs. Above all, you can simultaneously deliver both digital and print experiences with ease to provide a consistent, integrated experience for users.
+As a marketer, you can store and manage templates within [!DNL Experience Manager Assets] and use a single base template to create multiple personalized print experiences with ease. You can create various types of marketing collateral, including brochures, flyers, postcards, business cards, and so on, to convey your marketing message lucidly to customers. You can also assemble multi-page print outputs from existing or new print outputs. Above all, you can simultaneously deliver both digital and print experiences with ease to provide a consistent, integrated experience for users.
 
 While asset templates are mostly [!DNL Adobe InDesign] files, proficiency in [!DNL Adobe InDesign] is not a barrier to creating stellar artifacts. You do not need to map the fields of your [!DNL Adobe InDesign] template with your product fields that you otherwise require to when creating catalogs. You can edit the templates in WYSIWYG mode directly on the web interface. However, for [!DNL Adobe InDesign] to process your editing changes, you must first configure [!DNL Experience Manager Assets] to integrate with [!DNL Adobe InDesign Server].
 
-The ability to edit [!DNL Adobe InDesign] templates from the web interface helps foster greater collaboration between creative and marketing personnel. The increased content velocity reduces the time-to-market for marketing collaterals.
+The ability to edit [!DNL Adobe InDesign] templates from the Web interface helps foster greater collaboration between creative and marketing personnel. The increased content velocity reduces the time-to-market for marketing collaterals.
 
 You can achieve the following with asset templates:
 
-* Modify editable template fields from the web interface.
+* Modify editable template fields from the Web interface.
 * Control the basic styling of text, for example, font size, style, and type at the tag level.
 * Change images within the template using Content Picker.
 * Preview template edits.
@@ -61,7 +61,7 @@ Consider a scenario where you want to create digital printable collateral, such 
 
 ## Edit a collateral piece {#editing-a-collateral}
 
-You can edit a collateral piece immediately after you create it. Alternatively, you open it from the [!UICONTROL Templates] page or the asset page.
+You can edit a collateral piece immediately after you create it. Alternatively, you can open it from the [!UICONTROL Templates] page or the Asset page.
 
 1. To open the collateral for editing, do one of the following:
 
@@ -84,7 +84,7 @@ You can edit a collateral piece immediately after you create it. Alternatively, 
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. For details, see [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
+   >Integrate your [!DNL Experience Manager] deployment with an [!DNL InDesign Server] so that [!DNL Experience Manager Assets] can extract data from the [!DNL InDesign] template and make it available for editing. For details, see [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
 1. To modify the text in an editable field, click the text field from the list of editable fields and edit the text in the field.
 
@@ -119,9 +119,8 @@ You can edit a collateral piece immediately after you create it. Alternatively, 
    >To enable [!DNL Experience Manager] to resolve images, do the following:
    >
    >* Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/indesign/using/graphics-links.html)).
-   >* Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
+   >* Mount [!DNL Experience Manager] to your local file system, and then map the missing icons with existing assets in [!DNL Experience Manager].
    >
-   >For more information around working with [!DNL InDesign] documents, see [best practices to work with InDesign documents in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. To generate a PDF rendition for the brochure, select the Acrobat option in the dialog and then click **[!UICONTROL Continue]**.
 1. The collateral piece is created in the folder that you started with. To view the renditions, open the collateral and choose **[!UICONTROL Renditions]** from the GlobalNav list.

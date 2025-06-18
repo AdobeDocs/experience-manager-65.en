@@ -109,7 +109,7 @@ When functionality is developed for AEM WCM, JCR Sessions may be opened (compara
 * You can see much of CacheManager: resizeAll entries in the log file; the following number (size=&lt;x&gt;) shows the number of caches, each session opens several caches.
 * From time to time the system runs out of memory (after a few hours, days, or weeks - depending on the severity).
 
-To analyze unclosed sessions and find out which code is not closing a session, see the Knowledge Base article [Analyze Unclosed Sessions](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+To start analyzing unclosed sessions, see the Knowledge Base article [Unclosed Resource Resolver](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Using the Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 
