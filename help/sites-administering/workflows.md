@@ -16,7 +16,7 @@ Workflows enable you to automate Adobe Experience Manager (AEM) activities. Work
 
 * Consist of a series of steps that are run in a specific order.
 
-    * Each step performs a distinct activity; such as waiting for user input, activating a page, or sending an email message.
+  * Each step performs a distinct activity; such as waiting for user input, activating a page, or sending an email message.
 
 * Can interact with assets in the repository, user accounts, and AEM services.
 * Can coordinate complicated activities that involve any aspect of AEM.
@@ -49,15 +49,15 @@ When a workflow model is started (executed), a workflow instance is created. A w
 
 >[!CAUTION]
 >
->The steps performed are those defined by the workflow model *at the time that the instance is generated*. See [Developing Workflows](/help/sites-developing/workflows.md#model) for further details.
+>The steps performed are those defined by the workflow model *at the time that the instance is generated*. See [Developing and Extending Workflows - Models](/help/sites-developing/workflows.md#model) for further details.
 
 Workflow instances progress through the following lifecycle:
 
 1. The workflow model is started and a workflow instance is created and running.
 
-    1. The payload of the workflow instance is identified when the model is started.
-    1. The instance is effectively a copy of the model (as at the time of creation).
-    1. AEM authors, administrators, or services can start workflow models.
+   1. The payload of the workflow instance is identified when the model is started.
+   1. The instance is effectively a copy of the model (as at the time of creation).
+   1. AEM authors, administrators, or services can start workflow models.
 
 1. The first step of the workflow model is executed.
 1. The step is completed and the workflow engine uses the model to determine the next step to execute.
