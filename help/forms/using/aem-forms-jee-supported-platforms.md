@@ -55,9 +55,10 @@ This document lists the supported client and server platforms for AEM Forms on J
 
 - **Service Pack Coverage**: Adobe provides technical support for AEM Forms environments using any of the latest six service packs. If your current version predates the last six service packs, Adobe strongly recommends upgrading to the latest version for optimal performance, security, and continuous support.
 
-**Patch Installer Guidelines**: While using the patch installers to update, it's crucial to verify that the underlying full installer version is not more than two releases old. For instance, during the installation of service pack 6.5.23.0, ensure the underlying full installer version is either 6.5.18.0 or 6.5.12.0.
+- **Patch Update Guidelines**: While using the patch installers to update, it is crucial to verify that the underlying full installer version is not more than two releases old. For instance, during the installation of service pack 6.5.23.0, ensure the underlying full installer version is either 6.5.18.0 or 6.5.12.0.
 
-- **Patch Upgrade Support**: You can upgrade from an older service pack to a newer one (for example, from 6.5.18.0 to 6.5.23.0) using the patch installer, as long as the destination platform (OS, JDK, application server, etc.) is supported by the newer service pack.
+<!--
+- **Patch Upgrade Support**: You can upgrade from an older service pack to a newer one (for example, from 6.5.18.0 to 6.5.23.0) using the patch installer, as long as the destination platform (OS, JDK, application server, etc.) is supported by the newer service pack.-->
 
 ### Recommended configurations {#recommendedconfigurations}
 
