@@ -54,13 +54,26 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 
 #### On/OffTime {#on-time}
 
-The date and time at which the published page becomes activated. When published, this page remains dormant until the specified time.
+The on/off time for a page is a convenient way to temporarily hide content that is already published. The content remains on the publish instance when it is off. Turning a page off does not unpublish the content.
 
-Leave these fields empty for pages that you want to publish immediately (the normal scenario).
+* **On Time** - The date and time at which the published page is made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
 
-The time at which the published page becomes deactivated.
+  * If already [published,](/help/sites-authoring/publishing-pages.md) this page is available on the publish instance, but kept dormant (hidden) until rendering at the specified time.
+  * If not published and [configured for auto-replication,](/help/sites-deploying/replication.md) the page is automatically published, then rendered, at the specified time.
+  * If not published and not configured for auto-replication, the page is not automatically published, so a 404 is seen when an attempt to access the page is made.
+  
+* **Off Time** - Similar to and often used in combination with **On Time**, this defines the time at which the published page is hidden on the publish environment.
 
-Again leave these fields empty for immediate action.
+Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish and have available immediately and have available on the publish environment until they are deactivated (the normal scenario).
+
+>[!NOTE]
+>If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action is triggered immediately.
+
+>[!TIP]
+>
+>On/off times deal strictly with content that is already published (either manually or via auto-replication). For this reason, publishing workflows such as those for approving content are not triggered by to on/off times and on/off times do not affect the page's publication status. For this reason, on/off times are most appropriate for temporarily showing/hiding content that is already approved and published.
+>
+>If you wish to publish new content with all associated workflows or entirely remove (unpublish content) from your site, consider [managing your publication.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Vanity URL {#vanity-url}
 
