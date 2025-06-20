@@ -20,17 +20,18 @@ The properties are distributed across several tabs.
 
 #### Title &amp; Tags {#tile}
 
-* **Title** - The title of the page is shown in various locations. For example, the **Websites** tab list and the **Sites** card/list views.
+* **Title** - The title of the page is shown in various locations 
+  * For example, the **Websites** tab list and the **Sites** card/list views.
   * This is a mandatory field.
-* **Tags** - Here you can add or remove tags from the page by updating the list in the selection box:
+* **Tags** - Here you can add or remove tags from the page by updating the list in the selection box.
   * After selecting a tag, it is listed below the selection box. You can remove a tag from this list using the x.
   * A new tag can be entered by typing the name in an empty selection box.
     * The new tag is created when you hit Enter.
     * The new tag is shown with a small star on the right indicating that it is a new tag.
-  * With the drop-down functionality, you can select from existing tags.
+  * With the drop-down, you can select from existing tags.
   * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
-  * For more information about tags, see [Using Tags](/help/sites-authoring/tags.md).
-* **Hide in Navigation** - Indicates whether the page is shown or hidden in the page navigation of the resulting site.
+  * For more information about tags, see [Using Tags.](/help/sites-authoring/tags.md)
+* **Hide in Navigation** - Indicates whether the page is shown or hidden in the page navigation of the resulting site
 
 #### Branding {#branding}
 
@@ -38,15 +39,18 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 
 * **Override** - Check to define the brand slug on this page.
   * The value is inherited by any child pages unless they also have their **Override** values set.
-* **Override value** - The text of the brand slug to be appended to the page title.
-  * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
+* **Override value** - The text of the brand slug to be appended to the page title
+  * The value is appended to the page title after a pipe character such as `Cycling Tuscany | Always ready for the WKND`
 
 #### More Titles &amp; Description {#more}
 
-* **Page Title** - A title to be used on the page. Typically used by title components. If empty, the **Title** is used.
-* **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** is used.
-* **Subtitle** - A subtitle for use on the page.
-* **Description** - Your description of the page, its purpose, or any other details you want to add.
+* **Page Title** - A title to be used on the page
+  * Typically used by title components
+  * If empty, the **Title** is used.
+* **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise).
+  * If empty, the **Title** is used.
+* **Subtitle** - A subtitle for use on the page
+* **Description** - Your description of the page, its purpose, or any other details you want to add
 
 #### On/OffTime {#on-time}
 
@@ -68,25 +72,25 @@ For example, if the Vanity URL is set to `welcome`to the page identified by the 
 >
 >Vanity URLs:
 >
->* Must be unique. Ensure that the value is not already used by another page.
+>* Must be unique.
 >* Do not support regex patterns.
 >* Should not be set to an existing page.
 
 Configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
 
-* **Add** - Tap or click to add a vanity URL
-* **Remove** - Tap or click to remove a vanity URL
+* **Add** - Tap or click to add a vanity URL.
+* **Remove** - Tap or click to remove a vanity URL.
 **Redirect Vanity URL** - Indicates whether you want the page to use the vanity URL or redirect to the page's actual URL
 
 ### Advanced {#advanced}
 
 #### Settings {#settings}
 
-* **Language** - The page language.
-* **Language Root** - Must be checked if the page is the root of a language copy.
-* **Redirect** - Indicate the page to which this page should automatically redirect.
-* **Design** - Indicate the [design](/help/sites-developing/designer.md) to be used for this page.
-* **Alias** - Specify an alias to be used with this page.
+* **Language** - The page language
+* **Language Root** - Must be checked if the page is the root of a language copy
+* **Redirect** - Indicates the page to which this page should automatically redirect
+* **Design** - Indicates the [design](/help/sites-developing/designer.md) to be used for this page.
+* **Alias** - Specifies an alias to be used with this page
   * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
   * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
   * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-authoring/publishing-pages.md) in the editor are only available for pages accessed via their actual paths.
@@ -95,16 +99,16 @@ Configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Va
 #### Configuration {#configuration}
 
 * **Inherited from &lt;*path*&gt;** - Enable/disable inheritance of the **Cloud Configuration** for the page
-* **Cloud Configuration** - The path to the configuration.
+* **Cloud Configuration** - The path to the configuration
 
 #### Template Settings {#templates}
 
-* **Allowed Templates** - [Define the list of templates that are available](/help/sites-authoring/templates.md#allowingatemplate) within this sub-branch.
+* **Allowed Templates** - [Defines the list of templates that are available](/help/sites-authoring/templates.md#allowingatemplate) within this sub-branch
 
 #### Authentication Requirement {#authentication}
 
-* **Enable** - Enable (or disable) the use of authentication so you can access the page.
-* **Login Page** - The page to be used for login.
+* **Enable** - Enable (or disable) the use of authentication so you can access the page
+* **Login Page** - The page to be used for login
 
 >[!NOTE]
 >
@@ -119,7 +123,7 @@ Configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Va
 
 #### Export {#export}
 
-* **Configuration** - Specify an export configuration.
+* **Configuration** - Specifies an export configuration
 
 #### SEO {#seo}
 
@@ -136,16 +140,16 @@ Configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Va
 This section is used to select and configure the image to be featured. This is used in components referencing the page; for example, teasers, page lists, etc.
 
 * **Image** -  You can **Pick** an asset, or browse for a file to upload, then **Edit**, or **Clear** the selected image.
-* **Alternative Text** - A text used to represent the meaning and/or function of the image, commonly used by screen readers
+* **Alternative Text** - Text used to represent the meaning and/or function of the image, commonly used by screen readers
 * **Inherit - Value taken from the DAM asset** - When checked, the alternative text is populated with the value of the `dc:description`metadata in DAM.
 
 #### Thumbnail {#thumbnail}
 
 SThis section is used to select and configure the image thumbnail for the page. This is used in components referencing the page; for example, teasers, page lists, etc.
 
-* **Generate Preview** - Generate a preview of the page that you want to use as a thumbnail.
-* **Upload Image** - Upload an image that you want to use as a thumbnail.
-* **Select Image** - Select an existing Asset that you want to use as the thumbnail.
+* **Generate Preview** - Generates a preview of the page that you want to use as a thumbnail
+* **Upload Image** - Uploads an image that you want to use as a thumbnail
+* **Select Image** - Selects an existing Asset that you want to use as the thumbnail
 * **Revert** - This option becomes available after you have changed the thumbnail. If you do not want to keep your change, you can revert that change before saving.
 
 ### Cloud Services {#cloud-services}
@@ -159,13 +163,13 @@ SThis section is used to select and configure the image thumbnail for the page. 
 #### ContextHub Configurations {#contexthub}
 
 * **Inherited from** - ContextHub configurations are by default inherited from the parent page.
-  * Uncheck to override inheritance
-* **ContextHub Path** - Select the [ContextHub Configuration](/help/sites-developing/ch-configuring.md)
-* **Segments Path** - Select the [Segments Path](/help/sites-administering/segmentation.md).
+  * Uncheck to override inheritance.
+* **ContextHub Path** - Selects the [ContextHub Configuration](/help/sites-developing/ch-configuring.md)
+* **Segments Path** - Selects the [Segments Path](/help/sites-administering/segmentation.md).
 
 #### Targeting Configuration {#targeting}
 
-Select a [Brand to specify a scope for Targeting](/help/sites-authoring/target-adobe-campaign.md).
+Select a [Brand to specify a scope for Targeting.](/help/sites-authoring/target-adobe-campaign.md)
 
 >[!NOTE]
 >This option requires the user account to be in the `Target Adminstrators`group.
@@ -193,19 +197,19 @@ Use the **Permissions** tab to define which users, groups, or [closed user group
 
 This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management.](/help/sites-administering/msm.md)
 
-* **Rollout** - Initiate a rollout of blueprint content to the Live Copies
-* **Live Copy Overview** - Open a window to browse the Live Copy page structure
+* **Rollout** - Initiates a rollout of blueprint content to the Live Copies
+* **Live Copy Overview** - Opens a window to browse the Live Copy page structure
 * **Current Live Copies** - A list of pages that are based on (that is, are Live Copies of) the selected blueprint page
-* **Rollout Config** - Define the rollout configuration for the page
+* **Rollout Config** - Defines the rollout configuration for the page
 
 ### Live Copy {#live-copy}
 
 This tab is only visible for pages that are configured as live copies. As with [blueprints,](#blueprint) Live Copies are part of [Multi Site Management.](/help/sites-administering/msm.md)
 
-* **Synchronize** - Synchronize Live Copy with blueprint, keeping local modifications
-* **Reset** - Reset Live Copy to state of blueprint, removing local modifications
-* **Suspend** - Suspend Live Copy from further rollout modifications
-* **Detach** - Detach Live Copy from blueprint
+* **Synchronize** - Synchronizes Live Copy with blueprint, keeping local modifications
+* **Reset** - Resets Live Copy to state of blueprint, removing local modifications
+* **Suspend** - Suspends Live Copy from further rollout modifications
+* **Detach** - Detaches Live Copy from blueprint
 
 #### Source {#source}
 
