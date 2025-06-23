@@ -191,6 +191,10 @@ To publish or unpublish a page using Manage Publication:
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
+>[!TIP]
+>
+>Scheduling content for publishing replicates content and respects publication workflows. If you wish to temporarily hide already published content without unpublishing, consider [**On Time** and **Off Time** available in the page properties.](/help/sites-authoring/editing-page-properties.md#on-time)
+
 ## Unpublishing Pages {#unpublishing-pages}
 
 Unpublishing a page will remove it from your publish environment so that it is no longer available to your readers.

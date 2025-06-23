@@ -1,11 +1,13 @@
 ---
-title: Editing content page properties
+title: Editing Page Properties
 description: Define the required properties for a page in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
+mini-toc-levels: 2
 ---
+
 # Editing Page Properties{#editing-page-properties}
 
 You can define the required properties for a page. These can vary depending on the nature of the page. For example, some pages might be connected to a live copy while others are not and the live copy information becomes available as appropriate.
@@ -16,237 +18,226 @@ The properties are distributed across several tabs.
 
 ### Basic {#basic}
 
-* **Title**
+#### Title &amp; Tags {#tile}
 
-  The title of the page is shown in various locations. For example, the **Websites** tab list and the **Sites** card/list views.
-
-  This is a mandatory field.
-
-* **Tags**
-
-  Here you can add or remove tags from the page by updating the list in the selection box:
-
+* **Title** - The title of the page is shown in various locations 
+  * For example, the **Websites** tab list and the **Sites** card/list views.
+  * This is a mandatory field.
+* **Tags** - Here you can add or remove tags from the page by updating the list in the selection box.
   * After selecting a tag, it is listed below the selection box. You can remove a tag from this list using the x.
   * A new tag can be entered by typing the name in an empty selection box.
-
     * The new tag is created when you hit Enter.
     * The new tag is shown with a small star on the right indicating that it is a new tag.
-
-  * With the drop-down functionality, you can select from existing tags.
+  * With the drop-down, you can select from existing tags.
   * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
+  * For more information about tags, see [Using Tags.](/help/sites-authoring/tags.md)
+* **Hide in Navigation** - Indicates whether the page is shown or hidden in the page navigation of the resulting site
 
-  For more information about tags, see [Using Tags](/help/sites-authoring/tags.md).
+#### Branding {#branding}
 
-* **Hide in Navigation**
+Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-  Indicates whether the page is shown or hidden in the page navigation of the resulting site.
+* **Override** - Check to define the brand slug on this page.
+  * The value is inherited by any child pages unless they also have their **Override** values set.
+* **Override value** - The text of the brand slug to be appended to the page title
+  * The value is appended to the page title after a pipe character such as `Cycling Tuscany | Always ready for the WKND`
 
-* **Branding**
+#### More Titles &amp; Description {#more}
 
-  Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* **Page Title** - A title to be used on the page
+  * Typically used by title components
+  * If empty, the **Title** is used.
+* **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise).
+  * If empty, the **Title** is used.
+* **Subtitle** - A subtitle for use on the page
+* **Description** - Your description of the page, its purpose, or any other details you want to add
 
-  * **Override** - Check to define the brand slug on this page.
-    * The value is inherited by any child pages unless they also have their **Override** values set.
-  * **Override value** - The text of the brand slug to be appended to the page title.
-    * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
-* **Page Title**
+#### On/OffTime {#on-time}
 
-  A title to be used on the page. Typically used by title components. If empty, the **Title** is used.
+The on/off time for a page is a convenient way to temporarily hide content that is already published. The content remains on the publish instance when it is off. Turning a page off does not unpublish the content.
 
-* **Navigation Title**
+* **On Time** - The date and time at which the published page is made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
 
-  You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** is used.
+  * If already [published,](/help/sites-authoring/publishing-pages.md) this page is available on the publish instance, but kept dormant (hidden) until rendering at the specified time.
+  * If not published and [configured for auto-replication,](/help/sites-deploying/replication.md) the page is automatically published, then rendered, at the specified time.
+  * If not published and not configured for auto-replication, the page is not automatically published, so a 404 is seen when an attempt to access the page is made.
+  
+* **Off Time** - Similar to and often used in combination with **On Time**, this defines the time at which the published page is hidden on the publish environment.
 
-* **Subtitle**
+Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish and have available immediately and have available on the publish environment until they are deactivated (the normal scenario).
 
-  A subtitle for use on the page.
+>[!NOTE]
+>If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action is triggered immediately.
 
-* **Description**
+>[!TIP]
+>
+>On/off times deal strictly with content that is already published (either manually or via auto-replication). For this reason, publishing workflows such as those for approving content are not triggered by to on/off times and on/off times do not affect the page's publication status. For this reason, on/off times are most appropriate for temporarily showing/hiding content that is already approved and published.
+>
+>If you wish to publish new content with all associated workflows or entirely remove (unpublish content) from your site, consider [managing your publication.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-  Your description of the page, its purpose, or any other details you want to add.
+#### Vanity URL {#vanity-url}
 
-* **On Time**
+Enter a vanity URL for this page, which can let you have a shorter and/or more expressive URL.
 
-  The date and time at which the published page becomes activated. When published, this page remains dormant until the specified time.
+For example, if the Vanity URL is set to `welcome`to the page identified by the path `/v1.0/startpage`for the website `http://example.com,` then `http://example.com/welcome`would be the vanity URL of `http://example.com/content/v1.0/startpage`
 
-  Leave these fields empty for pages that you want to publish immediately (the normal scenario).
+>[!CAUTION]
+>
+>Vanity URLs:
+>
+>* Must be unique.
+>* Do not support regex patterns.
+>* Should not be set to an existing page.
 
-* **Off Time**
+Configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
 
-  The time at which the published page becomes deactivated.
-
-  Again leave these fields empty for immediate action.
-
-* **Vanity URL**
-
-  Enter a vanity URL for this page, which can let you have a shorter and/or more expressive URL.
-
-  For example, if the Vanity URL is set to `welcome`to the page identified by the path `/v1.0/startpage`for the website `http://example.com,` then `http://example.com/welcome`would be the vanity URL of `http://example.com/content/v1.0/startpage`
-
-  >[!CAUTION]
-  >
-  >Vanity URLs:
-  >
-  >* Must be unique. Ensure that the value is not already used by another page.
-  >* Do not support regex patterns.
-  >* Should not be set to an existing page.
-  >
-
-  Configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
-
-* **Redirect Vanity URL**
-
-  Indicates whether you want the page to use the vanity URL.
+* **Add** - Tap or click to add a vanity URL.
+* **Remove** - Tap or click to remove a vanity URL.
+**Redirect Vanity URL** - Indicates whether you want the page to use the vanity URL or redirect to the page's actual URL
 
 ### Advanced {#advanced}
 
-* **Language**
+#### Settings {#settings}
 
-  The page language.
-
-* **Language Root**
-
-  Must be checked if the page is the root of a language copy.
-
-* **Redirect**
-
-  Indicate the page to which this page should automatically redirect.
-
-* **Design**
-
-  Indicate the [design](/help/sites-developing/designer.md) to be used for this page.
-
-* **Alias**
-
-  Specify an alias to be used with this page.
-
+* **Language** - The page language
+* **Language Root** - Must be checked if the page is the root of a language copy
+* **Redirect** - Indicates the page to which this page should automatically redirect
+* **Design** - Indicates the [design](/help/sites-developing/designer.md) to be used for this page.
+* **Alias** - Specifies an alias to be used with this page
   * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
   * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
   * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-authoring/publishing-pages.md) in the editor are only available for pages accessed via their actual paths.
   * For further details, see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
 
-* **Inherited from &lt;*path*&gt;**
+#### Configuration {#configuration}
 
-  Indicates whether the page is inherited. and where from.
+* **Inherited from &lt;*path*&gt;** - Enable/disable inheritance of the **Cloud Configuration** for the page
+* **Cloud Configuration** - The path to the configuration
 
-* **Cloud Configuration**
+#### Template Settings {#templates}
 
-  The path to the configuration.
+* **Allowed Templates** - [Defines the list of templates that are available](/help/sites-authoring/templates.md#allowingatemplate) within this sub-branch
 
-* **Allowed Templates**
+#### Authentication Requirement {#authentication}
 
-  [Define the list of templates that are available](/help/sites-authoring/templates.md#allowingatemplate) within this sub-branch.
+* **Enable** - Enable (or disable) the use of authentication so you can access the page
+* **Login Page** - The page to be used for login
 
-* **Enable** (Authentication Requirement)
+>[!NOTE]
+>
+>Closed user groups for the page are defined on the **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** tab.
 
-  Enable (or disable) the use of authentication so you can access the page.
+>[!CAUTION]
+>
+>The **[Permissions](#permissions)** tab allows the editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message is shown under **Authentication Requirement** and the option is not editable, nor are the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) editable.
+>
+>
+>In such a case the CUG permissions must be edited in the [classic UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-  >[!NOTE]
-  >
-  >Closed user groups for the page are defined on the **[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)** tab.
+#### Export {#export}
 
-  >[!CAUTION]
-  >
-  >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows the editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message is shown under **Authentication Requirement** and the option is not editable, nor are the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) editable.
-  >
-  >
-  >In such a case the CUG permissions must be edited in the [classic UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+* **Configuration** - Specifies an export configuration
 
-* **Login Page**
+#### SEO {#seo}
 
-  The page to be used for login.
+* **Canonical Url** - Used to overwrite the page's canonical URL
+  * If left blank the page's URL is its canonical URL.
+* **Robots Tags** - Use the dropdown to select the robots tags to control the behavior of search engine crawlers
+  * Some options conflict with each other, in which case the more permissive option take precedence.
+* **Generate Sitemap** - When selected, a `sitemap.xml` is generated for this page, and its descendants.
 
-* **Export Configuration**
+### Images {#images}
 
-  Specify an export configuration.
+#### Featured Image {#featured-image}
 
-### Thumbnail {#thumbnail}
+This section is used to select and configure the image to be featured. This is used in components referencing the page; for example, teasers, page lists, etc.
 
-Shows the page thumbnail image. You can:
+* **Image** -  You can **Pick** an asset, or browse for a file to upload, then **Edit**, or **Clear** the selected image.
+* **Alternative Text** - Text used to represent the meaning and/or function of the image, commonly used by screen readers
+* **Inherit - Value taken from the DAM asset** - When checked, the alternative text is populated with the value of the `dc:description`metadata in DAM.
 
-* **Generate Preview**
+#### Thumbnail {#thumbnail}
 
-  Generate a preview of the page that you want to use as a thumbnail.
+SThis section is used to select and configure the image thumbnail for the page. This is used in components referencing the page; for example, teasers, page lists, etc.
 
-* **Upload Image**
-
-  Upload an image that you want to use as a thumbnail.
-
-* **Select Image**
-
-  Select an existing Asset that you want to use as the thumbnail.
-
-* **Revert**
-
-  This option becomes available after you have changed the thumbnail. If you do not want to keep your change, you can revert that change before saving.
-
-### Social Media {#social-media}
-
-* **Social Media sharing**
-
-  Defines the sharing options available on the page. Exposes the options that are available to the [Sharing core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
-
-    * **Enable user sharing for Facebook**
-    * **Enable user sharing for Pinterest**
-    * **Preferred XF variation**
-      Define Experience Fragment variation used for generating metadata for a page
+* **Generate Preview** - Generates a preview of the page that you want to use as a thumbnail
+* **Upload Image** - Uploads an image that you want to use as a thumbnail
+* **Select Image** - Selects an existing Asset that you want to use as the thumbnail
+* **Revert** - This option becomes available after you have changed the thumbnail. If you do not want to keep your change, you can revert that change before saving.
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
-
-  Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+* **Cloud Service Configurations** - Defines which configuration is used for cloud services for the page
+* **Inherited from** - For Live Copies and Language Copies, cloud configurations are by default inherited from the Blueprint.
+  * Uncheck to override inheritance
 
 ### Personalization {#personalization}
 
-* **ContextHub Configurations**
+#### ContextHub Configurations {#contexthub}
 
-  Select the [ContextHub Configuration](/help/sites-developing/ch-configuring.md) and [Segments Path](/help/sites-administering/segmentation.md).
+* **Inherited from** - ContextHub configurations are by default inherited from the parent page.
+  * Uncheck to override inheritance.
+* **ContextHub Path** - Selects the [ContextHub Configuration](/help/sites-developing/ch-configuring.md)
+* **Segments Path** - Selects the [Segments Path](/help/sites-administering/segmentation.md).
 
-* **Targeting Configuration**
+#### Targeting Configuration {#targeting}
 
-  Select a [Brand to specify a scope for Targeting](/help/sites-authoring/target-adobe-campaign.md).
+Select a [Brand to specify a scope for Targeting.](/help/sites-authoring/target-adobe-campaign.md)
 
-  >[!NOTE]
-  >This option requires the user account to be in the `Target Adminstrators`group.
+>[!NOTE]
+>This option requires the user account to be in the `Target Adminstrators`group.
 
 ### Permissions {#permissions}
 
-* **Permissions**
+Use the **Permissions** tab to define which users, groups, or [closed user groups (CUGs)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) can access and/or modify the page.
 
-  In this tab you can:
+* [Add Permissions](/help/sites-administering/user-group-ac-admin.md)
+* [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+* View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)
 
-  * [Add Permissions](/help/sites-administering/user-group-ac-admin.md)
-  * [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+>[!CAUTION]
+>
+>The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message is shown and the CUG permissions are not editable, nor is the Authentication Requirement on the [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) tab editable.
+>
+>
+>In such a case the CUG permissions must be edited in the [classic UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-  * View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)
-
-  >[!CAUTION]
-  >
-  >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message is shown and the CUG permissions are not editable, nor is the Authentication Requirement on the [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) tab editable.
-  >
-  >
-  >In such a case the CUG permissions must be edited in the [classic UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
-
-  >[!NOTE]
-  >
-  >The Permissions tab does not allow the creation of empty CUG groups, which can be useful as a simple way to deny access to every user. To do this, CRX Explorer must be used. See the document [User, Group, and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
+>[!NOTE]
+>
+>The Permissions tab does not allow the creation of empty CUG groups, which can be useful as a simple way to deny access to every user. To do this, CRX Explorer must be used. See the document [User, Group, and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
 
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management.](/help/sites-administering/msm.md)
 
-  Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md). Controls the circumstances under which modifications are propagated to the Live Copy.
+* **Rollout** - Initiates a rollout of blueprint content to the Live Copies
+* **Live Copy Overview** - Opens a window to browse the Live Copy page structure
+* **Current Live Copies** - A list of pages that are based on (that is, are Live Copies of) the selected blueprint page
+* **Rollout Config** - Defines the rollout configuration for the page
 
 ### Live Copy {#live-copy}
 
-* **Livecopy**
+This tab is only visible for pages that are configured as live copies. As with [blueprints,](#blueprint) Live Copies are part of [Multi Site Management.](/help/sites-administering/msm.md)
 
-  Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md). Controls the circumstances under which modifications are propagated from the Blueprint.
+* **Synchronize** - Synchronizes Live Copy with blueprint, keeping local modifications
+* **Reset** - Resets Live Copy to state of blueprint, removing local modifications
+* **Suspend** - Suspends Live Copy from further rollout modifications
+* **Detach** - Detaches Live Copy from blueprint
 
-### Site Structure {#site-structure}
+#### Source {#source}
 
-* Provide links to pages that provide site-wide functionality, such as **Signup Page**, **Offline Page**, among others.
+* Displays the path of the blueprint for this Live Copy
+
+#### Status {#status}
+
+* Lists current Live Copy status of the page
+
+#### Configuration {#live-copy-config}
+
+* **Live Copy Inheritance** - If checked, the Live Copy configuration is effective on all children.
+* **Inherit Rollout Configs from Parent** - If checked, the rollout configuration is inherited from the parent of the page.
+* **Choose Rollout Config** - Defines the circumstances under which modifications are propagated from the Blueprint and only available when **Inherit Rollout Configs from Parent** is not selected
+* **List of excluded paths**
 
 ## Editing Page Properties {#editing-page-properties-1}
 
