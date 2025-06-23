@@ -40,7 +40,7 @@ This document lists the supported client and server platforms for AEM Forms on J
 
 >[!NOTE]
 >
->- For a complete list of exceptions to supported server platforms, see [Exceptions to supported server platforms](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
+>- For a complete list of exceptions to supported server platforms, see [Exceptions to supported server platforms](#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE support only English, French, German, and Japanese versions of the supported operating systems and applications.
 
 ### Upgrade and Support policy
