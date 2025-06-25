@@ -19,6 +19,8 @@ solution: Experience Manager, Experience Manager Forms
 
 * Install 64-bit version of  [Visual C++ 2019 Redistributable (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Ensure that the previously mentioned redistributable runtime packages are installed before starting the installation.
 * A user with administrator rights to install or uninstall AEM Forms Designer.
+* The system running 64-bit AEM Forms Designer must have OpenSSL3 installed, specifically the shared library `libcrypto-3-x64.dll`.  
+  This library is required for AEM Designer to function correctly and calculate the **SHAHash**.
 
 +++
 
