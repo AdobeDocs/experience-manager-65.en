@@ -1208,6 +1208,7 @@ user-guide-title: AEM 6.5
     + [PaperCapture service fails to perform OCRs on PDFs](/help/forms/using/papercapture-service-resolution.md)
     + [Mitigating Spring Framework Vulnerabilities for AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
     + [Mitigating Log4j2 vulnerabilities for Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
+    + [Mitigating Remote Code Execution Vulnerability for AEM Forms on JEE](/help/forms/using/aem-forms-rce-vulnerability-mitigation-troubleshooting.md)
     + [Display issues for XFA-based PDF forms and policy-protected documents](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
     + [How to open XFA-based PDF forms on Firefox and Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
     + [XML External Entity (XXE) Vulnerability in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
