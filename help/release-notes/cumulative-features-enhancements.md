@@ -10,7 +10,7 @@ solution: Experience Manager
 ---
 # Cumulative key features and enhancements
 
-A cumulative list of key features and enhancements in Adobe Experience Manager 6.5 for previous service pack releases.
+A cumulative list of key features and enhancements in Adobe Experience Manager 6.5 for the previous eight service pack releases.
 
 See also [Adobe Experience Manager 6.5 Latest Service Pack Release Notes](/help/release-notes/release-notes.md).
 
@@ -220,41 +220,3 @@ New protocol DASH (Dynamic Adaptive Streaming over HTTP) launched for adaptive b
 * [Adaptive Forms Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) are a set of 24 open-source, BEM-compliant components that are built on the foundation of the Adobe Experience Manager WCM Core Components. These components are open-source and provide developers the ability to customize and extend these components easily to match the specific needs of their organization. Anyone with existing skills to customize [WCM Core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/get-started/authoring) can easily customize and style these components.
 
 * The Reader Extension service on OSGi now provides separate options to enable import and export usage rights on a PDF to import or export data in Adobe Acrobat Reader.
-
-## AEM 6.5, Service Pack 15&mdash;November 24, 2022
-
-### [!DNL Forms]
-
-* AEM Forms Designer is now available in [Spanish locale](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
-* You can now use [OAuth2 to authenticate with Microsoft&reg; Office 365 mail server protocols (SMTP and IMAP)](/help/forms/using/oauth2-support-for-mail-service.md).
-* You can set [Revalidate on server](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#enabling-server-side-validation-br) property to true to identify the hidden fields for exclusion from a Document of Record on the server-side.
-* AEM Forms Designer requires a 32-bit version of Visual C++ 2019 Redistributable (x86).
-
-## AEM 6.5, Service Pack 14&mdash;August 25, 2022
-
-Bug fixes only.
-
-## AEM 6.5, Service Pack 13&mdash;May 26, 2022
-
-* Use invisible CAPTCHA in an Adaptive Form: You can now use an invisible CAPTCHA to show the CAPTCHA challenge only if there is suspicious activity. If no suspicious activity is found, the CAPTCHA challenge is not displayed. It helps assess human form completion without checkbox requirements, reduce customization efforts, and improve the end-user experience.
-
-* Added support to fetch response headers in Form Data Model post processor for REST endpoints.
-
-* Now, on generating an Adaptive Form translation file, the same sequence of texts in the generated XLIFF file is identical to the sequence of components in the corresponding Adaptive Form.
-
-* When you localize an Adaptive Form and make even a small change made to the text of the base language, the complete translation goes missing for all the other languages. The issue is fixed in [!DNL Experience Manager] 6.5.13.0.
-
-* Accessibility improvements for Forms:
-
-  * Added support for screen readers to recognize the header and body of a table as continues and connected entities. It helps screen readers navigate the tables properly. (NPR-37139)
-  * Added support for screen readers to stop navigating the HTML workspace until a dialog is open.
-
-## AEM 6.5, Service Pack 12&mdash;February 24, 2022
-
-* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the update, delete, rename, and move operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
-* Push-rollouts of a live copy source to multiple Live Copies are now possible by default, without requiring a blueprint configuration.
-* The status of in-progress async operations is now shown in the user interface to help prevent users from accidentally triggering multiple async operations on the same path.
-* Support for IMS-based authentication is provided for Analytics 2.0 APIs.
-* API support for JSON offer type Experience Fragment.
-* Offer request is now provided for Delete offer (Experience Fragment API) in IMS.
-* The built-in repository (Apache Jackrabbit Oak) remains at 1.22.9.
