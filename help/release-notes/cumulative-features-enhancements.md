@@ -90,8 +90,6 @@ The IPTC tab now supports [!UICONTROL Alt Text] and [!UICONTROL Extended Descrip
 
 ### [!DNL Forms]
 
-Some of the key features and enhancements in this release include the following:
-
 * **Support for Oauth Credentials**: A new and easier to use credential for server-to-server authentication, replacing the existing Service Account (JWT) credential. (NPR-41994)
 * [Rule Editor enhancements in AEM Forms](/help/forms/using/rule-editor-core-components.md):
   * Support for implementing nested conditions with `When-then-else` functionality.
