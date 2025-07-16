@@ -24,7 +24,7 @@ This article lists the critical fixes implemented to address known issues, impro
     <td><strong>Fixed issues</strong></td>
   </tr>
   <tr>
-    <td>SP23 Hotfix uploaded to SD-</td>
+    <td>SP23 Hotfix-</td>
     <td>
     <ul>
     <li><strong>Jboss:</strong></li>

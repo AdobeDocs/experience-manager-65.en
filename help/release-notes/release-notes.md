@@ -678,7 +678,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 >
 > Do not upgrade to Service Pack 6.5.23.0 for issues that do not have hotfixes available, as it may lead to unexpected errors. Upgrade to Service Pack 6.5.23.0 only after the required hotfixes are released. 
 
-* When a user upgrades Struts from AEM Service Pack 2.5.x to AEM Forms Service Pack 6.x, the Policies UI fails to display all configurations, such as the option to add a watermark. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) the resolve issue.  (FORMS-20203)
+* When a user upgrades the Struts framework from version 2.5.x to 6.x, the Policies UI in AEM Forms fails to display all configurations, such as the option to add a watermark. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve the issue. (FORMS-20203)
 * After upgrading to AEM Forms Service Pack 6.5.23.0, the ImageToPDF conversion service fails with the error (FORMS-20360):
     ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp``` You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) the resolve issue. 
 
