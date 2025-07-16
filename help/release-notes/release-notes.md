@@ -67,6 +67,10 @@ Key features and enhancements in this release include the following:
 
 * [Hardened file attachment component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): As a security measure, the component now prevents submission of files with modified extensions that attempt to bypass allowed file type checks. Such files are blocked during submission to ensure that only valid file types are accepted. 
 
+* FORMS-20533: AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This delivers previously missed Struts changes that were not included in SP23. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can [download and install](/help/release-notes/aem-forms-hotfix.md) to add support for the latest version of Struts.
+
+* FORMS-20532: AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the output component. This delivers previously missed Struts changes that were not included in SP23. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can [download and install](/help/release-notes/aem-forms-hotfix.md) to add support for the latest version of Struts.
+
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
   AdminUI in AEM Forms JEE now supports two-factor authentication using Security Assertion Markup Language (SAML) single sign-on (SSO), providing stronger security and a seamless login experience for administrators, similar to what is available in HTML Workspace. 
@@ -674,9 +678,9 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 >
 > Do not upgrade to Service Pack 6.5.23.0 for issues that do not have hotfixes available, as it may lead to unexpected errors. Upgrade to Service Pack 6.5.23.0 only after the required hotfixes are released. 
 
-* When a user upgrades Struts from AEM Service Pack 2.5.x to AEM Forms Service Pack 6.x, the Policies UI fails to display all configurations, such as the option to add a watermark. (FORMS-20203)
+* When a user upgrades Struts from AEM Service Pack 2.5.x to AEM Forms Service Pack 6.x, the Policies UI fails to display all configurations, such as the option to add a watermark. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) the resolve issue.  (FORMS-20203)
 * After upgrading to AEM Forms Service Pack 6.5.23.0, the ImageToPDF conversion service fails with the error (FORMS-20360):
-    ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+    ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp``` You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) the resolve issue. 
 
 * After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
 
@@ -708,7 +712,10 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
     @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
     (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
     have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
+
     ```
+
+* FORMS-20478: When attempting to convert type 7/8 TIFF files to PDF, the conversion process fails with error "ALC-PDG-001-000-Image2Pdf conversion failed, caused by: com/sun/image/codec/jpeg/JPEGCodec" and "ALC-PDG-016-003-An unknown/unexpected error occurred during PDF post-processing." The system attempts to retry using TM ImageIO TIFF decoder but ultimately fails to complete the job. You can [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) to fix the issue. 
 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
