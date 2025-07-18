@@ -20,8 +20,6 @@ App Builder provides a way for customers to easily extend Adobe Experience Manag
 * Core Services Extensibility - Extend core application capabilities by extending the default behavior with custom features & business logic.
 * User Experience Extensibility - Extend core experience to support business requirements or build customer-specific digital properties, storefronts & back-office apps.
 
-App Builder has been available to enterprise customers and partners by way of Adobe's Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. Adobe welcomes developers to try out App Builder through Adobe's [Trial Program](https://developer.adobe.com/app-builder/trial/).
-
 >[!NOTE]
 >
 >For customers of AEM as a Cloud Service, who want to use App Builder, see [Extending Adobe Experience Manager as a Cloud Service using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
@@ -39,13 +37,13 @@ The following diagram illustrates how a standard application built on App Builde
 
 ![Architecture](assets/appbuilder-architecture.jpg)
 
-For more details about the App Builder architecture, have a look at [Architecture Overview](https://developer.adobe.com/app-builder/docs/guides/).
+For more details about the App Builder architecture, have a look at [Architecture Overview](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview).
 
 ## Get Started with App Builder {#additional-resources}
 
 To help you get started with App Builder, a series of documentation was created to help you start:
 
-* [App Builder Getting Started](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [App Builder Getting Started](https://developer.adobe.com/app-builder/docs/get_started/)
 
 ## Continue learning with Documentation {#appbuilder-documentation}
 

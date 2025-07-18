@@ -5,6 +5,7 @@ exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
+index: no
 ---
 
 # Composite Components in SPAs {#composite-components-in-spas}

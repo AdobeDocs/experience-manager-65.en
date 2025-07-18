@@ -33,39 +33,30 @@ The Universal Editor is a service that works in tandem with AEM to author conten
 
 The Universal Editor is supported by:
 
-* AEM 6.5 (service pack 21 or 22 plus a feature pack)
+* AEM 6.5
   * Both on-premises and AMS hosting are supported.
-* [AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (release `2023.8.13099` or higher)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+  * Both on-premises and AMS hosting are supported.
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
-This document focuses on AEM 6.5 support of the Universal Editor.
+This document focuses on AEM 6.5 support of the Universal Editor. To use the Universal Editor with AEM 6.5, you will need:
+
+* AEM 6.5 with service pack 23 or higher
+  * Service packs 21 and 22 are also supported with [a feature pack.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip).
+* Dispatcher properly configured
 
 ## Setup {#setup}
 
 In order to test the Universal Editor you will need to:
 
-1. [Update and configure your AEM authoring instance.](#update-configure-aem)
 1. [Set up a local Universal Editor Service.](#set-up-ue)
 1. [Adjust your dispatcher to allow the Universal Editor Service.](#update-dispatcher)
 
 Once you have complete the setup, you can [instrument your applications to use the Universal Editor.](#instrumentation)
 
-### Update AEM {#update-aem}
-
-Service pack 21 or 22 and a feature pack for AEM are required in order to use the Universal Editor with AEM 6.5.
-
-#### Apply Latest Service Pack {#latest}
-
-Make sure that you are running at least service pack 21 or 22 for AEM 6.5. You can download the latest service pack from [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-
-#### Install Universal Editor Feature Pack {#feature-pack}
-
-Install the **Universal Editor Feature Pack for AEM 6.5** [available on Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
-
-If you are already running service pack 23 or higher, the feature pack is not necessary.
-
 ### Configure Services {#configure-services}
 
-The feature pack installs a number of new packages for which additional configuration is needed.
+The Universal Editor leverages several packages for which additional configuration is needed.
 
 #### Set the SameSite Attribute for the `login-token` cookie. {#samesite-attribute}
 

@@ -151,8 +151,3 @@ If persistent storage is embedded in the installation directory, for example, in
 >Adobe recommends that you back up your repository before deleting AEM. If you delete the entire &lt;cq-installation-directory&gt;, you also delete the repository. To keep the repository data before deleting, move or copy the &lt;cq-installation-directory&gt;/crx-quickstart/repository folder somewhere else before deleting the other folders.
 
 If your installation of AEM uses external storage, for example, a database server, removing folder does not remove the data automatically, but it does remove the storage configuration, which makes restoring the JCR content difficult.
-
-### JSP files are not compiled on JBoss&reg; {#jsp-files-are-not-compiled-on-jboss}
-
-If you install or update JSP files to Experience Manager on JBoss&reg; and the corresponding servlets are not compiled, ensure the JBoss&reg; JSP compiler is correctly configured. For information, see the
-[JSP Compilation Issues in JBoss&reg;](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) article.

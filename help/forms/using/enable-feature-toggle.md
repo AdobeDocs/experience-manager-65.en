@@ -10,6 +10,28 @@ exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
 
 Feature Toggle is a functionality in AEM that allows administrators to enable or disable specific features dynamically. This capability is particularly useful for managing **Early Adopter features** and **Prerelease features** without requiring major deployments or changes to the codebase. It ensures flexibility and control over which features are accessible in an AEM environment.
 
+## Why Use Feature Toggles in a AEM 6.5 Setup?
+
+When working in a AEM 6.5 setup, feature toggles help in:
+
+* Testing experimental features safely.
+
+* Rolling out new components in phases.
+
+* Maintaining a single codebase across multiple environments.
+
+* Reducing risk during deployments and upgrades.
+
+## Prerequisites
+
+Before enabling feature toggles in your AEM 6.5 setup, ensure the following:
+
+* User is member of `forms-users` group.
+
+* Navigate to `http://<author-instance-url>:portnumber/system/console/bundles` and check whether **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** bundle is present or not. In case it is not present [download the bundle from the link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+
+    ![Feature Toggle](/help/forms/using/assets/feature-toggle-6.5.png)
+
 ## Enable Feature Toggle {#enable-feature-toggle-65}
 
 Feature Toggles for early adopters or new features can be configured through the **AEM Web Console** by following the steps below:

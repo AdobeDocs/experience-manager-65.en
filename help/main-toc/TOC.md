@@ -13,6 +13,7 @@ user-guide-title: AEM 6.5
 + Release Notes {#release-notes}
   + [Release notes](/help/release-notes/release-notes.md) 
   + Previous release notes {#service-pack}
+    + [6.5.22](/help/release-notes/previous/6-5-22.md)
     + [6.5.21](/help/release-notes/previous/6-5-21.md)
     + [6.5.20](/help/release-notes/previous/6-5-20.md) 
     + [6.5.19](/help/release-notes/previous/6-5-19.md)
@@ -1207,6 +1208,10 @@ user-guide-title: AEM 6.5
     + [PaperCapture service fails to perform OCRs on PDFs](/help/forms/using/papercapture-service-resolution.md)
     + [Mitigating Spring Framework Vulnerabilities for AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
     + [Mitigating Log4j2 vulnerabilities for Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
+    + [Mitigating Remote Code Execution Vulnerability for AEM Forms on JEE](/help/forms/using/aem-forms-rce-vulnerability-mitigation-troubleshooting.md)
+    + [Display issues for XFA-based PDF forms and policy-protected documents](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
+    + [How to open XFA-based PDF forms on Firefox and Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
+    + [XML External Entity (XXE) Vulnerability in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
     + [EAR Deployment failing on JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
@@ -1431,6 +1436,7 @@ user-guide-title: AEM 6.5
         + [Introduction](/help/sites-developing/universal-editor/introduction.md)
     + Hybrid and SPA AEM Development {#spas}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [SPA Editor Deprecation](/help/sites-developing/spa-editor-deprecation.md)
       + [SPA Introduction and Walkthrough](/help/sites-developing/spa-walkthrough.md)
       + [SPA WKND Tutorial](/help/sites-developing/spa-wknd.md)
       + [Getting Started using React](/help/sites-developing/spa-getting-started-react.md)

@@ -10,6 +10,7 @@ exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
+index: no
 ---
 
 # Getting Started with SPAs in AEM - React{#getting-started-with-spas-in-aem-react}

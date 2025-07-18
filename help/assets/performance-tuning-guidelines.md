@@ -1,5 +1,5 @@
 ---
-title: Performance tuning [!DNL Assets].
+title: Performance tuning [!DNL Assets]
 description: Suggestions and guidance about [!DNL Experience Manager] configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
@@ -16,7 +16,7 @@ An [!DNL Experience Manager Assets] setup contains several hardware, software, a
 
 In addition, identifying and adhering to certain hardware and software optimization guidelines helps build a sound foundation that enables your [!DNL Experience Manager Assets] deployment to meet expectations around performance, scalability, and reliability.
 
-Poor performance in [!DNL Experience Manager Assets] can impact user experience around interactive performance, asset processing, download speed, and other areas.
+Poor performance in [!DNL Experience Manager Assets] can impact user experience in interactive performance, asset processing, download speed, and other areas.
 
 In fact, performance optimization is a fundamental task that you perform before you establish target metrics for any project.
 
@@ -24,13 +24,13 @@ Here are certain key focus areas around which you discover and fix performance i
 
 ## Platform {#platform}
 
-While Experience Manager is supported on several platforms, Adobe has found the greatest support for native tools on Linux and Windows, which contributes to optimum performance and ease of implementation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. As with any Experience Manager deployment, you should implement TarMK wherever possible. While TarMK cannot scale beyond a single author instance, it is found to perform better than MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
+While Experience Manager is supported on several platforms, Adobe has found the greatest support for native tools on Linux&reg; and Windows, which contributes to optimum performance and ease of implementation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. As with any Experience Manager deployment, you should implement TarMK wherever possible. While TarMK cannot scale beyond a single author instance, it is found to perform better than MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
 
 ### Temporary folder {#temp-folder}
 
-To improve asset upload times, use high performance storage for the Java temporary directory. On Linux and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example, in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
+To improve asset upload times, use high performance storage for the Java temporary directory. On Linux&reg; and Windows, a RAM drive or SSD could be used. In cloud-based environments, an equivalent high speed storage type could be used. For example, in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) can be used for the temporary folder.
 
-Assuming the server has ample memory, configure a RAM drive. On Linux, run these commands to create an 8 GB RAM drive:
+Assuming the server has ample memory, configure a RAM drive. On Linux&reg;, run these commands to create an 8 GB RAM drive:
 
 ```shell
 mkfs -q /dev/ram1 800000
@@ -72,15 +72,15 @@ Separating the data store from the segment store is recommended for all [!DNL Ex
 
 ### Configure the maximum size of the buffered image cache {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-When uploading large amounts of assets to [!DNL Adobe Experience Manager], to allow for unexpected spikes in memory consumption and to prevent JVM fails with OutOfMemoryErrors, reduce the configured maximum size of the buffered image cache. Consider an example that you have a system with a maximum heap (- `Xmx`param) of 5 GB, an Oak BlobCache set at 1 GB, and document cache set at 2 GB. In this case, the buffered cache would take maximum 1.25 GB and memory, that would leave only 0.75 GB memory for unexpected spikes.
+When uploading large amounts of assets to [!DNL Adobe Experience Manager], to allow for unexpected spikes in memory consumption and to prevent JVM fails with OutOfMemoryErrors, reduce the configured maximum size of the buffered image cache. Consider an example that you have a system with a maximum heap (- `Xmx`param) of 5 GB, an Oak BlobCache set at 1 GB, and document cache set at 2 GB. In this case, the buffered cache would take a maximum 1.25 GB and memory, that would leave only 0.75 GB memory for unexpected spikes.
 
 Configure the buffered cache size in the OSGi Web Console. At `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, set the property `cq.dam.image.cache.max.memory` in bytes. For example, 1073741824 is 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-From Experience Manager 6.1 SP1, if you're using a `sling:osgiConfig` node for configuring this property, make sure to set the data type to Long. For more details, see [CQBufferedImageCache consumes heap during Asset uploads](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
+From Experience Manager 6.1 SP1, if you're using a `sling:osgiConfig` node for configuring this property, make sure to set the data type to Long.
 
 ### Shared data stores {#shared-data-stores}
 
-Implementing an S3 or Shared File Datastore can help to save disk space and increase network throughput in large-scale implementations. For more information on the pros and cons of using a shared datastore, see [Assets sizing guide](/help/assets/assets-sizing-guide.md).
+Implementing an S3 or Shared File Datastore can help to save disk space and increase network throughput in large-scale implementations. For more information on the pros and cons of using a shared datastore, see the [Assets sizing guide](/help/assets/assets-sizing-guide.md).
 
 ### S3 data store {#s-data-store}
 
@@ -109,12 +109,12 @@ accessKey=<snip>
 
 ## Network optimization {#network-optimization}
 
-Adobe recommends enabling HTTPS because many companies have firewalls that sniff HTTP traffic, which adversely impacts uploads and corrupts files. For large file uploads, ensure that users have wired connections to the network because a WiFi network becomes quickly saturated. For guidelines on identifying network bottlenecks, see [Assets sizing guide](/help/assets/assets-sizing-guide.md). To assess network performance by analyzing network topology, see [Assets network considerations](/help/assets/assets-network-considerations.md).
+Adobe recommends enabling HTTPS because many companies have firewalls that sniff HTTP traffic, which adversely impacts uploads and corrupts files. For large file uploads, ensure that users have wired connections to the network because a WiFi network becomes quickly saturated. For guidelines on identifying network bottlenecks, see the [Assets sizing guide](/help/assets/assets-sizing-guide.md). To assess network performance by analyzing network topology, see [Assets network considerations](/help/assets/assets-network-considerations.md).
 
-Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your [!DNL Experience Manager] instance. Common configuration options, including firewalls or proxies can help improve network performance. Here are some key points to bear in mind:
+Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your [!DNL Experience Manager] instance. Common configuration options, including firewalls or proxies, can help improve network performance. Here are some key points to bear in mind:
 
 * Depending upon your instance type (small, moderate, large), ensure that you have sufficient network bandwidth for your Experience Manager instance. Adequate bandwidth allocation is especially important if [!DNL Experience Manager] is hosted on AWS.
-* If your [!DNL Experience Manager] instance is hosted on AWS, you can benefit by having a versatile scaling policy. Upsize the instance if users expect high load. Downsize it for moderate/low load.
+* If your [!DNL Experience Manager] instance is hosted on AWS, you can benefit by having a versatile scaling policy. Upsize the instance if users expect a high load. Downsize it for moderate/low load.
 * HTTPS: Most users have firewalls that sniff HTTP traffic, which can adversely impact uploading of files or even corrupt files during the upload operation.
 * Large file uploads: Ensure that users have wired connections to the network (WiFi connections saturate quickly).
 
@@ -136,7 +136,7 @@ Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. 
    >
    >Some features do not support transient workflows. If your [!DNL Assets] deployment requires these features, do not configure transient workflows.
 
-In cases where transient workflows cannot be used, run workflow purging regularly to delete archived [!UICONTROL DAM Update Asset] workflows to ensure system performance does not degrade.
+In cases where transient workflows cannot be used, run workflow purging regularly to delete archived [!UICONTROL DAM Update Asset] workflows to ensure that system performance does not degrade.
 
 Typically, execute the purging workflows on a weekly basis. However, in resource-intensive scenarios, such as during wide-scale asset ingestion, you can execute it more frequently.
 
@@ -162,7 +162,7 @@ Setting a queue to half of the available processors is a workable solution to st
 
 The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Dynamic Media PTIFF generation and [!DNL Adobe InDesign Server] integration. However, most users may not require several of these steps. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. In this case, update the launchers for [!UICONTROL DAM Update Asset] to point to the new model.
 
-Running the [!UICONTROL DAM Update Asset] workflow intensively can sharply increase the size of your file datatastore. Results of an experiment performed by Adobe have shown that the datastore size can increase by approximately 400 GB if around 5500 workflows are performed within 8 hours.
+Running the [!UICONTROL DAM Update Asset] workflow intensively can sharply increase the size of your file datastore. Results of an experiment performed by Adobe have shown that the datastore size can increase by approximately 400 GB if around 5500 workflows are performed within 8 hours.
 
 It is a temporary increase, and the datastore is restored to its original size after you run the datastore garbage collection task.
 
@@ -176,7 +176,7 @@ Customers use images of various sizes and formats across their website or for di
 
 Many Sites customers implement an image servlet that resizes and crops images at the time they are requested, which imposes additional load on the publish instance. However, as long as these images can be cached, the challenge can be mitigated.
 
-An alternative approach is to use Dynamic Media technology to hand-off image manipulation entirely. Additionally, you can deploy Brand Portal that not only takes over rendition generation responsibilities from the [!DNL Experience Manager] infrastructure, but also the entire publish tier.
+An alternative approach is to use Dynamic Media technology to hand-off image manipulation entirely. Additionally, you can deploy a Brand Portal that not only takes over rendition generation responsibilities from the [!DNL Experience Manager] infrastructure, but also the entire publish tier.
 
 #### ImageMagick {#imagemagick}
 
@@ -205,9 +205,9 @@ In addition, set the path of ImageMagick's temporary folder in the `configure.xm
 
 >[!NOTE]
 >
->The ImageMagick `policy.xml` and `configure.xml` files are available at `/usr/lib64/ImageMagick-&#42;/config/` instead of `/etc/ImageMagick/`.See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for location of the configuration files.
+>The ImageMagick `policy.xml` and `configure.xml` files are available at `/usr/lib64/ImageMagick-&#42;/config/` instead of `/etc/ImageMagick/`. See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for the location of the configuration files.
 
-If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Support if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Support representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
+If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Support if you plan to process lots of large PSD or PSB files. Work with an Adobe Customer Support representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
 
 ### XMP writeback {#xmp-writeback}
 
@@ -217,9 +217,9 @@ XMP writeback updates the original asset whenever metadata is modified in [!DNL 
 * A version of the asset is created
 * [!UICONTROL DAM Update Asset] is run against the asset
 
-The outcomes listed consume considerable resources. Therefore, Adobe recommends disabling XMP writeback if it is not required. For more information, see [XMP writeback](/help/assets/xmp-writeback.md).
+The outcomes listed consume considerable resources. Therefore, Adobe recommends disabling XMP writeback if it is not required. For more information, see the [XMP writeback](/help/assets/xmp-writeback.md).
 
-Importing a large amount of metadata can result in resource-intensive XMP writeback activity if run workflows flag is checked. Plan such an import during lean server usage so that performance for other users is not impacted.
+Importing a large amount of metadata can result in resource-intensive XMP writeback activity if the run workflows flag is checked. Plan such an import during lean server usage so that performance for other users is not impacted.
 
 ## Replication {#replication}
 
@@ -237,9 +237,9 @@ When replicating assets to a large number of publish instances, for example, in 
 
 ## Search indexes {#search-indexes}
 
-Install [the latest Service Packs](/help/release-notes/release-notes.md) and performance-related hotfixes as those often include updates to system indexes. See [performance tuning tips](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=en) for some index optimizations.
+Install [the latest Service Packs](/help/release-notes/release-notes.md) and performance-related hotfixes as those often include updates to system indexes. See [performance tuning tips](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) for some index optimizations.
 
-Create custom indexes for queries that you run often. For details, see [methodology for analyzing slow queries](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) and [crafting custom indexes](/help/sites-deploying/queries-and-indexing.md). For additional insights around query and index best practices, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Create custom indexes for queries that you run often. For details, see the [methodology for analyzing slow queries](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) and [crafting custom indexes](/help/sites-deploying/queries-and-indexing.md). For additional insights around query and index best practices, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Lucene index configurations {#lucene-index-configurations}
 
@@ -252,7 +252,7 @@ Some optimizations can be done on the Oak index configurations that can help imp
 
 If your users do not need to do full-text search of assets, say for example, searching through text in PDF documents, then disable it. You improve index performance by disabling full-text indexing. To disable [!DNL Apache Lucene] text extraction, follow these steps:
 
-1. In [!DNL Experience Manager] interface, access [!UICONTROL Package Manager].
+1. In the [!DNL Experience Manager] interface, access [!UICONTROL Package Manager].
 1. Upload and install the package available at [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Guess Total {#guess-total}
@@ -273,13 +273,13 @@ For every [!DNL Experience Manager] deployment, establish a performance testing 
 
 ### Network testing {#network-testing}
 
-For all network performance concerns from the customer, perform the following tasks:
+For all network performance concerns for the customer, perform the following tasks:
 
 * Test network performance from within the customer network
-* Test network performance from within Adobe network. For AMS customers, work with your CSE to test from within the Adobe network.
+* Test network performance from within the Adobe network. For AMS customers, work with your CSE to test from within the Adobe network.
 * Test network performance from another access point
 * By using a network benchmark tool
-* Test against the dispatcher
+* Test against the Dispatcher
 
 ### [!DNL Experience Manager] deployment testing {#aem-deployment-testing}
 

@@ -97,10 +97,6 @@ The following is a list of recommendations from Product Management for Adobe Exp
  </tbody>
 </table>
 
-### FAQ {#faq}
-
-See the Knowledge Base article, [Touch UI Authoring FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), for details; including any information about the deprecation schedule for the classic UI.
-
 ### Selecting Your UI {#selecting-your-ui}
 
 See [Selecting Your UI](/help/sites-authoring/select-ui.md) for information about configuring your system as required.

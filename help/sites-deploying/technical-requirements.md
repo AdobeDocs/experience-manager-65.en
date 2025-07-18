@@ -84,6 +84,7 @@ Adobe Experience Manager operates with the following versions of the Java&trade;
 
 | **Platform** | **Support Level** | **Link** |
 |---|---|---|
+| Oracle Java&trade; SE 21 JDK | Z: Not supported `[1]` |
 | Oracle Java&trade; SE 17 JDK | Z: Not supported `[1]` |
 | Oracle Java&trade; SE 11 JDK - 64-bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
 | Oracle Java&trade; SE 10 JDK | Z: Not supported `[1]` |
@@ -95,7 +96,7 @@ Adobe Experience Manager operates with the following versions of the Java&trade;
 | Azul Zulu OpenJDK 8 - 64-bit | A: Supported `[3]` | |
 
 1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java&trade; SE products. Java&trade; 9, Java&trade; 10, and Java&trade; 12 are non-LTS releases by Oracle (see [Oracle Java&trade; SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in a production environment, Adobe provides support only for the LTS releases of Java&trade;. Support and distribution of the Oracle Java&trade; SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, is supported by Adobe directly for all AEM customers that use the Oracle Java&trade; SE technology. See the [Java&trade; support policy for Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf). 
-**Important: Oracle Java&trade; 11 is supported until September 2026 at a minimum. Support for Oracle Java&trade; 17 is in preparation.**
+**Important: Oracle Java&trade; 11 is supported until September 2026 at a minimum. Oracle Java&trade; 17 and 21 are supported on [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. The IBM&reg; JRE is only supported along with WebSphere&reg; Application Server.
  
@@ -113,6 +114,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | Store binaries in TAR files on file system `[1]` |Binaries |Z: Not supported for production |
 | Amazon S3 |Binaries |A: Supported |
 | Microsoft&reg; Azure Blob Storage |Binaries |A: Supported |
+| MongoDB Enterprise 7.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 6.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 5.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 4.4 |Repository |A: Supported `[2, 3, 4, 7]` |
@@ -122,19 +124,21 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | MongoDB Enterprise 3.4 |Repository |Z: Not supported |
 | IBM&reg; DB2&reg; 10.5 |Repository & Forms Database |R: Restricted Support `[5]` |
 | Oracle Database 12c (12.1.x) |Repository & Forms Database |R: Restricted Support |
+| Oracle Database 19c |Repository & Forms Database |R: Restricted Support |
 | Microsoft&reg; SQL Server 2016 |Forms Database |A: Supported |
+| Microsoft&reg; SQL Server 2019 (Deprecated) |Forms Database |A: Supported |
+| Microsoft&reg; SQL Server 2022 |Forms Database |A: Supported |
 | **Apache Lucene (Quickstart built-in)** |Search Service |A: Supported |
 | Apache Solr |Search Service |A: Supported |
 
 1. 'File System' includes block storage that is POSIX-compliant. Includes network storage technology. Mind that file system performance might vary and influences the overall performance. Load test AEM with the network/remote file system.
-1. MongoDB Enterprise versions 4.2 and 4.4 require AEM 6.5 SP9 as a minimum.
-1. MongoDB Sharding is not supported in AEM.
-1. MongoDB Storage Engine WiredTiger is supported only.
-1. Supported for AEM Forms upgrade customers. Not supported for new installations.
-1. Applicable to AEM Forms only:
+2. MongoDB Enterprise versions 4.2 and 4.4 require AEM 6.5 SP9 as a minimum.
+3. MongoDB Sharding is not supported in AEM.
+4. MongoDB Storage Engine WiredTiger is supported only.
+5. Supported for AEM Forms upgrade customers. Not supported for new installations.
+6. Applicable to AEM Forms only:
     * Removed support for Oracle Database 12c and added support for Oracle Database 19c.
-    * Removed support for Microsoft&reg; SQL Server 2016 and added support for Microsoft&reg; SQL Server 2019.
-1. Not supported for AEM Forms.
+    * Removed support for Microsoft&reg; SQL Server 2016 and added support for Microsoft&reg; SQL Server 2019 and Microsoft&reg; SQL Server 2022.
 
 >[!NOTE]
 >
@@ -175,14 +179,16 @@ The minimum Servlet API Version required is Servlet 3.1
 | Oracle WebLogic Server 12.2 (12cR2) |Z: Not supported  |
 | IBM&reg; WebSphere&reg; Application Server Continuous Delivery (LibertyProfile) with Web Profile 7.0 and IBM&reg; JRE 1.8 |R: Restricted Support for new contracts `[2]` |
 | IBM&reg; WebSphere&reg; Application Server 9.0 and IBM&reg; JRE 1.8 |R: Restricted Support for new contracts `[1]` `[2]` |
+| IBM&reg; WebSphere&reg; Application Server 9.0.0.10 |R: Restricted Support for new contracts `[1]` `[2]` |
 | Apache Tomcat 8.5.x |R: Restricted Support for new contracts `[2]` |
 | JBoss&reg; EAP 7.2.x with JBoss&reg; Application Server |Z: Not supported  |
 | JBoss&reg; EAP 7.1.4 with JBoss&reg; Application Server |R: Restricted Support for new contracts `[1]` `[2]` |
 | JBoss&reg; EAP 7.0.x with JBoss&reg; Application Server |Z: Not supported  |
+| JBoss&reg; EAP 7.4 with JBoss&reg; Application Server <sup>[2] [3] [7] |A: Supported  |
 
 1. Recommended for deployments with AEM Forms.
-1. Starting AEM 6.5 deployments on application servers moves to Restricted Support. Existing customers can upgrade to AEM 6.5 and keep using application servers. For new customers, it comes with support criteria and a support program as stated in the Level-R description above.
-1. Applicable AEM Forms only:
+2. Starting AEM 6.5 deployments on application servers moves to Restricted Support. Existing customers can upgrade to AEM 6.5 and keep using application servers. For new customers, it comes with support criteria and a support program as stated in the Level-R description above.
+3. Applicable AEM Forms only:
     * Removed support for JBoss&reg; EAP 7.1.4 and added support for JBoss&reg; EAP 7.4.10. 
 
 ### Server Operating Systems {#server-operating-systems}
@@ -194,15 +200,16 @@ Adobe Experience Manager works with the following server platforms for productio
 | **Linux&reg;, based on the Red Hat&reg; distribution** |A: Supported `[1]` `[3]` |
 | Linux&reg;, based on Debian distribution incl. Ubuntu |A: Supported `[1]` `[2]` |
 | Linux&reg;, based on SUSE&reg; distribution |A: Supported `[1]`|
-| Microsoft&reg; Windows Server 2019 `[4]` |R: Restricted Support for new contracts `[5]` |
+| Microsoft&reg; Windows Server 2022 |R: Restricted Support  |
+| Microsoft&reg; Windows Server 2019 `[4]` (Deprecated) |R: Restricted Support for new contracts `[5]` |
 | Microsoft&reg; Windows Server 2016 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft&reg; Windows Server 2012 R2 |Z: Not supported  |
 | Oracle Solaris&trade; 11 |Z: Not supported  |
 | IBM&reg; AIX&reg; 7.2 |Z: Not supported  |
 
-1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x and 6. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, CentOS, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on CentOS 7, Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
-1. AEM Forms is supported on Ubuntu 20.04 LTS.
-1. Linux&reg; distribution supported by Adobe Managed Services.
+1. Linux&reg; Kernel 2.6, 3. x, 4. x, 5. x, 6. x and 9. x includes derivatives from Red Hat&reg; distribution, including Red Hat&reg; Enterprise Linux&reg;, Oracle Linux&reg;, and Amazon Linux&reg;. AEM Forms add-on features are only supported on Red Hat&reg; Enterprise Linux&reg; 7, Red Hat&reg; Enterprise Linux&reg; 8, and Red Hat&reg; Enterprise Linux&reg; 9. 
+2. AEM Forms is supported on Ubuntu 20.04 and SUSE&reg; Linux&reg; Enterprise Server 15 SP6 (64-bit).
+3. Linux&reg; distribution supported by Adobe Managed Services.
 
     >[!NOTE]
     >
@@ -213,10 +220,13 @@ Adobe Experience Manager works with the following server platforms for productio
     >* libxcb.x86_64 (1.13-1.el7)
     >* libXau.x86_64 (1.0.8-2.1.el7)
     >* glibc-locale.x86_64 (2.17 or later)
+    >* OpenSSL 3 (required at default location on OS). 
+    
+    *For OpenSSL 3 Installation: The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.*
 
-1. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
-1. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
-1. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
+4. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
+5. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
+6. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
 
 >[!NOTE]
 >
@@ -342,7 +352,7 @@ Generally, browser support for websites rendered by AEM Sites depends on the imp
 
 When connecting with Microsoft&reg; Windows 7+ to an AEM instance that is not secured with SSL, basic authentication over an unsecured network must be enabled in Windows. It requires a change in the Windows Registry of the WebClient:
 
-1. Locate the registry subkey:
+1. Locate the registry subkey: 
 
     * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
 
@@ -391,7 +401,7 @@ The following hardware requirements are applicable for both Linux&reg; and Windo
 
 If you are using Dynamic Media on Linux&reg;, the following prerequisites must be met:
 
-* Red Hat&reg; Enterprise 7 or CentOS 7 and later with latest fix patches
+* Red Hat&reg; Enterprise 7 and later with latest fix patches
 * 64-bit Operating System
 * Swapping disabled (recommended)
 * SELinux disabled (See note that follows)
@@ -543,10 +553,10 @@ XMP write-back is supported and enabled for the following platforms and file for
 
 * **Operating Systems:**
 
-    * Linux&reg; (32-bit and 32-bit application support on 64-bit systems). For steps to install 32-bit client libraries, see [How to enable XMP extraction and write-back on 64-bit Red Hat&reg; Linux&reg;](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+  * Linux&reg; (32-bit and 32-bit application support on 64-bit systems). 
 
-    * Windows Server
-    * macOS X (64-bit)
+  * Windows Server
+  * macOS X (64-bit)
 
 * **File Formats**: JPEG, PNG, TIFF, PDF, INDD, AI, and EPS.
 

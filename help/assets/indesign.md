@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Assets
 
 [!DNL Adobe Experience Manager Assets] uses:
 
-* A proxy to distribute the load of certain processing tasks. A proxy is an [!DNL Experience Manager] instance that communicates with a proxy worker to fulfil a specific task, and other [!DNL Experience Manager] instances to deliver the results.
+* A proxy to distribute the load of certain processing tasks. A proxy is an [!DNL Experience Manager] instance that communicates with a proxy worker to fulfill a specific task, and other [!DNL Experience Manager] instances to deliver the results.
 * A proxy worker to define and manage a specific task.
   These can cover a wide variety of tasks; for example, using an [!DNL InDesign Server] to process files.
 
-To fully upload files to [!DNL Experience Manager Assets] that you have created with [!DNL Adobe InDesign] a proxy is used. This uses a proxy worker to communicate with the [!DNL Adobe InDesign Server], where [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) are run to extract metadata and generate various renditions for [!DNL Experience Manager Assets]. The proxy worker enables the two-way communication between the [!DNL InDesign Server] and the [!DNL Experience Manager] instances in a cloud configuration.
+To fully upload files to [!DNL Experience Manager Assets] that you have created with [!DNL Adobe InDesign] a proxy is used. This uses a proxy worker to communicate with the [!DNL Adobe InDesign Server], where scripts are run to extract metadata and generate various renditions for [!DNL Experience Manager Assets]. The proxy worker enables the two-way communication between the [!DNL InDesign Server] and the [!DNL Experience Manager] instances in a cloud configuration.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] is offered as two separate offerings. [Adobe InDesign](https://www.adobe.com/products/indesign.html) desktop app that is used to design page layouts for print and digital distribution. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) enables you to programmatically create automated documents based on what you have created with [!DNL InDesign]. It operates as a service offering an interface to its [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) engine.The scripts are written in [!DNL ExtendScript], which is similar to [!DNL JavaScript]. For information about [!DNL InDesign] scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] is offered as two separate offerings. [Adobe InDesign](https://www.adobe.com/products/indesign.html) desktop app that is used to design page layouts for print and digital distribution. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) enables you to programmatically create automated documents based on what you have created with [!DNL InDesign]. It operates as a service offering an interface to its ExtendScript engine. The scripts are written in [!DNL ExtendScript], which is similar to [!DNL JavaScript].
 
 ## How the extraction works {#how-the-extraction-works}
 
@@ -30,7 +30,7 @@ The [!DNL Adobe InDesign Server] can be integrated with [!DNL Experience Manager
 >Previous versions of [!DNL Experience Manager] were able to extract XMP and the thumbnail, now all media can be extracted.
 
 1. Upload your INDD file to [!DNL Experience Manager Assets].
-1. A framework sends command script(s) to the [!DNL InDesign Server] via SOAP (Simple Object Access Protocol).
+1. A framework sends command scripts to the [!DNL InDesign Server] through SOAP (Simple Object Access Protocol).
    This command script will:
 
     * Retrieve the INDD file.
@@ -44,11 +44,11 @@ The [!DNL Adobe InDesign Server] can be integrated with [!DNL Experience Manager
 
    >[!NOTE]
    >
-   >IDML is an XML-based format that renders all contents of the [!DNL InDesign] file. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. For more information, see [InDesign Interchange Formats INX and IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
+   >IDML is an XML-based format that renders all contents of the [!DNL InDesign] file. It is stored as a compressed package using [ZIP](https://techterms.com/definition/zip) compression. For more information, see [InDesign Interchange Formats INX and IDML](https://www.peachpit.com/promotions/adobe-creative-cloud-2024-release-books-ebooks-and-142536).
 
    >[!CAUTION]
    >
-   >If the [!DNL InDesign Server] is not installed or not configured, then you can still upload an INDD file into [!DNL Experience Manager]. However the renditions generated are limited to PNG and JPEG. You will not be able to generate HTML, .idml, or the page renditions.
+   >If the [!DNL InDesign Server] is not installed or not configured, then you can still upload an INDD file into [!DNL Experience Manager]. However, the renditions generated are limited to PNG and JPEG. You will not be able to generate HTML, `.idml`, or the page renditions.
 
 1. After the extraction and rendition generation:
 
@@ -77,7 +77,7 @@ To install and start the [!DNL InDesign Server] for use with [!DNL Experience Ma
 
    `<*ids-installation-dir*>/InDesignServer.com -port 8080`
 
-   This will start the server with the SOAP plugin listening on port 8080. All log messages and output are written directly to the command window.
+   This starts the server with the SOAP plugin listening on port 8080. All log messages and output are written directly to the command window.
 
    >[!NOTE]
    >
@@ -91,7 +91,7 @@ To install and start the [!DNL InDesign Server] for use with [!DNL Experience Ma
 * [Media Extraction](#media-extraction)
 * [Page Extraction](#page-extraction)
 
-This workflow is setup with default values that can be adapted for your setup on the various author instances (this is a standard workflow, so further information is available under [Editing a Workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). If you are using the default values (including the SOAP port), then no configuration is needed.
+This workflow is set up with default values that can be adapted for your setup on the various author instances (this is a standard workflow, so further information is available under [Editing a Workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). If you are using the default values (including the SOAP port), then no configuration is needed.
 
 After the setup, uploading [!DNL InDesign] files into [!DNL Experience Manager Assets] (by any of the usual methods) triggers the workflow to process the asset and prepare the various renditions. Test your configuration by uploading an INDD file into [!DNL Experience Manager Assets] to confirm that you see the different renditions created by IDS under `<*your_asset*>.indd/Renditions`
 
@@ -99,7 +99,7 @@ After the setup, uploading [!DNL InDesign] files into [!DNL Experience Manager A
 
 This step controls the extraction of media from the INDD file.
 
-To customize, you can edit **[!UICONTROL Arguments]** tab of the **[!UICONTROL Media Extraction]** step.
+To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTROL Media Extraction]** step.
 
 ![Media extraction arguments and script paths](assets/media_extraction_arguments_scripts.png)
 
@@ -115,7 +115,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 >[!CAUTION]
 >
->Do not change the ExtendScript library. This library provides the HTTP functionality required to communicate with Sling. This setting specifies the library to be send to the [!DNL InDesign Server] for use there.
+>Do not change the ExtendScript library. This library provides the HTTP functionality required to communicate with Sling. This setting specifies the library to be sent to the [!DNL InDesign Server] for use there.
 
 The `ThumbnailExport.jsx` script run by the Media Extraction workflow step generates a thumbnail rendition in JPG format. This rendition is used by the Process Thumbnails workflow step to generate the static renditions required by [!DNL Experience Manager].
 
@@ -123,7 +123,7 @@ You can configure the Process Thumbnails workflow step to generate static rendit
 
 #### Page extraction {#page-extraction}
 
-This creates an [!DNL Experience Manager] page from the extracted elements. An extraction handler is used to extract data from a rendition (currently HTML or IDML). This data is then used to create a page using the PageBuilder.
+This creates an [!DNL Experience Manager] page from the extracted elements. An extraction handler is used to extract data from a rendition (currently HTML or IDML). This data is then used to create a page using the Page Builder.
 
 To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTROL Page Extraction]** step.
 
@@ -132,11 +132,11 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 * **Page Extraction Handler**: From the popup list, select the handler that you want to use. An extraction handler operates on a specific rendition, chosen by a related `RenditionPicker` (see the `ExtractionHandler` API). In a standard [!DNL Experience Manager] installation the following is available:
   * IDML Export Extraction Handle: Operates on the `IDML` rendition generated in the MediaExtract step.
 
-* **Page Name**: Specify the name you want to have assigned to the resulting page. If left blank then the name is "page" (or a derivative if "page" already exists).
+* **Page Name**: Specify the name that you want to have assigned to the resulting page. If left blank then the name is "page" (or a derivative if "page" already exists).
 
-* **Page Title**: Specify the title you want to have assigned to the resulting page.
+* **Page Title**: Specify the title that you want to have assigned to the resulting page.
 
-* **Page Root Path**: The path to the root location of the resulting page. If left blank the node holding the asset's renditions is used.
+* **Page Root Path**: The path to the root location of the resulting page. If left blank, the node holding the asset's renditions is used.
 
 * **Page Template**: The template to use when generating the resulting page.
 
@@ -157,7 +157,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
     * **IDS Pool**
-      The SOAP endpoint(s) to be used for communicating with the [!DNL InDesign Server]. You can add, remove and order items are required.
+      The SOAP endpoints used for communicating with the [!DNL InDesign Server]. You can add, remove and order items are required.
 
 1. Click OK to save.
 
@@ -167,7 +167,7 @@ If the [!DNL InDesign Server] and [!DNL Experience Manager] are on different hos
 
 1. Access the Web Console at `https://[aem_server]:[port]/system/console/configMgr`.
 1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**. Click **[!UICONTROL Edit]** to open.
-1. Link Externalizer settings help create absolute URLs for the [!DNL Experience Manager] deployment and for the [!DNL InDesign Server]. Use **[!UICONTROL Domains]** field to specify the host name for the [!DNL Adobe InDesign Server]. Click **Save**.
+1. Link Externalizer settings help create absolute URLs for the [!DNL Experience Manager] deployment and for the [!DNL InDesign Server]. Use the **[!UICONTROL Domains]** field to specify the host name for the [!DNL Adobe InDesign Server]. Click **Save**.
 
    In absolute URLs, use `localhost` as the host name for your local (author) instance, and host name or IP address for the publish instance as shown in the following illustration. 
 
@@ -178,7 +178,7 @@ If the [!DNL InDesign Server] and [!DNL Experience Manager] are on different hos
 You can now enable parallel job processing for IDS. Determine the maximum number of parallel jobs (`x`) an [!DNL InDesign Server] can process:
 
 * On a single multiprocessor machine, the maximum number of parallel jobs (`x`) that an [!DNL InDesign Server] can process is one less than the number of processors running IDS.
-* When you are running IDS on multiple machines you need to count the total number of processors available (ie on all machines) then subtract the total number of machines.
+* When you are running IDS on multiple machines, you need to count the total number of processors available (that is, on all machines) then subtract the total number of machines.
 
 To configure the number of parallel IDS jobs:
 
@@ -203,7 +203,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 
    >[!NOTE]
    >
-   >When working with pool of workers, you can enable blocked list of IDS workers.
+   >When working with a pool of workers, you can enable a blocked list of IDS workers.
    >
    >To do so, enable the **[!UICONTROL enable.retry.name]** checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
    >
