@@ -31,5 +31,5 @@ You must previously have [integrated AEM with Adobe Campaign](/help/sites-admini
 
 In addition, if you want to customize your integrations, see the following topics:
 
-* [Creating Custom Extensions](/help/sites-developing/extending-campaign-extensions.md)
+* [Custom Adobe Campaign Extensions](/help/sites-developing/extending-campaign-extensions.md)
 * [Creating Custom Form Mappings](/help/sites-developing/extending-campaign-form-mapping.md)

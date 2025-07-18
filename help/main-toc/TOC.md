@@ -145,7 +145,6 @@ user-guide-title: AEM 6.5
         + [Creating and Managing Offers](/help/sites-authoring/offerlib.md)
         + [Understanding Segmentation](/help/sites-authoring/segmentation-overview.md)
     + AEM and Adobe Campaign {#aem-adobe-campaign}
-        + [Working with Adobe Campaign](/help/sites-authoring/adobe-campaign.md)
         + [Working with Adobe Campaign Classic and Adobe Campaign Standard](/help/sites-authoring/campaign.md)
         + [Targeting your Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
         + [Creating Adobe Campaign Forms in AEM](/help/sites-authoring/adobe-campaign-forms.md)
@@ -209,7 +208,6 @@ user-guide-title: AEM 6.5
       + [Personalization](/help/sites-administering/personalization.md)
       + [Configuring ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/personlization/ch-configuring.html)
       + [Client Context](/help/sites-administering/client-context.md)
-      + [Campaigns](/help/sites-administering/campaigns.md)
       + [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md)
       + [Configuring Segmentation](/help/sites-administering/campaign-segmentation.md)
       + [Extending and Configuring the Design Importer for Landing Pages](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
@@ -230,7 +228,6 @@ user-guide-title: AEM 6.5
       + [SharePoint Connector Licenses, Copyright Notices, and Disclaimers](/help/sites-administering/sharepoint-connector-licenses.md)
       + [DHTML Viewer End-of-Life FAQs](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
       + [Integrating with Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
-      + [Related Community Articles](/help/sites-administering/related-community-articles.md)
       + [Integrating with Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
       + [Flash Viewers End-of-Life Notice](/help/sites-administering/flash-viewers-eol.md)
       + [Integrating with Adobe Dynamic Tag Management](/help/sites-administering/dtm.md)
@@ -1510,7 +1507,7 @@ user-guide-title: AEM 6.5
       + Cloud Services{#extending-cloud-services}
         + [Cloud Service Configurations](/help/sites-developing/extending-cloud-config.md)
         + [Creating a Custom Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)
-      + [Creating Custom Extensions](/help/sites-developing/extending-campaign-extensions.md)
+      + [Custom Adobe Campaign Extensions](/help/sites-developing/extending-campaign-extensions.md)
       + Forms{#extending-forms}
         + [Creating Custom Form Mappings](/help/sites-developing/extending-campaign-form-mapping.md)
         + [Creating Custom AEM Page Template with Adobe Campaign Form Components](/help/sites-developing/extending-campaign-custom-template.md)
