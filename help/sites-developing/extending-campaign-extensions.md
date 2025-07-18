@@ -1,18 +1,17 @@
 ---
-title: Creating Custom Extensions
+title: Custom Adobe Campaign Extensions
 description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign.
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 ---
-# Creating Custom Extensions{#creating-custom-extensions}
+
+# Custom Adobe Campaign Extensions{#creating-custom-extensions}
 
 Generally when you implement a project, you have custom code in both AEM and Adobe Campaign. With the use of the existing API, you can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign. This document describes how to do that.
 
@@ -30,10 +29,6 @@ See [Integrating AEM with Adobe Campaign 6.1](/help/sites-administering/campaign
 The standard integration between AEM and Campaign is based on JSON and JSSP (JavaScript Server Page). These JSSP files can be found in the Campaign console, and all start with **aec** (Adobe Experience Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
-
->[!NOTE]
->
->[For this example, see Geometrixx](/help/sites-developing/we-retail.md), which is available from Package Share.
 
 In this example, a new custom JSSP file was created and calls that from the AEM side to retrieve the result. It can be used, for example, to retrieve data from Adobe Campaign or to save data into Adobe Campaign.
 

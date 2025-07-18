@@ -74,7 +74,7 @@ Forms dedicated to Adobe Campaign have specific components. These components hav
 
 >[!NOTE]
 >
->If the desired template is not available, see [Making a template available](/help/sites-authoring/adobe-campaign.md).
+>If the desired template is not available, see [Making a template available.](/help/sites-authoring/campaign.md)
 
 This section only details specific links to Adobe Campaign. For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-authoring/default-components-foundation.md).
 
