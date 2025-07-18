@@ -152,7 +152,7 @@ the following search patterns will find it (and any other images matching the pa
 
 AEM lets you view which pages are linked to the page you are currently working on.
 
-To show direct page references:
+To show page references:
 
 1. In the sidekick, select the **Page** tab icon.
 
@@ -161,6 +161,10 @@ To show direct page references:
 1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
+
+AEM shows you all pages that directly reference the selected page as well as any indirect references. This is helpful understanding all the links that will be updated if you need to move or delete the page.
+
+## Additional Sidekick Actions {#additional-actions}
 
 In certain situations further actions are available from Sidekick, including:
 

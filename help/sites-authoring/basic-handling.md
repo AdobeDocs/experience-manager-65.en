@@ -562,15 +562,16 @@ These options are accessible by way of the chevron next to the **Comment** field
 
 ### References {#references}
 
-**References** show any connections to the selected resource. For example, in the **Sites** console [references](/help/sites-authoring/author-environment-tools.md#showingpagereferences) for pages shows:
+**References** show connections to the selected resource. For example, in the **Sites** console [references](/help/sites-authoring/author-environment-tools.md#showingpagereferences) for pages shows:
 
+* [Blueprints](/help/sites-administering/msm.md)
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Content references:
 
-    * links from other pages to the selected page
-    * content borrowed from, or lent, or both, to the selected page by the Reference component
+    * Direct links from other pages to the selected page
+    * Content borrowed from, lent to, or both, to the selected page by the Reference component
 
 ![bh-28](assets/bh-28.png)
 

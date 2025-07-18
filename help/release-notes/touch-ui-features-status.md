@@ -70,7 +70,7 @@ This is a list of capabilities the classic UI Site Admin (`/siteadmin`) has and 
 |See language copies|Complete||
 |Find and replace|Missing|Use Classic UI.|
 |Notification inbox (JCR events)|Missing|Use Classic UI. Replaced with a different implementation in the future.|
-|References|Complete|Display of incoming page links added to AEM 6.5.|
+|References|Complete|Display of incoming page links added to AEM 6.5. Only direct links to the page are shown for performance reasons.|
 
 ## Feature Status: Page Editor {#feature-status-page-editor}
 

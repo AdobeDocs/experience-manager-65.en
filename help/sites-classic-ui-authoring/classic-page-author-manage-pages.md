@@ -260,7 +260,7 @@ To move or rename a page:
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   The page also lists any pages that reference the page being moved. Depending on the status of the referencing page, you may be able to adjust those links on and/or republish the pages.
+   The page also lists any pages that directly or indirectly reference the page being moved. Depending on the status of the referencing page, you may be able to adjust those links on and/or republish the pages.
 
 1. Fill in the following fields, as appropriate:
 
