@@ -67,9 +67,19 @@ Key features and enhancements in this release include the following:
 
 * [Hardened file attachment component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): As a security measure, the component now prevents submission of files with modified extensions that attempt to bypass allowed file type checks. Such files are blocked during submission to ensure that only valid file types are accepted. 
 
-* FORMS-20533: AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This delivers previously missed Struts changes that were not included in SP23. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can [download and install](/help/release-notes/aem-forms-hotfix.md) to add support for the latest version of Struts.
+* FORMS-20533, FORMS-20532: AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can [download and install](/help/release-notes/aem-forms-hotfix.md) to add support for the latest version of Struts.
 
-* FORMS-20532: AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the output component. This delivers previously missed Struts changes that were not included in SP23. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can [download and install](/help/release-notes/aem-forms-hotfix.md) to add support for the latest version of Struts.
+* **LC-3922769**: Certain AEM Forms features now require OpenSSL 3 to function correctly. The system must have OpenSSL 3 installed with libraries `libcrypto.so.3` and `libssl.so.3`. As security updates are only available in versions with OpenSSL 3.0.14 and SafeLogic support ends in February 2025, we have removed bsafe and now use OpenSSL 3 for security compliance. For platform compatibility and detailed requirements, see [Supported Platforms for AEM Forms on JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) and [Technical Requirements](/help/sites-deploying/technical-requirements.md). 
+
+  **To verify OpenSSL 3 installation:**
+  
+  * **RHEL/CentOS/Fedora-based systems**: `rpm -qa | grep   openssl3`
+  * **Ubuntu/Debian-based systems**: `dpkg -l | grep openssl3`
+  * **Alternative verification**: `ldd /path/to/XMLForm |   grep -E 'libcrypto.so.3|libssl.so.3'` (if libraries are in  LD_LIBRARY_PATH)
+
+
+
+
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -678,9 +688,22 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 >
 > Do not upgrade to Service Pack 6.5.23.0 for issues that do not have hotfixes available, as it may lead to unexpected errors. Upgrade to Service Pack 6.5.23.0 only after the required hotfixes are released. 
 
-* When a user upgrades the Struts framework from version 2.5.x to 6.x, the Policies UI in AEM Forms fails to display all configurations, such as the option to add a watermark. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve the issue. (FORMS-20203)
-* After upgrading to AEM Forms Service Pack 6.5.23.0, the ImageToPDF conversion service fails with the error (FORMS-20360):
-    ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp``` You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) the resolve issue. 
+#### Issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
+
+The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
+
+* **FORMS-20203**: When a user upgrades the Struts framework from version 2.5.x to 6.x, the Policies UI in AEM Forms fails to display all configurations, such as the option to add a watermark.
+
+* **FORMS-20360**: After upgrading to AEM Forms Service Pack 6.5.23.0, the ImageToPDF conversion service fails with the error:
+    ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+
+* **FORMS-20478**: When attempting to convert type 7/8 TIFF files to PDF, the conversion process fails with error "ALC-PDG-001-000-Image2Pdf conversion failed, caused by: com/sun/image/codec/jpeg/JPEGCodec" and "ALC-PDG-016-003-An unknown/unexpected error occurred during PDF post-processing." The system attempts to retry using TM ImageIO TIFF decoder but ultimately fails to complete the job.
+
+* **FORMS-14521**: If a user tries to preview a draft letter with saved XML data, it gets stuck in `Loading` state for some specific letters.
+
+* AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This delivers previously missed Struts changes that were not included in SP23. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
+
+#### Other Known Issues {#aem-forms-other-known-issues}
 
 * After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
 
@@ -691,7 +714,6 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
   5. Open the command prompt in administrator mode.  
   6. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
 
-* If a user tries to preview a draft letter with saved XML data, it gets stuck in `Loading` state for some specific letters. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (FORMS-14521)
 * When users upgraded from AEM 6.5 Forms Service Pack 18 or 19 to Service Pack 20 or 21, they encountered a JSP compilation error. This error prevented them from opening or creating adaptive forms. It also caused issues with other AEM interfaces. Those interfaces included the Page Editor, AEM Forms UI, Workflow editor, and System Overview UI. (FORMS-15256)
 
   If you face such an issue, perform the following steps to resolve it:
@@ -699,11 +721,12 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
     2. Delete the bundle with the name `com.adobe.granite.ui.commons-5.10.26.jar`.
     3. Restart your AEM Server.
 
-* After updating to AEM Forms Service Pack 20 (6.5.20.0) with the Forms Add-On, configurations relying on the legacy Adobe Analytics Cloud Service using credential-based authentication stop working. This issue prevented analytics rules from executing correctly. To download and install the hotfix, refer to the [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (FORMS-15428)
 * In the Print Preview of the Interactive Communications Agent UI, the currency symbol (such as the dollar sign $) is inconsistently displayed for all field values. It appears for values up to 999 but is missing for values of 1000 and above. (FORMS-16557)
 * Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. (FORMS-16575)
 * In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. (FORMS-16603)
 * When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with `x`. (FORMS-15681)
+* **FORMS-15428**: After updating to AEM Forms Service Pack 20 (6.5.20.0) with the Forms Add-On, configurations relying on the legacy Adobe Analytics Cloud Service using credential-based authentication stop working. This issue prevented analytics rules from executing correctly.
+
 * When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss&reg; fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows (CQDOC-22178):
   
     ```java
@@ -715,7 +738,6 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
     ```
 
-* FORMS-20478: When attempting to convert type 7/8 TIFF files to PDF, the conversion process fails with error "ALC-PDG-001-000-Image2Pdf conversion failed, caused by: com/sun/image/codec/jpeg/JPEGCodec" and "ALC-PDG-016-003-An unknown/unexpected error occurred during PDF post-processing." The system attempts to retry using TM ImageIO TIFF decoder but ultimately fails to complete the job. You can [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) to fix the issue. 
 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
