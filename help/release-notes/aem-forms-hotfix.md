@@ -14,7 +14,7 @@ This article lists the critical fixes implemented to address known issues, impro
 >
 > The hotfixes are designed to be cumulative, encompassing all preceding fixes. When you apply the latest hotfix to a release, it not only addresses the most recent issue but also incorporates all prior bug fixes and enhancements.
 
-## Hotfixes for Adaptive Forms {#hotfix-for-adaptive-forms}
+## Hotfixes for AEM Forms {#hotfix-for-aem-forms}
 
 <table>
   <tbody>
@@ -40,7 +40,16 @@ This article lists the critical fixes implemented to address known issues, impro
     </td>
     <td>
     <ul>
-    <li>SP23 Hotfix for AEM Forms on JEE</li>
+    <li><strong>This hotfix fixes the following:</strong>
+      <ul>
+        <li><strong>FORMS-20533:</strong> AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This delivers previously missed Struts changes that were not included in SP23. The support was added via a Hotfix that you can download and install to add support for the latest version of Struts.</li>
+        <li><strong>FORMS-20532:</strong> AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the output component. This delivers previously missed Struts changes that were not included in SP23. The support was added via a Hotfix that you can download and install to add support for the latest version of Struts.</li>
+        <li><strong>FORMS-20203:</strong> When a user upgrades Struts from AEM Service Pack 2.5.x to AEM Forms Service Pack 6.x, the Policies UI fails to display all configurations, such as the option to add a watermark. You can download and install the Hotfix to resolve this issue.</li>
+        <li><strong>FORMS-20360:</strong> After upgrading to AEM Forms Service Pack 6.5.23.0, the ImageToPDF conversion service fails with the error:<br>
+        <code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
+        You can download and install the Hotfix to resolve this issue.</li>
+      </ul>
+    </li>
     </ul>
     </td>    
   </tr>
