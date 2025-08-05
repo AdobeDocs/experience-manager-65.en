@@ -51,11 +51,11 @@ release-date: 2025-08-05
 
 Before making any changes, take a backup of the EAR file or DSC file you're about to modify or update:
 
-   - Locate the original EAR or DSC file in your deployment directory.
-   - Copy the file to a secure backup location outside the deployment directory.
-   - Ensure the backup is complete and accessible before proceeding with any updates.
+- Locate the original EAR or DSC file in your deployment directory.
+- Copy the file to a secure backup location outside the deployment directory.
+- Ensure the backup is complete and accessible before proceeding with any updates.
 
-   This precaution allows you to restore the original state in case you encounter any issues during the update process.
+This precaution allows you to restore the original state in case you encounter any issues during the update process.
 
 ### Option 1: (For users on version 6.5.23.0) Install Latest Hotfix 
 
@@ -71,7 +71,7 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
 ### Option 2: (For users on 6.5.18.0 - 6.5.22.0) Manual Hotfix Installation
 
-+++ Manual Hotfix Installation for 6.5.18.0 - 6.5.22.0
++++Manual Hotfix Installation for 6.5.18.0 &ndash; 6.5.22.0
 
 **Step 1: Download and Extract the Hotfix Package**
 
