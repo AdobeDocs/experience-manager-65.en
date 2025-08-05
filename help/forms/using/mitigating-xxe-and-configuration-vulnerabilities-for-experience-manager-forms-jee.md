@@ -71,7 +71,7 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
 ### Option 2: (For users on 6.5.18.0 - 6.5.22.0) Manual Hotfix Installation
 
-+++<b>Manual Hotfix Installation for 6.5.18.0 - 6.5.22.0</b>
++++ Manual Hotfix Installation for 6.5.18.0 - 6.5.22.0
 
 **Step 1: Download and Extract the Hotfix Package**
 
