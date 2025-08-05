@@ -71,7 +71,7 @@ This precaution allows you to restore the original state in case you encounter a
 
 ### Option 2: (For users on 6.5.18.0 - 6.5.22.0) Manual Hotfix Installation
 
-+++Manual Hotfix Installation for 6.5.18.0 &ndash; 6.5.22.0
++++Manual Hotfix Installation for 6.5.18.0 through 6.5.22.0
 
 **Step 1: Download and Extract the Hotfix Package**
 
