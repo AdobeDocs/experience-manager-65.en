@@ -60,22 +60,18 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 ### Option 1: (For users on version 6.5.23.0) Install Latest Hotfix 
 
 1. [Download the hotfix for 6.5.23.0](/help/release-notes/aem-forms-hotfix.md).
-2. Follow standard [hotfix/patch installation instructions](/help/release-notes/jee-patch-installer-65.md)
-3. If you are using Document Security (formerly Rights Management) on IBM WebSphere or Oracle WebLogic, set the following Java system property (JVM argument) before starting the AEM Forms server:
+1. Follow standard [hotfix/patch installation instructions](/help/release-notes/jee-patch-installer-65.md)
+1. If you are using Document Security (formerly Rights Management) on IBM WebSphere or Oracle WebLogic, set the following Java system property (JVM argument) before starting the AEM Forms server:
 
    ```
    -Dcom.adobe.forms.jee.services.allowDoctypeDeclaration=true
    ```
 
-4. Restart the application server
-
-</details>
+1. Restart the application server
 
 ### Option 2: (For users on 6.5.18.0 - 6.5.22.0) Manual Hotfix Installation
 
-
-<details>
-<summary><b>Manual Hotfix Installation for 6.5.18.0 - 6.5.22.0</b></summary>
++++<b>Manual Hotfix Installation for 6.5.18.0 - 6.5.22.0</b>
 
 **Step 1: Download and Extract the Hotfix Package**
 
@@ -118,7 +114,7 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
    For example, `adobe-xxe-configuration-hotfix/SP20/jboss/adminui.war`
 
-2. Inside the `adobe-core-jboss.ear`, go to the `lib/` folder and replace `adobe-uisupport.jar` with:
+1. Inside the `adobe-core-jboss.ear`, go to the `lib/` folder and replace `adobe-uisupport.jar` with:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -126,10 +122,10 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
    For example, `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. Save the EAR. Ensure changes are saved properly. 
+1. Save the EAR. Ensure changes are saved properly. 
 
 
-4. Replace `adobe-edcserver-jboss.ear` with 
+1. Replace `adobe-edcserver-jboss.ear` with 
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-edcserver-jboss.ear
@@ -137,7 +133,7 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
    For example, `adobe-xxe-configuration-hotfix/SP20/jboss/adobe-edcserver-jboss.ear`
 
-5. Replace `adobe-forms-jboss.ear` with 
+1. Replace `adobe-forms-jboss.ear` with 
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-forms-jboss.ear
@@ -157,7 +153,7 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
    For example, `adobe-xxe-configuration-hotfix/SP20/weblogic/adminui.war`
 
-2. Inside the `adobe-core-weblogic.ear`, replace `adobe-uisupport.jar` with:
+1. Inside the `adobe-core-weblogic.ear`, replace `adobe-uisupport.jar` with:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -165,10 +161,10 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
    For example, `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. Save the EAR. Ensure changes are saved properly. 
+1. Save the EAR. Ensure changes are saved properly. 
 
 
-4. Replace `adobe-edcserver-weblogic.ear` with 
+1. Replace `adobe-edcserver-weblogic.ear` with 
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-edcserver-weblogic.ear
@@ -176,7 +172,7 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
    For example, `adobe-xxe-configuration-hotfix/SP20/weblogic/adobe-edcserver-weblogic.ear`
 
-5. Replace `adobe-forms-weblogic.ear` with 
+1. Replace `adobe-forms-weblogic.ear` with 
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-forms-weblogic.ear
@@ -194,7 +190,7 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
    For example, `adobe-xxe-configuration-hotfix/SP20/websphere/adminui.war`
 
-2. Inside the `adobe-core-websphere.ear`, replace `adobe-uisupport.jar` with:
+1. Inside the `adobe-core-websphere.ear`, replace `adobe-uisupport.jar` with:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -202,10 +198,10 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
    For example, `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. Save the EAR. Ensure changes are saved properly. 
+1. Save the EAR. Ensure changes are saved properly. 
 
 
-4. Replace `adobe-edcserver-websphere.ear` with 
+1. Replace `adobe-edcserver-websphere.ear` with 
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-edcserver-websphere.ear
@@ -213,7 +209,7 @@ Before making any changes, take a backup of the EAR file or DSC file you're abou
 
    For example, `adobe-xxe-configuration-hotfix/SP20/websphere/adobe-edcserver-websphere.ear`
 
-5. Replace `adobe-forms-websphere.ear` with 
+1. Replace `adobe-forms-websphere.ear` with 
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-forms-websphere.ear
@@ -246,12 +242,12 @@ If you are using Document Security (formerly Rights Management), set the followi
 
 - Launch the Configuration Manager to re-deploy the updated EAR and apply the hotfix
 
-</details>
++++
 
 ### Option 3: (For users on 6.5.17.0 and earlier) Upgrade Path 
 
 1. [Upgrade to a supported Service Pack version](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
-2. Follow Option 1 or Option 2 above based on your new version
+1. Follow Option 1 or Option 2 above based on your new version
 
 ## References
 
