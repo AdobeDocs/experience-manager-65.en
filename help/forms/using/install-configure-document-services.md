@@ -248,6 +248,12 @@ The installation process for Adobe Acrobat Pro DC for Microsoft Office installat
 
 Each tab contains tailored instructions optimized for your specific setup, helping you avoid configuration issues and ensure proper licensing compliance.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>The video demonstrates the installation process for a Retail License - Single User configuration. For other deployment scenarios (Retail - Multiple Users, Volume License - Single User, or Volume License - Multiple Users), refer to the specific step 9 instructions in the corresponding tabs below to ensure proper server startup and license activation for your deployment type.
+
 >[!BEGINTABS]
 
 >[!TAB Retail License - Single User]
@@ -694,8 +700,8 @@ After uninstalling the previous version, you need to download and install a comp
 
 After completing all processes, perform a quick action test to confirm the installation is valid:
 
-1. Use Remote Desktop (RDP) to login to server and start AEM Forms server using services.. 
-2. Use Remote Desktop (RDP) to log in to the server and start the AEM Forms server using Windows Services. Once the server is running, do not simply close the RDP window. Instead, gracefully sign out by logging off the user — this ensures the session ends cleanly while the service continues to run in the background.
+1. Use Remote Desktop (RDP) to login to server and start AEM Forms server using services.
+2. Once the server is running, do not simply close the RDP window. Instead, gracefully sign out by logging off the user — this ensures the session ends cleanly while the service continues to run in the background.
 
 ###### Step 10: Test the PDF Generator service
 
