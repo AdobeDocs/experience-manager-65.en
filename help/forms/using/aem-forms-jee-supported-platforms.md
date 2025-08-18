@@ -296,6 +296,11 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td>Service packs and critical updates</td>
   </tr>
   <tr>
+   <td><p>Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit)</p> </td>
+   <td><p>A: Supported</p> </td>
+   <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
+  </tr>
+  <tr>
    <td><p>Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)</p> </td>
    <td><p>A: Supported</p> </td>
    <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
@@ -833,6 +838,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
+|Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) |  |  |
 |OpenOffice 4.1.15 |Microsoft Office 2019   |  |
 | |Microsoft Publisher 2019  |  |
 | |WordPerfect 2020 |  |
@@ -900,7 +906,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 | Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
-|  | | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit) |
+|  |Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit) | |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |
 |  | | OpenOffice 4.1.2 |
