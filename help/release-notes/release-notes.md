@@ -69,7 +69,8 @@ Key features and enhancements in this release include the following:
 
 * FORMS-20533, FORMS-20532: AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can [download and install](/help/release-notes/aem-forms-hotfix.md) to add support for the latest version of Struts.
 
-* **LC-3922769**: Certain AEM Forms features now require OpenSSL 3 to function correctly. The system must have OpenSSL 3 installed with libraries `libcrypto.so.3` and `libssl.so.3`. As security updates are only available in versions with OpenSSL 3.0.14 and SafeLogic support ends in February 2025, we have removed bsafe and now use OpenSSL 3 for security compliance. For platform compatibility and detailed requirements, see [Supported Platforms for AEM Forms on JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) and [Technical Requirements](/help/sites-deploying/technical-requirements.md). 
+* **LC-3922769**: Certain AEM Forms features now require OpenSSL 3 to function correctly. The system must have OpenSSL 3 installed, along with the libraries `libcrypto.so.3` and `libssl.so.3`. Since security updates are only available in versions 3.0.14 and above, and SafeLogic support ends in February 2025, BSAFE has been removed and OpenSSL 3 is now used for security compliance.  For platform compatibility and detailed requirements, see [Supported Platforms for AEM Forms on JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) and [Technical Requirements](/help/sites-deploying/technical-requirements.md). 
+
 
   **To verify OpenSSL 3 installation:**
   
