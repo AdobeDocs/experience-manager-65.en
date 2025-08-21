@@ -455,9 +455,7 @@ For Windows x86:
 * 10.9.x and later
 * Only supported for trial and demo purposes
 
-### Requirements for AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
-
-### Software support for PDF Generator {#software-support-for-pdf-generator}
+### Considerations for PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -466,71 +464,37 @@ For Windows x86:
    <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> latest version</td>
-   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> latest version</td>
+   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, and HTM</td>
   </tr>
+
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version (Deprecated)</td>
-   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
-  </tr>
-  <tr>
-   <td>Microsoft&reg; Office 2019</td>
+   <td>Microsoft&reg; Office 2021 Professional Plus, retail and volume licenses</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
   </tr>
   <tr>
-   <td>Microsoft&reg; Office 2016 (Deprecated)</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
+   <td>
+    <strong>OpenOffice 4.1.15</strong>   </td>
+   <td>
+    ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT<br>
+
+   </td>
   </tr>
-  <tr>
-   <td>WordPerfect 2020<br /> </td>
-   <td>WP, WPD</td>
-  </tr>
-  <tr>
-   <td>Microsoft&reg; Office Visio 2016 (Deprecated)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
-   <td>Microsoft&reg; Publisher 2019<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft&reg; Publisher 2016 (Deprecated)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft&reg; Project 2016 (Deprecated)<br /> </td>
-   <td>MPP</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.10</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (Deprecated)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
-  </tr>  
  </tbody>
 </table>
 
 >[!NOTE]
 >
->PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
->
->In addition,
->
->* PDF Generator requires a 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
+>* PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
+>* PDF Generator requires Adobe Acrobat Pro DC (32-Bit) to perform the conversion.
 >* PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
->* The Microsoft&reg; Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >* If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
->* PDF Generator supports the 32-bit version of OpenOffice on the Linux&reg; operating system.
 >* PDF Generator does not support Microsoft&reg; Office 365.
 >* PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
 >* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
->* A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. Programmatically access the bundled version only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
->* PDF Generator service does not support Microsoft&reg; Windows 10.
->* PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
->* PDF Generator fails to convert files using Microsoft&reg; Project 2019.
-        
+>* A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator only. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* PDF Generator service does not support Microsoft&reg; Windows 11.
+
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, Microsoft&reg; Windows&reg; 10, or Windows&reg; 11
