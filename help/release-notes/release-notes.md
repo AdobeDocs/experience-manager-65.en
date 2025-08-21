@@ -739,6 +739,8 @@ The following issues have a hotfix available for download and installation. You 
 
     ```
 
+* FORMS-21378: When Server-Side Validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
+
 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}

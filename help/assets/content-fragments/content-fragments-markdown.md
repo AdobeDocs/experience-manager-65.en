@@ -160,7 +160,7 @@ You can bold text as follows:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-To indicate a span of code, wrap it with backtick quotes (&grave;). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph.
+To indicate a span of code, wrap it with backtick quotes (`` ` ``). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph.
 
 For example:
 

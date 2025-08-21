@@ -24,7 +24,67 @@ This article lists the critical fixes implemented to address known issues, impro
     <td><strong>Fixed issues</strong></td>
   </tr>
   <tr>
-    <td>SP23 Hotfix-</td>
+    <td>
+      <strong>Aug 05, 2025</strong><br>
+      <em>Applies to:</em> AEM 6.5 Forms Service Pack 23<br>
+      <em>Setup instructions:</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-1-for-users-on-version-65230-install-latest-hotfix">
+        Mitigating XXE, Configuration, and Remote Code Execution (CVE-2025-49533) Vulnerabilities for AEM Forms on JEE
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><strong>Jboss:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-jboss.zip">Hotfix2 for AEM Service Pack 6.5.23.0 on Windows for JBoss JEE server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-jboss.tar.gz">Hotfix2 for AEM Service Pack 6.5.23.0 on Linux for JBoss JEE server</a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-weblogic.zip">Hotfix2 for AEM Service Pack 6.5.23.0 on Windows for Weblogic JEE server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz">Hotfix2 for AEM Service Pack 6.5.23.0 on Linux for Weblogic JEE server</a></li>
+    <li><strong>Websphere:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip">Hotfix2 for AEM Service Pack 6.5.23.0 on Windows for Websphere JEE server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip">Hotfix2 for AEM Service Pack 6.5.23.0 on Linux for Websphere JEE server</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Enhanced security by addressing a Remote Code Execution (RCE) vulnerability in Adobe Experience Manager (AEM) Forms. The issue was related to Struts development mode in the admin user interface (UI), which allowed arbitrary Object-Graph Navigation Language (OGNL) evaluation through debug functionality. This fix ensures that Struts development mode is disabled and appropriate security filters are applied to prevent unauthorized access.</li>
+    <li>Improved protection against Extensible Markup Language (XML) External Entity (XXE) vulnerabilities in the Electronic Document Component (EDC) module of Adobe Experience Manager (AEM) Forms. The vulnerabilities were due to improper handling of XML documents without XXE protections, which could lead to local file reads. The fix includes:
+      <ul>
+        <li>Ensuring that the DocumentBuilderFactory used in the SecurityCheckHandler class is configured to prevent XXE attacks.</li>
+        <li>Updating the EDC web service to handle XML documents securely, preventing unauthorized access to local files.</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>
+      <strong>Aug 05, 2025</strong><br>
+      <em>Applies to:</em> AEM 6.5 Forms Service Pack 18 – 22<br>
+      <em>Setup instructions:</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-2-for-users-on-65180---65220-manual-hotfix-installation">
+        Manual Hotfix Installation for Service Packs 18–22
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-xxe-configuration-hotfix.zip">Patch for AEM 6.5 Forms Service Pack 18 - AEM 6.5 Forms Service Pack 22 </a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Enhanced security by addressing a Remote Code Execution (RCE) vulnerability in Adobe Experience Manager (AEM) Forms. The issue was related to Struts development mode in the admin user interface (UI), which allowed arbitrary Object-Graph Navigation Language (OGNL) evaluation through debug functionality. This fix ensures that Struts development mode is disabled and appropriate security filters are applied to prevent unauthorized access.</li>
+    <li>Improved protection against Extensible Markup Language (XML) External Entity (XXE) vulnerabilities in the Document Security module of Adobe Experience Manager (AEM) Forms. The vulnerabilities were due to improper handling of XML documents without XXE protections, which could lead to local file reads. The fix includes:
+      <ul>
+        <li>Ensuring that the DocumentBuilderFactory used in the SecurityCheckHandler class is configured to prevent XXE attacks.</li>
+        <li>Updating the Document Security web service to handle XML documents securely, preventing unauthorized access to local files.</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>Jul 10, 2025-</td>
     <td>
     <ul>
     <li><strong>Jboss:</strong></li>
@@ -186,7 +246,7 @@ This article lists the critical fixes implemented to address known issues, impro
   <tbody>
 </table>
 
-## Download and install a Hotfix {#download-install-hotfix}
+## Download and install an OSGi Hotfix {#download-install-hotfix}
 
 Perform the following steps to download and install the Hotfix:
 
@@ -194,6 +254,10 @@ Perform the following steps to download and install the Hotfix:
   1. Extract the Hotfix archive file so you can obtain an Experience Manager package (.zip) and bundle (.jar) files.
   1. Upload and install the package (.zip) via the [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
   1. Open the configuration manager bundles `https://server:host/system/console/bundles`, upload, and install the bundle (.jar). The hotfix is installed. 
+
+## Install an JEE patch {#download-install-jee-patch}
+
+For instructions to install a JEE patch, see the [AEM Forms JEE Patch Installer documentation](/help/release-notes/jee-patch-installer-65.md).
 
 
 ## Download and install hotfix for draft letter issue {#install-hotfix}
