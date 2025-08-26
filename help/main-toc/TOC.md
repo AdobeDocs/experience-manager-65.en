@@ -1301,6 +1301,9 @@ user-guide-title: AEM 6.5
     + [Translate content](/help/journey-headless/translation/translate-content.md)
     + [Publish translated content](/help/journey-headless/translation/publish-content.md)
   + [What is a documentation journey?](/help/journey-documentation/home.md)
++ AI Assistant in AEM 6.5 {#ai-assistant}
+  + [Configure AI Assistant in AEM](/help/ai-assistant-in-aem-admin.md)
+  + [About AI Assistant in AEM](/help/ai-assistant-in-aem.md)
 + Implementing {#implementing}
   + Developing {#developing}
     + Introduction for Developers {#introduction}
