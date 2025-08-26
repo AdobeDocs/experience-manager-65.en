@@ -5,7 +5,6 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 
-
 ---
 # Configure AI Assistant in AEM {#aem-ai-asst-admin-setup}
 
