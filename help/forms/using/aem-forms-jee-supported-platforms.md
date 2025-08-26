@@ -42,6 +42,7 @@ This document lists the supported client and server platforms for AEM Forms on J
 >
 >- For a complete list of exceptions to supported server platforms, see [Exceptions to supported server platforms](#exceptions-to-supported-server-platforms).
 >- AEM Forms on JEE support only English, French, German, and Japanese versions of the supported operating systems and applications.
+
 ### Upgrade and Support policy
 
 #### Full Installer
@@ -100,8 +101,14 @@ Adobe recommends these configurations and provides full or restricted support as
 >[!NOTE]
 >
 >To help AEM Forms customers reduce the cost of ownership, simplify the deployment architecture, and modernize the development stack, Adobe Experience Manager enterprise platform is moving away from application server-based deployments in favor of standalone OSGi-based deployments. Adobe continues to support the AEM Forms JEE stack with a reduced matrix of infrastructure components.
+><br>
+>With the release of 6.5, infrastructure components that have the lowest usage among Adobe customers are no longer supported, as follows:
 >
->@@ -111,126 +94,107 @@ Adobe recommends these configurations and provides full or restricted support as
+> * IBM&reg; DB2&reg; database
+> * IBM&reg; AIX&reg; and Sun Solaris&trade; operating systems
+>
+>
+>For new installations, where feasible it is recommended to deploy AEM Forms on the modern OSGi stack to use the latest innovations around responsive Adaptive Forms for mobile, multi-channel Interactive Communications, and backend data integrations using Form Data Model.
 >
 >Adobe recognizes that existing users must continue to deploy AEM Forms on JEE stack. In such scenarios, Adobe requires the deployment of AEM Forms JEE on supported infrastructure as described in this documentation. If you are upgrading to AEM 6.5 Forms and using a non-supported platform on the previous AEM Forms release, you can contact Adobe Support for help on upgrading to a supported platform.
 
@@ -368,6 +375,7 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
 >[!NOTE]
 >
 > For Linux&reg; based server, the required runtime dependencies are:
+>
 > - glibc.x86_64 (2.17-196)
 > - libX11.x86_64 (1.6.7-4)
 > - zlib.x86-64 (1.2.7-17)
@@ -621,7 +629,6 @@ The following subsystems of AEM Forms are not [508](https://www.section508.gov/)
 
 
 For additional requirements see:
-
 
 - [System requirements for a single-server AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
 - [System requirements for a clustered AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
@@ -960,11 +967,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 4.4 | Windows Server 2016 (64-bit) | Microsoft&reg; Windows Server 2019 (64-bit) |
-    @@ -1059,21 +872,15 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | Acrobat 2017 (Classic track) Version 17.011.30078 or later |  |
-
-
-
 
 ### Release 6.5.13.0 (June 2, 2022)
 
@@ -973,19 +976,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | -------------- | --------------- | ------------------- |
 |  |  | Microsoft&reg; SharePoint 2016 |
 
-
-
-
 ### Release 6.5.12.0 (March 3, 2022)
 
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 |  | IBM&reg; J9 Virtual Machine (build 2.8, JRE 1.8.0) | MongoDB Enterprise 4.0 |
-    @@ -1088,10 +895,8 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | Microsoft&reg; SQL Server 2016 |
 |  | | Microsoft&reg; Windows Server 2016 |
-
 
 ### Release 6.5.10.0 (September 01, 20222)
 
@@ -993,11 +991,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 | Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
-    @@ -1101,44 +906,31 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | OpenOffice 4.1.2 |
-
-
-
 
 >[!NOTE]
 >
