@@ -104,8 +104,8 @@ Adobe recommends these configurations and provides full or restricted support as
 ><br>
 >With the release of 6.5, infrastructure components that have the lowest usage among Adobe customers are no longer supported, as follows:
 >
-> * IBM&reg; DB2&reg; database
-> * IBM&reg; AIX&reg; and Sun Solaris&trade; operating systems
+> - IBM&reg; DB2&reg; database
+> - IBM&reg; AIX&reg; and Sun Solaris&trade; operating systems
 >
 >
 >For new installations, where feasible it is recommended to deploy AEM Forms on the modern OSGi stack to use the latest innovations around responsive Adaptive Forms for mobile, multi-channel Interactive Communications, and backend data integrations using Form Data Model.
