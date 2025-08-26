@@ -4,9 +4,7 @@ description: Learn how to set up and configure the AI Assistant using the Admin 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: no
-hidefromtoc: no
-index: yes
+
 
 ---
 # Configure AI Assistant in AEM {#aem-ai-asst-admin-setup}
