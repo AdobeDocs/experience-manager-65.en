@@ -70,7 +70,7 @@ The **Recents** section, seen in the image below, lists pages you recently visit
 
 ![Experience Hub Quick Shortcuts](/help/assets/assets-experience-hub/experience-hub-quick-shortcuts-ams.png)
 
-If no production AEM Cloud Service or Managed Services environments exist, the selection options appear dimmed and unavailable.
+If no production AEM Cloud Service or Managed Services environments exist, the selection options appear dimmed (unavailable).
 
 ![Experience Hub no production environments](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
 
