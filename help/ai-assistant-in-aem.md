@@ -1,5 +1,5 @@
 ---
-title: AI Assistant in AEM 6.5
+title: AI Assistant in AEM
 description: Use AI Assistant to help you find answers, and troubleshoot for the solutions that are available in Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
 
 ---
-# AI Assistant in AEM 6.5 {#about-ai-assistant-in-aem}
+# AI Assistant in AEM {#about-ai-assistant-in-aem}
 
 >[!IMPORTANT]
 >
