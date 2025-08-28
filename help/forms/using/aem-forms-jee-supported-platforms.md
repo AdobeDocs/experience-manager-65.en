@@ -526,7 +526,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
  </tr>
  <tr>
-  <td>Microsoft&reg; Office 2019  </td>
+  <td>Microsoft&reg; Office 2021  </td>
   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
  </tr>
  <tr>
