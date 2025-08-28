@@ -529,6 +529,8 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
   <td>Microsoft&reg; Office 2021  </td>
   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
  </tr>
+ </tr>
+
  <tr>
   <td>WordPerfect 2020<br /> </td>
   <td>WP, WPD</td>
@@ -939,6 +941,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
+| Microsoft&reg; Office 2021 |  |  |
 | MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 |Centos 7  |Microsoft&reg; SQL Server 2019 |
 | Microsoft&reg; SQL Server JDBC driver 12.10.0 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
@@ -950,6 +953,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 | SUSE&reg; Linux&reg; Enterprise Server 15 SP6 (64-bit)  | |  |
+
+### Release 6.5.21.0 (June 13, 2024)
+
+| Added Support | Removed Support | Deprecated Support |
+| -------------- | --------------- | ------------------- |
+| Microsoft&reg; Office 2021 |  |  |
 
 ### Release 6.5.19.1 (Dec 15, 2023)
 
