@@ -72,6 +72,8 @@ user-guide-title: AEM 6.5
   + [Same Site Cookie Support](/help/sites-administering/same-site-cookie-support.md)
   + [JWT Credentials Deprecation in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [Setting Up IMS Integrations for AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
++ Experience Hub {#experience-hub}
+  + [About Experience Hub](/help/experience-hub.md)
 + Sites {#sites}
   + Authoring {#authoring}
     + Essential tasks, tools and concepts for AEM Authoring {#essentials}
@@ -1301,6 +1303,9 @@ user-guide-title: AEM 6.5
     + [Translate content](/help/journey-headless/translation/translate-content.md)
     + [Publish translated content](/help/journey-headless/translation/publish-content.md)
   + [What is a documentation journey?](/help/journey-documentation/home.md)
++ AI Assistant in AEM 6.5{#ai-assistant}
+  + [Configure AI Assistant in AEM](/help/ai-assistant-in-aem-admin.md)
+  + [About AI Assistant in AEM](/help/ai-assistant-in-aem.md)
 + Implementing {#implementing}
   + Developing {#developing}
     + Introduction for Developers {#introduction}
