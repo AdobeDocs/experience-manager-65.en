@@ -522,9 +522,9 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
   <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
  </tr>
  <tr>
-  <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> latest version</td>
-  <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
- </tr>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> latest version</td>
+   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, and HTM</td>
+  </tr>
  <tr>
   <td>Microsoft&reg; Office 2021  </td>
   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
@@ -557,7 +557,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >In addition,:
 >
->- PDF Generator requires a 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
+>- PDF Generator requires Adobe Acrobat Pro DC (32-Bit) to perform the conversion.
 >- PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
 >- The Microsoft&reg; Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
@@ -941,7 +941,6 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
-| Microsoft&reg; Office 2021 |  |  |
 | MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 |Centos 7  |Microsoft&reg; SQL Server 2019 |
 | Microsoft&reg; SQL Server JDBC driver 12.10.0 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
