@@ -1,6 +1,6 @@
 ---
 title: Configure AI Assistant in AEM
-description: Learn how to set up and configure the AI Assistant using the Admin Console in Adobe Experience Manager.
+description: Learn how to set up and configure AI Assistant using the Admin Console in Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -13,16 +13,16 @@ exl-id: 06824b3d-f912-4922-8fb6-ee2ca04c6326
 
 <!-- badge: label="Beta" type="Positive" -->
 
-To use the AI Assistant in AEM (Adobe Experience Manager), your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the AI Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+To use AI Assistant in AEM (Adobe Experience Manager), your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to AI Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
 From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
 
 Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-The configuration process of the AI Assistant in AEM consists of the following steps:
+The configuration process of AI Assistant in AEM consists of the following steps:
 
 1. [Create a new product profile in the Adobe Admin Console](#create-profile).
-1. [Enable the AI Assistant Product Knowledge permission](#enable-permission).
+1. [Enable AI Assistant Product Knowledge permission](#enable-permission).
 1. [Create a new user group (or use an existing user group)](#create-user-group).
 1. [Add users to the user group](#add-users).
 1. [Assign the product profile to the user group](#assign-product-profile).
@@ -46,7 +46,7 @@ Before you begin, be sure you have met the following prerequisites:
 
 1. Follow the detailed instructions in [Create a new product profile in the Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) found in the Experience Platform documentation.
 
-1. When creating the new product profile, you can use the following suggested values for the AI Assistant.
+1. When creating the new product profile, you can use the following suggested values for AI Assistant.
 
     | Text field | Suggested value |
     | --- | --- |
@@ -56,7 +56,7 @@ Before you begin, be sure you have met the following prerequisites:
     | Notification | Configure based on your organization's preferences |
 
 
-## 2 - Enable the AI Assistant Product Knowledge permission{#enable-permission}
+## 2 - Enable AI Assistant Product Knowledge permission{#enable-permission}
 
 The process for assigning custom permissions to product profiles follows the standard Adobe Cloud Manager custom permissions workflow.
 
@@ -76,11 +76,11 @@ Reference article: [Assign custom permissions to the new product profile](https:
 
 1. On the **Edit Permissions for AI Assistant** page, turn on the **AI Assistant Product Knowledge** toggle. 
 
-    ![Edit Permissions page for the AI Assistant Product Knowledge toggle option](/help/assets/assets-ai/ai-assistant-prod-knowledge.png)
+    ![Edit Permissions page for AI Assistant Product Knowledge toggle option](/help/assets/assets-ai/ai-assistant-prod-knowledge.png)
 
 1. In the lower-right corner of the page, click **Save**.
 
-    Your product profile now has the AI Assistant Product Knowledge permission enabled.
+    Your product profile now has AI Assistant Product Knowledge permission enabled.
 
 
 ## 3 - Create a new user group (or use an existing user group){#create-user-group}
@@ -130,9 +130,9 @@ You can use an existing AEM user group if it meets AI Assistant access requireme
 
 1. In the **User groups** page for the **AI Assistant in AEM**, click the **Users** tab, then click **Add users**.
 
-    ![The AI Assistant in AEM user groups page, showing the Users tab and the Add users buttion](/help/assets/assets-ai/ai-assistant-add-users.png)
+    ![AI Assistant in AEM user groups page, showing the Users tab and the Add users buttion](/help/assets/assets-ai/ai-assistant-add-users.png)
 
-1. On the **`Add users to this user group`** page, search for and select users who need access to the AI Assistant in AEM.
+1. On the **`Add users to this user group`** page, search for and select users who need access to AI Assistant in AEM.
 
     ![Add users to this user group page](/help/assets/assets-ai/ai-assistant-add-users-to-this-group.png)
 
@@ -168,14 +168,14 @@ Reference article: [Manage product profiles for enterprise users](https://helpx.
 1. Near the lower-right corner of the dialog box, click **Apply**.
 1. Near the lower-right corner of the **Assign products and profiles** page, click **Save**.
 
-    ![The AI Assistant product profile shown assigned to the AI Assistant in AEM user group](/help/assets/assets-ai/ai-assistant-profile-assigned-to-user-group.png)
+    ![AI Assistant product profile shown assigned to AI Assistant in AEM user group](/help/assets/assets-ai/ai-assistant-profile-assigned-to-user-group.png)
 
 
 ## Verify the configuration
 
 * Check that your product profile shows the correct number of assigned user groups.
 * Verify that the user group shows the correct number of users.
-* Confirm that the AI Assistant Product Knowledge permission is enabled and properly configured.
+* Confirm that AI Assistant Product Knowledge permission is enabled and properly configured.
 
 
 ## Test the configuration
@@ -183,8 +183,8 @@ Reference article: [Manage product profiles for enterprise users](https://helpx.
 Have a user from the assigned group do the following:
 
 1. Log into AEM.
-2. Verify that the AI Assistant features are accessible.
-3. Test the functionality of the AI Assistant to ensure proper activation.
+2. Verify that AI Assistant features are accessible.
+3. Test the functionality of AI Assistant to ensure proper activation.
 
 ## See also 
 

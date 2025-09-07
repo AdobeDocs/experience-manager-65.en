@@ -76,4 +76,4 @@ If no production AEM Cloud Service or Managed Services environments exist, the s
 
 ## AI Assistant in AEM
 
-For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md).
+For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md).
