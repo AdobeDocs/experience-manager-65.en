@@ -78,7 +78,7 @@ This article outlines the trust-centered features that you can expect from AI As
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
-## Get to know AI Assistant in AEM for product knowledge and automated support ticket creation {#ai-prod-insights}
+## Get to know the AI Assistant in AEM for product knowledge and automated support ticket creation {#ai-prod-insights}
 
 Product knowledge encompasses concepts and topics derived from Adobe Experience League documentation. These questions can be categorized into the following sub-groups:
 
@@ -101,7 +101,7 @@ To receive the most accurate responses from AI Assistant in AEM, it is important
 
 * Clearly state your task or question in a concise manner.  
 * Avoid ambiguous wording or overly complex syntax to improve understanding.
-* Include relevant context about your task or question, as this approach helps AI Assistant in AEM provide more precise and relevant answers. 
+* Include relevant context about your task or question, as this approach helps the AI Assistant in AEM provide more precise and relevant answers. 
 For example, in your prompt, it helps to name the AEM solution you are working in - Sites, Assets, Dynamic Media, Edge Delivery Services, Cloud Manager, or Forms.
 
 ### Examples of unsupported questions {#ai-unsupported-questions}
@@ -135,7 +135,7 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 
 ### Start an AI Assistant in AEM conversation
 
-You can reset AI Assistant in AEM and start a new conversation when you want to change topics. This ability is especially helpful when troubleshooting queries that are failing or providing incorrect information.
+You can reset the AI Assistant in AEM and start a new conversation when you want to change topics. This ability is especially helpful when troubleshooting queries that are failing or providing incorrect information.
 
 **To start an AI Assistant in AEM conversation:** 
 
@@ -167,7 +167,7 @@ AI Assistant in AEM includes a discoverability feature to help you explore suppo
     *Panel showing prompt categories in AI Assistant.*
 
 1. Select a category to view a list of related prompts.  
-1. Select a prompt to see examples of the types of questions AI Assistant can answer.
+1. Select a prompt to see examples of the types of questions the AI Assistant can answer.
 
 1. To hide the prompt discovery panel, click ![Learn icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) again.
 
@@ -195,8 +195,8 @@ Here are answers to some common questions about AI Assistant:
   Currently, AI Assistant supports product knowledge inquiries in AEM as a Cloud Service, including Sites, Assets, Dynamic Media, Cloud Manager, and Forms.
 * **What are the capabilities of AI Assistant in AEM?**  
   AI Assistant in AEM is designed to answer queries related to Adobe product knowledge.
-* **Does AI Assistant in AEM use personal information for training data?**  
-  No. AI Assistant in AEM does not use personal information for training purposes. Avoid sharing personal information about yourself or others, including names or contact details, with AI Assistant in AEM.
+* **Does the AI Assistant in AEM use personal information for training data?**  
+  No. AI Assistant in AEM does not use personal information for training purposes. Avoid sharing personal information about yourself or others, including names or contact details, with the AI Assistant in AEM.
 
 <!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
