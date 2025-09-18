@@ -1221,6 +1221,11 @@ user-guide-title: AEM 6.5
     + [Passing credentials using WS-Security headers](/help/forms/developing/passing-credentials.md)
   + Glossary {#aem-forms-glossary}
     +[AEM Forms Glossaries](/help/forms/using/aem-forms-glossary.md)
++ AI in AEM {#ai-in-aem}
+  + [Overview](/help/ai-in-aem/overview.md)
+  + AI Assistant {#ai-assistant}
+    + [Configure AI Assistant in AEM](/help/ai-assistant-in-aem-admin.md)
+    + [About AI Assistant in AEM](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
   + [Introduction and overview](/help/commerce/cif/introduction.md)
   + [Notable Changes to AEM Content and Commerce](/help/commerce/cif/changes.md)
@@ -1303,9 +1308,6 @@ user-guide-title: AEM 6.5
     + [Translate content](/help/journey-headless/translation/translate-content.md)
     + [Publish translated content](/help/journey-headless/translation/publish-content.md)
   + [What is a documentation journey?](/help/journey-documentation/home.md)
-+ AI Assistant in AEM 6.5{#ai-assistant}
-  + [Configure AI Assistant in AEM](/help/ai-assistant-in-aem-admin.md)
-  + [About AI Assistant in AEM](/help/ai-assistant-in-aem.md)
 + Implementing {#implementing}
   + Developing {#developing}
     + Introduction for Developers {#introduction}
