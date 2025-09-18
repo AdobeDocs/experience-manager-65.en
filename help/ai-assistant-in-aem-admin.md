@@ -13,7 +13,11 @@ exl-id: 06824b3d-f912-4922-8fb6-ee2ca04c6326
 
 <!-- badge: label="Beta" type="Positive" -->
 
-To use AI Assistant in AEM (Adobe Experience Manager), your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to AI Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+To use AI Assistant in AEM (Adobe Experience Manager), permission to access Product Knowledge through the AI Assistant is mandatory. This permission is turned ON by default.
+
+If you want to control who can access Product Knowledge, send an email to [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) from your email address associated with your Adobe ID. Adobe can enable user-level access control. When it is enabled, your Admin can grant user-level access by following the steps described below.
+
+If you requested user-level access control, your organization must opt in by way of the Adobe Admin Console. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to AI Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
 From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
 
