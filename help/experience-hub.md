@@ -12,9 +12,9 @@ exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
 
 Experience Hub introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, Experience Hub lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, Experience Hub ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-Watch a quick tour of the reimagined AEM Experience Hub workspace (4 minutes, 9 seconds).
+Watch a quick tour of the reimagined AEM Experience Hub workspace (2 minutes, 39 seconds).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
