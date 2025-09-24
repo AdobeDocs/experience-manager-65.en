@@ -49,7 +49,7 @@ o get access to AI Assistant in AEM, customers must have the following:
 
 1. To use AI Assistant in AEM, permission to access Product Knowledge through the AI Assistant is mandatory. This permission is turned ON by default.
 
-    If you want to control who can access Product Knowledge, send an email to [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) from your email address associated with your Adobe ID. Adobe can enable user-level access control. When it is enabled, your Admin can grant user-level access by following the steps in [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
+    If you want to control who can access Product Knowledge, send an email to [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) from your email address associated with your Adobe ID. Adobe can enable user-level access control. When it is enabled, your Admin can grant user-level access by following the steps in [Configure AI Assistant in AEM](/help/ai-assistant-in-aem-admin.md).
 
 
 ## Scope {#scope}
