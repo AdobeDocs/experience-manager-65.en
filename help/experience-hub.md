@@ -26,11 +26,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
     ![Adobe Experience Cloud home page](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
 1. In the **Quick access** grouping, click [**Experience Manager**](https://experience.adobe.com).
-1. The first time you access it, on the **Tell us what you want to do** page, click the option you want so Adobe can tailor your experience. 
+1. On first access, the system assigns you the **Content Author** preset (seen near the upper-right corner of the page). It controls the widgets, navigation items, and content that you see.
 
-    You can change this preference at any anytime.
+    You can change this preset at any time.
 
-    ![The Tell us what you want to do page](/help/assets/assets-experience-hub/experience-cloud-tellus-ams.png)
+    ![The drop-down list showing the Content Author preset is selected](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
 
 The Adobe Experience Manager page has been refreshed with enhanced navigation and interactive widgets. The previous collection of solution cards provided access to tools like the following: 
 
@@ -53,7 +53,7 @@ These features are available for the primary production environment that you hav
 
 ![Prod and stage environments](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
-Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
+Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role (preset). Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
 
 ![Experience Hub customized](/help/assets/assets-experience-hub/experience-hub-custom-ams.png)
 
