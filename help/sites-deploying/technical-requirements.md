@@ -239,7 +239,6 @@ Adobe Experience Manager works with the following server platforms for productio
 >* Microsoft&reg; Visual C++ 2013 redistributable 
 >* Microsoft&reg; Visual C++ 2019(VC14.28 or greater) redistributable
 
-
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
 
 Adobe Experience Manager is supported running in a virtual machine on cloud computing environments. These environments include as Microsoft&reg; Azure and Amazon Web Services (AWS), running in compliance with the technical requirements listed on this page, and according to Adobe's standard support terms.
