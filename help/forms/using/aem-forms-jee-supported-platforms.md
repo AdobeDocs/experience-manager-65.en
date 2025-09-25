@@ -20,7 +20,6 @@ feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 
 <div class="preview">
 
-
 Adobe has released a [full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) with AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) on JEE along with the patch installers. The full installer supports new platforms while the patch installer includes only bug fixes.
 
 If you are performing a fresh installation or planning to use latest software for your AEM 6.5.23.0 Forms on JEE environment, Adobe recommends using [AEM 6.5.23.0 Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) released on 06 June 2025 instead of AEM 6.5.18 Forms installer released on 31 August 2023 or AEM 6.5.12 Forms Installer released on 08 April 2019.
@@ -938,7 +937,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
 | MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 |Centos 7  |Microsoft&reg; SQL Server 2019 |
-| Microsoft&reg; SQL Server JDBC driver 12.10.0 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
+| Microsoft&reg; SQL Server JDBC driver 12.10.0 | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 4.x) (64-bit)| Microsoft&reg; SQL Server JDBC driver 8.2 |
 |  Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit)| |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit) |
 
 ### Release 6.5.22.0 (Nov 29, 2024)
