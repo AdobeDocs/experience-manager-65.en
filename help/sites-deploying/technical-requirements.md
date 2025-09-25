@@ -402,7 +402,7 @@ The following hardware requirements are applicable for both Linux&reg; and Windo
 
 If you are using Dynamic Media on Linux&reg;, the following prerequisites must be met:
 
-* Red Hat&reg; Enterprise 7 and later with latest fix patches
+* Red Hat&reg; Enterprise 8 and later with latest fix patches
 * 64-bit Operating System
 * Swapping disabled (recommended)
 * SELinux disabled (See note that follows)

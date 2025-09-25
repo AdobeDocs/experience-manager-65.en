@@ -349,11 +349,6 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
   <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
  </tr>
  <tr>
-  <td><p>Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit) (Deprecated)</td>
-  <td><p>A: Supported</p> </td>
-  <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
- </tr>
- <tr>
   <td><p>Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit)</p> </td>
   <td><p>A: Supported</p> </td>
   <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
