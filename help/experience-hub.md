@@ -3,17 +3,18 @@ title: About Experience Hub
 description: Learn about the Adobe Experience Hub page.
 landing-page-description: Learn about the Adobe Experience Hub, a centralized starting point for accessing all AEM capabilities.
 solution: Experience Manager, Experience Manager 6.5
-feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows 
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
+role: Admin, Architect, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
 ---
 # About Experience Hub {#aem-experience-hub}
 
 Experience Hub introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, Experience Hub lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, Experience Hub ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-Watch a quick tour of the reimagined AEM Experience Hub workspace (4 minutes, 9 seconds).
+Watch a quick tour of the reimagined AEM Experience Hub workspace (2 minutes, 39 seconds). 
 
->[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -25,11 +26,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
     ![Adobe Experience Cloud home page](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
 1. In the **Quick access** grouping, click [**Experience Manager**](https://experience.adobe.com).
-1. The first time you access it, on the **Tell us what you want to do** page, click the option you want so Adobe can tailor your experience. 
+1. On first access, the system assigns you the **Content Author** preset (seen near the upper-right corner of the page). It controls the widgets, navigation items, and content that you see.
 
-    You can change this preference at any anytime.
+    You can change this preset at any time.
 
-    ![The Tell us what you want to do page](/help/assets/assets-experience-hub/experience-cloud-tellus-ams.png)
+    ![The drop-down list showing the Content Author preset is selected](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
 
 The Adobe Experience Manager page has been refreshed with enhanced navigation and interactive widgets. The previous collection of solution cards provided access to tools like the following: 
 
@@ -52,7 +53,7 @@ These features are available for the primary production environment that you hav
 
 ![Prod and stage environments](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
-Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
+Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role (preset). Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
 
 ![Experience Hub customized](/help/assets/assets-experience-hub/experience-hub-custom-ams.png)
 
@@ -76,4 +77,4 @@ If no production AEM Cloud Service or Managed Services environments exist, the s
 
 ## AI Assistant in AEM
 
-For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md).
+For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md).
