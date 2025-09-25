@@ -35,9 +35,10 @@ Adobe's own testing yielded the following results:
 * For images, response time improved 7%-28% depending on device and browser. The most notable performance gains were on iOS devices.
 * For viewers, load time performance improved up 15%.
 
+<!--
 The following demonstration illustrates the difference between HTTP/1 versus HTTP/2 loading:
 
-[https://http2.akamai.com/demo](https://http2.akamai.com/demo)
+[https://http2.akamai.com/demo](https://http2.akamai.com/demo) -->
 
 ## Am I eligible to switch over to HTTP/2? {#am-i-eligible-to-switch-over-to-http}
 
@@ -61,9 +62,9 @@ You initiate the request to switch over to HTTP/2; it is not automatically done 
 
         1. Primary contact name, email, phone.
         1. All domains to be transitioned over to HTTP/2.
-        1. Verify you use secure HTTPS for rich media requests.
-        1. Verify you use the CDN through Adobe and are not managed with a direct relationship.
-        1. Verify you use a dedicated domain. If you use Dynamic Media, then you use a dedicated domain.
+        1. Verify that you use secure HTTPS for rich media requests.
+        1. Verify that you use the CDN through Adobe and are not managed with a direct relationship.
+        1. Verify that you use a dedicated domain. If you use Dynamic Media, then you use a dedicated domain.
 
     1. Customer Support adds you to the HTTP/2 customer waitlist based in the order in which requests were submitted.
     1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate the transition and set a target date.
@@ -71,11 +72,11 @@ You initiate the request to switch over to HTTP/2; it is not automatically done 
 
        Because the browser does not state this fact, it is necessary to download an extension.
 
-       For Firefox and Chrome, there is an extension called "HTTP/2 and SPDY Indicator". Browsers only support http/2 securely, so it is necessary to call a URL with https to verify. If http/2 is supported, it is indicated by the extension in the form of a blue Flash symbol, and a header "X-Firefox-Spdy" : "h2".
+       For Firefox and Chrome, there is an extension called "HTTP/2 and SPDY Indicator." Browsers only support http/2 securely, so it is necessary to call a URL with https to verify. If http/2 is supported, the extension indicates i. The extension is in the form of a blue Flash symbol, and a header `X-Firefox-Spdy` : `h2`.
 
-## When can I expect to be transitioned over to HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
+## When can I expect the transition to HTTP/2 to occur? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Requests are processed in the order in which they are received by Customer Support.
+Requests are processed in the order in which Customer Support receives them.
 
 >[!NOTE]
 >
@@ -91,4 +92,4 @@ The non-cached content directly hits Adobe's origin servers until the cache is r
 
 Because the browser does not state this fact, it is necessary to download an extension.
 
-For Firefox and Chrome, there is an extension called "HTTP/2 and SPDY Indicator". Browsers only support http/2 securely, so it is necessary to call a URL with https to verify. If http/2 is supported, it is indicated by the extension in the form of a blue Flash symbol, and a header `X-Firefox-Spdy` : `h2`.
+For Firefox and Chrome, there is an extension called "HTTP/2 and SPDY Indicator." Browsers only support http/2 securely, so it is necessary to call a URL with https to verify. If http/2 is supported, the extension indicates it. The extension is in the form of a blue Flash symbol, and a header `X-Firefox-Spdy` : `h2`.
