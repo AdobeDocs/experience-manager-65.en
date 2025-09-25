@@ -938,7 +938,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
 | MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 |Centos 7  |Microsoft&reg; SQL Server 2019 |
-| Microsoft&reg; SQL Server JDBC driver 12.10.0 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
+| Microsoft&reg; SQL Server JDBC driver 12.10.0 | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 4.x) (64-bit)| Microsoft&reg; SQL Server JDBC driver 8.2 |
 |  Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit)| |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit) |
 
 ### Release 6.5.22.0 (Nov 29, 2024)
