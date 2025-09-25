@@ -962,7 +962,6 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | MongoDB Enterprise 5.0 |  |  |
 |  | |  |
 
-
 ### Release 6.5.18.0 (Aug 31, 2023)
 
 
