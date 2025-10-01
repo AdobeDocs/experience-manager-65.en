@@ -28,13 +28,13 @@ AI Assistant supports AEM as a Cloud Service, including the following solutions:
 
 It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Manager, and Author UI.
 
-The following 3-minute, 39-second video delivers a step-by-step walkthrough of AI Assistant in AEM.
+The following 3-minute, 25-second video delivers a step-by-step walkthrough of AI Assistant in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on) 
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops) 
 
 ## Get access to AI Assistant in AEM{#get-access}
 
-o get access to AI Assistant in AEM, customers must have the following:
+To get access to AI Assistant in AEM, customers must have the following:
 
 * Permission to use AI Assistant in AEM for Product Knowledge. This permission lets you ask product-related questions in AI Assistant chat. This permission must be enabled.
 * Permission to open support tickets, which requires the **Support Admin** role.
@@ -54,7 +54,7 @@ o get access to AI Assistant in AEM, customers must have the following:
 
 ## Scope {#scope}
 
-The current scope of AI Assistant in AEM focuses on addressing product knowledge questions for AEMr as a Cloud Service. This scope includes comprehensive support for key areas. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+The current scope of AI Assistant in AEM focuses on addressing Product Knowledge questions for AEMr as a Cloud Service. This scope includes comprehensive support for key areas. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **Surfaces**: Available across AEM Experience Hub, Author UI, Cloud Manager.
 * **Capabilities**: Product‑knowledge and first-stop for troubleshooting and guidance, automated creation of support tickets and lookup.
@@ -187,9 +187,9 @@ Here are answers to some common questions about AI Assistant:
 * **Is the information provided by AI Assistant in AEM in real-time?**  
   No. AI Assistant sources its content from Adobe Experience League documentation. Updates to the content may take some time to reflect in its responses.
 * **Which Adobe applications does AI Assistant in AEM support?**  
-  Currently, AI Assistant supports product knowledge inquiries in AEM as a Cloud Service, including Sites, Assets, Dynamic Media, Cloud Manager, and Forms.
+  Currently, AI Assistant supports Product Knowledge inquiries in AEM as a Cloud Service, including Sites, Assets, Dynamic Media, Cloud Manager, and Forms.
 * **What are the capabilities of AI Assistant in AEM?**  
-  AI Assistant in AEM is designed to answer queries related to Adobe product knowledge.
+  AI Assistant in AEM is designed to answer queries related to Adobe Product Knowledge.
 * **Does the AI Assistant in AEM use personal information for training data?**  
   No. AI Assistant in AEM does not use personal information for training purposes. Avoid sharing personal information about yourself or others, including names or contact details, with the AI Assistant in AEM.
 
