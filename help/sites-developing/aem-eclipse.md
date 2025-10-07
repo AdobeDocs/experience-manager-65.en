@@ -43,7 +43,7 @@ Before using the AEM Developer Tools, do the following:
 
 Once you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
 
-1. Browse the **AEM Developer Tools** website at `https://eclipse.adobe.com/aem/dev-tools/`.
+1. Open the [AEM Developer Tools Web Site](https://eclipse.adobe.com/).
 
 1. Copy the **Installation Link**.
 
