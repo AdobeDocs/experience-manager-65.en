@@ -112,7 +112,7 @@ To create an AEM Archetype 41 or [later](https://github.com/adobe/aem-project-ar
      
         >[!NOTE]
         >
-        >* If you set up any other topology, ensure that you add the submit, prefill, and other URLs to the allowlist at the Dispatcher layer.
+        >* If you set up any other topology, ensure that the submit, prefill, and other required URLs, along with necessary selectors (for example, `/content/forms/*model.json`), are added to the allowlist  at the Dispatcher layer.
 
      1. Save and close the file.  
 
@@ -124,10 +124,7 @@ To create an AEM Archetype 41 or [later](https://github.com/adobe/aem-project-ar
     1. Run the following command to build the AEM Archetype project for your environment: 
 
         ```Shell
-        
         mvn clean install
-
-
         ```
 
         ![archetypebuild-success](/help/forms/using/assets/corecomponent-build-successful.png)
