@@ -48,6 +48,10 @@ To install the connector, follow these steps:
 
 A system user `workfront-tools` is automatically created and the required permissions are managed automatically. All users from [!DNL Workfront] who use the connector are automatically added as a part of this group.
 
+>[!NOTE]
+>
+> When you use corporate proxy servers, include [!DNL workfront] in the [!UICONTROL Apache HTTP Components Proxy Configuration PID] for the [!UICONTROL Enhanced Workfront Connector] to recognize it. The required PID format is: `org.apache.http.proxyconfigurator~workfront`.
+
 ## Configure the connection between [!DNL Experience Manager] and [!DNL Workfront] {#configure-connection}
 
 To create a connection with Workfront, follow these steps:
