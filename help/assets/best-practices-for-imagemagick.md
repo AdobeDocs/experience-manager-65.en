@@ -23,7 +23,7 @@ To process large files using ImageMagick, consider higher than usual memory requ
 
 Multiple versions of ImageMagic installation files are available for various operating systems. Use the appropriate version for your operating system.
 
-1. Download the appropriate [ImageMagick installation files](https://www.imagemagick.org/script/download.php) for your operating system.
+1. Download the appropriate ImageMagick installation files (`https://www.imagemagick.org/script/download.php website`) for your operating system.
 1. To install ImageMagick on the disk hosting the [!DNL Experience Manager] server, launch the installation file.
 
 1. Set the path Environment variable to the ImageMagic installation directory.
@@ -76,7 +76,7 @@ You can set up the command line process step for your particular use case. Perfo
 
 There are multiple security vulnerabilities associated with using ImageMagick to process images. For example, processing user-submitted images involves the risk of remote code execution (RCE).
 
-In addition, various image-processing plug-ins depend on the ImageMagick library, including but not limited to PHP’s imagick, Ruby’s rmagick and paperclip, and nodejs’s imagemagick.
+In addition, various image-processing plug-ins depend on the ImageMagick library, including but not limited to PHP's imagick, Ruby's rmagick and paperclip, and nodejs's imagemagick.
 
 If you use ImageMagick or an affected library, Adobe recommends that you mitigate the known vulnerabilities by performing at least one of the following tasks (but preferably both):
 

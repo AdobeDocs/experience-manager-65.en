@@ -443,7 +443,7 @@ After you perform the following procedure, when you upload a TXT file into [!DNL
 
 The following conversions can be automatically run and stored within [!DNL Assets]:
 
-* EPS and AI transformation using [ImageMagick](https://www.imagemagick.org/script/index.php) and [Ghostscript](https://www.ghostscript.com/).
+* EPS and AI transformation using `https://www.imagemagick.org/script/index.php` and [Ghostscript](https://www.ghostscript.com/).
 * FLV video transcoding using [FFmpeg](https://ffmpeg.org/).
 * MP3 encoding using [LAME](https://lame.sourceforge.io/).
 * Audio processing using [SOX](https://sourceforge.net/projects/sox/).
@@ -470,7 +470,7 @@ To do this, use [!DNL ImageMagick]. [!DNL ImageMagick] is a free, command-line s
 
 Install [!DNL ImageMagick] on the disk hosting the [!DNL Experience Manager] server:
 
-1. Install [!DNL ImageMagick]: See [ImageMagick documentation](https://www.imagemagick.org/script/download.php).
+1. Install [!DNL ImageMagick]: See `https://www.imagemagick.org/script/download.php` website.
 1. Set up the tool so that one the command line, you can run `convert`.
 1. To see if the tool is installed properly, run the following command `convert -h` on the command line.
 
