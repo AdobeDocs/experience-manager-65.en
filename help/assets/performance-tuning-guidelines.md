@@ -205,7 +205,7 @@ In addition, set the path of ImageMagick's temporary folder in the `configure.xm
 
 >[!NOTE]
 >
->The ImageMagick `policy.xml` and `configure.xml` files are available at `/usr/lib64/ImageMagick-&#42;/config/` instead of `/etc/ImageMagick/`. See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for the location of the configuration files.
+>The ImageMagick `policy.xml` and `configure.xml` files are available at `/usr/lib64/ImageMagick-&#42;/config/` instead of `/etc/ImageMagick/`. See ImageMagick documentation (`https://www.imagemagick.org/script/resources.php` website) for the location of the configuration files.
 
 If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Support if you plan to process lots of large PSD or PSB files. Work with an Adobe Customer Support representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
 

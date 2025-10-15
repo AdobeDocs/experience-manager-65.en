@@ -44,9 +44,11 @@ Although the video walkthrough is branded with Assets on Demand, the principles 
 
 The "Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets" webinar teaches you how to use interactive video and other features to tie conversion-driven events into your video marketing content.
 
+<!-- NOT FOUND; FIND REPLACEMENT
 >[!NOTE]
 >
->[Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>[Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/). 
+-->
 
 ## Quick Start: Interactive Videos {#quick-start-interactive-videos}
 
