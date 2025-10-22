@@ -75,6 +75,68 @@ If no production AEM Cloud Service or Managed Services environments exist, the s
 
 ![Experience Hub no production environments](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
 
+## Frequently Asked Questions (FAQ) {#faq}
+
++++**What is the main purpose of Adobe Experience Hub within Adobe Experience Manager?**
+
+  Adobe Experience Hub serves as a centralized starting point for managing content, assets, and sites within Adobe Experience Manager, delivering a personalized experience based on user roles and goals.
+
++++
+
++++**How does Experience Hub adapt to different user roles?**
+
+  Experience Hub shows role-based views and quick actions for authors, asset librarians, administrators, and IT. Each role gets fast access to the tools and capabilities that it needs.
+
++++
+
++++**What are some features of the Experience Hub's navigation and layout?**
+
+  Experience Hub uses a unified left navigation to organize core AEM capabilities, customizable widgets, and quick actions. This layout creates an organized, efficient workspace.
+
++++
+
++++**How can users personalize their Experience Hub workspace?**
+
+  Users can add, remove, resize, and rearrange widgets, and customize quick actions to tailor the workspace according to their needs and preferences.
+
++++
+
++++**What types of actions can be performed quickly using Experience Hub?**
+
+  Experience Hub offers one-click shortcuts for important tasks such as creating content, uploading assets, or managing team access, tailored to the user's role.
+
++++
+
++++**How does Experience Hub facilitate navigation to different AEM features?**
+
+  Experience Hub's main navigation under **Tools** or **Services** provides quick access to AEM features like Assets, Sites, Forms, Content Fragments, and Launches.
+
++++
+
++++**What is the significance of widgets in Experience Hub?**
+
+  Widgets in Experience Hub are customizable elements that help users manage their work efficiently, such as tracking recent activities and keeping informed about product updates.
+
++++
+
++++**How can users manage multiple AEM environments using Experience Hub?**
+
+  Users can choose the environment to target and pin favorites to keep them at the top. Shortcuts open solutions and pages within those environments.
+
++++
+
++++**What role does the AI Assistant play in AEM?**
+
+  The AI Assistant in AEM is available to users who have completed prerequisite criteria, providing additional support and insights within the organization.
+
++++
+
++++**What happens if no production AEM Cloud Service or Managed Services environments exist?**
+
+  If no production environments exist, the selection options in Experience Hub appear dimmed and unavailable.
+
++++
+
 ## AI Assistant in AEM
 
 For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md).
