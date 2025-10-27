@@ -32,6 +32,10 @@ Before enabling feature toggles in your AEM 6.5 setup, ensure the following:
 
  ![Feature Toggle](/help/forms/using/assets/feature%20toggle%201.1.8.png)
 
+>[!NOTE]
+>
+>You can enable feature toggles in your AEM 6.5 environment or earlier versions as required.
+
 ## Enable Feature Toggle {#enable-feature-toggle-65}
 
 Feature Toggles for early adopters or new features can be configured through the **AEM Web Console** by following the steps below:
