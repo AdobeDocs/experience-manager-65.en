@@ -86,7 +86,7 @@ In Experience Manager, DAM Update Asset workflow executes when a new asset is up
 
 1. To activate the changes, click **[!UICONTROL Sync]**.
 
-For detailed information on ImageMagick command line capabilities, see [https://imagemagick.org](https://imagemagick.org).
+For detailed information on ImageMagick command line capabilities, see `https://imagemagick.org` website.
 
 ## Generate renditions of existing assets using Experience Manager workflow {#generate-renditions-of-existing-assets-using-aem-workflow}
 
