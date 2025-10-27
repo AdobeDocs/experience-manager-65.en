@@ -28,9 +28,13 @@ Before enabling feature toggles in your AEM 6.5 setup, ensure the following:
 
 * User is member of `forms-users` group.
 
-* Navigate to `http://<author-instance-url>:portnumber/system/console/bundles` and check whether **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** bundle is present or not. In case it is not present [download the bundle from the link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+* Navigate to `http://<author-instance-url>:portnumber/system/console/bundles` and check whether **(com.adobe.granite.toggle.impl.dev-1.1.8.jar)** bundle is present or not. In case it is not present [download the bundle from the link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
-    ![Feature Toggle](/help/forms/using/assets/feature-toggle-6.5.png)
+ ![Feature Toggle](/help/forms/using/assets/feature-toggle-1.1.8.png)
+
+>[!NOTE]
+>
+>You can enable feature toggles in your AEM 6.5 environment or earlier versions as required.
 
 ## Enable Feature Toggle {#enable-feature-toggle-65}
 
