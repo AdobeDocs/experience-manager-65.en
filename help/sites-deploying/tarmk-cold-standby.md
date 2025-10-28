@@ -17,7 +17,7 @@ role: Admin
 
 The Cold Standby capacity of the Tar Micro Kernel allows one or more standby Adobe Experience Manager (AEM) instances to connect to a primary instance. The sync process is one way only meaning that it is only done from the primary to the standby instances.
 
-The purpose of the standby instances is to guarantee a live data copy of the master repository and ensure a quick switch without data loss in case the master is unavailable for any reason.
+The purpose of the standby instances is to guarantee a live data copy of the main repository and ensure a quick switch without data loss in case the primary instance is unavailable for any reason.
 
 Content is synced linearly between the primary instance and the standby instances without any integrity checks for file or repository corruption. Because of this design, standby instances are exact copies of the primary instance and cannot help to mitigate inconsistencies on primary instances.
 
@@ -37,7 +37,7 @@ Content is synced linearly between the primary instance and the standby instance
 
 ## How it works {#how-it-works}
 
-On the primary AEM instance, a TCP port is opened and is listening to incoming messages. Currently, there are two types of messages that the slaves send to the master:
+On the primary AEM instance, a TCP port is opened and is listening to incoming messages. Currently, there are two types of messages that the standby send to the primary:
 
 * a message requesting the segment ID of the current head
 * a message requesting segment data with a specified ID
@@ -66,7 +66,7 @@ On the standby, you can expect high CPU consumption during the sync process. Bec
 
 #### Security {#security}
 
-Assuming that all the instances run in the same intranet security zone the risk of a security breach is greatly reduced. Nevertheless, you can add an extra security layer by enabling SSL connections between the slaves and the master. Doing so reduces the possibility that the data is compromised by a man-in-the-middle.
+Assuming that all the instances run in the same intranet security zone the risk of a security breach is greatly reduced. Nevertheless, you can add an extra security layer by enabling SSL connections between the standby and the primary instances. Doing so reduces the possibility that the data is compromised by a man-in-the-middle.
 
 Furthermore you can specify the standby instances that are allowed to connect by restricting the IP address of incoming requests. This should help to guarantee that no one in the intranet can copy the repository.
 
@@ -87,7 +87,7 @@ Furthermore you can specify the standby instances that are allowed to connect by
 
 To create a TarMK cold standby setup, first create the standby instances by performing a file system copy of the entire installation folder of the primary to a new location. You can then start each instance with a run mode that specifies its role ( `primary` or `standby`).
 
-Below is the procedure that must be followed to create a setup with one master and one standby instance:
+Below is the procedure that must be followed to create a setup with one primary and one standby instance:
 
 1. Install AEM.
 
@@ -331,7 +331,7 @@ You can do this by following the steps outlined below:
 
 ## Monitoring {#monitoring}
 
-The feature exposes information using JMX or MBeans. Doing so you can inspect the current state of the standby and the master using the [JMX console](/help/sites-administering/jmx-console.md). The information can be found in an MBean of `type org.apache.jackrabbit.oak:type="Standby"`named `Status`.
+The feature exposes information using JMX or MBeans. Doing so you can inspect the current state of the standby and the primary using the [JMX console](/help/sites-administering/jmx-console.md). The information can be found in an MBean of `type org.apache.jackrabbit.oak:type="Standby"`named `Status`.
 
 **Standby**
 
@@ -360,7 +360,7 @@ Observing the primary exposes some general information by way of a MBean whose I
 
 * `Mode:` always shows the value `primary`.
 
-Furthermore information for up to ten clients (standby instances) that are connected to the master can be retrieved. The MBean ID is the UUID of the instance. There are no invokable methods for these MBeans but some useful read-only attributes:
+Furthermore information for up to ten clients (standby instances) that are connected to the primary can be retrieved. The MBean ID is the UUID of the instance. There are no invokable methods for these MBeans but some useful read-only attributes:
 
 * `Name:` the ID of the client.
 * `LastSeenTimestamp:` the timestamp of the last request in a textual representation.
