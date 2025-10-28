@@ -24,7 +24,7 @@ When working in a AEM 6.5 setup, feature toggles help in:
 
 ## Consideration
 
-From AEM 6.5 SP23 onwards, you do not need to perform the Prerequisites steps, as the [com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/) bundle is already installed with the Forms add-on.
+From AEM 6.5 SP23 onwards, you do not need to install the bundle [com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/) as it is already installed with the Forms add-on.
 
 ## Prerequisites
 
