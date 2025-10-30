@@ -25,6 +25,32 @@ This article lists the critical fixes implemented to address known issues, impro
   </tr>
   <tr>
     <td>
+      <strong>Sept 09, 2025</strong><br>
+    </td>
+    <td>
+    <ul>
+    <li><strong>Jboss:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-jboss.zip">Hotfix3 for AEM Service Pack 6.5.23.0 on Windows for JBoss JEE server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-jboss.tar.gz">Hotfix3 for AEM Service Pack 6.5.23.0 on Linux for JBoss JEE server</a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-weblogic.zip">Hotfix3 for AEM Service Pack 6.5.23.0 on Windows for Weblogic JEE server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-weblogic.tar.gz">Hotfix3 for AEM Service Pack 6.5.23.0 on Linux for Weblogic JEE server</a></li>
+    <li><strong>Websphere:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-websphere.zip">Hotfix3 for AEM Service Pack 6.5.23.0 on Windows for Websphere JEE server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-websphere.tar.gz">Hotfix3 for AEM Service Pack 6.5.23.0 on Linux for Websphere JEE server</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Improves reliability of PS to PDF and HTML to PDF (WebKit) conversions that occurred after deploying AEM Forms 6.5.23. If you need further assistance, please contact [Adobe Experience Manager Forms Support](https://business.adobe.com/in/support/main.html)
+    </li>
+    </ul>
+    </td>    
+  </tr>
+    </ul>
+    </td>
+  <tr>
+    <td>
       <strong>Aug 05, 2025</strong><br>
       <em>Applies to:</em> AEM 6.5 Forms Service Pack 23<br>
       <em>Setup instructions:</em>

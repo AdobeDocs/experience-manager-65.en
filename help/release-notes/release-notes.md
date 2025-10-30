@@ -342,6 +342,8 @@ The Hybrid add-on package is publicly available on Adobe Software Distribution s
 
 * When a user saves a large form with fragments and lazy loading enabled, it fails to retrieve drafts, disrupting the workflow. (FORMS-19890, FORMS-19808) 
 
+* When a user performs PS to PDF or HTML to PDF (WebKit) conversions after deploying AEM Forms 6.5.23, the process may fail during PDF generation. (FORMS-21721)
+
 #### Forms JEE 
 
 * When a user reconfigures the database in AEM Forms, the connection fails due to hardcoded parameters. (FORMS-19568, FORMS-17621) 
