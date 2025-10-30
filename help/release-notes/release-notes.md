@@ -344,6 +344,8 @@ The Hybrid add-on package is publicly available on Adobe Software Distribution s
 
 * When a user performs PS to PDF or HTML to PDF (WebKit) conversions after deploying AEM Forms 6.5.23, the process may fail during PDF generation. (FORMS-21721)
 
+* When a user upgrade to SP23 with Hotfix 3 (109), users may encounter an error in PDFG where image files fail to convert to PDF. (FORMS-22029)
+
 #### Forms JEE 
 
 * When a user reconfigures the database in AEM Forms, the connection fails due to hardcoded parameters. (FORMS-19568, FORMS-17621) 
