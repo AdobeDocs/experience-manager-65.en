@@ -25,7 +25,7 @@ This article lists the critical fixes implemented to address known issues, impro
   </tr>
   <tr>
     <td>
-      <strong>Sept 09, 2025</strong><br>
+      <strong>Sept 23, 2025</strong><br>
     </td>
     <td>
     <ul>
@@ -42,7 +42,7 @@ This article lists the critical fixes implemented to address known issues, impro
     </td>
     <td>
     <ul>
-    <li>Improves reliability of PS to PDF and HTML to PDF (WebKit) conversions that occurred after deploying AEM Forms 6.5.23. If you need further assistance, please contact [Adobe Experience Manager Forms Support](https://business.adobe.com/in/support/main.html)
+    <li>Improves form submission reliability by addressing an issue where submissions fail when Server-Side Validation (SSV) is enabled and computed Meta Info is empty. It also resolves an issue where PS to PDF and HTML to PDF (WebKit) conversions fail after deploying hotfix patch AEMForms-6.5.0-0108 on top of 6.5.23.0. If you need further assistance, please contact [Adobe Experience Manager Forms Support](https://business.adobe.com/in/support/main.html)
     </li>
     </ul>
     </td>    
