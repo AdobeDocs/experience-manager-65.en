@@ -178,7 +178,7 @@ If you are using a UNIX-based operating system, install the following 32-bit pac
   * libc.so.6
   * ld-linux.so.2
   * libexpat.so.1
-* (PDF Generator only) To enable WebKit route on RHEL 8 or RHEL 9 setups, the 32-bit `nspr` library may not be available by default; install it if not present. 
+* (PDF Generator only) To enable WebKit route on RHEL 8 or RHEL 9, SLES15 setups, the 32-bit `nspr` library may not be available by default; install it if not present. 
 
 * (PDF Generator only) If the WebToPDF conversion fails on Unix&reg; server with the following error:
   
