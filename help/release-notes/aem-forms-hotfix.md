@@ -29,12 +29,12 @@ This article lists the critical fixes implemented to address known issues, impro
       <em>Applies to:</em> ImgToPdf is failing with AEM Forms SP23 Jboss Hotfix3(109)<br>
     </td>
     <td>
-    <ul> If you encounter any issues, contact [Adobe Experience Manager Forms Support](https://business.adobe.com/in/support/main.html)
+    <ul> For resolution, contact [Adobe Experience Manager Forms Support](https://business.adobe.com/in/support/main.html)
     </ul>
     </td>
     <td>
     <ul>
-    <li> Resolves an issue where PDF Generator (PDFG) failed to convert image files to PDF after upgrading to SP23 with Hotfix 3, resulting in unexpected post-processing errors.
+    <li> <b>(FORMS-22029):</b> Improves PDF conversion reliability by addressing an issue where PDF Generator (PDFG) fails to convert image files to PDF after upgrading to SP23 with Hotfix 3, causing unexpected post-processing errors.
       <ul>
   <tr>
     <td>
@@ -56,9 +56,9 @@ This article lists the critical fixes implemented to address known issues, impro
     <td>
     <ul>
     <strong>This hotfix fixes the following:</strong> 
-    <li> <b>(FORMS-22029):</b> Improves form submission reliability by addressing an issue where submissions fail when Server-Side Validation (SSV) is enabled and computed Meta Info is empty.
+    <li> <b>(FORMS-21378):</b> Improved form submission reliability by addressing an issue where submissions fail when Server-Side Validation (SSV) is enabled and computed Meta Info is empty.
 
-   <li> <b>(FORMS-21721):</b> It also resolves an issue where PS to PDF and HTML to PDF (WebKit) conversions fail after deploying hotfix patch AEMForms-6.5.0-0108 on top of 6.5.23.0. 
+   <li> <b>(FORMS-21721):</b> Improved an issue where PS to PDF and HTML to PDF (WebKit) conversions fail after deploying hotfix 2 on top of 6.5.23.0. 
     </li>
     </ul>
     </td>    

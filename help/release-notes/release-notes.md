@@ -356,9 +356,9 @@ The Hybrid add-on package is publicly available on Adobe Software Distribution s
 
 * On AEM Forms 6.5.21.0, the PDFG conversion fails with the following error: (FORMS-16851)(FORMS-14613) 
 
-* When a user upgrade to SP23 with Hotfix 2 (189), users may encounter an error in PS to PDF or HTML to PDF (WebKit) conversions, the process may fail during PDF generation. (FORMS-21721)
+* On AEM Forms 6.5.23.0 with Hotfix 2, (PDFG) PS to PDF and HTML to PDF (WebKit) conversions failure. (FORMS-21721)
 
-* When a user upgrade to SP23 with Hotfix 3 (109), users may encounter an error in PDFG where image files fail to convert to PDF. (FORMS-22029) 
+* On AEM Forms 6.5.23.0 with Hotfix 3, (PDFG) Image to PDF conversion fails. (FORMS-22029)
  
 #### Forms Captcha {#forms-captcha-6523} 
 
