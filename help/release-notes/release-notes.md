@@ -102,8 +102,8 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 *  () MAJOR
 *  () MAJOR
 *  () MAJOR
-* Filter chips in the Sites search use button semantics, not grid roles. Screen readers announce "Remove tag `<name>`," and keyboard users can focus and remove each chip reliably. (SITES-24980) MAJOR
-* Status updates in the Sites Admin filter view announce to screen readers. When users switch Card/List while items load, NVDA now speaks the "Please wait…" message through a live region. This guidance prevents extra clicks and confusion. (SITES-24992) MAJOR
+* The filter bar now treats each selected tag as an action button. Clear accessible names and focus handling improve announcements and keyboard control. (SITES-24980) MAJOR
+* Status updates in the Sites Admin filter view announce to screen readers. When users switch Card/List while items load, NVDA now speaks the "Please wait" message through a live region. This guidance prevents extra clicks and confusion. (SITES-24992) MAJOR
 * Keyboard focus now moves in a logical order when users expand the Left Rail. Focus shifts directly from the Left Rail button to the expanded content, eliminating the need to backtrack or skip elements. This change improves accessibility for screen reader and keyboard users. (SITES-24998) MAJOR
 * Screen reader feedback for the **Edit** button now matches the control. Activating the button announces the Edit action rather than a preview message, which improves clarity and reduces input errors for non-mouse users. (SITES-25208) MAJOR
 * The confirm action in the Teaser dialog box announces correctly to screen readers. The control reports "Confirm," not the icon description, giving keyboard and screen-reader users clear guidance. (SITES-25223) MAJOR
