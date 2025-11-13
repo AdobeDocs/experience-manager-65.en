@@ -61,54 +61,63 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 #### Accessibility {#sites-accessibility-6524}
 
-*  () CRITICAL
-*  () CRITICAL
-*  () CRITICAL
-*  () CRITICAL
-*  () CRITICAL
-*  () CRITICAL
+* The **Switch display format** dialog box now supports full keyboard operation. Focus no longer skips the **View Settings** button, and standard keys (`Tab`, `Enter`, `Space`) work consistently. (SITES-24306) CRITICAL
+* Keyboard users can remove the published status tags without a mouse. Focus lands on each tag and activation works with `Enter`/`Space` and Backspace/Delete. The tag control now behaves like a button, which improves screen-reader feedback and meets WCAG 2.1.1 Keyboard. (SITES-24491) CRITICAL
+* Filters rail reflows responsively at narrow viewports. Selection controls and results stay within the viewport at 400% zoom, eliminating horizontal scrolling and content cut-off. (SITES-24708) CRITICAL
+* AEM restores full keyboard access to the ContextHub Reset, Persona, and Device buttons. Tab and arrow keys reach each control, show a visible focus indicator, and activate actions with `Enter` or `Space`. Screen readers announce clear labels. (SITES-24939) CRITICAL
+* Date input and picker remain fully visible at 320 px. The Timewarp modal uses responsive sizing, so the control no longer clips or disappears on the smallest viewport. (SITES-24962) CRITICAL
+* References rail now supports 400% browser zoom without losing access to its content. The rail uses responsive sizing instead of a fixed width, so items remain visible and selectable at 1280×1024. (SITES-24972) CRITICAL
 * Filters Rail now works at 400% zoom. The rail resizes with relative units and no longer blocks or hides filter controls. Users can view and select every filter option without horizontal scrolling or clipped hit-targets. (SITES-24981) CRITICAL
 * Keyboard users can operate formatting menus in the Teaser modal. Pressing `Enter` or `Space` on **List** or **Paragraph Format** opens the pop-up, Arrow keys navigate options, and `Enter` applies the selection. `Escape` closes the menu and restores focus to the triggering control, producing a consistent toolbar workflow. (SITES-25235) CRITICAL
 * The Swatch color picker popover now stays within the viewport at 320 px. The popover shows all color rows and supports scrolling, so authors can select any swatch on small screens. (SITES-25274) CRITICAL
 * Demographic toolbar drop-down menus now work fully with the keyboard. Opening a menu moves focus to the first option, arrow keys navigate the list, and Esc/Tab close or advance without dumping focus to the toolbar. Interactive items use proper semantics so NVDA and other readers announce options correctly. (SITES-25310) CRITICAL
-* Add Component in the Content tree works as designed on AEM 6.5 SP24. The error toast reported earlier came from missing author permissions in a local setup, not from AEM. Authors with edit rights can activate the button and add components by keyboard or mouse. (SITES-25312) CRITICAL
+* Add Component in the Content tree works as designed on AEM 6.5 SP24. The error reported earlier came from missing author permissions in a local setup, not from AEM. Authors with edit rights can activate the button and add components by keyboard or mouse. (SITES-25312) CRITICAL
 * Keyboard and screen-reader access in the Demographic toolbar now works reliably. Authors using NVDA can traverse **Commerce**, **Persona**, and 88 with arrows, observe clear focus feedback, and understand which tab is active. (SITES-25326) CRITICAL
 
-
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
-*  () MAJOR
+* The **Skip to content** link now moves keyboard focus to the main content heading. Focus stays visible on a uniquely identified target, so screen readers announce the correct section. The change meets WCAG 2.4.1 and 2.4.3. (SITES-24061) MAJOR
+* Keyboard navigation in the Sites home page tree follows a logical sequence after using **Select All**. Focus moves from **Select All** to the next control (Open left rail) instead of jumping back to the start of the page. (SITES-24307) MAJOR
+* Section titles and edit controls in the Sites editor respond to keyboard focus and activation. Keyboard users reveal the same title and actions that previously appeared only on hover. (SITES-24479) MAJOR
+* Buttons in the Sites editor expose descriptive names instead of generic or missing labels. Assistive technologies announce the correct action, which improves clarity and reduces misclicks. (SITES-24480) MAJOR
+* Screen readers receive a spoken "Loading" message while the Sites view refreshes. The update adds a dedicated status live region and writes the message into it programmatically, which confirms progress without moving focus. (SITES-24481) MAJOR
+* The Assets side rail now includes a clear **Close** control and returns focus to the toggle button. Keyboard and screen-reader users dismiss the panel immediately instead of tabbing through every control. The change reduces keystrokes and matches expected panel behavior. (SITES-24489) MAJOR
+* The ARIA tab list in the Sites Page Editor includes a descriptive name. Screen readers now identify the control as a tab list and read the correct label, letting users find the right set of tabs and move between them reliably. (SITES-24492) MAJOR
+* Search in the Editor side rail now announces results to screen readers. As users type, a live status message reports the number of matches and updates without moving focus. Keyboard users discover the results immediately. (SITES-24506) MAJOR
+* Row selection in List View improves for assistive-technology users. The checkbox exposes a meaningful name that was derived from the row Title, so announcements stay brief and describe the action correctly. (SITES-24514) MAJOR
+* Corrected List View accessibility names. The table removes `aria-label` from non-interactive elements and assigns the label to the actionable link or button. Screen reader users now hear accurate, non-duplicated labels across the column. (SITES-24515) MAJOR
+* The sticky header stopped obscuring the teaser modal dialog box during high-zoom use. Content remains readable and usable at 200% and 400% zoom, with vertical flow and no clipped sections. (SITES-24523) MAJOR
+* Typing in the search field no longer triggers a premature announcement of the first result or accidental activation. The experience now announces a concise status message with the result count, while the focus remains in the field until the user navigates to the list. (SITES-24658) MAJOR
+* The Alternative text field in the text editor's hyperlink dialog box now exposes a programmatic label. Screen readers announce "Alternative text" for the field, and focus lands on the correctly named control. This fix improves navigation for keyboard and speech users. (SITES-24675) MAJOR
+* Added a live status message to the References rail so assistive technologies announce changes immediately. Selecting multiple items triggers a clear message about reference availability, which prevents silent state changes and reduces repeat actions. (SITES-24678) MAJOR
+* The Image dialog box now announces its loading state through an ARIA live region. Screen readers hear a "Loading, please wait" message while the spinner appears. And, a ready update when content finishes, so users know when they can interact. (SITES-24697) MAJOR
+* The Link selection dialog box now exposes a live region that announces search results. Screen readers hear the "results updated" status after each search without moving focus, so users get clear confirmation that the search was completed. (SITES-24700) MAJOR
+* The Link selection dialog box now reflows at 320 px. All fields and actions stay visible and usable, and the horizontal scroll bar no longer appears. (SITES-24709) MAJOR
+* The Link Selection dialog box now uses the same label for both the on-screen text and the accessible name on every tree item. Screen readers announce each item while moving with the arrow keys, including the last level, eliminating silent nodes and mismatched names. (SITES-24710) MAJOR
+* Change Filters now report its state as expanded or collapsed. The button toggles `aria-expanded` in sync with the filter panel and exposes a single, clear name ("Change filters"), removing the confusing "filter?" announcement. Screen-reader users can predict the result of activating the control. (SITES-24713) MAJOR
+* Modal headers no longer cover content at 320 px width. The header releases from its sticky state and the dialog box body scrolls, so all fields and action buttons remain visible and usable. Keyboard users can reach every control without loss of focus. (SITES-24718) MAJOR
+* App Navigation links now expose proper link semantics. Screen readers announce each item as a link rather than a list item, which improves keyboard navigation and voice control. The list container keeps list semantics, while links remain the focusable targets. (SITES-24719) MAJOR
+* The results status now announces to screen readers when filters change. NVDA reads both the "X of Y results" count and the "no results" message. The paging status uses a live region that updates in place, so users hear confirmation without moving focus. (SITES-24720) MAJOR
+* The spin button in the Carousel dialog box now announces a single, concise name to screen readers. The control no longer repeats both the group label and the input label, which reduces verbosity and confusion for NVDA users. (SITES-24725) MAJOR
+* The Help menu search list exposes proper semantics. The container presents a list, and each result stays a link without a conflicting role. NVDA and JAWS announce links accurately and navigation remains consistent. (SITES-24729) MAJOR
+* Adobe fixed the color-swatch pop-up in User Preferences so NVDA announces the swatch in focus, not the previously selected swatch. Keyboard users hear accurate color names while moving through the list and can confirm the correct selection. (SITES-24739) MAJOR
+* NVDA now reads the full Description in the Tree directory. The details panel exposes multi-line text as one value and links it to the field label. Keyboard users hear the complete text while tabbing through read-only fields. (SITES-24780) MAJOR
+* The tree directory now announces the Modified date. NVDA reads the date when focus moves into the Modified column. The grid ties each date to the item name so users hear both the file and its last update. (SITES-24782) MAJOR
+* Preview mode now honors user text-spacing preferences. The canvas reflects letter, word, and line-height changes across all previewed content. Text no longer stays fixed or clips while spacing increases. Keyboard and low-vision users read content without layout breaks. (SITES-24936) MAJOR
+* AEM corrects the tab order on Assets Editor pages. Tabbing now moves from the header controls to the contact hub buttons, and finally into the canvas tools in a clear sequence. Screen readers follow the same order, which removes confusion and speeds keyboard navigation. (SITES-24937) MAJOR
+* AEM adds a programmatic name to the Card Actions menu bar. Screen readers announce the control correctly, and speech users can target it by name. Keyboard navigation and focus remain unchanged. (SITES-24938) MAJOR
+* Card View menus honor increased text spacing. The More Actions item grows and no longer truncates labels, including Quick Publish. Users who raise letter, word, or line spacing keep full labels and keyboard access. (SITES-24941) MAJOR
+* Removed the "presentation" role that hid the Sites home page table from the accessibility tree. The table reads correctly again. NVDA and JAWS detect the table, recognize headers, and announce header relationships during row and column navigation. (SITES-24942) MAJOR
+* Sorting feedback in List View is explicit and consistent. After a sort, the header exposes the order through `aria-sort`. It announces the change, while unsorted headers no longer claim a state, helping screen reader users track which column controls the sort. (SITES-24943) MAJOR
+* The Edit Layout header no longer exposes a non-working **Edit** button. The control now acts as a static status label and stays out of the tab order, so keyboard users do not waste a keystroke. Use **Select another mode** to change modes, with clear screen-reader feedback. (SITES-24950) MAJOR
+* The emulator toolbar shows full device names by default. The label no longer truncates on load, so users can read and select devices without guessing. Text scales cleanly across zoom levels and narrow widths. (SITES-24952) MAJOR
+* Emulator toolbar fits small viewports. At 320 pixels, the device list and controls the display without clipping, so users can select Galaxy S7 and newer models. The layout scales and wraps to avoid horizontal scrolling even at 400% zoom. (SITES-24953) MAJOR
+* Screen readers announce the selected device and its measurements in the Emulator. NVDA stops reading the ruler stream; the device button uses an attached description for the tooltip text, which reduces noise and guides navigation. (SITES-24955) MAJOR
 * The filter bar now treats each selected tag as an action button. Clear accessible names and focus handling improve announcements and keyboard control. (SITES-24980) MAJOR
 * Status updates in the Sites Admin filter view announce to screen readers. When users switch Card/List while items load, NVDA now speaks the "Please wait" message through a live region. This guidance prevents extra clicks and confusion. (SITES-24992) MAJOR
-* Keyboard focus now moves in a logical order when users expand the Left Rail. Focus shifts directly from the Left Rail button to the expanded content, eliminating the need to backtrack or skip elements. This change improves accessibility for screen reader and keyboard users. (SITES-24998) MAJOR
+* Keyboard focus now moves in a logical order when users expand the left rail. Focus shifts directly from the left rail button to the expanded content, eliminating the need to backtrack or skip elements. This change improves accessibility for screen reader and keyboard users. (SITES-24998) MAJOR
 * Screen reader feedback for the **Edit** button now matches the control. Activating the button announces the Edit action rather than a preview message, which improves clarity and reduces input errors for non-mouse users. (SITES-25208) MAJOR
 * The confirm action in the Teaser dialog box announces correctly to screen readers. The control reports "Confirm," not the icon description, giving keyboard and screen-reader users clear guidance. (SITES-25223) MAJOR
 * The Help button now exposes a clear accessible name. Screen readers announce "Help" instead of a verbose icon description. Users understand the action and can find assistance faster. (SITES-25224) MAJOR
-* The Timewarp modal displays a clear focus ring on the **Set Date** and **Exit Timewarp** links. Users who tab see exactly where focus lands and avoid unintended actions. The ring maintains at least 3:1 contrast against the background. (SITES-25232) MAJOR
+* The Timewarp modal displays a clear focus ring on the **`Set Date`** and **Exit Timewarp** links. Users who tab see exactly where the focus lands and avoid unintended actions. The ring maintains at least 3:1 contrast against the background. (SITES-25232) MAJOR
 * Screen readers now announce the Annotate and Close Annotate controls accurately in the Annotation toolbar. NVDA no longer says "Preview button pressed," which misled authors and suggested the wrong action. The announcement matches the button pressed and keeps the workflow clear. (SITES-25234) MAJOR
 * Keyboard navigation in the annotation toolbar behaves consistently. Focus no longer jumps to Exit when opening the mode and instead moves to the starting control for adding annotations. Users navigate the controls in sequence without reverse tabbing. (SITES-25241) MAJOR
 * Small-screen viewing works as expected in the Teaser modal. The dialog box no longer creates a horizontal scroll bar at 320 px, and the toolbar stays accessible without panning sideways. This update helps low-vision users who zoom the page. (SITES-25242) MAJOR
@@ -122,36 +131,35 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 * Screen readers announce the correct actions for the **Annotate** and **Close Annotate** buttons. NVDA no longer says "Preview button pressed"; it announces the button name so users know when annotation mode starts or ends. (SITES-25268) MAJOR
 * The Annotation modal now shows a clear **Submit** action. Authors can add a comment and submit it with the pen icon button or dismiss the modal with `Esc`, without guessing the flow. (SITES-25269) MAJOR
 * Annotation entry includes explicit action buttons. The dialog box exposes **Submit** to save the note and **Cancel** to close it, both keyboard accessible and announced by assistive technology. Authors no longer need to rely on clicking outside the dialog box or pressing only `Esc` to finish. (SITES-25281) MAJOR
-* Annotation mode now keeps keyboard focus inside the overlay and its toolbar. The page behind the overlay no longer receives focus when authors press Tab, so users stay oriented and can navigate annotations without jumping to underlying content. (SITES-25282) MAJOR
+* Annotation mode now keeps the keyboard focus on the overlay and its toolbar. The page behind the overlay no longer receives focus when authors press Tab, so users stay oriented and can navigate annotations without jumping to underlying content. (SITES-25282) MAJOR
 * The device selector in Edit Layout works as designed. When two device options have similar widths (for example, iPhone 8 Plus next to Galaxy 7), the selected button shows a tooltip to reveal the full label while both buttons remain visible and accessible. (SITES-25285) MAJOR
 * At 200% zoom, Edit Layout no longer overruns the page. The toolbar renders fully and exposes horizontal scroll when needed, restoring access to previously hidden controls for low-vision users. (SITES-25288) MAJOR
 * Tab order in Layout Preview now moves from the primary toolbar directly to the Demographic toolbar. Keyboard and screen-reader users can traverse controls in a predictable sequence instead of jumping to the secondary toolbar. The change aligns with WCAG 2.4.3 Focus Order. (SITES-25305) MAJOR
 * Zooming the page to 200% no longer hides part of the Demographic toolbar. The toolbar section manages overflow and provides scrolling in its own region, keeping every control visible and operable at high magnification. (SITES-25309) MAJOR
-* Text inputs in the Demographics toolbar now expose proper accessible names. Each field includes a unique ID with a programmatic label, so screen readers announce the field purpose and users can navigate by label. The visible label sits near the control to improve low-vision readability. (SITES-25316) MAJOR
+* Text inputs in the Demographics toolbar now expose proper accessible names. Each field includes a unique ID with a programmatic label, so screen readers announce the purpose of the field and users can navigate by label. The visible label sits near the control to improve low-vision readability. (SITES-25316) MAJOR
 * The Edit button now announces the correct action to screen readers in the secondary toolbar. Activating it reads "Edit" instead of the unrelated "Preview button pressed," which removes confusion during keyboard navigation. (SITES-25320) MAJOR
 * The Demographics toolbar Cart slider now exposes a proper accessible name. Screen readers announce "Cart total" and speech-input tools can target the control by name, improving compliance with WCAG 4.1.2 (Name, Role, Value). (SITES-25322) MAJOR
 * The Demographics toolbar slider now keeps focus when authors change the value with the arrow keys. Focus no longer jumps to the Cart button, so keyboard users adjust the value continuously and screen readers announce each change. (SITES-25324) MAJOR
-* Search Assets now reflows cleanly at 320 px (roughly 400% zoom). The modal keeps headings, fields, and actions readable and non-overlapping, so authors can search without horizontal scrolling. (SITES-25330) MAJOR
+* Search Assets now reflow cleanly at 320 px (roughly 400% zoom). The modal keeps headings, fields, and actions readable and non-overlapping, so authors can search without horizontal scrolling. (SITES-25330) MAJOR
 * The Assets panel in the editor follows a logical focus sequence. Keyboard users tab across each thumbnail and can access the panel exit controls. The change removes skips and improves compliance with WCAG 2.4.3. (SITES-25360) MAJOR
 * AEM updates the **Lists** and **Paragraphs** buttons in the Teaser modal's rich text editor to expose their expanded and collapsed state. The buttons now toggle `aria-expanded` and announce the state change to screen readers. Authors get clear feedback and avoid guessing before opening or closing the format menus. (SITES-25365) MAJOR
-* AEM announces the loading state in the Teaser modal. The modal now exposes a live status message while content loads, so NVDA and JAWS speak "Loading, please wait." Authors receive clear feedback and avoid interacting with the dialog box before it is ready. (SITES-25366) MAJOR
+* AEM announces the loading state in the Teaser modal. The modal now exposes a live status message while content loads, so NVDA and JAWS speak "Loading, please wait." Authors should receive clear feedback and avoid interacting with the dialog box before it is ready. (SITES-25366) MAJOR
 * Improves status messaging in the Asset tab of the Link selection dialog box. When an error occurs, the component injects a readable status update and keeps keyboard focus stable, letting NVDA/JAWS inform users right away. (SITES-25368) MAJOR
-* Corrected UI behavior in the Note panel for very narrow viewports. At 320 px the title and Add control previously collided; the toolbar now reflows and preserves clear separation between elements. Authors can operate the controls without loss of information or function. (SITES-25376) MAJOR
-* Fixed a lingering error state in the **Teaser** dialog box's **Links & Actions** tab. After authors enable **Call to Action** and correct blank or invalid fields, the tab clears its error styling and icon and removes aria-invalid. Screen readers no longer announce an error once the fields validate. (SITES-25527) MAJOR
+* Corrected UI behavior in the Note panel for very narrow viewports. At 320 px, the title and Add control previously collided; the toolbar now reflows and preserves clear separation between elements. Authors can operate the controls without loss of information or function. (SITES-25376) MAJOR
+* Fixed a lingering error state in the **Teaser** dialog box's **Links & Actions** tab. After authors enable **Call to Action** and correct blank or invalid fields, the tab clears its error styling and icon and removes `aria-invalid`. Screen readers no longer announce an error once the fields validate. (SITES-25527) MAJOR
 * Error handling in Sites Admin forms now meets accessibility expectations. When validation fails, the page shows the error immediately, shifts focus to a usable message target, and exposes the text to screen readers such as JAWS. (SITES-27138) MAJOR
 * Creating a folder in Sites now shows a clear confirmation toast. JAWS announces the message through the live region, so authors receive immediate, accessible feedback after the action. (SITES-27141) MAJOR
-* Resolved an accessibility gap where images in authoring dialog boxes rendered without alt text. The dialog box now provides descriptive alt text where needed and empty alt for purely visual elements, restoring compliant behavior for JAWS and other screen readers. (SITES-27153) MAJOR
+* Fixed an accessibility gap where images in authoring dialog boxes rendered without alt text. The dialog box now provides descriptive alt text where needed and empty alt for purely visual elements, restoring compliant behavior for JAWS and other screen readers. (SITES-27153) MAJOR
 * Improved error handling in authoring dialog boxes. When a configuration error occurs, the UI shows explicit text and triggers a screen-reader announcement by way of an alert region. Authors receive immediate feedback and can correct the problem without losing context. (SITES-27155) MAJOR
 * Fixed a Reflow accessibility defect in Sites Admin. At 400% browser zoom, the toolbar and grid controls overlapped and pushed key actions off-screen, which blocked keyboard navigation and screen-reader use. The layout now reflows correctly so the search, filter, and action buttons remain visible and operable at 400% zoom. (SITES-27238) MAJOR
 * Corrected low contrast in the lock status message shown in the page Lock/Unlock workflow. The message now meets a 4.5:1 ratio, improving readability and ADA compliance for authors. (SITES-27270) MAJOR
 * Added accessible names to the checkmark icons in the **Effective Permissions** dialog box. JAWS now announces the icons and their meaning, improving keyboard navigation and ADA compliance. (SITES-27272) MAJOR
 * Hidden header navigation accepted focus and confused both sighted and screen-reader users. The update disables focus on collapsed controls and exposes only visible items. Navigation stays predictable and meets WCAG 2.4.3. (SITES-35224) MAJOR
 
-
-
-
-
-* The Description RTE blocked forward Tab navigation and broke dialog flow. The fix restores standard keyboard movement. Authors continue past the field with a single Tab and keep selection order predictable. (SITES-35228)
+* Fixed the folder thumbnail icons in Sites Admin to behave as decorative images. The update removes the image role and applies empty alt text, so assistive technology ignores the icons and reads only meaningful labels. (SITES-2852)
+* Adobe increased the color contrast for the References text in the Sites home page. The text now meets WCAG 2.1 AA with a ratio of at least 4.5:1 and reads clearly on light themes and bright screens. (SITES-24755)
+* The References rail landmark now announces its name to screen readers. The region exposes a unique `aria-label` ("References rail"), which improves landmark navigation and distinguishes it from other regions. (SITES-24973)
+* The Description RTE blocked forward Tab navigation and broke dialog flow. The fix restores standard keyboard movement. Authors continue past the field with a single Tab and keep the selection order predictable. (SITES-35228)
 * Authoring controls lacked accessible names and exposed raw icon text, which confused JAWS. The fix adds explicit ARIA labels and standard roles. Announcements sound correct and align with accessibility expectations. (SITES-35227)
 * The Categories drop-down list lacked a specific label, so JAWS spoke a generic "images button menu." The update names the control "Categories" and defines its role. Screen-reader users hear an accurate label and understand the available choices. (SITES-35226)
 * The Properties dialog box displayed a data grid that screen readers treated as plain text. JAWS and NVDA missed focus and failed to announce rows and columns. The fix adds real table semantics and ARIA roles. Screen readers now recognize the table and track focus correctly. (SITES-35225)
@@ -159,27 +167,26 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 * Basic tab form fields failed to show helpful error text. The form now displays clear, inline messages and links them to the field for screen readers. Keyboard and assistive-technology users get immediate guidance to fix input. (SITES-32480)
 * The Multifield used in a custom component exposed unlabeled icon buttons and inconsistent tab order. JAWS/NVDA only announced "button" or skipped controls, which blocked keyboard operation. The update provides descriptive names for Add, Remove, and Move, normalizes tab stops, and announces list updates to meet ADA expectations. (SITES-30660)
 * Quick Publish now returns a clear success notification. The dialog box closes, a toast confirms the action, and screen readers announce the message so authors do not miss the result. (SITES-26912)
-* No change required. Adobe reviewed the claim that the search icon overlaps nearby text. The header included a customer-added label; vanilla AEM renders only the icon. A clean instance shows correct layout at 100% zoom, so the bug was closed as out of scope. (SITES-26910)
+* No change required. Adobe reviewed the claim that the search icon overlaps nearby text. The header included a customer-added label; vanilla AEM renders only the icon. A clean instance shows the correct layout at 100% zoom, so the bug was closed as out of scope. (SITES-26910)
 * Create Page themes no longer hide the focus state. Aquatic and Desert styles render a consistent highlight on the **Basic** tab and adjacent tabs during keyboard navigation. This change restores predictable, perceivable focus feedback for low-vision users. (SITES-26907)
 
 
 
 #### Admin User Interface{#sites-adminui-6524}
 
-* Screen-reader users received no navigational help in the **Catalog System Blueprint** grid. JAWS only announced the cell position and then fell silent. The release adds accessible guidance and roles, enabling JAWS to read the list context, the selected item, and the required arrow/Space controls. (SITES-30661)
+Screen-reader users received no navigational help in the **Catalog System Blueprint** grid. JAWS only announced the cell position and then fell silent. The release adds accessible guidance and roles, enabling JAWS to read the list context, the selected item, and the required arrow/Space controls. (SITES-30661)
 
 #### Classic UI{#sites-classicui-6524} 
 
-* Classic UI checkboxes lost their labels and showed blank options. Dialog boxes also displayed encoded HTML such as `<br>`. The update restores checkbox labels and decodes markup, so dialog boxes read correctly. (SITES-31822) MAJOR
+Classic UI checkboxes lost their labels and showed blank options. Dialog boxes also displayed encoded HTML such as `<br>`. The update restores checkbox labels and decodes markup, so dialog boxes read correctly. (SITES-31822) MAJOR
 
+<!--
 #### [!DNL Content Fragments]{#sites-contentfragments-6524}
-
-
-
+-->
 
 #### [!DNL Content Fragments] - Admin{#sites-admin-6524}
 
-* Parentheses in a Content Fragment name caused the References panel to misreport usage. Authors saw 0 even when other fragments referenced it. The fix corrects the path parsing for "(" and ")" and surfaces the proper non-zero count and entries. (SITES-35078) CRITICAL
+Parentheses in a Content Fragment name caused the References panel to misreport usage. Authors saw 0 even when other fragments referenced it. The fix corrects the path parsing for "(" and ")" and surfaces the proper non-zero count and entries. (SITES-35078) CRITICAL
 
 
 #### [!DNL Content Fragments] - Fragments Editor{#sites-fragments-editor-6524}
@@ -188,228 +195,235 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 * Editing a Content Fragment and going back to the Assets list hid the fragment or the whole folder. The list failed to refresh after closing the editor. The fix now refreshes the list reliably and keeps the edited fragment visible without a hard reload. (SITES-35374) CRITICAL
 * Content Fragment Editor failed to open the Polaris Asset Selector because required IMS scopes were removed. The fix restores the minimal scopes and re-establishes the Delivery connection. Asset browsing and selection work again, without HTTP 500 errors. (SITES-35837)
 
-
-
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6524}
 
-* After each deployment, valid GraphQL queries started returning `GraphQL_QueryValidationError`. The endpoint kept a stale schema until teams flushed caches or restarted. The fix refreshes the GraphQL schema and persisted-query registry during deployment, restoring normal responses immediately. (SITES-34301) CRITICAL
+After each deployment, valid GraphQL queries started returning `GraphQL_QueryValidationError`. The endpoint kept a stale schema until teams flushed caches or restarted. The fix refreshes the GraphQL schema and persisted-query registry during deployment, restoring normal responses immediately. (SITES-34301) CRITICAL
 
-
+<!--
 #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6524}
 
-* A ()
 
 #### [!DNL Content Fragments] - REST API{#sites-restapi-6524}
-
-* A ()
 
 
 #### Component Console{#sites-component-console-6524}
 
 
-
 #### Core Backend{#sites-core-backend-6524}
-
-* F
 
 
 #### Core Components{#sites-core-components-6524}
 
-* A ()
 
 #### Campaign integration{#sites-campaign-integration-6524}
+-->
 
-* A ()
 
 #### ContentHub {#sites-contenthub-6524}
 
-* ContextHub no longer injects a second jQuery copy on publish pages. The segment-engine client library drops the cq.shared dependency that pulled jQuery 1.12.4, so sites load one consistent jQuery and front-end code works reliably. (SITES-30404) MAJOR
+ContextHub no longer injects a second jQuery copy on publish pages. The segment-engine client library drops the cq.shared dependency that pulled jQuery 1.12.4, so sites load one consistent jQuery and front-end code works reliably. (SITES-30404) MAJOR
 
 #### Experience Fragments{#sites-experiencefragments-6524}
 
+* Experience Fragments now localize the warning shown when no Adobe Target configuration exists. The message displays in the author's locale instead of English, so export and activation steps read correctly for global teams. (SITES-11868) MAJOR
+* Publishing an Experience Fragment variation now shows a localized error message when no cloud service attaches to the variation. The message appears in the UI in the user's language instead of an English-only string. (SITES-20293) MAJOR
 * Exporting an Experience Fragment to Target crashed with `Attempt to modify attribute at illegal index: -1`. Web vitals instrumentation conflicted with the exporter and corrupted attribute handling. The fix hardens attribute processing and removes that conflict. Exports succeed and the fragment renders in Target. (SITES-31891) MAJOR
 
+* Experience Fragment properties now localize the **References** tab. Labels and column headings such as "Page," "Page path," and "Variation title" show in the author's language. This change removes English-only strings and keeps the properties view consistent for global teams. (SITES-11203)
+* The **Variations** > **Create workflow** now shows complete translation text. The dialog box handles long locale strings by wrapping and sizing content correctly, eliminating clipped or cut-off labels. (SITES-19304)
+* Experience Fragment properties now localize the Social Media status labels. Authors see status values such as Posted and Not Posted in their selected language across all locales. This change removes English-only strings that caused confusion during review. (SITES-20014)
+
+<!--
 #### Foundation Components (Legacy){#sites-foundation-components-legacy-6524}
-
-* A ()
-
+-->
 
 #### Launches{#sites-launches-6524}
 
-* Deleting a very large Launch froze the repository. The job queued too many removals and starved other requests. The fix batches deletes and yields between chunks, so cleanup completes while the system stays responsive. (SITES-32004) MAJOR
+* Deleting a very large Launch froze the repository. The job queued too many removals and starved other requests. The fix now batches delete and yields between chunks, so cleanup completes while the system stays responsive. (SITES-32004) MAJOR
+
+* Launch Configuration > Properties shows working Company and Property drop-downs. **Save** and **Close** honors completed fields, and the Title validation no longer triggers errors on Company or Property. (CQ-4359853)
+* Required checks in IMS Configuration run on update, not only on creation. Empty values in fields like Client ID or Client Secret display an error and halt the save until a valid value is entered, preventing reuse of the prior value. (CQ-4359938)
+* Launch creation shows translated validation and error strings. English-only messages for creation failures and missing source pages no longer appear. Authors see clear, locale-correct feedback during Launch setup. (SITES-13085)
 * Launch promotion updates page properties `jcr:title`, `jcr:description`, and `cq:redirectTarget` on the source page. The change removes property exclusions in MSM rollout config and workflow logic. Campaigns, translations, and SEO keep consistent titles, descriptions, and redirects. (SITES-34509)
 * The Launch action ignored scope and included pages that shared the same parent as the target section. The update enforces subtree boundaries and promotes only the chosen page and its descendants. Unrelated pages keep their existing content. (SITES-34344)
-* Fixed nested Launch auto-promotion that stopped at Author and skipped the Publish tier. Auto-promotion for a child launch publishes the updated pages to the configured publishers and completes the Full Launch as scheduled. (SITES-30420)
+* Fixed nested Launch auto-promotion that stopped at Author and skipped the Publishing tier. Auto-promotion for a child launch publishes the updated pages to the configured publishers and completes the Full Launch as scheduled. (SITES-30420)
 
+<!--
 #### Link Checker{#sites-link-checker-6524}
-
-* A ()
+-->
 
 #### MSM - Live Copies{#sites-msm-live-copies-6524}
 
 * A folder-level rollout failed to create live copies for Experience Fragments under that folder. Individual rollouts worked, which broke bulk workflows. The change aligns folder rollout with page behavior and propagates relationships and references across the subtree. (SITES-35161)
-* After deleting a component in a Live Copy, **Enable Inheritance** broke with a JavaScript error and the component stayed missing until a second try. The update fixes the post-delete reload to carry the right parameters and replaces the obsolete alert call. The dialog box opens cleanly and inheritance restores on the first attempt. (SITES-31387)
-* The Rollout wizard accepted **Later** with no date. Authors advanced and created a rollout without a schedule. The update enforces date selection and displays a clear prompt. The **Continue** action stays disabled until a date exists. (SITES-31374)
+* After deleting a component in a Live Copy, **Enable Inheritance** broke with a JavaScript error and the component stayed missing until a second try. The update fixes the post-deleted reload to carry the right parameters and replaces the obsolete alert call. The dialog box opens cleanly and inheritance restores on the first attempt. (SITES-31387)
+* The Rollout Wizard accepted **Later** with no date. Authors advanced and created a rollout without a schedule. The update enforces date selection and displays a clear prompt. The **Continue** action stays disabled until a date exists. (SITES-31374)
 
 
 #### Page Editor{#sites-pageeditor-6524}
 
-* Opening Content Tree on a page with a Personalization Container returned an empty panel and a console null-reference error. Authors could not pick or configure components. The update removes the error and re-enables the tree and component interactions. (SITES-34336) MAJOR
+* Opening Content tree on a page with a Personalization Container returned an empty panel and a console null-reference error. Authors could not pick or configure components. The update removes the error and re-enables the tree and component interactions. (SITES-34336) MAJOR
 * AEM 6.5 SP23 broke mode switching in the Page Editor. Clicking **Layout**, **Developer**, or **Targeting** left the editor stuck in **Edit** mode and threw a console `TypeError`. The update restores toolbar mode changes and clears the error. (SITES-34536)
-* The Page Editor jumped away from the insertion point when authors added components in long containers. The update tunes overlay timing and scroll handling. The view holds its place and the new component remains in sight and ready to configure. (SITES-32621)
-* Custom tag labels failed in Page Editor and the UI always displayed "Tags." The predicate now evaluates `fieldLabel` first and `labelText` second, then applies the default. Authors see the label they set. (SITES-32278)
-* Canceling the Location filter in Sites misaligned the OmniSearch icon and overlapped it with the placeholder text. The icon became unclickable. The fix realigns the icon and restores its hit area, so mouse and keyboard both trigger search. (SITES-30946)
+* The Page Editor jumped away from the insertion point when authors added components in long containers. The update tunes overlay timing and scrolling handling. The view holds its place and the new component remains in sight and ready to configure. (SITES-32621)
+* Custom tag labels failed in Page Editor and the UI always displayed "Tags." The predicate now evaluates `fieldLabel` first and `labelText` second, then applies the default. Authors see the label that they set. (SITES-32278)
+* Canceling the Location filter in Sites misaligned the OmniSearch icon and overlapped it with the placeholder text. The icon became unclickable. The fix realigns the icon and restores the hit area, so mouse and keyboard both trigger search. (SITES-30946)
 * Choosing Developer left the page in a bad state and blocked authoring on that page. The panel vanished and the UI stopped responding. The update repairs the mode-toggle logic and cache handling, keeping the page editable and showing Developer data immediately. (SITES-30922)
 * Clicking **Clear** in **Insert New Component** did not remove the search query and left the list filtered to a single item (Accordion). The fix resets the query and refreshes the list. All allowed components appear again. (SITES-30921)
 
-
+<!--
 #### Replication{#sites-replication-6524}
-
-* A ()
-
+-->
 
 #### Rich Text Editor{#sites-rte-6524}
 
-* In full-screen, the Rich Text Editor hid the Spell Check result behind the dialog box when no errors existed. The update brings the result panel to the front and keeps messages and suggestions visible. Authors review and accept corrections without leaving full-screen. (SITES-32366)
-* Rich Text Editor images now honor the selected alignment. Authors set left, center, or right in the image dialog and the editor applies that choice consistently in the output. The change also stabilizes the Alt Text dialog so alt text and alignment save and persist across re-edits. (SITES-30634)
-
-
+* In full-screen, the rich text editor hid the Spell Check result behind the dialog box when no errors existed. The update brings the result panel to the front and keeps messages and suggestions visible. Authors review and accept corrections without leaving full-screen. (SITES-32366)
+* Rich text editor images now honor the selected alignment. Authors set left, center, or right in the image dialog and the editor applies that choice consistently in the output. The change also stabilizes the Alt Text dialog so alt text and alignment save and persist across re-edits. (SITES-30634)
 
 #### Universal editor {#sites-universal-editor-6524}
 
 * Configuring the Query Token Authentication Handler confused users because labels didn't match the fields. The UI pulled text from the path and displayed the wrong names. The fix restores clear, accurate labels for service ranking and query token options. (SITES-31305)
 
+
 ### [!DNL Assets]{#assets-6524}
 
-* T
+
 
 #### [!DNL Dynamic Media]{#assets-dm-6524}
 
-
-
-
+* The **Select Thumbnail** option for videos now behaves correctly in AEM Assets - Dynamic Media. The click opens the dialog box and allows selection of a thumbnail from Assets, eliminating the previous dead-click behavior and removing the limitation to video-frame extraction only. (ASSETS-58926) MAJOR
 
 
 ### [!DNL Forms]{#forms-6524}
 
-#### Forms Designer 
+>[!NOTE]
+>
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, November 27, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 
+<!--
+#### Forms Designer 
 
 #### Forms
 
-
 #### Forms JEE 
 
-
- 
 #### Forms Captcha {#forms-captcha-6524} 
 
 #### XMLFM {#forms-xmlfm-6524}
 
-* A ()
-
-[!DNL Adaptive Forms] {#adaptive-forms-6524}
-
-* A ()
-
-
 #### [!DNL Forms Designer] {#forms-designer-6524}
 
-* A ()
+-->
+
+
 
 
 ### Foundation {#foundation-6524}
 
-* F
 
 #### Apache Felix {#foundation-apachefelix-6524}
 
+Updated the Felix Web Console bundle to include FELIX-6747. This patch corrects response handling that previously broke page rendering and authentication in the OSGi Web Console. The console loads consistently and no longer throws IllegalStateException entries in the logs. (NPR-42730)
 
-
-
-
+<!--
 #### Campaign{#foundation-campaign-6524}
-
-* A ()
-
 
 #### Cloud Services{#foundation-cloudservices-6524}
 
-* A ()
-
-
 #### Communities {#foundation-communities-6524}
-
-* A ()
-
 
 #### Content distribution{#foundation-content-distribution-6524}
 
-* A ()
-
-
 #### CRX {#foundation-crx-6524}
-
-* A ()
-
+-->
 
 #### Granite{#foundation-granite-6524}
 
-* R
+* Raw or English-only strings no longer appear in the **Remove Access Control** dialog box. The dialog box presents fully localized content across supported languages for consistent accessibility. (GRANITE-48479) MAJOR
+* The Help icon now exposes a concise label to assistive technologies. JAWS reads "Help button" and no longer adds extraneous "menu" wording. This update brings the control into WCAG 4.1.2 conformance and simplifies keyboard and screen-reader use. (GRANITE-55360) MAJOR
+* Restore the HTL script engine factory after eliminating a dependency loop in OSGi services. Environments start cleanly, HTL rendering works across author pods, and administrators no longer encounter startup failures or missing scripting services. (GRANITE-58276) MAJOR
 
+* The header Search box no longer overlays the magnifying-glass icon on the placeholder text. The placeholder displays with proper padding and remains fully readable across browsers. (GRANITE-54391)
+* Authors see readable labels in Autocomplete fields rather than raw values in the dialog box. The implementation keeps the value persisted in JCR and improves clarity for single- and multi-select configurations that source options dynamically. (GRANITE-57615)
+* Edit mode stays functional when htmlLibraryManager.debug is set to true. The change restores proper clientlib resolution and loading, allowing developers to use the HTML Library Manager's debugging tools during authoring. (GRANITE-58002)
+* Replication Agent editing page no longer throws a JavaScript error in the Classic UI. The page opens, displays all tabs, and saves agent settings without console errors. (GRANITE-58302)
+* Corrected the health-status aggregation in System Overview. The view now updates after individual checks run and displays the right counts. Operators see "OK" when Security and Maintenance checks pass, instead of an incorrect "2 errors" banner. (GRANITE-61482)
+* Stopped `CodeUpgradeTasks` from running during AEM 6.5 LTS (Long Term Support) upgrades. The upgrade now proceeds without task-triggered repository changes or reconfigurations. This fix reduces upgrade risk and prevents avoidable downtime. (GRANITE-61486)
+* In authoring dialog boxes, required fields now show a single, accurate validation error. The message uses the field's own label when present, and falls back to a generic prompt when no label exists. Duplicate and mismatched messages across fields no longer appear. (GRANITE-59531)
+* The page creation wizard dialog box now re-validates required fields on every interaction, including tab changes and multifield edits. The **Create** button stays disabled until authors complete all required inputs, and the wizard shows inline errors for missing values. (GRANITE-58826)
 
 #### Integrations{#foundation-integrations-6524}
 
-* A ()
+Publishing AEM Target activities no longer fails when authors set start and end dates. The integration sends standards-compliant timestamps that include the time zone, so Target processes the activity payload and completes the sync as expected. (CQ-4360733)
 
-
+<!--
 #### Jetty{#foundation-jetty-6524}
-
-
-
-
+-->
 
 #### Localization{#foundation-localization-6524}
 
-* Sites Admin Column view cut off localized labels in French and Spanish. "End Time" and "Off Time" appeared truncated and showed no tooltip. Adobe corrected the translations and restored the tooltip on hover, so labels read in full. (SITES-31318)
-* The **Move** dialog box in Sites showed raw i18n keys instead of readable labels. Items such as "Referencing pages," "Created on," "Created by," and "Path" looked garbled. The fix hooks the dialog box to the correct dictionaries and supplies translations, with English fallback. (SITES-30881)
+* Localization in zh-CN removes an ambiguous phrase in the reference-gathering status shown during asset operations such as Move. The UI now displays `正在获取对 [[0]] 项的引用`, providing accurate meaning and consistent terminology. (CQ-4354648)
+* Creating a smart collection no longer translates saved-search keywords on refresh. Authors who enter English terms see that those same terms are retained and the collection continues to return consistent results. (NPR-43158)
+* Fixed truncated tooltip text in the Image panel. The "Display caption as pop-up" description renders completely in all supported locales, improving guidance for non-English authors. (SITES-10490)
+* Sites Admin Column view truncated localized labels in French and Spanish. "End Time" and "Off Time" appeared truncated and showed no tooltip. Adobe corrected the translations and restored the tooltip on hover, so labels read in full. (SITES-31318)
+* The **Move** dialog box in Sites showed raw i18n keys instead of readable labels. Items such as "Referencing pages," "Created on," "Created by," and "Path" looked garbled. The fix hooks the dialog box to the correct dictionaries and supplies translations, with an English fallback. (SITES-30881)
 
-
+<!--
 #### Oak {#foundation-oak-6524}
-
-* A ()
-
+-->
 
 #### Platform{#foundation-platform-6524}
+
+* Validation errors now show clear, descriptive text instead of only an icon. Screen readers announce the message automatically when it appears, so users don't need to navigate to an icon to learn what went wrong. (CQ-4359152) MAJOR
+
+
+* Hover labels in the Navigation Bar no longer remain on screen after the cursor moves off the control. The UI hides these tooltips immediately on blur or mouse out, preventing visual clutter and misclicks. (CQ-4360030)
+* In Sites, toolbar actions stop creating a second pop-up on repeat clicks. The second click closes the existing pop-up and leaves only one instance visible, eliminating overlap and distraction. (CQ-4360038)
+* The outdated 2024 copyright text no longer appears. The Login page and the **Help** > **About AEM** pop-up show 2025, and AEM reads the year programmatically to avoid manual edits. (CQ-4360042)
+* Clicking a tooltip in the AEM header bar no longer triggers the underlying action. Pop-ups open only when users click the actual button, preventing accidental dialog boxes when interacting with tooltip text. (CQ-4360105)
+* Year rollover no longer leaves outdated copyright text. The Login screen and the **Help** > **About AEM** dialog box derive the year from the system clock and render the up-to-date value every time the UI loads. (CQ-4360173)
+* Header bar pop-ups now toggle correctly. Clicking the same action (for example, **Search** or **Filter**) closes the open pop-up instead of opening another overlay. The change prevents stacked pop-ups and returns focus to the header control. (NPR-42891)
+* Projects and Inbox calendar view renders correctly. Switching views no longer blanks the page; the calendar loads and shows scheduled items. (NPR-42968)
 
 
 
 #### Security{#foundation-security-6524}
 
-* A
+Assets Metadata Editor now re-initializes after Relate or Unrelate. The form refreshes fields, validation, and visibility without a page reload. (NPR-42942)
 
 #### Sling{#foundation-sling-6524}
 
-* A ()
+* Corrected caching behavior on SAML-protected pages. AEM adds the right cache-control and varies metadata for authenticated sessions so proxies and the Dispatcher skip caching personalized responses. Anonymous content still caches normally, while signed-in views remain user-specific. (NPR-42640) BLOCKER
+
+* The platform upgrades the core Sling Engine from 2.16.2 to 2.16.6. The newer engine hardens input validation and stabilizes request processing under load. (NPR-43105)
 
 #### SPA editor {#foundation-spa-editor-6524}
 
-* Turning on Sling Main Servlet **Check Content-Type** overrides broke `.model.json` exports in AEM 6.5 SP21/22. Requests returned HTML or errors because the exporter flipped the type mid-chain. The fix emits JSON with the correct type from the start, so `.model.json` works on Author and Publish environments. (SITES-32634)
+Turning on Sling Main Servlet **Check Content-Type** overrides broke `.model.json` exports in AEM 6.5 SP21/22. Requests returned HTML or errors because the exporter flipped the type mid-chain. The fix emits JSON with the correct type from the start, so `.model.json` works on Author and Publish environments. (SITES-32634)
 
 
 #### Translation{#foundation-translation-6524}
+
+* Added a reindex operation for Translation Project status. Admins can rebuild the backing index when the status view goes out of sync, restoring results and eliminating Oak traversal warnings. The page loads faster and shows current job states. (NPR-42699) MAJOR
+* Fixed a regression where XLIFF imports reported success but left JSON dictionary files unchanged. Imports now target the correct i18n path and persist translations so localization roundtrips are complete without manual edits. (NPR-42989) MAJOR
+
+
+* Translation Rules XML now works as configured. The translation framework honors exception rules and applies to `include` and `exclude` patterns correctly during job creation. Translation requests no longer send excluded content. (NPR-42761)
 
 
 
 #### User interface{#foundation-ui-6524}
 
+* Fixed a UI regression that disabled inputs in the Adobe Stock License dialog box. The dialog box now behaves normally, accepts text in required fields, and completes the Stock asset licensing flow from the Asset Details view. (NPR-42748) BLOCKER
+
+* Fixed group visibility in the author environment. The Groups console no longer stops at about 41 results and returns the full set of memberships for each user. This fix restores consistent behavior after cumulative fixes and keeps current security hardening. (NPR-42749)
 
 
+<!--
 #### WCM{#foundation-wcm-6524}
 
 
 
 #### Workflow{#foundation-workflow-6524}
+-->
 
 
 
@@ -526,7 +540,7 @@ The preferred editors for managing headless content in AEM are now:
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
 * **Issue with JSP scripting bundle in AEM 6.5.21-6.5.24 and AEM 6.5 LTS GA**
-AEM 6.5.21, 6.5.22, 6.5.23, 6.5.24, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
+AEM 6.5.21 to 6.5.24, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
 
   When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
 
@@ -537,7 +551,7 @@ AEM 6.5.21, 6.5.22, 6.5.23, 6.5.24, and AEM 6.5 LTS GA ship with the `org.apache
 
   When this error occurs, the only recovery method is to restart the AEM instance.
 
-  Contact Adobe Customer Support and reference this release note for a resolution.
+  Contact customer support at Adobe and reference this release note for a resolution.
 
 * **Related to Oak**
   From Service Pack 13 and above, the following error log has begun to appear which affects the persistence cache:
@@ -639,7 +653,7 @@ The following issues have a hotfix available for download and installation. You 
 
 * **FORMS-14521**: If a user tries to preview a draft letter with saved XML data, it gets stuck in `Loading` state for some specific letters.
 
-* AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
+* AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This upgrade delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
 
 #### Other Known Issues {#aem-forms-other-known-issues}
 
@@ -676,7 +690,7 @@ The following issues have a hotfix available for download and installation. You 
 
     ```
 
-* FORMS-21378: When Server-Side Validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
+* FORMS-21378: When server-side validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
 
 
 
