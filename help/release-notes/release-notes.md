@@ -54,24 +54,17 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 ### [!DNL Assets] {#assets-sp24}
 
-* Repeated warning log entries are generated during scheduler executions. (ASSETS-52554)
-
-* After updating to version 6.5.23.0, sorting folders by modification date in Card View caused difficulties in locating recently modified assets for on-premise deployments. (ASSETS-56946)
-
-* The Collection Properties window does not close even after clicking the Cancel button. (ASSETS-48504)
-
-* Title sorting is not working in the List View. (ASSETS-50716)
+* After updating to version 6.5.23.0, sorting folders by modification date in Card View caused difficulties in locating recently modified assets for on-premise deployments. (ASSETS-56946) MAJOR
+* Repeated warning log entries are generated during scheduler executions. (ASSETS-52554) MAJOR
+* Title sorting is not working in the List View. (ASSETS-50716) MAJOR
+* The Collection Properties window does not close even after clicking the Cancel button. (ASSETS-48504) MAJOR
 
 * An *Invalid URL* error occurs when attempting to annotate assets in AEM 6.5.22. (NPR-42684)
-
-* The Assets Metadata Editor form does not reinitialize after performing relate or un-relate actions.(ASSETS-52207)
-
+* The Assets Metadata Editor form does not reinitialize after performing relate or unrelate actions. (ASSETS-52207)
 * When assets from the remote DAM resync to the Sites local, the published status of the assets incorrectly updates to `Not published`. (ASSETS-48958)
-
 * Issues encountered while upgrading from SP23 to 6.5 LTS version. (ASSETS-50541)
 
 ### [!DNL Sites]{#sites-6524}
-
 
 #### Accessibility {#sites-accessibility-6524}
 
@@ -85,7 +78,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 * Keyboard users can operate formatting menus in the Teaser modal. Pressing `Enter` or `Space` on **List** or **Paragraph Format** opens the pop-up, Arrow keys navigate options, and `Enter` applies the selection. `Escape` closes the menu and restores focus to the triggering control, producing a consistent toolbar workflow. (SITES-25235) CRITICAL
 * The Swatch color picker popover now stays within the viewport at 320 px. The popover shows all color rows and supports scrolling, so authors can select any swatch on small screens. (SITES-25274) CRITICAL
 * Demographic toolbar drop-down menus now work fully with the keyboard. Opening a menu moves focus to the first option, arrow keys navigate the list, and Esc/Tab close or advance without dumping focus to the toolbar. Interactive items use proper semantics so NVDA and other readers announce options correctly. (SITES-25310) CRITICAL
-* Add Component in the Content tree works as designed on AEM 6.5 SP24. The error reported earlier came from missing author permissions in a local setup, not from AEM. Authors with edit rights can activate the button and add components by keyboard or mouse. (SITES-25312) CRITICAL
+* Add Component in the Content tree works as designed on AEM 6.5 SP24. The error initial error came from missing author permissions in a local setup, not from AEM. Authors with edit rights can activate the button and add components by keyboard or mouse. (SITES-25312) CRITICAL
 * Keyboard and screen-reader access in the Demographic toolbar now works reliably. Authors using NVDA can traverse **Commerce**, **Persona**, and 88 with arrows, observe clear focus feedback, and understand which tab is active. (SITES-25326) CRITICAL
 
 * The **Skip to content** link now moves keyboard focus to the main content heading. Focus stays visible on a uniquely identified target, so screen readers announce the correct section. The change meets WCAG 2.4.1 and 2.4.3. (SITES-24061) MAJOR
@@ -96,7 +89,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 * The Assets side rail now includes a clear **Close** control and returns focus to the toggle button. Keyboard and screen-reader users dismiss the panel immediately instead of tabbing through every control. The change reduces keystrokes and matches expected panel behavior. (SITES-24489) MAJOR
 * The ARIA tab list in the Sites Page Editor includes a descriptive name. Screen readers now identify the control as a tab list and read the correct label, letting users find the right set of tabs and move between them reliably. (SITES-24492) MAJOR
 * Search in the Editor side rail now announces results to screen readers. As users type, a live status message reports the number of matches and updates without moving focus. Keyboard users discover the results immediately. (SITES-24506) MAJOR
-* Row selection in List View improves for assistive-technology users. The checkbox exposes a meaningful name that was derived from the row Title, so announcements stay brief and describe the action correctly. (SITES-24514) MAJOR
+* Row selection in List View improves for assistive-technology users. The checkbox exposes a meaningful name that is derived from the row Title, so announcements stay brief and describe the action correctly. (SITES-24514) MAJOR
 * Corrected List View accessibility names. The table removes `aria-label` from non-interactive elements and assigns the label to the actionable link or button. Screen reader users now hear accurate, non-duplicated labels across the column. (SITES-24515) MAJOR
 * The sticky header stopped obscuring the teaser modal dialog box during high-zoom use. Content remains readable and usable at 200% and 400% zoom, with vertical flow and no clipped sections. (SITES-24523) MAJOR
 * Typing in the search field no longer triggers a premature announcement of the first result or accidental activation. The experience now announces a concise status message with the result count, while the focus remains in the field until the user navigates to the list. (SITES-24658) MAJOR
@@ -154,7 +147,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 * The Edit button now announces the correct action to screen readers in the secondary toolbar. Activating it reads "Edit" instead of the unrelated "Preview button pressed," which removes confusion during keyboard navigation. (SITES-25320) MAJOR
 * The Demographics toolbar Cart slider now exposes a proper accessible name. Screen readers announce "Cart total" and speech-input tools can target the control by name, improving compliance with WCAG 4.1.2 (Name, Role, Value). (SITES-25322) MAJOR
 * The Demographics toolbar slider now keeps focus when authors change the value with the arrow keys. Focus no longer jumps to the Cart button, so keyboard users adjust the value continuously and screen readers announce each change. (SITES-25324) MAJOR
-* Search Assets now reflow cleanly at 320 px (roughly 400% zoom). The modal keeps headings, fields, and actions readable and non-overlapping, so authors can search without horizontal scrolling. (SITES-25330) MAJOR
+* Search Assets now Reflow cleanly at 320 px (roughly 400% zoom). The modal keeps headings, fields, and actions readable and non-overlapping, so authors can search without horizontal scrolling. (SITES-25330) MAJOR
 * The Assets panel in the editor follows a logical focus sequence. Keyboard users tab across each thumbnail and can access the panel exit controls. The change removes skips and improves compliance with WCAG 2.4.3. (SITES-25360) MAJOR
 * AEM updates the **Lists** and **Paragraphs** buttons in the Teaser modal's rich text editor to expose their expanded and collapsed state. The buttons now toggle `aria-expanded` and announce the state change to screen readers. Authors get clear feedback and avoid guessing before opening or closing the format menus. (SITES-25365) MAJOR
 * AEM announces the loading state in the Teaser modal. The modal now exposes a live status message while content loads, so NVDA and JAWS speak "Loading, please wait." Authors should receive clear feedback and avoid interacting with the dialog box before it is ready. (SITES-25366) MAJOR
@@ -275,7 +268,7 @@ ContextHub no longer injects a second jQuery copy on publish pages. The segment-
 
 #### Page Editor{#sites-pageeditor-6524}
 
-* Opening Content tree on a page with a Personalization Container returned an empty panel and a console null-reference error. Authors could not pick or configure components. The update removes the error and re-enables the tree and component interactions. (SITES-34336) MAJOR
+* Opening the content tree on a page with a Personalization Container returned an empty panel and a console null-reference error. Authors could not pick or configure components. The update removes the error and re-enables the tree and component interactions. (SITES-34336) MAJOR
 * AEM 6.5 SP23 broke mode switching in the Page Editor. Clicking **Layout**, **Developer**, or **Targeting** left the editor stuck in **Edit** mode and threw a console `TypeError`. The update restores toolbar mode changes and clears the error. (SITES-34536)
 * The Page Editor jumped away from the insertion point when authors added components in long containers. The update tunes overlay timing and scrolling handling. The view holds its place and the new component remains in sight and ready to configure. (SITES-32621)
 * Custom tag labels failed in Page Editor and the UI always displayed "Tags." The predicate now evaluates `fieldLabel` first and `labelText` second, then applies the default. Authors see the label that they set. (SITES-32278)
@@ -652,7 +645,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 >[!NOTE]
 >
-> Do not upgrade to Service Pack 6.5.24.0 for issues that do not have hotfixes available, as it may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. 
+>Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. 
 
 #### Issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
