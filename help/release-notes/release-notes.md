@@ -40,10 +40,6 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 * A ()
 
-### [!DNL Assets]  {#assets-sp24}
-
-* A ()
-
 
 ### Forms {#forms-sp24}
 
@@ -55,6 +51,24 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 <!-- 6.5.24.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE --> 
+
+### [!DNL Assets] {#assets-sp24}
+
+* Repeated warning log entries are generated during scheduler executions. (ASSETS-52554)
+
+* After updating to version 6.5.23.0, sorting folders by modification date in Card View caused difficulties in locating recently modified assets for on-premise deployments. (ASSETS-56946)
+
+* The Collection Properties window does not close even after clicking the Cancel button. (ASSETS-48504)
+
+* Title sorting is not working in the List View. (ASSETS-50716)
+
+* An *Invalid URL* error occurs when attempting to annotate assets in AEM 6.5.22. (NPR-42684)
+
+* The Assets Metadata Editor form does not reinitialize after performing relate or un-relate actions.(ASSETS-52207)
+
+* The asset synchronization status is not updating. (ASSETS-48958)
+
+* Issues encountered while upgrading from SP23 to version 6.5 LTS. (ASSETS-50541)
 
 ### [!DNL Sites]{#sites-6524}
 
