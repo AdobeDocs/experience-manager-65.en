@@ -66,9 +66,9 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 * The Assets Metadata Editor form does not reinitialize after performing relate or un-relate actions.(ASSETS-52207)
 
-* The asset synchronization status is not updating. (ASSETS-48958)
+* When assets from the remote DAM resync to the Sites local, the published status of the assets incorrectly updates to `Not published`. (ASSETS-48958)
 
-* Issues encountered while upgrading from SP23 to version 6.5 LTS. (ASSETS-50541)
+* Issues encountered while upgrading from SP23 to 6.5 LTS version. (ASSETS-50541)
 
 ### [!DNL Sites]{#sites-6524}
 
