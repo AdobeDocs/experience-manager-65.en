@@ -391,10 +391,10 @@ Publishing AEM Target activities no longer fails when authors set start and end 
 * Projects and Inbox calendar view renders correctly. Switching views no longer blanks the page; the calendar loads and shows scheduled items. (NPR-42968)
 
 
-
+<!--
 #### Security{#foundation-security-6524}
+-->
 
-Assets Metadata Editor now re-initializes after Relate or Unrelate. The form refreshes fields, validation, and visibility without a page reload. (NPR-42942)
 
 #### Sling{#foundation-sling-6524}
 
@@ -705,8 +705,8 @@ The following issues have a hotfix available for download and installation. You 
 
 The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
 
-* [List of OSGi bundles included in Experience Manager 6.5.24.0](/help/release-notes/assets/65230-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.24.0](/help/release-notes/assets/65230-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
 

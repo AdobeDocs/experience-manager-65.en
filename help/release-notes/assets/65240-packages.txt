@@ -1,0 +1,100 @@
+SUBPACKAGE                                          VERSION                                         
+----------                                          -------                                        
+cq-dam-stock-integration-content        1.1.19-CQ650-B0006                                                  
+cq-social-calendar-pkg                  1.6.35                                                              
+cq-social-filelibrary-pkg               1.5.20                                                              
+cq-social-forum-pkg                     1.8.31                                                              
+cq-social-group-pkg                     1.7.30                                                              
+cq-social-qna-pkg                       1.7.26                                                              
+cq-ui-wcm-editor-content                1.1.517-CQ650-B0042                                                 
+com.adobe.granite.contexthub.content    1.1.4-B002                                                          
+com.adobe.granite.datavisualization.co  ntent  1.60-CQ650-B0006                                             
+com.adobe.granite.distribution.content  0.0.125-CQ650-B0001                                                 
+com.adobe.granite.platform.content      1.0.40-CQ650-B0008                                                  
+com.adobe.granite.platform.i18n         1.1.266                                                             
+cq-compat-content-disable-preupgrade-j  obs  1.0.0-CQ650-B0002                                              
+adobe-aemds-formsportal-pkg             8.0.50-FORMS-20670-B001                                             
+cq-dynamicmedia-content                 1.0.512-CQ650-B0032                                                 
+cq-mcm-content                          1.4.87-CQ650-B0001                                                  
+cq-social-commons-pkg                   1.10.122                                                            
+cq-social-content-pkg                   1.8.12                                                              
+cq-social-members-pkg                   1.3.17                                                              
+cq-social-messaging-pkg                 1.6.26                                                              
+dtm-reactor.content                     1.1.16-CQ650-B0003                                                  
+com.adobe.granite.jobs.async.ui.conten  t  1.0.24                                                           
+com.adobe.granite.monitoring.dashboard  1.5.259-CQ650-B0034                                                 
+com.adobe.granite.platform.welcome      1.1.26-CQ650-B0003                                                  
+com.adobe.granite.replication.content   1.0.41-CQ650-B0002                                                  
+com.adobe.granite.security.content      0.2.407-CQ650-B0038                                                 
+com.adobe.granite.security.permissions  .ui.content  0.0.25-CQ650-B0004                                     
+com.adobe.granite.ui.content            0.8.870-CQ650-B0440                                                 
+com.adobe.reef.contexthub.content       0.4.33-CQ650-B0006                                                  
+cq-content                              6.5.16-CQ650-B010                                                   
+cq-dam-scene7-viewers-content           2.3.120                                                             
+graphiql.ui.apps                        0.0.47-CQ650-B0010                                                  
+cq-dam-projects-addons-content          0.1.15-CQ650-B0008                                                  
+cq-dam-sample-content                   1.4.10                                                              
+adobeims.content                        1.1.8                                                               
+aem-bundle-remover-content              2.0.22                                                              
+cloud-config.ui.content                 1.1.2                                                               
+cq-content-insight-content              1.5.16-CQ650-B0001                                                  
+cq-contexthub-content                   1.1.29-CQ650-B0003                                                  
+cq-integration-analytics-content        1.3.42-CQ650-B0008                                                  
+cq-integration-target-content           1.3.66                                                              
+cq-launches-content                     1.7.47-CQ650-B0018                                                  
+cq-personalization-content              1.3.157-CQ650-B0006                                                 
+cq-platform-content                     1.5.223-CQ650-B0030                                                 
+cq-projects-translation-content         1.4.86-CQ650-B0016                                                  
+cq-ui-classic-content                   1.5.81-CQ650-B0041                                                  
+com.adobe.granite.backup.content        0.0.78                                                              
+com.adobe.granite.cloudsettings.conten  t  1.3.15-CQ650-B0006                                               
+com.adobe.granite.conf.ui.content       0.0.78                                                              
+com.adobe.granite.oauth.server.content  1.0.54-CQ650-B0006                                                  
+com.adobe.granite.offloading.content    1.1.66-CQ650-B0005                                                  
+com.adobe.granite.platform.login        1.1.38-CQ650-B0010                                                  
+com.adobe.granite.ui.coralui3           1.5.42-CQ650-B0238                                                  
+adobe-aemds-formsanddocuments-core-pkg  8.0.70-NPR-38582-B0001                                              
+aemfd-expeditor-rulebuilder-pkg         5.0.76                                                              
+cfm-graphql-content                     0.0.1-CQ650-B0018                                                   
+cq-dam-cfm-content                      0.11.215-CQ650-B0030                                                
+cq-dam-content                          2.5.1225-V650-B0020-NPR-42404-B0002                                 
+sites-graphql-content                   0.0.1-CQ650-B0008                                                   
+cq-inbox-content                        1.2.94-CQ650-B0012                                                  
+cq-remotedam-client-ui-components       1.0.34                                                              
+cq-remotedam-client-ui-content          1.0.32                                                              
+cq-remotedam-server-content             1.0.24                                                              
+cq-social-activitystreams-pkg           1.6.21                                                              
+cq-social-connect-pkg                   1.7.26                                                              
+cq-social-console-pkg                   1.6.88                                                              
+cq-social-enablement-pkg                2.3.70                                                              
+cq-social-journal-pkg                   1.6.32                                                              
+cq-social-moderation-pkg                2.5.28                                                              
+cq-social-sync-pkg                      1.3.9                                                               
+cq-social-tally-pkg                     1.6.3                                                               
+cq-social-thirdparty-pkg                1.5.18                                                              
+cq-msm-content                          6.5.208-CQ650-B0012                                                 
+cq-address-content                      1.4.22                                                              
+cq-cloudservices-content                1.5.45-CQ650-B0001                                                  
+cq-dam-mac-sync-pkg                     1.5.28                                                              
+cq-experience-fragments-content         1.2.161-CQ650-B0012                                                 
+cq-experiencelog-content                1.5.22                                                              
+cq-foundation-content                   1.5.135-CQ-650-B0008                                                
+cq-projects-content                     1.5.66-CQ650-B0022                                                  
+cq-ui-touch-optimized-content           2.6.199-CQ650-B0027                                                 
+cq-ui-wcm-admin-content                 1.1.157-CQ650-B0020                                                 
+cq-ui-wcm-commons-content               1.1.287-CQ650-B0025                                                 
+cq-workflow-console-content             1.4.100-CQ650-B0022                                                 
+tsdk-aem-clientlib                      1.1.24                                                              
+com.adobe.granite.activitystreams.cont  ent  0.0.46                                                         
+com.adobe.granite.platform.clientlibs   2.3.1-CQ650-B0028                                                   
+com.adobe.granite.references.content    1.1.36-CQ659-B0018                                                  
+com.adobe.granite.ui.coralui3-rte       0.3.67-CQ650-B0004                                                  
+com.adobe.granite.ui.foundation.compon  ents  0.2.5-CQ650-B0006                                             
+com.adobe.granite.ui.legacy             1.3.1-CQ650-B0024                                                   
+com.adobe.granite.workflow.content      1.0.90-CQ650-B0004                                                  
+cq-wcm-content                          6.5.209-CQ650-B0008                                                 
+cq-i18n-content                         1.5.148-CQ650-B0004                                                 
+--------------------------------------------------  ----------------------------------------                     
+SUMMARY: TOTAL SUB PACKAGES: 94  UPGRADED: 94 DOWNGRADED/MISSING: 0                                                    
+--------------------------------------------------  ----------------------------------------                    
+                                                                                                                        
