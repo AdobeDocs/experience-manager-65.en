@@ -390,6 +390,8 @@ Publishing AEM Target activities no longer fails when authors set start and end 
 * Header bar pop-ups now toggle correctly. Clicking the same action (for example, **Search** or **Filter**) closes the open pop-up instead of opening another overlay. The change prevents stacked pop-ups and returns focus to the header control. (NPR-42891)
 * Projects and Inbox calendar view renders correctly. Switching views no longer blanks the page; the calendar loads and shows scheduled items. (NPR-42968)
 
+* Removed usage of the Google Guava (com.google.common.*) library from the cq-content-sync bundle to reduce third‑party dependencies and align with platform hardening guidelines <!--MISSING ASSOCIATED JIRA TICKET NUMBER FROM KHUSHBOO KUMARI -->
+
 
 <!--
 #### Security{#foundation-security-6524}
