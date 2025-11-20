@@ -304,7 +304,7 @@ ContextHub no longer injects a second jQuery copy on publish pages. The segment-
 
 >[!NOTE]
 >
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, November 27, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, December 4, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 
 <!--
 #### Forms Designer 
