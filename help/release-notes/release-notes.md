@@ -294,7 +294,6 @@ ContextHub no longer injects a second jQuery copy on publish pages. The segment-
 ### [!DNL Assets]{#assets-6524}
 
 
-
 #### [!DNL Dynamic Media]{#assets-dm-6524}
 
 * The **Select Thumbnail** option for videos now behaves correctly in AEM Assets - Dynamic Media. The click opens the dialog box and allows selection of a thumbnail from Assets, eliminating the previous dead-click behavior and removing the limitation to video-frame extraction only. (ASSETS-58926) 
@@ -320,8 +319,6 @@ ContextHub no longer injects a second jQuery copy on publish pages. The segment-
 #### [!DNL Forms Designer] {#forms-designer-6524}
 
 -->
-
-
 
 
 ### Foundation {#foundation-6524}
