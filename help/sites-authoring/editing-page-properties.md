@@ -4,7 +4,7 @@ description: Define the required properties for a page in Adobe Experience Manag
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 mini-toc-levels: 2
 ---
 

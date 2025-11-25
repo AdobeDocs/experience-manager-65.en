@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] Touch-Ena
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Touch UI Feature Status {#touch-ui-feature-status}
 

@@ -12,7 +12,7 @@ content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 
 # Creative Project and PIM Integration {#creative-project-and-pim-integration}

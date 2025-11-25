@@ -10,7 +10,7 @@ content-type: reference
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Keyboard Shortcuts for Consoles{#keyboard-shortcuts-for-consoles}
 

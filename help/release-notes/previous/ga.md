@@ -4,7 +4,7 @@ description: "[!DNL Adobe Experience Manager] 6.5 notes outlining the release in
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # General Release Notes for [!DNL Adobe Experience Manager] 6.5{#general-release-notes-for-adobe-experience-manager}
 

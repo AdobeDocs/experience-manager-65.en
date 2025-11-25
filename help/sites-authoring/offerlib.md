@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Creating and Managing Offers{#creating-and-managing-offers}
 

@@ -9,7 +9,7 @@ docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 index: no
 ---
 

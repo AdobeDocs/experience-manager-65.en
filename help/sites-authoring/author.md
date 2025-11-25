@@ -4,7 +4,7 @@ description: Concepts of authoring and publishing in Adobe Experience Manager 6.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Authoring{#authoring}
 
