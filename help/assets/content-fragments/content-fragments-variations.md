@@ -401,6 +401,12 @@ Variations let you take the **Master** content and vary it according to purpose 
 
 To create a variation:
 
+>[!NOTE]
+>
+>Variations add processing time to a Content Fragment, on the author environment and upon delivery too. It is recommended to keep the number of variations to a manageable minimum. 
+>
+>A best practice is to not exceed ten variations per Content Fragment. 
+
 1. Open your fragment and ensure that the side panel is visible.
 1. Select **Variations** from the icon bar in the side panel.
 1. Select **Create Variation**.
