@@ -1,7 +1,7 @@
 ---
 title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]'
 description: Introduction to integration between [!DNL Assets] and [!DNL Workfront]
-role: Admin,Leader,Architect
+role: Admin,Leader,Developer
 feature: Workfront Integrations and Apps
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: yes
@@ -45,7 +45,7 @@ The following are the details of the functionalities available through various t
 | Feature   |Description  | [!DNL Workfront] and [!DNL Assets Essentials] *No Connector (out-of-the-box)* | [!DNL Workfront for Experience Manager enhanced connector] *Requires Connector*| Workfront and [!DNL Experience Manager as a Cloud Service] *No Connector (out-of-the-box)*|
 |----|----|----|-----|-----|
 | Deployment methods   | Appropriate for which [!DNL Assets] offering. | Assets Essentials| Adobe Managed Services, On-premise| Cloud Service|
-| **General** |
+| **General** |||||
 | Send digital files from [!DNL Workfront] to [!DNL Assets]| Latest version of a WF document can be uploaded to AEM Assets which is linked as a new version of the document.  | &#10003; | &#10003;  | &#10003; |
 | Manually Link AEM Folders to Workfront Objects| Existing AEM folders can be linked as a Workfront folder and its child assets are linked as new Workfront documents.  | &#10003; | &#10003;  | &#10003; |
 | Link [!DNL Assets] to Workfront Objects | Existing assets in AEM can be linked to a new Workfront document or as a new version of an existing document. | &#10003; | &#10003;  | &#10003; |
@@ -64,7 +64,7 @@ The following are the details of the functionalities available through various t
 | Comment Syncing| Automatically sync comments for assets from [!DNL Workfront] to [!DNL Assets]| No  | &#10003;  | No |
 | Support multiple Workfront environments connecting to a single AEM environment| Users from multiple Workfront environments can connect to a single AEM environment. | &#10003; | No  | &#10003; |
 | Support multiple AEM environments connecting to a single Workfront environment| Users within a single Workfront environment can send or link assets between multiple AEM environments. | &#10003; | &#10003;  | &#10003; |
-| **Metadata** |
+| **Metadata** |||||
 | Map Workfront Asset Metadata to AEM Assets | Workfront object and custom form properties may be mapped to AEM asset metadata properties. Values are pushed on initial upload/link.    | &#10003; | &#10003;  | &#10003; |
 | Automatically Create Document Custom Forms in Workfront | Attach custom forms to Workfront documents, tasks, and issues using AEM workflows.| No  | &#10003; | No |
 | Bi-directional Automatic Updating of Metadata between AEM Assets and Workfront   | Automatically update metadata between AEM Assets and Workfront. The asset must be initially pushed from Workfront to AEM and the Workfront asset metadata must be mapped to AEM assets for bi-directional metadata updates to work appropriately.| No  | &#10003;  | No |
@@ -73,7 +73,7 @@ The following are the details of the functionalities available through various t
 | Map Workfront Metadata to AEM Assets Folders | Sync Workfront project metadata with linked AEM folders.| No  | &#10003;  | &#10003; |
 | AEM Metadata Updates with New Versions| A configuration in AEM can be made to determine whether a newly versioned asset in Workfront also pushes with any changes made to its metadata.  | No  | &#10003;  | No |
 | Automatically Update AEM Metadata on Changes to Custom Forms in Workfront| AEM lets you subscribe to the updates to the document forms in Workfront. As a result, any updates to the Workfront document custom form metadata edits the values for the mapped AEM metadata fields.     | No  | &#10003;  | No |
-| **Workflows (Out-of-the-box)** |
+| **Workflows (Out-of-the-box)** |||||
 | Create New Proof Version on Linked Assets  | Upon linking an asset in Workfront a proof can be automatically generated.| No  | Custom| No |
 | Set Status on Workfront Objects  | Set Workfront object statuses based configurable conditions using AEM workflows| No  | &#10003;  | Upcoming |
 | Publish Assets to AEM Publish Environment or Brand Portal| Give Workfront users the option to automatically publish linked assets to an AEM Publish environment or Brand Portal. | No  | &#10003;  | Upcoming |

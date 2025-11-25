@@ -574,7 +574,7 @@ user-guide-title: AEM 6.5
     + Upgrade AEM Forms on JEE {#aem-forms-jee-upgrade}
       + [Preparing to upgrade AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
       + [Adobe Experience Manager Forms on JEE upgrade checklist and planning](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
-     + [Upgrade to AEM 6.5 forms on JEE](/help/forms/using/upgrade-forms-jee.md)
+      + [Upgrade to AEM 6.5 forms on JEE](/help/forms/using/upgrade-forms-jee.md)
       + [Upgrading to Adobe Experience Manager Forms on JEE for JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
       + [Upgrading to AEM Forms on JEE for JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
       + [Upgrading to Adobe Experience Manager Forms on JEE for WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
@@ -960,22 +960,22 @@ user-guide-title: AEM 6.5
       + [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md)
     + Managing Endpoints {#manage-endpoints}
       + [Adding, enabling, modifying, or removing endpoints](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
-     + [Configuring email endpoints](/help/forms/using/admin-help/configuring-email-endpoints.md)
+      + [Configuring email endpoints](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Configure oAuth2.0 authentication](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Configuring Remoting endpoints](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configuring watched folder endpoints](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configuring Task Manager endpoints](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Types of endpoints](/help/forms/using/admin-help/types-endpoints.md)
-     + Configuring Acrobat Reader DC extensions {#configure-acrobat-reader-dc-extensions}
-       + [Certificate types used by Acrobat Reader DC extensions](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
-       + [Recognizing valid and expired certificates in PDF documents](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
-       + [Configuring Acrobat Reader DC extensions for data capture](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
-       + [Review credential use information](/help/forms/using/admin-help/review-credential-information.md)
-       + [Configuring credentials for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
-       + [Review the usage rights of a PDF file](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
-       + [Enabling online commenting for Adobe Reader web browser plug-in](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
-       + [Setting timeout values for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
-       + [Updating expired Reader Extension service certificates](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
+    + Configuring Acrobat Reader DC extensions {#configure-acrobat-reader-dc-extensions}
+      + [Certificate types used by Acrobat Reader DC extensions](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
+      + [Recognizing valid and expired certificates in PDF documents](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
+      + [Configuring Acrobat Reader DC extensions for data capture](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
+      + [Review credential use information](/help/forms/using/admin-help/review-credential-information.md)
+      + [Configuring credentials for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
+      + [Review the usage rights of a PDF file](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
+      + [Enabling online commenting for Adobe Reader web browser plug-in](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
+      + [Setting timeout values for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
+      + [Updating expired Reader Extension service certificates](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
     + Working with PDF Generator {#work-with-pdf-generator}
       + [Introduction to working with PDF Generator](/help/forms/using/admin-help/overview-5.md)
       + [Enabling multi-threaded file conversions](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
@@ -1100,7 +1100,7 @@ user-guide-title: AEM 6.5
       + Introduction to programming with AEM Forms on JEE {#introduction-programming-aem-forms-jee}
         + [Introducing Java API QuickStart](/help/forms/developing/introducing-java-api-soap-quick.md)
         + [Invoking AEM Forms using APIs](/help/forms/developing/invoking-aem-forms-using-apis.md)
-       + [Understanding AEM Forms Processes](/help/forms/developing/aem-forms-processes.md)
+        + [Understanding AEM Forms Processes](/help/forms/developing/aem-forms-processes.md)
         + [Service container](/help/forms/developing/service-container.md)
       + Developing SPIs for AEM Forms {#developing-spis-aem-forms}
         + [Creating an Invite External Users Handler](/help/forms/developing/creating-invite-external-users-handler.md)
@@ -1211,7 +1211,7 @@ user-guide-title: AEM 6.5
     + [Mitigating XXE, Configuration, and Remote Code Execution Vulnerabilities for AEM Forms on JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
     + [Display issues for XFA-based PDF forms and policy-protected documents](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
     + [How to open XFA-based PDF forms on Firefox and Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
-    + [XML External Entity (XXE) Vulnerability in BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
+    + [XML External Entity (XXE) Vulnerability in BlazeDS](/help/forms/using/xxe-vulnerability-blaze-ds.md)
     + [EAR Deployment failing on JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
@@ -1220,7 +1220,7 @@ user-guide-title: AEM 6.5
     + [Generating and working with Hashes in dynamic PDF forms](/help/forms/developing/hashing-forms.md)
     + [Passing credentials using WS-Security headers](/help/forms/developing/passing-credentials.md)
   + Glossary {#aem-forms-glossary}
-    +[AEM Forms Glossaries](/help/forms/using/aem-forms-glossary.md)
+    + [AEM Forms Glossaries](/help/forms/using/aem-forms-glossary.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
   + AI Assistant {#ai-assistant}

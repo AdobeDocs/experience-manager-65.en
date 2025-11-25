@@ -29,7 +29,7 @@ The following tables describe the content properties and nodes.
 | **Property Name** |**Type** |**Defaults or Expected Values** |**Description** |
 |---|---|---|---|
 | dps-id |String |  |assigned by AEM Mobile and stored by AEM once uploaded to AEM Mobile or imported from AEM Mobile |
-| dps-resourceType |String |dps:Article | dps:Banner | dps:Collection |entity type property |
+| dps-resourceType |String |dps:Article | `dps:Banner` \| `dps:Collection` \| `entity type property` |
 | dps-version |String |  |version of AEM Mobile entity (also contained within the full aemm-id) |
 | dps-lastSynced |Date |  |date of last sync/import from AEM Mobile into AEM |
 | dps-lastUploaded |Date |  |date of last upload from AEM to AEM Mobile |

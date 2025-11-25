@@ -1191,7 +1191,7 @@ In this section, you use a cq:editConfig node to enable you to drag assets from 
 
 | Name |Type |Value |
 |---|---|---|
-| accept |String |image/(gif|jpeg|png) |
+| accept |String |image/(gif\|jpeg\|png) |
 | groups |String |media |
 | propertyName |String |./imageReference |
 

@@ -9,7 +9,7 @@ contentOwner: carlino
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin, Developer, Leader, User
 ---
 # AEM Commerce - GDPR Readiness{#aem-commerce-gdpr-readiness}
 

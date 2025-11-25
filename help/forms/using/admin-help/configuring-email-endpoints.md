@@ -30,7 +30,7 @@ All email endpoints are configured with an authorized user name and password for
 
 If your users send documents with Western European language characters in file and conversion path names, they must use an email application that supports the required encoding types (Latin1 [ISO-8859-1], Western European [Windows], or UTF-8). For more information, see the *Installing and Deploying AEM forms* document for your application server.
 
-Before you configure an email endpoint, configure the Email service. (See [Configure default email endpoint settings](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) The Email service’s configuration parameters have two purposes:
+Before you configure an email endpoint, configure the Email service. (See [Configure default email endpoint settings](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) The Email service's configuration parameters have two purposes:
 
 * To configure attributes that are common for all email endpoints
 * To provide default values for all the email endpoints
@@ -39,11 +39,11 @@ Before you configure an email endpoint, configure the Email service. (See [Confi
 
 You can configure POP3, IMAP, or SMTP to use Secure Sockets Layer (SSL) for an email endpoint.
 
-1. On the email server, enable SSL for POP3, IMAP, or SMTP according to the manufacturer’s documentation.
+1. On the email server, enable SSL for POP3, IMAP, or SMTP according to the manufacturer's documentation.
 1. Export a client certificate from the email server.
-1. Use the keytool program to import the client certificate file to the application server’s Java Virtual Machine (JVM) certificate store. The procedure for this step will depend on the JVM and client installation paths.
+1. Use the keytool program to import the client certificate file to the application server's Java Virtual Machine (JVM) certificate store. The procedure for this step will depend on the JVM and client installation paths.
 
-   For example, if you are using a default Oracle WebLogic Server installation with JDK 1.5.0 on Microsoft Windows Server® 2003, type the following text in a command prompt:
+   For example, if you are using a default Oracle WebLogic Server installation with JDK 1.5.0 on Microsoft Windows Server&reg; 2003, type the following text in a command prompt:
 
    `keytool -import -file client_certificate -alias myalias -keystore BEA_HOME\jdk150_04\jre\security\cacerts`
 
@@ -83,11 +83,11 @@ For forms workflow to receive and handle incoming email messages from users, you
 
 **Domain Pattern:** The domain name pattern that is used to filter incoming emails. For example, if adobe.com is used, only email from adobe.com will be processed; email from other domains is ignored.
 
-**File Pattern:** The incoming file attachment patterns that the provider accepts. This includes files that have specific extensions (&ast;.dat, &ast;.xml), specific names (data), and composite expressions in the name and extension (.[dD][aA]'port'). The default value is &ast;.&ast;.
+**File Pattern:** The incoming file attachment patterns that the provider accepts. This includes files that have specific extensions (&ast;.dat, &ast;.xml), specific names (data), and composite expressions in the name and extension (.``[dD][aA]``'port'). The default value is &ast;.&ast;.
 
-**Successful Job’s Recipients:** One or more email addresses that are used to send emails to indicate successful jobs. By default, a successful job message is always sent to the sender of the initial job. Up to 100 recipients are supported. To turn off this setting, leave this field blank.
+**Successful Job's Recipients:** One or more email addresses that are used to send emails to indicate successful jobs. By default, a successful job message is always sent to the sender of the initial job. Up to 100 recipients are supported. To turn off this setting, leave this field blank.
 
-**Failed Job’s Recipients:** One or more email addresses that are used to send emails to indicate failed jobs. By default, a failed job message is always sent to the sender who sent the initial job. Up to 100 recipients are supported. To turn off this setting, leave this field blank.
+**Failed Job's Recipients:** One or more email addresses that are used to send emails to indicate failed jobs. By default, a failed job message is always sent to the sender who sent the initial job. Up to 100 recipients are supported. To turn off this setting, leave this field blank.
 
 **Inbox Host:** The inbox host name or IP address for the email provider to scan.
 
@@ -141,7 +141,7 @@ For forms workflow to receive and handle incoming email messages from users, you
 
 Use the following settings to configure an email endpoint.
 
-**Name:** A mandatory setting that identifies the endpoint. Do not include a < character because it truncates the name displayed in Workspace. If you’re entering a URL as the name of the endpoint, ensure that it conforms with the syntax rules specified in RFC1738.
+**Name:** A mandatory setting that identifies the endpoint. Do not include a < character because it truncates the name displayed in Workspace. If you're entering a URL as the name of the endpoint, ensure that it conforms with the syntax rules specified in RFC1738.
 
 **Description:** A description of the endpoint. Do not include a < character because it truncates the description displayed in Workspace.
 
@@ -157,17 +157,17 @@ Use the following settings to configure an email endpoint.
 
 **User Name:** A mandatory setting, which is the user name that is used when invoking a target service from email. The default value is SuperAdmin.
 
-**Domain Name:** A mandatory setting, which is the user’s domain. The default value is DefaultDom.
+**Domain Name:** A mandatory setting, which is the user's domain. The default value is DefaultDom.
 
 **Domain Pattern:** Specifies the domain patterns of incoming email that the provider accepts. For example, if adobe.com is used, only email from adobe.com is processed; email from other domains is ignored.
 
-**File Pattern:** Specifies the incoming file attachment patterns that the provider accepts. This includes files that have specific extensions (&ast;.dat, &ast;.xml), specific names (data), or composite expressions in the name and extension (&ast;.[dD][aA]'port').
+**File Pattern:** Specifies the incoming file attachment patterns that the provider accepts. This includes files that have specific extensions (&ast;.dat, &ast;.xml), specific names (data), or composite expressions in the name and extension (&ast;.`[dD][aA]`'port').
 
-**Successful Job’s Recipients:** An email address to which messages are sent to indicate successful jobs. By default, a successful job message is always sent to the sender. If you type sender, email results are sent to the sender. Up to 100 recipients are supported. Specify additional recipients with email addresses, separated by commas (,).
+**Successful Job's Recipients:** An email address to which messages are sent to indicate successful jobs. By default, a successful job message is always sent to the sender. If you type sender, email results are sent to the sender. Up to 100 recipients are supported. Specify additional recipients with email addresses, separated by commas (,).
 
 To turn off this setting, leave the setting blank. In some cases, you want to trigger a process and do not want an email notification of the result.
 
-**Failed Job’s Recipients:** An email address to which messages are sent to indicate failed jobs. By default a failed job message is always sent to the sender. If you type sender, email results are sent to the sender. Up to 100 recipients are supported. Specify additional recipients with email addresses, separated by commas (,).
+**Failed Job's Recipients:** An email address to which messages are sent to indicate failed jobs. By default a failed job message is always sent to the sender. If you type sender, email results are sent to the sender. Up to 100 recipients are supported. Specify additional recipients with email addresses, separated by commas (,).
 
 To turn off this setting, leave the setting blank. In some cases, you want to trigger a process and do not want an email notification of the result.
 
@@ -193,7 +193,7 @@ To turn off this setting, leave the setting blank. In some cases, you want to tr
 
 **SMTP Password:** The password for the SMTP account. Some mail servers do not require an SMTP password.
 
-**Send From:** The email address (for example, user@company.com) used to send email notifications of results and errors. If you do not specify a Send From value, the email server attempts to determine the email address by combining the value specified in the SMTP User setting with a default domain configured on the email server. If your email server does not have a default domain and you do not specify a value for Send From, errors may occur. To ensure that the email messages have the correct from address, specify a value for the Send From setting.
+**Send From:** The email address (for example, `user@company.com`) used to send email notifications of results and errors. If you do not specify a Send From value, the email server attempts to determine the email address by combining the value specified in the SMTP User setting with a default domain configured on the email server. If your email server does not have a default domain and you do not specify a value for Send From, errors may occur. To ensure that the email messages have the correct from address, specify a value for the Send From setting.
 
 **SMTP SSL Enabled:** Select this setting to force the email provider to use SSL to scan the inbox. Ensure that your mail server supports SSL.
 
@@ -201,7 +201,7 @@ To turn off this setting, leave the setting blank. In some cases, you want to tr
 
 **asynchronous:** When set to synchronous, all input documents are processed and a single response is returned. When set to asynchronous, a response is sent for each document that is processed.
 
-For example, an email endpoint is created for a service that takes a single Word document and returns that document as a PDF file. An email can be sent to the endpoint’s inbox that contains multiple (3) Word documents. When all three documents are processed, if the endpoint is configured as synchronous, a single response email is sent with all three documents attached. If the endpoint is asynchronous, a response email is sent after each Word document is converted to PDF. The result is three emails, each with a single PDF attachment.
+For example, an email endpoint is created for a service that takes a single Word document and returns that document as a PDF file. An email can be sent to the endpoint's inbox that contains multiple (3) Word documents. When all three documents are processed, if the endpoint is configured as synchronous, a single response email is sent with all three documents attached. If the endpoint is asynchronous, a response email is sent after each Word document is converted to PDF. The result is three emails, each with a single PDF attachment.
 
 The default value is asynchronous.
 
@@ -233,9 +233,9 @@ The default value is asynchronous.
 
 **Output Parameter Mappings:** Used to configure the output of the service and operation. The following characters in the output parameter mapping values are expanded in the attachment filename:
 
-**%F** Represents the source file’s filename (not including an extension).
+**%F** Represents the source file's filename (not including an extension).
 
-**%E** Represents the source file’s extension.
+**%E** Represents the source file's extension.
 
 Any occurrence of the backslash (\) is replaced with %%.
 

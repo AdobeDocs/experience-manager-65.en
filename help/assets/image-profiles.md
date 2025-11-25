@@ -73,7 +73,7 @@ In **[!UICONTROL Unsharp Mask]**, you have the following filtering options:
 | --- | --- |
 |Amount | Controls the amount of contrast applied to edge pixels. The default is 1.75. For high-resolution images, you can increase it to as high as 5. Think of Amount as a measure of filter intensity. The range is 0-5. |
 |Radius | Determines the number of pixels surrounding the edge pixels that affect the sharpening. For high-resolution images, enter from 1 through 2. A low value sharpens only the edge pixels; a high value sharpens a wider band of pixels. The correct value depends on the size of the image. The default value is 0.2. The range is 0-250. |
-Threshold | Determines the range of contrast to ignore when the unsharp mask filter is applied. In other words, this option determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and are sharpened. To avoid introducing noise, experiment with values between 0&ndash;255. |
+|Threshold | Determines the range of contrast to ignore when the unsharp mask filter is applied. In other words, this option determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and are sharpened. To avoid introducing noise, experiment with values between 0&ndash;255. |
 
 Sharpening is described in [Sharpening Images](/help/assets/assets/sharpening_images.pdf).
 

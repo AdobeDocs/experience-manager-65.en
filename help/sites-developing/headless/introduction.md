@@ -4,7 +4,7 @@ description: Learn how AEM 6.5's powerful headless capabilities like Content Mod
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 ---
 # Headless Development for AEM 6.5 Sites {#headless-development}
 

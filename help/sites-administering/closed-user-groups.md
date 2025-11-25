@@ -682,7 +682,7 @@ New installations of AEM will by default use the new implementations both for th
 |---|---|
 | Supported Paths `/content` | Access control management for CUGpolicies is enabled. |
 | CUG Evaluation Enabled FALSE | Permission evaluation is disabled. CUG policies take no effect. |
-| Ranking |200 | See Oak documentation. |
+| Ranking \|200 | See Oak documentation. |
 
 >[!NOTE]
 >
@@ -694,7 +694,7 @@ New installations of AEM will by default use the new implementations both for th
 |---|---|
 | Supported Paths `/content` | Access control management for CUG policies is enabled below the configured paths.  |
 | CUG Evaluation Enabled TRUE | Permission evaluation is enabled below the configured paths. CUG policies take effect upon `Session.save()`. |
-| Ranking |200 | See Oak documentation. |
+| Ranking \|200 | See Oak documentation. |
 
 | **"Apache Jackrabbit Oak CUG Exclude List"** |**Explanation** |
 |---|---|

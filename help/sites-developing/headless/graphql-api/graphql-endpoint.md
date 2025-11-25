@@ -4,7 +4,7 @@ description: Learn how to manage GraphQL endpoints in Adobe Experience Manager f
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 ---
 # Manage GraphQL endpoints in AEM {#graphql-aem-endpoint}
 

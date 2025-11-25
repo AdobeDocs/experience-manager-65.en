@@ -65,7 +65,7 @@ You can modify the login screen of all AEM Forms modules that use the AEM Forms 
 
 1. Modify the following snippet of code for `/apps/livecycle/core/components/login/login.jsp`:
 
-***Locale is language code***
+   ***Locale is language code***
 
    ```jsp
    String browserLocale = "en";
@@ -263,12 +263,12 @@ For example:
 
 * Add the following to `/apps/livecycle/core/content/login/login.css`.
 
-```
-css.newLoginContentArea {
-    width: 700px;
-    padding: 100px 0px 0px 100px;
+   ```
+   css.newLoginContentArea {
+       width: 700px;
+       padding: 100px 0px 0px 100px;
    }
-```
+   ```
 
 * Modify following in `/apps/livecycle/core/components/login.jsp`.
 
@@ -305,7 +305,7 @@ css.newLoginContentArea {
 1. Add new styles in `/apps/livecycle/core/content/login/login.css,` corresponding to new images added in `/apps/livecycle/core/content/login`.
 1. Use the new styles in `login.jsp` at `/apps/livecycle/core/components`.
 
-For Example:
+   For Example:
 
 
    ```css
@@ -321,7 +321,7 @@ For Example:
    ```
 
 
-    * Modify following in /apps/livecycle/core/components/login.jsp.
+   * Modify following in /apps/livecycle/core/components/login.jsp.
 
    ```jsp
 

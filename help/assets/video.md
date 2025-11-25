@@ -665,7 +665,7 @@ You can observe the lifecycle status of any caption or audio track file uploaded
 | Processed | After processing is complete, the caption or audio track file, or the original audio track associated with the primary video, appear in a "Processed" state. You can preview caption and audio track files that appear as "Processed" *before* you publish the video live. |
 | Published | A "Published" state represents a similar state as "Published" for a primary video. Assets are published when the primary video is published and are available on the public Dynamic Media URL. |
 | Failed | A "Failed" state means that processing of a caption or audio track file did not complete. Delete the caption or audio track file and upload again. |
-| Unpublished | When a published primary video is unpublished explicitly, any caption or audio track files that you added to the video, are also unpublished. |      
+| Unpublished | When a published primary video is unpublished explicitly, any caption or audio track files that you added to the video, are also unpublished. |
 
 ![Status column highlighted for Captions and Audio Tracks fields.](assets-dm/msma-lifecycle-status2.png)*Lifecycle status of each uploaded caption and audio track file.*
 

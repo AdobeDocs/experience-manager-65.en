@@ -3,7 +3,7 @@ title: AI Assistant in AEM 6.5
 description: Use AI Assistant to help you find answers, and troubleshoot for the solutions that are available in Adobe Experience Manager.
 solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
-role: Admin, Architect, Developer, User
+role: Admin, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
 
 ---
@@ -105,7 +105,7 @@ For example, in your prompt, it helps to name the AEM solution you are working i
 | --- | --- |
 | Operational insights | <ul><li>How many development environments exist in my tenant?</li><li>Who started the last production pipeline?</li></ul> |
 | Troubleshooting | <ul><li>Why is my production pipeline failing?</li></ul>  |
-| Task and automation | <ul><li>Configure a code quality pipeline from a dev branch for me.</li></ul>  | 
+| Task and automation | <ul><li>Configure a code quality pipeline from a dev branch for me.</li></ul>  |
 
 
 ## Use AI Assistant in AEM {#ai-use} 
@@ -176,9 +176,9 @@ Share your feedback on your experience with AI Assistant in AEM through the foll
 
 | Click | Description |
 | --- | --- |
-| ![Thumbs up outine icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Indicate what went well and to share positive feedback. | 
+| ![Thumbs up outine icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Indicate what went well and to share positive feedback. |
 | ![Thumbs down outine icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Provide suggestions for improvement. Add specific comments about your experience, which are reviewed daily. |
-| ![Flag icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Report concerns or provide detailed feedback about your interaction with AI Assistant in AEM. |  
+| ![Flag icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Report concerns or provide detailed feedback about your interaction with AI Assistant in AEM. |
 
 ## Frequently asked questions about AI Assistant in AEM {#ai-faq}
 

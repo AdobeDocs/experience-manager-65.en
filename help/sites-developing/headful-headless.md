@@ -4,7 +4,7 @@ description: AEM projects can be implemented in a headful and headless model, bu
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 ---
 # Headful and Headless in AEM {#headful-headless}
 

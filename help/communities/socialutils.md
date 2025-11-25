@@ -20,8 +20,8 @@ The following tables list the methods to use in place of `SocialUtils` methods.
 
 ## SocialResourceUtilities Package  {#socialresourceutilities-package}
 
-| Methods in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
-|---|
+| Methods in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities | Notes |
+|---|---|
 | Boolean checkPermission(ResourceResolver resolver, String path, String action) |  |
 | SocialResourceProvider getSocialResourceProvider(Resource resource) |  |
 | SocialResourceConfiguration getStorageConfig(Resource resource) |  |
@@ -36,8 +36,8 @@ The following tables list the methods to use in place of `SocialUtils` methods.
 | String UGCToResourcePath(String ugcPath) |method signature changed |
 | String UGCToResourcePath(String ugcPath, ResourceResolver resolver) |new |
 
-| Methods in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
-|---|
+| Methods in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities | Notes |
+|---|---|
 | SocialResourceProvider getSocialResourceProvider(Resource resource) |replaces SocialResourceProvider getConfiguredProvider(Resource resource) |
 
 ## SCFUtilities Package {#scfutilities-package}
