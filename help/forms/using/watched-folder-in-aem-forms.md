@@ -96,9 +96,9 @@ You can configure the following properties for a Watched Folder.
   * Files with specific names; for example, data&#42; would exclude files and folders named data1, data2, and so on.
   * Files with composite expressions in the name and extension, as in these examples:
 
-    * Data[0-9][0-9][0-9].[dD][aA]'port'
-    * &#42;.[dD][Aa]'port'
-    * &#42;.[Xx][Mm][Ll]
+    * Data`[0-9][0-9][0-9]`.`[dD][aA]`'port'
+    * &#42;.`[dD][aA]`'port'
+    * &#42;.`[Xx][Mm][Ll]`
 
 For more information about file patterns, see [About file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
@@ -109,10 +109,10 @@ For more information about file patterns, see [About file patterns](../../forms/
 
 * Files with composite expressions in the name and extension, as in these examples:
 
-  * Data[0-9][0-9][0-9].[dD][aA]'port'
+  * Data`[0-9][0-9][0-9]`.`[dD][aA]`'port'
 
-    * &#42;.[dD][Aa]'port'
-    * &#42;.[Xx][Mm][Ll]
+    * &#42;.`[dD][aA]`'port'
+    * &#42;.`[Xx][Mm][Ll]`
 
 For more information about file patterns, see [About file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -566,9 +566,9 @@ Administrators can specify the type of file that can invoke a service. Multiple 
 * Files with specific names; for example, data.&#42;
 * Files with composite expressions in the name and extension, as in these examples:
 
-  * Data[0-9][0-9][0-9].[dD][aA]'port'
-  * &#42;.[dD][Aa]'port'
-  * &#42;.[Xx][Mm][Ll]
+  * Data`[0-9][0-9][0-9]`.`[dD][aA]`'port'
+  * &#42;.`[dD][aA]`'port'
+  * &#42;.`[Xx][Mm][Ll]`
 
 * The administrator can define the file pattern of the output folder in which to store the results. For the output folders (result, preserve, and failure), the administrator can specify any of these file patterns:
 * %Y = year (full)

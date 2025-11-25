@@ -84,14 +84,14 @@ Adobe Experience Manager operates with the following versions of the Java&trade;
 
 | **Platform** | **Support Level** | **Link** |
 |---|---|---|
-| Oracle Java&trade; SE 21 JDK | Z: Not supported `[1]` |
-| Oracle Java&trade; SE 17 JDK | Z: Not supported `[1]` |
+| Oracle Java&trade; SE 21 JDK | Z: Not supported `[1]` ||
+| Oracle Java&trade; SE 17 JDK | Z: Not supported `[1]` ||
 | Oracle Java&trade; SE 11 JDK - 64-bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
-| Oracle Java&trade; SE 10 JDK | Z: Not supported `[1]` |
-| Oracle Java&trade; SE 9 JDK | Z: Not supported `[1]` |
+| Oracle Java&trade; SE 10 JDK | Z: Not supported `[1]` ||
+| Oracle Java&trade; SE 9 JDK | Z: Not supported `[1]` ||
 | Oracle Java&trade; SE 8 JDK - 64-bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
-| IBM&reg; J9 VM - build 2.9, JRE 1.8.0 | A: Supported `[2]` |
-| IBM&reg; J9 VM - build 2.8, JRE 1.8.0 | A: Supported `[2]` |
+| IBM&reg; J9 VM - build 2.9, JRE 1.8.0 | A: Supported `[2]` ||
+| IBM&reg; J9 VM - build 2.8, JRE 1.8.0 | A: Supported `[2]` ||
 | Azul Zulu OpenJDK 11 - 64-bit | A: Supported `[3]` | |
 | Azul Zulu OpenJDK 8 - 64-bit | A: Supported `[3]` | |
 

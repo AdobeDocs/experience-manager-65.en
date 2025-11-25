@@ -386,7 +386,7 @@ In both cases, you can define the expected number of transactions per second whe
 | Homepage Single User |Average |1 |1 |  |  |
 |   |Peak |1 |3 |  |  |
 | Homepage 100 Users |Average |100 |3 |  |  |
-|   |Peak |100 |3 |  |
+|   |Peak |100 |3 |  ||
 
 #### Combined Component Tests {#combined-component-tests}
 

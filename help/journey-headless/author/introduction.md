@@ -4,7 +4,7 @@ description: An introduction to the powerful, and flexible, headless features of
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin, Developer, User, Leader
 ---
 # Authoring for Headless with AEM - An Introduction {#author-headless-introduction}
 

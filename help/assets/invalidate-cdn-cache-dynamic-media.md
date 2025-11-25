@@ -86,7 +86,7 @@ In all cases, either the entire batch is processed for invalidation, or the enti
 | Error | Explanation |
 | --- | --- |
 | *Failed to retrieve URLs for selected assets.* | Occurs if any of the following scenarios are met:<br>- A Dynamic Media configuration is not found.<br>- There is an exception while retrieving a service user through which the Dynamic Media configuration is read.<br>- The Publish server or the company root used to form the URLs is missing in the Dynamic Media configuration. |
-| *Some URLs are not defined correctly. Correct and resubmit.* | Occurs if the IPS CDN cache invalidation API returns an error that the URL is referring to a different company. Or, if the URL is not valid as per the validation done by the IPS `cdnCacheInvalidation` API. | 
+| *Some URLs are not defined correctly. Correct and resubmit.* | Occurs if the IPS CDN cache invalidation API returns an error that the URL is referring to a different company. Or, if the URL is not valid as per the validation done by the IPS `cdnCacheInvalidation` API. |
 | *Failed to invalidate CDN cache.* | Occurs if the CDN cache invalidation request fails for any other reason. |
 | *No URLs entered to be invalidated.* | Occurs if there are no URLs present in the **[!UICONTROL CDN Invalidation - Confirm]** page, and you select **[!UICONTROL Submit]**. |
 

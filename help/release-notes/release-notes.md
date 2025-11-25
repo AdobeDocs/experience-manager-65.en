@@ -580,7 +580,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 ## Deprecated and removed features{#removed-deprecated-features}
 
-See [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md/) for a detailed list of all features deprecated or removed for AEM 6.5.
+See [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md) for a detailed list of all features deprecated or removed for AEM 6.5.
 
 ### SPA Editor {#spa-editor}
 

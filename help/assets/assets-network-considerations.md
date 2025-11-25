@@ -2,7 +2,7 @@
 title: Network considerations and requirements
 description: Discusses network considerations when designing an [!DNL Adobe Experience Manager Assets] deployment.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets

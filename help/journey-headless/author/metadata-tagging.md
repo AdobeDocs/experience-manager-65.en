@@ -4,7 +4,7 @@ description: Learn about defining Metadata and Tagging for Content Fragments
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin, Developer, User, Leader
 ---
 # Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
 

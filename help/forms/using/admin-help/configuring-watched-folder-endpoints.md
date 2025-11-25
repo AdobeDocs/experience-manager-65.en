@@ -152,9 +152,9 @@ You can use file patterns to exclude:
 * Files with specific names; for example, data.&ast; would exclude files and folders named *data1*, *data2*, and so on.
 * Files with composite expressions in the name and extension, as in these examples:
 
-    * Data[0-9][0-9][0-9].[dD][aA]'port'
-    * &ast;.[dD][Aa]'port'
-    * &ast;.[Xx][Mm][Ll]
+    * Data`[0-9][0-9][0-9]`.`[dD][aA]`'port'
+    * &ast;.`[dD][aA]`'port'
+    * &ast;.`[Xx][Mm][Ll]`
 
 For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -168,9 +168,9 @@ You can use file patterns to include:
 * Files with specific names; for example, data.&ast; would include files and folders named *data1*, *data2*, and so on.
 * Files with composite expressions in the name and extension, as in these examples:
 
-    * Data[0-9][0-9][0-9].[dD][aA]'port'
-    * &ast;.[dD][Aa]'port'
-    * &ast;.[Xx][Mm][Ll]
+    * Data`[0-9][0-9][0-9]`.`[dD][aA]`'port'
+    * &ast;.`[dD][aA]`'port'
+    * &ast;.`[Xx][Mm][Ll]`
 
 For more information about file patterns, see [About file patterns](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -240,9 +240,9 @@ Administrators can specify the type of file that can invoke a service. Multiple 
 * Files with specific names. For example, data.&ast;
 * Files with composite expressions in the name and extension, as in these examples:
 
-    * Data[0-9][0-9][0-9].[dD][aA]'port'
-    * &ast;.[dD][Aa]'port'
-    * &ast;.[Xx][Mm][Ll]
+    * Data`[0-9][0-9][0-9]`.`[dD][aA]`'port'
+    * &ast;.`[dD][aA]`'port'
+    * &ast;.`[Xx][Mm][Ll]`
 
 The administrator can define the file pattern of the output folder in which to store the results. For the output folders (result, preserve, and failure), the administrator can specify any of these file patterns:
 

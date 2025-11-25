@@ -4,7 +4,7 @@ description: A Quick Guide to Web Content Accessibility Guidelines (WCAG) versio
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
+role: Developer, Leader, User
 ---
 # A Quick Guide to WCAG 2.1{#quick-guide-to-wcag}
 
@@ -125,15 +125,15 @@ The list of techniques is not complete and WAI is constantly updating the list w
 
 This refers to a series of documents, which provide advice helping readers to appreciate the purpose of specific guidelines and success criteria. You can [download an introduction, plus links to more detailed information](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Each individual guideline and success criterion also has its own ‘Understanding’ page, providing information on:
+Each individual guideline and success criterion also has its own 'Understanding' page, providing information on:
 
 * The intent of the guideline;
 * Specific success criteria;
 * Advisory techniques, which help in meeting the requirements of the guideline, but which do not fall under any specific success criterion.
 
-Each success criterion’s individual "understanding" page provides information on:
+Each success criterion's individual "understanding" page provides information on:
 
-* The success criterion’s intent;
+* The success criterion's intent;
 * General examples of how the success criterion can be met;
 * Related (non W3C) resources on how to meet the success criterion;
 * Techniques and failures: specific and detailed examples of how the success criterion can be met (described in more detail below)
@@ -143,7 +143,7 @@ An example can be found at: [Understanding Success Criterion 1.1.1 ("Non-text co
 
 ### How to Meet WCAG 2.1 {#how-to-meet-wcag}
 
-The ‘How to Meet’ section is available on the [How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) page. This section provides an alternative presentation of WCAG, allowing readers to refine the content of the guidelines to those most relevant to their own interests and/or circumstances. Readers can filter the success criteria techniques they would like to view by specifying particular web content technologies such as Cascading Style Sheets or scripting, or specifying a particular priority level(s).
+The 'How to Meet' section is available on the [How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) page. This section provides an alternative presentation of WCAG, allowing readers to refine the content of the guidelines to those most relevant to their own interests and/or circumstances. Readers can filter the success criteria techniques they would like to view by specifying particular web content technologies such as Cascading Style Sheets or scripting, or specifying a particular priority level(s).
 
 Without filtering, this resource provides all success criteria grouped by guideline. For each success criterion, the following is provided:
 

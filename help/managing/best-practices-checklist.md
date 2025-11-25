@@ -12,7 +12,7 @@ content-type: reference
 exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 ---
 # The Checklist{#the-checklist}
 

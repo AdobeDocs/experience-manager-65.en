@@ -438,7 +438,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |||
 |--- |--- |
-|`-l (--linkFormat) <format>`|printf format for hotfix links (name,id), for example, `[CQ520_HF_%s|%s]`|
+|`-l (--linkFormat) <format>`|printf format for hotfix links (name,id), for example, `[CQ520_HF_%s\|%s]`|
 |`-v (--verbose)`|verbose output|
 |`-q (--quiet)`|prints as little as possible|
 |`<localPaths> [<localPaths> ...]`|local path|
