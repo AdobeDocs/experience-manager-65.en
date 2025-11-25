@@ -4,7 +4,7 @@ description: Adobe Experience Manager comes with various out-of-the-box componen
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Components{#components}
 

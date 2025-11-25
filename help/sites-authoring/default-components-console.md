@@ -4,7 +4,7 @@ description: The Components console lets you browse through all components defin
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Components Console{#components-console}
 

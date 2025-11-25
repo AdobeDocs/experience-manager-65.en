@@ -10,7 +10,7 @@ content-type: reference
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Troubleshooting AEM when Authoring{#troubleshooting-aem-when-authoring}
 

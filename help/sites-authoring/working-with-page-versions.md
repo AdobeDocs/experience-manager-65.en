@@ -4,7 +4,7 @@ description: Create, compare, and restore versions of a page in Adobe Experience
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Working with Page Versions{#working-with-page-versions}
 

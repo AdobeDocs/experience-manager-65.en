@@ -4,7 +4,7 @@ description: Configuring Adobe Experience Manager Components in Design Mode.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Configuring default components in Design Mode{#configuring-components-in-design-mode}
 

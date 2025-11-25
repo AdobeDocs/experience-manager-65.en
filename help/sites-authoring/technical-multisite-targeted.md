@@ -12,7 +12,7 @@ topic-tags: personalization
 exl-id: d8ba91ff-ad6e-4540-baff-a2c0c764a299
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # How Multisite Management for Targeted Content is Structured{#how-multisite-management-for-targeted-content-is-structured}
 
