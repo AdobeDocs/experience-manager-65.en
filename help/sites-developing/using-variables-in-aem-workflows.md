@@ -24,7 +24,7 @@ The following video demonstrates how you can create, set, and use variables in A
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[Use variables video](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
 Variables are an extension of the [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface. You can use [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript to access metadata saved using variables.
 
@@ -98,7 +98,7 @@ Select a variable of XML type that you want to store an XML file. Query the XML 
 
 In this example, select a **formdata** XML variable to store the **cc-app.xml** file. Query the **formdata** variable so you can set the value for the **emailaddress** string variable to store the value for the **emailAddress** property available in the **cc-app.xml** file.
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Set value of a variable")
+[Set variable video](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### Example 2: Use an expression to store value based on other variables {#example2}
 
@@ -108,7 +108,7 @@ In this example, use the expression editor to define an expression to calculate 
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[Variables expression video](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Use expression editor {#use-expression-editor}
 
@@ -157,7 +157,7 @@ In this example, before defining the routing expression, use [example 2](/help/s
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[OR split video](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Similarly, select an external script path or specify the ECMA script for routing expressions to evaluate the active branch. Select **[!UICONTROL Rename Branch]** to specify an alternate name for the branch.
 
