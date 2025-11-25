@@ -1714,7 +1714,7 @@ The following fragments are used for the appropriate model.
 | Lincoln | Abe | |
 | Smith | Adam | |
 | Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke | | 
+| Marsh | Duke | |
 | Smith | Joe | |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |

@@ -387,7 +387,7 @@ The following table explains how the user permissions work while accessing the [
 
 | User | Group | Permissions | Accept Stock configuration in User Preferences | Access Assets | Access Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
-| admin | N/A | All | N/A | Yes | Yes |  
+| admin | N/A | All | N/A | Yes | Yes |
 | test-doc1 | DAM user | /conf/global /settings/stock/cloud-config | Yes | Yes | Yes |
 | test-doc1 | DAM user | /conf/global /settings/stock/cloud-config | No | Error: Failed to load data | No |
 | test-doc1 | DAM user | **allow**: /conf/global /settings/stock     **deny**: /cloud-config | Stock configuration is not visible | Yes | No |

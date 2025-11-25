@@ -4,7 +4,7 @@ description: Learn about the concepts and mechanics of modeling content for your
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin, Developer
 ---
 # Learn about Creating Content Fragment Models in AEM {#architect-headless-content-fragment-models}
 

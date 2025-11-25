@@ -27,7 +27,7 @@ The following diagram shows the rendering of content services.
 
 ## Requesting JSON {#requesting-json}
 
-Use **<RESOURCE.caas[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;].json** to request JSON.
+Use **<RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json** to request JSON.
 
 <table>
  <tbody>

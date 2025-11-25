@@ -6,7 +6,7 @@ description: Discover how to manage an AEM project successfully, with support fr
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 ---
 # AEM 6.5 Managing User Guide
 
