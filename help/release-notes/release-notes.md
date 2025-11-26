@@ -23,7 +23,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 | Version  | 6.5.24.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
 | Date     | November 20, 2025 <!-- UPDATE FOR EACH NEW RELEASE -->              |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcq-6.5.0-hotfix-GRANITE-61551-SP23-1.2.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 <!-- OLD DOWNLOAD URL
 (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
@@ -34,14 +34,9 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
+<!--
 ## Key features and enhancements
-
-### Sites {#sites-sp24}
-
-* A ()
-
-
-### Forms {#forms-sp24}
+-->
 
 
 
@@ -288,7 +283,7 @@ ContextHub no longer injects a second jQuery copy on publish pages. The segment-
 
 #### Universal editor {#sites-universal-editor-6524}
 
-* Configuring the Query Token Authentication Handler confused users because labels didn't match the fields. The UI pulled text from the path and displayed the wrong names. The fix restores clear, accurate labels for service ranking and query token options. (SITES-31305)
+Configuring the Query Token Authentication Handler confused users because labels didn't match the fields. The UI pulled text from the path and displayed the wrong names. The fix restores clear, accurate labels for service ranking and query token options. (SITES-31305)
 
 
 ### [!DNL Assets]{#assets-6524}
@@ -437,7 +432,7 @@ Turning on Sling Main Servlet **Check Content-Type** overrides broke `.model.jso
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.24.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions. <!-- UPDATE FOR EACH NEW RELEASE -->
-* The Service Pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
+* The Service Pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip).
 * On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.24.0 on one of the Author instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -452,7 +447,7 @@ Turning on Sling Main Servlet **Check Content-Type** overrides broke `.model.jso
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the Service Sack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Download the Service Sack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -659,7 +654,7 @@ The following issues have a hotfix available for download and installation. You 
 
 * AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This upgrade delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
 
-#### Other Known Issues {#aem-forms-other-known-issues}
+#### Other known issues {#aem-forms-other-known-issues}
 
 * After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
 
