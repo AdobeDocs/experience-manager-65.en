@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Analyzing Page Performance{#analyzing-page-performance}
 

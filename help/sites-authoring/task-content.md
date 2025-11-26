@@ -8,7 +8,7 @@ content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 
 # Working with Tasks {#working-with-tasks}

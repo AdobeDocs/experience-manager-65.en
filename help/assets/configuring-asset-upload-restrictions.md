@@ -2,7 +2,7 @@
 title: Configure asset upload restrictions
 description: Restrict the type of assets (files) that users can upload 
 contentOwner: AG
-role: Developer, Admin, Architect
+role: Developer, Admin
 feature: Asset Management,Upload
 exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
 solution: Experience Manager, Experience Manager Assets
@@ -20,4 +20,4 @@ You can configure [!DNL Adobe Experience Manager Assets] to restrict the type of
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
-1. Click **[!UICONTROL Save]** to save the changes. If you specify MIME-strings for allowed MIME types, the upload operation fails for any asset with MIME type that doesn’t match the configured MIME strings in these fields.
+1. Click **[!UICONTROL Save]** to save the changes. If you specify MIME-strings for allowed MIME types, the upload operation fails for any asset with MIME type that doesn't match the configured MIME strings in these fields.

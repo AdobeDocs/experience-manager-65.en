@@ -3,7 +3,7 @@ title: Best Practices for [!DNL Assets]
 description: Enhances system stability and performance under load by identifying and adhering to best practices that depend on your deployment and configuration.
 contentOwner: AG
 feature: Asset Management
-role: Architect, Admin
+role: Developer, Admin
 exl-id: 6b50f1b3-9c1c-47c8-a43e-6f40c42a41cc
 solution: Experience Manager, Experience Manager Assets
 ---

@@ -95,7 +95,7 @@ Currently, the pixel density of the display comes from Akamai CDN header values.
 
 | Permitted values in an image's URL | Description |
 |---|---|
-| `dpr=off` | Turn off DPR optimization at an individual image URL level.| 
+| `dpr=off` | Turn off DPR optimization at an individual image URL level.|
 | `dpr=on,dprValue` | Override the DPR value detected by Smart Imaging, with a custom value (as detected by any client-side logic or other means). Permitted value for `dprValue` is any number greater than 0.  |
 
 >[!NOTE]

@@ -280,7 +280,7 @@ In addition to the above functionality, consider the following:
 | PNG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/image-sets.md), [Mixed Media](/help/assets/mixed-media-sets.md), and [Spin](/help/assets/spin-sets.md) |
 | PSD &Dagger; | &#10003;| &minus; | &minus; | &minus; | &minus; | &minus; |
 | TIFF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/image-sets.md), [Mixed Media](/help/assets/mixed-media-sets.md), and [Spin](/help/assets/spin-sets.md) |
-| WEBP | &minus; | &minus; | &minus; | &#10003; | &minus; | &minus; | 
+| WEBP | &minus; | &minus; | &minus; | &#10003; | &minus; | &minus; |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 

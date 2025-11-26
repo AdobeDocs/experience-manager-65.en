@@ -10,7 +10,7 @@ topic-tags: site-features
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Scaffolding{#scaffolding}
 

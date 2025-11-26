@@ -4,7 +4,7 @@ description: An Introduction to Adobe Experience Manager (AEM) and the Web Acces
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
+role: Developer, Leader, User
 ---
 # AEM and the Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
 

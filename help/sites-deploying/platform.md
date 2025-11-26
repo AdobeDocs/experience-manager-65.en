@@ -9,7 +9,7 @@ legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
-role: Architect
+role: Developer
 ---
 
 # Introduction to the AEM Platform{#introduction-to-the-aem-platform}

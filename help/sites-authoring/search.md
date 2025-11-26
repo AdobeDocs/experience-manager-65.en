@@ -11,7 +11,7 @@ docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 ---
 # Search{#searching}
 

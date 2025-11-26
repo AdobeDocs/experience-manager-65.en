@@ -4,7 +4,7 @@ description: Learn about the types of metadata and how to manage metadata for as
 contentOwner: AG
 mini-toc-levels: 1
 feature: Tagging, Metadata
-role: Architect, Leader
+role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: yes
 solution: Experience Manager, Experience Manager Assets
@@ -110,7 +110,7 @@ The metadata import is asynchronous and does not impede system performance. Simu
     |:---|:---|
     | [!UICONTROL Batch Size] | Number of assets in a batch for which metadata is to be imported. Default value is 50. Maximum value is 100. |
     | [!UICONTROL Field Separator] | Default value is `,` (a comma). You can specify any other character. |
-    | [!UICONTROL Multi Value Delimiter] | Separator for metadata values. Default value is `|`. |
+    | [!UICONTROL Multi Value Delimiter] | Separator for metadata values. Default value is `\|`. |
     | [!UICONTROL Launch Workflows] | False by default. When set to `true` and default settings are in effect for the [!UICONTROL DAM Metadata WriteBack] workflow (that writes metadata to the binary XMP data). Enabling the workflows slows the system down. |
     | [!UICONTROL Asset Path Column Name] | Defines the column name for the CSV file with assets. |
 
