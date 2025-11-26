@@ -22,7 +22,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 | -------- | ---------------------------- |
 | Version  | 6.5.24.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
-| Date     | November 20, 2025 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Date     | November 26, 2025 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 <!-- OLD DOWNLOAD URL
