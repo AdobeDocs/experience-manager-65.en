@@ -34,11 +34,12 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!--
+
 ## Key features and enhancements
--->
 
+### Forms
 
+* **Support for passing custom XCI:** Added support for passing custom XCI in parameters of the cmdline application xmlformcmd. This enables users to specify custom XCI files for testing, enhancing flexibility and control over the testing process. (LC-3923248)
 
 
 ## Fixed issues in Service Pack 24 {#fixed-issues}
@@ -296,25 +297,40 @@ Configuring the Query Token Authentication Handler confused users because labels
 
 ### [!DNL Forms]{#forms-6524}
 
+<!--
 >[!NOTE]
 >
 >Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, December 4, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
-
-<!--
-#### Forms Designer 
-
-#### Forms
-
-#### Forms JEE 
-
-#### Forms Captcha {#forms-captcha-6524} 
-
-#### XMLFM {#forms-xmlfm-6524}
-
-#### [!DNL Forms Designer] {#forms-designer-6524}
-
 -->
 
+#### Forms Designer 
+
+* Users experienced issues with hyperlinks not being clickable in specific test cases, affecting their ability to navigate and verify links within the application. (LC-3923505)
+* Users experienced accessibility issues with PDFs generated using AEM Forms Designer 6.5.23 for non-Latin languages. Path tags were not placed inside an Artifact container, causing failures in PAC and screen-reader checks. (LC-3923295) 
+* Users experienced broken hyperlinks in Portable Document Format (PDF) text boxes after patching from version 6.5.21 to 6.5.23 using the Output Service. (LC-3923290)
+* Users experienced accessibility issues with Document of Record (DoR) forms. When input fields were empty, screen readers only read the field captions and not the values, making it difficult for users with disabilities to navigate the forms effectively. (LC-3923234)
+* Users faced accessibility problems in DoR PDF forms where NVDA incorrectly read "unavailable" for checkboxes, radio buttons, and text fields, often repeating the message and creating confusion for screen-reader users. (LC-3923201)
+* Users experienced a tab order discrepancy in the XDP when adding new fields. The existing tab order changed unexpectedly, affecting form navigation. (LC-3923183, LC-3922630)
+* Users experienced issues with HTML rendering. When using the `docReady` event, it did not trigger correctly in HTML, causing scripts not to execute as expected. (LC-3923118)
+* Users experienced issues with PDF rendering scripts not working in the AEM Forms Cloud production environment. (LC-3923082 )
+* Users experienced issues with floating fields in forms. When using different data files, floating fields rendered correctly with one file but not with the other, despite minor differences unrelated to the fields. (LC-3923056)
+* Users experienced a blank Spanish master page when only English content was selected in an XDP (XML Data Package) with multiple master pages. (LC-3923009)
+* Users observed outdated copyright year information in the AEM Designer. This occurred in the pop-up box at startup, the "About" section, and the "Legal Notices" section, displaying "2003-2024" instead of "2003-2025". (LC-3923005)
+* Users encountered a blank PDF page when using pagination in AEM Forms Designer. The issue occurred when selecting "Top of the Next Page/Top of Page" for the WireAdviceHeader, disrupting the layout of data iterations. (LC-3922997, LC-3922830)
+* Users experienced an issue where the filedigest value for Extensible Markup Language (XML) Schema Definition (XSD) was not persisting in the 64-bit version of AEM Forms Designer. (LC-3922924)
+* Users experienced unstable hyperlink formatting in AEM Designer 6.5.19, where hyperlinks inside a textbox incorrectly adopted styles from surrounding text, such as the first character's formatting. (LC-3922376)
+* Users experienced issues rendering HTML forms via Mobile rendering on MAC with AEM Forms OSGI v6.5.22. (LC-3923058)
+* Users experienced "path object not tagged" errors in Portable Document Format (PDF) files when using bordered or backgrounded fields in XDP templates created with Designer 6.5.23 and analyzed with PAC 2024. (LC-3923013)
+* Users experienced an error with the background color of the heading "Dati Richiedente" in Portable Application Component (PAC), receiving the message "path object not tagged". (LC-3922912)
+* Users experienced an issue where specific templates substituted the intended font with a condensed font. (LC-3922330)
+
+#### Adaptive Forms
+
+* Users experienced missing options in the Rule Editor. When authors wrote rules on number inputs, the Query, UTM, and Browser details options were not available. (FORMS-21660)
+* Users experienced application crashes when interacting with OdataResponse due to a null pointer exception. (FORMS-20344)
+* Users experienced issues when creating rules to show a panel and set focus on an element inside it. The setFocus rule executed before the visibility update, causing the focus action to fail. (FORMS-19563)
+* Users experienced issues with component selection in AEM Forms Author. When navigating between tabs in edit mode, some containers became unselectable, preventing easy identification and interaction. (FORMS-18525)
+* Users experienced an "Invalid URL" error when attempting to annotate assets in AEM 6.5.22. (NPR-42684)
 
 ### Foundation {#foundation-6524}
 
