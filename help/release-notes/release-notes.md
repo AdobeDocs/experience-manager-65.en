@@ -387,11 +387,9 @@ Publishing AEM Target activities no longer fails when authors set start and end 
 #### Security{#foundation-security-6524}
 -->
 
-
 #### Sling{#foundation-sling-6524}
 
-* Corrected caching behavior on SAML-protected pages. AEM adds the right cache-control and varies metadata for authenticated sessions so proxies and the Dispatcher skip caching personalized responses. Anonymous content still caches normally, while signed-in views remain user-specific. (NPR-42640) 
-
+* Fixed an unexpected JSP compilation error with the `org.apache.sling.scripting.jsp:2.6.0` bundle. (SLING-12442) 
 * The platform upgrades the core Sling Engine from 2.16.2 to 2.16.6. The newer engine hardens input validation and stabilizes request processing under load. (NPR-43105)
 
 #### SPA editor {#foundation-spa-editor-6524}
