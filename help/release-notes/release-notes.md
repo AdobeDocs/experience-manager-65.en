@@ -403,11 +403,9 @@ Publishing AEM Target activities no longer fails when authors set start and end 
 #### Security{#foundation-security-6524}
 -->
 
-
 #### Sling{#foundation-sling-6524}
 
-* Corrected caching behavior on SAML-protected pages. AEM adds the right cache-control and varies metadata for authenticated sessions so proxies and the Dispatcher skip caching personalized responses. Anonymous content still caches normally, while signed-in views remain user-specific. (NPR-42640) 
-
+* Fixed an unexpected JSP compilation error with the `org.apache.sling.scripting.jsp:2.6.0` bundle. (SLING-12442) 
 * The platform upgrades the core Sling Engine from 2.16.2 to 2.16.6. The newer engine hardens input validation and stabilizes request processing under load. (NPR-43105)
 
 #### SPA editor {#foundation-spa-editor-6524}
@@ -553,20 +551,6 @@ The preferred editors for managing headless content in AEM are now:
 ## Known issues{#known-issues}
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
-
-* **Issue with JSP scripting bundle in AEM 6.5.21-6.5.24 and AEM 6.5 LTS GA**
-AEM 6.5.21 to 6.5.24, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
-
-  When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
-
-  * `java.io.IOException: classFile.delete() failed`
-  * `java.io.IOException: tmpFile.renameTo(classFile) failed`
-  * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
-  * `java.io.FileNotFoundException`
-
-  When this error occurs, the only recovery method is to restart the AEM instance.
-
-  Contact customer support at Adobe and reference this release note for a resolution.
 
 * **Related to Oak**
   From Service Pack 13 and above, the following error log has begun to appear which affects the persistence cache:
