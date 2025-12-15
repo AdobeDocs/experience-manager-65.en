@@ -31,6 +31,10 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 
 >[!NOTE]
 >
+>Be aware of the [Best Practices](/help/assets/content-fragments/content-fragments.md#best-practices) when working with your Content Fragment Models and Content Fragments.
+
+>[!NOTE]
+>
 >Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
 
 ## Creating Content Fragments {#creating-content-fragments}
