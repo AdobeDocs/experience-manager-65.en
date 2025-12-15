@@ -8,12 +8,14 @@ solution: Experience Manager, Experience Manager Assets
 ---
 # Working with Content Fragments {#working-with-content-fragments}
 
-With Adobe Experience Manager (AEM), Content Fragments let you design, create, curate, and [publish page-independent content](/help/sites-authoring/content-fragments.md). They let you prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery.
+With Adobe Experience Manager (AEM), Content Fragments let you design, create, curate, and [publish page-independent content](/help/sites-authoring/content-fragments.md). They let you prepare content to be ready for use in multiple locations/over multiple channels, ideal for headless delivery.
 
 Content fragments contain structured content:
 
 * They are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
+
 * The structure can range between:
+
   * Basic
     * For example, a single, multi-line text field.
     * Used for preparing straightforward content for use in page authoring.
@@ -104,7 +106,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 >[!NOTE]
 >
 >See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites.
---> 
+-->
 
 >[!NOTE]
 >
