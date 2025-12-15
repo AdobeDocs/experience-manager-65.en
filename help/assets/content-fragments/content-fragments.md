@@ -294,3 +294,47 @@ To use your Content Fragments for page authoring, you also need:
 ## Example Usage {#example-usage}
 
 A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment, you must consider what is used and where it is used.
+
+## Best Practices {#best-practices}
+
+Content Fragments can be used to form complex structures. Adobe offers recommendations for best practices when defining, and using, both models and fragments.
+
+### Keep it Simple {#keep-it-simple}
+
+When modeling structured content in AEM, keep content structures as simple as possible to ensure strong system performance and streamlined governance.
+
+### Number of Models {#number-of-models}
+
+Create as many content models as needed, but no more.
+
+Too many models complicate governance and can slow down GraphQL queries. A small set of models, maximum of low tens, is usually sufficient. If you approach the high tens or more, reconsider your modeling strategy.
+
+### Nesting Models and Fragments (very important) {#nesting-models-and-fragments}
+
+Avoid deep or excessive nesting of content fragments using Content Fragment References, which allow fragments to reference other fragments, sometimes across multiple levels. 
+
+Heavy use of Content Fragment references can significantly impact system performance, UI responsiveness, and GraphQL query execution. Aim to keep nesting to no more than ten levels.
+
+### Number of Data Fields and Types per Model {#number-of-data-fields-and-types-per-model}
+
+Include only the data fields and types a model truly needs. 
+
+Overly complex models lead to overly complex fragments that can make authoring difficult and reduce editor performance.
+
+### Rich Text Fields {#rich-text-fields}
+
+Use Rich Text fields (the **Multi line text** Data Type) with consideration.
+
+Limit the number of Rich Text fields per model. Also the amount of text stored in each fragment, and the amount of HTML formatting. Very large rich-text content can negatively affect system performance.
+
+### Number of Variations {#number-of-variations}
+
+Create as many fragment variations as needed, but no more.
+
+Variations add processing time to a Content Fragment, on the author environment and upon delivery too. It is recommended to keep the number of variations to a manageable minimum. 
+
+A best practice is to not exceed ten variations per Content Fragment.
+
+### Test Before Production {#test-before-production}
+
+When in doubt, prototype your intended content structures before rolling them out to production. Early proof-of-concepts together with adequate testing, both technical and user acceptance, can help avoid issues later when facing deadlines in production.
