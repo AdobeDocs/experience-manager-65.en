@@ -489,9 +489,8 @@ For Windows x86:
 >* PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
 >* If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >* PDF Generator does not support Microsoft&reg; Office 365.
->* PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
+>* PDF Generator conversions for OpenOffice are supported on both Windows and Linux&reg;.
 >* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
->* A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator only. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* PDF Generator service does not support Microsoft&reg; Windows 11.
 
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
@@ -527,3 +526,5 @@ XMP write-back is supported and enabled for the following platforms and file for
 ### Requirements for AEM Assets to process metadata-heavy assets on Linux&reg; {#assetsonlinux}
 
 The XMPFilesProcessor process requires the library GLIBC_2.14 to work. Use a Linux&reg; kernel that contains GLIBC_2.14, for example, Linux&reg; kernel version 3.1.x. It improves performance for processing assets that contain a large amount of metadata, like PSD files. Using a previous version of GLIBC leads to error in logs starting with `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+
+For any query related to supported formats or platform versions, contact [AEM Forms support](https://business.adobe.com/in/support/main.html)
