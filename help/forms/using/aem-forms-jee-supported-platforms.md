@@ -816,6 +816,7 @@ Adobe reserves the right to change the third-party reference platforms supported
 
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
 
+For any query related to supported formats or platform versions, contact [AEM Forms support](https://business.adobe.com/in/support/main.html) 
 
 <!--
 
