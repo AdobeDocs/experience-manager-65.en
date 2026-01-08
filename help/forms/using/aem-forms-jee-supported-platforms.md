@@ -510,59 +510,42 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 ### Considerations for PDF Generator 
 
 <table>
-<tbody>
- <tr>
-  <th><p><strong>Product</strong></p> </th>
-  <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
- </tr>
- <tr>
+ <tbody>
+  <tr>
+   <th><p><strong>Product</strong></p> </th>
+   <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
+  </tr>
+  <tr>
    <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> latest version</td>
    <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, and HTM</td>
   </tr>
- <tr>
-  <td>Microsoft&reg; Office 2021  </td>
-  <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
- </tr>
- </tr>
 
- <tr>
-  <td>WordPerfect 2020<br /> </td>
-  <td>WP, WPD</td>
- </tr>
- <tr>
-  <td>Microsoft&reg; Publisher 2019<br /> </td>
-  <td>PUB</td>
- </tr>
- <tr>
-  <td>Microsoft&reg; Publisher 2021<br /> </td>
-  <td>PUB</td>
- </tr>
- <tr>
-  <td>OpenOffice 4.1.10</td>
-  <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
- </tr>
-</tbody>
+  <tr>
+   <td>Microsoft&reg; Office 2021 Professional Plus, retail and volume licenses</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
+  </tr>
+  <tr>
+   <td>
+    <strong>OpenOffice 4.1.15</strong>   </td>
+   <td>
+    ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT<br>
+
+   </td>
+  </tr>
+ </tbody>
 </table>
-
 
 >[!NOTE]
 >
->PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
->
->In addition,:
->
+>- PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
 >- PDF Generator requires Adobe Acrobat Pro DC (32-Bit) to perform the conversion.
 >- PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
->- The Microsoft&reg; Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >- PDF Generator does not support Microsoft&reg; Office 365.
->- PDF Generator supports the 32-bit version of OpenOffice on the Linux&reg; operating system.
->- PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
+>- PDF Generator conversions for OpenOffice are supported on both Windows and Linux&reg;.
 >- The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
->- A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))"
->- PDF Generator service does not support Microsoft&reg; Windows 10.
->- PDF Generator fails to convert files using Microsoft&reg; Visio 2019.
->- PDF Generator fails to convert files using Microsoft&reg; Project 2019.
+>- PDF Generator service does not support Microsoft&reg; Windows 11.
+
 
 PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
 
