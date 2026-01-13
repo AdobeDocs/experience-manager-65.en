@@ -223,7 +223,7 @@ This sample query is a straightforward query to return the `name`of all entries 
 
 **Sample Query**
 
-```xmgraphqll
+```graphql
 query {
   cityList {
     items {
