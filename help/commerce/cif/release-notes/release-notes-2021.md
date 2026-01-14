@@ -125,7 +125,7 @@ Review the minimum system requirements in the table below for the CIF version th
   * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
   * New sitemap component for content and commerce pages
 
-* Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
+* Support for [Adobe Commerce AI Product Recommendation, powered by Adobe AI](https://business.adobe.com/ai/adobe-genai.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
 
 ## Release Date: June  2021
 
@@ -140,7 +140,7 @@ Review the minimum system requirements in the table below for the CIF version th
 * New CIF product and category reference data types for Content Fragments (Incl. product / category picker UI support)
 * New Commerce Content Fragment Core Component
 * Full-text commerce search supported in AEM backend
-* Commerce Core Components support Adobe Commerce Sensei Recs data collection
+* Commerce Core Components support Adobe Commerce AI Recs data collection
 * Improved SEO-friendly URLs for category pages
 * Support for custom HTTP headers per site/config
 
