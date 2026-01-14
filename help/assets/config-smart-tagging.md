@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 ---
 # Prepare [!DNL Assets] for smart tagging {#configure-asset-tagging-using-the-smart-content-service}
 
-Before you can start tagging your assets using Smart Content Services, integrate [!DNL Experience Manager Assets] with Adobe Developer Console to use the smart service of [!DNL Adobe Sensei]. Once configured, train the service using a few images and a tag.
+Before you can start tagging your assets using Smart Content Services, integrate [!DNL Experience Manager Assets] with Adobe Developer Console to use the smart service of [!DNL Adobe AI]. Once configured, train the service using a few images and a tag.
 
 <!--
 >[!NOTE]
