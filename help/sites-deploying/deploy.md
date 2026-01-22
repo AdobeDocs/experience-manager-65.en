@@ -154,7 +154,7 @@ In the following section we describe the **standalone installation**. For detail
 
    UNIX&reg; install location: **/opt/aem**
 
-   Windows install location: **`C:\Program Files\aem`**
+   Windows install location: **`C:\aem`**
 
    Equally, it is common to install sample instances in a folder right on the desktop. In any case, Adobe refers to this location generically as:
 
