@@ -6,15 +6,18 @@ exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
 ---
+
 # Enabling and viewing transaction reports for AEM Forms on JEE {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<span> The Transaction Reporting capability is introduced for AEM Forms on JEE from AEM Forms 6.5.20.0. This feature is disabled by default and can be enabled from the Admin UI.</span>
+
+Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
 * Submission of a document
 * Rendition of a document
 * Conversion of a document from one file format to another 
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). 
 
 ## Enable transaction reporting {#enable-transaction-reporting}
 
