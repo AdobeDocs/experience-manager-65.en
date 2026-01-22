@@ -3,6 +3,7 @@
 .Spotlight-V100
 settings.json
 .history
+.vscode/
 Thumbs.db
 .gitignore
 desktop.ini
@@ -15,3 +16,4 @@ help/forms/using/frl-video.md
 .cursor-agents
 usage-agents.log
 setup-agent.md
+.cursorrules
