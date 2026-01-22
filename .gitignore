@@ -3,13 +3,17 @@
 .Spotlight-V100
 settings.json
 .history
+.vscode/
 Thumbs.db
 .gitignore
 desktop.ini
 /.idea/
 /experience-manager-65.en.iml
 help/forms/using/frl-video.md
+.cursor/
 .cursor/mcp.json
+.cursor-agents/
 .cursor-agents
 usage-agents.log
 setup-agent.md
+.cursorrules
