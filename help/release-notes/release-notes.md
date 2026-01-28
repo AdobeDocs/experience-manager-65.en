@@ -689,9 +689,9 @@ The following issues have a hotfix available for download and installation. You 
 
     ```
 
-* FORMS-21378: When server-side validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
+* **FORMS-21378**: When server-side validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
 
-
+* **FORMS-23703**: When the `contains` rule is configured without a default value, the Server Side validation for an adaptive form fails. You can install latest version of [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) to fix the issue.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
