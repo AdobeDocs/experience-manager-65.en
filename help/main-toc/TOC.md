@@ -1214,6 +1214,7 @@ user-guide-title: AEM 6.5
     + [How to open XFA-based PDF forms on Firefox and Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
     + [XML External Entity (XXE) Vulnerability in BlazeDS](/help/forms/using/xxe-vulnerability-blazeds.md)
     + [EAR Deployment failing on JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
+    + [Mitigating CVE-2025-64775 (Apache Struts) vulnerabilty](/help/forms/using/mitigating-cve-apache-struts.md)
   + Legacy documentation {#legacy-documentation}
     + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](/help/forms/developing/building-xml.md)
     + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](/help/forms/developing/compressing-decompressing-custom-dsc.md)
