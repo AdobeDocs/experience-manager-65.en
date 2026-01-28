@@ -293,7 +293,7 @@ A document of record (DoR) is a flattened PDF version of an adaptive form that y
 * Exclude hidden fields from the DoR.
 * Use `afAcceptLang` request parameter to view DoR in another locale.
 
-### Debugging and testing adaptive forms {#debugging-and-testing-adaptive-forms}
+<!--### Debugging and testing adaptive forms {#debugging-and-testing-adaptive-forms}
 
 [AEM Chrome Plug-in](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/) is a browser extension for Google Chrome that provides tools for debugging adaptive forms. Form authors and developers can use these tools to:
 
@@ -303,7 +303,7 @@ A document of record (DoR) is a flattened PDF version of an adaptive form that y
 * Debug rules and scripts in the form
 * Explore and learn about guideBridge APIs
 
-For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
+For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).-->
 
 ### Validating adaptive forms on AEM server {#validating-adaptive-forms-on-aem-server}
 
