@@ -96,7 +96,7 @@ Adobe Experience Manager operates with the following versions of the Java&trade;
 | Azul Zulu OpenJDK 8 - 64-bit | A: Supported `[3]` | |
 
 1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java&trade; SE products. Java&trade; 9, Java&trade; 10, and Java&trade; 12 are non-LTS releases by Oracle (see [Oracle Java&trade; SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in a production environment, Adobe provides support only for the LTS releases of Java&trade;. Support and distribution of the Oracle Java&trade; SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, is supported by Adobe directly for all AEM customers that use the Oracle Java&trade; SE technology. See the [Java&trade; support policy for Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf). 
-**Important: Oracle Java&trade; 11 is supported until September 2026 at a minimum. Oracle Java&trade; 17 and 21 are supported on [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+**Important: Oracle Java&trade; 17 and 21 are supported on [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. The IBM&reg; JRE is only supported along with WebSphere&reg; Application Server.
  
