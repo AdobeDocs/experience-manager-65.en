@@ -654,8 +654,6 @@ The following issues have a hotfix available for download and installation. You 
 
 * AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This upgrade delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
 
-#### Other known issues {#aem-forms-other-known-issues}
-
 * After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder (FORMS-14926), perform the following steps to resolve the issue:
 
   1. Stop the locators, if they are running.
@@ -692,6 +690,21 @@ The following issues have a hotfix available for download and installation. You 
 * **FORMS-21378**: When server-side validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
 
 * **FORMS-23703**: When the `contains` rule is configured without a default value, the Server Side validation for an adaptive form fails. You can install latest version of [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) to fix the issue.
+
+* Form Data Model connectors may fail to authenticate because the required keywords and regex pattern are not allowed by default. To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
+
+  * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
+  * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
+
+    >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+
+* **FORMS-23979.**:  HTML-to-PDF conversion (PDFG) may experience intermittent timeouts. A newer version of the Forms add-on for SP24 was subsequently released that includes the fix. If you encounter this issue, update your environment to the [latest released Forms add-on for 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+
+* **FORMS-23722** (File attachments missing in Assign Task): When a form with a **File Attachment** field is submitted to an AEM Workflow that uses an **Assign Task** step, the attachments do not appear when the task is opened from Inbox. The files are saved correctly to the repository and are visible in CRX; only the Assign Task step UI does not show them.
+
+* **FORMS-23717** After upgrading to **AEM Forms 6.5.24.0**, `server.log` and `error.log` can be flooded with repeated WARN messages such as *Secure parser factory creation failed* or *Security attribute ... is not supported*. Logs may grow by about **5–10 lines per second** (hundreds of MB per hour), which can fill disk and block production rollout. **Fix:** Included in AEM Forms **6.5.25.0**. **Until then:** 
+
+  To reduce log volume, set the logging level for `com.adobe.util.XMLSecurityUtil` to `ERROR` in your application server config or via JVM argument `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. This only hides the messages and does not fix the underlying cause.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
