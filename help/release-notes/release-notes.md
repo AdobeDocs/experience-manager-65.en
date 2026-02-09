@@ -702,6 +702,10 @@ The following issues have a hotfix available for download and installation. You 
 
 * **FORMS-23722** (File attachments missing in Assign Task): When a form with a **File Attachment** field is submitted to an AEM Workflow that uses an **Assign Task** step, the attachments do not appear when the task is opened from Inbox. The files are saved correctly to the repository and are visible in CRX; only the Assign Task step UI does not show them.
 
+* **Excessive XMLSecurity WARN logs**: After upgrading to **AEM Forms 6.5.24.0**, `server.log` and `error.log` can be flooded with repeated WARN messages such as *Secure parser factory creation failed* or *Security attribute ... is not supported*. Logs may grow by about **5–10 lines per second** (hundreds of MB per hour), which can fill disk and block production rollout. **Fix:** Included in AEM Forms **6.5.25.0**. **Until then:** 
+
+  To reduce log volume, set the logging level for `com.adobe.util.XMLSecurityUtil` to `ERROR` in your application server config or via JVM argument `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. This only hides the messages and does not fix the underlying cause.
+
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
 The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
