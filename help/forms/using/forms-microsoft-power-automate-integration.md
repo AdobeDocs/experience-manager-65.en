@@ -115,11 +115,11 @@ Your AEM Forms Author instance is now connected with Microsoft&reg; Power Automa
 
 >[!IMPORTANT]
 >
->Tokens used for the Microsoft&reg; Power Automate connection expire after 90 days. To keep the integration working, re-authenticate and re-publish both the Microsoft&reg; Power Automate Dataverse and Microsoft&reg; Power Automate Flow Service cloud configurations before or when the token expires. 
+>Tokens used for the Microsoft&reg; Power Automate connection expire after 90 days.
 >
-> After refreshing the token, [Publish both the Microsoft&reg; Power Automate Dataverse and Microsoft&reg; Power Automate Flow Service Cloud Configurations](#publish-microsoft-power-automate-dataverse-cloud-configuration).>
-> 
->If the token is not renewed, form submissions to Power Automate may fail.
+> To keep the integration working, re-authenticate and re-publish both the Microsoft&reg; Power Automate Dataverse and Microsoft&reg; Power Automate Flow Service cloud configurations before or when the token expires, use the steps documented at [Publish both the Microsoft&reg; Power Automate Dataverse and Microsoft&reg; Power Automate Flow Service Cloud Configurations](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+>
+> For details on token lifetime policies, see the [Microsoft Entra documentation on configurable token lifetimes](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). If the token is not renewed, form submissions to Power Automate may fail.
 
 ## Use the Invoke a Microsoft&reg; Power Automate flow submit action to send data to a Power Automate Flow {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
