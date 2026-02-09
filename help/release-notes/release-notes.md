@@ -698,6 +698,8 @@ The following issues have a hotfix available for download and installation. You 
   * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
   * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
 
+* **CQDOC-23365**:  HTML-to-PDF conversion (PDFG) may experience intermittent timeouts. A newer version of the Forms add-on for SP24 was subsequently released that includes the fix. If you encounter this issue, update your environment to the [latest released Forms add-on for 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
 The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
