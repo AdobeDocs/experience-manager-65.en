@@ -55,6 +55,7 @@ Customers are advised to review if they use the feature/capability in their curr
 |Forms|AEM Forms integration with AEM Mobile is deprecated. | No Replacement is available. ||
 |Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Developers|Lodash/underscore client library. Adobe does not plan to further maintain and update the Lodash/underscore client library that is shipped as part of the distribution (Quickstart). | Adobe recommends customers that still require Lodash/underscore for their code to add it into their project code base. ||
+| [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration ||
 
 ## Removed features {#removed-features}
 
