@@ -669,7 +669,7 @@ The following issues have a hotfix available for download and installation. You 
   If you face such an issue, perform the following steps to resolve it:
     1. Navigate to the directory `/libs/fd/aemforms/install/` in CRXDE.
     2. Delete the bundle with the name `com.adobe.granite.ui.commons-5.10.26.jar`.
-    3. Restart your AEM Server.
+    3. Restart your AEM Server. 
 
 * **FORMS-14613** When a user configures a WebLogic 14c instance, the PDFG service in AEM Forms Service Pack 21 (6.5.21.0) on JEE running on JBoss&reg; fails due to classloader conflicts involving the SLF4J library. The error is displayed as follows:
   
