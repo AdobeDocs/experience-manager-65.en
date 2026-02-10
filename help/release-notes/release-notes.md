@@ -642,7 +642,8 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 * **FORMS-16557** In the Print Preview of the Interactive Communications Agent UI, the currency symbol (such as the dollar sign $) is inconsistently displayed for all field values. It appears for values up to 999 but is missing for values of 1000 and above.
 * **FORMS-16575** Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. 
 * **FORMS-21378** When server-side validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
-* **FORMS-23722** (File attachments missing in Assign Task): When a form with a **File Attachment** field is submitted to an AEM Workflow that uses an **Assign Task** step, the attachments do not appear when the task is opened from Inbox. The files are saved correctly to the repository and are visible in CRX; only the Assign Task step UI does not show them.
+* **FORMS-23722** (File attachments missing in Assign Task): When a form with a **File Attachment** field that uses bindref is submitted to an AEM Workflow that uses an **Assign Task** step, the attachments do not appear when the task is opened from Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments.
+
 #### Issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
 >[!NOTE]
