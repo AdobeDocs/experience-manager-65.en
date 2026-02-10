@@ -643,8 +643,6 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 * **FORMS-16575** Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. 
 * **FORMS-21378** When server-side validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
 * **FORMS-23722** (File attachments missing in Assign Task): When a form with a **File Attachment** field is submitted to an AEM Workflow that uses an **Assign Task** step, the attachments do not appear when the task is opened from Inbox. The files are saved correctly to the repository and are visible in CRX; only the Assign Task step UI does not show them.
-* **FORMS-23875** In Form Data Model search, an HTML tag is displayed in the UI even when a relevant entity is not present.
-
 #### Issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
 >[!NOTE]
@@ -696,6 +694,8 @@ The following issues have a hotfix available for download and installation. You 
 * **FORMS-23717** After upgrading to **AEM Forms 6.5.24.0**, `server.log` and `error.log` can be flooded with repeated WARN messages such as *Secure parser factory creation failed* or *Security attribute ... is not supported*. Logs may grow by about **5–10 lines per second** (hundreds of MB per hour), which can fill disk and block production rollout. **Fix:** Included in AEM Forms **6.5.25.0**. **Until then:** 
 
   To reduce log volume, set the logging level for `com.adobe.util.XMLSecurityUtil` to `ERROR` in your application server config or via JVM argument `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. This only hides the messages and does not fix the underlying cause.
+
+* **FORMS-23875** In Form Data Model search, an HTML tag is displayed in the UI even when a relevant entity is not present. To resolve the issue, download and install the hotfix from [the link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
