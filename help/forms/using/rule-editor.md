@@ -558,6 +558,10 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Custom functions in rule editor {#custom-functions}
 
+>[!NOTE]
+>
+> Custom functions must be compatible with ECMAScript 5 (ES5). Foundation Forms support only ES5; use of newer ECMAScript versions (ES6 and above) is not supported and may result in errors or unexpected behavior.
+
 Apart from the out-of-the-box functions like *Sum of* that are listed under Functions Output, you can write custom functions that you frequently need. Ensure that the function you write is accompanied by the `jsdoc` above it.
 
 Accompanying `jsdoc` is required:
