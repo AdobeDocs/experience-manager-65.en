@@ -9,6 +9,10 @@ exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
 
 ## Introduction
 
+>[!NOTE]
+>
+> Custom functions must be compatible with ECMAScript 5 (ES5). Foundation Forms support only ES5; use of newer ECMAScript versions (ES6 and above) is not supported and may result in errors or unexpected behavior.
+
 AEM Forms 6.5 introduced the ability to define JavaScript functions that can be used in defining complex business rules using the rule editor. AEM Forms provides a number of such custom functions out of the box, but you will have the need to define your own custom functions and use them across multiple forms.
 
 The custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They also enable dynamic alteration of form behavior based on predefined criteria. 
