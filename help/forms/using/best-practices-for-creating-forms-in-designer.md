@@ -318,8 +318,8 @@ The reading order of the form includes all static objects (such as text and imag
 
 The default tab order is automatically created when you save your form as a tagged PDF. Initially, the tab order in a form is determined from the local position of the objects using the following rules:
 
- * All objects are ordered from left to right and from top to bottom (local order), starting from the top left corner of the form.
- * Any subforms you create are treated as self-contained units and are also navigated from left to right and from top to bottom. If two subforms are positioned next to each other, both of which contain objects, the reading order navigates through all objects in the first subform before moving to the next subform.
+* All objects are ordered from left to right and from top to bottom (local order), starting from the top left corner of the form.
+* Any subforms you create are treated as self-contained units and are also navigated from left to right and from top to bottom. If two subforms are positioned next to each other, both of which contain objects, the reading order navigates through all objects in the first subform before moving to the next subform.
 
 For simple forms (that is, forms with a left-to-right, top-to-bottom layout), the default tab order will usually be correct. To verify this, you should examine the default tab order before publishing your form. You can make the tab order visible with either of the following methods:
 

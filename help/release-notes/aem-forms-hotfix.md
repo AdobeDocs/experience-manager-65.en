@@ -23,6 +23,19 @@ This article lists the critical fixes implemented to address known issues, impro
     <td><strong>Hotfix download link (AEM Software Distribution link)</strong></td>
     <td><strong>Fixed issues</strong></td>
   </tr>
+    <tr>
+    <td>
+      <strong>Feb 10, 2026</strong><br>
+      <em>Applies to:</em>  AEM Forms SP24<br>
+    </td>
+    <td>
+    <ul> <a href = "https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip"> AEM 6.5 Forms AddOn Hotfix</a>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-23875</b> In Form Data Model search, an HTML tag is displayed in the UI even when a relevant entity is not present.
+      <ul></tr>
   <tr>
     <td>
       <strong>Oct 14, 2025</strong><br>
@@ -35,7 +48,7 @@ This article lists the critical fixes implemented to address known issues, impro
     <td>
     <ul>
     <li> <b>(FORMS-22029):</b> Improves PDF conversion reliability by addressing an issue where PDF Generator (PDFG) fails to convert image files to PDF after upgrading to SP23, causing unexpected post-processing errors.
-      <ul>
+      <ul></tr>
   <tr>
     <td>
       <strong>Sept 23, 2025</strong><br>
