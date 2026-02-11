@@ -21,7 +21,7 @@ You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud 
 * Perform complex calculations on captured data
 * Save Adaptive Forms data to storage systems at a predefined schedule
 
-Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record are sent to Power Automate Cloud Flow. To use the Submit action to send captured data to Microsoft&reg; Power Automate, [Connect your AEM Forms Author instance with Microsoft&reg; Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)  
+Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record are sent to Power Automate Cloud Flow. To use the Submit action to send captured data to Microsoft&reg; Power Automate, [Connect your AEM Forms Author instance with Microsoft&reg; Power Automate](#connect-forms-server-with-power-automate)  
 
 ## Prerequisites
 
