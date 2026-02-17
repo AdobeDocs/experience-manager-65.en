@@ -644,6 +644,8 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 * **FORMS-21378** When server-side validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
 * **FORMS-23722** (File attachments missing in Assign Task): When a form with a **File Attachment** field that uses bindref is submitted to an AEM Workflow that uses an **Assign Task** step, the attachments do not appear when the task is opened from Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments.
 
+* **FORMS-23802** (Custom functions not loading when form is in Sites page): Custom functions do not work in preview or publish when the Adaptive Form is embedded in a Sites page and the aem-forms-core-component library's version is older than 1.1.76. You may see an error such as `InvalidFormContainerException: No form container found` in the logs. 
+
 #### Issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
 <!-- 
