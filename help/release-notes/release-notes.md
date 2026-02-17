@@ -635,6 +635,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6524}
 
+* **FORMS-23881** On AEM Forms JEE deployments installed using the full SP23 installer, the Output Service fails to process requests when a custom XCI file is provided as input. PDF generation succeeds only when the custom XCI parameter is omitted.
 * **FORMS-14521** If a user tries to preview a draft letter with saved XML data, it gets stuck in `Loading` state for some specific letters.
 * **FORMS-16603** In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. 
 * **FORMS-15681** When the letter is viewed in Print Preview, the content is changed. That is, some spaces disappear, and certain letters are replaced with `x`.
