@@ -28,6 +28,7 @@ Customers are advised to review if they use the feature/capability in their curr
 
 |Area|Feature|Replacement|Version (SP)|
 |---|---|---|---|
+| Sites | Content Fragment support in the AEM Assets REST API | AEM 6.5 LTS SP2 provides modern OpenAPIs for Content Fragment and Model Management, so the older Content Fragment Support endpoints in the AEM Assets REST API are now deprecated.<br>Adobe intends to keep these older endpoints available until an end-of-life announcement. Adobe does not plan further enhancements for the deprecated endpoints. | 6.5.24 |
 | Sites | [SPA Editor](/help/sites-developing/spa-editor-deprecation.md) | For headless use cases, leverage the [Universal Editor](/help/sites-developing/universal-editor/introduction.md) for visual editing or the [Content Fragment Editor](/help/sites-developing/universal-editor/introduction.md) for form-based editing.| 6.5.23 |
 | Sites | The **Adobe AEM Managed Polling Configuration** service: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | The **Adobe AEM Analytics Report Sling Importer** service. See Connecting to Adobe Analytics and Creating Frameworks - [Configuring the Import Interval](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | ActiveMQ in Adobe Experience Manager (AEM). ActiveMQ was used for communication between two AEM Publish instances. | Adobe recommends that customers now use a load-balancer. | 6.5.18.0 |

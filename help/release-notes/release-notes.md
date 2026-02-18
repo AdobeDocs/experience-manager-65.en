@@ -539,6 +539,12 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 See [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md) for a detailed list of all features deprecated or removed for AEM 6.5.
 
+### Content Fragment support in the AEM Assets REST API {#cf-support-assets-rest-api}
+
+AEM 6.5 LTS SP2 provides modern OpenAPIs for Content Fragment and Model Management, so the older Content Fragment Support endpoints in the AEM Assets REST API are now deprecated.
+
+Adobe intends to keep these older endpoints available until an end-of-life announcement. Adobe does not plan further enhancements for the deprecated endpoints.
+
 ### SPA Editor {#spa-editor}
 
 [The SPA Editor](/help/sites-developing/spa-overview.md) has been deprecated for new projects starting with release 6.5.24 of AEM 6.5. The SPA Editor remains supported for existing projects, but should not be used for new projects.
