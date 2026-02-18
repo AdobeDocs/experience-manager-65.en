@@ -644,7 +644,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 * **FORMS-21378** When server-side validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
 * **FORMS-23722** (File attachments missing in Assign Task): When a form with a **File Attachment** field that uses bindref is submitted to an AEM Workflow that uses an **Assign Task** step, the attachments do not appear when the task is opened from Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments.
 
-* **FORMS-23802** (Custom functions not loading when form is in Sites page): Custom functions do not work in preview or publish when the Adaptive Form is embedded in a Sites page and the aem-forms-core-component library's version is older than 1.1.76. You may see an error such as `InvalidFormContainerException: No form container found` in the logs. 
+* **FORMS-23802** (Custom functions not loading when form is in Sites page): Custom functions do not work in preview or publish when the Adaptive Form is embedded in a Sites page and the aem-forms-core-component library's version is older than 1.1.76. You may see an error such as `InvalidFormContainerException: No form container found` in the logs. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Forms SP24 (AddOn 6.0.1454). 
 
 #### Issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
@@ -654,6 +654,8 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 >Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. -->
 
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
+
+* **FORMS-23802** Custom functions do not load in preview or publish when the form is in a Sites page with an older aem-forms-core-component version (&lt;1.1.76). To resolve this issue, install the [AEM Forms AddOn hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) for SP24.
 
 * AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This upgrade delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
 

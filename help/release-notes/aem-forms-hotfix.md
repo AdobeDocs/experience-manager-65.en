@@ -25,6 +25,24 @@ This article lists the critical fixes implemented to address known issues, impro
   </tr>
     <tr>
     <td>
+      <strong>Feb 17, 2026</strong><br>
+      <em>Applies to:</em> AEM Forms SP24<br>
+    </td>
+    <td>
+    <ul>
+    <li>Windows: <a href="https://artifactory.corp.adobe.com/artifactory/maven-aemforms-release-local/com/adobe/aemfd/aemfd-win-pkg/6.0.1454/adobe-aemfd-win-pkg-6.0.1454.zip">Hotfix for AEM Forms AddOn 6.0.1454 on Windows</a></li>
+    <li>Linux: <a href="https://artifactory.corp.adobe.com/artifactory/maven-aemforms-release-local/com/adobe/aemfd/aemfd-linux-pkg/6.0.1454/adobe-aemfd-linux-pkg-6.0.1454.zip">Hotfix for AEM Forms AddOn 6.0.1454 on Linux</a></li>
+    <li>OSX: <a href="https://artifactory.corp.adobe.com/artifactory/maven-aemforms-release-local/com/adobe/aemfd/aemfd-osx-pkg/6.0.1454/adobe-aemfd-osx-pkg-6.0.1454.zip">Hotfix for AEM Forms AddOn 6.0.1454 on macOS</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-23802</b> Custom functions do not work in preview or publish when the Adaptive Form is embedded in a Sites page and the aem-forms-core-component version is older than 1.1.76. This hotfix restores backward compatibility with older aem-forms-core-component versions.
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <strong>Feb 10, 2026</strong><br>
       <em>Applies to:</em>  AEM Forms SP24<br>
     </td>
