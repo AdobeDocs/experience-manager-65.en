@@ -37,7 +37,7 @@ This article lists the critical fixes implemented to address known issues, impro
     </td>
     <td>
     <ul>
-    <li><b>FORMS-23802</b> Custom functions do not work in preview or publish when the Adaptive Form is embedded in a Sites page and the aem-forms-core-component version is older than 1.1.76. This hotfix restores backward compatibility with older aem-forms-core-component versions.
+    <li><b>FORMS-23802</b> Custom functions do not work in preview or publish when the Adaptive Form is embedded in a Sites page and the aem-forms-core-component version is less than 1.1.76. This hotfix restores backward compatibility with older aem-forms-core-component versions.
     </ul>
     </td>
   </tr>
