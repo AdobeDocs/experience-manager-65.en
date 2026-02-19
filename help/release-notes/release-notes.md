@@ -659,7 +659,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
 
-* **FORMS-23881** On AEM Forms JEE non-CRX deployments installed using the Service Pack 6.5.23.0 full installer, the Output Service fails to process requests when a custom XCI file is provided as input. PDF generation succeeds only when the custom XCI parameter is omitted. To resolve this issue, install the latest AEM Forms 6.5.24.0 patch installer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
+* **FORMS-23881** On AEM Forms JEE non-CRX deployments installed using the 6.5.23.0 full installer, the Output Service fails to process requests when a custom XCI file is provided as input. PDF generation succeeds only when the custom XCI parameter is omitted. To resolve this issue, install the latest AEM Forms 6.5.24.0 patch installer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
 
 * AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This upgrade delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
 
