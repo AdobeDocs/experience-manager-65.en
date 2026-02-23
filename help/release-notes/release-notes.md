@@ -681,12 +681,14 @@ The following issues have a hotfix available for download and installation. You 
 
 * **FORMS-23703** When the `contains` rule is configured without a default value, the Server Side validation for an adaptive form fails. You can install latest version of [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) to fix the issue.
 
-* Form Data Model connectors may fail to authenticate because the required keywords and regex pattern are not allowed by default. To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
+* **GRANITE-63681** Form Data Model connectors may fail to authenticate because the required keywords and regex pattern are not allowed by default. To resolve the issue, downladd and install the hotfix from the [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-GRANITE-64751-SP24-1.0.zip)
+
+  <!--To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
 
   * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
   * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+    >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
 * **FORMS-23979**  HTML-to-PDF conversion (PDFG) may experience intermittent timeouts. A newer version of the Forms add-on for SP24 was subsequently released that includes the fix. If you encounter this issue, update your environment to the [latest released Forms add-on for 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
