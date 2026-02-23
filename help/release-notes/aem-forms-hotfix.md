@@ -25,6 +25,21 @@ This article lists the critical fixes implemented to address known issues, impro
   </tr>
     <tr>
     <td>
+      <strong>Feb 17, 2026</strong><br>
+      <em>Applies to:</em> AEM Forms SP24<br>
+    </td>
+    <td>
+    <ul> <a href = "https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-GRANITE-64751-SP24-1.0.zip"> AEM 6.5 Forms Hotfix</a>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>(GRANITE-63681) Form Data Model connectors may fail to authenticate because the required keywords and regex pattern are not allowed by default.</li>
+    </ul>
+    </td>
+  </tr>
+    <tr>
+    <td>
       <strong>Feb 10, 2026</strong><br>
       <em>Applies to:</em>  AEM Forms SP24<br>
     </td>
