@@ -661,11 +661,6 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
 
-* **FORMS-23789** (AEM Forms on JEE only): Users experienced issues with Log4j in AEM Forms on JEE SP24, causing disruptions in logging and monitoring for enterprise customers. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Forms on JEE Service Pack 6.5.24.0.
-
-
-* **FORMS-23802** Custom functions do not load in preview or publish when the form is in a Sites page with an older aem-forms-core-component version (&lt;1.1.76). To resolve this issue, install the [AEM Forms AddOn hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) for SP24.
-
 * AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This upgrade delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
 
 * **FORMS-14926** After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder, perform the following steps to resolve the issue:
@@ -686,12 +681,14 @@ The following issues have a hotfix available for download and installation. You 
 
 * **FORMS-23703** When the `contains` rule is configured without a default value, the Server Side validation for an adaptive form fails. You can install latest version of [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) to fix the issue.
 
-* Form Data Model connectors may fail to authenticate because the required keywords and regex pattern are not allowed by default. To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
+* **GRANITE-63681** Form Data Model connectors may fail to authenticate because the required keywords and regex pattern are not allowed by default. To resolve the issue, download and install the hotfix from the [link](/help/release-notes/aem-forms-hotfix.md).
+
+  <!--To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
 
   * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
   * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+    >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
 * **FORMS-23979**  HTML-to-PDF conversion (PDFG) may experience intermittent timeouts. A newer version of the Forms add-on for SP24 was subsequently released that includes the fix. If you encounter this issue, update your environment to the [latest released Forms add-on for 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
@@ -720,3 +717,4 @@ These websites are available to customers only. If you are a customer and need a
 >* [[!DNL Experience Manager] product page](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Subscribe to Adobe Priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
+
