@@ -663,6 +663,10 @@ The following issues have a hotfix available for download and installation. You 
 
 * **FORMS-23789** (AEM Forms on JEE only): Users experienced issues with Log4j in AEM Forms on JEE SP24, causing disruptions in logging and monitoring for enterprise customers. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Forms on JEE Service Pack 6.5.24.0.
 
+* **FORMS-23802** Custom functions do not load in preview or publish when the form is in a Sites page with an older aem-forms-core-component version (&lt;1.1.76). To resolve this issue, install the [AEM Forms AddOn hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) for SP24.
+
+* **FORMS-23789** (AEM Forms on JEE only): Users experienced issues with Log4j in AEM Forms on JEE SP24, causing disruptions in logging and monitoring for enterprise customers. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Forms on JEE Service Pack 6.5.24.0.
+
 
 * **FORMS-23802** Custom functions do not load in preview or publish when the form is in a Sites page with an older aem-forms-core-component version (&lt;1.1.76). To resolve this issue, install the [AEM Forms AddOn hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) for SP24.
 
