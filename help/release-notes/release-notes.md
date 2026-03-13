@@ -660,7 +660,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
 
-<!--* FORMS-23881 On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+* **FORMS-23881** On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
 
 * **FORMS-23789** (AEM Forms on JEE only): Users experienced issues with Log4j in AEM Forms on JEE SP24, causing disruptions in logging and monitoring for enterprise customers. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Forms on JEE Service Pack 6.5.24.0.
 
