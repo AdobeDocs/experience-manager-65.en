@@ -92,7 +92,7 @@ They can also be set using the **cURL** command line tool. For example, using a 
 
 ```shell
 $ curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H 'authorization: Basic yourauthorizationcode' \
     -H "Content-Type: application/json" \
     "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
     -d \
