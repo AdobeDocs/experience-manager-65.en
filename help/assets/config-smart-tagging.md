@@ -176,7 +176,6 @@ After you have completed the configuration, you can use a JMX MBean to validate 
 
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** to open the OSGi console. Click **[!UICONTROL Main] > [!UICONTROL JMX]**.
 
-<!--
 1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
 
 1. Click `com.day.cq.dam.similaritysearch.internal.impl (SCS)`.
