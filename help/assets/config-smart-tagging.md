@@ -166,11 +166,6 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
    | Associated Adobe IMS Configuration | Choose a configuration from the drop-down. |
    | Service URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. For example, `https://smartcontent.adobe.io/apac`. You can specify `na`, `emea`, or, `apac` as the regions where your Experience Manager author instance is hosted.|
 
-   >[!NOTE]
-   >
-   >If the Experience Manager Managed Service is provisioned before September 01, 2022, use the following Service URL:
-   >`https://mc.adobe.io/marketingcloud/smartcontent`
-
 1. Click **[!UICONTROL Save & Close]**.
 
 ### Validate the configuration {#validate-the-configuration}
@@ -181,7 +176,6 @@ After you have completed the configuration, you can use a JMX MBean to validate 
 
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** to open the OSGi console. Click **[!UICONTROL Main] > [!UICONTROL JMX]**.
 
-<!--
 1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
 
 1. Click `com.day.cq.dam.similaritysearch.internal.impl (SCS)`.
