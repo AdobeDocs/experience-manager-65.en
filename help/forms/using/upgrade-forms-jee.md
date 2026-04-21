@@ -1,6 +1,6 @@
 ---
-title: Upgrade to AEM 6.5 Forms on JEE
-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
+title: "Upgrade to AEM 6.5 Forms on JEE"
+description: "You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms."
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
