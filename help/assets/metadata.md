@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}

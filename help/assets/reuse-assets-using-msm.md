@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User, Admin, Developer
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}

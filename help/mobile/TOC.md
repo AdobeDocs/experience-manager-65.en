@@ -7,7 +7,7 @@ breadcrumb-title: Mobile Guide
 user-guide-description: Create and manage content for mobile apps.
 feature: Mobile
 role: User
-hide: yes
+hide: true
 ---
 
 # AEM 6.5 Mobile User Guide {#mobile}

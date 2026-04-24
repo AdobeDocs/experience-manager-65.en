@@ -5,7 +5,7 @@ contentOwner: AG
 role: Developer, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 

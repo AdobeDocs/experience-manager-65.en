@@ -10,7 +10,7 @@ mini-toc-levels: 4
 exl-id: 2ca7b8b2-573c-40e9-b8c3-f38736e819ef
 solution: Experience Manager, Experience Manager Assets
 ---
-<!-- hide: yes
+<!-- hide: true
 hidefromtoc: yes -->
 
 # About configuring a Dynamic Media company alias account {#about-dm-alias-acct}

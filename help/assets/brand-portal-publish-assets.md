@@ -9,7 +9,7 @@ docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Publish assets to Brand Portal {#publish-assets-to-brand-portal}

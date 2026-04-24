@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
