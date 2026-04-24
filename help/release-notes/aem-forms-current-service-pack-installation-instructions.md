@@ -46,8 +46,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 ## Download and install Service Pack on an AEM Form on JEE environment {#download-and-install-for-jee-service-pack}
 
-   <!--
-![JEE Installation](/help/forms/using/assets/jeeinstallation.png) -->
+<!--
+![JEE Installation](/help/forms/using/assets/jeeinstallation.png)
+-->
 
 +++1. Take backup of your existing environment
    

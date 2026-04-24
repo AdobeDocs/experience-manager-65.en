@@ -250,7 +250,9 @@ The following figure depicts an example of dynamically enabling the checkbox bas
 
 **[!UICONTROL Function Output]** Defines a rule based on  predefined functions or custom functions.
 
-**[!UICONTROL Navigate to]** Navigates to other <!--Interactive Communications,--> Adaptive Forms, other assets such as images or document fragments, or an external URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navigate to]** Navigates to other Adaptive Forms, other assets such as images or document fragments, or an external URL.
+<!--Interactive Communications,-->
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL Dispatch Event]** Triggers the specific actions or behaviors based on predefined conditions or events.
 
