@@ -31,6 +31,7 @@ Before setting communication between a Salesforce application and an AEM environ
 * Create a [Salesforce connected app with OAuth 2.0 client credential flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) and an API-only user for your organization and obtain the consumer key and consumer secret for the app.
 
 * Ensure that your Swagger file is appropriately configured to match your organization's APIs. Alternatively, you can opt to [create a Swagger file](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) from the scratch, tailored for utilization in your AEM environment.
+
 >[!NOTE]
 >
 > AEM 6.5 only supports Swagger 2.0 file specifications.
