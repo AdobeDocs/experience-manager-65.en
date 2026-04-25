@@ -36,8 +36,6 @@ Before setting communication between a Salesforce application and an AEM environ
 >
 > AEM 6.5 only supports Swagger 2.0 file specifications.
 
-+++
-
 ## Steps to configure Salesforce with Client Credentials flow {#steps-to-create-aem-datasource-configuration}
 
 1. Log in to your Author instance.

@@ -83,7 +83,8 @@ To configure the Smart Content Service, follow these top-level steps:
 
    1. [Configure your deployment](#configure-smart-content-service) using the API key and other credentials from Adobe Developer Console.
 
-   1. [Test the configuration](#validate-the-configuration).-->
+   1. [Test the configuration](#validate-the-configuration).
+   -->
 
 ### Create Adobe Developer Console integration {#create-adobe-io-integration}
 

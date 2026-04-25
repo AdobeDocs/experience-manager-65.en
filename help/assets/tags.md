@@ -140,7 +140,8 @@ To track Dynamic Media viewers in Experience Manager Sites, all steps listed und
 
 Following proper configuration, any Dynamic Media viewer that you add to a Sites page, using a WCM component supported by Dynamic Media, automatically tracks data to Adobe Analytics, or Adobe Analytics for Video, or both.
 
-<!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
+<!--
+To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 -->
 
@@ -154,7 +155,8 @@ Following proper configuration, you can add Experience Platform Tags support to 
 
 See [Add the Experience Platform Tags Embed Code](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) to learn more about how to use the Experience Platform Tags library embed code.
 
-<!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
+<!--
+To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
 -->
 

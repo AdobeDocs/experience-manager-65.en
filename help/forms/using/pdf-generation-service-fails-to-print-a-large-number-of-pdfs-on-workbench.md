@@ -14,8 +14,10 @@ When a customer generates a large number of PDFs via services implemented throug
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 This is because the maximum number of pages in a print request is limited to approximately 1000 pages on Windows. When a print output is being generated, the template and data need to be loaded into memory and the resulting layout is built up in memory. This means that there are limits to the size of the final output. The process that generates the print output is a 32-bit task which means it is limited to 2 GB of RAM on Windows <!--and 4 GB on UNIX-->.
 

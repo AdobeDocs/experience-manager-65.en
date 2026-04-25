@@ -34,9 +34,11 @@ When you [create or edit an existing Interactive Communication](../../forms/usin
 
 **A.** Channel browser **B.** Content browser **C.** Properties browser **D.** Asset browser **E.** Components browser **F.** Data Sources browser - Data Model **G.** Data Sources browser - Master Content
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 The sidebar includes the following:
 

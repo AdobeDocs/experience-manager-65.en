@@ -66,8 +66,10 @@ Effective April 30, 2024, Adobe Dynamic Media ended support for the following:
 
 See also [Dynamic Media Limitations](/help/assets/limitations.md).
 
-<!-- FOR ABOVE - CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+FOR ABOVE - CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 
 Dynamic Media-Hybrid must be enabled and configured for use. Depending on your use case, Dynamic Media has several [supported configurations](#supported-dynamic-media-configurations).

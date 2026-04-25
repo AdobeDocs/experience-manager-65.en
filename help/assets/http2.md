@@ -38,7 +38,8 @@ Adobe's own testing yielded the following results:
 <!--
 The following demonstration illustrates the difference between HTTP/1 versus HTTP/2 loading:
 
-[https://http2.akamai.com/demo](https://http2.akamai.com/demo) -->
+[https://http2.akamai.com/demo](https://http2.akamai.com/demo)
+-->
 
 ## Am I eligible to switch over to HTTP/2? {#am-i-eligible-to-switch-over-to-http}
 

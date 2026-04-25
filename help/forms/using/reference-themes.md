@@ -36,9 +36,11 @@ Beryl theme is used by We.Gov adaptive form, and emphasizes use of background im
 
 ![Beryl theme](assets/beryl.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/beryl-1.png)-->
+](assets/beryl-1.png)
+-->
 
 ## Exec {#exec}
 
@@ -46,9 +48,11 @@ Exec theme avoids solid background fills to emphasize form components. Selecting
 
 ![Exec theme](assets/exec.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-1.png)-->
+](assets/exec-1.png)
+-->
 
 ## Exec Light {#exec-light}
 
@@ -56,9 +60,11 @@ Exec Light theme uses white space to create a seamless experience. The Next and 
 
 ![Exec light theme](assets/exec-light.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-light-1.png)-->
+](assets/exec-light-1.png)
+-->
 
 ## Liberty {#liberty}
 
@@ -66,9 +72,11 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 ![Liberty theme](assets/liberty.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/liberty-1.png)-->
+](assets/liberty-1.png)
+-->
 
 ## Tranquil {#tranquil}
 
@@ -76,9 +84,11 @@ Tranquil theme provides light and dark shades of the Tranquil color scheme to hi
 
 ![Tranquil theme](assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tranquil-1.png)-->
+](assets/tranquil-1.png)
+-->
 
 ## Ultramarine {#ultramarine}
 
@@ -94,9 +104,11 @@ Urbane theme emphasizes a minimalist and functional look for your form. When you
 
 ![Urbane theme](assets/urbane.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/urbane-1.png)-->
+](assets/urbane-1.png)
+-->
 
 ## U.S. Web Design Standards {#u-s-web-design-standards}
 
@@ -104,6 +116,8 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ![U.S. Web Design Standards Theme](assets/us-web-standards.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/usgov.png)-->
+](assets/usgov.png)
+-->

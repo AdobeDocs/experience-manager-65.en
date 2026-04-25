@@ -28,7 +28,8 @@ The different facets of community groups are:
 * **Control**: group can be open or secret.
 * **Nesting**: group can contain zero or more groups.
 
-<!-- This is a 404 on helpx. Update or remove.
+<!--
+This is a 404 on helpx. Update or remove.
 >[!NOTE]
 >
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.

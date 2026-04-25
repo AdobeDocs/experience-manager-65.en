@@ -42,8 +42,10 @@ Image sharpening is the most complex aspect of controlling images on your websit
 
 Best practices white paper [Sharpen images in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) which applies to Experience Manager as well.
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 With Experience Manager, you can sharpen images on ingestion, on delivery, or both. Usually, however, sharpen images using only one method or the other, but not both. Sharpening images on delivery, on a URL, typically gives you the best results.
 

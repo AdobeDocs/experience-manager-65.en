@@ -156,10 +156,12 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
    Answer: When a subform is set to flow content and the subform has a hidden border element, the border of the fields placed adjacently is not aligned properly or subforms appear overlapped. To resolve the issue, you can remove or comment the hidden &lt;border&gt; elements from the corresponding XDP. For example, the following &lt;border&gt; element is marked as a comment:
 
    ```xml
-               <!--<border>
+               <!--
+<border>
                   <edge presence="hidden"/>
                   <corner thickness="0.175mm" presence="hidden"/>
-               </border> -->
+               </border>
+               -->
    ```
 
 1. Why screen readers do not work correctly with the Date/Time field object?

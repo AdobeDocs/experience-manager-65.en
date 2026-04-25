@@ -138,7 +138,11 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++5. Install the servlet fragment if not installed (**Mandatory step**)
 
-   <!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
+   <!--
+   >[!NOTE]
+   >
+   > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment.
+   -->
 
  To download and install the servlet fragment: 
 
@@ -197,7 +201,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 ## Download and install Service Pack on an AEM Form on OSGi environment {#download-and-install-for-osgi-service-pack}
 
 
-   <!-- ![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
+   <!--
+![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
 -->
 
 +++1. Take backup of your existing environment

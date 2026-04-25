@@ -634,7 +634,8 @@ Field objects refers to the individual components or elements within a form, suc
 >
 > The `param {scope} globals` has to be the last parameter and it is not displayed in the rule editor of an Adaptive Form.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -654,7 +655,8 @@ Field objects refers to the individual components or elements within a form, suc
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Let's learn how custom functions use field and global objects with the help of a `Contact Us` form using different usecases.
 

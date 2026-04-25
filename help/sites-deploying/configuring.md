@@ -200,9 +200,11 @@ It is possible to configure the links that are visible, see [Configuring the Wel
 
 See [Configuring for Performance](/help/sites-deploying/configuring-performance.md#configuring-for-performance) for further details.
 
-<!--delete ### Scaling {#scaling}
+<!--
+delete ### Scaling {#scaling}
 
-Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
+Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).
+-->
 
 ### Shared Data Store {#shared-data-store}
 

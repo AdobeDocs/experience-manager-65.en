@@ -16,7 +16,8 @@ Effective January 31, 2014, the DHTML viewer platform is officially end-of-life.
 
 See the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) for the latest supported viewers.
 
-<!-- OBSOLETE CONTENT **What is the change?**
+<!--
+OBSOLETE CONTENT **What is the change?**
 
 Effective January 31, 2014, Scene7 will officially end-of-life support for the DHTML viewer platform.
 

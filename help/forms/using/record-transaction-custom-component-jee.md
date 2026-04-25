@@ -29,9 +29,11 @@ If you must capture more than one transaction for an API, such as a batch API wh
     1. Add logic so you can store the transaction count in some integer variable, such as, `transaction_count`.
     1. When the operation is successful, add `InvocationContextStack.recordTransactionCount(transaction_count)`.
 
-<!--For example, you can set count for your custom component by importing class `"com.adobe.idp.dsc.InvocationContextStack"` in the code available at `adobe-livecycle-client.jar`  and determine the transaction count basis API input/result and add (In this case we add count is equal to 3):
+<!--
+For example, you can set count for your custom component by importing class `"com.adobe.idp.dsc.InvocationContextStack"` in the code available at `adobe-livecycle-client.jar`  and determine the transaction count basis API input/result and add (In this case we add count is equal to 3):
 `InvocationContextStack.recordTransactionCount(<count>).` to 
-`InvocationContextStack.recordTransactionCount(3)`.-->
+`InvocationContextStack.recordTransactionCount(3)`.
+-->
 
 ## Related Articles
 

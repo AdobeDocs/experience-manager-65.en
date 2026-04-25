@@ -140,7 +140,7 @@ Once you have selected your [persisted query](/help/sites-developing/headless/gr
 The **Copy URL** option lets you simulate a query, by copying the URL used to directly access the persisted query and see the results. This can then be used for testing; for example, by accessing in a browser:
 
 <!--
-  >[!NOTE]
+>[!NOTE]
   >
   >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >

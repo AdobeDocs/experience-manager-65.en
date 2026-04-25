@@ -268,6 +268,7 @@ In line with planned EOL of Adobe Flash Player and overall direction of migratin
 
 #### Accessibility improvements {#accessibility-improvements}
 
-AEM 6.5 Forms has improved accessibility of AEM Forms Workspace. 
-!-->
+AEM 6.5 Forms has improved accessibility of AEM Forms Workspace.
+
+-->
 

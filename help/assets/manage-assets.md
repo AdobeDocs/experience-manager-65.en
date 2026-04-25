@@ -42,7 +42,8 @@ Do not include special characters in the extensions of asset filenames.
 
 ## Upload assets {#uploading-assets}
 
-<!-- TBD the following:
+<!--
+TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->

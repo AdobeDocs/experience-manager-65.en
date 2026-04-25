@@ -88,7 +88,8 @@ To use a form data model for creating an adaptive form:
 
 You can repurpose your XFA form templates to create adaptive forms. To repurpose, upload and associate an XFA form template with an adaptive form. The elements of the Form Template (XFA form) are made available for use in the content finder at the time of adaptive form authoring. From the Content Finder, you can drag-and-drop the form template elements on the form.
 
-<!-- >>[!NOTE]
+<!--
+>>[!NOTE]
 >
 >[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
@@ -102,7 +103,8 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). --> 
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+   --> 
 
 ## Create an adaptive form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
