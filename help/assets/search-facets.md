@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Search facets {#search-facets}

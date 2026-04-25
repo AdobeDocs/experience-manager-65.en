@@ -96,7 +96,8 @@ Service to configure exclusion list of principals which should not be affected b
 
   Enabling the service launches the RequirementService.
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

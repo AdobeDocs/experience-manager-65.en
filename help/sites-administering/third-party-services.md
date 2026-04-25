@@ -38,7 +38,8 @@ Salesforce.com is the enterprise cloud computing company that is leading the shi
 
 For information about integrating your AEM site and Salesforce, see [Integrating with Salesforce](/help/sites-administering/salesforce.md).
 
-<!-- THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
+<!--
+THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
 ## Integrating with Silverpop Engage {#integrating-with-silverpop-engage}
 
 >[!NOTE]
@@ -47,7 +48,8 @@ For information about integrating your AEM site and Salesforce, see [Integrating
 
 Silverpop Engage provides marketing automation, email, mobile, and social.
 
-For information about integrating your AEM site and ExactTarget, see [Integrating with Silverpop Engage](/help/sites-administering/silverpop.md). -->
+For information about integrating your AEM site and ExactTarget, see [Integrating with Silverpop Engage](/help/sites-administering/silverpop.md).
+-->
 
 ## Integrating with ExactTarget {#integrating-with-exacttarget}
 

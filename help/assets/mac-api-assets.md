@@ -5,7 +5,7 @@ contentOwner: AG
 role: Developer
 feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # [!DNL Assets] HTTP API {#assets-http-api}

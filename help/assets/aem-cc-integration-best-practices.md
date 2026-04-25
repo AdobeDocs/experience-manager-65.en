@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # [!DNL Adobe Experience Manager] and [!DNL Creative Cloud] integration best practices {#aem-and-creative-cloud-integration-best-practices}
@@ -48,7 +48,8 @@ This article focuses primarily on the first two aspects of the collaboration nee
 
 ### Mapping of use cases and Adobe solutions {#mapping-of-use-cases-and-adobe-solutions}
 
-<!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
+<!--
+TBD: Add some info about XD integration and possibly info about DA v2.0.
 -->
 
 | Use Case | [!DNL Adobe Asset Link] | [!DNL Experience Manager] desktop app | Remarks / Other Solutions |

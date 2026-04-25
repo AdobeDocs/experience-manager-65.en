@@ -73,7 +73,8 @@ All tasks included in the pre-upgrade optimization step are compatible with all 
 
 In AEM 6.3 and later, the pre-upgrade maintenance optimization tasks come included in the quickstart jar. 
 
-<!-- URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
+<!--
+URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
 
 If you are upgrading from an older version of AEM 6, they are made available through separate packages that you can download from the Package Manager.
 
@@ -83,7 +84,8 @@ You can find the packages at these locations:
 
 * [For upgrading from AEM 6.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
 
-* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62) -->
+* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62)
+-->
 
 ### How to Use It {#how-to-use-it}
 
@@ -265,7 +267,8 @@ To disable the custom modules defined in the JAAS configuration of `repository.x
                      <param name = "adminId" value ="admin" />
                      <param name = "disableNTLMAuth" value = "true" />
                      <param name = "tokenExpiration" value = "43200000" />
-                     <!-- param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/
+                     <!--
+param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/
                 -->
                  </LoginModule >
          </ Security>

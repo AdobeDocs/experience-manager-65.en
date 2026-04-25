@@ -50,8 +50,10 @@ Dynamic Media does not support the following web browser and operating system co
 
 ## End of support for Secure Socket Layer 2.0 and 3.0 and Transport Layer Security 1.0 and 1.1 {#tls}
 
-<!-- CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 Effective April 30, 2024, Adobe Dynamic Media will end support for the following:
 

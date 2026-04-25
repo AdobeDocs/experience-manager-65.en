@@ -249,7 +249,7 @@ You can use the configuration file with the options detailed below.
 | uploadThreads | The number of upload threads used for asynchronous uploads. | 10 | No. |
 | writeThreads | The number of concurrent threads used for writing via S3 Transfer Manager. | 10 | No. |
 
-<!---
+<!--
 ### Bucket region options {#bucket-region-options}
 
 <table>

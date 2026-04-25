@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Organize your digital assets {#organize-digital-assets}
@@ -57,7 +57,8 @@ With asset collections in [!DNL Experience Manager Assets], you can streamline t
 
 For more information, see [manage collections](manage-collections.md).
 
-<!-- TBD items: add screenshots where applicable
+<!--
+TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
 Add back links to blog posts by marketing?
 -->

@@ -63,7 +63,8 @@ The core features in [!DNL Assets] are more accessible than before and are regul
 
 Many user interface elements that are clickable or actionable with a pointer can also be engaged with using a keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using the keyboard. For example, users can open the timeline of an asset in the left side of the user interface. Browse to the user interface control using a keyboard and selecting `Return`, and selecting `Alt + 2` keyboard shortcut.
 
-<!-- TBD items:
+<!--
+TBD items:
 
 * The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -106,7 +107,8 @@ After logging in, DAM users can navigate within the [!DNL Assets] user interface
 
 If a user expands the help or user profile option from the menu, the screen reader announces the appropriate option or status. If a user expands the user profile option, the available options can be selected using a keyboard. For example, an administrator can impersonate a different user. If a user searches for a string from the [!UICONTROL Help] option, a narrator announces "Searching Help" to indicate that a search is in progress.
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -117,7 +119,8 @@ If a user expands the help or user profile option from the menu, the screen read
 
 In the [!DNL Assets] user interface, users can use the keyboard to browse digital assets in the DAM repository and preview or download an asset. Users can also view generated renditions, switch views, and review the timeline, version history, comments, and references. In addition, users can view and manage metadata.
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -143,7 +146,8 @@ When browsing the assets repository, the following functionality improves access
 * Comments on an asset are available in the asset timeline. It is accessible if the left rail is accessed using a keyboard or a keyboard shortcut.
 * [!UICONTROL View Settings] in [!DNL Experience Manager] are accessible using a keyboard. Users can navigate through the available card sizes using the arrow keys and select and tab through to navigate through and set other elements in the existing View Settings view.
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -186,7 +190,8 @@ When filtering search results:
 
 ## Share assets {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 When sharing assets, the following functionalities improve the accessibility:

@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Use [!DNL Adobe Stock] assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
@@ -15,7 +15,8 @@ solution: Experience Manager, Experience Manager Assets
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en)                  |
 | AEM 6.5     | This article         |
 
-<!-- old content
+<!--
+old content
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].. 
 
@@ -24,7 +25,8 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects. [!DNL Experience Manager] users are able to quickly find, preview, and license [!DNL Adobe Stock] assets that are saved in [!DNL Experience Manager], without leaving the [!DNL Experience Manager] interface.
 -->
 
-<!-- New overview content
+<!--
+New overview content
 -->
 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects. 
@@ -33,7 +35,8 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 
 Organizations can integrate their enterprise [!DNL Adobe Stock] plan with [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for their creative and marketing projects, with the powerful asset management capabilities of [!DNL Experience Manager]. [!DNL Experience Manager] users can quickly find, preview, and license Adobe Stock assets that are saved in [!DNL Experience Manager], without leaving the [!DNL Experience Manager] interface.
 
-<!-- Old content
+<!--
+Old content
 ## Prerequisites {#prerequisites}
 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
@@ -57,7 +60,8 @@ An enterprise [!DNL Adobe Stock] plan,
 
 Within the entitlement, a default product profile for [!DNL Adobe Stock] exists in [!DNL Admin Console]. Multiple profiles can be created, and these profiles determines who can license Stock assets. A user having a direct access to the product profile can access [https://stock.adobe.com/](https://stock.adobe.com/) and license Stock assets. Whereas there is another method of using the Developer Access to create an integration (API). This integration authenticates the communication between [!DNL Experience Manager Assets] and [!DNL Adobe Stock].
 
-<!-- old content
+<!--
+old content
 ## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].
@@ -153,7 +157,8 @@ Execute the following steps to add the cloud configuration to connect to [!DNL A
    * **[!UICONTROL Locale]**: Select **[!UICONTROL English (United States)]**.
 1. Click **[!UICONTROL Save & Close]**.
 ![using adobe stock with aem](/help/assets/assets/adobe-stock-config-page.png)
-<!-- old content
+<!--
+old content
 ## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
 
 To integrate [!DNL Experience Manager] and [!DNL Adobe Stock], perform the following steps in the listed sequence: 
@@ -466,7 +471,8 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/stock/faq.html)
 
 
-<!--old content
+<!--
+old content
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
@@ -480,7 +486,8 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 -->
 
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+<!--
+TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 <!--

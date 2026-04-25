@@ -7,7 +7,7 @@ breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 feature: Communities
 role: User
-hide: yes
+hide: true
 ---
 
 # Adobe Experience Manager 6.5 Communities Guide {#communities}

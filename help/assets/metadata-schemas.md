@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Metadata schemas {#metadata-schemas}
@@ -375,5 +375,6 @@ You can define mandatory fields at a folder level, which is enforced on assets t
    >
    >The metadata validation checks are resource-intensive and may impact the performance of your system. Schedule the checks accordingly. If the server cannot cope up with the load, try disabling this job.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

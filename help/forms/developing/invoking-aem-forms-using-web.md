@@ -1472,9 +1472,11 @@ If you attempt to asynchronously invoke an AEM Forms service operation, such as 
             <jxb:class name="OptimizePDFAsyncResult">
             </jxb:class>
         </bindings>
-        <!--bindings node="//wsdl:portType[@name='GeneratePDFService']/wsdl:operation[@name='HtmlToPDF_Result']">
+        <!--
+bindings node="//wsdl:portType[@name='GeneratePDFService']/wsdl:operation[@name='HtmlToPDF_Result']">
             <jxb:class name="HtmlToPDFAsyncResult"/>
-        </bindings-->
+        </bindings
+        -->
  </bindings>
 ```
 

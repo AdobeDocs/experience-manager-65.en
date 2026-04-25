@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
@@ -16,7 +16,8 @@ solution: Experience Manager, Experience Manager Assets
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en)                  |
 | AEM 6.5     | This article         |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -159,7 +160,8 @@ For details, see [view and edit collection metadata](/help/assets/manage-collect
 
 ## Apply a metadata profile to folders {#applying-a-metadata-profile-to-folders}
 
-<!-- TBD: Review this overview.
+<!--
+TBD: Review this overview.
 -->
 
 When you assign a metadata profile to a folder, any subfolders automatically inherit the profile from its parent folder. This means that you can assign only one metadata profile to a folder. As such, consider carefully the folder structure of where you upload, store, use, and archive assets.
@@ -197,11 +199,13 @@ Follow the steps to apply metadata profile:
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
+<!--
+TBD: Commenting as the topic in metadata-config.md is incomplete.
 
 ### Apply metadata profile globally {#metadata-profile-global}
 
-For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+-->
 
 ### Remove a metadata profile from folders {#removing-a-metadata-profile-from-folders}
 
@@ -237,7 +241,8 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 >* [Edit metadata properties of multiple collections](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Metadata import and export in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
-<!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
+<!--
+TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
 ## Where to find metadata of an asset or folder {#find-metadata}
 

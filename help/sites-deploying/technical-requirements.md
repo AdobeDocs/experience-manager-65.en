@@ -166,7 +166,8 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 >
 >To run AEM 6.5 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care assists qualifying issues related to the usage of relational databases with AEM 6.5.
 >
->**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**-->
+>**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**
+-->
 
 ### Servlet Engines / Application Servers {#servlet-engines-application-servers}
 

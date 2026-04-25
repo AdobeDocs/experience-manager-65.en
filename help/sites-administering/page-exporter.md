@@ -104,7 +104,8 @@ When your template is configured, make it available:
 
 The template consists of a node structure, as it uses the [Content Sync framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Each node has a `type` property that defines a specific action in the creation process of the zip file. 
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 The following nodes can be used to build an export template:
@@ -174,7 +175,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 To meet some specific requirements, implement a [custom update handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Programmatically Exporting a Page {#programmatically-exporting-a-page}

@@ -6,7 +6,7 @@ role: User
 feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Manage your digital assets {#manage-digital-assets}
@@ -42,7 +42,8 @@ Do not include special characters in the extensions of asset filenames.
 
 ## Upload assets {#uploading-assets}
 
-<!-- TBD the following:
+<!--
+TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->

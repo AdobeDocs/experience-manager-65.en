@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Search digital assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
@@ -182,7 +182,8 @@ You can search digital assets based on exact values of metadata fields, such as,
 
 The properties `path`, `limit`, `size`, and `orderby` cannot be combined using `OR` operator with any other property.
 
-<!-- TBD: Where are the limit, size, orderby properties defined?
+<!--
+TBD: Where are the limit, size, orderby properties defined?
 -->
 
 The keyword for a user-generated property is its field label in the property editor in lowercase, with spaces removed.

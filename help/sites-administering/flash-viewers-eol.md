@@ -14,6 +14,8 @@ role: Admin
 
 *Effective January 31, 2017, Adobe Dynamic Media Classic (formerly Scene7) officially ended support for the Flash viewer platform.*
 
-<!-- *For more information about this important change, see the following FAQ website:*
+<!--
+*For more information about this important change, see the following FAQ website:*
 
-[https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html). -->
+[https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+-->

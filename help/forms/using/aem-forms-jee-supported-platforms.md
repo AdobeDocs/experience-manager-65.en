@@ -58,7 +58,8 @@ This document lists the supported client and server platforms for AEM Forms on J
 - **Patch Update Guidelines**: While using the patch installers to update, it is crucial to verify that the underlying full installer version is not more than two releases old. For instance, during the installation of service pack 6.5.23.0, ensure the underlying full installer version is either 6.5.18.0 or 6.5.12.0.
 
 <!--
-- **Patch Upgrade Support**: You can upgrade from an older service pack to a newer one (for example, from 6.5.18.0 to 6.5.23.0) using the patch installer, as long as the destination platform (OS, JDK, application server, etc.) is supported by the newer service pack.-->
+- **Patch Upgrade Support**: You can upgrade from an older service pack to a newer one (for example, from 6.5.18.0 to 6.5.23.0) using the patch installer, as long as the destination platform (OS, JDK, application server, etc.) is supported by the newer service pack.
+-->
 
 ### Recommended configurations {#recommendedconfigurations}
 
@@ -555,8 +556,10 @@ The Microsoft&reg; Office Professional Plus installation may use Retail or MAK/K
 
 If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 
-<!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
->- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
+<!--
+Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
+-->
 
 
 ### Exceptions to accessibility support {#exceptions-to-accessibility-support}
@@ -912,6 +915,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft&reg; SQL Server JDBC driver 12.8 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
 | Microsoft&reg; Office 2021 | | Microsoft&reg; Office 2019 |
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
+
 -->
 
 ### Release 6.5.23.0 (June 6, 2025)
@@ -998,4 +1002,4 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
    - [!DNL Microsoft&reg;&reg; SQL Server 2019]
 - Sep 09, 2020
    - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
-   -->
+-->

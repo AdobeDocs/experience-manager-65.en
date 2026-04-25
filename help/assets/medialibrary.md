@@ -5,7 +5,7 @@ contentOwner: AG
 role: Developer, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 
@@ -73,7 +73,8 @@ To use the Media Library functionality, you can use the default [!DNL Experience
 * Activity stream (timeline).
 * Comments and annotations.
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->

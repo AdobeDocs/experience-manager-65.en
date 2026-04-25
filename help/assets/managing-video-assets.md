@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Manage video assets {#manage-video-assets}

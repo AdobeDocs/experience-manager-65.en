@@ -51,7 +51,8 @@ Once the high performance temporary volume is ready, set the JVM parameter `-Dja
 
 Adobe recommends deploying [!DNL Experience Manager Assets] on Java 8 for optimum performance.
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
 ### JVM parameters {#jvm-parameters}

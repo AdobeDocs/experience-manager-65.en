@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
-hide: yes
+hide: true
 solution: Experience Manager, Experience Manager Assets
 ---
 # Asset reports {#asset-reports}

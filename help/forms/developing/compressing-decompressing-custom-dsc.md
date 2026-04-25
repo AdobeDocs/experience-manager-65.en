@@ -137,9 +137,11 @@ The component.xml file is shown here:
 
 <!-- Start of the Service definition -->
    <services>
-<!-- Unique name for service descriptor.
+<!--
+Unique name for service descriptor.
            The value is used as the default name for
-           deployed services -->
+           deployed services
+           -->
       <service name="ZipService">
 <!-- service implementation class definition -->
         <implementation-class>nith.lces2.dsc.ZIPService</implementation-class>

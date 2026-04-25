@@ -220,8 +220,10 @@ Before Installing Acrobat, review these essential requirements. You should have:
 * Local administrator privileges on the machine running AEM Forms
 * Windows 64-bit operating system 
 * Stable internet connection for license activation
-<!-- Backup solution for existing Acrobat settings
- Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) --> 
+<!--
+Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details)
+ --> 
 
 
 #### Implementation Workflow and Timeline
@@ -1456,7 +1458,8 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 +++
 
-<!-- +++ Unable to add a PDF Generator (PDFG) user
+<!--
++++ Unable to add a PDF Generator (PDFG) user
 
 * (Acrobat 2020 only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
@@ -1470,7 +1473,8 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 +++
 
-<!-- +++ (Acrobat 2020 only) Multiple user conversion failures 
+<!--
++++ (Acrobat 2020 only) Multiple user conversion failures 
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
@@ -1482,9 +1486,11 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 * Perform a sample conversion.
 
-+++ -->
++++
+-->
 
-<!-- (Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
+<!--
+(Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1509,7 +1515,8 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 * You can go online within 7 days of the first launch of your Adobe product to complete an online activation and registration or use an internet-enabled device and your product's serial number to complete this process. For detailed instructions, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
-+++ -->
++++
+-->
 
 +++ Unable to convert Word or Excel file to PDF on Windows Server
 

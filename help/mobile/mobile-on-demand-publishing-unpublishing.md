@@ -36,9 +36,11 @@ The general workflow to publish/unpublish an article:
 1. Select Publish from the action bar. After a few moments, your articles will now be public.
 1. Use the same steps above to Unpublish publish articles.
 
-<!-- FAIL >>[!NOTE]
+<!--
+FAIL >>[!NOTE]
 >
->Generally, you should preflight before publishing. See [Previewing with Preflight](/content/docs/en/aem/6-3/administer/mobile-apps/aem-mobile/previewing-with-preflight-on-demand-services.md) for more details.-->
+>Generally, you should preflight before publishing. See [Previewing with Preflight](/content/docs/en/aem/6-3/administer/mobile-apps/aem-mobile/previewing-with-preflight-on-demand-services.md) for more details.
+-->
 
 ![chlimage_1-9](assets/chlimage_1-9.gif)
 

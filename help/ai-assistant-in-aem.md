@@ -110,7 +110,8 @@ For example, in your prompt, it helps to name the AEM solution you are working i
 
 ## Use AI Assistant in AEM {#ai-use} 
 
-<!-- UNHIDE AFTER BETA or at GA
+<!--
+UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
 To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
@@ -125,7 +126,8 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
+-->
 
 
 ### Start an AI Assistant in AEM conversation
@@ -193,7 +195,8 @@ Here are answers to some common questions about AI Assistant:
 * **Does the AI Assistant in AEM use personal information for training data?**  
   No. AI Assistant in AEM does not use personal information for training purposes. Avoid sharing personal information about yourself or others, including names or contact details, with the AI Assistant in AEM.
 
-<!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
+<!--
+IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
 ## AEM Forms AI Assistant (Forms Experience Builder) {#ai-forms-builder}
 

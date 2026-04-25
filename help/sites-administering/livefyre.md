@@ -20,7 +20,8 @@ role: Admin
 >
 >[Adobe Livefyre is officially end-of-service as of November 30, 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
 
-<!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
+<!--
+Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 
 ## Getting Started {#getting-started}
 
@@ -228,4 +229,5 @@ After you import the product catalog, the products show up in real time in your 
 | Single Card |X |X |X |X |
 | Storify 2 |  |X |X |X |
 | Trending |  |X |X |X |
-| Upload Button |  |X |X |X | -->
+| Upload Button |  |X |X |X |
+-->

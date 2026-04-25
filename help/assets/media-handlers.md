@@ -24,7 +24,8 @@ Media handlers are services in [!DNL Assets] that perform specific actions on as
 
 The following media handlers are available within [!DNL Assets] and handle the most common MIME types:
 
-<!-- TBD: Java versions should not be set to 1.5. Must be updated.
+<!--
+TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Handler name | Service Name (in the system console) | Supported MIME types |

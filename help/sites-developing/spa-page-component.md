@@ -10,7 +10,7 @@ exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-index: no
+index: false
 ---
 
 # SPA Page Component{#spa-page-component}

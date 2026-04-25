@@ -4,7 +4,7 @@ description: Learn to know the techniques for testing form accessibility in form
 feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-hide: yes
+hide: true
 hidefromtoc: yes
 exl-id: 77fd3bc5-9a05-4442-af2b-238169d8061a
 ---

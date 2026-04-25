@@ -88,7 +88,8 @@ See also:
 
 The following entries should be added to the end of the /filter section, especially after all denied entries.
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -153,7 +154,8 @@ The following entries should be added to the end of the /filter section, especia
 ```
 
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # design and template assets
@@ -221,7 +223,8 @@ The following entries should be added to the end of the /filter section, especia
 
 The rules section of `dispatcher.any` defines what responses should be cached based on the requested URL. For Communities, the rules section is used to define what should never be cached.
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -243,7 +246,8 @@ The rules section of `dispatcher.any` defines what responses should be cached ba
 /0208 { /type "deny" /url "/content/usergenerated/*" }
 ```
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # Never cache the client-side .social.json calls
@@ -275,7 +279,8 @@ The first filter pattern is often used to deny everything so that following filt
 
 Following is a sample `dispatcher.any` file that includes the Communities /filters and /rules.
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -590,7 +595,8 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
 
 ```
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # Each farm configures a set of load balanced renders (that is, remote servers)

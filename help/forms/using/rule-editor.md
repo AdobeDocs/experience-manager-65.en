@@ -24,7 +24,8 @@ role: User, Developer
 The rule editor feature in Adobe Experience Manager Forms empowers forms business users and developers to write rules on adaptive form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
 
 The rule editor provides an intuitive and simplified user interface to write rules. Rule editor offers a visual editor for all the users. In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. 
-<!-- Some of the key actions that you can perform on adaptive form objects using rules are:
+<!--
+Some of the key actions that you can perform on adaptive form objects using rules are:
 
 * Show or hide an object
 * Enable or disable an object
@@ -32,7 +33,8 @@ The rule editor provides an intuitive and simplified user interface to write rul
 * Validate the value of an object
 * Execute functions to compute the value of an object
 * Invoke a form data model service and perform an operation
-* Set property of an object -->
+* Set property of an object
+-->
 
 Rule editor replaces the scripting capabilities in AEM 6.1 Forms and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](#impact-of-rule-editor-on-existing-scripts).
 
