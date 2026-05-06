@@ -1,0 +1,31 @@
+---
+##### Aggregate Commerce PRs and Issues into a respective Organizational Project #####
+
+name: Add pull requests and issues to projects
+
+on:
+  pull_request_target:
+    types:
+      - opened
+  issues:
+    types: 
+      - opened
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add to Commerce PR project
+        if: github.event_name == 'pull_request_target'
+        uses: actions/add-to-project@v0.4.0
+        with:
+          project-url: https://github.com/orgs/AdobeDocs/projects/5 # The organizational project for pull requests
+          github-token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
+      
+      - name: Add to Commerce Issue project
+        if: github.event_name == 'issues'
+        uses: actions/add-to-project@v0.4.0
+        with:
+          project-url: https://github.com/orgs/AdobeDocs/projects/6 # The organizational project for issues
+          github-token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}

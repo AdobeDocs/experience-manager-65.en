@@ -4,6 +4,8 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 solution: Experience Manager, Experience Manager 6.5
 feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
+landing-page-name: experience-manager-65
+landing-page-breadcrumb-title: AEM 6.5
 type: Documentation
 version: Experience Manager 6.5
 index: true
