@@ -538,8 +538,8 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 
 >[!NOTE]
 >
->- PDF Generator supports Microsoft&reg; Office 2024.
 >- PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
+>- PDF Generator supports Microsoft&reg; Office 2024.
 >- PDF Generator requires Adobe Acrobat Pro DC (32-Bit) to perform the conversion.
 >- PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
 >- If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
@@ -923,12 +923,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
+|Microsoft&reg; Office 2024|||
 | MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
 | MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 |Centos 7  |Microsoft&reg; SQL Server 2019 |
 | Microsoft&reg; SQL Server JDBC driver 12.10.0 | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 4.x) (64-bit)| Microsoft&reg; SQL Server JDBC driver 8.2 |
 |  Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 5.x) (64-bit)| |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit) |
-|Microsoft&reg; Office 2024|||
 
 ### Release 6.5.22.0 (Nov 29, 2024)
 
