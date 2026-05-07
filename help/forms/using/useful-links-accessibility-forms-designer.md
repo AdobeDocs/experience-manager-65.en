@@ -5,7 +5,6 @@ feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: yes
 exl-id: 17db72f8-32ff-459a-ad54-c417fa9ab62f
 ---
 # Useful links

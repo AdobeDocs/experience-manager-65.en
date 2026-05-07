@@ -881,8 +881,6 @@ After completing all processes, perform a quick action test to confirm the insta
 
 >[!ENDTABS]
 
-
-
 ### Disable Protected Mode at Startup in Acrobat
 
 After enabling Feature Restricted Licensing (FRL) and verifying Acrobat activation, it is recommended to disable "Protected Mode at startup" in Adobe Acrobat to ensure compatibility with AEM Forms PDF Generator.
@@ -1546,7 +1544,6 @@ When you convert Microsoft Excel 2019 to PDF on Microsoft Windows Server 2019, y
 To resolve the issue, [create a feature-specific registry key on Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
-
 
 ## Next steps {#next-steps}
 

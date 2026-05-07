@@ -6,7 +6,6 @@ content-type: reference
 
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
-hidefromtoc: yes
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer

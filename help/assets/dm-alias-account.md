@@ -12,7 +12,6 @@ solution: Experience Manager, Experience Manager Assets
 ---
 <!--
 hide: true
-hidefromtoc: yes
 -->
 
 # About configuring a Dynamic Media company alias account {#about-dm-alias-acct}

@@ -5,7 +5,6 @@ feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: yes
 exl-id: 646cfe47-b11f-45bb-a3f9-3dfc2043146e
 ---
 # Introduction to best accessibility practices in Forms Designer
