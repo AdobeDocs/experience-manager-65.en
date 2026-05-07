@@ -538,6 +538,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 
 >[!NOTE]
 >
+>- PDF Generator supports Microsoft&reg; Office 2024.
 >- PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
 >- PDF Generator requires Adobe Acrobat Pro DC (32-Bit) to perform the conversion.
 >- PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
@@ -927,6 +928,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft&reg; SQL Server 2022 |Centos 7  |Microsoft&reg; SQL Server 2019 |
 | Microsoft&reg; SQL Server JDBC driver 12.10.0 | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 4.x) (64-bit)| Microsoft&reg; SQL Server JDBC driver 8.2 |
 |  Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 5.x) (64-bit)| |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit) |
+|  Microsoft&reg; Office 2024| | |
 
 ### Release 6.5.22.0 (Nov 29, 2024)
 
