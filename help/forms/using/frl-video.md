@@ -1,3 +1,7 @@
+---
+title: "Video Script: Setting Up Feature Restricted Licensing (FRL) for Adobe Acrobat on AEM Forms"
+description: Setting Up Feature Restricted Licensing (FRL) for Adobe Acrobat on AEM Forms
+---
 # Video Script: Setting Up Feature Restricted Licensing (FRL) for Adobe Acrobat on AEM Forms
 
 | Visual | Title | Speaker Script |

@@ -1547,6 +1547,7 @@ To resolve the issue, [create a feature-specific registry key on Windows](https:
 
 +++
 
+>[!ENDTABS]
 
 ## Next steps {#next-steps}
 
