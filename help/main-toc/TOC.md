@@ -38,7 +38,7 @@ user-guide-title: AEM 6.5
     + [6.5.1](/help/release-notes/previous/6-5-1.md)
     + [6.5.0](/help/release-notes/previous/ga.md)
   + [AEM Forms service pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
-  + [AEM Forms JEE patch installer](/help/release-notes/jee-patch-installer-65.md)
+  + {hide-from-toc} [AEM Forms JEE patch installer](/help/release-notes/jee-patch-installer-65.md)
   + [AEM Forms Service Pack Hotfix](/help/release-notes/aem-forms-hotfix.md)
   + [Cumulative Key Features and Enhancements](/help/release-notes/cumulative-features-enhancements.md)
   + [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md)
@@ -362,7 +362,7 @@ user-guide-title: AEM 6.5
     + [Optional - Configure Dynamic Media - Scene7 mode, General Settings](/help/assets/dm-general-settings.md)
     + [Optional - Configure Dynamic Media - Scene7 mode, Publish Setup](/help/assets/dm-publish-settings.md)
     + [Troubleshoot Dynamic Media - Scene7 mode](/help/assets/troubleshoot-dms7.md)
-    + [Configure a Dynamic Media company alias account](/help/assets/dm-alias-account.md)
+    + {hide-from-toc} [Configure a Dynamic Media company alias account](/help/assets/dm-alias-account.md)
     + [Configure Dynamic Media - Hybrid mode](/help/assets/config-dynamic.md)
     + [Migrate from Dynamic Media - Hybrid mode to Dynamic Media - S7 mode](/help/assets/migrate-from-hybrid-to-dms7.md)
     + [Accessibility in Dynamic Media](/help/assets/accessibility-dm.md)
@@ -621,7 +621,7 @@ user-guide-title: AEM 6.5
     + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
     + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/using/add-versioning-reviews-comments.md)
     + [Compare Adaptive Forms](/help/forms/using/compare-forms-core-components.md)
-    + [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md)
+    + {hide-from-toc} [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md)
   + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
     + [Best practices for working with adaptive forms](/help/forms/using/adaptive-forms-best-practices.md)
     + [Creating an adaptive form](/help/forms/using/creating-adaptive-form.md)
@@ -880,11 +880,11 @@ user-guide-title: AEM 6.5
     + [Using Scribble Signature in HTML5 forms](/help/forms/using/scribble-signature.md)
     + [Changing Page Zero content in Designer](/help/forms/using/changing-page-zero-content-designer.md)
     + Accessibility Best Practices {#accessibility-best-practices}
-      + [Introduction](/help/forms/using/introduction-accessibility-forms-designer.md)
-      + [Best practices for creating forms](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
-      + [Techniques for testing form accessibility](/help/forms/using/techniques-for-testing-form-accessibility.md)
-      + [Mapping between guidelines and best practices](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
-      + [Useful links](/help/forms/using/useful-links-accessibility-forms-designer.md)
+      + {hide-from-toc} [Introduction](/help/forms/using/introduction-accessibility-forms-designer.md)
+      + {hide-from-toc} [Best practices for creating forms](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+      + {hide-from-toc} [Techniques for testing form accessibility](/help/forms/using/techniques-for-testing-form-accessibility.md)
+      + {hide-from-toc} [Mapping between guidelines and best practices](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+      + {hide-from-toc} [Useful links](/help/forms/using/useful-links-accessibility-forms-designer.md)
   + Customize AEM Forms {#customize-aem-forms}
     + [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md)
     + [Creating a custom adaptive form template](/help/forms/using/custom-adaptive-forms-templates.md)
@@ -1222,7 +1222,7 @@ user-guide-title: AEM 6.5
     + [Generating and working with Hashes in dynamic PDF forms](/help/forms/developing/hashing-forms.md)
     + [Passing credentials using WS-Security headers](/help/forms/developing/passing-credentials.md)
   + Glossary {#aem-forms-glossary}
-    + [AEM Forms Glossaries](/help/forms/using/aem-forms-glossary.md)
+    + {hide-from-toc} [AEM Forms Glossaries](/help/forms/using/aem-forms-glossary.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
   + AI Assistant {#ai-assistant}
