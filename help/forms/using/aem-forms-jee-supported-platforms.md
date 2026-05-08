@@ -546,7 +546,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >* PDF Generator conversions for OpenOffice are supported on both Windows and Linux&reg;.
 >* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 >* PDF Generator does not support Microsoft&reg; Windows 11.
->* Microsoft&reg; Office 2021 Professional Plus support is deprecated.
+>* Microsoft&reg; Office 2021 Professional Plus support is deprecated. 
 
 <!--
 Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
