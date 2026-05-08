@@ -764,9 +764,7 @@ For additional requirements see:
 
 #### Mobile device support {#mobile-device-support}
 
-
 AEM Forms app is available on the following platforms:
-
 
 | **Platform**      | **Supported Devices**                                                                                               |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
