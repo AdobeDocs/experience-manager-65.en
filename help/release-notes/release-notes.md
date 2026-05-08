@@ -65,16 +65,16 @@ OLD DOWNLOAD URL
 
 * The Edit Layout toolbar now presents smaller screen and tablet labels in a meaningful screen reader sequence. Users hear the labels with the related ruler measurements instead of hearing them out of order. (SITES-25291) MAJOR
 * The Swatches popover modal now manages focus correctly when it opens from the Annotation Modal. Focus starts at the modal heading instead of moving directly to the selected swatch button. (SITES-25275) MAJOR
-* The Teaser Modal now provides an accessible way to move the dialog with a keyboard. Users no longer need a mouse to reposition the modal on the page. (SITES-25226) MAJOR
+* The Teaser Modal now provides an accessible way to move the dialog box with a keyboard. Users no longer need a mouse to reposition the modal on the page. (SITES-25226) MAJOR
 * Card View improves accessibility by removing unnecessary ARIA grid behavior. Screen reader users receive clearer card information without grid navigation controls that do not match the visual layout. (SITES-24933) MAJOR
 * Tooltips in the Delete modal now display consistently after repeated hover actions. Users can move the pointer away and return to the icon to read the tooltip again. (SITES-24778) MAJOR
 * The Left Rail now receives focus in the expected order after users open it from the Sites home page. Keyboard and screen reader users can move from the configuration button to the rail content without skipping the expanded area. (SITES-24754) MAJOR
-* Focus management now works consistently in the Carousel modal dialog. Keyboard and screen reader users can start at the modal heading and return to the original control after closing the dialog. (SITES-24716) MAJOR
-* The Link selection dialog now returns focus to the control that opened it after users close the dialog box. Keyboard and screen reader users no longer lose their place after closing the dialog box. (SITES-24707) MAJOR
-* The Image modal no longer moves focus to the first tab or main page landmark when authors open or close the dialog box. Focus moves to the dialog heading first, then returns to the control that opened the dialog. (SITES-24693) MAJOR
-* The References Rail now manages focus correctly when a modal dialog opens. Keyboard and screen reader users remain inside the dialog until they close it, then continue navigation without losing context. (SITES-24683) MAJOR
+* Focus management now works consistently in the Carousel modal dialog box. Keyboard and screen reader users can start at the modal heading and return to the original control after closing the dialog box. (SITES-24716) MAJOR
+* The Link selection dialog box now returns focus to the control that opened it after users close the dialog box. Keyboard and screen reader users no longer lose their place after closing the dialog box. (SITES-24707) MAJOR
+* The Image modal no longer moves focus to the first tab or main page landmark when authors open or close the dialog box. Focus moves to the dialog box heading first, then returns to the control that opened the dialog box. (SITES-24693) MAJOR
+* The References Rail now manages focus correctly when a modal dialog box opens. Keyboard and screen reader users remain inside the dialog box until they close it, then continue navigation without losing context. (SITES-24683) MAJOR
 * The Hyperlink path selection modal no longer moves focus to the wrong field or control when authors open or close it. Focus starts at the modal heading and returns to the button that opened the modal. (SITES-24672) MAJOR
-* The Teaser modal no longer moves focus to the first tab or top of the page when authors open or close it. Focus now follows the expected dialog flow and reduces unnecessary screen reader announcements. (SITES-24522) MAJOR
+* The Teaser modal no longer moves focus to the first tab or top of the page when authors open or close it. Focus now follows the expected dialog box flow and reduces unnecessary screen reader announcements. (SITES-24522) MAJOR
 
 
 
@@ -114,11 +114,11 @@ OLD DOWNLOAD URL
 * Keyboard navigation now moves focus into the Emulator menu after users expand it. This behavior helps screen reader and keyboard users access the menu options in the expected order. (SITES-24954)
 * Sites list view now improves the visibility of drag-and-drop buttons in table rows. Authors can identify the control more easily when they reorder content. (SITES-24951)
 * A card no longer exposes both the image link and the heading link as separate links when they share the same destination. The update reduces screen reader verbosity and improves navigation efficiency. (SITES-24947)
-* Header menu buttons now use more accurate accessibility attributes. Screen readers announce the buttons as expandable controls instead of dialog-opening controls. (SITES-24742)
+* Header menu buttons now use more accurate accessibility attributes. Screen readers announce the buttons as expandable controls instead of dialog box-opening controls. (SITES-24742)
 * The Inbox now marks related links with semantic list markup. Screen reader users can understand the number and grouping of Inbox links more easily. (SITES-24730)
 * Header button labels now avoid verbose accessible names. Screen reader users receive clearer announcements without duplicate role information from icon text. (SITES-24715)
 * The CSV Report button now provides clearer feedback about new-tab behavior. Users can understand that selecting the button opens a new browser tab before they activate it. (SITES-24704)
-* Modal dialogs now use more accurate accessibility markup for header controls. Help and Toggle fullscreen buttons remain interactive controls and no longer appear as headings to screen readers. (SITES-24696)
+* Modal dialog boxes now use more accurate accessibility markup for header controls. Help and Toggle fullscreen buttons remain interactive controls and no longer appear as headings to screen readers. (SITES-24696)
 * The Filter Rail landmark now uses a distinct label that identifies its purpose. Screen reader users can navigate pages with multiple similar landmarks more confidently. (SITES-24686)
 * References Rail messages now provide better readability for users who rely on sufficient text contrast. The reported issue involved selection and multi-selection messages that appeared too light against their background. (SITES-24666)
 * The Search modal now provides larger touch targets for the Remove Location and Close buttons. This change helps users with hand tremors, spasms, or low vision activate the intended control. (SITES-24530)
@@ -159,7 +159,7 @@ OLD DOWNLOAD URL
 
 * AEM now localizes the Main label in the Content Fragment download dialog box. The fix keeps the download workflow consistent across non-English locales. (SITES-42534)
 * AEM now translates the `Later` status label when authors schedule Content Fragment publication from Assets. This fix keeps the Published column consistent across localized interfaces. (SITES-42532)
-* Content Fragment creation now displays a localized validation message when authors enter invalid characters in the Title field. The dialog no longer shows the unlocalized "Invalid name provided" string. (SITES-19796)
+* Content Fragment creation now displays a localized validation message when authors enter invalid characters in the Title field. The dialog box no longer shows the unlocalized "Invalid name provided" string. (SITES-19796)
 * The edit Content Fragment page now uses localized labels for Tags and Collections. Authors see translated field names instead of unlocalized English strings. (SITES-977)
 
 
@@ -213,11 +213,11 @@ OLD DOWNLOAD URL
 #### Core Components{#sites-core-components-6525}
 
 * AEM no longer generates repeated ThumbnailServlet errors when a request targets a missing DAM resource. The servlet stops processing after the redirect, which prevents NullPointerException entries from flooding the error log. (SITES-41238) MAJOR
-* AEM no longer flags optional dialog fields as required when authors reopen component dialogs. The dialog keeps validation focused on fields that actually require input, which prevents misleading tab-level errors. (SITES-40449) MAJOR
+* AEM no longer flags optional dialog box fields as required when authors reopen component dialog boxes. The dialog box keeps validation focused on fields that actually require input, which prevents misleading tab-level errors. (SITES-40449) MAJOR
 
 
 * AEM includes several backported security fixes that strengthen Sites and related Cloud Services components. These fixes reduce cross-site scripting risk and improve request handling across affected authoring paths. (SITES-38314)
-* The Image v3 component configuration dialog now localizes strings in the Page Editor. Authors no longer see untranslated labels when they configure Image components in localized interfaces. (SITES-38726)
+* The Image v3 component configuration dialog box now localizes strings in the Page Editor. Authors no longer see untranslated labels when they configure Image components in localized interfaces. (SITES-38726)
 
 
 #### Campaign integration{#sites-campaign-integration-6525}
@@ -262,7 +262,7 @@ OLD DOWNLOAD URL
 * Page Policy descriptions now render correctly in the Template Editor. Users can read the full Default CSS Classes guidance without truncated text in the Styles tab. (SITES-29724)
 * The Template Editor now displays a localized error when an author tries to drag a component onto a deleted template. The message no longer appears as an untranslated "while processing" string. (SITES-19313)
 * The "Target" label in the Teaser Configure window now appears with localized text. The Hyperlink section no longer shows the English string in non-English locales. (SITES-18622)
-* The Start Workflow dialog in the Page Editor now displays localized workflow action labels. Authors no longer see English strings for workflow options such as approval, publish, request, and unpublish actions. (SITES-18103)
+* The Start Workflow dialog box in the Page Editor now displays localized workflow action labels. Authors no longer see English strings for workflow options such as approval, publish, request, and unpublish actions. (SITES-18103)
 * The Parent drop-down menu in the Separator edit panel now displays localized strings without truncation. Authors can review the full label when they configure the component. (SITES-17480)
 * The Page Editor now displays localized labels for "Full Width" and "Fixed Width" in the Container component Styles menu. Authors who use supported locales no longer see those strings in English. (SITES-17478)
 * Authors can now read the full tooltip in the Navigation properties area of the Templates console. The UI keeps the tooltip aligned and prevents text truncation during template editing. (SITES-15480)
@@ -286,8 +286,8 @@ OLD DOWNLOAD URL
 * Authors can now create Content Fragments in DAM folders whose names contain an apostrophe. AEM handles the encoded folder path correctly and no longer triggers a NullPointerException during creation. (SITES-38653) MAJOR
 
 * AEM now supports copy-and-paste actions for configured Content Fragment components in the Page Editor. The component retains its Content Fragment reference, so authors can duplicate content without manual reauthoring. (SITES-41586)
-* The Page Editor now displays first-field description tooltips correctly in component dialogs. Long descriptions remain visible, so authors can review field instructions without losing text at the top of the tooltip. (SITES-39937)
-* Authors can now open the Rich Text Editor Link dialog when they use AEM over HTTP. The fix restores link editing for on-premise environments that do not use HTTPS. (SITES-39467)
+* The Page Editor now displays first-field description tooltips correctly in component dialog boxes Long descriptions remain visible, so authors can review field instructions without losing text at the top of the tooltip. (SITES-39937)
+* Authors can now open the Rich Text Editor Link dialog box when they use AEM over HTTP. The fix restores link editing for on-premise environments that do not use HTTPS. (SITES-39467)
 
 
 #### Replication{#sites-replication-6525}
@@ -402,12 +402,12 @@ OLD DOWNLOAD URL
 
 #### Localization{#foundation-localization-6525}
 
-* The certificate upload dialog in Security > Trust Store now shows localized data format labels. Users no longer see unlocalized English labels when they add a certificate. (NPR-43412) MAJOR
+* The certificate upload dialog box in Security > Trust Store now shows localized data format labels. Users no longer see unlocalized English labels when they add a certificate. (NPR-43412) MAJOR
 
 
-* The Create KeyStore dialog now aligns the Cancel button with the other dialog buttons. The button layout remains consistent and no longer shifts out of alignment. (NPR-43291)
+* The Create KeyStore dialog box now aligns the Cancel button with the other dialog box buttons. The button layout remains consistent and no longer shifts out of alignment. (NPR-43291)
 * The Check dialog box in **Security** > A**dobe IMS Configurations** now displays localized confirmation text. The check and delete messages no longer appear as unlocalized English strings. (NPR-43289)
-* Localized UI labels now appear correctly in affected dialogs and the Keystore tab. Aria-label values use translated strings, and password field labels display without truncation. (NPR-43285)
+* Localized UI labels now appear correctly in affected dialog boxes and the Keystore tab. Aria-label values use translated strings, and password field labels display without truncation. (NPR-43285)
 * The Create New User workflow now shows localized validation errors for invalid characters. Users receive a clear, translated message instead of an unlocalized IllegalArgumentException string. (GRANITE-52920)
 
 
@@ -417,7 +417,7 @@ OLD DOWNLOAD URL
 #### Platform{#foundation-platform-6525}
 
 * The Show Tag References button now displays the number of references for the selected tag. This update helps users understand tag usage without extra navigation. (CQ-4355509)
-* The Move dialog in Tagging now positions validation messages correctly. Error text no longer covers the search path icon when users submit the dialog with an empty required field. (CQ-4353009)
+* The Move dialog box in Tagging now positions validation messages correctly. Error text no longer covers the search path icon when users submit the dialog box with an empty required field. (CQ-4353009)
 
 
 #### Security{#foundation-security-6525}
