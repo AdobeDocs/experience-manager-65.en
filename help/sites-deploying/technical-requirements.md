@@ -469,12 +469,12 @@ For Windows x86:
   </tr>
 
   <tr>
-   <td>Microsoft&reg; Office 2021 Professional Plus, retail and volume licenses</td>
+   <td>Microsoft&reg; Office 2024 Professional Plus, retail and volume licenses</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+OpenOffice 4.1.15 </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT<br>
 
@@ -485,16 +485,15 @@ For Windows x86:
 
 >[!NOTE]
 >
->* PDF Generator supports Microsoft&reg; Office 2024. 
->* PDF Generator requires Adobe Acrobat Pro DC (32-Bit) to perform the conversion.
 >* PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
->* PDF Generator requires Adobe Acrobat Pro DC (32-Bit) to perform the conversion.
->* PDF Generator supports only the 32-bit version of Microsoft&reg; Office Professional Plus and other software required for conversion.
->* If a Microsoft&reg; Office installation becomes deactivated or unlicensed due to any reason, such as a volume licensed installation unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
+>* PDF Generator requires 32-bit Adobe Acrobat Pro DC and Microsoft&reg; Office Professional Plus to perform the conversion.
+>* The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
+>* If a Microsoft&reg; Office installation becomes deactivated or unlicensed for any reason, such as a volume-licensed installation that is unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >* PDF Generator does not support Microsoft&reg; Office 365.
 >* PDF Generator conversions for OpenOffice are supported on both Windows and Linux&reg;.
 >* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
->* PDF Generator service does not support Microsoft&reg; Windows 11.
+>* PDF Generator does not support Microsoft&reg; Windows 11.
+>* Microsoft&reg; Office 2021 Professional Plus support is deprecated.
 
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
 
