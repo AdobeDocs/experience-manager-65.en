@@ -52,7 +52,7 @@ OLD DOWNLOAD URL
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE --> 
 
-### [!DNL Assets] {#assets-6425}
+
 
 
 
@@ -283,10 +283,7 @@ OLD DOWNLOAD URL
 
 * Authors can now create tags that include capital letters or spaces and apply them during the first Page Properties save. AEM creates the tag and writes the correct value to the page metadata during the same operation. (SITES-42550) CRITICAL
 
-
 * Authors can now create Content Fragments in DAM folders whose names contain an apostrophe. AEM handles the encoded folder path correctly and no longer triggers a NullPointerException during creation. (SITES-38653) MAJOR
-
-
 
 * AEM now supports copy-and-paste actions for configured Content Fragment components in the Page Editor. The component retains its Content Fragment reference, so authors can duplicate content without manual reauthoring. (SITES-41586)
 * The Page Editor now displays first-field description tooltips correctly in component dialogs. Long descriptions remain visible, so authors can review field instructions without losing text at the top of the tooltip. (SITES-39937)
@@ -305,10 +302,26 @@ OLD DOWNLOAD URL
 * Universal Editor now opens in Preview mode for AEM development, rapid development, and stage environments. The Open command uses the correct preview behavior for non-production instances. (SITES-33839)
 
 
-### [!DNL Assets]{#assets-6525}
+### [!DNL Assets] {#assets-6525}
 
+* The My Shares client library now handles shared asset title data safely before adding it to page markup. Generated share pages no longer expose users to script injection through manipulated asset metadata. (ASSETS-60898) CRITICAL
+
+
+* Adobe Stock licensing now works correctly in the Assets UI. The License button no longer stays disabled after AEM loads the stock asset profile and entitlement data. (ASSETS-62610) MAJOR
+* The out-of-the-box asset expiry notification now handles near-expiry dates correctly. Reminder emails run when the remaining time reaches the configured threshold instead of skipping assets with an eight-day expiry. (ASSETS-57857) MAJOR
+
+
+
+* AEM Assets now restores keyboard navigation after users choose a saved search. The interface lets users move away from the dropdown without refreshing or restarting the Assets view. (ASSETS-52061)
+
+* The Admin View download workflow now preserves ZIP file names correctly. Downloading a ZIP asset no longer produces a file name with a double .zip extension. (ASSETS-62207)
+* The Assets reference workflow now handles spaces in file names correctly. Related asset updates no longer fail when a selected file name includes one or more spaces. (ASSETS-56418)
 
 #### [!DNL Dynamic Media]{#assets-dm-6525}
+
+* The Subtitles and Audio Tracks dropdown now shows Arabic as a supported language in Dynamic Media. This update lets users add Arabic subtitle tracks without custom workarounds. (ASSETS-61771)
+
+
 
 
 ### [!DNL Forms]{#forms-6525}
@@ -357,6 +370,8 @@ OLD DOWNLOAD URL
 
 #### Apache Felix {#foundation-apachefelix-6525}
 
+* Startup now wires the CredentialsSupport service correctly for Felix-based authentication. This prevents dependency errors that can affect token authentication during AEM startup. (GRANITE-63186)
+
 
 #### Campaign{#foundation-campaign-6525}
 
@@ -381,6 +396,7 @@ OLD DOWNLOAD URL
 #### Integrations{#foundation-integrations-6525}
 
 
+
 #### Jetty{#foundation-jetty-6525}
 
 
@@ -392,12 +408,16 @@ OLD DOWNLOAD URL
 * The Create KeyStore dialog now aligns the Cancel button with the other dialog buttons. The button layout remains consistent and no longer shifts out of alignment. (NPR-43291)
 * The Check dialog box in **Security** > A**dobe IMS Configurations** now displays localized confirmation text. The check and delete messages no longer appear as unlocalized English strings. (NPR-43289)
 * Localized UI labels now appear correctly in affected dialogs and the Keystore tab. Aria-label values use translated strings, and password field labels display without truncation. (NPR-43285)
+* The Create New User workflow now shows localized validation errors for invalid characters. Users receive a clear, translated message instead of an unlocalized IllegalArgumentException string. (GRANITE-52920)
 
 
 #### Oak {#foundation-oak-6525}
 
 
 #### Platform{#foundation-platform-6525}
+
+* The Show Tag References button now displays the number of references for the selected tag. This update helps users understand tag usage without extra navigation. (CQ-4355509)
+* The Move dialog in Tagging now positions validation messages correctly. Error text no longer covers the search path icon when users submit the dialog with an empty required field. (CQ-4353009)
 
 
 #### Security{#foundation-security-6525}
@@ -434,6 +454,11 @@ OLD DOWNLOAD URL
 #### Workflow{#foundation-workflow-6525}
 
 * The workflow model editor now validates tenant-specific workflow model paths correctly. Customers who store workflow models under tenant-level /conf paths can edit those models without moving them to global configuration paths. (GRANITE-65376) MAJOR
+
+
+* The workflow model editor now normalizes Windows file paths during path validation. Authors can edit workflow models on Windows servers without access errors that block model updates. (GRANITE-63692)
+* Task creation now includes server-side validation for due dates. Users cannot create tasks with a due date that occurs before the start date, which keeps inbox task data consistent. (CQ-4362253)
+* Namespace creation now handles localized text correctly. Users can enter non-Latin characters in the Title field and create the namespace without a validation error. (CQ-4355587)
 
 
 
