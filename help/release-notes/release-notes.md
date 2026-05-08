@@ -128,6 +128,7 @@ OLD DOWNLOAD URL
 * Page Editor no longer exposes multiple region landmarks with the same label. Each landmark now has a unique accessible name, so screen reader users can identify the current region. (SITES-24497)
 * The Change file or folder control now separates the control label from its state information. Screen reader users hear a shorter, clearer name when they navigate the header control. (SITES-24496)
 * Interactive controls in the Content Fragment Admin table now support standard keyboard navigation. Keyboard users can tab to buttons and links instead of discovering them only through arrow-key navigation. (SITES-24285)
+* The Sites Admin UI now treats decorative Globe icons correctly for screen readers. The icons use empty alternative text so users hear only meaningful interface content. (SITES-3057)
 
 
 #### Admin User Interface{#sites-adminui-6525}
@@ -159,6 +160,7 @@ OLD DOWNLOAD URL
 * AEM now localizes the Main label in the Content Fragment download dialog box. The fix keeps the download workflow consistent across non-English locales. (SITES-42534)
 * AEM now translates the `Later` status label when authors schedule Content Fragment publication from Assets. This fix keeps the Published column consistent across localized interfaces. (SITES-42532)
 * Content Fragment creation now displays a localized validation message when authors enter invalid characters in the Title field. The dialog no longer shows the unlocalized "Invalid name provided" string. (SITES-19796)
+* The edit Content Fragment page now uses localized labels for Tags and Collections. Authors see translated field names instead of unlocalized English strings. (SITES-977)
 
 
 
@@ -248,10 +250,27 @@ OLD DOWNLOAD URL
 
 #### Localization{#sites-localization-6525}
 
+* Text component properties in Experience Fragments now use localized labels. The format menu no longer shows unlocalized strings for paragraph, heading, quote, or preformatted text choices. (SITES-15091) MAJOR
+
+
+
+
+
 * Template status text now aligns correctly in **Tools** > **General** > **Templates**. The updated, enabled, and published status labels appear on one horizontal line. (SITES-36797)
 * The Move Page dialog box now shows the full Select Date & Time label. The label no longer truncates in localized interfaces such as French. (SITES-36795)
 * The Assets section in the Template Editor now shows a translated Tags label. Localized authoring interfaces present consistent labels during template configuration. (SITES-33770)
 * Page Policy descriptions now render correctly in the Template Editor. Users can read the full Default CSS Classes guidance without truncated text in the Styles tab. (SITES-29724)
+* The Template Editor now displays a localized error when an author tries to drag a component onto a deleted template. The message no longer appears as an untranslated "while processing" string. (SITES-19313)
+* The "Target" label in the Teaser Configure window now appears with localized text. The Hyperlink section no longer shows the English string in non-English locales. (SITES-18622)
+* The Start Workflow dialog in the Page Editor now displays localized workflow action labels. Authors no longer see English strings for workflow options such as approval, publish, request, and unpublish actions. (SITES-18103)
+* The Parent drop-down menu in the Separator edit panel now displays localized strings without truncation. Authors can review the full label when they configure the component. (SITES-17480)
+* The Page Editor now displays localized labels for "Full Width" and "Fixed Width" in the Container component Styles menu. Authors who use supported locales no longer see those strings in English. (SITES-17478)
+* Authors can now read the full tooltip in the Navigation properties area of the Templates console. The UI keeps the tooltip aligned and prevents text truncation during template editing. (SITES-15480)
+* Authors can now read the full "Forms & Documents Using Template" label in the References side panel. The Templates console no longer cuts off the string for supported locales. (SITES-13167)
+* The References view now uses localized text for the refresh error message. Authors see translated messaging when AEM cannot update the references list. (SITES-13102)
+* Form validation now identifies the field that contains an invalid time value. The Time Warp modal displays clearer error messaging so authors can correct the affected Hours or Minutes field. (SITES-10980)
+* The Templates console now displays a localized Assets label in the Select Image dialog box. The label appears correctly when authors browse assets from template properties. (SITES-8113)
+
 
 
 #### MSM - Live Copies{#sites-msm-live-copies-6525}
@@ -302,8 +321,35 @@ OLD DOWNLOAD URL
 
 #### Forms Designer 
 
+* The Output API now handles dynamic form content consistently when PDF generation uses client rendering. Generated PDFs retain scripted description text across affected sections instead of leaving some fields blank. (LC-3928858) CRITICAL
+
+
+
+* Long multiline text fields in PDF preview now flow correctly across pages. The generated PDF no longer duplicates page content or drops hidden text during printing. (LC-3924324) MAJOR
+* Fillable PDFs now reset accessibility data when users clear form fields. Screen readers announce the cleared state correctly instead of reading old field values that no longer appear in the form. (LC-3923872) MAJOR
+* The Accessibility Checker now handles Nepali text correctly during PDF validation. Users can check Nepali-language documents without false accessibility errors tied to character encoding. (LC-3922988) MAJOR
+
 
 #### Adaptive Forms
+
+
+#### XMLFM {#forms-xmlfm-6525}
+
+* Generated PDFs now include proper tags for supported form fields that use borders in the template. Screen readers can identify numeric fields, date fields, text fields, and checkboxes more reliably. (LC-3923534) MAJOR
+* Document of Record output now applies the correct tag structure to supported fields that include borders in the template. Numeric, date, text, and checkbox fields remain accessible in the generated PDF. (LC-3923265) MAJOR
+
+
+#### XTG 
+
+* Forms output now merges XML data correctly when generatePDFOutputBatch generates PDFs in batch mode. The batch process no longer creates documents with blank or missing merged fields. (LC-3924192) BLOCKER
+
+
+* Document of Record output now includes nested child panels in the first occurrence of a repeatable panel. Forms that use Top of Next Page pagination no longer drop child panel data from the generated output. (LC-3923923) CRITICAL
+
+
+* Custom bullet characters in XDP templates now map correctly for accessible PDF output. PAC validation no longer reports that text object characters cannot map to Unicode. (LC-3923079) MAJOR
+
+
 
 
 ### Foundation {#foundation-6525}
@@ -326,6 +372,8 @@ OLD DOWNLOAD URL
 
 #### CRX {#foundation-crx-6525}
 
+* JSP file editing now works as expected in CRXDE Lite after AEM 6.5 upgrades. The CodeMirror editor loads the file content instead of leaving the JSP tab blank. (GRANITE-64333)
+
 
 #### Granite{#foundation-granite-6525}
 
@@ -338,6 +386,13 @@ OLD DOWNLOAD URL
 
 #### Localization{#foundation-localization-6525}
 
+* The certificate upload dialog in Security > Trust Store now shows localized data format labels. Users no longer see unlocalized English labels when they add a certificate. (NPR-43412) MAJOR
+
+
+* The Create KeyStore dialog now aligns the Cancel button with the other dialog buttons. The button layout remains consistent and no longer shifts out of alignment. (NPR-43291)
+* The Check dialog box in **Security** > A**dobe IMS Configurations** now displays localized confirmation text. The check and delete messages no longer appear as unlocalized English strings. (NPR-43289)
+* Localized UI labels now appear correctly in affected dialogs and the Keystore tab. Aria-label values use translated strings, and password field labels display without truncation. (NPR-43285)
+
 
 #### Oak {#foundation-oak-6525}
 
@@ -346,6 +401,8 @@ OLD DOWNLOAD URL
 
 
 #### Security{#foundation-security-6525}
+
+* AEM now allowlists additional keywords that contain client-secret. Configuration creation no longer fails when supported integrations use those client-secret naming patterns. (GRANITE-66495)
 
 
 #### Sling{#foundation-sling-6525}
@@ -356,14 +413,27 @@ OLD DOWNLOAD URL
 
 #### Translation{#foundation-translation-6525}
 
+* Translation project status counts now update correctly after upgrade. Authors can review draft, in-progress, and complete values without relying on outdated metadata from earlier service pack behavior. (NPR-43418)
+
+
 
 #### User interface{#foundation-ui-6525}
+
+* Manually entered Sites console URLs now resolve to the intended page or folder path. The content hierarchy remains consistent after refresh and no longer falls back to the base URL. (NPR-43688) CRITICAL
+* The CRX Package Manager test suite no longer fails after an AEM 6.5 LTS SP1 instance upgrades to LTS SP2. The thumbnail list servlet test now completes as expected. (NPR-43534) CRITICAL
+* Included servlet output now handles content-type headers more consistently during HTML sanitization. This update helps prevent XSS violations caused by mismatched content types in included scripts or servlets. (NPR-43241) CRITICAL
+
+
+* Anchor links no longer lose their target attribute during HTML sanitization. Links that specify a new-tab target keep that behavior after AEM sanitizes the markup. (NPR-43839) MAJOR
+* The Sites console content tree now loads consistently after each browser refresh. Authors no longer see a blank left rail or a "There is no item" message when content exists. (NPR-43442) MAJOR
 
 
 #### WCM{#foundation-wcm-6525}
 
 
 #### Workflow{#foundation-workflow-6525}
+
+* The workflow model editor now validates tenant-specific workflow model paths correctly. Customers who store workflow models under tenant-level /conf paths can edit those models without moving them to global configuration paths. (GRANITE-65376) MAJOR
 
 
 
