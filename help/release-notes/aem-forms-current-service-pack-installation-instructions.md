@@ -201,7 +201,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 ## Download and install Service Pack on an AEM Form on OSGi environment {#download-and-install-for-osgi-service-pack}
 
 
-   <!--
+<!--
 ![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
 -->
 

@@ -814,7 +814,7 @@ See [Serve static (non-image) contents](https://experienceleague.adobe.com/en/do
    There are many websites that offer both free and premium tools and services that you can use to author WebVTT caption/caption files outside Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--
-[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
