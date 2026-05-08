@@ -485,7 +485,7 @@ For Windows x86:
 
 >[!NOTE]
 >
->* PDF Generator supports Microsoft&reg; Office 2024.
+>* PDF Generator supports Microsoft&reg; Office 2024. 
 >* PDF Generator requires Adobe Acrobat Pro DC (32-Bit) to perform the conversion.
 >* PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
 >* PDF Generator requires Adobe Acrobat Pro DC (32-Bit) to perform the conversion.
