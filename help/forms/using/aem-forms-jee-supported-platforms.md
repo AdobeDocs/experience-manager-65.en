@@ -538,15 +538,15 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 
 >[!NOTE]
 >
->* PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
->* PDF Generator requires 32-bit Adobe Acrobat Pro DC and Microsoft&reg; Office Professional Plus to perform the conversion.
->* The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
->* If a Microsoft&reg; Office installation becomes deactivated or unlicensed for any reason, such as a volume-licensed installation that is unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
->* PDF Generator does not support Microsoft&reg; Office 365.
->* PDF Generator conversions for OpenOffice are supported on both Windows and Linux&reg;.
->* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
->* PDF Generator does not support Microsoft&reg; Windows 11.
->* Microsoft&reg; Office 2021 Professional Plus support is deprecated. 
+>- PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
+>- PDF Generator requires 32-bit Adobe Acrobat Pro DC and Microsoft&reg; Office Professional Plus to perform the conversion.
+>- The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
+>- If a Microsoft&reg; Office installation becomes deactivated or unlicensed for any reason, such as a volume-licensed installation that is unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
+>- PDF Generator does not support Microsoft&reg; Office 365.
+>- PDF Generator conversions for OpenOffice are supported on both Windows and Linux&reg;.
+>- The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
+>- PDF Generator does not support Microsoft&reg; Windows 11.
+>- Microsoft&reg; Office 2021 Professional Plus support is deprecated. 
 
 <!--
 Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
