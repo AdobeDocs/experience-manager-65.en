@@ -464,7 +464,7 @@ For Windows x86:
    <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> latest version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (Continuous track, latest version) or <a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro 2024</a> (Continuous track, latest version)</td>
    <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, and HTM</td>
   </tr>
 
@@ -486,7 +486,7 @@ OpenOffice 4.1.15 </td>
 >[!NOTE]
 >
 >* PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
->* PDF Generator requires 32-bit Adobe Acrobat Pro DC and Microsoft&reg; Office Professional Plus to perform the conversion.
+>* PDF Generator requires a supported 32-bit Windows build of Adobe Acrobat Pro DC (Continuous track) or Adobe Acrobat Pro 2024 (Continuous track) for Acrobat-driven native conversions, and 32-bit Microsoft&reg; Office Professional Plus for Office-based conversions, on Microsoft&reg; Windows. For installation and Feature Restricted Licensing (FRL) for Acrobat Pro DC, see [Install Adobe Acrobat Pro DC](../forms/using/install-configure-document-services.md#install-adobe-acrobat-pro-dc) in the document services installation article.
 >* The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >* If a Microsoft&reg; Office installation becomes deactivated or unlicensed for any reason, such as a volume-licensed installation that is unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >* PDF Generator does not support Microsoft&reg; Office 365.
