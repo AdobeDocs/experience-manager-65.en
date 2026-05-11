@@ -75,11 +75,11 @@ Before you begin to install and configure AEM Forms document services, ensure th
 >
 >* On Microsoft&reg; Windows, PDF Generator supports WebKit, Acrobat WebCapture, and WebToPDF conversion routes to convert HTML files to PDF documents.
 >* On UNIX-based operating systems, PDF Generator supports WebKit and WebToPDF conversion routes to convert HTML files to PDF documents.
->
 
 ### Extra requirements for UNIX-based operating system {#extrarequirements}
 
 If you are using a UNIX-based operating system, install the following 32-bit packages from the installation media of the respective operating system: 
+
 <table>
  <tbody>
   <tr>
@@ -182,9 +182,11 @@ If you are using a UNIX-based operating system, install the following 32-bit pac
 
 * (PDF Generator only) If the WebToPDF conversion fails on Unix&reg; server with the following error:
   
-  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
+  `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`
+
   then set the following environment variable and restart the server:
-    `OPENSSL_CONF=/etc/ssl`
+
+  `OPENSSL_CONF=/etc/ssl`
 
 >[!NOTE]
 >
