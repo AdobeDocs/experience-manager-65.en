@@ -210,7 +210,7 @@ If you are going use the PDF Generator service to convert native file formats su
 
 ### Install Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
 
-For supported Acrobat products and versions for PDF Generator, see [Considerations for PDF Generator](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) in the AEM Forms on JEE supported platforms article. The procedures in this section describe Feature Restricted Licensing (FRL) for **Adobe Acrobat Pro DC**. If you deploy **Adobe Acrobat Pro 2024 (Continuous track)**, use the same supported-platforms guidance and follow Adobe enterprise deployment and licensing documentation for that release where steps differ from Acrobat Pro DC.
+For supported Acrobat products and versions for PDF Generator, see [Considerations for PDF Generator](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) in the AEM Forms on JEE supported platforms article. The procedures in this section describe Feature Restricted Licensing (FRL) for **Adobe Acrobat Pro DC**.
 
 #### Prerequisites
 

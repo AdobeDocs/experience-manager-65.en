@@ -517,7 +517,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
    <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (Continuous track, latest version) or <a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro 2024</a> (Continuous track, latest version)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (Continuous track, latest version)</td>
    <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, and HTM</td>
   </tr>
 
@@ -539,7 +539,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >[!NOTE]
 >
 >- PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
->- PDF Generator requires a supported 32-bit Windows build of Adobe Acrobat Pro DC (Continuous track) or Adobe Acrobat Pro 2024 (Continuous track) for Acrobat-driven native conversions, and 32-bit Microsoft&reg; Office Professional Plus for Office-based conversions, on Microsoft&reg; Windows. Activate Acrobat through Feature Restricted Licensing (FRL) or your Adobe enterprise deployment process; see [Install Adobe Acrobat Pro DC](install-configure-document-services.md#install-adobe-acrobat-pro-dc) in the document services installation article.
+>- PDF Generator requires a supported 32-bit Windows build of Adobe Acrobat Pro DC (Continuous track, latest version) for Acrobat-driven native conversions, and 32-bit Microsoft&reg; Office Professional Plus for Office-based conversions, on Microsoft&reg; Windows. Activate Acrobat through Feature Restricted Licensing (FRL) or your Adobe enterprise deployment process; see [Install Adobe Acrobat Pro DC](install-configure-document-services.md#install-adobe-acrobat-pro-dc) in the document services installation article.
 >- The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >- If a Microsoft&reg; Office installation becomes deactivated or unlicensed for any reason, such as a volume-licensed installation that is unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >- PDF Generator does not support Microsoft&reg; Office 365.
@@ -617,7 +617,7 @@ For additional requirements see:
   <th><p><strong>Supported Patch Definitions</strong></p> </th>
  </tr>
  <tr>
-  <td>Adobe Acrobat Pro DC (Continuous track) or Adobe Acrobat Pro 2024 (Continuous track)</td>
+  <td>Adobe Acrobat Pro DC (Continuous track, latest version)</td>
   <td>Latest version as described in the <a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat and Reader release notes</a><br /> </td>
  </tr>
  </tbody>
@@ -626,7 +626,7 @@ For additional requirements see:
 
 >[!NOTE]
 >
->Adobe Acrobat 2020 (Classic track) is not supported with AEM Forms. Use Adobe Acrobat Pro DC (Continuous track) or Adobe Acrobat Pro 2024 (Continuous track) instead.
+>Adobe Acrobat 2020 (Classic track) is not supported with AEM Forms. Use Adobe Acrobat Pro DC (Continuous track, latest version) instead.
 >
 >The Acrobat DC product family introduces two tracks for both Acrobat and Reader which are different products: "Classic" and "Continuous." For details and a comparison of the two tracks, see [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
@@ -914,12 +914,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
 |Microsoft&reg; Office 2024 | | Microsoft&reg; Office 2021 |
-
-### Acrobat for PDF Generator (documentation update, May 2026)
-
-| Added Support | Removed Support | Deprecated Support |
-| -------------- | --------------- | ------------------- |
-| Adobe Acrobat Pro DC (Continuous track, latest version) and Adobe Acrobat Pro 2024 (Continuous track, latest version) for PDF Generator and related document services | Adobe Acrobat 2020 (Classic track) |  |
+|Adobe Acrobat Pro DC (Continuous track, latest version) for PDF Generator and related document services |Adobe Acrobat 2020 (Classic track)||
 
 ### Release 6.5.23.0 (June 6, 2025)
 
