@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-    label: "Experience Manager"
+    internal-label: "Experience Manager"
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
-    label: "Adobe Experience Manager 6.5"
+    internal-label: "Adobe Experience Manager 6.5"
 landing-page-name: experience-manager-65
 landing-page-breadcrumb-title: AEM 6.5
 type: Documentation
