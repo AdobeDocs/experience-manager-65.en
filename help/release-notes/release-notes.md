@@ -239,7 +239,7 @@ AEM now loads the correct templates when authors create Experience Fragment vari
 * Authors can now create Content Fragments in DAM folders whose names contain an apostrophe. AEM handles the encoded folder path correctly and no longer triggers a NullPointerException during creation. (SITES-38653)
 
 * AEM now supports copy-and-paste actions for configured Content Fragment components in the Page Editor. The component retains its Content Fragment reference, so authors can duplicate content without manual reauthoring. (SITES-41586)
-* The Page Editor now displays first-field description tooltips correctly in component dialog boxes Long descriptions remain visible, so authors can review field instructions without losing text at the top of the tooltip. (SITES-39937)
+* The Page Editor now displays first-field description tooltips correctly in component dialog boxes. Long descriptions remain visible, so authors can review field instructions without losing text at the top of the tooltip. (SITES-39937)
 * Authors can now open the Rich Text Editor Link dialog box when they use AEM over HTTP. The fix restores link editing for on-premise environments that do not use HTTPS. (SITES-39467)
 
 <!-- #### Replication{#sites-replication-6525} -->
@@ -625,7 +625,7 @@ The following issues have a hotfix available for download and installation. You 
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)
   -->
 
-* **FORMS-23979**  HTML-to-PDF conversion (PDFG) may experience intermittent timeouts. A newer version of the Forms add-on for SP24 was subsequently released that includes the fix. If you encounter this issue, update your environment to the [latest released Forms add on for 6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979**  HTML-to-PDF conversion (PDFG) may experience intermittent timeouts. A newer version of the Forms add-on for SP24 was subsequently released that includes the fix. If you encounter this issue, update your environment to the [latest released Forms add-on for 6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 * **FORMS-23717** After upgrading to **AEM Forms 6.5.25.0**, `server.log` and `error.log` can be flooded with repeated WARN messages such as *Secure parser factory creation failed* or *Security attribute ... is not supported*. Logs may grow by about **5–10 lines per second** (hundreds of MB per hour), which can fill disk and block production rollout. 
 
 To reduce log volume, set the logging level for `com.adobe.util.XMLSecurityUtil` to `ERROR` in your application server config or by way of the JVM argument `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. This functionality only hides the messages and does not fix the underlying cause.
