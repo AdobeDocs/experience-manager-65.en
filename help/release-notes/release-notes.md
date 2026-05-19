@@ -271,23 +271,29 @@ The Subtitles and Audio Tracks dropdown now shows Arabic as a supported language
 >
 >Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on package is planned for release on Thursday, May 28, 2026. In addition, a list of Forms fixes and enhancements is added to this section.
 
-<!-- ALL THE BUG FIXES BELOW GO WITH AEM 6.5.25!! 
+<!-- ALL THE FORMS BUG FIXES LISTED BELOW GO WITH AEM 6.5.25 FORMS MAY 28 2026 RELEADE!! -->
 
-#### Forms Designer {#forms-designer-6525}
+<!--
+#### Forms Designer {#forms-designer-6525} -->
 
+<!--
 * The Output API now handles dynamic form content consistently when PDF generation uses client rendering. Generated PDFs retain scripted description text across affected sections instead of leaving some fields blank. (LC-3928858)
 * Document of Record generation now handles repeated panel pagination correctly when parent and child panels use the same "Place Top of Next Page" configuration. Authors no longer lose child panel data during the first repeated panel instance in generated output documents. (LC-3923274)
 * Long multiline text fields in PDF preview now flow correctly across pages. The generated PDF no longer duplicates page content or drops hidden text during printing. (LC-3924324)
 * Fillable PDFs now reset accessibility data when users clear form fields. Screen readers announce the cleared state correctly instead of reading old field values that no longer appear in the form. (LC-3923872)
-* The Accessibility Checker now handles Nepali text correctly during PDF validation. Users can check Nepali-language documents without false accessibility errors tied to character encoding. (LC-3922988)
+* The Accessibility Checker now handles Nepali text correctly during PDF validation. Users can check Nepali-language documents without false accessibility errors tied to character encoding. (LC-3922988) -->
 
-#### XMLFM {#forms-xmlfm-6525}
+<!--
+#### XMLFM {#forms-xmlfm-6525} -->
 
+<!--
 * Generated PDFs now include proper tags for supported form fields that use borders in the template. Screen readers can identify numeric fields, date fields, text fields, and checkboxes more reliably. (LC-3923534)
-* Document of Record output now applies the correct tag structure to supported fields that include borders in the template. Numeric, date, text, and checkbox fields remain accessible in the generated PDF. (LC-3923265)
+* Document of Record output now applies the correct tag structure to supported fields that include borders in the template. Numeric, date, text, and checkbox fields remain accessible in the generated PDF. (LC-3923265)-->
 
-#### XTG {#forms-xtg-6525}
+<!--
+#### XTG {#forms-xtg-6525} -->
 
+<!--
 * Forms output now merges XML data correctly when generatePDFOutputBatch generates PDFs in batch mode. The batch process no longer creates documents with blank or missing merged fields. (LC-3924192) 
 * Document of Record output now includes nested child panels in the first occurrence of a repeatable panel. Forms that use Top of Next Page pagination no longer drop child panel data from the generated output. (LC-3923923)
 * Custom bullet characters in XDP templates now map correctly for accessible PDF output. PAC validation no longer reports that text object characters cannot map to Unicode. (LC-3923079) -->
@@ -627,7 +633,7 @@ To reduce log volume, set the logging level for `com.adobe.util.XMLSecurityUtil`
 
 The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
 
-* [List of OSGi bundles included in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.25.0](help/release-notes/assets/65250-bundles.txt)
 <!-- UPDATE FOR EACH NEW RELEASE -->
 * [List of Content Packages included in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.txt)
 <!-- UPDATE FOR EACH NEW RELEASE -->
