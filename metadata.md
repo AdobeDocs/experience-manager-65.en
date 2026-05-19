@@ -9,6 +9,7 @@ product_v2:
     internal-label: "Experience Manager"
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
     internal-label: "Adobe Experience Manager 6.5"
+usetq: true
 landing-page-name: experience-manager-65
 landing-page-breadcrumb-title: AEM 6.5
 type: Documentation
