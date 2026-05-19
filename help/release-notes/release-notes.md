@@ -12,7 +12,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 <!-- For an itemized list of all issues found in this release information, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
 
 <!--
-DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
+DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 >[!NOTE]
 >
 >Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
@@ -172,9 +172,7 @@ Users can now open GraphQL Query Editor when the selected configuration browser 
 
 #### ContextHub{#sites-contexthub-6525}
 
-* ContextHub now loads without a JavaScript error that interrupted personalization. Teasers and other personalized experiences can render correctly on affected pages. (SITES-38430)
-
-* ContextHub responses now use the expected content-type header for generated script output. The correction reduces XSS violation reports tied to ContextHub bundled script requests. (SITES-37056)
+ContextHub now loads without a JavaScript error that interrupted personalization. Teasers and other personalized experiences can render correctly on affected pages. (SITES-38430)
 
 <!-- #### Core Backend{#sites-core-backend-6525} -->
 
@@ -269,35 +267,31 @@ The Subtitles and Audio Tracks dropdown now shows Arabic as a supported language
 
 ### [!DNL Forms]{#forms-6525}
 
-<!--
 >[!NOTE]
 >
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, December 4, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
--->
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on package is planned for release on Thursday, May 28, 2026. In addition, a list of Forms fixes and enhancements is added to this section.
 
-#### Forms Designer 
+<!-- ALL THE BUG FIXES BELOW GO WITH AEM 6.5.25!! 
+
+#### Forms Designer {#forms-designer-6525}
 
 * The Output API now handles dynamic form content consistently when PDF generation uses client rendering. Generated PDFs retain scripted description text across affected sections instead of leaving some fields blank. (LC-3928858)
 * Document of Record generation now handles repeated panel pagination correctly when parent and child panels use the same "Place Top of Next Page" configuration. Authors no longer lose child panel data during the first repeated panel instance in generated output documents. (LC-3923274)
-
 * Long multiline text fields in PDF preview now flow correctly across pages. The generated PDF no longer duplicates page content or drops hidden text during printing. (LC-3924324)
 * Fillable PDFs now reset accessibility data when users clear form fields. Screen readers announce the cleared state correctly instead of reading old field values that no longer appear in the form. (LC-3923872)
 * The Accessibility Checker now handles Nepali text correctly during PDF validation. Users can check Nepali-language documents without false accessibility errors tied to character encoding. (LC-3922988)
-
-<!-- #### Adaptive Forms -->
 
 #### XMLFM {#forms-xmlfm-6525}
 
 * Generated PDFs now include proper tags for supported form fields that use borders in the template. Screen readers can identify numeric fields, date fields, text fields, and checkboxes more reliably. (LC-3923534)
 * Document of Record output now applies the correct tag structure to supported fields that include borders in the template. Numeric, date, text, and checkbox fields remain accessible in the generated PDF. (LC-3923265)
 
-#### XTG 
+#### XTG {#forms-xtg-6525}
 
 * Forms output now merges XML data correctly when generatePDFOutputBatch generates PDFs in batch mode. The batch process no longer creates documents with blank or missing merged fields. (LC-3924192) 
-
 * Document of Record output now includes nested child panels in the first occurrence of a repeatable panel. Forms that use Top of Next Page pagination no longer drop child panel data from the generated output. (LC-3923923)
+* Custom bullet characters in XDP templates now map correctly for accessible PDF output. PAC validation no longer reports that text object characters cannot map to Unicode. (LC-3923079) -->
 
-* Custom bullet characters in XDP templates now map correctly for accessible PDF output. PAC validation no longer reports that text object characters cannot map to Unicode. (LC-3923079)
 
 ### Foundation {#foundation-6525}
 
@@ -355,10 +349,7 @@ Translation project status counts now update correctly after upgrade. Authors ca
 
 * Manually entered Sites console URLs now resolve to the intended page or folder path. The content hierarchy remains consistent after refresh and no longer falls back to the base URL. (NPR-43688)
 * The CRX Package Manager test suite no longer fails after an AEM 6.5 LTS SP1 instance upgrades to LTS SP2. The thumbnail list servlet test now completes as expected. (NPR-43534)
-* Included servlet output now handles content-type headers more consistently during HTML sanitization. This update helps prevent XSS violations caused by mismatched content types in included scripts or servlets. (NPR-43241)
 
-
-* Anchor links no longer lose their target attribute during HTML sanitization. Links that specify a new-tab target keep that behavior after AEM sanitizes the markup. (NPR-43839)
 * The Sites console content tree now loads consistently after each browser refresh. Authors no longer see a blank left rail or a "There is no item" message when content exists. (NPR-43442)
 
 <!-- #### WCM{#foundation-wcm-6525} -->
@@ -636,9 +627,9 @@ To reduce log volume, set the logging level for `com.adobe.util.XMLSecurityUtil`
 
 The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
 
-* [List of OSGi bundles included in Experience Manager 6.5.25.0](/help/release-notes/assets/65240-bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.txt)
 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.25.0](/help/release-notes/assets/65240-packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.txt)
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
