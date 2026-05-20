@@ -11,6 +11,10 @@ role: User, Developer
 ---
 # Build the AEM Forms Android app {#build-the-aem-forms-android-app}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 To build the Android app for AEM Forms, perform the following steps in the recommended sequence.
 
 1. [Download the AEM Forms App Source Code Package](#download-android-zip)

@@ -11,6 +11,10 @@ role: User, Developer
 ---
 # Set up the Android&trade; studio project and build the Android&trade; app {#set-up-the-android-studio-project-and-build-the-android-app}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 This article is for building the AEM Forms App 6.3.1.1 and later versions. For building an app from source code of the AEM Forms App 6.3, see [Set up the Eclipse project and build the Android&trade; app](/help/forms/using/setup-eclipse-project-build-installer.md). 
 
 AEM Forms provide the complete source code of the AEM Forms app. The source contains all components to build a custom AEM Forms app. The source code archive, `adobe-lc-mobileworkspace-src-<version>.zip` is a part of the `adobe-aemfd-forms-app-src-pkg-<version>.zip` package on Software Distribution.

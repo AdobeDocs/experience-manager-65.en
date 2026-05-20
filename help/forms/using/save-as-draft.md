@@ -11,6 +11,10 @@ role: User, Developer
 ---
 # Saving a task or form as a draft {#saving-a-task-or-form-as-a-draft}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 The save as draft option saves a snapshot of a task or form along with the data filled in the associated form. You can also create a draft from a template. The drafts are saved in the mobile device, and synced with Adobe Experience Manager Forms server for a later retrieval.
 
 You can [update the form](/help/forms/using/working-with-form.md), [annotate it](/help/forms/using/add-attachments.md) with photographs, and scribble notes. As you continue to update a form, it is recommended to save it as a draft. For situations, where you decide to submit a filled form at a later point in time, saving it as a draft is helpful.

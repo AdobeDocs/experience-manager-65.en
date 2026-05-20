@@ -11,6 +11,10 @@ role: User, Developer
 ---
 # Working in the offline mode {#working-in-the-offline-mode}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 The offline mode of the AEM Forms app lets you work seamlessly even if the app goes offline. You can open, update, and submit a form without requiring any network connectivity.
 
 You start off working on the AEM Forms app by synchronizing your app with the AEM Forms server. All the forms assigned to you are downloaded in your app. For AEM Forms on JEE, tasks are fetched in the tasks tab, and startpoints associated forms and other forms in the Forms tab. For AEM Forms on OSGi, only Forms are loaded in the Forms tab.
