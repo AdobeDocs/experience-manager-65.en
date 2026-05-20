@@ -30,13 +30,13 @@ When configuring workflow processes (customized and/or out-of-the-box), there ar
 
 To optimize high ingestion loads you can define a [workflow as transient](/help/sites-developing/workflows.md#transient-workflows).
 
-When a workflow is transient the runtime data related to the intermediate worksteps are not persisted in the JCR when they run (the output renditions are persisted).
+When a workflow is transient, the runtime data related to the intermediate worksteps are not persisted in the JCR when they run (the output renditions are persisted).
 
 The advantages can include:
 
-* A reduction in the workflow processing time; of upto 10%.
+* A reduction in the workflow processing time of up to 10%.
 * Significantly reduce repository growth.
-* No more CRUD workflows are required to purge.
+* No more CRUD workflows are required to be purged.
 * In addition, it reduces the number of TAR files to compact.
 
 >[!CAUTION]
@@ -49,7 +49,7 @@ For performance tuning guidelines for DAM workflows, see the [AEM Assets Perform
 
 ### Configure the Maximum Number of Concurrent Workflows {#configure-the-maximum-number-of-concurrent-workflows}
 
-AEM can allow multiple workflow threads to run concurrently. By default the number of threads is configured to be half the number of processor cores on the system.
+AEM can allow multiple workflow threads to run concurrently. By default, the number of threads is configured to be half the number of processor cores on the system.
 
 In cases where the workflows being executed are demanding of system resources, this can mean little is left for AEM to use for other tasks, such as rendering the authoring UI. As a result, the system may be sluggish during activities such as bulk image uploading.
 
@@ -65,13 +65,13 @@ Additionally, there is a separate configuration for the **Granite Workflow Exter
 
 ### Configure Individual Job Queues {#configure-individual-job-queues}
 
-In some cases it is useful to configure individual job queues to control concurrent threads, or other queue options, on an individual job basis. You can add and configure an individual queue from the Web console via the **Apache Sling Job Queue Configuration** factory. To find the appropriate topic to list, execute your workflow's model and look for it in the **Sling Jobs** console; for example, at `http://localhost:4502/system/console/slingevent`.
+In some cases, it is useful to configure individual job queues to control concurrent threads, or other queue options, on an individual job basis. You can add and configure an individual queue from the Web console via the **Apache Sling Job Queue Configuration** factory. To find the appropriate topic to list, execute your workflow's model and look for it in the **Sling Jobs** console; for example, at `http://localhost:4502/system/console/slingevent`.
 
 Individual job queues can be added for transient workflows as well.
 
 ### Configure Workflow Purging {#configure-workflow-purging}
 
-In a standard installation AEM provides a maintenance console where daily and weekly maintenance activities can be scheduled and configured; for example, at:
+In a standard installation, AEM provides a maintenance console where daily and weekly maintenance activities can be scheduled and configured; for example, at:
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
@@ -232,8 +232,8 @@ As in any custom development, it is always recommended to use a user's session w
 When implementing a workflow process:
 
 * A workflow session will be provided and should be used unless there is a compelling reason not to.
-* New sessions should not be created from workflow steps as this causes inconsistencies in the state(s) together with possible concurrency issues in the workflow engine.
-* You should not acquire a new JCR session from within a process step in a workflow; you should adapt the workflow session provided by the Process Step API to a jcr session. For example:
+* New sessions should not be created from workflow steps, as this causes inconsistencies in the state(s) together with possible concurrency issues in the workflow engine.
+* You should not acquire a new JCR session from within a process step in a workflow; you should adapt the workflow session provided by the Process Step API to a JCR session. For example:
 
 ```
 public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
@@ -246,17 +246,17 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Saving a session:
 
-* Inside a workflow process, if the `WorkflowSession` is being used to modify the repository then do not explicitly save the session - the workflow will save the session when it completes.
+* Inside a workflow process, if the `WorkflowSession` is being used to modify the repository, then do not explicitly save the session - the workflow will save the session when it completes.
 * `Session.Save` should not be called from within a workflow step:
 
-    * it is recommended to adapt the workflow jcr session; then `save` is not necessary as the workflow engine saves the session automatically once the workflow has finished executing.
-    * it is not recommended for a process step to create its own jcr session.
+    * it is recommended to adapt the workflow JCR session; then `save` is not necessary as the workflow engine saves the session automatically once the workflow has finished executing.
+    * it is not recommended for a process step to create its own JCR session.
 
 * By eliminating unnecessary saves, you can reduce overhead and thus make the workflows more efficient.
 
 >[!CAUTION]
 >
->If, despite the recommendations here, you do create your own jcr session, then it must be saved.
+>If, despite the recommendations here, you do create your own JCR session, then it must be saved.
 
 ### Minimize the Number/Scope of Launchers {#minimize-the-number-scope-of-launchers}
 
@@ -284,15 +284,15 @@ The custom [launcher configuration](/help/sites-administering/workflows-starting
 
 Workflows can carry a significant amount of overhead, both in terms of objects created in memory and nodes tracked in the repository. For this reason, it is better to have a workflow do its processing within itself rather than start additional workflows.
 
-An example of this would be a workflow that implements a business process on a set of content and then activates that content. It is better to create a custom workflow process that activates each of these nodes, rather than starting an **Activate Content** model for each of the content nodes that needs to be published. This approach will require additional development work, but is more efficient when executed than starting a separate workflow instance for each activation.
+An example of this would be a workflow that implements a business process on a set of content and then activates that content. It is better to create a custom workflow process that activates each of these nodes, rather than starting an **Activate Content** model for each of the content nodes that needs to be published. This approach will require additional development work, but it is more efficient when executed than starting a separate workflow instance for each activation.
 
 Another example would be a workflow that processes several nodes, creates a workflow package, then activates said package. Rather than creating the package and then starting a separate workflow with the package as the payload, you can change the payload of your workflow in the step that creates the package and then call the step to activate the package within the same workflow model.
 
 ### Handler Advance {#handler-advance}
 
-When designing a workflow model you have the option to enable handler advance on your workflow steps. Alternately, you can add code to your workflow step to determine which step should be run next and then execute it.
+When designing a workflow model, you have the option to enable handler advance on your workflow steps. Alternately, you can add code to your workflow step to determine which step should be run next and then execute it.
 
-It is recommened to use handler advance as it delivers better performance.
+It is recommended to use handler advance, as it delivers better performance.
 
 ### Workflow Stages {#workflow-stages}
 
