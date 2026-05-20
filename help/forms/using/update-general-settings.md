@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Updating general settings{#updating-general-settings}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 General settings of the AEM Forms app let you specify settings such as fetching attachments, offline mode, landing screen, default category, and autsave frequency.
 
 ## Updating the General settings in your app {#working-with-the-form}

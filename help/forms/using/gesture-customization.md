@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Gesture customization {#gesture-customization}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 You can customize the gestures of AEM Forms app to provide a distinct method of interacting with the app. For example, you can add new gestures to open or close a task or Startpoint.
 
 ## To customize gestures in AEM Forms app {#to-customize-gestures-in-aem-forms-app}

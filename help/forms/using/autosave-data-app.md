@@ -13,6 +13,10 @@ role: User, Developer
 ---
 # Using autosave in AEM Forms app{#using-autosave-in-aem-forms-app}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 When a user enters data in the Adobe Experience Manager Forms app, the autosave feature saves it at regular intervals. The autosave feature in the AEM Forms app helps you avoid data loss if the app is accidentally closed.
 
 Your app can accidentally close:

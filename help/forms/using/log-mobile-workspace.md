@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Logging in to Adobe Experience Manager Forms app{#logging-in-to-aem-forms-app}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 When you start your Adobe Experience Manager (AEM) Forms app, you must first provide your login credentials and a AEM Forms Server URL.
 
 ## To start the app {#to-start-the-app}

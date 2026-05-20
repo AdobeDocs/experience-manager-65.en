@@ -13,6 +13,10 @@ role: User, Developer
 
 # Working with Startpoints{#working-with-startpoints}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 A startpoint invokes a process created in Workbench. It is associated with a form which invokes the process when the form is submitted.
 
 >[!NOTE]

@@ -13,6 +13,10 @@ role: Admin, User, Developer
 ---
 # Set up environment for AEM Forms app{#set-up-environment-for-aem-forms-app}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 You need the following hardware, software, and licenses to build and deploy the AEM Forms app:
 
 ## For Windows devices {#for-windows-devices}

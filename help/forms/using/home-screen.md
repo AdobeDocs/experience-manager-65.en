@@ -12,6 +12,10 @@ role: User, Developer
 ---
 # Home screen{#home-screen}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 When you log in to the AEM Forms app, you are redirected to the Home screen.
 
 ## Default Home screen {#default-home-screen}
