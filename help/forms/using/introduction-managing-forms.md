@@ -90,9 +90,7 @@ AEM tools panel contains tools for various components. To navigate to AEM Forms-
 
 * **Configure Watched Folder:** An administrator can configure a network folder, known as a watched folder, so that when a user places a file (such as a PDF file) in the watched folder, a pre-configured operation is started and manipulates the file. For detailed information, see [Create and Configure a watched folder](/help/forms/using/creating-configure-watched-folder.md).
 
-  <!-- **Configure Forms App Offline Service:** The AEM [!DNL Forms] app offline service caches the paths or URLs of the resources used in a form. Caching paths or URLs of the resources used in a form improves server-side performance. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).
-  ![AEM Forms tools](assets/aem_forms_tools_new.png)
-  -->
+  <!-- **Configure Forms App Offline Service:** The AEM [!DNL Forms] app offline service caches the paths or URLs of the resources used in a form. Caching paths or URLs of the resources used in a form improves server-side performance. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).![AEM Forms tools](assets/aem_forms_tools_new.png) -->
 
 * **Configure PDF Generator:** An administrator can configure AEM [!DNL Forms] PDF Generator settings, add user accounts, and import or export configuration to the PDF Generator.
 * **Publish Correspondence Management Assets:** AEM [!DNL Forms] lets you publish all the Letters, Document Fragments, and Data Dictionaries and related dependencies from an author instance at once. The published assets include all the Correspondence Management assets and related dependencies. For detailed information, see [Publishing and unpublishing forms & documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
