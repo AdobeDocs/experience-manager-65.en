@@ -11,6 +11,10 @@ role: User, Developer
 ---
 # Distribute AEM Forms app {#distribute-aem-forms-app}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 Mobile Device Management (MDM) enables the large-scale deployment of apps on mobile devices.
 
 >[!NOTE]

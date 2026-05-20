@@ -11,6 +11,10 @@ role: User, Developer
 ---
 # Troubleshoot AEM Forms app {#troubleshoot-aem-forms-app}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 This article describes the error messages that might be displayed while building AEM Forms app and the steps to resolve them.
 
 The sections in this article include:

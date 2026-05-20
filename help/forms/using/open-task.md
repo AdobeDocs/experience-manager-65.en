@@ -11,6 +11,10 @@ role: User, Developer
 ---
 # Opening a task {#opening-a-task}
 
+>[!NOTE]
+>
+>AEM Forms app is currently deprecated. For questions or help, contact [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 If the Adobe Experience Manager (AEM) Forms app syncs with an AEM Forms Server, you can work with tasks assigned to you. Tasks are steps in the Workflow defined in workbench or in the AEM workflow editor. 
 
 Other forms are saved as draft in the Drafts tab. See [Saving a draft](/help/forms/using/save-as-draft.md).
