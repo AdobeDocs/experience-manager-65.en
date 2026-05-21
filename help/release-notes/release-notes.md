@@ -38,7 +38,7 @@ OLD DOWNLOAD URL
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-## Key features and enhancements
+<!-- ## Key features and enhancements -->
 
 
 ## Fixed issues in Service Pack 25 {#fixed-issues}
