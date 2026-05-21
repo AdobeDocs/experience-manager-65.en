@@ -253,7 +253,7 @@ AEM now loads the correct templates when authors create Experience Fragment vari
 
 * The My Shares client library now handles shared asset title data safely before adding it to page markup. Generated share pages no longer expose users to script injection through manipulated asset metadata. (ASSETS-60898)
 
-* Adobe Stock licensing now works correctly in the Assets UI. The License button no longer stays disabled after AEM loads the stock asset profile and entitlement data. (ASSETS-62610)
+* Adobe Stock licensing now works correctly in the Assets user interface. The License button no longer stays disabled after AEM loads the stock asset profile and entitlement data. (ASSETS-62610)
 * The out-of-the-box asset expiry notification now handles near-expiry dates correctly. Reminder emails run when the remaining time reaches the configured threshold instead of skipping assets with an eight-day expiry. (ASSETS-57857)
 
 * AEM Assets now restores keyboard navigation after users choose a saved search. The interface lets users move away from the dropdown without refreshing or restarting the Assets view. (ASSETS-52061)
