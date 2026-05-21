@@ -125,7 +125,7 @@ The Sites console now shows saved **List View** column settings correctly. Selec
 
 #### Classic UI{#sites-classicui-6525}
 
-Classic UI Text component dialog boxes now display Rich Text Editor content as formatted text instead of raw HTML. Authors can edit existing text without switching to Source mode or manually removing markup. (SITES-38709)
+Classic UI Text component dialog boxes now display Rich Text Editor (RTE) content as formatted text instead of raw HTML. Authors can edit existing text without switching to Source mode or manually removing markup. (SITES-38709)
 
 #### Component Console{#sites-component-console-6525}
 
