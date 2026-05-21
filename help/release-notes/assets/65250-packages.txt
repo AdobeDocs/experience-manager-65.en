@@ -1,0 +1,1855 @@
+{
+  "pid": "adobe/aem6:we.retail.config:4.0.0",
+  "path": "/etc/packages/adobe/aem6/we.retail.config-4.0.0.zip",
+  "name": "we.retail.config",
+  "downloadName": "we.retail.config-4.0.0.zip",
+  "version": "4.0.0"
+}
+{
+  "pid": "adobe/aem6/sample:aem-sample-replication-config:0.0.2",
+  "path": "/etc/packages/adobe/aem6/sample/aem-sample-replication-config-0.0.2.zip",
+  "name": "aem-sample-replication-config",
+  "downloadName": "aem-sample-replication-config-0.0.2.zip",
+  "version": "0.0.2"
+}
+{
+  "pid": "adobe/aem6/sample:we.retail.commons.content:4.0.0",
+  "path": "/etc/packages/adobe/aem6/sample/we.retail.commons.content-4.0.0.zip",
+  "name": "we.retail.commons.content",
+  "downloadName": "we.retail.commons.content-4.0.0.zip",
+  "version": "4.0.0"
+}
+{
+  "pid": "adobe/aem6/sample:we.retail.community.apps:1.11.84",
+  "path": "/etc/packages/adobe/aem6/sample/we.retail.community.apps-1.11.84.zip",
+  "name": "we.retail.community.apps",
+  "downloadName": "we.retail.community.apps-1.11.84.zip",
+  "version": "1.11.84"
+}
+{
+  "pid": "adobe/aem6/sample:we.retail.community.content:1.11.84",
+  "path": "/etc/packages/adobe/aem6/sample/we.retail.community.content-1.11.84.zip",
+  "name": "we.retail.community.content",
+  "downloadName": "we.retail.community.content-1.11.84.zip",
+  "version": "1.11.84"
+}
+{
+  "pid": "adobe/aem6/sample:we.retail.community.enablement.author:1.11.87",
+  "path": "/etc/packages/adobe/aem6/sample/we.retail.community.enablement.author-1.11.87.zip",
+  "name": "we.retail.community.enablement.author",
+  "downloadName": "we.retail.community.enablement.author-1.11.87.zip",
+  "version": "1.11.87"
+}
+{
+  "pid": "adobe/aem6/sample:we.retail.community.enablement.common:1.11.84",
+  "path": "/etc/packages/adobe/aem6/sample/we.retail.community.enablement.common-1.11.84.zip",
+  "name": "we.retail.community.enablement.common",
+  "downloadName": "we.retail.community.enablement.common-1.11.84.zip",
+  "version": "1.11.84"
+}
+{
+  "pid": "adobe/aem6/sample:we.retail.ui.apps:4.0.0",
+  "path": "/etc/packages/adobe/aem6/sample/we.retail.ui.apps-4.0.0.zip",
+  "name": "we.retail.ui.apps",
+  "downloadName": "we.retail.ui.apps-4.0.0.zip",
+  "version": "4.0.0"
+}
+{
+  "pid": "adobe/aem6/sample:we.retail.ui.content:4.0.0",
+  "path": "/etc/packages/adobe/aem6/sample/we.retail.ui.content-4.0.0.zip",
+  "name": "we.retail.ui.content",
+  "downloadName": "we.retail.ui.content-4.0.0.zip",
+  "version": "4.0.0"
+}
+{
+  "pid": "adobe/aem6/sample:wknd-events.download:1.0.2",
+  "path": "/etc/packages/adobe/aem6/sample/wknd-events.download-1.0.2.zip",
+  "name": "wknd-events.download",
+  "downloadName": "wknd-events.download-1.0.2.zip",
+  "version": "1.0.2"
+}
+{
+  "pid": "adobe/aem610/social/jcr-provider:cq-social-jcr-provider-pkg:1.4.10",
+  "path": "/etc/packages/adobe/aem610/social/jcr-provider/cq-social-jcr-provider-pkg-1.4.10.zip",
+  "name": "cq-social-jcr-provider-pkg",
+  "downloadName": "cq-social-jcr-provider-pkg-1.4.10.zip",
+  "version": "1.4.10"
+}
+{
+  "pid": "adobe/aem610/social/members:cq-social-members-pkg:1.3.13",
+  "path": "/etc/packages/adobe/aem610/social/members/cq-social-members-pkg-1.3.13.zip",
+  "name": "cq-social-members-pkg",
+  "downloadName": "cq-social-members-pkg-1.3.13.zip",
+  "version": "1.3.13"
+}
+{
+  "pid": "adobe/aem610/social/members:cq-social-members-pkg:1.3.17",
+  "path": "/etc/packages/adobe/aem610/social/members/cq-social-members-pkg-1.3.17.zip",
+  "name": "cq-social-members-pkg",
+  "downloadName": "cq-social-members-pkg-1.3.17.zip",
+  "version": "1.3.17"
+}
+{
+  "pid": "adobe/aem630/social/gamification:cq-social-gamification-pkg:1.2.4",
+  "path": "/etc/packages/adobe/aem630/social/gamification/cq-social-gamification-pkg-1.2.4.zip",
+  "name": "cq-social-gamification-pkg",
+  "downloadName": "cq-social-gamification-pkg-1.2.4.zip",
+  "version": "1.2.4"
+}
+{
+  "pid": "adobe/cq:adobeims.content:1.0.18",
+  "path": "/etc/packages/adobe/cq/adobeims.content-1.0.18.zip",
+  "name": "adobeims.content",
+  "downloadName": "adobeims.content-1.0.18.zip",
+  "version": "1.0.18"
+}
+{
+  "pid": "adobe/cq:adobeims.content:1.1.8-CQ650-B0004",
+  "path": "/etc/packages/adobe/cq/adobeims.content-1.1.8-CQ650-B0004.zip",
+  "name": "adobeims.content",
+  "downloadName": "adobeims.content-1.1.8-CQ650-B0004.zip",
+  "version": "1.1.8-CQ650-B0004"
+}
+{
+  "pid": "adobe/cq:cloud-config.components.content:1.0.8",
+  "path": "/etc/packages/adobe/cq/cloud-config.components.content-1.0.8.zip",
+  "name": "cloud-config.components.content",
+  "downloadName": "cloud-config.components.content-1.0.8.zip",
+  "version": "1.0.8"
+}
+{
+  "pid": "adobe/cq:cloud-config.core.content:1.0.12",
+  "path": "/etc/packages/adobe/cq/cloud-config.core.content-1.0.12.zip",
+  "name": "cloud-config.core.content",
+  "downloadName": "cloud-config.core.content-1.0.12.zip",
+  "version": "1.0.12"
+}
+{
+  "pid": "adobe/cq:cloud-config.ui.content:1.0.12",
+  "path": "/etc/packages/adobe/cq/cloud-config.ui.content-1.0.12.zip",
+  "name": "cloud-config.ui.content",
+  "downloadName": "cloud-config.ui.content-1.0.12.zip",
+  "version": "1.0.12"
+}
+{
+  "pid": "adobe/cq:cloud-config.ui.content:1.1.2",
+  "path": "/etc/packages/adobe/cq/cloud-config.ui.content-1.1.2.zip",
+  "name": "cloud-config.ui.content",
+  "downloadName": "cloud-config.ui.content-1.1.2.zip",
+  "version": "1.1.2"
+}
+{
+  "pid": "adobe/cq:cq-contexthub-content:1.1.12",
+  "path": "/etc/packages/adobe/cq/cq-contexthub-content-1.1.12.zip",
+  "name": "cq-contexthub-content",
+  "downloadName": "cq-contexthub-content-1.1.12.zip",
+  "version": "1.1.12"
+}
+{
+  "pid": "adobe/cq:cq-contexthub-content:1.1.29-CQ650-B0005",
+  "path": "/etc/packages/adobe/cq/cq-contexthub-content-1.1.29-CQ650-B0005.zip",
+  "name": "cq-contexthub-content",
+  "downloadName": "cq-contexthub-content-1.1.29-CQ650-B0005.zip",
+  "version": "1.1.29-CQ650-B0005"
+}
+{
+  "pid": "adobe/cq:cq-experiencelog-content:1.5.8",
+  "path": "/etc/packages/adobe/cq/cq-experiencelog-content-1.5.8.zip",
+  "name": "cq-experiencelog-content",
+  "downloadName": "cq-experiencelog-content-1.5.8.zip",
+  "version": "1.5.8"
+}
+{
+  "pid": "adobe/cq:cq-experiencelog-content:1.5.22",
+  "path": "/etc/packages/adobe/cq/cq-experiencelog-content-1.5.22.zip",
+  "name": "cq-experiencelog-content",
+  "downloadName": "cq-experiencelog-content-1.5.22.zip",
+  "version": "1.5.22"
+}
+{
+  "pid": "adobe/cq:dtm-reactor.content:1.1.6",
+  "path": "/etc/packages/adobe/cq/dtm-reactor.content-1.1.6.zip",
+  "name": "dtm-reactor.content",
+  "downloadName": "dtm-reactor.content-1.1.6.zip",
+  "version": "1.1.6"
+}
+{
+  "pid": "adobe/cq:dtm-reactor.content:1.1.16-CQ650-B0003",
+  "path": "/etc/packages/adobe/cq/dtm-reactor.content-1.1.16-CQ650-B0003.zip",
+  "name": "dtm-reactor.content",
+  "downloadName": "dtm-reactor.content-1.1.16-CQ650-B0003.zip",
+  "version": "1.1.16-CQ650-B0003"
+}
+{
+  "pid": "adobe/cq/product:cq-remotedam-client-ui-components:1.0.8",
+  "path": "/etc/packages/adobe/cq/product/cq-remotedam-client-ui-components-1.0.8.zip",
+  "name": "cq-remotedam-client-ui-components",
+  "downloadName": "cq-remotedam-client-ui-components-1.0.8.zip",
+  "version": "1.0.8"
+}
+{
+  "pid": "adobe/cq/product:cq-remotedam-client-ui-components:1.0.34",
+  "path": "/etc/packages/adobe/cq/product/cq-remotedam-client-ui-components-1.0.34.zip",
+  "name": "cq-remotedam-client-ui-components",
+  "downloadName": "cq-remotedam-client-ui-components-1.0.34.zip",
+  "version": "1.0.34"
+}
+{
+  "pid": "adobe/cq/product:cq-remotedam-client-ui-content:1.0.10",
+  "path": "/etc/packages/adobe/cq/product/cq-remotedam-client-ui-content-1.0.10.zip",
+  "name": "cq-remotedam-client-ui-content",
+  "downloadName": "cq-remotedam-client-ui-content-1.0.10.zip",
+  "version": "1.0.10"
+}
+{
+  "pid": "adobe/cq/product:cq-remotedam-client-ui-content:1.0.32",
+  "path": "/etc/packages/adobe/cq/product/cq-remotedam-client-ui-content-1.0.32.zip",
+  "name": "cq-remotedam-client-ui-content",
+  "downloadName": "cq-remotedam-client-ui-content-1.0.32.zip",
+  "version": "1.0.32"
+}
+{
+  "pid": "adobe/cq/product:cq-remotedam-server-content:1.0.4",
+  "path": "/etc/packages/adobe/cq/product/cq-remotedam-server-content-1.0.4.zip",
+  "name": "cq-remotedam-server-content",
+  "downloadName": "cq-remotedam-server-content-1.0.4.zip",
+  "version": "1.0.4"
+}
+{
+  "pid": "adobe/cq/product:cq-remotedam-server-content:1.0.24",
+  "path": "/etc/packages/adobe/cq/product/cq-remotedam-server-content-1.0.24.zip",
+  "name": "cq-remotedam-server-content",
+  "downloadName": "cq-remotedam-server-content-1.0.24.zip",
+  "version": "1.0.24"
+}
+{
+  "pid": "adobe/cq60:core.wcm.components.all:2.3.2",
+  "path": "/etc/packages/adobe/cq60/core.wcm.components.all-2.3.2.zip",
+  "name": "core.wcm.components.all",
+  "downloadName": "core.wcm.components.all-2.3.2.zip",
+  "version": "2.3.2"
+}
+{
+  "pid": "adobe/cq60:core.wcm.components.config:2.3.2",
+  "path": "/etc/packages/adobe/cq60/core.wcm.components.config-2.3.2.zip",
+  "name": "core.wcm.components.config",
+  "downloadName": "core.wcm.components.config-2.3.2.zip",
+  "version": "2.3.2"
+}
+{
+  "pid": "adobe/cq60:core.wcm.components.content:2.3.2",
+  "path": "/etc/packages/adobe/cq60/core.wcm.components.content-2.3.2.zip",
+  "name": "core.wcm.components.content",
+  "downloadName": "core.wcm.components.content-2.3.2.zip",
+  "version": "2.3.2"
+}
+{
+  "pid": "adobe/cq60:core.wcm.components.examples:2.3.2",
+  "path": "/etc/packages/adobe/cq60/core.wcm.components.examples-2.3.2.zip",
+  "name": "core.wcm.components.examples",
+  "downloadName": "core.wcm.components.examples-2.3.2.zip",
+  "version": "2.3.2"
+}
+{
+  "pid": "adobe/cq60:core.wcm.components.extension:1.0.12",
+  "path": "/etc/packages/adobe/cq60/core.wcm.components.extension-1.0.12.zip",
+  "name": "core.wcm.components.extension",
+  "downloadName": "core.wcm.components.extension-1.0.12.zip",
+  "version": "1.0.12"
+}
+{
+  "pid": "adobe/cq60:core.wcm.components.extension.contentfragment.content:1.0.12",
+  "path": "/etc/packages/adobe/cq60/core.wcm.components.extension.contentfragment.content-1.0.12.zip",
+  "name": "core.wcm.components.extension.contentfragment.content",
+  "downloadName": "core.wcm.components.extension.contentfragment.content-1.0.12.zip",
+  "version": "1.0.12"
+}
+{
+  "pid": "adobe/cq60/sample:we.retail.all:4.0.0",
+  "path": "/etc/packages/adobe/cq60/sample/we.retail.all-4.0.0.zip",
+  "name": "we.retail.all",
+  "downloadName": "we.retail.all-4.0.0.zip",
+  "version": "4.0.0"
+}
+{
+  "pid": "adobe/cq610/social/content-fragments:cq-social-content-fragments-pkg:1.2.0",
+  "path": "/etc/packages/adobe/cq610/social/content-fragments/cq-social-content-fragments-pkg-1.2.0.zip",
+  "name": "cq-social-content-fragments-pkg",
+  "downloadName": "cq-social-content-fragments-pkg-1.2.0.zip",
+  "version": "1.2.0"
+}
+{
+  "pid": "adobe/cq650/servicepack:aem-service-pkg:6.5.25.0",
+  "path": "/etc/packages/adobe/cq650/servicepack/aem-service-pkg-6.5.25.0.zip",
+  "name": "aem-service-pkg",
+  "downloadName": "aem-service-pkg-6.5.25.0.zip",
+  "version": "6.5.25.0"
+}
+{
+  "pid": "adobe/granite:com.adobe.coralui.rte-cq5:5.12.8",
+  "path": "/etc/packages/adobe/granite/com.adobe.coralui.rte-cq5-5.12.8.zip",
+  "name": "com.adobe.coralui.rte-cq5",
+  "downloadName": "com.adobe.coralui.rte-cq5-5.12.8.zip",
+  "version": "5.12.8"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.activitystreams.content:0.0.34",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.activitystreams.content-0.0.34.zip",
+  "name": "com.adobe.granite.activitystreams.content",
+  "downloadName": "com.adobe.granite.activitystreams.content-0.0.34.zip",
+  "version": "0.0.34"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.activitystreams.content:0.0.46",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.activitystreams.content-0.0.46.zip",
+  "name": "com.adobe.granite.activitystreams.content",
+  "downloadName": "com.adobe.granite.activitystreams.content-0.0.46.zip",
+  "version": "0.0.46"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.asset.content:1.8",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.asset.content-1.8.zip",
+  "name": "com.adobe.granite.asset.content",
+  "downloadName": "com.adobe.granite.asset.content-1.8.zip",
+  "version": "1.8"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.auth.users:0.0.22",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.auth.users-0.0.22.zip",
+  "name": "com.adobe.granite.auth.users",
+  "downloadName": "com.adobe.granite.auth.users-0.0.22.zip",
+  "version": "0.0.22"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.author.deviceemulator.content:0.0.12",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.author.deviceemulator.content-0.0.12.zip",
+  "name": "com.adobe.granite.author.deviceemulator.content",
+  "downloadName": "com.adobe.granite.author.deviceemulator.content-0.0.12.zip",
+  "version": "0.0.12"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.backup.content:0.0.74",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.backup.content-0.0.74.zip",
+  "name": "com.adobe.granite.backup.content",
+  "downloadName": "com.adobe.granite.backup.content-0.0.74.zip",
+  "version": "0.0.74"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.backup.content:0.0.78",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.backup.content-0.0.78.zip",
+  "name": "com.adobe.granite.backup.content",
+  "downloadName": "com.adobe.granite.backup.content-0.0.78.zip",
+  "version": "0.0.78"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.cloudsettings.content:1.2.4",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.cloudsettings.content-1.2.4.zip",
+  "name": "com.adobe.granite.cloudsettings.content",
+  "downloadName": "com.adobe.granite.cloudsettings.content-1.2.4.zip",
+  "version": "1.2.4"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.cloudsettings.content:1.3.15-CQ650-B0007",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.cloudsettings.content-1.3.15-CQ650-B0007.zip",
+  "name": "com.adobe.granite.cloudsettings.content",
+  "downloadName": "com.adobe.granite.cloudsettings.content-1.3.15-CQ650-B0007.zip",
+  "version": "1.3.15-CQ650-B0007"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.cluster.content:0.0.44",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.cluster.content-0.0.44.zip",
+  "name": "com.adobe.granite.cluster.content",
+  "downloadName": "com.adobe.granite.cluster.content-0.0.44.zip",
+  "version": "0.0.44"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.conf.ui.content:0.0.60",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.conf.ui.content-0.0.60.zip",
+  "name": "com.adobe.granite.conf.ui.content",
+  "downloadName": "com.adobe.granite.conf.ui.content-0.0.60.zip",
+  "version": "0.0.60"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.conf.ui.content:0.0.78",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.conf.ui.content-0.0.78.zip",
+  "name": "com.adobe.granite.conf.ui.content",
+  "downloadName": "com.adobe.granite.conf.ui.content-0.0.78.zip",
+  "version": "0.0.78"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.contexthub.content:1.1.4",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.contexthub.content-1.1.4.zip",
+  "name": "com.adobe.granite.contexthub.content",
+  "downloadName": "com.adobe.granite.contexthub.content-1.1.4.zip",
+  "version": "1.1.4"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.contexthub.content:1.1.4-B004",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.contexthub.content-1.1.4-B004.zip",
+  "name": "com.adobe.granite.contexthub.content",
+  "downloadName": "com.adobe.granite.contexthub.content-1.1.4-B004.zip",
+  "version": "1.1.4-B004"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.crypto.content:0.0.10",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.crypto.content-0.0.10.zip",
+  "name": "com.adobe.granite.crypto.content",
+  "downloadName": "com.adobe.granite.crypto.content-0.0.10.zip",
+  "version": "0.0.10"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.csrf.content:0.0.12",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.csrf.content-0.0.12.zip",
+  "name": "com.adobe.granite.csrf.content",
+  "downloadName": "com.adobe.granite.csrf.content-0.0.12.zip",
+  "version": "0.0.12"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.datavisualization.content:1.60",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.datavisualization.content-1.60.zip",
+  "name": "com.adobe.granite.datavisualization.content",
+  "downloadName": "com.adobe.granite.datavisualization.content-1.60.zip",
+  "version": "1.60"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.datavisualization.content:1.60-CQ650-B0006",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.datavisualization.content-1.60-CQ650-B0006.zip",
+  "name": "com.adobe.granite.datavisualization.content",
+  "downloadName": "com.adobe.granite.datavisualization.content-1.60-CQ650-B0006.zip",
+  "version": "1.60-CQ650-B0006"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.distribution.content:0.0.124",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.distribution.content-0.0.124.zip",
+  "name": "com.adobe.granite.distribution.content",
+  "downloadName": "com.adobe.granite.distribution.content-0.0.124.zip",
+  "version": "0.0.124"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.distribution.content:0.0.125-CQ650-B0001",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.distribution.content-0.0.125-CQ650-B0001.zip",
+  "name": "com.adobe.granite.distribution.content",
+  "downloadName": "com.adobe.granite.distribution.content-0.0.125-CQ650-B0001.zip",
+  "version": "0.0.125-CQ650-B0001"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.jobs.async.ui.content:1.0.24",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.jobs.async.ui.content-1.0.24.zip",
+  "name": "com.adobe.granite.jobs.async.ui.content",
+  "downloadName": "com.adobe.granite.jobs.async.ui.content-1.0.24.zip",
+  "version": "1.0.24"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.monitoring.content:1.0.30",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.monitoring.content-1.0.30.zip",
+  "name": "com.adobe.granite.monitoring.content",
+  "downloadName": "com.adobe.granite.monitoring.content-1.0.30.zip",
+  "version": "1.0.30"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.monitoring.dashboard:1.5.252",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.monitoring.dashboard-1.5.252.zip",
+  "name": "com.adobe.granite.monitoring.dashboard",
+  "downloadName": "com.adobe.granite.monitoring.dashboard-1.5.252.zip",
+  "version": "1.5.252"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.monitoring.dashboard:1.5.259-CQ650-B0040",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.monitoring.dashboard-1.5.259-CQ650-B0040.zip",
+  "name": "com.adobe.granite.monitoring.dashboard",
+  "downloadName": "com.adobe.granite.monitoring.dashboard-1.5.259-CQ650-B0040.zip",
+  "version": "1.5.259-CQ650-B0040"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.oauth.server.content:1.0.54",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.oauth.server.content-1.0.54.zip",
+  "name": "com.adobe.granite.oauth.server.content",
+  "downloadName": "com.adobe.granite.oauth.server.content-1.0.54.zip",
+  "version": "1.0.54"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.oauth.server.content:1.0.54-CQ650-B0006",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.oauth.server.content-1.0.54-CQ650-B0006.zip",
+  "name": "com.adobe.granite.oauth.server.content",
+  "downloadName": "com.adobe.granite.oauth.server.content-1.0.54-CQ650-B0006.zip",
+  "version": "1.0.54-CQ650-B0006"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.offloading.content:1.1.66",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.offloading.content-1.1.66.zip",
+  "name": "com.adobe.granite.offloading.content",
+  "downloadName": "com.adobe.granite.offloading.content-1.1.66.zip",
+  "version": "1.1.66"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.offloading.content:1.1.66-CQ650-B0005",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.offloading.content-1.1.66-CQ650-B0005.zip",
+  "name": "com.adobe.granite.offloading.content",
+  "downloadName": "com.adobe.granite.offloading.content-1.1.66-CQ650-B0005.zip",
+  "version": "1.1.66-CQ650-B0005"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.omnisearch.content:1.0.34",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.omnisearch.content-1.0.34.zip",
+  "name": "com.adobe.granite.omnisearch.content",
+  "downloadName": "com.adobe.granite.omnisearch.content-1.0.34.zip",
+  "version": "1.0.34"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.clientlibs:2.3.0",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.clientlibs-2.3.0.zip",
+  "name": "com.adobe.granite.platform.clientlibs",
+  "downloadName": "com.adobe.granite.platform.clientlibs-2.3.0.zip",
+  "version": "2.3.0"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.clientlibs:2.3.1-CQ650-B0028",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.clientlibs-2.3.1-CQ650-B0028.zip",
+  "name": "com.adobe.granite.platform.clientlibs",
+  "downloadName": "com.adobe.granite.platform.clientlibs-2.3.1-CQ650-B0028.zip",
+  "version": "2.3.1-CQ650-B0028"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.content:1.0.40",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.content-1.0.40.zip",
+  "name": "com.adobe.granite.platform.content",
+  "downloadName": "com.adobe.granite.platform.content-1.0.40.zip",
+  "version": "1.0.40"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.content:1.0.40-CQ650-B0008",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.content-1.0.40-CQ650-B0008.zip",
+  "name": "com.adobe.granite.platform.content",
+  "downloadName": "com.adobe.granite.platform.content-1.0.40-CQ650-B0008.zip",
+  "version": "1.0.40-CQ650-B0008"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.i18n:1.1.172",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.i18n-1.1.172.zip",
+  "name": "com.adobe.granite.platform.i18n",
+  "downloadName": "com.adobe.granite.platform.i18n-1.1.172.zip",
+  "version": "1.1.172"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.i18n:1.1.266-V650-B0002",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.i18n-1.1.266-V650-B0002.zip",
+  "name": "com.adobe.granite.platform.i18n",
+  "downloadName": "com.adobe.granite.platform.i18n-1.1.266-V650-B0002.zip",
+  "version": "1.1.266-V650-B0002"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.login:1.1.38",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.login-1.1.38.zip",
+  "name": "com.adobe.granite.platform.login",
+  "downloadName": "com.adobe.granite.platform.login-1.1.38.zip",
+  "version": "1.1.38"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.login:1.1.38-CQ650-B0010",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.login-1.1.38-CQ650-B0010.zip",
+  "name": "com.adobe.granite.platform.login",
+  "downloadName": "com.adobe.granite.platform.login-1.1.38-CQ650-B0010.zip",
+  "version": "1.1.38-CQ650-B0010"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.users:1.1.50",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.users-1.1.50.zip",
+  "name": "com.adobe.granite.platform.users",
+  "downloadName": "com.adobe.granite.platform.users-1.1.50.zip",
+  "version": "1.1.50"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.welcome:1.1.26",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.welcome-1.1.26.zip",
+  "name": "com.adobe.granite.platform.welcome",
+  "downloadName": "com.adobe.granite.platform.welcome-1.1.26.zip",
+  "version": "1.1.26"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.platform.welcome:1.1.26-CQ650-B0003",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.platform.welcome-1.1.26-CQ650-B0003.zip",
+  "name": "com.adobe.granite.platform.welcome",
+  "downloadName": "com.adobe.granite.platform.welcome-1.1.26-CQ650-B0003.zip",
+  "version": "1.1.26-CQ650-B0003"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.references.content:1.1.36",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.references.content-1.1.36.zip",
+  "name": "com.adobe.granite.references.content",
+  "downloadName": "com.adobe.granite.references.content-1.1.36.zip",
+  "version": "1.1.36"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.references.content:1.1.36-CQ659-B0022",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.references.content-1.1.36-CQ659-B0022.zip",
+  "name": "com.adobe.granite.references.content",
+  "downloadName": "com.adobe.granite.references.content-1.1.36-CQ659-B0022.zip",
+  "version": "1.1.36-CQ659-B0022"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.replication.content:1.0.38",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.replication.content-1.0.38.zip",
+  "name": "com.adobe.granite.replication.content",
+  "downloadName": "com.adobe.granite.replication.content-1.0.38.zip",
+  "version": "1.0.38"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.replication.content:1.0.41-CQ650-B0002",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.replication.content-1.0.41-CQ650-B0002.zip",
+  "name": "com.adobe.granite.replication.content",
+  "downloadName": "com.adobe.granite.replication.content-1.0.41-CQ650-B0002.zip",
+  "version": "1.0.41-CQ650-B0002"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.security.content:0.2.406",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.security.content-0.2.406.zip",
+  "name": "com.adobe.granite.security.content",
+  "downloadName": "com.adobe.granite.security.content-0.2.406.zip",
+  "version": "0.2.406"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.security.content:0.2.407-CQ650-B0046",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.security.content-0.2.407-CQ650-B0046.zip",
+  "name": "com.adobe.granite.security.content",
+  "downloadName": "com.adobe.granite.security.content-0.2.407-CQ650-B0046.zip",
+  "version": "0.2.407-CQ650-B0046"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.security.permissions.ui.content:0.0.22",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.security.permissions.ui.content-0.0.22.zip",
+  "name": "com.adobe.granite.security.permissions.ui.content",
+  "downloadName": "com.adobe.granite.security.permissions.ui.content-0.0.22.zip",
+  "version": "0.0.22"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.security.permissions.ui.content:0.0.25-CQ650-B0004",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.security.permissions.ui.content-0.0.25-CQ650-B0004.zip",
+  "name": "com.adobe.granite.security.permissions.ui.content",
+  "downloadName": "com.adobe.granite.security.permissions.ui.content-0.0.25-CQ650-B0004.zip",
+  "version": "0.0.25-CQ650-B0004"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.sightly.content:1.0.10",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.sightly.content-1.0.10.zip",
+  "name": "com.adobe.granite.sightly.content",
+  "downloadName": "com.adobe.granite.sightly.content-1.0.10.zip",
+  "version": "1.0.10"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.sightly.js.content:1.0.14",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.sightly.js.content-1.0.14.zip",
+  "name": "com.adobe.granite.sightly.js.content",
+  "downloadName": "com.adobe.granite.sightly.js.content-1.0.14.zip",
+  "version": "1.0.14"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.taskmanagement.content:1.0.20",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.taskmanagement.content-1.0.20.zip",
+  "name": "com.adobe.granite.taskmanagement.content",
+  "downloadName": "com.adobe.granite.taskmanagement.content-1.0.20.zip",
+  "version": "1.0.20"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.testing.hobbes.content:1.0.134",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.testing.hobbes.content-1.0.134.zip",
+  "name": "com.adobe.granite.testing.hobbes.content",
+  "downloadName": "com.adobe.granite.testing.hobbes.content-1.0.134.zip",
+  "version": "1.0.134"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.topology.content:1.1.48",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.topology.content-1.1.48.zip",
+  "name": "com.adobe.granite.topology.content",
+  "downloadName": "com.adobe.granite.topology.content-1.1.48.zip",
+  "version": "1.1.48"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.translation.connector.msft.content:1.2.6",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.translation.connector.msft.content-1.2.6.zip",
+  "name": "com.adobe.granite.translation.connector.msft.content",
+  "downloadName": "com.adobe.granite.translation.connector.msft.content-1.2.6.zip",
+  "version": "1.2.6"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.translation.content:1.1.22",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.translation.content-1.1.22.zip",
+  "name": "com.adobe.granite.translation.content",
+  "downloadName": "com.adobe.granite.translation.content-1.1.22.zip",
+  "version": "1.1.22"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.clientlibs.content:1.0.10",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.clientlibs.content-1.0.10.zip",
+  "name": "com.adobe.granite.ui.clientlibs.content",
+  "downloadName": "com.adobe.granite.ui.clientlibs.content-1.0.10.zip",
+  "version": "1.0.10"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.content:0.8.870-CQ650-B0002",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.content-0.8.870-CQ650-B0002.zip",
+  "name": "com.adobe.granite.ui.content",
+  "downloadName": "com.adobe.granite.ui.content-0.8.870-CQ650-B0002.zip",
+  "version": "0.8.870-CQ650-B0002"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.content:0.8.870-CQ651-B0418",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.content-0.8.870-CQ651-B0418.zip",
+  "name": "com.adobe.granite.ui.content",
+  "downloadName": "com.adobe.granite.ui.content-0.8.870-CQ651-B0418.zip",
+  "version": "0.8.870-CQ651-B0418"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.coralui3:1.5.42",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.coralui3-1.5.42.zip",
+  "name": "com.adobe.granite.ui.coralui3",
+  "downloadName": "com.adobe.granite.ui.coralui3-1.5.42.zip",
+  "version": "1.5.42"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.coralui3:1.5.42-CQ650-B0248",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.coralui3-1.5.42-CQ650-B0248.zip",
+  "name": "com.adobe.granite.ui.coralui3",
+  "downloadName": "com.adobe.granite.ui.coralui3-1.5.42-CQ650-B0248.zip",
+  "version": "1.5.42-CQ650-B0248"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.coralui3-aeon:1.0.0",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.coralui3-aeon-1.0.0.zip",
+  "name": "com.adobe.granite.ui.coralui3-aeon",
+  "downloadName": "com.adobe.granite.ui.coralui3-aeon-1.0.0.zip",
+  "version": "1.0.0"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.coralui3-rte:0.3.18",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.coralui3-rte-0.3.18.zip",
+  "name": "com.adobe.granite.ui.coralui3-rte",
+  "downloadName": "com.adobe.granite.ui.coralui3-rte-0.3.18.zip",
+  "version": "0.3.18"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.coralui3-rte:0.3.67-CQ650-B0010",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.coralui3-rte-0.3.67-CQ650-B0010.zip",
+  "name": "com.adobe.granite.ui.coralui3-rte",
+  "downloadName": "com.adobe.granite.ui.coralui3-rte-0.3.67-CQ650-B0010.zip",
+  "version": "0.3.67-CQ650-B0010"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.foundation.components:0.2.4",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.foundation.components-0.2.4.zip",
+  "name": "com.adobe.granite.ui.foundation.components",
+  "downloadName": "com.adobe.granite.ui.foundation.components-0.2.4.zip",
+  "version": "0.2.4"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.foundation.components:0.2.5-CQ650-B0014",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.foundation.components-0.2.5-CQ650-B0014.zip",
+  "name": "com.adobe.granite.ui.foundation.components",
+  "downloadName": "com.adobe.granite.ui.foundation.components-0.2.5-CQ650-B0014.zip",
+  "version": "0.2.5-CQ650-B0014"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.legacy:1.3.0",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.legacy-1.3.0.zip",
+  "name": "com.adobe.granite.ui.legacy",
+  "downloadName": "com.adobe.granite.ui.legacy-1.3.0.zip",
+  "version": "1.3.0"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.legacy:1.3.1-CQ650-B0024",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.legacy-1.3.1-CQ650-B0024.zip",
+  "name": "com.adobe.granite.ui.legacy",
+  "downloadName": "com.adobe.granite.ui.legacy-1.3.1-CQ650-B0024.zip",
+  "version": "1.3.1-CQ650-B0024"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.shared.content:1.1.26",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.shared.content-1.1.26.zip",
+  "name": "com.adobe.granite.ui.shared.content",
+  "downloadName": "com.adobe.granite.ui.shared.content-1.1.26.zip",
+  "version": "1.1.26"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.ui.sistinejs:0.0.16",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.ui.sistinejs-0.0.16.zip",
+  "name": "com.adobe.granite.ui.sistinejs",
+  "downloadName": "com.adobe.granite.ui.sistinejs-0.0.16.zip",
+  "version": "0.0.16"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.workflow.content:1.0.90",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.workflow.content-1.0.90.zip",
+  "name": "com.adobe.granite.workflow.content",
+  "downloadName": "com.adobe.granite.workflow.content-1.0.90.zip",
+  "version": "1.0.90"
+}
+{
+  "pid": "adobe/granite:com.adobe.granite.workflow.content:1.0.90-CQ650-B0005",
+  "path": "/etc/packages/adobe/granite/com.adobe.granite.workflow.content-1.0.90-CQ650-B0005.zip",
+  "name": "com.adobe.granite.workflow.content",
+  "downloadName": "com.adobe.granite.workflow.content-1.0.90-CQ650-B0005.zip",
+  "version": "1.0.90-CQ650-B0005"
+}
+{
+  "pid": "adobe/granite:com.adobe.reef.contexthub.content:0.4.18",
+  "path": "/etc/packages/adobe/granite/com.adobe.reef.contexthub.content-0.4.18.zip",
+  "name": "com.adobe.reef.contexthub.content",
+  "downloadName": "com.adobe.reef.contexthub.content-0.4.18.zip",
+  "version": "0.4.18"
+}
+{
+  "pid": "adobe/granite:com.adobe.reef.contexthub.content:0.4.33-CQ650-B0006",
+  "path": "/etc/packages/adobe/granite/com.adobe.reef.contexthub.content-0.4.33-CQ650-B0006.zip",
+  "name": "com.adobe.reef.contexthub.content",
+  "downloadName": "com.adobe.reef.contexthub.content-0.4.33-CQ650-B0006.zip",
+  "version": "0.4.33-CQ650-B0006"
+}
+{
+  "pid": "adobe/granite:tsdk-aem-clientlib:1.1.18",
+  "path": "/etc/packages/adobe/granite/tsdk-aem-clientlib-1.1.18.zip",
+  "name": "tsdk-aem-clientlib",
+  "downloadName": "tsdk-aem-clientlib-1.1.18.zip",
+  "version": "1.1.18"
+}
+{
+  "pid": "adobe/granite:tsdk-aem-clientlib:1.1.24",
+  "path": "/etc/packages/adobe/granite/tsdk-aem-clientlib-1.1.24.zip",
+  "name": "tsdk-aem-clientlib",
+  "downloadName": "tsdk-aem-clientlib-1.1.24.zip",
+  "version": "1.1.24"
+}
+{
+  "pid": "com.adobe.aem.graphiql:graphiql.ui.apps:0.0.47-CQ650-B0010",
+  "path": "/etc/packages/com.adobe.aem.graphiql/graphiql.ui.apps-0.0.47-CQ650-B0010.zip",
+  "name": "graphiql.ui.apps",
+  "downloadName": "graphiql.ui.apps-0.0.47-CQ650-B0010.zip",
+  "version": "0.0.47-CQ650-B0010"
+}
+{
+  "pid": "com.adobe.cq.inbox:cq-inbox-content:1.2.30",
+  "path": "/etc/packages/com.adobe.cq.inbox/cq-inbox-content-1.2.30.zip",
+  "name": "cq-inbox-content",
+  "downloadName": "cq-inbox-content-1.2.30.zip",
+  "version": "1.2.30"
+}
+{
+  "pid": "com.adobe.cq.inbox:cq-inbox-content:1.2.94-CQ650-B0018",
+  "path": "/etc/packages/com.adobe.cq.inbox/cq-inbox-content-1.2.94-CQ650-B0018.zip",
+  "name": "cq-inbox-content",
+  "downloadName": "cq-inbox-content-1.2.94-CQ650-B0018.zip",
+  "version": "1.2.94-CQ650-B0018"
+}
+{
+  "pid": "day/cq560/social/activitystreams:cq-social-activitystreams-pkg:1.6.19",
+  "path": "/etc/packages/day/cq560/social/activitystreams/cq-social-activitystreams-pkg-1.6.19.zip",
+  "name": "cq-social-activitystreams-pkg",
+  "downloadName": "cq-social-activitystreams-pkg-1.6.19.zip",
+  "version": "1.6.19"
+}
+{
+  "pid": "day/cq560/social/activitystreams:cq-social-activitystreams-pkg:1.6.21",
+  "path": "/etc/packages/day/cq560/social/activitystreams/cq-social-activitystreams-pkg-1.6.21.zip",
+  "name": "cq-social-activitystreams-pkg",
+  "downloadName": "cq-social-activitystreams-pkg-1.6.21.zip",
+  "version": "1.6.21"
+}
+{
+  "pid": "day/cq560/social/calendar:cq-social-calendar-pkg:1.6.32",
+  "path": "/etc/packages/day/cq560/social/calendar/cq-social-calendar-pkg-1.6.32.zip",
+  "name": "cq-social-calendar-pkg",
+  "downloadName": "cq-social-calendar-pkg-1.6.32.zip",
+  "version": "1.6.32"
+}
+{
+  "pid": "day/cq560/social/calendar:cq-social-calendar-pkg:1.6.35",
+  "path": "/etc/packages/day/cq560/social/calendar/cq-social-calendar-pkg-1.6.35.zip",
+  "name": "cq-social-calendar-pkg",
+  "downloadName": "cq-social-calendar-pkg-1.6.35.zip",
+  "version": "1.6.35"
+}
+{
+  "pid": "day/cq560/social/commons:cq-social-commons-pkg:1.10.99",
+  "path": "/etc/packages/day/cq560/social/commons/cq-social-commons-pkg-1.10.99.zip",
+  "name": "cq-social-commons-pkg",
+  "downloadName": "cq-social-commons-pkg-1.10.99.zip",
+  "version": "1.10.99"
+}
+{
+  "pid": "day/cq560/social/commons:cq-social-commons-pkg:1.10.122",
+  "path": "/etc/packages/day/cq560/social/commons/cq-social-commons-pkg-1.10.122.zip",
+  "name": "cq-social-commons-pkg",
+  "downloadName": "cq-social-commons-pkg-1.10.122.zip",
+  "version": "1.10.122"
+}
+{
+  "pid": "day/cq560/social/commons:cq-social-thirdparty-pkg:1.5.6",
+  "path": "/etc/packages/day/cq560/social/commons/cq-social-thirdparty-pkg-1.5.6.zip",
+  "name": "cq-social-thirdparty-pkg",
+  "downloadName": "cq-social-thirdparty-pkg-1.5.6.zip",
+  "version": "1.5.6"
+}
+{
+  "pid": "day/cq560/social/commons:cq-social-thirdparty-pkg:1.5.18",
+  "path": "/etc/packages/day/cq560/social/commons/cq-social-thirdparty-pkg-1.5.18.zip",
+  "name": "cq-social-thirdparty-pkg",
+  "downloadName": "cq-social-thirdparty-pkg-1.5.18.zip",
+  "version": "1.5.18"
+}
+{
+  "pid": "day/cq560/social/connect:cq-social-connect-pkg:1.7.12",
+  "path": "/etc/packages/day/cq560/social/connect/cq-social-connect-pkg-1.7.12.zip",
+  "name": "cq-social-connect-pkg",
+  "downloadName": "cq-social-connect-pkg-1.7.12.zip",
+  "version": "1.7.12"
+}
+{
+  "pid": "day/cq560/social/connect:cq-social-connect-pkg:1.7.26",
+  "path": "/etc/packages/day/cq560/social/connect/cq-social-connect-pkg-1.7.26.zip",
+  "name": "cq-social-connect-pkg",
+  "downloadName": "cq-social-connect-pkg-1.7.26.zip",
+  "version": "1.7.26"
+}
+{
+  "pid": "day/cq560/social/console:cq-social-thirdparty-themes-pkg:1.5.0",
+  "path": "/etc/packages/day/cq560/social/console/cq-social-thirdparty-themes-pkg-1.5.0.zip",
+  "name": "cq-social-thirdparty-themes-pkg",
+  "downloadName": "cq-social-thirdparty-themes-pkg-1.5.0.zip",
+  "version": "1.5.0"
+}
+{
+  "pid": "day/cq560/social/content:cq-social-content-pkg:1.8.10",
+  "path": "/etc/packages/day/cq560/social/content/cq-social-content-pkg-1.8.10.zip",
+  "name": "cq-social-content-pkg",
+  "downloadName": "cq-social-content-pkg-1.8.10.zip",
+  "version": "1.8.10"
+}
+{
+  "pid": "day/cq560/social/content:cq-social-content-pkg:1.8.12",
+  "path": "/etc/packages/day/cq560/social/content/cq-social-content-pkg-1.8.12.zip",
+  "name": "cq-social-content-pkg",
+  "downloadName": "cq-social-content-pkg-1.8.12.zip",
+  "version": "1.8.12"
+}
+{
+  "pid": "day/cq560/social/filelibrary:cq-social-filelibrary-pkg:1.5.16",
+  "path": "/etc/packages/day/cq560/social/filelibrary/cq-social-filelibrary-pkg-1.5.16.zip",
+  "name": "cq-social-filelibrary-pkg",
+  "downloadName": "cq-social-filelibrary-pkg-1.5.16.zip",
+  "version": "1.5.16"
+}
+{
+  "pid": "day/cq560/social/filelibrary:cq-social-filelibrary-pkg:1.5.20",
+  "path": "/etc/packages/day/cq560/social/filelibrary/cq-social-filelibrary-pkg-1.5.20.zip",
+  "name": "cq-social-filelibrary-pkg",
+  "downloadName": "cq-social-filelibrary-pkg-1.5.20.zip",
+  "version": "1.5.20"
+}
+{
+  "pid": "day/cq560/social/forum:cq-social-forum-pkg:1.8.29",
+  "path": "/etc/packages/day/cq560/social/forum/cq-social-forum-pkg-1.8.29.zip",
+  "name": "cq-social-forum-pkg",
+  "downloadName": "cq-social-forum-pkg-1.8.29.zip",
+  "version": "1.8.29"
+}
+{
+  "pid": "day/cq560/social/forum:cq-social-forum-pkg:1.8.31",
+  "path": "/etc/packages/day/cq560/social/forum/cq-social-forum-pkg-1.8.31.zip",
+  "name": "cq-social-forum-pkg",
+  "downloadName": "cq-social-forum-pkg-1.8.31.zip",
+  "version": "1.8.31"
+}
+{
+  "pid": "day/cq560/social/graph:cq-social-graph-pkg:1.4.1",
+  "path": "/etc/packages/day/cq560/social/graph/cq-social-graph-pkg-1.4.1.zip",
+  "name": "cq-social-graph-pkg",
+  "downloadName": "cq-social-graph-pkg-1.4.1.zip",
+  "version": "1.4.1"
+}
+{
+  "pid": "day/cq560/social/group:cq-social-group-pkg:1.7.27",
+  "path": "/etc/packages/day/cq560/social/group/cq-social-group-pkg-1.7.27.zip",
+  "name": "cq-social-group-pkg",
+  "downloadName": "cq-social-group-pkg-1.7.27.zip",
+  "version": "1.7.27"
+}
+{
+  "pid": "day/cq560/social/group:cq-social-group-pkg:1.7.30",
+  "path": "/etc/packages/day/cq560/social/group/cq-social-group-pkg-1.7.30.zip",
+  "name": "cq-social-group-pkg",
+  "downloadName": "cq-social-group-pkg-1.7.30.zip",
+  "version": "1.7.30"
+}
+{
+  "pid": "day/cq560/social/journal:cq-social-journal-pkg:1.6.29",
+  "path": "/etc/packages/day/cq560/social/journal/cq-social-journal-pkg-1.6.29.zip",
+  "name": "cq-social-journal-pkg",
+  "downloadName": "cq-social-journal-pkg-1.6.29.zip",
+  "version": "1.6.29"
+}
+{
+  "pid": "day/cq560/social/journal:cq-social-journal-pkg:1.6.32",
+  "path": "/etc/packages/day/cq560/social/journal/cq-social-journal-pkg-1.6.32.zip",
+  "name": "cq-social-journal-pkg",
+  "downloadName": "cq-social-journal-pkg-1.6.32.zip",
+  "version": "1.6.32"
+}
+{
+  "pid": "day/cq560/social/messaging:cq-social-messaging-pkg:1.6.20",
+  "path": "/etc/packages/day/cq560/social/messaging/cq-social-messaging-pkg-1.6.20.zip",
+  "name": "cq-social-messaging-pkg",
+  "downloadName": "cq-social-messaging-pkg-1.6.20.zip",
+  "version": "1.6.20"
+}
+{
+  "pid": "day/cq560/social/messaging:cq-social-messaging-pkg:1.6.26",
+  "path": "/etc/packages/day/cq560/social/messaging/cq-social-messaging-pkg-1.6.26.zip",
+  "name": "cq-social-messaging-pkg",
+  "downloadName": "cq-social-messaging-pkg-1.6.26.zip",
+  "version": "1.6.26"
+}
+{
+  "pid": "day/cq560/social/moderation:cq-social-moderation-pkg:2.5.21",
+  "path": "/etc/packages/day/cq560/social/moderation/cq-social-moderation-pkg-2.5.21.zip",
+  "name": "cq-social-moderation-pkg",
+  "downloadName": "cq-social-moderation-pkg-2.5.21.zip",
+  "version": "2.5.21"
+}
+{
+  "pid": "day/cq560/social/moderation:cq-social-moderation-pkg:2.5.28",
+  "path": "/etc/packages/day/cq560/social/moderation/cq-social-moderation-pkg-2.5.28.zip",
+  "name": "cq-social-moderation-pkg",
+  "downloadName": "cq-social-moderation-pkg-2.5.28.zip",
+  "version": "2.5.28"
+}
+{
+  "pid": "day/cq560/social/qna:cq-social-qna-pkg:1.7.19",
+  "path": "/etc/packages/day/cq560/social/qna/cq-social-qna-pkg-1.7.19.zip",
+  "name": "cq-social-qna-pkg",
+  "downloadName": "cq-social-qna-pkg-1.7.19.zip",
+  "version": "1.7.19"
+}
+{
+  "pid": "day/cq560/social/qna:cq-social-qna-pkg:1.7.26",
+  "path": "/etc/packages/day/cq560/social/qna/cq-social-qna-pkg-1.7.26.zip",
+  "name": "cq-social-qna-pkg",
+  "downloadName": "cq-social-qna-pkg-1.7.26.zip",
+  "version": "1.7.26"
+}
+{
+  "pid": "day/cq560/social/sync:cq-social-sync-pkg:1.3.6",
+  "path": "/etc/packages/day/cq560/social/sync/cq-social-sync-pkg-1.3.6.zip",
+  "name": "cq-social-sync-pkg",
+  "downloadName": "cq-social-sync-pkg-1.3.6.zip",
+  "version": "1.3.6"
+}
+{
+  "pid": "day/cq560/social/sync:cq-social-sync-pkg:1.3.9",
+  "path": "/etc/packages/day/cq560/social/sync/cq-social-sync-pkg-1.3.9.zip",
+  "name": "cq-social-sync-pkg",
+  "downloadName": "cq-social-sync-pkg-1.3.9.zip",
+  "version": "1.3.9"
+}
+{
+  "pid": "day/cq560/social/tally:cq-social-tally-pkg:1.6.2",
+  "path": "/etc/packages/day/cq560/social/tally/cq-social-tally-pkg-1.6.2.zip",
+  "name": "cq-social-tally-pkg",
+  "downloadName": "cq-social-tally-pkg-1.6.2.zip",
+  "version": "1.6.2"
+}
+{
+  "pid": "day/cq560/social/tally:cq-social-tally-pkg:1.6.3",
+  "path": "/etc/packages/day/cq560/social/tally/cq-social-tally-pkg-1.6.3.zip",
+  "name": "cq-social-tally-pkg",
+  "downloadName": "cq-social-tally-pkg-1.6.3.zip",
+  "version": "1.6.3"
+}
+{
+  "pid": "day/cq560/social/ugc:cq-social-ugc-pkg:2.5.5",
+  "path": "/etc/packages/day/cq560/social/ugc/cq-social-ugc-pkg-2.5.5.zip",
+  "name": "cq-social-ugc-pkg",
+  "downloadName": "cq-social-ugc-pkg-2.5.5.zip",
+  "version": "2.5.5"
+}
+{
+  "pid": "day/cq561/social/component-guide:community-components-guide-pkg:1.1.84",
+  "path": "/etc/packages/day/cq561/social/component-guide/community-components-guide-pkg-1.1.84.zip",
+  "name": "community-components-guide-pkg",
+  "downloadName": "community-components-guide-pkg-1.1.84.zip",
+  "version": "1.1.84"
+}
+{
+  "pid": "day/cq561/social/ms-provider:cq-social-ms-provider-pkg:1.2.6",
+  "path": "/etc/packages/day/cq561/social/ms-provider/cq-social-ms-provider-pkg-1.2.6.zip",
+  "name": "cq-social-ms-provider-pkg",
+  "downloadName": "cq-social-ms-provider-pkg-1.2.6.zip",
+  "version": "1.2.6"
+}
+{
+  "pid": "day/cq561/social/review:cq-social-review-pkg:1.6.5",
+  "path": "/etc/packages/day/cq561/social/review/cq-social-review-pkg-1.6.5.zip",
+  "name": "cq-social-review-pkg",
+  "downloadName": "cq-social-review-pkg-1.6.5.zip",
+  "version": "1.6.5"
+}
+{
+  "pid": "day/cq561/social/translation:cq-social-translation-pkg:1.5.1",
+  "path": "/etc/packages/day/cq561/social/translation/cq-social-translation-pkg-1.5.1.zip",
+  "name": "cq-social-translation-pkg",
+  "downloadName": "cq-social-translation-pkg-1.5.1.zip",
+  "version": "1.5.1"
+}
+{
+  "pid": "day/cq60/fd:adobe-aemds-formsanddocuments-core-pkg:8.0.70",
+  "path": "/etc/packages/day/cq60/fd/adobe-aemds-formsanddocuments-core-pkg-8.0.70.zip",
+  "name": "adobe-aemds-formsanddocuments-core-pkg",
+  "downloadName": "adobe-aemds-formsanddocuments-core-pkg-8.0.70.zip",
+  "version": "8.0.70"
+}
+{
+  "pid": "day/cq60/fd:adobe-aemds-formsanddocuments-core-pkg:8.0.70-NPR-38582-B0001",
+  "path": "/etc/packages/day/cq60/fd/adobe-aemds-formsanddocuments-core-pkg-8.0.70-NPR-38582-B0001.zip",
+  "name": "adobe-aemds-formsanddocuments-core-pkg",
+  "downloadName": "adobe-aemds-formsanddocuments-core-pkg-8.0.70-NPR-38582-B0001.zip",
+  "version": "8.0.70-NPR-38582-B0001"
+}
+{
+  "pid": "day/cq60/fd:adobe-aemds-formsportal-pkg:8.0.50",
+  "path": "/etc/packages/day/cq60/fd/adobe-aemds-formsportal-pkg-8.0.50.zip",
+  "name": "adobe-aemds-formsportal-pkg",
+  "downloadName": "adobe-aemds-formsportal-pkg-8.0.50.zip",
+  "version": "8.0.50"
+}
+{
+  "pid": "day/cq60/fd:adobe-aemds-formsportal-pkg:8.0.50-FORMS-20670-B001",
+  "path": "/etc/packages/day/cq60/fd/adobe-aemds-formsportal-pkg-8.0.50-FORMS-20670-B001.zip",
+  "name": "adobe-aemds-formsportal-pkg",
+  "downloadName": "adobe-aemds-formsportal-pkg-8.0.50-FORMS-20670-B001.zip",
+  "version": "8.0.50-FORMS-20670-B001"
+}
+{
+  "pid": "day/cq60/fd:adobe-lc-forms-runtime-pkg:8.0.74",
+  "path": "/etc/packages/day/cq60/fd/adobe-lc-forms-runtime-pkg-8.0.74.zip",
+  "name": "adobe-lc-forms-runtime-pkg",
+  "downloadName": "adobe-lc-forms-runtime-pkg-8.0.74.zip",
+  "version": "8.0.74"
+}
+{
+  "pid": "day/cq60/fd:aemds-guide-content:6.0.96",
+  "path": "/etc/packages/day/cq60/fd/aemds-guide-content-6.0.96.zip",
+  "name": "aemds-guide-content",
+  "downloadName": "aemds-guide-content-6.0.96.zip",
+  "version": "6.0.96"
+}
+{
+  "pid": "day/cq60/fd:aemfd-expeditor-rulebuilder-pkg:5.0.42",
+  "path": "/etc/packages/day/cq60/fd/aemfd-expeditor-rulebuilder-pkg-5.0.42.zip",
+  "name": "aemfd-expeditor-rulebuilder-pkg",
+  "downloadName": "aemfd-expeditor-rulebuilder-pkg-5.0.42.zip",
+  "version": "5.0.42"
+}
+{
+  "pid": "day/cq60/fd:aemfd-expeditor-rulebuilder-pkg:5.0.76",
+  "path": "/etc/packages/day/cq60/fd/aemfd-expeditor-rulebuilder-pkg-5.0.76.zip",
+  "name": "aemfd-expeditor-rulebuilder-pkg",
+  "downloadName": "aemfd-expeditor-rulebuilder-pkg-5.0.76.zip",
+  "version": "5.0.76"
+}
+{
+  "pid": "day/cq60/fd:aemforms-commons-content:6.0.78",
+  "path": "/etc/packages/day/cq60/fd/aemforms-commons-content-6.0.78.zip",
+  "name": "aemforms-commons-content",
+  "downloadName": "aemforms-commons-content-6.0.78.zip",
+  "version": "6.0.78"
+}
+{
+  "pid": "day/cq60/fd:channel-core-content:2.0.76",
+  "path": "/etc/packages/day/cq60/fd/channel-core-content-2.0.76.zip",
+  "name": "channel-core-content",
+  "downloadName": "channel-core-content-2.0.76.zip",
+  "version": "2.0.76"
+}
+{
+  "pid": "day/cq60/fd:cq-adaptiveforms-i18n-content:5.0.56",
+  "path": "/etc/packages/day/cq60/fd/cq-adaptiveforms-i18n-content-5.0.56.zip",
+  "name": "cq-adaptiveforms-i18n-content",
+  "downloadName": "cq-adaptiveforms-i18n-content-5.0.56.zip",
+  "version": "5.0.56"
+}
+{
+  "pid": "day/cq60/fd:forms-content-clean-up-pkg:4.0.74",
+  "path": "/etc/packages/day/cq60/fd/forms-content-clean-up-pkg-4.0.74.zip",
+  "name": "forms-content-clean-up-pkg",
+  "downloadName": "forms-content-clean-up-pkg-4.0.74.zip",
+  "version": "4.0.74"
+}
+{
+  "pid": "day/cq60/product:cdn-integration-content:2.4",
+  "path": "/etc/packages/day/cq60/product/cdn-integration-content-2.4.zip",
+  "name": "cdn-integration-content",
+  "downloadName": "cdn-integration-content-2.4.zip",
+  "version": "2.4"
+}
+{
+  "pid": "day/cq60/product:cfm-graphql-content:0.0.1-CQ650-B0020",
+  "path": "/etc/packages/day/cq60/product/cfm-graphql-content-0.0.1-CQ650-B0020.zip",
+  "name": "cfm-graphql-content",
+  "downloadName": "cfm-graphql-content-0.0.1-CQ650-B0020.zip",
+  "version": "0.0.1-CQ650-B0020"
+}
+{
+  "pid": "day/cq60/product:cq-address-content:1.4.12",
+  "path": "/etc/packages/day/cq60/product/cq-address-content-1.4.12.zip",
+  "name": "cq-address-content",
+  "downloadName": "cq-address-content-1.4.12.zip",
+  "version": "1.4.12"
+}
+{
+  "pid": "day/cq60/product:cq-address-content:1.4.22",
+  "path": "/etc/packages/day/cq60/product/cq-address-content-1.4.22.zip",
+  "name": "cq-address-content",
+  "downloadName": "cq-address-content-1.4.22.zip",
+  "version": "1.4.22"
+}
+{
+  "pid": "day/cq60/product:cq-cloudservices-content:1.5.22",
+  "path": "/etc/packages/day/cq60/product/cq-cloudservices-content-1.5.22.zip",
+  "name": "cq-cloudservices-content",
+  "downloadName": "cq-cloudservices-content-1.5.22.zip",
+  "version": "1.5.22"
+}
+{
+  "pid": "day/cq60/product:cq-cloudservices-content:1.5.45-CQ650-B0001",
+  "path": "/etc/packages/day/cq60/product/cq-cloudservices-content-1.5.45-CQ650-B0001.zip",
+  "name": "cq-cloudservices-content",
+  "downloadName": "cq-cloudservices-content-1.5.45-CQ650-B0001.zip",
+  "version": "1.5.45-CQ650-B0001"
+}
+{
+  "pid": "day/cq60/product:cq-compat-content-disable-preupgrade-jobs:1.0.0-CQ650-B0002",
+  "path": "/etc/packages/day/cq60/product/cq-compat-content-disable-preupgrade-jobs-1.0.0-CQ650-B0002.zip",
+  "name": "cq-compat-content-disable-preupgrade-jobs",
+  "downloadName": "cq-compat-content-disable-preupgrade-jobs-1.0.0-CQ650-B0002.zip",
+  "version": "1.0.0-CQ650-B0002"
+}
+{
+  "pid": "day/cq60/product:cq-content:6.5.16",
+  "path": "/etc/packages/day/cq60/product/cq-content-6.5.16.zip",
+  "name": "cq-content",
+  "downloadName": "cq-content-6.5.16.zip",
+  "version": "6.5.16"
+}
+{
+  "pid": "day/cq60/product:cq-content:6.5.16-CQ650-B012",
+  "path": "/etc/packages/day/cq60/product/cq-content-6.5.16-CQ650-B012.zip",
+  "name": "cq-content",
+  "downloadName": "cq-content-6.5.16-CQ650-B012.zip",
+  "version": "6.5.16-CQ650-B012"
+}
+{
+  "pid": "day/cq60/product:cq-content-insight-content:1.5.4",
+  "path": "/etc/packages/day/cq60/product/cq-content-insight-content-1.5.4.zip",
+  "name": "cq-content-insight-content",
+  "downloadName": "cq-content-insight-content-1.5.4.zip",
+  "version": "1.5.4"
+}
+{
+  "pid": "day/cq60/product:cq-content-insight-content:1.5.16-CQ650-B0001",
+  "path": "/etc/packages/day/cq60/product/cq-content-insight-content-1.5.16-CQ650-B0001.zip",
+  "name": "cq-content-insight-content",
+  "downloadName": "cq-content-insight-content-1.5.16-CQ650-B0001.zip",
+  "version": "1.5.16-CQ650-B0001"
+}
+{
+  "pid": "day/cq60/product:cq-dam-cfm-content:0.11.92",
+  "path": "/etc/packages/day/cq60/product/cq-dam-cfm-content-0.11.92.zip",
+  "name": "cq-dam-cfm-content",
+  "downloadName": "cq-dam-cfm-content-0.11.92.zip",
+  "version": "0.11.92"
+}
+{
+  "pid": "day/cq60/product:cq-dam-cfm-content:0.11.215-CQ650-B0050",
+  "path": "/etc/packages/day/cq60/product/cq-dam-cfm-content-0.11.215-CQ650-B0050.zip",
+  "name": "cq-dam-cfm-content",
+  "downloadName": "cq-dam-cfm-content-0.11.215-CQ650-B0050.zip",
+  "version": "0.11.215-CQ650-B0050"
+}
+{
+  "pid": "day/cq60/product:cq-dam-content:2.5.410",
+  "path": "/etc/packages/day/cq60/product/cq-dam-content-2.5.410.zip",
+  "name": "cq-dam-content",
+  "downloadName": "cq-dam-content-2.5.410.zip",
+  "version": "2.5.410"
+}
+{
+  "pid": "day/cq60/product:cq-dam-content:2.5.1225-V650-B0050",
+  "path": "/etc/packages/day/cq60/product/cq-dam-content-2.5.1225-V650-B0050.zip",
+  "name": "cq-dam-content",
+  "downloadName": "cq-dam-content-2.5.1225-V650-B0050.zip",
+  "version": "2.5.1225-V650-B0050"
+}
+{
+  "pid": "day/cq60/product:cq-dam-delivery-content:1.5.6",
+  "path": "/etc/packages/day/cq60/product/cq-dam-delivery-content-1.5.6.zip",
+  "name": "cq-dam-delivery-content",
+  "downloadName": "cq-dam-delivery-content-1.5.6.zip",
+  "version": "1.5.6"
+}
+{
+  "pid": "day/cq60/product:cq-dam-mac-sync-pkg:1.5.8",
+  "path": "/etc/packages/day/cq60/product/cq-dam-mac-sync-pkg-1.5.8.zip",
+  "name": "cq-dam-mac-sync-pkg",
+  "downloadName": "cq-dam-mac-sync-pkg-1.5.8.zip",
+  "version": "1.5.8"
+}
+{
+  "pid": "day/cq60/product:cq-dam-mac-sync-pkg:1.5.28",
+  "path": "/etc/packages/day/cq60/product/cq-dam-mac-sync-pkg-1.5.28.zip",
+  "name": "cq-dam-mac-sync-pkg",
+  "downloadName": "cq-dam-mac-sync-pkg-1.5.28.zip",
+  "version": "1.5.28"
+}
+{
+  "pid": "day/cq60/product:cq-dam-projects-addons-content:0.1.4",
+  "path": "/etc/packages/day/cq60/product/cq-dam-projects-addons-content-0.1.4.zip",
+  "name": "cq-dam-projects-addons-content",
+  "downloadName": "cq-dam-projects-addons-content-0.1.4.zip",
+  "version": "0.1.4"
+}
+{
+  "pid": "day/cq60/product:cq-dam-projects-addons-content:0.1.15-CQ650-B0008",
+  "path": "/etc/packages/day/cq60/product/cq-dam-projects-addons-content-0.1.15-CQ650-B0008.zip",
+  "name": "cq-dam-projects-addons-content",
+  "downloadName": "cq-dam-projects-addons-content-0.1.15-CQ650-B0008.zip",
+  "version": "0.1.15-CQ650-B0008"
+}
+{
+  "pid": "day/cq60/product:cq-dam-sample-content:1.4.4",
+  "path": "/etc/packages/day/cq60/product/cq-dam-sample-content-1.4.4.zip",
+  "name": "cq-dam-sample-content",
+  "downloadName": "cq-dam-sample-content-1.4.4.zip",
+  "version": "1.4.4"
+}
+{
+  "pid": "day/cq60/product:cq-dam-sample-content:1.4.10",
+  "path": "/etc/packages/day/cq60/product/cq-dam-sample-content-1.4.10.zip",
+  "name": "cq-dam-sample-content",
+  "downloadName": "cq-dam-sample-content-1.4.10.zip",
+  "version": "1.4.10"
+}
+{
+  "pid": "day/cq60/product:cq-dam-scene7-viewers-content:2.3.54",
+  "path": "/etc/packages/day/cq60/product/cq-dam-scene7-viewers-content-2.3.54.zip",
+  "name": "cq-dam-scene7-viewers-content",
+  "downloadName": "cq-dam-scene7-viewers-content-2.3.54.zip",
+  "version": "2.3.54"
+}
+{
+  "pid": "day/cq60/product:cq-dam-scene7-viewers-content:2.3.120",
+  "path": "/etc/packages/day/cq60/product/cq-dam-scene7-viewers-content-2.3.120.zip",
+  "name": "cq-dam-scene7-viewers-content",
+  "downloadName": "cq-dam-scene7-viewers-content-2.3.120.zip",
+  "version": "2.3.120"
+}
+{
+  "pid": "day/cq60/product:cq-dam-stock-integration-content:1.1.0",
+  "path": "/etc/packages/day/cq60/product/cq-dam-stock-integration-content-1.1.0.zip",
+  "name": "cq-dam-stock-integration-content",
+  "downloadName": "cq-dam-stock-integration-content-1.1.0.zip",
+  "version": "1.1.0"
+}
+{
+  "pid": "day/cq60/product:cq-dam-stock-integration-content:1.1.19-CQ650-B0008",
+  "path": "/etc/packages/day/cq60/product/cq-dam-stock-integration-content-1.1.19-CQ650-B0008.zip",
+  "name": "cq-dam-stock-integration-content",
+  "downloadName": "cq-dam-stock-integration-content-1.1.19-CQ650-B0008.zip",
+  "version": "1.1.19-CQ650-B0008"
+}
+{
+  "pid": "day/cq60/product:cq-dashboards-content:1.4.8",
+  "path": "/etc/packages/day/cq60/product/cq-dashboards-content-1.4.8.zip",
+  "name": "cq-dashboards-content",
+  "downloadName": "cq-dashboards-content-1.4.8.zip",
+  "version": "1.4.8"
+}
+{
+  "pid": "day/cq60/product:cq-dynamicmedia-content:1.0.190",
+  "path": "/etc/packages/day/cq60/product/cq-dynamicmedia-content-1.0.190.zip",
+  "name": "cq-dynamicmedia-content",
+  "downloadName": "cq-dynamicmedia-content-1.0.190.zip",
+  "version": "1.0.190"
+}
+{
+  "pid": "day/cq60/product:cq-dynamicmedia-content:1.0.512-CQ650-B0040",
+  "path": "/etc/packages/day/cq60/product/cq-dynamicmedia-content-1.0.512-CQ650-B0040.zip",
+  "name": "cq-dynamicmedia-content",
+  "downloadName": "cq-dynamicmedia-content-1.0.512-CQ650-B0040.zip",
+  "version": "1.0.512-CQ650-B0040"
+}
+{
+  "pid": "day/cq60/product:cq-foundation-content:1.5.40",
+  "path": "/etc/packages/day/cq60/product/cq-foundation-content-1.5.40.zip",
+  "name": "cq-foundation-content",
+  "downloadName": "cq-foundation-content-1.5.40.zip",
+  "version": "1.5.40"
+}
+{
+  "pid": "day/cq60/product:cq-foundation-content:1.5.135-CQ-650-B0010",
+  "path": "/etc/packages/day/cq60/product/cq-foundation-content-1.5.135-CQ-650-B0010.zip",
+  "name": "cq-foundation-content",
+  "downloadName": "cq-foundation-content-1.5.135-CQ-650-B0010.zip",
+  "version": "1.5.135-CQ-650-B0010"
+}
+{
+  "pid": "day/cq60/product:cq-i18n-content:1.5.98",
+  "path": "/etc/packages/day/cq60/product/cq-i18n-content-1.5.98.zip",
+  "name": "cq-i18n-content",
+  "downloadName": "cq-i18n-content-1.5.98.zip",
+  "version": "1.5.98"
+}
+{
+  "pid": "day/cq60/product:cq-i18n-content:1.5.148-CQ650-B0004",
+  "path": "/etc/packages/day/cq60/product/cq-i18n-content-1.5.148-CQ650-B0004.zip",
+  "name": "cq-i18n-content",
+  "downloadName": "cq-i18n-content-1.5.148-CQ650-B0004.zip",
+  "version": "1.5.148-CQ650-B0004"
+}
+{
+  "pid": "day/cq60/product:cq-integration-activitymap-content:1.2.4",
+  "path": "/etc/packages/day/cq60/product/cq-integration-activitymap-content-1.2.4.zip",
+  "name": "cq-integration-activitymap-content",
+  "downloadName": "cq-integration-activitymap-content-1.2.4.zip",
+  "version": "1.2.4"
+}
+{
+  "pid": "day/cq60/product:cq-integration-analytics-content:1.3.26",
+  "path": "/etc/packages/day/cq60/product/cq-integration-analytics-content-1.3.26.zip",
+  "name": "cq-integration-analytics-content",
+  "downloadName": "cq-integration-analytics-content-1.3.26.zip",
+  "version": "1.3.26"
+}
+{
+  "pid": "day/cq60/product:cq-integration-analytics-content:1.3.42-CQ650-B0010",
+  "path": "/etc/packages/day/cq60/product/cq-integration-analytics-content-1.3.42-CQ650-B0010.zip",
+  "name": "cq-integration-analytics-content",
+  "downloadName": "cq-integration-analytics-content-1.3.42-CQ650-B0010.zip",
+  "version": "1.3.42-CQ650-B0010"
+}
+{
+  "pid": "day/cq60/product:cq-integration-dtm-content:1.3.4",
+  "path": "/etc/packages/day/cq60/product/cq-integration-dtm-content-1.3.4.zip",
+  "name": "cq-integration-dtm-content",
+  "downloadName": "cq-integration-dtm-content-1.3.4.zip",
+  "version": "1.3.4"
+}
+{
+  "pid": "day/cq60/product:cq-integration-target-content:1.3.46",
+  "path": "/etc/packages/day/cq60/product/cq-integration-target-content-1.3.46.zip",
+  "name": "cq-integration-target-content",
+  "downloadName": "cq-integration-target-content-1.3.46.zip",
+  "version": "1.3.46"
+}
+{
+  "pid": "day/cq60/product:cq-integration-target-content:1.3.66",
+  "path": "/etc/packages/day/cq60/product/cq-integration-target-content-1.3.66.zip",
+  "name": "cq-integration-target-content",
+  "downloadName": "cq-integration-target-content-1.3.66.zip",
+  "version": "1.3.66"
+}
+{
+  "pid": "day/cq60/product:cq-launches-content:1.7.14",
+  "path": "/etc/packages/day/cq60/product/cq-launches-content-1.7.14.zip",
+  "name": "cq-launches-content",
+  "downloadName": "cq-launches-content-1.7.14.zip",
+  "version": "1.7.14"
+}
+{
+  "pid": "day/cq60/product:cq-launches-content:1.7.47-CQ650-B0020",
+  "path": "/etc/packages/day/cq60/product/cq-launches-content-1.7.47-CQ650-B0020.zip",
+  "name": "cq-launches-content",
+  "downloadName": "cq-launches-content-1.7.47-CQ650-B0020.zip",
+  "version": "1.7.47-CQ650-B0020"
+}
+{
+  "pid": "day/cq60/product:cq-mcm-content:1.4.50",
+  "path": "/etc/packages/day/cq60/product/cq-mcm-content-1.4.50.zip",
+  "name": "cq-mcm-content",
+  "downloadName": "cq-mcm-content-1.4.50.zip",
+  "version": "1.4.50"
+}
+{
+  "pid": "day/cq60/product:cq-mcm-content:1.4.87-CQ650-B0006",
+  "path": "/etc/packages/day/cq60/product/cq-mcm-content-1.4.87-CQ650-B0006.zip",
+  "name": "cq-mcm-content",
+  "downloadName": "cq-mcm-content-1.4.87-CQ650-B0006.zip",
+  "version": "1.4.87-CQ650-B0006"
+}
+{
+  "pid": "day/cq60/product:cq-msm-content:6.5.208-CQ650-B0018",
+  "path": "/etc/packages/day/cq60/product/cq-msm-content-6.5.208-CQ650-B0018.zip",
+  "name": "cq-msm-content",
+  "downloadName": "cq-msm-content-6.5.208-CQ650-B0018.zip",
+  "version": "6.5.208-CQ650-B0018"
+}
+{
+  "pid": "day/cq60/product:cq-personalization-content:1.3.88",
+  "path": "/etc/packages/day/cq60/product/cq-personalization-content-1.3.88.zip",
+  "name": "cq-personalization-content",
+  "downloadName": "cq-personalization-content-1.3.88.zip",
+  "version": "1.3.88"
+}
+{
+  "pid": "day/cq60/product:cq-personalization-content:1.3.157-CQ650-B0012",
+  "path": "/etc/packages/day/cq60/product/cq-personalization-content-1.3.157-CQ650-B0012.zip",
+  "name": "cq-personalization-content",
+  "downloadName": "cq-personalization-content-1.3.157-CQ650-B0012.zip",
+  "version": "1.3.157-CQ650-B0012"
+}
+{
+  "pid": "day/cq60/product:cq-platform-content:1.5.136",
+  "path": "/etc/packages/day/cq60/product/cq-platform-content-1.5.136.zip",
+  "name": "cq-platform-content",
+  "downloadName": "cq-platform-content-1.5.136.zip",
+  "version": "1.5.136"
+}
+{
+  "pid": "day/cq60/product:cq-platform-content:1.5.223-CQ650-B0052",
+  "path": "/etc/packages/day/cq60/product/cq-platform-content-1.5.223-CQ650-B0052.zip",
+  "name": "cq-platform-content",
+  "downloadName": "cq-platform-content-1.5.223-CQ650-B0052.zip",
+  "version": "1.5.223-CQ650-B0052"
+}
+{
+  "pid": "day/cq60/product:cq-portlet-director:5.5.22",
+  "path": "/etc/packages/day/cq60/product/cq-portlet-director-5.5.22.zip",
+  "name": "cq-portlet-director",
+  "downloadName": "cq-portlet-director-5.5.22.zip",
+  "version": "5.5.22"
+}
+{
+  "pid": "day/cq60/product:cq-portlet-director:5.5.24",
+  "path": "/etc/packages/day/cq60/product/cq-portlet-director-5.5.24.zip",
+  "name": "cq-portlet-director",
+  "downloadName": "cq-portlet-director-5.5.24.zip",
+  "version": "5.5.24"
+}
+{
+  "pid": "day/cq60/product:cq-projects-content:1.5.28",
+  "path": "/etc/packages/day/cq60/product/cq-projects-content-1.5.28.zip",
+  "name": "cq-projects-content",
+  "downloadName": "cq-projects-content-1.5.28.zip",
+  "version": "1.5.28"
+}
+{
+  "pid": "day/cq60/product:cq-projects-content:1.5.66-CQ650-B0028",
+  "path": "/etc/packages/day/cq60/product/cq-projects-content-1.5.66-CQ650-B0028.zip",
+  "name": "cq-projects-content",
+  "downloadName": "cq-projects-content-1.5.66-CQ650-B0028.zip",
+  "version": "1.5.66-CQ650-B0028"
+}
+{
+  "pid": "day/cq60/product:cq-projects-translation-content:1.4.46",
+  "path": "/etc/packages/day/cq60/product/cq-projects-translation-content-1.4.46.zip",
+  "name": "cq-projects-translation-content",
+  "downloadName": "cq-projects-translation-content-1.4.46.zip",
+  "version": "1.4.46"
+}
+{
+  "pid": "day/cq60/product:cq-projects-translation-content:1.4.86-CQ650-B0020",
+  "path": "/etc/packages/day/cq60/product/cq-projects-translation-content-1.4.86-CQ650-B0020.zip",
+  "name": "cq-projects-translation-content",
+  "downloadName": "cq-projects-translation-content-1.4.86-CQ650-B0020.zip",
+  "version": "1.4.86-CQ650-B0020"
+}
+{
+  "pid": "day/cq60/product:cq-reporting-content:1.0.2",
+  "path": "/etc/packages/day/cq60/product/cq-reporting-content-1.0.2.zip",
+  "name": "cq-reporting-content",
+  "downloadName": "cq-reporting-content-1.0.2.zip",
+  "version": "1.0.2"
+}
+{
+  "pid": "day/cq60/product:cq-ui-classic-content:1.5.38",
+  "path": "/etc/packages/day/cq60/product/cq-ui-classic-content-1.5.38.zip",
+  "name": "cq-ui-classic-content",
+  "downloadName": "cq-ui-classic-content-1.5.38.zip",
+  "version": "1.5.38"
+}
+{
+  "pid": "day/cq60/product:cq-ui-classic-content:1.5.81-CQ650-B0063",
+  "path": "/etc/packages/day/cq60/product/cq-ui-classic-content-1.5.81-CQ650-B0063.zip",
+  "name": "cq-ui-classic-content",
+  "downloadName": "cq-ui-classic-content-1.5.81-CQ650-B0063.zip",
+  "version": "1.5.81-CQ650-B0063"
+}
+{
+  "pid": "day/cq60/product:cq-ui-static-typekit-content:1.3.4",
+  "path": "/etc/packages/day/cq60/product/cq-ui-static-typekit-content-1.3.4.zip",
+  "name": "cq-ui-static-typekit-content",
+  "downloadName": "cq-ui-static-typekit-content-1.3.4.zip",
+  "version": "1.3.4"
+}
+{
+  "pid": "day/cq60/product:cq-ui-touch-optimized-content:2.6.68",
+  "path": "/etc/packages/day/cq60/product/cq-ui-touch-optimized-content-2.6.68.zip",
+  "name": "cq-ui-touch-optimized-content",
+  "downloadName": "cq-ui-touch-optimized-content-2.6.68.zip",
+  "version": "2.6.68"
+}
+{
+  "pid": "day/cq60/product:cq-ui-touch-optimized-content:2.6.199-CQ650-B0038",
+  "path": "/etc/packages/day/cq60/product/cq-ui-touch-optimized-content-2.6.199-CQ650-B0038.zip",
+  "name": "cq-ui-touch-optimized-content",
+  "downloadName": "cq-ui-touch-optimized-content-2.6.199-CQ650-B0038.zip",
+  "version": "2.6.199-CQ650-B0038"
+}
+{
+  "pid": "day/cq60/product:cq-ui-wcm-admin-content:1.1.70",
+  "path": "/etc/packages/day/cq60/product/cq-ui-wcm-admin-content-1.1.70.zip",
+  "name": "cq-ui-wcm-admin-content",
+  "downloadName": "cq-ui-wcm-admin-content-1.1.70.zip",
+  "version": "1.1.70"
+}
+{
+  "pid": "day/cq60/product:cq-ui-wcm-admin-content:1.1.157-CQ650-B0025",
+  "path": "/etc/packages/day/cq60/product/cq-ui-wcm-admin-content-1.1.157-CQ650-B0025.zip",
+  "name": "cq-ui-wcm-admin-content",
+  "downloadName": "cq-ui-wcm-admin-content-1.1.157-CQ650-B0025.zip",
+  "version": "1.1.157-CQ650-B0025"
+}
+{
+  "pid": "day/cq60/product:cq-ui-wcm-commons-content:1.1.124",
+  "path": "/etc/packages/day/cq60/product/cq-ui-wcm-commons-content-1.1.124.zip",
+  "name": "cq-ui-wcm-commons-content",
+  "downloadName": "cq-ui-wcm-commons-content-1.1.124.zip",
+  "version": "1.1.124"
+}
+{
+  "pid": "day/cq60/product:cq-ui-wcm-commons-content:1.1.287-CQ650-B0038",
+  "path": "/etc/packages/day/cq60/product/cq-ui-wcm-commons-content-1.1.287-CQ650-B0038.zip",
+  "name": "cq-ui-wcm-commons-content",
+  "downloadName": "cq-ui-wcm-commons-content-1.1.287-CQ650-B0038.zip",
+  "version": "1.1.287-CQ650-B0038"
+}
+{
+  "pid": "day/cq60/product:cq-ui-wcm-editor-content:1.1.290",
+  "path": "/etc/packages/day/cq60/product/cq-ui-wcm-editor-content-1.1.290.zip",
+  "name": "cq-ui-wcm-editor-content",
+  "downloadName": "cq-ui-wcm-editor-content-1.1.290.zip",
+  "version": "1.1.290"
+}
+{
+  "pid": "day/cq60/product:cq-ui-wcm-editor-content:1.1.517-CQ650-B0060",
+  "path": "/etc/packages/day/cq60/product/cq-ui-wcm-editor-content-1.1.517-CQ650-B0060.zip",
+  "name": "cq-ui-wcm-editor-content",
+  "downloadName": "cq-ui-wcm-editor-content-1.1.517-CQ650-B0060.zip",
+  "version": "1.1.517-CQ650-B0060"
+}
+{
+  "pid": "day/cq60/product:cq-wcm-content:6.5.80",
+  "path": "/etc/packages/day/cq60/product/cq-wcm-content-6.5.80.zip",
+  "name": "cq-wcm-content",
+  "downloadName": "cq-wcm-content-6.5.80.zip",
+  "version": "6.5.80"
+}
+{
+  "pid": "day/cq60/product:cq-wcm-content:6.5.209-CQ650-B0012",
+  "path": "/etc/packages/day/cq60/product/cq-wcm-content-6.5.209-CQ650-B0012.zip",
+  "name": "cq-wcm-content",
+  "downloadName": "cq-wcm-content-6.5.209-CQ650-B0012.zip",
+  "version": "6.5.209-CQ650-B0012"
+}
+{
+  "pid": "day/cq60/product:cq-workflow-console-content:1.4.62",
+  "path": "/etc/packages/day/cq60/product/cq-workflow-console-content-1.4.62.zip",
+  "name": "cq-workflow-console-content",
+  "downloadName": "cq-workflow-console-content-1.4.62.zip",
+  "version": "1.4.62"
+}
+{
+  "pid": "day/cq60/product:cq-workflow-console-content:1.4.100-CQ650-B0027",
+  "path": "/etc/packages/day/cq60/product/cq-workflow-console-content-1.4.100-CQ650-B0027.zip",
+  "name": "cq-workflow-console-content",
+  "downloadName": "cq-workflow-console-content-1.4.100-CQ650-B0027.zip",
+  "version": "1.4.100-CQ650-B0027"
+}
+{
+  "pid": "day/cq60/product:myspell-content:1.0.2",
+  "path": "/etc/packages/day/cq60/product/myspell-content-1.0.2.zip",
+  "name": "myspell-content",
+  "downloadName": "myspell-content-1.0.2.zip",
+  "version": "1.0.2"
+}
+{
+  "pid": "day/cq60/product:sites-franklin-content:2.1.42",
+  "path": "/etc/packages/day/cq60/product/sites-franklin-content-2.1.42.zip",
+  "name": "sites-franklin-content",
+  "downloadName": "sites-franklin-content-2.1.42.zip",
+  "version": "2.1.42"
+}
+{
+  "pid": "day/cq60/product:sites-graphql-content:0.0.1-CQ650-B0010",
+  "path": "/etc/packages/day/cq60/product/sites-graphql-content-0.0.1-CQ650-B0010.zip",
+  "name": "sites-graphql-content",
+  "downloadName": "sites-graphql-content-0.0.1-CQ650-B0010.zip",
+  "version": "0.0.1-CQ650-B0010"
+}
+{
+  "pid": "day/cq60/product:smartcontent-content:0.1.0",
+  "path": "/etc/packages/day/cq60/product/smartcontent-content-0.1.0.zip",
+  "name": "smartcontent-content",
+  "downloadName": "smartcontent-content-0.1.0.zip",
+  "version": "0.1.0"
+}
+{
+  "pid": "day/cq61/product:aem-screens-player-browser:2.3.116",
+  "path": "/etc/packages/day/cq61/product/aem-screens-player-browser-2.3.116.zip",
+  "name": "aem-screens-player-browser",
+  "downloadName": "aem-screens-player-browser-2.3.116.zip",
+  "version": "2.3.116"
+}
+{
+  "pid": "day/cq61/product:screens-client-pkg:1.4.10",
+  "path": "/etc/packages/day/cq61/product/screens-client-pkg-1.4.10.zip",
+  "name": "screens-client-pkg",
+  "downloadName": "screens-client-pkg-1.4.10.zip",
+  "version": "1.4.10"
+}
+{
+  "pid": "day/cq61/product:screens-client-pkg:1.4.12",
+  "path": "/etc/packages/day/cq61/product/screens-client-pkg-1.4.12.zip",
+  "name": "screens-client-pkg",
+  "downloadName": "screens-client-pkg-1.4.12.zip",
+  "version": "1.4.12"
+}
+{
+  "pid": "day/cq61/product:screens-core-pkg:1.4.172",
+  "path": "/etc/packages/day/cq61/product/screens-core-pkg-1.4.172.zip",
+  "name": "screens-core-pkg",
+  "downloadName": "screens-core-pkg-1.4.172.zip",
+  "version": "1.4.172"
+}
+{
+  "pid": "day/cq61/product:screens-core-pkg:1.4.174",
+  "path": "/etc/packages/day/cq61/product/screens-core-pkg-1.4.174.zip",
+  "name": "screens-core-pkg",
+  "downloadName": "screens-core-pkg-1.4.174.zip",
+  "version": "1.4.174"
+}
+{
+  "pid": "day/cq61/product:screens-dcc-content-pkg:1.4.136",
+  "path": "/etc/packages/day/cq61/product/screens-dcc-content-pkg-1.4.136.zip",
+  "name": "screens-dcc-content-pkg",
+  "downloadName": "screens-dcc-content-pkg-1.4.136.zip",
+  "version": "1.4.136"
+}
+{
+  "pid": "day/cq61/product:screens-dcc-content-pkg:1.4.142",
+  "path": "/etc/packages/day/cq61/product/screens-dcc-content-pkg-1.4.142.zip",
+  "name": "screens-dcc-content-pkg",
+  "downloadName": "screens-dcc-content-pkg-1.4.142.zip",
+  "version": "1.4.142"
+}
+{
+  "pid": "day/cq61/product:screens-we-retail-instore-pkg:1.2.32",
+  "path": "/etc/packages/day/cq61/product/screens-we-retail-instore-pkg-1.2.32.zip",
+  "name": "screens-we-retail-instore-pkg",
+  "downloadName": "screens-we-retail-instore-pkg-1.2.32.zip",
+  "version": "1.2.32"
+}
+{
+  "pid": "day/cq610/social/badging:cq-social-badging-basic-pkg:1.3.0",
+  "path": "/etc/packages/day/cq610/social/badging/cq-social-badging-basic-pkg-1.3.0.zip",
+  "name": "cq-social-badging-basic-pkg",
+  "downloadName": "cq-social-badging-basic-pkg-1.3.0.zip",
+  "version": "1.3.0"
+}
+{
+  "pid": "day/cq610/social/badging:cq-social-badging-pkg:1.3.1",
+  "path": "/etc/packages/day/cq610/social/badging/cq-social-badging-pkg-1.3.1.zip",
+  "name": "cq-social-badging-pkg",
+  "downloadName": "cq-social-badging-pkg-1.3.1.zip",
+  "version": "1.3.1"
+}
+{
+  "pid": "day/cq610/social/console:cq-social-console-pkg:1.6.68",
+  "path": "/etc/packages/day/cq610/social/console/cq-social-console-pkg-1.6.68.zip",
+  "name": "cq-social-console-pkg",
+  "downloadName": "cq-social-console-pkg-1.6.68.zip",
+  "version": "1.6.68"
+}
+{
+  "pid": "day/cq610/social/console:cq-social-console-pkg:1.6.88",
+  "path": "/etc/packages/day/cq610/social/console/cq-social-console-pkg-1.6.88.zip",
+  "name": "cq-social-console-pkg",
+  "downloadName": "cq-social-console-pkg-1.6.88.zip",
+  "version": "1.6.88"
+}
+{
+  "pid": "day/cq610/social/enablement:cq-social-enablement-pkg:2.3.44",
+  "path": "/etc/packages/day/cq610/social/enablement/cq-social-enablement-pkg-2.3.44.zip",
+  "name": "cq-social-enablement-pkg",
+  "downloadName": "cq-social-enablement-pkg-2.3.44.zip",
+  "version": "2.3.44"
+}
+{
+  "pid": "day/cq610/social/enablement:cq-social-enablement-pkg:2.3.70",
+  "path": "/etc/packages/day/cq610/social/enablement/cq-social-enablement-pkg-2.3.70.zip",
+  "name": "cq-social-enablement-pkg",
+  "downloadName": "cq-social-enablement-pkg-2.3.70.zip",
+  "version": "2.3.70"
+}
+{
+  "pid": "day/cq610/social/ideation:cq-social-ideation-pkg:1.2.23",
+  "path": "/etc/packages/day/cq610/social/ideation/cq-social-ideation-pkg-1.2.23.zip",
+  "name": "cq-social-ideation-pkg",
+  "downloadName": "cq-social-ideation-pkg-1.2.23.zip",
+  "version": "1.2.23"
+}
+{
+  "pid": "day/cq610/social/rdb-provider:cq-social-rdb-provider-pkg:1.3.14",
+  "path": "/etc/packages/day/cq610/social/rdb-provider/cq-social-rdb-provider-pkg-1.3.14.zip",
+  "name": "cq-social-rdb-provider-pkg",
+  "downloadName": "cq-social-rdb-provider-pkg-1.3.14.zip",
+  "version": "1.3.14"
+}
+{
+  "pid": "day/cq610/social/reporting:cq-social-reporting-pkg:1.3.4",
+  "path": "/etc/packages/day/cq610/social/reporting/cq-social-reporting-pkg-1.3.4.zip",
+  "name": "cq-social-reporting-pkg",
+  "downloadName": "cq-social-reporting-pkg-1.3.4.zip",
+  "version": "1.3.4"
+}
+{
+  "pid": "day/cq610/social/scoring:cq-social-scoring-basic-pkg:1.3.0",
+  "path": "/etc/packages/day/cq610/social/scoring/cq-social-scoring-basic-pkg-1.3.0.zip",
+  "name": "cq-social-scoring-basic-pkg",
+  "downloadName": "cq-social-scoring-basic-pkg-1.3.0.zip",
+  "version": "1.3.0"
+}
+{
+  "pid": "day/cq610/social/scoring:cq-social-scoring-pkg:2.3.2",
+  "path": "/etc/packages/day/cq610/social/scoring/cq-social-scoring-pkg-2.3.2.zip",
+  "name": "cq-social-scoring-pkg",
+  "downloadName": "cq-social-scoring-pkg-2.3.2.zip",
+  "version": "2.3.2"
+}
+{
+  "pid": "day/cq620/social/social-notifications:cq-social-notifications-pkg:1.3.16",
+  "path": "/etc/packages/day/cq620/social/social-notifications/cq-social-notifications-pkg-1.3.16.zip",
+  "name": "cq-social-notifications-pkg",
+  "downloadName": "cq-social-notifications-pkg-1.3.16.zip",
+  "version": "1.3.16"
+}
+{
+  "pid": "day/cq63/product:cq-experience-fragments-content:1.2.86",
+  "path": "/etc/packages/day/cq63/product/cq-experience-fragments-content-1.2.86.zip",
+  "name": "cq-experience-fragments-content",
+  "downloadName": "cq-experience-fragments-content-1.2.86.zip",
+  "version": "1.2.86"
+}
+{
+  "pid": "day/cq63/product:cq-experience-fragments-content:1.2.161-CQ650-B0014",
+  "path": "/etc/packages/day/cq63/product/cq-experience-fragments-content-1.2.161-CQ650-B0014.zip",
+  "name": "cq-experience-fragments-content",
+  "downloadName": "cq-experience-fragments-content-1.2.161-CQ650-B0014.zip",
+  "version": "1.2.161-CQ650-B0014"
+}
