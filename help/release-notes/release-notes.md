@@ -628,9 +628,9 @@ To reduce log volume, set the logging level for `com.adobe.util.XMLSecurityUtil`
 
 The following text documents list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
 
-* [List of OSGi bundles included in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
