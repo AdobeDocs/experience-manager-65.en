@@ -280,7 +280,6 @@ The Subtitles and Audio Tracks dropdown now shows Arabic as a supported language
 
 ### [!DNL Forms]{#forms-6525}
 
-#### Forms {#forms-6525}
 * Interactive Communications preview now loads content correctly after AEM Forms Service Pack 6.5.24.0. Text no longer loads slowly with missing spaces, so preview matches authored content and remains easier to read. (FORMS-25346)
 * Validation details now appear in Adaptive Forms core components after you configure a Validation Pattern and save the form. The pattern remains visible in the authoring interface. (FORMS-25236)
 * Document generation now handles nested Extensible Forms Description Language (XDP) fragments correctly in AEM Forms 6.5 Service Pack 23 and AEM Forms Service Pack 6.5.24.0 environments. (FORMS-25234)
@@ -579,7 +578,7 @@ The preferred editors for managing headless content in AEM are now:
   * The hotspot in a Dynamic Media interactive image is not visible when previewing the asset through the Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for register change to complete unregistered.
 
-* Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the ```org.apache.servicemix.bundles.rhino``` bundle has a new hoisting behavior. Scripts that use the strict mode (```use strict;```) have to declare their correct variables. Otherwise, they do not get run, and end up throwing a runtime error.
+* Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the `org.apache.servicemix.bundles.rhino` bundle has a new hoisting behavior. Scripts that use the strict mode (`use strict;`) have to declare their correct variables. Otherwise, they do not get run, and end up throwing a runtime error.
  
 * Installing tagging related out-of-the-box content by way of an official update package resets the languages property of the `/content/cq:tags` node to default. This action is true for Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, patches, and so on. Therefore, it is necessary to add it from the properties before installation.
 
