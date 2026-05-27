@@ -312,8 +312,8 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
 
 >[!NOTE]
 >
-> * From AEM Forms Service Pack 6.5.25.0 onwards, JBoss&reg; Enterprise Application Platform (EAP) 7.4.23 is supported. You can download JBoss&reg; EAP 7.4.23 from the Software Distribution Portal using this [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
->* IBM&reg; WebSphere&reg; clusters are only supported in Network Deployment editions.
+>- From AEM Forms Service Pack 6.5.25.0 onwards, JBoss&reg; Enterprise Application Platform (EAP) 7.4.23 is supported. You can download JBoss&reg; EAP 7.4.23 from the Software Distribution Portal using this [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
+>- IBM&reg; WebSphere&reg; clusters are only supported in Network Deployment editions.
 
 ### Server operating systems {#server-operating-systems}
 
@@ -667,10 +667,9 @@ For additional requirements see:
 ### Designer {#designer}
 
 
-- Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, Microsoft&reg; Windows&reg; 10, or Windows&reg; 11
+- Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, Microsoft&reg; Windows&reg; 10, Windows&reg; 11, or Microsoft&reg; Windows Terminal Server 2025
 - 1 GHz or faster processor with support for PAE, NX, and SSE2.
 - 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
-    @@ -729,49 +601,45 @@ For additional requirements see:
 - Administrative privileges to install Designer
 - Microsoft&reg; Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
 
@@ -911,6 +910,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | -------------- | --------------- | ------------------- |
 | JBoss&reg; Enterprise Application Platform (EAP) 7.4.23 | JBoss&reg; Enterprise Application Platform (EAP) 7.4.10 | |
 | IBM&reg; Content Manager Client 8.7 |  IBM&reg; Content Manager Client 8.5 | |
+| Microsoft&reg; Windows Terminal Server 2025 | | |
 
 
 ### Release 6.5.24.0 (November 26, 2025)
