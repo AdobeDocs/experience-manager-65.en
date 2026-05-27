@@ -303,17 +303,17 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
   <td>Service pack and critical updates</td>
  </tr>
  <tr>
-  <td><p>JBoss&reg; Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
+  <td><p>JBoss&reg; Enterprise Application Platform (EAP) 7.4.23 <sup>[2] [3] [7]</sup> </p> </td>
   <td><p>A: Supported</p> </td>
   <td><p>Patches and cumulative patches for the supported EAP version</p> </td>
  </tr>
 </tbody>
 </table>
 
-
 >[!NOTE]
 >
->IBM&reg; WebSphere&reg; clusters are only supported in Network Deployment editions.
+> * From AEM Forms Service Pack 6.5.25.0 onwards, JBoss&reg; Enterprise Application Platform (EAP) 7.4.23 is supported. You can download JBoss&reg; EAP 7.4.23 from the Software Distribution Portal using this [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
+>* IBM&reg; WebSphere&reg; clusters are only supported in Network Deployment editions.
 
 ### Server operating systems {#server-operating-systems}
 
@@ -483,12 +483,8 @@ In addition, consider the following points while choosing software for Adobe AEM
   <td>5.5.2</td>
  </tr>
  <tr>
-  <td>IBM&reg; Content Manager Server (Deprecated) </td>
-  <td>8.5 Fix pack 2</td>
- </tr>
-  <tr>
-  <td> IBM&reg; Content Manager Client (Deprecated)</td>
-  <td>8.5 </td>
+  <td>IBM&reg; Content Manager Client</td>
+  <td>8.7</td>
  </tr>
   <td>Microsoft&reg; Sharepoint </td>
   <td>2019<br /> </td>
@@ -908,6 +904,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 
 -->
+
+### Release 6.5.25.0 (May 28, 2026)
+
+| Added Support | Removed Support | Deprecated Support |
+| -------------- | --------------- | ------------------- |
+| JBoss&reg; Enterprise Application Platform (EAP) 7.4.23 | JBoss&reg; Enterprise Application Platform (EAP) 7.4.10 | |
+| IBM&reg; Content Manager Client 8.7 |  IBM&reg; Content Manager Client 8.5 | |
+
 
 ### Release 6.5.24.0 (November 26, 2025)
 
