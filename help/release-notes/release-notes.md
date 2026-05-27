@@ -45,6 +45,8 @@ OLD DOWNLOAD URL
 
 * [Hierarchical bookmarks for XFA-based PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service and AEM Forms Designer now generate structured bookmark hierarchies in static interactive and flat XFA-based PDFs. Bookmarks follow heading levels (H1–H6) set in the Accessibility properties for text boxes, so H2–H6 entries nest under the correct parent instead of appearing in parallel. 
 
+* [Form-level details in JEE transaction logs](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms on JEE now records form-level details in `transaction_log.log` for each transaction, in addition to existing service and operation information. Administrators can correlate transaction reporting data with specific forms when analyzing submissions, renditions, and conversions. (FORMS-21574)
+
 * [Updated Supported Platform Matrix](/help/forms/using/aem-forms-jee-supported-platforms.md): AEM Forms on JEE Service Pack 6.5.25.0 adds support for compatibility with the following newer technologies:
     * JBoss&reg; Enterprise Application Platform (EAP) 7.4.23
     * IBM&reg; Content Manager Client 8.7
