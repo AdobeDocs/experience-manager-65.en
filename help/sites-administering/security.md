@@ -38,9 +38,9 @@ Their primary purpose is to simplify the maintenance process by reducing the num
 * a role within the application; such as someone who is allowed to surf the content, or someone who is allowed to contribute content.
 * your own organization; you may want to extend the roles to differentiate between contributors from different departments when they are restricted to different branches in the content tree.
 
-Therefore groups tend to remain stable, whereas users come and go more frequently.
+Therefore, groups tend to remain stable, whereas users come and go more frequently.
 
-With planning and a clean structure, the use of groups can reflect your structure, giving you a clear overview and an efficient mechanism for updates.
+Through planning and a clean structure, the use of groups can reflect your structure, giving you a clear overview and an efficient mechanism for updates.
 
 ### Built-in Users and Groups {#built-in-users-and-groups}
 
@@ -70,13 +70,13 @@ The following tables list each item together with:
   <tr>
    <td><p>anonymous</p> <p> </p> </td>
    <td>User</td>
-   <td><p>Holds the default rights for unauthenticated access to an instance. Per default, this account holds the minimum access rights.</p> <p>If you accidentally delete this account, it is re-created on startup. It cannot be permanently deleted, but it can be disabled.</p> </td>
+   <td><p>Holds the default rights for unauthenticated access to an instance. By default, this account holds the minimum access rights.</p> <p>If you accidentally delete this account, it is re-created on startup. It cannot be permanently deleted, but it can be disabled.</p> </td>
    <td>Avoid deleting or disabling this account, as it negatively impacts the functioning of author instances. If there are security requirements that mandate you to delete it, make sure you properly test the effects it has on your systems first.</td>
   </tr>
   <tr>
    <td><p>author</p> <p>Default password: author</p> </td>
    <td>User</td>
-   <td><p>An author account allowed to write to /content. Encompasses contributor and surfer privileges.</p> <p>Can be used as a webmaster as it has access to the entire /content tree.</p> <p>This account is not a built-in user, but another Geometrixx demo user</p> </td>
+   <td><p>An author account allowed to write to /content. Encompasses contributor and surfer privileges.</p> <p>Can be used as a webmaster,  as it has access to the entire /content tree.</p> <p>This account is not a built-in user, but another Geometrixx demo user.</p> </td>
    <td><p>Adobe recommends that either the account is deleted completely, or the default password is changed.</p> <p>Preferably on installation, though it can be done afterwards.</p> </td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@ The following tables list each item together with:
   <tr>
    <td>everyone</td>
    <td>Group</td>
-   <td><p>Every user in AEM is a member of the group everyone, even though you may not see the group or the membership relation in all tools.</p> <p>This group can be thought of as the default rights as it can be used to apply permissions for everyone, even users that will be created in the future.</p> </td>
+   <td><p>Every user in AEM is a member of the group everyone, even though you may not see the group or the membership relation in all tools.</p> <p>This group can be thought of as the default rights, as it can be used to apply permissions for everyone, even users that will be created in the future.</p> </td>
    <td><p>Do not modify or delete this group.</p> <p>Modifying this account has additional security implications.</p> </td>
   </tr>
   <tr>
@@ -167,7 +167,7 @@ Actions can be performed on a page (resource). For each page in the hierarchy, y
     <ul>
      <li>modify existing content on the page and on any child pages.</li>
      <li>create paragraphs on the page or on any child page.</li>
-    </ul> <p>At the JCR level, users can edit a resource by editing its properties, locking, versioning, nt-modifications, and they have complete write permission on nodes defining a jcr:content child node. For example, cq:Page, nt:file, cq:Asset.</p> </td>
+    </ul> <p>At the JCR level, users can edit a resource by editing its properties, locking, versioning, nt-modifications, and they have complete write permission on nodes defining a jcr:content child node. For example, cq:Page, nt:file, dam:Asset.</p> </td>
   </tr>
   <tr>
    <td>Create</td>
@@ -267,7 +267,7 @@ When you hover over the asterisk or exclamation mark, a tooltip provides more de
   </tr>
   <tr>
    <td>Lower part</td>
-   <td>Lists the noneffective entries that can effect somewhere else in the tree (as indicated by a special attribute present with the corresponding ACE limiting the scope of the entry). Alternatively, it is an entry whose effect is revoked by another entry defined at the given path, or at an ancestor node.</td>
+   <td>Lists the noneffective entries that can effect somewhere else in the tree (as indicated by a special attribute present with the corresponding ACE limiting the scope of the entry). Alternatively, it is an entry whose effect is revoked by another entry defined at the given path or at an ancestor node.</td>
   </tr>
  </tbody>
 </table>
@@ -282,14 +282,14 @@ The following are recommendations about managing access control lists:
 
 * Do not assign permissions directly to users. Assign them only to groups.
 
-  Doing so simplifies the maintenance, as the number of groups is much smaller than the number of users, and also less volatile.
+  Doing so simplifies the maintenance, as the number of groups is much smaller and less volatile than the number of users.
 
 * If you want a group/user to be able only to modify pages, do not grant them create or deny rights. Only grant them modify and read rights.
-* Use Deny sparingly. As far as possible use only Allow.
+* Use Deny sparingly. As far as possible, use only Allow.
 
-  Using deny can cause unexpected effects if the permissions are applied in a different order than the order expected. If a user is a member of more than one group, the Deny statements from one group may cancel the Allow statement from another group or the opposite way. It is hard to keep an overview when such a thing happens and can easily lead to unforeseen results, whereas Allow assignments do not cause such conflicts.
+  Using deny can cause unexpected effects if the permissions are applied in a different order from the order expected. If a user is a member of more than one group, the Deny statements from one group may cancel the Allow statement from another group or the opposite way. It is hard to keep an overview when such a thing happens and can easily lead to unforeseen results, whereas Allow assignments do not cause such conflicts.
 
-  Adobe recommends that you work with Allow rather than Deny see [Best Practices](#best-practices).
+  Adobe recommends that you work with Allow rather than Deny, see [Best Practices](#best-practices).
 
 Before modifying either permission, be sure you understand how they work and inter-relate. See the CRX documentation that illustrates how AEM WCM [evaluates access rights](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), and examples on setting up access control lists.
 
@@ -357,7 +357,7 @@ This functionality lets impersonator accounts complete tasks as if they were usi
 
 >[!CAUTION]
 >
->Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked as the user who was impersonated or a user with administrator privileges.
+>Locking a page can be performed when impersonating a user. However, a page locked in this way can only then be unlocked as the user who was impersonated or a user with administrator privileges.
 >
 >Pages cannot be unlocked by impersonating the user who locked the page.
 
@@ -414,7 +414,7 @@ The tabs provide access to various configurations:
 |Properties|Lists information about the user or group that can include email information, a description, and name information. Also lets you change a user's password. See [Creating Users and Groups](#creating-users-and-groups), [Modifying User and Group Properties](#modifying-user-and-group-properties) and [Changing a User Password](#changing-a-user-password).|
 |Groups|Lists all groups that the selected user or group belongs to. You can assign the selected user or groups to additional groups or remove them from groups. See [Groups](#adding-users-or-groups-to-a-group).|
 |Members|Available for groups only. Lists the members of a particular group. See [Members](#members-adding-users-or-groups-to-a-group).|
-|Permissions|You can allocate permissions to a user or group. Lets you control the following:<ul><li>Permissions related to particular pages/nodes. See [Setting Permissions](#setting-permissions). </li><li>Permissions related to creating and deleting pages and hierarchy modification. ??? lets you [allocate privileges](#settingprivileges), such as hierarchy modification, which lets you create and delete pages,</li><li>Permissions related to [replication privileges](#setting-replication-privileges) (usually from author to publish) according to a path.</li></ul>|
+|Permissions|You can allocate permissions to a user or group. Lets you control the following:<ul><li>Permissions related to particular pages/nodes. See [Setting Permissions](#setting-permissions). </li><li>Permissions related to creating and deleting pages and hierarchy modification. Lets you [allocate privileges](#settingprivileges), such as hierarchy modification, which lets you create and delete pages,</li><li>Permissions related to [replication privileges](#setting-replication-privileges) (usually from author to publish) according to a path.</li></ul>|
 |Impersonators|Lets another user impersonate the account. Useful when you need a user to act on behalf of another user. See [Impersonating Users](#impersonating-another-user).|
 |Preferences|Sets [preferences for the group or user](#setting-user-and-group-preferences). For example, language preferences.|
 
@@ -495,9 +495,9 @@ Use the following procedure to modify a user's password.
 >
 >If you are using AEM Forms on JEE, do not use below instructions to change password rather use AEM Forms on JEE Admin Console (/adminui) to change the password.
 
-1. In the **Security** console, double-click the user name you want to change the password for.
+1. In the **Security** console, double-click the user name whose password you want to change.
 1. Click the **Properties** tab (if not already active).
-1. Click **Set Password**. The Set Password window opens where you can change your password.
+1. Click **Set Password**. The Set Password window opens where you can change the password.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
 
@@ -538,7 +538,7 @@ The **Members** tab only works for groups and shows you which users and groups b
 
 ### Adding Users or Groups while Adding Permissions {#adding-users-or-groups-while-adding-permissions}
 
-To add members to a group at in a certain path:
+To add members to a group at a certain path:
 
 1. Double-click the name of the group or user that you want to add users to.
 
@@ -668,7 +668,7 @@ In the search box, you can do the following:
 |Down arrow key|Starts the search again.|
 |Enter (Return) key|Selects a subnode and loads it in the tree grid|
 
-* FullText search - If the search string does not start with a "/" then a fulltext search is executed on all the nodes under the path "/content."
+* FullText search - If the search string does not start with a "/", then a fulltext search is executed on all the nodes under the path "/content."
 
 ![cqsecurityfulltextsearch](assets/cqsecurityfulltextsearch.png)
 
