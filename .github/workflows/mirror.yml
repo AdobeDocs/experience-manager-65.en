@@ -1,0 +1,18 @@
+name: Mirror
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  mirror-to-public:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # TODO(maintainer): If your org uses a different reusable workflow repo, replace Adobe-Enterprise-Docs/workflows.
+    # TODO(maintainer): Pin to a commit SHA for stronger supply-chain security instead of @main.
+    uses: Adobe-Enterprise-Docs/workflows/.github/workflows/mirror-to-public.yml@main
+    # TODO(maintainer): Ensure org-level GitHub App secrets are available (ADOBEDOCS_MIRRORING_APP_ID and ADOBEDOCS_MIRRORING_APP_PRIVATE_KEY).
+    secrets: inherit
+    # TODO(maintainer): If public target differs from AdobeDocs/<this-repo-name>, pass:
+    # with:
+    #   mirror-target-repository: <owner>/<repo>
