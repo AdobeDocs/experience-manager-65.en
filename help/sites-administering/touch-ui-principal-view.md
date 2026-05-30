@@ -76,7 +76,7 @@ After the list of privileges has been selected, the user can choose the Permissi
 
 ### Using Restrictions {#using-restrictions}
 
-In addition to the list of privileges and the Permission Type on a given path, this screen also lets you add restrictions for fine grained access control as shown below:
+In addition to the list of privileges and the Permission Type on a given path, this screen also lets you add restrictions for fine-grained access control as shown below:
 
 ![Add restrictions](assets/image2019-3-21_1-4-14.png)
 
@@ -88,7 +88,7 @@ Restrictions can be added as shown below by choosing the restriction type, enter
 
 ![Add the restriction type](assets/sapte-1.png) ![Add the restriction type](assets/opt-1.png)
 
-The new ACE is reflected in the Access Control List as shown below. Note that `jcr:write` is an aggregate privilege that includes `jcr:removeNode` that was added above, but is not shown below as its covered under `jcr:write`.
+The new ACE is reflected in the Access Control List as shown below. Note that `jcr:write` is an aggregate privilege that includes `jcr:removeNode` that was added above, but is not shown below as it is covered under `jcr:write`.
 
 ### Editing ACEs {#editing-aces}
 
@@ -106,7 +106,7 @@ Here the `addChildNodes` privilege is added for **dam-users** on the given path.
 
 ![Add privilege](assets/image2019-3-21_0-45-35.png)
 
-Changes can be saved by clicking the **Save** button on top right, and the changes are reflected in the new permissions for **dam-users** as shown below:
+Changes can be saved by clicking the **Save** button on top right, and they are reflected in the new permissions for **dam-users** as shown below:
 
 ![Save changes](assets/zece-1.png)
 
