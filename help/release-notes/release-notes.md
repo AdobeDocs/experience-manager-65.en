@@ -18,7 +18,7 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 >Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 -->
 
-## Release information {#release-information}
+## Release summary {#release-information}
 
 | Product | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
@@ -27,14 +27,15 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | Date     | May 21, 2026 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
-<!--
-OLD DOWNLOAD URL
-(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip)
--->
+Experience Manager 6.5.25.0 includes new features, key customer-requested enhancements, and bug fixes. It also includes performance, stability, and security improvements built on the 6.5 foundation available since April 2019.
 
-## What is included in [!DNL Experience Manager] 6.5.25.0 {#what-is-included-in-aem-6525}
+This service pack release delivers 275 back-ports across Sites, Assets, and Foundation, including critical bug fixes and security hardening. The release also advances accessibility across Sites authoring with extensive keyboard navigation, focus management, ARIA semantics, color-contrast improvements, and touch-target sizing that align with WCAG standards.
 
-[!DNL Experience Manager] 6.5.25.0 includes new features, key customer-requested enhancements, and bug fixes. It also includes performance, stability, and security improvements released since the initial availability of 6.5 in April 2019. [Install this Service Pack](#install) on [!DNL Experience Manager] 6.5.
+Crosswalk is available by default in this release, eliminating the need for a separate package or configuration after installation.
+
+Security back-ports address XSS vulnerabilities and improve shared asset metadata handling. 
+
+Content Fragments and the GraphQL API also receive reliability improvements, covering embedded image references, persisted-query handling, and editor localization.
 
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
@@ -229,7 +230,7 @@ AEM now loads the correct templates when authors create Experience Fragment vari
 * Page Policy descriptions now render correctly in the Template Editor. Users can read the full Default CSS Classes guidance without truncated text in the Styles tab. (SITES-29724)
 * The Template Editor now displays a localized error when an author tries to drag a component onto a deleted template. The message no longer appears as an untranslated "while processing" string. (SITES-19313)
 * The "Target" label in the Teaser Configure window now appears with localized text. The Hyperlink section no longer shows the English string in non-English locales. (SITES-18622)
-* The Start Workflow dialog box in the Page Editor now displays localized workflow action labels. Authors no longer see English strings for workflow options such as approval, publish, request, and unpublish actions. (SITES-18103)
+* The Start Workflow dialog box in the Page Editor now displays localized workflow action labels. Authors no longer see English strings for workflow options. Options include approval, publish, request, and unpublish actions. (SITES-18103)
 * The Parent drop-down menu in the Separator edit panel now displays localized strings without truncation. Authors can review the full label when they configure the component. (SITES-17480)
 * The Page Editor now displays localized labels for "Full Width" and "Fixed Width" in the Container component Styles menu. Authors who use supported locales no longer see those strings in English. (SITES-17478)
 * Authors can now read the full tooltip in the Navigation properties area of the Templates console. The UI keeps the tooltip aligned and prevents text truncation during template editing. (SITES-15480)
@@ -374,7 +375,7 @@ Translation project status counts now update correctly after upgrade. Authors ca
 #### User interface{#foundation-ui-6525}
 
 * Manually entered Sites console URLs now resolve to the intended page or folder path. The content hierarchy remains consistent after refresh and no longer falls back to the base URL. (NPR-43688)
-* The CRX Package Manager test suite no longer fails after an AEM 6.5 LTS SP1 instance upgrades to LTS SP2. The thumbnail list servlet test now completes as expected. (NPR-43534)
+* The Adobe CRX Package Manager test suite no longer fails after an AEM 6.5 LTS SP1 instance upgrades to LTS SP2. The thumbnail list servlet test now completes as expected. (NPR-43534)
 
 * The Sites console content tree now loads consistently after each browser refresh. Authors no longer see a blank left rail or a "There is no item" message when content exists. (NPR-43442)
 
@@ -631,13 +632,13 @@ The following issues have a hotfix available for download and installation. You 
     3. Restart your AEM Server. 
 
 * **FORMS-23703** When the `contains` rule is configured without a default value, the Server Side validation for an Adaptive Form fails. You can install the latest version of [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) to fix the issue.
-* **GRANITE-63681** Form Data Model connectors may fail to authenticate because the required keywords and regex pattern are not allowed by default. To resolve the issue, download and install the hotfix from the [link](/help/release-notes/aem-forms-hotfix.md).
+* **GRANITE-63681** The default system configuration blocks required keywords and regex patterns, which prevents Form Data Model connectors from authenticating. To resolve the issue, download and install the hotfix from the [link](/help/release-notes/aem-forms-hotfix.md).
 * **FORMS-23979**  HTML-to-PDF conversion (PDFG) may experience intermittent timeouts. A newer version of the Forms add-on for SP24 was subsequently released that includes the fix. If you encounter this issue, update your environment to the [latest released Forms add-on for 6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 * **FORMS-23717** After upgrading to **AEM Forms 6.5.25.0**, `server.log` and `error.log` can be flooded with repeated WARN messages such as *Secure parser factory creation failed* or *Security attribute ... is not supported*. Logs may grow by about **5–10 lines per second** (hundreds of MB per hour), which can fill disk and block production rollout. 
 
 To reduce log volume, set the logging level for `com.adobe.util.XMLSecurityUtil` to `ERROR` in your application server config or by way of the JVM argument `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. This functionality only hides the messages and does not fix the underlying cause.
 
-* **FORMS-23875** In Form Data Model search, an HTML tag is displayed in the UI even when a relevant entity is not present. To resolve the issue, download and install the hotfix from [the link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
+* **FORMS-23875** In Form Data Model search, the UI displays an HTML tag even when a relevant entity is absent. To resolve the issue, download and install the hotfix from [the link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
