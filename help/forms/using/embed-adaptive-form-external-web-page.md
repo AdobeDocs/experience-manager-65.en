@@ -122,9 +122,9 @@ Add the following snippet to the embedding web page, along with the existing `gu
 window.guideBridge.connect(function () {
     window.guideBridge.registerConfig("baseUrl", "https://publish.example.com");
 });
-```
+``` 
 
-Replace `https://publish.example.com` with the publish URL of the AEM Forms Server.
+Replace `https://publish.example.com` with the publish URL of the AEM Forms Server. 
 
 With this configuration, a request URL similar to the following example:
 
