@@ -122,9 +122,9 @@ Add the following snippet to the embedding web page, along with the existing `gu
 window.guideBridge.connect(function () {
     window.guideBridge.registerConfig("baseUrl", "https://publish.example.com");
 });
-```
+``` 
 
-Replace `https://publish.example.com` with the publish URL of the AEM Forms Server.
+Replace `https://publish.example.com` with the publish URL of the AEM Forms Server. 
 
 With this configuration, a request URL similar to the following example:
 
@@ -214,4 +214,4 @@ When you use a reverse proxy or embed the adaptive form without the GuideBridge 
 1. Locate and open the **Apache Sling Referrer Filter** configuration.
 1. In the Allowed Hosts field, specify the domain where the web page resides. It enables the host to make POST requests to the AEM server. You can also use regular expression to specify a series of external application domains.
 
->[!ENDTABS]
+>[!ENDTABS]  
