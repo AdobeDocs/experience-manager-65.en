@@ -33,7 +33,7 @@ Perform the following steps before embedding an adaptive form to an external web
 
 You can embed an adaptive form by inserting a few lines of JavaScript in the web page. The API in the code sends an HTTP request to the AEM server for adaptive form resources and injects the adaptive form in the specified form container.
 
-To embed the adaptive form:
+To embed the Adaptive Form:
 
 1. Create a webpage on your website with the following code:
 
@@ -138,7 +138,7 @@ is sent to the AEM server as:
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-When the AEM server and the web page are on different domains, you must also configure CORS on the AEM publish instance. Perform the steps listed in section, [enable AEM Forms to serve adaptive forms to a cross-domain site](#cross-site).
+When the AEM server and the web page are on different domains, you must also configure CORS on the AEM publish instance. Perform the steps listed in section, [enable AEM Forms to serve adaptive forms to a cross-domain site](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site).
 
 ## Sample topology {#sample-topology}
 
@@ -215,3 +215,4 @@ When you use a reverse proxy or embed the adaptive form without the GuideBridge 
 1. In the Allowed Hosts field, specify the domain where the web page resides. It enables the host to make POST requests to the AEM server. You can also use regular expression to specify a series of external application domains.
 
 >[!ENDTABS]  
+
