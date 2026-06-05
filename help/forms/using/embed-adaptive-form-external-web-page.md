@@ -33,7 +33,7 @@ Perform the following steps before embedding an adaptive form to an external web
 
 You can embed an adaptive form by inserting a few lines of JavaScript in the web page. The API in the code sends an HTTP request to the AEM server for adaptive form resources and injects the adaptive form in the specified form container.
 
-To embed the adaptive form:
+To embed the Adaptive Form:
 
 1. Create a webpage on your website with the following code:
 
