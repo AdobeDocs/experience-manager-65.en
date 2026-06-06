@@ -261,7 +261,7 @@ The actual actions available to the user are shown as appropriate and not all ac
 
 * **Paste**
 
-  This pastes the component from the clipboard to the page. Whether the original remains depends on whether you used copy or cut.
+  This pastes the component from the clipboard to the page. The original remains depending on whether you used copy or cut.
 
     * You can paste to the same page or to a different page.
     * The pasted item is pasted above the item where you select the paste action.
@@ -337,7 +337,7 @@ The exact edit options depend on the component. For some components, [all action
 
 ### Drag and Drop Assets into Component {#drag-and-drop-assets-into-component}
 
-For specific component types you can drag and drop assets from the asset browser directly into the component to update the content:
+For specific component types, you can drag and drop assets from the asset browser directly into the component to update the content:
 
 | **Asset Type** |**Component Type** |
 |---|---|
@@ -366,7 +366,7 @@ For example, the **Text** component:
 To move a paragraph component:
 
 1. Select the paragraph to be moved with either select-and-hold or click-and-hold.
-1. Drag the paragraph to the new location. AEM indicates where the paragraph can be deposited. Drop it in your desired location.
+1. Drag the paragraph to the new location. AEM indicates where the paragraph can be placed. Drop it in your desired location.
 
    ![moving paragraph component](assets/screen_shot_2018-03-22at121821.png)
 
@@ -475,7 +475,7 @@ There are two options for previewing a page:
 
 >[!NOTE]
 >
->* Links in the content are visible, but not accessible in Edit mode.
+>* Links in the content are visible but not accessible in Edit mode.
 >* Use either of the preview options if you want to navigate using your links.
 >* Use the [keyboard shortcut](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
 >
@@ -518,13 +518,13 @@ A page can be locked from either:
     1. To open the menu, select the **Page Information** icon.
     1. Select the **Lock Page** option.
 
-Once locked the console view information is updated and when editing a lock symbol is shown in the toolbar.
+Once locked, the console view information is updated and, when editing, a lock symbol is shown in the toolbar.
 
 ![Lock symbol](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
+>Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However, a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 >
 >Pages cannot be unlocked by impersonating the user who locked the page.
 
@@ -538,7 +538,7 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 
 >[!CAUTION]
 >
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
+>Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However, a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 >
 >Pages cannot be unlocked by impersonating the user who locked the page.
 
@@ -593,4 +593,4 @@ Form fields that form components render are not meant to have values specified w
 
 >[!NOTE]
 >
->The history of changes to files and images lasts for a minimum of ten hours. Beyond this time however, the reversal of changes is not guaranteed. Your administrator can change the default time of ten hours.
+>The history of changes to files and images lasts for a minimum of ten hours. Beyond this time, however, the reversal of changes is not guaranteed. Your administrator can change the default time of ten hours.
