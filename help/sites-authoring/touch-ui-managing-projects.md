@@ -21,9 +21,9 @@ Using the console, you can create a project, associate resources with your proje
 
 ## Access Requirements {#access-requirements}
 
-Projects a standard AEM feature and do not require any additional setup.
+Projects are a standard AEM feature and do not require any additional setup.
 
-However for users in projects to see other users/groups while using Projects such as when creating projects, creating tasks/workflows, or viewing and managing the team, those users need to have read access on `/home/users` and `/home/groups`.
+However, for users in projects to be able to see other users/groups while using Projects such as when creating projects, creating tasks/workflows, or viewing and managing the team, those users need to have read access on `/home/users` and `/home/groups`.
 
 The easiest way to do this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
 
@@ -46,7 +46,7 @@ The procedure for creating a project is the same for all project templates. The 
 
 ### Associating Resources with Your Project {#associating-resources-with-your-project}
 
-Projects enable you to group resources into one entity to manage them as a whole. Therefore you need to associate resources to your project. These resources are grouped within the project as **Tiles**. The types of resources you can add are described in [Project Tiles](/help/sites-authoring/projects.md#project-tiles).
+Projects enable you to group resources into one entity to manage them as a whole. Therefore, you need to associate resources to your project. These resources are grouped within the project as **Tiles**. The types of resources you can add are described in [Project Tiles](/help/sites-authoring/projects.md#project-tiles).
 
 To associate resources with your project:
 
@@ -55,7 +55,7 @@ To associate resources with your project:
 
    ![Add tile](assets/project-add-tile.png)
 
-1. Click **Create**. Your resource is linked to your project and from now on you can access it from your project.
+1. Click **Create**. Your resource is linked to your project and, from now on, you can access it from your project.
 
 ### Adding Items to a Tile {#adding-items-to-a-tile}
 
@@ -91,11 +91,11 @@ To open a tile so that you can view or modify items:
 
 ### Viewing a Project Timeline {#viewing-a-project-timeline}
 
-The project timeline provides information on when assets in the project were last used. To view the project timeline follow these steps.
+The project timeline provides information on when assets in the project were last used. To view the project timeline, follow these steps.
 
 1. In the **Projects** console, click **Timeline** in the rail selector at the top-left of the console.
    ![Selecting timeline mode](assets/projects-timeline-rail.png)
-2. In the console select the project for which you wish to view its timeline.
+2. In the console, select the project for which you wish to view its timeline.
    ![Project timeline view](assets/project-timeline-view.png)
 
 Assets are displayed in the rail. Use the rail selector to return to normal view when finished.
@@ -106,7 +106,7 @@ To toggle between your active and [inactive projects,](#making-projects-inactive
 
 ![Toggle active projects icon](assets/projects-toggle-active.png)
 
-By default the console shows active projects. Click the **Toggle Active Projects** icon once to switch to viewing inactive projects. Click it again to switch back to active projects.
+By default, the console shows active projects. Click the **Toggle Active Projects** icon once to switch to viewing inactive projects. Click it again to switch back to active projects.
 
 ## Organizing Projects {#organizing-projects}
 
@@ -116,7 +116,7 @@ There are several options available to help organize your projects to keep the *
 
 You can create folders in the **Projects** console to group and organize similar projects.
 
-1. In the **Projects** console click **Create** and then **Create Folder**.
+1. In the **Projects** console, click **Create** and then **Create Folder**.
 
    ![Create folder](assets/project-create-folder.png)
 
@@ -128,9 +128,9 @@ You can now create projects within the folder. You can create multiple folders a
 
 ### Inactivating Projects {#making-projects-inactive-or-active}
 
-You may want to mark a project inactive if it s completed but you still want to keep the information about the project. [Inactive projects do now show](#viewing-active-inactive-projects) by default in the **Projects** console.
+You may want to mark a project inactive if it is completed but you still want to keep the information about the project. [Inactive projects do now show](#viewing-active-inactive-projects) by default in the **Projects** console.
 
-To make a project inactive follow these steps.
+To make a project inactive, follow these steps.
 
 1. Open the **Project Properties** window of the project.
    * You can do this from the console by selecting the project or from within the project via the **Project Info** tile.
@@ -155,4 +155,4 @@ Follow these steps to delete a project.
    ![Project delete options](assets/project-delete-options.png)
 1. Click **Delete** to delete the project with the options selected.
 
-To learn more about groups automatically created by projects see [Automatic Group Creation](/help/sites-authoring/projects.md#auto-group-creation) for details.
+To learn more about groups automatically created by projects, see [Automatic Group Creation](/help/sites-authoring/projects.md#auto-group-creation) for details.
