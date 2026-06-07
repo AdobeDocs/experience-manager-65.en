@@ -23,7 +23,7 @@ Replication (non-reverse replication) is failing for some reason.
 
 There are various reasons for replication to fail. This article explains the approach one might take when analyzing these issues.
 
-**Are replications getting triggered at all when clicking the Activate button? If NOT then do the following:**
+**Are replications getting triggered at all when clicking the Activate button? If they're NOT, then do the following:**
 
 1. Go to /crx/explorer and login as admin.
 1. Open "Content Explorer"
@@ -31,15 +31,15 @@ There are various reasons for replication to fail. This article explains the app
 
 **Are the replications getting queued up in the replication agent queues?**
 
-Check this by going to /etc/replication/agents.author.html then click the replication agents to check.
+Check this by going to /etc/replication/agents.author.html, then click the replication agents to check.
 
 **If one agent queue or a few agent queues are stuck:**
 
-1. Does the queue show **blocked** status? If so, then is the publish instance not running or unresponsive? Check the publish instance to see what is wrong with it. That is, check the logs, and see if there is an OutOfMemory error or some other issue. If it is just slow, then take thread dumps and analyze them.
-1. Does the queue status show **Queue is active - # pending**? Basically the replication job could be stuck in a socket read waiting for the publish instance or Dispatcher to respond. This could mean that the publish instance or Dispatcher is under high load or stuck in a lock. Take thread dumps from author and publish in this case.
+1. Does the queue show **blocked** status? If so, then is the publish instance not running or unresponsive? Check the publish instance to see what is wrong with it: that is, check the logs, and see if there is an OutOfMemory error or some other issue. If it is just slow, then take thread dumps and analyze them.
+1. Does the queue status show **Queue is active - # pending**? Basically, the replication job could be stuck in a socket read waiting for the publish instance or Dispatcher to respond. This could mean that the publish instance or Dispatcher is under high load or stuck in a lock. Take thread dumps from author and publish in this case.
 
     * Open the thread dumps from author in a thread dump analyzer, check if it shows that the replication agent's sling eventing job is stuck in a socketRead.
-    * Open the thread dumps from publish in a thread dump analyzer, analyze what might be causing the publish instance not to respond. You should see a thread with POST /bin/receive in its name that is the thread receiving the replication from author.
+    * Open the thread dumps from publish in a thread dump analyzer, analyze what might be causing the publish instance not to respond. You should see a thread with POST /bin/receive in its name: that is the thread receiving the replication from author.
 
 **If all agent queues are stuck**
 
@@ -56,16 +56,16 @@ Check this by going to /etc/replication/agents.author.html then click the replic
 1. There might be something wrong with sling eventing framework job queues. Try restarting the org.apache.sling.event bundle in the/system/console.
 1. It might be that job processing is turned off. You can check that under Felix Console in the Sling Eventing Tab. Check if it displays - Apache Sling Eventing (JOB PROCESSING IS DISABLED!)
 
-    * If yes, then check Apache Sling Job Event Handler under Configuration tab in Felix Console. Might be that 'Job processing Enabled' checkbox is unchecked. If that is checked and still it displays that 'job processing is disabled', then check if there is any overlay under /apps/system/config that is disabling the job processing. Try creating an osgi:config node for jobmanager.enabled with a boolean value to true and re-check if the activation started and there are no more jobs in queue.
+    * If yes, then check Apache Sling Job Event Handler under Configuration tab in Felix Console. It might be that 'Job processing Enabled' checkbox is unchecked. If that is checked and still it displays that 'job processing is disabled', then check if there is any overlay under /apps/system/config that is disabling the job processing. Try creating an osgi:config node for jobmanager.enabled with a boolean value to true and re-check if the activation started and there are no more jobs in the queue.
 
-1. It might also be the case that DefaultJobManager configuration gets into an inconsistent state. This can happen when someone manually modifies the 'Apache Sling Job Event Handler' configuration via the OSGiconsole (For example, disable and re-enable the 'Job Processing Enabled' property and Save the configuration).
+1. It might also be the case that DefaultJobManager configuration enters into an inconsistent state. This can happen when someone manually modifies the 'Apache Sling Job Event Handler' configuration via the OSGi console (for example, disable and re-enable the 'Job Processing Enabled' property and Save the configuration).
 
-    * At this point the DefaultJobManager configuration which is stored at crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config gets into an inconsistent state. And even though the 'Apache Sling Job Event Handler' property shows 'Job Processing Enabled' to be in checked state, when one navigates to the Sling Eventing tab, it shows the message - JOB PROCESSING IS DISABLED and the replication does not work.
-    * To resolve this issue, navigate to the Configuration page of the OSGi console and delete the 'Apache Sling Job Event Handler' configuration. Then restart the Master node of the cluster to get the configuration back into a consistent state. This should fix the issue and replication starts working again.
+    * At this point, the DefaultJobManager configuration which is stored at crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config enters into an inconsistent state. And even though the 'Apache Sling Job Event Handler' property shows 'Job Processing Enabled' to be in checked state, when one navigates to the Sling Eventing tab, it shows the message - JOB PROCESSING IS DISABLED and the replication does not work.
+    * To resolve this issue, navigate to the Configuration page of the OSGi console and delete the 'Apache Sling Job Event Handler' configuration. Then restart the Master node of the cluster to get the configuration back into a consistent state. This should fix the issue and make replication start working again.
 
 **Create a replication.log**
 
-Sometimes it is helpful to set all replication logging to be added in a separate log file at DEBUG level. To do this:
+Sometimes, it is helpful to set all replication logging to be added in a separate log file at DEBUG level. To do this:
 
 1. Go to https://host:port/system/console/configMgr and login as admin.
 1. Find the Apache Sling Logging Logger factory and create an instance by clicking the **+** button on the right of the factory configuration. This creates a new logging logger.
@@ -79,10 +79,10 @@ Sometimes it is helpful to set all replication logging to be added in a separate
 
 ## Pausing Replication Agent Queue  {#pausing-replication-agent-queue}
 
-Sometime it might be suitable to pause the replication queue to reduce load on the author system, without disabling it. Currently, this is only possible by a hack of temporarily configuring an invalid port. From 5.4 onwards, you could see pause button in replication agent queue it has some limitation
+Sometimes, it might be suitable to pause the replication queue to reduce load on the author system, without disabling it. Currently, this is only possible by a hack of temporarily configuring an invalid port. From 5.4 onwards, you could see the Pause button in the replication agent queue it has some limitations:
 
-1. The state is not persisted that means if you restart a server or replication bundle is recycled it gets back to running state.
-1. The pause is idle for a shorter period (OOB 1 hour after no activities with replication by other threads) and not for a longer time. Because There is a feature in sling which avoid idle threads. Basically check if a job queue thread has been unused for a longer time, if so it kicks up clean up cycles. Due to cleanup cycle, it stops the thread and hence the paused setting is lost. Because jobs are persisted, it initiates a new thread to process the queue which does not have details of the paused configuration. Due to this queue turns into running state.
+1. The state is not persisted: that means, if you restart a server or the replication bundle is recycled, it goes back to running state.
+1. The pause is idle for a shorter period (OOB 1 hour after no activities with replication by other threads) and not for a longer time. This is because there is a feature in sling which avoids idle threads. Basically, check if a job queue thread has been unused for a longer time; if so, it kicks up clean up cycles. Due to cleanup cycle, it stops the thread and hence the paused setting is lost. Because jobs are persisted, it initiates a new thread to process the queue which does not have details of the paused configuration. Due to this, the queue turns into running state.
 
 ## Page Permissions are not Replicated on User Activation {#page-permissions-are-not-replicated-on-user-activation}
 
@@ -92,7 +92,7 @@ In general, page permissions should not be replicated from the author to publish
 
 ## Replication queue blocked when replicating namespace information from Author to Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-Sometimes the replication queue is blocked when trying to replicate namespace information from the author instance to the publish instance. This happens because the replication user does not have `jcr:namespaceManagement` privilege. To avoid this issue, make sure that:
+Sometimes, the replication queue is blocked when trying to replicate namespace information from the author instance to the publish instance. This happens because the replication user does not have `jcr:namespaceManagement` privilege. To avoid this issue, make sure that:
 
 * The replication user (as configured under the [Transport](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab&gt;User) also exists on the Publish instance.
 * The user has read and write privileges at the path where the content is installed.
