@@ -110,7 +110,7 @@ The following agents are available in a standard AEM installation:
 * Static Agent
   This is an "Agent that stores a static representation of a node into the filesystem."
   For example, with the default settings, content pages and dam assets are stored under `/tmp`, either as HTML or the appropriate asset format. See the `Settings` and `Rules` tabs for the configuration.
-  This was requested so that when the page is requested directly from the application server the content can be seen. This is a specialized agent and (probably) is not required for most instances.
+  This was requested so that, when the page is requested directly from the application server, the content can be seen. This is a specialized agent and (probably) is not required for most instances.
 
 ## Replication Agents - Configuration Parameters {#replication-agents-configuration-parameters}
 
@@ -156,15 +156,15 @@ When configuring a replication agent from the Tools console, four tabs are avail
     * collect and package the content from the Author environment
     * create and write the content on the Publish environment
 
-  Leave this field empty to use the system user account (the account defined in sling as the administrator user; by default this is `admin`).
+  Leave this field empty to use the system user account (the account defined in sling as the administrator user; by default, this is `admin`).
 
   >[!CAUTION]
   >
-  >For an agent on the Author environment this account *must* have read access to all paths that you want to have replicated.
+  >For an agent on the Author environment, this account *must* have read access to all paths that you want to have replicated.
 
   >[!CAUTION]
   >
-  >For an agent on the Publish environment this account *must* have the create/write access required to replicate the content.
+  >For an agent on the Publish environment, this account *must* have the create/write access required to replicate the content.
 
   >[!NOTE]
   >
@@ -182,7 +182,7 @@ When configuring a replication agent from the Tools console, four tabs are avail
 
 * **Use for reverse replication**
 
-  Indicates whether this agent is used for reverse replication; returns user input from the Publish to Author environment.
+  Indicates whether this agent is used for reverse replication; it returns user input from the Publish to Author environment.
 
 * **Alias update**
 
@@ -213,11 +213,11 @@ When configuring a replication agent from the Tools console, four tabs are avail
 
 * **NTLM Domain**
 
-  Domain for NTML authentication.
+  Domain for NTLM authentication.
 
 * **NTLM Host**
 
-  Host for NTML authentication.
+  Host for NTLM authentication.
 
 * **Enable relaxed SSL**
 
@@ -259,7 +259,7 @@ The following settings are only needed if a proxy is needed:
 
 * **Interface**
 
-  Here you can define the socket interface to bind to.
+  Here, you can define the socket interface to bind to.
 
   This sets the local address to be used when creating connections. If this is not set, the default address is used. This is useful for specifying the interface to use on multi-homed or clustered systems.
 
@@ -318,13 +318,13 @@ These settings are used to define triggers for automated replication:
 
 * **On Modification**
 
-  Here a replication by this agent is automatically triggered when a page is modified. Used for Dispatcher Flush agents, but also for reverse replication.
+  Here, a replication by this agent is automatically triggered when a page is modified. Used for Dispatcher Flush agents, as well as for reverse replication.
 
 * **On Distribute**
 
   If checked, the agent automatically replicates any content that is marked for distribution when it is modified.
 
-* **On-/Offtime reached**
+* **On-/OffTime reached**
 
   This triggers automatic replication (to activate or deactivate a page as appropriate) when the ontimes or offtimes defined for a page occur. This is primarily used for Dispatcher Flush agents.
 
@@ -375,7 +375,7 @@ Reverse replication is used to get user content generated on a Publish instance 
 
 For security reasons, most network topologies do not allow connections *from* the "Demilitarized Zone" (a subnetwork that exposes the external services to an untrusted network such as the Internet).
 
-As the Publish environment is usually in the DMZ, to get content back to the Author environment the connection must be initiated from the Author instance. This is done with:
+As the Publish environment is usually in the DMZ, to get content back to the Author environment, the connection must be initiated from the Author instance. This is done with:
 
 * an *outbox* in the Publish environment where the content is placed.
 * an agent (publish) in the Author environment which periodically polls the outbox for new content.
@@ -438,14 +438,14 @@ You can then test the operation by updating, then publishing, a page in the Auth
 
 The updates appear on all Publish instances that have been configured as above.
 
-If you encounter any problems, you can check the logs on the Author instance. Depending on the level of detail required you can also set the **Log Level** to `Debug` using the **Agent Settings** dialog as above.
+If you encounter any problems, you can check the logs on the Author instance. Depending on the level of detail required, you can also set the **Log Level** to `Debug` using the **Agent Settings** dialog as above.
 
 >[!NOTE]
 >
 >This can be combined with use of the [Agent User Id](#agentuserid) to select different content for replicating to the individual Publish environments. For each Publish environment:
 >
 >1. Configure a replication agent for replicating to that Publish environment.
->1. Configure a user account; with the access rights required to read the content that is replicated to that specific Publish environment.
+>1. Configure a user account with the access rights required to read the content that is replicated to that specific Publish environment.
 >1. Assign the user account as the **Agent User Id** for the replication agent.
 >
 
@@ -553,11 +553,11 @@ To monitor a replication agent:
 
 ## Batch Replication {#batch-replication}
 
-The batch replication does not replicate individual pages or assets, but waits for the fist threshold of the two, based on time or size, to be triggered.
+The batch replication does not replicate individual pages or assets, instead it waits for the first threshold of the two, based on time or size, to be triggered.
 
-It then packs all replication items into a package, which is then replicated as one single file to the Publisher.
+It, then, packs all replication items into a package, which is then replicated as one single file to the Publisher.
 
-The Publisher unpacks all the items, save them and report back to the Author.
+The Publisher unpacks all the items, saves them and reports back to the Author.
 
 ### Configuring Batch Replication {#configuring-batch-replication}
 
