@@ -13,7 +13,7 @@ role: User,Admin,Developer
 
 # Working with Tasks {#working-with-tasks}
 
-Tasks represent items of work to be performed with regard to content. When you are assigned a task, it appears in your Workflow Inbox. Task items can be distinguished from workflow items by the value the **Type** column.
+Tasks represent items of work to be performed with regard to content. When you are assigned a task, it appears in your Workflow Inbox. Task items can be distinguished from workflow items by the value in the **Type** column.
 
 Tasks are also used in projects to determine the level of completeness of the project.
 
@@ -23,7 +23,7 @@ You can track project progress by looking at the active/completed tasks inside a
 
 * **Task Tile:** An overall progress of the project is depicted in the task tile, available on the project details page.
 
-* **Task List:** When clicking the task tile, a list of tasks is displayed. This list has detailed information about all the tasks related to the project.
+* **Task List:** When clicking the task tile, a list of tasks is displayed. This list contains detailed information about all the tasks related to the project.
 
 Both options list workflow tasks and tasks you create directly in the tasks tile.
 
@@ -57,7 +57,7 @@ You can view, edit, or add details to the task via different tabs.
 
 * **Task** - General task information
 * **Project Info** - Summary of the project that the task is associated with
-* **Workflow Ino** - Summary of the workflow that the task is associated with (if applicable)
+* **Workflow Info** - Summary of the workflow that the task is associated with (if applicable)
 * **Comments** - General comments on the task itself
 
 ### Adding Tasks {#adding-tasks}
