@@ -41,7 +41,7 @@ The Adobe Analytics account must:
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-Before proceeding, ensure that your credentials let you log in to Adobe Analytics. By way of either of the following:
+Before proceeding, ensure that your credentials let you log in to Adobe Analytics through either of the following:
 
 * [Adobe Experience Cloud Sign In](https://experience.adobe.com/#/@login/home)
 
@@ -106,7 +106,7 @@ For the Report Suite ID (RSID) that you are using, you can control which server 
 >
 >Selecting the type of server instance does not restrict calls to Adobe Analytics, it merely controls which calls include the RSID.
 >
->For example, a framework is configured to use the *diiweretail* report suite and author is the selected server instance. When pages are published along with the framework, calls are still made to Adobe Analytics, however these calls do not contain the RSID. Only calls from the author instance include the RSID.
+>For example, a framework is configured to use the *diiweretail* report suite and author is the selected server instance. When pages are published along with the framework, calls are still made to Adobe Analytics; however, these calls do not contain the RSID. Only calls from the author instance include the RSID.
 
 1. Using **Navigation**, select **Tools**, **Cloud Services**, then **Legacy Cloud Services**.
 1. Scroll to **Adobe Analytics** and select **Show Configurations**.
@@ -115,7 +115,7 @@ For the Report Suite ID (RSID) that you are using, you can control which server 
 1. In the **Create Framework** dialog:
 
     * Specify a **Title**.
-    * Optionally you can specify the **Name**, for the node that stores the framework details in the repository.
+    * Optionally, you can specify the **Name**, for the node that stores the framework details in the repository.
     * Select **Adobe Analytics Framework**
 
    And click **Create**.
