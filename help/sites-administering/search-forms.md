@@ -35,7 +35,7 @@ The default configurations available are:
 
 * **Page Editor (Documents search):**
 
-  This configuration defines the options available when searching for document in the assets browser (when editing a page).
+  This configuration defines the options available when searching for documents in the assets browser (when editing a page).
 
 * **Page Editor (Image search):**
 
@@ -337,7 +337,7 @@ The following predicates are available, dependent on the configuration:
 
 ### Predicate Settings {#predicate-settings}
 
-Dependent on the predicate a selection of settings are available for configuration:
+Depending on the predicate, a selection of settings are available for configuration:
 
 * **Field Label**
 
@@ -355,11 +355,11 @@ Dependent on the predicate a selection of settings are available for configurati
 
   The property to be searched on. It uses a relative path and the wildcards `*/*/*` specify the depth of the property relative to the `jcr:content` node (each asterisk represents one node level).
 
-  If you want to search only on a first-level child node of the resource that has the `x` property on the `jcr:content` node use `*/jcr:content/x`
+  If you want to search only on a first-level child node of the resource that has the `x` property on the `jcr:content` node, use `*/jcr:content/x`
 
 * **Property Depth**
 
-  The maximum depth to search for that property within the resources. So a search on that property can be performed on a resource and recursive children until the level of the children equals specified depth.
+  The maximum depth to search for that property within the resources. So, a search on that property can be performed on a resource and recursive children until the level of the children equals the specified depth.
 
 * **Property Value**
 
@@ -462,7 +462,7 @@ After you have customized a configuration, this overrides the defaults. You can 
 
 >[!NOTE]
 >
->You cannot delete either of the default configurations.
+>You cannot delete any of the default configurations.
 
 Deleting a customized configuration is done from the console:
 
@@ -476,7 +476,7 @@ Deleting a customized configuration is done from the console:
 
 Option predicates (Options, Options Property) let you configure an item to be searched for. They are used to search for something directly under the page; for example, a property on the page node.
 
-The following example (to search according to the template used to create a page), illustrates the steps involved:
+The following example (to search according to the template used to create a page) illustrates the steps involved:
 
 1. Create the node defining the property to be searched on.
 
