@@ -86,7 +86,7 @@ Additionally, the [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-j
 
 ## Interacting with ContextHub Stores {#interacting-with-contexthub-stores}
 
-Use the [`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript object to obtain a store as a JavaScript object. Once you obtain the store object you can manipulate the data that it contains. Use the [`getAllStores`](contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
+Use the [`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript object to obtain a store as a JavaScript object. Once you obtain the store object, you can manipulate the data that it contains. Use the [`getAllStores`](contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
 
 ### Accessing Store Data {#accessing-store-data}
 
@@ -95,7 +95,7 @@ The [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) JavaScript
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
 
-Individual data items are stored as a set of key/value pairs. To store and retrieve values you specify the corresponding key:
+Individual data items are stored as a set of key/value pairs. To store and retrieve values, you specify the corresponding key:
 
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
@@ -104,7 +104,7 @@ Note that custom store candidates can define additional functions that provide a
 
 >[!NOTE]
 >
->ContextHub is not by default aware of the currently logged in used on publish servers and such users are regarded by ContextHub as "Anonymous."
+>ContextHub is not, by default, aware of the currently logged in used on publish servers; such users are regarded by ContextHub as "Anonymous."
 >
 >You can make ContextHub aware of logged in users by loading the profile store. Refer to [sample code on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
@@ -131,8 +131,8 @@ The following segments are installed with the [WKND tutorial site.](getting-star
 
 The rules that are used to resolve these segments are summarized as follows:
 
-* First the [geolocation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) store is used to determine latitude of the user.
-* Then the month data item of the [surferinfo store](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) determines what season it is in that latitude.
+* First, the [geolocation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) store is used to determine the latitude of the user.
+* Then, the month data item of the [surferinfo store](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) determines what season it is in that latitude.
 
 >[!WARNING]
 >
