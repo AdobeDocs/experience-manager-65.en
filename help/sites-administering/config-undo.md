@@ -145,3 +145,4 @@ The following lists the properties as displayed in the Web console, followed by 
 
     * **Default**: The property is populated with several component operations.
     * **Type**: `String[]`
+
