@@ -93,7 +93,7 @@ To generate reports, do the following:
 
    The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within [!DNL Assets]. It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. The columns are not customizable.
 
-   The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
+   The **[!UICONTROL Link Share]** report does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
    ![Details page of Link Share report](assets/link_share.png)
 
@@ -103,7 +103,7 @@ To generate reports, do the following:
 
    ![Select or cancel the selection of report columns](assets/configure_columns.png)
 
-   To display a custom column name or property path, configure the properties for the asset binary under the `jcr:content` node in CRX. Alternatively, add it through property path picker.
+   To display a custom column name or property path, configure the properties for the asset binary under the `jcr:content` node in CRX. Alternatively, add it through the property path picker.
 
    ![Select or cancel the selection of report columns](assets/custom_columns.png)
 
@@ -158,8 +158,8 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Troubleshooting information, tips, and limitations {#best-practices-and-limitations}
 
-* If some reports or numbers in the reports are not available or as expected, ensure that [!UICONTROL Day CQ DAM Event Recorder] service is enabled.
+* If some reports or numbers in the reports are not available or as expected, ensure that the [!UICONTROL Day CQ DAM Event Recorder] service is enabled.
 
 * Remove the reports that are no longer required. Use the configuration options in the DAM Report Purge service to configure the criteria to purge reports.
 
-* If the Disk Usage Report does not generate and you are using [!DNL Dynamic Media], ensure that all assets are proceed correctly. To resolve, reprocess the assets and then generate the report again.
+* If the Disk Usage Report does not generate and you are using [!DNL Dynamic Media], ensure that all assets are processed correctly. To resolve, reprocess the assets and then generate the report again.

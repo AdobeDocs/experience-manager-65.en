@@ -31,7 +31,7 @@ As the AEM UI is touch-enabled, you can use the touch gestures on your touch dev
 
 ### First Steps {#first-steps}
 
-Immediately after logging in you arrive on the [Navigation panel](#navigation-panel). Selecting one of the options opens the respective console.
+Immediately after logging in, you arrive on the [Navigation panel](#navigation-panel). Selecting one of the options opens the respective console.
 
 ![Navigation](assets/bh-01.png)
 
@@ -49,7 +49,7 @@ Whenever a user first accesses a console, a product navigation tutorial is start
 
 Click **Next** to advance to the next page of the overview. Click **Close** or click outside of the overview dialog box to close.
 
-The overview restarts the next time you access a console unless you either view all slides, or check the option **Do not show this again**.
+The overview restarts the next time you access a console unless you either view all slides or check the option **Do not show this again**.
 
 ## Global Navigation {#global-navigation}
 
@@ -61,7 +61,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 >[!NOTE]
 >
->When you first login you are presented with the **Navigation** panel
+>When you first login, you are presented with the **Navigation** panel
 
 Global navigation has two panels, represented by icons at the left-margin of the screen:
 
@@ -183,7 +183,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Breadcrumbs](assets/bh-05.png)
 
-  Appears in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs let you navigate within a specific console. In the Sites console, you can navigate through the levels of your website.
+  Breadcrumbs appear in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs let you navigate within a specific console. In the Sites console, you can navigate through the levels of your website.
 
   Clicking the breadcrumb text opens a drop-down that lists the levels of the hierarchy of the currently selected item. To jump to that location, click an entry.
 
@@ -203,7 +203,7 @@ The header is always present at the top of the screen. While most options in the
 
 * [Views](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-  The view icon is at the far right of the AEM toolbar. As it also indicates the current view, it changes. For example, in the default view, **Column View** it shows:
+  The view icon is at the far right of the AEM toolbar. As it also indicates the current view, its appearance changes. For example, in the default **Column View** view it shows:
 
   ![Column View](assets/bh-07.png)
 
@@ -235,7 +235,7 @@ There are various help resources available:
 
 * **Page Editor**
 
-  The first time you edit a page a series of slides introduce the page editor.
+  The first time you edit a page, a series of slides introduce the page editor.
 
   ![Page Editor](assets/bh-11.png)
 
@@ -435,7 +435,7 @@ Selecting a resource in the leftmost column displays the child resources in a co
   * A visual representation of the page content.
   * The page title.
   * Important dates (such as last edited, last published).
-  * The page is locked, hidden, or part of a live copy.
+  * If the page is locked, hidden, or part of a live copy.
   * If appropriate, when you are required to take action as part of a workflow.
 
     * Markers that indicate required actions may be related to entries in your [Inbox](/help/sites-authoring/inbox.md).

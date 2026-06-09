@@ -40,7 +40,7 @@ In relation to delete permissions, Content Fragments must be considered at two l
 
 For users that need to edit/update a content fragment, **without allowing them to delete an entire fragment**, specific permissions must be assigned, as basic operation of the content fragment editor requires that transient sub-elements can be deleted.
 
-For example, when manipulating variations; also when editing metadata or managing associated content.
+For example, when manipulating variations, when editing metadata, or when managing associated content.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ For example, a folder that will hold all content fragments, such as:
 >
 >Setting the permissions on `/content/dam` is also possible, as all content fragments are stored here.
 >
->However this action applies the same delete permissions to *all* other asset types as well.
+>However, this action applies the same delete permissions to *all* other asset types as well.
 
 The permissions prerequisite to allowing a specific user and/or group to edit/update a content fragment are:
 
@@ -68,7 +68,7 @@ The permissions prerequisite to allowing a specific user and/or group to edit/up
 
   * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* For the `jcr:content`node of all Content Fragments:
+* For the `jcr:content` node of all Content Fragments:
 
   * `jcr:addChildNodes`, `jcr:modifyProperties` and `jcr:removeChildNodes`
 
@@ -78,7 +78,7 @@ The permissions prerequisite to allowing a specific user and/or group to edit/up
 
 These `remove` privileges must be [administered using Access Control Lists, within CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management). 
 
-The `add` and `modify` privileges can also be administered in CRXDE Lite, or using the User Management console.
+The `add` and `modify` privileges can also be administered in CRXDE Lite, or by using the User Management console.
 
 For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
 

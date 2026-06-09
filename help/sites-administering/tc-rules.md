@@ -59,7 +59,7 @@ Each of these `node` elements has the following characteristics:
 * Child `property` elements identify the node properties to translate for all resource types:
 
     * The `name` attribute contains the property name.
-    * The optional `translate` attribute equals `false` if the property is not translated. By default the value is `true`. This attribute is useful when overriding previous rules.
+    * The optional `translate` attribute equals `false` if the property is not translated. By default, the value is `true`. This attribute is useful when overriding previous rules.
 
 * Child `node` elements identify the node properties to translate for specific resource types:
 
@@ -74,7 +74,7 @@ The following example rule causes the content of all `text` properties to be tra
 </node>
 ```
 
-The following example translates the content of all `text` properties, and also translates other properties of the foundation Image component. If other components have same-named properties, the rule does not apply to them.
+The following example translates both the content of all `text` properties and also other properties of the foundation Image component. If other components have same-named properties, the rule does not apply to them.
 
 ```xml
 <node path="/content">
@@ -162,9 +162,9 @@ Then you need to select your context and then click **Edit**. This opens the Tra
 
 There are 4 attributes that you can change via the UI: `isDeep`, `inherit`, `translate` and `updateDestinationLanguage`.
 
-**isDeep** This attrbute is applicable on node filters and is true by default. It checks if the node (or its ancestors) contains that property with the specified property value in the filter. If false, it only checks at the current node.
+**isDeep** This attribute is applicable on node filters and is true by default. It checks if the node (or its ancestors) contains that property with the specified property value in the filter. If false, it only checks at the current node.
 
-For example, child nodes are getting added into a translation job even when the parent node is having property `draftOnly` set to true to flag draft content. Here `isDeep` comes into play and checks if the parent nodes have property `draftOnly` as true and excludes those child nodes.
+For example, child nodes are added to a translation job even when the parent node has the property `draftOnly` set to true to flag draft content. `isDeep` checks if the parent nodes have the property `draftOnly` as true and excludes those child nodes.
 
 In the Editor, you can check/uncheck **Is Deep** in the **Filters** tab.
 
@@ -178,7 +178,7 @@ Here is an example of the resulting xml when **Is Deep** is unchecked in the UI:
 </filter>
 ```
 
-**inherit** This is applicable on properties. By default every property is inherited, but if you want some property to not get inherited on the child, then you can mark that property to be false so that it gets applied only on that specific node.
+**inherit** This is applicable to properties. By default, every property is inherited, but if you want a property not to be inherited by the child, then you can mark that property to be false so that it is applied only to that specific node.
 
 In the UI, you can check/uncheck **Inherit** in the **Properties** tab.
 
@@ -188,7 +188,7 @@ In the UI, you can check/uncheck **Inherit** in the **Properties** tab.
 
 In the UI, you can check/uncheck **Translate** in the **Properties** tab.
 
-**updateDestinationLanguage** This attribute is used for properties that do not have text but language codes, for example, jcr:language. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
+**updateDestinationLanguage** This attribute is used for properties that do not have text but language codes such as `jcr:language`. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
 
 In the UI, you can check/uncheck **Translate** in the **Properties** tab, but for the specific properties that have language codes as value.
 
