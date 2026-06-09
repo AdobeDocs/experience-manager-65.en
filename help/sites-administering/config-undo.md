@@ -24,7 +24,7 @@ In a standard installation the default settings are defined as properties on the
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
-This node contains `cq.wcm.undo.whitelist` and `cq.wcm.undo.blacklist` properties, for the other properties the defaults are taken.
+This node contains `cq.wcm.undo.whitelist` and `cq.wcm.undo.blacklist` properties. For the other properties, the defaults are taken.
 
 >[!CAUTION]
 >
