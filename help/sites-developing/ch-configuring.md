@@ -180,7 +180,7 @@ A contexthub.generic-jsonp store is configured so that it stores data for the se
 
 ### Creating a contexthub.generic-jsonp Store {#creating-a-contexthub-generic-jsonp-store}
 
-The contexthub.generic-jsonp sample store candidate enables you to retrieve data from a JSONP service or a web servcie that returns JSON data. For this store candidate, use the store configuration to provide details about the JSONP service to use.
+The contexthub.generic-jsonp sample store candidate enables you to retrieve data from a JSONP service or a web service that returns JSON data. For this store candidate, use the store configuration to provide details about the JSONP service to use.
 
 The [init](/help/sites-developing/contexthub-api.md#init-name-config) function of the `ContextHub.Store.JSONPStore` JavaScript class defines a `config` object that initializes this store candidate. The `config` object contains a `service` object that includes details about the JSONP service. To configure the store, you provide the `service` object in JSON format as the value for the Detail Configuration property.
 
@@ -236,9 +236,9 @@ A debugging mode for the ContextHub can be enabled to allow for troubleshooting.
 
 ### Via the Configuration {#via-the-configuration}
 
-Edit the ContextHub's configuration and check the option **Debug**
+Edit the ContextHub's configuration and check the option **Debug**.
 
-1. In the rail click **Tools &gt; Sites &gt; ContextHub**
+1. In the rail, click **Tools &gt; Sites &gt; ContextHub**
 1. Click the default **Configuration Container**
 1. Select the **ContextHub Configuration** and click **Edit Selected Element**
 1. Click **Debug** and click **Save**
