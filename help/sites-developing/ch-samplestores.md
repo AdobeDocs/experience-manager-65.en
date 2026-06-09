@@ -348,3 +348,4 @@ Stores that use this store candidate have a data tree that is similar to the fol
    "authorizableId":"anonymous"
 }
 ```
+
