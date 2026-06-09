@@ -15,7 +15,7 @@ feature: Communities
 
 ## Overview {#overview}
 
-Community content, also known as user-generated content (UGC), is created when a member (signed in site visitor) posts content from a published community site through interaction with one of the following community components :
+Community content, also known as user-generated content (UGC), is created when a member (signed in site visitor) posts content from a published community site through interaction with one of the following community components:
 
 * [Blog](/help/communities/blog-feature.md): members post a blog article or comment.
 * [Calendar](/help/communities/calendar.md): members post a calendar event or comment.
@@ -40,7 +40,7 @@ Moderation of UGC is useful for recognizing positive contributions and limiting 
 
 ## Moderation Actions {#moderation-actions}
 
-The actions which can be performed on posted content (UGC) varies depending on the user identity and the environment. The table below uses the following terminology to describe the various roles according to user identity :
+The actions which can be performed on posted content (UGC) vary depending on the user identity and the environment. The table below uses the following terminology to describe the various roles according to user identity:
 
 * `Admin`
   
@@ -165,9 +165,9 @@ A moderator may disallow UGC to remain visible on the published site. To adminis
 
 ### Close / Reopen {#close-reopen}
 
-The Close action operates on the entire thread of conversation (a forum topic or the initial comment) and it includes all subsequent posts or replies.
+The Close action operates on the entire thread of conversation (a forum topic or the initial comment), and it includes all subsequent posts or replies.
 
-When closed, not only are no further replies possible, no moderation actions are allowed either.
+When closed, neither are further replies possible, nor moderation actions allowed.
 
 To perform any operations, the topic or comment must be Reopened.
 
@@ -177,7 +177,7 @@ The Close/Reopen action may be taken by administrators or community moderators.
 
 Flagging is a means for any signed-in member, except for the creator of the content, to indicate there is an issue with the content of a post. Once flagged, an unflag icon appears, allowing the same member to unflag the content.
 
-In-context moderation can be configured to allow members to select a reason when flagging a post. The list of selectable flag reasons is configurable including whether a custom reason can be entered. The flag reason is saved with the UGC but the reason does not trigger any particular action. Only the number of flags triggers a notification. Flagged content is annotated as such, so that moderators may act on it.
+In-context moderation can be configured to allow members to select a reason when flagging a post. The list of selectable flag reasons is configurable including whether a custom reason can be entered. The flag reason is saved with the UGC, but the reason does not trigger any particular action. Only the number of flags triggers a notification. Flagged content is annotated as such, so that moderators may act on it.
 
 The system tracks all the flags, who flagged, and the flag reason and sends an event when the threshold has been reached. If the UGC is Allowed by a community moderator, these flags are archived. After allowing and archiving, if there are subsequent flaggings, they would be archived as if there had been no previous flaggings.
 
@@ -205,13 +205,13 @@ Spam detection is an auto-moderation functionality, which filters out undesirabl
 
 However, to customize or extend the default spam words, create a set of words in the /apps directory following the structure of the default spam words with [overlay](/help/communities/overlay-comments.md).
 
-A user-generated post (across all the content types, for example, blogs, forums, and comments) containing spam words is marked with the text "This post was classified as spam" above the post.
+A user-generated post (across all the content types, such as blogs, forums, and comments) containing spam words is marked with the text "This post was classified as spam" above the post.
 
-Moderator can see such a post and mark the same to allow or deny from appearing on the site. Moderation actions on these posts can be performed either in-context or through bulk moderation UI.
+Moderators can see such a post and mark the same to allow or deny from appearing on the site. Moderation actions on these posts can be performed either in-context or through bulk moderation UI.
 
 ![spamdetection](assets/spamdetection.png)
 
-To enable spam detection engine, follow these steps:
+To enable the spam detection engine, follow these steps:
 
 1. Open [Web Console](https://localhost:4502/system/console/configMgr), by going to `/system/console/configMgr`.
 
