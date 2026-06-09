@@ -13,7 +13,7 @@ role: User,Admin,Developer
 ---
 # Authoring Targeted Content Using Targeting Mode{#authoring-targeted-content-using-targeting-mode}
 
-Author targeted content using Targeting mode of AEM. Targeting mode and the Target component provide tools for creating content for experiences:
+Author targeted content using AEM's Targeting mode. Targeting mode and the Target component provide tools for creating content for experiences:
 
 * Easily recognize the targeted content that is on the page. A dotted line forms a border around all targeted content.
 * Select a brand and an activity to see the experiences.
@@ -35,15 +35,15 @@ The activities and experiences that you see in Target mode reflect the [Activite
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId`to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names cannot be re-used in different campaign types.
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId` to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT), and it cannot be manually removed. To avoid this issue, name each campaign with a unique name; campaign names cannot be re-used in different campaign types.
 >
 >If you use the same name in the same campaign type, you overwrite the existing campaign.
 >
->If while synchronizing, you encounter the error "Request Failed. `thirdPartyId` already exists," change the name of the campaign and synchronize again.
+>If, while synchronizing, you encounter the error "Request Failed. `thirdPartyId` already exists," change the name of the campaign and synchronize again.
 
 >[!NOTE]
 >
->When targeting, the branding and activity combination is persisted at the user level not at the channel level.
+>When targeting, the branding and activity combination is persisted at the user level, not at the channel level.
 
 ## Switching to Targeting Mode {#switching-to-targeting-mode}
 
@@ -66,7 +66,7 @@ Use Targeting mode to add an activity to a brand. When you add an activity, it c
 
 You can also create and manage Adobe Target activities from AEM with the option of selecting the target engine - either AEM or Adobe Target - and selecting the activity type - Experience Targeting or A/B Test.
 
-In addition, you can manage goals and metrics for all Adobe Target activities and manage your Adobe Target audiences. Adobe Target activity reporting, including converting of winners for A/B testing is also included.
+In addition, you can manage goals and metrics for all Adobe Target activities and manage your Adobe Target audiences. Adobe Target activity reporting, including converting of winners for A/B testing, is also included.
 
 When you add an activity, it also appears in the [Activities console](/help/sites-authoring/activitylib.md).
 
@@ -79,14 +79,14 @@ To add an activity:
    >Adobe recommends that you [create brands through the activities console](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
-   >If you create a brand in any other way, make certain that the node `/campaigns/<brand>/master` exists or an error will result when you attempt to create an activity.
+   >If you create a brand in any other way, make certain that the node `/campaigns/<brand>/master` exists; otherwise, an error will result when you attempt to create an activity.
 
 1. Click + next to the **Activity** drop-down menu.
 1. Type a name for the activity.
 
    >[!NOTE]
    >
-   >When you create an activity and have an Adobe Target cloud configuration attached to the page or one of its parent, AEM automatically assumes Adobe Target as the engine.
+   >When you create an activity and have an Adobe Target cloud configuration attached to the page or one of its parents, AEM automatically assumes Adobe Target as the engine.
 
 1. In the **Targeting** engine drop-down menu, select your targeting engine.
 
@@ -106,7 +106,7 @@ To add an activity:
 Targeting mode enables you to configure several aspects of an activity. Use the following three-step process for creating targeted content for a brand activity:
 
 1. [Create](#create-authoring-the-experiences): Add or remove experiences, and add offers for each experience.
-1. [Target](#diagramtargetconfiguringtheaudiences): Specify the audience that each experience targets. You can target a specific audience and if using A/B testing decide what percentage of traffic goes to which experience.
+1. [Target](#diagramtargetconfiguringtheaudiences): Specify the audience that each experience targets. You can target a specific audience and, if using A/B testing, decide what percentage of traffic goes to which experience.
 1. [Goals & Settings](#settingsgoalssettingsconfiguringtheactivityandsettinggoals): Schedule the activity and set the priority. You can also set success metric goals.
 
 Use the following procedure to start the content targeting process for an activity.
@@ -129,7 +129,7 @@ To add an activity:
 
 ## Create: Authoring the Experiences {#create-authoring-the-experiences}
 
-The Create step of content targeting involves creating experiences. During this step you can create or delete the experiences of the activity, and add offers to each experience.
+The Create step of content targeting involves creating experiences. During this step, you can create or delete the experiences of the activity, as well as add offers to each experience.
 
 ### Seeing Experience Offers in Targeting Mode {#seeing-experience-offers-in-targeting-mode}
 
@@ -196,7 +196,7 @@ To rename experiences using Targeting Mode:
 
 1. Click the arrow next to the experience name.
 1. Click **Rename Experience** and type in the new name.
-1. Click somewhere else on the screen to save the changes.
+1. Click elsewhere on the screen to save the changes.
 
 #### Editing Audiences Using Targeting Mode {#editing-audiences-using-targeting-mode}
 
@@ -262,7 +262,7 @@ See [Configuring Target component options](/help/sites-authoring/content-targeti
 
 Because the Target component is a container, it appears as a drop area for other components.
 
-In Target mode, the Target component has a blue border, and the drop-target message indicates the targeted nature.
+In Target mode, the Target component is surrounded by a blue border, and the drop-target message indicates the targeted nature.
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -291,7 +291,7 @@ If editing targeted content, you must click **Start Targeting** before you can d
    >Administrators can decide whether setting this configuration is required at **https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >To require users to input a location, select the **Force location **check box.
+   >To require users to input a location, select the **Force location ** check box.
 
 1. Select the experience for which you want to create the offer.
 1. Create the offer:
@@ -335,13 +335,13 @@ You cannot add library offers to the Default experience.
 
    ![Folder icon](do-not-localize/chlimage_1-3.png)
 
-1. Select the offer from the library and then click the checkmark icon.
+1. Select the offer from the library, and then click the checkmark icon.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
    The offer picker lets you browse or filter for offers. When browsing or filtering, you may also want to sort the offers and change how you view them. The number in the upper-right indicates how many offers are available in the current library.
 
-    * Click **Browse** to navigate to another folder. The navigation pane opens and you click the arrow to drill down into folders. Click **Browse** again to close the navigation pane.
+    * Click **Browse** to navigate to another folder. The navigation pane opens, and you can click the arrow to drill down into folders. Click **Browse** again to close the navigation pane.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -349,7 +349,7 @@ You cannot add library offers to the Default experience.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
-    * Change how you sort the offers by clicking or tapping the arrow next to **Newest to Oldest**. Offers can be sorted newest to oldest or oldest to newest.
+    * Change how you sort the offers by clicking or tapping the arrow next to **Newest to Oldest**. Offers can be sorted from newest to oldest or from oldest to newest.
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
@@ -391,7 +391,7 @@ Open a library offer from an experience in Targeted mode to edit the offer. The 
 
 ## Target: Configuring the Audiences {#target-configuring-the-audiences}
 
-The Target step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves mapping audiences with the experiences that you worked with in the Create step. The Target page shows the audiences that each experience is targeting. You can specify or change the audience for each experience. If you are using Adobe Target, you can also create A/B tests that let you target percentage of traffic for an audience to a particular experience.
+The Target step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves mapping audiences with the experiences that you worked with in the Create step. The Target page shows the audiences that each experience is targeting. You can specify or change the audience for each experience. If you are using Adobe Target, you can also create A/B tests that let you target the percentage of traffic for an audience to a particular experience.
 
 ### If you are using AEM targeting or Adobe Target (experience targeting) ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -428,12 +428,12 @@ You can change the percentages as long as they add up to 100 percent. An audienc
 1. Click the drop-down box next to the audience that is mapped to the experience.
 1. (Optional) Click **Edit**, then type a keyword to search for the desired segment.
 1. Click **OK.**
-1. Enter in percentages to configure how audience traffic is routed to each experiences. The total number must equal 100.
+1. Enter percentages to configure how audience traffic is routed to each experiences. The total number must equal 100.
 1. (Optional) Edit the experience name by clicking the drop-down menu next to the experience name.
 
 ## Goals & Settings: Configuring the Activity and Setting Goals {#goals-settings-configuring-the-activity-and-setting-goals}
 
-The Goals & Settings step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Specify when the activity starts and ends, and the activity priority. In addition, you also track goals. Specifically you can decide what you want to measure with your activities.
+The Goals & Settings step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Specify when the activity starts and ends, as well as the activity priority. In addition, you also track goals. Specifically, you can decide what you want to measure with your activities.
 
 Goal Metrics are only available if you use Adobe Target for your targeting engine. Define at least one goal metric. If you have Adobe Analytics configured and have an A4T Analytics cloud configuration, you can select whether you want the reporting source to be Adobe Target or Adobe Analytics.
 
@@ -524,7 +524,7 @@ Use the advanced settings to determine what happens **after** a user encounters 
  </tbody>
 </table>
 
-See [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) for more information on success metrics.
+See the [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) for more information on success metrics.
 
 ### Configuring Settings (AEM Targeting) {#configuring-settings-aem-targeting}
 
@@ -660,7 +660,7 @@ You can customize the Target component by accessing the component's options in o
   </tr>
   <tr>
    <td><strong>Location</strong></td>
-   <td><p>The location is a string that gives the targeted content location a name and connects offers with places (or locations or components) on the page where those offers should be placed.</p> <p>This field is a generic value.</p> <p>If you put an offer into a component, the offer remembers the location ID. When the page is executed, the engine evaluates the user's segments and based on this, it resolves the experiences from the active campaigns that should be displayed. Then, it checks the location IDs on the page and tries to match offers with those location IDs to them.</p> </td>
+   <td><p>The location is a string that gives the targeted content location a name and connects offers with places (or locations or components) on the page where those offers should be placed.</p> <p>This field is a generic value.</p> <p>If you put an offer into a component, the offer remembers the location ID. When the page is executed, the engine evaluates the user's segments and, based on this, it resolves the experiences from the active campaigns that should be displayed. Then, it checks the location IDs on the page and tries to match offers with those location IDs to them.</p> </td>
   </tr>
   <tr>
    <td><strong>Engine</strong></td>
