@@ -19,9 +19,9 @@ As a user, you can:
 
 ## Access Requirements {#access-requirements}
 
-Projects a standard AEM feature and do not require any additional setup.
+Projects are a standard AEM feature and do not require any additional setup.
 
-However for users in projects to see other users/groups while using Projects such as when creating projects, creating tasks/workflows, or viewing and managing the team, those users need to have read access on `/home/users` and `/home/groups`.
+However, for users in projects to see other users/groups while using Projects such as when creating projects, creating tasks/workflows, or viewing and managing the team, those users need to have read access on `/home/users` and `/home/groups`.
 
 The easiest way to do this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
 
@@ -31,7 +31,7 @@ The projects console is where you access and manage your projects within AEM.
 
 ![The Projects Console](assets/screen-shot_2019-03-05at125110.png)
 
-The Projects console is similar to other consoles in AEM, allow several actions on individual projects and adjusting your view of the projects.
+The Projects console is similar to other consoles in AEM. It allow multiple actions on individual projects and to adjust your view of the projects.
 
 ### Toggle Your Mode {#modes}
 
@@ -45,7 +45,7 @@ Content Only is the default mode when opening the console. It will show all of y
 
 #### Timeline {#timeline}
 
-The timeline view let you select an individual project and view activity on it. Use the rail selector or the hotkey `alt+1` to change to this view.
+The timeline view lets you select an individual project and view activity on it. Use the rail selector or the hotkey `alt+1` to change to this view.
 
 ![Timeline mode](assets/project-timeline.png)
 
@@ -91,7 +91,7 @@ You can have the following tiles associated with your project.
 
 Click on the drop-down menu in the top-right of any tile to add more data to the tile.
 
-Click on the ellipses button at the bottom-right of any tile to open the tile's data in its associated console.
+Click on the ellipsis button at the bottom-right of any tile to open the tile's data in its associated console.
 
 ### Assets {#assets}
 
@@ -156,7 +156,7 @@ The **Landing Pages** tile lets you request a new landing page.
 
 ![Landing page tile](assets/project-tile-landing.png)
 
-This workflow is described in the document[Create a Landing Page workflow.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+This workflow is described in the document [Create a Landing Page workflow.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### Emails {#emails}
 
@@ -172,7 +172,7 @@ You can start workflows for your project. If any workflows are running, their st
 
 ![Workflows tile](assets/project-tile-workflows.png)
 
-Depending on which project you create there are different workflows available.
+Depending on which project you create, there are different workflows available.
 
 These are described in [Working with Project Workflows.](/help/sites-authoring/projects-with-workflows.md)
 
@@ -197,14 +197,14 @@ Templates serve as a basis to start your project. AEM provides these standard pr
 * **[Translation project](/help/sites-administering/translation.md)** - This is a reference sample for managing translation related activities. It includes basic roles and includes workflows for managing translation.
 * **Simple Project** - This is a reference sample for any projects that do not fit into other categories. It includes three basic roles and four general AEM workflows.
 
-Based on the template you select, you have different options available to you within the project such as the user roles and workflows provided.
+Based on the template you select, there are different options available to within the project such as the user roles and workflows provided.
 
 ## User Roles in a Project {#user-roles-in-a-project}
 
 The different user roles are defined in the project template and are used for two primary reasons:
 
 1. Permissions: The user roles fall into one of the three categories listed: observer, editor, owner. For example, a photographer or copywriter will have the same privileges as an editor. The permissions determine what a user can do to content in a project.
-1. Workflows: The workflows determine who is assigned tasks in a project. The tasks can be associated with a project role. For example, a task can be assigned to photographers so all team members that have the photographer role will get the task.
+1. Workflows: The workflows determine who is assigned tasks in a project. The tasks can be associated with a project role. For example, a task can be assigned to photographers so that all team members that have the photographer role will have the task assigned to them.
 
 All projects support the following default roles to let you administer security and control permissions.
 
@@ -220,7 +220,7 @@ For creative projects, additional roles such as photographers are also provided.
 
 When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions.
 
-For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**.
+For example, a project called Myproject would have three groups: **Myproject Owners**, **Myproject Editors**, **Myproject Observers**.
 
 If the project is deleted, those groups are only deleted if you select the appropriate option [when deleting the project.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) An administrator can also manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
 
