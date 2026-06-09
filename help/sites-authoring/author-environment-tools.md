@@ -147,7 +147,7 @@ The actual appearance and handling depends on the device type that you are using
 
   The assets browser completely covers the page being edited.
 
-  To add an asset to your page touch-and-hold the required asset, then move it towards the right - the assets browser closes to show the page again, where you can add the asset to the required component.
+  To add an asset to your page, touch-and-hold the required asset, then move it towards the right - the assets browser closes to show the page again, where you can add the asset to the required component.
 
   ![ateat-09](assets/ateat-09.png)
 
@@ -171,7 +171,7 @@ The Content Tree is a tab within the side panel (together with the components an
 
 ![Content tree](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-When you open the side panel, it slides open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it is easier to understand how its content is structured hierarchically. Also, on a complex page, it makes it easier to jump between components of the page.
+When you open the side panel, it slides open (from the left side). Select the **Content Tree** tab if necessary. When open, you can see a tree view representation of your page or template, so that it is easier to understand how its content is structured hierarchically. Also, on a complex page, it makes it easier to jump between components of the page.
 
 ![ateat-11](assets/ateat-11.png)
 
@@ -249,7 +249,7 @@ For example, you can fix a broken reference within a Reference component:
 
 ## Events - Timeline {#events-timeline}
 
-For appropriate resources (for example, pages from the **Sites** console, or assets from the **Assets** console) the [timeline can be used to show the recent activity on any selected items](/help/sites-authoring/basic-handling.md#timeline).
+For appropriate resources (for example, pages from the **Sites** console, or assets from the **Assets** console), the [timeline can be used to show the recent activity on any selected items](/help/sites-authoring/basic-handling.md#timeline).
 
 Open the required console, then navigate to the required resource and open **Timeline**, using:
 
@@ -261,7 +261,7 @@ Open the required console, then navigate to the required resource and open **Tim
 
 ## Page Information {#page-information}
 
-The Page Information button (equalizer icon) opens a menu that also provides details about the last edit and the last publication. Depending on the characteristics of the page, its site, and your instance, more or fewer options might be available:
+The Page Information button (equalizer icon) opens a menu that also provides details about the last edit and the last publication. Depending on the characteristics of the page, its site, your instance, and your permissions more or fewer options might be available:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -289,9 +289,9 @@ In addition, **Page Information** can provide access to analytics and recommenda
 There are various modes when editing a page allowing for different actions:
 
 * [Edit](/help/sites-authoring/editing-content.md) - use this mode when editing the page content.
-* [Layout](/help/sites-authoring/responsive-layout.md) - lets you create and edit your responsive layout dependent on the device (if the page is based on a layout container)
+* [Layout](/help/sites-authoring/responsive-layout.md) - lets you create and edit your responsive layout dependent on the device (if the page is based on a layout container).
 
-* [Scaffolding](/help/sites-authoring/scaffolding.md) - help you to create a large set of pages that share structure but have different content.
+* [Scaffolding](/help/sites-authoring/scaffolding.md) - helps you to create a large set of pages that share structure but have different content.
 * [Developer](/help/sites-developing/developer-mode.md) - lets you perform various actions (requires privileges). These include inspecting the technical details of a page and its components.
 
 * [Design](/help/sites-authoring/default-components-designmode.md) - lets you enable/disable components for use on a page and to configure the design of the component (if the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates)).
@@ -301,7 +301,7 @@ There are various modes when editing a page allowing for different actions:
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - lets you view a pages state at a particular point in time.
 * [Live Copy Status](/help/sites-authoring/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
-* [Preview](/help/sites-authoring/editing-content.md#previewing-pages) - used to view the page as it is shown on the publish environment; or to navigate using links in the content.
+* [Preview](/help/sites-authoring/editing-content.md#previewing-pages) - is used to view the page as it is shown on the publish environment or to navigate using links in the content.
 
 * [Annotate](/help/sites-authoring/annotations.md) - used to add or view annotations on the page.
 
