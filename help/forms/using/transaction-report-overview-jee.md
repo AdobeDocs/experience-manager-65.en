@@ -91,7 +91,10 @@ TransactionRecord
     transactionOperationType='...', 
     transactionCount=..., 
     elapsedTime=..., 
-    transactionDate=...
+    transactionDate=...,
+    formName='...',
+    formPath='...',
+    formTitle='...'
 }
 ```
 
@@ -103,6 +106,15 @@ TransactionRecord
 * **transactionCount**: Total count of transaction.
 * **elapsedTime**: Time between the call initiation and response received.
 * **transactionDate**: Timestamp indicating when the service was invoked.
+* **formName**, **formPath**, **formTitle**: Form-level details when form context is available (AEM Forms Service Pack 6.5.25.0 and later). Omitted when not applicable.
+
+<a id="form-level-details-transaction-log-jee"></a>
+
+>[!NOTE]
+>
+> Example when form-level details are present:
+>
+> `[2026-05-14 14:23:25] [INFO] TransactionRecord{service='FormsService', operation='render', internalService='FormsService', internalOperation='render', transactionOperationType='RENDER', transactionCount=1, elapsedTime=1250, transactionDate=Wed May 14 14:23:23 UTC 2026, formName='Loan.xdp', formPath='Applications/FormsApplication/1.0/FormsFolder/Loan.xdp', formTitle='Loan Application'}`
 
 **Sample transaction log**:
 

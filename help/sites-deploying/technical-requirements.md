@@ -192,6 +192,7 @@ The minimum Servlet API Version required is Servlet 3.1
 2. Starting AEM 6.5 deployments on application servers moves to Restricted Support. Existing customers can upgrade to AEM 6.5 and keep using application servers. For new customers, it comes with support criteria and a support program as stated in the Level-R description above.
 3. Applicable AEM Forms only:
     * Removed support for JBoss&reg; EAP 7.1.4 and added support for JBoss&reg; EAP 7.4.10. 
+    * From AEM Forms Service Pack 6.5.25.0 onwards, support for JBoss&reg; EAP 7.4.23 is added . You can download JBoss&reg; EAP 7.4.23 from the Software Distribution Portal using this [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
 
 ### Server Operating Systems {#server-operating-systems}
 
@@ -497,7 +498,7 @@ OpenOffice 4.1.15 </td>
 
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, Microsoft&reg; Windows&reg; 10, or Windows&reg; 11
+* Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, Microsoft&reg; Windows&reg; 10, Windows&reg; 11, or Microsoft&reg; Windows Terminal Server 2025
 * 1 GHz or faster processor with support for PAE, NX, and SSE2.
 * 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
 * 16-GB disk space for 32-bit or 20-GB disk space for 64-bit OS

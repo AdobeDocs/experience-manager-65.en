@@ -1134,6 +1134,27 @@ A local user account is required to run the PDF Generator service. For steps to 
 
 1. In the **[!UICONTROL User Accounts]** tab, provide credentials of a local user account, and click **[!UICONTROL Submit]**. If Microsoft&reg; Windows prompts, allow access to the user. When added successfully, the configured user is displayed under the **[!UICONTROL Your user accounts]** section in the **[!UICONTROL User Accounts]** tab.
 
+### (Windows only) Enable multi-threaded PDF Generator conversions
+
+To run multi-threaded document conversions while AEM Forms runs as a Windows service, PDF Generator processes conversions under a single configured user account.
+
+>[!NOTE]
+>
+> In this mode, multiple instances of **Microsoft&reg; Word** (doc/docx) and **Excel** (xls/xlsx) run under the same user and handle conversions concurrently. **Microsoft&reg; PowerPoint** (ppt/pptx) does not support this mode. PDF Generator launches only one PowerPoint instance at a time, so multi-threaded conversions are not supported for PowerPoint.
+
+To enable multi-threaded conversions for Word and Excel:
+
+1. Configure a [local user account](#configure-a-local-user-account-to-run-the-pdf-generator-service) for PDF Generator.
+1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Configure PDF Generator]**. The default URL is <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. In the **[!UICONTROL General Configuration]** tab, set the following options (configure PDFMaker for Word and Native2PDF for Excel):
+
+   * **Enable Single User Mode For PDFMaker:** **true**
+   * **PDFMaker Single User Process Pool Size:** Set as desired. This value is the maximum number of Word instances that can run conversions at the same time.
+   * **Enable Single User Mode For Native2PDF:** **true**
+   * **Native2PDF Single User Process Pool Size:** Set as desired. This value is the maximum number of Excel instances that can run conversions at the same time.
+
+1. Restart the AEM Forms server.
+
 ### Configure the time-out settings {#configure-the-time-out-settings}
 
 1. In [AEM configuration manager](http://localhost:4502/system/console/configMgr), locate and open the **[!UICONTROL Jacorb ORB Provider]** service.
