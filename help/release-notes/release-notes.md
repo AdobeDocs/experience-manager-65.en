@@ -53,8 +53,13 @@ Content Fragments and the GraphQL API also receive reliability improvements, cov
     * IBM&reg; Content Manager Client 8.7
     * AEM Forms Designer on Microsoft&reg; Windows Terminal Server 2025
 
- 
+    >[!NOTE]
+    >
+    > To upgrade JBoss EAP from 7.4.10 to 7.4.23, refer:
+    > * [Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) for standalone environments.
+    > * [Upgrade JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) for cluster environments.
 
+ 
 ## Fixed issues in Service Pack 25 {#fixed-issues}
 
 <!-- 6.5.25.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
