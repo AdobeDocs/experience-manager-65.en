@@ -24,10 +24,6 @@ This article applies to:
 * AEM Forms on JEE running on JBoss EAP 7.4.10 in a standalone environment
 * Turnkey and partial turnkey installation modes on Windows and Linux
 
->[!NOTE]
->
-> If you are upgrading a JBoss cluster environment, complete the steps in this article first, and then perform the additional steps in [Upgrade JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md).
-
 ## Prerequisites {#prerequisites}
 
 Before you begin:
