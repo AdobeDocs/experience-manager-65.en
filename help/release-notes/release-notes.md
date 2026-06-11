@@ -44,7 +44,7 @@ Content Fragments and the GraphQL API also receive reliability improvements, cov
 
 * [Multi-threaded PDF Generator conversions](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): Added support to run concurrent Microsoft Word (doc/docx) and Excel (xls/xlsx) conversions when AEM Forms runs as a Windows service under a single configured user account.
 
-* [Hierarchical bookmarks for XFA-based PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service and AEM Forms Designer now generate structured bookmark hierarchies in static interactive and flat XFA-based PDFs. Bookmarks follow heading levels (H1–H6) set in the Accessibility properties for text boxes, so H1–H6 entries nest under the correct parent instead of appearing in parallel. 
+* [Hierarchical bookmarks for XFA-based PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service and AEM Forms Designer now generate structured bookmark hierarchies in static interactive and flat XFA-based PDFs. Bookmarks follow heading levels (H1–H6) set in the Accessibility properties for text boxes, so H1–H6 entries nest under the correct parent instead of appearing in parallel.  
 
 * [Form-level details in JEE transaction logs](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms on JEE now records form-level details in `transaction_log.log` for each transaction, in addition to existing service and operation information. Administrators can correlate transaction reporting data with specific forms when analyzing submissions, renditions, and conversions. (FORMS-21574)
 
