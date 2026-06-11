@@ -25,6 +25,22 @@ This article lists the critical fixes implemented to address known issues, impro
   </tr>
   <tr>
     <td>
+      <strong>Jun 8, 2026</strong><br>
+      <em>Applies to:</em> AEM 6.5.25.0 WAR/JEE deployments (including AEM Forms on JEE)<br>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-service-pkg-6.5.25-NPR-44100-B0002.zip">Hotfix for AEM Service Pack 6.5.25.0 (NPR-44100)</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>NPR-44100</b> After installing AEM 6.5 Service Pack 25.0 on WAR/JEE deployments, the <code>com.adobe.cq.screens.sessions</code> bundle remains in the Installed state and never becomes Active.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <strong>Feb 18, 2026</strong><br>
       <em>Applies to:</em> AEM Forms on JEE Service Pack 6.5.24.0<br>
     </td>

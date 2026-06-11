@@ -44,7 +44,7 @@ Content Fragments and the GraphQL API also receive reliability improvements, cov
 
 * [Multi-threaded PDF Generator conversions](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): Added support to run concurrent Microsoft Word (doc/docx) and Excel (xls/xlsx) conversions when AEM Forms runs as a Windows service under a single configured user account.
 
-* [Hierarchical bookmarks for XFA-based PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service and AEM Forms Designer now generate structured bookmark hierarchies in static interactive and flat XFA-based PDFs. Bookmarks follow heading levels (H1–H6) set in the Accessibility properties for text boxes, so H2–H6 entries nest under the correct parent instead of appearing in parallel. 
+* [Hierarchical bookmarks for XFA-based PDFs](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): Output Service and AEM Forms Designer now generate structured bookmark hierarchies in static interactive and flat XFA-based PDFs. Bookmarks follow heading levels (H1–H6) set in the Accessibility properties for text boxes, so H1–H6 entries nest under the correct parent instead of appearing in parallel.. 
 
 * [Form-level details in JEE transaction logs](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms on JEE now records form-level details in `transaction_log.log` for each transaction, in addition to existing service and operation information. Administrators can correlate transaction reporting data with specific forms when analyzing submissions, renditions, and conversions. (FORMS-21574)
 
@@ -589,15 +589,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6525}
 
-* **FORMS-14521** If a user tries to preview a draft letter with saved XML data, it gets stuck in `Loading` state for some specific letters.
-* **FORMS-16603** In the Print Preview of the Interactive Communications Agent UI, some calculated values are not displayed correctly. 
-* **FORMS-15681** When the letter is viewed in Print Preview, the content is changed; some spaces disappear, and certain letters are replaced with `x`.
-* **FORMS-15428** After updating to AEM Forms Service Pack 20 (6.5.20.0) with the Forms Add-On, configurations relying on the legacy Adobe Analytics Cloud Service using credential-based authentication stop working. This issue prevented analytics rules from executing correctly.
-* **FORMS-16557** In the Print Preview of the Interactive Communications Agent UI, the currency symbol (such as the dollar sign $) is inconsistently displayed for all field values. It appears for values up to 999 but is missing for values of 1000 and above.
-* **FORMS-16575** Any modifications to nested layout fragments' XDP in an Interactive Communication are not reflected in the IC editor. 
-* **FORMS-21378** When server-side validation (SSV) is enabled, form submissions may fail. If you encounter this issue, please contact Adobe Support for assistance.
 * **FORMS-23722** When a form containing a **File Attachment** field that uses `bindref` is submitted to an AEM Workflow with an **Assign Task** step, the attachments are not displayed. As a result, they do not appear when the task is opened from the Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments.
-* **FORMS-23802** Custom functions fail to load in preview or publish when an Adaptive Form is embedded in a Sites page. This issue occurs when the **aem-forms-core-component** library version is earlier than 1.1.76. You may see an error such as `InvalidFormContainerException: No form container found` in the logs. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Forms SP24 (AddOn 6.0.1454). 
 
 #### Known issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
@@ -609,12 +601,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
 
-* **FORMS-23881** On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.25.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
-* **FORMS-23789** (AEM Forms on JEE only): Users experienced issues with Log4j in AEM Forms on JEE SP24, causing disruptions in logging and monitoring for enterprise customers. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Forms on JEE Service Pack 6.5.25.0.
-* **FORMS-23802** Custom functions do not load in preview or publish when the form is in a Sites page with an older aem-forms-core-component version (&lt;1.1.76). To resolve this issue, install the [AEM Forms AddOn hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) for SP24.
-* **FORMS-23789** (AEM Forms on JEE only): Users experienced issues with Log4j in AEM Forms on JEE SP24, causing disruptions in logging and monitoring for enterprise customers. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Forms on JEE Service Pack 6.5.25.0.
-* **FORMS-23802** Custom functions do not load in preview or publish when the form is in a Sites page with an older aem-forms-core-component version (&lt;1.1.76). To resolve this issue, install the [AEM Forms AddOn hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) for SP24.
-* AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This upgrade delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
+* **NPR-44100** After installing AEM 6.5 Service Pack 25 on WAR/JEE deployments (including AEM Forms on JEE), the `com.adobe.cq.screens.sessions` bundle remains in the Installed state and never becomes Active. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0.
 * **FORMS-14926** After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder, perform the following steps to resolve the issue:
 
   1. Stop the locators, if they are running.
@@ -624,21 +611,7 @@ The following issues have a hotfix available for download and installation. You 
   5. Open the command prompt in administrator mode.  
   6. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
 
-* **FORMS-15256** When users upgraded from AEM 6.5 Forms Service Pack 18 or 19 to Service Pack 20 or 21, they encountered a JSP compilation error. This error prevented them from opening or creating adaptive forms. It also caused issues with other AEM interfaces. Those interfaces included the Page Editor, AEM Forms UI, Workflow editor, and System Overview UI.
-
-  If you face such an issue, perform the following steps to resolve it:
-    1. Navigate to the directory `/libs/fd/aemforms/install/` in CRXDE.
-    2. Delete the bundle with the name `com.adobe.granite.ui.commons-5.10.26.jar`.
-    3. Restart your AEM Server. 
-
-* **FORMS-23703** When the `contains` rule is configured without a default value, the Server Side validation for an Adaptive Form fails. You can install the latest version of [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) to fix the issue.
-* **GRANITE-63681** The default system configuration blocks required keywords and regex patterns, which prevents Form Data Model connectors from authenticating. To resolve the issue, download and install the hotfix from the [link](/help/release-notes/aem-forms-hotfix.md).
-* **FORMS-23979**  HTML-to-PDF conversion (PDFG) may experience intermittent timeouts. A newer version of the Forms add-on for SP24 was subsequently released that includes the fix. If you encounter this issue, update your environment to the [latest released Forms add-on for 6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
-* **FORMS-23717** After upgrading to **AEM Forms 6.5.25.0**, `server.log` and `error.log` can be flooded with repeated WARN messages such as *Secure parser factory creation failed* or *Security attribute ... is not supported*. Logs may grow by about **5–10 lines per second** (hundreds of MB per hour), which can fill disk and block production rollout. 
-
-To reduce log volume, set the logging level for `com.adobe.util.XMLSecurityUtil` to `ERROR` in your application server config or by way of the JVM argument `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. This functionality only hides the messages and does not fix the underlying cause.
-
-* **FORMS-23875** In Form Data Model search, the UI displays an HTML tag even when a relevant entity is absent. To resolve the issue, download and install the hotfix from [the link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
+  * AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This upgrade delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
