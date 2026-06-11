@@ -22,18 +22,14 @@ Upgrade JBoss EAP from version 7.4.10 to 7.4.23 on an AEM Forms on JEE standalon
 This article applies to:
 
 * AEM Forms on JEE running on JBoss EAP 7.4.10 in a standalone environment
-* Turnkey and partial turnkey installation modes on Windows and Linux
-
->[!NOTE]
->
-> If you are upgrading a JBoss cluster environment, complete the steps in this article first, and then perform the additional steps in [Upgrade JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md).
+* Turnkey and partial turnkey installation modes on Windows and Linux 
 
 ## Prerequisites {#prerequisites}
 
 Before you begin:
 
-* Download the JBoss 7.4.23 package from the [Adobe Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* Ensure that you have administrative access to the target environment.
+* Download the JBoss 7.4.23 package from the [Adobe Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fjboss-eap-7.4.23-1.0.17.zip).
+* Ensure that you have administrative access to the target environment. 
 * Take a complete backup of the existing JBoss installation.
 
 ## Steps {#steps}
