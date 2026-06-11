@@ -589,7 +589,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6525}
 
-* **FORMS-23722** When a form containing a **File Attachment** field that uses `bindref` is submitted to an AEM Workflow with an **Assign Task** step, the attachments are not displayed. As a result, they do not appear when the task is opened from the Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments.
+* **FORMS-23722** When a form containing a **File Attachment** field that uses `bindref` is submitted to an AEM Workflow with an **Assign Task** step, the attachments are not displayed. As a result, they do not appear when the task is opened from the Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments. 
 
 #### Known issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
