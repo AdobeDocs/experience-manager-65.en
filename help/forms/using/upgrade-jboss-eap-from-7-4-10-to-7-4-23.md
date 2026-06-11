@@ -22,7 +22,7 @@ Upgrade JBoss EAP from version 7.4.10 to 7.4.23 on an AEM Forms on JEE standalon
 This article applies to:
 
 * AEM Forms on JEE running on JBoss EAP 7.4.10 in a standalone environment
-* Turnkey and partial turnkey installation modes on Windows and Linux
+* Turnkey and partial turnkey installation modes on Windows and Linux 
 
 ## Prerequisites {#prerequisites}
 
