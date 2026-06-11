@@ -8,7 +8,7 @@ role: User,Admin,Developer
 ---
 # Adobe Experience Manager Forms Hotfixes{#aem-form-hotfix}
 
-This article lists the critical fixes implemented to address known issues, improve system stability, and enhance overall performance of AEM Forms. 
+This article lists the critical fixes implemented to address known issues, improve system stability, and enhance overall performance of AEM Forms.  
 
 >[!NOTE]
 >
