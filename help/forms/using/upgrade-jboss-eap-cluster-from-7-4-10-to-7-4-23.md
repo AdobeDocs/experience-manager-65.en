@@ -15,7 +15,7 @@ When you upgrade a JBoss EAP cluster from version 7.4.10 to 7.4.23 for AEM Forms
 
 ## Applies to {#applies-to}
 
-This article applies to:
+This article applies to: 
 
 * AEM Forms on JEE running on JBoss EAP 7.4.10 in a cluster environment
 * Master-slave JBoss EAP configurations on Windows and Linux
