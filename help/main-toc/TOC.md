@@ -588,7 +588,7 @@ user-guide-title: AEM 6.5
     + [Create new folders to categorize forms](/help/forms/using/creating-new-folders-categorize-forms.md)
     + [Searching for forms and assets](/help/forms/using/searching-forms-or-assets.md)
     + [Manage form metadata](/help/forms/using/manage-form-metadata.md)
-    + [Download an XFA or a PDF form template](/help/forms/using/download-xfa-or-pdf-form.md)
+    + [Downloading an XFA or a PDF form template](/help/forms/using/download-xfa-or-pdf-form.md)
     + [Deleting forms and related resources](/help/forms/using/deleting-forms-related-resources.md)
     + [Getting XDP and PDF documents in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md)
     + [Importing and exporting assets to AEM Forms](/help/forms/using/import-export-forms-templates.md)
