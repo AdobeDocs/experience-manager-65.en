@@ -28,7 +28,7 @@ This article applies to:
 
 Before you begin:
 
-* Download the JBoss 7.4.23 package from the [Adobe Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* Download the JBoss 7.4.23 package from the [Adobe Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fjboss-eap-7.4.23-1.0.17.zip).
 * Ensure that you have administrative access to the target environment. 
 * Take a complete backup of the existing JBoss installation.
 
