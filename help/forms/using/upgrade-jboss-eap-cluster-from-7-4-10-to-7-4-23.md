@@ -2,9 +2,13 @@
 title: Upgrade JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE
 description: Additional steps to upgrade a JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE.
 SEO Description: Additional cluster upgrade steps for JBoss EAP 7.4.10 to 7.4.23 on AEM Forms on JEE.
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: installing
+geptopics: SG_AEMFORMS/categories/jee
 exl-id: 2c9e7f41-a8d6-4b03-8e5c-1a4f6d9e0b72
 solution: Experience Manager, Experience Manager Forms
-feature: AEM Forms on JEE
+feature: AEM Forms Upgrade,AEM Forms on JEE
 role: User, Developer
 ---
 # Upgrade JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE {#upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23}
@@ -18,7 +22,7 @@ When you upgrade a JBoss EAP cluster from version 7.4.10 to 7.4.23 for AEM Forms
 This article applies to: 
 
 * AEM Forms on JEE running on JBoss EAP 7.4.10 in a cluster environment
-* Master-slave JBoss EAP configurations on Windows and Linux
+* Master-slave JBoss EAP configurations on Windows and Linux 
 
 ## Prerequisites {#prerequisites}
 

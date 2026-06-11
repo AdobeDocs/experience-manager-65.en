@@ -2,9 +2,13 @@
 title: Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE
 description: Steps to upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE standalone environments.
 SEO Description: Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE standalone environments.
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: installing
+geptopics: SG_AEMFORMS/categories/jee
 exl-id: 8f4c2a91-6b3d-4e7f-9c12-5d8e1f0a2b34
 solution: Experience Manager, Experience Manager Forms
-feature: AEM Forms on JEE
+feature: AEM Forms Upgrade,AEM Forms on JEE
 role: User, Developer
 ---
 # Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE {#upgrade-jboss-eap-from-7-4-10-to-7-4-23}

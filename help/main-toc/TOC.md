@@ -581,9 +581,8 @@ user-guide-title: AEM 6.5
       + [Upgrading to AEM Forms on JEE for JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
       + [Upgrading to Adobe Experience Manager Forms on JEE for WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
       + [Upgrading to Adobe Experience Manager Forms on JEE for WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
-      + Knowledge base articles {#aem-forms-jee-knowledge-base-articles}
-        + [Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
-        + [Upgrade JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
+      + [Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
+      + [Upgrade JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
   + Manage AEM Forms {#manage-administer-aem-forms}
     + [AEM Forms on OSGi Groups and Privileges](/help/forms/using/forms-groups-privileges-tasks.md)
     + [Create new folders to categorize forms](/help/forms/using/creating-new-folders-categorize-forms.md)
