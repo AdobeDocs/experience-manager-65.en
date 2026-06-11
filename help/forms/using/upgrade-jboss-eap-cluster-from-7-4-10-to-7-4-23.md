@@ -18,11 +18,11 @@ When you upgrade a JBoss EAP cluster from version 7.4.10 to 7.4.23 for AEM Forms
 This article applies to: 
 
 * AEM Forms on JEE running on JBoss EAP 7.4.10 in a cluster environment
-* Master-slave JBoss EAP configurations on Windows and Linux
+* Master-slave JBoss EAP configurations on Windows and Linux 
 
 ## Prerequisites {#prerequisites}
 
-Complete all steps in [Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md), including copying the connection URL, username, and password from the existing installation to the new configuration files.
+Complete all steps in [Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md), including copying the connection URL, username, and password from the existing installation to the new configuration files. 
 
 ## Steps {#steps}
 
