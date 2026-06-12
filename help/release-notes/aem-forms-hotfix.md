@@ -39,6 +39,7 @@ This article lists the critical fixes implemented to address known issues, impro
     </ul>
     </td>
   </tr>
+  <!-- Hidden: fixed in AEM Forms 6.5.25.0 or earlier (Jira list). Retained for retrieval.
   <tr>
     <td>
       <strong>Feb 18, 2026</strong><br>
@@ -63,7 +64,7 @@ This article lists the critical fixes implemented to address known issues, impro
     </ul>
     </td>
   </tr>
-    <tr>
+  <tr>
     <td>
       <strong>Feb 17, 2026</strong><br>
       <em>Applies to:</em> AEM Forms SP24<br>
@@ -78,7 +79,9 @@ This article lists the critical fixes implemented to address known issues, impro
     </ul>
     </td>
   </tr>
-    <tr>
+  -->
+  <!-- Hidden: FORMS-23802 fixed in AEM Forms 6.5.25.0. Retained for retrieval.
+  <tr>
     <td>
       <strong>Feb 17, 2026</strong><br>
       <em>Applies to:</em> AEM Forms SP24<br>
@@ -96,6 +99,8 @@ This article lists the critical fixes implemented to address known issues, impro
     </ul>
     </td>
   </tr>
+  -->
+  <!-- Hidden: FORMS-23875 fixed in AEM Forms 6.5.25.0. Retained for retrieval.
   <tr>
     <td>
       <strong>Feb 10, 2026</strong><br>
@@ -107,8 +112,11 @@ This article lists the critical fixes implemented to address known issues, impro
     </td>
     <td>
     <ul>
-    <li><b>FORMS-23875</b> In Form Data Model search, an HTML tag is displayed in the UI even when a relevant entity is not present.
-      <ul></tr>
+    <li><b>FORMS-23875</b> In Form Data Model search, an HTML tag is displayed in the UI even when a relevant entity is not present.</li>
+    </ul>
+    </td>
+  </tr>
+  -->
   <tr>
     <td>
       <strong>Oct 14, 2025</strong><br>
@@ -120,8 +128,10 @@ This article lists the critical fixes implemented to address known issues, impro
     </td>
     <td>
     <ul>
-    <li> <b>(FORMS-22029):</b> Improves PDF conversion reliability by addressing an issue where PDF Generator (PDFG) fails to convert image files to PDF after upgrading to SP23, causing unexpected post-processing errors.
-      <ul></tr>
+    <li> <b>(FORMS-22029):</b> Improves PDF conversion reliability by addressing an issue where PDF Generator (PDFG) fails to convert image files to PDF after upgrading to SP23, causing unexpected post-processing errors.</li>
+    </ul>
+    </td>
+  </tr>
   <tr>
     <td>
       <strong>Sept 23, 2025</strong><br>
@@ -142,15 +152,14 @@ This article lists the critical fixes implemented to address known issues, impro
     <td>
     <ul>
     <strong>This hotfix fixes the following:</strong> 
+    <!-- Hidden: FORMS-21378 fixed in AEM Forms 6.5.25.0. Retained for retrieval.
     <li> <b>(FORMS-21378):</b> Improved form submission reliability by addressing an issue where submissions fail when Server-Side Validation (SSV) is enabled and computed Meta Info is empty.
-
+    -->
    <li> <b>(FORMS-21721):</b> Improved an issue where PS to PDF and HTML to PDF (WebKit) conversions fail after deploying  the hotfix (released on <b>Aug 05, 2025</b>) for 6.5.23.0. 
     </li>
     </ul>
     </td>    
   </tr>
-    </ul>
-    </td>
   <tr>
     <td>
       <strong>Aug 05, 2025</strong><br>
@@ -292,6 +301,7 @@ This article lists the critical fixes implemented to address known issues, impro
     </ul>
     </td>    
   </tr>
+  <!-- Hidden: FORMS-14521 fixed in AEM Forms 6.5.25.0. Retained for retrieval.
   <tr>
     <td>June 21, 2024</td>
      <td>
@@ -305,6 +315,7 @@ This article lists the critical fixes implemented to address known issues, impro
     </ul>
     </td>    
   </tr>
+  -->
   <tr>
     <td>May 16, 2024</td>
      <td>
@@ -322,7 +333,9 @@ This article lists the critical fixes implemented to address known issues, impro
      <li>When an Adaptive Form is submitted from an Adobe Experience Manager Publish instance to an Adobe Experience Manager Workflow, the workflow fails to save the attachments.  (FORMS-14209) </li>
      <li> On installing AEM 6.5 Forms Service Pack 20 package (AEM Forms add-on package for SP20),the AEM Sites user interface (UI) exhibits significant performance degradation.  (FORMS-13791) </li>
      <li>The prefill service fails with a null pointer exception in Interactive Communications. (CQDOC-21355)</li>
+     <!-- Hidden: FORMS-15428 fixed in AEM Forms 6.5.25.0 or earlier. Retained for retrieval.
      <li>Configurations using the legacy cloud service for Adobe Analytics with user credential-based authentication, fail to function correctly, causing the failure of analytics rules to execute. (FORMS-15428)
+     -->
     </ul>
     </td>    
   </tr>
@@ -387,10 +400,14 @@ Perform the following steps to download and install the Hotfix:
 
 For instructions to install a JEE patch, see the [AEM Forms JEE Patch Installer documentation](/help/release-notes/jee-patch-installer-65.md).
 
-
+<!--
 ## Download and install hotfix for draft letter issue {#install-hotfix}
- 
+
+
+Hidden: FORMS-14521 fixed in AEM Forms 6.5.25.0. Retained for retrieval.
+
 To resolve the issue, perform the following steps:
 
 1. Download the [hotfix](#hotfix-for-adaptive-forms) from the Software Distribution portal.
 2. Upload and install the package (.zip) using the [CRX Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+-->
