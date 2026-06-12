@@ -277,9 +277,9 @@ The `title`property of a tag may be translated into multiple languages. Once tra
 
 ### Defining Tag Titles in Multiple Languages {#defining-tag-titles-in-multiple-languages}
 
-The following describes how to translate the `title`of the tag **Animals** from English into German and French.
+The following describes how to translate the `title` of the tag **Animals** from English into German and French.
 
-Start by selecting the tag under the **Stock Photography** namespace and selecting the **`Edit`**icon (see [Editing Tags](#editing-tags) section).
+Start by selecting the tag under the **Stock Photography** namespace and selecting the **`Edit`** icon (see [Editing Tags](#editing-tags) section).
 
 The Edit Tag panel presents the ability to choose languages into which the tag title is to be localized.
 
@@ -297,7 +297,7 @@ To add a new language to the dialog, see [Adding a New Language to the Edit Tag 
 
 >[!NOTE]
 >
->The tag cloud and the meta keywords in the standard page component use the localized tag `titles`based on the page language, if available.
+>The tag cloud and the meta keywords in the standard page component use the localized tag `titles` based on the page language, if available.
 
 ## Resources {#resources}
 
@@ -306,3 +306,4 @@ To add a new language to the dialog, see [Adding a New Language to the Edit Tag 
   Information about the tagging framework and extending and including tags in custom applications.
 
 * [Classic UI Tagging Console](/help/sites-administering/classic-console.md)
+
