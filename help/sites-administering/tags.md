@@ -306,3 +306,4 @@ To add a new language to the dialog, see [Adding a New Language to the Edit Tag 
   Information about the tagging framework and extending and including tags in custom applications.
 
 * [Classic UI Tagging Console](/help/sites-administering/classic-console.md)
+
