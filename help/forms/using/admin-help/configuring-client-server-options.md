@@ -64,6 +64,17 @@ Width: Minimum = 400, maximum = 900
 
 Height: Minimum = 450; maximum = 800
 
+**Allow extended authentication from external browser for Adobe client applications** Select the checkbox for each Adobe client platform you want to enable external browser authentication:
+
+* Adobe Acrobat and Reader (64-bit) - Desktop
+* Adobe Acrobat Reader (32-bit) - Desktop
+
+When enabled, users authenticate for policy-protected PDF documents using the system's default web browser (such as Microsoft Edge or Google Chrome) instead of the embedded browser control within Acrobat or Reader. This enables modern authentication methods such as PassKey, biometric authentication, and other Identity Provider features that require a modern browser.
+
+>[!NOTE]
+>
+> External browser authentication is available in AEM Forms on JEE Service Pack 6.5.25.0 and later. If you are on Service Pack 6.5.24.0 or earlier, upgrade to Service Pack 6.5.25.0 or install the applicable JEE hotfix patch. See [Configure extended authentication from external browser for document security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md).
+
 **Enable Client Credential Caching:** Select this option to allow users to cache their credentials (user name and password). When users' credentials are cached, they do not have to enter their credentials every time they open a document or when they click the Refresh button on the Manage Security Policies page in Adobe Acrobat. You can specify the number of days before users must supply their credentials again. Setting the number of days to 0 allows credentials to be cached indefinitely.
 
 ## Configuring document security users and administrators {#configuring-document-security-users-and-administrators}
