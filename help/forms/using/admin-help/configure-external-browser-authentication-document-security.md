@@ -69,7 +69,7 @@ This video shows how to enable external browser authentication on the AEM Forms 
    * **Adobe Acrobat Reader (32-bit) - Desktop**
 1. Click **OK**.
 
-For the server setting description, see [Server configuration settings](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings).
+For the server setting description, see [Server configuration settings](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings). 
 
 <!--## Client configuration (Acrobat / Reader) {#client-configuration}
 
