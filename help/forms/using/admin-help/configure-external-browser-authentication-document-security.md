@@ -124,4 +124,4 @@ This video shows how to verify external browser authentication: open a policy-pr
 ### Authentication option does not appear on the login page {#authentication-option-does-not-appear}
 
 * Authentication methods and options are configured by the IDP, not by AEM Forms or Acrobat. Ensure the IDP supports the authentication method you want to use.
-* Verify the login page is loading in the system browser (not the embedded browser).
+* Verify the login page is loading in the system browser (not the embedded browser). 
