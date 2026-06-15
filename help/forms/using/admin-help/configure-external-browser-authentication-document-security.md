@@ -35,36 +35,43 @@ External browser authentication is available in AEM Forms on JEE Service Pack 6.
 If you are on AEM Forms on JEE Service Pack 6.5.24.0 or earlier, do one of the following:
 
 * Upgrade to [AEM Forms on JEE Service Pack 6.5.25.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip).
-* Install the AEM Forms JEE Hotfix2 6.5.24.0 patch for your application server and platform using the links below.
+* Install the AEM Forms JEE Hotfix 6.5.24.0 patch for your application server and platform using the links below.
 
-Download and install the AEM Forms JEE Hotfix2 6.5.24.0 patch for your platform from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html):
+Download and install the AEM Forms JEE Hotfix 6.5.24.0 patch for your platform from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html):
 
-| Platform | Download link |
-| -------- | --------------- |
-| JBoss Windows | [adobe-aem-forms-jee-hotfix2-6.5.24.0-win-jboss.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.24.0-win-jboss.zip) |
-| JBoss Linux | [adobe-aem-forms-jee-hotfix2-6.5.24.0-linux-jboss.tar.gz](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.24.0-linux-jboss.tar.gz) |
-| WebSphere Windows | [adobe-aem-forms-jee-hotfix2-6.5.24.0-win-websphere.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.24.0-win-websphere.zip) |
-| WebSphere Linux | [adobe-aem-forms-jee-hotfix2-6.5.24.0-linux-websphere.tar.gz](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.24.0-linux-websphere.tar.gz) |
-| WebLogic Windows | [adobe-aem-forms-jee-hotfix2-6.5.24.0-win-weblogic.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.24.0-win-weblogic.zip) |
-| WebLogic Linux | [adobe-aem-forms-jee-hotfix2-6.5.24.0-linux-weblogic.tar.gz](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.24.0-linux-weblogic.tar.gz) |
+**JBoss**
+
+* Windows: [Hotfix for AEM Service Pack 6.5.24.0 on Windows for JBoss JEE server](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.24.0-win-jboss.zip)
+* Linux: [Hotfix for AEM Service Pack 6.5.24.0 on Linux for JBoss JEE server](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.24.0-linux-jboss.tar.gz)
+
+**WebSphere**
+
+* Windows: [Hotfix for AEM Service Pack 6.5.24.0 on Windows for WebSphere JEE server](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.24.0-win-websphere.zip)
+* Linux: [Hotfix for AEM Service Pack 6.5.24.0 on Linux for WebSphere JEE server](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.24.0-linux-websphere.tar.gz)
+
+**WebLogic**
+
+* Windows: [Hotfix for AEM Service Pack 6.5.24.0 on Windows for WebLogic JEE server](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.24.0-win-weblogic.zip)
+* Linux: [Hotfix for AEM Service Pack 6.5.24.0 on Linux for WebLogic JEE server](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.24.0-linux-weblogic.tar.gz)
 
 For installation instructions, see [Install a JEE patch](/help/release-notes/jee-patch-installer-65.md).
 
 ## Enable external browser authentication {#enable-external-browser-authentication}
+
+This video shows how to enable external browser authentication on the AEM Forms Document Security server.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3492357/)
 
 1. In the administration console, click **Services** > **Document Security** > **Configuration** > **Server Configuration**.
 1. Locate the section **Allow extended authentication from external browser for Adobe client applications**.
 1. Select the checkbox for each Adobe client platform you want to enable:
    * **Adobe Acrobat and Reader (64-bit) - Desktop**
    * **Adobe Acrobat Reader (32-bit) - Desktop**
-
-   ![External Browser Authentication](/help/forms/using/assets/browser-authentication.png)
-
 1. Click **OK**.
 
 For the server setting description, see [Server configuration settings](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings).
 
-## Client configuration (Acrobat / Reader) {#client-configuration}
+<!--## Client configuration (Acrobat / Reader) {#client-configuration}
 
 External browser authentication is enabled by default in Acrobat and Reader. No client-side configuration is needed for most deployments. When the server is configured to allow external browser authentication, the client uses it automatically.
 
@@ -80,7 +87,7 @@ To disable external browser authentication on specific client machines (forcing 
 
 >[!NOTE]
 >
-> Both the server-side setting and the client-side preference must be enabled for external browser authentication to work. If either is disabled, the client falls back to the embedded browser.
+> Both the server-side setting and the client-side preference must be enabled for external browser authentication to work. If either is disabled, the client falls back to the embedded browser.-->
 
 ## Verification {#verification}
 
@@ -100,7 +107,6 @@ This video shows how to verify external browser authentication: open a policy-pr
 ### The embedded browser opens instead of the system browser {#embedded-browser-opens-instead-of-system-browser}
 
 * Verify the server has external browser authentication enabled. See [Enable external browser authentication](#enable-external-browser-authentication).
-* Verify the client preference is not disabled in the registry. See [Client configuration (Acrobat / Reader)](#client-configuration).
 * Confirm the Acrobat or Reader version supports this feature.
 
 ### Authentication succeeds in the browser but the document does not unlock {#authentication-succeeds-but-document-does-not-unlock}
@@ -113,7 +119,7 @@ This video shows how to verify external browser authentication: open a policy-pr
 * The user may have taken too long to complete authentication. Try again.
 * Check network connectivity between the browser and the AEM Forms server.
 
-### PassKey does not appear as an option on the login page {#passkey-does-not-appear}
+### Authentication option does not appear on the login page {#authentication-option-does-not-appear}
 
-* PassKey configuration is managed by the IDP, not by AEM Forms or Acrobat. Ensure the IDP supports it.
+* Authentication methods and options are configured by the IDP, not by AEM Forms or Acrobat. Ensure the IDP supports the authentication method you want to use.
 * Verify the login page is loading in the system browser (not the embedded browser).
