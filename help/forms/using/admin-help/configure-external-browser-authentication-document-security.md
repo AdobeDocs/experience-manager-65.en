@@ -118,7 +118,7 @@ This video shows how to verify external browser authentication: open a policy-pr
 
 ### "We couldn't sign you in" message appears in Acrobat {#we-couldnt-sign-you-in-message}
 
-* The user may have taken too long to complete authentication. Try again.
+* The user may have taken too long to complete authentication. Try again. 
 * Check network connectivity between the browser and the AEM Forms server.
 
 ### Authentication option does not appear on the login page {#authentication-option-does-not-appear}
