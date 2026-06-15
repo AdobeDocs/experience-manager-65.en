@@ -1001,6 +1001,7 @@ user-guide-title: AEM 6.5
       + [About document security](/help/forms/using/admin-help/document-security.md)
       + [High-volume secure information delivery](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
       + [Configuring client and server options](/help/forms/using/admin-help/configuring-client-server-options.md)
+      + [Configure extended authentication from external browser for document security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md)
       + [Managing invited and local user accounts](/help/forms/using/admin-help/invited-local-user-accounts.md)
       + [Controlling access to policy-protected documents](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
       + [Monitoring events](/help/forms/using/admin-help/monitoring-events.md)

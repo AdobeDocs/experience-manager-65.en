@@ -53,6 +53,10 @@ For a discussion of how offline lease and synchronization works, see [Primer on 
 
 Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the AEM Forms Server. For example, users can now experience the SAML-based authentication instead of AEM forms username/Password, from Acrobat and Reader Client. By default, the Landing URL contains *localhost* as the server name. Replace the server name with a fully qualified hostname. The hostname in the landing URL is automatically populated from the base URL, if extended Authentication is not enabled yet. See [Add the extended authentication provider](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
+>[!NOTE]
+>
+> External browser authentication is available in AEM Forms on JEE Service Pack 6.5.25.0 and later. If you are on Service Pack 6.5.24.0 or earlier, upgrade to Service Pack 6.5.25.0 or install the applicable JEE hotfix patch. See [Configure extended authentication from external browser for document security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md).
+
 ***note**: Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.*
 
 **Preferred HTML Control Width for Extended Authentication** Specify the width of the extended authentication dialog that opens in Acrobat for entering user credentials.
