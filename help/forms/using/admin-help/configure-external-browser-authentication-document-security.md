@@ -71,7 +71,8 @@ This video shows how to enable external browser authentication on the AEM Forms 
 
 For the server setting description, see [Server configuration settings](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings). 
 
-<!--## Client configuration (Acrobat / Reader) {#client-configuration}
+<!--
+## Client configuration (Acrobat / Reader) {#client-configuration}
 
 External browser authentication is enabled by default in Acrobat and Reader. No client-side configuration is needed for most deployments. When the server is configured to allow external browser authentication, the client uses it automatically.
 
@@ -87,7 +88,8 @@ To disable external browser authentication on specific client machines (forcing 
 
 >[!NOTE]
 >
-> Both the server-side setting and the client-side preference must be enabled for external browser authentication to work. If either is disabled, the client falls back to the embedded browser.-->
+> Both the server-side setting and the client-side preference must be enabled for external browser authentication to work. If either is disabled, the client falls back to the embedded browser.
+-->
 
 ## Verification {#verification}
 
