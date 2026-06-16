@@ -26,7 +26,7 @@ Before you configure external browser authentication, ensure that the following 
 
 * AEM Forms 6.5 on JEE with Service Pack 6.5.25.0 deployed, or Service Pack 6.5.24.0 with the applicable JEE hotfix patch installed on a supported application server (JBoss, WebLogic, or WebSphere). See [Software distribution links for AEM Forms JEE Hotfix2 6.5.24.0](#software-distribution-links).
 * Extended authentication (third-party authentication) already enabled and functional with an IDP. See [Server configuration settings](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings) and [Add the extended authentication provider](/help/forms/using/admin-help/configuring-client-server-options.md#add-the-extended-authentication-provider).
-* Adobe Acrobat Pro or Adobe Acrobat Reader (64-bit) installed on the client Windows PC with the latest update.
+* Adobe Acrobat Pro or Adobe Acrobat Reader (64-bit) installed on the client Windows PC with the latest update. 
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ This video shows how to verify external browser authentication: open a policy-pr
 ### The embedded browser opens instead of the system browser {#embedded-browser-opens-instead-of-system-browser}
 
 * Verify the server has external browser authentication enabled. See [Enable external browser authentication](#enable-external-browser-authentication).
-* Confirm the Acrobat or Reader version supports this feature. See [Acrobat Release Notes (March 2026 Continuous Track)](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix).
+* Confirm the Acrobat or Reader version supports this feature. See [Acrobat](#acrobat).
 
 ### Authentication succeeds in the browser but the document does not unlock {#authentication-succeeds-but-document-does-not-unlock}
 
