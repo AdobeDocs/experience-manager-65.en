@@ -140,7 +140,7 @@ You need to create an IMS technical account configuration using the steps below:
 
 1. Confirm the check health dialog box and click close once the configuration is in the healthy state.
 
-### Create a new configuration {#configure-smart-content-service}
+### Create a new configuration
 
 <!--
 >[!CAUTION]
@@ -169,7 +169,7 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
 
 1. Click **[!UICONTROL Save & Close]**.
 
-### Validate the configuration {#validate-the-configuration}
+### Validate the configuration
 
 After you have completed the configuration, you can use a JMX MBean to validate the configuration. To validate, follow these steps.
 
@@ -275,7 +275,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
    *Figure: Details of integration in Adobe Developer Console*
 
-### Configure Smart Content Service {#configure-smart-content-service}
+### Configure Smart Content Service
 
 >[!CAUTION]
 >
@@ -332,7 +332,7 @@ An authorization scope is an OAuth string that contains the following prerequisi
 6. Delete the old configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 7. Restart the console.
 
-### Validate the configuration {#validate-the-configuration}
+### Validate the configuration
 
 After you have completed the configuration, you can use a JMX MBean to validate the configuration. To validate, follow these steps.
 
