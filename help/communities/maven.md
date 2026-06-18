@@ -30,7 +30,7 @@ There is only one "uber" artifact that replaces individual artifacts:
 >
 >See the [Latest Releases](deploy-communities.md#latest-releases) section where you can identify the most recent version.
 
-## Maven Dependency Example {#maven-dependency-example}
+## Maven Dependency Example
 
 ```xml
 <dependency>
@@ -81,7 +81,7 @@ Ensure thet the version specified corresponds with the Communities package versi
 >
 >Visit the [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
 
-## Maven Dependency Example {#maven-dependency-example}
+## Maven Dependency Example
 
 The Communities API jar must be specified before the Uber API jar.
 
