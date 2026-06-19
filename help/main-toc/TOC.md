@@ -558,6 +558,7 @@ user-guide-title: AEM 6.5
       + [Configuring Adobe Experience Manager Forms on JEE on JBoss Cluster](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
       + [Configuring Adobe Experience Manager Forms on JEE on WebSphere Cluster](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
       + [Configuring Adobe Experience Manager Forms on JEE on WebLogic Cluster](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
+      + [Mitigating serialization issues in AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md)
     + Configure AEM Forms {#configure-aem-forms}
       + [Performance tuning of AEM Forms server](/help/forms/using/performance-tuning-aem-forms.md)
       + [Configure adaptive forms cache](/help/forms/using/configure-adaptive-forms-cache.md)
