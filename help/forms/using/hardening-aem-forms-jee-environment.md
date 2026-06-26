@@ -802,6 +802,20 @@ If legitimate server requests are being blocked by the CSRF filter, try one of t
 * If the client can work in a browser, try that deployment model.
 * As a last resort you can add the resource to the Allowed URIs list. This is not a recommended setting.
 
+### Mitigating serialization issues {#mitigating-serialization-issues}
+
+Java deserialization attacks exploit applications that deserialize untrusted data, potentially allowing remote code execution on the server. AEM Forms on JEE includes a deserialization firewall that performs a preflight check before any attempt to deserialize an object. The check tests class names against a firewall-style allowlist, blocklist, or both, and rejects classes known to be exploitable through deserialization attacks.
+
+On installations running **JDK 11 or later**, this protection is activated by the platform's native serialization filtering and requires no manual steps. On installations running **JDK 8**, native serialization filtering is not effective, so the NotSoSerial agent must be attached explicitly to the JVM at startup.
+
+Verify that protection is active by browsing to the deserialization filter health check:
+
+```text
+https://<server>:<port>/system/console/healthcheck?tags=deserialization
+```
+
+If the health check reports as failing on a JDK 8 instance, attach and configure the agent as described in [Mitigating serialization issues in AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md).
+
 ## Secure network configuration {#secure-network-configuration}
 
 This section describes the protocols and ports that are required by AEM Forms on JEE and provides recommendations for deploying AEM Forms on JEE in a secure network configuration.
