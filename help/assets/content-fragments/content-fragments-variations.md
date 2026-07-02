@@ -25,8 +25,6 @@ Perform a range of other actions depending on the data type being edited; for ex
 
 * [View key statistics](#viewing-key-statistics) (about multi-line text)
 
-* [Summarize Text](#summarizing-text)
-
 * [Synchronize variations with Master content](#synchronizing-with-master)
 
 >[!CAUTION]
@@ -94,8 +92,6 @@ The following actions are also available (for all the [formats](#formats)) when 
 * [Show Text Statistics](#viewing-key-statistics)
 
 * [Synchronize with Master](#synchronizing-with-master) (when editing a variation)
- 
-* [Summarize Text](#summarizing-text)
 
 ### Formats {#formats}
 
@@ -210,60 +206,6 @@ For example:
 ### Uploading Content {#uploading-content}
 
 To ease the process of authoring content fragments, you can upload text, prepared in an external editor, and add it directly to the fragment.
-
-### Summarizing Text {#summarizing-text}
-
-Summarizing text is designed to help users reduce the length of their text to a predefined number of words, while keeping the key points and overall meaning.
-
->[!NOTE]
->
->On a more technical level, the system keeps the sentences which it rates as providing the *best ratio of information density and uniqueness* according to specific algorithms.
-
->[!CAUTION]
->
->The content fragment must have a valid language folder (ISO Code) as an ancestor; this is used to determine the language model to be used.
->
->For example, `en/` as in the following path:
->
->&nbsp;&nbsp;`/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->English is available out-of-the-box.
->
->Other languages are available as Language Model Packages from Package Share:
->
->* [French (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [German (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italian (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spanish (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Select **Master** or the required variation.
-1. Open the full-screen editor.
-
-1. Select **Summarize text** from the toolbar.
-
-   ![summarization](assets/cfm-variations-05.png)
-
-1. Specify the target number of words and select **Start**:
-1. The original text is displayed side-by-side with the proposed summarization:
-
-    * Any sentences to be eliminated are highlighted in red, with strike-through.
-    * Click any highlighted sentence if you want to keep it in the summarized content.
-    * Click any non-highlighted sentence if you want to eliminate it.
-
-1. Select **Summarize** to confirm the changes.
-
-1. The original text is displayed side-by-side with the proposed summarization:
-
-    * Any sentences to be eliminated are highlighted in red, with strike-through.
-    * Click any highlighted sentence if you want to keep it in the summarized content.
-    * Click any non-highlighted sentence if you want to eliminate it.
-    * The summarization statistics are shown: **Actual** and **Target**-
-    * You can **Preview** the changes.
-
-   ![summarization comparison](assets/cfm-variations-06.png)
 
 ### Annotating a Content Fragment {#annotating-a-content-fragment}
 

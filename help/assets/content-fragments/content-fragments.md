@@ -251,7 +251,7 @@ The content fragment assets are made up of the following parts (either directly 
   * Can be defined during fragment authoring.
   * Stored in the fragment, to help avoid scattering of content copies.
   * Variations can be [synchronized](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) with Master if the Master content has been updated.
-  * Can be [Summarized](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) to quickly truncate the text to a predefined length.
+
   * Available under the [Variations](/help/assets/content-fragments/content-fragments-variations.md) tab of the fragment editor.
 
 ### In-Between Content when Page Authoring with Content Fragments {#in-between-content-when-page-authoring-with-content-fragments}
