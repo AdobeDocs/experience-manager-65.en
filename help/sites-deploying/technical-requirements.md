@@ -186,7 +186,7 @@ The minimum Servlet API Version required is Servlet 3.1
 | JBoss&reg; EAP 7.2.x with JBoss&reg; Application Server |Z: Not supported  |
 | JBoss&reg; EAP 7.1.4 with JBoss&reg; Application Server |R: Restricted Support for new contracts `[1]` `[2]` |
 | JBoss&reg; EAP 7.0.x with JBoss&reg; Application Server |Z: Not supported  |
-| JBoss&reg; EAP 7.4 with JBoss&reg; Application Server <sup>[2] [3] [7] |A: Supported  |
+| JBoss&reg; EAP 7.4 with JBoss&reg; Application Server <sup>[2] [3] |A: Supported  |
 
 1. Recommended for deployments with AEM Forms.
 2. Starting AEM 6.5 deployments on application servers moves to Restricted Support. Existing customers can upgrade to AEM 6.5 and keep using application servers. For new customers, it comes with support criteria and a support program as stated in the Level-R description above.
@@ -230,6 +230,7 @@ Adobe Experience Manager works with the following server platforms for productio
 4. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
 5. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
 6. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
+7. Not supported for AEM Forms.
 
 >[!NOTE]
 >
