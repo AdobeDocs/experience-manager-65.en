@@ -117,7 +117,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | MongoDB Enterprise 8.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 7.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 6.0 |Repository |A: Supported `[3, 4]` |
-| MongoDB Enterprise 5.0 |Repository |A: Supported `[3, 4]` |
+| MongoDB Enterprise 5.0 |Repository |A: Supported `[3, 4, 7]` |
 | MongoDB Enterprise 4.4 |Repository |A: Supported `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.2 |Repository |A: Supported `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 |Repository |Z: Not supported |
