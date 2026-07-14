@@ -140,6 +140,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 6. Applicable to AEM Forms only:
     * Removed support for Oracle Database 12c and added support for Oracle Database 19c.
     * Removed support for Microsoft&reg; SQL Server 2016 and added support for Microsoft&reg; SQL Server 2019 and Microsoft&reg; SQL Server 2022.
+7. Not supported for AEM Forms.
 
 >[!NOTE]
 >
@@ -230,7 +231,6 @@ Adobe Experience Manager works with the following server platforms for productio
 4. Microsoft&reg; Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
 5. AEM Forms is supported on Microsoft&reg; Window Server without the Support-Level R restrictions.
 6. AEM Forms removed support for Microsoft&reg; Windows Server 2016.
-7. Not supported for AEM Forms.
 
 >[!NOTE]
 >
