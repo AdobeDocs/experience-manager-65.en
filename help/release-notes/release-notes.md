@@ -600,6 +600,7 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
 
 * **NPR-44100** After installing AEM 6.5 Service Pack 25 on WAR/JEE deployments (including AEM Forms on JEE), the `com.adobe.cq.screens.sessions` bundle remains in the Installed state and never becomes Active. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0.
+* **FORMS-23491** AEM Forms 6.5.24.0 JEE deployments (JBoss, WebLogic, WebSphere) are affected by CVE-2025-64775, an Apache Struts denial-of-service vulnerability in multipart request processing. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.24.0.
 * **FORMS-14926** After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder, perform the following steps to resolve the issue:
 
   1. Stop the locators, if they are running.
