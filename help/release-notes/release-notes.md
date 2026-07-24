@@ -609,8 +609,6 @@ The following issues have a hotfix available for download and installation. You 
   5. Open the command prompt in administrator mode.  
   6. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
 
-  * AEM Forms now includes an upgrade of Struts version from 2.5.33 to 6.x for the forms component. This upgrade delivers previously missed Struts changes that were not included in SP24. The support was added via a [Hotfix](/help/release-notes/aem-forms-hotfix.md) that you can download and install to add support for the latest version of Struts.
-
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
 The following zip files contain the text documents that list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
