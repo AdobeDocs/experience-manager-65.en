@@ -26,7 +26,7 @@ This article lists the critical fixes implemented to address known issues, impro
   <tr>
     <td>
       <strong>Jun 8, 2026</strong><br>
-      <em>Applies to:</em> AEM Forms 6.5.25.0 JEE deployments<br>
+      <em>Applies to:</em> AEM 6.5.25.0 Forms JEE deployments<br>
     </td>
     <td>
     <ul>
@@ -42,7 +42,7 @@ This article lists the critical fixes implemented to address known issues, impro
   <tr>
     <td>
       <strong>Jan 6, 2026</strong><br>
-      <em>Applies to:</em> AEM Forms 6.5.24.0 JEE deployments (JBoss, WebLogic, WebSphere)<br>
+      <em>Applies to:</em> AEM 6.5.24.0 Forms JEE deployments (JBoss, WebLogic, WebSphere)<br>
     </td>
     <td>
     <ul>
