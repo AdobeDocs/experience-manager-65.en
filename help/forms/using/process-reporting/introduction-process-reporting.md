@@ -40,7 +40,7 @@ Process Reporting also provides the option to export the report and query data i
 
 ### Adhoc Reports {#adhoc-reports}
 
-![print-&-colour](assets/print-&-colour.png)
+![print-&-colour](assets/print-and-colour.png)
 
 Use filters to get a specific view of your data.
 
