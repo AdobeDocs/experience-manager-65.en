@@ -6,13 +6,59 @@ on:
       - main
 
 jobs:
-  mirror-to-public:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    # TODO(maintainer): If your org uses a different reusable workflow repo, replace Adobe-Enterprise-Docs/workflows.
-    # TODO(maintainer): Pin to a commit SHA for stronger supply-chain security instead of @main.
+  # This single caller file lives in EN and LOC repos under the SAME path
+  # (.github/workflows/mirror.yml), so its content must be identical everywhere.
+  # It routes to the correct reusable workflow based on the repo name suffix:
+  #   *.en           -> mirror-to-public.yml            (no localized asset injection)
+  #   *.<lang>-<reg> -> mirror-to-public-localized.yml  (injects assign-issue/assign-pr)
+  #
+  # NOTE: GitHub Actions does NOT allow expressions (${{ }}) in a job's `uses:`, so the
+  # workflow path cannot be chosen dynamically inside one job. Instead we use two
+  # mutually-exclusive caller jobs gated by `if:`, plus a `detect` job that parses the
+  # repo name to decide the route and derive the locale team slug.
+
+  detect:
+    # Skip on the public AdobeDocs mirror: this file gets mirrored along with the rest
+    # of the tree, but it must only run in the source org, never on the public copy
+    # where it would attempt to mirror onto itself.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository_owner == 'Adobe-Enterprise-Docs'
+    runs-on: ubuntu-latest
+    outputs:
+      is_en: ${{ steps.route.outputs.is_en }}
+      locale: ${{ steps.route.outputs.locale }}
+      team_slug: ${{ steps.route.outputs.team_slug }}
+    steps:
+      - name: Determine route from repo name
+        id: route
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: |
+          set -euo pipefail
+          # Examples: "analytics.en" -> "en"; "analytics.de-DE" -> "de-de".
+          locale="${REPO_NAME##*.}"
+          locale="$(echo "$locale" | tr '[:upper:]' '[:lower:]')"
+          echo "locale=${locale}" >> "$GITHUB_OUTPUT"
+          if [ "$locale" = "en" ]; then
+            # EN repos mirror without localized asset injection, so no team slug is needed.
+            echo "is_en=true" >> "$GITHUB_OUTPUT"
+            echo "team_slug=" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_en=false" >> "$GITHUB_OUTPUT"
+            echo "team_slug=sccm-loc-vendors-${locale}" >> "$GITHUB_OUTPUT"
+          fi
+
+  mirror-en:
+    needs: detect
+    if: needs.detect.outputs.is_en == 'true'
     uses: Adobe-Enterprise-Docs/workflows/.github/workflows/mirror-to-public.yml@main
-    # TODO(maintainer): Ensure org-level GitHub App secrets are available (ADOBEDOCS_MIRRORING_APP_ID and ADOBEDOCS_MIRRORING_APP_PRIVATE_KEY).
     secrets: inherit
-    # TODO(maintainer): If public target differs from AdobeDocs/<this-repo-name>, pass:
-    # with:
-    #   mirror-target-repository: <owner>/<repo>
+    
+  mirror-loc:
+    needs: detect
+    if: needs.detect.outputs.is_en == 'false'
+    uses: Adobe-Enterprise-Docs/workflows/.github/workflows/mirror-to-public-localized.yml@main
+    secrets: inherit
+    with:
+      # Locale team slug is derived from the repo name suffix (e.g. *.de-de -> sccm-loc-vendors-de-de),
+      # replacing __TEAM_SLUG__ in the shared assign-issue.yml / assign-pr.yml templates.
+      locale-team-slug: ${{ needs.detect.outputs.team_slug }}
