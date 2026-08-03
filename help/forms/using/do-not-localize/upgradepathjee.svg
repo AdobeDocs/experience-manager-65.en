@@ -1,0 +1,122 @@
+<svg viewBox="0 0 2200 560" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8B5A2B"/>
+    </marker>
+  </defs>
+
+  <!-- ============ BOXES ============ -->
+
+  <!-- Box 0: ES4SP1 (has left accent band) -->
+  <rect x="20" y="280" width="20" height="68" fill="#E2812E"/>
+  <rect x="40" y="280" width="140" height="27" fill="#F6C667"/>
+  <rect x="20" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="20" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="50" y="320" font-size="19" fill="#1F2937">ES4SP1</text>
+
+  <!-- 6.0 -->
+  <rect x="200" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="200" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="200" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="230" y="320" font-size="19" fill="#1F2937">6.0</text>
+
+  <!-- 6.1 -->
+  <rect x="380" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="380" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="380" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="410" y="320" font-size="19" fill="#1F2937">6.1</text>
+
+  <!-- 6.2 -->
+  <rect x="560" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="560" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="560" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="590" y="320" font-size="19" fill="#1F2937">6.2</text>
+
+  <!-- 6.3 -->
+  <rect x="740" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="740" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="740" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="770" y="320" font-size="19" fill="#1F2937">6.3</text>
+
+  <!-- 6.4 -->
+  <rect x="920" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="920" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="920" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="950" y="320" font-size="19" fill="#1F2937">6.4</text>
+
+  <!-- 6.5 -->
+  <rect x="1100" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="1100" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="1100" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="1130" y="320" font-size="19" fill="#1F2937">6.5</text>
+
+  <!-- 6.5.12.0 -->
+  <rect x="1280" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="1280" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="1280" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="1300" y="320" font-size="19" fill="#1F2937">6.5.12.0</text>
+
+  <!-- 6.5.18.0 -->
+  <rect x="1460" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="1460" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="1460" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="1480" y="320" font-size="19" fill="#1F2937">6.5.18.0</text>
+
+  <!-- 6.5.23.0 -->
+  <rect x="1640" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="1640" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="1640" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="1660" y="320" font-size="19" fill="#1F2937">6.5.23.0</text>
+
+  <!-- 6.5 LTS SP1 -->
+  <rect x="1820" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="1820" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="1820" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="1850" y="310" font-size="18" fill="#1F2937">6.5 LTS</text>
+  <text x="1850" y="332" font-size="18" fill="#1F2937">SP1</text>
+
+  <!-- 6.5 LTS SP2 -->
+  <rect x="2000" y="280" width="160" height="27" fill="#F6C667"/>
+  <rect x="2000" y="307" width="160" height="41" fill="#FCE9C0"/>
+  <rect x="2000" y="280" width="160" height="68" fill="none" stroke="#C9781F" stroke-width="1"/>
+  <text x="2030" y="310" font-size="18" fill="#1F2937">6.5 LTS</text>
+  <text x="2030" y="332" font-size="18" fill="#1F2937">SP2</text>
+
+  <!-- ============ TOP ARROWS: multi-hop / direct upgrades into 6.5.12.0 and 6.5.18.0 ============ -->
+  <g fill="none" stroke="#8B5A2B" stroke-width="2.5">
+    <!-- ES4SP1 -> 6.5.12.0 -->
+    <path d="M70,280 L70,47 A12,12 0 0 1 82,35 L1288,35 A12,12 0 0 1 1300,47 L1300,280" marker-end="url(#arrow)"/>
+    <!-- 6.0 -> 6.5.12.0 -->
+    <path d="M250,280 L250,72 A12,12 0 0 1 262,60 L1312,60 A12,12 0 0 1 1324,72 L1324,280" marker-end="url(#arrow)"/>
+    <!-- 6.1 -> 6.5.12.0 -->
+    <path d="M410,280 L410,97 A12,12 0 0 1 422,85 L1336,85 A12,12 0 0 1 1348,97 L1348,280" marker-end="url(#arrow)"/>
+    <!-- 6.2 -> 6.5.18.0 -->
+    <path d="M590,280 L590,122 A12,12 0 0 1 602,110 L1473,110 A12,12 0 0 1 1485,122 L1485,280" marker-end="url(#arrow)"/>
+    <!-- 6.3 -> 6.5.12.0 -->
+    <path d="M770,280 L770,172 A12,12 0 0 1 782,160 L1360,160 A12,12 0 0 1 1372,172 L1372,280" marker-end="url(#arrow)"/>
+    <!-- 6.3 -> 6.5.18.0 -->
+    <path d="M810,280 L810,147 A12,12 0 0 1 822,135 L1508,135 A12,12 0 0 1 1520,147 L1520,280" marker-end="url(#arrow)"/>
+    <!-- 6.4 -> 6.5.12.0 -->
+    <path d="M950,280 L950,247 A12,12 0 0 1 962,235 L1384,235 A12,12 0 0 1 1396,247 L1396,280" marker-end="url(#arrow)"/>
+    <!-- 6.4 -> 6.5.18.0 -->
+    <path d="M990,280 L990,197 A12,12 0 0 1 1002,185 L1543,185 A12,12 0 0 1 1555,197 L1555,280" marker-end="url(#arrow)"/>
+    <!-- 6.5 -> 6.5.12.0 -->
+    <path d="M1130,280 L1130,272 A12,12 0 0 1 1142,260 L1408,260 A12,12 0 0 1 1420,272 L1420,280" marker-end="url(#arrow)"/>
+    <!-- 6.5 -> 6.5.18.0 -->
+    <path d="M1170,280 L1170,222 A12,12 0 0 1 1182,210 L1578,210 A12,12 0 0 1 1590,222 L1590,280" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ============ BOTTOM ARROWS: sequential + bypass patch upgrades ============ -->
+  <g fill="none" stroke="#8B5A2B" stroke-width="2.5">
+    <!-- 6.5.12.0 -> 6.5.18.0 -->
+    <path d="M1340,348 L1340,388 A12,12 0 0 0 1352,400 L1488,400 A12,12 0 0 0 1500,388 L1500,348" marker-end="url(#arrow)"/>
+    <!-- 6.5.18.0 -> 6.5.23.0 -->
+    <path d="M1560,348 L1560,388 A12,12 0 0 0 1572,400 L1668,400 A12,12 0 0 0 1680,388 L1680,348" marker-end="url(#arrow)"/>
+    <!-- 6.5.23.0 -> 6.5 LTS SP1 -->
+    <path d="M1760,348 L1760,388 A12,12 0 0 0 1772,400 L1868,400 A12,12 0 0 0 1880,388 L1880,348" marker-end="url(#arrow)"/>
+    <!-- 6.5.12.0 -> 6.5.23.0 (bypass) -->
+    <path d="M1380,348 L1380,448 A12,12 0 0 0 1392,460 L1698,460 A12,12 0 0 0 1710,448 L1710,348" marker-end="url(#arrow)"/>
+    <!-- 6.5.23.0 -> 6.5 LTS SP2 -->
+    <path d="M1790,348 L1790,388 A12,12 0 0 0 1802,400 L2048,400 A12,12 0 0 0 2060,388 L2060,348" marker-end="url(#arrow)"/>
+  </g>
+</svg>
