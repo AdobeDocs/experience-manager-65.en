@@ -39,7 +39,7 @@ You can also perform a multi-hop upgrade from
 
 The following diagram displays the available upgrade paths for AEM Forms on JEE:
 
-![JEE upgrade 6.5](do-not-localize/upgradepathjee.png) 
+![JEE upgrade 6.5](do-not-localize/upgradepathjee.svg) 
 
 
 You can perform a direct upgrade from:
