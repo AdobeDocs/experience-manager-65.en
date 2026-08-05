@@ -12,6 +12,11 @@ role: Admin, User, Developer
 
 # Interactive Communications Overview {#interactive-communications-overview}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction)                  |
+| AEM 6.5     | This article         |
+
 This article includes overview, sample use cases, creation workflow, and differences between Interactive Communication and letter.
 
 ![hero-image](do-not-localize/correspondence-management.png)
