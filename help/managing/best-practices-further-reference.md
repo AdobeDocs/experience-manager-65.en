@@ -583,17 +583,21 @@ Adobe provides further Best Practices for all phases and audiences:
 
 **Temporary Formatting Tests - Please Ignore**
 
+<!--
 | Something | Something | Something | Something | Something |
 |--- |--- |--- |--- |--- |
 | `env` | `Env` ("QA" | "DEV" | "DEV_443" | "STAGE" | "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
+-->
 
 | Something | Something | Something | Something | Something |
 |--- |--- |--- |--- |--- |
 | `env` | `Env` ("QA" \| "DEV" \| "DEV_443" \| "STAGE" \| "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
 
+<!--
 | Something | Something | Something | Something | Something |
 |--- |--- |--- |--- |--- |
 | `env` | `Env` ("QA" `|` "DEV" `|` "DEV_443" `|` "STAGE" `|` "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
+-->
 
 | Something | Something | Something | Something | Something |
 |--- |--- |--- |--- |--- |
