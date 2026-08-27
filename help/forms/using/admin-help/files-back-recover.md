@@ -75,7 +75,7 @@ AEM Forms Workspace matches the capabilities of the (Deprecated for AEM forms on
 
 >[!NOTE]
 >
->The Flex Worksapce is deprecated for AEM forms release.
+>The Flex Workspace is deprecated for AEM forms release.
 
 It allows for task management on clients without Flash Player and Adobe Reader. It facilitates rendition of HTML Forms, besides PDF forms and Flex forms.
 

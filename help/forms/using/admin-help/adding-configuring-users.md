@@ -163,7 +163,7 @@ If a user without the required AEM forms and CQ permissions, attempts to log int
 * Correspondence Management solution
 * AEM forms Workspace
 
-  ***note**: The Flex Worksapce is deprecated for AEM forms release.*
+  ***note**: The Flex Workspace is deprecated for AEM forms release.*
 
 * forms manager
 * Process Reporting

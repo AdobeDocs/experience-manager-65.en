@@ -22,7 +22,7 @@ On the Workspace pages in administration console, you can perform the following 
 
 >[!NOTE]
 >
->The Flex Worksapce is deprecated for AEM forms release.
+>The Flex Workspace is deprecated for AEM forms release.
 
 >[!NOTE]
 >

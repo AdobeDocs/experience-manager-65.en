@@ -20,7 +20,7 @@ You can import and export search template definitions and global settings for Wo
 
 >[!NOTE]
 >
->The Flex Worksapce is deprecated for AEM forms release.
+>The Flex Workspace is deprecated for AEM forms release.
 
 For example, you can move from a development environment to a production environment by exporting the search template definitions and global settings from one environment and importing them into the other.
 
@@ -64,7 +64,7 @@ You can modify the global settings file; however, the only settings you may want
 
 >[!NOTE]
 >
->The Flex Worksapce is deprecated for AEM forms release.
+>The Flex Workspace is deprecated for AEM forms release.
 
 The Workspace global settings file includes the following settings:
 

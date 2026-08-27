@@ -80,7 +80,7 @@ To generate email notifications for a group, specify an email address for the gr
 
 >[!NOTE]
 >
->The Flex Worksapce is deprecated for AEM forms release.
+>The Flex Workspace is deprecated for AEM forms release.
 
 ### Configure reminders for users or groups {#configure-reminders-for-users-or-groups}
 
@@ -192,7 +192,7 @@ For Task Notifications only, Forms workflow includes two predefined URL configur
 
 >[!NOTE]
 >
->The Flex Worksapce is deprecated for AEM forms release.
+>The Flex Workspace is deprecated for AEM forms release.
 
 If your solution is deployed in a clustered environment, replace `@@notification-host@@` with the cluster address.
 
