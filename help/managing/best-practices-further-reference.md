@@ -580,25 +580,3 @@ Adobe provides further Best Practices for all phases and audiences:
 * [Administering](/help/sites-administering/administer-best-practices.md)
 * [Developing](/help/sites-developing/best-practices.md)
 * [Project Management](/help/managing/best-practices.md)
-
-**Temporary Formatting Tests - Please Ignore**
-
-<!--
-| Something | Something | Something | Something | Something |
-|--- |--- |--- |--- |--- |
-| `env` | `Env` ("QA" | "DEV" | "DEV_443" | "STAGE" | "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
--->
-
-| Something | Something | Something | Something | Something |
-|--- |--- |--- |--- |--- |
-| `env` | `Env` ("QA" \| "DEV" \| "DEV_443" \| "STAGE" \| "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
-
-<!--
-| Something | Something | Something | Something | Something |
-|--- |--- |--- |--- |--- |
-| `env` | `Env` ("QA" `|` "DEV" `|` "DEV_443" `|` "STAGE" `|` "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
--->
-
-| Something | Something | Something | Something | Something |
-|--- |--- |--- |--- |--- |
-| `env` | `Env ("QA" \| "DEV" \| "DEV_443" \| "STAGE" \| "PROD")` | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
