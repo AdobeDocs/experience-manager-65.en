@@ -12,6 +12,12 @@ feature: Adaptive Forms
 ---
 # Analytics using Cloud Service Framework {#analyticsusingcloudframework}
 
+>[!CAUTION]
+>
+>The Analytics dashboard for AEM Forms is deprecated. You can no longer view analytics reports within AEM Forms. To view your forms analytics data, use the Adobe Analytics UI.
+>
+>Also, the [Adobe Analytics 1.4 API has reached end-of-life](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). As a result, Adobe Analytics configurations that use user credentials (username and password) are no longer supported.
+
 AEM Forms integrates with Analytics that lets you capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
 
 >[!NOTE]

@@ -82,6 +82,10 @@ Use the [Web Console to configure the OSGi bundle](/help/sites-deploying/configu
 
 >[!CAUTION]
 >
+>The [Adobe Analytics 1.4 API has reached end-of-life](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). As a result, Adobe Analytics configurations that use user credentials (username and password) are no longer supported.
+
+>[!CAUTION]
+>
 >Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM.
 >
 >The [ActivityMap plugin provided by Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.

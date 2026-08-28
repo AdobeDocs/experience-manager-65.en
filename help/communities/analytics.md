@@ -153,6 +153,10 @@ If not enabled, the video heartbeat code is never instantiated and only the vide
 
 ## AEM Analytics Cloud Service Configuration {#aem-analytics-cloud-service-configuration}
 
+>[!CAUTION]
+>
+>The [Adobe Analytics 1.4 API has reached end-of-life](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). As a result, Adobe Analytics configurations that use user credentials (username and password) are no longer supported.
+
 To create an Analytics Integration, which integrates Adobe Analytics with the AEM community site, using the standard UI on the author instance:
 
 * From global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**
