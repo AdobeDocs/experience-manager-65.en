@@ -83,6 +83,10 @@ To enable complete functionality of the Adaptive Forms Container component, add 
           </sly> 
       ```
 
+      >[!NOTE]
+      >
+      >`core.forms.components.runtime.all` includes all the out-of-the-box (OOTB) components. Instead, create a custom client library that includes only the components that are part of the design policy and intended to be included in the form, and add it to the page.
+
   1. Open the `/apps/[your-sites-project]/components/page/customfooterlibs.html` file and add the following code to the file:
 
       ```
