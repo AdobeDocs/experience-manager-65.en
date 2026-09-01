@@ -366,7 +366,8 @@ JSP file editing now works as expected in CRXDE Lite after AEM 6.5 upgrades. The
 
 #### Security{#foundation-security-6525}
 
-AEM now allowlists additional keywords that contain client-secret. Configuration creation no longer fails when supported integrations use those client-secret naming patterns. (GRANITE-66495)
+* AEM now allowlists additional keywords that contain client-secret. Configuration creation no longer fails when supported integrations use those client-secret naming patterns. (GRANITE-66495)
+* Sling XSS bundle now uses Java HTML Sanitizer library, and usage of the `XSSAPI#filterHTML()` method should be used for rendering HTML content safely and not for passing data to other APIs. (GRANITE-63840)
 
 <!-- #### Sling{#foundation-sling-6525} -->
 
