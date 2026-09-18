@@ -25,6 +25,35 @@ This article lists the critical fixes implemented to address known issues, impro
   </tr>
   <tr>
     <td>
+      <strong>Sep 18, 2026</strong><br>
+      <em>Applies to:</em> AEM 6.5.25.0 Forms JEE deployments (JBoss, WebLogic, WebSphere)<br>
+    </td>
+    <td>
+    <ul>
+    <strong>JBoss:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-win-jboss.zip">Hotfix for AEM Service Pack 6.5.25.0 on Windows for JBoss JEE server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-jboss.tar.gz">Hotfix for AEM Service Pack 6.5.25.0 on Linux for JBoss JEE server</a></li>
+    <strong>WebLogic:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-win-weblogic.zip">Hotfix for AEM Service Pack 6.5.25.0 on Windows for Weblogic JEE server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-weblogic.tar.gz">Hotfix for AEM Service Pack 6.5.25.0 on Linux for Weblogic JEE server</a></li>
+    <strong>WebSphere:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix2-6.5.25.0-win-websphere.zip">Hotfix for AEM Service Pack 6.5.25.0 on Windows for Websphere JEE server</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-websphere.tar.gz">Hotfix for AEM Service Pack 6.5.25.0 on Linux for Websphere JEE server</a></li>
+    </ul>
+    <p><strong>Note:</strong> After installing this patch, Adobe recommends updating to the latest AEM Forms Workbench installer (6.5.25.0). For details, see <a href="https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases">AEM Forms releases</a>.</p>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-26802</b> After the SOAP SDK authentication hardening, LCM Configuration Manager, Workbench, and Designer fail to connect to the server with error <code>ALC-LCM-200-001</code> (the <code>/soap/sdk</code> endpoint rejects an unauthenticated request). This hotfix restores connectivity while keeping authentication enforced on the endpoint.</li>
+    <li><b>FORMS-26679</b> On AEM Forms Document Security, authentication cookies are dropped after a Microsoft Entra ID (MFA) redirect, causing a "Cookies might not be enabled" error when opening policy-protected documents. This hotfix persists the session cookies across the cross-site redirect.</li>
+    <li><b>FORMS-26617</b> On WebLogic, database configuration through Configuration Manager fails with "No suitable driver found" when using Microsoft SQL Server JDBC driver 12.10.0. This hotfix restores successful datasource configuration.</li>
+    <li><b>FORMS-27869</b> PDFs open slowly after installing the latest AEM Forms 6.5 build. This hotfix improves document-open performance.</li>
+    <li>This hotfix also addresses security vulnerabilities in the AEM Forms on JEE SOAP services. For details, see <a href="/help/forms/using/mitigating-soap-service-ssrf-rce-vulnerabilities-for-aem-forms-jee.md">Mitigating SOAP Service SSRF and Remote Code Execution Vulnerabilities for AEM Forms on JEE</a>.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <strong>Jun 8, 2026</strong><br>
       <em>Applies to:</em> AEM 6.5.25.0 Forms JEE deployments<br>
     </td>
