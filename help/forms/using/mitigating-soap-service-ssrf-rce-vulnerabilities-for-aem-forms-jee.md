@@ -42,12 +42,10 @@ Experience Manager Forms Workbench is not affected by these vulnerabilities. How
 
 To resolve these vulnerabilities:
 
-1. [Download and install the AEM Forms on JEE hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0.
-1. Follow the standard [AEM Forms JEE patch installation instructions](/help/release-notes/jee-patch-installer-65.md).
-
->[!IMPORTANT]
->
->This hotfix includes a vulnerability fix bundle that you must install after applying the patch. For the download link and installation steps, see [AEM Forms hotfixes](/help/release-notes/aem-forms-hotfix.md).
+1. [Download and install the AEM Forms on JEE hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0, and follow the standard [AEM Forms JEE patch installation instructions](/help/release-notes/jee-patch-installer-65.md).
+1. Install the vulnerability fix bundle. For the download link and installation steps, see [AEM Forms hotfixes](/help/release-notes/aem-forms-hotfix.md).
+1. Update to the latest AEM Forms Workbench installer. For details, see [AEM Forms hotfixes](/help/release-notes/aem-forms-hotfix.md).
+1. If your projects use AEM Forms client library files such as `adobe-livecycle-client.jar`, use the updated version after installing the hotfix and bundle. For details, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 The hotfix is cumulative, so you can apply it on Service Pack 25 (6.5.25.0) or an earlier Service Pack without installing Service Pack 25 first.
 
