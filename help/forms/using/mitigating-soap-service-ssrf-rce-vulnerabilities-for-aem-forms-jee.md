@@ -15,9 +15,8 @@ release-date: 2026-09-18
 
 | **Impact Level** | **Affected Versions** | **Recommended Action** |
 |---|---|---|
-| **Critical** | AEM 6.5 Forms on JEE Service Pack 25 (6.5.25.0) | [Install the latest hotfix](#resolution) |
-| **Critical** | AEM 6.5 Forms on JEE Service Pack 24 (6.5.24.0) and earlier | Upgrade to a supported Service Pack, then install the latest hotfix |
-| **Not Affected** | AEM Forms on OSGi, Workbench, AEM Forms as a Cloud Service | No action required |
+| **Critical** | AEM 6.5 Forms on JEE Service Pack 25 (6.5.25.0) and earlier | [Install the latest hotfix](#resolution) |
+| **Not Affected** | AEM Forms on OSGi, AEM Forms as a Cloud Service | No action required |
 
 ## Overview
 
@@ -35,8 +34,9 @@ A set of vulnerabilities was identified in the SOAP web services exposed by AEM 
 ### What's Not Affected
 
 - Experience Manager Forms on OSGi (all versions)
-- Experience Manager Forms Workbench (all versions)
 - Experience Manager Forms as a Cloud Service
+
+Experience Manager Forms Workbench is not affected by these vulnerabilities. However, when you apply the hotfix, Adobe recommends updating to the latest Workbench installer. For details, see [AEM Forms hotfixes](/help/release-notes/aem-forms-hotfix.md).
 
 ## Resolution {#resolution}
 
@@ -49,7 +49,7 @@ To resolve these vulnerabilities:
 >
 >This hotfix includes a vulnerability fix bundle that you must install after applying the patch. For the download link and installation steps, see [AEM Forms hotfixes](/help/release-notes/aem-forms-hotfix.md).
 
-If you are on AEM 6.5 Forms on JEE Service Pack 24 (6.5.24.0) or earlier, [upgrade to a supported Service Pack version](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md) before installing the hotfix.
+The hotfix is cumulative, so you can apply it on Service Pack 25 (6.5.25.0) or an earlier Service Pack without installing Service Pack 25 first.
 
 ## References
 
