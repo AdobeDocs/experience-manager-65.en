@@ -13,6 +13,8 @@ This article lists the critical fixes implemented to address known issues, impro
 >[!NOTE]
 >
 > The hotfixes are designed to be cumulative, encompassing all preceding fixes. When you apply the latest hotfix to a release, it not only addresses the most recent issue but also incorporates all prior bug fixes and enhancements.
+>
+> Because the hotfix is cumulative, applying it while on an earlier Service Pack brings your deployment up to date with all fixes released up to and including the Service Pack the hotfix is built on, not only the issues listed for that hotfix.
 
 ## Hotfixes for AEM Forms {#hotfix-for-aem-forms}
 
@@ -53,7 +55,7 @@ This article lists the critical fixes implemented to address known issues, impro
     <li>Click <strong>Choose File</strong>, and then upload the downloaded bundle.</li>
     <li>Wait until the log settles and the bundle shows as <strong>Active</strong>.</li>
     </ol>
-    <p><strong>Note for developers:</strong> If your projects use AEM Forms client JAR files such as <code>adobe-livecycle-client.jar</code> (see <a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">Including AEM Forms Java library files</a>), the patch and bundle also update these files. After installing the hotfix and bundle, use the updated <code>adobe-livecycle-client.jar</code> in your project's classpath.</p>
+    <p><strong>Note for developers:</strong> This patch includes a major update to the SDK client library <code>adobe-livecycle-client.jar</code> (see <a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">Including AEM Forms Java library files</a>). If your project uses this JAR file, update <code>adobe-livecycle-client.jar</code> in your project's classpath after you install the hotfix. The latest version is available at <code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>.</p>
     </td>
     <td>
     <ul>
