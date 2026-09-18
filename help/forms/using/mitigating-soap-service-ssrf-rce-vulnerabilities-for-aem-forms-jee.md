@@ -45,6 +45,10 @@ To resolve these vulnerabilities:
 1. [Download and install the AEM Forms on JEE hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0.
 1. Follow the standard [AEM Forms JEE patch installation instructions](/help/release-notes/jee-patch-installer-65.md).
 
+>[!IMPORTANT]
+>
+>This hotfix includes a vulnerability fix bundle that you must install after applying the patch. For the download link and installation steps, see [AEM Forms hotfixes](/help/release-notes/aem-forms-hotfix.md).
+
 If you are on AEM 6.5 Forms on JEE Service Pack 24 (6.5.24.0) or earlier, [upgrade to a supported Service Pack version](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md) before installing the hotfix.
 
 ## References

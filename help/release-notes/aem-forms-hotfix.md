@@ -41,6 +41,18 @@ This article lists the critical fixes implemented to address known issues, impro
     <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-websphere.tar.gz">Hotfix for AEM Service Pack 6.5.25.0 on Linux for Websphere JEE server</a></li>
     </ul>
     <p><strong>Note:</strong> After installing this patch, Adobe recommends updating to the latest AEM Forms Workbench installer (6.5.25.0). For details, see <a href="https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases">AEM Forms releases</a>.</p>
+    <p><strong>Vulnerability fix bundle:</strong></p>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/SP25Bundles_VULN-36670.zip">Vulnerability fix bundle for AEM 6.5.25.0</a></li>
+    </ul>
+    <p><strong>Important:</strong> After installing the patch, install the vulnerability fix bundle:</p>
+    <ol>
+    <li>Open the OSGi console at <code>http://&lt;host&gt;:&lt;port&gt;/lc/system/console/bundles</code>.</li>
+    <li>Click <strong>Install/Update</strong>.</li>
+    <li>Select the <strong>Start Bundle</strong> and <strong>Refresh Packages</strong> checkboxes.</li>
+    <li>Click <strong>Choose File</strong>, and then upload the downloaded bundle.</li>
+    <li>Wait until the log settles and the bundle shows as <strong>Active</strong>.</li>
+    </ol>
     </td>
     <td>
     <ul>
