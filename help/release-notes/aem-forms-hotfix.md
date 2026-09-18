@@ -53,6 +53,7 @@ This article lists the critical fixes implemented to address known issues, impro
     <li>Click <strong>Choose File</strong>, and then upload the downloaded bundle.</li>
     <li>Wait until the log settles and the bundle shows as <strong>Active</strong>.</li>
     </ol>
+    <p><strong>Note for developers:</strong> If your projects use AEM Forms client JAR files such as <code>adobe-livecycle-client.jar</code> (see <a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">Including AEM Forms Java library files</a>), the patch and bundle also update these files. After installing the hotfix and bundle, use the updated <code>adobe-livecycle-client.jar</code> in your project's classpath.</p>
     </td>
     <td>
     <ul>
