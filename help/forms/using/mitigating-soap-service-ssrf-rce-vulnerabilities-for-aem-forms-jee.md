@@ -36,7 +36,7 @@ A set of vulnerabilities was identified in the SOAP web services exposed by AEM 
 - Experience Manager Forms on OSGi (all versions)
 - Experience Manager Forms as a Cloud Service
 
-Experience Manager Forms Workbench is not affected by these vulnerabilities. However, when you apply the hotfix, Adobe recommends updating to the latest Workbench installer. For details, see [AEM Forms hotfixes](/help/release-notes/aem-forms-hotfix.md).
+Experience Manager Forms Workbench is not affected by these vulnerabilities. However, applying the hotfix requires you to update to the latest Workbench installer. For details, see [AEM Forms hotfixes](/help/release-notes/aem-forms-hotfix.md).
 
 ## Resolution {#resolution}
 
