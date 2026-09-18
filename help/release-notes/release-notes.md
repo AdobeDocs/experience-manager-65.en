@@ -59,7 +59,7 @@ Content Fragments and the GraphQL API also receive reliability improvements, cov
     > * [Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) for standalone environments.
     > * [Upgrade JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) for cluster environments.
 
-* **Configuration Manager (LCM) Express Mode credential prompt:** When you configure AEM Forms on JEE using Configuration Manager (LCM) in Express Mode, LCM now prompts you to enter the AEM administrator credentials during configuration instead of using built-in default credentials. This change is available through the [hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (FORMS-26365)
+* **Configuration Manager (LCM) Express Mode credential prompt:** When you configure AEM Forms on JEE using Configuration Manager (LCM) in Express Mode, LCM now displays a new screen that prompts you to enter the AEM administrator credentials during configuration instead of using built-in default credentials. This change is available through the [hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. For the configuration steps, see [Installing and Deploying AEM Forms on JEE Using JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65). (FORMS-26365)
 
 ## Fixed issues in Service Pack 25 {#fixed-issues}
 
