@@ -59,6 +59,8 @@ Content Fragments and the GraphQL API also receive reliability improvements, cov
     > * [Upgrade JBoss EAP from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) for standalone environments.
     > * [Upgrade JBoss EAP cluster from 7.4.10 to 7.4.23 for AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) for cluster environments.
 
+* **Configuration Manager (LCM) Express Mode credential prompt:** When you configure AEM Forms on JEE using Configuration Manager (LCM) in Express Mode, LCM now displays a new screen that prompts you to enter the AEM administrator credentials during configuration instead of using built-in default credentials. This change is available through the [hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. For the configuration steps, see [Installing and Deploying AEM Forms on JEE Using JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65). (FORMS-26365)
+
 ## Fixed issues in Service Pack 25 {#fixed-issues}
 
 <!-- 6.5.25.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
@@ -601,6 +603,10 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
 
 * **NPR-44100** After installing AEM 6.5 Service Pack 25 on WAR/JEE deployments (including AEM Forms on JEE), the `com.adobe.cq.screens.sessions` bundle remains in the Installed state and never becomes Active. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0.
+* **FORMS-26802** After the SOAP SDK authentication hardening, LCM Configuration Manager, Workbench, and Designer fail to connect to the AEM Forms on JEE server with error `ALC-LCM-200-001` because the `/soap/sdk` endpoint rejects unauthenticated requests. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0.
+* **FORMS-26679** On AEM Forms Document Security, authentication cookies are dropped after a Microsoft Entra ID (MFA) redirect, causing a "Cookies might not be enabled" error when opening policy-protected documents. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0.
+* **FORMS-26617** On AEM Forms on JEE with WebLogic, database configuration through Configuration Manager fails with "No suitable driver found" when using Microsoft SQL Server JDBC driver 12.10.0. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0.
+* **FORMS-27869** PDFs open slowly after installing the latest AEM Forms 6.5 build. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0.
 * **FORMS-23491** AEM Forms 6.5.24.0 JEE deployments (JBoss, WebLogic, WebSphere) are affected by CVE-2025-64775, an Apache Struts denial-of-service vulnerability in multipart request processing. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.24.0.
 * **FORMS-14926** After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder, perform the following steps to resolve the issue:
 
