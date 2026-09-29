@@ -168,9 +168,9 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
 The value of **Yes** is an integer of **1**. This is useful when you write the GraphQL query in Java&trade;.
 
-   >[!TIP]
-   >
-   >For more detailed documentation about Adobe Commerce GraphQL see the following [GraphQL overview](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+>[!TIP]
+>
+>For more detailed documentation about Adobe Commerce GraphQL see the following [GraphQL overview](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Update the Sling Model for the Product Teaser {#updating-sling-model-product-teaser}
 

@@ -61,11 +61,12 @@ Form authors can compare two different versions of a form for previewing purpose
 
 A review is a mechanism that allows one or more reviewers to comment on forms. Any form user can comment on a form or review a form through comments. To comment on a form, select a **[!UICONTROL Form]**, and add a **[!UICONTROL Comment]** to the form.
 
-   >[!NOTE]
-   > When you use comments in adaptive form core components as discussed above, the form functionality, [adding reviewers to forms](/help/forms/using/create-reviews-forms.md) is disabled.
+>[!NOTE]
+>
+>When you use comments in adaptive form core components as discussed above, the form functionality, [adding reviewers to forms](/help/forms/using/create-reviews-forms.md) is disabled.
 
 
-  ![Add comments on a form](assets/form-comments.png)
+![Add comments on a form](assets/form-comments.png)
 
 ## Add Annotations {#adaptive-form-annotations}
 

@@ -61,38 +61,38 @@ The **Email Tools** component for ExactTarget can add more email functionality t
 
 1. Select an option from the **Options** menu:
 
-<table>
- <tbody>
-  <tr>
-   <td>Physical Mailing Address (Required)</td>
-   <td>This component inserts the physical mailing address of your organization in your email.</td>
-  </tr>
-  <tr>
-   <td>Profile Center (Required)</td>
-   <td>The profile center is a webpage where subscribers can enter and maintain the personal information that you keep about them.</td>
-  </tr>
-  <tr>
-   <td>View Email as a Web Page</td>
-   <td>This component allows the user to view the email as a webpage.</td>
-  </tr>
-  <tr>
-   <td>Privacy Policy</td>
-   <td>This component inserts the link to your privacy policy in the email.<br /> </td>
-  </tr>
-  <tr>
-   <td>Unsubscribe Center</td>
-   <td>Gives the option to the user to unsubscribe from your mailing list.</td>
-  </tr>
-  <tr>
-   <td>Subscription Center</td>
-   <td>A subscription center is a web page where a subscriber can control the messages they receive from your organization.</td>
-  </tr>
-  <tr>
-   <td>Track Email Opens</td>
-   <td>A hidden component that lets you use ExactTarget tracking feature.<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>Physical Mailing Address (Required)</td>
+      <td>This component inserts the physical mailing address of your organization in your email.</td>
+   </tr>
+   <tr>
+      <td>Profile Center (Required)</td>
+      <td>The profile center is a webpage where subscribers can enter and maintain the personal information that you keep about them.</td>
+   </tr>
+   <tr>
+      <td>View Email as a Web Page</td>
+      <td>This component allows the user to view the email as a webpage.</td>
+   </tr>
+   <tr>
+      <td>Privacy Policy</td>
+      <td>This component inserts the link to your privacy policy in the email.<br /> </td>
+   </tr>
+   <tr>
+      <td>Unsubscribe Center</td>
+      <td>Gives the option to the user to unsubscribe from your mailing list.</td>
+   </tr>
+   <tr>
+      <td>Subscription Center</td>
+      <td>A subscription center is a web page where a subscriber can control the messages they receive from your organization.</td>
+   </tr>
+   <tr>
+      <td>Track Email Opens</td>
+      <td>A hidden component that lets you use ExactTarget tracking feature.<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
    >[!NOTE]
    >

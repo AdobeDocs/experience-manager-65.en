@@ -144,20 +144,20 @@ The `cq-search` project contains the `AbstractPredicateEvaluator` abstract class
 
    The following snippet shows the differences in [unified diff format](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
-```
-@@ -19,8 +19,11 @@
-  */
- package com.adobe.aem.docs.search;
+   ```
+    @@ -19,8 +19,11 @@
+    */
+    package com.adobe.aem.docs.search;
 
-+import org.apache.felix.scr.annotations.Component;
-+
- import com.day.cq.search.eval.AbstractPredicateEvaluator;
+    +import org.apache.felix.scr.annotations.Component;
+    +
+    import com.day.cq.search.eval.AbstractPredicateEvaluator;
 
-+@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
- public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
+    +@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
+    public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
 
- }
-```
+    }
+   ```
 
    [aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
 

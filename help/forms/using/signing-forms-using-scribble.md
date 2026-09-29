@@ -34,18 +34,18 @@ You can use the **Scribble Signature** component and **Signature Step** componen
  Once you select the Done![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
 You can select the **Configure** ![configure](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. 
+
 * When the aspect ratio of the Scribble Signature canvas is less than 1, the geolocation information is added at the bottom of the Scribble Signature canvas.
 
 * When the aspect ratio of the Scribble Signature canvas is more than 1, the geolocation information is added to the right-side of the Scribble Signature canvas. 
  
- ![scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+![scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
 
 
-   >[!NOTE]
-   >
-   >Signatures are always saved in a PNG format.
-   >
-   
+>[!NOTE]
+>
+>Signatures are always saved in a PNG format.
+
 ## Configure an adaptive form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Create a Document of Record option enabled or form template based adaptive form. For step-by-step information, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).
