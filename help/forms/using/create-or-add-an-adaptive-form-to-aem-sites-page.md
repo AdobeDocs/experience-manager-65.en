@@ -122,12 +122,12 @@ To enable complete functionality of the Adaptive Forms Container component, add 
 
 To enable [!UICONTROL Adaptive Forms Container] component in template's policy, perform the following steps:
 
-  1. Open the AEM Sites page or Experience Fragment for editing. To open the page for editing, select the page, and click Edit.
-  1. Open the template of your Sites or Experience Fragment page. To open the template, go to the [!UICONTROL Page Information] ![Page Information](/help/forms/using/assets/Smock_Properties_18_N.svg) > [!UICONTROL Edit Template]. It opens the corresponding template in template editor.
-  1. In the Structure view, click the **[!UICONTROL Policy]** ![Policy](/help/forms/using/assets/Smock_FeedManagement_18_N.svg) icon in the menu bar. In the **[!UICONTROL Allowed Components]** list and select the **[!UICONTROL Adaptive Forms Container]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
-  1. Click **[!UICONTROL Done]**.
+1. Open the AEM Sites page or Experience Fragment for editing. To open the page for editing, select the page, and click Edit.
+1. Open the template of your Sites or Experience Fragment page. To open the template, go to the [!UICONTROL Page Information] ![Page Information](/help/forms/using/assets/Smock_Properties_18_N.svg) > [!UICONTROL Edit Template]. It opens the corresponding template in template editor.
+1. In the Structure view, click the **[!UICONTROL Policy]** ![Policy](/help/forms/using/assets/Smock_FeedManagement_18_N.svg) icon in the menu bar. In the **[!UICONTROL Allowed Components]** list and select the **[!UICONTROL Adaptive Forms Container]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
+1. Click **[!UICONTROL Done]**.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 

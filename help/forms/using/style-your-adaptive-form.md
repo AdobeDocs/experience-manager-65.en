@@ -438,12 +438,14 @@ Some styles apply to only a specific component. Such components are styled in ad
 You can use various fonts to design an adaptive form. All the devices that the adaptive form is viewed on may not have the fonts used to design the adaptive form. You can use a web font service to deliver the required fonts to the target device.
 
 [!DNL Adobe Fonts] is a Web Fonts service. You can configure and use the service with adaptive forms. To use [!DNL Adobe Fonts] in an adaptive form:
-1. Browse the [library of Adobe fonts](https://fonts.adobe.com/) and choose font to style your form. 
+
 <!--
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
 -->
+
+1. Browse the [library of Adobe fonts](https://fonts.adobe.com/) and choose font to style your form. 
 
    >[!NOTE]
    >
@@ -459,23 +461,25 @@ You can use various fonts to design an adaptive form. All the devices that the a
    >
    > You can only add fonts to your web project if they have the </> button available. 
 
-2. Name your web project.
-3. Select the checkboxes to select the font weights and styles you want to include.
+1. Name your web project.
+1. Select the checkboxes to select the font weights and styles you want to include.
 
     ![add a font library](assets/add-a-font-window.png)
 
-4. Select **Click** to create the project.
-5. Copy the embed code and the URL from the screen.
+1. Select **Click** to create the project.
+1. Copy the embed code and the URL from the screen.
       ![embed code and URL](assets/font-add-url.png)
 
-6. Click **Done** to close the web project window.
-7. Log into your AEM instance and go to URL `http://server:port/crx/de/index.jsp#`
-8. Create a folder structure in CRXDE, for example `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`. 
-9. Go to the newly created `clientlibs` folder and add the `allowProxy` and `categories` properties.
-10. Navigate to `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` and create a css folder.
-11. Go to the created CSS folder and create a file. For example, create a file as `fonts.css` and paste the embed code along with the URL.
+1. Click **Done** to close the web project window.
+1. Log into your AEM instance and go to URL `http://server:port/crx/de/index.jsp#`
+1. Create a folder structure in CRXDE, for example `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`. 
+1. Go to the newly created `clientlibs` folder and add the `allowProxy` and `categories` properties.
+1. Navigate to `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` and create a css folder.
+1. Go to the created CSS folder and create a file. For example, create a file as `fonts.css` and paste the embed code along with the URL.
+
    ![Folder structure](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. Save the changes.
+
+1. Save the changes.
 
 >[!NOTE]
 >
