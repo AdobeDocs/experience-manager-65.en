@@ -49,9 +49,9 @@ This page provides the essential information for working with the questions and 
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [QnA API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [QnA API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [QnA Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [QnA Endpoints](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](server-customize.md)
 

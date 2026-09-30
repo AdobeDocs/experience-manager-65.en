@@ -174,7 +174,7 @@ A helper to return content depending on an equality conditional.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-A block helper that tests the current value of [WCM mode](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) against a string separated list of modes.
+A block helper that tests the current value of [WCM mode](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) against a string separated list of modes.
 
 ### Parameters {#parameters-4}
 
@@ -184,7 +184,7 @@ A block helper that tests the current value of [WCM mode](https://developer.adob
 
 * **mode**: String
 
-  (Optional) A comma-separated list of [WCM modes](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
+  (Optional) A comma-separated list of [WCM modes](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
 
 ### Example {#example-2}
 
@@ -517,7 +517,7 @@ Custom helpers must be implemented on the server-side and the client-side, espec
 
 ### Server-side Custom Helpers {#server-side-custom-helpers}
 
-To implement and register a custom SCF helper on the server-side, simply implement the Java&trade; interface [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), make it an [OSGi Service](../../help/sites-developing/the-basics.md#osgi) and install it as part of an OSGi bundle.
+To implement and register a custom SCF helper on the server-side, simply implement the Java&trade; interface [TemplateHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), make it an [OSGi Service](../../help/sites-developing/the-basics.md#osgi) and install it as part of an OSGi bundle.
 
 For example:
 

@@ -49,7 +49,7 @@ It maps a higher-level search constraint (such as "width &gt; 200") to a specifi
 
 >[!NOTE]
 >
->For more information about the `PredicateEvaluator` and the `com.day.cq.search` package, see the [Java&trade; documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/search/package-summary.html).
+>For more information about the `PredicateEvaluator` and the `com.day.cq.search` package, see the [Java&trade; documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementing a Custom Predicate Evaluator for Replication Metadata {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -135,7 +135,7 @@ The `cq-search` project contains the `AbstractPredicateEvaluator` abstract class
 
 >[!NOTE]
 >
->The following procedure explains how to build an `Xpath` expression to filter data. Another option would be to implement the `includes` method that selects data on a row basis. See the [Java&trade; documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) for more information.
+>The following procedure explains how to build an `Xpath` expression to filter data. Another option would be to implement the `includes` method that selects data on a row basis. See the [Java&trade; documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) for more information.
 
 1. Create a Java&trade; class which extends `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. Annotate your class with a `@Component` like the following

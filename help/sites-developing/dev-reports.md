@@ -102,7 +102,7 @@ Each column is an instance of the [ `columnbase` component](#column-base-compone
 The query:
 
 * Is defined as part of the [ `reportbase`](#report-base) component.
-* Is based on the [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
+* Is based on the [CQ QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
 * Retrieves the data used as the basis of the report. Each row of the result set (table) is tied to a node as returned by the query. Specific information for [individual columns](#column-base-component) is then extracted from this data set.
 
 * Usually consists of:
@@ -376,7 +376,7 @@ N:charting
 
 Every report can have a configuration dialog, allowing the user to specify various parameters for the report. This dialog is accessible through the **Edit** button when the report page is open.
 
-This dialog is a standard CQ [dialog](/help/sites-developing/components-basics.md#dialogs) and can be configured as such (see [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) for more information).
+This dialog is a standard CQ [dialog](/help/sites-developing/components-basics.md#dialogs) and can be configured as such (see [CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog) for more information).
 
 An example dialog can look as follows:
 

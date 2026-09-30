@@ -54,7 +54,7 @@ CRX lets you configure the access rights for both user and group accounts. The s
 
 >[!NOTE]
 >
->CRX implements [access control as defined by JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implements [access control as defined by JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >A standard installation of a CRX repository is configured to use resource-based access control lists. This is one possible implementation of JSR-283 access control and one of the implementations present with Jackrabbit.
 
@@ -486,7 +486,7 @@ The policies can be selected for:
 
 ### Privileges {#privileges}
 
-The following privileges are available for selection when adding an access control entry (see the [Security API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) for full details):
+The following privileges are available for selection when adding an access control entry (see the [Security API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) for full details):
 
 <table>
  <tbody>
