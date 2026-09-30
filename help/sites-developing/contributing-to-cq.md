@@ -38,7 +38,7 @@ At the highest level, you should have a solid understanding of:
 * Browser cookies
 * and other modern web-development concepts
 
-The technology stack of Adobe Experience Manager is based on the [Apache Felix](https://felix.apache.org/documentation/index.html) OSGI container with the [Apache Sling](https://sling.apache.org/index.html) web framework and embeds a Java&trade; Content Repository ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) based on [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Familiarize yourself with these individual projects, and any other open-source components (for example, Apache Lucene) used in the area where you intend to contribute.
+The technology stack of Adobe Experience Manager is based on the [Apache Felix](https://felix.apache.org/documentation/index.html) OSGI container with the [Apache Sling](https://sling.apache.org/index.html) web framework and embeds a Java&trade; Content Repository ([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)) based on [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Familiarize yourself with these individual projects, and any other open-source components (for example, Apache Lucene) used in the area where you intend to contribute.
 
 ## Tribal Knowledge {#tribal-knowledge}
 

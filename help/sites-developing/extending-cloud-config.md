@@ -132,7 +132,7 @@ propertyname
 
 ### API {#api}
 
-For reference documentation on the API, see [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+For reference documentation on the API, see [com.day.cq.wcm.webservicesupport](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### AEM Integration {#aem-integration}
 

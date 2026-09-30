@@ -29,7 +29,7 @@ AEM uses the [ExtJS](https://www.sencha.com/) widgets library, which provides th
 
 These widgets are included within AEM and, in addition to being used by AEM itself, can be used by any website built using AEM.
 
-For a complete reference of all the available widgets in AEM, see the [widget API documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) or the [list of existing xtypes](/help/sites-developing/xtypes.md). In addition, many examples showing how to use the ExtJS framework are available on the [Sencha](https://examples.sencha.com/extjs/7.6.0/) site, the owner of the framework.
+For a complete reference of all the available widgets in AEM, see the [widget API documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) or the [list of existing xtypes](/help/sites-developing/xtypes.md). In addition, many examples showing how to use the ExtJS framework are available on the [Sencha](https://examples.sencha.com/extjs/7.6.0/) site, the owner of the framework.
 
 This page gives some insights about how to use and extend widgets. It first describes how to [include client-sided code in a page](#including-the-client-sided-code-in-a-page). It then describes some sample components that have been created to illustrate some basic use and extension. Those components are available in the **Using ExtJS Widgets** package on **Package Share**.
 
@@ -391,7 +391,7 @@ The **Custom Multifield** widget-based dialog:
 * Displays one `tabpanel` widget (node type = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) containing a panel (node type = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
 * The panel has a `multifield` widget (node type = `cq:Widget`, xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`).
 * The `multifield` widget has a fieldconfig (node type = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) that is based on the custom xtype ' `ejstcustom`':
-    * ' `fieldconfig`' is a config option of the ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)` object.
+    * ' `fieldconfig`' is a config option of the ` [CQ.form.MultiField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.MultiField)` object.
     * ' `optionsProvider`' is a configuration of the `ejstcustom` widget. It is set with the `Ejst.x3.provideOptions` method which is defined in `exercises.js` at:
       `/apps/extjstraining/clientlib/js/exercises.js`
       and returns two options.
@@ -405,12 +405,12 @@ The custom `multifield` widget (xtype = `ejstcustom`):
 * Is a JavaScript object called `Ejst.CustomWidget`
 * Is defined in the `CustomWidget.js` JavaScript file at:
   `/apps/extjstraining/clientlib/js/CustomWidget.js`
-* Extends the ` [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)` widget.
+* Extends the ` [CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField)` widget.
 * Has three fields: `hiddenField` (Textfield), `allowField` (ComboBox), and `otherField` (Textfield)
 * Overrides `CQ.Ext.Component#initComponent` to add the three fields:
-    * `allowField` is a [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) object of type 'select'. optionsProvider is a configuration of the Selection object that is instantiated with the optionsProvider configuration of the CustomWidget defined in the dialog
-    * `otherField` is a [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) object
-* Overrides the methods `setValue`, `getValue`, and `getRawValue` of [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) to set and retrieve the value of CustomWidget with the format:
+    * `allowField` is a [CQ.form.Selection](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.Selection) object of type 'select'. optionsProvider is a configuration of the Selection object that is instantiated with the optionsProvider configuration of the CustomWidget defined in the dialog
+    * `otherField` is a [CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) object
+* Overrides the methods `setValue`, `getValue`, and `getRawValue` of [CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField) to set and retrieve the value of CustomWidget with the format:
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`.
 * Registers itself as ' `ejstcustom`' xtype:
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
@@ -438,13 +438,13 @@ The custom treebrowse widget (xtype = `ejstbrowse`):
 * Is a JavaScript object called `Ejst.CustomWidget`
 * Is defined in the `CustomBrowseField.js` JavaScript file at:
   `/apps/extjstraining/clientlib/js/CustomBrowseField.js`
-* Extends ` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`.
+* Extends ` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`.
 * Defines a browse window called `browseWindow`.
-* Overrides ` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick` to show the browse window when the arrow is clicked.
-* Defines a [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) object:
+* Overrides ` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick` to show the browse window when the arrow is clicked.
+* Defines a [CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) object:
     * It gets its data by calling the servlet registered at `/bin/wcm/siteadmin/tree.json`.
     * Its root is " `apps/extjstraining`".
-* Defines a `window` object ( ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`):
+* Defines a `window` object ( ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`):
     * Based on the pre-defined panel.
     * Has an **OK** button that sets the value of the selected path and hides the panel.
 * The window is anchored below the **Path** field.
@@ -477,8 +477,8 @@ The RTE plugin:
 * Is a JavaScript object called `Ejst.InsertTextPlugin`
 * Is defined in the `InsertTextPlugin.js` JavaScript file at:
   `/apps/extjstraining/clientlib/js/InsertTextPlugin.js`
-* Extends the ` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` object.
-* The following methods define the ` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` object and are overridden in the implementing plugin:
+* Extends the ` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` object.
+* The following methods define the ` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` object and are overridden in the implementing plugin:
     * `getFeatures()` returns an array of all the features that the plugin makes available.
     * `initializeUI()` adds the new button to the RTE toolbar.
     * `notifyPluginConfig()` displays title and text when the button is hovered.
@@ -508,7 +508,7 @@ The **Rich Text Editor (RTE) Plug-in** based dialog displays as follows:
 
 ### Tree Overview {#tree-overview}
 
-The out-of-the-box ` [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` object provides tree-structured UI representation of tree-structured data. The Tree Overview component included in the **Using ExtJS Widgets** package shows how to use the `TreePanel` object to display a JCR tree below a given path. The window itself can be docked/undocked. In this example, the window logic is embedded in the component jsp between &lt;script&gt;&lt;/script&gt; tags.
+The out-of-the-box ` [CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` object provides tree-structured UI representation of tree-structured data. The Tree Overview component included in the **Using ExtJS Widgets** package shows how to use the `TreePanel` object to display a JCR tree below a given path. The window itself can be docked/undocked. In this example, the window logic is embedded in the component jsp between &lt;script&gt;&lt;/script&gt; tags.
 
 To include the **Tree Overview** component to the sample page:
 
@@ -540,13 +540,13 @@ The component jsp:
 The JavaScript code embedded in the component jsp:
 
 * Defines a `tree` object by trying to retrieve a tree window from the page.
-* If the window displaying the tree does not exist, `treePanel` ([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) is created:
+* If the window displaying the tree does not exist, `treePanel` ([CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) is created:
     * `treePanel` contains the data that is used to create the window.
     * The data are retrieved by calling the servlet registered at:
       `/bin/wcm/siteadmin/tree.json`
 * The `beforeload` listener makes sure that the selected node is loaded.
 * The `root` object sets the path `apps/extjstraining` as the tree root.
-* `tree` ( ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`) is set based on the pre-defined `treePanel`, and is displayed with:
+* `tree` ( ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`) is set based on the pre-defined `treePanel`, and is displayed with:
   `tree.show();`
 * If the window exists, it is displayed based on the width, height, and docked properties retrieved from the repository.
 
@@ -617,17 +617,17 @@ The JavaScript code embedded in the component jsp:
 
 * Defines the `grid` object by trying to retrieve the window component from the page:
   `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
-* If `grid` does not exist, a [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) object ( `gridPanel`) is defined by calling the `getGridPanel()` method (see below). This method is defined in `defaultgrid.js`.
-* `grid` is a ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)` object, based on the pre-defined GridPanel, and is displayed: `grid.show();`
+* If `grid` does not exist, a [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) object ( `gridPanel`) is defined by calling the `getGridPanel()` method (see below). This method is defined in `defaultgrid.js`.
+* `grid` is a ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)` object, based on the pre-defined GridPanel, and is displayed: `grid.show();`
 * If `grid` exists, it is displayed based on the width, height, and docked properties retrieved from the repository.
 
-The JavaScript file ( `defaultgrid.js`) referenced in the component jsp defines the `getGridPanel()` method which is called by the script embedded in the JSP and returns a ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object, based on static data. The logic is as follows:
+The JavaScript file ( `defaultgrid.js`) referenced in the component jsp defines the `getGridPanel()` method which is called by the script embedded in the JSP and returns a ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object, based on static data. The logic is as follows:
 
 * `myData` is an array of static data formatted as a table of five columns and four rows.
 * `store` is a `CQ.Ext.data.Store` object that consumes `myData`.
 * `store` is loaded in memory:
   `store.load();`
-* `gridPanel` is a ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object that consumes `store`:
+* `gridPanel` is a ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object that consumes `store`:
     * the column widths are always reproportioned:
       `forceFit: true`
     * only one row at a time can be selected:
@@ -641,7 +641,7 @@ When you install the package, the `content.jsp` of the **Grid Overview** compone
 * Is based on data retrieved from the repository by calling a servlet.
 * The cells of the last column can be edited. The value is persisted in a `test` property below the node defined by the path displayed in the first column.
 
-As explained in the section before, the window object gets its ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object by calling the `getGridPanel()` method defined in the `defaultgrid.js` file at `/apps/extjstraining/components/gridoverview/defaultgrid.js`. The **Grid Overview **component provides a different implementation for the `getGridPanel()` method, defined in the `referencesearch.js` file at `/apps/extjstraining/components/gridoverview/referencesearch.js`. By switching the .js file that is referenced in the component jsp, the grid is based on data retrieved from the repository.
+As explained in the section before, the window object gets its ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object by calling the `getGridPanel()` method defined in the `defaultgrid.js` file at `/apps/extjstraining/components/gridoverview/defaultgrid.js`. The **Grid Overview **component provides a different implementation for the `getGridPanel()` method, defined in the `referencesearch.js` file at `/apps/extjstraining/components/gridoverview/referencesearch.js`. By switching the .js file that is referenced in the component jsp, the grid is based on data retrieved from the repository.
 
 Switch the .js file that is referenced in the component jsp:
 
@@ -656,22 +656,22 @@ The component displays as follows:
 
 ![screen_shot_2012-02-01at121429pm](assets/screen_shot_2012-02-01at121429pm.png)
 
-The JavaScript code referenced in the component jsp ( `referencesearch.js`) defines the `getGridPanel()` method called from the component jsp and returns a ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object, based on data that are dynamically retrieved from the repository. The logic in `referencesearch.js` defines some dynamic data as a base for the GridPanel:
+The JavaScript code referenced in the component jsp ( `referencesearch.js`) defines the `getGridPanel()` method called from the component jsp and returns a ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object, based on data that are dynamically retrieved from the repository. The logic in `referencesearch.js` defines some dynamic data as a base for the GridPanel:
 
-* `reader` is a ` [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)`object that reads the servlet response in json format for three columns.
-* `cm` is a ` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` object for three columns.
+* `reader` is a ` [CQ.Ext.data.JsonReader](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)`object that reads the servlet response in json format for three columns.
+* `cm` is a ` [CQ.Ext.grid.ColumnModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` object for three columns.
   The "Test" column cells can be edited as they are defined with an editor:
-  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
+  `editor: new [CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
 * the columns are sortable:
   `cm.defaultSortable = true;`
-* `store` is a ` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)` object:
+* `store` is a ` [CQ.Ext.data.GroupingStore](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)` object:
     * it gets its data by calling the servlet registered at " `/bin/querybuilder.json`" with a few parameters used to filter the query
     * it is based on `reader`, defined beforehand
     * the table is sorted according to the '**jcr:path**' column in ascending order
-* `gridPanel` is a ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` object that can be edited:
+* `gridPanel` is a ` [CQ.Ext.grid.EditorGridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` object that can be edited:
     * it is based on the pre-defined `store` and on the column model `cm`
     * only one row at a time can be selected:
-      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
+      `sm: new [CQ.Ext.grid.RowSelectionModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
     * the `afteredit` listener makes sure that after a cell in the "**Test**" column has been edited:
         * the property ' `test`' of the node at the path defined by the "**jcr:path**" column is set in the repository with the value of the cell
         * if the POST is successful, the value is added to the `store` object, otherwise it is rejected

@@ -125,4 +125,4 @@ The out-of-the-box configuration uses the following transformers:
 * `transformer-cfm-parfilter` - filters out unwanted paragraphs if a paragraph range is specified (as can be done with the Content Fragment component)
 * `transformer-cfm-assetprocessor` - is used internally for retrieving a list of the assets that are embedded in the fragment
 
-The rendering process is exposed through [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) and can be used (for example) by custom components, if necessary.
+The rendering process is exposed through [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) and can be used (for example) by custom components, if necessary.

@@ -45,7 +45,7 @@ Thus, any code using RelativeTimeFormat() API must change:
 
 The failure is different on Author and Publish. On Author, it fails silently and simply does not display the forum topics. On Publish, it throws up the error on the page.
 
-See the [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API for more information.
+See the [com.day.cq.commons.date.RelativeTimeFormat](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API for more information.
 
 ## Common Concerns {#common-concerns}
 

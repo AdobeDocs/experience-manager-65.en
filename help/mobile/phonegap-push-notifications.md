@@ -206,7 +206,7 @@ Create two content nodes (one in app-config and one in app-config-dev) called no
 * /content/`<your app>`/shell/jcr:content/pge-app/app-config/notificationsConfig
 
 With these properties (.content.xml files) :
-&lt;jcr:root xmlns:jcr=" [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)" xmlns:nt=" [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)"
+&lt;jcr:root xmlns:jcr=" [https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html)" xmlns:nt=" [https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html)"
 jcr:primaryType="nt:unstructured"
 excludeProperties="[appAPIAccessToken]"
 path="../../../.."

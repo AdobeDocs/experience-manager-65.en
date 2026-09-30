@@ -24,7 +24,7 @@ After you create a filter, you can use it in the [group configuration.](/help/si
 
 ## The Filter Java&trade; Class {#the-filter-java-class}
 
-A device group filter is an OSGi component that implements the [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. When deployed, the implementation class provides a filter service that is available to device group configurations.
+A device group filter is an OSGi component that implements the [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. When deployed, the implementation class provides a filter service that is available to device group configurations.
 
 The solution described in this article uses the Apache Felix Maven SCR Plugin to facilitate the development of the component and service. Therefore, the example Java&trade; class uses the `@Component`and `@Service` annotations. The class has the following structure:
 
@@ -88,7 +88,7 @@ The `matches` function returns `true` if the device capabilities satisfy all the
 * The name of the user agent
 * A Map object that contains the device capabilities. The Map keys are the WURFL&trade; capability names and the values are the corresponding values from the WURFL&trade; database.
 
-The [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface contains a subset of the WURFL&trade; capability names in static fields. Use these field constants as keys when retrieving values from the Map of device capabilities.
+The [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface contains a subset of the WURFL&trade; capability names in static fields. Use these field constants as keys when retrieving values from the Map of device capabilities.
 
 For example, the following code example determines whether the device supports CSS:
 
