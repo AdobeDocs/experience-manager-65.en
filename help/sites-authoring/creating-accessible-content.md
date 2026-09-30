@@ -989,7 +989,7 @@ In AEM, the default language of your page is set when creating the page, but may
 
 * [Understanding Success Criterion 3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 * [How to meet Success Criterion 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
-* The codes are based on ISO 639-1. A more extensive list of codes for each language can be found at the [W3 Schools site](https://www.w3schools.com/tags/ref_language_codes.asp).
+* The codes are based on ISO 639-1. A more extensive list of codes for each language can be found [here](https://boostlingo.com/resources/iso-639-1-language-codes/).
 
 ### Language of Parts (3.1.2)  {#language-of-parts}
 
