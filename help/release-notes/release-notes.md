@@ -72,7 +72,7 @@ Content Fragments and the GraphQL API also receive reliability improvements, cov
 
 #### Accessibility {#sites-accessibility-6525}
 
-* Table row drag-and-drop controls in Sites list view now work with keyboard navigation. Screen reader and keyboard users can reorder rows and receive feedback during the action. (SITES-24946) 
+* Table row drag-and-drop controls in Sites list view now work with keyboard navigation. Screen reader and keyboard users can reorder rows and receive feedback during the action. (SITES-24946)
 
 * The Edit Layout toolbar now presents smaller screen and tablet labels in a meaningful screen reader sequence. Users hear the labels with the related ruler measurements instead of hearing them out of order. (SITES-25291)
 * The Swatches popover modal now manages focus correctly when it opens from the Annotation Modal. Focus starts at the modal heading instead of moving directly to the selected swatch button. (SITES-25275)
