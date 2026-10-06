@@ -35,7 +35,7 @@ Assets that carry C2PA metadata display the **cr** (C2PA metadata) badge in the 
 * The asset thumbnail in **[!UICONTROL Column View]**. Select the asset to show its thumbnail.
 * The preview area of the asset details page.
 
-The badge shown in the following figure indicates whether an asset contains C2PA metadata. It does not show the manifest itself. To view the complete manifest, download the asset, and open it in [Verify](https://contentcredentials.org/verify).
+The **cr** badge shown in the following figure indicates whether an asset contains C2PA metadata. It does not show the manifest itself. To view the complete manifest, download the asset, and open it in [Verify](https://contentcredentials.org/verify).
 
 ![cr badge](assets/cr.png)
 
@@ -61,7 +61,7 @@ The following table lists the key metadata properties in the C2PA metadata workf
 
 When a manifest is present, [!DNL Experience Manager] also stores it as the `c2pa-manifest.json` rendition (`application/json`).
 
-If you replace the original with a binary that has no manifest, the next workflow run sets `dam:hasC2PAManifest` to `false` and removes `dam:isAiGenerated`, `dam:c2paValidationState`, and the `c2pa-manifest.json` rendition.
+If you replace the original asset with a binary that has no manifest, the next workflow run sets `dam:hasC2PAManifest` to `false` and removes `dam:isAiGenerated`, `dam:c2paValidationState`, and the `c2pa-manifest.json` rendition.
 
 >[!NOTE]
 >
@@ -69,45 +69,45 @@ If you replace the original with a binary that has no manifest, the next workflo
 
 ### Sign renditions {#sign-renditions}
 
-A rendition is a new binary, so the manifest embedded in the original does not cover it. To keep Gen AI disclosure intact, [!DNL Experience Manager] signs every eligible rendition as the last step of the process that produces it. The new C2PA metadata:
+A rendition is a new binary, so the manifest embedded in the original asset does not cover it. To keep Gen AI disclosure intact, [!DNL Experience Manager] signs every eligible rendition as the last step of the process that produces it. The new C2PA metadata:
 
 * References the original asset as its **parent** ingredient.
-* Records how the rendition was derived from the original, as one of the C2PA actions `c2pa.resized`, `c2pa.transcoded`, or `c2pa.edited`.
+* Records how the rendition was derived from the original asset, as one of the C2PA actions `c2pa.resized`, `c2pa.transcoded`, or `c2pa.edited`.
 * Names `Adobe Experience Manager` as the software agent.
 
 [!DNL Experience Manager] signs a rendition only when all of the following are `true`:
 
 * The source asset has `dam:isAiGenerated` set to `true`. Assets that carry a manifest but are not generated through AI still shows the **cr** badge, but [!DNL Experience Manager] does not re-sign their renditions.
-* The source manifest is readable and its validation state is not `INVALID`. [!DNL Experience Manager] never chains a new signature onto a manifest that failed validation, for example, after the asset was tampered with.
-* The rendition format supports an embedded C2PA manifests. For more information, see [Supported formats](#supported-formats). [!DNL Experience Manager] skips the unsupported formats without an error.
+* The source manifest is readable and its validation state is not `INVALID`. [!DNL Experience Manager] never chains a new signature onto a manifest that failed validation, for example, after the asset was tampered.
+* The rendition format supports an embedded C2PA manifest. For more information, see [Supported formats](#supported-formats). [!DNL Experience Manager] skips the unsupported formats without an error.
 
 The following steps of the **[!UICONTROL DAM Update Asset Workflow Completed]** workflow shown in [Detect C2PA metadata](#detect) sign their output.
 
 | Workflow step | Renditions signed | C2PA action recorded |
 |---|---|---|
-| **[!UICONTROL Process Thumbnails]** | Thumbnail renditions and the web-enabled image. | `c2pa.resized`, and `c2pa.transcoded` when the format changes. |
-| **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** | Primary output and derived thumbnails and web renditions. | `c2pa.resized`, `c2pa.transcoded`, or `c2pa.edited` |
+| **[!UICONTROL Process thumbnails]** | Thumbnail renditions and the web-enabled image. | `c2pa.resized` and `c2pa.transcoded` when the format changes. |
+| **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** | Primary output, derived thumbnails, and web renditions. | `c2pa.resized`, `c2pa.transcoded`, or `c2pa.edited` |
 | **[!UICONTROL FFmpeg thumbnails]** | Video poster frames and thumbnails. | `c2pa.resized` and `c2pa.transcoded` |
 | **[!UICONTROL FFmpeg transcoding]** | Video encodings. | `c2pa.transcoded` |
-| **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** | Preview rendition (`cqdam.preview.png`) | `c2pa.transcoded` |
+| **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** | Preview rendition. (`cqdam.preview.png`) | `c2pa.transcoded` |
 
 The following workflow processes also sign their output when you use them in the **[!UICONTROL DAM Update Asset Workflow Completed]** workflow, in another workflow, or in a custom workflow model. Select them in the **[!UICONTROL Process Thumbnails]** list of a workflow step as shown in [Detect C2PA metadata](#detect).
 
 | Workflow process | Renditions signed | C2PA action recorded |
 |---|---|---|
-| **[!UICONTROL Create Thumbnail]** | Thumbnail renditions. | `c2pa.resized`, and `c2pa.transcoded` when the format changes. |
-| **[!UICONTROL Create Web Enabled Image]** | Web rendition. | `c2pa.resized`, and `c2pa.transcoded` when the format changes. |
-| **[!UICONTROL Command Line]**, for example, with [!DNL ImageMagick] | Primary output and derived thumbnails and web renditions. | `c2pa.resized`, `c2pa.transcoded`, or `c2pa.edited` |
-| **[!UICONTROL Image Watermarking Process]** | Watermarked rendition, or the original when watermarking in place. For more information, see [Watermark your assets](/help/assets/watermarking.md). | `c2pa.edited` |
+| **[!UICONTROL Create Thumbnail]** | Thumbnail renditions. | `c2pa.resized` and `c2pa.transcoded` when the format changes. |
+| **[!UICONTROL Create Web Enabled Image]** | Web renditions. | `c2pa.resized` and `c2pa.transcoded` when the format changes. |
+| **[!UICONTROL Command Line]**, for example, with [!DNL ImageMagick] | Primary output, derived thumbnails, and web renditions. | `c2pa.resized`, `c2pa.transcoded`, or `c2pa.edited` |
+| **[!UICONTROL Image Watermarking Process]** | Watermarked rendition, or the original rendition when watermarking is in place. For more information, see [Watermark your assets](/help/assets/watermarking.md). | `c2pa.edited` |
 | **[!UICONTROL Create Video Storyboard]** | Storyboard key frames. | `c2pa.transcoded` |
-| **[!UICONTROL XMP Writeback]** | The original, after the metadata is written back. For more information, see [XMP writeback to renditions](/help/assets/xmp-writeback.md). | `c2pa.edited` |
+| **[!UICONTROL XMP Writeback]** | The original rendition, after the metadata is written back. For more information, see [XMP writeback to renditions](/help/assets/xmp-writeback.md). | `c2pa.edited` |
 
-### Protect the original during XMP writeback {#xmp-writeback}
+### Protect the original binary during XMP writeback {#xmp-writeback}
 
-XMP writeback rewrites the original binary, which would break its embedded manifest. For assets with `dam:hasC2PAManifest` set to `true`, [!DNL Experience Manager] changes the behavior of the **[!UICONTROL XMP Writeback Process]** step of the **[!UICONTROL DAM Metadata Writeback]** workflow as follows:
+XMP writeback rewrites the original binary, which breaks its embedded manifest. For assets with `dam:hasC2PAManifest` set to `true`, [!DNL Experience Manager] changes the behavior of the **[!UICONTROL XMP Writeback Process]** step of the **[!UICONTROL DAM Metadata Writeback]** workflow as follows:
 
-* **Gen AI assets** (`dam:isAiGenerated` is `true`): [!DNL Experience Manager] writes the XMP and then re-signs the original, with the pre-writeback binary as the parent. It saves the writeback and the new signature together. If re-signing fails, it discards both and fails the step.
-* **Other assets that carry a manifest**: [!DNL Experience Manager] skips XMP writeback and logs the reason. The original and its manifest stay unchanged.
+* **Gen AI assets** (`dam:isAiGenerated` is `true`): [!DNL Experience Manager] writes the XMP and then re-signs the original binary, with the pre-writeback binary as the parent. It saves the writeback and the new signature together. If re-signing fails, it discards both and fails the step.
+* **Other assets that carry a manifest**: [!DNL Experience Manager] skips XMP writeback and logs the reason. The original binary and its manifest stay unchanged.
 
 ### Signing mode {#signing-mode}
 
@@ -123,7 +123,7 @@ C2PA metadata support is enabled by default. You do not need to install or confi
 
 ### OSGi configuration {#osgi-configuration}
 
-To change the default configuration, configure the **[!UICONTROL Day CQ DAM C2PA Service]** (PID `com.day.cq.dam.core.impl.c2pa.C2PAServiceImpl`) as shown in the figure below in Configuration Manager at `https://[aem_server]:[port]/system/console/configMgr`, or add an OSGi configuration to your project. For more information, see [Configure OSGi](/help/sites-deploying/configuring-osgi.md).
+To change the default configuration, configure the **[!UICONTROL Day CQ DAM C2PA Service]** (PID `com.day.cq.dam.core.impl.c2pa.C2PAServiceImpl`) in Configuration Manager at `https://[aem_server]:[port]/system/console/configMgr`as shown in the figure below, or add an OSGi configuration to your project. For more information, see [Configure OSGi](/help/sites-deploying/configuring-osgi.md).
 
 ![OSGi configuration](assets/OSGi.png)
 
@@ -131,10 +131,10 @@ The table below lists the properties in the OSGi configuration of your project.
 
 | Property | Name in Configuration Manager | Default | Description |
 |---|---|---|---|
-| `enabled` | **[!UICONTROL Enabled]** | `true` | Turns C2PA metadata support on or off. When turned off, [!DNL Experience Manager] does not detect manifests and does not sign renditions. |
+| `enabled` | **[!UICONTROL Enabled]** | `true` | Turns the C2PA metadata support on or off. When turned off, [!DNL Experience Manager] does not detect manifests and does not sign renditions. |
 | `timeoutMillis` | **[!UICONTROL CLI Timeout (ms)]** | `30000` | Specifies the maximum time, in milliseconds, that [!DNL Experience Manager] waits for a single read or signing operation on a file before treating it as timed out. Raise this value for large video or high-resolution image files. |
 
-For example, add an OSGi configuration at `/apps/<your-project>/config/com.day.cq.dam.core.impl.c2pa.C2PAServiceImpl.config`:
+For example, add an OSGi configuration at `/apps/<your-project>/config/com.day.cq.dam.core.impl.c2pa.C2PAServiceImpl.config`.
 
 ```text
 enabled=B"true"
@@ -143,7 +143,7 @@ timeoutMillis=L"60000"
 
 ### Turn off C2PA metadata support {#disable}
 
-In the **[!UICONTROL Day CQ DAM C2PA Service]** configuration, disable the **[!UICONTROL Enabled]** option, and then save the changes. The change takes effect immediately without a restart:
+In the **[!UICONTROL Day CQ DAM C2PA Service]** configuration shown in [OSGi configuration](#osgi-configuration), disable the **[!UICONTROL Enabled]** option, and then save the changes. The change takes effect immediately without a restart:
 
 * The **[!UICONTROL Detect C2PA Credential]** step shown in [Detect C2PA metadata](#detect) becomes non-operational.
 * Workflow steps create renditions without signing them.
@@ -151,25 +151,25 @@ In the **[!UICONTROL Day CQ DAM C2PA Service]** configuration, disable the **[!U
 
 >[!CAUTION]
 >
->After disabling the **[!UICONTROL Enabled]** option, renditions of Gen AI assets carry no C2PA metadata. If you want to comply with Gen AI disclosure regulations, enable the **[!UICONTROL Enabled]** option.
+>After disabling the **[!UICONTROL Enabled]** option, renditions of Gen AI assets carry no C2PA metadata. If you want to comply with the Gen AI disclosure regulations, enable the **[!UICONTROL Enabled]** option.
 
 ### Workflow configuration {#workflow}
 
 The **[!UICONTROL Detect C2PA Credential]** step shown in [Detect C2PA metadata](#detect) is part of the default **[!UICONTROL DAM Update Asset]** workflow model. If you use a custom copy of that model, add the step yourself:
 
 1. In the [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**, and open your model in ![Edit icon](assets/edit.svg) **[!UICONTROL Edit]** mode.
-1. Add the **[!UICONTROL Detect C2PA Credential]** step right after **[!UICONTROL Metadata Processor]**, before any step that generates renditions.
+1. Add the **[!UICONTROL Detect C2PA Credential]** step after **[!UICONTROL Metadata Processor]**, before any step generates the renditions.
 1. Select **[!UICONTROL Sync]** to save the model.
 
 Rendition steps sign their output only if detection has already run on the asset. If detection runs after them, their renditions stay unsigned until the workflow runs again.
 
 ## Customize the processing pipeline {#customize}
 
-You can add, remove, or reorder steps in **[!UICONTROL DAM Update Asset]** and still keep Gen AI disclosure intact. Follow these rules:
+To add, remove, or reorder steps in **[!UICONTROL DAM Update Asset]** and still keep the Gen AI disclosure intact, follow these rules:
 
 * **Run detection first.** Keep **[!UICONTROL Detect C2PA Credential]** ahead of every step that creates or modifies the renditions.
 * **Sign last.** Any change to a binary after signing invalidates its signature. Do not run steps that modify a rendition after the step that signed it.
-* **Use steps that sign.** The built-in steps listed in [Sign renditions](#sign-renditions) sign their output. Custom steps and third-party tools that you run through anything other than the **[!UICONTROL Command Line]** process does not sign their output unless you add signing to them. For more information, see [Process assets using media handlers and workflows](/help/assets/media-handlers.md).
+* **Use steps that sign.** The built-in steps listed in [Sign renditions](#sign-renditions) sign their output. Custom steps and third-party tools that you run through anything other than the **[!UICONTROL Command Line]** process does not sign their output unless signing is explicitly added. For more information, see [Process assets using media handlers and workflows](/help/assets/media-handlers.md).
 * **Do not modify the original in place** unless the step re-signs it, as **[!UICONTROL XMP Writeback]** and **[!UICONTROL Image Watermarking Process]** do.
 
 ### Sign renditions from a custom workflow step {#custom-step}
@@ -209,19 +209,19 @@ private void signRendition(Asset asset, Rendition rendition) {
 }
 ```
 
-Call `signIfEligible` only after your step has finished writing the rendition. The OSGi service provides these methods:
+Call `signIfEligible` only after your step has finished writing the rendition. The OSGi service provides the methods as listed in the table below.
 
 | Method | Use it to |
 |---|---|
 | `signIfEligible(Asset, Rendition, List<C2PAAction>)` | Sign one new rendition, with the source asset as its parent. |
 | `signIfEligible(Asset, Map<Rendition, List<C2PAAction>>)` | Sign several renditions derived from the same asset. This method reads the source manifest once. |
-| `captureResignState(Asset)` | Take an image of the original before your step modifies it in place. This method returns `null` if the asset is not eligible. |
-| `resign(Asset, Rendition, List<C2PAAction>)` | Re-sign the original after an in-place change, with the image as its parent. |
+| `captureResignState(Asset)` | Take an image of the original asset before your step modifies it in place. This method returns `null` if the asset is not eligible. |
+| `resign(Asset, Rendition, List<C2PAAction>)` | Re-sign the original asset after an in-place change, with the image as its parent. |
 | `discardResignState(Rendition)` | Place an image you took but is not to be used, for example, because your change failed. |
 
-The following are the values of `C2PASigningOutcome`:
+The values of `C2PASigningOutcome` are mentioned in the table below.
 
-| Outcome | Meaning |
+| Outcome | Description |
 |---|---|
 | `SIGNED` | [!DNL Experience Manager] signed the rendition. |
 | `SKIPPED_SOURCE_NOT_AI_GENERATED` | The source asset is not flagged as an asset generated by AI. |
@@ -237,7 +237,7 @@ To check eligibility before generating an expensive rendition, call `C2PASupport
 
 ### Formats {#formats}
 
-[!DNL Experience Manager] signs renditions in the formats that the [C2PA specification](https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html) supports for embedded manifests.
+[!DNL Experience Manager] signs renditions in the formats that [C2PA specification](https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html) supports for embedded manifests.
 
 | Type | Formats | MIME types |
 |---|---|---|
@@ -249,7 +249,7 @@ To check eligibility before generating an expensive rendition, call `C2PASupport
 
 ### Platforms {#platforms}
 
-C2PA metadata support relies on a native C2PA component that ships inside the `cq-dam-core` bundle, with one build for each supported platform. When the service starts, [!DNL Experience Manager] extracts the build for your platform (`adobe_c2patool`, or `adobe_c2patool.exe` on Windows) to the bundle's private data folder, checks its SHA-256 checksum, and runs it as a separate process. You do not need to install anything or change `PATH`.
+C2PA metadata support relies on a native C2PA component that ships inside the `cq-dam-core` bundle, with one build for each supported platform. When the service starts, [!DNL Experience Manager] extracts the build for your platform (`adobe_c2patool`, or `adobe_c2patool.exe` on Windows) to the bundle's private data folder, checks the SHA-256 checksum, and runs it as a separate process. You do not need to install anything or change `PATH`.
 
 | Operating system | Architecture |
 |---|---|
