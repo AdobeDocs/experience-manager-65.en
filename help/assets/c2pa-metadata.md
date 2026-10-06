@@ -261,7 +261,7 @@ This works the same on [!DNL Adobe Managed Services] and on premises deployments
 
 ## Troubleshooting {#troubleshooting}
 
-When troubleshooting, set the following loggers to `DEBUG` in **[!UICONTROL Apache Sling Logging Logger Configuration]**:
+When troubleshooting, set the following loggers to `DEBUG` in **[!UICONTROL Apache Sling Logging Logger Configuration]**.
 
 * `com.day.cq.dam.core.impl.c2pa`: extraction of the native C2PA component, manifest reads, and signing.
 * `com.day.cq.dam.core.process.DetectC2PACredentialProcess`: detection.
@@ -283,12 +283,12 @@ When troubleshooting, set the following loggers to `DEBUG` in **[!UICONTROL Apac
 * [!DNL Experience Manager] signs with an ephemeral, self-signed certificate. Custom or organization-specific signing certificates are not supported.
 
 
-**See also**
-
-* [C2PA metadata in the Assets view of [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
-* [C2PA metadata in [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials)
-* [C2PA metadata in [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
-* [XMP writeback to renditions](/help/assets/xmp-writeback.md)
-* [Watermark your assets](/help/assets/watermarking.md)
-* [Content Authenticity Initiative](https://contentauthenticity.org/)
-* [Verify](https://contentcredentials.org/verify)
+>[!MORELIKETHIS]
+>
+>* [C2PA metadata in the Assets view of [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view).
+>* [C2PA metadata in [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials).
+>* [C2PA metadata in [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata).
+>* [XMP writeback to renditions](/help/assets/xmp-writeback.md).
+>* [Watermark your assets](/help/assets/watermarking.md).
+>* [Content Authenticity Initiative](https://contentauthenticity.org/).
+>* [Verify](https://contentcredentials.org/verify).
