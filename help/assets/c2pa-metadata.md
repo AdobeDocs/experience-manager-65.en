@@ -47,7 +47,7 @@ C2PA metadata support has two parts: detection when an asset is uploaded or upda
 
 ### Detect C2PA metadata {#detect}
 
-The **[!UICONTROL DAM Update Asset]** workflow includes a **[!UICONTROL Detect C2PA Credential]** step which runs right after the **[!UICONTROL Metadata Processor]** step as shown in the figure below. It reads the original binary of the asset and records the result in the asset's metadata node `jcr:content/metadata`.
+The **[!UICONTROL DAM Update Asset]** workflow includes a **[!UICONTROL Detect C2PA Credential]** step which runs after the **[!UICONTROL Metadata Processor]** step as shown in the figure below. It reads the original binary of the asset and records the result in the asset's metadata node `jcr:content/metadata`.
 
 ![Workflow](assets/workflow.png) 
 
