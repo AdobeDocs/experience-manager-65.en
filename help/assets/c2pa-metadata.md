@@ -49,7 +49,7 @@ C2PA metadata support has two parts: detection when an asset is uploaded or upda
 
 The **[!UICONTROL DAM Update Asset]** workflow includes a **[!UICONTROL Detect C2PA Credential]** step which runs right after the **[!UICONTROL Metadata Processor]** step as shown in the figure below. It reads the original binary of the asset and records the result in the asset's metadata node `jcr:content/metadata`.
 
-![Workflow](assets/workflow.png) {#fig:image} 
+![Workflow](assets/workflow.png) 
 
 The following table lists the key metadata properties in the C2PA metadata workflow.
 
@@ -81,7 +81,7 @@ A rendition is a new binary, so the manifest embedded in the original does not c
 * The source manifest is readable and its validation state is not `INVALID`. [!DNL Experience Manager] never chains a new signature onto a manifest that failed validation, for example, after the asset was tampered with.
 * The rendition format supports an embedded C2PA manifests. For more information, see [Supported formats](#supported-formats). [!DNL Experience Manager] skips the unsupported formats without an error.
 
-The following steps of the **[!UICONTROL DAM Update Asset Workflow Completed]** workflow shown in [Workflow](#fig:image) sign their output:
+The following steps of the **[!UICONTROL DAM Update Asset Workflow Completed]** workflow shown in [Detect C2PA metadata](#detect) sign their output:
 
 | Workflow step | Renditions signed | C2PA action recorded |
 |---|---|---|
