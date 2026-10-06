@@ -25,7 +25,7 @@ For more information about an asset's history, see [Verify](https://contentcrede
 
 ## Prerequisites {#Prerequisites}
 
-C2PA metadata support requires [!DNL Adobe Experience Manager] 6.5 Service Pack 6.5.26.0 or later. On Service Pack 6.5.25.0, install the [AEM 6.5 SP25 – C2PA GenAI compliance hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-ASSETS-75868-SP25-1.0.zip) instead.
+C2PA metadata support requires [!DNL Adobe Experience Manager] 6.5 Service Pack 6.5.26.0 or later. On Service Pack 6.5.25.0, install [AEM 6.5 SP25 – C2PA GenAI compliance hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-ASSETS-75868-SP25-1.0.zip).
 
 ## View C2PA metadata in the [!DNL Assets] user interface {#view-c2pa-metadata}
 
