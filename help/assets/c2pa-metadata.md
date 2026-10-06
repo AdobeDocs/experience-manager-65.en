@@ -285,10 +285,10 @@ When troubleshooting, set the following loggers to `DEBUG` in **[!UICONTROL Apac
 
 >[!MORELIKETHIS]
 >
->* [C2PA metadata in the Assets view of [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view).
->* [C2PA metadata in [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials).
->* [C2PA metadata in [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata).
->* [XMP writeback to renditions](/help/assets/xmp-writeback.md).
->* [Watermark your assets](/help/assets/watermarking.md).
->* [Content Authenticity Initiative](https://contentauthenticity.org/).
->* [Verify](https://contentcredentials.org/verify).
+>* [C2PA metadata in the Assets view of [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
+>* [C2PA metadata in [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials)
+>* [C2PA metadata in [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
+>* [XMP writeback to renditions](/help/assets/xmp-writeback.md)
+>* [Watermark your assets](/help/assets/watermarking.md)
+>* [Content Authenticity Initiative](https://contentauthenticity.org/)
+>* [Verify](https://contentcredentials.org/verify)
