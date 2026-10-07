@@ -25,25 +25,47 @@ For more information about an asset's history, see [Verify](https://contentcrede
 
 ## Prerequisites {#Prerequisites}
 
-C2PA metadata support requires [!DNL Adobe Experience Manager] 6.5 Service Pack 6.5.26.0 or later. On Service Pack 6.5.25.0, install [AEM 6.5 SP25 – C2PA GenAI compliance hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-ASSETS-75868-SP25-1.0.zip).
+C2PA metadata support requires [!DNL Adobe Experience Manager] 6.5 Service Pack. On Service Pack 6.5.25.0, install [AEM 6.5 SP25 – C2PA GenAI compliance hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-ASSETS-75868-SP25-1.0.zip).
 
-## View C2PA metadata in the [!DNL Assets] user interface {#view-c2pa-metadata}
+## Supported formats and platforms {#supported-formats}
 
-Assets that carry C2PA metadata display the **cr** (C2PA metadata) badge in the [!DNL Assets] user interface. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]** and look for the badge in the lower-left corner of:
+### Formats {#formats}
 
-* The asset thumbnail in **[!UICONTROL Card View]**.
-* The asset thumbnail in **[!UICONTROL Column View]**. Select the asset to show its thumbnail.
-* The preview area of the asset details page.
+[!DNL Experience Manager] signs renditions in the formats that [C2PA specification](https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html) supports for embedded manifests.
 
-The **cr** badge shown in the following figure indicates whether an asset contains C2PA metadata. It does not show the manifest itself. To view the complete manifest, download the asset, and open it in [Verify](https://contentcredentials.org/verify).
+| Type | Formats | MIME types |
+|---|---|---|
+| Image | JPEG, PNG, GIF, TIFF, DNG, WebP, JPEG XL, AVIF, HEIC/HEIF, SVG | `image/jpeg`, `image/png`, `image/gif`, `image/tiff`, `image/x-adobe-dng`, `image/webp`, `image/jxl`, `image/avif`, `image/heic`, `image/heif`, `image/svg+xml` |
+| Video | MP4, MOV, AVI | `video/mp4`, `video/quicktime`, `video/x-msvideo` |
+| Audio | MP3, M4A, WAV, FLAC | `audio/mpeg`, `audio/mp4`, `audio/wav`, `audio/flac` |
 
-![cr badge](assets/cr.png)
+[!DNL Experience Manager] also recognizes common aliases, such as `image/jpg`, `image/pjpeg`, `image/x-png`, and `video/mov`. [!DNL Experience Manager] checks every uploaded asset for a manifest, regardless of the file format. Renditions in other formats, such as PSD or EPS, are not signed.
 
-[!DNL Experience Manager] stores the detected manifest as a `c2pa-manifest.json` rendition on the asset. This rendition is internal. It does not appear in the **[!UICONTROL Renditions]** panel of the asset details page or in the rendition picker.
+### Platforms {#platforms}
+
+C2PA metadata support relies on a native C2PA component that ships inside the `cq-dam-core` bundle, with one build for each supported platform. When the service starts, [!DNL Experience Manager] extracts the build for your platform (`adobe_c2patool`, or `adobe_c2patool.exe` on Windows) to the bundle's private data folder, checks the SHA-256 checksum, and runs it as a separate process. You do not need to install anything or change `PATH`.
+
+| Operating system | Architecture |
+|---|---|
+| Linux (glibc 2.28 or later, including Red Hat Enterprise Linux 8) | `x86_64`, `aarch64` |
+| macOS | `x86_64`, `aarch64` (Apple silicon) |
+| Windows | `x86_64` |
+
+This works the same on [!DNL Adobe Managed Services] and on premises deployments. Make sure the [!DNL Experience Manager] process can start this executable. If you use `noexec` mounts, antivirus, or endpoint security software, allow `adobe_c2patool` to run from the `crx-quickstart` folder. Otherwise, C2PA metadata support fails to start.
 
 ## How C2PA metadata works {#how-c2pa-metadata-works}
 
 C2PA metadata support has two parts: detection when an asset is uploaded or updated, and re-signing whenever [!DNL Experience Manager] generates or modifies a rendition.
+
+### Workflow configuration {#workflow}
+
+The **[!UICONTROL Detect C2PA Credential]** step shown in [Detect C2PA metadata](#detect) is part of the default **[!UICONTROL DAM Update Asset]** workflow model. If you use a custom copy of that model, add the step yourself:
+
+1. In the [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**, and open your model in ![Edit icon](assets/edit.svg) **[!UICONTROL Edit]** mode.
+1. Add the **[!UICONTROL Detect C2PA Credential]** step after **[!UICONTROL Metadata Processor]**, before any step generates the renditions.
+1. Select **[!UICONTROL Sync]** to save the model.
+
+Rendition steps sign their output only if detection has already run on the asset. If detection runs after them, their renditions stay unsigned until the workflow runs again.
 
 ### Detect C2PA metadata {#detect}
 
@@ -66,6 +88,20 @@ If you replace the original asset with a binary that has no manifest, the next w
 >[!NOTE]
 >
 >A detection failure never blocks an asset ingestion. If reading the manifest times out or fails, [!DNL Experience Manager] logs the error, leaves the metadata unchanged, and continues with the rest of the workflow.
+
+### View C2PA metadata in the [!DNL Assets] user interface {#view-c2pa-metadata}
+
+Assets that carry C2PA metadata display the **cr** (C2PA metadata) badge in the [!DNL Assets] user interface. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]** and look for the badge in the lower-left corner of:
+
+* The asset thumbnail in **[!UICONTROL Card View]**.
+* The asset thumbnail in **[!UICONTROL Column View]**. Select the asset to show its thumbnail.
+* The preview area of the asset details page.
+
+The **cr** badge shown in the following figure indicates whether an asset contains C2PA metadata. It does not show the manifest itself. To view the complete manifest, download the asset, and open it in [Verify](https://contentcredentials.org/verify).
+
+![cr badge](assets/cr.png)
+
+[!DNL Experience Manager] stores the detected manifest as a `c2pa-manifest.json` rendition on the asset. This rendition is internal. It does not appear in the **[!UICONTROL Renditions]** panel of the asset details page or in the rendition picker.
 
 ### Sign renditions {#sign-renditions}
 
@@ -153,16 +189,6 @@ In the **[!UICONTROL Day CQ DAM C2PA Service]** configuration shown in [OSGi con
 >
 >After disabling the **[!UICONTROL Enabled]** option, renditions of Gen AI assets carry no C2PA metadata. If you want to comply with the Gen AI disclosure regulations, enable the **[!UICONTROL Enabled]** option.
 
-### Workflow configuration {#workflow}
-
-The **[!UICONTROL Detect C2PA Credential]** step shown in [Detect C2PA metadata](#detect) is part of the default **[!UICONTROL DAM Update Asset]** workflow model. If you use a custom copy of that model, add the step yourself:
-
-1. In the [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**, and open your model in ![Edit icon](assets/edit.svg) **[!UICONTROL Edit]** mode.
-1. Add the **[!UICONTROL Detect C2PA Credential]** step after **[!UICONTROL Metadata Processor]**, before any step generates the renditions.
-1. Select **[!UICONTROL Sync]** to save the model.
-
-Rendition steps sign their output only if detection has already run on the asset. If detection runs after them, their renditions stay unsigned until the workflow runs again.
-
 ## Customize the processing pipeline {#customize}
 
 To add, remove, or reorder steps in **[!UICONTROL DAM Update Asset]** and still keep the Gen AI disclosure intact, follow these rules:
@@ -232,32 +258,6 @@ The values of `C2PASigningOutcome` are mentioned in the table below.
 | `FAILED` | Reading the source manifest or signing the rendition failed. |
 
 To check eligibility before generating an expensive rendition, call `C2PASupportedFormats.isEligible(...)`.
-
-## Supported formats and platforms {#supported-formats}
-
-### Formats {#formats}
-
-[!DNL Experience Manager] signs renditions in the formats that [C2PA specification](https://c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html) supports for embedded manifests.
-
-| Type | Formats | MIME types |
-|---|---|---|
-| Image | JPEG, PNG, GIF, TIFF, DNG, WebP, JPEG XL, AVIF, HEIC/HEIF, SVG | `image/jpeg`, `image/png`, `image/gif`, `image/tiff`, `image/x-adobe-dng`, `image/webp`, `image/jxl`, `image/avif`, `image/heic`, `image/heif`, `image/svg+xml` |
-| Video | MP4, MOV, AVI | `video/mp4`, `video/quicktime`, `video/x-msvideo` |
-| Audio | MP3, M4A, WAV, FLAC | `audio/mpeg`, `audio/mp4`, `audio/wav`, `audio/flac` |
-
-[!DNL Experience Manager] also recognizes common aliases, such as `image/jpg`, `image/pjpeg`, `image/x-png`, and `video/mov`. [!DNL Experience Manager] checks every uploaded asset for a manifest, regardless of the file format. Renditions in other formats, such as PSD or EPS, are not signed.
-
-### Platforms {#platforms}
-
-C2PA metadata support relies on a native C2PA component that ships inside the `cq-dam-core` bundle, with one build for each supported platform. When the service starts, [!DNL Experience Manager] extracts the build for your platform (`adobe_c2patool`, or `adobe_c2patool.exe` on Windows) to the bundle's private data folder, checks the SHA-256 checksum, and runs it as a separate process. You do not need to install anything or change `PATH`.
-
-| Operating system | Architecture |
-|---|---|
-| Linux (glibc 2.28 or later, including Red Hat Enterprise Linux 8) | `x86_64`, `aarch64` |
-| macOS | `x86_64`, `aarch64` (Apple silicon) |
-| Windows | `x86_64` |
-
-This works the same on [!DNL Adobe Managed Services] and on premises deployments. Make sure the [!DNL Experience Manager] process can start this executable. If you use `noexec` mounts, antivirus, or endpoint security software, allow `adobe_c2patool` to run from the `crx-quickstart` folder. Otherwise, C2PA metadata support fails to start.
 
 ## Troubleshooting {#troubleshooting}
 
