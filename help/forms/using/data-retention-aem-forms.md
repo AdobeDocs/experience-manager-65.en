@@ -1,6 +1,6 @@
 ---
 title: Data Retention in AEM Forms
-description: Learn how AEM Forms acts as a pass-through server that, by default, does not retain form end-user data, and the best practices to prevent data retention in the AEM Repository and logs.
+description: Learn how Adobe Experience Manager (AEM) Forms acts as a pass-through server that does not retain form end-user data by default, and how to prevent data retention in the AEM Repository and logs.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin, User
 solution: Experience Manager Forms
@@ -8,7 +8,7 @@ feature: Adaptive Forms
 ---
 # Data retention in AEM Forms {#data-retention-in-aem-forms}
 
-AEM Forms acts as a pass-through server for data captured via Adaptive Forms. By default, it does not store end-user data in the AEM Repository; instead, the server passes the submitted data to the destination that you own and configure. This default behavior applies to both AEM Forms on OSGi and AEM Forms on JEE.
+Does AEM Forms store form data? By default, no. Adobe Experience Manager (AEM) Forms acts as a pass-through server for data captured via Adaptive Forms, and it does not store end-user data in the AEM Repository. Instead, the server passes the submitted data to the destination that you own and configure. This default behavior helps you meet your data privacy and compliance goals, and it applies to both AEM Forms on OSGi and AEM Forms on JEE.
 
 Because AEM Forms is an extensible platform, you can customize AEM to change this default behavior. If your customization stores the data submitted through an Adaptive Form in the AEM Repository or writes it to AEM logs, you must ensure that such data is not retained on your production and staging systems.
 
