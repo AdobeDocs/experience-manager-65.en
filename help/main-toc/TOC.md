@@ -595,6 +595,7 @@ user-guide-title: AEM 6.5
     + [Importing and exporting assets to AEM Forms](/help/forms/using/import-export-forms-templates.md)
     + [Supporting new locales for adaptive forms localization](/help/forms/using/supporting-new-language-localization.md)
     + Handling user data {#handling-user-data}
+      + [Data retention in AEM Forms](/help/forms/using/data-retention-aem-forms.md)
       + [Forms-centric workflows on OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
       + [Forms user management](/help/forms/using/user-management-handling-user-data.md)
       + [Forms JEE workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md)
