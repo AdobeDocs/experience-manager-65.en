@@ -1,5 +1,5 @@
 ---
-title: Enabling multi-threaded file conversions
+title: Enable multi-threaded file conversions
 description: Learn how to enable multi-threaded file conversions.
 contentOwner: admin
 content-type: reference
@@ -10,105 +10,44 @@ exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 ---
-# Enabling multi-threaded file conversions {#enabling-multi-threaded-file-conversions}
+# Enable multi-threaded file conversions {#enabling-multi-threaded-file-conversions}
 
-PDF Generator lets you enable multi-threaded file conversions for certain types of files. Multi-threaded file conversion improves the performance of PDF Generator by allowing it to perform multiple conversions at the same time.
+PDF Generator can run multiple file conversions concurrently to improve conversion throughput. Choose the applicable conversion mode:
 
-## Enabling multi-threaded file conversions for OpenOffice, Word, and PowerPoint documents {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
+| Conversion mode | Applications that support concurrent conversions | User account model |
+|---|---|---|
+| Multi-user mode | OpenOffice | A separate user account runs each OpenOffice instance. |
+| Single-user mode | Microsoft&reg; Word and Microsoft&reg; Excel | One user account runs multiple Word and Excel instances. PowerPoint conversions remain serialized. |
 
-By default, PDF Generator can convert only one OpenOffice, Microsoft&reg; Word, or PowerPoint document at a time. If you enable multi-threaded conversions, PDF Generator can convert more than one of the documents concurrently. PDF Generator launches multiple instances of OpenOffice or PDFMaker (used to perform the Word and PowerPoint conversions).
+Before enabling either mode, complete the [PDF Generator pre-installation configuration](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations) for the applications and operating system that you use. For supported application versions, see [Software support for PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
 
->[!NOTE]
->
->Multi-threaded file conversions are not supported with Microsoft&reg; Word 2003 and PowerPoint 2003. To enable multi-threaded file conversions, upgrade to Microsoft&reg; Word 2007 and PowerPoint 2007 or Microsoft&reg; Word 2010 and PowerPoint 2010.
+## Multi-user mode {#multi-user-mode}
 
->[!NOTE]
->
->Multi-threaded file conversions are not supported with Microsoft&reg; Excel, Microsoft&reg; Visio, Microsoft&reg; Project, or Microsoft&reg; Publisher.
+In multi-user mode, PDF Generator launches each OpenOffice instance under a separate user account. Configure enough valid administrative user accounts for the number of concurrent conversions that you require. In a cluster, configure the same accounts on every node.
 
-Each instance of OpenOffice or PDFMaker is launched using a separate user account. Each user account that you add must be a valid user with administrative privileges on the Forms Server computer. In a clustered environment, the same set of users must be valid for all nodes of the cluster.
+On Windows, ensure that the PDF Generator users have the [Replace a process level token privilege](/help/forms/using/install-configure-document-services.md#grant-the-replace-a-process-level-token-privilege) and complete the applicable User Account Control configuration described in [Configure Document Services](/help/forms/using/install-configure-document-services.md#disable-user-account-control-uac).
 
-On the User Accounts page in the administration console, you can specify which user accounts to use for multi-threaded file conversions. You can add accounts, delete them, or change account passwords. If you are running PDF Generator on Windows Server 2003 or Windows Server 2008, add at least three user accounts that have administrator privileges.
+### OpenOffice conversions {#openoffice-conversions}
 
-When adding users for OpenOffice, Microsoft&reg; Word, or Microsoft&reg; PowerPoint on Windows Server 2003 or 2008, or for OpenOffice on Linux&reg; or Sun&trade; Solaris&trade;, dismiss the initial activation dialogs for all users.
+Configure one PDF Generator user account for each OpenOffice instance that can run concurrently. Install OpenOffice in a location that every configured user can access, and dismiss the initial OpenOffice activation dialogs for each user.
 
-### Add the right to replace the process-level token {#add-the-right-to-replace-the-process-level-token}
+For UNIX-based systems, complete the OpenOffice installation and user-permission requirements in [Configure Document Services](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations).
 
-On a Windows operating system, the administrator user accounts that are used for PDF conversion (PDFG users) must replace process level token privileges. You can add this right by using the Group Policy Editor:
+## Single-user mode on Windows {#single-user-mode-on-windows}
 
-1. In the Windows Start menu, click Run and then enter gpedit.msc.
-1. Click Local Computer Policy &gt; Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Local Policies &gt; User Rights Assignment. Edit the *Replace a process level token* policy to include the Administrators group.
-1. Add the user to the Replace a Process Level Token entry.
+Single-user mode lets PDF Generator run concurrent conversions under one configured user account.
 
-### Additional configuration required for OpenOffice, Microsoft&reg; Word, and Microsoft&reg; PowerPoint on Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
+In this mode, multiple instances of Microsoft&reg; Word (DOC and DOCX) and Excel (XLS and XLSX) run under the same user. Microsoft&reg; PowerPoint (PPT and PPTX) does not support single-user mode. PDF Generator launches only one PowerPoint instance at a time, so PowerPoint conversions are serialized.
 
-If you are running OpenOffice, Microsoft&reg; Word, or Microsoft&reg; PowerPoint on Windows Server 2008, disable UAC for each user added.
+To enable single-user mode for Word and Excel conversions:
 
-1. Click Control Panel &gt; User Accounts &gt; Turn User Account Control on or off.
-1. Deselect the box "Use User Account Control (UAC) to help protect your computer" and click OK.
-1. Restart the computer for the settings to take effect.
+1. In the administration console, navigate to **Home &gt; Services &gt; Applications and Services &gt; Service Management**.
+1. Filter for **PDF Generator** and select **GeneratePDFService**.
+1. On the **Configuration** tab, configure the following options:
 
-### Additional configuration required for OpenOffice on Linux&reg; or Solaris&trade; {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
+   * Set **Enable Single User Mode For PDFMaker** to **true**.
+   * Set **PDFMaker Pool Size** to the maximum number of Word instances that can run conversions concurrently.
+   * Set **Enable Single User Mode For Native2PDF** to **true**.
+   * Set **Native2PDF Pool Size** to the maximum number of Excel instances that can run conversions concurrently.
 
-1. Add user accounts. (See [Add a user account](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
-1. Next, you must change the /etc/sudoers file. The default permission for this file is 440. Change the permission for this file to writable.
-1. Add entries for additional users (other than the administrator who runs the Forms Server) in the /etc/sudoers file. For example, if you are running AEM forms as a user named lcadm and a server named myhost, and you want to impersonate user1 and user2, add the following entries to /etc/sudoers:
-
-   ```shell
-    lcadm myhost=(user1) NOPASSWD: ALL
-    lcadm myhost=(user2) NOPASSWD: ALL
-   ```
-
-   This configuration enables lcadm to run any command on host 'myhost' as 'user1' or 'user2' without prompting for a password.
-
-   >[!NOTE]
-   >
-   >Ensure that you have assigned system user and PDFG user roles to 'user1' and 'user2' . To assign a PDFG role to a user, see [Add a user account](enabling-multi-threaded-file-conversions.md#add-a-user-account)
-
-1. Also in the /etc/sudoers file, locate and comment out this line by adding a number sign (#) at the beginning of the line:
-
-   ```shell
-   Defaults requiretty
-   ```
-
-   This enables you to add Linux&reg; users.
-
-1. Change the permission for the etc/sudoers file back to 440.
-1. Allow all the users that you added via [Add a user account](enabling-multi-threaded-file-conversions.md#add-a-user-account) to make connections to the Forms Server. For example, to allow a local user named user1 the permission of making the connection to the Forms Server, use the following command
-
-   `xhost +local:user1@`
-
-   For more details, see xhost command documentation.
-
-1. Restart the server.
-
->[!NOTE]
->
->OpenOffice must be installed in a directory location that all PDFG users can access. You can verify this by logging in as the PDFG user and checking whether you can launch OpenOffice without issues.
-
-### Add a user account {#add-a-user-account}
-
->[!NOTE]
-> 
-> Ensure that the user has admin privileges to access the administrator console.
-
-1. In the administration console, click Services &gt; PDF Generator &gt; User Accounts.
-1. Click Add and enter the user name and password of a user who has administrative privileges on the Forms Server. If you are configuring users for OpenOffice, dismiss the initial OpenOffice activation dialogs.
-
-   >[!NOTE]
-   >
-   >If you are configuring users for OpenOffice, the number of instances of OpenOffice cannot be greater than the number of user accounts specified in this step.
-
-1. Restart the Forms Server.
-
-### Remove a user from the list used for multi-threaded file conversions {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
-
-1. In the administration console, click Services &gt; PDF Generator &gt; User Accounts.
-1. Click the check box next to the user who you want to remove and click Delete.
-1. On the confirmation page, click Delete.
-1. Restart the Forms Server.
-
-### Change the password for an account {#change-the-password-for-an-account}
-
-1. In the administration console, click Services &gt; PDF Generator &gt; User Accounts.
-1. Click the user name, and enter and confirm the new password. This password must match the user's system password.
+1. Restart the AEM Forms server.
