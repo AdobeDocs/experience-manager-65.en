@@ -64,28 +64,26 @@ The following 3-minute, 25-second video delivers a step-by-step walkthrough of A
 
 To get access to AI Assistant in AEM, customers must have the following:
 
-* Permission to use AI Assistant in AEM for Product Knowledge. This permission lets you ask product-related questions in AI Assistant chat. This permission must be enabled.
+* Access to Product Knowledge, which lets you ask product-related questions in AI Assistant chat. This access is available to all users in your organization by default.
 * Permission to open support tickets, which requires the **Support Admin** role.
 
 >[!NOTE]
 >
->AI Assistant requests in AEM are authenticated through Adobe Identity Management Services (IMS). For details, see the [Adobe Identity Management Services overview](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>AI Assistant requests in AEM are authenticated through Adobe Identity Management Services (IMS). For details, see the [Adobe Identity Management Services overview](https://www.adobe.com/cc-shared/assets/pdf/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **To get access to AI Assistant in AEM:**
 
-1. Customers must have an additional agreement in place to access most AI-powered and agentic capabilities in Adobe Experience Manager. Contact your Adobe representative for details.
+1. Customers must have an additional agreement in place to access most AI-powered and agentic capabilities in Adobe Experience Manager. Contact your Adobe representative for details. For how generative AI enablement works, see [Generative AI in CX Enterprise Applications](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
 
-1. To use AI Assistant in AEM, permission to access Product Knowledge through the AI Assistant is mandatory. This permission is turned ON by default.
-
-    If you want to control who can access Product Knowledge, send an email to [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) from your email address associated with your Adobe ID. Adobe can enable user-level access control. When it is enabled, your Admin can grant user-level access by following the steps in [Configure AI Assistant in AEM](/help/ai-assistant-in-aem-admin.md).
+1. Once your organization has this agreement, all users can use AI Assistant for Product Knowledge by default. No additional per-user or per-group permission is required.
 
 
 ## Scope {#scope}
 
-The current scope of AI Assistant in AEM focuses on addressing Product Knowledge questions for AEMr as a Cloud Service. This scope includes comprehensive support for key areas. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+The current scope of AI Assistant in AEM focuses on addressing Product Knowledge questions for AEM as a Cloud Service. This scope includes comprehensive support for key areas. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **Surfaces**: Available across AEM Experience Hub, Author UI, Cloud Manager.
-* **Capabilities**: Product‑knowledge and first-stop for troubleshooting and guidance, automated creation of support tickets and lookup.
+* **Capabilities**: Product knowledge and primary resource for troubleshooting and guidance, automated creation of support tickets, and lookup.
 * **Value**: Saves time, accelerates learning and time to value, reduces the need to create support tickets manually, and improves efficiency in creating support tickets.
 
 ## Privacy, Security, and Governance{#privacy-security-governance}
@@ -94,14 +92,14 @@ AI Assistant in AEM is designed with a strong emphasis on privacy, security, and
 
 This article outlines the trust-centered features that you can expect from AI Assistant in AEM:
 
-* No personal data is used by AI Assistant in AEM, including for training purposes.
+* AI Assistant in AEM does not use personal data, including for training purposes.
 * AI Assistant in AEM does not have access to consumer data.
 * Explicit permission is required to interact with AI Assistant in AEM.
 * User-provided prompts (questions, queries, and so on) are not shared with other customers.
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
-## Get to know the AI Assistant in AEM for product knowledge and automated support ticket creation {#ai-prod-insights}
+## Learn about the AI Assistant in AEM for product knowledge and automated support ticket creation {#ai-prod-insights}
 
 Product knowledge encompasses concepts and topics derived from Adobe Experience League documentation. These questions can be categorized into the following sub-groups:
 
@@ -118,14 +116,14 @@ Product knowledge encompasses concepts and topics derived from Adobe Experience 
 {style="table-layout:auto"}
 
 
-## How to craft effective questions {#ai-craft-questions}
+## How to write effective questions {#ai-craft-questions}
 
 To receive the most accurate responses from AI Assistant in AEM, it is important to phrase your questions with clarity and context. Use the following tips to ensure that your queries are clear and well-structured:
 
 * Clearly state your task or question in a concise manner.  
-* Avoid ambiguous wording or overly complex syntax to improve understanding.
+* To improve understanding, avoid ambiguous wording or overly complex syntax.
 * Include relevant context about your task or question, as this approach helps the AI Assistant in AEM provide more precise and relevant answers. 
-For example, in your prompt, it helps to name the AEM solution you are working in - Sites, Assets, Dynamic Media, Edge Delivery Services, Cloud Manager, or Forms.
+For example, in your prompt, name the AEM solution you are working in.
 
 ### Examples of unsupported questions {#ai-unsupported-questions}
 
@@ -138,29 +136,9 @@ For example, in your prompt, it helps to name the AEM solution you are working i
 
 ## Use AI Assistant in AEM {#ai-use} 
 
-<!--
-UNHIDE AFTER BETA or at GA
-### Enable AI Assistant in AEM access through Admin Console 
-
-To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
-
-![AI Assistant in AEM in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
-
-From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
-
-Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
-
-![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
-
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
-
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
--->
-
-
 ### Start an AI Assistant in AEM conversation
 
-You can reset the AI Assistant in AEM and start a new conversation when you want to change topics. This ability is especially helpful when troubleshooting queries that are failing or providing incorrect information.
+You can reset the AI Assistant in AEM and start a new conversation when you want to change topics. This feature is especially useful when troubleshooting queries that are failing or providing incorrect information.
 
 **To start an AI Assistant in AEM conversation:** 
 
@@ -214,10 +192,10 @@ Share your feedback on your experience with AI Assistant in AEM through the foll
 
 Here are answers to some common questions about AI Assistant:
 
-* **Is the information provided by AI Assistant in AEM in real-time?**  
-  No. AI Assistant sources its content from Adobe Experience League documentation. Updates to the content may take some time to reflect in its responses.
+* **Is the information from AI Assistant in AEM real-time?**  
+  No. AI Assistant sources its content from Adobe Experience League documentation. Updates to the content take some time to reflect in its responses.
 * **Which Adobe applications does AI Assistant in AEM support?**  
-  Currently, AI Assistant supports Product Knowledge inquiries in AEM as a Cloud Service, including Sites, Assets, Dynamic Media, Cloud Manager, and Forms.
+  Currently, AI Assistant supports Product Knowledge inquiries in AEM as a Cloud Service.
 * **What are the capabilities of AI Assistant in AEM?**  
   AI Assistant in AEM is designed to answer queries related to Adobe Product Knowledge.
 * **Does the AI Assistant in AEM use personal information for training data?**  
