@@ -66,12 +66,14 @@ The on/off time for a page is a convenient way to temporarily hide content that 
 
 Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish and have available immediately and have available on the publish environment until they are deactivated (the normal scenario).
 
+When on/off times are configured, you will see additional icons and information related to the on-off times in the [list and card views of the Sites Console](/help/sites-authoring/basic-handling.md#views) as well as in the [timeline view of the console's side panel.](/help/sites-authoring/basic-handling.md#timeline)
+
 >[!NOTE]
 >If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action is triggered immediately.
 
 >[!TIP]
 >
->On/off times deal strictly with content that is already published (either manually or via auto-replication). For this reason, publishing workflows such as those for approving content are not triggered by to on/off times and on/off times do not affect the page's publication status. For this reason, on/off times are most appropriate for temporarily showing/hiding content that is already approved and published.
+>On/off times deal strictly with content that is already published (either manually or via auto-replication). For this reason, publishing workflows such as those for approving content are not triggered by to on/off times and on/off times do not affect the page's publication status. Therefore, on/off times are most appropriate for temporarily showing/hiding content that is already approved and published.
 >
 >If you wish to publish new content with all associated workflows or entirely remove (unpublish content) from your site, consider [managing your publication.](/help/sites-authoring/publishing-pages.md#manage-publication)
 

@@ -202,7 +202,7 @@ The definition of a component can be broken down as follows:
 
 The icon or abbreviation for the component is defined via JCR properties of the component when the component is created by the developer. These properties are evaluated in the following order and the first valid property found is used.
 
-1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) to display in the component browser
+1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html) to display in the component browser
     * Use the value of the HTML attribute of the Coral icon.
 1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser
     * The abbreviation should be limited to two characters.
@@ -1034,7 +1034,7 @@ The following example is equivalent to the `REFRESH_INSERTED` configuration:
 
 >[!NOTE]
 >
->For the classic UI, to see which parameters can be used in the handlers, see the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
+>For the classic UI, to see which parameters can be used in the handlers, see the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
 
 With the following configuration, the page is refreshed after the component is deleted, edited, inserted, or moved:
 

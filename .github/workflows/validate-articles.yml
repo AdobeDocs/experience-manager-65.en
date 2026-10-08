@@ -22,3 +22,5 @@ jobs:
     secrets:
       SCCM_GITHUB_APP_ID: ${{ secrets.SCCM_GITHUB_APP_ID }}
       SCCM_GITHUB_APP_PRIVATE_KEY: ${{ secrets.SCCM_GITHUB_APP_PRIVATE_KEY }}
+      ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
+      ARTIFACTORY_TOKEN: ${{ secrets.ARTIFACTORY_TOKEN }}

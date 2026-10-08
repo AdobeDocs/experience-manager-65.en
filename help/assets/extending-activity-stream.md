@@ -53,4 +53,4 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 ## Read recorded events {#reading-recorded-events}
 
-The recorded events are stored as activities. You can read them programmatically using the [ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+The recorded events are stored as activities. You can read them programmatically using the [ActivityManager API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

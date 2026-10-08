@@ -58,7 +58,7 @@ To export a page:
 
 ## Creating a Page Exporter Configuration for your Site {#creating-a-page-exporter-configuration-for-your-site}
 
-The page exporter is based on the [Content Sync framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). The configurations that are available in the **Page Properties** dialog are export templates that define the required dependencies for a page. 
+The page exporter is based on the [Content Sync framework](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html). The configurations that are available in the **Page Properties** dialog are export templates that define the required dependencies for a page. 
 
 When a page export is triggered, the export template is referenced. Both the page path and the design path are dynamically applied. The zip file is then created by using the standard Content Sync functionality.
 
@@ -102,7 +102,7 @@ When your template is configured, make it available:
 
 ### Page Exporter Configuration Nodes {#page-exporter-configuration-nodes}
 
-The template consists of a node structure, as it uses the [Content Sync framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Each node has a `type` property that defines a specific action in the creation process of the zip file. 
+The template consists of a node structure, as it uses the [Content Sync framework](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Each node has a `type` property that defines a specific action in the creation process of the zip file. 
 
 <!--
 For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
@@ -173,7 +173,7 @@ Custom configurations are also possible.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-To meet some specific requirements, implement a [custom update handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
+To meet some specific requirements, implement a [custom update handler](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
 <!--
 To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
@@ -181,7 +181,7 @@ To meet some specific requirements, you may need to implement a custom `type` pr
 
 ## Programmatically Exporting a Page {#programmatically-exporting-a-page}
 
-To programmatically export a page, you can use the [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI service. This service lets you:
+To programmatically export a page, you can use the [PageExporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI service. This service lets you:
 
 * Export a page and write to the HTTP servlet response.
 * Export a page and save the zip file at a specific location.

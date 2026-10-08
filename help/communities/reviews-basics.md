@@ -65,9 +65,9 @@ Anonymous posting of a review is not supported. Site visitors must register and 
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Review API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [Review API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Review Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Review Endpoints](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](server-customize.md)
 

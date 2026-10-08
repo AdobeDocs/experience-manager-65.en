@@ -73,7 +73,7 @@ AEM updates the translation of the existing strings in the translation memory of
 To use this feature:
 
 * A TMS must be configured for use with AEM.
-* The connector needs to implement the method [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+* The connector needs to implement the method [`storeTranslation`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
   * Code within this method determines what happens to the translation memory update request.
   * The AEM translation framework sends the string value pairs (original and updated translation) back to the TMS  via this method implementation. 
 

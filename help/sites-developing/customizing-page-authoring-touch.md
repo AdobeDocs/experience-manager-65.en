@@ -31,7 +31,7 @@ Adobe Experience Manager (AEM) provides various mechanisms to let you customize 
 
 >[!NOTE]
 >
->For more information, see [JS documentation set](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+>For more information, see [JS documentation set](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 These can be used in many ways to extend the page authoring functionality in your AEM instance. A selection is covered below (at a high level).
 
@@ -41,7 +41,7 @@ These can be used in many ways to extend the page authoring functionality in you
 >
 >* Using and creating [clientlibs](/help/sites-developing/clientlibs.md).
 >* Using and creating [overlays](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structure of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-structure.md) for details of the structural areas used for page authoring.
 >
 
@@ -101,9 +101,9 @@ You can find the code of this page on GitHub
 
 When authoring pages, the user must often select from resources (for example, pages, components, and assets). This can take the form of a list, for example,  from which the author must choose an item.
 
-To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. For example, if the [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) component is used to allow the user to select the path to a particular resource, the paths presented can be filtered in the following way:
+To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. For example, if the [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) component is used to allow the user to select the path to a particular resource, the paths presented can be filtered in the following way:
 
-* Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
+* Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
 * Specify a name for the predicate, and refer that name when using the `pathbrowser`.
 
 For further detail on creating a custom predicate, see [Implementing a Custom Predicate Evaluator for the Query Builder](/help/sites-developing/implementing-custom-predicate-evaluator.md).

@@ -18,7 +18,7 @@ role: Admin, User, Developer
 
 Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 
-You can use custom code to submit a PDF Form or to send Agent UI preview URL to end users to preview an interactive communication. Or, you submit a form using custom methods instead of using submit methods provided with AEM Forms. All the previously mentioned actions and custom implementations of AEM Forms APIs are not accounted as transactions. AEM Forms provide an API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), to record such actions as transactions.
+You can use custom code to submit a PDF Form or to send Agent UI preview URL to end users to preview an interactive communication. Or, you submit a form using custom methods instead of using submit methods provided with AEM Forms. All the previously mentioned actions and custom implementations of AEM Forms APIs are not accounted as transactions. AEM Forms provide an API, [TransactionRecorder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), to record such actions as transactions.
 
 To record a transaction, write the [standard sling servlet](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en) and call the servlet from a client to record a transaction. You can call the servlet using AJAX or any other standard method.
 

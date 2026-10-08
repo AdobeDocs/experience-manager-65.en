@@ -72,7 +72,7 @@ The following additional default roles may be included, depending on the AEM for
 
 **AEM forms Workspace Administrator:** Can view and modify settings from the Workspace page in Administration Console
 
-***note**: The Flex Worksapce is deprecated for AEM forms release.*
+***note**: The Flex Workspace is deprecated for AEM forms release.*
 
 **Workspace User:** Can log in to the Workspace end-user application
 
@@ -90,7 +90,7 @@ The following additional default roles may be included, depending on the AEM for
 
 >[!NOTE]
 >
->The Flex Worksapce is deprecated for AEM forms release.
+>The Flex Workspace is deprecated for AEM forms release.
 
 ## Create a role {#create-a-role}
 

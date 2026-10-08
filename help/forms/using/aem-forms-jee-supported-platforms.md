@@ -377,7 +377,8 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
 > - libxcb.x86_64 (1.13-1.el7)
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 ( 2.17 or greater)
-> - OpenSSL 3 (required at default location on OS). 
+> - OpenSSL 3 (required at default location on OS).
+> - On Red Hat&reg; Enterprise Linux&reg; 9, the 32-bit OpenOffice build requires `libcrypt.so.1`, which is not installed by default. If it is missing, OpenOffice fails to start with the error `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`, and OpenOffice-to-PDF conversions fail. Install the `libxcrypt-compat` package (32-bit) to provide the library: `sudo dnf install -y libxcrypt-compat.i686`. 
     
   For OpenSSL 3 Installation: The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.
 

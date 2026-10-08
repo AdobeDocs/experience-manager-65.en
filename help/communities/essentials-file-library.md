@@ -49,9 +49,9 @@ This page provides the fundamental information for working with the file library
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [File Library API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [File Library API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [File Library Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [File Library Endpoints](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](server-customize.md)
 

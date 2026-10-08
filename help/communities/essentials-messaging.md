@@ -86,9 +86,9 @@ See also [Client-side Customizations](/help/communities/client-customize.md)
 ## Essentials for Server-Side {#essentials-for-server-side}
 
 * [Configuring Messaging](/help/communities/configure-messaging.md)
-* [Messaging client APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) for SCF components
-* [Messaging APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) for the service
-* [Messaging Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [Messaging client APIs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) for SCF components
+* [Messaging APIs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) for the service
+* [Messaging Endpoints](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Server-side Customizations](/help/communities/server-customize.md)
 
 >[!CAUTION]

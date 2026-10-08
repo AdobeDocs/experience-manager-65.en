@@ -52,4 +52,4 @@ Users with certain types of administrator privileges cannot access the Workspace
 
 >[!NOTE]
 >
->The Flex Worksapce is deprecated for AEM forms release.
+>The Flex Workspace is deprecated for AEM forms release.

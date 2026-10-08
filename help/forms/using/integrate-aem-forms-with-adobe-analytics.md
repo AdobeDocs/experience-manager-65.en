@@ -232,9 +232,9 @@ To use [!DNL Adobe Launch] configuration in an existing Adaptive Form:
 
 After you enable [!DNL Adobe Analytics] for an adaptive form, you can [validate](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) if there is an appropriate data event flow between AEM Forms and [!DNL Adobe Analytics]. The integration of AEM Forms with Adobe Analytics is complete. You can now [configure and view reports in Adobe Analytics](#view-reports-adobe-analytics).
 
-  >[!NOTE]
-  >In case, if both [Analytics using Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) and **Analytics using Adobe Launch** features are enabled simultaneously, **Analytics using Adobe Launch** will take precedence. 
-  > 
+>[!NOTE]
+>
+>In case, if both [Analytics using Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) and **Analytics using Adobe Launch** features are enabled simultaneously, **Analytics using Adobe Launch** will take precedence. 
 
 ### Create rules to capture custom events (Optional) {#capture-custom-events}
 

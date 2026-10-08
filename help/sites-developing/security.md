@@ -28,7 +28,7 @@ It is important that you adapt this configuration to your own security needs by 
 
 >[!NOTE]
 >
->Adobe recommends that you always access to the XSS protection API by using the [XSSAPI provided by AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe recommends that you always access to the XSS protection API by using the [XSSAPI provided by AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 Also, a web application firewall, such as [mod_security for Apache](https://www.modsecurity.org), can provide reliable, central control over the security of the deployment environment and protect against previously undetected cross-site scripting attacks.
 

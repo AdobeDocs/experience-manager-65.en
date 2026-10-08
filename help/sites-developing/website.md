@@ -517,9 +517,9 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
 
 1. Copy the following code into `navimage.png.java.`The code extends the AbstractImageServlet class:
 
-    * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
+    * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
     * The parent page of the resource is extracted from the ImageContext object. The page title and subtitle are then obtained.
-    * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
+    * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
 
    ```java
    package apps.mywebsite.components.contentpage;

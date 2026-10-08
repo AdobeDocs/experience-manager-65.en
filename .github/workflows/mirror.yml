@@ -22,7 +22,7 @@ jobs:
     # of the tree, but it must only run in the source org, never on the public copy
     # where it would attempt to mirror onto itself.
     if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository_owner == 'Adobe-Enterprise-Docs'
-    runs-on: ubuntu-latest
+    runs-on: gh-hosted
     outputs:
       is_en: ${{ steps.route.outputs.is_en }}
       locale: ${{ steps.route.outputs.locale }}

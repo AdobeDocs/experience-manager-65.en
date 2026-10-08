@@ -83,74 +83,74 @@ Perform the following steps, on all the author and publish instances, to install
 1. The database connection can be done via Apache Sling Connection Pooled Data Source.
 1. For Apache Sling connection, find and click to open **[!UICONTROL Apache Sling Connection Pooled DataSource]** in edit mode in the Web Console Configuration. Specify the values for properties as described in the following table:
 
-<table>
- <tbody>
-  <tr>
+   <table>
+   <tbody>
+   <tr>
    <td><strong>Property</strong></td>
    <td><strong>Value</strong></td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Datasource name</td>
    <td><p>A datasource name for filtering drivers from the data source pool</p> <p><strong>Note: </strong><em>The sample implementation uses FormsPortal as the datasource name.</em></p> </td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>JDBC driver class</td>
    <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>JDBC connection URI<br /> </td>
    <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Username</td>
    <td>A username to authenticate and perform actions on database tables</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Password</td>
    <td>Password associated with the username</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Transaction Isolation</td>
    <td>READ_COMMITTED</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Max Active Connections</td>
    <td>1000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Max Idle Connections</td>
    <td>100</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Min Idle Connections</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Initial Size</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Max Wait</td>
    <td>100000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Test on Borrow</td>
    <td>Checked</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Test while Idle</td>
    <td>Checked</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Validation Query</td>
    <td>Example values are SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Validation Query timeout</td>
    <td>10000</td>
-  </tr>
- </tbody>
-</table>
+   </tr>
+   </tbody>
+   </table>
 
    >[!NOTE]
    >

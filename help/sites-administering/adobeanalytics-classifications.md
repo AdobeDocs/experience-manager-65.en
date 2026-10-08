@@ -16,6 +16,10 @@ role: Admin
 ---
 # Adobe Classifications{#adobe-classifications}
 
+[!BADGE Discontinued]{type=negative tooltip="This feature is now end of life"}
+
+<div class="preview"> Adobe Classifications requires an Adobe Analytics configuration that uses user credentials (username and password), which is no longer supported now that the <a href="https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/">Adobe Analytics 1.4 API has reached end-of-life</a>. As a result, Adobe Classifications is deprecated. </div>
+
 Adobe Classifications exports classifications data to [Adobe Analytics](/help/sites-administering/adobeanalytics.md) in a scheduled manner. The exporter is an implementation of a **com.adobe.cq.scheduled.exporter.Exporter**.
 
 To configure this:

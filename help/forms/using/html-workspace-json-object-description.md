@@ -17,45 +17,45 @@ JSON objects used in AEM Forms workspace are described below.
 
    Categories are present in the start process tab of the workspace. These categories are used to classify the startpoints.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property</strong></td>
-   <td><strong>Client Only</strong></td>
-   <td><strong>Comments</strong></td>
-  </tr>
-  <tr>
-   <td>name</td>
-   <td>F</td>
-   <td>Category name</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>F</td>
-   <td>Category ID<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>description<br type="_moz" /> </td>
-   <td>F</td>
-   <td>Category description<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>F</td>
-   <td>Contains oid of parent category<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>T</td>
-   <td>Contains list of all startpoints present in a category</td>
-  </tr>
-  <tr>
-   <td>categoryList</td>
-   <td>T</td>
-   <td>Contains list of direct child categories of a category<br type="_moz" /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Property</strong></td>
+      <td><strong>Client Only</strong></td>
+      <td><strong>Comments</strong></td>
+   </tr>
+   <tr>
+      <td>name</td>
+      <td>F</td>
+      <td>Category name</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>F</td>
+      <td>Category ID<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>description<br type="_moz" /> </td>
+      <td>F</td>
+      <td>Category description<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>F</td>
+      <td>Contains oid of parent category<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>T</td>
+      <td>Contains list of all startpoints present in a category</td>
+   </tr>
+   <tr>
+      <td>categoryList</td>
+      <td>T</td>
+      <td>Contains list of direct child categories of a category<br type="_moz" /> </td>
+   </tr>
+   </tbody>
+   </table>
 
    >[!NOTE]
    >

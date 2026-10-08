@@ -234,9 +234,9 @@ Select the **[!UICONTROL Currency Value]** field in the form and create the foll
 
 ![Show or hide rules](assets/rules-show-hide-captcha.png)
 
-   >[!NOTE]
-   >
-   > * If you select reCAPTCHA v2 configuration with size as **[!UICONTROL Invisible]** or reCAPTCHA Enterprise score based keys, then show/hide option is not applicable.
+>[!NOTE]
+>
+>* If you select reCAPTCHA v2 configuration with size as **[!UICONTROL Invisible]** or reCAPTCHA Enterprise score based keys, then show/hide option is not applicable.
 
 ### Validate CAPTCHA {#validate-captcha}
 

@@ -62,11 +62,11 @@ Use Multi Site Manager (MSM) to create a mobile live copy from a standard site. 
 
 The Java&trade; packages containing the mobile classes are:
 
-* [com.day.cq.wcm.mobile.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines MobileConstants.
-* [com.day.cq.wcm.mobile.api.device](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - defines Device, DeviceGroup, and DeviceGroupList.
-* [com.day.cq.wcm.mobile.api.device.capability](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines DeviceCapability.
-* [com.day.cq.wcm.mobile.api.wurfl](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - defines WurflQueryEngine.
-* [com.day.cq.wcm.mobile.core](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - defines MobileUtil, which provides various utility methods revolving around WCM Mobile.
+* [com.day.cq.wcm.mobile.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines MobileConstants.
+* [com.day.cq.wcm.mobile.api.device](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - defines Device, DeviceGroup, and DeviceGroupList.
+* [com.day.cq.wcm.mobile.api.device.capability](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines DeviceCapability.
+* [com.day.cq.wcm.mobile.api.wurfl](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - defines WurflQueryEngine.
+* [com.day.cq.wcm.mobile.core](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - defines MobileUtil, which provides various utility methods revolving around WCM Mobile.
 
 ### Mobile Components {#mobile-components}
 

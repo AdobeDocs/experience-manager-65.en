@@ -120,7 +120,7 @@ AEM eCommerce is implemented with an eCommerce engine:
 >
 >AEM eCommerce implemented within AEM using generic development based on JCR is:
 >
->* A standalone, AEM-native eCommerce example to illustrate use of the API. This can be used to control product data, shopping carts and checkout with the existing data display and marketing campaigns. In this case, the product database is stored in the repository native to AEM (Adobe's implementation of [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* A standalone, AEM-native eCommerce example to illustrate use of the API. This can be used to control product data, shopping carts and checkout with the existing data display and marketing campaigns. In this case, the product database is stored in the repository native to AEM (Adobe's implementation of [JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)).
 >
 >  The standard AEM installation contains the basics of the [generic eCommerce implementation](/help/commerce/cif-classic/administering/generic.md).
 
@@ -144,7 +144,7 @@ Though usually a project needs to develop their own, customized, commerce provid
 >
 >The Geometrixx importers use CSV files; there is a description of the schema accepted (with custom properties allowed) in the comments above their implementation.
 
-The [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) maintains (through [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) a list of implementations of the [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) and [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. These are listed in the **Importer/Commerce Provider** dropdown field of the importer wizard (using the `commerceProvider` property as a name).
+The [ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) maintains (through [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) a list of implementations of the [ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) and [CatalogBlueprintImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. These are listed in the **Importer/Commerce Provider** dropdown field of the importer wizard (using the `commerceProvider` property as a name).
 
 When a specific importer/commerce provider is available from the dropdown, any supplemental data it needs must be defined (depending on the importer type) in either:
 

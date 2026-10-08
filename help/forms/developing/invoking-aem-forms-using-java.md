@@ -58,6 +58,10 @@ To programmatically invoke a AEM Forms service by using the Java API, include re
 
 * The J2EE application server on which AEM Forms is deployed.
 
+>[!NOTE]
+>
+>If you encounter issues when using AEM Forms client library files such as `adobe-livecycle-client.jar`, check the [AEM Forms hotfixes](/help/release-notes/aem-forms-hotfix.md) page to see whether a hotfix provides an updated version of the file. If it does, use the updated file in your project's classpath.
+
 ### Service-specific JAR files {#service-specific-jar-files}
 
 The following table lists the JAR files that are required to invoke AEM Forms services.

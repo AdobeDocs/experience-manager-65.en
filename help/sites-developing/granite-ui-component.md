@@ -22,7 +22,7 @@ Granite UI provides a range of components designed to be used in forms; these ar
 
 >[!NOTE]
 >
->For full details about fields, see the [Granite UI documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>For full details about fields, see the [Granite UI documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Use the Granite UI Foundation framework to develop and/or extend Granite components. This has two elements:
 
@@ -44,7 +44,7 @@ The generic Granite UI component `field` is composed of two files of interest:
 * `init.jsp`: handles the generic processing; labeling, description, and provides form value that you need when rendering your field.
 * `render.jsp`: this is where the actual rendering of the field is performed and must be overridden for your custom field; is included by `init.jsp`.
 
-See [Granite UI documentation - Field](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) for details.
+See [Granite UI documentation - Field](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) for details.
 
 For examples, see:
 
