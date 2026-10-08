@@ -1,6 +1,6 @@
 ---
 title: Data Retention in AEM Forms
-description: Learn how Adobe Experience Manager (AEM) Forms acts as a pass-through server that does not retain form end-user data by default, and how to prevent data retention in the AEM Repository and logs.
+description: Learn how Adobe Experience Manager (AEM) Forms, by default, acts as a pass-through server and does not store form end-user data, supporting data privacy.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin, User
 solution: Experience Manager Forms
@@ -51,6 +51,28 @@ AEM is a customizable solution. If you customize AEM, ensure that your customiza
 When you use default capabilities, AEM Forms does not write form end-user data to logs.
 
 Custom code can write data to logs. If you add tracing or logging during development, remove traces and data sent to logs before deploying your code to staging and production environments.
+
+## Frequently asked questions about AEM Forms data retention {#faq}
+
+**Does AEM Forms store form data?**
+
+No. By default, Adobe Experience Manager (AEM) Forms acts as a pass-through server for data captured through Adaptive Forms and does not store end-user data in the AEM Repository. The server passes submitted data to the destination that you own and configure, such as a Form Data Model data source, a submit-action target, or an external API. This default behavior applies to both AEM Forms on OSGi and AEM Forms on JEE.
+
+**Where is Adaptive Form data stored?**
+
+Submitted Adaptive Form data is stored in the destination that you own and configure, not in the Adobe Experience Manager (AEM) Repository. Out-of-the-box mechanisms such as the Form Data Model (FDM), connectors, and submit actions send data to your own location. A form can also forward data to an external service, such as a REST API, without persisting it on AEM. The Forms Portal submit action also saves data to a storage location that you provide and own.
+
+**Do long-lived workflows store form data?**
+
+Long-lived workflow processes in Adobe Experience Manager (AEM) Forms can save data temporarily as part of the workflow payload, which is stored in the workflow instance metadata in the AEM Repository. To keep this data in a repository that you own and manage, such as Azure Blob storage, rather than on AEM, use the [AEM data externalization capability for workflow variables](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+
+**Does AEM Forms write data to logs?**
+
+No. With default capabilities, Adobe Experience Manager (AEM) Forms does not write form end-user data to logs. Because AEM is a customizable platform, custom code can write data to logs. If you add tracing or logging during development, remove those traces and any logged data before deploying to staging and production environments. A customization must not store data in the AEM Repository or logs.
+
+**How is data protected in transit?**
+
+Data in transit is protected with Transport Layer Security (TLS) in Adobe Experience Manager (AEM) Forms. Enable HTTPS on the AEM instance to secure the connection between the browser and AEM. In addition, make sure the endpoints that AEM Forms sends data to, such as cloud configurations, submit-action URLs, and Form Data Model data sources, use secure HTTPS endpoints. Because AEM Forms does not store the data it passes through, encryption at rest does not apply to that data.
 
 ## Related resources {#related-resources}
 
