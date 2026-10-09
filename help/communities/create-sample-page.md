@@ -1,6 +1,6 @@
 ---
 title: Create a Sample Page
-description: Learn how to create a community site template that only contains the Page function that can help you create a simple community site. 
+description: Learn how to create a community site template that only contains the Page function that can help you create a simple community site.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
@@ -9,6 +9,15 @@ exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
 solution: Experience Manager
 feature: Communities
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Create a Sample Page {#create-a-sample-page}
 

@@ -1,19 +1,21 @@
 ---
 title: Configure your Adobe Mobile Services Cloud Service
-
 description: Follow this page to configure your Adobe Mobile Services Cloud Service.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
-
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Configure your Adobe Mobile Services Cloud Service {#configure-your-adobe-mobile-services-cloud-service}
 

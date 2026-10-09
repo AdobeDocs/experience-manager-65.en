@@ -1,15 +1,27 @@
 ---
 title: Installing and configuring the document security server
-
-description: Use document security to safely distribute any information that you have saved in a supported format. Only authorized users can access protected documents. 
-
-
+description: Use document security to safely distribute any information that you have saved in a supported format. Only authorized users can access protected documents.
 contentOwner: khsingh
-
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Document Security
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Installing and configuring the document security server {#installing-and-configuring-the-document-security-server}
 

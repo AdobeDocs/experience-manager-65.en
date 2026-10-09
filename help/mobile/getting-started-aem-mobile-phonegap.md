@@ -1,18 +1,20 @@
 ---
 title: AEM Adobe PhoneGap
-
 description: AEM integrates with PhoneGap so that you can easily create apps using AEM pages. Follow this page to get started with Adobe PhoneGap Enterprise.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
-
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
 solution: Experience Manager
 feature: Mobile
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # AEM Adobe PhoneGap{#aem-adobe-phonegap}
 

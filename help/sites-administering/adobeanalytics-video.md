@@ -10,6 +10,17 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Configuring Video Tracking for Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 

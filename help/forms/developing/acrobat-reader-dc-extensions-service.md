@@ -7,8 +7,25 @@ topic-tags: develop
 role: Developer
 exl-id: 82f0b6c1-ca0c-48c7-b7f6-b54704ac0830
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Reader Extensions,APIs & Integrations
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 

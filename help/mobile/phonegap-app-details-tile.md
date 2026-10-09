@@ -9,6 +9,12 @@ exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Manage App Tile{#manage-app-tile}
 

@@ -1,18 +1,25 @@
 ---
 title: Upgrading Custom Search Forms
-
 description: This article details the adjustments that are required after an upgrade in order for the custom search forms to function.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Upgrading Custom Search Forms{#upgrading-custom-search-forms}
 

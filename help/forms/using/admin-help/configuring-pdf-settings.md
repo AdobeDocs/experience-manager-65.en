@@ -1,16 +1,27 @@
 ---
 title: Configuring Adobe PDF settings
 description: Learn how to configure Adobe PDF settings visible on the Adobe PDF Settings page. You can use any of the predefined PDF settings or create your own.
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Configuring Adobe PDF settings{#configuring-adobe-pdf-settings}
 

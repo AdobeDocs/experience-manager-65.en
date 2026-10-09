@@ -1,16 +1,20 @@
 ---
 title: Administering Mobile Apps
 description: Follow this page to get started with administering content for mobile apps.
-
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
-
 exl-id: dc7ba6ad-9df9-4312-a82f-5f3405dea684
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Mobile Apps{#mobile-apps}
 

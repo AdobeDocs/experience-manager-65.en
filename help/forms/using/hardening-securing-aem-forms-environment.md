@@ -1,15 +1,29 @@
 ---
 title: Hardening and Securing AEM forms on OSGi environment
-
 description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
-
-
 topic-tags: Security
-
 role: Admin,User
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Hardening and Securing AEM forms on OSGi environment {#hardening-and-securing-aem-forms-on-osgi-environment}
 

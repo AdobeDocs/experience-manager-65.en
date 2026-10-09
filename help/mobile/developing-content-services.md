@@ -1,6 +1,6 @@
 ---
 title: Content Services
-description: Learn how to use AEM Mobile Content Services to request content that is managed by AEM. 
+description: Learn how to use AEM Mobile Content Services to request content that is managed by AEM.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -8,6 +8,12 @@ exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
 solution: Experience Manager
 feature: Mobile
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Content Services{#content-services}
 

@@ -1,18 +1,20 @@
 ---
 title: Editing App Metadata
-
 description: App metadata is required details for releasing an application to a vendor's store. Follow this page to learn about editing app data.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-
 exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Editing App Metadata {#editing-app-metadata}
 

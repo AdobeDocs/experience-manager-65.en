@@ -9,6 +9,22 @@ feature: Image Presets
 role: User,Admin
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Apply Dynamic Media image presets {#applying-image-presets}
 

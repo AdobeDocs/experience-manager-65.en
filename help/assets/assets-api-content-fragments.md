@@ -6,6 +6,24 @@ role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Content Fragments Support in AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 

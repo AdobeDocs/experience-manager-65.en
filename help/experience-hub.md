@@ -12,6 +12,18 @@ TQID: 'https://experienceleague.adobe.com/l50k7J-xXPu5kXKIg-rArib9aIMnMoXXlSoJ-Y
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
     internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+  - id: f551224f-631f-46f8-b8fc-67744f995ba0
+    internal-label: Onboarding
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

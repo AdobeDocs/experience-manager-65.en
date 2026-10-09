@@ -1,17 +1,29 @@
 ---
 title: Create new folders to categorize forms
-
 description: Use folders to organize your form templates, PDFs, resources, and adaptive forms.
-
-
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-
 role: Admin,User
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Create new folders to categorize forms {#create-new-folders-to-categorize-forms}
 

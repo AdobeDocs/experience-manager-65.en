@@ -1,17 +1,25 @@
 ---
 title: Performance Tree
-
 description: Learn about the steps that to take to troubleshoot performance issues in AEM.
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Performance Tree{#performance-tree}
 

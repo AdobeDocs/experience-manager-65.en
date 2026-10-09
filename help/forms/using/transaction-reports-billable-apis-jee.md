@@ -5,7 +5,22 @@ topic-tags: forms-manager
 feature: Transaction Reports
 exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
+solution: Experience Manager, Experience Manager Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Transaction reporting Billable APIs for AEM Forms on JEE {#transaction-reports-billable-apis}
 
