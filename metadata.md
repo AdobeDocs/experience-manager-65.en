@@ -4,11 +4,6 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 solution: Experience Manager, Experience Manager 6.5
 feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-    internal-label: "Experience Manager"
-  - id: e14eb250-3c22-4a07-9061-a78112b2b826
-    internal-label: "Adobe Experience Manager 6.5"
 usetq: true
 landing-page-name: experience-manager-65
 landing-page-breadcrumb-title: AEM 6.5
@@ -16,6 +11,11 @@ type: Documentation
 version: Experience Manager 6.5
 index: true
 recommendations: noDisplay
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
 ---
 
 # Metadata for internal use
