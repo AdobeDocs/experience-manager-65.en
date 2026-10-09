@@ -1,12 +1,4 @@
 ---
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-    internal-label: Experience Manager
-  - id: e14eb250-3c22-4a07-9061-a78112b2b826
-    internal-label: Experience Manager 6.5
----
-
----
 title: Supported Platforms for AEM Forms on JEE
 description: List of infrastructure components required and supported for installing AEM Forms on JEE
 content-type: reference
@@ -17,8 +9,12 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
---- 
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+---
 
 # Supported Platforms for AEM Forms on JEE {#supported-platforms-for-aem-forms-on-jee}
 
@@ -545,7 +541,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >- PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
 >- PDF Generator requires a supported 32-bit Windows build of Adobe Acrobat Pro DC (Continuous track, latest version) for Acrobat-driven native conversions, and 32-bit Microsoft&reg; Office Professional Plus for Office-based conversions, on Microsoft&reg; Windows. Activate Acrobat through Feature Restricted Licensing (FRL) or your Adobe enterprise deployment process; see [Install Adobe Acrobat Pro DC](install-configure-document-services.md#install-adobe-acrobat-pro-dc) in the document services installation article.
->- The Microsoft® Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
+>- The Microsoft&reg; Office Professional Plus installation may use Retail or MAK/KMS/AD based volume licensing.
 >- If a Microsoft&reg; Office installation becomes deactivated or unlicensed for any reason, such as a volume-licensed installation that is unable to locate a KMS host within a specified period, conversions may fail until the installation is relicensed and reactivated.
 >- PDF Generator does not support Microsoft&reg; Office 365.
 >- PDF Generator conversions for OpenOffice are supported on both Windows and Linux&reg;.
