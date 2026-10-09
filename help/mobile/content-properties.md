@@ -1,18 +1,20 @@
 ---
 title: Content Properties and Nodes
-
 description: Follow this page to learn about content properties and nodes.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-
 exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Content Properties and Nodes {#content-properties-and-nodes}
 

@@ -9,6 +9,12 @@ exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 solution: Experience Manager
 feature: Mobile
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Application Create and Configuration Actions{#application-create-and-configuration-actions}
 

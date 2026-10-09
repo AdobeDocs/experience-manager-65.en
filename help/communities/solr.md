@@ -9,6 +9,15 @@ role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
 solution: Experience Manager
 feature: Communities
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Solr Configuration for SRP {#solr-configuration-for-srp}
 

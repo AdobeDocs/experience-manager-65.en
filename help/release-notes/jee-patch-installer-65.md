@@ -1,14 +1,28 @@
 ---
 title: AEM Forms JEE Patch Installer
 description: Learn how to use AEM Forms JEE Patch Installer to fix issues in AEM 6.5 Forms components.
-
 content-type: reference
-
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # AEM Forms JEE Patch Installer {#aem-forms-jee-patch-installer}
 

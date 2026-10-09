@@ -7,6 +7,24 @@ role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: b946c10d-6d59-4459-94a6-e1a584a89c5f
+    internal-label: Adobe Stock integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Use [!DNL Adobe Stock] assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 

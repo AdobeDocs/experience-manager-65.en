@@ -8,6 +8,30 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+  - id: f14a07fd-abc1-452c-8a48-fbcbc24a66ef
+    internal-label: Adobe Asset Link
+  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+    internal-label: Desktop App
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # [!DNL Adobe Experience Manager] and [!DNL Creative Cloud] integration best practices {#aem-and-creative-cloud-integration-best-practices}
 

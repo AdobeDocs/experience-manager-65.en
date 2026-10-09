@@ -9,6 +9,12 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Creating and Editing Apps Using the Apps Console{#creating-and-editing-apps-using-the-apps-console}
 

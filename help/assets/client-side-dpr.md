@@ -5,6 +5,22 @@ role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: b39a6d56-d787-413f-8024-351803c28d44
+    internal-label: Smart Imaging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # About Smart Imaging with client-side Device Pixel Ratio (DPR) {#client-side-dpr}
 

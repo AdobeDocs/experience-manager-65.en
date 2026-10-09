@@ -9,6 +9,12 @@ exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Track App Performance with Adobe Mobile Analytics{#track-app-performance-with-adobe-mobile-analytics}
 

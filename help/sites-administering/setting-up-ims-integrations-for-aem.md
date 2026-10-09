@@ -4,6 +4,20 @@ description: Learn how to set up IMS integrations for AEM
 feature: Security
 role: Admin
 exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Setting Up IMS Integrations for AEM {#setting-up-ims-integrations-for-aem}
 

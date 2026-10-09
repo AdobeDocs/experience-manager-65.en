@@ -6,6 +6,19 @@ role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Manage compound and multi-page assets {#managing-compound-assets}
 

@@ -1,18 +1,20 @@
 ---
 title: Out of the Box App Handlers
-
 description: Follow this page to learn about the out-of-the-box handlers for Adobe PhoneGap Enterprise with AEM.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Out of the Box App Handlers{#out-of-the-box-app-handlers}
 

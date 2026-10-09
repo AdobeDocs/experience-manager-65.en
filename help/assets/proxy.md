@@ -1,11 +1,27 @@
 ---
-title: "[!DNL Assets] proxy development"
+title: '[!DNL Assets] proxy development'
 description: A proxy is an [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] proxy, supported operations, proxy components, and how to develop a custom proxy worker.
 contentOwner: AG
 role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: cf4d26de-6586-4a7a-8ccb-6e8a29ee21ea
+    internal-label: Proxy workers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # [!DNL Assets] proxy development {#assets-proxy-development}
 

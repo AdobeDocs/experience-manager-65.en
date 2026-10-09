@@ -9,6 +9,12 @@ exl-id: 2f02f541-92db-469b-bf23-ec64d2e282ff
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Setting Your Referrer Filter to Allow Empty{#setting-your-referrer-filter-to-allow-empty}
 

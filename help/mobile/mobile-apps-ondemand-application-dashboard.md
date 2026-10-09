@@ -1,18 +1,20 @@
 ---
 title: AEM Mobile Application Dashboard
-
 description: You can manage your application and mobile app content from AEM Mobile Application Dashboard or the Control Center. Follow this page to learn more.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
 solution: Experience Manager
 feature: Mobile
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # AEM Mobile Application Dashboard {#aem-mobile-application-dashboard}
 

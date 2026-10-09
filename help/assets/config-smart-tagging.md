@@ -5,6 +5,22 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Prepare [!DNL Assets] for smart tagging {#configure-asset-tagging-using-the-smart-content-service}
 

@@ -10,6 +10,20 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Deploying and Maintaining{#deploying-and-maintaining}
 

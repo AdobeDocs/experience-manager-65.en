@@ -8,6 +8,21 @@ feature: Transaction Reports
 exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Record a transaction for custom implementations for AEM Forms on OSGi {#record-a-transaction-for-custom-implementations}
 

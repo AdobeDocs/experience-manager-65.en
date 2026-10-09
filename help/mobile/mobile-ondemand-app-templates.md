@@ -8,6 +8,12 @@ exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
 solution: Experience Manager
 feature: Mobile
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Creating and Adding Templates and Components {#creating-and-adding-templates-and-components}
 

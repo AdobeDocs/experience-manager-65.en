@@ -9,6 +9,19 @@ feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Customizing templates for Forms Portal components{#customizing-templates-for-forms-portal-components}
 

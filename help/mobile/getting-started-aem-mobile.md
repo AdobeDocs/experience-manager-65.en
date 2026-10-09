@@ -1,16 +1,20 @@
 ---
 title: Getting Started with Adobe Experience Manager Mobile
 description: This page serves as a landing page for Adobe Experience Manager Mobile. Follow this page as a starting point so you can learn about the three different ways for creating apps.
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
-
 exl-id: a2bc9a50-6455-4703-8829-964fab313e96
 solution: Experience Manager
 feature: Mobile
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Getting Started with Adobe Experience Manager Mobile{#getting-started-with-aem-mobile}
 

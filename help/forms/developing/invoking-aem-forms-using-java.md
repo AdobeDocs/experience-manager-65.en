@@ -8,8 +8,23 @@ topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,APIs & Integrations
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Invoking AEM Forms using the Java API {#invoking-aem-forms-using-the-javaapi} 
 

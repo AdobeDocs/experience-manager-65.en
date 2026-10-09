@@ -8,6 +8,17 @@ role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Preview 3D assets in Adobe Experience Manager {#previewing-3d-assets-aem}
 

@@ -9,6 +9,30 @@ feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: b59c0486-3350-52ed-8816-e0a8e11486b8
+    internal-label: Forms Service
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Overview of AEM Document Services{#overview-of-aem-document-services}
 

@@ -1,18 +1,25 @@
 ---
 title: Integrating with Livefyre
-
 description: Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
-
-
 contentOwner: ind14750
 content-type: reference
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Integrating with Livefyre{#integrating-with-livefyre}
 

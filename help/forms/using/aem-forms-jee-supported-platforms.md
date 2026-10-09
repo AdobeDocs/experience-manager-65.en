@@ -1,4 +1,12 @@
 ---
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+---
+
+---
 title: Supported Platforms for AEM Forms on JEE
 description: List of infrastructure components required and supported for installing AEM Forms on JEE
 content-type: reference

@@ -9,6 +9,12 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Add Adobe Analytics to your Mobile Application{#add-adobe-analytics-to-your-mobile-application}
 
