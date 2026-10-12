@@ -429,6 +429,7 @@ user-guide-title: AEM 6.5
     + [Configure metadata functionality](/help/assets/metadata-config.md)
     + [Metadata schemas](/help/assets/metadata-schemas.md)
     + [XMP writeback to renditions](/help/assets/xmp-writeback.md)
+    + [C2PA metadata](/help/assets/c2pa-metadata.md)
     + [Asset link sharing](/help/assets/link-sharing.md)
     + [Asset reports](/help/assets/asset-reports.md)
     + [Configure Smart Content Service for tagging](/help/assets/config-smart-tagging.md)
