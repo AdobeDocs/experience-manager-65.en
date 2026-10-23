@@ -562,6 +562,7 @@ user-guide-title: AEM 6.5
       + [Mitigating serialization issues in AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md)
     + Configure AEM Forms {#configure-aem-forms}
       + [Performance tuning of AEM Forms server](/help/forms/using/performance-tuning-aem-forms.md)
+      + [Create a custom index for adaptive form references](/help/forms/using/create-custom-index-for-adaptive-forms-references.md)
       + [Configure adaptive forms cache](/help/forms/using/configure-adaptive-forms-cache.md)
       + [Configuring AEM DS settings](/help/forms/using/configuring-the-processing-server-url.md)
       + [Configuring the synchronization scheduler](/help/forms/using/configure-synchronization-scheduler.md)
