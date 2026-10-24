@@ -614,6 +614,8 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 * **FORMS-23722** When a form containing a **File Attachment** field that uses `bindref` is submitted to an AEM Workflow with an **Assign Task** step, the attachments are not displayed. As a result, they do not appear when the task is opened from the Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments. 
 
+* **FORMS-28517** When a digitally signed PDF is attached to a task in AEM Forms JEE Workspace, the upload remains stuck in the uploading state or fails with an "Invalid File" error. As a result, larger, signed PDF attachments cannot be added to the task. This issue is fixed in a later version. For a hotfix on the current/existing version, please contact Adobe Support.
+
 #### Known issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
