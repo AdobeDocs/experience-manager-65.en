@@ -38,7 +38,7 @@ AEM Experience Fragments can be exported to the default workspace in Adobe Targe
 >
 >[IMS integrations are now configured with S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md). 
 >
->Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md). 
+>Previous configurations were made with JWT Credentials that are now subject to deprecation in the Adobe Developer Console. 
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Various actions are required:
    >
    >[IMS integrations are now configured with S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md). 
    >
-   >Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md). 
+   >Previous configurations were made with JWT Credentials that are now subject to deprecation in the Adobe Developer Console. 
 
 1. Experience Fragments are exported from the AEM author instance, so you must [Configure the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Experience Fragment are externalized for web delivery.
 
