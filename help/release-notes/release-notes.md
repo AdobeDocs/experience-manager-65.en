@@ -4,6 +4,7 @@ description: Find release information, what's new, install how-tos, and a detail
 mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
+contentOwner: Rick Brough
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 product_v2:
