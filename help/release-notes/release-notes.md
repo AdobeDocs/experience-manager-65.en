@@ -69,6 +69,7 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 #### Accessibility {#sites-accessibility-6526}
 
+* (SITES-51864) MAJOR
 
 
 #### Admin User Interface{#sites-adminui-6526}
@@ -77,6 +78,8 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 #### Classic UI{#sites-classicui-6526}
 
+
+* (SITES-52165)
 
 
 #### Component Console{#sites-component-console-6526}
@@ -91,11 +94,19 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 
 
-#### [!DNL Content Fragments] - Fragments Editor{#sites-fragments-editor-6526}
+#### [!DNL Content Fragments] - Fragment Editor{#sites-fragments-editor-6526}
+
+
+
+* (SITES-46650)
 
 
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6526}
+
+* (SITES-48507) CRITICAL
+
+* (SITES-48699) MAJOR
 
 
 
@@ -104,6 +115,12 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 
 #### [!DNL Content Fragments] - Models & Model Editor{#sites-models-model-editor-6526}
+
+
+
+
+
+* (SITES-45383)
 
 
 
@@ -116,6 +133,8 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 
 #### Core Backend{#sites-core-backend-6526}
+
+* (SITES-48483) MAJOR
 
 
 
@@ -145,6 +164,8 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 #### Launches{#sites-launches-6526}
 
+* (SITES-46756) CRITICAL
+
 
 
 #### Link Checker{#sites-link-checker-6526}
@@ -158,9 +179,18 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 #### MSM - Live Copies{#sites-msm-live-copies-6526}
 
+* (SITES-46052) MAJOR
+
 
 
 #### Page Editor{#sites-pageeditor-6526}
+
+
+
+
+
+* (SITES-46681)
+* (SITES-45771)
 
 
 
@@ -169,6 +199,20 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 
 #### Rich Text Editor{#sites-rte-6526}
+
+
+
+* (SITES-46532) MAJOR
+* (SITES-46396) MAJOR
+
+
+
+#### Site Admin UI
+
+
+
+
+* (SITES-46590)
 
 
 
