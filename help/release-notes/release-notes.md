@@ -80,6 +80,9 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 
 * (SITES-52165)
+* (SITES-44918)
+
+
 
 
 #### Component Console{#sites-component-console-6526}
@@ -136,11 +139,15 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 * (SITES-48483) MAJOR
 
+* (SITES-44266)
+
 
 
 #### Core Components{#sites-core-components-6526}
 
 
+
+* (SITES-43738)
 
 #### Campaign integration{#sites-campaign-integration-6526}
 
@@ -182,6 +189,9 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 * (SITES-46052) MAJOR
 
 
+* (SITES-44988)
+
+
 
 #### Page Editor{#sites-pageeditor-6526}
 
@@ -201,7 +211,7 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 #### Rich Text Editor{#sites-rte-6526}
 
 
-
+* (SITES-44233) MAJOR
 * (SITES-46532) MAJOR
 * (SITES-46396) MAJOR
 
