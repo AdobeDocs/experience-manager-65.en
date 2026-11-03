@@ -10,6 +10,17 @@ exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Editing Page Content{#editing-page-content}
 

@@ -9,6 +9,17 @@ exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Overlays{#overlays}
 
@@ -20,7 +31,7 @@ In a standard instance, the predefined functionality is held under `/libs` and i
 
 Since AEM 6.0, changes have been made to how overlays are implemented and used:
 
-* AEM 6.0 and on - for [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-related overlays (that is, the touch-enabled UI)
+* AEM 6.0 and on - for [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-related overlays (that is, the touch-enabled UI)
 
     * Method
 
@@ -51,7 +62,7 @@ Since AEM 6.0, changes have been made to how overlays are implemented and used:
 
 >[!CAUTION]
 >
->The [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) and the related methods can only be used with [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). This means that creating an overlay with a skeleton structure is only appropriate for the standard, touch-enabled UI.
+>The [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) and the related methods can only be used with [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). This means that creating an overlay with a skeleton structure is only appropriate for the standard, touch-enabled UI.
 >
 >Overlays for other areas (including the classic UI) involve copying the appropriate node and entire substructure, then making the required changes.
 

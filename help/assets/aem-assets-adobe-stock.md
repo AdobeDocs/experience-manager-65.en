@@ -7,6 +7,24 @@ role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: b946c10d-6d59-4459-94a6-e1a584a89c5f
+    internal-label: Adobe Stock integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Use [!DNL Adobe Stock] assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
@@ -157,6 +175,7 @@ Execute the following steps to add the cloud configuration to connect to [!DNL A
    * **[!UICONTROL Locale]**: Select **[!UICONTROL English (United States)]**.
 1. Click **[!UICONTROL Save & Close]**.
 ![using adobe stock with aem](/help/assets/assets/adobe-stock-config-page.png)
+
 <!--
 old content
 ## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
@@ -300,16 +319,17 @@ To configure the [!DNL Adobe Stock] cloud service:
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
 1. Click **[!UICONTROL Save & Close]**. 
- -->
-   Your [!DNL Experience Manager Assets] author instance is now integrated with [!DNL Adobe Stock]. You can create multiple [!DNL Adobe Stock] configurations (for example, locale-based configurations). You can now access, search, and license the [!DNL Adobe Stock] assets from within the [!DNL Experience Manager] user interface. 
+-->
 
-   ![search-stock-assets](assets/aem-stock-searchstocks.png)
+Your [!DNL Experience Manager Assets] author instance is now integrated with [!DNL Adobe Stock]. You can create multiple [!DNL Adobe Stock] configurations (for example, locale-based configurations). You can now access, search, and license the [!DNL Adobe Stock] assets from within the [!DNL Experience Manager] user interface. 
 
-   >[!NOTE]
-   >
-   >At this stage of integration, only the administrators can access the [!DNL Adobe Stock] assets, search Stock assets (using omnisearch), and license the [!DNL Adobe Stock] assets.
-   >
-   >Administrators can further add users or groups to the [!DNL Adobe Stock] cloud service and give permissions to these non-admin users in [!DNL Experience Manager] to access the Stock configuration. 
+![search-stock-assets](assets/aem-stock-searchstocks.png)
+
+>[!NOTE]
+>
+>At this stage of integration, only the administrators can access the [!DNL Adobe Stock] assets, search Stock assets (using omnisearch), and license the [!DNL Adobe Stock] assets.
+>
+>Administrators can further add users or groups to the [!DNL Adobe Stock] cloud service and give permissions to these non-admin users in [!DNL Experience Manager] to access the Stock configuration. 
 
 1. To add users or groups, select the [!DNL Adobe Stock] cloud configuration and click **[!UICONTROL Properties]**. 
 

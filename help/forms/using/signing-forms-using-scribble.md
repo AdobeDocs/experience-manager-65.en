@@ -1,6 +1,6 @@
 ---
 title: Apply electronic signatures to a form using scribble signatures
-description: Learn how to sign AEM Adaptive Forms using the scribble signature. You can use the scribble signature and signature step to draw the signature on a form. 
+description: Learn how to sign AEM Adaptive Forms using the scribble signature. You can use the scribble signature and signature step to draw the signature on a form.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -8,6 +8,24 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Apply electronic signatures to a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
@@ -34,18 +52,18 @@ You can use the **Scribble Signature** component and **Signature Step** componen
  Once you select the Done![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
 You can select the **Configure** ![configure](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. 
+
 * When the aspect ratio of the Scribble Signature canvas is less than 1, the geolocation information is added at the bottom of the Scribble Signature canvas.
 
 * When the aspect ratio of the Scribble Signature canvas is more than 1, the geolocation information is added to the right-side of the Scribble Signature canvas. 
  
- ![scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+![scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
 
 
-   >[!NOTE]
-   >
-   >Signatures are always saved in a PNG format.
-   >
-   
+>[!NOTE]
+>
+>Signatures are always saved in a PNG format.
+
 ## Configure an adaptive form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Create a Document of Record option enabled or form template based adaptive form. For step-by-step information, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).

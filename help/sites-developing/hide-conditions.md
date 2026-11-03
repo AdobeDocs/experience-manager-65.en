@@ -9,6 +9,17 @@ exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Using Hide Conditions {#using-hide-conditions}
 
@@ -28,7 +39,7 @@ By using hide conditions, admins, developers, and super users have a way to hide
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` is responsible filtering the resources based on the existence and value of the `granite:hide` property, located on the field to be filtered. The implementation of `/libs/cq/gui/components/authoring/dialog/dialog.jsp` includes an instance of `FilteringResourceWrapper.`
 
-The implementation makes use of the Granite [ELResolver API](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) and adds a `cqDesign` custom variable via the ExpressionCustomizer.
+The implementation makes use of the Granite [ELResolver API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) and adds a `cqDesign` custom variable via the ExpressionCustomizer.
 
 Here are a few examples of hide conditions on a design node located either under `etc/design` or as a Content Policy.
 

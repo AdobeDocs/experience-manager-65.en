@@ -9,12 +9,23 @@ exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Custom Node Types{#custom-node-types}
 
 Because Adobe Experience Manager (AEM) is based on Sling and uses a JCR repository, node types offered by both of these are available for use:
 
-* [JCR Node Types](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [JCR Node Types](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling Node Types](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 In addition to these node types, AEM provides a range of custom node types.

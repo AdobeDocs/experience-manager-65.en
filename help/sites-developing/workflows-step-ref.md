@@ -1,19 +1,26 @@
 ---
 title: Workflow Step Reference
-
 description: Refer to this step reference for workflows in Adobe Experience Manager.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Workflow Step Reference {#workflow-step-reference}
 
@@ -338,7 +345,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
 1. **Example Dialog Definition**
 
-   The following XML code snippet represents a dialog that stores a `String` value in the `watchEmail` node of the payload content. The title node represents the [TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component:
+   The following XML code snippet represents a dialog that stores a `String` value in the `watchEmail` node of the payload content. The title node represents the [TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component:
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -426,7 +433,7 @@ Create an OSGi service or an ECMAScript that selects a user to assign the work i
 
 * **OSGi service**
 
-  Services must implement the [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. The interface defines the following members:
+  Services must implement the [com.day.cq.workflow.exec.ParticipantStepChooser](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. The interface defines the following members:
 
     * `SERVICE_PROPERTY_LABEL` field: Use this field to specify the name of the participant chooser. The name appears in a list of available participant choosers in the **Dynamic Participant Step** properties.
 

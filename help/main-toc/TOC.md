@@ -72,7 +72,6 @@ user-guide-title: AEM 6.5
   + [Content Disposition Filter](/help/sites-administering/content-disposition-filter.md)
   + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
   + [Same Site Cookie Support](/help/sites-administering/same-site-cookie-support.md)
-  + [JWT Credentials Deprecation in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [Setting Up IMS Integrations for AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Experience Hub {#experience-hub}
   + [About Experience Hub](/help/experience-hub.md)
@@ -429,6 +428,7 @@ user-guide-title: AEM 6.5
     + [Configure metadata functionality](/help/assets/metadata-config.md)
     + [Metadata schemas](/help/assets/metadata-schemas.md)
     + [XMP writeback to renditions](/help/assets/xmp-writeback.md)
+    + [C2PA metadata](/help/assets/c2pa-metadata.md)
     + [Asset link sharing](/help/assets/link-sharing.md)
     + [Asset reports](/help/assets/asset-reports.md)
     + [Configure Smart Content Service for tagging](/help/assets/config-smart-tagging.md)
@@ -561,6 +561,7 @@ user-guide-title: AEM 6.5
       + [Mitigating serialization issues in AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md)
     + Configure AEM Forms {#configure-aem-forms}
       + [Performance tuning of AEM Forms server](/help/forms/using/performance-tuning-aem-forms.md)
+      + [Create a custom index for adaptive form references](/help/forms/using/create-custom-index-for-adaptive-forms-references.md)
       + [Configure adaptive forms cache](/help/forms/using/configure-adaptive-forms-cache.md)
       + [Configuring AEM DS settings](/help/forms/using/configuring-the-processing-server-url.md)
       + [Configuring the synchronization scheduler](/help/forms/using/configure-synchronization-scheduler.md)
@@ -595,6 +596,7 @@ user-guide-title: AEM 6.5
     + [Importing and exporting assets to AEM Forms](/help/forms/using/import-export-forms-templates.md)
     + [Supporting new locales for adaptive forms localization](/help/forms/using/supporting-new-language-localization.md)
     + Handling user data {#handling-user-data}
+      + [Data retention in AEM Forms](/help/forms/using/data-retention-aem-forms.md)
       + [Forms-centric workflows on OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
       + [Forms user management](/help/forms/using/user-management-handling-user-data.md)
       + [Forms JEE workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md)
@@ -1207,6 +1209,7 @@ user-guide-title: AEM 6.5
     + [Processing documents even if the AEM Forms server is not fully up and running](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
     + [Unable to use Output service, Forms service, or Document of Record (DoR) service](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
     + [Mitigating Struts 2 RCE Vulnerabilities for Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+    + [Mitigating Apache Axis Document Security web service vulnerability for Experience Manager Forms on JEE](/help/forms/using/mitigating-apache-axis-document-security-webservice-vulnerability-for-aem-forms-jee.md)
     + [Failure to backup database during upgrade to 6.5.12.0 for MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
     + [PDF generation fails to print a large number of PDFs on WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
     + [How to properly restart AEM SDK](/help/forms/using/restart-aem-sdk.md)
@@ -1231,7 +1234,6 @@ user-guide-title: AEM 6.5
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
   + AI Assistant {#ai-assistant}
-    + [Configure AI Assistant in AEM](/help/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
   + [Introduction and overview](/help/commerce/cif/introduction.md)

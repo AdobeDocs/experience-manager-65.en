@@ -1,18 +1,20 @@
 ---
 title: App definitions
-
 description: Follow this page to learn about app definitions, that are a way to identify what spaces and other configurations are appropriate for the app. App definitions allows the user to add space, without having to recompile the app.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-
 exl-id: 4c1c44fd-e685-462c-83a0-3cd2f74ab5c7
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # App definitions{#app-definitions}
 

@@ -2,6 +2,11 @@
 title: Shopping Cart and Dispatcher Setup
 description: Learn about the Shopping Cart and the Adobe Experience Manager Dispatcher Setup.
 exl-id: c9a17f42-91d7-4315-9dc3-5ae8d620fe92
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
 ---
 # Shopping Cart and Dispatcher Setup
 

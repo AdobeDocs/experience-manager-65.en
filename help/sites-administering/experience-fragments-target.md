@@ -10,6 +10,17 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Exporting Experience Fragments to Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
@@ -27,7 +38,7 @@ AEM Experience Fragments can be exported to the default workspace in Adobe Targe
 >
 >[IMS integrations are now configured with S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md). 
 >
->Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md). 
+>Previous configurations were made with JWT Credentials that are now subject to deprecation in the Adobe Developer Console. 
 
 >[!NOTE]
 >
@@ -55,7 +66,7 @@ Various actions are required:
    >
    >[IMS integrations are now configured with S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md). 
    >
-   >Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md). 
+   >Previous configurations were made with JWT Credentials that are now subject to deprecation in the Adobe Developer Console. 
 
 1. Experience Fragments are exported from the AEM author instance, so you must [Configure the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Experience Fragment are externalized for web delivery.
 

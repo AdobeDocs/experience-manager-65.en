@@ -9,6 +9,17 @@ exl-id: f7aa5ac0-3d03-4c04-b9c2-1bda427b0588
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Configuring for AEM Apps{#configuring-for-aem-apps}
 

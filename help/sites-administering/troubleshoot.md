@@ -1,19 +1,26 @@
 ---
 title: Troubleshooting Adobe Experience Manager
-
 description: Learn about troubleshooting some issues that might arise with Adobe Experience Manager.
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Troubleshooting Adobe Experience Manager {#troubleshooting-aem}
 

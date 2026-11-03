@@ -5,6 +5,22 @@ exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Security{#security}
 
@@ -28,7 +44,7 @@ It is important that you adapt this configuration to your own security needs by 
 
 >[!NOTE]
 >
->Adobe recommends that you always access to the XSS protection API by using the [XSSAPI provided by AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe recommends that you always access to the XSS protection API by using the [XSSAPI provided by AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 Also, a web application firewall, such as [mod_security for Apache](https://www.modsecurity.org), can provide reliable, central control over the security of the deployment environment and protect against previously undetected cross-site scripting attacks.
 

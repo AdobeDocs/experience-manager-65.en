@@ -6,6 +6,21 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 mini-toc-levels: 2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Editing Page Properties{#editing-page-properties}
@@ -66,12 +81,14 @@ The on/off time for a page is a convenient way to temporarily hide content that 
 
 Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish and have available immediately and have available on the publish environment until they are deactivated (the normal scenario).
 
+When on/off times are configured, you will see additional icons and information related to the on-off times in the [list and card views of the Sites Console](/help/sites-authoring/basic-handling.md#views) as well as in the [timeline view of the console's side panel.](/help/sites-authoring/basic-handling.md#timeline)
+
 >[!NOTE]
 >If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action is triggered immediately.
 
 >[!TIP]
 >
->On/off times deal strictly with content that is already published (either manually or via auto-replication). For this reason, publishing workflows such as those for approving content are not triggered by to on/off times and on/off times do not affect the page's publication status. For this reason, on/off times are most appropriate for temporarily showing/hiding content that is already approved and published.
+>On/off times deal strictly with content that is already published (either manually or via auto-replication). For this reason, publishing workflows such as those for approving content are not triggered by to on/off times and on/off times do not affect the page's publication status. Therefore, on/off times are most appropriate for temporarily showing/hiding content that is already approved and published.
 >
 >If you wish to publish new content with all associated workflows or entirely remove (unpublish content) from your site, consider [managing your publication.](/help/sites-authoring/publishing-pages.md#manage-publication)
 

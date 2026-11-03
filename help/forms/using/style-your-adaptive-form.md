@@ -1,11 +1,29 @@
 ---
-title: Style your adaptive form 
-description: Learn to create a custom theme, style individual components, and use Web Fonts in a theme. 
+title: Style your adaptive form
+description: Learn to create a custom theme, style individual components, and use Web Fonts in a theme.
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Style your adaptive form {#do-not-publish-style-your-adaptive-form}
 
@@ -438,12 +456,14 @@ Some styles apply to only a specific component. Such components are styled in ad
 You can use various fonts to design an adaptive form. All the devices that the adaptive form is viewed on may not have the fonts used to design the adaptive form. You can use a web font service to deliver the required fonts to the target device.
 
 [!DNL Adobe Fonts] is a Web Fonts service. You can configure and use the service with adaptive forms. To use [!DNL Adobe Fonts] in an adaptive form:
-1. Browse the [library of Adobe fonts](https://fonts.adobe.com/) and choose font to style your form. 
+
 <!--
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
 -->
+
+1. Browse the [library of Adobe fonts](https://fonts.adobe.com/) and choose font to style your form. 
 
    >[!NOTE]
    >
@@ -459,23 +479,25 @@ You can use various fonts to design an adaptive form. All the devices that the a
    >
    > You can only add fonts to your web project if they have the </> button available. 
 
-2. Name your web project.
-3. Select the checkboxes to select the font weights and styles you want to include.
+1. Name your web project.
+1. Select the checkboxes to select the font weights and styles you want to include.
 
     ![add a font library](assets/add-a-font-window.png)
 
-4. Select **Click** to create the project.
-5. Copy the embed code and the URL from the screen.
+1. Select **Click** to create the project.
+1. Copy the embed code and the URL from the screen.
       ![embed code and URL](assets/font-add-url.png)
 
-6. Click **Done** to close the web project window.
-7. Log into your AEM instance and go to URL `http://server:port/crx/de/index.jsp#`
-8. Create a folder structure in CRXDE, for example `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`. 
-9. Go to the newly created `clientlibs` folder and add the `allowProxy` and `categories` properties.
-10. Navigate to `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` and create a css folder.
-11. Go to the created CSS folder and create a file. For example, create a file as `fonts.css` and paste the embed code along with the URL.
+1. Click **Done** to close the web project window.
+1. Log into your AEM instance and go to URL `http://server:port/crx/de/index.jsp#`
+1. Create a folder structure in CRXDE, for example `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`. 
+1. Go to the newly created `clientlibs` folder and add the `allowProxy` and `categories` properties.
+1. Navigate to `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` and create a css folder.
+1. Go to the created CSS folder and create a file. For example, create a file as `fonts.css` and paste the embed code along with the URL.
+
    ![Folder structure](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. Save the changes.
+
+1. Save the changes.
 
 >[!NOTE]
 >

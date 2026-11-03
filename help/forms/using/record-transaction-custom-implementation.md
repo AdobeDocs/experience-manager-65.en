@@ -8,6 +8,21 @@ feature: Transaction Reports
 exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Record a transaction for custom implementations for AEM Forms on OSGi {#record-a-transaction-for-custom-implementations}
 
@@ -18,7 +33,7 @@ role: Admin, User, Developer
 
 Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 
-You can use custom code to submit a PDF Form or to send Agent UI preview URL to end users to preview an interactive communication. Or, you submit a form using custom methods instead of using submit methods provided with AEM Forms. All the previously mentioned actions and custom implementations of AEM Forms APIs are not accounted as transactions. AEM Forms provide an API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), to record such actions as transactions.
+You can use custom code to submit a PDF Form or to send Agent UI preview URL to end users to preview an interactive communication. Or, you submit a form using custom methods instead of using submit methods provided with AEM Forms. All the previously mentioned actions and custom implementations of AEM Forms APIs are not accounted as transactions. AEM Forms provide an API, [TransactionRecorder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), to record such actions as transactions.
 
 To record a transaction, write the [standard sling servlet](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en) and call the servlet from a client to record a transaction. You can call the servlet using AJAX or any other standard method.
 

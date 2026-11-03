@@ -9,6 +9,15 @@ exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
 solution: Experience Manager
 feature: Communities
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Tag Essentials {#tag-essentials}
 
@@ -67,9 +76,9 @@ Tagging of UGC may be enabled when configuring a [community site](sites-console.
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Social Tag Cloud API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [Social Tag Cloud API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Social Tag Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Social Tag Manager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Server-side Customizations](server-customize.md)
 

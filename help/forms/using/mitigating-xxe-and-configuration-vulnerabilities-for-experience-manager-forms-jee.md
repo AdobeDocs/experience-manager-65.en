@@ -8,7 +8,15 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
-release-date: 2025-08-05
+release-date: 2025-08-05T00:00:00.000Z
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Mitigating RCE (CVE-2025-49533), Struts Dev Mode Configuration (CVE-2025-54253), XXE (CVE-2025-54254), and Vulnerabilities for AEM Forms on JEE {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 

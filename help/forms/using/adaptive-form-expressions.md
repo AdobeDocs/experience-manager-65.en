@@ -8,6 +8,24 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Adaptive Form Expressions{#adaptive-form-expressions}
 
@@ -15,7 +33,7 @@ role: User, Developer
 
 Adaptive forms provide optimized and simplified form filling experience for end users with dynamic scripting capabilities. It lets you write expressions to add various behaviors such as dynamic show/hide fields and panels. It also lets you add calculated fields, make fields read-only, add validation logic, and many more. The dynamic behavior is based on the user input or prefilled data.
 
-JavaScript is the expression language of adaptive forms. All the expressions are valid JavaScript expressions and use adaptive forms scripting model APIs. These expressions return values of certain types. For the complete list of adaptive forms classes, events, objects, and public APIs, see [JavaScript Library API reference for adaptive forms.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+JavaScript is the expression language of adaptive forms. All the expressions are valid JavaScript expressions and use adaptive forms scripting model APIs. These expressions return values of certain types. For the complete list of adaptive forms classes, events, objects, and public APIs, see [JavaScript Library API reference for adaptive forms.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 
 ## Best practices for writing expressions {#best-practices-for-writing-expressions}
 
@@ -30,7 +48,7 @@ Repeating panels are instances of a panel that are added or removed dynamically,
 * To create a repeating panel, in the panel dialog, open settings, and set value of the max count field to more than 1.
 * The min count value of panel repeat settings can be one or more but cannot be more than max count value.
 * When an expression refers to a field of repeating panel, the field names in the expression are resolved to the closest repeating element.
-* Adaptive forms provide a few special functions to simplify computation for repeatable panels such as sum, count, min, max, filter, and many more. For the complete list of functions, see [JavaScript Library API reference for adaptive forms](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+* Adaptive forms provide a few special functions to simplify computation for repeatable panels such as sum, count, min, max, filter, and many more. For the complete list of functions, see [JavaScript Library API reference for adaptive forms](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 * APIs for manipulating instances of repeating panel are:
 
     * To add a panel instance: `panel1.instanceManager.addInstance()`
@@ -76,7 +94,7 @@ The calculate expression is used to auto-compute the value of a field using an e
 
 ### Click Expression {#click-expression}
 
-The click expression handles the actions performed on the click event of a button. Out of the box, GuideBridge provides APIs to perform various functions such as submit, validate that are used along with the click expression. For complete list of the APIs, see [GuideBridge APIs.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+The click expression handles the actions performed on the click event of a button. Out of the box, GuideBridge provides APIs to perform various functions such as submit, validate that are used along with the click expression. For complete list of the APIs, see [GuideBridge APIs.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)
 
 **Applies to**: Button fields
 
@@ -207,7 +225,7 @@ Display Format can be used to display the data in different formats. For example
 
 ### GuideBridge - APIs and Events {#guidebridge-apis-and-events}
 
-GuideBridge is collection of APIs' that can be used to interact with adaptive forms in memory model in a browser. For detailed introduction to Guide Bridge API, class methods, events exposed, see [JavaScript Library API reference for adaptive forms.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+GuideBridge is collection of APIs' that can be used to interact with adaptive forms in memory model in a browser. For detailed introduction to Guide Bridge API, class methods, events exposed, see [JavaScript Library API reference for adaptive forms.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -253,7 +271,7 @@ To use GuideBridge after the form is initialized (the `bridgeInitializeComplete`
 
 #### GuideBridge Events {#guidebridge-events}
 
-GuideBridge also provides certain events for external scripts on the hosting page. External scripts can listen to these events and perform various operations. For example, whenever the user name in a form change, the name shown in the header of the page also changes. For more details about such events, see [JavaScript Library API reference for adaptive forms.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+GuideBridge also provides certain events for external scripts on the hosting page. External scripts can listen to these events and perform various operations. For example, whenever the user name in a form change, the name shown in the header of the page also changes. For more details about such events, see [JavaScript Library API reference for adaptive forms.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)
 
 Use the following code to register handlers:
 

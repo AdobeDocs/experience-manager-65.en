@@ -9,6 +9,12 @@ exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 solution: Experience Manager
 feature: Mobile
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Publish UnPublish Content{#publish-unpublish-content}
 

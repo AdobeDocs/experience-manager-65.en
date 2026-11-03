@@ -9,6 +9,22 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Generate multiple interactive communications using Batch API {#use-batch-api-to-generate-multiple-ic}
 
@@ -167,7 +183,7 @@ You combine data (records) saved in an external data source with an interactive 
 
 ## Invoke the Batch API using REST requests
 
- You can invoke [the Batch API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) through Representational State Transfer (REST) requests. It lets you provide a REST endpoint to other users to access the API and configure your own methods for processing, storing, and customizing interactive communication. You can develop your own custom Java&trade; servlet to deploy the  API on your AEM instance.
+ You can invoke [the Batch API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html) through Representational State Transfer (REST) requests. It lets you provide a REST endpoint to other users to access the API and configure your own methods for processing, storing, and customizing interactive communication. You can develop your own custom Java&trade; servlet to deploy the  API on your AEM instance.
 
  Before you deploy the Java&trade; servlet, ensure that you have an interactive communication and corresponding data files are ready. Perform the following steps so you can create and deploy the Java&trade; servlet:  
 

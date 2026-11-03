@@ -1,17 +1,19 @@
 ---
 title: Mobile-Apps
-
-description: "Mobile-Apps"
-
-
+description: Mobile-Apps
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-
 exl-id: 0a98881d-08f3-47e7-bae1-5500d1fe6514
 solution: Experience Manager
 feature: Mobile
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Mobile-Apps{#mobile-apps}
 

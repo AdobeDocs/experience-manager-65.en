@@ -9,6 +9,12 @@ exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Managing Collections{#managing-collections}
 

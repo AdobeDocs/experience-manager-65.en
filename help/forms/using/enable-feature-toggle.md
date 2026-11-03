@@ -4,6 +4,16 @@ description: Feature Toggle is a functionality in AEM that allows administrators
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Feature Toggle in Adobe Experience Manager (AEM) 6.5{#enable-feature-toggle-aem-forms-65}
 

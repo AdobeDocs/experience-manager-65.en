@@ -9,6 +9,15 @@ exl-id: 0b508df9-1a24-4728-a254-f913eeb9b391
 solution: Experience Manager
 feature: Communities
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Tally Essentials {#tally-essentials}
 
@@ -32,9 +41,9 @@ As of AEM 6.1, the poll component is no longer available.
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Tally APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally APIs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally Endpoints](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](server-customize.md)
 

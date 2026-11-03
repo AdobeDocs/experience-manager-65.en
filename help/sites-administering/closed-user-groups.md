@@ -10,6 +10,20 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Closed User Groups in AEM{#closed-user-groups-in-aem}
 
@@ -199,7 +213,7 @@ The page associated with the login path may be located inside or outside that tr
 
 ### Managing CUG Policies {#managing-cug-policies}
 
-The new type of access control policies to restrict read access for a CUG is managed using the JCR access control management API and follows the mechanisms described with the [JCR 2.0 specification](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+The new type of access control policies to restrict read access for a CUG is managed using the JCR access control management API and follows the mechanisms described with the [JCR 2.0 specification](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 
 #### Set A New CUG Policy {#set-a-new-cug-policy}
 

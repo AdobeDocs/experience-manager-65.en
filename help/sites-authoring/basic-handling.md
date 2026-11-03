@@ -10,6 +10,21 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Basic Handling{#basic-handling}
 
@@ -398,7 +413,7 @@ In all views, all items can be deselected by tapping escape on the keyboard if y
 
 The column view allows for a visual navigation of a content tree through a series of cascading columns. This view lets you visualize and traverse the tree structure of your website.
 
-Selecting a resource in the leftmost column displays the child resources in a column to the right. Selecting a resource in the right column displays the child resources in another column to the righ, and so on.
+Selecting a resource in the leftmost column displays the child resources in a column to the right. Selecting a resource in the right column displays the child resources in another column to the right, and so on.
 
 * You can navigate up and down in the tree by tapping or clicking the resource name or the chevron to the right of the resource name.
 
@@ -425,6 +440,7 @@ Selecting a resource in the leftmost column displays the child resources in a co
   * Modification details
   * Page language
   * Publication details
+  * [Page on/off time](/help/sites-authoring/editing-page-properties.md#on-off-time) (if set)
 
 ### Card View {#card-view}
 
@@ -470,7 +486,12 @@ Selecting a resource in the leftmost column displays the child resources in a co
 
   * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
   * **Modified** - Last modified date and last modified by user
+    * The column entry will be badged with a warning icon if the page has been updated since last publication.
+    * ![Modified since last publication](assets/modified.png)
   * **Published** - Publication status
+    * The column entry will be badged with a clock icon if the page has [on/off times](/help/sites-authoring/editing-page-properties.md#on-time) set.
+    * Hover over the icon for details.
+    * ![On off time set](assets/on-off-time.png)
   * **Template** - Template on which the page is based
   * **Workflow** - Workflow currently applied to the page. More information is available when you mouse over, or open Timeline.
 
@@ -540,7 +561,9 @@ The timeline column lets you:
 
     * [Comments](#timelineaddingandviewingcomments)
     * Annotations
-    * Activities
+    * Activities including edits and publishing
+      * If the page has [on/off times](/help/sites-authoring/editing-page-properties.md#on-off-time) set and the current time is outside of the on/off time window, a Page Invalid activity may show.
+      * This indicates only that the page is outside of its validity window, not necessarily that the page is unpublished.
     * [Launches](/help/sites-authoring/launches.md)
     * [Versions](/help/sites-authoring/working-with-page-versions.md)
     * [Workflows](/help/sites-authoring/workflows-applying.md)

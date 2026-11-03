@@ -10,6 +10,17 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Create a Full-Featured Website (JSP){#create-a-fully-featured-website-jsp}
 
@@ -517,9 +528,9 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
 
 1. Copy the following code into `navimage.png.java.`The code extends the AbstractImageServlet class:
 
-    * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
+    * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
     * The parent page of the resource is extracted from the ImageContext object. The page title and subtitle are then obtained.
-    * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
+    * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
 
    ```java
    package apps.mywebsite.components.contentpage;

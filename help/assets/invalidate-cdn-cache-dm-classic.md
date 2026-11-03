@@ -9,6 +9,26 @@ feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: fc27aefe-8efd-48a6-89bf-c46e0e334a63
+    internal-label: CDN cache
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Invalidate the Content Delivery Network cache by way of Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 

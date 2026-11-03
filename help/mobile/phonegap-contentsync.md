@@ -10,6 +10,12 @@ exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Mobile with Content Sync{#mobile-with-content-sync}
 

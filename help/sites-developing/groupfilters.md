@@ -11,6 +11,17 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Creating Device Group Filters{#creating-device-group-filters}
 
@@ -24,7 +35,7 @@ After you create a filter, you can use it in the [group configuration.](/help/si
 
 ## The Filter Java&trade; Class {#the-filter-java-class}
 
-A device group filter is an OSGi component that implements the [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. When deployed, the implementation class provides a filter service that is available to device group configurations.
+A device group filter is an OSGi component that implements the [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. When deployed, the implementation class provides a filter service that is available to device group configurations.
 
 The solution described in this article uses the Apache Felix Maven SCR Plugin to facilitate the development of the component and service. Therefore, the example Java&trade; class uses the `@Component`and `@Service` annotations. The class has the following structure:
 
@@ -88,7 +99,7 @@ The `matches` function returns `true` if the device capabilities satisfy all the
 * The name of the user agent
 * A Map object that contains the device capabilities. The Map keys are the WURFL&trade; capability names and the values are the corresponding values from the WURFL&trade; database.
 
-The [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface contains a subset of the WURFL&trade; capability names in static fields. Use these field constants as keys when retrieving values from the Map of device capabilities.
+The [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface contains a subset of the WURFL&trade; capability names in static fields. Use these field constants as keys when retrieving values from the Map of device capabilities.
 
 For example, the following code example determines whether the device supports CSS:
 

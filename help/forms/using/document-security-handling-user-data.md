@@ -7,6 +7,24 @@ role: Admin,User
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Document Security | Handling user data {#document-security-handling-user-data}
 
@@ -119,7 +137,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->To export data from the `EdcAuditEntity` table, use the [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API that takes [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) as a parameter to export audit data based on `principalId`, `policyId`, or `licenseId`.
+>To export data from the `EdcAuditEntity` table, use the [EventManager.exportEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API that takes [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) as a parameter to export audit data based on `principalId`, `policyId`, or `licenseId`.
 
 To get complete data about a user in the system, you must access and export data from user management database. For more information, see [Forms user management: Handling user data](/help/forms/using/user-management-handling-user-data.md).
 
@@ -144,7 +162,7 @@ Do the following to delete document security data for a principal ID from databa
 
    >[!NOTE]
    >
-   >To delete data from the `EdcAuditEntity` table, use the [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API that takes [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) as a parameter to delete audit data based on `principalId`, `policyId`, or `licenseId`.
+   >To delete data from the `EdcAuditEntity` table, use the [EventManager.deleteEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API that takes [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) as a parameter to delete audit data based on `principalId`, `policyId`, or `licenseId`.
 
 1. Active and archived policy XML files are stored in the `EdcPolicyXmlEntity` and `EdcPolicyArchiveEntity` database tables, respectively. To delete data for a user from these tables, do the following:
 

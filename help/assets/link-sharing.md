@@ -7,6 +7,22 @@ feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: b03f468b-ba84-4dc3-a306-cb2c69e43324
+    internal-label: Link sharing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Share asset as a link {#asset-link-sharing}
 

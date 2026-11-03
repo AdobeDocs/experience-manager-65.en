@@ -11,6 +11,22 @@ exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Components for Content Fragments{#components-for-content-fragments}
 
@@ -125,4 +141,4 @@ The out-of-the-box configuration uses the following transformers:
 * `transformer-cfm-parfilter` - filters out unwanted paragraphs if a paragraph range is specified (as can be done with the Content Fragment component)
 * `transformer-cfm-assetprocessor` - is used internally for retrieving a list of the assets that are embedded in the fragment
 
-The rendering process is exposed through [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) and can be used (for example) by custom components, if necessary.
+The rendering process is exposed through [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) and can be used (for example) by custom components, if necessary.

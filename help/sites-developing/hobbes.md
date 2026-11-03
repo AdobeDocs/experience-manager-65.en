@@ -1,17 +1,26 @@
 ---
 title: Testing Your UI
 description: AEM provides a framework for automating tests for your AEM UI
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
-
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Testing Your UI{#testing-your-ui}
 
@@ -27,7 +36,7 @@ The AEM test framework uses Hobbes.js, a testing library written in JavaScript. 
 
 >[!NOTE]
 >
->Refer to the Hobbes.js [documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) for full details of the API.
+>Refer to the Hobbes.js [documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) for full details of the API.
 
 ## Structure of Tests {#structure-of-tests}
 
@@ -100,7 +109,7 @@ Test Suites execute sequentially in the order that they appear in the console. Y
 
 The following procedure steps you through the creation and execution of a Test Suite using [We.Retail content](/help/sites-developing/we-retail.md), but you can easily modify the test to use a different web page.
 
-For full details about creating your own Test Suites, see the [Hobbes.js API documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+For full details about creating your own Test Suites, see the [Hobbes.js API documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
 1. Open CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Right-click the `/etc/clientlibs` folder and click **Create > Create Folder**. Type `myTests` for the name and click **OK**.

@@ -7,6 +7,15 @@ exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
 solution: Experience Manager
 feature: Communities
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # SCF Handlebars Helpers {#scf-handlebars-helpers}
 
@@ -174,7 +183,7 @@ A helper to return content depending on an equality conditional.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-A block helper that tests the current value of [WCM mode](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) against a string separated list of modes.
+A block helper that tests the current value of [WCM mode](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) against a string separated list of modes.
 
 ### Parameters {#parameters-4}
 
@@ -184,7 +193,7 @@ A block helper that tests the current value of [WCM mode](https://developer.adob
 
 * **mode**: String
 
-  (Optional) A comma-separated list of [WCM modes](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
+  (Optional) A comma-separated list of [WCM modes](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
 
 ### Example {#example-2}
 
@@ -517,7 +526,7 @@ Custom helpers must be implemented on the server-side and the client-side, espec
 
 ### Server-side Custom Helpers {#server-side-custom-helpers}
 
-To implement and register a custom SCF helper on the server-side, simply implement the Java&trade; interface [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), make it an [OSGi Service](../../help/sites-developing/the-basics.md#osgi) and install it as part of an OSGi bundle.
+To implement and register a custom SCF helper on the server-side, simply implement the Java&trade; interface [TemplateHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), make it an [OSGi Service](../../help/sites-developing/the-basics.md#osgi) and install it as part of an OSGi bundle.
 
 For example:
 

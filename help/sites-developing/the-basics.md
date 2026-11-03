@@ -9,6 +9,17 @@ exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # AEM Core Concepts {#aem-core-concepts}
 
@@ -34,11 +45,11 @@ It is also recommended that you read and follow the [Guidelines and Best Practic
 
 ## Java&trade; Content Repository {#java-content-repository}
 
-The Java&trade; Content Repository (JCR) standard, [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), specifies a vendor-independent and implementation-independent way to access content bi-directionally on a granular level within a content repository.
+The Java&trade; Content Repository (JCR) standard, [JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html), specifies a vendor-independent and implementation-independent way to access content bi-directionally on a granular level within a content repository.
 
 Specification lead is held by Adobe Research (Switzerland) AG.
 
-The [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) package, javax.jcr.&ast; is used for the direct access and manipulation of repository content.
+The [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html) package, javax.jcr.&ast; is used for the direct access and manipulation of repository content.
 
 ## Experience Server (CRX) and Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -330,7 +341,7 @@ The following are of interest for development:
 
 **Item** An item is either a node or a property.
 
-For detailed information on manipulating Item objects, see the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) of the Interface javax.jcr.Item
+For detailed information on manipulating Item objects, see the [Java&trade; docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) of the Interface javax.jcr.Item
 
 **Node (and their properties)** Nodes and their properties are defined in the JCR API 2.0 specification (JSR 283). They store content, object definitions, rendering scripts and other data.
 
@@ -346,7 +357,7 @@ For example, to get the properties of the current node, you can use the followin
 
 The currentNode being the current node object.
 
-For more information on manipulating Node objects, see the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+For more information on manipulating Node objects, see the [Java&trade; docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** In AEM all user input is managed by widgets. These are often used to control the editing of a piece of content.
 
@@ -385,7 +396,7 @@ For example, to get the name of the current page, you can use the following code
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage being the current page object. For more information on manipulating Page objects, see the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+TcurrentPage being the current page object. For more information on manipulating Page objects, see the [Java&trade; docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Page Manager** The page manager is an Interface that provides methods for page level operations.
 
@@ -393,7 +404,7 @@ For example, to get the containing page of a resource, you can use the following
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-The pageManager being the page manager object, and myResource a resource object. For more information on the methods provided by the page manager, see the [Java&trade; docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+The pageManager being the page manager object, and myResource a resource object. For more information on the methods provided by the page manager, see the [Java&trade; docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structure within the Repository {#structure-within-the-repository}
 

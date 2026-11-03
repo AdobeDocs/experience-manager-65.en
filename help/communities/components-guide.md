@@ -9,6 +9,15 @@ exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
 solution: Experience Manager
 feature: Communities
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Community Components Guide  {#community-components-guide}
 

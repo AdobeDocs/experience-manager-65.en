@@ -9,6 +9,12 @@ exl-id: 5a98eb3c-5c12-4a6c-8d76-eed44c7c3df5
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Administering Content for Adobe PhoneGap Enterprise with AEM {#administering-content-for-adobe-phonegap-enterprise-with-aem}
 

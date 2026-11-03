@@ -9,6 +9,17 @@ exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
 solution: Experience Manager, Experience Manager Sites
 feature: Upgrading
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Common Repository Restructuring in AEM 6.5 {#common-repository-restructuring-in-aem}
 

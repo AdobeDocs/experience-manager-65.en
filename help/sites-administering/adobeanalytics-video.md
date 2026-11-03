@@ -10,6 +10,17 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Configuring Video Tracking for Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
@@ -287,22 +298,22 @@ This method is similar to the Milestones method with the difference that the mil
 
    Also, the information sent to Adobe Analytics is less customizable; there are only 3 variables available for mapping:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if the Title is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>Variables mapped to this will contain the file's name. Only sent once, at the beginning of playing a video.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>Variable mapped to this will contain the file's path on the server. Only sent once, at the beginning of playing a video.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if the Title is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>Variables mapped to this will contain the file's name. Only sent once, at the beginning of playing a video.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>Variable mapped to this will contain the file's path on the server. Only sent once, at the beginning of playing a video.</td>
+   </tr>
+   </tbody>
+   </table>
 
    >[!NOTE]
    >
@@ -344,22 +355,22 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
    The information sent to Adobe Analytics is less customizable. There are only 3 variables available for mapping:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if the Title is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>Variable mapped to this will contain the file's name. Only sent once, at the beginning of playing a video.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>Variable mapped to this will contain the file's path on the server. Only sent once, at the beginning of playing a video.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Variables mapped to this will contain the <strong>user-friendly</strong> name (<strong>Title</strong>) of the video if set in the DAM; if the Title is not set, the video's <strong>file name</strong> will be sent instead. Only sent once, at the beginning of playing a video.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>Variable mapped to this will contain the file's name. Only sent once, at the beginning of playing a video.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>Variable mapped to this will contain the file's path on the server. Only sent once, at the beginning of playing a video.</td>
+   </tr>
+   </tbody>
+   </table>
 
    >[!NOTE]
    >

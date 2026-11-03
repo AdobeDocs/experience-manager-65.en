@@ -9,6 +9,30 @@ feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+  - id: e2dc1259-9034-40fc-a518-b92a34fe6642
+    internal-label: Image sets
+  - id: cb008a68-9156-4b10-9c66-391409a53067
+    internal-label: Spin Sets
+  - id: fb5874db-3110-450a-b647-a5c2ce139bef
+    internal-label: eCatalog
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Dynamic Media Limitations
 

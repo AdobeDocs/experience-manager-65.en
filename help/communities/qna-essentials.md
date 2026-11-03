@@ -9,6 +9,15 @@ exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
 solution: Experience Manager
 feature: Communities
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # QnA Essentials {#qna-essentials}
 
@@ -49,9 +58,9 @@ This page provides the essential information for working with the questions and 
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [QnA API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [QnA API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [QnA Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [QnA Endpoints](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](server-customize.md)
 

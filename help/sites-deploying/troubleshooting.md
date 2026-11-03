@@ -1,18 +1,28 @@
 ---
 title: Troubleshooting installation issues with AEM
-
 description: This article covers some of the installation issues that you might encounter with AEM.
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Troubleshooting installation issues with AEM{#troubleshooting}
 

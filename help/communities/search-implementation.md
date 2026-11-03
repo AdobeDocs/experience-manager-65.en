@@ -9,6 +9,15 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 solution: Experience Manager
 feature: Communities
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Search Essentials {#search-essentials}
 
@@ -38,7 +47,7 @@ See [SRP and UGC Essentials](srp-and-ugc.md) for information regarding utility m
 
 ## UGC Search API {#ugc-search-api}
 
-The [UGC common store](working-with-srp.md) is provided by one of various storage resource providers (SRPs), each possibly having a different native query language. Therefore, regardless of the SRP chosen, custom code should use methods from the [UGC API package](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) which invokes the query language appropriate for the chosen SRP.
+The [UGC common store](working-with-srp.md) is provided by one of various storage resource providers (SRPs), each possibly having a different native query language. Therefore, regardless of the SRP chosen, custom code should use methods from the [UGC API package](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) which invokes the query language appropriate for the chosen SRP.
 
 ### ASRP Searches {#asrp-searches}
 

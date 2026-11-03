@@ -8,6 +8,22 @@ role: Admin,User
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Connecting AEM Forms with Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 

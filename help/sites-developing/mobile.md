@@ -11,6 +11,17 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Creating Sites for Mobile Devices{#creating-sites-for-mobile-devices}
 
@@ -62,11 +73,11 @@ Use Multi Site Manager (MSM) to create a mobile live copy from a standard site. 
 
 The Java&trade; packages containing the mobile classes are:
 
-* [com.day.cq.wcm.mobile.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines MobileConstants.
-* [com.day.cq.wcm.mobile.api.device](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - defines Device, DeviceGroup, and DeviceGroupList.
-* [com.day.cq.wcm.mobile.api.device.capability](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines DeviceCapability.
-* [com.day.cq.wcm.mobile.api.wurfl](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - defines WurflQueryEngine.
-* [com.day.cq.wcm.mobile.core](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - defines MobileUtil, which provides various utility methods revolving around WCM Mobile.
+* [com.day.cq.wcm.mobile.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines MobileConstants.
+* [com.day.cq.wcm.mobile.api.device](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - defines Device, DeviceGroup, and DeviceGroupList.
+* [com.day.cq.wcm.mobile.api.device.capability](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - defines DeviceCapability.
+* [com.day.cq.wcm.mobile.api.wurfl](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - defines WurflQueryEngine.
+* [com.day.cq.wcm.mobile.core](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - defines MobileUtil, which provides various utility methods revolving around WCM Mobile.
 
 ### Mobile Components {#mobile-components}
 

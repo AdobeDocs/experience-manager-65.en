@@ -1,18 +1,25 @@
 ---
 title: Performance Optimization
-
 description: Learn how to configure certain aspects of AEM to optimize performance.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Performance Optimization {#performance-optimization}
 
@@ -221,7 +228,7 @@ For example, when images (or DAM assets in general) are uploaded, workflows auto
 The workflow engine uses Apache Sling job queues for handling and scheduling work item processing. The following job queue services have been created by default from the Apache Sling Job Queue Configuration service factory for processing workflow jobs:
 
 * Granite Workflow Queue: Most workflow steps, such as the ones that process DAM assets, use the Granite Workflow Queue service.
-* Granite Workflow External Process Job Queue: This service is used for special external workflow steps that are typically used for contacting an external system and polling for results. For example, the InDesign Media Extraction Process step is implemented as an external process. The workflow engine uses the external queue for processing the polling. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Granite Workflow External Process Job Queue: This service is used for special external workflow steps that are typically used for contacting an external system and polling for results. For example, the InDesign Media Extraction Process step is implemented as an external process. The workflow engine uses the external queue for processing the polling. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configure these services to limit the maximum number of concurrently running workflow processes.
 
@@ -605,14 +612,14 @@ It is recommended that you limit personalization to where it is necessary. To il
 
  If you personalize each page by putting the user's name into the title bar (for example), it has a performance impact.
 
- >[!TIP]
- >For caching secured content, see [Caching Secured Content](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) in the Dispatcher guide.
+>[!TIP]
+>For caching secured content, see [Caching Secured Content](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) in the Dispatcher guide.
 
- Regarding mixing restricted and public content on one page, consider a strategy that uses server side includes in the Dispatcher, or client side includes by way of Ajax in the browser.
+Regarding mixing restricted and public content on one page, consider a strategy that uses server side includes in the Dispatcher, or client side includes by way of Ajax in the browser.
 
- >[!TIP]
- >
- >For handling mixed public and restricted content, see [Set up Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
+>[!TIP]
+>
+>For handling mixed public and restricted content, see [Set up Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### Sticky Connections {#sticky-connections}
 

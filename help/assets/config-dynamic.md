@@ -12,6 +12,24 @@ role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: cf50b0d2-df62-495c-a741-4fa0284ca4fc
+    internal-label: Hybrid mode
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Configure Dynamic Media - Hybrid mode {#configuring-dynamic-media-hybrid-mode}
 
@@ -999,70 +1017,70 @@ After you install the feature pack, configure the appropriate default color prof
 
    **Color Correction Properties Table**
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property</strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Default</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
-   <td>String</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name of the default RGB color profile.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
-   <td>String</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name of the default CMYK color profile.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
-   <td>String</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name of the default Gray color profile.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
-   <td>String</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name of the default RGB color profile used for RGB images that do not have an embedded color profile</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
-   <td>String</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name of the default CMYK color profile used for CMYK images that do not have an embedded color profile.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
-   <td>String</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name of the default Gray color profile used for CMYK images that do not have an embedded color profile.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointcompensation</a></td>
-   <td>Boolean</td>
-   <td>True</td>
-   <td>Specifies whether black point compensation is done during color correction. Adobe recommends  that this setting is on.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">iccdither</a></td>
-   <td>Boolean</td>
-   <td>False</td>
-   <td>Specifies whether dithering is done during color correction.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
-   <td>String</td>
-   <td>relative</td>
-   <td><p>Specifies the render intent. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recommends <strong>relative </strong><i></i>as the default.</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Property</strong></td>
+      <td><strong>Type</strong></td>
+      <td><strong>Default</strong></td>
+      <td><strong>Description</strong></td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default RGB color profile.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default CMYK color profile.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default Gray color profile.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default RGB color profile used for RGB images that do not have an embedded color profile</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default CMYK color profile used for CMYK images that do not have an embedded color profile.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
+      <td>String</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name of the default Gray color profile used for CMYK images that do not have an embedded color profile.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointcompensation</a></td>
+      <td>Boolean</td>
+      <td>True</td>
+      <td>Specifies whether black point compensation is done during color correction. Adobe recommends  that this setting is on.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">iccdither</a></td>
+      <td>Boolean</td>
+      <td>False</td>
+      <td>Specifies whether dithering is done during color correction.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
+      <td>String</td>
+      <td>relative</td>
+      <td><p>Specifies the render intent. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recommends <strong>relative </strong><i></i>as the default.</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
    >[!NOTE]
    >
@@ -1072,175 +1090,175 @@ After you install the feature pack, configure the appropriate default color prof
 
    The following color profiles are installed:
 
-<table>
- <tbody>
-  <tr>
-   <th><p>Name</p> </th>
-   <th><p>Colors pace</p> </th>
-   <th><p>Description</p> </th>
-  </tr>
-  <tr>
-   <td>Adobe RGB</td>
-   <td>RGB</td>
-   <td>Adobe RGB (1998)</td>
-  </tr>
-  <tr>
-   <td>AppleRGB</td>
-   <td>RGB</td>
-   <td>Apple RGB</td>
-  </tr>
-  <tr>
-   <td>CIERGB</td>
-   <td>RGB</td>
-   <td>CIE RGB</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra27</td>
-   <td>CMYK</td>
-   <td>Coated FOGRA27 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra39</td>
-   <td>CMYK</td>
-   <td>Coated FOGRA39 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedGraCol</td>
-   <td>CMYK</td>
-   <td>Coated GRACoL 2006 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>ColorMatchRGB</td>
-   <td>RGB</td>
-   <td>ColorMatch RGB</td>
-  </tr>
-  <tr>
-   <td>EuropeISOCoated</td>
-   <td>CMYK</td>
-   <td>Europe ISO Coated FOGRA27</td>
-  </tr>
-  <tr>
-   <td>EuroscaleCoated</td>
-   <td>CMYK</td>
-   <td>Euro scale Coated v2</td>
-  </tr>
-  <tr>
-   <td>EuroscaleUncoated</td>
-   <td>CMYK</td>
-   <td>Euro scale Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>JapanColorCoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 Coated</td>
-  </tr>
-  <tr>
-   <td>JapanColorNewspaper</td>
-   <td>CMYK</td>
-   <td>Japan Color 2002 Newspaper</td>
-  </tr>
-  <tr>
-   <td>JapanColorUncoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 Uncoated</td>
-  </tr>
-  <tr>
-   <td>JapanColorWebCoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2003 Web Coated</td>
-  </tr>
-  <tr>
-   <td>JapanWebCoated</td>
-   <td>CMYK</td>
-   <td>Japan Web Coated (Ad)</td>
-  </tr>
-  <tr>
-   <td>NewsprintSNAP2007</td>
-   <td>CMYK</td>
-   <td>US Newsprint (SNAP 2007)</td>
-  </tr>
-  <tr>
-   <td>NTSC</td>
-   <td>RGB</td>
-   <td>NTSC (1953)</td>
-  </tr>
-  <tr>
-   <td>PAL</td>
-   <td>RGB</td>
-   <td>PAL/SECAM</td>
-  </tr>
-  <tr>
-   <td>ProPhoto</td>
-   <td>RGB</td>
-   <td>ProPhoto RGB</td>
-  </tr>
-  <tr>
-   <td>PS4Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 4 Default CMYK</td>
-  </tr>
-  <tr>
-   <td>PS5Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 5 Default CMYK</td>
-  </tr>
-  <tr>
-   <td>SheetfedCoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Coated v2</td>
-  </tr>
-  <tr>
-   <td>SheetfedUncoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>SMPTE</td>
-   <td>RGB</td>
-   <td>SMPTE-C</td>
-  </tr>
-  <tr>
-   <td>sRGB</td>
-   <td>RGB</td>
-   <td>sRGB IEC61966-2.1</td>
-  </tr>
-  <tr>
-   <td>UncoatedFogra29</td>
-   <td>CMYK</td>
-   <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoated</td>
-   <td>CMYK</td>
-   <td>U.S. Web Coated (SWOP) v2</td>
-  </tr>
-  <tr>
-   <td>WebCoatedFogra28</td>
-   <td>CMYK</td>
-   <td>Web Coated FOGRA28 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade3</td>
-   <td>CMYK</td>
-   <td>Web Coated SWOP 2006 Grade 3 Paper</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade5</td>
-   <td>CMYK</td>
-   <td>Web Coated SWOP 2006 Grade 5 Paper</td>
-  </tr>
-  <tr>
-   <td>WebUncoated</td>
-   <td>CMYK</td>
-   <td>U.S. Web Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>WideGamutRGB</td>
-   <td>RGB</td>
-   <td>Wide Gamut RGB</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <th><p>Name</p> </th>
+      <th><p>Colors pace</p> </th>
+      <th><p>Description</p> </th>
+   </tr>
+   <tr>
+      <td>Adobe RGB</td>
+      <td>RGB</td>
+      <td>Adobe RGB (1998)</td>
+   </tr>
+   <tr>
+      <td>AppleRGB</td>
+      <td>RGB</td>
+      <td>Apple RGB</td>
+   </tr>
+   <tr>
+      <td>CIERGB</td>
+      <td>RGB</td>
+      <td>CIE RGB</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra27</td>
+      <td>CMYK</td>
+      <td>Coated FOGRA27 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra39</td>
+      <td>CMYK</td>
+      <td>Coated FOGRA39 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedGraCol</td>
+      <td>CMYK</td>
+      <td>Coated GRACoL 2006 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>ColorMatchRGB</td>
+      <td>RGB</td>
+      <td>ColorMatch RGB</td>
+   </tr>
+   <tr>
+      <td>EuropeISOCoated</td>
+      <td>CMYK</td>
+      <td>Europe ISO Coated FOGRA27</td>
+   </tr>
+   <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMYK</td>
+      <td>Euro scale Coated v2</td>
+   </tr>
+   <tr>
+      <td>EuroscaleUncoated</td>
+      <td>CMYK</td>
+      <td>Euro scale Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>JapanColorCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 Coated</td>
+   </tr>
+   <tr>
+      <td>JapanColorNewspaper</td>
+      <td>CMYK</td>
+      <td>Japan Color 2002 Newspaper</td>
+   </tr>
+   <tr>
+      <td>JapanColorUncoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 Uncoated</td>
+   </tr>
+   <tr>
+      <td>JapanColorWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2003 Web Coated</td>
+   </tr>
+   <tr>
+      <td>JapanWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Web Coated (Ad)</td>
+   </tr>
+   <tr>
+      <td>NewsprintSNAP2007</td>
+      <td>CMYK</td>
+      <td>US Newsprint (SNAP 2007)</td>
+   </tr>
+   <tr>
+      <td>NTSC</td>
+      <td>RGB</td>
+      <td>NTSC (1953)</td>
+   </tr>
+   <tr>
+      <td>PAL</td>
+      <td>RGB</td>
+      <td>PAL/SECAM</td>
+   </tr>
+   <tr>
+      <td>ProPhoto</td>
+      <td>RGB</td>
+      <td>ProPhoto RGB</td>
+   </tr>
+   <tr>
+      <td>PS4Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 4 Default CMYK</td>
+   </tr>
+   <tr>
+      <td>PS5Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 5 Default CMYK</td>
+   </tr>
+   <tr>
+      <td>SheetfedCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Coated v2</td>
+   </tr>
+   <tr>
+      <td>SheetfedUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>SMPTE</td>
+      <td>RGB</td>
+      <td>SMPTE-C</td>
+   </tr>
+   <tr>
+      <td>sRGB</td>
+      <td>RGB</td>
+      <td>sRGB IEC61966-2.1</td>
+   </tr>
+   <tr>
+      <td>UncoatedFogra29</td>
+      <td>CMYK</td>
+      <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Coated (SWOP) v2</td>
+   </tr>
+   <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMYK</td>
+      <td>Web Coated FOGRA28 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 3 Paper</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 5 Paper</td>
+   </tr>
+   <tr>
+      <td>WebUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>WideGamutRGB</td>
+      <td>RGB</td>
+      <td>Wide Gamut RGB</td>
+   </tr>
+   </tbody>
+   </table>
 
 1. Select **[!UICONTROL Save All]**.
 

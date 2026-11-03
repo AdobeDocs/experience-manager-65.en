@@ -1,6 +1,6 @@
 ---
 title: Authoring Targeted Content Using Targeting Mode
-description:  Targeting mode and the Target component provide tools for creating content for experiences
+description: Targeting mode and the Target component provide tools for creating content for experiences
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,6 +10,23 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Authoring Targeted Content Using Targeting Mode{#authoring-targeted-content-using-targeting-mode}
 
@@ -652,55 +669,55 @@ You can customize the Target component by accessing the component's options in o
 
 1. Configure the Target component settings as described in the following tables.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Location</strong></td>
-   <td><p>The location is a string that gives the targeted content location a name and connects offers with places (or locations or components) on the page where those offers should be placed.</p> <p>This field is a generic value.</p> <p>If you put an offer into a component, the offer remembers the location ID. When the page is executed, the engine evaluates the user's segments and based on this, it resolves the experiences from the active campaigns that should be displayed. Then, it checks the location IDs on the page and tries to match offers with those location IDs to them.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Engine</strong></td>
-   <td>Select between <strong>Client side Rules (without tracking), Adobe Target, ContextHub, </strong>and<strong> Adobe Campaign </strong>depending on which engine you would like to use.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Option</strong></td>
+      <td><strong>Description</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Location</strong></td>
+      <td><p>The location is a string that gives the targeted content location a name and connects offers with places (or locations or components) on the page where those offers should be placed.</p> <p>This field is a generic value.</p> <p>If you put an offer into a component, the offer remembers the location ID. When the page is executed, the engine evaluates the user's segments and based on this, it resolves the experiences from the active campaigns that should be displayed. Then, it checks the location IDs on the page and tries to match offers with those location IDs to them.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Engine</strong></td>
+      <td>Select between <strong>Client side Rules (without tracking), Adobe Target, ContextHub, </strong>and<strong> Adobe Campaign </strong>depending on which engine you would like to use.</td>
+   </tr>
+   </tbody>
+   </table>
 
    If you select Adobe Target as the engine:
 
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Accurate targeting</strong></td>
-   <td><p>Enabling accurate targeting tells the component to wait for client context or context hub data to be available before sending the request to Adobe Target. It may increase load time. For authoring, accurate targeting is always enabled.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Note:</strong> Enabling or disabling accurate targeting on a specific component does not affect the settings you have set globally. You can always override global settings by selecting Accurate Targeting in the component.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Include resolved segments</strong></td>
-   <td><p>Selecting this check box includes all resolved segments in the mbox call and any parameters configured in the page and in the framework.</p> <p>This only works in situations with XML API where you are synchronizing AEM segments. If you have segments in AEM that are not handled by Adobe Target (like script segments), then this option lets you resolve the segment in AEM and send information to Adobe Target that the segment is active.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Inherited context parameters</strong></td>
-   <td>Lists context parameters inherited from the Adobe Target framework, if any, associated with the selected page.</td>
-  </tr>
-  <tr>
-   <td><strong>Context Params</strong></td>
-   <td>Click <strong>Add field</strong> to configure additional context parameters (same as what is available in Target framework). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td>
-  </tr>
-  <tr>
-   <td><strong>Static Params</strong></td>
-   <td>Click <strong>Add field</strong> to configure additional static parameters (same as what is available in Target framework). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. Static parameters do not come from context (client context of content hub).</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Option</strong></td>
+      <td><strong>Description</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Accurate targeting</strong></td>
+      <td><p>Enabling accurate targeting tells the component to wait for client context or context hub data to be available before sending the request to Adobe Target. It may increase load time. For authoring, accurate targeting is always enabled.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Note:</strong> Enabling or disabling accurate targeting on a specific component does not affect the settings you have set globally. You can always override global settings by selecting Accurate Targeting in the component.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Include resolved segments</strong></td>
+      <td><p>Selecting this check box includes all resolved segments in the mbox call and any parameters configured in the page and in the framework.</p> <p>This only works in situations with XML API where you are synchronizing AEM segments. If you have segments in AEM that are not handled by Adobe Target (like script segments), then this option lets you resolve the segment in AEM and send information to Adobe Target that the segment is active.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Inherited context parameters</strong></td>
+      <td>Lists context parameters inherited from the Adobe Target framework, if any, associated with the selected page.</td>
+   </tr>
+   <tr>
+      <td><strong>Context Params</strong></td>
+      <td>Click <strong>Add field</strong> to configure additional context parameters (same as what is available in Target framework). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td>
+   </tr>
+   <tr>
+      <td><strong>Static Params</strong></td>
+      <td>Click <strong>Add field</strong> to configure additional static parameters (same as what is available in Target framework). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. Static parameters do not come from context (client context of content hub).</td>
+   </tr>
+   </tbody>
+   </table>
 
    >[!NOTE]
    >
@@ -710,23 +727,23 @@ You can customize the Target component by accessing the component's options in o
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Options for client side - Strategy</strong></td>
-   <td><p>Select from one of the following:</p>
-    <ul>
-     <li><strong>First</strong>: The topmost experience in the list as ordered in the campaign.</li>
-     <li><strong>Random</strong>: Any experience is used.</li>
-     <li><strong>Clickstream Score</strong>: The tags and related tag hits that are tracked in the client context are used. The hit rates for tags defined on the teaser page are compared.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Option</strong></td>
+      <td><strong>Description</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Options for client side - Strategy</strong></td>
+      <td><p>Select from one of the following:</p>
+      <ul>
+      <li><strong>First</strong>: The topmost experience in the list as ordered in the campaign.</li>
+      <li><strong>Random</strong>: Any experience is used.</li>
+      <li><strong>Clickstream Score</strong>: The tags and related tag hits that are tracked in the client context are used. The hit rates for tags defined on the teaser page are compared.</li>
+      </ul> </td>
+   </tr>
+   </tbody>
+   </table>
 
    You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.
 

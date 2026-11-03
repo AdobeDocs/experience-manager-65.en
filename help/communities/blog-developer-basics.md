@@ -10,6 +10,15 @@ exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 solution: Experience Manager
 feature: Communities
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Blog Essentials {#blog-essentials}
 
@@ -72,9 +81,9 @@ The blog feature is composed of two main components that are available by adding
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Blog API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [Blog API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Blog Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Blog Endpoints](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Server-side Customizations](/help/communities/server-customize.md)
 

@@ -9,6 +9,20 @@ exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # User, Group, and Access Rights Administration{#user-group-and-access-rights-administration}
 
@@ -54,7 +68,7 @@ CRX lets you configure the access rights for both user and group accounts. The s
 
 >[!NOTE]
 >
->CRX implements [access control as defined by JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implements [access control as defined by JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >A standard installation of a CRX repository is configured to use resource-based access control lists. This is one possible implementation of JSR-283 access control and one of the implementations present with Jackrabbit.
 
@@ -486,7 +500,7 @@ The policies can be selected for:
 
 ### Privileges {#privileges}
 
-The following privileges are available for selection when adding an access control entry (see the [Security API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) for full details):
+The following privileges are available for selection when adding an access control entry (see the [Security API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) for full details):
 
 <table>
  <tbody>

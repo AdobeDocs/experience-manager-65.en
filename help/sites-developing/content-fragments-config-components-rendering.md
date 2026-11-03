@@ -1,18 +1,28 @@
 ---
 title: Content Fragments Configuring Components for Rendering
-
 description: Content Fragments Configuring Components for Rendering
-
-
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Content Fragments Configuring Components for Rendering{#content-fragments-configuring-components-for-rendering}
 

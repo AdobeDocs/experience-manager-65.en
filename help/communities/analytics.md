@@ -10,6 +10,15 @@ role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
 solution: Experience Manager
 feature: Communities
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Analytics Configuration for Communities Features {#analytics-configuration-for-communities-features}
 
@@ -152,6 +161,10 @@ When Video Heartbeat Analytics is enabled, the JavaScript (JS) code for the vide
 If not enabled, the video heartbeat code is never instantiated and only the video progress and resume position tracking is persisted to SRP for reporting.
 
 ## AEM Analytics Cloud Service Configuration {#aem-analytics-cloud-service-configuration}
+
+>[!CAUTION]
+>
+>The [Adobe Analytics 1.4 API has reached end-of-life](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). As a result, Adobe Analytics configurations that use user credentials (username and password) are no longer supported.
 
 To create an Analytics Integration, which integrates Adobe Analytics with the AEM community site, using the standard UI on the author instance:
 

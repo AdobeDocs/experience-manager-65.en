@@ -10,6 +10,17 @@ exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Migration to the Touch UI{#migration-to-the-touch-ui}
 
@@ -142,7 +153,7 @@ Although not directly related to a migration to the touch UI, there are related 
 For full information on developing AEM see the collection of resources under:
 
 * [Developing User Guide](/help/sites-developing/getting-started.md)
-* [Granite UI Documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Granite UI Documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Sites Tutorials and Videos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)

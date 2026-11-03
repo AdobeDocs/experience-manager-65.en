@@ -1,15 +1,19 @@
 ---
 title: PhoneGap
 description: This page serves as starting point for developing apps using PhoneGap Enterprise with AEM. AEM integrates with PhoneGap so that you can easily create apps using AEM pages. PhoneGap lets the user create utility apps that let users work with the content.
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-
 exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # PhoneGap{#phonegap}
 

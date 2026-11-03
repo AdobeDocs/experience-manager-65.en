@@ -88,9 +88,9 @@ To customize the metadata properties page, including adding, modifying, deleting
 
 ![Metadata schema bulk apply to multiple assets](assets/metadata-schema-bulk-edit.gif)
 
-   >[!CAUTION]
-   >
-   >For single-value fields, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
+>[!CAUTION]
+>
+>For single-value fields, the new metadata is not appended to the existing value in the field even if you select **[!UICONTROL Append mode]**.
 
 ## Import metadata {#import-metadata}
 

@@ -7,6 +7,21 @@ feature: Acrobat Sign
 role: Admin, User, Developer
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
 solution: Experience Manager, Experience Manager Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: a16aea24-4e85-528d-9377-cd80bb039c1d
+    internal-label: Acrobat Sign
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Integration with Adobe Sign | Handling user data {#integration-with-adobe-sign-handling-user-data}
 

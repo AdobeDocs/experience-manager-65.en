@@ -1,15 +1,30 @@
 ---
 title: Forms-centric workflows on OSGi | Handling user data
-
 description: Forms-centric workflows on OSGi | Handling user data
-
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Forms-centric workflows on OSGi | Handling user data {#forms-centric-workflows-on-osgi-handling-user-data}
 
@@ -154,5 +169,5 @@ You must be an AEM administrator to delete user data from workflow instances by 
 You can also use APIs to access and remove nodes and properties. See the following docs for more information.
 
 * [How to programmatically access the AEM JCR](/help/sites-developing/access-jcr.md)
-* [Removing Nodes and Properties](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Removing Nodes and Properties](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API reference](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

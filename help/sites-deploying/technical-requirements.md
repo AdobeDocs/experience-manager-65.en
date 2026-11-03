@@ -6,6 +6,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Technical Requirements{#technical-requirements}
 
@@ -117,7 +131,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | MongoDB Enterprise 8.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 7.0 |Repository |A: Supported `[3, 4]` |
 | MongoDB Enterprise 6.0 |Repository |A: Supported `[3, 4]` |
-| MongoDB Enterprise 5.0 |Repository |A: Supported `[3, 4]` |
+| MongoDB Enterprise 5.0 |Repository |A: Supported `[3, 4, 7]` |
 | MongoDB Enterprise 4.4 |Repository |A: Supported `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.2 |Repository |A: Supported `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 |Repository |Z: Not supported |
@@ -140,6 +154,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 6. Applicable to AEM Forms only:
     * Removed support for Oracle Database 12c and added support for Oracle Database 19c.
     * Removed support for Microsoft&reg; SQL Server 2016 and added support for Microsoft&reg; SQL Server 2019 and Microsoft&reg; SQL Server 2022.
+7. Not supported for AEM Forms.
 
 >[!NOTE]
 >
@@ -186,7 +201,7 @@ The minimum Servlet API Version required is Servlet 3.1
 | JBoss&reg; EAP 7.2.x with JBoss&reg; Application Server |Z: Not supported  |
 | JBoss&reg; EAP 7.1.4 with JBoss&reg; Application Server |R: Restricted Support for new contracts `[1]` `[2]` |
 | JBoss&reg; EAP 7.0.x with JBoss&reg; Application Server |Z: Not supported  |
-| JBoss&reg; EAP 7.4 with JBoss&reg; Application Server <sup>[2] [3] [7] |A: Supported  |
+| JBoss&reg; EAP 7.4 with JBoss&reg; Application Server <sup>[2] [3] |A: Supported  |
 
 1. Recommended for deployments with AEM Forms.
 2. Starting AEM 6.5 deployments on application servers moves to Restricted Support. Existing customers can upgrade to AEM 6.5 and keep using application servers. For new customers, it comes with support criteria and a support program as stated in the Level-R description above.

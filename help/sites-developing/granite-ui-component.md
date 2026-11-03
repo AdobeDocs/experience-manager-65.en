@@ -9,6 +9,17 @@ exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Creating a New Granite UI Field Component{#creating-a-new-granite-ui-field-component}
 
@@ -22,7 +33,7 @@ Granite UI provides a range of components designed to be used in forms; these ar
 
 >[!NOTE]
 >
->For full details about fields, see the [Granite UI documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>For full details about fields, see the [Granite UI documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Use the Granite UI Foundation framework to develop and/or extend Granite components. This has two elements:
 
@@ -44,7 +55,7 @@ The generic Granite UI component `field` is composed of two files of interest:
 * `init.jsp`: handles the generic processing; labeling, description, and provides form value that you need when rendering your field.
 * `render.jsp`: this is where the actual rendering of the field is performed and must be overridden for your custom field; is included by `init.jsp`.
 
-See [Granite UI documentation - Field](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) for details.
+See [Granite UI documentation - Field](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) for details.
 
 For examples, see:
 

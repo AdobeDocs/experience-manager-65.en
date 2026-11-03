@@ -16,9 +16,16 @@ feature_v2:
     internal-label: AI Tools
   - id: ec4263d9-bf7c-44c7-b3f1-3e664861c8f2
     internal-label: Generative AI
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner

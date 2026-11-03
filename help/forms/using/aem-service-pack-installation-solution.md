@@ -4,9 +4,28 @@ description: CRX/bundle and Start page service unavailable errors once latest 6.
 SEO Description: Trouble shooting steps to resolve the errors after installing latest 6.5.15.0 service pack
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 solution: Experience Manager, Experience Manager Forms
-
 role: User, Developer
 feature: Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Service unavailable error after installing AEM (6.5.15.0) service pack {#steps-to-resolve-error-after-installing-service-pack}
 

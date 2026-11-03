@@ -1,18 +1,25 @@
 ---
 title: Extending Event Tracking
-
 description: AEM Analytics lets you track user interaction on your website
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Extending Event Tracking{#extending-event-tracking}
 

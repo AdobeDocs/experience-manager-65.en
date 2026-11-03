@@ -9,6 +9,12 @@ exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
 solution: Experience Manager
 feature: Mobile
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # AEM Mobile content personalization{#aem-mobile-content-personalization}
 

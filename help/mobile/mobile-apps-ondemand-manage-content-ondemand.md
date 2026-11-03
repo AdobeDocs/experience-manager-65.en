@@ -1,18 +1,20 @@
 ---
 title: Managing Content
-
 description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn more.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-
 exl-id: 4e37e814-ceb6-4dfa-a4d3-754f15ca4edf
 solution: Experience Manager
 feature: Mobile
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Managing Content{#managing-content}
 

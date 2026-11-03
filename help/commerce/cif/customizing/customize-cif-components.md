@@ -5,6 +5,16 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Customize Adobe Experience Manager CIF Core Components {#customize-cif-components}
 
@@ -168,9 +178,9 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
 The value of **Yes** is an integer of **1**. This is useful when you write the GraphQL query in Java&trade;.
 
-   >[!TIP]
-   >
-   >For more detailed documentation about Adobe Commerce GraphQL see the following [GraphQL overview](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+>[!TIP]
+>
+>For more detailed documentation about Adobe Commerce GraphQL see the following [GraphQL overview](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Update the Sling Model for the Product Teaser {#updating-sling-model-product-teaser}
 

@@ -6,6 +6,24 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Analytics using [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
@@ -232,9 +250,9 @@ To use [!DNL Adobe Launch] configuration in an existing Adaptive Form:
 
 After you enable [!DNL Adobe Analytics] for an adaptive form, you can [validate](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) if there is an appropriate data event flow between AEM Forms and [!DNL Adobe Analytics]. The integration of AEM Forms with Adobe Analytics is complete. You can now [configure and view reports in Adobe Analytics](#view-reports-adobe-analytics).
 
-  >[!NOTE]
-  >In case, if both [Analytics using Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) and **Analytics using Adobe Launch** features are enabled simultaneously, **Analytics using Adobe Launch** will take precedence. 
-  > 
+>[!NOTE]
+>
+>In case, if both [Analytics using Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) and **Analytics using Adobe Launch** features are enabled simultaneously, **Analytics using Adobe Launch** will take precedence. 
 
 ### Create rules to capture custom events (Optional) {#capture-custom-events}
 
