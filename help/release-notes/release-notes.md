@@ -41,7 +41,7 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | -------- | ---------------------------- |
 | Version  | 6.5.26.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
-| Date     | November 19, 2026 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Date     | November 12, 2026 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 
@@ -107,13 +107,10 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 #### Classic UI{#sites-classicui-6526}
 
-
 * Authors can activate pages again in the Classic UI Sites console (`siteadmin.html`). Previously, the Activate Page button displayed a "Loading" spinner indefinitely and never triggered replication, because a failed tracking script halted the click handler. The click handler now runs without error and completes the activation. (SITES-52165)
-* The Indonesian language code now displays as ID in the Language Copy properties. Previously, the References rail showed the legacy code IN for pages under the Indonesian language root. The cq-wcm-core bundle update corrects the value, so the code matches the ISO standard. (SITES-44918)
+* The Indonesian language code now displays as ID in the Language Copy properties. Previously, the References rail showed the legacy code IN for pages under the Indonesian language root. The cq-wcm-core bundle update corrects the value, so the code matches the ISO standard. (SITES-4491
 
-
-
-
+<!--
 #### Component Console{#sites-component-console-6526}
 
 
@@ -123,18 +120,15 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 
 #### [!DNL Content Fragments] - Admin{#sites-admin-6526}
-
+-->
 
 
 #### [!DNL Content Fragments] - Fragment Editor{#sites-fragments-editor-6526}
 
 * The Edit Content Fragment button appears immediately for each reference in a multifield in the Content Fragment editor. Previously, the button stayed hidden until authors saved the parent fragment, and it did nothing after they opened the Path Browser. The editor now builds the action list on first render, so authors open referenced fragments without extra steps. (SITES-43733) MAJOR
 
-
-
 * Chinese, Japanese, and Korean characters no longer display in italics in the placeholder text of the Create Content Fragment dialog box. Previously, the italic style applied to CJK characters under **Assets** > **Files**, which made the text hard to read. The updated styles skip italics for CJK languages. (SITES-43548)
 * The Content Fragment editor validates fields correctly after the Granite UI update. A recent Granite UI change caused a regression, so the editor client libraries no longer matched the new validation behavior. The adapted libraries and tests resolve the mismatch. (SITES-46650)
-
 
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6526}
@@ -146,27 +140,23 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 * The message on the GraphQL Endpoints page stays localized after you reload the page. Previously, the "No endpoints were found" message appeared in your language when you created and deleted endpoints, but it reverted to English after a reload. The page now loads the translated string on every visit. (SITES-43586)
 
 
-
+<!--
 #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6526}
-
+-->
 
 
 #### [!DNL Content Fragments] - Models & Model Editor{#sites-models-model-editor-6526}
 
 * Thumbnails for content fragment models display in **Tools** > **General** > **Content Fragment Models** when the configuration name contains localized characters, such as "español テスト". Previously, the uploaded thumbnail didn't appear because the characters broke the path. The updated handling encodes the name correctly. (SITES-39242) MAJOR
 
-
-
 * The Field Label string on the canvas of the Content Fragment Model Editor now appears in the user's language. Previously, the label stayed in English after authors dragged a component onto the canvas, and it translated only after they saved and reopened the model. The label now translates right away, matching the Properties panel. (SITES-45383)
 
 
-
+<!--
 #### [!DNL Content Fragments] - REST API{#sites-restapi-6526}
 
-
-
 #### ContextHub{#sites-contexthub-6526}
-
+-->
 
 
 #### Core Backend{#sites-core-backend-6526}
@@ -176,14 +166,14 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 * File upload works for remote assets from Next-gen Asset Management in a multifield. Previously, the upload failed when authors picked a remote asset for a field inside a multifield. The Core Components update restores the upload flow, so the field accepts the asset. (SITES-44266)
 
 
-
 #### Core Components{#sites-core-components-6526}
 
 * The Remote Asset Picker keeps each multifield item's image separate. Previously, selecting an image in one multifield item applied it to every other item, and the remote asset reference didn't save. Each item now holds its own selection, and the reference persists after you save the dialog box. (SITES-42376) MAJOR
 
-
 * (SITES-43738)
 
+
+<!--
 #### Campaign integration{#sites-campaign-integration-6526}
 
 
@@ -201,37 +191,46 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 
 #### Foundation Components (Legacy){#sites-foundation-components-legacy-6526}
-
+-->
 
 
 #### Headless - Admin {#sites-headless-admin-6526}
 
-
 * Enhancement: The Preview view in the Headless Admin now passes the selected variation path to the preview component. This change ensures that previews of content fragments with multiple variations load content from the correct variation. The `draftFragmentIds` array includes the variation parameter. (SITES-42714)
-
 
 
 #### Launches{#sites-launches-6526}
 
 * After an upgrade to AEM 6.5 LTS, `error.log` no longer fills with repeated content-type WARN messages from the Page References `livecopy.jsp`. The Sling engine logged a warning each time the include set the `Content-Type` header during `RequestDispatcher.include()`. The updated Granite References core bundle removes the header change, so the log shows only real errors. (SITES-46756) CRITICAL
 
-
 * Timeline entries for promoted launches now display in the user's language. Previously, the strings "Created version of" and "before promoting launch" stayed in English after authors promoted a launch and opened the Timeline for the site in Sites. The updated resources provide the translations in all locales. (SITES-13389)
 * The Select Path of Launch Source placeholder in the Launches filter panel displays in full. Previously, the text was cut off in localized interfaces, such as French, Italian, and Portuguese, because it didn't fit the field. The updated layout shows the complete placeholder. (SITES-42792)
 * The Live Date column in Tools > Sites > Launches no longer shows AM or PM in the German, French, Spanish, Italian, Brazilian Portuguese, and Traditional Chinese locales. Previously, the column used a 12-hour format that doesn't match those locales. The column now displays the 24-hour format. (SITES-43178)
 
 
-
+<!--
 #### Link Checker{#sites-link-checker-6526}
-
-
+-->
 
 
 #### Localization{#sites-localization-6526}
 
-* ()
-* ()
-* ()
+* (ASSETS-31575)
+* (ASSETS-36070)
+* (ASSETS-36746)
+* (ASSETS-43105)
+* (ASSETS-43307)
+* (ASSETS-68045)
+* (CQ-4336103)
+* (CQ-4352359)
+* (GRANITE-62592)
+* (GRANITE-67789)
+* (NPR-44189)
+* (NPR-44279) MAJOR
+* (NPR-44281)
+* (NPR-44477)
+* (NPR-44479)
+* (NPR-44481)
 * Configuration flows now show user-friendly error messages in the user's language. Previously, failures in AEM configuration pages produced technical or untranslated text. The updated `com.adobe.granite.ui.content` bundle handles the errors and supplies localized messages. (NPR-44840)
 * The error message that appears when you change properties of a deleted group in **Security** > **Groups** now displays in the user's language. Previously, the message stayed in English in localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-44841)
 * The error message "Something went wrong when saving the changes to the group!" now displays in the user's language in **Security** > **Groups** > **Edit group**. Previously, the message stayed in English in localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-44842)
@@ -244,16 +243,13 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 * The Country/Region dropdown in **Security** > **Users** > **Create** now sorts entries correctly. Previously, localized country names appeared in the wrong order in some languages. The updated `com.adobe.granite.security.content` bundle applies locale-aware sorting. (NPR-44942)
 * Tooltips in the Button component dialog box now display in the user's language. Previously, the info text for the button text, link, icon, HTML ID, and `aria-label` fields stayed in English even though the strings existed in the localization service. The updated dictionary supplies the translations in all supported locales. (SITES-7579)
 * Tooltips in the Properties section of the Content Fragment List component now display in the user's language. Previously, the info text for the Content Fragment Model, Tags, Maximum number of items, Parent path, Sort order, and Order by fields stayed in English. The updated dictionary provides translations for all supported locales. (SITES-14969)
-
-
 * The Help links for Core Components in the Template Editor now lead to localized documentation pages. Previously, selecting Help in the configure dialog box of components, such as Breadcrumb, Carousel, Container, and Text, opened the English page regardless of the interface language. Updated URLs now route users to the page for their locale. (SITES-15058)
 * The info tooltips in the Content Fragment dialog box now display in the user's language. Previously, the tooltip text for the Single Text Element and Multiple Elements modes and for the Content Fragment path stayed in English. An updated dictionary provides translations for all locales. (SITES-17333)
 * Error messages in the Template Editor Component Policy editor now appear in the user's language. Previously, the messages "Resource {} is not modifiable" and "Unable to create node at" stayed in English when authors edited a component policy or created a new one. The updated resources provide translations for all supported locales. (SITES-17475)
-* Error messages in the Template Editor Component Policy editor now appear in the user's language. Previously, the messages "Resource {} is not modifiable" and "Unable to create node at" stayed in English when authors edited a component policy or created a new one. The updated resources provide translations for all supported locales. (SITES-21481)
+* The Assets tab in the Page Editor now displays a translated string in the Select Component(s) dropdown after you choose Paragraphs from the Images dropdown. Previously, the string "OTHER" appeared in English because the localization resources lacked it. The updated dictionary supplies the translation in all locales. (SITES-21481)
 * Info tooltips in the Page Editor Configure component dialog box no longer show an extra line break. Previously, tooltips for components, such as PDF Viewer and Progress Bar, wrapped awkwardly in the German, Portuguese, Korean, Italian, French, and Spanish locales. The tooltips now wrap correctly, and word hyphenation works as expected. (SITES-38567)
 * The tooltip "to exit text editor press Esc key" now appears in the user's language in the Text component configure dialog box. Previously, the string displayed in English because the localization resources lacked it. The tooltip now translates in all locales. (SITES-43186)
 * The STRUCTURE label in the Template Editor now appears in the user's language. Previously, the label stayed in English when authors opened an Adaptive Form template, because the string was missing from the localization resources. The label now translates in all locales. (SITES-43599)
-
 
 
 #### MSM - Live Copies{#sites-msm-live-copies-6526}
@@ -261,46 +257,38 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 * The MSM Rollout dialog box loads the live copy list again after an upgrade. Previously, a `NullPointerException` in `AsyncOperationServlet.doGet` stopped the dialog box on a spinner, so authors couldn't select target locales or start the rollout. An updated `com.adobe.granite.jobs.async` bundle handles the missing job data and finishes the request. (SITES-43116) MAJOR
 * Rollout from the editable toolbar on a blueprint page works again. The toolbar action failed with "Cannot read properties of undefined (reading 'doRollout')" because the `MSM.Rollout` client library did not load. The updated page now loads the library, so the rollout job starts and changes reach the live copies. (SITES-46052) MAJOR
 
-
 * Batch deactivation of a blueprint page and its child pages no longer sends duplicate rollout events. When you deactivated a parent and its children in one request, the replication system emitted five events instead of three, and each child page rolled out twice. Deduplication in the rollout manager now submits one rollout per page, so live copies receive no redundant packages. (SITES-44988)
-
 
 
 #### Page Editor{#sites-pageeditor-6526}
 
 * The selected style stays highlighted in the Page Editor style selection dialog box after you scroll the list. Previously, a style highlighted when you chose it, but the highlight vanished when you clicked the scrollbar. This regression began after SP22, and the dialog box now keeps the selected state visible. (SITES-30874) MAJOR
 
-
-
 * Authors can edit pages in Layout mode when parent and child components define different responsive breakpoints. The getResponsiveCssClasses function previously failed with a TypeError on components that omitted the cq:responsive/phone width. The function now falls back to available values and continues rendering. (SITES-46681)
 * Custom crop ratios now load in hybrid inline-editing mode for components with multiple image drop targets. Previously, the Image Editor initialized one generic ipeConfig for all drop targets, so the editor showed only the default ratios and ignored each target's aspectRatios. The editor now reads the configuration for the selected drop target, and the crop applies in both inline and fullscreen views. (SITES-45771)
-
 * Pressing Backspace in the Rich Text Editor doesn't add extra inline styles to the text. A customer reported that removing a line break after bold text added `style="font-size: 0.8125rem; background-color: transparent;"` to the bold tag. Testing on the latest service pack couldn't reproduce the behavior, so no change was necessary. (SITES-15883)
 
-#### Replication{#sites-replication-6526}
 
+<!--
+#### Replication{#sites-replication-6526}
+-->
 
 
 #### Rich Text Editor{#sites-rte-6526}
-
 
 * Rich Text Editor toolbar buttons, such as Bold, Italic, Underline, and Hyperlink, work in Responsive view and Layout mode. Previously, the buttons highlighted when clicked, but the selection stayed unchanged and no dialog box opened. The updated editor script applies the formatting, matching the behavior in Edit mode. (SITES-44233) MAJOR
 * Authors can add currency and trademark symbols to Text components without losing them. The Special Characters plug-in inserted the symbols, but they displayed as blanks in both the editor and the published output. The corrected handling renders each symbol as entered. (SITES-46532) MAJOR
 * The Full Screen icon in the Rich Text Editor toolbar expands the editor again. Previously, clicking the icon in the Core Text component did nothing, and the editor stayed at its inline size. Authors now get a distraction-free workspace for long-form content in both inline and dialog box editing. (SITES-46396) MAJOR
 
 
-
-#### Site Admin UI
-
-
-
+#### Site Admin UI{#sites-admin-ui-6526}
 
 * Reverting an asset to an earlier version now refreshes its card thumbnail. A URL-encoding change in the Timeline client library caused a path mismatch, so the card lookup failed and the thumbnail stayed stale. Matching the encoded and raw paths restores the refresh. (SITES-46590)
 
 
-
+<!--
 #### Universal editor {#sites-universal-editor-6526}
-
+-->
 
 
 #### Workflow extensions {#sites-workflow-extensions-6526}
@@ -308,103 +296,132 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 * View Payload now opens the Touch UI package editor for workflows that Manage Publication starts for multiple pages. Previously, the action opened the deprecated Classic UI package editor, even though authors started the workflow in Touch UI. Authors now inspect the payload without leaving Touch UI. (SITES-40928) MAJOR
 
 
-
 ### [!DNL Assets] {#assets-6526}
 
+* (ASSETS-75868) BLOCKER
 
 
+
+
+* (ASSETS-76100)
+* (ASSETS-65676)
+
+
+<!--
 #### [!DNL Dynamic Media]{#assets-dm-6526}
-
+-->
 
 
 ### [!DNL Forms]{#forms-6526}
 
+* (LC-3923202) MAJOR
 
 
+<!--
 #### Forms JEE {#forms-jee-6526}
 
 
-
 #### Forms Designer {#forms-designer-6526}
-
+-->
 
 
 
 ### Foundation {#foundation-6526}
 
+* (NPR-43241) CRITICAL
+* (NPR-44061) CRITICAL
+
+
+* (NPR-43882)
+* (NPR-44686)
+* (NPR-44698)
+
+
+<!--
 #### Apache Felix {#foundation-apachefelix-6526}
+-->
 
 
+#### Authentication {#foundation-authentication-6526}
 
+* (NPR-44774)
+
+
+<!--
 #### Campaign{#foundation-campaign-6526}
-
-
 
 #### Cloud Services{#foundation-cloudservices-6526}
 
-
-
 #### Communities {#foundation-communities-6526}
-
-
 
 #### Content distribution{#foundation-content-distribution-6526}
 
-
-
 #### Adobe CRX {#foundation-crx-6526}
+-->
 
 
 
 #### Granite{#foundation-granite-6526}
 
+* (GRANITE-54387)
+* (GRANITE-70978)
 
 
-#### Integrations{#foundation-integrations-6526}
-
-
-
+<!--
 #### Jetty{#foundation-jetty-6526}
+-->
 
 
+#### Launch integrations{#foundation-launch-integrations-6526}
 
+* (CQ-4365074)
+* (CQ-4365080)
+
+
+<!--
 #### Localization{#foundation-localization-6526}
 
-
-
 #### Oak {#foundation-oak-6526}
-
+-->
 
 
 #### Platform{#foundation-platform-6526}
 
+* (NPR-44388) MAJOR
+* (GRANITE-57478) MAJOR
 
 
+* (CQ-4359166)
+
+
+#### Projects {#foundation-projects-6526}
+
+* (CQ-4355405)
+
+<!--
 #### Security{#foundation-security-6526}
-
-
 
 #### Sling{#foundation-sling-6526}
 
-
-
 #### SPA editor {#foundation-spa-editor-6526}
-
+-->
 
 
 #### Translation{#foundation-translation-6526}
 
+* (CQ-4349666)
 
 
+<!--
 #### User interface{#foundation-ui-6526}
 
-
-
 #### WCM{#foundation-wcm-6526}
-
+-->
 
 
 #### Workflow{#foundation-workflow-6526}
+
+* (GRANITE-65620) MAJOR
 
 
 
