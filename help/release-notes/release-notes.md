@@ -69,35 +69,35 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 #### Accessibility {#sites-accessibility-6526}
 
-* (SITES-25359) CRITICAL
+* Authors can add, move, and remove components using only the keyboard. The drag and drop interaction required a pointer, so it failed the WCAG 2.1.1 Keyboard criterion. The editor now provides the Insert component pop-up, Cut and Paste, and Delete as keyboard-operable equivalents. (SITES-25359) CRITICAL
 
 
 * Authors can now see the active Format ("T") button in the Text component inline menu. After authors applied bold or italic formatting, the button icon stayed dark against a dark-grey background and missed the WCAG 2.1 AA minimum contrast ratio of 4.5:1. The updated CSS lightens the icon, which restores the contrast that earlier service packs provided. (SITES-51864) MAJOR
 
 
-* (SITES-24525)
-* (SITES-24650)
-* (SITES-24706)
-* (SITES-24723)
-* (SITES-24732)
-* (SITES-24772)
-* (SITES-24967)
-* (SITES-24986)
-* (SITES-24987)
-* (SITES-25210)
-* (SITES-25213)
-* (SITES-25214)
-* (SITES-25217)
-* (SITES-25253)
-* (SITES-25263)
-* (SITES-25307)
-* (SITES-25308)
-* (SITES-25318)
-* (SITES-25364)
-* (SITES-25367)
-* (SITES-25372)
-* (SITES-25377)
-* (SITES-25523)
+* The Assets tab in the Page Editor now displays a translated string in the Select Component(s) dropdown after you choose Paragraphs from the Images dropdown. Previously, the string "OTHER" appeared in English because the localization resources lacked it. The updated dictionary supplies the translation in all locales. (SITES-24525)
+* The ContextHub iframe in the Page Editor now has a descriptive title attribute. Previously, the `contexthub-ui-iframe` element had no title, so screen reader users couldn't identify it when focus moved to it. The title now appears on every Editor page and view, including Canvas, Side Rail Assets, Side Rail Components, and Layout Preview. (SITES-24650)
+* The Filters button in the Sites console Filter Rail doesn't add visible labels above the Saved Searches and Select Search Directory fields. An audit reported that labels appeared when focus left the button, when a key was pressed, or when the button was clicked. Testing couldn't reproduce the behavior, so no change was necessary. (SITES-24706)
+* Links in the Sites console App Navigation now stand out more clearly. The link text met the 4.5:1 contrast ratio, but the thin font weight and small size made the links hard to see. A heavier weight and larger size make the text easier to read for people with low vision. (SITES-24723)
+* Screen readers no longer announce "blank" before the tooltip content in the User Preferences modal. Previously, the info icon used `role="tooltip"` with an `aria-labelledby` reference, so NVDA read an empty label first. The icon now uses `role="button"` and an `aria-label` of "information," and the change applies to the Coral form components that share the pattern. (SITES-24732)
+* The Delete button in the Delete modal now meets the WCAG 1.4.3 contrast requirement of 4.5:1. Previously, white text on a red background gave a ratio of 3.9:1 after authors selected an item and clicked Delete in the Action Toolbar. The darker button color makes the label readable for authors with low vision. (SITES-24772)
+* The References heading in the Sites console References rail now uses a heading element instead of a `div`. Previously, screen readers didn't announce the text as a heading, so users couldn't navigate by headings. The heading also appears at the top of the initial References view. (SITES-24967)
+* The focus indicator for accordion buttons in the Sites console Filter Rail now meets the WCAG 1.4.11 contrast requirement of 3:1. Previously, the blue indicator showed a ratio of 2.3:1 against the background, which made the Tags accordion button hard to find with the keyboard. The updated color gives keyboard users a clear focus cue. (SITES-24986)
+* The focus indicator for radio buttons in the Sites console Filter Rail now meets the WCAG 1.4.11 contrast requirement of 3:1. Previously, the light blue indicator showed a ratio of 1.7:1 against the background. Keyboard users can now track their position in the Modified date accordion. (SITES-24987)
+* The Select button beside the Path and Tags fields in the Page Editor side rail no longer uses a checkbox icon. Previously, the icon suggested a toggle, but activating the button opened a modal that contains the Tree Directory. The Select button now communicates its function correctly, and the same applies to the Image and Teaser modals. (SITES-25210)
+* Screen readers now skip the thumbnail images of assets in the Page Editor side rail. Previously, each image carried alt text that duplicated the visible asset name, so users heard the same text twice. An empty `alt` attribute marks the image as decorative and keeps the name in the card title. (SITES-25213)
+* Screen readers recognize the side rail Components list as a list. An audit reported the items as unrelated elements, but testing confirmed the markup uses a list element and list items. No code change was necessary. (SITES-25214)
+* The info icons for components in the Page Editor side rail are larger and easier to see. Previously, the icons used the extra small size of about 12 px, which people with low vision found hard to see. The icons now use the medium size.(SITES-25217)
+* The focus indicator on the Swatch button in the Annotation modal now stands out from the button. Previously, the indicator matched the swatch color, which made it hard for keyboard users to see which button had focus. An offset gives the indicator enough contrast against the background and keeps it clearly visible. (SITES-25253)
+* The Date field in the Timewarp modal no longer carries `aria-haspopup="dialog"`. Previously, screen readers announced that the field opens a dialog box, even though it doesn't. Removing the attribute gives screen reader users accurate information. (SITES-25263)
+* Text labels in the Demographics toolbar, such as "Recommended," now meet the WCAG 1.4.3 contrast requirement of 4.5:1. Previously, grey text on a dark grey background gave a ratio of 2.8:1 in Preview mode. Darker or lighter text, depending on the background, makes every label readable. (SITES-25307)
+* The focus indicator on the Commerce, Persona, and Device buttons in the Demographics toolbar now meets the WCAG 1.4.11 contrast requirement of 3:1. Previously, the indicator showed a ratio of 1.9:1 against the toolbar background. Keyboard users can now track their position with confidence. (SITES-25308)
+* Text that authors type in the Demographics toolbar text fields now meets the WCAG 1.4.3 contrast requirement of 4.5:1. Previously, white text on a grey background produced a ratio of 2.9:1 in fields, such as the Profile drop-down `displayName` field in Preview mode. The updated colors make typed values readable for authors with low vision. (SITES-25318)
+* Screen readers now read the description tooltip when focus reaches checkboxes in the Teaser, Image, and Carousel dialog boxes. Previously, the text wasn't associated programmatically with the checkbox, so users couldn't hear the instruction. An `aria-describedby` attribute now links each checkbox to its description. (SITES-25364)
+* Screen readers now announce which Paragraph formats button is active in the Rich Text Editor. Previously, selecting an option from the list gave assistive technology no indication of the current choice. The active button now carries `aria-current="true"`, and the active Hyperlink Target option carries `aria-selected="true"`. (SITES-25367)
+* The Sort buttons in the table header of the Sites console List View now meet the WCAG 1.4.11 contrast requirement of 3:1. Previously, the light grey icons showed a ratio of 1.5:1 against the header background. The darker icon color makes the buttons visible to authors with low vision. (SITES-25372)
+* The Assets tab in the Page Editor side rail no longer reloads when focus moves to the Filter field. Previously, tabbing into the empty field triggered a reload, and screen readers announced a loading message each time. The tab now reloads only after you change the filter value and press Enter. (SITES-25377)
+* The selected swatch icon in the Annotation modal now meets the WCAG 1.4.11 contrast requirement of 3:1. Previously, the white check mark showed a ratio as low as 1.58:1 against yellow, orange, and green swatches. The updated icon gives authors with low vision a clear indicator. (SITES-25523)
 * The Components list in the Page Editor side panel no longer takes keyboard focus. Keyboard users select and move components with the controls in the content window, so the side panel list duplicated the function. A note under the component filter tells keyboard users where to find the controls. (SITES-40752)
 
 
@@ -132,7 +132,7 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 
 
-* Chinese, Japanese, and Korean characters no longer display in italics in the placeholder text of the Create Content Fragment dialog. Previously, the italic style applied to CJK characters under **Assets** > **Files**, which made the text hard to read. The updated styles skip italics for CJK languages. (SITES-43548)
+* Chinese, Japanese, and Korean characters no longer display in italics in the placeholder text of the Create Content Fragment dialog box. Previously, the italic style applied to CJK characters under **Assets** > **Files**, which made the text hard to read. The updated styles skip italics for CJK languages. (SITES-43548)
 * The Content Fragment editor validates fields correctly after the Granite UI update. A recent Granite UI change caused a regression, so the editor client libraries no longer matched the new validation behavior. The adapted libraries and tests resolve the mismatch. (SITES-46650)
 
 
@@ -216,7 +216,7 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 * After an upgrade to AEM 6.5 LTS, `error.log` no longer fills with repeated content-type WARN messages from the Page References `livecopy.jsp`. The Sling engine logged a warning each time the include set the `Content-Type` header during `RequestDispatcher.include()`. The updated Granite References core bundle removes the header change, so the log shows only real errors. (SITES-46756) CRITICAL
 
 
-* (SITES-13389)
+* Timeline entries for promoted launches now display in the user's language. Previously, the strings "Created version of" and "before promoting launch" stayed in English after authors promoted a launch and opened the Timeline for the site in Sites. The updated resources provide the translations in all locales. (SITES-13389)
 * The Select Path of Launch Source placeholder in the Launches filter panel displays in full. Previously, the text was cut off in localized interfaces, such as French, Italian, and Portuguese, because it didn't fit the field. The updated layout shows the complete placeholder. (SITES-42792)
 * The Live Date column in Tools > Sites > Launches no longer shows AM or PM in the German, French, Spanish, Italian, Brazilian Portuguese, and Traditional Chinese locales. Previously, the column used a 12-hour format that doesn't match those locales. The column now displays the 24-hour format. (SITES-43178)
 
@@ -231,26 +231,25 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 * ()
 * ()
 * ()
-* (NPR-44840)
-* (NPR-44841)
-* (NPR-44842)
-* (NPR-44843)
-* (NPR-44844)
-* (NPR-44845)
-* (NPR-44846)
-* (NPR-44847)
-* (NPR-44848)
-* (NPR-44942)
-* (SITES-7579)
-* (SITES-14969)
+* Configuration flows now show user-friendly error messages in the user's language. Previously, failures in AEM configuration pages produced technical or untranslated text. The updated `com.adobe.granite.ui.content` bundle handles the errors and supplies localized messages. (NPR-44840)
+* The error message that appears when you change properties of a deleted group in **Security** > **Groups** now displays in the user's language. Previously, the message stayed in English in localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-44841)
+* The error message "Something went wrong when saving the changes to the group!" now displays in the user's language in **Security** > **Groups** > **Edit group**. Previously, the message stayed in English in localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-44842)
+* Chinese, Japanese, and Korean characters no longer display in italics in the error message that the Inbox icon shows. Previously, the italic style distorted the characters and made the text harder to read. The updated `com.adobe.granite.ui.coralui3` bundle removes the style for those languages. (NPR-44843)
+* Numbers in **Operations** > **Monitoring** now follow the user's locale format. Previously, the page showed numbers in a fixed format regardless of the interface language. The updated `com.adobe.granite.monitoring.dashboard` bundle applies the correct separators and format. (NPR-44844)
+* The Explain Query tab now shows the "Query Builder Debugger tool." link in the user's language. Previously, the link text was missing in localized interfaces because the string wasn't externalized. The updated `com.adobe.granite.monitoring.dashboard` bundle restores it. (NPR-44845)
+* Text in the Query Builder Debugger tool dialog box now displays in the user's language on the Explain Query tab. Previously, several strings stayed in English because they weren't externalized. The updated `cq-platform-content` bundle supplies the translations. (NPR-44846)
+* Text in the Consistency Check Result page now displays in the user's language. Previously, several strings appeared in English because they weren't externalized. The updated `com.adobe.granite.operations.ui.core` bundle supplies the translations. (NPR-44847)
+* The Monitoring Chart now displays month and week labels in the user's language. Previously, the labels were hard-coded in English, so the chart ignored the interface locale. The updated `com.adobe.granite.monitoring.dashboard` bundle externalizes the strings, and translations now appear. (NPR-44848)
+* The Country/Region dropdown in **Security** > **Users** > **Create** now sorts entries correctly. Previously, localized country names appeared in the wrong order in some languages. The updated `com.adobe.granite.security.content` bundle applies locale-aware sorting. (NPR-44942)
+* Tooltips in the Button component dialog box now display in the user's language. Previously, the info text for the button text, link, icon, HTML ID, and `aria-label` fields stayed in English even though the strings existed in the localization service. The updated dictionary supplies the translations in all supported locales. (SITES-7579)
+* Tooltips in the Properties section of the Content Fragment List component now display in the user's language. Previously, the info text for the Content Fragment Model, Tags, Maximum number of items, Parent path, Sort order, and Order by fields stayed in English. The updated dictionary provides translations for all supported locales. (SITES-14969)
 
 
-* (SITES-15058)
-* (SITES-15058)
-* (SITES-17333)
-* (SITES-17475)
-* (SITES-21481)
-* (SITES-38567)
+* The Help links for Core Components in the Template Editor now lead to localized documentation pages. Previously, selecting Help in the configure dialog box of components, such as Breadcrumb, Carousel, Container, and Text, opened the English page regardless of the interface language. Updated URLs now route users to the page for their locale. (SITES-15058)
+* The info tooltips in the Content Fragment dialog box now display in the user's language. Previously, the tooltip text for the Single Text Element and Multiple Elements modes and for the Content Fragment path stayed in English. An updated dictionary provides translations for all locales. (SITES-17333)
+* Error messages in the Template Editor Component Policy editor now appear in the user's language. Previously, the messages "Resource {} is not modifiable" and "Unable to create node at" stayed in English when authors edited a component policy or created a new one. The updated resources provide translations for all supported locales. (SITES-17475)
+* Error messages in the Template Editor Component Policy editor now appear in the user's language. Previously, the messages "Resource {} is not modifiable" and "Unable to create node at" stayed in English when authors edited a component policy or created a new one. The updated resources provide translations for all supported locales. (SITES-21481)
+* Info tooltips in the Page Editor Configure component dialog box no longer show an extra line break. Previously, tooltips for components, such as PDF Viewer and Progress Bar, wrapped awkwardly in the German, Portuguese, Korean, Italian, French, and Spanish locales. The tooltips now wrap correctly, and word hyphenation works as expected. (SITES-38567)
 * The tooltip "to exit text editor press Esc key" now appears in the user's language in the Text component configure dialog box. Previously, the string displayed in English because the localization resources lacked it. The tooltip now translates in all locales. (SITES-43186)
 * The STRUCTURE label in the Template Editor now appears in the user's language. Previously, the label stayed in English when authors opened an Adaptive Form template, because the string was missing from the localization resources. The label now translates in all locales. (SITES-43599)
 
@@ -268,14 +267,14 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 
 #### Page Editor{#sites-pageeditor-6526}
 
-* (SITES-30874) MAJOR
+* The selected style stays highlighted in the Page Editor style selection dialog box after you scroll the list. Previously, a style highlighted when you chose it, but the highlight vanished when you clicked the scrollbar. This regression began after SP22, and the dialog box now keeps the selected state visible. (SITES-30874) MAJOR
 
 
 
 * Authors can edit pages in Layout mode when parent and child components define different responsive breakpoints. The getResponsiveCssClasses function previously failed with a TypeError on components that omitted the cq:responsive/phone width. The function now falls back to available values and continues rendering. (SITES-46681)
 * Custom crop ratios now load in hybrid inline-editing mode for components with multiple image drop targets. Previously, the Image Editor initialized one generic ipeConfig for all drop targets, so the editor showed only the default ratios and ignored each target's aspectRatios. The editor now reads the configuration for the selected drop target, and the crop applies in both inline and fullscreen views. (SITES-45771)
 
-* (SITES-15883)
+* Pressing Backspace in the Rich Text Editor doesn't add extra inline styles to the text. A customer reported that removing a line break after bold text added `style="font-size: 0.8125rem; background-color: transparent;"` to the bold tag. Testing on the latest service pack couldn't reproduce the behavior, so no change was necessary. (SITES-15883)
 
 #### Replication{#sites-replication-6526}
 
@@ -284,9 +283,9 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 #### Rich Text Editor{#sites-rte-6526}
 
 
-* Rich Text Editor toolbar buttons, such as Bold, Italic, Underline, and Hyperlink, work in Responsive view and Layout mode. Previously, the buttons highlighted when clicked, but the selection stayed unchanged and no dialog opened. The updated editor script applies the formatting, matching the behavior in Edit mode. (SITES-44233) MAJOR
+* Rich Text Editor toolbar buttons, such as Bold, Italic, Underline, and Hyperlink, work in Responsive view and Layout mode. Previously, the buttons highlighted when clicked, but the selection stayed unchanged and no dialog box opened. The updated editor script applies the formatting, matching the behavior in Edit mode. (SITES-44233) MAJOR
 * Authors can add currency and trademark symbols to Text components without losing them. The Special Characters plug-in inserted the symbols, but they displayed as blanks in both the editor and the published output. The corrected handling renders each symbol as entered. (SITES-46532) MAJOR
-* The Full Screen icon in the Rich Text Editor toolbar expands the editor again. Previously, clicking the icon in the Core Text component did nothing, and the editor stayed at its inline size. Authors now get a distraction-free workspace for long-form content in both inline and dialog editing. (SITES-46396) MAJOR
+* The Full Screen icon in the Rich Text Editor toolbar expands the editor again. Previously, clicking the icon in the Core Text component did nothing, and the editor stayed at its inline size. Authors now get a distraction-free workspace for long-form content in both inline and dialog box editing. (SITES-46396) MAJOR
 
 
 
