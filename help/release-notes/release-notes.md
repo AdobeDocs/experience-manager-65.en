@@ -47,16 +47,19 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 
 <!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
-Experience Manager 6.5.25.0 includes new features, key customer-requested enhancements, and bug fixes. It also includes performance, stability, and security improvements built on the 6.5 foundation available since April 2019.
+Experience Manager 6.5.26.0 includes new features, key customer-requested enhancements, and bug fixes. It also includes accessibility, localization, performance, stability, and security improvements built on the 6.5 foundation available since April 2019.
 
+Key highlights of Service Pack 26 include the folloiwng:
 
+* Security. Two critical fixes close a server-side template injection vulnerability in the Metadata Editor and cross-site scripting (XSS) violations in Coral UI servlets.
+* C2PA compliance. Assets now detects C2PA credentials and signs renditions that the Update Asset workflow generates. Signing runs locally in each instance, and dedicated or customer-owned signing infrastructure isn't supported.
+* Accessibility. More than 25 fixes help the Page Editor and Sites console meet WCAG contrast, keyboard, and screen reader requirements.
+* Localization. Dozens of fixes translate strings and correct layout problems across Sites, Assets, Security, and Operations.
+* Reliability. Fixes address GraphQL lock contention on publish instances, MSM rollouts, Rich Text Editor toolbar actions, and page activation in the Classic UI.
+*Analytics. The Launch integration uses the Adobe Analytics 2.0 API ahead of the Analytics 1.4 end of life on August 31, 2026.
 
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
-
-
-
-
 
 ## Fixed issues, enhancements, and improvements in Service Pack 26 {#fixed-issues}
 
@@ -74,6 +77,10 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 * Authors can now see the active Format ("T") button in the Text component inline menu. After authors applied bold or italic formatting, the button icon stayed dark against a dark-grey background and missed the WCAG 2.1 AA minimum contrast ratio of 4.5:1. The updated CSS lightens the icon, which restores the contrast that earlier service packs provided. (SITES-51864) MAJOR
 
 * The Assets tab in the Page Editor now displays a translated string in the Select Components drop-down after you choose Paragraphs from the Images dropdown. Previously, the string "OTHER" appeared in English because the localization resources lacked it. The updated dictionary supplies the translation in all locales. (SITES-24525)
+
+
+
+
 * The ContextHub iframe in the Page Editor now has a descriptive title attribute. Previously, the `contexthub-ui-iframe` element had no title, so screen reader users failed to identify it when focus moved to it. The title now appears on every Editor page and view, including Canvas, Side Rail, and Layout Preview. (SITES-24650)
 * The Filters button in the Sites console Filter Rail doesn't add visible labels above the Saved Searches and Select Search Directory fields. An audit reported that labels appeared when focus left the button, when a key was pressed, or when the button was clicked. Testing failed to reproduce the behavior, so no change was necessary. (SITES-24706)
 * Links in the Sites console App Navigation now stand out more clearly. The link text met the 4.5:1 contrast ratio, but the thin font weight and small size made the links hard to see. A heavier weight and larger size make the text easier to read for people with visual impairments. (SITES-24723)
@@ -105,7 +112,7 @@ Experience Manager 6.5.25.0 includes new features, key customer-requested enhanc
 #### Classic UI{#sites-classicui-6526}
 
 * Authors can activate pages again in the Classic UI Sites console (`siteadmin.html`). Previously, the Activate Page button displayed a "Loading" spinner indefinitely and never triggered replication, because a failed tracking script halted the click handler. The click handler now runs without error and completes the activation. (SITES-52165)
-* The Indonesian language code now displays as ID in the Language Copy properties. Previously, the References rail showed the legacy code IN for pages under the Indonesian language root. The cq-wcm-core bundle update corrects the value, so the code matches the ISO standard. (SITES-4491
+* The Indonesian language code now displays as ID in the Language Copy properties. Previously, the References rail showed the legacy code IN for pages under the Indonesian language root. The cq-wcm-core bundle update corrects the value, so the code matches the ISO standard. (SITES-4491)
 
 <!--
 #### Component Console{#sites-component-console-6526}
