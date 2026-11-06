@@ -47,7 +47,7 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 
 <!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
-Experience Manager 6.5.26.0 includes new features, key customer-requested enhancements, and bug fixes. It also includes accessibility, localization, performance, stability, and security improvements built on the 6.5 foundation available since April 2019.
+Experience Manager 6.5.26.0 includes new features, key customer-requested enhancements, and bug fixes. It also includes accessibility, localization, performance, stability, and security improvements built on the 6.5 foundation available since April 2019. 
 
 Key highlights of Service Pack 26 include the folloiwng:
 
