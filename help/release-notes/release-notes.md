@@ -197,10 +197,6 @@ Enhancement: The Preview view in the Headless Admin now passes the selected vari
 
 #### Launches{#sites-launches-6526}
 
-<!-- REMOVED AS PER EMAIL FROM JALAJ AGRAWAL NOVEMBER 10, 2026
-* After an upgrade to AEM 6.5 LTS, `error.log` no longer fills with repeated content-type WARN messages from the Page References `livecopy.jsp`. The Sling engine logged a warning each time the include set the `Content-Type` header during `RequestDispatcher.include()`. The updated Granite References core bundle removes the header change, so the log shows only real errors. (SITES-46756) CRITICAL
--->
-
 * Timeline entries for promoted launches now display in the user's language. Previously, the strings "Created version of" and "before promoting launch" remained in English after authors promoted a launch and opened the Timeline for the site in Sites. The updated resources provide the translations in all locales. (SITES-13389)
 * The Select Path of Launch Source placeholder in the Launches filter panel displays in full. Previously, the text was cut off in localized interfaces, such as French, Italian, and Portuguese, because it didn't fit the field. The updated layout shows the complete placeholder. (SITES-42792)
 * The Live Date column in Tools > Sites > Launches no longer shows AM or PM in the German, French, Spanish, Italian, Brazilian Portuguese, and Traditional Chinese locales. Previously, the column used a 12-hour format that doesn't match those locales. The column now displays the 24-hour format. (SITES-43178)
