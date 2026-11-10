@@ -42,21 +42,21 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | Version  | 6.5.26.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
 | Date     | November 12, 2026 <!-- UPDATE FOR EACH NEW RELEASE -->              |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 
 <!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
 Experience Manager 6.5.26.0 includes new features, key customer-requested enhancements, and bug fixes. It also includes accessibility, localization, performance, stability, and security improvements built on the 6.5 foundation available since April 2019. 
 
-Key highlights of Service Pack 26 include the folloiwng:
+Key highlights of Service Pack 26 include the following:
 
 * Security. Two critical fixes close a server-side template injection vulnerability in the Metadata Editor and cross-site scripting (XSS) violations in Coral UI servlets.
 * C2PA compliance. Assets now detects C2PA credentials and signs renditions that the Update Asset workflow generates. Signing runs locally in each instance, and dedicated or customer-owned signing infrastructure isn't supported.
 * Accessibility. More than 25 fixes help the Page Editor and Sites console meet WCAG contrast, keyboard, and screen reader requirements.
 * Localization. Dozens of fixes translate strings and correct layout problems across Sites, Assets, Security, and Operations.
 * Reliability. Fixes address GraphQL lock contention on publish instances, MSM rollouts, Rich Text Editor toolbar actions, and page activation in the Classic UI.
-*Analytics. The Launch integration uses the Adobe Analytics 2.0 API ahead of the Analytics 1.4 end of life on August 31, 2026.
+* Analytics. The Launch integration uses the Adobe Analytics 2.0 API ahead of the Analytics 1.4 end of life on August 31, 2026.
 
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
@@ -83,7 +83,7 @@ Key highlights of Service Pack 26 include the folloiwng:
 
 * The ContextHub iframe in the Page Editor now has a descriptive title attribute. Previously, the `contexthub-ui-iframe` element had no title, so screen reader users failed to identify it when focus moved to it. The title now appears on every Editor page and view, including Canvas, Side Rail, and Layout Preview. (SITES-24650)
 * The Filters button in the Sites console Filter Rail doesn't add visible labels above the Saved Searches and Select Search Directory fields. An audit reported that labels appeared when focus left the button, when a key was pressed, or when the button was clicked. Testing failed to reproduce the behavior, so no change was necessary. (SITES-24706)
-* Links in the Sites console App Navigation now stand out more clearly. The link text met the 4.5:1 contrast ratio, but the thin font weight and small size made the links hard to see. A heavier weight and larger size make the text easier to read for people with visual impairments. (SITES-24723)
+* Links in the Sites console App Navigation now stand out more clearly. The link text met the 4.5:1 contrast ratio, but the thin font weight and small size made the links hard to see. A greater font weight and larger size make the text easier to read for people with visual impairments. (SITES-24723)
 * Screen readers no longer announce "blank" before the tooltip content in the User Preferences modal. Previously, the info icon used `role="tooltip"` with an `aria-labelledby` reference, so NVDA read an empty label first. The icon now uses `role="button"` and an `aria-label` of "information," and the change applies to the Coral form components that share the pattern. (SITES-24732)
 * The Delete button in the Delete modal now meets the WCAG 1.4.3 contrast requirement of 4.5:1. Previously, white text on a red background gave a ratio of 3.9:1 after authors selected an item and clicked Delete in the Action Toolbar. The darker button color makes the label readable for authors with visual impairments. (SITES-24772)
 * The References heading in the Sites console References rail now uses a heading element instead of a `div`. Previously, screen readers failed to announce the text as a heading, so users failed to navigate by headings. The heading also appears at the top of the initial References view. (SITES-24967)
@@ -131,7 +131,7 @@ Key highlights of Service Pack 26 include the folloiwng:
 
 * The Edit Content Fragment button appears immediately for each multifield reference in the Content Fragment editor. Previously, the button stayed hidden until authors saved the parent fragment, and it did nothing after they opened the Path Browser. The editor now builds the action list on first render, so authors open referenced fragments without extra steps. (SITES-43733) MAJOR
 
-* Chinese, Japanese, and Korean characters no longer display in italics in the Create Content Fragment dialog placeholder text. Previously, the italic style applied to CJK characters under **Assets** > **Files**, which made the text hard to read. The updated styles skip italics for CJK languages. (SITES-43548)
+* Chinese, Japanese, and Korean characters no longer display in italics in the Create Content Fragment dialog box placeholder. Previously, the italic style applied to CJK characters under **Assets** > **Files**, which made the text hard to read. The updated styles skip italics for CJK languages. (SITES-43548)
 * The Content Fragment editor validates fields correctly after the Granite UI update. A recent Granite UI change caused a regression, so the editor client libraries no longer matched the new validation behavior. The adapted libraries and tests resolve the mismatch. (SITES-46650)
 
 
@@ -139,9 +139,9 @@ Key highlights of Service Pack 26 include the folloiwng:
 
 * GraphQL queries on content fragments now recognize RemoteRef references to Dynamic Media with OpenAPI Assets. Previously, queries failed with a "Persisted Query Validation Error" and returned no asset data when AEM 6.5 Sites consumed AEM as a Cloud Service Assets. Responses now include the repository ID and asset ID, so clients can build delivery URLs. (SITES-48507) CRITICAL
 
-* Publish instances stay responsive during heavy GraphQL traffic. Lock contention in `GraphQLServiceImpl` delayed request-processing threads at the schema methods, which stalled requests and required restarts. Improved synchronization resolves the performance constraint and maintains the availability of sites and mobile apps. (SITES-48699) MAJOR
+* Publish instances remain responsive during heavy GraphQL traffic. Lock contention in `GraphQLServiceImpl` delayed request-processing threads at the schema methods, which slowed requests and required restarts. Improved synchronization resolves the performance constraint and maintains the availability of sites and mobile apps. (SITES-48699) MAJOR
 
-* The message on the GraphQL Endpoints page stays localized after you reload the page. Previously, the "No endpoints were found" message appeared in your language when you created and deleted endpoints, but it reverted to English after a reload. The page now loads the translated string on every visit. (SITES-43586)
+* The message on the GraphQL Endpoints page remains localized after you reload the page. Previously, the "No endpoints were found" message appeared in your language when you created and deleted endpoints, but it reverted to English after a reload. The page now loads the translated string on every visit. (SITES-43586)
 
 
 <!--
@@ -153,7 +153,7 @@ Key highlights of Service Pack 26 include the folloiwng:
 
 * Thumbnails for content fragment models display in **Tools** > **General** > **Content Fragment Models** when the configuration name contains localized characters, such as "español テスト." Previously, the uploaded thumbnail didn't appear because the characters caused an error in the path. The updated handling encodes the name correctly. (SITES-39242) MAJOR
 
-* The Field Label string on the canvas of the Content Fragment Model Editor now appears in the user's language. Previously, the label stayed in English after authors dragged a component onto the canvas, and it translated only after they saved and reopened the model. The label now translates right away, matching the Properties panel. (SITES-45383)
+* The Field Label string on the Content Fragment Model Editor canvas now appears in the user's language. Previously, the label stayed in English after authors dragged a component onto the canvas, and it translated only after they saved and reopened the model. The label now translates immediately, matching the Properties panel. (SITES-45383)
 
 
 <!--
@@ -197,9 +197,11 @@ Enhancement: The Preview view in the Headless Admin now passes the selected vari
 
 #### Launches{#sites-launches-6526}
 
+<!-- REMOVED AS PER EMAIL FROM JALAJ AGRAWAL NOVEMBER 10, 2026
 * After an upgrade to AEM 6.5 LTS, `error.log` no longer fills with repeated content-type WARN messages from the Page References `livecopy.jsp`. The Sling engine logged a warning each time the include set the `Content-Type` header during `RequestDispatcher.include()`. The updated Granite References core bundle removes the header change, so the log shows only real errors. (SITES-46756) CRITICAL
+-->
 
-* Timeline entries for promoted launches now display in the user's language. Previously, the strings "Created version of" and "before promoting launch" stayed in English after authors promoted a launch and opened the Timeline for the site in Sites. The updated resources provide the translations in all locales. (SITES-13389)
+* Timeline entries for promoted launches now display in the user's language. Previously, the strings "Created version of" and "before promoting launch" remained in English after authors promoted a launch and opened the Timeline for the site in Sites. The updated resources provide the translations in all locales. (SITES-13389)
 * The Select Path of Launch Source placeholder in the Launches filter panel displays in full. Previously, the text was cut off in localized interfaces, such as French, Italian, and Portuguese, because it didn't fit the field. The updated layout shows the complete placeholder. (SITES-42792)
 * The Live Date column in Tools > Sites > Launches no longer shows AM or PM in the German, French, Spanish, Italian, Brazilian Portuguese, and Traditional Chinese locales. Previously, the column used a 12-hour format that doesn't match those locales. The column now displays the 24-hour format. (SITES-43178)
 
@@ -211,42 +213,41 @@ Enhancement: The Preview view in the Headless Admin now passes the selected vari
 
 #### Localization{#sites-localization-6526}
 
-* Strings on the Health Reports pages under **Tools** > **Operations** now display in the user's language. Previously, messages for Resource Search Path, Maintenance, Replication Queue, Log Errors, Active Bundles, and Request Performance stayed in English. Updated i18n resources supply the translations, and a fallback file keeps the strings available. (NPR-44279) MAJOR
+* Strings on the Health Reports pages under **Tools** > **Operations** now display in the user's language. Previously, messages for Resource Search Path, Maintenance, Replication Queue, Log Errors, Active Bundles, and Request Performance remained in English. Updated i18n resources supply the translations, and a fallback file keeps the strings available. (NPR-44279) MAJOR
 
-* The error message "Settings to 'JSON Path' are ignored when the 'Add Manually' option is checked" now displays in the user's language in **Tools** > **Assets** > **Metadata Schemas**. Previously, the message stayed in English after authors added a dropdown element, selected Add through JSON path, and switched to Add Manually. The updated resources provide the translations. (ASSETS-31575)
-* The "promoted" string in **Assets** > **Manage** tags now displays in the user's language. Previously, the string stayed in English when you hovered over a smart tag after you selected Promote. The updated resources supply the translation in all locales. (ASSETS-36070)
+* The error message "Settings to 'JSON Path' are ignored when the 'Add Manually' option is checked" now displays in the user's language in the **Tools** > **Assets** > **Metadata Schemas** console. Previously, the message remained in English after authors added a dropdown element, selected Add through JSON path, and switched to Add Manually. The updated resources provide the translations. (ASSETS-31575)
+* The "promoted" string in **Assets** > **Manage** tags now displays in the user's language. Previously, the string remained in English when you hovered over a smart tag after you selected Promote. The updated resources supply the translation in all locales. (ASSETS-36070)
 * The Add button label no longer overlaps the button in **Folder Properties** > **Asset Contribution**. Previously, the text collided with the button in the German, Italian, and Brazilian Portuguese interfaces after you created a folder with the "Asset contribution" setting. Updated styles give the longer translated labels enough room. (ASSETS-36746)
 * Column titles in the Assets List View now display horizontally in the Japanese interface. Previously, the titles appeared vertically in List View under **Assets** > **Files**, and in the card view of the content fragment editor. The updated `cq-dam-content` package corrects the text direction.(ASSETS-43105)
-* The publication status "Scheduled for later" in the Assets column view now displays in the user's language. Previously, the string stayed in English after authors selected an asset, chose **Manage Publication**, selected the **Later** option, added a date, and published. The updated `cq-dam-content` package supplies the translations in all locales. (ASSETS-43307)
+* The publication status "Scheduled for later" in the Assets column view now displays in the user's language. Previously, the string remained in English after authors selected an asset, chose **Manage Publication**, selected the **Later** option, added a date, and published. The updated `cq-dam-content` package supplies the translations in all locales. (ASSETS-43307)
 * Strings in the **Smart Tags Configuration** tab now display in full for French and Brazilian Portuguese. Previously, the text was cut off after you clicked **Create** under **Tools** > **Cloud Services** > **Smart Tag**. To read the text without a tooltip, use the CSS update that provides enough space. (ASSETS-68045)
-* The "Multi Path Value Property Predicate" string in the Assets admin search rail now displays in the user's language. Previously, the string stayed in English when administrators edited the search form under **Tools** > **General** > **Search** forms and dragged the predicate onto the form. The updated `cq-dam-content` package supplies the translations.(CQ-4336103)
+* The "Multi Path Value Property Predicate" string in the Assets admin search rail now displays in the user's language. Previously, the string remained in English when administrators edited the search form under **Tools** > **General** > **Search** forms and dragged the predicate onto the form. The updated `cq-dam-content` package supplies the translations.(CQ-4336103)
 * Aria labels in the Projects view now display in the user's language. Previously, the Actions button on each project tile had no accessible name, and the Configure Tile action used a hard-coded English label while sibling labels were localized. The updated tile script supplies a localized label for both actions. (CQ-4352359)
 * Smart Collections with Chinese, Japanese, or Korean characters in the name now save correctly. Previously, saving a collection from **Assets** > **Files** > **Filter** failed with "Save Search Failed - Invalid request, duplicate collection not allowed" when the name contained CJK characters. The duplicate check now compares the collection titles rather than the node names, so collections with different CJK titles no longer conflict. (GRANITE-62592)
 * The Country/Region dropdown in **Security** > **Users** > **Create** now sorts names alphabetically in the user's language. Previously, the list sorted names in English order while it displayed localized names, so countries appeared out of order in locales such as Japanese. The updated `com.adobe.granite.security.content` bundle sorts with locale-aware rules. (GRANITE-67789)
-* The disclaimer on the AuditLog Maintenance Task in **Tools** > **Operations** > **Maintenance** now displays in the user's language. Previously, the warning about audit log purging and compliance requirements stayed in English after users clicked the disclaimer icon in the Weekly Maintenance window. The updated resources supply the translation in all locales. (NPR-44189)
-* The message "Cannot reorder profiles that changed" in **Security** > **Users** > **Edit User** now displays in the user's language. Previously, the message appeared in English after authors created a profile, selected it in the Select profile dropdown, and saved the user. The updated resources provide the translations in all locales. (NPR-44281)
+* The disclaimer on the AuditLog Maintenance Task in **Tools** > **Operations** > **Maintenance** now displays in the user's language. Previously, the warning about audit log purging and compliance requirements remained in English after users clicked the disclaimer icon in the Weekly Maintenance window. The updated resources supply the translation in all locales. (NPR-44189)
 * Permission names in **Security** > **Permissions** > **Audit View** now display in the user's language. Previously, the names appeared in English because the translations were missing. The updated `com.adobe.granite.platform.i18n` bundle supplies them. (NPR-44477)
 * The Check Health dialog box in **Security** > **Adobe IMS Configurations** now displays in the user's language. Previously, the dialog box showed English strings in localized interfaces because the translations were missing. The updated `com.adobe.granite.platform.i18n` bundle supplies them. (NPR-44479)
 * Strings in the User Sync Diagnostics tool under **Tools** > **Operations** > **Diagnosis** now display in the user's language. Previously, the tool showed English text in localized interfaces. The updated `com.adobe.granite.platform.i18n` bundle supplies the translations. (NPR-44481)
 * Configuration flows now show user-friendly error messages in the user's language. Previously, failures in AEM configuration pages produced technical or untranslated text. The updated `com.adobe.granite.ui.content` bundle handles the errors and supplies localized messages. (NPR-44840)
-* The error message that appears when you change properties of a deleted group in **Security** > **Groups** now displays in the user's language. Previously, the message stayed in English for localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-44841)
-* The error message "Something went wrong when saving the changes to the group!" now displays in the user's language in **Security** > **Groups** > **Edit group**. Previously, the message stayed in English for localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-44842)
-* Chinese, Japanese, and Korean characters no longer display in italics in the Inbox icon's error message. Previously, the italic style distorted the characters and made the text harder to read. The updated `com.adobe.granite.ui.coralui3` bundle removes the style for those languages. (NPR-44843)
+* The error message that appears when you change properties of a deleted group in **Security** > **Groups** now displays in the user's language. Previously, the message remained in English for localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-44841)
+* The error message "Something went wrong when saving the changes to the group!" now displays in the user's language in the **Security** > **Groups** > **Edit group** console. Previously, the message stayed in English for localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-44842)
+* Chinese, Japanese, and Korean characters no longer display in italics in the Inbox icon error message. Previously, the italic style distorted the characters and made the text harder to read. The updated `com.adobe.granite.ui.coralui3` bundle removes the style for those languages. (NPR-44843)
 * Numbers in **Operations** > **Monitoring** now follow the user's locale format. Previously, the page showed numbers in a fixed format regardless of the interface language. The updated `com.adobe.granite.monitoring.dashboard` bundle applies the correct separators and format. (NPR-44844)
 * The Explain Query tab now shows the "Query Builder Debugger tool." link in the user's language. Previously, the link text was missing in localized interfaces because the string wasn't externalized. The updated `com.adobe.granite.monitoring.dashboard` bundle restores it. (NPR-44845)
 * Text in the Query Builder Debugger tool dialog box now displays in the user's language on the Explain Query tab. Previously, several strings stayed in English because they weren't externalized. The updated `cq-platform-content` bundle supplies the translations. (NPR-44846)
 * Text in the Consistency Check Result page now displays in the user's language. Previously, several strings appeared in English because they weren't externalized. The updated `com.adobe.granite.operations.ui.core` bundle supplies the translations. (NPR-44847)
 * The Monitoring Chart now displays month and week labels in the user's language. Previously, the labels were hard-coded in English, so the chart ignored the interface locale. The updated `com.adobe.granite.monitoring.dashboard` bundle externalizes the strings, and translations now appear. (NPR-44848)
 * The Country/Region dropdown in **Security** > **Users** > **Create** now sorts entries correctly. Previously, localized country names appeared in the wrong order for some languages. The updated `com.adobe.granite.security.content` bundle applies locale-aware sorting. (NPR-44942)
-* Tooltips in the Button component dialog box now display in the user's language. Previously, the info text for the button text, link, icon, HTML ID, and `aria-label` fields stayed in English even though the strings existed in the localization service. The updated dictionary supplies the translations in all supported locales. (SITES-7579)
-* Tooltips in the Properties section of the Content Fragment List component now display in the user's language. Previously, the info text for the Content Fragment Model, Tags, Maximum number of items, Parent path, Sort order, and Order by fields stayed in English. The updated dictionary provides translations for all supported locales. (SITES-14969)
+* Tooltips in the Button component dialog box now display in the user's language. Previously, the info text for the button text, link, icon, HTML ID, and `aria-label` fields remained in English even though the strings existed in the localization service. The updated dictionary supplies the translations in all supported locales. (SITES-7579)
+* Tooltips in the Properties section of the Content Fragment List component now display in the user's language. Previously, the info text for the Content Fragment Model, Tags, Maximum number of items, Parent path, Sort order, and Order by fields remained in English. The updated dictionary provides translations for all supported locales. (SITES-14969)
 * The Help links for Core Components in the Template Editor now lead to localized documentation pages. Previously, selecting Help in the component configure dialog box opened the English page regardless of the interface language. Updated URLs now route users to the page for their locale. (SITES-15058)
-* The info tooltips in the Content Fragment dialog box now display in the user's language. Previously, the tooltip text for the Single Text Element and Multiple Elements modes and for the Content Fragment path stayed in English. An updated dictionary provides translations for all locales. (SITES-17333)
-* Error messages in the Template Editor Component Policy editor now appear in the user's language. Previously, the messages "Resource {} is not modifiable" and "Unable to create node at" stayed in English when authors edited a component policy or created a new one. The updated resources provide translations for all supported locales. (SITES-17475)
+* The info tooltips in the Content Fragment dialog box now display in the user's language. Previously, the tooltip text for the Single Text Element and Multiple Elements modes and for the Content Fragment path remained in English. An updated dictionary provides translations for all locales. (SITES-17333)
+* Error messages in the Template Editor Component Policy editor now appear in the user's language. Previously, the messages "Resource {} is not modifiable" and "Unable to create node at" remained in English when authors edited a component policy or created a new one. The updated resources provide translations for all supported locales. (SITES-17475)
 * The Assets tab in the Page Editor now displays a translated string in the Select Components drop-down after you choose Paragraphs from the Images dropdown. Previously, the string "OTHER" appeared in English because the localization resources lacked it. The updated dictionary supplies the translation in all locales. (SITES-21481)
 * Info tooltips in the Page Editor Configure component dialog box no longer show an extra line break. Previously, tooltips for components, such as PDF Viewer and Progress Bar, wrapped awkwardly in several locales. The tooltips now wrap correctly, and word hyphenation works as expected. (SITES-38567)
 * The tooltip "to exit text editor press Esc key" now appears in the user's language in the Text component configure dialog box. Previously, the string displayed in English because the localization resources lacked it. The tooltip now translates in all locales. (SITES-43186)
-* The STRUCTURE label in the Template Editor now appears in the user's language. Previously, the label stayed in English when authors opened an Adaptive Form template, because the string was missing from the localization resources. The label now translates in all locales. (SITES-43599)
+* The STRUCTURE label in the Template Editor now appears in the user's language. Previously, the label remained in English when authors opened an Adaptive Form template, because the string was missing from the localization resources. The label now translates in all locales. (SITES-43599)
 
 
 #### MSM - Live Copies{#sites-msm-live-copies-6526}
@@ -259,7 +260,7 @@ Enhancement: The Preview view in the Headless Admin now passes the selected vari
 
 #### Page Editor{#sites-pageeditor-6526}
 
-* The selected style stays highlighted in the Page Editor style selection dialog box after you scroll the list. Previously, a style highlighted when you chose it, but the highlight vanished when you clicked the scrollbar. This regression began after SP22, and the dialog box now keeps the selected state visible. (SITES-30874) MAJOR
+* The selected style remains highlighted in the Page Editor style selection dialog box after you scroll the list. Previously, a style highlighted when you chose it, but the highlight vanished when you clicked the scrollbar. This regression began after SP22, and the dialog box now keeps the selected state visible. (SITES-30874) MAJOR
 
 * Authors can edit pages in Layout mode when parent and child components define different responsive breakpoints. The getResponsiveCssClasses function previously failed with a TypeError on components that omitted the cq:responsive/phone width. The function now falls back to available values and continues rendering. (SITES-46681)
 * Custom crop ratios now load in hybrid inline-editing mode for components with multiple image drop targets. Previously, the Image Editor initialized one generic ipeConfig for all drop targets, so the editor showed only the default ratios and ignored each target's aspectRatios. The editor now reads the configuration for the selected drop target, and the crop applies in both inline and fullscreen views. (SITES-45771)
@@ -280,7 +281,7 @@ Enhancement: The Preview view in the Headless Admin now passes the selected vari
 
 #### Site Admin UI{#sites-admin-ui-6526}
 
-Reverting an asset to an earlier version now refreshes its card thumbnail. A URL-encoding change in the Timeline client library caused a path mismatch, so the card lookup failed and the thumbnail stayed stale. Matching the encoded and raw paths restores the refresh. (SITES-46590)
+Reverting an asset to an earlier version now refreshes its card thumbnail. A URL-encoding change in the Timeline client library caused a path mismatch, so the card lookup failed and the thumbnail remained stale. Matching the encoded and raw paths restores the refresh. (SITES-46590)
 
 <!--
 #### Universal editor {#sites-universal-editor-6526}
@@ -296,7 +297,7 @@ View Payload now opens the Touch UI package editor for workflows that Manage Pub
 * Enhancement: AEM Assets 6.5 includes support for Coalition for Content Provenance and Authenticity (C2PA) compliance for generative AI content. The Update Asset workflow detects C2PA credentials, extracts the metadata, and signs renditions that the workflow regenerates. Signing runs locally in each AEM instance, so customers don't need dedicated signing infrastructure. (ASSETS-75868) BLOCKER
 
 * Documentation enhancement: New public documentation explains how to customize the asset processing pipeline while keeping C2PA compliance. The documentation covers how to position the Detect C2PA Credential step before rendition steps and how signing runs locally in each AEM instance. The documentation also states the limitation on dedicated or customer-owned signing infrastructure. (ASSETS-76100)
-* The Help drop-down in the shell header now stays open when you hover over its links in AEM 6.5 SP26 environments. Previously, the drop-down closed when the pointer entered the list, so authors failed to click Documentation, Community, or support links. The updated `com.adobe.granite.ui.content` bundle defers the focus check, so the menu closes only when focus truly leaves. (ASSETS-65676)
+* The Help drop-down in the shell header now remains open when you hover over its links in AEM 6.5 SP26 environments. Previously, the drop-down closed when the pointer entered the list, so authors failed to click Documentation, Community, or support links. The updated `com.adobe.granite.ui.content` bundle defers the focus check, so the menu closes only when focus truly leaves. (ASSETS-65676)
 
 <!--
 #### [!DNL Dynamic Media]{#assets-dm-6526}
@@ -316,11 +317,7 @@ View Payload now opens the Touch UI package editor for workflows that Manage Pub
 
 ### Foundation {#foundation-6526}
 
-* Servlets that include other scripts now keep the Content-Type header consistent with the including servlet. Previously, some servlets in the Coral and admin UI changed the header during an include, which violated the `RequestDispatcher.include()` contract and exposed a cross-site scripting (XSS) risk. The update aligns the headers and removes the violations that the Splunk dashboard reported. (NPR-43241) CRITICAL
-* The Metadata Editor no longer evaluates user-supplied input as a server-side template expression. A security scan found that a request parameter reached the expression language resolver, which let crafted URLs read session information. The updated `com.adobe.granite.commons` and `com.adobe.cq.admin` packages validate the input and close the vulnerability. (NPR-44061) CRITICAL
-
-
-* The "Country/Region" string in the **Security** > **Users** > **Create** user dialog box now displays in the user's language. Previously, the label stayed in English for localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-43882)
+* The "Country/Region" string in the **Security** > **Users** > **Create** user dialog box now appears in the user's language. Previously, the label remained in English for localized interfaces. The updated `com.adobe.granite.security.content` bundle supplies the translations. (NPR-43882)
 * The Help drop-down in the shell header now stays open when you hover over its links in AEM 6.5 SP26 environments. Previously, the drop-down closed when the pointer entered the list, so authors failed to click Documentation, Community, or support links. The updated `com.adobe.granite.ui.content` bundle defers the focus check, so the menu closes only when focus truly leaves. (NPR-44686)
 * Improvement: The `HtmlLibraryManagerImpl` query now includes a node type tag so that the query always uses the expected index. The service also logs an ERROR when it finds no client libraries, which alerts administrators to the problem. The update bumps the `com.adobe.granite.clientlibs` bundle version in the service pack. (NPR-44698)
 
@@ -350,7 +347,7 @@ Save & Close in the User editor now returns to the search results of the current
 #### Granite{#foundation-granite-6526}
 
 * The "Content Fragment Model" placeholder in the Assets Omnisearch filter now displays in full. Previously, the text was cut off after you went to Assets, clicked the Filters or Search icon, and expanded the Content Fragment Model field. Updated styling gives the placeholder enough space. (GRANITE-54387)
-* The Help dropdown in the shell header now stays open when you move the pointer over its links. Previously, the drop-down closed as soon as the pointer entered the list of Documentation, Community, and support links, which made the links unreachable with a mouse. The focus handler now defers its check to the next animation frame, so hovering no longer counts as the focus leaving the menu. (GRANITE-70978)
+* The Help dropdown in the shell header now remains open when you move the pointer over its links. Previously, the drop-down closed as soon as the pointer entered the list of Documentation, Community, and support links, which made the links unreachable with a mouse. The focus handler now defers its check to the next animation frame, so hovering no longer counts as the focus leaving the menu. (GRANITE-70978)
 
 <!--
 #### Jetty{#foundation-jetty-6526}
@@ -389,7 +386,7 @@ The "Select Root Directory" string in the Select i18n Dictionary dialog now disp
 
 #### Translation{#foundation-translation-6526}
 
-The style options for the List component now display in the user's language. Previously, strings such as Block and Grid stayed in English in the Styles menu after authors added the List component to an Experience Fragment. The updated resources provide the translations, including the Korean, Simplified Chinese, and Traditional Chinese interfaces. (CQ-4349666)
+The style options for the List component now display in the user's language. Previously, strings such as Block and Grid remained in English in the Styles menu after authors added the List component to an Experience Fragment. The updated resources provide the translations, including the Korean, Simplified Chinese, and Traditional Chinese interfaces. (CQ-4349666)
 
 <!--
 #### User interface{#foundation-ui-6526}
@@ -406,12 +403,12 @@ Improvement: The Touch UI Page Editor now renders the Content Tree and supports 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.26.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions. <!-- UPDATE FOR EACH NEW RELEASE -->
-* The Service Pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip).
+* The Service Pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip).
 * On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.26.0 on one of the Author instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe advises against removing or uninstalling the [!DNL Experience Manager] 6.5.26.0 package. To roll back if necessary, create a backup of the `crx-repository` before you install the pack. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe recommends against removing or uninstalling the [!DNL Experience Manager] 6.5.26.0 package. To roll back if necessary, create a backup of the `crx-repository` before you install the pack. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- FORMS For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
@@ -421,7 +418,7 @@ Improvement: The Touch UI Page Editor now renders the Content Tree and supports 
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the Service Pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Download the Service Pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. For more information, see [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -476,7 +473,7 @@ Failure to install this package results in slow or failed GraphQL queries.
 
 ### UberJar{#uber-jar}
 
-The UberJar for [!DNL Experience Manager] 6.5.26.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.25/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+The UberJar for [!DNL Experience Manager] 6.5.26.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.26/). <!-- CHECK FOR UPDATE EACH NEW RELEASE FROM MADHULIKA SINGH -->
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -545,7 +542,7 @@ The preferred editors for managing headless content in AEM are now:
         * `diff-cache`
 
     1. Install the Service Pack, or restart Experience Manager as a Cloud Service. 
-      New folders of `cache` and `diff-cache` are automatically created and you no longer experience an exception related to `mvstore` in the `error.log`.
+      New folders for `cache` and `diff-cache` are automatically created and you no longer experience an exception related to `mvstore` in the `error.log`.
 
 * Update your GraphQL queries that used a custom API name for your content model to use the default name of the content model instead.
 
@@ -567,7 +564,7 @@ The preferred editors for managing headless content in AEM are now:
 
   After the index definition is changed, a reindexing is required (`reindex` = `true`).
 
-  After these steps, the GraphQL queries perform faster.
+  After these steps, the GraphQL queries perform with improved speed.
 
 * When trying to move, delete, or publish either Content Fragments, Sites, or Pages, there is an issue when Content Fragment references are fetched. The background query fails; the functionality does not work.
   To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no reindexing is required):
@@ -609,12 +606,10 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
 
-* After installing AEM 6.5 Service Pack 25 on WAR/JEE deployments (including AEM Forms on JEE), the `com.adobe.cq.screens.sessions` bundle remains in the Installed state and never becomes Active. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (NPR-44100)
 * After the SOAP SDK authentication hardening, LCM Configuration Manager, Workbench, and Designer fail to connect to the AEM Forms on JEE server with error `ALC-LCM-200-001` because the `/soap/sdk` endpoint rejects unauthenticated requests. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (FORMS-26802)
 * On AEM Forms Document Security, authentication cookies are dropped after a Microsoft Entra ID (MFA) redirect, causing a "Cookies are not enabled" error when opening policy-protected documents. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (FORMS-26679)
 * AEM Forms on [!DNL JEE] [!DNL WebLogic] database settings fail with "No suitable driver found" using the Microsoft SQL Server JDBC driver 12.10.0. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (FORMS-26617)
 * PDFs open slowly after installing the latest AEM Forms 6.5 build. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (FORMS-27869)
-* CVE-2025-64775, an Apache Struts denial-of-service vulnerability in multipart request processing, affects AEM Forms 6.5.24.0 JEE deployments (JBoss, WebLogic, WebSphere). To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.24.0. (FORMS-23491)
 * After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder, perform the following steps to resolve the issue (FORMS-14926):
 
   1. Stop the locators, if they are running.
