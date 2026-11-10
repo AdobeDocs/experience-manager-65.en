@@ -61,6 +61,14 @@ To create the language root you create a page and use an ISO language code as th
 
 * `<language-code>_<country-code>` or `<language-code>-<country-code>`The supported country code is a lower-case or upper-case two-letter code as defined by ISO 3166, for example, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
+> [!NOTE]
+>
+> For AEM installations running on Java 17 or Java 21, the default Java locale mapping uses `he` for Hebrew, `yi` for Yiddish, and `id` for Indonesian instead of the legacy codes `iw`, `ji`, and `in`. Existing i18n dictionaries that use the legacy codes might not be found.
+>
+> Use the current codes for language roots and i18n dictionaries: replace `iw` with `he`, `ji` with `yi`, and `in` with `id`.
+>
+> If you need to retain the legacy codes as a compatibility workaround, set the Java system property `java.locale.useOldISOCodes` to `true` when starting AEM, using the JVM argument `-Djava.locale.useOldISOCodes=true`. The property is read only at Java runtime startup; changing it while AEM is running has no effect.
+
 You can use either format, according to the structure that you have chosen for your global site.  For example, the root page of the French language copy of the Geometrixx site has `fr` as the Name property. The Name property is used as the name of the page node in the repository, and therefore determines the path of the page. (http://localhost:4502/content/geometrixx/fr.html)
 
 The following procedure uses the touch-optimized UI to create a language copy of a web site. For instructions that use the Classic UI, see [Creating a Language Root Using the Classic UI](/help/sites-administering/tc-lroot-classic.md).
