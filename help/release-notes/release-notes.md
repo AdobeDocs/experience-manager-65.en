@@ -590,7 +590,15 @@ The preferred editors for managing headless content in AEM are now:
 
 ### Known issue for AEM Sites {#known-issues-aem-sites-6526}
 
-Content Fragments-Preview fails due to DoS protection for a large tree of fragments. See the [KB article about Default GraphQL Query Executor configuration options](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+<!--
+* Known issue with a hotfix available for AEM Foundation {#known-issue-foundation-hotfix-6526}
+
+  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the OSGi version ordering for CRXDE Lite can prevent Experience Manager from selecting the intended bundle. An earlier service pack contains a higher CRXDE Lite version than the artifact that Service Pack 26 includes (`com.adobe.granite.crxde-lite-1.1.44-CQ651-B00024`).
+  
+  To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
+-->
+
+* Content Fragments-Preview fails due to DoS protection for a large tree of fragments. See the [KB article about Default GraphQL Query Executor configuration options](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6526}
 
@@ -602,26 +610,22 @@ Content Fragments-Preview fails due to DoS protection for a large tree of fragme
 
 The following issues have a hotfix available for download and installation. You can [download and install the Hotfix](/help/release-notes/aem-forms-hotfix.md) to resolve these issues:
 
-* After the SOAP SDK authentication hardening, LCM Configuration Manager, Workbench, and Designer fail to connect to the AEM Forms on JEE server with error `ALC-LCM-200-001` because the `/soap/sdk` endpoint rejects unauthenticated requests. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (FORMS-26802)
-* On AEM Forms Document Security, authentication cookies are dropped after a Microsoft Entra ID (MFA) redirect, causing a "Cookies are not enabled" error when opening policy-protected documents. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (FORMS-26679)
-* AEM Forms on [!DNL JEE] [!DNL WebLogic] database settings fail with "No suitable driver found" using the Microsoft SQL Server JDBC driver 12.10.0. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (FORMS-26617)
-* PDFs open slowly after installing the latest AEM Forms 6.5 build. To resolve this issue, [download and install the hotfix](/help/release-notes/aem-forms-hotfix.md) for AEM Service Pack 6.5.25.0. (FORMS-27869)
 * After installing AEM Forms JEE Service Pack 21 (6.5.21.0), if you find duplicate entries of Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` under the `<AEM_Forms_Installation>/lib/caching/lib` folder, perform the following steps to resolve the issue (FORMS-14926):
 
   1. Stop the locators, if they are running.
-  2. Stop the AEM Server. 
-  3. Go to the `<AEM_Forms_Installation>/lib/caching/lib`. 
-  4. Remove all the Geode patch files except `geode-*-1.15.1.2.jar`. Confirm that only the Geode jars with `version 1.15.1.2` are present.
-  5. Open the command prompt in admin mode.  
-  6. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
+  1. Stop the AEM Server. 
+  1. Go to the `<AEM_Forms_Installation>/lib/caching/lib`. 
+  1. Remove all the Geode patch files except `geode-*-1.15.1.2.jar`. Confirm that only the Geode jars with `version 1.15.1.2` are present.
+  1. Open the command prompt in admin mode.  
+  1. Install the Geode patch using the `geode-*-1.15.1.2.jar` file. 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
 The following zip files contain the text documents that list the OSGi bundles and Content Packages included in this [!DNL Experience Manager] 6.5 Service Pack release:
 
-* [List of OSGi bundles included in Experience Manager 6.5.26.0](/help/release-notes/assets/65250-bundles.zip) 
+* [List of OSGi bundles included in Experience Manager 6.5.26.0](/help/release-notes/assets/65260-bundles.zip) 
 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.26.0](/help/release-notes/assets/65250-packages.zip) 
+* [List of Content Packages included in Experience Manager 6.5.26.0](/help/release-notes/assets/65260-packages.zip) 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
