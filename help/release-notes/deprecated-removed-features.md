@@ -47,7 +47,6 @@ Customers are advised to review if they use the feature/capability in their curr
 |Area|Feature|Replacement|Version (SP)|
 |---|---|---|---|
 | Sites | Content Fragment support in the AEM Assets REST API | AEM 6.5 LTS SP2 provides modern OpenAPIs for Content Fragment and Model Management, so the older Content Fragment Support endpoints in the AEM Assets REST API are now deprecated.<br>Adobe intends to keep these older endpoints available until an end-of-life announcement. Adobe does not plan further enhancements for the deprecated endpoints. | 6.5.24 |
-| Sites | Content Fragment text summarization | No replacement available. | |
 | Sites | [SPA Editor](/help/sites-developing/spa-editor-deprecation.md) | For headless use cases, leverage the [Universal Editor](/help/sites-developing/universal-editor/introduction.md) for visual editing or the [Content Fragment Editor](/help/sites-developing/universal-editor/introduction.md) for form-based editing.| 6.5.23 |
 | Sites | The **Adobe AEM Managed Polling Configuration** service: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | The **Adobe AEM Analytics Report Sling Importer** service. See Connecting to Adobe Analytics and Creating Frameworks - [Configuring the Import Interval](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | ActiveMQ in Adobe Experience Manager (AEM). ActiveMQ was used for communication between two AEM Publish instances. | Adobe recommends that customers now use a load-balancer. | 6.5.18.0 |
@@ -83,6 +82,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 
 |Area|Feature|Replacement|Version (SP)|
 |--- |--- |--- |--- |
+| Sites | Content Fragment text summarization | No replacement available. | 6.5.26.0 |
 | Commerce| AEM CIF Classic has been removed. | You should migrate to [AEM CIF](/help/commerce/cif/migration.md). If you still need CIF Classic, a compatibility package has been created, please [contact Adobe Customer Support](https://experienceleague.adobe.com/?support-solution=General#support). | 6.5.22.0 |
 | Integration with [!DNL Experience Cloud] | You could synchronize your assets with [!DNL Experience Cloud] using a configuring via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] was formerly called [!DNL Adobe Experience Cloud]. | If you have any queries, [contact Adobe Customer Support](https://experienceleague.adobe.com/?support-solution=General#support). ||
 |Analytics Activity Map|The version of the Activity Map that is included within AEM.|Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM. Use the [ActivityMap plug-in provided by Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). ||
