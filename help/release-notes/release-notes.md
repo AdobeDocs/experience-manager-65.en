@@ -424,7 +424,7 @@ Improvement: The Touch UI Page Editor now renders the Content Tree and supports 
 
 >[!NOTE]
 >
->The dialog box on the Package Manager UI sometimes exits during the installation of the Service Pack. Adobe advises that you wait for error logs to stop changing before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before confirming that the installation is successful. This issue occurs in the [!DNL Safari] browser but can occasionally occur in any browser.
+>The dialog box on the Package Manager UI sometimes closes during the installation of the Service Pack. Adobe advises that you wait for error logs to stop changing before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before confirming that the installation is successful. This issue occurs in the [!DNL Safari] browser but can occasionally occur in any browser.
 
 **Automatic installation**
 
@@ -590,13 +590,9 @@ The preferred editors for managing headless content in AEM are now:
 
 ### Known issue for AEM Sites {#known-issues-aem-sites-6526}
 
-<!--
-* Known issue with a hotfix available for AEM Foundation {#known-issue-foundation-hotfix-6526}
+* **Known issue with a hotfix available for AEM Foundation**
 
-  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the OSGi version ordering for CRXDE Lite can prevent Experience Manager from selecting the intended bundle. An earlier service pack contains a higher CRXDE Lite version than the artifact that Service Pack 26 includes (`com.adobe.granite.crxde-lite-1.1.44-CQ651-B00024`).
-  
-  To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
--->
+  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the CRXDE Lite bundle version ordering can prevent Experience Manager from selecting the intended bundle. To correct the version ordering, install Service Pack 26, and then download and install the hotfix [`CRXDE Lite hotfix GRANITE-76725`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fgranite-76725%2Fcq-6.5.26-hotfix-GRANITE-76725-1.0.zip) from Software Distribution. The hotfix is a version-only update. It contains no code or functional changes. (GRANITE-76725)
 
 * Content Fragments-Preview fails due to DoS protection for a large tree of fragments. See the [KB article about Default GraphQL Query Executor configuration options](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
