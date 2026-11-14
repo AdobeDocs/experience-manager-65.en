@@ -44,7 +44,6 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | Date     | November 12, 2026 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
-
 <!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
 Experience Manager 6.5.26.0 includes new features, key customer-requested enhancements, and bug fixes. It also includes accessibility, localization, performance, stability, and security improvements built on the 6.5 foundation available since April 2019. 
@@ -58,6 +57,13 @@ Key highlights of Service Pack 26 include the following:
 * Reliability. Fixes address GraphQL lock contention on publish instances, MSM rollouts, Rich Text Editor toolbar actions, and page activation in the Classic UI.
 * Analytics. The Launch integration uses the Adobe Analytics 2.0 API ahead of the Analytics 1.4 end of life on August 31, 2026.
 
+>[!IMPORTANT]
+>
+>Adobe is delivering quarterly Service Packs for AEM 6.5 LTS, with a cumulative security fix strategy for the supported service packs to accommodate the frequency of updates in this area.
+>
+> For those on classic AEM 6.5, Service Pack 26 provides continuity, while support and maintenance continue through the AEM 6.5 LTS workstream. Standard (February 2027) and extended (February 2028) support cover Service Pack 26, which receives only security fixes.
+>
+>Adobe offers resources to help you transition to AEM 6.5 LTS or AEM as a Cloud Service and use the latest AI innovations to increase productivity and optimize for new audiences. 
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -83,26 +89,26 @@ Key highlights of Service Pack 26 include the following:
 
 * The ContextHub iframe in the Page Editor now has a descriptive title attribute. Previously, the `contexthub-ui-iframe` element had no title, so screen reader users failed to identify it when focus moved to it. The title now appears on every Editor page and view, including Canvas, Side Rail, and Layout Preview. (SITES-24650)
 * The Filters button in the Sites console Filter Rail doesn't add visible labels above the Saved Searches and Select Search Directory fields. An audit reported that labels appeared when focus left the button, when a key was pressed, or when the button was clicked. Testing failed to reproduce the behavior, so no change was necessary. (SITES-24706)
-* Links in the Sites console App Navigation now stand out more clearly. The link text met the 4.5:1 contrast ratio, but the thin font weight and small size made the links hard to see. A greater font weight and larger size make the text easier to read for users with visual impairments. (SITES-24723)
+* Links in the Sites console App Navigation are now more visible. The link text met the 4.5:1 contrast ratio, but the thin font weight and small size made the links hard to see. A greater font weight and larger size make the text easier to read for users with low vision. (SITES-24723)
 * Screen readers no longer announce "blank" before the tooltip content in the User Preferences modal. Previously, the info icon used `role="tooltip"` with an `aria-labelledby` reference, so NVDA read an empty label first. The icon now uses `role="button"` and an `aria-label` of "information," and the change applies to the Coral form components that share the pattern. (SITES-24732)
-* The Delete button in the Delete modal now meets the WCAG 1.4.3 contrast requirement of 4.5:1. Previously, white text on a red background gave a ratio of 3.9:1 after authors selected an item and clicked Delete in the Action Toolbar. The darker button color makes the label readable for authors with visual impairments. (SITES-24772)
+* The Delete button in the Delete modal now meets the WCAG 1.4.3 contrast requirement of 4.5:1. Previously, white text on a red background gave a ratio of 3.9:1 after authors selected an item and clicked Delete in the Action Toolbar. The darker button color makes the label readable for authors with low vision. (SITES-24772)
 * The References heading in the Sites console References rail now uses a heading element instead of a `div`. Previously, screen readers failed to announce the text as a heading, so users failed to navigate by headings. The heading also appears at the top of the initial References view. (SITES-24967)
 * The focus indicator for accordion buttons in the Sites console Filter Rail now meets the WCAG 1.4.11 contrast requirement of 3:1. Previously, the blue indicator showed a ratio of 2.3:1 against the background, which made the Tags accordion button hard to find for keyboard users. The updated color gives keyboard users a clear focus cue. (SITES-24986)
 * The focus indicator for radio buttons in the Sites console Filter Rail now meets the WCAG 1.4.11 contrast requirement of 3:1. Previously, the light blue indicator showed a ratio of 1.7:1 against the background. Keyboard users can now track their position in the Modified date accordion. (SITES-24987)
 * The Select button beside the Path and Tags fields in the Page Editor side rail no longer uses a checkbox icon. Previously, the icon suggested a toggle, but activating the button opened a modal that contains the Tree Directory. The Select button now communicates its function correctly, and the same applies to the Image and Teaser modals. (SITES-25210)
 * Screen readers now skip the thumbnail images of assets in the Page Editor side rail. Previously, each image carried alt text that duplicated the visible asset name, so users heard the same text twice. An empty `alt` attribute marks the image as decorative and keeps the name in the card title. (SITES-25213)
 * Screen readers recognize the side rail Components list as a list. An audit reported the items as unrelated elements, but testing confirmed the markup uses a list element and list items. No code change was necessary. (SITES-25214)
-* The info icons for components in the Page Editor side rail are larger and easier to see. Previously, the icons used the extra small size of about 12 px, which users with visual impairments found hard to see. The icons now use the medium size.(SITES-25217)
-* The focus indicator on the Swatch button in the Annotation modal now stands out from the button. Previously, the indicator matched the swatch color. This made it hard for keyboard users to see which button had focus. An offset gives the indicator enough contrast against the background and keeps it clearly visible. (SITES-25253)
+* The info icons for components in the Page Editor side rail are larger and easier to see. Previously, the icons used the extra small size of about 12 px, which users with low vision found hard to see. The icons now use the medium size.(SITES-25217)
+* The focus indicator on the Swatch button in the Annotation modal is now clearly distinguished from the button. Previously, the indicator matched the swatch color. This made it hard for keyboard users to see which button had focus. An offset gives the indicator enough contrast against the background and keeps it clearly visible. (SITES-25253)
 * The Date field in the Timewarp modal no longer carries `aria-haspopup="dialog"`. Previously, screen readers announced that the field opens a dialog box, even though it doesn't. Removing the attribute gives screen reader users accurate information. (SITES-25263)
 * Text labels in the Demographics toolbar, such as "Recommended," now meet the WCAG 1.4.3 contrast requirement of 4.5:1. Previously, grey text on a dark grey background gave a ratio of 2.8:1 in Preview mode. Darker or lighter text, depending on the background, makes every label readable. (SITES-25307)
 * The focus indicator on the Commerce, Persona, and Device buttons in the Demographics toolbar now meets the WCAG 1.4.11 contrast requirement of 3:1. Previously, the indicator showed a ratio of 1.9:1 against the toolbar background. Keyboard users can now track their position. (SITES-25308)
-* Text that authors type in the Demographics toolbar text fields now meets the WCAG 1.4.3 contrast requirement of 4.5:1. Previously, white text on a grey background produced a ratio of 2.9:1 in fields, such as the Profile drop-down `displayName` field in Preview mode. The updated colors make typed values readable for authors with visual impairments. (SITES-25318)
+* Text that authors type in the Demographics toolbar text fields now meets the WCAG 1.4.3 contrast requirement of 4.5:1. Previously, white text on a grey background produced a ratio of 2.9:1 in fields, such as the Profile drop-down `displayName` field in Preview mode. The updated colors make typed values readable for authors with low vision. (SITES-25318)
 * Screen readers now read the description tooltip when focus reaches checkboxes in the Teaser, Image, and Carousel dialog boxes. Previously, the text lacked programmatic association with the checkbox, so users failed to hear the instruction. An `aria-describedby` attribute now links each checkbox to its description. (SITES-25364)
 * Screen readers now announce which Paragraph formats button is active in the Rich Text Editor. Previously, selecting an option from the list gave assistive technology no indication of the current choice. The active button now carries `aria-current="true"`, and the active Hyperlink Target option carries `aria-selected="true"`. (SITES-25367)
-* The Sort buttons in the table header of the Sites console List View now meet the WCAG 1.4.11 contrast requirement of 3:1. Previously, the light grey icons showed a ratio of 1.5:1 against the header background. The darker icon color makes the buttons visible to authors with visual impairments. (SITES-25372)
+* The Sort buttons in the table header of the Sites console List View now meet the WCAG 1.4.11 contrast requirement of 3:1. Previously, the light grey icons showed a ratio of 1.5:1 against the header background. The darker icon color makes the buttons visible to authors with low vision. (SITES-25372)
 * The Assets tab in the Page Editor side rail no longer reloads when focus moves to the Filter field. Previously, tabbing into the empty field triggered a reload, and screen readers announced a loading message each time. The tab now reloads only after you change the filter value and press Enter. (SITES-25377)
-* The selected swatch icon in the Annotation modal now meets the WCAG 1.4.11 contrast requirement of 3:1. Previously, the white check mark showed a ratio as low as 1.58:1 against yellow, orange, and green swatches. The updated icon gives authors with visual impairments a clear indicator. (SITES-25523)
+* The selected swatch icon in the Annotation modal now meets the WCAG 1.4.11 contrast requirement of 3:1. Previously, the white check mark showed a ratio as low as 1.58:1 against yellow, orange, and green swatches. The updated icon gives authors with low vision a clear indicator. (SITES-25523)
 * The Components list in the Page Editor side panel no longer takes keyboard focus. Keyboard users select and move components with the controls in the content window, so the side panel list repeated the function. A note under the component filter informs keyboard users where to find the controls. (SITES-40752)
 
 
@@ -343,7 +349,7 @@ Save & Close in the User editor now returns to the search results of the current
 #### Granite{#foundation-granite-6526}
 
 * The "Content Fragment Model" placeholder in the Assets Omnisearch filter now displays in full. Previously, the text was cut off after you went to Assets, clicked the Filters or Search icon, and expanded the Content Fragment Model field. Updated styling gives the placeholder enough space. (GRANITE-54387)
-* The Help dropdown in the shell header now remains open when you move the pointer over its links. Previously, the drop-down closed as soon as the pointer entered the list of Documentation, Community, and support links, which made the links unreachable with a mouse. The focus handler now defers its check to the next animation frame, so hovering no longer counts as the focus leaving the menu. (GRANITE-70978)
+* The Help dropdown in the shell header now remains open when you move the pointer over its links. Previously, the drop-down closed as soon as the pointer entered the list of Documentation, Community, and support links, which made the links unreachable with a mouse. The focus handler now defers its check to the next animation frame, so hovering no longer counts as the focus exiting the menu. (GRANITE-70978)
 
 <!--
 #### Jetty{#foundation-jetty-6526}
@@ -400,11 +406,11 @@ Improvement: The Touch UI Page Editor now renders the Content Tree and supports 
 
 * [!DNL Experience Manager] 6.5.26.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions. <!-- UPDATE FOR EACH NEW RELEASE -->
 * The Service Pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip).
-* On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.26.0 on one of the Author instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
+* On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.26.0 on one of the authoring instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe recommends that you do not remove or uninstall the [!DNL Experience Manager] 6.5.26.0 package. To roll back if necessary, create a backup of the `crx-repository` before you install the pack. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe recommends that you do not delete or uninstall the [!DNL Experience Manager] 6.5.26.0 package. To roll back if necessary, create a backup of the `crx-repository` before you install the pack. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- FORMS For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
@@ -424,7 +430,7 @@ Improvement: The Touch UI Page Editor now renders the Content Tree and supports 
 
 >[!NOTE]
 >
->The dialog box on the Package Manager UI sometimes closes during the installation of the Service Pack. Adobe advises that you wait for error logs to stop changing before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before confirming that the installation is successful. This issue occurs in the [!DNL Safari] browser but can occasionally occur in any browser.
+>The dialog box on the Package Manager UI sometimes closes during the installation of the Service Pack. Adobe advises that you wait for error logs to stop updating before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before confirming that the installation is successful. This issue occurs in the [!DNL Safari] browser but can occasionally occur in any browser.
 
 **Automatic installation**
 
@@ -484,7 +490,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 >[!NOTE]
 >
->UberJar and the other related artifacts are available on Maven Central Repository instead of Adobe Public Maven repository (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. So, there is no `classifier`, with `apis` as the value, for the `dependency` tag.
+>UberJar and the other related artifacts are available on Maven Central Repository instead of Adobe Public Maven repository (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. There is no `classifier`, with `apis` as the value, for the `dependency` tag.
 
 
 
@@ -560,7 +566,7 @@ The preferred editors for managing headless content in AEM are now:
 
   After the index definition is changed, a reindexing is required (`reindex` = `true`).
 
-  After these steps, the GraphQL queries perform with improved speed.
+  After these steps, the GraphQL queries perform faster.
 
 * When trying to move, delete, or publish either Content Fragments, Sites, or Pages, there is an issue when Content Fragment references are fetched. The background query fails; the functionality does not work.
   To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no reindexing is required):
@@ -584,7 +590,7 @@ The preferred editors for managing headless content in AEM are now:
   * The hotspot in a Dynamic Media interactive image is not visible when previewing the asset through the Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for register change to complete unregistered.
 
-* Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the `org.apache.servicemix.bundles.rhino` bundle has a new hoisting behavior. Scripts that use the strict mode (`use strict;`) have to declare their correct variables. Otherwise, they do not get run, and end up throwing a runtime error.
+* Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the `org.apache.servicemix.bundles.rhino` bundle has a new hoisting behavior. Scripts that use the strict mode (`use strict;`) have to declare their correct variables. Otherwise, they do not run, and end up throwing a runtime error.
  
 * Installing tagging related standard content by way of an official update package resets the languages property of the `/content/cq:tags` node to default. This action is true for Service Packs, Security Service Packs, Extended Feature Packs, Cumulative Feature Packs, patches, and so on. Therefore, it is necessary to add it to the properties before installation.
 
