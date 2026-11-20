@@ -308,13 +308,24 @@ View Payload now opens the Touch UI package editor for workflows that Manage Pub
 ### [!DNL Forms]{#forms-6526}
 
 * New feature: Support for accessibility tags on lists in Rich Text. Previously, list tags appeared in the accessibility tag tree only when the template followed a specific structure. The request closed as a duplicate of a related ticket that delivers the feature. (LC-3923202) 
+* Enhancement: AEM Forms adds a runtime API that selects the legacy or default Extensible Markup Language (XML) data export mode for each request. Previously, only the `-Dcom.adobe.fd.forms.export.legacy` Java Virtual Machine (JVM) parameter controlled the mode, and the setting applied to every export on the server. When a request does not use the API, the JVM parameter continues to control the behavior. (FORMS-23114, FORMS-22983)
+* Portable Document Format (PDF) files certified with an invisible certification signature no longer open slowly in Adobe Acrobat. The fix that earlier applied only to visible certification signatures now also covers invisible ones. (FORMS-25171)
+* In Foundation Components based Adaptive Forms, the File Attachment component now checks files against the allowed file types list at upload. Previously, files such as `.xsd` passed the upload step even when the list allowed only `application/pdf`, `image/jpeg`, and `image/png`. The form rejected them only on submit with a generic unsupported file alert. (FORMS-24295)
 
-
-<!--
 #### Forms JEE {#forms-jee-6526}
 
+* Enhancement: AEM Forms Document Security adds passkey (Web Authentication, or WebAuthn) support for Adobe Acrobat (PPKLite). (FORMS-21762)
+* Enhancement: The IBM Content Manager connector now supports IBM Content Manager 8.7, because IBM ended support for versions 8.5 and 8.6. (FORMS-6827)
+* On Windows, the ConvertPDF service no longer hangs when converting certain Portable Document Format (PDF) files to images such as TIFF. (FORMS-25796)
+* Security Assertion Markup Language (SAML) authentication now validates assertion signatures with the certificate from the uploaded identity provider (IdP) metadata. Authentication fails when the IdP certificate changes and the metadata is not updated. (FORMS-24679)
+* After upgrading to AEM Forms Service Pack 6.5.24.0, `server.log` and `error.log` no longer fill with `[XMLSecurity]` WARN messages such as "Secure parser factory creation failed, any XML parser created may be vulnerable to XML-based exploits." The messages appeared several times per second, even on idle servers, and consumed disk space quickly. (FORMS-23717)
+* Components on the JEE side now package Apache POI 5.4.0. Previously, some bundles still included Apache POI 3.17 and 3.9, which security scans flagged after upgrading to AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
+
 #### Forms Designer {#forms-designer-6526}
--->
+
+* Enhancement: Forms Designer and Output Service generate nested Portable Document Format (PDF) bookmarks from Heading Level 1 through Heading Level 6 accessibility roles in static interactive and flat PDF files. Heading Level 1 becomes the top-level bookmark, without the empty or duplicate entry that authors previously removed manually in Adobe Acrobat. To restore the earlier bookmark behavior, add `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` to a custom XCI file. (LC-3923490, LC-3922369)
+* Enhancement: Selecting a bookmark in a static interactive or flat Portable Document Format (PDF) file now scrolls the matching heading to the top of the page. (LC-3923489, LC-3923289)
+* Enhancement: Forms Designer can add the bookmark `extras` element to text objects that use a Heading Level 1 through Heading Level 6 accessibility role. Previously, authors had to add `<extras name="bookmark">` manually in XML Source for each heading to generate bookmarks. (FORMS-24361)
 
 
 ### Foundation {#foundation-6526}
@@ -607,6 +618,20 @@ The preferred editors for managing headless content in AEM are now:
 * When a form containing a **File Attachment** field that uses `bindref` is submitted to an AEM Workflow with an **Assign Task** step, the attachments are not displayed. As a result, they do not appear when the task is opened from the Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments. (FORMS-23722)
 
 * When a digitally signed PDF is attached to a task in AEM Forms JEE Workspace, the upload remains stuck in the uploading state or fails with an "Invalid File" error. As a result, larger, signed PDF attachments cannot be added to the task. This issue is fixed in a later version. For a hotfix on the version, contact Adobe Support. (FORMS-28517)
+
+* On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
+
+  **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
+
+  1. Open the JVM configuration for the WebSphere application server that hosts AEM Forms JEE.
+  1. Add the following argument to the server JVM arguments. Keep the existing arguments.
+
+     ```shell
+     -Dcom.adobe.idp.dsc.webservice.loadSOAPClasses=true
+     ```
+
+  1. Save the configuration, and then restart the WebSphere application server so that the argument takes effect.
+  1. Reconnect from AEM Forms Workbench, and then load the WSDL in the Invoke Web Service activity again.
 
 #### Known issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
