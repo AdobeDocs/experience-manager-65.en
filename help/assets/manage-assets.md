@@ -111,7 +111,7 @@ To configure the cleanup task for the unfinished chunk upload jobs, go to `https
 
 >[!CAUTION]
 >
->Chunk upload is triggered when the default value is 500 MB and the chunk size is 50 MB. If you edit Apache Jackrabbit Oak TokenConfiguration and set the `timeout configuration` to less than the time it takes for an asset to upload, you encounter a session timeout situation while the asset upload is in progress. Therefore, change the `chunkUploadMinFileSize` and `chunksize` so that each chunk request refreshes the session.
+>Chunk upload is triggered when the default value is 500 MB and the chunk size is 50 MB. If you edit [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) and set the `timeout configuration` to less than the time it takes for an asset to upload, you encounter a session timeout situation while the asset upload is in progress. Therefore, change the `chunkUploadMinFileSize` and `chunksize` so that each chunk request refreshes the session.
 >
 >Given the credential-expiry-timeout, latency, bandwidth, and expected concurrent uploads, the highest value that ensures the following is picked:
 >
