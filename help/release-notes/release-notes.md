@@ -624,6 +624,12 @@ The preferred editors for managing headless content in AEM are now:
 
 * When a digitally signed PDF is attached to a task in AEM Forms JEE Workspace, the upload remains stuck in the uploading state or fails with an "Invalid File" error. As a result, larger, signed PDF attachments cannot be added to the task. This issue is fixed in a later version. For a hotfix on the version, contact Adobe Support. (FORMS-28517)
 
+* **WebLogic URL-to-PDF conversion failure.** On WebLogic, HTML-to-PDF conversion with URL input through the administration UI or API fails in AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The error is `ALC-PDG-052-018: Connection to host cannot be resolved (URL does not exist).` Conversion with binary HTML input is unaffected.
+
+  The error is caused by an incompatibility between the URL reachability check and WebLogic's HTTPS connection handler. It does not necessarily mean that the URL is invalid. Do not change a valid URL solely because this error appears.
+
+  The fix for WebLogic URL-to-PDF conversion is not included in patch 136 and requires a separate hotfix.
+  
 * On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
 
   **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
