@@ -56,6 +56,9 @@ Key highlights of Service Pack 26 include the following:
 * Localization. Dozens of fixes translate strings and correct layout problems across Sites, Assets, Security, and Operations.
 * Reliability. Fixes address GraphQL lock contention on publish instances, MSM rollouts, Rich Text Editor toolbar actions, and page activation in the Classic UI.
 * Analytics. The Launch integration uses the Adobe Analytics 2.0 API ahead of the Analytics 1.4 end of life on August 31, 2026.
+* Forms accessibility. Forms Designer and Output Service generate nested Portable Document Format (PDF) bookmarks from heading roles, scroll the selected heading to the top of the page, and add the bookmark `extras` element for you. Lists in Rich Text also carry accessibility tags.
+* Forms data export. A runtime API selects the legacy or default XML data export mode for each request, instead of one server-wide Java Virtual Machine (JVM) setting.
+* Forms JEE. Document Security adds passkey (WebAuthn) support for Adobe Acrobat, and the IBM Content Manager connector supports version 8.7.
 
 >[!IMPORTANT]
 >
@@ -308,8 +311,6 @@ View Payload now opens the Touch UI package editor for workflows that Manage Pub
 ### [!DNL Forms]{#forms-6526}
 
 * New feature: Support for accessibility tags on lists in Rich Text. Previously, list tags appeared in the accessibility tag tree only when the template followed a specific structure. The request closed as a duplicate of a related ticket that delivers the feature. (LC-3923202) 
-
-<!--
 * Enhancement: AEM Forms adds a runtime API that selects the legacy or default Extensible Markup Language (XML) data export mode for each request. Previously, only the `-Dcom.adobe.fd.forms.export.legacy` Java Virtual Machine (JVM) parameter controlled the mode, and the setting applied to every export on the server. When a request does not use the API, the JVM parameter continues to control the behavior. (FORMS-23114, FORMS-22983)
 * Portable Document Format (PDF) files certified with an invisible certification signature no longer open slowly in Adobe Acrobat. The fix that earlier applied only to visible certification signatures now also covers invisible ones. (FORMS-25171)
 * In Foundation Components based Adaptive Forms, the File Attachment component now checks files against the allowed file types list at upload. Previously, files such as `.xsd` passed the upload step even when the list allowed only `application/pdf`, `image/jpeg`, and `image/png`. The form rejected them only on submit with a generic unsupported file alert. (FORMS-24295)
@@ -328,7 +329,6 @@ View Payload now opens the Touch UI package editor for workflows that Manage Pub
 * Enhancement: Forms Designer and Output Service generate nested Portable Document Format (PDF) bookmarks from Heading Level 1 through Heading Level 6 accessibility roles in static interactive and flat PDF files. Heading Level 1 becomes the top-level bookmark, without the empty or duplicate entry that authors previously removed manually in Adobe Acrobat. To restore the earlier bookmark behavior, add `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` to a custom XCI file. (LC-3923490, LC-3922369)
 * Enhancement: Selecting a bookmark in a static interactive or flat Portable Document Format (PDF) file now scrolls the matching heading to the top of the page. (LC-3923489, LC-3923289)
 * Enhancement: Forms Designer can add the bookmark `extras` element to text objects that use a Heading Level 1 through Heading Level 6 accessibility role. Previously, authors had to add `<extras name="bookmark">` manually in XML Source for each heading to generate bookmarks. (FORMS-24361)
--->
 
 
 ### Foundation {#foundation-6526}
@@ -622,7 +622,6 @@ The preferred editors for managing headless content in AEM are now:
 
 * When a digitally signed PDF is attached to a task in AEM Forms JEE Workspace, the upload remains stuck in the uploading state or fails with an "Invalid File" error. As a result, larger, signed PDF attachments cannot be added to the task. This issue is fixed in a later version. For a hotfix on the version, contact Adobe Support. (FORMS-28517)
 
-<!--
 * On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
 
   **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
@@ -636,7 +635,6 @@ The preferred editors for managing headless content in AEM are now:
 
   1. Save the configuration, and then restart the WebSphere application server so that the argument takes effect.
   1. Reconnect from AEM Forms Workbench, and then load the WSDL in the Invoke Web Service activity again.
--->
 
 #### Known issues with Hotfixes available {#aem-forms-issues-with-hotfixes}
 
