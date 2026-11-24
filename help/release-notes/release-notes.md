@@ -618,6 +618,8 @@ The preferred editors for managing headless content in AEM are now:
 
 ### Known issues for AEM Forms {#known-issues-aem-forms-6526}
 
+* On WebLogic with AEM Forms on JEE Service Pack 26 patch 136, the Configuration Manager `validateApplicationServerTopology` step fails in both GUI and CLI modes. To apply the manual workaround, expand **4. Install AEM Forms on JEE service pack** in the [JEE service pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack) and follow the WebLogic topology validation workaround. (FORMS-30037)
+
 * When a form containing a **File Attachment** field that uses `bindref` is submitted to an AEM Workflow with an **Assign Task** step, the attachments are not displayed. As a result, they do not appear when the task is opened from the Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments. (FORMS-23722)
 
 * When a digitally signed PDF is attached to a task in AEM Forms JEE Workspace, the upload remains stuck in the uploading state or fails with an "Invalid File" error. As a result, larger, signed PDF attachments cannot be added to the task. This issue is fixed in a later version. For a hotfix on the version, contact Adobe Support. (FORMS-28517)

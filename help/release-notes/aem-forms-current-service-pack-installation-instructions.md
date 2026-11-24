@@ -150,6 +150,16 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 >* It is recommended to use the 'Ctrl + C' command to restart the SDK. Restarting the AEM SDK using alternative methods, for example, stopping Java processes, may lead to inconsistencies in the AEM development environment.
 >* For [Hotfix for Mitigating Spring Framework Vulnerabilities for AEM Forms on JEE](/help/release-notes/aem-forms-hotfix.md), When deploying in a cluster environment, it is essential to ensure that locators are started using JDK 17. 
 
+### Work around WebLogic topology validation failure {#weblogic-topology-validation}
+
+On WebLogic with AEM Forms on JEE Service Pack 26 patch 136, the Configuration Manager (LCM) `validateApplicationServerTopology` step fails in both GUI and CLI modes. If you encounter this issue, apply the following manual workaround. (FORMS-30037)
+
+1. Download [`forms-security-commons-1.0.6.jar`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/forms-security-commons-1.0.6.jar) from Software Distribution.
+1. Place the JAR in the `configurationManager/lib` directory under your AEM Forms installation directory. For example, on Windows, the path is `C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\lib`; use your actual installation directory if it differs.
+1. In the Configuration Manager `bin` directory, edit `ConfigurationManager.bat` (Windows) or `ConfigurationManager.sh` (Unix/Linux). Add the full path of `forms-security-commons-1.0.6.jar` to the existing classpath, retaining all existing classpath entries.
+1. Restart Configuration Manager in GUI or CLI mode using the modified launcher.
+1. Rerun `validateApplicationServerTopology` and verify that topology validation completes successfully.
+
 +++
 
 +++5. Install the servlet fragment if not installed (**Mandatory step**)
