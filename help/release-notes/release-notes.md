@@ -624,12 +624,29 @@ The preferred editors for managing headless content in AEM are now:
 
 * When a digitally signed PDF is attached to a task in AEM Forms JEE Workspace, the upload remains stuck in the uploading state or fails with an "Invalid File" error. As a result, larger, signed PDF attachments cannot be added to the task. This issue is fixed in a later version. For a hotfix on the version, contact Adobe Support. (FORMS-28517)
 
+* Importing a LiveCycle Archive (LCA) through the administration console or Java code (EJB/SOA) can cause subsequent PDF Generator (PDFG) and ConvertPDF operations to fail. This issue affects the JDK and Oracle WebLogic 14c stack on Windows and Linux with an embedded AEM author instance. (FORMS-30031)
+
+  The server log shows the following error:
+
+  ```text
+  org.omg.CORBA.INITIALIZE: can't instantiate default ORB implementation org.jacorb.orb.ORB
+  ```
+
+  **Temporary recovery:** A restart interrupts services on the affected server.
+
+  1. Plan a restart of the affected WebLogic managed server using your deployment's normal operational procedure.
+  1. Restart the affected server and wait for AEM Forms services to become available.
+  1. Retry PDF Generator and ConvertPDF operations to verify recovery.
+
+  On affected AEM Forms JEE SP26 patch 136 deployments on WebLogic 14c, restarting the managed server temporarily restores PDF Generator and ConvertPDF operations after an LCA import. A subsequent LCA import can trigger the failure again.
+
 * **WebLogic URL-to-PDF conversion failure.** On WebLogic, HTML-to-PDF conversion with URL input through the administration UI or API fails in AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The error is `ALC-PDG-052-018: Connection to host cannot be resolved (URL does not exist).` Conversion with binary HTML input is unaffected.
 
   The error is caused by an incompatibility between the URL reachability check and WebLogic's HTTPS connection handler. It does not necessarily mean that the URL is invalid. Do not change a valid URL solely because this error appears.
 
   The fix for WebLogic URL-to-PDF conversion is not included in patch 136 and requires a separate hotfix.
   
+
 * On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
 
   **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
