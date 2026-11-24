@@ -292,6 +292,10 @@ These steps assume you have the necessary administrative privileges on both the 
 
 These steps are to be performed with *System Administrator* access to the Adobe Admin Console.
 
+>[!NOTE]
+>
+>FRL packages typically run on an annual (1-year) subscription renewal cycle. When the license is due for renewal, create a new FRL package, remove the expired license from the AEM Forms Server, and then deploy and activate the new package. For detailed steps, see [Adobe Acrobat license expired or deactivated on AEM Forms Server](#troubleshooting).
+
 ###### Step 1: Log in to the Adobe Admin Console
 
 1. Open a web browser and navigate to the [Adobe Admin Console](https://adminconsole.adobe.com/)
@@ -441,6 +445,10 @@ These steps assume you have the necessary administrative privileges on both the 
 ##### Prepare the FRL Package (Adobe Admin Console)
 
 These steps are to be performed with *System Administrator* access to the Adobe Admin Console.
+
+>[!NOTE]
+>
+>FRL packages typically run on an annual (1-year) subscription renewal cycle. When the license is due for renewal, create a new FRL package, remove the expired license from the AEM Forms Server, and then deploy and activate the new package. For detailed steps, see [Adobe Acrobat license expired or deactivated on AEM Forms Server](#troubleshooting).
 
 ###### Step 1: Log in to the Adobe Admin Console
 
@@ -598,6 +606,10 @@ These steps assume you have the necessary administrative privileges on both the 
 
 These steps are to be performed with *System Administrator* access to the Adobe Admin Console.
 
+>[!NOTE]
+>
+>FRL packages typically run on an annual (1-year) subscription renewal cycle. When the license is due for renewal, create a new FRL package, remove the expired license from the AEM Forms Server, and then deploy and activate the new package. For detailed steps, see [Adobe Acrobat license expired or deactivated on AEM Forms Server](#troubleshooting).
+
 ###### Step 1: Log in to the Adobe Admin Console
 
 1. Open a web browser and navigate to the [Adobe Admin Console](https://adminconsole.adobe.com/)
@@ -754,6 +766,10 @@ These steps assume you have the necessary administrative privileges on both the 
 ##### Prepare the FRL Package (Adobe Admin Console)
 
 These steps are to be performed with *System Administrator* access to the Adobe Admin Console.
+
+>[!NOTE]
+>
+>FRL packages typically run on an annual (1-year) subscription renewal cycle. When the license is due for renewal, create a new FRL package, remove the expired license from the AEM Forms Server, and then deploy and activate the new package. For detailed steps, see [Adobe Acrobat license expired or deactivated on AEM Forms Server](#troubleshooting).
 
 ###### Step 1: Log in to the Adobe Admin Console
 
@@ -1563,6 +1579,52 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 +++
 -->
+
++++ Adobe Acrobat license expired or deactivated on AEM Forms Server
+
+When the Feature Restricted License (FRL) of Adobe Acrobat on the AEM Forms Server expires or is deactivated, PDF Generator cannot use Acrobat PDFMaker to convert Microsoft&reg; Office documents. The conversion falls back to OpenOffice and, if OpenOffice is not configured, fails with the following errors:
+
+*Error message from the primary converter:
+ALC-PDG-010-012-PDFMaker reported an error while printing the document.*
+
+*Error message from the fallback converter:
+ALC-PDG-011-030-Submitted OpenOffice Document could not be converted to PDF. Either OpenOffice is not installed on this system or environment variable OpenOffice_PATH is not set to correct path.*
+
+To resolve the issue, check the license status and reactivate the license:
+
+1. Log in to the AEM Forms Server as an administrator and open Command Prompt as an administrator.
+1. Navigate to the directory where you extracted the FRL package. For example, `C:\AcrobatFRL`.
+1. Run the following command to check the license status:
+
+   ```cmd
+   adobe-licensing-toolkit.exe -l
+   ```
+
+1. If the license has expired, replace the FRL package. FRL packages typically run on an annual (1-year) subscription renewal cycle.
+   1. In the [Adobe Admin Console](https://adminconsole.adobe.com/), create and download a new FRL package. For details, see Step 2 through Step 7 in [Install Adobe Acrobat Pro DC](#install-adobe-acrobat-pro-dc).
+   1. Run the following command to remove the expired license:
+
+      ```cmd
+      adobe-licensing-toolkit.exe --precondition --uninstall --all
+      ```
+
+      >[!NOTE]
+      >
+      >To erase all license data from the server instead, run `adobe-licensing-toolkit.exe --deactivate --all`.
+
+   1. Extract the new FRL package to a directory on the server, and navigate to that directory.
+
+1. Run the following command to activate the license. Replace `ngl-preconditioning-data.json` with the exact, case-sensitive name of the JSON file in your FRL package.
+
+   ```cmd
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+1. Open Adobe Acrobat and install any available updates.
+1. Restart the AEM Forms Server to stop any running Acrobat PDFMaker processes.
+1. Convert a Microsoft&reg; Office document to PDF to verify that PDF Generator uses Acrobat for the conversion.
+
++++
 
 +++ Unable to convert Word or Excel file to PDF on Windows Server
 
