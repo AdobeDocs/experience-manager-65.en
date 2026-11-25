@@ -54,3 +54,18 @@ The following procedure creates a Microsoft Translator configuration.
 ## Publishing the Translator Service Configurations {#publishing-the-translator-service-configurations}
 
 As a final step, please publish your Microsoft Translator configurations to support published translated content, using the [publishing a tree](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) action.  
+
+## Microsoft Translator API field mapping {#microsoft-translator-api-field-mapping}
+
+Microsoft Translator API v3 accepts translation requests at `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`. See the [Microsoft Translate API reference](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/translate) for required parameters, including the target language.
+
+The following table relates the AEM configuration fields to the Microsoft API.
+
+| AEM field | Purpose in AEM | Microsoft API relationship |
+|---|---|---|
+| Workspace ID | Identifies the customized Microsoft Translator engine to use. | Custom translation systems are selected through the `category` request parameter. Microsoft's API expects a Custom Translator Category ID, not a workspace ID alone. Confirm the value required by your connector and custom model configuration. |
+| Translation Label | Provides a display name for the translation service. | No corresponding translation request parameter. |
+| Translation Attribution | Defines optional attribution next to translated user-generated content. | No corresponding translation request parameter. |
+| Subscription Key | Authenticates access to the Microsoft Translator subscription. | Sent in the `Ocp-Apim-Subscription-Key` header when requesting an access token. The token is then sent in the `Authorization: Bearer <access-token>` header for translation requests. |
+
+For a global Microsoft Translator resource, the token endpoint is `https://api.cognitive.microsoft.com/sts/v1.0/issueToken`. Regional and multi-service resources use region-specific token endpoints. See [Microsoft Translator authentication](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/authentication) for the endpoint and header requirements for your resource type.
