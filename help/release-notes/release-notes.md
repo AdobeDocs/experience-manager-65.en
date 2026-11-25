@@ -622,8 +622,6 @@ The preferred editors for managing headless content in AEM are now:
 
 * When a form containing a **File Attachment** field that uses `bindref` is submitted to an AEM Workflow with an **Assign Task** step, the attachments are not displayed. As a result, they do not appear when the task is opened from the Inbox. The files are saved correctly to the repository but the Assign Task step UI fails to display the attachments. (FORMS-23722)
 
-* When a digitally signed PDF is attached to a task in AEM Forms JEE Workspace, the upload remains stuck in the uploading state or fails with an "Invalid File" error. As a result, larger, signed PDF attachments cannot be added to the task. This issue is fixed in a later version. For a hotfix on the version, contact Adobe Support. (FORMS-28517)
-
 * Importing a LiveCycle Archive (LCA) through the administration console or Java code (EJB/SOA) can cause subsequent PDF Generator (PDFG) and ConvertPDF operations to fail. This issue affects the JDK and Oracle WebLogic 14c stack on Windows and Linux with an embedded AEM author instance. (FORMS-30031)
 
   The server log shows the following error:
